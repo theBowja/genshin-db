@@ -8,6 +8,8 @@
 - chongyun
 - diluc
 - jean
+- fischl
+- kaeya
 
 ## elements:
 - anemo
