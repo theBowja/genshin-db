@@ -1,6 +1,6 @@
 # genshin impact id api
 
-### information is based on official website and the fandom.
+### information is based on the fandom and various others.
 ### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
 > expect slower releases when 1.1 comes out. ;)
 
