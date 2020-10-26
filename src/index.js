@@ -11,3 +11,10 @@ module.exports.characters = function(query) {
 
     return file;
 }
+
+module.exports.weapons = function(query) {
+    const file = require(`./weapons/${query}`);
+    if(!file) return;
+
+    return file;
+}
