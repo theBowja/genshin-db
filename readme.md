@@ -1,39 +1,65 @@
 # genshin impact id api
 
 ### information is based on official website and the fandom.
-### expect slower releases when 1.1 comes out. ;)
-### got any problems? ping izu on **https://discord.com/invite/aa98gw7**
-
+### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
+> expect slower releases when 1.1 comes out. ;)
 
 ## characters:
-- amber
-- barbara
-- beidou
-- bennett
-- chongyun
-- diluc
-- jean
-- fischl
-- kaeya
-- keqing
-- klee
-- lisa
-- mona
-- ningguang
-- noelle
-- qiqi
+- [x] amber
+- [x] barbara
+- [x] beidou
+- [x] bennett
+- [x] chongyun
+- [x] diluc
+- [x] jean
+- [x] fischl
+- [x] kaeya
+- [x] keqing
+- [x] klee
+- [x] lisa
+- [x] mona
+- [x] ningguang
+- [x] noelle
+- [x] qiqi
+- [x] razor
+- [x] sucrose
+- [ ] traveler
+- [ ] venti
+- [ ] xiangling
+- [ ] xingqiu
 
 ## elements:
-- anemo
-- cryo
-- dendro
-- electro
-- geo
-- hydro
-- pyro
+- [x] anemo
+- [x] cryo
+- [x] dendro
+- [x] electro
+- [x] geo
+- [x] hydro
+- [x] pyro
 
 ## weapons
-- skywardblade
+- swords
+- [x] skywardblade
+- [ ] aquilafavonia
+- [ ] blackclifflongsword
+- [ ] royallongsword
+- [ ] thealleyflash
+- [ ] favoniussword
+- [ ] theblacksword
+- [ ] theflute
+- [ ] sacrificialsword
+- [ ] prototyperancour
+- [ ] lionsroar
+- [ ] ironsting
+- [ ] swordofdescension
+- [ ] skyridersword
+- [ ] filletblade
+- [ ] travelershandysword
+- [ ] harbingerofdawn
+- [ ] darkironsword
+- [ ] coolsteel
+- [ ] silversword
+- [ ] dullblade
 
 <br>
 
