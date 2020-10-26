@@ -61,7 +61,7 @@
 - [ ] silversword
 - [ ] dullblade
 
-<br>
+-------------------------------------
 
 ```js
 const genshin = require('gi-api-id')
