@@ -7,6 +7,7 @@
 - bennett
 - chongyun
 - diluc
+- jean
 
 ## elements:
 - anemo
