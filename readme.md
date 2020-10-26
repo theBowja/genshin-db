@@ -10,6 +10,7 @@
 - jean
 - fischl
 - kaeya
+- keqing
 
 ## elements:
 - anemo
@@ -20,10 +21,12 @@
 - hydro
 - pyro
 
-## p.s id doesnt actually mean anything other than this is developed by a Indonesian :v
+## weapons
+- skywardblade
 
-## information is based on official website and the fandom.
-## got any problems? ping me on **https://discord.com/invite/aa98gw7**
+
+### information is based on official website and the fandom.
+### got any problems? ping izu on **https://discord.com/invite/aa98gw7**
 
 ```js
 const genshin = require('gi-api-id')
@@ -34,10 +37,10 @@ console.log(genshin.characters('amber'))
 ```json
 {
     "name": "Amber",
-    "titles": {
-        "titleOne": "Outrider",
-        "titleTwo": "Champion Glider"
-    },
+    "titles": [
+        "Outrider",
+        "Champion Glider"
+    ],
     "element": "Pyro",
     "weapon": "Bow",
     "gender": "Female",
@@ -50,7 +53,8 @@ console.log(genshin.characters('amber'))
     },
     "cv": {
         "japanese": "Manaka Iwani",
-        "korean": "Kim Yeon-woo"
+        "korean": "Kim Yeon-woo",
+        "chinese": "Tingting Hu"
     },
     "affiliation": "Knights of Favonius",
     "description": "A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has made her a three-time winner of the Gliding Championship in Mondstadt. As a rising star within the Knights of Favonius, Amber is always ready for any challenging tasks.",
