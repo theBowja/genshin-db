@@ -1,5 +1,10 @@
 # genshin impact id api
 
+### information is based on official website and the fandom.
+### expect slower releases when 1.1 comes out. ;)
+### got any problems? ping izu on **https://discord.com/invite/aa98gw7**
+
+
 ## characters:
 - amber
 - barbara
@@ -11,6 +16,12 @@
 - fischl
 - kaeya
 - keqing
+- klee
+- lisa
+- mona
+- ningguang
+- noelle
+- qiqi
 
 ## elements:
 - anemo
@@ -24,9 +35,7 @@
 ## weapons
 - skywardblade
 
-
-### information is based on official website and the fandom.
-### got any problems? ping izu on **https://discord.com/invite/aa98gw7**
+<br>
 
 ```js
 const genshin = require('gi-api-id')
