@@ -68,16 +68,20 @@
 - [ ] coolsteel
 - [ ] silversword
 - [ ] dullblade
-
+<br>
+<br>
 - claymores
 - [ ] coming soon
-
+<br>
+<br>
 - bows
 - [ ] coming soon
-
+<br>
+<br>
 - catalysts
 - [ ] coming soon
-
+<br>
+<br>
 - polearms
 - [ ] coming soon
 
