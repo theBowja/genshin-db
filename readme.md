@@ -4,7 +4,9 @@
 ### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
 > expect slower releases when 1.1 comes out. ;)
 
-## characters:
+<details>
+  <summary>click me for character list</summary>
+
 - [x] amber
 - [x] barbara
 - [x] beidou
@@ -27,8 +29,11 @@
 - [x] venti
 - [x] xiangling
 - [x] xingqiu
+</details>
 
-## elements:
+<details>
+  <summary>click me for elements list</summary>
+
 - [x] anemo
 - [x] cryo
 - [x] dendro
@@ -36,8 +41,11 @@
 - [x] geo
 - [x] hydro
 - [x] pyro
+</details>
 
-## weapons
+<details>
+  <summary>click me for weapons list</summary>
+
 - swords
 - [x] skywardblade
 - [ ] aquilafavonia
@@ -61,13 +69,20 @@
 - [ ] silversword
 - [ ] dullblade
 
-<details>
-  <summary>:zap: Github Stats</summary>
+- claymores
+- [ ] coming soon
 
-  - test
-  - test 2
+- bows
+- [ ] coming soon
+
+- catalysts
+- [ ] coming soon
+
+- polearms
+- [ ] coming soon
 
 </details>
+
 
 -------------------------------------
 
