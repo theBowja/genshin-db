@@ -2,6 +2,9 @@
 
 ### information is based on the fandom and various others.
 ### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
+<br>
+` update: added all the characters and star rarities? working on weapons well the sword section first xd`
+
 > expect slower releases when 1.1 comes out. ;)
 
 <details>
