@@ -46,7 +46,7 @@
 <details>
   <summary>click me for weapons list</summary>
 
-- swords
+## - swords
 - [x] skywardblade
 - [ ] aquilafavonia
 - [ ] blackclifflongsword
@@ -68,21 +68,18 @@
 - [ ] coolsteel
 - [ ] silversword
 - [ ] dullblade
-<br>
-<br>
-- claymores
+
+
+## - claymores
 - [ ] coming soon
-<br>
-<br>
-- bows
+
+## - bows
 - [ ] coming soon
-<br>
-<br>
-- catalysts
+
+## - catalysts
 - [ ] coming soon
-<br>
-<br>
-- polearms
+
+## - polearms
 - [ ] coming soon
 
 </details>
