@@ -24,9 +24,9 @@
 - [x] razor
 - [x] sucrose
 - [x] traveler
-- [ ] venti
-- [ ] xiangling
-- [ ] xingqiu
+- [x] venti
+- [x] xiangling
+- [x] xingqiu
 
 ## elements:
 - [x] anemo
