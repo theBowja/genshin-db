@@ -61,6 +61,14 @@
 - [ ] silversword
 - [ ] dullblade
 
+<details>
+  <summary>:zap: Github Stats</summary>
+
+  - test
+  - test 2
+
+</details>
+
 -------------------------------------
 
 ```js
