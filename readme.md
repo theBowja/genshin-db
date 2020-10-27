@@ -23,7 +23,7 @@
 - [x] qiqi
 - [x] razor
 - [x] sucrose
-- [ ] traveler
+- [x] traveler
 - [ ] venti
 - [ ] xiangling
 - [ ] xingqiu
