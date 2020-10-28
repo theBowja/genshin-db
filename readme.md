@@ -51,7 +51,7 @@
 - [x] theflute
 - [x] sacrificialsword
 - [x] prototyperancour
-- [ ] lionsroar
+- [x] lionsroar
 - [ ] ironsting
 - [ ] swordofdescension
 - [ ] skyridersword
