@@ -52,16 +52,16 @@
 - [x] sacrificialsword
 - [x] prototyperancour
 - [x] lionsroar
-- [ ] ironsting
-- [ ] swordofdescension
-- [ ] skyridersword
-- [ ] filletblade
-- [ ] travelershandysword
-- [ ] harbingerofdawn
-- [ ] darkironsword
-- [ ] coolsteel
-- [ ] silversword
-- [ ] dullblade
+- [x] ironsting
+- [x] swordofdescension
+- [x] skyridersword
+- [x] filletblade
+- [x] travelershandysword
+- [x] harbingerofdawn
+- [x] darkironsword
+- [x] coolsteel
+- [x] silversword
+- [x] dullblade
 
 
 ## - claymores
@@ -87,14 +87,66 @@
 - [ ] wastergreatsword
 
 ## - bows
-- [ ] coming soon
+- [ ] amosbow
+- [ ] skywardharp
+- [ ] compoundbow
+- [ ] blackcliffwarbow
+- [ ] theviriescenthunt
+- [ ] prototypecrescent
+- [ ] sacrificialbow
+- [ ] alleyhunter
+- [ ] rust
+- [ ] thestringless
+- [ ] royalbow
+- [ ] favoniuswarbow
+- [ ] sharpshootersoath
+- [ ] slingshot
+- [ ] ravenbow
+- [ ] ebonybow
+- [ ] messenger
+- [ ] recurvebow
+- [ ] seasonedhunterbow
+- [ ] huntersbow
+
 
 ## - catalysts
-- [ ] coming soon
+- [ ] skywardatlas
+- [ ] lostprayertothesacredwinds
+- [ ] eyeofperception
+- [ ] blackcliffamulet
+- [ ] favoniuscodex
+- [ ] mappamare
+- [ ] prototypemalice
+- [ ] royalglimoire
+- [ ] sacrificialfragments
+- [ ] solarpearl
+- [ ] thewidsith
+- [ ] wineandsong
+- [ ] twinnephrite
+- [ ] ambercatalyst
+- [ ] thrillingtalesofdragonslayers
+- [ ] magicguide
+- [ ] emeraldorb
+- [ ] otherworldystory
+- [ ] pocketgrimoire
+- [ ] apprenticesnotes
 
 ## - polearms
-- [ ] coming soon
-
+- [ ] primodialjadewingedspear
+- [ ] kunwusirisrift
+- [ ] skywardspine
+- [ ] crescentpike
+- [ ] blackcliffpole
+- [ ] dragonsbane
+- [ ] prototypegrudge
+- [ ] deathmatch
+- [ ] lithicspear
+- [ ] favoniuslance
+- [ ] blacktassel
+- [ ] whitetassel
+- [ ] halberd
+- [ ] ironpoint
+- [ ] beginnersprotector
 
 
 -------------------------------------
