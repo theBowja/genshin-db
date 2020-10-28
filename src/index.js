@@ -18,3 +18,10 @@ module.exports.weapons = function(query) {
 
     return file;
 }
+
+module.exports.rarity = function(query) {
+    const file = require(`./rarity/${query}`);
+    if(!file) return;
+
+    return file;
+}
