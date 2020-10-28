@@ -2,14 +2,12 @@
 
 ### information is based on the fandom and various others.
 ### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
-<br>
-` update: added all the characters and star rarities? working on weapons well the sword section first xd`
+### problems? create a issue or ping izu on [https://discord.gg/TEEtNzR](https://discord.gg/TEEtNzR)
 
 > expect slower releases when 1.1 comes out. ;)
 
-<details>
-  <summary>click me for character list</summary>
 
+## characters
 - [x] amber
 - [x] barbara
 - [x] beidou
@@ -32,11 +30,8 @@
 - [x] venti
 - [x] xiangling
 - [x] xingqiu
-</details>
 
-<details>
-  <summary>click me for elements list</summary>
-
+## - elements
 - [x] anemo
 - [x] cryo
 - [x] dendro
@@ -44,22 +39,18 @@
 - [x] geo
 - [x] hydro
 - [x] pyro
-</details>
-
-<details>
-  <summary>click me for weapons list</summary>
 
 ## - swords
 - [x] skywardblade
-- [ ] aquilafavonia
-- [ ] blackclifflongsword
-- [ ] royallongsword
-- [ ] thealleyflash
-- [ ] favoniussword
-- [ ] theblacksword
-- [ ] theflute
-- [ ] sacrificialsword
-- [ ] prototyperancour
+- [x] aquilafavonia
+- [x] blackclifflongsword
+- [x] royallongsword
+- [x] thealleyflash
+- [x] favoniussword
+- [x] theblacksword
+- [x] theflute
+- [x] sacrificialsword
+- [x] prototyperancour
 - [ ] lionsroar
 - [ ] ironsting
 - [ ] swordofdescension
@@ -74,7 +65,26 @@
 
 
 ## - claymores
-- [ ] coming soon
+- [x] skywardpride
+- [ ] wolfsgravestone
+- [ ] sacrificialgreatsword
+- [ ] thebell
+- [ ] lithicblade
+- [ ] blackcliffslasher
+- [ ] serpentspine
+- [ ] whiteblind
+- [ ] royalgreatsword
+- [ ] rainslasher
+- [ ] prototypeanimus
+- [ ] favoniusgreatsword
+- [ ] skyridergreatsword
+- [ ] quartz
+- [ ] whiteirongreatsword
+- [ ] ferrousshadow
+- [ ] debateclub
+- [ ] bloodstainedgreatssword
+- [ ] oldmercspal
+- [ ] wastergreatsword
 
 ## - bows
 - [ ] coming soon
@@ -85,7 +95,6 @@
 ## - polearms
 - [ ] coming soon
 
-</details>
 
 
 -------------------------------------
