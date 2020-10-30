@@ -66,24 +66,24 @@
 
 ## - claymores
 - [x] skywardpride
-- [ ] wolfsgravestone
-- [ ] sacrificialgreatsword
-- [ ] thebell
-- [ ] lithicblade
-- [ ] blackcliffslasher
-- [ ] serpentspine
-- [ ] whiteblind
-- [ ] royalgreatsword
-- [ ] rainslasher
+- [x] wolfsgravestone
+- [x] sacrificialgreatsword
+- [x] thebell
+- [x] lithicblade
+- [x] blackcliffslasher
+- [x] serpentspine
+- [x] whiteblind
+- [x] royalgreatsword
+- [x] rainslasher
 - [ ] prototypeanimus
 - [ ] favoniusgreatsword
 - [ ] skyridergreatsword
 - [ ] quartz
-- [ ] whiteirongreatsword
-- [ ] ferrousshadow
+- [x] whiteirongreatsword
+- [x] ferrousshadow
 - [ ] debateclub
-- [ ] bloodstainedgreatssword
-- [ ] oldmercspal
+- [x] bloodstainedgreatssword
+- [x] oldmercspal
 - [ ] wastergreatsword
 
 ## - bows
