@@ -1,6 +1,6 @@
 # genshin impact id api
 
-### information is based on the fandom and various others.
+### information is based on version 1.0.1 from the fandom and various others.
 ### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
 ### problems? create a issue or ping izu on [https://discord.gg/TEEtNzR](https://discord.gg/TEEtNzR)
 
@@ -75,16 +75,16 @@
 - [x] whiteblind
 - [x] royalgreatsword
 - [x] rainslasher
-- [ ] prototypeanimus
-- [ ] favoniusgreatsword
-- [ ] skyridergreatsword
-- [ ] quartz
+- [x] prototypeanimus
+- [x] favoniusgreatsword
+- [x] skyridergreatsword
+- [x] quartz
 - [x] whiteirongreatsword
 - [x] ferrousshadow
-- [ ] debateclub
+- [x] debateclub
 - [x] bloodstainedgreatssword
 - [x] oldmercspal
-- [ ] wastergreatsword
+- [x] wastergreatsword
 
 ## - bows
 - [ ] amosbow

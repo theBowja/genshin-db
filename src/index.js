@@ -25,3 +25,10 @@ module.exports.rarity = function(query) {
 
     return file;
 }
+
+module.exports.reactions = function(query) {
+    const file = require(`./reactions/${query}`);
+    if(!file) return;
+
+    return file;
+}
