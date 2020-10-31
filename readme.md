@@ -6,7 +6,6 @@
 
 > expect slower releases when 1.1 comes out. ;)
 
-
 ## characters
 - [x] amber
 - [x] barbara
@@ -97,16 +96,16 @@
 - [x] alleyhunter
 - [x] rust
 - [x] thestringless
-- [ ] royalbow
-- [ ] favoniuswarbow
-- [ ] sharpshootersoath
-- [ ] slingshot
-- [ ] ravenbow
-- [ ] ebonybow
-- [ ] messenger
-- [ ] recurvebow
-- [ ] seasonedhunterbow
-- [ ] huntersbow
+- [x] royalbow
+- [x] favoniuswarbow
+- [x] sharpshootersoath
+- [x] slingshot
+- [x] ravenbow
+- [x] ebonybow
+- [x] messenger
+- [x] recurvebow
+- [x] seasonedhunterbow
+- [x] huntersbow
 
 
 ## - catalysts
