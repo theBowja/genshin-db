@@ -122,16 +122,16 @@
 
 
 ## - catalysts
-- [ ] skywardatlas
-- [ ] lostprayertothesacredwinds
-- [ ] eyeofperception
-- [ ] blackcliffamulet
-- [ ] favoniuscodex
-- [ ] mappamare
-- [ ] prototypemalice
-- [ ] royalglimoire
-- [ ] sacrificialfragments
-- [ ] solarpearl
+- [x] skywardatlas
+- [x] lostprayertothesacredwinds
+- [x] eyeofperception
+- [x] blackcliffamulet
+- [x] favoniuscodex
+- [x] mappamare
+- [x] prototypemalice
+- [x] royalglimoire
+- [x] sacrificialfragments
+- [x] solarpearl
 - [x] thewidsith
 - [x] wineandsong
 - [x] twinnephrite
