@@ -39,6 +39,19 @@
 - [x] hydro
 - [x] pyro
 
+## - elemental reactions
+
+- [ ] burning
+- [ ] crystallize
+- [ ] electro-charged
+- [ ] frozen
+- [ ] melt
+- [ ] overloaded
+- [ ] superconduct
+- [ ] swirl
+- [ ] vaporize
+- [ ] elemental-reactions-chart
+
 ## - swords
 - [x] skywardblade
 - [x] aquilafavonia
@@ -119,16 +132,16 @@
 - [ ] royalglimoire
 - [ ] sacrificialfragments
 - [ ] solarpearl
-- [ ] thewidsith
-- [ ] wineandsong
-- [ ] twinnephrite
-- [ ] ambercatalyst
-- [ ] thrillingtalesofdragonslayers
-- [ ] magicguide
-- [ ] emeraldorb
-- [ ] otherworldystory
-- [ ] pocketgrimoire
-- [ ] apprenticesnotes
+- [x] thewidsith
+- [x] wineandsong
+- [x] twinnephrite
+- [x] ambercatalyst
+- [x] thrillingtalesofdragonslayers
+- [x] magicguide
+- [x] emeraldorb
+- [x] otherworldystory
+- [x] pocketgrimoire
+- [x] apprenticesnotes
 
 ## - polearms
 - [ ] primodialjadewingedspear
