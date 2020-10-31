@@ -87,16 +87,16 @@
 - [x] wastergreatsword
 
 ## - bows
-- [ ] amosbow
-- [ ] skywardharp
-- [ ] compoundbow
-- [ ] blackcliffwarbow
-- [ ] theviriescenthunt
-- [ ] prototypecrescent
-- [ ] sacrificialbow
-- [ ] alleyhunter
-- [ ] rust
-- [ ] thestringless
+- [X] amosbow
+- [x] skywardharp
+- [x] compoundbow
+- [x] blackcliffwarbow
+- [x] theviriescenthunt
+- [x] prototypecrescent
+- [x] sacrificialbow
+- [x] alleyhunter
+- [x] rust
+- [x] thestringless
 - [ ] royalbow
 - [ ] favoniuswarbow
 - [ ] sharpshootersoath
