@@ -2,9 +2,8 @@
 
 ### information is based on version 1.0.1 from the fandom and various others.
 ### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
-### problems? create a issue or ping izu on [https://discord.gg/TEEtNzR](https://discord.gg/TEEtNzR)
 
-> expect slower releases when 1.1 comes out. ;)
+> ceased operations. no more updates. fork it or idk to update. me stop now :)
 
 ## characters
 - [x] amber
@@ -131,20 +130,20 @@
 - [x] apprenticesnotes
 
 ## - polearms
-- [ ] primodialjadewingedspear
-- [ ] kunwusirisrift
-- [ ] skywardspine
-- [ ] crescentpike
-- [ ] blackcliffpole
-- [ ] dragonsbane
-- [ ] prototypegrudge
-- [ ] deathmatch
-- [ ] lithicspear
-- [ ] favoniuslance
-- [ ] blacktassel
-- [ ] whitetassel
-- [ ] halberd
-- [ ] ironpoint
+- [x] primodialjadewingedspear
+- [x] kunwusirisrift
+- [x] skywardspine
+- [x] crescentpike
+- [x] blackcliffpole
+- [x] dragonsbane
+- [x] prototypegrudge
+- [x] deathmatch
+- [x] lithicspear
+- [x] favoniuslance
+- [x] blacktassel
+- [x] whitetassel
+- [x] halberd
+- [x] ironpoint
 - [x] beginnersprotector
 
 
