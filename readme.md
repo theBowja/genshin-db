@@ -39,19 +39,6 @@
 - [x] hydro
 - [x] pyro
 
-## - elemental reactions
-
-- [ ] burning
-- [ ] crystallize
-- [ ] electro-charged
-- [ ] frozen
-- [ ] melt
-- [ ] overloaded
-- [ ] superconduct
-- [ ] swirl
-- [ ] vaporize
-- [ ] elemental-reactions-chart
-
 ## - swords
 - [x] skywardblade
 - [x] aquilafavonia
@@ -158,7 +145,7 @@
 - [ ] whitetassel
 - [ ] halberd
 - [ ] ironpoint
-- [ ] beginnersprotector
+- [x] beginnersprotector
 
 
 -------------------------------------
