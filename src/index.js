@@ -1,34 +1,68 @@
-module.exports.elements = function(query) {
-    const file = require(`./elements/${query}`);
+const genshin = {};
+
+let baselang = "english";
+
+genshin.setOptions = function(options) { }
+
+/**
+ * 
+ */
+genshin.setBaseLanguage = function(lang) {
+    lang = languages(lang);
+    if(lang === "") return false;
+    baselang = lang;
+    return true;
+}
+
+/**
+ * 
+ */
+function languages(lang) {
+    switch(lang) {
+        case "en":
+        case "english":
+            return "english";
+        case "jp":
+        case "japanese":
+            return "japanese";
+        default:
+            return "";
+    }
+}
+
+genshin.elements = function(query, options) {
+    const file = require(`./${baselang}/elements/${query}`);
     if(!file) return;
 
     return file;
 }
 
-module.exports.characters = function(query) {
-    const file = require(`./characters/${query}`);
+genshin.characters = function(query, options) {
+    const file = require(`./${baselang}/characters/${query}`);
     if(!file) return;
 
     return file;
 }
 
-module.exports.weapons = function(query) {
-    const file = require(`./weapons/${query}`);
+genshin.weapons = function(query, options) {
+    const file = require(`./${baselang}/weapons/${query}`);
     if(!file) return;
 
     return file;
 }
 
-module.exports.rarity = function(query) {
-    const file = require(`./rarity/${query}`);
+genshin.rarity = function(query, options) {
+    const file = require(`./${baselang}/rarity/${query}`);
     if(!file) return;
 
     return file;
 }
 
-module.exports.reactions = function(query) {
-    const file = require(`./reactions/${query}`);
+genshin.reactions = function(query, options) {
+    const file = require(`./${baselang}/reactions/${query}`);
     if(!file) return;
 
     return file;
 }
+
+module.exports = genshin;
