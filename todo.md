@@ -1,5 +1,8 @@
 ## Todo
 - [ ] add support for different language
+- [ ] generate index lists to better support querying across different languages
+- [ ] split traveler file into two
+- [ ] allow query across all languages
 - [ ] birthdays for characters
 - [ ] add skills
 - [ ] add talents
@@ -25,3 +28,4 @@
 - [ ] license?
 - [ ] pretend to add tests
 - [ ] add banner history maybe
+- [ ] rename index.js to something else
