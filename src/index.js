@@ -2,14 +2,18 @@ const genshin = {};
 
 let baselang = "english";
 
-genshin.setOptions = function(options) { }
+genshin.setOptions = function(options) {
+    options = formatOptions(options);
+
+    if(options.language !== undefined) baselang = options.language;
+}
 
 /**
- * 
+ * remove this function later maybe
  */
 genshin.setBaseLanguage = function(lang) {
-    lang = languages(lang);
-    if(lang === "") return false;
+    lang = formatLanguages(lang);
+    if(lang === undefined) return false;
     baselang = lang;
     return true;
 }
@@ -17,7 +21,7 @@ genshin.setBaseLanguage = function(lang) {
 /**
  * 
  */
-function languages(lang) {
+function formatLanguages(lang) {
     switch(lang) {
         case "en":
         case "english":
@@ -26,43 +30,67 @@ function languages(lang) {
         case "japanese":
             return "japanese";
         default:
-            return "";
+            return undefined;
     }
 }
 
-genshin.elements = function(query, options) {
-    const file = require(`./${baselang}/elements/${query}`);
-    if(!file) return;
-
-    return file;
+function getJSON(path) {
+    try {
+        return require(path);
+    } catch(e) {
+        return {};
+    }
 }
 
-genshin.characters = function(query, options) {
-    const file = require(`./${baselang}/characters/${query}`);
-    if(!file) return;
-
-    return file;
+/**
+ * get rid of unnecessary properties
+ */
+function formatOptions(options={}) {
+    let opt = {};
+    opt.language = formatLanguages(options.language);
+    return opt;
 }
+
+genshin.characters = function(query, options={}) {
+    options = formatOptions(options);
+
+    const index = getJSON('./index/characters.json');
+    const filename = index[baselang].file[index[baselang].name.indexOf(query)];
+    if(filename === undefined) return;
+    return getJSON(`./${baselang}/characters/${filename}`);
+}
+
+genshin.elements = function(query, options={}) {
+    options = formatOptions(options);
+
+    const data = getJSON(`./${baselang}/elements/${query}`);
+
+    return data;
+}
+
 
 genshin.weapons = function(query, options) {
-    const file = require(`./${baselang}/weapons/${query}`);
-    if(!file) return;
+    options = formatOptions(options);
 
-    return file;
+    const data = getJSON(`./${baselang}/weapons/${query}`);
+
+    return data;
 }
 
 genshin.rarity = function(query, options) {
-    const file = require(`./${baselang}/rarity/${query}`);
-    if(!file) return;
+    options = formatOptions(options);
 
-    return file;
+    const data = getJSON(`./${baselang}/rarity/${query}`);
+
+    return data;
 }
 
 genshin.reactions = function(query, options) {
-    const file = require(`./${baselang}/reactions/${query}`);
-    if(!file) return;
+    options = formatOptions(options);
 
-    return file;
+    const data = getJSON(`./${baselang}/reactions/${query}`);
+
+    return data;
 }
 
 module.exports = genshin;
