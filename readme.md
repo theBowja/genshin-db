@@ -3,7 +3,28 @@
 ### information is based on version 1.0.1 from the fandom and various others.
 ### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
 
-> ceased operations. no more updates. fork it or idk to update. me stop now :)
+
+## Todo
+- [] add support for different language
+- [] add skills
+- [] add constellation
+- [] add cooking/ingredients
+- [] add artifacts
+- [] add domains
+- [] add materials
+- [] add potions/consumables before that other npm library finishes it
+- [] add mobs
+- [] add achievements
+- [] add commissions
+- [] add function to get lists. simple/verbose
+- [] add scaling calculators
+- [] move the checklist to wiki or docs folder
+- [] cleanup readme
+- [] add fuzzy search support
+- [] ground pound ur mom
+- [] fix typo with otherworldly story file name
+- [] lore???
+- [] npc???
 
 ## characters
 - [x] amber
