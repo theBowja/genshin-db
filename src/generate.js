@@ -1,32 +1,41 @@
 const fs = require('fs');
 
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
+// if you ask me to explain the code i wrote below, i would reply i dunno
 
-const languages = ['english']
+
+const languages = ['english'];
+const folders = ['characters'];
+const indexByCategories = {
+	characters: ['element', 'weapon', 'gender', 'region']
+}
 
 for(const lang of languages) {
-	let index = {
-		file: [],
-		name: []
-	};
 	let categories = require(`./${lang}/categories.json`);
-	fs.readdirSync(`./${lang}/characters`).forEach(filename => {
-		if(!filename.endsWith('.json')) return;
+	for(const folder of folders) {
+		let index = {
+			file: [],
+			name: []
+		};
+		fs.readdirSync(`./${lang}/${folder}`).forEach(filename => {
+			if(!filename.endsWith('.json')) return;
 
-		const data = require(`./${lang}/characters/${filename}`);
-		if(data.name === undefined) return;
+			const data = require(`./${lang}/${folder}/${filename}`);
+			if(data.name === undefined) return; // go next file if this one doesn't have name property
 
-		index.file.push(filename);
-		index.name.push(data.name);
+			index.file.push(filename);
+			index.name.push(data.name);
 
-		for(const [key, values] of Object.entries(categories)) {
-			if(values.includes(data[key])) {
-				if(index[data[key]] === undefined)
-					index[data[key]] = [data.name];
-				else
-					index[data[key]].push(data.name);
+			// add additional category indexes
+			for(const prop of indexByCategories[folder]) {
+				if(categories[prop].includes(data[prop])) {
+					if(index[data[prop]] === undefined)
+						index[data[prop]] = [data.name];
+					else
+						index[data[prop]].push(data.name);
+				}
 			}
-		}
-	})
-	fs.writeFileSync(`./index/${lang}/characters.json`, JSON.stringify(index, null, 2));
+		})
+		fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify(index, null, 2));
+	}
 }
