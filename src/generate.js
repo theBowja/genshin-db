@@ -16,7 +16,7 @@ for(const lang of languages) {
 	for(const folder of folders) {
 		let index = {
 			file: [],
-			name: []
+			names: []
 		};
 		fs.readdirSync(`./${lang}/${folder}`).forEach(filename => {
 			if(!filename.endsWith('.json')) return;
@@ -25,16 +25,17 @@ for(const lang of languages) {
 			if(data.name === undefined) return; // go next file if this one doesn't have name property
 
 			index.file.push(filename);
-			index.name.push(data.name);
+			index.names.push(data.name.toLowerCase()); // TODO: language specific sanitation
 
 			if(indexByCategories[folder] === undefined) return; // go next if nothing else to index
 			// add additional category indexes
 			for(const prop of indexByCategories[folder]) {
 				if(categories[prop].includes(data[prop])) {
-					if(index[data[prop]] === undefined)
-						index[data[prop]] = [data.name];
+					let tmp = data[prop].toLowerCase(); // TODO: language specific sanitation
+					if(index[tmp] === undefined)
+						index[tmp] = [data.name];
 					else
-						index[data[prop]].push(data.name);
+						index[tmp].push(data.name);
 				}
 			}
 		})

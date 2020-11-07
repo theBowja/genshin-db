@@ -39,6 +39,16 @@ console.log(genshin.characters('amber'))
     "url": "https://genshin-impact.fandom.com/wiki/Amber"
 }
 ```
+or
+```js
+const genshin = require('gi-api-id')
+ 
+console.log(genshin.characters('Pyro'))
+```
+```json
+[ "Amber", "Bennett", "Diluc", "Klee", "Xiangling" ]
+```
+
 
 or
 
