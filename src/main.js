@@ -88,57 +88,37 @@ genshin.categories = function(query, opts={}) {
     return file[query] ? file[query] : [];
 }
 
-genshin.characters = function(query, opts={}) {
+// TODO: use a better name lol
+// TODO: if folder is undefined, search through every folder
+function searchFolder(query, folder, opts={}) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'characters'));
+    query = autocomplete(query, buildQueryDict(opts.querylanguages, folder));
     if(query === undefined) return undefined;
 
-    const queryindex = getJSON(`./index/${opts.resultlanguage}/characters.json`);
+    const queryindex = getJSON(`./index/${opts.resultlanguage}/${folder}.json`);
     if(queryindex[query] !== undefined) return queryindex[query];
     const filename = queryindex.file[queryindex.names.indexOf(query)];
     if(filename === undefined) return;
 
-    return getJSON(`./${opts.resultlanguage}/characters/${filename}`);
+    return getJSON(`./${opts.resultlanguage}/${folder}/${filename}`);
+}
+
+const folders = ['characters', 'weapons', 'elements', 'rarity'];
+
+genshin.characters = function(query, opts={}) {
+    return searchFolder(query, 'characters', opts);
 }
 
 genshin.weapons = function(query, opts={}) {
-    opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'weapons'));
-    if(query === undefined) return undefined;
-
-    const queryindex = getJSON(`./index/${opts.resultlanguage}/weapons.json`);
-    if(queryindex[query] !== undefined) return queryindex[query];
-    const filename = queryindex.file[queryindex.names.indexOf(query)];
-    if(filename === undefined) return;
-
-    return getJSON(`./${opts.resultlanguage}/weapons/${filename}`);
+    return searchFolder(query, 'weapons', opts);
 }
 
 genshin.elements = function(query, opts={}) {
-    opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'elements'));
-    if(query === undefined) return undefined;
-
-    const queryindex = getJSON(`./index/${opts.resultlanguage}/elements.json`);
-    if(queryindex[query] !== undefined) return queryindex[query];
-    const filename = queryindex.file[queryindex.names.indexOf(query)];
-    if(filename === undefined) return;
-
-    return getJSON(`./${opts.resultlanguage}/elements/${filename}`);
+    return searchFolder(query, 'elements', opts);
 }
 
-
 genshin.rarity = function(query, opts={}) {
-    opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'rarity'));
-    if(query === undefined) return undefined;
-
-    const queryindex = getJSON(`./index/${opts.resultlanguage}/rarity.json`);
-    if(queryindex[query] !== undefined) return queryindex[query];
-    const filename = queryindex.file[queryindex.names.indexOf(query)];
-    if(filename === undefined) return;
-
-    return getJSON(`./${opts.resultlanguage}/rarity/${filename}`);
+    return searchFolder(query, 'rarity', opts);
 }
 
 // genshin.reactions = function(query, opts={}) {

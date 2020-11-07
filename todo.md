@@ -1,5 +1,4 @@
 ## Todo
-- [ ] refactor query functions
 - [ ] add function to get lists verbose
 - [ ] language-specific sanitation of query inputs
 - [ ] birthdays for characters
@@ -28,6 +27,7 @@
 - [ ] function to get random image of character off pixiv or something
 
 ## Done
+- [x] refactor query functions (11/7)
 - [x] add fuzzy search support (11/7)
 - [x] allow query across multiple languages (11/7)
 - [x] add support for different language (11/7)
