@@ -1,7 +1,7 @@
 ## Todo
 - [ ] add support for different language
-- [ ] generate index lists to better support querying across different languages
-- [ ] split traveler file into two
+- [x] generate index lists (11/6)
+- [ ] add function to get lists. simple/verbose
 - [x] split traveler file into two (11/6)
 - [ ] allow query across all languages
 - [ ] birthdays for characters
@@ -16,7 +16,6 @@
 - [ ] add mobs
 - [ ] add achievements
 - [ ] add commissions
-- [ ] add function to get lists. simple/verbose
 - [ ] add scaling calculators
 - [ ] support possible name aliases for query
 - [ ] move the checklist to wiki or docs folder
@@ -30,3 +29,5 @@
 - [ ] pretend to add tests
 - [ ] add banner history maybe
 - [ ] rename index.js to something else
+- [ ] maybe use an actual dbms
+- [ ] get random image of character off pixiv or something

@@ -2,42 +2,31 @@ const fs = require('fs');
 
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
 
-const langs = ['english', 'japanese']
+const languages = ['english']
 
-// foreach lang
-let index;
-
-index = {
-	english: {
+for(const lang of languages) {
+	let index = {
 		file: [],
 		name: []
-	},
-	japanese: {
-		file: [],
-		name: []
-	}
-	// male: [], female: [], // these probably won't work here
-	// 4: [], 5: [],
-	// bow: [], sword: [], catalyst: [], claymore: [],
-	// geo: [], pyro: [], cryo: [], hydro: [], dendro: [], electro: [], adaptive: []
-};
-fs.readdirSync('./english/characters').forEach(filename => {
-	if(!filename.endsWith('.json')) return;
+	};
+	let categories = require(`./${lang}/categories.json`);
+	fs.readdirSync(`./${lang}/characters`).forEach(filename => {
+		if(!filename.endsWith('.json')) return;
 
-	const file = require('./english/characters/'+filename);
-	if(file.name !== undefined) {
-		index['english'].file.push(filename);
-		index['english'].name.push(file.name.toLowerCase());
-	}
-})
-fs.readdirSync('./japanese/characters').forEach(filename => {
-	if(!filename.endsWith('.json')) return;
+		const data = require(`./${lang}/characters/${filename}`);
+		if(data.name === undefined) return;
 
-	const file = require('./japanese/characters/'+filename);
-	if(file.name !== undefined) {
-		index['japanese'].file.push(filename);
-		index['japanese'].name.push(file.name);
-	}
-})
+		index.file.push(filename);
+		index.name.push(data.name);
 
-fs.writeFileSync('./index/characters.json', JSON.stringify(index, null, 2));
+		for(const [key, values] of Object.entries(categories)) {
+			if(values.includes(data[key])) {
+				if(index[data[key]] === undefined)
+					index[data[key]] = [data.name];
+				else
+					index[data[key]].push(data.name);
+			}
+		}
+	})
+	fs.writeFileSync(`./index/${lang}/characters.json`, JSON.stringify(index, null, 2));
+}
