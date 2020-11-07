@@ -5,9 +5,10 @@ const fs = require('fs');
 
 
 const languages = ['english'];
-const folders = ['characters'];
+const folders = ['characters', 'weapons'];
 const indexByCategories = {
-	characters: ['element', 'weapon', 'gender', 'region']
+	characters: ['element', 'weapontype', 'gender', 'region', 'rarity'],
+	weapons: ['weapontype', 'rarity']
 }
 
 for(const lang of languages) {
@@ -26,6 +27,7 @@ for(const lang of languages) {
 			index.file.push(filename);
 			index.name.push(data.name);
 
+			if(indexByCategories[folder] === undefined) return; // go next if nothing else to index
 			// add additional category indexes
 			for(const prop of indexByCategories[folder]) {
 				if(categories[prop].includes(data[prop])) {

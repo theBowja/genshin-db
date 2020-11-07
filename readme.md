@@ -20,7 +20,7 @@ console.log(genshin.characters('amber'))
         "Champion Glider"
     ],
     "element": "Pyro",
-    "weapon": "Bow",
+    "weapontype": "Bow",
     "gender": "Female",
     "region": "Mondstadt",
     "rarity": "4",
