@@ -25,13 +25,13 @@ for(const lang of languages) {
 			if(data.name === undefined) return; // go next file if this one doesn't have name property
 
 			index.file.push(filename);
-			index.names.push(data.name.toLowerCase()); // TODO: language specific sanitation
+			index.names.push(data.name);
 
 			if(indexByCategories[folder] === undefined) return; // go next if nothing else to index
 			// add additional category indexes
 			for(const prop of indexByCategories[folder]) {
 				if(categories[prop].includes(data[prop])) {
-					let tmp = data[prop].toLowerCase(); // TODO: language specific sanitation
+					let tmp = data[prop];
 					if(index[tmp] === undefined)
 						index[tmp] = [data.name];
 					else

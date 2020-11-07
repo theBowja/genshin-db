@@ -2,7 +2,6 @@ const genshin = {};
 
 let baseoptions = {
     verbose: false, // used for replacing string names from categories with data object
-    autocomplete: true,
     resultlanguage: "english",
     querylanguages: ["english"]
 }
@@ -44,7 +43,7 @@ function getJSON(path) {
     try {
         return require(path);
     } catch(e) {
-        return {};
+        return undefined;
     }
 }
 
@@ -57,8 +56,6 @@ function sanitizeOptions(opts={}) {
     let sanOpts = {};
     if(typeof opts.verbose === "boolean")
         sanOpts.verbose = opts.verbose;
-    if(typeof opts.autocomplete === "boolean")
-        sanOpts.autocomplete = opts.autocomplete;
     if(opts.resultlanguage !== undefined)
         sanOpts.resultlanguage = opts.resultlanguage;
     if(opts.querylanguages !== undefined)
@@ -66,8 +63,25 @@ function sanitizeOptions(opts={}) {
     return sanOpts;
 }
 
+function buildQueryDict(querylangs, folder) {
+    let dict = [];
+    for(const lang of querylangs) {
+        const file = getJSON(`./index/${lang}/${folder}.json`)
+        //console.log(file);
+        if(file === undefined) continue;
+        dict = [...dict, ...(file.names||[]), ...Object.keys(file).filter(k => k !== 'file')];
+    }
+    //console.log(dict);
+    return dict;
+}
+
+function autocomplete(input, dict) {
+    const fuzzysort = require('fuzzysort');
+    let result = fuzzysort.go(input, dict, { limit: 1 })[0];
+    return result === undefined ? undefined : result.target;
+}
+
 genshin.categories = function(query, opts={}) {
-    query = query.toLowerCase();
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
     const file = getJSON(`./${opts.resultlanguage}/categories.json`);
@@ -75,8 +89,9 @@ genshin.categories = function(query, opts={}) {
 }
 
 genshin.characters = function(query, opts={}) {
-    query = query.toLowerCase(); // TODO: language specific sanitation
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
+    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'characters'));
+    if(query === undefined) return undefined;
 
     const queryindex = getJSON(`./index/${opts.resultlanguage}/characters.json`);
     if(queryindex[query] !== undefined) return queryindex[query];
@@ -87,8 +102,9 @@ genshin.characters = function(query, opts={}) {
 }
 
 genshin.weapons = function(query, opts={}) {
-    query = query.toLowerCase(); // TODO: language specific sanitation
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
+    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'weapons'));
+    if(query === undefined) return undefined;
 
     const queryindex = getJSON(`./index/${opts.resultlanguage}/weapons.json`);
     if(queryindex[query] !== undefined) return queryindex[query];
@@ -99,8 +115,9 @@ genshin.weapons = function(query, opts={}) {
 }
 
 genshin.elements = function(query, opts={}) {
-    query = query.toLowerCase(); // TODO: language specific sanitation
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
+    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'elements'));
+    if(query === undefined) return undefined;
 
     const queryindex = getJSON(`./index/${opts.resultlanguage}/elements.json`);
     if(queryindex[query] !== undefined) return queryindex[query];
@@ -112,8 +129,9 @@ genshin.elements = function(query, opts={}) {
 
 
 genshin.rarity = function(query, opts={}) {
-    query = query.toLowerCase(); // TODO: language specific sanitation
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
+    query = autocomplete(query, buildQueryDict(opts.querylanguages, 'rarity'));
+    if(query === undefined) return undefined;
 
     const queryindex = getJSON(`./index/${opts.resultlanguage}/rarity.json`);
     if(queryindex[query] !== undefined) return queryindex[query];
