@@ -5,7 +5,7 @@ const fs = require('fs');
 
 
 const languages = ['english'];
-const folders = ['characters', 'weapons'];
+const folders = ['characters', 'weapons', 'elements', 'rarity'];
 const indexByCategories = {
 	characters: ['element', 'weapontype', 'gender', 'region', 'rarity'],
 	weapons: ['weapontype', 'rarity']

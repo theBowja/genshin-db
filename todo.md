@@ -1,6 +1,4 @@
 ## Todo
-- [x] add support for different language (11/7)
-- [x] add function to get lists simple (11/7)
 - [ ] add function to get lists verbose
 - [ ] allow query across all languages
 - [ ] language-specific sanitation of query inputs
@@ -31,6 +29,8 @@
 - [ ] function to get random image of character off pixiv or something
 
 ## Done
+- [x] add support for different language (11/7)
+- [x] add function to get lists simple (11/7)
 - [x] rename index.js to something else (11/6)
 - [x] generate index lists (11/6)
 - [x] split traveler file into two (11/6)

@@ -87,36 +87,48 @@ genshin.characters = function(query, opts={}) {
 }
 
 genshin.weapons = function(query, opts={}) {
+    query = query.toLowerCase(); // TODO: language specific sanitation
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
-    const data = getJSON(`./${baselang}/weapons/${query}`);
+    const queryindex = getJSON(`./index/${opts.resultlanguage}/weapons.json`);
+    if(queryindex[query] !== undefined) return queryindex[query];
+    const filename = queryindex.file[queryindex.names.indexOf(query)];
+    if(filename === undefined) return;
 
-    return data;
+    return getJSON(`./${opts.resultlanguage}/weapons/${filename}`);
 }
 
 genshin.elements = function(query, opts={}) {
+    query = query.toLowerCase(); // TODO: language specific sanitation
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
-    const data = getJSON(`./${baselang}/elements/${query}`);
+    const queryindex = getJSON(`./index/${opts.resultlanguage}/elements.json`);
+    if(queryindex[query] !== undefined) return queryindex[query];
+    const filename = queryindex.file[queryindex.names.indexOf(query)];
+    if(filename === undefined) return;
 
-    return data;
+    return getJSON(`./${opts.resultlanguage}/elements/${filename}`);
 }
 
 
 genshin.rarity = function(query, opts={}) {
+    query = query.toLowerCase(); // TODO: language specific sanitation
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
-    const data = getJSON(`./${baselang}/rarity/${query}`);
+    const queryindex = getJSON(`./index/${opts.resultlanguage}/rarity.json`);
+    if(queryindex[query] !== undefined) return queryindex[query];
+    const filename = queryindex.file[queryindex.names.indexOf(query)];
+    if(filename === undefined) return;
 
-    return data;
+    return getJSON(`./${opts.resultlanguage}/rarity/${filename}`);
 }
 
-genshin.reactions = function(query, opts={}) {
-    opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
+// genshin.reactions = function(query, opts={}) {
+//     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
-    const data = getJSON(`./${baselang}/reactions/${query}`);
+//     const data = getJSON(`./${baselang}/reactions/${query}`);
 
-    return data;
-}
+//     return data;
+// }
 
 module.exports = genshin;
