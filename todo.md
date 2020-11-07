@@ -1,6 +1,6 @@
 ## Todo
+- [ ] refactor query functions
 - [ ] add function to get lists verbose
-- [ ] allow query across all languages
 - [ ] language-specific sanitation of query inputs
 - [ ] birthdays for characters
 - [ ] add skills
@@ -17,7 +17,6 @@
 - [ ] add scaling calculators
 - [ ] support possible name aliases for query
 - [ ] cleanup readme
-- [ ] add fuzzy search support
 - [ ] ground pound ur mom
 - [ ] fix typo with otherworldly story file name
 - [ ] lore???
@@ -29,6 +28,8 @@
 - [ ] function to get random image of character off pixiv or something
 
 ## Done
+- [x] add fuzzy search support (11/7)
+- [x] allow query across multiple languages (11/7)
 - [x] add support for different language (11/7)
 - [x] add function to get lists simple (11/7)
 - [x] rename index.js to something else (11/6)
