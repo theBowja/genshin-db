@@ -1,3 +1,6 @@
+const fuzzysort = require('fuzzysort');
+const design = require('./design.json');
+
 const genshin = {};
 
 let baseoptions = {
@@ -20,14 +23,7 @@ genshin.getOptions = function() {
  */
 function formatLanguages(langs) {
     if(typeof langs === "string") {
-        switch(langs) {
-            case "en":
-            case "english":
-                return "english";
-            // case "jp":
-            // case "japanese":
-            //     return "japanese";
-        }
+        return autocomplete(langs, design.languages);
     } else if(Array.isArray(langs)) {
         let tmp = [];
         for(let l of langs) {
@@ -59,7 +55,7 @@ function sanitizeOptions(opts={}) {
     if(opts.resultlanguage !== undefined)
         sanOpts.resultlanguage = opts.resultlanguage;
     if(opts.querylanguages !== undefined)
-        sanOpts.querylanguages = opts.querylanguages;
+        sanOpts.querylanguages = Array.isArray(opts.querylanguages) ? opts.querylanguages : [opts.querylanguages];
     return sanOpts;
 }
 
@@ -76,7 +72,6 @@ function buildQueryDict(querylangs, folder) {
 }
 
 function autocomplete(input, dict) {
-    const fuzzysort = require('fuzzysort');
     let result = fuzzysort.go(input, dict, { limit: 1 })[0];
     return result === undefined ? undefined : result.target;
 }
@@ -103,7 +98,6 @@ function searchFolder(query, folder, opts={}) {
     return getJSON(`./${opts.resultlanguage}/${folder}/${filename}`);
 }
 
-const folders = ['characters', 'weapons', 'elements', 'rarity'];
 
 genshin.characters = function(query, opts={}) {
     return searchFolder(query, 'characters', opts);
