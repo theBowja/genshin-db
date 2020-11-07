@@ -3,17 +3,11 @@ const fs = require('fs');
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
 // if you ask me to explain the code i wrote below, i would reply i dunno
 
+const design = require('./design.json');
 
-const languages = ['english'];
-const folders = ['characters', 'weapons', 'elements', 'rarity'];
-const indexByCategories = {
-	characters: ['element', 'weapontype', 'gender', 'region', 'rarity'],
-	weapons: ['weapontype', 'rarity']
-}
-
-for(const lang of languages) {
+for(const lang of design.languages) {
 	let categories = require(`./${lang}/categories.json`);
-	for(const folder of folders) {
+	for(const folder of design.folders) {
 		let index = {
 			file: [],
 			names: []
@@ -27,9 +21,9 @@ for(const lang of languages) {
 			index.file.push(filename);
 			index.names.push(data.name);
 
-			if(indexByCategories[folder] === undefined) return; // go next if nothing else to index
+			if(design.indexByCategories[folder] === undefined) return; // go next if nothing else to index
 			// add additional category indexes
-			for(const prop of indexByCategories[folder]) {
+			for(const prop of design.indexByCategories[folder]) {
 				if(categories[prop].includes(data[prop])) {
 					let tmp = data[prop];
 					if(index[tmp] === undefined)
