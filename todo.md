@@ -2,6 +2,7 @@
 - [ ] add support for different language
 - [ ] generate index lists to better support querying across different languages
 - [ ] split traveler file into two
+- [x] split traveler file into two (11/6)
 - [ ] allow query across all languages
 - [ ] birthdays for characters
 - [ ] add skills
