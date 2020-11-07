@@ -26,11 +26,11 @@
 - [ ] license?
 - [ ] pretend to add tests
 - [ ] add banner history maybe
-- [ ] rename index.js to something else
 - [ ] maybe use an actual dbms
 - [ ] function to get random image of character off pixiv or something
 
 ## Done
+- [x] rename index.js to something else (11/6)
 - [x] generate index lists (11/6)
 - [x] split traveler file into two (11/6)
 - [x] move the checklist to wiki or docs folder (11/5)
