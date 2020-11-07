@@ -1,8 +1,9 @@
 ## Todo
-- [ ] add support for different language
-- [ ] add function to get lists simple
+- [x] add support for different language (11/7)
+- [x] add function to get lists simple (11/7)
 - [ ] add function to get lists verbose
 - [ ] allow query across all languages
+- [ ] language-specific sanitation of query inputs
 - [ ] birthdays for characters
 - [ ] add skills
 - [ ] add talents
