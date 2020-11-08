@@ -87,7 +87,7 @@ genshin.categories = function(query, opts={}) {
 // TODO: if folder is undefined, search through every folder
 function searchFolder(query, folder, opts={}) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    query = autocomplete(query, buildQueryDict(opts.querylanguages, folder));
+    query = autocomplete(""+query, buildQueryDict(opts.querylanguages, folder));
     if(query === undefined) return undefined;
 
     const queryindex = getJSON(`./index/${opts.resultlanguage}/${folder}.json`);
@@ -109,6 +109,10 @@ genshin.weapons = function(query, opts={}) {
 
 genshin.elements = function(query, opts={}) {
     return searchFolder(query, 'elements', opts);
+}
+
+genshin.artifacts = function(query, opts={}) {
+    return searchFolder(query, 'artifacts', opts);
 }
 
 genshin.rarity = function(query, opts={}) {
