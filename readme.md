@@ -1,7 +1,6 @@
-# genshin impact id api
+# genshin-db
 
 ### information is based on version 1.0.1 from the fandom and various others.
-### roast my shitty code or contribute here [github.com/LichKing112/gi-id-api](https://github.com/LichKing112/gi-id-api)
 
 
 -------------------------------------
