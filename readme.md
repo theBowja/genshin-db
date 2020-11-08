@@ -2,11 +2,38 @@
 
 ### information is based on version 1.0.1 from the fandom and various others.
 
+------------------------------------
+
+```js
+const genshin = require('genshin-db');
+```
+##Table of Contents
+- [genshin.setOptions(opts)](#genshinsetoptionsopts)
+- [genshin.getOptions()](#genshinsetoptions)
+- [genshin.characters(query[, opts])](#genshincharactersquery-opts)
+- [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
+- [genshin.artifacts(query[, opts])](#genshinartifactsquery-opts)
+- [genshin.elements(query[, opts])](#genshinelementsquery-opts)
+- [genshin.rarity(query[, opts])](#genshinrarityquery-opts)
+
+## genshin.setOptions(opts)
+
+## genshin.getOptions()
+
+## genshin.characters(query[, opts])
+
+## genshin.weapons(query[, opts])
+
+## genshin.artifacts(query[, opts])
+
+## genshin.elements(query[, opts])
+
+## genshin.rarity(query[, opts])
 
 -------------------------------------
 
 ```js
-const genshin = require('gi-api-id')
+const genshin = require('genshin-db');
  
 console.log(genshin.characters('amber'))
 ```
