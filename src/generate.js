@@ -33,6 +33,6 @@ for(const lang of design.languages) {
 				}
 			}
 		})
-		fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify(index, null, 2));
+		fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
 	}
 }
