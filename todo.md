@@ -6,7 +6,6 @@
 - [ ] add talents
 - [ ] add constellation
 - [ ] add cooking/ingredients
-- [ ] add artifacts
 - [ ] add domains
 - [ ] add materials
 - [ ] add potions/consumables before that other npm library finishes it
@@ -15,18 +14,18 @@
 - [ ] add commissions
 - [ ] add scaling calculators
 - [ ] support possible name aliases for query
-- [ ] cleanup readme
 - [ ] ground pound ur mom
 - [ ] fix typo with otherworldly story file name
 - [ ] lore???
 - [ ] npc???
-- [ ] license?
 - [ ] pretend to add tests
 - [ ] add banner history maybe
 - [ ] maybe use an actual dbms
 - [ ] function to get random image of character off pixiv or something
 
 ## Done
+- [x] cleanup readme (11/8)
+- [x] add artifacts (11/7)
 - [x] refactor query functions (11/7)
 - [x] add fuzzy search support (11/7)
 - [x] allow query across multiple languages (11/7)
