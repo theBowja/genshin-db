@@ -8,6 +8,8 @@
 const genshin = require('genshin-db');
 ```
 
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md).
+
 ## Table of Contents
 
 - [genshin.setOptions(opts)](#genshinsetoptionsopts)
