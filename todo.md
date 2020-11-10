@@ -15,7 +15,6 @@
 - [ ] add scaling calculators
 - [ ] support possible name aliases for query
 - [ ] ground pound ur mom
-- [ ] fix typo with otherworldly story file name
 - [ ] lore???
 - [ ] npc???
 - [ ] pretend to add tests
@@ -23,7 +22,22 @@
 - [ ] maybe use an actual dbms
 - [ ] function to get random image of character off pixiv or something
 
+## Missing weaponmaterialtype for weapons
+- [ ] ambercatalyst
+- [ ] blackcliffamulet
+- [ ] blackclifflongsword
+- [ ] blackcliffpole
+- [ ] ebonybow
+- [ ] kunwusirisrift
+- [ ] lithicblade
+- [ ] lithicspear
+- [ ] quartz
+- [ ] royalbow
+- [ ] royallongsword
+- [ ] thealleyflash
+
 ## Done
+- [x] added weapon materials (11/10)
 - [x] cleanup readme (11/8)
 - [x] add artifacts (11/7)
 - [x] refactor query functions (11/7)
