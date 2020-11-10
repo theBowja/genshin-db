@@ -8,6 +8,7 @@ const genshin = require('genshin-db');
 
 - [genshin.characters(query[, opts])](#genshincharactersquery-opts)
 - [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
+- [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
 - [genshin.artifacts(query[, opts])](#genshinartifactsquery-opts)
 - [genshin.elements(query[, opts])](#genshinelementsquery-opts)
 - [genshin.rarity(query[, opts])](#genshinrarityquery-opts)
@@ -81,6 +82,33 @@ const genshin = require('genshin-db');
 ```
 
 # genshin.weapons(query[, opts])
+
+# genshin.weaponmaterialtypes(query[, opts])
+
+- [genshin.weaponmaterialtypes('chains')](#genshinweaponmaterialtypeschains)
+- [genshin.weaponmaterialtypes('fri')](#genshinweaponmaterialtypesfri)
+
+## genshin.weaponmaterialtypes('chains')
+
+```js
+{
+  name: 'Dandelion Gladiator',
+  '2starname': 'Fetters of the Dandelion Gladiator',
+  '3starname': 'Chains of the Dandelion Gladiator',
+  '4starname': 'Shackles of the Dandelion Gladiator',
+  '5starname': 'Dream of the Dandelion Gladiator',
+  day: [ 'Wednesday', 'Saturday', 'Sunday' ],
+  location: 'Wolvendom',
+  region: 'Mondstadt',
+  domainofforgery: 'Cecilia Garden'
+}
+```
+
+## genshin.weaponmaterialtypes('fri')
+
+```js
+[ 'Boreal Wolf', 'Mist Veiled Elixir' ]
+```
 
 # genshin.artifacts(query[, opts])
 

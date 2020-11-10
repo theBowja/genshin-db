@@ -20,17 +20,39 @@ for(const lang of design.languages) {
 
 			index.file.push(filename);
 			index.names.push(data.name);
+			if(design.altnames[folder] !== undefined) {
+				for(let altname of design.altnames[folder]) {
+					if(data[altname] !== undefined && data[altname] !== "") {
+						index.file.push(filename);
+						index.names.push(data[altname])
+					}
+				}
+			}
 
 			if(design.indexByCategories[folder] === undefined) return; // go next if nothing else to index
 			// add additional category indexes
 			for(const prop of design.indexByCategories[folder]) {
-				if(categories[prop].includes(data[prop])) {
-					let tmp = data[prop];
-					if(index[tmp] === undefined)
-						index[tmp] = [data.name];
-					else
-						index[tmp].push(data.name);
+				let values = data[prop];
+				if(values === undefined || values === "") continue;
+				if(!Array.isArray(values))
+					values = [values];
+				for(let val of values) {
+					if(categories[prop] === undefined) console.log(folder+ ","+prop)
+					if(categories[prop].includes(val)) {
+						if(index[val] === undefined)
+							index[val] = [data.name];
+						else
+							index[val].push(data.name);
+					} else { console.log("missing val: " + val)}
 				}
+
+				// if(categories[prop].includes(data[prop])) {
+				// 	let tmp = data[prop];
+				// 	if(index[tmp] === undefined)
+				// 		index[tmp] = [data.name];
+				// 	else
+				// 		index[tmp].push(data.name);
+				// }
 			}
 		})
 		fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));

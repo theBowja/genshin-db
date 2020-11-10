@@ -14,6 +14,7 @@ const genshin = require('genshin-db');
 - [genshin.getOptions()](#genshingetoptions)
 - [genshin.characters(query[, opts])](#genshincharactersquery-opts)
 - [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
+- [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
 - [genshin.artifacts(query[, opts])](#genshinartifactsquery-opts)
 - [genshin.elements(query[, opts])](#genshinelementsquery-opts)
 - [genshin.rarity(query[, opts])](#genshinrarityquery-opts)
@@ -46,6 +47,19 @@ Possible inputs for query parameter are:
 - "names"
 
 Check [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
+## genshin.weaponmaterialtypes(query[, opts])
+
+Possible inputs for query parameter are:
+
+- all weapon ascension material names
+- all days of the week
+- all regions
+- all domains of forgery
+- "names"
+
+Check [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
 
 ## genshin.artifacts(query[, opts])
 
