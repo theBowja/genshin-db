@@ -111,6 +111,10 @@ genshin.weaponmaterialtypes = function(query, opts={}) {
     return searchFolder(query, 'weaponmaterialtypes', opts);
 }
 
+genshin.talentmaterialtypes = function(query, opts={}) {
+    return searchFolder(query, 'talentmaterialtypes', opts);
+}
+
 genshin.elements = function(query, opts={}) {
     return searchFolder(query, 'elements', opts);
 }
