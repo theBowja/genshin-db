@@ -37,6 +37,9 @@
 - [ ] thealleyflash
 
 ## Done
+- [x] added english voice actors for characters (11/10)
+- [x] added new characters xiao, tartaglia, diona, zhongli (11/10)
+- [x] added talent materials (11/10)
 - [x] added weapon materials (11/10)
 - [x] cleanup readme (11/8)
 - [x] add artifacts (11/7)
