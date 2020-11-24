@@ -4,7 +4,7 @@
 - [ ] birthdays for characters
 - [ ] add skills
 - [ ] add talents
-- [ ] add constellation
+- [ ] finish constellation
 - [ ] add cooking/ingredients
 - [ ] add domains
 - [ ] add materials
@@ -13,9 +13,7 @@
 - [ ] add achievements
 - [ ] add commissions
 - [ ] add scaling calculators
-- [ ] support possible name aliases for query
 - [ ] ground pound ur mom
-- [ ] lore???
 - [ ] npc???
 - [ ] pretend to add tests
 - [ ] add banner history maybe
@@ -36,7 +34,19 @@
 - [ ] royallongsword
 - [ ] thealleyflash
 
+## Missing constellations for
+- [ ] diluc
+- [ ] jean
+- [ ] mona
+- [ ] qiqi
+- [ ] razor
+- [ ] venti
+- [ ] xiao
+- [ ] zhongli
+
 ## Done
+- [x] support possible name aliases for query (11/24)
+- [x] added most constellations (11/24)
 - [x] added english voice actors for characters (11/10)
 - [x] added new characters xiao, tartaglia, diona, zhongli (11/10)
 - [x] added talent materials (11/10)
