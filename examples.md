@@ -7,6 +7,7 @@ const genshin = require('genshin-db');
 ## Table of Contents
 
 - [genshin.characters(query[, opts])](#genshincharactersquery-opts)
+- [genshin.constellations(query[, opts])](#genshinconstellationsquery-opts)
 - [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
 - [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
 - [genshin.talentmaterialtypes(query[, opts])](#genshintalentmaterialtypesquery-opts)
@@ -89,6 +90,51 @@ const genshin = require('genshin-db');
 [ 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
 ```
 
+# genshin.constellations(query[, opts])
+
+- [genshin.constellations('amber')](#genshinconstellationsamber)
+- [genshin.constellations('childe').c3](#genshinconstellationschildec3)
+
+## genshin.constellations('amber')
+
+```js
+{
+    "name": "Amber",
+    "c1": {
+        "name": "One Arrow to Rule Them All",
+        "effect": "Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG."
+    },
+    "c2": {
+        "name": "Bunny Triggered",
+        "effect": "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it. Explosion via manual detonation deals 200% additional DMG."
+    },
+    "c3": {
+        "name": "It Burns!",
+        "effect": "Increases the Level of Fiery Rain by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+        "name": "It's Not Just Any Doll...",
+        "effect": "Decreases Explosive Puppet's CD by 20%. Adds 1 additional charge."
+    },
+    "c5": {
+        "name": "It's Baron Bunny!",
+        "effect": "Increases the Level of Explosive Puppet by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+        "name": "Wildfire",
+        "effect": "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
+    }
+}
+```
+
+## genshin.constellations('childe').c3
+
+```js
+{
+  name: 'Abyssal Mayhem: Vortex of Turmoil',
+  effect: 'Increases the Level of Foul Legacy: Raging Tide by 3. Maximum upgrade level is 15.'
+}
+```
 
 # genshin.weapons(query[, opts])
 
