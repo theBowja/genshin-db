@@ -16,15 +16,21 @@ for(const lang of design.languages) {
 			if(!filename.endsWith('.json')) return;
 
 			const data = require(`./${lang}/${folder}/${filename}`);
-			if(data.name === undefined) return; // go next file if this one doesn't have name property
+			if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
 
 			index.file.push(filename);
 			index.names.push(data.name);
 			if(design.altnames[folder] !== undefined) {
-				for(let altname of design.altnames[folder]) {
-					if(data[altname] !== undefined && data[altname] !== "") {
-						index.file.push(filename);
-						index.names.push(data[altname])
+				for(let altname of design.altnames[folder]) { // add all the altnames to the index
+					let values = data[altname];
+					if(values === undefined || values === "") continue;
+					if(!Array.isArray(values))
+						values = [values];
+					for(let val of values) {
+						if(val !== undefined && val !== "") {
+							index.file.push(filename);
+							index.names.push(val)
+						}
 					}
 				}
 			}
@@ -33,7 +39,7 @@ for(const lang of design.languages) {
 			// add additional category indexes
 			for(const prop of design.indexByCategories[folder]) {
 				let values = data[prop];
-				if(values === undefined || values === "") continue;
+				if(values === undefined || values === "" ) continue;
 				if(!Array.isArray(values))
 					values = [values];
 				for(let val of values) {

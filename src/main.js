@@ -119,6 +119,10 @@ genshin.elements = function(query, opts={}) {
     return searchFolder(query, 'elements', opts);
 }
 
+genshin.constellations = function(query, opts={}) {
+    return searchFolder(query, 'constellations', opts);
+}
+
 genshin.artifacts = function(query, opts={}) {
     return searchFolder(query, 'artifacts', opts);
 }
