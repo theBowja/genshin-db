@@ -19,6 +19,7 @@ NOTES: every input string to the query parameter will be autocompleted to match 
 - [genshin.setOptions(opts)](#genshinsetoptionsopts)
 - [genshin.getOptions()](#genshingetoptions)
 - [genshin.characters(query[, opts])](#genshincharactersquery-opts)
+- [genshin.constellations(query[, opts])](#genshinconstellationsquery-opts)
 - [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
 - [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
 - [genshin.talentmaterialtypes(query[, opts])](#genshintalentmaterialtypesquery-opts)
@@ -44,7 +45,18 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshincharactersquery-opts) to see example inputs and outputs for this function.
+
+## genshin.constellations(query[, opts])
+
+Possible inputs for query paremter are:
+
+- all character names
+
+Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinconstellationsquery-opts) to see example inputs and outputs for this function.
 
 ## genshin.weapons(query[, opts])
 
@@ -57,6 +69,7 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinweaponsquery-opts) to see example inputs and outputs for this function.
 
 ## genshin.weaponmaterialtypes(query[, opts])
@@ -70,6 +83,7 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinweaponmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
 ## genshin.talentmaterialtypes(query[, opts])
@@ -83,6 +97,7 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshintalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
 
@@ -95,6 +110,7 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.
+
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinartifactsquery-opts) to see example inputs and outputs for this function.
 
 ## genshin.talents(query[, opts])
