@@ -4,7 +4,6 @@
 - [ ] birthdays for characters
 - [ ] add skills
 - [ ] add talents
-- [ ] finish constellation
 - [ ] add cooking/ingredients
 - [ ] add domains
 - [ ] add materials
@@ -35,16 +34,11 @@
 - [ ] thealleyflash
 
 ## Missing constellations for
-- [ ] diluc
-- [ ] jean
-- [ ] mona
-- [ ] qiqi
-- [ ] razor
-- [ ] venti
 - [ ] xiao
 - [ ] zhongli
 
 ## Done
+- [x] finish constellation (11/25)
 - [x] support possible name aliases for query (11/24)
 - [x] added most constellations (11/24)
 - [x] added english voice actors for characters (11/10)
