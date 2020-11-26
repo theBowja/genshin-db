@@ -37,6 +37,27 @@
 - [ ] xiao
 - [ ] zhongli
 
+## Missing talents for
+- [ ] amber
+- [ ] beidou
+- [ ] bennett
+- [ ] chongyun
+- [ ] diluc
+- [ ] jean
+- [ ] kaeya
+- [ ] lisa
+- [ ] mona
+- [ ] ningguang
+- [ ] noelle
+- [ ] qiqi
+- [ ] razor
+- [ ] sucrose
+- [ ] traveler anemo
+- [ ] traveler geo
+- [ ] venti
+- [ ] xiangling
+- [ ] xingqiu
+
 ## Done
 - [x] finish constellation (11/25)
 - [x] support possible name aliases for query (11/24)
