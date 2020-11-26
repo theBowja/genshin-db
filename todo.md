@@ -38,22 +38,13 @@
 - [ ] zhongli
 
 ## Missing talents for
-- [ ] amber
-- [ ] bennett
-- [ ] chongyun
 - [ ] diluc
 - [ ] jean
-- [ ] kaeya
-- [ ] lisa
 - [ ] mona
-- [ ] noelle
 - [ ] qiqi
 - [ ] razor
 - [ ] sucrose
 - [ ] traveler anemo
-- [ ] venti
-- [ ] xiangling
-- [ ] xingqiu
 
 ## Done
 - [x] finish constellation (11/25)
