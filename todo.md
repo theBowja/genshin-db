@@ -39,7 +39,6 @@
 
 ## Missing talents for
 - [ ] amber
-- [ ] beidou
 - [ ] bennett
 - [ ] chongyun
 - [ ] diluc
@@ -47,13 +46,11 @@
 - [ ] kaeya
 - [ ] lisa
 - [ ] mona
-- [ ] ningguang
 - [ ] noelle
 - [ ] qiqi
 - [ ] razor
 - [ ] sucrose
 - [ ] traveler anemo
-- [ ] traveler geo
 - [ ] venti
 - [ ] xiangling
 - [ ] xingqiu
