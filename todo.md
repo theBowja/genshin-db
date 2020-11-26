@@ -21,17 +21,17 @@
 
 ## Missing weaponmaterialtype for weapons
 - [ ] ambercatalyst
-- [ ] blackcliffamulet
-- [ ] blackclifflongsword
-- [ ] blackcliffpole
+- [x] blackcliffamulet
+- [x] blackclifflongsword
+- [x] blackcliffpole
 - [ ] ebonybow
 - [ ] kunwusirisrift
-- [ ] lithicblade
-- [ ] lithicspear
+- [x] lithicblade
+- [x] lithicspear
 - [ ] quartz
-- [ ] royalbow
-- [ ] royallongsword
-- [ ] thealleyflash
+- [x] royalbow
+- [x] royallongsword
+- [x] thealleyflash
 
 ## Missing constellations for
 - [ ] xiao
