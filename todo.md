@@ -1,4 +1,6 @@
 ## Todo
+- [ ] make collapsable sections for examples.md
+- [ ] add properties information of data to readme.md
 - [ ] add function to get lists verbose
 - [ ] language-specific sanitation of query inputs
 - [ ] birthdays for characters
