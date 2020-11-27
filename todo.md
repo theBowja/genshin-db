@@ -2,8 +2,6 @@
 - [ ] add function to get lists verbose
 - [ ] language-specific sanitation of query inputs
 - [ ] birthdays for characters
-- [ ] add skills
-- [ ] add talents
 - [ ] add cooking/ingredients
 - [ ] add domains
 - [ ] add materials
@@ -37,16 +35,8 @@
 - [ ] xiao
 - [ ] zhongli
 
-## Missing talents for
-- [ ] diluc
-- [ ] jean
-- [ ] mona
-- [ ] qiqi
-- [ ] razor
-- [ ] sucrose
-- [ ] traveler anemo
-
 ## Done
+- [x] add talents (11/26)
 - [x] finish constellation (11/25)
 - [x] support possible name aliases for query (11/24)
 - [x] added most constellations (11/24)
