@@ -7,6 +7,7 @@ const genshin = require('genshin-db');
 ## Table of Contents
 
 - [genshin.characters(query[, opts])](#genshincharactersquery-opts)
+- [genshin.talents(query[, opts])](#genshintalentsquery-opts)
 - [genshin.constellations(query[, opts])](#genshinconstellationsquery-opts)
 - [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
 - [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
@@ -88,6 +89,96 @@ const genshin = require('genshin-db');
 
 ```js
 [ 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
+```
+
+# genshin.talents(query[, opts])
+
+- [genshin.talents('ninguang')](#genshintalentsninguang)
+- [genshin.talents('klee').passive3](#genshintalentskleepassive3)
+- [genshin.talents('mona').combatsp](#genshintalentsmonacombatsp)
+
+## genshin.talents('ninguang')
+
+```js
+{
+  name: 'Ningguang',
+  combat1: {
+    name: 'Normal Attack: Sparkling Scatter',
+    image: '',
+    info: '**Normal Attack**\n' +
+      'Shoots gems that deal Geo DMG.\n' +
+      'Upon hit, this grants Ningguang 1 Star Jade.\n' +
+      '\n' +
+      '**Charged Attack**\n' +
+      'Consumes a certain amount of stamina to fire off a giant gem that deals Geo DMG.\n' +
+      'If Ningguang has any Star Jades, unleashing a Charged Attack will cause the Star Jades to be fired at the enemy as well, dealing additional DMG.\n' +
+      '\n' +
+      '**Plunging Attack**\n' +
+      'Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all enemies in her path. Deals AoE Geo DMG upon impact with the ground.',
+    attributes: ''
+  },
+  combat2: {
+    name: 'Jade Screen',
+    image: '',
+    info: 'Ningguang creates a Jade Screen out of gold, obsidian and her great opulence, dealing AoE Geo DMG.\n' +
+      '\n' +
+      '**Jade Screen**\n' +
+      '- Blocks enemy projectiles.\n' +
+      "- Endurance scales based on Ningguang's Max HP.\n" +
+      '\n' +
+      'Jade Screen is considered a Geo Construct and can be used to block certain attacks, but cannot be climbed. Only one Jade Screen may exist at any one time.',
+    description: 'The canvas of stars is written upon this jade screen.',
+    attributes: ''
+  },
+  combat3: {
+    name: 'Starshatter',
+    image: '',
+    info: 'Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her enemies that deal massive Geo DMG. If Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time.',
+    description: 'Stars shatter. Silence falls.',
+    attributes: ''
+  },
+  passive1: {
+    name: 'Backup Plan',
+    image: '',
+    info: 'When Ningguang is in possession of Star Jades, her Charged Attack does not consume Stamina.'
+  },
+  passive2: {
+    name: 'Strategic Reserve',
+    image: '',
+    info: 'A character that passes through the Jade Screen will gain a 12% Geo DMG Bonus for 10s.'
+  },
+  passive3: {
+    name: 'Trove of Marvelous Treasures',
+    image: '',
+    info: 'Displays the location of nearby ore veins (Iron Ore, White Iron Ore, Crystal Ore, and Magical Crystal Ore) on them mini-map.'
+  }
+}
+```
+
+## genshin.talents('klee').passive3
+
+```js
+{
+  name: 'All Of My Treasures!',
+  image: '',
+  info: 'Displays the location of nearby resources unique to Mondstadt on the mini-map.'
+}
+```
+
+## genshin.talents('mona').combatsp
+
+```js
+{
+  name: 'Illusory Torrent',
+  image: '',
+  info: '**Alternate Sprint**\n' +
+    "Mona cloaks herself within the water's flow, consuming Stamina to move rapidly.\n" +
+    '\n' +
+    'When under the effect of Illusory Torrent, Mona can move at high speed on water.\n' +
+    'Applies the Wet status to nearby enemies when she reappears.',
+  description: "This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyways...",
+  attributes: ''
+}
 ```
 
 # genshin.constellations(query[, opts])

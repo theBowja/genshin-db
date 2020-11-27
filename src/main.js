@@ -103,6 +103,10 @@ genshin.characters = function(query, opts={}) {
     return searchFolder(query, 'characters', opts);
 }
 
+genshin.talents = function(query, opts={}) {
+    return searchFolder(query, 'talents', opts);
+}
+
 genshin.weapons = function(query, opts={}) {
     return searchFolder(query, 'weapons', opts);
 }
