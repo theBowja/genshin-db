@@ -39,12 +39,14 @@ for(const lang of design.languages) {
 			// add additional category indexes
 			for(const prop of design.indexByCategories[folder]) {
 				let values = data[prop];
-				if(values === undefined || values === "" ) continue;
-				if(!Array.isArray(values))
-					values = [values];
+				if(values === undefined || values === "" ) continue; // go next if our data doesn't have that category as a property
+				if(!Array.isArray(values)) values = [values]; // make into array
+
 				for(let val of values) {
-					if(categories[prop] === undefined) console.log(folder+ ","+prop)
-					if(categories[prop].includes(val)) {
+					if(categories[prop] === undefined) console.log("missing category: "+folder+ ","+prop);
+					if(categories[prop] === "free" || categories[prop].includes(val)) {
+						if(categories[prop] === "free")	val = val.replace(/ x\d$/i, '');
+
 						if(index[val] === undefined)
 							index[val] = [data.name];
 						else

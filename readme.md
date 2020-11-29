@@ -1,6 +1,6 @@
 # genshin-db
 
-### information is from the fandom and various other sources
+### Information is from the fandom and various other sources. JSON database with robust searching.
 
 ------------------------------------
 
@@ -128,3 +128,8 @@ Input the name of an element
 ## genshin.rarity(query[, opts])
 
 dunno about this
+
+---------------------------
+
+If you ask me what is "robust" and why did I say it?
+idk. it just sounded cooler.
