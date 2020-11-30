@@ -13,6 +13,7 @@ const genshin = require('genshin-db');
 - [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
 - [genshin.talentmaterialtypes(query[, opts])](#genshintalentmaterialtypesquery-opts)
 - [genshin.artifacts(query[, opts])](#genshinartifactsquery-opts)
+- [genshin.recipes(query[, opts])](#genshinrecipesquery-opts)
 - [genshin.elements(query[, opts])](#genshinelementsquery-opts)
 - [genshin.rarity(query[, opts])](#genshinrarityquery-opts)
 
@@ -390,7 +391,111 @@ const genshin = require('genshin-db');
   }
 }
 ```
+# genshin.recipes(query[, opts])
 
+- [genshin.recipes('temptation')](#genshinrecipestemptation)
+- [genshin.recipes('4')](#genshinrecipes4)
+- [genshin.recipes('warrior')](#genshinrecipeswarrior)
+- [genshin.recipes('cabbage')](#genshinrecipescabbage)
+- [genshin.recipes('atK')](#genshinrecipesatk)
+- [genshin.recipes('diluc')](#genshinrecipesdiluc)
+
+## genshin.recipes('temptation')
+
+```js
+{
+  name: "Adeptus' Temptation",
+  rarity: '5',
+  foodrecipetype: 'Warrior',
+  effect: "Increases all party members' ATK by 260-372 and CRIT Rate by 8-12% for 300s.",
+  description: 'A complex, famous type of Liyue cuisine, in which specially selected ingredients are submerged and slowly bowled in soup stock. The recipe scribbled from memory alone was enough to urge the adepti to once again return to the world of men.',
+  buffs: [ 'ATK', 'CRIT Rate %' ],
+  images: {
+    image: 'https://s3.us-east-1.amazonaws.com/gamewith-en/article_tools/genshin-impact/gacha/r_i_33.png'
+  },
+  ingredients: [ 'Ham x4', 'Crab x3', 'Shrimp Meat x3', 'Matsutake x3' ],
+  source: 'From a treasure chest on top of a floating platform in Liyue.'
+}
+```
+
+## genshin.recipes('4')
+
+```js
+[ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
+```
+
+## genshin.recipes('warrior')
+
+```js
+[
+  "Adeptus' Temptation",
+  "Adventurer's Breakfast Sandwich",
+  'Almond Tofu',
+  'Cold Cut Platter',
+  'Come and Get It',
+  'Der Weisheit Letzter Schluss (Life)',
+  'Die Heilige Sinfonie',
+  'Fried Radish Balls',
+  'Jade Parcels',
+  'Jueyun Chili Chicken',
+  'No Tomorrow',
+  '"Once Upon a Time in Mondstadt"',
+  `"Pile 'Em Up"`,
+  'Qingce Stir Fry',
+  'Satisfying Salad',
+  'Sautéed Matsutake',
+  'Tianshu Meat'
+]
+```
+
+## genshin.recipes('cabbage')
+
+```js
+[
+  'Der Weisheit Letzter Schluss (Life)',
+  'Jade Parcels',
+  'Mushroom Pizza',
+  'Northern Smoked Chicken',
+  'Qingce Stir Fry',
+  'Satisfying Salad'
+]
+```
+
+## genshin.recipes('crit rate')
+
+```js
+[
+  "Adeptus' Temptation",
+  'Come and Get It',
+  'Der Weisheit Letzter Schluss (Life)',
+  'Jueyun Chili Chicken',
+  'No Tomorrow',
+  '"Once Upon a Time in Mondstadt"',
+  `"Pile 'Em Up"`,
+  'Satisfying Salad',
+  'Tianshu Meat'
+]
+```
+
+## genshin.recipes('diluc')
+
+```js
+{
+  name: '"Once Upon a Time in Mondstadt"',
+  rarity: '3',
+  foodrecipetype: 'Warrior',
+  effect: "Increases all party members' CRIT Rate by 20% and CRIT DMG by 20% for 300s.",
+  description: "Diluc's specialty. Feast your eyes and then your stomach upon this delicacy as the soft ribs melt in your mouth. Who knew Diluc was able to cook this well?",
+  buffs: [ 'CRIT Rate %', 'CRIT DMG %' ],
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Item_%22Once_Upon_a_Time_in_Mondstadt%22.png/revision/latest/scale-to-width-down/202?cb=20201028200634'
+  },
+  ingredients: [ 'Raw Meat x3', 'Potato x3', 'Small Lamp Grass x1', 'Cheese x1' ],
+  source: "Chance to obtain when cooking Pile 'Em Up with Diluc.",
+  base: `"Pile 'Em Up"`,
+  cook: 'Diluc'
+}
+```
 
 # extra
 
