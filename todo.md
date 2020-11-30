@@ -39,12 +39,24 @@
 
 ## Recipes
 - [ ] missing a lot of images
+- [ ] missing a lot of sources
 - [ ] 1.2 specialty dishes
 - [ ] Jueyun Guoba (is this in the game yet?)
 - [ ] Sunshine Sprat (is this in the game yet?)
+- [ ] Universal Peace (not in game yet.)
 - [ ] verify Tianshu Meat effects in-game
 - [ ] verify Moon Pie ingredients in-game
 - [ ] verify Prize Catch in-game
+
+- [ ] verify Definitely Not Bar Food! in-game
+- [ ] verify Caelum Terra Mora Meat in-game
+
+- [ ] verify Invigorating Pizza in-game
+- [ ] verify Puppy-Paw Hash Brown in-game
+
+- [ ] verify Crab, Ham & Veggie Bake in-game
+- [ ] verify Nutritious Meal (V. 593) in-game
+
 
 ## Done
 - [x] add talents (11/26)
