@@ -42,7 +42,6 @@
 - [ ] Jueyun Guoba (is this in the game yet?)
 - [ ] Sunshine Sprat (is this in the game yet?)
 - [ ] Universal Peace (not in game yet.)
-- [ ] verify Tianshu Meat effects in-game
 - [ ] verify Moon Pie ingredients in-game
 - [ ] verify Prize Catch in-game
 
