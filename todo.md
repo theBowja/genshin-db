@@ -4,7 +4,8 @@
 - [ ] add function to get lists verbose
 - [ ] language-specific sanitation of query inputs
 - [ ] birthdays for characters
-- [ ] add cooking/ingredients
+- [ ] add ingredients
+- [ ] add foods/consumables. move specialty dishes in "recipes" to foods/consumables
 - [ ] add domains
 - [ ] add materials
 - [ ] add potions/consumables before that other npm library finishes it
@@ -12,12 +13,9 @@
 - [ ] add achievements
 - [ ] add commissions
 - [ ] add scaling calculators
-- [ ] ground pound ur mom
 - [ ] npc???
 - [ ] pretend to add tests
 - [ ] add banner history maybe
-- [ ] maybe use an actual dbms
-- [ ] function to get random image of character off pixiv or something
 
 ## Missing weaponmaterialtype for weapons
 - [ ] ambercatalyst
@@ -59,6 +57,7 @@
 
 
 ## Done
+- [x] add recipes (11/29)
 - [x] add talents (11/26)
 - [x] finish constellation (11/25)
 - [x] support possible name aliases for query (11/24)
