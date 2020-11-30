@@ -4,7 +4,7 @@
 
 ------------------------------------
 
-Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts.
+Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes.
 
 ```js
 const genshin = require('genshin-db');
@@ -117,10 +117,6 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\n
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinartifactsquery-opts) to see example inputs and outputs for this function.
 
-## genshin.talents(query[, opts])
-
-TBD
-
 ## genshin.elements(query[, opts])
 
 Input the name of an element
@@ -131,5 +127,6 @@ dunno about this
 
 ---------------------------
 
-If you ask me what is "robust" and why did I say it?
-idk. it just sounded cooler.
+If you ask me what is "robust" and why did I say it? idk. it just sounded cooler.
+
+My ambition for this library is to include most of the relevant genshin data so it can be downloaded and used easily with any project. Currently the data is manually entered. I would appreciate it a lot if someone could provide me datamined files of the live version.

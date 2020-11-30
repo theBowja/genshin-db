@@ -51,7 +51,7 @@ for(const lang of design.languages) {
 							index[val] = [data.name];
 						else
 							index[val].push(data.name);
-					} else { console.log("missing val: " + val)}
+					} else { console.log(filename + " missing val: " + val)}
 				}
 
 				// if(categories[prop].includes(data[prop])) {
