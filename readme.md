@@ -10,7 +10,7 @@ Flexibly search and get the information of characters, talents, constellations, 
 const genshin = require('genshin-db');
 ```
 
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md).
+I recommend referring to [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md) since I didn't really write a detailed readme.
 
 NOTES: every input string to the query parameter will be autocompleted to match possible values. This means doing something like genshin.characters('amb') will give the same results as genshin.characters('amber')
 
