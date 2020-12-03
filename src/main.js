@@ -37,7 +37,7 @@ function formatLanguages(langs) {
 
 function getJSON(path) {
     try {
-        return require(path);
+        return require(`./${path}`);
     } catch(e) {
         return undefined;
     }
@@ -62,7 +62,7 @@ function sanitizeOptions(opts={}) {
 function buildQueryDict(querylangs, folder) {
     let dict = [];
     for(const lang of querylangs) {
-        const file = getJSON(`./index/${lang}/${folder}.json`)
+        const file = getJSON(`index/${lang}/${folder}.json`)
         //console.log(file);
         if(file === undefined) continue;
         dict = [...dict, ...(file.names||[]), ...Object.keys(file).filter(k => k !== 'file')];
@@ -79,7 +79,7 @@ function autocomplete(input, dict) {
 genshin.categories = function(query, opts={}) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
-    const file = getJSON(`./${opts.resultlanguage}/categories.json`);
+    const file = getJSON(`${opts.resultlanguage}/categories.json`);
     return file[query] ? file[query] : [];
 }
 
@@ -90,12 +90,12 @@ function searchFolder(query, folder, opts={}) {
     query = autocomplete(""+query, buildQueryDict(opts.querylanguages, folder));
     if(query === undefined) return undefined;
 
-    const queryindex = getJSON(`./index/${opts.resultlanguage}/${folder}.json`);
+    const queryindex = getJSON(`index/${opts.resultlanguage}/${folder}.json`);
     if(queryindex[query] !== undefined) return queryindex[query];
     const filename = queryindex.file[queryindex.names.indexOf(query)];
     if(filename === undefined) return;
 
-    return getJSON(`./${opts.resultlanguage}/${folder}/${filename}`);
+    return getJSON(`${opts.resultlanguage}/${folder}/${filename}`);
 }
 
 

@@ -142,6 +142,10 @@ dunno about this
 
 ---------------------------
 
-If you ask me what is "robust" and why did I say it? idk. it just sounded cooler.
+"Robust" makes the description sound cooler doesn't it?
 
 My ambition for this library is to include most of the relevant genshin data so it can be downloaded and used easily with any project. Currently the data is manually entered. I would appreciate it a lot if someone could provide me datamined files of the live version.
+
+## Webpack
+
+If you want to build a webpack just do `npm run build` and it'll appear in the **dist/genshindb.js**. Then you can call all the query functions from above using GenshinDB as the variable. Or you can change the options in **webpack.config.js** to better fit how you want to use it.
