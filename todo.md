@@ -37,8 +37,6 @@
 
 ## Recipes
 - [ ] missing a lot of images
-- [ ] missing a lot of sources
-- [ ] 1.2 specialty dishes
 - [ ] Jueyun Guoba (is this in the game yet?)
 - [ ] Sunshine Sprat (is this in the game yet?)
 - [ ] Universal Peace (not in game yet.)
@@ -56,6 +54,9 @@
 
 
 ## Done
+- [x] make sure webpack can build (12/2)
+- [x] added zhongli and xinyan character, constellation, talent, and specialty (12/2)
+- [x] added sources for every recipe (12/1)
 - [x] add recipes (11/29)
 - [x] add talents (11/26)
 - [x] finish constellation (11/25)
