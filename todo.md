@@ -2,8 +2,8 @@
 - [ ] make collapsable sections for examples.md
 - [ ] add properties information of data to readme.md
 - [ ] add function to get lists verbose
+- [ ] replace every character description with in-game description
 - [ ] language-specific sanitation of query inputs
-- [ ] birthdays for characters
 - [ ] add ingredients
 - [ ] add foods/consumables. move specialty dishes in "recipes" to foods/consumables
 - [ ] add domains
@@ -50,6 +50,7 @@
 
 
 ## Done
+- [x] birthdays, constellations, substats for characters (12/5)
 - [x] make sure webpack can build (12/2)
 - [x] added zhongli and xinyan character, constellation, talent, and specialty (12/2)
 - [x] added sources for every recipe (12/1)
