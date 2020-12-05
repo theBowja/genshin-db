@@ -31,10 +31,6 @@
 - [x] royallongsword
 - [x] thealleyflash
 
-## Missing constellations for
-- [ ] xiao
-- [ ] zhongli
-
 ## Recipes
 - [ ] missing a lot of images
 - [ ] Jueyun Guoba (is this in the game yet?)
