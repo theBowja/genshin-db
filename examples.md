@@ -20,7 +20,10 @@ const genshin = require('genshin-db');
 # genshin.characters(query[, opts])
 
 - [genshin.characters('amber')](#genshincharactersamber)
+- [genshin.characters('carmen')](#genshincharacterscarmen)
+- [genshin.characters('december')](#genshincharactersdecember)
 - [genshin.characters('pyro')](#genshincharacterspyro)
+- [genshin.characters('geo dmg')](#genshincharactersgeo-dmg)
 - [genshin.characters('liyue')](#genshincharactersliyue)
 - [genshin.characters('sword')](#genshincharacterssword)
 - [genshin.characters('ballad')](#genshincharactersballad)
@@ -29,30 +32,70 @@ const genshin = require('genshin-db');
 
 ```js
 {
-    "name": "Amber",
-    "titles": [
-        "Outrider",
-        "Champion Glider"
-    ],
-    "element": "Pyro",
-    "weapontype": "Bow",
-    "gender": "Female",
-    "region": "Mondstadt",
-    "rarity": "4",
-    "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png",
-        "card": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg",
-        "potrait": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png"
-    },
-    "cv": {
-        "japanese": "Manaka Iwani",
-        "korean": "Kim Yeon-woo",
-        "chinese": "Tingting Hu"
-    },
-    "affiliation": "Knights of Favonius",
-    "description": "A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has made her a three-time winner of the Gliding Championship in Mondstadt. As a rising star within the Knights of Favonius, Amber is always ready for any challenging tasks.",
-    "url": "https://genshin-impact.fandom.com/wiki/Amber"
+  name: 'Amber',
+  titles: [ 'Outrider', 'Champion Glider' ],
+  element: 'Pyro',
+  weapontype: 'Bow',
+  gender: 'Female',
+  region: 'Mondstadt',
+  rarity: '4',
+  birthday: 'August 10',
+  constellation: 'Lepus',
+  substat: 'ATK%',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png'
+  },
+  cv: {
+    english: 'Kelly Baskin',
+    japanese: 'Manaka Iwani',
+    korean: 'Kim Yeon-woo',
+    chinese: 'Tingting Hu'
+  },
+  affiliation: 'Knights of Favonius',
+  description: 'A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has made her a three-time winner of the Gliding Championship in Mondstadt. As a rising star within the Knights of Favonius, Amber is always ready for any challenging tasks.',
+  talentmaterialtype: 'Freedom',
+  url: 'https://genshin-impact.fandom.com/wiki/Amber'
 }
+```
+
+## genshin.characters('carmen')
+
+```js
+{
+  name: 'Venti',
+  titles: [ 'Windborne Bard', 'The God of Freedom', 'Tone-Deaf Bar' ],
+  element: 'Anemo',
+  weapontype: 'Bow',
+  gender: 'Male',
+  region: 'Mondstadt',
+  rarity: '5',
+  birthday: 'June 16',
+  constellation: 'Carmen Dei',
+  substat: 'Energy Recharge%',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png'
+  },
+  cv: {
+    english: 'Erika Harlacher',
+    japanese: 'Ayumu Murase',
+    korean: 'Jung Yoo-jung',
+    chinese: 'Miaojiang'
+  },
+  affiliation: 'Archons',
+  description: "A bard that seems to have arrived on some unknown wind - sometimes sings songs as old as the hills, and other times sings poems fresh and new. Likes apples and lively places, but is not a fan of cheese or anything sticky. When using his Anemo power to control the wind, it often appears as feathers, as he's fond of that which appears light and breezy.",
+  talentmaterialtype: 'Ballad',
+  url: 'https://genshin-impact.fandom.com/wiki/Venti'
+}
+```
+
+## genshin.characters('Feb')
+
+```js
+[ 'Beidou', 'Bennett' ]
 ```
 
 ## genshin.characters('pyro')
@@ -61,17 +104,21 @@ const genshin = require('genshin-db');
 [ "Amber", "Bennett", "Diluc", "Klee", "Xiangling" ]
 ```
 
+## genshin.characters('geo dmg%')
+
+```js
+[ 'Ningguang', 'Zhongli' ]
+```
+
 ## genshin.characters('liyue')
 
 ```js
 [
-  "Beidou",
-  "Chongyun",
-  "Keqing",
-  "Ningguang",
-  "Qiqi",
-  "Xiangling",
-  "Xingqiu"
+  'Beidou', 'Chongyun',
+  'Keqing', 'Ningguang',
+  'Qiqi',   'Xiangling',
+  'Xiao',   'Xingqiu',
+  'Xinyan', 'Zhongli'
 ]
 ```
 
@@ -79,10 +126,10 @@ const genshin = require('genshin-db');
 
 ```js
 [
-  "Aether",  "Jean",
-  "Kaeya",   "Keqing",
-  "Lumine",  "Qiqi",
-  "Xingqiu"
+  'Aether',  'Jean',
+  'Kaeya',   'Keqing',
+  'Lumine',  'Qiqi',
+  'Xingqiu'
 ]
 ```
 
