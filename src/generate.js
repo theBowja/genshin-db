@@ -44,9 +44,10 @@ for(const lang of design.languages) {
 
 				for(let val of values) {
 					if(categories[prop] === undefined) console.log("missing category: "+folder+ ","+prop);
+					if(prop === "ingredients") val = val.replace(/ x\d$/i, '');
+					else if(prop === "birthday") val = val.replace(/ [0-9]+/, '');
+					
 					if(categories[prop] === "free" || categories[prop].includes(val)) {
-						if(categories[prop] === "free")	val = val.replace(/ x\d$/i, '');
-
 						if(index[val] === undefined)
 							index[val] = [data.name];
 						else

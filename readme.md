@@ -38,7 +38,10 @@ NOTES: every input string to the query parameter will be autocompleted to match 
 Possible inputs for query parameter are:
 
 - all character names
+- constellation names
+- any birthday month
 - all elements
+- all substat types
 - all weapon types
 - all talent level-up material types
 - all genders
