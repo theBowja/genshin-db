@@ -17,19 +17,17 @@
 - [ ] pretend to add tests
 - [ ] add banner history maybe
 
-## Missing weaponmaterialtype for weapons
+## Weapons not in game yet
+- [ ] alleyhunter
 - [ ] ambercatalyst
-- [x] blackcliffamulet
-- [x] blackclifflongsword
-- [x] blackcliffpole
 - [ ] ebonybow
-- [ ] kunwusirisrift
-- [x] lithicblade
-- [x] lithicspear
+- [ ] lithicblade
+- [ ] lithicspear
 - [ ] quartz
-- [x] royalbow
-- [x] royallongsword
-- [x] thealleyflash
+- [ ] royalbow
+- [ ] royallongsword
+- [ ] thealleyflash
+- [ ] wine and song
 
 ## Recipes
 - [ ] missing a lot of images
@@ -50,6 +48,7 @@
 
 
 ## Done
+- [x] add weapon substats to weapon. revamped weapon refine info (12/6)
 - [x] birthdays, constellations, substats for characters (12/5)
 - [x] make sure webpack can build (12/2)
 - [x] added zhongli and xinyan character, constellation, talent, and specialty (12/2)
