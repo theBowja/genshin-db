@@ -147,4 +147,6 @@ genshin.recipes = function(query, opts={}) {
 //     return data;
 // }
 
+genshin.helper = require('./helper.js');
+
 module.exports = genshin;
