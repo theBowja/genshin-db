@@ -10,7 +10,8 @@ for(const lang of design.languages) {
 	for(const folder of design.folders) {
 		let index = {
 			file: [],
-			names: []
+			names: [],
+			namemap: []
 		};
 		try {
 			fs.readdirSync(`./${lang}/${folder}`).forEach(filename => {
@@ -19,8 +20,9 @@ for(const lang of design.languages) {
 				const data = require(`./${lang}/${folder}/${filename}`);
 				if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
 
-				index.file.push(filename);
 				index.names.push(data.name);
+				index.file.push(filename);
+				index.namemap.push(data.name);
 				if(design.altnames[folder] !== undefined) {
 					for(let altname of design.altnames[folder]) { // add all the altnames to the index
 						let values = data[altname];
@@ -30,7 +32,7 @@ for(const lang of design.languages) {
 						for(let val of values) {
 							if(val !== undefined && val !== "") {
 								index.file.push(filename);
-								index.names.push(val)
+								index.namemap.push(val)
 							}
 						}
 					}
@@ -67,6 +69,7 @@ for(const lang of design.languages) {
 			})
 			fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
 		} catch(e) {
+			console.log(JSON.stringify(e));
 			console.log("no path: " + e.path);
 		}
 	}
