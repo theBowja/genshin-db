@@ -1,5 +1,7 @@
 ## Todo
 - [ ] make collapsable sections for examples.md
+- [ ] memoize buildQueryDict even though performance doesn't really matter
+- [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
 - [ ] add properties information of data to readme.md
 - [ ] add function to get lists verbose
 - [ ] replace every character description with in-game description
