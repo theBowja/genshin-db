@@ -65,7 +65,7 @@ function buildQueryDict(querylangs, folder) {
         const file = getJSON(`index/${lang}/${folder}.json`)
         //console.log(file);
         if(file === undefined) continue;
-        dict = [...dict, ...(file.names||[]), ...Object.keys(file).filter(k => k !== 'file' && k !== 'namemap')];
+        dict = [...dict, ...(file.namemap||[]), ...Object.keys(file).filter(k => k !== 'file' && k !== 'namemap')];
     }
     //console.log(dict);
     return dict;
@@ -83,6 +83,24 @@ genshin.categories = function(query, opts={}) {
     return file[query] ? file[query] : [];
 }
 
+/**
+ * Finds the value from inside fromlang and maps it to tolang to return the value in tolang.
+ * returns undefined if failed.
+ */
+function translateCategoryValue(fromlang, tolang, value) {
+    if(fromlang === tolang) return value;
+    const fromcategory = getJSON(`${fromlang}/categories.json`);
+    if(fromcategory === undefined) return;
+    const tocategory = getJSON(`${tolang}/categories.json`);
+    if(tocategory === undefined) return;
+
+    for(let [key,arr] of Object.entries(fromcategory)) {
+        if(!Array.isArray(arr)) continue;
+        if(arr.indexOf(value) !== -1) return tocategory[key][arr.indexOf(value)];
+    }
+    return;
+}
+
 // TODO: use a better name lol
 // TODO: if folder is undefined, search through every folder
 function searchFolder(query, folder, opts={}) {
@@ -90,12 +108,20 @@ function searchFolder(query, folder, opts={}) {
     query = autocomplete(""+query, buildQueryDict(opts.querylanguages, folder));
     if(query === undefined) return undefined;
 
-    const queryindex = getJSON(`index/${opts.resultlanguage}/${folder}.json`);
-    if(queryindex[query] !== undefined) return queryindex[query];
-    const filename = queryindex.file[queryindex.names.indexOf(query)];
-    if(filename === undefined) return;
+    for(let lang of opts.querylanguages) {
+        const langindex = getJSON(`index/${lang}/${folder}.json`);
+        if(langindex[query] !== undefined) { // is a value for a property
+            if(lang === opts.resultlanguage) return langindex[query]; // check verbose
 
-    return getJSON(`${opts.resultlanguage}/${folder}/${filename}`);
+            query = translateCategoryValue(lang, opts.resultlanguage, query);
+            if(query === undefined) return undefined;
+            return getJSON(`index/${opts.resultlanguage}/${folder}.json`)[query]; // check verbose
+        }
+        // else could be a value from namemap
+        const filename = langindex.file[langindex.namemap.indexOf(query)];
+        if(filename !== undefined) return getJSON(`${opts.resultlanguage}/${folder}/${filename}`);
+    }
+    return undefined;
 }
 
 
