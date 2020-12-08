@@ -65,7 +65,7 @@ function buildQueryDict(querylangs, folder) {
         const file = getJSON(`index/${lang}/${folder}.json`)
         //console.log(file);
         if(file === undefined) continue;
-        dict = [...dict, ...(file.names||[]), ...Object.keys(file).filter(k => k !== 'file')];
+        dict = [...dict, ...(file.names||[]), ...Object.keys(file).filter(k => k !== 'file' && k !== 'namemap')];
     }
     //console.log(dict);
     return dict;
