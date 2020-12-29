@@ -1,4 +1,5 @@
 ## Todo
+- [ ] go through 1.2 patch notes and update descriptions etc and add recipes blah blah blah.
 - [ ] make collapsable sections for examples.md
 - [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
@@ -50,6 +51,7 @@
 
 
 ## Done
+- [x] 1.2 albedo and two new artifact sets (12/29)
 - [x] add weapon substats to weapon. revamped weapon refine info (12/6)
 - [x] birthdays, constellations, substats for characters (12/5)
 - [x] make sure webpack can build (12/2)
