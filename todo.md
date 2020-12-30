@@ -52,6 +52,7 @@
 
 ## Done
 - [x] 1.2 albedo and two new artifact sets (12/29)
+- [x] fix querying across multiple languages (12/8)
 - [x] add weapon substats to weapon. revamped weapon refine info (12/6)
 - [x] birthdays, constellations, substats for characters (12/5)
 - [x] make sure webpack can build (12/2)
