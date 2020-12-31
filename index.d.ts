@@ -173,17 +173,15 @@ export interface Weapon {
         image: string;
     };
     baseatk: string;
-    ability: string;
-    passive: {
-        passive_name: string;
-        refinement_effect: {
-            refine_one: string;
-            refine_two: string;
-            refine_three: string;
-            refine_four: string;
-            refine_five: string;
-        };
-    };
+    substat: string;
+    subvalue: string;
+    effectname: string;
+    effect: string;
+    r1: string[];
+    r2: string[];
+    r3: string[];
+    r4: string[];
+    r5: string[];
     description: string;
     weaponmaterialtype: string;
     url: string;
