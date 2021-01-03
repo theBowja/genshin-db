@@ -101,6 +101,16 @@ function translateCategoryValue(fromlang, tolang, value) {
     return;
 }
 
+/**
+ * Uses the index to find the mapping from a name to a filename
+ * @param index - the object from an index file (like index/english/characters.json)
+ * @param name - the name of the object that we want the filename of
+ * @returns mapped filename of data name, otherwise undefined.
+ */
+function getFileName(index, name) {
+    return index.file[index.namemap.indexOf(name)];
+}
+
 // TODO: use a better name lol
 // TODO: if folder is undefined, search through every folder
 function searchFolder(query, folder, opts={}) {
@@ -110,15 +120,21 @@ function searchFolder(query, folder, opts={}) {
 
     for(let lang of opts.querylanguages) {
         const langindex = getJSON(`index/${lang}/${folder}.json`);
-        if(langindex[query] !== undefined) { // is a value for a property
-            if(lang === opts.resultlanguage) return langindex[query]; // check verbose
-
+        if(langindex[query] !== undefined) { // is a value for a property instead of specific name
             query = translateCategoryValue(lang, opts.resultlanguage, query);
             if(query === undefined) return undefined;
-            return getJSON(`index/${opts.resultlanguage}/${folder}.json`)[query]; // check verbose
+            if(lang !== opts.resultlanguage) langindex = getJSON(`index/${opts.resultlanguage}/${folder}.json`);
+
+            if(!opts.verbose) return langindex[query];
+            let result = []; // start building the verbose array
+            for(let name of langindex[query]) {
+                let filename = getFileName(langindex, name);
+                if(filename !== undefined) result.push(getJSON(`${opts.resultlanguage}/${folder}/${filename}`))
+            }
+            return result;
         }
         // else could be a value from namemap
-        const filename = langindex.file[langindex.namemap.indexOf(query)];
+        const filename = getFileName(langindex, query);
         if(filename !== undefined) return getJSON(`${opts.resultlanguage}/${folder}/${filename}`);
     }
     return undefined;

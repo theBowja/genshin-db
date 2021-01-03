@@ -4,7 +4,6 @@
 - [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
 - [ ] add properties information of data to readme.md
-- [ ] add function to get lists verbose
 - [ ] replace every character description with in-game description
 - [ ] language-specific sanitation of query inputs
 - [ ] add ingredients
@@ -51,6 +50,8 @@
 
 
 ## Done
+- [x] add function to get lists verbose (1/3)
+- [x] 1.2 new weapons (12/31)
 - [x] 1.2 albedo and two new artifact sets (12/29)
 - [x] fix querying across multiple languages (12/8)
 - [x] add weapon substats to weapon. revamped weapon refine info (12/6)
