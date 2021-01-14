@@ -1,5 +1,5 @@
 ## Todo
-- [ ] go through 1.2 patch notes and update descriptions etc and add recipes blah blah blah.
+- [ ] 1.2 recipes
 - [ ] make collapsable sections for examples.md
 - [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
@@ -50,6 +50,8 @@
 
 
 ## Done
+- [x] added Ganyu (1/14)
+- [x] 1.2 description/name changes (1/14)
 - [x] add function to get lists verbose (1/3)
 - [x] 1.2 new weapons (12/31)
 - [x] 1.2 albedo and two new artifact sets (12/29)
