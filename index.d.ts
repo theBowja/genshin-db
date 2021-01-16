@@ -1,21 +1,22 @@
 // TODO: handle exact match and filter keywords
 export interface QueryFunction<Entry> {
     // retrieve all
-    (query: "names", opts?: QueryOptions): string[];
+    (query: "names", opts?: QueryOptions<false>): string[];
+    (query: "names", opts?: QueryOptions<true>): Entry[];
     // fuzzy search
-    (query: string, opts?: QueryOptions): Entry | string[];
+    (query: string, opts?: QueryOptions<false>): Entry | string[];
+    (query: string, opts?: QueryOptions<true>): Entry | Entry[];
 }
 
-// TODO: support verbose mode
-export interface QueryOptions {
-    verbose?: false;
+export interface QueryOptions<Verbose extends boolean> {
+    verbose?: Verbose;
     resultlanguage?: string;
     querylanguages?: string[];
 }
 
 export function categories(
     query: string,
-    opts?: QueryOptions
+    opts?: QueryOptions<false>
 ): string | string[];
 
 export const artifacts: QueryFunction<Artifact>;
