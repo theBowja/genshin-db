@@ -70,7 +70,7 @@ for(const lang of design.languages) {
 			fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
 		} catch(e) {
 			if(e.errno === -4058) console.log("no path: " + e.path);
-			else console.log(JSON.stringify(e));
+			else console.log(JSON.stringify(e) + e);
 			fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
 		}
 	}

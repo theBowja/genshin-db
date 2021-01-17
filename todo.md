@@ -34,22 +34,17 @@
 ## Recipes
 - [ ] missing a lot of images
 - [ ] Jueyun Guoba (is this in the game yet?)
-- [ ] Sunshine Sprat (is this in the game yet?)
 - [ ] Universal Peace (not in game yet.)
-- [ ] verify Moon Pie ingredients in-game
 - [ ] verify Prize Catch in-game
 
 - [ ] verify Definitely Not Bar Food! in-game
-- [ ] verify Caelum Terra Mora Meat in-game
 
 - [ ] verify Invigorating Pizza in-game
 - [ ] verify Puppy-Paw Hash Brown in-game
 
-- [ ] verify Crab, Ham & Veggie Bake in-game
-- [ ] verify Nutritious Meal (V. 593) in-game
-
-
 ## Done
+- [x] sunshine sprat and ghoulash recipe. some images (1/17)
+- [x] fixed weapon and arifact images (1/17)
 - [x] added Ganyu (1/14)
 - [x] 1.2 description/name changes (1/14)
 - [x] add function to get lists verbose (1/3)
