@@ -32,17 +32,13 @@
 - [ ] wine and song
 
 ## Recipes
-- [ ] missing a lot of images
 - [ ] Jueyun Guoba (is this in the game yet?)
-- [ ] Universal Peace (not in game yet.)
-- [ ] verify Prize Catch in-game
-
 - [ ] verify Definitely Not Bar Food! in-game
-
 - [ ] verify Invigorating Pizza in-game
 - [ ] verify Puppy-Paw Hash Brown in-game
 
 ## Done
+- [x] finished all recipe images (1/17)
 - [x] sunshine sprat and ghoulash recipe. some images (1/17)
 - [x] fixed weapon and arifact images (1/17)
 - [x] added Ganyu (1/14)
