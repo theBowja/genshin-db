@@ -74,4 +74,5 @@ for(const lang of design.languages) {
 			fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
 		}
 	}
+	console.log("done");
 }
