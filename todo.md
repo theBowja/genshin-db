@@ -1,5 +1,4 @@
 ## Todo
-- [ ] 1.2 recipes
 - [ ] make collapsable sections for examples.md
 - [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
@@ -21,10 +20,7 @@
 
 ## Weapons not in game yet
 - [ ] alleyhunter
-- [ ] ambercatalyst
 - [ ] ebonybow
-- [ ] lithicblade
-- [ ] lithicspear
 - [ ] quartz
 - [ ] royalbow
 - [ ] royallongsword
@@ -36,8 +32,13 @@
 - [ ] verify Definitely Not Bar Food! in-game
 - [ ] verify Invigorating Pizza in-game
 - [ ] verify Puppy-Paw Hash Brown in-game
+- [ ] Fullmoon Egg
+- [ ] Vegetarian Abalone
+- [ ] Stone Harbor Delicacies
+
 
 ## Done
+- [x] 1.3 update (3/2 AzureHakua)
 - [x] finished all recipe images (1/17)
 - [x] sunshine sprat and ghoulash recipe. some images (1/17)
 - [x] fixed weapon and arifact images (1/17)
