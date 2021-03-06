@@ -21,7 +21,7 @@ const genshin = require('genshin-db');
 ## genshin.characters(query[, opts])]
 
 <details>
-<summary>genshin.characters('**amber**')</summary>
+<summary>genshin.characters('<b>amber</b>')</summary>
 
 ```js
 {
@@ -55,7 +55,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('**carmen**')</summary>
+<summary>genshin.characters('<b>carmen</b>')</summary>
 
 ```js
 {
@@ -89,7 +89,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('**december**')</summary>
+<summary>genshin.characters('<b>december</b>')</summary>
 
 ```js
 [ 'Ganyu', 'Zhongli' ]
@@ -97,7 +97,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('**pyro**')</summary>
+<summary>genshin.characters('<b>pyro</b>')</summary>
 
 ```js
 [
@@ -113,7 +113,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('**geo dmg**')</summary>
+<summary>genshin.characters('<b>geo dmg</b>')</summary>
 
 ```js
 [ 'Albedo', 'Ningguang', 'Zhongli' ]
@@ -121,7 +121,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('**liyue**')</summary>
+<summary>genshin.characters('<b>liyue</b>')</summary>
 
 ```js
 [
@@ -136,7 +136,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('**sword**')</summary>
+<summary>genshin.characters('<b>sword</b>')</summary>
 
 ```js
 [
@@ -149,7 +149,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('**ballad**')</summary>
+<summary>genshin.characters('<b>ballad</b>')</summary>
 
 ```js
 [ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
@@ -160,7 +160,7 @@ const genshin = require('genshin-db');
 ## genshin.talents(query[, opts])]
 
 <details>
-<summary>genshin.talents('**ninguang**')</summary>
+<summary>genshin.talents('<b>ninguang</b>')</summary>
 
 ```js
 {
@@ -220,7 +220,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talents('**klee**')**.passive3**</summary>
+<summary>genshin.talents('<b>klee</b>')**.passive3**</summary>
 
 ```js
 {
@@ -232,7 +232,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talents('**mona**')**.combatsp**</summary>
+<summary>genshin.talents('<b>mona</b>')**.combatsp**</summary>
 
 ```js
 {
@@ -253,7 +253,7 @@ const genshin = require('genshin-db');
 ## genshin.constellations(query[, opts])]
 
 <details>
-<summary>genshin.constellations('**amber**')</summary>
+<summary>genshin.constellations('<b>amber</b>')</summary>
 
 ```js
 {
@@ -293,7 +293,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.constellations('**childe**')**.c3**</summary>
+<summary>genshin.constellations('<b>childe</b>')**.c3**</summary>
 
 ```js
 {
@@ -308,7 +308,7 @@ const genshin = require('genshin-db');
 ## genshin.weapons(query[, opts])]
 
 <details>
-<summary>genshin.weapons('**lost prayers**')</summary>
+<summary>genshin.weapons('<b>lost prayers</b>')</summary>
 
 ```js
 {
@@ -336,7 +336,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.weapons('**decarabian**')</summary>
+<summary>genshin.weapons('<b>decarabian</b>')</summary>
 
 ```js
 [
@@ -365,7 +365,7 @@ const genshin = require('genshin-db');
 ## genshin.weaponmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshin.weaponmaterialtypes('**chains**')</summary>
+<summary>genshin.weaponmaterialtypes('<b>chains</b>')</summary>
 
 ```js
 {
@@ -383,7 +383,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.weaponmaterialtypes('**fri**')</summary>
+<summary>genshin.weaponmaterialtypes('<b>fri</b>')</summary>
 
 ```js
 [ 'Boreal Wolf', 'Mist Veiled Elixir' ]
@@ -394,7 +394,7 @@ const genshin = require('genshin-db');
 ## genshin.talentmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshin.talentmaterialtypes('**ballad**')</summary>
+<summary>genshin.talentmaterialtypes('<b>ballad</b>')</summary>
 
 ```js
 {
@@ -411,7 +411,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talentmaterialtypes('**satur**')</summary>
+<summary>genshin.talentmaterialtypes('<b>satur</b>')</summary>
 
 ```js
 [ 'Ballad', 'Gold' ]
@@ -422,7 +422,7 @@ const genshin = require('genshin-db');
 ## genshin.artifacts(query[, opts])]
 
 <details>
-<summary>genshin.artifacts('**flame**')</summary>
+<summary>genshin.artifacts('<b>flame</b>')</summary>
 
 ```js
 {
@@ -478,7 +478,7 @@ const genshin = require('genshin-db');
 ## genshin.recipes(query[, opts])]
 
 <details>
-<summary>genshin.recipes('**temptation**')</summary>
+<summary>genshin.recipes('<b>temptation</b>')</summary>
 
 ```js
 {
@@ -498,7 +498,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('**4**')</summary>
+<summary>genshin.recipes('<b>4</b>')</summary>
 
 ```js
 [ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
@@ -506,7 +506,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('**warrior**')</summary>
+<summary>genshin.recipes('<b>warrior</b>')</summary>
 
 ```js
 [
@@ -534,7 +534,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('**cabbage**')</summary>
+<summary>genshin.recipes('<b>cabbage</b>')</summary>
 
 ```js
 [
@@ -552,7 +552,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('**atK**')</summary>
+<summary>genshin.recipes('<b>atK</b>')</summary>
 
 ```js
 [
@@ -568,7 +568,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('**diluc**')</summary>
+<summary>genshin.recipes('<b>diluc</b>')</summary>
 
 ```js
 {
