@@ -1,5 +1,6 @@
 # Examples
 
+First start off with:
 ```js
 const genshin = require('genshin-db');
 ```
@@ -17,18 +18,10 @@ const genshin = require('genshin-db');
 - [genshin.elements(query[, opts])](#genshinelementsquery-opts)
 - [genshin.rarity(query[, opts])](#genshinrarityquery-opts)
 
-# genshin.characters(query[, opts])
+## genshin.characters(query[, opts])]
 
-- [genshin.characters('amber')](#genshincharactersamber)
-- [genshin.characters('carmen')](#genshincharacterscarmen)
-- [genshin.characters('december')](#genshincharactersdecember)
-- [genshin.characters('pyro')](#genshincharacterspyro)
-- [genshin.characters('geo dmg')](#genshincharactersgeo-dmg)
-- [genshin.characters('liyue')](#genshincharactersliyue)
-- [genshin.characters('sword')](#genshincharacterssword)
-- [genshin.characters('ballad')](#genshincharactersballad)
-
-## genshin.characters('amber')
+<details>
+<summary>genshin.characters('amber')</summary>
 
 ```js
 {
@@ -60,7 +53,9 @@ const genshin = require('genshin-db');
 }
 ```
 
-## genshin.characters('carmen')
+</details>
+<details>
+<summary>genshin.characters('carmen')</summary>
 
 ```js
 {
@@ -92,29 +87,46 @@ const genshin = require('genshin-db');
 }
 ```
 
-## genshin.characters('Feb')
+</details>
+<details>
+<summary>genshin.characters('december')</summary>
 
 ```js
-[ 'Beidou', 'Bennett' ]
+[ 'Ganyu', 'Zhongli' ]
 ```
 
-## genshin.characters('pyro')
+</details>
+<details>
+<summary>genshin.characters('pyro')</summary>
 
 ```js
-[ "Amber", "Bennett", "Diluc", "Klee", "Xiangling" ]
+[
+  'Amber',
+  'Bennett',
+  'Diluc',
+  'Hu Tao',
+  'Klee',
+  'Xiangling',
+  'Xinyan'
+]
 ```
 
-## genshin.characters('geo dmg%')
+</details>
+<details>
+<summary>genshin.characters('geo dmg')</summary>
 
 ```js
-[ 'Ningguang', 'Zhongli' ]
+[ 'Albedo', 'Ningguang', 'Zhongli' ]
 ```
 
-## genshin.characters('liyue')
+</details>
+<details>
+<summary>genshin.characters('liyue')</summary>
 
 ```js
 [
   'Beidou', 'Chongyun',
+  'Ganyu',  'Hu Tao',
   'Keqing', 'Ningguang',
   'Qiqi',   'Xiangling',
   'Xiao',   'Xingqiu',
@@ -122,30 +134,33 @@ const genshin = require('genshin-db');
 ]
 ```
 
-## genshin.characters('sword')
+</details>
+<details>
+<summary>genshin.characters('sword')</summary>
 
 ```js
 [
-  'Aether',  'Jean',
-  'Kaeya',   'Keqing',
-  'Lumine',  'Qiqi',
-  'Xingqiu'
+  'Aether', 'Albedo',
+  'Jean',   'Kaeya',
+  'Keqing', 'Lumine',
+  'Qiqi',   'Xingqiu'
 ]
 ```
 
-## genshin.characters('ballad')
+</details>
+<details>
+<summary>genshin.characters('ballad')</summary>
 
 ```js
-[ 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
+[ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
 ```
 
-# genshin.talents(query[, opts])
+</details>
 
-- [genshin.talents('ninguang')](#genshintalentsninguang)
-- [genshin.talents('klee').passive3](#genshintalentskleepassive3)
-- [genshin.talents('mona').combatsp](#genshintalentsmonacombatsp)
+## genshin.talents(query[, opts])]
 
-## genshin.talents('ninguang')
+<details>
+<summary>genshin.talents('ninguang')</summary>
 
 ```js
 {
@@ -198,12 +213,14 @@ const genshin = require('genshin-db');
   passive3: {
     name: 'Trove of Marvelous Treasures',
     image: '',
-    info: 'Displays the location of nearby ore veins (Iron Ore, White Iron Ore, Crystal Ore, and Magical Crystal Ore) on them mini-map.'
+    info: 'Displays the location of nearby ore veins (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on them mini-map.'
   }
 }
 ```
 
-## genshin.talents('klee').passive3
+</details>
+<details>
+<summary>genshin.talents('klee').passive3</summary>
 
 ```js
 {
@@ -213,7 +230,9 @@ const genshin = require('genshin-db');
 }
 ```
 
-## genshin.talents('mona').combatsp
+</details>
+<details>
+<summary>genshin.talents('mona').combatsp</summary>
 
 ```js
 {
@@ -229,58 +248,67 @@ const genshin = require('genshin-db');
 }
 ```
 
-# genshin.constellations(query[, opts])
+</details>
 
-- [genshin.constellations('amber')](#genshinconstellationsamber)
-- [genshin.constellations('childe').c3](#genshinconstellationschildec3)
+## genshin.constellations(query[, opts])]
 
-## genshin.constellations('amber')
+<details>
+<summary>genshin.constellations('amber')</summary>
 
 ```js
 {
-    "name": "Amber",
-    "c1": {
-        "name": "One Arrow to Rule Them All",
-        "effect": "Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG."
-    },
-    "c2": {
-        "name": "Bunny Triggered",
-        "effect": "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it. Explosion via manual detonation deals 200% additional DMG."
-    },
-    "c3": {
-        "name": "It Burns!",
-        "effect": "Increases the Level of Fiery Rain by 3. Maximum upgrade level is 15."
-    },
-    "c4": {
-        "name": "It's Not Just Any Doll...",
-        "effect": "Decreases Explosive Puppet's CD by 20%. Adds 1 additional charge."
-    },
-    "c5": {
-        "name": "It's Baron Bunny!",
-        "effect": "Increases the Level of Explosive Puppet by 3. Maximum upgrade level is 15."
-    },
-    "c6": {
-        "name": "Wildfire",
-        "effect": "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
-    }
+  name: 'Amber',
+  c1: {
+    name: 'One Arrow to Rule Them All',
+    effect: "Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG.",
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c9/Constellation_One_Arrow_to_Rule_Them_All.png'
+  },
+  c2: {
+    name: 'Bunny Triggered',
+    effect: "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it. Explosion via manual detonation deals 200% additional DMG.",
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/7/75/Constellation_Bunny_Triggered.png'
+  },
+  c3: {
+    name: 'It Burns!',
+    effect: 'Increases the Level of Fiery Rain by 3. Maximum upgrade level is 15.',
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/93/Constellation_It_Burns%21.png'
+  },
+  c4: {
+    name: "It's Not Just Any Doll...",
+    effect: "Decreases Explosive Puppet's CD by 20%. Adds 1 additional charge.",
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d6/Constellation_It%27s_Not_Just_Any_Doll....png'
+  },
+  c5: {
+    name: "It's Baron Bunny!",
+    effect: 'Increases the Level of Explosive Puppet by 3. Maximum upgrade level is 15.',
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/95/Constellation_It%27s_Baron_Bunny%21.png'
+  },
+  c6: {
+    name: 'Wildfire',
+    effect: "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s.",
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/1/1b/Constellation_Wildfire.png'
+  }
 }
 ```
 
-## genshin.constellations('childe').c3
+</details>
+<details>
+<summary>genshin.constellations('childe').c3</summary>
 
 ```js
 {
   name: 'Abyssal Mayhem: Vortex of Turmoil',
-  effect: 'Increases the Level of Foul Legacy: Raging Tide by 3. Maximum upgrade level is 15.'
+  effect: 'Increases the Level of Foul Legacy: Raging Tide by 3. Maximum upgrade level is 15.',
+  image: ''
 }
 ```
 
-# genshin.weapons(query[, opts])
+</details>
 
-- [genshin.weapons('lost prayers')](#genshinweaponslost-prayers)
-- [genshin.weapons('decarabian')](#genshinweaponsdecarabian)
+## genshin.weapons(query[, opts])]
 
-## genshin.weapons('lost prayers')
+<details>
+<summary>genshin.weapons('lost prayers')</summary>
 
 ```js
 {
@@ -288,28 +316,27 @@ const genshin = require('genshin-db');
   weapontype: 'Catalyst',
   rarity: '5',
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Sacred_A2.png'
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png'
   },
   baseatk: '46',
-  ability: 'CRIT Rate 7.2%',
-  passive: {
-    passive_name: 'Boundless Blessing',
-    refinement_effect: {
-      refine_one: 'Increases Movement SPD by 10%. When in battle, gain an 8% Elemental DMG Bonus every 4s. Max 4 stacks. Lasts until the character falls or leaves combat.',
-      refine_two: 'Increases Movement SPD by 10%. When in battle, gain an 10% Elemental DMG Bonus every 4s. Max 4 stacks. Lasts until the character falls or leaves combat.',
-      refine_three: 'Increases Movement SPD by 10%. When in battle, gain an 12% Elemental DMG Bonus every 4s. Max 4 stacks. Lasts until the character falls or leaves combat.',
-      refine_four: 'Increases Movement SPD by 10%. When in battle, gain an 14% Elemental DMG Bonus every 4s. Max 4 stacks. Lasts until the character falls or leaves combat.',
-      refine_five: 'Increases Movement SPD by 10%. When in battle, gain an 16% Elemental DMG Bonus every 4s. Max 4 stacks. Lasts until the character falls or leaves combat.'
-    }
-  },
+  substat: 'CRIT Rate%',
+  subvalue: '7.2',
+  effectname: 'Boundless Blessing',
+  effect: 'Increases Movement SPD by 10%. When in battle, gain an {0}% Elemental DMG Bonus every 4s. Max 4 stacks. Lasts until the character falls or leaves combat.',
+  r1: [ '8' ],
+  r2: [ '10' ],
+  r3: [ '12' ],
+  r4: [ '14' ],
+  r5: [ '16' ],
   description: 'An educational tome written by anonymous early inhabitants who worshiped the wind. It has been blessed by the wind for its faithfulness and influence over the millennia.',
   weaponmaterialtype: 'Dandelion Gladiator',
   url: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
 }
 ```
 
-
-## genshin.weapons('decarabian')
+</details>
+<details>
+<summary>genshin.weapons('decarabian')</summary>
 
 ```js
 [
@@ -324,19 +351,21 @@ const genshin = require('genshin-db');
   'Pocket Grimoire',
   'Raven Bow',
   'Royal Grimoire',
+  'Royal Longsword',
   'Silver Sword',
+  'Snow-Tombed Starsilver',
   'The Bell',
   'The Stringless',
-  'The Viridiscent Hunt'
+  'The Viridescent Hunt'
 ]
 ```
 
-# genshin.weaponmaterialtypes(query[, opts])
+</details>
 
-- [genshin.weaponmaterialtypes('chains')](#genshinweaponmaterialtypeschains)
-- [genshin.weaponmaterialtypes('fri')](#genshinweaponmaterialtypesfri)
+## genshin.weaponmaterialtypes(query[, opts])]
 
-## genshin.weaponmaterialtypes('chains')
+<details>
+<summary>genshin.weaponmaterialtypes('chains')</summary>
 
 ```js
 {
@@ -352,18 +381,20 @@ const genshin = require('genshin-db');
 }
 ```
 
-## genshin.weaponmaterialtypes('fri')
+</details>
+<details>
+<summary>genshin.weaponmaterialtypes('fri')</summary>
 
 ```js
 [ 'Boreal Wolf', 'Mist Veiled Elixir' ]
 ```
 
-# genshin.talentmaterialtypes(query[, opts])
+</details>
 
-- [genshin.talentmaterialtypes('ballad')](#genshintalentmaterialtypesballad)
-- [genshin.talentmaterialtypes('satur')](#genshintalentmaterialtypessatur)
+## genshin.talentmaterialtypes(query[, opts])]
 
-## genshin.talentmaterialtypes('ballad')
+<details>
+<summary>genshin.talentmaterialtypes('ballad')</summary>
 
 ```js
 {
@@ -378,17 +409,20 @@ const genshin = require('genshin-db');
 }
 ```
 
-## genshin.talentmaterialtypes('satur')
+</details>
+<details>
+<summary>genshin.talentmaterialtypes('satur')</summary>
 
 ```js
 [ 'Ballad', 'Gold' ]
 ```
 
-# genshin.artifacts(query[, opts])
+</details>
 
-- [genshin.artifacts('flame')](#genshinartifactsflame)
+## genshin.artifacts(query[, opts])]
 
-## genshin.artifacts('flame')
+<details>
+<summary>genshin.artifacts('flame')</summary>
 
 ```js
 {
@@ -438,16 +472,13 @@ const genshin = require('genshin-db');
   }
 }
 ```
-# genshin.recipes(query[, opts])
 
-- [genshin.recipes('temptation')](#genshinrecipestemptation)
-- [genshin.recipes('4')](#genshinrecipes4)
-- [genshin.recipes('warrior')](#genshinrecipeswarrior)
-- [genshin.recipes('cabbage')](#genshinrecipescabbage)
-- [genshin.recipes('atK')](#genshinrecipesatk)
-- [genshin.recipes('diluc')](#genshinrecipesdiluc)
+</details>
 
-## genshin.recipes('temptation')
+## genshin.recipes(query[, opts])]
+
+<details>
+<summary>genshin.recipes('temptation')</summary>
 
 ```js
 {
@@ -458,20 +489,24 @@ const genshin = require('genshin-db');
   description: 'A complex, famous type of Liyue cuisine, in which specially selected ingredients are submerged and slowly bowled in soup stock. The recipe scribbled from memory alone was enough to urge the adepti to once again return to the world of men.',
   buffs: [ 'ATK', 'CRIT Rate %' ],
   images: {
-    image: 'https://s3.us-east-1.amazonaws.com/gamewith-en/article_tools/genshin-impact/gacha/r_i_33.png'
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Item_Adeptus%27_Temptation.png'
   },
   ingredients: [ 'Ham x4', 'Crab x3', 'Shrimp Meat x3', 'Matsutake x3' ],
-  source: 'From a treasure chest on top of a floating platform in Liyue.'
+  source: `Chest at the Adeptus' Abode above Qingyun Peak, Liyue after completing "3 Divine Birds" mini quest.`
 }
 ```
 
-## genshin.recipes('4')
+</details>
+<details>
+<summary>genshin.recipes('4')</summary>
 
 ```js
 [ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
 ```
 
-## genshin.recipes('warrior')
+</details>
+<details>
+<summary>genshin.recipes('warrior')</summary>
 
 ```js
 [
@@ -485,46 +520,55 @@ const genshin = require('genshin-db');
   'Fried Radish Balls',
   'Jade Parcels',
   'Jueyun Chili Chicken',
+  'Jueyun Guoba',
   'No Tomorrow',
   '"Once Upon a Time in Mondstadt"',
   `"Pile 'Em Up"`,
   'Qingce Stir Fry',
+  "Rockin' Riffin' Chicken!",
   'Satisfying Salad',
   'Sautéed Matsutake',
   'Tianshu Meat'
 ]
 ```
 
-## genshin.recipes('cabbage')
+</details>
+<details>
+<summary>genshin.recipes('cabbage')</summary>
 
 ```js
 [
+  'Crab, Ham & Veggie Bake',
   'Der Weisheit Letzter Schluss (Life)',
+  'Invigorating Pizza',
   'Jade Parcels',
   'Mushroom Pizza',
   'Northern Smoked Chicken',
+  'Nutritious Meal (V.593)',
   'Qingce Stir Fry',
   'Satisfying Salad'
 ]
 ```
 
-## genshin.recipes('crit rate')
+</details>
+<details>
+<summary>genshin.recipes('atK')</summary>
 
 ```js
 [
   "Adeptus' Temptation",
-  'Come and Get It',
-  'Der Weisheit Letzter Schluss (Life)',
-  'Jueyun Chili Chicken',
-  'No Tomorrow',
-  '"Once Upon a Time in Mondstadt"',
-  `"Pile 'Em Up"`,
-  'Satisfying Salad',
-  'Tianshu Meat'
+  "Adventurer's Breakfast Sandwich",
+  'Almond Tofu',
+  'Fried Radish Balls',
+  'Jade Parcels',
+  'Qingce Stir Fry',
+  'Sautéed Matsutake'
 ]
 ```
 
-## genshin.recipes('diluc')
+</details>
+<details>
+<summary>genshin.recipes('diluc')</summary>
 
 ```js
 {
@@ -535,30 +579,19 @@ const genshin = require('genshin-db');
   description: "Diluc's specialty. Feast your eyes and then your stomach upon this delicacy as the soft ribs melt in your mouth. Who knew Diluc was able to cook this well?",
   buffs: [ 'CRIT Rate %', 'CRIT DMG %' ],
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Item_%22Once_Upon_a_Time_in_Mondstadt%22.png/revision/latest/scale-to-width-down/202?cb=20201028200634'
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Item_%22Once_Upon_a_Time_in_Mondstadt%22.png'
   },
   ingredients: [ 'Raw Meat x3', 'Potato x3', 'Small Lamp Grass x1', 'Cheese x1' ],
-  source: "Chance to obtain when cooking Pile 'Em Up with Diluc.",
+  source: `Diluc's specialty dish from cooking "Pile 'Em Up".`,
   base: `"Pile 'Em Up"`,
   cook: 'Diluc'
 }
 ```
 
-# extra
+</details>
 
-```js
-console.log(genshin.elements('anemo'))
-```
+## genshin.elements(query[, opts])]
 
-```json
-{
-    "name": "Anemo",
-    "type": "Wind",
-    "color": "#a8f5ce",
-    "emoji": "<:Element_Anemo:763984819066634289>",
-    "region": "Mondstadt",
-    "archon": "Barbatos",
-    "theme": "Germany",
-    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Element_Anemo.png"
-}
-```
+
+## genshin.rarity(query[, opts])]
+
