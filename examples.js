@@ -66,12 +66,12 @@ folders.forEach(folder => {
 });
 
 folders.forEach(folder => {
-	output += `\n# genshin.${folder.function}(query[, opts])]\n\n`;
+	output += `\n## genshin.${folder.function}(query[, opts])]\n\n`;
 	folder.params.forEach(param => {
 		output += '<details>\n';
 		let [inside, outside] = param.split('/')
 		//genshin.talents('klee').passive3
-		let call = `genshin.${folder.function}('${inside}')${outside ? outside : ''}`
+		let call = `genshin.${folder.function}('**${inside}**')**${outside ? outside : ''}**`
 		let result = util.inspect(eval(call), false, null);
 		output += `<summary>${call}</summary>\n`
 		output += '\n' + codeStart() + result + codeEnd() + '\n'
@@ -82,4 +82,4 @@ folders.forEach(folder => {
 });
 
 
-fs.writeFileSync(`./testexample.md`, output);
+fs.writeFileSync(`./EXAMPLES.md`, output);
