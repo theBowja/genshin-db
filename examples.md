@@ -220,7 +220,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talents('<b>klee</b>')**.passive3**</summary>
+<summary>genshin.talents('<b>klee</b>')<b>.passive3</b></summary>
 
 ```js
 {
@@ -232,7 +232,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talents('<b>mona</b>')**.combatsp**</summary>
+<summary>genshin.talents('<b>mona</b>')<b>.combatsp</b></summary>
 
 ```js
 {
@@ -293,7 +293,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.constellations('<b>childe</b>')**.c3**</summary>
+<summary>genshin.constellations('<b>childe</b>')<b>.c3</b></summary>
 
 ```js
 {
