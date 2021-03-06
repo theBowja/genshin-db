@@ -35,9 +35,10 @@ function formatLanguages(langs) {
     return undefined;
 }
 
+// FOR DATA ONLY
 function getJSON(path) {
     try {
-        return require(`./${path}`);
+        return require(`./data/${path}`);
     } catch(e) {
         return undefined;
     }
