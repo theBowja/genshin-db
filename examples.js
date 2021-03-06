@@ -74,7 +74,7 @@ folders.forEach(folder => {
 		let summary = `genshin.${folder.function}('**${inside}**')${outside ? `**${outside}**` : ''}`;
 		let call = `genshin.${folder.function}('${inside}')${outside ? outside : ''}`;
 		let result = util.inspect(eval(call), false, null);
-		output += `<summary>${call}</summary>\n`
+		output += `<summary>${summary}</summary>\n`
 		output += '\n' + codeStart() + result + codeEnd() + '\n'
 
 		output += '</details>\n';
