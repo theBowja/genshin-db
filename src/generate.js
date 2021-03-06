@@ -5,10 +5,10 @@ const fs = require('fs');
 
 const design = require('./design.json');
 let languages = require('./language.js').languages;
-let languages = ["English"]; // do only english for now
+languages = ["English"]; // do only english for now
 
 for(const lang of languages) {
-	let categories = require(`./${lang}/categories.json`);
+	let categories = require(`./data/${lang}/categories.json`);
 	for(const folder of design.folders) {
 		let index = {
 			file: [],
@@ -16,10 +16,10 @@ for(const lang of languages) {
 			namemap: []
 		};
 		try {
-			fs.readdirSync(`./${lang}/${folder}`).forEach(filename => {
+			fs.readdirSync(`./data/${lang}/${folder}`).forEach(filename => {
 				if(!filename.endsWith('.json')) return;
 
-				const data = require(`./${lang}/${folder}/${filename}`);
+				const data = require(`./data/${lang}/${folder}/${filename}`);
 				if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
 
 				index.names.push(data.name);
@@ -69,11 +69,11 @@ for(const lang of languages) {
 					// }
 				}
 			})
-			fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
+			fs.writeFileSync(`./data/index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
 		} catch(e) {
 			if(e.errno === -4058) console.log("no path: " + e.path);
 			else console.log(JSON.stringify(e) + e);
-			fs.writeFileSync(`./index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
+			fs.writeFileSync(`./data/index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
 		}
 	}
 	console.log("done");
