@@ -71,7 +71,7 @@ folders.forEach(folder => {
 		output += '<details>\n';
 		let [inside, outside] = param.split('/')
 		//genshin.talents('klee').passive3
-		let summary = `genshin.${folder.function}('<b>${inside}</b>')${outside ? `**${outside}**` : ''}`;
+		let summary = `genshin.${folder.function}('<b>${inside}</b>')${outside ? `<b>${outside}</b>` : ''}`;
 		let call = `genshin.${folder.function}('${inside}')${outside ? outside : ''}`;
 		let result = util.inspect(eval(call), false, null);
 		output += `<summary>${summary}</summary>\n`
