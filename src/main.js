@@ -1,12 +1,13 @@
 const fuzzysort = require('fuzzysort');
 const design = require('./design.json');
+const language = require('./language.js');
 
 const genshin = {};
 
 let baseoptions = {
     verbose: false, // used for replacing string names from categories with data object
-    resultlanguage: "english",
-    querylanguages: ["english"]
+    resultlanguage: "English",
+    querylanguages: ["English"]
 }
 
 genshin.setOptions = function(options) {
@@ -15,24 +16,6 @@ genshin.setOptions = function(options) {
 
 genshin.getOptions = function() {
     return JSON.parse(JSON.stringify(baseoptions));
-}
-
-/**
- * @param langs - a string or array of strings
- * @returns undefined if none of the strings are valid languages
- */
-function formatLanguages(langs) {
-    if(typeof langs === "string") {
-        return autocomplete(langs, design.languages);
-    } else if(Array.isArray(langs)) {
-        let tmp = [];
-        for(let l of langs) {
-            l = formatLanguages(l);
-            if(l && !tmp.includes(l)) tmp.push(l);
-        }
-        if(tmp.length) return tmp;
-    }
-    return undefined;
 }
 
 // FOR DATA ONLY
@@ -48,8 +31,8 @@ function getJSON(path) {
  * get rid of unnecessary properties
  */
 function sanitizeOptions(opts={}) {
-    opts.resultlanguage = formatLanguages(opts.resultlanguage);
-    opts.querylanguages = formatLanguages(opts.querylanguages);
+    opts.resultlanguage = language.format(opts.resultlanguage);
+    opts.querylanguages = language.format(opts.querylanguages);
     let sanOpts = {};
     if(typeof opts.verbose === "boolean")
         sanOpts.verbose = opts.verbose;

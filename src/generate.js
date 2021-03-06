@@ -4,8 +4,10 @@ const fs = require('fs');
 // if you ask me to explain the code i wrote below, i would reply i dunno
 
 const design = require('./design.json');
+let languages = require('./language.js').languages;
+let languages = ["English"]; // do only english for now
 
-for(const lang of design.languages) {
+for(const lang of languages) {
 	let categories = require(`./${lang}/categories.json`);
 	for(const folder of design.folders) {
 		let index = {
