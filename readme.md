@@ -1,18 +1,24 @@
 # genshin-db
 
-### Information is from the fandom and various other sources. JSON database with robust searching.
+### Genshin Impact JSON database with a robust searching API! Updated to version 1.3. Sources from the fandom wiki and GenshinData repo.
 
 ------------------------------------
 
 Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes.
 
+All in-game languages are supported for query and result. (only for talents and constellations)
+
+Start with:
+
 ```js
 const genshin = require('genshin-db');
 ```
 
-I recommend referring to [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md) since I didn't really write a detailed readme.
+Refer to [EXAMPLES.md](https://github.com/theBowja/genshin-db/blob/main/examples.md) since this readme isn't really good.
 
-NOTES: every input string to the query parameter will be autocompleted to match possible values. This means doing something like genshin.characters('amb') will give the same results as genshin.characters('amber')
+Every input string to the query parameter will be **autocompleted** to match possible values. This means doing something like genshin.characters('amb') will give the same results as genshin.characters('amber'). If there are no results, then **undefined** will be returned.
+
+Please join [my discord](https://discord.gg/MHhYnRSC) and talk to me.
 
 ## Table of Contents
 
@@ -31,41 +37,46 @@ NOTES: every input string to the query parameter will be autocompleted to match 
 
 ## genshin.setOptions(opts)
 
+Default options
+
+```js
+{
+    verbose: false, // used for replacing string names from categories with data object
+    nameonly: false, // set this to true if you don't want your query to match any categories or aliases
+    querylanguages: ["English"], // array of languages that your query will be searched in
+    resultlanguage: "English"
+}
+````
+
+If the query matches a category where there may be multiple results like genshin.characters('Geo'), then an array of names will be returned. If **verbose** is set to true, then an array of objects will be returned instead. If **nameonly** is set to true, then the query search will be limited to only matching names instead.
+
+Supported languages options are: ChineseSimplified, ChineseTraditional, English, French, German, Indonesian, Japanese, Korean, Portuguese, Russian, Spanish, Thai, Vietnamese.
+
 ## genshin.getOptions()
 
 ## genshin.characters(query[, opts])
 
-Possible inputs for query parameter are:
+Returns the profile info for characters.
 
-- all character names
-- constellation names
-- any birthday month
-- all elements
-- all substat types
-- all weapon types
-- all talent level-up material types
-- all genders
-- all regions
-- all rarities
-- "names"
+Possible query inputs include: character names, constellation names, birthday months, elements, substats, weapon types, talent level-up material types, genders, regions, rarities, and 'name' for the list of all characters.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshincharactersquery-opts) to see example inputs and outputs for this function.
 
 ## genshin.talents(query[, opts])
 
-Possible inputs for query parameter are:
+Returns the combat skills and passive skills for characters.
 
-- all character names
+Possible query inputs include: character names.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshintalentsquery-opts) to see example inputs and outputs for this function.
 
 ## genshin.constellations(query[, opts])
 
-Possible inputs for query paremter are:
+Returns the constellation information for characters.
 
-- all character names
+Possible query inputs include: character names.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinconstellationsquery-opts) to see example inputs and outputs for this function.

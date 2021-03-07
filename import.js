@@ -1,4 +1,4 @@
-// THIS SCRIPT IMPORTS DATA IN THE import FOLDER INTO THE LIBRARY
+// THIS SCRIPT IMPORTS DATA IN THE import FOLDER INTO THIS LIBRARY
 // I made a script elsewhere that extracts what I need out of the GenshinData repo
 
 const fs = require('fs');

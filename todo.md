@@ -1,4 +1,5 @@
 ## Todo
+- [ ] allow alphanumeric matching for other languages
 - [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
 - [ ] add properties information of data to readme.md
@@ -37,6 +38,8 @@
 
 
 ## Done
+- [x] added translations for all talents (3/7)
+- [x] added translations for all constellations (3/6)
 - [x] auto-generate examples.md (3/6)
 - [x] make collapsable sections for examples.md (3/6)
 - [x] 1.3 update (3/2 AzureHakua)

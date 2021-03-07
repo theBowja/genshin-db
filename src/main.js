@@ -6,8 +6,9 @@ const genshin = {};
 
 let baseoptions = {
     verbose: false, // used for replacing string names from categories with data object
-    resultlanguage: "English",
-    querylanguages: ["English"]
+    nameonly: false, // set this to true if you don't want your query to match any categories or aliases
+    querylanguages: ["English"], // array of languages that your query will be searched in
+    resultlanguage: "English"
 }
 
 genshin.setOptions = function(options) {
@@ -36,6 +37,8 @@ function sanitizeOptions(opts={}) {
     let sanOpts = {};
     if(typeof opts.verbose === "boolean")
         sanOpts.verbose = opts.verbose;
+    if(typeof opts.nameonly === 'boolean')
+        sanOpts.nameonly = opts.nameonly;
     if(opts.resultlanguage !== undefined)
         sanOpts.resultlanguage = opts.resultlanguage;
     if(opts.querylanguages !== undefined)
@@ -72,6 +75,7 @@ genshin.categories = function(query, opts={}) {
  * returns undefined if failed.
  */
 function translateCategoryValue(fromlang, tolang, value) {
+    if(value === 'names') return value;
     if(fromlang === tolang) return value;
     const fromcategory = getJSON(`${fromlang}/categories.json`);
     if(fromcategory === undefined) return;
@@ -92,6 +96,7 @@ function translateCategoryValue(fromlang, tolang, value) {
  * @returns mapped filename of data name, otherwise undefined.
  */
 function getFileName(index, name) {
+    if(index.file === undefined || index.namemap === undefined) return undefined;
     return index.file[index.namemap.indexOf(name)];
 }
 
@@ -103,11 +108,13 @@ function searchFolder(query, folder, opts={}) {
     if(query === undefined) return undefined;
 
     for(let lang of opts.querylanguages) {
-        const langindex = getJSON(`index/${lang}/${folder}.json`);
-        if(langindex[query] !== undefined) { // is a value for a property instead of specific name
+        let langindex = getJSON(`index/${lang}/${folder}.json`);
+        if(langindex === undefined) continue;
+        if(!opts.nameonly && langindex[query] !== undefined) { // is a value for a property instead of specific name
             query = translateCategoryValue(lang, opts.resultlanguage, query);
-            if(query === undefined) return undefined;
+            if(query === undefined) continue; // no match for this category translate
             if(lang !== opts.resultlanguage) langindex = getJSON(`index/${opts.resultlanguage}/${folder}.json`);
+            if(langindex === undefined || Object.keys(langindex).length === 0) continue; // result language doesn't have an index
 
             if(!opts.verbose) return langindex[query];
             let result = []; // start building the verbose array
