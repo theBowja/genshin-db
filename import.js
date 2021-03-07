@@ -31,6 +31,24 @@ function collateConstellation(existing, newdata) {
 	}
 }
 
+function collateTalent(existing, newdata) {
+	existing.name = newdata.name;
+	function addTalent(prop) {
+		if(existing[prop] === undefined) existing[prop] = {};
+		existing[prop].name = newdata[prop].name;
+		existing[prop].info = newdata[prop].info;
+		if(newdata[prop].description !== undefined) existing[prop].description = newdata[prop].description;
+		if(existing[prop].image === undefined) existing[prop].image = '';
+	}
+	addTalent('combat1');
+	addTalent('combat2');
+	if(newdata.combatsp !== undefined) addTalent('combatsp'); // for mona
+	addTalent('combat3');
+	addTalent('passive1');
+	addTalent('passive2');
+	if(newdata.passive3 !== undefined) addTalent('passive3'); // traveler doesn't have passive3
+}
+
 function importData(folder, collateFunc) {
 	language.languageCodes.forEach(lang => {
 		let newaggregateddata = require(`./import/${lang}/${folder}.json`);
@@ -39,6 +57,7 @@ function importData(folder, collateFunc) {
 			let existing = getJSON(`${basepath}/${filename}.json`);
 			if(existing === undefined) existing = {};
 
+			console.log(filename);
 			collateFunc(existing, newdata);
 
 			fs.mkdirSync(`./src/data/${basepath}`, { recursive: true });
@@ -48,3 +67,4 @@ function importData(folder, collateFunc) {
 }
 
 importData('constellations', collateConstellation);
+importData('talents', collateTalent);
