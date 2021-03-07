@@ -1,5 +1,6 @@
 ## Todo
 - [ ] allow alphanumeric matching for other languages
+  [ ] redo categories to be non-manual
 - [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
 - [ ] add properties information of data to readme.md
