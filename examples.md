@@ -177,7 +177,7 @@ const genshin = require('genshin-db');
       'If Ningguang has any Star Jades, unleashing a Charged Attack will cause the Star Jades to be fired at the enemy as well, dealing additional DMG.\n' +
       '\n' +
       '**Plunging Attack**\n' +
-      'Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all enemies in her path. Deals AoE Geo DMG upon impact with the ground.',
+      'Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Geo DMG upon impact with the ground.',
     attributes: ''
   },
   combat2: {
@@ -186,8 +186,8 @@ const genshin = require('genshin-db');
     info: 'Ningguang creates a Jade Screen out of gold, obsidian and her great opulence, dealing AoE Geo DMG.\n' +
       '\n' +
       '**Jade Screen**\n' +
-      '- Blocks enemy projectiles.\n' +
-      "- Endurance scales based on Ningguang's Max HP.\n" +
+      "·Blocks opponents' projectiles.\n" +
+      "·Endurance scales based on Ningguang's Max HP.\n" +
       '\n' +
       'Jade Screen is considered a Geo Construct and can be used to block certain attacks, but cannot be climbed. Only one Jade Screen may exist at any one time.',
     description: 'The canvas of stars is written upon this jade screen.',
@@ -196,7 +196,8 @@ const genshin = require('genshin-db');
   combat3: {
     name: 'Starshatter',
     image: '',
-    info: 'Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her enemies that deal massive Geo DMG. If Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time.',
+    info: 'Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her opponents that deal massive Geo DMG.\n' +
+      'If Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time.',
     description: 'Stars shatter. Silence falls.',
     attributes: ''
   },
@@ -208,12 +209,12 @@ const genshin = require('genshin-db');
   passive2: {
     name: 'Strategic Reserve',
     image: '',
-    info: 'A character that passes through the Jade Screen will gain a 12% Geo DMG Bonus for 10s.'
+    info: 'A character that passes through the **Jade Screen** will gain a 12% Geo DMG Bonus for 10s.'
   },
   passive3: {
     name: 'Trove of Marvelous Treasures',
     image: '',
-    info: 'Displays the location of nearby ore veins (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on them mini-map.'
+    info: 'Displays the location of nearby **ore veins** (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on the mini-map.'
   }
 }
 ```
@@ -226,7 +227,7 @@ const genshin = require('genshin-db');
 {
   name: 'All Of My Treasures!',
   image: '',
-  info: 'Displays the location of nearby resources unique to Mondstadt on the mini-map.'
+  info: 'Displays the location of nearby **resources unique to Mondstadt** on the mini-map.'
 }
 ```
 
@@ -242,8 +243,8 @@ const genshin = require('genshin-db');
     "Mona cloaks herself within the water's flow, consuming Stamina to move rapidly.\n" +
     '\n' +
     'When under the effect of Illusory Torrent, Mona can move at high speed on water.\n' +
-    'Applies the Wet status to nearby enemies when she reappears.',
-  description: "This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyways...",
+    'Applies the Wet status to nearby opponents when she reappears.',
+  description: "This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyway...",
   attributes: ''
 }
 ```
