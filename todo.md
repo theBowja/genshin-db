@@ -1,5 +1,4 @@
 ## Todo
-- [ ] make collapsable sections for examples.md
 - [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
 - [ ] add properties information of data to readme.md
@@ -39,6 +38,7 @@
 
 ## Done
 - [x] auto-generate examples.md (3/6)
+- [x] make collapsable sections for examples.md (3/6)
 - [x] 1.3 update (3/2 AzureHakua)
 - [x] finished all recipe images (1/17)
 - [x] sunshine sprat and ghoulash recipe. some images (1/17)

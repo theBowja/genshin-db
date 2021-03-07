@@ -1,4 +1,5 @@
 // THIS SCRIPT GENERATES THE EXAMPLES.MD FILE
+// uses util.inspect which is NODE only
 
 const fs = require('fs');
 const util = require('util');
