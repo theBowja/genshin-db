@@ -53,12 +53,6 @@ let folders = [
 	},
 ];
 
-// converts an object into a pretty string. garbage.
-function convertToText(obj, indent) {
-
-}
-
-
 let output = header+'\n';
 output += '## Table of Contents\n\n';
 
