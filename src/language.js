@@ -1,19 +1,37 @@
 const fuzzysort = require('fuzzysort');
 
+// converts Genshin's language codes into expanded strings
 const languageMap = {
-	"CHS": "ChineseSimplified",
-	"CHT": "ChineseTraditional",
-	"DE":  "German",
-	"EN":  "English",
-	"ES":  "Spanish",
-	"FR":  "French",
-	"ID":  "Indonesian",
-	"JA":  "Japanese",
-	"KO":  "Korean",
-	"PT":  "Portuguese",
-	"RU":  "Russion",
-	"TH":  "Thai",
-	"VI":  "Vietnamese"
+	'CHS': 'ChineseSimplified',
+	'CHT': 'ChineseTraditional',
+	'DE':  'German',
+	'EN':  'English',
+	'ES':  'Spanish',
+	'FR':  'French',
+	'ID':  'Indonesian',
+	'JA':  'Japanese',
+	'KO':  'Korean',
+	'PT':  'Portuguese',
+	'RU':  'Russion',
+	'TH':  'Thai',
+	'VI':  'Vietnamese'
+};
+
+// // converts expanded strings into javascript locale codes
+const localeMap = {
+	'ChineseSimplified':  'zh-cn',
+	'ChineseTraditional': 'zh-tw',
+	'German':             'de',
+	'English':            'en',
+	'Spanish':            'es',
+	'French':             'fr',
+	'Indonesian':         'id',
+	'Japanese':           'ja',
+	'Korean':             'ko',
+	'Portuguese':         'pt',
+	'Russion':            'ru',
+	'Thai':               'th',
+	'Vietnamese':         'vi'
 };
 
 const languageDict = Object.keys(languageMap).concat(Object.values(languageMap));
@@ -31,7 +49,7 @@ function autocompleteLanguage(input, dict) {
  *            undefined if none of the strings are valid languages.
  */
 function format(langs) {
-    if(typeof langs === "string") {
+    if(typeof langs === 'string') {
         return autocompleteLanguage(langs, languageDict);
     } else if(Array.isArray(langs)) {
         let tmp = [];
