@@ -12,7 +12,7 @@ const languageMap = {
 	'JA':  'Japanese',
 	'KO':  'Korean',
 	'PT':  'Portuguese',
-	'RU':  'Russion',
+	'RU':  'Russian',
 	'TH':  'Thai',
 	'VI':  'Vietnamese'
 };
@@ -29,7 +29,7 @@ const localeMap = {
 	'Japanese':           'ja',
 	'Korean':             'ko',
 	'Portuguese':         'pt',
-	'Russion':            'ru',
+	'Russian':            'ru',
 	'Thai':               'th',
 	'Vietnamese':         'vi'
 };
@@ -64,6 +64,8 @@ function format(langs) {
 
 module.exports = {
 	languages: Object.values(languageMap),
+	languageCodes: Object.keys(languageMap),
 	languageMap: languageMap,
+	localeMap: localeMap,
 	format: format
 };

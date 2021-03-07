@@ -260,32 +260,34 @@ const genshin = require('genshin-db');
   name: 'Amber',
   c1: {
     name: 'One Arrow to Rule Them All',
-    effect: "Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG.",
+    effect: "Fires 2 arrows per **Aimed Shot**. The second arrow deals 20% of the first arrow's DMG.",
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c9/Constellation_One_Arrow_to_Rule_Them_All.png'
   },
   c2: {
     name: 'Bunny Triggered',
-    effect: "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it. Explosion via manual detonation deals 200% additional DMG.",
+    effect: "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it.\n" +
+      'Explosion via manual detonation deals 200% additional DMG.',
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/7/75/Constellation_Bunny_Triggered.png'
   },
   c3: {
     name: 'It Burns!',
-    effect: 'Increases the Level of Fiery Rain by 3. Maximum upgrade level is 15.',
+    effect: 'Increases the Level of **Fiery Rain** by 3.\nMaximum upgrade level is 15.',
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/93/Constellation_It_Burns%21.png'
   },
   c4: {
     name: "It's Not Just Any Doll...",
-    effect: "Decreases Explosive Puppet's CD by 20%. Adds 1 additional charge.",
+    effect: "Decreases **Explosive Puppet**'s CD by 20%. Adds 1 additional charge.",
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d6/Constellation_It%27s_Not_Just_Any_Doll....png'
   },
   c5: {
     name: "It's Baron Bunny!",
-    effect: 'Increases the Level of Explosive Puppet by 3. Maximum upgrade level is 15.',
+    effect: 'Increases the Level of **Explosive Puppet** by 3.\n' +
+      'Maximum upgrade level is 15.',
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/95/Constellation_It%27s_Baron_Bunny%21.png'
   },
   c6: {
     name: 'Wildfire',
-    effect: "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s.",
+    effect: "**Fiery Rain** increases all party members' Movement SPD by 15% and ATK by 15% for 10s.",
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/1/1b/Constellation_Wildfire.png'
   }
 }
@@ -298,7 +300,8 @@ const genshin = require('genshin-db');
 ```js
 {
   name: 'Abyssal Mayhem: Vortex of Turmoil',
-  effect: 'Increases the Level of Foul Legacy: Raging Tide by 3. Maximum upgrade level is 15.',
+  effect: 'Increases the Level of **Foul Legacy: Raging Tide** by 3.\n' +
+    'Maximum upgrade level is 15.',
   image: ''
 }
 ```

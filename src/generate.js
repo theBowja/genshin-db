@@ -5,7 +5,7 @@ const fs = require('fs');
 
 const design = require('./design.json');
 let languages = require('./language.js').languages;
-languages = ["English"]; // do only english for now
+//languages = ["English"]; // do only english for now
 
 for(const lang of languages) {
 	let categories = require(`./data/${lang}/categories.json`);
@@ -16,6 +16,8 @@ for(const lang of languages) {
 			namemap: []
 		};
 		try {
+			if (!fs.existsSync(`./data/${lang}/${folder}`)) continue;
+
 			fs.readdirSync(`./data/${lang}/${folder}`).forEach(filename => {
 				if(!filename.endsWith('.json')) return;
 
@@ -69,6 +71,8 @@ for(const lang of languages) {
 					// }
 				}
 			})
+
+			fs.mkdirSync(`./data/index/${lang}`, { recursive: true });
 			fs.writeFileSync(`./data/index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
 		} catch(e) {
 			if(e.errno === -4058) console.log("no path: " + e.path);
