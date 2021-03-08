@@ -1,9 +1,8 @@
 ## Todo
-- [ ] allow alphanumeric matching for other languages
+- [ ] allow romanized matching for other languages
   [ ] redo categories to be non-manual
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
 - [ ] make script that will check if every image in json files exists 
-- [ ] replace every character description with in-game description
 
 - [ ] add properties information of data to readme.md
 - [ ] language-specific sanitation of query inputs
@@ -40,6 +39,7 @@
 
 
 ## Done
+- [x] added translations for all characters (3/8)
 - [x] added translations for all talents (3/7)
 - [x] added translations for all constellations (3/6)
 - [x] auto-generate examples.md (3/6)

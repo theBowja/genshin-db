@@ -6,7 +6,7 @@
 
 Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes.
 
-All in-game languages are supported for query and result. (only for talents and constellations)
+All in-game languages are supported for query and result. (only for characters, talents, constellations)
 
 Start with:
 
