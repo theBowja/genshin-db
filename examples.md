@@ -26,15 +26,20 @@ const genshin = require('genshin-db');
 ```js
 {
   name: 'Amber',
-  titles: [ 'Outrider', 'Champion Glider' ],
+  title: 'Gliding Champion',
+  description: "Always energetic and full of life, Amber's the best — albeit only — Outrider of the Knights of Favonius.",
+  rarity: '4',
   element: 'Pyro',
   weapontype: 'Bow',
-  gender: 'Female',
+  substat: 'ATK',
+  gender: 'FEMALE',
+  body: 'GIRL',
+  association: 'MONDSTADT',
   region: 'Mondstadt',
-  rarity: '4',
+  affiliation: 'Knights of Favonius',
+  birthdaymmdd: '8/10',
   birthday: 'August 10',
   constellation: 'Lepus',
-  substat: 'ATK%',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
@@ -42,12 +47,10 @@ const genshin = require('genshin-db');
   },
   cv: {
     english: 'Kelly Baskin',
-    japanese: 'Manaka Iwani',
-    korean: 'Kim Yeon-woo',
-    chinese: 'Tingting Hu'
+    chinese: '牛奶君',
+    japanese: '石見舞菜香',
+    korean: '김연우'
   },
-  affiliation: 'Knights of Favonius',
-  description: 'A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has made her a three-time winner of the Gliding Championship in Mondstadt. As a rising star within the Knights of Favonius, Amber is always ready for any challenging tasks.',
   talentmaterialtype: 'Freedom',
   url: 'https://genshin-impact.fandom.com/wiki/Amber'
 }
@@ -60,15 +63,20 @@ const genshin = require('genshin-db');
 ```js
 {
   name: 'Venti',
-  titles: [ 'Windborne Bard', 'The God of Freedom', 'Tone-Deaf Bar' ],
+  title: 'Windborne Bard',
+  description: "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.",
+  rarity: '5',
   element: 'Anemo',
   weapontype: 'Bow',
-  gender: 'Male',
+  substat: 'Energy Recharge',
+  gender: 'MALE',
+  body: 'BOY',
+  association: 'MONDSTADT',
   region: 'Mondstadt',
-  rarity: '5',
+  affiliation: 'Mondstadt',
+  birthdaymmdd: '6/16',
   birthday: 'June 16',
   constellation: 'Carmen Dei',
-  substat: 'Energy Recharge%',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
@@ -76,12 +84,10 @@ const genshin = require('genshin-db');
   },
   cv: {
     english: 'Erika Harlacher',
-    japanese: 'Ayumu Murase',
-    korean: 'Jung Yoo-jung',
-    chinese: 'Miaojiang'
+    chinese: '喵酱',
+    japanese: '村瀬歩',
+    korean: '정유정'
   },
-  affiliation: 'Archons',
-  description: "A bard that seems to have arrived on some unknown wind - sometimes sings songs as old as the hills, and other times sings poems fresh and new. Likes apples and lively places, but is not a fan of cheese or anything sticky. When using his Anemo power to control the wind, it often appears as feathers, as he's fond of that which appears light and breezy.",
   talentmaterialtype: 'Ballad',
   url: 'https://genshin-impact.fandom.com/wiki/Venti'
 }
@@ -140,10 +146,11 @@ const genshin = require('genshin-db');
 
 ```js
 [
-  'Aether', 'Albedo',
-  'Jean',   'Kaeya',
-  'Keqing', 'Lumine',
-  'Qiqi',   'Xingqiu'
+  'Aether',  'Albedo',
+  'Bennett', 'Jean',
+  'Kaeya',   'Keqing',
+  'Lumine',  'Qiqi',
+  'Xingqiu'
 ]
 ```
 
