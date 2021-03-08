@@ -1,10 +1,11 @@
 ## Todo
 - [ ] allow alphanumeric matching for other languages
   [ ] redo categories to be non-manual
-- [ ] memoize buildQueryDict even though performance doesn't really matter
 - [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
-- [ ] add properties information of data to readme.md
+- [ ] make script that will check if every image in json files exists 
 - [ ] replace every character description with in-game description
+
+- [ ] add properties information of data to readme.md
 - [ ] language-specific sanitation of query inputs
 - [ ] add ingredients
 - [ ] add foods/consumables. move specialty dishes in "recipes" to foods/consumables

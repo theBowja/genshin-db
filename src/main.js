@@ -2,6 +2,7 @@ const fuzzysort = require('fuzzysort');
 const design = require('./design.json');
 const language = require('./language.js');
 
+// object that will be exported
 const genshin = {};
 
 let baseoptions = {
@@ -31,10 +32,12 @@ function getJSON(path) {
 /**
  * get rid of unnecessary properties
  */
-function sanitizeOptions(opts={}) {
+function sanitizeOptions(opts) {
+    if(typeof opts !== 'object' || opts === null) return undefined;
+
+    let sanOpts = {};
     opts.resultlanguage = language.format(opts.resultlanguage);
     opts.querylanguages = language.format(opts.querylanguages);
-    let sanOpts = {};
     if(typeof opts.verbose === "boolean")
         sanOpts.verbose = opts.verbose;
     if(typeof opts.nameonly === 'boolean')
@@ -46,15 +49,19 @@ function sanitizeOptions(opts={}) {
     return sanOpts;
 }
 
-function buildQueryDict(querylangs, folder) {
-    let dict = [];
+function buildQueryDict(querylangs, folder, nameonly) {
+    let dict = nameonly ? [] : ['names'];
     for(const lang of querylangs) {
-        const file = getJSON(`index/${lang}/${folder}.json`)
-        //console.log(file);
-        if(file === undefined) continue;
-        dict = [...dict, ...(file.namemap||[]), ...Object.keys(file).filter(k => k !== 'file' && k !== 'namemap')];
+        const index = getJSON(`index/${lang}/${folder}.json`)
+        if(index === undefined) continue;
+        if(index.names)
+            dict = dict.concat(Object.keys(index.names));
+        if(nameonly) continue;
+        if(index.aliases)
+            dict = dict.concat(Object.keys(index.aliases));
+        if(index.categories)
+            dict = dict.concat(Object.keys(index.categories));
     }
-    //console.log(dict);
     return dict;
 }
 
@@ -70,105 +77,80 @@ genshin.categories = function(query, opts={}) {
     return file[query] ? file[query] : [];
 }
 
-/**
- * Finds the value from inside fromlang and maps it to tolang to return the value in tolang.
- * returns undefined if failed.
- */
-function translateCategoryValue(fromlang, tolang, value) {
-    if(value === 'names') return value;
-    if(fromlang === tolang) return value;
-    const fromcategory = getJSON(`${fromlang}/categories.json`);
-    if(fromcategory === undefined) return;
-    const tocategory = getJSON(`${tolang}/categories.json`);
-    if(tocategory === undefined) return;
-
-    for(let [key,arr] of Object.entries(fromcategory)) {
-        if(!Array.isArray(arr)) continue;
-        if(arr.indexOf(value) !== -1) return tocategory[key][arr.indexOf(value)];
-    }
-    return;
-}
-
-/**
- * Uses the index to find the mapping from a name to a filename
- * @param index - the object from an index file (like index/english/characters.json)
- * @param name - the name of the object that we want the filename of
- * @returns mapped filename of data name, otherwise undefined.
- */
-function getFileName(index, name) {
-    if(index.file === undefined || index.namemap === undefined) return undefined;
-    return index.file[index.namemap.indexOf(name)];
-}
-
 // TODO: use a better name lol
 // TODO: if folder is undefined, search through every folder
-function searchFolder(query, folder, opts={}) {
+function searchFolder(query, folder, opts) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    query = autocomplete(""+query, buildQueryDict(opts.querylanguages, folder));
+    query = autocomplete(""+query, buildQueryDict(opts.querylanguages, folder, opts.nameonly));
     if(query === undefined) return undefined;
 
     for(let lang of opts.querylanguages) {
         let langindex = getJSON(`index/${lang}/${folder}.json`);
         if(langindex === undefined) continue;
-        if(!opts.nameonly && langindex[query] !== undefined) { // is a value for a property instead of specific name
-            query = translateCategoryValue(lang, opts.resultlanguage, query);
-            if(query === undefined) continue; // no match for this category translate
-            if(lang !== opts.resultlanguage) langindex = getJSON(`index/${opts.resultlanguage}/${folder}.json`);
-            if(langindex === undefined || Object.keys(langindex).length === 0) continue; // result language doesn't have an index
 
-            if(!opts.verbose) return langindex[query];
-            let result = []; // start building the verbose array
-            for(let name of langindex[query]) {
-                let filename = getFileName(langindex, name);
-                if(filename !== undefined) result.push(getJSON(`${opts.resultlanguage}/${folder}/${filename}`))
-            }
-            return result;
+        // check if query is in .names
+        if(langindex.names[query] !== undefined)
+            return getJSON(`${opts.resultlanguage}/${folder}/${langindex.names[query]}`);
+
+        if(opts.nameonly) continue;
+
+        // check if query is in .aliases
+        if(langindex.aliases[query] !== undefined)
+            return getJSON(`${opts.resultlanguage}/${folder}/${langindex.aliases[query]}`); 
+
+        // check if query is in .categories
+        if(langindex.categories[query] !== undefined) {
+            let reslangindex = getJSON(`index/${opts.resultlanguage}/${folder}.json`);
+            if(reslangindex === undefined) return undefined;
+            // change the array of filenames into an array of data objects or data names. ignores undefined results if any
+            return langindex.categories[query].reduce((accum, filename) => {
+                let res = opts.verbose ? getJSON(`${opts.resultlanguage}/${folder}/${filename}`) : reslangindex.namemap[filename];
+                if(res !== undefined) accum.push(res);
+                return accum;
+            }, []);
         }
-        // else could be a value from namemap
-        const filename = getFileName(langindex, query);
-        if(filename !== undefined) return getJSON(`${opts.resultlanguage}/${folder}/${filename}`);
     }
     return undefined;
 }
 
 
-genshin.characters = function(query, opts={}) {
+genshin.characters = function(query, opts) {
     return searchFolder(query, 'characters', opts);
 }
 
-genshin.talents = function(query, opts={}) {
+genshin.talents = function(query, opts) {
     return searchFolder(query, 'talents', opts);
 }
 
-genshin.weapons = function(query, opts={}) {
+genshin.weapons = function(query, opts) {
     return searchFolder(query, 'weapons', opts);
 }
 
-genshin.weaponmaterialtypes = function(query, opts={}) {
+genshin.weaponmaterialtypes = function(query, opts) {
     return searchFolder(query, 'weaponmaterialtypes', opts);
 }
 
-genshin.talentmaterialtypes = function(query, opts={}) {
+genshin.talentmaterialtypes = function(query, opts) {
     return searchFolder(query, 'talentmaterialtypes', opts);
 }
 
-genshin.elements = function(query, opts={}) {
+genshin.elements = function(query, opts) {
     return searchFolder(query, 'elements', opts);
 }
 
-genshin.constellations = function(query, opts={}) {
+genshin.constellations = function(query, opts) {
     return searchFolder(query, 'constellations', opts);
 }
 
-genshin.artifacts = function(query, opts={}) {
+genshin.artifacts = function(query, opts) {
     return searchFolder(query, 'artifacts', opts);
 }
 
-genshin.rarity = function(query, opts={}) {
+genshin.rarity = function(query, opts) {
     return searchFolder(query, 'rarity', opts);
 }
 
-genshin.recipes = function(query, opts={}) {
+genshin.recipes = function(query, opts) {
     return searchFolder(query, 'recipes', opts)
 }
 

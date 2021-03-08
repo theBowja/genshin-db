@@ -11,9 +11,10 @@ for(const lang of languages) {
 	let categories = require(`./data/${lang}/categories.json`);
 	for(const folder of design.folders) {
 		let index = {
-			file: [],
-			names: [],
-			namemap: []
+			namemap: {}, // maps filename to name
+			names: {}, // maps name to filename
+			aliases: {}, // maps alias to filename
+			categories: {} // maps category to array of filenames
 		};
 		try {
 			if (!fs.existsSync(`./data/${lang}/${folder}`)) continue;
@@ -24,9 +25,9 @@ for(const lang of languages) {
 				const data = require(`./data/${lang}/${folder}/${filename}`);
 				if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
 
-				index.names.push(data.name);
-				index.file.push(filename);
-				index.namemap.push(data.name);
+				index.namemap[filename] = data.name;
+				index.names[data.name] = filename;
+
 				if(design.altnames[folder] !== undefined) {
 					for(let altname of design.altnames[folder]) { // add all the altnames to the index
 						let values = data[altname];
@@ -35,8 +36,7 @@ for(const lang of languages) {
 							values = [values];
 						for(let val of values) {
 							if(val !== undefined && val !== "") {
-								index.file.push(filename);
-								index.namemap.push(val)
+								index.aliases[val] = filename;
 							}
 						}
 					}
@@ -55,10 +55,10 @@ for(const lang of languages) {
 						else if(prop === "birthday") val = val.replace(/ [0-9]+/, '');
 
 						if(categories[prop] === "free" || categories[prop].includes(val)) {
-							if(index[val] === undefined)
-								index[val] = [data.name];
+							if(index.categories[val] === undefined)
+								index.categories[val] = [filename];
 							else
-								index[val].push(data.name);
+								index.categories[val].push(filename);
 						} else { console.log(filename + " missing val: " + val)}
 					}
 
