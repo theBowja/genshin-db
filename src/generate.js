@@ -1,13 +1,15 @@
 const fs = require('fs');
 
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
+// REQUIRES NODE v13+
+
 // if you ask me to explain the code i wrote below, i would reply i dunno
 
 const design = require('./design.json');
-let languages = require('./language.js').languages;
-//languages = ["English"]; // do only english for now
+let language = require('./language.js');
+//language.languages = ["English"]; // do only english for now
 
-for(const lang of languages) {
+for(const lang of language.languages) {
 	let categories = require(`./data/${lang}/categories.json`);
 	for(const folder of design.folders) {
 		let index = {
@@ -52,14 +54,18 @@ for(const lang of languages) {
 					for(let val of values) {
 						if(categories[prop] === undefined) console.log("missing category: "+folder+ ","+prop);
 						if(prop === "ingredients") val = val.replace(/ x\d$/i, '');
-						else if(prop === "birthday") val = val.replace(/ [0-9]+/, '');
+						else if(prop === "birthday") {
+							let [month, day] = data.birthdaymmdd.split('/');
+							let birthday = new Date(Date.UTC(2000, month-1, day));
+							val = birthday.toLocaleString(language.localeMap[lang], { timeZone: 'UTC', month: 'long' });
+						}
 
-						if(categories[prop] === "free" || categories[prop].includes(val)) {
+						//if(categories[prop] === "free" || categories[prop].includes(val)) {
 							if(index.categories[val] === undefined)
 								index.categories[val] = [filename];
 							else
 								index.categories[val].push(filename);
-						} else { console.log(filename + " missing val: " + val)}
+						//} else { console.log(filename + " missing val: " + val)}
 					}
 
 					// if(categories[prop].includes(data[prop])) {
@@ -80,5 +86,5 @@ for(const lang of languages) {
 			fs.writeFileSync(`./data/index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
 		}
 	}
-	console.log("done");
+	console.log("done "+lang);
 }

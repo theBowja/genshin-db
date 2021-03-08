@@ -1,5 +1,6 @@
 // THIS SCRIPT IMPORTS DATA IN THE import FOLDER INTO THIS LIBRARY
 // I made a script elsewhere that extracts what I need out of the GenshinData repo
+// REQUIRES NODE v13+
 
 const fs = require('fs');
 
@@ -46,6 +47,7 @@ function collateCharacter(existing, newdata, locale) {
 
 	existing.name = newdata.name;
 	existing.title = newdata.title;
+	existing.description = newdata.description;
 	existing.rarity = newdata.rarity;
 	existing.element = newdata.element;
 	existing.weapontype = newdata.weapontype;
