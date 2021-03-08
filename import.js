@@ -8,7 +8,6 @@ if(!fs.existsSync('./import/EN')) {
 	process.exit();
 }
 
-const language = require('./src/language.js');
 
 // FOR DATA ONLY
 function getJSON(path) {
@@ -19,7 +18,60 @@ function getJSON(path) {
     }
 }
 
+function clearObject(obj) {
+	for (let key in obj)
+	    if (obj.hasOwnProperty(key)) delete obj[key];
+}
 
+const bodyToGender = {
+	'BOY': 'MALE',
+	'LOLI': 'FEMALE',
+	'GIRL': 'FEMALE',
+	'MALE': 'MALE',
+	'LADY': 'FEMALE'
+}
+
+const associationToRegion = {
+	'LIYUE': 'Liyue',
+	'MONDSTADT': 'Mondstadt',
+	'FATUI': 'Snezhnaya',
+	'MAINACTOR': ''
+}
+
+function collateCharacter(existing, newdata, locale) {
+	newdata.images = existing.images;
+	newdata.talentmaterialtype = existing.talentmaterialtype;
+	newdata.url = existing.url;
+	clearObject(existing);
+
+	existing.name = newdata.name;
+	existing.title = newdata.title;
+	existing.rarity = newdata.rarity;
+	existing.element = newdata.element;
+	existing.weapontype = newdata.weapontype;
+	existing.substat = newdata.substat;
+	existing.gender = bodyToGender[newdata.body];
+	if(existing.gender === undefined) console.log('NO GENDER FROM BODY TYPE ' + newdata.body);
+	existing.body = newdata.body;
+	existing.association = newdata.association;
+	existing.region = associationToRegion[newdata.association];
+	if(existing.region === undefined) console.log('NO REGION FROM ASSOCIATION ' + newdata.association);
+	existing.affiliation = newdata.affiliation;
+
+	if(newdata.birthday) {
+		existing.birthdaymmdd = newdata.birthmonth + '/' + newdata.birthday;
+		let birthday = new Date(Date.UTC(2000, newdata.birthmonth-1, newdata.birthday));
+		existing.birthday = birthday.toLocaleString(locale, { timeZone: 'UTC', month: 'long', day: 'numeric' });
+	} else {
+		existing.birthdaymmdd = '';
+		existing.birthday = '';
+	}
+	existing.constellation = newdata.constellation;
+	existing.images = newdata.images || {};
+	existing.cv = newdata.cv;
+	existing.talentmaterialtype = newdata.talentmaterialtype || '';
+	existing.url = newdata.url;
+}
 
 function collateConstellation(existing, newdata) {
 	existing.name = newdata.name;
@@ -34,6 +86,7 @@ function collateConstellation(existing, newdata) {
 function collateTalent(existing, newdata) {
 	existing.name = newdata.name;
 	function addTalent(prop) {
+		if(newdata[prop] === undefined) return;
 		if(existing[prop] === undefined) existing[prop] = {};
 		existing[prop].name = newdata[prop].name;
 		existing[prop].info = newdata[prop].info;
@@ -42,29 +95,32 @@ function collateTalent(existing, newdata) {
 	}
 	addTalent('combat1');
 	addTalent('combat2');
-	if(newdata.combatsp !== undefined) addTalent('combatsp'); // for mona
+	addTalent('combatsp'); // for mona only
 	addTalent('combat3');
 	addTalent('passive1');
 	addTalent('passive2');
-	if(newdata.passive3 !== undefined) addTalent('passive3'); // traveler doesn't have passive3
+	addTalent('passive3'); // traveler doesn't have passive3
 }
 
-function importData(folder, collateFunc) {
-	language.languageCodes.forEach(lang => {
-		let newaggregateddata = require(`./import/${lang}/${folder}.json`);
+function importData(folder, collateFunc, dontwrite) {
+	const language = require('./src/language.js');
+	language.languageCodes.forEach(langC => {
+		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
-			let basepath = `${language.languageMap[lang]}/${folder}`
+			let basepath = `${language.languageMap[langC]}/${folder}`
 			let existing = getJSON(`${basepath}/${filename}.json`);
 			if(existing === undefined) existing = {};
 
-			console.log(filename);
-			collateFunc(existing, newdata);
+			collateFunc(existing, newdata, language.localeMap[language.languageMap[langC]]);
+			//if(langC === 'CHT') console.log(existing);
 
+			if(dontwrite) continue;
 			fs.mkdirSync(`./src/data/${basepath}`, { recursive: true });
 			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(existing, null, '\t'));
 		}
 	});
 }
 
-importData('constellations', collateConstellation);
-importData('talents', collateTalent);
+importData('characters', collateCharacter);
+// importData('constellations', collateConstellation);
+// importData('talents', collateTalent);
