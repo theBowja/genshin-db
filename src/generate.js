@@ -27,7 +27,9 @@ for(const lang of language.languages) {
 				const data = require(`./data/${lang}/${folder}/${filename}`);
 				if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
 
+				if(index.namemap[filename] !== undefined) console.log(`Duplicate filename: ${lang}/${folder}: ${filename}`);
 				index.namemap[filename] = data.name;
+				if(index.names[data.name] !== undefined) console.log(`Duplicate name: ${lang}/${folder}: ${data.name}`);
 				index.names[data.name] = filename;
 
 				if(design.altnames[folder] !== undefined) {
@@ -38,6 +40,8 @@ for(const lang of language.languages) {
 							values = [values];
 						for(let val of values) {
 							if(val !== undefined && val !== "") {
+								if(index.aliases[val] !== undefined && index.aliases[val] !== filename && filename !== 'lumine.json')
+									console.log(`Duplicate alias: ${lang}/${folder}: ${altname},${val},${filename}`);
 								index.aliases[val] = filename;
 							}
 						}
@@ -61,10 +65,12 @@ for(const lang of language.languages) {
 						}
 
 						//if(categories[prop] === "free" || categories[prop].includes(val)) {
-							if(index.categories[val] === undefined)
+							if(index.categories[val] === undefined) {
 								index.categories[val] = [filename];
-							else
+							} else {
+								if(index.categories[val].includes(filename)) console.log(`Duplicate category: ${lang}/${folder}: ${val},${filename}`);
 								index.categories[val].push(filename);
+							}
 						//} else { console.log(filename + " missing val: " + val)}
 					}
 
