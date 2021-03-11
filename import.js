@@ -3,6 +3,8 @@
 // REQUIRES NODE v13+
 
 const fs = require('fs');
+const language = require('./src/language.js');
+
 
 if(!fs.existsSync('./import/EN')) {
 	console.log('import folder doesn\'t exist');
@@ -32,6 +34,19 @@ const bodyToGender = {
 	'LADY': 'FEMALE'
 }
 
+const genderTranslations = {
+	'MALE': {
+		ChineseSimplified: '男', ChineseTraditional: '男', German: 'Männlich', English: 'Male', Spanish: 'Masculino',
+		French: 'Homme', Indonesian: 'Pria', Japanese: '男', Korean: '남성', Portuguese: 'Masculino',
+		Russian: 'мужчина', Thai: 'ชาย', Vietnamese: 'nam'
+	},
+	'FEMALE': {
+		ChineseSimplified: '女', ChineseTraditional: '女', German: 'Weiblich', English: 'Female', Spanish: 'Femenino',
+		French: 'Femme', Indonesian: 'Perempuan', Japanese: '女', Korean: '여성', Portuguese: 'Feminino',
+		Russian: 'женский', Thai: 'ผู้หญิง', Vietnamese: 'nữ'
+	}
+}
+
 const associationToRegion = {
 	'LIYUE': 'Liyue',
 	'MONDSTADT': 'Mondstadt',
@@ -39,7 +54,7 @@ const associationToRegion = {
 	'MAINACTOR': ''
 }
 
-function collateCharacter(existing, newdata, locale) {
+function collateCharacter(existing, newdata, lang) {
 	newdata.images = existing.images;
 	newdata.talentmaterialtype = existing.talentmaterialtype;
 	newdata.url = existing.url;
@@ -52,8 +67,9 @@ function collateCharacter(existing, newdata, locale) {
 	existing.element = newdata.element;
 	existing.weapontype = newdata.weapontype;
 	existing.substat = newdata.substat;
-	existing.gender = bodyToGender[newdata.body];
+	existing.gender = genderTranslations[bodyToGender[newdata.body]][lang];
 	if(existing.gender === undefined) console.log('NO GENDER FROM BODY TYPE ' + newdata.body);
+	else if(existing.gender === 'MALE') existing
 	existing.body = newdata.body;
 	existing.association = newdata.association;
 	existing.region = associationToRegion[newdata.association];
@@ -63,7 +79,7 @@ function collateCharacter(existing, newdata, locale) {
 	if(newdata.birthday) {
 		existing.birthdaymmdd = newdata.birthmonth + '/' + newdata.birthday;
 		let birthday = new Date(Date.UTC(2000, newdata.birthmonth-1, newdata.birthday));
-		existing.birthday = birthday.toLocaleString(locale, { timeZone: 'UTC', month: 'long', day: 'numeric' });
+		existing.birthday = birthday.toLocaleString(language.localeMap[lang], { timeZone: 'UTC', month: 'long', day: 'numeric' });
 	} else {
 		existing.birthdaymmdd = '';
 		existing.birthday = '';
@@ -105,7 +121,6 @@ function collateTalent(existing, newdata) {
 }
 
 function importData(folder, collateFunc, dontwrite) {
-	const language = require('./src/language.js');
 	language.languageCodes.forEach(langC => {
 		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
@@ -113,7 +128,7 @@ function importData(folder, collateFunc, dontwrite) {
 			let existing = getJSON(`${basepath}/${filename}.json`);
 			if(existing === undefined) existing = {};
 
-			collateFunc(existing, newdata, language.localeMap[language.languageMap[langC]]);
+			collateFunc(existing, newdata, language.languageMap[langC]);
 			//if(langC === 'CHT') console.log(existing);
 
 			if(dontwrite) continue;
