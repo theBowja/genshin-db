@@ -20,10 +20,19 @@ genshin.getOptions = function() {
     return JSON.parse(JSON.stringify(baseoptions));
 }
 
-// FOR DATA ONLY
-function getJSON(path) {
+const alldata = require('./data/data.min.json');
+function getData(lang, folder, filename) {
     try {
-        return require(`./data/${path}`);
+        return alldata[lang][folder][filename];
+    } catch(e) {
+        return undefined;
+    }
+}
+
+const allindex = require('./data/index.min.json');
+function getIndex(lang, folder) {
+    try {
+        return allindex[lang][folder];
     } catch(e) {
         return undefined;
     }
@@ -52,7 +61,7 @@ function sanitizeOptions(opts) {
 function buildQueryDict(querylangs, folder, nameonly) {
     let dict = nameonly ? [] : ['names'];
     for(const lang of querylangs) {
-        const index = getJSON(`index/${lang}/${folder}.json`)
+        const index = getIndex(lang, folder);
         if(index === undefined) continue;
         if(index.names)
             dict = dict.concat(Object.keys(index.names));
@@ -70,12 +79,12 @@ function autocomplete(input, dict) {
     return result === undefined ? undefined : result.target;
 }
 
-genshin.categories = function(query, opts={}) {
-    opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
+// genshin.categories = function(query, opts={}) {
+//     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
-    const file = getJSON(`${opts.resultlanguage}/categories.json`);
-    return file[query] ? file[query] : [];
-}
+//     const file = getCategory(opts.resultlanguage);
+//     return file[query] ? file[query] : [];
+// }
 
 // TODO: use a better name lol
 // TODO: if folder is undefined, search through every folder
@@ -85,26 +94,26 @@ function searchFolder(query, folder, opts) {
     if(query === undefined) return undefined;
 
     for(let lang of opts.querylanguages) {
-        let langindex = getJSON(`index/${lang}/${folder}.json`);
+        let langindex = getIndex(lang, folder);
         if(langindex === undefined) continue;
 
         // check if query is in .names
         if(langindex.names[query] !== undefined)
-            return getJSON(`${opts.resultlanguage}/${folder}/${langindex.names[query]}`);
+            return getData(opts.resultlanguage, folder, langindex.names[query]);
 
         if(opts.nameonly) continue;
 
         // check if query is in .aliases
         if(langindex.aliases[query] !== undefined)
-            return getJSON(`${opts.resultlanguage}/${folder}/${langindex.aliases[query]}`); 
+            return getData(opts.resultlanguage, folder, langindex.aliases[query]);
 
         // check if query is in .categories
         if(langindex.categories[query] !== undefined) {
-            let reslangindex = getJSON(`index/${opts.resultlanguage}/${folder}.json`);
+            let reslangindex = getIndex(opts.resultlanguage, folder);
             if(reslangindex === undefined) return undefined;
             // change the array of filenames into an array of data objects or data names. ignores undefined results if any
             return langindex.categories[query].reduce((accum, filename) => {
-                let res = opts.verbose ? getJSON(`${opts.resultlanguage}/${folder}/${filename}`) : reslangindex.namemap[filename];
+                let res = opts.verbose ? getData(opts.resultlanguage, folder, filename) : reslangindex.namemap[filename];
                 if(res !== undefined) accum.push(res);
                 return accum;
             }, []);
