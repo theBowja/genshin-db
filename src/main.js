@@ -1,5 +1,5 @@
 const fuzzysort = require('fuzzysort');
-const design = require('./design.json');
+//const design = require('./design.json');
 const language = require('./language.js');
 
 // object that will be exported
