@@ -120,8 +120,39 @@ function collateTalent(existing, newdata) {
 	addTalent('passive3'); // traveler doesn't have passive3
 }
 
+function collateWeapon(existing, inputdata) {
+	inputdata.images = existing.images;
+	inputdata.weaponmaterialtype = existing.weaponmaterialtype;
+	inputdata.url = existing.url;
+
+	clearObject(existing);
+	existing.name = inputdata.name;
+	existing.description = inputdata.description;
+	existing.weapontype = inputdata.weapontype;
+	existing.rarity = inputdata.rarity;
+	existing.baseatk = Math.round(inputdata.baseatk);
+	existing.substat = (inputdata.substat || '').toString();
+	existing.subvalue = '';
+	if(inputdata.subvalue !== undefined) {
+		if(inputdata.subvalue <= 2) existing.subvalue = (Math.round(inputdata.subvalue*1000)/10).toString();
+		else existing.subvalue = (Math.round(inputdata.subvalue)).toString();
+	}
+	existing.effectname = (inputdata.effectname || '').toString();
+	existing.effect = (inputdata.effect || '').toString();
+	existing.r1 = inputdata.r1 || [];
+	existing.r2 = inputdata.r2 || [];
+	existing.r3 = inputdata.r3 || [];
+	existing.r4 = inputdata.r4 || [];
+	existing.r5 = inputdata.r5 || [];
+
+	existing.weaponmaterialtype = inputdata.weaponmaterialtype || '';
+	existing.images = inputdata.images || { image: '' };
+	existing.url = inputdata.url || ''
+}
+
 function importData(folder, collateFunc, dontwrite) {
 	language.languageCodes.forEach(langC => {
+		if(dontwrite && langC !== 'EN') return; 
 		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
 			let basepath = `${language.languageMap[langC]}/${folder}`
@@ -138,6 +169,7 @@ function importData(folder, collateFunc, dontwrite) {
 	});
 }
 
-importData('characters', collateCharacter);
+//importData('characters', collateCharacter);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
+importData('weapons', collateWeapon)
