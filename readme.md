@@ -11,7 +11,7 @@ All in-game languages are supported for query and result. (translations availabl
 Start with:
 
 ```js
-const genshin = require('genshin-db');
+const genshinDb = require('genshin-db');
 ```
 
 REFER TO [EXAMPLES.md](https://github.com/theBowja/genshin-db/blob/main/examples.md) since the readme below isn't detailed.
@@ -24,20 +24,20 @@ Please join [my discord](https://discord.gg/MHhYnRSC) and talk to me.
 
 ## Table of Contents
 
-- [genshin.setOptions(opts)](#genshinsetoptionsopts)
-- [genshin.getOptions()](#genshingetoptions)
-- [genshin.characters(query[, opts])](#genshincharactersquery-opts)
-- [genshin.talents(query[, opts])](#genshintalentsquery-opts)
-- [genshin.constellations(query[, opts])](#genshinconstellationsquery-opts)
-- [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
-- [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
-- [genshin.talentmaterialtypes(query[, opts])](#genshintalentmaterialtypesquery-opts)
-- [genshin.artifacts(query[, opts])](#genshinartifactsquery-opts)
-- [genshin.recipes(query[, opts])](#genshinrecipesquery-opts)
-- [genshin.elements(query[, opts])](#genshinelementsquery-opts)
-- [genshin.rarity(query[, opts])](#genshinrarityquery-opts)
+- [genshinDb.setOptions(opts)](#genshindbsetoptionsopts)
+- [genshinDb.getOptions()](#genshindbgetoptions)
+- [genshinDb.characters(query[, opts])](#genshindbcharactersquery-opts)
+- [genshinDb.talents(query[, opts])](#genshindbtalentsquery-opts)
+- [genshinDb.constellations(query[, opts])](#genshindbconstellationsquery-opts)
+- [genshinDb.weapons(query[, opts])](#genshindbweaponsquery-opts)
+- [genshinDb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
+- [genshinDb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
+- [genshinDb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
+- [genshinDb.recipes(query[, opts])](#genshindbrecipesquery-opts)
+- [genshinDb.elements(query[, opts])](#genshindbelementsquery-opts)
+- [genshinDb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
-## genshin.setOptions(opts)
+## genshinDb.setOptions(opts)
 
 Default options
 
@@ -50,40 +50,40 @@ Default options
 }
 ````
 
-If the query matches a category where there may be multiple results like genshin.characters('Geo'), then an array of names will be returned. If **verbose** is set to true, then an array of objects will be returned instead. If **nameonly** is set to true, then the query search will be limited to only matching names instead.
+If the query matches a category where there may be multiple results like genshinDb.characters('Geo'), then an array of names will be returned. If **verbose** is set to true, then an array of objects will be returned instead. If **nameonly** is set to true, then the query search will be limited to only matching names instead.
 
 Supported languages options are: ChineseSimplified, ChineseTraditional, English, French, German, Indonesian, Japanese, Korean, Portuguese, Russian, Spanish, Thai, Vietnamese.
 
-## genshin.getOptions()
+## genshinDb.getOptions()
 
-## genshin.characters(query[, opts])
+## genshinDb.characters(query[, opts])
 
 Returns the profile info for characters.
 
 Possible query inputs include: character names, character titles, constellation names, birthday months, elements, substats, weapon types, talent level-up material types, genders, regions, rarities, and 'name' for the list of all characters.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshincharactersquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbcharactersquery-opts) to see example inputs and outputs for this function.
 
-## genshin.talents(query[, opts])
+## genshinDb.talents(query[, opts])
 
 Returns the combat skills and passive skills for characters.
 
 Possible query inputs include: character names.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshintalentsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentsquery-opts) to see example inputs and outputs for this function.
 
-## genshin.constellations(query[, opts])
+## genshinDb.constellations(query[, opts])
 
 Returns the constellation information for characters.
 
 Possible query inputs include: character names.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinconstellationsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbconstellationsquery-opts) to see example inputs and outputs for this function.
 
-## genshin.weapons(query[, opts])
+## genshinDb.weapons(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -94,9 +94,9 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinweaponsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbweaponsquery-opts) to see example inputs and outputs for this function.
 
-## genshin.weaponmaterialtypes(query[, opts])
+## genshinDb.weaponmaterialtypes(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -107,9 +107,9 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinweaponmaterialtypesquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbweaponmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
-## genshin.talentmaterialtypes(query[, opts])
+## genshinDb.talentmaterialtypes(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -120,10 +120,10 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshintalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
 
-## genshin.artifacts(query[, opts])
+## genshinDb.artifacts(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -132,9 +132,9 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinartifactsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbartifactsquery-opts) to see example inputs and outputs for this function.
 
-## genshin.recipes(query[, opts])
+## genshinDb.recipes(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -146,13 +146,13 @@ Possible inputs for query parameter are:
 - all characters with specialty dishes
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshinrecipesquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbrecipesquery-opts) to see example inputs and outputs for this function.
 
-## genshin.elements(query[, opts])
+## genshinDb.elements(query[, opts])
 
 Input the name of an element
 
-## genshin.rarity(query[, opts])
+## genshinDb.rarity(query[, opts])
 
 dunno about this
 
