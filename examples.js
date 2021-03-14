@@ -3,12 +3,13 @@
 
 const fs = require('fs');
 const util = require('util');
-const genshin = require('./src/main.js');
+const genshinDb = require('./src/main.js');
 
 function codeStart() { return '```js\n'; };
 function codeEnd() { return '\n```\n'; };
+const libname = 'genshinDb';
 
-let header = `# Examples\n\nFirst start off with:\n${codeStart()}const genshin = require('genshin-db');${codeEnd()}`
+let header = `# Examples\n\nFirst start off with:\n${codeStart()}const ${libname} = require('genshin-db');${codeEnd()}`
 
 let folders = [
 	{
@@ -57,17 +58,17 @@ let output = header+'\n';
 output += '## Table of Contents\n\n';
 
 folders.forEach(folder => {
-	output += `- [genshin.${folder.function}(query[, opts])](#genshin${folder.function}query-opts)\n`;
+	output += `- [${libname}.${folder.function}(query[, opts])](#${libname.toLowerCase()}${folder.function}query-opts)\n`;
 });
 
 folders.forEach(folder => {
-	output += `\n## genshin.${folder.function}(query[, opts])]\n\n`;
+	output += `\n## ${libname}.${folder.function}(query[, opts])]\n\n`;
 	folder.params.forEach(param => {
 		output += '<details>\n';
 		let [inside, outside] = param.split('/')
 		//genshin.talents('klee').passive3
-		let summary = `genshin.${folder.function}('<b>${inside}</b>')${outside ? `<b>${outside}</b>` : ''}`;
-		let call = `genshin.${folder.function}('${inside}')${outside ? outside : ''}`;
+		let summary = `${libname}.${folder.function}('<b>${inside}</b>')${outside ? `<b>${outside}</b>` : ''}`;
+		let call = `${libname}.${folder.function}('${inside}')${outside ? outside : ''}`;
 		let result = util.inspect(eval(call), false, null);
 		output += `<summary>${summary}</summary>\n`
 		output += '\n' + codeStart() + result + codeEnd() + '\n'

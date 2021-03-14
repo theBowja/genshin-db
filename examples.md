@@ -2,26 +2,26 @@
 
 First start off with:
 ```js
-const genshin = require('genshin-db');
+const genshinDb = require('genshin-db');
 ```
 
 ## Table of Contents
 
-- [genshin.characters(query[, opts])](#genshincharactersquery-opts)
-- [genshin.talents(query[, opts])](#genshintalentsquery-opts)
-- [genshin.constellations(query[, opts])](#genshinconstellationsquery-opts)
-- [genshin.weapons(query[, opts])](#genshinweaponsquery-opts)
-- [genshin.weaponmaterialtypes(query[, opts])](#genshinweaponmaterialtypesquery-opts)
-- [genshin.talentmaterialtypes(query[, opts])](#genshintalentmaterialtypesquery-opts)
-- [genshin.artifacts(query[, opts])](#genshinartifactsquery-opts)
-- [genshin.recipes(query[, opts])](#genshinrecipesquery-opts)
-- [genshin.elements(query[, opts])](#genshinelementsquery-opts)
-- [genshin.rarity(query[, opts])](#genshinrarityquery-opts)
+- [genshinDb.characters(query[, opts])](#genshindbcharactersquery-opts)
+- [genshinDb.talents(query[, opts])](#genshindbtalentsquery-opts)
+- [genshinDb.constellations(query[, opts])](#genshindbconstellationsquery-opts)
+- [genshinDb.weapons(query[, opts])](#genshindbweaponsquery-opts)
+- [genshinDb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
+- [genshinDb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
+- [genshinDb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
+- [genshinDb.recipes(query[, opts])](#genshindbrecipesquery-opts)
+- [genshinDb.elements(query[, opts])](#genshindbelementsquery-opts)
+- [genshinDb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
-## genshin.characters(query[, opts])]
+## genshinDb.characters(query[, opts])]
 
 <details>
-<summary>genshin.characters('<b>amber</b>')</summary>
+<summary>genshinDb.characters('<b>amber</b>')</summary>
 
 ```js
 {
@@ -58,7 +58,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('<b>carmen</b>')</summary>
+<summary>genshinDb.characters('<b>carmen</b>')</summary>
 
 ```js
 {
@@ -95,7 +95,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('<b>december</b>')</summary>
+<summary>genshinDb.characters('<b>december</b>')</summary>
 
 ```js
 [ 'Ganyu', 'Zhongli' ]
@@ -103,7 +103,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('<b>pyro</b>')</summary>
+<summary>genshinDb.characters('<b>pyro</b>')</summary>
 
 ```js
 [
@@ -119,7 +119,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('<b>geo dmg</b>')</summary>
+<summary>genshinDb.characters('<b>geo dmg</b>')</summary>
 
 ```js
 [ 'Albedo', 'Ningguang', 'Zhongli' ]
@@ -127,7 +127,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('<b>liyue</b>')</summary>
+<summary>genshinDb.characters('<b>liyue</b>')</summary>
 
 ```js
 [
@@ -142,7 +142,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('<b>sword</b>')</summary>
+<summary>genshinDb.characters('<b>sword</b>')</summary>
 
 ```js
 [
@@ -156,7 +156,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.characters('<b>ballad</b>')</summary>
+<summary>genshinDb.characters('<b>ballad</b>')</summary>
 
 ```js
 [ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
@@ -164,10 +164,10 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.talents(query[, opts])]
+## genshinDb.talents(query[, opts])]
 
 <details>
-<summary>genshin.talents('<b>ninguang</b>')</summary>
+<summary>genshinDb.talents('<b>ninguang</b>')</summary>
 
 ```js
 {
@@ -228,7 +228,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talents('<b>klee</b>')<b>.passive3</b></summary>
+<summary>genshinDb.talents('<b>klee</b>')<b>.passive3</b></summary>
 
 ```js
 {
@@ -240,7 +240,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talents('<b>mona</b>')<b>.combatsp</b></summary>
+<summary>genshinDb.talents('<b>mona</b>')<b>.combatsp</b></summary>
 
 ```js
 {
@@ -258,10 +258,10 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.constellations(query[, opts])]
+## genshinDb.constellations(query[, opts])]
 
 <details>
-<summary>genshin.constellations('<b>amber</b>')</summary>
+<summary>genshinDb.constellations('<b>amber</b>')</summary>
 
 ```js
 {
@@ -303,7 +303,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.constellations('<b>childe</b>')<b>.c3</b></summary>
+<summary>genshinDb.constellations('<b>childe</b>')<b>.c3</b></summary>
 
 ```js
 {
@@ -316,10 +316,10 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.weapons(query[, opts])]
+## genshinDb.weapons(query[, opts])]
 
 <details>
-<summary>genshin.weapons('<b>lost prayers</b>')</summary>
+<summary>genshinDb.weapons('<b>lost prayers</b>')</summary>
 
 ```js
 {
@@ -347,7 +347,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.weapons('<b>decarabian</b>')</summary>
+<summary>genshinDb.weapons('<b>decarabian</b>')</summary>
 
 ```js
 [
@@ -373,10 +373,10 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.weaponmaterialtypes(query[, opts])]
+## genshinDb.weaponmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshin.weaponmaterialtypes('<b>chains</b>')</summary>
+<summary>genshinDb.weaponmaterialtypes('<b>chains</b>')</summary>
 
 ```js
 {
@@ -394,7 +394,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.weaponmaterialtypes('<b>fri</b>')</summary>
+<summary>genshinDb.weaponmaterialtypes('<b>fri</b>')</summary>
 
 ```js
 [ 'Boreal Wolf', 'Mist Veiled Elixir' ]
@@ -402,10 +402,10 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.talentmaterialtypes(query[, opts])]
+## genshinDb.talentmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshin.talentmaterialtypes('<b>ballad</b>')</summary>
+<summary>genshinDb.talentmaterialtypes('<b>ballad</b>')</summary>
 
 ```js
 {
@@ -422,7 +422,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.talentmaterialtypes('<b>satur</b>')</summary>
+<summary>genshinDb.talentmaterialtypes('<b>satur</b>')</summary>
 
 ```js
 [ 'Ballad', 'Gold' ]
@@ -430,10 +430,10 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.artifacts(query[, opts])]
+## genshinDb.artifacts(query[, opts])]
 
 <details>
-<summary>genshin.artifacts('<b>flame</b>')</summary>
+<summary>genshinDb.artifacts('<b>flame</b>')</summary>
 
 ```js
 {
@@ -486,10 +486,10 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.recipes(query[, opts])]
+## genshinDb.recipes(query[, opts])]
 
 <details>
-<summary>genshin.recipes('<b>temptation</b>')</summary>
+<summary>genshinDb.recipes('<b>temptation</b>')</summary>
 
 ```js
 {
@@ -509,7 +509,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('<b>4</b>')</summary>
+<summary>genshinDb.recipes('<b>4</b>')</summary>
 
 ```js
 [ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
@@ -517,7 +517,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('<b>warrior</b>')</summary>
+<summary>genshinDb.recipes('<b>warrior</b>')</summary>
 
 ```js
 [
@@ -545,7 +545,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('<b>cabbage</b>')</summary>
+<summary>genshinDb.recipes('<b>cabbage</b>')</summary>
 
 ```js
 [
@@ -563,7 +563,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('<b>atK</b>')</summary>
+<summary>genshinDb.recipes('<b>atK</b>')</summary>
 
 ```js
 [
@@ -579,7 +579,7 @@ const genshin = require('genshin-db');
 
 </details>
 <details>
-<summary>genshin.recipes('<b>diluc</b>')</summary>
+<summary>genshinDb.recipes('<b>diluc</b>')</summary>
 
 ```js
 {
@@ -601,8 +601,8 @@ const genshin = require('genshin-db');
 
 </details>
 
-## genshin.elements(query[, opts])]
+## genshinDb.elements(query[, opts])]
 
 
-## genshin.rarity(query[, opts])]
+## genshinDb.rarity(query[, opts])]
 
