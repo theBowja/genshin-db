@@ -19,15 +19,6 @@
 - [ ] pretend to add tests
 - [ ] add banner history maybe
 
-## Weapons not in game yet
-- [ ] alleyhunter
-- [ ] ebonybow
-- [ ] quartz
-- [ ] royalbow
-- [ ] royallongsword
-- [ ] thealleyflash
-- [ ] wine and song
-
 ## Recipes
 - [ ] Jueyun Guoba (is this in the game yet?)
 - [ ] verify Definitely Not Bar Food! in-game
@@ -39,6 +30,8 @@
 
 
 ## Done
+- [x] added translations for all weapons (3/14)
+- [x] minified the data files (3/14)
 - [x] added translations for all characters (3/8)
 - [x] added translations for all talents (3/7)
 - [x] added translations for all constellations (3/6)
