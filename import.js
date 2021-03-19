@@ -182,6 +182,6 @@ function importData(folder, collateFunc, dontwrite) {
 }
 
 // importData('characters', collateCharacter);
-importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+// importData('constellations', collateConstellation);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
