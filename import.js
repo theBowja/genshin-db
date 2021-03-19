@@ -61,6 +61,7 @@ function collateCharacter(existing, newdata, lang) {
 	clearObject(existing);
 
 	existing.name = newdata.name;
+	if(newdata.aliases) existing.aliases = newdata.aliases;
 	existing.title = newdata.title;
 	existing.description = newdata.description;
 	existing.rarity = newdata.rarity;
@@ -94,17 +95,20 @@ function collateCharacter(existing, newdata, lang) {
 }
 
 function collateConstellation(existing, newdata) {
+	clearObject(existing);
 	existing.name = newdata.name;
+	if(newdata.aliases) existing.aliases = newdata.aliases;
 	for(let i = 1; i <= 6; i++) {
 		if(existing['c'+i] === undefined) existing['c'+i] = {};
 		existing['c'+i].name = newdata['c'+i].name;
 		existing['c'+i].effect = newdata['c'+i].effect;
-		if(existing['c'+i].image === undefined) existing['c'+i].image = '';
+		existing['c'+i].icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/${newdata['c'+i].icon}.png`;
 	}
 }
 
 function collateTalent(existing, newdata) {
 	existing.name = newdata.name;
+	if(newdata.aliases) existing.aliases = newdata.aliases;
 	function addTalent(prop) {
 		if(newdata[prop] === undefined) return;
 		if(existing[prop] === undefined) existing[prop] = {};
@@ -129,6 +133,7 @@ function collateWeapon(existing, inputdata) {
 
 	clearObject(existing);
 	existing.name = inputdata.name;
+	if(newdata.aliases) existing.aliases = newdata.aliases;
 	existing.description = inputdata.description;
 	existing.weapontype = inputdata.weapontype;
 	existing.rarity = inputdata.rarity;
@@ -164,6 +169,7 @@ function importData(folder, collateFunc, dontwrite) {
 			let basepath = `${language.languageMap[langC]}/${folder}`
 			let existing = getJSON(`${basepath}/${filename}.json`);
 			if(existing === undefined) existing = {};
+			newdata.aliases = existing.aliases;
 
 			collateFunc(existing, newdata, language.languageMap[langC]);
 			//if(langC === 'CHT') console.log(existing);
@@ -175,7 +181,7 @@ function importData(folder, collateFunc, dontwrite) {
 	});
 }
 
-importData('characters', collateCharacter);
-// importData('constellations', collateConstellation);
+// importData('characters', collateCharacter);
+importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
