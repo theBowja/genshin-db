@@ -21,29 +21,26 @@ const genshindb = require('genshin-db');
 ## genshindb.characters(query[, opts])]
 
 <details>
-<summary>genshindb.characters('<b>amber</b>')</summary>
+<summary>genshindb.characters('<b>amber, { resultlanguage: 'JP' }</b>')</summary>
 
 ```js
 {
-  name: 'Amber',
-  title: 'Gliding Champion',
-  description: "Always energetic and full of life, Amber's the best — albeit only — Outrider of the Knights of Favonius.",
+  name: 'アンバー',
+  title: '飛行チャンピオン',
+  description: '元気満々な女の子、騎士団で最も優秀で、最後の偵察騎士である。',
   rarity: '4',
-  element: 'Pyro',
-  weapontype: 'Bow',
-  substat: 'ATK',
-  gender: 'Female',
+  element: '炎',
+  weapontype: '弓',
+  substat: '攻撃力',
+  gender: '女',
   body: 'GIRL',
   association: 'MONDSTADT',
   region: 'Mondstadt',
-  affiliation: 'Knights of Favonius',
+  affiliation: '西風騎士団',
   birthdaymmdd: '8/10',
-  birthday: 'August 10',
-  constellation: 'Lepus',
+  birthday: '8月10日',
+  constellation: '小兎座',
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
-    card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
-    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png'
   },
@@ -53,8 +50,7 @@ const genshindb = require('genshin-db');
     japanese: '石見舞菜香',
     korean: '김연우'
   },
-  talentmaterialtype: 'Freedom',
-  url: 'https://genshin-impact.fandom.com/wiki/Amber'
+  talentmaterialtype: ''
 }
 ```
 
