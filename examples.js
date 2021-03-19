@@ -3,11 +3,11 @@
 
 const fs = require('fs');
 const util = require('util');
-const genshinDb = require('./src/main.js');
+const genshindb = require('./src/main.js');
 
 function codeStart() { return '```js\n'; };
 function codeEnd() { return '\n```\n'; };
-const libname = 'genshinDb';
+const libname = 'genshindb';
 
 let header = `# Examples\n\nFirst start off with:\n${codeStart()}const ${libname} = require('genshin-db');${codeEnd()}`
 
