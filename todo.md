@@ -30,6 +30,8 @@
 
 
 ## Done
+- [x] 1.4 update (3/18)
+- [x] added images for characters, constellations, and weapons (3/18)
 - [x] added translations for all weapons (3/14)
 - [x] minified the data files (3/14)
 - [x] added translations for all characters (3/8)

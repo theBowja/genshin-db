@@ -2,26 +2,26 @@
 
 First start off with:
 ```js
-const genshinDb = require('genshin-db');
+const genshindb = require('genshin-db');
 ```
 
 ## Table of Contents
 
-- [genshinDb.characters(query[, opts])](#genshindbcharactersquery-opts)
-- [genshinDb.talents(query[, opts])](#genshindbtalentsquery-opts)
-- [genshinDb.constellations(query[, opts])](#genshindbconstellationsquery-opts)
-- [genshinDb.weapons(query[, opts])](#genshindbweaponsquery-opts)
-- [genshinDb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
-- [genshinDb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
-- [genshinDb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
-- [genshinDb.recipes(query[, opts])](#genshindbrecipesquery-opts)
-- [genshinDb.elements(query[, opts])](#genshindbelementsquery-opts)
-- [genshinDb.rarity(query[, opts])](#genshindbrarityquery-opts)
+- [genshindb.characters(query[, opts])](#genshindbcharactersquery-opts)
+- [genshindb.talents(query[, opts])](#genshindbtalentsquery-opts)
+- [genshindb.constellations(query[, opts])](#genshindbconstellationsquery-opts)
+- [genshindb.weapons(query[, opts])](#genshindbweaponsquery-opts)
+- [genshindb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
+- [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
+- [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
+- [genshindb.recipes(query[, opts])](#genshindbrecipesquery-opts)
+- [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
+- [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
-## genshinDb.characters(query[, opts])]
+## genshindb.characters(query[, opts])]
 
 <details>
-<summary>genshinDb.characters('<b>amber</b>')</summary>
+<summary>genshindb.characters('<b>amber</b>')</summary>
 
 ```js
 {
@@ -43,11 +43,13 @@ const genshinDb = require('genshin-db');
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
-    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png'
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png'
   },
   cv: {
     english: 'Kelly Baskin',
-    chinese: '牛奶君',
+    chinese: '蔡书瑾',
     japanese: '石見舞菜香',
     korean: '김연우'
   },
@@ -58,7 +60,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.characters('<b>carmen</b>')</summary>
+<summary>genshindb.characters('<b>carmen</b>')</summary>
 
 ```js
 {
@@ -80,7 +82,9 @@ const genshinDb = require('genshin-db');
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
-    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png'
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png'
   },
   cv: {
     english: 'Erika Harlacher',
@@ -95,7 +99,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.characters('<b>december</b>')</summary>
+<summary>genshindb.characters('<b>december</b>')</summary>
 
 ```js
 [ 'Ganyu', 'Zhongli' ]
@@ -103,7 +107,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.characters('<b>pyro</b>')</summary>
+<summary>genshindb.characters('<b>pyro</b>')</summary>
 
 ```js
 [
@@ -119,7 +123,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.characters('<b>geo dmg</b>')</summary>
+<summary>genshindb.characters('<b>geo dmg</b>')</summary>
 
 ```js
 [ 'Albedo', 'Ningguang', 'Zhongli' ]
@@ -127,7 +131,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.characters('<b>liyue</b>')</summary>
+<summary>genshindb.characters('<b>liyue</b>')</summary>
 
 ```js
 [
@@ -142,7 +146,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.characters('<b>sword</b>')</summary>
+<summary>genshindb.characters('<b>sword</b>')</summary>
 
 ```js
 [
@@ -156,7 +160,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.characters('<b>ballad</b>')</summary>
+<summary>genshindb.characters('<b>ballad</b>')</summary>
 
 ```js
 [ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
@@ -164,10 +168,10 @@ const genshinDb = require('genshin-db');
 
 </details>
 
-## genshinDb.talents(query[, opts])]
+## genshindb.talents(query[, opts])]
 
 <details>
-<summary>genshinDb.talents('<b>ninguang</b>')</summary>
+<summary>genshindb.talents('<b>ninguang</b>')</summary>
 
 ```js
 {
@@ -228,7 +232,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.talents('<b>klee</b>')<b>.passive3</b></summary>
+<summary>genshindb.talents('<b>klee</b>')<b>.passive3</b></summary>
 
 ```js
 {
@@ -240,7 +244,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.talents('<b>mona</b>')<b>.combatsp</b></summary>
+<summary>genshindb.talents('<b>mona</b>')<b>.combatsp</b></summary>
 
 ```js
 {
@@ -258,10 +262,10 @@ const genshinDb = require('genshin-db');
 
 </details>
 
-## genshinDb.constellations(query[, opts])]
+## genshindb.constellations(query[, opts])]
 
 <details>
-<summary>genshinDb.constellations('<b>amber</b>')</summary>
+<summary>genshindb.constellations('<b>amber</b>')</summary>
 
 ```js
 {
@@ -269,57 +273,57 @@ const genshinDb = require('genshin-db');
   c1: {
     name: 'One Arrow to Rule Them All',
     effect: "Fires 2 arrows per **Aimed Shot**. The second arrow deals 20% of the first arrow's DMG.",
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c9/Constellation_One_Arrow_to_Rule_Them_All.png'
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_01.png'
   },
   c2: {
     name: 'Bunny Triggered',
     effect: "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it.\n" +
       'Explosion via manual detonation deals 200% additional DMG.',
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/7/75/Constellation_Bunny_Triggered.png'
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_02.png'
   },
   c3: {
     name: 'It Burns!',
     effect: 'Increases the Level of **Fiery Rain** by 3.\nMaximum upgrade level is 15.',
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/93/Constellation_It_Burns%21.png'
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_02.png'
   },
   c4: {
     name: "It's Not Just Any Doll...",
     effect: "Decreases **Explosive Puppet**'s CD by 20%. Adds 1 additional charge.",
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d6/Constellation_It%27s_Not_Just_Any_Doll....png'
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_03.png'
   },
   c5: {
     name: "It's Baron Bunny!",
     effect: 'Increases the Level of **Explosive Puppet** by 3.\n' +
       'Maximum upgrade level is 15.',
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/95/Constellation_It%27s_Baron_Bunny%21.png'
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_01.png'
   },
   c6: {
     name: 'Wildfire',
     effect: "**Fiery Rain** increases all party members' Movement SPD by 15% and ATK by 15% for 10s.",
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/1/1b/Constellation_Wildfire.png'
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_04.png'
   }
 }
 ```
 
 </details>
 <details>
-<summary>genshinDb.constellations('<b>childe</b>')<b>.c3</b></summary>
+<summary>genshindb.constellations('<b>childe</b>')<b>.c3</b></summary>
 
 ```js
 {
   name: 'Abyssal Mayhem: Vortex of Turmoil',
   effect: 'Increases the Level of **Foul Legacy: Raging Tide** by 3.\n' +
     'Maximum upgrade level is 15.',
-  image: ''
+  icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Tartaglia_01.png'
 }
 ```
 
 </details>
 
-## genshinDb.weapons(query[, opts])]
+## genshindb.weapons(query[, opts])]
 
 <details>
-<summary>genshinDb.weapons('<b>lost prayers</b>')</summary>
+<summary>genshindb.weapons('<b>lost prayers</b>')</summary>
 
 ```js
 {
@@ -339,7 +343,9 @@ const genshinDb = require('genshin-db');
   r5: [ '16%' ],
   weaponmaterialtype: 'Dandelion Gladiator',
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png'
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
+    awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png'
   },
   url: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
 }
@@ -347,7 +353,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.weapons('<b>decarabian</b>')</summary>
+<summary>genshindb.weapons('<b>decarabian</b>')</summary>
 
 ```js
 [
@@ -373,10 +379,10 @@ const genshinDb = require('genshin-db');
 
 </details>
 
-## genshinDb.weaponmaterialtypes(query[, opts])]
+## genshindb.weaponmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshinDb.weaponmaterialtypes('<b>chains</b>')</summary>
+<summary>genshindb.weaponmaterialtypes('<b>chains</b>')</summary>
 
 ```js
 {
@@ -394,7 +400,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.weaponmaterialtypes('<b>fri</b>')</summary>
+<summary>genshindb.weaponmaterialtypes('<b>fri</b>')</summary>
 
 ```js
 [ 'Boreal Wolf', 'Mist Veiled Elixir' ]
@@ -402,10 +408,10 @@ const genshinDb = require('genshin-db');
 
 </details>
 
-## genshinDb.talentmaterialtypes(query[, opts])]
+## genshindb.talentmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshinDb.talentmaterialtypes('<b>ballad</b>')</summary>
+<summary>genshindb.talentmaterialtypes('<b>ballad</b>')</summary>
 
 ```js
 {
@@ -422,7 +428,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.talentmaterialtypes('<b>satur</b>')</summary>
+<summary>genshindb.talentmaterialtypes('<b>satur</b>')</summary>
 
 ```js
 [ 'Ballad', 'Gold' ]
@@ -430,10 +436,10 @@ const genshinDb = require('genshin-db');
 
 </details>
 
-## genshinDb.artifacts(query[, opts])]
+## genshindb.artifacts(query[, opts])]
 
 <details>
-<summary>genshinDb.artifacts('<b>flame</b>')</summary>
+<summary>genshindb.artifacts('<b>flame</b>')</summary>
 
 ```js
 {
@@ -486,10 +492,10 @@ const genshinDb = require('genshin-db');
 
 </details>
 
-## genshinDb.recipes(query[, opts])]
+## genshindb.recipes(query[, opts])]
 
 <details>
-<summary>genshinDb.recipes('<b>temptation</b>')</summary>
+<summary>genshindb.recipes('<b>temptation</b>')</summary>
 
 ```js
 {
@@ -509,7 +515,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.recipes('<b>4</b>')</summary>
+<summary>genshindb.recipes('<b>4</b>')</summary>
 
 ```js
 [ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
@@ -517,7 +523,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.recipes('<b>warrior</b>')</summary>
+<summary>genshindb.recipes('<b>warrior</b>')</summary>
 
 ```js
 [
@@ -545,7 +551,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.recipes('<b>cabbage</b>')</summary>
+<summary>genshindb.recipes('<b>cabbage</b>')</summary>
 
 ```js
 [
@@ -563,7 +569,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.recipes('<b>atK</b>')</summary>
+<summary>genshindb.recipes('<b>atK</b>')</summary>
 
 ```js
 [
@@ -579,7 +585,7 @@ const genshinDb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshinDb.recipes('<b>diluc</b>')</summary>
+<summary>genshindb.recipes('<b>diluc</b>')</summary>
 
 ```js
 {
@@ -601,8 +607,8 @@ const genshinDb = require('genshin-db');
 
 </details>
 
-## genshinDb.elements(query[, opts])]
+## genshindb.elements(query[, opts])]
 
 
-## genshinDb.rarity(query[, opts])]
+## genshindb.rarity(query[, opts])]
 
