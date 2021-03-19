@@ -133,7 +133,7 @@ function collateWeapon(existing, inputdata) {
 
 	clearObject(existing);
 	existing.name = inputdata.name;
-	if(newdata.aliases) existing.aliases = newdata.aliases;
+	if(inputdata.aliases) existing.aliases = inputdata.aliases;
 	existing.description = inputdata.description;
 	existing.weapontype = inputdata.weapontype;
 	existing.rarity = inputdata.rarity;
@@ -153,7 +153,9 @@ function collateWeapon(existing, inputdata) {
 	existing.r5 = inputdata.r5 || [];
 
 	existing.weaponmaterialtype = inputdata.weaponmaterialtype || '';
-	existing.images = inputdata.images || { image: '' };
+	existing.images = {};
+	if(inputdata.images.image)
+		existing.images.image = inputdata.images.image;
 	if(inputdata.icon !== undefined)
 		existing.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
 	if(inputdata.awakenicon !== undefined)
@@ -183,5 +185,5 @@ function importData(folder, collateFunc, dontwrite) {
 
 // importData('characters', collateCharacter);
 // importData('constellations', collateConstellation);
-importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
+// importData('talents', collateTalent);
+importData('weapons', collateWeapon)
