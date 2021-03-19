@@ -86,6 +86,8 @@ function collateCharacter(existing, newdata, lang) {
 	}
 	existing.constellation = newdata.constellation;
 	existing.images = newdata.images || {};
+	if(newdata.icon) existing.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
+	if(newdata.sideicon) existing.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
 	existing.cv = newdata.cv;
 	existing.talentmaterialtype = newdata.talentmaterialtype || '';
 	existing.url = newdata.url;
@@ -147,7 +149,11 @@ function collateWeapon(existing, inputdata) {
 
 	existing.weaponmaterialtype = inputdata.weaponmaterialtype || '';
 	existing.images = inputdata.images || { image: '' };
-	existing.url = inputdata.url || ''
+	if(inputdata.icon !== undefined)
+		existing.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
+	if(inputdata.awakenicon !== undefined)
+		existing.images.awakenicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
+	existing.url = inputdata.url || '';
 }
 
 function importData(folder, collateFunc, dontwrite) {
@@ -169,7 +175,7 @@ function importData(folder, collateFunc, dontwrite) {
 	});
 }
 
-//importData('characters', collateCharacter);
+importData('characters', collateCharacter);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
+// importData('weapons', collateWeapon)
