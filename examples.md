@@ -21,7 +21,7 @@ const genshindb = require('genshin-db');
 ## genshindb.characters(query[, opts])]
 
 <details>
-<summary>genshindb.characters('<b>amber, { resultlanguage: 'JP' }</b>')</summary>
+<summary>genshindb.characters('<b>amber', { resultlanguage: 'JP' }</b>)</summary>
 
 ```js
 {
@@ -56,7 +56,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>carmen</b>')</summary>
+<summary>genshindb.characters('<b>carmen'</b>)</summary>
 
 ```js
 {
@@ -95,7 +95,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>december</b>')</summary>
+<summary>genshindb.characters('<b>december'</b>)</summary>
 
 ```js
 [ 'Ganyu', 'Zhongli' ]
@@ -103,7 +103,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>pyro</b>')</summary>
+<summary>genshindb.characters('<b>pyro'</b>)</summary>
 
 ```js
 [
@@ -119,7 +119,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>geo dmg</b>')</summary>
+<summary>genshindb.characters('<b>geo dmg'</b>)</summary>
 
 ```js
 [ 'Albedo', 'Ningguang', 'Zhongli' ]
@@ -127,7 +127,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>liyue</b>')</summary>
+<summary>genshindb.characters('<b>liyue'</b>)</summary>
 
 ```js
 [
@@ -142,7 +142,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>sword</b>')</summary>
+<summary>genshindb.characters('<b>sword'</b>)</summary>
 
 ```js
 [
@@ -156,7 +156,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>ballad</b>')</summary>
+<summary>genshindb.characters('<b>ballad'</b>)</summary>
 
 ```js
 [ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
@@ -167,7 +167,7 @@ const genshindb = require('genshin-db');
 ## genshindb.talents(query[, opts])]
 
 <details>
-<summary>genshindb.talents('<b>ninguang</b>')</summary>
+<summary>genshindb.talents('<b>ninguang'</b>)</summary>
 
 ```js
 {
@@ -228,7 +228,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.talents('<b>klee</b>')<b>.passive3</b></summary>
+<summary>genshindb.talents('<b>klee'</b>)<b>.passive3</b></summary>
 
 ```js
 {
@@ -240,7 +240,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.talents('<b>mona</b>')<b>.combatsp</b></summary>
+<summary>genshindb.talents('<b>mona'</b>)<b>.combatsp</b></summary>
 
 ```js
 {
@@ -261,7 +261,7 @@ const genshindb = require('genshin-db');
 ## genshindb.constellations(query[, opts])]
 
 <details>
-<summary>genshindb.constellations('<b>amber</b>')</summary>
+<summary>genshindb.constellations('<b>amber'</b>)</summary>
 
 ```js
 {
@@ -303,7 +303,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.constellations('<b>childe</b>')<b>.c3</b></summary>
+<summary>genshindb.constellations('<b>childe'</b>)<b>.c3</b></summary>
 
 ```js
 {
@@ -319,7 +319,7 @@ const genshindb = require('genshin-db');
 ## genshindb.weapons(query[, opts])]
 
 <details>
-<summary>genshindb.weapons('<b>lost prayers</b>')</summary>
+<summary>genshindb.weapons('<b>lost prayers'</b>)</summary>
 
 ```js
 {
@@ -349,7 +349,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.weapons('<b>decarabian</b>')</summary>
+<summary>genshindb.weapons('<b>decarabian'</b>)</summary>
 
 ```js
 [
@@ -378,7 +378,7 @@ const genshindb = require('genshin-db');
 ## genshindb.weaponmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshindb.weaponmaterialtypes('<b>chains</b>')</summary>
+<summary>genshindb.weaponmaterialtypes('<b>chains'</b>)</summary>
 
 ```js
 {
@@ -396,7 +396,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.weaponmaterialtypes('<b>fri</b>')</summary>
+<summary>genshindb.weaponmaterialtypes('<b>fri'</b>)</summary>
 
 ```js
 [ 'Boreal Wolf', 'Mist Veiled Elixir' ]
@@ -407,7 +407,7 @@ const genshindb = require('genshin-db');
 ## genshindb.talentmaterialtypes(query[, opts])]
 
 <details>
-<summary>genshindb.talentmaterialtypes('<b>ballad</b>')</summary>
+<summary>genshindb.talentmaterialtypes('<b>ballad'</b>)</summary>
 
 ```js
 {
@@ -424,7 +424,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.talentmaterialtypes('<b>satur</b>')</summary>
+<summary>genshindb.talentmaterialtypes('<b>satur'</b>)</summary>
 
 ```js
 [ 'Ballad', 'Gold' ]
@@ -435,7 +435,7 @@ const genshindb = require('genshin-db');
 ## genshindb.artifacts(query[, opts])]
 
 <details>
-<summary>genshindb.artifacts('<b>flame</b>')</summary>
+<summary>genshindb.artifacts('<b>flame'</b>)</summary>
 
 ```js
 {
@@ -491,7 +491,7 @@ const genshindb = require('genshin-db');
 ## genshindb.recipes(query[, opts])]
 
 <details>
-<summary>genshindb.recipes('<b>temptation</b>')</summary>
+<summary>genshindb.recipes('<b>temptation'</b>)</summary>
 
 ```js
 {
@@ -511,7 +511,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>4</b>')</summary>
+<summary>genshindb.recipes('<b>4'</b>)</summary>
 
 ```js
 [ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
@@ -519,7 +519,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>warrior</b>')</summary>
+<summary>genshindb.recipes('<b>warrior'</b>)</summary>
 
 ```js
 [
@@ -547,7 +547,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>cabbage</b>')</summary>
+<summary>genshindb.recipes('<b>cabbage'</b>)</summary>
 
 ```js
 [
@@ -565,7 +565,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>atK</b>')</summary>
+<summary>genshindb.recipes('<b>atK'</b>)</summary>
 
 ```js
 [
@@ -581,7 +581,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>diluc</b>')</summary>
+<summary>genshindb.recipes('<b>diluc'</b>)</summary>
 
 ```js
 {
