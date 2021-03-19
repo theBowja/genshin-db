@@ -14,7 +14,7 @@ let header = `# Examples\n\nFirst start off with:\n${codeStart()}const ${libname
 let folders = [
 	{
 		function: 'characters',
-		params: ['amber', 'carmen', 'december', 'pyro', 'geo dmg', 'liyue', 'sword', 'ballad']
+		params: ['amber, { resultlanguage: \'JP\' }', 'carmen', 'december', 'pyro', 'geo dmg', 'liyue', 'sword', 'ballad']
 	},
 	{
 		function: 'talents',
@@ -66,9 +66,11 @@ folders.forEach(folder => {
 	folder.params.forEach(param => {
 		output += '<details>\n';
 		let [inside, outside] = param.split('/')
+		let [query, opts] = inside.split(',');
+		opts = (opts === undefined) ? '' : ','+opts;
 		//genshin.talents('klee').passive3
 		let summary = `${libname}.${folder.function}('<b>${inside}</b>')${outside ? `<b>${outside}</b>` : ''}`;
-		let call = `${libname}.${folder.function}('${inside}')${outside ? outside : ''}`;
+		let call = `${libname}.${folder.function}('${query}'${opts})${outside ? outside : ''}`;
 		let result = util.inspect(eval(call), false, null);
 		output += `<summary>${summary}</summary>\n`
 		output += '\n' + codeStart() + result + codeEnd() + '\n'
