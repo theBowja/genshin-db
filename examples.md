@@ -21,6 +21,45 @@ const genshindb = require('genshin-db');
 ## genshindb.characters(query[, opts])]
 
 <details>
+<summary>genshindb.characters('<b>jean'</b>)</summary>
+
+```js
+{
+  name: 'Jean',
+  title: 'Dandelion Knight',
+  description: "The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius.",
+  rarity: '5',
+  element: 'Anemo',
+  weapontype: 'Sword',
+  substat: 'Healing Bonus',
+  gender: 'Female',
+  body: 'LADY',
+  association: 'MONDSTADT',
+  region: 'Mondstadt',
+  affiliation: 'Knights of Favonius',
+  birthdaymmdd: '3/14',
+  birthday: 'March 14',
+  constellation: 'Leo Minor',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Jean_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qin.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Qin.png'
+  },
+  cv: {
+    english: 'Stephanie Southerland',
+    chinese: '林簌',
+    japanese: '斎藤千和',
+    korean: '안영미'
+  },
+  talentmaterialtype: 'Resistance',
+  url: 'https://genshin-impact.fandom.com/wiki/Jean'
+}
+```
+
+</details>
+<details>
 <summary>genshindb.characters('<b>amber', { resultlanguage: 'JP' }</b>)</summary>
 
 ```js
@@ -440,50 +479,71 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Crimson Witch of Flames',
-  minrarity: '4',
-  maxrarity: '5',
+  rarity: [ '4', '5' ],
+  '2pc': 'Pyro DMG Bonus +15%',
+  '4pc': 'Increases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks.',
   flower: {
     name: "Witch's Flower of Blaze",
-    images: {
-      image: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0f/Item_Witch%27s_Flower_of_Blaze.png'
-    },
-    description: 'A flower touched by the witch who once dreamt of burning away all the demons in the world. The anonymous flames affectionately caress the hands of those who touch it.'
+    relictype: 'Flower of Life',
+    description: 'A flower touched by the witch who once dreamt of burning away all the demons in the world. The anonymous flames affectionately caress the hands of those who touch it.',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_4.png'
   },
   plume: {
     name: "Witch's Ever-Burning Plume",
-    images: {
-      image: 'https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Item_Witch%27s_Ever-Burning_Plume.png'
-    },
-    description: 'A bird feather touched by the witch who once dreamt of burning away all the demons in the world. Its eternal flame burns hot.'
+    relictype: 'Plume of Death',
+    description: 'A bird feather touched by the witch who once dreamt of burning away all the demons in the world. Its eternal flame burns hot.',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_2.png'
   },
   sands: {
     name: "Witch's End Time",
-    images: {
-      image: 'https://static.wikia.nocookie.net/gensin-impact/images/1/14/Item_Witch%27s_End_Time.png'
-    },
-    description: 'A timepiece worn by the witch who dreamt of burning away all the demons in the world. The years the witch dedicated to the flames flow within.'
+    relictype: 'Sands of Eon',
+    description: 'A timepiece worn by the witch who dreamt of burning away all the demons in the world. The years the witch dedicated to the flames flow within.',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_5.png'
   },
   goblet: {
     name: "Witch's Heart Flames",
-    images: {
-      image: 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Item_Witch%27s_Heart_Flames.png'
-    },
-    description: 'A flame-spitting urn left behind by the Crimson Witch of Flames, who once dreamt of burning away all the demons in the world. The fire in the urn burns eternally, as did its former master.'
+    relictype: 'Goblet of Eonothem',
+    description: 'A flame-spitting urn left behind by the Crimson Witch of Flames, who once dreamt of burning away all the demons in the world. The fire in the urn burns eternally, as did its former master.',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_1.png'
   },
   circlet: {
     name: "Witch's Scorching Hat",
-    images: {
-      image: 'https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Item_Witch%27s_Scorching_Hat.png'
-    },
-    description: 'A hat once worn by the witch who dreamt of burning away all the demons in the world. The large brim blocked her sight.'
-  },
-  '2pc': 'Pyro DMG Bonus +15%',
-  '4pc': 'Increases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using an Elemental Skill increases 2-Piece Set effects by 50% for 10s. Max 3 stacks.',
-  drop: {
-    '4': [ 'Hidden Palace of Zhou Formula' ],
-    '5': [ 'Hidden Palace of Zhou Formula' ]
+    relictype: 'Circlet of Logos',
+    description: 'A hat once worn by the witch who dreamt of burning away all of the demons in the world. The large brim blocked her sight.',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_3.png'
   }
 }
+```
+
+</details>
+<details>
+<summary>genshindb.artifacts('<b>5'</b>)</summary>
+
+```js
+[
+  'Archaic Petra',
+  'Blizzard Strayer',
+  'Bloodstained Chivalry',
+  'Crimson Witch of Flames',
+  "Gladiator's Finale",
+  'Heart of Depth',
+  'Lavawalker',
+  'Maiden Beloved',
+  'Noblesse Oblige',
+  'Retracing Bolide',
+  'Thundering Fury',
+  'Thundersoother',
+  'Viridescent Venerer',
+  "Wanderer's Troupe"
+]
+```
+
+</details>
+<details>
+<summary>genshindb.artifacts('<b>noblesse'</b>)<b>['2pc']</b></summary>
+
+```js
+'Elemental Burst DMG +20%'
 ```
 
 </details>
