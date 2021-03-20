@@ -163,9 +163,29 @@ function collateWeapon(existing, inputdata) {
 	existing.url = inputdata.url || '';
 }
 
+function collateArtifact(existing, newdata) {
+	clearObject(existing);
+	existing.name = newdata.name;
+	if(newdata.aliases) existing.aliases = newdata.aliases;
+	existing.rarity = newdata.rarity;
+	if(newdata['1pc']) existing['1pc'] = newdata['1pc'];
+	if(newdata['2pc']) existing['2pc'] = newdata['2pc'];
+	if(newdata['4pc']) existing['4pc'] = newdata['4pc'];
+	const types = ['flower', 'plume', 'sands', 'goblet', 'circlet'];
+	types.forEach(type => {
+		if(newdata[type] === undefined) return;
+		existing[type] = {};
+		existing[type].name = newdata[type].name;
+		existing[type].relictype = newdata[type].relictype;
+		existing[type].description = newdata[type].description;
+		existing[type].icon = newdata[type].icon;
+	})
+}
+
 function importData(folder, collateFunc, dontwrite) {
 	language.languageCodes.forEach(langC => {
 		if(dontwrite && langC !== 'EN') return; 
+		// if(langC !== 'EN') return;
 		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
 			let basepath = `${language.languageMap[langC]}/${folder}`
@@ -176,7 +196,7 @@ function importData(folder, collateFunc, dontwrite) {
 			collateFunc(existing, newdata, language.languageMap[langC]);
 			//if(langC === 'CHT') console.log(existing);
 
-			if(dontwrite) continue;
+			if(dontwrite) { console.log(existing); continue; }
 			fs.mkdirSync(`./src/data/${basepath}`, { recursive: true });
 			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(existing, null, '\t'));
 		}
@@ -186,4 +206,5 @@ function importData(folder, collateFunc, dontwrite) {
 // importData('characters', collateCharacter);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
+// importData('weapons', collateWeapon)
+importData('artifacts', collateArtifact);
