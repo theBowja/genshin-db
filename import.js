@@ -11,6 +11,8 @@ if(!fs.existsSync('./import/EN')) {
 	process.exit();
 }
 
+// for importing images
+let myimages = {};
 
 // FOR DATA ONLY
 function getJSON(path) {
@@ -25,6 +27,8 @@ function clearObject(obj) {
 	for (let key in obj)
 	    if (obj.hasOwnProperty(key)) delete obj[key];
 }
+
+function makeFileName(str) { return str.toLowerCase().replace(/[^a-z]/g,''); }
 
 const bodyToGender = {
 	'BOY': 'MALE',
@@ -54,8 +58,36 @@ const associationToRegion = {
 	'MAINACTOR': ''
 }
 
+let upperBodyImages = {};
+function getUpperBodyImages() {
+	const https = require('https');
+	const util = require('util');
+	const regions = ['mondstadt', 'liyue'];
+	https.get(`https://genshin.mihoyo.com/en/character/${regions[0]}?char=0`, function(res) {
+		let data = '';
+		res.on('data', function(chunk) { data += chunk;	});
+		res.on('end', function() {
+			// console.log(data);
+			let regex = /<div data-server-rendered="true".*?window.*?=(.*?)</gm;
+			let found = regex.exec(data);
+			// console.log(found[1]);
+			let lol = eval(found[1]).data[0].charList;
+			console.log(util.inspect(lol, false, null));
+		});
+
+	}).on('error', function() {
+		console.log('error');
+	});
+
+
+}
+// getUpperBodyImages();
+
 function collateCharacter(existing, newdata, lang) {
-	newdata.images = existing.images;
+	newdata.images = {};
+	if(newdata.icon) newdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
+	if(newdata.sideicon) newdata.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
+
 	newdata.talentmaterialtype = existing.talentmaterialtype;
 	newdata.url = existing.url;
 	clearObject(existing);
@@ -86,9 +118,9 @@ function collateCharacter(existing, newdata, lang) {
 		existing.birthday = '';
 	}
 	existing.constellation = newdata.constellation;
-	existing.images = newdata.images || {};
-	if(newdata.icon) existing.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
-	if(newdata.sideicon) existing.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
+	if(myimages.characters === undefined) {
+		myimages.characters
+	}
 	existing.cv = newdata.cv;
 	existing.talentmaterialtype = newdata.talentmaterialtype || '';
 	existing.url = newdata.url;
@@ -102,7 +134,6 @@ function collateConstellation(existing, newdata) {
 		if(existing['c'+i] === undefined) existing['c'+i] = {};
 		existing['c'+i].name = newdata['c'+i].name;
 		existing['c'+i].effect = newdata['c'+i].effect;
-		existing['c'+i].icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/${newdata['c'+i].icon}.png`;
 	}
 }
 
@@ -127,7 +158,10 @@ function collateTalent(existing, newdata) {
 }
 
 function collateWeapon(existing, inputdata) {
-	inputdata.images = existing.images;
+	inputdata.images = {};
+	if(inputdata.icon) inputdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
+	if(inputdata.awakenicon) inputdata.images.awakenicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
+
 	inputdata.weaponmaterialtype = existing.weaponmaterialtype;
 	inputdata.url = existing.url;
 
@@ -153,13 +187,6 @@ function collateWeapon(existing, inputdata) {
 	existing.r5 = inputdata.r5 || [];
 
 	existing.weaponmaterialtype = inputdata.weaponmaterialtype || '';
-	existing.images = {};
-	if(inputdata.images.image)
-		existing.images.image = inputdata.images.image;
-	if(inputdata.icon !== undefined)
-		existing.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
-	if(inputdata.awakenicon !== undefined)
-		existing.images.awakenicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
 	existing.url = inputdata.url || '';
 }
 
@@ -178,8 +205,15 @@ function collateArtifact(existing, newdata) {
 		existing[type].name = newdata[type].name;
 		existing[type].relictype = newdata[type].relictype;
 		existing[type].description = newdata[type].description;
-		existing[type].icon = newdata[type].icon;
+		//existing[type].icon = newdata[type].icon;
 	})
+}
+
+function importImage() {
+	// const folders = ['characters', 'constellations', 'talents', 'weapons', 'artifacts'];
+	// for(let folder of folders) {
+	// 	let newaggregateddata = require(`./import/EN/${folder}.json`);
+	// }
 }
 
 function importData(folder, collateFunc, dontwrite) {
@@ -187,6 +221,9 @@ function importData(folder, collateFunc, dontwrite) {
 		if(dontwrite && langC !== 'EN') return; 
 		// if(langC !== 'EN') return;
 		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
+		let myimages = {}; // only do this once
+		if(langC === 'EN') myimages = require(`./src/data/image/${folder}.json`);
+
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
 			let basepath = `${language.languageMap[langC]}/${folder}`
 			let existing = getJSON(`${basepath}/${filename}.json`);
@@ -194,17 +231,24 @@ function importData(folder, collateFunc, dontwrite) {
 			newdata.aliases = existing.aliases;
 
 			collateFunc(existing, newdata, language.languageMap[langC]);
+			if(langC === 'EN') Object.assign(myimages[`${filename}.json`], newdata.images);
+
 			//if(langC === 'CHT') console.log(existing);
 
 			if(dontwrite) { console.log(existing); continue; }
 			fs.mkdirSync(`./src/data/${basepath}`, { recursive: true });
 			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(existing, null, '\t'));
 		}
+		if(langC === 'EN') {
+			fs.mkdirSync(`./src/data/image`, { recursive: true });
+			fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
+			//console.log(myimages);
+		}
 	});
 }
 
-// importData('characters', collateCharacter);
+importData('characters', collateCharacter);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
-importData('artifacts', collateArtifact);
+// importData('artifacts', collateArtifact);
