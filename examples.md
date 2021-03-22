@@ -40,13 +40,6 @@ const genshindb = require('genshin-db');
   birthdaymmdd: '3/14',
   birthday: 'March 14',
   constellation: 'Leo Minor',
-  images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png',
-    card: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg',
-    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Jean_Portrait.png',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qin.png',
-    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Qin.png'
-  },
   cv: {
     english: 'Stephanie Southerland',
     chinese: '林簌',
@@ -54,7 +47,16 @@ const genshindb = require('genshin-db');
     korean: '안영미'
   },
   talentmaterialtype: 'Resistance',
-  url: 'https://genshin-impact.fandom.com/wiki/Jean'
+  url: 'https://genshin-impact.fandom.com/wiki/Jean',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Jean_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qin.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Qin.png',
+    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20200616/2020061611214389168.png',
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20200616/2020061611215344626.png'
+  }
 }
 ```
 
@@ -79,17 +81,22 @@ const genshindb = require('genshin-db');
   birthdaymmdd: '8/10',
   birthday: '8月10日',
   constellation: '小兎座',
-  images: {
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
-    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png'
-  },
   cv: {
     english: 'Kelly Baskin',
     chinese: '蔡书瑾',
     japanese: '石見舞菜香',
     korean: '김연우'
   },
-  talentmaterialtype: ''
+  talentmaterialtype: '',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
+    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png'
+  }
 }
 ```
 
@@ -114,13 +121,6 @@ const genshindb = require('genshin-db');
   birthdaymmdd: '6/16',
   birthday: 'June 16',
   constellation: 'Carmen Dei',
-  images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
-    card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
-    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png',
-    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png'
-  },
   cv: {
     english: 'Erika Harlacher',
     chinese: '喵酱',
@@ -128,7 +128,16 @@ const genshindb = require('genshin-db');
     korean: '정유정'
   },
   talentmaterialtype: 'Ballad',
-  url: 'https://genshin-impact.fandom.com/wiki/Venti'
+  url: 'https://genshin-impact.fandom.com/wiki/Venti',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png',
+    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112210305833310.png',
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png'
+  }
 }
 ```
 
@@ -261,6 +270,15 @@ const genshindb = require('genshin-db');
     name: 'Trove of Marvelous Treasures',
     image: '',
     info: 'Displays the location of nearby **ore veins** (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on the mini-map.'
+  },
+  images: {
+    combat1: '',
+    combat2: '',
+    combatsp: '',
+    combat3: '',
+    passive1: '',
+    passive2: '',
+    passive3: ''
   }
 }
 ```
@@ -307,35 +325,37 @@ const genshindb = require('genshin-db');
   name: 'Amber',
   c1: {
     name: 'One Arrow to Rule Them All',
-    effect: "Fires 2 arrows per **Aimed Shot**. The second arrow deals 20% of the first arrow's DMG.",
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_01.png'
+    effect: "Fires 2 arrows per **Aimed Shot**. The second arrow deals 20% of the first arrow's DMG."
   },
   c2: {
     name: 'Bunny Triggered',
     effect: "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it.\n" +
-      'Explosion via manual detonation deals 200% additional DMG.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_02.png'
+      'Explosion via manual detonation deals 200% additional DMG.'
   },
   c3: {
     name: 'It Burns!',
-    effect: 'Increases the Level of **Fiery Rain** by 3.\nMaximum upgrade level is 15.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_02.png'
+    effect: 'Increases the Level of **Fiery Rain** by 3.\nMaximum upgrade level is 15.'
   },
   c4: {
     name: "It's Not Just Any Doll...",
-    effect: "Decreases **Explosive Puppet**'s CD by 20%. Adds 1 additional charge.",
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_03.png'
+    effect: "Decreases **Explosive Puppet**'s CD by 20%. Adds 1 additional charge."
   },
   c5: {
     name: "It's Baron Bunny!",
     effect: 'Increases the Level of **Explosive Puppet** by 3.\n' +
-      'Maximum upgrade level is 15.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_01.png'
+      'Maximum upgrade level is 15.'
   },
   c6: {
     name: 'Wildfire',
-    effect: "**Fiery Rain** increases all party members' Movement SPD by 15% and ATK by 15% for 10s.",
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_04.png'
+    effect: "**Fiery Rain** increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
+  },
+  images: {
+    c1: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_01.png',
+    c2: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_02.png',
+    c3: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_02.png',
+    c4: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_03.png',
+    c5: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_01.png',
+    c6: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_04.png'
   }
 }
 ```
@@ -348,8 +368,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Abyssal Mayhem: Vortex of Turmoil',
   effect: 'Increases the Level of **Foul Legacy: Raging Tide** by 3.\n' +
-    'Maximum upgrade level is 15.',
-  icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Tartaglia_01.png'
+    'Maximum upgrade level is 15.'
 }
 ```
 
@@ -377,12 +396,12 @@ const genshindb = require('genshin-db');
   r4: [ '14%' ],
   r5: [ '16%' ],
   weaponmaterialtype: 'Dandelion Gladiator',
+  url: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
     awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png'
-  },
-  url: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
+  }
 }
 ```
 
@@ -429,7 +448,8 @@ const genshindb = require('genshin-db');
   day: [ 'Wednesday', 'Saturday', 'Sunday' ],
   location: 'Wolvendom',
   region: 'Mondstadt',
-  domainofforgery: 'Cecilia Garden'
+  domainofforgery: 'Cecilia Garden',
+  images: undefined
 }
 ```
 
@@ -457,7 +477,8 @@ const genshindb = require('genshin-db');
   day: [ 'Wednesday', 'Saturday', 'Sunday' ],
   location: 'Springvale',
   region: 'Mondstadt',
-  domainofmastery: 'Forsaken Rift'
+  domainofmastery: 'Forsaken Rift',
+  images: undefined
 }
 ```
 
@@ -485,32 +506,34 @@ const genshindb = require('genshin-db');
   flower: {
     name: "Witch's Flower of Blaze",
     relictype: 'Flower of Life',
-    description: 'A flower touched by the witch who once dreamt of burning away all the demons in the world. The anonymous flames affectionately caress the hands of those who touch it.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_4.png'
+    description: 'A flower touched by the witch who once dreamt of burning away all the demons in the world. The anonymous flames affectionately caress the hands of those who touch it.'
   },
   plume: {
     name: "Witch's Ever-Burning Plume",
     relictype: 'Plume of Death',
-    description: 'A bird feather touched by the witch who once dreamt of burning away all the demons in the world. Its eternal flame burns hot.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_2.png'
+    description: 'A bird feather touched by the witch who once dreamt of burning away all the demons in the world. Its eternal flame burns hot.'
   },
   sands: {
     name: "Witch's End Time",
     relictype: 'Sands of Eon',
-    description: 'A timepiece worn by the witch who dreamt of burning away all the demons in the world. The years the witch dedicated to the flames flow within.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_5.png'
+    description: 'A timepiece worn by the witch who dreamt of burning away all the demons in the world. The years the witch dedicated to the flames flow within.'
   },
   goblet: {
     name: "Witch's Heart Flames",
     relictype: 'Goblet of Eonothem',
-    description: 'A flame-spitting urn left behind by the Crimson Witch of Flames, who once dreamt of burning away all the demons in the world. The fire in the urn burns eternally, as did its former master.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_1.png'
+    description: 'A flame-spitting urn left behind by the Crimson Witch of Flames, who once dreamt of burning away all the demons in the world. The fire in the urn burns eternally, as did its former master.'
   },
   circlet: {
     name: "Witch's Scorching Hat",
     relictype: 'Circlet of Logos',
-    description: 'A hat once worn by the witch who dreamt of burning away all of the demons in the world. The large brim blocked her sight.',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_3.png'
+    description: 'A hat once worn by the witch who dreamt of burning away all of the demons in the world. The large brim blocked her sight.'
+  },
+  images: {
+    flower: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_4.png',
+    plume: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_2.png',
+    sands: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_5.png',
+    goblet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_1.png',
+    circlet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_3.png'
   }
 }
 ```
