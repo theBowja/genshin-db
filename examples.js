@@ -14,7 +14,7 @@ let header = `# Examples\n\nFirst start off with:\n${codeStart()}const ${libname
 let folders = [
 	{
 		function: 'characters',
-		params: ['jean','amber, { resultlanguage: \'JP\' }', 'carmen', 'december', 'pyro', 'geo dmg', 'liyue', 'sword', 'ballad']
+		params: ['names','amber, { resultlanguage: \'JP\' }', 'carmen', 'december', 'pyro', 'geo dmg', 'liyue', 'sword', 'ballad']
 	},
 	{
 		function: 'talents',

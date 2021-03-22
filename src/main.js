@@ -118,12 +118,14 @@ function searchFolder(query, folder, opts) {
         if(langindex.aliases[query] !== undefined)
             return getData(opts.resultlanguage, folder, langindex.aliases[query]);
 
-        // check if query is in .categories
-        if(langindex.categories[query] !== undefined) {
+        // check if query is in .categories or is 'names'
+        if(langindex.categories[query] !== undefined || query === 'names') {
             let reslangindex = getIndex(opts.resultlanguage, folder);
             if(reslangindex === undefined) return undefined;
+
+            let tmparr = (query === 'names') ? Object.values(reslangindex.names) : langindex.categories[query];
             // change the array of filenames into an array of data objects or data names. ignores undefined results if any
-            return langindex.categories[query].reduce((accum, filename) => {
+            return tmparr.reduce((accum, filename) => {
                 let res = opts.verbose ? getData(opts.resultlanguage, folder, filename) : reslangindex.namemap[filename];
                 if(res !== undefined) accum.push(res);
                 return accum;
