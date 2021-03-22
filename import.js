@@ -222,7 +222,11 @@ function importData(folder, collateFunc, dontwrite) {
 		// if(langC !== 'EN') return;
 		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
 		let myimages = {}; // only do this once
-		if(langC === 'EN') myimages = require(`./src/data/image/${folder}.json`);
+		if(langC === 'EN') {
+			try {
+				myimages = require(`./src/data/image/${folder}.json`)
+			} catch(e) {}
+		}
 
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
 			let basepath = `${language.languageMap[langC]}/${folder}`
@@ -231,7 +235,10 @@ function importData(folder, collateFunc, dontwrite) {
 			newdata.aliases = existing.aliases;
 
 			collateFunc(existing, newdata, language.languageMap[langC]);
-			if(langC === 'EN') Object.assign(myimages[`${filename}.json`], newdata.images);
+			if(langC === 'EN') { 
+				if(myimages[`${filename}.json`] === undefined) myimages[`${filename}.json`] = {};
+				Object.assign(myimages[`${filename}.json`], newdata.images);
+			}
 
 			//if(langC === 'CHT') console.log(existing);
 
@@ -247,8 +254,8 @@ function importData(folder, collateFunc, dontwrite) {
 	});
 }
 
-importData('characters', collateCharacter);
+// importData('characters', collateCharacter);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
-// importData('artifacts', collateArtifact);
+importData('artifacts', collateArtifact);
