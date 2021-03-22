@@ -21,43 +21,22 @@ const genshindb = require('genshin-db');
 ## genshindb.characters(query[, opts])]
 
 <details>
-<summary>genshindb.characters('<b>jean'</b>)</summary>
+<summary>genshindb.characters('<b>name'</b>)</summary>
 
 ```js
-{
-  name: 'Jean',
-  title: 'Dandelion Knight',
-  description: "The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius.",
-  rarity: '5',
-  element: 'Anemo',
-  weapontype: 'Sword',
-  substat: 'Healing Bonus',
-  gender: 'Female',
-  body: 'LADY',
-  association: 'MONDSTADT',
-  region: 'Mondstadt',
-  affiliation: 'Knights of Favonius',
-  birthdaymmdd: '3/14',
-  birthday: 'March 14',
-  constellation: 'Leo Minor',
-  cv: {
-    english: 'Stephanie Southerland',
-    chinese: '林簌',
-    japanese: '斎藤千和',
-    korean: '안영미'
-  },
-  talentmaterialtype: 'Resistance',
-  url: 'https://genshin-impact.fandom.com/wiki/Jean',
-  images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png',
-    card: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg',
-    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Jean_Portrait.png',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qin.png',
-    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Qin.png',
-    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20200616/2020061611214389168.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20200616/2020061611215344626.png'
-  }
-}
+[
+  'Aether',    'Albedo',    'Amber',
+  'Barbara',   'Beidou',    'Bennett',
+  'Chongyun',  'Diluc',     'Diona',
+  'Fischl',    'Ganyu',     'Hu Tao',
+  'Jean',      'Kaeya',     'Keqing',
+  'Klee',      'Lisa',      'Lumine',
+  'Mona',      'Ningguang', 'Noelle',
+  'Qiqi',      'Razor',     'Rosaria',
+  'Sucrose',   'Tartaglia', 'Venti',
+  'Xiangling', 'Xiao',      'Xingqiu',
+  'Xinyan',    'Zhongli'
+]
 ```
 
 </details>
