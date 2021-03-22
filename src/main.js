@@ -23,7 +23,9 @@ genshin.getOptions = function() {
 const alldata = require('./data/data.min.json');
 function getData(lang, folder, filename) {
     try {
-        return alldata[lang][folder][filename];
+        let tmp = alldata[lang][folder][filename];
+        if(tmp.images === undefined) tmp.images = getImage(folder, filename);
+        return tmp;
     } catch(e) {
         return undefined;
     }
@@ -33,6 +35,15 @@ const allindex = require('./data/index.min.json');
 function getIndex(lang, folder) {
     try {
         return allindex[lang][folder];
+    } catch(e) {
+        return undefined;
+    }
+}
+
+const allimage = require('./data/image.min.json');
+function getImage(folder, filename) {
+    try {
+        return allimage[folder][filename];
     } catch(e) {
         return undefined;
     }

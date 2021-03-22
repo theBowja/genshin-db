@@ -5,35 +5,8 @@ const fs = require('fs');
 
 // if you ask me to explain the code i wrote below, i would reply i dunno
 
-// makeIndices();
-// combineData();
-
-// loser()
-function loser() {
-	let folder = 'talents';
-	let images = {};
-	fs.readdirSync(`./data/English/${folder}`).forEach(filename => {
-		if(!filename.endsWith('.json')) return;
-		const data = require(`./data/English/${folder}/${filename}`);
-		if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
-
-		let myimages = {};
-		myimages.combat1 = data.combat1.image;
-		myimages.combat2 = data.combat1.image;
-		if(data.combat1) myimages.combatsp = data.combat1.image;
-		myimages.combat3 = data.combat1.image;
-		myimages.passive1 = data.passive1.image;
-		myimages.passive2 = data.passive2.image;
-		if(data.passive3) myimages.passive3 = data.passive3.image;
-
-		images[filename] = myimages;
-
-		fs.mkdirSync(`./data/image/`, { recursive: true });
-		fs.writeFileSync(`./data/image/${folder}.json`, JSON.stringify(images, null, '\t'));
-	});
-
-
-}
+makeIndices();
+combineData();
 
 function makeIndices() {
 	const design = require('./design.json');
@@ -153,8 +126,8 @@ function combineData() {
 		}
 	}
 	for(const folder of design.folders) {
-		if (!fs.existsSync(`./data/image/${folder}`)) continue;
-		myimage[folder] = require(`./data/image/${folder}.json`)
+		if (!fs.existsSync(`./data/image/${folder}.json`)) continue;
+		myimage[folder] = require(`./data/image/${folder}.json`);
 	}
 
 	fs.writeFileSync(`./data/data.min.json`, JSON.stringify(mydata));

@@ -58,30 +58,43 @@ const associationToRegion = {
 	'MAINACTOR': ''
 }
 
-let upperBodyImages = {};
-function getUpperBodyImages() {
+/* ============================================ FUNCTIONS =================================================== */
+
+async function getCharList(region) {
 	const https = require('https');
+	return new Promise(resolve => {
+		https.get(`https://genshin.mihoyo.com/en/character/${region}?char=0`, function(res) {
+			let data = '';
+			res.on('data', function(chunk) { data += chunk;	});
+			res.on('end', function() {
+				const regex = /<div data-server-rendered="true".*?window.*?=(.*?)</gm;
+				const found = regex.exec(data);
+				const charList = eval(found[1]).data[0].charList;
+				resolve(charList);
+			});
+		}).on('error', function() {
+			console.log('error');
+		});
+	});
+}
+async function getUpperBodyImages() {
 	const util = require('util');
 	const regions = ['mondstadt', 'liyue'];
-	https.get(`https://genshin.mihoyo.com/en/character/${regions[0]}?char=0`, function(res) {
-		let data = '';
-		res.on('data', function(chunk) { data += chunk;	});
-		res.on('end', function() {
-			// console.log(data);
-			let regex = /<div data-server-rendered="true".*?window.*?=(.*?)</gm;
-			let found = regex.exec(data);
-			// console.log(found[1]);
-			let lol = eval(found[1]).data[0].charList;
-			console.log(util.inspect(lol, false, null));
-		});
+	let myimages = {};
+	try { myimages = require(`./src/data/image/characters.json`); } catch(e) {}
 
-	}).on('error', function() {
-		console.log('error');
-	});
-
-
+	for(const region of regions) {
+		const charList = await getCharList(region);
+		for(const char of charList) {
+			const filename = makeFileName(char.title) + '.json';
+			if(myimages[filename] === undefined) myimages[filename] = {};
+			myimages[filename].cover1 = char.cover1;
+			myimages[filename].cover2 = char.cover2;
+		}
+	}
+	fs.mkdirSync(`./src/data/image`, { recursive: true });
+	fs.writeFileSync(`./src/data/image/characters.json`, JSON.stringify(myimages, null, '\t'));
 }
-// getUpperBodyImages();
 
 function collateCharacter(existing, newdata, lang) {
 	newdata.images = {};
@@ -209,13 +222,6 @@ function collateArtifact(existing, newdata) {
 	})
 }
 
-function importImage() {
-	// const folders = ['characters', 'constellations', 'talents', 'weapons', 'artifacts'];
-	// for(let folder of folders) {
-	// 	let newaggregateddata = require(`./import/EN/${folder}.json`);
-	// }
-}
-
 function importData(folder, collateFunc, dontwrite) {
 	language.languageCodes.forEach(langC => {
 		if(dontwrite && langC !== 'EN') return; 
@@ -254,8 +260,9 @@ function importData(folder, collateFunc, dontwrite) {
 	});
 }
 
+getUpperBodyImages();
 // importData('characters', collateCharacter);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
-importData('artifacts', collateArtifact);
+// importData('artifacts', collateArtifact);
