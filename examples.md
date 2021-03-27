@@ -21,6 +21,26 @@ const genshindb = require('genshin-db');
 ## genshindb.characters(query[, opts])]
 
 <details>
+<summary>genshindb.characters('<b>names', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Aether',    'Albedo',    'Amber',
+  'Barbara',   'Beidou',    'Bennett',
+  'Chongyun',  'Diluc',     'Diona',
+  'Fischl',    'Ganyu',     'Hu Tao',
+  'Jean',      'Kaeya',     'Keqing',
+  'Klee',      'Lisa',      'Lumine',
+  'Mona',      'Ningguang', 'Noelle',
+  'Qiqi',      'Razor',     'Rosaria',
+  'Sucrose',   'Tartaglia', 'Venti',
+  'Xiangling', 'Xiao',      'Xingqiu',
+  'Xinyan',    'Zhongli'
+]
+```
+
+</details>
+<details>
 <summary>genshindb.characters('<b>ganyu'</b>)</summary>
 
 ```js
@@ -104,6 +124,47 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
+<summary>genshindb.characters('<b>アンバー', { queryLanguages: 'Japanese', resultLanguage: 'Spanish' }</b>)</summary>
+
+```js
+{
+  name: 'Amber',
+  title: 'la Campeona de Vuelo',
+  description: 'Siempre enérgica y llena de vida, Amber es la mejor exploradora de los Caballeros de Favonius, aunque también es la única...',
+  rarity: '4',
+  element: 'Pyro',
+  weapontype: 'Arco',
+  substat: 'ATQ',
+  gender: 'Femenino',
+  body: 'GIRL',
+  association: 'MONDSTADT',
+  region: 'Mondstadt',
+  affiliation: 'Caballeros de Favonius',
+  birthdaymmdd: '8/10',
+  birthday: '10 de agosto',
+  constellation: 'Lepus Minor',
+  cv: {
+    english: 'Kelly Baskin',
+    chinese: '蔡书瑾',
+    japanese: '石見舞菜香',
+    korean: '김연우'
+  },
+  talentmaterialtype: '',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
+    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png'
+  },
+  stats: [Function (anonymous)]
+}
+```
+
+</details>
+<details>
 <summary>genshindb.characters('<b>childe', { matchAliases: true }</b>)</summary>
 
 ```js
@@ -142,26 +203,6 @@ const genshindb = require('genshin-db');
   },
   stats: [Function (anonymous)]
 }
-```
-
-</details>
-<details>
-<summary>genshindb.characters('<b>names', { matchCategories: true }</b>)</summary>
-
-```js
-[
-  'Aether',    'Albedo',    'Amber',
-  'Barbara',   'Beidou',    'Bennett',
-  'Chongyun',  'Diluc',     'Diona',
-  'Fischl',    'Ganyu',     'Hu Tao',
-  'Jean',      'Kaeya',     'Keqing',
-  'Klee',      'Lisa',      'Lumine',
-  'Mona',      'Ningguang', 'Noelle',
-  'Qiqi',      'Razor',     'Rosaria',
-  'Sucrose',   'Tartaglia', 'Venti',
-  'Xiangling', 'Xiao',      'Xingqiu',
-  'Xinyan',    'Zhongli'
-]
 ```
 
 </details>
