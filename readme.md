@@ -20,7 +20,7 @@ Every input string to the query parameter will be **autocompleted** to match pos
 
 Every update will probably change the format for some data. If you need to know the data format for some specific version of this library, you can go to the github and switch to the tag version you're on. Then go into the data folder and look at the data to find the format. Don't look into the template folder since it isn't up-to-date.
 
-Please join [my discord](https://discord.gg/MHhYnRSC) and talk to me.
+If you need help or have questions, you can talk to me in [my discord](https://discord.gg/MHhYnRSC).
 
 ## Table of Contents
 
