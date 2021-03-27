@@ -14,8 +14,9 @@ let header = `# Examples\n\nFirst start off with:\n${codeStart()}const ${libname
 let folders = [
 	{
 		function: 'characters',
-		params: ['ganyu','amber, { resultLanguage: \'JP\' }', 'childe, { matchAliases: true }',
-				 'names, { matchCategories: true }', 'carmen, { matchCategories: true }',
+		params: ['names, { matchCategories: true }', 'ganyu', 'amber, { resultLanguage: \'JP\' }',
+				 'アンバー, { queryLanguages: \'Japanese\', resultLanguage: \'Spanish\' }', 'childe, { matchAliases: true }',
+				 'carmen, { matchCategories: true }',
 				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
 				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
 				 'sword, { matchCategories: true }', 'ballad, { matchCategories: true }',
@@ -72,8 +73,8 @@ folders.forEach(folder => {
 	folder.params.forEach(param => {
 		output += '<details>\n';
 		let [inside, outside] = param.split('/')
-		let [query, opts] = inside.split(',');
-		opts = (opts === undefined) ? '' : ','+opts;
+		let [query, ...opts] = inside.split(',');
+		opts = (opts.length === 0) ? '' : ','+opts;
 		//genshin.talents('klee').passive3
 		let summary = `${libname}.${folder.function}('<b>${query}'${opts}</b>)${outside ? `<b>${outside}</b>` : ''}`;
 		let call = `${libname}.${folder.function}('${query}'${opts})${outside ? outside : ''}`;
