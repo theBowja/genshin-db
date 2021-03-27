@@ -207,7 +207,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>carmen', { matchCategories: true }</b>)</summary>
+<summary>genshindb.characters('<b>carmen', { matchAliases: true }</b>)</summary>
 
 ```js
 {
@@ -358,6 +358,21 @@ const genshindb = require('genshin-db');
   attack: 289.0738706670609,
   defense: 571.6222874802552,
   specialized: 0.2879999876022339
+}
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>aether'</b>)<b>.stats(12)</b></summary>
+
+```js
+{
+  level: 12,
+  ascension: 0,
+  hp: 1739.6972508560866,
+  attack: 33.97766494134521,
+  defense: 109.18529665203096,
+  specialized: 0
 }
 ```
 
@@ -815,7 +830,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>diluc'</b>)</summary>
+<summary>genshindb.recipes('<b>diluc', { matchAliases: true }</b>)</summary>
 
 ```js
 {

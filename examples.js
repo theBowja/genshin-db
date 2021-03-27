@@ -16,11 +16,11 @@ let folders = [
 		function: 'characters',
 		params: ['names, { matchCategories: true }', 'ganyu', 'amber, { resultLanguage: \'JP\' }',
 				 'アンバー, { queryLanguages: \'Japanese\', resultLanguage: \'Spanish\' }', 'childe, { matchAliases: true }',
-				 'carmen, { matchCategories: true }',
+				 'carmen, { matchAliases: true }',
 				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
 				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
 				 'sword, { matchCategories: true }', 'ballad, { matchCategories: true }',
-				 'klee/.stats(90)', 'klee/.stats(80)', 'klee/.stats(80, \'+\')']
+				 'klee/.stats(90)', 'klee/.stats(80)', 'klee/.stats(80, \'+\')', 'aether/.stats(12)']
 	},
 	{
 		function: 'talents',
@@ -49,7 +49,7 @@ let folders = [
 	{
 		function: 'recipes',
 		params: ['temptation', '4, { matchCategories: true }', 'warrior, { matchCategories: true }',
-		         'cabbage, { matchCategories: true }', 'atK, { matchCategories: true }', 'diluc'],
+		         'cabbage, { matchCategories: true }', 'atK, { matchCategories: true }', 'diluc, { matchAliases: true }'],
 	},
 	{
 		function: 'elements',
