@@ -222,12 +222,21 @@ function collateArtifact(existing, newdata) {
 	})
 }
 
+function importCurve(folder) {
+	try {
+		let mycurve = require(`./import/curve/${folder}.json`);
+		fs.mkdirSync(`./src/data/curve`, { recursive: true });
+		fs.writeFileSync(`./src/data/curve/${folder}.json`, JSON.stringify(mycurve, null, '\t'));
+	} catch(e) {}
+}
+
 function importData(folder, collateFunc, dontwrite) {
 	language.languageCodes.forEach(langC => {
 		if(dontwrite && langC !== 'EN') return; 
 		// if(langC !== 'EN') return;
 		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
 		let myimages = {}; // only do this once
+		let mystats = {}; // only do this once
 		if(langC === 'EN') {
 			try {
 				myimages = require(`./src/data/image/${folder}.json`)
@@ -244,6 +253,7 @@ function importData(folder, collateFunc, dontwrite) {
 			if(langC === 'EN') { 
 				if(myimages[`${filename}.json`] === undefined) myimages[`${filename}.json`] = {};
 				Object.assign(myimages[`${filename}.json`], newdata.images);
+				mystats[`${filename}.json`] = newdata.stats
 			}
 
 			//if(langC === 'CHT') console.log(existing);
@@ -252,16 +262,20 @@ function importData(folder, collateFunc, dontwrite) {
 			fs.mkdirSync(`./src/data/${basepath}`, { recursive: true });
 			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(existing, null, '\t'));
 		}
+
 		if(langC === 'EN') {
 			fs.mkdirSync(`./src/data/image`, { recursive: true });
 			fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
+			fs.mkdirSync(`./src/data/stats`, { recursive: true });
+			fs.writeFileSync(`./src/data/stats/${folder}.json`, JSON.stringify(mystats, null, '\t'));
 			//console.log(myimages);
 		}
 	});
 }
 
-getUpperBodyImages();
+// getUpperBodyImages();
 // importData('characters', collateCharacter);
+importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)

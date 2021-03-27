@@ -101,10 +101,8 @@ function makeIndices() {
 }
 
 function combineData() {
-	console.log("combining all data, index, image into one file each");
-	let mydata = {};
-	let myindex = {};
-	let myimage = {};
+	console.log("combining all data, index, image, stats, curve into one file each");
+	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {};
 	let language = require('./language.js');
 	const design = require('./design.json');
 
@@ -126,11 +124,17 @@ function combineData() {
 		}
 	}
 	for(const folder of design.folders) {
-		if (!fs.existsSync(`./data/image/${folder}.json`)) continue;
-		myimage[folder] = require(`./data/image/${folder}.json`);
+		if(fs.existsSync(`./data/image/${folder}.json`))
+			myimage[folder] = require(`./data/image/${folder}.json`);
+		if(fs.existsSync(`./data/stats/${folder}.json`))
+			mystats[folder] = require(`./data/stats/${folder}.json`);
+		if(fs.existsSync(`./data/curve/${folder}.json`))
+			mycurve[folder] = require(`./data/curve/${folder}.json`);
 	}
 
-	fs.writeFileSync(`./data/data.min.json`, JSON.stringify(mydata));
-	fs.writeFileSync(`./data/index.min.json`, JSON.stringify(myindex));
-	fs.writeFileSync(`./data/image.min.json`, JSON.stringify(myimage));
+	fs.writeFileSync(`./min/data.min.json`, JSON.stringify(mydata));
+	fs.writeFileSync(`./min/index.min.json`, JSON.stringify(myindex));
+	fs.writeFileSync(`./min/image.min.json`, JSON.stringify(myimage));
+	fs.writeFileSync(`./min/stats.min.json`, JSON.stringify(mystats));
+	fs.writeFileSync(`./min/curve.min.json`, JSON.stringify(mycurve));
 }

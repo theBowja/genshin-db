@@ -1,6 +1,7 @@
 const fuzzysort = require('fuzzysort');
 //const design = require('./design.json');
 const language = require('./language.js');
+const { getData, getIndex, getImage, getStats } = require('./getdata.js');
 
 // object that will be exported
 const genshin = {};
@@ -18,35 +19,6 @@ genshin.setOptions = function(options) {
 
 genshin.getOptions = function() {
     return JSON.parse(JSON.stringify(baseoptions));
-}
-
-const alldata = require('./data/data.min.json');
-function getData(lang, folder, filename) {
-    try {
-        let tmp = alldata[lang][folder][filename];
-        if(tmp.images === undefined) tmp.images = getImage(folder, filename);
-        return tmp;
-    } catch(e) {
-        return undefined;
-    }
-}
-
-const allindex = require('./data/index.min.json');
-function getIndex(lang, folder) {
-    try {
-        return allindex[lang][folder];
-    } catch(e) {
-        return undefined;
-    }
-}
-
-const allimage = require('./data/image.min.json');
-function getImage(folder, filename) {
-    try {
-        return allimage[folder][filename];
-    } catch(e) {
-        return undefined;
-    }
 }
 
 /**

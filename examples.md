@@ -21,7 +21,7 @@ const genshindb = require('genshin-db');
 ## genshindb.characters(query[, opts])]
 
 <details>
-<summary>genshindb.characters('<b>name'</b>)</summary>
+<summary>genshindb.characters('<b>names'</b>)</summary>
 
 ```js
 [
