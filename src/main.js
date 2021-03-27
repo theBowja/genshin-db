@@ -1,16 +1,18 @@
 const fuzzysort = require('fuzzysort');
 //const design = require('./design.json');
 const language = require('./language.js');
-const { getData, getIndex, getImage, getStats } = require('./getdata.js');
+const { getData, getIndex } = require('./getdata.js');
 
 // object that will be exported
 const genshin = {};
 
+// Options that we'll start off with.
 let baseoptions = {
-    verbose: false, // used for replacing string names from categories with data object
-    nameonly: false, // set this to true if you don't want your query to match any categories or aliases
-    querylanguages: ["English"], // array of languages that your query will be searched in
-    resultlanguage: "English"
+    matchAliases: true, // Allows the matching of aliases.
+    matchCategories: false, // Allows the matching of categories. If true, then returns an array if it matches.
+    verboseCategories: false, // Used if a category is matched. If true, then replaces each string name in the array with the data object instead.
+    queryLanguages: ["English"], // Array of languages that your query will be searched in.
+    resultLanguage: "English" // Output language that you want your results to be in.
 }
 
 genshin.setOptions = function(options) {
@@ -28,30 +30,28 @@ function sanitizeOptions(opts) {
     if(typeof opts !== 'object' || opts === null) return undefined;
 
     let sanOpts = {};
-    opts.resultlanguage = language.format(opts.resultlanguage);
-    opts.querylanguages = language.format(opts.querylanguages);
-    if(typeof opts.verbose === "boolean")
-        sanOpts.verbose = opts.verbose;
-    if(typeof opts.nameonly === 'boolean')
-        sanOpts.nameonly = opts.nameonly;
-    if(opts.resultlanguage !== undefined)
-        sanOpts.resultlanguage = opts.resultlanguage;
-    if(opts.querylanguages !== undefined)
-        sanOpts.querylanguages = Array.isArray(opts.querylanguages) ? opts.querylanguages : [opts.querylanguages];
+    ['matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
+        if(typeof opts[prop] === 'boolean') sanOpts[prop] = opts[prop];
+    });
+    opts.resultLanguage = language.format(opts.resultLanguage);
+    if(opts.resultLanguage !== undefined)
+        sanOpts.resultLanguage = opts.resultLanguage;
+    opts.queryLanguages = language.format(opts.queryLanguages);
+    if(opts.queryLanguages !== undefined)
+        sanOpts.queryLanguages = Array.isArray(opts.queryLanguages) ? opts.queryLanguages : [opts.queryLanguages];
     return sanOpts;
 }
 
-function buildQueryDict(querylangs, folder, nameonly) {
-    let dict = nameonly ? [] : ['names'];
+function buildQueryDict(querylangs, folder, opts) {
+    let dict = opts.matchCategories ? ['names'] : [];
     for(const lang of querylangs) {
         const index = getIndex(lang, folder);
         if(index === undefined) continue;
         if(index.names)
             dict = dict.concat(Object.keys(index.names));
-        if(nameonly) continue;
-        if(index.aliases)
+        if(opts.matchAliases && index.aliases)
             dict = dict.concat(Object.keys(index.aliases));
-        if(index.categories)
+        if(opts.matchCategories && index.categories)
             dict = dict.concat(Object.keys(index.categories));
     }
     return dict;
@@ -65,7 +65,7 @@ function autocomplete(input, dict) {
 // genshin.categories = function(query, opts={}) {
 //     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
-//     const file = getCategory(opts.resultlanguage);
+//     const file = getCategory(opts.resultLanguage);
 //     return file[query] ? file[query] : [];
 // }
 
@@ -73,32 +73,30 @@ function autocomplete(input, dict) {
 // TODO: if folder is undefined, search through every folder
 function searchFolder(query, folder, opts) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    query = autocomplete(""+query, buildQueryDict(opts.querylanguages, folder, opts.nameonly));
+    query = autocomplete(""+query, buildQueryDict(opts.queryLanguages, folder, opts));
     if(query === undefined) return undefined;
 
-    for(let lang of opts.querylanguages) {
+    for(let lang of opts.queryLanguages) {
         let langindex = getIndex(lang, folder);
         if(langindex === undefined) continue;
 
         // check if query is in .names
         if(langindex.names[query] !== undefined)
-            return getData(opts.resultlanguage, folder, langindex.names[query]);
-
-        if(opts.nameonly) continue;
+            return getData(opts.resultLanguage, folder, langindex.names[query]);
 
         // check if query is in .aliases
-        if(langindex.aliases[query] !== undefined)
-            return getData(opts.resultlanguage, folder, langindex.aliases[query]);
+        if(opts.matchAliases && langindex.aliases[query] !== undefined)
+            return getData(opts.resultLanguage, folder, langindex.aliases[query]);
 
         // check if query is in .categories or is 'names'
-        if(langindex.categories[query] !== undefined || query === 'names') {
-            let reslangindex = getIndex(opts.resultlanguage, folder);
+        if(opts.matchCategories && (langindex.categories[query] !== undefined || query === 'names')) {
+            let reslangindex = getIndex(opts.resultLanguage, folder);
             if(reslangindex === undefined) return undefined;
 
             let tmparr = (query === 'names') ? Object.values(reslangindex.names) : langindex.categories[query];
             // change the array of filenames into an array of data objects or data names. ignores undefined results if any
             return tmparr.reduce((accum, filename) => {
-                let res = opts.verbose ? getData(opts.resultlanguage, folder, filename) : reslangindex.namemap[filename];
+                let res = opts.verbose ? getData(opts.resultLanguage, folder, filename) : reslangindex.namemap[filename];
                 if(res !== undefined) accum.push(res);
                 return accum;
             }, []);

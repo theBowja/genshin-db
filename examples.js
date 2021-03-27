@@ -14,7 +14,12 @@ let header = `# Examples\n\nFirst start off with:\n${codeStart()}const ${libname
 let folders = [
 	{
 		function: 'characters',
-		params: ['names','amber, { resultlanguage: \'JP\' }', 'carmen', 'december', 'pyro', 'geo dmg', 'liyue', 'sword', 'ballad']
+		params: ['ganyu','amber, { resultLanguage: \'JP\' }', 'childe, { matchAliases: true }',
+				 'names, { matchCategories: true }', 'carmen, { matchCategories: true }',
+				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
+				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
+				 'sword, { matchCategories: true }', 'ballad, { matchCategories: true }',
+				 'klee/.stats(90)', 'klee/.stats(80)', 'klee/.stats(80, \'+\')']
 	},
 	{
 		function: 'talents',
@@ -26,23 +31,24 @@ let folders = [
 	},
 	{
 		function: 'weapons',
-		params: ['lost prayers', 'decarabian'],
+		params: ['lost prayers', 'decarabian, { matchCategories: true }'],
 	},
 	{
 		function: 'weaponmaterialtypes',
-		params: ['chains', 'fri'],
+		params: ['chains', 'fri, { matchCategories: true }'],
 	},
 	{
 		function: 'talentmaterialtypes',
-		params: ['ballad', 'satur'],
+		params: ['ballad', 'satur, { matchCategories: true }'],
 	},
 	{
 		function: 'artifacts',
-		params: ['flame', '5', 'noblesse/[\'2pc\']'],
+		params: ['flame', '5, { matchCategories: true }', 'noblesse/[\'2pc\']'],
 	},
 	{
 		function: 'recipes',
-		params: ['temptation', '4', 'warrior', 'cabbage', 'atK', 'diluc'],
+		params: ['temptation', '4, { matchCategories: true }', 'warrior, { matchCategories: true }',
+		         'cabbage, { matchCategories: true }', 'atK, { matchCategories: true }', 'diluc'],
 	},
 	{
 		function: 'elements',
