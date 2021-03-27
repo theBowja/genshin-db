@@ -21,27 +21,49 @@ const genshindb = require('genshin-db');
 ## genshindb.characters(query[, opts])]
 
 <details>
-<summary>genshindb.characters('<b>names'</b>)</summary>
+<summary>genshindb.characters('<b>ganyu'</b>)</summary>
 
 ```js
-[
-  'Aether',    'Albedo',    'Amber',
-  'Barbara',   'Beidou',    'Bennett',
-  'Chongyun',  'Diluc',     'Diona',
-  'Fischl',    'Ganyu',     'Hu Tao',
-  'Jean',      'Kaeya',     'Keqing',
-  'Klee',      'Lisa',      'Lumine',
-  'Mona',      'Ningguang', 'Noelle',
-  'Qiqi',      'Razor',     'Rosaria',
-  'Sucrose',   'Tartaglia', 'Venti',
-  'Xiangling', 'Xiao',      'Xingqiu',
-  'Xinyan',    'Zhongli'
-]
+{
+  name: 'Ganyu',
+  title: 'Plenilune Gaze',
+  description: 'The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.',
+  rarity: '5',
+  element: 'Cryo',
+  weapontype: 'Bow',
+  substat: 'CRIT DMG',
+  gender: 'Female',
+  body: 'GIRL',
+  association: 'LIYUE',
+  region: 'Liyue',
+  affiliation: 'Yuehai Pavilion',
+  birthdaymmdd: '12/2',
+  birthday: 'December 2',
+  constellation: 'Sinae Unicornis',
+  cv: {
+    english: 'Jennifer Losi',
+    chinese: '林簌',
+    japanese: '上田麗奈',
+    korean: '김선혜'
+  },
+  talentmaterialtype: 'Diligence',
+  url: 'https://genshin-impact.fandom.com/wiki/Ganyu',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Ganyu_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png',
+    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519275372324.png',
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519280045054.png'
+  },
+  stats: [Function (anonymous)]
+}
 ```
 
 </details>
 <details>
-<summary>genshindb.characters('<b>amber', { resultlanguage: 'JP' }</b>)</summary>
+<summary>genshindb.characters('<b>amber', { resultLanguage: 'JP' }</b>)</summary>
 
 ```js
 {
@@ -75,13 +97,76 @@ const genshindb = require('genshin-db');
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png'
-  }
+  },
+  stats: [Function (anonymous)]
 }
 ```
 
 </details>
 <details>
-<summary>genshindb.characters('<b>carmen'</b>)</summary>
+<summary>genshindb.characters('<b>childe', { matchAliases: true }</b>)</summary>
+
+```js
+{
+  name: 'Tartaglia',
+  title: 'Childe',
+  description: 'No. 11 of The Harbingers, also known as "Childe." His name is highly feared on the battlefield.',
+  rarity: '5',
+  element: 'Hydro',
+  weapontype: 'Bow',
+  substat: 'Hydro DMG Bonus',
+  gender: 'Male',
+  body: 'MALE',
+  association: 'FATUI',
+  region: 'Snezhnaya',
+  affiliation: 'Fatui',
+  birthdaymmdd: '7/20',
+  birthday: 'July 20',
+  constellation: 'Monoceros Caeli',
+  cv: {
+    english: 'Griffin Burns',
+    chinese: '鱼冻',
+    japanese: '木村良平',
+    korean: '남도형'
+  },
+  talentmaterialtype: 'Freedom',
+  url: 'https://genshin-impact.fandom.com/wiki/Tartaglia',
+  images: {
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/f/fb/Character_Childe_Thumb.png',
+    card: 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png',
+    portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Character_Tartaglia_Portrait.png',
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png',
+    sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Tartaglia.png',
+    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321160453386.png',
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321234137061.png'
+  },
+  stats: [Function (anonymous)]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>names', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Aether',    'Albedo',    'Amber',
+  'Barbara',   'Beidou',    'Bennett',
+  'Chongyun',  'Diluc',     'Diona',
+  'Fischl',    'Ganyu',     'Hu Tao',
+  'Jean',      'Kaeya',     'Keqing',
+  'Klee',      'Lisa',      'Lumine',
+  'Mona',      'Ningguang', 'Noelle',
+  'Qiqi',      'Razor',     'Rosaria',
+  'Sucrose',   'Tartaglia', 'Venti',
+  'Xiangling', 'Xiao',      'Xingqiu',
+  'Xinyan',    'Zhongli'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>carmen', { matchCategories: true }</b>)</summary>
 
 ```js
 {
@@ -116,13 +201,14 @@ const genshindb = require('genshin-db');
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112210305833310.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png'
-  }
+  },
+  stats: [Function (anonymous)]
 }
 ```
 
 </details>
 <details>
-<summary>genshindb.characters('<b>december'</b>)</summary>
+<summary>genshindb.characters('<b>december', { matchCategories: true }</b>)</summary>
 
 ```js
 [ 'Ganyu', 'Zhongli' ]
@@ -130,7 +216,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>pyro'</b>)</summary>
+<summary>genshindb.characters('<b>pyro', { matchCategories: true }</b>)</summary>
 
 ```js
 [
@@ -146,7 +232,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>geo dmg'</b>)</summary>
+<summary>genshindb.characters('<b>geo dmg', { matchCategories: true }</b>)</summary>
 
 ```js
 [ 'Albedo', 'Ningguang', 'Zhongli' ]
@@ -154,7 +240,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>liyue'</b>)</summary>
+<summary>genshindb.characters('<b>liyue', { matchCategories: true }</b>)</summary>
 
 ```js
 [
@@ -169,7 +255,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>sword'</b>)</summary>
+<summary>genshindb.characters('<b>sword', { matchCategories: true }</b>)</summary>
 
 ```js
 [
@@ -183,10 +269,55 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.characters('<b>ballad'</b>)</summary>
+<summary>genshindb.characters('<b>ballad', { matchCategories: true }</b>)</summary>
 
 ```js
 [ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>klee'</b>)<b>.stats(90)</b></summary>
+
+```js
+{
+  level: 90,
+  ascension: 6,
+  hp: 10286.565419930499,
+  attack: 310.93189668962077,
+  defense: 614.8434950278315,
+  specialized: 0.2879999876022339
+}
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>klee'</b>)<b>.stats(80)</b></summary>
+
+```js
+{
+  level: 80,
+  ascension: 5,
+  hp: 9075.60273520241,
+  attack: 274.32835675104525,
+  defense: 542.4622838181458,
+  specialized: 0.2160000056028366
+}
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>klee'</b>)<b>.stats(80, '+')</b></summary>
+
+```js
+{
+  level: 80,
+  ascension: 6,
+  hp: 9563.45283285866,
+  attack: 289.0738706670609,
+  defense: 571.6222874802552,
+  specialized: 0.2879999876022339
+}
 ```
 
 </details>
@@ -386,7 +517,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.weapons('<b>decarabian'</b>)</summary>
+<summary>genshindb.weapons('<b>decarabian', { matchCategories: true }</b>)</summary>
 
 ```js
 [
@@ -434,7 +565,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.weaponmaterialtypes('<b>fri'</b>)</summary>
+<summary>genshindb.weaponmaterialtypes('<b>fri', { matchCategories: true }</b>)</summary>
 
 ```js
 [ 'Boreal Wolf', 'Mist Veiled Elixir' ]
@@ -463,7 +594,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.talentmaterialtypes('<b>satur'</b>)</summary>
+<summary>genshindb.talentmaterialtypes('<b>satur', { matchCategories: true }</b>)</summary>
 
 ```js
 [ 'Ballad', 'Gold' ]
@@ -519,7 +650,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.artifacts('<b>5'</b>)</summary>
+<summary>genshindb.artifacts('<b>5', { matchCategories: true }</b>)</summary>
 
 ```js
 [
@@ -573,7 +704,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>4'</b>)</summary>
+<summary>genshindb.recipes('<b>4', { matchCategories: true }</b>)</summary>
 
 ```js
 [ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
@@ -581,7 +712,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>warrior'</b>)</summary>
+<summary>genshindb.recipes('<b>warrior', { matchCategories: true }</b>)</summary>
 
 ```js
 [
@@ -609,7 +740,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>cabbage'</b>)</summary>
+<summary>genshindb.recipes('<b>cabbage', { matchCategories: true }</b>)</summary>
 
 ```js
 [
@@ -627,7 +758,7 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>atK'</b>)</summary>
+<summary>genshindb.recipes('<b>atK', { matchCategories: true }</b>)</summary>
 
 ```js
 [
