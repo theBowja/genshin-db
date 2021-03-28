@@ -94,6 +94,8 @@ Possible inputs for query parameter are:
 - all weapon ascension material types
 - "names"
 
+The result also includes a function to calculate the stats of the weapon at each level.
+
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbweaponsquery-opts) to see example inputs and outputs for this function.
 

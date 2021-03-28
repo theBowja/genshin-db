@@ -32,7 +32,8 @@ let folders = [
 	},
 	{
 		function: 'weapons',
-		params: ['lost prayers', 'decarabian, { matchCategories: true }'],
+		params: ['lost prayers', 'decarabian, { matchCategories: true }',
+				 'dull blade/.stats(49)', 'sac sword/.stats(80, \'+\')', 'wolf grave/.stats(90)'],
 	},
 	{
 		function: 'weaponmaterialtypes',
