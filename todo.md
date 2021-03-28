@@ -1,7 +1,6 @@
 ## Todo
 - [ ] allow romanized matching for other languages
   [ ] redo categories to be non-manual
-- [ ] make rarity property in artifacts an array of possible rarities. who cares about searching by only min/max rarity.
 - [ ] make script that will check if every image in json files exists 
 
 - [ ] add properties information of data to readme.md
@@ -14,7 +13,6 @@
 - [ ] add mobs
 - [ ] add achievements
 - [ ] add commissions
-- [ ] add scaling calculators
 - [ ] npc???
 - [ ] pretend to add tests
 - [ ] add banner history maybe
@@ -30,6 +28,9 @@
 
 
 ## Done
+- [x] added stats for weapons (3/27)
+- [x] added stats for characters (3/27)
+- [x] added images and translations for all artifacts (3/20)
 - [x] 1.4 update (3/18)
 - [x] added images for characters, constellations, and weapons (3/18)
 - [x] added translations for all weapons (3/14)

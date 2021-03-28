@@ -5,11 +5,12 @@ const allstats = require('./min/stats.min.json');
 const allcurve = require('./min/curve.min.json');
 
 const availableimage = ['characters', 'artifacts', 'weapons', 'constellations', 'talents'];
-const availablestats = ['characters'];
-const availablecurve = ['characters'];
+const availablestats = ['characters', 'weapons'];
+const availablecurve = ['characters', 'weapons'];
 
 const calcStatsMap = {
-    'characters': calcStatsCharacter
+    'characters': calcStatsCharacter,
+    'weapons': calcStatsWeapon
 }
 
 function getData(lang, folder, filename) {
@@ -18,7 +19,7 @@ function getData(lang, folder, filename) {
         if(tmp.images === undefined) {
             tmp.images = getImage(folder, filename);
         }
-        if(tmp.stats === undefined && availablestats.includes(folder)) {
+        if(tmp.stats === undefined && availablestats.includes(folder) && calcStatsMap[folder]) {
             tmp.stats = calcStatsMap[folder](filename);
         }
         return tmp;
@@ -54,7 +55,7 @@ function calcStatsCharacter(filename) {
     const mycurve = getCurve('characters');
     if(mystats === undefined || mycurve === undefined) return undefined;
     /** 
-     * Calculates the stats of a character at a specific level and ascension phase
+     * Calculates the stats of a character at a specific level and ascension phase.
      * @param level: number - level. number between 1-90. returns undefined if not within range.
      * @param ascension: undefined | number | string - the ascension number, or '-'/'+'. defaults to '-'.
      *                   only decides which stats to return at level boundaries (20, 40, 50, 60, 70, 80).
@@ -79,6 +80,31 @@ function calcStatsCharacter(filename) {
             output.specialized += mystats.base.critdmg;
 
         return output;
+    }
+}
+
+function calcStatsWeapon(filename) {
+    const mystats = getStats('weapons', filename);
+    const mycurve = getCurve('weapons');
+    if(mystats === undefined || mycurve === undefined) return undefined;
+    const maxlevel = mystats.promotion[mystats.promotion.length-1].maxlevel;
+    /**
+     * Calculates the stats of a weapon at a specific level and ascension phase.
+     */
+    return function(level, ascension) {
+        level = parseInt(level, 10);
+        if(isNaN(level)) return undefined;
+        if(level > maxlevel || level < 1) return undefined;
+
+       const [phase, promotion] = getPromotionBonus(mystats.promotion, level, ascension);
+        let output = {
+            level: level,
+            ascension: phase,
+            attack: mystats.base.attack * mycurve[level][mystats.curve.attack] + promotion.attack,
+            specialized: mystats.base.specialized * mycurve[level][mystats.curve.specialized]
+        };
+
+        return output; 
     }
 }
 

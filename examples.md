@@ -567,7 +567,8 @@ const genshindb = require('genshin-db');
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
     awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png'
-  }
+  },
+  stats: [Function (anonymous)]
 }
 ```
 
@@ -595,6 +596,40 @@ const genshindb = require('genshin-db');
   'The Stringless',
   'The Viridescent Hunt'
 ]
+```
+
+</details>
+<details>
+<summary>genshindb.weapons('<b>dull blade'</b>)<b>.stats(49)</b></summary>
+
+```js
+{ level: 49, ascension: 2, attack: 127.972232961788, specialized: 0 }
+```
+
+</details>
+<details>
+<summary>genshindb.weapons('<b>sac sword'</b>)<b>.stats(80, '+')</b></summary>
+
+```js
+{
+  level: 80,
+  ascension: 6,
+  attack: 426.5607374033825,
+  specialized: 0.5586652674078749
+}
+```
+
+</details>
+<details>
+<summary>genshindb.weapons('<b>wolf grave'</b>)<b>.stats(90)</b></summary>
+
+```js
+{
+  level: 90,
+  ascension: 6,
+  attack: 608.074622109998,
+  specialized: 0.49615199803817234
+}
 ```
 
 </details>

@@ -266,17 +266,19 @@ function importData(folder, collateFunc, dontwrite) {
 		if(langC === 'EN') {
 			fs.mkdirSync(`./src/data/image`, { recursive: true });
 			fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
-			fs.mkdirSync(`./src/data/stats`, { recursive: true });
-			fs.writeFileSync(`./src/data/stats/${folder}.json`, JSON.stringify(mystats, null, '\t'));
-			//console.log(myimages);
+			if(['characters', 'weapons'].includes(folder)) {
+				fs.mkdirSync(`./src/data/stats`, { recursive: true });
+				fs.writeFileSync(`./src/data/stats/${folder}.json`, JSON.stringify(mystats, null, '\t'));
+			}
 		}
 	});
 }
 
 // getUpperBodyImages();
 // importData('characters', collateCharacter);
-importCurve('characters');
+// importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
+importData('weapons', collateWeapon)
+// importCurve('weapons');
 // importData('artifacts', collateArtifact);
