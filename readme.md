@@ -8,6 +8,11 @@ Flexibly search and get the information of characters, talents, constellations, 
 
 All in-game languages are supported for query and result. (translations available only for characters, talents, constellations, weapons, artifacts currently).
 
+Install with:
+```cmd
+npm install genshin-db
+```
+
 Start with:
 
 ```js
