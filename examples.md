@@ -75,7 +75,8 @@ const genshindb = require('genshin-db');
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519275372324.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519280045054.png'
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519280045054.png',
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/4af4adf192a35db2dd76d9718acc7bc8.png'
   },
   stats: [Function (anonymous)]
 }
@@ -116,7 +117,8 @@ const genshindb = require('genshin-db');
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png'
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40019.png'
   },
   stats: [Function (anonymous)]
 }
@@ -157,7 +159,8 @@ const genshindb = require('genshin-db');
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png'
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40019.png'
   },
   stats: [Function (anonymous)]
 }
@@ -199,7 +202,8 @@ const genshindb = require('genshin-db');
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Tartaglia.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321160453386.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321234137061.png'
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321234137061.png',
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/34ebaeb164a8b447dbe52afaae3e1f63.png'
   },
   stats: [Function (anonymous)]
 }
@@ -241,7 +245,8 @@ const genshindb = require('genshin-db');
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112210305833310.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png'
+    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png',
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40022.png'
   },
   stats: [Function (anonymous)]
 }
@@ -380,6 +385,31 @@ const genshindb = require('genshin-db');
 
 ## genshindb.talents(query[, opts])]
 
+<details>
+<summary>genshindb.talents('<b>names', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Albedo',           'Amber',
+  'Barbara',          'Beidou',
+  'Bennett',          'Chongyun',
+  'Diluc',            'Diona',
+  'Fischl',           'Ganyu',
+  'Hu Tao',           'Jean',
+  'Kaeya',            'Keqing',
+  'Klee',             'Lisa',
+  'Mona',             'Ningguang',
+  'Noelle',           'Qiqi',
+  'Razor',            'Rosaria',
+  'Sucrose',          'Tartaglia',
+  'Traveler (Anemo)', 'Traveler (Geo)',
+  'Venti',            'Xiangling',
+  'Xiao',             'Xingqiu',
+  'Xinyan',           'Zhongli'
+]
+```
+
+</details>
 <details>
 <summary>genshindb.talents('<b>ninguang'</b>)</summary>
 
@@ -539,9 +569,166 @@ const genshindb = require('genshin-db');
 ```
 
 </details>
+<details>
+<summary>genshindb.constellations('<b>traveler geo'</b>)</summary>
+
+```js
+{
+  name: 'Traveler (Geo)',
+  aliases: [ 'Geo Traveler', 'MC Geo', 'Geo MC' ],
+  c1: {
+    name: 'Invincible Stonewall',
+    effect: 'Party members within the radius of **Wake of Earth** have their CRIT Rate increased by 10% and have increased resistance against interruption.'
+  },
+  c2: {
+    name: 'Rockcore Meltdown',
+    effect: 'When the meteorite created by **Starfell Sword** is destroyed, it will also explode, dealing additional AoE Geo DMG equal to the amount of damage dealt by Starfell Sword.'
+  },
+  c3: {
+    name: 'Will of the Rock',
+    effect: 'Increases the Level of **Wake of Earth** by 3.\n' +
+      'Maximum upgrade level is 15.'
+  },
+  c4: {
+    name: 'Reaction Force',
+    effect: 'The shockwave triggered by **Wake of Earth** regenerates 5 Energy for every opponent hit.\n' +
+      'A maximum of 25 Energy can be regenerated in this manner at any one time.'
+  },
+  c5: {
+    name: 'Meteorite Impact',
+    effect: 'Increases the Level of **Starfell Sword** by 3.\n' +
+      'Maximum upgrade level is 15.'
+  },
+  c6: {
+    name: 'Everlasting Boulder',
+    effect: 'The barrier created by **Wake of Earth** lasts 5s longer.\n' +
+      'The meteorite created by **Starfell Sword** lasts 10s longer.'
+  },
+  images: {
+    c1: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_01.png',
+    c2: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_02.png',
+    c3: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_PlayerRock_02.png',
+    c4: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_03.png',
+    c5: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_PlayerRock_01.png',
+    c6: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_04.png'
+  }
+}
+```
+
+</details>
 
 ## genshindb.weapons(query[, opts])]
 
+<details>
+<summary>genshindb.weapons('<b>names', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Alley Hunter',
+  'Amber Bead',
+  "Amos' Bow",
+  "Apprentice's Notes",
+  'Aquila Favonia',
+  "Beginner's Protector",
+  'Blackcliff Agate',
+  'Blackcliff Longsword',
+  'Blackcliff Pole',
+  'Blackcliff Slasher',
+  'Blackcliff Warbow',
+  'Black Tassel',
+  'Bloodtainted Greatsword',
+  'Compound Bow',
+  'Cool Steel',
+  'Crescent Pike',
+  'Dark Iron Sword',
+  'Deathmatch',
+  'Debate Club',
+  "Dragon's Bane",
+  'Dragonspine Spear',
+  'Dull Blade',
+  'Ebony Bow',
+  'Elegy for the End',
+  'Emerald Orb',
+  'Eye of Perception',
+  'Favonius Codex',
+  'Favonius Greatsword',
+  'Favonius Lance',
+  'Favonius Sword',
+  'Favonius Warbow',
+  'Ferrous Shadow',
+  'Festering Desire',
+  'Fillet Blade',
+  'Frostbearer',
+  'Halberd',
+  'Harbinger of Dawn',
+  "Hunter's Bow",
+  'Iron Point',
+  'Iron Sting',
+  "Lion's Roar",
+  'Lithic Blade',
+  'Lithic Spear',
+  'Lost Prayer to the Sacred Winds',
+  'Magic Guide',
+  'Mappa Mare',
+  'Memory of Dust',
+  'Messenger',
+  "Old Merc's Pal",
+  'Otherworldly Story',
+  'Pocket Grimoire',
+  'Primordial Jade Cutter',
+  'Primordial Jade Winged-Spear',
+  'Prototype Amber',
+  'Prototype Archaic',
+  'Prototype Crescent',
+  'Prototype Rancour',
+  'Prototype Starglitter',
+  'Quartz',
+  'Rainslasher',
+  'Raven Bow',
+  'Recurve Bow',
+  'Royal Bow',
+  'Royal Greatsword',
+  'Royal Grimoire',
+  'Royal Longsword',
+  'Royal Spear',
+  'Rust',
+  'Sacrificial Bow',
+  'Sacrificial Fragments',
+  'Sacrificial Greatsword',
+  'Sacrificial Sword',
+  "Seasoned Hunter's Bow",
+  'Serpent Spine',
+  "Sharpshooter's Oath",
+  'Silver Sword',
+  'Skyrider Greatsword',
+  'Skyrider Sword',
+  'Skyward Atlas',
+  'Skyward Blade',
+  'Skyward Harp',
+  'Skyward Pride',
+  'Skyward Spine',
+  'Slingshot',
+  'Snow-Tombed Starsilver',
+  'Solar Pearl',
+  'Staff of Homa',
+  'Summit Shaper',
+  'Sword of Descension',
+  'The Alley Flash',
+  'The Bell',
+  'The Black Sword',
+  'The Flagstaff',
+  'The Flute',
+  'The Stringless',
+  'The Unforged',
+  'The Viridescent Hunt',
+  'The Widsith',
+  'Thrilling Tales of Dragon Slayers',
+  "Traveler's Handy Sword",
+  ... 9 more items
+]
+```
+
+</details>
 <details>
 <summary>genshindb.weapons('<b>lost prayers'</b>)</summary>
 
