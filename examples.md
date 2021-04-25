@@ -67,7 +67,6 @@ const genshindb = require('genshin-db');
     korean: '김선혜'
   },
   talentmaterialtype: 'Diligence',
-  url: 'https://genshin-impact.fandom.com/wiki/Ganyu',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png',
@@ -78,6 +77,7 @@ const genshindb = require('genshin-db');
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519280045054.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/4af4adf192a35db2dd76d9718acc7bc8.png'
   },
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Ganyu' },
   stats: [Function (anonymous)]
 }
 ```
@@ -120,6 +120,7 @@ const genshindb = require('genshin-db');
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40019.png'
   },
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)]
 }
 ```
@@ -162,6 +163,7 @@ const genshindb = require('genshin-db');
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40019.png'
   },
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)]
 }
 ```
@@ -194,7 +196,6 @@ const genshindb = require('genshin-db');
     korean: '남도형'
   },
   talentmaterialtype: 'Freedom',
-  url: 'https://genshin-impact.fandom.com/wiki/Tartaglia',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/f/fb/Character_Childe_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png',
@@ -205,6 +206,7 @@ const genshindb = require('genshin-db');
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321234137061.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/34ebaeb164a8b447dbe52afaae3e1f63.png'
   },
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Tartaglia' },
   stats: [Function (anonymous)]
 }
 ```
@@ -237,7 +239,6 @@ const genshindb = require('genshin-db');
     korean: '정유정'
   },
   talentmaterialtype: 'Ballad',
-  url: 'https://genshin-impact.fandom.com/wiki/Venti',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
@@ -248,6 +249,7 @@ const genshindb = require('genshin-db');
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40022.png'
   },
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Venti' },
   stats: [Function (anonymous)]
 }
 ```
@@ -922,6 +924,9 @@ const genshindb = require('genshin-db');
     sands: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_5.png',
     goblet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_1.png',
     circlet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_3.png'
+  },
+  url: {
+    fandom: 'https://genshin-impact.fandom.com/wiki/Crimson_Witch_of_Flames'
   }
 }
 ```
