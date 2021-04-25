@@ -24,15 +24,16 @@ let folders = [
 	},
 	{
 		function: 'talents',
-		params: ['ninguang', 'klee/.passive3', 'mona/.combatsp'],
+		params: ['names, { matchCategories: true }', 'ninguang', 'klee/.passive3', 'mona/.combatsp'],
 	},
 	{
 		function: 'constellations',
-		params: ['amber', 'childe/.c3'],
+		params: ['amber', 'childe/.c3', 'traveler geo'],
 	},
 	{
 		function: 'weapons',
-		params: ['lost prayers', 'decarabian, { matchCategories: true }',
+		params: ['names, { matchCategories: true }',
+				 'lost prayers', 'decarabian, { matchCategories: true }',
 				 'dull blade/.stats(49)', 'sac sword/.stats(80, \'+\')', 'wolf grave/.stats(90)'],
 	},
 	{
