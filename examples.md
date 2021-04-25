@@ -197,7 +197,7 @@ const genshindb = require('genshin-db');
   },
   talentmaterialtype: 'Freedom',
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/f/fb/Character_Childe_Thumb.png',
+    image: 'https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png',
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Character_Tartaglia_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png',
