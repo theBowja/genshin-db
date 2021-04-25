@@ -4,6 +4,7 @@
 
 const fs = require('fs');
 const language = require('./src/language.js');
+//const genshindb = require('./src/main.js');
 
 
 if(!fs.existsSync('./import/EN')) {
@@ -94,6 +95,29 @@ async function getUpperBodyImages() {
 	}
 	fs.mkdirSync(`./src/data/image`, { recursive: true });
 	fs.writeFileSync(`./src/data/image/characters.json`, JSON.stringify(myimages, null, '\t'));
+}
+
+function updateURLs() {
+	//let folder = 'characters';
+	updateFandomDirect('characters');
+	updateFandomDirect('artifacts');
+	updateFandomDirect('weapons');
+	function updateFandomDirect(folder) {
+		if(fs.existsSync(`./src/data/English/${folder}`)) {
+			let existing = {};
+			try { existing = require(`./src/data/url/${folder}.json`); } catch(e) {};
+			fs.readdirSync(`./src/data/English/${folder}`).forEach(filename => {
+				if(!filename.endsWith('.json')) return;
+				const mycharacter = require(`./src/data/English/${folder}/${filename}`);
+				if(existing[filename] === undefined) existing[filename] = {};
+				existing[filename].fandom = `https://genshin-impact.fandom.com/wiki/${mycharacter.name.replace(/ /g, '_')}`;
+			});
+		 	fs.mkdirSync(`./src/data/url`, { recursive: true });
+		 	fs.writeFileSync(`./src/data/url/${folder}.json`, JSON.stringify(existing, null, '\t'));
+		} else {
+			console.log(`updateURLs: ${folder} folder not found`);
+		}
+	}
 }
 
 function collateCharacter(existing, newdata, lang) {
@@ -274,11 +298,12 @@ function importData(folder, collateFunc, dontwrite) {
 	});
 }
 
-// getUpperBodyImages();
+//getUpperBodyImages();
+updateURLs();
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
+// importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);

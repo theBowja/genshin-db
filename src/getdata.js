@@ -1,10 +1,12 @@
-const alldata = require('./min/data.min.json');
+const alldata  = require('./min/data.min.json');
 const allindex = require('./min/index.min.json');
 const allimage = require('./min/image.min.json');
+const allurl   = require('./min/url.min.json');
 const allstats = require('./min/stats.min.json');
 const allcurve = require('./min/curve.min.json');
 
 const availableimage = ['characters', 'artifacts', 'weapons', 'constellations', 'talents'];
+const availableurl   = ['characters', 'artifacts', 'weapons']
 const availablestats = ['characters', 'weapons'];
 const availablecurve = ['characters', 'weapons'];
 
@@ -18,6 +20,9 @@ function getData(lang, folder, filename) {
         let tmp = alldata[lang][folder][filename];
         if(tmp.images === undefined) {
             tmp.images = getImage(folder, filename);
+        }
+        if(tmp.url === undefined && availableurl.includes(folder)) {
+            tmp.url = getURL(folder, filename);
         }
         if(tmp.stats === undefined && availablestats.includes(folder) && calcStatsMap[folder]) {
             tmp.stats = calcStatsMap[folder](filename);
@@ -35,6 +40,12 @@ function getIndex(lang, folder) {
 function getImage(folder, filename) {
     try {
         return allimage[folder][filename];
+    } catch(e) { return undefined; }
+}
+
+function getURL(folder, filename) {
+    try {
+        return allurl[folder][filename];
     } catch(e) { return undefined; }
 }
 

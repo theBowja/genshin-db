@@ -102,7 +102,7 @@ function makeIndices() {
 
 function combineData() {
 	console.log("combining all data, index, image, stats, curve into one file each");
-	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {};
+	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {};
 	let language = require('./language.js');
 	const design = require('./design.json');
 
@@ -130,6 +130,8 @@ function combineData() {
 			mystats[folder] = require(`./data/stats/${folder}.json`);
 		if(fs.existsSync(`./data/curve/${folder}.json`))
 			mycurve[folder] = require(`./data/curve/${folder}.json`);
+		if(fs.existsSync(`./data/url/${folder}.json`))
+			myurl[folder] = require(`./data/url/${folder}.json`);
 	}
 
 	fs.writeFileSync(`./min/data.min.json`, JSON.stringify(mydata));
@@ -137,4 +139,5 @@ function combineData() {
 	fs.writeFileSync(`./min/image.min.json`, JSON.stringify(myimage));
 	fs.writeFileSync(`./min/stats.min.json`, JSON.stringify(mystats));
 	fs.writeFileSync(`./min/curve.min.json`, JSON.stringify(mycurve));
+	fs.writeFileSync(`./min/url.min.json`, JSON.stringify(myurl));
 }
