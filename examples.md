@@ -25,17 +25,18 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',    'Albedo',    'Amber',
-  'Barbara',   'Beidou',    'Bennett',
-  'Chongyun',  'Diluc',     'Diona',
-  'Fischl',    'Ganyu',     'Hu Tao',
-  'Jean',      'Kaeya',     'Keqing',
-  'Klee',      'Lisa',      'Lumine',
-  'Mona',      'Ningguang', 'Noelle',
-  'Qiqi',      'Razor',     'Rosaria',
-  'Sucrose',   'Tartaglia', 'Venti',
-  'Xiangling', 'Xiao',      'Xingqiu',
-  'Xinyan',    'Zhongli'
+  'Aether',   'Albedo',    'Amber',
+  'Barbara',  'Beidou',    'Bennett',
+  'Chongyun', 'Diluc',     'Diona',
+  'Eula',     'Fischl',    'Ganyu',
+  'Hu Tao',   'Jean',      'Kaeya',
+  'Keqing',   'Klee',      'Lisa',
+  'Lumine',   'Mona',      'Ningguang',
+  'Noelle',   'Qiqi',      'Razor',
+  'Rosaria',  'Sucrose',   'Tartaglia',
+  'Venti',    'Xiangling', 'Xiao',
+  'Xingqiu',  'Xinyan',    'Yanfei',
+  'Zhongli'
 ]
 ```
 
@@ -268,13 +269,10 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Amber',
-  'Bennett',
-  'Diluc',
-  'Hu Tao',
-  'Klee',
-  'Xiangling',
-  'Xinyan'
+  'Amber',  'Bennett',
+  'Diluc',  'Hu Tao',
+  'Klee',   'Xiangling',
+  'Xinyan', 'Yanfei'
 ]
 ```
 
@@ -292,12 +290,13 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Beidou', 'Chongyun',
-  'Ganyu',  'Hu Tao',
-  'Keqing', 'Ningguang',
-  'Qiqi',   'Xiangling',
-  'Xiao',   'Xingqiu',
-  'Xinyan', 'Zhongli'
+  'Beidou',  'Chongyun',
+  'Ganyu',   'Hu Tao',
+  'Keqing',  'Ningguang',
+  'Qiqi',    'Xiangling',
+  'Xiao',    'Xingqiu',
+  'Xinyan',  'Yanfei',
+  'Zhongli'
 ]
 ```
 
@@ -392,22 +391,23 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',           'Amber',
-  'Barbara',          'Beidou',
-  'Bennett',          'Chongyun',
-  'Diluc',            'Diona',
-  'Fischl',           'Ganyu',
-  'Hu Tao',           'Jean',
-  'Kaeya',            'Keqing',
-  'Klee',             'Lisa',
-  'Mona',             'Ningguang',
-  'Noelle',           'Qiqi',
-  'Razor',            'Rosaria',
-  'Sucrose',          'Tartaglia',
-  'Traveler (Anemo)', 'Traveler (Geo)',
-  'Venti',            'Xiangling',
-  'Xiao',             'Xingqiu',
-  'Xinyan',           'Zhongli'
+  'Albedo',         'Amber',
+  'Barbara',        'Beidou',
+  'Bennett',        'Chongyun',
+  'Diluc',          'Diona',
+  'Eula',           'Fischl',
+  'Ganyu',          'Hu Tao',
+  'Jean',           'Kaeya',
+  'Keqing',         'Klee',
+  'Lisa',           'Mona',
+  'Ningguang',      'Noelle',
+  'Qiqi',           'Razor',
+  'Rosaria',        'Sucrose',
+  'Tartaglia',      'Traveler (Anemo)',
+  'Traveler (Geo)', 'Venti',
+  'Xiangling',      'Xiao',
+  'Xingqiu',        'Xinyan',
+  'Yanfei',         'Zhongli'
 ]
 ```
 
@@ -712,6 +712,7 @@ const genshindb = require('genshin-db');
   'Slingshot',
   'Snow-Tombed Starsilver',
   'Solar Pearl',
+  'Song of Broken Pines',
   'Staff of Homa',
   'Summit Shaper',
   'Sword of Descension',
@@ -725,8 +726,7 @@ const genshindb = require('genshin-db');
   'The Viridescent Hunt',
   'The Widsith',
   'Thrilling Tales of Dragon Slayers',
-  "Traveler's Handy Sword",
-  ... 9 more items
+  ... 10 more items
 ]
 ```
 
@@ -889,45 +889,43 @@ const genshindb = require('genshin-db');
 
 ```js
 {
-  name: 'Crimson Witch of Flames',
+  name: 'Pale Flame',
   rarity: [ '4', '5' ],
-  '2pc': 'Pyro DMG Bonus +15%',
-  '4pc': 'Increases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks.',
+  '2pc': 'Physical DMG is increased by 25%.',
+  '4pc': 'When an Elemental Skill hits an opponent, ATK is increased by 9% for 7s. This effect stacks up to 2 times and can be triggered once every 0.3s. Once 2 stacks are reached, the 2-set effect is increased by 100%.',
   flower: {
-    name: "Witch's Flower of Blaze",
+    name: 'Stainless Bloom',
     relictype: 'Flower of Life',
-    description: 'A flower touched by the witch who once dreamt of burning away all the demons in the world. The anonymous flames affectionately caress the hands of those who touch it.'
+    description: 'A hard, blue artificial flower. Its petals shall never wither, nor shall its colors fade.'
   },
   plume: {
-    name: "Witch's Ever-Burning Plume",
+    name: "Wise Doctor's Pinion",
     relictype: 'Plume of Death',
-    description: 'A bird feather touched by the witch who once dreamt of burning away all the demons in the world. Its eternal flame burns hot.'
+    description: 'An ominous pinion with edges of unsurpassed keenness. Perhaps it represents an unnaturally uninhibited nature.'
   },
   sands: {
-    name: "Witch's End Time",
+    name: 'Moment of Cessation',
     relictype: 'Sands of Eon',
-    description: 'A timepiece worn by the witch who dreamt of burning away all the demons in the world. The years the witch dedicated to the flames flow within.'
+    description: 'A pocket watch with a cover that cannot be opened. Yet it ticks and tocks away, following the inexorable flow of time.'
   },
   goblet: {
-    name: "Witch's Heart Flames",
+    name: 'Surpassing Cup',
     relictype: 'Goblet of Eonothem',
-    description: 'A flame-spitting urn left behind by the Crimson Witch of Flames, who once dreamt of burning away all the demons in the world. The fire in the urn burns eternally, as did its former master.'
+    description: 'An intricately-made cup. Its appearance betrays nothing of its age to an observer.'
   },
   circlet: {
-    name: "Witch's Scorching Hat",
+    name: 'Mocking Mask',
     relictype: 'Circlet of Logos',
-    description: 'A hat once worn by the witch who dreamt of burning away all of the demons in the world. The large brim blocked her sight.'
+    description: "A mask that covers the face, hiding one's expression from others."
   },
   images: {
-    flower: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_4.png',
-    plume: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_2.png',
-    sands: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_5.png',
-    goblet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_1.png',
-    circlet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15006_3.png'
+    flower: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_4.png',
+    plume: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_2.png',
+    sands: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_5.png',
+    goblet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_1.png',
+    circlet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_3.png'
   },
-  url: {
-    fandom: 'https://genshin-impact.fandom.com/wiki/Crimson_Witch_of_Flames'
-  }
+  url: undefined
 }
 ```
 
@@ -946,7 +944,9 @@ const genshindb = require('genshin-db');
   'Lavawalker',
   'Maiden Beloved',
   'Noblesse Oblige',
+  'Pale Flame',
   'Retracing Bolide',
+  'Tenacity of the Millelith',
   'Thundering Fury',
   'Thundersoother',
   'Viridescent Venerer',
