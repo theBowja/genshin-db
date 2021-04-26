@@ -299,7 +299,7 @@ function importData(folder, collateFunc, dontwrite) {
 }
 
 //getUpperBodyImages();
-updateURLs();
+// updateURLs();
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
