@@ -29,7 +29,8 @@ function clearObject(obj) {
 	    if (obj.hasOwnProperty(key)) delete obj[key];
 }
 
-function makeFileName(str) { return str.toLowerCase().replace(/[^a-z]/g,''); }
+function normalizeStr(str) { return str.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+function makeFileName(str) { return normalizeStr(str).toLowerCase().replace(/[^a-z]/g,''); }
 
 const bodyToGender = {
 	'BOY': 'MALE',
@@ -102,6 +103,7 @@ function updateURLs() {
 	updateFandomDirect('characters');
 	updateFandomDirect('artifacts');
 	updateFandomDirect('weapons');
+	updateFandomDirect('foods');
 	function updateFandomDirect(folder) {
 		if(fs.existsSync(`./src/data/English/${folder}`)) {
 			let existing = {};
@@ -246,6 +248,18 @@ function collateArtifact(existing, newdata) {
 	})
 }
 
+function collateFood(existing, newdata) {
+	clearObject(existing);
+	const copyover = ['name', 'rarity', 'foodtype', 'foodfilter', 'foodcategory',
+	                  'effect', 'description', 'suspicious', 'normal', 'delicious',
+	                  'basedish', 'character', 'ingredients'];
+	for(let prop of copyover) {
+		// console.log(newdata[prop]);
+		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+	}
+	// console.log(newdata);
+}
+
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
@@ -298,8 +312,7 @@ function importData(folder, collateFunc, dontwrite) {
 	});
 }
 
-//getUpperBodyImages();
-// updateURLs();
+
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
@@ -307,3 +320,6 @@ function importData(folder, collateFunc, dontwrite) {
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
+importData('foods', collateFood);
+// getUpperBodyImages();
+updateURLs();
