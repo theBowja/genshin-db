@@ -14,7 +14,7 @@ const genshindb = require('genshin-db');
 - [genshindb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
 - [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
-- [genshindb.recipes(query[, opts])](#genshindbrecipesquery-opts)
+- [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
@@ -925,7 +925,7 @@ const genshindb = require('genshin-db');
     goblet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_1.png',
     circlet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_3.png'
   },
-  url: undefined
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Pale_Flame' }
 }
 ```
 
@@ -964,116 +964,118 @@ const genshindb = require('genshin-db');
 
 </details>
 
-## genshindb.recipes(query[, opts])]
+## genshindb.foods(query[, opts])]
 
 <details>
-<summary>genshindb.recipes('<b>temptation'</b>)</summary>
+<summary>genshindb.foods('<b>temptation'</b>)</summary>
 
 ```js
 {
   name: "Adeptus' Temptation",
-  rarity: '5',
-  foodrecipetype: 'Warrior',
-  effect: "Increases all party members' ATK by 260-372 and CRIT Rate by 8-12% for 300s.",
-  description: 'A complex, famous type of Liyue cuisine, in which specially selected ingredients are submerged and slowly bowled in soup stock. The recipe scribbled from memory alone was enough to urge the adepti to once again return to the world of men.',
-  buffs: [ 'ATK', 'CRIT Rate %' ],
-  images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Item_Adeptus%27_Temptation.png'
+  rarity: 5,
+  foodtype: 'NORMAL',
+  foodfilter: 'ATK-Boosting Dish',
+  foodcategory: 'Atk_Add',
+  effect: "Increases all party members' ATK by 260–372 and CRIT Rate by 8–12% for 300s.\n" +
+    'In Co-Op Mode, this effect only applies to your own character(s).',
+  description: 'A complex, famous type of Liyue cuisine, in which specially selected ingredients are submerged and slowly boiled in soup stock. The recipe scribbled from memory alone was enough to urge the adepti to once again return to the world of men.',
+  suspicious: {
+    effect: "Increases all party members' ATK by 260 and CRIT Rate by 8% for 300s. In Co-Op Mode, this effect only applies to your own character(s).",
+    description: "A complex, famous type of Liyue cuisine. Without having mastered the art of simmering, the resulting stew-like dish has a salty, fishy taste. But, just considering the costly ingredients will be enough to keep you going until the pot's empty."
   },
-  ingredients: [ 'Ham x4', 'Crab x3', 'Shrimp Meat x3', 'Matsutake x3' ],
-  source: `Chest at the Adeptus' Abode above Qingyun Peak, Liyue after completing "3 Divine Birds" mini quest.`
+  normal: {
+    effect: "Increases all party members' ATK by 316 and CRIT Rate by 10% for 300s. In Co-Op Mode, this effect only applies to your own character(s).",
+    description: 'A complex, famous type of Liyue cuisine, in which specially selected ingredients are submerged and slowly boiled in soup stock. The recipe scribbled from memory alone was enough to urge the adepti to once again return to the world of men.'
+  },
+  delicious: {
+    effect: "Increases all party members' ATK by 372 and CRIT Rate by 12% for 300s. In Co-Op Mode, this effect only applies to your own character(s).",
+    description: "A complex, famous type of Liyue cuisine. This dish is a rare and exquisite mix of both land and sea, combining countless delicious delicacies in one flavor-filled pot. Each mouthful is a moment to remember — it's even irresistible enough to entice the adepti down from their celestial abode."
+  },
+  ingredients: [
+    { name: 'Ham', count: 4 },
+    { name: 'Crab', count: 3 },
+    { name: 'Shrimp Meat', count: 3 },
+    { name: 'Matsutake', count: 3 }
+  ],
+  images: {},
+  url: {
+    fandom: "https://genshin-impact.fandom.com/wiki/Adeptus'_Temptation"
+  }
 }
 ```
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>4', { matchCategories: true }</b>)</summary>
-
-```js
-[ 'Golden Crab', 'Jade Parcels', 'Moon Pie', 'Tianshu Meat' ]
-```
-
-</details>
-<details>
-<summary>genshindb.recipes('<b>warrior', { matchCategories: true }</b>)</summary>
+<summary>genshindb.foods('<b>4', { matchCategories: true }</b>)</summary>
 
 ```js
 [
-  "Adeptus' Temptation",
-  "Adventurer's Breakfast Sandwich",
-  'Almond Tofu',
-  'Cold Cut Platter',
-  'Come and Get It',
-  'Der Weisheit Letzter Schluss (Life)',
-  'Die Heilige Sinfonie',
-  'Fried Radish Balls',
+  'Golden Crab',
+  'Golden Fried Chicken',
   'Jade Parcels',
-  'Jueyun Chili Chicken',
-  'Jueyun Guoba',
-  'No Tomorrow',
-  '"Once Upon a Time in Mondstadt"',
-  `"Pile 'Em Up"`,
-  'Qingce Stir Fry',
-  "Rockin' Riffin' Chicken!",
-  'Satisfying Salad',
-  'Sautéed Matsutake',
+  'Stormcrest Pie',
   'Tianshu Meat'
 ]
 ```
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>cabbage', { matchCategories: true }</b>)</summary>
+<summary>genshindb.foods('<b>def', { matchCategories: true }</b>)</summary>
 
 ```js
 [
-  'Crab, Ham & Veggie Bake',
-  'Der Weisheit Letzter Schluss (Life)',
-  'Invigorating Pizza',
-  'Jade Parcels',
-  'Mushroom Pizza',
-  'Northern Smoked Chicken',
+  'A Prize Catch',
+  'Fish-Flavored Toast',
+  'Golden Crab',
+  'Jewelry Soup',
+  'Lotus Flower Crisp',
+  'Stormcrest Pie',
+  'Woodland Dream',
+  'Triple-Layered Consommé'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.foods('<b>cabbage', { matchCategories: true }</b>)</summary>
+
+```js
+[
   'Nutritious Meal (V.593)',
-  'Qingce Stir Fry',
-  'Satisfying Salad'
-]
-```
-
-</details>
-<details>
-<summary>genshindb.recipes('<b>atK', { matchCategories: true }</b>)</summary>
-
-```js
-[
-  "Adeptus' Temptation",
-  "Adventurer's Breakfast Sandwich",
-  'Almond Tofu',
-  'Fried Radish Balls',
+  'Golden Chicken Burger',
   'Jade Parcels',
+  'Invigorating Pizza',
+  'Northern Smoked Chicken',
   'Qingce Stir Fry',
-  'Sautéed Matsutake'
+  'Der Weisheit Letzter Schluss (Life)'
 ]
 ```
 
 </details>
 <details>
-<summary>genshindb.recipes('<b>diluc', { matchAliases: true }</b>)</summary>
+<summary>genshindb.foods('<b>diluc', { matchAliases: true }</b>)</summary>
 
 ```js
 {
   name: '"Once Upon a Time in Mondstadt"',
-  rarity: '3',
-  foodrecipetype: 'Warrior',
-  effect: "Increases all party members' CRIT Rate by 20% and CRIT DMG by 20% for 300s.",
+  rarity: 3,
+  foodtype: 'SPECIALTY',
+  foodfilter: 'ATK-Boosting Dish',
+  foodcategory: 'Atk_CritRate',
+  effect: "Increases all party members' CRIT Rate by 20% and CRIT DMG by 20% for 300s. In Co-Op Mode, this effect only applies to your own character(s)",
   description: "Diluc's specialty. Feast your eyes and then your stomach upon this delicacy as the soft ribs melt in your mouth. Who knew Diluc was able to cook this well?",
-  buffs: [ 'CRIT Rate %', 'CRIT DMG %' ],
-  images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Item_%22Once_Upon_a_Time_in_Mondstadt%22.png'
-  },
-  ingredients: [ 'Raw Meat x3', 'Potato x3', 'Small Lamp Grass x1', 'Cheese x1' ],
-  source: `Diluc's specialty dish from cooking "Pile 'Em Up".`,
-  base: `"Pile 'Em Up"`,
-  cook: 'Diluc'
+  basedish: `"Pile 'Em Up"`,
+  character: 'Diluc',
+  ingredients: [
+    { name: 'Raw Meat', count: 3 },
+    { name: 'Potato', count: 3 },
+    { name: 'Small Lamp Grass', count: 1 },
+    { name: 'Cheese', count: 1 }
+  ],
+  images: {},
+  url: {
+    fandom: 'https://genshin-impact.fandom.com/wiki/"Once_Upon_a_Time_in_Mondstadt"'
+  }
 }
 ```
 

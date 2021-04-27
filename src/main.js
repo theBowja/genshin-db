@@ -149,10 +149,10 @@ genshin.rarity = function(query, opts) {
     return searchFolder(query, 'rarity', opts);
 }
 
-genshin.recipes = function(query, opts) {
-    return searchFolder(query, 'recipes', opts)
+genshin.foods = function(query, opts) {
+    return searchFolder(query, 'foods', opts)
 }
-genshin.recipe = genshin.recipes;
+genshin.food = genshin.foods;
 
 // genshin.reactions = function(query, opts={}) {
 //     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));

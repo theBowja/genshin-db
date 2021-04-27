@@ -6,7 +6,7 @@
 
 Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes.
 
-All in-game languages are supported for query and result. (translations available only for characters, talents, constellations, weapons, artifacts currently).
+All in-game languages are supported for query and result. (translations available only for characters, talents, constellations, weapons, artifacts, foods currently).
 
 Install with:
 ```cmd
@@ -38,7 +38,7 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [genshindb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
 - [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
-- [genshindb.recipes(query[, opts])](#genshindbrecipesquery-opts)
+- [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
@@ -142,7 +142,7 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbartifactsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.recipes(query[, opts])
+## genshindb.foods(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -154,7 +154,7 @@ Possible inputs for query parameter are:
 - all characters with specialty dishes
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbrecipesquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbfoodsquery-opts) to see example inputs and outputs for this function.
 
 ## genshindb.elements(query[, opts])
 

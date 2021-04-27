@@ -49,9 +49,9 @@ let folders = [
 		params: ['flame', '5, { matchCategories: true }', 'noblesse/[\'2pc\']'],
 	},
 	{
-		function: 'recipes',
-		params: ['temptation', '4, { matchCategories: true }', 'warrior, { matchCategories: true }',
-		         'cabbage, { matchCategories: true }', 'atK, { matchCategories: true }', 'diluc, { matchAliases: true }'],
+		function: 'foods',
+		params: ['temptation', '4, { matchCategories: true }', 'def, { matchCategories: true }',
+		         'cabbage, { matchCategories: true }', 'diluc, { matchAliases: true }'],
 	},
 	{
 		function: 'elements',
