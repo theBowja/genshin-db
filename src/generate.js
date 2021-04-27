@@ -61,7 +61,7 @@ function makeIndices() {
 
 						for(let val of values) {
 							if(categories[prop] === undefined) console.log("missing category: "+folder+ ","+prop);
-							if(prop === "ingredients") val = val.replace(/ x\d$/i, '');
+							if(prop === "ingredients") val = val.name;// val = val.replace(/ x\d$/i, '');
 							else if(prop === "birthday") {
 								let [month, day] = data.birthdaymmdd.split('/');
 								let birthday = new Date(Date.UTC(2000, month-1, day));
