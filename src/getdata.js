@@ -6,7 +6,7 @@ const allstats = require('./min/stats.min.json');
 const allcurve = require('./min/curve.min.json');
 
 const availableimage = ['characters', 'artifacts', 'weapons', 'constellations', 'talents'];
-const availableurl   = ['characters', 'artifacts', 'weapons']
+const availableurl   = ['characters', 'artifacts', 'weapons', 'foods'];
 const availablestats = ['characters', 'weapons'];
 const availablecurve = ['characters', 'weapons'];
 
