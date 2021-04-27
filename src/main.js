@@ -105,38 +105,45 @@ function searchFolder(query, folder, opts) {
     return undefined;
 }
 
-
 genshin.characters = function(query, opts) {
     return searchFolder(query, 'characters', opts);
 }
+genshin.character = genshin.characters;
 
 genshin.talents = function(query, opts) {
     return searchFolder(query, 'talents', opts);
 }
+genshin.talent = genshin.talents;
 
 genshin.weapons = function(query, opts) {
     return searchFolder(query, 'weapons', opts);
 }
+genshin.weapon = genshin.weapons;
 
 genshin.weaponmaterialtypes = function(query, opts) {
     return searchFolder(query, 'weaponmaterialtypes', opts);
 }
+genshin.weaponmaterialtype = genshin.weaponmaterialtypes;
 
 genshin.talentmaterialtypes = function(query, opts) {
     return searchFolder(query, 'talentmaterialtypes', opts);
 }
+genshin.talentmaterialtype = genshin.talentmaterialtypes;
 
 genshin.elements = function(query, opts) {
     return searchFolder(query, 'elements', opts);
 }
+genshin.element = genshin.elements;
 
 genshin.constellations = function(query, opts) {
     return searchFolder(query, 'constellations', opts);
 }
+genshin.constellation = genshin.constellations;
 
 genshin.artifacts = function(query, opts) {
     return searchFolder(query, 'artifacts', opts);
 }
+genshin.artifact = genshin.artifacts;
 
 genshin.rarity = function(query, opts) {
     return searchFolder(query, 'rarity', opts);
@@ -145,6 +152,7 @@ genshin.rarity = function(query, opts) {
 genshin.recipes = function(query, opts) {
     return searchFolder(query, 'recipes', opts)
 }
+genshin.recipe = genshin.recipes;
 
 // genshin.reactions = function(query, opts={}) {
 //     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
