@@ -319,7 +319,7 @@ const genshindb = require('genshin-db');
 <summary>genshindb.characters('<b>ballad', { matchCategories: true }</b>)</summary>
 
 ```js
-[ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Venti' ]
+[ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Rosaria', 'Venti' ]
 ```
 
 </details>
