@@ -1013,6 +1013,7 @@ const genshindb = require('genshin-db');
   'Golden Crab',
   'Golden Fried Chicken',
   'Jade Parcels',
+  'Moon Pie',
   'Stormcrest Pie',
   'Tianshu Meat'
 ]
@@ -1025,13 +1026,17 @@ const genshindb = require('genshin-db');
 ```js
 [
   'A Prize Catch',
+  'Calla Lily Seafood Soup',
+  "Fisherman's Toast",
   'Fish-Flavored Toast',
   'Golden Crab',
   'Jewelry Soup',
   'Lotus Flower Crisp',
+  'Moon Pie',
   'Stormcrest Pie',
-  'Woodland Dream',
-  'Triple-Layered Consommé'
+  'Sunshine Sprat',
+  'Triple-Layered Consommé',
+  'Woodland Dream'
 ]
 ```
 
@@ -1041,13 +1046,16 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Nutritious Meal (V.593)',
+  'Crab, Ham & Veggie Bake',
+  'Der Weisheit Letzter Schluss (Life)',
   'Golden Chicken Burger',
-  'Jade Parcels',
   'Invigorating Pizza',
+  'Jade Parcels',
+  'Mushroom Pizza',
   'Northern Smoked Chicken',
+  'Nutritious Meal (V.593)',
   'Qingce Stir Fry',
-  'Der Weisheit Letzter Schluss (Life)'
+  'Satisfying Salad'
 ]
 ```
 
