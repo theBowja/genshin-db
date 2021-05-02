@@ -96,7 +96,7 @@ function searchFolder(query, folder, opts) {
             let tmparr = (query === 'names') ? Object.values(reslangindex.names) : langindex.categories[query];
             // change the array of filenames into an array of data objects or data names. ignores undefined results if any
             return tmparr.reduce((accum, filename) => {
-                let res = opts.verbose ? getData(opts.resultLanguage, folder, filename) : reslangindex.namemap[filename];
+                let res = opts.verboseCategories ? getData(opts.resultLanguage, folder, filename) : reslangindex.namemap[filename];
                 if(res !== undefined) accum.push(res);
                 return accum;
             }, []);
