@@ -164,11 +164,13 @@ Input the name of an element
 
 dunno about this
 
+## Contributing
+
+The best way to contribute to this project is to write up feature requests in GitHub issues. Also join my discord show me what you've built so I know this is useful to people :)
+
 ---------------------------
 
-"Robust" makes the description sound cooler doesn't it?
-
-My ambition for this library is to include most of the relevant genshin data so it can be downloaded and used easily with any project. Currently the data is manually entered. I would appreciate it a lot if someone could provide me datamined files of the live version.
+My ambition for this library is to include most of the relevant genshin data so it can be downloaded and used easily with any project. Currently the data is manually entered. Credits to GenshinData repo for the datamined files.
 
 ## Webpack
 
