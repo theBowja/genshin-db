@@ -268,6 +268,17 @@ function importCurve(folder) {
 	} catch(e) {}
 }
 
+function applyPatch(folder, data, langC, filename) {
+	if(folder === 'talents' && langC === 'DE' && filename === 'zhongli') {
+		const wrong = "Ein riesiger Meteorit fällt aus dem Himmel und fügt den Gegnern im Wirkungsbereich des Einschlags enormen Geo-Schaden sowie Versteinert zu.\n\n**Versteingert**\nGegner im Zustand Versteinert können sich nicht bewegen.";
+		const correct = "Ein riesiger Meteorit fällt aus dem Himmel und fügt den Gegnern im Wirkungsbereich des Einschlags enormen Geo-Schaden sowie Versteinert zu.\n\n**Versteinert**\nGegner im Zustand Versteinert können sich nicht bewegen.";
+		if(data.combat3.info === wrong) {
+			data.combat3.info = correct;
+			console.log('patched DE zhongli talent.combat3');
+		}
+	}
+}
+
 function importData(folder, collateFunc, dontwrite) {
 	language.languageCodes.forEach(langC => {
 		if(dontwrite && langC !== 'EN') return; 
@@ -293,6 +304,7 @@ function importData(folder, collateFunc, dontwrite) {
 				Object.assign(myimages[`${filename}.json`], newdata.images);
 				mystats[`${filename}.json`] = newdata.stats
 			}
+			applyPatch(folder, existing, langC, filename);
 
 			//if(langC === 'CHT') console.log(existing);
 
@@ -316,10 +328,10 @@ function importData(folder, collateFunc, dontwrite) {
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
-importData('foods', collateFood);
+// importData('foods', collateFood);
 // getUpperBodyImages();
-updateURLs();
+// updateURLs();
