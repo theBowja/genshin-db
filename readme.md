@@ -170,7 +170,9 @@ The best way to contribute to this project is to write up feature requests in Gi
 
 ---------------------------
 
-My ambition for this library is to include most of the relevant genshin data so it can be downloaded and used easily with any project. Currently the data is manually entered. Credits to GenshinData repo for the datamined files.
+My ambition for this library is to include most of the relevant genshin data so it can be downloaded and used easily with any project. Credits to GenshinData repo for the datamined files.
+
+If you just want to take the data and use it yourself, you are welcome to do so. All the data is in `src/data`. Minified data is generated in `src/min`. You can use the index in `src/data/index` to map between the data name and file name. The stats for character and weapon levels are calculated in `src/getdata.js`. If you need any help feel free to write an issue or jump into my discord and talk to me directly. I would appreciate it a lot if people showed me the projects they've done with the help of the parsed data.
 
 ## Webpack
 
