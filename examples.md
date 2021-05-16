@@ -429,7 +429,91 @@ const genshindb = require('genshin-db');
       'If Ningguang has any Star Jades, unleashing a Charged Attack will cause the Star Jades to be fired at the enemy as well, dealing additional DMG.\n' +
       '\n' +
       '**Plunging Attack**\n' +
-      'Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Geo DMG upon impact with the ground.'
+      'Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Geo DMG upon impact with the ground.',
+    attributes: {
+      labels: [
+        'Normal Attack DMG|{param1:F1P}',
+        'Charged Attack DMG|{param2:P}',
+        'DMG per Star Jade|{param3:F1P}',
+        'Charged Attack Stamina Cost|{param4:F1}',
+        'Plunge DMG|{param5:F1P}',
+        'Low/High Plunge DMG|{param6:P}/{param7:P}'
+      ],
+      parameters: {
+        param1: [
+          0.2800000011920929,
+          0.3009999990463257,
+          0.32199999690055847,
+          0.3499999940395355,
+          0.3709999918937683,
+          0.3919999897480011,
+          0.41999998688697815,
+          0.4480000138282776,
+          0.47600001096725464,
+          0.5040000081062317,
+          0.5331199765205383,
+          0.5712000131607056,
+          0.609279990196228,
+          0.6473600268363953,
+          0.6854400038719177
+        ],
+        param2: [
+          1.7408000230789185,  1.871359944343567,
+           2.001919984817505, 2.1760001182556152,
+          2.3065600395202637,  2.437119960784912,
+          2.6112000942230225, 2.7852799892425537,
+           2.959359884262085, 3.1334400177001953,
+          3.3144829273223877,  3.551232099533081,
+          3.7879810333251953,  4.024730205535889,
+           4.261477947235107
+        ],
+        param3: [
+          0.4959999918937683, 0.5332000255584717,
+          0.5703999996185303, 0.6200000047683716,
+          0.6571999788284302, 0.6944000124931335,
+          0.7440000176429749, 0.7936000227928162,
+          0.8432000279426575,  0.892799973487854,
+           0.944383978843689, 1.0118399858474731,
+          1.0792959928512573, 1.1467519998550415,
+          1.2142080068588257
+        ],
+        param4: [
+          50, 50, 50, 50, 50, 50,
+          50, 50, 50, 50, 50, 50,
+          50, 50, 50
+        ],
+        param5: [
+          0.5682880282402039, 0.6145439743995667,
+          0.6607999801635742, 0.7268800139427185,
+          0.7731360197067261, 0.8259999752044678,
+           0.898688018321991, 0.9713760018348694,
+          1.0440640449523926,   1.12336003780365,
+          1.2026560306549072, 1.2819520235061646,
+          1.3612480163574219, 1.4405440092086792,
+          1.5198400020599365
+        ],
+        param6: [
+           1.136335015296936,  1.228827953338623,
+          1.3213200569152832, 1.4534519910812378,
+          1.5459439754486084, 1.6516499519348145,
+          1.7969950437545776, 1.9423400163650513,
+           2.087686061859131,  2.246243953704834,
+           2.404802083969116, 2.5633609294891357,
+           2.721919059753418, 2.8804779052734375,
+          3.0390360355377197
+        ],
+        param7: [
+          1.4193439483642578,  1.534872055053711,
+          1.6504000425338745,  1.815440058708191,
+          1.9309680461883545,  2.062999963760376,
+            2.24454402923584, 2.4260880947113037,
+          2.6076319217681885,    2.8056800365448,
+           3.003727912902832, 3.2017760276794434,
+          3.3998239040374756,  3.597872018814087,
+           3.795919895172119
+        ]
+      }
+    }
   },
   combat2: {
     name: 'Jade Screen',
@@ -440,13 +524,100 @@ const genshindb = require('genshin-db');
       "·Endurance scales based on Ningguang's Max HP.\n" +
       '\n' +
       'Jade Screen is considered a Geo Construct and can be used to block certain attacks, but cannot be climbed. Only one Jade Screen may exist at any one time.',
-    description: 'The canvas of stars is written upon this jade screen.'
+    description: 'The canvas of stars is written upon this jade screen.',
+    attributes: {
+      labels: [
+        'Inherited HP|{param3:F1P}',
+        'Skill DMG|{param2:P}',
+        'CD|{param4:F1}s'
+      ],
+      parameters: {
+        param1: [
+          -0.49900001287460327,
+          -0.4690000116825104,
+          -0.4390000104904175,
+          -0.4000000059604645,
+          -0.3700000047683716,
+          -0.3400000035762787,
+          -0.3009999990463257,
+          -0.2619999945163727,
+          -0.22300000488758087,
+          -0.18400000035762787,
+          -0.14499999582767487,
+          -0.10599999874830246,
+          -0.06700000166893005,
+          -0.02800000086426735,
+          0.010999999940395355
+        ],
+        param2: [
+           2.303999900817871,  2.476799964904785,
+           2.649600028991699,  2.880000114440918,
+           3.052799940109253,  3.225600004196167,
+          3.4560000896453857, 3.6863999366760254,
+           3.916800022125244,  4.147200107574463,
+           4.377600193023682,  4.607999801635742,
+           4.895999908447266,  5.184000015258789,
+          5.4720001220703125
+        ],
+        param3: [
+          0.5009999871253967,  0.531000018119812,
+          0.5609999895095825, 0.6000000238418579,
+          0.6299999952316284, 0.6600000262260437,
+          0.6990000009536743, 0.7379999756813049,
+          0.7770000100135803, 0.8159999847412109,
+          0.8550000190734863, 0.8939999938011169,
+          0.9330000281333923,  0.972000002861023,
+          1.0110000371932983
+        ],
+        param4: [
+          12, 12, 12, 12, 12, 12,
+          12, 12, 12, 12, 12, 12,
+          12, 12, 12
+        ]
+      }
+    }
   },
   combat3: {
     name: 'Starshatter',
     info: 'Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her opponents that deal massive Geo DMG.\n' +
       'If Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time.',
-    description: 'Stars shatter. Silence falls.'
+    description: 'Stars shatter. Silence falls.',
+    attributes: {
+      labels: [
+        'DMG Per Gem|{param1:F1P}',
+        'CD|{param2:F1}s',
+        'Energy Cost|{param3:I}'
+      ],
+      parameters: {
+        param1: [
+          0.8695999979972839,
+          0.9348199963569641,
+          1.000040054321289,
+          1.0870000123977661,
+          1.1522200107574463,
+          1.2174400091171265,
+          1.3043999671936035,
+          1.3913600444793701,
+          1.4783200025558472,
+          1.5652799606323242,
+          1.6522400379180908,
+          1.7391999959945679,
+          1.8479000329971313,
+          1.9565999507904053,
+          2.0652999877929688
+        ],
+        param2: [
+          12, 12, 12, 12, 12, 12,
+          12, 12, 12, 12, 12, 12,
+          12, 12, 12
+        ],
+        param3: [
+          40, 40, 40, 40, 40, 40,
+          40, 40, 40, 40, 40, 40,
+          40, 40, 40
+        ]
+      }
+    }
   },
   passive1: {
     name: 'Backup Plan',
@@ -485,6 +656,207 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
+<summary>genshindb.talents('<b>mona'</b>)<b>.combat1</b></summary>
+
+```js
+{
+  name: 'Normal Attack: Ripple of Fate',
+  info: '**Normal Attack**\n' +
+    'Perform up to 4 water splash attacks that deal Hydro DMG.\n' +
+    '\n' +
+    '**Charged Attack**\n' +
+    'Consumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time.\n' +
+    '\n' +
+    '**Plunging Attack**\n' +
+    'Gathering the might of Hydro, Mona plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground.',
+  attributes: {
+    labels: [
+      '1-Hit DMG|{param1:F1P}',
+      '2-Hit DMG|{param2:F1P}',
+      '3-Hit DMG|{param3:F1P}',
+      '4-Hit DMG|{param4:F1P}',
+      'Charged Attack DMG|{param5:P}',
+      'Charged Attack Stamina Cost|{param6:F1}',
+      'Plunge DMG|{param7:F1P}',
+      'Low/High Plunge DMG|{param8:P}/{param9:P}'
+    ],
+    parameters: {
+      param1: [
+        0.37599998712539673,
+        0.4041999876499176,
+        0.4323999881744385,
+        0.4699999988079071,
+        0.498199999332428,
+        0.5264000296592712,
+        0.5640000104904175,
+        0.6015999913215637,
+        0.63919997215271,
+        0.676800012588501,
+        0.7143999934196472,
+        0.7519999742507935,
+        0.7990000247955322,
+        0.8460000157356262,
+        0.8930000066757202
+      ],
+      param2: [
+        0.36000001430511475,
+        0.3869999945163727,
+        0.414000004529953,
+        0.44999998807907104,
+        0.47699999809265137,
+        0.5040000081062317,
+        0.5400000214576721,
+        0.5759999752044678,
+        0.6119999885559082,
+        0.6480000019073486,
+        0.6840000152587891,
+        0.7200000286102295,
+        0.7649999856948853,
+        0.8100000023841858,
+        0.8550000190734863
+      ],
+      param3: [
+        0.4480000138282776,
+        0.48159998655319214,
+        0.5152000188827515,
+        0.5600000023841858,
+        0.5935999751091003,
+        0.6272000074386597,
+        0.671999990940094,
+        0.7167999744415283,
+        0.7616000175476074,
+        0.8064000010490417,
+        0.8511999845504761,
+        0.8960000276565552,
+        0.9520000219345093,
+        1.0080000162124634,
+        1.0640000104904175
+      ],
+      param4: [
+        0.5616000294685364, 0.6037200093269348,
+        0.6458399891853333, 0.7020000219345093,
+        0.7441200017929077, 0.7862399816513062,
+        0.8424000144004822, 0.8985599875450134,
+        0.9547200202941895, 1.0108799934387207,
+         1.067039966583252, 1.1232000589370728,
+        1.1934000253677368, 1.2635999917984009,
+         1.333799958229065
+      ],
+      param5: [
+        1.4972000122070312, 1.6094900369644165,
+        1.7217799425125122,  1.871500015258789,
+        1.9837900400161743, 2.0960800647735596,
+         2.245800018310547,  2.395519971847534,
+        2.5452399253845215,  2.694960117340088,
+        2.8506689071655273,  3.054287910461426,
+         3.257906913757324, 3.4615259170532227,
+        3.6651461124420166
+      ],
+      param6: [
+        50, 50, 50, 50, 50, 50,
+        50, 50, 50, 50, 50, 50,
+        50, 50, 50
+      ],
+      param7: [
+        0.5682880282402039, 0.6145439743995667,
+        0.6607999801635742, 0.7268800139427185,
+        0.7731360197067261, 0.8259999752044678,
+         0.898688018321991, 0.9713760018348694,
+        1.0440640449523926,   1.12336003780365,
+        1.2026560306549072, 1.2819520235061646,
+        1.3612480163574219, 1.4405440092086792,
+        1.5198400020599365
+      ],
+      param8: [
+         1.136335015296936,  1.228827953338623,
+        1.3213200569152832, 1.4534519910812378,
+        1.5459439754486084, 1.6516499519348145,
+        1.7969950437545776, 1.9423400163650513,
+         2.087686061859131,  2.246243953704834,
+         2.404802083969116, 2.5633609294891357,
+         2.721919059753418, 2.8804779052734375,
+        3.0390360355377197
+      ],
+      param9: [
+        1.4193439483642578,  1.534872055053711,
+        1.6504000425338745,  1.815440058708191,
+        1.9309680461883545,  2.062999963760376,
+          2.24454402923584, 2.4260880947113037,
+        2.6076319217681885,    2.8056800365448,
+         3.003727912902832, 3.2017760276794434,
+        3.3998239040374756,  3.597872018814087,
+         3.795919895172119
+      ]
+    }
+  }
+}
+```
+
+</details>
+<details>
+<summary>genshindb.talents('<b>mona'</b>)<b>.combat2</b></summary>
+
+```js
+{
+  name: 'Mirror Reflection of Doom',
+  info: 'Creates an illusory Phantom of Fate from coalesced waterspouts.\n' +
+    '\n' +
+    'The **Phantom** has the following special properties:\n' +
+    '·Continuously taunts nearby opponents, attracting their fire.\n' +
+    '·Continuously deals Hydro DMG to nearby opponents.\n' +
+    '·When its duration expires, the Phantom explodes, dealing AoE Hydro DMG.\n' +
+    '\n' +
+    '**Hold**\n' +
+    'Utilizes water currents to move backwards swiftly before conjuring a Phantom.\n' +
+    '\n' +
+    'Only one Phantom created by Mirror Reflection of Doom can exist at any time.',
+  description: 'Skilled astrologers have always dreamed of using a phantom facsimile of themselves to ward off imminent ill fate, but Mona must be the first to make such a mockery of it in all of Teyvat.',
+  attributes: {
+    labels: [
+      'DoT|{param1:F1P}',
+      'Explosion DMG|{param2:P}',
+      'CD|{param5:F1}s'
+    ],
+    parameters: {
+      param1: [
+        0.3199999928474426,
+        0.3440000116825104,
+        0.36800000071525574,
+        0.4000000059604645,
+        0.42399999499320984,
+        0.4480000138282776,
+        0.47999998927116394,
+        0.5120000243186951,
+        0.5440000295639038,
+        0.5759999752044678,
+        0.6079999804496765,
+        0.6399999856948853,
+        0.6800000071525574,
+        0.7200000286102295,
+        0.7599999904632568
+      ],
+      param2: [
+        1.3279999494552612, 1.4276000261306763,
+        1.5271999835968018,  1.659999966621399,
+         1.759600043296814, 1.8592000007629395,
+        1.9919999837875366,  2.124799966812134,
+        2.2576000690460205,  2.390399932861328,
+         2.523200035095215, 2.6559998989105225,
+         2.822000026702881,   2.98799991607666,
+        3.1540000438690186
+      ],
+      param5: [
+        12, 12, 12, 12, 12, 12,
+        12, 12, 12, 12, 12, 12,
+        12, 12, 12
+      ]
+    }
+  }
+}
+```
+
+</details>
+<details>
 <summary>genshindb.talents('<b>mona'</b>)<b>.combatsp</b></summary>
 
 ```js
@@ -495,7 +867,104 @@ const genshindb = require('genshin-db');
     '\n' +
     'When under the effect of Illusory Torrent, Mona can move at high speed on water.\n' +
     'Applies the Wet status to nearby opponents when she reappears.',
-  description: "This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyway..."
+  description: "This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyway...",
+  attributes: {
+    labels: [
+      'Activation Stamina Consumption|{param1:F2}',
+      'Stamina Drain|{param2:F2}/s'
+    ],
+    parameters: { param1: [ 10 ], param2: [ 15 ] }
+  }
+}
+```
+
+</details>
+<details>
+<summary>genshindb.talents('<b>mona'</b>)<b>.combat3</b></summary>
+
+```js
+{
+  name: 'Stellaris Phantasm',
+  info: 'Mona summons the sparkling waves and creates a reflection of the starry sky, applying the Illusory Bubble status to opponents in a large AoE.\n' +
+    '\n' +
+    '**Illusory Bubble**\n' +
+    'Traps opponents inside a pocket of destiny and also makes them Wet. Renders weaker opponents immobile.\n' +
+    'When an opponent affected by Illusory Bubble sustains DMG, it has the following effects:\n' +
+    '·Applies an Omen to the opponent, which gives a DMG Bonus, also increasing the DMG of the attack that causes it.\n' +
+    '·Removes the Illusory Bubble, dealing Hydro DMG in the process.\n' +
+    '\n' +
+    '**Omen**\n' +
+    'During its duration, increases DMG taken by opponents.',
+  description: 'It was from the time that gods first traced the lights in the heavens with their eyes that the notion of "fate" was born.',
+  attributes: {
+    labels: [
+      'Illusory Bubble Duration|{param1:F1}s',
+      'Illusory Bubble Explosion DMG|{param2:P}',
+      'DMG Bonus|{param10:P}',
+      'Omen Duration|{param4:F1}s',
+      'CD|{param5:F1}s',
+      'Energy Cost|{param6:I}'
+    ],
+    parameters: {
+      param1: [
+        8, 8, 8, 8, 8, 8,
+        8, 8, 8, 8, 8, 8,
+        8, 8, 8
+      ],
+      param2: [
+         4.423999786376953, 4.755799770355225,
+         5.087600231170654,  5.53000020980835,
+         5.861800193786621, 6.193600177764893,
+         6.636000156402588, 7.078400135040283,
+        7.5208001136779785, 7.963200092315674,
+         8.405599594116211, 8.847999572753906,
+         9.401000022888184, 9.954000473022461,
+        10.506999969482422
+      ],
+      param3: [
+        -0.41999998688697815,
+        -0.4399999976158142,
+        -0.46000000834465027,
+        -0.47999998927116394,
+        -0.5,
+        -0.5199999809265137,
+        -0.5400000214576721,
+        -0.5600000023841858,
+        -0.5799999833106995,
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.6000000238418579
+      ],
+      param4: [
+        4, 4, 4, 4.5, 4.5, 4.5,
+        5, 5, 5,   5,   5,   5,
+        5, 5, 5
+      ],
+      param5: [
+        15, 15, 15, 15, 15, 15,
+        15, 15, 15, 15, 15, 15,
+        15, 15, 15
+      ],
+      param6: [
+        60, 60, 60, 60, 60, 60,
+        60, 60, 60, 60, 60, 60,
+        60, 60, 60
+      ],
+      param10: [
+        0.41999998688697815,  0.4399999976158142,
+        0.46000000834465027, 0.47999998927116394,
+                        0.5,  0.5199999809265137,
+         0.5400000214576721,  0.5600000023841858,
+         0.5799999833106995,  0.6000000238418579,
+         0.6000000238418579,  0.6000000238418579,
+         0.6000000238418579,  0.6000000238418579,
+         0.6000000238418579
+      ]
+    }
+  }
 }
 ```
 
