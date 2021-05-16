@@ -187,8 +187,11 @@ function collateTalent(existing, newdata) {
 		existing[prop].name = newdata[prop].name;
 		existing[prop].info = newdata[prop].info;
 		if(newdata[prop].description !== undefined) existing[prop].description = newdata[prop].description;
-		// if(newdata[prop].labels !== undefined) existing[prop].labels = newdata[prop].labels;
-		// if(newdata[prop].parameters !== undefined) existing[prop].parameters = newdata[prop].parameters;
+		if(newdata[prop].labels !== undefined) {
+			existing[prop].attributes = {};
+			existing[prop].attributes.labels = newdata[prop].labels;
+			existing[prop].attributes.parameters = newdata[prop].parameters;
+		}
 	}
 	addTalent('combat1');
 	addTalent('combat2');

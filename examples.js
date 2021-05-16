@@ -24,7 +24,8 @@ let folders = [
 	},
 	{
 		function: 'talents',
-		params: ['names, { matchCategories: true }', 'ninguang', 'klee/.passive3', 'mona/.combatsp'],
+		params: ['names, { matchCategories: true }', 'ninguang', 'klee/.passive3', 'mona/.combat1',
+				 'mona/.combat2', 'mona/.combatsp', 'mona/.combat3'],
 	},
 	{
 		function: 'constellations',
