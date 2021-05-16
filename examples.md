@@ -751,11 +751,13 @@ const genshindb = require('genshin-db');
   r4: [ '14%' ],
   r5: [ '16%' ],
   weaponmaterialtype: 'Dandelion Gladiator',
-  url: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
     awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png'
+  },
+  url: {
+    fandom: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
   },
   stats: [Function (anonymous)]
 }
