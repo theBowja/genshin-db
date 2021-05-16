@@ -420,7 +420,6 @@ const genshindb = require('genshin-db');
   name: 'Ningguang',
   combat1: {
     name: 'Normal Attack: Sparkling Scatter',
-    image: '',
     info: '**Normal Attack**\n' +
       'Shoots gems that deal Geo DMG.\n' +
       'Upon hit, this grants Ningguang 1 Star Jade.\n' +
@@ -430,12 +429,10 @@ const genshindb = require('genshin-db');
       'If Ningguang has any Star Jades, unleashing a Charged Attack will cause the Star Jades to be fired at the enemy as well, dealing additional DMG.\n' +
       '\n' +
       '**Plunging Attack**\n' +
-      'Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Geo DMG upon impact with the ground.',
-    attributes: ''
+      'Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Geo DMG upon impact with the ground.'
   },
   combat2: {
     name: 'Jade Screen',
-    image: '',
     info: 'Ningguang creates a Jade Screen out of gold, obsidian and her great opulence, dealing AoE Geo DMG.\n' +
       '\n' +
       '**Jade Screen**\n' +
@@ -443,30 +440,24 @@ const genshindb = require('genshin-db');
       "·Endurance scales based on Ningguang's Max HP.\n" +
       '\n' +
       'Jade Screen is considered a Geo Construct and can be used to block certain attacks, but cannot be climbed. Only one Jade Screen may exist at any one time.',
-    description: 'The canvas of stars is written upon this jade screen.',
-    attributes: ''
+    description: 'The canvas of stars is written upon this jade screen.'
   },
   combat3: {
     name: 'Starshatter',
-    image: '',
     info: 'Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her opponents that deal massive Geo DMG.\n' +
       'If Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time.',
-    description: 'Stars shatter. Silence falls.',
-    attributes: ''
+    description: 'Stars shatter. Silence falls.'
   },
   passive1: {
     name: 'Backup Plan',
-    image: '',
     info: 'When Ningguang is in possession of Star Jades, her Charged Attack does not consume Stamina.'
   },
   passive2: {
     name: 'Strategic Reserve',
-    image: '',
     info: 'A character that passes through the **Jade Screen** will gain a 12% Geo DMG Bonus for 10s.'
   },
   passive3: {
     name: 'Trove of Marvelous Treasures',
-    image: '',
     info: 'Displays the location of nearby **ore veins** (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on the mini-map.'
   },
   images: {
@@ -488,7 +479,6 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'All Of My Treasures!',
-  image: '',
   info: 'Displays the location of nearby **resources unique to Mondstadt** on the mini-map.'
 }
 ```
@@ -500,14 +490,12 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Illusory Torrent',
-  image: '',
   info: '**Alternate Sprint**\n' +
     "Mona cloaks herself within the water's flow, consuming Stamina to move rapidly.\n" +
     '\n' +
     'When under the effect of Illusory Torrent, Mona can move at high speed on water.\n' +
     'Applies the Wet status to nearby opponents when she reappears.',
-  description: "This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyway...",
-  attributes: ''
+  description: "This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyway..."
 }
 ```
 

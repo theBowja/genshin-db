@@ -177,6 +177,8 @@ function collateConstellation(existing, newdata) {
 }
 
 function collateTalent(existing, newdata) {
+	newdata.aliases = existing.aliases;
+	clearObject(existing);
 	existing.name = newdata.name;
 	if(newdata.aliases) existing.aliases = newdata.aliases;
 	function addTalent(prop) {
@@ -185,7 +187,6 @@ function collateTalent(existing, newdata) {
 		existing[prop].name = newdata[prop].name;
 		existing[prop].info = newdata[prop].info;
 		if(newdata[prop].description !== undefined) existing[prop].description = newdata[prop].description;
-		if(existing[prop].image === undefined) existing[prop].image = '';
 	}
 	addTalent('combat1');
 	addTalent('combat2');
