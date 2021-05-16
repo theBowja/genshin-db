@@ -202,7 +202,6 @@ function collateWeapon(existing, inputdata) {
 	if(inputdata.awakenicon) inputdata.images.awakenicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
 
 	inputdata.weaponmaterialtype = existing.weaponmaterialtype;
-	inputdata.url = existing.url;
 
 	clearObject(existing);
 	existing.name = inputdata.name;
@@ -226,7 +225,6 @@ function collateWeapon(existing, inputdata) {
 	existing.r5 = inputdata.r5 || [];
 
 	existing.weaponmaterialtype = inputdata.weaponmaterialtype || '';
-	existing.url = inputdata.url || '';
 }
 
 function collateArtifact(existing, newdata) {
