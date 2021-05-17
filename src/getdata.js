@@ -13,7 +13,7 @@ const availablecurve = ['characters', 'weapons'];
 const calcStatsMap = {
     'characters': calcStatsCharacter,
     'weapons': calcStatsWeapon
-}
+};
 
 function getData(lang, folder, filename) {
     try {
@@ -26,6 +26,9 @@ function getData(lang, folder, filename) {
         }
         if(tmp.stats === undefined && availablestats.includes(folder) && calcStatsMap[folder]) {
             tmp.stats = calcStatsMap[folder](filename);
+        }
+        if(folder === 'talents' && tmp.combat1.parameters === undefined) {
+            setAttributesTalent(tmp, filename);
         }
         return tmp;
     } catch(e) { return undefined; }
@@ -136,6 +139,14 @@ function getPromotionBonus(promotions, level, ascension) {
         }
     }
     return [0, promotions[0]];
+}
+
+function setAttributesTalent(data, filename) {
+    const myparams = getStats('talents', filename);
+    for(const prop of ['combat1', 'combat2', 'combatsp', 'combat3']) {
+        if(myparams[prop] === undefined) continue;
+        data[prop].attributes.parameters = myparams[prop];
+    }
 }
 
 
