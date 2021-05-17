@@ -190,7 +190,6 @@ function collateTalent(existing, newdata) {
 		if(newdata[prop].labels !== undefined) {
 			existing[prop].attributes = {};
 			existing[prop].attributes.labels = newdata[prop].labels;
-			existing[prop].attributes.parameters = newdata[prop].parameters;
 		}
 	}
 	addTalent('combat1');
@@ -306,7 +305,7 @@ function importData(folder, collateFunc, dontwrite) {
 			if(langC === 'EN') { 
 				if(myimages[`${filename}.json`] === undefined) myimages[`${filename}.json`] = {};
 				Object.assign(myimages[`${filename}.json`], newdata.images);
-				mystats[`${filename}.json`] = newdata.stats
+				mystats[`${filename}.json`] = newdata.stats || newdata.parameters;
 			}
 			applyPatch(folder, existing, langC, filename);
 
@@ -320,7 +319,7 @@ function importData(folder, collateFunc, dontwrite) {
 		if(langC === 'EN') {
 			fs.mkdirSync(`./src/data/image`, { recursive: true });
 			fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
-			if(['characters', 'weapons'].includes(folder)) {
+			if(['characters', 'weapons', 'talents'].includes(folder)) {
 				fs.mkdirSync(`./src/data/stats`, { recursive: true });
 				fs.writeFileSync(`./src/data/stats/${folder}.json`, JSON.stringify(mystats, null, '\t'));
 			}
@@ -329,13 +328,13 @@ function importData(folder, collateFunc, dontwrite) {
 }
 
 
-importData('characters', collateCharacter);
-importCurve('characters');
-importData('constellations', collateConstellation);
+// importData('characters', collateCharacter);
+// importCurve('characters');
+// importData('constellations', collateConstellation);
 importData('talents', collateTalent);
-importData('weapons', collateWeapon)
-importCurve('weapons');
-importData('artifacts', collateArtifact);
-importData('foods', collateFood);
-getUpperBodyImages();
-updateURLs();
+// importData('weapons', collateWeapon)
+// importCurve('weapons');
+// importData('artifacts', collateArtifact);
+// importData('foods', collateFood);
+// getUpperBodyImages();
+// updateURLs();
