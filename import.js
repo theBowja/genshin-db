@@ -261,6 +261,7 @@ function collateFood(existing, newdata) {
 		// console.log(newdata[prop]);
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
 	}
+	existing.rarity = existing.rarity+"";
 	// console.log(newdata);
 }
 
@@ -336,6 +337,6 @@ function importData(folder, collateFunc, dontwrite) {
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
-// importData('foods', collateFood);
-getUpperBodyImages();
-updateURLs();
+importData('foods', collateFood);
+// getUpperBodyImages();
+// updateURLs();
