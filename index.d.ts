@@ -8,6 +8,19 @@ export interface QueryFunction<Result> {
     (query: string, opts?: QueryOptions<true>): Result | Result[];
 }
 
+export interface StatFunction {
+    (level: number, ascension?: number | '+' | '-'): StatResult;
+}
+
+export interface StatResult {
+    level: number;
+    ascension: number;
+    hp?: number;
+    attack?: number;
+    defense?: number;
+    specialized?: number;
+}
+
 export interface QueryOptions<Verbose extends boolean> {
     matchAliases?: boolean;
     matchCategories?: boolean;
@@ -32,12 +45,15 @@ export enum Languages {
     Vietnamese         = "Vietnamese"
 }
 
+//export const setOptions: (options: QueryOptions): void 
+//export const getOptions: ():
+
 export const artifacts: QueryFunction<ArtifactNormal | ArtifactHeadSingle>;
 export const characters: QueryFunction<Character>;
 export const constellations: QueryFunction<Constellation>;
 export const elements: QueryFunction<Element>;
 export const rarity: QueryFunction<Rarity>;
-export const recipes: QueryFunction<Recipe>;
+export const foods: QueryFunction<FoodNormal | FoodSpecialty>;
 export const talentmaterialtypes: QueryFunction<TalentMaterial>;
 export const talents: QueryFunction<Talent>;
 export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
@@ -79,7 +95,7 @@ export interface ArtifactHeadSingle {
     };
     url: {
         fandom: string;
-    }
+    };
 }
 
 export interface ArtifactDetail {
@@ -115,12 +131,12 @@ export interface Character {
         japanese: string;
         korean: string;
     };
-    talentmaterialtype: string; // empty string if I forget to update this
+    talentmaterialtype: string; // untranslated. empty string if I forget to update this
     images: {
-        image?: string; // wikia
-        card?: string; // wikia
+        image?: string;    // wikia
+        card?: string;     // wikia
         portrait?: string; // wikia
-        icon: string; // hoyolab
+        icon: string;     // hoyolab
         sideicon: string; // hoyolab
         cover1?: string; // official site
         cover2?: string; // official site
@@ -129,7 +145,7 @@ export interface Character {
     url: {
         fandom: string;
     };
-    stats: function;
+    stats: StatFunction;
 }
 
 //#endregion
@@ -145,12 +161,24 @@ export interface Constellation {
     c4: ConstellationDetail;
     c5: ConstellationDetail;
     c6: ConstellationDetail;
+    images: {
+        c1: string;
+        c2: string;
+        c3: string;
+        c4: string;
+        c5: string;
+        c6: string;
+    };
 }
 
 export interface ConstellationDetail {
     name: string;
     effect: string;
 }
+
+//#endregion
+
+//#region Misc
 
 export interface Element {
     name: string;
@@ -169,43 +197,110 @@ export interface Rarity {
     image: string;
 }
 
-export interface Recipe {
+//#endregion
+
+//#region Food
+
+export interface FoodNormal {
     name: string;
     rarity: string;
-    foodrecipetype: string;
+    foodtype: 'NORMAL';
+    foodfilter: string;
+    foodcategory: string;
     effect: string;
     description: string;
-    buffs: string[];
-    images: {
-        image: string;
+
+    suspicious: {
+        effect: string;
+        description: string;
     };
-    ingredients: string[];
-    source: string;
-    base?: string;
-    cook?: string;
+    normal: {
+        effect: string;
+        description: string;
+    };
+    delicious: {
+        effect: string;
+        description: string;
+    };
+
+    ingredients: FoodIngredient[];
+    images?: {};
+    url: {
+        fandom: string;
+    };
 }
+
+export interface FoodSpecialty {
+    name: string;
+    rarity: string;
+    foodtype: 'SPECIALTY';
+    foodfilter: string;
+    foodcategory: string;
+    effect: string;
+    description: string;
+    
+    basedish: string;
+    character: string;
+
+    ingredients: FoodIngredient[];
+    images?: {};
+    url: {
+        fandom: string;
+    };
+}
+
+export interface FoodIngredient {
+    name: string;
+    count: number;
+}
+
+//#endregion
+
+//#region Talent
 
 export interface Talent {
     name: string;
     aliases?: string[];
-    combat1?: TalentDetail;
-    combat2?: TalentDetail;
-    combat3?: TalentDetail;
-    combatsp?: TalentDetail;
-    passive1?: TalentDetail;
-    passive2?: TalentDetail;
-    passive3?: TalentDetail;
+    combat1: CombatTalentDetail;
+    combat2: CombatTalentDetail;
+    combatsp?: CombatTalentDetail; // for mona
+    combat3: CombatTalentDetail;
+    passive1: PassiveTalentDetail;
+    passive2: PassiveTalentDetail;
+    passive3?: PassiveTalentDetail; // player character doesn't have a third talent
+    images?: { // images for talents aren't available yet
+        combat1: string;
+        combat2: string;
+        combatsp: string;
+        combat3: string;
+        passive1: string;
+        passive2: string;
+        passive3: string;
+    };
 }
 
-export interface TalentDetail {
+export interface CombatTalentDetail {
     name: string;
-    image: string;
     info: string;
-    description?: string;
-    attributes?: string;
+    description: string;
+    attributes: {
+        labels: string[];
+        parameters: {
+            [key: string]: number[];
+        };
+    };
 }
 
-export interface TalentMaterial {
+export interface PassiveTalentDetail {
+    name: string;
+    info: string;
+}
+
+//#endregion
+
+//#region TalentMaterial
+
+export interface TalentMaterial { // English only
     name: string;
     "2starname": string;
     "3starname": string;
@@ -216,14 +311,16 @@ export interface TalentMaterial {
     domainofmastery: string;
 }
 
+//#endregion
+
+//#region Weapon
+
 export interface Weapon {
     name: string;
+    description: string;
     weapontype: string;
     rarity: string;
-    images: {
-        image: string;
-    };
-    baseatk: string;
+    baseatk: number;
     substat: string;
     subvalue: string;
     effectname: string;
@@ -233,19 +330,32 @@ export interface Weapon {
     r3: string[];
     r4: string[];
     r5: string[];
-    description: string;
-    weaponmaterialtype: string;
-    url: string;
+    weaponmaterialtype: string; // English only
+    images: {
+        image?: string; // wikia
+        icon: string; // hoyolab
+        awakenicon: string; // hoyolab
+    };
+    url: {
+        fandom: string;
+    };
+    stats: StatFunction;
 }
 
-export interface WeaponMaterial {
+//#endregion
+
+//#region WeaponMaterial
+
+export interface WeaponMaterial { // English only
     name: string;
     "2starname": string;
     "3starname": string;
     "4starname": string;
     "5starname": string;
     day: string[];
-    localtion: string;
+    location: string;
     region: string;
     domainofforgery: string;
 }
+
+//#endregion
