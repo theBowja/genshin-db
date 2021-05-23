@@ -153,7 +153,7 @@ const genshindb = require('genshin-db');
     japanese: '石見舞菜香',
     korean: '김연우'
   },
-  talentmaterialtype: '',
+  talentmaterialtype: 'Libertad',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
