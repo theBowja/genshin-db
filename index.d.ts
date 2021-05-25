@@ -1,12 +1,40 @@
-// TODO: handle exact match and filter keywords
-export interface QueryFunction<Result> {
-    // retrieve list of names
-    (query: "names", opts?: QueryOptions<false>): string[];
-    (query: "names", opts?: QueryOptions<true>): Result[];
-    // fuzzy search
-    (query: string, opts?: QueryOptions<false>): Result | string[];
-    (query: string, opts?: QueryOptions<true>): Result | Result[];
+export interface QueryFunction<R> {
+    <Q extends string, O extends QueryOptions = {}>(query: Q, opts?: O):
+        (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
+        (Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined)
 }
+
+/* Logic
+if matchCategories
+  if verboseCategories
+    add R[];
+  else
+    add string[];
+else
+  add never
+
+if "names"
+  if matchCategories
+    add never
+  else
+    add R | undefined;
+else
+  add R | undefined;
+*/
+
+/* Test examples
+characters("names", { matchCategories: true }); // string[]
+characters("names", { matchCategories: true, verboseCategories: true }); // Character[]
+
+characters("names"); // Character | undefined
+characters("names", { matchCategories: false }); // Character | undefined
+characters("foobar"); // Character | undefined
+characters("foobar", { matchCategories: false }); // Character | undefined
+characters("foobar", { verboseCategories: false }); // Character | undefined
+
+characters("foobar", { matchCategories: true }); // Character | string[] | undefined
+characters("foobar", { matchCategories: true, verboseCategories: true }); // Character | Character[] | undefined
+*/
 
 export interface StatFunction {
     (level: number, ascension?: number | '+' | '-'): StatResult;
@@ -21,10 +49,11 @@ export interface StatResult {
     specialized?: number;
 }
 
-export interface QueryOptions<Verbose extends boolean> {
+//<MatchCategories extends boolean | undefined, Verbose extends boolean | undefined>
+export interface QueryOptions {
     matchAliases?: boolean;
     matchCategories?: boolean;
-    verboseCategories?: Verbose;
+    verboseCategories?: boolean;
     queryLanguages?: Languages[];
     resultlanguage?: Languages;
 }
@@ -45,15 +74,16 @@ export enum Languages {
     Vietnamese         = "Vietnamese"
 }
 
+// not easy to figure this out
 //export const setOptions: (options: QueryOptions): void 
 //export const getOptions: ():
 
-export const artifacts: QueryFunction<ArtifactNormal | ArtifactHeadSingle>;
+export const artifacts: QueryFunction<Artifact>;
 export const characters: QueryFunction<Character>;
 export const constellations: QueryFunction<Constellation>;
 export const elements: QueryFunction<Element>;
 export const rarity: QueryFunction<Rarity>;
-export const foods: QueryFunction<FoodNormal | FoodSpecialty>;
+export const foods: QueryFunction<Food>;
 export const talentmaterialtypes: QueryFunction<TalentMaterial>;
 export const talents: QueryFunction<Talent>;
 export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
@@ -61,6 +91,30 @@ export const weapons: QueryFunction<Weapon>;
 
 //#region Artifact
 
+export interface Artifact {
+    name: string;
+    rarity: string[];
+    "1pc"?: string;
+    "2pc"?: string;
+    "4pc"?: string;
+    flower?: ArtifactDetail;
+    plume?: ArtifactDetail;
+    sands?: ArtifactDetail;
+    goblet?: ArtifactDetail;
+    circlet: ArtifactDetail;
+    images: {
+        flower?: string;
+        plume?: string;
+        sands?: string;
+        goblet?: string;
+        circlet: string;
+    };
+    url: {
+        fandom: string;
+    }; 
+}
+
+// UNUSED. FOR REFERENCE ONLY.
 // artifacts with 2pc and 4pc set effects
 export interface ArtifactNormal {
     name: string;
@@ -84,6 +138,7 @@ export interface ArtifactNormal {
     };
 }
 
+// UNUSED. FOR REFERENCE ONLY.
 // circlet artifacts
 export interface ArtifactHeadSingle {
     name: string;
@@ -201,6 +256,38 @@ export interface Rarity {
 
 //#region Food
 
+export interface Food {
+    name: string;
+    rarity: string;
+    foodtype: string; // untranslated
+    foodfilter: string;
+    foodcategory: string; // untranslated
+    effect: string;
+    description: string;
+
+    suspicious?: {
+        effect: string;
+        description: string;
+    };
+    normal?: {
+        effect: string;
+        description: string;
+    };
+    delicious?: {
+        effect: string;
+        description: string;
+    };
+    basedish?: string;
+    character?: string;
+
+    ingredients: FoodIngredient[];
+    images?: {};
+    url: {
+        fandom: string;
+    };
+}
+
+// UNUSED. FOR REFERENCE ONLY.
 export interface FoodNormal {
     name: string;
     rarity: string;
@@ -230,6 +317,7 @@ export interface FoodNormal {
     };
 }
 
+// UNUSED. FOR REFERENCE ONLY.
 export interface FoodSpecialty {
     name: string;
     rarity: string;
