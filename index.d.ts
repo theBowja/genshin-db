@@ -55,7 +55,7 @@ export interface QueryOptions {
     matchCategories?: boolean;
     verboseCategories?: boolean;
     queryLanguages?: Languages[];
-    resultlanguage?: Languages;
+    resultLanguage?: Languages;
 }
 
 export enum Languages {
