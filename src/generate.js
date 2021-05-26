@@ -101,7 +101,7 @@ function makeIndices() {
 }
 
 function combineData() {
-	console.log("combining all data, index, image, stats, curve into one file each");
+	console.log("minifying all data, index, image, stats, curve into one file each");
 	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {};
 	let language = require('./language.js');
 	const design = require('./design.json');

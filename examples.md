@@ -1431,7 +1431,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: "Adeptus' Temptation",
-  rarity: 5,
+  rarity: '5',
   foodtype: 'NORMAL',
   foodfilter: 'ATK-Boosting Dish',
   foodcategory: 'Atk_Add',
@@ -1525,7 +1525,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: '"Once Upon a Time in Mondstadt"',
-  rarity: 3,
+  rarity: '3',
   foodtype: 'SPECIALTY',
   foodfilter: 'ATK-Boosting Dish',
   foodcategory: 'Atk_CritRate',

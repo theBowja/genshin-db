@@ -174,6 +174,28 @@ My ambition for this library is to include most of the relevant genshin data so 
 
 If you just want to take the data and use it yourself, you are welcome to do so. All the data is in `src/data`. Minified data is generated in `src/min`. You can use the index in `src/data/index` to map between the data name and file name. The stats for character and weapon levels are calculated in `src/getdata.js`. If you need any help feel free to write an issue or jump into my discord and talk to me directly. I would appreciate it a lot if people showed me the projects they've done with the help of the parsed data.
 
+## Typescript
+
+I made an index.d.ts file. It probably works.
+
+Here's a bunch of examples for typing:
+
+```
+characters("names", { matchCategories: true }); // string[]
+characters("names", { matchCategories: true, verboseCategories: true }); // Character[]
+
+characters("names"); // Character | undefined
+characters("names", { matchCategories: false }); // Character | undefined
+characters("foobar"); // Character | undefined
+characters("foobar", { matchCategories: false }); // Character | undefined
+characters("foobar", { verboseCategories: true }); // Character | undefined
+
+characters("foobar", { matchCategories: true }); // Character | string[] | undefined
+characters("foobar", { matchCategories: true, verboseCategories: true }); // Character | Character[] | undefined
+```
+
+Please write up an issue if something doesn't work.
+
 ## Webpack
 
 If you want to build a webpack just do `npm run build` and it'll appear in the **dist/genshindb.js**. Then you can call all the query functions from above using genshindb as the variable. Or you can change the options in **webpack.config.js** to better fit how you want to use it.

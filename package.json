@@ -3,10 +3,11 @@
   "version": "3.4.1",
   "description": "Genshin Impact v1.5 JSON database. Search and get results in all in-game languages! Sources from the fandom wiki and GenshinData repo.",
   "main": "./src/main.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generateindex": "cd src && node ./generate.js",
-    "assemble": "node ./examples.js && cd src && node ./generate.js",
+    "assemble": "cd src && node ./generate.js && cd ../ && node ./examples.js",
     "build": "webpack"
   },
   "keywords": [

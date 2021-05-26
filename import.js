@@ -123,6 +123,7 @@ function updateURLs() {
 }
 
 function collateCharacter(existing, newdata, lang) {
+	newdata.aliases = existing.aliases;
 	newdata.images = {};
 	if(newdata.icon) newdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
 	if(newdata.sideicon) newdata.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
@@ -260,6 +261,7 @@ function collateFood(existing, newdata) {
 		// console.log(newdata[prop]);
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
 	}
+	existing.rarity = existing.rarity+"";
 	// console.log(newdata);
 }
 
@@ -331,10 +333,10 @@ function importData(folder, collateFunc, dontwrite) {
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
-importData('talents', collateTalent);
+// importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
-// importData('foods', collateFood);
+importData('foods', collateFood);
 // getUpperBodyImages();
 // updateURLs();

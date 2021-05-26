@@ -18,7 +18,7 @@ const calcStatsMap = {
 function getData(lang, folder, filename) {
     try {
         let tmp = alldata[lang][folder][filename];
-        if(tmp.images === undefined) {
+        if(tmp.images === undefined && availableimage.includes(folder)) {
             tmp.images = getImage(folder, filename);
         }
         if(tmp.url === undefined && availableurl.includes(folder)) {
