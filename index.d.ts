@@ -1,5 +1,5 @@
 export interface QueryFunction<R> {
-    <Q extends string, O extends QueryOptions = {}>(query: Q, opts?: O):
+    <Q extends string, O extends QueryOptions>(query: Q, opts?: O):
         (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
         (Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined)
 }
