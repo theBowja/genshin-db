@@ -1297,8 +1297,7 @@ const genshindb = require('genshin-db');
   day: [ 'Wednesday', 'Saturday', 'Sunday' ],
   location: 'Wolvendom',
   region: 'Mondstadt',
-  domainofforgery: 'Cecilia Garden',
-  images: undefined
+  domainofforgery: 'Cecilia Garden'
 }
 ```
 
@@ -1326,8 +1325,7 @@ const genshindb = require('genshin-db');
   day: [ 'Wednesday', 'Saturday', 'Sunday' ],
   location: 'Springvale',
   region: 'Mondstadt',
-  domainofmastery: 'Forsaken Rift',
-  images: undefined
+  domainofmastery: 'Forsaken Rift'
 }
 ```
 
@@ -1456,7 +1454,6 @@ const genshindb = require('genshin-db');
     { name: 'Shrimp Meat', count: 3 },
     { name: 'Matsutake', count: 3 }
   ],
-  images: {},
   url: {
     fandom: "https://genshin-impact.fandom.com/wiki/Adeptus'_Temptation"
   }
@@ -1539,7 +1536,6 @@ const genshindb = require('genshin-db');
     { name: 'Small Lamp Grass', count: 1 },
     { name: 'Cheese', count: 1 }
   ],
-  images: {},
   url: {
     fandom: 'https://genshin-impact.fandom.com/wiki/"Once_Upon_a_Time_in_Mondstadt"'
   }
