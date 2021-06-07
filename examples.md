@@ -25,18 +25,18 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',   'Albedo',    'Amber',
-  'Barbara',  'Beidou',    'Bennett',
-  'Chongyun', 'Diluc',     'Diona',
-  'Eula',     'Fischl',    'Ganyu',
-  'Hu Tao',   'Jean',      'Kaeya',
-  'Keqing',   'Klee',      'Lisa',
-  'Lumine',   'Mona',      'Ningguang',
-  'Noelle',   'Qiqi',      'Razor',
-  'Rosaria',  'Sucrose',   'Tartaglia',
-  'Venti',    'Xiangling', 'Xiao',
-  'Xingqiu',  'Xinyan',    'Yanfei',
-  'Zhongli'
+  'Aether',    'Albedo',  'Amber',
+  'Barbara',   'Beidou',  'Bennett',
+  'Chongyun',  'Diluc',   'Diona',
+  'Eula',      'Fischl',  'Ganyu',
+  'Hu Tao',    'Jean',    'Kaedehara Kazuha',
+  'Kaeya',     'Keqing',  'Klee',
+  'Lisa',      'Lumine',  'Mona',
+  'Ningguang', 'Noelle',  'Qiqi',
+  'Razor',     'Rosaria', 'Sucrose',
+  'Tartaglia', 'Venti',   'Xiangling',
+  'Xiao',      'Xingqiu', 'Xinyan',
+  'Yanfei',    'Zhongli'
 ]
 ```
 
@@ -306,10 +306,15 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',  'Albedo',
-  'Bennett', 'Jean',
-  'Kaeya',   'Keqing',
-  'Lumine',  'Qiqi',
+  'Aether',
+  'Albedo',
+  'Bennett',
+  'Jean',
+  'Kaedehara Kazuha',
+  'Kaeya',
+  'Keqing',
+  'Lumine',
+  'Qiqi',
   'Xingqiu'
 ]
 ```
@@ -391,22 +396,17 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',         'Amber',
-  'Barbara',        'Beidou',
-  'Bennett',        'Chongyun',
-  'Diluc',          'Diona',
-  'Eula',           'Fischl',
-  'Ganyu',          'Hu Tao',
-  'Jean',           'Kaeya',
-  'Keqing',         'Klee',
-  'Lisa',           'Mona',
-  'Ningguang',      'Noelle',
-  'Qiqi',           'Razor',
-  'Rosaria',        'Sucrose',
-  'Tartaglia',      'Traveler (Anemo)',
-  'Traveler (Geo)', 'Venti',
-  'Xiangling',      'Xiao',
-  'Xingqiu',        'Xinyan',
+  'Albedo',         'Amber',            'Barbara',
+  'Beidou',         'Bennett',          'Chongyun',
+  'Diluc',          'Diona',            'Eula',
+  'Fischl',         'Ganyu',            'Hu Tao',
+  'Jean',           'Kaedehara Kazuha', 'Kaeya',
+  'Keqing',         'Klee',             'Lisa',
+  'Mona',           'Ningguang',        'Noelle',
+  'Qiqi',           'Razor',            'Rosaria',
+  'Sucrose',        'Tartaglia',        'Traveler (Anemo)',
+  'Traveler (Geo)', 'Venti',            'Xiangling',
+  'Xiao',           'Xingqiu',          'Xinyan',
   'Yanfei',         'Zhongli'
 ]
 ```
@@ -1102,6 +1102,7 @@ const genshindb = require('genshin-db');
   'Dark Iron Sword',
   'Deathmatch',
   'Debate Club',
+  'Dodoco Tales',
   "Dragon's Bane",
   'Dragonspine Spear',
   'Dull Blade',
@@ -1117,6 +1118,7 @@ const genshindb = require('genshin-db');
   'Ferrous Shadow',
   'Festering Desire',
   'Fillet Blade',
+  'Freedom-Sworn',
   'Frostbearer',
   'Halberd',
   'Harbinger of Dawn',
@@ -1131,6 +1133,7 @@ const genshindb = require('genshin-db');
   'Mappa Mare',
   'Memory of Dust',
   'Messenger',
+  'Mitternachts Waltz',
   "Old Merc's Pal",
   'Otherworldly Story',
   'Pocket Grimoire',
@@ -1180,10 +1183,7 @@ const genshindb = require('genshin-db');
   'The Flute',
   'The Stringless',
   'The Unforged',
-  'The Viridescent Hunt',
-  'The Widsith',
-  'Thrilling Tales of Dragon Slayers',
-  ... 10 more items
+  ... 13 more items
 ]
 ```
 
@@ -1466,6 +1466,7 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Chicken Tofu Pudding',
   'Golden Crab',
   'Golden Fried Chicken',
   'Jade Parcels',
@@ -1489,6 +1490,7 @@ const genshindb = require('genshin-db');
   'Jewelry Soup',
   'Lotus Flower Crisp',
   'Moon Pie',
+  'Stir-Fried Shrimp',
   'Stormcrest Pie',
   'Sunshine Sprat',
   'Triple-Layered Consommé',
