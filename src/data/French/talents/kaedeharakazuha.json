@@ -1,0 +1,60 @@
+{
+	"name": "Kaedehara Kazuha",
+	"combat1": {
+		"name": "Attaque normale : Escrime de Garyuu",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 5 coups d'épée.\n\n**Attaque chargée**\nConsomme de l'endurance pour déclencher deux coups d'épée rapides.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact. Si une attaque plongeante est effectuée pendant « Véhémence divine », elle se transforme en « Attaque plongeante : Contrôle du chaos ».\n\n**Attaque plongeante : Contrôle du chaos**\nLorsqu'une attaque plongeante est déclenchée en utilisant les effets de la compétence élémentaire « Véhémence divine », ses DGT sont convertis en DGT Anémo et un petit tunnel venteux est créé à l'atterrissage à l'aide d'une technique d'épée secrète pour attirer les objets et les ennemis proches.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}",
+				"DGT 5e coup|{param6:F1P}*3",
+				"DGT attaque chargée|{param7:F1P}+{param8:F1P}",
+				"Endurance attaque chargée|{param9:F1} pts",
+				"DGT durant la chute|{param10:F1P}",
+				"DGT chute basse/élevée|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Véhémence divine",
+		"info": "Libère une technique secrète aussi violente qu'une bourrasque déchaînée qui attire les ennemis et les objets vers la position actuelle de Kazuha, avant de projeter les ennemis situés dans la zone, leur infligeant des DGT Anémo et d'élever Kazuha sur un courant de vent impétueux.\nSi Kazuha déclenche une attaque plongeante depuis les airs dans un délai de 10 s après la compétence élémentaire « Véhémence divine », il provoque une attaque plongeante particulièrement puissante connue sous le nom de Contrôle du chaos.\n\n**Appui simple**\nPermet d'utiliser l'aptitude dans les airs.\n\n**Appui long**\nCharge l'aptitude avant de libérer davantage de DGT Anémo sur une zone plus large que lors d'un appui simple.\n\n**Attaque plongeante : Contrôle du chaos**\nLorsqu'une attaque plongeante est déclenchée en utilisant les effets de la compétence élémentaire « Véhémence divine », ses DGT sont convertis en DGT Anémo et un petit tunnel venteux est créé à l'atterrissage à l'aide une technique d'épée secrète pour attirer les objets et les ennemis proches.\nLes dégâts infligés par Contrôle du chaos sont considérés comme étant des DGT d'attaque plongeante.",
+		"description": "« Les vents dans les érables pleurent, pour les dieux et les hommes du passé, comme des montagnes rouges d'automne. »",
+		"attributes": {
+			"labels": [
+				"DGT appui simple|{param1:P}",
+				"TdR appui simple|{param2:F1} s",
+				"DGT appui long|{param3:P}",
+				"TdR appui long|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Coupure de mille feuilles",
+		"info": "Déclenche la technique ultime de Garyuu, une coupure unique semblable à une tempête grondante qui inflige des DGT Anémo de zone.\nLe trajet de la lame laissera derrière lui un champ appelé « Vent d'automne » qui inflige des DGT Anémo de façon intermittente aux ennemis à l'intérieur.\n\n**Absorption élémentaire**\nLe Vent d'automne absorbe les éléments Hydro, Pyro, Cryo et Électro avec lesquels il entre en contact ; ceux-ci lui confèrent leurs attributs, et infligent un bonus de DGT de l'élément correspondant.\nUn seul élément peut être absorbé à la fois.",
+		"description": "« Je vois passer l'éternité en un instant, les automnes de plusieurs années d'une seule feuille ; ainsi je trancherai cet érable en un éclair, et je poserai la question des âges... »",
+		"attributes": {
+			"labels": [
+				"DGT entaille|{param1:P}",
+				"DGT continus|{param2:P}",
+				"Bonus DGT élémentaires|{param3:P}",
+				"Durée|{param4:F1} s",
+				"Temps de recharge|{param5:F1} s",
+				"Énergie élémentaire|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Lame d'érosion",
+		"info": "Si **Véhémence divine** entre en contact avec l'élément Hydro, Pyro, Cryo ou Électro lors de son utilisation, l'attaque plongeante « Contrôle du chaos » déclenchée après cette **Véhémence divine** bénéficie d'une absorption élémentaire, ajoutant ensuite des DGT de l'élément correspondant pour 200 % de l'attaque, dégâts considérés comme étant des DGT d'attaque plongeante.\nUn seul élément peut être absorbé à chaque utilisation de **Véhémence divine**."
+	},
+	"passive2": {
+		"name": "Haïku de la brise",
+		"info": "Pour chaque point de maîtrise élémentaire de Kazuha, ce dernier accorde à tous les personnages de l'équipe un bonus de 0,04 % de DGT de l'élément correspondant pendant 8 s lorsqu'il déclenche une Dispersion. Il est possible de cumuler les bonus de DGT de différents éléments grâce à cette méthode."
+	},
+	"passive3": {
+		"name": "Vent d'aube",
+		"info": "Réduit la consommation d'endurance des personnages de l'équipe de 20 % lors du sprint.\nNe peut pas être cumulé avec d'autres attitudes passives aux effets identiques."
+	}
+}
