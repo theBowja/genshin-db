@@ -57,6 +57,7 @@ const associationToRegion = {
 	'LIYUE': 'Liyue',
 	'MONDSTADT': 'Mondstadt',
 	'FATUI': 'Snezhnaya',
+	'INAZUMA': 'Inazuma',
 	'MAINACTOR': ''
 }
 
