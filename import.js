@@ -266,6 +266,16 @@ function collateFood(existing, newdata) {
 	// console.log(newdata);
 }
 
+function collateMaterial(existing, newdata) {
+	clearObject(existing);
+	const copyover = ['name', 'description', 'rarity', 'category', 'materialtype', 'dropdomain',
+	                  'daysofweek', 'source'];
+	existing.name = newdata.name;
+	for(let prop of copyover) {
+		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+	}
+}
+
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
@@ -285,7 +295,7 @@ function applyPatch(folder, data, langC, filename) {
 	}
 }
 
-function importData(folder, collateFunc, dontwrite) {
+function importData(folder, collateFunc, dontwrite, deleteexisting) {
 	language.languageCodes.forEach(langC => {
 		if(dontwrite && langC !== 'EN') return; 
 		// if(langC !== 'EN') return;
@@ -298,8 +308,12 @@ function importData(folder, collateFunc, dontwrite) {
 			} catch(e) {}
 		}
 
+		let basepath = `${language.languageMap[langC]}/${folder}`
+		if(deleteexisting) {
+			fs.rmdirSync(`./src/data/${basepath}`, { recursive: true });
+		}
+
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
-			let basepath = `${language.languageMap[langC]}/${folder}`
 			let existing = getJSON(`${basepath}/${filename}.json`);
 			if(existing === undefined) existing = {};
 			newdata.aliases = existing.aliases;
@@ -339,5 +353,6 @@ importData('characters', collateCharacter);
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
+importData('materials', collateMaterial, undefined, true);
 // getUpperBodyImages();
 // updateURLs();
