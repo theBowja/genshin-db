@@ -6,7 +6,7 @@
 
 Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes.
 
-All in-game languages are supported for query and result. (translations available only for characters, talents, constellations, weapons, artifacts, foods currently).
+All in-game languages are supported for query and result. (translations available only for characters, talents, materials, constellations, weapons, artifacts, foods currently).
 
 Install with:
 ```cmd
@@ -130,6 +130,13 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
+## genshindb.materials(query[, opts])
+
+- rarity, type, 'WOOD', ingredient, specialty liyue, domains, days of week, talent books, etc.
+- "names"
+
+Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbmaterialsquery-opts) to see example inputs and outputs for this function.
 
 ## genshindb.artifacts(query[, opts])
 

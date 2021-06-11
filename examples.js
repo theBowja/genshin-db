@@ -46,6 +46,11 @@ let folders = [
 		params: ['ballad', 'satur, { matchCategories: true }'],
 	},
 	{
+		function: 'materials',
+		params: ['ballad', 'sigh', 'iron', 'monday, { matchCategories: true }', 'ingredient, { matchCategories: true }',
+		         'liyue, { matchCategories: true }'],
+	},
+	{
 		function: 'artifacts',
 		params: ['flame', '5, { matchCategories: true }', 'noblesse/[\'2pc\']'],
 	},
