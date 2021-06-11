@@ -88,6 +88,7 @@ export const talentmaterialtypes: QueryFunction<TalentMaterial>;
 export const talents: QueryFunction<Talent>;
 export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
 export const weapons: QueryFunction<Weapon>;
+export const materials: QueryFunction<Material>;
 
 //#region Artifact
 
@@ -444,6 +445,21 @@ export interface WeaponMaterial { // English only
     location: string;
     region: string;
     domainofforgery: string;
+}
+
+//#endregion
+
+//#region Material
+
+export interface Material {
+    name: string;
+    description: string;
+    rarity?: string; // not every material has this
+    category: string; // untranslated
+    materialtype: string;
+    dropdomain?: string;
+    daysofweek?: string[];
+    source: string[];
 }
 
 //#endregion
