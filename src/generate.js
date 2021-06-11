@@ -60,7 +60,7 @@ function makeIndices() {
 						if(!Array.isArray(values)) values = [values]; // make into array
 
 						for(let val of values) {
-							if(categories[prop] === undefined) console.log("missing category: "+folder+ ","+prop);
+							//if(categories[prop] === undefined) console.log("missing category: "+folder+ ","+prop);
 							if(prop === "ingredients") val = val.name;// val = val.replace(/ x\d$/i, '');
 							else if(prop === "birthday") {
 								let [month, day] = data.birthdaymmdd.split('/');

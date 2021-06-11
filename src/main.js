@@ -130,6 +130,11 @@ genshin.talentmaterialtypes = function(query, opts) {
 }
 genshin.talentmaterialtype = genshin.talentmaterialtypes;
 
+genshin.materials = function(query, opts) {
+    return searchFolder(query, 'materials', opts);
+}
+genshin.material = genshin.materials;
+
 genshin.elements = function(query, opts) {
     return searchFolder(query, 'elements', opts);
 }

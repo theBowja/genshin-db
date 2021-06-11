@@ -13,6 +13,7 @@ const genshindb = require('genshin-db');
 - [genshindb.weapons(query[, opts])](#genshindbweaponsquery-opts)
 - [genshindb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
 - [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
+- [genshindb.materials(query[, opts])](#genshindbmaterialsquery-opts)
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
 - [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
@@ -1335,6 +1336,119 @@ const genshindb = require('genshin-db');
 
 ```js
 [ 'Ballad', 'Gold' ]
+```
+
+</details>
+
+## genshindb.materials(query[, opts])]
+
+<details>
+<summary>genshindb.materials('<b>ballad'</b>)</summary>
+
+```js
+{
+  name: 'Guide to Ballad',
+  description: 'Talent Level-Up material.\\nPoetry is the soul of the land of the wind.\\nPoetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
+  rarity: '3',
+  category: 'AVATAR_MATERIAL',
+  materialtype: 'Talent Level-Up Material',
+  dropdomain: 'Domain of Mastery: Realm of Slumber',
+  daysofweek: [ 'Wednesday', 'Saturday', 'Sunday' ],
+  source: [ 'Crafted' ]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.materials('<b>sigh'</b>)</summary>
+
+```js
+{
+  name: "Dvalin's Sigh",
+  description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\\nBeautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\\nHis enemies are the thousands who stand against the wind.',
+  rarity: '5',
+  category: 'AVATAR_MATERIAL',
+  materialtype: 'Character Level-Up Material',
+  source: [ 'Lv. 70+ Stormterror Challenge Reward' ]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.materials('<b>iron'</b>)</summary>
+
+```js
+{
+  name: 'Iron Chunk',
+  description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
+  category: 'EXCHANGE',
+  materialtype: 'Material',
+  source: [ 'Found in the wild' ]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.materials('<b>monday', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  "Debris of Decarabian's City",
+  'Divine Body from Guyun',
+  "Fragment of Decarabian's Epic",
+  'Guide to Freedom',
+  'Guide to Prosperity',
+  'Luminous Sands from Guyun',
+  'Lustrous Stone from Guyun',
+  'Philosophies of Freedom',
+  'Philosophies of Prosperity',
+  'Relic from Guyun',
+  "Scattered Piece of Decarabian's Dream",
+  'Teachings of Freedom',
+  'Teachings of Prosperity',
+  "Tile of Decarabian's Tower"
+]
+```
+
+</details>
+<details>
+<summary>genshindb.materials('<b>ingredient', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Almond',       'Bacon',        'Bamboo Shoot',
+  'Berry',        'Bird Egg',     'Butter',
+  'Cabbage',      'Carrot',       'Cheese',
+  'Chilled Meat', 'Crab',         'Crab Roe',
+  'Cream',        'Dried Fish',   'Fish',
+  'Flour',        'Fowl',         'Ham',
+  'Jam',          'Lotus Head',   'Matsutake',
+  'Milk',         'Mint',         'Mushroom',
+  'Onion',        'Pepper',       'Pinecone',
+  'Potato',       'Radish',       'Raw Meat',
+  'Rice',         'Salt',         'Sausage',
+  'Shrimp Meat',  'Silver Lotus', 'Smoked Fish',
+  'Smoked Fowl',  'Snapdragon',   'Sugar',
+  'Sweet Flower', 'Tofu',         'Tomato',
+  'Wheat'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.materials('<b>liyue', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Cor Lapis',
+  'Glaze Lily',
+  'Jueyun Chili',
+  'Noctilucous Jade',
+  'Qingxin',
+  'Silk Flower',
+  'Starconch',
+  'Violetgrass'
+]
 ```
 
 </details>
