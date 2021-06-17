@@ -129,7 +129,7 @@ function collateCharacter(existing, newdata, lang) {
 	if(newdata.icon) newdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
 	if(newdata.sideicon) newdata.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
 
-	newdata.talentmaterialtype = existing.talentmaterialtype;
+	//newdata.talentmaterialtype = existing.talentmaterialtype;
 	newdata.url = existing.url;
 	clearObject(existing);
 
@@ -163,7 +163,7 @@ function collateCharacter(existing, newdata, lang) {
 		myimages.characters
 	}
 	existing.cv = newdata.cv;
-	existing.talentmaterialtype = newdata.talentmaterialtype || '';
+	// existing.talentmaterialtype = newdata.talentmaterialtype || '';
 	existing.url = newdata.url;
 }
 
