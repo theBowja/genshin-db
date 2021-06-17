@@ -66,7 +66,7 @@ Supported languages options are: ChineseSimplified, ChineseTraditional, English,
 
 Returns the profile info for characters.
 
-Possible query inputs include: character names, character titles, constellation names, birthday months, elements, substats, weapon types, talent level-up material types, genders, regions, rarities, and 'name' for the list of all characters. The result also includes a function to calculate the stats of the character at each level.
+Possible query inputs include: character names, character titles, constellation names, birthday months, elements, substats, weapon types, genders, regions, rarities, and 'name' for the list of all characters. The result also includes a function to calculate the stats of the character at each level.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbcharactersquery-opts) to see example inputs and outputs for this function.
@@ -75,7 +75,7 @@ Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/example
 
 Returns the combat skills and passive skills for characters.
 
-Possible query inputs include: character names.
+Possible query inputs include: character names, upgrade materials.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentsquery-opts) to see example inputs and outputs for this function.

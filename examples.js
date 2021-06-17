@@ -19,13 +19,14 @@ let folders = [
 				 'carmen, { matchAliases: true }',
 				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
 				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
-				 'sword, { matchCategories: true }', 'ballad, { matchCategories: true }',
+				 'sword, { matchCategories: true }',
 				 'klee/.stats(90)', 'klee/.stats(80)', 'klee/.stats(80, \'+\')', 'aether/.stats(12)']
 	},
 	{
 		function: 'talents',
 		params: ['names, { matchCategories: true }', 'ninguang', 'klee/.passive3', 'mona/.combat1',
-				 'mona/.combat2', 'mona/.combatsp', 'mona/.combat3'],
+				 'mona/.combat2', 'mona/.combatsp', 'mona/.combat3', 'ballad, { matchCategories: true }',
+				 'dvalin sigh, { matchCategories: true }', 'arrowhead, { matchCategories: true }'],
 	},
 	{
 		function: 'constellations',
