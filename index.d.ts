@@ -187,7 +187,6 @@ export interface Character {
         japanese: string;
         korean: string;
     };
-    talentmaterialtype: string; // untranslated. empty string if I forget to update this
     images: {
         image?: string;    // wikia
         card?: string;     // wikia
@@ -357,6 +356,17 @@ export interface Talent {
     passive1: PassiveTalentDetail;
     passive2: PassiveTalentDetail;
     passive3?: PassiveTalentDetail; // player character doesn't have a third talent
+    costs: {
+        "lvl2": Items[];
+        "lvl3": Items[];
+        "lvl4": Items[];
+        "lvl5": Items[];
+        "lvl6": Items[];
+        "lvl7": Items[];
+        "lvl8": Items[];
+        "lvl9": Items[];
+        "lvl10": Items[];
+    }
     images?: { // images for talents aren't available yet
         combat1: string;
         combat2: string;
@@ -383,6 +393,11 @@ export interface CombatTalentDetail {
 export interface PassiveTalentDetail {
     name: string;
     info: string;
+}
+
+export interface Items {
+    name: string;
+    count: number;
 }
 
 //#endregion

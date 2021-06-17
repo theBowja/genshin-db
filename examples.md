@@ -68,7 +68,6 @@ const genshindb = require('genshin-db');
     japanese: '上田麗奈',
     korean: '김선혜'
   },
-  talentmaterialtype: 'Diligence',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png',
@@ -111,7 +110,6 @@ const genshindb = require('genshin-db');
     japanese: '石見舞菜香',
     korean: '김연우'
   },
-  talentmaterialtype: '',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
@@ -154,7 +152,6 @@ const genshindb = require('genshin-db');
     japanese: '石見舞菜香',
     korean: '김연우'
   },
-  talentmaterialtype: 'Libertad',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
@@ -197,7 +194,6 @@ const genshindb = require('genshin-db');
     japanese: '木村良平',
     korean: '남도형'
   },
-  talentmaterialtype: 'Freedom',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png',
@@ -240,7 +236,6 @@ const genshindb = require('genshin-db');
     japanese: '村瀬歩',
     korean: '정유정'
   },
-  talentmaterialtype: 'Ballad',
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
@@ -318,14 +313,6 @@ const genshindb = require('genshin-db');
   'Qiqi',
   'Xingqiu'
 ]
-```
-
-</details>
-<details>
-<summary>genshindb.characters('<b>ballad', { matchCategories: true }</b>)</summary>
-
-```js
-[ 'Albedo', 'Fischl', 'Kaeya', 'Lisa', 'Rosaria', 'Venti' ]
 ```
 
 </details>
@@ -631,6 +618,58 @@ const genshindb = require('genshin-db');
   passive3: {
     name: 'Trove of Marvelous Treasures',
     info: 'Displays the location of nearby **ore veins** (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on the mini-map.'
+  },
+  costs: {
+    lvl2: [
+      { name: 'Mora', count: 12500 },
+      { name: 'Teachings of Prosperity', count: 3 },
+      { name: "Recruit's Insignia", count: 6 }
+    ],
+    lvl3: [
+      { name: 'Mora', count: 17500 },
+      { name: 'Guide to Prosperity', count: 2 },
+      { name: "Sergeant's Insignia", count: 3 }
+    ],
+    lvl4: [
+      { name: 'Mora', count: 25000 },
+      { name: 'Guide to Prosperity', count: 4 },
+      { name: "Sergeant's Insignia", count: 4 }
+    ],
+    lvl5: [
+      { name: 'Mora', count: 30000 },
+      { name: 'Guide to Prosperity', count: 6 },
+      { name: "Sergeant's Insignia", count: 6 }
+    ],
+    lvl6: [
+      { name: 'Mora', count: 37500 },
+      { name: 'Guide to Prosperity', count: 9 },
+      { name: "Sergeant's Insignia", count: 9 }
+    ],
+    lvl7: [
+      { name: 'Mora', count: 120000 },
+      { name: 'Philosophies of Prosperity', count: 4 },
+      { name: "Lieutenant's Insignia", count: 4 },
+      { name: 'Spirit Locket of Boreas', count: 1 }
+    ],
+    lvl8: [
+      { name: 'Mora', count: 260000 },
+      { name: 'Philosophies of Prosperity', count: 6 },
+      { name: "Lieutenant's Insignia", count: 6 },
+      { name: 'Spirit Locket of Boreas', count: 1 }
+    ],
+    lvl9: [
+      { name: 'Mora', count: 450000 },
+      { name: 'Philosophies of Prosperity', count: 12 },
+      { name: "Lieutenant's Insignia", count: 9 },
+      { name: 'Spirit Locket of Boreas', count: 2 }
+    ],
+    lvl10: [
+      { name: 'Mora', count: 700000 },
+      { name: 'Philosophies of Prosperity', count: 16 },
+      { name: "Lieutenant's Insignia", count: 12 },
+      { name: 'Spirit Locket of Boreas', count: 2 },
+      { name: 'Crown of Insight', count: 1 }
+    ]
   },
   images: {
     combat1: '',
@@ -967,6 +1006,38 @@ const genshindb = require('genshin-db');
     }
   }
 }
+```
+
+</details>
+<details>
+<summary>genshindb.talents('<b>ballad', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Albedo',
+  'Fischl',
+  'Kaeya',
+  'Lisa',
+  'Rosaria',
+  'Traveler (Anemo)',
+  'Venti'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.talents('<b>dvalin sigh', { matchCategories: true }</b>)</summary>
+
+```js
+[ 'Amber', 'Beidou', 'Chongyun', 'Traveler (Anemo)' ]
+```
+
+</details>
+<details>
+<summary>genshindb.talents('<b>arrowhead', { matchCategories: true }</b>)</summary>
+
+```js
+[ 'Amber', 'Diona', 'Fischl', 'Traveler (Geo)' ]
 ```
 
 </details>

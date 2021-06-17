@@ -201,6 +201,7 @@ function collateTalent(existing, newdata) {
 	addTalent('passive1');
 	addTalent('passive2');
 	addTalent('passive3'); // traveler doesn't have passive3
+	existing.costs = newdata.costs;
 }
 
 function collateWeapon(existing, inputdata) {
@@ -345,10 +346,10 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 }
 
 
-importData('characters', collateCharacter);
+// importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
