@@ -105,6 +105,7 @@ function updateURLs() {
 	updateFandomDirect('artifacts');
 	updateFandomDirect('weapons');
 	updateFandomDirect('foods');
+	updateFandomDirect('materials');
 	function updateFandomDirect(folder) {
 		if(fs.existsSync(`./src/data/English/${folder}`)) {
 			let existing = {};
@@ -275,6 +276,8 @@ function collateMaterial(existing, newdata) {
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
 	}
+	newdata.images = {};
+	newdata.images.fandom = `https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_${newdata.name.replace(/ /g, '_').replace(/"/g, '')}.png`
 }
 
 function importCurve(folder) {
@@ -354,6 +357,6 @@ importData('talents', collateTalent);
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
-importData('materials', collateMaterial, undefined, true);
+// importData('materials', collateMaterial, undefined, true);
 // getUpperBodyImages();
-// updateURLs();
+updateURLs();
