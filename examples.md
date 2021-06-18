@@ -1425,7 +1425,10 @@ const genshindb = require('genshin-db');
   materialtype: 'Talent Level-Up Material',
   dropdomain: 'Domain of Mastery: Realm of Slumber',
   daysofweek: [ 'Wednesday', 'Saturday', 'Sunday' ],
-  source: [ 'Crafted' ]
+  source: [ 'Crafted' ],
+  images: {
+    fandom: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Guide_to_Ballad.png'
+  }
 }
 ```
 
@@ -1440,7 +1443,10 @@ const genshindb = require('genshin-db');
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
-  source: [ 'Lv. 70+ Stormterror Challenge Reward' ]
+  source: [ 'Lv. 70+ Stormterror Challenge Reward' ],
+  images: {
+    fandom: "https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Dvalin's_Sigh.png"
+  }
 }
 ```
 
@@ -1454,7 +1460,10 @@ const genshindb = require('genshin-db');
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
   category: 'EXCHANGE',
   materialtype: 'Material',
-  source: [ 'Found in the wild' ]
+  source: [ 'Found in the wild' ],
+  images: {
+    fandom: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Iron_Chunk.png'
+  }
 }
 ```
 
