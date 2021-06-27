@@ -349,14 +349,15 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 }
 
 
-// importData('characters', collateCharacter);
-// importCurve('characters');
-// importData('constellations', collateConstellation);
+importData('characters', collateCharacter);
+importCurve('characters');
+importData('constellations', collateConstellation);
 importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
-// importCurve('weapons');
-// importData('artifacts', collateArtifact);
-// importData('foods', collateFood);
-// importData('materials', collateMaterial, undefined, true);
-// getUpperBodyImages();
-updateURLs();
+importData('weapons', collateWeapon)
+importCurve('weapons');
+importData('artifacts', collateArtifact);
+importData('foods', collateFood);
+importData('materials', collateMaterial, undefined, true);
+
+getUpperBodyImages(); // must be separate
+// updateURLs(); // must be separate
