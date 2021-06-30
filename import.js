@@ -99,6 +99,24 @@ async function getUpperBodyImages() {
 	fs.writeFileSync(`./src/data/image/characters.json`, JSON.stringify(myimages, null, '\t'));
 }
 
+async function getRedirectedUrl(url) {
+	const https = require('https');
+	return new Promise(resolve => {
+		https.get(url, function (res) {
+			let newurl = res.headers.location;
+			if(newurl === undefined) {
+				console.log('no redirect found for: '+url);
+			} else {
+				newurl = newurl.slice(0, newurl.indexOf('.png')+4);
+			}
+			resolve(newurl);
+		}).on('error', function(e) {
+			console.log('error');
+			console.log(e);
+		});
+	});
+}
+
 function updateURLs() {
 	//let folder = 'characters';
 	updateFandomDirect('characters');
@@ -268,7 +286,7 @@ function collateFood(existing, newdata) {
 	// console.log(newdata);
 }
 
-function collateMaterial(existing, newdata) {
+async function collateMaterial(existing, newdata, lang) {
 	clearObject(existing);
 	const copyover = ['name', 'description', 'rarity', 'category', 'materialtype', 'dropdomain',
 	                  'daysofweek', 'source'];
@@ -276,8 +294,14 @@ function collateMaterial(existing, newdata) {
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
 	}
-	newdata.images = {};
-	newdata.images.fandom = `https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_${newdata.name.replace(/ /g, '_').replace(/"/g, '')}.png`
+	if(lang === 'English') {
+		newdata.images = {};
+		let imagename = newdata.name;
+		if(imagename === 'Ley Line Sprout') imagename = 'Ley Line Sprouts';
+		imagename = imagename.replace(/ /g, '_').replace(/"/g, '');
+		newdata.images.redirect = `https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_${imagename}.png`
+		newdata.images.fandom = await getRedirectedUrl(newdata.images.redirect);
+	}
 }
 
 function importCurve(folder) {
@@ -300,7 +324,7 @@ function applyPatch(folder, data, langC, filename) {
 }
 
 function importData(folder, collateFunc, dontwrite, deleteexisting) {
-	language.languageCodes.forEach(langC => {
+	language.languageCodes.forEach(async (langC) => {
 		if(dontwrite && langC !== 'EN') return; 
 		// if(langC !== 'EN') return;
 		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
@@ -322,7 +346,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 			if(existing === undefined) existing = {};
 			newdata.aliases = existing.aliases;
 
-			collateFunc(existing, newdata, language.languageMap[langC]);
+			await collateFunc(existing, newdata, language.languageMap[langC]);
 			if(langC === 'EN') { 
 				if(myimages[`${filename}.json`] === undefined) myimages[`${filename}.json`] = {};
 				Object.assign(myimages[`${filename}.json`], newdata.images);
@@ -349,15 +373,15 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 }
 
 
-importData('characters', collateCharacter);
-importCurve('characters');
-importData('constellations', collateConstellation);
-importData('talents', collateTalent);
-importData('weapons', collateWeapon)
-importCurve('weapons');
-importData('artifacts', collateArtifact);
-importData('foods', collateFood);
-importData('materials', collateMaterial, undefined, true);
+// importData('characters', collateCharacter);
+// importCurve('characters');
+// importData('constellations', collateConstellation);
+// importData('talents', collateTalent);
+// importData('weapons', collateWeapon)
+// importCurve('weapons');
+// importData('artifacts', collateArtifact);
+// importData('foods', collateFood);
+// importData('materials', collateMaterial, undefined, true);
 
 getUpperBodyImages(); // must be separate
 // updateURLs(); // must be separate
