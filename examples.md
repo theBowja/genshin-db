@@ -1427,8 +1427,10 @@ const genshindb = require('genshin-db');
   daysofweek: [ 'Wednesday', 'Saturday', 'Sunday' ],
   source: [ 'Crafted' ],
   images: {
-    fandom: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Guide_to_Ballad.png'
-  }
+    redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Guide_to_Ballad.png',
+    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/2/2f/Item_Guide_to_Ballad.png'
+  },
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Guide_to_Ballad' }
 }
 ```
 
@@ -1445,8 +1447,10 @@ const genshindb = require('genshin-db');
   materialtype: 'Character Level-Up Material',
   source: [ 'Lv. 70+ Stormterror Challenge Reward' ],
   images: {
-    fandom: "https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Dvalin's_Sigh.png"
-  }
+    redirect: "https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Dvalin's_Sigh.png",
+    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png'
+  },
+  url: { fandom: "https://genshin-impact.fandom.com/wiki/Dvalin's_Sigh" }
 }
 ```
 
@@ -1462,8 +1466,10 @@ const genshindb = require('genshin-db');
   materialtype: 'Material',
   source: [ 'Found in the wild' ],
   images: {
-    fandom: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Iron_Chunk.png'
-  }
+    redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Iron_Chunk.png',
+    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Item_Iron_Chunk.png'
+  },
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Iron_Chunk' }
 }
 ```
 

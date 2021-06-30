@@ -475,6 +475,14 @@ export interface Material {
     dropdomain?: string;
     daysofweek?: string[];
     source: string[];
+
+    images: {
+        fandom?: string;
+        redirect: string;
+    };
+    url: {
+        fandom: string;
+    };
 }
 
 //#endregion
