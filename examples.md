@@ -26,18 +26,19 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',    'Albedo',  'Amber',
-  'Barbara',   'Beidou',  'Bennett',
-  'Chongyun',  'Diluc',   'Diona',
-  'Eula',      'Fischl',  'Ganyu',
-  'Hu Tao',    'Jean',    'Kaedehara Kazuha',
-  'Kaeya',     'Keqing',  'Klee',
-  'Lisa',      'Lumine',  'Mona',
-  'Ningguang', 'Noelle',  'Qiqi',
-  'Razor',     'Rosaria', 'Sucrose',
-  'Tartaglia', 'Venti',   'Xiangling',
-  'Xiao',      'Xingqiu', 'Xinyan',
-  'Yanfei',    'Zhongli'
+  'Aether',    'Albedo',    'Amber',
+  'Barbara',   'Beidou',    'Bennett',
+  'Chongyun',  'Diluc',     'Diona',
+  'Eula',      'Fischl',    'Ganyu',
+  'Hu Tao',    'Jean',      'Kaedehara Kazuha',
+  'Kaeya',     'Keqing',    'Klee',
+  'Lisa',      'Lumine',    'Mona',
+  'Ningguang', 'Noelle',    'Qiqi',
+  'Razor',     'Rosaria',   'Sayu',
+  'Sucrose',   'Tartaglia', 'Venti',
+  'Xiangling', 'Xiao',      'Xingqiu',
+  'Xinyan',    'Yanfei',    'Yoimiya',
+  'Zhongli'
 ]
 ```
 
@@ -265,10 +266,11 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Amber',  'Bennett',
-  'Diluc',  'Hu Tao',
-  'Klee',   'Xiangling',
-  'Xinyan', 'Yanfei'
+  'Amber',   'Bennett',
+  'Diluc',   'Hu Tao',
+  'Klee',    'Xiangling',
+  'Xinyan',  'Yanfei',
+  'Yoimiya'
 ]
 ```
 
@@ -384,18 +386,25 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',         'Amber',            'Barbara',
-  'Beidou',         'Bennett',          'Chongyun',
-  'Diluc',          'Diona',            'Eula',
-  'Fischl',         'Ganyu',            'Hu Tao',
-  'Jean',           'Kaedehara Kazuha', 'Kaeya',
-  'Keqing',         'Klee',             'Lisa',
-  'Mona',           'Ningguang',        'Noelle',
-  'Qiqi',           'Razor',            'Rosaria',
-  'Sucrose',        'Tartaglia',        'Traveler (Anemo)',
-  'Traveler (Geo)', 'Venti',            'Xiangling',
-  'Xiao',           'Xingqiu',          'Xinyan',
-  'Yanfei',         'Zhongli'
+  'Albedo',             'Amber',
+  'Barbara',            'Beidou',
+  'Bennett',            'Chongyun',
+  'Diluc',              'Diona',
+  'Eula',               'Fischl',
+  'Ganyu',              'Hu Tao',
+  'Jean',               'Kaedehara Kazuha',
+  'Kaeya',              'Keqing',
+  'Klee',               'Lisa',
+  'Mona',               'Ningguang',
+  'Noelle',             'Qiqi',
+  'Razor',              'Rosaria',
+  'Sayu',               'Sucrose',
+  'Tartaglia',          'Traveler (Anemo)',
+  'Traveler (Electro)', 'Traveler (Geo)',
+  'Venti',              'Xiangling',
+  'Xiao',               'Xingqiu',
+  'Xinyan',             'Yanfei',
+  'Yoimiya',            'Zhongli'
 ]
 ```
 
@@ -617,7 +626,7 @@ const genshindb = require('genshin-db');
   },
   passive3: {
     name: 'Trove of Marvelous Treasures',
-    info: 'Displays the location of nearby **ore veins** (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on the mini-map.'
+    info: 'Displays the location of nearby **ore veins used in forging** on the mini-map.'
   },
   costs: {
     lvl2: [
@@ -1216,6 +1225,7 @@ const genshindb = require('genshin-db');
 [
   'Alley Hunter',
   'Amber Bead',
+  'Amenoma Kageuchi',
   "Amos' Bow",
   "Apprentice's Notes",
   'Aquila Favonia',
@@ -1251,11 +1261,15 @@ const genshindb = require('genshin-db');
   'Fillet Blade',
   'Freedom-Sworn',
   'Frostbearer',
+  'Hakushin Ring',
   'Halberd',
+  'Hamayumi',
   'Harbinger of Dawn',
   "Hunter's Bow",
   'Iron Point',
   'Iron Sting',
+  'Katsuragikiri Nagamasa',
+  'Kitain Cross Spear',
   "Lion's Roar",
   'Lithic Blade',
   'Lithic Spear',
@@ -1264,6 +1278,7 @@ const genshindb = require('genshin-db');
   'Mappa Mare',
   'Memory of Dust',
   'Messenger',
+  'Mistsplitter Reforged',
   'Mitternachts Waltz',
   "Old Merc's Pal",
   'Otherworldly Story',
@@ -1308,13 +1323,7 @@ const genshindb = require('genshin-db');
   'Summit Shaper',
   'Sword of Descension',
   'The Alley Flash',
-  'The Bell',
-  'The Black Sword',
-  'The Flagstaff',
-  'The Flute',
-  'The Stringless',
-  'The Unforged',
-  ... 13 more items
+  ... 20 more items
 ]
 ```
 
@@ -1522,7 +1531,7 @@ const genshindb = require('genshin-db');
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
   category: 'EXCHANGE',
-  materialtype: 'Material',
+  materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
   images: {
     redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Iron_Chunk.png',
@@ -1538,19 +1547,26 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Coral Branch of a Distant Sea',
   "Debris of Decarabian's City",
   'Divine Body from Guyun',
   "Fragment of Decarabian's Epic",
+  'Golden Branch of a Distant Sea',
   'Guide to Freedom',
   'Guide to Prosperity',
+  'Guide to Transience',
+  'Jade Branch of a Distant Sea',
+  'Jeweled Branch of a Distant Sea',
   'Luminous Sands from Guyun',
   'Lustrous Stone from Guyun',
   'Philosophies of Freedom',
   'Philosophies of Prosperity',
+  'Philosophies of Transience',
   'Relic from Guyun',
   "Scattered Piece of Decarabian's Dream",
   'Teachings of Freedom',
   'Teachings of Prosperity',
+  'Teachings of Transience',
   "Tile of Decarabian's Tower"
 ]
 ```
@@ -1561,21 +1577,21 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Almond',       'Bacon',        'Bamboo Shoot',
-  'Berry',        'Bird Egg',     'Butter',
-  'Cabbage',      'Carrot',       'Cheese',
-  'Chilled Meat', 'Crab',         'Crab Roe',
-  'Cream',        'Dried Fish',   'Fish',
-  'Flour',        'Fowl',         'Ham',
-  'Jam',          'Lotus Head',   'Matsutake',
-  'Milk',         'Mint',         'Mushroom',
-  'Onion',        'Pepper',       'Pinecone',
-  'Potato',       'Radish',       'Raw Meat',
-  'Rice',         'Salt',         'Sausage',
-  'Shrimp Meat',  'Silver Lotus', 'Smoked Fish',
-  'Smoked Fowl',  'Snapdragon',   'Sugar',
-  'Sweet Flower', 'Tofu',         'Tomato',
-  'Wheat'
+  'Almond',       'Bacon',          'Bamboo Shoot',
+  'Berry',        'Bird Egg',       'Butter',
+  'Cabbage',      'Carrot',         'Cheese',
+  'Chilled Meat', 'Crab',           'Crab Roe',
+  'Cream',        'Dried Fish',     'Fish',
+  'Flour',        'Fowl',           'Ham',
+  'Jam',          'Lavender Melon', 'Lotus Head',
+  'Matsutake',    'Milk',           'Mint',
+  'Mushroom',     'Onion',          'Pepper',
+  'Pinecone',     'Potato',         'Radish',
+  'Raw Meat',     'Rice',           'Salt',
+  'Sausage',      'Seagrass',       'Shrimp Meat',
+  'Silver Lotus', 'Smoked Fish',    'Smoked Fowl',
+  'Snapdragon',   'Sugar',          'Sweet Flower',
+  'Tofu',         'Tomato',         'Wheat'
 ]
 ```
 
@@ -1655,6 +1671,7 @@ const genshindb = require('genshin-db');
   'Blizzard Strayer',
   'Bloodstained Chivalry',
   'Crimson Witch of Flames',
+  'Emblem of Severed Fate',
   "Gladiator's Finale",
   'Heart of Depth',
   'Lavawalker',
@@ -1662,6 +1679,7 @@ const genshindb = require('genshin-db');
   'Noblesse Oblige',
   'Pale Flame',
   'Retracing Bolide',
+  "Shimenawa's Reminiscence",
   'Tenacity of the Millelith',
   'Thundering Fury',
   'Thundersoother',
@@ -1725,11 +1743,13 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Butter Crab',
   'Chicken Tofu Pudding',
   'Golden Crab',
   'Golden Fried Chicken',
   'Jade Parcels',
   'Moon Pie',
+  'Sashimi Platter',
   'Stormcrest Pie',
   'Tianshu Meat'
 ]
@@ -1742,6 +1762,7 @@ const genshindb = require('genshin-db');
 ```js
 [
   'A Prize Catch',
+  'Butter Crab',
   'Calla Lily Seafood Soup',
   "Fisherman's Toast",
   'Fish-Flavored Toast',
@@ -1749,6 +1770,8 @@ const genshindb = require('genshin-db');
   'Jewelry Soup',
   'Lotus Flower Crisp',
   'Moon Pie',
+  'Rice Cake Soup',
+  'Sakura Tempura',
   'Stir-Fried Shrimp',
   'Stormcrest Pie',
   'Sunshine Sprat',
@@ -1768,6 +1791,7 @@ const genshindb = require('genshin-db');
   'Golden Chicken Burger',
   'Invigorating Pizza',
   'Jade Parcels',
+  'Mixed Yakisoba',
   'Mushroom Pizza',
   'Northern Smoked Chicken',
   'Nutritious Meal (V.593)',
