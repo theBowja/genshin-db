@@ -26,19 +26,19 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',    'Albedo',    'Amber',
-  'Barbara',   'Beidou',    'Bennett',
-  'Chongyun',  'Diluc',     'Diona',
-  'Eula',      'Fischl',    'Ganyu',
-  'Hu Tao',    'Jean',      'Kaedehara Kazuha',
-  'Kaeya',     'Keqing',    'Klee',
-  'Lisa',      'Lumine',    'Mona',
-  'Ningguang', 'Noelle',    'Qiqi',
-  'Razor',     'Rosaria',   'Sayu',
-  'Sucrose',   'Tartaglia', 'Venti',
-  'Xiangling', 'Xiao',      'Xingqiu',
-  'Xinyan',    'Yanfei',    'Yoimiya',
-  'Zhongli'
+  'Aether',   'Albedo',         'Amber',
+  'Barbara',  'Beidou',         'Bennett',
+  'Chongyun', 'Diluc',          'Diona',
+  'Eula',     'Fischl',         'Ganyu',
+  'Hu Tao',   'Jean',           'Kaedehara Kazuha',
+  'Kaeya',    'Kamisato Ayaka', 'Keqing',
+  'Klee',     'Lisa',           'Lumine',
+  'Mona',     'Ningguang',      'Noelle',
+  'Qiqi',     'Razor',          'Rosaria',
+  'Sayu',     'Sucrose',        'Tartaglia',
+  'Venti',    'Xiangling',      'Xiao',
+  'Xingqiu',  'Xinyan',         'Yanfei',
+  'Yoimiya',  'Zhongli'
 ]
 ```
 
@@ -310,6 +310,7 @@ const genshindb = require('genshin-db');
   'Jean',
   'Kaedehara Kazuha',
   'Kaeya',
+  'Kamisato Ayaka',
   'Keqing',
   'Lumine',
   'Qiqi',
@@ -386,25 +387,26 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',             'Amber',
-  'Barbara',            'Beidou',
-  'Bennett',            'Chongyun',
-  'Diluc',              'Diona',
-  'Eula',               'Fischl',
-  'Ganyu',              'Hu Tao',
-  'Jean',               'Kaedehara Kazuha',
-  'Kaeya',              'Keqing',
-  'Klee',               'Lisa',
-  'Mona',               'Ningguang',
-  'Noelle',             'Qiqi',
-  'Razor',              'Rosaria',
-  'Sayu',               'Sucrose',
-  'Tartaglia',          'Traveler (Anemo)',
-  'Traveler (Electro)', 'Traveler (Geo)',
-  'Venti',              'Xiangling',
-  'Xiao',               'Xingqiu',
-  'Xinyan',             'Yanfei',
-  'Yoimiya',            'Zhongli'
+  'Albedo',           'Amber',
+  'Barbara',          'Beidou',
+  'Bennett',          'Chongyun',
+  'Diluc',            'Diona',
+  'Eula',             'Fischl',
+  'Ganyu',            'Hu Tao',
+  'Jean',             'Kaedehara Kazuha',
+  'Kaeya',            'Kamisato Ayaka',
+  'Keqing',           'Klee',
+  'Lisa',             'Mona',
+  'Ningguang',        'Noelle',
+  'Qiqi',             'Razor',
+  'Rosaria',          'Sayu',
+  'Sucrose',          'Tartaglia',
+  'Traveler (Anemo)', 'Traveler (Electro)',
+  'Traveler (Geo)',   'Venti',
+  'Xiangling',        'Xiao',
+  'Xingqiu',          'Xinyan',
+  'Yanfei',           'Yoimiya',
+  'Zhongli'
 ]
 ```
 
