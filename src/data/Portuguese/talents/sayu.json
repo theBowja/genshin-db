@@ -1,0 +1,213 @@
+{
+	"name": "Sayu",
+	"combat1": {
+		"name": "Ataque Normal: Lâmina de Ninja Shiyuumatsu-Ban",
+		"info": "**Ataque Normal**\nRealiza até 4 golpes consecutivos.\n\n**Ataque Carregado**\nDrena Stamina ao longo do tempo para realizar um ataque giratório contínuo contra todos os inimigos próximos.\nAo final da sequência, realiza um corte poderoso.\n\n**Ataque Imersivo**\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos em seu caminho e infligindo Dano em uma AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}+{param4:F1P}",
+				"Dano do 4° Golpe|{param5:F1P}",
+				"Dano de Loop de Ataque Carregado|{param6:F1P}",
+				"Dano Final de Ataque Carregado|{param7:P}",
+				"Consumo de Stamina de Ataque Carregado|{param8:F1}/s",
+				"Duração Máxima|{param9:F1}s",
+				"Dano Durante a Queda|{param10:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Arte Yoohoo: Ataque Fuuin",
+		"info": "A técnica especial das Artes Ninja Yohoo! Uma técnica veloz como um raio que circula por todo o campo!\nForma uma Roda Fuufuu e colide nos inimigos em alta velocidade, causando Dano Anemo. Quando a duração termina, lança um Chute da Roda Fuufuu, causando Dano Anemo em uma AdE.\n\n**Pressionar**\nEntra no estado da Roda Fuufuu, rebola para a frente em uma distância curta antes de usar o Chute da Roda Fuufuu.\n\n**Manter pressionado**\nGira continuamente no estado da Roda Fuufuu, aumentando a resistência de Sayu à interrupção durante esse estado.\nDurante este tempo, Sayu pode controlar a direção da Roda e pode usar a habilidade novamente para terminar seu estado de Roda e liberar uma versão mais forte do Chute da Roda Fuufuu. A versão dessa habilidade com Manter Pressionado pode desencadear uma Absorção Elemental.\n\nDura até 10s, ao final do efeito, a habilidade entará em Recarga. Quanto maior o tempo sob o estado da Roda Fuufuu, maior será a Recarga.\n\n**Absorção Elemental**\nSe Sayu entrar em contato com os elementos Hydro/Pyro/Cryo/Electro durante seu estado de Roda, ela irá causar Dano elemental adicional baseado naquele tipo.\nAbsorção Elemental pode ocorrer apenas uma vez por uso.",
+		"description": "Sayu pode usar essa habilidade com seus olhos fechados. Esta técnica foi originalmente criada para escapar, mas agora que ela tem uma Visão, pode também servir para dificultar a vida dos seus inimigos enquanto ela usa a habilidade.",
+		"attributes": {
+			"labels": [
+				"Dano de Roda Fuufuu|{param1:F1P}",
+				"Dano de Pressionar em Chute da Roda Fuufuu|{param3:F1P}",
+				"Dano ao Manter Pressionado Chute da Roda Fuufuu|{param4:F1P}",
+				"Dano Elemental Adicional da Roda Fuufuu|{param4:F1P}",
+				"Dano Elemental Adicional ao Manter Pressionado da Roda Fuufuu|{param5:F1P}",
+				"Duração Máxima por Manter Pressionado|{param6:F1}s",
+				"Tempo de Recarga|De {param7:F1} até {param8:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Arte Yoohoo: Agitação Mujina",
+		"info": "Outra técnica muito especial das Artes Ninja Yoohoo! Ela invoca um par de mãos ajudantes para Sayu.\nInflige Dano Anemo aos inimigos ao redor e cura todos os personagens da equipe ao redor. A quantidade de Vida restaurada é baseada no ATQ de Sayu. A habilidade invoca então Daruma Muji-Muji.\n\n**Daruma Muji-Muji**\nEm intervalos específicos, Daruma irá tomar uma das muitas ações com base na situação ao seu redor:\n·Se houver personagens ativos ao redor com mais de 70% de Vida, Daruma irá atacar um inimigo por perto infligindo Dano Anemo;\n·Se houver personagens ativos por perto com 70% ou menos de Vida, Daruma irá curar o personagem ativo com menos porcentagem de Vida. Se não houver oponentes ao redor e os personagens tiverem mais de 70% de Vida, ele irá curar os personagens.",
+		"description": "As pessoas que não entendem nada sobre ninjutsu adoram ver Sayu mostrando sua habilidade, e alguns tentaram aprender com ela. Mas Sayu apenas quer dormir e não ser incomodada.",
+		"attributes": {
+			"labels": [
+				"Dano de Ativação da Habilidade|{param1:P}",
+				"Cura da Ativação da Habilidade|{param3:F1P} ATK+{param2:I}",
+				"Dano de Daruma Muji-Muji|{param4:P}",
+				"Cura de Daruma Muji-Muji|{param6:F1P}ATQ+{param5:I}",
+				"Duração|{param7:F1}s",
+				"Tempo de Recarga|{param8:F1}s",
+				"Energia Elemental|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Alguém Mais Adequado",
+		"info": "Quando Sayu desencadeia uma reação de Redemoinho enquanto ela estiver no campo de batalha, ela cura todos os seus personagens e aliados próximos em 300 de Vida. Ela também curará um adicional de 1.2 de Vida para cada ponto de Proficiência Elemental que ela possuir.\nEsse efeito pode ocorrer uma vez a cada 2s."
+	},
+	"passive2": {
+		"name": "Não Tem Trabalho Hoje!",
+		"info": "O Daruma Muji-Muji invocado pela **Arte Yoohoo: Agitação Mujina** ganha os seguintes efeitos: \nQuando um personagem é curado, outros personagens próximos a ele e em combate recuperam uma quantidade de Vida de 20% do que foi recuperado pelo primeiro personagem. \nAumenta a área de Danos durante o ataque contra inimigos."
+	},
+	"passive3": {
+		"name": "Arte Yoohoo: Segredo da Dissimulação",
+		"info": "Quando Sayu estiver na equipe, seus personagens não irão assustar as Borboletas de Cristais e alguns outros animais ao chegar perto deles.\nCheque a sub-categoria \"Outros\" da seção \"Seres Vivos/Animais Selvagens\" do Arquivo, para descobrir quais criaturas esta habilidade funciona."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos da Luz Celeste",
+				"count": 3
+			},
+			{
+				"name": "Néctar da Flor Gigante",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 2
+			},
+			{
+				"name": "Néctar Brilhante",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 4
+			},
+			{
+				"name": "Néctar Brilhante",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 6
+			},
+			{
+				"name": "Néctar Brilhante",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 9
+			},
+			{
+				"name": "Néctar Brilhante",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 4
+			},
+			{
+				"name": "Néctar Elemental",
+				"count": 4
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 6
+			},
+			{
+				"name": "Néctar Elemental",
+				"count": 6
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 12
+			},
+			{
+				"name": "Néctar Elemental",
+				"count": 9
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 16
+			},
+			{
+				"name": "Néctar Elemental",
+				"count": 12
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

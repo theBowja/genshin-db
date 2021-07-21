@@ -685,6 +685,65 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
+<summary>genshindb.talents('<b>ningguang'</b>)<b>.costs</b></summary>
+
+```js
+{
+  lvl2: [
+    { name: 'Mora', count: 12500 },
+    { name: 'Teachings of Prosperity', count: 3 },
+    { name: "Recruit's Insignia", count: 6 }
+  ],
+  lvl3: [
+    { name: 'Mora', count: 17500 },
+    { name: 'Guide to Prosperity', count: 2 },
+    { name: "Sergeant's Insignia", count: 3 }
+  ],
+  lvl4: [
+    { name: 'Mora', count: 25000 },
+    { name: 'Guide to Prosperity', count: 4 },
+    { name: "Sergeant's Insignia", count: 4 }
+  ],
+  lvl5: [
+    { name: 'Mora', count: 30000 },
+    { name: 'Guide to Prosperity', count: 6 },
+    { name: "Sergeant's Insignia", count: 6 }
+  ],
+  lvl6: [
+    { name: 'Mora', count: 37500 },
+    { name: 'Guide to Prosperity', count: 9 },
+    { name: "Sergeant's Insignia", count: 9 }
+  ],
+  lvl7: [
+    { name: 'Mora', count: 120000 },
+    { name: 'Philosophies of Prosperity', count: 4 },
+    { name: "Lieutenant's Insignia", count: 4 },
+    { name: 'Spirit Locket of Boreas', count: 1 }
+  ],
+  lvl8: [
+    { name: 'Mora', count: 260000 },
+    { name: 'Philosophies of Prosperity', count: 6 },
+    { name: "Lieutenant's Insignia", count: 6 },
+    { name: 'Spirit Locket of Boreas', count: 1 }
+  ],
+  lvl9: [
+    { name: 'Mora', count: 450000 },
+    { name: 'Philosophies of Prosperity', count: 12 },
+    { name: "Lieutenant's Insignia", count: 9 },
+    { name: 'Spirit Locket of Boreas', count: 2 }
+  ],
+  lvl10: [
+    { name: 'Mora', count: 700000 },
+    { name: 'Philosophies of Prosperity', count: 16 },
+    { name: "Lieutenant's Insignia", count: 12 },
+    { name: 'Spirit Locket of Boreas', count: 2 },
+    { name: 'Crown of Insight', count: 1 }
+  ]
+}
+```
+
+</details>
+<details>
 <summary>genshindb.talents('<b>klee'</b>)<b>.passive3</b></summary>
 
 ```js

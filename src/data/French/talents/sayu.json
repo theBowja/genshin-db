@@ -1,0 +1,213 @@
+{
+	"name": "Sayu",
+	"combat1": {
+		"name": "Attaque normale : Lame ninja du Shuumatsuban",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups d'épée.\n\n**Attaque chargée**\nExécute une succession d'attaques tournoyantes contre les ennemis proches ; cette attaque consomme de l'endurance de façon continue.\nL'attaque chargée se termine sur un coup puissant.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}",
+				"DGT enchaînement attaque chargée|{param6:F1P}",
+				"DGT coup final attaque chargée|{param7:P}",
+				"Coût d'endurance attaque chargée|{param8:F1} pts/s",
+				"Durée max|{param9:F1} s",
+				"DGT durant la chute|{param10:F1P}",
+				"DGT chute basse/élevée|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "École Yoohoo : Course Fuuin",
+		"info": "La technique spéciale des ninjas de l'École Yoohoo !\nSe recroqueville sous la forme d'un tourbillon Fuufuu, qui inflige des DGT Anémo aux ennemis qu'elle percute à grande vitesse, pour terminer sur un coup de pied Fuufuu qui inflige des DGT Anémo de zone.\n\n**Appui simple**\nSe met sous la forme d'un tourbillon Fuufuu et roule vers l'avant sur une courte distance avant d'exécuter son coup de pied Fuufuu.\n\n**Appui long**\nRoule continuellement en tourbillon Fuufuu, augmentant la RÉS à l'interruption de Sayu.\nSayu peut contrôler la direction dans laquelle elle roule, et utiliser à nouveau la compétence permet de sortir de cet état et d'exécuter un coup de pied Fuufuu plus puissant.\nL'appui long de cette compétence peut déclencher une absorption élémentaire.\n\nCette compétence a une durée max de 10 s, et entre en TdR lorsque son effet prend fin. Plus Sayu reste longtemps en tourbillon Fuufuu, plus le TdR est long.\n\n**Absorption élémentaire**\nSi Sayu entre en contact avec les éléments Hydro, Pyro, Cryo et Électro lorsqu'elle est en tourbillon Fuufuu, elle obtient les attributs élémentaires correspondants, et le tourbillon Fuufuu ainsi que le coup de pied Fuufuu infligent des DGT supplémentaires de l'élément absorbé.\nL'absorption élémentaire ne peut se produire qu'une fois pendant la durée de la compétence.",
+		"description": "Sayu est capable d'exécuter cette technique les yeux fermés. Technique de fuite à la base, elle peut, maintenant qu'elle possède un œil divin, l'utiliser pour faire mordre la poussière à ses ennemis.",
+		"attributes": {
+			"labels": [
+				"DGT tourbillon Fuufuu|{param1:F1P}",
+				"DGT coup de pied Fuufuu (appui simple)|{param3:F1P}",
+				"DGT coup de pied Fuufuu (appui long)|{param4:F1P}",
+				"DGT élémentaires tourbillon Fuufuu|{param2:F1P}",
+				"DGT élémentaires coup de pied Fuufuu|{param5:F1P}",
+				"Durée max (appui long)|{param6:F1} s",
+				"Temps de recharge|{param7:F1} à {param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "École Yoohoo : Bourrasque du mujina",
+		"info": "Une autre technique spéciale des ninjas de l'École Yoohoo, qui fait appel à une invocation pour venir en aide à Sayu.\nInflige des DGT Anémo aux ennemis proches, et soigne tous les personnages de l'équipe proches d'une quantité de PV proportionnelle à l'ATQ de Sayu. Invoque également un Daruma Muji-muji.\n\n**Daruma Muji-muji**\nÀ intervalles réguliers, le Daruma Muji-muji agit de l'une des manières suivantes en fonction de la situation :\n· Lorsque les PV des personnages proches sont supérieurs à 70 %, le Daruma Muji-muji attaque un ennemi proche, à qui il inflige des DGT Anémo ;\n· Lorqu'un personnage déployé ayant 70 % ou moins de PV se trouve à proximité, le Daruma Muji-muji soigne le personnage déployé proche ayant le plus faible pourcentage de PV d'une quantité de PV proportionnelle à l'ATQ de Sayu. Si aucun ennemi ne se trouve à proximité et que les personnages ont tous plus de 70 % de leurs PV, le Daruma Muji-muji soigne aussi les personnages.",
+		"description": "Ceux qui ne comprennent rien au jujitsu adorent voir Sayu faire étalage de cette technique, et certains ont même essayé de l'apprendre auprès d'elle. Mais Sayu veut dormir et n'a aucune envie d'être dérangée.",
+		"attributes": {
+			"labels": [
+				"DGT à l'activation de la compétence|{param1:P}",
+				"Soins à l'activation de la compétence|{param3:F1P} ATQ + {param2:I}",
+				"DGT Daruma Muji-muji|{param4:P}",
+				"Soins Daruma Muji-muji|{param6:F1P} ATQ +{param5:I}",
+				"Durée|{param7:F1} s",
+				"Temps de recharge|{param8:F1} s",
+				"Énergie élémentaire|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Quelqu'un de plus efficace",
+		"info": "Lorsque Sayu déclenche une Dispersion, elle soigne les personnages de l'équipe ainsi que les personnages alliés proches à hauteur de 300 PV. Sayu récupère de plus 1,2 PV supplémentaires pour chacun de ses pts de maîtrise élémentaire.\nCet effet peut être déclenché une fois toutes les 2 s."
+	},
+	"passive2": {
+		"name": "Pas de boulot aujourd'hui !",
+		"info": "Confère au Daruma Muji-muji invoqué pendant **École Yoohoo : Bourrasque du mujina** les effets suivants :\n· Lorqu'il soigne un personnage, les personnages proches de ce dernier sont soignés à hauteur de 20 % des PV récupérés par le personnage ;\n· La zone de DGT infligés augmente lorsqu'il attaque un ennemi."
+	},
+	"passive3": {
+		"name": "École Yoohoo : Art du silence",
+		"info": "Quand Sayu fait partie de l'équipe, vos personnages n'effraient pas certains animaux, tels que le papillon cristallin.\nPour savoir quels sont les animaux concernés, consultez l'onglet « Divers » dans la section « Faune » du Bestiaire des Archives."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la lumière",
+				"count": 3
+			},
+			{
+				"name": "Nectar de Fleur mensongère",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la lumière",
+				"count": 2
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la lumière",
+				"count": 4
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la lumière",
+				"count": 6
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la lumière",
+				"count": 9
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 4
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 4
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 6
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 6
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 12
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 9
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 16
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 12
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

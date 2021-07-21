@@ -24,7 +24,7 @@ let folders = [
 	},
 	{
 		function: 'talents',
-		params: ['names, { matchCategories: true }', 'ninguang', 'klee/.passive3', 'mona/.combat1',
+		params: ['names, { matchCategories: true }', 'ninguang', 'ningguang/.costs', 'klee/.passive3', 'mona/.combat1',
 				 'mona/.combat2', 'mona/.combatsp', 'mona/.combat3', 'ballad, { matchCategories: true }',
 				 'dvalin sigh, { matchCategories: true }', 'arrowhead, { matchCategories: true }'],
 	},
