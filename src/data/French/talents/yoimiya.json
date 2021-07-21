@@ -1,0 +1,207 @@
+{
+	"name": "Yoimiya",
+	"combat1": {
+		"name": "Attaque normale : Flambée pyrotechnique",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 5 tirs consécutifs.\n\n**Attaque chargée**\nEffectue un **tir visé** plus précis et infligeant davantage de DGT.\nEn visant, des flammes viennent se concentrer sur le carreau de la flèche avant d'être tirées lors de l'attaque. L'effet varie selon le nombre de charges :\n· 1 charge : Tire une flèche enflammée qui inflige des DGT Pyro.\n· 2 charges : Génère jusqu'à 3 flèches chercheuses en fonction du temps de charge, qui sont libérées lors du tir visé. Les flèches suivent les ennemis proches, et infligent lorsqu'elles touchent des DGT Pyro.\n\n**Attaque plongeante**\nTire une pluie de flèches depuis les airs et plonge au sol, infligeant des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P} ×2",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P} x2",
+				"DGT 5e coup|{param5:F1P}",
+				"DGT tir visé|{param6:F1P}",
+				"DGT tir visé (pleine charge)|{param7:P}",
+				"DGT flèche chercheuse|{param8:P}",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Danse du feu « Niwabi »",
+		"info": "Yoimiya brandit un cierge magique, s'entourant d'un champ de salpêtres.\n\n**Niwabi Enshou**\nPendant la durée de cette aptitude, les flèches tirées lors de l'attaque normale de Yoimiya sont des flèches enflammées, infligeant davantage de DGT, et dont les DGT sont convertis en DGT Pyro. Durant cette période, le second niveau de charge de son attaque normale Flambée pyrotechnique ne génère pas de flèches chercheuses.\n\nL'effet s'arrête lorsque Yoimiya quitte le champ de bataille.",
+		"description": "Le « Niwabi » est une sorte de feux d'artifice à base d'encens inventé par Yoimiya, qui ne requiert aucune formation ou préparation préalable, ce qui le rend particulièrement populaire. Après plusieurs incidents, la Commission administrative a interdit l'usage du « Niwabi » dans l'enceinte de la ville, mais il arrive encore que de discrètes étincelles illuminent la nuit. Vues des hauteurs, on dirait de petites étoiles filantes.",
+		"attributes": {
+			"labels": [
+				"DGT flèche enflammée|{param4:F1P} DGT d'attaque",
+				"Durée|{param2:F1} s",
+				"Temps de recharge|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Saxifrage Ryuukin",
+		"info": "Yoimiya s'élance dans les airs avec sa création originale, le « Saxifrage Ryuukin » et tire des roquettes flamboyantes pleines de surprises, qui infligent des DGT Pyro de zone, et marquent un ennemi d'une « Flamme Ryuukin ».\n\n**Flamme Ryuukin**\nLes attaques normales, chargées et plongeantes, les compétences élémentaires et les déchaînements élémentaires de tous les personnages de l'équipe (hormis Yoimiya) génèrent une explosion lorsqu'elles touchent un ennemi marqué d'une Flamme Ryuukin, infligeant des DGT Pyro de zone.\nLorsqu'un ennemi marqué d'une Flamme Ryuukin est vaincu avant la fin de l'effet, ce dernier est transféré à un ennemi proche qui hérite de la durée restante.\n\nIl est possible de générer ainsi une explosion toutes les 2 s max. Quand Yoimiya est vaincue, l'effet des Flammes Ryuukin générées par ses aptitudes prend fin.",
+		"description": "Les feux d'artifice sont les étoiles créées par l'homme, comètes destinées aux cieux. Et même si elle n'est qu'éphémère, la lumière qu'ils génèrent peut demeurer longtemps dans le cœur des hommes.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:P}",
+				"DGT explosion de la Flamme Ryuukin|{param2:P}",
+				"Durée|{param4:F1} s",
+				"Temps de recharge|{param5:F1} s",
+				"Énergie élémentaire|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Tour de passe-passe",
+		"info": "Tant que **Danse du feu « Niwabi »** est active, les attaques normales de Yoimiya augmentent son bonus de DGT Pyro de 2 %. Cet effet dure 3 s et peut être cumulé jusqu'à 10 fois."
+	},
+	"passive2": {
+		"name": "Aube d'une nuit d'été",
+		"info": "Lorsque Yoimiya libère **Saxifrage Ryuukin**, l'ATQ de tous les autres personnages de l'équipe (hormis Yoimiya) augmente de 10 % pendant 15 s. De plus, chaque cumul de l'aptitude passive « Tour de passe-passe » que Yoimiyo possède lorsqu'elle exécute **Saxifrage d'or** augmente ce bonus d'ATQ de 1 %."
+	},
+	"passive3": {
+		"name": "Rentabilisation maximum",
+		"info": "Yoimiya a 100 % de chances de récupérer une partie des matériaux utilisés en fabriquant des décorations, des aménagements ou des décorations de paysage."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'éphémère",
+				"count": 3
+			},
+			{
+				"name": "Parchemin divinatoire",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'éphémère",
+				"count": 2
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'éphémère",
+				"count": 4
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'éphémère",
+				"count": 6
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'éphémère",
+				"count": 9
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 4
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 4
+			},
+			{
+				"name": "Couronne du roi dragon",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 6
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 6
+			},
+			{
+				"name": "Couronne du roi dragon",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 12
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 9
+			},
+			{
+				"name": "Couronne du roi dragon",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 16
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 12
+			},
+			{
+				"name": "Couronne du roi dragon",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

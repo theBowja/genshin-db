@@ -1,0 +1,207 @@
+{
+	"name": "Yoimiya",
+	"combat1": {
+		"name": "Ataque Normal: Pirotecnia",
+		"info": "**Ataque Normal**\nRealiza hasta 5 disparos consecutivos con arco.\n\n**Ataque Cargado**\nRealiza un **Disparo Preciso** que inflige mayor daño y tiene mayor precisión.\nMientras se apunta, unas llamas se acumularán en la punta de la flecha antes de que esta sea disparada. Sus efectos serán distintos dependiendo de durante cuánto tiempo se haya cargado:\n·Carga 1: Dispara una flecha ardiente que inflige Daño Pyro.\n·Carga 2: Dependiendo del tiempo de carga, dispara hasta un máximo de 3 flechas abrasadoras que son liberadas cuando Yoimiya ejecuta este Disparo Preciso. Las flechas abrasadoras perseguirán por sí solas a los enemigos cercanos y, al alcanzarlos, infligirán Daño Pyro contra ellos.\n\n**Ataque Descendente**\nDispara una lluvia de flechas desde el aire mientras desciende rápidamente, infligiendo Daño en el AdE al impactar contra el suelo.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P} ×2",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P} ×2",
+				"Daño de 5.º golpe|{param5:F1P}",
+				"Disparo Preciso|{param6:F1P}",
+				"Disparo Preciso (carga completa)|{param7:P}",
+				"Daño de flecha abrasadora|{param8:P}",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Danza de la pólvora",
+		"info": "Yoimiya agita una bengala para que un anillo chispeante la rodee.\n\n**Nitrofogata**\nMientras este efecto esté activo, las flechas que dispara Yoimiya con sus Ataques Normales se convierten en flechas flamígeras cuyo daño no solo aumenta, sino que también se convierte en Daño Pyro. Mientras dure la nitrofogata, las flechas disparadas con la Carga 2 de Ataque Normal: Pirotecnia no generarán flechas abrasadoras.\n\nEste efecto se disipará una vez que Yoimiya sea retirada de combate.",
+		"description": "Las nitrofogatas son un tipo de fuegos artificiales en barritas inventado por Yoimiya. Para prenderlas, no se necesita ninguna preparación ni entrenamiento previos, por lo que gozan de gran popularidad. Tras varios incidentes ocasionados por el fuego, la Comisión Tenryou prohibió prender nitrofogatas dentro de la ciudad. Sin embargo, pequeñas chispas brillantes siguen viéndose con frecuencia durante la noche. De hecho, si se observa desde un punto elevado, parecen como estrellas con una luz titilante.",
+		"attributes": {
+			"labels": [
+				"Daño de flecha flamígera|{param4:F1P} del daño de ATQ Normal",
+				"Duración|{param2:F1} s",
+				"TdE|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Saxifraga de oro",
+		"info": "Tras lanzar hacia el cielo su creación, la saxifraga de oro, Yoimiya dispara cohetes ardientes sorpresa que infligen Daño Pyro en el AdE y que aplican el efecto de ascua dorada sobre uno de los enemigos golpeados.\n\n**Ascua dorada**\nCuando cualquier personaje del equipo (a excepción de Yoimiya) ataca al enemigo afectado por ascua dorada con Ataques Normales, Cargados o Descendentes o con la Habilidad Elemental o Definitiva, ocurrirá una explosión que inflige Daño Pyro en el AdE.\nSi un enemigo afectado por ascua dorada es derrotado, este efecto pasará a otro enemigo cercano, el cual heredará la duración restante.\n\nSolo se puede generar una explosión cada 2 s con ascua dorada y, cuando Yoimiya es derrotada, dicho efecto aplicado por ella misma se disipará.",
+		"description": "Los fuegos artificiales son como estrellas creadas por el ser humano, cometas que se dirigen hacia el cielo. Aunque solo duren un pequeño instante, su resplandeciente brillo quedará grabado para siempre en el corazón de las personas.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:P}",
+				"Daño de explosión de ascua dorada|{param2:P}",
+				"Duración|{param4:F1} s",
+				"TdE|{param5:F1} s",
+				"Energía Elemental|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Truco ígneo",
+		"info": "Mientras está activo el efecto de **Danza de la pólvora**, si Yoimiya golpea a un enemigo con un Ataque Normal, obtiene un 2% de Bono de Daño Pyro durante 3 s. Este efecto puede acumularse hasta 10 veces."
+	},
+	"passive2": {
+		"name": "Sofoco estival",
+		"info": "Tras realizar **Saxifraga de oro**, el ATQ de todos los miembros del equipo (a excepción de Yoimiya) aumenta en un 10% durante 15 s. Además, en función del número de acumulaciones de Truco ígneo en el momento de ejecutar **Saxifraga de oro**, el ATQ aumentará aún más, concretamente, un 1% por cada acumulación."
+	},
+	"passive3": {
+		"name": "Ornamentación flagrante",
+		"info": "Al fabricar decoraciones, artículos decorativos y decoraciones de paisaje, hay una probabilidad del 100% de recuperar parte de los materiales usados."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la transitoriedad",
+				"count": 3
+			},
+			{
+				"name": "Pergamino guía",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 2
+			},
+			{
+				"name": "Pergamino hechizado",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 4
+			},
+			{
+				"name": "Pergamino hechizado",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 6
+			},
+			{
+				"name": "Pergamino hechizado",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 9
+			},
+			{
+				"name": "Pergamino hechizado",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 4
+			},
+			{
+				"name": "Pergamino maldito",
+				"count": 4
+			},
+			{
+				"name": "Corona del rey dragón",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 6
+			},
+			{
+				"name": "Pergamino maldito",
+				"count": 6
+			},
+			{
+				"name": "Corona del rey dragón",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 12
+			},
+			{
+				"name": "Pergamino maldito",
+				"count": 9
+			},
+			{
+				"name": "Corona del rey dragón",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 16
+			},
+			{
+				"name": "Pergamino maldito",
+				"count": 12
+			},
+			{
+				"name": "Corona del rey dragón",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

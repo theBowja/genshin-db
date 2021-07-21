@@ -381,7 +381,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
-// importData('materials', collateMaterial, undefined, true);
+importData('materials', collateMaterial, undefined, true);
 
-getUpperBodyImages(); // must be separate
+// getUpperBodyImages(); // must be separate
 // updateURLs(); // must be separate

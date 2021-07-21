@@ -1,0 +1,206 @@
+{
+	"name": "Reisende (Elektro)",
+	"combat1": {
+		"name": "Standardangriff: Gewitter aus der Fremde",
+		"info": "**Standardangriff**\nFührt bis zu 5 Schwerthiebe aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer und schwingt das Schwert zweimal schnell nach vorn.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P}",
+				"SCH Phase 5|{param5:F1P}",
+				"SCH heftiger Schläge|{param6:F1P} + {param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Blitzschattenschwert",
+		"info": "Führt drei schnelle Blitzschattenhiebe aus, die Gegnern Elektro-Schaden zufügen und Amulette des Überflusses bei getroffenen Gegnern hinterlassen.\nKann anfänglich bis zu 2 Amulette des Überflusses erschaffen. Entfernt bei Anwendung dieser Fähigkeit alle bereits selbst erschaffenen Amulette des Überflusses.\n\n**Amulette des Überflusses**\nNähert sich eine Figur den Amuletten des Überflusses, werden folgende Effekte ausgelöst:\n- Stellt Elementarenergie wieder her.\n- Erhöht die Aufladerate während der Wirkungsdauer.",
+		"description": "Du hast mit Paimon darüber gesprochen, wie sich Elektrizität ausbreitet.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:P}",
+				"Elementarenergie-Wiederherstellung|{param2:F1}",
+				"Aufladeratenbonus|{param4:P}",
+				"Dauer|{param5:F1} s",
+				"Vorhandensein von Amuletten des Überflusses|{param3:F1} s",
+				"Abklingzeit|{param6:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Rollender Donner",
+		"info": "Du beschwörst den Schutz der Blitze an deine Seite, stößt Gegner in der Umgebung zurück und verursachst Elektro-Schaden.\n\n**Blitzgewand**\nBeschwört beim Treffen von Gegnern mit Standardangriffen oder heftigen Schlägen der aktuellen eigenen Figur einen grellen Blitzschlag und fügt Gegnern Elektro-Schaden zu.\nStellt beim Treffen von Gegnern mit grellen Blitzschlägen der jeweiligen Figur Elementarenergie wieder her.\n0,5 s Abklingzeit für grelle Blitzschläge.",
+		"description": "Du hast mit Paimon die Lichter untersucht, die durch die Wolken zischen.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P}",
+				"SCH greller Blitzschläge|{param2:F1P}",
+				"Elementarenergie-Wiederherstellung|{param3:F1}",
+				"Dauer|{param4:F1} s",
+				"Abklingzeit|{param5:F1} s",
+				"Elementarenergie|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Aufleuchten des Donners",
+		"info": "Verkürzt beim Aufnehmen von Amuletten des Überflusses, die durch **Blitzschattenschwert** entstanden sind, durch andere Truppenmitglieder in der Nähe die Abklingzeit von **Blitzschattenschwert** um 1,5 s."
+	},
+	"passive2": {
+		"name": "Widerhallender Donner",
+		"info": "Erhöht den Aufladerateneffekt der Amulette des Überflusses von **Blitzschattenschwert** um 10 % der Aufladerate {F#der}{M#des} Reisenden selbst."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Vergänglichkeit“",
+				"count": 3
+			},
+			{
+				"name": "Alter Handschutz",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Eleganz“",
+				"count": 2
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zum „Licht“",
+				"count": 4
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Vergänglichkeit“",
+				"count": 6
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Eleganz“",
+				"count": 9
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie des „Lichts“",
+				"count": 4
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 4
+			},
+			{
+				"name": "Horn des Drachenkönigs",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Vergänglichkeit“",
+				"count": 6
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 6
+			},
+			{
+				"name": "Horn des Drachenkönigs",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Eleganz“",
+				"count": 12
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 9
+			},
+			{
+				"name": "Horn des Drachenkönigs",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie des „Lichts“",
+				"count": 16
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 12
+			},
+			{
+				"name": "Horn des Drachenkönigs",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}
