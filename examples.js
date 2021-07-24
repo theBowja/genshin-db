@@ -48,7 +48,9 @@ let folders = [
 	},
 	{
 		function: 'materials',
-		params: ['ballad', 'sigh', 'iron', 'monday, { matchCategories: true }', 'ingredient, { matchCategories: true }',
+		params: ['ballad', 'talent material, { matchCategories: true }',
+				 'weapon material, { matchCategories: true, verboseCategories: true }/.filter(ele => ele.rarity === "2").map(ele => ele.name)',
+				 'dvalin sigh', 'iron', 'monday, { matchCategories: true }', 'ingredient, { matchCategories: true }',
 		         'liyue, { matchCategories: true }'],
 	},
 	{

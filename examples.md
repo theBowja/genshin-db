@@ -1506,7 +1506,62 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
-<summary>genshindb.materials('<b>sigh'</b>)</summary>
+<summary>genshindb.materials('<b>talent material', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Crown of Insight',
+  'Guide to Ballad',
+  'Guide to Diligence',
+  'Guide to Elegance',
+  'Guide to Freedom',
+  'Guide to Gold',
+  'Guide to Light',
+  'Guide to Prosperity',
+  'Guide to Resistance',
+  'Guide to Transience',
+  'Philosophies of Ballad',
+  'Philosophies of Diligence',
+  'Philosophies of Elegance',
+  'Philosophies of Freedom',
+  'Philosophies of Gold',
+  'Philosophies of Light',
+  'Philosophies of Prosperity',
+  'Philosophies of Resistance',
+  'Philosophies of Transience',
+  'Teachings of Ballad',
+  'Teachings of Diligence',
+  'Teachings of Elegance',
+  'Teachings of Freedom',
+  'Teachings of Gold',
+  'Teachings of Light',
+  'Teachings of Prosperity',
+  'Teachings of Resistance',
+  'Teachings of Transience'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.materials('<b>weapon material', { matchCategories: true, verboseCategories: true }</b>)<b>.filter(ele => ele.rarity === "2").map(ele => ele.name)</b></summary>
+
+```js
+[
+  "Boreal Wolf's Milk Tooth",
+  'Coral Branch of a Distant Sea',
+  'Fetters of the Dandelion Gladiator',
+  'Grain of Aerosiderite',
+  'Luminous Sands from Guyun',
+  'Mask of the Wicked Lieutenant',
+  'Mist Veiled Lead Elixir',
+  "Narukami's Wisdom",
+  "Tile of Decarabian's Tower"
+]
+```
+
+</details>
+<details>
+<summary>genshindb.materials('<b>dvalin sigh'</b>)</summary>
 
 ```js
 {
