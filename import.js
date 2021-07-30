@@ -182,6 +182,7 @@ function collateCharacter(existing, newdata, lang) {
 		myimages.characters
 	}
 	existing.cv = newdata.cv;
+	existing.costs = newdata.costs;
 	// existing.talentmaterialtype = newdata.talentmaterialtype || '';
 	existing.url = newdata.url;
 }
@@ -252,6 +253,7 @@ function collateWeapon(existing, inputdata) {
 	existing.r5 = inputdata.r5 || [];
 
 	existing.weaponmaterialtype = inputdata.weaponmaterialtype || '';
+	existing.costs = inputdata.costs;
 }
 
 function collateArtifact(existing, newdata) {
@@ -373,15 +375,15 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 }
 
 
-// importData('characters', collateCharacter);
+importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
+importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
-importData('materials', collateMaterial, undefined, true);
+// importData('materials', collateMaterial, undefined, true);
 
 // getUpperBodyImages(); // must be separate
 // updateURLs(); // must be separate

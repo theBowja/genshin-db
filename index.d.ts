@@ -187,6 +187,14 @@ export interface Character {
         japanese: string;
         korean: string;
     };
+    costs: {
+        "ascend1": Items[];
+        "ascend2": Items[];
+        "ascend3": Items[];
+        "ascend4": Items[];
+        "ascend5": Items[];
+        "ascend6": Items[];
+    };
     images: {
         image?: string;    // wikia
         card?: string;     // wikia
@@ -435,6 +443,14 @@ export interface Weapon {
     r4: string[];
     r5: string[];
     weaponmaterialtype: string; // English only
+    costs: {
+        "ascend1": Items[];
+        "ascend2": Items[];
+        "ascend3": Items[];
+        "ascend4": Items[];
+        "ascend5"?: Items[]; // 1 and 2 star weapons only have 4 ascensions
+        "ascend6"?: Items[]; // 1 and 2 star weapons only have 4 ascensions
+    };
     images: {
         image?: string; // wikia
         icon: string; // hoyolab
