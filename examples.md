@@ -69,6 +69,49 @@ const genshindb = require('genshin-db');
     japanese: '上田麗奈',
     korean: '김선혜'
   },
+  costs: {
+    ascend1: [
+      { name: 'Mora', count: 20000 },
+      { name: 'Shivada Jade Sliver', count: 1 },
+      { name: 'Qingxin', count: 3 },
+      { name: 'Whopperflower Nectar', count: 3 }
+    ],
+    ascend2: [
+      { name: 'Mora', count: 40000 },
+      { name: 'Shivada Jade Fragment', count: 3 },
+      { name: 'Hoarfrost Core', count: 2 },
+      { name: 'Qingxin', count: 10 },
+      { name: 'Whopperflower Nectar', count: 15 }
+    ],
+    ascend3: [
+      { name: 'Mora', count: 60000 },
+      { name: 'Shivada Jade Fragment', count: 6 },
+      { name: 'Hoarfrost Core', count: 4 },
+      { name: 'Qingxin', count: 20 },
+      { name: 'Shimmering Nectar', count: 12 }
+    ],
+    ascend4: [
+      { name: 'Mora', count: 80000 },
+      { name: 'Shivada Jade Chunk', count: 3 },
+      { name: 'Hoarfrost Core', count: 8 },
+      { name: 'Qingxin', count: 30 },
+      { name: 'Shimmering Nectar', count: 18 }
+    ],
+    ascend5: [
+      { name: 'Mora', count: 100000 },
+      { name: 'Shivada Jade Chunk', count: 6 },
+      { name: 'Hoarfrost Core', count: 12 },
+      { name: 'Qingxin', count: 45 },
+      { name: 'Energy Nectar', count: 12 }
+    ],
+    ascend6: [
+      { name: 'Mora', count: 120000 },
+      { name: 'Shivada Jade Gemstone', count: 6 },
+      { name: 'Hoarfrost Core', count: 20 },
+      { name: 'Qingxin', count: 60 },
+      { name: 'Energy Nectar', count: 24 }
+    ]
+  },
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png',
@@ -81,6 +124,56 @@ const genshindb = require('genshin-db');
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Ganyu' },
   stats: [Function (anonymous)]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>ayaka'</b>)<b>.costs</b></summary>
+
+```js
+{
+  ascend1: [
+    { name: 'Mora', count: 20000 },
+    { name: 'Shivada Jade Sliver', count: 1 },
+    { name: 'Sakura Bloom', count: 3 },
+    { name: 'Old Handguard', count: 3 }
+  ],
+  ascend2: [
+    { name: 'Mora', count: 40000 },
+    { name: 'Shivada Jade Fragment', count: 3 },
+    { name: 'Perpetual Heart', count: 2 },
+    { name: 'Sakura Bloom', count: 10 },
+    { name: 'Old Handguard', count: 15 }
+  ],
+  ascend3: [
+    { name: 'Mora', count: 60000 },
+    { name: 'Shivada Jade Fragment', count: 6 },
+    { name: 'Perpetual Heart', count: 4 },
+    { name: 'Sakura Bloom', count: 20 },
+    { name: 'Kageuchi Handguard', count: 12 }
+  ],
+  ascend4: [
+    { name: 'Mora', count: 80000 },
+    { name: 'Shivada Jade Chunk', count: 3 },
+    { name: 'Perpetual Heart', count: 8 },
+    { name: 'Sakura Bloom', count: 30 },
+    { name: 'Kageuchi Handguard', count: 18 }
+  ],
+  ascend5: [
+    { name: 'Mora', count: 100000 },
+    { name: 'Shivada Jade Chunk', count: 6 },
+    { name: 'Perpetual Heart', count: 12 },
+    { name: 'Sakura Bloom', count: 45 },
+    { name: 'Famed Handguard', count: 12 }
+  ],
+  ascend6: [
+    { name: 'Mora', count: 120000 },
+    { name: 'Shivada Jade Gemstone', count: 6 },
+    { name: 'Perpetual Heart', count: 20 },
+    { name: 'Sakura Bloom', count: 60 },
+    { name: 'Famed Handguard', count: 24 }
+  ]
 }
 ```
 
@@ -110,6 +203,49 @@ const genshindb = require('genshin-db');
     chinese: '蔡书瑾',
     japanese: '石見舞菜香',
     korean: '김연우'
+  },
+  costs: {
+    ascend1: [
+      { name: 'モラ', count: 20000 },
+      { name: '炎願のアゲート·砕屑', count: 1 },
+      { name: 'イグサ', count: 3 },
+      { name: '牢固な矢先', count: 3 }
+    ],
+    ascend2: [
+      { name: 'モラ', count: 40000 },
+      { name: '炎願のアゲート·欠片', count: 3 },
+      { name: '常燃の火種', count: 2 },
+      { name: 'イグサ', count: 10 },
+      { name: '牢固な矢先', count: 15 }
+    ],
+    ascend3: [
+      { name: 'モラ', count: 60000 },
+      { name: '炎願のアゲート·欠片', count: 6 },
+      { name: '常燃の火種', count: 4 },
+      { name: 'イグサ', count: 20 },
+      { name: '鋭利な矢先', count: 12 }
+    ],
+    ascend4: [
+      { name: 'モラ', count: 80000 },
+      { name: '炎願のアゲート·塊', count: 3 },
+      { name: '常燃の火種', count: 8 },
+      { name: 'イグサ', count: 30 },
+      { name: '鋭利な矢先', count: 18 }
+    ],
+    ascend5: [
+      { name: 'モラ', count: 100000 },
+      { name: '炎願のアゲート·塊', count: 6 },
+      { name: '常燃の火種', count: 12 },
+      { name: 'イグサ', count: 45 },
+      { name: '歴戦の矢先', count: 12 }
+    ],
+    ascend6: [
+      { name: 'モラ', count: 120000 },
+      { name: '炎願のアゲート', count: 6 },
+      { name: '常燃の火種', count: 20 },
+      { name: 'イグサ', count: 60 },
+      { name: '歴戦の矢先', count: 24 }
+    ]
   },
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
@@ -153,6 +289,49 @@ const genshindb = require('genshin-db');
     japanese: '石見舞菜香',
     korean: '김연우'
   },
+  costs: {
+    ascend1: [
+      { name: 'Mora', count: 20000 },
+      { name: 'Pedacito de ágata agnidus', count: 1 },
+      { name: 'Lucetta', count: 3 },
+      { name: 'Flecha robusta', count: 3 }
+    ],
+    ascend2: [
+      { name: 'Mora', count: 40000 },
+      { name: 'Fragmento de ágata agnidus', count: 3 },
+      { name: 'Semilla de fuego eterno', count: 2 },
+      { name: 'Lucetta', count: 10 },
+      { name: 'Flecha robusta', count: 15 }
+    ],
+    ascend3: [
+      { name: 'Mora', count: 60000 },
+      { name: 'Fragmento de ágata agnidus', count: 6 },
+      { name: 'Semilla de fuego eterno', count: 4 },
+      { name: 'Lucetta', count: 20 },
+      { name: 'Flecha afilada', count: 12 }
+    ],
+    ascend4: [
+      { name: 'Mora', count: 80000 },
+      { name: 'Trozo de ágata agnidus', count: 3 },
+      { name: 'Semilla de fuego eterno', count: 8 },
+      { name: 'Lucetta', count: 30 },
+      { name: 'Flecha afilada', count: 18 }
+    ],
+    ascend5: [
+      { name: 'Mora', count: 100000 },
+      { name: 'Trozo de ágata agnidus', count: 6 },
+      { name: 'Semilla de fuego eterno', count: 12 },
+      { name: 'Lucetta', count: 45 },
+      { name: 'Flecha veterana', count: 12 }
+    ],
+    ascend6: [
+      { name: 'Mora', count: 120000 },
+      { name: 'Ágata agnidus', count: 6 },
+      { name: 'Semilla de fuego eterno', count: 20 },
+      { name: 'Lucetta', count: 60 },
+      { name: 'Flecha veterana', count: 24 }
+    ]
+  },
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
@@ -195,6 +374,49 @@ const genshindb = require('genshin-db');
     japanese: '木村良平',
     korean: '남도형'
   },
+  costs: {
+    ascend1: [
+      { name: 'Mora', count: 20000 },
+      { name: 'Varunada Lazurite Sliver', count: 1 },
+      { name: 'Starconch', count: 3 },
+      { name: "Recruit's Insignia", count: 3 }
+    ],
+    ascend2: [
+      { name: 'Mora', count: 40000 },
+      { name: 'Varunada Lazurite Fragment', count: 3 },
+      { name: 'Cleansing Heart', count: 2 },
+      { name: 'Starconch', count: 10 },
+      { name: "Recruit's Insignia", count: 15 }
+    ],
+    ascend3: [
+      { name: 'Mora', count: 60000 },
+      { name: 'Varunada Lazurite Fragment', count: 6 },
+      { name: 'Cleansing Heart', count: 4 },
+      { name: 'Starconch', count: 20 },
+      { name: "Sergeant's Insignia", count: 12 }
+    ],
+    ascend4: [
+      { name: 'Mora', count: 80000 },
+      { name: 'Varunada Lazurite Chunk', count: 3 },
+      { name: 'Cleansing Heart', count: 8 },
+      { name: 'Starconch', count: 30 },
+      { name: "Sergeant's Insignia", count: 18 }
+    ],
+    ascend5: [
+      { name: 'Mora', count: 100000 },
+      { name: 'Varunada Lazurite Chunk', count: 6 },
+      { name: 'Cleansing Heart', count: 12 },
+      { name: 'Starconch', count: 45 },
+      { name: "Lieutenant's Insignia", count: 12 }
+    ],
+    ascend6: [
+      { name: 'Mora', count: 120000 },
+      { name: 'Varunada Lazurite Gemstone', count: 6 },
+      { name: 'Cleansing Heart', count: 20 },
+      { name: 'Starconch', count: 60 },
+      { name: "Lieutenant's Insignia", count: 24 }
+    ]
+  },
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png',
@@ -236,6 +458,49 @@ const genshindb = require('genshin-db');
     chinese: '喵酱',
     japanese: '村瀬歩',
     korean: '정유정'
+  },
+  costs: {
+    ascend1: [
+      { name: 'Mora', count: 20000 },
+      { name: 'Vayuda Turquoise Sliver', count: 1 },
+      { name: 'Cecilia', count: 3 },
+      { name: 'Slime Condensate', count: 3 }
+    ],
+    ascend2: [
+      { name: 'Mora', count: 40000 },
+      { name: 'Vayuda Turquoise Fragment', count: 3 },
+      { name: 'Hurricane Seed', count: 2 },
+      { name: 'Cecilia', count: 10 },
+      { name: 'Slime Condensate', count: 15 }
+    ],
+    ascend3: [
+      { name: 'Mora', count: 60000 },
+      { name: 'Vayuda Turquoise Fragment', count: 6 },
+      { name: 'Hurricane Seed', count: 4 },
+      { name: 'Cecilia', count: 20 },
+      { name: 'Slime Secretions', count: 12 }
+    ],
+    ascend4: [
+      { name: 'Mora', count: 80000 },
+      { name: 'Vayuda Turquoise Chunk', count: 3 },
+      { name: 'Hurricane Seed', count: 8 },
+      { name: 'Cecilia', count: 30 },
+      { name: 'Slime Secretions', count: 18 }
+    ],
+    ascend5: [
+      { name: 'Mora', count: 100000 },
+      { name: 'Vayuda Turquoise Chunk', count: 6 },
+      { name: 'Hurricane Seed', count: 12 },
+      { name: 'Cecilia', count: 45 },
+      { name: 'Slime Concentrate', count: 12 }
+    ],
+    ascend6: [
+      { name: 'Mora', count: 120000 },
+      { name: 'Vayuda Turquoise Gemstone', count: 6 },
+      { name: 'Hurricane Seed', count: 20 },
+      { name: 'Cecilia', count: 60 },
+      { name: 'Slime Concentrate', count: 24 }
+    ]
   },
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
@@ -1350,6 +1615,44 @@ const genshindb = require('genshin-db');
   r4: [ '14%' ],
   r5: [ '16%' ],
   weaponmaterialtype: 'Dandelion Gladiator',
+  costs: {
+    ascend1: [
+      { name: 'Mora', count: 10000 },
+      { name: 'Fetters of the Dandelion Gladiator', count: 5 },
+      { name: 'Chaos Device', count: 5 },
+      { name: 'Slime Condensate', count: 3 }
+    ],
+    ascend2: [
+      { name: 'Mora', count: 20000 },
+      { name: 'Chains of the Dandelion Gladiator', count: 5 },
+      { name: 'Chaos Device', count: 18 },
+      { name: 'Slime Condensate', count: 12 }
+    ],
+    ascend3: [
+      { name: 'Mora', count: 30000 },
+      { name: 'Chains of the Dandelion Gladiator', count: 9 },
+      { name: 'Chaos Circuit', count: 9 },
+      { name: 'Slime Secretions', count: 9 }
+    ],
+    ascend4: [
+      { name: 'Mora', count: 45000 },
+      { name: 'Shackles of the Dandelion Gladiator', count: 5 },
+      { name: 'Chaos Circuit', count: 18 },
+      { name: 'Slime Secretions', count: 14 }
+    ],
+    ascend5: [
+      { name: 'Mora', count: 55000 },
+      { name: 'Shackles of the Dandelion Gladiator', count: 9 },
+      { name: 'Chaos Core', count: 14 },
+      { name: 'Slime Concentrate', count: 9 }
+    ],
+    ascend6: [
+      { name: 'Mora', count: 65000 },
+      { name: 'Dream of the Dandelion Gladiator', count: 6 },
+      { name: 'Chaos Core', count: 27 },
+      { name: 'Slime Concentrate', count: 18 }
+    ]
+  },
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
@@ -1359,6 +1662,84 @@ const genshindb = require('genshin-db');
     fandom: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
   },
   stats: [Function (anonymous)]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.weapons('<b>staff homa'</b>)<b>.costs</b></summary>
+
+```js
+{
+  ascend1: [
+    { name: 'Mora', count: 10000 },
+    { name: 'Grain of Aerosiderite', count: 5 },
+    { name: 'Dead Ley Line Branch', count: 5 },
+    { name: 'Slime Condensate', count: 3 }
+  ],
+  ascend2: [
+    { name: 'Mora', count: 20000 },
+    { name: 'Piece of Aerosiderite', count: 5 },
+    { name: 'Dead Ley Line Branch', count: 18 },
+    { name: 'Slime Condensate', count: 12 }
+  ],
+  ascend3: [
+    { name: 'Mora', count: 30000 },
+    { name: 'Piece of Aerosiderite', count: 9 },
+    { name: 'Dead Ley Line Leaves', count: 9 },
+    { name: 'Slime Secretions', count: 9 }
+  ],
+  ascend4: [
+    { name: 'Mora', count: 45000 },
+    { name: 'Bit of Aerosiderite', count: 5 },
+    { name: 'Dead Ley Line Leaves', count: 18 },
+    { name: 'Slime Secretions', count: 14 }
+  ],
+  ascend5: [
+    { name: 'Mora', count: 55000 },
+    { name: 'Bit of Aerosiderite', count: 9 },
+    { name: 'Ley Line Sprout', count: 14 },
+    { name: 'Slime Concentrate', count: 9 }
+  ],
+  ascend6: [
+    { name: 'Mora', count: 65000 },
+    { name: 'Chunk of Aerosiderite', count: 6 },
+    { name: 'Ley Line Sprout', count: 27 },
+    { name: 'Slime Concentrate', count: 18 }
+  ]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.weapons('<b>iron point'</b>)<b>.costs</b></summary>
+
+```js
+{
+  ascend1: [
+    { name: 'Mora', count: 5000 },
+    { name: 'Fetters of the Dandelion Gladiator', count: 1 },
+    { name: 'Chaos Device', count: 1 },
+    { name: 'Divining Scroll', count: 1 }
+  ],
+  ascend2: [
+    { name: 'Mora', count: 5000 },
+    { name: 'Chains of the Dandelion Gladiator', count: 1 },
+    { name: 'Chaos Device', count: 5 },
+    { name: 'Divining Scroll', count: 4 }
+  ],
+  ascend3: [
+    { name: 'Mora', count: 10000 },
+    { name: 'Chains of the Dandelion Gladiator', count: 3 },
+    { name: 'Chaos Circuit', count: 3 },
+    { name: 'Sealed Scroll', count: 3 }
+  ],
+  ascend4: [
+    { name: 'Mora', count: 15000 },
+    { name: 'Shackles of the Dandelion Gladiator', count: 1 },
+    { name: 'Chaos Circuit', count: 5 },
+    { name: 'Sealed Scroll', count: 4 }
+  ]
 }
 ```
 
