@@ -14,8 +14,12 @@ let header = `# Examples\n\nFirst start off with:\n${codeStart()}const ${libname
 let folders = [
 	{
 		function: 'characters',
-		params: ['names, { matchCategories: true }', 'ganyu', 'amber, { resultLanguage: \'JP\' }',
-				 'アンバー, { queryLanguages: \'Japanese\', resultLanguage: \'Spanish\' }', 'childe, { matchAliases: true }',
+		params: ['names, { matchCategories: true }',
+				 'ganyu',
+				 'ayaka/.costs',
+				 'amber, { resultLanguage: \'JP\' }',
+				 'アンバー, { queryLanguages: \'Japanese\', resultLanguage: \'Spanish\' }',
+				 'childe, { matchAliases: true }',
 				 'carmen, { matchAliases: true }',
 				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
 				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
@@ -35,7 +39,10 @@ let folders = [
 	{
 		function: 'weapons',
 		params: ['names, { matchCategories: true }',
-				 'lost prayers', 'decarabian, { matchCategories: true }',
+				 'lost prayers',
+				 'staff homa/.costs',
+				 'iron point/.costs',
+				 'decarabian, { matchCategories: true }',
 				 'dull blade/.stats(49)', 'sac sword/.stats(80, \'+\')', 'wolf grave/.stats(90)'],
 	},
 	{
