@@ -359,7 +359,7 @@ export interface Talent {
     aliases?: string[];
     combat1: CombatTalentDetail;
     combat2: CombatTalentDetail;
-    combatsp?: CombatTalentDetail; // for mona
+    combatsp?: CombatTalentDetail; // for mona/ayaka
     combat3: CombatTalentDetail;
     passive1: PassiveTalentDetail;
     passive2: PassiveTalentDetail;
@@ -378,11 +378,11 @@ export interface Talent {
     images?: { // images for talents aren't available yet
         combat1: string;
         combat2: string;
-        combatsp: string;
+        combatsp?: string; // for mona/ayaka
         combat3: string;
         passive1: string;
         passive2: string;
-        passive3: string;
+        passive3?: string; // player character doesn't have a third talent
     };
 }
 
