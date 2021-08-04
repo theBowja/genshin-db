@@ -161,6 +161,7 @@ async function getRedirectImages() {
 
 			if(mytalent.passive3) {
 				let passive3 = sanitize(mytalent.passive3.name);
+				if(mytalent.name === 'Albedo') passive3 = passive3 + '_%28Albedo%29';
 				existing[filename].passive3 = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${passive3}.png`) || '';
 			}
 		}
