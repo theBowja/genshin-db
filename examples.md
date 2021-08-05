@@ -11,8 +11,6 @@ const genshindb = require('genshin-db');
 - [genshindb.talents(query[, opts])](#genshindbtalentsquery-opts)
 - [genshindb.constellations(query[, opts])](#genshindbconstellationsquery-opts)
 - [genshindb.weapons(query[, opts])](#genshindbweaponsquery-opts)
-- [genshindb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
-- [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
 - [genshindb.materials(query[, opts])](#genshindbmaterialsquery-opts)
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
 - [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
@@ -515,6 +513,14 @@ const genshindb = require('genshin-db');
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Venti' },
   stats: [Function (anonymous)]
 }
+```
+
+</details>
+<details>
+<summary>genshindb.characters('<b>arrowhead', { matchCategories: true }</b>)</summary>
+
+```js
+[ 'Amber', 'Diona', 'Fischl' ]
 ```
 
 </details>
@@ -1748,23 +1754,44 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  "Apprentice's Notes",
-  'Aquila Favonia',
-  'Cool Steel',
-  'Dull Blade',
-  'Favonius Codex',
-  'Favonius Sword',
-  'Ferrous Shadow',
+  "Apprentice's Notes",     'Aquila Favonia',
+  'Cool Steel',             'Dull Blade',
+  'Favonius Codex',         'Favonius Sword',
+  'Ferrous Shadow',         'Magic Guide',
+  'Mitternachts Waltz',     'Pocket Grimoire',
+  'Raven Bow',              'Royal Grimoire',
+  'Royal Longsword',        'Silver Sword',
+  'Snow-Tombed Starsilver', 'Song of Broken Pines',
+  'The Alley Flash',        'The Bell',
+  'The Stringless',         'The Viridescent Hunt'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.weapons('<b>slime condensate', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Alley Hunter',
+  "Amos' Bow",
+  'Favonius Lance',
+  'Harbinger of Dawn',
+  'Lost Prayer to the Sacred Winds',
   'Magic Guide',
-  'Pocket Grimoire',
-  'Raven Bow',
-  'Royal Grimoire',
-  'Royal Longsword',
-  'Silver Sword',
+  'Mappa Mare',
+  "Old Merc's Pal",
+  'Royal Greatsword',
+  'Sacrificial Bow',
+  "Sharpshooter's Oath",
+  'Skyward Blade',
+  'Skyward Pride',
   'Snow-Tombed Starsilver',
-  'The Bell',
-  'The Stringless',
-  'The Viridescent Hunt'
+  'Staff of Homa',
+  'The Black Sword',
+  'The Flute',
+  'Waster Greatsword',
+  'White Iron Greatsword'
 ]
 ```
 
@@ -1800,63 +1827,6 @@ const genshindb = require('genshin-db');
   attack: 608.074622109998,
   specialized: 0.49615199803817234
 }
-```
-
-</details>
-
-## genshindb.weaponmaterialtypes(query[, opts])]
-
-<details>
-<summary>genshindb.weaponmaterialtypes('<b>chains'</b>)</summary>
-
-```js
-{
-  name: 'Dandelion Gladiator',
-  '2starname': 'Fetters of the Dandelion Gladiator',
-  '3starname': 'Chains of the Dandelion Gladiator',
-  '4starname': 'Shackles of the Dandelion Gladiator',
-  '5starname': 'Dream of the Dandelion Gladiator',
-  day: [ 'Wednesday', 'Saturday', 'Sunday' ],
-  location: 'Wolvendom',
-  region: 'Mondstadt',
-  domainofforgery: 'Cecilia Garden'
-}
-```
-
-</details>
-<details>
-<summary>genshindb.weaponmaterialtypes('<b>fri', { matchCategories: true }</b>)</summary>
-
-```js
-[ 'Boreal Wolf', 'Mist Veiled Elixir' ]
-```
-
-</details>
-
-## genshindb.talentmaterialtypes(query[, opts])]
-
-<details>
-<summary>genshindb.talentmaterialtypes('<b>ballad'</b>)</summary>
-
-```js
-{
-  name: 'Ballad',
-  '2starname': 'Teachings of "Ballad"',
-  '3starname': 'Guide of "Ballad"',
-  '4starname': 'Philosophies of "Ballad"',
-  day: [ 'Wednesday', 'Saturday', 'Sunday' ],
-  location: 'Springvale',
-  region: 'Mondstadt',
-  domainofmastery: 'Forsaken Rift'
-}
-```
-
-</details>
-<details>
-<summary>genshindb.talentmaterialtypes('<b>satur', { matchCategories: true }</b>)</summary>
-
-```js
-[ 'Ballad', 'Gold' ]
 ```
 
 </details>

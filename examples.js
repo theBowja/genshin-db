@@ -21,6 +21,7 @@ let folders = [
 				 'アンバー, { queryLanguages: \'Japanese\', resultLanguage: \'Spanish\' }',
 				 'childe, { matchAliases: true }',
 				 'carmen, { matchAliases: true }',
+				 'arrowhead, { matchCategories: true }',
 				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
 				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
 				 'sword, { matchCategories: true }',
@@ -43,15 +44,8 @@ let folders = [
 				 'staff homa/.costs',
 				 'iron point/.costs',
 				 'decarabian, { matchCategories: true }',
+				 'slime condensate, { matchCategories: true }',
 				 'dull blade/.stats(49)', 'sac sword/.stats(80, \'+\')', 'wolf grave/.stats(90)'],
-	},
-	{
-		function: 'weaponmaterialtypes',
-		params: ['chains', 'fri, { matchCategories: true }'],
-	},
-	{
-		function: 'talentmaterialtypes',
-		params: ['ballad', 'satur, { matchCategories: true }'],
 	},
 	{
 		function: 'materials',

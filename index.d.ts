@@ -411,7 +411,7 @@ export interface Items {
 //#endregion
 
 //#region TalentMaterial
-
+//deprecated
 export interface TalentMaterial { // English only
     name: string;
     "2starname": string;
@@ -465,7 +465,7 @@ export interface Weapon {
 //#endregion
 
 //#region WeaponMaterial
-
+//deprecated
 export interface WeaponMaterial { // English only
     name: string;
     "2starname": string;
