@@ -1,18 +1,24 @@
 const fs = require('fs');
+let language = require('./language.js');
 
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
 // REQUIRES NODE v13+
 
 // if you ask me to explain the code i wrote below, i would reply i dunno
 
+let specificlanguages = language.format(process.argv.slice(2));
+if(specificlanguages) {
+	language.languages = specificlanguages;
+	console.log('specified languages: ' + specificlanguages.join(', '));
+}
+
 makeIndices();
 combineData();
 
 function makeIndices() {
 	const design = require('./design.json');
-	let language = require('./language.js');
-	//language.languages = ["English"]; // do only english for now
 
+	console.log('compiling index for data');
 	for(const lang of language.languages) {
 		let categories = require(`./data/${lang}/categories.json`);
 		for(const folder of design.folders) {
@@ -104,10 +110,7 @@ function makeIndices() {
 function combineData() {
 	console.log("minifying all data, index, image, stats, curve into one file each");
 	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {};
-	let language = require('./language.js');
 	const design = require('./design.json');
-
-	//language.languages = ["English"]; // do only english for now
 
 	for(const lang of language.languages) {
 		mydata[lang] = {};

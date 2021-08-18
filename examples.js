@@ -101,4 +101,4 @@ folders.forEach(folder => {
 
 
 fs.writeFileSync(`./EXAMPLES.md`, output);
-console.log('finished EXAMPLES.md');
+console.log('finished updating EXAMPLES.md');

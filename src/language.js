@@ -16,6 +16,10 @@ const languageMap = {
 	'TH':  'Thai',
 	'VI':  'Vietnamese'
 };
+// array of language strings
+const languages = Object.values(languageMap);
+// array of language codes
+const languageCodes = Object.keys(languageMap);
 
 // // converts expanded strings into javascript locale codes
 const localeMap = {
@@ -63,8 +67,8 @@ function format(langs) {
 }
 
 module.exports = {
-	languages: Object.values(languageMap),
-	languageCodes: Object.keys(languageMap),
+	languages: languages,
+	languageCodes: languageCodes,
 	languageMap: languageMap,
 	localeMap: localeMap,
 	format: format
