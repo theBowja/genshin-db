@@ -89,6 +89,7 @@ export const talents: QueryFunction<Talent>;
 export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
 export const weapons: QueryFunction<Weapon>;
 export const materials: QueryFunction<Material>;
+export const domains: QueryFunction<Domain>;
 
 //#region Artifact
 
@@ -499,6 +500,40 @@ export interface Material {
     url: {
         fandom: string;
     };
+}
+
+//#endregion
+
+//#region Domain
+
+/* UNIMPLEMENTED TODO
+export interface DomainEntrance {
+    name: string;
+}
+*/
+
+export interface Domain {
+    name: string;
+    domainentrance: string;
+    domaintype: string; // Artifacts, Weapon Ascension Materials, Talent Level-Up Material
+    description: string;
+
+    recommendedlevel: number;
+    recommendedelements: string[];
+    daysofweek?: string[]; // undefined for artifact domains
+    unlockrank: number; // adventure rank this domain unlocks at
+    rewardpreview: Rewards[];
+    disorder: string[];
+
+    // monsterlist?: string[]; // UNIMPLEMENTED TODO
+    // objectives?: string[]; // UNIMPLEMENTED TODO
+}
+
+export interface Rewards {
+    name: string;
+    rarity?: string; // only used for artifacts
+    count?: number; // only used for adventure exp, mora, and companionship exp
+    // range?: string // used for enhancement ore which can be shown as "0~1"
 }
 
 //#endregion
