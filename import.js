@@ -361,6 +361,16 @@ async function collateMaterial(existing, newdata, lang) {
 	}
 }
 
+function collateDomain(existing, newdata) {
+	clearObject(existing);
+	const copyover = ['name', 'domainentrance', 'domaintype', 'description', 'recommendedlevel', 'recommendedelements',
+                  'daysofweek', 'unlockrank', 'rewardpreview', 'disorder'];
+	existing.name = newdata.name;
+	for(let prop of copyover) {
+		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+	}
+}
+
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
@@ -439,7 +449,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, true);
+importData('domains', collateDomain)
 
-getRedirectImages(); // separate. for talents
+// getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate
 // updateURLs(); // must be separate

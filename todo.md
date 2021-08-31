@@ -6,9 +6,7 @@
 - [ ] add properties information of data to readme.md
 - [ ] language-specific sanitation of query inputs
 - [ ] add ingredients
-- [ ] add foods/consumables. move specialty dishes in "recipes" to foods/consumables
 - [ ] add domains
-- [ ] add materials
 - [ ] add potions/consumables before that other npm library finishes it
 - [ ] add mobs
 - [ ] add achievements
@@ -17,17 +15,9 @@
 - [ ] pretend to add tests
 - [ ] add banner history maybe
 
-## Recipes
-- [ ] Jueyun Guoba (is this in the game yet?)
-- [ ] verify Definitely Not Bar Food! in-game
-- [ ] verify Invigorating Pizza in-game
-- [ ] verify Puppy-Paw Hash Brown in-game
-- [ ] Fullmoon Egg
-- [ ] Vegetarian Abalone
-- [ ] Stone Harbor Delicacies
-
 
 ## Done
+- [x] I no longer update this file. Check Github releases to see changes between versions.
 - [x] added stats for weapons (3/27)
 - [x] added stats for characters (3/27)
 - [x] added images and translations for all artifacts (3/20)
