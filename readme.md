@@ -213,12 +213,9 @@ First you'll need to clone this repo.
 If you want to build a webpack just do `npm run build` and it'll appear in the **dist/genshindb.js**. Then you can call all the query functions from above using genshindb as the variable. Or you can change the options in **webpack.config.js** to better fit how you want to use it.
 
 The distribution will be quite large. Maybe about 15mb. If you wish to reduce the size of this, then you can remove the data for languages you don't need. Simply append a space-separated list of languages that you wish to ONLY include in the webpack.
-For example:
-  `npm run build english`
-will produce a distribution in the dist folder with only the English genshin data.
 
-More examples:
-  `npm run build english chinesesimplified korean japanese`
-  `npm run build french german`
+For example: `npm run build english` will produce a distribution in the dist folder with only the English genshin data.
+
+More examples: `npm run build english chinesesimplified korean japanese`, `npm run build french german`
 
 Available language names can be found in src/language.js file. Or you can scroll up to the setOptions section in this readme.

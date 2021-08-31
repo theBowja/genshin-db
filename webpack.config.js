@@ -8,6 +8,7 @@ module.exports = {
 		filename: 'genshindb.js',
 
 		library: 'GenshinDB',
-		libraryTarget: 'var'
+		libraryTarget: 'umd',
+		umdNamedDefine: true
 	}
 }

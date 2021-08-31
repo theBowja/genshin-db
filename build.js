@@ -1,6 +1,3 @@
-const execSync = require('child_process').execSync;
-const arg = process.argv.slice(2).join(' ');
-
 /**
 This script is a helper for building webpack with specified language data.
 
@@ -18,6 +15,9 @@ More examples:
 
 Available language names can be found in src/language.js file
 */
+
+const execSync = require('child_process').execSync;
+const arg = process.argv.slice(2).join(' ');
 
 execSync('node ./generate.js ' + arg, { cwd: 'src', stdio: [0, 1, 2] });
 // execSync('node ./examples.js', { stdio: [0, 1, 2] });
