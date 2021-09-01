@@ -4,7 +4,7 @@
 
 ------------------------------------
 
-Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes.
+Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes, domains.
 
 All in-game languages are supported for query and result. (translations available only for characters, talents, materials, constellations, weapons, artifacts, foods currently).
 
@@ -39,6 +39,7 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
 - [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
+- [genshindb.domains(query[, opts])](#genshindbdomainsquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
