@@ -64,6 +64,11 @@ let folders = [
 		         'cabbage, { matchCategories: true }', 'diluc, { matchAliases: true }'],
 	},
 	{
+		function: 'domains',
+		params: ['flame', 'cecilia garden, { matchCategories: true }', 'anemo, { matchCategories: true }',
+		         'artifact, { matchCategories: true }', 'wednesday, { matchCategories: true }']
+	},
+	{
 		function: 'elements',
 		params: [],
 	},

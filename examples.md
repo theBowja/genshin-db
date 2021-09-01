@@ -14,6 +14,7 @@ const genshindb = require('genshin-db');
 - [genshindb.materials(query[, opts])](#genshindbmaterialsquery-opts)
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
 - [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
+- [genshindb.domains(query[, opts])](#genshindbdomainsquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
@@ -2232,6 +2233,147 @@ const genshindb = require('genshin-db');
     fandom: 'https://genshin-impact.fandom.com/wiki/"Once_Upon_a_Time_in_Mondstadt"'
   }
 }
+```
+
+</details>
+
+## genshindb.domains(query[, opts])]
+
+<details>
+<summary>genshindb.domains('<b>flame'</b>)</summary>
+
+```js
+{
+  name: 'Domain of Mastery: Altar of Flames I',
+  domainentrance: 'Taishan Mansion',
+  domaintype: 'Talent Level-Up Material',
+  description: 'A massive amount of Pyro energy is coursing through this scorching ancient sacrificial altar.\\nYou will get scorched by merely being here.\\nYou shall earn Talent level-up materials, if — and only if — you can pass the trial.',
+  recommendedlevel: 38,
+  recommendedelements: [ 'Hydro', 'Cryo', 'Electro' ],
+  daysofweek: [ 'Monday', 'Thursday', 'Sunday' ],
+  unlockrank: 1,
+  rewardpreview: [
+    { name: 'Adventure EXP', count: 100 },
+    { name: 'Mora', count: 1575 },
+    { name: 'Companionship EXP', count: 15 },
+    { name: 'Teachings of Prosperity' }
+  ],
+  disorder: [
+    'Your character will be periodically inflicted with Smoldering Flames, causing you to take Pyro DMG until the inflicted Pyro element is removed.'
+  ]
+}
+```
+
+</details>
+<details>
+<summary>genshindb.domains('<b>cecilia garden', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Domain of Forgery: City of Reflections I',
+  'Domain of Forgery: City of Reflections II',
+  'Domain of Forgery: City of Reflections III',
+  'Domain of Forgery: City of Reflections IV',
+  'Domain of Forgery: Ruins of Thirsting Capital I',
+  'Domain of Forgery: Ruins of Thirsting Capital II',
+  'Domain of Forgery: Ruins of Thirsting Capital III',
+  'Domain of Forgery: Ruins of Thirsting Capital IV',
+  'Domain of Forgery: Submerged Valley I',
+  'Domain of Forgery: Submerged Valley II',
+  'Domain of Forgery: Submerged Valley III',
+  'Domain of Forgery: Submerged Valley IV'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.domains('<b>anemo', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Domain of Blessing: Elegaic Rime I',
+  'Domain of Blessing: Elegaic Rime II',
+  'Domain of Blessing: Elegaic Rime III',
+  'Domain of Blessing: Elegaic Rime IV'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.domains('<b>artifact', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Domain of Blessing: Autumn Hunt I',
+  'Domain of Blessing: Autumn Hunt II',
+  'Domain of Blessing: Autumn Hunt III',
+  'Domain of Blessing: Autumn Hunt IV',
+  'Domain of Blessing: Dance of Steel I',
+  'Domain of Blessing: Dance of Steel II',
+  'Domain of Blessing: Dance of Steel III',
+  'Domain of Blessing: Dance of Steel IV',
+  'Domain of Blessing: Dance of Steel V',
+  'Domain of Blessing: Elegaic Rime I',
+  'Domain of Blessing: Elegaic Rime II',
+  'Domain of Blessing: Elegaic Rime III',
+  'Domain of Blessing: Elegaic Rime IV',
+  'Domain of Blessing: Fires of Purification I',
+  'Domain of Blessing: Fires of Purification II',
+  'Domain of Blessing: Fires of Purification III',
+  'Domain of Blessing: Fires of Purification IV',
+  'Domain of Blessing: Fires of Purification V',
+  'Domain of Blessing: Fires of Purification VI',
+  'Domain of Blessing: Frost I',
+  'Domain of Blessing: Frost II',
+  'Domain of Blessing: Frost III',
+  'Domain of Blessing: Frost IV',
+  'Domain of Blessing: Spring I',
+  'Domain of Blessing: Spring II',
+  'Domain of Blessing: Spring III',
+  'Domain of Blessing: Spring IV',
+  'Domain of Blessing: Spring V',
+  'Domain of Blessing: Spring VI',
+  'Domain of Blessing: Stone Chamber I',
+  'Domain of Blessing: Stone Chamber II',
+  'Domain of Blessing: Stone Chamber III',
+  'Domain of Blessing: Unyielding I',
+  'Domain of Blessing: Unyielding II',
+  'Domain of Blessing: Unyielding III',
+  'Domain of Blessing: Unyielding IV'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.domains('<b>wednesday', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Domain of Forgery: Ruins of Thirsting Capital I',
+  'Domain of Forgery: Ruins of Thirsting Capital II',
+  'Domain of Forgery: Ruins of Thirsting Capital III',
+  'Domain of Forgery: Ruins of Thirsting Capital IV',
+  'Domain of Forgery: Sand Burial I',
+  'Domain of Forgery: Sand Burial II',
+  'Domain of Forgery: Sand Burial III',
+  'Domain of Forgery: Sand Burial IV',
+  'Domain of Forgery: Trial Grounds of Thunder I',
+  'Domain of Forgery: Trial Grounds of Thunder II',
+  'Domain of Forgery: Trial Grounds of Thunder III',
+  'Domain of Forgery: Trial Grounds of Thunder IV',
+  'Domain of Mastery: Circle of Embers I',
+  'Domain of Mastery: Circle of Embers II',
+  'Domain of Mastery: Circle of Embers III',
+  'Domain of Mastery: Circle of Embers IV',
+  'Domain of Mastery: Realm of Slumber I',
+  'Domain of Mastery: Realm of Slumber II',
+  'Domain of Mastery: Realm of Slumber III',
+  'Domain of Mastery: Realm of Slumber IV',
+  'Domain of Mastery: Vine-Infested Ruins I',
+  'Domain of Mastery: Vine-Infested Ruins II',
+  'Domain of Mastery: Vine-Infested Ruins III',
+  'Domain of Mastery: Vine-Infested Ruins IV'
+]
 ```
 
 </details>
