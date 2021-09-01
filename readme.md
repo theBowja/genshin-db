@@ -163,6 +163,18 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbfoodsquery-opts) to see example inputs and outputs for this function.
 
+## genshindb.domains(query[, opts])
+
+Possible inputs for query parameter are:
+
+- all domain names
+- domain entrance names
+- domain types
+- recommended elements
+- days of week
+
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbdomainsquery-opts) to see example inputs and outputs for this function.
+
 ## genshindb.elements(query[, opts])
 
 Input the name of an element
