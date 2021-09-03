@@ -177,7 +177,7 @@ export interface Character {
     gender: string; // manually translated
     body: string; // untranslated
     association: string; // untranslated
-    region: string; // manual untranslated. empty string if player character
+    region: string; // manual untranslated. empty string if player character or crossover (aloy)
     affiliation: string; // empty string if player character
     birthdaymmdd: string; // empty string if player character
     birthday: string; // empty string if player character
@@ -514,6 +514,8 @@ export interface DomainEntrance {
 
 export interface Domain {
     name: string;
+
+    region: string;
     domainentrance: string;
     domaintype: string; // Artifacts, Weapon Ascension Materials, Talent Level-Up Material
     description: string;

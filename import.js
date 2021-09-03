@@ -368,7 +368,7 @@ function collateDomain(existing, newdata) {
 	if(existing.recommendedelements && !newdata.recommendedelements) newdata.recommendedelements = existing.recommendedelements;
 	if(existing.disorder && !newdata.disorder) newdata.disorder = existing.disorder;
 	clearObject(existing);
-	const copyover = ['name', 'domainentrance', 'domaintype', 'description', 'recommendedlevel', 'recommendedelements',
+	const copyover = ['name', 'region', 'domainentrance', 'domaintype', 'description', 'recommendedlevel', 'recommendedelements',
                   'daysofweek', 'unlockrank', 'rewardpreview', 'disorder'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {
@@ -457,7 +457,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined);
-// importData('domains', collateDomain)
+importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate
