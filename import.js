@@ -82,7 +82,7 @@ async function getCharList(region) {
 }
 async function getUpperBodyImages() {
 	const util = require('util');
-	const regions = ['mondstadt', 'liyue'];
+	const regions = ['mondstadt', 'liyue', 'inazuma'];
 	let myimages = {};
 	try { myimages = require(`./src/data/image/characters.json`); } catch(e) {}
 
@@ -449,8 +449,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, true);
-importData('domains', collateDomain)
+// importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
-// getUpperBodyImages(); // must be separate
+getUpperBodyImages(); // must be separate
 // updateURLs(); // must be separate
