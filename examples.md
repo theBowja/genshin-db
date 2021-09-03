@@ -25,19 +25,20 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',   'Albedo',         'Amber',
-  'Barbara',  'Beidou',         'Bennett',
-  'Chongyun', 'Diluc',          'Diona',
-  'Eula',     'Fischl',         'Ganyu',
-  'Hu Tao',   'Jean',           'Kaedehara Kazuha',
-  'Kaeya',    'Kamisato Ayaka', 'Keqing',
-  'Klee',     'Lisa',           'Lumine',
-  'Mona',     'Ningguang',      'Noelle',
-  'Qiqi',     'Razor',          'Rosaria',
-  'Sayu',     'Sucrose',        'Tartaglia',
-  'Venti',    'Xiangling',      'Xiao',
-  'Xingqiu',  'Xinyan',         'Yanfei',
-  'Yoimiya',  'Zhongli'
+  'Aether',             'Albedo',   'Aloy',
+  'Amber',              'Barbara',  'Beidou',
+  'Bennett',            'Chongyun', 'Diluc',
+  'Diona',              'Eula',     'Fischl',
+  'Ganyu',              'Hu Tao',   'Jean',
+  'Kaedehara Kazuha',   'Kaeya',    'Kamisato Ayaka',
+  'Keqing',             'Klee',     'Kujou Sara',
+  'Lisa',               'Lumine',   'Mona',
+  'Ningguang',          'Noelle',   'Qiqi',
+  'Raiden Shogun',      'Razor',    'Rosaria',
+  'Sangonomiya Kokomi', 'Sayu',     'Sucrose',
+  'Tartaglia',          'Venti',    'Xiangling',
+  'Xiao',               'Xingqiu',  'Xinyan',
+  'Yanfei',             'Yoimiya',  'Zhongli'
 ]
 ```
 
@@ -254,7 +255,7 @@ const genshindb = require('genshin-db');
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40019.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)]
@@ -339,7 +340,7 @@ const genshindb = require('genshin-db');
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40019.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)]
@@ -509,7 +510,7 @@ const genshindb = require('genshin-db');
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112210305833310.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/avatar/avatar40022.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/f42e16fca94650e2e932c093de92ae54.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Venti' },
   stats: [Function (anonymous)]
@@ -659,25 +660,20 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',           'Amber',
-  'Barbara',          'Beidou',
-  'Bennett',          'Chongyun',
-  'Diluc',            'Diona',
-  'Eula',             'Fischl',
-  'Ganyu',            'Hu Tao',
-  'Jean',             'Kaedehara Kazuha',
-  'Kaeya',            'Kamisato Ayaka',
-  'Keqing',           'Klee',
-  'Lisa',             'Mona',
-  'Ningguang',        'Noelle',
-  'Qiqi',             'Razor',
-  'Rosaria',          'Sayu',
-  'Sucrose',          'Tartaglia',
-  'Traveler (Anemo)', 'Traveler (Electro)',
-  'Traveler (Geo)',   'Venti',
-  'Xiangling',        'Xiao',
-  'Xingqiu',          'Xinyan',
-  'Yanfei',           'Yoimiya',
+  'Albedo',             'Aloy',               'Amber',
+  'Barbara',            'Beidou',             'Bennett',
+  'Chongyun',           'Diluc',              'Diona',
+  'Eula',               'Fischl',             'Ganyu',
+  'Hu Tao',             'Jean',               'Kaedehara Kazuha',
+  'Kaeya',              'Kamisato Ayaka',     'Keqing',
+  'Klee',               'Kujou Sara',         'Lisa',
+  'Mona',               'Ningguang',          'Noelle',
+  'Qiqi',               'Raiden Shogun',      'Razor',
+  'Rosaria',            'Sangonomiya Kokomi', 'Sayu',
+  'Sucrose',            'Tartaglia',          'Traveler (Anemo)',
+  'Traveler (Electro)', 'Traveler (Geo)',     'Venti',
+  'Xiangling',          'Xiao',               'Xingqiu',
+  'Xinyan',             'Yanfei',             'Yoimiya',
   'Zhongli'
 ]
 ```
@@ -1523,6 +1519,8 @@ const genshindb = require('genshin-db');
   'Ebony Bow',
   'Elegy for the End',
   'Emerald Orb',
+  'Engulfing Lightning',
+  'Everlasting Moonglow',
   'Eye of Perception',
   'Favonius Codex',
   'Favonius Greatsword',
@@ -1547,6 +1545,7 @@ const genshindb = require('genshin-db');
   'Lithic Blade',
   'Lithic Spear',
   'Lost Prayer to the Sacred Winds',
+  'Luxurious Sea-Lord',
   'Magic Guide',
   'Mappa Mare',
   'Memory of Dust',
@@ -1556,6 +1555,7 @@ const genshindb = require('genshin-db');
   "Old Merc's Pal",
   'Otherworldly Story',
   'Pocket Grimoire',
+  'Predator',
   'Primordial Jade Cutter',
   'Primordial Jade Winged-Spear',
   'Prototype Amber',
@@ -1592,11 +1592,7 @@ const genshindb = require('genshin-db');
   'Snow-Tombed Starsilver',
   'Solar Pearl',
   'Song of Broken Pines',
-  'Staff of Homa',
-  'Summit Shaper',
-  'Sword of Descension',
-  'The Alley Flash',
-  ... 20 more items
+  ... 25 more items
 ]
 ```
 
@@ -1779,6 +1775,7 @@ const genshindb = require('genshin-db');
   'Favonius Lance',
   'Harbinger of Dawn',
   'Lost Prayer to the Sacred Winds',
+  'Luxurious Sea-Lord',
   'Magic Guide',
   'Mappa Mare',
   "Old Merc's Pal",
@@ -1999,7 +1996,8 @@ const genshindb = require('genshin-db');
   'Sausage',      'Seagrass',       'Shrimp Meat',
   'Silver Lotus', 'Smoked Fish',    'Smoked Fowl',
   'Snapdragon',   'Sugar',          'Sweet Flower',
-  'Tofu',         'Tomato',         'Wheat'
+  'Tofu',         'Tomato',         'Unagi Meat',
+  'Wheat'
 ]
 ```
 
@@ -2153,6 +2151,7 @@ const genshindb = require('genshin-db');
 [
   'Butter Crab',
   'Chicken Tofu Pudding',
+  'Chili-Mince Cornbread Buns',
   'Golden Crab',
   'Golden Fried Chicken',
   'Jade Parcels',
@@ -2172,6 +2171,7 @@ const genshindb = require('genshin-db');
   'A Prize Catch',
   'Butter Crab',
   'Calla Lily Seafood Soup',
+  'Chili-Mince Cornbread Buns',
   "Fisherman's Toast",
   'Fish-Flavored Toast',
   'Golden Crab',
@@ -2194,6 +2194,7 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Chili-Mince Cornbread Buns',
   'Crab, Ham & Veggie Bake',
   'Der Weisheit Letzter Schluss (Life)',
   'Golden Chicken Burger',
