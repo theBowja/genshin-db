@@ -1,6 +1,6 @@
 # genshin-db
 
-### Genshin Impact JSON data with a robust searching API! Updated to version 2.0. Sources from the fandom wiki and GenshinData repo.
+### Genshin Impact JSON data with a robust searching API! Updated to version 2.1. Sources from the fandom wiki and GenshinData repo.
 
 ------------------------------------
 
