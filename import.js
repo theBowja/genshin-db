@@ -345,6 +345,8 @@ function collateFood(existing, newdata) {
 }
 
 async function collateMaterial(existing, newdata, lang) {
+	if(existing.dropdomain && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
+	if(existing.daysofweek && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
 	const copyover = ['name', 'description', 'rarity', 'category', 'materialtype', 'dropdomain',
 	                  'daysofweek', 'source'];
@@ -363,6 +365,8 @@ async function collateMaterial(existing, newdata, lang) {
 }
 
 function collateDomain(existing, newdata) {
+	if(existing.recommendedelements && !newdata.recommendedelements) newdata.recommendedelements = existing.recommendedelements;
+	if(existing.disorder && !newdata.disorder) newdata.disorder = existing.disorder;
 	clearObject(existing);
 	const copyover = ['name', 'domainentrance', 'domaintype', 'description', 'recommendedlevel', 'recommendedelements',
                   'daysofweek', 'unlockrank', 'rewardpreview', 'disorder'];
@@ -414,6 +418,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 			if(existing === undefined) existing = {};
 			newdata.aliases = existing.aliases;
 
+			let changebefore = JSON.stringify(existing);
 			await collateFunc(existing, newdata, language.languageMap[langC]);
 			if(langC === 'EN') { 
 				if(myimages[`${filename}.json`] === undefined) myimages[`${filename}.json`] = {};
@@ -425,6 +430,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 			//if(langC === 'CHT') console.log(existing);
 
 			if(dontwrite) { console.log(existing); continue; }
+			if(changebefore === JSON.stringify(existing)) continue;
+			
 			fs.mkdirSync(`./src/data/${basepath}`, { recursive: true });
 			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(existing, null, '\t'));
 		}
@@ -445,12 +452,12 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
-importCurve('weapons');
+// importData('weapons', collateWeapon)
+// importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, true);
-// importData('domains', collateDomain)
+importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate
