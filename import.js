@@ -58,7 +58,8 @@ const associationToRegion = {
 	'MONDSTADT': 'Mondstadt',
 	'FATUI': 'Snezhnaya',
 	'INAZUMA': 'Inazuma',
-	'MAINACTOR': ''
+	'MAINACTOR': '',
+	'RANGER': '',
 }
 
 /* ============================================ FUNCTIONS =================================================== */
@@ -444,13 +445,13 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
-// importCurve('weapons');
+importData('weapons', collateWeapon)
+importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, true);
 // importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
-getUpperBodyImages(); // must be separate
+// getUpperBodyImages(); // must be separate
 // updateURLs(); // must be separate

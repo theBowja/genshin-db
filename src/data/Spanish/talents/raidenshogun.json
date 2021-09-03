@@ -1,0 +1,219 @@
+{
+	"name": "Shogun Raiden",
+	"combat1": {
+		"name": "Ataque Normal: Estilo Genryuu",
+		"info": "**Ataque Normal**\nRealiza hasta 5 ataques rápidos con lanza.\n\n**Ataque Cargado**\nConsume una cierta cantidad de Aguante para realizar un ataque hacia arriba.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1.er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3.er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}+{param5:F1P}",
+				"Daño de 5.º golpe|{param6:F1P}",
+				"Daño de ATQ Cargado|{param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Trascendencia: Presagio maligno",
+		"info": "La Shogun Raiden libera un fragmento de su eutimia para infligir Daño Electro contra los enemigos de alrededor y otorgar a todos los personajes del equipo cercanos el efecto de “ojo del castigo atronador”.\n\n**Ojo del castigo atronador**\n·Cuando los ataques de los personajes que obtengan este efecto inflijan daño a un enemigo, el ojo liberará un ataque coordinado que inflige Daño Electro en el AdE en la ubicación de ese enemigo.\n·Mientras un personaje esté bajo los efectos de ojo del castigo atronador, el daño que inflige con su Habilidad Definitiva aumenta en proporción a la Energía Elemental consumida para realizar dicha habilidad.\n\nComo máximo, el ojo del castigo atronador solo podrá ejecutar un ataque coordinado cada 0.9 s por equipo.\nEl daño infligido con el ataque coordinado por los personajes que no son de tu equipo será de un 20% del daño original.",
+		"description": "Los seres divinos ejercen su influencia sobre todo lo que observan, y la Arconte Electro puede manipular las temibles estrellas para proteger a sus vasallos y castigar a sus enemigos con el poder del rayo.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de ATQ coordinado|{param2:F1P}",
+				"Duración|{param3:F1} s",
+				"Aumento de daño de Hab. Definitiva|{param4:F2P}/pt. de Energía Elemental",
+				"TdE|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Técnica secreta: Verdad onírica",
+		"info": "Reúne las infinitas verdades y consume su ambición infinita para ejecutar un corte onírico que extermina todas las maldiciones del mundo, infligiendo Daño Electro en el AdE y pasando al estado de “mente onírica” durante cierto periodo de tiempo. El daño infligido con corte onírico y con los ataques de mente onírica dependerá de las cargas de rueda de la ambición consumidas cuando esta habilidad sea utilizada.\n\n**Mente onírica**\nEn este estado, la Shogun Raiden ataca con su tachi, y sus Ataques Normales, Cargados y Descendentes infligen Daño Electro, el cual no puede sustituirse imbuyéndose de otro elemento. Al golpear a un enemigo con estos ataques, todos los personajes del equipo cercanos regeneran Energía Elemental. Esta regeneración puede ocurrir una vez por segundo y activarse un máximo de 5 veces mientras mente onírica está activa.\nEn este estado, la RES a interrupción de la Shogun Raiden aumenta, y se vuelve inmune al daño recibido por la reacción de Electrocargado.\nDurante el estado de mente onírica, el daño infligido por los Ataques Normales, Cargados y Descendentes de la Shogun Raiden se considera daño de Habilidad Definitiva.\n\nEl efecto de mente onírica desaparece cuando la Shogun Raiden abandona el campo de batalla.\n\n**Rueda de la ambición**\nCuando un personaje cercano del equipo (a excepción de la Shogun Raiden) realiza una Habilidad Definitiva, la Shogun Raiden acumula ambición en proporción a la cantidad de Energía Elemental que ese personaje consumió para realizar su Habilidad Definitiva.\nSolo se puede acumular un máximo de 60 cargas de ambición.\n\nLas cargas de ambición acumuladas para la rueda de la ambición se perderán 300 s después de que la Shogun Raiden se retire de combate.",
+		"description": "Esta es la técnica secreta más reciente de la Arconte Electro. Ha abandonado el pensamiento vacío para cargar con los sueños de todos. Igual que el concepto de la “verdad” también implica algo nuevo, Inazuma ha comenzado un nuevo capítulo de su historia.",
+		"attributes": {
+			"labels": [
+				"Daño básico de corte onírico|{param1:P}",
+				"Bono de daño de ambición por carga|{param2:F2P} de corte/{param3:F2P} por ATQ con mente onírica",
+				"Cargas de ambición obtenidas|{param4:F2}/pt. de Energía consumida",
+				"Daño de 1.er golpe|{param5:F1P}",
+				"Daño de 2.º golpe|{param6:F1P}",
+				"Daño de 3.er golpe|{param7:F1P}",
+				"Daño de 4.º golpe|{param8:F1P}+{param9:F1P}",
+				"Daño de 5.º golpe|{param10:F1P}",
+				"Daño de ATQ Cargado|{param11:F1P}+{param12:F1P}",
+				"Coste de Aguante ATQ Cargado|{param13:F1} pts.",
+				"Daño de Caída|{param14:F1P}",
+				"Daño de impacto de caída baja/alta|{param15:P}/{param16:P}",
+				"Regen. de Energía de mente onírica|{param17:F1}",
+				"Duración de mente onírica|{param18:F1} s",
+				"TdE|{param19:F1} s",
+				"Energía elemental|{param20:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Aspiración infinita",
+		"info": "Los orbes o partículas elementales obtenidos por los personajes cercanos del equipo otorgan 2 cargas de ambición a **rueda de la ambición**.\nEste efecto solo puede ocurrir una vez cada 3 s."
+	},
+	"passive2": {
+		"name": "La iluminada",
+		"info": "Si la Shogun Raiden tiene más de un 100% de Recarga de Energía, por cada 1% adicional obtiene los siguientes efectos:\n·Aumenta en un 0.6% adicional la regeneración de Energía Elemental otorgada por **mente onírica**.\n·Aumenta en un 0.4% adicional su Bono de Daño Electro."
+	},
+	"passive3": {
+		"name": "",
+		"info": ""
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la luz",
+				"count": 3
+			},
+			{
+				"name": "Guardamano viejo",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la luz",
+				"count": 2
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la luz",
+				"count": 4
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la luz",
+				"count": 6
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la luz",
+				"count": 9
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la luz",
+				"count": 4
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 4
+			},
+			{
+				"name": "Momento del derretimiento",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la luz",
+				"count": 6
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 6
+			},
+			{
+				"name": "Momento del derretimiento",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la luz",
+				"count": 12
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 9
+			},
+			{
+				"name": "Momento del derretimiento",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la luz",
+				"count": 16
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 12
+			},
+			{
+				"name": "Momento del derretimiento",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

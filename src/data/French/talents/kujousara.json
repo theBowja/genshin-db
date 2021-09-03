@@ -1,0 +1,206 @@
+{
+	"name": "Kujou Sara",
+	"combat1": {
+		"name": "Attaque normale : Archerie tengu",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 5 tirs consécutifs.\n\n**Attaque chargée**\nEffectue un **tir visé** plus précis infligeant davantage de DGT.\nLors de la visée, des éclairs crépitants s'accumulent sur le carreau de la flèche. Une flèche complètement chargée inflige des DGT Électro.\nSous l'effet de la Protection corvidée, une flèche complètement chargée laisse une plume de corbeau à l'emplacement atteint.\n\n**Attaque plongeante**\nTire une pluie de flèches depuis les airs et plonge au sol, infligeant des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT 5e coup|{param5:F1P}",
+				"DGT tir visé|{param6:F1P}",
+				"DGT tir visé (pleine charge)|{param7:P}",
+				"DGT durant la chute|{param8:F1P}",
+				"DGT chute basse/élevée|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Tempestrier tengu",
+		"info": "Recule à la vitesse d'un Tengu et invoque la protection des corbeaux.\nBénéficie de la Protection corvidée pendant 18 s, un effet qui est consommé lorsque Sara tire une flèche complètement chargée et laisse une plume de corbeau à l'emplacement atteint par la flèche.\nLa plume de corbeau déclenche Tengu Juurai : Embuscade après un court moment, infligeant des DGT Électro aux ennemis proches, et accordant au personnage déployé à portée un bonus d'ATQ en fonction de l'ATQ de base de Sara.\n\nLes bonus d'ATQ des différents Tengu Juurai ne se cumulent pas, et leur effet et durée sont déterminés par le dernier Tengu Juurai actif.",
+		"description": "Les Tengu n'ont jamais manqué de membres aux talents exceptionnels possédant des yeux divins Électro. D'autre part, ils ont l'habitude de chanter les louanges de l'Archon Électro lorsqu'ils manipulent son élément. Leurs paroles ressemblent à peu près à cela :\n« Ô digne Narukami, montre-moi ton pouvoir et accorde à cette humble supplique ta puissance fulgurante ! Sowaka ! »",
+		"attributes": {
+			"labels": [
+				"DGT Tengu Juurai : Embuscade|{param1:F1P}",
+				"Pourcentage de bonus d'ATQ|{param2:P}",
+				"Durée du bonus d'ATQ|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Soumission : Chemin de lumière",
+		"info": "Dépose un Tengu Juurai : Brise-titan à l'emplacement de l'ennemi, infligeant des DGT Électro de zone. Puis ce Tengu Juurai : Brise-titan se divise en 4 Tengu Juurai : Tempête de pierres consécutifs, infligeant des DGT Électro de zone.\nTengu Juurai : Brise-titan et Tengu Juurai : Tempête de pierres permettent au personnage déployé à portée de recevoir le même bonus d'ATQ que lors de la compétence élémentaire, Tempestrier tengu.\n\nLes bonus d'ATQ des différents Tengu Juurai ne se cumulent pas, et leur effet et durée sont déterminés par le dernier Tengu Juurai actif.",
+		"description": "Sara a quitté son peuple, les Tengu, et a également temporairement perdu sa foi en la Commission administrative. Mais lorsque les nuages qui assombrissaient son cœur se sont dissipés, elle a retrouvé son propre éclair.",
+		"attributes": {
+			"labels": [
+				"DGT Tengu Juurai : Brise-titan|{param1:F1P}",
+				"DGT Tengu Juurai : Tempête de pierres|{param2:F1P}",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Volonté immuable",
+		"info": "Sous l'effet de la Protection corvidée de **Tempestrier tengu**, la durée de charge du tir visé est réduite de 60 %."
+	},
+	"passive2": {
+		"name": "Décorum",
+		"info": "Lorsque Tengu Juurai : Embuscade touche un ennemi, Sara restaure 1,2 pts d'énergie élémentaire à tous les personnages de l'équipe tous les 100 %. de recharge d'énergie dont elle dispose. Cet effet peut être déclenché une fois toutes les 3 s."
+	},
+	"passive3": {
+		"name": "Arpentage des terres",
+		"info": "Réduit la durée d'une expédition de 25 % lorsqu'elle se déroule à Inazuma."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'élégance",
+				"count": 3
+			},
+			{
+				"name": "Masque endommagé",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'élégance",
+				"count": 2
+			},
+			{
+				"name": "Masque sale",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'élégance",
+				"count": 4
+			},
+			{
+				"name": "Masque sale",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'élégance",
+				"count": 6
+			},
+			{
+				"name": "Masque sale",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'élégance",
+				"count": 9
+			},
+			{
+				"name": "Masque sale",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'élégance",
+				"count": 4
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 4
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'élégance",
+				"count": 6
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 6
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'élégance",
+				"count": 12
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 9
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'élégance",
+				"count": 16
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 12
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

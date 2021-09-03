@@ -197,7 +197,7 @@ export interface Character {
         "ascend6": Items[];
     };
     images: {
-        image?: string;    // wikia
+        // image?: string;    // wikia deprecated. use icon instead
         card?: string;     // wikia
         portrait?: string; // wikia
         icon: string;     // hoyolab
