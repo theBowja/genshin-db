@@ -1,0 +1,208 @@
+{
+	"name": "Aloy",
+	"combat1": {
+		"name": "Standardangriff: Schnellfeuer",
+		"info": "**Standardangriff**\nFührt bis zu 4 Pfeilschüsse aus.\n\n**Heftiger Schlag**\nFührt einen **gezielten Schuss** mit höherem Schaden und höherer Genauigkeit aus.\nKonzentriert die eisige Kälte während des Zielens an der Pfeilspitze, die voll aufgeladen Kryo-Schaden verursacht.\n\n**Angriff aus dem Fall**\nSchießt in der Luft einen Pfeilregen ab, trifft schnell auf dem Boden auf und verursacht dort Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P} + {param2:F1P}",
+				"SCH Phase 2|{param3:F1P}",
+				"SCH Phase 3|{param4:F1P}",
+				"SCH Phase 4|{param5:F1P}",
+				"Gezielte Schüsse|{param6:F1P}",
+				"Voll aufgeladene gezielte Schüsse|{param7:P}",
+				"SCH beim Fallen|{param8:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Frostüberzogene Felder",
+		"info": "Wirft eine Eisbombe in die Richtung des Ziels, die beim Aufkommen explodiert und Kryo-Schaden verursacht, sich nach der Explosion aber in viele Kälteminen aufteilt, die bei Berührung mit Gegnern oder nach einer gewissen Zeit explodieren und dabei Kryo-Schaden verursachen.\nVerringert den ANG mit Eisbomben oder Kälteminen getroffener Gegner und verleiht Aloy eine Stapelung des Effekts „Spule“.\nErhält alle 0,1 s höchstens 1 Stapelung des Effekts Spule.\n\n**Spule**\n- Erhöht den mit Aloys Standardangriffen verursachten Schaden gemäß der Menge an Stapelungen.\n- Beseitigt bei 4 Stapelungen Spule den gesamten Effekt von Spule und verleiht Aloy „Eisige Eile“, die den mit Standardangriffen verursachten Schaden zusätzlich erhöht und den mit Standardangriffen verursachten Schaden in Kryo-Schaden umwandelt.\n\nAloy kann während des Zustands Eisige Eile nicht den Effekt Spule erhalten.\nDer Effekt Spule wird 30 s nach dem Verlassen des Kampfs entfernt.",
+		"description": "Glaub mir, am Schnitt ist es noch viel kälter.",
+		"attributes": {
+			"labels": [
+				"Eisbomben-SCH|{param1:P}",
+				"Kälteminen-SCH|{param2:F1P}",
+				"ANG-Malus|{param3:P}",
+				"ANG-Malus-Dauer|{param4:F1} s",
+				"SCH-Bonus für Standardangriffe durch Spule|{param5:F1P}/{param6:F1P}/{param7:F1P}",
+				"SCH-Bonus für Standardangriffe durch Eisige Eile|{param8:F1P}",
+				"Dauer von Eisige Eile|{param9:F1} s",
+				"Abklingzeit|{param10:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Weissagung des Morgenlichts",
+		"info": "Wirft eine Energiezelle voller Kryo-Energie und lässt sie mit einem Pfeil explodieren, um Kryo-Flächenschaden zu verursachen.",
+		"description": "Ob „Zero Dawn“ nun Hoffnung oder Auslöschung bedeutet, ist mittlerweile unwichtig. Aloy hat bereits ihre eigene Welt gerettet, um deren Schicksal sich die Helden darin sorgen.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:P}",
+				"Abklingzeit|{param2:F1} s",
+				"Elementarenergie|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Kampf-Überbrückung",
+		"info": "Erhöht beim Erhalten des Effekts Spule von **Frostüberzogene Felder** durch Aloy 10 s lang ihren eigenen ANG um 16 % und den ANG aller anderen Truppenmitglieder in der Nähe um 8 %."
+	},
+	"passive2": {
+		"name": "Wuchtangriff",
+		"info": "Erhöht Aloys Kryo-SCH-Bonus im Zustand Eisige Eile von **Frostüberzogene Felder** pro s um 3,5 %. Bis zu 35 % Kryo-SCH-Bonus auf diese Weise möglich."
+	},
+	"passive3": {
+		"name": "Jäger der Wildnis",
+		"info": "Führt dazu, dass eigene Figuren in der Truppe kleine Tiere in der Nähe, die rohes Geflügel, rohes Fleisch oder kaltes Gourmetfleisch als Beute abgeben, nicht leicht aufscheuchen, wenn Aloy in der Truppe ist."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Freiheit“",
+				"count": 3
+			},
+			{
+				"name": "Geisterhülle",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Freiheit“",
+				"count": 2
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Freiheit“",
+				"count": 4
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Freiheit“",
+				"count": 6
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Freiheit“",
+				"count": 9
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Freiheit“",
+				"count": 4
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 4
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Freiheit“",
+				"count": 6
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 6
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Freiheit“",
+				"count": 12
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 9
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Freiheit“",
+				"count": 16
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 12
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}
