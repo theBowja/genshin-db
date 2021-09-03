@@ -65,7 +65,8 @@ let folders = [
 	},
 	{
 		function: 'domains',
-		params: ['flame', 'cecilia garden, { matchCategories: true }', 'anemo, { matchCategories: true }',
+		params: ['flame', 'cecilia garden, { matchCategories: true }', 'inazuma, { matchCategories: true }',
+				 'anemo, { matchCategories: true }',
 		         'artifact, { matchCategories: true }', 'wednesday, { matchCategories: true }']
 	},
 	{

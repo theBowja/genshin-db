@@ -2246,6 +2246,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Domain of Mastery: Altar of Flames I',
+  region: 'Mondstadt',
   domainentrance: 'Taishan Mansion',
   domaintype: 'Talent Level-Up Material',
   description: 'A massive amount of Pyro energy is coursing through this scorching ancient sacrificial altar.\\nYou will get scorched by merely being here.\\nYou shall earn Talent level-up materials, if — and only if — you can pass the trial.',
@@ -2283,6 +2284,39 @@ const genshindb = require('genshin-db');
   'Domain of Forgery: Submerged Valley II',
   'Domain of Forgery: Submerged Valley III',
   'Domain of Forgery: Submerged Valley IV'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.domains('<b>inazuma', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Domain of Forgery: Altar of Sands I',
+  'Domain of Forgery: Altar of Sands II',
+  'Domain of Forgery: Altar of Sands III',
+  'Domain of Forgery: Altar of Sands IV',
+  'Domain of Forgery: Sand Burial I',
+  'Domain of Forgery: Sand Burial II',
+  'Domain of Forgery: Sand Burial III',
+  'Domain of Forgery: Sand Burial IV',
+  'Domain of Forgery: Sunken Sands I',
+  'Domain of Forgery: Sunken Sands II',
+  'Domain of Forgery: Sunken Sands III',
+  'Domain of Forgery: Sunken Sands IV',
+  'Domain of Mastery: Reign of Violet I',
+  'Domain of Mastery: Reign of Violet II',
+  'Domain of Mastery: Reign of Violet III',
+  'Domain of Mastery: Reign of Violet IV',
+  'Domain of Mastery: Thundering Valley I',
+  'Domain of Mastery: Thundering Valley II',
+  'Domain of Mastery: Thundering Valley III',
+  'Domain of Mastery: Thundering Valley IV',
+  'Domain of Mastery: Vine-Infested Ruins I',
+  'Domain of Mastery: Vine-Infested Ruins II',
+  'Domain of Mastery: Vine-Infested Ruins III',
+  'Domain of Mastery: Vine-Infested Ruins IV'
 ]
 ```
 
