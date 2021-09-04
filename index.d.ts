@@ -252,7 +252,10 @@ export interface Element {
     region: string;
     archon: string;
     theme: string;
-    url: string;
+    images: {
+        base64: string;
+        wikia: string;
+    }
 }
 
 export interface Rarity {
