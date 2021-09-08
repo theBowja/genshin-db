@@ -1846,7 +1846,8 @@ const genshindb = require('genshin-db');
   source: [ 'Crafted' ],
   images: {
     redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Guide_to_Ballad.png',
-    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/2/2f/Item_Guide_to_Ballad.png'
+    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/2/2f/Item_Guide_to_Ballad.png',
+    nameicon: 'UI_ItemIcon_104308'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Guide_to_Ballad' }
 }
@@ -1921,7 +1922,8 @@ const genshindb = require('genshin-db');
   source: [ 'Lv. 70+ Stormterror Challenge Reward' ],
   images: {
     redirect: "https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Dvalin's_Sigh.png",
-    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png'
+    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png',
+    nameicon: 'UI_ItemIcon_113005'
   },
   url: { fandom: "https://genshin-impact.fandom.com/wiki/Dvalin's_Sigh" }
 }
@@ -1940,7 +1942,8 @@ const genshindb = require('genshin-db');
   source: [ 'Found in the wild' ],
   images: {
     redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Iron_Chunk.png',
-    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Item_Iron_Chunk.png'
+    fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Item_Iron_Chunk.png',
+    nameicon: 'UI_ItemIcon_101001'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Iron_Chunk' }
 }

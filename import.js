@@ -344,7 +344,7 @@ function collateFood(existing, newdata) {
 	// console.log(newdata);
 }
 
-async function collateMaterial(existing, newdata, lang) {
+async function collateMaterial(existing, newdata, lang, skipimageredirect) {
 	if(existing.dropdomain && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
 	if(existing.daysofweek && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
@@ -359,8 +359,9 @@ async function collateMaterial(existing, newdata, lang) {
 		let imagename = newdata.name;
 		if(imagename === 'Ley Line Sprout') imagename = 'Ley Line Sprouts';
 		imagename = imagename.replace(/ /g, '_').replace(/"/g, '');
+		newdata.images.nameicon = newdata.imagename;
 		newdata.images.redirect = `https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_${imagename}.png`
-		newdata.images.fandom = await getRedirectedUrl(newdata.images.redirect);
+		if(!skipimageredirect) newdata.images.fandom = await getRedirectedUrl(newdata.images.redirect);
 	}
 }
 
@@ -395,7 +396,7 @@ function applyPatch(folder, data, langC, filename) {
 	}
 }
 
-function importData(folder, collateFunc, dontwrite, deleteexisting) {
+function importData(folder, collateFunc, dontwrite, deleteexisting, skipimageredirect) {
 	language.languageCodes.forEach(async (langC) => {
 		if(dontwrite && langC !== 'EN') return; 
 		// if(langC !== 'EN') return;
@@ -419,7 +420,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 			newdata.aliases = existing.aliases;
 
 			let changebefore = JSON.stringify(existing);
-			await collateFunc(existing, newdata, language.languageMap[langC]);
+			await collateFunc(existing, newdata, language.languageMap[langC], skipimageredirect);
 			if(langC === 'EN') { 
 				if(myimages[`${filename}.json`] === undefined) myimages[`${filename}.json`] = {};
 				Object.assign(myimages[`${filename}.json`], newdata.images);
@@ -456,8 +457,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting) {
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
-// importData('materials', collateMaterial, undefined);
-importData('domains', collateDomain)
+importData('materials', collateMaterial, undefined, false, true);
+// importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate
