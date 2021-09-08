@@ -497,6 +497,7 @@ export interface Material {
     source: string[];
 
     images: {
+        nameicon: string;
         fandom?: string;
         redirect: string;
     };
