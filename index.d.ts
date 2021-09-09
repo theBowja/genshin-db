@@ -74,6 +74,26 @@ export enum Languages {
     Vietnamese         = "Vietnamese"
 }
 
+// genshindb.folder
+export enum Folder {
+    characters     = "characters",
+    talents        = "talents",
+    constellations = "constellations",
+    
+    weapons        = "weapons",
+
+    foods          = "foods",
+    materials      = "materials",
+    weaponmaterialtypes = "weaponmaterialtypes",
+    talentmaterialtypes = "talentmaterialtypes",
+
+    artifacts      = "artifacts",
+    domains        = "domains",
+
+    rarity         = "rarity",
+    elements       = "elements"
+};
+
 // not easy to figure this out
 //export const setOptions: (options: QueryOptions): void 
 //export const getOptions: ():

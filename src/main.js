@@ -1,6 +1,7 @@
 const fuzzysort = require('fuzzysort');
 //const design = require('./design.json');
 const language = require('./language.js');
+const Folder = require('./folder.js');
 const { getData, getIndex } = require('./getdata.js');
 
 // object that will be exported
@@ -106,61 +107,61 @@ function searchFolder(query, folder, opts) {
 }
 
 genshin.characters = function(query, opts) {
-    return searchFolder(query, 'characters', opts);
+    return searchFolder(query, Folder.characters, opts);
 }
 genshin.character = genshin.characters;
 
 genshin.talents = function(query, opts) {
-    return searchFolder(query, 'talents', opts);
+    return searchFolder(query, Folder.talents, opts);
 }
 genshin.talent = genshin.talents;
 
 genshin.weapons = function(query, opts) {
-    return searchFolder(query, 'weapons', opts);
+    return searchFolder(query, Folder.weapons, opts);
 }
 genshin.weapon = genshin.weapons;
 
 genshin.weaponmaterialtypes = function(query, opts) {
-    return searchFolder(query, 'weaponmaterialtypes', opts);
+    return searchFolder(query, Folder.weaponmaterialtypes, opts);
 }
 genshin.weaponmaterialtype = genshin.weaponmaterialtypes;
 
 genshin.talentmaterialtypes = function(query, opts) {
-    return searchFolder(query, 'talentmaterialtypes', opts);
+    return searchFolder(query, Folder.talentmaterialtypes, opts);
 }
 genshin.talentmaterialtype = genshin.talentmaterialtypes;
 
 genshin.materials = function(query, opts) {
-    return searchFolder(query, 'materials', opts);
+    return searchFolder(query, Folder.materials, opts);
 }
 genshin.material = genshin.materials;
 
 genshin.elements = function(query, opts) {
-    return searchFolder(query, 'elements', opts);
+    return searchFolder(query, Folder.elements, opts);
 }
 genshin.element = genshin.elements;
 
 genshin.constellations = function(query, opts) {
-    return searchFolder(query, 'constellations', opts);
+    return searchFolder(query, Folder.constellations, opts);
 }
 genshin.constellation = genshin.constellations;
 
 genshin.artifacts = function(query, opts) {
-    return searchFolder(query, 'artifacts', opts);
+    return searchFolder(query, Folder.artifacts, opts);
 }
 genshin.artifact = genshin.artifacts;
 
 genshin.rarity = function(query, opts) {
-    return searchFolder(query, 'rarity', opts);
+    return searchFolder(query, Folder.rarity, opts);
 }
 
 genshin.foods = function(query, opts) {
-    return searchFolder(query, 'foods', opts);
+    return searchFolder(query, Folder.foods, opts);
 }
 genshin.food = genshin.foods;
 
 genshin.domains = function(query, opts) {
-    return searchFolder(query, 'domains', opts);
+    return searchFolder(query, Folder.domains, opts);
 }
 genshin.domain = genshin.domains;
 
@@ -173,5 +174,8 @@ genshin.domain = genshin.domains;
 // }
 
 genshin.helper = require('./helper.js');
+
+genshin.Languages = language.LanguagesEnum;
+genshin.Folder = Folder;
 
 module.exports = genshin;

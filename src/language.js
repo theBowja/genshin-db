@@ -1,5 +1,21 @@
 const fuzzysort = require('fuzzysort');
 
+const LanguagesEnum = {
+	'ChineseSimplified'  : 'ChineseSimplified',
+	'ChineseTraditional' : 'ChineseTraditional',
+	'English'            : 'English',
+	'French'             : 'French',
+	'German'             : 'German',
+	'Indonesian'         : 'Indonesian',
+	'Japanese'           : 'Japanese',
+	'Korean'             : 'Korean',
+	'Portuguese'         : 'Portuguese',
+	'Russian'            : 'Russian',
+	'Spanish'            : 'Spanish',
+	'Thai'               : 'Thai',
+	'Vietnamese'         : 'Vietnamese'
+};
+
 // converts Genshin's language codes into expanded strings
 const languageMap = {
 	'CHS': 'ChineseSimplified',
@@ -67,6 +83,7 @@ function format(langs) {
 }
 
 module.exports = {
+	LanguagesEnum: LanguagesEnum,
 	languages: languages,
 	languageCodes: languageCodes,
 	languageMap: languageMap,
