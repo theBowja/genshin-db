@@ -225,10 +225,29 @@ First you'll need to clone this repo.
 
 If you want to build a webpack just do `npm run build` and it'll appear in the **dist/genshindb.js**. Then you can call all the query functions from above using genshindb as the variable. Or you can change the options in **webpack.config.js** to better fit how you want to use it.
 
-The distribution will be quite large. Maybe about 15mb. If you wish to reduce the size of this, then you can remove the data for languages you don't need. Simply append a space-separated list of languages that you wish to ONLY include in the webpack.
+The distribution will be quite large. More than 15mb. If you wish to reduce the size of this, then you can remove the data for languages you don't need. Simply append a space-separated list of languages that you wish to ONLY include in the webpack.
 
 For example: `npm run build english` will produce a distribution in the dist folder with only the English genshin data.
 
 More examples: `npm run build english chinesesimplified korean japanese`, `npm run build french german`
 
 Available language names can be found in src/language.js file. Or you can scroll up to the setOptions section in this readme.
+
+## Time and Space
+Updated 9/8/2021.
+
+genshin-db is around 18mb. If you're serving content, please do not send the entire package to the client. A web page receiving the entire webpack will take some time to load, which does not provide for the best user experience.
+
+My query functions aren't the fastest thing in existence. But it is fast enough that it doesn't really matter. Unless you're running the code on a real potato.
+
+```js
+console.time();
+for(let i = 0; i < 5000; i++) {
+    tmp = genshindb.material('names', { matchCategories:true, verboseCategories:true, queryLanguages:['eng', 'jp', 'ko']} );
+}
+console.timeEnd();
+
+// default: 1.043s
+```
+
+You're likely not gonna have a problem unless you're handling thousands of queries per second with more than one query language enabled. Make an issue if you're actually having problems.
