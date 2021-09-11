@@ -1,4 +1,5 @@
 // enum for folders. // make sure update index.d.ts too
+// not really used internally. mainly for altnames api
 module.exports = {
 	characters     : 'characters',
 	talents        : 'talents',

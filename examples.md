@@ -1443,7 +1443,6 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Traveler (Geo)',
-  aliases: [ 'Geo Traveler', 'MC Geo', 'Geo MC' ],
   c1: {
     name: 'Invincible Stonewall',
     effect: 'Party members within the radius of **Wake of Earth** have their CRIT Rate increased by 10% and have increased resistance against interruption.'

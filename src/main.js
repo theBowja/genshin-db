@@ -2,6 +2,7 @@ const fuzzysort = require('fuzzysort');
 //const design = require('./design.json');
 const language = require('./language.js');
 const Folder = require('./folder.js');
+const altnames = require('./altnames.js');
 const { getData, getIndex } = require('./getdata.js');
 
 // object that will be exported
@@ -9,7 +10,8 @@ const genshin = {};
 
 // Options that we'll start off with.
 let baseoptions = {
-    matchAliases: true, // Allows the matching of aliases.
+    matchAltNames: true, // Allows the matching of alternate or custom names.
+    matchAliases: false, // Allows the matching of aliases. These are searchable fields that returns the data object the query matched in.
     matchCategories: false, // Allows the matching of categories. If true, then returns an array if it matches.
     verboseCategories: false, // Used if a category is matched. If true, then replaces each string name in the array with the data object instead.
     queryLanguages: ["English"], // Array of languages that your query will be searched in.
@@ -31,7 +33,7 @@ function sanitizeOptions(opts) {
     if(typeof opts !== 'object' || opts === null) return undefined;
 
     let sanOpts = {};
-    ['matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
+    ['matchAltNames', 'matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
         if(typeof opts[prop] === 'boolean') sanOpts[prop] = opts[prop];
     });
     opts.resultLanguage = language.format(opts.resultLanguage);
@@ -43,6 +45,7 @@ function sanitizeOptions(opts) {
     return sanOpts;
 }
 
+// returns an array of strings used for autocomplete aka fuzzy searching
 function buildQueryDict(querylangs, folder, opts) {
     let dict = opts.matchCategories ? ['names'] : [];
     for(const lang of querylangs) {
@@ -50,6 +53,8 @@ function buildQueryDict(querylangs, folder, opts) {
         if(index === undefined) continue;
         if(index.names)
             dict = dict.concat(Object.keys(index.names));
+        if(opts.matchAltNames)
+            dict = dict.concat(altnames.getAltNamesList(lang, folder));
         if(opts.matchAliases && index.aliases)
             dict = dict.concat(Object.keys(index.aliases));
         if(opts.matchCategories && index.categories)
@@ -72,22 +77,35 @@ function autocomplete(input, dict) {
 
 // TODO: use a better name lol
 // TODO: if folder is undefined, search through every folder
-function searchFolder(query, folder, opts) {
+function searchFolder(query, folder, opts, getfilename) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
     query = autocomplete(""+query, buildQueryDict(opts.queryLanguages, folder, opts));
-    if(query === undefined) return undefined;
+    if(query === undefined) return undefined; // no result
 
     for(let lang of opts.queryLanguages) {
         let langindex = getIndex(lang, folder);
         if(langindex === undefined) continue;
 
         // check if query is in .names
-        if(langindex.names[query] !== undefined)
-            return getData(opts.resultLanguage, folder, langindex.names[query]);
+        if(langindex.names[query] !== undefined) {
+            const filename = langindex.names[query];
+            if(getfilename) return filename;
+            return getData(opts.resultLanguage, folder, filename);
+        }
+
+        // check if query is in .altnames
+        if(opts.matchAltNames && altnames.getFilename(lang, folder, query)) {
+            const filename = altnames.getFilename(lang, folder, query);
+            if(getfilename) return filename;
+            return getData(opts.resultLanguage, folder, filename);
+        }
 
         // check if query is in .aliases
-        if(opts.matchAliases && langindex.aliases[query] !== undefined)
-            return getData(opts.resultLanguage, folder, langindex.aliases[query]);
+        if(opts.matchAliases && langindex.aliases[query] !== undefined) {
+            const filename = langindex.aliases[query];
+            if(getfilename) return filename;
+            return getData(opts.resultLanguage, folder, filename);
+        }
 
         // check if query is in .categories or is 'names'
         if(opts.matchCategories && (langindex.categories[query] !== undefined || query === 'names')) {
@@ -175,7 +193,29 @@ genshin.domain = genshin.domains;
 
 genshin.helper = require('./helper.js');
 
+// export enums
+genshin.Language = language.LanguagesEnum;
 genshin.Languages = language.LanguagesEnum;
 genshin.Folder = Folder;
+genshin.Folders = Folder;
+
+// export custom alternate names api
+genshin.addAltName = function(language, folder, altname, query) {
+    const myOptions = {
+        matchAltNames: false,
+        matchAliases: false,
+        matchCategories: false,
+        verboseCategories: false,
+        queryLanguages: [language],
+    }
+    const filename = searchFolder(query, folder, myOptions, true)
+    if(filename)
+        return altnames.addAltName(language, folder, altname, filename);
+    else
+        return false;
+}
+genshin.removeAltNames = altnames.removeAltNames;
+genshin.setAltNameLimits = altnames.setLimit;
+
 
 module.exports = genshin;
