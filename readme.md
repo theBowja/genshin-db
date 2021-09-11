@@ -36,21 +36,10 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [Typescript](#typescript)
 - [Webpack](#webpack)
 
+## Options
+
 - [genshindb.setOptions(opts)](#genshindbsetoptionsopts)
 - [genshindb.getOptions()](#genshindbgetoptions)
-- [genshindb.characters(query[, opts])](#genshindbcharactersquery-opts)
-- [genshindb.talents(query[, opts])](#genshindbtalentsquery-opts)
-- [genshindb.constellations(query[, opts])](#genshindbconstellationsquery-opts)
-- [genshindb.weapons(query[, opts])](#genshindbweaponsquery-opts)
-- [genshindb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
-- [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
-- [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
-- [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
-- [genshindb.domains(query[, opts])](#genshindbdomainsquery-opts)
-- [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
-- [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
-
-## Options
 
 ### genshindb.setOptions(opts)
 
@@ -73,6 +62,18 @@ Supported languages options are: ChineseSimplified, ChineseTraditional, English,
 ### genshindb.getOptions()
 
 ## Query Functions
+
+- [genshindb.characters(query[, opts])](#genshindbcharactersquery-opts)
+- [genshindb.talents(query[, opts])](#genshindbtalentsquery-opts)
+- [genshindb.constellations(query[, opts])](#genshindbconstellationsquery-opts)
+- [genshindb.weapons(query[, opts])](#genshindbweaponsquery-opts)
+- [genshindb.weaponmaterialtypes(query[, opts])](#genshindbweaponmaterialtypesquery-opts)
+- [genshindb.talentmaterialtypes(query[, opts])](#genshindbtalentmaterialtypesquery-opts)
+- [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
+- [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
+- [genshindb.domains(query[, opts])](#genshindbdomainsquery-opts)
+- [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
+- [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
 ### genshindb.characters(query[, opts])
 
