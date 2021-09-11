@@ -29,6 +29,13 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 
 ## Table of Contents
 
+- [Options](#options)
+- [Query Functions](#query-functions)
+- [Adding Custom Names](#adding-custom-names)
+- [Contributing](#contributing)
+- [Typescript](#typescript)
+- [Webpack](#webpack)
+
 - [genshindb.setOptions(opts)](#genshindbsetoptionsopts)
 - [genshindb.getOptions()](#genshindbgetoptions)
 - [genshindb.characters(query[, opts])](#genshindbcharactersquery-opts)
@@ -43,7 +50,9 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
-## genshindb.setOptions(opts)
+## Options
+
+### genshindb.setOptions(opts)
 
 The following are the **default options** that the library starts off with. If you want to change it, then call setOptions.
 
@@ -61,9 +70,11 @@ If **matchCategories** is set to true, then the query may match a category like 
 
 Supported languages options are: ChineseSimplified, ChineseTraditional, English, French, German, Indonesian, Japanese, Korean, Portuguese, Russian, Spanish, Thai, Vietnamese.
 
-## genshindb.getOptions()
+### genshindb.getOptions()
 
-## genshindb.characters(query[, opts])
+## Query Functions
+
+### genshindb.characters(query[, opts])
 
 Returns the profile info for characters.
 
@@ -72,7 +83,7 @@ Possible query inputs include: character names, character titles, constellation 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbcharactersquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.talents(query[, opts])
+### genshindb.talents(query[, opts])
 
 Returns the combat skills and passive skills for characters.
 
@@ -81,7 +92,7 @@ Possible query inputs include: character names, upgrade materials.
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.constellations(query[, opts])
+### genshindb.constellations(query[, opts])
 
 Returns the constellation information for characters.
 
@@ -90,7 +101,7 @@ Possible query inputs include: character names.
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbconstellationsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.weapons(query[, opts])
+### genshindb.weapons(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -105,7 +116,7 @@ The result also includes a function to calculate the stats of the weapon at each
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbweaponsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.weaponmaterialtypes(query[, opts])
+### genshindb.weaponmaterialtypes(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -118,7 +129,7 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbweaponmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.talentmaterialtypes(query[, opts])
+### genshindb.talentmaterialtypes(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -131,7 +142,7 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.materials(query[, opts])
+### genshindb.materials(query[, opts])
 
 - rarity, type, 'WOOD', ingredient, specialty liyue, domains, days of week, talent books, etc.
 - "names"
@@ -139,7 +150,7 @@ Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/example
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbmaterialsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.artifacts(query[, opts])
+### genshindb.artifacts(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -150,7 +161,7 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbartifactsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.foods(query[, opts])
+### genshindb.foods(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -164,7 +175,7 @@ Possible inputs for query parameter are:
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbfoodsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.domains(query[, opts])
+### genshindb.domains(query[, opts])
 
 Possible inputs for query parameter are:
 
@@ -176,17 +187,58 @@ Possible inputs for query parameter are:
 
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbdomainsquery-opts) to see example inputs and outputs for this function.
 
-## genshindb.elements(query[, opts])
+### genshindb.elements(query[, opts])
 
 Input the name of an element
 
-## genshindb.rarity(query[, opts])
+### genshindb.rarity(query[, opts])
 
 dunno about this
 
+## Adding Custom Names
+
+If you want to add your own search string to return a specific search data, then you can! For example, the following code will allow you to search "Harem King" to retrieve the character data for Aether.
+
+```js
+genshindb.addAltName(genshindb.Languages.English, genshindb.Folders.characters, "Harem King", "Aether");
+genshindb.characters("harem"); // returns data for Aether
+```
+
+These do NOT persist if you restart. If you need these to persist, come into my discord and let's talk about it. :)
+
+### genshindb.addAltName(language, folder, altname, query)
+
+Adds the `altname` as a custom name to reach `query` inside the `language`/`folder` combination.
+
+The enum for available languages is at `genshindb.Languages`. Or look inside [language.js](https://github.com/theBowja/genshin-db/blob/main/src/language.js)  
+The enum for available folders is at `genshindb.Folders`. Or look inside [folder.js](https://github.com/theBowja/genshin-db/blob/main/src/folder.js)
+`altname` is the custom name you want to add. Autocomplete will be available for this.  
+`query` is the name of the data you want to attach your custom name too.  It must be in the language you specified previously.
+
+Returns true or false depending on if your altname was successfully added or not.
+
+### genshindb.removeAltNames(language, folder, altname)
+
+Removes the `altname` from a `language`/`folder` combination.
+
+Returns true or false depending on if your altname was successfully deleted or not.
+
+### genshindb.setAltNameLimits(limit)
+
+limit is an object with the following type:
+```js
+{
+    maxLength?: number, // default is 100
+    maxCount?: number // default is 1000
+}
+```
+
+**maxLength:** You can set the max character length limit for altnames to be added. If your character limit is 5, then altname "Drunk Bard" will not be added when you try to add it.  
+**maxCount:** You can also set the max number of custom names allowed. This is to prevent accidents where you run out of memory.
+
 ## Notes
 
-Is using JSON as a database a good idea? Probably not.
+Is using JSON as a database a good idea? Probably not. Is MIT License the correct license? Probably not.
 
 ## Contributing
 
@@ -200,7 +252,7 @@ If you just want to take the data and use it yourself, you are welcome to do so.
 
 ## Typescript
 
-I made an index.d.ts file. It probably works.
+I made an [index.d.ts file](https://github.com/theBowja/genshin-db/blob/main/index.d.ts). It probably works.
 
 Here's a bunch of examples for typing:
 

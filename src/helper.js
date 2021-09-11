@@ -1,5 +1,12 @@
 const helper = {};
 
+
+helper.makeFilename = function(str) {
+	str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+	return str.toLowerCase().replace(/[^a-z]/g,'');
+}
+
+
 /**
  * english only :(
  */

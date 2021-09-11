@@ -51,12 +51,15 @@ export interface StatResult {
 
 //<MatchCategories extends boolean | undefined, Verbose extends boolean | undefined>
 export interface QueryOptions {
+    matchAltNames?: boolean;
     matchAliases?: boolean;
     matchCategories?: boolean;
     verboseCategories?: boolean;
     queryLanguages?: Languages[];
     resultLanguage?: Languages;
 }
+
+//#region Enum
 
 export enum Languages {
     ChineseSimplified  = "ChineseSimplified",
@@ -93,6 +96,8 @@ export enum Folder {
     rarity         = "rarity",
     elements       = "elements"
 };
+
+//#endregion
 
 // not easy to figure this out
 //export const setOptions: (options: QueryOptions): void 
@@ -561,5 +566,15 @@ export interface Rewards {
     count?: number; // only used for adventure exp, mora, and companionship exp
     // range?: string // used for enhancement ore which can be shown as "0~1"
 }
+
+//#endregion
+
+//#region Altnames
+
+// export interface ;
+
+export function addAltName(language: Languages, folder: Folder, altname: string, query: string): boolean;
+export function removeAltNames(language: Languages, folder: Folder, altname: string): boolean;
+export function setAltNameLimits(limit: { maxLength?: number, maxCount?: number }): void;
 
 //#endregion
