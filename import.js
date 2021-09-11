@@ -331,7 +331,7 @@ function collateArtifact(existing, newdata) {
 	})
 }
 
-function collateFood(existing, newdata) {
+function collateFood(existing, newdata, lang) {
 	clearObject(existing);
 	const copyover = ['name', 'rarity', 'foodtype', 'foodfilter', 'foodcategory',
 	                  'effect', 'description', 'suspicious', 'normal', 'delicious',
@@ -341,6 +341,10 @@ function collateFood(existing, newdata) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
 	}
 	existing.rarity = existing.rarity+"";
+	if(lang === 'English') {
+		newdata.images = {};
+		newdata.images.nameicon = newdata.imagename;
+	}
 	// console.log(newdata);
 }
 
@@ -456,8 +460,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
-// importData('foods', collateFood);
-importData('materials', collateMaterial, undefined, false, true);
+importData('foods', collateFood);
+// importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents

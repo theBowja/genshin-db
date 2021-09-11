@@ -2139,6 +2139,7 @@ const genshindb = require('genshin-db');
     { name: 'Shrimp Meat', count: 3 },
     { name: 'Matsutake', count: 3 }
   ],
+  images: { nameicon: 'UI_ItemIcon_108123' },
   url: {
     fandom: "https://genshin-impact.fandom.com/wiki/Adeptus'_Temptation"
   }
@@ -2232,6 +2233,7 @@ const genshindb = require('genshin-db');
     { name: 'Small Lamp Grass', count: 1 },
     { name: 'Cheese', count: 1 }
   ],
+  images: { nameicon: 'UI_ItemIcon_108058' },
   url: {
     fandom: 'https://genshin-impact.fandom.com/wiki/"Once_Upon_a_Time_in_Mondstadt"'
   }
