@@ -33,6 +33,7 @@ function makeIndices() {
 
 				fs.readdirSync(`./data/${lang}/${folder}`).forEach(filename => {
 					if(!filename.endsWith('.json')) return;
+					filename = filename.substring(0, filename.length-5);
 
 					const data = require(`./data/${lang}/${folder}/${filename}`);
 					if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
@@ -50,7 +51,7 @@ function makeIndices() {
 								values = [values];
 							for(let val of values) {
 								if(val !== undefined && val !== "") {
-									if(index.aliases[val] !== undefined && index.aliases[val] !== filename && filename !== 'lumine.json')
+									if(index.aliases[val] !== undefined && index.aliases[val] !== filename && filename !== 'lumine')
 										console.log(`Duplicate alias: ${lang}/${folder}: ${altname},${val},${filename}`);
 									index.aliases[val] = filename;
 								}
@@ -122,6 +123,7 @@ function combineData() {
 
 			fs.readdirSync(`./data/${lang}/${folder}`).forEach(filename => {
 				if(!filename.endsWith('.json')) return;
+				filename = filename.substring(0, filename.length-5);
 				mydata[lang][folder][filename] = require(`./data/${lang}/${folder}/${filename}`);
 
 			});
@@ -138,6 +140,8 @@ function combineData() {
 			myurl[folder] = require(`./data/url/${folder}.json`);
 	}
 
+	let tmp = JSON.stringify(mydata)
+	console.log(tmp.substring(0,100))
 	fs.writeFileSync(`./min/data.min.json`, JSON.stringify(mydata));
 	fs.writeFileSync(`./min/index.min.json`, JSON.stringify(myindex));
 	fs.writeFileSync(`./min/image.min.json`, JSON.stringify(myimage));
