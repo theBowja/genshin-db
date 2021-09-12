@@ -318,13 +318,16 @@ export interface Food {
     character?: string;
 
     ingredients: FoodIngredient[];
-    images?: {};
+    images: {
+        nameicon: string;
+    };
     url: {
         fandom: string;
     };
 }
 
 // UNUSED. FOR REFERENCE ONLY.
+/*
 export interface FoodNormal {
     name: string;
     rarity: string;
@@ -353,8 +356,10 @@ export interface FoodNormal {
         fandom: string;
     };
 }
+*/
 
 // UNUSED. FOR REFERENCE ONLY.
+/*
 export interface FoodSpecialty {
     name: string;
     rarity: string;
@@ -373,7 +378,7 @@ export interface FoodSpecialty {
         fandom: string;
     };
 }
-
+*/
 export interface FoodIngredient {
     name: string;
     count: number;
@@ -558,6 +563,10 @@ export interface Domain {
 
     // monsterlist?: string[]; // UNIMPLEMENTED TODO
     // objectives?: string[]; // UNIMPLEMENTED TODO
+
+    images: {
+        namepic: string;
+    }
 }
 
 export interface Rewards {

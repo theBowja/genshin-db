@@ -369,7 +369,7 @@ async function collateMaterial(existing, newdata, lang, skipimageredirect) {
 	}
 }
 
-function collateDomain(existing, newdata) {
+function collateDomain(existing, newdata, lang) {
 	if(existing.recommendedelements && !newdata.recommendedelements) newdata.recommendedelements = existing.recommendedelements;
 	if(existing.disorder && !newdata.disorder) newdata.disorder = existing.disorder;
 	clearObject(existing);
@@ -378,6 +378,10 @@ function collateDomain(existing, newdata) {
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+	}
+	if(lang === 'English') {
+		newdata.images = {};
+		if(newdata.imagename) newdata.images.namepic = newdata.imagename;
 	}
 }
 
@@ -460,9 +464,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
-importData('foods', collateFood);
+// importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true);
-// importData('domains', collateDomain)
+importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate
