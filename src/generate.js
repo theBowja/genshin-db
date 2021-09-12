@@ -140,8 +140,6 @@ function combineData() {
 			myurl[folder] = require(`./data/url/${folder}.json`);
 	}
 
-	let tmp = JSON.stringify(mydata)
-	console.log(tmp.substring(0,100))
 	fs.writeFileSync(`./min/data.min.json`, JSON.stringify(mydata));
 	fs.writeFileSync(`./min/index.min.json`, JSON.stringify(myindex));
 	fs.writeFileSync(`./min/image.min.json`, JSON.stringify(myimage));
