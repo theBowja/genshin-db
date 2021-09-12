@@ -90,7 +90,7 @@ async function getUpperBodyImages() {
 	for(const region of regions) {
 		const charList = await getCharList(region);
 		for(const char of charList) {
-			const filename = makeFileName(char.title) + '.json';
+			const filename = makeFileName(char.title);
 			if(myimages[filename] === undefined) myimages[filename] = {};
 			myimages[filename].cover1 = char.cover1;
 			myimages[filename].cover2 = char.cover2;
@@ -426,9 +426,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			let changebefore = JSON.stringify(existing);
 			await collateFunc(existing, newdata, language.languageMap[langC], skipimageredirect);
 			if(langC === 'EN') { 
-				if(myimages[`${filename}.json`] === undefined) myimages[`${filename}.json`] = {};
-				Object.assign(myimages[`${filename}.json`], newdata.images);
-				mystats[`${filename}.json`] = newdata.stats || newdata.parameters;
+				if(myimages[`${filename}`] === undefined) myimages[`${filename}`] = {};
+				Object.assign(myimages[`${filename}`], newdata.images);
+				mystats[`${filename}`] = newdata.stats || newdata.parameters;
 			}
 			applyPatch(folder, existing, langC, filename);
 
