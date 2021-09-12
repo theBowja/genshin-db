@@ -102,19 +102,19 @@ altnames.getFilename = function(language, folder, altname) {
 }
 
 // add default altnames
-altnames.addAltName('English', 'characters', 'Childe', 'tartaglia.json');
-altnames.addAltName('English', 'talents', 'Childe', 'tartaglia.json');
-altnames.addAltName('English', 'constellations', 'Childe', 'tartaglia.json');
+altnames.addAltName('English', 'characters', 'Childe', 'tartaglia');
+altnames.addAltName('English', 'talents', 'Childe', 'tartaglia');
+altnames.addAltName('English', 'constellations', 'Childe', 'tartaglia');
 
-altnames.addAltName('English', 'characters', 'Baal', 'raidenshogun.json');
-altnames.addAltName('English', 'talents', 'Baal', 'raidenshogun.json');
-altnames.addAltName('English', 'constellations', 'Baal', 'raidenshogun.json');
+altnames.addAltName('English', 'characters', 'Baal', 'raidenshogun');
+altnames.addAltName('English', 'talents', 'Baal', 'raidenshogun');
+altnames.addAltName('English', 'constellations', 'Baal', 'raidenshogun');
 
-altnames.addAltName('English', 'talents', 'Anemo Traveler', 'traveleranemo.json');
-altnames.addAltName('English', 'talents', 'Electro Traveler', 'travelerelectro.json');
-altnames.addAltName('English', 'talents', 'Geo Traveler', 'travelergeo.json');
-altnames.addAltName('English', 'constellations', 'Anemo Traveler', 'traveleranemo.json');
-altnames.addAltName('English', 'constellations', 'Electro Traveler', 'travelerelectro.json');
-altnames.addAltName('English', 'constellations', 'Geo Traveler', 'travelergeo.json');
+altnames.addAltName('English', 'talents', 'Anemo Traveler', 'traveleranemo');
+altnames.addAltName('English', 'talents', 'Electro Traveler', 'travelerelectro');
+altnames.addAltName('English', 'talents', 'Geo Traveler', 'travelergeo');
+altnames.addAltName('English', 'constellations', 'Anemo Traveler', 'traveleranemo');
+altnames.addAltName('English', 'constellations', 'Electro Traveler', 'travelerelectro');
+altnames.addAltName('English', 'constellations', 'Geo Traveler', 'travelergeo');
 
 module.exports = altnames;
