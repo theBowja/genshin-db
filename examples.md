@@ -1657,7 +1657,10 @@ const genshindb = require('genshin-db');
   images: {
     image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
-    awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png'
+    awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png',
+    nameicon: 'UI_EquipIcon_Catalyst_Fourwinds',
+    namegacha: 'UI_Gacha_EquipIcon_Catalyst_Fourwinds',
+    nameawakenicon: 'UI_EquipIcon_Catalyst_Fourwinds_Awaken'
   },
   url: {
     fandom: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'

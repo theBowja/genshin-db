@@ -282,8 +282,15 @@ function collateTalent(existing, newdata) {
 
 function collateWeapon(existing, inputdata) {
 	inputdata.images = {};
-	if(inputdata.icon) inputdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
-	if(inputdata.awakenicon) inputdata.images.awakenicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
+	if(inputdata.icon) {
+		inputdata.images.nameicon = inputdata.icon;
+		inputdata.images.namegacha = `UI_Gacha_EquipIcon_${inputdata.icon.slice(inputdata.icon.indexOf("UI_EquipIcon")+13)}`;
+		inputdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
+	}
+	if(inputdata.awakenicon) {
+		inputdata.images.nameawakenicon = inputdata.awakenicon;
+		inputdata.images.awakenicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
+	}
 
 	inputdata.weaponmaterialtype = existing.weaponmaterialtype;
 
@@ -461,12 +468,12 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
+importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true);
-importData('domains', collateDomain)
+// importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate
