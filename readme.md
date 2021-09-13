@@ -289,6 +289,12 @@ More examples: `npm run build english chinesesimplified korean japanese`, `npm r
 
 Available language names can be found in src/language.js file. Or you can scroll up to the setOptions section in this readme.
 
+If you want to specify only specific folders, then you can as well.
+
+For example: `run build english characters weapons` will produce a distribution with only English characters and weapons data.
+
+Available folder names can be found in src/folder.js file.
+
 ## Time and Space
 Updated 9/8/2021.
 
