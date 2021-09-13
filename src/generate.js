@@ -1,5 +1,7 @@
 const fs = require('fs');
 let language = require('./language.js');
+const design = require('./design.json');
+const Folder = require('./folder.js');
 
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
 // REQUIRES NODE v13+
@@ -12,11 +14,22 @@ if(specificlanguages) {
 	console.log('specified languages: ' + specificlanguages.join(', '));
 }
 
+let specificfolders = [];
+function isValidFolder(folder) { return typeof folder === 'string' && Folder[folder]; }
+for(f of process.argv.slice(2)) {
+	if(isValidFolder(f)) specificfolders.push(f);
+}
+if(specificfolders.length !== 0) {
+	design.folders = specificfolders;
+	console.log('specified folders: ' + specificfolders.join(', '));
+}
+
+
+
 makeIndices();
 combineData();
 
 function makeIndices() {
-	const design = require('./design.json');
 
 	console.log('compiling index for data');
 	for(const lang of language.languages) {
@@ -111,7 +124,6 @@ function makeIndices() {
 function combineData() {
 	console.log("minifying all data, index, image, stats, curve into one file each");
 	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {};
-	const design = require('./design.json');
 
 	for(const lang of language.languages) {
 		mydata[lang] = {};
