@@ -1,5 +1,8 @@
 # genshin-db
 
+![npm](https://img.shields.io/npm/v/genshin-db)
+![npm bundle size](https://img.shields.io/bundlephobia/min/genshin-db)
+
 ### Genshin Impact JSON data with a robust searching API! Updated to version 2.1. Sources from the fandom wiki and GenshinData repo.
 
 ------------------------------------
