@@ -486,6 +486,9 @@ export interface Weapon {
         "ascend6"?: Items[]; // 1 and 2 star weapons only have 4 ascensions
     };
     images: {
+        nameicon: string;
+        namegacha: string;
+        nameawakenicon: string;
         image?: string; // wikia
         icon: string; // hoyolab
         awakenicon: string; // hoyolab
