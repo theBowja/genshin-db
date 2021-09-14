@@ -96,10 +96,16 @@ folders.forEach(folder => {
 		//genshin.talents('klee').passive3
 		let summary = `${libname}.${folder.function}('<b>${query}'${opts}</b>)${outside ? `<b>${outside}</b>` : ''}`;
 		let call = `${libname}.${folder.function}('${query}'${opts})${outside ? outside : ''}`;
-		let result = util.inspect(eval(call), false, null);
-		output += `<summary>${summary}</summary>\n`
-		output += '\n' + codeStart() + result + codeEnd() + '\n'
-
+		try {
+			let result = util.inspect(eval(call), false, null);
+			output += `<summary>${summary}</summary>\n`
+			output += '\n' + codeStart() + result + codeEnd() + '\n'
+			if(result === 'undefined') {
+				console.log('missing '+call);
+			}
+		} catch(e) {
+			console.log('missing '+call);
+		}
 		output += '</details>\n';
 	});
 

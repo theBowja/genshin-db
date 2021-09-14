@@ -272,11 +272,12 @@ function collateTalent(existing, newdata) {
 	}
 	addTalent('combat1');
 	addTalent('combat2');
-	addTalent('combatsp'); // for mona only
+	addTalent('combatsp'); // for mona and ayaka only
 	addTalent('combat3');
 	addTalent('passive1');
 	addTalent('passive2');
 	addTalent('passive3'); // traveler doesn't have passive3
+	addTalent('passive4'); // for kokomi only
 	existing.costs = newdata.costs;
 }
 
@@ -467,8 +468,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
-importData('weapons', collateWeapon)
+importData('talents', collateTalent);
+// importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
