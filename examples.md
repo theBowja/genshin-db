@@ -2269,7 +2269,8 @@ const genshindb = require('genshin-db');
   ],
   disorder: [
     'Your character will be periodically inflicted with Smoldering Flames, causing you to take Pyro DMG until the inflicted Pyro element is removed.'
-  ]
+  ],
+  images: { namepic: 'UI_DungeonPic_Fire' }
 }
 ```
 
