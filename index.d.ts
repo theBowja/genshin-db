@@ -398,6 +398,7 @@ export interface Talent {
     passive1: PassiveTalentDetail;
     passive2: PassiveTalentDetail;
     passive3?: PassiveTalentDetail; // player character doesn't have a third talent
+    passive4?: PassiveTalentDetail; // for kokomi
     costs: {
         "lvl2": Items[];
         "lvl3": Items[];
