@@ -70,6 +70,10 @@ let folders = [
 		         'artifact, { matchCategories: true }', 'wednesday, { matchCategories: true }']
 	},
 	{
+		function: 'enemies',
+		params: ['large electro slime', 'boss, { matchCategories: true }']
+	},
+	{
 		function: 'elements',
 		params: [],
 	},

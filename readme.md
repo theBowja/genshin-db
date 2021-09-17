@@ -75,6 +75,7 @@ Supported languages options are: ChineseSimplified, ChineseTraditional, English,
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
 - [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
 - [genshindb.domains(query[, opts])](#genshindbdomainsquery-opts)
+- [genshindb.enemies(query[, opts])](#genshindbenemiesquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
@@ -190,6 +191,16 @@ Possible inputs for query parameter are:
 - days of week
 
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbdomainsquery-opts) to see example inputs and outputs for this function.
+
+### genshindb.enemies(query[, opts])
+
+Possible inputs for query parameter are:
+
+- all enemy names
+- enemy type: "COMMON", "ELITE", "BOSS"
+- enemy category (found in in-game archive)
+
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbenemiesquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.elements(query[, opts])
 
