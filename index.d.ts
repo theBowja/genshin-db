@@ -222,7 +222,11 @@ export interface Character {
         "ascend6": Items[];
     };
     images: {
-        // image?: string;    // wikia deprecated. use icon instead
+        nameicon: string;
+        namesideicon: string;
+        namegachasplash?: string; // lumine/aether doesn't have this
+        namegachaslice?: string; // lumine/aether doesn't have this
+
         card?: string;     // wikia
         portrait?: string; // wikia
         icon: string;     // hoyolab
@@ -578,6 +582,37 @@ export interface Rewards {
     rarity?: string; // only used for artifacts
     count?: number; // only used for adventure exp, mora, and companionship exp
     // range?: string // used for enhancement ore which can be shown as "0~1"
+}
+
+//#endregion
+
+//#region Enemies
+
+export interface Enemy {
+    name: string;
+    specialname: string;
+
+    type: string; // enum of "COMMON", "ELITE", "BOSS"
+    category: string; 
+    description: string;
+
+    // droplist: Rewards; TODO
+    // particles: TODO
+    // resistance: { TODO
+    //     physical: number;
+    //     pyro: number;
+    //     dendro: number;
+    //     hydro: number;
+    //     geo: number;
+    //     anemo: number;
+    //     cryo: number;
+    //     electro: number;
+    // };
+
+    images: {
+        nameicon: string;
+    };
+    // stats: StatFunction; TODO
 }
 
 //#endregion
