@@ -201,8 +201,20 @@ function updateURLs() {
 function collateCharacter(existing, newdata, lang) {
 	newdata.aliases = existing.aliases;
 	newdata.images = {};
-	if(newdata.icon) newdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
-	if(newdata.sideicon) newdata.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
+	if(newdata.icon) {
+		let name = newdata.icon.slice(newdata.icon.lastIndexOf('_')+1);
+		newdata.images.nameicon = newdata.icon;
+		newdata.images.nameiconcard = `UI_AvatarIcon_${name}_Card`;
+		if(newdata.birthday) { // not player
+			newdata.images.namegachasplash = `UI_Gacha_AvatarImg_${name}`;
+			newdata.images.namegachaslice = `UI_Gacha_AvatarIcon_${name}`;
+		}
+		newdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
+	}
+	if(newdata.sideicon) {
+		newdata.images.namesideicon = newdata.sideicon;
+		newdata.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
+	}
 
 	//newdata.talentmaterialtype = existing.talentmaterialtype;
 	newdata.url = existing.url;
@@ -468,7 +480,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
-importData('talents', collateTalent);
+// importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
@@ -477,5 +489,5 @@ importData('talents', collateTalent);
 // importData('domains', collateDomain)
 
 // getRedirectImages(); // separate. for talents
-// getUpperBodyImages(); // must be separate
+getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate

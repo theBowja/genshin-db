@@ -113,14 +113,18 @@ const genshindb = require('genshin-db');
     ]
   },
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png',
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Ganyu_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519275372324.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519280045054.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/4af4adf192a35db2dd76d9718acc7bc8.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/4af4adf192a35db2dd76d9718acc7bc8.png',
+    nameicon: 'UI_AvatarIcon_Ganyu',
+    nameiconcard: 'UI_AvatarIcon_Ganyu_Card',
+    namegachasplash: 'UI_Gacha_AvatarImg_Ganyu',
+    namegachaslice: 'UI_Gacha_AvatarIcon_Ganyu',
+    namesideicon: 'UI_AvatarIcon_Side_Ganyu'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Ganyu' },
   stats: [Function (anonymous)]
@@ -248,14 +252,18 @@ const genshindb = require('genshin-db');
     ]
   },
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png',
+    nameicon: 'UI_AvatarIcon_Ambor',
+    nameiconcard: 'UI_AvatarIcon_Ambor_Card',
+    namegachasplash: 'UI_Gacha_AvatarImg_Ambor',
+    namegachaslice: 'UI_Gacha_AvatarIcon_Ambor',
+    namesideicon: 'UI_AvatarIcon_Side_Ambor'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)]
@@ -333,14 +341,18 @@ const genshindb = require('genshin-db');
     ]
   },
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg',
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png',
+    nameicon: 'UI_AvatarIcon_Ambor',
+    nameiconcard: 'UI_AvatarIcon_Ambor_Card',
+    namegachasplash: 'UI_Gacha_AvatarImg_Ambor',
+    namegachaslice: 'UI_Gacha_AvatarIcon_Ambor',
+    namesideicon: 'UI_AvatarIcon_Side_Ambor'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)]
@@ -418,14 +430,18 @@ const genshindb = require('genshin-db');
     ]
   },
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png',
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Character_Tartaglia_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Tartaglia.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321160453386.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321234137061.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/34ebaeb164a8b447dbe52afaae3e1f63.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/34ebaeb164a8b447dbe52afaae3e1f63.png',
+    nameicon: 'UI_AvatarIcon_Tartaglia',
+    nameiconcard: 'UI_AvatarIcon_Tartaglia_Card',
+    namegachasplash: 'UI_Gacha_AvatarImg_Tartaglia',
+    namegachaslice: 'UI_Gacha_AvatarIcon_Tartaglia',
+    namesideicon: 'UI_AvatarIcon_Side_Tartaglia'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Tartaglia' },
   stats: [Function (anonymous)]
@@ -503,14 +519,18 @@ const genshindb = require('genshin-db');
     ]
   },
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png',
     card: 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg',
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png',
     cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112210305833310.png',
     cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png',
-    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/f42e16fca94650e2e932c093de92ae54.png'
+    'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/f42e16fca94650e2e932c093de92ae54.png',
+    nameicon: 'UI_AvatarIcon_Venti',
+    nameiconcard: 'UI_AvatarIcon_Venti_Card',
+    namegachasplash: 'UI_Gacha_AvatarImg_Venti',
+    namegachaslice: 'UI_Gacha_AvatarIcon_Venti',
+    namesideicon: 'UI_AvatarIcon_Side_Venti'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Venti' },
   stats: [Function (anonymous)]
