@@ -15,6 +15,7 @@ const genshindb = require('genshin-db');
 - [genshindb.artifacts(query[, opts])](#genshindbartifactsquery-opts)
 - [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
 - [genshindb.domains(query[, opts])](#genshindbdomainsquery-opts)
+- [genshindb.enemies(query[, opts])](#genshindbenemiesquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
@@ -2436,6 +2437,52 @@ const genshindb = require('genshin-db');
   'Domain of Mastery: Vine-Infested Ruins II',
   'Domain of Mastery: Vine-Infested Ruins III',
   'Domain of Mastery: Vine-Infested Ruins IV'
+]
+```
+
+</details>
+
+## genshindb.enemies(query[, opts])]
+
+<details>
+<summary>genshindb.enemies('<b>large electro slime'</b>)</summary>
+
+```js
+{
+  name: 'Large Electro Slime',
+  specialname: 'Rolling Elemental',
+  type: 'COMMON',
+  category: 'Elemental Lifeforms',
+  description: 'A monster created by the coalescing of Electro dispersed throughout nature.\n' +
+    'Due to the abundant Electro within its form, it will deliver an electric shock to its surroundings from time to time. At present, some have attempted to harness this energy to aid in production activities. Perhaps some new science will be born from this...?',
+  images: { nameicon: 'UI_MonsterIcon_Slime_Electric_03' }
+}
+```
+
+</details>
+<details>
+<summary>genshindb.enemies('<b>boss', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Anemo Hypostasis',
+  'Azhdaha',
+  'Childe',
+  'Cryo Hypostasis',
+  'Cryo Regisvine',
+  'Electro Hypostasis',
+  'Geo Hypostasis',
+  'Hydro Hypostasis',
+  'La Signora',
+  'Lupus Boreas, Dominator of Wolves',
+  'Maguu Kenki',
+  'Oceanid',
+  'Perpetual Mechanical Array',
+  'Primo Geovishap',
+  'Pyro Hypostasis',
+  'Pyro Regisvine',
+  'Stormterror',
+  'Thunder Manifestation'
 ]
 ```
 

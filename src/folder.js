@@ -14,6 +14,7 @@ module.exports = {
 
 	artifacts      : 'artifacts',
 	domains        : 'domains',
+	enemies        : 'enemies',
 
 	rarity         : 'rarity',
 	elements       : 'elements'

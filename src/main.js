@@ -183,6 +183,11 @@ genshin.domains = function(query, opts) {
 }
 genshin.domain = genshin.domains;
 
+genshin.enemies = function(query, opts) {
+    return searchFolder(query, Folder.enemies, opts);
+}
+genshin.enemy = genshin.enemies;
+
 // genshin.reactions = function(query, opts={}) {
 //     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 

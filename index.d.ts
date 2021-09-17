@@ -92,6 +92,7 @@ export enum Folder {
 
     artifacts      = "artifacts",
     domains        = "domains",
+    enemies        = "enemies",
 
     rarity         = "rarity",
     elements       = "elements"
@@ -115,6 +116,7 @@ export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
 export const weapons: QueryFunction<Weapon>;
 export const materials: QueryFunction<Material>;
 export const domains: QueryFunction<Domain>;
+export const enemies: QueryFunction<Enemy>;
 
 //#region Artifact
 
