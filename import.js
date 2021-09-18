@@ -499,8 +499,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true);
-// importData('domains', collateDomain);
-importData('enemies', collateEnemy);
+importData('domains', collateDomain);
+// importData('enemies', collateEnemy);
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate // cover1, cover2
