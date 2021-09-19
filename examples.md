@@ -1861,6 +1861,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Guide to Ballad',
   description: 'Talent Level-Up material.\\nPoetry is the soul of the land of the wind.\\nPoetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
+  sortorder: 1845,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Talent Level-Up Material',
@@ -1939,6 +1940,7 @@ const genshindb = require('genshin-db');
 {
   name: "Dvalin's Sigh",
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\\nBeautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\\nHis enemies are the thousands who stand against the wind.',
+  sortorder: 1780,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -1960,6 +1962,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
+  sortorder: 1235,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
