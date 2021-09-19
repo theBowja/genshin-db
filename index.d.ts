@@ -194,7 +194,6 @@ export interface ArtifactDetail {
 
 export interface Character {
     name: string;
-    aliases?: string[]; // currently unused
     title: string;
     description: string;
     rarity: string;
@@ -249,7 +248,6 @@ export interface Character {
 
 export interface Constellation {
     name: string;
-    aliases?: string[];
     c1: ConstellationDetail;
     c2: ConstellationDetail;
     c3: ConstellationDetail;
@@ -396,7 +394,6 @@ export interface FoodIngredient {
 
 export interface Talent {
     name: string;
-    aliases?: string[];
     combat1: CombatTalentDetail;
     combat2: CombatTalentDetail;
     combatsp?: CombatTalentDetail; // for mona/ayaka
