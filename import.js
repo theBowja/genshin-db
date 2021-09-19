@@ -372,7 +372,7 @@ async function collateMaterial(existing, newdata, lang, skipimageredirect) {
 	if(existing.dropdomain && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
 	if(existing.daysofweek && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
-	const copyover = ['name', 'description', 'rarity', 'category', 'materialtype', 'dropdomain',
+	const copyover = ['name', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
 	                  'daysofweek', 'source'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {

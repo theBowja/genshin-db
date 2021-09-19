@@ -526,6 +526,7 @@ export interface WeaponMaterial { // English only
 export interface Material {
     name: string;
     description: string;
+    sortorder: number;
     rarity?: string; // not every material has this
     category: string; // untranslated
     materialtype: string;
