@@ -96,7 +96,7 @@ export enum Folder {
 
     rarity         = "rarity",
     elements       = "elements"
-};
+}
 
 //#endregion
 
