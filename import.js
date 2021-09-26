@@ -255,7 +255,7 @@ function collateCharacter(existing, newdata, lang) {
 	existing.url = newdata.url;
 }
 
-function collateConstellation(existing, newdata) {
+function collateConstellation(existing, newdata, lang) {
 	clearObject(existing);
 	existing.name = newdata.name;
 	if(newdata.aliases) existing.aliases = newdata.aliases;
@@ -263,6 +263,17 @@ function collateConstellation(existing, newdata) {
 		if(existing['c'+i] === undefined) existing['c'+i] = {};
 		existing['c'+i].name = newdata['c'+i].name;
 		existing['c'+i].effect = newdata['c'+i].effect;
+	}
+	if(lang === 'English') {
+		let rx = /_([^_]*)_[^_]*\.png$/;
+		let extract = rx.exec(newdata.images.c1)[1];
+		if(!extract.startsWith('Player')) {
+			newdata.images.constellation = `Eff_UI_Talent_${extract}`;
+		} else {
+			let element = /Player(.*)/.exec(extract)[1];
+			newdata.images.constellation = `Eff_UI_Talent_PlayerBoy_${element}`;
+			newdata.images.constellation2 = `Eff_UI_Talent_PlayerGirl_${element}`;
+		}
 	}
 }
 
@@ -492,13 +503,13 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 
 // importData('characters', collateCharacter);
 // importCurve('characters');
-// importData('constellations', collateConstellation);
+importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
-importData('materials', collateMaterial, undefined, false, true);
+// importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
 

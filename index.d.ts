@@ -255,6 +255,8 @@ export interface Constellation {
     c5: ConstellationDetail;
     c6: ConstellationDetail;
     images: {
+        constellation: string;
+        constellation2?: string; // only for player characters. shows girl constellation image
         c1: string;
         c2: string;
         c3: string;
