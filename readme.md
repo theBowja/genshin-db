@@ -7,11 +7,11 @@
 
 ------------------------------------
 
-Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes, domains.
+Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes, domains, etc.
 
-All in-game languages are supported for query and result. (translations available only for characters, talents, materials, constellations, weapons, artifacts, foods currently).
+All in-game languages are supported for query and result.
 
-Install with:
+Install Node and npm. Then install the package in your project with:
 ```cmd
 npm install genshin-db
 ```
@@ -24,9 +24,9 @@ const genshindb = require('genshin-db');
 
 REFER TO [EXAMPLES.md](https://github.com/theBowja/genshin-db/blob/main/examples.md) since the readme below isn't detailed.
 
-Every input string to the query parameter will be **autocompleted** to match possible values. This means doing something like genshin.characters('amb') will give the same results as genshin.characters('amber'). If there are no results, then **undefined** will be returned.
+Every query input string will be **autocompleted** to match available values. This means doing something like genshin.characters('amb') will give the same results as genshin.characters('amber'). If there are no results, then **undefined** will be returned.
 
-Every update will probably change the format for some data. If you need to know the data format for some specific version of this library, you can go to the github and switch to the tag version you're on. Then go into the data folder and look at the data to find the format. Don't look into the template folder since it isn't up-to-date.
+Data format may change frequently. If you need to know the data format for some specific version of this library, you can go to the github and switch to the tag version you're on. Then go into the data folder and look at the data to find the format. Don't look into the template folder since it isn't up-to-date.
 
 If you need help or have questions, you can talk to me in [my discord](https://discord.gg/utZRUky5Xm).
 
@@ -227,6 +227,7 @@ Adds the `altname` as a custom name to reach `query` inside the `language`/`fold
 
 The enum for available languages is at `genshindb.Languages`. Or look inside [language.js](https://github.com/theBowja/genshin-db/blob/main/src/language.js)  
 The enum for available folders is at `genshindb.Folders`. Or look inside [folder.js](https://github.com/theBowja/genshin-db/blob/main/src/folder.js)
+
 `altname` is the custom name you want to add. Autocomplete will be available for this.  
 `query` is the name of the data you want to attach your custom name too.  It must be in the language you specified previously.
 
