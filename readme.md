@@ -46,11 +46,12 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 
 ### genshindb.setOptions(opts)
 
-The following are the **default options** that the library starts off with. If you want to change it, then call setOptions.
+The following are the **default options** that the library starts off with. If you want to change it, then call `genshindb.setOptions`.
 
 ```js
 {
-    matchAliases: true, // Allows the matching of aliases.
+    matchAltNames: true, // Allows the matching of alternate or custom names.
+    matchAliases: false, // Allows the matching of aliases. These are searchable fields that returns the data object the query matched in.
     matchCategories: false, // Allows the matching of categories. If true, then returns an array if it matches.
     verboseCategories: false, // Used if a category is matched. If true, then replaces each string name in the array with the data object instead.
     queryLanguages: ["English"], // Array of languages that your query will be searched in.
