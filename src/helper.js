@@ -1,9 +1,11 @@
 const helper = {};
 
-
-helper.makeFilename = function(str) {
-	str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-	return str.toLowerCase().replace(/[^a-z]/g,'');
+/**
+ * 
+ */
+helper.makeFilename = function(englishname) {
+	englishname = englishname.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+	return englishname.toLowerCase().replace(/[^a-z]/g,'');
 }
 
 
@@ -122,7 +124,46 @@ function rmLast(param) {
 	return param.substring(0, param.length-1);
 }
 
+/*==============================================================================================*/
 
+/**
+ * attributes - the attributes object from genshin-db. for example: genshindb.talents('klee').combat1.attributes
+ * talentlevel - the talent level that you wish to get the formatted labels of
+ * Returns an array of labels.
+ * Example: ['1-Hit DMG|72.2%', '2-Hit DMG|62.4%', ...]
+ */
+helper.formatTalentLabels = function(attributes, talentlevel) {
+	if(!Number.isInteger(talentlevel) || !(talentlevel >= 1 && talentlevel <= 15))
+		throw 'talentlevel parameter must be an integer between 1 and 15';
+	// if(!attributes.labels && attributes.attributes && attributes.attributes.labels) attributes = attributes.attributes;
+
+	let outlabels = [];
+
+	const rx = /{(.*?)}/g;
+	for(let label of attributes.labels) {
+		let matches = label.matchAll(rx);
+
+		for(let match of matches) {
+			const grab = match[1]; // example: param5:F1
+			const [paramnum, format] = grab.split(':');
+
+			let value = attributes.parameters[paramnum][talentlevel-1];
+			if(format === 'I') { // integer
+				label = label.replace(match[0], value);
+				continue;
+			}
+			if(format.includes('P')) // percent
+				value = value*100;
+			if(format.includes('F')) // float
+				value = value.toFixed(format[1]);
+			if(format.includes('P')) // percent
+				value = value+'%';
+			label = label.replace(match[0], value);
+		}
+		outlabels.push(label);
+	}
+	return outlabels;
+}
 
 
 

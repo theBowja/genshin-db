@@ -11,7 +11,7 @@ Flexibly search and get the information of characters, talents, constellations, 
 
 All in-game languages are supported for query and result.
 
-Install Node and npm. Then install the package in your project with:
+Install Node v12 or higher. Install npm. Then install this package into your project with:
 ```cmd
 npm install genshin-db
 ```
