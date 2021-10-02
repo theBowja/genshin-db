@@ -505,7 +505,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
+// importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
