@@ -2303,6 +2303,7 @@ const genshindb = require('genshin-db');
   disorder: [
     'Your character will be periodically inflicted with Smoldering Flames, causing you to take Pyro DMG until the inflicted Pyro element is removed.'
   ],
+  monsterlist: [ 'Pyro Slime', 'Large Pyro Slime', 'Pyro Abyss Mage' ],
   images: { namepic: 'UI_DungeonPic_Fire' }
 }
 ```
@@ -2449,6 +2450,22 @@ const genshindb = require('genshin-db');
   'Domain of Mastery: Vine-Infested Ruins II',
   'Domain of Mastery: Vine-Infested Ruins III',
   'Domain of Mastery: Vine-Infested Ruins IV'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.domains('<b>fatui pyro agent', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Domain of Blessing: Dance of Steel II',
+  'Domain of Blessing: Dance of Steel III',
+  'Domain of Blessing: Dance of Steel IV',
+  'Domain of Blessing: Dance of Steel V',
+  'Domain of Mastery: Altar of Flames IV',
+  'Domain of Mastery: Circle of Embers IV',
+  'Domain of Mastery: Heart of the Flames IV'
 ]
 ```
 

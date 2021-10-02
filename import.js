@@ -405,7 +405,7 @@ function collateDomain(existing, newdata, lang) {
 	if(existing.disorder && !newdata.disorder) newdata.disorder = existing.disorder;
 	clearObject(existing);
 	const copyover = ['name', 'region', 'domainentrance', 'domaintype', 'description', 'recommendedlevel', 'recommendedelements',
-                  'daysofweek', 'unlockrank', 'rewardpreview', 'disorder'];
+                  'daysofweek', 'unlockrank', 'rewardpreview', 'disorder', 'monsterlist'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
@@ -505,12 +505,12 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
+// importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true);
-// importData('domains', collateDomain);
+importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
 
 // getRedirectImages(); // separate. for talents
