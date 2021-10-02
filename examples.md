@@ -1863,7 +1863,9 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Guide to Ballad',
-  description: 'Talent Level-Up material.\\nPoetry is the soul of the land of the wind.\\nPoetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
+  description: 'Talent Level-Up material.\n' +
+    'Poetry is the soul of the land of the wind.\n' +
+    'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
   sortorder: 1845,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
@@ -1942,7 +1944,9 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: "Dvalin's Sigh",
-  description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\\nBeautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\\nHis enemies are the thousands who stand against the wind.',
+  description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
+    'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
+    'His enemies are the thousands who stand against the wind.',
   sortorder: 1780,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
