@@ -67,7 +67,8 @@ let folders = [
 		function: 'domains',
 		params: ['flame', 'cecilia garden, { matchCategories: true }', 'inazuma, { matchCategories: true }',
 				 'anemo, { matchCategories: true }',
-		         'artifact, { matchCategories: true }', 'wednesday, { matchCategories: true }']
+		         'artifact, { matchCategories: true }', 'wednesday, { matchCategories: true }',
+		         'fatui pyro agent, { matchCategories: true }']
 	},
 	{
 		function: 'enemies',

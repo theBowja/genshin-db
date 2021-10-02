@@ -571,7 +571,7 @@ export interface Domain {
     rewardpreview: Rewards[];
     disorder: string[];
 
-    // monsterlist?: string[]; // UNIMPLEMENTED TODO
+    monsterlist?: string[]; // I manually keep this updated. If I forget, it'll be undefined.
     // objectives?: string[]; // UNIMPLEMENTED TODO
 
     images: {
