@@ -2283,7 +2283,9 @@ const genshindb = require('genshin-db');
   region: 'Mondstadt',
   domainentrance: 'Taishan Mansion',
   domaintype: 'Talent Level-Up Material',
-  description: 'A massive amount of Pyro energy is coursing through this scorching ancient sacrificial altar.\\nYou will get scorched by merely being here.\\nYou shall earn Talent level-up materials, if — and only if — you can pass the trial.',
+  description: 'A massive amount of Pyro energy is coursing through this scorching ancient sacrificial altar.\n' +
+    'You will get scorched by merely being here.\n' +
+    'You shall earn Talent level-up materials, if — and only if — you can pass the trial.',
   recommendedlevel: 38,
   recommendedelements: [ 'Hydro', 'Cryo', 'Electro' ],
   daysofweek: [ 'Monday', 'Thursday', 'Sunday' ],
