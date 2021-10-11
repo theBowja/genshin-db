@@ -37,9 +37,10 @@ const genshindb = require('genshin-db');
   'Ningguang',          'Noelle',   'Qiqi',
   'Raiden Shogun',      'Razor',    'Rosaria',
   'Sangonomiya Kokomi', 'Sayu',     'Sucrose',
-  'Tartaglia',          'Venti',    'Xiangling',
-  'Xiao',               'Xingqiu',  'Xinyan',
-  'Yanfei',             'Yoimiya',  'Zhongli'
+  'Tartaglia',          'Thoma',    'Venti',
+  'Xiangling',          'Xiao',     'Xingqiu',
+  'Xinyan',             'Yanfei',   'Yoimiya',
+  'Zhongli'
 ]
 ```
 
@@ -278,7 +279,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Amber',
-  title: 'la Campeona de Vuelo',
+  title: 'La Campeona de Vuelo',
   description: 'Siempre enérgica y llena de vida, Amber es la mejor exploradora de los Caballeros de Favonius, aunque también es la única...',
   rarity: '4',
   element: 'Pyro',
@@ -560,11 +561,11 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Amber',   'Bennett',
-  'Diluc',   'Hu Tao',
-  'Klee',    'Xiangling',
-  'Xinyan',  'Yanfei',
-  'Yoimiya'
+  'Amber',     'Bennett',
+  'Diluc',     'Hu Tao',
+  'Klee',      'Thoma',
+  'Xiangling', 'Xinyan',
+  'Yanfei',    'Yoimiya'
 ]
 ```
 
@@ -681,21 +682,21 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',             'Aloy',               'Amber',
-  'Barbara',            'Beidou',             'Bennett',
-  'Chongyun',           'Diluc',              'Diona',
-  'Eula',               'Fischl',             'Ganyu',
-  'Hu Tao',             'Jean',               'Kaedehara Kazuha',
-  'Kaeya',              'Kamisato Ayaka',     'Keqing',
-  'Klee',               'Kujou Sara',         'Lisa',
-  'Mona',               'Ningguang',          'Noelle',
-  'Qiqi',               'Raiden Shogun',      'Razor',
-  'Rosaria',            'Sangonomiya Kokomi', 'Sayu',
-  'Sucrose',            'Tartaglia',          'Traveler (Anemo)',
-  'Traveler (Electro)', 'Traveler (Geo)',     'Venti',
-  'Xiangling',          'Xiao',               'Xingqiu',
-  'Xinyan',             'Yanfei',             'Yoimiya',
-  'Zhongli'
+  'Albedo',           'Aloy',               'Amber',
+  'Barbara',          'Beidou',             'Bennett',
+  'Chongyun',         'Diluc',              'Diona',
+  'Eula',             'Fischl',             'Ganyu',
+  'Hu Tao',           'Jean',               'Kaedehara Kazuha',
+  'Kaeya',            'Kamisato Ayaka',     'Keqing',
+  'Klee',             'Kujou Sara',         'Lisa',
+  'Mona',             'Ningguang',          'Noelle',
+  'Qiqi',             'Raiden Shogun',      'Razor',
+  'Rosaria',          'Sangonomiya Kokomi', 'Sayu',
+  'Sucrose',          'Tartaglia',          'Thoma',
+  'Traveler (Anemo)', 'Traveler (Electro)', 'Traveler (Geo)',
+  'Venti',            'Xiangling',          'Xiao',
+  'Xingqiu',          'Xinyan',             'Yanfei',
+  'Yoimiya',          'Zhongli'
 ]
 ```
 
