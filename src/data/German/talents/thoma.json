@@ -1,0 +1,209 @@
+{
+	"name": "Thoma",
+	"combat1": {
+		"name": "Standardangriff: Schneller Schmetterspeer",
+		"info": "**Standardangriff**\nFührt bis zu 4 Lanzenstiche aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer, sticht geschwind nach vorn und fügt den Gegnern in der Bahn Schaden zu.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH PHase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P} ×2",
+				"SCH Phase 4|{param4:F1P}",
+				"SCH heftiger Schläge|{param5:P}",
+				"Ausdauerverbrauch heftiger Schläge|{param6:F1} Punkte",
+				"SCH beim Fallen|{param7:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Lodernder Segen",
+		"info": "Thoma benutzt die Spitze seiner Stangenwaffe als Punkt, um Flammen zu kanalisieren und einen Tritt auszuführen, mit dem er Pyro-Flächenschaden verursacht. Erschafft dann einen Schild des lodernden Segens und verleiht Thoma beim Auslösen das Pyro-Attribut.\nDie Schildstärke hängt von Thomas max. LP ab.\nMerkmale des Schilds des lodernden Segens:\n· Hält bei Pyro-Schaden 250 % ab.\n· Addiert die verbleibende Schildstärke beim Erhalten eines neuen Schilds des lodernden Segens hinzu und setzt die Wirkungsdauer zurück.\n\nDie Schildstärke kann einen bestimmten Teil der max. LP von Thoma nicht übersteigen.",
+		"description": "Für einen Gast aus der Ferne würde einem nur die brennendste Leidenschaft erlauben, die reine und präzise Stangenwaffenkunst von Inazuma zu erlernen. Thomas Errungenschaft beschränkt sich in der Tat nicht darauf, möglichst schnell der Beste zu werden, sondern er hat auch seinen Willen, seine Feinde abzuwehren und seine Kameraden zu beschützen, in seine Kunst einfließen lassen.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:P}",
+				"Schildstärke|{param2:F1P} der max. LP + {param3:I}",
+				"Schilddauer|{param4:F1} s",
+				"Max. Schildstärke|{param5:F1P} der max. LP + {param6:I}",
+				"Abklingzeit|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Rote Ooyoroi",
+		"info": "Thoma wirbelt seinen Speer herum und durchschneidet die Gegner in der Umgebung mit prasselndem Feuer, womit er ihnen Pyro-Flächenschaden zufügt. Umhüllt sich dann in eine brennende Ooyoroi.\n\n**Brennende Ooyoroi**\nLöst bei Angriffen aktueller Figuren unter dem Einfluss des Effekts „brennende Ooyoroi“ mit Standardangriffen „Brennender Zusammenbruch“ aus, verursacht damit Pyro-Flächenschaden und erschafft einen Schild des lodernden Segens.\n1 s Abklingzeit für „Brennender Zusammenbruch“.\n\nVon der Schildstärke abgesehen sind die Merkmale dieses Schildes identisch mit denen des Schildes der Elementarfähigkeit „Lodernder Segen“:\n· Hält bei Pyro-Schaden 250 % ab.\n· Addiert die verbleibende Schildstärke beim Erhalten eines neuen Schilds des lodernden Segens hinzu und setzt die Wirkungsdauer zurück.\n\nDie Schildstärke kann einen bestimmten Teil der max. LP von Thoma nicht übersteigen.\n\nEffekt der brennenden Ooyoroi erlischt, wenn Thoma ohnmächtig wird.",
+		"description": "„Ich werde mein Versprechen, das ich damals gegeben habe, nicht vergessen. Möge diese Flamme diejenigen beschützen, die ich schätze, und möge sie niemals erlöschen.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:P}",
+				"SCH von brennendem Zusammenbruch|{param2:P}",
+				"Schildstärke|{param3:F1P} der max. LP + {param4:I}",
+				"Schilddauer|{param5:F1} s",
+				"Dauer der brennenden Ooyoroi|{param7:F1} s",
+				"Abklingzeit|{param8:F1} s",
+				"Elementarenergie|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Schichtpanzer",
+		"info": "Erhöht die Schildeffizienz aktueller Figuren beim Erhalten oder Aktualisieren von **Schild des lodernden Segens** 6 s lang um 5 %.\n0,3 s Abklingzeit, 5-fach stapelbar."
+	},
+	"passive2": {
+		"name": "Flammenangriff",
+		"info": "Erhöht den mit dem brennenden Zusammenbruch von **Rote Ooyoroi** verursachten Schaden in Höhe von 2,2 % der max. LP von Thoma."
+	},
+	"passive3": {
+		"name": "Brassenjagd",
+		"info": "Bringt beim erfolgreichen **Angeln** in Inazuma mit einer Wahrscheinlichkeit von 20 % den 2-fachen Ertrag."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Vergänglichkeit“",
+				"count": 3
+			},
+			{
+				"name": "Krähenwappen der Schatzsuche",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Vergänglichkeit“",
+				"count": 2
+			},
+			{
+				"name": "Krähenwappen der Silberschätze",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Vergänglichkeit“",
+				"count": 4
+			},
+			{
+				"name": "Krähenwappen der Silberschätze",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Vergänglichkeit“",
+				"count": 6
+			},
+			{
+				"name": "Krähenwappen der Silberschätze",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Vergänglichkeit“",
+				"count": 9
+			},
+			{
+				"name": "Krähenwappen der Silberschätze",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Vergänglichkeit“",
+				"count": 4
+			},
+			{
+				"name": "Krähenwappen der Goldschätze",
+				"count": 4
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Vergänglichkeit“",
+				"count": 6
+			},
+			{
+				"name": "Krähenwappen der Goldschätze",
+				"count": 6
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Vergänglichkeit“",
+				"count": 12
+			},
+			{
+				"name": "Krähenwappen der Goldschätze",
+				"count": 9
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Vergänglichkeit“",
+				"count": 16
+			},
+			{
+				"name": "Krähenwappen der Goldschätze",
+				"count": 12
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

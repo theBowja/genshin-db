@@ -133,6 +133,7 @@ async function getRedirectImages() {
 		for(let filename of allfiles) {
 			if(!filename.endsWith('.json')) return;
 			const mytalent = require(`./src/data/English/talents/${filename}`);
+			filename = filename.substring(0, filename.indexOf('.'));
 			if(existing[filename] === undefined) existing[filename] = {};
 			//===============
 			console.log(filename);
@@ -187,6 +188,7 @@ function updateURLs() {
 			fs.readdirSync(`./src/data/English/${folder}`).forEach(filename => {
 				if(!filename.endsWith('.json')) return;
 				const mycharacter = require(`./src/data/English/${folder}/${filename}`);
+				filename = filename.substring(0, filename.indexOf('.'));
 				if(existing[filename] === undefined) existing[filename] = {};
 				existing[filename].fandom = `https://genshin-impact.fandom.com/wiki/${mycharacter.name.replace(/ /g, '_')}`;
 			});
@@ -503,14 +505,14 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 
 // importData('characters', collateCharacter);
 // importCurve('characters');
-// importData('constellations', collateConstellation);
+importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true);
-importData('domains', collateDomain);
+// importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
 
 // getRedirectImages(); // separate. for talents

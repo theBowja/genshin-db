@@ -1,0 +1,209 @@
+{
+	"name": "Thomas",
+	"combat1": {
+		"name": "Attaque normale : Lance célère",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups de lance.\n\n**Attaque chargée**\nCharge en ligne droite et inflige des DGT aux ennemis sur sa route ; cette attaque consomme de l'endurance.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P} ×2",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT attaque chargée|{param5:P}",
+				"Coût d'endurance attaque chargée|{param6:F1} pts",
+				"DGT durant la chute|{param7:F1P}",
+				"DGT chute basse/élevée|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Bénédiction flamboyante",
+		"info": "Thomas utilise la pointe de sa lance comme point d'appui pour canaliser les flammes et effectuer un coup de pied qui inflige des DGT Pyro de zone et libère une barrière défensive brûlante. Au moment où elle se déclenche, la barrière applique l'élément Pyro à Thomas.\nL'absorption des DGT de la barrière est fonction des PV max de Thomas.\nLa barrière brûlante possède les caractéristiques suivantes :\n· Elle absorbe les DGT Pyro avec 250 % d'efficacité.\n· L'absorption de DGT restante d'une barrière brûlante existante se cumulera si une autre barrière brûlante est obtenue en même temps, tandis que sa durée sera actualisée.\n\nL'absorption maximale de DGT de la barrière ne dépassera pas un certain pourcentage des PV max de Thomas.",
+		"description": "Pour un invité venu de loin, seule la passion la plus ardente permet de maîtriser les arts si précis de la lance d'Inazuma. Les prouesses de Thomas, en effet, ne se limitent pas à être « le disciple le plus rapide » ou « un lancier hautement qualifié », il a également imprégné sa technique de sa volonté de protéger les autres et de repousser les ennemis.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:P}",
+				"PV du bouclier|{param2:F1P} PV max + {param3:I} PV",
+				"Durée du bouclier|{param4:F1} s",
+				"PV max du bouclier|{param5:F1P} PV max + {param6:I}",
+				"Temps de recharge|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "O-yoroi écarlate",
+		"info": "Thomas fait tournoyer sa lance, tranchant ses ennemis avec des flammes rugissantes qui infligent des DGT Pyro de zone et se transforment en un o-yoroi embrasé.\n\n**O-yoroi embrasé**\nL'attaque normale d'un personnage déployé affecté par un o-yoroi embrasé déclenchera un effondrement ardent qui inflige des DGT Pyro de zone et crée une barrière brûlante.\nUn effondrement ardent peut être déclenché une fois toutes les secondes.\n\nUne barrière brûlante créée de cette manière est identique à celle créée grâce à la compétence élémentaire « Bénédiction flamboyante » de Thomas, à l'exception de la quantité de DGT qu'elle peut absorber.\n· Elle absorbe les DGT Pyro avec 250 % d'efficacité.\n· L'absorption de DGT restante d'une barrière brûlante existante se cumulera si une autre barrière brûlante est obtenue en même temps, tandis que sa durée sera actualisée.\n\nL'absorption maximale de DGT de la barrière ne dépassera pas un certain pourcentage des PV max de Thomas.\n\nSi Thomas est vaincu, les effets de l'o-yoroi embrasé se dissiperont.",
+		"description": "« Je n'oublierai pas ma promesse. Que cette flamme brûlante protège ceux que je chéris, et qu'elle ne s'éteigne jamais. »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:P}",
+				"DGT effondrement ardent|{param2:P}",
+				"PV du bouclier|{param3:F1P} PV max + {param4:I} PV",
+				"Durée du bouclier|{param5:F1} s",
+				"Durée O-yoroi embrasé|{param7:F1} s",
+				"Temps de recharge|{param8:F1} s",
+				"Énergie élémentaire|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Superposition d'armures",
+		"info": "Lorsque le personnage déployé obtient ou actualise une **barrière brûlante**, la force de son bouclier augmente de 5 % pendant 6 s.\nCet effet peut être déclenché une fois toutes les 0,3 s et cumulé jusqu'à 5 fois."
+	},
+	"passive2": {
+		"name": "Assaut enflammé",
+		"info": "Les DGT infligés par l'effondrement ardent d'**O-yoroi écarlate** augmentent d'une valeur équivalant à 2,2 % des PV max de Thomas."
+	},
+	"passive3": {
+		"name": "Passion pêche",
+		"info": "Lorsque {M#le voyageur}{F#la voyageuse} réussit une **pêche** à Inazuma, l'aide de Thomas accorde 20 % de chances d'obtenir le double de prises."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'éphémère",
+				"count": 3
+			},
+			{
+				"name": "Insigne du Pilleur",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Éphémère",
+				"count": 2
+			},
+			{
+				"name": "Insigne de corbeau en argent",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Éphémère",
+				"count": 4
+			},
+			{
+				"name": "Insigne de corbeau en argent",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Éphémère",
+				"count": 6
+			},
+			{
+				"name": "Insigne de corbeau en argent",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Éphémère",
+				"count": 9
+			},
+			{
+				"name": "Insigne de corbeau en argent",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 4
+			},
+			{
+				"name": "Insigne de corbeau en or",
+				"count": 4
+			},
+			{
+				"name": "Papillon infernal",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 6
+			},
+			{
+				"name": "Insigne de corbeau en or",
+				"count": 6
+			},
+			{
+				"name": "Papillon infernal",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 12
+			},
+			{
+				"name": "Insigne de corbeau en or",
+				"count": 9
+			},
+			{
+				"name": "Papillon infernal",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'éphémère",
+				"count": 16
+			},
+			{
+				"name": "Insigne de corbeau en or",
+				"count": 12
+			},
+			{
+				"name": "Papillon infernal",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}
