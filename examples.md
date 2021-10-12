@@ -1516,6 +1516,7 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Akuoumaru',
   'Alley Hunter',
   'Amber Bead',
   'Amenoma Kageuchi',
@@ -1576,9 +1577,11 @@ const genshindb = require('genshin-db');
   'Messenger',
   'Mistsplitter Reforged',
   'Mitternachts Waltz',
+  "Mouun's Moon",
   "Old Merc's Pal",
   'Otherworldly Story',
   'Pocket Grimoire',
+  'Polar Star',
   'Predator',
   'Primordial Jade Cutter',
   'Primordial Jade Winged-Spear',
@@ -1613,10 +1616,7 @@ const genshindb = require('genshin-db');
   'Skyward Pride',
   'Skyward Spine',
   'Slingshot',
-  'Snow-Tombed Starsilver',
-  'Solar Pearl',
-  'Song of Broken Pines',
-  ... 25 more items
+  ... 29 more items
 ]
 ```
 
