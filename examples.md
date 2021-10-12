@@ -2222,6 +2222,7 @@ const genshindb = require('genshin-db');
   'Stormcrest Pie',
   'Sunshine Sprat',
   'Triple-Layered Consommé',
+  'Wakatakeni',
   'Woodland Dream'
 ]
 ```
