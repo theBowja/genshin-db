@@ -136,7 +136,7 @@ function getDump(query, match, options, filename, result) {
         query: query,
         match: match,
         options: JSON.parse(JSON.stringify(options)),
-        filename: JSON.parse(JSON.stringify(filename)),
+        filename: filename !== undefined ? JSON.parse(JSON.stringify(filename)) : filename,
         result: result
     }
 }
