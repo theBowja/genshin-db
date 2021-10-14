@@ -1,7 +1,21 @@
 export interface QueryFunction<R> {
     <Q extends string, O extends QueryOptions>(query: Q, opts?: O):
-        (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
-        (Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined)
+        (O extends { dumpResult: true }
+        ?
+            DumpResult<R, O, Q>
+        :
+            (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
+            (Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined)
+        )
+}
+
+export interface DumpResult<R, O extends QueryOptions, Q extends string> {
+    query: Q;
+    match: string | undefined;
+    options: QueryOptions;
+    filename: (O extends { matchCategories: true } ? string[] : undefined) | string | undefined;
+    result: (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
+            (Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined);
 }
 
 /* Logic
@@ -51,6 +65,7 @@ export interface StatResult {
 
 //<MatchCategories extends boolean | undefined, Verbose extends boolean | undefined>
 export interface QueryOptions {
+    dumpResult?: boolean;
     matchAltNames?: boolean;
     matchAliases?: boolean;
     matchCategories?: boolean;
