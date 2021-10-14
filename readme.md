@@ -50,6 +50,7 @@ The following are the **default options** that the library starts off with. If y
 
 ```js
 {
+    dumpResult: false, // The query result will return an object with the properties: query, match, options, filename, result.
     matchAltNames: true, // Allows the matching of alternate or custom names.
     matchAliases: false, // Allows the matching of aliases. These are searchable fields that returns the data object the query matched in.
     matchCategories: false, // Allows the matching of categories. If true, then returns an array if it matches.

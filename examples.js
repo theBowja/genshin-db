@@ -22,6 +22,7 @@ let folders = [
 				 'childe, { matchAliases: true }',
 				 'carmen, { matchAliases: true }',
 				 'arrowhead, { matchCategories: true }',
+				 'arrow, { dumpResult: true, matchCategories: true, resultLanguage: \'jp\' }',
 				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
 				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
 				 'sword, { matchCategories: true }',
