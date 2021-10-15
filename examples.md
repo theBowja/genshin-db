@@ -554,6 +554,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   query: 'arrow',
+  folder: 'characters',
   match: 'Firm Arrowhead',
   options: {
     dumpResult: true,

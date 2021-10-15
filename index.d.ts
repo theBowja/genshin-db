@@ -11,6 +11,7 @@ export interface QueryFunction<R> {
 
 export interface DumpResult<R, O extends QueryOptions, Q extends string> {
     query: Q;
+    folder: Folder;
     match: string | undefined;
     options: QueryOptions;
     filename: (O extends { matchCategories: true } ? string[] : undefined) | string | undefined;
