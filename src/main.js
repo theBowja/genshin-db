@@ -10,7 +10,7 @@ const genshin = {};
 
 // Options that we'll start off with.
 let baseoptions = {
-    dumpResult: false, // The query result will return an object with the properties: query, match, options, filename, result.
+    dumpResult: false, // The query result will return an object with the properties: query, folder, match, options, filename, result.
     matchAltNames: true, // Allows the matching of alternate or custom names.
     matchAliases: false, // Allows the matching of aliases. These are searchable fields that returns the data object the query matched in.
     matchCategories: false, // Allows the matching of categories. If true, then returns an array if it matches.
@@ -82,7 +82,7 @@ function searchFolder(query, folder, opts, getfilename) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
     let queryMatch = autocomplete(""+query, buildQueryDict(opts.queryLanguages, folder, opts));
     if(queryMatch === undefined) { // no result;
-        return opts.dumpResult ? getDump(query, undefined, opts, undefined, undefined) : undefined;
+        return opts.dumpResult ? getDump(query, folder, undefined, opts, undefined, undefined) : undefined;
     }
 
     for(let lang of opts.queryLanguages) {
@@ -94,7 +94,7 @@ function searchFolder(query, folder, opts, getfilename) {
             const filename = langindex.names[queryMatch];
             if(getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
-            return opts.dumpResult ? getDump(query, queryMatch, opts, filename, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .altnames
@@ -102,7 +102,7 @@ function searchFolder(query, folder, opts, getfilename) {
             const filename = altnames.getFilename(lang, folder, queryMatch);
             if(getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
-            return opts.dumpResult ? getDump(query, queryMatch, opts, filename, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .aliases
@@ -110,7 +110,7 @@ function searchFolder(query, folder, opts, getfilename) {
             const filename = langindex.aliases[queryMatch];
             if(getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
-            return opts.dumpResult ? getDump(query, queryMatch, opts, filename, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .categories or is 'names'
@@ -125,15 +125,16 @@ function searchFolder(query, folder, opts, getfilename) {
                 if(res !== undefined) accum.push(res);
                 return accum;
             }, []);
-            return opts.dumpResult ? getDump(query, queryMatch, opts, tmparr, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, tmparr, result) : result;
         }
     }
-    return opts.dumpResult ? getDump(query, queryMatch, opts, undefined, undefined) : undefined;
+    return opts.dumpResult ? getDump(query, folder, queryMatch, opts, undefined, undefined) : undefined;
 }
 
-function getDump(query, match, options, filename, result) {
+function getDump(query, folder, match, options, filename, result) {
     return {
         query: query,
+        folder: folder,
         match: match,
         options: JSON.parse(JSON.stringify(options)),
         filename: filename !== undefined ? JSON.parse(JSON.stringify(filename)) : filename,
