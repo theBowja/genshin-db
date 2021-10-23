@@ -3,62 +3,37 @@ const fuzzysort = require('fuzzysort');
 const language = require('./language.js');
 const Folder = require('./folder.js');
 const altnames = require('./altnames.js');
+const Options = require('./Options.js');
 const { getData, getIndex } = require('./getdata.js');
 
 // object that will be exported
 const genshin = {};
 
-// Options that we'll start off with.
-let baseoptions = {
-    dumpResult: false, // The query result will return an object with the properties: query, folder, match, options, filename, result.
-    matchAltNames: true, // Allows the matching of alternate or custom names.
-    matchAliases: false, // Allows the matching of aliases. These are searchable fields that returns the data object the query matched in.
-    matchCategories: false, // Allows the matching of categories. If true, then returns an array if it matches.
-    verboseCategories: false, // Used if a category is matched. If true, then replaces each string name in the array with the data object instead.
-    queryLanguages: ["English"], // Array of languages that your query will be searched in.
-    resultLanguage: "English" // Output language that you want your results to be in.
-}
+// Defualt options
+const baseoptions = new Options(
+    dumpResult = false,
+    matchAltNames = true,
+    matchAliases = false,
+    matchCategories = false,
+    verboseCategories = false,
+    queryLanguages = ["English"],
+    resultLanguage = "English"
+);
 
-genshin.setOptions = function(options) {
-    Object.assign(baseoptions, sanitizeOptions(options));
-}
-
-genshin.getOptions = function() {
-    return JSON.parse(JSON.stringify(baseoptions));
-}
-
-/**
- * get rid of unnecessary properties
- */
-function sanitizeOptions(opts) {
-    if(typeof opts !== 'object' || opts === null) return undefined;
-
-    let sanOpts = {};
-    ['dumpResult', 'matchAltNames', 'matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
-        if(typeof opts[prop] === 'boolean') sanOpts[prop] = opts[prop];
-    });
-    opts.resultLanguage = language.format(opts.resultLanguage);
-    if(opts.resultLanguage !== undefined)
-        sanOpts.resultLanguage = opts.resultLanguage;
-    opts.queryLanguages = language.format(opts.queryLanguages);
-    if(opts.queryLanguages !== undefined)
-        sanOpts.queryLanguages = Array.isArray(opts.queryLanguages) ? opts.queryLanguages : [opts.queryLanguages];
-    return sanOpts;
-}
 
 // returns an array of strings used for autocomplete aka fuzzy searching
 function buildQueryDict(querylangs, folder, opts) {
     let dict = opts.matchCategories ? ['names'] : [];
-    for(const lang of querylangs) {
+    for (const lang of querylangs) {
         const index = getIndex(lang, folder);
-        if(index === undefined) continue;
-        if(index.names)
+        if (index === undefined) continue;
+        if (index.names)
             dict = dict.concat(Object.keys(index.names));
-        if(opts.matchAltNames)
+        if (opts.matchAltNames)
             dict = dict.concat(altnames.getAltNamesList(lang, folder));
-        if(opts.matchAliases && index.aliases)
+        if (opts.matchAliases && index.aliases)
             dict = dict.concat(Object.keys(index.aliases));
-        if(opts.matchCategories && index.categories)
+        if (opts.matchCategories && index.categories)
             dict = dict.concat(Object.keys(index.categories));
     }
     return dict;
@@ -69,6 +44,28 @@ function autocomplete(input, dict) {
     return result === undefined ? undefined : result.target;
 }
 
+/**
+* Gets rid of unnecessary properties.
+* @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/)
+* @returns {object} - A well-formatted object that matches the same properties as an Option instance
+*/
+function sanitizeOptions(opts) {
+    //Even if opts property is an instance of Options, the type is still 'object'
+    if (!opts || typeof opts !== 'object') return;
+
+    let sanOpts = {};
+    ['dumpResult', 'matchAltNames', 'matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
+        if (typeof opts[prop] === 'boolean') sanOpts[prop] = opts[prop];
+    });
+    opts.resultLanguage = language.format(opts.resultLanguage);
+    if (opts.resultLanguage !== undefined)
+        sanOpts.resultLanguage = opts.resultLanguage;
+    opts.queryLanguages = language.format(opts.queryLanguages);
+    if (opts.queryLanguages !== undefined)
+        sanOpts.queryLanguages = Array.isArray(opts.queryLanguages) ? opts.queryLanguages : [opts.queryLanguages];
+    return sanOpts;
+}
+
 // genshin.categories = function(query, opts={}) {
 //     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
 
@@ -76,53 +73,52 @@ function autocomplete(input, dict) {
 //     return file[query] ? file[query] : [];
 // }
 
-// TODO: use a better name lol
 // TODO: if folder is undefined, search through every folder
-function searchFolder(query, folder, opts, getfilename) {
+function retrieveData(query, folder, opts, getfilename) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-    let queryMatch = autocomplete(""+query, buildQueryDict(opts.queryLanguages, folder, opts));
-    if(queryMatch === undefined) { // no result;
+    let queryMatch = autocomplete("" + query, buildQueryDict(opts.queryLanguages, folder, opts));
+    if (queryMatch === undefined) { // no result;
         return opts.dumpResult ? getDump(query, folder, undefined, opts, undefined, undefined) : undefined;
     }
 
-    for(let lang of opts.queryLanguages) {
+    for (let lang of opts.queryLanguages) {
         let langindex = getIndex(lang, folder);
-        if(langindex === undefined) continue;
+        if (langindex === undefined) continue;
 
         // check if queryMatch is in .names
-        if(langindex.names[queryMatch] !== undefined) {
+        if (langindex.names[queryMatch] !== undefined) {
             const filename = langindex.names[queryMatch];
-            if(getfilename) return filename;
+            if (getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
             return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .altnames
-        if(opts.matchAltNames && altnames.getFilename(lang, folder, queryMatch)) {
+        if (opts.matchAltNames && altnames.getFilename(lang, folder, queryMatch)) {
             const filename = altnames.getFilename(lang, folder, queryMatch);
-            if(getfilename) return filename;
+            if (getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
             return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .aliases
-        if(opts.matchAliases && langindex.aliases[queryMatch] !== undefined) {
+        if (opts.matchAliases && langindex.aliases[queryMatch] !== undefined) {
             const filename = langindex.aliases[queryMatch];
-            if(getfilename) return filename;
+            if (getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
             return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .categories or is 'names'
-        if(opts.matchCategories && (langindex.categories[queryMatch] !== undefined || queryMatch === 'names')) {
+        if (opts.matchCategories && (langindex.categories[queryMatch] !== undefined || queryMatch === 'names')) {
             let reslangindex = getIndex(opts.resultLanguage, folder);
-            if(reslangindex === undefined) return undefined;
+            if (reslangindex === undefined) return undefined;
 
             let tmparr = (queryMatch === 'names') ? Object.values(reslangindex.names) : langindex.categories[queryMatch];
             // change the array of filenames into an array of data objects or data names. ignores undefined results if any
             let result = tmparr.reduce((accum, filename) => {
                 let res = opts.verboseCategories ? getData(opts.resultLanguage, folder, filename) : reslangindex.namemap[filename];
-                if(res !== undefined) accum.push(res);
+                if (res !== undefined) accum.push(res);
                 return accum;
             }, []);
             return opts.dumpResult ? getDump(query, folder, queryMatch, opts, tmparr, result) : result;
@@ -142,69 +138,153 @@ function getDump(query, folder, match, options, filename, result) {
     }
 }
 
-genshin.characters = function(query, opts) {
-    return searchFolder(query, Folder.characters, opts);
-}
-genshin.character = genshin.characters;
-
-genshin.talents = function(query, opts) {
-    return searchFolder(query, Folder.talents, opts);
-}
-genshin.talent = genshin.talents;
-
-genshin.weapons = function(query, opts) {
-    return searchFolder(query, Folder.weapons, opts);
-}
-genshin.weapon = genshin.weapons;
-
-genshin.weaponmaterialtypes = function(query, opts) {
-    return searchFolder(query, Folder.weaponmaterialtypes, opts);
-}
-genshin.weaponmaterialtype = genshin.weaponmaterialtypes;
-
-genshin.talentmaterialtypes = function(query, opts) {
-    return searchFolder(query, Folder.talentmaterialtypes, opts);
-}
-genshin.talentmaterialtype = genshin.talentmaterialtypes;
-
-genshin.materials = function(query, opts) {
-    return searchFolder(query, Folder.materials, opts);
-}
-genshin.material = genshin.materials;
-
-genshin.elements = function(query, opts) {
-    return searchFolder(query, Folder.elements, opts);
-}
-genshin.element = genshin.elements;
-
-genshin.constellations = function(query, opts) {
-    return searchFolder(query, Folder.constellations, opts);
-}
-genshin.constellation = genshin.constellations;
-
-genshin.artifacts = function(query, opts) {
-    return searchFolder(query, Folder.artifacts, opts);
-}
-genshin.artifact = genshin.artifacts;
-
-genshin.rarity = function(query, opts) {
-    return searchFolder(query, Folder.rarity, opts);
+/**
+ * Change default library options
+ * @param {object|Options} options - See [default options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts) format
+ * @returns {void} Nothing
+ */
+genshin.setOptions = function (options) {
+    Object.assign(baseoptions, sanitizeOptions(options));
 }
 
-genshin.foods = function(query, opts) {
-    return searchFolder(query, Folder.foods, opts);
+/**
+ * @returns {object} - The library's options
+ */
+genshin.getOptions = function () {
+    return JSON.parse(JSON.stringify(baseoptions));
 }
-genshin.food = genshin.foods;
 
-genshin.domains = function(query, opts) {
-    return searchFolder(query, Folder.domains, opts);
+/**
+ * Get character(s)' information.
+ * @param {string} query - The name of the character, character title, elements, birthday months [, ...] see [possible query inputs for character(s) method](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts) 
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.characters = genshin.character = function (query, opts) {
+    return retrieveData(query, Folder.characters, opts);
 }
-genshin.domain = genshin.domains;
 
-genshin.enemies = function(query, opts) {
-    return searchFolder(query, Folder.enemies, opts);
+/**
+ * Get the data about talent(s) for character(s).
+ * @param {string} query - character name or upgrade material.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - the combat skills and passive skills for a character(s).
+ */
+genshin.talents = genshin.talent = function (query, opts) {
+    return retrieveData(query, Folder.talents, opts);
 }
-genshin.enemy = genshin.enemies;
+
+/**
+ * Get data about a weapon(s).
+ * 
+ * The returned object also includes a method to calculate the stats of the weapon at each level, namely .stats().
+ * @param {string} query - Weapon name, type, rarity or ascension material type.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} The data found based on the query string and options parameter.
+ */
+genshin.weapons = genshin.weapon = function (query, opts) {
+    return retrieveData(query, Folder.weapons, opts);
+}
+
+/**
+ * Get data about weapon material type(s).
+ * @param {string} query - Weapon ascension material name, days of the week, region, or domain of forgery.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.weaponmaterialtypes = genshin.weaponmaterialtype = function (query, opts) {
+    return retrieveData(query, Folder.weaponmaterialtypes, opts);
+}
+
+/**
+ * Get data about talent material type(s).
+ * @param {string} query - Talent book name, days of the week, region, or name of domain of mastery.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.talentmaterialtypes = genshin.talentmaterialtype = function (query, opts) {
+    return retrieveData(query, Folder.talentmaterialtypes, opts);
+}
+
+/**
+ * Get data about a material(s).
+ * @param {string} query - Material rairty, type, "WOOD", ingredient, specialty liyue, domain, days of the week, talent books...
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.materials = genshin.material = function (query, opts) {
+    return retrieveData(query, Folder.materials, opts);
+}
+
+/**
+ * Get data about an element.
+ * @param {string} query - Name of the element.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - Data about the element.
+ */
+genshin.elements = genshin.element = function (query, opts) {
+    return retrieveData(query, Folder.elements, opts);
+}
+
+/**
+ * Get data about constellation for a character.
+ * @param {string} query - Name of the character.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - Constellation data for the character.
+ */
+genshin.constellations = genshin.constellation = function (query, opts) {
+    return retrieveData(query, Folder.constellations, opts);
+}
+
+/**
+ * Get data about an artifact(s)
+ * @param {string} query - Artifact name or rarity.
+ * @param {object|Options} opts  - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.artifacts = genshin.artifact = function (query, opts) {
+    return retrieveData(query, Folder.artifacts, opts);
+}
+
+/**
+ * Get data about a rarity.
+ * @param {string} query - The rarity you want to get information about.
+ * @param {object|Options} opts  - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.rarity = function (query, opts) {
+    return retrieveData(query, Folder.rarity, opts);
+}
+
+/**
+ * Get data about a food. 
+ * @param {string} query - Recipe name, food rarity, recipe type, food ingredients, buffs or character name with a specialty dish.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.foods = genshin.food = function (query, opts) {
+    return retrieveData(query, Folder.foods, opts);
+}
+
+/**
+ * Get data about a domain.
+ * @param {string} query - Domain name, domain entrance name, domain type, recommended elements or days of the week.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.domains = genshin.domain = function (query, opts) {
+    return retrieveData(query, Folder.domains, opts);
+}
+
+/**
+ * Get data about an enemy or boss.
+ * @param {string} query - Enemy name, enemy type ("COMMON", "ELITE", "BOSS") or enemy category.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.enemies = genshin.enemy = function (query, opts) {
+    return retrieveData(query, Folder.enemies, opts);
+}
 
 // genshin.reactions = function(query, opts={}) {
 //     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
@@ -216,24 +296,30 @@ genshin.enemy = genshin.enemies;
 
 genshin.helper = require('./helper.js');
 
-// export enums
-genshin.Language = language.LanguagesEnum;
-genshin.Languages = language.LanguagesEnum;
-genshin.Folder = Folder;
-genshin.Folders = Folder;
+genshin.Language = genshin.Languages = language.LanguagesEnum;
+genshin.Folder = genshin.Folders = Folder;
 
-// export custom alternate names api
-genshin.addAltName = function(language, folder, altname, query) {
-    const myOptions = {
-        dumpResult: false,
-        matchAltNames: false,
-        matchAliases: false,
-        matchCategories: false,
-        verboseCategories: false,
-        queryLanguages: [language],
-    }
-    const filename = searchFolder(query, folder, myOptions, true)
-    if(filename)
+//TODO: documentate the three methods below
+/**
+ * 
+ * @param {*} language 
+ * @param {*} folder 
+ * @param {*} altname 
+ * @param {*} query 
+ * @returns 
+ */
+genshin.addAltName = function (language, folder, altname, query) {
+    const options = new Options(
+        dumpResult = false,
+        matchAltNames = false,
+        matchAliases = false,
+        matchCategories = false,
+        verboseCategories = false,
+        queryLanguages = [language],
+    );
+
+    const filename = retrieveData(query, folder, options, true);
+    if (filename)
         return altnames.addAltName(language, folder, altname, filename);
     else
         return false;
@@ -241,5 +327,7 @@ genshin.addAltName = function(language, folder, altname, query) {
 genshin.removeAltNames = altnames.removeAltNames;
 genshin.setAltNameLimits = altnames.setLimit;
 
+//Class Options will serve as a template for the library's options.
+genshin.Options = Options;
 
 module.exports = genshin;
