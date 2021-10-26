@@ -134,6 +134,10 @@ export const materials: QueryFunction<Material>;
 export const domains: QueryFunction<Domain>;
 export const enemies: QueryFunction<Enemy>;
 
+export interface categories {
+    (query: string, folder: Folder, opts: QueryOptions): undefined | string[];
+}
+
 //#region Artifact
 
 export interface Artifact {

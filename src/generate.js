@@ -39,7 +39,8 @@ function makeIndices() {
 				namemap: {}, // maps filename to name
 				names: {}, // maps name to filename
 				aliases: {}, // maps alias to filename
-				categories: {} // maps category to array of filenames
+				categories: {}, // maps category to array of filenames
+				properties: {} // maps property to array of category values
 			};
 			try {
 				if (!fs.existsSync(`./data/${lang}/${folder}`)) continue;
@@ -89,14 +90,18 @@ function makeIndices() {
 								val = birthday.toLocaleString(language.localeMap[lang], { timeZone: 'UTC', month: 'long' });
 							}
 
-							//if(categories[prop] === "free" || categories[prop].includes(val)) {
-								if(index.categories[val] === undefined) {
-									index.categories[val] = [filename];
-								} else {
-									if(index.categories[val].includes(filename)) console.log(`Duplicate category: ${lang}/${folder}: ${val},${filename}`);
-									index.categories[val].push(filename);
-								}
-							//} else { console.log(filename + " missing val: " + val)}
+							if(index.categories[val] === undefined) {
+								index.categories[val] = [filename];
+							} else {
+								if(index.categories[val].includes(filename)) console.log(`Duplicate category: ${lang}/${folder}: ${val},${filename}`);
+								index.categories[val].push(filename);
+							}
+
+							if(index.properties[prop] === undefined) {
+								index.properties[prop] = [val];
+							} else if(!index.properties[prop].includes(val)) {
+								index.properties[prop].push(val);
+							}
 						}
 
 						// if(categories[prop].includes(data[prop])) {

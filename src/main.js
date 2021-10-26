@@ -66,13 +66,6 @@ function sanitizeOptions(opts) {
     return sanOpts;
 }
 
-// genshin.categories = function(query, opts={}) {
-//     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-
-//     const file = getCategory(opts.resultLanguage);
-//     return file[query] ? file[query] : [];
-// }
-
 // TODO: if folder is undefined, search through every folder
 function retrieveData(query, folder, opts, getfilename) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
@@ -152,6 +145,28 @@ genshin.setOptions = function (options) {
  */
 genshin.getOptions = function () {
     return JSON.parse(JSON.stringify(baseoptions));
+}
+
+/**
+ * Get list of possible values for a category property.
+ * @param {string} query -
+ * @param {string|Folder} - 
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {array|undefined} - 
+ */
+genshin.categories = genshin.category = function (query, folder, opts) {
+    if (typeof folder !== 'string' || Folder[folder] === undefined) return undefined; // invalid folder
+    opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
+
+    const index = getIndex(opts.resultLanguage, folder);
+    const queryDict = Object.keys(index.properties);
+    if (query === 'names') {
+        return queryDict;
+    } else {
+        let queryMatch = autocomplete("" + query, queryDict);
+        if (queryMatch === undefined) return undefined;
+        return index.properties[queryMatch];
+    }
 }
 
 /**
