@@ -9,7 +9,7 @@ const { getData, getIndex } = require('./getdata.js');
 // object that will be exported
 const genshin = {};
 
-// Defualt options
+// Default options
 const baseoptions = new Options(
     dumpResult = false,
     matchAltNames = true,
