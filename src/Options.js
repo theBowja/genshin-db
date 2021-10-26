@@ -1,5 +1,3 @@
-const language = require('./language.js');
-
 /**
  * The Library's valid options
  */
