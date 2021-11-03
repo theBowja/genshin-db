@@ -516,5 +516,5 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('enemies', collateEnemy);
 
 // getRedirectImages(); // separate. for talents
-// getUpperBodyImages(); // must be separate // cover1, cover2
-updateURLs(); // must be separate
+getUpperBodyImages(); // must be separate // cover1, cover2
+// updateURLs(); // must be separate
