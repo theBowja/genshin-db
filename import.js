@@ -420,7 +420,7 @@ function collateDomain(existing, newdata, lang) {
 
 function collateEnemy(existing, newdata, lang) {
 	clearObject(existing);
-	const copyover = ['name', 'specialname', 'type', 'category', 'description'];
+	const copyover = ['name', 'specialname', 'enemytype', 'category', 'description'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
@@ -511,9 +511,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
-importData('materials', collateMaterial, undefined, false, true);
+// importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain);
-// importData('enemies', collateEnemy);
+importData('enemies', collateEnemy);
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate // cover1, cover2
