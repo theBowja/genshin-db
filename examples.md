@@ -2509,7 +2509,8 @@ const genshindb = require('genshin-db');
   category: 'Elemental Lifeforms',
   description: 'A monster created by the coalescing of Electro dispersed throughout nature.\n' +
     'Due to the abundant Electro within its form, it will deliver an electric shock to its surroundings from time to time. At present, some have attempted to harness this energy to aid in production activities. Perhaps some new science will be born from this...?',
-  images: { nameicon: 'UI_MonsterIcon_Slime_Electric_03' }
+  images: { nameicon: 'UI_MonsterIcon_Slime_Electric_03' },
+  stats: [Function (anonymous)]
 }
 ```
 
@@ -2529,7 +2530,8 @@ const genshindb = require('genshin-db');
     'The wolves of Wolvendom are frightening phantoms to the people of Mondstadt:\n' +
     'A blurred shape flashing through the forest, a chilling howl in the indeterminate distance, the creeping sense of eyes constantly nailed to their backs...\n' +
     'Humans rarely have the opportunity to lock their eyes with a wolf, for this is the law Lupus Boreas laid down for its race.',
-  images: { nameicon: 'UI_MonsterIcon_LupiBoreas' }
+  images: { nameicon: 'UI_MonsterIcon_LupiBoreas' },
+  stats: [Function (anonymous)]
 }
 ```
 
