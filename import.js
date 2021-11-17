@@ -494,7 +494,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 		if(langC === 'EN') {
 			fs.mkdirSync(`./src/data/image`, { recursive: true });
 			fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
-			if(['characters', 'weapons', 'talents'].includes(folder)) {
+			if(['characters', 'weapons', 'talents', 'enemies'].includes(folder)) {
 				fs.mkdirSync(`./src/data/stats`, { recursive: true });
 				fs.writeFileSync(`./src/data/stats/${folder}.json`, JSON.stringify(mystats, null, '\t'));
 			}
@@ -514,6 +514,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain);
 importData('enemies', collateEnemy);
+// importCurve('enemies');
 
 // getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate // cover1, cover2
