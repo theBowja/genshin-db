@@ -7,12 +7,13 @@ const allcurve = require('./min/curve.min.json');
 
 const availableimage = ['characters', 'artifacts', 'weapons', 'constellations', 'talents', 'materials', 'foods', 'elements', 'domains', 'enemies'];
 const availableurl   = ['characters', 'artifacts', 'weapons', 'foods', 'materials'];
-const availablestats = ['characters', 'weapons'];
+const availablestats = ['characters', 'weapons', 'enemies'];
 const availablecurve = ['characters', 'weapons'];
 
 const calcStatsMap = {
     'characters': calcStatsCharacter,
-    'weapons': calcStatsWeapon
+    'weapons': calcStatsWeapon,
+    'enemies': calcStatsEnemy
 };
 
 function getData(lang, folder, filename) {
@@ -116,6 +117,32 @@ function calcStatsWeapon(filename) {
             ascension: phase,
             attack: mystats.base.attack * mycurve[level][mystats.curve.attack] + promotion.attack,
             specialized: mystats.base.specialized * mycurve[level][mystats.curve.specialized]
+        };
+
+        return output; 
+    }
+}
+
+/**
+ * Generates a function for calculating the hp/atk/defense of an enemy.
+ */
+function calcStatsEnemy(filename) {
+    const mystats = getStats('enemies', filename);
+    const mycurve = getCurve('enemies');
+    if(mystats === undefined || mycurve === undefined) return undefined;
+    /**
+     * Calculates the stats of a enemy at a specific level. Does not take into account location.
+     */
+    return function(level) {
+        level = parseInt(level, 10);
+        if(isNaN(level)) return undefined;
+        if(level > 200 || level < 1) return undefined;
+
+        let output = {
+            level: level,
+            hp: mystats.base.hp * mycurve[level][mystats.curve.hp],
+            attack: mystats.base.attack * mycurve[level][mystats.curve.attack],
+            defense: level*5+500//mystats.base.defense * mycurve[level][mystats.curve.defense]
         };
 
         return output; 
