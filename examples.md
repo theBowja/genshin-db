@@ -2519,20 +2519,26 @@ const genshindb = require('genshin-db');
 <summary>genshindb.enemies('<b>boss', { matchCategories: true }</b>)</summary>
 
 ```js
-{
-  name: 'Lupus Boreas, Dominator of Wolves',
-  specialname: 'Boreas',
-  enemytype: 'BOSS',
-  category: 'Enemies of Note',
-  description: 'The noblest and greatest of souls, who watches over the lupical of Wolvendom.\n' +
-    'When the wolfpack is imperiled, it will emerge in the form of a wolf and show forth its fangs and claws.\n' +
-    '\n' +
-    'The wolves of Wolvendom are frightening phantoms to the people of Mondstadt:\n' +
-    'A blurred shape flashing through the forest, a chilling howl in the indeterminate distance, the creeping sense of eyes constantly nailed to their backs...\n' +
-    'Humans rarely have the opportunity to lock their eyes with a wolf, for this is the law Lupus Boreas laid down for its race.',
-  images: { nameicon: 'UI_MonsterIcon_LupiBoreas' },
-  stats: [Function (anonymous)]
-}
+[
+  'Anemo Hypostasis',
+  'Azhdaha',
+  'Childe',
+  'Cryo Hypostasis',
+  'Cryo Regisvine',
+  'Electro Hypostasis',
+  'Geo Hypostasis',
+  'Hydro Hypostasis',
+  'La Signora',
+  'Lupus Boreas, Dominator of Wolves',
+  'Maguu Kenki',
+  'Oceanid',
+  'Perpetual Mechanical Array',
+  'Primo Geovishap',
+  'Pyro Hypostasis',
+  'Pyro Regisvine',
+  'Stormterror',
+  'Thunder Manifestation'
+]
 ```
 
 </details>
