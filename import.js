@@ -505,8 +505,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 
 // importData('characters', collateCharacter);
 // importCurve('characters');
-// importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+importData('constellations', collateConstellation);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
@@ -517,5 +517,5 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importCurve('enemies');
 
 // getRedirectImages(); // separate. for talents
-getUpperBodyImages(); // must be separate // cover1, cover2
+// getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate

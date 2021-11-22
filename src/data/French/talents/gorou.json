@@ -1,0 +1,207 @@
+{
+	"name": "Gorou",
+	"combat1": {
+		"name": "Attaque normale : Empenne aux crocs acérés",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 tirs consécutifs.\n\n**Attaque chargée**\nEffectue un **tir visé** plus précis infligeant davantage de DGT.\nLors de la visée, la flèche se charge de cristaux de pierre, infligeant des DGT Géo quand elle est complètement chargée.\n\n**Attaque plongeante**\nTire une pluie de flèches depuis les airs et plonge au sol, infligeant des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT tir visé|{param5:F1P}",
+				"DGT tir visé (pleine charge)|{param6:P}",
+				"DGT durant la chute|{param7:F1P}",
+				"DGT chute basse/élevée|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Défense intégrale d'Inuzaka",
+		"info": "Inflige des DGT Géo de zone et érige une bannière de général.\n\n**Bannière de général**\nAccorde les effets suivants aux personnages déployés dans la zone d'effet en fonction de la quantité de personnages de type Géo dans l'équipe au moment de l'utilisation :\n· Avoir 1 personnage Géo accorde un effet de pied ferme : bonus de DÉF.\n· Avoir 2 personnages Géo accorde un effet d'imprenabilité : effet précédent + bonus de RÉS à l'interruption.\n· Avoir 3 personnages Géo accorde un effet de fracas : effets précédents + bonus de DGT Géo.\n\nGorou ne peut générer qu'une bannière de général à la fois, et les personnages ne peuvent bénéficier des effets que d'une seule bannière de général à la fois. Lorsque le personnage quitte la zone, les effets continuent pendant 2 s.\n\n**Appui long**\nAjuste la zone où la compétence sera lancée.",
+		"description": "« Adoptez cette formation et nous serons en sécurité, je vous le garantis ! » En tant que général et chef des troupes, la dernière chose que Gorou veut, c'est de voir ses soldats blessés.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"Bonus de DÉF|{param2:I}",
+				"Bonus de DGT Géo|{param3:P}",
+				"Durée|{param4:F1} s",
+				"Temps de recharge|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Crocs bestiaux : Vers la victoire",
+		"info": "Affichant sa bravoure de général, Gorou inflige des DGT Géo de zone et crée un champ de prestige de général pour enhardir ses compagnons.\n\n**Prestige de général**\nLes caractéristiques suivantes s'appliquent :\n· Ce champ possède des effets identiques à ceux de la bannière de général créée par la compétence élémentaire « Défense intégrale d'Inuzaka », accordant des bonus aux personnages déployés dans la zone d'effet en fonction du nombre de personnages de type Géo dans l'équipe. Le champ se déplace en suivant le personnage déployé.\n· Déclenche un effondrement cristallin toutes les 1,5 s qui inflige des DGT Géo de zone à 1 ennemi dans la zone d'effet.\n· Attire 1 fragment élémentaire créé par une réaction de Cristallisation dans la zone d'effet vers l'emplacement du personnage déployé toutes les 1,5 s.\n\nSi une bannière de général créée par Gorou est présente lors de l'utilisation, elle sera détruite. De plus, si Gorou utilise sa compétence élémentaire « Défense intégrale d'Inuzaka » alors qu'un prestige de général est actif, il ne crée pas de bannière de général.\nSi Gorou est vaincu, les effets du prestige de général sont annulés.",
+		"description": "« Le terrain est à notre avantage ! » Gorou peut s'approprier la topographie du champ de bataille pour faire pencher la balance en sa faveur. Cette technique lui a permis de traverser de nombreux combats contre une opposition en apparence supérieure.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:P} DÉF",
+				"DGT effondrement cristallin|{param2:P} DÉF",
+				"Durée|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s",
+				"Énergie élémentaire|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Nonchalance du vent et de la pluie",
+		"info": "Pendant 12 s après **Crocs bestiaux : Vers la victoire**, la DÉF de tous les personnages de l'équipe à proximité augmente de 25 %."
+	},
+	"passive2": {
+		"name": "Faveur rendue",
+		"info": "Les DGT des attaques suivantes de Gorou augmentent en fonction de sa DÉF :\n· Les DGT de compétence de **Défense intégrale d'Inuzaka** augmentent à hauteur de 156 % de sa DÉF.\n· Les DGT de compétence et les DGT de l'effondrement cristallin de **Crocs bestiaux : Vers la victoire** augmentent à hauteur de 15,6 % de sa DÉF."
+	},
+	"passive3": {
+		"name": "Chien renifleur",
+		"info": "Affiche l'emplacement des **produits d'Inazuma** sur la mini-carte."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la lumière",
+				"count": 3
+			},
+			{
+				"name": "Coquille spectrale",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Lumière",
+				"count": 2
+			},
+			{
+				"name": "Cœur spectral",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la Lumière",
+				"count": 4
+			},
+			{
+				"name": "Cœur spectral",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la Lumière",
+				"count": 6
+			},
+			{
+				"name": "Cœur spectral",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Lumière",
+				"count": 9
+			},
+			{
+				"name": "Cœur spectral",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 4
+			},
+			{
+				"name": "Noyau spectral",
+				"count": 4
+			},
+			{
+				"name": "Moment en fusion",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 6
+			},
+			{
+				"name": "Noyau spectral",
+				"count": 6
+			},
+			{
+				"name": "Moment en fusion",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 12
+			},
+			{
+				"name": "Noyau spectral",
+				"count": 9
+			},
+			{
+				"name": "Moment en fusion",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la lumière",
+				"count": 16
+			},
+			{
+				"name": "Noyau spectral",
+				"count": 12
+			},
+			{
+				"name": "Moment en fusion",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

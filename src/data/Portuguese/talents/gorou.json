@@ -1,0 +1,207 @@
+{
+	"name": "Gorou",
+	"combat1": {
+		"name": "Ataque Normal: Flechas de Garras Dilacerantes",
+		"info": "**Ataque Normal**\nRealiza até 4 tiros consecutivos com um arco.\n\n**Ataque Carregado**\nDispara um **Tiro com Mira** mais preciso e com Dano aumentado.\nAo mirar, Pedras Cristalizadas irão se acumular na ponta da flecha. Uma flecha em Pedras Cristalizadas completamente carregada inflinge Dano Geo.\n\n**Ataque Imersivo**\nDispara uma chuva de flechas em pleno ar antes de atingir o chão, infligindo Dano em uma AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano do 4° Golpe|{param4:F1P}",
+				"Disparo com Mira|{param5:F1P}",
+				"Disparo com Mira com Energização Completa|{param6:P}",
+				"Dano Durante a Queda|{param7:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Defesa Concentrada Inuzaka",
+		"info": "Causa Dano Geo em uma AdE e levanta o Estandarte do General.\n\n**Estandarte do General**\nFornece os seguintes bônus com base no número de membros da equipe que são do Elemento Geo:\nTer 1 membro da equipe do Elemento Geo concede o efeito \"Robusto\": Bônus de DEF.\nTer 2 membros da equipe do Elemento Geo concede o efeito \"Inquebrável\": Resistência a interrupção.\nTer 3 membros da equipe do Elemento Geo concede o efeito \"Destruidor\": concede um Bônus de Dano GEO.\n\nApenas 1 Estandarte do General que Gorou criou pode existir no campo a qualquer momento. Os personagens só podem se beneficiar de 1 Estandarte do General por vez. Quando os membros da equipe deixam o campo, os efeitos do campo duram por 2s.\n\n**Manter Pressionado**\nMantenha Pressionado para designar o local que ficará a habilidade.",
+		"description": "\"Assuma esta formação e estaremos seguros - eu garanto!\" Como general e líder das tropas, a última coisa que Gorou quer é ver aqueles que o seguem serem feridos.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Aumento da DEF|{param2:I}",
+				"Taxa de Bônus de Dano Geo|{param3:P}",
+				"Duração|{param4:F1}s",
+				"Tempo de Recarga|{param5:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Juuga: Para a Vitória",
+		"info": "Demonstrando seu valor como general, Gorou causa Dano Geo em uma AdE e cria um campo conhecido como a Glória do General para animar seus companheiros.\n\n**Glória do General**\nEste campo tem as seguintes propriedades:\nEste campo tem efeitos idênticos aos do Estandarte do General criado por sua Habilidade Elemental, Defesa Concentrada Inuzaka, concedendo bônus baseado no número de membros da equipe cujo elemento seja Geo, e também se moverá junto com seu personagem ativo atual.\nCria 1 Colapso Cristalino a cada 1.5s que causa Dano Geo em uma AdE a 1 oponente dentro de sua AdE.\n· Ele puxará 1 fragmento elemental pela Reação de Cristalização dentro de sua área de ação para a posição do seu personagem ativo a cada 1.5 s.\n\nSe um Estandarte do General criado pelo próprio Gorou existir atualmente em campo quando esta habilidade for utilizada, ele será destruído.",
+		"description": "\"Nós temos a vantagem do terreno!\" Gorou pode sempre mudar ligeiramente o terreno do campo de batalha para ajudar a ganhar a vitória. Esta técnica o tem assistido através de muitas batalhas contra uma oposição aparentemente superior.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:P} da DEF",
+				"Dano do Colapso Cristalino|{param2:P} da DEF",
+				"Duração|{param3:F1}s",
+				"Tempo de Recarga|{param4:F1}s",
+				"Energia Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Contra o Vento e a Maré",
+		"info": "Nos 12 segundos seguintes de lançar **Juuga: Para a Vitória**, a DEF de todos os membros da equipe ao redor será aumentada em 25%."
+	},
+	"passive2": {
+		"name": "Um Favor Recíproco",
+		"info": "Gorou recebe os seguintes Bônus de Dano aos seus ataques baseado em sua DEF:\n**Defesa Concentrada Inuzaka** aumenta o Dano da habilidade em 156% da sua DEF.\n**Juuga: Para a Vitória** aumenta o Dano da habilidade e do Colapso Cristalino em 15.6% da DEF."
+	},
+	"passive3": {
+		"name": "Cãozinho Farejador",
+		"info": "Mostra a localização de **recursos únicos de Inazuma** próximos no mapa."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos da Luz Celeste",
+				"count": 3
+			},
+			{
+				"name": "Casca Espectral",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 2
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 4
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 6
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia da Luz Celeste",
+				"count": 9
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 4
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 4
+			},
+			{
+				"name": "Momento Derretido",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 6
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 6
+			},
+			{
+				"name": "Momento Derretido",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 12
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 9
+			},
+			{
+				"name": "Momento Derretido",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia da Luz Celeste",
+				"count": 16
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 12
+			},
+			{
+				"name": "Momento Derretido",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}
