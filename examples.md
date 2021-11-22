@@ -26,21 +26,21 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',             'Albedo',   'Aloy',
-  'Amber',              'Barbara',  'Beidou',
-  'Bennett',            'Chongyun', 'Diluc',
-  'Diona',              'Eula',     'Fischl',
-  'Ganyu',              'Hu Tao',   'Jean',
-  'Kaedehara Kazuha',   'Kaeya',    'Kamisato Ayaka',
-  'Keqing',             'Klee',     'Kujou Sara',
-  'Lisa',               'Lumine',   'Mona',
-  'Ningguang',          'Noelle',   'Qiqi',
-  'Raiden Shogun',      'Razor',    'Rosaria',
-  'Sangonomiya Kokomi', 'Sayu',     'Sucrose',
-  'Tartaglia',          'Thoma',    'Venti',
-  'Xiangling',          'Xiao',     'Xingqiu',
-  'Xinyan',             'Yanfei',   'Yoimiya',
-  'Zhongli'
+  'Aether', 'Albedo',         'Aloy',
+  'Amber',  'Arataki Itto',   'Barbara',
+  'Beidou', 'Bennett',        'Chongyun',
+  'Diluc',  'Diona',          'Eula',
+  'Fischl', 'Ganyu',          'Gorou',
+  'Hu Tao', 'Jean',           'Kaedehara Kazuha',
+  'Kaeya',  'Kamisato Ayaka', 'Keqing',
+  'Klee',   'Kujou Sara',     'Lisa',
+  'Lumine', 'Mona',           'Ningguang',
+  'Noelle', 'Qiqi',           'Raiden Shogun',
+  'Razor',  'Rosaria',        'Sangonomiya Kokomi',
+  'Sayu',   'Sucrose',        'Tartaglia',
+  'Thoma',  'Venti',          'Xiangling',
+  'Xiao',   'Xingqiu',        'Xinyan',
+  'Yanfei', 'Yoimiya',        'Zhongli'
 ]
 ```
 
@@ -597,7 +597,7 @@ const genshindb = require('genshin-db');
 <summary>genshindb.characters('<b>geo dmg', { matchCategories: true }</b>)</summary>
 
 ```js
-[ 'Albedo', 'Ningguang', 'Zhongli' ]
+[ 'Albedo', 'Gorou', 'Ningguang', 'Zhongli' ]
 ```
 
 </details>
@@ -705,21 +705,22 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',           'Aloy',               'Amber',
-  'Barbara',          'Beidou',             'Bennett',
-  'Chongyun',         'Diluc',              'Diona',
-  'Eula',             'Fischl',             'Ganyu',
-  'Hu Tao',           'Jean',               'Kaedehara Kazuha',
-  'Kaeya',            'Kamisato Ayaka',     'Keqing',
-  'Klee',             'Kujou Sara',         'Lisa',
-  'Mona',             'Ningguang',          'Noelle',
-  'Qiqi',             'Raiden Shogun',      'Razor',
-  'Rosaria',          'Sangonomiya Kokomi', 'Sayu',
-  'Sucrose',          'Tartaglia',          'Thoma',
-  'Traveler (Anemo)', 'Traveler (Electro)', 'Traveler (Geo)',
-  'Venti',            'Xiangling',          'Xiao',
-  'Xingqiu',          'Xinyan',             'Yanfei',
-  'Yoimiya',          'Zhongli'
+  'Albedo',             'Aloy',             'Amber',
+  'Arataki Itto',       'Barbara',          'Beidou',
+  'Bennett',            'Chongyun',         'Diluc',
+  'Diona',              'Eula',             'Fischl',
+  'Ganyu',              'Gorou',            'Hu Tao',
+  'Jean',               'Kaedehara Kazuha', 'Kaeya',
+  'Kamisato Ayaka',     'Keqing',           'Klee',
+  'Kujou Sara',         'Lisa',             'Mona',
+  'Ningguang',          'Noelle',           'Qiqi',
+  'Raiden Shogun',      'Razor',            'Rosaria',
+  'Sangonomiya Kokomi', 'Sayu',             'Sucrose',
+  'Tartaglia',          'Thoma',            'Traveler (Anemo)',
+  'Traveler (Electro)', 'Traveler (Geo)',   'Venti',
+  'Xiangling',          'Xiao',             'Xingqiu',
+  'Xinyan',             'Yanfei',           'Yoimiya',
+  'Zhongli'
 ]
 ```
 
@@ -1554,6 +1555,7 @@ const genshindb = require('genshin-db');
   'Blackcliff Warbow',
   'Black Tassel',
   'Bloodtainted Greatsword',
+  'Cinnabar Spindle',
   'Compound Bow',
   'Cool Steel',
   'Crescent Pike',
@@ -1617,6 +1619,7 @@ const genshindb = require('genshin-db');
   'Rainslasher',
   'Raven Bow',
   'Recurve Bow',
+  'Redhorn Stonethresher',
   'Royal Bow',
   'Royal Greatsword',
   'Royal Grimoire',
@@ -1637,9 +1640,7 @@ const genshindb = require('genshin-db');
   'Skyward Blade',
   'Skyward Harp',
   'Skyward Pride',
-  'Skyward Spine',
-  'Slingshot',
-  ... 29 more items
+  ... 31 more items
 ]
 ```
 
@@ -1801,16 +1802,17 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  "Apprentice's Notes",     'Aquila Favonia',
-  'Cool Steel',             'Dull Blade',
-  'Favonius Codex',         'Favonius Sword',
-  'Ferrous Shadow',         'Magic Guide',
-  'Mitternachts Waltz',     'Pocket Grimoire',
-  'Raven Bow',              'Royal Grimoire',
-  'Royal Longsword',        'Silver Sword',
-  'Snow-Tombed Starsilver', 'Song of Broken Pines',
-  'The Alley Flash',        'The Bell',
-  'The Stringless',         'The Viridescent Hunt'
+  "Apprentice's Notes",   'Aquila Favonia',
+  'Cinnabar Spindle',     'Cool Steel',
+  'Dull Blade',           'Favonius Codex',
+  'Favonius Sword',       'Ferrous Shadow',
+  'Magic Guide',          'Mitternachts Waltz',
+  'Pocket Grimoire',      'Raven Bow',
+  'Royal Grimoire',       'Royal Longsword',
+  'Silver Sword',         'Snow-Tombed Starsilver',
+  'Song of Broken Pines', 'The Alley Flash',
+  'The Bell',             'The Stringless',
+  'The Viridescent Hunt'
 ]
 ```
 
@@ -1890,7 +1892,7 @@ const genshindb = require('genshin-db');
   description: 'Talent Level-Up material.\n' +
     'Poetry is the soul of the land of the wind.\n' +
     'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
-  sortorder: 973,
+  sortorder: 986,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Talent Level-Up Material',
@@ -1971,7 +1973,7 @@ const genshindb = require('genshin-db');
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
     'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
     'His enemies are the thousands who stand against the wind.',
-  sortorder: 1889,
+  sortorder: 1922,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -1993,7 +1995,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
-  sortorder: 686,
+  sortorder: 700,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
@@ -2140,9 +2142,11 @@ const genshindb = require('genshin-db');
   'Emblem of Severed Fate',
   "Gladiator's Finale",
   'Heart of Depth',
+  'Husk of Opulent Dreams',
   'Lavawalker',
   'Maiden Beloved',
   'Noblesse Oblige',
+  'Ocean-Hued Clam',
   'Pale Flame',
   'Retracing Bolide',
   "Shimenawa's Reminiscence",
@@ -2240,11 +2244,13 @@ const genshindb = require('genshin-db');
   'Lotus Flower Crisp',
   'Moon Pie',
   'Rice Cake Soup',
+  'Sakura Shrimp Crackers',
   'Sakura Tempura',
   'Stir-Fried Shrimp',
   'Stormcrest Pie',
   'Sunshine Sprat',
   'Triple-Layered Consommé',
+  'Unagi Chazuke',
   'Wakatakeni',
   'Woodland Dream'
 ]
@@ -2267,7 +2273,8 @@ const genshindb = require('genshin-db');
   'Northern Smoked Chicken',
   'Nutritious Meal (V.593)',
   'Qingce Stir Fry',
-  'Satisfying Salad'
+  'Satisfying Salad',
+  'Way of the Strong'
 ]
 ```
 
@@ -2429,6 +2436,10 @@ const genshindb = require('genshin-db');
   'Domain of Blessing: Frost II',
   'Domain of Blessing: Frost III',
   'Domain of Blessing: Frost IV',
+  'Domain of Blessing: Necropolis I',
+  'Domain of Blessing: Necropolis II',
+  'Domain of Blessing: Necropolis III',
+  'Domain of Blessing: Necropolis IV',
   'Domain of Blessing: Spring I',
   'Domain of Blessing: Spring II',
   'Domain of Blessing: Spring III',
@@ -2527,6 +2538,7 @@ const genshindb = require('genshin-db');
   'Cryo Regisvine',
   'Electro Hypostasis',
   'Geo Hypostasis',
+  'Golden Wolflord',
   'Hydro Hypostasis',
   'La Signora',
   'Lupus Boreas, Dominator of Wolves',
