@@ -1,0 +1,207 @@
+{
+	"name": "Gorou",
+	"combat1": {
+		"name": "Standardangriff: Gefletschte Zähne",
+		"info": "**Standardangriff**\nFührt bis zu 4 Pfeilschüsse hintereinander aus.\n\n**Heftiger Schlag**\nFührt einen **gezielten Schuss** mit höherem Schaden und höherer Genauigkeit aus.\nKonzentriert die Steinkristalle während des Zielens an der Pfeilspitze, die voll aufgeladen Geo-Schaden verursacht.\n\n**Angriff aus dem Fall**\nSchießt in der Luft einen Pfeilregen ab, trifft schnell auf dem Boden auf und verursacht dort Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P}",
+				"Gezielte Schüsse|{param5:F1P}",
+				"Voll aufgeladene gezielte Schüsse|{param6:P}",
+				"SCH beim Fallen|{param7:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Inuzuka-Allzweckaufstellung",
+		"info": "Verursacht Geo-Flächenschaden und stellt ein Generalbanner auf.\n\n**Generalbanner**\nVerleiht den aktuellen Figuren im Wirkungsbereich gemäß der Anzahl an Figuren in der Truppe mit dem Geo-Element zum Zeitpunkt der Anwendung folgende Effekte:\n· 1 Figur: „Zähigkeit“, erhöht die VTD.\n· 2 Figuren: „Unbeirrbarkeit“, verleiht den obigen Effekt und erhöht den Unterbrechungs-WDS.\n· 3 Figuren: „Trümmer“, verleiht die obigen Effekte und erhöht den Geo-Schaden.\n\nZu einem Zeitpunkt kann nur ein von Gorou selbst erschaffenes Generalbanner existieren. Figuren können nur die Boni eines einzigen Generalbanners erhalten. Der Effekt innerhalb des Wirkungsbereichs bleibt für Figuren bis 2 s nach dem Verlassen des Wirkungsbereichs bestehen.\n\n**Gedrückt halten**\nWirkungsbereich der Fähigkeit kann angepasst werden.",
+		"description": "„Wir müssen nur diese Formation einnehmen und wir werden in Sicherheit sein!“ Als General und Truppenführer ist das Letzte, was Gorou will, dass diejenigen verletzt werden, die ihm folgen.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P}",
+				"VTD-Bonus|{param2:I}",
+				"Geo-SCH-Bonus|{param3:P}",
+				"Dauer|{param4:F1} s",
+				"Abklingzeit|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Juuga – Vorwärts zum Sieg",
+		"info": "Gorou zeigt seine Macht als General, verursacht Geo-Flächenschaden und erstellt ein Feld der „Würde des Generals“, um seine Kameraden zu ermuntern.\n\n**Würde des Generals**\nMerkmale:\n· Das Feld verleiht aktuellen Figuren im Wirkungsbereich gemäß der Anzahl an Figuren in der Truppe mit dem Geo-Element die gleichen Effekte wie das Generalbanner der Elementarfähigkeit „Inuzuka-Allzweckaufstellung“ und folgt den Bewegungen der aktuellen Figur.\n· Erschafft alle 1,5 s einen Kristallzusammenbruch, der einem Gegner im Wirkungsbereich Geo-Flächenschaden zufügt.\n· Zieht alle 1,5 s 1 durch Kristallisationsreaktionen entstehenden Splitter im Wirkungsbereich zur Position der aktuellen Figur.\n\nZerstört, wenn ein von Gorou selbst erschaffenes Generalbanner bei der Anwendung dieser Fähigkeit vorhanden ist, dieses Generalbanner. Erschafft kein Generalbanner, wenn Gorou selbst während der Wirkungsdauer von Würde des Generals seine Elementarfähigkeit „Inuzuka-Allzweckaufstellung“ anwendet.\nDer Effekt von Würde des Generals, den Gorou selbst geschaffen hat, erlischt, wenn Gorou ohnmächtig wird.",
+		"description": "„Das Terrain ist uns zum Vorteil!“ Gorou kann das Terrain des Schlachtfelds ein wenig verändern, um den Sieg zu erlangen. Diese einzigartige Technik hat ihn schon durch viele Kämpfe gegen mächtige Feinde gebracht.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:P} VTD",
+				"Kristallzusammenbruch-SCH|{param2:P} VTD",
+				"Dauer|{param3:F1} s",
+				"Abklingzeit|{param4:F1} s",
+				"Elementarenergie|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Bei Wind und Regen",
+		"info": "Erhöht bei Anwendung von **Juuga – Vorwärts zum Sieg** die VTD aller Truppenmitglieder in der Nähe 12 s lang um 25 %."
+	},
+	"passive2": {
+		"name": "Unvergessene Dankbarkeit",
+		"info": "Erhöht den mit folgenden Angriffen von Gorou verursachten Schaden basierend auf seiner VTD:\n· Erhöht den Schaden der Fähigkeit **Inuzuka-Allzweckaufstellung** um 156 % der VTD.\n· Erhöht den Schaden der Fähigkeit **Juuga – Vorwärts zum Sieg** sowie den Schaden von Kristallzusammenbruch um 15,6 % der VTD."
+	},
+	"passive3": {
+		"name": "Gespür für Geglitzer",
+		"info": "Zeigt alle **Besonderheiten Inazumas** in der Nähe auf der Minikarte an."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren des „Lichts“",
+				"count": 3
+			},
+			{
+				"name": "Geisterhülle",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zum „Licht“",
+				"count": 2
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zum „Licht“",
+				"count": 4
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zum „Licht“",
+				"count": 6
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zum „Licht“",
+				"count": 9
+			},
+			{
+				"name": "Gespensterherz",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie des „Lichts“",
+				"count": 4
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 4
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie des „Lichts“",
+				"count": 6
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 6
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie des „Lichts“",
+				"count": 12
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 9
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie des „Lichts“",
+				"count": 16
+			},
+			{
+				"name": "Gespensterkern",
+				"count": 12
+			},
+			{
+				"name": "Moment der Kernschmelze",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}
