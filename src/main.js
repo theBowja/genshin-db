@@ -11,13 +11,13 @@ const genshin = {};
 
 // Default options
 const baseoptions = new Options(
-    dumpResult = false,
-    matchAltNames = true,
-    matchAliases = false,
-    matchCategories = false,
-    verboseCategories = false,
-    queryLanguages = ["English"],
-    resultLanguage = "English"
+    false, // dumpResult
+    true, // matchAltNames
+    false, // matchAliases
+    false, // matchCategories
+    false, // verboseCategories
+    ["English"], // queryLanguages
+    "English" // resultLanguage
 );
 
 
@@ -325,12 +325,12 @@ genshin.Folder = genshin.Folders = Folder;
  */
 genshin.addAltName = function (language, folder, altname, query) {
     const options = new Options(
-        dumpResult = false,
-        matchAltNames = false,
-        matchAliases = false,
-        matchCategories = false,
-        verboseCategories = false,
-        queryLanguages = [language],
+        false, // dumpResult
+        false, // matchAltNames
+        false, // matchAliases
+        false, // matchCategories
+        false, // verboseCategories
+        [language], // queryLanguages
     );
 
     const filename = retrieveData(query, folder, options, true);
