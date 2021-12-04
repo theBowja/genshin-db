@@ -630,6 +630,7 @@ export interface Enemy {
     //     cryo: number;
     //     electro: number;
     // };
+    rewardpreview: Rewards[];
 
     images: {
         nameicon: string;
