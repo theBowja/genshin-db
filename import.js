@@ -511,9 +511,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
 // importData('foods', collateFood);
-// importData('materials', collateMaterial, undefined, false, true);
+importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain);
-importData('enemies', collateEnemy);
+// importData('enemies', collateEnemy);
 // importCurve('enemies');
 
 // getRedirectImages(); // separate. for talents
