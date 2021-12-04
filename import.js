@@ -420,7 +420,7 @@ function collateDomain(existing, newdata, lang) {
 
 function collateEnemy(existing, newdata, lang) {
 	clearObject(existing);
-	const copyover = ['name', 'specialname', 'enemytype', 'category', 'description', 'rewardpreview'];
+	const copyover = ['name', 'specialname', 'enemytype', 'category', 'description', 'investigation', 'rewardpreview'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
