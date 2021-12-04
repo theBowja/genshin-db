@@ -2520,6 +2520,17 @@ const genshindb = require('genshin-db');
   category: 'Elemental Lifeforms',
   description: 'A monster created by the coalescing of Electro dispersed throughout nature.\n' +
     'Due to the abundant Electro within its form, it will deliver an electric shock to its surroundings from time to time. At present, some have attempted to harness this energy to aid in production activities. Perhaps some new science will be born from this...?',
+  investigation: {
+    name: 'Slime',
+    category: 'Easy',
+    description: "A pudgy elemental life form.\\nIt's said that desserts made from slimes of different elements will have incredibly distinctive flavors."
+  },
+  rewardpreview: [
+    { name: 'Mora' },
+    { name: 'Slime Condensate', count: 0.6723 },
+    { name: 'Slime Secretions', count: 0.1792 },
+    { name: 'Slime Concentrate', count: 0.0448 }
+  ],
   images: { nameicon: 'UI_MonsterIcon_Slime_Electric_03' },
   stats: [Function (anonymous)]
 }
