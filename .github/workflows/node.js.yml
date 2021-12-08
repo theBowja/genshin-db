@@ -1,0 +1,64 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and draft a release when a git push is commited.
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js Build & GitHub Release
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - name: Build All languages
+      run: npm run build --if-present && mv dist/genshindb.js dist/genshindb-All.js
+    - name: Build ChineseSimplified
+      run: npm run build ChineseSimplified --if-present && mv dist/genshindb.js dist/genshindb-ChineseSimplified.js
+    - name: Build ChineseTraditional
+      run: npm run build ChineseTraditional --if-present && mv dist/genshindb.js dist/genshindb-ChineseTraditional.js
+    - name: Build English
+      run: npm run build English --if-present && mv dist/genshindb.js dist/genshindb-English.js
+    - name: Build French
+      run: npm run build French --if-present && mv dist/genshindb.js dist/genshindb-French.js
+    - name: Build German
+      run: npm run build German --if-present && mv dist/genshindb.js dist/genshindb-German.js
+    - name: Build Indonesian
+      run: npm run build Indonesian --if-present && mv dist/genshindb.js dist/genshindb-Indonesian.js
+    - name: Build Japanese
+      run: npm run build Japanese --if-present && mv dist/genshindb.js dist/genshindb-Japanese.js
+    - name: Build Korean
+      run: npm run build Korean --if-present && mv dist/genshindb.js dist/genshindb-Korean.js
+    - name: Build Portuguese
+      run: npm run build Portuguese --if-present && mv dist/genshindb.js dist/genshindb-Portuguese.js
+    - name: Build Russian
+      run: npm run build Russian --if-present && mv dist/genshindb.js dist/genshindb-Russian.js
+    - name: Build Spanish
+      run: npm run build Spanish --if-present && mv dist/genshindb.js dist/genshindb-Spanish.js
+    - name: Build Thai
+      run: npm run build Thai --if-present && mv dist/genshindb.js dist/genshindb-Thai.js
+    - name: Build Vietnamese
+      run: npm run build Vietnamese --if-present && mv dist/genshindb.js dist/genshindb-Vietnamese.js
+    - name: GitHub Releases
+      uses: xresloader/upload-to-github-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        file: "dist/*.js"
+        # tags: true # Only release when there's a tag in the commit.
+        draft: true
+        verbose: true
