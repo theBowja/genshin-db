@@ -558,6 +558,7 @@ const genshindb = require('genshin-db');
   match: 'Firm Arrowhead',
   options: {
     dumpResult: true,
+    matchNames: true,
     matchAltNames: true,
     matchAliases: false,
     matchCategories: true,

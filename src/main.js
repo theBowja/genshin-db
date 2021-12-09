@@ -12,6 +12,7 @@ const genshin = {};
 // Default options
 const baseoptions = new Options(
     false, // dumpResult
+    true, // matchNames
     true, // matchAltNames
     false, // matchAliases
     false, // matchCategories
@@ -27,7 +28,7 @@ function buildQueryDict(querylangs, folder, opts) {
     for (const lang of querylangs) {
         const index = getIndex(lang, folder);
         if (index === undefined) continue;
-        if (index.names)
+        if (opts.matchNames && index.names)
             dict = dict.concat(Object.keys(index.names));
         if (opts.matchAltNames)
             dict = dict.concat(altnames.getAltNamesList(lang, folder));
@@ -54,7 +55,7 @@ function sanitizeOptions(opts) {
     if (!opts || typeof opts !== 'object') return;
 
     let sanOpts = {};
-    ['dumpResult', 'matchAltNames', 'matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
+    ['dumpResult', 'matchNames', 'matchAltNames', 'matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
         if (typeof opts[prop] === 'boolean') sanOpts[prop] = opts[prop];
     });
     opts.resultLanguage = language.format(opts.resultLanguage);
@@ -79,7 +80,7 @@ function retrieveData(query, folder, opts, getfilename) {
         if (langindex === undefined) continue;
 
         // check if queryMatch is in .names
-        if (langindex.names[queryMatch] !== undefined) {
+        if (opts.matchNames && langindex.names[queryMatch] !== undefined) {
             const filename = langindex.names[queryMatch];
             if (getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
@@ -326,6 +327,7 @@ genshin.Folder = genshin.Folders = Folder;
 genshin.addAltName = function (language, folder, altname, query) {
     const options = new Options(
         false, // dumpResult
+        true, // matchNames
         false, // matchAltNames
         false, // matchAliases
         false, // matchCategories
