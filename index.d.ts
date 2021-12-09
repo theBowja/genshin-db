@@ -67,6 +67,7 @@ export interface StatResult {
 //<MatchCategories extends boolean | undefined, Verbose extends boolean | undefined>
 export interface QueryOptions {
     dumpResult?: boolean;
+    matchNames?: boolean;
     matchAltNames?: boolean;
     matchAliases?: boolean;
     matchCategories?: boolean;
