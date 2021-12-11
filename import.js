@@ -279,7 +279,7 @@ function collateConstellation(existing, newdata, lang) {
 	}
 }
 
-function collateTalent(existing, newdata) {
+function collateTalent(existing, newdata, lang) {
 	newdata.aliases = existing.aliases;
 	clearObject(existing);
 	existing.name = newdata.name;
@@ -293,6 +293,10 @@ function collateTalent(existing, newdata) {
 		if(newdata[prop].labels !== undefined) {
 			existing[prop].attributes = {};
 			existing[prop].attributes.labels = newdata[prop].labels;
+		}
+		if(lang === 'English') {
+			if(newdata.images === undefined) newdata.images = {};
+			newdata.images[prop] = newdata[prop].icon;
 		}
 	}
 	addTalent('combat1');
@@ -506,11 +510,11 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact);
-importData('foods', collateFood);
+// importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain);
 // importData('enemies', collateEnemy);

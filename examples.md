@@ -998,12 +998,12 @@ const genshindb = require('genshin-db');
     ]
   },
   images: {
-    combat1: 'https://static.wikia.nocookie.net/gensin-impact/images/5/51/Talent_Sparkling_Scatter.png',
-    combat2: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Talent_Jade_Screen.png',
-    combat3: 'https://static.wikia.nocookie.net/gensin-impact/images/4/47/Talent_Starshatter.png',
-    passive1: 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Talent_Backup_Plan.png',
-    passive2: 'https://static.wikia.nocookie.net/gensin-impact/images/6/62/Talent_Strategic_Reserve.png',
-    passive3: 'https://static.wikia.nocookie.net/gensin-impact/images/4/43/Talent_Trove_of_Marvelous_Treasures.png'
+    combat1: 'Skill_A_Catalyst_MD',
+    combat2: 'Skill_S_Ningguang_01',
+    combat3: 'Skill_E_Ningguang_01_HD',
+    passive1: 'UI_Talent_S_Ningguang_02',
+    passive2: 'UI_Talent_S_Ningguang_06',
+    passive3: 'UI_Talent_Collect_Ore'
   }
 }
 ```
