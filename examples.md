@@ -1948,6 +1948,25 @@ const genshindb = require('genshin-db');
 
 </details>
 <details>
+<summary>genshindb.materials('<b>fish', { matchNames: false, matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Abiding Angelfish',      'Aizen Medaka',
+  'Akai Maou',              'Betta',
+  'Bitter Pufferfish',      'Brown Shirakodai',
+  'Crystalfish',            'Dawncatcher',
+  'Glaze Medaka',           'Golden Koi',
+  'Lunged Stickleback',     'Medaka',
+  'Pufferfish',             'Purple Shirakodai',
+  'Raimei Angelfish',       'Rusty Koi',
+  'Snowstrider',            'Sweet-Flower Medaka',
+  'Tea-Colored Shirakodai', 'Venomspine Fish'
+]
+```
+
+</details>
+<details>
 <summary>genshindb.materials('<b>weapon material', { matchCategories: true, verboseCategories: true }</b>)<b>.filter(ele => ele.rarity === "2").map(ele => ele.name)</b></summary>
 
 ```js
