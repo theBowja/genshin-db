@@ -127,7 +127,7 @@ function makeIndices() {
 }
 
 function combineData() {
-	console.log("minifying all data, index, image, stats, curve into one file each");
+	console.log("minifying all data, index, image, stats, curve into one giant file");
 	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {};
 
 	for(const lang of language.languages) {
@@ -157,10 +157,15 @@ function combineData() {
 			myurl[folder] = require(`./data/url/${folder}.json`);
 	}
 
-	fs.writeFileSync(`./min/data.min.json`, JSON.stringify(mydata));
-	fs.writeFileSync(`./min/index.min.json`, JSON.stringify(myindex));
-	fs.writeFileSync(`./min/image.min.json`, JSON.stringify(myimage));
-	fs.writeFileSync(`./min/stats.min.json`, JSON.stringify(mystats));
-	fs.writeFileSync(`./min/curve.min.json`, JSON.stringify(mycurve));
-	fs.writeFileSync(`./min/url.min.json`, JSON.stringify(myurl));
+	let all = JSON.stringify({
+		data: mydata,
+		index: myindex,
+		image: myimage,
+		stats: mystats,
+		curve: mycurve,
+		url: myurl
+	});
+
+	console.log(`uncompressed: ${Buffer.byteLength(all)/1000/1000}MB`);
+	fs.writeFileSync(`./min/data.min.json`, all);
 }
