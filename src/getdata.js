@@ -1,9 +1,11 @@
-const alldata  = require('./min/data.min.json');
-const allindex = require('./min/index.min.json');
-const allimage = require('./min/image.min.json');
-const allurl   = require('./min/url.min.json');
-const allstats = require('./min/stats.min.json');
-const allcurve = require('./min/curve.min.json');
+const all = require('./min/data.min.json');
+
+const alldata  = all.data;
+const allindex = all.index;
+const allimage = all.image;
+const allurl   = all.url;
+const allstats = all.stats;
+const allcurve = all.curve;
 
 const availableimage = ['characters', 'artifacts', 'weapons', 'constellations', 'talents', 'materials', 'foods', 'elements', 'domains', 'enemies'];
 const availableurl   = ['characters', 'artifacts', 'weapons', 'foods', 'materials'];
