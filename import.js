@@ -223,6 +223,7 @@ function collateCharacter(existing, newdata, lang) {
 	clearObject(existing);
 
 	existing.name = newdata.name;
+	existing.fullname = newdata.fullname;
 	if(newdata.aliases) existing.aliases = newdata.aliases;
 	existing.title = newdata.title;
 	existing.description = newdata.description;
@@ -507,13 +508,13 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 
-// importData('characters', collateCharacter);
+importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
-importData('artifacts', collateArtifact, undefined, false);
+// importData('artifacts', collateArtifact, undefined, false);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain);

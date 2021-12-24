@@ -51,6 +51,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Ganyu',
+  fullname: 'Ganyu',
   title: 'Plenilune Gaze',
   description: 'The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.',
   rarity: '5',
@@ -190,6 +191,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'アンバー',
+  fullname: 'アンバー',
   title: '飛行チャンピオン',
   description: '元気満々な女の子、騎士団で最も優秀で、最後の偵察騎士である。',
   rarity: '4',
@@ -279,6 +281,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Amber',
+  fullname: 'Amber',
   title: 'La Campeona de Vuelo',
   description: 'Siempre enérgica y llena de vida, Amber es la mejor exploradora de los Caballeros de Favonius, aunque también es la única...',
   rarity: '4',
@@ -368,6 +371,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Tartaglia',
+  fullname: 'Tartaglia',
   title: 'Childe',
   description: 'No. 11 of The Harbingers, also known as "Childe." His name is highly feared on the battlefield.',
   rarity: '5',
@@ -457,6 +461,7 @@ const genshindb = require('genshin-db');
 ```js
 {
   name: 'Venti',
+  fullname: 'Venti',
   title: 'Windborne Bard',
   description: "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.",
   rarity: '5',
