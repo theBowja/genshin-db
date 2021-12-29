@@ -2,13 +2,15 @@ const path = require('path');
 
 module.exports = {
 	entry: './src/main.js',
-	target: 'node',
+	// target: 'web', // not needed
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'genshindb.js',
 
 		library: 'GenshinDB',
 		libraryTarget: 'umd',
-		umdNamedDefine: true
+		umdNamedDefine: true,
+		globalObject: `(typeof self !== 'undefined' ? self : this)`
+
 	}
 }
