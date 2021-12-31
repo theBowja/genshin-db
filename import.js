@@ -515,8 +515,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
-importData('foods', collateFood);
-// importData('materials', collateMaterial, undefined, false, true);
+// importData('foods', collateFood);
+importData('materials', collateMaterial, undefined, false, true);
 // importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
 // importCurve('enemies');
