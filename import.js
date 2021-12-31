@@ -123,57 +123,6 @@ async function getRedirectedUrl(url) {
 	});
 }
 
-async function getRedirectImages() {
-	const sanitize = (str) => { return str.replace(/ /g, '_').replace(/:/g, '').replace(/,/g, '%2C').replace(/"/g, '%22').replace(/'/g, '%27'); }
-
-	if(fs.existsSync(`./src/data/English/talents`)) {
-		let existing = {};
-		try { existing = require(`./src/data/image/talents.json`); } catch(e) {};
-		let allfiles = fs.readdirSync(`./src/data/English/talents`)
-		for(let filename of allfiles) {
-			if(!filename.endsWith('.json')) return;
-			const mytalent = require(`./src/data/English/talents/${filename}`);
-			filename = filename.substring(0, filename.indexOf('.'));
-			if(existing[filename] === undefined) existing[filename] = {};
-			//===============
-			console.log(filename);
-			let combat1 = sanitize(mytalent.combat1.name.slice(15));
-			if(mytalent.name === 'Kamisato Ayaka') combat1 = combat1.replace(/_-/g, '');
-			existing[filename].combat1 = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${combat1}.png`) || '';
-
-			let combat2 = sanitize(mytalent.combat2.name);
-			existing[filename].combat2 = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${combat2}.png`) || '';
-
-			if(mytalent.combatsp) {
-				let combatsp = sanitize(mytalent.combatsp.name);
-				existing[filename].combatsp = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${combatsp}.png`) || '';
-			}
-
-			let combat3 = sanitize(mytalent.combat3.name);
-			existing[filename].combat3 = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${combat3}.png`) || '';
-
-			let passive1 = sanitize(mytalent.passive1.name);
-			if(mytalent.name === 'Xinyan') passive1 = passive1.replace(/An/, 'an');
-			else if(mytalent.name === 'Mona') passive1 = passive1.replace(/%22/g, '');
-			existing[filename].passive1 = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${passive1}.png`) || '';
-
-			let passive2 = sanitize(mytalent.passive2.name);
-			if(mytalent.name === 'Qiqi') passive2 = passive2.replace(/Into/, 'into');
-			existing[filename].passive2 = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${passive2}.png`) || '';
-
-			if(mytalent.passive3) {
-				let passive3 = sanitize(mytalent.passive3.name);
-				if(mytalent.name === 'Albedo') passive3 = passive3 + '_%28Albedo%29';
-				existing[filename].passive3 = await getRedirectedUrl(`https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Talent_${passive3}.png`) || '';
-			}
-		}
-	 	fs.mkdirSync(`./src/data/image`, { recursive: true });
-	 	fs.writeFileSync(`./src/data/image/talents.json`, JSON.stringify(existing, null, '\t'));
-	} else {
-		console.log(`getRedirectImages: talents not found`);
-	}
-}
-
 function updateURLs() {
 	//let folder = 'characters';
 	updateFandomDirect('characters');
@@ -518,9 +467,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first
 // importData('domains', collateDomain);
-importData('enemies', collateEnemy);
+// importData('enemies', collateEnemy);
 // importCurve('enemies');
 
-// getRedirectImages(); // separate. for talents
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
