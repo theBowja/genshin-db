@@ -1,0 +1,211 @@
+{
+	"name": "Shenhe",
+	"combat1": {
+		"name": "Normal Attack: Dawnstar Piercer",
+		"info": "**Normal Attack**\nPerforms up to five consecutive spear strikes.\n\n**Charged Attack**\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n**Plunging Attack**\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}",
+				"4-Hit DMG|{param4:F1P}+{param5:F1P}",
+				"5-Hit DMG|{param6:F1P}",
+				"Charged Attack DMG|{param7:F1P}",
+				"Charged Attack Stamina Cost|{param8:F1}",
+				"Plunge DMG|{param9:F1P}",
+				"Low/High Plunge DMG|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Spring Spirit Summoning",
+		"info": "The frosted dew, silvery and dense, shall exorcise all demons.\nGrants all nearby party members the Icy Quill effect and deals Cryo DMG in different ways based on whether it is pressed or held.\n\n**Press**\nRushes forward together with a Talisman Spirit, dealing Cryo DMG to opponents along the path.\n\n**Hold**\nCommands the Talisman Spirit to deal AoE Cryo DMG.\n\n**Icy Quill**\nWhen Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal Cryo DMG to opponents, the DMG dealt is increased based on Shenhe's current ATK.\n\nThe Icy Quill's effects will be cleared once its duration ends or after being triggered a certain number of times. When held rather than pressed, the Icy Quill's effect lasts longer and can be triggered more times.\nWhen one Cryo DMG instance strikes multiple opponents, the effect is triggered multiple times based on the number of opponents hit. The number of times the effect is triggered is calculated independently for each party member with the Icy Quill.",
+		"description": "The power of the spirits is no falsehood. Burdened with her orders, the divine maiden hurries on!",
+		"attributes": {
+			"labels": [
+				"Press Skill DMG|{param1:P}",
+				"Hold Skill DMG|{param2:F1P}",
+				"DMG Bonus|{param3:F1P} ATK",
+				"Press/Hold Duration|{param4:F1}s/{param5:F1}s",
+				"Press/Hold Trigger Quota|{param6:I}/{param7:I}",
+				"Click CD|{param8:F1}s",
+				"Hold CD|{param9:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Divine Maiden's Deliverance",
+		"info": "Unleashes the power of the Talisman Spirit, allowing it to roam free in this plane, dealing AoE Cryo DMG.\nThe Talisman Spirit then creates a field that decreases the Cryo RES and Physical RES of opponents within it. It also deals periodic Cryo DMG to opponents within the field.",
+		"description": "The way of the adepti is not defined only by the mysterious and fantastical. Only by observing the changes in the heavens and the earth, and understanding the laws of cause and effect in this realm, may its essence be understood.",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:P}",
+				"RES Decrease|{param2:F1P}",
+				"DoT|{param3:F1P}",
+				"Duration|{param4:F1}s",
+				"CD|{param5:F1}s",
+				"Energy Cost|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Deific Embrace",
+		"info": "An active character within the field created by **Divine Maiden's Deliverance** gains 15% Cryo DMG Bonus."
+	},
+	"passive2": {
+		"name": "Spirit Communion Seal",
+		"info": "After Shenhe uses **Spring Spirit Summoning**, she will grant all nearby party members the following effects:\n· Press: Elemental Skill and Elemental Burst DMG increased by 15% for 10s.\n· Hold: Normal, Charged, and Plunging Attack DMG increased by 15% for 15s."
+	},
+	"passive3": {
+		"name": "Precise Comings and Goings",
+		"info": "Gains 25% more rewards when dispatched on a Liyue Expedition for 20 hours."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Prosperity",
+				"count": 3
+			},
+			{
+				"name": "Whopperflower Nectar",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Prosperity",
+				"count": 2
+			},
+			{
+				"name": "Shimmering Nectar",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Prosperity",
+				"count": 4
+			},
+			{
+				"name": "Shimmering Nectar",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Prosperity",
+				"count": 6
+			},
+			{
+				"name": "Shimmering Nectar",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Prosperity",
+				"count": 9
+			},
+			{
+				"name": "Shimmering Nectar",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Prosperity",
+				"count": 4
+			},
+			{
+				"name": "Energy Nectar",
+				"count": 4
+			},
+			{
+				"name": "Hellfire Butterfly",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Prosperity",
+				"count": 6
+			},
+			{
+				"name": "Energy Nectar",
+				"count": 6
+			},
+			{
+				"name": "Hellfire Butterfly",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Prosperity",
+				"count": 12
+			},
+			{
+				"name": "Energy Nectar",
+				"count": 9
+			},
+			{
+				"name": "Hellfire Butterfly",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Prosperity",
+				"count": 16
+			},
+			{
+				"name": "Energy Nectar",
+				"count": 12
+			},
+			{
+				"name": "Hellfire Butterfly",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

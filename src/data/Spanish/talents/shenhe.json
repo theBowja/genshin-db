@@ -1,0 +1,211 @@
+{
+	"name": "Shenhe",
+	"combat1": {
+		"name": "Ataque Normal: Perforaestrellas",
+		"info": "**Ataque Normal**\nRealiza hasta 5 ataques rápidos con lanza.\n\n**Ataque Cargado**\nConsume una cierta cantidad de Aguante para lanzarse al frente, infligiendo daño a los enemigos en el camino.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}+{param5:F1P}",
+				"Daño de 5.º golpe|{param6:F1P}",
+				"Daño de ATQ Cargado|{param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Espíritu exorcizador",
+		"info": "Invoca una escarcha plateada para exorcizar el mal.\nAplica el efecto de “pluma glacial” sobre todos los personajes del equipo cercanos e inflige Daño Cryo de maneras distintas dependiendo de si la habilidad se activó pulsando una vez o manteniendo pulsado.\n\n**Pulsar una vez**\nSe lanza al frente junto a un espíritu hechizado para infligir Daño Cryo contra los enemigos en su camino.\n\n**Mantener pulsado**\nOrdena al espíritu hechizado que inflija Daño Cryo en el AdE.\n\n**Pluma glacial**\nCuando los Ataques Normales, Cargados o Descendentes o la Habilidad Elemental o Definitiva infligen Daño Cryo contra un enemigo, el daño que infligen aumenta en proporción al ATQ actual de Shenhe.\n\nLos efectos de la pluma glacial desaparecerán cuando termine su duración o cuando se haya activado un número determinado de cargas. La pluma glacial activada manteniendo pulsado tiene una mayor duración y un mayor número de cargas que la activada pulsando una vez.\nAl golpear a varios enemigos a la vez con un golpe de Daño Cryo, se consumirán cargas en función del número de enemigos golpeados. Los efectos y las cargas de la pluma glacial se calculan de manera independiente para cada personaje.",
+		"description": "Que los espíritus tienen poder no es ninguna falsedad. Ahora, yo te ordeno que en el talismán has de entrar. ¡Ja!",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad al pulsar una vez|{param1:P}",
+				"Daño de habilidad al mantener pulsado|{param2:F1P}",
+				"Aumento de daño|{param3:F1P} de ATQ",
+				"Duración de pulsar una vez/mantener pulsado|{param4:F1} s/{param5:F1} s",
+				"Cargas al pulsar una vez/mantener pulsado|{param6:I}/{param7:I}",
+				"TdE al pulsar una vez|{param8:F1} s",
+				"TdE de mantener pulsado|{param9:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Encantamiento de la damisela divina",
+		"info": "Libera el poder del espíritu hechizado para que deambule por el mundo e inflija Daño Cryo en el AdE.\nEl espíritu creará un área que reduce la RES Cryo y la RES Física de los enemigos que haya dentro de ella, e inflige Daño Cryo continuo contra dichos enemigos.",
+		"description": "El camino de los Adeptus no se basa en algo abstracto y misterioso, sino en observar los cambios en el mundo y entender las leyes de causa y efecto de este plano para comprender su esencia.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:P}",
+				"Reducción de RES|{param2:F1P}",
+				"Daño continuo|{param3:F1P}",
+				"Duración|{param4:F1} s",
+				"TdE|{param5:F1} s",
+				"Energía Elemental|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Precepto divino",
+		"info": "Aumenta en un 15% el Bono de Daño Cryo de los personajes en uso situados en el área de **Encantamiento de la damisela divina**."
+	},
+	"passive2": {
+		"name": "Sello de la convergencia espiritual",
+		"info": "Tras lanzar **Espíritu exorcizador**, Shenhe otorga los siguientes efectos a todos los miembros del equipo cercanos:\n·Pulsar una vez: el daño de las Habilidades Elementales y Definitivas aumenta en un 15% durante 10 s.\n·Mantener pulsado: el daño de los Ataques Normales, Cargados y Descendentes aumenta en un 15% durante 15 s."
+	},
+	"passive3": {
+		"name": "Llegada oportuna",
+		"info": "Aumenta en un 25% las recompensas de las expediciones de 20 h en Liyue."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la prosperidad",
+				"count": 3
+			},
+			{
+				"name": "Néctar de Megaflora",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la prosperidad",
+				"count": 2
+			},
+			{
+				"name": "Néctar brillante",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la prosperidad",
+				"count": 4
+			},
+			{
+				"name": "Néctar brillante",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la prosperidad",
+				"count": 6
+			},
+			{
+				"name": "Néctar brillante",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la prosperidad",
+				"count": 9
+			},
+			{
+				"name": "Néctar brillante",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la prosperidad",
+				"count": 4
+			},
+			{
+				"name": "Néctar energético",
+				"count": 4
+			},
+			{
+				"name": "Mariposa del fuego infernal",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la prosperidad",
+				"count": 6
+			},
+			{
+				"name": "Néctar energético",
+				"count": 6
+			},
+			{
+				"name": "Mariposa del fuego infernal",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la prosperidad",
+				"count": 12
+			},
+			{
+				"name": "Néctar energético",
+				"count": 9
+			},
+			{
+				"name": "Mariposa del fuego infernal",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la prosperidad",
+				"count": 16
+			},
+			{
+				"name": "Néctar energético",
+				"count": 12
+			},
+			{
+				"name": "Mariposa del fuego infernal",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

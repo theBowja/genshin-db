@@ -1,0 +1,209 @@
+{
+	"name": "Yun Jin",
+	"combat1": {
+		"name": "Attaque normale : Caresse des nuages",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 5 coups de lance.\n\n**Attaque chargée**\nConsomme de l'endurance pour charger en ligne droite et infliger des DGT aux ennemis sur la route.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}+{param6:F1P}",
+				"DGT 5e coup|{param7:F1P}",
+				"DGT attaque chargée|{param8:F1P}",
+				"Coût d'endurance attaque chargée|{param9:F1} pts",
+				"DGT durant la chute|{param10:F1P}",
+				"DGT chute basse/élevée|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Épanouissement ouvert",
+		"info": "Bien que maître Yun ne fasse que jouer la comédie lors de ses combats sur scène, ses talents avec une lance sont bien réels.\n\n**Appui simple**\nBrandit sa lance pour caresser les nuages, infligeant des DGT Géo.\n\n**Appui long**\nAdopte la posture de l'épanouissement ouvert pour se charger, formant ainsi un bouclier. L'absorption de DGT du bouclier est fonction des PV max de Yun Jin, et il est efficace à 150 % contre les DGT élémentaires et physiques. Le bouclier dure jusqu'à ce qu'elle finisse de libérer sa compétence élémentaire.\nLorsque vous relâchez la compétence, que la durée prend fin ou que le bouclier est détruit, Yun Jin libère l'énergie stockée sous forme d'attaque, infligeant des DGT Géo.\nEn fonction du temps passé à charger, une attaque de 1e ou 2e charge sera déclenchée.",
+		"description": "Pour un unique moment glorieux sur scène, une décennie de préparation en coulisse...",
+		"attributes": {
+			"labels": [
+				"DGT appui simple|{param3:F1P} DÉF",
+				"DGT 1e charge|{param4:F1P} DÉF",
+				"DGT 2e charge|{param5:F1P} DÉF",
+				"PV du bouclier|{param1:P} PV max + {param2:I} PV",
+				"Temps de recharge|{param6:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Bannière de rupture des falaises",
+		"info": "Inflige des DGT Géo de zone et accorde une formation de bannière de nuagerie à tous les personnages de l'équipe à proximité.\n\n**Formation de bannière de nuagerie**\nLorsque le personnage inflige des DGT d'attaque normale à un ennemi, les DGT infligés augmentent en fonction de la DÉF actuelle de Yun Jin.\n\nLes effets de la formation de bannière de nuagerie disparaissent à la fin de sa durée ou après avoir activé un certain nombre de cumuls.\nLorsqu'une attaque normale touche plusieurs ennemis en même temps, les cumuls sont consommés selon le nombre d'ennemis touchés. Les cumuls de formation de bannière de nuagerie sont calculés indépendamment pour tous les personnages de l'équipe.",
+		"description": "« Alors que les tambours résonnent et que les épées et les hallebardes s'entrechoquent, la doyenne se transforme en un puissant général. »\n« Tandis que les instruments sur scène vibrent à l'unisson, voyons comment elle vainc ces démons ! »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:P}",
+				"Augmentation de DGT|{param2:P} DÉF",
+				"Durée|{param3:F1} s",
+				"Cumuls|{param6:I}",
+				"Temps de recharge|{param4:F1} s",
+				"Énergie élémentaire|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Fidèle à soi-même",
+		"info": "Lorsque Yun Jin utilise **Épanouissement ouvert** au moment exact où elle est attaquée, elle déclenche sa 2e charge."
+	},
+	"passive2": {
+		"name": "Rejet des conventions",
+		"info": "Lorsque l'équipe comprend des personnages de 1/2/3/4 types élémentaires, le bonus de DGT d'attaque normale accordé par une **formation de bannière de nuagerie** augmente davantage d'une valeur équivalant à 2,5 %/5 %/7,5 %/11,5 % de la DÉF de Yun Jin."
+	},
+	"passive3": {
+		"name": "Nutrition optimisée",
+		"info": "12 % de chances d'obtenir un plat supplémentaire lorsque vous cuisinez un plat parfait qui a des effets sur l'exploration."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la Diligence",
+				"count": 3
+			},
+			{
+				"name": "Masque endommagé",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 2
+			},
+			{
+				"name": "Masque sale",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 4
+			},
+			{
+				"name": "Masque sale",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 6
+			},
+			{
+				"name": "Masque sale",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 9
+			},
+			{
+				"name": "Masque sale",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 4
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 4
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 6
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 6
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 12
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 9
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 16
+			},
+			{
+				"name": "Masque sinistre",
+				"count": 12
+			},
+			{
+				"name": "Cœur de cendre",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

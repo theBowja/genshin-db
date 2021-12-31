@@ -508,10 +508,10 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 
-importData('characters', collateCharacter);
-importCurve('characters');
-// importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+// importData('characters', collateCharacter);
+// importCurve('characters');
+importData('constellations', collateConstellation);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
