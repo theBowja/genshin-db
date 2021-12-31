@@ -26,21 +26,22 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether', 'Albedo',         'Aloy',
-  'Amber',  'Arataki Itto',   'Barbara',
-  'Beidou', 'Bennett',        'Chongyun',
-  'Diluc',  'Diona',          'Eula',
-  'Fischl', 'Ganyu',          'Gorou',
-  'Hu Tao', 'Jean',           'Kaedehara Kazuha',
-  'Kaeya',  'Kamisato Ayaka', 'Keqing',
-  'Klee',   'Kujou Sara',     'Lisa',
-  'Lumine', 'Mona',           'Ningguang',
-  'Noelle', 'Qiqi',           'Raiden Shogun',
-  'Razor',  'Rosaria',        'Sangonomiya Kokomi',
-  'Sayu',   'Sucrose',        'Tartaglia',
-  'Thoma',  'Venti',          'Xiangling',
-  'Xiao',   'Xingqiu',        'Xinyan',
-  'Yanfei', 'Yoimiya',        'Zhongli'
+  'Aether',    'Albedo',         'Aloy',
+  'Amber',     'Arataki Itto',   'Barbara',
+  'Beidou',    'Bennett',        'Chongyun',
+  'Diluc',     'Diona',          'Eula',
+  'Fischl',    'Ganyu',          'Gorou',
+  'Hu Tao',    'Jean',           'Kaedehara Kazuha',
+  'Kaeya',     'Kamisato Ayaka', 'Keqing',
+  'Klee',      'Kujou Sara',     'Lisa',
+  'Lumine',    'Mona',           'Ningguang',
+  'Noelle',    'Qiqi',           'Raiden Shogun',
+  'Razor',     'Rosaria',        'Sangonomiya Kokomi',
+  'Sayu',      'Shenhe',         'Sucrose',
+  'Tartaglia', 'Thoma',          'Venti',
+  'Xiangling', 'Xiao',           'Xingqiu',
+  'Xinyan',    'Yanfei',         'Yoimiya',
+  'Yun Jin',   'Zhongli'
 ]
 ```
 
@@ -612,12 +613,13 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Beidou',  'Chongyun',
-  'Ganyu',   'Hu Tao',
-  'Keqing',  'Ningguang',
-  'Qiqi',    'Xiangling',
-  'Xiao',    'Xingqiu',
-  'Xinyan',  'Yanfei',
+  'Beidou',    'Chongyun',
+  'Ganyu',     'Hu Tao',
+  'Keqing',    'Ningguang',
+  'Qiqi',      'Shenhe',
+  'Xiangling', 'Xiao',
+  'Xingqiu',   'Xinyan',
+  'Yanfei',    'Yun Jin',
   'Zhongli'
 ]
 ```
@@ -711,22 +713,22 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',             'Aloy',             'Amber',
-  'Arataki Itto',       'Barbara',          'Beidou',
-  'Bennett',            'Chongyun',         'Diluc',
-  'Diona',              'Eula',             'Fischl',
-  'Ganyu',              'Gorou',            'Hu Tao',
-  'Jean',               'Kaedehara Kazuha', 'Kaeya',
-  'Kamisato Ayaka',     'Keqing',           'Klee',
-  'Kujou Sara',         'Lisa',             'Mona',
-  'Ningguang',          'Noelle',           'Qiqi',
-  'Raiden Shogun',      'Razor',            'Rosaria',
-  'Sangonomiya Kokomi', 'Sayu',             'Sucrose',
-  'Tartaglia',          'Thoma',            'Traveler (Anemo)',
-  'Traveler (Electro)', 'Traveler (Geo)',   'Venti',
-  'Xiangling',          'Xiao',             'Xingqiu',
-  'Xinyan',             'Yanfei',           'Yoimiya',
-  'Zhongli'
+  'Albedo',             'Aloy',               'Amber',
+  'Arataki Itto',       'Barbara',            'Beidou',
+  'Bennett',            'Chongyun',           'Diluc',
+  'Diona',              'Eula',               'Fischl',
+  'Ganyu',              'Gorou',              'Hu Tao',
+  'Jean',               'Kaedehara Kazuha',   'Kaeya',
+  'Kamisato Ayaka',     'Keqing',             'Klee',
+  'Kujou Sara',         'Lisa',               'Mona',
+  'Ningguang',          'Noelle',             'Qiqi',
+  'Raiden Shogun',      'Razor',              'Rosaria',
+  'Sangonomiya Kokomi', 'Sayu',               'Shenhe',
+  'Sucrose',            'Tartaglia',          'Thoma',
+  'Traveler (Anemo)',   'Traveler (Electro)', 'Traveler (Geo)',
+  'Venti',              'Xiangling',          'Xiao',
+  'Xingqiu',            'Xinyan',             'Yanfei',
+  'Yoimiya',            'Yun Jin',            'Zhongli'
 ]
 ```
 
@@ -1561,6 +1563,7 @@ const genshindb = require('genshin-db');
   'Blackcliff Warbow',
   'Black Tassel',
   'Bloodtainted Greatsword',
+  'Calamity Queller',
   'Cinnabar Spindle',
   'Compound Bow',
   'Cool Steel',
@@ -1645,8 +1648,7 @@ const genshindb = require('genshin-db');
   'Skyward Atlas',
   'Skyward Blade',
   'Skyward Harp',
-  'Skyward Pride',
-  ... 31 more items
+  ... 32 more items
 ]
 ```
 
@@ -1898,7 +1900,7 @@ const genshindb = require('genshin-db');
   description: 'Talent Level-Up material.\n' +
     'Poetry is the soul of the land of the wind.\n' +
     'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
-  sortorder: 986,
+  sortorder: 1458,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Talent Level-Up Material',
@@ -1961,6 +1963,7 @@ const genshindb = require('genshin-db');
   'Akai Maou',              'Betta',
   'Bitter Pufferfish',      'Brown Shirakodai',
   'Crystalfish',            'Dawncatcher',
+  'Divda Ray',              'Formalo Ray',
   'Glaze Medaka',           'Golden Koi',
   'Lunged Stickleback',     'Medaka',
   'Pufferfish',             'Purple Shirakodai',
@@ -1998,7 +2001,7 @@ const genshindb = require('genshin-db');
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
     'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
     'His enemies are the thousands who stand against the wind.',
-  sortorder: 1922,
+  sortorder: 2010,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -2020,7 +2023,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
-  sortorder: 700,
+  sortorder: 1050,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
@@ -2239,6 +2242,7 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Bountiful Year',
   'Butter Crab',
   'Chicken Tofu Pudding',
   'Chili-Mince Cornbread Buns',
@@ -2569,6 +2573,7 @@ const genshindb = require('genshin-db');
 [
   'Anemo Hypostasis',
   'Azhdaha',
+  'Bolteater Bathysmal Vishap',
   'Childe',
   'Cryo Hypostasis',
   'Cryo Regisvine',
@@ -2584,6 +2589,7 @@ const genshindb = require('genshin-db');
   'Primo Geovishap',
   'Pyro Hypostasis',
   'Pyro Regisvine',
+  'Rimebiter Bathysmal Vishap',
   'Stormterror',
   'Thunder Manifestation'
 ]
