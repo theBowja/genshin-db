@@ -1,0 +1,211 @@
+{
+	"name": "Shenhe",
+	"combat1": {
+		"name": "Standardangriff: Morgensternstachel",
+		"info": "**Standardangriff**\nFührt bis zu 5 Lanzenstiche hintereinander aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer, sticht geschwind nach vorn und fügt den Gegnern in der Bahn Schaden zu.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P} + {param5:F1P}",
+				"SCH Phase 5|{param6:F1P}",
+				"SCH heftiger Schläge|{param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Mantra der Geisterbeschwörung",
+		"info": "Fester und silberner eisiger Tau möge das Böse vertreiben.\nVerleiht allen Truppenmitgliedern in der Nähe den Effekt „Eisfeder“ und verursacht je nachdem, ob gedrückt oder gedrückt gehalten wird, auf unterschiedliche Weise Kryo-Schaden.\n\n**Drücken**\nStößt gemeinsam mit einem „Talismangeist“ vor und fügt Gegnern in der Bahn Kryo-Schaden zu.\n\n**Gedrückt halten**\nBefielt dem Talismangeist, Kryo-Flächenschaden zu verursachen.\n\n**Eisfeder**\nErhöht den Gegnern mit Standardangriffen, heftigen Schlägen, Angriffen aus dem Fall, Elementarfähigkeiten und Spezialfähigkeiten zugefügten Kryo-Schaden basierend auf Shenhes eigenem aktuellen ANG.\n\nDer Effekt „Eisfeder“ erlischt nach dem Ende der Wirkungsdauer oder nach dem Inkrafttreten einer bestimmten Menge an Stapelungen. Eisfeder hält beim Gedrückthalten länger und verleiht mehr Stapelungen als beim Drücken.\nVerbraucht beim Treffen mehrerer Gegner mit einem einzelnen Kryo-Schaden eine der Anzahl der getroffenen Gegner entsprechende Menge an wirksamen Stapelungen. Die wirksamen Stapelungen jedes Truppenmitglieds mit dem Effekt Eisfeder werden unabhängig voneinander berechnet.",
+		"description": "„Die Macht der Geister ist keine Täuschung. Hunderte von ihnen arbeiten für mich. Die göttliche Jungfrau befielt, in den Talisman zu eilen! Los!“",
+		"attributes": {
+			"labels": [
+				"SCH bei Drücken|{param1:P}",
+				"SCH bei Gedrückthalten|{param2:F1P}",
+				"SCH-Bonus|{param3:F1P} ANG",
+				"Dauer bei Drücken/Gedrückthalten|{param4:F1}/{param5:F1} s",
+				"Wirksame Stapelungen bei Drücken/Gedrückthalten|{param6:I}/{param7:I}",
+				"Abklingzeit für Drücken|{param8:F1} s",
+				"Abklingzeit für Gedrückthalten|{param9:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Geisterbefehligung der göttlichen Jungfrau",
+		"info": "Entfesselt die Kraft des „Talismangeists“, lässt ihn auf die Welt los und verursacht Kryo-Flächenschaden.\nDer Talismangeist erschafft ein Feld, das den Kryo-WDS sowie den physischen WDS von Gegnern darin verringert und ihnen fortlaufend Kryo-Schaden zufügt.",
+		"description": "„Der Weg der Adepten ist kein dunkles Mysterium, sondern kann begriffen werden, wenn man die Wandlungen von Himmel und Erde beobachtet und die Zusammenhänge in der Welt versteht.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:P}",
+				"WDS-Malus|{param2:F1P}",
+				"Fortlaufender SCH|{param3:F1P}",
+				"Dauer|{param4:F1} s",
+				"Abklingzeit|{param5:F1} s",
+				"Elementarenergie|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Göttliche Umarmung",
+		"info": "Erhöht den Kryo-Schadensbonus aktueller Figuren im Wirkungsbereich von **Geisterbefehligung der göttlichen Jungfrau** um 15 %."
+	},
+	"passive2": {
+		"name": "Siegel der Geisterbindung",
+		"info": "Verleiht nach Anwendung von **Mantra der Geisterbeschwörung** durch Shenhe allen Truppenmitgliedern in der Nähe folgende Effekte:\n· Drücken: Erhöht den mit Elementarfähigkeiten und Spezialfähigkeiten verursachten Schaden 10 s lang um 15 %.\n· Gedrückt halten: Erhöht den mit Standardangriffen, heftigen Schlägen und Angriffen aus dem Fall verursachten Schaden 15 s lang um 15 %."
+	},
+	"passive3": {
+		"name": "Kenntnisse von der Umgebung",
+		"info": "Bringt bei 20-stündigen Erkundungsentsendungen in Liyue 25 % mehr Belohnungen."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren des „Wohlstands“",
+				"count": 3
+			},
+			{
+				"name": "Vaniloqua-Nektar",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 2
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 4
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 6
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 9
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 4
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 4
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 6
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 6
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 12
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 9
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 16
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 12
+			},
+			{
+				"name": "Höllenfeuerfalter",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}
