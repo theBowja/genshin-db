@@ -470,5 +470,5 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('enemies', collateEnemy);
 // importCurve('enemies');
 
-// getUpperBodyImages(); // must be separate // cover1, cover2
+getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
