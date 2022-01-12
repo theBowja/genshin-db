@@ -84,7 +84,7 @@ function format(langs) {
 
 module.exports = {
 	LanguagesEnum: LanguagesEnum,
-	languages: languages,
+	languages: languages, // array of strings
 	languageCodes: languageCodes,
 	languageMap: languageMap,
 	localeMap: localeMap,

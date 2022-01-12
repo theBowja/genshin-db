@@ -1,4 +1,43 @@
 const all = require('./min/data.min.json');
+const pako = require('pako');
+
+if(all instanceof ArrayBuffer) {
+    all = JSON.parse(pako.ungzip(all, { to: 'string' }));
+}
+
+/**
+{
+  data: {
+    [Languages]: {
+      [folders]: ObjectMap
+    }
+  },
+  index: {
+    [Languages]: {
+      [folders]: ObjectMap
+    }
+  },
+  image: {
+    [folders]: ObjectMap
+  },
+  stats: {
+    [folders]: ObjectMap
+  },
+  curve: {
+    [folders]: ObjectMap
+  },
+  url: {
+    [folders]: ObjectMap
+  }
+}
+*/
+
+if(!all.data) all.data = {};
+if(!all.index) all.index = {};
+if(!all.image) all.image = {};
+if(!all.url) all.url = {};
+if(!all.stats) all.stats = {};
+if(!all.curve) all.curve = {};
 
 const alldata  = all.data;
 const allindex = all.index;
@@ -10,7 +49,7 @@ const allcurve = all.curve;
 const availableimage = ['characters', 'artifacts', 'weapons', 'constellations', 'talents', 'materials', 'foods', 'elements', 'domains', 'enemies'];
 const availableurl   = ['characters', 'artifacts', 'weapons', 'foods', 'materials'];
 const availablestats = ['characters', 'weapons', 'enemies'];
-const availablecurve = ['characters', 'weapons'];
+const availablecurve = ['characters', 'weapons', 'enemies'];
 
 const calcStatsMap = {
     'characters': calcStatsCharacter,
@@ -178,9 +217,166 @@ function setAttributesTalent(data, filename) {
     }
 }
 
+/* ======================================================================================= */
+
+function isObject(obj) {
+    return !!obj && typeof obj === 'object';
+}
+
+function dataExists(data, language, folder, filename) {
+    try {
+        if(language)
+            return data[language][folder][filename]
+        else
+            return data[folder][filename];
+    } catch {
+        return undefined;
+    }
+}
+
+function assignOverride(obj, keyPath, lastKey, value) {
+    for(const key of keyPath) {
+        if(!obj[key])
+            obj[key] = {}
+        obj = obj[key];
+    }
+    obj[lastKey] = value;
+}
+
+function assignArray(obj, keyPath, lastKey, array) {
+    array = array.filter(val => typeof val === 'string');
+    if(array.length === 0) return;
+
+    for(const key of keyPath) {
+        if(!obj[key])
+            obj[key] = {}
+        obj = obj[key];
+    }
+    if(!obj[lastKey]) return obj[lastKey] = array;
+    for(const value of array) {
+        if(typeof value !== 'string') continue;
+        if(!obj[lastKey].includes(value))
+            obj[lastKey].push(value);
+    }
+}
+
+const languagesArr = require('./language.js').languages;
+const foldersArr = Object.values(require('./folder.js'));
+function addData(newdata, override) {
+    if(!isObject(newdata)) return;
+    if(isObject(newdata.data)) {
+        for(const language of languagesArr) {
+            if(!isObject(newdata.data[language])) continue;
+            for(const folder of foldersArr) {
+                if(!isObject(newdata.data[language][folder])) continue;
+                for(const filename in newdata.data[language][folder]) {
+                    if(!isObject(newdata.data[language][folder][filename])) continue;
+                    if(!override && dataExists(alldata, language, folder, filename)) continue;
+                    assignOverride(alldata, [language, folder], filename, newdata.data[language][folder][filename]);
+                }
+            }
+        }
+    }
+    if(isObject(newdata.index)) {
+        for(const language of languagesArr) {
+            if(!isObject(newdata.index[language])) continue;
+            for(const folder of foldersArr) {
+                if(!isObject(newdata.index[language][folder])) continue;
+                for(const indexprop of ['namemap', 'names', 'aliases', 'categories', 'properties']) {
+                    if(!isObject(newdata.index[language][folder][indexprop])) continue;
+                    for(const filename in newdata.index[language][folder][indexprop]) {
+                        switch(indexprop) { // check if valid type (either string or array)
+                            case 'namemap':
+                            case 'names':
+                            case 'aliases':
+                                if(typeof newdata.index[language][folder][indexprop][filename] !== 'string') continue;
+                                assignOverride(allindex, [language, folder, indexprop], filename, newdata.index[language][folder][indexprop][filename]);
+                                break;
+
+                            case 'categories':
+                            case 'properties':
+                                if(!Array.isArray(newdata.index[language][folder][indexprop][filename])) continue;
+                                assignArray(allindex, [language, folder, indexprop], filename, newdata.index[language][folder][indexprop][filename]);
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if(isObject(newdata.image)) {
+        for(const folder of availableimage) {
+            if(!isObject(newdata.image[folder])) continue;
+            for(const filename in newdata.image[folder]) {
+                if(!isObject(newdata.image[folder][filename])) continue;
+                if(!override && dataExists(allimage, folder, filename)) continue;
+                assignOverride(allimage, [folder], filename, newdata.image[folder][filename]);
+            }
+        }
+    }
+    if(isObject(newdata.stats)) {
+        for(const folder of availablestats) {
+            if(!isObject(newdata.stats[folder])) continue;
+            for(const filename in newdata.stats[folder]) {
+                if(!isObject(newdata.stats[folder][filename])) continue;
+                if(!override && dataExists(allimage, folder, filename)) continue;
+                assignOverride(allstats, [folder], filename, newdata.stats[folder][filename]);
+            }
+        }
+    }
+    if(isObject(newdata.curve)) {
+        for(const folder of availablecurve) {
+            if(!isObject(newdata.curve[folder])) continue;
+            for(const filename in newdata.curve[folder]) {
+                if(!isObject(newdata.curve[folder][filename])) continue;
+                if(!override && dataExists(allimage, folder, filename)) continue;
+                assignOverride(allcurve, [folder], filename, newdata.curve[folder][filename]);
+            }
+        }
+    }
+    if(isObject(newdata.url)) {
+        for(const folder of availableurl) {
+            if(!isObject(newdata.url[folder])) continue;
+            for(const filename in newdata.url[folder]) {
+                if(!isObject(newdata.url[folder][filename])) continue;
+                if(!override && dataExists(allimage, folder, filename)) continue;
+                assignOverride(allurl, [folder], filename, newdata.url[folder][filename]);
+            }
+        }
+    }
+}
+
+// console.log(all);
+// // const test = require('./min/data.min.json');
+// const test = {
+//     index: {
+//         English: {
+//             characters: {
+//                 categories: {
+//                     lol: [true,'say' ]
+//                 }
+//             }
+//         }
+//     }
+// }
+// const test2 = {
+//     index: {
+//         English: {
+//             characters: {
+//                 categories: {
+//                     lol: [true,'asdf' ]
+//                 }
+//             }
+//         }
+//     }
+// }
+// addData(test, true);
+// addData(test2, true);
+// console.log(all.index.English.characters);
 
 
 module.exports = {
+    addData: addData,
     getData: getData,
     getIndex: getIndex,
     getImage: getImage,
