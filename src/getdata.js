@@ -1,4 +1,4 @@
-const all = require('./min/data.min.json');
+let all = require('./min/data.min.json');
 const pako = require('pako');
 
 if(all instanceof ArrayBuffer) {
@@ -262,12 +262,17 @@ function assignArray(obj, keyPath, lastKey, array) {
 
 const languagesArr = require('./language.js').languages;
 const foldersArr = Object.values(require('./folder.js'));
-function addData(newdata, override) {
+function addData(newdata, override = true) {
+    if(newdata instanceof ArrayBuffer) {
+        newdata = JSON.parse(pako.ungzip(newdata, { to: 'string' }));
+    }
+
     if(!isObject(newdata)) return;
     if(isObject(newdata.data)) {
         for(const language of languagesArr) {
             if(!isObject(newdata.data[language])) continue;
-            for(const folder of foldersArr) {
+            for(const folder of Object.keys(newdata.data[language])) {
+            // for(const folder of foldersArr) { // commented to allow addition of new folders
                 if(!isObject(newdata.data[language][folder])) continue;
                 for(const filename in newdata.data[language][folder]) {
                     if(!isObject(newdata.data[language][folder][filename])) continue;
@@ -280,7 +285,8 @@ function addData(newdata, override) {
     if(isObject(newdata.index)) {
         for(const language of languagesArr) {
             if(!isObject(newdata.index[language])) continue;
-            for(const folder of foldersArr) {
+            for(const folder of Object.keys(newdata.index[language])) {
+            // for(const folder of foldersArr) { // commented to allow addition of new folders
                 if(!isObject(newdata.index[language][folder])) continue;
                 for(const indexprop of ['namemap', 'names', 'aliases', 'categories', 'properties']) {
                     if(!isObject(newdata.index[language][folder][indexprop])) continue;
@@ -305,75 +311,54 @@ function addData(newdata, override) {
         }
     }
     if(isObject(newdata.image)) {
-        for(const folder of availableimage) {
+        for(const folder of Object.keys(newdata.image)) {
+        // for(const folder of availableimage) { // commented to allow addition of new folders
             if(!isObject(newdata.image[folder])) continue;
             for(const filename in newdata.image[folder]) {
                 if(!isObject(newdata.image[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allimage, [folder], filename, newdata.image[folder][filename]);
+                if(!availableimage.includes(folder)) availableimage.push(folder);
             }
         }
     }
     if(isObject(newdata.stats)) {
-        for(const folder of availablestats) {
+        for(const folder of Object.keys(newdata.stats)) {
+        // for(const folder of availablestats) { // commented to allow addition of new folders
             if(!isObject(newdata.stats[folder])) continue;
             for(const filename in newdata.stats[folder]) {
                 if(!isObject(newdata.stats[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allstats, [folder], filename, newdata.stats[folder][filename]);
+                if(!availablestats.includes(folder)) availablestats.push(folder);
             }
         }
     }
     if(isObject(newdata.curve)) {
-        for(const folder of availablecurve) {
+        for(const folder of Object.keys(newdata.curve)) {
+        // for(const folder of availablecurve) { // commented to allow addition of new folders
             if(!isObject(newdata.curve[folder])) continue;
             for(const filename in newdata.curve[folder]) {
                 if(!isObject(newdata.curve[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allcurve, [folder], filename, newdata.curve[folder][filename]);
+                if(!availablecurve.includes(folder)) availablecurve.push(folder);
             }
         }
     }
     if(isObject(newdata.url)) {
-        for(const folder of availableurl) {
+        for(const folder of Object.keys(newdata.url)) {
+        // for(const folder of availableurl) { // commented to allow addition of new folders
             if(!isObject(newdata.url[folder])) continue;
             for(const filename in newdata.url[folder]) {
                 if(!isObject(newdata.url[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allurl, [folder], filename, newdata.url[folder][filename]);
+                if(!availableurl.includes(folder)) availableurl.push(folder);
             }
         }
     }
 }
-
-// console.log(all);
-// // const test = require('./min/data.min.json');
-// const test = {
-//     index: {
-//         English: {
-//             characters: {
-//                 categories: {
-//                     lol: [true,'say' ]
-//                 }
-//             }
-//         }
-//     }
-// }
-// const test2 = {
-//     index: {
-//         English: {
-//             characters: {
-//                 categories: {
-//                     lol: [true,'asdf' ]
-//                 }
-//             }
-//         }
-//     }
-// }
-// addData(test, true);
-// addData(test2, true);
-// console.log(all.index.English.characters);
-
 
 module.exports = {
     addData: addData,

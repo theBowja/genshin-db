@@ -657,3 +657,7 @@ export function removeAltNames(language: Languages, folder: Folder, altname: str
 export function setAltNameLimits(limit: { maxLength?: number, maxCount?: number }): void;
 
 //#endregion
+
+// not sure how to add default true to "overwrite" param
+export function addData(data: ArrayBuffer | any, overwrite? : boolean): void;
+export function searchFolder(folder: string, query: string, opts?: QueryOptions): any
