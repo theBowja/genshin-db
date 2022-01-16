@@ -25,18 +25,15 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - run: echo "has-updated -- ${{ steps.package-json.outputs.has-updated }}"
-      - run: echo "brerhh -- ${{ steps.package-json.outputs.has-updated == true}}"
-      - run: echo "ommg -- ${{ steps.package-json.outputs.has-updated == false}}"
-      - run: echo "noway -- ${{ steps.package-json.outputs.has-updated == 'false'}}"
 
       - name: Do build
-        if: ${{ steps.package-json.outputs.has-updated }}
+        if: ${{ steps.package-json.outputs.has-updated == 'true'}}
         run: |
           npm ci
           npm run buildAllDist --if-present
 
       - name: Commit build
-        if: ${{ steps.package-json.outputs.has-updated }}
+        if: ${{ steps.package-json.outputs.has-updated == 'true'}}
         run: |
           git config --global user.name 'theBowja'
           git config --global user.email 'theBowja@users.noreply.github.com'
