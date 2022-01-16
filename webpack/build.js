@@ -16,9 +16,17 @@ More examples:
 Available language names can be found in src/language.js file
 */
 
-const execSync = require('child_process').execSync;
-const arg = process.argv.slice(2).join(' ');
+// this script should be called from the root directory.
+// node ./webpack/build.js
 
-execSync('node ./generate.js ' + arg, { cwd: 'src', stdio: [0, 1, 2] });
-// execSync('node ./examples.js', { stdio: [0, 1, 2] });
-execSync('npx webpack', { stdio:[0, 1, 2] });
+const execSync = require('child_process').execSync;
+const argsArr = process.argv.slice(2);
+let filename = '';
+
+for(const arg of argsArr) {
+  if(arg.startsWith('filename:'))
+    filename = arg.slice(arg.indexOf(':')+1);
+}
+
+execSync('node ./generate.js ' + argsArr.join(' '), { cwd: 'src', stdio: [0, 1, 2] });
+execSync(`npx webpack --config webpack/webpack.main.config.js --env filename=${filename}`, { stdio:[0, 1, 2] });

@@ -7,8 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generateindex": "cd src && node ./generate.js",
-    "assemble": "cd src && node ./generate.js && cd ../ && node ./examples.js",
-    "build": "node ./build.js"
+    "assemble": "cd src && node ./generate.js && cd ../ && node ./examples/examples.js",
+    "build": "node ./webpack/build.js",
+    "buildAllDist": "node ./webpack/buildAllDist.js"
   },
   "keywords": [
     "genshin-impact",
@@ -26,6 +27,7 @@
     "pako": "^2.0.4"
   },
   "devDependencies": {
+    "arraybuffer-loader": "^1.0.8",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0"
   },
@@ -39,6 +41,6 @@
     "src/main.js",
     "src/getdata.js",
     "src/Options.js",
-    "src/min/*"
+    "src/min/data.min.json"
   ]
 }
