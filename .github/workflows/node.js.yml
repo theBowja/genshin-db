@@ -1,0 +1,39 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ gzip ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: johnnybenson/package-json-versioned-action@v1.0.5
+
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: echo "has-updated -- ${{ steps.package-json.outputs.has-updated }}"
+
+      - name: Do build
+        if: steps.package-json.outputs.has-updated
+        run: |
+          npm ci
+          npm run buildAllDist --if-present
+
+      - name: Commit build
+        if: steps.package-json.outputs.has-updated
+        run: |
+          git config --global user.name 'theBowja'
+          git config --global user.email 'theBowja@users.noreply.github.com'
+          git commit -am "Automated build"
+          git push
