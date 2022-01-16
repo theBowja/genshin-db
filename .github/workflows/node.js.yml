@@ -27,13 +27,13 @@ jobs:
       - run: echo "has-updated -- ${{ steps.package-json.outputs.has-updated }}"
 
       - name: Do build
-        if: steps.package-json.outputs.has-updated
+        if: ${{ steps.package-json.outputs.has-updated }}
         run: |
           npm ci
           npm run buildAllDist --if-present
 
       - name: Commit build
-        if: steps.package-json.outputs.has-updated
+        if: ${{ steps.package-json.outputs.has-updated }}
         run: |
           git config --global user.name 'theBowja'
           git config --global user.email 'theBowja@users.noreply.github.com'
