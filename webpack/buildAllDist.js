@@ -41,6 +41,7 @@ fs.readdirSync('./dist/data/gzips').forEach(file => {
 // data loaders
 for(const outputpath of filenamelist) {
 	execSync(`npx webpack --config webpack/webpack.data.config.js --env basename=${getBaseFilename(outputpath)}`, { stdio:[0, 1, 2] });
+	console.log();
 }
 
 // main scripts
