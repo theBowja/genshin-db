@@ -4,7 +4,7 @@ const language = require('./language.js');
 const Folder = require('./folder.js');
 const altnames = require('./altnames.js');
 const Options = require('./Options.js');
-const { getData, getIndex } = require('./getdata.js');
+const { getData, getIndex, addData } = require('./getdata.js');
 
 // object that will be exported
 const genshin = {};
@@ -310,6 +310,18 @@ genshin.enemies = genshin.enemy = function (query, opts) {
 //     return data;
 // }
 
+/**
+ * Get data in any specified folder.
+ * @param {string} folder - Folder name. For example: 'characters'.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.searchFolder = function (folder, query, opts) {
+    if(typeof folder !== 'string') return undefined;
+    return retrieveData(query, folder, opts);
+}
+
+
 genshin.helper = require('./helper.js');
 
 genshin.Language = genshin.Languages = language.LanguagesEnum;
@@ -346,5 +358,7 @@ genshin.setAltNameLimits = altnames.setLimit;
 
 //Class Options will serve as a template for the library's options.
 genshin.Options = Options;
+
+genshin.addData = addData;
 
 module.exports = genshin;

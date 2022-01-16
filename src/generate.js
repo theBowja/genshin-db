@@ -8,33 +8,63 @@ const Folder = require('./folder.js');
 
 // if you ask me to explain the code i wrote below, i would reply i dunno
 
-let specificlanguages = language.format(process.argv.slice(2));
-if(specificlanguages) {
-	language.languages = specificlanguages;
-	console.log('specified languages: ' + specificlanguages.join(', '));
-}
+const pparams = process.argv.slice(2).filter(e => e !== 'all'); // example: node generate.js english characters
 
+let gzipfilename = undefined;
+let specificlanguages = [];
 let specificfolders = [];
-function isValidFolder(folder) { return typeof folder === 'string' && Folder[folder]; }
-for(f of process.argv.slice(2)) {
-	if(isValidFolder(f)) specificfolders.push(f);
-}
-if(specificfolders.length !== 0) {
-	design.folders = specificfolders;
-	console.log('specified folders: ' + specificfolders.join(', '));
-}
 
+// determine specified languages/folders
+if(pparams.includes('none')) {
+	console.log('specified: none');
+} else {
+	if(pparams.includes('alllanguages')) {
+		specificlanguages = language.languages;
+		console.log('specified languages: all');
+	} else {
+		specificlanguages = language.format(pparams) || [];
+		if(specificlanguages.length !== 0)
+			console.log('specified languages: ' + specificlanguages.join(', '));
+	}
 
+	function isValidFolder(folder) { return typeof folder === 'string' && Folder[folder]; }
+	let addAllFolders = false;
+	let addStandardFolders = false;
+	for(f of pparams) {
+		if(f === 'allfolders')
+			addAllFolders = true;
+		else if(f === 'standard')
+			addStandardFolders = true;
+		else if(isValidFolder(f))
+			specificfolders.push(f);
+		else if(f.startsWith('gzipfilename:'))
+			gzipfilename = f.substring(f.indexOf(':')+1);
+	}
+	let tmpfout = specificfolders.concat(addAllFolders ? ['all'] : []).concat(addStandardFolders ? ['standard'] : []);
+	if(tmpfout.length !== 0)
+		console.log(`specified folders: ${tmpfout.join(', ')}`);
+	if(addAllFolders)
+		specificfolders = specificfolders.concat(design.folders);
+	if(addStandardFolders)
+		specificfolders = specificfolders.concat(design.standard);
+	if(gzipfilename)
+		console.log('specified gzipfilename: ' + gzipfilename);
+
+	if(specificlanguages.length === 0) specificlanguages = language.languages; // default to all languages
+	if(specificfolders.length === 0) specificfolders = design.standard; // default to standard folders
+	specificlanguages = [...new Set(specificlanguages)]; // get unique
+	specificfolders = [... new Set(specificfolders)]; // get unique
+}
 
 makeIndices();
 combineData();
 
 function makeIndices() {
 
-	console.log('compiling index for data');
-	for(const lang of language.languages) {
+	console.log('compiling index for data:');
+	for(const lang of specificlanguages) {
 		let categories = require(`./data/${lang}/categories.json`);
-		for(const folder of design.folders) {
+		for(const folder of specificfolders) {
 			let index = {
 				namemap: {}, // maps filename to name
 				names: {}, // maps name to filename
@@ -122,18 +152,18 @@ function makeIndices() {
 				fs.writeFileSync(`./data/index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
 			}
 		}
-		console.log("done "+lang);
+		console.log("  done "+lang);
 	}
 }
 
 function combineData() {
-	console.log("minifying all data, index, image, stats, curve into one giant file");
+	console.log("combining and minifying data, index, image, stats, curve, url");
 	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {};
 
-	for(const lang of language.languages) {
+	for(const lang of specificlanguages) {
 		mydata[lang] = {};
 		myindex[lang] = {};
-		for(const folder of design.folders) {
+		for(const folder of specificfolders) {
 			if (!fs.existsSync(`./data/${lang}/${folder}`)) continue;
 			mydata[lang][folder] = {};
 			myindex[lang][folder] = require(`./data/index/${lang}/${folder}.json`);
@@ -146,7 +176,7 @@ function combineData() {
 			});
 		}
 	}
-	for(const folder of design.folders) {
+	for(const folder of specificfolders) {
 		if(fs.existsSync(`./data/image/${folder}.json`))
 			myimage[folder] = require(`./data/image/${folder}.json`);
 		if(fs.existsSync(`./data/stats/${folder}.json`))
@@ -166,6 +196,17 @@ function combineData() {
 		url: myurl
 	});
 
-	console.log(`uncompressed: ${Buffer.byteLength(all)/1000/1000}MB`);
-	fs.writeFileSync(`./min/data.min.json`, all);
+
+	const pako = require('pako');
+	let gzip = pako.gzip(all);
+	const uncompressedsize = Buffer.byteLength(all)/1000/1000;
+	const compressedsize = Buffer.byteLength(gzip)/1000/1000;
+	console.log(`compression: ${roundFour(compressedsize)}MB/${roundFour(uncompressedsize)}MB = ${roundFour(compressedsize/uncompressedsize*100)}%`)
+
+	fs.writeFileSync(gzipfilename ? gzipfilename : `./min/data.min.json.gzip`, gzip);
+	if(!gzipfilename) fs.writeFileSync(`./min/data.min.json`, all);
+}
+
+function roundFour(num) {
+	return Math.round((num + Number.EPSILON) * 10000) / 10000;
 }

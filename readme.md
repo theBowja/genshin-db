@@ -22,7 +22,7 @@ Start with:
 const genshindb = require('genshin-db');
 ```
 
-REFER TO [EXAMPLES.md](https://github.com/theBowja/genshin-db/blob/main/examples.md) since the readme below isn't detailed.
+REFER TO [EXAMPLES.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md) since the readme below isn't detailed.
 
 Every query input string will be **autocompleted** to match available values. This means doing something like genshin.characters('amb') will give the same results as genshin.characters('amber'). If there are no results, then **undefined** will be returned.
 
@@ -88,7 +88,7 @@ Returns the profile info for characters.
 Possible query inputs include: character names, character titles, constellation names, birthday months, elements, substats, weapon types, genders, regions, rarities, and 'name' for the list of all characters. The result also includes a function to calculate the stats of the character at each level.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbcharactersquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbcharactersquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.talents(query[, opts])
 
@@ -97,7 +97,7 @@ Returns the combat skills and passive skills for characters.
 Possible query inputs include: character names, upgrade materials.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbtalentsquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.constellations(query[, opts])
 
@@ -106,7 +106,7 @@ Returns the constellation information for characters.
 Possible query inputs include: character names.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbconstellationsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbconstellationsquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.weapons(query[, opts])
 
@@ -121,7 +121,7 @@ Possible inputs for query parameter are:
 The result also includes a function to calculate the stats of the weapon at each level.
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbweaponsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbweaponsquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.weaponmaterialtypes(query[, opts])
 
@@ -134,7 +134,7 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbweaponmaterialtypesquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbweaponmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.talentmaterialtypes(query[, opts])
 
@@ -147,7 +147,7 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbtalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbtalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.materials(query[, opts])
 
@@ -155,7 +155,7 @@ Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/example
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbmaterialsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbmaterialsquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.artifacts(query[, opts])
 
@@ -166,7 +166,7 @@ Possible inputs for query parameter are:
 - "names"
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbartifactsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbartifactsquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.foods(query[, opts])
 
@@ -180,7 +180,7 @@ Possible inputs for query parameter are:
 - all characters with specialty dishes
 
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbfoodsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbfoodsquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.domains(query[, opts])
 
@@ -192,7 +192,7 @@ Possible inputs for query parameter are:
 - recommended elements
 - days of week
 
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbdomainsquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbdomainsquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.enemies(query[, opts])
 
@@ -202,7 +202,7 @@ Possible inputs for query parameter are:
 - enemy type: "COMMON", "ELITE", "BOSS"
 - enemy category (found in in-game archive)
 
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples.md#genshindbenemiesquery-opts) to see example inputs and outputs for this function.
+Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbenemiesquery-opts) to see example inputs and outputs for this function.
 
 ### genshindb.elements(query[, opts])
 
