@@ -25,6 +25,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - run: echo "has-updated -- ${{ steps.package-json.outputs.has-updated }}"
+      - run: echo "brerhh -- ${{ steps.package-json.outputs.has-updated == true}}"
+      - run: echo "ommg -- ${{ steps.package-json.outputs.has-updated == false}}"
+      - run: echo "noway -- ${{ steps.package-json.outputs.has-updated == 'false'}}"
 
       - name: Do build
         if: ${{ steps.package-json.outputs.has-updated }}
