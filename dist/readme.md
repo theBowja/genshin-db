@@ -51,11 +51,7 @@ $.getScript('https://cdn.jsdelivr.net/gh/theBowja/genshin-db@main/dist/data/scri
 
 Just keep in mind not to call `getScript` for the same data script multiple times.
 
-An alternative is to use XMLHttpRequest to get the data gzips:
-
-```js
-
-```
+An alternative is to use XMLHttpRequest to get the data gzips, then manually add them via `GenshinDb.addData` method. However, you will probably get blocked by CORS so I won't write an example for this.
 
 ## Node
 

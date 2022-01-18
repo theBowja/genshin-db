@@ -36,6 +36,7 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [Query Functions](#query-functions)
 - [Adding Custom Names](#adding-custom-names)
 - [Contributing](#contributing)
+- [Distributions for Web/Node](#distributions-for-webnode)
 - [Typescript](#typescript)
 - [Webpack](#webpack)
 
@@ -290,7 +291,14 @@ characters("foobar", { matchCategories: true, verboseCategories: true }); // Cha
 
 Please write up an issue if something doesn't work.
 
+## Distributions for Web/Node
+
+If you don't want to use the npm package, then you can take a look at the prebuilt distributions that can be used easily from web or in your Node project. Read more about [it here](https://github.com/theBowja/genshin-db/tree/main/dist).
+
 ## Webpack
+
+If for some reason you want to customize genshin-db into your own webpack dist.
+
 First you'll need to clone this repo.
 
 If you want to build a webpack just do `npm run build` and it'll appear in the **dist/genshindb.js**. Then you can call all the query functions from above using genshindb as the variable. Or you can change the options in **webpack.config.js** to better fit how you want to use it.
