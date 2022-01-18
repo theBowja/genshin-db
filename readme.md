@@ -293,7 +293,7 @@ Please write up an issue if something doesn't work.
 
 ## Distributions for Web/Node
 
-If you don't want to use the npm package, then you can take a look at the prebuilt distributions that can be used easily from web or in your Node project. Read more about [it here](https://github.com/theBowja/genshin-db/tree/main/dist).
+If you don't want to use the npm package, then you can take a look at the prebuilt distributions that can be used easily from web or in your Node project. [Read the documentation about it here](https://github.com/theBowja/genshin-db/tree/main/dist).
 
 ## Webpack
 
