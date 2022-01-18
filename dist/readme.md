@@ -22,7 +22,7 @@ console.log(GenshinDb.characters('hu tao')); // logs undefined
 </script>
 ```
 
-Then you can pick and choose which data scripts to include. These data scripts will automatically add their data to the main script if it is in the browser.
+Then you can pick and [choose which data scripts](https://github.com/theBowja/genshin-db/tree/main/dist/data/scripts) to include. These data scripts will automatically add their data to the main script if it is in the browser.
 
 ```html
 <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/theBowja/genshin-db@main/dist/genshindb-none.js'></script>
