@@ -385,6 +385,15 @@ function collateEnemy(existing, newdata, lang) {
 	}
 }
 
+function collateAchievement(existing, newdata, lang) {
+	clearObject(existing);
+	const copyover = ['name', 'ps5name', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3'];
+	existing.name = newdata.name;
+	for(let prop of copyover) {
+		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+	}
+}
+
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
@@ -469,6 +478,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
 // importCurve('enemies');
+importData('achievements', collateAchievement);
 
-getUpperBodyImages(); // must be separate // cover1, cover2
+// getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
