@@ -19,5 +19,6 @@ module.exports = {
 	rarity         : 'rarity',
 	elements       : 'elements',
 
-	achievements   : 'achievements'
+	achievements   : 'achievements',
+	achievementgroups: 'achievementgroups'
 };

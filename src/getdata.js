@@ -38,18 +38,21 @@ if(!all.image) all.image = {};
 if(!all.url) all.url = {};
 if(!all.stats) all.stats = {};
 if(!all.curve) all.curve = {};
+if(!all.version) all.version = {};
 
-const alldata  = all.data;
-const allindex = all.index;
-const allimage = all.image;
-const allurl   = all.url;
-const allstats = all.stats;
-const allcurve = all.curve;
+const alldata    = all.data;
+const allindex   = all.index;
+const allimage   = all.image;
+const allurl     = all.url;
+const allstats   = all.stats;
+const allcurve   = all.curve;
+const allversion = all.version
 
-const availableimage = ['characters', 'artifacts', 'weapons', 'constellations', 'talents', 'materials', 'foods', 'elements', 'domains', 'enemies'];
-const availableurl   = ['characters', 'artifacts', 'weapons', 'foods', 'materials'];
-const availablestats = ['characters', 'weapons', 'enemies'];
-const availablecurve = ['characters', 'weapons', 'enemies'];
+const availableimage   = ['characters', 'artifacts', 'weapons', 'constellations', 'talents', 'materials', 'foods', 'elements', 'domains', 'enemies'];
+const availableurl     = ['characters', 'artifacts', 'weapons', 'foods', 'materials'];
+const availablestats   = ['characters', 'weapons', 'enemies'];
+const availablecurve   = ['characters', 'weapons', 'enemies'];
+// const availableversion = ['achievments']
 
 const calcStatsMap = {
     'characters': calcStatsCharacter,
@@ -72,6 +75,9 @@ function getData(lang, folder, filename) {
         if(folder === 'talents' && tmp.combat1.parameters === undefined) {
             setAttributesTalent(tmp, filename);
         }
+        if(tmp.version === undefined) {
+            tmp.version = getVersion(folder, filename);
+        }
         return tmp;
     } catch(e) { return undefined; }
 }
@@ -92,6 +98,12 @@ function getURL(folder, filename) {
     try {
         return allurl[folder][filename];
     } catch(e) { return undefined; }
+}
+
+function getVersion(folder,  filename) {
+    try {
+        return allversion[folder][filename];
+    } catch(e) { return ''; }
 }
 
 function getStats(folder, filename) {

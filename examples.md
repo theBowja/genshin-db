@@ -131,7 +131,8 @@ const genshindb = require('genshin-db');
     namesideicon: 'UI_AvatarIcon_Side_Ganyu'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Ganyu' },
-  stats: [Function (anonymous)]
+  stats: [Function (anonymous)],
+  version: ''
 }
 ```
 
@@ -271,7 +272,8 @@ const genshindb = require('genshin-db');
     namesideicon: 'UI_AvatarIcon_Side_Ambor'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
-  stats: [Function (anonymous)]
+  stats: [Function (anonymous)],
+  version: ''
 }
 ```
 
@@ -361,7 +363,8 @@ const genshindb = require('genshin-db');
     namesideicon: 'UI_AvatarIcon_Side_Ambor'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
-  stats: [Function (anonymous)]
+  stats: [Function (anonymous)],
+  version: ''
 }
 ```
 
@@ -451,7 +454,8 @@ const genshindb = require('genshin-db');
     namesideicon: 'UI_AvatarIcon_Side_Tartaglia'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Tartaglia' },
-  stats: [Function (anonymous)]
+  stats: [Function (anonymous)],
+  version: ''
 }
 ```
 
@@ -541,7 +545,8 @@ const genshindb = require('genshin-db');
     namesideicon: 'UI_AvatarIcon_Side_Venti'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Venti' },
-  stats: [Function (anonymous)]
+  stats: [Function (anonymous)],
+  version: ''
 }
 ```
 
@@ -1011,7 +1016,8 @@ const genshindb = require('genshin-db');
     passive1: 'UI_Talent_S_Ningguang_02',
     passive2: 'UI_Talent_S_Ningguang_06',
     passive3: 'UI_Talent_Collect_Ore'
-  }
+  },
+  version: ''
 }
 ```
 
@@ -1475,7 +1481,8 @@ const genshindb = require('genshin-db');
     c5: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_01.png',
     c6: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_04.png',
     constellation: 'Eff_UI_Talent_Ambor'
-  }
+  },
+  version: ''
 }
 ```
 
@@ -1535,7 +1542,8 @@ const genshindb = require('genshin-db');
     c6: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_04.png',
     constellation: 'Eff_UI_Talent_PlayerBoy_Rock',
     constellation2: 'Eff_UI_Talent_PlayerGirl_Rock'
-  }
+  },
+  version: ''
 }
 ```
 
@@ -1722,7 +1730,8 @@ const genshindb = require('genshin-db');
   url: {
     fandom: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
   },
-  stats: [Function (anonymous)]
+  stats: [Function (anonymous)],
+  version: ''
 }
 ```
 
@@ -1912,7 +1921,8 @@ const genshindb = require('genshin-db');
     fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/2/2f/Item_Guide_to_Ballad.png',
     nameicon: 'UI_ItemIcon_104308'
   },
-  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Guide_to_Ballad' }
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Guide_to_Ballad' },
+  version: ''
 }
 ```
 
@@ -2011,7 +2021,8 @@ const genshindb = require('genshin-db');
     fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png',
     nameicon: 'UI_ItemIcon_113005'
   },
-  url: { fandom: "https://genshin-impact.fandom.com/wiki/Dvalin's_Sigh" }
+  url: { fandom: "https://genshin-impact.fandom.com/wiki/Dvalin's_Sigh" },
+  version: ''
 }
 ```
 
@@ -2032,7 +2043,8 @@ const genshindb = require('genshin-db');
     fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Item_Iron_Chunk.png',
     nameicon: 'UI_ItemIcon_101001'
   },
-  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Iron_Chunk' }
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Iron_Chunk' },
+  version: ''
 }
 ```
 
@@ -2153,7 +2165,8 @@ const genshindb = require('genshin-db');
     goblet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_1.png',
     circlet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_3.png'
   },
-  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Pale_Flame' }
+  url: { fandom: 'https://genshin-impact.fandom.com/wiki/Pale_Flame' },
+  version: ''
 }
 ```
 
@@ -2232,7 +2245,8 @@ const genshindb = require('genshin-db');
   images: { nameicon: 'UI_ItemIcon_108123' },
   url: {
     fandom: "https://genshin-impact.fandom.com/wiki/Adeptus'_Temptation"
-  }
+  },
+  version: ''
 }
 ```
 
@@ -2331,7 +2345,8 @@ const genshindb = require('genshin-db');
   images: { nameicon: 'UI_ItemIcon_108058' },
   url: {
     fandom: 'https://genshin-impact.fandom.com/wiki/"Once_Upon_a_Time_in_Mondstadt"'
-  }
+  },
+  version: ''
 }
 ```
 
@@ -2365,7 +2380,8 @@ const genshindb = require('genshin-db');
     'Your character will be periodically inflicted with Smoldering Flames, causing you to take Pyro DMG until the inflicted Pyro element is removed.'
   ],
   monsterlist: [ 'Pyro Slime', 'Large Pyro Slime', 'Pyro Abyss Mage' ],
-  images: { namepic: 'UI_DungeonPic_Fire' }
+  images: { namepic: 'UI_DungeonPic_Fire' },
+  version: ''
 }
 ```
 
@@ -2561,7 +2577,8 @@ const genshindb = require('genshin-db');
     { name: 'Slime Concentrate', count: 0.0448 }
   ],
   images: { nameicon: 'UI_MonsterIcon_Slime_Electric_03' },
-  stats: [Function (anonymous)]
+  stats: [Function (anonymous)],
+  version: ''
 }
 ```
 
