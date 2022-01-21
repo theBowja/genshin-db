@@ -648,6 +648,35 @@ export interface Enemy {
 
 //#endregion
 
+//#region Achievements
+
+export interface Achievement {
+    name: string;
+    ps5name?: string;
+
+    achievementgroup: string;
+    ishidden?: true;
+    sortorder: number;
+    stages: number;
+    stage1: {
+        description: string;
+        progress: number;
+        reward: Rewards;
+    };
+    stage2?: {
+        description: string;
+        progress: number;
+        reward: Rewards;
+    };
+    stage3?: {
+        description: string;
+        progress: number;
+        reward: Rewards;
+    };
+}
+
+//#endregion
+
 //#region Altnames
 
 // export interface ;
