@@ -84,7 +84,7 @@ function makeIndices() {
 
 					if(index.namemap[filename] !== undefined) console.log(`Duplicate filename: ${lang}/${folder}: ${filename}`);
 					index.namemap[filename] = data.name;
-					if(index.names[data.name] !== undefined) console.log(`Duplicate name: ${lang}/${folder}: ${data.name}`);
+					if(index.names[data.name] !== undefined) console.log(`Duplicate name: ${lang}/${folder}: ${data.name} | ${filename}`);
 					index.names[data.name] = filename;
 
 					if(design.altnames[folder] !== undefined) {

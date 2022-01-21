@@ -17,5 +17,7 @@ module.exports = {
 	enemies        : 'enemies',
 
 	rarity         : 'rarity',
-	elements       : 'elements'
+	elements       : 'elements',
+
+	achievements   : 'achievements'
 };
