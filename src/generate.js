@@ -157,8 +157,8 @@ function makeIndices() {
 }
 
 function combineData() {
-	console.log("combining and minifying data, index, image, stats, curve, url");
-	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {};
+	console.log("combining and minifying data, index, image, stats, curve, url, version");
+	let mydata = {}, myindex = {}, myimage = {}, mystats = {}, mycurve = {}, myurl = {}, myversion = {};
 
 	for(const lang of specificlanguages) {
 		mydata[lang] = {};
@@ -185,6 +185,8 @@ function combineData() {
 			mycurve[folder] = require(`./data/curve/${folder}.json`);
 		if(fs.existsSync(`./data/url/${folder}.json`))
 			myurl[folder] = require(`./data/url/${folder}.json`);
+		if(fs.existsSync(`./data/version/${folder}.json`))
+			myversion[folder] = require(`./data/version/${folder}.json`);
 	}
 
 	let all = JSON.stringify({
@@ -193,7 +195,8 @@ function combineData() {
 		image: myimage,
 		stats: mystats,
 		curve: mycurve,
-		url: myurl
+		url: myurl,
+		version: myversion
 	});
 
 

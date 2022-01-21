@@ -387,10 +387,23 @@ function collateEnemy(existing, newdata, lang) {
 
 function collateAchievement(existing, newdata, lang) {
 	clearObject(existing);
-	const copyover = ['name', 'ps5name', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3'];
+	const copyover = ['name', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+	}
+}
+
+function collateAchievementGroup(existing, newdata, lang) {
+	clearObject(existing);
+	const copyover = ['name', 'sortorder', 'reward'];
+	existing.name = newdata.name;
+	for(let prop of copyover) {
+		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+	}
+	if(lang === 'English') {
+		newdata.images = {};
+		newdata.images.nameicon = newdata.nameicon;
 	}
 }
 
@@ -413,6 +426,20 @@ function applyPatch(folder, data, langC, filename) {
 	}
 }
 
+function updateVersions(filenames, folder) {
+	let existing = {};
+	let myversions = {};
+	try {
+		existing = require(`./src/data/version/${folder}.json`);
+	} catch(e) {}
+
+	for(const filename of filenames) {
+		myversions[filename] = existing[filename] || '';
+	}
+	if(JSON.stringify(existing) !== JSON.stringify(myversions))
+		fs.writeFileSync(`./src/data/version/${folder}.json`, JSON.stringify(myversions, null, '\t'));
+}
+
 function importData(folder, collateFunc, dontwrite, deleteexisting, skipimageredirect) {
 	language.languageCodes.forEach(async (langC) => {
 		if(dontwrite && langC !== 'EN') return; 
@@ -431,7 +458,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			fs.rmdirSync(`./src/data/${basepath}`, { recursive: true });
 		}
 
+		const filenamelist = [];
 		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
+			filenamelist.push(filename);
 			let existing = getJSON(`${basepath}/${filename}.json`);
 			if(existing === undefined) existing = {};
 			newdata.aliases = existing.aliases;
@@ -454,9 +483,19 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(existing, null, '\t'));
 		}
 
+		// remove unused files
+		fs.readdirSync(`./src/data/${language.languageMap[langC]}/${folder}`).forEach(file => {
+			if(!filenamelist.includes(file.substring(0, file.indexOf('.')))) {
+				try { fs.unlinkSync(`./src/data/${language.languageMap[langC]}/${folder}/${file}`); } catch(e) {}
+				console.log(`removed unused ${file}`);
+			}
+		})
+
 		if(langC === 'EN') {
 			fs.mkdirSync(`./src/data/image`, { recursive: true });
-			fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
+			if(!folder === 'achievements')
+				fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
+			updateVersions(filenamelist, folder);
 			if(['characters', 'weapons', 'talents', 'enemies'].includes(folder)) {
 				fs.mkdirSync(`./src/data/stats`, { recursive: true });
 				fs.writeFileSync(`./src/data/stats/${folder}.json`, JSON.stringify(mystats, null, '\t'));
@@ -478,7 +517,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
 // importCurve('enemies');
+
 importData('achievements', collateAchievement);
+importData('achievementgroups', collateAchievementGroup);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
