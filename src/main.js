@@ -28,8 +28,8 @@ function buildQueryDict(querylangs, folder, opts) {
     for (const lang of querylangs) {
         const index = getIndex(lang, folder);
         if (index === undefined) continue;
-        if (opts.matchNames && index.names)
-            dict = dict.concat(Object.keys(index.names));
+        if (opts.matchNames && index.namemap)
+            dict = dict.concat(Object.values(index.namemap));
         if (opts.matchAltNames)
             dict = dict.concat(altnames.getAltNamesList(lang, folder));
         if (opts.matchAliases && index.aliases)
@@ -108,7 +108,7 @@ function retrieveData(query, folder, opts, getfilename) {
             let reslangindex = getIndex(opts.resultLanguage, folder);
             if (reslangindex === undefined) return undefined;
 
-            let tmparr = (queryMatch === 'names') ? Object.values(reslangindex.names) : langindex.categories[queryMatch];
+            let tmparr = (queryMatch === 'names') ? Object.keys(reslangindex.namemap) : langindex.categories[queryMatch];
             // change the array of filenames into an array of data objects or data names. ignores undefined results if any
             let result = tmparr.reduce((accum, filename) => {
                 let res = opts.verboseCategories ? getData(opts.resultLanguage, folder, filename) : reslangindex.namemap[filename];
@@ -302,13 +302,15 @@ genshin.enemies = genshin.enemy = function (query, opts) {
     return retrieveData(query, Folder.enemies, opts);
 }
 
-// genshin.reactions = function(query, opts={}) {
-//     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
-
-//     const data = getJSON(`./${baselang}/reactions/${query}`);
-
-//     return data;
-// }
+/**
+ * Get data about an achievement
+ * @param {string} query - Achievement name, achievement group.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.achievements = genshin.achievement = function (query, opts) {
+    return retrieveData(query, Folder.achievements, opts);
+}
 
 /**
  * Get data in any specified folder.
