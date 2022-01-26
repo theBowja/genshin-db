@@ -493,7 +493,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 
 		if(langC === 'EN') {
 			fs.mkdirSync(`./src/data/image`, { recursive: true });
-			if(!folder === 'achievements')
+			if(folder !== 'achievements')
 				fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
 			updateVersions(filenamelist, folder);
 			if(['characters', 'weapons', 'talents', 'enemies'].includes(folder)) {
@@ -518,7 +518,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('enemies', collateEnemy);
 // importCurve('enemies');
 
-importData('achievements', collateAchievement);
+// importData('achievements', collateAchievement);
 importData('achievementgroups', collateAchievementGroup);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
