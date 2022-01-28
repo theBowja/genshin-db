@@ -48,8 +48,8 @@ const allstats   = all.stats;
 const allcurve   = all.curve;
 const allversion = all.version
 
-const availableimage   = ['characters', 'artifacts', 'weapons', 'constellations', 'talents', 'materials', 'foods', 'elements', 'domains', 'enemies'];
-const availableurl     = ['characters', 'artifacts', 'weapons', 'foods', 'materials'];
+const availableimage   = ['characters', 'outfits', 'artifacts', 'weapons', 'constellations', 'talents', 'materials', 'foods', 'elements', 'domains', 'enemies'];
+const availableurl     = ['characters', 'outfits', 'artifacts', 'weapons', 'foods', 'materials'];
 const availablestats   = ['characters', 'weapons', 'enemies'];
 const availablecurve   = ['characters', 'weapons', 'enemies'];
 // const availableversion = ['achievments']

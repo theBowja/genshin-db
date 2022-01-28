@@ -149,6 +149,13 @@ function updateURLs() {
 	}
 }
 
+function copyPropsIfExist(from, to, props, setdefault) {
+	for(let prop of props) {
+		if(from[prop] !== undefined) to[prop] = from[prop];
+		else to[prop] = setdefault;
+	}
+}
+
 function collateCharacter(existing, newdata, lang) {
 	newdata.aliases = existing.aliases;
 	newdata.images = {};
@@ -205,6 +212,17 @@ function collateCharacter(existing, newdata, lang) {
 	existing.costs = newdata.costs;
 	// existing.talentmaterialtype = newdata.talentmaterialtype || '';
 	existing.url = newdata.url;
+}
+
+function collateOutfit(existing, newdata, lang) {
+	clearObject(existing);
+	copyPropsIfExist(newdata, existing, ['name', 'description', 'isdefault', 'character', 'source']);
+	if(lang === 'English') {
+		newdata.images = {};
+		copyPropsIfExist(newdata, newdata.images, ['namecard', 'nameicon', 'namesplash', 'namesideicon']);
+		if(!newdata.url) newdata.url = {};
+		if(!newdata.url.modelviewer) newdata.url.modelviewer = '';
+	}
 }
 
 function collateConstellation(existing, newdata, lang) {
@@ -374,11 +392,7 @@ function collateDomain(existing, newdata, lang) {
 
 function collateEnemy(existing, newdata, lang) {
 	clearObject(existing);
-	const copyover = ['name', 'specialname', 'enemytype', 'category', 'description', 'investigation', 'rewardpreview'];
-	existing.name = newdata.name;
-	for(let prop of copyover) {
-		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
-	}
+	copyPropsIfExist(newdata, existing, ['name', 'specialname', 'enemytype', 'category', 'description', 'investigation', 'rewardpreview'])
 	if(lang === 'English') {
 		newdata.images = {};
 		if(newdata.imageicon) newdata.images.nameicon = newdata.imageicon;
@@ -387,20 +401,12 @@ function collateEnemy(existing, newdata, lang) {
 
 function collateAchievement(existing, newdata, lang) {
 	clearObject(existing);
-	const copyover = ['name', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3'];
-	existing.name = newdata.name;
-	for(let prop of copyover) {
-		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
-	}
+	copyPropsIfExist(newdata, existing, ['name', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3']);
 }
 
 function collateAchievementGroup(existing, newdata, lang) {
 	clearObject(existing);
-	const copyover = ['name', 'sortorder', 'reward'];
-	existing.name = newdata.name;
-	for(let prop of copyover) {
-		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
-	}
+	copyPropsIfExist(newdata, existing, ['name', 'sortorder', 'reward']);
 	if(lang === 'English') {
 		newdata.images = {};
 		newdata.images.nameicon = newdata.nameicon;
@@ -429,15 +435,30 @@ function applyPatch(folder, data, langC, filename) {
 function updateVersions(filenames, folder) {
 	let existing = {};
 	let myversions = {};
-	try {
-		existing = require(`./src/data/version/${folder}.json`);
-	} catch(e) {}
+	try { existing = require(`./src/data/version/${folder}.json`); } catch(e) {}
 
 	for(const filename of filenames) {
-		myversions[filename] = existing[filename] || '';
+		myversions[filename] = existing[filename] ? JSON.parse(JSON.stringify(existing[filename])) : '';
 	}
 	if(JSON.stringify(existing) !== JSON.stringify(myversions))
 		fs.writeFileSync(`./src/data/version/${folder}.json`, JSON.stringify(myversions, null, '\t'));
+}
+
+function addURLsEmpty(filenames, folder, props) {
+	if(fs.existsSync(`./src/data/English/${folder}`)) {
+		let existing = {}
+		let myurls = {};
+		try { existing = require(`./src/data/url/${folder}.json`); } catch(e) {};
+
+		for(const filename of filenames) {
+			myurls[filename] = existing[filename] ? JSON.parse(JSON.stringify(existing[filename])) : '';
+			copyPropsIfExist(existing[filename], myurls[filename], props, '')
+		}
+		if(JSON.stringify(existing) !== JSON.stringify(myurls)) {
+	 		fs.mkdirSync(`./src/data/url`, { recursive: true });
+	 		fs.writeFileSync(`./src/data/url/${folder}.json`, JSON.stringify(myurls, null, '\t'));
+	 	}
+	}
 }
 
 function importData(folder, collateFunc, dontwrite, deleteexisting, skipimageredirect) {
@@ -496,6 +517,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			if(folder !== 'achievements')
 				fs.writeFileSync(`./src/data/image/${folder}.json`, JSON.stringify(myimages, null, '\t'));
 			updateVersions(filenamelist, folder);
+			if(folder === 'outfits')
+				addURLsEmpty(filenamelist, folder, ['modelviewer']);
 			if(['characters', 'weapons', 'talents', 'enemies'].includes(folder)) {
 				fs.mkdirSync(`./src/data/stats`, { recursive: true });
 				fs.writeFileSync(`./src/data/stats/${folder}.json`, JSON.stringify(mystats, null, '\t'));
@@ -505,8 +528,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 
-// importData('characters', collateCharacter);
+importData('characters', collateCharacter);
 // importCurve('characters');
+// importData('outfits', collateOutfit);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
@@ -519,7 +543,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importCurve('enemies');
 
 // importData('achievements', collateAchievement);
-importData('achievementgroups', collateAchievementGroup);
+// importData('achievementgroups', collateAchievementGroup);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
