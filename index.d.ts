@@ -266,6 +266,28 @@ export interface Character {
 
 //#endregion
 
+//#region Outfit
+
+export interface Outfit {
+    name: string;
+    description: string;
+    isdefault: boolean;
+    character: string;
+    source?: string[];
+
+    images: {
+        namecard: string;
+        nameicon?: string;
+        namesideicon?: string;
+        namesplash?: string;
+    };
+    url: {
+        modelviewer?: string;
+    }
+}
+
+//#endregion
+
 //#region Constellation
 
 export interface Constellation {

@@ -2,6 +2,7 @@
 // not really used internally. mainly for altnames api
 module.exports = {
 	characters     : 'characters',
+	outfits        : 'outfits',
 	talents        : 'talents',
 	constellations : 'constellations',
 	

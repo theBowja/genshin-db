@@ -181,6 +181,16 @@ genshin.characters = genshin.character = function (query, opts) {
 }
 
 /**
+ * Get outfit's information.
+ * @param {string} query - The name of the outfit, or character name, elements, birthday months [, ...] see [possible query inputs for character(s) method](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts) 
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.outfits = genshin.outfit = function (query, opts) {
+    return retrieveData(query, Folder.outfits, opts);
+}
+
+/**
  * Get the data about talent(s) for character(s).
  * @param {string} query - character name or upgrade material.
  * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
