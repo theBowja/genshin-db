@@ -123,6 +123,7 @@ export enum Folder {
 
 export const artifacts: QueryFunction<Artifact>;
 export const characters: QueryFunction<Character>;
+export const outfits: QueryFunction<Outfit>;
 export const constellations: QueryFunction<Constellation>;
 export const elements: QueryFunction<Element>;
 export const rarity: QueryFunction<Rarity>;
@@ -134,6 +135,8 @@ export const weapons: QueryFunction<Weapon>;
 export const materials: QueryFunction<Material>;
 export const domains: QueryFunction<Domain>;
 export const enemies: QueryFunction<Enemy>;
+export const achievements: QueryFunction<Achievement>;
+export const achievementgroups: QueryFunction<AchievementGroup>;
 
 export interface categories {
     (query: string, folder: Folder, opts: QueryOptions): undefined | string[];
@@ -161,7 +164,8 @@ export interface Artifact {
     };
     url: {
         fandom: string;
-    }; 
+    };
+    version: string;
 }
 
 // UNUSED. FOR REFERENCE ONLY.
@@ -262,6 +266,7 @@ export interface Character {
         fandom: string;
     };
     stats: StatFunction;
+    version: string;
 }
 
 //#endregion
@@ -283,7 +288,8 @@ export interface Outfit {
     };
     url: {
         modelviewer?: string;
-    }
+    };
+    version: string;
 }
 
 //#endregion
@@ -308,6 +314,7 @@ export interface Constellation {
         c5: string;
         c6: string;
     };
+    version: string;
 }
 
 export interface ConstellationDetail {
@@ -374,6 +381,7 @@ export interface Food {
     url: {
         fandom: string;
     };
+    version: string;
 }
 
 // UNUSED. FOR REFERENCE ONLY.
@@ -468,6 +476,7 @@ export interface Talent {
         passive2: string;
         passive3?: string; // player character doesn't have a third talent
     };
+    version: string;
 }
 
 export interface CombatTalentDetail {
@@ -547,6 +556,7 @@ export interface Weapon {
         fandom: string;
     };
     stats: StatFunction;
+    version: string;
 }
 
 //#endregion
