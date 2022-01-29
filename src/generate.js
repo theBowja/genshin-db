@@ -92,7 +92,7 @@ function makeIndices() {
 
 					if(design.altnames[folder] !== undefined) {
 						for(let altname of design.altnames[folder]) { // add all the altnames to the index
-							let values = data[altname];
+							let values = getNestedValue(data, altname.split('.'));
 							if(values === undefined || values === "") continue;
 							if(!Array.isArray(values))
 								values = [values];
@@ -156,6 +156,16 @@ function makeIndices() {
 			}
 		}
 		console.log("  done "+lang);
+	}
+}
+
+function getNestedValue(data, props) {
+	try {
+		return props.reduce((res, prop) => {
+			return res[prop];
+		}, data);
+	} catch(e) {
+		return undefined;
 	}
 }
 
