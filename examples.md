@@ -132,7 +132,7 @@ const genshindb = require('genshin-db');
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Ganyu' },
   stats: [Function (anonymous)],
-  version: ''
+  version: '1.2'
 }
 ```
 
@@ -273,7 +273,7 @@ const genshindb = require('genshin-db');
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)],
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -364,7 +364,7 @@ const genshindb = require('genshin-db');
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)],
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -455,7 +455,7 @@ const genshindb = require('genshin-db');
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Tartaglia' },
   stats: [Function (anonymous)],
-  version: ''
+  version: '1.1'
 }
 ```
 
@@ -546,7 +546,7 @@ const genshindb = require('genshin-db');
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Venti' },
   stats: [Function (anonymous)],
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -1017,7 +1017,7 @@ const genshindb = require('genshin-db');
     passive2: 'UI_Talent_S_Ningguang_06',
     passive3: 'UI_Talent_Collect_Ore'
   },
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -1482,7 +1482,7 @@ const genshindb = require('genshin-db');
     c6: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_04.png',
     constellation: 'Eff_UI_Talent_Ambor'
   },
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -1543,7 +1543,7 @@ const genshindb = require('genshin-db');
     constellation: 'Eff_UI_Talent_PlayerBoy_Rock',
     constellation2: 'Eff_UI_Talent_PlayerGirl_Rock'
   },
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -1558,7 +1558,6 @@ const genshindb = require('genshin-db');
 [
   'Akuoumaru',
   'Alley Hunter',
-  'Amber Bead',
   'Amenoma Kageuchi',
   "Amos' Bow",
   "Apprentice's Notes",
@@ -1583,7 +1582,6 @@ const genshindb = require('genshin-db');
   "Dragon's Bane",
   'Dragonspine Spear',
   'Dull Blade',
-  'Ebony Bow',
   'Elegy for the End',
   'Emerald Orb',
   'Engulfing Lightning',
@@ -1632,7 +1630,6 @@ const genshindb = require('genshin-db');
   'Prototype Crescent',
   'Prototype Rancour',
   'Prototype Starglitter',
-  'Quartz',
   'Rainslasher',
   'Raven Bow',
   'Recurve Bow',
@@ -1656,7 +1653,10 @@ const genshindb = require('genshin-db');
   'Skyward Atlas',
   'Skyward Blade',
   'Skyward Harp',
-  ... 32 more items
+  'Skyward Pride',
+  'Skyward Spine',
+  'Slingshot',
+  ... 28 more items
 ]
 ```
 
@@ -1731,7 +1731,7 @@ const genshindb = require('genshin-db');
     fandom: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
   },
   stats: [Function (anonymous)],
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -2166,7 +2166,7 @@ const genshindb = require('genshin-db');
     circlet: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_RelicIcon_15018_3.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Pale_Flame' },
-  version: ''
+  version: '1.5'
 }
 ```
 
@@ -2246,7 +2246,7 @@ const genshindb = require('genshin-db');
   url: {
     fandom: "https://genshin-impact.fandom.com/wiki/Adeptus'_Temptation"
   },
-  version: ''
+  version: '1.0'
 }
 ```
 
@@ -2346,7 +2346,7 @@ const genshindb = require('genshin-db');
   url: {
     fandom: 'https://genshin-impact.fandom.com/wiki/"Once_Upon_a_Time_in_Mondstadt"'
   },
-  version: ''
+  version: '1.0'
 }
 ```
 
