@@ -23,5 +23,6 @@ module.exports = {
 	achievements   : 'achievements',
 	achievementgroups: 'achievementgroups',
 
-	windgliders    : 'windgliders'
+	windgliders    : 'windgliders',
+	animals        : 'animals'
 };
