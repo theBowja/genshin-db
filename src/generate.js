@@ -112,6 +112,7 @@ function makeIndices() {
 						let values = data[prop];
 						if(values === undefined || values === "" ) continue; // go next if our data doesn't have that category as a property
 						if(prop === "costs") values = [...new Set(Object.values(values).flat().map(ele => ele.name))];
+						if(prop === "rewardpreview") values = [...new Set(values.map(ele => ele.name))];
 						if(!Array.isArray(values)) values = [values]; // make into array
 
 						for(let val of values) {
