@@ -21,5 +21,7 @@ module.exports = {
 	elements       : 'elements',
 
 	achievements   : 'achievements',
-	achievementgroups: 'achievementgroups'
+	achievementgroups: 'achievementgroups',
+
+	windgliders    : 'windgliders'
 };
