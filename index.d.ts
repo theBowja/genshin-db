@@ -727,6 +727,20 @@ export interface AchievementGroup {
 
 //#endregion
 
+export interface WindGlider {
+    name: string;
+    description: string;
+    rarity: string;
+    sortorder: number;
+    ishidden?: true;
+    source: string[];
+    
+    images: {
+        nameicon: string;
+        namegacha: string;
+    }
+}
+
 //#region Altnames
 
 // export interface ;

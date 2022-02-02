@@ -449,6 +449,17 @@ function collateAchievementGroup(existing, newdata, lang) {
 	}
 }
 
+function collateWindGlider(existing, newdata, lang) {
+	clearObject(existing);
+	copyPropsIfExist(newdata, existing, ['name', 'description', 'rarity', 'sortorder', 'ishidden', 'source']);
+	if(lang === 'English') {
+		newdata.images = {};
+		// copyPropsIfExist(newdata.images, newdata, ['nameicon', 'namegacha']);
+		newdata.images.nameicon = newdata.nameicon;
+		newdata.images.namegacha = newdata.namegacha;
+	}
+}
+
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
@@ -495,8 +506,12 @@ function addURLsEmpty(filenames, folder, props) {
 }
 
 function writeFileIfDifferent(path, data) {
+	// console.log(path)
+	// console.log(data);
 	let existing = {};
 	try { existing = require(path); } catch {};
+	// console.log(existing)
+
 	if(JSON.stringify(existing) !== JSON.stringify(data)) {
 		if(path.lastIndexOf('/') !== -1)
 			fs.mkdirSync(path.substring(0, path.lastIndexOf('/')), { recursive: true });
@@ -508,12 +523,12 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	language.languageCodes.forEach(async (langC) => {
 		if(dontwrite && langC !== 'EN') return; 
 		// if(langC !== 'EN') return;
-		let newaggregateddata = require(`./import/${langC}/${folder}.json`);
+		let newaggregateddata = JSON.parse(JSON.stringify(require(`./import/${langC}/${folder}.json`)));
 		let myimages = {}; // only do this once
 		let mystats = {}; // only do this once
 		if(langC === 'EN') {
 			try {
-				myimages = require(`./src/data/image/${folder}.json`)
+				myimages = JSON.parse(JSON.stringify(require(`./src/data/image/${folder}.json`)));
 			} catch(e) {}
 		}
 
@@ -585,8 +600,9 @@ gameVersion = ""; // new data will use this as added version
 
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
+// importData('windgliders', collateWindGlider);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
 
-// stealWikiaVersion('foods');
+// stealWikiaVersion('windgliders');
