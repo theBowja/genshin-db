@@ -454,9 +454,17 @@ function collateWindGlider(existing, newdata, lang) {
 	copyPropsIfExist(newdata, existing, ['name', 'description', 'rarity', 'sortorder', 'ishidden', 'source']);
 	if(lang === 'English') {
 		newdata.images = {};
-		// copyPropsIfExist(newdata.images, newdata, ['nameicon', 'namegacha']);
 		newdata.images.nameicon = newdata.nameicon;
 		newdata.images.namegacha = newdata.namegacha;
+	}
+}
+
+function collateAnimal(existing, newdata, lang) {
+	clearObject(existing);
+	copyPropsIfExist(newdata, existing, ['name', 'description', 'category', 'capturable', 'sortorder']);
+	if(lang === 'English') {
+		newdata.images = {};
+		newdata.images.nameicon = newdata.nameicon;
 	}
 }
 
@@ -506,12 +514,8 @@ function addURLsEmpty(filenames, folder, props) {
 }
 
 function writeFileIfDifferent(path, data) {
-	// console.log(path)
-	// console.log(data);
 	let existing = {};
 	try { existing = require(path); } catch {};
-	// console.log(existing)
-
 	if(JSON.stringify(existing) !== JSON.stringify(data)) {
 		if(path.lastIndexOf('/') !== -1)
 			fs.mkdirSync(path.substring(0, path.lastIndexOf('/')), { recursive: true });
@@ -601,8 +605,9 @@ gameVersion = ""; // new data will use this as added version
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
 // importData('windgliders', collateWindGlider);
+importData('animals', collateAnimal);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
 
-// stealWikiaVersion('windgliders');
+// stealWikiaVersion('animals');

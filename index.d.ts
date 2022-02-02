@@ -738,7 +738,23 @@ export interface WindGlider {
     images: {
         nameicon: string;
         namegacha: string;
-    }
+    };
+
+    version: string;
+}
+
+export interface Animal {
+    name: string;
+    description: string;
+    category: string;
+    capturable?: true;
+    sortorder: number;
+    
+    images: {
+        nameicon: string;
+    };
+
+    version: string;
 }
 
 //#region Altnames
