@@ -187,7 +187,7 @@ function updateURLs() {
 
 function copyPropsIfExist(from, to, props, setdefault) {
 	for(let prop of props) {
-		if(from[prop] !== undefined) to[prop] = from[prop];
+		if(from && from[prop] !== undefined) to[prop] = from[prop];
 		else to[prop] = setdefault;
 	}
 }
@@ -506,7 +506,8 @@ function addURLsEmpty(filenames, folder, props) {
 		try { existing = require(`./src/data/url/${folder}.json`); } catch(e) {};
 
 		for(const filename of filenames) {
-			myurls[filename] = existing[filename] ? JSON.parse(JSON.stringify(existing[filename])) : '';
+			myurls[filename] = existing[filename] ? JSON.parse(JSON.stringify(existing[filename])) : {};
+
 			copyPropsIfExist(existing[filename], myurls[filename], props, '')
 		}
 		writeFileIfDifferent(`./src/data/url/${folder}.json`, myurls);
@@ -604,7 +605,7 @@ gameVersion = ""; // new data will use this as added version
 
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
-// importData('windgliders', collateWindGlider);
+importData('windgliders', collateWindGlider);
 importData('animals', collateAnimal);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
