@@ -64,6 +64,17 @@ export interface StatResult {
     specialized?: number;
 }
 
+export interface EnemyStatFunction {
+    (level: number): EnemyStatResult;
+}
+
+export interface EnemyStatResult {
+    level: number;
+    hp: number;
+    attack: number;
+    defense: number;
+}
+
 //<MatchCategories extends boolean | undefined, Verbose extends boolean | undefined>
 export interface QueryOptions {
     dumpResult?: boolean;
@@ -637,7 +648,7 @@ export interface Rewards {
     name: string;
     rarity?: string; // only used for artifacts
     count?: number; // only used for adventure exp, mora, and companionship exp
-    // range?: string // used for enhancement ore which can be shown as "0~1"
+    countmax?: number; // upper range. used for enhancement ore which can be shown as "0~1"
 }
 
 //#endregion
@@ -675,7 +686,7 @@ export interface Enemy {
     images: {
         nameicon: string;
     };
-    // stats: StatFunction; TODO
+    stats: EnemyStatFunction;
 }
 
 //#endregion
