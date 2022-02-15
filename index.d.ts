@@ -768,6 +768,14 @@ export interface Animal {
     version: string;
 }
 
+export interface Commission {
+    name: string;
+    description: string;
+    target: string;
+    city: string;
+}
+
+
 //#region Altnames
 
 // export interface ;

@@ -40,8 +40,8 @@ const genshindb = require('genshin-db');
   'Sayu',      'Shenhe',         'Sucrose',
   'Tartaglia', 'Thoma',          'Venti',
   'Xiangling', 'Xiao',           'Xingqiu',
-  'Xinyan',    'Yanfei',         'Yoimiya',
-  'Yun Jin',   'Zhongli'
+  'Xinyan',    'Yae Miko',       'Yanfei',
+  'Yoimiya',   'Yun Jin',        'Zhongli'
 ]
 ```
 
@@ -71,7 +71,7 @@ const genshindb = require('genshin-db');
     english: 'Jennifer Losi',
     chinese: '林簌',
     japanese: '上田麗奈',
-    korean: '김선혜'
+    korean: 'Kim Seon-hye'
   },
   costs: {
     ascend1: [
@@ -121,8 +121,8 @@ const genshindb = require('genshin-db');
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Ganyu_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png',
-    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519275372324.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20210105/2021010519280045054.png',
+    cover1: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20210105/2021010519275372324.png',
+    cover2: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20210105/2021010519280045054.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/4af4adf192a35db2dd76d9718acc7bc8.png',
     nameicon: 'UI_AvatarIcon_Ganyu',
     nameiconcard: 'UI_AvatarIcon_Ganyu_Card',
@@ -262,8 +262,8 @@ const genshindb = require('genshin-db');
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
-    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
+    cover1: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20191009/2019100914372396510.png',
+    cover2: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20191009/2019100914390892929.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png',
     nameicon: 'UI_AvatarIcon_Ambor',
     nameiconcard: 'UI_AvatarIcon_Ambor_Card',
@@ -303,7 +303,7 @@ const genshindb = require('genshin-db');
     english: 'Kelly Baskin',
     chinese: '蔡书瑾',
     japanese: '石見舞菜香',
-    korean: '김연우'
+    korean: 'Kim Yeon-woo'
   },
   costs: {
     ascend1: [
@@ -353,8 +353,8 @@ const genshindb = require('genshin-db');
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
-    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914372396510.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191009/2019100914390892929.png',
+    cover1: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20191009/2019100914372396510.png',
+    cover2: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20191009/2019100914390892929.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/b7c1e4d14fdaac060eb86e3ad09bbf78.png',
     nameicon: 'UI_AvatarIcon_Ambor',
     nameiconcard: 'UI_AvatarIcon_Ambor_Card',
@@ -394,7 +394,7 @@ const genshindb = require('genshin-db');
     english: 'Griffin Burns',
     chinese: '鱼冻',
     japanese: '木村良平',
-    korean: '남도형'
+    korean: 'Nam Do-hyeong'
   },
   costs: {
     ascend1: [
@@ -444,8 +444,8 @@ const genshindb = require('genshin-db');
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Character_Tartaglia_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Tartaglia.png',
-    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321160453386.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20201103/2020110321234137061.png',
+    cover1: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20201103/2020110321160453386.png',
+    cover2: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20201103/2020110321234137061.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/34ebaeb164a8b447dbe52afaae3e1f63.png',
     nameicon: 'UI_AvatarIcon_Tartaglia',
     nameiconcard: 'UI_AvatarIcon_Tartaglia_Card',
@@ -485,7 +485,7 @@ const genshindb = require('genshin-db');
     english: 'Erika Harlacher',
     chinese: '喵酱',
     japanese: '村瀬歩',
-    korean: '정유정'
+    korean: 'Jung Yoo-jung'
   },
   costs: {
     ascend1: [
@@ -535,8 +535,8 @@ const genshindb = require('genshin-db');
     portrait: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png',
     icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png',
     sideicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png',
-    cover1: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112210305833310.png',
-    cover2: 'https://uploadstatic-sea.mihoyo.com/contentweb/20191122/2019112211143037621.png',
+    cover1: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20191122/2019112210305833310.png',
+    cover2: 'https://uploadstatic-sea.hoyoverse.com/contentweb/20191122/2019112211143037621.png',
     'hoyolab-avatar': 'https://img-os-static.hoyolab.com/communityWeb/upload/f42e16fca94650e2e932c093de92ae54.png',
     nameicon: 'UI_AvatarIcon_Venti',
     nameiconcard: 'UI_AvatarIcon_Venti_Card',
@@ -732,8 +732,9 @@ const genshindb = require('genshin-db');
   'Sucrose',            'Tartaglia',          'Thoma',
   'Traveler (Anemo)',   'Traveler (Electro)', 'Traveler (Geo)',
   'Venti',              'Xiangling',          'Xiao',
-  'Xingqiu',            'Xinyan',             'Yanfei',
-  'Yoimiya',            'Yun Jin',            'Zhongli'
+  'Xingqiu',            'Xinyan',             'Yae Miko',
+  'Yanfei',             'Yoimiya',            'Yun Jin',
+  'Zhongli'
 ]
 ```
 
@@ -1604,6 +1605,7 @@ const genshindb = require('genshin-db');
   "Hunter's Bow",
   'Iron Point',
   'Iron Sting',
+  "Kagura's Verity",
   'Katsuragikiri Nagamasa',
   'Kitain Cross Spear',
   "Lion's Roar",
@@ -1618,6 +1620,7 @@ const genshindb = require('genshin-db');
   'Mistsplitter Reforged',
   'Mitternachts Waltz',
   "Mouun's Moon",
+  'Oathsworn Eye',
   "Old Merc's Pal",
   'Otherworldly Story',
   'Pocket Grimoire',
@@ -1654,9 +1657,7 @@ const genshindb = require('genshin-db');
   'Skyward Blade',
   'Skyward Harp',
   'Skyward Pride',
-  'Skyward Spine',
-  'Slingshot',
-  ... 28 more items
+  ... 30 more items
 ]
 ```
 
@@ -1909,7 +1910,7 @@ const genshindb = require('genshin-db');
   description: 'Talent Level-Up material.\n' +
     'Poetry is the soul of the land of the wind.\n' +
     'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
-  sortorder: 1458,
+  sortorder: 794,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Talent Level-Up Material',
@@ -2011,7 +2012,7 @@ const genshindb = require('genshin-db');
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
     'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
     'His enemies are the thousands who stand against the wind.',
-  sortorder: 2010,
+  sortorder: 2040,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -2034,7 +2035,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
-  sortorder: 1050,
+  sortorder: 1440,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
@@ -2600,6 +2601,7 @@ const genshindb = require('genshin-db');
   'Hydro Hypostasis',
   'La Signora',
   'Lupus Boreas, Dominator of Wolves',
+  'Magatsu Mitake Narukami no Mikoto',
   'Maguu Kenki',
   'Oceanid',
   'Perpetual Mechanical Array',
