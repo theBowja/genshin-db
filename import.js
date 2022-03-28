@@ -390,8 +390,8 @@ function collateFood(existing, newdata, lang) {
 }
 
 async function collateMaterial(existing, newdata, lang, skipimageredirect) {
-	if(existing.dropdomain && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
-	if(existing.daysofweek && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
+	if(existing.dropdomain && existing.dropdomain !== "" && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
+	if(existing.daysofweek && existing.daysofweek.length !== 0 && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
 	const copyover = ['name', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
 	                  'daysofweek', 'source'];
@@ -468,6 +468,26 @@ function collateAnimal(existing, newdata, lang) {
 	}
 }
 
+function collateNamecard(existing, newdata, lang) {
+	clearObject(existing);
+	copyPropsIfExist(newdata, existing, ['name', 'description', 'sortorder', 'source']);
+	if(lang === 'English') {
+		newdata.images = {};
+		newdata.images.nameicon = newdata.nameicon;
+		newdata.images.namebanner = newdata.namebanner;
+		newdata.images.namebackground = newdata.namebackground;
+	}
+}
+
+function collateGeography(existing, newdata, lang) {
+	clearObject(existing);
+	copyPropsIfExist(newdata, existing, ['name', 'area', 'description', 'region', 'hiddenactive', 'sortorder']);
+	if(lang === 'English') {
+		newdata.images = {};
+		newdata.images.nameimage = newdata.nameimage;
+	}
+}
+
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
@@ -494,7 +514,7 @@ function updateVersions(filenames, folder) {
 	try { existing = require(`./src/data/version/${folder}.json`); } catch(e) {}
 
 	for(const filename of filenames) {
-		myversions[filename] = existing[filename] ? JSON.parse(JSON.stringify(existing[filename])) : gameVersion;
+		myversions[filename] = existing[filename] || existing[filename] === "" ? JSON.parse(JSON.stringify(existing[filename])) : gameVersion;
 	}
 	writeFileIfDifferent(`./src/data/version/${folder}.json`, myversions);
 }
@@ -591,22 +611,25 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 gameVersion = ""; // new data will use this as added version
 // importData('characters', collateCharacter);
 // importCurve('characters');
-// importData('outfits', collateOutfit);
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods', collateFood);
-// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first
+// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains', collateDomain);
-// importData('enemies', collateEnemy);
+importData('enemies', collateEnemy);
 // importCurve('enemies');
 
+// importData('outfits', collateOutfit);
+// importData('windgliders', collateWindGlider);
+// importData('animals', collateAnimal);
+// importData('namecards', collateNamecard);
+// importData('geographies', collateGeography);
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
-importData('windgliders', collateWindGlider);
-importData('animals', collateAnimal);
+
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
