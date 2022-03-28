@@ -77,6 +77,34 @@ let folders = [
 		params: ['large electro slime', 'boss, { matchCategories: true }']
 	},
 	{
+		function: 'outfits',
+		params: ['outrider', 'jean, { matchCategories: true }']
+	},
+	{
+		function: 'windgliders',
+		params: ['storm']
+	},
+	{
+		function: 'animals',
+		params: ['shiba', 'birds, { matchCategories: true }', 'true, { matchCategories: true }']
+	},
+	{
+		function: 'namecards',
+		params: ['klee']
+	},
+	{
+		function: 'geographies',
+		params: ['library', 'liyue, { matchCategories: true }']
+	},
+	// { // these are not part of the standard db
+	// 	function: 'achievements',
+	// 	params: ['chill', 'challenger I, { matchCategories: true }']
+	// },
+	// {
+	// 	function: 'achievementgroups',
+	// 	params: ['challenger II']
+	// },
+	{
 		function: 'elements',
 		params: [],
 	},

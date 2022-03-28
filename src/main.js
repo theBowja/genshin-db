@@ -352,6 +352,25 @@ genshin.animals = genshin.animal = genshin.wildlife = function (query, opts) {
     return retrieveData(query, Folder.animals, opts);
 }
 
+/**
+ * Get data about namecards
+ * @param {string} query - Namecard name
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.namecards = genshin.namecard = function (query, opts) {
+    return retrieveData(query, Folder.namecards, opts);
+}
+
+/**
+ * Get data about geographies
+ * @param {string} query - viewpoint name.
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.geographies = genshin.geography = genshin.viewpoints = genshin.viewpoint = function (query, opts) {
+    return retrieveData(query, Folder.geographies, opts);
+}
 
 /**
  * Get data in any specified folder.

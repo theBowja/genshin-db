@@ -16,6 +16,11 @@ const genshindb = require('genshin-db');
 - [genshindb.foods(query[, opts])](#genshindbfoodsquery-opts)
 - [genshindb.domains(query[, opts])](#genshindbdomainsquery-opts)
 - [genshindb.enemies(query[, opts])](#genshindbenemiesquery-opts)
+- [genshindb.outfits(query[, opts])](#genshindboutfitsquery-opts)
+- [genshindb.windgliders(query[, opts])](#genshindbwindglidersquery-opts)
+- [genshindb.animals(query[, opts])](#genshindbanimalsquery-opts)
+- [genshindb.namecards(query[, opts])](#genshindbnamecardsquery-opts)
+- [genshindb.geographies(query[, opts])](#genshindbgeographiesquery-opts)
 - [genshindb.elements(query[, opts])](#genshindbelementsquery-opts)
 - [genshindb.rarity(query[, opts])](#genshindbrarityquery-opts)
 
@@ -26,22 +31,23 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',    'Albedo',         'Aloy',
-  'Amber',     'Arataki Itto',   'Barbara',
-  'Beidou',    'Bennett',        'Chongyun',
-  'Diluc',     'Diona',          'Eula',
-  'Fischl',    'Ganyu',          'Gorou',
-  'Hu Tao',    'Jean',           'Kaedehara Kazuha',
-  'Kaeya',     'Kamisato Ayaka', 'Keqing',
-  'Klee',      'Kujou Sara',     'Lisa',
-  'Lumine',    'Mona',           'Ningguang',
-  'Noelle',    'Qiqi',           'Raiden Shogun',
-  'Razor',     'Rosaria',        'Sangonomiya Kokomi',
-  'Sayu',      'Shenhe',         'Sucrose',
-  'Tartaglia', 'Thoma',          'Venti',
-  'Xiangling', 'Xiao',           'Xingqiu',
-  'Xinyan',    'Yae Miko',       'Yanfei',
-  'Yoimiya',   'Yun Jin',        'Zhongli'
+  'Aether',             'Albedo',         'Aloy',
+  'Amber',              'Arataki Itto',   'Barbara',
+  'Beidou',             'Bennett',        'Chongyun',
+  'Diluc',              'Diona',          'Eula',
+  'Fischl',             'Ganyu',          'Gorou',
+  'Hu Tao',             'Jean',           'Kaedehara Kazuha',
+  'Kaeya',              'Kamisato Ayaka', 'Kamisato Ayato',
+  'Keqing',             'Klee',           'Kujou Sara',
+  'Lisa',               'Lumine',         'Mona',
+  'Ningguang',          'Noelle',         'Qiqi',
+  'Raiden Shogun',      'Razor',          'Rosaria',
+  'Sangonomiya Kokomi', 'Sayu',           'Shenhe',
+  'Sucrose',            'Tartaglia',      'Thoma',
+  'Venti',              'Xiangling',      'Xiao',
+  'Xingqiu',            'Xinyan',         'Yae Miko',
+  'Yanfei',             'Yoimiya',        'Yun Jin',
+  'Zhongli'
 ]
 ```
 
@@ -642,6 +648,7 @@ const genshindb = require('genshin-db');
   'Kaedehara Kazuha',
   'Kaeya',
   'Kamisato Ayaka',
+  'Kamisato Ayato',
   'Keqing',
   'Lumine',
   'Qiqi',
@@ -718,23 +725,23 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',             'Aloy',               'Amber',
-  'Arataki Itto',       'Barbara',            'Beidou',
-  'Bennett',            'Chongyun',           'Diluc',
-  'Diona',              'Eula',               'Fischl',
-  'Ganyu',              'Gorou',              'Hu Tao',
-  'Jean',               'Kaedehara Kazuha',   'Kaeya',
-  'Kamisato Ayaka',     'Keqing',             'Klee',
-  'Kujou Sara',         'Lisa',               'Mona',
-  'Ningguang',          'Noelle',             'Qiqi',
-  'Raiden Shogun',      'Razor',              'Rosaria',
-  'Sangonomiya Kokomi', 'Sayu',               'Shenhe',
-  'Sucrose',            'Tartaglia',          'Thoma',
-  'Traveler (Anemo)',   'Traveler (Electro)', 'Traveler (Geo)',
-  'Venti',              'Xiangling',          'Xiao',
-  'Xingqiu',            'Xinyan',             'Yae Miko',
-  'Yanfei',             'Yoimiya',            'Yun Jin',
-  'Zhongli'
+  'Albedo',         'Aloy',               'Amber',
+  'Arataki Itto',   'Barbara',            'Beidou',
+  'Bennett',        'Chongyun',           'Diluc',
+  'Diona',          'Eula',               'Fischl',
+  'Ganyu',          'Gorou',              'Hu Tao',
+  'Jean',           'Kaedehara Kazuha',   'Kaeya',
+  'Kamisato Ayaka', 'Kamisato Ayato',     'Keqing',
+  'Klee',           'Kujou Sara',         'Lisa',
+  'Mona',           'Ningguang',          'Noelle',
+  'Qiqi',           'Raiden Shogun',      'Razor',
+  'Rosaria',        'Sangonomiya Kokomi', 'Sayu',
+  'Shenhe',         'Sucrose',            'Tartaglia',
+  'Thoma',          'Traveler (Anemo)',   'Traveler (Electro)',
+  'Traveler (Geo)', 'Venti',              'Xiangling',
+  'Xiao',           'Xingqiu',            'Xinyan',
+  'Yae Miko',       'Yanfei',             'Yoimiya',
+  'Yun Jin',        'Zhongli'
 ]
 ```
 
@@ -1601,6 +1608,7 @@ const genshindb = require('genshin-db');
   'Hakushin Ring',
   'Halberd',
   'Hamayumi',
+  'Haran Geppaku Futsu',
   'Harbinger of Dawn',
   "Hunter's Bow",
   'Iron Point',
@@ -1656,8 +1664,7 @@ const genshindb = require('genshin-db');
   'Skyward Atlas',
   'Skyward Blade',
   'Skyward Harp',
-  'Skyward Pride',
-  ... 30 more items
+  ... 31 more items
 ]
 ```
 
@@ -1910,7 +1917,7 @@ const genshindb = require('genshin-db');
   description: 'Talent Level-Up material.\n' +
     'Poetry is the soul of the land of the wind.\n' +
     'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
-  sortorder: 794,
+  sortorder: 1858,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Talent Level-Up Material',
@@ -2012,7 +2019,7 @@ const genshindb = require('genshin-db');
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
     'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
     'His enemies are the thousands who stand against the wind.',
-  sortorder: 2040,
+  sortorder: 1787,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -2035,7 +2042,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
-  sortorder: 1440,
+  sortorder: 1954,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
@@ -2181,6 +2188,7 @@ const genshindb = require('genshin-db');
   'Blizzard Strayer',
   'Bloodstained Chivalry',
   'Crimson Witch of Flames',
+  'Echoes of an Offering',
   'Emblem of Severed Fate',
   "Gladiator's Finale",
   'Heart of Depth',
@@ -2195,6 +2203,7 @@ const genshindb = require('genshin-db');
   'Tenacity of the Millelith',
   'Thundering Fury',
   'Thundersoother',
+  'Vermillion Hereafter',
   'Viridescent Venerer',
   "Wanderer's Troupe"
 ]
@@ -2287,6 +2296,7 @@ const genshindb = require('genshin-db');
   'Jewelry Soup',
   'Lotus Flower Crisp',
   'Moon Pie',
+  'Quiet Elegance',
   'Rice Cake Soup',
   'Sakura Shrimp Crackers',
   'Sakura Tempura',
@@ -2312,6 +2322,7 @@ const genshindb = require('genshin-db');
   'Golden Chicken Burger',
   'Invigorating Pizza',
   'Jade Parcels',
+  'Katsu Sandwich',
   'Mixed Yakisoba',
   'Mushroom Pizza',
   'Northern Smoked Chicken',
@@ -2413,6 +2424,14 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Domain of Blessing: Autumn Hunt I',
+  'Domain of Blessing: Autumn Hunt II',
+  'Domain of Blessing: Autumn Hunt III',
+  'Domain of Blessing: Autumn Hunt IV',
+  'Domain of Blessing: Necropolis I',
+  'Domain of Blessing: Necropolis II',
+  'Domain of Blessing: Necropolis III',
+  'Domain of Blessing: Necropolis IV',
   'Domain of Forgery: Altar of Sands I',
   'Domain of Forgery: Altar of Sands II',
   'Domain of Forgery: Altar of Sands III',
@@ -2609,8 +2628,204 @@ const genshindb = require('genshin-db');
   'Pyro Hypostasis',
   'Pyro Regisvine',
   'Rimebiter Bathysmal Vishap',
+  'Ruin Serpent',
   'Stormterror',
   'Thunder Manifestation'
+]
+```
+
+</details>
+
+## genshindb.outfits(query[, opts])]
+
+<details>
+<summary>genshindb.outfits('<b>outrider'</b>)</summary>
+
+```js
+{
+  name: '100% Outrider',
+  description: "Amber's outfit. This is a more formal — but no less cool — version of the Outrider's uniform!",
+  isdefault: false,
+  character: 'Amber',
+  source: [],
+  images: {
+    namecard: 'UI_AvatarIcon_AmborCostumeWic_Card',
+    nameicon: 'UI_AvatarIcon_AmborCostumeWic',
+    namesplash: 'UI_Costume_AmborCostumeWic',
+    namesideicon: 'UI_AvatarIcon_Side_AmborCostumeWic'
+  },
+  url: { modelviewer: '' },
+  version: '2.5'
+}
+```
+
+</details>
+<details>
+<summary>genshindb.outfits('<b>jean', { matchCategories: true }</b>)</summary>
+
+```js
+[ 'Favonian Devotion', "Gunnhildr's Legacy", 'Sea Breeze Dandelion' ]
+```
+
+</details>
+
+## genshindb.windgliders(query[, opts])]
+
+<details>
+<summary>genshindb.windgliders('<b>storm'</b>)</summary>
+
+```js
+{
+  name: 'Wings of the Stormstrider',
+  description: "A stylized wind glider gifted to you as a mark of Inazuma's acknowledgment and recognition.",
+  rarity: '4',
+  sortorder: 140008,
+  source: [ 'Reward for reaching a certain Reputation Level in Inazuma' ],
+  images: {
+    nameicon: 'UI_FlycloakIcon_Thunderclap',
+    namegacha: 'UI_Gacha_FlycloakIcon_Thunderclap'
+  },
+  version: '2.0'
+}
+```
+
+</details>
+
+## genshindb.animals(query[, opts])]
+
+<details>
+<summary>genshindb.animals('<b>shiba'</b>)</summary>
+
+```js
+{
+  name: 'Shiba',
+  description: "Humanity's best friend!\n" +
+    'Legend has it that the Inazuma Shogun once greatly adored this canine breed, and they spread across the once-booming trade routes to become one of the most well-loved pets in the seven nations. Gentle, loyal, and intelligent, they are especially good at guard duty and being companions. Some say that there are still mysterious ninjas in Inazuma who train these dogs to become "ninja dogs."',
+  category: 'Beasts',
+  sortorder: 11011,
+  images: { nameicon: 'UI_AnimalIcon_DogPrick_02' },
+  version: '1.0'
+}
+```
+
+</details>
+<details>
+<summary>genshindb.animals('<b>birds', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Azure Crane',        'Black King Pigeon',
+  'Brightcrown Pigeon', 'Brownwing Falcon',
+  'Crimson Finch',      'Crimsonflank Pigeon',
+  'Crow',               'Emerald Duck',
+  'Emerald Finch',      'Golden Finch',
+  'Graywing Pigeon',    'Lapis Glede',
+  'Scarletbeak Duck',   'Silkwhite Falcon',
+  'Snow Finch',         'Umbertail Falcon',
+  'Violet Ibis',        'White Pigeon'
+]
+```
+
+</details>
+<details>
+<summary>genshindb.animals('<b>true', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'Adorned Unagi',      'Anemo Crystalfly',    'Black King Pigeon',
+  'Blue Frog',          'Blue Horned Lizard',  'Bluethunder Weasel',
+  'Boot Weasel',        'Brightcrown Pigeon',  'Coral Butterfly',
+  'Crimson Finch',      'Crimsonflank Pigeon', 'Crimson Fox',
+  'Crow',               'Cryo Crystalfly',     'Deep Sea Unagi',
+  'Electro Crystalfly', 'Emerald Finch',       'Frog',
+  'General Crab',       'Geo Crystalfly',      'Golden Crab',
+  'Golden Finch',       'Golden Loach',        'Gray Snow Cat',
+  'Graywing Pigeon',    'Green Horned Lizard', 'Kitsune',
+  'Lucklight Fly',      'Mud Frog',            'Ocean Crab',
+  'Pale Red Crab',      'Pith Lizard',         'Red-Finned Unagi',
+  'Red Horned Lizard',  'Red-Tailed Weasel',   'Sapphire',
+  'Snowboar',           'Snow Finch',          'Snow Fox',
+  'Snow Weasel',        'Squirrel',            'Sun Crab',
+  'Sunny Loach',        'Sunset Loach',        'Violet Ibis',
+  'White Pigeon'
+]
+```
+
+</details>
+
+## genshindb.namecards(query[, opts])]
+
+<details>
+<summary>genshindb.namecards('<b>klee'</b>)</summary>
+
+```js
+{
+  name: 'Klee: Explosive',
+  description: 'Namecard style.\n' +
+    "Klee's lucky explosive — can you tell if it's Jumpy Dumpty or Dodoco? (Hint: Look carefully at the tail...)",
+  sortorder: 210004,
+  source: [ 'Reward for reaching Friendship 10 with Klee' ],
+  images: {
+    nameicon: 'UI_NameCardIcon_Klee',
+    namebanner: 'UI_NameCardPic_Klee_Alpha',
+    namebackground: 'UI_NameCardPic_Klee_P'
+  },
+  version: ''
+}
+```
+
+</details>
+
+## genshindb.geographies(query[, opts])]
+
+<details>
+<summary>genshindb.geographies('<b>library'</b>)</summary>
+
+```js
+{
+  name: 'Knights of Favonius - Library',
+  area: 'Mondstadt',
+  description: 'The library with the most books in all the northern lands. Other than those collected in the restricted section, all the books here are open for public reading.',
+  region: 'Mondstadt',
+  sortorder: 7,
+  images: { nameimage: 'UI_Codex_Scenery_MDtushuguan' },
+  version: ''
+}
+```
+
+</details>
+<details>
+<summary>genshindb.geographies('<b>liyue', { matchCategories: true }</b>)</summary>
+
+```js
+[
+  'A Drop in the Ocean',
+  'A Home in the Hills',
+  'Beyond the Chasm',
+  'Chihu Rock',
+  'Crystal Fragment',
+  'Dunyu Ruins',
+  'Feiyun Slope',
+  'Marsh of Rustling Reeds',
+  'Mist-Veiled Stone Forest',
+  'Moonlit Tree',
+  'Mouth of the Great Mine',
+  'Nine Pillars of Peace',
+  "Qingxu's Forsaken Tower",
+  'Ruins of Guili',
+  'The Ancient Battlefield of Fuao Vale',
+  'The Blocked Path',
+  'The Court of Pillars',
+  "The Great Mushroom's Place",
+  'The Inverted City',
+  'The Underground Mines',
+  'Underground Waterway',
+  "View from The Chasm's Surface",
+  "Vigilant Guardians' Vantage Point",
+  'Weeping Garden',
+  'Where Merchants Flock And All Ships Dock',
+  'Where Mountains Peak Beyond the Clouds',
+  'Yujing Terrace'
 ]
 ```
 
