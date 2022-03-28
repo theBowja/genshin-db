@@ -768,6 +768,32 @@ export interface Animal {
     version: string;
 }
 
+export interface Namecard {
+    name: string;
+    description: string;
+    sortorder: number;
+    source: string[];
+    images: {
+        nameicon: string;
+        namebanner?: string; // the first namecard doesn't have this
+        namebackground: string;
+    };
+    version: string;
+}
+
+export interface Geography {
+    name: string;
+    area: string;
+    description :string;
+    region: string;
+    hiddenactive?: true;
+    sortorder: number;
+    images: {
+        nameimage: string;
+    };
+    version: string;
+}
+
 export interface Commission {
     name: string;
     description: string;
