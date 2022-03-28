@@ -117,4 +117,6 @@ altnames.addAltName('English', 'constellations', 'Anemo Traveler', 'traveleranem
 altnames.addAltName('English', 'constellations', 'Electro Traveler', 'travelerelectro');
 altnames.addAltName('English', 'constellations', 'Geo Traveler', 'travelergeo');
 
+altnames.addAltName('English', 'enemies', 'Dvalin', 'stormterror');
+
 module.exports = altnames;
