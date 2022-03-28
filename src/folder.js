@@ -24,5 +24,7 @@ module.exports = {
 	achievementgroups: 'achievementgroups',
 
 	windgliders    : 'windgliders',
-	animals        : 'animals'
+	animals        : 'animals',
+	namecards      : 'namecards',
+	geographies    : 'geographies'
 };
