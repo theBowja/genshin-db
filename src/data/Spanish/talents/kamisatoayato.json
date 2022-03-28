@@ -1,0 +1,211 @@
+{
+	"name": "Kamisato Ayato",
+	"combat1": {
+		"name": "Ataque Normal: Estilo Kamisato - Marobashi",
+		"info": "**Ataque Normal**\nRealiza hasta 5 ataques rápidos.\n\n**Ataque Cargado**\nConsume una cierta cantidad de Aguante para arremeter hacia delante y golpear con su espada.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P} ×2",
+				"Daño de 5.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param7:F1} pts.",
+				"Daño de Caída|{param8:F1P}",
+				"Daño de impacto de caída baja/alta|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Estilo Kamisato: Belleza reflejada",
+		"info": "Kamisato Ayato se mueve de posición y entra en el estado de “reflejo torrencial”.\nTras hacer este movimiento, deja en su ubicación original una ilusión de agua. Al ser formada, la ilusión explotará si se encuentra cerca de un enemigo o cuando termine su duración, tras lo que inflige Daño Hydro en el AdE.\n\n**Reflejo torrencial**\nEn este estado, Kamisato Ayato ataca rápidamente con una hidroespada y el daño de sus Ataques Normales se transforma en Daño Hydro en el AdE, el cual no puede sustituirse imbuyéndose de otro elemento.\nAdemás, este estado tiene las siguientes características:\n·Al golpear a un enemigo con la hidroespada, Kamisato Ayato obtiene el efecto de “oleaje centelleante”, el cual aumenta el daño de la hidroespada en proporción su Vida Máx. actual. Inicialmente, oleaje centelleante puede acumularse hasta 4 veces y obtenerse una vez cada 0.1 s por cada ataque realizado con la hidroespada. Este efecto desaparece cuando termina la duración del estado de reflejo torrencial.\n·Aumenta la RES a interrupción de Kamisato Ayato.\n·Mientras dure este estado, no podrá ejecutar ni Ataques Cargados ni Descendentes.\n\nEl estado de reflejo torrencial se anulará cuando Kamisato Ayato sea retirado de combate. Si vuelve a usar Estilo Kamisato: Belleza reflejada mientras dicho estado está activo, el estado anterior terminará y la duración del nuevo estado se reiniciará.",
+		"description": "“¿Exactamente en qué momento pensaste que llevabas la ventaja?”\nAyato se comporta así tanto en las artes marciales como en la estrategia política. Sin embargo, para no dañar la reputación de los otros dos Comisionados, nunca les dice esto a la cara. Por eso, solo Thoma, Itto y Ayaka le han escuchado alguna vez decir estas palabras.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe de hidroespada|{param1:F1P}",
+				"Daño de 2.º golpe de hidroespada|{param2:F1P}",
+				"Daño de 3er golpe de hidroespada|{param3:F1P}",
+				"Duración de reflejo torrencial|{param4:F1} s",
+				"Aumento de daño de oleaje centelleante|{param5:F2P} de Vida Máx./carga",
+				"Daño de ilusión de agua|{param6:F1P}",
+				"Duración de ilusión de agua|{param7:I} s",
+				"TdE|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Estilo Kamisato: Jardín ácueo",
+		"info": "Crea un jardín de paz en el que ningún ruido tiene cabida.\nMientras está activo, en el jardín caerán continuamente filos de agua que atacarán a los enemigos en su interior, les infligirán Daño Hydro y aumentarán el daño de los Ataques Normales de los personajes dentro del área.",
+		"description": "Puedo ver las ondulaciones del latido de tu corazón en estas aguas calmas.",
+		"attributes": {
+			"labels": [
+				"Daño de filos de agua|{param1:F1P}",
+				"Aumento de daño de ATQ Normal|{param2:F1P}",
+				"Duración|{param3:F1} s",
+				"TdE|{param4:F1} s",
+				"Energía Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Estilo Kamisato: Corriente montañosa",
+		"info": "**Estilo Kamisato: Belleza reflejada** obtiene las siguientes características:\n·Al activar la habilidad, Kamisato Ayato obtiene 2 acumulaciones de oleaje centelleante.\n·Cuando la ilusión de agua se destruye, Kamisato Ayato obtiene el efecto de oleaje centelleante con la máxima cantidad de acumulaciones posibles."
+	},
+	"passive2": {
+		"name": "Estilo Kamisato: Crecida de la luna",
+		"info": "Cuando Kamisato Ayato está en tu equipo pero no en combate y su Energía Elemental es menor a 40 pts., recuperará 2 pts. de Energía por segundo."
+	},
+	"passive3": {
+		"name": "Estilo Kamisato: Cocina diaria",
+		"info": "Al lograr un “Perfecto” al cocinar un plato, hay una probabilidad del 18% de obtener ese mismo plato con calidad “extraña”."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la elegancia",
+				"count": 3
+			},
+			{
+				"name": "Guardamano viejo",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la elegancia",
+				"count": 2
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la elegancia",
+				"count": 4
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la elegancia",
+				"count": 6
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la elegancia",
+				"count": 9
+			},
+			{
+				"name": "Guardamano gemelo",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la elegancia",
+				"count": 4
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 4
+			},
+			{
+				"name": "Mudra de la Shogun implacable",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la elegancia",
+				"count": 6
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 6
+			},
+			{
+				"name": "Mudra de la Shogun implacable",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la elegancia",
+				"count": 12
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 9
+			},
+			{
+				"name": "Mudra de la Shogun implacable",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la elegancia",
+				"count": 16
+			},
+			{
+				"name": "Guardamano célebre",
+				"count": 12
+			},
+			{
+				"name": "Mudra de la Shogun implacable",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}
