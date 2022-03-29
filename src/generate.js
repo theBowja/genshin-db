@@ -63,7 +63,6 @@ function makeIndices() {
 
 	console.log('compiling index for data:');
 	for(const lang of specificlanguages) {
-		let categories = require(`./data/${lang}/categories.json`);
 		for(const folder of specificfolders) {
 			let index = {
 				namemap: {}, // maps filename to name
@@ -116,7 +115,6 @@ function makeIndices() {
 						if(!Array.isArray(values)) values = [values]; // make into array
 
 						for(let val of values) {
-							//if(categories[prop] === undefined) console.log("missing category: "+folder+ ","+prop);
 							if(prop === "ingredients") val = val.name;// val = val.replace(/ x\d$/i, '');
 							else if(prop === "birthday") {
 								let [month, day] = data.birthdaymmdd.split('/');
@@ -137,14 +135,6 @@ function makeIndices() {
 								index.properties[prop].push(val);
 							}
 						}
-
-						// if(categories[prop].includes(data[prop])) {
-						// 	let tmp = data[prop];
-						// 	if(index[tmp] === undefined)
-						// 		index[tmp] = [data.name];
-						// 	else
-						// 		index[tmp].push(data.name);
-						// }
 					}
 				})
 
