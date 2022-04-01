@@ -104,7 +104,7 @@ function retrieveData(query, folder, opts, getfilename) {
         }
 
         // check if queryMatch is in .categories or is 'names'
-        if (opts.matchCategories && (langindex.categories[queryMatch] !== undefined || queryMatch === 'names')) {
+        if (opts.matchCategories && (queryMatch === 'names' || langindex.categories[queryMatch] !== undefined)) {
             let reslangindex = getIndex(opts.resultLanguage, folder);
             if (reslangindex === undefined) return undefined;
 

@@ -299,10 +299,11 @@ function addData(newdata, override = true) {
     if(isObject(newdata.index)) {
         for(const language of languagesArr) {
             if(!isObject(newdata.index[language])) continue;
-            for(const folder of Object.keys(newdata.index[language])) {
-            // for(const folder of foldersArr) { // commented to allow addition of new folders
+            for(const folder of Object.keys(newdata.index[language])) { // allows new folders
+                if(!allindex[language][folder]) allindex[language][folder] = {}; // make new folder
                 if(!isObject(newdata.index[language][folder])) continue;
                 for(const indexprop of ['namemap', 'names', 'aliases', 'categories', 'properties']) {
+                    if(!allindex[language][folder][indexprop]) allindex[language][folder][indexprop] = {}; // initialize empty objects for new index
                     if(!isObject(newdata.index[language][folder][indexprop])) continue;
                     for(const filename in newdata.index[language][folder][indexprop]) {
                         switch(indexprop) { // check if valid type (either string or array)
