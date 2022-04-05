@@ -53,15 +53,6 @@ const genderTranslations = {
 	}
 }
 
-const associationToRegion = {
-	'LIYUE': 'Liyue',
-	'MONDSTADT': 'Mondstadt',
-	'FATUI': 'Snezhnaya',
-	'INAZUMA': 'Inazuma',
-	'MAINACTOR': '',
-	'RANGER': '',
-}
-
 /* ============================================ FUNCTIONS =================================================== */
 
 async function stealWikiaVersion(folder) {
@@ -228,7 +219,7 @@ function collateCharacter(existing, newdata, lang) {
 	else if(existing.gender === 'MALE') existing
 	existing.body = newdata.body;
 	existing.association = newdata.association;
-	existing.region = associationToRegion[newdata.association];
+	existing.region = newdata.region;
 	if(existing.region === undefined) console.log('NO REGION FROM ASSOCIATION ' + newdata.association);
 	existing.affiliation = newdata.affiliation;
 
@@ -608,8 +599,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-gameVersion = ""; // new data will use this as added version
-// importData('characters', collateCharacter);
+gameVersion = "2.6"; // new data will use this as added version
+importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
@@ -619,7 +610,7 @@ gameVersion = ""; // new data will use this as added version
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains', collateDomain);
-importData('enemies', collateEnemy);
+// importData('enemies', collateEnemy);
 // importCurve('enemies');
 
 // importData('outfits', collateOutfit);
