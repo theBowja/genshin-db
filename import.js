@@ -44,12 +44,12 @@ const genderTranslations = {
 	'MALE': {
 		ChineseSimplified: '男', ChineseTraditional: '男', German: 'Männlich', English: 'Male', Spanish: 'Masculino',
 		French: 'Homme', Indonesian: 'Pria', Japanese: '男', Korean: '남성', Portuguese: 'Masculino',
-		Russian: 'мужчина', Thai: 'ชาย', Vietnamese: 'nam'
+		Russian: 'Мужской', Thai: 'ชาย', Vietnamese: 'nam'
 	},
 	'FEMALE': {
 		ChineseSimplified: '女', ChineseTraditional: '女', German: 'Weiblich', English: 'Female', Spanish: 'Femenino',
 		French: 'Femme', Indonesian: 'Perempuan', Japanese: '女', Korean: '여성', Portuguese: 'Feminino',
-		Russian: 'женский', Thai: 'ผู้หญิง', Vietnamese: 'nữ'
+		Russian: 'Женский', Thai: 'ผู้หญิง', Vietnamese: 'nữ'
 	}
 }
 
