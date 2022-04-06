@@ -167,6 +167,11 @@ export interface Artifact {
     goblet?: ArtifactDetail;
     circlet: ArtifactDetail;
     images: {
+        nameflower?: string;
+        nameplume?: string;
+        namesands?: string;
+        namegoblet?: string;
+        namecirclet: string;
         flower?: string;
         plume?: string;
         sands?: string;
