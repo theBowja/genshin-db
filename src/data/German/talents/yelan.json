@@ -1,0 +1,206 @@
+{
+	"name": "Yelan",
+	"combat1": {
+		"name": "Standardangriff: Bogen der Unterströmung",
+		"info": "**Standardangriff**\nFührt bis zu 4 Pfeilschüsse hintereinander aus.\n\n**Heftiger Schlag**\nFührt einen **gezielten Schuss** mit höherem Schaden und höherer Genauigkeit aus.\nKonzentriert das fließende Wasser während des Zielens an der Pfeilspitze, die voll aufgeladen Hydro-Schaden verursacht.\n\n**Durchstoß**\n5 s nach dem Verlassen des Kampfes erhält Yelan den Zustand „Durchstoß“, der die Aufladedauer beim nächsten voll aufgeladenen gezielten Schuss um 80 % verringert und den Pfeil beim Schießen des voll aufgeladenen Schusses in einen „Durchstoßpfeil“ verwandelt, der basierend auf Yelans max. LP Hydro-Flächenschaden verursacht.\n\n**Angriff aus dem Fall**\nSchießt in der Luft einen Pfeilregen ab, trifft schnell auf dem Boden auf und verursacht dort Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P} + {param4:F1P}",
+				"Gezielte Schüsse|{param5:F1P}",
+				"Voll aufgeladene gezielte Schüsse|{param6:P}",
+				"Durchstoßpfeil-SCH|{param7:F2P} der max. LP",
+				"SCH beim Fallen|{param8:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Seil der Todesbotin",
+		"info": "Yelan bewegt sich schnell mit ihrem „todbringenden Seil“ in der Hand, das alle Gegner in ihrer Bahn verknüpft und markiert.\nNach der schnellen Bewegung explodiert das „todbringende Seil“, wobei es den markierten Gegnern Hydro-Schaden basierend auf Yelans max. LP zufügt.\n\n**Einmaliges Drücken**\nBewegt sich schnell ein Stück nach vorn.\n\n**Gedrückt halten**\nBewegt sich schnell und fortlaufend und erhöht in diesem Zustand Yelans Unterbrechungs-WDS.\nWährend dieser Zeit kann Yelan die Richtung ihrer Bewegung steuern und diesen Zustand durch erneutes Auslösen der Fähigkeit vorzeitig beenden.\n\nDarüber hinaus erhält Yelan bei der Explosion des „todbringenden Seils“ mit gewisser Wahrscheinlichkeit gemäß der Anzahl der markierten Gegner den Zustand „Durchstoß“: Erhöht für jeden markierten Gegner die Wahrscheinlichkeit um 34 %.",
+		"description": "Erst in dem Moment, wenn sie mit ihrem Finger das Seil zieht, sind sich die skrupellosen Banditen und listigen Übeltäter bewusst, dass sie sich in dem Netz der Todesbotin verfangen haben.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P} der max. LP",
+				"Höchstdauer beim Gedrückthalten|{param3:F1} s",
+				"Abklingzeit|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Würfel des Strategems",
+		"info": "Verursacht Hydro-Flächenschaden und beschwört einen „Würfel der Mystik“, der beim Kampf Unterstützung leistet.\n\n**Würfel der Mystik**\nFolgt der Figur auf Schritt und Tritt und führt unter folgenden Umständen abgestimmte Angriffe aus, die basierend auf Yelans max. LP Hydro-Schaden verursachen: \n· Wenn eigene aktuelle Truppenmitglieder Standardangriffe ausführen, 1 s Abklingzeit.\n· Wenn Yelans „todbringendes Seil“ explodiert und dabei Gegner trifft.",
+		"description": "„Also hör zu, Spieler gewinnen nie und Gewinner spielen nie. Lass es mich so ausdrücken: Als Bankhalterin habe ich sieben Würfel, während du nur einen hast. Wie könntest du dann eine höhere Punktzahl gegen mich würfeln? Das Haus gewinnt immer.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F2P} der max. LP",
+				"SCH des Würfels der Mystik|{param2:F2P} der max. LP ×3",
+				"Dauer|{param3:F1} s",
+				"Abklingzeit|{param4:F1} s",
+				"Elementarenergie|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Beste Gewinnstrategie",
+		"info": "Erhöht die max. LP von Yelan bei Truppenmitgliedern mit 1/2/3/4 verschiedenen Elementartypen zusätzlich um 6/12/18/30 %."
+	},
+	"passive2": {
+		"name": "Glückswürfel",
+		"info": "Erhöht den von eigenen aktuellen Truppenmitgliedern während der Wirkungsdauer von **„Würfel der Mystik“** verursachten Schaden um 1 % und danach alle 1 s um 3,5 %, insgesamt um bis zu 50 %.\nErneutes Aktivieren von Würfel des Strategems innerhalb der Laufzeit des oben beschriebenen Effekts entfernt diesen."
+	},
+	"passive3": {
+		"name": "Lange Überlegung",
+		"info": "Bringt bei 20-stündigen Erkundungsentsendungen in Liyue 25 % mehr Belohnungen."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren des „Wohlstands“",
+				"count": 3
+			},
+			{
+				"name": "Abzeichen für neue Rekruten",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 2
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 4
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 6
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zum „Wohlstand“",
+				"count": 9
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 4
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 4
+			},
+			{
+				"name": "Schuppe der Vergoldung",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 6
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 6
+			},
+			{
+				"name": "Schuppe der Vergoldung",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 12
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 9
+			},
+			{
+				"name": "Schuppe der Vergoldung",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie des „Wohlstands“",
+				"count": 16
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 12
+			},
+			{
+				"name": "Schuppe der Vergoldung",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

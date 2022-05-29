@@ -1,0 +1,206 @@
+{
+	"name": "Yelan",
+	"combat1": {
+		"name": "Ataque Normal: Flecha Oculta",
+		"info": "**Ataque Normal**\nRealiza até quatro disparos consecutivos com o arco.\n\n**Ataque Carregado**\nRealiza um **disparo com mira** de maior dano e precisão.\nAo mirar, o fluxo de água acumulará continuamente na ponta da flecha. Quando a flecha estiver totalmente carregada com esse fluxo torrencial, infligirá Dano Hydro.\n**Ruptura**\nDepois de 5s fora do campo de batalha, Yelan entra no estado \"Ruptura\", no qual o carregamento de seu próximo Disparo com Mira terá seu tempo necessário reduzido em 80%, e quando estiver totalmente carregado, ela disparará a sua \"Flecha da Ruptura\", que infligirá Dano Hydro em AdE baseado em sua Vida Máxima.\n\n**Ataque Imersivo**\nDispara uma chuva de flechas em pleno ar antes de atingir o chão, infligindo Dano em uma AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano do 4° Golpe|{param4:F1P}+{param4:F1P}",
+				"Disparo com Mira|{param5:F1P}",
+				"Disparo com Mira com Energização Completa|{param6:P}",
+				"Dano da Flecha da Ruptura|{param7:F2P} da Vida Máxima",
+				"Dano Durante a Queda|{param8:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Rede da Vida Salvadora",
+		"info": "Tira seu \"Fio da Vida\" e corre, marcando os inimigos no caminho.\nQuando termina de correr, o \"Fio da Vida\" explodirá e infligirá Dano Hydro contra os inimigos marcados baseado na Vida Máxima de Yelan.\n\n**Pressionar**\nCorre uma certa distância para frente rapidamente.\n\n**Manter Pressionado**\nCorre continuamente e aumenta a Resistência Contra Interrupção de Yelan enquanto estiver nesse estado.\nNesse período, Yelan poderá controlar a direção que corre. Lançar sua habilidade mais uma vez fará com que sua corrida termine.\n\nAlém disso, quando o \"Fio da Vida\" explode, Yelan possui uma chance de obter o efeito \"Ruptura\" de acordo com o número de inimigos marcados: cada inimigo marcado aumenta essa chance em 34%.",
+		"description": "Quando ela captura com seus fios, os grupos de malfeitores e os discípulos de artimanhas conspiratórias serão todos descobertos, e todos sabem que não há mais escapatória.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P} da Vida Máxima",
+				"Duração Máxima por Manter Pressionado|{param3:F1}s",
+				"Recarga|{param4:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Dado das Profundezas Claras",
+		"info": "Inflige Dano Hydro em AdE e lança um \"Dado Misterioso\" que ajuda na batalha.\n\n**Dado Misterioso**\nSegue o personagem e, nas circunstâncias específicas abaixo, realiza Ataques Coordenados que infligem Dano Hydro baseados na Vida Máxima de Yelan:\n· Pode ser desencadeado uma vez por segundo quando o personagem ativo de sua equipe realizar um Ataque Normal;\n· Quando o \"Fio da Vida\" de Yelan explodir e atingir os inimigos, realizará um Ataque Coordenado.",
+		"description": "\"Não é bom ser um viciado em apostas. Eu sou uma banqueira de apostas, deixe-me comparar: você tem um dado, como poderia vencer os meus sete?\".",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F2P} da Vida Máxima",
+				"Dano do Dado Misterioso|{param2:F2P} da Vida Máxima x3",
+				"Duração|{param3:F1}s",
+				"Recarga|{param4:F1}s",
+				"Energia Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Estratégia Controlada",
+		"info": "Quando há 1/2/3/4 personagens de tipos elementais diferentes, a Vida Máxima de Yelan aumenta 6%/12%/18%/30% respectivamente."
+	},
+	"passive2": {
+		"name": "Adaptação Esperta",
+		"info": "Enquanto o **Dado Misterioso** existir, aumenta o Dano do personagem ativo no campo de batalha em 1%, e a cada 1s aumenta em 3.5%. Permite aumentar o Dano infligido pelo personagem em até 50%.\nSe Dado das Profundezas Claras for lançado novamente enquanto o efeito estiver ativo, esse efeito original será eliminado."
+	},
+	"passive3": {
+		"name": "Longa Consideração",
+		"info": "Ganha 25% recompensas a mais quando enviada numa Expedição em Liyue por 20 horas."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos de Prosperidade",
+				"count": 3
+			},
+			{
+				"name": "Insígnia de Recruta",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia de Prosperidade",
+				"count": 2
+			},
+			{
+				"name": "Insígnia de Sargento",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia de Prosperidade",
+				"count": 4
+			},
+			{
+				"name": "Insígnia de Sargento",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia de Prosperidade",
+				"count": 6
+			},
+			{
+				"name": "Insígnia de Sargento",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia de Prosperidade",
+				"count": 9
+			},
+			{
+				"name": "Insígnia de Sargento",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia de Prosperidade",
+				"count": 4
+			},
+			{
+				"name": "Insígnia de Oficial",
+				"count": 4
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia de Prosperidade",
+				"count": 6
+			},
+			{
+				"name": "Insígnia de Oficial",
+				"count": 6
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia de Prosperidade",
+				"count": 12
+			},
+			{
+				"name": "Insígnia de Oficial",
+				"count": 9
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia de Prosperidade",
+				"count": 16
+			},
+			{
+				"name": "Insígnia de Oficial",
+				"count": 12
+			},
+			{
+				"name": "Escama Dourada",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

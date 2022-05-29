@@ -1,0 +1,206 @@
+{
+	"name": "Yelan",
+	"combat1": {
+		"name": "Attaque normale : Sagette furtive",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 tirs consécutifs.\n\n**Attaque chargée**\nEffectue un **tir visé** plus précis infligeant davantage de DGT.\nLors de la visée, la flèche se charge de flux d'eau, infligeant des DGT Hydro quand elle est complètement chargée.\n\n**Percée**\nSi l'équipe est hors combat pendant 5 s, Yelan entre dans un état de Percée permettant de diminuer le temps de charge de son prochain tir visé de 80 %, et une fois le tir complètement chargé, elle peut tirer une flèche perçante qui inflige des DGT Hydro de zone selon ses PV max.\n\n**Attaque plongeante**\nTire une pluie de flèches depuis les airs et plonge au sol, infligeant des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}+{param4:F1P}",
+				"DGT tir visé|{param5:F1P}",
+				"DGT tir visé (pleine charge)|{param6:P}",
+				"DGT flèche perçante|{param7:F2P} PV max",
+				"DGT durant la chute|{param8:F1P}",
+				"DGT chute basse/élevée|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ligne vitale persistante",
+		"info": "Tire une ligne vitale et court à grande vitesse, enchevêtrant et marquant les ennemis sur son chemin.\nÀ la fin du déplacement, la ligne vitale explose, infligeant des DGT Hydro aux ennemis marqués selon les PV max de Yelan.\n\n**Appui simple**\nAvance rapidement sur une certaine distance.\n\n**Appui long**\nAvance rapidement de façon continue, tout en augmentant la RÉS à l'interruption de Yelan pendant son mouvement.\nPendant ce déplacement, Yelan peut contrôler la direction de sa course et peut s'arrêter en utilisant à nouveau la compétence.\n\nDe plus, chaque ennemi marqué par la ligne vitale lorsqu'elle explose accorde à Yelan 34 % de chances d'obtenir un état de Percée.",
+		"description": "Ce n'est que lorsqu'elle commence à tirer sur la corde que les malfaiteurs, les escrocs et les tricheurs se rendent compte qu'il n'y a pas d'échappatoire...",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P} PV max",
+				"Durée max (appui long)|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Dé exquis des profondeurs",
+		"info": "Inflige des DGT Hydro de zone et crée un dé exquis pour aider en combat.\n\n**Dé exquis**\nSuit le personnage et déclenche une attaque coordonnée dans les circonstances suivantes, infligeant des DGT Hydro selon les PV max de Yelan :\n· Chaque fois qu'un personnage déployé utilise une attaque normale, cet effet pouvant être déclenché une fois toutes les secondes.\n· Chaque fois que la ligne vitale de Yelan explose et touche des ennemis.",
+		"description": "« Devenir accro au jeu ne vous fera aucun bien... Je veux dire, je suis la croupière, alors faites le calcul : selon vous, quelles sont vos chances de me battre, alors que j'ai sept dés et que vous n'en avez qu'un seul ? »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F2P} PV max",
+				"DGT dé exquis|{param2:F2P} PV max ×3",
+				"Durée|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s",
+				"Énergie élémentaire|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Contrôle stratégique",
+		"info": "Si l'équipe comprend des personnages de 1/2/3/4 types élémentaires, les PV max de Yelan augmentent de 6 %/12 %/18 %/30 %."
+	},
+	"passive2": {
+		"name": "Adaptation aisée",
+		"info": "Tant qu'un **dé exquis** est en combat, les DGT infligés par le personnage déployé augmentent de 1 %, puis de 3,5 % supplémentaires toutes les secondes. Les DGT peuvent être augmentés jusqu'à 50 % maximum de cette manière.\nUtiliser à nouveau Dé exquis des profondeurs pendant la durée de l'effet décrit ci-dessus dissipera ce dernier."
+	},
+	"passive3": {
+		"name": "Longue considération",
+		"info": "Augmente les récompenses d'une expédition de 20 h à Liyue de 25 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la Prospérité",
+				"count": 3
+			},
+			{
+				"name": "Insigne de nouvelle recrue",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Prospérité",
+				"count": 2
+			},
+			{
+				"name": "Insigne de sergent",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la Prospérité",
+				"count": 4
+			},
+			{
+				"name": "Insigne de sergent",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la Prospérité",
+				"count": 6
+			},
+			{
+				"name": "Insigne de sergent",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Prospérité",
+				"count": 9
+			},
+			{
+				"name": "Insigne de sergent",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la Prospérité",
+				"count": 4
+			},
+			{
+				"name": "Insigne d'officier",
+				"count": 4
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la Prospérité",
+				"count": 6
+			},
+			{
+				"name": "Insigne d'officier",
+				"count": 6
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la Prospérité",
+				"count": 12
+			},
+			{
+				"name": "Insigne d'officier",
+				"count": 9
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la Prospérité",
+				"count": 16
+			},
+			{
+				"name": "Insigne d'officier",
+				"count": 12
+			},
+			{
+				"name": "Écaille dorée",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}
