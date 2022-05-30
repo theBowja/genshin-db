@@ -791,7 +791,7 @@ export interface Geography {
     area: string;
     description :string;
     region: string;
-    hiddenactive?: true;
+    showonlyunlocked?: true;
     sortorder: number;
     images: {
         nameimage: string;
