@@ -763,7 +763,7 @@ export interface Animal {
     name: string;
     description: string;
     category: string;
-    capturable?: true;
+    counttype : string;
     sortorder: number;
     
     images: {
