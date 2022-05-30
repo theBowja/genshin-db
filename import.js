@@ -452,7 +452,7 @@ function collateWindGlider(existing, newdata, lang) {
 
 function collateAnimal(existing, newdata, lang) {
 	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'description', 'category', 'capturable', 'sortorder']);
+	copyPropsIfExist(newdata, existing, ['name', 'description', 'category', 'counttype', 'sortorder']);
 	if(lang === 'English') {
 		newdata.images = {};
 		newdata.images.nameicon = newdata.nameicon;
@@ -472,11 +472,16 @@ function collateNamecard(existing, newdata, lang) {
 
 function collateGeography(existing, newdata, lang) {
 	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'area', 'description', 'region', 'hiddenactive', 'sortorder']);
+	copyPropsIfExist(newdata, existing, ['name', 'area', 'description', 'region', 'showonlyunlocked', 'sortorder']);
 	if(lang === 'English') {
 		newdata.images = {};
 		newdata.images.nameimage = newdata.nameimage;
 	}
+}
+
+function collateAdventureRank(existing, newdata, lang) {
+	clearObject(existing);
+	copyPropsIfExist(newdata, existing, ['name', 'exp', 'unlockdescription', 'reward']);
 }
 
 function importCurve(folder) {
@@ -599,8 +604,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-gameVersion = "2.6"; // new data will use this as added version
-importData('characters', collateCharacter);
+gameVersion = "2.7"; // new data will use this as added version
+// importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
@@ -620,7 +625,7 @@ importData('characters', collateCharacter);
 // importData('geographies', collateGeography);
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
-
+// importData('adventureranks', collateAdventureRank); // max 60
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate

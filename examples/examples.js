@@ -96,6 +96,10 @@ let folders = [
 		function: 'geographies',
 		params: ['library', 'liyue, { matchCategories: true }']
 	},
+	{
+		function: 'adventureranks',
+		params: ['20', '60']
+	},
 	// { // these are not part of the standard db
 	// 	function: 'achievements',
 	// 	params: ['chill', 'challenger I, { matchCategories: true }']
@@ -147,5 +151,5 @@ folders.forEach(folder => {
 });
 
 
-fs.writeFileSync(`./EXAMPLES.md`, output);
+fs.writeFileSync(`./examples/EXAMPLES.md`, output);
 console.log('finished updating EXAMPLES.md');
