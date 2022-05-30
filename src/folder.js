@@ -26,5 +26,6 @@ module.exports = {
 	windgliders    : 'windgliders',
 	animals        : 'animals',
 	namecards      : 'namecards',
-	geographies    : 'geographies'
+	geographies    : 'geographies',
+	adventureranks : 'adventureranks'
 };

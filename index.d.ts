@@ -799,6 +799,19 @@ export interface Geography {
     version: string;
 }
 
+export interface AdventureRank {
+    name: string;
+    exp: number;
+    unlockdescription: string;
+    reward: AdventureRankReward[];
+}
+
+export interface AdventureRankReward {
+    name: string;
+    count: number;
+    type: string; // MATERIAL, ARTIFACT, WEAPON
+}
+
 export interface Commission {
     name: string;
     description: string;
