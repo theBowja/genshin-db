@@ -2,7 +2,8 @@
 This script is a helper for building webpack with specified language data.
 
 By itself, the distribution will include all languages
-  node build
+  npm run build
+that will be output into the dist folder as genshindb.js
 
 If you want to limit the languages packed, then append a space-separated list of language names.
 For example:
@@ -12,8 +13,9 @@ will produce a distribution in the dist folder with only the English genshin dat
 More examples:
   npm run build build english chinesesimplified korean japanese
   npm run build french german
-  npm run build all achievements filename:dist/data/scripts/all-achievements
-  npm run build all characters filename:dist/data/scripts/all-characters
+  npm run build none filename:genshindb-none.js
+  npm run build all achievements filename:data/scripts/all-achievements.js
+  npm run build all characters filename:data/scripts/all-characters.js
 
 Available language names can be found in src/language.js file
 */

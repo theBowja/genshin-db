@@ -248,12 +248,18 @@ function dataExists(data, language, folder, filename) {
     }
 }
 
-function assignOverride(obj, keyPath, lastKey, value) {
+// Initializes the nested property with an empty object {} if it doesn't exist. Returns reference to that empty object.
+function initPropIfNotExist(obj, keyPath) {
     for(const key of keyPath) {
         if(!obj[key])
             obj[key] = {}
         obj = obj[key];
     }
+    return obj;
+}
+
+function assignOverride(obj, keyPath, lastKey, value) {
+    obj = initPropIfNotExist(obj, keyPath);
     obj[lastKey] = value;
 }
 
@@ -261,11 +267,7 @@ function assignArray(obj, keyPath, lastKey, array) {
     array = array.filter(val => typeof val === 'string');
     if(array.length === 0) return;
 
-    for(const key of keyPath) {
-        if(!obj[key])
-            obj[key] = {}
-        obj = obj[key];
-    }
+    obj = initPropIfNotExist(obj, keyPath);
     if(!obj[lastKey]) return obj[lastKey] = array;
     for(const value of array) {
         if(typeof value !== 'string') continue;
@@ -300,10 +302,9 @@ function addData(newdata, override = true) {
         for(const language of languagesArr) {
             if(!isObject(newdata.index[language])) continue;
             for(const folder of Object.keys(newdata.index[language])) { // allows new folders
-                if(!allindex[language][folder]) allindex[language][folder] = {}; // make new folder
                 if(!isObject(newdata.index[language][folder])) continue;
                 for(const indexprop of ['namemap', 'names', 'aliases', 'categories', 'properties']) {
-                    if(!allindex[language][folder][indexprop]) allindex[language][folder][indexprop] = {}; // initialize empty objects for new index
+                    initPropIfNotExist(allindex, ['language', 'folder', indexprop]);
                     if(!isObject(newdata.index[language][folder][indexprop])) continue;
                     for(const filename in newdata.index[language][folder][indexprop]) {
                         switch(indexprop) { // check if valid type (either string or array)
