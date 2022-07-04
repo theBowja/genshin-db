@@ -12,6 +12,7 @@ The format of the name for the data scripts are: language name, a dash, and then
 
 You may wish to use `genshin-db` with your React or Angular or whatever web project. The important thing is to reduce the size of script to keep browser loading times fast.
 
+### loading data during page-load
 
 The script `genshindb-none.js` contains the searching api but with no data in it to keep it small. You can add it to your hmtl to use it:
 
@@ -26,6 +27,7 @@ Then you can pick and [choose which data scripts](https://github.com/theBowja/ge
 
 ```html
 <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/theBowja/genshin-db@main/dist/genshindb-none.js'></script>
+
 <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/theBowja/genshin-db@main/dist/data/scripts/english-characters.js'></script>
 <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/theBowja/genshin-db@main/dist/data/scripts/english-talents.js'></script>
 <script>
@@ -34,7 +36,9 @@ console.log(GenshinDb.talents('hu tao')); // logs the data object for Hu Tao
 </script>
 ```
 
-### dynamically loading data script from web
+This is probably the simplest solution.
+
+### loading data AFTER page-load
 
 You can load data on the fly as well with [jQuery's getScript](https://api.jquery.com/jquery.getscript/). If you don't have jQuery, then you can use the [standalone getScript](https://gist.github.com/colingourlay/7209131).
 

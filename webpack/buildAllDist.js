@@ -8,7 +8,7 @@ const foldersArr = Object.values(require('../src/folder.js'));
 
 const execSync = require('child_process').execSync;
 
-// gets the filename without extension
+// Gets the filename without extension
 function getBaseFilename(filename) {
 	if(!filename.includes('.')) return filename;
 	return filename.substring(0, filename.indexOf('.'));
