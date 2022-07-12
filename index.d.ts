@@ -236,7 +236,7 @@ export interface ArtifactDetail {
 export interface Character {
     name: string;
     fullname: string; // only Russian has shortened "name" for japanese characters
-    title: string;
+    title: string; // empty strings for traveler
     description: string;
     rarity: string;
     element: string;
