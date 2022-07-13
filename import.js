@@ -604,7 +604,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-gameVersion = "2.7"; // new data will use this as added version
+gameVersion = "2.8"; // new data will use this as added version
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
