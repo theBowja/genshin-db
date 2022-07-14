@@ -608,7 +608,7 @@ gameVersion = "2.8"; // new data will use this as added version
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);

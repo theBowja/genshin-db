@@ -1,0 +1,207 @@
+{
+	"name": "Shikanoin Heizou",
+	"combat1": {
+		"name": "Ataque Normal: Arte Marcial Fudou",
+		"info": "**Ataque Normal**\nRealiza até 5 ataques de punhos de vento, infligindo Dano Anemo.\n\n**Ataque Carregado**\nConsome uma certa quantidade de Stamina que inflige Dano Anemo em uma AdE com um chute de varredura.\n\n**Ataque Imersivo**\nConvoca o poder do vento para si, Heizou mergulha ao chão em pleno ar, infligindo Dano a todos os inimigos em seu caminho. Inflige Dano Anemo em uma AdE ao atingir o chão.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano do 4° Golpe|{param4:F1P}+{param5:F1P}+{param6:F1P}",
+				"Dano do 5° Golpe|{param7:F1P}",
+				"Dano de Ataque Carregado|{param8:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param9:F1}",
+				"Dano Durante a Queda|{param10:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Soco Cardíaco",
+		"info": "**Pressionar**\nUsa o vento para realizar o Soco Cardíaco que inflige Dano Anemo.\n\n**Manter Pressionado**\nAcumula poder e desfere um soco ainda mais forte. Enquanto carrega, obterá o efeito \"Declinação\" que fortalece o Soco Cardíaco: Ao lançar a Habilidade ou quando a habilidade terminar de carregar, desferirá um Soco Cardíaco que inflige Dano Anemo.\n\n**Declinação**\nAumenta o Dano infligido do próximo Soco Cardíaco e acumula até 4 vezes.\nQuando possuir 4 acúmulos de \"Declinação\", gerará o efeito \"Convicção\", que aumentará o Dano infligido pelo próximo Soco Cardíaco e aumentará sua AdE.",
+		"description": "Esse soco aparentemente simples contém o desejo de Heizou para que os criminosos honestamente confessem e se arrependam.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Aumento de Dano de Declinação|{param2:F1P}/acúmulo",
+				"Aumento de Dano de Convicção|{param3:F1P}",
+				"Duração de Declinação|{param5:F1}s",
+				"Tempo de Recarga|{param4:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Chute Turbilhão",
+		"info": "Salta no ar e usa a Bomba de Vácuo Fudou para chutar seus inimigos explosivamente. Ao atingir os inimigos, a Bomba de Vácuo Fudou gerará um Túnel de Vento Repreendedor que atrairá inimigos e objetos próximos, infligindo Dano Anemo em AdE.\nQuando a Bomba de Vácuo Fudou atinge inimigos afetados por Hydro/Pyro/Cryo/Electro, esses inimigos serão afetados pelo efeito \"Olho do Furacão\". Esse efeito explodirá após um breve momento e infligirá Dano em AdE do tipo elemental correspondente.\nBomba de Vácuo Fudou pode atingir até 4 inimigos com Olho do Furacão; os inimigos não poderão estar sob a influência de Olhos do Furacão de elementos diferentes simultaneamente.",
+		"description": "Uma técnica que reúne Anemo em um local antes de desferi-lo em um único chute. Sempre está presente para chutar as costas de algum criminoso fugitivo.",
+		"attributes": {
+			"labels": [
+				"Dano da Bomba de Vácuo Fudou|{param1:F1P}",
+				"Dano de Olho do Furacão|{param2:F1P}",
+				"Recarga|{param3:F1}s",
+				"Energia Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Prática Paradoxal",
+		"info": "Quando Shikanoin Heizou está ativo no campo de batalha e desencadeia a reação de Redemoinho, ele obtém um acúmulo do efeito \"Declinação\" de **Soco Cardíaco**. Esse efeito pode ser desencadeado uma vez por 0.1 segundo."
+	},
+	"passive2": {
+		"name": "Razão Penetradora",
+		"info": "Quando **Soco Cardíaco** atinge o inimigo, aumenta a Proficiência Elemental em 80 pontos para todos os membros da equipe (não inclui Shikanoin Heizou) por 10s."
+	},
+	"passive3": {
+		"name": "Culpa Pré-Existente",
+		"info": "Diminui o consumo de Stamina ao correr de todos os seus membros da equipe em 20%.\nNão acumulável com Talentos Passivos que concedem exatamente os mesmos efeitos."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos do Mundo Mortal",
+				"count": 3
+			},
+			{
+				"name": "Insígnia dos Ladrões de Tesouro",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 2
+			},
+			{
+				"name": "Insígnia do Corvo Prateado",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 4
+			},
+			{
+				"name": "Insígnia do Corvo Prateado",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 6
+			},
+			{
+				"name": "Insígnia do Corvo Prateado",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 9
+			},
+			{
+				"name": "Insígnia do Corvo Prateado",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 4
+			},
+			{
+				"name": "Insígnia de Corvo Dourado",
+				"count": 4
+			},
+			{
+				"name": "Significado de Éons",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 6
+			},
+			{
+				"name": "Insígnia de Corvo Dourado",
+				"count": 6
+			},
+			{
+				"name": "Significado de Éons",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 12
+			},
+			{
+				"name": "Insígnia de Corvo Dourado",
+				"count": 9
+			},
+			{
+				"name": "Significado de Éons",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 16
+			},
+			{
+				"name": "Insígnia de Corvo Dourado",
+				"count": 12
+			},
+			{
+				"name": "Significado de Éons",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

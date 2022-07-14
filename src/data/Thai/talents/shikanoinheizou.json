@@ -1,0 +1,207 @@
+{
+	"name": "Shikanoin Heizou",
+	"combat1": {
+		"name": "โจมตีปกติ: Fudou Style Martial Arts",
+		"info": "**โจมตีปกติ**\nต่อสู้กับศัตรูด้วยท่วงท่าที่ได้รับการสนับสนุนจากสายลมที่โหมกระหน่ำ ทำการโจมตีต่อเนื่องมากสุด 5 ครั้ง เพื่อสร้างความเสียหายลม\n\n**ชาร์จโจมตี**\nใช้พลังกายบางส่วน เพื่อใช้ท่าเตะและสร้างความเสียหายลม\n\n**โจมตีพุ่งลงจากอากาศ**\nรวบรวมพลังของสายลมที่รุนแรง กระโจนจากกลางอากาศลงมายังพื้นดิน เพื่อโจมตีศัตรูที่อยู่ในเส้นทางการโจมตี โดยจะสร้างความเสียหายลมวงกว้างเมื่อลงถึงพื้น",
+		"attributes": {
+			"labels": [
+				"ความเสียหายขั้น 1|{param1:F1P}",
+				"ความเสียหายขั้น 2|{param2:F1P}",
+				"ความเสียหายขั้น 3|{param3:F1P}",
+				"ความเสียหายขั้น 4|{param4:F1P}+{param5:F1P}+{param6:F1P}",
+				"ความเสียหายขั้น 5|{param7:F1P}",
+				"ความเสียหายชาร์จโจมตี|{param8:F1P}",
+				"ชาร์จโจมตีใช้พลังกาย|{param9:F1} หน่วย",
+				"ความเสียหายพุ่งลง|{param10:F1P}",
+				"ความเสียหายพุ่งถึงพื้นจากที่ต่ำ/สูง|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Heartstopper Strike",
+		"info": "**กด**\nควบคุมพลังของสายลมที่รุนแรง เพื่อปล่อย Heartstopper Strike ไปข้างหน้า และสร้างความเสียหายลม\n\n**กดค้าง**\nรวบรวมพลังเพื่อปลดปล่อยหมัดที่ทรงพลังยิ่งขึ้น โดยระหว่างที่รวบรวมพลัง จะได้รับเอฟเฟกต์ Declension ที่สามารถเสริมพลังของ Heartstopper Strike ได้ ซึ่งเมื่อปล่อยสกิลหรือสิ้นสุดช่วงเวลาการชาร์จ จะปล่อย Heartstopper Strike ออกไปข้างหน้าเพื่อสร้างความเสียหายลม\n\n**Declension**\nเพิ่มความเสียหายของ Heartstopper Strike ครั้งต่อไป โดยจะซ้อนทับได้มากสุด 4 ชั้น\nเมื่อมี Declension 4 ชั้น จะทำให้เกิดเอฟเฟกต์ Conviction ซึ่งจะทำให้ Hearstopper Strike ครั้งต่อไปรุนแรงขึ้นไปอีกขั้น และมีพื้นที่ผลกระทบที่กว้างมากขึ้น",
+		"description": "มองดูเหมือนจะเป็นเพียงแค่หมัดธรรมดา แต่ก็อัดแน่นไปด้วยความตั้งใจของ Heizou ที่จะทำให้คนบาปสารภาพความผิด และสำนึกผิดอย่างเชื่อฟัง",
+		"attributes": {
+			"labels": [
+				"ความเสียหายสกิล|{param1:F1P}",
+				"โบนัสความเสียหายของ Declension|{param2:F1P}/ชั้น",
+				"โบนัสความเสียหายของ Conviction|{param3:F1P}",
+				"ระยะเวลาของ Declension|{param5:F1} วิ",
+				"คูลดาวน์|{param4:F1} วิ"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Windmuster Kick",
+		"info": "กระโดดขึ้นไปกลางอากาศ และใช้ท่าเตะ Fudou Style Vacuum Slugger ใส่ศัตรู โดยในตอนที่ Fudou Style Vacuum Slugger ระเบิดเมื่อถูกเป้าหมาย จะก่อให้เกิด Arresting Windtunnel ซึ่งจะดึงดูดวัตถุและศัตรูที่อยู่ในบริเวณใกล้เคียงให้เข้าไป เกิดเป็นความเสียหายลมวงกว้าง\nเมื่อ Vacuum Slugger ถูกศัตรูที่ติดสถานะ ธาตุน้ำ/ธาตุไฟ/ธาตุน้ำแข็ง/ธาตุไฟฟ้า ศัตรูเหล่านี้จะถูกเอฟเฟกต์ \"Windmuster Iris\" ซึ่งจะระเบิดไม่นานหลังจากนั้นและหายไป พร้อมทำให้เกิดความเสียหายของธาตุที่เกี่ยวข้องเป็นวงกว้าง\nVacuum Slugger จะทำให้เกิดเอฟเฟกต์ \"Windmuster Iris\" แก่ศัตรูที่ถูกโจมตีได้มากสุด 4 ตัว โดยตัวศัตรูจะไม่สามารถอยู่ในสถานะ \"Windmuster Iris\" ของคุณลักษณะธาตุหลายอย่างพร้อมกันได้",
+		"description": "การเคลื่อนไหวเฉพาะตัวที่รวบรวมธาตุลมไว้ที่จุดเดียวและเตะออกไป ซึ่งมักจะเตะไปโดนแผ่นหลังของผู้กระทำผิดที่ถูกเปิดเผยตัวและกำลังวิ่งหนีกระเจิดกระเจิงเสมอ",
+		"attributes": {
+			"labels": [
+				"ความเสียหาย Fudou Style Vacuum Slugger|{param1:F1P}",
+				"ความเสียหาย Windmuster Iris|{param2:F1P}",
+				"คูลดาวน์|{param3:F1} วิ",
+				"พลังงานธาตุ|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Paradoxical Practice",
+		"info": "เมื่อ Shikanoin Heizou ทำให้เกิดปฏิกิริยาการกระจาย จะได้รับเอฟเฟกต์ Declension ของ **Heartstopper Strike** 1 ชั้น โดยที่ทุก 0.1 วินาที เอฟเฟกต์นี้จะสามารถเกิดขึ้นได้มากสุด 1 ครั้ง"
+	},
+	"passive2": {
+		"name": "Penetrative Reasoning",
+		"info": "หลังจากที่ **Heartstopper Strike** ถูกเป้าหมาย ความชำนาญธาตุของตัวละครทั้งหมดในทีม (ไม่รวมตัวของ Shikanoin Heizou เอง) จะเพิ่มขึ้น 80 หน่วย เป็นเวลา 10 วินาที"
+	},
+	"passive3": {
+		"name": "Pre-Existing Guilt",
+		"info": "ลดอัตราการเสียพลังกายจากการวิ่ง ให้ตัวละครของตนเองที่อยู่ในทีมลง 20%\nไม่สามารถซ้อนทับพรสวรรค์ติดตัวที่เอฟเฟกต์เหมือนกันทุกประการได้"
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Transience",
+				"count": 3
+			},
+			{
+				"name": "Treasure Hoarders Insignia",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 2
+			},
+			{
+				"name": "Silver Raven Insignia",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 4
+			},
+			{
+				"name": "Silver Raven Insignia",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 6
+			},
+			{
+				"name": "Silver Raven Insignia",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 9
+			},
+			{
+				"name": "Silver Raven Insignia",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 4
+			},
+			{
+				"name": "Golden Raven Insignia",
+				"count": 4
+			},
+			{
+				"name": "The Meaning of Aeons",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 6
+			},
+			{
+				"name": "Golden Raven Insignia",
+				"count": 6
+			},
+			{
+				"name": "The Meaning of Aeons",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 12
+			},
+			{
+				"name": "Golden Raven Insignia",
+				"count": 9
+			},
+			{
+				"name": "The Meaning of Aeons",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 16
+			},
+			{
+				"name": "Golden Raven Insignia",
+				"count": 12
+			},
+			{
+				"name": "The Meaning of Aeons",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}
