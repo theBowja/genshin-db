@@ -86,7 +86,7 @@ let folders = [
 	},
 	{
 		function: 'animals',
-		params: ['shiba', 'birds, { matchCategories: true }', 'true, { matchCategories: true }']
+		params: ['shiba', 'birds, { matchCategories: true }', 'true, { matchNames: false, matchCategories: true }']
 	},
 	{
 		function: 'namecards',

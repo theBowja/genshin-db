@@ -84,7 +84,7 @@ function makeIndices() {
 					if(index.namemap[filename] !== undefined) console.log(`Duplicate filename: ${lang}/${folder}: ${filename}`);
 					index.namemap[filename] = data.name;
 					if(index.names[data.name] !== undefined) {
-						if(!['risingstarlumine', 'scarletbeakduck', 'prizedisshinbladea', 'prizedisshinbladeb', 'cakefortravelera', 'keysigila',
+						if(!['risingstarlumine', 'scarletbeakduck', 'prizedisshinbladea', 'prizedisshinbladeb', 'cakefortravelera', 'cakefortravelerb', 'keysigila',
 							'keysigilb', 'keysigilc', 'keysigild'].includes(filename)) // TODO: add translated lumine/aether to the end of name for indexing
 							console.log(`Duplicate name: ${lang}/${folder}: ${data.name} | ${filename}`);
 					}
