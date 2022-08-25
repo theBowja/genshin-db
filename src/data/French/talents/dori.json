@@ -1,0 +1,207 @@
+{
+	"name": "Dori",
+	"combat1": {
+		"name": "Attaque normale : Valse des lames (modifiée)",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 3 coups d'épée.\n\n**Attaque chargée**\nExécute une succession d'attaques tournoyantes contre les ennemis proches ; cette attaque consomme de l'endurance de façon continue.\nL'attaque chargée se termine sur un coup puissant.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}+{param3:F1P}",
+				"DGT 3e coup|{param4:F1P}",
+				"DGT enchaînement attaque chargée|{param5:F1P}",
+				"DGT coup final attaque chargée|{param6:P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts/s",
+				"Durée max|{param8:F1} s",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Lampe de protection : Canon pacificateur",
+		"info": "Commande à une lampe de protection de déclencher un tir pacificateur sur les ennemis, infligeant des DGT Électro.\nÀ l'impact, le tir pacificateur crée 2 obus de S.A.V. qui poursuivent automatiquement les ennemis pour infliger des DGT Électro.",
+		"description": "Il est dit que Dori peut résoudre n'importe lequel de vos problèmes... Pour un prix adéquat, bien sûr...",
+		"attributes": {
+			"labels": [
+				"DGT tir pacificateur|{param1:F1P}",
+				"DGT obus de S.A.V.|{param2:F1P}",
+				"Temps de recharge|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Méticulosité d'Alcazarzaray",
+		"info": "Invoque le djinn à l'intérieur de la lampe pour accorder au client divers types d'aide.\n\n**Djinn**\nRelie un personnage proche, qui bénéficie alors des effets suivants :\n· Récupère des PV de façon continue selon les PV max de Dori.\n· Obtient continuellement de l'énergie élémentaire.\n· Est affecté par l'élément Électro.\n\nLorsque le lien entre le djinn et le personnage touche un ennemi, il lui inflige des DGT Électro une fois toutes les 0,4 s.\n\nIl ne peut exister qu'un seul djinn à la fois.",
+		"description": "« Hmm ? Tu choisis cette lampe, c'est ça ? Waouh, bon goût ! Malheureusement, ce trésor n'a pas de prix... Je dirais que c'est comme cette mascotte qui traîne avec toi et que tu ne vendras jamais, même pour tous les moras du monde... »",
+		"attributes": {
+			"labels": [
+				"DGT lien|{param1:P}",
+				"Soins continus|{param2:F1P} PV max + {param3:I}",
+				"Restauration énergie élémentaire|{param4:F1}",
+				"Durée|{param5:F1} s",
+				"Temps de recharge|{param6:F1} s",
+				"Énergie élémentaire|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Un œil d'or",
+		"info": "Si le personnage relié au **djinn** a déclenché une réaction d'Électrocution, de Supraconduction, de Surcharge, de Stimulation, de Suractivation, d'Exubérance, de Dispersion Électro ou de Cristallisation Électro, le TdR de **Lampe de protection : Canon pacificateur** diminue de 1 s.\nCet effet peut être déclenché une fois toutes les 3 s."
+	},
+	"passive2": {
+		"name": "Intérêts composés",
+		"info": "Si le tir pacificateur ou les obus de S.A.V. de **Lampe de protection : Canon pacificateur** touche un ennemi, Dori restaure 5 pts d'énergie élémentaire tous les 100 % de recharge d'énergie qu'elle possède.\nPour chaque utilisation de Lampe de protection : Canon pacificateur, l'énergie élémentaire peut être restaurée une fois et d'un maximum de 15 pts de cette manière."
+	},
+	"passive3": {
+		"name": "Commande inattendue",
+		"info": "Le personnage a 25 % de chance de récupérer des matériaux de synthèse lors de la synthèse de matériaux d'amélioration de personnage ou d'arme."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Ingénuité",
+				"count": 3
+			},
+			{
+				"name": "Satin rouge délavé",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 2
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 4
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 6
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 9
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 4
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 4
+			},
+			{
+				"name": "Branche de jade cramoisi",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 6
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 6
+			},
+			{
+				"name": "Branche de jade cramoisi",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 12
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 9
+			},
+			{
+				"name": "Branche de jade cramoisi",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 16
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 12
+			},
+			{
+				"name": "Branche de jade cramoisi",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

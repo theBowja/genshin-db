@@ -604,10 +604,10 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-gameVersion = "2.8"; // new data will use this as added version
-// importData('characters', collateCharacter);
-// importCurve('characters');
-// importData('constellations', collateConstellation);
+gameVersion = "3.0"; // new data will use this as added version
+importData('characters', collateCharacter);
+importCurve('characters');
+importData('constellations', collateConstellation);
 importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');

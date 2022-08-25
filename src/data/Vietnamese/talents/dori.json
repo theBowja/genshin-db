@@ -1,0 +1,207 @@
+{
+	"name": "Dori",
+	"combat1": {
+		"name": "Tấn Công Thường - Kiếm Vũ Kỳ Ảo (Cải Tiến)",
+		"info": "**Tấn Công Thường**\nThực hiện tối đa 3 lần chém liên tiếp.\n\n**Trọng Kích**\nTiêu hao thể lực để xoay kiếm tấn công địch xung quanh.\nKhi ngừng quay, sẽ bổ một nhát cực mạnh.\n\n**Tấn Công Khi Đáp**\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+		"attributes": {
+			"labels": [
+				"Sát Thương Lần 1|{param1:F1P}",
+				"Sát Thương Lần 2|{param2:F1P}+{param3:F1P}",
+				"Sát Thương Lần 3|{param4:F1P}",
+				"Sát Thương Trọng Kích Tuần Hoàn|{param5:F1P}",
+				"Sát Thương Trọng Kích Chí Mạng|{param6:P}",
+				"Thể lực Trọng Kích tiêu hao|Mỗi giây {param7:F1} điểm",
+				"Thời Gian Kéo Dài Tối Đa|{param8:F1}s",
+				"Sát Thương Khi Đáp|{param9:F1P}",
+				"Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Đèn Trấn Linh - Pháo Giải Trừ Phiền Não",
+		"info": "Điều khiển Đèn Trấn Linh bắn Pháo Cắt Đứt Phiền Não về phía kẻ địch, gây Sát Thương Nguyên Tố Lôi.\nPháo Cắt Đứt Phiền Não sau khi trúng sẽ sản sinh 2 Tên Lửa Hậu Mãi đuổi theo kẻ địch gần đó, gây Sát Thương Nguyên Tố Lôi.",
+		"description": "Nghe nói, cho dù là giải quyết phiền phức gì đi nữa, chỉ cần giá cả hợp lý là Dori đều sẽ làm được.",
+		"attributes": {
+			"labels": [
+				"Sát Thương Pháo Cắt Đứt Phiền Não|{param1:F1P}",
+				"Sát Thương Tên Lửa Hậu Mãi|{param2:F1P}",
+				"CD|{param3:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Alcazarzaray Tinh Xảo",
+		"info": "Triệu hồi Linh Hồn Đèn để cung cấp các loại dịch vụ cho khách.\n\n**Linh Hồn Đèn**\nKết nối với nhân vật gần đó. Nhân vật kết nối với Linh Hồn Đèn sẽ:\n·Hồi phục HP liên tục, lượng hồi phục dựa vào giới hạn HP của Dori;\n·Liên tục nhận được Năng Lượng Nguyên Tố.\n·Vào trạng thái đính kèm nguyên tố Lôi.\n\nNgoài ra, dây liên kết giữa Linh Hồn Đèn và nhân vật khi chạm phải kẻ địch, mỗi 0.4s sẽ gây 1 lần Sát Thương Nguyên Tố Lôi cho kẻ địch.\n\nCùng lúc chỉ có thể tồn tại một Linh Hồn Đèn.",
+		"description": "\"Hửm? Quý khách chọn ngọn đèn này sao? Ây dà... biết coi hàng đó! Nhưng mà, đây là báu vật vô giá. Hoặc có thể nói là, cho dù có trả bao nhiêu đi nữa thì quý khách cũng đâu có bán vật may mắn bay bay bên cạnh đâu đúng không?\"",
+		"attributes": {
+			"labels": [
+				"Sát Thương Liên Kết|{param1:P}",
+				"Lượng Trị Liệu|{param2:F1P} Giới Hạn HP +{param3:I}",
+				"Hồi Phục Năng Lượng Nguyên Tố|{param4:F1}",
+				"Thời Gian Kéo Dài|{param5:F1}s",
+				"CD|{param6:F1}s",
+				"Năng Lượng Nguyên Tố|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Đãi Cát Tìm Vàng",
+		"info": "Nhân vật kết nối với **Linh Hồn Đèn** khi kích hoạt phản ứng Điện Cảm, Siêu Dẫn, Quá Tải, Sinh Trưởng, Tăng Cường, Nở Rộ, Khuếch Tán nguyên tố Lôi hoặc Kết Tinh nguyên tố Lôi, CD của **Đèn Trấn Linh - Pháo Giải Trừ Phiền Não** sẽ rút ngắn 1s.\nHiệu quả này mỗi 3s tối đa kích hoạt một lần."
+	},
+	"passive2": {
+		"name": "Lợi Chồng Lợi",
+		"info": "Pháo Cắt Đứt Phiền Não hoặc Tên Lửa Hậu Mãi của **Đèn Trấn Linh - Pháo Giải Trừ Phiền Não** khi trúng kẻ địch sẽ căn cứ vào mỗi 100% Hiệu Quả Nạp Nguyên Tố của Dori để hồi phục cho Dori 5 điểm Năng Lượng Nguyên Tố.\nMỗi lần thi triển Đèn Trấn Linh - Pháo Giải Trừ Phiền Não chỉ có thể hồi phục 1 lần Năng Lượng Nguyên Tố bằng cách này, và tối đa hồi phục 15 điểm Năng Lượng Nguyên Tố."
+	},
+	"passive3": {
+		"name": "Đơn Hàng Bất Ngờ",
+		"info": "Khi ghép nguyên liệu bồi dưỡng vũ khí và nhân vật, có 25% tỷ lệ hoàn trả một phần nguyên liệu ghép."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Bài Giảng Của \"Tinh Tế\"",
+				"count": 3
+			},
+			{
+				"name": "Băng Đỏ Phai Màu",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 2
+			},
+			{
+				"name": "Băng Đỏ Viền Vàng",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 4
+			},
+			{
+				"name": "Băng Đỏ Viền Vàng",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 6
+			},
+			{
+				"name": "Băng Đỏ Viền Vàng",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 9
+			},
+			{
+				"name": "Băng Đỏ Viền Vàng",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 4
+			},
+			{
+				"name": "Băng Đỏ Ánh Vàng",
+				"count": 4
+			},
+			{
+				"name": "Nhánh Huyết Ngọc",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 6
+			},
+			{
+				"name": "Băng Đỏ Ánh Vàng",
+				"count": 6
+			},
+			{
+				"name": "Nhánh Huyết Ngọc",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 12
+			},
+			{
+				"name": "Băng Đỏ Ánh Vàng",
+				"count": 9
+			},
+			{
+				"name": "Nhánh Huyết Ngọc",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 16
+			},
+			{
+				"name": "Băng Đỏ Ánh Vàng",
+				"count": 12
+			},
+			{
+				"name": "Nhánh Huyết Ngọc",
+				"count": 2
+			},
+			{
+				"name": "Vương Miện Trí Thức",
+				"count": 1
+			}
+		]
+	}
+}
