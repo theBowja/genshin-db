@@ -94,7 +94,7 @@ async function stealWikiaVersion(folder) {
 async function getCharList(region) {
 	const https = require('https');
 	return new Promise(resolve => {
-		https.get(`https://genshin.mihoyo.com/en/character/${region}?char=0`, function(res) {
+		https.get(`https://genshin.hoyoverse.com/en/character/${region}?char=0`, function(res) {
 			let data = '';
 			res.on('data', function(chunk) { data += chunk;	});
 			res.on('end', function() {
@@ -110,7 +110,7 @@ async function getCharList(region) {
 }
 async function getUpperBodyImages() {
 	const util = require('util');
-	const regions = ['mondstadt', 'liyue', 'inazuma'];
+	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru'];
 	let myimages = {};
 	try { myimages = require(`./src/data/image/characters.json`); } catch(e) {}
 
