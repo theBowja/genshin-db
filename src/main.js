@@ -67,12 +67,20 @@ function sanitizeOptions(opts) {
     return sanOpts;
 }
 
+const MatchType = {
+    None: "none",
+    Names: "names",
+    AltNames: "altnames",
+    Aliases: "aliases",
+    Categories: "categories"
+}
+
 // TODO: if folder is undefined, search through every folder
 function retrieveData(query, folder, opts, getfilename) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
     let queryMatch = autocomplete("" + query, buildQueryDict(opts.queryLanguages, folder, opts));
     if (queryMatch === undefined) { // no result;
-        return opts.dumpResult ? getDump(query, folder, undefined, opts, undefined, undefined) : undefined;
+        return opts.dumpResult ? getDump(query, folder, undefined, MatchType.None, opts, undefined, undefined) : undefined;
     }
 
     for (let lang of opts.queryLanguages) {
@@ -84,7 +92,7 @@ function retrieveData(query, folder, opts, getfilename) {
             const filename = langindex.names[queryMatch];
             if (getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
-            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, MatchType.Names, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .altnames
@@ -92,7 +100,7 @@ function retrieveData(query, folder, opts, getfilename) {
             const filename = altnames.getFilename(lang, folder, queryMatch);
             if (getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
-            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, MatchType.AltNames, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .aliases
@@ -100,7 +108,7 @@ function retrieveData(query, folder, opts, getfilename) {
             const filename = langindex.aliases[queryMatch];
             if (getfilename) return filename;
             let result = getData(opts.resultLanguage, folder, filename);
-            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, filename, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, MatchType.Aliases, opts, filename, result) : result;
         }
 
         // check if queryMatch is in .categories or is 'names'
@@ -115,17 +123,18 @@ function retrieveData(query, folder, opts, getfilename) {
                 if (res !== undefined) accum.push(res);
                 return accum;
             }, []);
-            return opts.dumpResult ? getDump(query, folder, queryMatch, opts, tmparr, result) : result;
+            return opts.dumpResult ? getDump(query, folder, queryMatch, MatchType.Categories, opts, tmparr, result) : result;
         }
     }
-    return opts.dumpResult ? getDump(query, folder, queryMatch, opts, undefined, undefined) : undefined;
+    return opts.dumpResult ? getDump(query, folder, queryMatch, MatchType.None, opts, undefined, undefined) : undefined;
 }
 
-function getDump(query, folder, match, options, filename, result) {
+function getDump(query, folder, match, matchtype, options, filename, result) {
     return {
         query: query,
         folder: folder,
         match: match,
+        matchtype: matchtype,
         options: JSON.parse(JSON.stringify(options)),
         filename: filename !== undefined ? JSON.parse(JSON.stringify(filename)) : filename,
         result: result
@@ -396,8 +405,10 @@ genshin.searchFolder = function (folder, query, opts) {
 
 genshin.helper = require('./helper.js');
 
+// EXPORT ENUMS
 genshin.Language = genshin.Languages = language.LanguagesEnum;
 genshin.Folder = genshin.Folders = Folder;
+genshin.MatchType = genshin.MatchTypes = MatchType;
 
 //TODO: documentate the three methods below
 /**
