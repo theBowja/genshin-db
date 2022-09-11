@@ -113,10 +113,11 @@ function makeIndices() {
 						if(values === undefined || values === "" ) continue; // go next if our data doesn't have that category as a property
 						if(prop === "costs") values = [...new Set(Object.values(values).flat().map(ele => ele.name))];
 						if(prop === "rewardpreview" || prop === "reward") values = [...new Set(values.map(ele => ele.name))];
+						if(prop === "altrecipes") values = values.flat();
 						if(!Array.isArray(values)) values = [values]; // make into array
 
 						for(let val of values) {
-							if(prop === "ingredients") val = val.name;// val = val.replace(/ x\d$/i, '');
+							if(prop === "ingredients" || prop === "recipe" || prop === "altrecipes") val = val.name;// val = val.replace(/ x\d$/i, '');
 							else if(prop === "birthday") {
 								let [month, day] = data.birthdaymmdd.split('/');
 								let birthday = new Date(Date.UTC(2000, month-1, day));
