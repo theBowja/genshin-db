@@ -392,6 +392,16 @@ genshin.adventureranks = genshin.adventurerank = function (query, opts) {
 }
 
 /**
+ * Get data about crafting recipes at the crafting bench
+ * @param {string} query - item to craft
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.crafts = genshin.craft = function (query, opts) {
+    return retrieveData(query, Folder.crafts, opts);
+}
+
+/**
  * Get data in any specified folder.
  * @param {string} folder - Folder name. For example: 'characters'.
  * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)

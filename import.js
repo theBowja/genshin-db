@@ -484,6 +484,11 @@ function collateAdventureRank(existing, newdata, lang) {
 	copyPropsIfExist(newdata, existing, ['name', 'exp', 'unlockdescription', 'reward']);
 }
 
+function collateCraft(existing, newdata, lang) {
+	clearObject(existing);
+	copyPropsIfExist(newdata, existing, ['name', 'filter', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
+}
+
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
@@ -604,13 +609,13 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-gameVersion = "3.0"; // new data will use this as added version
+// gameVersion = "3.0"; // new data will use this as added version
 // importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
-importCurve('weapons');
+// importData('weapons', collateWeapon)
+// importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
@@ -626,6 +631,7 @@ importCurve('weapons');
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
 // importData('adventureranks', collateAdventureRank); // max 60
+importData('crafts', collateCraft);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate

@@ -19,6 +19,7 @@
 /// <reference path="./folders/weaponmaterialtypes.d.ts" />
 /// <reference path="./folders/weapons.d.ts" />
 /// <reference path="./folders/windgliders.d.ts" />
+/// <reference path="./folders/crafts.d.ts" />
 
 /// <reference path="./enums.d.ts" />
 
@@ -123,6 +124,7 @@ declare module "genshin-db" {
 	export const achievements: QueryFunction<Achievement>;
 	export const achievementgroups: QueryFunction<AchievementGroup>;
 	export const adventureranks: QueryFunction<AdventureRank>;
+	export const crafts: QueryFunction<Craft>;
 
 	export interface categories {
 	    (query: string, folder: Folder, opts: QueryOptions): undefined | string[];

@@ -24,6 +24,7 @@ declare module "genshin-db" {
 
 	    foods          = "foods",
 	    materials      = "materials",
+	    crafts         = "crafts",
 	    weaponmaterialtypes = "weaponmaterialtypes",
 	    talentmaterialtypes = "talentmaterialtypes",
 

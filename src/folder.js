@@ -10,6 +10,7 @@ module.exports = {
 
 	foods          : 'foods',
 	materials      : 'materials',
+	crafts         : 'crafts',
 	weaponmaterialtypes: 'weaponmaterialtypes',
 	talentmaterialtypes: 'talentmaterialtypes',
 
