@@ -486,7 +486,7 @@ function collateAdventureRank(existing, newdata, lang) {
 
 function collateCraft(existing, newdata, lang) {
 	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'filter', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
+	copyPropsIfExist(newdata, existing, ['name', 'filter', 'sortorder', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
 }
 
 function importCurve(folder) {

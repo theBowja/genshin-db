@@ -2,6 +2,7 @@ declare module "genshin-db" {
 	export interface Craft {
 	    name: string;
 	    filter: string; // pretty much like category
+	    sortorder: number;
 	    unlockrank: number; // adventure rank this is unlocked at?
 	    resultcount: number;
 	    moracost: number;
