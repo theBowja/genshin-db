@@ -124,32 +124,6 @@ The result also includes a function to calculate the stats of the weapon at each
 Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
 Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbweaponsquery-opts) to see example inputs and outputs for this function.
 
-### genshindb.weaponmaterialtypes(query[, opts])
-
-Possible inputs for query parameter are:
-
-- all weapon ascension material names
-- all days of the week
-- all regions
-- all domains of forgery
-- "names"
-
-Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbweaponmaterialtypesquery-opts) to see example inputs and outputs for this function.
-
-### genshindb.talentmaterialtypes(query[, opts])
-
-Possible inputs for query parameter are:
-
-- all talent book names
-- all days of the week
-- all regions
-- all domains of mastery
-- "names"
-
-Check out [categories.json](https://github.com/theBowja/genshin-db/blob/main/src/english/categories.json) file to see choices for each category.\
-Check out [examples.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md#genshindbtalentmaterialtypesquery-opts) to see example inputs and outputs for this function.
-
 ### genshindb.materials(query[, opts])
 
 - rarity, type, 'WOOD', ingredient, specialty liyue, domains, days of week, talent books, etc.
