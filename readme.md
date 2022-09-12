@@ -11,28 +11,19 @@ Flexibly search and get the information of characters, talents, constellations, 
 
 All in-game languages are supported for query and result.
 
-Install Node v12 or higher. Install npm. Then install this package into your project with:
-```cmd
-npm install genshin-db
-```
-
-Start with:
-
-```js
-const genshindb = require('genshin-db');
-```
-
 REFER TO [EXAMPLES.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md) since the readme below isn't detailed.
 
-Every query input string will be **autocompleted** to match available values. This means doing something like genshin.characters('amb') will give the same results as genshin.characters('amber'). If there are no results, then **undefined** will be returned.
+This library provides numerous query functions for searching various data folders. Every query input string will be **autocompleted** to match available values. For example genshindb.characters('amb') will return data for 'Amber'. If there are no matches for your query, then **undefined** will be returned.
 
-Data format may change frequently. If you need to know the data format for some specific version of this library, you can go to the github and switch to the tag version you're on. Then go into the data folder and look at the data to find the format. Don't look into the template folder since it isn't up-to-date.
+Data format may change between versions. If you need to know the data format for some specific version of this library, you can go to the github and switch to the tag version you're on. Then go into the data folder and look at the data to find the format. Don't look into the template folder since it isn't up-to-date.
 
 If you need help or have questions, you can talk to me in [my discord](https://discord.gg/utZRUky5Xm).
 
 ## Table of Contents
 
-- [Options](#options)
+- [Setup](#setup)
+    - [Node](#node)
+- [Query Options](#query-options)
 - [Query Functions](#query-functions)
 - [Adding Custom Names](#adding-custom-names)
 - [Contributing](#contributing)
@@ -40,10 +31,36 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [Typescript](#typescript)
 - [Webpack](#webpack)
 
-## Options
+## Setup
 
-- [genshindb.setOptions(opts)](#genshindbsetoptionsopts)
-- [genshindb.getOptions()](#genshindbgetoptions)
+There are various ways you can add `genshin-db` to your project each with their pros/cons.
+
+### Node
+
+Install this package into your project with:
+```cmd
+npm install genshin-db@latest
+```
+
+Start with:
+```js
+const genshindb = require('genshin-db');
+```
+
+Once a new version of `genshin-db` comes out, you'll have to update using:
+```cmd
+npm install genshin-db@latest
+```
+
+### Webpack
+### distribution
+### genshin-db api
+
+Make sure to check the [releases page](https://github.com/theBowja/genshin-db/releases) for any possible breaking changes between versions.
+
+## Query Options
+
+Each query function can be augmented by various options. 
 
 ### genshindb.setOptions(opts)
 
@@ -245,7 +262,7 @@ If you just want to take the data and use it yourself, you are welcome to do so.
 
 ## Typescript
 
-I made an [index.d.ts file](https://github.com/theBowja/genshin-db/blob/main/index.d.ts). It probably works.
+I made an [index.d.ts file](https://github.com/theBowja/genshin-db/blob/main/types/index.d.ts). It probably works.
 
 Here's a bunch of examples for typing:
 
@@ -294,7 +311,7 @@ Available folder names can be found in src/folder.js file.
 ## Time and Space
 Updated 9/8/2021.
 
-genshin-db is around 18mb. If you're serving content, please do not send the entire package to the client. A web page receiving the entire webpack will take some time to load, which does not provide for the best user experience.
+genshin-db is around 30mb or 6mb compressed. If you're serving static content, please do not send the entire package to the client. A web page receiving the entire webpack will take some time to load, which does not provide for the best user experience.
 
 My query functions aren't the fastest thing in existence. But it is fast enough that it doesn't really matter. Unless you're running the code on a real potato.
 
