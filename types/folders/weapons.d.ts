@@ -1,6 +1,8 @@
 declare module "genshin-db" {
 	export interface Weapon {
 	    name: string;
+	    dupealias?: string; // Prized Isshin Blade
+
 	    description: string;
 	    weapontype: string;
 	    rarity: '1' | '2' | '3' | '4' | '5';

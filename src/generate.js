@@ -90,18 +90,19 @@ function makeIndices() {
 					}
 					index.names[data.name] = filename;
 
-					if(design.altnames[folder] !== undefined) {
-						for(let altname of design.altnames[folder]) { // add all the altnames to the index
-							let values = getNestedValue(data, altname.split('.'));
-							if(values === undefined || values === "") continue;
-							if(!Array.isArray(values))
-								values = [values];
-							for(let val of values) {
-								if(val !== undefined && val !== "") {
-									if(index.aliases[val] !== undefined && index.aliases[val] !== filename && filename !== 'lumine')
-										console.log(`Duplicate alias: ${lang}/${folder}: ${altname},${val},${filename}`);
-									index.aliases[val] = filename;
-								}
+					if(design.altnames[folder] === undefined) design.altnames[folder] = [];
+					design.altnames[folder].push('alias');
+					design.altnames[folder].push('dupealias');
+					for(let altname of design.altnames[folder]) { // add all the altnames to the index
+						let values = getNestedValue(data, altname.split('.'));
+						if(values === undefined || values === "") continue;
+						if(!Array.isArray(values))
+							values = [values];
+						for(let val of values) {
+							if(val !== undefined && val !== "") {
+								if(index.aliases[val] !== undefined && index.aliases[val] !== filename && filename !== 'lumine')
+									console.log(`Duplicate alias: ${lang}/${folder}: ${altname},${val},${filename}`);
+								index.aliases[val] = filename;
 							}
 						}
 					}

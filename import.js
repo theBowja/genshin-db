@@ -321,6 +321,7 @@ function collateWeapon(existing, inputdata) {
 
 	clearObject(existing);
 	existing.name = inputdata.name;
+	if(inputdata.dupealias) existing.dupealias = inputdata.dupealias;
 	if(inputdata.aliases) existing.aliases = inputdata.aliases;
 	existing.description = inputdata.description;
 	existing.weapontype = inputdata.weapontype;
@@ -384,7 +385,7 @@ async function collateMaterial(existing, newdata, lang, skipimageredirect) {
 	if(existing.dropdomain && existing.dropdomain !== "" && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
 	if(existing.daysofweek && existing.daysofweek.length !== 0 && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
-	const copyover = ['name', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
+	const copyover = ['name', 'dupealias', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
 	                  'daysofweek', 'source'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {
@@ -428,7 +429,7 @@ function collateEnemy(existing, newdata, lang) {
 
 function collateAchievement(existing, newdata, lang) {
 	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3']);
+	copyPropsIfExist(newdata, existing, ['name', 'dupealias', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3']);
 }
 
 function collateAchievementGroup(existing, newdata, lang) {
@@ -452,7 +453,7 @@ function collateWindGlider(existing, newdata, lang) {
 
 function collateAnimal(existing, newdata, lang) {
 	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'description', 'category', 'counttype', 'sortorder']);
+	copyPropsIfExist(newdata, existing, ['name', 'dupealias', 'description', 'category', 'counttype', 'sortorder']);
 	if(lang === 'English') {
 		newdata.images = {};
 		newdata.images.nameicon = newdata.nameicon;
@@ -486,7 +487,7 @@ function collateAdventureRank(existing, newdata, lang) {
 
 function collateCraft(existing, newdata, lang) {
 	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'filter', 'sortorder', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
+	// copyPropsIfExist(newdata, existing, ['name', 'filter', 'sortorder', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
 }
 
 function importCurve(folder) {
@@ -609,11 +610,11 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-// gameVersion = "3.0"; // new data will use this as added version
-// importData('characters', collateCharacter);
-// importCurve('characters');
-// importData('constellations', collateConstellation);
-// importData('talents', collateTalent);
+gameVersion = "3.1"; // new data will use this as added version
+importData('characters', collateCharacter);
+importCurve('characters');
+importData('constellations', collateConstellation);
+importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
@@ -631,7 +632,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
 // importData('adventureranks', collateAdventureRank); // max 60
-importData('crafts', collateCraft);
+// importData('crafts', collateCraft);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
