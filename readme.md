@@ -65,7 +65,7 @@ Make sure to check the [releases page](https://github.com/theBowja/genshin-db/re
 
 Each piece of data is sorted into [folders](https://github.com/theBowja/genshin-db/wiki/Folders) for example `characters` or `talents`. The API used to search these folders are called [query functions](#query-functions). Additionally, [options](#query-options) can be passed into these query functions which can expand the searchable subject or change the return result.
 
-If you want to get the entire list of data in a folder, you have to use `'names'` as the query and add `matchCategories: true` as a query option. For example `genshindb.characters('names', { matchCategories: true });` will return an array of the names (string) of every single character. `verboseCategories: true` can be added to the options in order for it to return an array of data objects instead.
+You can retrieve the entire list of data in a folder by passing in `'names'` as the query and add `matchCategories: true` as a query option. For example `genshindb.characters('names', { matchCategories: true });` will return an array of the names (string) of every single character. `verboseCategories: true` can be added to the options in order for it to return an array of data objects instead.
 
 There is a function [genshindb.addData](https://github.com/theBowja/genshin-db/blob/main/src/getdata.js#L281) for adding custom data but there is no documentation for it yet. I plan to simplify this function further later.
 
@@ -112,9 +112,8 @@ Gets the options that are set. The object returned is cloned and not referenced 
 
 Query functions are the primary way to retrieve data.
 
-You can use the general folder search function `genshindb.searchFolder(folder, query[, opts])` or one of the more specific query functions below.
-
-TODO
+You can use the general folder search function `genshindb.searchFolder(folder, query[, opts])`
+Or the more specific query functions `genshindb.[folder](query[, opts])`
 
 genshindb.achievementgroups(query[, opts]);
 genshindb.achievements(query[, opts]);
@@ -136,6 +135,36 @@ genshindb.rarity(query[, opts]);
 genshindb.talents(query[, opts]);
 genshindb.weapons(query[, opts]);
 genshindb.windgliders(query[, opts]);
+
+### Examples
+
+You can find [examples of query function usage in genshin-db here](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md).
+
+### API
+
+There is an API for these query functions. It returns a JSON response if there is a result. Otherwise an empty response for no result.\
+Caution: stat functions from characters/enemies are not included. Currently there is no solution for this.
+
+Format:\
+`https://genshin-db-api.vercel.app/api/[folder]?query=[query]`
+
+Examples:\
+https://genshin-db-api.vercel.app/api/characters?query=hu  
+https://genshin-db-api.vercel.app/api/characters?query=hu&matchCategories=true&dumpResult=true&queryLanguages=english,jap
+
+### Interactive App
+
+Web app for trying out genshin-db query functions.\
+Features: manipulate options, preview JSON results, share generated API links, and preview images.
+
+[GenshinDB Interactive](https://genshindb-ia.netlify.app/)
+
+### Data not included
+
+I don't plan on adding any data related to events.\
+If you need events data you can check out these two places:\
+https://github.com/Tibowl/HuTao/blob/master/src/data/events.json  
+https://api.ambr.top/assets/data/event.json
 
 ## Adding Custom Names
 
