@@ -1,0 +1,208 @@
+{
+	"name": "Nilou",
+	"combat1": {
+		"name": "Ataque Normal: Danza de la media luna",
+		"info": "**Ataque Normal**\nRealiza hasta 3 ataques rápidos.\n\n**Ataque Cargado**\nConsume una cierta cantidad de Aguante para ejecutar un golpe giratorio.\n\n**Ataque Descendiente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de ATQ Cargado|{param4:F1P}+{param5:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param6:F1} pts.",
+				"Daño de Caída|{param7:F1P}",
+				"Daño de impacto de caída baja/alta|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Danza de los siete reinos",
+		"info": "Nilou entra en el estado de “pirueta” e inflige Daño Hydro contra los enemigos cercanos en función de su Vida Máx.\nAdemás, cuando Nilou ejecuta un Ataque Normal o una Habilidad Elemental mientras está en este estado, entra respectivamente en los estados de “danza de espadas” y “danza espiral”, con los que inflige un Daño Hydro que no puede sustituirse imbuyéndose de otro elemento y que se considera daño de Habilidad Elemental.\n\nMientras estos estados estén activos, el tercer paso de baile de Nilou anulará el estado de pirueta y dará lugar a varios efectos distintos dependiendo del tipo del tercer paso baile:\n·Danza de espadas: libera una luna de agua que inflige Daño Hydro contra los enemigos con los que colisiona y hace que Nilou entre en el estado de “rezo de la luna”. Los Ataques Normales que ejecute en este estado se convertirán en danza de espadas, y el último golpe liberará una luna de agua.\n·Danza espiral: libera una rueda de agua purificadora que inflige Daño Hydro en el AdE y crea un aura de quietud que sigue a tu personaje en uso y que aplica continuamente sobre él el estado de Mojado.\n\nEn los estados de pirueta y rezo lunar, Nilou no puede ejecutar Ataques Cargados. Dichos estados se anulan si es retirada de combate.",
+		"description": "Cuando sus delicados pies tocan suavemente el agua, crea unas ondulaciones tan resplandecientes como los siete cielos.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F2P} de Vida Máx.",
+				"Daño de 1er golpe de danza de espadas/danza espiral|{param6:F2P}/{param2:F2P} de Vida Máx.",
+				"Daño de 2.º golpe de danza de espadas/danza espiral|{param7:F2P}/{param3:F2P} de Vida Máx.",
+				"Daño de luna de agua/rueda de agua|{param4:F2P}/{param5:F2P} de Vida Máx.",
+				"Duración de pirueta|{param11:F1} s",
+				"Duración de rezo de la luna|{param10:F1} s",
+				"Duración de aura de quietud|{param8:F1} s",
+				"TdE|{param9:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Danza del loto: Manantial onírico",
+		"info": "Interpreta la danza del manantial onírico y hace que florezca un loto de aguas lejanas para infligir Daño Hydro en el AdE en función de la Vida Máx. de Nilou y aplicar el estado de “eón perpetuo” sobre los enemigos golpeados.\nTras un breve lapso de tiempo, los enemigos afectados por el estado de eón perpetuo reciben Daño Hydro.",
+		"description": "Nunca hemos visto ese sueño lejano con nuestros propios ojos, pero esta danza puede recrearlo.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P} de Vida Máx.",
+				"Daño de eón perpetuo|{param2:F1P} de Vida Máx.",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Corte de los pétalos danzantes",
+		"info": "Si el equipo está formado únicamente por personajes Dendro o Hydro y hay al menos un personaje Dendro y uno Hydro en él, cuando Nilou completa el tercer paso de baile de **Danza de los siete reinos**, otorga a los personajes cercanos el estado de “cáliz de la abundancia” durante 30 s.\nCuando un personaje bajo el estado de cáliz de la abundancia recibe un ataque Dendro, la Maestría Elemental de todos los personajes cercanos aumenta en 100 pts. durante 10 s. Además, al causar una reacción de Florecimiento, se crearán núcleos feraces en lugar de núcleos Dendro.\nA diferencia de estos últimos, los núcleos feraces explotan rápidamente tras ser creados y tienen una mayor AdE.\nSin embargo, estos núcleos no pueden activar las reacciones de Sobreflorecimiento y Crepitar y comparten la misma limitación de cantidad que los núcleos Dendro. Los ataques de los núcleos feraces se consideran ataques de núcleos Dendro causados por la reacción de Florecimiento.\nCuando el equipo no cumple con los requisitos de los tipos elementales necesarios para este talento pasivo, se eliminarán los efectos de cáliz de la abundancia existentes."
+	},
+	"passive2": {
+		"name": "Sueño de la danza eónica",
+		"info": "Por cada 1000 pts. de Vida Máx. que Nilou tenga una vez superados los 30 000 pts. de Vida Máx., el daño de los núcleos feraces creados por los personajes en el estado de cáliz de la abundancia aumenta en un 9%.\nEl daño infligido con los núcleos feraces solo puede aumentar un máximo del 400% de esta manera."
+	},
+	"passive3": {
+		"name": "Loto de jade blanco",
+		"info": "Al lograr un “Perfecto” en un plato con efectos de ayuda a la aventura, hay una probabilidad del 12% de obtener el doble."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la praxis",
+				"count": 3
+			},
+			{
+				"name": "Espora fúngica",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la praxis",
+				"count": 2
+			},
+			{
+				"name": "Polen fluorescente",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la praxis",
+				"count": 4
+			},
+			{
+				"name": "Polen fluorescente",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la praxis",
+				"count": 6
+			},
+			{
+				"name": "Polen fluorescente",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la praxis",
+				"count": 9
+			},
+			{
+				"name": "Polen fluorescente",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la praxis",
+				"count": 4
+			},
+			{
+				"name": "Polvo quistecristalino",
+				"count": 4
+			},
+			{
+				"name": "Lágrima de la diosa del desastre",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la praxis",
+				"count": 6
+			},
+			{
+				"name": "Polvo quistecristalino",
+				"count": 6
+			},
+			{
+				"name": "Lágrima de la diosa del desastre",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la praxis",
+				"count": 12
+			},
+			{
+				"name": "Polvo quistecristalino",
+				"count": 9
+			},
+			{
+				"name": "Lágrima de la diosa del desastre",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la praxis",
+				"count": 16
+			},
+			{
+				"name": "Polvo quistecristalino",
+				"count": 12
+			},
+			{
+				"name": "Lágrima de la diosa del desastre",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

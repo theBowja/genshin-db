@@ -1,0 +1,208 @@
+{
+	"name": "Nilou",
+	"combat1": {
+		"name": "Ataque Normal: Dança da Meia-Lua",
+		"info": "**Ataque Normal**\nRealiza até 3 golpes rápidos.\n\n**Ataque Carregado**\nConsome uma certa quantidade de Stamina para desferir um golpe giratório.\n\n**Ataque Imersivo**\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano de Ataque Carregado|{param4:F1P}+{param5:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param6:F1}",
+				"Dano Durante a Queda|{param7:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Dança dos Sete Reinos",
+		"info": "Entra no estado de \"Pirueta\", infligindo Dano Hydro baseado na Vida Máxima de Nilou.\nEnquanto estiver no estado de Pirueta, ao desferir Ataques Normais ou lançar sua Habilidade Elemental, Nilou entrará nas posições \"Dança de Espadas\" e \"Dança Rodopiante\" respectivamente, fazendo com que o Dano infligido seja convertido em Dano Hydro que não pode ser substituído, e é considerado Dano de Habilidade Elemental.\n\nNesse estado, o terceiro passo da dança de Nilou eliminará o estado de Pirueta e, de acordo com o tipo do terceiro passo, desencadeará os seguintes efeitos:\n· Dança de Espadas: lança uma Lua Aquática, que inflige Dano Hydro contra os inimigos que atinge e faz Nilou entrar no estado \"Súplica Lunar\". Nesse estado, ao realizar Ataques Normais, eles serão convertidos em Dança de Espadas e, ao realizar o último ataque, será lançada uma Lua Aquática;\n· Dança Rodopiante: lança uma Roda d'Água, infligindo Dano Hydro em AdE, e gerando uma \"Aura da Tranquilidade\" que segue o personagem ativo, continuamente aplicando o estado Molhado aos oponentes.\n\nEnquanto Nilou estiver no estado de Pirueta ou da Súplica Lunar, ela não poderá desferir Ataques Carregados; esses estados serão eliminados quando Nilou sair do campo de batalha.",
+		"description": "\"Quando seus pés delicados tocam suavemente a água, ela cria ondulações tão resplandecentes quanto os sete céus.\"",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F2P} da Vida Máxima",
+				"Dano do 1° Golpe da Dança de Espadas/Dança Rodopiante|{param6:F2P}/{param2:F2P} da Vida Máxima",
+				"Dano do 2º Golpe da Dança de Espadas/Dança Rodopiante|{param7:F2P}/{param3:F2P} da Vida Máxima",
+				"Dano de Lua Aquática/Roda d'Água|{param4:F2P}/{param5:F2P} da Vida Máxima",
+				"Duração de Pirueta|{param11:F1}s",
+				"Duração da Súplica Lunar|{param10:F1}s",
+				"Duração da Aura da Tranquilidade|{param8:F1}s",
+				"Recarga|{param9:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Dança da Lótus: Nascente Longínqua Onírica",
+		"info": "Inicia a Dança da Nascente Longínqua Onírica, desabrochando a Lótus de Águas Longínquas, que inflige Dano Hydro em AdE baseado na Vida Máxima de Nilou e aplicando o estado \"Inundação Eterna\" aos inimigos atingidos.\nApós um curto intervalo, inimigos sob o estado Inundação Eterna sofrerão Dano Hydro.",
+		"description": "\"Nunca testemunhamos sonho tão distante, mas essa dança pode trazê-lo à vida.\"",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P} da Vida Máxima",
+				"Dano da Inundação Eterna|{param2:F1P} da Vida Máxima",
+				"Recarga|{param3:F1}s",
+				"Energia Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Corte das Pétalas Dançantes",
+		"info": "Quando todos os personagens da equipe são do tipo elemental Dendro e Hydro, e quando há pelo menos um personagem Dendro e Hydro:\nAo completar a terceira etapa da **Dança dos Sete Reinos**, Nilou concede a todos os membros próximos da equipe o estado \"Recompensa do Cálice Dourado\" que dura por 30s.\nPersonagens que estão sob o estado Recompensa do Cálice Dourado, ao sofrerem um Ataque Dendro, aumentarão a Proficiência Elemental de todos os personagens próximos em 100 por 10s; além disso, ao desencadearem a reação de Florescimento, substituirão a criação de um Núcleo Dendro por um \"Núcleo da Riqueza\".\nDiferente do Núcleo Dendro, o Núcleo da Riqueza explode rapidamente e tem uma AdE maior.\nO Núcleo da Riqueza não pode desencadear as reações de Germinação e Superflorescimento, e compartilha o limite de quantidade com os Núcleos Dendro. O Dano do Núcleo da Riqueza é considerado como Dano de Núcleo Dendro criado pela reação de Florescimento.\nQuando os requisitos de Talento Passivo do tipo de elementos dos personagens da equipe não forem atendidos, os efeitos da Recompensa do Cálice Dourado existentes serão removidos."
+	},
+	"passive2": {
+		"name": "Sonhos da Dança de Eras",
+		"info": "Para cada 1.000 pontos de Vida Máxima de Nilou acima de 30.000, aumenta o Dano infligido pelos Núcleos da Riqueza criados pelos personagens sob o estado de \"Recompensa do Cálice Dourado\" em 9%.\nO aumento de Dano infligido pelos Núcleos da Riqueza desta forma pode ser de até 400%."
+	},
+	"passive3": {
+		"name": "Lótus da Jade Branca",
+		"info": "Ao fazer uma comida Perfeita relacionada a efeitos de Aventura, há 12% de chance de se obter o dobro de produção."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos de Práxis",
+				"count": 3
+			},
+			{
+				"name": "Esporo de Cogumelo Flutuante",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia da Práxis",
+				"count": 2
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia da Práxis",
+				"count": 4
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia da Práxis",
+				"count": 6
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia da Práxis",
+				"count": 9
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia da Práxis",
+				"count": 4
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 4
+			},
+			{
+				"name": "Lágrima da Deusa do Desastre",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia da Práxis",
+				"count": 6
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 6
+			},
+			{
+				"name": "Lágrima da Deusa do Desastre",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia da Práxis",
+				"count": 12
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 9
+			},
+			{
+				"name": "Lágrima da Deusa do Desastre",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia da Práxis",
+				"count": 16
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 12
+			},
+			{
+				"name": "Lágrima da Deusa do Desastre",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

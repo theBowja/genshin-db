@@ -1,0 +1,208 @@
+{
+	"name": "Nilou",
+	"combat1": {
+		"name": "โจมตีปกติ: Dance of Samser",
+		"info": "**โจมตีปกติ**\nโจมตีด้วยดาบต่อเนื่องมากสุด 3 ครั้ง\n\n**ชาร์จโจมตี**\nใช้พลังกายส่วนหนึ่ง เพื่อหมุนฟันโจมตีหนึ่งครั้ง\n\n**โจมตีพุ่งลงจากอากาศ**\nกระโจนจากกลางอากาศลงมายังพื้นดิน เพื่อโจมตีศัตรูที่อยู่ในเส้นทางการโจมตี โดยจะสร้างความเสียหายวงกว้างเมื่อลงถึงพื้น",
+		"attributes": {
+			"labels": [
+				"ความเสียหายขั้น 1|{param1:F1P}",
+				"ความเสียหายขั้น 2|{param2:F1P}",
+				"ความเสียหายขั้น 3|{param3:F1P}",
+				"ความเสียหายชาร์จโจมตี|{param4:F1P}+{param5:F1P}",
+				"ชาร์จโจมตีใช้พลังกาย|{param6:F1} หน่วย",
+				"ความเสียหายพุ่งลง|{param7:F1P}",
+				"ความเสียหายพุ่งถึงพื้นจากที่ต่ำ/สูง|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Dance of Haftkarsvar",
+		"info": "เข้าสู่สถานะ \"Pirouette\" และสร้างความเสียหายน้ำแก่ศัตรูที่อยู่ใกล้ โดยขึ้นกับค่าพลังชีวิตสูงสุดของ Nilou\nเมื่ออยู่ในสถานะ Pirouette การโจมตีปกติและสกิลธาตุของ Nilou จะเปลี่ยนเป็นการใช้ Sword Dance และ Whirling Steps ตามลำดับ ซึ่งความเสียหายที่สร้าง จะเปลี่ยนเป็นความเสียหายน้ำที่นับเป็นความเสียหายสกิลธาตุ และไม่สามารถแทนที่ด้วยธาตุอื่นได้\n\nภายใต้สถานะนี้ ระบำขั้นที่สามของ Nilou จะลบล้างสถานะ Pirouette และทำให้เกิดเอฟเฟกต์ต่อไปนี้ โดยขึ้นกับประเภทของระบำขั้นที่สาม:\n·Sword Dance: ปล่อย Luminous Illusion ออกมา เพื่อสร้างความเสียหายน้ำแก่ศัตรูที่สัมผัสโดน และมอบสถานะ Lunar Prayer ให้แก่ Nilou โดยภายใต้สภาวะนี้ เมื่อเธอใช้การโจมตีปกติจะเปลี่ยนเป็นการใช้ Sword Dance และปล่อย Luminous Illusion ออกมาในการโจมตีครั้งสุดท้าย;\n·Whirling Steps: ปล่อย Whirling Water Wheel ออกมาเพื่อสร้างความเสียหายน้ำวงกว้าง และทำให้เกิด Tranquility Aura ที่สามารถเคลื่อนที่ตามตัวละครที่เข้าร่วมการต่อสู้ในขณะนั้น และทำให้ศัตรูที่อยู่ภายในพื้นที่ติดสถานะเปียกชุ่มอย่างต่อเนื่องได้\n\nNilou จะไม่สามารถใช้การชาร์จโจมตีได้ เมื่ออยู่ภายใต้สถานะ Pirouette หรือ Lunar Prayer; สถานะเหล่านี้จะหายไปเมื่อ Nilou ออกจากการต่อสู้",
+		"description": "\"เพียงปลายนิ้วเท้าที่เรียวยาวของเธอสัมผัสผิวน้ำอย่างแผ่วเบา แสงระลอกคลื่นก็ดูราวกับกระแสน้ำของสวรรค์ชั้นที่เจ็ด\"",
+		"attributes": {
+			"labels": [
+				"ความเสียหายสกิล|{param1:F2P} ของ HP สูงสุด",
+				"ความเสียหายขั้น 1 ของ Sword Dance/Whirling Steps|{param6:F2P}/{param2:F2P} ของ HP สูงสุด",
+				"ความเสียหายขั้น 2 ของ Sword Dance/Whirling Steps|{param7:F2P}/{param3:F2P} ของ HP สูงสุด",
+				"ความเสียหาย Luminous Illusion/Water Wheel|{param4:F2P}/{param5:F2P} ของ HP สูงสุด",
+				"ระยะเวลาของ Pirouette|{param11:F1} วิ",
+				"ระยะเวลาของ Lunar Prayer|{param10:F1} วิ",
+				"ระยะเวลาของ Tranquility Aura|{param8:F1} วิ",
+				"คูลดาวน์|{param9:F1} วิ"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Dance of Abzendegi: Distant Dreams, Listening Spring",
+		"info": "เริ่มการเต้นรำแห่งความฝันอันไกลโพ้น และทำให้เทียรฆนิโลตบลบานสะพรั่ง โดยจะสร้างความเสียหายน้ำวงกว้างที่ขึ้นกับค่าพลังชีวิตสูงสุดของ Nilou และทำให้ศัตรูที่ถูกโจมตีติดเอฟเฟกต์ \"Lingering Aeon\"\nหลังผ่านไปช่วงเวลาสั้น ๆ ศัตรูที่อยู่ภายใต้สภาวะเอฟเฟกต์ Lingering Aeon จะได้รับความเสียหายน้ำ",
+		"description": "\"แม้ว่าพวกเราจะยังไม่เคยเห็นความฝันอันไกลโพ้นนั่น แต่มีเพียงการเต้นรำนี้เท่านั้น ที่ยังสามารถบรรยายทิวทัศน์ที่ราวกับความฝันได้\"",
+		"attributes": {
+			"labels": [
+				"ความเสียหายสกิล|{param1:F1P} ของ HP สูงสุด",
+				"ความเสียหาย Lingering Aeon|{param2:F1P} ของ HP สูงสุด",
+				"คูลดาวน์|{param3:F1} วิ",
+				"พลังงานธาตุ|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Court of Dancing Petals",
+		"info": "เมื่อตัวละครทั้งหมดในทีม มีชนิดของธาตุเป็นธาตุไม้และธาตุน้ำ และมีตัวละครธาตุไม้และธาตุน้ำอย่างน้อยหนึ่งตัว:\n ระบำขั้นที่สามของ **Dance of Haftkarsvar** ที่สำเร็จของ Nilou จะมอบสถานะ \"Golden Chalice's Bounty\" ให้แก่ตัวละครทั้งหมดที่อยู่ในบริเวณใกล้เคียงเป็นเวลา 30 วินาที\nเมื่อตัวละครที่อยู่ภายใต้สถานะ Golden Chalice's Bounty ได้รับการโจมตีธาตุไม้ จะทำให้ความชำนาญธาตุ ของตัวละครอื่นทั้งหมดที่อยู่ใกล้เพิ่มขึ้น 100 หน่วย เป็นเวลา 10 วินาที; นอกจากนี้เมื่อทำให้เกิดปฏิกิริยางอกเงย จะสร้าง \"Bountiful Core\" ขึ้นมาแทน Dendro Core\nเมื่อเทียบกับ Dendro Core แล้ว Bountiful Core จะระเบิดอย่างรวดเร็วหลังจากถูกสร้างขึ้นมา และมีพื้นที่ผลกระทบที่กว้างกว่า\nBountiful Core ไม่สามารถทำให้เกิดปฏิกิริยาไฮเปอร์บลูมและเบ่งบานได้ โดยจะใช้ขีดจำกัดจำนวนสูงสุดร่วมกันกับ Dendro Core และการโจมตีของ Bountiful Core จะถูกมองว่าเป็นการโจมตีจาก Dendro Core ของปฏิกิริยางอกเงย\nเมื่อชนิดธาตุของตัวละครในทีมไม่ตรงตามเงื่อนไขของพรสวรรค์ติดตัวนี้ เอฟเฟกต์ของ Golden Chalice's Bounty ที่มีอยู่จะถูกลบล้าง"
+	},
+	"passive2": {
+		"name": "Dreamy Dance of Aeons",
+		"info": "ทุก 1,000 หน่วย ของส่วนที่เกินจาก 30,000 ของค่าพลังชีวิตสูงสุดของ Nilou จะทำให้ Bountiful Core ที่เกิดจากตัวละครที่อยู่ภายใต้สภาวะ \"Golden Chalice's Bounty\" สร้างความเสียหายเพิ่มขึ้น 9%\nด้วยวิธีนี้ จะสามารถทำให้ Bountiful Core สร้างความเสียหายเพิ่มขึ้นได้มากสุด 400%"
+	},
+	"passive3": {
+		"name": "White Jade Lotus",
+		"info": "เมื่อปรุงอาหารประเภทการผจญภัยได้ระดับสมบูรณ์ จะมีโอกาส 12% ที่จะได้รับผลผลิตเพิ่มเป็น 2 เท่า"
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Praxis",
+				"count": 3
+			},
+			{
+				"name": "Fungal Spore",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 2
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 4
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 6
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 9
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 4
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 4
+			},
+			{
+				"name": "Tears of the Calamitous God",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 6
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 6
+			},
+			{
+				"name": "Tears of the Calamitous God",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 12
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 9
+			},
+			{
+				"name": "Tears of the Calamitous God",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 16
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 12
+			},
+			{
+				"name": "Tears of the Calamitous God",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

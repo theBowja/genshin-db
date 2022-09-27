@@ -1,0 +1,215 @@
+{
+	"name": "Cyno",
+	"combat1": {
+		"name": "Standardangriff: Speertechnik der Beschwörer",
+		"info": "**Standardangriff**\nFührt bis zu 4 Lanzenstiche hintereinander aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer, sticht geschwind nach vorn und fügt den Gegnern in der Bahn Schaden zu.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P} + {param4:F1P}",
+				"SCH Phase 4|{param5:F1P}",
+				"Heftige Schläge|{param6:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param7:F1} Punkte",
+				"SCH beim Fallen|{param8:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Geheimer Ritus – Abgründiger Seelenwanderer",
+		"info": "Führt blitzschnell einen Stoß aus, der den Gegnern in der Bahn Elektro-Schaden zufügt.\n\nWenn Cyno sich im Modus „Paktverschworener Pfadklärer“ befindet, den die Spezialfähigkeit „Heiliger Ritus – Schnelligkeit des Wolfs“ ausgelöst hat, führt er stattdessen den **Bestattungsritus** aus, der donnernd Elektro-Flächenschaden verursacht und die Dauer des Modus „Paktverschworener Pfadklärer“ verlängert.",
+		"description": "„Dieser Prozess lässt keinen Einspruch zu. Wir alle ... sind schon lange darin gefangen.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P}",
+				"SCH des Bestattungsritus|{param2:F1P}",
+				"Dauerbonus für „Paktverschworener Pfadklärer“|{param3:F1} s",
+				"Abklingzeit|{param4:F1} s",
+				"Abklingzeit des Bestattungsritus|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Heiliger Ritus – Schnelligkeit des Wolfs",
+		"info": "Beschwört einen göttlichen Geist, der Cyno in den „Paktverschworenen Pfadklärer“ verwandelt.\n\n**Paktverschworener Pfadklärer**\nWandelt den durch Cynos Standardangriffe, heftige Schläge und Angriffe aus dem Fall verursachten Schaden in Elektro-Schaden um, der nicht von anderen Elementen überdeckt werden kann.\n· Erhöht Cynos Elementarkunde und Unterbrechungs-WDS. Verleiht ihm zugleich Immunität gegen Schaden, den die Reaktion „Unter Strom“ verursacht.\n\nDiese Effekte halten bis zu 18 s und werden entfernt, sobald Cyno ausgewechselt wird.",
+		"description": "Die geheimen Riten der alten Zivilisation sind für Mahamatra auch der letzte Prozess.\nOb die Vergangenheit oder die Gegenwart, ob Sturm oder Riesenschlange, nichts kann die Autorität des Gesetzes erschüttern.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P} + {param5:F1P}",
+				"SCH Phase 5|{param6:F1P}",
+				"SCH heftiger Schläge|{param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}",
+				"Elementarkunde-Bonus|{param12:I} Punkte",
+				"Basisdauer|{param13:F1} s",
+				"Abklingzeit|{param14:F1} s",
+				"Elementarenergie|{param15:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Urteil der Federn",
+		"info": "Befindet sich Cyno im Modus „Paktverschworener Pfadklärer“ der Spezialfähigkeit **Heiliger Ritus – Schnelligkeit des Wolfs**, wird er in Intervallen den Zustand „Prophet des Endes“ einnehmen. Wendet er in diesem Zustand die Elementarfähigkeit **Geheimer Ritus – Abgründiger Seelenwanderer** an, wird der Effekt „Zumessung“ ausgelöst, der den diesmaligen Schaden von „Geheimer Ritus – Abgründiger Seelenwanderer“ um 35 % erhöht und 3 Staubblitze nach vorn abfeuert, die Elektro-Schaden  in Höhe von 100 % von Cynos ANG verursachen.\nSchaden der Staubblitze gilt als Schaden der Elementarfähigkeit."
+	},
+	"passive2": {
+		"name": "Autorität der neun Bögen",
+		"info": "Erhöht den Schaden Cynos folgender Angriffe basierend auf seiner Elementarkunde:\n· Standardangriff im Modus „Paktverschworener Pfadklärer“: um 150 % seiner Elementarkunde.\n· Staubblitze des passiven Talents „Urteil der Federn“: um 250 % seiner Elementarkunde."
+	},
+	"passive3": {
+		"name": "Gnade der Stille",
+		"info": "Bringt bei 20-stündigen Erkundungsentsendungen in Sumeru 25 % mehr Belohnungen."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Ermahnung“",
+				"count": 3
+			},
+			{
+				"name": "Leitende Schriftrolle",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Ermahnung“",
+				"count": 2
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Ermahnung“",
+				"count": 4
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Ermahnung“",
+				"count": 6
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Ermahnung“",
+				"count": 9
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Ermahnung“",
+				"count": 4
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 4
+			},
+			{
+				"name": "Mudra des grimmigen Generals",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Ermahnung“",
+				"count": 6
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 6
+			},
+			{
+				"name": "Mudra des grimmigen Generals",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Ermahnung“",
+				"count": 12
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 9
+			},
+			{
+				"name": "Mudra des grimmigen Generals",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Ermahnung“",
+				"count": 16
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 12
+			},
+			{
+				"name": "Mudra des grimmigen Generals",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

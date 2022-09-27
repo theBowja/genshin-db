@@ -1,0 +1,215 @@
+{
+	"name": "Cyno",
+	"combat1": {
+		"name": "Attaque normale : Lance d'invocation",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups de lance.\n\n**Attaque chargée**\nConsomme de l'endurance pour charger en ligne droite et infliger des DGT aux ennemis sur la route.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}",
+				"DGT attaque chargée|{param6:F1P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts",
+				"DGT durant la chute|{param8:F1P}",
+				"DGT chute basse/élevée|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Rite : Traversée abyssale",
+		"info": "Effectue un assaut rapide, infligeant des DGT Électro aux ennemis en chemin.\n\nLorsque Cyno est sous l'effet d'éclaireur sermenté de son déchaînement élémentaire « Liturgie : Rapidité lupine », il déclenche à la place un **rite mortuaire** qui inflige de tonitruants DGT Électro de zone et prolonge la durée d'éclaireur sermenté.",
+		"description": "« Ce jugement ne tolère aucun choix. Il n'y a ici ni rejet ni acceptation... Nous sommes tous deux liés depuis longtemps à cette conviction. »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT rite mortuaire|{param2:F1P}",
+				"Prolongation d'éclaireur sermenté|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s",
+				"TdR rite mortuaire|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Liturgie : Rapidité lupine",
+		"info": "Invoque un esprit divin pour le posséder, se transformant en éclaireur sermenté.\n\n**Éclaireur sermenté**\n· Les DGT infligés par les attaques normales, chargées ou plongeantes de Cyno seront convertis en DGT Électro ne pouvant pas être enchantés.\n· La maîtrise élémentaire et la RÉS à l'interruption de Cyno augmentent et il devient immunisé contre les DGT infligés par les réactions d'Électrocution.\n\nCes effets cessent lorsque Cyno quitte le champ de bataille ou après une durée de 18 s.",
+		"description": "Les rites secrets transmis au sein de l'ancienne nation sont comme un jugement définitif pour le général mahamatra.\nQue ce soit maintenant ou dans le passé, qu'il s'agisse d'une tempête ou d'un serpent, personne n'ébranlera la majesté de la loi.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}+{param5:F1P}",
+				"DGT 5e coup|{param6:F1P}",
+				"DGT attaque chargée|{param7:F1P}",
+				"Coût d'endurance attaque chargée|{param8:F1} pts",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}",
+				"Augmentation de maîtrise élémentaire|{param12:I} pts",
+				"Durée de base|{param13:F1} s",
+				"Temps de recharge|{param14:F1} s",
+				"Énergie élémentaire|{param15:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Jugement des plumes",
+		"info": "Lorsque Cyno est sous l'effet d'éclaireur sermenté de **Liturgie : Rapidité lupine**, il entre en posture de prophète final de façon intermittente. S'il utilise **Rite : Traversée abyssale** dans cette posture, il active l'effet Ordalie, augmentant les DGT infligés par cette utilisation de Rite : Traversée abyssale de 35 % et tirant vers l'avant 3 éclairs de sable qui infligent des DGT Électro d'une valeur équivalant à 100 % de son ATQ.\nLes DGT infligés par les éclairs de sable sont considérés comme des DGT de compétence élémentaire."
+	},
+	"passive2": {
+		"name": "Autorité sur les neuf arcs",
+		"info": "Les DGT de certaines attaques de Cyno augmentent selon sa maîtrise élémentaire :\n· Les DGT de ses attaques normales sous l'effet d'éclaireur sermenté augmentent d'une valeur équivalant à 150 % de sa maîtrise élémentaire.\n· Les DGT des éclairs de sable de son aptitude passive « Jugement des plumes » augmentent d'une valeur équivalant à 250 % de sa maîtrise élémentaire."
+	},
+	"passive3": {
+		"name": "Le don du silence",
+		"info": "Augmente les récompenses d'une expédition de 20 h à Sumeru de 25 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Admonestation",
+				"count": 3
+			},
+			{
+				"name": "Parchemin divinatoire",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Admonestation",
+				"count": 2
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Admonestation",
+				"count": 4
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Admonestation",
+				"count": 6
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Admonestation",
+				"count": 9
+			},
+			{
+				"name": "Parchemin sigillé",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Admonestation",
+				"count": 4
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 4
+			},
+			{
+				"name": "Mudra du général maléfique",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Admonestation",
+				"count": 6
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 6
+			},
+			{
+				"name": "Mudra du général maléfique",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Admonestation",
+				"count": 12
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 9
+			},
+			{
+				"name": "Mudra du général maléfique",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Admonestation",
+				"count": 16
+			},
+			{
+				"name": "Parchemin maudit",
+				"count": 12
+			},
+			{
+				"name": "Mudra du général maléfique",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}
