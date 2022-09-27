@@ -387,7 +387,6 @@ async function collateMaterial(existing, newdata, lang, skipimageredirect) {
 	clearObject(existing);
 	let copyover = ['name', 'dupealias', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
 	                  'daysofweek', 'source'];
-	// if(removesort) copyover = copyover.filter(e => e !== 'sortorder');
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
@@ -620,10 +619,9 @@ gameVersion = "3.1"; // new data will use this as added version
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods', collateFood);
-// let removesort = true;
-importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
-// importData('domains', collateDomain);
-// importData('enemies', collateEnemy);
+// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
+importData('domains', collateDomain);
+importData('enemies', collateEnemy);
 // importCurve('enemies');
 
 // importData('outfits', collateOutfit);
