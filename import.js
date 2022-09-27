@@ -611,12 +611,12 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 gameVersion = "3.1"; // new data will use this as added version
-importData('characters', collateCharacter);
-importCurve('characters');
-importData('constellations', collateConstellation);
-importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
-// importCurve('weapons');
+// importData('characters', collateCharacter);
+// importCurve('characters');
+// importData('constellations', collateConstellation);
+// importData('talents', collateTalent);
+importData('weapons', collateWeapon)
+importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
