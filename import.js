@@ -629,10 +629,10 @@ gameVersion = "3.1"; // new data will use this as added version
 // importData('animals', collateAnimal);
 // importData('namecards', collateNamecard);
 // importData('geographies', collateGeography);
-// importData('achievements', collateAchievement);
-// importData('achievementgroups', collateAchievementGroup);
+importData('achievements', collateAchievement);
+importData('achievementgroups', collateAchievementGroup);
 // importData('adventureranks', collateAdventureRank); // max 60
-importData('crafts', collateCraft);
+// importData('crafts', collateCraft);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
