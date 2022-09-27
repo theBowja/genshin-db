@@ -615,10 +615,10 @@ gameVersion = "3.1"; // new data will use this as added version
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
-importData('weapons', collateWeapon)
-importCurve('weapons');
-// importData('artifacts', collateArtifact, undefined, false);
-// importData('foods', collateFood);
+// importData('weapons', collateWeapon)
+// importCurve('weapons');
+importData('artifacts', collateArtifact, undefined, false);
+importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
