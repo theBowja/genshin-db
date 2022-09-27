@@ -487,7 +487,7 @@ function collateAdventureRank(existing, newdata, lang) {
 
 function collateCraft(existing, newdata, lang) {
 	clearObject(existing);
-	// copyPropsIfExist(newdata, existing, ['name', 'filter', 'sortorder', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
+	copyPropsIfExist(newdata, existing, ['name', 'filter', 'sortorder', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
 }
 
 function importCurve(folder) {
@@ -620,8 +620,8 @@ gameVersion = "3.1"; // new data will use this as added version
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
-importData('domains', collateDomain);
-importData('enemies', collateEnemy);
+// importData('domains', collateDomain);
+// importData('enemies', collateEnemy);
 // importCurve('enemies');
 
 // importData('outfits', collateOutfit);
@@ -632,7 +632,7 @@ importData('enemies', collateEnemy);
 // importData('achievements', collateAchievement);
 // importData('achievementgroups', collateAchievementGroup);
 // importData('adventureranks', collateAdventureRank); // max 60
-// importData('crafts', collateCraft);
+importData('crafts', collateCraft);
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
