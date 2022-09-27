@@ -385,8 +385,9 @@ async function collateMaterial(existing, newdata, lang, skipimageredirect) {
 	if(existing.dropdomain && existing.dropdomain !== "" && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
 	if(existing.daysofweek && existing.daysofweek.length !== 0 && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
-	const copyover = ['name', 'dupealias', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
+	let copyover = ['name', 'dupealias', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
 	                  'daysofweek', 'source'];
+	// if(removesort) copyover = copyover.filter(e => e !== 'sortorder');
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
@@ -617,9 +618,10 @@ gameVersion = "3.1"; // new data will use this as added version
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
-importData('artifacts', collateArtifact, undefined, false);
-importData('foods', collateFood);
-// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
+// importData('artifacts', collateArtifact, undefined, false);
+// importData('foods', collateFood);
+// let removesort = true;
+importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains', collateDomain);
 // importData('enemies', collateEnemy);
 // importCurve('enemies');
