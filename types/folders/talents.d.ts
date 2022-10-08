@@ -35,7 +35,7 @@ declare module "genshin-db" {
 	export interface CombatTalentDetail {
 	    name: string;
 	    info: string;
-	    description: string;
+	    description?: string; // no description for combat1
 	    attributes: {
 	        labels: string[];
 	        parameters: {
