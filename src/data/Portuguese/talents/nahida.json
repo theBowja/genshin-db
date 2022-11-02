@@ -1,0 +1,213 @@
+{
+	"name": "Nahida",
+	"combat1": {
+		"name": "Ataque Normal: Akara",
+		"info": "**Ataque Normal**\nRealiza até 4 ataques que infligem Dano Dendro.\n\n**Ataque Carregado**\nConsome uma certa quantidade de Stamina para infligir Dano Dendro em uma AdE após um curto período de canalização.\n\n**Ataque Imersivo**\nReunindo o poder do Dendro, mergulha em direção ao chão em pleno ar, infligindo dano a todos os inimigos em seu caminho. Inflige Dano Dendro em uma AdE durante o impacto com o chão.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano do 4° Golpe|{param4:F1P}",
+				"Dano de Ataque Carregado|{param5:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param6:F1}",
+				"Dano Durante a Queda|{param7:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Esquemas Universais",
+		"info": "Envia vínculos cármicos de madeira e árvore a partir de seu lado, infligindo Dano Dendro em uma AdE e marcando até 8 oponentes atingidos com a Semente Skandha.\nQuando usada no modo Manter Pressionado, essa habilidade será acionada de maneira diferente.\n\n**Manter Pressionado**\nEntra no modo de mira, que permite escolher um certo número de oponentes dentro de uma certa AdE. Durante esse tempo, a Resistência contra Interrupção de Nahida será aumentada.\nQuando o modo de mira acabar, essa habilidade causará Dano Dendro a esses oponentes e os marcará com a Semente Skandha.\nO modo de mira durará até 5s e pode selecionar no máximo 8 oponentes.\n\n**Semente Skandha**\nOponentes que foram marcados pela Semente Skandha serão conectados uns aos outros até uma certa distância.\nDepois de causar Reações Elementais em oponentes afetados pelas Sementes Skandha e quando eles recebem Dano de Núcleos Dendro (incluindo Dano de Germinação e Superflorescimento), Nahida irá liberar a Purificação Tricármica nesses oponentes e em todos os oponentes conectados, causando Dano Dendro com base em seu ATQ e Proficiência Elemental.\nSó é possível ativar até 1 Purificação Tricármica dentro de um curto período de tempo.",
+		"description": "Lo, o deus da grama e das árvores, mostra sua verdade universal no vazio, iluminando a origem e a destruição dos três carmas.",
+		"attributes": {
+			"labels": [
+				"Dano de Pressionar|{param1:F1P}",
+				"Dano ao Manter Pressionado|{param2:F1P}",
+				"Dano de Purificação Tricármica|{param3:F1P} do ATQ + {param4:F1P} da Proficiência Elemental",
+				"Intervalo de ativação de Purificação Tricármica|{param5:F1}s",
+				"Duração de Semente Skandha|{param6:F1}s",
+				"Recarga de Pressionar|{param7:F1}s",
+				"Tempo de Recarga ao Manter Pressionado|{param8:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Coração Ilusório",
+		"info": "Manifesta o Palácio dos Sonhos, criando o campo do Santuário de Maya.\n\nSe houverem personagens dos tipos elementais abaixo quando o campo é criado, gera os seguintes efeitos:\n· Pyro: quando Nahida está no Santuário de Maya, aumenta o Dano infligido por Purificação Tricármica de sua Habilidade Elemental \"Esquemas Universais\";\n· Electro: quando Nahida está no Santuário de Maya, reduz o intervalo para desencadear Purificação Tricármica de sua Habilidade Elemental \"Esquemas Universais\";\n· Hydro: estende a duração do Santuário de Maya.\n\nAo criar esse campo, se houverem pelo menos 2 personagens dos tipos elementais citados acima, o efeito correspondente será mais fortalecido.\n\nMesmo que Nahida não esteja ativa no campo de batalha, poderá obter os efeitos de aumento descritos acima se membros da equipe estiverem dentro do Santuário de Maya.",
+		"description": "Para a Deusa da Sabedoria, talvez tudo que vive sob as árvores seja apenas um sonho passageiro de ponta-cabeça para a Deusa.",
+		"attributes": {
+			"labels": [
+				"Pyro: Aumento de Dano|{param1:F1P} para 1 Personagem",
+				"Pyro: Aumento de Dano|{param2:F1P} para 2 Personagens",
+				"Electro: Redução de Intervalo|{param3:F2}s para 1 Personagem",
+				"Electro: Redução de Intervalo|{param4:F2}s para 2 Personagens",
+				"Hydro: Aumento de duração|{param5:F2}s para 1 Personagem",
+				"Hydro: Aumento de duração|{param6:F2}s para 2 Personagens",
+				"Duração Básica|{param7:F1}s",
+				"Tempo de Recarga|{param8:F1}s",
+				"Energia Elemental|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Compaixão Iluminada",
+		"info": "Ao lançar **Coração Ilusório**, o Santuário de Maya obterá os seguintes efeitos:\nAumenta a Proficiência Elemental do personagem ativo no campo de batalha dentro da AdE baseado em 25% da Proficiência Elemental do personagem da equipe com maior Proficiência Elemental.\nÉ possível obter um aumento de até 250 pontos de Proficiência Elemental desta forma."
+	},
+	"passive2": {
+		"name": "Despertar da Sabedoria",
+		"info": "Cada 1 ponto de Proficiência Elemental de Nahida que ultrapasse 200 aumentará o Dano infligido por Purificação Tricármica de **Esquemas Universais** em 0.1% e a Taxa CRIT em 0.03%.\nÉ possível aumentar o Dano em até 80% e a Taxa CRIT em até 24% dessa forma."
+	},
+	"passive3": {
+		"name": "Meditação Universal",
+		"info": "Nahida pode usar **Esquemas Universais** para interagir com outros objetos coletáveis dentro de uma certa AdE.\nTalvez isso possua algum outro efeito..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos de Engenhosidade",
+				"count": 3
+			},
+			{
+				"name": "Esporo de Cogumelo Flutuante",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia da Engenhosidade",
+				"count": 2
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia da Engenhosidade",
+				"count": 4
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia da Engenhosidade",
+				"count": 6
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia da Engenhosidade",
+				"count": 9
+			},
+			{
+				"name": "Pólen fluorescente",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia da Engenhosidade",
+				"count": 4
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 4
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia da Engenhosidade",
+				"count": 6
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 6
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia da Engenhosidade",
+				"count": 12
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 9
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia da Engenhosidade",
+				"count": 16
+			},
+			{
+				"name": "Poeira Cristalina de Cisto",
+				"count": 12
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

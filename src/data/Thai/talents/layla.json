@@ -1,0 +1,205 @@
+{
+	"name": "Layla",
+	"combat1": {
+		"name": "โจมตีปกติ: Sword of the Radiant Path",
+		"info": "**โจมตีปกติ**\nโจมตีด้วยดาบต่อเนื่องมากสุด 3 ครั้ง\n\n**ชาร์จโจมตี**\nใช้พลังกายส่วนหนึ่ง เพื่อฟาดฟันอย่างรวดเร็ว 2 ครั้ง\n\n**โจมตีพุ่งลงจากอากาศ**\nกระโจนจากกลางอากาศลงมายังพื้นดิน เพื่อโจมตีศัตรูที่อยู่ในเส้นทางการโจมตี โดยจะสร้างความเสียหายวงกว้างเมื่อลงถึงพื้น",
+		"attributes": {
+			"labels": [
+				"ความเสียหายขั้น 1|{param1:F1P}",
+				"ความเสียหายขั้น 2|{param2:F1P}",
+				"ความเสียหายขั้น 3|{param3:F1P}",
+				"ความเสียหายชาร์จโจมตี|{param4:F1P}+{param5:F1P}",
+				"ชาร์จโจมตีใช้พลังกาย|{param6:F1} หน่วย",
+				"ความเสียหายพุ่งลง|{param7:F1P}",
+				"ความเสียหายพุ่งถึงพื้นจากที่ต่ำ/สูง|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Nights of Formal Focus",
+		"info": "กางโล่ Curtain of Slumber (ม่านแห่งนิทรา) และสร้างความเสียหายน้ำแข็งวงกว้าง\nCurtain of Slumber จะมีปริมาณการดูดซับความเสียหาย ที่ขึ้นกับค่าพลังชีวิตสูงสุดของ Layla และจะมีเอฟเฟกต์ดูดซับความเสียหายน้ำแข็ง 250% และเมื่อกางโล่ จะทำให้ Layla ติดสถานะธาตุน้ำแข็งช่วงสั้น ๆ\n\n**Night Star และ Shooting Star**\nภายในช่วงระยะเวลาของ Curtain of Slumber ในทุก 1.5 วินาที จะสร้าง Night Star ขึ้นมา 1 ดวง และเมื่อตัวละครที่อยู่ภายใต้การปกป้องของโล่ดังกล่าวใช้สกิลธาตุ จะสร้าง Night Star ขึ้นมาอีก 2 ดวง โดยที่ทุก 0.3 วินาที จะสามารถสร้าง Night Star ด้วยวิธีนี้ได้มากสุดหนึ่งครั้ง และในช่วงเวลาเดียวกัน จะสามารถมี Night Star ได้มากสุด 4 ดวง\nหลังจากที่จำนวน Night Star ของโล่ Curtain of Slumber สะสมถึง 4 ดวง หากมีศัตรูอยู่ในบริเวณใกล้เคียง Night Star จะเปลี่ยนเป็น Shooting Star ที่สามารถติดตามเป้าหมาย และยิงออกไปตามลำดับ เพื่อสร้างความเสียหายน้ำแข็งแก่ศัตรูที่ถูกโจมตี\nเมื่อช่วงเวลาต่อเนื่องของโล่ Curtain of Slumber สิ้นสุดลงหรือโล่ถูกทำลาย Night Star ทั้งหมดจะหายไป และหากเปลี่ยนเป็น Shooting Star และเริ่มยิงแล้ว Shooting Star จะยังคงอยู่ต่อไปจนกว่าการยิงในรอบนี้จะจบลง\n\nก่อนที่รอบการยิง Shooting Star จะสิ้นสุดลง จะไม่สามารถเกิด Night Star ดวงใหม่ได้",
+		"description": "\"เธอคนนั้นกับฉันเปรียบเสมือนช่างฝีมือระดับปรมาจารย์สองคนที่ไม่เคยพบกัน นั่งบนที่นั่งตัวเดียวกัน และเย็บปักดอกไม้แห่งความฝันร่วมกัน\"",
+		"attributes": {
+			"labels": [
+				"ความเสียหายสกิล|{param1:F1P}",
+				"ความเสียหาย Shooting Star|{param2:F1P}",
+				"การดูดซับพื้นฐานของโล่|{param3:F1P} ของ HP สูงสุด +{param4:I}",
+				"ระยะเวลาต่อเนื่องของโล่|{param5:F1} วิ",
+				"คูลดาวน์|{param6:F1} วิ"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Dream of the Star-Stream Shaker",
+		"info": "ปลดปล่อย Celestial Dreamsphere ที่จะยิง Starlight Slug เพื่อโจมตีศัตรูที่อยู่ในพื้นที่ออกมา เพื่อสร้างความเสียหายน้ำแข็ง\nหลังจาก Starlight Slug ถูกเป้าหมาย จะสร้าง Night Star 1 ดวง ให้แก่ Curtain of Slumber ที่อยู่ในบริเวณใกล้เคียง ซึ่งทุก 0.5 วินาที Curtain of Slumber แต่ละอันจะสามารถรับ Night Star ด้วยวิธีนี้ได้มากสุด 1 ดวง เท่านั้น",
+		"description": "\"หลับซะ หลับซะ ฉันรู้ว่าดวงดาวมากมายเหล่านั้นในความฝันของเธอ โชคชะตามากมายจะเปิดเผยก่อนที่เธอจะหลับใหล\"",
+		"attributes": {
+			"labels": [
+				"ความเสียหาย Starlight Slug|{param1:F1P} ของ HP สูงสุด",
+				"ระยะเวลาต่อเนื่อง|{param2:F1} วิ",
+				"คูลดาวน์|{param3:F1} วิ",
+				"พลังงานธาตุ|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Like Nascent Light",
+		"info": "ระยะช่วงเวลาที่ **Curtain of Slumber** คงอยู่ Night Star แต่ละดวงที่ได้รับ จะทำให้เกิดเอฟเฟกต์ Deep Sleep:\n·ประสิทธิภาพโล่ป้องกันของตัวละครที่ได้รับการปกป้องจาก Curtain of Slumber จะเพิ่มขึ้น 6%;\n·เอฟเฟกต์นี้จะซ้อนทับได้มากสุด 4 ชั้น และจะคงอยู่ไปจนกว่า Curtain of Slumber จะสลายไป"
+	},
+	"passive2": {
+		"name": "Sweet Slumber Undisturbed",
+		"info": "Shooting Star ที่ **Nights of Formal Focus** ยิงออกมาสร้างความเสียหายเพิ่มขึ้น โดยค่าที่เพิ่มจะเป็น 1.5% ของพลังชีวิตสูงสุดของ Layla"
+	},
+	"passive3": {
+		"name": "Shadowy Dream-Signs",
+		"info": "เมื่อสร้างวัสดุพรสวรรค์ของตัวละคร จะมีโอกาส 10% ที่จะได้รับผลผลิตเพิ่มเป็น 2 เท่า"
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Ingenuity",
+				"count": 3
+			},
+			{
+				"name": "Divining Scroll",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 2
+			},
+			{
+				"name": "Seal Scroll",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 4
+			},
+			{
+				"name": "Seal Scroll",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 6
+			},
+			{
+				"name": "Seal Scroll",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 9
+			},
+			{
+				"name": "Seal Scroll",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 4
+			},
+			{
+				"name": "Forbidden Curse Scroll",
+				"count": 4
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 6
+			},
+			{
+				"name": "Forbidden Curse Scroll",
+				"count": 6
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 12
+			},
+			{
+				"name": "Forbidden Curse Scroll",
+				"count": 9
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 16
+			},
+			{
+				"name": "Forbidden Curse Scroll",
+				"count": 12
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

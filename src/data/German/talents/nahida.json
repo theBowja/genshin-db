@@ -1,0 +1,213 @@
+{
+	"name": "Nahida",
+	"combat1": {
+		"name": "Standardangriff: Akara",
+		"info": "**Standardangriff**\nFührt bis zu 4 Angriffe nach vorn aus und verursacht Dendro-Schaden.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer und verursacht nach kurzer Aufladezeit im Bereich vor der Figur Dendro-Flächenschaden.\n\n**Angriff aus dem Fall**\nKonzentriert die Kraft der Pflanzen, schlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Dendro-Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P}",
+				"SCH heftiger Schläge|{param5:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param6:F1} Punkte",
+				"SCH beim Fallen|{param7:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Kennerin aller Tricks",
+		"info": "Entsendet von Nahidas Seite karmische Bünde aus Pflanzen, die Dendro-Flächenschaden verursachen und bis zu 8 getroffene Gegner mit dem Samen von Skandha markieren.\nBeim Gedrückthalten nimmt diese Fähigkeit einen anderen Modus an.\n\n**Gedrückthalten**\nStartet den Zielmodus, in dem man in einem bestimmten Bereich eine bestimmte Anzahl an Zielen auswählen kann. In diesem Modus wird Nahidas Unterbrechungs-WDS erhöht.\nSobald nicht mehr gedrückt gehalten wird oder der Zielmodus seine Höchstdauer erreicht hat, wird den gewählten Gegnern Dendro-Schaden zugefügt und sie werden mit dem Samen von Skandha markiert.\nDer Zielmodus hat eine Höchstdauer von 5 s und es können bis zu 8 Gegner ausgewählt werden.\n\n**Samen von Skandha**\nVerkettet Gegner, die mit dem Samen von Skandha markiert wurden, innerhalb einer bestimmten Distanz miteinander.\nNachdem an einem mit dem Samen von Skandha markierten Gegner Elementarreaktionen ausgelöst werden oder nachdem diesem Gegner von Dendro-Kernen (einschließlich Flammenspross und Supraspross) Schaden zugefügt wird, wird diesem und allen mit diesem Gegner verketteten Gegnern die dreifache Karma-Läuterung und damit basierend auf Nahidas ANG und Elementarkunde Dendro-Schaden zugefügt.\nInnerhalb eines kurzen Zeitraums kann die dreifache Karma-Läuterung nur 1-mal ausgelöst werden.",
+		"description": "Die Herrin der Pflanzen hat die ultimative Wahrheit in der Leere erblickt. Das Sprießen und Verdorren der sterblichen Welt zeigen nun ihr wahres Gesicht vor ihr.",
+		"attributes": {
+			"labels": [
+				"SCH bei Drücken|{param1:F1P}",
+				"SCH bei Gedrückthalten|{param2:F1P}",
+				"SCH der dreifachen Karma-Läuterung|{param3:F1P} ANG + {param4:F1P} Elementarkunde",
+				"Auslösungsintervall der dreifachen Karma-Läuterung|{param5:F1} s",
+				"Dauer der Samen von Skandha|{param6:F1} s",
+				"Abklingzeit für Drücken|{param7:F1} s",
+				"Abklingzeit für Gedrückthalten|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Illusorisches Herz",
+		"info": "Lässt den Palast der Träume Form annehmen und entfaltet den „Schrein von Maya“.\n\nLöst, während der Schrein entfaltet ist, die folgenden Effekte je nach den Elementartypen der in der Truppe vorhandenen Figuren aus:\n· Pyro: Erhöht, während sich Nahida im Schrein von Maya befindet, den Schaden durch die dreifache Karma-Läuterung der Elementarfähigkeit „Kennerin aller Tricks“.\n· Elektro: Verringert, während sich Nahida im Schrein von Maya befindet, das Intervall des Auslösens der dreifachen Karma-Läuterung der Elementarfähigkeit „Kennerin aller Tricks“.\n· Hydro: Verlängert die Dauer des Schreins von Maya.\n\nVerstärkt den entsprechenden Effekt, wenn sich beim Entfalten des Schreins mindestens zwei Figuren der oben genannten Elementartypen in der Truppe befinden.\n\nNahida erhält weiter die oben genannten Boni, auch wenn sie sich inaktiv in der Truppe befindet, solange die Truppe innerhalb des Schreins von Maya bleibt.",
+		"description": "In den Augen der Göttin der Weisheit sind womöglich alle, die unter den Kronen der Bäume leben, nichts anderes als der umgekehrte Traum von Maya.",
+		"attributes": {
+			"labels": [
+				"Pyro: SCH-Bonus|{param1:F1P} für 1 Figur",
+				"Pyro: SCH-Bonus|{param2:F1P} für 2 Figuren",
+				"Elektro: Verringerung des Intervalls|{param3:F2} s für 1 Figur",
+				"Elektro: Verringerung des Intervalls|{param4:F2} s für 2 Figuren",
+				"Hydro: Verlängerung der Dauer|{param5:F2} s für 1 Figur",
+				"Hydro: Verlängerung der Dauer|{param6:F2} s für 2 Figuren",
+				"Basisdauer|{param7:F1} s",
+				"Abklingzeit|{param8:F1} s",
+				"Elementarenergie|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Illuminiertes Mitgefühl",
+		"info": "Beim Auslösen von **Illusorisches Herz** erhält der Schrein von Maya den folgenden Effekt:\nErhöht innerhalb des Schreins die Elementarkunde der aktuellen Figur um 25 % der Elementarkunde der Figur mit der höchsten Elementarkunde in der Truppe.\nAuf diese Weise kann die Elementarkunde höchstens um 250 Punkte erhöht werden."
+	},
+	"passive2": {
+		"name": "Geläutertes Erwachen",
+		"info": "Erhöht für jeden Punkt von Nahidas Elementarkunde über 200 Punkten den mit der dreifachen Karma-Läuterung von **Kennerin aller Tricks** verursachten Schaden um 0,1 % und KT der dreifachen Karma-Läuterung um 0,03 %.\nAuf diese Weise kann der Schaden der dreifachen Karma-Läuterung höchstens um 80 % und ihre KT höchstens um 24 % erhöht werden."
+	},
+	"passive3": {
+		"name": "Universelle Meditation",
+		"info": "Nahida kann durch **Kennerin aller Tricks** mit einem Teil der Rohstoffe in einem bestimmten Bereich interagieren.\nVielleicht hat diese Fähigkeit noch andere Effekte ..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Findigkeit“",
+				"count": 3
+			},
+			{
+				"name": "Sporen der Pilzbestie",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 2
+			},
+			{
+				"name": "Leuchtendes Sporenpulver",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 4
+			},
+			{
+				"name": "Leuchtendes Sporenpulver",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 6
+			},
+			{
+				"name": "Leuchtendes Sporenpulver",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 9
+			},
+			{
+				"name": "Leuchtendes Sporenpulver",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 4
+			},
+			{
+				"name": "Kristalliner Zystenstaub",
+				"count": 4
+			},
+			{
+				"name": "Puppenstränge",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 6
+			},
+			{
+				"name": "Kristalliner Zystenstaub",
+				"count": 6
+			},
+			{
+				"name": "Puppenstränge",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 12
+			},
+			{
+				"name": "Kristalliner Zystenstaub",
+				"count": 9
+			},
+			{
+				"name": "Puppenstränge",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 16
+			},
+			{
+				"name": "Kristalliner Zystenstaub",
+				"count": 12
+			},
+			{
+				"name": "Puppenstränge",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

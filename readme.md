@@ -143,6 +143,7 @@ You can find [examples of query function usage in genshin-db here](https://githu
 ### API
 
 There is an API for these query functions. It returns a JSON response if there is a result. Otherwise an empty response for no result.\
+The API usually gets updated one or two days after the main package updates.\
 Caution: stat functions from characters/enemies are not included. Currently there is no solution for this.
 
 Format:\
@@ -154,7 +155,7 @@ https://genshin-db-api.vercel.app/api/characters?query=hu&matchCategories=true&d
 
 ### Interactive App
 
-Web app for trying out genshin-db query functions.\
+Web app for trying out genshin-db query functions. Leverages the API above.\
 Features: manipulate options, preview JSON results, share generated API links, and preview images.
 
 [GenshinDB Interactive](https://genshindb-ia.netlify.app/)

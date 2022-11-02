@@ -1,0 +1,205 @@
+{
+	"name": "Layla",
+	"combat1": {
+		"name": "Tấn Công Thường - Kiếm Bức Xạ",
+		"info": "**Tấn Công Thường**\nThực hiện tối đa 3 lần đánh kiếm liên tiếp.\n\n**Trọng Kích**\nTiêu hao thể lực nhất định, đánh ra hai kiếm về phía trước trong chớp mắt.\n\n**Tấn Công Khi Đáp**\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+		"attributes": {
+			"labels": [
+				"Sát Thương Lần 1|{param1:F1P}",
+				"Sát Thương Lần 2|{param2:F1P}",
+				"Sát Thương Lần 3|{param3:F1P}",
+				"Sát Thương Trọng Kích|{param4:F1P}+{param5:F1P}",
+				"Thể lực Trọng Kích tiêu hao|{param6:F1} điểm",
+				"Sát Thương Khi Rơi|{param7:F1P}",
+				"Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Đêm Ngon Giấc",
+		"info": "Triển khai Màn Chắn Say Giấc và gây Sát Thương Phạm Vi Nguyên Tố Băng.\nLượng hấp thụ sát thương của Màn Chắn Say Giấc căn cứ vào giới hạn HP của Layla, đồng thời có 250% hiệu quả hấp thụ đối với Sát Thương Nguyên Tố Băng. Khi lá chắn được triển khai, Layla sẽ được đính kèm Nguyên Tố Băng ngắn hạn.\n\n**Sao Đêm và Sao Bay**\nTrong thời gian duy trì Màn Chắn Say Giấc, mỗi 1.5s sẽ sản sinh 1 Sao Đêm; nhân vật được tấm khiên này bảo hộ khi thi triển Kỹ Năng Nguyên Tố sẽ sản sinh 2 Sao Đêm, mỗi 0.3s tối đa sản sinh một lần Sao Đêm bằng cách này, tối đa tồn tại cùng lúc 4 Sao Đêm.\nKhi Màn Chắn Say Giấc có 4 Sao Đêm, nếu gần đó tồn tại kẻ địch thì Sao Đêm sẽ tự động chuyển thành Sao Bay lần lượt truy đuổi kẻ địch, gây Sát Thương Nguyên Tố Băng cho kẻ địch trúng đòn.\nKhi kết thúc thời gian duy trì Màn Chắn Say Giấc hay bị phá hủy, Sao Đêm cũng sẽ biến mất. Nếu đã chuyển hóa thành Sao Bay và bắn ra, Sao Bay vẫn sẽ tiếp tục hoàn thành truy đuổi.\n\nTrước khi mỗi lượt Sao Bay bắn ra toàn bộ sẽ không thể sản sinh thêm Sao Đêm mới.",
+		"description": "\"Tôi và cô ấy giống như hai nghệ nhân chưa từng gặp mặt, cùng ngồi chung một tấm đệm, cùng thêu một bông hoa trong mộng.\"",
+		"attributes": {
+			"labels": [
+				"Sát Thương Kỹ Năng|{param1:F1P}",
+				"Sát thương Sao Bay|{param2:F1P}",
+				"Lượng sát thương hấp thụ|{param3:F1P} giới hạn HP +{param4:I}",
+				"Thời gian khiên duy trì|{param5:F1}s",
+				"CD|{param6:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Giấc Mộng Giường Ánh Sao",
+		"info": "Thi triển Quả Cầu Mơ Mộng hỗ trợ vào giấc, liên tục bắn ra Đạn Ánh Sao tấn công kẻ địch trong khu vực, gây Sát Thương Nguyên Tố Băng.\nĐạn Ánh Sao khi trúng đích sẽ sản sinh 1 Sao Đêm cho Màn Chắn Say Giấc gần đó, mỗi Màn Chắn Say Giấc mỗi 0.5s tối đa nhận được 1 Sao Đêm bằng cách này.",
+		"description": "\"Ngủ đi, ngủ đi, rồi những vì sao và vận mệnh sẽ dần hé lộ trong giấc mơ ngọt ngào đó.\"",
+		"attributes": {
+			"labels": [
+				"Sát thương Đạn Ánh Sao|{param1:F1P} giới hạn HP",
+				"Thời Gian Kéo Dài|{param2:F1}s",
+				"CD|{param3:F1}s",
+				"Năng Lượng Nguyên Tố|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Tia Sáng Chói Lọi",
+		"info": "Trong thời gian **Màn Chắn Say Giấc** tồn tại, mỗi khi nhận được một Sao Đêm sẽ sản sinh hiệu quả Ngủ Say:\n·Nhân vật được Màn Chắn Say Giấc bảo hộ sẽ tăng 6% hiệu quả khiên;\n·Hiệu quả này tối đa cộng dồn 4 tầng, duy trì cho đến khi Màn Chắn Say Giấc biến mất."
+	},
+	"passive2": {
+		"name": "Quên Sầu Mà Ngủ",
+		"info": "Tăng sát thương Sao Bay bắn ra từ **Đêm Ngon Giấc**, lượng tăng thêm tương ứng với 1.5% giới hạn HP của Layla."
+	},
+	"passive3": {
+		"name": "Điềm Báo Ảo Ảnh",
+		"info": "Khi ghép nguyên liệu thiên phú nhân vật, có 10% nhận được x2 thành phẩm."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Bài Giảng Của \"Tinh Tế\"",
+				"count": 3
+			},
+			{
+				"name": "Bản Vẽ Hướng Dẫn",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 2
+			},
+			{
+				"name": "Bản Vẽ Phong Ấn",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 4
+			},
+			{
+				"name": "Bản Vẽ Phong Ấn",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 6
+			},
+			{
+				"name": "Bản Vẽ Phong Ấn",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Hướng Dẫn Của \"Tinh Tế\"",
+				"count": 9
+			},
+			{
+				"name": "Bản Vẽ Phong Ấn",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 4
+			},
+			{
+				"name": "Bản Vẽ Cấm Chú",
+				"count": 4
+			},
+			{
+				"name": "Gương Mushin",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 6
+			},
+			{
+				"name": "Bản Vẽ Cấm Chú",
+				"count": 6
+			},
+			{
+				"name": "Gương Mushin",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 12
+			},
+			{
+				"name": "Bản Vẽ Cấm Chú",
+				"count": 9
+			},
+			{
+				"name": "Gương Mushin",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Triết Học Của \"Tinh Tế\"",
+				"count": 16
+			},
+			{
+				"name": "Bản Vẽ Cấm Chú",
+				"count": 12
+			},
+			{
+				"name": "Gương Mushin",
+				"count": 2
+			},
+			{
+				"name": "Vương Miện Trí Thức",
+				"count": 1
+			}
+		]
+	}
+}

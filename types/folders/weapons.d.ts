@@ -31,7 +31,7 @@ declare module "genshin-db" {
 	        nameawakenicon: string;
 	        image?: string; // wikia
 	        icon: string; // hoyolab
-	        awakenicon: string; // hoyolab
+	        awakenicon?: string; // hoyolab
 	    };
 	    url: {
 	        fandom: string;

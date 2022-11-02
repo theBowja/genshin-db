@@ -1,0 +1,213 @@
+{
+	"name": "Nahida",
+	"combat1": {
+		"name": "Normal Attack: Akara",
+		"info": "**Normal Attack**\nMelancarkan hingga 4 serangan ke area depan, yang mengakibatkan Dendro DMG.\n\n**Charged Attack**\nMengonsumsi sejumlah Stamina untuk mengakibatkan Dendro DMG area setelah jeda singkat.\n\n**Plunging Attack**\nMengumpulkan kekuatan Dendro dan menerjang tanah, menyerang musuh di jalur terjangan dan mengakibatkan Dendro DMG area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}",
+				"DMG Tahap 4|{param4:F1P}",
+				"DMG Charged Attack|{param5:F1P}",
+				"Konsumsi Stamina Charged Attack|{param6:F1}",
+				"DMG Selama Plunging|{param7:F1P}",
+				"DMG Plunging Attack Min./Maks.|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "All Schemes to Know",
+		"info": "Melepaskan belenggu karma dari kayu dan pepohonan di sekitarnya dan mengakibatkan Dendro DMG Area, serta memberikan status Seed of Skandha terhadap musuh yang terkena serangan, maksimal hingga 8 musuh.\nSaat ditahan, akan melancarkan serangan dengan cara yang berbeda.\n\n**Tahan**\nMemasuki Mode Membidik untuk memilih sejumlah musuh dalam jarak tertentu dan meningkatkan ketahanan Nahida terhadap interupsi saat Nahida berada dalam status ini.\nSaat Mode Tahan selesai, akan mengakibatkan Dendro DMG terhadap musuh yang terpilih dan menambahkan Seed of Skandha kepada mereka.\nMode Membidik bertahan maksimal selama 5 detik, dan bisa memilih hingga maksimal 8 musuh.\n\n**Seed of Skandha**\nMusuh yang berada dalam status ini akan saling terhubung jika berada di dalam jarak tertentu.\nSetelah memicu reaksi elemental terhadap musuh yang berada dalam status ini, atau setelah musuh ini menerima DMG yang diakibatkan oleh Dendro Core (termasuk Burgeon dan Hyperbloom), Nahida akan melancarkan Tri-Karma Purification terhadap musuh ini dan semua musuh yang terhubung, dan mengakibatkan Dendro DMG berdasarkan ATK dan Elemental Mastery Nahida.\nMemicu sekali Tri-Karma Purification dalam waktu singkat.",
+		"description": "Oh, para dewa dedaunan dan pepohonan memancarkan kebenaran mutlaknya dalam kehampaan, menerangi asal mula dan kehancuran dari tiga karma.",
+		"attributes": {
+			"labels": [
+				"DMG Tekan|{param1:F1P}",
+				"DMG Tahan|{param2:F1P}",
+				"DMG Tri-Karma Purification|{param3:F1P} ATK+{param4:F1P}Elemental Mastery",
+				"Jeda Waktu Tri-Karma Purification|{param5:F1} dtk",
+				"Durasi Seed of Skandha|{param6:F1} detik",
+				"Cooldown (Mode Tekan)|{param7:F1} detik",
+				"Cooldown (Mode Tahan)|{param8:F1} detik"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Illusory Heart",
+		"info": "Memanifestasikan Court of Dreams dan membentuk medan Shrine of Maya.\n\nSaat medan Shrine of Maya dilancarkan, efek berikut akan diperoleh Karakter di dalam party sesuai dengan elemen yang dimilikinya.\n·Pyro: Saat Nahida berada di dalam Shrine of Maya, akan meningkatkan DMG Tri-Karma Purification dari Elemental Skill \"All Schemes to Know\";\n·Electro: Saat Nahida berada di dalam Shrine of Maya, akan mengurangi jeda waktu terpicunya Tri-Karma Purification dari Elemental Skill \"All Schemes to Know\";\n·Hydro: Meningkatkan durasi Shrine of Maya.\n\nSaat membentuk medan, jika Karakter dengan elemen yang disebutkan di atas berjumlah 2 atau lebih, maka efek yang terpicu akan ditingkatkan lebih lanjut.\n\nSaat Nahida ada di dalam party namun tidak berada di medan pertempuran, asalkan party ini berada dalam Shrine of Maya, akan tetap memperoleh peningkatan efek yang disebutkan di atas.",
+		"description": "Mungkin semua yang berjuang di permukaan pohon tidak lebih dari sekadar mimpi terbalik yang sekejap saja di mata Dewa Kebijaksanaan.",
+		"attributes": {
+			"labels": [
+				"Pyro: DMG Meningkat|1 Karakter {param1:F1P}",
+				"Pyro: DMG Meningkat|2 Karakter {param2:F1P}",
+				"Electro: Jeda Berkurang|1 Karakter {param3:F2} dtk",
+				"Electro: Jeda Berkurang|2 Karakter {param4:F2} dtk",
+				"Hydro: Peningkatan Durasi|1 Karakter {param5:F2} dtk",
+				"Hydro: Peningkatan Durasi|2 Karakter {param6:F2} dtk",
+				"Durasi Dasar|{param7:F1} dtk",
+				"Cooldown|{param8:F1} dtk",
+				"Konsumsi Energy|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Compassion Illuminated",
+		"info": "Saat melancarkan **Illusory Heart**, Shrine of Maya akan mendapatkan efek sebagai berikut:\nMeningkatkan Elemental Mastery Karakter aktif yang berada di dalam medan Shrine of Maya sebesar 25% dari Karakter yang memiliki Elemental Mastery tertinggi di dalam party.\nElemental Mastery yang bisa diperoleh dengan cara ini maksimal hingga 250 poin Elemental Mastery."
+	},
+	"passive2": {
+		"name": "Awakening Elucidated",
+		"info": "Untuk setiap 1 poin Elemental Mastery Nahida yang di atas 200 poin, akan membuat DMG Tri-Karma Purification yang diakibatkan oleh **All Schemes to Know** meningkat 0,1%, CRIT Rate meningkat 0,03%.\nPeningkatan DMG Tri-Karma Purification yang bisa diperoleh dengan cara ini maksimal adalah 80% dan peningkatan CRIT Rate maksimal adalah 24%."
+	},
+	"passive3": {
+		"name": "On All Things Meditated",
+		"info": "Nahida bisa berinteraksi dengan sebagian tanaman dalam area tertentu melalui **All Schemes to Know**.\nMungkin masih ada efek yang lain ...."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Ingenuity",
+				"count": 3
+			},
+			{
+				"name": "Fungal Spore",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 2
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 4
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 6
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 9
+			},
+			{
+				"name": "Luminescent Pollen",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 4
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 4
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 6
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 6
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 12
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 9
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 16
+			},
+			{
+				"name": "Crystalline Cyst Dust",
+				"count": 12
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

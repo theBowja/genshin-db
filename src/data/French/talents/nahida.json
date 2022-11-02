@@ -1,0 +1,213 @@
+{
+	"name": "Nahida",
+	"combat1": {
+		"name": "Attaque normale : Akara",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 attaques qui infligent des DGT Dendro vers l'avant.\n\n**Attaque chargée**\nConsomme de l'endurance pour infliger des DGT Dendro de zone vers l'avant après un court délai.\n\n**Attaque plongeante**\nPlonge depuis les airs en concentrant ses pouvoirs Dendro, infligeant des DGT aux ennemis en chemin et des DGT Dendro de zone.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT attaque chargée|{param5:F1P}",
+				"Coût d'endurance attaque chargée|{param6:F1} pts",
+				"DGT durant la chute|{param7:F1P}",
+				"DGT chute basse/élevée|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Omniscience des plans",
+		"info": "Envoie des liens karmiques des bois autour d'elle, infligeant des DGT Dendro de zone et apposant une graine de Skandha à un maximum de 8 ennemis touchés.\nEn cas d'appui long, la compétence est déclenchée différemment.\n\n**Appui long**\nBascule en mode visée, ce qui permet de sélectionner une certaine quantité d'ennemis dans une zone limitée, tout en augmentant la RÉS à l'interruption de Nahida pendant le processus.\nLorsque le mode visée se termine, cette compétence leur inflige des DGT Dendro et leur appose une graine de Skandha.\nLe mode visée dure 5 s maximum et permet de sélectionner jusqu'à 8 ennemis.\n\n**Graine de Skandha**\nLes ennemis marqués par une graine de Skandha sont liés les uns aux autres jusqu'à une certaine distance.\nAprès avoir déclenché une réaction élémentaire sur un ennemi affecté par une graine de Skandha ou lui avoir infligé des DGT grâce à un noyau Dendro (incluant Bourgeonnement et Exubérance), Nahida déclenche une purification trikarmique sur cet ennemi et tous les ennemis liés, infligeant des DGT Dendro.\nLa purification trikarmique ne peut être déclenchée qu'une fois par intervalle de temps défini.",
+		"description": "Toisez, la divinité de l'herbe et des arbres fait briller sa vérité ultime dans le vide, éclairant l'origine et la destruction des trois karmas.",
+		"attributes": {
+			"labels": [
+				"DGT appui simple|{param1:F1P}",
+				"DGT appui long|{param2:F1P}",
+				"DGT purification trikarmique|{param3:F1P} ATQ + {param4:F1P} Maîtrise élémentaire",
+				"Intervalle de déclenchement de purification trikarmique|{param5:F1} s",
+				"Durée de graine de Skandha|{param6:F1} s",
+				"TdR appui simple|{param7:F1} s",
+				"TdR appui long|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Cœur illusoire",
+		"info": "Manifeste la cour des rêves et déploie le sanctuaire de Maya.\n\nLorsque le champ du sanctuaire de Maya est déclenché, les effets suivants s'appliquent séparément selon les types élémentaires présents dans l'équipe :\n· Pyro : lorsque Nahida est dans le sanctuaire de Maya, les DGT infligés par la purification trikarmique d'Omniscience des plans augmentent.\n· Électro : lorsque Nahida est dans le sanctuaire de Maya, l'intervalle de déclenchement entre chaque purification trikarmique d'Omniscience des plans diminue.\n· Hydro : la durée du sanctuaire de Maya augmente.\n\nSi un minimum de 2 personnages des types élémentaires susmentionnés sont présents lorsque le champ est déployé, ces effets augmentent davantage.\n\nMême si Nahida fait partie de l'équipe mais n'est pas déployée, les effets mentionnés ci-dessus peuvent être obtenus tant que l'équipe est dans le sanctuaire de Maya.",
+		"description": "Peut-être que tout ce qui habite sous les berceaux des arbres n'est qu'un rêve éphémère inversé aux yeux de la divinité de la sagesse...",
+		"attributes": {
+			"labels": [
+				"(Pyro) Bonus ATQ|1 personnage : {param1:F1P}",
+				"(Pyro) Bonus ATQ|2 personnages : {param2:F1P}",
+				"(Électro) Diminution d'intervalle|1 personnage : {param3:F2} s",
+				"(Électro) Diminution d'intervalle|2 personnages : {param4:F2} s",
+				"Hydro : Prolongation de durée|1 personnage : {param5:F2} s",
+				"Hydro : Prolongation de durée|2 personnages : {param6:F2} s",
+				"Durée de base|{param7:F1} s",
+				"Temps de recharge|{param8:F1} s",
+				"Énergie élémentaire|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Compassion illuminée",
+		"info": "**Cœur illusoire** accorde l'effet suivant au sanctuaire de Maya :\nAugmente la maîtrise élémentaire du personnage déployé à portée d'une valeur équivalant à 25 % de la maîtrise élémentaire du personnage de l'équipe en ayant le plus.\nLa maîtrise élémentaire peut être augmentée d'un maximum de 250 pts de cette manière."
+	},
+	"passive2": {
+		"name": "Éveil élucidé",
+		"info": "Pour chaque pt de maîtrise élémentaire que Nahida possède au-delà de 200 pts, les DGT infligés par la purification trikarmique d'**Omniscience des plans** augmentent de 0,1 % et son taux CRIT de 0,03 %.\nLes DGT de la purification trikarmique peuvent être augmentés d'un maximum de 80 % et son taux CRIT d'un maximum de 24 % de cette manière."
+	},
+	"passive3": {
+		"name": "Universalité méditée",
+		"info": "Nahida peut utiliser **Omniscience des plans** pour interagir avec certains objets récoltables dans une zone d'effet fixe.\nCette compétence peut même avoir d'autres effets..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Ingénuité",
+				"count": 3
+			},
+			{
+				"name": "Spores de Fongus",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 2
+			},
+			{
+				"name": "Pollen fluorescent",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 4
+			},
+			{
+				"name": "Pollen fluorescent",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 6
+			},
+			{
+				"name": "Pollen fluorescent",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Ingénuité",
+				"count": 9
+			},
+			{
+				"name": "Pollen fluorescent",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 4
+			},
+			{
+				"name": "Poussière cristalline de sporange",
+				"count": 4
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 6
+			},
+			{
+				"name": "Poussière cristalline de sporange",
+				"count": 6
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 12
+			},
+			{
+				"name": "Poussière cristalline de sporange",
+				"count": 9
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Ingénuité",
+				"count": 16
+			},
+			{
+				"name": "Poussière cristalline de sporange",
+				"count": 12
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

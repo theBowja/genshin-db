@@ -1,0 +1,205 @@
+{
+	"name": "Layla",
+	"combat1": {
+		"name": "Standardangriff: Schwert des strahlenden Pfads",
+		"info": "**Standardangriff**\nFührt bis zu 3 Schwerthiebe hintereinander aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer und schwingt das Schwert zweimal schnell nach vorn.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH heftiger Schläge|{param4:F1P} + {param5:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param6:F1} Punkte",
+				"SCH beim Fallen|{param7:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Nacht des feierlichen Fokus",
+		"info": "Breitet einen Schutzschild, der als Vorhang des sanften Schlummers bekannt ist, aus und verursacht Kryo-Flächenschaden.\nVorhang des sanften Schlummers hält Schaden basierend auf Laylas max. LP und bei Kryo-Schaden 250 % ab. Beim Ausbreiten des Vorhangs ist Layla kurzzeitig von Kryo-Attribut betroffen.\n\n**Abendsterne und Sternschnuppen**\nWährend der Dauer des Vorhangs des sanften Schlummers entsteht alle 1,5 s 1 sich an diesem anheftender Abendstern. Wenn eine im Schutz dieses Schildes stehende Figur ihre Elementarfähigkeit anwendet, entstehen 2 Abendsterne. Das Entstehen von Abendsternen auf diese Weise hat eine Abklingzeit von 0,3 s. Zu jeder Zeit können bis zu 4 Abendsterne gleichzeitig vorhanden sein.\nSobald sich am Vorhang des sanften Schlummers 4 Abendsterne befinden und sich Gegner in der Nähe befinden, werden die Abendsterne als selbstständig zielsuchende Sternschnuppen abgefeuert, die den von ihnen getroffenen Gegnern Kryo-Schaden zufügen.\nNach Ablauf der Dauer des Vorhangs des sanften Schlummers oder dessen Zerstörung verschwinden zugleich auch die Abendsterne. Sollten bereits Sternschnuppen abgefeuert werden, werden diese weiterhin abgefeuert, bis sie aufgebraucht sind.\n\nBevor die Sternschnuppen abgefeuert wurden, können keine neuen Abendsterne entstehen.",
+		"description": "„Sie und ich sind wie zwei Meisterhandwerker, die einander nie begegnet sind und doch auf dem gleichen Stuhl sitzen und die gleiche Traumblume sticken.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P}",
+				"Sternschnuppen-SCH|{param2:F1P}",
+				"Basisschildstärke|{param3:F1P} der max. LP + {param4:I}",
+				"Schilddauer|{param5:F1} s",
+				"Abklingzeit|{param6:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Traum des Sternenstrom-Schüttlers",
+		"info": "Entfesselt ein himmlisches Mobile, das fortlaufend Sternenlichtgeschosse auf Gegner in seiner Reichweite abfeuert, welche Kryo-Schaden verursachen.\nBei Treffern mit Sternenlichtgeschossen entsteht am Vorhang des sanften Schlummers in der Nähe 1 Abendstern. Das Entstehen von Abendsternen auf diese Weise hat pro Vorhang des sanften Schlummers eine Abklingzeit von 0,5 s.",
+		"description": "„Schlaf schön, schlaf schön! Ich weiß, so viele Sterne fliegen in deinem Traum, so viele Schicksale offenbaren sich vor deinen vom Schlaf verschwommenen Augen.“",
+		"attributes": {
+			"labels": [
+				"Sternenlichtgeschoss-SCH|{param1:F1P} der max. LP",
+				"Dauer|{param2:F1} s",
+				"Abklingzeit|{param3:F1} s",
+				"Elementarenergie|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Erste Sonnenstrahlen",
+		"info": "Während des Bestehens des **Vorhangs des sanften Schlummers** wird beim Erhalt eines Abendsterns der Tiefschlaf-Effekt ausgelöst:\n· Erhöht für Figuren, die sich im Schutz dieses Schildes befinden, die Schildeffizienz um 6 %.\n· Dieser Effekt ist höchstens 4-mal stapelbar und hält an, bis der Vorhang des sanften Schlummers verschwindet."
+	},
+	"passive2": {
+		"name": "Ungestörter Schlaf",
+		"info": "Erhöht den von den durch **Nacht des feierlichen Fokus** abgefeuerten Sternschnuppen verursachten Schaden um 1,5 % von Laylas max. LP."
+	},
+	"passive3": {
+		"name": "Schattenhafte Traumzeichen",
+		"info": "Stellt beim Zusammensetzen von Material für Figurentalente mit einer Wahrscheinlichkeit von 10 % den 2-fachen Ertrag her."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Findigkeit“",
+				"count": 3
+			},
+			{
+				"name": "Leitende Schriftrolle",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 2
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 4
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 6
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Findigkeit“",
+				"count": 9
+			},
+			{
+				"name": "Zaubersiegel-Schriftrolle",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 4
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 4
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 6
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 6
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 12
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 9
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Findigkeit“",
+				"count": 16
+			},
+			{
+				"name": "Fluchschriftrolle",
+				"count": 12
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

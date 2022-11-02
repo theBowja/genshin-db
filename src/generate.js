@@ -91,10 +91,10 @@ function makeIndices() {
 						index.names[data.name] = filename;
 					}
 
-					if(design.altnames[folder] === undefined) design.altnames[folder] = [];
-					design.altnames[folder].push('alias');
-					design.altnames[folder].push('dupealias');
-					for(let altname of design.altnames[folder]) { // add all the altnames to the index
+					if(design.aliases[folder] === undefined) design.aliases[folder] = [];
+					design.aliases[folder].push('alias');
+					design.aliases[folder].push('dupealias');
+					for(let altname of design.aliases[folder]) { // add all the aliases to the index
 						let values = getNestedValue(data, altname.split('.'));
 						if(values === undefined || values === "") continue;
 						if(!Array.isArray(values))
