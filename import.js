@@ -55,6 +55,82 @@ const genderTranslations = {
 
 /* ============================================ FUNCTIONS =================================================== */
 
+async function checkLinkExists(url) {
+	const https = require('https');
+	const options = { method: 'HEAD' }
+	return new Promise(resolve => {
+		https.get(url, options, function (res) {
+			if (res.statusCode === 200) resolve(true);
+			else if (res.statusCode === 301) resolve(true);
+			else if (res.statusCode === 404) resolve(false);
+			else console.log('checkLinkExists unknown statusCode: '+res.statusCode);
+			resolve(false);
+		});
+	});
+}
+
+let imageblacklist = require('./import/imageblacklist.json');
+// returns if the image exists or not
+async function checkBlacklistImage(imageurl, savechanges) {
+	if (imageblacklist.includes(imageurl)) {
+		if (await checkLinkExists(imageurl)) {
+			if (savechanges) {
+				imageblacklist = imageblacklist.filter(e => e !== imageurl);
+				fs.writeFileSync(`./import/imageblacklist.json`, JSON.stringify(imageblacklist, null, '\t'));
+			}
+			return true;
+
+		} else {
+			return false;
+		}
+
+	} else {
+		return true;
+	}
+}
+
+// checks every single mihoyo image urls in genshin-db
+async function checkMihoyoImages(saveimageblacklist) {
+	const imageblacklist = [];
+	try {
+		let charimages = {};
+		charimages = require(`./src/data/image/characters.json`);
+		console.log('checking character images...');
+		for (let [filename, imagedata] of Object.entries(charimages)) {
+			if (imagedata.icon && !await checkLinkExists(imagedata.icon)) {
+				imageblacklist.push(imagedata.icon);
+				console.log(filename+'.icon image doesn\'t exist');
+			}
+			if (imagedata.sideicon && !await checkLinkExists(imagedata.sideicon)) {
+				imageblacklist.push(imagedata.sideicon);
+				console.log(filename+'.sideicon image doesn\'t exist');
+			}
+		}
+		console.log('done checking character images');
+	} catch(e) { console.log(e); }
+
+	try {
+		let weapimages = {};
+		weapimages = require(`./src/data/image/weapons.json`);
+		console.log('checking weapon images...')
+		for (let [filename, imagedata] of Object.entries(weapimages)) {
+			if (imagedata.icon && !await checkLinkExists(imagedata.icon)) {
+				imageblacklist.push(imagedata.icon);
+				console.log(filename+'.icon image doesn\'t exist');
+			}
+			if (imagedata.awakenicon && !await checkLinkExists(imagedata.awakenicon)) {
+				imageblacklist.push(imagedata.awakenicon);
+				console.log(filename+'.awakenicon image doesn\'t exist');
+			}
+		}
+		console.log('done checking weapon images');
+	} catch(e) { console.log(e); }
+
+	console.log('done checking if images exist')
+	if (printimageblacklist) {
+
+	}
+}
 async function stealWikiaVersion(folder) {
 	const fs = require('fs');
 	async function getWikiaVersion(name) {
@@ -201,12 +277,21 @@ function copyPropsIfExist(fromObj, toObj, props, setdefault) {
 	}
 }
 
-function copyImagesProps(importdata, importconfig) {
+async function copyImagesProps(importdata, importconfig) {
 	importdata.images = {};
 	copyPropsIfExist(importdata, importdata.images, importconfig.images);
+
+	// check if images exist
+	for (let prop of ['icon', 'awakenicon', 'sideicon']) {
+		if (importdata.images[prop]) {
+			if (!await checkBlacklistImage(importdata.images[prop], true)) {
+				delete importdata.images[prop];
+			}
+		}
+	}
 }
 
-function collateCharacter(existing, newdata, lang) {
+async function collateCharacter(existing, newdata, lang) {
 	newdata.images = {};
 	if(newdata.icon) {
 		let name = newdata.icon.slice(newdata.icon.lastIndexOf('_')+1);
@@ -216,11 +301,17 @@ function collateCharacter(existing, newdata, lang) {
 			newdata.images.namegachasplash = `UI_Gacha_AvatarImg_${name}`;
 			newdata.images.namegachaslice = `UI_Gacha_AvatarIcon_${name}`;
 		}
-		newdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
+		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
+		if (await checkBlacklistImage(mihoyoUrl, true)) {
+			newdata.images.icon = mihoyoUrl;
+		}
 	}
 	if(newdata.sideicon) {
 		newdata.images.namesideicon = newdata.sideicon;
-		newdata.images.sideicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
+		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
+		if (await checkBlacklistImage(mihoyoUrl, true)) {
+			newdata.images.sideicon = mihoyoUrl;
+		}
 	}
 
 	//newdata.talentmaterialtype = existing.talentmaterialtype;
@@ -326,16 +417,22 @@ function collateTalent(existing, newdata, lang) {
 	existing.costs = newdata.costs;
 }
 
-function collateWeapon(existing, inputdata) {
+async function collateWeapon(existing, inputdata) {
 	inputdata.images = {};
 	if(inputdata.icon) {
 		inputdata.images.nameicon = inputdata.icon;
 		inputdata.images.namegacha = `UI_Gacha_EquipIcon_${inputdata.icon.slice(inputdata.icon.indexOf("UI_EquipIcon")+13)}`;
-		inputdata.images.icon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
+		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
+		if (await checkBlacklistImage(mihoyoUrl, true)) {
+			inputdata.images.icon = mihoyoUrl;
+		}
 	}
 	if(inputdata.awakenicon) {
 		inputdata.images.nameawakenicon = inputdata.awakenicon;
-		inputdata.images.awakenicon = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
+		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
+		if (await checkBlacklistImage(mihoyoUrl, true)) {
+			inputdata.images.awakenicon = mihoyoUrl;
+		}
 	}
 
 	inputdata.weaponmaterialtype = existing.weaponmaterialtype;
@@ -541,7 +638,7 @@ importData('characters', collateCharacter);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
-// importData('foods', collateFood);
+// importData('foods');
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains');
 // importData('enemies');
