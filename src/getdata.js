@@ -48,13 +48,7 @@ const allstats   = all.stats;
 const allcurve   = all.curve;
 const allversion = all.version
 
-const availableimage   = ['characters', 'outfits', 'artifacts', 'weapons', 'constellations', 'talents', 'materials',
-                          'foods', 'elements', 'domains', 'enemies', 'achievementgroups', 'windgliders', 'animals',
-                          'namecards', 'geographies'];
-const availableurl     = ['characters', 'outfits', 'artifacts', 'weapons', 'foods', 'materials'];
-const availablestats   = ['characters', 'weapons', 'enemies'];
-const availablecurve   = ['characters', 'weapons', 'enemies'];
-// const availableversion = ['achievments']
+const design = require('./design.json');
 
 const calcStatsMap = {
     'characters': calcStatsCharacter,
@@ -65,13 +59,13 @@ const calcStatsMap = {
 function getData(lang, folder, filename) {
     try {
         let tmp = alldata[lang][folder][filename];
-        if(tmp.images === undefined && availableimage.includes(folder)) {
+        if(tmp.images === undefined && design.hasImage.includes(folder)) {
             tmp.images = getImage(folder, filename);
         }
-        if(tmp.url === undefined && availableurl.includes(folder)) {
+        if(tmp.url === undefined && design.hasUrl.includes(folder)) {
             tmp.url = getURL(folder, filename);
         }
-        if(tmp.stats === undefined && availablestats.includes(folder) && calcStatsMap[folder]) {
+        if(tmp.stats === undefined && design.hasStat.includes(folder) && calcStatsMap[folder]) {
             tmp.stats = calcStatsMap[folder](filename);
         }
         if(folder === 'talents' && tmp.combat1.parameters === undefined) {
@@ -328,49 +322,49 @@ function addData(newdata, override = true) {
     }
     if(isObject(newdata.image)) {
         for(const folder of Object.keys(newdata.image)) {
-        // for(const folder of availableimage) { // commented to allow addition of new folders
+        // for(const folder of design.hasImage) { // commented to allow addition of new folders
             if(!isObject(newdata.image[folder])) continue;
             for(const filename in newdata.image[folder]) {
                 if(!isObject(newdata.image[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allimage, [folder], filename, newdata.image[folder][filename]);
-                if(!availableimage.includes(folder)) availableimage.push(folder);
+                if(!design.hasImage.includes(folder)) design.hasImage.push(folder);
             }
         }
     }
     if(isObject(newdata.stats)) {
         for(const folder of Object.keys(newdata.stats)) {
-        // for(const folder of availablestats) { // commented to allow addition of new folders
+        // for(const folder of design.hasStat) { // commented to allow addition of new folders
             if(!isObject(newdata.stats[folder])) continue;
             for(const filename in newdata.stats[folder]) {
                 if(!isObject(newdata.stats[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allstats, [folder], filename, newdata.stats[folder][filename]);
-                if(!availablestats.includes(folder)) availablestats.push(folder);
+                if(!design.hasStat.includes(folder)) design.hasStat.push(folder);
             }
         }
     }
     if(isObject(newdata.curve)) {
         for(const folder of Object.keys(newdata.curve)) {
-        // for(const folder of availablecurve) { // commented to allow addition of new folders
+        // for(const folder of design.hasCurve) { // commented to allow addition of new folders
             if(!isObject(newdata.curve[folder])) continue;
             for(const filename in newdata.curve[folder]) {
                 if(!isObject(newdata.curve[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allcurve, [folder], filename, newdata.curve[folder][filename]);
-                if(!availablecurve.includes(folder)) availablecurve.push(folder);
+                if(!design.hasCurve.includes(folder)) design.hasCurve.push(folder);
             }
         }
     }
     if(isObject(newdata.url)) {
         for(const folder of Object.keys(newdata.url)) {
-        // for(const folder of availableurl) { // commented to allow addition of new folders
+        // for(const folder of design.hasUrl) { // commented to allow addition of new folders
             if(!isObject(newdata.url[folder])) continue;
             for(const filename in newdata.url[folder]) {
                 if(!isObject(newdata.url[folder][filename])) continue;
                 if(!override && dataExists(allimage, folder, filename)) continue;
                 assignOverride(allurl, [folder], filename, newdata.url[folder][filename]);
-                if(!availableurl.includes(folder)) availableurl.push(folder);
+                if(!design.hasUrl.includes(folder)) design.hasUrl.push(folder);
             }
         }
     }
