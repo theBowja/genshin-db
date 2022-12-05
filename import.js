@@ -7,7 +7,7 @@ const language = require('./src/language.js');
 //const genshindb = require('./src/main.js');
 
 
-if(!fs.existsSync('./import/EN')) {
+if(!fs.existsSync('./import/import/EN')) {
 	console.log('import folder doesn\'t exist');
 	process.exit();
 }
@@ -16,11 +16,11 @@ if(!fs.existsSync('./import/EN')) {
 let myimages = {};
 
 // FOR DATA ONLY
-function getJSON(path) {
+function getDbData(path) {
     try {
         return require(`./src/data/${path}`);
     } catch(e) {
-        return undefined;
+        return {};
     }
 }
 
@@ -176,15 +176,37 @@ function updateURLs() {
 	}
 }
 
-function copyPropsIfExist(from, to, props, setdefault) {
+function splitFromTo(str) {
+	for (const splitter of ['=>', '->', '>', '|'])
+		if (str.includes(splitter)) return str.split(splitter);
+	for (const splitter of ['<=', '<-', '<'])
+		if (str.includes(splitter)) return str.split(splitter).reverse();
+	return [str, str];
+}
+
+function copyPropsIfExist(fromObj, toObj, props, setdefault) {
 	for(let prop of props) {
-		if(from && from[prop] !== undefined) to[prop] = from[prop];
-		else to[prop] = setdefault;
+		let isRequired = false;
+		if (prop[0] === '!') {
+			prop = slice(1);
+			isRequired = true;
+		}
+		let [fromProp, toProp] = splitFromTo(prop);
+		if(fromObj && fromObj[fromProp] !== undefined) {
+			toObj[toProp] = fromObj[fromProp];
+		} else {
+			toObj[toProp] = setdefault;
+			if (isRequired) console.log(`MISSING REQUIRED PROPERTY !${prop}`)
+		}
 	}
 }
 
+function copyImagesProps(importdata, importconfig) {
+	importdata.images = {};
+	copyPropsIfExist(importdata, importdata.images, importconfig.images);
+}
+
 function collateCharacter(existing, newdata, lang) {
-	newdata.aliases = existing.aliases;
 	newdata.images = {};
 	if(newdata.icon) {
 		let name = newdata.icon.slice(newdata.icon.lastIndexOf('_')+1);
@@ -207,7 +229,6 @@ function collateCharacter(existing, newdata, lang) {
 
 	existing.name = newdata.name;
 	existing.fullname = newdata.fullname;
-	if(newdata.aliases) existing.aliases = newdata.aliases;
 	existing.title = newdata.title;
 	existing.description = newdata.description;
 	existing.rarity = newdata.rarity;
@@ -364,24 +385,7 @@ function collateArtifact(existing, newdata) {
 	})
 }
 
-function collateFood(existing, newdata, lang) {
-	clearObject(existing);
-	const copyover = ['name', 'rarity', 'foodtype', 'foodfilter', 'foodcategory',
-	                  'effect', 'description', 'suspicious', 'normal', 'delicious',
-	                  'basedish', 'character', 'ingredients'];
-	for(let prop of copyover) {
-		// console.log(newdata[prop]);
-		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
-	}
-	existing.rarity = existing.rarity+"";
-	if(lang === 'English') {
-		newdata.images = {};
-		newdata.images.nameicon = newdata.imagename;
-	}
-	// console.log(newdata);
-}
-
-async function collateMaterial(existing, newdata, lang, skipimageredirect) {
+async function collateMaterial(existing, newdata, lang, importconfig, skipimageredirect) {
 	if(existing.dropdomain && existing.dropdomain !== "" && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
 	if(existing.daysofweek && existing.daysofweek.length !== 0 && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
@@ -402,92 +406,12 @@ async function collateMaterial(existing, newdata, lang, skipimageredirect) {
 	}
 }
 
-function collateDomain(existing, newdata, lang) {
-	if(existing.recommendedelements && !newdata.recommendedelements) newdata.recommendedelements = existing.recommendedelements;
-	if(existing.disorder && !newdata.disorder) newdata.disorder = existing.disorder;
-	clearObject(existing);
-	const copyover = ['name', 'region', 'domainentrance', 'domaintype', 'description', 'recommendedlevel', 'recommendedelements',
-                  'daysofweek', 'unlockrank', 'rewardpreview', 'disorder', 'monsterlist'];
-	existing.name = newdata.name;
-	for(let prop of copyover) {
-		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
+function collateData(dbdata, importdata, langC, importconfig) {
+	clearObject(dbdata);
+	copyPropsIfExist(importdata, dbdata, importconfig.props);
+	if (langC === 'EN' && importconfig.images) {
+		copyImagesProps(importdata, importconfig);
 	}
-	if(lang === 'English') {
-		newdata.images = {};
-		if(newdata.imagename) newdata.images.namepic = newdata.imagename;
-	}
-}
-
-function collateEnemy(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'specialname', 'enemytype', 'category', 'description', 'investigation', 'rewardpreview'])
-	if(lang === 'English') {
-		newdata.images = {};
-		if(newdata.imageicon) newdata.images.nameicon = newdata.imageicon;
-	}
-}
-
-function collateAchievement(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'dupealias', 'achievementgroup', 'ishidden', 'sortorder', 'stages', 'stage1', 'stage2', 'stage3']);
-}
-
-function collateAchievementGroup(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'sortorder', 'reward']);
-	if(lang === 'English') {
-		newdata.images = {};
-		newdata.images.nameicon = newdata.nameicon;
-	}
-}
-
-function collateWindGlider(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'description', 'rarity', 'sortorder', 'ishidden', 'source']);
-	if(lang === 'English') {
-		newdata.images = {};
-		newdata.images.nameicon = newdata.nameicon;
-		newdata.images.namegacha = newdata.namegacha;
-	}
-}
-
-function collateAnimal(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'dupealias', 'description', 'category', 'counttype', 'sortorder']);
-	if(lang === 'English') {
-		newdata.images = {};
-		newdata.images.nameicon = newdata.nameicon;
-	}
-}
-
-function collateNamecard(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'description', 'sortorder', 'source']);
-	if(lang === 'English') {
-		newdata.images = {};
-		newdata.images.nameicon = newdata.nameicon;
-		newdata.images.namebanner = newdata.namebanner;
-		newdata.images.namebackground = newdata.namebackground;
-	}
-}
-
-function collateGeography(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'area', 'description', 'region', 'showonlyunlocked', 'sortorder']);
-	if(lang === 'English') {
-		newdata.images = {};
-		newdata.images.nameimage = newdata.nameimage;
-	}
-}
-
-function collateAdventureRank(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'exp', 'unlockdescription', 'reward']);
-}
-
-function collateCraft(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'filter', 'sortorder', 'unlockrank', 'resultcount', 'moracost', 'recipe', 'altrecipes']);
 }
 
 function importCurve(folder) {
@@ -498,7 +422,7 @@ function importCurve(folder) {
 	} catch(e) {}
 }
 
-function applyPatch(folder, data, langC, filename) {
+function patchData(folder, data, langC, filename) {
 	if(folder === 'talents' && langC === 'DE' && filename === 'zhongli') {
 		const wrong = "Ein riesiger Meteorit fällt aus dem Himmel und fügt den Gegnern im Wirkungsbereich des Einschlags enormen Geo-Schaden sowie Versteinert zu.\n\n**Versteingert**\nGegner im Zustand Versteinert können sich nicht bewegen.";
 		const correct = "Ein riesiger Meteorit fällt aus dem Himmel und fügt den Gegnern im Wirkungsbereich des Einschlags enormen Geo-Schaden sowie Versteinert zu.\n\n**Versteinert**\nGegner im Zustand Versteinert können sich nicht bewegen.";
@@ -546,47 +470,46 @@ function writeFileIfDifferent(path, data) {
 	}
 }
 
+const design = require('./src/design.json');
+const importconfig = require('./import/importconfig.json');
 function importData(folder, collateFunc, dontwrite, deleteexisting, skipimageredirect) {
 	language.languageCodes.forEach(async (langC) => {
 		if(dontwrite && langC !== 'EN') return; 
-		// if(langC !== 'EN') return;
-		let newaggregateddata = JSON.parse(JSON.stringify(require(`./import/${langC}/${folder}.json`)));
-		let myimages = {}; // only do this once
+
+		let importdatafolder = JSON.parse(JSON.stringify(require(`./import/import/${langC}/${folder}.json`)));
+		let dbimages; // only do this once
 		let mystats = {}; // only do this once
-		if(langC === 'EN') {
-			try {
-				myimages = JSON.parse(JSON.stringify(require(`./src/data/image/${folder}.json`)));
-			} catch(e) {}
+		if(langC === 'EN' && design.hasImage.includes(folder)) {
+			try { dbimages = JSON.parse(JSON.stringify(require(`./src/data/image/${folder}.json`)));
+			} catch(e) { dbimages = {}; }
 		}
 
 		let basepath = `${language.languageMap[langC]}/${folder}`
-		if(deleteexisting) {
-			fs.rmdirSync(`./src/data/${basepath}`, { recursive: true });
-		}
+		if(deleteexisting) fs.rmdirSync(`./src/data/${basepath}`, { recursive: true });
 
 		const filenamelist = [];
-		for(const [filename, newdata] of Object.entries(newaggregateddata)) {
+		for(const [filename, importdata] of Object.entries(importdatafolder)) {
 			filenamelist.push(filename);
-			let existing = getJSON(`${basepath}/${filename}.json`);
-			if(existing === undefined) existing = {};
-			newdata.aliases = existing.aliases;
+			let dbdata = getDbData(`${basepath}/${filename}.json`);
+			importdata.aliases = dbdata.aliases;
 
-			let changebefore = JSON.stringify(existing);
-			await collateFunc(existing, newdata, language.languageMap[langC], skipimageredirect);
-			if(langC === 'EN') { 
-				if(myimages[`${filename}`] === undefined) myimages[`${filename}`] = {};
-				Object.assign(myimages[`${filename}`], newdata.images);
-				mystats[`${filename}`] = newdata.stats || newdata.parameters;
+			let before = JSON.stringify(dbdata);
+			if (collateFunc)
+				await collateFunc(dbdata, importdata, language.languageMap[langC], importconfig[folder], skipimageredirect);
+			else
+				await collateData(dbdata, importdata, langC, importconfig[folder])
+			if(dbimages) { 
+				if(dbimages[filename] === undefined) dbimages[filename] = {};
+				Object.assign(dbimages[filename], importdata.images);
+				mystats[filename] = importdata.stats || importdata.parameters;
 			}
-			applyPatch(folder, existing, langC, filename);
+			patchData(folder, dbdata, langC, filename);
 
-			//if(langC === 'CHT') console.log(existing);
-
-			if(dontwrite) { console.log(existing); continue; }
-			if(changebefore === JSON.stringify(existing)) continue;
+			if(dontwrite) { console.log(dbdata); continue; }
+			if(before === JSON.stringify(dbdata)) continue; // no change made
 			
 			fs.mkdirSync(`./src/data/${basepath}`, { recursive: true });
-			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(existing, null, '\t'));
+			fs.writeFileSync(`./src/data/${basepath}/${filename}.json`, JSON.stringify(dbdata, null, '\t'));
 		}
 
 		// remove unused files
@@ -597,9 +520,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			}
 		})
 
+		if(dbimages)
+			writeFileIfDifferent(`./src/data/image/${folder}.json`, dbimages);
 		if(langC === 'EN') {
-			if(folder !== 'achievements')
-				writeFileIfDifferent(`./src/data/image/${folder}.json`, myimages);
 			updateVersions(filenamelist, folder);
 			if(folder === 'outfits')
 				addURLsEmpty(filenamelist, folder, ['modelviewer']);
@@ -610,8 +533,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-gameVersion = "3.1"; // new data will use this as added version
-// importData('characters', collateCharacter);
+gameVersion = "3.2"; // new data will use this as added version
+importData('characters', collateCharacter);
 // importCurve('characters');
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
@@ -620,19 +543,19 @@ gameVersion = "3.1"; // new data will use this as added version
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods', collateFood);
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
-// importData('domains', collateDomain);
-// importData('enemies', collateEnemy);
+// importData('domains');
+// importData('enemies');
 // importCurve('enemies');
 
 // importData('outfits', collateOutfit);
-// importData('windgliders', collateWindGlider);
-// importData('animals', collateAnimal);
-// importData('namecards', collateNamecard);
-// importData('geographies', collateGeography);
-importData('achievements', collateAchievement);
-importData('achievementgroups', collateAchievementGroup);
-// importData('adventureranks', collateAdventureRank); // max 60
-// importData('crafts', collateCraft);
+// importData('windgliders');
+// importData('animals');
+// importData('namecards');
+// importData('geographies');
+// importData('achievements');
+// importData('achievementgroups');
+// importData('adventureranks'); // max 60
+// importData('crafts');
 
 // getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
