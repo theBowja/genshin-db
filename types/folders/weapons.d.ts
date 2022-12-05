@@ -30,8 +30,8 @@ declare module "genshin-db" {
 	        namegacha: string;
 	        nameawakenicon: string;
 	        image?: string; // wikia
-	        icon: string; // hoyolab
-	        awakenicon?: string; // hoyolab
+	        icon?: string; // hoyolab. some images don't have this.
+	        awakenicon?: string; // hoyolab. some images don't have this.
 	    };
 	    url: {
 	        fandom: string;

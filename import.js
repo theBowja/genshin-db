@@ -53,6 +53,8 @@ const genderTranslations = {
 	}
 }
 
+let checkExistingImageBlacklist;
+
 /* ============================================ FUNCTIONS =================================================== */
 
 async function checkLinkExists(url) {
@@ -71,9 +73,9 @@ async function checkLinkExists(url) {
 
 let imageblacklist = require('./import/imageblacklist.json');
 // returns if the image exists or not
-async function checkBlacklistImage(imageurl, savechanges) {
+async function isImageBlacklistAndExist(imageurl, savechanges) {
 	if (imageblacklist.includes(imageurl)) {
-		if (await checkLinkExists(imageurl)) {
+		if (checkExistingImageBlacklist && await checkLinkExists(imageurl)) {
 			if (savechanges) {
 				imageblacklist = imageblacklist.filter(e => e !== imageurl);
 				fs.writeFileSync(`./import/imageblacklist.json`, JSON.stringify(imageblacklist, null, '\t'));
@@ -127,10 +129,11 @@ async function checkMihoyoImages(saveimageblacklist) {
 	} catch(e) { console.log(e); }
 
 	console.log('done checking if images exist')
-	if (printimageblacklist) {
-
+	if (saveimageblacklist) {
+		fs.writeFileSync(`./import/imageblacklist.json`, JSON.stringify(imageblacklist, null, '\t'));
 	}
 }
+
 async function stealWikiaVersion(folder) {
 	const fs = require('fs');
 	async function getWikiaVersion(name) {
@@ -284,7 +287,7 @@ async function copyImagesProps(importdata, importconfig) {
 	// check if images exist
 	for (let prop of ['icon', 'awakenicon', 'sideicon']) {
 		if (importdata.images[prop]) {
-			if (!await checkBlacklistImage(importdata.images[prop], true)) {
+			if (!await isImageBlacklistAndExist(importdata.images[prop], true)) {
 				delete importdata.images[prop];
 			}
 		}
@@ -302,14 +305,14 @@ async function collateCharacter(existing, newdata, lang) {
 			newdata.images.namegachaslice = `UI_Gacha_AvatarIcon_${name}`;
 		}
 		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
-		if (await checkBlacklistImage(mihoyoUrl, true)) {
+		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
 			newdata.images.icon = mihoyoUrl;
 		}
 	}
 	if(newdata.sideicon) {
 		newdata.images.namesideicon = newdata.sideicon;
 		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
-		if (await checkBlacklistImage(mihoyoUrl, true)) {
+		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
 			newdata.images.sideicon = mihoyoUrl;
 		}
 	}
@@ -423,14 +426,14 @@ async function collateWeapon(existing, inputdata) {
 		inputdata.images.nameicon = inputdata.icon;
 		inputdata.images.namegacha = `UI_Gacha_EquipIcon_${inputdata.icon.slice(inputdata.icon.indexOf("UI_EquipIcon")+13)}`;
 		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
-		if (await checkBlacklistImage(mihoyoUrl, true)) {
+		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
 			inputdata.images.icon = mihoyoUrl;
 		}
 	}
 	if(inputdata.awakenicon) {
 		inputdata.images.nameawakenicon = inputdata.awakenicon;
 		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
-		if (await checkBlacklistImage(mihoyoUrl, true)) {
+		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
 			inputdata.images.awakenicon = mihoyoUrl;
 		}
 	}
@@ -630,6 +633,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
+checkExistingImageBlacklist = false; // 
 gameVersion = "3.2"; // new data will use this as added version
 importData('characters', collateCharacter);
 // importCurve('characters');
