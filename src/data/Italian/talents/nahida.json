@@ -1,0 +1,213 @@
+{
+	"name": "Nahida",
+	"combat1": {
+		"name": "Attacco normale: Akara",
+		"info": "**Attacco normale**\nSferra fino a 4 attacchi che infliggono DAN da Dendro agli avversari davanti a lei.\n\n**Attacco caricato**\nConsuma una determinata quantità di vigore per infliggere DAN da Dendro ad area agli avversari davanti a lei dopo un breve periodo di lancio.\n\n**Attacco in picchiata**\nEvocando il potere di Dendro, Nahida si scaglia verso il suolo da mezz'aria, danneggiando tutti gli avversari lungo la sua traiettoria. Infligge DAN da Dendro ad area all'impatto con il suolo.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}",
+				"DAN da attacco caricato|{param5:F1P}",
+				"Costo vigore attacco caricato|{param6:F1}",
+				"DAN da ATT in picchiata|{param7:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Karma vincolante",
+		"info": "Applica vincoli karmici alle piante intorno a lei, infliggendo DAN da Dendro ad area e marchiando fino a 8 avversari colpiti con il Seme di Skandha.\nQuest'abilità può attivarsi in modi diversi in base al tipo di pressione.\n\n**Pressione prolungata**\nEntra nella modalità di mira, consentendoti di selezionare un numero limitato di avversari in una determinata area. Durante questa modalità, la resistenza all'interruzione di Nahida è aumentata.\nQuando viene rilasciata, l'abilità infligge DAN da Dendro agli avversari selezionati e li marchia con il Seme di Skandha.\nLa modalità di mira dura fino a 5 s e ti consente di selezionare un massimo di 8 avversari.\n\n**Seme di Skandha**\nGli avversari marchiati con il Seme di Skandha saranno vincolati tra loro entro una certa distanza.\nDopo aver innescato reazioni elementali sugli avversari affetti dai Semi di Skandha o quando subiscono DAN da nuclei di Dendro (DAN da Germinazione e Iperfioritura inclusi), Nahida lancerà la Purificazione trikarmica contro gli avversari e tutti quelli a essi vincolati, infliggendo DAN da Dendro in base al suo ATT e alla sua maestria elementale.\nÈ possibile attivare al massimo 1 Purificazione trikarmica entro un breve periodo.",
+		"description": "Lo, la Dea dell'erba e degli alberi, irradia la sua verità suprema nel vuoto, illuminando l'origine e la distruzione dei tre karma.",
+		"attributes": {
+			"labels": [
+				"DAN da pressione|{param1:F1P}",
+				"DAN da pressione prolungata|{param2:F1P}",
+				"DAN da Purificazione trikarmica|{param3:F1P} ATT + {param4:F1P} maestria elementale",
+				"Intervallo di attivazione Purificazione trikarmica|{param5:F1} s",
+				"Durata Seme di Skandha|{param6:F1} s",
+				"TdR pressione|{param7:F1} s",
+				"TdR pressione prolungata|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Cuore illusorio",
+		"info": "Rivela la Corte dei sogni ed espande il Santuario di Maya.\n\nQuando il campo del Santuario di Maya viene attivato, s'innescheranno separatamente gli effetti descritti di seguito, in base ai tipi elementali del gruppo.\n· Pyro: quando Nahida si trova all'interno del Santuario di Maya, i DAN inflitti dalla Purificazione trikarmica di Karma vincolante aumentano.\n· Electro: quando Nahida si trova all'interno del Santuario di Maya, l'intervallo tra ogni Purificazione trikarmica di Karma vincolante diminuisce.\n· Hydro: la durata del Santuario di Maya aumenta.\n\nSe sono schierati almeno 2 membri del gruppo dei tipi elementali indicati sopra, gli effetti aumentano ulteriormente.\n\nAnche se Nahida non è in campo, questi bonus mantengono il loro effetto finché i membri del gruppo si trovano all'interno del Santuario di Maya.",
+		"description": "Forse agli occhi della Dea della Saggezza ciò che giace all'ombra degli alberi non sembra altro che un fuggevole sogno capovolto.",
+		"attributes": {
+			"labels": [
+				"Pyro: bonus DAN|1 personaggio {param1:F1P}",
+				"Pyro: bonus DAN|2 personaggi {param2:F1P}",
+				"Electro: riduzione intervallo di attivazione|1 personaggio {param3:F2} s",
+				"Electro: riduzione intervallo di attivazione|2 personaggi {param4:F2} s",
+				"Hydro: estensione durata|1 personaggio {param5:F2} s",
+				"Hydro: estensione durata|2 personaggi {param6:F2} s",
+				"Durata di base|{param7:F1} s",
+				"TdR|{param8:F1} s",
+				"Costo energia|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Compassione lucente",
+		"info": "Quando **Cuore illusorio** viene sprigionato, il Santuario di Maya acquisisce gli effetti seguenti:\n· la maestria elementale del personaggio attivo all'interno del campo aumenta di un 25% della maestria elementale del membro del gruppo con il valore più alto.\nÈ possibile ottenere in questo modo fino a 250 di maestria elementale."
+	},
+	"passive2": {
+		"name": "Risveglio splendente",
+		"info": "Ogni punto di maestria elementale di Nahida sopra i 200 fornisce uno 0,1% di DAN bonus e uno 0,03% di tasso di CRIT alla Purificazione trikarmica di **Karma vincolante**.\nLa Purificazione trikarmica può ottenere in questo modo un 80% massimo di DAN bonus e un 24% massimo di tasso di CRIT."
+	},
+	"passive3": {
+		"name": "Meditazione del tutto",
+		"info": "Nahida può usare il **Karma vincolante** per interagire con alcuni oggetti da raccogliere presenti in una data area d'effetto.\nQuest'abilità può determinare anche altri effetti..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti dell'ingegno",
+				"count": 3
+			},
+			{
+				"name": "Spore fungine",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida all'ingegno",
+				"count": 2
+			},
+			{
+				"name": "Polline luminescente",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida all'ingegno",
+				"count": 4
+			},
+			{
+				"name": "Polline luminescente",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida all'ingegno",
+				"count": 6
+			},
+			{
+				"name": "Polline luminescente",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida all'ingegno",
+				"count": 9
+			},
+			{
+				"name": "Polline luminescente",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie dell'ingegno",
+				"count": 4
+			},
+			{
+				"name": "Polvere di ciste cristallina",
+				"count": 4
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie dell'ingegno",
+				"count": 6
+			},
+			{
+				"name": "Polvere di ciste cristallina",
+				"count": 6
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie dell'ingegno",
+				"count": 12
+			},
+			{
+				"name": "Polvere di ciste cristallina",
+				"count": 9
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie dell'ingegno",
+				"count": 16
+			},
+			{
+				"name": "Polvere di ciste cristallina",
+				"count": 12
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

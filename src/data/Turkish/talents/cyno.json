@@ -1,0 +1,215 @@
+{
+	"name": "Cyno",
+	"combat1": {
+		"name": "Normal Saldırı: Çağrı Mızrağı",
+		"info": "**Normal Saldırı**\nArka arkaya en fazla 4 mızrak saldırısı yapar.\n\n**Yüklü Saldırı**\nİleri atılırken belirli miktarda Dayanıklılık harcar ve önündeki düşmanlara hasar verir.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}+{param4:F1P}",
+				"4 Vuruş Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Hasarı|{param6:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param7:F1}",
+				"Havadan Saldırı Hasarı|{param8:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Saklı Ayin: Ahir Rehberi",
+		"info": "Hızla öne atılır ve yoluna çıkan düşmanlara Elektrik Hasarı verir.\n\nCyno Kutsal Ayin: Kurt Çevikliği tarafından tetiklenen Sadık Öncü durumundayken korkunç bir **Elektrik Alan Hasarı** veren ve Sadık Öncünün süresini uzatan bir Ölüm Ayini gerçekleştirir.",
+		"description": "\"Bu hüküm başka bir seçenek bırakmıyor. Burada ne kabul ne de inkar var... Bu hükme ezelden beri bağlıyız.\"",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:F1P}",
+				"Ölüm Ayini Hasarı|{param2:F1P}",
+				"Sadık Öncü Süre Bonusu|{param3:F1}sn",
+				"BS|{param4:F1}sn",
+				"Ölüm Ayini BS|{param5:F1}bs"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kutsal Ayin: Kurt Çevikliği",
+		"info": "Kutsal bir ruhu kendisini kullanması için çağırır ve Sadık Öncüye dönüşür.\n\n**Sadık Öncü**\nCyno'nun Normal, Yüklü ve Havadan Saldırıları Elektrik Hasarına çevrilir. Bu sonradan değiştirilemez.\n·Cyno'nun Element Ustalığı ve müdahaleye karşı direnci artar. Elektrik Yüklü Hasara karşı bağışıklık kazanır.\n\nBu etki, 18sn sonrasında veya Cyno savaş alanında ayrıldığında kaybolur.",
+		"description": "Kadim ulustan geçen saklı ayinler General Mahamatra'nın hükmündedir.\nNe geçmişte ne de şimdi; ister büyük fırtına, ister yılan olsun, kimse kanunların hükümdarını deviremez.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}+{param5:F1P}",
+				"5 Vuruş Hasarı|{param6:F1P}",
+				"Yüklü Saldırı Hasarı|{param7:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param8:F1}",
+				"Havadan Saldırı Hasarı|{param9:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param10:P}/{param11:P}",
+				"Element Ustalığı Bonusu|{param12:I}",
+				"Temel Süre|{param13:F1}sn",
+				"BS|{param14:F1}bs",
+				"Enerji Maliyeti|{param15:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Tüy Yargısı",
+		"info": "Cyno, **Kutsal Ayin: Kurt Çevikliği** tarafından tetiklenen Sadık Öncü durumundayken aralıklarla Akıbet Gören duruşuna girer. Cyno, bu duruşun etkisi altındayken **Saklı Ayin: Ahir Rehberini** etkinleştirirse Saklı Ayin: Ahir Rehberi Hasarını %35 artıran ve Cyno'nun Saldırısının %100'ü kadar Elektrik Hasarı veren 3 adet Yaban Yıldırımı atan Hakim etkisini etkinleştirir.\nYaban Yıldırımı Hasarı, Element Becerisi Hasarı olarak sayılır."
+	},
+	"passive2": {
+		"name": "Dokuz Okun Hakimi",
+		"info": "Cyno'nun Hasar değerleri Element Ustalığına göre şu şekilde artar:\n·Sadık Öncünün Normal Saldırı Hasarı Element Ustalığının %150'si kadar artar.\n·Tüy Yargısı Pasif Yeteneğinden gelen Yaban Yıldırımı Hasarı Element Ustalığının %250'si kadar artar."
+	},
+	"passive3": {
+		"name": "Sessizliğin Lütfu",
+		"info": "20 saatliğine bir Sumeru Keşfine gönderildiğinde %25 daha fazla ödül kazanır."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Nasihat Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Kehanet Parşömeni",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Nasihat Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Nasihat Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Nasihat Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Nasihat Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Nasihat Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 4
+			},
+			{
+				"name": "Korkunç Generalin İşareti",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Nasihat Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 6
+			},
+			{
+				"name": "Korkunç Generalin İşareti",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Nasihat Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 9
+			},
+			{
+				"name": "Korkunç Generalin İşareti",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Nasihat Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 12
+			},
+			{
+				"name": "Korkunç Generalin İşareti",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

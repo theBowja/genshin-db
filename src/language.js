@@ -7,12 +7,14 @@ const LanguagesEnum = {
 	'French'             : 'French',
 	'German'             : 'German',
 	'Indonesian'         : 'Indonesian',
+	'Italian'            : 'Italian',
 	'Japanese'           : 'Japanese',
 	'Korean'             : 'Korean',
 	'Portuguese'         : 'Portuguese',
 	'Russian'            : 'Russian',
 	'Spanish'            : 'Spanish',
 	'Thai'               : 'Thai',
+	'Turkish'            : 'Turkish',
 	'Vietnamese'         : 'Vietnamese'
 };
 
@@ -25,11 +27,13 @@ const languageMap = {
 	'ES':  'Spanish',
 	'FR':  'French',
 	'ID':  'Indonesian',
+	'IT':  'Italian',
 	'JP':  'Japanese',
 	'KR':  'Korean',
 	'PT':  'Portuguese',
 	'RU':  'Russian',
 	'TH':  'Thai',
+	'TR':  'Turkish',
 	'VI':  'Vietnamese'
 };
 // array of language strings
@@ -46,11 +50,13 @@ const localeMap = {
 	'Spanish':            'es',
 	'French':             'fr',
 	'Indonesian':         'id',
+	'Italian':            'it',
 	'Japanese':           'ja',
 	'Korean':             'ko',
 	'Portuguese':         'pt',
 	'Russian':            'ru',
 	'Thai':               'th',
+	'Turkish':            'tr',
 	'Vietnamese':         'vi'
 };
 

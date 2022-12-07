@@ -1,0 +1,204 @@
+{
+	"name": "Avare",
+	"combat1": {
+		"name": "Normal Saldırı: Yuuban Meigen",
+		"info": "**Normal Saldırı**\nRüzgar kılıçlarıyla en fazla 3 saldırı yaparak Rüzgar Hasarı verir.\n\n**Yüklü Saldırı**\nBelirli miktarda Dayanıklılık harcayarak yüksek rüzgar basıncı toplar ve kısa süre kullanıldıktan sonra Rüzgar Alan Hasarı verir.\n\n**Havadan Saldırı**\nAvare, Rüzgarın gücünü çağırarak havadayken yere doğru atılır ve yoluna çıkan tüm düşmanlara hasar verir. Yere vurduğunda Rüzgar Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}+{param4:F1P}",
+				"Yüklü Saldırı Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param6:F1}",
+				"Havadan Saldırı Hasarı|{param7:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Hanega: Rüzgar Şarkısı",
+		"info": "Rüzgarların gücünü odaklayarak dünyevi zincirlerden kurtulur. Havaya yükselip Akım Harmonisi durumuna girmeden önce Rüzgar Alan Hasarı verir.\n\n**Akım Harmonisi**\nAvare, bu durumdayken Havadan Saldırı yapamaz. Normal ve Yüklü Saldırıları sırasıyla Kuugo: Fushoudan ve Kuugo: Toufukai olarak değişir, verdikleri Hasar ve Etki Alanları artar. Kuugo: Toufukai Dayanıklılık tüketmez.\nAvare, bu durumdayken sürekli havada süzülür. Bu durum etkinken Avare'nin hareketleri şu özellikleri kazanır:\n·Havada süzülmek için sürekli Kuugoryoku Puanı harcar.\n·Depar atarken havada hızlanmak için ek Kuugoryoku Puanı harcanır. Depara basılı tutmak hızın korunması için sürekli Kuugoryoku Puanı harcanmasına neden olur. Bu etki, varsayılan deparın yerine geçer.\n·Sıçramak ek Kuugoryoku Puanı harcayarak süzülme irtifasını artırır. Sıçramaya basılı tutmak süzülme irtifasını artırmak için sürekli Kuugoryoku Puanı harcanmasına neden olur.\n\nKuugoryoku Puanının bitmesi Akım Harmonisi durumunu sona erdirir.\nAkım Harmonisi durumundayken becerinin tekrar kullanılması durumu sonlandırır.",
+		"description": "\"Dünya, ağırlığı olmayan bir akımda akar ve yalnızca çiçeklerde bulunan bir sırrı ortaya çıkarır.\"",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:F1P}",
+				"Kuugo: Fushoudan Hasarı|{param2:F1P} Normal Saldırı Hasarı",
+				"Kuugo: Toufukai Hasarı|{param3:F1P} Yüklü Saldırı Hasarı",
+				"Başlangıç Kuugoryoku Puanı|{param4:I}",
+				"BS|{param5:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kyougen: Beşli Merasim Oyunu",
+		"info": "Ortamdaki havayı tek bir boşluğa sıkıştırarak tüm dertlerden kurtulur ve birkaç defa Rüzgar Alan Hasarı verir.\nEğer karakter, \"Hanega: Rüzgar Şarkısı\" becerisinin sağladığı Akım Harmonisi durumundaysa bu beceri kullanıldıktan sonra Akım Harmonisi durumu sona erer.",
+		"description": "\"Göğün parlak bakışı, hem önceki hem de şimdiki rüyaları tıpkı esen rüzgardaki toz tanelerinin parlaması gibi aydınlatır.\"",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:F1P}x5",
+				"BS|{param2:F1}sn",
+				"Enerji Maliyeti|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Yeşim Kaplı Çiçek",
+		"info": "**Hanega: Rüzgar Şarkısı**, Su/Ateş/Buz/Elektrik ile temas ederse Akım Harmonisi kullanıldığında temas edilen elementlere göre şu güçlendirmeleri verir:\n·Su: Kuugoryoku Puanı sınırı 20 artar.\n·Ateş: Saldırı %30 artar.\n·Buz: Kritik Oranı %20 artar.\n·Elektrik: Normal ve Yüklü Saldırılar bir düşmana isabet ettiğinde 0,8 Enerji yenilenir. Enerji, bu şekilde her 0,2 saniyede bir yenilenebilir.\n\nBu güçlendirmelerden aynı anda en fazla 2 tanesine sahip olabilirsin."
+	},
+	"passive2": {
+		"name": "Bora Rüyası",
+		"info": "Avare, **Akım Harmonisi** durumundayken Kuugo: Fushoudan ve Kuugo: Toufukai ile düşmanını vurduğunda İniş etkisi almak için %16 şansı olur. Avare, bir sonraki sefer Akım Harmonisi durumundayken süzülürken hızlandığında bu etki silinir, bu hızlanma Kuugoryoku Puanı harcamaz ve her biri Saldırısının %35'i kadar Rüzgar Hasarı veren 4 ok atar.\nBu etkiyi vermeyen her Kuugo: Fushoudan ve Kuugo: Toufukai için sonraki bu türden saldırılarda etki oluşturma olasılığı %12 artar. Etki oluşturma olasılığı her 0,1 saniyede bir hesaplanır."
+	},
+	"passive3": {
+		"name": "Girdap Uğultusu",
+		"info": "Yayı ve Katalizörü yükseltirken harcanan Mora %50 azalır."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Uygulama Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Eski Balçak",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Uygulama Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Kageuchi Balçağı",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Uygulama Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Kageuchi Balçağı",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Uygulama Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Kageuchi Balçağı",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Uygulama Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Kageuchi Balçağı",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Uygulama Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Gösterişli Balçak",
+				"count": 4
+			},
+			{
+				"name": "Daka'nın Çanı",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Uygulama Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Gösterişli Balçak",
+				"count": 6
+			},
+			{
+				"name": "Daka'nın Çanı",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Uygulama Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Gösterişli Balçak",
+				"count": 9
+			},
+			{
+				"name": "Daka'nın Çanı",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Uygulama Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Gösterişli Balçak",
+				"count": 12
+			},
+			{
+				"name": "Daka'nın Çanı",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

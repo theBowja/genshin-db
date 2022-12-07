@@ -1,0 +1,221 @@
+{
+	"name": "Tartaglia",
+	"combat1": {
+		"name": "Attacco normale: Torrente acuminato",
+		"info": "**Attacco normale**\nEffettua fino a 6 tiri consecutivi con un arco.\n\n**Attacco caricato**\nEffettua un **attacco mirato** ancora più preciso con DAN aumentati.\nMentre miri, il potere di Hydro si accumulerà sulla punta della freccia. Una freccia caricata al massimo con il Torrente infligge DAN da Hydro e applica lo stato di Risacca.\n\n**Risacca**\nGli avversari affetti da Risacca subiscono gli effetti dei DAN da Hydro ad area quando sono attaccati da Tartaglia in vari modi. I DAN inflitti in questo modo si considerano DAN da attacco normale.\n· Lampo di Risacca: un attacco mirato a piena carica che colpisce un avversario sotto Risacca infligge DAN ad area continui. Può verificarsi una volta ogni 0,7 s.\n· Scoppio di Risacca: sconfiggere un avversario affetto da Risacca crea uno scoppio di Hydro che infligge lo stato di Risacca agli avversari vicini colpiti.\n\n**Attacco in picchiata**\nScocca una pioggia di frecce a mezz'aria prima di cadere e colpire il suolo, infliggendo DAN ad area all'impatto.\nQuando Tartaglia è nella posizione da mischia Eredità immonda: Marea infuriata, non può eseguire un attacco in picchiata.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}",
+				"DAN da 5º colpo|{param5:F1P}",
+				"DAN da 6º colpo|{param6:F1P}",
+				"ATT mirato|{param7:F1P}",
+				"ATT mirato a piena carica|{param8:P}",
+				"DAN da Lampo di Risacca|{param9:F1P}×3",
+				"DAN da Scoppio di Risacca|{param10:F1P}",
+				"Durata Risacca|{param14:F1} s",
+				"DAN da ATT in picchiata|{param11:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param12:P}/{param13:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Eredità immonda: Marea infuriata",
+		"info": "Rilascia una serie di armi fatta di pura acqua, infliggendo DAN da Hydro agli avversari circostanti ed entrando nella posizione da mischia.\nIn questa posizione, gli attacchi normali e caricati di Tartaglia si trasformano in DAN da Hydro che non possono essere annullati da altre infusioni elementali e cambia come segue:\n\n**Attacco normale**\nSferra fino a 6 colpi di Hydro consecutivi.\n\n**Attacco caricato**\nConsuma una determinata quantità di vigore per rilasciare un colpo incrociato, infliggendo DAN da Hydro.\n\n**Sferzata di Risacca**\nColpire un avversario affetto da Risacca con un attacco in mischia rilascia una Sferzata di Risacca che infligge DAN da Hydro ad area. I DAN inflitti in questo modo si considerano DAN da abilità elementale e si possono verificare solo una volta ogni 1,5 s.\n\nDopo 30 s, o quando l'abilità è nuovamente rilasciata, l'abilità termina. Tartaglia torna nella sua posizione a distanza e la sua abilità inizia il TdR. Più tempo Tartaglia resta in posizione da mischia, più lungo sarà il TdR.\nSe il ritorno alla posizione a distanza avviene automaticamente dopo 30 s, il TdR è ancora più lungo.",
+		"description": "Ha scelto l'arco come sua arma proprio per superare la sua debolezza con esso. Ma una lotta impegnativa gli richiede di fare sul serio...",
+		"attributes": {
+			"labels": [
+				"DAN da cambio posizione|{param1:P}",
+				"DAN da 1º colpo|{param2:F1P}",
+				"DAN da 2º colpo|{param3:F1P}",
+				"DAN da 3º colpo|{param4:F1P}",
+				"DAN da 4º colpo|{param5:F1P}",
+				"DAN da 5º colpo|{param6:F1P}",
+				"DAN da 6º colpo|{param7:F1P}+{param8:F1P}",
+				"DAN da ATT caricato|{param9:F1P}+{param10:F1P}",
+				"Costo vigore ATT caricato|{param12:F1}",
+				"Sferzata di Risacca|{param11:P}",
+				"Durata max|{param13:F1} s",
+				"TdR preventivo|{param14:F1}-{param15:F1} s",
+				"TdR max|{param16:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Caos: Distruzione",
+		"info": "Sferra diversi attacchi in base alla posizione in cui si trova Tartaglia quando la lancia.\n\n**Posizione a distanza: Lampo di caos**\nLancia rapidamente una freccia magica pervasa da Hydro infliggendo DAN da Hydro ad area e applicando lo stato di Risacca.\nRipristina una parte del suo costo di energia dopo l'uso.\n\n**Posizione da mischia: Luce d'annientamento**\nSferra un colpo con un'ampia area d'effetto, infliggendo ingenti DAN da Hydro a tutti gli avversari circostanti e innescando Getto di Risacca.\n\n**Getto di Risacca**\nQuando le acque distruttive colpiscono un avversario affetto da Risacca, lo stato di Risacca si annulla e si innesca un'esplosione di Hydro che infligge DAN da Hydro ad area.\nI DAN inflitti in questo modo si considerano DAN da Tripudio elementale.",
+		"description": "I corsi d'acqua si vedono raramente in questa terra nevosa. Forse, la sua abilità di comandare l'acqua è dovuta al suo comprendere quanto è preziosa.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità in mischia|{param1:P}",
+				"DAN da abilità a distanza|{param3:P}",
+				"DAN da Getto di Risacca|{param2:P}",
+				"Ripristino energia (a distanza)|{param4:I}",
+				"TdR|{param5:F1} s",
+				"Costo energia|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Senza fine",
+		"info": "Estende di 8 s la durata di Risacca."
+	},
+	"passive2": {
+		"name": "Spada dei torrenti",
+		"info": "Quando Tartaglia è nella posizione da mischia **Eredità immonda: Marea infuriata** e infligge un colpo CRIT, gli attacchi normali e caricati infliggono lo stato di Risacca agli avversari."
+	},
+	"passive3": {
+		"name": "Maestro degli armamenti",
+		"info": "Aumenta di 1 il livello dell'**attacco normale** dei membri del tuo gruppo."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti della libertà",
+				"count": 3
+			},
+			{
+				"name": "Emblema della recluta",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida alla libertà",
+				"count": 2
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida alla libertà",
+				"count": 4
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida alla libertà",
+				"count": 6
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida alla libertà",
+				"count": 9
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie della libertà",
+				"count": 4
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 4
+			},
+			{
+				"name": "Frammento dell'Eredità immonda",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie della libertà",
+				"count": 6
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 6
+			},
+			{
+				"name": "Frammento dell'Eredità immonda",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie della libertà",
+				"count": 12
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 9
+			},
+			{
+				"name": "Frammento dell'Eredità immonda",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie della libertà",
+				"count": 16
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 12
+			},
+			{
+				"name": "Frammento dell'Eredità immonda",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

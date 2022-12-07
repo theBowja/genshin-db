@@ -1,0 +1,213 @@
+{
+	"name": "Nahida",
+	"combat1": {
+		"name": "Normal Saldırı: Akara",
+		"info": "**Normal Saldırı**\nÖnündeki düşmanlara Doğa Hasarı veren en fazla 4 saldırı yapar.\n\n**Yüklü Saldırı**\nKısa süre kullanıldıktan sonra belirli miktarda Dayanıklılık harcayarak önündeki düşmanlara Doğa Alan Hasarı verir.\n\n**Havadan Saldırı**\nNahida, Doğanın gücünü çağırarak havadayken yere doğru atılır ve yoluna çıkan tüm düşmanlara hasar verir. Yere vurduğunda Doğa Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}",
+				"Yüklü Saldırı Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param6:F1}",
+				"Havadan Saldırı Hasarı|{param7:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Tüm Planları Bilen",
+		"info": "Bulunduğu yerden kütük ve ağaçların karma bağlarını göndererek Doğa Alan Hasarı verir ve 8 düşmana kadar düşmanları Skandha Tohumu ile işaretler.\nBasılı tutulduğunda beceri farklı şekilde tetiklenir.\n\n**Basılı Tutma**\nNişan Alma Moduna girer ve bu moddayken sınırlı bir bölgede sınırlı sayıda düşman seçebilirsin. Bu sırada Nahida'nın müdahaleye karşı direnci artar.\nBeceri, bırakıldığında Doğa Hasarı verir ve onları Skandha Tohumu ile işaretler.\nNişan Alma Modu en fazla 5 saniye sürer ve maksimum 8 düşman seçilebilir.\n\n**Skandha Tohumu**\nSkandha Tohumu ile işaretlenen düşmanlar belirli bir mesafe boyunca birbirlerine bağlanırlar.\nSkandha Tohumu etkisindeki düşmanların üzerinde Element Tepkimeleri tetiklendikten veya bu düşmanlar Doğa Çekirdeklerinden Hasar aldıktan sonra (Filizlenme ve Aşırı Çiçeklenme dahil) Nahida, düşmanlara ve tüm bağlı düşmanlara Üç Karma Arınması gönderir ve Saldırı ve Element Ustalığına bağlı olarak Doğa Hasarı verir.\nKısa bir süre içinde yalnızca 1 defa Üç Karma Arınması tetikleyebilirsin.",
+		"description": "Çimenler ve ağaçlar tanrısı, üç karmanın kökenini ve yıkımını aydınlatarak nihai hakikatini boşluğa yansıtıyor.",
+		"attributes": {
+			"labels": [
+				"Basma Hasarı|{param1:F1P}",
+				"Basılı Tutma Hasarı|{param2:F1P}",
+				"Üç Karma Arınması Hasarı|{param3:F1P} Saldırı+{param4:F1P} Element Ustalığı",
+				"Üç Karma Arınması Tetikleme Aralığı|{param5:F1}sn",
+				"Skandha Tohumu Süresi|{param6:F1}sn",
+				"Basma BS|{param7:F1}sn",
+				"BS (Basılı Tutma)|{param8:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Hayali Kalp",
+		"info": "Rüya Köşkünü gösterir ve Maya Tapınağını genişletir.\n\nMaya Tapınağının alanı genişleyince gruptaki Element Türlerine bağlı olarak ayrı ayrı şu etkiler görülür.\n·Ateş: Nahida Maya Tapınağında bulunduğu sırada, \"Tüm Planları Bilen\" becerisine ait Üç Karma Arınmasının verdiği Hasar artar.\n·Elektrik: Nahida Maya Tapınağında bulunduğu sırada, \"Tüm Planları Bilen\" becerisine ait her Üç Karma Arınması arasındaki süre azalır.\n·Su: Maya Tapınağının süresi artar.\n\nAlan genişletildiği sırada yukarıdaki Element Türlerinden en az 2 grup üyesi varsa söz konusu etkiler daha da artar.\n\nNahida savaş alanında olmasa bile grup üyeleri, Maya Tapınağı içinde olduğu sürece bu bonus etkiler gerçekleşir.",
+		"description": "Belki de ağaç çardaklarının altında yaşayanlar, Bilgelik Tanrısı'nın gözünde tepetaklak rüyalardan başka bir şey değildir.",
+		"attributes": {
+			"labels": [
+				"Ateş: Hasar Bonusu|1 Karakter {param1:F1P}",
+				"Ateş: Hasar Bonusu|2 Karakter {param2:F1P}",
+				"Elektrik: Tetikleme Aralığı Azalması|1 Karakter {param3:F2}sn",
+				"Elektrik: Tetikleme Aralığı Azalması|2 Karakter {param4:F2}sn",
+				"Su: Süre Uzatma|1 Karakter {param5:F2}sn",
+				"Su: Süre Uzatma|2 Karakter {param6:F2}sn",
+				"Temel Süre|{param7:F1}sn",
+				"BS|{param8:F1}sn",
+				"Enerji Maliyeti|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Aydınlatılmış Şefkat",
+		"info": "**Hayali Kalp** ateşlendiğinde Maya Tapınağı şu etkileri elde eder:\nSavaş alanındaki aktif karakterin Element Ustalığı, en yüksek Element Ustalığına sahip grup üyesinin Element Ustalığının %25'i kadar artar.\nBu şekilde maksimum 250 Element Ustalığı elde edebilirsin."
+	},
+	"passive2": {
+		"name": "Aydınlatılmış Uyanış",
+		"info": "Nahida'nın 200 üzerindeki her Element Ustalığı puanı, **Tüm Planları Bilen** becerisine ait Üç Karma Arınmasına %0,1 Bonus Hasar ve %0,03 Kritik Oranı sağlar.\nÜç Karma Arınmasına bu şekilde maksimum %80 Bonus Hasar ve %24 Kritik Oranı sağlanabilir."
+	},
+	"passive3": {
+		"name": "Her Şey Meditasyon Halinde",
+		"info": "Nahida, sabit bir Etki Alanı içinde bazı toplanabilir eşyalarla etkileşime geçmek için **Tüm Planları Bilen** becerisini kullanabilir.\nBu becerinin başka etkileri de vardır..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Marifet Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Mantar Sporları",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Parlak Polen",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Parlak Polen",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Parlak Polen",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Parlak Polen",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Kristal Toz Kutusu",
+				"count": 4
+			},
+			{
+				"name": "Kukla İpleri",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Kristal Toz Kutusu",
+				"count": 6
+			},
+			{
+				"name": "Kukla İpleri",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Kristal Toz Kutusu",
+				"count": 9
+			},
+			{
+				"name": "Kukla İpleri",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Kristal Toz Kutusu",
+				"count": 12
+			},
+			{
+				"name": "Kukla İpleri",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

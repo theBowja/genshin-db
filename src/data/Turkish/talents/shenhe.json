@@ -1,0 +1,211 @@
+{
+	"name": "Shenhe",
+	"combat1": {
+		"name": "Normal Saldırı: Şafak Yıldızı Mızrağı",
+		"info": "**Normal Saldırı**\nArka arkaya en fazla 5 mızrak saldırısı yapar.\n\n**Yüklü Saldırı**\nİleri atılırken belirli miktarda Dayanıklılık harcar ve önündeki düşmanlara hasar verir.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}+{param5:F1P}",
+				"5 Vuruş Hasarı|{param6:F1P}",
+				"Yüklü Saldırı Hasarı|{param7:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param8:F1}",
+				"Havadan Saldırı Hasarı|{param9:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ruha Çağrı",
+		"info": "Donuk, parlak ve yoğun çiy taneleri tüm iblisleri defedecek.\nYakındaki tüm grup üyelerine Buzdan Tüy etkisi verir. Basılmasına ya da basılı tutulmasına bağlı olarak farklı şekilde Buz Hasarı verir.\n\n**Bas**\nBir Tılsım Ruhu ile ileri atılarak önündeki düşmanlara Buz Hasarı verir.\n\n**Basılı Tut**\nTılsım Ruhunu kontrol ederek Buz Alan Hasarı verir.\n\n**Buzdan Tüy**\nNormal Saldırılar, Yüklü Saldırılar, Havadan Saldırılar, Element Becerileri ve Element Patlamaları düşmanlara Buz Hasarı verdiğinde Hasar, Shenhe'nin mevcut Saldırısına göre artar.\n\nBuzdan Tüyün etkileri, süresi bittiğinde veya belirli sayıda tetiklendikten sonra kaybolur. Basmak yerine basılı tuttuğunda Buzdan Tüyün etkisi daha uzun sürer ve birkaç defa daha tetiklenebilir.\nTek seferde birden fazla düşman Buz Hasarı alırsa etki, isabet alan düşman sayısına göre birkaç defa tetiklenir. Etkinin tetiklenme sayısı Buzdan Tüye sahip her grup üyesi için ayrıca hesaplanır.",
+		"description": "Ruhların gücü gerçektir. Verilen emirleri yerine getirmeye çalışan kutsal kadın yoluna devam eder!",
+		"attributes": {
+			"labels": [
+				"Basma Beceri Hasarı|{param1:P}",
+				"Basılı Tutma Beceri Hasarı|{param2:F1P}",
+				"Hasar Bonusu|{param3:F1P} Saldırı",
+				"Basma/Basılı Tutma Süresi|{param4:F1}sn/{param5:F1}sn",
+				"Basma/Basılı Tutma Tetiklenme Sınırı|{param6:I}/{param7:I}",
+				"Tıklama BS|{param8:F1}sn",
+				"Basılı Tutma BS|{param9:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kutsal Kadının Hükmü",
+		"info": "Tılsım Ruhunun gücünü açığa çıkarır. Ruhun bu dünyada özgürce gezmesini sağlayarak Buz Alan Hasarı verir.\nSonrasında Tılsım Ruhu bir alan oluşturur. Alandaki düşmanların Fiziksel Direnci ve Buz Direnci düşer. Ayrıca bu alandaki düşmanlar belirli aralıklarla Buz Hasarı alır.",
+		"description": "Adeptuslar sadece gizeme ve hayallere göre yaşamaz. Adeptusların doğası sadece gökteki ve yerdeki değişiklikleri gözlemleyip bu dünyada sebebin ve sonucun işleyişini kavrayarak anlaşılabilir.",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:P}",
+				"Direnç Azalması|{param2:F1P}",
+				"Süreli Hasar|{param3:F1P}",
+				"Süre|{param4:F1}sn",
+				"BS|{param5:F1}sn",
+				"Enerji Maliyeti|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Kutsal Kaide",
+		"info": "**Kutsal Kadının Hükmü** becerisinin oluşturduğu alan içindeki aktif karakter %15 Buz Hasarı Bonusu kazanır."
+	},
+	"passive2": {
+		"name": "Ruh Birliği Mührü",
+		"info": "Shenhe, **Ruha Çağrı** becerisini kullandığında yakındaki tüm grup üyelerine aşağıdaki etkileri verir:\n· Bas: 10 saniyeliğine Element Becerisi ve Element Patlaması Hasarı %15 artar.\n· Basılı Tut: 15 saniyeliğine Normal, Yüklü ve Havadan Saldırı Hasarı %15 artar."
+	},
+	"passive3": {
+		"name": "Vakitli Yolculuklar",
+		"info": "20 saatliğine bir Liyue Keşfine gönderildiğinde %25 daha fazla ödül kazanır."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Refah Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Yalancı Çiçek Nektarı",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Refah Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Parıltılı Nektar",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Refah Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Parıltılı Nektar",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Refah Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Parıltılı Nektar",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Refah Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Parıltılı Nektar",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Refah Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Enerji Nektarı",
+				"count": 4
+			},
+			{
+				"name": "Cehennem Kelebeği",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Refah Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Enerji Nektarı",
+				"count": 6
+			},
+			{
+				"name": "Cehennem Kelebeği",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Refah Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Enerji Nektarı",
+				"count": 9
+			},
+			{
+				"name": "Cehennem Kelebeği",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Refah Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Enerji Nektarı",
+				"count": 12
+			},
+			{
+				"name": "Cehennem Kelebeği",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,207 @@
+{
+	"name": "Dori",
+	"combat1": {
+		"name": "Normal Saldırı: Muhteşem Kılıç Dansı (Değiştirildi)",
+		"info": "**Normal Saldırı**\nArka arkaya en fazla 3 saldırı yapar.\n\n**Yüklü Saldırı**\nZamanla Dayanıklılık harcar ve yakındaki tüm düşmanlara dönerek saldırır.\nSaldırıları daha güçlü bir darbeyle bitirir. \n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}+{param3:F1P}",
+				"3 Vuruş Hasarı|{param4:F1P}",
+				"Yüklü Saldırı Dönme Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Son Vuruş Hasarı|{param6:P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param7:F1}/sn",
+				"Maks. Süre|{param8:F1}sn",
+				"Havadan Saldırı Hasarı|{param9:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ruh Koruma Lambası: Sorun Giderici Top",
+		"info": "Ruh Koruma Lambasıyla düşmanlara Sorun Giderici Atış yaparak Elektrik Hasarı verir.\nSorun Giderici Atış isabet ettikten sonra 2 adet Satış Sonrası Hizmet Mermisi oluşturur. Bu Mermiler otomatik olarak yakındaki düşmanları takip eder ve onlara Elektrik Hasarı verir.",
+		"description": "Parasını ödediğin müddetçe, Dori'nin çözemeyeceği bir sorun yoktur.",
+		"attributes": {
+			"labels": [
+				"Sorun Giderici Atış Hasarı|{param1:F1P}",
+				"Satış Sonrası Hizmet Mermisi Hasarı|{param2:F1P}",
+				"BS|{param3:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Alkazar'ın Kusursuzluğu",
+		"info": "Müşteriye yardımcı olmak için lambanın içindeki Cini çağırır.\n\n**Cin**\nYakındaki bir karaktere bağlanır. Bağlandığı karakterin:\n· Canı, Dori'nin Maks. Canına bağlı olarak sürekli yenilenir.\n· Enerjisi sürekli yenilenir.\n· Elektrikten etkilenir.\nCin ve karakter arasındaki bağlantı, düşmanlara dokunursa her 0,4 saniyede bir Elektrik Hasarı verir.\n\nAynı anda yalnızca bir tane Cin var olabilir.",
+		"description": "\"Hımm, bu lambayı seçiyorsun, öyle mi? Gerçekten bu işten anlıyorsun. Ancak, ne yazık ki bu değerli hazineye fiyat biçemezsin. Tıpkı yanındaki şu maskota fiyat biçilemeyeceği gibi.\"",
+		"attributes": {
+			"labels": [
+				"Bağlantı Hasarı|{param1:P}",
+				"Sürekli İyileştirme|{param2:F1P} Maks. Can+{param3:I}",
+				"Enerji Yenilenmesi|{param4:F1}",
+				"Süre|{param5:F1}sn",
+				"BS|{param6:F1}sn",
+				"Enerji Maliyeti|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Altına Karşılık Bir Göz",
+		"info": "**Cine** bağlı bir karakter Elektrik Yüklü, Süper İletim, Yüksek Voltaj, Hızlanma, Şiddetlenme, Aşırı Çiçeklenme, Elektrik Girdabı veya Kristalleşme tepkimesini tetikledikten sonra **Ruh Koruma Lambası: Sorun Giderici Topun** Bekleme Süresi 1sn azalır.\nBu etki 3 saniyede bir tetiklenebilir."
+	},
+	"passive2": {
+		"name": "Bileşik Faiz",
+		"info": "**Ruh Koruma Lambası: Sorun Giderici Toptan** gelen Sorun Giderici Atışlar veya Satış Sonrası Hizmet Mermileri düşmana isabet ettiğinde Dori sahip olduğu her %100 Enerji Yüklemesi için 5 Element Enerjisi yeniler.\nRuh Koruma Lambası: Sorun Giderici Top kullanıldığında yalnızca bir defa Enerji Yenilemesi tetiklenebilir ve bu yöntemle maksimum 15 Enerji yenilenebilir."
+	},
+	"passive3": {
+		"name": "Beklenmedik Sipariş",
+		"info": "Karakter ve Silah Malzemelerinin üretimi sırasında kullanılan malzemelerin bir kısmı %25 ihtimalle geri alınabilir."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Marifet Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Soluk Kırmızı Saten",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 2
+			},
+			{
+				"name": "İşlemeli Kırmızı İpek",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 4
+			},
+			{
+				"name": "İşlemeli Kırmızı İpek",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 6
+			},
+			{
+				"name": "İşlemeli Kırmızı İpek",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 9
+			},
+			{
+				"name": "İşlemeli Kırmızı İpek",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Koyu Kırmızı Sırmalı Kumaş",
+				"count": 4
+			},
+			{
+				"name": "Kan Yeşimi Dalı",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Koyu Kırmızı Sırmalı Kumaş",
+				"count": 6
+			},
+			{
+				"name": "Kan Yeşimi Dalı",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Koyu Kırmızı Sırmalı Kumaş",
+				"count": 9
+			},
+			{
+				"name": "Kan Yeşimi Dalı",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Koyu Kırmızı Sırmalı Kumaş",
+				"count": 12
+			},
+			{
+				"name": "Kan Yeşimi Dalı",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

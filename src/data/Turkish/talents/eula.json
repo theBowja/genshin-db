@@ -1,0 +1,216 @@
+{
+	"name": "Eula",
+	"combat1": {
+		"name": "Normal Saldırı: Favonius Kılıç Tekniği - Edel",
+		"info": "**Normal Saldırı**\nArka arkaya en fazla 5 saldırı yapar.\n\n**Yüklü Saldırı**\nZamanla Dayanıklılık harcayarak arka arkaya saldırılar yapar.\nSaldırıları daha güçlü bir darbeyle bitirir.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}+{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}",
+				"5 Vuruş Hasarı|{param5:F1P}+{param5:F1P}",
+				"Yüklü Saldırı Dönme Hasarı|{param6:F1P}",
+				"Yüklü Saldırı Son Vuruş Hasarı|{param7:P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param8:F1}/sn",
+				"Maks. Süre|{param9:F1}sn",
+				"Havadan Saldırı Hasarı|{param10:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Buz Dalgası Girdabı",
+		"info": "Keskin soğuk, hızlı kılıç.\n\n**Bas**\nKılıcı hızla savurarak Buz Hasarı verir.\nEula, bir düşmana vurduğunda en fazla 2 defa birikebilen bir Buz Yürek kademesi kazanır. Bu kademeler yalnızca 0,3 saniyede bir kazanılabilir.\n\n**Buz Yürek**\nEula'nın müdahaleye karşı direncini ve Savunmasını artırır.\n\n**Basılı Tut**\nEula, kılıcını kullanarak tüm Buz Yürek kademelerini tüketir ve ileri doğru saldırarak önündeki düşmanlara Buz Alan Hasarı verir.\nBuz Yürek kademeleri tüketilirse etraftaki düşmanların Fiziksel Direnci ve Buz Direnci azalır.\nTüketilen her Buz Yürek kademesi yakındaki düşmanlara Buz Hasarı veren Buz Sarmalı Damgasına dönüşür.",
+		"description": "\"Dalgalar çalkalanarak soyluların tacını yuttu. Sonrasında, altın taç dondurucu dalgaların ortasında üstüne gelen her bir damla ile güneş gibi parıldadı.\"",
+		"attributes": {
+			"labels": [
+				"Basma Hasarı|{param1:P}",
+				"Basılı Tutma Hasarı|{param2:P}",
+				"Buz Sarmalı Damgası Hasarı|{param3:P}",
+				"Savunma Bonusu|Kademe Başına {param9:P}",
+				"Buz Yürek Süresi|{param13:F1}sn",
+				"Fiziksel Direnç Azalması|{param4:P}",
+				"Buz Direnci Azalması|{param5:P}",
+				"Direnç Azalma Süresi|{param6:F1}sn",
+				"Basma BS|{param7:F1}sn",
+				"BS (Basılı Tutma)|{param8:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Buzul Aydınlık",
+		"info": "Büyük kılıcını çıkararak yakındaki düşmanlara Buz Hasarı verir ve 7 saniyeye kadar onu takip eden bir Işıksaçan Kılıcı oluşturur.\nIşıksaçan Kılıcı, etki süresince Eula'nın müdahaleye karşı direncini artırır. Eula'nın Normal Saldırısı, Element Becerisi ve Element Patlaması düşmanlara Hasar verdiğinde Işıksaçan Kılıcı yük biriktirir. 0,1 saniyede bir enerji yükü biriktirebilir.\nIşıksaçan Kılıcı, süresi bittiğinde yere iner ve şiddetle patlayarak yakındaki düşmanlara Fiziksel Hasar verir.\nBu Hasar, Işıksaçan Kılıcının kaç enerji yükü biriktirdiğine göre değişiklik gösterir.\nEula alandan ayrılırsa Işıksaçan Kılıcı anında patlar.",
+		"description": "Suyun üstünde kalmak bile zorken o, gelen dalgayı dondurmak istiyor.",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:P}",
+				"Işıksaçan Kılıcı Temel Hasarı|{param2:F1P}",
+				"Kademe Başına Hasar|{param3:F1P}",
+				"Maks. Kademe Sayısı|{param4:I}",
+				"BS|{param5:F1}sn",
+				"Enerji Maliyeti|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Çalkantılı Ayaz",
+		"info": "**Buz Dalgası Girdabı** becerisi basılı tutulduktan sonra 2 kademe Buz Yürek tüketilirse bir Parçalanmış Işıksaçan Kılıcı ortaya çıkar ve derhal patlar. Patladığında **Buzul Aydınlık** ile oluşturulan Işıksaçan Kılıcının verdiği temel Fiziksel Hasarın %50'sini verir."
+	},
+	"passive2": {
+		"name": "Savaş Arzusu Dehlizi",
+		"info": "**Buzul Aydınlık** kullanıldığında **Buz Dalgası Girdabı** becerisinin Bekleme Süresi sıfırlanır ve Eula 1 kademe Buz Yürek kazanır."
+	},
+	"passive3": {
+		"name": "Soylunun İç Gözlemi",
+		"info": "Eula, Karakter Yeteneği Malzemeleri üretirken elde ettiği ürünü %10 ihtimalle iki katına çıkarır."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Direniş Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Kırık Maske",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Direniş Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Lekeli Maske",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Direniş Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Lekeli Maske",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Direniş Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Lekeli Maske",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Direniş Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Lekeli Maske",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Direniş Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Uğursuz Maske",
+				"count": 4
+			},
+			{
+				"name": "Ejderler Kralının Tacı",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Direniş Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Uğursuz Maske",
+				"count": 6
+			},
+			{
+				"name": "Ejderler Kralının Tacı",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Direniş Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Uğursuz Maske",
+				"count": 9
+			},
+			{
+				"name": "Ejderler Kralının Tacı",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Direniş Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Uğursuz Maske",
+				"count": 12
+			},
+			{
+				"name": "Ejderler Kralının Tacı",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

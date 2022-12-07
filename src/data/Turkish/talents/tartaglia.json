@@ -1,0 +1,221 @@
+{
+	"name": "Tartaglia",
+	"combat1": {
+		"name": "Normal Saldırı: Keskin Sel",
+		"info": "**Normal Saldırı**\nArka arkaya en fazla 6 ok atar.\n\n**Yüklü Saldırı**\nDaha isabetli ve daha yüksek Hasar veren bir **Hedefli Atış** yapar.\nNişan alırken okun ucunda Suyun gücü birikir. Tam yüklü bu sel oku Su Hasarı verir ve Dalga durum etkisi uygular.\n\n**Dalga**\nTartaglia'nın Dalgadan etkilenen düşmanlara yaptığı çeşitli saldırılar, düşmanlara Su Alan Hasarı verir. Bu şekilde verilen Hasar, Normal Saldırı Hasarı olarak geçer.\n·Dalga Parıltısı: Dalgadan etkilenen bir düşmanı vuran ve arka arkaya Alan Hasarı veren tam yüklü bir Hedefli Atış. 0,7 saniyede bir uygulanabilir.\n·Dalga Patlaması: Dalgadan etkilenen bir düşman yenildiğinde yakındaki düşmanlara vurunca Dalga etkisi veren bir Su patlaması ortaya çıkar.\n\n**Havadan Saldırı**\nHavadayken yaylım ok atışı yapar ve dalışa geçerek yere vurur. Yere vurduğunda Alan Hasarı verir.\nTartaglia, Kötülüğün Mirası: Dalgaların Öfkesi Yakın Saldırı duruşundayken havadan saldırı yapamaz.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}",
+				"5 Vuruş Hasarı|{param5:F1P}",
+				"6 Vuruş Hasarı|{param6:F1P}",
+				"Hedefli Atış|{param7:F1P}",
+				"Tam Yüklü Hedefli Atış|{param8:P}",
+				"Dalga Parıltısı Hasarı|{param9:F1P}x3",
+				"Dalga Patlaması Hasarı|{param10:F1P}",
+				"Dalga Süresi|{param14:F1}sn",
+				"Havadan Saldırı Hasarı|{param11:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param12:P}/{param13:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Kötülüğün Mirası: Dalgaların Öfkesi",
+		"info": "Saf sudan üretilmiş silahlar çıkararak etrafındaki düşmanlara Su Hasarı verir ve Yakın Saldırı duruşuna geçer.\nBu duruştayken Tartaglia'nın Normal ve Yüklü Saldırıları diğer herhangi bir element tesiriyle değişmeyecek şekilde Su Hasarına dönüşür ve şu şekilde değişir:\n\n**Normal Saldırı**\nArka arkaya en fazla 6 Su saldırısı yapar.\n\n**Yüklü Saldırı**\nBelirli miktarda Dayanıklılık harcayarak çapraz saldırı yapar ve Su Hasarı verir.\n\n**Dalga Darbesi**\nDalgadan etkilenen bir düşmana yakından saldırdığında Su Alan Hasarı veren Dalga Darbesi açığa çıkar. Bu şekilde verilen Hasar, Element Becerisi Hasarı sayılır ve 1,5 saniyede bir uygulanabilir.\n\n30sn sonra veya yetenek tekrar kullanıldığında bu beceri sona erer. Tartaglia, Menzilli Saldırı Duruşuna geri döner ve bu becerinin Bekleme Süresi başlar. Tartaglia, Yakın Saldırı duruşunda ne kadar uzun kalırsa Bekleme Süresi de o kadar uzun olur.\n30sn sonunda menzilli saldırı duruşuna otomatik olarak dönülürse Bekleme Süresi daha da uzun olur.",
+		"description": "Yay kullanmasının amacı yay kullanmaktaki zayıflığını yenmekti ama savaş ciddiyse onun da ciddileşmesi gerekir...",
+		"attributes": {
+			"labels": [
+				"Saldırı Duruşu Değişim Hasarı|{param1:P}",
+				"1 Vuruş Hasarı|{param2:F1P}",
+				"2 Vuruş Hasarı|{param3:F1P}",
+				"3 Vuruş Hasarı|{param4:F1P}",
+				"4 Vuruş Hasarı|{param5:F1P}",
+				"5 Vuruş Hasarı|{param6:F1P}",
+				"6 Vuruş Hasarı|{param7:F1P}+{param8:F1P}",
+				"Yüklü Saldırı Hasarı|{param9:F1P}+{param10:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param12:F1}",
+				"Dalga Darbesi|{param11:P}",
+				"Maks. Süre|{param13:F1}sn",
+				"Öncü BS|{param14:F1}-{param15:F1}sn",
+				"Maks. BS|{param16:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Yıkım: Yok Etme",
+		"info": "Kullanıldığında Tartaglia'nın duruşuna bağlı olarak farklı saldırılar yapar.\n\n**Menzilli Saldırı Duruşu: Yıkım Atışı**\nSu etkisine sahip büyülü bir oku hızla atar ve Su Alan Hasarı vererek Dalga durumu uygular.\nKullanıldıktan sonra Enerji Maliyetinin bir kısmı geri verilir.\n\n**Yakın Saldırı Duruşu: Yok Eden Işık**\nGeniş bir etki alanı olan bir darbe indirir ve etraftaki tüm düşmanlara vurarak çok büyük miktarda Su Hasarı verir. Böylece Dalga Saldırısı tetiklenir.\n\n**Dalga Saldırısı**\nYok edici sular, Dalgadan etkilenen bir düşmana vurduğunda Dalga durumu düşmanlardan kalkar ve Su Alan Hasarı veren bir Su Patlaması tetiklenir.\nBu şekilde verilen Hasar, Element Patlaması Hasarı olarak geçer.",
+		"description": "Karlı vatanında akarsular nadir görülür. Belki suya hükmetme becerisi suyun ne kadar kıymetli olduğunu bilmesinden geliyordur.",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı: Yakın|{param1:P}",
+				"Beceri Hasarı: Menzilli|{param3:P}",
+				"Dalga Saldırısı Hasarı|{param2:P}",
+				"Enerji İadesi (Menzilli)|{param4:I}",
+				"BS|{param5:F1}sn",
+				"Enerji Maliyeti|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Ebediyet",
+		"info": "Dalga süresini 8 saniye uzatır."
+	},
+	"passive2": {
+		"name": "Akıntı Kılıcı",
+		"info": "Tartaglia **Kötülüğün Mirası: Dalgaların Öfkesi** Yakın Saldırı duruşundayken Kritik Vuruş yaptığında Normal ve Yüklü Saldırılar düşmanlara Dalga etkisi uygular."
+	},
+	"passive3": {
+		"name": "Silah Ustası",
+		"info": "Kendi grup üyelerinin **Normal Saldırı** seviyesini 1 artırır."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Özgürlük Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Acemi Asker Nişanı",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Özgürlük Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Özgürlük Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Özgürlük Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Özgürlük Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Özgürlük Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 4
+			},
+			{
+				"name": "İblis Parçası",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Özgürlük Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 6
+			},
+			{
+				"name": "İblis Parçası",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Özgürlük Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 9
+			},
+			{
+				"name": "İblis Parçası",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Özgürlük Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 12
+			},
+			{
+				"name": "İblis Parçası",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

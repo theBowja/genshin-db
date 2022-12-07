@@ -1,0 +1,213 @@
+{
+	"name": "Sayu",
+	"combat1": {
+		"name": "Attacco normale: Lama ninja della Shuumatsuban",
+		"info": "**Attacco normale**\nSferra fino a 4 colpi consecutivi.\n\n**Attacco caricato**\nConsuma vigore nel tempo per sferrare attacchi rotanti contro tutti gli avversari vicini.\nAl termine della sequenza, sferra un fendente più potente. \n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}+{param4:F1P}",
+				"DAN da 4º colpo|{param5:F1P}",
+				"DAN da ATT caricato rotante|{param6:F1P}",
+				"DAN da ATT caricato finali|{param7:P}",
+				"Costo vigore ATT caricato|{param8:F1}/s",
+				"Durata max|{param9:F1} s",
+				"DAN da ATT in picchiata|{param10:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Arte Yoohoo: Scatto Fuuin",
+		"info": "La tecnica speciale delle arti ninja Yoohoo!\nSayu si raggomitola trasformandosi in un Turbine Fuufuu e si schianta sugli avversari ad alta velocità, infliggendo DAN da Anemo. Al termine della durata di questa tecnica, Sayu rilascia un Calcio turbine Fuufuu, infliggendo DAN da Anemo ad area.\n\n**Pressione**\nEntra nello stato di Turbine Fuufuu e percorre una breve distanza rotolando prima di usare il Calcio turbine Fuufuu.\n\n**Pressione prolungata**\nContinua a rotolare nello stato di Turbine Fuufuu, aumentando la resistenza all'interruzione di Sayu mentre è in quello stato.\nIn questo lasso di tempo, Sayu può controllare la direzione in cui rotola e può usare di nuovo l'abilità per interrompere il suo stato di Turbine Fuufuu e sferrare una versione più forte del suo Calcio turbine Fuufuu.\nIn caso di pressione prolungata, è possibile innescare l'assorbimento elementale.\n\nL'abilità ha una durata massima di 10 s e il TdR comincia quando il suo effetto termina. Più tempo Sayu resta nel suo stato di Turbine Fuufuu, più lungo sarà il TdR.\n\n**Assorbimento elementale**\nSe Sayu entra in contatto con Hydro/Pyro/Cryo/Electro mentre è nello stato di Turbine Fuufuu, infliggerà DAN elementali aggiuntivi di quel tipo.\nL'assorbimento elementale può avvenire una volta sola per ogni utilizzo di quest'abilità.",
+		"description": "Sayu sa eseguire quest'abilità a occhi chiusi. Questa tecnica è stata originariamente creata per scappare via, ma ora che ha una Visione, Sayuu è in grado di far mangiare la polvere ai suoi nemici.",
+		"attributes": {
+			"labels": [
+				"DAN da Turbine Fuufuu|{param1:F1P}",
+				"DAN da Calcio turbine Fuufuu con pressione|{param3:F1P}",
+				"DAN da Calcio turbine Fuufuu con pressione prolungata|{param4:F1P}",
+				"DAN elementali da Turbine Fuufuu|{param2:F1P}",
+				"DAN elementali da Calcio turbine Fuufuu|{param5:F1P}",
+				"Durata max (pressione prolungata)|{param6:F1} s",
+				"TdR|{param7:F1}-{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Arte Yoohoo: Frullio Mujina",
+		"info": "Un'altra tecnica super speciale delle arti ninja Yoohoo! Evoca un aiutante in soccorso di Sayu.\nInfligge DAN da Anemo agli avversari vicini e cura tutti i membri del gruppo vicini. La quantità di PS ripristinata varia in base all'ATT di Sayu. Quest'abilità evoca poi un Daruma Muji-Muji.\n\n**Daruma Muji-Muji**\nA intervalli specifici, il Daruma effettuerà una delle seguenti azioni in base alla situazione:\n· se i PS dei personaggi vicini sono superiori a un 70%, attaccherà un avversario vicino, infliggendo DAN da Anemo;\n· se ci sono personaggi attivi vicini con un 70% dei PS o meno, guarirà il personaggio attivo con la percentuale di PS rimasti più bassa. Se non ci sono avversari vicini, guarirà i personaggi attivi vicini anche se hanno ancora un 70% o più di PS.",
+		"description": "Coloro che non conoscono affatto il ninjutsu amano vedere Sayu mettere in mostra la sua abilità, e c'è persino chi ha cercato di imparare da lei. Ma Sayu vuole solo dormire senza essere disturbata.",
+		"attributes": {
+			"labels": [
+				"DAN da attivazione abilità|{param1:P}",
+				"Guarigione da attivazione abilità|{param3:F1P} ATT+{param2:I}",
+				"DAN da Daruma Muji-Muji|{param4:P}",
+				"Guarigione da Daruma Muji-Muji|{param6:F1P} ATT+{param5:I}",
+				"Durata|{param7:F1} s",
+				"TdR|{param8:F1} s",
+				"Costo energia|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Qualcuno più qualificato",
+		"info": "Quando Sayu innesca una reazione di Turbinio mentre è attiva, ripristina 300 PS di tutti i personaggi e alleati vicini. Inoltre, ripristina 1,2 PS aggiuntivi per ogni punto di maestria elementale in suo possesso.\nQuest'effetto può attivarsi una volta ogni 2 s."
+	},
+	"passive2": {
+		"name": "Oggi non si lavora!",
+		"info": "Il Daruma Muji-Muji creato da **Arte Yoohoo: Frullio Mujina** ottiene i seguenti effetti:\n· quando guarisce un personaggio, ripristina anche un 20% dei PS dei personaggi vicini;\n· aumenta l'area d'effetto del suo attacco contro gli avversari."
+	},
+	"passive3": {
+		"name": "Arte Yoohoo: Tecniche di furtività",
+		"info": "Quando Sayu è nel gruppo, i Cristallotteri e alcuni altri animali non fuggiranno spaventati quando i tuoi personaggi si avvicinano a essi.\nControlla la sottocategoria Altro della sezione Esseri viventi/Fauna nell'Archivio per scoprire su quali creature ha effetto quest'abilità."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti della luce",
+				"count": 3
+			},
+			{
+				"name": "Nettare del Malefiore",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida alla luce",
+				"count": 2
+			},
+			{
+				"name": "Nettare brillante",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida alla luce",
+				"count": 4
+			},
+			{
+				"name": "Nettare brillante",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida alla luce",
+				"count": 6
+			},
+			{
+				"name": "Nettare brillante",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida alla luce",
+				"count": 9
+			},
+			{
+				"name": "Nettare brillante",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie della luce",
+				"count": 4
+			},
+			{
+				"name": "Nettare energetico",
+				"count": 4
+			},
+			{
+				"name": "Squama dorata",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie della luce",
+				"count": 6
+			},
+			{
+				"name": "Nettare energetico",
+				"count": 6
+			},
+			{
+				"name": "Squama dorata",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie della luce",
+				"count": 12
+			},
+			{
+				"name": "Nettare energetico",
+				"count": 9
+			},
+			{
+				"name": "Squama dorata",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie della luce",
+				"count": 16
+			},
+			{
+				"name": "Nettare energetico",
+				"count": 12
+			},
+			{
+				"name": "Squama dorata",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

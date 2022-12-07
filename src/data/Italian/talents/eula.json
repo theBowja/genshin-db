@@ -1,0 +1,216 @@
+{
+	"name": "Eula",
+	"combat1": {
+		"name": "Attacco normale: Tecnica di Favonius - Edel",
+		"info": "**Attacco normale**\nSferra fino a 5 colpi consecutivi.\n\n**Attacco caricato**\nConsuma vigore nel tempo per sferrare fendenti continui.\nAl termine della sequenza, sferra un fendente più potente.\n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}+{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}",
+				"DAN da 5º colpo|{param5:F1P}+{param5:F1P}",
+				"DAN da ATT caricato rotante|{param6:F1P}",
+				"DAN da ATT caricato finali|{param7:P}",
+				"Costo vigore ATT caricato|{param8:F1}/s",
+				"Durata max|{param9:F1} s",
+				"DAN da ATT in picchiata|{param10:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Vortice algido",
+		"info": "Freddo tagliente, rapida lama.\n\n**Pressione**\nEula colpisce rapidamente con la sua claymore, infliggendo DAN da Cryo.\nQuando colpisce un avversario, Eula ottiene un accumulo di Cuortetro, cumulabile fino a 2 volte. Ogni accumulo può avvenire solo una volta ogni 0,3 s.\n\n**Cuortetro**\nAumenta la resistenza all'interruzione e la DIF di Eula.\n\n**Pressione prolungata**\nBrandendo la spada, Eula consuma tutto il Cuortetro accumulato e si scaglia in avanti, infliggendo DAN da Cryo ad area agli avversari davanti a sé.\nSe il Cuortetro accumulato viene consumato, la RES fisica e la RES a Cryo degli avversari circostanti saranno ridotte.\nOgni accumulo di Cuortetro consumato viene convertito in un Marchio geloturbine che infligge DAN da Cryo agli avversari vicini.",
+		"description": "\"E così, le onde si ritirarono, inghiottendo la corona dei nobili. Da allora, ogni goccia tra le onde di ghiaccio riflette una corona d'oro, e ciascuna brilla della sua luce.\"",
+		"attributes": {
+			"labels": [
+				"DAN da pressione|{param1:P}",
+				"DAN da pressione prolungata|{param2:P}",
+				"DAN da Marchio geloturbine|{param3:P}",
+				"Bonus DIF|{param9:P} per carica",
+				"Durata Cuortetro|{param13:F1} s",
+				"Riduzione RES fisica|{param4:P}",
+				"Riduzione RES a Cryo|{param5:P}",
+				"Durata riduzione RES|{param6:F1} s",
+				"TdR pressione|{param7:F1} s",
+				"TdR (pressione prolungata)|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Illuminazione glaciale",
+		"info": "Brandisce il suo spadone, infliggendo DAN da Cryo agli avversari vicini e creando una Spada di luce cadente che la segue per un massimo di 7 s.\nMentre è attiva, la Spada di luce cadente aumenta la resistenza all'interruzione di Eula. Quando l'attacco normale, l'abilità elementale e il Tripudio elementale di Eula infliggono DAN agli avversari, i DAN caricano la Spada di luce cadente, che può ottenere un accumulo di energia ogni 0,1 s.\nAl termine della sua durata, la Spada di luce cadente discende ed esplode con violenza, infliggendo DAN fisici agli avversari vicini.\nI DAN variano in base al numero di accumuli di energia della Spada di luce cadente.\nSe Eula lascia il campo di battaglia, la Spada di luce cadente esplode all'istante.",
+		"description": "Affondare è facile. Ma anche così, Eula non desidera altro che congelare l'onda incombente.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:P}",
+				"DAN base da Spada di luce cadente|{param2:F1P}",
+				"DAN per carica|{param3:F1P}",
+				"Numero cariche massimo|{param4:I}",
+				"TdR|{param5:F1} s",
+				"Costo energia|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Brina turbolenta",
+		"info": "Se si consumano 2 cariche di Cuortetro usando la variante a pressione prolungata di **Vortice algido**, viene generata una Spada di luce cadente in frantumi che esplode all'istante, infliggendo la metà dei DAN fisici di base inflitti da una Spada di luce cadente creata tramite **Illuminazione glaciale**."
+	},
+	"passive2": {
+		"name": "Spirito belligerante",
+		"info": "Quando si usa **Illuminazione glaciale**, il TdR di **Vortice algido** viene ripristinato ed Eula ottiene 1 Cuortetro."
+	},
+	"passive3": {
+		"name": "Introspezione aristocratica",
+		"info": "Quando Eula crea materiali per talenti dei personaggi, ha un 10% di probabilità di ricevere il doppio del prodotto."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti della resistenza",
+				"count": 3
+			},
+			{
+				"name": "Maschera danneggiata",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 2
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 4
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 6
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 9
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 4
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 4
+			},
+			{
+				"name": "Corona del re dei draghi",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 6
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 6
+			},
+			{
+				"name": "Corona del re dei draghi",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 12
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 9
+			},
+			{
+				"name": "Corona del re dei draghi",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 16
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 12
+			},
+			{
+				"name": "Corona del re dei draghi",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

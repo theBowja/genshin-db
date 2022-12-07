@@ -1,0 +1,213 @@
+{
+	"name": "Razor",
+	"combat1": {
+		"name": "Attacco normale: Zanna d'acciaio",
+		"info": "**Attacco normale**\nSferra fino a 4 colpi consecutivi.\n\n**Attacco caricato**\nConsuma vigore nel tempo per sferrare attacchi rotanti contro tutti gli avversari vicini.\nAl termine della sequenza, sferra un fendente più potente. \n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:P}",
+				"DAN da 4º colpo|{param4:P}",
+				"DAN da ATT caricato ciclico|{param5:F1P}",
+				"DAN da ATT caricato finali|{param6:P}",
+				"Costo vigore ATT caricato|{param7:F1}/s",
+				"Durata max|{param8:F1} s",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Artiglio tonante",
+		"info": "Caccia la preda usando la tecnica insegnatagli dal suo maestro e il suo Lupical.\n\n**Pressione**\nSferza con l'Artiglio tonante del lupo, infliggendo DAN da Electro agli avversari davanti a Razor.\nQuando colpisce un avversario, Razor ottiene un Sigillo di Electro che incrementa la sua velocità di ricarica d'energia.\nRazor può accumulare fino a 3 Sigilli di Electro simultaneamente, ottenere un nuovo Sigillo di Electro ripristina la loro durata.\n\n**Pressione prolungata**\nConvoglia l'energia di Electro per rilasciare una tempesta di fulmini in una piccola area d'effetto, infliggendo ingenti DAN da Electro e azzerando tutti i Sigilli di Electro di Razor.\nOgni Sigillo di Electro azzerato in questa maniera sarà convertito in energia per Razor.",
+		"description": "Nell'istante in cui il fulmine colpisce, nel profondo degli occhi di Razor puoi talvolta scorgere lo sguardo di un predatore che adocchia la sua preda.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità pressione|{param1:P}",
+				"DAN da abilità pressione prolungata|{param2:P}",
+				"Bonus ricarica d'energia|{param3:P} per Sigillo di Electro",
+				"Energia rigenerata|{param4:F1} per Sigillo di Electro assorbito",
+				"Durata Sigillo di Electro|{param5:F1} s",
+				"TdR pressione|{param6:F1} s",
+				"TdR (pressione prolungata)|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Zanna fulminante",
+		"info": "Evoca il Lupo interiore, che infligge DAN da Electro a tutti gli avversari vicini. Questo azzera tutti i Sigilli di Electro di Razor, convertiti in Energia elementale per lui.\nIl Lupo interiore combatte al fianco di Razor finché l'abilità è attiva.\n\n**Lupo interiore**\n· Colpisce al fianco degli attacchi normali di Razor, infliggendo DAN da Electro.\n· Aumenta la VEL d'ATT e la RES a Electro di Razor.\n· Razor è immune ai DAN inflitti dallo stato di Electrocarica.\n· Disattiva gli attacchi caricati di Razor.\n· Aumenta la resistenza all'interruzione di Razor.\n\nQuesti effetti terminano quando Razor lascia il campo di battaglia.\nQuando Razor lascia il campo di battaglia, recupera fino a 10 di energia in base alla durata rimanente della sua abilità.",
+		"description": "Il lupo si è risvegliato. La caccia ha inizio.",
+		"attributes": {
+			"labels": [
+				"DAN da Tripudio|{param1:P}",
+				"DAN da Spirito del lupo|{param2:F1P} DAN da ATT normale",
+				"Bonus VEL d'ATT normale|{param3:P}",
+				"Bonus RES a Electro|{param4:P}",
+				"Durata|{param5:F1} s",
+				"TdR|{param6:F1} s",
+				"Costo energia|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Risveglio",
+		"info": "Riduce il TdR di **Artiglio tonante** di un 18%.\nUsare **Zanna fulminante** azzera il TdR di **Artiglio tonante**."
+	},
+	"passive2": {
+		"name": "Appetito",
+		"info": "Quando l'energia di Razor è inferiore a un 50%, aumenta la ricarica d'energia di un 30%."
+	},
+	"passive3": {
+		"name": "Lupo scattante",
+		"info": "Diminuisce di un 20% il consumo di vigore durante lo Scatto per i membri del tuo gruppo.\nNon è cumulabile con talenti passivi che conferiscono gli stessi effetti."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti della resistenza",
+				"count": 3
+			},
+			{
+				"name": "Maschera danneggiata",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 2
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 4
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 6
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 9
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 4
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 4
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 6
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 6
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 12
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 9
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 16
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 12
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

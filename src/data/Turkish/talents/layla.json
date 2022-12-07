@@ -1,0 +1,205 @@
+{
+	"name": "Layla",
+	"combat1": {
+		"name": "Normal Saldırı: Işıltılı Yolun Kılıcı",
+		"info": "**Normal Saldırı**\nEn fazla 3 hızlı saldırı yapar.\n\n**Yüklü Saldırı**\nBelirli miktarda Dayanıklılık harcayarak 2 hızlı kılıç saldırısı yapar.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"Yüklü Saldırı Hasarı|{param4:F1P}+{param5:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param6:F1}",
+				"Havadan Saldırı Hasarı|{param7:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Odaklanma Gecesi",
+		"info": "Uyku Perdesi olarak bilinen bir kalkan kullanarak Buz Alan Hasarı verir.\nUyku Perdesinin Hasar Emilimi Layla'nın Maks. Canına bağlıdır ve Buz Hasarını %250 verimlilikle emer. Kalkan ortaya çıkarıldığında Layla kısa bir süreliğine Buz tesirinde olur.\n\n**Gece Yıldızları ve Kayan Yıldızlar**\nUyku Perdesi etkinken kendisine 1,5 saniyede bir bağlanan 1 Gece Yıldızı oluşturur. Bu kalkanla korunan bir karakter Element Becerisi kullandığında 2 Gece Yıldızı oluşturulur. Gece Yıldızları bu şekilde her 0,3 saniyede bir oluşturulabilir. Tek seferde maksimum 4 Gece Yıldızı toplanabilir.\nUyku Perdesi 4 Gece Yıldızı topladığında ve yakında düşmanlar olduğunda bu Gece Yıldızları, güdümlü Kayan Yıldızlara dönüşürler ve sırayla ateşlenerek isabet ettiği düşmanlara Buz Hasarı verirler.\nUyku Perdesinin süresi sona ererse veya imha edilirse Gece Yıldızları yok olur. Eğer halihazırda Kayan Yıldız olarak ateşlendiyseler bu Kayan Yıldızlar mevcut atış dalgası sona erene dek sürer.\n\nÖnceki Kayan Yıldız dalgası tamamen ateşlenene kadar Yeni Gece Yıldızı oluşturulamaz.",
+		"description": "\"Onla ben daha önce hiç tanışmamış ama aynı minderli koltukta oturan ve aynı rüya çiçeğini işleyen iki usta zanaatkar gibiyiz.\"",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:F1P}",
+				"Kayan Yıldız Hasarı|{param2:F1P}",
+				"Kalkan Temel Hasar Emilimi|{param3:F1P} Maks. Can+{param4:I}",
+				"Kalkan Süresi|{param5:F1}sn",
+				"BS|{param6:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Dağılan Yıldız Akışı Rüyası",
+		"info": "Etki Alanındaki düşmanlara sürekli Yıldız Işını ateşleyen bir Kutsal Diyar Rüya Küresi göndererek Buz Hasarı verir.\nBir Yıldız Işını isabet ettiğinde yakındaki Uyku Perdesi için 1 Gece Yıldızı oluşturur. Her Uyku Perdesi bu şekilde 0,5 saniyede bir 1 Gece Yıldızı elde edebilir.",
+		"description": "\"Uyu, uyu... Uyuyan gözlerinin önünde, yıldızlarla dolu rüyalarında nice kaderler seni bekliyor.\"",
+		"attributes": {
+			"labels": [
+				"Yıldız Işını Hasarı|{param1:F1P} Maks. Can",
+				"Süre|{param2:F1}sn",
+				"BS|{param3:F1}sn",
+				"Enerji Maliyeti|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Saklı Işık Gibi",
+		"info": "**Uyku Perdesi** etkinken Perde, her 1 Gece Yıldızı elde ettiğinde Derin Uyku etkisi etkinleşir:\n·Uyku Perdesi altındaki bir karakterin Kalkan Gücü %6 artar.\n·Bu etki 4 kademeye kadar birikebilir ve Uyku Perdesi yok olana kadar devam eder."
+	},
+	"passive2": {
+		"name": "Huzurlu Bir Uyku",
+		"info": "**Odaklanma Gecesi** tarafından ateşlenen Kayan Yıldızların verdiği Hasar, Layla'nın Maks. Canının %1,5'i kadar artar."
+	},
+	"passive3": {
+		"name": "Meşum Rüya İşaretleri",
+		"info": "Layla, Karakter Yeteneği Malzemeleri üretirken elde ettiği ürünü %10 ihtimalle iki katına çıkarır."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Marifet Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Kehanet Parşömeni",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Marifet Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Mühürlü Parşömen",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 4
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 6
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 9
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Marifet Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Lanetli Parşömen",
+				"count": 12
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

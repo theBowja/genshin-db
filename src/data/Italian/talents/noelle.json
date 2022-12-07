@@ -1,0 +1,211 @@
+{
+	"name": "Noelle",
+	"combat1": {
+		"name": "Attacco normale: Tecnica di Favonius - Domestica",
+		"info": "**Attacco normale**\nSferra fino a 4 colpi consecutivi.\n\n**Attacco caricato**\nConsuma vigore nel tempo per sferrare attacchi rotanti contro tutti gli avversari vicini.\nAl termine della sequenza, sferra un fendente più potente. \n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:P}",
+				"DAN da ATT caricato ciclico|{param5:F1P}",
+				"DAN da ATT caricato finali|{param6:F1P}",
+				"Costo vigore ATT caricato|{param7:F1}/s",
+				"Durata max|{param8:F1} s",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Corazza",
+		"info": "Evoca un'armatura in pietra protettiva, infliggendo DAN da Geo agli avversari circostanti e creando uno scudo. L'assorbimento DAN dello scudo varia in base alla DIF di Noelle.\nLo scudo ha le seguenti proprietà:\n· quando gli attacchi normali e caricati di Noelle colpiscono un obiettivo, hanno una certa probabilità di rigenerare i PS di tutti i personaggi;\n· possiede un 150% di efficienza di assorbimento DAN contro tutti i DAN fisici ed elementali.\n\nLa quantità di PS ripristinati quando si attiva la rigenerazione dipende dalla DIF di Noelle.",
+		"description": "Noelle è una donna di servizio ligia al dovere e una cavaliere coraggiosa.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param6:P} DIF",
+				"Assorbimento DAN|{param1:P} DIF+{param7:I}",
+				"Guarigione|{param2:F1P} DIF+{param8:I}",
+				"Probabilità attivazione guarigione|{param3:P}",
+				"Durata|{param4:F1} s",
+				"TdR|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Pulizia completa",
+		"info": "Radunando la forza della pietra intorno alla sua arma, Noelle colpisce gli avversari che la circondano in un'ampia area d'effetto, infliggendo DAN da Geo.\nDopodiché, Noelle ottiene i seguenti effetti:\n· area d'effetto degli attacchi più ampia;\n· trasforma i DAN da attacco in DAN da Geo che non possono essere annullati da altre infusioni elementali;\n· ATT aumentato in base alla sua DIF.",
+		"description": "A volte, è necessario spazzare via non solo la polvere...",
+		"attributes": {
+			"labels": [
+				"DAN da esplosione|{param1:F1P}",
+				"DAN da abilità|{param2:F1P}",
+				"Bonus ATT|{param3:P} DIF",
+				"Durata|{param4:F1} s",
+				"TdR|{param5:F1} s",
+				"Costo energia|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Devozione",
+		"info": "Quando Noelle è nel gruppo ma non sul campo, quest'abilità si attiva automaticamente quando i PS del personaggio attivo scendono al di sotto di un 30%.\nGenera uno scudo per il personaggio attivo che dura 20 s e assorbe DAN pari a un 400% della DIF di Noelle.\nLo scudo ha un'efficacia di assorbimento DAN pari a un 150% contro tutti i DAN elementali e fisici.\nSi può verificare una sola volta ogni 60 s."
+	},
+	"passive2": {
+		"name": "Pulito e ordinato",
+		"info": "Noelle ridurrà di 1 s il TdR di **Corazza** per ogni 4 attacchi normali o caricati messi a segno sugli avversari.\nUn colpo può essere contato ogni 0,1 s."
+	},
+	"passive3": {
+		"name": "Cavalleria domestica",
+		"info": "Quando si ottiene una preparazione perfetta di un piatto che aumenta la DIF, Noelle ha un 12% di probabilità di ricevere il doppio del prodotto."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti della resistenza",
+				"count": 3
+			},
+			{
+				"name": "Maschera danneggiata",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 2
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 4
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 6
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida alla resistenza",
+				"count": 9
+			},
+			{
+				"name": "Maschera sporca",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 4
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 4
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 6
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 6
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 12
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 9
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie della resistenza",
+				"count": 16
+			},
+			{
+				"name": "Maschera nefasta",
+				"count": 12
+			},
+			{
+				"name": "Artiglio di Dvalin",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

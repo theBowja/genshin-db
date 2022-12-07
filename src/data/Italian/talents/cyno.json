@@ -1,0 +1,215 @@
+{
+	"name": "Cyno",
+	"combat1": {
+		"name": "Attacco normale: Lancia dell'evocatore",
+		"info": "**Attacco normale**\nSferra fino a 4 colpi di lancia consecutivi.\n\n**Attacco caricato**\nConsuma una determinata quantità di vigore per attaccare balzando in avanti infliggendo DAN agli avversari lungo la traiettoria.\n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}+{param4:F1P}",
+				"DAN da 4º colpo|{param5:F1P}",
+				"DAN da ATT caricato|{param6:F1P}",
+				"Costo vigore ATT caricato|{param7:F1}",
+				"DAN da ATT in picchiata|{param8:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Rito arcano: Guida delle anime del baratro",
+		"info": "Esegue un affondo rapido, infliggendo DAN da Electro ai nemici lungo il percorso.\n\nQuando Cyno si trova nello stato di Precorritore giurato innescato da Rito sacro: Destrezza del lupo, scatena un **Rito funebre** che infligge fragorosi DAN da Electro ad area ed estende la durata di Precorritore giurato.",
+		"description": "\"Questo giudizio non ammette opzioni. In questo luogo non esiste né ripudio né accettazione... È una condanna che da lungo tempo pesa su entrambi.\"",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P}",
+				"DAN da Rito funebre|{param2:F1P}",
+				"Durata bonus Precorritore giurato|{param3:F1} s",
+				"TdR|{param4:F1} s",
+				"TdR Rito funebre|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Rito sacro: Destrezza del lupo",
+		"info": "Evoca uno spirito divino che si insedia nel suo corpo e lo trasforma nel Precorritore giurato.\n\n**Precorritore giurato**\nI DAN inflitti dagli attacchi normali, caricati e in picchiata di Cyno vengono convertiti in DAN da Electro. Questo effetto non può essere annullato.\n· La maestria elementale e la resistenza all'interruzione di Cyno aumentano, donandogli anche immunità ai DAN da Electrocarica.\n\nQuesto effetto viene annullato quando Cyno esce dal campo o dopo un massimo di 18 s.",
+		"description": "Per il generale Mahamatra, i sacri rituali tramandati nell'antica nazione sono come una sentenza suprema.\nChe si tratti del presente o del passato, di un'implacabile tempesta o di un gigantesco serpente, nessuno scalfirà la maestà della legge.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}+{param5:F1P}",
+				"DAN da 5º colpo|{param6:F1P}",
+				"DAN da ATT caricato|{param7:F1P}",
+				"Costo vigore ATT caricato|{param8:F1}",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}",
+				"Bonus maestria elementale|{param12:I}",
+				"Durata base|{param13:F1} s",
+				"TdR|{param14:F1} s",
+				"Costo energia|{param15:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Giudizio della piuma cadente",
+		"info": "Quando è nello stato di Precorritore giurato attivato da **Rito sacro: Destrezza del lupo**, Cyno assume a intervalli regolari la posizione Occhio liminale. Se attiva **Rito arcano: Guida delle anime del baratro** mentre è in questa posizione, innesca l'effetto Verdetto, che aumenta i DAN di Rito sacro: Guida delle anime del baratro di un 35%, e scaglia 3 Dardi del braccatore che infliggono un 100% dell'ATT di Cyno come DAN da Electro.\nI DAN da Dardo del braccatore sono considerati DAN da abilità elementale."
+	},
+	"passive2": {
+		"name": "Autorità sui nove archi",
+		"info": "I valori di DAN di Cyno aumentano in base alla sua maestria elementale con i seguenti criteri:\n· i DAN da attacco normale di Precorritore giurato aumentano di un 150% della sua maestria elementale;\n· i DAN da Dardo del braccatore del talento passivo Giudizio della piuma cadente aumentano di un 250% della sua maestria elementale."
+	},
+	"passive3": {
+		"name": "Dono del silenzio",
+		"info": "Ottiene un 25% in più di ricompense quando intraprende una spedizione a Sumeru per 20 ore."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti dell'ammonimento",
+				"count": 3
+			},
+			{
+				"name": "Pergamena divinatoria",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida all'ammonimento",
+				"count": 2
+			},
+			{
+				"name": "Pergamena sigillata",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida all'ammonimento",
+				"count": 4
+			},
+			{
+				"name": "Pergamena sigillata",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida all'ammonimento",
+				"count": 6
+			},
+			{
+				"name": "Pergamena sigillata",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida all'ammonimento",
+				"count": 9
+			},
+			{
+				"name": "Pergamena sigillata",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie dell'ammonimento",
+				"count": 4
+			},
+			{
+				"name": "Pergamena maledetta",
+				"count": 4
+			},
+			{
+				"name": "Mudra della Generale malefica",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie dell'ammonimento",
+				"count": 6
+			},
+			{
+				"name": "Pergamena maledetta",
+				"count": 6
+			},
+			{
+				"name": "Mudra della Generale malefica",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie dell'ammonimento",
+				"count": 12
+			},
+			{
+				"name": "Pergamena maledetta",
+				"count": 9
+			},
+			{
+				"name": "Mudra della Generale malefica",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie dell'ammonimento",
+				"count": 16
+			},
+			{
+				"name": "Pergamena maledetta",
+				"count": 12
+			},
+			{
+				"name": "Mudra della Generale malefica",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}
