@@ -603,12 +603,12 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 
 			let before = JSON.stringify(dbdata);
 			if (dbdata && dbdata.name && dbdata.name !== importdata.name) {
-				console.log(`There's been a name change for ${langC} ${filename} from ${dbdata.name} to ${importdata.name}`);
+				console.log(`Name change for ${language.languageMap[langC]} ${filename} from ${dbdata.name} to ${importdata.name}`);
 			}
 			if (collateFunc)
 				await collateFunc(dbdata, importdata, language.languageMap[langC], importconfig[folder], skipimageredirect, dbimages ? dbimages[filename] : undefined);
 			else
-				await collateData(dbdata, importdata, langC, importconfig[folder], dbimages[filename])
+				await collateData(dbdata, importdata, langC, importconfig[folder], dbimages ? dbimages[filename] : undefined)
 			if(dbimages) { 
 				if(dbimages[filename] === undefined) dbimages[filename] = {};
 				Object.assign(dbimages[filename], importdata.images);
@@ -644,8 +644,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-checkExistingImageBlacklist = true; // 
-importData('characters', collateCharacter);
+// checkExistingImageBlacklist = true; // 
 gameVersion = "3.3"; // new data will use this as added version
 
 // importData('characters', collateCharacter);
@@ -673,7 +672,6 @@ gameVersion = "3.3"; // new data will use this as added version
 // importData('adventureranks'); // max 60
 // importData('crafts');
 
-// getUpperBodyImages(); // must be separate // cover1, cover2
 // updateURLs(); // must be separate
 
 // stealWikiaVersion('animals');
