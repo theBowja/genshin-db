@@ -73,9 +73,9 @@ async function checkLinkExists(url) {
 
 let imageblacklist = require('./import/imageblacklist.json');
 // returns if the image exists or not
-async function isImageBlacklistAndExist(imageurl, savechanges) {
+async function isImageBlacklistAndExist(imageurl, savechanges, dburl) {
 	if (imageblacklist.includes(imageurl)) {
-		if (checkExistingImageBlacklist && await checkLinkExists(imageurl)) {
+		if (checkExistingImageBlacklist && !dburl && await checkLinkExists(imageurl)) {
 			if (savechanges) {
 				imageblacklist = imageblacklist.filter(e => e !== imageurl);
 				fs.writeFileSync(`./import/imageblacklist.json`, JSON.stringify(imageblacklist, null, '\t'));
@@ -83,6 +83,7 @@ async function isImageBlacklistAndExist(imageurl, savechanges) {
 			return true;
 
 		} else {
+			console.log(`Image doesn't exist: ${imageurl}`);
 			return false;
 		}
 
@@ -280,40 +281,43 @@ function copyPropsIfExist(fromObj, toObj, props, setdefault) {
 	}
 }
 
-async function copyImagesProps(importdata, importconfig) {
+async function copyImagesProps(importdata, importconfig, dbimages) {
 	importdata.images = {};
 	copyPropsIfExist(importdata, importdata.images, importconfig.images);
 
 	// check if images exist
 	for (let prop of ['icon', 'awakenicon', 'sideicon']) {
 		if (importdata.images[prop]) {
-			if (!await isImageBlacklistAndExist(importdata.images[prop], true)) {
+			const existingUrl = dbimages ? dbimages[prop] : undefined;
+			if (!await isImageBlacklistAndExist(importdata.images[prop], true, existingUrl)) {
 				delete importdata.images[prop];
 			}
 		}
 	}
 }
 
-async function collateCharacter(existing, newdata, lang) {
-	newdata.images = {};
-	if(newdata.icon) {
-		let name = newdata.icon.slice(newdata.icon.lastIndexOf('_')+1);
-		newdata.images.nameicon = newdata.icon;
-		newdata.images.nameiconcard = `UI_AvatarIcon_${name}_Card`;
-		if(newdata.birthday) { // not player
-			newdata.images.namegachasplash = `UI_Gacha_AvatarImg_${name}`;
-			newdata.images.namegachaslice = `UI_Gacha_AvatarIcon_${name}`;
+async function collateCharacter(existing, newdata, lang, importconfig, skipimageredirect, dbimages) {
+	if (lang === 'English') {
+		newdata.images = {};
+		if(newdata.icon) {
+			let name = newdata.icon.slice(newdata.icon.lastIndexOf('_')+1);
+			newdata.images.nameicon = newdata.icon;
+			newdata.images.nameiconcard = `UI_AvatarIcon_${name}_Card`;
+			if(newdata.birthday) { // not player
+				newdata.images.namegachasplash = `UI_Gacha_AvatarImg_${name}`;
+				newdata.images.namegachaslice = `UI_Gacha_AvatarIcon_${name}`;
+			}
+			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
+			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.icon : undefined)) {
+				newdata.images.icon = mihoyoUrl;
+			}
 		}
-		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
-		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
-			newdata.images.icon = mihoyoUrl;
-		}
-	}
-	if(newdata.sideicon) {
-		newdata.images.namesideicon = newdata.sideicon;
-		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
-		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
-			newdata.images.sideicon = mihoyoUrl;
+		if(newdata.sideicon) {
+			newdata.images.namesideicon = newdata.sideicon;
+			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
+			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.sideicon : undefined)) {
+				newdata.images.sideicon = mihoyoUrl;
+			}
 		}
 	}
 
@@ -420,21 +424,23 @@ function collateTalent(existing, newdata, lang) {
 	existing.costs = newdata.costs;
 }
 
-async function collateWeapon(existing, inputdata) {
-	inputdata.images = {};
-	if(inputdata.icon) {
-		inputdata.images.nameicon = inputdata.icon;
-		inputdata.images.namegacha = `UI_Gacha_EquipIcon_${inputdata.icon.slice(inputdata.icon.indexOf("UI_EquipIcon")+13)}`;
-		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
-		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
-			inputdata.images.icon = mihoyoUrl;
+async function collateWeapon(existing, inputdata, lang, importConfig, skipimageredirect, dbimages) {
+	if (lang === 'English') {
+		inputdata.images = {};
+		if(inputdata.icon) {
+			inputdata.images.nameicon = inputdata.icon;
+			inputdata.images.namegacha = `UI_Gacha_EquipIcon_${inputdata.icon.slice(inputdata.icon.indexOf("UI_EquipIcon")+13)}`;
+			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
+			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.icon : undefined)) {
+				inputdata.images.icon = mihoyoUrl;
+			}
 		}
-	}
-	if(inputdata.awakenicon) {
-		inputdata.images.nameawakenicon = inputdata.awakenicon;
-		let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
-		if (await isImageBlacklistAndExist(mihoyoUrl, true)) {
-			inputdata.images.awakenicon = mihoyoUrl;
+		if(inputdata.awakenicon) {
+			inputdata.images.nameawakenicon = inputdata.awakenicon;
+			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
+			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.awakenicon : undefined)) {
+				inputdata.images.awakenicon = mihoyoUrl;
+			}
 		}
 	}
 
@@ -506,11 +512,11 @@ async function collateMaterial(existing, newdata, lang, importconfig, skipimager
 	}
 }
 
-function collateData(dbdata, importdata, langC, importconfig) {
+function collateData(dbdata, importdata, langC, importconfig, dbimages) {
 	clearObject(dbdata);
 	copyPropsIfExist(importdata, dbdata, importconfig.props);
 	if (langC === 'EN' && importconfig.images) {
-		copyImagesProps(importdata, importconfig);
+		copyImagesProps(importdata, importconfig, dbimages);
 	}
 }
 
@@ -595,9 +601,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 
 			let before = JSON.stringify(dbdata);
 			if (collateFunc)
-				await collateFunc(dbdata, importdata, language.languageMap[langC], importconfig[folder], skipimageredirect);
+				await collateFunc(dbdata, importdata, language.languageMap[langC], importconfig[folder], skipimageredirect, dbimages ? dbimages[filename] : undefined);
 			else
-				await collateData(dbdata, importdata, langC, importconfig[folder])
+				await collateData(dbdata, importdata, langC, importconfig[folder], dbimages[filename])
 			if(dbimages) { 
 				if(dbimages[filename] === undefined) dbimages[filename] = {};
 				Object.assign(dbimages[filename], importdata.images);
@@ -633,7 +639,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 	});
 }
 
-checkExistingImageBlacklist = false; // 
+checkExistingImageBlacklist = true; // 
 gameVersion = "3.2"; // new data will use this as added version
 importData('characters', collateCharacter);
 // importCurve('characters');
