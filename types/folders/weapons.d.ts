@@ -6,6 +6,7 @@ declare module "genshin-db" {
 	    description: string;
 	    weapontype: string;
 	    rarity: '1' | '2' | '3' | '4' | '5';
+	    story: string; // empty string if no story
 	    baseatk: number;
 	    substat: string;
 	    subvalue: string;

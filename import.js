@@ -455,6 +455,7 @@ async function collateWeapon(existing, inputdata, lang, importConfig, skipimager
 	existing.description = inputdata.description;
 	existing.weapontype = inputdata.weapontype;
 	existing.rarity = inputdata.rarity;
+	existing.story = inputdata.story;
 	existing.baseatk = Math.round(inputdata.baseatk);
 	existing.substat = (inputdata.substat || '').toString();
 	existing.subvalue = '';
@@ -489,6 +490,7 @@ function collateArtifact(existing, newdata) {
 		existing[type].name = newdata[type].name;
 		existing[type].relictype = newdata[type].relictype;
 		existing[type].description = newdata[type].description;
+		existing[type].story = newdata[type].story;
 		//existing[type].icon = newdata[type].icon;
 	})
 }

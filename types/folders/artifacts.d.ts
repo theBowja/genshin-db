@@ -32,6 +32,7 @@ declare module "genshin-db" {
         name: string;
         relictype: string; // for different languages
         description: string;
+        story: string;
     }
 }
 

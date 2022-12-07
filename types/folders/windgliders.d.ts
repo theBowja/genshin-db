@@ -3,6 +3,7 @@ declare module "genshin-db" {
 	    name: string;
 	    description: string;
 	    rarity: '4';
+	    story: string;
 	    sortorder: number;
 	    ishidden?: true;
 	    source: string[];
