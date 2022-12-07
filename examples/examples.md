@@ -32,26 +32,27 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',           'Albedo',       'Aloy',
-  'Amber',            'Arataki Itto', 'Barbara',
-  'Beidou',           'Bennett',      'Candace',
-  'Chongyun',         'Collei',       'Cyno',
-  'Diluc',            'Diona',        'Dori',
-  'Eula',             'Fischl',       'Ganyu',
-  'Gorou',            'Hu Tao',       'Jean',
-  'Kaedehara Kazuha', 'Kaeya',        'Kamisato Ayaka',
-  'Kamisato Ayato',   'Keqing',       'Klee',
-  'Kujou Sara',       'Kuki Shinobu', 'Layla',
-  'Lisa',             'Lumine',       'Mona',
-  'Nahida',           'Nilou',        'Ningguang',
-  'Noelle',           'Qiqi',         'Raiden Shogun',
-  'Razor',            'Rosaria',      'Sangonomiya Kokomi',
-  'Sayu',             'Shenhe',       'Shikanoin Heizou',
-  'Sucrose',          'Tartaglia',    'Thoma',
-  'Tighnari',         'Venti',        'Xiangling',
-  'Xiao',             'Xingqiu',      'Xinyan',
-  'Yae Miko',         'Yanfei',       'Yelan',
-  'Yoimiya',          'Yun Jin',      'Zhongli'
+  'Aether',             'Albedo',           'Aloy',
+  'Amber',              'Arataki Itto',     'Barbara',
+  'Beidou',             'Bennett',          'Candace',
+  'Chongyun',           'Collei',           'Cyno',
+  'Diluc',              'Diona',            'Dori',
+  'Eula',               'Faruzan',          'Fischl',
+  'Ganyu',              'Gorou',            'Hu Tao',
+  'Jean',               'Kaedehara Kazuha', 'Kaeya',
+  'Kamisato Ayaka',     'Kamisato Ayato',   'Keqing',
+  'Klee',               'Kujou Sara',       'Kuki Shinobu',
+  'Layla',              'Lisa',             'Lumine',
+  'Mona',               'Nahida',           'Nilou',
+  'Ningguang',          'Noelle',           'Qiqi',
+  'Raiden Shogun',      'Razor',            'Rosaria',
+  'Sangonomiya Kokomi', 'Sayu',             'Shenhe',
+  'Shikanoin Heizou',   'Sucrose',          'Tartaglia',
+  'Thoma',              'Tighnari',         'Venti',
+  'Wanderer',           'Xiangling',        'Xiao',
+  'Xingqiu',            'Xinyan',           'Yae Miko',
+  'Yanfei',             'Yelan',            'Yoimiya',
+  'Yun Jin',            'Zhongli'
 ]
 ```
 
@@ -726,27 +727,28 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',             'Aloy',               'Amber',
-  'Arataki Itto',       'Barbara',            'Beidou',
-  'Bennett',            'Candace',            'Chongyun',
-  'Collei',             'Cyno',               'Diluc',
-  'Diona',              'Dori',               'Eula',
-  'Fischl',             'Ganyu',              'Gorou',
-  'Hu Tao',             'Jean',               'Kaedehara Kazuha',
-  'Kaeya',              'Kamisato Ayaka',     'Kamisato Ayato',
-  'Keqing',             'Klee',               'Kujou Sara',
-  'Kuki Shinobu',       'Layla',              'Lisa',
-  'Mona',               'Nahida',             'Nilou',
-  'Ningguang',          'Noelle',             'Qiqi',
-  'Raiden Shogun',      'Razor',              'Rosaria',
-  'Sangonomiya Kokomi', 'Sayu',               'Shenhe',
-  'Shikanoin Heizou',   'Sucrose',            'Tartaglia',
-  'Thoma',              'Tighnari',           'Traveler (Anemo)',
-  'Traveler (Dendro)',  'Traveler (Electro)', 'Traveler (Geo)',
-  'Venti',              'Xiangling',          'Xiao',
-  'Xingqiu',            'Xinyan',             'Yae Miko',
-  'Yanfei',             'Yelan',              'Yoimiya',
-  'Yun Jin',            'Zhongli'
+  'Albedo',           'Aloy',               'Amber',
+  'Arataki Itto',     'Barbara',            'Beidou',
+  'Bennett',          'Candace',            'Chongyun',
+  'Collei',           'Cyno',               'Diluc',
+  'Diona',            'Dori',               'Eula',
+  'Faruzan',          'Fischl',             'Ganyu',
+  'Gorou',            'Hu Tao',             'Jean',
+  'Kaedehara Kazuha', 'Kaeya',              'Kamisato Ayaka',
+  'Kamisato Ayato',   'Keqing',             'Klee',
+  'Kujou Sara',       'Kuki Shinobu',       'Layla',
+  'Lisa',             'Mona',               'Nahida',
+  'Nilou',            'Ningguang',          'Noelle',
+  'Qiqi',             'Raiden Shogun',      'Razor',
+  'Rosaria',          'Sangonomiya Kokomi', 'Sayu',
+  'Shenhe',           'Shikanoin Heizou',   'Sucrose',
+  'Tartaglia',        'Thoma',              'Tighnari',
+  'Traveler (Anemo)', 'Traveler (Dendro)',  'Traveler (Electro)',
+  'Traveler (Geo)',   'Venti',              'Wanderer',
+  'Xiangling',        'Xiao',               'Xingqiu',
+  'Xinyan',           'Yae Miko',           'Yanfei',
+  'Yelan',            'Yoimiya',            'Yun Jin',
+  'Zhongli'
 ]
 ```
 
@@ -1670,7 +1672,7 @@ const genshindb = require('genshin-db');
   'Royal Bow',
   'Royal Greatsword',
   'Royal Grimoire',
-  ... 51 more items
+  ... 53 more items
 ]
 ```
 
@@ -1734,12 +1736,11 @@ const genshindb = require('genshin-db');
     ]
   },
   images: {
-    image: 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png',
-    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
-    awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png',
     nameicon: 'UI_EquipIcon_Catalyst_Fourwinds',
     namegacha: 'UI_Gacha_EquipIcon_Catalyst_Fourwinds',
-    nameawakenicon: 'UI_EquipIcon_Catalyst_Fourwinds_Awaken'
+    icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png',
+    nameawakenicon: 'UI_EquipIcon_Catalyst_Fourwinds_Awaken',
+    awakenicon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds_Awaken.png'
   },
   url: {
     fandom: 'https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds'
@@ -1924,7 +1925,7 @@ const genshindb = require('genshin-db');
   description: 'Talent Level-Up material.\n' +
     'Poetry is the soul of the land of the wind.\n' +
     'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
-  sortorder: 1896,
+  sortorder: 2225,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Talent Level-Up Material',
@@ -2046,7 +2047,7 @@ const genshindb = require('genshin-db');
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
     'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
     'His enemies are the thousands who stand against the wind.',
-  sortorder: 1817,
+  sortorder: 2146,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -2069,7 +2070,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
-  sortorder: 1561,
+  sortorder: 1890,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
@@ -2126,23 +2127,23 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Ajilenakh Nut',  'Almond',         'Bacon',
-  'Bamboo Shoot',   'Berry',          'Bird Egg',
-  'Butter',         'Cabbage',        'Carrot',
-  'Cheese',         'Chilled Meat',   'Crab',
-  'Crab Roe',       'Cream',          'Dried Fish',
-  'Fish',           'Flour',          'Fowl',
-  'Glabrous Beans', 'Ham',            'Harra Fruit',
-  'Jam',            'Lavender Melon', 'Lotus Head',
-  'Matsutake',      'Milk',           'Mint',
-  'Mushroom',       'Onion',          'Pepper',
-  'Pinecone',       'Potato',         'Radish',
-  'Raw Meat',       'Rice',           'Salt',
-  'Sausage',        'Seagrass',       'Shrimp Meat',
-  'Silver Lotus',   'Smoked Fish',    'Smoked Fowl',
-  'Snapdragon',     'Spice',          'Sugar',
-  'Sumeru Rose',    'Sweet Flower',   'Tofu',
-  'Tomato',         'Unagi Meat',     'Wheat',
+  'Ajilenakh Nut', 'Almond',         'Bacon',
+  'Bamboo Shoot',  'Berry',          'Bird Egg',
+  'Butter',        'Cabbage',        'Carrot',
+  'Cheese',        'Chilled Meat',   'Crab',
+  'Crab Roe',      'Cream',          'Dried Fish',
+  'Eel Meat',      'Fish',           'Flour',
+  'Fowl',          'Glabrous Beans', 'Ham',
+  'Harra Fruit',   'Jam',            'Lavender Melon',
+  'Lotus Head',    'Matsutake',      'Milk',
+  'Mint',          'Mushroom',       'Onion',
+  'Pepper',        'Pinecone',       'Potato',
+  'Radish',        'Raw Meat',       'Rice',
+  'Salt',          'Sausage',        'Seagrass',
+  'Shrimp Meat',   'Silver Lotus',   'Smoked Fish',
+  'Smoked Fowl',   'Snapdragon',     'Spice',
+  'Sugar',         'Sumeru Rose',    'Sweet Flower',
+  'Tofu',          'Tomato',         'Wheat',
   'Zaytun Peach'
 ]
 ```
@@ -2230,8 +2231,10 @@ const genshindb = require('genshin-db');
   'Bloodstained Chivalry',
   'Crimson Witch of Flames',
   'Deepwood Memories',
+  'Desert Pavilion Chronicle',
   'Echoes of an Offering',
   'Emblem of Severed Fate',
+  'Flower of Paradise Lost',
   'Gilded Dreams',
   "Gladiator's Finale",
   'Heart of Depth',
@@ -2353,6 +2356,7 @@ const genshindb = require('genshin-db');
   'Rice Cake Soup',
   'Sakura Shrimp Crackers',
   'Sakura Tempura',
+  'Shimi Chazuke',
   'Stir-Fried Shrimp',
   'Stormcrest Pie',
   'Sunshine Sprat',
@@ -2519,6 +2523,10 @@ const genshindb = require('genshin-db');
 
 ```js
 [
+  'Domain of Blessing: Desert Citadel I',
+  'Domain of Blessing: Desert Citadel II',
+  'Domain of Blessing: Desert Citadel III',
+  'Domain of Blessing: Desert Citadel IV',
   'Domain of Blessing: Elegiac Rime I',
   'Domain of Blessing: Elegiac Rime II',
   'Domain of Blessing: Elegiac Rime III',
@@ -2545,6 +2553,10 @@ const genshindb = require('genshin-db');
   'Domain of Blessing: Dance of Steel III',
   'Domain of Blessing: Dance of Steel IV',
   'Domain of Blessing: Dance of Steel V',
+  'Domain of Blessing: Desert Citadel I',
+  'Domain of Blessing: Desert Citadel II',
+  'Domain of Blessing: Desert Citadel III',
+  'Domain of Blessing: Desert Citadel IV',
   'Domain of Blessing: Elegiac Rime I',
   'Domain of Blessing: Elegiac Rime II',
   'Domain of Blessing: Elegiac Rime III',
@@ -2696,6 +2708,7 @@ const genshindb = require('genshin-db');
   'Geo Hypostasis',
   'Golden Wolflord',
   'Hydro Hypostasis',
+  'Jadeplume Terrorshroom',
   'La Signora',
   'Lupus Boreas, Dominator of Wolves',
   'Magatsu Mitake Narukami no Mikoto',
@@ -2826,7 +2839,7 @@ const genshindb = require('genshin-db');
   'Gray Snow Cat',      'Graywing Pigeon',     'Green Horned Lizard',
   'Kitsune',            'Lucklight Fly',       'Marrow Lizard',
   'Masked Weasel',      'Mud Frog',            'Ocean Crab',
-  'Pale Red Crab',      'Quicksand Unagi',     'Red-Finned Unagi',
+  'Pale Red Crab',      'Quicksand Eel',       'Red-Finned Unagi',
   'Red Horned Lizard',  'Red Tailed Lizard',   'Red-Tailed Weasel',
   'Sacred Ibis',        'Sapphire',            'Scarab',
   'Shroomboar',         'Snowboar',            'Snow Finch',
@@ -2925,7 +2938,7 @@ const genshindb = require('genshin-db');
 {
   name: '20',
   exp: 2825,
-  unlockdescription: 'World Level increased to Lv. 1. Monster and Boss levels increased. Reward drops upgraded\n' +
+  unlockdescription: 'World Level increased to Lv. 1;Monster and Boss levels increased;Reward drops upgraded\n' +
     'Max Adventure Rank increased to 25',
   reward: [
     { name: 'Primogem', count: 75, type: 'MATERIAL' },
