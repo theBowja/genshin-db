@@ -1,0 +1,204 @@
+{
+	"name": "Wanderer",
+	"combat1": {
+		"name": "Normal Attack: Yuuban Meigen",
+		"info": "**Normal Attack**\nMelancarkan hingga 3 serangan dengan Wind Blade yang mengakibatkan Anemo DMG.\n\n**Charged Attack**\nMengonsumsi sejumlah Stamina untuk mengumpulkan arus angin bertekanan tinggi di hadapan dan mengakibatkan Anemo DMG Area setelah jeda singkat.\n\n**Plunging Attack**\nMengumpulkan kekuatan Anemo dan menerjang tanah, menyerang musuh di jalur terjangan dan mengakibatkan Anemo DMG area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}+{param4:F1P}",
+				"DMG Charged Attack|{param5:F1P}",
+				"Konsumsi Stamina Charged Attack|{param6:F1}",
+				"DMG Selama Plunging|{param7:F1P}",
+				"DMG Plunging Attack Min./Maks.|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Hanega: Song of the Wind",
+		"info": "Mengumpulkan kekuatan angin dan memanfaatkannya untuk terlepas dari cengkeraman tanah, mengakibatkan Anemo DMG di sekitarnya, melompat ke udara, dan memasuki status Windfavored.\n\n**Windfavored**\nSaat berada dalam status ini, Wanderer tidak akan bisa melancarkan Plunging Attack. Normal Attack dan Charged Attack akan berubah menjadi Kuugo: Fushoudan dan Kuugo: Toufukai, meningkatkan DMG dan efek serangan area yang diakibatkan, DMG yang diakibatkan akan dianggap sebagai DMG Normal Attack dan DMG Charged Attack untuk masing-masingnya. Melancarkan Kuugo: Toufukai, tidak akan lagi mengonsumsi Stamina.\nSaat berada dalam status ini, Wanderer akan terus-menerus melayang di udara. Pada saat ini, gerakan Wanderer akan memiliki karakteristik sebagai berikut:\n·Akan terus-menerus mengonsumsi Kuugoryoku Point dan mempertahankan status melayang;\n·Saat berlari, akan mengonsumsi Kuugoryoku Point tambahan untuk akselerasi di udara; Pada saat menahan tombol berlari, akan terus-menerus mengonsumsi Kuugoryoku Point untuk mempertahankan kecepatan pergerakannya. Efek ini akan menggantikan mode Berlari bawaannya;\n·Saat melompat, akan mengonsumsi Kuugoryoku Point tambahan untuk meningkatkan ketinggian posisi melayang. Pada saat menahan tombol melompat, akan terus-menerus mengonsumsi Kuugoryoku Point untuk terus meningkatkan ketinggiannya.\n\nStatus akan berakhir setelah Kuugoryoku Point habis dikonsumsi.\nStatus Windfavored akan berakhir jika dilancarkan lagi selama durasinya masih aktif.",
+		"description": "\"Dunia menari dalam pusaran tanpa beban, mengungkapkan rahasia yang hanya dapat ditemukan di dalam bunga.\"",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"DMG Kuugo: Fushoudan|{param2:F1P} DMG Normal Attack",
+				"DMG Kuugo: Toufukai|{param3:F1P} DMG Charged Attack",
+				"Initial Kuugoryoku Point|{param4:I}",
+				"Cooldown|{param5:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kyougen: Five Ceremonial Plays",
+		"info": "Mengkompresi atmosfer di sekitar dan merubahnya menjadi sebuah lubang yang bisa memusnahkan seluruh kegelisahan, mengakibatkan beberapa kali Anemo DMG Area.\nSaat Karakter berada dalam status Windfavored dari skill \"Hanega: Song of the Wind\", status Windfavored akan berakhir setelah dilancarkan.",
+		"description": "\"Jadilah terang tatapan langit yang sempit, mengarahkan pandangannya pada mimpi, baik dulu dan sekarang, seperti pancaran cahaya yang menyapu debu di atas angin.\"",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}x5",
+				"Cooldown|{param2:F1} dtk",
+				"Konsumsi Energy|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Jade-Claimed Flower",
+		"info": "Saat **Hanega: Song of the Wind** dilancarkan dan berinteraksi dengan Hydro/Pyro/Cryo/Electro, akan memperoleh efek peningkatan untuk status Windfavored kali ini:\n·Hydro: Batas maksimum Kuugoryoku Point meningkat 20 poin;\n·Pyro: ATK meningkat 30%;\n·Cryo: CRIT Rate meningkat 20%;\n·Electro: Setelah Normal Attack dan Charged Attack mengenai musuh, akan memulihkan 0,8 poin Energy, Energy yang bisa dipulihkan dengan cara ini maksimum adalah setiap 0,2 detik sekali.\n\nKamu bisa mendapatkan 2 jenis dari buff ini di saat yang bersamaan."
+	},
+	"passive2": {
+		"name": "Gales of Reverie",
+		"info": "Saat berada dalam status **Windfavored**, saat Kuugo: Fushoudan atau Kuugo: Toufukai Wanderer mengenai musuh, memiliki 16% kesempatan untuk mendapatkan efek Descent: Saat Wanderer melakukan akselerasi di udara dalam status Windfavored kali ini, efek ini akan hilang, namun akselerasi kali ini tidak akan mengonsumsi Kuugoryoku Point dan akan menembakkan 4 buah panah angin, masing-masingnya akan mengakibatkan Anemo DMG sebesar 35% ATK.\nSaat Kuugo: Fushoudan atau Kuugo: Toufukai tidak menghasilkan efek Descent, kemungkinan efek untuk dihasilkan kali selanjutnya akan meningkat 12%; Perhitungan berhasil atau tidaknya efek ini terpicu akan dilakukan setiap 0,1 detik sekali."
+	},
+	"passive3": {
+		"name": "Strum the Swirling Winds",
+		"info": "Mora yang terkonsumsi untuk melakukan Ascend Senjata Bow dan Catalyst berkurang 50%."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Praxis",
+				"count": 3
+			},
+			{
+				"name": "Old Handguard",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 2
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 4
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 6
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 9
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 4
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 4
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 6
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 6
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 12
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 9
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 16
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 12
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

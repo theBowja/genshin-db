@@ -1,0 +1,204 @@
+{
+	"name": "Kẻ Lang Thang",
+	"combat1": {
+		"name": "Tấn Công Thường - Cung Đàn Lay Chiến Kỳ",
+		"info": "**Tấn Công Thường**\nDùng kiếm gió tấn công 3 lần, gây Sát Thương Nguyên Tố Phong.\n\n**Trọng Kích**\nTiêu hao thể lực nhất định, sau khi tụ lực, tạo ra luồng gió áp suất cao ở phía trước, gây Sát Thương Phạm Vi Nguyên Tố Phong.\n\n**Tấn Công Khi Đáp**\nNgưng tụ sức mạnh nguyên tố Phong, từ trên trời tấn công xuống mặt đất, tấn công kẻ địch trên đường, gây Sát Thương Phạm Vi Nguyên Tố Phong khi chạm đất.",
+		"attributes": {
+			"labels": [
+				"Sát Thương Lần 1|{param1:F1P}",
+				"Sát Thương Lần 2|{param2:F1P}",
+				"Sát Thương Lần 3|{param3:F1P}+{param4:F1P}",
+				"Sát Thương Trọng Kích|{param5:F1P}",
+				"Thể Lực Trọng Kích Tiêu Hao|{param6:F1} điểm",
+				"Sát Thương Khi Rơi|{param7:F1P}",
+				"Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Hanega - Hùng Ca Gió Thoảng",
+		"info": "Ngưng tụ sức mạnh, thoát ly sức ảnh hưởng của trọng lực, gây Sát Thương Nguyên Tố Phong cho xung quanh và bay lên, tiến vào trạng thái \"Tựa Gió Bay Cao\".\n\n**Tựa Gió Bay Cao**\nKẻ Lang Thang trong trạng thái này sẽ không thể tấn công khi đáp. Khi tiến hành tấn công thường và trọng kích sẽ chuyển hóa thành Ngự Không - Bất Sinh Đoạn và Ngự Không - Phong Nhẫn Giới, tăng sát thương và phạm vi ảnh hưởng, sát thương lần lượt được tính thành sát thương tấn công thường và sát thương trọng kích. Khi thi triển Ngự Không - Phong Nhẫn Giới sẽ không tiêu hao thể lực.\nKẻ Lang Thang trong trạng thái này sẽ liên tục lơ lửng trên không trung và hành động sẽ mang những đặc tính sau:\n·Liên tục tiêu hao \"Ngự Không Lực\" để duy trì trạng thái bay cao;\n·Khi xung kích, sẽ tiêu hao thêm Ngự Không Lực để tăng tốc trên không; Khi nhấn giữ xung kích, sẽ liên tục tiêu hao Ngự Không Lực để duy trì di chuyển nhanh. Hiệu quả này sẽ thay thế xung kích;\n·Khi nhảy sẽ tiêu hao thêm Ngự Không Lực để bay cao hơn; Khi nhấn giữ nhảy sẽ liên tục tiêu hao Ngự Không Lực để liên tục bay cao hơn.\n\nNgự Không Lực khi tiêu hao hết sẽ kết thúc trạng thái này.\nKhi kích hoạt lần nữa Tựa Gió Bay Cao trong thời gian duy trì sẽ kết thúc trạng thái này.",
+		"description": "\"Thế gian vốn quay cuồng, bí mật giấu trong hoa.\"",
+		"attributes": {
+			"labels": [
+				"Sát Thương Kỹ Năng|{param1:F1P}",
+				"Sát Thương Ngự Không - Bất Sinh Đoạn|{param2:F1P} sát thương tấn công thường",
+				"Sát Thương Ngự Không - Phong Nhẫn Giới|{param3:F1P} sát thương trọng kích",
+				"Ngự Không Lực Ban Đầu|{param4:I} điểm",
+				"CD|{param5:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kyougen - Thức Lạc Ngũ Phiên",
+		"info": "Nén khí và tạo ra hố đen nghiền nát tất cả phiền não, gây nhiều lần Sát Thương Phạm Vi Nguyên Tố Phong.\nSau khi thi triển ở trong trạng thái Tựa Gió Bay Cao của Kỹ Năng Nguyên Tố \"Hanega - Hùng Ca Gió Thoảng\", sẽ kết thúc trạng thái Tựa Gió Bay Cao.",
+		"description": "\"Trời âm u rồi sẽ rạng, quá khứ hôm nay như bụi trần, chôn vùi trong gió xưa.\"",
+		"attributes": {
+			"labels": [
+				"Sát Thương Kỹ Năng|{param1:F1P} x5",
+				"CD|{param2:F1}s",
+				"Năng Lượng Nguyên Tố|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Lượm Ngọc Được Hoa",
+		"info": "Khi thi triển **Hanega - Hùng Ca Gió Thoảng**, nếu tiếp xúc với Nguyên Tố Thủy/Nguyên Tố Hỏa/Nguyên Tố Băng/Nguyên Tố Lôi, sẽ căn cứ vào loại nguyên tố tiếp xúc để nhận được hiệu quả cường hóa tương ứng trong trạng thái Tựa Gió Bay Cao lần này:\n·Nguyên Tố Thủy: Giới hạn Ngự Không Lực tăng 20 điểm;\n·Nguyên Tố Hỏa: Tấn công tăng 30%;\n·Nguyên Tố Băng: Tỉ lệ bạo kích tăng 20%;\n·Nguyên Tố Lôi: Tấn công thường và trọng kích khi trúng kẻ địch sẽ hồi phục 0.8 điểm Năng Lượng Nguyên Tố, mỗi 0.2s tối đa hồi phục một lần bằng cách này.\n\nCùng lúc tối đa nhận được 2 loại hiệu quả cường hóa nguyên tố tương ứng."
+	},
+	"passive2": {
+		"name": "Gió Lốc Hão Huyền",
+		"info": "Trong trạng thái **Tựa Gió Bay Cao**, khi Ngự Không - Bất Sinh Đoạn hoặc Ngự Không - Phong Nhẫn Giới của Kẻ Lang Thang đánh trúng kẻ địch, có tỷ lệ 16% nhận được hiệu ứng \"Hạ Màn\": Khi Kẻ Lang Thang tăng tốc trên không trong trạng thái Tựa Gió Bay Cao lần này, sẽ xóa bỏ hiệu ứng Hạ Màn, khiến lần tăng tốc trên không này không tiêu hao Ngự Không Lực, đồng thời bắn ra 4 mũi tên gió, lần lượt gây Sát Thương Nguyên Tố Phong bằng 35% tấn công.\nKhi Ngự Không - Bất Sinh Đoạn và Ngự Không - Phong Nhẫn Giới chưa gây hiệu ứng Hạ Màn sẽ khiến tỉ lệ kích hoạt lần sau tăng 12%; Trong 0.1s tối đa phán đoán 1 lần xem có kích hoạt hiệu ứng Hạ Màn hay không."
+	},
+	"passive3": {
+		"name": "Cung Đàn Gió Xoáy",
+		"info": "Khi đột phá cung và pháp khí, lượng Mora tiêu hao giảm 50%."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Bài Giảng Của \"Thực Hành\"",
+				"count": 3
+			},
+			{
+				"name": "Kiếm Cách Cũ Nát",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Hướng Dẫn Của \"Thực Hành\"",
+				"count": 2
+			},
+			{
+				"name": "Kiếm Cách Bản Sao",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Hướng Dẫn Của \"Thực Hành\"",
+				"count": 4
+			},
+			{
+				"name": "Kiếm Cách Bản Sao",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Hướng Dẫn Của \"Thực Hành\"",
+				"count": 6
+			},
+			{
+				"name": "Kiếm Cách Bản Sao",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Hướng Dẫn Của \"Thực Hành\"",
+				"count": 9
+			},
+			{
+				"name": "Kiếm Cách Bản Sao",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Triết Học Của \"Thực Hành\"",
+				"count": 4
+			},
+			{
+				"name": "Kiếm Cách Trứ Danh",
+				"count": 4
+			},
+			{
+				"name": "Chuông Daka",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Triết Học Của \"Thực Hành\"",
+				"count": 6
+			},
+			{
+				"name": "Kiếm Cách Trứ Danh",
+				"count": 6
+			},
+			{
+				"name": "Chuông Daka",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Triết Học Của \"Thực Hành\"",
+				"count": 12
+			},
+			{
+				"name": "Kiếm Cách Trứ Danh",
+				"count": 9
+			},
+			{
+				"name": "Chuông Daka",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Triết Học Của \"Thực Hành\"",
+				"count": 16
+			},
+			{
+				"name": "Kiếm Cách Trứ Danh",
+				"count": 12
+			},
+			{
+				"name": "Chuông Daka",
+				"count": 2
+			},
+			{
+				"name": "Vương Miện Trí Thức",
+				"count": 1
+			}
+		]
+	}
+}

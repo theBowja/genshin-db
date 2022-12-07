@@ -1,0 +1,204 @@
+{
+	"name": "Nomade",
+	"combat1": {
+		"name": "Attaque normale : Battement flottant",
+		"info": "**Attaque normale**\nUtilise des lames de vent pour enchaîner jusqu'à 3 attaques qui infligent des DGT Anémo.\n\n**Attaque chargée**\nConsomme de l'endurance pour concentrer un champ à haute pression en avant et infliger des DGT Anémo de zone après un court délai.\n\n**Attaque plongeante**\nPlonge depuis les airs en concentrant ses pouvoirs Anémo, infligeant des DGT aux ennemis en chemin et des DGT Anémo de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT attaque chargée|{param5:F1P}",
+				"Coût d'endurance attaque chargée|{param6:F1} pts",
+				"DGT durant la chute|{param7:F1P}",
+				"DGT chute basse/élevée|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Hanega : Lyrisme des vents",
+		"info": "Concentre la puissance des vents pour déjouer les contraintes de la terre, infligeant des DGT Anémo dans la zone avant de bondir dans les airs pour entrer dans l'état Bienfait venteux.\n\n**Bienfait venteux**\nDans cet état, le Nomade ne peut pas effectuer d'attaques plongeantes, mais ses attaques normales et chargées sont respectivement converties en Kuugo : Fushoudan et Kuugo : Toufukai, dont les DGT et la zone d'effet augmentent, les DGT étant alors respectivement considérés comme des DGT d'attaque normale ou comme des DGT d'attaque chargée. De plus, Kuugo : Toufukai ne consomme pas d'endurance.\nDans cet état, le Nomade flotte de façon continue dans les airs et ses actions déclenchent les effets suivants :\n· Il consomme de façon continue du Kuugoryoku pour maintenir l'état de flottaison.\n· Son sprint consomme une quantité de Kuugoryoku supplémentaire pour qu'il puisse accélérer dans les airs. Maintenir le sprint consomme du Kuugoryoku de façon continue afin de maintenir la vitesse. Cet effet remplace le sprint.\n· Sauter consomme une quantité de Kuugoryoku supplémentaire pour augmenter la hauteur de flottaison. Maintenir le saut consomme du Kuugoryoku de façon continue afin de continuer à monter.\n\nL'état prend fin une fois le Kuugoryoku épuisé.\nUtiliser à nouveau la compétence pendant la durée de Bienfait venteux met fin à l'état.",
+		"description": "« Le monde danse dans un tourbillon d'apesanteur, présentant un secret qui ne peut être décelé que dans les fleurs. »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT Kuugo : Fushoudan|{param2:F1P} DGT d'attaque normale",
+				"DGT Kuugo : Toufukai|{param3:F1P} DGT d'attaque chargée",
+				"Kuugoryoku de départ|{param4:I} pts",
+				"Temps de recharge|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kyougen : Gobandate en cinq actes",
+		"info": "Compresse l'atmosphère en une faille capable de mettre fin à tous les soucis, infligeant plusieurs fois des DGT Anémo de zone.\nSi le personnage est dans l'état Bienfait venteux accordé par « Hanega : Lyrisme des vents », l'état prend fin après l'utilisation de cette compétence.",
+		"description": "« Brillant est le regard rétréci du ciel, jetant son regard sur les rêves passés et présents, comme l'éclat qui lave la poussière sous les vents. »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P} ×5",
+				"Temps de recharge|{param2:F1} s",
+				"Énergie élémentaire|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Fleur de jade",
+		"info": "Pendant **Hanega : Lyrisme des vents**, entrer au contact de l'élément Hydro/Pyro/Cryo/Électro permet à l'état Bienfait venteux qui en résulte d'obtenir un effet de renforcement selon l'élément concerné :\n· Hydro : la limite de Kuugoryoku augmente de 20 pts.\n· Pyro : l'ATQ augmente de 30 %.\n· Cryo : le taux CRIT augmente de 20 %.\n· Électro : les attaques normales et chargées restaurent 0,8 pt d'énergie élémentaire après avoir touché un ennemi. L'énergie élémentaire peut être restaurée une fois toutes les 0,2 s de cette manière.\n\nUn maximum de 2 types différents de ces effets de renforcement peut être obtenu simultanément."
+	},
+	"passive2": {
+		"name": "Rafales de rêverie",
+		"info": "Lorsque le Nomade touche un ennemi avec Kuugo : Fushoudan ou Kuugo : Toufukai pendant l'état **Bienfait venteux**, il a 16 % de chances d'obtenir l'effet Descente : la prochaine fois qu'il accélère dans les airs pendant cet état de Bienfait venteux, l'effet est annulé, l'accélération ne consomme aucun pt de Kuugoryoku et il tire 4 flèches de vent qui infligent chacune des DGT Anémo d'une valeur équivalant à 35 % de son ATQ.\nSi Kuugo : Fushoudan ou Kuugo : Toufukai ne déclenche pas l'effet Descente, les chances de le déclencher la fois suivante passent à 12 %. Le calcul du déclenchement de l'effet se fait une fois toutes les 0,1 s maximum."
+	},
+	"passive3": {
+		"name": "Accord des vents tourbillonnants",
+		"info": "Les moras utilisés lors de l'élévation de catalyseurs et d'arcs sont réduits de 50 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Usage",
+				"count": 3
+			},
+			{
+				"name": "Garde-main ancien",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 2
+			},
+			{
+				"name": "Garde-main kageuchi",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 4
+			},
+			{
+				"name": "Garde-main kageuchi",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 6
+			},
+			{
+				"name": "Garde-main kageuchi",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 9
+			},
+			{
+				"name": "Garde-main kageuchi",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 4
+			},
+			{
+				"name": "Garde-main célèbre",
+				"count": 4
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 6
+			},
+			{
+				"name": "Garde-main célèbre",
+				"count": 6
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 12
+			},
+			{
+				"name": "Garde-main célèbre",
+				"count": 9
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 16
+			},
+			{
+				"name": "Garde-main célèbre",
+				"count": 12
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

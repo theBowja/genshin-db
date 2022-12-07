@@ -1,0 +1,204 @@
+{
+	"name": "Wanderer",
+	"combat1": {
+		"name": "Normal Attack: Yuuban Meigen",
+		"info": "**Normal Attack**\nPerforms up to 3 attacks using wind blades, dealing Anemo DMG.\n\n**Charged Attack**\nConsumes a certain amount of Stamina, gathers a build up of high wind pressure, and deals AoE Anemo DMG after a short casting time.\n\n**Plunging Attack**\nCalling upon the power of Anemo, the Wanderer plunges towards the ground from mid-air, damaging all opponents in his path. Deals AoE Anemo DMG upon impact with the ground.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}+{param4:F1P}",
+				"Charged Attack DMG|{param5:F1P}",
+				"Charged Attack Stamina Cost|{param6:F1}",
+				"Plunge DMG|{param7:F1P}",
+				"Low/High Plunge DMG|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Hanega: Song of the Wind",
+		"info": "Concentrates the power of the winds to break free from the shackles of the earth, dealing AoE Anemo DMG before leaping into the air and entering the Windfavored state.\n\n**Windfavored**\nThe Wanderer cannot perform Plunging Attacks in this state. When he uses Normal and Charged Attacks, they will be converted into Kuugo: Fushoudan and Kuugo: Toufukai respectively; the DMG they deal and their AoE will be increased, and their DMG will be considered Normal and Charged Attack DMG respectively. Kuugo: Toufukai will not consume Stamina.\nThe Wanderer will hover persistently during this time. While this state is active, the Wanderer's movements gain the following properties:\n·Persistently consumes Kuugoryoku Points to maintain this hovering state.\n·When sprinting, additional Kuugoryoku Points will be consumed for the Wanderer to accelerate mid-air. Holding sprint will cause persistent Kuugoryoku Point consumption to maintain speed. This effect will replace his default sprint.\n·Jumping expends extra Kuugoryoku Points to increase hovering height. Holding jump will cause persistent Kuugoryoku Point consumption to keep increasing hovering height.\n\nRunning out of Kuugoryoku Points will end the Windfavored state.\nA second cast during the duration of Windfavored will also end it.",
+		"description": "\"The world dances in a weightless whirl, presenting a secret that can only be found in the flowers.\"",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:F1P}",
+				"Kuugo: Fushoudan DMG|{param2:F1P} Normal Attack DMG",
+				"Kuugo: Toufukai DMG|{param3:F1P} Charged Attack DMG",
+				"Initial Kuugoryoku Points|{param4:I}",
+				"CD|{param5:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kyougen: Five Ceremonial Plays",
+		"info": "Compresses the atmosphere into a singular vacuum that grinds all troubles away, dealing multiple instances of AoE Anemo DMG.\nIf the character is in the Windfavored state due to the skill \"Hanega: Song of the Wind,\" Windfavored state will end after casting.",
+		"description": "\"Bright be the narrowed gaze of the sky, casting its sight on dreams both past and present, like radiance washing over dust on the winds.\"",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:F1P}×5",
+				"CD|{param2:F1}s",
+				"Energy Cost|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Jade-Claimed Flower",
+		"info": "If **Hanega: Song of the Wind** comes into contact with Hydro/Pyro/Cryo/Electro when it is unleashed, this instance of the Windfavored state will obtain buffs according to the contacted element(s):\n·Hydro: Kuugoryoku Point cap increases by 20.\n·Pyro: ATK increases by 30%.\n·Cryo: CRIT Rate increases by 20%.\n·Electro: When Normal and Charged Attacks hit an opponent, 0.8 Energy will be restored. Energy can be restored this way once every 0.2s.\n\nYou can have up to 2 different kinds of these buffs simultaneously."
+	},
+	"passive2": {
+		"name": "Gales of Reverie",
+		"info": "When the Wanderer hits opponents with Kuugo: Fushoudan or Kuugo: Toufukai in his **Windfavored** state, he has a 16% chance to obtain the Descent effect: The next time the Wanderer accelerates in mid-air while in this instance of the Windfavored state, this effect will be removed, this acceleration instance will not consume any Kuugoryoku Points, and he will fire off 4 wind arrows that deal 35% of his ATK as Anemo DMG each.\nFor each Kuugo: Fushoudan and Kuugo: Toufukai that does not produce this effect, the next attack of those types will have a 12% increased chance of producing it. The calculation of the effect production is done once every 0.1s."
+	},
+	"passive3": {
+		"name": "Strum the Swirling Winds",
+		"info": "Mora expended when ascending Bows and Catalysts is decreased by 50%."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Praxis",
+				"count": 3
+			},
+			{
+				"name": "Old Handguard",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 2
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 4
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 6
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 9
+			},
+			{
+				"name": "Kageuchi Handguard",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 4
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 4
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 6
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 6
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 12
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 9
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 16
+			},
+			{
+				"name": "Famed Handguard",
+				"count": 12
+			},
+			{
+				"name": "Daka's Bell",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

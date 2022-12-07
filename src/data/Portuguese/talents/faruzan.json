@@ -1,0 +1,209 @@
+{
+	"name": "Faruzan",
+	"combat1": {
+		"name": "Ataque Normal: Disparo com Reviravoltas",
+		"info": "**Ataque Normal**\nRealiza até 4 disparos consecutivos com um arco.\n\n**Ataque Carregado**\nRealiza um **Disparo com Mira **mais preciso e com Dano aumentado.\nAo mirar, ventos fortes se acumularão na ponta da flecha. Uma flecha completamente carregada com ventos fortes irá infligir Dano Anemo.\n\n**Ataque Imersivo**\nDispara uma chuva de flechas no ar que atingirão o solo rapidamente, alcançando os inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano do 4° Golpe|{param4:F1P}",
+				"Disparo com Mira|{param5:F1P}",
+				"Disparo com Mira com Energização Completa|{param6:P}",
+				"Dano Durante a Queda|{param7:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Reino do Vento de Nasamjnin",
+		"info": "Faruzan lança um poliedro que inflige Dano Anemo em AdE contra os inimigos próximos e obtém o efeito \"Aparição Tempestuosa\".\nEnquanto estiver no estado \"Aparição Tempestuosa\", o próximo disparo com mira totalmente carregado de Faruza consumirá o efeito \"Aparição Tempestuosa\" para disparar uma \"Flecha do Furacão Intenso\" que contém um vórtice de alta pressão. Esse disparo infligirá Dano Anemo baseado no Dano de Disparo com Mira totalmente carregado de \"Ataque Normal: Disparo com Reviravoltas\".\n\n**Armadilha da Ventania**\nA Flecha do Furacão Intenso desencadeará o efeito \"Armadilha da Ventania\" na posição, inimigo ou personagem que atingir. Esse efeito será removido após um breve intervalo de tempo, gerando um vórtice Anemo que inflige Dano Anemo em AdE e atrai os inimigos e objetos próximos. Se não atingir inimigos ou personagens, uma Armadilha da Ventania será gerada na posição atingida.\nO Dano do vórtice Anemo é considerado Dano de Habilidade Elemental.",
+		"description": "Os ventos da verdade sopram os espíritos daqueles que buscam a veracidade, dispersando o miasma do preconceito.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Dano da Armadilha da Ventania|{param2:F1P}",
+				"Duração da Aparição Tempestuosa|{param4:F1}s",
+				"Tempo de Recarga|{param5:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Caminhos Secretos do Vento",
+		"info": "Faruzan rapidamente envia seu Poliedro Fantástico, lançando uma Onda Anemo Feroz que causa Dano Anemo em AdE.\nEnquanto existir, o Poliedro Fantástico se moverá em uma trajetória triangular. Quando alcançar cada vértice desse triângulo, lançará uma \"Onda Anemo Feroz\".\n\n**Onda Anemo Feroz**\n· Quando a Onda Anemo Feroz é lançada, marcará os inimigos ao redor com o efeito \"Calamidade da Ventania\", reduzindo sua RES Anemo;\n· Quando a Onda Anemo Feroz é lançada, aplicará o efeito \"Bênção da Ventania\" em todos os membros próximos da equipe, concedendo Bônus de Dano Anemo.",
+		"description": "É necessário respeitar a sabedoria desconhecida que pode ser encontrada em ruínas antigas.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Bônus de Dano Anemo|{param2:F1P}",
+				"Duração da Bênção da Ventania|{param3:F1}s",
+				"Diminuição de RES Anemo|{param4:F1P}",
+				"Duração da Calamidade da Ventania|{param5:F1}s",
+				"Duração|{param6:F1}s",
+				"Tempo de Recarga|{param7:F1}s",
+				"Energia Elemental|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Corrente Impetuosa",
+		"info": "Quando Faruzan se encontra no estado de \"Aparição Tempestuosa\" criado pelo **Reino do Vento de Nasamjnin**, o tempo de carregamento necessário para ela realizar o Disparo com Mira é reduzido em 60%. Além disto, ela também poderá aplicar o efeito da \"Calamidade da Ventania\" de **Caminhos Secretos do Vento** no inimigo atingido pelo vórtice criado pelo efeito \"Armadilha da Ventania\"."
+	},
+	"passive2": {
+		"name": "Sabedoria Perdida das Sete Cavernas",
+		"info": "Quando os Ataques Normais, Ataques Carregados, Ataques Imersivos, Habilidades Elementais ou Supremos de um personagem sob o efeito da \"Bênção da Ventania\" de **Caminhos Secretos do Vento** causam Dano Anemo nos inimigos, gerarão o efeito Proteção do Vento Feroz: aumenta o Dano causado baseado em 32% do ATQ Básico da Faruzan. Este efeito só pode ser ativado uma vez a cada 0.8s e é anulado quando o efeito da Benção da Ventania acaba ou depois que já foi ativado uma vez."
+	},
+	"passive3": {
+		"name": "Vestígios de Conhecimento",
+		"info": "Quando enviada para uma Expedição em Sumeru por 20 horas, Faruzan obtém 25% a mais de recompensas."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos de Admoestações",
+				"count": 3
+			},
+			{
+				"name": "Cetim Vermelho Desbotado",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia da Admoestação",
+				"count": 2
+			},
+			{
+				"name": "Seda Vermelha Bordada",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia da Admoestação",
+				"count": 4
+			},
+			{
+				"name": "Seda Vermelha Bordada",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia da Admoestação",
+				"count": 6
+			},
+			{
+				"name": "Seda Vermelha Bordada",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia da Admoestação",
+				"count": 9
+			},
+			{
+				"name": "Seda Vermelha Bordada",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia da Admoestação",
+				"count": 4
+			},
+			{
+				"name": "Cetim Vermelho",
+				"count": 4
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia da Admoestação",
+				"count": 6
+			},
+			{
+				"name": "Cetim Vermelho",
+				"count": 6
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia da Admoestação",
+				"count": 12
+			},
+			{
+				"name": "Cetim Vermelho",
+				"count": 9
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia da Admoestação",
+				"count": 16
+			},
+			{
+				"name": "Cetim Vermelho",
+				"count": 12
+			},
+			{
+				"name": "Fios da Marionete",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

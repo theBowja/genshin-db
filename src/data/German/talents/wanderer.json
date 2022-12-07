@@ -1,0 +1,204 @@
+{
+	"name": "Wanderer",
+	"combat1": {
+		"name": "Standardangriff: Yuuban Meigen",
+		"info": "**Standardangriff**\nEntfesselt Windklingen, um bis zu 3 Angriffe auszuführen und verursacht Anemo-Schaden.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer und konzentriert nach kurzer Aufladezeit vor sich ein Hochdruckfeld, das Anemo-Flächenschaden verursacht.\n\n**Angriff aus dem Fall**\nKonzentriert die Anemo-Kraft, schlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Anemo-Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P} + {param4:F1P}",
+				"SCH heftiger Schläge|{param5:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param6:F1} Punkte",
+				"SCH beim Fallen|{param7:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Hanega – Gesang des Windes",
+		"info": "Konzentriert die Kraft einer großen Luftmenge, um damit die Fesseln der Erde abzuwerfen. Verursacht in der Umgebung Anemo-Schaden und steigt in die Höhe, um in den Zustand „Haltung des eleganten Windes“ einzutreten.\n\n**Haltung des eleganten Windes**\nIn diesem Zustand kann der Wanderer keinen Angriff aus dem Fall ausführen. Sein Standardangriff und heftiger Schlag werden zu Kuugo – Fushoudan und Kuugo – Toufukai, deren Schaden als Schaden von Standardangriffen bzw. Schaden heftiger Schläge betrachtet werden. Beide Fähigkeiten erhalten einen erhöhten Wirkungsbereich und verursachen mehr Schaden. Kuugo – Toufukai verbraucht keine Ausdauer.\nIn diesem Zustand kann der Wanderer fortlaufend in der Luft schweben und seine Aktionen haben die folgenden Eigenschaften:\n· Verbraucht fortlaufend „Kuugoryoku“ und bleibt im Schwebezustand.\n· Beim Rennen in der Luft wird zusätzlich Kuugoryoku verbraucht. Beim Gedrückthalten zum Beschleunigen wird fortlaufend Kuugoryoku verbraucht, um die schnelle Fortbewegung aufrechtzuerhalten, dieser Effekt ersetzt das Rennen.\n· Beim Springen wird zusätzlich Kuugoryoku verbraucht, um die Schwebehöhe zu erhöhen. Beim Gedrückthalten zum Springen wird fortlaufend Kuugoryoku verbraucht, um die Schwebehöhe fortlaufend zu erhöhen.\n\nWird Kuugoryoku aufgebraucht, endet dieser Schwebezustand.\nWird diese Fähigkeit innerhalb der Dauer von „Haltung des eleganten Windes“ erneut ausgelöst, endet dieser Zustand.",
+		"description": "„Die profane Welt tanzt ausgelassen und das Geheimnis schwebt wie eine Blüte, selbstvergessen.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P}",
+				"SCH von Kuugo – Fushoudan|{param2:F1P} des SCH der Standardangriffe",
+				"SCH von Kuugo – Toufukai|{param3:F1P} des SCH heftiger Schläge",
+				"Anfängliches Kuugoryoku|{param4:I} Punkte",
+				"Abklingzeit|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kyougen – Fünf rituelle Stücke",
+		"info": "Komprimiert die Luft zu einem alle Sorgen zerschmetternden Vakuum und verursacht dabei mehrfach Anemo-Flächenschaden.\nIm Zustand Haltung des eleganten Windes der Elementarfähigkeit „Hanega – Gesang des Windes“ wird dieser Zustand nach dem Auslösen beendet.",
+		"description": "„Stück für Stück klart der Himmel auf, Träume, die waren und Träume, die sind, schweben im Wind.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P} ×5",
+				"Abklingzeit|{param2:F1} s",
+				"Elementarenergie|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Jadeblume",
+		"info": "Verleiht dem diesmaligen Zustand „Haltung des eleganten Windes“ der Figur bei der Anwendung von **Hanega – Gesang des Windes** nach Kontakt mit dem Hydro-, Pyro-, Kryo- oder Elektro-Element die entsprechenden Verstärkungseffekte, je nachdem, mit welchem Element interagiert wurde:\n· Hydro: Erhöht das max. Kuugoryoku um 20 Punkte.\n· Pyro: Erhöht den ANG um 30 %.\n· Kryo: Erhöht die KT um 20 %.\n· Elektro: Stellt beim Treffen von Gegnern mit Standardangriffen und heftigen Schlägen 0,8 Punkt Elementarenergie wieder her, Abklingzeit 0,2 s.\n\nEs können gleichzeitig höchstens 2 unterschiedliche Verstärkungseffekte der entsprechenden Elemente verliehen werden."
+	},
+	"passive2": {
+		"name": "Brise der Träumerei",
+		"info": "Erhält beim Treffen von Gegnern mit Kuugo – Fushoudan oder Kuugo – Toufukai des Wanderers im Zustand **„Haltung des eleganten Windes“** mit einer Wahrscheinlichkeit von 16 % den Effekt „Anmut des Windes“: Beschleunigt der Wanderer im diesmaligen Zustand „Haltung des eleganten Windes“ in der Luft, wird dieser Effekt entfernt, sodass diese Beschleunigung in der Luft kein Kuugoryoku verbraucht und 4 Windpfeile abgeschossen werden, die jeweils Anemo-Schaden in Höhe von 35 % ANG verursachen.\nErzeugt ein Kuugo – Fushoudan oder Kuugo – Toufukai nicht den Effekt „Anmut des Windes“, wird die Wahrscheinlichkeit des Auslösens beim nächsten Treffer um 12 % erhöht. 0,1 s Abklingzeit für die Beurteilung der Effekterzeugung."
+	},
+	"passive3": {
+		"name": "Saiten der wirbelnden Wolken",
+		"info": "Verringert die für den Aufstieg von Katalysatoren oder Bögen verbrauchte Menge an Mora um 50 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Praxis“",
+				"count": 3
+			},
+			{
+				"name": "Alter Handschutz",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Praxis“",
+				"count": 2
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Praxis“",
+				"count": 4
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Praxis“",
+				"count": 6
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Praxis“",
+				"count": 9
+			},
+			{
+				"name": "Kageuchi-Handschutz",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Praxis“",
+				"count": 4
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 4
+			},
+			{
+				"name": "Schelle der Leere",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Praxis“",
+				"count": 6
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 6
+			},
+			{
+				"name": "Schelle der Leere",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Praxis“",
+				"count": 12
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 9
+			},
+			{
+				"name": "Schelle der Leere",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Praxis“",
+				"count": 16
+			},
+			{
+				"name": "Berühmter Handschutz",
+				"count": 12
+			},
+			{
+				"name": "Schelle der Leere",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}
