@@ -43,13 +43,13 @@ const bodyToGender = {
 const genderTranslations = {
 	'MALE': {
 		ChineseSimplified: '男', ChineseTraditional: '男', German: 'Männlich', English: 'Male', Spanish: 'Masculino',
-		French: 'Homme', Indonesian: 'Pria', Japanese: '男', Korean: '남성', Portuguese: 'Masculino',
-		Russian: 'Мужской', Thai: 'ชาย', Vietnamese: 'nam'
+		French: 'Homme', Indonesian: 'Pria', Italian: 'maschio', Japanese: '男', Korean: '남성', Portuguese: 'Masculino',
+		Russian: 'Мужской', Thai: 'ชาย', Turkish: 'erkek', Vietnamese: 'nam'
 	},
 	'FEMALE': {
 		ChineseSimplified: '女', ChineseTraditional: '女', German: 'Weiblich', English: 'Female', Spanish: 'Femenino',
-		French: 'Femme', Indonesian: 'Perempuan', Japanese: '女', Korean: '여성', Portuguese: 'Feminino',
-		Russian: 'Женский', Thai: 'ผู้หญิง', Vietnamese: 'nữ'
+		French: 'Femme', Indonesian: 'Perempuan', Italian: 'femmina', Japanese: '女', Korean: '여성', Portuguese: 'Feminino',
+		Russian: 'Женский', Thai: 'ผู้หญิง', Turkish: 'kadın', Vietnamese: 'nữ'
 	}
 }
 
