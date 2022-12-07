@@ -83,7 +83,9 @@ async function isImageBlacklistAndExist(imageurl, savechanges, dburl) {
 			return true;
 
 		} else {
-			console.log(`Image doesn't exist: ${imageurl}`);
+			if (checkExistingImageBlacklist) {
+				console.log(`Image doesn't exist: ${imageurl}`);
+			}
 			return false;
 		}
 
@@ -600,6 +602,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			importdata.aliases = dbdata.aliases;
 
 			let before = JSON.stringify(dbdata);
+			if (dbdata && dbdata.name && dbdata.name !== importdata.name) {
+				console.log(`There's been a name change for ${langC} ${filename} from ${dbdata.name} to ${importdata.name}`);
+			}
 			if (collateFunc)
 				await collateFunc(dbdata, importdata, language.languageMap[langC], importconfig[folder], skipimageredirect, dbimages ? dbimages[filename] : undefined);
 			else
@@ -640,9 +645,13 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 checkExistingImageBlacklist = true; // 
-gameVersion = "3.2"; // new data will use this as added version
 importData('characters', collateCharacter);
+gameVersion = "3.3"; // new data will use this as added version
+
+// importData('characters', collateCharacter);
 // importCurve('characters');
+// getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site
+
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
