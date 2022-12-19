@@ -656,15 +656,15 @@ gameVersion = "3.3"; // new data will use this as added version
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
-// importCurve('weapons');
+// // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
-// importData('foods');
-// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
-// importData('domains');
-// importData('enemies');
-// importCurve('enemies');
+// // importData('foods');
+// // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
+// // importData('domains');
+// // importData('enemies');
+// // importCurve('enemies');
 
-// importData('outfits', collateOutfit);
+// // importData('outfits', collateOutfit);
 // importData('windgliders');
 // importData('animals');
 // importData('namecards');
@@ -673,6 +673,14 @@ gameVersion = "3.3"; // new data will use this as added version
 // importData('achievementgroups');
 // importData('adventureranks'); // max 60
 // importData('crafts');
+
+importData('tcgcharactercards');
+importData('tcgactioncards');
+importData('tcgcardbacks');
+importData('tcgcardboxes');
+importData('tcgdetailedrules');
+importData('tcgkeywords');
+importData('tcglevelrewards');
 
 // updateURLs(); // must be separate
 

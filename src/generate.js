@@ -221,3 +221,9 @@ function combineData() {
 function roundFour(num) {
 	return Math.round((num + Number.EPSILON) * 10000) / 10000;
 }
+
+function makeImageLists() {
+	// console.log('putting together lists of image names');
+	// let myimage = {};
+	// TODO
+}
