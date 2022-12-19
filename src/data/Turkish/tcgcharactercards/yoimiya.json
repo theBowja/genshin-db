@@ -1,0 +1,78 @@
+{
+	"id": 1305,
+	"name": "Yoimiya",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Ateş",
+		"Yay",
+		"Inazuma"
+	],
+	"storytitle": "\"Neşeli Alevler\" Yoimiya",
+	"storytext": "11. Hanamizaka Caddesi Daveti için Naganohara Takımı Kaptanı ve Öncüsü.",
+	"source": "Yoimiya'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 13051,
+			"name": "Havai Fişek Patlaması",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13052,
+			"name": "Niwabi Ateş Dansı",
+			"descriptionraw": "Bu karaktere <color=#FFFFFFFF>$[C113051]</color> eklenir. (Bu beceri {SPRITE_PRESET#1110}Enerji Yükü oluşturmaz.)",
+			"descriptionreplaced": "Bu karaktere <color=#FFFFFFFF>Niwabi Enshou</color> eklenir. (Bu beceri {SPRITE_PRESET#1110}Enerji Yükü oluşturmaz.)",
+			"description": "Bu karaktere Niwabi Enshou eklenir. (Bu beceri Enerji Yükü oluşturmaz.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 13053,
+			"name": "Taşkıran Ryuukin",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C113052]</color> oluşturur.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir ve 1 <color=#FFFFFFFF>Altın Alev</color> oluşturur.",
+			"description": "3 Ateş Hasarı verir ve 1 Altın Alev oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

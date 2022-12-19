@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "Mona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Hydro",
+		"Catalizador",
+		"Mondstadt"
+	],
+	"storytitle": "Mona - La Observadora de los Astros",
+	"storytext": "Ganes o pierdas, todo está escrito en las estrellas.",
+	"source": "Se obtiene tras retar y ganar a Mona en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "Destino revelado",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "Espejismo del agua",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C112031|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y crea una <color=#FFFFFFFF>ilusión</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro y crea una ilusión.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "Órbita divina",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C112032|s1]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y crea una <color=#FFFFFFFF>burbuja ilusoria</color>.",
+			"description": "Inflige 4 pts. de Daño Hydro y crea una burbuja ilusoria.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "Torrente ilusorio",
+			"descriptionraw": "Pasiva: <color=#FFFFFFFF>Cuando este personaje está en combate y cambias de personaje</color>, dicho cambio se considera una $[K2|s2] en vez de una $[K1|s2] (1 vez por ronda).",
+			"descriptionreplaced": "Pasiva: <color=#FFFFFFFF>Cuando este personaje está en combate y cambias de personaje</color>, dicho cambio se considera una <color=#FFFFFFFF>acción rápida</color> en vez de una <color=#FFFFFFFF>acción de combate</color> (1 vez por ronda).",
+			"description": "Pasiva: Cuando este personaje está en combate y cambias de personaje, dicho cambio se considera una acción rápida en vez de una acción de combate (1 vez por ronda).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

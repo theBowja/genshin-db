@@ -1,0 +1,80 @@
+{
+	"id": 1301,
+	"name": "다이루크",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"불 원소",
+		"양손검",
+		"몬드"
+	],
+	"storytitle": "새벽의 어둠·다이루크",
+	"storytext": "그의 가장 강력한 적은 바로 자신의 마음이다",
+	"source": "시작 카드 덱에서 획득",
+	"skills": [
+		{
+			"id": 13011,
+			"name": "단련의 검",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13012,
+			"name": "역날의 화염",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 매 턴에서 해당 스킬을 세 번째 사용 시 피해량이 2pt 증가한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 준다. 매 턴에서 해당 스킬을 세 번째 사용 시 피해량이 2pt 증가한다.",
+			"description": "불 원소 피해를 3pt 준다. 매 턴에서 해당 스킬을 세 번째 사용 시 피해량이 2pt 증가한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13013,
+			"name": "여명",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C113011]</color> 효과가 제공된다.",
+			"basedamage": 8,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 8pt 주고 본 캐릭터에게 <color=#FFFFFFFF>불 원소 부여</color> 효과가 제공된다.",
+			"description": "불 원소 피해를 8pt 주고 본 캐릭터에게 불 원소 부여 효과가 제공된다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

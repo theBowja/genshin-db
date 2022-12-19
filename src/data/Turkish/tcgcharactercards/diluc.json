@@ -1,0 +1,80 @@
+{
+	"id": 1301,
+	"name": "Diluc",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Ateş",
+		"Çift Elli Kılıç",
+		"Mondstadt"
+	],
+	"storytitle": "\"Şafağın Karanlık Yüzü\" Diluc",
+	"storytext": "Yüreği en büyük düşmanıdır.",
+	"source": "Başlangıç destesinden elde edilir.",
+	"skills": [
+		{
+			"id": 13011,
+			"name": "Akkor Kılıç",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13012,
+			"name": "Dağlayan Taarruz",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bu becerinin 3. defa kullanıldığı her Turda Hasar 2 artar.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir. Bu becerinin 3. defa kullanıldığı her Turda Hasar 2 artar.",
+			"description": "3 Ateş Hasarı verir. Bu becerinin 3. defa kullanıldığı her Turda Hasar 2 artar.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13013,
+			"name": "Şafak",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karakter <color=#FFFFFFFF>$[C113011]</color> kazanır.",
+			"basedamage": 8,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "8 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir ve bu karakter <color=#FFFFFFFF>Ateş Tesiri</color> kazanır.",
+			"description": "8 Ateş Hasarı verir ve bu karakter Ateş Tesiri kazanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

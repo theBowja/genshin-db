@@ -1,0 +1,80 @@
+{
+	"id": 1102,
+	"name": "Diona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Cryo",
+		"Bow",
+		"Mondstadt"
+	],
+	"storytitle": "\"Kätzlein Cocktail\" Diona",
+	"storytext": "1% energy dedicated to mixing drinks, 99% to... denying the reality of familiar.",
+	"source": "Reward for inviting Diona to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+	"skills": [
+		{
+			"id": 11021,
+			"name": "Kätzlein Style",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11022,
+			"name": "Icy Paws",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C111021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Cat-Claw Shield</color>.",
+			"description": "Deals 2 Cryo DMG, creates 1 Cat-Claw Shield.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11023,
+			"name": "Signature Mix",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], heals this character for 2 HP, summons 1 <color=#FFFFFFFF>$[C111023]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>, heals this character for 2 HP, summons 1 <color=#FFFFFFFF>Drunken Mist</color>.",
+			"description": "Deals 1 Cryo DMG, heals this character for 2 HP, summons 1 Drunken Mist.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

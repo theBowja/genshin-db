@@ -1,0 +1,78 @@
+{
+	"id": 1305,
+	"name": "Ёимия",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Пиро",
+		"Стрелковое",
+		"Инадзума"
+	],
+	"storytitle": "«Пляшущие огоньки» Ёимия",
+	"storytext": "Капитан и авангард команды Наганохара на 11-м гостевом турнире Ханамидзаки.",
+	"source": "Награда за приглашение Ёимии в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 13051,
+			"name": "Вспышка фейерверка",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13052,
+			"name": "Огненный танец Ниваби",
+			"descriptionraw": "Персонаж получает <color=#FFFFFFFF>$[C113051]</color>. Этот навык не создаёт {SPRITE_PRESET#1110} энергию.",
+			"descriptionreplaced": "Персонаж получает <color=#FFFFFFFF>Ниваби энсё</color>. Этот навык не создаёт {SPRITE_PRESET#1110} энергию.",
+			"description": "Персонаж получает Ниваби энсё. Этот навык не создаёт  энергию.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 13053,
+			"name": "Камнеломка Рюкин",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и создаёт <color=#FFFFFFFF>$[C113052]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед. и создаёт <color=#FFFFFFFF>Золотое сияние</color>.",
+			"description": "Наносит Пиро урон, 3 ед. и создаёт Золотое сияние.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

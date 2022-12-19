@@ -1,0 +1,90 @@
+{
+	"id": 2301,
+	"name": "Fatui – Pyro-Schuldeneintreiber",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Pyro",
+		"Andere Waffen",
+		"Fatui"
+	],
+	"storytitle": "Klinge der Abrechnung – Schuldeneintreiber",
+	"storytext": "„Du kannst deinen Schulden nicht entkommen, ob du noch lebst oder schon tot bist ...“",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Pyro-Schuldeneintreiber in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 23011,
+			"name": "Dolchstoß",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23012,
+			"name": "Zeitlicher Angriff",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C123011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, erhält selbst <color=#FFFFFFFF>Einschleichen</color>.",
+			"description": "Verursacht 1 Pkt. Pyro-SCH, erhält selbst Einschleichen.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23013,
+			"name": "Flammende Klinge",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 5 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Verursacht 5 Pkt. Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23014,
+			"name": "Schleichmeister",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C123011]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Einschleichen</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Einschleichen.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"id": 2201,
+	"name": "Родия",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Гидро",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "«Хозяйка вод» Родия",
+	"storytext": "«Пока идёт дождь и бегут реки, вода никуда не исчезнет...»",
+	"source": "Награда за победу над Родией в Дружеской дуэли в «Кошкином хвосте»",
+	"skills": [
+		{
+			"id": 22011,
+			"name": "Прилив",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед.",
+			"description": "Наносит Гидро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22012,
+			"name": "Иллюзорный океанид",
+			"descriptionraw": "Случайным образом призывает: <color=#FFFFFFFF>$[C122010]</color> (1 вид). В первую очередь создаёт разные виды.",
+			"descriptionreplaced": "Случайным образом призывает: <color=#FFFFFFFF>Мимик океанида</color> (1 вид). В первую очередь создаёт разные виды.",
+			"description": "Случайным образом призывает: Мимик океанида (1 вид). В первую очередь создаёт разные виды.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22013,
+			"name": "Лесное многообразие",
+			"descriptionraw": "Случайным образом призывает: <color=#FFFFFFFF>$[C122010]</color> (2 вида). В первую очередь создаёт разные виды.",
+			"descriptionreplaced": "Случайным образом призывает: <color=#FFFFFFFF>Мимик океанида</color> (2 вида). В первую очередь создаёт разные виды.",
+			"description": "Случайным образом призывает: Мимик океанида (2 вида). В первую очередь создаёт разные виды.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 22014,
+			"name": "Приливы и течения",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. За каждого помощника наносит 2 ед. урона.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед. За каждого помощника наносит 2 ед. урона.",
+			"description": "Наносит Гидро урон, 2 ед. За каждого помощника наносит 2 ед. урона.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

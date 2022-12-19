@@ -1,0 +1,78 @@
+{
+	"id": 1305,
+	"name": "요이미야",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"불 원소",
+		"활",
+		"이나즈마"
+	],
+	"storytitle": "유염화무·요이미야",
+	"storytext": "제11회 하나미자카 대회의 「나가노하라 팀」 팀장이자 선봉장이다",
+	"source": "캣테일 술집에서 요이미야 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 13051,
+			"name": "쏘아 올린 불꽃",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13052,
+			"name": "염초 정화(庭火)의 춤",
+			"descriptionraw": "본 캐릭터에게 <color=#FFFFFFFF>$[C113051]</color>가 부착된다. (해당 스킬은 {SPRITE_PRESET#1110}원소 에너지가 생성되지 않음)",
+			"descriptionreplaced": "본 캐릭터에게 <color=#FFFFFFFF>정화 염초</color>가 부착된다. (해당 스킬은 {SPRITE_PRESET#1110}원소 에너지가 생성되지 않음)",
+			"description": "본 캐릭터에게 정화 염초가 부착된다. (해당 스킬은 원소 에너지가 생성되지 않음)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 13053,
+			"name": "유금 운간초",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C113052]</color>을 생성한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>유금화광</color>을 생성한다.",
+			"description": "불 원소 피해를 3pt 주고 유금화광을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

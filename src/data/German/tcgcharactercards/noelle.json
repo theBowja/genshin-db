@@ -1,0 +1,80 @@
+{
+	"id": 1602,
+	"name": "Noelle",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Geo",
+		"Zweihänder",
+		"Mondstadt"
+	],
+	"storytitle": "Knospe des Rittertums – Noelle",
+	"storytext": "Dinge wie das Aufräumen des Spielbrettes kannst du ihr immer überlassen.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Noelle in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 16021,
+			"name": "Favonius-Schwertkunst – Magd",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16022,
+			"name": "Brustpanzer",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C116021]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Geo-Panzer</color>.",
+			"description": "Verursacht 1 Pkt. Geo-SCH, erschafft 1 Geo-Panzer.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16023,
+			"name": "Großreinigung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C116022]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>, erhält selbst <color=#FFFFFFFF>Großreinigung</color>.",
+			"description": "Verursacht 4 Pkt. Geo-SCH, erhält selbst Großreinigung.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

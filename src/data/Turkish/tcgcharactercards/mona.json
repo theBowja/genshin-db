@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "Mona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Su",
+		"Katalizör",
+		"Mondstadt"
+	],
+	"storytitle": "\"Astral Yansıma\" Mona",
+	"storytext": "Zafer veya yenilgi, hepsi yıldızlarda yazılı.",
+	"source": "Mona'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "Kader Dalgası",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "1 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "Kıyamet Yansıması",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C112031]</color> çağırır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve 1 <color=#FFFFFFFF>Yansıma</color> çağırır.",
+			"description": "1 Su Hasarı verir ve 1 Yansıma çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "Kaderin Yıldızı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C112032]</color> oluşturur.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve 1 <color=#FFFFFFFF>Hayali Baloncuk</color> oluşturur.",
+			"description": "4 Su Hasarı verir ve 1 Hayali Baloncuk oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "Hayali Akıntı",
+			"descriptionraw": "(Pasif) <color=#FFFFFFFF>Aktif karakterin Mona'yken \"Karakter Değiştir\" kullandığında</color> bu değişiklik, $[K1] yerine $[K2] sayılır. (Her Turda bir defa)",
+			"descriptionreplaced": "(Pasif) <color=#FFFFFFFF>Aktif karakterin Mona'yken \"Karakter Değiştir\" kullandığında</color> bu değişiklik, <color=#FFFFFFFF>Savaş Hamlesi</color> yerine <color=#FFFFFFFF>Hızlı Hamle</color> sayılır. (Her Turda bir defa)",
+			"description": "(Pasif) Aktif karakterin Mona'yken \"Karakter Değiştir\" kullandığında bu değişiklik, Savaş Hamlesi yerine Hızlı Hamle sayılır. (Her Turda bir defa)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

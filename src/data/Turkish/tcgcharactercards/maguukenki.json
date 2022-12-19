@@ -1,0 +1,97 @@
+{
+	"id": 2501,
+	"name": "Maguu Kenki",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Rüzgar",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"storytitle": "\"Dahi Makina\" Maguu Kenki",
+	"storytext": "Bugün bile kaderinin koptuğu yerde dolanıyor.",
+	"source": "Kedi Kuyruğu'ndaki Han Mücadelesini kabul etme ve Maguu Kenki ile olan Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Ichimonji",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Sert Rüzgar Kılıcı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C125011]</color> çağırır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir ve 1 <color=#FFFFFFFF>Gölge Kılıcı: Yalnız Rüzgar</color> çağırır.",
+			"description": "1 Rüzgar Hasarı verir ve 1 Gölge Kılıcı: Yalnız Rüzgar çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Dondurucu Saldırı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C125012]</color> çağırır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir ve 1 <color=#FFFFFFFF>Gölge Kılıcı: Doludizgin Ayaz</color> çağırır.",
+			"description": "1 Buz Hasarı verir ve 1 Gölge Kılıcı: Doludizgin Ayaz çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Sahte Tengu Savuran",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve tüm <color=#FFFFFFFF>Gölge Kılıcı</color> Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "6 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir ve tüm <color=#FFFFFFFF>Gölge Kılıcı</color> Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
+			"description": "6 Rüzgar Hasarı verir ve tüm Gölge Kılıcı Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

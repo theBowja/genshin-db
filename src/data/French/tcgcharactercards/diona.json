@@ -1,0 +1,80 @@
+{
+	"id": 1102,
+	"name": "Diona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Cryo",
+		"Arc",
+		"Mondstadt"
+	],
+	"storytitle": "Diona · Cocktail façon Queue de Chat",
+	"storytext": "1 % d'énergie dédiée à mélanger les boissons et 99 % à... nier l'échec.",
+	"source": "Récompense pour avoir invité Diona à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 11021,
+			"name": "Archerie de chasse",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11022,
+			"name": "Griffes Cryo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée un <color=#FFFFFFFF>$[C111021|s2]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color> et crée un <color=#FFFFFFFF>bouclier de griffes</color>.",
+			"description": "Inflige 2 pts de DGT Cryo et crée un bouclier de griffes.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11023,
+			"name": "Cuvée spéciale",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], soigne ce personnage pour 2 pts et invoque un <color=#FFFFFFFF>$[C111023|s2]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color>, soigne ce personnage pour 2 pts et invoque un <color=#FFFFFFFF>champ de vapeur d'alcool</color>.",
+			"description": "Inflige 1 pt de DGT Cryo, soigne ce personnage pour 2 pts et invoque un champ de vapeur d'alcool.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

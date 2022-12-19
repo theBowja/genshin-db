@@ -1,0 +1,80 @@
+{
+	"id": 1601,
+	"name": "Нин Гуан",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Гео",
+		"Катализатор",
+		"Ли Юэ"
+	],
+	"storytitle": "«Лунное затмение» Нин Гуан",
+	"storytext": "Её величайший секрет заключается в том, что она хранит множество секретов Ли Юэ.",
+	"source": "Награда за приглашение Нин Гуан в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 16011,
+			"name": "Сверкающий дождь",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 1 ед.",
+			"description": "Наносит Гео урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16012,
+			"name": "Нефритовая ширма",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и создаёт <color=#FFFFFFFF>$[C116011]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 2 ед. и создаёт <color=#FFFFFFFF>Нефритовая ширма</color>.",
+			"description": "Наносит Гео урон, 2 ед. и создаёт Нефритовая ширма.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16013,
+			"name": "Осколки звёзд",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если <color=#FFFFFFFF>$[C116011]</color> на поле битвы, урон увеличивается на 2 ед.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 6 ед. Если <color=#FFFFFFFF>Нефритовая ширма</color> на поле битвы, урон увеличивается на 2 ед.",
+			"description": "Наносит Гео урон, 6 ед. Если Нефритовая ширма на поле битвы, урон увеличивается на 2 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

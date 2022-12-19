@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "Mona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Hydro",
+		"Catalyst",
+		"Mondstadt"
+	],
+	"storytitle": "\"Astral Reflection\" Mona",
+	"storytext": "Victory or defeat — it has all been written in the stars.",
+	"source": "Reward for inviting Mona to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "Ripple of Fate",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>.",
+			"description": "Deals 1 Hydro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "Mirror Reflection of Doom",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C112031]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>, summons 1 <color=#FFFFFFFF>Reflection</color>.",
+			"description": "Deals 1 Hydro DMG, summons 1 Reflection.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "Stellaris Phantasm",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C112032]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>, creates 1 <color=#FFFFFFFF>Illusory Bubble</color>.",
+			"description": "Deals 4 Hydro DMG, creates 1 Illusory Bubble.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "Illusory Torrent",
+			"descriptionraw": "(Passive) <color=#FFFFFFFF>When you perform \"Switch Character\" while Mona is your active character:</color> This switch is considered a $[K2] instead of a $[K1]. (Once per Round)",
+			"descriptionreplaced": "(Passive) <color=#FFFFFFFF>When you perform \"Switch Character\" while Mona is your active character:</color> This switch is considered a <color=#FFFFFFFF>Fast Action</color> instead of a <color=#FFFFFFFF>Combat Action</color>. (Once per Round)",
+			"description": "(Passive) When you perform \"Switch Character\" while Mona is your active character: This switch is considered a Fast Action instead of a Combat Action. (Once per Round)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

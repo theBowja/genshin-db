@@ -1,0 +1,80 @@
+{
+	"id": 1601,
+	"name": "Ningguang",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Geo",
+		"Katalysator",
+		"Liyue"
+	],
+	"storytitle": "Verdeckter Mond – Ningguang",
+	"storytext": "Das größte Geheimnis, das sie hütet, ist, dass sie sehr viele Geheimnisse von Liyue hütet.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Ningguang in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 16011,
+			"name": "Teure Geschosse",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Geo-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16012,
+			"name": "Jadeschirm",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C116011]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Jadeschirm</color>.",
+			"description": "Verursacht 2 Pkt. Geo-SCH, erschafft 1 Jadeschirm.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16013,
+			"name": "Sternensplitter",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]; diesmaliger Schaden +2, wenn <color=#FFFFFFFF>$[C116011]</color> auf dem Feld ist.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 6 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>; diesmaliger Schaden +2, wenn <color=#FFFFFFFF>Jadeschirm</color> auf dem Feld ist.",
+			"description": "Verursacht 6 Pkt. Geo-SCH; diesmaliger Schaden +2, wenn Jadeschirm auf dem Feld ist.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

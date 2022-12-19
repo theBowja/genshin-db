@@ -1,0 +1,80 @@
+{
+	"id": 1202,
+	"name": "Xingqiu",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"ธาตุน้ำ",
+		"ดาบ",
+		"Liyue"
+	],
+	"storytitle": "Guhua Feiyun - Xingqiu",
+	"storytext": "\"ทำไมหลัง ๆ มานี้ ตัวเอกในนิยายถึงได้มีแต่พวกนักเรียนจากสถานศึกษาเอกชนกันทั้งนั้นเลยนะ...\"",
+	"source": "ได้รับหลังจากเชิญ Xingqiu ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 12021,
+			"name": "Guhua Style",
+			"descriptionraw": "จะสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "จะสร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "จะสร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12022,
+			"name": "Fatal Rainscreen",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย ทำให้ตัวละครนี้$[K202] และสร้าง <color=#FFFFFFFF>$[C112021]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 2 หน่วย ทำให้ตัวละครนี้<color=#80C0FFFF>ติดสถานะ{SPRITE_PRESET#2102}ธาตุน้ำ</color> และสร้าง <color=#FFFFFFFF>Rain Sword</color>",
+			"description": "สร้างความเสียหายน้ำ 2 หน่วย ทำให้ตัวละครนี้ติดสถานะธาตุน้ำ และสร้าง Rain Sword",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12023,
+			"name": "Raincutter",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย ทำให้ตัวละครนี้$[K202] และสร้าง <color=#FFFFFFFF>$[C112022]</color>",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 1 หน่วย ทำให้ตัวละครนี้<color=#80C0FFFF>ติดสถานะ{SPRITE_PRESET#2102}ธาตุน้ำ</color> และสร้าง <color=#FFFFFFFF>Rainbow Bladework</color>",
+			"description": "สร้างความเสียหายน้ำ 1 หน่วย ทำให้ตัวละครนี้ติดสถานะธาตุน้ำ และสร้าง Rainbow Bladework",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "Мона",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Гидро",
+		"Катализатор",
+		"Мондштадт"
+	],
+	"storytitle": "«Звёздное отражение» Мона",
+	"storytext": "Победа или поражение - всё решают звёзды.",
+	"source": "Награда за приглашение Моны в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "Круги на воде",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед.",
+			"description": "Наносит Гидро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "Отражение фатума",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., призывает помощника: <color=#FFFFFFFF>$[C112031]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед., призывает помощника: <color=#FFFFFFFF>Фантом</color>.",
+			"description": "Наносит Гидро урон, 1 ед., призывает помощника: Фантом.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "Звёздный фантазм",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., создаёт <color=#FFFFFFFF>$[C112032]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 4 ед., создаёт <color=#FFFFFFFF>Теневой пузырь</color>.",
+			"description": "Наносит Гидро урон, 4 ед., создаёт Теневой пузырь.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "Иллюзорный поток",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж является активным, ваша смена персонажа:</color> считается как $[K2], а не как $[K1]. Только 1 раз за раунд.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж является активным, ваша смена персонажа:</color> считается как <color=#FFFFFFFF>Быстрое действие</color>, а не как <color=#FFFFFFFF>Боевое действие</color>. Только 1 раз за раунд.",
+			"description": "(Пассивный навык) Когда этот персонаж является активным, ваша смена персонажа: считается как Быстрое действие, а не как Боевое действие. Только 1 раз за раунд.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

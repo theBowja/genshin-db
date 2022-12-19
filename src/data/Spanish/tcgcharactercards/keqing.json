@@ -1,0 +1,80 @@
+{
+	"id": 1403,
+	"name": "Keching",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Electro",
+		"Espada ligera",
+		"Liyue"
+	],
+	"storytitle": "Keching - La Conductora del Trueno",
+	"storytext": "Puede crear mazos nunca antes vistos y ganar duelos cuya victoria es impensable.",
+	"source": "Se obtiene tras retar y ganar a Keching en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 14031,
+			"name": "Estilo Yunlai",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14032,
+			"name": "Retorno estelar",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una carta de <color=#FFFFFFFF>$[C114031]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y crea una carta de <color=#FFFFFFFF>Cuña relámpago</color>.",
+			"description": "Inflige 3 pts. de Daño Electro y crea una carta de Cuña relámpago.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14033,
+			"name": "Paseo celestial",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], así como <color=#FFFFFFFF>3 pts. de $[K5]</color> contra todos los personajes en reserva enemigos.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>, así como <color=#FFFFFFFF>3 pts. de <color=#FFFFFFFF>Daño Penetrante</color></color> contra todos los personajes en reserva enemigos.",
+			"description": "Inflige 4 pts. de Daño Electro, así como 3 pts. de Daño Penetrante contra todos los personajes en reserva enemigos.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 1404,
+	"name": "사이노",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"번개 원소",
+		"장병기",
+		"수메르"
+	],
+	"storytitle": "비밀 심판·사이노",
+	"storytext": "카드에는 뜨거운 사막의 태양과도 같은 대풍기관의 열정이 간직되어 있다",
+	"source": "캣테일 술집에서 사이노 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 14041,
+			"name": "일곱 성인의 창술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14042,
+			"name": "비밀스러운 의식·명계의 인도자",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 준다.",
+			"description": "번개 원소 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14043,
+			"name": "성스러운 의식·이리의 질주",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고\\n<color=#FFFFFFFF>$[C114041]</color>의 [빙의]가 2레벨 증가한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 4pt 주고\\n<color=#FFFFFFFF>길을 여는 사자</color>의 [빙의]가 2레벨 증가한다.",
+			"description": "번개 원소 피해를 4pt 주고\n길을 여는 사자의 [빙의]가 2레벨 증가한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14044,
+			"name": "징벌 집행",
+			"descriptionraw": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>$[C114041]</color>가 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>길을 여는 사자</color>가 부착된다.",
+			"description": "[패시브] 전투 시작 시, 처음부터 길을 여는 사자가 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1102,
+	"name": "Diona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Cryo",
+		"Arco",
+		"Mondstadt"
+	],
+	"storytitle": "Diona - La Cantinera Felina",
+	"storytext": "1% de energía para preparar bebidas, 99% para... negarse a aceptar la derrota.",
+	"source": "Se obtiene tras retar y ganar a Diona en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 11021,
+			"name": "Puntería de cazador",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11022,
+			"name": "Zarpazo helado",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C111021|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> y crea un <color=#FFFFFFFF>escudo de zarpas</color>.",
+			"description": "Inflige 2 pts. de Daño Cryo y crea un escudo de zarpas.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11023,
+			"name": "Cóctel asesino",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], cura 2 pts. a este personaje y crea un <color=#FFFFFFFF>$[C111023|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color>, cura 2 pts. a este personaje y crea un <color=#FFFFFFFF>campo de bruma embriagadora</color>.",
+			"description": "Inflige 1 pt. de Daño Cryo, cura 2 pts. a este personaje y crea un campo de bruma embriagadora.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

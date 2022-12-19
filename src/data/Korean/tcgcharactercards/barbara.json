@@ -1,0 +1,78 @@
+{
+	"id": 1201,
+	"name": "바바라",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"물 원소",
+		"법구",
+		"몬드"
+	],
+	"storytitle": "빛나는 아이돌·바바라",
+	"storytext": "언제든 사람의 마음을 치유해준다",
+	"source": "캣테일 술집에서 바바라 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 12011,
+			"name": "물의 노래",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다.",
+			"description": "물 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12012,
+			"name": "공연, 시작♪",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112011]</color>를 소환한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 주고 <color=#FFFFFFFF>노래의 고리</color>를 소환한다.",
+			"description": "물 원소 피해를 1pt 주고 노래의 고리를 소환한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12013,
+			"name": "빛나는 기적♪",
+			"descriptionraw": "모든 아군 캐릭터의 HP를 4pt 치유한다.",
+			"descriptionreplaced": "모든 아군 캐릭터의 HP를 4pt 치유한다.",
+			"description": "모든 아군 캐릭터의 HP를 4pt 치유한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

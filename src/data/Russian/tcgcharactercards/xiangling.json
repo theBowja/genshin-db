@@ -1,0 +1,78 @@
+{
+	"id": 1302,
+	"name": "Сян Лин",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Пиро",
+		"Древковое",
+		"Ли Юэ"
+	],
+	"storytitle": "«Миллион вкусов» Сян Лин",
+	"storytext": "Как шеф-повару ей нет равных.",
+	"source": "Награда за приглашение Сян Лин в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 13021,
+			"name": "Кунг-Тесто",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13022,
+			"name": "Атака Гобы",
+			"descriptionraw": "Призывает 1 помощника: <color=#FFFFFFFF>$[C113021]</color>.",
+			"descriptionreplaced": "Призывает 1 помощника: <color=#FFFFFFFF>Гоба</color>.",
+			"description": "Призывает 1 помощника: Гоба.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13023,
+			"name": "Огневихрь",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и создаёт <color=#FFFFFFFF>$[C113022]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 2 ед. и создаёт <color=#FFFFFFFF>Огневихрь</color>.",
+			"description": "Наносит Пиро урон, 2 ед. и создаёт Огневихрь.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

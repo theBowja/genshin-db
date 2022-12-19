@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "モナ",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"水元素",
+		"法器",
+		"モンド"
+	],
+	"storytitle": "星天水鏡·モナ",
+	"storytext": "勝敗がどうであれ、全て運命に定められたこと。",
+	"source": "キャッツテールでモナを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "因果点破",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。",
+			"description": "水元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "水中幻願",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112031]</color>を召喚する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与え、<color=#FFFFFFFF>虚影</color>を召喚する。",
+			"description": "水元素ダメージを1与え、虚影を召喚する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "星命定軌",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112032]</color>を生成する。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を4与え、<color=#FFFFFFFF>泡影</color>を生成する。",
+			"description": "水元素ダメージを4与え、泡影を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "虚実流動",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>本キャラが出撃キャラであり、味方がキャラチェンジを行う時</color>、それが「$[K1]」ではなく、「$[K2]」とみなされる。（各ラウンドで1回のみ）",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>本キャラが出撃キャラであり、味方がキャラチェンジを行う時</color>、それが「<color=#FFFFFFFF>戦闘アクション</color>」ではなく、「<color=#FFFFFFFF>クイックアクション</color>」とみなされる。（各ラウンドで1回のみ）",
+			"description": "【固有】本キャラが出撃キャラであり、味方がキャラチェンジを行う時、それが「戦闘アクション」ではなく、「クイックアクション」とみなされる。（各ラウンドで1回のみ）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

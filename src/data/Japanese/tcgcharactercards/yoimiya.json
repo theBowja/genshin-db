@@ -1,0 +1,78 @@
+{
+	"id": 1305,
+	"name": "宵宮",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"炎元素",
+		"弓",
+		"稲妻"
+	],
+	"storytitle": "琉焔に舞う大輪·宵宮",
+	"storytext": "花見坂第11回町内招待試合「長野原隊」隊長兼先行プレイヤー。",
+	"source": "キャッツテールで宵宮を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 13051,
+			"name": "打ち上げ花火",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13052,
+			"name": "焔硝の庭火舞い",
+			"descriptionraw": "本キャラに<color=#FFFFFFFF>$[C113051]</color>を付与する。（このスキルは{SPRITE_PRESET#1110}チャージを獲得することができない）",
+			"descriptionreplaced": "本キャラに<color=#FFFFFFFF>庭火の焔硝</color>を付与する。（このスキルは{SPRITE_PRESET#1110}チャージを獲得することができない）",
+			"description": "本キャラに庭火の焔硝を付与する。（このスキルはチャージを獲得することができない）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 13053,
+			"name": "琉金の雲間草",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C113052]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与え、<color=#FFFFFFFF>琉金の炎</color>を生成する。",
+			"description": "炎元素ダメージを3与え、琉金の炎を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

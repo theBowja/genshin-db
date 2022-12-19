@@ -1,0 +1,80 @@
+{
+	"id": 1401,
+	"name": "Fischl",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Elektro",
+		"Bogen",
+		"Mondstadt"
+	],
+	"storytitle": "Prinzessin der Verurteilung! – Fischl",
+	"storytext": "„Oz, mein Gefährte! Breite deine Flügel aus und webe mir ein neues Schicksal in der Finsternis dieser Nacht!“\n„Mein Fräulein, ich kann keine Karte für dich wechseln ...“",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Fischl in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 14011,
+			"name": "Pfeil der Vergebung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14012,
+			"name": "Schutz der Dunkelheit",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C114011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Oz</color>.",
+			"description": "Verursacht 1 Pkt. Elektro-SCH, erschafft 1 Oz.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14013,
+			"name": "Mitternachtstraum",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], fügt allen inaktiven Figuren des Gegners 2 Pkt. <color=#FFFFFFFF>$[K5|s1]</color> zu.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, fügt allen inaktiven Figuren des Gegners 2 Pkt. <color=#FFFFFFFF><color=#FFFFFFFF>durchdringenden SCH</color></color> zu.",
+			"description": "Verursacht 4 Pkt. Elektro-SCH, fügt allen inaktiven Figuren des Gegners 2 Pkt. durchdringenden SCH zu.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

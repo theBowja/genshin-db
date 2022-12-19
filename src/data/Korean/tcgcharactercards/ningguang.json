@@ -1,0 +1,80 @@
+{
+	"id": 1601,
+	"name": "응광",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"바위 원소",
+		"법구",
+		"리월"
+	],
+	"storytitle": "엄월천권·응광",
+	"storytext": "그녀가 가지고 있는 가장 큰 비밀은, 바로 자신이 리월항의 수많은 비밀을 지키고 있다는 것이다",
+	"source": "캣테일 술집에서 응광 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 16011,
+			"name": "천금투",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 1pt 준다.",
+			"description": "바위 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16012,
+			"name": "선기 병풍",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116011]</color>을 생성한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>선기 병풍</color>을 생성한다.",
+			"description": "바위 원소 피해를 2pt 주고 선기 병풍을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16013,
+			"name": "천권 붕옥",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 만약 필드에 <color=#FFFFFFFF>$[C116011]</color>이 있을 시, 이번 피해가 2pt 증가한다.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 6pt 준다. 만약 필드에 <color=#FFFFFFFF>선기 병풍</color>이 있을 시, 이번 피해가 2pt 증가한다.",
+			"description": "바위 원소 피해를 6pt 준다. 만약 필드에 선기 병풍이 있을 시, 이번 피해가 2pt 증가한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

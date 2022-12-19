@@ -1,0 +1,80 @@
+{
+	"id": 1602,
+	"name": "Noelle",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Geo",
+		"Mandoble",
+		"Mondstadt"
+	],
+	"storytitle": "Noelle - La Heroína no Reconocida",
+	"storytext": "Puedes dejar que ella arregle el tablero. No, en serio.",
+	"source": "Se obtiene tras retar y ganar a Noelle en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 16021,
+			"name": "Técnica de espada Favonius - Criada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16022,
+			"name": "Guardiana del corazón",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C116021|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color> y crea un <color=#FFFFFFFF>recubrimiento Geo</color>.",
+			"description": "Inflige 1 pt. de Daño Geo y crea un recubrimiento Geo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16023,
+			"name": "Hora de limpiar",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje entra en el estado de <color=#FFFFFFFF>$[C116022]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color> y este personaje entra en el estado de <color=#FFFFFFFF>Hora de limpiar</color>.",
+			"description": "Inflige 4 pts. de Daño Geo y este personaje entra en el estado de Hora de limpiar.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

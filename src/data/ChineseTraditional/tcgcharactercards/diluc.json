@@ -1,0 +1,80 @@
+{
+	"id": 1301,
+	"name": "迪盧克",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"火元素",
+		"雙手劍",
+		"蒙德"
+	],
+	"storytitle": "晨曦暗面·迪盧克",
+	"storytext": "他的心是他最大的敵人。",
+	"source": "初始牌組中獲得",
+	"skills": [
+		{
+			"id": 13011,
+			"name": "淬煉之劍",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理傷害</color>。",
+			"description": "造成2點物理傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13012,
+			"name": "逆焰之刃",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。每回合第三次使用本技能時，傷害+2。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>。每回合第三次使用本技能時，傷害+2。",
+			"description": "造成3點火元素傷害。每回合第三次使用本技能時，傷害+2。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13013,
+			"name": "黎明",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，本角色附屬<color=#FFFFFFFF>$[C113011]</color>。",
+			"basedamage": 8,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成8點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>，本角色附屬<color=#FFFFFFFF>火元素附魔</color>。",
+			"description": "造成8點火元素傷害，本角色附屬火元素附魔。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

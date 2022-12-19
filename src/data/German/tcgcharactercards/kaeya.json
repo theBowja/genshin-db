@@ -1,0 +1,80 @@
+{
+	"id": 1103,
+	"name": "Kaeya",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Kryo",
+		"Einhänder",
+		"Mondstadt"
+	],
+	"storytitle": "Eiskalter Schwertkämpfer – Kaeya",
+	"storytext": "Er kann sehr gut die „ritterlichen Tugenden“ in anderen erwecken.",
+	"source": "Vom anfänglichen Deck zu erhalten",
+	"skills": [
+		{
+			"id": 11031,
+			"name": "Rituelle Schwertkunst",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11032,
+			"name": "Kälteatem",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Kryo-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11033,
+			"name": "Kreis aus Eis",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C111031]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Eiszapfen</color>.",
+			"description": "Verursacht 1 Pkt. Kryo-SCH, erschafft 1 Eiszapfen.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

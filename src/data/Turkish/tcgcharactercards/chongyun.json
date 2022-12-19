@@ -1,0 +1,80 @@
+{
+	"id": 1104,
+	"name": "Chongyun",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Buz",
+		"Çift Elli Kılıç",
+		"Liyue"
+	],
+	"storytitle": "\"Donmuş Ateş\" Chongyun",
+	"storytext": "\"Of, yaz... Lütfen hızlı geç..\"",
+	"source": "Chongyun'u Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 11041,
+			"name": "İblisboğan",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11042,
+			"name": "Chonghua Buz Katmanı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C111041]</color> oluşturur.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir ve 1 <color=#FFFFFFFF>Chonghua Buz Alanı</color> oluşturur.",
+			"description": "3 Buz Hasarı verir ve 1 Chonghua Buz Alanı oluşturur.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11043,
+			"name": "Bulut Yaran Yıldız",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 7,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "7 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir.",
+			"description": "7 Buz Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

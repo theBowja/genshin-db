@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "Mona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Hydro",
+		"Catalyseur",
+		"Mondstadt"
+	],
+	"storytitle": "Mona · Réflexion astrale",
+	"storytext": "Victoire ou défaite, tout est écrit dans les étoiles.",
+	"source": "Récompense pour avoir invité Mona à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "Ondes du destin",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Inflige 1 pt de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "Mirage aqueux",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque un <color=#FFFFFFFF>$[C112031|s2]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et invoque un <color=#FFFFFFFF>mirage</color>.",
+			"description": "Inflige 1 pt de DGT Hydro et invoque un mirage.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "Voie divine",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée une <color=#FFFFFFFF>$[C112032|s2]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 4 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et crée une <color=#FFFFFFFF>bulle nocturne</color>.",
+			"description": "Inflige 4 pts de DGT Hydro et crée une bulle nocturne.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "Vicissitude",
+			"descriptionraw": "(Passif) <color=#FFFFFFFF>Lorsque ce personnage est actif et que vous basculez de personnage : </color>Considère ce changement comme une $[K2|s2], et pas comme une $[K1|s2]. (1 fois par manche)",
+			"descriptionreplaced": "(Passif) <color=#FFFFFFFF>Lorsque ce personnage est actif et que vous basculez de personnage : </color>Considère ce changement comme une <color=#FFFFFFFF>action rapide</color>, et pas comme une <color=#FFFFFFFF>action de combat</color>. (1 fois par manche)",
+			"description": "(Passif) Lorsque ce personnage est actif et que vous basculez de personnage : Considère ce changement comme une action rapide, et pas comme une action de combat. (1 fois par manche)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

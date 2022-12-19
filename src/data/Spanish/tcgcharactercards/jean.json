@@ -1,0 +1,78 @@
+{
+	"id": 1502,
+	"name": "Jean",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Anemo",
+		"Espada ligera",
+		"Mondstadt"
+	],
+	"storytitle": "Jean - La Caballera de Dandelion",
+	"storytext": "Nunca está satisfecha consigo misma... hasta que obtiene la victoria.",
+	"source": "Se obtiene tras retar y ganar a Jean en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 15021,
+			"name": "Técnica de espada Favonius",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15022,
+			"name": "Filo de ventisca",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y obliga al rival a que su personaje cambie al siguiente.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y obliga al rival a que su personaje cambie al siguiente.",
+			"description": "Inflige 3 pts. de Daño Anemo y obliga al rival a que su personaje cambie al siguiente.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15023,
+			"name": "Brisa de Dandelion",
+			"descriptionraw": "Vida +2 a todos tus personajes. Crea un <color=#FFFFFFFF>$[C115021|s1]</color>.",
+			"descriptionreplaced": "Vida +2 a todos tus personajes. Crea un <color=#FFFFFFFF>campo de dientes de león</color>.",
+			"description": "Vida +2 a todos tus personajes. Crea un campo de dientes de león.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

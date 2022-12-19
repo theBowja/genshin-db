@@ -1,0 +1,90 @@
+{
+	"id": 2701,
+	"name": "Пернатый плесенник",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Дендро",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "«Грибной повелитель» Пернатый плесенник",
+	"storytext": "Если прислушаться, то можно услышать, как вождь грибов осматривает свои владения...",
+	"source": "Награда за победу над Пернатым плесенником в Дружеской дуэли в «Кошкином хвосте»",
+	"skills": [
+		{
+			"id": 27011,
+			"name": "Танец плесенников",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27012,
+			"name": "Облако нестабильных спор",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>, 3 ед.",
+			"description": "Наносит Дендро урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27013,
+			"name": "Величественное оперение",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., затем расходует все уровни <color=#FFFFFFFF>$[C127011]</color>. За каждый уровень наносит +1 ед. урона.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>, 4 ед., затем расходует все уровни <color=#FFFFFFFF>Сила оживления</color>. За каждый уровень наносит +1 ед. урона.",
+			"description": "Наносит Дендро урон, 4 ед., затем расходует все уровни Сила оживления. За каждый уровень наносит +1 ед. урона.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27014,
+			"name": "Сила оживления",
+			"descriptionraw": "(Пассивный навык) В начале сражения у персонажа будет <color=#FFFFFFFF>$[C127011]</color>.",
+			"descriptionreplaced": "(Пассивный навык) В начале сражения у персонажа будет <color=#FFFFFFFF>Сила оживления</color>.",
+			"description": "(Пассивный навык) В начале сражения у персонажа будет Сила оживления.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

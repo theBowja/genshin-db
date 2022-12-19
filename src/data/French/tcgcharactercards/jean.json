@@ -1,0 +1,78 @@
+{
+	"id": 1502,
+	"name": "Jean",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Anémo",
+		"Épée à une main",
+		"Mondstadt"
+	],
+	"storytitle": "Jean · Chevalier au Pissenlit",
+	"storytext": "Elle n'est jamais totalement satisfaite de ce qu'elle a fait. Du moins, pas avant que la victoire finale ne soit la sienne...",
+	"source": "Récompense pour avoir invité Jean à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 15021,
+			"name": "Escrime de Favonius",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15022,
+			"name": "Épée de tourbillon",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT] et bascule de force la cible pour le personnage suivant.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> et bascule de force la cible pour le personnage suivant.",
+			"description": "Inflige 3 pts de DGT Anémo et bascule de force la cible pour le personnage suivant.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15023,
+			"name": "Brise de pissenlit",
+			"descriptionraw": "Soigne tous vos personnages pour 2 pts et invoque un <color=#FFFFFFFF>$[C115021|s2]</color>.",
+			"descriptionreplaced": "Soigne tous vos personnages pour 2 pts et invoque un <color=#FFFFFFFF>champ de pissenlits</color>.",
+			"description": "Soigne tous vos personnages pour 2 pts et invoque un champ de pissenlits.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

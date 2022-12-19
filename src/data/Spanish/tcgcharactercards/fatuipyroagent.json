@@ -1,0 +1,90 @@
+{
+	"id": 2301,
+	"name": "Soldado Fatui - Recaudador Pyro",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Pyro",
+		"Otras armas",
+		"Fatui"
+	],
+	"storytitle": "Recaudador - Filo liquidador",
+	"storytext": "“Vivo o muerto, no puedes huir de tus deudas...”.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra el Recaudador Pyro de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 23011,
+			"name": "Puñalada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23012,
+			"name": "Acecho",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje entra en el estado de <color=#FFFFFFFF>$[C123011|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y este personaje entra en el estado de <color=#FFFFFFFF>sigilo</color>.",
+			"description": "Inflige 1 pt. de Daño Pyro y este personaje entra en el estado de sigilo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23013,
+			"name": "Filos incineradores",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 5 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "Inflige 5 pts. de Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23014,
+			"name": "Maestro del sigilo",
+			"descriptionraw": "Pasiva: cuando comienza el combate, este personaje entra en el estado de <color=#FFFFFFFF>$[C123011|s1]</color>.",
+			"descriptionreplaced": "Pasiva: cuando comienza el combate, este personaje entra en el estado de <color=#FFFFFFFF>sigilo</color>.",
+			"description": "Pasiva: cuando comienza el combate, este personaje entra en el estado de sigilo.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

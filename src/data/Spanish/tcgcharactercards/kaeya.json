@@ -1,0 +1,80 @@
+{
+	"id": 1103,
+	"name": "Kaeya",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Cryo",
+		"Espada ligera",
+		"Mondstadt"
+	],
+	"storytitle": "Kaeya - El Espadachín Glacial",
+	"storytext": "Especialista en despertar las “virtudes caballerescas” en otros.",
+	"source": "Se obtiene con el mazo inicial",
+	"skills": [
+		{
+			"id": 11031,
+			"name": "Técnica de espada ceremonial",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11032,
+			"name": "Golpe de escarcha",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color>.",
+			"description": "Inflige 3 pts. de Daño Cryo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11033,
+			"name": "Vals gélido",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C111031|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> y crea un <color=#FFFFFFFF>carámbano</color>.",
+			"description": "Inflige 1 pt. de Daño Cryo y crea un carámbano.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

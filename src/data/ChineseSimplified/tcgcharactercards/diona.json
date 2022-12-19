@@ -1,0 +1,80 @@
+{
+	"id": 1102,
+	"name": "迪奥娜",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"冰元素",
+		"弓",
+		"蒙德"
+	],
+	"storytitle": "猫尾特调·迪奥娜",
+	"storytext": "用1%的力气调酒，99%的力气…拒绝失败。",
+	"source": "在猫尾酒馆中邀请迪奥娜进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 11021,
+			"name": "猎人射术",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>。",
+			"description": "造成2点物理伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11022,
+			"name": "猫爪冻冻",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C111021]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>，生成<color=#FFFFFFFF>猫爪护盾</color>。",
+			"description": "造成2点冰元素伤害，生成猫爪护盾。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11023,
+			"name": "最烈特调",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，治疗此角色2点，召唤<color=#FFFFFFFF>$[C111023]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>，治疗此角色2点，召唤<color=#FFFFFFFF>酒雾领域</color>。",
+			"description": "造成1点冰元素伤害，治疗此角色2点，召唤酒雾领域。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

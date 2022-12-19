@@ -1,0 +1,80 @@
+{
+	"id": 1601,
+	"name": "Ningguang",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Géo",
+		"Catalyseur",
+		"Liyue"
+	],
+	"storytitle": "Ningguang · Megrez de l'éclipse",
+	"storytext": "Son plus grand secret est le fait qu'elle garde un grand nombre des secrets de Liyue.",
+	"source": "Récompense pour avoir invité Ningguang à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 16011,
+			"name": "Géo-dispersion",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>.",
+			"description": "Inflige 1 pt de DGT Géo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16012,
+			"name": "Paravent d'astrolabe|s1:Paravents d'astrolabe|s2:paravent d'astrolabe|s3:paravents d'astrolabe",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée un <color=#FFFFFFFF>$[C116011|s2]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color> et crée un <color=#FFFFFFFF>paravent d'astrolabe</color>.",
+			"description": "Inflige 2 pts de DGT Géo et crée un paravent d'astrolabe.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16013,
+			"name": "Éclatement des étoiles",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT]. Si un <color=#FFFFFFFF>$[C116011|s2]</color> est sur le terrain, DGT +2.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 6 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>. Si un <color=#FFFFFFFF>paravent d'astrolabe</color> est sur le terrain, DGT +2.",
+			"description": "Inflige 6 pts de DGT Géo. Si un paravent d'astrolabe est sur le terrain, DGT +2.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

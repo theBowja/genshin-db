@@ -1,0 +1,80 @@
+{
+	"id": 1102,
+	"name": "Diona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Kryo",
+		"Bogen",
+		"Mondstadt"
+	],
+	"storytitle": "Putzige Mischung – Diona",
+	"storytext": "1 % der Energie für das Getränkemischen, 99 % für ... das Neinsagen zu Versagen.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Diona in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 11021,
+			"name": "Schießkunst der Jäger",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11022,
+			"name": "Eistatzen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C111021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Pfoten-Schild</color>.",
+			"description": "Verursacht 2 Pkt. Kryo-SCH, erschafft 1 Pfoten-Schild.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11023,
+			"name": "Eisgekühlter Branntwein",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], stellt 2 LP der Figur wieder her, erschafft 1 <color=#FFFFFFFF>$[C111023]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, stellt 2 LP der Figur wieder her, erschafft 1 <color=#FFFFFFFF>Kältedunstfeld</color>.",
+			"description": "Verursacht 1 Pkt. Kryo-SCH, stellt 2 LP der Figur wieder her, erschafft 1 Kältedunstfeld.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

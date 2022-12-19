@@ -1,0 +1,80 @@
+{
+	"id": 1402,
+	"name": "Razor",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Çift Elli Kılıç",
+		"Mondstadt"
+	],
+	"storytitle": "\"Kurt Çocuk\" Razor",
+	"storytext": "\"Kartlar zor\"\n\"Ama... Arkadaşlarım...\"",
+	"source": "Razor'ı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 14021,
+			"name": "Çelik Diş",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14022,
+			"name": "Pençe ve Yıldırım",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.",
+			"description": "3 Elektrik Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14023,
+			"name": "Şimşek Diş",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karakter <color=#FFFFFFFF>$[C114021]</color> kazanır.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "5 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve bu karakter <color=#FFFFFFFF>Kurt Yoldaş</color> kazanır.",
+			"description": "5 Elektrik Hasarı verir ve bu karakter Kurt Yoldaş kazanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

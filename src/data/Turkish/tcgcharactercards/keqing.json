@@ -1,0 +1,80 @@
+{
+	"id": 1403,
+	"name": "Keqing",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Kılıç",
+		"Liyue"
+	],
+	"storytitle": "\"Yıldırım Efendisi\" Keqing",
+	"storytext": "Daha önce hiç düşünülmemiş desteler dizebilir ve imkansız durumlarda zafere ulaşabilir.",
+	"source": "Keqing'i Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 14031,
+			"name": "Yunlai Kılıç Tekniği",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14032,
+			"name": "Yıldızların Düzeni",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C114031]</color> oluşturur.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve 1 <color=#FFFFFFFF>Yıldırım Hançeri</color> oluşturur.",
+			"description": "3 Elektrik Hasarı verir ve 1 Yıldırım Hançeri oluşturur.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14033,
+			"name": "Yıldız Çarpışması",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve rakibin hazırdaki tüm karakterlerine <color=#FFFFFFFF>3 $[K5]</color> verir.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve rakibin hazırdaki tüm karakterlerine <color=#FFFFFFFF>3 <color=#FFFFFFFF>Delme Hasarı</color></color> verir.",
+			"description": "4 Elektrik Hasarı verir ve rakibin hazırdaki tüm karakterlerine 3 Delme Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1301,
+	"name": "Дилюк",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Пиро",
+		"Двуручное",
+		"Мондштадт"
+	],
+	"storytitle": "«Тёмный Рассвет» Дилюк",
+	"storytext": "Главный его враг - его же сердце.",
+	"source": "Можно получить из начальной колоды",
+	"skills": [
+		{
+			"id": 13011,
+			"name": "Закалённый меч",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13012,
+			"name": "Огненный натиск",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. При третьем использовании этого навыка в каждом раунде наносит дополнительно 2 ед. урона.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед. При третьем использовании этого навыка в каждом раунде наносит дополнительно 2 ед. урона.",
+			"description": "Наносит Пиро урон, 3 ед. При третьем использовании этого навыка в каждом раунде наносит дополнительно 2 ед. урона.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13013,
+			"name": "Рассвет",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа возникает <color=#FFFFFFFF>$[C113011]</color>.",
+			"basedamage": 8,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 8 ед. У персонажа возникает <color=#FFFFFFFF>Пиро инфузия</color>.",
+			"description": "Наносит Пиро урон, 8 ед. У персонажа возникает Пиро инфузия.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

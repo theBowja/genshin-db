@@ -1,0 +1,80 @@
+{
+	"id": 1601,
+	"name": "Ninguang",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Geo",
+		"Catalizador",
+		"Liyue"
+	],
+	"storytitle": "Ninguang - La Estrella en Eclipse",
+	"storytext": "Su mayor secreto es que guarda un sinfín de secretos sobre Liyue.",
+	"source": "Se obtiene tras retar y ganar a Ninguang en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 16011,
+			"name": "Lanzamiento centelleante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>.",
+			"description": "Inflige 1 pt. de Daño Geo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16012,
+			"name": "Pantalla de jade|s1:pantalla de jade",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C116011|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color> y crea una <color=#FFFFFFFF>pantalla de jade</color>.",
+			"description": "Inflige 2 pts. de Daño Geo y crea una pantalla de jade.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16013,
+			"name": "Devastaestrellas",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si la <color=#FFFFFFFF>$[C116011|s1]</color> está en combate, daño +2.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 6 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>. Si la <color=#FFFFFFFF>pantalla de jade</color> está en combate, daño +2.",
+			"description": "Inflige 6 pts. de Daño Geo. Si la pantalla de jade está en combate, daño +2.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

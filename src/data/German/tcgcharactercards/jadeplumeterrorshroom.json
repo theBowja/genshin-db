@@ -1,0 +1,90 @@
+{
+	"id": 2701,
+	"name": "Gefiederte Pilzbestie",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Dendro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"storytitle": "Pilzkönig im tiefen Wald – Gefiederte Pilzbestie",
+	"storytext": "Wenn du genau hinhörst, kannst du die Schritte des Pilzkönigs im tiefen Wald hören, der gerade sein Gebiet inspiziert ...",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit der gefiederten Pilzbestie in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 27011,
+			"name": "Pilzkönig-Tanz",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27012,
+			"name": "Instabile Sporenwolke",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Dendro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27013,
+			"name": "Majestätische Schwanzfedern",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verbraucht alle Stapelungen von <color=#FFFFFFFF>$[C127011]</color>, jede Stapelung erhöht den diesmaligen Schaden um 1.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>, verbraucht alle Stapelungen von <color=#FFFFFFFF>Aktivierungsstimulus</color>, jede Stapelung erhöht den diesmaligen Schaden um 1.",
+			"description": "Verursacht 4 Pkt. Dendro-SCH, verbraucht alle Stapelungen von Aktivierungsstimulus, jede Stapelung erhöht den diesmaligen Schaden um 1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27014,
+			"name": "Aktivierungsstimulus",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C127011]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Aktivierungsstimulus</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Aktivierungsstimulus.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

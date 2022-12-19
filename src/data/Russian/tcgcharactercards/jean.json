@@ -1,0 +1,78 @@
+{
+	"id": 1502,
+	"name": "Джинн",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Анемо",
+		"Одноручное",
+		"Мондштадт"
+	],
+	"storytitle": "«Рыцарь Одуванчик» Джинн",
+	"storytext": "Никогда не верит, что сделала всё достаточно хорошо - во всяком случае, до тех пор, пока окончательная победа не будет за ней.",
+	"source": "Награда за приглашение Джинн в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 15021,
+			"name": "Фехтовальный стиль Фавония",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15022,
+			"name": "Клинок ветра",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Принуждает соперника сделать активным следующего персонажа.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 3 ед. Принуждает соперника сделать активным следующего персонажа.",
+			"description": "Наносит Анемо урон, 3 ед. Принуждает соперника сделать активным следующего персонажа.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15023,
+			"name": "Одуванчиковый бриз",
+			"descriptionraw": "Восстанавливает 2 HP всем вашим персонажам и призывает помощника: <color=#FFFFFFFF>$[C115021]</color>.",
+			"descriptionreplaced": "Восстанавливает 2 HP всем вашим персонажам и призывает помощника: <color=#FFFFFFFF>Поле одуванчиков</color>.",
+			"description": "Восстанавливает 2 HP всем вашим персонажам и призывает помощника: Поле одуванчиков.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

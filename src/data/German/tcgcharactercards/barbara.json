@@ -1,0 +1,78 @@
+{
+	"id": 1201,
+	"name": "Barbara",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Hydro",
+		"Katalysator",
+		"Mondstadt"
+	],
+	"storytitle": "Leuchtender Star – Barbara",
+	"storytext": "Sie ist jederzeit bereit, Herzen zu heilen und Seelen zu besänftigen.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Barbara in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 12011,
+			"name": "Stille Wasser",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12012,
+			"name": "Die Darbietung beginnt ♪",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C112011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Singender Kreis</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH, erschafft 1 Singender Kreis.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12013,
+			"name": "Glitzerndes Wunder ♪",
+			"descriptionraw": "Stellt all deinen Figuren 4 LP wieder her.",
+			"descriptionreplaced": "Stellt all deinen Figuren 4 LP wieder her.",
+			"description": "Stellt all deinen Figuren 4 LP wieder her.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"id": 2501,
+	"name": "Магу кэнки",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Анемо",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "«Искусная машина» магу кэнки",
+	"storytext": "И сегодня эту машину можно встретить там, где была прервана её судьба...",
+	"source": "Награда за победу над магу кэнки в Дружеской дуэли в «Кошкином хвосте»",
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Итимондзи",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Одинокий шторм",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C125011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 1 ед. и призывает помощника: <color=#FFFFFFFF>Теневой клинок: Одинокий ветер</color>.",
+			"description": "Наносит Анемо урон, 1 ед. и призывает помощника: Теневой клинок: Одинокий ветер.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Морозная тень",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C125012]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 1 ед. и призывает помощника: <color=#FFFFFFFF>Теневой клинок: Бегущий иней</color>.",
+			"description": "Наносит Крио урон, 1 ед. и призывает помощника: Теневой клинок: Бегущий иней.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Ложный тэнгу",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] ед. $[D__KEY__ELEMENT], вызывает эффекты всех <color=#FFFFFFFF>Теневых мечей</color> (не расходует их применения).",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит 6 ед. {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, вызывает эффекты всех <color=#FFFFFFFF>Теневых мечей</color> (не расходует их применения).",
+			"description": "Наносит 6 ед. Анемо урон, вызывает эффекты всех Теневых мечей (не расходует их применения).",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

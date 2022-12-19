@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "Mona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Hydro",
+		"Katalysator",
+		"Mondstadt"
+	],
+	"storytitle": "Abbildung der Sterne im Wasser – Mona",
+	"storytext": "Sieg oder Niederlage, alles hängt vom Schicksal ab.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Mona in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "Unumgängliches Schicksal",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "Trugbilder im Wasser",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C112031]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Trugbild</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH, erschafft 1 Trugbild.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "Vorbestimmte Laufbahn",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C112032]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Blasenschatten</color>.",
+			"description": "Verursacht 4 Pkt. Hydro-SCH, erschafft 1 Blasenschatten.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "Irreführende Strömung",
+			"descriptionraw": "Passiv – <color=#FFFFFFFF>Beim Wechseln deiner Figuren, wenn aber Mona jetzt die aktive Figur ist:</color> Dieser Wechsel gilt nicht als „$[K1]“, sondern als „$[K2]“ (1-mal pro Runde).",
+			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Beim Wechseln deiner Figuren, wenn aber Mona jetzt die aktive Figur ist:</color> Dieser Wechsel gilt nicht als „<color=#FFFFFFFF>Kampfaktion</color>“, sondern als „<color=#FFFFFFFF>Schnellaktion</color>“ (1-mal pro Runde).",
+			"description": "Passiv – Beim Wechseln deiner Figuren, wenn aber Mona jetzt die aktive Figur ist: Dieser Wechsel gilt nicht als „Kampfaktion“, sondern als „Schnellaktion“ (1-mal pro Runde).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

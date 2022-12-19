@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "모나",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"물 원소",
+		"법구",
+		"몬드"
+	],
+	"storytitle": "별하늘의 물거울·모나",
+	"storytext": "승리와 패배는 모두 운명으로 정해진 것",
+	"source": "캣테일 술집에서 모나 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "인과 간파",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다.",
+			"description": "물 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "수중 환원",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112031]</color>을 소환한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 주고 <color=#FFFFFFFF>허영</color>을 소환한다.",
+			"description": "물 원소 피해를 1pt 주고 허영을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "별의 운명",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112032]</color>을 생성한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 4pt 주고 <color=#FFFFFFFF>포영</color>을 생성한다.",
+			"description": "물 원소 피해를 4pt 주고 포영을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "흐르는 허와 실",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>해당 캐릭터가 출전 캐릭터이며 아군이 「캐릭터 교체」 행동 진행 시:</color> 이번 교체를 「$[K1]」이 아닌 「$[K2]」으로 간주한다. (턴당 1회)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>해당 캐릭터가 출전 캐릭터이며 아군이 「캐릭터 교체」 행동 진행 시:</color> 이번 교체를 「<color=#FFFFFFFF>전투 행동</color>」이 아닌 「<color=#FFFFFFFF>빠른 행동</color>」으로 간주한다. (턴당 1회)",
+			"description": "[패시브] 해당 캐릭터가 출전 캐릭터이며 아군이 「캐릭터 교체」 행동 진행 시: 이번 교체를 「전투 행동」이 아닌 「빠른 행동」으로 간주한다. (턴당 1회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

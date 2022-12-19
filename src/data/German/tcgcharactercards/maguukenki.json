@@ -1,0 +1,97 @@
+{
+	"id": 2501,
+	"name": "Maguu Kenki",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Andere Waffen",
+		"Monster"
+	],
+	"storytitle": "Geniale Maschine – Maguu Kenki",
+	"storytext": "Heute irrt er immer am Ort umher, an dem das Schicksal durchtrennt wurde.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Maguu Kenki in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Ichimonji",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Einsamer Sturm",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C125011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Schwertschatten – Einsamer Sturm</color>.",
+			"description": "Verursacht 1 Pkt. Anemo-SCH, erschafft 1 Schwertschatten – Einsamer Sturm.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Frostiger Schatten",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C125012]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Schwertschatten – Galoppierender Frost</color>.",
+			"description": "Verursacht 1 Pkt. Kryo-SCH, erschafft 1 Schwertschatten – Galoppierender Frost.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Maschineller Tengu-Feger",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], löst den Effekt aller eigenen Beschwörungen von <color=#FFFFFFFF>Schwertschatten</color> aus (Kein Verbrauch ihrer Einsatzmöglichkeiten).",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 6 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, löst den Effekt aller eigenen Beschwörungen von <color=#FFFFFFFF>Schwertschatten</color> aus (Kein Verbrauch ihrer Einsatzmöglichkeiten).",
+			"description": "Verursacht 6 Pkt. Anemo-SCH, löst den Effekt aller eigenen Beschwörungen von Schwertschatten aus (Kein Verbrauch ihrer Einsatzmöglichkeiten).",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

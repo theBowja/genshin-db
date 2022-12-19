@@ -1,0 +1,80 @@
+{
+	"id": 1103,
+	"name": "Kaeya",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Cryo",
+		"Épée à une main",
+		"Mondstadt"
+	],
+	"storytitle": "Kaeya · Chevalier du froid",
+	"storytext": "Spécialisé dans l'éveil des vertus chevaleresques chez les autres !",
+	"source": "Obtenue dans le deck de départ",
+	"skills": [
+		{
+			"id": 11031,
+			"name": "Passe d'armes",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11032,
+			"name": "Attaque givrée",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color>.",
+			"description": "Inflige 3 pts de DGT Cryo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11033,
+			"name": "Valse glaciale",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée une <color=#FFFFFFFF>$[C111031|s2]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color> et crée une <color=#FFFFFFFF>stalactite</color>.",
+			"description": "Inflige 1 pt de DGT Cryo et crée une stalactite.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

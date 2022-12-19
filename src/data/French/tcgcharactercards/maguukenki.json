@@ -1,0 +1,97 @@
+{
+	"id": 2501,
+	"name": "Lame oni|s1:Lames oni",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anémo",
+		"Autre arme",
+		"Monstre"
+	],
+	"storytitle": "Mécanisme ingénieux - Lame oni",
+	"storytext": "Aujourd'hui encore, il patrouille toujours l'endroit où le destin a été rompu.",
+	"source": "Récompense pour avoir accepté un défi de taverne auprès de Prince à La Queue de Chat et remporté la victoire lors d'une partie amicale contre la Lame oni",
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Ichimonji",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Lame fulgurante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque une <color=#FFFFFFFF>$[C125011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> et invoque une <color=#FFFFFFFF>Épée d'ombre : Brise</color>.",
+			"description": "Inflige 1 pt de DGT Anémo et invoque une Épée d'ombre : Brise.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Assaut givré",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque une <color=#FFFFFFFF>$[C125012]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color> et invoque une <color=#FFFFFFFF>Épée d'ombre : Givre</color>.",
+			"description": "Inflige 1 pt de DGT Cryo et invoque une Épée d'ombre : Givre.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Balayage tengu falsifié",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT] et déclenche les effets de toutes vos invocations de type <color=#FFFFFFFF>Épée d'ombre</color>. (Ne consomme pas d'utilisation)",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 6 pts de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> et déclenche les effets de toutes vos invocations de type <color=#FFFFFFFF>Épée d'ombre</color>. (Ne consomme pas d'utilisation)",
+			"description": "Inflige 6 pts de DGT Anémo et déclenche les effets de toutes vos invocations de type Épée d'ombre. (Ne consomme pas d'utilisation)",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

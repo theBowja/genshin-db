@@ -1,0 +1,80 @@
+{
+	"id": 1202,
+	"name": "Xingqiu",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Su",
+		"Kılıç",
+		"Liyue"
+	],
+	"storytitle": "\"Gençliğin Baharı\" Xingqiu",
+	"storytext": "\"Bana mı öyle geliyor yoksa bugünlerde romanların kahramanları hep bir özel okulun öğrencisi mi oluyor...\"",
+	"source": "Xingqiu'yu Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 12021,
+			"name": "Guhua Tarzı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12022,
+			"name": "Ölümcül Yağmur",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karaktere $[K202] kazandırarak 1 <color=#FFFFFFFF>$[C112021]</color> oluşturur.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve bu karaktere <color=#80C0FFFF>{SPRITE_PRESET#2102}Su Etkisi</color> kazandırarak 1 <color=#FFFFFFFF>Yağmur Kılıcı</color> oluşturur.",
+			"description": "2 Su Hasarı verir ve bu karaktere Su Etkisi kazandırarak 1 Yağmur Kılıcı oluşturur.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12023,
+			"name": "Yağmurkesici",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karaktere $[K202] kazandırarak 1 <color=#FFFFFFFF>$[C112022]</color> oluşturur.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve bu karaktere <color=#80C0FFFF>{SPRITE_PRESET#2102}Su Etkisi</color> kazandırarak 1 <color=#FFFFFFFF>Gökkuşağı Kılıcı Tekniği</color> oluşturur.",
+			"description": "1 Su Hasarı verir ve bu karaktere Su Etkisi kazandırarak 1 Gökkuşağı Kılıcı Tekniği oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

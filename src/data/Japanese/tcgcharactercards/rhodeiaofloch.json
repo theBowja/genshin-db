@@ -1,0 +1,93 @@
+{
+	"id": 2201,
+	"name": "純水精霊·ローデシア",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"水元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "浄水の主·ローデシア",
+	"storytext": "「しかし、川や湖があって、空から雨が降る限り、水は消えない…」",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、純水精霊·ローデシアに挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 22011,
+			"name": "荒波",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。",
+			"description": "水元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22012,
+			"name": "純水幻造",
+			"descriptionraw": "1種類の<color=#FFFFFFFF>$[C122010]</color>をランダムで召喚する。（異なる種類を優先的に生成する）",
+			"descriptionreplaced": "1種類の<color=#FFFFFFFF>純水の幻形</color>をランダムで召喚する。（異なる種類を優先的に生成する）",
+			"description": "1種類の純水の幻形をランダムで召喚する。（異なる種類を優先的に生成する）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22013,
+			"name": "あらゆる形へ",
+			"descriptionraw": "2種類の<color=#FFFFFFFF>$[C122010]</color>をランダムで召喚する。（異なる種類を優先的に生成する）",
+			"descriptionreplaced": "2種類の<color=#FFFFFFFF>純水の幻形</color>をランダムで召喚する。（異なる種類を優先的に生成する）",
+			"description": "2種類の純水の幻形をランダムで召喚する。（異なる種類を優先的に生成する）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 22014,
+			"name": "潮汐と激流",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。味方の召喚物1つにつき、このダメージ+2。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。味方の召喚物1つにつき、このダメージ+2。",
+			"description": "水元素ダメージを2与える。味方の召喚物1つにつき、このダメージ+2。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1601,
+	"name": "Ningguang",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Toprak",
+		"Katalizör",
+		"Liyue"
+	],
+	"storytitle": "\"Örten Yıldız\" Ningguang",
+	"storytext": "Sakladığı en büyük sır, Liyue'nin bir sürü sırrını saklamasıdır.",
+	"source": "Ningguang'ı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 16011,
+			"name": "Parıldayan Parçacıklar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2106}<color=#FFE699FF>Toprak Hasarı</color> verir.",
+			"description": "1 Toprak Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16012,
+			"name": "Yeşim Tablet",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C116011]</color> oluşturur.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2106}<color=#FFE699FF>Toprak Hasarı</color> verir ve 1 <color=#FFFFFFFF>Yeşim Tablet</color> oluşturur.",
+			"description": "2 Toprak Hasarı verir ve 1 Yeşim Tablet oluşturur.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16013,
+			"name": "Yıldız Kıran",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Eğer <color=#FFFFFFFF>$[C116011]</color> alandaysa, bu Hasar 2 artar.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "6 {SPRITE_PRESET#2106}<color=#FFE699FF>Toprak Hasarı</color> verir. Eğer <color=#FFFFFFFF>Yeşim Tablet</color> alandaysa, bu Hasar 2 artar.",
+			"description": "6 Toprak Hasarı verir. Eğer Yeşim Tablet alandaysa, bu Hasar 2 artar.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

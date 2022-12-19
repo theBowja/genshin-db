@@ -1,0 +1,78 @@
+{
+	"id": 1305,
+	"name": "Yoimiya",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Pyro",
+		"Arco",
+		"Inazuma"
+	],
+	"storytitle": "Yoimiya - La Maestra de las Llamas",
+	"storytext": "¡Capitana y primera jugadora del equipo Naganohara en el onceavo torneo por invitación de Hanamizaka!",
+	"source": "Se obtiene tras retar y ganar a Yoimiya en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 13051,
+			"name": "Pirotecnia",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13052,
+			"name": "Danza de la pólvora",
+			"descriptionraw": "Este personaje entra en el estado de <color=#FFFFFFFF>$[C113051|s1]</color> (esta habilidad no genera {SPRITE_PRESET#1110}Energía).",
+			"descriptionreplaced": "Este personaje entra en el estado de <color=#FFFFFFFF>nitrofogata</color> (esta habilidad no genera {SPRITE_PRESET#1110}Energía).",
+			"description": "Este personaje entra en el estado de nitrofogata (esta habilidad no genera Energía).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 13053,
+			"name": "Saxifraga de oro",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C113052|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y crea una <color=#FFFFFFFF>ascua dorada</color>.",
+			"description": "Inflige 3 pts. de Daño Pyro y crea una ascua dorada.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

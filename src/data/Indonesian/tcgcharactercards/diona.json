@@ -1,0 +1,80 @@
+{
+	"id": 1102,
+	"name": "Diona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Cryo",
+		"Bow",
+		"Mondstadt"
+	],
+	"storytitle": "\"Kätzlein Cocktail\" Diona",
+	"storytext": "Gunakan 1% tenaga untuk meracik minuman dan 99% tenaga untuk ... menolak kekalahan.",
+	"source": "Didapatkan setelah mengundang Diona ke Cat's Tail dan menang dalam Pertandingan Persahabatan melawannya",
+	"skills": [
+		{
+			"id": 11021,
+			"name": "Kätzlein Style",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11022,
+			"name": "Icy Paws",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan menciptakan <color=#FFFFFFFF>$[C111021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color> dan menciptakan <color=#FFFFFFFF>Cat-Claw Shield</color>.",
+			"description": "Mengakibatkan 2 poin Cryo DMG dan menciptakan Cat-Claw Shield.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11023,
+			"name": "Signature Mix",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], memulihkan 2 poin HP Karakter ini, dan memanggil <color=#FFFFFFFF>$[C111023]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>, memulihkan 2 poin HP Karakter ini, dan memanggil <color=#FFFFFFFF>Drunken Mist</color>.",
+			"description": "Mengakibatkan 1 poin Cryo DMG, memulihkan 2 poin HP Karakter ini, dan memanggil Drunken Mist.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

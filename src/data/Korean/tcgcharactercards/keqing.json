@@ -1,0 +1,80 @@
+{
+	"id": 1403,
+	"name": "각청",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"번개 원소",
+		"한손검",
+		"리월"
+	],
+	"storytitle": "질뢰쾌우·각청",
+	"storytext": "그녀는 누구도 생각지 못한 덱을 구축해서, 상상할 수조차 없는 승리를 수없이 거뒀다",
+	"source": "캣테일 술집에서 각청 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 14031,
+			"name": "운래 검법",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14032,
+			"name": "성신 회귀",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C114031]</color> 카드를 생성한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>뇌설</color> 카드를 생성한다.",
+			"description": "번개 원소 피해를 3pt 주고 뇌설 카드를 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14033,
+			"name": "천가 순유",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]를 3pt</color> 준다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 4pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF><color=#FFFFFFFF>관통 피해</color>를 3pt</color> 준다.",
+			"description": "번개 원소 피해를 4pt 주고 상대의 모든 대기 캐릭터에게 관통 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

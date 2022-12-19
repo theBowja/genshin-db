@@ -1,0 +1,78 @@
+{
+	"id": 1502,
+	"name": "Jean",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Rüzgar",
+		"Kılıç",
+		"Mondstadt"
+	],
+	"storytitle": "\"Karahindiba Şövalyesi\" Jean",
+	"storytext": "En azından nihai zaferi elde edene kadar yaptığı şeyin yeterli olduğuna asla ikna olmaz.",
+	"source": "Jean'i Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostane Düelloyu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 15021,
+			"name": "Favonius Kılıç Tekniği",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15022,
+			"name": "Bora Kılıcı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve rakibin karakteri zorla bir sonraki karakterle değiştirilir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir ve rakibin karakteri zorla bir sonraki karakterle değiştirilir.",
+			"description": "3 Rüzgar Hasarı verir ve rakibin karakteri zorla bir sonraki karakterle değiştirilir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15023,
+			"name": "Karahindiba Yeli",
+			"descriptionraw": "Tüm karakterlerinin Canını 2 yeniler ve 1 <color=#FFFFFFFF>$[C115021]</color> çağırır.",
+			"descriptionreplaced": "Tüm karakterlerinin Canını 2 yeniler ve 1 <color=#FFFFFFFF>Karahindiba Tarlası</color> çağırır.",
+			"description": "Tüm karakterlerinin Canını 2 yeniler ve 1 Karahindiba Tarlası çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

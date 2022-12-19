@@ -1,0 +1,80 @@
+{
+	"id": 1102,
+	"name": "디오나",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"활",
+		"몬드"
+	],
+	"storytitle": "캐츠라인 칵테일·디오나",
+	"storytext": "1%의 힘으로 술을 섞고, 99%의 힘으로… 거절에 실패",
+	"source": "캣테일 술집에서 디오나 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 11021,
+			"name": "사냥꾼의 사격술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11022,
+			"name": "꽁꽁젤리",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111021]</color>을 생성한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>꽁꽁젤리 보호막</color>을 생성한다.",
+			"description": "얼음 원소 피해를 2pt 주고 꽁꽁젤리 보호막을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11023,
+			"name": "특제 칵테일",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 해당 캐릭터의 HP를 2pt 치유하며 <color=#FFFFFFFF>$[C111023]</color>을 소환한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 1pt 주고 해당 캐릭터의 HP를 2pt 치유하며 <color=#FFFFFFFF>술 안개 영역</color>을 소환한다.",
+			"description": "얼음 원소 피해를 1pt 주고 해당 캐릭터의 HP를 2pt 치유하며 술 안개 영역을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1202,
+	"name": "Xingqiu",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Hydro",
+		"Einhänder",
+		"Liyue"
+	],
+	"storytitle": "Guhua und Feiyun – Xingqiu",
+	"storytext": "„Geht es nur mir so, oder sind die Protagonisten der heutigen Romane alle nur Schüler ...“",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Xingqiu in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 12021,
+			"name": "Guhua-Schwertkunst",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12022,
+			"name": "Wolkenbruch",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht der Figur das $[K202], erschafft 1 <color=#FFFFFFFF>$[C112021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, verleiht der Figur das <color=#80C0FFFF>{SPRITE_PRESET#2102}Hydro-Attribut</color>, erschafft 1 <color=#FFFFFFFF>Regenschwert</color>.",
+			"description": "Verursacht 2 Pkt. Hydro-SCH, verleiht der Figur das Hydro-Attribut, erschafft 1 Regenschwert.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12023,
+			"name": "Regen und Bogen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht der Figur das $[K202], erschafft 1 <color=#FFFFFFFF>$[C112022]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, verleiht der Figur das <color=#80C0FFFF>{SPRITE_PRESET#2102}Hydro-Attribut</color>, erschafft 1 <color=#FFFFFFFF>Regenbogentechnik</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH, verleiht der Figur das Hydro-Attribut, erschafft 1 Regenbogentechnik.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

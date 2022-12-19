@@ -1,0 +1,80 @@
+{
+	"id": 1601,
+	"name": "凝光",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"岩元素",
+		"法器",
+		"璃月"
+	],
+	"storytitle": "月を覆う天権·凝光",
+	"storytext": "彼女が守っている最大の秘密。それは自分が璃月港の数多くの秘密を守っているということ。",
+	"source": "キャッツテールで凝光を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 16011,
+			"name": "千金擲",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を1与える。",
+			"description": "岩元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16012,
+			"name": "璇璣屏",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C116011]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を2与え、<color=#FFFFFFFF>璇璣屏</color>を生成する。",
+			"description": "岩元素ダメージを2与え、璇璣屏を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16013,
+			"name": "天権崩玉",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。もし<color=#FFFFFFFF>$[C116011]</color>がフィールドに存在する場合、このダメージ+2。",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を6与える。もし<color=#FFFFFFFF>璇璣屏</color>がフィールドに存在する場合、このダメージ+2。",
+			"description": "岩元素ダメージを6与える。もし璇璣屏がフィールドに存在する場合、このダメージ+2。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

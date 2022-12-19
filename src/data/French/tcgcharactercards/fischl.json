@@ -1,0 +1,80 @@
+{
+	"id": 1401,
+	"name": "Fischl",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Électro",
+		"Arc",
+		"Mondstadt"
+	],
+	"storytitle": "Fischl · Princesse du châtiment !",
+	"storytext": "« Oz, mon familier, déploie tes ailes et tisse-moi un nouveau destin dans l'obscurité de cette nuit ! »\n« Mademoiselle, je n'ai aucun moyen de vous passer des cartes... »",
+	"source": "Récompense pour avoir invité Fischl à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 14011,
+			"name": "Flèche de culpabilité",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14012,
+			"name": "Ailes de surveillance nocturne",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque un <color=#FFFFFFFF>$[C114011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et invoque un <color=#FFFFFFFF>Oz</color>.",
+			"description": "Inflige 1 pt de DGT Électro et invoque un Oz.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14013,
+			"name": "Incarnation de la nuit",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT] et inflige <color=#FFFFFFFF>2 pts de $[K5]</color> à tous les personnages ennemis en attente.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 4 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et inflige <color=#FFFFFFFF>2 pts de <color=#FFFFFFFF>DGT de perforation</color></color> à tous les personnages ennemis en attente.",
+			"description": "Inflige 4 pts de DGT Électro et inflige 2 pts de DGT de perforation à tous les personnages ennemis en attente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

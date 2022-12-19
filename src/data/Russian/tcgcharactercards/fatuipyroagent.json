@@ -1,0 +1,90 @@
+{
+	"id": 2301,
+	"name": "Фатуи: Пиро агент",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Пиро",
+		"Прочее",
+		"Фатуи"
+	],
+	"storytitle": "«Клинок расплаты» агент Фатуи",
+	"storytext": "«Долг нужно вернуть. Не важно, жив ты или уже нет...»",
+	"source": "Награда за победу над Пиро агентом Фатуи в Дружеской дуэли в «Кошкином хвосте»",
+	"skills": [
+		{
+			"id": 23011,
+			"name": "Укол",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23012,
+			"name": "Подходящий момент",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Персонаж получает <color=#FFFFFFFF>$[C123011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед. Персонаж получает <color=#FFFFFFFF>Скрытность</color>.",
+			"description": "Наносит Пиро урон, 1 ед. Персонаж получает Скрытность.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23013,
+			"name": "Испепеляющий кинжал",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 5 ед.",
+			"description": "Наносит Пиро урон, 5 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23014,
+			"name": "Мастер скрытности",
+			"descriptionraw": "(Пассивный навык) В начале сражения у персонажа будет <color=#FFFFFFFF>$[C123011]</color>.",
+			"descriptionreplaced": "(Пассивный навык) В начале сражения у персонажа будет <color=#FFFFFFFF>Скрытность</color>.",
+			"description": "(Пассивный навык) В начале сражения у персонажа будет Скрытность.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

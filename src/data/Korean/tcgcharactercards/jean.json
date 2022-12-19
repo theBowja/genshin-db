@@ -1,0 +1,78 @@
+{
+	"id": 1502,
+	"name": "진",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"바람 원소",
+		"한손검",
+		"몬드"
+	],
+	"storytitle": "민들레 기사·진",
+	"storytext": "그녀는 언제나 자신이 아직 멀었다고 생각한다. 최종 승리를 거머쥐기 전까지는",
+	"source": "캣테일 술집에서 진 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 15021,
+			"name": "페보니우스 검술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15022,
+			"name": "풍압검",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 출전 캐릭터를 다음 캐릭터로 강제 교체한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 3pt 주고 상대의 출전 캐릭터를 다음 캐릭터로 강제 교체한다.",
+			"description": "바람 원소 피해를 3pt 주고 상대의 출전 캐릭터를 다음 캐릭터로 강제 교체한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15023,
+			"name": "민들레 바람",
+			"descriptionraw": "모든 아군 캐릭터의 HP를 2pt 치유하고 <color=#FFFFFFFF>$[C115021]</color>을 소환한다.",
+			"descriptionreplaced": "모든 아군 캐릭터의 HP를 2pt 치유하고 <color=#FFFFFFFF>민들레 영역</color>을 소환한다.",
+			"description": "모든 아군 캐릭터의 HP를 2pt 치유하고 민들레 영역을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

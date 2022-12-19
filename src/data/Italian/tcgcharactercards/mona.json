@@ -1,0 +1,90 @@
+{
+	"id": 1203,
+	"name": "Mona",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Hydro",
+		"Catalizzatore",
+		"Mondstadt"
+	],
+	"storytitle": "Mona, Riflesso astrale",
+	"storytext": "Vittoria o sconfitta? È tutto scritto nelle stelle.",
+	"source": "Ricompensa ottenuta sfidando Mona a duello alla Coda di Gatto e battendola in un duello amichevole",
+	"skills": [
+		{
+			"id": 12031,
+			"name": "Increspatura del fato",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>DAN da Hydro</color>.",
+			"description": "Infligge 1 DAN da Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12032,
+			"name": "Condanna riflessa",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], invoca un <color=#FFFFFFFF>$[C112031]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>DAN da Hydro</color>, invoca un <color=#FFFFFFFF>Riflesso</color>.",
+			"description": "Infligge 1 DAN da Hydro, invoca un Riflesso.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12033,
+			"name": "Fantasma stellaris",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] e crea una <color=#FFFFFFFF>$[C112032]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Infligge 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>DAN da Hydro</color> e crea una <color=#FFFFFFFF>Bolla illusoria</color>.",
+			"description": "Infligge 4 DAN da Hydro e crea una Bolla illusoria.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12034,
+			"name": "Torrente illusorio",
+			"descriptionraw": "(Passiva) <color=#FFFFFFFF>Quando usi Cambia personaggio mentre Mona è il tuo personaggio attivo</color>, questo cambio è considerato come $[K2] invece che $[K1] (una volta per turno).",
+			"descriptionreplaced": "(Passiva) <color=#FFFFFFFF>Quando usi Cambia personaggio mentre Mona è il tuo personaggio attivo</color>, questo cambio è considerato come <color=#FFFFFFFF>Azione rapida</color> invece che <color=#FFFFFFFF>Azione di combattimento</color> (una volta per turno).",
+			"description": "(Passiva) Quando usi Cambia personaggio mentre Mona è il tuo personaggio attivo, questo cambio è considerato come Azione rapida invece che Azione di combattimento (una volta per turno).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		}
+	]
+}

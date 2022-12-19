@@ -1,0 +1,80 @@
+{
+	"id": 2202,
+	"name": "Soldado Fatui - Doncella del Espejo",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Hydro",
+		"Otras armas",
+		"Fatui"
+	],
+	"storytitle": "Doncella de Snezhnaya - Enviada del espejo",
+	"storytext": "El resplandeciente espejo de agua resguarda todos los secretos...",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra la Doncella del Espejo de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 22021,
+			"name": "Hidrobomba",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22022,
+			"name": "Explosión acuática",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y el personaje objetivo entra en estado de <color=#FFFFFFFF>$[C122021|s2]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y el personaje objetivo entra en estado de <color=#FFFFFFFF>refracción</color>.",
+			"description": "Inflige 3 pts. de Daño Hydro y el personaje objetivo entra en estado de refracción.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22023,
+			"name": "Reflejo ondulado",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 5 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Inflige 5 pts. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
