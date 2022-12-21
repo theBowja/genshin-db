@@ -1,50 +1,63 @@
 {
-  "name": "genshin-db",
-  "version": "4.3.3",
-  "description": "Genshin Impact v3.3 JSON data. Search and get results in all in-game languages! Sources from the fandom wiki and GenshinData repo.",
-  "main": "./src/main.js",
-  "types": "./types/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generateindex": "cd src && node ./generate.js",
-    "assemble": "cd src && node ./generate.js && cd ../ && node ./examples/examples.js",
-    "build": "node ./webpack/build.js",
-    "buildAllDist": "node ./webpack/buildAllDist.js"
-  },
-  "keywords": [
-    "genshin-impact",
-    "genshinimpact",
-    "genshin"
-  ],
-  "author": "thebowja",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/theBowja/genshin-db.git"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "fuzzysort": "^1.1.4",
-    "pako": "^2.0.4"
-  },
-  "devDependencies": {
-    "arraybuffer-loader": "^1.0.8",
-    "follow-redirects": "^1.14.9",
-    "webpack": "^5.9.0",
-    "webpack-cli": "^4.2.0"
-  },
-  "files": [
-    "examples/EXAMPLES.md",
-    "examples/index.ts",
-    "README.md",
-    "types/*",
-    "src/altnames.js",
-    "src/language.js",
-    "src/folder.js",
-    "src/helper.js",
-    "src/main.js",
-    "src/getdata.js",
-    "src/Options.js",
-    "src/min/data.min.json",
-    "src/design.json"
-  ]
+	"name": "genshin-db",
+	"version": "4.3.3",
+	"description": "Genshin Impact v3.3 JSON data. Search and get results in all in-game languages! Sources from the fandom wiki and GenshinData repo.",
+	"main": "./src/main.js",
+	"types": "./types/index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"generateindex": "cd src && node ./generate.js",
+		"assemble": "cd src && node ./generate.js && cd ../ && node ./examples/examples.js",
+		"build": "node ./webpack/build.js",
+		"buildAllDist": "node ./webpack/buildAllDist.js",
+		"publishtcg": "npm version "
+	},
+	"keywords": [
+		"genshin-impact",
+		"genshinimpact",
+		"genshin"
+	],
+	"tcg": {
+		"name": "genshin-db-tcg",
+		"description": "Genshin Impact Trading Card Game JSON data in all in-game languages.",
+		"keywords": [
+			"genshin-impact",
+			"genshinimpact",
+			"genshin",
+			"genshin tcg",
+			"genshin impact tcg",
+			"genshin card game"
+		]
+	},
+	"author": "thebowja",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/theBowja/genshin-db.git"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"fuzzysort": "^1.1.4",
+		"pako": "^2.0.4"
+	},
+	"devDependencies": {
+		"arraybuffer-loader": "^1.0.8",
+		"follow-redirects": "^1.14.9",
+		"webpack": "^5.9.0",
+		"webpack-cli": "^4.2.0"
+	},
+	"files": [
+		"examples/EXAMPLES.md",
+		"examples/index.ts",
+		"README.md",
+		"types/*",
+		"src/altnames.js",
+		"src/language.js",
+		"src/folder.js",
+		"src/helper.js",
+		"src/main.js",
+		"src/getdata.js",
+		"src/Options.js",
+		"src/min/data.min.json",
+		"src/design.json"
+	]
 }
