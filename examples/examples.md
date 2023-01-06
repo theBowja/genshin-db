@@ -578,6 +578,7 @@ const genshindb = require('genshin-db');
   query: 'arrow',
   folder: 'characters',
   match: 'Firm Arrowhead',
+  matchfolder: 'characters',
   matchtype: 'categories',
   options: {
     dumpResult: true,

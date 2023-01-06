@@ -1,7 +1,7 @@
 const fs = require('fs');
 let language = require('./language.js');
 const design = require('./design.json');
-const Folder = require('./folder.js');
+const Folder = require('./folder.js').FoldersEnum;
 
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
 // REQUIRES NODE v13+

@@ -37,8 +37,9 @@ declare module "genshin-db" {
 
 	export interface DumpResult<R, O extends QueryOptions, Q extends string> {
 	    query: Q;
-	    folder: Folder;
+	    folder: Folder | Folder[];
 	    match: string | undefined;
+	    matchfolder: Folder;
 	    matchtype: MatchType | undefined;
 	    options: QueryOptions;
 	    filename: (O extends { matchCategories: true } ? string[] : undefined) | string | undefined;
@@ -107,24 +108,30 @@ declare module "genshin-db" {
 	//export const setOptions: (options: QueryOptions): void 
 	//export const getOptions: ():
 
+	export const achievementgroups: QueryFunction<AchievementGroup>;
+	export const achievements: QueryFunction<Achievement>;
+	export const adventureranks: QueryFunction<AdventureRank>;
+	export const animals: QueryFunction<Animal>;
 	export const artifacts: QueryFunction<Artifact>;
 	export const characters: QueryFunction<Character>;
-	export const outfits: QueryFunction<Outfit>;
 	export const constellations: QueryFunction<Constellation>;
+	export const crafts: QueryFunction<Craft>;
+	export const domains: QueryFunction<Domain>;
 	export const elements: QueryFunction<Element>;
-	export const rarity: QueryFunction<Rarity>;
+	export const enemies: QueryFunction<Enemy>;
 	export const foods: QueryFunction<Food>;
+	export const geographies: QueryFunction<Geography>;
+	export const materials: QueryFunction<Material>;
+	export const namecards: QueryFunction<Namecard>;
+	export const outfits: QueryFunction<Outfit>;
+	export const rarity: QueryFunction<Rarity>;
 	export const talentmaterialtypes: QueryFunction<TalentMaterial>;
 	export const talents: QueryFunction<Talent>;
 	export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
 	export const weapons: QueryFunction<Weapon>;
-	export const materials: QueryFunction<Material>;
-	export const domains: QueryFunction<Domain>;
-	export const enemies: QueryFunction<Enemy>;
-	export const achievements: QueryFunction<Achievement>;
-	export const achievementgroups: QueryFunction<AchievementGroup>;
-	export const adventureranks: QueryFunction<AdventureRank>;
-	export const crafts: QueryFunction<Craft>;
+	export const windgliders: QueryFunction<WindGlider>;
+
+
 
 	export interface categories {
 	    (query: string, folder: Folder, opts: QueryOptions): undefined | string[];
@@ -162,6 +169,7 @@ declare module "genshin-db" {
 
 	// not sure how to add default true to "overwrite" param
 	export function addData(data: ArrayBuffer | any, overwrite? : boolean): void;
-	export function searchFolder(folder: string, query: string, opts?: QueryOptions): any
+	export function searchFolder(folder: string, query: string, opts?: QueryOptions): any;
+	export function searchMultipleFolders(folders: string[], query: string, opts?: QueryOptions): any;
 
 }

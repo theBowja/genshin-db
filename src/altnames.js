@@ -1,4 +1,4 @@
-const Folder = require('./folder.js');
+const { FoldersEnum } = require('./folder.js');
 const { LanguagesEnum } = require('./language.js');
 const { getIndex } = require('./getdata.js');
 
@@ -11,7 +11,7 @@ let altnameindex = { count: 0 };
 /* type checking of altnameindex
 {
 	count: number;
-	[folder: Folder]?: {
+	[folder: FoldersEnum]?: {
 		[language: LanguagesEnum]?: {
 			[altname: string]: filename; // filename is a string
 		}
@@ -26,7 +26,7 @@ let baselimits = {
 
 
 function isValidFolder(folder) {
-	return typeof folder === 'string' && Folder[folder];
+	return typeof folder === 'string' && FoldersEnum[folder];
 }
 function isValidLanguage(language) {
 	return typeof language === 'string' && LanguagesEnum[language];

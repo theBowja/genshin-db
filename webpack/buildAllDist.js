@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const design = require('../src/design.json');
 const languagesArr = require('../src/language.js').languages;
-const foldersArr = Object.values(require('../src/folder.js'));
+const foldersArr = require('../src/folder.js').folders;
 
 const execSync = require('child_process').execSync;
 

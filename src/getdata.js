@@ -271,7 +271,7 @@ function assignArray(obj, keyPath, lastKey, array) {
 }
 
 const languagesArr = require('./language.js').languages;
-const foldersArr = Object.values(require('./folder.js'));
+const foldersArr = require('./folder.js').folders;
 function addData(newdata, override = true) {
     if(newdata instanceof ArrayBuffer || (Buffer && newdata instanceof Buffer)) {
         newdata = JSON.parse(pako.ungzip(newdata, { to: 'string' }));
