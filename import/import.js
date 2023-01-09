@@ -4,7 +4,7 @@
 
 const fs = require('fs');
 const language = require('../src/language.js');
-//const genshindb = require('./src/main.js');
+//const genshindb = require('../src/main.js');
 
 
 if(!fs.existsSync('./import/EN')) {
@@ -17,16 +17,16 @@ let myimages = {};
 
 // FOR DATA ONLY
 function getDbData(path) {
-    try {
-        return require(`../src/data/${path}`);
-    } catch(e) {
-        return {};
-    }
+	try {
+		return require(`../src/data/${path}`);
+	} catch(e) {
+		return {};
+	}
 }
 
 function clearObject(obj) {
 	for (let key in obj)
-	    if (obj.hasOwnProperty(key)) delete obj[key];
+		if (obj.hasOwnProperty(key)) delete obj[key];
 }
 
 function normalizeStr(str) { return str.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
@@ -250,12 +250,41 @@ function updateURLs() {
 				if(existing[filename] === undefined) existing[filename] = {};
 				existing[filename].fandom = `https://genshin-impact.fandom.com/wiki/${mycharacter.name.replace(/ /g, '_')}`;
 			});
-		 	fs.mkdirSync(`../src/data/url`, { recursive: true });
-		 	fs.writeFileSync(`../src/data/url/${folder}.json`, JSON.stringify(existing, null, '\t'));
+			fs.mkdirSync(`../src/data/url`, { recursive: true });
+			fs.writeFileSync(`../src/data/url/${folder}.json`, JSON.stringify(existing, null, '\t'));
 		} else {
 			console.log(`updateURLs: ${folder} folder not found`);
 		}
 	}
+}
+
+function logNameChange(version, language, folder, dataid, filename, from, to) {
+	if (version === undefined || version === '') return console.log('Cannot log namechange when version is not provided');
+
+	fs.mkdirSync(`./logs/namechange`, { recursive: true });
+	let namechange = [];
+	try {
+		namechange = require(`./logs/namechange/${version}`);
+	} catch(e) {}
+
+	const match = namechange.find(e => e.language === language && e.folder === folder && e.filename === filename);
+	if (match) {
+		match.dataid = dataid;
+		match.from = from;
+		match.to = to;
+	} else {
+		namechange.push({
+			language: language,
+			folder: folder,
+			filename: filename,
+			dataid: dataid,
+			from: from,
+			to: to
+		});
+	}
+
+	namechange = namechange.sort((a, b) => a.language.localeCompare(b.language) | a.folder.localeCompare(b.folder) | a.filename.localeCompare(b.filename));
+	fs.writeFileSync(`./logs/namechange/${version}.json`, JSON.stringify(namechange, null, '\t'));
 }
 
 function splitFromTo(str) {
@@ -500,7 +529,7 @@ async function collateMaterial(existing, newdata, lang, importconfig, skipimager
 	if(existing.daysofweek && existing.daysofweek.length !== 0 && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
 	clearObject(existing);
 	let copyover = ['name', 'dupealias', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
-	                  'daysofweek', 'source'];
+					  'daysofweek', 'source'];
 	existing.name = newdata.name;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
@@ -605,7 +634,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 
 			let before = JSON.stringify(dbdata);
 			if (dbdata && dbdata.name && dbdata.name !== importdata.name) {
-				console.log(`Name change for ${language.languageMap[langC]} ${filename} from ${dbdata.name} to ${importdata.name}`);
+				logNameChange(gameVersion, language.languageMap[langC], folder, importdata.id, filename, dbdata.name, importdata.name);
 			}
 			if (collateFunc)
 				await collateFunc(dbdata, importdata, language.languageMap[langC], importconfig[folder], skipimageredirect, dbimages ? dbimages[filename] : undefined);
