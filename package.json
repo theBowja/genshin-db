@@ -11,25 +11,13 @@
 		"assemble": "cd src && node ./generate.js && cd ../ && node ./examples/examples.js",
 		"build": "node ./webpack/build.js",
 		"buildAllDist": "node ./webpack/buildAllDist.js",
-		"publishtcg": "npm version "
+		"publish": "cd publish && node ./publish.js"
 	},
 	"keywords": [
 		"genshin-impact",
 		"genshinimpact",
 		"genshin"
 	],
-	"tcg": {
-		"name": "genshin-db-tcg",
-		"description": "Genshin Impact Trading Card Game JSON data in all in-game languages.",
-		"keywords": [
-			"genshin-impact",
-			"genshinimpact",
-			"genshin",
-			"genshin tcg",
-			"genshin impact tcg",
-			"genshin card game"
-		]
-	},
 	"author": "thebowja",
 	"repository": {
 		"type": "git",
@@ -49,6 +37,7 @@
 	"files": [
 		"examples/EXAMPLES.md",
 		"examples/index.ts",
+		"LICENSE",
 		"README.md",
 		"types/*",
 		"src/altnames.js",
