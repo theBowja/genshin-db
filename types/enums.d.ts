@@ -6,12 +6,14 @@ declare module "genshin-db" {
 		French             = "French",
 		German             = "German",
 		Indonesian         = "Indonesian",
+		Italian            = "Italian",
 		Japanese           = "Japanese",
 		Korean             = "Korean",
 		Portuguese         = "Portuguese",
 		Russian            = "Russian",
 		Spanish            = "Spanish",
 		Thai               = "Thai",
+		Turkish            = "Turkish",
 		Vietnamese         = "Vietnamese"
 	}
 
@@ -41,8 +43,16 @@ declare module "genshin-db" {
 
 		adventureranks = "adventureranks",
 
-		rarity         = "rarity", // depreciated
-		elements       = "elements"
+		rarity         = "rarity", // deprecated
+		elements       = "elements",
+
+		tcgactioncards    = "tcgactioncards",
+		tcgcardbacks      = "tcgcardbacks",
+		tcgcardboxes      = "tcgcardboxes",
+		tcgcharactercards = "tcgcharactercards",
+		tcgdetailedrules  = "tcgdetailedrules",
+		tcgkeywords       = "tcgkeywords",
+		tcglevelrewards   = "tcglevelrewards"
 	}
 
 	export enum MatchType {

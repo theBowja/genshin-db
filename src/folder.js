@@ -30,7 +30,15 @@ const FoldersEnum = {
 	animals        : 'animals',
 	namecards      : 'namecards',
 	geographies    : 'geographies',
-	adventureranks : 'adventureranks'
+	adventureranks : 'adventureranks',
+
+	tcgactioncards:    'tcgactioncards',
+	tcgcardbacks:      'tcgcardbacks',
+	tcgcardboxes:      'tcgcardboxes',
+	tcgcharactercards: 'tcgcharactercards',
+	tcgdetailedrules:  'tcgdetailedrules',
+	tcgkeywords:       'tcgkeywords',
+	tcglevelrewards:   'tcglevelrewards'
 };
 
 const folders = Object.values(FoldersEnum);

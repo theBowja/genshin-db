@@ -428,6 +428,28 @@ genshin.crafts = genshin.craft = function (query, opts) {
     return retrieveData(query, Folder.crafts, opts);
 }
 
+genshin.tcgactioncards = genshin.tcgactioncard = function (query, opts) {
+    return retrieveData(query, Folder.tcgactioncards, opts);
+}
+genshin.tcgcardbacks = genshin.tcgcardback = function (query, opts) {
+    return retrieveData(query, Folder.tcgcardbacks, opts);
+}
+genshin.tcgcardboxes = genshin.tcgcardbox = function (query, opts) {
+    return retrieveData(query, Folder.tcgcardboxes, opts);
+}
+genshin.tcgcharactercards = genshin.tcgcharactercard = function (query, opts) {
+    return retrieveData(query, Folder.tcgcharactercards, opts);
+}
+genshin.tcgdetailedrules = genshin.tcgdetailedrule = function (query, opts) {
+    return retrieveData(query, Folder.tcgdetailedrules, opts);
+}
+genshin.tcgkeywords = genshin.tcgkeyword = function (query, opts) {
+    return retrieveData(query, Folder.tcgkeywords, opts);
+}
+genshin.tcglevelrewards = genshin.tcglevelreward = function (query, opts) {
+    return retrieveData(query, Folder.tcglevelrewards, opts);
+}
+
 /**
  * Get data in any specified folder.
  * @param {string} folder - Folder name. For example: 'characters'.

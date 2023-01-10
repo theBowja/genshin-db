@@ -21,6 +21,14 @@
 /// <reference path="./folders/windgliders.d.ts" />
 /// <reference path="./folders/crafts.d.ts" />
 
+/// <reference path="./folders/tcgactioncards.d.ts" />
+/// <reference path="./folders/tcgcardbacks.d.ts" />
+/// <reference path="./folders/tcgcardboxes.d.ts" />
+/// <reference path="./folders/tcgcharactercards.d.ts" />
+/// <reference path="./folders/tcgdetailedrules.d.ts" />
+/// <reference path="./folders/tcgkeywords.d.ts" />
+/// <reference path="./folders/tcglevelrewards.d.ts" />
+
 /// <reference path="./enums.d.ts" />
 
 declare module "genshin-db" {
@@ -130,6 +138,14 @@ declare module "genshin-db" {
 	export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
 	export const weapons: QueryFunction<Weapon>;
 	export const windgliders: QueryFunction<WindGlider>;
+
+	export const tcgactioncards: QueryFunction<TcgActionCards>;
+	export const tcgcardbacks: QueryFunction<TcgCardBacks>;
+	export const tcgcardboxes: QueryFunction<TcgCardBoxes>;
+	export const tcgcharactercards: QueryFunction<TcgCharacterCards>;
+	export const tcgdetailedrules: QueryFunction<TcgDetailedRules>;
+	export const tcgkeywords: QueryFunction<TcgKeywords>;
+	export const tcglevelrewards: QueryFunction<TcgLevelRewards>;
 
 
 
