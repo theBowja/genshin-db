@@ -287,6 +287,32 @@ function logNameChange(version, language, folder, dataid, filename, from, to) {
 	fs.writeFileSync(`./logs/namechange/${version}.json`, JSON.stringify(namechange, null, '\t'));
 }
 
+function logNewData(version, folder, dataid, filename) {
+	if (version === undefined || version === '') return console.log('Cannot log newdata when version is not provided');
+
+	fs.mkdirSync(`./logs/newdata`, { recursive: true });
+	let newdata = {};
+	try {
+		newdata = require(`./logs/newdata/${version}`);
+	} catch(e) {}
+
+	if (newdata[folder] === undefined) newdata[folder] = [];
+
+	const match = newdata[folder].find(e => dataid !== undefined && e.dataid === dataid || e.filename === filename);
+	if (match) {
+		match.dataid = dataid;
+		match.filename = filename;
+	} else {
+		newdata[folder].push({
+			dataid: dataid,
+			filename: filename
+		});
+	}
+
+	newdata[folder] = newdata[folder].sort((a, b) => ((a.dataid|0 - b.dataid|0) | a.filename.localeCompare(b.filename)));
+	fs.writeFileSync(`./logs/newdata/${version}.json`, JSON.stringify(newdata, null, '\t'));
+}
+
 function splitFromTo(str) {
 	for (const splitter of ['=>', '->', '>', '|'])
 		if (str.includes(splitter)) return str.split(splitter);
@@ -633,9 +659,11 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			importdata.aliases = dbdata.aliases;
 
 			let before = JSON.stringify(dbdata);
-			if (dbdata && dbdata.name && dbdata.name !== importdata.name) {
+			if (dbdata && dbdata.name && dbdata.name !== importdata.name)
 				logNameChange(gameVersion, language.languageMap[langC], folder, importdata.id, filename, dbdata.name, importdata.name);
-			}
+			if (dbdata && dbdata.name === undefined)
+				logNewData(gameVersion, folder, importdata.id, filename);
+
 			if (collateFunc)
 				await collateFunc(dbdata, importdata, language.languageMap[langC], importconfig[folder], skipimageredirect, dbimages ? dbimages[filename] : undefined);
 			else
