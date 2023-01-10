@@ -12,7 +12,7 @@ const file = helper.readAndCacheFile(namespace, './package.json', 'json');
 console.log(file);
 
 
-restoreFilesFromCache(namespace);
+helper.restoreFilesFromCache(namespace);
 
 	// Read and cache the files we want to change.
 
