@@ -19,6 +19,10 @@ function readAndCacheFile(namespace, pathfromprojectroot, filetype) {
 	return undefined;
 }
 
+function writeFile(pathfromprojectroot, contents) {
+	fs.writeFileSync(`../${pathfromprojectroot}`, contents);
+}
+
 function restoreFilesFromCache(namespace) {
 	if (cache[namespace] === undefined) return;
 
@@ -29,5 +33,6 @@ function restoreFilesFromCache(namespace) {
 
 module.exports = {
 	readAndCacheFile: readAndCacheFile,
+	writeFile: writeFile,
 	restoreFilesFromCache: restoreFilesFromCache
 };

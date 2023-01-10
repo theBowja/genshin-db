@@ -5,11 +5,17 @@ const execSync = require('child_process').execSync;
 const namespace = 'tcg';
 
 
-// const packagejson = require('../../package.json');
 
-const file = helper.readAndCacheFile(namespace, './package.json', 'json');
+const packagejson = helper.readAndCacheFile(namespace, './package.json', 'json');
+const replacementpackagejson = require('./package.json');
+for (let [key, value] of Object.entries(replacementpackagejson))
+	packagejson[key] = value;
 
-console.log(file);
+helper.writeFile('./package.json', JSON.stringify(packagejson, null, '\t'));
+
+
+
+console.log(packagejson);
 
 
 helper.restoreFilesFromCache(namespace);
