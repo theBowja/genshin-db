@@ -5,7 +5,7 @@ declare module "genshin-db" {
 
 		exp?: number; // the highest level doesn't have any exp.
 
-		icontype?: string; // enum. you don't get a level icon border when you start out.
+		icontype: string; // enum
 
 		unlockdescription: string; // translated
 		unlockdescriptionraw: string; // translated
