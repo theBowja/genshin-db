@@ -3,7 +3,8 @@
 
 const fs = require('fs');
 const util = require('util');
-const genshindb = require('../src/main.js');
+
+const genshindb = require('../../src/main.js');
 
 function codeStart() { return '```js\n'; };
 function codeEnd() { return '\n```\n'; };
@@ -151,5 +152,5 @@ folders.forEach(folder => {
 });
 
 
-fs.writeFileSync(`./examples/EXAMPLES.md`, output);
+fs.writeFileSync(`../../examples/EXAMPLES.md`, output);
 console.log('finished updating EXAMPLES.md');

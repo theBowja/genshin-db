@@ -30,23 +30,30 @@ if(pparams.includes('none')) {
 	function isValidFolder(folder) { return typeof folder === 'string' && Folder[folder]; }
 	let addAllFolders = false;
 	let addStandardFolders = false;
+	let addTcgFolders = false;
 	for(f of pparams) {
 		if(f === 'allfolders')
 			addAllFolders = true;
 		else if(f === 'standard')
 			addStandardFolders = true;
+		else if(f === 'tcg')
+			addTcgFolders = true;
 		else if(isValidFolder(f))
 			specificfolders.push(f);
 		else if(f.startsWith('gzipfilename:'))
 			gzipfilename = f.substring(f.indexOf(':')+1);
 	}
-	let tmpfout = specificfolders.concat(addAllFolders ? ['all'] : []).concat(addStandardFolders ? ['standard'] : []);
+	let tmpfout = specificfolders.concat(addAllFolders ? ['all'] : [])
+								 .concat(addStandardFolders ? ['standard'] : [])
+								 .concat(addTcgFolders ? ['tcg'] : []);
 	if(tmpfout.length !== 0)
 		console.log(`specified folders: ${tmpfout.join(', ')}`);
 	if(addAllFolders)
 		specificfolders = specificfolders.concat(design.folders);
 	if(addStandardFolders)
 		specificfolders = specificfolders.concat(design.standard);
+	if(addTcgFolders)
+		specificfolders = specificfolders.concat(design.tcg);
 	if(gzipfilename)
 		console.log('specified gzipfilename: ' + gzipfilename);
 
@@ -112,12 +119,18 @@ function makeIndices() {
 					// add additional category indexes
 					for(const prop of design.indexByCategories[folder]) {
 						let values = data[prop];
+						if (prop.includes('[].')) { // if property is in an array of objects
+							values = data[prop.split('[].')[0]];
+							if (!Array.isArray(values)) continue;
+							const subprop = prop.split('[].')[1];
+							values = [...new Set(values.map(ele => ele[subprop]))];
+						}
 						if(values === undefined || values === "" ) continue; // go next if our data doesn't have that category as a property
 						if(prop === "costs") values = [...new Set(Object.values(values).flat().map(ele => ele.name))];
-						if(prop === "rewardpreview" || prop === "reward") values = [...new Set(values.map(ele => ele.name))];
 						if(prop === "altrecipes") values = values.flat();
 						if(!Array.isArray(values)) values = [values]; // make into array
 
+						values = values.filter(ele => ele !== undefined && ele !== null);
 						for(let val of values) {
 							if(prop === "ingredients" || prop === "recipe" || prop === "altrecipes") val = val.name;// val = val.replace(/ x\d$/i, '');
 							else if(prop === "birthday") {

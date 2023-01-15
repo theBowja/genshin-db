@@ -20,7 +20,7 @@ More examples:
 Available language names can be found in src/language.js file
 */
 
-// this script should be called from the root directory.
+// This script should be called from the root directory.
 
 const execSync = require('child_process').execSync;
 const argsArr = process.argv.slice(2);

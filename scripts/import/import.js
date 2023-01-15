@@ -3,7 +3,7 @@
 // REQUIRES NODE v13+
 
 const fs = require('fs');
-const language = require('../src/language.js');
+const language = require(`../../src/language.js`);
 //const genshindb = require('../src/main.js');
 
 
@@ -18,7 +18,7 @@ let myimages = {};
 // FOR DATA ONLY
 function getDbData(path) {
 	try {
-		return require(`../src/data/${path}`);
+		return require(`../../src/data/${path}`);
 	} catch(e) {
 		return {};
 	}
@@ -99,7 +99,7 @@ async function checkMihoyoImages(saveimageblacklist) {
 	const imageblacklist = [];
 	try {
 		let charimages = {};
-		charimages = require(`../src/data/image/characters.json`);
+		charimages = require(`../../src/data/image/characters.json`);
 		console.log('checking character images...');
 		for (let [filename, imagedata] of Object.entries(charimages)) {
 			if (imagedata.icon && !await checkLinkExists(imagedata.icon)) {
@@ -116,7 +116,7 @@ async function checkMihoyoImages(saveimageblacklist) {
 
 	try {
 		let weapimages = {};
-		weapimages = require(`../src/data/image/weapons.json`);
+		weapimages = require(`../../src/data/image/weapons.json`);
 		console.log('checking weapon images...')
 		for (let [filename, imagedata] of Object.entries(weapimages)) {
 			if (imagedata.icon && !await checkLinkExists(imagedata.icon)) {
@@ -159,10 +159,10 @@ async function stealWikiaVersion(folder) {
 
 	function encodeHTML(str) { return str.replaceAll(' ', '_').replaceAll('&', '%26'); }
 
-	const myversion = require(`../src/data/version/${folder}`);
-	const filenamelist = fs.readdirSync(`../src/data/English/${folder}`);
+	const myversion = require(`../../src/data/version/${folder}`);
+	const filenamelist = fs.readdirSync(`../../src/data/English/${folder}`);
 	for(let filename of filenamelist) {
-		const mydata = require(`../src/data/English/${folder}/${filename}`);
+		const mydata = require(`../../src/data/English/${folder}/${filename}`);
 		const tmp = await getWikiaVersion(encodeHTML(mydata.name));
 		if(tmp) {
 			myversion[filename.substring(0, filename.indexOf('.'))] = tmp;
@@ -170,7 +170,7 @@ async function stealWikiaVersion(folder) {
 		console.log(mydata.name + ', ' + tmp);
 	}
 
-	fs.writeFileSync(`../src/data/version/${folder}.json`, JSON.stringify(myversion, null, '\t'));
+	fs.writeFileSync(`../../src/data/version/${folder}.json`, JSON.stringify(myversion, null, '\t'));
 }
 
 async function getCharList(region) {
@@ -194,7 +194,7 @@ async function getUpperBodyImages() {
 	const util = require('util');
 	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru'];
 	let myimages = {};
-	try { myimages = require(`../src/data/image/characters.json`); } catch(e) {}
+	try { myimages = require(`../../src/data/image/characters.json`); } catch(e) {}
 
 	for(const region of regions) {
 		const charList = await getCharList(region);
@@ -205,8 +205,8 @@ async function getUpperBodyImages() {
 			myimages[filename].cover2 = char.cover2;
 		}
 	}
-	fs.mkdirSync(`../src/data/image`, { recursive: true });
-	fs.writeFileSync(`../src/data/image/characters.json`, JSON.stringify(myimages, null, '\t'));
+	fs.mkdirSync(`../../src/data/image`, { recursive: true });
+	fs.writeFileSync(`../../src/data/image/characters.json`, JSON.stringify(myimages, null, '\t'));
 }
 
 // const https = require('https');
@@ -240,18 +240,18 @@ function updateURLs() {
 	updateFandomDirect('foods');
 	updateFandomDirect('materials');
 	function updateFandomDirect(folder) {
-		if(fs.existsSync(`../src/data/English/${folder}`)) {
+		if(fs.existsSync(`../../src/data/English/${folder}`)) {
 			let existing = {};
-			try { existing = require(`../src/data/url/${folder}.json`); } catch(e) {};
-			fs.readdirSync(`../src/data/English/${folder}`).forEach(filename => {
+			try { existing = require(`../../src/data/url/${folder}.json`); } catch(e) {};
+			fs.readdirSync(`../../src/data/English/${folder}`).forEach(filename => {
 				if(!filename.endsWith('.json')) return;
-				const mycharacter = require(`../src/data/English/${folder}/${filename}`);
+				const mycharacter = require(`../../src/data/English/${folder}/${filename}`);
 				filename = filename.substring(0, filename.indexOf('.'));
 				if(existing[filename] === undefined) existing[filename] = {};
 				existing[filename].fandom = `https://genshin-impact.fandom.com/wiki/${mycharacter.name.replace(/ /g, '_')}`;
 			});
-			fs.mkdirSync(`../src/data/url`, { recursive: true });
-			fs.writeFileSync(`../src/data/url/${folder}.json`, JSON.stringify(existing, null, '\t'));
+			fs.mkdirSync(`../../src/data/url`, { recursive: true });
+			fs.writeFileSync(`../../src/data/url/${folder}.json`, JSON.stringify(existing, null, '\t'));
 		} else {
 			console.log(`updateURLs: ${folder} folder not found`);
 		}
@@ -261,10 +261,10 @@ function updateURLs() {
 function logNameChange(version, language, folder, dataid, filename, from, to) {
 	if (version === undefined || version === '') return console.log('Cannot log namechange when version is not provided');
 
-	fs.mkdirSync(`./logs/namechange`, { recursive: true });
+	fs.mkdirSync(`../../logs/import/namechange`, { recursive: true });
 	let namechange = [];
 	try {
-		namechange = require(`./logs/namechange/${version}`);
+		namechange = require(`../../logs/import/namechange/${version}`);
 	} catch(e) {}
 
 	const match = namechange.find(e => e.language === language && e.folder === folder && e.filename === filename);
@@ -284,16 +284,16 @@ function logNameChange(version, language, folder, dataid, filename, from, to) {
 	}
 
 	namechange = namechange.sort((a, b) => a.language.localeCompare(b.language) | a.folder.localeCompare(b.folder) | a.filename.localeCompare(b.filename));
-	fs.writeFileSync(`./logs/namechange/${version}.json`, JSON.stringify(namechange, null, '\t'));
+	fs.writeFileSync(`../../logs/import/namechange/${version}.json`, JSON.stringify(namechange, null, '\t'));
 }
 
 function logNewData(version, folder, dataid, filename) {
 	if (version === undefined || version === '') return console.log('Cannot log newdata when version is not provided');
 
-	fs.mkdirSync(`./logs/newdata`, { recursive: true });
+	fs.mkdirSync(`../../logs/import/newdata`, { recursive: true });
 	let newdata = {};
 	try {
-		newdata = require(`./logs/newdata/${version}`);
+		newdata = require(`../../logs/import/newdata/${version}`);
 	} catch(e) {}
 
 	if (newdata[folder] === undefined) newdata[folder] = [];
@@ -310,7 +310,7 @@ function logNewData(version, folder, dataid, filename) {
 	}
 
 	newdata[folder] = newdata[folder].sort((a, b) => ((a.dataid|0 - b.dataid|0) | a.filename.localeCompare(b.filename)));
-	fs.writeFileSync(`./logs/newdata/${version}.json`, JSON.stringify(newdata, null, '\t'));
+	fs.writeFileSync(`../../logs/import/newdata/${version}.json`, JSON.stringify(newdata, null, '\t'));
 }
 
 function splitFromTo(str) {
@@ -582,8 +582,8 @@ function collateData(dbdata, importdata, langC, importconfig, dbimages) {
 function importCurve(folder) {
 	try {
 		let mycurve = require(`./import/curve/${folder}.json`);
-		fs.mkdirSync(`../src/data/curve`, { recursive: true });
-		fs.writeFileSync(`../src/data/curve/${folder}.json`, JSON.stringify(mycurve, null, '\t'));
+		fs.mkdirSync(`../../src/data/curve`, { recursive: true });
+		fs.writeFileSync(`../../src/data/curve/${folder}.json`, JSON.stringify(mycurve, null, '\t'));
 	} catch(e) {}
 }
 
@@ -602,26 +602,26 @@ let gameVersion = "";
 function updateVersions(filenames, folder) {
 	let existing = {};
 	let myversions = {};
-	try { existing = require(`../src/data/version/${folder}.json`); } catch(e) {}
+	try { existing = require(`../../src/data/version/${folder}.json`); } catch(e) {}
 
 	for(const filename of filenames) {
 		myversions[filename] = existing[filename] || existing[filename] === "" ? JSON.parse(JSON.stringify(existing[filename])) : gameVersion;
 	}
-	writeFileIfDifferent(`../src/data/version/${folder}.json`, myversions);
+	writeFileIfDifferent(`../../src/data/version/${folder}.json`, myversions);
 }
 
 function addURLsEmpty(filenames, folder, props) {
-	if(fs.existsSync(`../src/data/English/${folder}`)) {
+	if(fs.existsSync(`../../src/data/English/${folder}`)) {
 		let existing = {}
 		let myurls = {};
-		try { existing = require(`../src/data/url/${folder}.json`); } catch(e) {};
+		try { existing = require(`../../src/data/url/${folder}.json`); } catch(e) {};
 
 		for(const filename of filenames) {
 			myurls[filename] = existing[filename] ? JSON.parse(JSON.stringify(existing[filename])) : {};
 
 			copyPropsIfExist(existing[filename], myurls[filename], props, '')
 		}
-		writeFileIfDifferent(`../src/data/url/${folder}.json`, myurls);
+		writeFileIfDifferent(`../../src/data/url/${folder}.json`, myurls);
 	}
 }
 
@@ -635,7 +635,7 @@ function writeFileIfDifferent(path, data) {
 	}
 }
 
-const design = require('../src/design.json');
+const design = require(`../../src/design.json`);
 const importconfig = require('./configs/properties.json');
 function importData(folder, collateFunc, dontwrite, deleteexisting, skipimageredirect) {
 	language.languageCodes.forEach(async (langC) => {
@@ -645,12 +645,12 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 		let dbimages; // only do this once
 		let mystats = {}; // only do this once
 		if(langC === 'EN' && design.hasImage.includes(folder)) {
-			try { dbimages = JSON.parse(JSON.stringify(require(`../src/data/image/${folder}.json`)));
+			try { dbimages = JSON.parse(JSON.stringify(require(`../../src/data/image/${folder}.json`)));
 			} catch(e) { dbimages = {}; }
 		}
 
 		let basepath = `${language.languageMap[langC]}/${folder}`
-		if(deleteexisting) fs.rmdirSync(`../src/data/${basepath}`, { recursive: true });
+		if(deleteexisting) fs.rmdirSync(`../../src/data/${basepath}`, { recursive: true });
 
 		const filenamelist = [];
 		for(const [filename, importdata] of Object.entries(importdatafolder)) {
@@ -678,26 +678,26 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			if(dontwrite) { console.log(dbdata); continue; }
 			if(before === JSON.stringify(dbdata)) continue; // no change made
 			
-			fs.mkdirSync(`../src/data/${basepath}`, { recursive: true });
-			fs.writeFileSync(`../src/data/${basepath}/${filename}.json`, JSON.stringify(dbdata, null, '\t'));
+			fs.mkdirSync(`../../src/data/${basepath}`, { recursive: true });
+			fs.writeFileSync(`../../src/data/${basepath}/${filename}.json`, JSON.stringify(dbdata, null, '\t'));
 		}
 
 		// remove unused files
-		fs.readdirSync(`../src/data/${language.languageMap[langC]}/${folder}`).forEach(file => {
+		fs.readdirSync(`../../src/data/${language.languageMap[langC]}/${folder}`).forEach(file => {
 			if(!filenamelist.includes(file.substring(0, file.indexOf('.')))) {
-				try { fs.unlinkSync(`../src/data/${language.languageMap[langC]}/${folder}/${file}`); } catch(e) {}
+				try { fs.unlinkSync(`../../src/data/${language.languageMap[langC]}/${folder}/${file}`); } catch(e) {}
 				console.log(`removed unused ${file}`);
 			}
 		})
 
 		if(dbimages)
-			writeFileIfDifferent(`../src/data/image/${folder}.json`, dbimages);
+			writeFileIfDifferent(`../../src/data/image/${folder}.json`, dbimages);
 		if(langC === 'EN') {
 			updateVersions(filenamelist, folder);
 			if(folder === 'outfits')
 				addURLsEmpty(filenamelist, folder, ['modelviewer']);
 			if(['characters', 'weapons', 'talents', 'enemies'].includes(folder))
-				writeFileIfDifferent(`../src/data/stats/${folder}.json`, mystats);
+				writeFileIfDifferent(`../../src/data/stats/${folder}.json`, mystats);
 
 		}
 	});
@@ -706,7 +706,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // checkExistingImageBlacklist = true; // 
 gameVersion = "3.3"; // new data will use this as added version
 
-// importData('characters', collateCharacter);
+importData('characters', collateCharacter);
 // importCurve('characters');
 // getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site
 
@@ -716,7 +716,7 @@ gameVersion = "3.3"; // new data will use this as added version
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods');
-importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
+// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains');
 // importData('enemies');
 // importCurve('enemies');
@@ -731,13 +731,13 @@ importData('materials', collateMaterial, undefined, false, true); // don't forge
 // importData('adventureranks'); // max 60
 // importData('crafts');
 
-importData('tcgcharactercards');
-importData('tcgactioncards');
-importData('tcgcardbacks');
-importData('tcgcardboxes');
-importData('tcgdetailedrules');
-importData('tcgkeywords');
-importData('tcglevelrewards');
+// importData('tcgcharactercards');
+// importData('tcgactioncards');
+// importData('tcgcardbacks');
+// importData('tcgcardboxes');
+// importData('tcgdetailedrules');
+// importData('tcgkeywords');
+// importData('tcglevelrewards');
 
 // updateURLs(); // must be separate
 
