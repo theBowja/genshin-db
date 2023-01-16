@@ -6,11 +6,11 @@
 	"types": "./types/index.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"examples": "node ./examples/examples.js",
-		"generateindex": "cd src && node ./generate.js",
-		"assemble": "cd src && node ./generate.js && cd ../ && node ./examples/examples.js",
-		"build": "node ./webpack/build.js",
-		"buildAllDist": "node ./webpack/buildAllDist.js",
+		"examples": "cd scripts/generate && node ./examples.js",
+		"generateindex": "cd scripts/generate && node ./generate.js",
+		"assemble": "npm run generateindex && npm run examples",
+		"build": "node ./scripts/webpack/build.js",
+		"buildAllDist": "node ./scripts/webpack/buildAllDist.js",
 		"publish": "cd publish && node ./publish.js"
 	},
 	"keywords": [

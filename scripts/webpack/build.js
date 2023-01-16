@@ -31,5 +31,5 @@ for(const arg of argsArr) {
     filename = arg.slice(arg.indexOf(':')+1);
 }
 
-execSync('node ./generate.js ' + argsArr.join(' '), { cwd: 'src', stdio: [0, 1, 2] });
-execSync(`npx webpack --config webpack/webpack.main.config.js --env filename=${filename}`, { stdio:[0, 1, 2] });
+execSync('node ./generate.js ' + argsArr.join(' '), { cwd: 'scripts/generate', stdio: [0, 1, 2] });
+execSync(`npx webpack --config scripts/webpack/webpack.main.config.js --env filename=${filename}`, { stdio:[0, 1, 2] });

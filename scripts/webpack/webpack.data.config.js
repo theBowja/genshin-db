@@ -1,13 +1,15 @@
 const path = require('path');
 
+// Call this from the project root.
+
 module.exports = env => ({
 	entry: {
-		[env.basename]: './webpack/dataLoader.js'
+		[env.basename]: './scripts/webpack/dataLoader.js'
 	},
 
 	// target: 'web', // not needed
 	output: {
-		path: path.resolve(__dirname, '../dist/data/scripts'),
+		path: path.resolve(__dirname, '../../dist/data/scripts'),
 		filename: `${env.basename}.js`,
 
 		library: ['GenshinDbData', '[name]'],
@@ -18,7 +20,7 @@ module.exports = env => ({
 	},
 	resolve: {
 		alias: {
-			[path.resolve(__dirname, './data.min.json')]: path.resolve(__dirname, `../dist/data/gzips/${env.basename}.min.json.gzip`)
+			[path.resolve(__dirname, './data.min.json')]: path.resolve(__dirname, `../../dist/data/gzips/${env.basename}.min.json.gzip`)
 		}
 	},
 	module: {

@@ -1,7 +1,7 @@
 const fs = require('fs');
-let language = require('./language.js');
-const design = require('./design.json');
-const Folder = require('./folder.js').FoldersEnum;
+let language = require('../../src/language.js');
+const design = require('../../src/design.json');
+const Folder = require('../../src/folder.js').FoldersEnum;
 
 // THIS SCRIPT GENERATES INDEX.JSON FOR EACH SET OF DATA
 // REQUIRES NODE v13+
@@ -79,13 +79,13 @@ function makeIndices() {
 				properties: {} // maps property to array of category values
 			};
 			try {
-				if (!fs.existsSync(`./data/${lang}/${folder}`)) continue;
+				if (!fs.existsSync(`../../src/data/${lang}/${folder}`)) continue;
 
-				fs.readdirSync(`./data/${lang}/${folder}`).forEach(filename => {
+				fs.readdirSync(`../../src/data/${lang}/${folder}`).forEach(filename => {
 					if(!filename.endsWith('.json')) return;
 					filename = filename.substring(0, filename.length-5);
 
-					const data = require(`./data/${lang}/${folder}/${filename}`);
+					const data = require(`../../src/data/${lang}/${folder}/${filename}`);
 					if(data.name === undefined || data.name === "") return; // go next file if this one doesn't have name property
 
 					if(index.namemap[filename] !== undefined) console.log(`Duplicate filename: ${lang}/${folder}: ${filename}`);
@@ -155,12 +155,12 @@ function makeIndices() {
 					}
 				})
 
-				fs.mkdirSync(`./data/index/${lang}`, { recursive: true });
-				fs.writeFileSync(`./data/index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
+				fs.mkdirSync(`../../src/data/index/${lang}`, { recursive: true });
+				fs.writeFileSync(`../../src/data/index/${lang}/${folder}.json`, JSON.stringify(index, null, '\t'));
 			} catch(e) {
 				if(e.errno === -4058) console.log("no path: " + e.path);
 				else console.log(JSON.stringify(e) + e);
-				fs.writeFileSync(`./data/index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
+				fs.writeFileSync(`../../src/data/index/${lang}/${folder}.json`, JSON.stringify({}, null, '\t'));
 			}
 		}
 		console.log("  done "+lang);
@@ -185,29 +185,29 @@ function combineData() {
 		mydata[lang] = {};
 		myindex[lang] = {};
 		for(const folder of specificfolders) {
-			if (!fs.existsSync(`./data/${lang}/${folder}`)) continue;
+			if (!fs.existsSync(`../../src/data/${lang}/${folder}`)) continue;
 			mydata[lang][folder] = {};
-			myindex[lang][folder] = require(`./data/index/${lang}/${folder}.json`);
+			myindex[lang][folder] = require(`../../src/data/index/${lang}/${folder}.json`);
 
-			fs.readdirSync(`./data/${lang}/${folder}`).forEach(filename => {
+			fs.readdirSync(`../../src/data/${lang}/${folder}`).forEach(filename => {
 				if(!filename.endsWith('.json')) return;
 				filename = filename.substring(0, filename.length-5);
-				mydata[lang][folder][filename] = require(`./data/${lang}/${folder}/${filename}`);
+				mydata[lang][folder][filename] = require(`../../src/data/${lang}/${folder}/${filename}`);
 
 			});
 		}
 	}
 	for(const folder of specificfolders) {
-		if(fs.existsSync(`./data/image/${folder}.json`))
-			myimage[folder] = require(`./data/image/${folder}.json`);
-		if(fs.existsSync(`./data/stats/${folder}.json`))
-			mystats[folder] = require(`./data/stats/${folder}.json`);
-		if(fs.existsSync(`./data/curve/${folder}.json`))
-			mycurve[folder] = require(`./data/curve/${folder}.json`);
-		if(fs.existsSync(`./data/url/${folder}.json`))
-			myurl[folder] = require(`./data/url/${folder}.json`);
-		if(fs.existsSync(`./data/version/${folder}.json`))
-			myversion[folder] = require(`./data/version/${folder}.json`);
+		if(fs.existsSync(`../../src/data/image/${folder}.json`))
+			myimage[folder] = require(`../../src/data/image/${folder}.json`);
+		if(fs.existsSync(`../../src/data/stats/${folder}.json`))
+			mystats[folder] = require(`../../src/data/stats/${folder}.json`);
+		if(fs.existsSync(`../../src/data/curve/${folder}.json`))
+			mycurve[folder] = require(`../../src/data/curve/${folder}.json`);
+		if(fs.existsSync(`../../src/data/url/${folder}.json`))
+			myurl[folder] = require(`../../src/data/url/${folder}.json`);
+		if(fs.existsSync(`../../src/data/version/${folder}.json`))
+			myversion[folder] = require(`../../src/data/version/${folder}.json`);
 	}
 
 	let all = JSON.stringify({
@@ -227,8 +227,8 @@ function combineData() {
 	const compressedsize = Buffer.byteLength(gzip)/1000/1000;
 	console.log(`compression: ${roundFour(compressedsize)}MB/${roundFour(uncompressedsize)}MB = ${roundFour(compressedsize/uncompressedsize*100)}%`)
 
-	fs.writeFileSync(gzipfilename ? gzipfilename : `./min/data.min.json.gzip`, gzip);
-	if(!gzipfilename) fs.writeFileSync(`./min/data.min.json`, all);
+	fs.writeFileSync(gzipfilename ? gzipfilename : `../../src/min/data.min.json.gzip`, gzip);
+	if(!gzipfilename) fs.writeFileSync(`../../src/min/data.min.json`, all);
 }
 
 function roundFour(num) {

@@ -24,8 +24,8 @@ for(const language of languagesArr.concat(['alllanguages'])) {
 	for(const folder of foldersArr.concat(['allfolders', 'tcg', 'standard'])) {
 		const filename = `${language.startsWith('all') ? 'all' : language.toLowerCase()}-${folder.startsWith('all') ? 'all' : folder.toLowerCase()}.min.json.gzip`
 		filenamelist.push(filename);
-		const filepath = `../dist/data/gzips/${filename}`;
-		execSync(`node ./generate.js gzipfilename:${filepath} ${language} ${folder}`, { cwd: 'src', stdio: [0, 1, 2] });
+		const filepath = `../../dist/data/gzips/${filename}`;
+		execSync(`node ./generate.js gzipfilename:${filepath} ${language} ${folder}`, { cwd: 'scripts/generate', stdio: [0, 1, 2] });
 		console.log();
 	}
 }
@@ -43,7 +43,7 @@ fs.readdirSync('./dist/data/gzips').forEach(file => {
 
 // data loaders
 for(const outputpath of filenamelist) {
-	execSync(`npx webpack --config webpack/webpack.data.config.js --env basename=${getBaseFilename(outputpath)}`, { stdio:[0, 1, 2] });
+	execSync(`npx webpack --config scripts/webpack/webpack.data.config.js --env basename=${getBaseFilename(outputpath)}`, { stdio:[0, 1, 2] });
 	console.log();
 }
 

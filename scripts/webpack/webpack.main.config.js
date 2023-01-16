@@ -1,10 +1,12 @@
 const path = require('path');
 
+// Call this from the project root.
+
 module.exports = env => ({
 	entry: './src/main.js',
 	// target: 'web', // not needed
 	output: {
-		path: path.resolve(__dirname, '../dist'),
+		path: path.resolve(__dirname, '../../dist'),
 		filename: typeof env.filename === 'string' ? (env.filename + (env.filename.endsWith('.js') ? '' : '.js')) : 'genshindb.js',
 
 		library: 'GenshinDb',
@@ -15,7 +17,7 @@ module.exports = env => ({
 	},
 	resolve: {
 		alias: {
-			[path.resolve(__dirname, '../src/min/data.min.json')]: path.resolve(__dirname, '../src/min/data.min.json.gzip')
+			[path.resolve(__dirname, '../../src/min/data.min.json')]: path.resolve(__dirname, '../../src/min/data.min.json.gzip')
 		}
 	},
 	module: {
