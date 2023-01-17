@@ -52,7 +52,9 @@ declare module "genshin-db" {
 		tcgcharactercards = "tcgcharactercards",
 		tcgdetailedrules  = "tcgdetailedrules",
 		tcgkeywords       = "tcgkeywords",
-		tcglevelrewards   = "tcglevelrewards"
+		tcglevelrewards   = "tcglevelrewards",
+		tcgstatuseffects  = "tcgstatuseffects",
+		tcgsummons   	  = "tcgsummons"
 	}
 
 	export enum MatchType {

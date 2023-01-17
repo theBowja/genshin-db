@@ -28,6 +28,8 @@
 /// <reference path="./folders/tcgdetailedrules.d.ts" />
 /// <reference path="./folders/tcgkeywords.d.ts" />
 /// <reference path="./folders/tcglevelrewards.d.ts" />
+/// <reference path="./folders/tcgstatuseffects.d.ts" />
+/// <reference path="./folders/tcgsummons.d.ts" />
 
 /// <reference path="./enums.d.ts" />
 
@@ -146,6 +148,8 @@ declare module "genshin-db" {
 	export const tcgdetailedrules: QueryFunction<TcgDetailedRules>;
 	export const tcgkeywords: QueryFunction<TcgKeywords>;
 	export const tcglevelrewards: QueryFunction<TcgLevelRewards>;
+	export const tcgstatuseffects: QueryFunction<TcgStatusEffects>;
+	export const tcgsummons: QueryFunction<TcgSummons>;
 
 
 

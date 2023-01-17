@@ -738,6 +738,8 @@ importData('characters', collateCharacter);
 // importData('tcgdetailedrules');
 // importData('tcgkeywords');
 // importData('tcglevelrewards');
+importData('tcgstatuseffects');
+importData('tcgsummons');
 
 // updateURLs(); // must be separate
 

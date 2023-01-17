@@ -449,6 +449,12 @@ genshin.tcgkeywords = genshin.tcgkeyword = function (query, opts) {
 genshin.tcglevelrewards = genshin.tcglevelreward = function (query, opts) {
     return retrieveData(query, Folder.tcglevelrewards, opts);
 }
+genshin.tcgstatuseffects = genshin.tcgstatuseffect = function (query, opts) {
+    return retrieveData(query, Folder.tcgstatuseffects, opts);
+}
+genshin.tcgsummons = genshin.tcgsummon = function (query, opts) {
+    return retrieveData(query, Folder.tcgsummons, opts);
+}
 
 /**
  * Get data in any specified folder.

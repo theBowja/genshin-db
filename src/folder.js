@@ -38,7 +38,9 @@ const FoldersEnum = {
 	tcgcharactercards: 'tcgcharactercards',
 	tcgdetailedrules:  'tcgdetailedrules',
 	tcgkeywords:       'tcgkeywords',
-	tcglevelrewards:   'tcglevelrewards'
+	tcglevelrewards:   'tcglevelrewards',
+	tcgstatuseffects:  'tcgstatuseffects',
+	tcgsummons:        'tcgsummons'
 };
 
 const folders = Object.values(FoldersEnum);
