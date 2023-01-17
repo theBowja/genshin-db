@@ -1,15 +1,18 @@
 const fs = require('fs');
+const path = require('path');
+const helper = {};
+
+// The main script should be called from project root.
 
 const cache = {};
 
-function readAndCacheFile(namespace, pathfromprojectroot, filetype) {
+helper.readAndCacheFile = function(namespace, pathfromprojectroot, filetype) {
 	if (cache[namespace] === undefined) cache[namespace] = {};
 
 	switch (filetype) {
 		case 'json':
-			const file = require(`../${pathfromprojectroot}`);
-		    cache[namespace][pathfromprojectroot] = JSON.stringify(file, null, '\t');
-			return file;
+		    cache[namespace][pathfromprojectroot] =  fs.readFileSync(`./${pathfromprojectroot}`);
+			return require(`../../${pathfromprojectroot}`);
 
 		case 'md':
 		case 'txt':
@@ -17,22 +20,33 @@ function readAndCacheFile(namespace, pathfromprojectroot, filetype) {
 			return '';
 	}
 	return undefined;
-}
+};
 
-function writeFile(pathfromprojectroot, contents) {
-	fs.writeFileSync(`../${pathfromprojectroot}`, contents);
-}
+helper.writeFile = function(pathfromprojectroot, contents) {
+	fs.writeFileSync(`./${pathfromprojectroot}`, contents);
+};
 
-function restoreFilesFromCache(namespace) {
+helper.restoreFilesFromCache = function(namespace) {
 	if (cache[namespace] === undefined) return;
 
 	for (let [filepath, contents] of Object.entries(cache[namespace])) {
-		fs.writeFileSync(`../${filepath}`, contents);
+		fs.writeFileSync(`./${filepath}`, contents); // from project root
 	}
-}
-
-module.exports = {
-	readAndCacheFile: readAndCacheFile,
-	writeFile: writeFile,
-	restoreFilesFromCache: restoreFilesFromCache
 };
+
+let isBackedUp = false;
+helper.backupGeneratedFiles = function() {
+	if (isBackedUp) return console.log('ERROR backupGeneratedFiles: There are already existing files backed up');
+	fs.renameSync(`./src/min/data.min.json`, `./src/min/data.min.json.tmp`); // from projectroot
+	fs.renameSync(`./src/min/data.min.json.gzip`, `./src/min/data.min.json.gzip.tmp`); // from projectroot
+	isBackedUp = true;
+};
+
+helper.restoreGeneratedFiles = function() {
+	if (!isBackedUp) return console.log('ERROR restoreGeneratedFiles: No files have been backed up.');
+	fs.renameSync(`./src/min/data.min.json.tmp`, `./src/min/data.min.json`); // from projectroot
+	fs.renameSync(`./src/min/data.min.json.gzip.tmp`, `./src/min/data.min.json.gzip`); // from projectroot
+	isBackedUp = false;
+};
+
+module.exports = helper
