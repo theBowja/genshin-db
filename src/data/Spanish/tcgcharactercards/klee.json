@@ -1,0 +1,80 @@
+{
+	"id": 1306,
+	"name": "Klee",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Pyro",
+		"Catalizador",
+		"Mondstadt"
+	],
+	"storytitle": "Klee, “el sol fugitivo”",
+	"storytext": "Cada vez que robas una carta, esta puede venir acompañada de una “sorpresa explosiva”.",
+	"source": "Se obtiene tras retar y ganar a Klee en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 13061,
+			"name": "¡Buuum!",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "Inflige 1 pt. de Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13062,
+			"name": "Bomba saltarina",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje entra en el estado de <color=#FFFFFFFF>$[C113061|s2]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y este personaje entra en el estado de <color=#FFFFFFFF>flor explosiva</color>.",
+			"description": "Inflige 3 pts. de Daño Pyro y este personaje entra en el estado de flor explosiva.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13063,
+			"name": "Chispas explosivas",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea unas <color=#FFFFFFFF>$[C113063]</color> en el campo del rival.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y crea unas <color=#FFFFFFFF>Chispas explosivas</color> en el campo del rival.",
+			"description": "Inflige 3 pts. de Daño Pyro y crea unas Chispas explosivas en el campo del rival.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

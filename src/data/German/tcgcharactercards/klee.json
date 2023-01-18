@@ -1,0 +1,80 @@
+{
+	"id": 1306,
+	"name": "Klee",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Pyro",
+		"Katalysator",
+		"Mondstadt"
+	],
+	"storytitle": "Fliehende Sonne – Klee",
+	"storytext": "Jedes Mal, wenn du eine Karte ziehst, kann eine „brisante Überraschung“ passieren.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Klee in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 13061,
+			"name": "Bumm-Bumm",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13062,
+			"name": "Bimm-Bamm-Bombe",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT], erhält selbst <color=#FFFFFFFF>$[C113061]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-Schaden</color>, erhält selbst <color=#FFFFFFFF>Explosiver Funke</color>.",
+			"description": "Verursacht 3 Pkt. Pyro-Schaden, erhält selbst Explosiver Funke.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13063,
+			"name": "Funkelfunken",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft auf dem Feld deines Gegners <color=#FFFFFFFF>$[C113063]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, erschafft auf dem Feld deines Gegners <color=#FFFFFFFF>Funkelfunken</color>.",
+			"description": "Verursacht 3 Pkt. Pyro-SCH, erschafft auf dem Feld deines Gegners Funkelfunken.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

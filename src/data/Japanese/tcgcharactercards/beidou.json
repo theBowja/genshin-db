@@ -1,0 +1,90 @@
+{
+	"id": 1405,
+	"name": "北斗",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"雷元素",
+		"両手剣",
+		"璃月"
+	],
+	"storytitle": "無冠の龍王·北斗",
+	"storytext": "「この日を覚えとけ、あんたはもうちょっとで南十字船隊頭領から大金星を上げるところだったぞ。」",
+	"source": "キャッツテールで北斗を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 14051,
+			"name": "征浪",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14052,
+			"name": "浪追い",
+			"descriptionraw": "本キャラに<color=#FFFFFFFF>$[C114051]</color>を付与し、$[K53]に入る：<color=#FFFFFFFF>$[S14054]</color>。",
+			"descriptionreplaced": "本キャラに<color=#FFFFFFFF>浪追い·波囲の守り</color>を付与し、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>潮踏み</color>。",
+			"description": "本キャラに浪追い·波囲の守りを付与し、スキル準備に入る：潮踏み。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14053,
+			"name": "雷斫り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C114053]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与え、<color=#FFFFFFFF>雷獣の盾</color>を生成する。",
+			"description": "雷元素ダメージを3与え、雷獣の盾を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14054,
+			"name": "潮踏み",
+			"descriptionraw": "（1ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "（1ターン準備必要）\\n{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を2与える。",
+			"description": "（1ターン準備必要）\n雷元素ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": []
+		}
+	]
+}

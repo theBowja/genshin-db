@@ -1,0 +1,90 @@
+{
+	"id": 1405,
+	"name": "北斗",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"雷元素",
+		"双手剑",
+		"璃月"
+	],
+	"storytitle": "无冕的龙王·北斗",
+	"storytext": "「记住这一天，你差点赢了南十字船队老大的钱。」",
+	"source": "在猫尾酒馆中邀请北斗进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 14051,
+			"name": "征涛",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>。",
+			"description": "造成2点物理伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14052,
+			"name": "捉浪",
+			"descriptionraw": "本角色附属<color=#FFFFFFFF>$[C114051]</color>并$[K53]：<color=#FFFFFFFF>$[S14054]</color>。",
+			"descriptionreplaced": "本角色附属<color=#FFFFFFFF>捉浪·涛拥之守</color>并<color=#FFFFFFFF>准备技能</color>：<color=#FFFFFFFF>踏潮</color>。",
+			"description": "本角色附属捉浪·涛拥之守并准备技能：踏潮。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14053,
+			"name": "斫雷",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C114053]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，生成<color=#FFFFFFFF>雷兽之盾</color>。",
+			"description": "造成3点雷元素伤害，生成雷兽之盾。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14054,
+			"name": "踏潮",
+			"descriptionraw": "（需准备1个行动轮）\\n造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "（需准备1个行动轮）\\n造成2点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>。",
+			"description": "（需准备1个行动轮）\n造成2点雷元素伤害。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": []
+		}
+	]
+}

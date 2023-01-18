@@ -1,0 +1,80 @@
+{
+	"id": 1306,
+	"name": "Klee",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"ธาตุไฟ",
+		"สื่อเวท",
+		"Mondstadt"
+	],
+	"storytitle": "ดวงอาทิตย์ที่หลบหนี - Klee",
+	"storytext": "ในแต่ละครั้งที่จั่วการ์ด จะมีโอกาสที่จะเกิดการ \"เซอร์ไพรส์ระเบิดระเบ้อ\" หนึ่งครั้ง",
+	"source": "ได้รับหลังจากเชิญ Klee ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 13061,
+			"name": "Kaboom!",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 1 หน่วย",
+			"description": "สร้างความเสียหายไฟ 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13062,
+			"name": "Jumpy Dumpty",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวละครนี้ได้รับ <color=#FFFFFFFF>$[C113061]</color>",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 3 หน่วย และตัวละครนี้ได้รับ <color=#FFFFFFFF>Explosive Spark</color>",
+			"description": "สร้างความเสียหายไฟ 3 หน่วย และตัวละครนี้ได้รับ Explosive Spark",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13063,
+			"name": "Sparks 'n' Splash",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และทำให้เกิด <color=#FFFFFFFF>$[C113063]</color> แก่ตัวละครในสนามของฝ่ายตรงข้าม",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 3 หน่วย และทำให้เกิด <color=#FFFFFFFF>Sparks 'n' Splash</color> แก่ตัวละครในสนามของฝ่ายตรงข้าม",
+			"description": "สร้างความเสียหายไฟ 3 หน่วย และทำให้เกิด Sparks 'n' Splash แก่ตัวละครในสนามของฝ่ายตรงข้าม",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1306,
+	"name": "클레",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"불 원소",
+		"법구",
+		"몬드"
+	],
+	"storytitle": "도망치는 태양·클레",
+	"storytext": "모든 카드 뽑기에는 「폭발적인 서프라이즈」가 숨어 있다",
+	"source": "캣테일 술집에서 클레 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 13061,
+			"name": "펑펑",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 1pt 준다.",
+			"description": "불 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13062,
+			"name": "통통 폭탄",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C113061]</color>이 부착된다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>폭렬 불꽃</color>이 부착된다.",
+			"description": "불 원소 피해를 3pt 주고 본 캐릭터에게 폭렬 불꽃이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13063,
+			"name": "쾅쾅 불꽃",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대방 필드에 <color=#FFFFFFFF>$[C113063]</color>을 생성한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 주고 상대방 필드에 <color=#FFFFFFFF>쾅쾅 불꽃</color>을 생성한다.",
+			"description": "불 원소 피해를 3pt 주고 상대방 필드에 쾅쾅 불꽃을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

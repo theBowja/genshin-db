@@ -1,0 +1,80 @@
+{
+	"id": 1306,
+	"name": "Klee",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Pyro",
+		"Catalyseur",
+		"Mondstadt"
+	],
+	"storytitle": "Klee · Soleil fuyant",
+	"storytext": "Chaque carte qu'on pioche peut apporter une surprise « détonante ».",
+	"source": "Récompense pour avoir invité Klee à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 13061,
+			"name": "Boum ! Boum !",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color>.",
+			"description": "Inflige 1 pt de DGT Pyro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13062,
+			"name": "Bombe rebondissante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT] et accorde une <color=#FFFFFFFF>$[C113061|s2]</color> au personnage.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color> et accorde une <color=#FFFFFFFF>étincelle explosive</color> au personnage.",
+			"description": "Inflige 3 pts de DGT Pyro et accorde une étincelle explosive au personnage.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13063,
+			"name": "Fleur bombardier",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts de $[D__KEY__ELEMENT] et crée une <color=#FFFFFFFF>$[C113063|s2]</color> sur le terrain adverse.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color> et crée une <color=#FFFFFFFF>fleur bombardier</color> sur le terrain adverse.",
+			"description": "Inflige 3 pts de DGT Pyro et crée une fleur bombardier sur le terrain adverse.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}
