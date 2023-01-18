@@ -1,0 +1,212 @@
+{
+	"name": "Alhaitham",
+	"combat1": {
+		"name": "Normal Attack: Abductive Reasoning",
+		"info": "**Normal Attack**\nPerforms up to 5 rapid strikes.\n\n**Charged Attack**\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n**Plunging Attack**\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}+{param4:F1P}",
+				"4-Hit DMG|{param5:F1P}",
+				"5-Hit DMG|{param6:F1P}",
+				"Charged Attack DMG|{param7:F1P}+{param8:F1P}",
+				"Charged Attack Stamina Cost|{param9:F1}",
+				"Plunge DMG|{param10:F1P}",
+				"Low/High Plunge DMG|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Universality: An Elaboration on Form",
+		"info": "Rushes forward, dealing Dendro DMG to nearby opponents when the rush ends, causing a Chisel-Light Mirror to form.\nHolding this skill will cause it to behave differently.\n\n**Hold**\nEnters Aiming Mode to adjust the direction of Alhaitham's rush attack.\n\n**Chisel-Light Mirror**\nWhen this skill is unleashed, Alhaitham will generate 1 Chisel-Light Mirror. If there are no Mirrors at this time, he will generate 1 additional Mirror. Chisel-Light Mirrors will have the following properties:\n·When he possesses Chisel-Light Mirrors, Alhaitham's Normal, Charged, and Plunging Attacks will be converted to Dendro DMG. This cannot be overridden.\n·When attacks of the aforementioned kind hit opponents, the Chisel-Light Mirrors will unleash a Projection Attack that deals AoE Dendro DMG based on the number of Mirrors on the field.\n·A total of 3 Chisel-Light Mirrors can exist at once.\n·The Chisel-Light Mirrors will disappear one after the other over time, and will all disappear when Alhaitham leaves the field.",
+		"description": "\"Truth inherently exists amidst uncertainty. Even the greatest of scholars are not immune to error.\"",
+		"attributes": {
+			"labels": [
+				"Rush Attack DMG|{param1:F1P} ATK+{param2:F1P} Elemental Mastery",
+				"Projection Attack Interval|{param3:F1}s",
+				"1-Mirror Projection Attack DMG|{param4:F1P} ATK+{param5:F1P} Elemental Mastery",
+				"2-Mirror Projection Attack DMG|({param6:F1P} ATK+{param7:F1P} Elemental Mastery)×2",
+				"3-Mirror Projection Attack DMG|({param8:F1P} ATK+{param9:F1P} Elemental Mastery)×3",
+				"Chisel-Light Mirror Removal Interval|{param10:F1}s",
+				"CD|{param11:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Particular Field: Fetters of Phenomena",
+		"info": "Creates a Particular Binding Field and deals multiple instances of AoE Dendro DMG.\nIf Chisel-Light Mirrors exist when this ability is unleashed, all such Mirrors will be consumed and increase the number of DMG instances dealt.\n2s after this ability is unleashed, if 0/1/2/3 Mirrors were consumed, Alhaitham will generate 3/2/1/0 new Mirrors in turn.",
+		"description": "\"If a researcher makes wisdom their goal, then they should be prepared to make an enemy of every word they read. Only then can they avoid bias.\"",
+		"attributes": {
+			"labels": [
+				"Single-Instance DMG|{param1:F1P} ATK+{param2:F1P} Elemental Mastery",
+				"Basic Attack Instances|{param3:I}",
+				"1-Mirror Attack Instances|{param4:I}",
+				"2-Mirror Attack Instances|{param5:I}",
+				"3-Mirror Attack Instances|{param6:I}",
+				"CD|{param7:F1}s",
+				"Energy Cost|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Four-Causal Correction",
+		"info": "When Alhaitham's Charged or Plunging Attacks hit opponents, they will generate 1 Chisel-Light Mirror. This effect can be triggered once every 12s."
+	},
+	"passive2": {
+		"name": "Mysteries Laid Bare",
+		"info": "Each point of Alhaitham's Elemental Mastery will increase the DMG dealt by Projection Attacks and **Particular Field: Fetters of Phenomena** by 0.1%.\nThe DMG of both aforementioned abilities can be increased by a maximum of 100% this way."
+	},
+	"passive3": {
+		"name": "Law of Reductive Overdetermination",
+		"info": "When Alhaitham crafts Weapon Ascension Materials, he has a 10% chance to receive double the product."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Ingenuity",
+				"count": 3
+			},
+			{
+				"name": "Faded Red Satin",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 2
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 4
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 6
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Ingenuity",
+				"count": 9
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 4
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 4
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 6
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 6
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 12
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 9
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Ingenuity",
+				"count": 16
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 12
+			},
+			{
+				"name": "Mirror of Mushin",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

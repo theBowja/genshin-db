@@ -1,0 +1,212 @@
+{
+	"name": "Alhacén",
+	"combat1": {
+		"name": "Ataque Normal: Método abductivo",
+		"info": "**Ataque Normal**\nRealiza hasta 5 ataques rápidos.\n\n**Ataque Cargado**\nConsume una cierta cantidad de Aguante para lanzar un golpe de espada cruzado.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}+{param4:F1P}",
+				"Daño de 4.º golpe|{param5:F1P}",
+				"Daño de 5.º golpe|{param6:F1P}",
+				"Ataque Cargado|{param7:F1P}+{param8:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param9:F1} pts.",
+				"Daño de Caída|{param10:F1P}",
+				"Daño de impacto de caída baja/alta|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Universalidad: Emulación teorética",
+		"info": "Carga hacia delante a gran velocidad y, al finalizar el movimiento, inflige Daño Dendro y crea un “prisma rutilante”.\nEsta habilidad se libera de manera distinta al mantener pulsado.\n\n**Mantener pulsado**\nApunta para determinar la dirección en la que carga.\n\n**Prisma rutilante**\nAl lanzar esta habilidad, Alhacén crea un prisma rutilante. Si en ese momento no hay ningún otro prisma, crea otro adicional. El prisma rutilante tiene los siguientes efectos:\n·Cuando tiene un prisma rutilante, los Ataques Normales, Cargados y Descendentes de Alhacén infligen Daño Dendro, el cual no puede sustituirse imbuyéndose de otro elemento.\n·Cuando golpea a un enemigo con dichos ataques, el prisma rutilante crea una pantalla de luz que inflige Daño Dendro en el AdE en función del número de prismas existentes.\n·Se pueden crear hasta 3 prismas rutilantes.\n·Los prismas irán desapareciendo con el paso del tiempo, y desaparecerán por completo cuando Alhacén abandone el campo de batalla.",
+		"description": "“La verdad existe de manera inherente a la incertidumbre. Ni siquiera los más ilustres eruditos pueden evitar cometer errores”.",
+		"attributes": {
+			"labels": [
+				"Daño al cargar|{param1:F1P} de ATQ + {param2:F1P} de Maestría Elemental",
+				"Intervalo de ATQ de la pantalla de luz|{param3:F1} s",
+				"Daño de pantalla de luz con 1 prisma rutilante|{param4:F1P} de ATQ + {param5:F1P} de Maestría Elemental",
+				"Daño de pantalla de luz con 2 prismas rutilantes|({param6:F1P} de ATQ + {param7:F1P} de Maestría Elemental) ×2",
+				"Daño de pantalla de luz con 3 prismas rutilantes|({param8:F1P} de ATQ + {param9:F1P} de Maestría Elemental) ×3",
+				"Intervalo de desaparición de cada prisma rutilante|{param10:F1} s",
+				"TdE|{param11:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Enajenación: Constricción fenomenológica",
+		"info": "Crea un campo de constricción particular que inflige varias veces Daño Dendro en el AdE.\nAl lanzar esta habilidad, si ya hay prismas rutilantes, los consume todos para aumentar el número de veces que inflige daño la habilidad.\nDos segundos después de lanzarla, si se consumieron 0/1/2/3 prismas rutilantes, se crean respectivamente 3/2/1/0 prismas.",
+		"description": "“Un erudito cuyo objetivo sea buscar la sabiduría debe considerar enemiga a cada palabra que lee. Solo así podrá liberarse de sus prejuicios”.",
+		"attributes": {
+			"labels": [
+				"Daño por cada golpe|{param1:F1P} de ATQ + {param2:F1P} de Maestría Elemental",
+				"Número base de ataques|{param3:I}",
+				"Número de ataques con 1 prisma rutilante|{param4:I}",
+				"Número de ataques con 2 prismas rutilantes|{param5:I}",
+				"Número de ataques con 3 prismas rutilantes|{param6:I}",
+				"TdE|{param7:F1} s",
+				"Energía Elemental|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Rectificación de las cuatro causas",
+		"info": "Cuando Alhacén golpea a un enemigo con un Ataque Cargado o Descendente, crea un prisma rutilante. Este efecto solo puede activarse una vez cada 12 s."
+	},
+	"passive2": {
+		"name": "Revelación de incógnitas",
+		"info": "El daño de la pantalla de luz y el de **Enajenación: Constricción fenomenológica** aumenta en un 0.1% por cada punto de Maestría Elemental que tenga Alhacén.\nEl daño que infligen estos dos ataques puede aumentar, como máximo, en un 100% de esta manera."
+	},
+	"passive3": {
+		"name": "Teorema de la reducción sobredeterminada",
+		"info": "Al crear materiales de ascensión de arma, hay una probabilidad del 10% de recibir el doble."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas del ingenio",
+				"count": 3
+			},
+			{
+				"name": "Satén rojo descolorido",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía del ingenio",
+				"count": 2
+			},
+			{
+				"name": "Seda roja bordada",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía del ingenio",
+				"count": 4
+			},
+			{
+				"name": "Seda roja bordada",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía del ingenio",
+				"count": 6
+			},
+			{
+				"name": "Seda roja bordada",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía del ingenio",
+				"count": 9
+			},
+			{
+				"name": "Seda roja bordada",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía del ingenio",
+				"count": 4
+			},
+			{
+				"name": "Brocado rojo lujoso",
+				"count": 4
+			},
+			{
+				"name": "Espejo del mushin",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía del ingenio",
+				"count": 6
+			},
+			{
+				"name": "Brocado rojo lujoso",
+				"count": 6
+			},
+			{
+				"name": "Espejo del mushin",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía del ingenio",
+				"count": 12
+			},
+			{
+				"name": "Brocado rojo lujoso",
+				"count": 9
+			},
+			{
+				"name": "Espejo del mushin",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía del ingenio",
+				"count": 16
+			},
+			{
+				"name": "Brocado rojo lujoso",
+				"count": 12
+			},
+			{
+				"name": "Espejo del mushin",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

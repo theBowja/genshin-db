@@ -1,0 +1,209 @@
+{
+	"name": "Yaoyao",
+	"combat1": {
+		"name": "Attaque normale : Lance virevoltante",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups de lance.\n\n**Attaque chargée**\nConsomme de l'endurance pour charger en ligne droite et infliger des DGT aux ennemis sur la route.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}",
+				"DGT attaque chargée|{param6:F1P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts",
+				"DGT durant la chute|{param8:F1P}",
+				"DGT chute basse/élevée|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Amas céleste de raphanus",
+		"info": "Fait appel à « Yuegui lanceur », un mécanisme spécial créé par un certain Adepte pour aider Yaoyao à résoudre ses problèmes.\nEn cas d'appui long, la compétence est déclenchée différemment.\n\n**Appui long**\nBascule en mode visée, ce qui permet d'ajuster la direction du lancer.\n\n**Yuegui lanceur**\nLance des radis de jade blanc qui explosent en touchant des personnages ou des ennemis, infligeant des DGT Dendro aux ennemis sur une certaine zone et soignant les personnages s'y trouvant selon les PV max de Yaoyao. Si un radis ne touche aucun ennemi ou personnage, il reste là où il a atterri jusqu'à exploser au contact d'un personnage ou d'un ennemi ou après l'expiration de sa durée.\nLe Yuegui lanceur choisit lui-même ses cibles lors de l'envoi de ses radis :\n· Si tous les personnages proches ont plus de 70 % de PV, il lance un radis sur un ennemi proche.\n· Si certains personnages proches ont 70 % ou moins de PV, il lance un radis sur celui ayant le pourcentage de PV restant le plus bas. S'il n'y a aucun ennemi à proximité, le Yuegui lance ses radis de jade blanc sur les personnages proches si tous ces derniers ont entre 70 % et 100 % de PV ; sinon il lance ses radis aléatoirement.\n\nUn maximum de 2 Yueguis lanceurs peut exister en même temps.",
+		"description": "« Un radis chaque matin éloigne les chagrins ! ... Oh, ce n'est pas à propos des propriétés médicales des radis, mais ils sont bénéfiques pour la santé ! »",
+		"attributes": {
+			"labels": [
+				"DGT radis de jade blanc|{param1:F1P}",
+				"Soins de radis de jade blanc|{param2:F2P} PV max + {param3:I}",
+				"Durée de Yuegui lanceur|{param4:F1} s",
+				"Durée de radis de jade blanc|{param5:F1} s",
+				"Temps de recharge|{param6:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Coucher de lune de jade",
+		"info": "À la demande d'un certain Adepte, le plein potentiel des Yueguis peut être libéré en cas d'urgence, infligeant des DGT Dendro aux ennemis à proximité et faisant passer dans l'invincible (dans un certain sens) état Héritage adeptal.\n\n**Héritage adeptal**\n· Les radis de jade blanc générés sont modifiés pour soigner et infliger des DGT en fonction des attributs de cette capacité, les explosions soignent les PV de tous les personnages de l'équipe à proximité et les DGT Dendro infligés sont considérés comme des DGT de déchaînement élémentaire.\n· Invoque des Yueguis sauteurs de façon régulière jusqu'à la limite. La façon de lancer des radis de cette version des Yueguis est identique à celle de la compétence élémentaire Amas céleste de raphanus. Un maximum de 3 Yueguis sauteurs peut exister en même temps.\n· Augmente la VIT de déplacement de Yaoyao de 15 %.\n· Augmente la RÉS Dendro de Yaoyao.\n\nL'état Héritage adeptal prend fin lorsque Yaoyao quitte le champ de bataille, et tous les Yueguis sauteurs restants disparaissent à la fin de l'état.",
+		"description": "« Hein ? Lequel est le vrai Yuegui ? Eh bien, ce sont tous des Yueguis, pardi ! »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param4:F1P}",
+				"DGT radis de jade blanc (Héritage adeptal)|{param1:F1P}",
+				"Soins de radis de jade blanc (Héritage adeptal)|{param2:F2P} PV max + {param3:I}",
+				"Bonus RÉS Dendro|{param5:P}",
+				"Durée d'héritage adeptal|{param6:F1} s",
+				"Temps de recharge|{param7:F1} s",
+				"Énergie élémentaire|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Dispersion stellaire",
+		"info": "Pendant l'état Héritage adeptal de **Coucher de lune de jade**, Yaoyao lance constamment des radis de jade blanc sur les ennemis à proximité lorsqu'elle sprinte, saute ou court. Un radis de jade blanc peut être lancé une fois toutes les 0,6 s de cette manière."
+	},
+	"passive2": {
+		"name": "Empathie",
+		"info": "Lorsqu'un **radis de jade blanc** explose, les personnages déployés dans la zone d'effet récupèrent des PV pour une valeur équivalant à 0,8 % des PV max de Yaoyao toutes les secondes pendant 5 s."
+	},
+	"passive3": {
+		"name": "Sur la pointe des pieds",
+		"info": "Quand Yaoyao fait partie de l'équipe, vos personnages n'effraient pas certains animaux, tels que le papillon cristallin.\nPour savoir quels sont les animaux concernés, consultez l'onglet « Divers » dans la section « Faune » du Bestiaire des Archives."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la Diligence",
+				"count": 3
+			},
+			{
+				"name": "Bave de Blob",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 2
+			},
+			{
+				"name": "Mucus de Blob",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 4
+			},
+			{
+				"name": "Mucus de Blob",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 6
+			},
+			{
+				"name": "Mucus de Blob",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Diligence",
+				"count": 9
+			},
+			{
+				"name": "Mucus de Blob",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 4
+			},
+			{
+				"name": "Essence de Blob",
+				"count": 4
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 6
+			},
+			{
+				"name": "Essence de Blob",
+				"count": 6
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 12
+			},
+			{
+				"name": "Essence de Blob",
+				"count": 9
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la Diligence",
+				"count": 16
+			},
+			{
+				"name": "Essence de Blob",
+				"count": 12
+			},
+			{
+				"name": "Cloche de daka",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

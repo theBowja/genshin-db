@@ -1,0 +1,209 @@
+{
+	"name": "Yaoyao",
+	"combat1": {
+		"name": "Ataque Normal: Lança Vorpal",
+		"info": "**Ataque Normal**\nRealiza até 4 golpes com a lança.\n\n**Ataque Carregado**\nConsome uma certa quantidade de Stamina para se lançar para a frente, infligindo Dano em seu trajeto.\n\n**Ataque Imersivo**\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}+{param4:F1P}",
+				"Dano do 4° Golpe|{param5:F1P}",
+				"Dano de Ataque Carregado|{param6:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param7:F1}",
+				"Dano Durante a Queda|{param8:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Rabanete das Nuvens",
+		"info": "Invoca o \"Yuegui: Modo de Arremesso\", um dispositivo especial criado por um certo Adeptus, para ajudar a resolver os problemas de Yaoyao.\nSerá lançado de forma diferente ao Manter Pressionado.\n\n**Manter Pressionado**\nEntra no modo de mira para ajustar a direção do arremesso.\n\n**Yuegui: Modo de Arremesso**\nJoga um Rabanete de Jade Branca. Quando o Rabanete de Jade Branca atinge um personagem ou inimigo, explodirá, causando Dano Dendro contra os inimigos dentro de uma certa AdE e regenerando Vida para os personagens dentro dela. A Cura é baseada na Vida Máxima de Yaoyao. Se não atingir inimigos ou personagens, o Rabanete de Jade Branca ficará na posição em que caiu, e quando for tocado por um personagem ou inimigo, ou quando sua duração acabar, explodirá.\nA escolha do alvo de arremesso do Rabanete de Jade Branca será definida de acordo com a situação das proximidades:\n· Se a Vida de todos os personagens próximos for maior que 70%, arremessará contra um inimigo próximo;\n· Se houver um personagem próximo com Vida igual ou inferior a 70%, jogará na direção próxima do personagem ativo com menor porcentagem de Vida. Se não houverem inimigos próximos, e caso que a Vida de todos os personagens seja superior a 70% e inferior a 100%, arremessará na direção de um personagem; caso contrário, arremessará em qualquer direção ao redor.\n\nÉ possível existir até 2 Yuegui: Modo de Arremesso simultaneamente.",
+		"description": "\"Um Rabanete por dia, deixa a vida mais sadia! Ah, isso não é só sobre as propriedades medicinais de um Rabanete, mas ele também possui vários benefícios para a sua saúde!\"",
+		"attributes": {
+			"labels": [
+				"Dano do Rabanete de Jade Branca|{param1:F1P}",
+				"Cura do Rabanete de Jade Branca|{param2:F2P} da Vida Máxima + {param3:I}",
+				"Duração de Yuegui: Modo de Arremesso|{param4:F1}s",
+				"Duração do Rabanete de Jade Branca|{param5:F1}s",
+				"Tempo de Recarga|{param6:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Descida da Lua de Jade",
+		"info": "Sob comando de uma certa Adeptus, todo o potencial de Yuegui pode ser lançado em uma emergência, causando Dano Dendro contra os inimigos ao redor, e entra no invencível (de certa forma) estado \"Legado Adepti\".\n\n**Legado Adepti**\n· Rabanetes de Jade Branca gerados são convertidos para curar e causar Dano baseado nos atributos detalhados dessa Habilidade. Ao explodirem, regenerarão Vida para todos os personagens próximos da equipe e causarão Dano Dendro, e esse Dano é considerado Dano de Supremo.\n· Periodicamente invoca \"Yuegui: Modo de Salto\" até atingir o limite máximo. A forma de ação de Yuegui: Modo de Salto e Yuegui: Modo de Arremesso da Habilidade Elemental \"Rabanete das Nuvens\" é igual. É possível existir até 3 Yuegui: Modo de Salto simultaneamente;\n· Aumenta a Veloc. Mov. de Yaoyao em 15%; Yaoyao obtém aumento de RES Dendro.\n\nAo sair do campo de batalha, terminará o estado Legado Adepti. Quando o estado Legado Adepti acabar, removerá os Yuegui: Modo de Salto restantes.",
+		"description": "\"Hã? Você quer saber qual é Yuegui? Todos são Yuegui!\"",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param4:F1P}",
+				"Dano do Rabanete de Jade Branca do Legado Adepti|{param1:F1P}",
+				"Cura do Rabanete de Jade Branca do Legado Adepti|{param2:F2P} da Vida Máxima + {param3:I}",
+				"Aumento de RES Dendro|{param5:P}",
+				"Duração do Legado Adepti|{param6:F1}s",
+				"Tempo de Recarga|{param7:F1}s",
+				"Energia Elemental|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Chuva de Estrelas",
+		"info": "Quando estiver no estado Legado Adepti de **Descida da Lua de Jade** e Yaoyao correr, saltar ou estiver correndo, jogará Rabanetes de Jade Branca constantemente contra os inimigos próximos. É possível jogar 1 Rabanete de Jade Branca a cada 0.6s dessa forma."
+	},
+	"passive2": {
+		"name": "No Lugar de Outra Pessoa",
+		"info": "Quando o **Rabanete de Jade Branca** explode, os personagens ativos dentro de sua AdE regenerarão Vida uma vez a cada segundo. A quantidade regenerada é baseada em 0.8% da Vida Máxima de Yaoyao. Dura 5s."
+	},
+	"passive3": {
+		"name": "Perseguição na Ponta dos Pés",
+		"info": "Quando Yaoyao estiver na equipe, seus personagens não irão assustar as Borboletas de Cristais e alguns outros animais ao chegar perto deles.\nCheque a sub-categoria \"Outros\" da seção \"Seres Vivos/Animais Selvagens\" do Arquivo, para descobrir em quais criaturas esta habilidade funciona."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos de Esforço",
+				"count": 3
+			},
+			{
+				"name": "Condensado de Slime",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia de Esforço",
+				"count": 2
+			},
+			{
+				"name": "Secreção de Slime",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia de Esforço",
+				"count": 4
+			},
+			{
+				"name": "Secreção de Slime",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia de Esforço",
+				"count": 6
+			},
+			{
+				"name": "Secreção de Slime",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia de Esforço",
+				"count": 9
+			},
+			{
+				"name": "Secreção de Slime",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia de Esforço",
+				"count": 4
+			},
+			{
+				"name": "Essência de Slime",
+				"count": 4
+			},
+			{
+				"name": "Sino do Vazio",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia de Esforço",
+				"count": 6
+			},
+			{
+				"name": "Essência de Slime",
+				"count": 6
+			},
+			{
+				"name": "Sino do Vazio",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia de Esforço",
+				"count": 12
+			},
+			{
+				"name": "Essência de Slime",
+				"count": 9
+			},
+			{
+				"name": "Sino do Vazio",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia de Esforço",
+				"count": 16
+			},
+			{
+				"name": "Essência de Slime",
+				"count": 12
+			},
+			{
+				"name": "Sino do Vazio",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}
