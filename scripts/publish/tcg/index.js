@@ -6,6 +6,7 @@ const namespace = 'tcg';
 
 // This script should not be run directly.
 
+// Backup generated files.
 helper.backupGeneratedFiles();
 
 // Read and cache the files we want to change.
@@ -29,6 +30,4 @@ execSync('npm publish --access public', { stdio:[0, 1, 2] });
 helper.restoreFilesFromCache(namespace);
 
 // Restore generated files.
-// execSync(npm)
-
 helper.restoreGeneratedFiles();
