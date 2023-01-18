@@ -32,27 +32,28 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',             'Albedo',           'Aloy',
-  'Amber',              'Arataki Itto',     'Barbara',
-  'Beidou',             'Bennett',          'Candace',
-  'Chongyun',           'Collei',           'Cyno',
-  'Diluc',              'Diona',            'Dori',
-  'Eula',               'Faruzan',          'Fischl',
-  'Ganyu',              'Gorou',            'Hu Tao',
-  'Jean',               'Kaedehara Kazuha', 'Kaeya',
-  'Kamisato Ayaka',     'Kamisato Ayato',   'Keqing',
-  'Klee',               'Kujou Sara',       'Kuki Shinobu',
-  'Layla',              'Lisa',             'Lumine',
-  'Mona',               'Nahida',           'Nilou',
-  'Ningguang',          'Noelle',           'Qiqi',
-  'Raiden Shogun',      'Razor',            'Rosaria',
-  'Sangonomiya Kokomi', 'Sayu',             'Shenhe',
-  'Shikanoin Heizou',   'Sucrose',          'Tartaglia',
-  'Thoma',              'Tighnari',         'Venti',
-  'Wanderer',           'Xiangling',        'Xiao',
-  'Xingqiu',            'Xinyan',           'Yae Miko',
-  'Yanfei',             'Yelan',            'Yoimiya',
-  'Yun Jin',            'Zhongli'
+  'Aether',       'Albedo',             'Alhaitham',
+  'Aloy',         'Amber',              'Arataki Itto',
+  'Barbara',      'Beidou',             'Bennett',
+  'Candace',      'Chongyun',           'Collei',
+  'Cyno',         'Diluc',              'Diona',
+  'Dori',         'Eula',               'Faruzan',
+  'Fischl',       'Ganyu',              'Gorou',
+  'Hu Tao',       'Jean',               'Kaedehara Kazuha',
+  'Kaeya',        'Kamisato Ayaka',     'Kamisato Ayato',
+  'Keqing',       'Klee',               'Kujou Sara',
+  'Kuki Shinobu', 'Layla',              'Lisa',
+  'Lumine',       'Mona',               'Nahida',
+  'Nilou',        'Ningguang',          'Noelle',
+  'Qiqi',         'Raiden Shogun',      'Razor',
+  'Rosaria',      'Sangonomiya Kokomi', 'Sayu',
+  'Shenhe',       'Shikanoin Heizou',   'Sucrose',
+  'Tartaglia',    'Thoma',              'Tighnari',
+  'Venti',        'Wanderer',           'Xiangling',
+  'Xiao',         'Xingqiu',            'Xinyan',
+  'Yae Miko',     'Yanfei',             'Yaoyao',
+  'Yelan',        'Yoimiya',            'Yun Jin',
+  'Zhongli'
 ]
 ```
 
@@ -637,8 +638,9 @@ const genshindb = require('genshin-db');
   'Qiqi',      'Shenhe',
   'Xiangling', 'Xiao',
   'Xingqiu',   'Xinyan',
-  'Yanfei',    'Yelan',
-  'Yun Jin',   'Zhongli'
+  'Yanfei',    'Yaoyao',
+  'Yelan',     'Yun Jin',
+  'Zhongli'
 ]
 ```
 
@@ -648,14 +650,14 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',           'Albedo',
-  'Bennett',          'Jean',
-  'Kaedehara Kazuha', 'Kaeya',
-  'Kamisato Ayaka',   'Kamisato Ayato',
-  'Keqing',           'Kuki Shinobu',
-  'Layla',            'Lumine',
-  'Nilou',            'Qiqi',
-  'Xingqiu'
+  'Aether',         'Albedo',
+  'Alhaitham',      'Bennett',
+  'Jean',           'Kaedehara Kazuha',
+  'Kaeya',          'Kamisato Ayaka',
+  'Kamisato Ayato', 'Keqing',
+  'Kuki Shinobu',   'Layla',
+  'Lumine',         'Nilou',
+  'Qiqi',           'Xingqiu'
 ]
 ```
 
@@ -728,28 +730,28 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',           'Aloy',               'Amber',
-  'Arataki Itto',     'Barbara',            'Beidou',
-  'Bennett',          'Candace',            'Chongyun',
-  'Collei',           'Cyno',               'Diluc',
-  'Diona',            'Dori',               'Eula',
-  'Faruzan',          'Fischl',             'Ganyu',
-  'Gorou',            'Hu Tao',             'Jean',
-  'Kaedehara Kazuha', 'Kaeya',              'Kamisato Ayaka',
-  'Kamisato Ayato',   'Keqing',             'Klee',
-  'Kujou Sara',       'Kuki Shinobu',       'Layla',
-  'Lisa',             'Mona',               'Nahida',
-  'Nilou',            'Ningguang',          'Noelle',
-  'Qiqi',             'Raiden Shogun',      'Razor',
-  'Rosaria',          'Sangonomiya Kokomi', 'Sayu',
-  'Shenhe',           'Shikanoin Heizou',   'Sucrose',
-  'Tartaglia',        'Thoma',              'Tighnari',
-  'Traveler (Anemo)', 'Traveler (Dendro)',  'Traveler (Electro)',
-  'Traveler (Geo)',   'Venti',              'Wanderer',
-  'Xiangling',        'Xiao',               'Xingqiu',
-  'Xinyan',           'Yae Miko',           'Yanfei',
-  'Yelan',            'Yoimiya',            'Yun Jin',
-  'Zhongli'
+  'Albedo',             'Alhaitham',        'Aloy',
+  'Amber',              'Arataki Itto',     'Barbara',
+  'Beidou',             'Bennett',          'Candace',
+  'Chongyun',           'Collei',           'Cyno',
+  'Diluc',              'Diona',            'Dori',
+  'Eula',               'Faruzan',          'Fischl',
+  'Ganyu',              'Gorou',            'Hu Tao',
+  'Jean',               'Kaedehara Kazuha', 'Kaeya',
+  'Kamisato Ayaka',     'Kamisato Ayato',   'Keqing',
+  'Klee',               'Kujou Sara',       'Kuki Shinobu',
+  'Layla',              'Lisa',             'Mona',
+  'Nahida',             'Nilou',            'Ningguang',
+  'Noelle',             'Qiqi',             'Raiden Shogun',
+  'Razor',              'Rosaria',          'Sangonomiya Kokomi',
+  'Sayu',               'Shenhe',           'Shikanoin Heizou',
+  'Sucrose',            'Tartaglia',        'Thoma',
+  'Tighnari',           'Traveler (Anemo)', 'Traveler (Dendro)',
+  'Traveler (Electro)', 'Traveler (Geo)',   'Venti',
+  'Wanderer',           'Xiangling',        'Xiao',
+  'Xingqiu',            'Xinyan',           'Yae Miko',
+  'Yanfei',             'Yaoyao',           'Yelan',
+  'Yoimiya',            'Yun Jin',          'Zhongli'
 ]
 ```
 
@@ -1635,6 +1637,7 @@ const genshindb = require('genshin-db');
   'Key of Khaj-Nisut',
   "King's Squire",
   'Kitain Cross Spear',
+  'Light of Foliar Incision',
   "Lion's Roar",
   'Lithic Blade',
   'Lithic Spear',
@@ -1672,8 +1675,7 @@ const genshindb = require('genshin-db');
   'Redhorn Stonethresher',
   'Royal Bow',
   'Royal Greatsword',
-  'Royal Grimoire',
-  ... 53 more items
+  ... 54 more items
 ]
 ```
 
@@ -1954,7 +1956,7 @@ const genshindb = require('genshin-db');
   description: 'Talent Level-Up material.\n' +
     'Poetry is the soul of the land of the wind.\n' +
     'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
-  sortorder: 2225,
+  sortorder: 2359,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Talent Level-Up Material',
@@ -2076,7 +2078,7 @@ const genshindb = require('genshin-db');
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
     'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
     'His enemies are the thousands who stand against the wind.',
-  sortorder: 2146,
+  sortorder: 2279,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -2099,7 +2101,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
-  sortorder: 1890,
+  sortorder: 2018,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
@@ -2165,15 +2167,15 @@ const genshindb = require('genshin-db');
   'Fowl',          'Glabrous Beans', 'Ham',
   'Harra Fruit',   'Jam',            'Lavender Melon',
   'Lotus Head',    'Matsutake',      'Milk',
-  'Mint',          'Mushroom',       'Onion',
-  'Pepper',        'Pinecone',       'Potato',
-  'Radish',        'Raw Meat',       'Rice',
-  'Salt',          'Sausage',        'Seagrass',
-  'Shrimp Meat',   'Silver Lotus',   'Smoked Fish',
-  'Smoked Fowl',   'Snapdragon',     'Spice',
-  'Sugar',         'Sumeru Rose',    'Sweet Flower',
-  'Tofu',          'Tomato',         'Wheat',
-  'Zaytun Peach'
+  'Mint',          'Mushroom',       'Mysterious Meat',
+  'Onion',         'Pepper',         'Pinecone',
+  'Potato',        'Radish',         'Raw Meat',
+  'Rice',          'Salt',           'Sausage',
+  'Seagrass',      'Shrimp Meat',    'Silver Lotus',
+  'Smoked Fish',   'Smoked Fowl',    'Snapdragon',
+  'Spice',         'Sugar',          'Sumeru Rose',
+  'Sweet Flower',  'Tofu',           'Tomato',
+  'Wheat',         'Zaytun Peach'
 ]
 ```
 
@@ -2495,6 +2497,7 @@ const genshindb = require('genshin-db');
   'Mushroom Pizza',
   'Northern Smoked Chicken',
   'Nutritious Meal (V.593)',
+  'Qingce Household Dish',
   'Qingce Stir Fry',
   'Satisfying Salad',
   'The Only Truth',
@@ -2831,6 +2834,7 @@ const genshindb = require('genshin-db');
   'Pyro Regisvine',
   'Rimebiter Bathysmal Vishap',
   'Ruin Serpent',
+  'Setekh Wenut',
   'Shouki no Kami, the Prodigal',
   'Stormterror',
   'Thunder Manifestation'
