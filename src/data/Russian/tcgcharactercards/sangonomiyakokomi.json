@@ -1,0 +1,78 @@
+{
+	"id": 1205,
+	"name": "Сангономия Кокоми",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Гидро",
+		"Катализатор",
+		"Инадзума"
+	],
+	"storytitle": "«Жемчужина мудрости» Сангономия Кокоми",
+	"storytext": "Чтобы пережить опасность, нужно быть к ней готовым.",
+	"source": "Награда за приглашение Сангономии Кокоми в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12051,
+			"name": "Форма воды",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед.",
+			"description": "Наносит Гидро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12052,
+			"name": "Клятва курагэ",
+			"descriptionraw": "Текущий персонаж получает $[K202], призывает <color=#FFFFFFFF>$[C112051]</color>.",
+			"descriptionreplaced": "Текущий персонаж получает <color=#80C0FFFF>Эффект {SPRITE_PRESET#2102}Гидро</color>, призывает <color=#FFFFFFFF>Бакэ-курагэ</color>.",
+			"description": "Текущий персонаж получает Эффект Гидро, призывает Бакэ-курагэ.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12053,
+			"name": "Вознесение нереиды",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Персонаж получает <color=#FFFFFFFF>$[C112052]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед. Персонаж получает <color=#FFFFFFFF>Церемониальное одеяние</color>.",
+			"description": "Наносит Гидро урон, 3 ед. Персонаж получает Церемониальное одеяние.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1106,
+	"name": "Eula",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Kryo",
+		"Zweihänder",
+		"Mondstadt"
+	],
+	"storytitle": "Wirbeltanz der Gischt – Eula",
+	"storytext": "Es ist nur ein Spiel. Ich werde dir nicht böse sein, selbst wenn das Glück auf deiner Seite ist.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Eula in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 11061,
+			"name": "Favonius-Schwertkunst – Adelshaus",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11062,
+			"name": "Eisiger Strudel",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Verleiht der Figur <color=#FFFFFFFF>$[C111061]</color>, wenn sie nicht damit ausgerüstet ist.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>. Verleiht der Figur <color=#FFFFFFFF>Kaltes Herz</color>, wenn sie nicht damit ausgerüstet ist.",
+			"description": "Verursacht 2 Pkt. Kryo-SCH. Verleiht der Figur Kaltes Herz, wenn sie nicht damit ausgerüstet ist.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11063,
+			"name": "Schwert der Brandung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C111062]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Schwert des Lichtfalls</color>.",
+			"description": "Verursacht 2 Pkt. Kryo-SCH, erschafft 1 Schwert des Lichtfalls.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

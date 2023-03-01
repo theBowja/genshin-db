@@ -1,0 +1,78 @@
+{
+	"id": 1205,
+	"name": "珊瑚宮心海",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"水元素",
+		"法器",
+		"稻妻"
+	],
+	"storytitle": "真珠之智·珊瑚宮心海",
+	"storytext": "未雨綢繆，臨危莫亂。",
+	"source": "在貓尾酒館中邀請珊瑚宮心海進行對局，在友好對局難度中獲得勝利後獲得",
+	"skills": [
+		{
+			"id": 12051,
+			"name": "水有常形",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成1點{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素傷害</color>。",
+			"description": "造成1點水元素傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12052,
+			"name": "海月之誓",
+			"descriptionraw": "本角色$[K202]，召唤<color=#FFFFFFFF>$[C112051]</color>。",
+			"descriptionreplaced": "本角色<color=#80C0FFFF>附著{SPRITE_PRESET#2102}水元素</color>，召唤<color=#FFFFFFFF>化海月</color>。",
+			"description": "本角色附著水元素，召唤化海月。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12053,
+			"name": "海人化羽",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，本角色附屬<color=#FFFFFFFF>$[C112052]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素傷害</color>，本角色附屬<color=#FFFFFFFF>儀來羽衣</color>。",
+			"description": "造成3點水元素傷害，本角色附屬儀來羽衣。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

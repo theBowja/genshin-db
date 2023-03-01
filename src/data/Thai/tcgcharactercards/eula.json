@@ -1,0 +1,80 @@
+{
+	"id": 1106,
+	"name": "Eula",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"ธาตุน้ำแข็ง",
+		"ดาบใหญ่",
+		"Mondstadt"
+	],
+	"storytitle": "ระบำแห่งเกลียวคลื่น - Eula",
+	"storytext": "นี่ก็แค่เกมตานึงเท่านั้น ไม่ว่าจะคว้าชัยหรือพ่ายแพ้ เธอก็ไม่ได้ทำความผิดอันใดด้วยเหตุนี้ทั้งนั้น",
+	"source": "ได้รับหลังจากเชิญ Eula ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 11061,
+			"name": "Favonius Bladework - Edel",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11062,
+			"name": "Icetide Vortex",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และหากตัวละครนี้ยังไม่ได้รับ <color=#FFFFFFFF>$[C111061]</color> จะทำให้ได้รับ <color=#FFFFFFFF>$[C111061]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2101}<color=#99FFFFFF>ความเสียหายน้ำแข็ง</color> 2 หน่วย และหากตัวละครนี้ยังไม่ได้รับ <color=#FFFFFFFF>Grimheart</color> จะทำให้ได้รับ <color=#FFFFFFFF>Grimheart</color>",
+			"description": "สร้างความเสียหายน้ำแข็ง 2 หน่วย และหากตัวละครนี้ยังไม่ได้รับ Grimheart จะทำให้ได้รับ Grimheart",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11063,
+			"name": "Glacial Illumination",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C111062]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2101}<color=#99FFFFFF>ความเสียหายน้ำแข็ง</color> 2 หน่วย และเรียก <color=#FFFFFFFF>Lightfall Sword</color>",
+			"description": "สร้างความเสียหายน้ำแข็ง 2 หน่วย และเรียก Lightfall Sword",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

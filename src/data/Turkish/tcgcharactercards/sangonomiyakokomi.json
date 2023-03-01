@@ -1,0 +1,78 @@
+{
+	"id": 1205,
+	"name": "Sangonomiya Kokomi",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Su",
+		"Katalizör",
+		"Inazuma"
+	],
+	"storytitle": "\"Bilgelik İncisi\" Sangonomiya Kokomi",
+	"storytext": "Zorlukları aşmak için onlara karşı hazır olman gerekir.",
+	"source": "Sangonomiya Kokomi'yi Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 12051,
+			"name": "Suyun Şekli",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "1 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12052,
+			"name": "Kurage Yemini",
+			"descriptionraw": "Bu karakter $[K202] kazanır ve 1 <color=#FFFFFFFF>$[C112051]</color> çağırır.",
+			"descriptionreplaced": "Bu karakter <color=#80C0FFFF>{SPRITE_PRESET#2102}Su Etkisi</color> kazanır ve 1 <color=#FFFFFFFF>Bake-Kurage</color> çağırır.",
+			"description": "Bu karakter Su Etkisi kazanır ve 1 Bake-Kurage çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12053,
+			"name": "Nereid'in Yükselişi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karakter <color=#FFFFFFFF>$[C112052]</color> kazanır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve bu karakter <color=#FFFFFFFF>Merasim Elbisesi</color> kazanır.",
+			"description": "3 Su Hasarı verir ve bu karakter Merasim Elbisesi kazanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

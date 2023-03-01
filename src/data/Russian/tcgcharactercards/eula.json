@@ -1,0 +1,80 @@
+{
+	"id": 1106,
+	"name": "Эола",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Крио",
+		"Двуручное",
+		"Мондштадт"
+	],
+	"storytitle": "«Танец морской пены» Эола",
+	"storytext": "Это всего лишь игра. Я не буду держать зла, если удача окажется на твоей стороне.",
+	"source": "Награда за приглашение Эолы в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 11061,
+			"name": "Фехтовальный стиль Фавония: Аристократы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11062,
+			"name": "Ледяной прибой",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если у текущего персонажа нет эффекта <color=#FFFFFFFF>$[C111061]</color>, то даёт эффект <color=#FFFFFFFF>$[C111061]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 2 ед. Если у текущего персонажа нет эффекта <color=#FFFFFFFF>Холодное сердце</color>, то даёт эффект <color=#FFFFFFFF>Холодное сердце</color>.",
+			"description": "Наносит Крио урон, 2 ед. Если у текущего персонажа нет эффекта Холодное сердце, то даёт эффект Холодное сердце.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11063,
+			"name": "Сумеречный меч",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C111062]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 2 ед. и призывает помощника: <color=#FFFFFFFF>Меч света</color>.",
+			"description": "Наносит Крио урон, 2 ед. и призывает помощника: Меч света.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
