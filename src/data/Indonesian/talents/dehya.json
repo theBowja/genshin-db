@@ -1,0 +1,211 @@
+{
+	"name": "Dehya",
+	"combat1": {
+		"name": "Normal Attack: Sandstorm Assault",
+		"info": "**Normal Attack**\nMelancarkan hingga 4 serangan berturut-turut dengan menggabungkan Claymore dan teknik bela dirinya.\n\n**Charged Attack**\nTerus menguras Stamina untuk melancarkan tebasan berkelanjutan.\nDiakhiri dengan sebuah tebasan yang sangat kuat.\n\n**Plunging Attack**\nMenerjang dari udara untuk menghantam tanah, menyerang semua musuh di jalurnya dan mengakibatkan DMG Area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}",
+				"DMG Tahap 4|{param4:F1P}",
+				"DMG Berputar Charged Attack|{param5:F1P}",
+				"DMG Akhir Charged Attack|{param6:P}",
+				"Konsumsi Stamina Charged Attack|{param7:F1}/dtk",
+				"Durasi Maksimum|{param8:F1} dtk",
+				"DMG Selama Plunging|{param9:F1P}",
+				"DMG Plunging Attack Min./Maks.|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Molten Inferno",
+		"info": "Dehya melancarkan teknik bertempur ciptaannya sendiri sesuai dengan situasi pertempuran.\n\n**Indomitable Flame**\nAkan dilancarkan saat tidak ada medan Fiery Sanctum yang diciptakan oleh Dehya di medan pertempuran.\nMengakibatkan Pyro DMG Area dan menghasilkan sebuah medan yang disebut Fiery Sanctum.\n\n**Ranging Flame**\nAkan dilancarkan saat sudah ada medan Fiery Sanctum yang diciptakan oleh Dehya di medan pertempuran.\nMelancarkan serangan melompat dan mengakibatkan Pyro DMG Area, kemudian menciptakan kembali medan Fiery Sanctum di posisi Dehya yang baru.\nMedan Fiery Sanctum yang diciptakan dengan cara ini akan mewarisi durasi awal dari medan Fiery Sanctum sebelumnya.\n\nDehya hanya bisa melancarkan Ranging Flame 1 kali dalam 1 durasi medan Fiery Sanctum.\n\n**Fiery Sanctum**\nSaat musuh di dalam medan Fiery Sanctum menerima DMG, Fiery Sanctum akan melancarkan serangan terkoordinasi dan mengakibatkan Pyro DMG Area yang didasarkan pada ATK dan Max HP Dehya terhadap musuh-musuh ini. Efek ini dapat terpicu sekali setiap 2,5 detik.\nSaat berada di medan ini, ketahanan Karakter aktif terhadap interupsi akan meningkat. Saat Karakter aktif ini menerima DMG, sebagian DMG-nya akan tertahan dan dialirkan ke dalam Redmane's Blood. Kemudian Dehya akan menanggung DMG ini dalam rentang waktu 10 detik.\nRedmane's Blood tidak akan bisa menahan DMG lagi setelah nilai DMG yang tertahan telah mencapai atau melebihi persentase tertentu dari Max HP Dehya.\n\nHanya 1 medan Fiery Sanctum yang bisa diciptakan oleh Dehya pada saat bersamaan.",
+		"description": "Jalani siksaan yang berapi-api ini denganku, bersihkan semua kekotoran, sama seperti hewan api yang harus turun dalam bara.",
+		"attributes": {
+			"labels": [
+				"DMG Indomitable Flame|{param1:F1P}",
+				"DMG Ranging Flame|{param2:F1P}",
+				"DMG Medan|{param3:F1P} ATK+{param4:F2P} Max HP",
+				"Pengurangan DMG|{param5:P}",
+				"Batas Redmane's Blood|{param6:P} Max HP",
+				"Durasi Medan|{param7:F1} dtk",
+				"Cooldown|{param8:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Leonine Bite",
+		"info": "Dehya meluapkan seluruh kemarahan membaranya, melepaskan pedang besarnya kemudian memasuki status Blazing Lioness dan meningkatkan ketahanannya terhadap interupsi.\nDalam status ini, Dehya akan otomatis melancarkan Flame-Mane's Fist terus-menerus dan mengakibatkan Pyro DMG yang didasarkan pada ATK dan Max HP Dehya, serta akan melancarkan tendangan Incineration Drive yang mengakibatkan Pyro DMG Area yang didasarkan pada ATK dan Max HP Dehya saat durasinya berakhir.\nSaat melancarkan skill ini, jika ada medan Fiery Sanctum yang diciptakan dari Elemental Skill \"Molten Inferno\" milik Dehya di medan pertempuran, maka Dehya akan menarik medan Fiery Sanctum-nya dan menciptakan medan Fiery Sanctum yang baru di posisi Dehya setelah durasi Blazing Lioness berakhir. Medan Fiery Sanctum yang diciptakan kembali ini akan mewarisi durasi medan Fiery Sanctum awal yang ditarik olehnya.\nDalam status ini, Dehya tidak bisa melancarkan Elemental Skill, melakukan Normal Attack, Charged Attack, atau Plunging Attack. Normal Attack \"Sandstorm Assault\" dan Elemental Skill \"Molten Inferno\" Dehya akan berubah menjadi \"Roaring Barrage\".\n\n**Roaring Barrage**\nMelancarkan Roaring Barrage dalam waktu 0,4 detik setelah melancarkan Flame-Mane's Fist akan meningkatkan kecepatan melancarkan Flame-Mane's Fist selanjutnya.",
+		"description": "Bahkan api yang mengalir harus mematuhi amarahnya dan menjadi taring dan cakarnya atas perintahnya.",
+		"attributes": {
+			"labels": [
+				"DMG Flame-Mane's Fist|{param1:F1P} ATK+{param2:F2P} Max HP",
+				"DMG Incineration Drive|{param3:F1P} ATK+{param4:F2P} Max HP",
+				"Durasi|{param5:F1} dtk",
+				"Cooldown|{param6:F1} dtk",
+				"Konsumsi Energy|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Unstinting Succor",
+		"info": "Dalam 6 detik setelah Dehya menarik kembali medan Fiery Sanctum dengan **Molten Inferno: Ranging Flame** atau **Leonine Bite**, DMG yang diterima Dehya berkurang 60% saat dia menanggung DMG dari Redmane's Blood. Efek ini dapat terpicu sekali setiap 2 detik.\nSelain itu, dalam 9 detik setelah Dehya melancarkan **Molten Inferno: Indomitable Flame**, dia akan memberikan status Gold-Forged Form kepada seluruh anggota party. Saat Karakter dengan status Gold-Forged Form berada di dalam medan Fiery Sanctum, Karakter ini akan memperoleh ketahanan terhadap interupsi tambahan. Status Gold-Forged Form bisa dihasilkan sekali setiap 18 detik."
+	},
+	"passive2": {
+		"name": "Stalwart and True",
+		"info": "Saat HP sedang berada di bawah 40%, Dehya akan memulihkan 20% Max HP-nya. Dan dalam 10 detik berikutnya, Dehya akan memulihkan 6% Max HP-nya setiap 2 detik. Efek ini dapat terpicu sekali setiap 20 detik."
+	},
+	"passive3": {
+		"name": "The Sunlit Way",
+		"info": "Saat pagi sampai sore hari (6:00 - 18:00), meningkatkan 10% Movement SPD anggota party sendiri.\nEfek ini tidak aktif dalam Domain, Trounce Domain, atau Spiral Abyss. Efek ini tidak dapat ditumpuk dengan Talenta Pasif lain dengan efek yang sama."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Praxis",
+				"count": 3
+			},
+			{
+				"name": "Faded Red Satin",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 2
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 4
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 6
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 9
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 4
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 4
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 6
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 6
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 12
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 9
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 16
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 12
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

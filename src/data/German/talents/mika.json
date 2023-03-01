@@ -1,0 +1,210 @@
+{
+	"name": "Mika",
+	"combat1": {
+		"name": "Standardangriff: Favonius-Speerkunst – Erbe der Bolzen",
+		"info": "**Standardangriff**\nKombiniert die Armbrust mit dem Speer und führt bis zu 5 Kombos hintereinander aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer, sticht geschwind nach vorn und fügt den Gegnern in der Bahn Schaden zu.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P} + {param5:F1P}",
+				"SCH Phase 5|{param6:F1P}",
+				"SCH heftiger Schläge|{param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Sternenfrost-Strudel",
+		"info": "Mika greift Gegner mit seiner Armbrust an und gewährt außerdem allen in der Nähe befindlichen Figuren in der Truppe Seelenböe. Wenn sich Figuren im Zustand Seelenböe auf dem Feld befinden, erhöht sich ihre Angriffs-GSW.\nJe nachdem, ob gedrückt oder gedrückt gehalten wird, wird ein anderer Effekt erzeugt.\n\n**Drücken**\nSchießt schnell einen Frostfluss-Pfeil ab, der Gegner durchbohren kann und getroffenen Gegnern Kryo-Schaden zufügt.\n\n**Gedrückt halten**\nAktiviert den Zielmodus und feuert eine Eisstern-Bake auf einen anvisierten Gegner ab, die Kryo-Schaden verursacht. Nachdem die Eisstern-Bake getroffen hat, steigt diese in die Luft und explodiert, wobei sie Eisstern-Splitter auf bis zu 3 weitere Gegner abfeuert und Kryo-Schaden verursacht.",
+		"description": "Auf dass es die Sterne waren, unter einem frostigen Himmelszelt.",
+		"attributes": {
+			"labels": [
+				"SCH von Frostfluss-Pfeil|{param1:F2P}",
+				"SCH von Eisstern-Bake|{param2:F2P}",
+				"SCH von Eisstern-Splitter|{param3:F2P}",
+				"Angriffs-GSW-Bonus|{param4:P}",
+				"Dauer der Seelenböe|{param5:F1} s",
+				"Abklingzeit|{param6:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Der Federn Wunsch",
+		"info": "Mika ermuntert seine Gefährten mithilfe des Gebets des Ritterordens weiter voranzuschreiten. Stellt allen Truppenmitgliedern in der Nähe LP basierend auf Mikas max. LP wieder her und verleiht ihnen außerdem den Zustand Falkenfeder.\n\n**Falkenfeder**\nWenn Figuren, die sich im Zustand Falkenfeder auf dem Feld befinden, Gegner mit ihrem Standardangriff treffen, stellt Mika diesen Figuren LP basierend auf seinen max. LP wieder her.\nFiguren unter diesem Zustand können innerhalb kurzer Zeit nur 1-mal auf diese Weise LP wiederhergestellt werden.",
+		"description": "„Hoffnung in der Not, Wachsamkeit in guten Zeiten ... denn die weiße Feder wird den verirrten Reisenden auf den richtigen Weg führen.“",
+		"attributes": {
+			"labels": [
+				"Heilung bei Auslösen|{param2:F1P} der max. LP + {param1:I}",
+				"Falkenfeder-Heilung|{param4:F1P} der max. LP + {param3:I}",
+				"Falkenfeder-Heilungsintervall|{param5:F1} s",
+				"Falkenfeder-Dauer|{param6:F1} s",
+				"Abklingzeit|{param7:F1} s",
+				"Elementarenergie|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Unterdrückendes Sperrfeuer",
+		"info": "Im Zustand Seelenböe des **Sternenfrost-Strudels** wird in folgenden Situationen der Effekt Entdeckung gewährt, wodurch der von aktiven Figuren verursachte physische Schaden um 10 % erhöht wird:\n· Wenn der Frostfluss-Pfeil mehr als 1 Gegner trifft, wird pro zusätzlich getroffenen Gegner 1 Stapelung des Effekts Entdeckung erschaffen.\n· Trifft ein Eisstern-Splitter einen Gegner, wird 1 Stapelung des Effekts Entdeckung erschaffen. Jeder Eisstern-Splitter kann diesen Effekt jeweils nur 1-mal auslösen.\n\nDer Effekt Entdeckung des Zustands Seelenböe ist 3-fach stapelbar. Wenn Sternenfrost-Strudel während der Dauer erneut eingesetzt wird, werden der ursprüngliche Zustand von Seelenböe und dessen Effekt Entdeckung entfernt."
+	},
+	"passive2": {
+		"name": "Geomorphologische Kartografierung",
+		"info": "Wenn aktuelle Figuren mit ihren Angriffen kritische Treffer auslösen, während sie sich gleichzeitig in den Zuständen Falkenfeder von **Der Federn Wunsch** und Seelenböe des **Sternenfrost-Strudels** befinden, erschafft Seelenböe 1 Stapelung des Effekts Entdeckung des passiven Talents „Unterdrückendes Sperrfeuer“. Während einer einzigen Dauer des Zustands Seelenböe kann auf diese Weise höchstens 1 Stapelung des Effekts Entdeckung erschaffen werden.\nAußerdem kann im Zustand Seelenböe die maximale Stapelung des Effekts Entdeckung um 1 erhöht werden.\nDas passive Talent „Unterdrückendes Sperrfeuer“ muss zuerst freigeschaltet werden."
+	},
+	"passive3": {
+		"name": "Grenzziehung",
+		"info": "Zeigt alle **Besonderheiten Mondstadts** in der Nähe auf der Minikarte an."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Poesie“",
+				"count": 3
+			},
+			{
+				"name": "Abzeichen für neue Rekruten",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Poesie“",
+				"count": 2
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Poesie“",
+				"count": 4
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Poesie“",
+				"count": 6
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Poesie“",
+				"count": 9
+			},
+			{
+				"name": "Abzeichen für Unteroffiziere",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Poesie“",
+				"count": 4
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 4
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Poesie“",
+				"count": 6
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 6
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Poesie“",
+				"count": 12
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 9
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Poesie“",
+				"count": 16
+			},
+			{
+				"name": "Abzeichen für Offiziere",
+				"count": 12
+			},
+			{
+				"name": "Mushin-Abgrundspiegel",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

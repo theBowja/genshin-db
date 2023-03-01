@@ -1,0 +1,211 @@
+{
+	"name": "Dehya",
+	"combat1": {
+		"name": "Normal Attack: Sandstorm Assault",
+		"info": "**Normal Attack**\nPerforms up to 4 consecutive strikes using her Claymore and her martial arts.\n\n**Charged Attack**\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n**Plunging Attack**\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}",
+				"4-Hit DMG|{param4:F1P}",
+				"Charged Attack Cyclic DMG|{param5:F1P}",
+				"Charged Attack Final DMG|{param6:P}",
+				"Charged Attack Stamina Cost|{param7:F1}/s",
+				"Max Duration|{param8:F1}s",
+				"Plunge DMG|{param9:F1P}",
+				"Low/High Plunge DMG|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Molten Inferno",
+		"info": "This art of Dehya's own invention changes its method of use depending on the combat situation.\n\n**Indomitable Flame**\nThis skill will be unleashed should there be no Fiery Sanctum field created by Dehya herself present at the time.\nDeals AoE Pyro DMG, and creates a field known as Fiery Sanctum.\n\n**Ranging Flame**\nThis skill will be unleashed should a Fiery Sanctum field created by Dehya herself already exist.\nDehya will perform a leaping attack, dealing AoE Pyro DMG before recreating a Fiery Sanctum field at her new position.\nA Fiery Sanctum field created this way will inherit the remaining duration of the previous field.\n\nRanging Flame can be used only once throughout a single Fiery Sanctum field's duration.\n\n**Fiery Sanctum**\nWhen an opponent within a Fiery Sanctum field takes DMG, the field will unleash a coordinated attack, dealing AoE Pyro DMG to them based on Dehya's ATK and Max HP. This effect can be triggered once every 2.5s.\nActive characters within this field have their resistance to interruption increased, and when such characters take DMG, a portion of that damage will be mitigated and flow into Redmane's Blood. Dehya will then take this DMG over 10s. When the mitigated DMG stored by Redmane's Blood reaches or goes over a certain percentage of Dehya's Max HP, she will stop mitigating DMG in this way.\n\nOnly 1 Fiery Sanctum created by Dehya herself can exist at the same time.",
+		"description": "Walk this fiery ordeal with me and purge all impurity, just as a beast of flames that must descend from the blaze.",
+		"attributes": {
+			"labels": [
+				"Indomitable Flame DMG|{param1:F1P}",
+				"Ranging Flame DMG|{param2:F1P}",
+				"Field DMG|{param3:F1P} ATK+{param4:F2P} Max HP",
+				"Mitigation|{param5:P}",
+				"Redmane's Blood Maximum|{param6:P} Max HP",
+				"Field Duration|{param7:F1}s",
+				"CD|{param8:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Leonine Bite",
+		"info": "Unleashing her burning anger and casting her inconvenient blade aside, Dehya enters the Blazing Lioness state and increases her resistance to interruption.\nIn this state, Dehya will automatically and continuously unleash the Flame-Mane's Fists, dealing Pyro DMG based on her ATK and Max HP, and when its duration ends, she will unleash an Incineration Drive, dealing AoE Pyro DMG based on her ATK and Max HP.\nIf a Fiery Sanctum field created by Dehya's own Elemental Skill \"Molten Inferno\" exists when this ability is unleashed, Dehya will retrieve it, and then create another field once Blazing Lioness's duration expires. This field will take on the retrieved field's duration at the moment of its retrieval.\nIn this state, Dehya will be unable to cast her Elemental Skill, or perform Normal, Charged, and Plunging Attacks. \"Normal Attack: Sandstorm Assault\" and Elemental Skill \"Molten Inferno\" will be replaced by \"Roaring Barrage.\"\n\n**Roaring Barrage**\nUnleashing Roaring Barrage within 0.4s after each Flame-Mane's Fist strike will increase the speed at which the next Flame-Mane's Fist strike will be triggered.",
+		"description": "Even the flowing flames must obey her rage and at her command become her fangs and claws.",
+		"attributes": {
+			"labels": [
+				"Flame-Mane's Fist DMG|{param1:F1P} ATK+{param2:F2P} Max HP",
+				"Incineration Drive DMG|{param3:F1P} ATK+{param4:F2P} Max HP",
+				"Duration|{param5:F1}s",
+				"CD|{param6:F1}s",
+				"Energy Cost|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Unstinting Succor",
+		"info": "Within 6 seconds after Dehya retrieves the Fiery Sanctum field through **Molten Inferno: Ranging Flame** or **Leonine Bite**, she will take 60% less DMG when receiving DMG from Redmane's Blood. This effect can be triggered once every 2s.\nAdditionally, within 9s after Dehya unleashes **Molten Inferno: Indomitable Flame**, she will grant all party members the Gold-Forged Form state. This state will further increase a character's resistance to interruption when they are within the Fiery Sanctum field. Gold-Forged Form can be activated once every 18s."
+	},
+	"passive2": {
+		"name": "Stalwart and True",
+		"info": "When her HP is less than 40%, Dehya will recover 20% of her Max HP and will restore 6% of her Max HP every 2s for the next 10s. This effect can be triggered once every 20s."
+	},
+	"passive3": {
+		"name": "The Sunlit Way",
+		"info": "Increases the Movement SPD of your own party members by 10% during the day (6:00 – 18:00).\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Not stackable with Passive Talents that provide the exact same effects."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Praxis",
+				"count": 3
+			},
+			{
+				"name": "Faded Red Satin",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 2
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 4
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 6
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Praxis",
+				"count": 9
+			},
+			{
+				"name": "Trimmed Red Silk",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 4
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 4
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 6
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 6
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 12
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 9
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Praxis",
+				"count": 16
+			},
+			{
+				"name": "Rich Red Brocade",
+				"count": 12
+			},
+			{
+				"name": "Puppet Strings",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

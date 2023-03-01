@@ -1,0 +1,210 @@
+{
+	"name": "Mika",
+	"combat1": {
+		"name": "Normal Saldırı: Favonius Mızrağı - Ok Geçişi",
+		"info": "**Normal Saldırı**\nArbaletini ve mızrağını kullanarak arka arkaya en fazla 5 saldırı yapar.\n\n**Yüklü Saldırı**\nİleri atılırken belirli miktarda Dayanıklılık harcar ve önündeki düşmanlara hasar verir.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}+{param5:F1P}",
+				"5 Vuruş Hasarı|{param6:F1P}",
+				"Yüklü Saldırı Hasarı|{param7:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param8:F1}",
+				"Havadan Saldırı Hasarı|{param9:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Kırağı Girdabı",
+		"info": "Mika, arbaletini kullanarak saldırır ve grubunda olan yakındaki tüm karakterlere Ruh Esintisi durumu verir. Ruh Esintisi durumundaki karakterler savaş alanındayken Saldırı Hızları artar.\nDokunulduğunda veya Basılı Tutulduğunda farklı şekillerde etki eder.\n\n**Dokun**\nDüşmanları delip geçen ve temas ettiklerine Buz Hasarı veren bir Dondurucu Ok atar.\n\n**Basılı Tut**\nNişan Alma Moduna girerek bir düşmana kilitlenir ve ona Buz Hasarı veren bir Kutup Yıldızı Fişeği ateşler. Kutup Yıldızı Fişeği, hedefe isabet ettiğinde patlamadan önce havaya yükselir ve en fazla diğer 3 düşmana Kutup Yıldızı Parçaları ateşleyerek Buz Hasarı verir.",
+		"description": "Buzlu gökyüzünün altında yıldızlar patlar.",
+		"attributes": {
+			"labels": [
+				"Dondurucu Ok Hasarı|{param1:F2P}",
+				"Kutup Yıldızı Fişeği Hasarı|{param2:F2P}",
+				"Kutup Yıldızı Parçası Hasarı|{param3:F2P}",
+				"Saldırı Hızı Bonusu|{param4:P}",
+				"Ruh Esintisi Süresi|{param5:F1}sn",
+				"BS|{param6:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Göktüyü Şarkısı",
+		"info": "Şövalyelerin okuduğu dualardan takım arkadaşlarını cesaretlendirme becerisi alır ve yakındaki tüm grup üyelerinin Canını yeniler. Bu iyileştirme, Mika'nın Maks. Canına bağlıdır ve onlara Kartal Tüyü durumu kazandırır.\n\n**Kartal Tüyü**\nKartal Tüyü durumundaki aktif karakterlerin Normal Saldırıları bir düşmana isabet ettiğinde Mika, kendi Maks. Canına bağlı olarak onların Can yenilemelerine yardımcı olur.\nBu durumdan etkilenen karakterler, kısa zaman aralıklarıyla bu şekilde sadece bir defa Can yenileyebilir.",
+		"description": "\"En zor durumlarda bile umudunu yitirme ve her şey yolundayken de tetikte kalmaya devam et... Çünkü o saf beyaz tüy, yolunu kaybetmiş yolculara eninde sonunda yol gösterir.\"",
+		"attributes": {
+			"labels": [
+				"Anlık İyileştirme|{param2:F1P} Maks. Can+{param1:I}",
+				"Kartal Tüyü İyileştirmesi|{param4:F1P} Maks. Can+{param3:I}",
+				"Kartal Tüyü İyileştirme Aralığı|{param5:F1}sn",
+				"Kartal Tüyü Süresi|{param6:F1}sn",
+				"BS|{param7:F1}sn",
+				"Enerji Maliyeti|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Bastırıcı Ok Yağmuru",
+		"info": "Aşağıdaki şartlarda **Kırağı Girdabı** tarafından oluşturulan Ruh Esintisi durumu, karakterlere Dedektör etkisi vererek karakterler savaş alanındayken Fiziksel Hasarlarını %10 artırır.\n·Dondurucu Ok birden fazla düşmana isabet ederse isabet alan fazladan her bir düşman 1 Dedektör kademesi oluşturur.\n·Kutup Yıldızı Parçası bir düşmana isabet ettiğinde 1 Dedektör kademesi oluşturur. Her bir Kutup Yıldızı Parçası bu etkiyi 1 defa tetikleyebilir.\n\nRuh Esintisi durumunda en fazla 3 Dedektör kademesi birikebilir ve bu süre içinde Kırağı Girdabı yeniden kullanılırsa mevcut Ruh Esintisi durumu ve tüm Dedektör kademeleri sıfırlanır."
+	},
+	"passive2": {
+		"name": "Topografik Haritalandırma",
+		"info": "Hem **Göktüyü Şarkısının** Kartal Tüyünden hem de **Kırağı Girdabının** Ruh Esintisinden aynı anda etkilenen bir aktif karakter, saldırılarıyla bir Kritik Vuruş yaparsa Ruh Esintisi ona Bastırıcı Ok Yağmurundan 1 Dedektör kademesi verir. Tek bir Ruh Esintisi ile bu şekilde 1 Dedektör kademesi elde edilebilir.\nEk olarak, yalnızca Ruh Esintisinden kazanılabilecek maksimum kademe sayısı 1 artar.\nÖncelikle Bastırıcı Ok Yağmurunun açılmış olması gerekir."
+	},
+	"passive3": {
+		"name": "Sınır Belirleme",
+		"info": "Yakınlardaki **Mondstadt'a özgü kaynakların** yerini mini haritada gösterir."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Şiir Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Acemi Asker Nişanı",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Şiir Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Şiir Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Şiir Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Şiir Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Çavuş Nişanı",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Şiir Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 4
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Şiir Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 6
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Şiir Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 9
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Şiir Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Subay Nişanı",
+				"count": 12
+			},
+			{
+				"name": "Mushin Aynası",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

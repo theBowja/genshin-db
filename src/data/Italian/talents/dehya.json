@@ -1,0 +1,211 @@
+{
+	"name": "Dehya",
+	"combat1": {
+		"name": "Attacco normale: Tempesta dorata",
+		"info": "**Attacco normale**\nSferra fino a 4 colpi consecutivi utilizzando la sua claymore e le sue arti marziali.\n\n**Attacco caricato**\nConsuma vigore nel tempo per sferrare fendenti continui.\nAl termine della sequenza, sferra un fendente più potente.\n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}",
+				"DAN da ATT caricato ciclico|{param5:F1P}",
+				"DAN da ATT caricato finali|{param6:P}",
+				"Costo vigore ATT caricato|{param7:F1}/s",
+				"Durata max|{param8:F1} s",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Inferno colante",
+		"info": "Quest'arte, ideata da Dehya in persona, modifica il proprio metodo di utilizzo in base alla situazione del combattimento.\n\n**Fiamma indomita**\nQuest'abilità viene scatenata se, al momento dell'uso, non è presente alcun Santuario infuocato creato da Dehya.\nInfligge DAN da Pyro ad area e crea un campo conosciuto come Santuario infuocato.\n\n**Fiamma estesa**\nQuest'abilità viene sprigionata se, al momento dell'uso, esiste già un Santuario infuocato creato da Dehya.\nDehya effettua un attacco con balzo, infliggendo DAN da Pyro ad area, per poi ricreare un Santuario infuocato nella sua nuova posizione.\nUn campo Santuario infuocato creato in questo modo eredita la durata restante del precedente.\n\nPer la durata di ogni singolo Santuario infuocato è possibile usare 1 sola Fiamma estesa.\n\n**Santuario infuocato**\nQuando un avversario all'interno di questo campo subisce DAN, viene sprigionato un attacco coordinato che infligge DAN da Pyro ad area in base all'ATT e ai PS max di Dehya. Quest'effetto può attivarsi una volta ogni 2,5 s.\nI personaggi attivi all'interno del campo ottengono un aumento della resistenza all'interruzione e, quando subiscono DAN, una porzione di questi viene mitigata e confluisce nel Sangue di Rossomanto. Dopodiché, Dehya subisce tali DAN nell'arco di 10 s. Quando i DAN mitigati accumulati dal Sangue di Rossomanto raggiungono o superano una certa percentuale dei PS max di Dehya, tale mitigazione si interrompe.\n\nPuò esistere 1 solo Santuario infuocato creato da Dehya alla volta.",
+		"description": "Percorri con me questo sentiero infuocato ed elimina ogni impurità, proprio come una bestia infuocata che discende dalle fiamme.",
+		"attributes": {
+			"labels": [
+				"DAN da Fiamma indomita|{param1:F1P}",
+				"DAN da Fiamma estesa|{param2:F1P}",
+				"DAN da campo|{param3:F1P} ATT+{param4:F2P} PS max",
+				"Mitigazione|{param5:P}",
+				"Sangue di Rossomanto max|{param6:P} PS max",
+				"Durata campo|{param7:F1} s",
+				"TdR|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Morso leonino",
+		"info": "Sprigionando la sua furia incandescente e gettando via la sua lama, Dehya entra nello stato di Leonessa fiammante e aumenta la sua resistenza all'interruzione.\nMentre è in questo stato, Dehya scatena in maniera continuativa e automatica i Pugni della Chiomardente, infliggendo DAN da Pyro in base al suo ATT e ai suoi PS max. Al termine dell'effetto, scaglia un Calcio inceneritore che infligge DAN da Pyro ad area in base ai medesimi attributi.\nSe, quando si sprigiona quest'abilità, è presente un Santuario infuocato creato dalla sua abilità elementale Inferno colante, Dehya lo recupera per crearne un altro quando l'effetto di Leonessa fiammante si esaurisce. Al momento del suo recupero, questo campo acquisisce la durata del campo recuperato.\nIn questo stato, Dehya non è in grado di usare la sua abilità elementale, né di eseguire attacchi normali, caricati o in picchiata. Attacco normale: Tempesta dorata e Inferno colante vengono sostituiti da Raffica ruggente.\n\n**Raffica ruggente**\nScatenare Raffica ruggente entro 0,4 s dopo ogni Pugno della Chiomardente aumenta la velocità con cui il Pugno della Chiomardente successivo viene scagliato.",
+		"description": "Perfino le fiamme fluttuanti devono sottostare alla sua furia, e al suo comando si tramutano in artigli e in zanne al suo servizio.",
+		"attributes": {
+			"labels": [
+				"DAN da Pugno della Chiomardente|{param1:F1P} ATT+{param2:F2P} PS max",
+				"DAN da Calcio inceneritore|{param3:F1P} ATT+{param4:F2P} PS max",
+				"Durata|{param5:F1} s",
+				"TdR|{param6:F1} s",
+				"Costo energia|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Generosa assistenza",
+		"info": "Entro 6 s dal recupero del campo Santuario infuocato tramite **Inferno colante: Fiamma estesa** o **Morso leonino**, Dehya subisce un 60% di DAN in meno dal Sangue di Rossomanto.\nQuest'effetto può attivarsi una volta ogni 2 s.\nInoltre, entro 9 s dal rilascio di **Inferno colante: Fiamma indomita**, garantisce a tutti i membri del gruppo lo stato di Forma aurea. Quest'ultimo aumenta ulteriormente la resistenza all'interruzione di un personaggio all'interno del campo Santuario infuocato. Lo stato di Forma aurea può attivarsi una volta ogni 18 s."
+	},
+	"passive2": {
+		"name": "Onesta rettitudine",
+		"info": "Quando i suoi PS sono inferiori a un 40%, Dehya rigenera un 20% dei suoi PS max e ne recupera un ulteriore 6% ogni 2 s per i 10 s successivi. Quest'effetto può attivarsi una volta ogni 20 s."
+	},
+	"passive3": {
+		"name": "La via illuminata",
+		"info": "Aumenta la VEL di movimento dei membri del tuo gruppo di un 10% durante il giorno (06:00-18:00).\nNon ha effetto nei domini, nei Domini della conquista o nell'Abisso a spirale. Non è cumulabile con talenti passivi che conferiscono gli stessi effetti."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti della pragmatica",
+				"count": 3
+			},
+			{
+				"name": "Seta rossa sbiadita",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida alla pragmatica",
+				"count": 2
+			},
+			{
+				"name": "Seta rossa ritagliata",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida alla pragmatica",
+				"count": 4
+			},
+			{
+				"name": "Seta rossa ritagliata",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida alla pragmatica",
+				"count": 6
+			},
+			{
+				"name": "Seta rossa ritagliata",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida alla pragmatica",
+				"count": 9
+			},
+			{
+				"name": "Seta rossa ritagliata",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie della pragmatica",
+				"count": 4
+			},
+			{
+				"name": "Broccato rosso sontuoso",
+				"count": 4
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie della pragmatica",
+				"count": 6
+			},
+			{
+				"name": "Broccato rosso sontuoso",
+				"count": 6
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie della pragmatica",
+				"count": 12
+			},
+			{
+				"name": "Broccato rosso sontuoso",
+				"count": 9
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie della pragmatica",
+				"count": 16
+			},
+			{
+				"name": "Broccato rosso sontuoso",
+				"count": 12
+			},
+			{
+				"name": "Fili del burattino",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

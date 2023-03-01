@@ -1,0 +1,211 @@
+{
+	"name": "Dehya",
+	"combat1": {
+		"name": "Attaque normale : Assaut sablé",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups mélangeant attaques avec son épée et frappes de corps.\n\n**Attaque chargée**\nConsomme de l'endurance de façon continue pour exécuter une succession d'entailles aussi rapides que tranchantes.\nL'attaque chargée se termine sur un coup puissant.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT enchaînement attaque chargée|{param5:F1P}",
+				"DGT coup final attaque chargée|{param6:P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts/s",
+				"Durée max|{param8:F1} s",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Enfer en fusion",
+		"info": "Cet art de combat, inventé par Dehya elle-même, change en fonction de la situation.\n\n**Flamme indomptable**\nSe déclenche si aucun sanctuaire ardent créé par Dehya n'est présent sur le champ de bataille.\nInflige des DGT Pyro de zone et crée une zone de sanctuaire ardent.\n\n**Champ flamboyant**\nSe déclenche si un sanctuaire ardent créé par Dehya est présent sur le champ de bataille.\nEffectue une attaque bondissante, infligeant des DGT Pyro de zone, et crée à nouveau une zone de sanctuaire ardent à l'emplacement de Dehya.\nUne zone de sanctuaire ardent créée de cette manière hérite de la durée de la zone d'origine.\n\nUn seul champ flamboyant peut être déclenché pendant la durée d'une zone de sanctuaire ardent.\n\n**Sanctuaire ardent**\nLorsqu'un ennemi dans la zone subit des DGT, le sanctuaire ardent déclenche une attaque coordonnée, lui infligeant des DGT Pyro de zone selon l'ATQ et les PV max de Dehya. Cet effet peut être déclenché une fois toutes les 2,5 s.\nLes personnages déployés dans la zone voient leur RÉS à l'interruption augmentée et lorsqu'ils subissent des DGT, une partie des DGT est atténuée et transférée dans le sang de crinière rouge, avant d'être subie par Dehya sur 10 s. Lorsque les DGT dans le sang de crinière rouge atteignent ou dépassent un certain pourcentage des PV max de Dehya, les DGT ne sont plus atténués.\n\nIl ne peut exister qu'un seul sanctuaire ardent créé par Dehya à la fois.",
+		"description": "Marchons ensemble dans cette épreuve ardente, purifiant toute impureté, tout comme une bête de feu descendant dans les flammes !",
+		"attributes": {
+			"labels": [
+				"DGT flamme indomptable|{param1:F1P}",
+				"DGT champ flamboyant|{param2:F1P}",
+				"DGT zone|{param3:F1P} ATQ + {param4:F2P} PV max",
+				"Atténuation|{param5:P}",
+				"Limite de sang de crinière rouge|{param6:P} PV max",
+				"Durée de zone|{param7:F1} s",
+				"Temps de recharge|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Morsure léonine",
+		"info": "Libérant sa colère brûlante et jetant sa lame sur le côté comme s'il s'agissait d'un fardeau, Dehya entre dans l'état Lionne flamboyante et augmente sa RÉS à l'interruption.\nDans cet état, Dehya déchaîne automatiquement et de façon continue ses poings de crinière enflammée pour infliger des DGT Pyro selon son ATQ et ses PV max, et, une fois la durée écoulée, elle utilise son pied plongeant d'incinération qui inflige des DGT Pyro de zone, toujours selon son ATQ et ses PV max.\nSi une zone de sanctuaire ardent créée par la compétence élémentaire de Dehya « Enfer en fusion » est présente sur le champ de bataille lorsque cette capacité est utilisée, Dehya la récupère et en crée une autre à son nouvel emplacement une fois la durée de l'état Lionne flamboyante expirée. Cette nouvelle zone hérite alors de la durée de la zone précédente au moment de sa récupération.\nDans cet état, Dehya ne peut pas utiliser de compétence élémentaire, ni effectuer d'attaque normale, chargée ou plongeante. Son « Attaque normale : Assaut sablé » et sa compétence élémentaire « Enfer en fusion » sont remplacées par Raclée rugissante.\n\n**Raclée rugissante**\nLe déclenchement d'une raclée rugissante dans les 0,4 s après un poing de crinière enflammée accélère le déclenchement du prochain poing de crinière enflammée.",
+		"description": "Même les flammes qui coulent doivent obéir à sa rage et sous ses ordres deviennent ses crocs et ses griffes.",
+		"attributes": {
+			"labels": [
+				"DGT poing de crinière enflammée|{param1:F1P} ATQ + {param2:F2P} PV max",
+				"DGT pied plongeant d'incinération|{param3:F1P} ATQ + {param4:F2P} PV max",
+				"Durée|{param5:F1} s",
+				"Temps de recharge|{param6:F1} s",
+				"Énergie élémentaire|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Secours sans faille",
+		"info": "Pendant 6 s après que Dehya récupère un sanctuaire ardent en utilisant **Enfer en fusion : Champ flamboyant** ou **Morsure léonine**, les DGT que Dehya subit du sang de crinière rouge diminuent de 60 %. Cet effet peut être déclenché une fois toutes les 2 s.\nDe plus, pendant 9 s après que Dehya déclenche **Enfer en fusion : Flamme indomptable**, elle accorde l'état Forgé d'or à tous les personnages de l'équipe : augmente davantage la RÉS à l'interruption des personnages à l'intérieur d'une zone de sanctuaire ardent. L'état Forgé d'or peut être déclenché une fois toutes les 18 s."
+	},
+	"passive2": {
+		"name": "Rectitude",
+		"info": "Lorsque ses PV sont inférieurs à 40 %, Dehya les restaure pour une valeur équivalant à 20 % de ses PV max, puis 6 % de ses PV max toutes les 2 s pendant 10 s. Cet effet peut être déclenché une fois toutes les 20 s."
+	},
+	"passive3": {
+		"name": "Voie ensoleillée",
+		"info": "Augmente la VIT de déplacement des personnages de votre équipe pendant la journée (06 h 00 - 18 h 00) de 10 %.\nCet effet ne s'applique ni dans les donjons, ni dans les Donjons de la conquête, ni dans les Profondeurs spiralées, et ne peut être cumulé avec d'autres aptitudes passives aux effets identiques."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Usage",
+				"count": 3
+			},
+			{
+				"name": "Satin rouge délavé",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 2
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 4
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 6
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Usage",
+				"count": 9
+			},
+			{
+				"name": "Soie rouge brodée",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 4
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 4
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 6
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 6
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 12
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 9
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Usage",
+				"count": 16
+			},
+			{
+				"name": "Brocart rouge luxueux",
+				"count": 12
+			},
+			{
+				"name": "Fils de marionnette",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}
