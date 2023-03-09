@@ -9,7 +9,7 @@ module.exports = env => ({
 
 	// target: 'web', // not needed
 	output: {
-		path: path.resolve(__dirname, '../../dist/data/scripts'),
+		path: env.outdir ? env.outdir : path.resolve(__dirname, '../../dist/data/scripts'),
 		filename: `${env.basename}.js`,
 
 		library: ['GenshinDbData', '[name]'],
@@ -20,7 +20,7 @@ module.exports = env => ({
 	},
 	resolve: {
 		alias: {
-			[path.resolve(__dirname, './data.min.json')]: path.resolve(__dirname, `../../dist/data/gzips/${env.basename}.min.json.gzip`)
+			[path.resolve(__dirname, './data.min.json')]: env.gzipfilepath ? env.gzipfilepath : path.resolve(__dirname, `../../dist/data/gzips/${env.basename}.min.json.gzip`)
 		}
 	},
 	module: {

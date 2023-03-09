@@ -53,7 +53,7 @@ function autocompleteFolder(input) {
 /**
  * @param folders - a string or array of strings
  * @returns - autocompleted full name of the folder. see FoldersEnum.
- *            undefined if none of the strings are valid languages.
+ *            undefined if none of the strings are valid folders.
  */
 function format(folders) {
     if(typeof folders === 'string') {
