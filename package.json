@@ -1,14 +1,15 @@
 {
 	"name": "genshin-db",
-	"version": "4.3.5",
+	"version": "4.3.6",
 	"description": "Genshin Impact v3.5 JSON data. Search and get results in all in-game languages! Sources from the fandom wiki and GenshinData repo.",
 	"main": "./src/main.js",
 	"types": "./types/index.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"examples": "cd scripts/generate && node ./examples.js",
-		"generateindex": "cd scripts/generate && node ./generate.js",
-		"assemble": "npm run generateindex && npm run examples",
+		"makeIndex": "cd scripts/generate && node ./makeIndex.js",
+		"combineData": "cd scripts/generate && node ./combineData.js",
+		"assemble": "npm run makeIndex && npm run combineData && npm run examples",
 		"build": "node ./scripts/webpack/build.js",
 		"buildAllDist": "node ./scripts/webpack/buildAllDist.js",
 		"publish": "node ./scripts/publish/publish.js",
@@ -33,7 +34,8 @@
 		"arraybuffer-loader": "^1.0.8",
 		"follow-redirects": "^1.14.9",
 		"webpack": "^5.75.0",
-		"webpack-cli": "^4.2.0"
+		"webpack-cli": "^4.2.0",
+		"yargs-parser": "^21.1.1"
 	},
 	"files": [
 		"examples/EXAMPLES.md",

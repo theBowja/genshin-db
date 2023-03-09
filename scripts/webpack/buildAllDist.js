@@ -16,38 +16,41 @@ function getBaseFilename(filename) {
 	return filename.substring(0, filename.indexOf('.'));
 }
 
+const argv = require('yargs-parser')(process.argv.slice(2), {
+	default: { outdir: 'dist' }
+});
+const outdir = argv.outdir ; // The directory where data/gzips, data/scripts, and genshindb-none.js will be outputted.
+
 /* ====== GZIP ====== */
 
 const filenamelist = [];
-fs.mkdirSync('./dist/data/gzips', { recursive: true });
-for(const language of languagesArr.concat(['alllanguages'])) {
-	for(const folder of foldersArr.concat(['allfolders', 'tcg', 'standard'])) {
-		const filename = `${language.startsWith('all') ? 'all' : language.toLowerCase()}-${folder.startsWith('all') ? 'all' : folder.toLowerCase()}.min.json.gzip`
+fs.mkdirSync(path.resolve(outdir, 'data/gzips'), { recursive: true });
+for(const language of languagesArr) {
+	for(const folder of foldersArr) {
+		const filename = `${language.toLowerCase()}-${folder.toLowerCase()}.min.json.gzip`
 		filenamelist.push(filename);
-		const filepath = `../../dist/data/gzips/${filename}`;
-		execSync(`node ./generate.js gzipfilename:${filepath} ${language} ${folder}`, { cwd: 'scripts/generate', stdio: [0, 1, 2] });
+		const filepath = path.resolve(outdir, `data/gzips/${filename}`);
+		execSync(`npm run combineData -- --gzipfilepath ${filepath} --language ${language} --folder ${folder}`, { stdio: [0, 1, 2] });
 		console.log();
 	}
 }
 
 // remove unused gzips/scripts
-fs.readdirSync('./dist/data/gzips').forEach(file => {
+fs.readdirSync(path.resolve(outdir, 'data/gzips')).forEach(file => {
 	if(!filenamelist.includes(file)) {
-		try { fs.unlinkSync(`./dist/data/gzips/${file}`);                       } catch(e) {}
-		try { fs.unlinkSync(`./dist/data/scripts/${getBaseFilename(file)}.js`); } catch(e) {}
+		try { fs.unlinkSync(path.resolve(outdir, `data/gzips/${file}`));                       } catch(e) {}
+		try { fs.unlinkSync(path.resolve(outdir, `data/scripts/${getBaseFilename(file)}.js`)); } catch(e) {}
 		console.log(`removed unused ${getBaseFilename(file)}`);
 	}
 })
 
 /* ====== SCRIPT ====== */
 
-// data loaders
-for(const outputpath of filenamelist) {
-	execSync(`npx webpack --config scripts/webpack/webpack.data.config.js --env basename=${getBaseFilename(outputpath)}`, { stdio:[0, 1, 2] });
+// data loader scripts
+for(const gzipfilename of filenamelist) {
+	execSync(`npx webpack --config scripts/webpack/webpack.data.config.js --env outdir=${path.resolve(outdir, `data/scripts`)} --env gzipfilepath=${path.resolve(outdir, `data/gzips/${gzipfilename}`)} --env basename=${getBaseFilename(gzipfilename)}`, { stdio:[0, 1, 2] });
 	console.log();
 }
 
-// main scripts
-execSync('npm run build none filename:genshindb-none.js', { stdio:[0, 1, 2] });
-execSync('npm run build tcg filename:genshindb-tcg.js', { stdio:[0, 1, 2] });
-execSync('npm run build standard filename:genshindb-standard.js', { stdio:[0, 1, 2] });
+// main script
+execSync(`npm run build -- --folder none --language none --filename genshindb-nodata.js --outdir ${outdir}`);
