@@ -5,7 +5,7 @@ const helper = require('./helper.js');
 const argv = require('yargs-parser')(process.argv.slice(2), {
 	alias: { folder: ['folders'], language: ['languages'] },
 	array: [ 'folders', 'languages' ],
-	default: { folders: ['standard'], languages: ['all'] }
+	default: { folders: ['standard'], languages: ['all'], outdir: 'src/min' }
 });
 
 let specificlanguages = helper.sanitizeLanguages(argv.languages);
@@ -13,6 +13,8 @@ let specificfolders = helper.sanitizeFolders(argv.folders);
 
 const gzipfilepath = argv.gzipfilepath;
 if (gzipfilepath) console.log('Specified gzipfilepath: ' + gzipfilepath);
+
+const outdir = argv.outdir ; // The directory where data.min.json and data.min.json.gzip will be outputted.
 
 combineData();
 
@@ -67,16 +69,18 @@ function combineData() {
 	console.log(`compression: ${roundFour(compressedsize)}MB/${roundFour(uncompressedsize)}MB = ${roundFour(compressedsize/uncompressedsize*100)}%`)
 
 
+	const genshindbroot = path.resolve(__dirname, '../../');
+	const outputdir = path.resolve(genshindbroot, outdir);
 	if (gzipfilepath) {
 		fs.mkdirSync(path.dirname(gzipfilepath), { recursive: true });
 		fs.writeFileSync(gzipfilepath, gzip);
 	} else {
-		fs.mkdirSync(`../../src/min`, { recursive: true });
-		fs.writeFileSync(`../../src/min/data.min.json.gzip`, gzip);
+		fs.mkdirSync(outputdir, { recursive: true });
+		fs.writeFileSync(path.resolve(outputdir, `data.min.json.gzip`), gzip);
 	}
 
-	if(!gzipfilepath) fs.mkdirSync(`../../src/min`, { recursive: true });
-	if(!gzipfilepath) fs.writeFileSync(`../../src/min/data.min.json`, all);
+	if (!gzipfilepath) fs.mkdirSync(outputdir, { recursive: true });
+	if (!gzipfilepath) fs.writeFileSync(path.resolve(outputdir, `data.min.json`), all);
 }
 
 function roundFour(num) {
