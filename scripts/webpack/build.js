@@ -28,5 +28,5 @@ const argv = require('yargs-parser')(process.argv.slice(2), {
   default: { folders: ['standard'], languages: ['all'], filename: 'genshindb.js', outdir: 'dist' }
 });
 
-execSync(`npm run combineData -- --folders ${argv.folders} --languages ${argv.languages}`, { stdio: [0, 1, 2] });
+execSync(`npm run combineData -- --folders ${argv.folders.join(' ')} --languages ${argv.languages.join(' ')}`, { stdio: [0, 1, 2] });
 execSync(`npx webpack --config scripts/webpack/webpack.main.config.js --env filename=${argv.filename} --env outdir=${path.resolve(argv.outdir)}`, { stdio:[0, 1, 2] });
