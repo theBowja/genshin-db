@@ -9,7 +9,7 @@ module.exports = env => ({
 		path: env.outdir ? env.outdir : path.resolve(__dirname, '../../dist'),
 		filename: typeof env.filename === 'string' ? (env.filename + (env.filename.endsWith('.js') ? '' : '.js')) : 'genshindb.js',
 
-		library: 'GenshinDb',
+		library: env.libraryname ? env.libraryname : 'GenshinDb',
 		libraryTarget: 'umd',
 		umdNamedDefine: true,
 		globalObject: `(typeof self !== 'undefined' ? self : this)`

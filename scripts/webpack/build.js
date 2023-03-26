@@ -25,8 +25,8 @@ const execSync = require('child_process').execSync;
 const argv = require('yargs-parser')(process.argv.slice(2), {
   alias: { folder: ['folders'], language: ['languages'] },
   array: [ 'folders', 'languages' ],
-  default: { folders: ['standard'], languages: ['all'], filename: 'genshindb.js', outdir: 'dist' }
+  default: { folders: ['standard'], languages: ['all'], filename: 'genshindb.js', outdir: 'dist', libraryname: 'GenshinDb' }
 });
 
 execSync(`npm run combineData -- --folders ${argv.folders.join(' ')} --languages ${argv.languages.join(' ')}`, { stdio: [0, 1, 2] });
-execSync(`npx webpack --config scripts/webpack/webpack.main.config.js --env filename=${argv.filename} --env outdir=${path.resolve(argv.outdir)}`, { stdio:[0, 1, 2] });
+execSync(`npx webpack --config scripts/webpack/webpack.main.config.js --env filename=${argv.filename} --env outdir=${path.resolve(argv.outdir)} --env libraryname=${argv.libraryname}`, { stdio:[0, 1, 2] });
