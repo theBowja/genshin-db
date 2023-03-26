@@ -30,7 +30,7 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [Adding Custom Names](#adding-custom-names)
 - [Adding Custom Data](#adding-custom-data)
 - [Contributing](#contributing)
-- [Distributions for Web/Node](#distributions-for-webnode)
+- [Build scripts](#build-scripts)
 - [Typescript](#typescript)
 - [Webpack](#webpack)
 
@@ -215,9 +215,65 @@ This is a built-in way to limit the kinds of altnames that can be added.
 
 Currently using MIT License but I don't really care. Let me know if you need something more lax or free.
 
+## Build scripts
+
+There are scripts for building your own webpack distribution and gzipped data files.
+
+### Webpack build
+
+This script is for building webpack distributions of genshin-db for use anywhere.
+
+You can find prebuilt distributions at [genshin-db-dist](https://github.com/theBowja/genshin-db-dist) which gets updated after every new genshin-db release.
+
+```
+Usage:
+  npm run build -- [options]
+
+Options:
+  --languages      Space-separated list of languages to include in the data. [default: all]
+  --folders        Space-separated list of folder to include in the data. [default: standard]
+  --outdir         The directory where this webpack distribution will be outputted, relative to the root of genshin-db. [default: dist]
+  --filename       The filename. [default: genshindb.js]
+  --libraryname    Global variable from which you can access genshin-db functions. [default: GenshinDb]
+
+Example: This will create a webpack distribution of genshin-db containing only English character data.
+  npm run build -- --languages english --folder characters
+
+More examples:
+  npm run build -- --languages english chinesesimplified korean japanese
+  npm run build -- --languages none --folder none filename:genshindb-nodata.js
+  npm run build -- --languages all --folder achievements filename:all-achievements.js --outdir dist/data/scripts
+```
+
+The webpack.config is located at [scripts/webpack/webpack.main.config.js](https://github.com/theBowja/genshin-db/blob/main/scripts/webpack/webpack.main.config.js) should you need to make some modifications.
+
+### Minified and gzipped data
+
+This script is for creating data jsons or gzips of the data.
+
+You can find the prebuilt combined standard set of data at [genshin-db-dist/data/standard](https://github.com/theBowja/genshin-db-dist/tree/main/data/standard) which gets updated after every new genshin-db release.
+
+```
+Usage
+  npm run combineData -- [options]
+
+Options:
+  --languages      Space-separated list of languages to include in the data. [default: all]
+  --folders        Space-separated list of folder to include in the data. [default: standard]
+  --outdir         The directory where the minified json data will be outputted, relative to the root of genshin-db. [default: src/min]
+  --gzipfilepath   The absolute filepath where to output the gzipped json data. If provided, the data.min.json file will not be produced. Relative path is relative to scripts/generate.
+
+Example: This will create both the data.min.json and data.min.json.gzip at the folder data/standard.
+  npm run combineData -- --outdir data/standard
+
+More examples:
+  npm run combineData -- --gzipfilepath D:/Workspace/tmp/data.gzip
+
+```
+
 ## Contributing
 
-The best way to contribute to this project is to write up feature requests in GitHub issues. Also join my discord show me what you've built so I know this is useful to people.
+Currently the best way to contribute to this project is to write up feature requests in GitHub issues. Also join my discord show me what you've built so I know this is useful to people.
 
 ---------------------------
 
@@ -247,35 +303,9 @@ characters("foobar", { matchCategories: true, verboseCategories: true }); // Cha
 
 Please write up an issue if something doesn't work.
 
-## Distributions for Web/Node
-
-If you don't want to use the npm package, then you can take a look at the prebuilt distributions that can be used easily from web or in your Node project. [Read the documentation about it here](https://github.com/theBowja/genshin-db/tree/main/dist).
-
-## Webpack
-
-If for some reason you want to customize genshin-db into your own webpack dist.
-
-First you'll need to clone this repo.
-
-If you want to build a webpack just do `npm run build` and it'll appear in the **dist/genshindb.js**. Then you can call all the query functions from above using genshindb as the variable. Or you can change the options in **webpack.config.js** to better fit how you want to use it.
-
-The distribution will be quite large. More than 15mb. If you wish to reduce the size of this, then you can remove the data for languages you don't need. Simply append a space-separated list of languages that you wish to ONLY include in the webpack.
-
-For example: `npm run build english` will produce a distribution in the dist folder with only the English genshin data.
-
-More examples: `npm run build english chinesesimplified korean japanese`, `npm run build french german`
-
-Available language names can be found in src/language.js file. Or you can scroll up to the setOptions section in this readme.
-
-If you want to specify only specific folders, then you can as well.
-
-For example: `run build english characters weapons` will produce a distribution with only English characters and weapons data.
-
-Available folder names can be found in src/folder.js file.
-
 ## Time and Space
 
-genshin-db is around 30mb or 6mb compressed. If you're serving static content, please do not send the entire package to the client. A web page receiving the entire webpack will take some time to load, which does not provide for the best user experience.
+genshin-db is over 50mb or 6mb compressed. If you're serving static content, please do not send the entire package to the client. A web page receiving the entire webpack will take some time to load, which does not provide for the best user experience.
 
 My query functions aren't the fastest thing in existence. But it is fast enough that it doesn't really matter. Unless you're running the code on a real potato.
 
