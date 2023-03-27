@@ -34,7 +34,7 @@ declare module "genshin-db" {
 		baseelement?: string; // some skills like Barbara's burst don't apply elements directly.
 
 		typetag: 'GCG_SKILL_TAG_A' | 'GCG_SKILL_TAG_E' | 'GCG_SKILL_TAG_Q' | 'GCG_SKILL_TAG_PASSIVE'; // enum
-		type: string; // translated		
+		type: string; // translated     
 
 		description: string; // translated
 		descriptionraw: string; // translated

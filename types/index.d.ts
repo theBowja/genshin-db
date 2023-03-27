@@ -35,42 +35,42 @@
 
 declare module "genshin-db" {
 	export interface QueryFunction<R> {
-	    <Q extends string, O extends QueryOptions>(query: Q, opts?: O):
-	        (O extends { dumpResult: true }
-	        ?
-	            DumpResult<R, O, Q>
-	        :
-	            (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
-	            (Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined)
-	        )
+		<Q extends string, O extends QueryOptions>(query: Q, opts?: O):
+			(O extends { dumpResult: true }
+			?
+				DumpResult<R, O, Q>
+			:
+				(O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
+				(Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined)
+			)
 	}
 
 	export interface DumpResult<R, O extends QueryOptions, Q extends string> {
-	    query: Q;
-	    folder: Folder | Folder[];
-	    match: string | undefined;
-	    matchfolder: Folder;
-	    matchtype: MatchType | undefined;
-	    options: QueryOptions;
-	    filename: (O extends { matchCategories: true } ? string[] : undefined) | string | undefined;
-	    result: (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
-	            (Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined);
+		query: Q;
+		folder: Folder | Folder[];
+		match: string | undefined;
+		matchfolder: Folder;
+		matchtype: MatchType | undefined;
+		options: QueryOptions;
+		filename: (O extends { matchCategories: true } ? string[] : undefined) | string | undefined;
+		result: (O extends { matchCategories: true } ? (O extends { verboseCategories: true } ? R[] : string[]) : never) | 
+				(Q extends "names" ? (O extends { matchCategories: true } ? never : R | undefined) : R | undefined);
 	}
 
 	/* Logic
 	if matchCategories
 	  if verboseCategories
-	    add R[];
+		add R[];
 	  else
-	    add string[];
+		add string[];
 	else
 	  add never
 
 	if "names"
 	  if matchCategories
-	    add never
+		add never
 	  else
-	    add R | undefined;
+		add R | undefined;
 	else
 	  add R | undefined;
 	*/
@@ -90,27 +90,27 @@ declare module "genshin-db" {
 	*/
 
 	export interface StatFunction {
-	    (level: number, ascension?: number | '+' | '-'): StatResult;
+		(level: number, ascension?: number | '+' | '-'): StatResult;
 	}
 
 	export interface StatResult {
-	    level: number;
-	    ascension: number;
-	    hp?: number;
-	    attack?: number;
-	    defense?: number;
-	    specialized?: number;
+		level: number;
+		ascension: number;
+		hp?: number;
+		attack?: number;
+		defense?: number;
+		specialized?: number;
 	}
 
 	export interface QueryOptions {
-	    dumpResult?: boolean;
-	    matchNames?: boolean;
-	    matchAltNames?: boolean;
-	    matchAliases?: boolean;
-	    matchCategories?: boolean;
-	    verboseCategories?: boolean;
-	    queryLanguages?: Language[];
-	    resultLanguage?: Language;
+		dumpResult?: boolean;
+		matchNames?: boolean;
+		matchAltNames?: boolean;
+		matchAliases?: boolean;
+		matchCategories?: boolean;
+		verboseCategories?: boolean;
+		queryLanguages?: Language[];
+		resultLanguage?: Language;
 	}
 
 
@@ -154,20 +154,20 @@ declare module "genshin-db" {
 
 
 	export interface categories {
-	    (query: string, folder: Folder, opts: QueryOptions): undefined | string[];
+		(query: string, folder: Folder, opts: QueryOptions): undefined | string[];
 	}
 
 
 	export interface Items {
-	    name: string;
-	    count: number;
+		name: string;
+		count: number;
 	}
 
 	export interface Rewards {
-	    name: string;
-	    rarity?: '1' | '2' | '3' | '4' | '5'; // only used for artifacts
-	    count?: number; // only used for adventure exp, mora, and companionship exp
-	    countmax?: number; // upper range. used for enhancement ore which can be shown as "0~1"
+		name: string;
+		rarity?: '1' | '2' | '3' | '4' | '5'; // only used for artifacts
+		count?: number; // only used for adventure exp, mora, and companionship exp
+		countmax?: number; // upper range. used for enhancement ore which can be shown as "0~1"
 	}
 
 
