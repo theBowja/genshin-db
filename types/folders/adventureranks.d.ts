@@ -9,6 +9,6 @@ declare module "genshin-db" {
 	export interface AdventureRankReward {
 		name: string;
 		count: number;
-		type: 'MATERIAL' | 'ARTIFACT' | 'WEAPON'
+		type: 'MATERIAL' | 'ARTIFACT' | 'WEAPON';
 	}
 }

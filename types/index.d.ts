@@ -16,7 +16,7 @@
 /// <reference path="./folders/rarity.d.ts" />
 /// <reference path="./folders/talentmaterialtypes.d.ts" />
 /// <reference path="./folders/talents.d.ts" />
-/// <reference path="./folders/weaponmaterialtypes.d.ts" />
+// <reference path="./folders/weaponmaterialtypes.d.ts" />
 /// <reference path="./folders/weapons.d.ts" />
 /// <reference path="./folders/windgliders.d.ts" />
 /// <reference path="./folders/crafts.d.ts" />
@@ -137,7 +137,7 @@ declare module "genshin-db" {
 	export const rarity: QueryFunction<Rarity>;
 	export const talentmaterialtypes: QueryFunction<TalentMaterial>;
 	export const talents: QueryFunction<Talent>;
-	export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
+	// export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
 	export const weapons: QueryFunction<Weapon>;
 	export const windgliders: QueryFunction<WindGlider>;
 
