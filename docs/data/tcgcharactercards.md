@@ -1,7 +1,7 @@
 # TcgCharacterCards
 
-Search function: `genshindb.tcgcharactercards("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.tcgcharactercards("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/tcgcharactercards?query=query
 
 Type:

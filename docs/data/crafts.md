@@ -1,7 +1,7 @@
 # Craft
 
-Search function: `genshindb.crafts("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.crafts("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/crafts?query=query
 
 Type:

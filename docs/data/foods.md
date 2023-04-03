@@ -1,7 +1,7 @@
 # Food
 
-Search function: `genshindb.foods("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.foods("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/foods?query=query
 
 Type:

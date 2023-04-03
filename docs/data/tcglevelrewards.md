@@ -1,7 +1,7 @@
 # TcgLevelRewards
 
-Search function: `genshindb.tcglevelrewards("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.tcglevelrewards("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/tcglevelrewards?query=query
 
 Type:

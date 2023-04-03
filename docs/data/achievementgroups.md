@@ -1,7 +1,7 @@
 # AchievementGroup
 
-Search function: `genshindb.achievementgroups("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.achievementgroups("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/achievementgroups?query=query
 
 Type:

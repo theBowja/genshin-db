@@ -1,7 +1,7 @@
 # Character
 
-Search function: `genshindb.characters("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.characters("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/characters?query=query
 
 Type:
