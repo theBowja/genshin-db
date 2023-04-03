@@ -1,7 +1,7 @@
 # Animal
 
-Search function: `genshindb.animals("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.animals("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/animals?query=query
 
 Type:

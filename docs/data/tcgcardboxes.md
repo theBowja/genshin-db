@@ -1,7 +1,7 @@
 # TcgCardBoxes
 
-Search function: `genshindb.tcgcardboxes("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.tcgcardboxes("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/tcgcardboxes?query=query
 
 Type:

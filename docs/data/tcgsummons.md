@@ -1,7 +1,7 @@
 # TcgSummons
 
-Search function: `genshindb.tcgsummons("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.tcgsummons("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/tcgsummons?query=query
 
 Type:

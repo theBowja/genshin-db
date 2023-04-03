@@ -1,7 +1,7 @@
 # Enemy
 
-Search function: `genshindb.enemies("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.enemies("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/enemies?query=query
 
 Type:

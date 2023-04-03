@@ -1,7 +1,7 @@
 # Constellation
 
-Search function: `genshindb.constellations("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.constellations("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/constellations?query=query
 
 Type:

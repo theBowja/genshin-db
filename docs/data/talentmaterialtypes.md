@@ -1,7 +1,7 @@
 # TalentMaterial
 
-Search function: `genshindb.talentmaterialtypes("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.talentmaterialtypes("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/talentmaterialtypes?query=query
 
 Type:

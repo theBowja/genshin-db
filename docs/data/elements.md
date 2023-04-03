@@ -1,7 +1,7 @@
 # Element
 
-Search function: `genshindb.elements("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.elements("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/elements?query=query
 
 Type:

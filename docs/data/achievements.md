@@ -1,7 +1,7 @@
 # Achievement
 
-Search function: `genshindb.achievements("query", opts);`
-Interactive: https://genshindb-ia.netlify.app/
+Search function: `genshindb.achievements("query", opts);`  
+Interactive: https://genshindb-ia.netlify.app/  
 Web API: https://genshin-db-api.vercel.app/api/achievements?query=query
 
 Type:
