@@ -428,28 +428,6 @@ function collateOutfit(existing, newdata, lang) {
 	}
 }
 
-function collateConstellation(existing, newdata, lang) {
-	clearObject(existing);
-	existing.name = newdata.name;
-	if(newdata.aliases) existing.aliases = newdata.aliases;
-	for(let i = 1; i <= 6; i++) {
-		if(existing['c'+i] === undefined) existing['c'+i] = {};
-		existing['c'+i].name = newdata['c'+i].name;
-		existing['c'+i].effect = newdata['c'+i].effect;
-	}
-	if(lang === 'English') {
-		let rx = /_([^_]*)_[^_]*\.png$/;
-		let extract = rx.exec(newdata.images.c1)[1];
-		if(!extract.startsWith('Player')) {
-			newdata.images.constellation = `Eff_UI_Talent_${extract}`;
-		} else {
-			let element = /Player(.*)/.exec(extract)[1];
-			newdata.images.constellation = `Eff_UI_Talent_PlayerBoy_${element}`;
-			newdata.images.constellation2 = `Eff_UI_Talent_PlayerGirl_${element}`;
-		}
-	}
-}
-
 function collateTalent(existing, newdata, lang) {
 	newdata.aliases = existing.aliases;
 	clearObject(existing);
@@ -710,7 +688,7 @@ gameVersion = "3.5"; // new data will use this as added version
 // importCurve('characters');
 // getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site
 
-// importData('constellations', collateConstellation);
+importData('constellations');
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
