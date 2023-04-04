@@ -159,6 +159,7 @@ declare module "genshin-db" {
 
 
 	export interface Items {
+		id: string;
 		name: string;
 		count: number;
 	}

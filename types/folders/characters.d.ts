@@ -1,20 +1,32 @@
 declare module "genshin-db" {
 	export interface Character {
 		name: string;
-		fullname: string; // only Russian has shortened "name" for inazuma characters
+		fullname?: string; // only Russian has shortened "name" for inazuma characters. undefined if same as name
+
 		title: string; // empty strings for traveler
-		description: string;
-		rarity: '4' | '5';
-		element: string;
-		weapontype: string;
-		substat: string;
+		description: string; // sanitized with: removeNonBreakSpace, replaceNewline, replaceGenderM, replaceGenderF
+
+		weapontype: string; // enum
+		weapontext: string; // translated
+		bodytype: string; // enum
 		gender: string; // manually translated
-		body: string; // untranslated
-		association: string; // untranslated
-		region: string; // empty string if player character or crossover (aloy)
-		affiliation: string; // empty string if player character
+
+		qualitytype: string // enum
+		rarity: 4 | 5;
+
 		birthdaymmdd: string; // empty string if player character
-		birthday: string; // empty string if player character
+		birthday: string; // translated. empty string if player character
+
+		elementtype: string; // enum
+		elementtext: string; // translated
+
+		affiliation: string; // empty string if player character
+		associationtype: string; // enum;
+		region: string; // empty string if player character or crossover (aloy)
+
+		substattype: string; // enum
+		substattext: string; // translated
+
 		constellation: string;
 		cv: {
 			english: string;
@@ -31,15 +43,15 @@ declare module "genshin-db" {
 			"ascend6": Items[];
 		};
 		images: {
-			nameicon: string;
-			namesideicon: string;
-			namegachasplash?: string; // lumine/aether doesn't have this
-			namegachaslice?: string; // lumine/aether doesn't have this
+			filename_icon: string;
+			filename_sideicon: string;
+			filename_gachasplash?: string; // lumine/aether doesn't have this
+			filename_gachaslice?: string; // lumine/aether doesn't have this
 
 			card?: string;     // wikia
 			portrait?: string; // wikia
-			icon: string;     // hoyolab
-			sideicon: string; // hoyolab
+			mihoyo_icon: string;     // hoyolab
+			mihoyo_sideicon: string; // hoyolab
 			cover1?: string; // official site
 			cover2?: string; // official site
 			"hoyolab-avatar"?: string; // manually entered from hoyolab
