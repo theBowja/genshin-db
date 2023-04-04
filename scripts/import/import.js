@@ -343,37 +343,6 @@ function collateOutfit(existing, newdata, lang) {
 	}
 }
 
-function collateTalent(existing, newdata, lang) {
-	newdata.aliases = existing.aliases;
-	clearObject(existing);
-	existing.name = newdata.name;
-	if(newdata.aliases) existing.aliases = newdata.aliases;
-	function addTalent(prop) {
-		if(newdata[prop] === undefined) return;
-		if(existing[prop] === undefined) existing[prop] = {};
-		existing[prop].name = newdata[prop].name;
-		existing[prop].info = newdata[prop].info;
-		if(newdata[prop].description !== undefined) existing[prop].description = newdata[prop].description;
-		if(newdata[prop].labels !== undefined) {
-			existing[prop].attributes = {};
-			existing[prop].attributes.labels = newdata[prop].labels;
-		}
-		if(lang === 'English') {
-			if(newdata.images === undefined) newdata.images = {};
-			newdata.images[prop] = newdata[prop].icon;
-		}
-	}
-	addTalent('combat1');
-	addTalent('combat2');
-	addTalent('combatsp'); // for mona and ayaka only
-	addTalent('combat3');
-	addTalent('passive1');
-	addTalent('passive2');
-	addTalent('passive3'); // traveler doesn't have passive3
-	addTalent('passive4'); // for kokomi only
-	existing.costs = newdata.costs;
-}
-
 async function collateWeapon(existing, inputdata, lang, importConfig, skipimageredirect, dbimages) {
 	if (lang === 'English') {
 		inputdata.images = {};
