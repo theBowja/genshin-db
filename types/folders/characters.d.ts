@@ -4,7 +4,7 @@ declare module "genshin-db" {
 		fullname?: string; // only Russian has shortened "name" for inazuma characters. undefined if same as name
 
 		title: string; // empty strings for traveler
-		description: string; // sanitized with: removeNonBreakSpace, replaceNewline, replaceGenderM, replaceGenderF
+		description: string; // sanitized with: removeNonBreakSpace, replaceGenderM, replaceGenderF, removeHashtag
 
 		weapontype: string; // enum
 		weapontext: string; // translated
