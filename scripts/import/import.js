@@ -32,27 +32,6 @@ function clearObject(obj) {
 function normalizeStr(str) { return str.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
 function makeFileName(str) { return normalizeStr(str).toLowerCase().replace(/[^a-z]/g,''); }
 
-const bodyToGender = {
-	'BOY': 'MALE',
-	'LOLI': 'FEMALE',
-	'GIRL': 'FEMALE',
-	'MALE': 'MALE',
-	'LADY': 'FEMALE'
-}
-
-const genderTranslations = {
-	'MALE': {
-		ChineseSimplified: '男', ChineseTraditional: '男', German: 'Männlich', English: 'Male', Spanish: 'Masculino',
-		French: 'Homme', Indonesian: 'Pria', Italian: 'maschio', Japanese: '男', Korean: '남성', Portuguese: 'Masculino',
-		Russian: 'Мужской', Thai: 'ชาย', Turkish: 'erkek', Vietnamese: 'nam'
-	},
-	'FEMALE': {
-		ChineseSimplified: '女', ChineseTraditional: '女', German: 'Weiblich', English: 'Female', Spanish: 'Femenino',
-		French: 'Femme', Indonesian: 'Perempuan', Italian: 'femmina', Japanese: '女', Korean: '여성', Portuguese: 'Feminino',
-		Russian: 'Женский', Thai: 'ผู้หญิง', Turkish: 'kadın', Vietnamese: 'nữ'
-	}
-}
-
 let checkExistingImageBlacklist;
 
 /* ============================================ FUNCTIONS =================================================== */
@@ -343,7 +322,7 @@ async function copyImagesProps(importdata, importconfig, dbimages) {
 	copyPropsIfExist(importdata, importdata.images, importconfig.images);
 
 	// check if images exist
-	for (let prop of ['icon', 'awakenicon', 'sideicon']) {
+	for (let prop of ['icon', 'awakenicon', 'sideicon', 'mihoyo_icon', 'mihoyo_sideicon']) {
 		if (importdata.images[prop]) {
 			const existingUrl = dbimages ? dbimages[prop] : undefined;
 			if (!await isImageBlacklistAndExist(importdata.images[prop], true, existingUrl)) {
@@ -351,70 +330,6 @@ async function copyImagesProps(importdata, importconfig, dbimages) {
 			}
 		}
 	}
-}
-
-async function collateCharacter(existing, newdata, lang, importconfig, skipimageredirect, dbimages) {
-	if (lang === 'English') {
-		newdata.images = {};
-		if(newdata.icon) {
-			let name = newdata.icon.slice(newdata.icon.lastIndexOf('_')+1);
-			newdata.images.nameicon = newdata.icon;
-			newdata.images.nameiconcard = `UI_AvatarIcon_${name}_Card`;
-			if(newdata.birthday) { // not player
-				newdata.images.namegachasplash = `UI_Gacha_AvatarImg_${name}`;
-				newdata.images.namegachaslice = `UI_Gacha_AvatarIcon_${name}`;
-			}
-			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/${newdata.icon}.png`;
-			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.icon : undefined)) {
-				newdata.images.icon = mihoyoUrl;
-			}
-		}
-		if(newdata.sideicon) {
-			newdata.images.namesideicon = newdata.sideicon;
-			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/${newdata.sideicon}.png`;
-			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.sideicon : undefined)) {
-				newdata.images.sideicon = mihoyoUrl;
-			}
-		}
-	}
-
-	//newdata.talentmaterialtype = existing.talentmaterialtype;
-	newdata.url = existing.url;
-	clearObject(existing);
-
-	existing.name = newdata.name;
-	existing.fullname = newdata.fullname;
-	existing.title = newdata.title;
-	existing.description = newdata.description;
-	existing.rarity = newdata.rarity;
-	existing.element = newdata.element;
-	existing.weapontype = newdata.weapontype;
-	existing.substat = newdata.substat;
-	existing.gender = genderTranslations[bodyToGender[newdata.body]][lang];
-	if(existing.gender === undefined) console.log('NO GENDER FROM BODY TYPE ' + newdata.body);
-	else if(existing.gender === 'MALE') existing
-	existing.body = newdata.body;
-	existing.association = newdata.association;
-	existing.region = newdata.region;
-	if(existing.region === undefined) console.log('NO REGION FROM ASSOCIATION ' + newdata.association);
-	existing.affiliation = newdata.affiliation;
-
-	if(newdata.birthday) {
-		existing.birthdaymmdd = newdata.birthmonth + '/' + newdata.birthday;
-		let birthday = new Date(Date.UTC(2000, newdata.birthmonth-1, newdata.birthday));
-		existing.birthday = birthday.toLocaleString(language.localeMap[lang], { timeZone: 'UTC', month: 'long', day: 'numeric' });
-	} else {
-		existing.birthdaymmdd = '';
-		existing.birthday = '';
-	}
-	existing.constellation = newdata.constellation;
-	if(myimages.characters === undefined) {
-		myimages.characters
-	}
-	existing.cv = newdata.cv;
-	existing.costs = newdata.costs;
-	// existing.talentmaterialtype = newdata.talentmaterialtype || '';
-	existing.url = newdata.url;
 }
 
 function collateOutfit(existing, newdata, lang) {
@@ -684,11 +599,11 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // checkExistingImageBlacklist = true; // 
 gameVersion = "3.5"; // new data will use this as added version
 
-// importData('characters', collateCharacter);
+// importData('characters');
 // importCurve('characters');
 // getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site
 
-importData('constellations');
+// importData('constellations');
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
