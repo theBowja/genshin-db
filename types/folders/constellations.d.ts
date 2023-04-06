@@ -23,6 +23,6 @@ declare module "genshin-db" {
 	export interface ConstellationDetail {
 		name: string; // sanitized with replaceNonBreakSpace, removeHashtag
 		description: string; // sanitized with replaceNonBreakSpace, removeColorHTML, replaceLayoutPC, replaceGenderM, removeHashtag
-		descriptionraw: string;
+		descriptionRaw: string;
 	}
 }
