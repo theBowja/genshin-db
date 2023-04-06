@@ -35,9 +35,9 @@ declare module "genshin-db" {
 
 	export interface CombatTalentDetail {
 		name: string;
-		descriptionraw: string;
+		descriptionRaw: string;
 		description: string; // sanitized with removeColorHTML, removeHashtag, replaceGenderM, replaceLayoutPC, replaceNonBreakSpace
-		flavortext?: string; // no flavortext for combat1 (normal attack). sanitized with replaceGenderM, replaceNonBreakSpace
+		flavorText?: string; // no flavortext for combat1 (normal attack). sanitized with replaceGenderM, replaceNonBreakSpace
 		attributes: {
 			labels: string[];
 			parameters: {
@@ -48,7 +48,7 @@ declare module "genshin-db" {
 
 	export interface PassiveTalentDetail {
 		name: string;
-		descriptionraw: string;
+		descriptionRaw: string;
 		description: string; // sanitized with removeColorHTML, removeHashtag, replaceGenderM, replaceLayoutPC, replaceNonBreakSpace
 	}
 }
