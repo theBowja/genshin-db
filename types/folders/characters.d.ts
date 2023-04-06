@@ -6,26 +6,26 @@ declare module "genshin-db" {
 		title: string; // empty strings for traveler
 		description: string; // sanitized with: removeNonBreakSpace, replaceGenderM, replaceGenderF, removeHashtag
 
-		weapontype: string; // enum
-		weapontext: string; // translated
-		bodytype: string; // enum
+		weaponType: string; // enum
+		weaponText: string; // translated
+		bodyType: string; // enum
 		gender: string; // manually translated
 
-		qualitytype: string // enum
+		qualityType: string // enum
 		rarity: 4 | 5;
 
 		birthdaymmdd: string; // empty string if player character
 		birthday: string; // translated. empty string if player character
 
-		elementtype: string; // enum
-		elementtext: string; // translated
+		elementType: string; // enum
+		elementText: string; // translated
 
 		affiliation: string; // empty string if player character
-		associationtype: string; // enum;
+		associationType: string; // enum;
 		region: string; // empty string if player character or crossover (aloy)
 
-		substattype: string; // enum
-		substattext: string; // translated
+		substatType: string; // enum
+		substatText: string; // translated
 
 		constellation: string;
 		cv: {
