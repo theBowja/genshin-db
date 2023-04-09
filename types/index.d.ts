@@ -113,11 +113,6 @@ declare module "genshin-db" {
 		resultLanguage?: Language;
 	}
 
-
-	// not easy to figure this out
-	//export const setOptions: (options: QueryOptions): void 
-	//export const getOptions: ():
-
 	export const achievementgroups: QueryFunction<AchievementGroup>;
 	export const achievements: QueryFunction<Achievement>;
 	export const adventureranks: QueryFunction<AdventureRank>;
@@ -192,5 +187,8 @@ declare module "genshin-db" {
 	export function addData(data: ArrayBuffer | any, overwrite? : boolean): void;
 	export function searchFolder(folder: string, query: string, opts?: QueryOptions): any;
 	export function searchMultipleFolders(folders: string[], query: string, opts?: QueryOptions): any;
-
+        
+        // export functions to set / get queryOptions
+        export function setOptions(QueryOptions): void;
+        export function getOptions(): object;
 }
