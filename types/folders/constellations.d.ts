@@ -1,5 +1,6 @@
 declare module "genshin-db" {
 	export interface Constellation {
+		id: number;
 		name: string;
 		c1: ConstellationDetail;
 		c2: ConstellationDetail;

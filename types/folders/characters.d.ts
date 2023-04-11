@@ -1,5 +1,6 @@
 declare module "genshin-db" {
 	export interface Character {
+		id: number;
 		name: string;
 		fullname?: string; // only Russian has shortened "name" for inazuma characters. undefined if same as name
 
