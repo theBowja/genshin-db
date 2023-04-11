@@ -44,14 +44,14 @@ declare module "genshin-db" {
 		};
 		images: {
 			filename_icon: string;
-			filename_sideicon: string;
-			filename_gachasplash?: string; // lumine/aether doesn't have this
-			filename_gachaslice?: string; // lumine/aether doesn't have this
+			filename_sideIcon: string;
+			filename_gachaSplash?: string; // lumine/aether doesn't have this
+			filename_gachaSlice?: string; // lumine/aether doesn't have this
 
 			card?: string;     // wikia
 			portrait?: string; // wikia
 			mihoyo_icon: string;     // hoyolab
-			mihoyo_sideicon: string; // hoyolab
+			mihoyo_sideIcon: string; // hoyolab
 			cover1?: string; // official site
 			cover2?: string; // official site
 			"hoyolab-avatar"?: string; // manually entered from hoyolab

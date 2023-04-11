@@ -322,7 +322,7 @@ async function copyImagesProps(importdata, importconfig, dbimages) {
 	copyPropsIfExist(importdata, importdata.images, importconfig.images);
 
 	// check if images exist
-	for (let prop of ['icon', 'awakenicon', 'sideicon', 'mihoyo_icon', 'mihoyo_sideicon']) {
+	for (let prop of ['icon', 'awakenicon', 'sideicon', 'mihoyo_icon', 'mihoyo_sideIcon', 'mihoyo_awakenIcon']) {
 		if (importdata.images[prop]) {
 			const existingUrl = dbimages ? dbimages[prop] : undefined;
 			if (!await isImageBlacklistAndExist(importdata.images[prop], true, existingUrl)) {
@@ -341,55 +341,6 @@ function collateOutfit(existing, newdata, lang) {
 		if(!newdata.url) newdata.url = {};
 		if(!newdata.url.modelviewer) newdata.url.modelviewer = '';
 	}
-}
-
-async function collateWeapon(existing, inputdata, lang, importConfig, skipimageredirect, dbimages) {
-	if (lang === 'English') {
-		inputdata.images = {};
-		if(inputdata.icon) {
-			inputdata.images.nameicon = inputdata.icon;
-			inputdata.images.namegacha = `UI_Gacha_EquipIcon_${inputdata.icon.slice(inputdata.icon.indexOf("UI_EquipIcon")+13)}`;
-			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.icon}.png`;
-			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.icon : undefined)) {
-				inputdata.images.icon = mihoyoUrl;
-			}
-		}
-		if(inputdata.awakenicon) {
-			inputdata.images.nameawakenicon = inputdata.awakenicon;
-			let mihoyoUrl = `https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/${inputdata.awakenicon}.png`;
-			if (await isImageBlacklistAndExist(mihoyoUrl, true, dbimages ? dbimages.awakenicon : undefined)) {
-				inputdata.images.awakenicon = mihoyoUrl;
-			}
-		}
-	}
-
-	inputdata.weaponmaterialtype = existing.weaponmaterialtype;
-
-	clearObject(existing);
-	existing.name = inputdata.name;
-	if(inputdata.dupealias) existing.dupealias = inputdata.dupealias;
-	if(inputdata.aliases) existing.aliases = inputdata.aliases;
-	existing.description = inputdata.description;
-	existing.weapontype = inputdata.weapontype;
-	existing.rarity = inputdata.rarity;
-	existing.story = inputdata.story;
-	existing.baseatk = Math.round(inputdata.baseatk);
-	existing.substat = (inputdata.substat || '').toString();
-	existing.subvalue = '';
-	if(inputdata.subvalue !== undefined) {
-		if(inputdata.subvalue <= 2) existing.subvalue = (Math.round(inputdata.subvalue*1000)/10).toString();
-		else existing.subvalue = (Math.round(inputdata.subvalue)).toString();
-	}
-	existing.effectname = (inputdata.effectname || '').toString();
-	existing.effect = (inputdata.effect || '').toString();
-	existing.r1 = inputdata.r1 || [];
-	existing.r2 = inputdata.r2 || [];
-	existing.r3 = inputdata.r3 || [];
-	existing.r4 = inputdata.r4 || [];
-	existing.r5 = inputdata.r5 || [];
-
-	existing.weaponmaterialtype = inputdata.weaponmaterialtype || '';
-	existing.costs = inputdata.costs;
 }
 
 function collateArtifact(existing, newdata) {
@@ -573,8 +524,8 @@ gameVersion = "3.5"; // new data will use this as added version
 // getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site
 
 // importData('constellations');
-// importData('talents', collateTalent);
-// importData('weapons', collateWeapon)
+// importData('talents');
+importData('weapons')
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods');
