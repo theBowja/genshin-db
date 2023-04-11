@@ -1,5 +1,6 @@
 declare module "genshin-db" {
 	export interface Talent {
+		id: number;
 		name: string;
 		combat1: CombatTalentDetail;
 		combat2: CombatTalentDetail;
