@@ -32,28 +32,29 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',             'Albedo',       'Alhaitham',
-  'Aloy',               'Amber',        'Arataki Itto',
-  'Barbara',            'Beidou',       'Bennett',
-  'Candace',            'Chongyun',     'Collei',
-  'Cyno',               'Dehya',        'Diluc',
-  'Diona',              'Dori',         'Eula',
-  'Faruzan',            'Fischl',       'Ganyu',
-  'Gorou',              'Hu Tao',       'Jean',
-  'Kaedehara Kazuha',   'Kaeya',        'Kamisato Ayaka',
-  'Kamisato Ayato',     'Keqing',       'Klee',
-  'Kujou Sara',         'Kuki Shinobu', 'Layla',
-  'Lisa',               'Lumine',       'Mika',
-  'Mona',               'Nahida',       'Nilou',
-  'Ningguang',          'Noelle',       'Qiqi',
-  'Raiden Shogun',      'Razor',        'Rosaria',
-  'Sangonomiya Kokomi', 'Sayu',         'Shenhe',
-  'Shikanoin Heizou',   'Sucrose',      'Tartaglia',
-  'Thoma',              'Tighnari',     'Venti',
-  'Wanderer',           'Xiangling',    'Xiao',
-  'Xingqiu',            'Xinyan',       'Yae Miko',
-  'Yanfei',             'Yaoyao',       'Yelan',
-  'Yoimiya',            'Yun Jin',      'Zhongli'
+  'Aether',         'Albedo',           'Alhaitham',
+  'Aloy',           'Amber',            'Arataki Itto',
+  'Baizhu',         'Barbara',          'Beidou',
+  'Bennett',        'Candace',          'Chongyun',
+  'Collei',         'Cyno',             'Dehya',
+  'Diluc',          'Diona',            'Dori',
+  'Eula',           'Faruzan',          'Fischl',
+  'Ganyu',          'Gorou',            'Hu Tao',
+  'Jean',           'Kaedehara Kazuha', 'Kaeya',
+  'Kamisato Ayaka', 'Kamisato Ayato',   'Kaveh',
+  'Keqing',         'Klee',             'Kujou Sara',
+  'Kuki Shinobu',   'Layla',            'Lisa',
+  'Lumine',         'Mika',             'Mona',
+  'Nahida',         'Nilou',            'Ningguang',
+  'Noelle',         'Qiqi',             'Raiden Shogun',
+  'Razor',          'Rosaria',          'Sangonomiya Kokomi',
+  'Sayu',           'Shenhe',           'Shikanoin Heizou',
+  'Sucrose',        'Tartaglia',        'Thoma',
+  'Tighnari',       'Venti',            'Wanderer',
+  'Xiangling',      'Xiao',             'Xingqiu',
+  'Xinyan',         'Yae Miko',         'Yanfei',
+  'Yaoyao',         'Yelan',            'Yoimiya',
+  'Yun Jin',        'Zhongli'
 ]
 ```
 
@@ -633,15 +634,15 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Beidou',    'Chongyun',
-  'Ganyu',     'Hu Tao',
-  'Keqing',    'Ningguang',
-  'Qiqi',      'Shenhe',
-  'Xiangling', 'Xiao',
-  'Xingqiu',   'Xinyan',
-  'Yanfei',    'Yaoyao',
-  'Yelan',     'Yun Jin',
-  'Zhongli'
+  'Baizhu',    'Beidou',
+  'Chongyun',  'Ganyu',
+  'Hu Tao',    'Keqing',
+  'Ningguang', 'Qiqi',
+  'Shenhe',    'Xiangling',
+  'Xiao',      'Xingqiu',
+  'Xinyan',    'Yanfei',
+  'Yaoyao',    'Yelan',
+  'Yun Jin',   'Zhongli'
 ]
 ```
 
@@ -731,29 +732,30 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Albedo',           'Alhaitham',          'Aloy',
-  'Amber',            'Arataki Itto',       'Barbara',
-  'Beidou',           'Bennett',            'Candace',
-  'Chongyun',         'Collei',             'Cyno',
-  'Dehya',            'Diluc',              'Diona',
-  'Dori',             'Eula',               'Faruzan',
-  'Fischl',           'Ganyu',              'Gorou',
-  'Hu Tao',           'Jean',               'Kaedehara Kazuha',
-  'Kaeya',            'Kamisato Ayaka',     'Kamisato Ayato',
-  'Keqing',           'Klee',               'Kujou Sara',
-  'Kuki Shinobu',     'Layla',              'Lisa',
-  'Mika',             'Mona',               'Nahida',
-  'Nilou',            'Ningguang',          'Noelle',
-  'Qiqi',             'Raiden Shogun',      'Razor',
-  'Rosaria',          'Sangonomiya Kokomi', 'Sayu',
-  'Shenhe',           'Shikanoin Heizou',   'Sucrose',
-  'Tartaglia',        'Thoma',              'Tighnari',
-  'Traveler (Anemo)', 'Traveler (Dendro)',  'Traveler (Electro)',
-  'Traveler (Geo)',   'Venti',              'Wanderer',
-  'Xiangling',        'Xiao',               'Xingqiu',
-  'Xinyan',           'Yae Miko',           'Yanfei',
-  'Yaoyao',           'Yelan',              'Yoimiya',
-  'Yun Jin',          'Zhongli'
+  'Albedo',             'Alhaitham',          'Aloy',
+  'Amber',              'Arataki Itto',       'Baizhu',
+  'Barbara',            'Beidou',             'Bennett',
+  'Candace',            'Chongyun',           'Collei',
+  'Cyno',               'Dehya',              'Diluc',
+  'Diona',              'Dori',               'Eula',
+  'Faruzan',            'Fischl',             'Ganyu',
+  'Gorou',              'Hu Tao',             'Jean',
+  'Kaedehara Kazuha',   'Kaeya',              'Kamisato Ayaka',
+  'Kamisato Ayato',     'Kaveh',              'Keqing',
+  'Klee',               'Kujou Sara',         'Kuki Shinobu',
+  'Layla',              'Lisa',               'Mika',
+  'Mona',               'Nahida',             'Nilou',
+  'Ningguang',          'Noelle',             'Qiqi',
+  'Raiden Shogun',      'Razor',              'Rosaria',
+  'Sangonomiya Kokomi', 'Sayu',               'Shenhe',
+  'Shikanoin Heizou',   'Sucrose',            'Tartaglia',
+  'Thoma',              'Tighnari',           'Traveler (Anemo)',
+  'Traveler (Dendro)',  'Traveler (Electro)', 'Traveler (Geo)',
+  'Venti',              'Wanderer',           'Xiangling',
+  'Xiao',               'Xingqiu',            'Xinyan',
+  'Yae Miko',           'Yanfei',             'Yaoyao',
+  'Yelan',              'Yoimiya',            'Yun Jin',
+  'Zhongli'
 ]
 ```
 
@@ -1635,6 +1637,7 @@ const genshindb = require('genshin-db');
   "Hunter's Path",
   'Iron Point',
   'Iron Sting',
+  "Jadefall's Splendor",
   'Kagotsurube Isshin',
   "Kagura's Verity",
   'Katsuragikiri Nagamasa',
@@ -1677,8 +1680,7 @@ const genshindb = require('genshin-db');
   'Rainslasher',
   'Raven Bow',
   'Recurve Bow',
-  'Redhorn Stonethresher',
-  ... 56 more items
+  ... 57 more items
 ]
 ```
 
@@ -1959,7 +1961,7 @@ const genshindb = require('genshin-db');
   description: 'Talent Level-Up material.\n' +
     'Poetry is the soul of the land of the wind.\n' +
     'Poetry is the manifestations of the will to encourage. In the dark days, the gales in the streets and alleyways whisper words of fury, like the battle drums, like the low rumbling before the storm.',
-  sortorder: 2423,
+  sortorder: 2519,
   rarity: '3',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Talent Material',
@@ -2090,7 +2092,7 @@ const genshindb = require('genshin-db');
   description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\n' +
     'Beautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\n' +
     'His enemies are the thousands who stand against the wind.',
-  sortorder: 2343,
+  sortorder: 2435,
   rarity: '5',
   category: 'AVATAR_MATERIAL',
   materialtype: 'Character Level-Up Material',
@@ -2113,7 +2115,7 @@ const genshindb = require('genshin-db');
 {
   name: 'Iron Chunk',
   description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
-  sortorder: 2081,
+  sortorder: 2168,
   category: 'EXCHANGE',
   materialtype: 'Forging Ore',
   source: [ 'Found in the wild' ],
@@ -2367,6 +2369,7 @@ const genshindb = require('genshin-db');
   'Lavawalker',
   'Maiden Beloved',
   'Noblesse Oblige',
+  "Nymph's Dream",
   'Ocean-Hued Clam',
   'Pale Flame',
   'Retracing Bolide',
@@ -2376,6 +2379,7 @@ const genshindb = require('genshin-db');
   'Thundersoother',
   'Vermillion Hereafter',
   'Viridescent Venerer',
+  "Vourukasha's Glow",
   "Wanderer's Troupe"
 ]
 ```
@@ -2476,6 +2480,8 @@ const genshindb = require('genshin-db');
   'Golden Crab',
   'Goldflame Tajine',
   'Halvamazd',
+  'Heat-Quelling Soup',
+  'Jade Fruit Soup',
   'Jewelry Soup',
   'Lotus Flower Crisp',
   'Minty Fruit Tea',
@@ -2697,6 +2703,10 @@ const genshindb = require('genshin-db');
   'Domain of Blessing: Fires of Purification IV',
   'Domain of Blessing: Fires of Purification V',
   'Domain of Blessing: Fires of Purification VI',
+  'Domain of Blessing: Forsaken Rampart I',
+  'Domain of Blessing: Forsaken Rampart II',
+  'Domain of Blessing: Forsaken Rampart III',
+  'Domain of Blessing: Forsaken Rampart IV',
   'Domain of Blessing: Frost I',
   'Domain of Blessing: Frost II',
   'Domain of Blessing: Frost III',
@@ -2837,7 +2847,9 @@ const genshindb = require('genshin-db');
   'Electro Regisvine',
   'Geo Hypostasis',
   'Golden Wolflord',
+  "Guardian of Apep's Oasis",
   'Hydro Hypostasis',
+  'Iniquitous Baptist',
   'Jadeplume Terrorshroom',
   'La Signora',
   'Lupus Boreas, Dominator of Wolves',
