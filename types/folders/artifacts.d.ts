@@ -1,36 +1,41 @@
 declare module "genshin-db" {
 	export interface Artifact {
+		id: number;
 		name: string;
-		rarity: ('1' | '2' | '3' | '4' | '5')[];
-		"1pc"?: string; // for circlets only
-		"2pc"?: string;
-		"4pc"?: string;
+
+		rarity: (1 | 2 | 3 | 4 | 5)[];
+		effect1Pc?: string; // for circlets only
+		effect2Pc?: string;
+		effect4Pc?: string;
+
 		flower?: ArtifactDetail;
 		plume?: ArtifactDetail;
 		sands?: ArtifactDetail;
 		goblet?: ArtifactDetail;
 		circlet: ArtifactDetail;
 		images: {
-			nameflower?: string;
-			nameplume?: string;
-			namesands?: string;
-			namegoblet?: string;
-			namecirclet: string;
-			flower?: string;
-			plume?: string;
-			sands?: string;
-			goblet?: string;
-			circlet: string;
+			filename_flower?: string;
+			filename_plume?: string;
+			filename_sands?: string;
+			filename_goblet?: string;
+			filename_circlet: string;
+			
+			mihoyo_flower?: string;
+			mihoyo_plume?: string;
+			mihoyo_sands?: string;
+			mihoyo_goblet?: string;
+			mihoyo_circlet: string;
 		};
 		url: {
-			fandom: string;
+			fandom?: string;
 		};
 		version: string;
 	}
 
 	export interface ArtifactDetail {
 		name: string;
-		relictype: string; // for different languages
+		relicType: string; // for different languages
+		relicText: string;
 		description: string;
 		story: string;
 	}

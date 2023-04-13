@@ -322,7 +322,8 @@ async function copyImagesProps(importdata, importconfig, dbimages) {
 	copyPropsIfExist(importdata, importdata.images, importconfig.images);
 
 	// check if images exist
-	for (let prop of ['icon', 'awakenicon', 'sideicon', 'mihoyo_icon', 'mihoyo_sideIcon', 'mihoyo_awakenIcon']) {
+	for (let prop of ['icon', 'awakenicon', 'sideicon', 'mihoyo_icon', 'mihoyo_sideIcon', 'mihoyo_awakenIcon',
+						'mihoyo_flower', 'mihoyo_plume', 'mihoyo_sands', 'mihoyo_goblet', 'mihoyo_circlet']) {
 		if (importdata.images[prop]) {
 			const existingUrl = dbimages ? dbimages[prop] : undefined;
 			if (!await isImageBlacklistAndExist(importdata.images[prop], true, existingUrl)) {
@@ -341,26 +342,6 @@ function collateOutfit(existing, newdata, lang) {
 		if(!newdata.url) newdata.url = {};
 		if(!newdata.url.modelviewer) newdata.url.modelviewer = '';
 	}
-}
-
-function collateArtifact(existing, newdata) {
-	clearObject(existing);
-	existing.name = newdata.name;
-	if(newdata.aliases) existing.aliases = newdata.aliases;
-	existing.rarity = newdata.rarity;
-	if(newdata['1pc']) existing['1pc'] = newdata['1pc'];
-	if(newdata['2pc']) existing['2pc'] = newdata['2pc'];
-	if(newdata['4pc']) existing['4pc'] = newdata['4pc'];
-	const types = ['flower', 'plume', 'sands', 'goblet', 'circlet'];
-	types.forEach(type => {
-		if(newdata[type] === undefined) return;
-		existing[type] = {};
-		existing[type].name = newdata[type].name;
-		existing[type].relictype = newdata[type].relictype;
-		existing[type].description = newdata[type].description;
-		existing[type].story = newdata[type].story;
-		//existing[type].icon = newdata[type].icon;
-	})
 }
 
 async function collateMaterial(existing, newdata, lang, importconfig, skipimageredirect) {
@@ -525,9 +506,9 @@ gameVersion = "3.5"; // new data will use this as added version
 
 // importData('constellations');
 // importData('talents');
-importData('weapons')
+// importData('weapons')
 // importCurve('weapons');
-// importData('artifacts', collateArtifact, undefined, false);
+importData('artifacts');
 // importData('foods');
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains');
