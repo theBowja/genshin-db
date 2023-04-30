@@ -1,5 +1,5 @@
 {
-	"name": "genshin-db",
+	"name": "@PaimonApp/genshin-db",
 	"version": "4.3.6",
 	"description": "Genshin Impact v3.5 JSON data. Search and get results in all in-game languages! Sources from the fandom wiki and GenshinData repo.",
 	"main": "./src/main.js",
@@ -15,16 +15,20 @@
 		"publish": "node ./scripts/publish/publish.js",
 		"publishTcg": "npm run publish tcg"
 	},
+	"publishConfig": {
+		"access": "restricted",
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PaimonApp/gd-model.git"
+	},
 	"keywords": [
 		"genshin-impact",
 		"genshinimpact",
 		"genshin"
 	],
 	"author": "thebowja",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/theBowja/genshin-db.git"
-	},
 	"license": "MIT",
 	"dependencies": {
 		"fuzzysort": "^1.1.4",
