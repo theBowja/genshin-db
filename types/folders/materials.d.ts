@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface Material {
 		name: string;
 		dupealias?: string; // Key Sigil, Cake for Traveler

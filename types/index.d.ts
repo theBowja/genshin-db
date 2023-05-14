@@ -33,7 +33,7 @@
 
 /// <reference path="./enums.d.ts" />
 
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface QueryFunction<R> {
 		<Q extends string, O extends QueryOptions>(query: Q, opts?: O):
 			(O extends { dumpResult: true }

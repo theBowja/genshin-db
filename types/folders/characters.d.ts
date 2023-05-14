@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface Character {
 		name: string;
 		fullname: string; // only Russian has shortened "name" for inazuma characters

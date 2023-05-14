@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface Food {
 		name: string;
 		rarity: '1' | '2' | '3' | '4'| '5';

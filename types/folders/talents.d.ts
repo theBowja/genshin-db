@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface Talent {
 		name: string;
 		combat1: CombatTalentDetail;

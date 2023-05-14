@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface Craft {
 		name: string;
 		filter: string; // pretty much like category

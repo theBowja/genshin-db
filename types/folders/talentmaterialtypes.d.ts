@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	//deprecated
 	export interface TalentMaterial { // English only
 		name: string;

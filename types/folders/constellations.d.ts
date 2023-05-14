@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface Constellation {
 		name: string;
 		c1: ConstellationDetail;

@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@PaimonApp/genshin-db" {
 	export interface Achievement {
 		name: string;
 		dupealias?: string; // Let the Wind Lead, That's One Big Crystalfly, and a few in other languages
