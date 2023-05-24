@@ -1,0 +1,80 @@
+{
+	"id": 2101,
+	"name": "Фатуи: Маг Крио цицинов",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Крио",
+		"Прочее",
+		"Фатуи"
+	],
+	"storytitle": "Туманный зов: маг Крио цицинов",
+	"storytext": "Пока есть туманная трава, Крио цицины не покинут её.",
+	"source": "Награда за победу над магом Крио цицинов в Дружеской дуэли в «Кошкином хвосте»",
+	"skills": [
+		{
+			"id": 21011,
+			"name": "Лёд цицина",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 1 ед.",
+			"description": "Наносит Крио урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21012,
+			"name": "Туманный призыв",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Призывает помощника: <color=#FFFFFFFF>$[C121011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 1 ед. Призывает помощника: <color=#FFFFFFFF>Крио цицин</color>.",
+			"description": "Наносит Крио урон, 1 ед. Призывает помощника: Крио цицин.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21013,
+			"name": "Цветы и ветви вьюги",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., даёт персонажу $[K201], создаёт 1 <color=#FFFFFFFF>$[C121012]</color>.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 5 ед., даёт персонажу <color=#99FFFFFF>Эффект {SPRITE_PRESET#2101}Крио</color>, создаёт 1 <color=#FFFFFFFF>Купол цицинов</color>.",
+			"description": "Наносит Крио урон, 5 ед., даёт персонажу Эффект Крио, создаёт 1 Купол цицинов.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

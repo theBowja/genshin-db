@@ -1,0 +1,80 @@
+{
+	"id": 2101,
+	"name": "Fatui – Kryo-Cicin-Zauberin",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Kryo",
+		"Andere Waffen",
+		"Fatui"
+	],
+	"storytitle": "Herrin des Nebelgrases – Kryo-Cicin-Zauberin",
+	"storytext": "Mindestens bis ihr das Nebelgras ausgeht, sind die Kryo-Cicin an ihrer Seite.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Fatui – Kryo-Cicin-Zauberin in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 21011,
+			"name": "Cicin-Eiszapfen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Kryo-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21012,
+			"name": "Neblige Beschwörung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C121011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Kryo-Cicin</color>.",
+			"description": "Verursacht 1 Pkt. Kryo-SCH, erschafft 1 Kryo-Cicin.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21013,
+			"name": "Flora, Frost, Frier!",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht der Figur das $[K201], erschafft 1 <color=#FFFFFFFF>$[C121012]</color>.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 5 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, verleiht der Figur das <color=#99FFFFFF>{SPRITE_PRESET#2101}Kryo-Attribut</color>, erschafft 1 <color=#FFFFFFFF>Fließende Cicin-Ummantelung</color>.",
+			"description": "Verursacht 5 Pkt. Kryo-SCH, verleiht der Figur das Kryo-Attribut, erschafft 1 Fließende Cicin-Ummantelung.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

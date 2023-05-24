@@ -1,0 +1,80 @@
+{
+	"id": 2101,
+	"name": "Fatui Buz Cicin Büyücüsü",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Buz",
+		"Diğer Silahlar",
+		"Fatui"
+	],
+	"storytitle": "\"Çukur Sisi Cicini\" Buz Cicin Büyücüsü",
+	"storytext": "Sis Otu var olduğu sürece Buz Cicinler onu bırakmaz.",
+	"source": "Kedi Kuyruğu'ndaki Han Mücadelesini kabul etme ve Buz Cicin Büyücüsü ile olan Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 21011,
+			"name": "Cicin Sarkıtı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir.",
+			"description": "1 Buz Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21012,
+			"name": "Sisler İçinden Çağrı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve <color=#FFFFFFFF>$[C121011]</color> çağırır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir ve <color=#FFFFFFFF>Buz Cicinler</color> çağırır.",
+			"description": "1 Buz Hasarı verir ve Buz Cicinler çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21013,
+			"name": "Karlı Dallarda Açan Çiçekler",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karaktere $[K201] kazandırarak 1 <color=#FFFFFFFF>$[C121012]</color> oluşturur.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "5 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir ve bu karaktere <color=#99FFFFFF>{SPRITE_PRESET#2101}Buz Etkisi</color> kazandırarak 1 <color=#FFFFFFFF>Sarmalayan Cicin Kalkanı</color> oluşturur.",
+			"description": "5 Buz Hasarı verir ve bu karaktere Buz Etkisi kazandırarak 1 Sarmalayan Cicin Kalkanı oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

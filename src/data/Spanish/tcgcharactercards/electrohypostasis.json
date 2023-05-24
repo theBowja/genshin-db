@@ -1,0 +1,114 @@
+{
+	"id": 2401,
+	"name": "Hipóstasis Electro",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"storytitle": "Hipóstasis Electro",
+	"storytext": "Nombre en clave: Álef. Un ser Electro de gran pureza.\nAunque le ganes a piedra, papel, tijera, nunca admitirá la derrota.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra el Hipóstasis Electro de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 24011,
+			"name": "Proyección de cristal Electro",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 1 pt. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "Triporrazo piedra, papel, tijera",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], y $[K53|s2] por separado: <color=#FFFFFFFF>$[S24015|s1]</color> y <color=#FFFFFFFF>$[S24016|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>, y <color=#FFFFFFFF>prepara las habilidades</color> por separado: <color=#FFFFFFFF>triporrazo piedra, papel, tijera</color> y <color=#FFFFFFFF>triporrazo piedra, papel, tijera</color>.",
+			"description": "Inflige 2 pts. de Daño Electro, y prepara las habilidades por separado: triporrazo piedra, papel, tijera y triporrazo piedra, papel, tijera.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "Retención eléctrica",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca unas <color=#FFFFFFFF>$[C124013|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> e invoca unas <color=#FFFFFFFF>cadenas de tormenta inminente</color>.",
+			"description": "Inflige 2 pts. de Daño Electro e invoca unas cadenas de tormenta inminente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24014,
+			"name": "Núcleo de cristal Electro",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, este personaje activa un <color=#FFFFFFFF>$[C124014|s1]</color>.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, este personaje activa un <color=#FFFFFFFF>núcleo de cristal Electro</color>.",
+			"description": "Pasiva: cuando comienza el duelo, este personaje activa un núcleo de cristal Electro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "Triporrazo piedra, papel, tijera: tijera",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT] y $[K53|s1] <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Triporrazo piedra, papel, tijera: papel</color>.",
+			"description": "Inflige 2 pts. de Daño Electro y prepara la habilidad Triporrazo piedra, papel, tijera: papel.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "Triporrazo piedra, papel, tijera: papel",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 3 pts. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		}
+	]
+}

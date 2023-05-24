@@ -1,0 +1,78 @@
+{
+	"id": 1408,
+	"name": "Яэ Мико",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Электро",
+		"Катализатор",
+		"Инадзума"
+	],
+	"storytitle": "«Озорное лукавство» Яэ Мико",
+	"storytext": "«Мудрая и прекрасная госпожа Яэ Мико».",
+	"source": "Награда за приглашение Яэ Мико в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 14081,
+			"name": "Пожирающая грехи кицунэ",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед.",
+			"description": "Наносит Электро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14082,
+			"name": "Проклятие якан: Сакура сэссё",
+			"descriptionraw": "Призывает 1 помощника: <color=#FFFFFFFF>$[C114081]</color>.",
+			"descriptionreplaced": "Призывает 1 помощника: <color=#FFFFFFFF>Сакура сэссё</color>.",
+			"description": "Призывает 1 помощника: Сакура сэссё.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14083,
+			"name": "Великое тайное искусство: Тэнко кэнсин",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если у вас на поле боя есть <color=#FFFFFFFF>$[C114081]</color>, она исчезает, а затем создаются <color=#FFFFFFFF>$[C114083]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 4 ед. Если у вас на поле боя есть <color=#FFFFFFFF>Сакура сэссё</color>, она исчезает, а затем создаются <color=#FFFFFFFF>Молнии Небесной кицунэ</color>.",
+			"description": "Наносит Электро урон, 4 ед. Если у вас на поле боя есть Сакура сэссё, она исчезает, а затем создаются Молнии Небесной кицунэ.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

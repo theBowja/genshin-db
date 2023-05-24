@@ -1,0 +1,97 @@
+{
+	"id": 1603,
+	"name": "钟离",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"岩元素",
+		"长柄武器",
+		"璃月"
+	],
+	"storytitle": "尘世闲游·钟离",
+	"storytext": "韬玉之石，可明八荒；灿若天星，纵横无双 。",
+	"source": "在猫尾酒馆中邀请钟离进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 16031,
+			"name": "岩雨",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>。",
+			"description": "造成2点物理伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16032,
+			"name": "地心",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C116031]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>，召唤<color=#FFFFFFFF>岩脊</color>。",
+			"description": "造成1点岩元素伤害，召唤岩脊。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16033,
+			"name": "地心·磐礴",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C116031]</color>，生成<color=#FFFFFFFF>$[C116032]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>，召唤<color=#FFFFFFFF>岩脊</color>，生成<color=#FFFFFFFF>玉璋护盾</color>。",
+			"description": "造成3点岩元素伤害，召唤岩脊，生成玉璋护盾。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 16034,
+			"name": "天星",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C116033]</color>。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成4点{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>，目标角色附属<color=#FFFFFFFF>石化</color>。",
+			"description": "造成4点岩元素伤害，目标角色附属石化。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

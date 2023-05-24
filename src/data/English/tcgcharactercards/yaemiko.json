@@ -1,0 +1,78 @@
+{
+	"id": 1408,
+	"name": "Yae Miko",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalyst",
+		"Inazuma"
+	],
+	"storytitle": "\"Astute Amusement\" Yae Miko",
+	"storytext": "\"The wise and beautiful Yae Miko.\"",
+	"source": "Reward for inviting Yae Miko to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+	"skills": [
+		{
+			"id": 14081,
+			"name": "Spiritfox Sin-Eater",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Deals 1 Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14082,
+			"name": "Yakan Evocation: Sesshou Sakura",
+			"descriptionraw": "Summons 1 <color=#FFFFFFFF>$[C114081]</color>.",
+			"descriptionreplaced": "Summons 1 <color=#FFFFFFFF>Sesshou Sakura</color>.",
+			"description": "Summons 1 Sesshou Sakura.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14083,
+			"name": "Great Secret Art: Tenko Kenshin",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If your side of the field has a <color=#FFFFFFFF>$[C114081]</color>, destroy it and create <color=#FFFFFFFF>$[C114083]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 4 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>. If your side of the field has a <color=#FFFFFFFF>Sesshou Sakura</color>, destroy it and create <color=#FFFFFFFF>Tenko Thunderbolts</color>.",
+			"description": "Deals 4 Electro DMG. If your side of the field has a Sesshou Sakura, destroy it and create Tenko Thunderbolts.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

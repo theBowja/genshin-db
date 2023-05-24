@@ -1,0 +1,114 @@
+{
+	"id": 2401,
+	"name": "無相の雷",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "無相の雷",
+	"storytext": "高純度の雷元素生命体、コードネーム「アレフ」。\nたとえジャンケンで負かされても、たいてい負けを認めない。",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、無相の雷に挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 24011,
+			"name": "雷晶発射",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。",
+			"description": "雷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "ジャンケン三連攻撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、その後$[K53]に入る：<color=#FFFFFFFF>$[S24015]</color>と<color=#FFFFFFFF>$[S24016]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を2与え、その後<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>ジャンケン三連攻撃·チョキ</color>と<color=#FFFFFFFF>ジャンケン三連攻撃·パー</color>。",
+			"description": "雷元素ダメージを2与え、その後スキル準備に入る：ジャンケン三連攻撃·チョキとジャンケン三連攻撃·パー。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "霹靂鎮鎖",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C124013]</color>を召喚する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を2与え、<color=#FFFFFFFF>雷鎖鎮域</color>を召喚する。",
+			"description": "雷元素ダメージを2与え、雷鎖鎮域を召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24014,
+			"name": "雷晶核心",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C124014]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>雷晶核心</color>が付与される。",
+			"description": "【固有】戦闘開始時、雷晶核心が付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "ジャンケン三連攻撃·チョキ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K53]に入る：<color=#FFFFFFFF>$[S24016]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を2与え、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>ジャンケン三連攻撃·パー</color>。",
+			"description": "雷元素ダメージを2与え、スキル準備に入る：ジャンケン三連攻撃·パー。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "ジャンケン三連攻撃·パー",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。",
+			"description": "雷元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": []
+		}
+	]
+}

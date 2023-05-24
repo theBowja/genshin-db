@@ -1,0 +1,80 @@
+{
+	"id": 1503,
+	"name": "ウェンティ",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"風元素",
+		"弓",
+		"モンド"
+	],
+	"storytitle": "風色の詩人·ウェンティ",
+	"storytext": "「四季が移ろっても、四風は吹き止まない。」\n「まあ、当然だけどこれは彼らのお陰じゃなくて、ほとんどこのボクのお陰だよ。」\n「だって吟遊詩人がいなかったら、誰がそれを唄ってくれるって言うんだい？」",
+	"source": "キャッツテールでウェンティを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 15031,
+			"name": "神代の射術",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15032,
+			"name": "高天の歌",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115031]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与え、<color=#FFFFFFFF>風域</color>を生成する。",
+			"description": "風元素ダメージを2与え、風域を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15033,
+			"name": "風神の詩",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115034]</color>を召喚する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与え、<color=#FFFFFFFF>暴風の目</color>を召喚する。",
+			"description": "風元素ダメージを2与え、暴風の目を召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1503,
+	"name": "Venti",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Anemo",
+		"Arco",
+		"Mondstadt"
+	],
+	"storytitle": "Venti - El bardo itinerante",
+	"storytext": "“Igual que el paso del tiempo, el viento nunca se detiene.\nEl mérito de esta obra fue mío, por supuesto,\nya que sin los bardos, ¿quién difundiría las leyendas?”",
+	"source": "Se obtiene tras retar y ganar a Venti en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 15031,
+			"name": "Puntería divina",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15032,
+			"name": "Sonata celestial",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C115031|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y crea un <color=#FFFFFFFF>campo de viento</color>.",
+			"description": "Inflige 2 pts. de Daño Anemo y crea un campo de viento.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15033,
+			"name": "Gran Oda del Viento",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca un <color=#FFFFFFFF>$[C115034]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> e invoca un <color=#FFFFFFFF>Ojo del huracán</color>.",
+			"description": "Inflige 2 pts. de Daño Anemo e invoca un Ojo del huracán.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

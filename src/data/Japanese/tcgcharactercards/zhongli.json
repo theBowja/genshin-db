@@ -1,0 +1,97 @@
+{
+	"id": 1603,
+	"name": "鍾離",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"岩元素",
+		"長柄武器",
+		"璃月"
+	],
+	"storytitle": "浮世閑歩·鍾離",
+	"storytext": "玉の揺りかごである石は、世の果てをも照らす。輝く天星の如く、唯一無二だ。",
+	"source": "キャッツテールで鍾離を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 16031,
+			"name": "岩雨",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16032,
+			"name": "地心",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C116031]</color>を召喚する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を1与え、<color=#FFFFFFFF>岩柱</color>を召喚する。",
+			"description": "岩元素ダメージを1与え、岩柱を召喚する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16033,
+			"name": "地心·磅礴",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C116031]</color>を召喚し、<color=#FFFFFFFF>$[C116032]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を3与え、<color=#FFFFFFFF>岩柱</color>を召喚し、<color=#FFFFFFFF>玉璋シールド</color>を生成する。",
+			"description": "岩元素ダメージを3与え、岩柱を召喚し、玉璋シールドを生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 16034,
+			"name": "天星",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標キャラに<color=#FFFFFFFF>$[C116033]</color>を付与する。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を4与え、目標キャラに<color=#FFFFFFFF>石化</color>を付与する。",
+			"description": "岩元素ダメージを4与え、目標キャラに石化を付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

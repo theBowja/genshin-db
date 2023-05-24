@@ -1,0 +1,88 @@
+{
+	"id": 1407,
+	"name": "雷電将軍",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"雷元素",
+		"長柄武器",
+		"稲妻"
+	],
+	"storytitle": "一心浄土·雷電将軍",
+	"storytext": "雷鳴寂滅、浮世の泡影。",
+	"source": "キャッツテールで雷電将軍を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 14071,
+			"name": "源流",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14072,
+			"name": "神変·悪曜開眼",
+			"descriptionraw": "<color=#FFFFFFFF>$[C114071]</color>を召喚する。",
+			"descriptionreplaced": "<color=#FFFFFFFF>雷罰悪曜の眼</color>を召喚する。",
+			"description": "雷罰悪曜の眼を召喚する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14073,
+			"name": "奥義·夢想真説",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、他の味方キャラが$[K310]を2獲得する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与え、他の味方キャラが<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を2獲得する。",
+			"description": "雷元素ダメージを3与え、他の味方キャラがチャージを2獲得する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14074,
+			"name": "諸願百目の輪",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C114072]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>諸願百目の輪</color>が付与される。",
+			"description": "【固有】戦闘開始時、諸願百目の輪が付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

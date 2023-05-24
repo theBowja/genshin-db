@@ -1,0 +1,78 @@
+{
+	"id": 1408,
+	"name": "八重神子",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"雷元素",
+		"法器",
+		"稲妻"
+	],
+	"storytitle": "浮世笑百姿·八重神子",
+	"storytext": "「英知と美貌を兼ね備えた八重神子様」",
+	"source": "キャッツテールで八重神子を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 14081,
+			"name": "狐霊罪喰い式",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。",
+			"description": "雷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14082,
+			"name": "野干役呪·殺生櫻",
+			"descriptionraw": "<color=#FFFFFFFF>$[C114081]</color>を召喚する。",
+			"descriptionreplaced": "<color=#FFFFFFFF>殺生櫻</color>を召喚する。",
+			"description": "殺生櫻を召喚する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14083,
+			"name": "大密法·天狐顕現",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。味方のフィールドに<color=#FFFFFFFF>$[C114081]</color>が存在する場合、それを破壊して<color=#FFFFFFFF>$[C114083]</color>を生成する。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を4与える。味方のフィールドに<color=#FFFFFFFF>殺生櫻</color>が存在する場合、それを破壊して<color=#FFFFFFFF>天狐雷霆</color>を生成する。",
+			"description": "雷元素ダメージを4与える。味方のフィールドに殺生櫻が存在する場合、それを破壊して天狐雷霆を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

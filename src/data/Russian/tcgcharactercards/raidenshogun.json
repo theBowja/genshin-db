@@ -1,0 +1,88 @@
+{
+	"id": 1407,
+	"name": "Сёгун Райдэн",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Электро",
+		"Древковое",
+		"Инадзума"
+	],
+	"storytitle": "«Царство эвтюмии» Сёгун Райдэн",
+	"storytext": "Грозовое спокойствие рассеет эфемерный мир.",
+	"source": "Награда за приглашение сёгуна Райдэн в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 14071,
+			"name": "Исток",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14072,
+			"name": "Превосходство: Зловещее знамение",
+			"descriptionraw": "Призывает 1 помощника: <color=#FFFFFFFF>$[C114071]</color>.",
+			"descriptionreplaced": "Призывает 1 помощника: <color=#FFFFFFFF>Глаз грозового наказания</color>.",
+			"description": "Призывает 1 помощника: Глаз грозового наказания.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14073,
+			"name": "Тайное искусство: Мусо синсэцу",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., $[K310] всех ваших персонажей увеличивается на 2 ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед., <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color> всех ваших персонажей увеличивается на 2 ед.",
+			"description": "Наносит Электро урон, 3 ед., Энергия всех ваших персонажей увеличивается на 2 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14074,
+			"name": "Чакра вожделения",
+			"descriptionraw": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>$[C114072]</color>.",
+			"descriptionreplaced": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>Чакра вожделения</color>.",
+			"description": "(Пассивный) В начале сражения у персонажа будет Чакра вожделения.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

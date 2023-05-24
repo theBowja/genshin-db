@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "Тарталья",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Гидро",
+		"Стрелковое",
+		"Фатуи"
+	],
+	"storytitle": "Чайльд Тарталья",
+	"storytext": "Раз уж стол - это поле боя, то пусть победа достанется сильнейшему.",
+	"source": "Награда за приглашение Тартальи в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "Дождь расставаний",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "Форма духа: Бушующие волны",
+			"descriptionraw": "Активируется <color=#FFFFFFFF>$[C112042]</color>, затем наносится $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Активируется <color=#FFFFFFFF>Ближняя стойка</color>, затем наносится {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед.",
+			"description": "Активируется Ближняя стойка, затем наносится Гидро урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "Хаос: Опустошение",
+			"descriptionraw": "Проводит разные атаки в зависимости от статуса, в котором находится <color=#FFFFFFFF>$[A1204]</color>.\\n<color=#FFFFFFFF>Дальняя стойка - Вспышка хаоса:</color> наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE_4] ед., возвращается $[K310], 2 ед. Целевой персонаж получает <color=#FFFFFFFF>$[C112043]</color>.\\n<color=#FFFFFFFF>Ближняя стойка - Свет погибели:</color> наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Проводит разные атаки в зависимости от статуса, в котором находится <color=#FFFFFFFF>Тарталья</color>.\\n<color=#FFFFFFFF>Дальняя стойка - Вспышка хаоса:</color> наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 4 ед., возвращается <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color>, 2 ед. Целевой персонаж получает <color=#FFFFFFFF>Отлив</color>.\\n<color=#FFFFFFFF>Ближняя стойка - Свет погибели:</color> наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 4 ед.",
+			"description": "Проводит разные атаки в зависимости от статуса, в котором находится Тарталья.\nДальняя стойка - Вспышка хаоса: наносит Гидро урон, 4 ед., возвращается Энергия, 2 ед. Целевой персонаж получает Отлив.\nБлижняя стойка - Свет погибели: наносит Гидро урон, 4 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "Останавливающий волну",
+			"descriptionraw": "(Пассивный навык) В начале сражения у персонажа будет <color=#FFFFFFFF>$[C112041]</color>.\\nКогда <color=#FFFFFFFF>$[C112042]</color> персонажа прекращает эффект, персонажу снова добавляется <color=#FFFFFFFF>$[C112041]</color>.",
+			"descriptionreplaced": "(Пассивный навык) В начале сражения у персонажа будет <color=#FFFFFFFF>Дальняя стойка</color>.\\nКогда <color=#FFFFFFFF>Ближняя стойка</color> персонажа прекращает эффект, персонажу снова добавляется <color=#FFFFFFFF>Дальняя стойка</color>.",
+			"description": "(Пассивный навык) В начале сражения у персонажа будет Дальняя стойка.\nКогда Ближняя стойка персонажа прекращает эффект, персонажу снова добавляется Дальняя стойка.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "Дальняя стойка",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "Останавливающий волну",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

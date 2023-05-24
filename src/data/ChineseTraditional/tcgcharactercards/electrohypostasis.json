@@ -1,0 +1,114 @@
+{
+	"id": 2401,
+	"name": "無相之雷",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"雷元素",
+		"其他武器",
+		"魔物"
+	],
+	"storytitle": "無相之雷",
+	"storytext": "代號為「阿萊夫」的高級雷元素生命。\n就算猜拳獲勝，它通常也不會認輸。",
+	"source": "在貓尾酒館中小王子處進行酒館挑戰，在友好對局難度無相之雷中獲得勝利後獲得",
+	"skills": [
+		{
+			"id": 24011,
+			"name": "雷晶投射",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成1點{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素傷害</color>。",
+			"description": "造成1點雷元素傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "猜拳三連擊",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，然後分別$[K53]：<color=#FFFFFFFF>$[S24015]</color>和<color=#FFFFFFFF>$[S24016]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素傷害</color>，然後分別<color=#FFFFFFFF>準備技能</color>：<color=#FFFFFFFF>猜拳三連擊·剪刀</color>和<color=#FFFFFFFF>猜拳三連擊·布</color>。",
+			"description": "造成2點雷元素傷害，然後分別準備技能：猜拳三連擊·剪刀和猜拳三連擊·布。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "靂霆鎮鎖",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，召喚<color=#FFFFFFFF>$[C124013]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素傷害</color>，召喚<color=#FFFFFFFF>雷鎖鎮域</color>。",
+			"description": "造成2點雷元素傷害，召喚雷鎖鎮域。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24014,
+			"name": "雷晶核心",
+			"descriptionraw": "【被動】戰鬥開始時，初始附屬<color=#FFFFFFFF>$[C124014]</color>。",
+			"descriptionreplaced": "【被動】戰鬥開始時，初始附屬<color=#FFFFFFFF>雷晶核心</color>。",
+			"description": "【被動】戰鬥開始時，初始附屬雷晶核心。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被動技能",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "猜拳三連擊·剪刀",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，然後$[K53]：<color=#FFFFFFFF>$[S24016]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素傷害</color>，然後<color=#FFFFFFFF>準備技能</color>：<color=#FFFFFFFF>猜拳三連擊·布</color>。",
+			"description": "造成2點雷元素傷害，然後準備技能：猜拳三連擊·布。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "猜拳三連擊·布",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素傷害</color>。",
+			"description": "造成3點雷元素傷害。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": []
+		}
+	]
+}

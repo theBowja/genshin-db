@@ -1,0 +1,78 @@
+{
+	"id": 1408,
+	"name": "Yae Miko",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"ธาตุไฟฟ้า",
+		"สื่อเวท",
+		"Inazuma"
+	],
+	"storytitle": "ยิ้มเล่ห์กลยลโลกา - Yae Miko",
+	"storytext": "\"ท่าน Yae Miko ผู้เปี่ยมทั้งสติปัญญาและความงาม\"",
+	"source": "ได้รับหลังจากเชิญ Yae Miko ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 14081,
+			"name": "Spiritfox Sin-Eater",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 1 หน่วย",
+			"description": "สร้างความเสียหายไฟฟ้า 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14082,
+			"name": "Yakan Evocation: Sesshou Sakura",
+			"descriptionraw": "เรียก <color=#FFFFFFFF>$[C114081]</color>",
+			"descriptionreplaced": "เรียก <color=#FFFFFFFF>Sesshou Sakura</color>",
+			"description": "เรียก Sesshou Sakura",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14083,
+			"name": "Great Secret Art: Tenko Kenshin",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย; หากในสนามของฝ่ายเรามี <color=#FFFFFFFF>$[C114081]</color> จะสลายมัน และสร้าง <color=#FFFFFFFF>$[C114083]</color>",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 4 หน่วย; หากในสนามของฝ่ายเรามี <color=#FFFFFFFF>Sesshou Sakura</color> จะสลายมัน และสร้าง <color=#FFFFFFFF>Tenko Thunderbolt</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 4 หน่วย; หากในสนามของฝ่ายเรามี Sesshou Sakura จะสลายมัน และสร้าง Tenko Thunderbolt",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

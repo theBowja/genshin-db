@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "타르탈리아",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"물 원소",
+		"활",
+		"우인단"
+	],
+	"storytitle": "「귀공자」·타르탈리아",
+	"storytext": "카드 대전은 전장과도 같아서, 능력 있는 자가 앞설 수 있다",
+	"source": "캣테일 술집에서 타르탈리아 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "단우",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "마왕 무장·광란",
+			"descriptionraw": "<color=#FFFFFFFF>$[C112042]</color>로 진입하고 $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>근접 상태</color>로 진입하고 {SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 준다.",
+			"description": "근접 상태로 진입하고 물 원소 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "극악기·진멸섬",
+			"descriptionraw": "<color=#FFFFFFFF>$[A1204]</color>의 현재 상태에 따라 공격 방식이 달라진다.\\n<color=#FFFFFFFF>원거리 상태·마탄 일섬:</color> $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_4]pt 주고 $[K310]를 2pt 돌려받으며 대상에게 <color=#FFFFFFFF>$[C112043]를 부착</color>한다.\\n<color=#FFFFFFFF>근접 상태·진멸의 물빛:</color> $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>타르탈리아</color>의 현재 상태에 따라 공격 방식이 달라진다.\\n<color=#FFFFFFFF>원거리 상태·마탄 일섬:</color> {SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 4pt 주고 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 2pt 돌려받으며 대상에게 <color=#FFFFFFFF>단류를 부착</color>한다.\\n<color=#FFFFFFFF>근접 상태·진멸의 물빛:</color> {SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 4pt 준다.",
+			"description": "타르탈리아의 현재 상태에 따라 공격 방식이 달라진다.\n원거리 상태·마탄 일섬: 물 원소 피해를 4pt 주고 원소 에너지를 2pt 돌려받으며 대상에게 단류를 부착한다.\n근접 상태·진멸의 물빛: 물 원소 피해를 4pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "파도 억제",
+			"descriptionraw": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>$[C112041]</color>가 부착된다.\\n캐릭터에게 부착된 <color=#FFFFFFFF>$[C112042]</color> 효과 종료 시 <color=#FFFFFFFF>$[C112041]</color>를 다시 부착한다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>원거리 상태</color>가 부착된다.\\n캐릭터에게 부착된 <color=#FFFFFFFF>근접 상태</color> 효과 종료 시 <color=#FFFFFFFF>원거리 상태</color>를 다시 부착한다.",
+			"description": "[패시브] 전투 시작 시, 처음부터 원거리 상태가 부착된다.\n캐릭터에게 부착된 근접 상태 효과 종료 시 원거리 상태를 다시 부착한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "원거리 상태",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "파도 억제",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

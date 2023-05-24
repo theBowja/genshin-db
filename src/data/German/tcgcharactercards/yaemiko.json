@@ -1,0 +1,78 @@
+{
+	"id": 1408,
+	"name": "Yae Miko",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Elektro",
+		"Katalysator",
+		"Inazuma"
+	],
+	"storytitle": "Verhöhnung der Sterblichen – Yae Miko",
+	"storytext": "„Die weise und schöne Yae Miko.“",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Yae Miko in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 14081,
+			"name": "Sündenverschlinger",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Elektro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14082,
+			"name": "Yakan-Kriegszauber – Sesshou-Sakura",
+			"descriptionraw": "Erschafft 1 <color=#FFFFFFFF>$[C114081]</color>.",
+			"descriptionreplaced": "Erschafft 1 <color=#FFFFFFFF>Sesshou-Sakura</color>.",
+			"description": "Erschafft 1 Sesshou-Sakura.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14083,
+			"name": "Große Geheimkunst – Tenko Kenshin",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]; besteht auf deinem Feld 1 <color=#FFFFFFFF>$[C114081]</color>, wird sie zerstört, daraufhin wird 1 <color=#FFFFFFFF>$[C114083]</color> erschaffen.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>; besteht auf deinem Feld 1 <color=#FFFFFFFF>Sesshou-Sakura</color>, wird sie zerstört, daraufhin wird 1 <color=#FFFFFFFF>Tenko-Blitzschlag</color> erschaffen.",
+			"description": "Verursacht 4 Pkt. Elektro-SCH; besteht auf deinem Feld 1 Sesshou-Sakura, wird sie zerstört, daraufhin wird 1 Tenko-Blitzschlag erschaffen.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

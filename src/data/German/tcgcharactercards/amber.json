@@ -1,0 +1,78 @@
+{
+	"id": 1304,
+	"name": "Amber",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Pyro",
+		"Bogen",
+		"Mondstadt"
+	],
+	"storytitle": "Kundschafterin – Amber",
+	"storytext": "Du willst dir als Kartenbeschwörer also einen Namen machen ...\nZunächst einmal musst du den Mut aufbringen, dich an den Kartentisch zu setzen.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Amber in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 13041,
+			"name": "Scharfschütze",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13042,
+			"name": "Sprengpuppe",
+			"descriptionraw": "Erschafft 1 <color=#FFFFFFFF>$[C113041]</color>.",
+			"descriptionreplaced": "Erschafft 1 <color=#FFFFFFFF>Graf von Hoppel</color>.",
+			"description": "Erschafft 1 Graf von Hoppel.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13043,
+			"name": "Pfeilregen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], fügt allen inaktiven Figuren des Gegners 2 Pkt. <color=#FFFFFFFF>$[K5|s1]</color> zu.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, fügt allen inaktiven Figuren des Gegners 2 Pkt. <color=#FFFFFFFF><color=#FFFFFFFF>durchdringenden SCH</color></color> zu.",
+			"description": "Verursacht 2 Pkt. Pyro-SCH, fügt allen inaktiven Figuren des Gegners 2 Pkt. durchdringenden SCH zu.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
