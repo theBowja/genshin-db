@@ -1,0 +1,80 @@
+{
+	"id": 1702,
+	"name": "타이나리",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"풀 원소",
+		"활",
+		"수메르"
+	],
+	"storytitle": "신록의 발걸음·타이나리",
+	"storytext": "어떤 면에서 경험은 지혜와 같지 않다",
+	"source": "캣테일 술집에서 타이나리 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 17021,
+			"name": "장벽을 깨는 온(蘊)",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17022,
+			"name": "식(識)의 열매",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C117021]</color>를 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 2pt 주고 본 캐릭터에게 <color=#FFFFFFFF>식(識)의 통찰자</color>를 부착한다.",
+			"description": "풀 원소 피해를 2pt 주고 본 캐릭터에게 식(識)의 통찰자를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17023,
+			"name": "뒤엉킨 덩굴 화살",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 모든 적 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]</color>를 1pt 준다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 4pt 주고 모든 적 대기 캐릭터에게 <color=#FFFFFFFF><color=#FFFFFFFF>관통 피해</color></color>를 1pt 준다.",
+			"description": "풀 원소 피해를 4pt 주고 모든 적 대기 캐릭터에게 관통 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1206,
+	"name": "Камисато Аято",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Гидро",
+		"Одноручное",
+		"Инадзума"
+	],
+	"storytitle": "«Оплот стойкости» Камисато Аято",
+	"storytext": "Благословенный кипарис прорастает новыми листьями.",
+	"source": "Награда за приглашение Камисато Аято в «Кошкин хвост» и победу над ним в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12061,
+			"name": "Искусство Камисато: Маробаси",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12062,
+			"name": "Искусство Камисато: Кёка",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Персонажу достаётся <color=#FFFFFFFF>$[C112061]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед. Персонажу достаётся <color=#FFFFFFFF>Такимэгури канка</color>.",
+			"description": "Наносит Гидро урон, 2 ед. Персонажу достаётся Такимэгури канка.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12063,
+			"name": "Искусство Камисато: Суйю",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C112062]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед. и призывает помощника: <color=#FFFFFFFF>Безмятежный сад</color>.",
+			"description": "Наносит Гидро урон, 3 ед. и призывает помощника: Безмятежный сад.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

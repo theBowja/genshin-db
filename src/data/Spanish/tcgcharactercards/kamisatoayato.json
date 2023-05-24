@@ -1,0 +1,80 @@
+{
+	"id": 1206,
+	"name": "Kamisato Ayato",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Hydro",
+		"Espada ligera",
+		"Inazuma"
+	],
+	"storytitle": "Kamisato Ayato, el Vigoroso Estratega",
+	"storytext": "El ciprés protegido por los dioses brilla al renacer.",
+	"source": "Se obtiene tras retar y ganar a Kamisato Ayato en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 12061,
+			"name": "Estilo Kamisato - Marobashi",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12062,
+			"name": "Estilo Kamisato: Belleza reflejada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje entra en el estado de <color=#FFFFFFFF>$[C112061|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y este personaje entra en el estado de <color=#FFFFFFFF>reflejo torrencial</color>.",
+			"description": "Inflige 2 pts. de Daño Hydro y este personaje entra en el estado de reflejo torrencial.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12063,
+			"name": "Estilo Kamisato: Jardín ácueo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca un <color=#FFFFFFFF>$[C112062|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> e invoca un <color=#FFFFFFFF>jardín de paz</color>.",
+			"description": "Inflige 3 pts. de Daño Hydro e invoca un jardín de paz.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}
