@@ -1,0 +1,80 @@
+{
+	"id": 1702,
+	"name": "Tighnari",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Dendro",
+		"Bogen",
+		"Sumeru"
+	],
+	"storytitle": "Wanderer im Grünen – Tighnari",
+	"storytext": "Erfahrung ist in gewisser Hinsicht nicht dasselbe wie Weisheit.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Tighnari in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 17021,
+			"name": "Khanda-Barrieren-Zerstörer",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17022,
+			"name": "Vijnana-Phala-Mine",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C117021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>, erhält selbst <color=#FFFFFFFF>Vijnana-Durchbruch</color>.",
+			"description": "Verursacht 2 Pkt. Dendro-SCH, erhält selbst Vijnana-Durchbruch.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17023,
+			"name": "Des Erschaffers Schlingstängel-Pfeil",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], fügt allen inaktiven Figuren des Gegners 1 Pkt. <color=#FFFFFFFF>$[K5|s1]</color> zu.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>, fügt allen inaktiven Figuren des Gegners 1 Pkt. <color=#FFFFFFFF><color=#FFFFFFFF>durchdringenden SCH</color></color> zu.",
+			"description": "Verursacht 4 Pkt. Dendro-SCH, fügt allen inaktiven Figuren des Gegners 1 Pkt. durchdringenden SCH zu.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

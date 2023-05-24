@@ -1,0 +1,80 @@
+{
+	"id": 1206,
+	"name": "카미사토 아야토",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"물 원소",
+		"한손검",
+		"이나즈마"
+	],
+	"storytitle": "잎을 수호하는 반석·카미사토 아야토",
+	"storytext": "신이 수호하는 떡갈나무에 새로운 가지가 자라났다",
+	"source": "캣테일 술집에서 카미사토 아야토 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 12061,
+			"name": "카미사토류·전",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12062,
+			"name": "카미사토류·거울꽃",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C112061]</color>을 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 주고 본 캐릭터에게 <color=#FFFFFFFF>선회하는 거울꽃</color>을 부착한다.",
+			"description": "물 원소 피해를 2pt 주고 본 캐릭터에게 선회하는 거울꽃을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12063,
+			"name": "카미사토류·물의 영역",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112062]</color>를 소환한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>고요한 원유(苑囿)</color>를 소환한다.",
+			"description": "물 원소 피해를 3pt 주고 고요한 원유(苑囿)를 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}
