@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "Tartaglia",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Hydro",
+		"Arco",
+		"Fatui"
+	],
+	"storytitle": "Tartaglia, Childe",
+	"storytext": "Se esta mesa for considerada um campo de batalha, que o mais forte reivindique a vitória.",
+	"source": "Recompensa por desafiar Tartaglia para um duelo na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com ele",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "Intercepção de Chuva",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "Legado do Mal - Ondas de Fúria",
+			"descriptionraw": "Troca para <color=#FFFFFFFF>$[C112042]</color> e causa $[D__KEY__DAMAGE] pontos de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Troca para <color=#FFFFFFFF>Posição Corpo-a-Corpo</color> e causa 2 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>.",
+			"description": "Troca para Posição Corpo-a-Corpo e causa 2 pontos de Dano Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "Devastação: Obliteracão",
+			"descriptionraw": "Realiza diferentes ataques baseado na posição atual de <color=#FFFFFFFF>$[A1204]</color>.\\n<color=#FFFFFFFF>Posição à Distância - Clarão da Devastação:</color> Causa $[D__KEY__DAMAGE_4] de $[D__KEY__ELEMENT], recupera 2 de $[K310] e aplica <color=#FFFFFFFF>$[C112043]</color> ao alvo.\\n<color=#FFFFFFFF>Posição Corpo-a-Corpo - Luz da Obliteração</color> causa $[D__KEY__DAMAGE] de $[D__KEY__ELEMENT].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Realiza diferentes ataques baseado na posição atual de <color=#FFFFFFFF>Tartaglia</color>.\\n<color=#FFFFFFFF>Posição à Distância - Clarão da Devastação:</color> Causa 4 de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, recupera 2 de <color=#FFFFFFFF>{SPRITE_PRESET#1110}Carga</color> e aplica <color=#FFFFFFFF>Interceptação de Fluxo</color> ao alvo.\\n<color=#FFFFFFFF>Posição Corpo-a-Corpo - Luz da Obliteração</color> causa 4 de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>.",
+			"description": "Realiza diferentes ataques baseado na posição atual de Tartaglia.\nPosição à Distância - Clarão da Devastação: Causa 4 de Dano Hydro, recupera 2 de Carga e aplica Interceptação de Fluxo ao alvo.\nPosição Corpo-a-Corpo - Luz da Obliteração causa 4 de Dano Hydro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "Ondas Calmas",
+			"descriptionraw": "(Passiva) Quando a batalha começa, este personagem ganha <color=#FFFFFFFF>$[C112041]</color>. Quando a <color=#FFFFFFFF>$[C112042]</color> aplicada ao personagem acaba, reaplica <color=#FFFFFFFF>$[C112041]</color>.",
+			"descriptionreplaced": "(Passiva) Quando a batalha começa, este personagem ganha <color=#FFFFFFFF>Posição à Distância</color>. Quando a <color=#FFFFFFFF>Posição Corpo-a-Corpo</color> aplicada ao personagem acaba, reaplica <color=#FFFFFFFF>Posição à Distância</color>.",
+			"description": "(Passiva) Quando a batalha começa, este personagem ganha Posição à Distância. Quando a Posição Corpo-a-Corpo aplicada ao personagem acaba, reaplica Posição à Distância.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "Posição à Distância",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "Ondas Calmas",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

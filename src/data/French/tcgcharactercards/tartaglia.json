@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "Tartaglia",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Hydro",
+		"Arc",
+		"Fatui"
+	],
+	"storytitle": "Tartaglia · Jeune Sire",
+	"storytext": "Si cette table est considérée comme un champ de bataille, alors que le meilleur gagne.",
+	"source": "Récompense pour avoir invité Tartaglia à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "Taille du torrent",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "Posture du démon: Marée déchaînée",
+			"descriptionraw": "Fait passer en <color=#FFFFFFFF>$[C112042|s1]</color> et inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Fait passer en <color=#FFFFFFFF>état de mêlée</color> et inflige 2 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Fait passer en état de mêlée et inflige 2 pts de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "Ravage : Oblitération",
+			"descriptionraw": "#Effectue différentes attaques selon l'état actuel de <color=#FFFFFFFF>$[A1204]</color> :\\n<color=#FFFFFFFF>En état à distance, déclenche Éclair de balle maléfique{NON_BREAK_SPACE}: </color>Inflige $[D__KEY__DAMAGE_4] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], restaure 2 $[K310|s3] et inflige l'effet <color=#FFFFFFFF>$[C112043]</color> au personnage choisi.\\n<color=#FFFFFFFF>En état de mêlée, déclenche Lumière d'élimination : </color>Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "#Effectue différentes attaques selon l'état actuel de <color=#FFFFFFFF>Tartaglia</color> :\\n<color=#FFFFFFFF>En état à distance, déclenche Éclair de balle maléfique{NON_BREAK_SPACE}: </color>Inflige 4 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>, restaure 2 <color=#FFFFFFFF>{SPRITE_PRESET#1110}charges</color> et inflige l'effet <color=#FFFFFFFF>Contre-courant</color> au personnage choisi.\\n<color=#FFFFFFFF>En état de mêlée, déclenche Lumière d'élimination : </color>Inflige 4 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Effectue différentes attaques selon l'état actuel de Tartaglia :\nEn état à distance, déclenche Éclair de balle maléfique : Inflige 4 pts de DGT Hydro, restaure 2 charges et inflige l'effet Contre-courant au personnage choisi.\nEn état de mêlée, déclenche Lumière d'élimination : Inflige 4 pts de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "Vague au calme",
+			"descriptionraw": "(Passif) Accorde un <color=#FFFFFFFF>$[C112041|s2]</color> au début du combat.\\nLorsqu'un <color=#FFFFFFFF>$[C112042|s1]</color> du personnage affecté prend fin, accorde à nouveau un <color=#FFFFFFFF>$[C112041|s2]</color>.",
+			"descriptionreplaced": "(Passif) Accorde un <color=#FFFFFFFF>état à distance</color> au début du combat.\\nLorsqu'un <color=#FFFFFFFF>état de mêlée</color> du personnage affecté prend fin, accorde à nouveau un <color=#FFFFFFFF>état à distance</color>.",
+			"description": "(Passif) Accorde un état à distance au début du combat.\nLorsqu'un état de mêlée du personnage affecté prend fin, accorde à nouveau un état à distance.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "État à distance",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "Vague au calme",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

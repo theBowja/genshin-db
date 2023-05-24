@@ -1,0 +1,80 @@
+{
+	"id": 1503,
+	"name": "Venti",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Anemo",
+		"Bogen",
+		"Mondstadt"
+	],
+	"storytitle": "Wandernder Barde – Venti",
+	"storytext": "„Wie sich die vier Jahreszeiten nacheinander abwechseln, so werden auch die vier Winde nie aufhören zu wehen.“\n„Nun war natürlich die Hauptrolle in diesem Stück meine und nicht ihre.“\n„Hätte es keinen Barden gegeben, wer würde dann jetzt die Geschichte weitererzählen?“",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Venti in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 15031,
+			"name": "Göttliche Schießkunst",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15032,
+			"name": "Sonett vom Himmel",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT], erschafft 1 <color=#FFFFFFFF>$[C115031]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-Schaden</color>, erschafft 1 <color=#FFFFFFFF>Sturm</color>.",
+			"description": "Verursacht 2 Pkt. Anemo-Schaden, erschafft 1 Sturm.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15033,
+			"name": "Ode vom Anemo-Archon",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C115034]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Zentrum des Sturms</color>.",
+			"description": "Verursacht 2 Pkt. Anemo-SCH, erschafft 1 Zentrum des Sturms.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

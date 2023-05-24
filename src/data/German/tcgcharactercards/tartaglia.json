@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "Tartaglia",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Hydro",
+		"Bogen",
+		"Fatui"
+	],
+	"storytitle": "„Der Graf“ – Tartaglia",
+	"storytext": "Ein Kartenspiel ist wie ein Schlachtfeld: Nur die Fähigen bestehen.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Tartaglia in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "Regenschnitt",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "Dämonengewand – Stürmische Gezeiten",
+			"descriptionraw": "Wechselt zum <color=#FFFFFFFF>$[C112042]</color>, verursacht daraufhin $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Wechselt zum <color=#FFFFFFFF>Nahkampfmodus</color>, verursacht daraufhin 2 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Wechselt zum Nahkampfmodus, verursacht daraufhin 2 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "Spezialangriff – Totale Vernichtung",
+			"descriptionraw": "Führt unterschiedliche Angriffe aus, je nach dem aktuellen Modus von <color=#FFFFFFFF>$[A1204]</color>:\\n<color=#FFFFFFFF>Fernkampf: Teufelsschuss</color>\\nVerursacht $[D__KEY__DAMAGE_4] Pkt. $[D__KEY__ELEMENT|s1]; stellt 2 Pkt. $[K310] wieder her; verleiht dem Ziel 1 <color=#FFFFFFFF>$[C112043]</color>.\\n<color=#FFFFFFFF>Nahkampf: Tödliches Glitzern</color>\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Führt unterschiedliche Angriffe aus, je nach dem aktuellen Modus von <color=#FFFFFFFF>Tartaglia</color>:\\n<color=#FFFFFFFF>Fernkampf: Teufelsschuss</color>\\nVerursacht 4 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>; stellt 2 Pkt. <color=#FFFFFFFF>{SPRITE_PRESET#1110}Aufladung</color> wieder her; verleiht dem Ziel 1 <color=#FFFFFFFF>Versiegen</color>.\\n<color=#FFFFFFFF>Nahkampf: Tödliches Glitzern</color>\\nVerursacht 4 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Führt unterschiedliche Angriffe aus, je nach dem aktuellen Modus von Tartaglia:\nFernkampf: Teufelsschuss\nVerursacht 4 Pkt. Hydro-SCH; stellt 2 Pkt. Aufladung wieder her; verleiht dem Ziel 1 Versiegen.\nNahkampf: Tödliches Glitzern\nVerursacht 4 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "Wellenbrecher",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C112041]</color>.\\nVerleiht dieser Figur wieder den <color=#FFFFFFFF>$[C112041]</color>, wenn ihr <color=#FFFFFFFF>$[C112042]</color> endet.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Fernkampfmodus</color>.\\nVerleiht dieser Figur wieder den <color=#FFFFFFFF>Fernkampfmodus</color>, wenn ihr <color=#FFFFFFFF>Nahkampfmodus</color> endet.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Fernkampfmodus.\nVerleiht dieser Figur wieder den Fernkampfmodus, wenn ihr Nahkampfmodus endet.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "Fernkampfmodus",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "Wellenbrecher",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

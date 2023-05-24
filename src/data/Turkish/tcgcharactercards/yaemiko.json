@@ -1,0 +1,78 @@
+{
+	"id": 1408,
+	"name": "Yae Miko",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Katalizör",
+		"Inazuma"
+	],
+	"storytitle": "\"Akıl Oyunları\" Yae Miko",
+	"storytext": "\"Hem akıllı hem güzel Yae Miko.\"",
+	"source": "Yae Miko'yu Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 14081,
+			"name": "Günah Yiyen Kitsune",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.",
+			"description": "1 Elektrik Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14082,
+			"name": "Yako Çağrısı: Ölümcül Kiraz Çiçeği",
+			"descriptionraw": "1 <color=#FFFFFFFF>$[C114081]</color> çağırır.",
+			"descriptionreplaced": "1 <color=#FFFFFFFF>Ölümcül Kiraz Çiçeği</color> çağırır.",
+			"description": "1 Ölümcül Kiraz Çiçeği çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14083,
+			"name": "Gizli Ulvi Büyü: Tenko Kenshin",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Senin tarafında bir <color=#FFFFFFFF>$[C114081]</color> varsa onu yok eder ve <color=#FFFFFFFF>$[C114083]</color> oluşturur.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir. Senin tarafında bir <color=#FFFFFFFF>Ölümcül Kiraz Çiçeği</color> varsa onu yok eder ve <color=#FFFFFFFF>Tenko Yıldırımları</color> oluşturur.",
+			"description": "4 Elektrik Hasarı verir. Senin tarafında bir Ölümcül Kiraz Çiçeği varsa onu yok eder ve Tenko Yıldırımları oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

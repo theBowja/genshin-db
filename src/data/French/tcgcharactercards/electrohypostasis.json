@@ -1,0 +1,114 @@
+{
+	"id": 2401,
+	"name": "Hypostase Électro",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Électro",
+		"Autre arme",
+		"Monstre"
+	],
+	"storytitle": "Hypostase Électro",
+	"storytext": "Nom de code « Alep », une entité Électro de niveau supérieur.\nMême lors d'une partie de pierre-feuille-ciseaux, celle-ci n'est pas du genre à admettre la défaite.",
+	"source": "Récompense pour avoir accepté un défi de taverne auprès de Prince à La Queue de Chat et remporté la victoire lors d'une partie amicale contre l'Hypostase Électro",
+	"skills": [
+		{
+			"id": 24011,
+			"name": "Projection de cristal Électro",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color>.",
+			"description": "Inflige 1 pt de DGT Électro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "Pierre-feuille-ciseaux",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et $[K53|s2] : <color=#FFFFFFFF>$[S24015]</color> et <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et <color=#FFFFFFFF>prépare séparément les capacités</color> : <color=#FFFFFFFF>Pierre-feuille-ciseaux : Ciseaux</color> et <color=#FFFFFFFF>Pierre-feuille-ciseaux : Feuille</color>.",
+			"description": "Inflige 2 pts de DGT Électro et prépare séparément les capacités : Pierre-feuille-ciseaux : Ciseaux et Pierre-feuille-ciseaux : Feuille.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "Verrou de foudre",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque une <color=#FFFFFFFF>$[C124013|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et invoque une <color=#FFFFFFFF>chaîne du tonnerre protecteur</color>.",
+			"description": "Inflige 2 pts de DGT Électro et invoque une chaîne du tonnerre protecteur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24014,
+			"name": "Noyau cristallin Électro",
+			"descriptionraw": "(Passif) Accorde un <color=#FFFFFFFF>$[C124014|s2]</color> au début du combat.",
+			"descriptionreplaced": "(Passif) Accorde un <color=#FFFFFFFF>noyau cristallin Électro</color> au début du combat.",
+			"description": "(Passif) Accorde un noyau cristallin Électro au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "Pierre-feuille-ciseaux : Ciseaux",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et $[K53|s1] : <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et <color=#FFFFFFFF>prépare la capacité</color> : <color=#FFFFFFFF>Pierre-feuille-ciseaux : Feuille</color>.",
+			"description": "Inflige 2 pts de DGT Électro et prépare la capacité : Pierre-feuille-ciseaux : Feuille.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "Pierre-feuille-ciseaux : Feuille",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color>.",
+			"description": "Inflige 3 pts de DGT Électro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1503,
+	"name": "Венти",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Анемо",
+		"Стрелковое",
+		"Мондштадт"
+	],
+	"storytitle": "«Поэт ветров» Венти",
+	"storytext": "«Пою вам я о красоте сего мира.\nСо мной поёт моя небесная лира.\nГлавная роль в этой песне - моя.\nВедь кто б её спел, если не я?»",
+	"source": "Награда за приглашение Венти в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 15031,
+			"name": "Божественная точность",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15032,
+			"name": "Небесная поэзия",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., создаёт <color=#FFFFFFFF>$[C115031]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 2 ед., создаёт <color=#FFFFFFFF>Область ветра</color>.",
+			"description": "Наносит Анемо урон, 2 ед., создаёт Область ветра.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15033,
+			"name": "Великая ода ветру",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., призывает помощника: <color=#FFFFFFFF>$[C115034]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 2 ед., призывает помощника: <color=#FFFFFFFF>Глаз бури</color>.",
+			"description": "Наносит Анемо урон, 2 ед., призывает помощника: Глаз бури.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

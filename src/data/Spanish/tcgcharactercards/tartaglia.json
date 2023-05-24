@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "Tartaglia",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Hydro",
+		"Arco",
+		"Fatui"
+	],
+	"storytitle": "Tartaglia - Nobile",
+	"storytext": "Los duelos de cartas son como la guerra: solo puede ganar el mejor.",
+	"source": "Se obtiene tras retar y ganar a Tartaglia en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "Torrente cortante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "Legado del mal: Olas furiosas",
+			"descriptionraw": "Cambia al estado de <color=#FFFFFFFF>$[C112042|s1]</color> e inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Cambia al estado de <color=#FFFFFFFF>combate cuerpo a cuerpo</color> e inflige 2 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Cambia al estado de combate cuerpo a cuerpo e inflige 2 pts. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "Caos: Obliteración",
+			"descriptionraw": "Realiza diferentes ataques dependiendo <color=#FFFFFFFF>de la posición de $[A1204]</color>:\\n<color=#FFFFFFFF>Combate a distancia - Flecha del caos:</color> inflige $[D__KEY__DAMAGE_4] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], restaura $[K310] +2 y aplica en el personaje objetivo el efecto de <color=#FFFFFFFF>$[C112043|s1]</color>.\\n<color=#FFFFFFFF>Combate cuerpo a cuerpo - Luz de obliteración:</color> inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Realiza diferentes ataques dependiendo <color=#FFFFFFFF>de la posición de Tartaglia</color>:\\n<color=#FFFFFFFF>Combate a distancia - Flecha del caos:</color> inflige 4 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>, restaura <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energía</color> +2 y aplica en el personaje objetivo el efecto de <color=#FFFFFFFF>obstrucción del flujo</color>.\\n<color=#FFFFFFFF>Combate cuerpo a cuerpo - Luz de obliteración:</color> inflige 4 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Realiza diferentes ataques dependiendo de la posición de Tartaglia:\nCombate a distancia - Flecha del caos: inflige 4 pts. de Daño Hydro, restaura Energía +2 y aplica en el personaje objetivo el efecto de obstrucción del flujo.\nCombate cuerpo a cuerpo - Luz de obliteración: inflige 4 pts. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "Retención de la Marea",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, este personaje entra en el estado de <color=#FFFFFFFF>$[C112041|s1]</color>.\\nCuando el personaje afectado salga del estado de <color=#FFFFFFFF>$[C112042|s1]</color>, vuelve a entrar en el estado de <color=#FFFFFFFF>$[C112041|s1]</color>.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, este personaje entra en el estado de <color=#FFFFFFFF>combate a distancia</color>.\\nCuando el personaje afectado salga del estado de <color=#FFFFFFFF>combate cuerpo a cuerpo</color>, vuelve a entrar en el estado de <color=#FFFFFFFF>combate a distancia</color>.",
+			"description": "Pasiva: cuando comienza el duelo, este personaje entra en el estado de combate a distancia.\nCuando el personaje afectado salga del estado de combate cuerpo a cuerpo, vuelve a entrar en el estado de combate a distancia.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "Combate a distancia",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "Retención de la Marea",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

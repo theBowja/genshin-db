@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "Tartaglia",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Nguyên Tố Thủy",
+		"Cung",
+		"Fatui"
+	],
+	"storytitle": "Childe - Tartaglia",
+	"storytext": "Ván bài cũng là chiến trường, người giỏi sẽ dẫn trước.",
+	"source": "Nhận được sau khi mời Tartaglia giao đấu trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong Đánh Giải Trí",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "Chém Mưa",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "Trang Phục Ma Vương - Thủy Triều",
+			"descriptionraw": "Đổi thành <color=#FFFFFFFF>$[C112042]</color>, sau đó gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Đổi thành <color=#FFFFFFFF>Cận Chiến</color>, sau đó gây 2 điểm {SPRITE_PRESET#2102}<color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color>.",
+			"description": "Đổi thành Cận Chiến, sau đó gây 2 điểm Sát Thương Nguyên Tố Thủy.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "Kỹ Năng Thượng Thừa - Ánh Sáng Tận Diệt",
+			"descriptionraw": "Căn cứ trạng thái hiện tại của <color=#FFFFFFFF>$[A1204]</color>, tiến hành các loại tấn công khác nhau:\\n<color=#FFFFFFFF>Trạng thái đánh xa - Đạn Ma:</color> Gây $[D__KEY__DAMAGE_4] điểm $[D__KEY__ELEMENT], hoàn trả 2 điểm $[K310], áp dụng <color=#FFFFFFFF>$[C112043]</color> cho nhân vật mục tiêu.\\n<color=#FFFFFFFF>Trạng thái cận chiến - Tận Diệt Thủy Quang:</color> Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Căn cứ trạng thái hiện tại của <color=#FFFFFFFF>Tartaglia</color>, tiến hành các loại tấn công khác nhau:\\n<color=#FFFFFFFF>Trạng thái đánh xa - Đạn Ma:</color> Gây 4 điểm {SPRITE_PRESET#2102}<color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color>, hoàn trả 2 điểm <color=#FFFFFFFF>{SPRITE_PRESET#1110}Năng Lượng</color>, áp dụng <color=#FFFFFFFF>Đoạn Lưu</color> cho nhân vật mục tiêu.\\n<color=#FFFFFFFF>Trạng thái cận chiến - Tận Diệt Thủy Quang:</color> Gây 4 điểm {SPRITE_PRESET#2102}<color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color>.",
+			"description": "Căn cứ trạng thái hiện tại của Tartaglia, tiến hành các loại tấn công khác nhau:\nTrạng thái đánh xa - Đạn Ma: Gây 4 điểm Sát Thương Nguyên Tố Thủy, hoàn trả 2 điểm Năng Lượng, áp dụng Đoạn Lưu cho nhân vật mục tiêu.\nTrạng thái cận chiến - Tận Diệt Thủy Quang: Gây 4 điểm Sát Thương Nguyên Tố Thủy.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "Ngăn Sóng",
+			"descriptionraw": "(Bị động) Khi bắt đầu chiến đấu, áp dụng <color=#FFFFFFFF>$[C112041]</color>.\\nKhi kết thúc hiệu quả <color=#FFFFFFFF>$[C112042]</color> mà nhân vật áp dụng, áp dụng lại <color=#FFFFFFFF>$[C112041]</color>.",
+			"descriptionreplaced": "(Bị động) Khi bắt đầu chiến đấu, áp dụng <color=#FFFFFFFF>Đánh Xa</color>.\\nKhi kết thúc hiệu quả <color=#FFFFFFFF>Cận Chiến</color> mà nhân vật áp dụng, áp dụng lại <color=#FFFFFFFF>Đánh Xa</color>.",
+			"description": "(Bị động) Khi bắt đầu chiến đấu, áp dụng Đánh Xa.\nKhi kết thúc hiệu quả Cận Chiến mà nhân vật áp dụng, áp dụng lại Đánh Xa.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "Đánh Xa",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "Ngăn Sóng",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		}
+	]
+}

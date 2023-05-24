@@ -1,0 +1,110 @@
+{
+	"id": 1204,
+	"name": "Tartaglia",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Su",
+		"Yay",
+		"Fatui"
+	],
+	"storytitle": "\"Asilzade\" Tartaglia",
+	"storytext": "Madem bu masa bir savaş alanı, o halde güçlü olan kazansın.",
+	"source": "Tartaglia'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 12041,
+			"name": "Keskin Sel",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12042,
+			"name": "Kötülüğün Mirası: Dalgaların Öfkesi",
+			"descriptionraw": "<color=#FFFFFFFF>$[C112042]</color> durumuna geçer ve $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>Yakın Saldırı Duruşu</color> durumuna geçer ve 2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "Yakın Saldırı Duruşu durumuna geçer ve 2 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12043,
+			"name": "Yıkım: Yok Etme",
+			"descriptionraw": "<color=#FFFFFFFF>$[A1204]</color>, mevcut duruşuna göre farklı saldırılar gerçekleştirir.\\n<color=#FFFFFFFF>Menzilli Saldırı Duruşu - Yıkım Atışı:</color> $[D__KEY__DAMAGE_4] $[D__KEY__ELEMENT] verir, 2 $[K310] kazanır ve hedef karaktere <color=#FFFFFFFF>$[C112043]</color> uygular.\\n<color=#FFFFFFFF>Yakın Saldırı Duruşu - Yok Eden Işık:</color> $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>Tartaglia</color>, mevcut duruşuna göre farklı saldırılar gerçekleştirir.\\n<color=#FFFFFFFF>Menzilli Saldırı Duruşu - Yıkım Atışı:</color> 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir, 2 <color=#FFFFFFFF>{SPRITE_PRESET#1110}Enerji</color> kazanır ve hedef karaktere <color=#FFFFFFFF>Dalga</color> uygular.\\n<color=#FFFFFFFF>Yakın Saldırı Duruşu - Yok Eden Işık:</color> 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "Tartaglia, mevcut duruşuna göre farklı saldırılar gerçekleştirir.\nMenzilli Saldırı Duruşu - Yıkım Atışı: 4 Su Hasarı verir, 2 Enerji kazanır ve hedef karaktere Dalga uygular.\nYakın Saldırı Duruşu - Yok Eden Işık: 4 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12044,
+			"name": "Dalga Tutan",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C112041]</color> kazanır. Bu karakterin kuşandığı <color=#FFFFFFFF>$[C112042]</color> sonlandığında <color=#FFFFFFFF>$[C112041]</color> yeniden uygulanır.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Menzilli Saldırı Duruşu</color> kazanır. Bu karakterin kuşandığı <color=#FFFFFFFF>Yakın Saldırı Duruşu</color> sonlandığında <color=#FFFFFFFF>Menzilli Saldırı Duruşu</color> yeniden uygulanır.",
+			"description": "(Pasif) Savaş başladığında bu karakter Menzilli Saldırı Duruşu kazanır. Bu karakterin kuşandığı Yakın Saldırı Duruşu sonlandığında Menzilli Saldırı Duruşu yeniden uygulanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 12045,
+			"name": "Menzilli Saldırı Duruşu",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 12046,
+			"name": "Dalga Tutan",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

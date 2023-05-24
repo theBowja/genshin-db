@@ -1,0 +1,78 @@
+{
+	"id": 1408,
+	"name": "Yae Miko",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalyst",
+		"Inazuma"
+	],
+	"storytitle": "\"Astute Amusement\" Yae Miko",
+	"storytext": "\"Yae Miko yang bijaksana dan cantik\"",
+	"source": "Didapatkan setelah mengundang Yae Miko ke Cat's Tail dan menang dalam Pertandingan Persahabatan melawannya",
+	"skills": [
+		{
+			"id": 14081,
+			"name": "Spiritfox Sin-Eater",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Mengakibatkan 1 poin Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14082,
+			"name": "Yakan Evocation: Sesshou Sakura",
+			"descriptionraw": "Memanggil <color=#FFFFFFFF>$[C114081]</color>.",
+			"descriptionreplaced": "Memanggil <color=#FFFFFFFF>Sesshou Sakura</color>.",
+			"description": "Memanggil Sesshou Sakura.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14083,
+			"name": "Great Secret Art: Tenko Kenshin",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]; Jika kamu punya <color=#FFFFFFFF>$[C114081]</color> di arena, maka akan dihancurkan lalu menciptakan <color=#FFFFFFFF>$[C114083]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 4 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>; Jika kamu punya <color=#FFFFFFFF>Sesshou Sakura</color> di arena, maka akan dihancurkan lalu menciptakan <color=#FFFFFFFF>Tenko Thunderbolt</color>.",
+			"description": "Mengakibatkan 4 poin Electro DMG; Jika kamu punya Sesshou Sakura di arena, maka akan dihancurkan lalu menciptakan Tenko Thunderbolt.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

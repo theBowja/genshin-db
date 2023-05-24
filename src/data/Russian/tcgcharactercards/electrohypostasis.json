@@ -1,0 +1,114 @@
+{
+	"id": 2401,
+	"name": "Электро гипостазис",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Электро",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "Электро гипостазис",
+	"storytext": "Кодовое название: Алеф. Высококонцентрированный Электро элемент.\nДаже в игре «Камень, ножницы, бумага» он не признает своего поражения.",
+	"source": "Награда за победу над Электро гипостазисом в Дружеской дуэли в «Кошкином хвосте»",
+	"skills": [
+		{
+			"id": 24011,
+			"name": "Кристаллическая проекция Электро",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед.",
+			"description": "Наносит Электро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "Тройное комбо",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S24015]</color> и <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Тройное комбо: Ножницы</color> и <color=#FFFFFFFF>Тройное комбо: Бумага</color>.",
+			"description": "Наносит Электро урон, 2 ед., после чего начинается Подготовка навыка: Тройное комбо: Ножницы и Тройное комбо: Бумага.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "В тисках молний",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C124013]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед. и призывает помощника: <color=#FFFFFFFF>Громовые оковы</color>.",
+			"description": "Наносит Электро урон, 2 ед. и призывает помощника: Громовые оковы.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24014,
+			"name": "Кристальное ядро Электро",
+			"descriptionraw": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>$[C124014]</color>.",
+			"descriptionreplaced": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>Кристальное ядро Электро</color>.",
+			"description": "(Пассивный) В начале сражения у персонажа будет Кристальное ядро Электро.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "Тройное комбо: Ножницы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Тройное комбо: Бумага</color>.",
+			"description": "Наносит Электро урон, 2 ед., после чего начинается Подготовка навыка: Тройное комбо: Бумага.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "Тройное комбо: Бумага",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед.",
+			"description": "Наносит Электро урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": []
+		}
+	]
+}
