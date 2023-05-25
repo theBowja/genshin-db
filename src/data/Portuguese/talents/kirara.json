@@ -1,0 +1,210 @@
+{
+	"name": "Kirara",
+	"combat1": {
+		"name": "Ataque Normal: Estilete",
+		"info": "**Ataque Normal**\nRealiza até 4 golpes rápidos.\n\n**Ataque Carregado**\nConsome uma certa quantidade de Stamina para desferir 3 golpes rápidos com suas garras.\n\n**Ataque Imersivo**\nMergulha em pleno ar para golpear o chão, causando Dano aos inimigos ao longo do caminho e infligindo Dano em AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}+{param4:F1P}",
+				"Dano do 4° Golpe|{param5:F1P}",
+				"Dano de Ataque Carregado|{param6:F1P}+{param7:F1P}+{param8:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param9:F1}",
+				"Dano Durante a Queda|{param10:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Chute Miauteoro",
+		"info": "**Pressionar**\nPula em direção ao ar com toda a agilidade de um gato, atravessando arbustos e atingindo seus inimigos com a Cauda Voadora, causando Dano Dendro em AdE e criando um Escudo de Transporte Seguro. Isso também aplica Dendro a Kirara por um curto período de tempo. O Escudo de Transporte Seguro absorve Dano Dendro com 250% de efetividade. A absorção máxima de Dano do Escudo é baseada na Vida Máxima de Kirara e não pode exceder uma determinada proporção da sua Vida Máxima. A Absorção de Dano restante do Escudo de Transporte Seguro acumula quando um novo Escudo é criado e sua duração é redefinida.\n\n**Manter Pressionado**\nCom o seu vigor de \"entregar em até metade de um dia\", cria outro Escudo de Transporte Seguro igual ao de Pressionar, e se encolhe em um pacote de entrega especial, entrando no Estado Neko de Entregas Urgentes para se mover e lutar com maior velocidade.\n\n**Estado Neko de Entregas Urgentes**\n· Causa Dano Dendro aos oponentes que ela atropela. Este efeito pode ser ativado uma vez a cada 0.5s por oponente.\n· Enquanto estiver neste estado, a Vel. Mov., Vel. Escalada e força do pulo são aumentadas, o seu consumo de Stamina ao escalar também é aumentado.\n· Quando a duração acaba ou a habilidade é usada novamente, um Golpe de Garra Invertida mais poderoso que o ataque no modo de Pressionar é lançado, causando Dano Dendro em AdE.\n· O Estado Neko de Entregas Urgentes tem a duração máxima de 10s. Quando o Estado acaba, a habilidade entrará em recarga. Quanto mais tempo Kirara passar neste estado, maior será a recarga dele.\n· Correr ou cancelar uma escalada durante o Estado Neko de Entrega Urgentes fará com que ele termine antes.",
+		"description": "\"Você quer saber o segredo das entregas rápidas? Bem, tudo depende da força nas suas pernas!\"",
+		"attributes": {
+			"labels": [
+				"Dano da Cauda Voadora|{param1:F1P}",
+				"Absorção de Escudo|{param2:F1P} do Limite da Vida Máxima + {param3:I}",
+				"Absorção Máxima do Escudo|{param4:F1P} do Limite da Vida Máxima + {param5:I}",
+				"Duração do Escudo|{param6:F1}s",
+				"Dano de acerto do Estado Neko de Entregas Urgentes|{param7:F1P}",
+				"Duração Máxima do Estado Neko de Entregas Urgentes|{param8:F1}s",
+				"Dano de Golpe de Garra Invertida|{param9:F1P}",
+				"Tempo de Recarga|{param10:F1}s até {param11:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Arte Secreta: Entrega Urgente",
+		"info": "Envia um Pacote de Entrega Especial urgente para os ladrões que devem ser punidos, causando Dano Dendro em AdE. Quando um Pacote de Entrega Especial explode, ele será dividido em várias **Ervas de Gato Cardamomo** que explodirão e causarão dano ao entrar em contato com oponentes ou após um tempo determinado, causando Dano Dendro em AdE.",
+		"description": "\"Hihi, é isso mesmo, preparei isso exclusivamente para lidar com ladrões de encomendas! Lembre-se de me dar 5 estrelas assim que receber a sua!\"",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Dano de Explosão da Erva de Gato Cardamomo|{param2:F1P}",
+				"Duração de Erva de Gato Cardamomo|{param3:F1}s",
+				"Recarga|{param4:F1}s",
+				"Energia Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Cauda Exorcizante",
+		"info": "Quando Kirara entra no Estado Neko de Entregas Urgentes do **Chute Miauteoro**, cada impacto contra um oponente fornecerá um acúmulo de **Pacotes Reforçados**. Este efeito pode ser ativado uma vez em cada oponente a cada 0.5s, podendo acumular até 3 vezes. Quando o Estado Neko de Entregas Urgentes acaba, cada acúmulo de Pacotes Reforçados criará 1 Escudo de Transporte Seguro para Kirara. Os Escudos criados desta maneira terão 20% da absorção de Dano do Escudo de Transporte Seguro criado pelo **Chute Miauteoro**. Se Kirara já estiver protegida por um Escudo de Transporte Seguro criado pelo Chute Miauteoro, a absorção de Dano acumula com esses escudos e sua duração será redefinida."
+	},
+	"passive2": {
+		"name": "Deslumbre Oportuno",
+		"info": "Cada 1.000 de Vida Máxima que Kirara possuir, aumentará o Dano causado por **Chute Miauteoro** em 0.4% e o Dano causado por **Arte Secreta: Entrega Urgente** em 0.3%."
+	},
+	"passive3": {
+		"name": "Carruagem do Gato Furtivo",
+		"info": "Quando Kirara está na equipe, os membros da equipe que se aproximarem de pequenos animais que possam produzir Carne de Ave, Carne Crua ou Carne Fresca Fria, não os assustarão facilmente."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos do Mundo Mortal",
+				"count": 3
+			},
+			{
+				"name": "Casca Espectral",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 2
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 4
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 6
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia do Mundo Mortal",
+				"count": 9
+			},
+			{
+				"name": "Coração Espectral",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 4
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 4
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 6
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 6
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 12
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 9
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia do Mundo Mortal",
+				"count": 16
+			},
+			{
+				"name": "Núcleo Espectral",
+				"count": 12
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

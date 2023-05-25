@@ -1,0 +1,210 @@
+{
+	"name": "Kirara",
+	"combat1": {
+		"name": "Normal Attack: Boxcutter",
+		"info": "**Normal Attack**\nMelancarkan hingga 4 serangan berturut-turut.\n\n**Charged Attack**\nMengonsumsi sejumlah Stamina untuk melancarkan 3 serangan cakar yang cepat.\n\n**Plunging Attack**\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG Area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}+{param4:F1P}",
+				"DMG Tahap 4|{param5:F1P}",
+				"DMG Charged Attack|{param6:F1P}+{param7:F1P}+{param8:F1P}",
+				"Konsumsi Stamina Charged Attack|{param9:F1}",
+				"DMG Selama Plunging|{param10:F1P}",
+				"DMG Plunging Attack Min./Maks.|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Meow-teor Kick",
+		"info": "**Mode Tekan**\nMelompat ke udara dengan lincah layaknya seekor kucing yang berlari di antara semak-semak, dan menggunakan tendangan jungkir baliknya untuk menghantam musuhnya dengan keras dan mengakibatkan Dendro DMG Area sambil menciptakan sebuah perisai Shield of Safe Transport. Perisai ini juga akan memberikan efek Dendro singkat terhadap Kirara untuk sesaat. Perisai Shield of Safe Transport memiliki 250% pertahanan terhadap Dendro DMG. Ketahanan perisai Shield of Safe Transport akan didasarkan pada Max HP Kirara dan tidak bisa melebihi persentase tertentu dari Max HP Kirara. Sisa ketahanan DMG dari perisai Shield of Safe Transport akan ditumpuk ke perisai yang baru saat perisai ini diciptakan kembali, durasi perisainya juga akan diperbarui.\n\n**Mode Tahan**\nKirara membentuk sebuah perisai yang sama persis dengan Shield of Safe dari Mode Tekan skill ini karena keinginannya untuk \"mengantar paket dalam setengah hari\". Dia juga akan berubah menjadi sebuah kotak pengantaran ekspres spesial dan memasuki status Urgent Neko Parcel agar bisa bergerak dan bertarung dengan lebih lincah.\n\n**Status Urgent Neko Parcel**\n·Mengakibatkan Dendro DMG pada musuh yang ditabraknya. Efek ini dapat terpicu kepada setiap musuh sekali setiap 0,5 detik.\n·Saat berada dalam status ini, Movement Speed, kecepatan memanjat, dan kemampuan melompat Kirara akan meningkat. Stamina yang diperlukan untuk memanjat juga akan meningkat.\n·Setelah durasinya berakhir atau skill ini dilancarkan sekali lagi, Kirara akan melancarkan Flipclaw Strike yang lebih kuat dari serangan Mode Tekan dan mengakibatkan Dendro DMG Area.\n·Status Urgent Neko Parcel akan bertahan maksimum 10 detik. Skill akan memasuki cooldown setelah status ini berakhir. Semakin lama Kirara berada dalam status ini, maka semakin lama pula cooldown skill ini.\n·Berlari atau menghentikan status memanjat selama status ini berlangsung akan langsung membatalkan status Urgent Neko Parcel.",
+		"description": "\"Mau tahu rahasia pengiriman paket cepat? Yah, rahasianya ada di kekuatan kaki!\"",
+		"attributes": {
+			"labels": [
+				"DMG Tendangan Jungkir Balik|{param1:F1P}",
+				"Pertahanan Perisai|{param2:F1P} Max HP+{param3:I}",
+				"Batas Pertahanan Perisai|{param4:F1P} Max HP + {param5:I}",
+				"Durasi Perisai|{param6:F1} dtk",
+				"DMG Tabrakan Urgent Neko Parcel|{param7:F1P}",
+				"Durasi Maksimum Urgent Neko Parcel|{param8:F1} dtk",
+				"DMG Flipclaw Strike|{param9:F1P}",
+				"Cooldown|{param10:F1}-{param11:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Secret Art: Surprise Dispatch",
+		"info": "Membanting Special Delivery Package untuk menghukum pencuri yang perlu diberi pelajaran dan mengakibatkan Dendro DMG Area. Setelah meledak, Special Delivery Package akan pecah menjadi banyak **Cat Grass Cardamom** yang akan meledak saat tersentuh oleh musuh atau setelah kurun waktu tertentu, dan mengakibatkan Dendro DMG Area.",
+		"description": "\"Heheh, benar sekali! Yang satu ini dibuat khusus untuk menghukum pencuri-pencuri paket itu! Jangan lupa kasih bintang lima setelah terima paketnya yah!\"",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"DMG Ledakan Cat Grass Cardamom|{param2:F1P}",
+				"Durasi Cat Grass Cardamom|{param3:F1} dtk",
+				"Cooldown|{param4:F1} dtk",
+				"Konsumsi Energy|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Bewitching, Betwitching Tails",
+		"info": "Saat Kirara berada dalam status Urgent Neko Parcel dari skill **Meow-teor Kick**, Kirara akan mendapatkan satu lapis **Reinforced Packaging** setiap kali menabrak musuh. Efek ini dapat terpicu maksimum satu kali setiap 0,5 detik terhadap setiap musuh dan dapat ditumpuk hingga 3 lapis. Saat status Urgent Neko Parcel berakhir, setiap lapis Reinforced Packaging akan membentuk satu buah perisai Shield of Safe Transport untuk Kirara. Perisai yang terbentuk dengan cara ini memiliki ketahanan DMG sebesar 20% dari Shield of Safe Transport yang terbentuk dari skill **Meow-teor Kick**. Jika Kirara sudah berada dalam perlindungan perisai Shield of Safe Transport yang tercipta dari skill Meow-teor Kick, maka sisa ketahanan DMG perisai akan ditumpuk menjadi satu dan durasinya akan diperbarui."
+	},
+	"passive2": {
+		"name": "Pupillary Variance",
+		"info": "Untuk setiap 1.000 poin Max HP Kirara, DMG yang diakibatkan **Meow-teor Kick** akan meningkat 0,4% dan DMG yang diakibatkan **Secret Art: Surprise Dispatch** akan meningkat 0,3%."
+	},
+	"passive3": {
+		"name": "Cat's Creeping Carriage",
+		"info": "Saat Kirara berada dalam party, hewan yang dapat menghasilkan Fowl, Raw Meat, dan Chilled Meat tidak akan mudah terkejut saat didekati oleh anggota party sendiri."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Transience",
+				"count": 3
+			},
+			{
+				"name": "Spectral Husk",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 2
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 4
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 6
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 9
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 4
+			},
+			{
+				"name": "Specter Nucleus",
+				"count": 4
+			},
+			{
+				"name": "Everamber",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 6
+			},
+			{
+				"name": "Specter Nucleus",
+				"count": 6
+			},
+			{
+				"name": "Everamber",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 12
+			},
+			{
+				"name": "Specter Nucleus",
+				"count": 9
+			},
+			{
+				"name": "Everamber",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 16
+			},
+			{
+				"name": "Specter Nucleus",
+				"count": 12
+			},
+			{
+				"name": "Everamber",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}
