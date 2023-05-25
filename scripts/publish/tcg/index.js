@@ -21,7 +21,7 @@ for (let [key, value] of Object.entries(replacementpackagejson))
 helper.writeFile('./package.json', JSON.stringify(packagejson, null, '\t'));
 
 // Build genshin-db and re-generate dynamic files.
-execSync('node ./generate.js tcg', { cwd: 'scripts/generate', stdio: [0, 1, 2] });
+execSync('npm run combineData tcg', { stdio: [0, 1, 2] });
 
 // Publish the scoped package.
 execSync('npm publish --access public', { stdio:[0, 1, 2] });
