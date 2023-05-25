@@ -1,0 +1,210 @@
+{
+	"name": "Kirara",
+	"combat1": {
+		"name": "Ataque Normal: Kirigami",
+		"info": "**Ataque Normal**\nRealiza hasta 4 ataques consecutivos.\n\n**Ataque Cargado**\nConsume cierta cantidad de Aguante para ejecutar tres zarpazos hacia delante.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P} + {param4:F1P}",
+				"Daño de 4.º golpe|{param5:F1P}",
+				"Ataque Cargado|{param6:F1P} + {param7:F1P} + {param8:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param9:F1} pts.",
+				"Daño de Caída|{param10:F1P}",
+				"Daño de impacto de caída baja/alta|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Nekopatada voladora",
+		"info": "**Pulsar una vez**\nSalta con la destreza de un gato que se mueve entre la maleza y golpea al enemigo con una patada voladora que inflige Daño Dendro en el AdE. A su vez, crea un escudo de transporte seguro que aplica Dendro sobre Kirara durante un corto periodo de tiempo y tiene un 250% de efectividad de absorción de Daño Dendro. La cantidad de absorción de daño del escudo aumenta en función de la Vida Máx. de Kirara, y no superará cierto porcentaje de dicha Vida Máx. La absorción de daño restante del escudo podrá acumularse con la otorgada por un nuevo escudo de transporte seguro, reiniciando su duración.\n\n**Mantener pulsado**\nReúne la determinación de una repartidora entregada a su trabajo para crear un escudo de transporte seguro idéntico al que obtiene al pulsar una vez y se acurruca en una caja de entrega especial, lo que hace que Kirara entre en el estado de “paquete minino” para moverse y pelear más velozmente.\n\n**Paquete minino**\n·Inflige Daño Dendro a los enemigos contra los que impacta. Este efecto solo puede ocurrir una vez cada 0.5 s por cada enemigo.\n·En este estado, la Vel. Movimiento, Vel. de Escalada y la capacidad de salto de Kirara aumentan, pero el Coste de Aguante al escalar también es mayor.\n·Cuando termina la duración o esta habilidad se vuelve a usar, ejecuta un zarpazo más poderoso que el de pulsar una vez, y que inflige Daño Dendro en el AdE.\n·El estado de paquete minino tiene una duración máxima de 10 s y, cuando el efecto termina, la habilidad entra en TdE. Cuanto más tiempo permanezca Kirara en este estado, mayor será el TdE.\n·Esprintar o dejar de escalar cancelará este estado.",
+		"description": "“¿Quieres saber cuál es el secreto para entregar algo tan rápidamente? Evidentemente, ¡la clave está en las patas!”.",
+		"attributes": {
+			"labels": [
+				"Daño de patada voladora|{param1:F1P}",
+				"Absorción de daño del escudo|{param2:F1P} de Vida Máx. + {param3:I}",
+				"Absorción de daño máx. del escudo|{param4:F1P} de Vida Máx. + {param5:I}",
+				"Duración del escudo|{param6:F1} s",
+				"Daño de impacto de paquete minino|{param7:F1P}",
+				"Duración máxima de paquete minino|{param8:F1} s",
+				"Daño de zarpazo|{param9:F1P}",
+				"TdE|{param10:F1}-{param11:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Técnica secreta: Entrega sorpresa",
+		"info": "Utiliza un paquete especial antiladrones para castigar y aplastar a sus enemigos e infligir Daño Dendro en el AdE. Cuando el paquete explota, se divide en múltiples **briznas cardamiau-miau**, las cuales a su vez explotan cuando entran en contacto con un enemigo o tras un periodo de tiempo e infligen Daño Dendro en el AdE.",
+		"description": "“Jeje, esto es para los que les gusta robar paquetes. Delincuentes, ¡no olviden dejar una reseña de 5 estrellas tras recibir el suyo!”.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de explosión de briznas cardamiau-miau|{param2:F1P}",
+				"Duración de briznas cardamiau-miau|{param3:F1} s",
+				"TdE|{param4:F1} s",
+				"Energía Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Cola exorcizadora",
+		"info": "Cuando Kirara se encuentra en el estado de paquete minino de **Nekopatada voladora**, cada impacto contra un oponente otorga una carga de **paquete reforzado**. Este efecto solo puede ocurrir una vez cada 0.5 s por cada enemigo impactado y puede acumularse hasta 3 veces. Cuando termina el estado de paquete minino, cada carga de paquete reforzado otorga a Kirara un escudo de transporte seguro con una absorción de daño equivalente al 20% de la que tendría un escudo obtenido al utilizar **Nekopatada voladora**. Si Kirara ya se encuentra bajo la protección de un escudo de transporte seguro de Nekopatada voladora, su absorción de daño restante se acumula y su duración se reinicia."
+	},
+	"passive2": {
+		"name": "Distracción oportuna",
+		"info": "Por cada 1000 pts. de Vida Máx. que tenga Kirara, el daño infligido por **Nekopatada voladora** aumenta en un 0.4%, y el de **Técnica secreta: Entrega sorpresa** aumenta en un 0.3%."
+	},
+	"passive3": {
+		"name": "Acecho furtivo",
+		"info": "Cuando Kirara está en el equipo, tus personajes no asustarán a los animales de los que se puede obtener carne de ave, carne cruda y carne congelada."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la transitoriedad",
+				"count": 3
+			},
+			{
+				"name": "Caparazón espectral",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 2
+			},
+			{
+				"name": "Corazón espectral",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 4
+			},
+			{
+				"name": "Corazón espectral",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 6
+			},
+			{
+				"name": "Corazón espectral",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la transitoriedad",
+				"count": 9
+			},
+			{
+				"name": "Corazón espectral",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 4
+			},
+			{
+				"name": "Núcleo espectral",
+				"count": 4
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 6
+			},
+			{
+				"name": "Núcleo espectral",
+				"count": 6
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 12
+			},
+			{
+				"name": "Núcleo espectral",
+				"count": 9
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la transitoriedad",
+				"count": 16
+			},
+			{
+				"name": "Núcleo espectral",
+				"count": 12
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

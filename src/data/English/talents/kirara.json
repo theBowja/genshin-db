@@ -1,0 +1,210 @@
+{
+	"name": "Kirara",
+	"combat1": {
+		"name": "Normal Attack: Boxcutter",
+		"info": "**Normal Attack**\nPerforms up to 4 rapid strikes.\n\n**Charged Attack**\nConsumes a certain amount of Stamina to unleash 3 rapid claw strikes.\n\n**Plunging Attack**\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}+{param4:F1P}",
+				"4-Hit DMG|{param5:F1P}",
+				"Charged Attack DMG|{param6:F1P}+{param7:F1P}+{param8:F1P}",
+				"Charged Attack Stamina Cost|{param9:F1}",
+				"Plunge DMG|{param10:F1P}",
+				"Low/High Plunge DMG|{param11:P}/{param12:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Meow-teor Kick",
+		"info": "**Press**\nLeaps into the air with all the agility of a cat passing through the bushes, and thwacks her foes with a flying kick that deals AoE Dendro DMG while creating a Shield of Safe Transport. This will also briefly apply Dendro to Kirara. The shield will absorb Dendro DMG with 250% effectiveness. The shield's DMG absorption will be based on Kirara's Max HP and will not exceed a certain percentage of that Max HP. The remaining DMG absorption on a Shield of Safe Transport will stack on a new one when it is created, and its duration will reset.\n\n**Hold**\nOut of her desire to \"deliver within half a day,\" Kirara deploys a Shield of Safe Transport identical to the one that can be created by pressing the skill. She will also curl up into a special express delivery box, entering the Urgent Neko Parcel state in order to move and fight more swiftly.\n\n**Urgent Neko Parcel**\n· Deals Dendro DMG to opponents she crashes into. This effect can be triggered once on each opponent every 0.5s.\n· When in this state, Kirara's movement speed, climbing speed, and jumping power are all increased, and her Stamina Consumption from climbing is increased.\n· When the duration ends or the skill is used again, a Flipclaw Strike more powerful than the attack in the Press Mode will be unleashed, dealing AoE Dendro DMG.\n· The Urgent Neko Parcel state lasts a maximum of 10s. When the state ends, the skill will enter CD. The longer Kirara spends in this state, the longer the CD will be.\n· Sprinting or actively canceling climbing will end this state early.",
+		"description": "\"So you wanna know the secret to speedy deliveries? Well, it's all in the legs!\"",
+		"attributes": {
+			"labels": [
+				"Tail-Flicking Flying Kick DMG|{param1:F1P}",
+				"Shield DMG Absorption|{param2:F1P} Max HP+{param3:I}",
+				"Max Shield DMG Absorption|{param4:F1P} Max HP+{param5:I}",
+				"Shield Duration|{param6:F1}s",
+				"Urgent Neko Parcel Hit DMG|{param7:F1P}",
+				"Max Urgent Neko Parcel Duration|{param8:F1}s",
+				"Flipclaw Strike DMG|{param9:F1P}",
+				"CD|{param10:F1}s – {param11:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Secret Art: Surprise Dispatch",
+		"info": "Smash opponents with a Special Delivery Package used for punishing parcel thieves, dealing AoE Dendro DMG. After the Special Delivery Package explodes, it will split up into many **Cat Grass Cardamoms** that will explode either upon contact with opponents or after a period of time, dealing AoE Dendro DMG.",
+		"description": "\"Hehe, that's right, this stuff was made to deal with those parcel thieves! Remember to leave a 5-star rating once you've received yours!\"",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:F1P}",
+				"Cat Grass Cardamom Explosion DMG|{param2:F1P}",
+				"Cat Grass Cardamom Duration|{param3:F1}s",
+				"CD|{param4:F1}s",
+				"Energy Cost|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Bewitching, Betwitching Tails",
+		"info": "When Kirara is in the Urgent Neko Parcel state of **Meow-teor Kick**, each impact against an opponent will grant her a stack of **Reinforced Packaging**. This effect can be triggered once for each opponent hit every 0.5s. Max 3 stacks. When the Urgent Neko Parcel state ends, each stack of Reinforced Packaging will create 1 Shield of Safe Transport for Kirara. The shields that are created this way will have 20% of the DMG absorption that the Shield of Safe Transport produced by **Meow-teor Kick** would have. If Kirara is already protected by a Shield of Safe Transport created by Meow-teor Kick, its DMG absorption will stack with these shields and its duration will reset."
+	},
+	"passive2": {
+		"name": "Pupillary Variance",
+		"info": "Every 1,000 Max HP Kirara possesses will increase the DMG dealt by **Meow-teor Kick** by 0.4%, and the DMG dealt by **Secret Art: Surprise Dispatch** by 0.3%."
+	},
+	"passive3": {
+		"name": "Cat's Creeping Carriage",
+		"info": "When Kirara is in the party, animals who produce Fowl, Raw Meat, or Chilled Meat will not be startled when party members approach them."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Transience",
+				"count": 3
+			},
+			{
+				"name": "Spectral Husk",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 2
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 4
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 6
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Transience",
+				"count": 9
+			},
+			{
+				"name": "Spectral Heart",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 4
+			},
+			{
+				"name": "Spectral Nucleus",
+				"count": 4
+			},
+			{
+				"name": "Everamber",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 6
+			},
+			{
+				"name": "Spectral Nucleus",
+				"count": 6
+			},
+			{
+				"name": "Everamber",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 12
+			},
+			{
+				"name": "Spectral Nucleus",
+				"count": 9
+			},
+			{
+				"name": "Everamber",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Transience",
+				"count": 16
+			},
+			{
+				"name": "Spectral Nucleus",
+				"count": 12
+			},
+			{
+				"name": "Everamber",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}
