@@ -706,9 +706,9 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // checkExistingImageBlacklist = true; // 
 gameVersion = "3.7"; // new data will use this as added version
 
-// importData('characters', collateCharacter);
-// importCurve('characters');
-// getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site
+importData('characters', collateCharacter);
+importCurve('characters');
+// getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
