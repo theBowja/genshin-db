@@ -1,0 +1,87 @@
+{
+	"id": 3604,
+	"name": "Tirailleur Fatui - Mercenaire Géo",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Géo",
+		"Autre arme",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 36041,
+			"name": "Projectile de roche",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>.",
+			"description": "Inflige 1 pt de DGT Géo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 36042,
+			"name": "Rayon calcaire",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>.",
+			"description": "Inflige 3 pts de DGT Géo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 36043,
+			"name": "Bâton de poussières",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], accorde un <color=#FFFFFFFF>$[C136041|s2]</color> au personnage et crée un <color=#FFFFFFFF>$[C136042|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>, accorde un <color=#FFFFFFFF>équipement Géo</color> au personnage et crée un <color=#FFFFFFFF>bouclier de cristal</color>.",
+			"description": "Inflige 3 pts de DGT Géo, accorde un équipement Géo au personnage et crée un bouclier de cristal.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 36044,
+			"name": "Réapprovisionnement de combat",
+			"descriptionraw": "(Passif) Accorde 2 charges au personnage au début du combat.",
+			"descriptionreplaced": "(Passif) Accorde 2 charges au personnage au début du combat.",
+			"description": "(Passif) Accorde 2 charges au personnage au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

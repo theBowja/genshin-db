@@ -1,0 +1,117 @@
+{
+	"id": 3401,
+	"name": "Kairagi: Dans Eden Yıldırım",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_KAIRAGI"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Diğer Silahlar",
+		"Kairagi"
+	],
+	"skills": [
+		{
+			"id": 34011,
+			"name": "Üçlü Kesik",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34012,
+			"name": "Sıçrama Darbesi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "3 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34013,
+			"name": "İai: Kınına Sokma",
+			"descriptionraw": "$[K53]: <color=#FFFFFFFF>$[S34016]</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Beceri Hazırlama</color>: <color=#FFFFFFFF>İai: Fırtına Nefesi</color>.",
+			"description": "Beceri Hazırlama: İai: Fırtına Nefesi.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34014,
+			"name": "Kamuna Tılsımı: Elektrik",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C134011]</color> etkisi kazanır.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Kamuna Tılsımı: Elektrik</color> etkisi kazanır.",
+			"description": "(Pasif) Savaş başladığında bu karakter Kamuna Tılsımı: Elektrik etkisi kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 34015,
+			"name": "Umutsuz Çılgınlık",
+			"descriptionraw": "Diğer Kairagi karakterin yenildiğinde, bu karakter <color=#FFFFFFFF>$[C134012]</color> kazanır.",
+			"descriptionreplaced": "Diğer Kairagi karakterin yenildiğinde, bu karakter <color=#FFFFFFFF>Umutsuz Çılgınlık</color> kazanır.",
+			"description": "Diğer Kairagi karakterin yenildiğinde, bu karakter Umutsuz Çılgınlık kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 34016,
+			"name": "İai: Fırtına Nefesi",
+			"descriptionraw": "(2 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(2 Tur hazırlanır)\\n6 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "(2 Tur hazırlanır)\n6 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		},
+		{
+			"id": 34017,
+			"name": "İai: Soluklanma",
+			"descriptionraw": "(1 Tur hazırlanır)\\nSonraki turda <color=#FFFFFFFF>$[S34016]</color> Becerisi kullanılır.",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\nSonraki turda <color=#FFFFFFFF>İai: Fırtına Nefesi</color> Becerisi kullanılır.",
+			"description": "(1 Tur hazırlanır)\nSonraki turda İai: Fırtına Nefesi Becerisi kullanılır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		}
+	]
+}

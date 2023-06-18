@@ -1,0 +1,107 @@
+{
+	"id": 5201,
+	"name": "물의 심연 메이지",
+	"hp": 6,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"물 원소",
+		"그 외 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 32011,
+			"name": "물폭탄",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다.",
+			"description": "물 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32012,
+			"name": "포영의 마법",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>$[C132011]</color>이 부착된다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>물방울</color>이 부착된다.",
+			"description": "물 원소 피해를 1pt 주고 대상 캐릭터에게 물방울이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32013,
+			"name": "환영 생멸의 의식",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>$[C132011]</color>이 부착된다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 4pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>물방울</color>이 부착된다.",
+			"description": "물 원소 피해를 4pt 주고 대상 캐릭터에게 물방울이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32014,
+			"name": "물 원소 보호막",
+			"descriptionraw": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>$[C132012]</color>이 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>물 원소 보호막</color>이 부착된다.",
+			"description": "[패시브] 전투 시작 시, 처음부터 물 원소 보호막이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 32015,
+			"name": "보호막 파괴",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 32016,
+			"name": "심연 가호",
+			"descriptionraw": "[패시브] 보호막이 파괴된 상태에서 스킬 사용 후: <color=#FFFFFFFF>$[C132012]</color>이 다시 부착된다.",
+			"descriptionreplaced": "[패시브] 보호막이 파괴된 상태에서 스킬 사용 후: <color=#FFFFFFFF>물 원소 보호막</color>이 다시 부착된다.",
+			"description": "[패시브] 보호막이 파괴된 상태에서 스킬 사용 후: 물 원소 보호막이 다시 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

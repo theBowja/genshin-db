@@ -1,0 +1,105 @@
+{
+	"id": 3405,
+	"name": "野伏·機巧番",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器"
+	],
+	"skills": [
+		{
+			"id": 34051,
+			"name": "連続斬り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34052,
+			"name": "機工雷弩",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。",
+			"description": "雷元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30033,
+			"name": "居合·納刀",
+			"descriptionraw": "本キャラは$[K53]に入る：<color=#FFFFFFFF>$[S30034]</color>。",
+			"descriptionreplaced": "本キャラは<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>居合·前</color>。",
+			"description": "本キャラはスキル準備に入る：居合·前。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30034,
+			"name": "居合·前",
+			"descriptionraw": "（2ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "（2ターン準備必要）\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を6与える。",
+			"description": "（2ターン準備必要）\n物理ダメージを6与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 30035,
+			"name": "居合·吐納",
+			"descriptionraw": "（1ターン準備必要）\\n次のラウンドでスキル<color=#FFFFFFFF>$[S30034]</color>を発動する。",
+			"descriptionreplaced": "（1ターン準備必要）\\n次のラウンドでスキル<color=#FFFFFFFF>居合·前</color>を発動する。",
+			"description": "（1ターン準備必要）\n次のラウンドでスキル居合·前を発動する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 30036,
+			"name": "残心",
+			"descriptionraw": "【固有】エンドフェーズ：このキャラは「出撃キャラ」の場合、チャージを1獲得する。",
+			"descriptionreplaced": "【固有】エンドフェーズ：このキャラは「出撃キャラ」の場合、チャージを1獲得する。",
+			"description": "【固有】エンドフェーズ：このキャラは「出撃キャラ」の場合、チャージを1獲得する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

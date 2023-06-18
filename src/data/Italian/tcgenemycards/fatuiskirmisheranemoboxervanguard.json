@@ -1,0 +1,97 @@
+{
+	"id": 3502,
+	"name": "Schermagliatore dei Fatui Anemopugile d'assalto",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Anemo",
+		"Altre armi",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 35021,
+			"name": "Raffica sferzante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35022,
+			"name": "Adunata dei venti",
+			"descriptionraw": "Questo personaggio ottiene una <color=#FFFFFFFF>$[C135021]</color>. $[K53]: <color=#FFFFFFFF>$[S35025]</color>.",
+			"descriptionreplaced": "Questo personaggio ottiene una <color=#FFFFFFFF>Barriera vento di tempesta</color>. <color=#FFFFFFFF>Prepara abilità</color>: <color=#FFFFFFFF>Sferzata violenta</color>.",
+			"description": "Questo personaggio ottiene una Barriera vento di tempesta. Prepara abilità: Sferzata violenta.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 35023,
+			"name": "Istigazione della tempesta",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Tutti gli altri Fatui che controlli ottengono 1 punto di $[K310].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color>. Tutti gli altri Fatui che controlli ottengono 1 punto di <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energia</color>.",
+			"description": "Infligge 3 DAN da Anemo. Tutti gli altri Fatui che controlli ottengono 1 punto di Energia.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35024,
+			"name": "Barriera vento di tempesta",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		},
+		{
+			"id": 35025,
+			"name": "Sferzata violenta",
+			"descriptionraw": "(Prepara per 1 turno)\\nInfligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Prepara per 1 turno)\\nInfligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "(Prepara per 1 turno)\nInfligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": []
+		}
+	]
+}

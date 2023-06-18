@@ -1,0 +1,117 @@
+{
+	"id": 3401,
+	"name": "海乱鬼·雷騰",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_KAIRAGI"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器",
+		"海乱鬼"
+	],
+	"skills": [
+		{
+			"id": 34011,
+			"name": "三位斬り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34012,
+			"name": "登龍斬り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を3与える。",
+			"description": "物理ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34013,
+			"name": "居合·納刀",
+			"descriptionraw": "本キャラは$[K53]に入る：<color=#FFFFFFFF>$[S34016]</color>。",
+			"descriptionreplaced": "本キャラは<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>居合·霆息</color>。",
+			"description": "本キャラはスキル準備に入る：居合·霆息。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34014,
+			"name": "惟神召符·煌",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C134011]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>惟神召符·煌</color>が付与される。",
+			"description": "【固有】戦闘開始時、惟神召符·煌が付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 34015,
+			"name": "絶境狂乱",
+			"descriptionraw": "味方の他の「海乱鬼」キャラが倒された時、このキャラに<color=#FFFFFFFF>$[C134012]</color>を付与する。",
+			"descriptionreplaced": "味方の他の「海乱鬼」キャラが倒された時、このキャラに<color=#FFFFFFFF>絶境狂乱</color>を付与する。",
+			"description": "味方の他の「海乱鬼」キャラが倒された時、このキャラに絶境狂乱を付与する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 34016,
+			"name": "居合·霆息",
+			"descriptionraw": "（2ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "（2ターン準備必要）\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を6与える。",
+			"description": "（2ターン準備必要）\n物理ダメージを6与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 34017,
+			"name": "居合·吐納",
+			"descriptionraw": "（1ターン準備必要）\\n次のラウンドでスキル<color=#FFFFFFFF>$[S34016]</color>を発動する。",
+			"descriptionreplaced": "（1ターン準備必要）\\n次のラウンドでスキル<color=#FFFFFFFF>居合·霆息</color>を発動する。",
+			"description": "（1ターン準備必要）\n次のラウンドでスキル居合·霆息を発動する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		}
+	]
+}

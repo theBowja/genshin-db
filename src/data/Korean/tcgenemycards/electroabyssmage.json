@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "번개의 심연 메이지",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"번개 원소",
+		"그 외 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "번개탄",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 1pt 준다.",
+			"description": "번개 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "전광의 마법",
+			"descriptionraw": "<color=#FFFFFFFF>$[C134041]</color>를 소환한다.",
+			"descriptionreplaced": "<color=#FFFFFFFF>번개로 엮은 고리</color>를 소환한다.",
+			"description": "번개로 엮은 고리를 소환한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "군뢰 질주의 의식",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C134041]</color>를 소환한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 4pt 주고 <color=#FFFFFFFF>번개로 엮은 고리</color>를 소환한다.",
+			"description": "번개 원소 피해를 4pt 주고 번개로 엮은 고리를 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "번개 원소 보호막",
+			"descriptionraw": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>$[C134042]</color>이 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>번개 원소 보호막</color>이 부착된다.",
+			"description": "[패시브] 전투 시작 시, 처음부터 번개 원소 보호막이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "보호막 파괴",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

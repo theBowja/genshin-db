@@ -1,0 +1,97 @@
+{
+	"id": 3502,
+	"name": "ファデュイ先遣隊·前鋒軍·風拳",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"風元素",
+		"他の武器",
+		"ファデュイ"
+	],
+	"skills": [
+		{
+			"id": 35021,
+			"name": "疾風ジャブ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35022,
+			"name": "廻風チャージ",
+			"descriptionraw": "本キャラに<color=#FFFFFFFF>$[C135021]</color>を付与し、$[K53]に入る：<color=#FFFFFFFF>$[S35025]</color>。",
+			"descriptionreplaced": "本キャラに<color=#FFFFFFFF>廻風障壁</color>を付与し、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>逆風の反撃</color>。",
+			"description": "本キャラに廻風障壁を付与し、スキル準備に入る：逆風の反撃。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 35023,
+			"name": "激風鼓動",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、味方の他の「ファデュイ」キャラが$[K310]を1獲得する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与え、味方の他の「ファデュイ」キャラが<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得する。",
+			"description": "風元素ダメージを3与え、味方の他の「ファデュイ」キャラがチャージを1獲得する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35024,
+			"name": "廻風障壁",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 35025,
+			"name": "逆風の反撃",
+			"descriptionraw": "（1ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "（1ターン準備必要）\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "（1ターン準備必要）\n物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": []
+		}
+	]
+}

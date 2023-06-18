@@ -1,0 +1,97 @@
+{
+	"id": 3502,
+	"name": "Soldado dos Fatui - Boxeador da Vanguarda Anemo",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Anemo",
+		"Outras Armas",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 35021,
+			"name": "Soco dos Ventos",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35022,
+			"name": "Reunião dos Ventos",
+			"descriptionraw": "Este personagem é afetado por <color=#FFFFFFFF>$[C135021]</color> e $[K53]: <color=#FFFFFFFF>$[S35025]</color>.",
+			"descriptionreplaced": "Este personagem é afetado por <color=#FFFFFFFF>Barreira dos Ventos</color> e <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Punho Corta-vento</color>.",
+			"description": "Este personagem é afetado por Barreira dos Ventos e Preparar Habilidade: Punho Corta-vento.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 35023,
+			"name": "Incitação dos Ventos",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], seus outros personagens Fatui recebem 1 ponto de $[K310].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color>, seus outros personagens Fatui recebem 1 ponto de <color=#FFFFFFFF>{SPRITE_PRESET#1110}Carga</color>.",
+			"description": "Causa 3 pontos de Dano Anemo, seus outros personagens Fatui recebem 1 ponto de Carga.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35024,
+			"name": "Barreira dos Ventos",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 35025,
+			"name": "Punho Corta-vento",
+			"descriptionraw": "(Precisa de 1 rodada de ação para preparação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Precisa de 1 rodada de ação para preparação)\\nCausa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "(Precisa de 1 rodada de ação para preparação)\nCausa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,101 @@
+{
+	"id": 3003,
+	"name": "Nobushi - Filodemonio",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE"
+	],
+	"tagstext": [
+		"Sin tipo elemental",
+		"Otras armas"
+	],
+	"skills": [
+		{
+			"id": 30031,
+			"name": "Ráfaga de cortes",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30032,
+			"name": "Salto cortante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 3 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30033,
+			"name": "Golpe de espada: Envaine",
+			"descriptionraw": "Este personaje $[K53|s1] <color=#FFFFFFFF>$[S30034]</color>.",
+			"descriptionreplaced": "Este personaje <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Golpe de espada: Desenvaine</color>.",
+			"description": "Este personaje prepara la habilidad Golpe de espada: Desenvaine.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30034,
+			"name": "Golpe de espada: Desenvaine",
+			"descriptionraw": "Necesita prepararse durante 2 turnos.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Necesita prepararse durante 2 turnos.\\nInflige 6 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Necesita prepararse durante 2 turnos.\nInflige 6 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": []
+		},
+		{
+			"id": 30035,
+			"name": "Golpe de espada: Respiración",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nUsa la habilidad <color=#FFFFFFFF>$[S30034]</color> en la siguiente ronda.",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nUsa la habilidad <color=#FFFFFFFF>Golpe de espada: Desenvaine</color> en la siguiente ronda.",
+			"description": "Necesita prepararse durante 1 turno.\nUsa la habilidad Golpe de espada: Desenvaine en la siguiente ronda.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": []
+		},
+		{
+			"id": 30036,
+			"name": "Crueldad",
+			"descriptionraw": "Pasiva (fase final): si este personaje está en combate, obtiene Energía +1.",
+			"descriptionreplaced": "Pasiva (fase final): si este personaje está en combate, obtiene Energía +1.",
+			"description": "Pasiva (fase final): si este personaje está en combate, obtiene Energía +1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

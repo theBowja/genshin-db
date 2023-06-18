@@ -1,0 +1,75 @@
+{
+	"id": 3501,
+	"name": "Samachurl Anemo",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"Anemo",
+		"Otras armas",
+		"Monstruo",
+		"Hilichurl"
+	],
+	"skills": [
+		{
+			"id": 35011,
+			"name": "Bastonazo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pt. de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 1 pt. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35012,
+			"name": "Plegaria del viento",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C135011|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y crea un <color=#FFFFFFFF>ciclón</color>.",
+			"description": "Inflige 2 pts. de Daño Anemo y crea un ciclón.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 35013,
+			"name": "Choque ciclónico",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 5 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>.",
+			"description": "Inflige 5 pts. de Daño Anemo.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

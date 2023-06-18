@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Hiçlik Elektrik Büyücüsü",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Yıldırım",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.",
+			"description": "1 Elektrik Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Dolanan Işık",
+			"descriptionraw": "1 <color=#FFFFFFFF>$[C134041]</color> çağırır.",
+			"descriptionreplaced": "1 <color=#FFFFFFFF>Düğümlü Yıldırım Halkası</color> çağırır.",
+			"description": "1 Düğümlü Yıldırım Halkası çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Gökleri Yaran Yıldırım Ayini",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C134041]</color> çağırır.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve 1 <color=#FFFFFFFF>Düğümlü Yıldırım Halkası</color> çağırır.",
+			"description": "4 Elektrik Hasarı verir ve 1 Düğümlü Yıldırım Halkası çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Elektrik Kalkanı",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C134042]</color> etkisi kazanır.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Elektrik Kalkanı</color> etkisi kazanır.",
+			"description": "(Pasif) Savaş başladığında bu karakter Elektrik Kalkanı etkisi kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Kırık Kalkan",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

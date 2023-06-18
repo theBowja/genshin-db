@@ -1,0 +1,77 @@
+{
+	"id": 4101,
+	"name": "Fatui - Cryo Cicin Mage",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"ธาตุน้ำแข็ง",
+		"อาวุธอื่น ๆ",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 21011,
+			"name": "Cicin Icicle",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2101}<color=#99FFFFFF>ความเสียหายน้ำแข็ง</color> 1 หน่วย",
+			"description": "สร้างความเสียหายน้ำแข็ง 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21012,
+			"name": "Misty Summons",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C121011]</color>",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2101}<color=#99FFFFFF>ความเสียหายน้ำแข็ง</color> 1 หน่วย และเรียก <color=#FFFFFFFF>Cryo Cicin</color>",
+			"description": "สร้างความเสียหายน้ำแข็ง 1 หน่วย และเรียก Cryo Cicin",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21013,
+			"name": "Blizzard, Branch, Blossom",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย ทำให้ตัวละครนี้$[K201] และสร้าง <color=#FFFFFFFF>$[C121012]</color>",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2101}<color=#99FFFFFF>ความเสียหายน้ำแข็ง</color> 5 หน่วย ทำให้ตัวละครนี้<color=#99FFFFFF>ติดสถานะ{SPRITE_PRESET#2101}ธาตุน้ำแข็ง</color> และสร้าง <color=#FFFFFFFF>Flowing Cicin Shield</color>",
+			"description": "สร้างความเสียหายน้ำแข็ง 5 หน่วย ทำให้ตัวละครนี้ติดสถานะธาตุน้ำแข็ง และสร้าง Flowing Cicin Shield",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 4502,
+	"name": "Maguu Kenki",
+	"hp": 28,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Navalha",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Lâmina do Vento Solitário",
+			"descriptionraw": "Invoca <color=#FFFFFFFF>$[C125011]</color>.",
+			"descriptionreplaced": "Invoca <color=#FFFFFFFF>Espada Sombra - Vento Solitário</color>.",
+			"description": "Invoca Espada Sombra - Vento Solitário.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Sombra Congelante",
+			"descriptionraw": "Invoca <color=#FFFFFFFF>$[C125012]</color>.",
+			"descriptionreplaced": "Invoca <color=#FFFFFFFF>Espada Sombra - Gelo Galopante</color>.",
+			"description": "Invoca Espada Sombra - Gelo Galopante.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Clone Tengu",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], desencadeia o efeito de invocação de todas as suas <color=#FFFFFFFF>Espadas Sombra</color>. (Não consome o seu número de Usos)",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Causa 4 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color>, desencadeia o efeito de invocação de todas as suas <color=#FFFFFFFF>Espadas Sombra</color>. (Não consome o seu número de Usos)",
+			"description": "Causa 4 pontos de Dano Anemo, desencadeia o efeito de invocação de todas as suas Espadas Sombra. (Não consome o seu número de Usos)",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

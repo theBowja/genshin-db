@@ -1,0 +1,75 @@
+{
+	"id": 3703,
+	"name": "Samachurl Dendro",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"Dendro",
+		"Otras armas",
+		"Monstruo",
+		"Hilichurl"
+	],
+	"skills": [
+		{
+			"id": 37031,
+			"name": "Bastonazo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pt. de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 1 pt. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 37032,
+			"name": "Zarza venenosa",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C137031|s1]</color> en el campo del rival.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2107}<color=#7EC236FF>Daño Dendro</color> y crea una <color=#FFFFFFFF>enredadera</color> en el campo del rival.",
+			"description": "Inflige 1 pt. de Daño Dendro y crea una enredadera en el campo del rival.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 37033,
+			"name": "Dendroárea",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Inflige 5 pts. de {SPRITE_PRESET#2107}<color=#7EC236FF>Daño Dendro</color>.",
+			"description": "Inflige 5 pts. de Daño Dendro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

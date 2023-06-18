@@ -1,0 +1,111 @@
+{
+	"id": 4403,
+	"name": "Unberührte Elektro-Hypostase",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 24011,
+			"name": "Elektro-Kristall-Projektion",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Elektro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "Schnick-Schnack-Schnuck",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], $[K53|s1]: <color=#FFFFFFFF>$[S24015]</color> und <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, <color=#FFFFFFFF>bereitet folgende Fähigkeit vor</color>: <color=#FFFFFFFF>Schnick-Schnack-Schnuck – Schere</color> und <color=#FFFFFFFF>Schnick-Schnack-Schnuck – Papier</color>.",
+			"description": "Verursacht 2 Pkt. Elektro-SCH, bereitet folgende Fähigkeit vor: Schnick-Schnack-Schnuck – Schere und Schnick-Schnack-Schnuck – Papier.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "Donnernde Ketten",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C124013]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Reich der Donnerketten</color>.",
+			"description": "Verursacht 2 Pkt. Elektro-SCH, erschafft 1 Reich der Donnerketten.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24015,
+			"name": "Schnick-Schnack-Schnuck – Schere",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], $[K53|s1]: <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, <color=#FFFFFFFF>bereitet folgende Fähigkeit vor</color>: <color=#FFFFFFFF>Schnick-Schnack-Schnuck – Papier</color>.",
+			"description": "Verursacht 2 Pkt. Elektro-SCH, bereitet folgende Fähigkeit vor: Schnick-Schnack-Schnuck – Papier.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "Schnick-Schnack-Schnuck – Papier",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Elektro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 34063,
+			"name": "Elementarablagerung – Elektro",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C134061]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Elementarwesen – Elektro</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Elementarwesen – Elektro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

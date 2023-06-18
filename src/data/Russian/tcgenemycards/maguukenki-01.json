@@ -1,0 +1,90 @@
+{
+	"id": 4502,
+	"name": "Магу кэнки",
+	"hp": 28,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Анемо",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Итимондзи",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Одинокий шторм",
+			"descriptionraw": "Призывает 1 помощника: <color=#FFFFFFFF>$[C125011]</color>.",
+			"descriptionreplaced": "Призывает 1 помощника: <color=#FFFFFFFF>Теневой клинок: Одинокий ветер</color>.",
+			"description": "Призывает 1 помощника: Теневой клинок: Одинокий ветер.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Морозная тень",
+			"descriptionraw": "Призывает 1 помощника: <color=#FFFFFFFF>$[C125012]</color>.",
+			"descriptionreplaced": "Призывает 1 помощника: <color=#FFFFFFFF>Теневой клинок: Бегущий иней</color>.",
+			"description": "Призывает 1 помощника: Теневой клинок: Бегущий иней.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Ложный тэнгу",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., вызывает эффекты всех <color=#FFFFFFFF>Теневых мечей</color> (не расходует их применения).",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 4 ед., вызывает эффекты всех <color=#FFFFFFFF>Теневых мечей</color> (не расходует их применения).",
+			"description": "Наносит Анемо урон, 4 ед., вызывает эффекты всех Теневых мечей (не расходует их применения).",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

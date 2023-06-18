@@ -1,0 +1,107 @@
+{
+	"id": 5201,
+	"name": "Hydro-Abgrundmagier",
+	"hp": 6,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 32011,
+			"name": "Wassergeschosse",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32012,
+			"name": "Opferritual des Blasenglanzes",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht dem Ziel den Zustand <color=#FFFFFFFF>$[C132011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, verleiht dem Ziel den Zustand <color=#FFFFFFFF>Wasserblase</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH, verleiht dem Ziel den Zustand Wasserblase.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32013,
+			"name": "Ritus der Wasserillusion",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht dem Ziel den Zustand <color=#FFFFFFFF>$[C132011]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, verleiht dem Ziel den Zustand <color=#FFFFFFFF>Wasserblase</color>.",
+			"description": "Verursacht 4 Pkt. Hydro-SCH, verleiht dem Ziel den Zustand Wasserblase.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32014,
+			"name": "Hydro-Ummantelung",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C132012]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Hydro-Ummantelung</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Hydro-Ummantelung.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 32015,
+			"name": "Ummantelungsriss",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 32016,
+			"name": "Ägide des Abgrundes",
+			"descriptionraw": "Passiv – Nach Anwenden der Fähigkeiten beim Ummantelungsriss: Verleiht der Figur erneut die <color=#FFFFFFFF>$[C132012]</color>.",
+			"descriptionreplaced": "Passiv – Nach Anwenden der Fähigkeiten beim Ummantelungsriss: Verleiht der Figur erneut die <color=#FFFFFFFF>Hydro-Ummantelung</color>.",
+			"description": "Passiv – Nach Anwenden der Fähigkeiten beim Ummantelungsriss: Verleiht der Figur erneut die Hydro-Ummantelung.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

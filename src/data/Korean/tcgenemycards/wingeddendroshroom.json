@@ -1,0 +1,87 @@
+{
+	"id": 3701,
+	"name": "포롱 풀 버섯",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"풀 원소",
+		"그 외 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 37011,
+			"name": "포자탄",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 1pt 준다.",
+			"description": "풀 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 37012,
+			"name": "회전 분사",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 3pt 준다.",
+			"description": "풀 원소 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 37013,
+			"name": "급강하 폭격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 5pt 준다.",
+			"description": "풀 원소 피해를 5pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 37014,
+			"name": "상태 전환",
+			"descriptionraw": "[패시브] 전투 시작 시, 캐릭터가 <color=#FFFFFFFF>$[C137011]</color>에 돌입한다.\\n캐릭터가 $[K103]를 받은 후 <color=#FFFFFFFF>$[C137012]</color>로 전환된다.\\n캐릭터가 $[K104]를 받은 후 <color=#FFFFFFFF>$[C137013]</color>로 전환된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 캐릭터가 <color=#FFFFFFFF>공중 우세</color>에 돌입한다.\\n캐릭터가 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 받은 후 <color=#FFFFFFFF>건조 상태</color>로 전환된다.\\n캐릭터가 {SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 받은 후 <color=#FFFFFFFF>활력 상태</color>로 전환된다.",
+			"description": "[패시브] 전투 시작 시, 캐릭터가 공중 우세에 돌입한다.\n캐릭터가 불 원소 피해를 받은 후 건조 상태로 전환된다.\n캐릭터가 번개 원소 피해를 받은 후 활력 상태로 전환된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

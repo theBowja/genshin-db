@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Electro Abyss Mage",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Senjata Lain",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Thunderbolt",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Mengakibatkan 1 poin Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Lingering Light",
+			"descriptionraw": "Memanggil <color=#FFFFFFFF>$[C134041]</color>.",
+			"descriptionreplaced": "Memanggil <color=#FFFFFFFF>Tanglebolt Ring</color>.",
+			"description": "Memanggil Tanglebolt Ring.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Rite of Rolling Thunder",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan memanggil <color=#FFFFFFFF>$[C134041]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 4 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color> dan memanggil <color=#FFFFFFFF>Tanglebolt Ring</color>.",
+			"description": "Mengakibatkan 4 poin Electro DMG dan memanggil Tanglebolt Ring.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Electro Shield",
+			"descriptionraw": "[Pasif] Saat pertandingan dimulai, Karakter ini memperoleh status <color=#FFFFFFFF>$[C134042]</color>.",
+			"descriptionreplaced": "[Pasif] Saat pertandingan dimulai, Karakter ini memperoleh status <color=#FFFFFFFF>Electro Shield</color>.",
+			"description": "[Pasif] Saat pertandingan dimulai, Karakter ini memperoleh status Electro Shield.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Broken Shield",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 4501,
+	"name": "Oni Espadachín",
+	"hp": 20,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Ichimonji",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Filo ventoso",
+			"descriptionraw": "Invoca a un <color=#FFFFFFFF>$[C125011]</color>.",
+			"descriptionreplaced": "Invoca a un <color=#FFFFFFFF>Espadachín sombrío: Viento solitario</color>.",
+			"description": "Invoca a un Espadachín sombrío: Viento solitario.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Asalto de escarcha",
+			"descriptionraw": "Invoca a un <color=#FFFFFFFF>$[C125012]</color>.",
+			"descriptionreplaced": "Invoca a un <color=#FFFFFFFF>Espadachín sombrío: Escarcha veloz</color>.",
+			"description": "Invoca a un Espadachín sombrío: Escarcha veloz.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Emulación de corte Tengu",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y activa los efectos de todas tus invocaciones de <color=#FFFFFFFF>Espadachín sombrío</color> (no consume sus usos).",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y activa los efectos de todas tus invocaciones de <color=#FFFFFFFF>Espadachín sombrío</color> (no consume sus usos).",
+			"description": "Inflige 4 pts. de Daño Anemo y activa los efectos de todas tus invocaciones de Espadachín sombrío (no consume sus usos).",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

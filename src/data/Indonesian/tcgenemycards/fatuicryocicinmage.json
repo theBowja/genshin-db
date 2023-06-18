@@ -1,0 +1,77 @@
+{
+	"id": 4101,
+	"name": "Fatui Cryo Cicin Mage",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Cryo",
+		"Senjata Lain",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 21011,
+			"name": "Cicin Icicle",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>.",
+			"description": "Mengakibatkan 1 poin Cryo DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21012,
+			"name": "Misty Summons",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan memanggil <color=#FFFFFFFF>$[C121011]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color> dan memanggil <color=#FFFFFFFF>Cryo Cicin</color>.",
+			"description": "Mengakibatkan 1 poin Cryo DMG dan memanggil Cryo Cicin.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21013,
+			"name": "Blizzard, Branch, Blossom",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], $[K201] pada Karakter ini, dan menciptakan <color=#FFFFFFFF>$[C121012]</color>.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Mengakibatkan 5 poin {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>, <color=#99FFFFFF>memberikan efek {SPRITE_PRESET#2101}Cryo</color> pada Karakter ini, dan menciptakan <color=#FFFFFFFF>Flowing Cicin Shield</color>.",
+			"description": "Mengakibatkan 5 poin Cryo DMG, memberikan efek Cryo pada Karakter ini, dan menciptakan Flowing Cicin Shield.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Mago del Abismo Electro",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Rayo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 1 pt. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Ofrenda lumínica",
+			"descriptionraw": "Invoca un <color=#FFFFFFFF>$[C134041|s1]</color>.",
+			"descriptionreplaced": "Invoca un <color=#FFFFFFFF>electroanillo enredador</color>.",
+			"description": "Invoca un electroanillo enredador.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Rito del relámpago",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca un <color=#FFFFFFFF>$[C134041|s1]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> e invoca un <color=#FFFFFFFF>electroanillo enredador</color>.",
+			"description": "Inflige 4 pts. de Daño Electro e invoca un electroanillo enredador.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Escudo Electro",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, este personaje obtiene un <color=#FFFFFFFF>$[C134042|s1]</color>.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, este personaje obtiene un <color=#FFFFFFFF>escudo Electro</color>.",
+			"description": "Pasiva: cuando comienza el duelo, este personaje obtiene un escudo Electro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Ruptura de escudo",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

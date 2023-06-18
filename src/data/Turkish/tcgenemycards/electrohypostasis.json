@@ -1,0 +1,121 @@
+{
+	"id": 4401,
+	"name": "Elektrik Hipostazı",
+	"hp": 30,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 24011,
+			"name": "Elektrik Kristali Yansıması",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.",
+			"description": "1 Elektrik Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "Taş, Kağıt, Makas Üçlüsü",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, ardından <color=#FFFFFFFF>$[S24015]</color> ve <color=#FFFFFFFF>$[S24016]</color> için ayrı ayrı \"$[K53]\" kullanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir, ardından <color=#FFFFFFFF>Taş, Kağıt, Makas Üçlüsü: Makas</color> ve <color=#FFFFFFFF>Taş, Kağıt, Makas Üçlüsü: Kağıt</color> için ayrı ayrı \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "2 Elektrik Hasarı verir, ardından Taş, Kağıt, Makas Üçlüsü: Makas ve Taş, Kağıt, Makas Üçlüsü: Kağıt için ayrı ayrı \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "Yıldırım Hapsi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve <color=#FFFFFFFF>$[C124013]</color> çağırır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve <color=#FFFFFFFF>Koruyucu Yıldırım Zincirleri</color> çağırır.",
+			"description": "2 Elektrik Hasarı verir ve Koruyucu Yıldırım Zincirleri çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24017,
+			"name": "Elektrik Kristali Çekirdeği",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C124015]</color> etkisinde olur.\\n<color=#FFFFFFFF>Hamle Aşaması Başlangıcı:</color> Bu karakter henüz $[C124015] kazanmadıysa yeniden $[C124015] kazanır. (Bir düelloda en fazla iki defa tetiklenir)",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Elektrik Kristali Çekirdeği</color> etkisinde olur.\\n<color=#FFFFFFFF>Hamle Aşaması Başlangıcı:</color> Bu karakter henüz Elektrik Kristali Çekirdeği kazanmadıysa yeniden Elektrik Kristali Çekirdeği kazanır. (Bir düelloda en fazla iki defa tetiklenir)",
+			"description": "(Pasif) Savaş başladığında bu karakter Elektrik Kristali Çekirdeği etkisinde olur.\nHamle Aşaması Başlangıcı: Bu karakter henüz Elektrik Kristali Çekirdeği kazanmadıysa yeniden Elektrik Kristali Çekirdeği kazanır. (Bir düelloda en fazla iki defa tetiklenir)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "Taş, Kağıt, Makas Üçlüsü: Makas",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Ardından <color=#FFFFFFFF>$[S24016]</color> için \"$[K53]\" kullanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir. Ardından <color=#FFFFFFFF>Taş, Kağıt, Makas Üçlüsü: Kağıt</color> için \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "2 Elektrik Hasarı verir. Ardından Taş, Kağıt, Makas Üçlüsü: Kağıt için \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "Taş, Kağıt, Makas Üçlüsü: Kağıt",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.",
+			"description": "3 Elektrik Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": []
+		},
+		{
+			"id": 34063,
+			"name": "Element Tortulaşması: Elektrik",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C134061]</color> etkisi kazanır.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Element Yaşam Formu: Elektrik</color> etkisi kazanır.",
+			"description": "(Pasif) Savaş başladığında bu karakter Element Yaşam Formu: Elektrik etkisi kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}
