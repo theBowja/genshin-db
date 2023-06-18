@@ -1,0 +1,105 @@
+{
+	"id": 3305,
+	"name": "Nobushi – Hitsukeban",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE"
+	],
+	"tagstext": [
+		"Pyro",
+		"Andere Waffen"
+	],
+	"skills": [
+		{
+			"id": 33051,
+			"name": "Mehrfachschlag",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33052,
+			"name": "Flamme und Rauch",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], wechselt deine aktive Figur zur nächsten.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, wechselt deine aktive Figur zur nächsten.",
+			"description": "Verursacht 3 Pkt. Pyro-SCH, wechselt deine aktive Figur zur nächsten.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30033,
+			"name": "Iai – Ruhe",
+			"descriptionraw": "Diese Figur $[K53|s1]: <color=#FFFFFFFF>$[S30034]</color>.",
+			"descriptionreplaced": "Diese Figur <color=#FFFFFFFF>bereitet folgende Fähigkeit vor</color>: <color=#FFFFFFFF>Iai – Vorstoß</color>.",
+			"description": "Diese Figur bereitet folgende Fähigkeit vor: Iai – Vorstoß.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30034,
+			"name": "Iai – Vorstoß",
+			"descriptionraw": "(Die Vorbereitung dauert 2 Züge)\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Die Vorbereitung dauert 2 Züge)\\nVerursacht 6 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "(Die Vorbereitung dauert 2 Züge)\nVerursacht 6 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 30035,
+			"name": "Iai – Atem",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nWendet nächste Runde die Fähigkeit <color=#FFFFFFFF>$[S30034]</color> an.",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nWendet nächste Runde die Fähigkeit <color=#FFFFFFFF>Iai – Vorstoß</color> an.",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nWendet nächste Runde die Fähigkeit Iai – Vorstoß an.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 30036,
+			"name": "Gebrochenes Herz",
+			"descriptionraw": "Passiv – Endphase: Ist die Figur aktiv, erhält sie 1 Pkt. Aufladung.",
+			"descriptionreplaced": "Passiv – Endphase: Ist die Figur aktiv, erhält sie 1 Pkt. Aufladung.",
+			"description": "Passiv – Endphase: Ist die Figur aktiv, erhält sie 1 Pkt. Aufladung.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"id": 3104,
+	"name": "Soldado Fatui - Guardia con Cañón Cryo",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Cryo",
+		"Otras armas",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 31041,
+			"name": "Embestida de corto alcance",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31042,
+			"name": "Espray helado",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color>.",
+			"description": "Inflige 3 pts. de Daño Cryo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31043,
+			"name": "Cañón gélido",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene el efecto de <color=#FFFFFFFF>$[C131041|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> y este personaje obtiene el efecto de <color=#FFFFFFFF>arsenal elemental</color>.",
+			"description": "Inflige 3 pts. de Daño Cryo y este personaje obtiene el efecto de arsenal elemental.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31044,
+			"name": "Reabastecimiento de combate",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, este personaje obtiene Energía +2.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, este personaje obtiene Energía +2.",
+			"description": "Pasiva: cuando comienza el duelo, este personaje obtiene Energía +2.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 31045,
+			"name": "Ruptura de arma",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"id": 3407,
+	"name": "Soldado Fatui - Electromartillador de Vanguardia",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Electro",
+		"Otras armas",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 34071,
+			"name": "Martillazo raudo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34072,
+			"name": "Embestida feroz",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 3 pts. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34073,
+			"name": "Martillazo electrocargado",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene el efecto de <color=#FFFFFFFF>$[C134071|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y este personaje obtiene el efecto de <color=#FFFFFFFF>arsenal elemental</color>.",
+			"description": "Inflige 3 pts. de Daño Electro y este personaje obtiene el efecto de arsenal elemental.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34074,
+			"name": "Reabastecimiento de combate",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, este personaje obtiene Energía +2.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, este personaje obtiene Energía +2.",
+			"description": "Pasiva: cuando comienza el duelo, este personaje obtiene Energía +2.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 34075,
+			"name": "Ruptura de arma",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

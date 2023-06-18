@@ -1,0 +1,107 @@
+{
+	"id": 5201,
+	"name": "Hiçlik Su Büyücüsü",
+	"hp": 6,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Su",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 32011,
+			"name": "Su Mermisi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "1 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32012,
+			"name": "Köpük Ayini",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve hedef karaktere <color=#FFFFFFFF>$[C132011]</color> eklenir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve hedef karaktere <color=#FFFFFFFF>Sis Baloncuğu</color> eklenir.",
+			"description": "1 Su Hasarı verir ve hedef karaktere Sis Baloncuğu eklenir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32013,
+			"name": "Ölümsüz Su Şenliği",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve hedef karaktere <color=#FFFFFFFF>$[C132011]</color> eklenir.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve hedef karaktere <color=#FFFFFFFF>Sis Baloncuğu</color> eklenir.",
+			"description": "4 Su Hasarı verir ve hedef karaktere Sis Baloncuğu eklenir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32014,
+			"name": "Su Kalkanı",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C132012]</color> etkisi kazanır.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Su Kalkanı</color> etkisi kazanır.",
+			"description": "(Pasif) Savaş başladığında bu karakter Su Kalkanı etkisi kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 32015,
+			"name": "Kırık Kalkan",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 32016,
+			"name": "Hiçlik Kalkanı",
+			"descriptionraw": "(Pasif) Kalkan kırıkken bu karakter bir Beceri kullanılır ve <color=#FFFFFFFF>$[C132012]</color> kazanır.",
+			"descriptionreplaced": "(Pasif) Kalkan kırıkken bu karakter bir Beceri kullanılır ve <color=#FFFFFFFF>Su Kalkanı</color> kazanır.",
+			"description": "(Pasif) Kalkan kırıkken bu karakter bir Beceri kullanılır ve Su Kalkanı kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

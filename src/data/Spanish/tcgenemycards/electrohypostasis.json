@@ -1,0 +1,121 @@
+{
+	"id": 4401,
+	"name": "Hipóstasis Electro",
+	"hp": 30,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 24011,
+			"name": "Proyección de cristal Electro",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 1 pt. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "Triporrazo piedra, papel, tijera",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], y $[K53|s2] por separado: <color=#FFFFFFFF>$[S24015|s1]</color> y <color=#FFFFFFFF>$[S24016|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>, y <color=#FFFFFFFF>prepara las habilidades</color> por separado: <color=#FFFFFFFF>triporrazo piedra, papel, tijera</color> y <color=#FFFFFFFF>triporrazo piedra, papel, tijera</color>.",
+			"description": "Inflige 2 pts. de Daño Electro, y prepara las habilidades por separado: triporrazo piedra, papel, tijera y triporrazo piedra, papel, tijera.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "Retención eléctrica",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca unas <color=#FFFFFFFF>$[C124013|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> e invoca unas <color=#FFFFFFFF>cadenas de tormenta inminente</color>.",
+			"description": "Inflige 2 pts. de Daño Electro e invoca unas cadenas de tormenta inminente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24017,
+			"name": "Núcleo de cristal Electro",
+			"descriptionraw": "Pasiva: comienza el duelo con un <color=#FFFFFFFF>$[C124015|s1]</color>.\\n<color=#FFFFFFFF>Al principio de la fase de acciones</color>, si el personaje no cuenta con un $[C124015|s1], activa uno (se puede activar un máximo de 2 veces por duelo).",
+			"descriptionreplaced": "Pasiva: comienza el duelo con un <color=#FFFFFFFF>núcleo de cristal Electro</color>.\\n<color=#FFFFFFFF>Al principio de la fase de acciones</color>, si el personaje no cuenta con un núcleo de cristal Electro, activa uno (se puede activar un máximo de 2 veces por duelo).",
+			"description": "Pasiva: comienza el duelo con un núcleo de cristal Electro.\nAl principio de la fase de acciones, si el personaje no cuenta con un núcleo de cristal Electro, activa uno (se puede activar un máximo de 2 veces por duelo).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "Triporrazo piedra, papel, tijera: tijera",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT] y $[K53|s1] <color=#FFFFFFFF>$[S24016]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Triporrazo piedra, papel, tijera: papel</color>.",
+			"description": "Inflige 2 pts. de Daño Electro y prepara la habilidad Triporrazo piedra, papel, tijera: papel.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "Triporrazo piedra, papel, tijera: papel",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 3 pts. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		},
+		{
+			"id": 34063,
+			"name": "Sedimento elemental: Electro",
+			"descriptionraw": "Pasiva: cuando comienza el combate, este personaje entra en el estado de un <color=#FFFFFFFF>$[C134061]</color>.",
+			"descriptionreplaced": "Pasiva: cuando comienza el combate, este personaje entra en el estado de un <color=#FFFFFFFF>Ser elemental: Electro</color>.",
+			"description": "Pasiva: cuando comienza el combate, este personaje entra en el estado de un Ser elemental: Electro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

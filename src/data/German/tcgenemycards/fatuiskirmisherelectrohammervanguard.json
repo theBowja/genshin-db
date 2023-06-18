@@ -1,0 +1,97 @@
+{
+	"id": 3407,
+	"name": "Fatui-Plänkler – Elektro-Hammer-Stürmer",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Elektro",
+		"Andere Waffen",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 34071,
+			"name": "Hämmernde Attacke",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34072,
+			"name": "Knallharter Ansturm",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Elektro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34073,
+			"name": "Hämmernder Donner",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C134071]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, erhält selbst <color=#FFFFFFFF>Elementarrüstung – Elektro</color>.",
+			"description": "Verursacht 3 Pkt. Elektro-SCH, erhält selbst Elementarrüstung – Elektro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34074,
+			"name": "Einsatzversorgung",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 34075,
+			"name": "Waffenrüstungsriss",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

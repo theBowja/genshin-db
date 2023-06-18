@@ -1,0 +1,90 @@
+{
+	"id": 4502,
+	"name": "Maguu Kenki",
+	"hp": 28,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Rüzgar",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 25011,
+			"name": "Ichimonji",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25012,
+			"name": "Sert Rüzgar Kılıcı",
+			"descriptionraw": "1 <color=#FFFFFFFF>$[C125011]</color> çağırır.",
+			"descriptionreplaced": "1 <color=#FFFFFFFF>Gölge Kılıcı: Yalnız Rüzgar</color> çağırır.",
+			"description": "1 Gölge Kılıcı: Yalnız Rüzgar çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25013,
+			"name": "Dondurucu Saldırı",
+			"descriptionraw": "1 <color=#FFFFFFFF>$[C125012]</color> çağırır.",
+			"descriptionreplaced": "1 <color=#FFFFFFFF>Gölge Kılıcı: Doludizgin Ayaz</color> çağırır.",
+			"description": "1 Gölge Kılıcı: Doludizgin Ayaz çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25014,
+			"name": "Sahte Tengu Savuran",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve tüm <color=#FFFFFFFF>Gölge Kılıcı</color> Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir ve tüm <color=#FFFFFFFF>Gölge Kılıcı</color> Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
+			"description": "4 Rüzgar Hasarı verir ve tüm Gölge Kılıcı Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

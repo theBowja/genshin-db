@@ -1,0 +1,75 @@
+{
+	"id": 3703,
+	"name": "Dendro Samachurl",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"Dendro",
+		"Senjata Lain",
+		"Monster",
+		"Hilichurl"
+	],
+	"skills": [
+		{
+			"id": 37031,
+			"name": "Staff Strike",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 1 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 37032,
+			"name": "Venomous Vines",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan menciptakan <color=#FFFFFFFF>$[C137031]</color> di area bermain lawan.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color> dan menciptakan <color=#FFFFFFFF>Vines</color> di area bermain lawan.",
+			"description": "Mengakibatkan 1 poin Dendro DMG dan menciptakan Vines di area bermain lawan.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 37033,
+			"name": "Dendro Field",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Mengakibatkan 5 poin {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>.",
+			"description": "Mengakibatkan 5 poin Dendro DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

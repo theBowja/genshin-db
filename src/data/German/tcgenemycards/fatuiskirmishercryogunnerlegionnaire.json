@@ -1,0 +1,97 @@
+{
+	"id": 3104,
+	"name": "Fatui-Plänkler – Kryo-Kanonen-Gardist",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Kryo",
+		"Andere Waffen",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 31041,
+			"name": "Kurzstrecken-Rammung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31042,
+			"name": "Gefrierspray",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Kryo-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31043,
+			"name": "Frostkanone",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C131041]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, erhält selbst <color=#FFFFFFFF>Elementarrüstung – Kryo</color>.",
+			"description": "Verursacht 3 Pkt. Kryo-SCH, erhält selbst Elementarrüstung – Kryo.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31044,
+			"name": "Einsatzversorgung",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 31045,
+			"name": "Waffenrüstungsriss",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

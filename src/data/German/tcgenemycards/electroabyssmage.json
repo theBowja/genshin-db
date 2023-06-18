@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Elektro-Abgrundmagier",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Blitzgeschoss",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Elektro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Opferritual des Blitzlichts",
+			"descriptionraw": "Erschafft 1 <color=#FFFFFFFF>$[C134041]</color>.",
+			"descriptionreplaced": "Erschafft 1 <color=#FFFFFFFF>Donnerrad</color>.",
+			"description": "Erschafft 1 Donnerrad.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Ritus der Blitzwut",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C134041]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Donnerrad</color>.",
+			"description": "Verursacht 4 Pkt. Elektro-SCH, erschafft 1 Donnerrad.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Elektro-Ummantelung",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C134042]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Elektro-Ummantelung</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Elektro-Ummantelung.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Ummantelungsriss",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"id": 3104,
+	"name": "우인단 선발대·얼음총 중보병",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"그 외 무기",
+		"우인단"
+	],
+	"skills": [
+		{
+			"id": 31041,
+			"name": "근접 돌격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31042,
+			"name": "얼음 분사기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 3pt 준다.",
+			"description": "얼음 원소 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31043,
+			"name": "혹한의 서리 총",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C131041]</color>을 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>원소 무장·얼음</color>을 부착한다.",
+			"description": "얼음 원소 피해를 3pt 주고 본 캐릭터에게 원소 무장·얼음을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31044,
+			"name": "장비 보급",
+			"descriptionraw": "[패시브] 전투 시작 시, 본 캐릭터가 원소 에너지를 2pt 획득한다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 본 캐릭터가 원소 에너지를 2pt 획득한다.",
+			"description": "[패시브] 전투 시작 시, 본 캐릭터가 원소 에너지를 2pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 31045,
+			"name": "총기 파괴",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

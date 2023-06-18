@@ -1,0 +1,105 @@
+{
+	"id": 3405,
+	"name": "「노부시·잔재주꾼」",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE"
+	],
+	"tagstext": [
+		"번개 원소",
+		"그 외 무기"
+	],
+	"skills": [
+		{
+			"id": 34051,
+			"name": "연속 베기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34052,
+			"name": "번개 석궁",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 준다.",
+			"description": "번개 원소 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30033,
+			"name": "거합·납도",
+			"descriptionraw": "본 캐릭터가 <color=#FFFFFFFF>$[S30034]</color>의 $[K53]를 한다.",
+			"descriptionreplaced": "본 캐릭터가 <color=#FFFFFFFF>거합·앞</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "본 캐릭터가 거합·앞의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30034,
+			"name": "거합·앞",
+			"descriptionraw": "(2차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(2차례 행동 준비 필요)\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 6pt 준다.",
+			"description": "(2차례 행동 준비 필요)\n물리 피해를 6pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		},
+		{
+			"id": 30035,
+			"name": "거합·토납",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n다음 턴에 스킬 <color=#FFFFFFFF>$[S30034]</color>을 사용한다.",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n다음 턴에 스킬 <color=#FFFFFFFF>거합·앞</color>을 사용한다.",
+			"description": "(1차례 행동 준비 필요)\n다음 턴에 스킬 거합·앞을 사용한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		},
+		{
+			"id": 30036,
+			"name": "잔심",
+			"descriptionraw": "[패시브] 종료 단계: 해당 캐릭터가 「출전 캐릭터」일 시, 원소 에너지를 1pt 획득한다.",
+			"descriptionreplaced": "[패시브] 종료 단계: 해당 캐릭터가 「출전 캐릭터」일 시, 원소 에너지를 1pt 획득한다.",
+			"description": "[패시브] 종료 단계: 해당 캐릭터가 「출전 캐릭터」일 시, 원소 에너지를 1pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

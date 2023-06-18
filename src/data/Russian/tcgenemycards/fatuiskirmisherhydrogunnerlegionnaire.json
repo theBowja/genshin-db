@@ -1,0 +1,97 @@
+{
+	"id": 3203,
+	"name": "Застрельщик Фатуи: Гидро бомбардир",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Гидро",
+		"Прочее",
+		"Фатуи"
+	],
+	"skills": [
+		{
+			"id": 32031,
+			"name": "Искусный удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32032,
+			"name": "Целительная бомба",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Восстанавливает 1 HP у 2 неактивных персонажей.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед. Восстанавливает 1 HP у 2 неактивных персонажей.",
+			"description": "Наносит Гидро урон, 2 ед. Восстанавливает 1 HP у 2 неактивных персонажей.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32033,
+			"name": "Элементальное улучшение: Гидро",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Персонаж получает <color=#FFFFFFFF>$[C132031]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед. Персонаж получает <color=#FFFFFFFF>Элементальная форма: Гидро</color>.",
+			"description": "Наносит Гидро урон, 3 ед. Персонаж получает Элементальная форма: Гидро.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32034,
+			"name": "Военные припасы",
+			"descriptionraw": "(Пассивный навык) В начале битвы персонаж получает 2 ед. энергии.",
+			"descriptionreplaced": "(Пассивный навык) В начале битвы персонаж получает 2 ед. энергии.",
+			"description": "(Пассивный навык) В начале битвы персонаж получает 2 ед. энергии.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 32035,
+			"name": "Разрушитель брони",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"id": 3204,
+	"name": "Hydro-Schleim",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 32041,
+			"name": "Hüpfen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32042,
+			"name": "Schwerer Sturz",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 4 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32043,
+			"name": "Elementarablagerung – Hydro",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C132041]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Elementarwesen – Hydro</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Elementarwesen – Hydro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

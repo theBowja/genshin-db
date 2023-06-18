@@ -1,0 +1,107 @@
+{
+	"id": 5201,
+	"name": "Hydromage de l'Abîme",
+	"hp": 6,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 32011,
+			"name": "Boule d'eau",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Inflige 1 pt de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32012,
+			"name": "Offrande de bulle",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et inflige une <color=#FFFFFFFF>$[C132011|s2]</color> au personnage choisi.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et inflige une <color=#FFFFFFFF>bulle</color> au personnage choisi.",
+			"description": "Inflige 1 pt de DGT Hydro et inflige une bulle au personnage choisi.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32013,
+			"name": "Rite d'eau mortelle",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et inflige une <color=#FFFFFFFF>$[C132011|s2]</color> au personnage choisi.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 4 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et inflige une <color=#FFFFFFFF>bulle</color> au personnage choisi.",
+			"description": "Inflige 4 pts de DGT Hydro et inflige une bulle au personnage choisi.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32014,
+			"name": "Bouclier Hydro",
+			"descriptionraw": "(Passif) Accorde un <color=#FFFFFFFF>$[C132012|s2]</color> au début du combat.",
+			"descriptionreplaced": "(Passif) Accorde un <color=#FFFFFFFF>bouclier Hydro</color> au début du combat.",
+			"description": "(Passif) Accorde un bouclier Hydro au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 32015,
+			"name": "Bouclier éclaté",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 32016,
+			"name": "Égide de l'Abîme",
+			"descriptionraw": "(Passif) Si le bouclier est brisé, lorsque ce personnage a utilisé une capacité : Restaure le <color=#FFFFFFFF>$[C132012|s2]</color>.",
+			"descriptionreplaced": "(Passif) Si le bouclier est brisé, lorsque ce personnage a utilisé une capacité : Restaure le <color=#FFFFFFFF>bouclier Hydro</color>.",
+			"description": "(Passif) Si le bouclier est brisé, lorsque ce personnage a utilisé une capacité : Restaure le bouclier Hydro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

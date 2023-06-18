@@ -1,0 +1,97 @@
+{
+	"id": 3502,
+	"name": "Soldado Fatui - Boxeador Anemo de Vanguardia",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Anemo",
+		"Otras armas",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 35021,
+			"name": "Gancho huracanado",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35022,
+			"name": "Acumulación de los vientos",
+			"descriptionraw": "Este personaje obtiene una <color=#FFFFFFFF>$[C135021|s1]</color> y $[K53|s1] <color=#FFFFFFFF>$[S35025]</color>.",
+			"descriptionreplaced": "Este personaje obtiene una <color=#FFFFFFFF>barrera de viento</color> y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Puñetazo vengador</color>.",
+			"description": "Este personaje obtiene una barrera de viento y prepara la habilidad Puñetazo vengador.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 35023,
+			"name": "Sacudida huracanada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y tus demás personajes Fatui obtienen $[K310] +1.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y tus demás personajes Fatui obtienen <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energía</color> +1.",
+			"description": "Inflige 3 pts. de Daño Anemo y tus demás personajes Fatui obtienen Energía +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35024,
+			"name": "Barrera de viento",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 35025,
+			"name": "Puñetazo vengador",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		}
+	]
+}

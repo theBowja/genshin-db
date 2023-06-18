@@ -1,0 +1,97 @@
+{
+	"id": 3502,
+	"name": "Fatui Avcı Eri - Öncü Rüzgar Boksörü",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Rüzgar",
+		"Diğer Silahlar",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 35021,
+			"name": "Deli Rüzgar Yumruğu",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35022,
+			"name": "Yel Yükü",
+			"descriptionraw": "Bu karakter <color=#FFFFFFFF>$[C135021]</color> kazanır. $[K53]: <color=#FFFFFFFF>$[S35025]</color>.",
+			"descriptionreplaced": "Bu karakter <color=#FFFFFFFF>Fırtınalı Bariyer</color> kazanır. <color=#FFFFFFFF>Beceri Hazırlama</color>: <color=#FFFFFFFF>İntikam Kasırgası</color>.",
+			"description": "Bu karakter Fırtınalı Bariyer kazanır. Beceri Hazırlama: İntikam Kasırgası.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 35023,
+			"name": "Fırtına Kışkırtması",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve diğer Fatui üyesi karakterlerin 1 $[K310] kazanır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir ve diğer Fatui üyesi karakterlerin 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}Enerji</color> kazanır.",
+			"description": "3 Rüzgar Hasarı verir ve diğer Fatui üyesi karakterlerin 1 Enerji kazanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 35024,
+			"name": "Fırtınalı Bariyer",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 35025,
+			"name": "İntikam Kasırgası",
+			"descriptionraw": "(1 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\n2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "(1 Tur hazırlanır)\n2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": []
+		}
+	]
+}

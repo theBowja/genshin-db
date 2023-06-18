@@ -1,0 +1,75 @@
+{
+	"id": 3603,
+	"name": "Geo-Samachurl",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"Geo",
+		"Andere Waffen",
+		"Monster",
+		"Hilichurl"
+	],
+	"skills": [
+		{
+			"id": 36031,
+			"name": "Stabschlag",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 1 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 36032,
+			"name": "Fluch des Steins",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C136031]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Felsensockel</color>.",
+			"description": "Verursacht 2 Pkt. Geo-SCH, erschafft 1 Felsensockel.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 36033,
+			"name": "Seismische Druckwelle",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 5 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>.",
+			"description": "Verursacht 5 Pkt. Geo-SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

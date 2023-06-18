@@ -1,0 +1,87 @@
+{
+	"id": 3605,
+	"name": "Laufender Geo-Pilz",
+	"hp": 7,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 36051,
+			"name": "Sporengeschoss",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Geo-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 36052,
+			"name": "Zorniger Atem",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Geo-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 36053,
+			"name": "Explosiver Vorstoß",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 5 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>.",
+			"description": "Verursacht 5 Pkt. Geo-SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 36054,
+			"name": "Modus-Umwandlung",
+			"descriptionraw": "Passiv – Zu Beginn des Kampfes: <color=#FFFFFFFF>$[C132051]</color>.\\nNach Erleiden von $[K103|s1]: <color=#FFFFFFFF>$[C137012]</color>.\\nNach Erleiden von $[K104|s1]: <color=#FFFFFFFF>$[C137013]</color>.",
+			"descriptionreplaced": "Passiv – Zu Beginn des Kampfes: <color=#FFFFFFFF>Vorteil des Geländes</color>.\\nNach Erleiden von {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>: <color=#FFFFFFFF>Verdorrter Modus</color>.\\nNach Erleiden von {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>: <color=#FFFFFFFF>Aktivierter Modus</color>.",
+			"description": "Passiv – Zu Beginn des Kampfes: Vorteil des Geländes.\nNach Erleiden von Pyro-SCH: Verdorrter Modus.\nNach Erleiden von Elektro-SCH: Aktivierter Modus.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

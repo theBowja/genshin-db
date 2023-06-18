@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Электро маг Бездны",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Электро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Электробомба",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед.",
+			"description": "Наносит Электро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Воздаяние свету",
+			"descriptionraw": "Призывает 1 помощника: <color=#FFFFFFFF>$[C134041]</color>.",
+			"descriptionreplaced": "Призывает 1 помощника: <color=#FFFFFFFF>Кольцо молний</color>.",
+			"description": "Призывает 1 помощника: Кольцо молний.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Ритуал раскатов грома",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C134041]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 4 ед. и призывает помощника: <color=#FFFFFFFF>Кольцо молний</color>.",
+			"description": "Наносит Электро урон, 4 ед. и призывает помощника: Кольцо молний.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Электро купол",
+			"descriptionraw": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>$[C134042]</color>.",
+			"descriptionreplaced": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>Электро купол</color>.",
+			"description": "(Пассивный) В начале сражения у персонажа будет Электро купол.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Сломанный щит",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

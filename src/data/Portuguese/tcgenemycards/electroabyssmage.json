@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Feiticeiro do Abismo Electro",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Tiro Electro",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>.",
+			"description": "Causa 1 ponto de Dano Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Ritual dos Raios Iluminados",
+			"descriptionraw": "Invoca <color=#FFFFFFFF>$[C134041]</color>.",
+			"descriptionreplaced": "Invoca <color=#FFFFFFFF>Anel da Tempestade</color>.",
+			"description": "Invoca Anel da Tempestade.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Rito do Trovão Retumbante",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], invoca <color=#FFFFFFFF>$[C134041]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 4 pontos de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>, invoca <color=#FFFFFFFF>Anel da Tempestade</color>.",
+			"description": "Causa 4 pontos de Dano Electro, invoca Anel da Tempestade.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Revestimento Electro",
+			"descriptionraw": "(Passiva) No começo do combate, é afetado por <color=#FFFFFFFF>$[C134042]</color>.",
+			"descriptionreplaced": "(Passiva) No começo do combate, é afetado por <color=#FFFFFFFF>Revestimento Electro</color>.",
+			"description": "(Passiva) No começo do combate, é afetado por Revestimento Electro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Escudo Quebrado",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

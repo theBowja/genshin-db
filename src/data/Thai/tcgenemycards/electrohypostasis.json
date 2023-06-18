@@ -1,0 +1,121 @@
+{
+	"id": 4401,
+	"name": "Electro Hypostasis",
+	"hp": 30,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ธาตุไฟฟ้า",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"skills": [
+		{
+			"id": 24011,
+			"name": "Electro Crystal Projection",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 1 หน่วย",
+			"description": "สร้างความเสียหายไฟฟ้า 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "Rock-Paper-Scissors Combo",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย จากนั้นจะแยกกัน$[K53] <color=#FFFFFFFF>$[S24015]</color> และ <color=#FFFFFFFF>$[S24016]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 2 หน่วย จากนั้นจะแยกกัน<color=#FFFFFFFF>เตรียมสกิล</color> <color=#FFFFFFFF>Rock-Paper-Scissors Combo: Scissor</color> และ <color=#FFFFFFFF>Rock-Paper-Scissors Combo: Paper</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 2 หน่วย จากนั้นจะแยกกันเตรียมสกิล Rock-Paper-Scissors Combo: Scissor และ Rock-Paper-Scissors Combo: Paper",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "Lightning Lockdown",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C124013]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 2 หน่วย และเรียก <color=#FFFFFFFF>Chains of Warding Thunder</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 2 หน่วย และเรียก Chains of Warding Thunder",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24017,
+			"name": "Electro Crystal Core",
+			"descriptionraw": "[ติดตัว] เมื่อการต่อสู้เริ่มขึ้น ในตอนเริ่มจะได้รับ <color=#FFFFFFFF>$[C124015]</color>\\n<color=#FFFFFFFF>เมื่อแอ็กชันเฟสเริ่มต้น:</color> หากตัวละครนี้ยังไม่มี $[C124015] จะทำให้ตัวละครดังกล่าวได้รับ $[C124015] ใหม่อีกครั้ง (เกิดขึ้นมากสุด 2 ครั้ง ในหนึ่งการดูเอล)",
+			"descriptionreplaced": "[ติดตัว] เมื่อการต่อสู้เริ่มขึ้น ในตอนเริ่มจะได้รับ <color=#FFFFFFFF>Electro Crystal Core</color>\\n<color=#FFFFFFFF>เมื่อแอ็กชันเฟสเริ่มต้น:</color> หากตัวละครนี้ยังไม่มี Electro Crystal Core จะทำให้ตัวละครดังกล่าวได้รับ Electro Crystal Core ใหม่อีกครั้ง (เกิดขึ้นมากสุด 2 ครั้ง ในหนึ่งการดูเอล)",
+			"description": "[ติดตัว] เมื่อการต่อสู้เริ่มขึ้น ในตอนเริ่มจะได้รับ Electro Crystal Core\nเมื่อแอ็กชันเฟสเริ่มต้น: หากตัวละครนี้ยังไม่มี Electro Crystal Core จะทำให้ตัวละครดังกล่าวได้รับ Electro Crystal Core ใหม่อีกครั้ง (เกิดขึ้นมากสุด 2 ครั้ง ในหนึ่งการดูเอล)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "Rock-Paper-Scissors Combo: Scissor",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย จากนั้นจะ$[K53]: <color=#FFFFFFFF>$[S24016]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 2 หน่วย จากนั้นจะ<color=#FFFFFFFF>เตรียมสกิล</color>: <color=#FFFFFFFF>Rock-Paper-Scissors Combo: Paper</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 2 หน่วย จากนั้นจะเตรียมสกิล: Rock-Paper-Scissors Combo: Paper",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "Rock-Paper-Scissors Combo: Paper",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 3 หน่วย",
+			"description": "สร้างความเสียหายไฟฟ้า 3 หน่วย",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": []
+		},
+		{
+			"id": 34063,
+			"name": "Elemental Sedimentation: Electro",
+			"descriptionraw": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับสถานะ <color=#FFFFFFFF>$[C134061]</color>",
+			"descriptionreplaced": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับสถานะ <color=#FFFFFFFF>สิ่งมีชีวิตธาตุ: ไฟฟ้า</color>",
+			"description": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับสถานะ สิ่งมีชีวิตธาตุ: ไฟฟ้า",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

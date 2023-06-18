@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Electro Abyss Mage",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ธาตุไฟฟ้า",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Thunderbolt",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 1 หน่วย",
+			"description": "สร้างความเสียหายไฟฟ้า 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Lingering Light",
+			"descriptionraw": "เรียก <color=#FFFFFFFF>$[C134041]</color>",
+			"descriptionreplaced": "เรียก <color=#FFFFFFFF>Tanglebolt Ring</color>",
+			"description": "เรียก Tanglebolt Ring",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Rite of Rolling Thunder",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C134041]</color>",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 4 หน่วย และเรียก <color=#FFFFFFFF>Tanglebolt Ring</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 4 หน่วย และเรียก Tanglebolt Ring",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Electro Shield",
+			"descriptionraw": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับ <color=#FFFFFFFF>$[C134042]</color>",
+			"descriptionreplaced": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับ <color=#FFFFFFFF>Electro Shield</color>",
+			"description": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับ Electro Shield",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Broken Shield",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

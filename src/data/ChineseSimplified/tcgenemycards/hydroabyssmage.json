@@ -1,0 +1,97 @@
+{
+	"id": 3201,
+	"name": "水深渊法师",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"水元素",
+		"其他武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 32011,
+			"name": "水弹",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>。",
+			"description": "造成1点水元素伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32012,
+			"name": "泡影的祭法",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C132011]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，目标角色附属<color=#FFFFFFFF>水泡</color>。",
+			"description": "造成1点水元素伤害，目标角色附属水泡。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32013,
+			"name": "浮幻生灭之仪",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C132011]</color>。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成4点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，目标角色附属<color=#FFFFFFFF>水泡</color>。",
+			"description": "造成4点水元素伤害，目标角色附属水泡。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32014,
+			"name": "水元素护罩",
+			"descriptionraw": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C132012]</color>。",
+			"descriptionreplaced": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>水元素护罩</color>。",
+			"description": "【被动】战斗开始时，初始附属水元素护罩。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		},
+		{
+			"id": 32015,
+			"name": "护罩碎裂",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		}
+	]
+}

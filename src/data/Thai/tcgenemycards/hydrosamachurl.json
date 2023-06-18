@@ -1,0 +1,75 @@
+{
+	"id": 3202,
+	"name": "Hydro Samachurl",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"ธาตุน้ำ",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์",
+		"Hilichurl"
+	],
+	"skills": [
+		{
+			"id": 32021,
+			"name": "Staff Strike",
+			"descriptionraw": "จะสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "จะสร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 1 หน่วย",
+			"description": "จะสร้างความเสียหายกายภาพ 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32022,
+			"name": "Prayer for Rain",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C132021]</color>",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 1 หน่วย และเรียก <color=#FFFFFFFF>Healing Rain</color>",
+			"description": "สร้างความเสียหายน้ำ 1 หน่วย และเรียก Healing Rain",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32023,
+			"name": "Tidal Impact",
+			"descriptionraw": "จะสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "จะสร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 5 หน่วย",
+			"description": "จะสร้างความเสียหายน้ำ 5 หน่วย",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

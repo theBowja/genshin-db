@@ -1,0 +1,97 @@
+{
+	"id": 3104,
+	"name": "Tirailleur Fatui - Mitrailleur Cryo",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Cryo",
+		"Autre arme",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 31041,
+			"name": "Charge à courte portée",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31042,
+			"name": "Embrun verglaçant",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color>.",
+			"description": "Inflige 3 pts de DGT Cryo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31043,
+			"name": "Canon de givre",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et accorde un <color=#FFFFFFFF>$[C131041|s2]</color> au personnage.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color> et accorde un <color=#FFFFFFFF>équipement Cryo</color> au personnage.",
+			"description": "Inflige 3 pts de DGT Cryo et accorde un équipement Cryo au personnage.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31044,
+			"name": "Réapprovisionnement de combat",
+			"descriptionraw": "(Passif) Accorde 2 charges au personnage au début du combat.",
+			"descriptionreplaced": "(Passif) Accorde 2 charges au personnage au début du combat.",
+			"description": "(Passif) Accorde 2 charges au personnage au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 31045,
+			"name": "Brisure d'arme",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

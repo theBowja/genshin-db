@@ -1,0 +1,87 @@
+{
+	"id": 3105,
+	"name": "パタパタ氷マッシュロン",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"氷元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 31051,
+			"name": "胞子弾",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。",
+			"description": "氷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31052,
+			"name": "ローリングショット",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を3与える。",
+			"description": "氷元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31053,
+			"name": "急降下爆破",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を5与える。",
+			"description": "氷元素ダメージを5与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31054,
+			"name": "状態スイッチ",
+			"descriptionraw": "【固有】戦闘開始時、キャラは<color=#FFFFFFFF>$[C137011]</color>にある。\\nキャラが$[K103]を受けた後、<color=#FFFFFFFF>$[C137012]</color>へと変わる。\\nキャラが$[K104]を受けた後、<color=#FFFFFFFF>$[C137013]</color>へと変わる。",
+			"descriptionreplaced": "【固有】戦闘開始時、キャラは<color=#FFFFFFFF>空中優勢</color>にある。\\nキャラが{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を受けた後、<color=#FFFFFFFF>枯燥状態</color>へと変わる。\\nキャラが{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を受けた後、<color=#FFFFFFFF>活発状態</color>へと変わる。",
+			"description": "【固有】戦闘開始時、キャラは空中優勢にある。\nキャラが炎元素ダメージを受けた後、枯燥状態へと変わる。\nキャラが雷元素ダメージを受けた後、活発状態へと変わる。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

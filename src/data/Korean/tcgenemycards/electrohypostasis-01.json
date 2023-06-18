@@ -1,0 +1,121 @@
+{
+	"id": 4402,
+	"name": "무상의 뇌전",
+	"hp": 45,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"번개 원소",
+		"그 외 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 24011,
+			"name": "번개수정 투사",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 1pt 준다.",
+			"description": "번개 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24012,
+			"name": "가위바위보 콤보",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S24015]</color>와 <color=#FFFFFFFF>$[S24016]</color>의 $[K53]를 한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>가위바위보 콤보·가위</color>와 <color=#FFFFFFFF>가위바위보 콤보·보</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "번개 원소 피해를 2pt 주고 가위바위보 콤보·가위와 가위바위보 콤보·보의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 24013,
+			"name": "벼락 진압",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C124013]</color>을 소환한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>번개 사슬 봉인</color>을 소환한다.",
+			"description": "번개 원소 피해를 2pt 주고 번개 사슬 봉인을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24018,
+			"name": "번개수정 코어",
+			"descriptionraw": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>$[C124016]</color>가 부착된다.\\n<color=#FFFFFFFF>행동 단계 시작 시: </color>본 캐릭터에 $[C124016]가 부착되지 않았을 경우 다시 $[C124016]를 부착한다. (대전 중 최대 2회 발동)",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>번개수정 코어</color>가 부착된다.\\n<color=#FFFFFFFF>행동 단계 시작 시: </color>본 캐릭터에 번개수정 코어가 부착되지 않았을 경우 다시 번개수정 코어를 부착한다. (대전 중 최대 2회 발동)",
+			"description": "[패시브] 전투 시작 시, 처음부터 번개수정 코어가 부착된다.\n행동 단계 시작 시: 본 캐릭터에 번개수정 코어가 부착되지 않았을 경우 다시 번개수정 코어를 부착한다. (대전 중 최대 2회 발동)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 24015,
+			"name": "가위바위보 콤보·가위",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S24016]</color>의 $[K53]를 한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>가위바위보 콤보·보</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "번개 원소 피해를 2pt 주고 가위바위보 콤보·보의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": []
+		},
+		{
+			"id": 24016,
+			"name": "가위바위보 콤보·보",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 준다.",
+			"description": "번개 원소 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": []
+		},
+		{
+			"id": 34063,
+			"name": "원소 침적·번개",
+			"descriptionraw": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>$[C134061]</color>가 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 처음부터 <color=#FFFFFFFF>원소 생명체·번개</color>가 부착된다.",
+			"description": "[패시브] 전투 시작 시, 처음부터 원소 생명체·번개가 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

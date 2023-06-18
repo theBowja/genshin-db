@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "アビスの魔術師·雷",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "雷弾",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。",
+			"description": "雷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "光纏の祭法",
+			"descriptionraw": "<color=#FFFFFFFF>$[C134041]</color>を召喚する。",
+			"descriptionreplaced": "<color=#FFFFFFFF>雷纏の輪</color>を召喚する。",
+			"description": "雷纏の輪を召喚する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "転雷疾駆の儀",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C134041]</color>を召喚する。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を4与え、<color=#FFFFFFFF>雷纏の輪</color>を召喚する。",
+			"description": "雷元素ダメージを4与え、雷纏の輪を召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "雷元素バリア",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C134042]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>雷元素バリア</color>が付与される。",
+			"description": "【固有】戦闘開始時、雷元素バリアが付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "バリア破裂",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

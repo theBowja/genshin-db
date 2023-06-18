@@ -1,0 +1,97 @@
+{
+	"id": 3203,
+	"name": "우인단 선발대·물총 중보병",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"물 원소",
+		"그 외 무기",
+		"우인단"
+	],
+	"skills": [
+		{
+			"id": 32031,
+			"name": "전술적 충돌",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32032,
+			"name": "치유탄",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 아군 대기 캐릭터 2명의 HP를 1pt 치유한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 주고 아군 대기 캐릭터 2명의 HP를 1pt 치유한다.",
+			"description": "물 원소 피해를 2pt 주고 아군 대기 캐릭터 2명의 HP를 1pt 치유한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32033,
+			"name": "원소 증폭·물",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C132031]</color>이 부착된다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>원소 무장·물</color>이 부착된다.",
+			"description": "물 원소 피해를 3pt 주고 본 캐릭터에게 원소 무장·물이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32034,
+			"name": "장비 보급",
+			"descriptionraw": "[패시브] 전투 시작 시, 본 캐릭터가 원소 에너지를 2pt 획득한다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 본 캐릭터가 원소 에너지를 2pt 획득한다.",
+			"description": "[패시브] 전투 시작 시, 본 캐릭터가 원소 에너지를 2pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 32035,
+			"name": "총기 파괴",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

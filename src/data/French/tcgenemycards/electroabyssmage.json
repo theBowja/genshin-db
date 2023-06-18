@@ -1,0 +1,95 @@
+{
+	"id": 3404,
+	"name": "Électromage de l'Abîme",
+	"hp": 4,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Électro",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 34041,
+			"name": "Éclair",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color>.",
+			"description": "Inflige 1 pt de DGT Électro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34042,
+			"name": "Lumière persistante",
+			"descriptionraw": "Invoque un <color=#FFFFFFFF>$[C134041|s2]</color>.",
+			"descriptionreplaced": "Invoque un <color=#FFFFFFFF>anneau de tempête</color>.",
+			"description": "Invoque un anneau de tempête.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34043,
+			"name": "Rite du tonnerre hurlant",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque un <color=#FFFFFFFF>$[C134041|s2]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 4 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et invoque un <color=#FFFFFFFF>anneau de tempête</color>.",
+			"description": "Inflige 4 pts de DGT Électro et invoque un anneau de tempête.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34044,
+			"name": "Bouclier Électro",
+			"descriptionraw": "(Passif) Accorde un <color=#FFFFFFFF>$[C134042|s2]</color> au début du combat.",
+			"descriptionreplaced": "(Passif) Accorde un <color=#FFFFFFFF>bouclier Électro</color> au début du combat.",
+			"description": "(Passif) Accorde un bouclier Électro au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 34045,
+			"name": "Bouclier éclaté",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

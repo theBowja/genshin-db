@@ -1,0 +1,77 @@
+{
+	"id": 4204,
+	"name": "Aynalı Rahibe",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Su",
+		"Diğer Silahlar",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 22021,
+			"name": "Su Mermisi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "1 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22022,
+			"name": "Su Patlaması",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve hedef karaktere <color=#FFFFFFFF>$[C122021]</color> eklenir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve hedef karaktere <color=#FFFFFFFF>Kırılım</color> eklenir.",
+			"description": "2 Su Hasarı verir ve hedef karaktere Kırılım eklenir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22023,
+			"name": "Dalgalı Yansıma",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "5 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "5 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,107 @@
+{
+	"id": 5201,
+	"name": "アビスの魔術師·水",
+	"hp": 6,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"水元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 32011,
+			"name": "水弾",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。",
+			"description": "水元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32012,
+			"name": "泡影の祭法",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標キャラに<color=#FFFFFFFF>$[C132011]</color>を付与する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与え、目標キャラに<color=#FFFFFFFF>水の泡</color>を付与する。",
+			"description": "水元素ダメージを1与え、目標キャラに水の泡を付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32013,
+			"name": "浮幻生滅の儀",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標キャラに<color=#FFFFFFFF>$[C132011]</color>を付与する。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を4与え、目標キャラに<color=#FFFFFFFF>水の泡</color>を付与する。",
+			"description": "水元素ダメージを4与え、目標キャラに水の泡を付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32014,
+			"name": "水元素バリア",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C132012]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>水元素バリア</color>が付与される。",
+			"description": "【固有】戦闘開始時、水元素バリアが付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 32015,
+			"name": "バリア破裂",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 32016,
+			"name": "アビスの加護",
+			"descriptionraw": "【固有】バリアが破裂した状態でスキルを発動した後、<color=#FFFFFFFF>$[C132012]</color>が再び付与される。",
+			"descriptionreplaced": "【固有】バリアが破裂した状態でスキルを発動した後、<color=#FFFFFFFF>水元素バリア</color>が再び付与される。",
+			"description": "【固有】バリアが破裂した状態でスキルを発動した後、水元素バリアが再び付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

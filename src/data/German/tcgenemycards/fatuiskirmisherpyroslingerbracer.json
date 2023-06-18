@@ -1,0 +1,97 @@
+{
+	"id": 3306,
+	"name": "Fatui-Plänkler – Pyro-Kanonen-Freischärler",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Pyro",
+		"Andere Waffen",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 33061,
+			"name": "Einzelschuss",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33062,
+			"name": "Unterdrückungsfeuer",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33063,
+			"name": "Lavakanone",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C133061]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, erhält selbst <color=#FFFFFFFF>Elementarrüstung – Pyro</color>.",
+			"description": "Verursacht 3 Pkt. Pyro-SCH, erhält selbst Elementarrüstung – Pyro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33064,
+			"name": "Einsatzversorgung",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes selbst 2 Pkt. Aufladung.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 33065,
+			"name": "Waffenrüstungsriss",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}
