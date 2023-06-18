@@ -443,6 +443,9 @@ genshin.tcgcharactercards = genshin.tcgcharactercard = function (query, opts) {
 genshin.tcgdetailedrules = genshin.tcgdetailedrule = function (query, opts) {
     return retrieveData(query, Folder.tcgdetailedrules, opts);
 }
+genshin.tcgenemycards = genshin.tcgenemycard = function (query, opts) {
+    return retrieveData(query, Folder.tcgenemycards, opts);
+}
 genshin.tcgkeywords = genshin.tcgkeyword = function (query, opts) {
     return retrieveData(query, Folder.tcgkeywords, opts);
 }

@@ -26,6 +26,7 @@
 /// <reference path="./folders/tcgcardboxes.d.ts" />
 /// <reference path="./folders/tcgcharactercards.d.ts" />
 /// <reference path="./folders/tcgdetailedrules.d.ts" />
+/// <reference path="./folders/tcgenemycards.d.ts" />
 /// <reference path="./folders/tcgkeywords.d.ts" />
 /// <reference path="./folders/tcglevelrewards.d.ts" />
 /// <reference path="./folders/tcgstatuseffects.d.ts" />
