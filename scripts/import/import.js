@@ -704,10 +704,10 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "3.7"; // new data will use this as added version
+gameVersion = ""; // new data will use this as added version
 
-importData('characters', collateCharacter);
-importCurve('characters');
+// importData('characters', collateCharacter);
+// importCurve('characters');
 // getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
 // importData('constellations', collateConstellation);
@@ -731,7 +731,8 @@ importCurve('characters');
 // importData('achievementgroups');
 // importData('adventureranks'); // max 60
 
-// importData('tcgcharactercards');
+importData('tcgcharactercards');
+importData('tcgenemycards');
 // importData('tcgactioncards');
 // importData('tcgcardbacks');
 // importData('tcgcardboxes');
