@@ -1,0 +1,80 @@
+{
+	"id": 1308,
+	"name": "Yanfei",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Ateş",
+		"Katalizör",
+		"Liyue"
+	],
+	"storytitle": "Masum Bilgelik: Yanfei",
+	"storytext": "Klasikleri gözden geçirmeyen kişi, yasaları çiğnemiş olur.",
+	"source": "Yanfei'yi Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 13081,
+			"name": "Tasdik Mührü",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "1 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13082,
+			"name": "Kızıl Ferman",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, ayrıca bu karakter <color=#FFFFFFFF>$[C113081]</color> kuşanır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir, ayrıca bu karakter <color=#FFFFFFFF>Kızıl Mühür</color> kuşanır.",
+			"description": "3 Fiziksel Hasar verir, ayrıca bu karakter Kızıl Mühür kuşanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13083,
+			"name": "Son Karar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, ayrıca karakter <color=#FFFFFFFF>$[C113081]</color> ve <color=#FFFFFFFF>$[C113082]</color> kuşanır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir, ayrıca karakter <color=#FFFFFFFF>Kızıl Mühür</color> ve <color=#FFFFFFFF>Parlaklık</color> kuşanır.",
+			"description": "3 Fiziksel Hasar verir, ayrıca karakter Kızıl Mühür ve Parlaklık kuşanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

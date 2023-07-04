@@ -704,7 +704,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = ""; // new data will use this as added version
+gameVersion = "3.8"; // new data will use this as added version
 
 // importData('characters', collateCharacter);
 // importCurve('characters');
@@ -731,16 +731,16 @@ gameVersion = ""; // new data will use this as added version
 // importData('achievementgroups');
 // importData('adventureranks'); // max 60
 
-importData('tcgcharactercards');
-importData('tcgenemycards');
+// importData('tcgcharactercards');
+// importData('tcgenemycards');
 // importData('tcgactioncards');
 // importData('tcgcardbacks');
-// importData('tcgcardboxes');
-// importData('tcgdetailedrules');
-// importData('tcgkeywords');
-// importData('tcglevelrewards');
-// importData('tcgstatuseffects');
-// importData('tcgsummons');
+importData('tcgcardboxes');
+importData('tcgdetailedrules');
+importData('tcgkeywords');
+importData('tcglevelrewards');
+importData('tcgstatuseffects');
+importData('tcgsummons');
 
 // updateURLs(); // must be separate
 
