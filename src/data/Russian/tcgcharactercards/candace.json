@@ -1,0 +1,90 @@
+{
+	"id": 1207,
+	"name": "Кандакия",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Гидро",
+		"Древковое",
+		"Сумеру"
+	],
+	"storytitle": "Позолоченная клятва: Кандакия",
+	"storytext": "Золотом алых песков клянусь нести караул.",
+	"source": "Награда за приглашение Кандакии в «Кошкин хвост» и победу над ней в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12071,
+			"name": "Сверкающее копьё: Оборона",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12072,
+			"name": "Священный обряд: Обитель цапли",
+			"descriptionraw": "У персонажа добавляются <color=#FFFFFFFF>$[C112071]</color> и $[K53]: <color=#FFFFFFFF>$[S12074]</color>.",
+			"descriptionreplaced": "У персонажа добавляются <color=#FFFFFFFF>Защита цапли</color> и <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Удар цапли</color>.",
+			"description": "У персонажа добавляются Защита цапли и Подготовка навыка: Удар цапли.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12073,
+			"name": "Священный обряд: Прилив трясогузки",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., создаётся <color=#FFFFFFFF>$[C112072]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед., создаётся <color=#FFFFFFFF>Молитва алой короны</color>.",
+			"description": "Наносит Физический урон, 2 ед., создаётся Молитва алой короны.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12074,
+			"name": "Удар цапли",
+			"descriptionraw": "(На подготовку нужен 1 ход)\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(На подготовку нужен 1 ход)\\nНаносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 3 ед.",
+			"description": "(На подготовку нужен 1 ход)\nНаносит Физический урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": []
+		}
+	]
+}

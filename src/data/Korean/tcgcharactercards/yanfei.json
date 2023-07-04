@@ -1,0 +1,80 @@
+{
+	"id": 1308,
+	"name": "연비",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"불 원소",
+		"법구",
+		"리월"
+	],
+	"storytitle": "순수한 지혜·연비",
+	"storytext": "옛것을 익히려 하지 말고, 정해진 규칙을 본받지 말라",
+	"source": "캣테일 술집에서 연비 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 13081,
+			"name": "봉랍 인장",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 1pt 준다.",
+			"description": "물리 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13082,
+			"name": "단홍의 계약",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C113081]</color>을 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>단화인</color>을 부착한다.",
+			"description": "물리 피해를 3pt 주고 본 캐릭터에게 단화인을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13083,
+			"name": "계약 성립",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C113081]</color>과 <color=#FFFFFFFF>$[C113082]</color>을 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>단화인</color>과 <color=#FFFFFFFF>이글이글</color>을 부착한다.",
+			"description": "물리 피해를 3pt 주고 본 캐릭터에게 단화인과 이글이글을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
