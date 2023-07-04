@@ -557,6 +557,7 @@ async function collateMaterial(existing, newdata, lang, importconfig, skipimager
 	let copyover = ['name', 'dupealias', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
 					  'daysofweek', 'source'];
 	existing.name = newdata.name;
+	if (existing.sortorder) newdata.sortorder = existing.sortorder;
 	for(let prop of copyover) {
 		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
 	}
