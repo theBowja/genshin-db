@@ -2,7 +2,7 @@
 	"name": "Yanfei",
 	"combat1": {
 		"name": "Standardangriff: Flammendes Siegel",
-		"info": "**Standardangriff**\nSchießt mehrere Feuerbälle nacheinander ab und verursacht bis zu dreimal Pyro-Schaden.\nJeder Treffer gibt Yanfei ein flammendes Siegel. Kann anfänglich bis zu drei flammende Siegel besitzen. Bei jedem Auslösen wird die Dauer der vorhandenen flammenden Siegel aktualisiert.\nJedes flammende Siegel verringert Yanfeis Ausdauerverbrauch und verschwindet, wenn sie ausgewechselt wird.\n\n**Heftiger Schlag**\nVerbraucht Ausdauer sowie nach kurzem Aufladen alle flammenden Siegel und verursacht vor sich Pyro-Flächenschaden.\nVerstärkt basierend auf der Anzahl der verbrauchten flammenden Siegel die Reichweite und den Schaden des heftigen Schlags.\n\n**Angriff aus dem Fall**\nKonzentriert die Kraft des Feuers, schlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Pyro-Flächenschaden.",
+		"info": "**Standardangriff**\nSchießt mehrere Feuerbälle nacheinander ab und verursacht bis zu dreimal Pyro-Schaden.\nJeder Treffer gibt Yanfei ein Flammensiegel. Kann anfänglich bis zu drei Flammensiegel besitzen. Bei jedem Auslösen wird die Dauer der vorhandenen Flammensiegel aktualisiert.\nJedes Flammensiegel verringert Yanfeis Ausdauerverbrauch und verschwindet, wenn sie ausgewechselt wird.\n\n**Heftiger Schlag**\nVerbraucht Ausdauer sowie nach kurzem Aufladen alle Flammensiegel und verursacht vor sich Pyro-Flächenschaden.\nVerstärkt basierend auf der Anzahl der verbrauchten Flammensiegel die Reichweite und den Schaden des heftigen Schlags.\n\n**Angriff aus dem Fall**\nKonzentriert die Kraft des Feuers, schlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Pyro-Flächenschaden.",
 		"attributes": {
 			"labels": [
 				"SCH Phase 1|{param1:F1P}",
@@ -10,8 +10,8 @@
 				"SCH Phase 3|{param3:F1P}",
 				"SCH heftiger Schläge|{param4:P}, {param5:P}, {param6:P}, {param7:P}, {param8:P}",
 				"Ausdauerverbrauch heftiger Schläge|{param14:F1} Punkte",
-				"Verringerung des Ausdauerverbrauchs für flammende Siegel|{param15:F1P} pro Siegel",
-				"Dauer der flammenden Siegel|{param19:F1} s",
+				"Verringerung des Ausdauerverbrauchs für Flammensiegel|{param15:F1P} pro Siegel",
+				"Dauer der Flammensiegel|{param19:F1} s",
 				"SCH beim Fallen|{param16:F1P}",
 				"SCH beim Fallen aus niedriger/großer Höhe|{param17:P}/{param18:P}"
 			]
@@ -19,7 +19,7 @@
 	},
 	"combat2": {
 		"name": "Pakt des Feuers",
-		"info": "Beschwört lodernde Flammen und verursacht Pyro-Flächenschaden.\nBekommt beim Treffen von Gegnern die Höchstzahl an flammenden Siegeln.",
+		"info": "Beschwört lodernde Flammen und verursacht Pyro-Flächenschaden.\nBekommt beim Treffen von Gegnern die Höchstzahl an Flammensiegeln.",
 		"description": "Der Pakt des Feuers beinhaltet nicht nur die geltenden Gesetze, sondern auch die von Yanfei selbst formulierten Klauseln, denn der Rat für Allgemeine Angelegenheiten allein ist nicht in der Lage, die Naturgesetze zu ändern.",
 		"attributes": {
 			"labels": [
@@ -30,12 +30,12 @@
 	},
 	"combat3": {
 		"name": "Pakt des flammenden Infernos",
-		"info": "Beschwört Flammen des Infernos, greift Gegner in der Umgebung an und verursacht Pyro-Flächenschaden. Gibt dabei Yanfei die Höchstzahl an flammenden Siegeln und den Effekt Sengende Hitze.\n\n**Sengende Hitze**\nLöst folgende Effekte aus:\n· Gibt Yanfei in gleichen zeitlichen Abständen je ein flammendes Siegel.\n· Erhöht den Schaden heftiger Schläge.\nEndet, wenn Yanfei ausgewechselt wird.",
+		"info": "Beschwört Flammen des Infernos, greift Gegner in der Umgebung an und verursacht Pyro-Flächenschaden. Gibt dabei Yanfei die Höchstzahl an Flammensiegeln und den Effekt Sengende Hitze.\n\n**Sengende Hitze**\nLöst folgende Effekte aus:\n· Gibt Yanfei in gleichen zeitlichen Abständen je ein Flammensiegel.\n· Erhöht den Schaden heftiger Schläge.\nEndet, wenn Yanfei ausgewechselt wird.",
 		"description": "„Der Pakt zwischen uns von Leben und Tod ist nun vollständig. Demgemäß wirst du sterben und ich werde weiterleben.“",
 		"attributes": {
 			"labels": [
 				"Fähigkeits-SCH|{param1:P}",
-				"Intervall der flammenden Siegel|{param4:F1} s",
+				"Intervall der Flammensiegel|{param4:F1} s",
 				"SCH-Bonus für heftige Schläge|{param2:P}",
 				"Dauer|{param3:F1} s",
 				"Abklingzeit|{param5:F1} s",
@@ -45,7 +45,7 @@
 	},
 	"passive1": {
 		"name": "Koppelungsklausel",
-		"info": "Erhöht mit jedem verbrauchten flammenden Siegel durch heftige Schläge den Pyro-Schadensbonus 6 s lang um 5 %. Falls die Figur innerhalb der Wirkungsdauer des Effekts nochmals heftige Schläge anwendet, wird der vorige Effekt zuerst entfernt."
+		"info": "Erhöht mit jedem verbrauchten Flammensiegel durch heftige Schläge den Pyro-Schadensbonus 6 s lang um 5 %. Falls die Figur innerhalb der Wirkungsdauer des Effekts nochmals heftige Schläge anwendet, wird der vorige Effekt zuerst entfernt."
 	},
 	"passive2": {
 		"name": "Wachsame Argusaugen",

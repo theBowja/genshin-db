@@ -714,8 +714,8 @@ gameVersion = "3.8"; // new data will use this as added version
 // importData('talents', collateTalent);
 // importData('weapons', collateWeapon)
 // importCurve('weapons');
-// importData('artifacts', collateArtifact, undefined, false);
-// importData('foods');
+importData('artifacts', collateArtifact, undefined, false);
+importData('foods');
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains');
 // importData('enemies');
@@ -735,12 +735,12 @@ gameVersion = "3.8"; // new data will use this as added version
 // importData('tcgenemycards');
 // importData('tcgactioncards');
 // importData('tcgcardbacks');
-importData('tcgcardboxes');
-importData('tcgdetailedrules');
-importData('tcgkeywords');
-importData('tcglevelrewards');
-importData('tcgstatuseffects');
-importData('tcgsummons');
+// importData('tcgcardboxes');
+// importData('tcgdetailedrules');
+// importData('tcgkeywords');
+// importData('tcglevelrewards');
+// importData('tcgstatuseffects');
+// importData('tcgsummons');
 
 // updateURLs(); // must be separate
 
