@@ -717,20 +717,20 @@ gameVersion = "3.8"; // new data will use this as added version
 // importCurve('weapons');
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods');
-importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
+// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
 // importData('domains');
 // importData('enemies');
 // importCurve('enemies');
 
-// importData('outfits', collateOutfit);
-// importData('windgliders');
-// importData('animals');
-// importData('namecards');
-// importData('geographies');
-// importData('crafts');
-// importData('achievements');
-// importData('achievementgroups');
-// importData('adventureranks'); // max 60
+importData('outfits', collateOutfit);
+importData('windgliders');
+importData('animals');
+importData('namecards');
+importData('geographies');
+importData('crafts');
+importData('achievements');
+importData('achievementgroups');
+importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
 // importData('tcgenemycards');
