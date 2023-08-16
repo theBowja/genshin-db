@@ -1,0 +1,78 @@
+{
+	"id": 1108,
+	"name": "Qiqi",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Cryo",
+		"Espada",
+		"Liyue"
+	],
+	"storytitle": "Qiqi - Ressurreição Gélida",
+	"storytext": "O fluxo é eterno, a vida é eterna.",
+	"source": "Recompensa por desafiar Qiqi para um duelo na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com ela",
+	"skills": [
+		{
+			"id": 11081,
+			"name": "Arte da Espada Antiga",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11082,
+			"name": "Arte do Adeptus: Arauto da Floresta",
+			"descriptionraw": "Invoca <color=#FFFFFFFF>$[C111081]</color>.",
+			"descriptionreplaced": "Invoca <color=#FFFFFFFF>Arauto da Floresta</color>.",
+			"description": "Invoca Arauto da Floresta.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11083,
+			"name": "Arte do Adeptus: Preservador da Fortuna",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], gera <color=#FFFFFFFF>$[C111082]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2101}<color=#99FFFFFF>Dano Cryo</color>, gera <color=#FFFFFFFF>Talismã da Preservação da Fortuna</color>.",
+			"description": "Causa 3 pontos de Dano Cryo, gera Talismã da Preservação da Fortuna.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalyst",
+		"Mondstadt"
+	],
+	"storytitle": "\"Witch of Purple Rose\" Lisa",
+	"storytext": "Pursuing the arcane mysteries of magic, and waiting quietly for an encounter with truth.",
+	"source": "Reward for inviting Lisa to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Lightning Touch",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]:\\nIf this Skill is a $[K51]: Attach <color=#FFFFFFFF>$[C114091]</color> to the opponent's active character.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>:\\nIf this Skill is a <color=#FFFFFFFF>Charged Attack</color>: Attach <color=#FFFFFFFF>Conductive</color> to the opponent's active character.",
+			"description": "Deals 1 Electro DMG:\nIf this Skill is a Charged Attack: Attach Conductive to the opponent's active character.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Violet Arc",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If <color=#FFFFFFFF>$[C114091]</color> is not attached to the opponent's active character, <color=#FFFFFFFF>$[C114091]</color> will be attached.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>. If <color=#FFFFFFFF>Conductive</color> is not attached to the opponent's active character, <color=#FFFFFFFF>Conductive</color> will be attached.",
+			"description": "Deals 2 Electro DMG. If Conductive is not attached to the opponent's active character, Conductive will be attached.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Lightning Rose",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons <color=#FFFFFFFF>$[C114092]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, summons <color=#FFFFFFFF>Lightning Rose</color>.",
+			"description": "Deals 2 Electro DMG, summons Lightning Rose.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

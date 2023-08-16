@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalizador",
+		"Mondstadt"
+	],
+	"storytitle": "Lisa - La Bruja de las Rosas",
+	"storytext": "Busca los secretos de la magia y espera a que la verdad se revele.",
+	"source": "Se obtiene tras retar y ganar a Lisa en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Toque de relámpago",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].\\nSi esta habilidad se ejecuta en forma de $[K51], el personaje en combate enemigo será afectado por <color=#FFFFFFFF>$[C114091|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.\\nSi esta habilidad se ejecuta en forma de <color=#FFFFFFFF>Ataque Cargado</color>, el personaje en combate enemigo será afectado por <color=#FFFFFFFF>conducción</color>.",
+			"description": "Inflige 1 pt. de Daño Electro.\nSi esta habilidad se ejecuta en forma de Ataque Cargado, el personaje en combate enemigo será afectado por conducción.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Arco violeta",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y aplica el estado de <color=#FFFFFFFF>$[C114091|s1]</color> al personaje en combate enemigo si este aún no estaba afectado por él.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y aplica el estado de <color=#FFFFFFFF>conducción</color> al personaje en combate enemigo si este aún no estaba afectado por él.",
+			"description": "Inflige 2 pts. de Daño Electro y aplica el estado de conducción al personaje en combate enemigo si este aún no estaba afectado por él.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Rayo de la rosa",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] pts. de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C114092|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y crea una <color=#FFFFFFFF>rosa devastadora</color>.",
+			"description": "Inflige 2 pts. de Daño Electro y crea una rosa devastadora.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

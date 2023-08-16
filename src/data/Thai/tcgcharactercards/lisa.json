@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"ธาตุไฟฟ้า",
+		"สื่อเวท",
+		"Mondstadt"
+	],
+	"storytitle": "แม่มดกุหลาบ - Lisa",
+	"storytext": "แสวงหาความลึกลับแห่งเวทมนตร์ รอคอยโอกาสแห่งความจริง",
+	"source": "ได้รับหลังจากเชิญ Lisa ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Lightning Touch",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย\\nหากสกิลนี้เป็น$[K51] จะทำให้ตัวละครที่เข้าต่อสู้ของฝ่ายศัตรูได้รับ <color=#FFFFFFFF>$[C114091]</color>",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 1 หน่วย\\nหากสกิลนี้เป็น<color=#FFFFFFFF>ชาร์จโจมตี</color> จะทำให้ตัวละครที่เข้าต่อสู้ของฝ่ายศัตรูได้รับ <color=#FFFFFFFF>Conductive</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 1 หน่วย\nหากสกิลนี้เป็นชาร์จโจมตี จะทำให้ตัวละครที่เข้าต่อสู้ของฝ่ายศัตรูได้รับ Conductive",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Violet Arc",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย; หากตัวละครที่เข้าต่อสู้ยังไม่ได้รับ <color=#FFFFFFFF>$[C114091]</color> จะทำให้ได้รับ <color=#FFFFFFFF>$[C114091]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 2 หน่วย; หากตัวละครที่เข้าต่อสู้ยังไม่ได้รับ <color=#FFFFFFFF>Conductive</color> จะทำให้ได้รับ <color=#FFFFFFFF>Conductive</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 2 หน่วย; หากตัวละครที่เข้าต่อสู้ยังไม่ได้รับ Conductive จะทำให้ได้รับ Conductive",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Lightning Rose",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C114092]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 2 หน่วย และเรียก <color=#FFFFFFFF>Lightning Rose</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 2 หน่วย และเรียก Lightning Rose",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

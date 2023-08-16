@@ -1,0 +1,78 @@
+{
+	"id": 1108,
+	"name": "七七",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"氷元素",
+		"片手剣",
+		"璃月"
+	],
+	"storytitle": "冷たき黄泉帰り·七七",
+	"storytext": "止めどなく流れ、生まれ続ける。",
+	"source": "キャッツテールで七七を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 11081,
+			"name": "雲来古剣法",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11082,
+			"name": "仙法·寒病鬼差",
+			"descriptionraw": "<color=#FFFFFFFF>$[C111081]</color>を召喚する。",
+			"descriptionreplaced": "<color=#FFFFFFFF>寒病鬼差</color>を召喚する。",
+			"description": "寒病鬼差を召喚する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11083,
+			"name": "仙法·救苦度厄",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C111082]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を3与え、<color=#FFFFFFFF>度厄のお札</color>を生成する。",
+			"description": "氷元素ダメージを3与え、度厄のお札を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

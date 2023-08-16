@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Elektro",
+		"Katalysator",
+		"Mondstadt"
+	],
+	"storytitle": "Rosenhexe – Lisa",
+	"storytext": "Erforsche die Geheimnisse der Magie und warte darauf, dass die Wahrheit ans Licht kommt.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Lisa in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Elektrisierende Berührung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].\\nWenn es sich gerade bei dieser Fähigkeit um $[K51|s1] handelt, wird der aktiven Figur deines Gegners <color=#FFFFFFFF>$[C114091]</color> verliehen.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.\\nWenn es sich gerade bei dieser Fähigkeit um <color=#FFFFFFFF>heftige Schläge</color> handelt, wird der aktiven Figur deines Gegners <color=#FFFFFFFF>Blitzleiter</color> verliehen.",
+			"description": "Verursacht 1 Pkt. Elektro-SCH.\nWenn es sich gerade bei dieser Fähigkeit um heftige Schläge handelt, wird der aktiven Figur deines Gegners Blitzleiter verliehen.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Lila Lichtbogen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Verleiht der aktiven Figur des Gegners <color=#FFFFFFFF>$[C114091]</color>, wenn sie nicht hiervon betroffen ist.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>. Verleiht der aktiven Figur des Gegners <color=#FFFFFFFF>Blitzleiter</color>, wenn sie nicht hiervon betroffen ist.",
+			"description": "Verursacht 2 Pkt. Elektro-SCH. Verleiht der aktiven Figur des Gegners Blitzleiter, wenn sie nicht hiervon betroffen ist.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Rosenblitz",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C114092]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Rosenblitz</color>.",
+			"description": "Verursacht 2 Pkt. Elektro-SCH, erschafft 1 Rosenblitz.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

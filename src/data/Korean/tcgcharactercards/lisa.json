@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "리사",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"번개 원소",
+		"법구",
+		"몬드"
+	],
+	"storytitle": "장미 마녀·리사",
+	"storytext": "마도의 오의를 좇으며, 진실과 마주치는 순간을 조용히 기다린다",
+	"source": "캣테일 술집에서 리사 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "손끝의 뇌폭",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n해당 스킬이 $[K51]일 경우, 적 출전 캐릭터에게 <color=#FFFFFFFF>$[C114091]</color>를 부착한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 1pt 준다.\\n해당 스킬이 <color=#FFFFFFFF>강공격</color>일 경우, 적 출전 캐릭터에게 <color=#FFFFFFFF>전기 전도</color>를 부착한다.",
+			"description": "번개 원소 피해를 1pt 준다.\n해당 스킬이 강공격일 경우, 적 출전 캐릭터에게 전기 전도를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "창뢰",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 적 출전 캐릭터에게 <color=#FFFFFFFF>$[C114091]</color>가 부착되지 않았을 경우, 해당 캐릭터에게 <color=#FFFFFFFF>$[C114091]</color>가 부착된다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 2pt 준다. 적 출전 캐릭터에게 <color=#FFFFFFFF>전기 전도</color>가 부착되지 않았을 경우, 해당 캐릭터에게 <color=#FFFFFFFF>전기 전도</color>가 부착된다.",
+			"description": "번개 원소 피해를 2pt 준다. 적 출전 캐릭터에게 전기 전도가 부착되지 않았을 경우, 해당 캐릭터에게 전기 전도가 부착된다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "장미의 뇌광",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C114092]</color>을 소환한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>장미 뇌광</color>을 소환한다.",
+			"description": "번개 원소 피해를 2pt 주고 장미 뇌광을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

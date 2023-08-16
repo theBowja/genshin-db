@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalisador",
+		"Mondstadt"
+	],
+	"storytitle": "Lisa - Bruxa das Rosas",
+	"storytext": "Encontre os segredos da magia e aguarde silenciosamente pela verdade.",
+	"source": "Recompensa por desafiar Lisa para um duelo na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com ela",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Toque do Relâmpago",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] de $[D__KEY__ELEMENT]. Se essa Habilidade for um $[K51]: fará o Personagem em Combate do inimigo ser afetado por <color=#FFFFFFFF>$[C114091]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 1 de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>. Se essa Habilidade for um <color=#FFFFFFFF>Ataque Carregado</color>: fará o Personagem em Combate do inimigo ser afetado por <color=#FFFFFFFF>Condutor</color>.",
+			"description": "Causa 1 de Dano Electro. Se essa Habilidade for um Ataque Carregado: fará o Personagem em Combate do inimigo ser afetado por Condutor.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Arco Violeta",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] de $[D__KEY__ELEMENT]. Se <color=#FFFFFFFF>$[C114091]</color> não estiver aplicado ao Personagem em Combate inimigo, <color=#FFFFFFFF>$[C114091]</color> será adicionado.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 2 de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>. Se <color=#FFFFFFFF>Condutor</color> não estiver aplicado ao Personagem em Combate inimigo, <color=#FFFFFFFF>Condutor</color> será adicionado.",
+			"description": "Causa 2 de Dano Electro. Se Condutor não estiver aplicado ao Personagem em Combate inimigo, Condutor será adicionado.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Rosa do Relâmpago",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] de $[D__KEY__ELEMENT], invoca <color=#FFFFFFFF>$[C114092]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 2 de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>, invoca <color=#FFFFFFFF>Rosa do Relâmpago</color>.",
+			"description": "Causa 2 de Dano Electro, invoca Rosa do Relâmpago.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

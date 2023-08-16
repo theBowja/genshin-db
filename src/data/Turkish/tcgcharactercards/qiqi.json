@@ -1,0 +1,78 @@
+{
+	"id": 1108,
+	"name": "Qiqi",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Buz",
+		"Kılıç",
+		"Liyue"
+	],
+	"storytitle": "\"Buzul Diriliş\" Qiqi",
+	"storytext": "Sonsuz bir döngü bu, hayat devam ediyor.",
+	"source": "Qiqi'yi Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 11081,
+			"name": "Kadim Kılıç Sanatı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11082,
+			"name": "Adeptus Büyüsü: Ayazın Habercisi",
+			"descriptionraw": "<color=#FFFFFFFF>$[C111081]</color> çağırır.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Ayazın Habercisi</color> çağırır.",
+			"description": "Ayazın Habercisi çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11083,
+			"name": "Adeptus Büyüsü: Nazar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C111082]</color> oluşturur.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir ve 1 <color=#FFFFFFFF>Nazar Tılsımı</color> oluşturur.",
+			"description": "3 Buz Hasarı verir ve 1 Nazar Tılsımı oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}
