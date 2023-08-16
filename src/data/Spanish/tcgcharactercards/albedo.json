@@ -1,0 +1,78 @@
+{
+	"id": 1604,
+	"name": "Albedo",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Geo",
+		"Espada ligera",
+		"Mondstadt"
+	],
+	"storytitle": "Albedo - El Príncipe de la Roca Caliza",
+	"storytext": "La tierra negra y la roca caliza, la rubedo y el oro.",
+	"source": "Se obtiene tras retar y ganar a Albedo en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 16041,
+			"name": "Técnica de espada Favonius: Albor",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16042,
+			"name": "Abiogénesis: Isotoma solar",
+			"descriptionraw": "Crea una <color=#FFFFFFFF>$[C116041|s1]</color>.",
+			"descriptionreplaced": "Crea una <color=#FFFFFFFF>isotoma solar</color>.",
+			"description": "Crea una isotoma solar.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16043,
+			"name": "Creación: Marea tectónica",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si la <color=#FFFFFFFF>$[C116041|s1]</color> está en juego, daño +2.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>. Si la <color=#FFFFFFFF>isotoma solar</color> está en juego, daño +2.",
+			"description": "Inflige 4 pts. de Daño Geo. Si la isotoma solar está en juego, daño +2.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"id": 1604,
+	"name": "Альбедо",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Гео",
+		"Одноручное",
+		"Мондштадт"
+	],
+	"storytitle": "Принц мела: Альбедо",
+	"storytext": "Нигредо и Альбедо, Рубедо и Цитринитас.",
+	"source": "Награда за приглашение Альбедо в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 16041,
+			"name": "Фехтовальный стиль Фавония: Мел",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16042,
+			"name": "Абиогенез: Цветок солнца",
+			"descriptionraw": "Призывает помощника: <color=#FFFFFFFF>$[C116041]</color>.",
+			"descriptionreplaced": "Призывает помощника: <color=#FFFFFFFF>Цветок солнца</color>.",
+			"description": "Призывает помощника: Цветок солнца.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16043,
+			"name": "Ритуал рождения: Тектоническая волна",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если <color=#FFFFFFFF>$[C116041]</color> на поле битвы, урон увеличивается на 2 ед.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 4 ед. Если <color=#FFFFFFFF>Цветок солнца</color> на поле битвы, урон увеличивается на 2 ед.",
+			"description": "Наносит Гео урон, 4 ед. Если Цветок солнца на поле битвы, урон увеличивается на 2 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Лиза",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Электро",
+		"Катализатор",
+		"Мондштадт"
+	],
+	"storytitle": "Пурпурная ведьма: Лиза",
+	"storytext": "Познаёт глубокие тайны магии и спокойно ждёт встречи с истиной.",
+	"source": "Награда за приглашение Лизы в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Касание молнии",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.\\nЕсли навык - $[K51], то персонаж противника получает состояние <color=#FFFFFFFF>$[C114091]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед.\\nЕсли навык - <color=#FFFFFFFF>Заряженная атака</color>, то персонаж противника получает состояние <color=#FFFFFFFF>Проводник</color>.",
+			"description": "Наносит Электро урон, 1 ед.\nЕсли навык - Заряженная атака, то персонаж противника получает состояние Проводник.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Пурпурная дуга",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если у активного персонажа противника отсутствует состояние <color=#FFFFFFFF>$[C114091]</color>, то он его получает.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед. Если у активного персонажа противника отсутствует состояние <color=#FFFFFFFF>Проводник</color>, то он его получает.",
+			"description": "Наносит Электро урон, 2 ед. Если у активного персонажа противника отсутствует состояние Проводник, то он его получает.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Громовая роза",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Призывает помощника: <color=#FFFFFFFF>$[C114092]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед. Призывает помощника: <color=#FFFFFFFF>Громовая роза</color>.",
+			"description": "Наносит Электро урон, 2 ед. Призывает помощника: Громовая роза.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"id": 1604,
+	"name": "Albedo",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Geo",
+		"Sword",
+		"Mondstadt"
+	],
+	"storytitle": "\"Kreideprinz\" Albedo",
+	"storytext": "Nigredo dan Calx, Rubedo dan Citrinitas.",
+	"source": "Didapatkan setelah mengundang Albedo ke Cat's Tail dan menang dalam Pertandingan Persahabatan melawannya",
+	"skills": [
+		{
+			"id": 16041,
+			"name": "Favonius Bladework - Weiss",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16042,
+			"name": "Abiogenesis: Solar Isotoma",
+			"descriptionraw": "Memanggil <color=#FFFFFFFF>$[C116041]</color>.",
+			"descriptionreplaced": "Memanggil <color=#FFFFFFFF>Solar Isotoma</color>.",
+			"description": "Memanggil Solar Isotoma.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16043,
+			"name": "Rite of Progeniture: Tectonic Tide",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Jika <color=#FFFFFFFF>$[C116041]</color> berada di arena, mengakibatkan DMG +2.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Mengakibatkan 4 poin {SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>. Jika <color=#FFFFFFFF>Solar Isotoma</color> berada di arena, mengakibatkan DMG +2.",
+			"description": "Mengakibatkan 4 poin Geo DMG. Jika Solar Isotoma berada di arena, mengakibatkan DMG +2.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

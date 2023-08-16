@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Électro",
+		"Catalyseur",
+		"Mondstadt"
+	],
+	"storytitle": "Lisa · Sorcière à la rose",
+	"storytext": "La poursuite des mystères arcaniques de la magie et l'attente d'une rencontre avec la vérité...",
+	"source": "Récompense pour avoir invité Lisa à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Touche d'éclair",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].\\nSi cette capacité est une $[K51|s2] : Inflige l'état <color=#FFFFFFFF>$[C114091]</color> au personnage actif adverse.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color>.\\nSi cette capacité est une <color=#FFFFFFFF>attaque chargée</color> : Inflige l'état <color=#FFFFFFFF>Conductivité</color> au personnage actif adverse.",
+			"description": "Inflige 1 pt de DGT Électro.\nSi cette capacité est une attaque chargée : Inflige l'état Conductivité au personnage actif adverse.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Arc fulminant",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT]. Si le personnage actif adverse n'est pas affecté par l'effet <color=#FFFFFFFF>$[C114091]</color>, il subit l'effet <color=#FFFFFFFF>$[C114091]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color>. Si le personnage actif adverse n'est pas affecté par l'effet <color=#FFFFFFFF>Conductivité</color>, il subit l'effet <color=#FFFFFFFF>Conductivité</color>.",
+			"description": "Inflige 2 pts de DGT Électro. Si le personnage actif adverse n'est pas affecté par l'effet Conductivité, il subit l'effet Conductivité.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Rose de foudre",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque une <color=#FFFFFFFF>$[C114092|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et invoque une <color=#FFFFFFFF>rose de foudre</color>.",
+			"description": "Inflige 2 pts de DGT Électro et invoque une rose de foudre.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalyst",
+		"Mondstadt"
+	],
+	"storytitle": "\"Witch of Purple Rose\" Lisa",
+	"storytext": "Mencari rahasia misteri kekuatan sihir dan menanti kesempatan demi menemukan kebenaran.",
+	"source": "Didapatkan setelah mengundang Lisa ke Cat's Tail dan menang dalam Pertandingan Persahabatan melawannya",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Lightning Touch",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].\\nJika skill ini dilancarkan sebagai $[K51]: Memberikan status <color=#FFFFFFFF>$[C114091]</color> kepada Karakter Aktif lawan.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.\\nJika skill ini dilancarkan sebagai <color=#FFFFFFFF>Charged Attack</color>: Memberikan status <color=#FFFFFFFF>Conductive</color> kepada Karakter Aktif lawan.",
+			"description": "Mengakibatkan 1 poin Electro DMG.\nJika skill ini dilancarkan sebagai Charged Attack: Memberikan status Conductive kepada Karakter Aktif lawan.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Violet Arc",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Jika Karakter Aktif lawan belum terpengaruh status <color=#FFFFFFFF>$[C114091]</color>, maka akan memberikan status <color=#FFFFFFFF>$[C114091]</color> pada Karakter tersebut.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>. Jika Karakter Aktif lawan belum terpengaruh status <color=#FFFFFFFF>Conductive</color>, maka akan memberikan status <color=#FFFFFFFF>Conductive</color> pada Karakter tersebut.",
+			"description": "Mengakibatkan 2 poin Electro DMG. Jika Karakter Aktif lawan belum terpengaruh status Conductive, maka akan memberikan status Conductive pada Karakter tersebut.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Lightning Rose",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan memanggil <color=#FFFFFFFF>$[C114092]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color> dan memanggil <color=#FFFFFFFF>Lightning Rose</color>.",
+			"description": "Mengakibatkan 2 poin Electro DMG dan memanggil Lightning Rose.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

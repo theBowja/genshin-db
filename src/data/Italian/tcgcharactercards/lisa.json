@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalizzatore",
+		"Mondstadt"
+	],
+	"storytitle": "Lisa, Strega della Rosa purpurea",
+	"storytext": "Perseguendo i misteri arcani della magia e aspettando in silenzio un incontro con la verità.",
+	"source": "Ricompensa ottenuta sfidando Lisa a duello alla Coda di Gatto e battendola in un duello amichevole",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Tocco di fulmine",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\nQuando quest'abilità è un $[K51]: associa <color=#FFFFFFFF>$[C114091]</color> al personaggio attivo avversario.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>.\\nQuando quest'abilità è un <color=#FFFFFFFF>Attacco caricato</color>: associa <color=#FFFFFFFF>Conduzione</color> al personaggio attivo avversario.",
+			"description": "Infligge 1 DAN da Electro.\nQuando quest'abilità è un Attacco caricato: associa Conduzione al personaggio attivo avversario.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Tuono violetto",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Se <color=#FFFFFFFF>$[C114091]</color> non è associata al personaggio attivo avversario, associala.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>. Se <color=#FFFFFFFF>Conduzione</color> non è associata al personaggio attivo avversario, associala.",
+			"description": "Infligge 2 DAN da Electro. Se Conduzione non è associata al personaggio attivo avversario, associala.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Rosa fulminante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] e invoca 1 <color=#FFFFFFFF>$[C114092]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color> e invoca 1 <color=#FFFFFFFF>Rosa fulminante</color>.",
+			"description": "Infligge 2 DAN da Electro e invoca 1 Rosa fulminante.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

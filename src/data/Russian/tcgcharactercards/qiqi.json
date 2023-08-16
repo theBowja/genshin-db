@@ -1,0 +1,78 @@
+{
+	"id": 1108,
+	"name": "Ци Ци",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Крио",
+		"Одноручное",
+		"Ли Юэ"
+	],
+	"storytitle": "Ледяное воскрешение: Ци Ци",
+	"storytext": "Всё повторяется, жизнь идёт своим чередом.",
+	"source": "Награда за приглашение Ци Ци в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 11081,
+			"name": "Облачный меч",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11082,
+			"name": "Искусство Адепта: Вестник стужи",
+			"descriptionraw": "Призывает помощника: <color=#FFFFFFFF>$[C111081]</color>.",
+			"descriptionreplaced": "Призывает помощника: <color=#FFFFFFFF>Вестник стужи</color>.",
+			"description": "Призывает помощника: Вестник стужи.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11083,
+			"name": "Искусство Адепта: Хранитель Фортуны",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и создаёт <color=#FFFFFFFF>$[C111082]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 3 ед. и создаёт <color=#FFFFFFFF>Талисман Фортуны</color>.",
+			"description": "Наносит Крио урон, 3 ед. и создаёт Талисман Фортуны.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

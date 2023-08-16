@@ -1,0 +1,78 @@
+{
+	"id": 1604,
+	"name": "Albedo",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Geo",
+		"Einhänder",
+		"Mondstadt"
+	],
+	"storytitle": "Kreideprinz – Albedo",
+	"storytext": "Nigredo und Albedo, Rubedo und Citrinitas.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Albedo in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 16041,
+			"name": "Favonius-Schwertkunst – Weiß",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16042,
+			"name": "Chemische Evolution – Sonnennachbildung",
+			"descriptionraw": "Erschafft 1 <color=#FFFFFFFF>$[C116041]</color>.",
+			"descriptionreplaced": "Erschafft 1 <color=#FFFFFFFF>Sonnennachbildung</color>.",
+			"description": "Erschafft 1 Sonnennachbildung.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16043,
+			"name": "Fortpflanzung – Tektonische Welle",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]; diesmaliger Schaden +2, wenn <color=#FFFFFFFF>$[C116041]</color> auf dem Feld ist.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>; diesmaliger Schaden +2, wenn <color=#FFFFFFFF>Sonnennachbildung</color> auf dem Feld ist.",
+			"description": "Verursacht 4 Pkt. Geo-SCH; diesmaliger Schaden +2, wenn Sonnennachbildung auf dem Feld ist.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

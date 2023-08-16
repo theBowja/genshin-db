@@ -1,0 +1,80 @@
+{
+	"id": 1409,
+	"name": "Lisa",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Katalizör",
+		"Mondstadt"
+	],
+	"storytitle": "\"Mor Gül Cadısı\" Lisa",
+	"storytext": "Sihrin sırlarının peşinden gidip sessizce gerçekle karşılaşmayı bekliyorum.",
+	"source": "Lisa'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 14091,
+			"name": "Yıldırım Dokunuşu",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.\\nBu Beceri $[K51] olarak kullanıldığında rakibin aktif karakterine <color=#FFFFFFFF>$[C114091]</color> eklenir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.\\nBu Beceri <color=#FFFFFFFF>Yüklü Saldırı</color> olarak kullanıldığında rakibin aktif karakterine <color=#FFFFFFFF>İletken</color> eklenir.",
+			"description": "1 Elektrik Hasarı verir.\nBu Beceri Yüklü Saldırı olarak kullanıldığında rakibin aktif karakterine İletken eklenir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14092,
+			"name": "Mor Akım",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Rakibin aktif karakterine <color=#FFFFFFFF>$[C114091]</color> eklenmediyse eklenir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir. Rakibin aktif karakterine <color=#FFFFFFFF>İletken</color> eklenmediyse eklenir.",
+			"description": "2 Elektrik Hasarı verir. Rakibin aktif karakterine İletken eklenmediyse eklenir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14093,
+			"name": "Şimşek Gülü",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve <color=#FFFFFFFF>$[C114092]</color> çağırır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve <color=#FFFFFFFF>Şimşek Gülü</color> çağırır.",
+			"description": "2 Elektrik Hasarı verir ve Şimşek Gülü çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
