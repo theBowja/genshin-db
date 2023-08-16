@@ -705,7 +705,7 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "3.8"; // new data will use this as added version
+gameVersion = "4.0"; // new data will use this as added version
 
 // importData('characters', collateCharacter);
 // importCurve('characters');
@@ -722,15 +722,15 @@ gameVersion = "3.8"; // new data will use this as added version
 // importData('enemies');
 // importCurve('enemies');
 
-importData('outfits', collateOutfit);
-importData('windgliders');
-importData('animals');
-importData('namecards');
-importData('geographies');
-importData('crafts');
-importData('achievements');
-importData('achievementgroups');
-importData('adventureranks'); // max 60
+// importData('outfits', collateOutfit);
+// importData('windgliders');
+// importData('animals');
+// importData('namecards');
+// importData('geographies');
+// importData('crafts');
+// importData('achievements');
+// importData('achievementgroups');
+// importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
 // importData('tcgenemycards');

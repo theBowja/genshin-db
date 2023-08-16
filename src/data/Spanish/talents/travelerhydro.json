@@ -1,0 +1,206 @@
+{
+	"name": "Viajera (Hydro)",
+	"combat1": {
+		"name": "Ataque Normal: Desbordamiento extranjero",
+		"info": "**Ataque Normal**\nRealiza hasta 5 ataques consecutivos con espada.\n\n**Ataque Cargado**\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}",
+				"Daño de 5.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P} + {param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Espada ondulante",
+		"info": "Libera un aluvión que purifica la tierra.\n\n**Pulsar una vez**\nLanza una erupción torrencial hacia delante que inflige Daño Hydro al enemigo con el que impacta.\n\n**Mantener pulsado**\nApunta para liberar continuamente gotas de rocío, las cuales infligen Daño Hydro al enemigo con el que impactan.\nAl terminar, lanza hacia delante una erupción torrencial que inflige Daño Hydro al enemigo golpeado.\nProfusión: al mantener pulsado para liberar la habilidad, si {F#la Viajera}{M#el Viajero} tiene más del 50% de Vida, el daño de las gotas de rocío aumenta en función de su propia Vida Máx. y, además, pierde cierta cantidad de Vida por segundo.\n\n**Arjé: pneuma**\nCada cierto tiempo tras lanzar la erupción torrencial, aparecerá una espina halitoespiritual que inflige Daño Hydro cargado de energía pneuma.",
+		"description": "Observaste con Paimon las ondas que se producen en la superficie del agua.",
+		"attributes": {
+			"labels": [
+				"Daño de erupción torrencial|{param2:F1P}",
+				"Daño de gotas de rocío|{param1:F1P}",
+				"Daño de espina halitoespiritual|{param3:F1P}",
+				"Intervalo de espina halitoespiritual|{param4:F1} s",
+				"Consumo de Vida de profusión|{param5:F2P} de Vida Máx.",
+				"Aumento de daño de profusión|{param6:F2P} de Vida Máx.",
+				"Duración de mantener pulsado|máx. {param9:F1} s",
+				"TdE|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Correntada ascendente",
+		"info": "Libera una burbuja flotante que se mueve lentamente e inflige continuamente Daño Hydro a los enemigos cercanos.",
+		"description": "Investigaste con Paimon la subida y bajada de las mareas.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Duración|{param2:F1} s",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Aguas prístinas",
+		"info": "Cuando las gotas de rocío lanzadas al mantener pulsado **Espada ondulante** golpean a un enemigo, cerca {F#de la Viajera}{M#del Viajero} se crea una gota primigenia. Al recogerla, {F#la Viajera}{M#el Viajero} recupera un 7% de Vida.\nSolo se puede crear una gota primigenia por segundo de esta manera, y se podrán liberar hasta un máximo de 4 cada vez que se utilice Espada ondulante."
+	},
+	"passive2": {
+		"name": "Aguas cristalinas",
+		"info": "Si se consume Vida con el efecto de profusión al mantener pulsado **Espada ondulante**, el daño de la erupción torrencial creada tras terminar de liberar dicha habilidad aumenta en un 45% de la Vida total consumida por {F#la Viajera}{M#el Viajero} con el efecto de profusión mientras se liberaba la habilidad.\nComo máximo, el daño puede aumentar en 5000 pts. de esta manera."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la ecuanimidad",
+				"count": 3
+			},
+			{
+				"name": "Condensado engendroceánico",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 2
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía del orden",
+				"count": 4
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la ecuanimidad",
+				"count": 6
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 9
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 4
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 4
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la ecuanimidad",
+				"count": 6
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 6
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 12
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 9
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 16
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 12
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

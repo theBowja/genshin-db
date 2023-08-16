@@ -1,0 +1,210 @@
+{
+	"name": "Lynette",
+	"combat1": {
+		"name": "Attaque normale : Rapière rapide",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups d'épée.\n\n**Attaque chargée**\nConsomme de l'endurance pour déclencher deux coups d'épée rapides.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}",
+				"DGT attaque chargée|{param6:F1P}+{param7:F1P}",
+				"Coût d'endurance attaque chargée|{param8:F1} pts",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Feinte sibylline",
+		"info": "Balance sa cape et déclenche une aiguille énigmatique infligeant des DGT Anémo.\nLorsqu'une aiguille énigmatique touche un ennemi, Lynette récupère des PV selon ses PV max, avant de perdre, pendant les 4 s qui suivent, une certaine quantité de PV à chaque seconde.\nL'aiguille énigmatique est utilisée différemment selon la méthode de déclenchement :\n\n**Appui simple**\nUtilise rapidement une aiguille énigmatique.\n\n**Appui long**\nLynette entre dans l'état Logogriphe qui permet de se déplacer à grande vitesse, et applique une saillie sombre à un ennemi proche. Pendant ce déplacement, Lynette peut contrôler la direction de sa course et peut s'arrêter en utilisant à nouveau la compétence.\nLorsque cet état rapide prend fin, Lynette déclenche son aiguille énigmatique. Si un ennemi marqué d'une saillie sombre est à proximité, Lynette s'en approche en un éclair avant d'utiliser son aiguille énigmatique.\n\nIl ne peut y avoir qu'un seul ennemi marqué d'une saillie sombre de Lynette à la fois, et lorsqu'un ennemi ainsi marqué s'éloigne trop, la saillie s'annule.\n\n**Arkhe : Ousia**\nRégulièrement, lorsque Lynette utilise une aiguille énigmatique, elle déclenche une lame fluide pour infliger des DGT Anémo chargés d'énergie ousia.",
+		"description": "« Tournez maintenant vos yeux vers la scène et profitez de la performance ! La prochaine fois que j'apparaîtrai, je serai là où vous vous y attendez le moins. »",
+		"attributes": {
+			"labels": [
+				"DGT aiguille énigmatique|{param1:F1P}",
+				"DGT lame fluide|{param3:F1P}",
+				"Intervalle de lame fluide|{param8:F1} s",
+				"Soins de PV|{param4:P} PV max",
+				"Coût de PV|{param6:P} PV actuels/s",
+				"Durée max (appui long)|{param9:F1} s",
+				"Temps de recharge|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Magie : Variation étonnante",
+		"info": "Lynette lève sa cape en hauteur pour infliger des DGT Anémo de zone et utilise un tour de passe-passe pour faire apparaître une boîte minestyque géante !\n\n**Boîte minestyque**\n· Nargue les ennemis proches et attire leurs attaques.\n· Inflige des DGT Anémo aux ennemis proches de façon régulière.\n· Lorsqu'une boîte minestyque entre en contact avec l'élément Hydro, Pyro, Cryo ou Électro, elle absorbe l'élément correspondant et tire en plus des balles bariolées de façon régulière sur les ennemis proches pour infliger des DGT de cet élément.\nUne seule réaction d'absorption élémentaire peut avoir lieu par utilisation.",
+		"description": "« Par ici, par ici. Regardez attentivement. C'est le moment du miracle, rien que pour nous ! »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT boîte minestyque|{param2:F1P}",
+				"DGT balle bariolée|{param3:F1P}",
+				"Durée de boîte minestyque|{param4:F1} s",
+				"Temps de recharge|{param5:F1} s",
+				"Énergie élémentaire|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Synergie ingénieuse",
+		"info": "Si l'équipe comprend des personnages de 1/2/3/4 types élémentaires, l'ATQ de tous les personnages de l'équipe augmente respectivement de 8/12/16/20 % pendant 10 s après l'utilisation de **Magie : Variation étonnante**."
+	},
+	"passive2": {
+		"name": "Apprêt d'accessoires",
+		"info": "Lorsqu'une boîte minestyque invoquée par **Magie : Variation étonnante** a effectué une absorption élémentaire, les DGT infligés par les déchaînements élémentaires de Lynette augmentent de 15 %. Cet effet dure jusqu'à la disparition de la boîte minestyque."
+	},
+	"passive3": {
+		"name": "Mnémoniques de localisation",
+		"info": "Affiche l'emplacement des **globes de revitalisation** sur la mini-carte et permet d'augmenter l'endurance aquatique et les PV récupérés en touchant ces globes de 25 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Ordre",
+				"count": 3
+			},
+			{
+				"name": "Engrenage de maillage",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 2
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 6
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 9
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 4
+			},
+			{
+				"name": "Constambre",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 6
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 6
+			},
+			{
+				"name": "Constambre",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 12
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 9
+			},
+			{
+				"name": "Constambre",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 16
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 12
+			},
+			{
+				"name": "Constambre",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

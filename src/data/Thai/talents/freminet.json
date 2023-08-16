@@ -1,0 +1,213 @@
+{
+	"name": "Freminet",
+	"combat1": {
+		"name": "โจมตีปกติ: Flowing Eddies",
+		"info": "**โจมตีปกติ**\nโจมตีต่อเนื่องมากสุด 4 ครั้ง\n\n**ชาร์จโจมตี**\nใช้พลังกายอย่างต่อเนื่อง เพื่อหมุนโจมตีศัตรูรอบตัวด้วยดาบขนาดใหญ่\nเมื่อหยุดหมุนจะทำการฟันเพิ่มอย่างรุนแรงอีกหนึ่งครั้ง\n\n**โจมตีพุ่งลงจากอากาศ**\nกระโจนจากกลางอากาศลงมายังพื้นดิน เพื่อโจมตีศัตรูที่อยู่ในเส้นทางการโจมตี โดยจะสร้างความเสียหายวงกว้างเมื่อลงถึงพื้น",
+		"attributes": {
+			"labels": [
+				"ความเสียหายขั้น 1|{param1:F1P}",
+				"ความเสียหายขั้น 2|{param2:F1P}",
+				"ความเสียหายขั้น 3|{param3:F1P}",
+				"ความเสียหายขั้น 4|{param4:F1P}",
+				"ความเสียหายขณะชาร์จโจมตี|{param5:F1P}",
+				"ความเสียหายชาร์จโจมตีครั้งสุดท้าย|{param6:P}",
+				"ชาร์จโจมตีใช้พลังกาย|{param7:F1} หน่วย/วิ",
+				"ระยะเวลาต่อเนื่องสูงสุด|{param8:F1} วิ",
+				"ความเสียหายพุ่งลง|{param9:F1P}",
+				"ความเสียหายพุ่งถึงพื้นจากที่ต่ำ/สูง|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Pressurized Floe",
+		"info": "โจมตีงัดขึ้นด้านบน เพื่อสร้างความเสียหายน้ำแข็ง และเข้าสู่สถานะ Pers Timer เป็นเวลา 10 วินาที\nเมื่ออยู่ภายใต้สถานะ Pers Timer สกิลธาตุของ Freminet จะกลายเป็น Shattering Pressure\n\n**Shattering Pressure**\nสร้างการโจมตีที่แตกต่างกันไปตามระดับความดันของ Pers Timer พร้อมทั้งล้างสถานะ Pers Timer ไป\n·ระดับ 0: ฟาดฟันดาบแนวตรง เพื่อสร้างความเสียหายน้ำแข็ง\n·ระดับ 1 - 3: ฟาดฟันดาบแนวตรงพร้อมกับ Pers และสร้างความเสียหายน้ำแข็งและความเสียหายกายภาพ โดยที่ปริมาณความเสียหายจะต่างกันไปตามระดับความดัน\n·ระดับ 4: หยิบยืมพลังจาก Pers ที่มีความดันเต็มเกจ เพื่อสร้างความเสียหายกายภาพ ขณะเดียวกัน \"โจมตีปกติ: Flowing Eddies\" จะถูกแทนที่ด้วย Shattering Pressure\n\n**Pers Timer**\nเมื่อ Freminet โจมตีปกติ จะปล่อยไอยะเยือกสร้างความเสียหายน้ำแข็งในเวลาเดียวกัน พร้อมทั้งเพิ่มระดับความดันให้กับ Pers\nความเสียหายน้ำแข็งที่เกิดขึ้นในเวลาเดียวกันนั้น จะถูกนับว่าเป็นความเสียหายสกิลธาตุ\n\n**พลังปฐมภูมิ: วิญญาณ**\nทุกช่วงระยะเวลาหนึ่ง หลังจากทำการโจมตีงัดขึ้น จะเกิดเป็น Spiritbreath Thorn ที่โจมตีงัดขึ้น เพื่อสร้างความเสียหายน้ำแข็งที่มีพลังวิญญาณ",
+		"description": "หากพูดกันในแง่หนึ่งแล้ว การเลือกขัดขวางการเคลื่อนไหวของคู่ต่อสู้ แทนที่จะปลิดชีวิตฝ่ายตรงข้าม ก็เป็นอีกหนึ่งกลยุทธ์ในการ \"เอาชีวิตรอด\" เช่นกัน\n\"Pers... ที่เหลือฝากด้วยนะ\"",
+		"attributes": {
+			"labels": [
+				"ความเสียหายโจมตีงัดขึ้น|{param1:F1P}",
+				"ความเสียหายไอยะเยือก|{param3:F1P}",
+				"ความเสียหาย Shattering Pressure ระดับ 0|{param4:F1P}",
+				"ความเสียหาย Shattering Pressure ระดับ 1|ธาตุน้ำแข็ง {param5:F1P} +กายภาพ {param6:F1P}",
+				"ความเสียหาย Shattering Pressure ระดับ 2|ธาตุน้ำแข็ง {param7:F1P} +กายภาพ {param8:F1P}",
+				"ความเสียหาย Shattering Pressure ระดับ 3|ธาตุน้ำแข็ง {param9:F1P} +กายภาพ {param10:F1P}",
+				"ความเสียหาย Shattering Pressure ระดับ 4|{param11:F1P}",
+				"ความเสียหาย Spiritbreath Thorn|{param2:F1P}",
+				"ช่วงเวลาเกิด Spiritbreath Thorn|ทุก {param13:F1} วิ",
+				"คูลดาวน์|{param12:F1} วิ"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Shadowhunter's Ambush",
+		"info": "ปลดปล่อยไอยะเยือกที่จับต้องไม่ได้ และสร้างความเสียหายน้ำแข็งวงกว้าง รีเซ็ตคูลดาวน์ของสกิลธาตุ Pressurized Floe และเข้าสู่โหมดล่าใต้น้ำเป็นเวลา 10 วินาที\n\nFreminet ในโหมดล่าใต้น้ำ จะมีความสามารถในการต้านทานการหยุดชะงักเพิ่มขึ้น และสกิลธาตุ Pressurized Floe จะได้รับบัฟดังต่อไปนี้:\n·ช่วงเวลาคูลดาวน์สั้นลง 70%\n·การโจมตีปกติจะสร้างระดับความดันให้กับ Pers เพิ่มเติมอีก 1 ระดับ และไอยะเยือกที่เกิดจากการโจมตีปกติจะสร้างความเสียหายเพิ่มขึ้นเป็น 200% จากของเดิม\n\nเอฟเฟกต์นี้จะหายไปเมื่อ Freminet ออกจากการต่อสู้",
+		"description": "\"ตอนนี้... ไม่ต้องการเสียงอึกทึกอันไร้ประโยชน์อีกต่อไปแล้วล่ะ\"",
+		"attributes": {
+			"labels": [
+				"ความเสียหายสกิล|{param1:F1P}",
+				"ระยะเวลาต่อเนื่อง|{param2:F1} วิ",
+				"คูลดาวน์|{param3:F1} วิ",
+				"พลังงานธาตุ|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Saturation Deep Dive",
+		"info": "เมื่อใช้ **Pressurized Floe: Shattering Pressure** โดยที่ Pers Timer มีความดันต่ำกว่าระดับ 4 ช่วงเวลาคูลดาวน์ของ Pressurized Floe จะลดลง 1 วินาที"
+	},
+	"passive2": {
+		"name": "Parallel Condensers",
+		"info": "หลังจาก Freminet สร้างปฏิกิริยาน้ำแข็งแตกแก่ศัตรู จะทำให้ **Pressurized Floe: Shattering Pressure** สร้างความเสียหายเพิ่มขึ้น 40% เป็นเวลา 5 วินาที"
+	},
+	"passive3": {
+		"name": "Deepwater Navigation",
+		"info": "ลดอัตราการเสียพลังกายในน้ำ ให้ตัวละครของตนเองที่อยู่ในทีมลง 35%\nไม่สามารถซ้อนทับพรสวรรค์ติดตัวที่เอฟเฟกต์เหมือนกันทุกประการได้"
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Justice",
+				"count": 3
+			},
+			{
+				"name": "Transoceanic Pearl",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 2
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 4
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 6
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 9
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 4
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 4
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 6
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 6
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 12
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 9
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 16
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 12
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,210 @@
+{
+	"name": "Lynette",
+	"combat1": {
+		"name": "Ataque Normal: Estocada veloz",
+		"info": "**Ataque Normal**\nRealiza hasta 4 ataques consecutivos con espada.\n\n**Ataque Cargado**\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P} + {param4:F1P}",
+				"Daño de 4.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P} + {param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ahora me ves...",
+		"info": "Se cubre con una capa y ejecuta una acometida enigmática que inflige Daño Anemo.\nCuando la acometida enigmática golpee a un enemigo, Lynette recupera Vida en función de su Vida Máx. y, en los 4 s siguientes, perderá cierta cantidad de Vida por segundo.\nLa acometida enigmática producirá un efecto distinto dependiendo de si pulsas una vez o mantienes pulsada la habilidad.\n\n**Pulsar una vez**\nEjecuta una acometida enigmática de manera inmediata.\n\n**Mantener pulsado**\nLynette entra en el estado de “sombra enigmática”, durante el cual se mueve a toda velocidad y aplica una “marca de estoque sombrío” a un enemigo cercano. Mientras se mueve, puede controlar la dirección en la que esprinta y, al volver a pulsar una vez la habilidad, terminará de correr.\nCuando dicho estado termina, Lynette ejecuta una acometida enigmática. Si hay algún enemigo cercano con una marca de estoque sombrío, Lynette se acercará a él en un instante antes de ejecutar la acometida enigmática.\n\nComo máximo, Lynette solo puede aplicar una marca de estoque sombrío a un enemigo, y si dicho enemigo se encuentra demasiado lejos de ella, la marca desaparecerá.\n\n**Arjé: ousía**\nCada cierto tiempo, cuando Lynette ejecuta una acometida enigmática, en su lugar libera un filo fluyente cargado de energía ousía que inflige Daño Anemo.",
+		"description": "“Y ahora, mira hacia el escenario y sigue disfrutando del espectáculo. La próxima vez que aparezca, será donde menos te lo esperes”.",
+		"attributes": {
+			"labels": [
+				"Daño de acometida enigmática|{param1:F1P}",
+				"Daño de filo fluyente|{param3:F1P}",
+				"Intervalo de filo fluyente|{param8:F1} s",
+				"Curación al golpear|{param4:P} de Vida Máx.",
+				"Consumo de Vida|{param6:P} de Vida actual/s",
+				"Duración máx. al mantener pulsado|{param9:F1} s",
+				"TdE|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Truco: Desvío de atención",
+		"info": "Lynette alza su capa para infligir Daño Anemo en el AdE y, con un hábil juego de manos, ¡hace aparecer una michicaja sorpresa gigante!\n\n**Michicaja sorpresa**\n·Provoca a los enemigos cercanos para que la ataquen.\n·Inflige Daño Anemo periódicamente a los enemigos cercanos.\n·Cuando la michicaja sorpresa entra en contacto con Hydro/Pyro/Cryo/Electro, cambiará al elemento correspondiente y cada cierto tiempo disparará contra un enemigo un proyectil michicromático que inflige daño de dicho elemento.\nEste tipo de cambio elemental solo puede ocurrir una vez mientras dura la habilidad.",
+		"description": "“Mira aquí, fíjate bien. Es nuestro momento: el momento del milagro”.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de michicaja sorpresa|{param2:F1P}",
+				"Daño de proyectil michicromático|{param3:F1P}",
+				"Duración de michicaja sorpresa|{param4:F1} s",
+				"TdE|{param5:F1} s",
+				"Energía Elemental|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Sinergia oportuna",
+		"info": "En los 10 s siguientes tras utilizar **Truco: Desvío de atención**, si en el equipo hay 1/2/3/4 personajes de tipos elementales distintos, el ATQ de todos los miembros del equipo aumenta en un 8/12/16/20%."
+	},
+	"passive2": {
+		"name": "Atrezo preparado",
+		"info": "Cuando la michicaja sorpresa de **Truco: Desvío de atención** sufre un cambio elemental, el daño de la Habilidad Definitiva de Lynette aumenta en un 15% hasta que termine la duración de la michicaja."
+	},
+	"passive3": {
+		"name": "Hidrolocalización",
+		"info": "Muestra la ubicación de los **bancos de peces revitalizantes** cercanos en el minimapa y aumenta en un 25% la Resistencia Acuática y la Vida recuperados al tocar uno."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas del orden",
+				"count": 3
+			},
+			{
+				"name": "Engranaje de malla",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía del orden",
+				"count": 2
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía del orden",
+				"count": 4
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía del orden",
+				"count": 6
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía del orden",
+				"count": 9
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 4
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 4
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 6
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 6
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 12
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 9
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 16
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 12
+			},
+			{
+				"name": "Instante del mar arbóreo",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,206 @@
+{
+	"name": "Voyageuse (Hydro)",
+	"combat1": {
+		"name": "Attaque normale : Débordement étranger",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 5 coups d'épée.\n\n**Attaque chargée**\nConsomme de l'endurance pour déclencher deux coups d'épée rapides.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT 5e coup|{param5:F1P}",
+				"DGT attaque chargée|{param6:F1P}+{param7:F1P}",
+				"Coût d'endurance attaque chargée|{param8:F1} pts",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Sabre d'ondulation",
+		"info": "Libère un torrent qui peut purifier le monde.\n\n**Appui simple**\nEnvoie un courant torrentiel vers l'avant, infligeant des DGT Hydro aux ennemis touchés.\n\n**Appui long**\nBascule en mode visée pour lancer de façon continue des gouttes de rosée dans la direction ciblée, infligeant des DGT Hydro aux ennemis touchés.\nLorsque le mode visée se termine, un courant torrentiel est envoyé vers l'avant, infligeant des DGT Hydro aux ennemis touchés.\nProfusion : lors de l'appui long, si les PV {M#du voyageur}{F#de la voyageuse} sont supérieurs à 50 %, les DGT de ses gouttes de rosée augmentent en fonction de ses PV max et {M#il}{F#elle} perd une quantité fixe de PV à chaque seconde.\n\n**Arkhe : Pneuma**\nRégulièrement, après avoir envoyé un courant torrentiel, une épine d'inhalation qui transperce les ennemis est libérée pour infliger des DGT Hydro chargés d'énergie pneuma.",
+		"description": "Paimon et vous avez étudié les ondulations qui parcourent l'eau.",
+		"attributes": {
+			"labels": [
+				"DGT courant torrentiel|{param2:F1P}",
+				"DGT goutte de rosée|{param1:F1P}",
+				"DGT épine d'inhalation|{param3:F1P}",
+				"Intervalle d'épine d'inhalation|{param4:F1} s",
+				"Coût de PV de profusion|{param5:F2P} PV max",
+				"Bonus de DGT de profusion|{param6:F2P} PV max",
+				"Durée d'appui long|{param9:F1} s max",
+				"Temps de recharge|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Montée des eaux",
+		"info": "Libère une bulle flottante lente qui inflige de façon continue des DGT Hydro aux ennemis proches.",
+		"description": "Paimon et vous avez étudié les fluctuations qui rythment les marées...",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"Durée|{param2:F1} s",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Eau pure",
+		"info": "Lorsqu'une goutte de rosée lancée en maintenant **Sabre d'ondulation** a touché un ennemi, une goutte d'eau de source apparaît à proximité {M#du voyageur}{F#de la voyageuse}. En la ramassant, {M#ce dernier}{F#cette dernière} récupère 7 % de PV.\nUne goutte d'eau de source peut être créée de cette manière une fois toutes les secondes, et chaque utilisation de Sabre d'ondulation permet de créer un maximum de 4 gouttes d'eau de source."
+	},
+	"passive2": {
+		"name": "Eau claire",
+		"info": "Si des PV ont été consommés lors d'une profusion en maintenant **Sabre d'ondulation**, les DGT du courant torrentiel à la fin augmentent d'une valeur équivalant à 45 % de PV consommés par {M#le voyageur}{F#la voyageuse} lors de la profusion en question.\nLes DGT peuvent être augmentés d'un maximum de 5 000 pts de cette manière."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Équité",
+				"count": 3
+			},
+			{
+				"name": "Perle transocéanique",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 2
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Équité",
+				"count": 6
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 9
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 4
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Équité",
+				"count": 6
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 6
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 12
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 9
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 16
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 12
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

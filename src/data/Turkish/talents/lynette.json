@@ -1,0 +1,210 @@
+{
+	"name": "Lynette",
+	"combat1": {
+		"name": "Normal Saldırı: Seri Tören Kılıcı",
+		"info": "**Normal Saldırı**\nEn fazla 4 hızlı saldırı yapar.\n\n**Yüklü Saldırı**\nBelirli miktarda Dayanıklılık harcayarak 2 hızlı kılıç saldırısı yapar.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}+{param4:F1P}",
+				"4 Vuruş Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Hasarı|{param6:F1P}+{param7:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param8:F1}",
+				"Havadan Saldırı Hasarı|{param9:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Gizemli Aldatmaca",
+		"info": "Pelerinini sallar ve Gizem Atılımı yaparak Rüzgar Hasarı verir.\nGizem Atılımı bir düşmana vurduğunda Maks. Canına göre Lynette'in Canını yeniler, Lynette sonraki 4 saniye boyunca her saniye Canının belirli bir oranını kaybeder.\nLynette, bu beceriye basmana veya basılı tutmana göre Gizem Atılımını farklı şekilde kullanır.\n\n**Bas**\nHızlı bir şekilde Gizem Atılımı yapar.\n\n**Basılı Tut**\nLynette çok hızlı bir Küçük Gölge Hırsız durumuna girer ve yakındaki bir düşmana Gölge İşareti uygular. Bu durumdayken yönünü kontrol edebilir ve beceriyi tekrar kullanarak durumun erken sonlanmasını sağlayabilirsin.\nLynette, bu hızlı durum sona erdiğinde Gizem Atılımını yapar. Bunu yaparken yakınında Gölge İşaretli bir düşman varsa Lynette önce o düşmanın olduğu yerde belirir ve sonra Gizem Atılımını yapar.\n\nAynı anda en fazla 1 düşman Gölge İşaretine sahip olabilir. Bu düşman, Lynette'ten çok uzaklaşırsa Gölge İşareti kaybolur.\n\n**Arkhe: Öz**\nLynette, Gizem Atılımını kullandıktan sonra belirli aralıklarla Çalkantılı Kılıç saldırısı yaparak Öz tesirli Rüzgar Hasarı verir.",
+		"description": "\"Şimdi dikkatini sahneye ver, gösterinin tadını çıkar. Hiç beklemediğin bir yerde belireceğim.\"",
+		"attributes": {
+			"labels": [
+				"Gizem Atılımı Hasarı|{param1:F1P}",
+				"Çalkantılı Kılıç Hasarı|{param3:F1P}",
+				"Çalkantılı Kılıç Aralığı|{param8:F1}sn",
+				"Can Yenilenmesi|{param4:P} Maks. Can",
+				"Can Maliyeti|{param6:P} Mevcut Can/sn",
+				"Maks. Basılı Tutma Süresi|{param9:F1}sn",
+				"BS|{param7:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Sihir Numarası: Şaşırtıcı Değişim",
+		"info": "Lynette, pelerinini kaldırarak Rüzgar Alan Hasarı verir ve üstün el çabukluğuyla kocaman bir Şaşırtıcı Kedi Kutusu ortaya çıkarır!\n\n**Şaşırtıcı Kedi Kutusu**\n·Yakındaki düşmanları kışkırtarak saldırıları kendine çeker.\n·Belirli aralıklarla yakındaki düşmanlara Rüzgar Hasarı verir.\n·Şaşırtıcı Kedi Kutusu Su/Ateş/Buz/Elektrik ile temas ettiğinde element etkisini alır ve ek olarak belirli aralıklarla bu element türünden hasar veren Parlak Atışlar yapar.\nBu türden bir Element Emilimi, bu beceri süresince yalnızca bir defa gerçekleşebilir.",
+		"description": "\"Buraya bak, dikkatle izle. Bir mucizeye tanıklık etmek üzeresin. Hem de bize özel bir mucizeye.\"",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:F1P}",
+				"Şaşırtıcı Kedi Kutusu Hasarı|{param2:F1P}",
+				"Parlak Atış Hasarı|{param3:F1P}",
+				"Şaşırtıcı Kedi Kutusu Süresi|{param4:F1}sn",
+				"BS|{param5:F1}sn",
+				"Enerji Maliyeti|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Karmaşık Uyum",
+		"info": "**Sihir Numarası: Şaşırtıcı Değişim** kullanıldıktan sonraki 10 saniye boyunca grupta 1/2/3/4 Element Türü varsa tüm grup üyelerinin Saldırısı sırayla %8/%12/%16/%20 artar."
+	},
+	"passive2": {
+		"name": "İtinayla Hazırlanmış Dekorlar",
+		"info": "**Sihir Numarası: Şaşırtıcı Değişim** tarafından çağrılan bir Şaşırtıcı Kedi Kutusu, Element Dönüşümüne uğradıktan sonra Lynette'in Element Patlaması %15 daha fazla Hasar verir. Bu etki, Şaşırtıcı Kedi Kutusunun süresi sona erinceye kadar devam eder."
+	},
+	"passive3": {
+		"name": "Hafıza Sarayı",
+		"info": "Yakınlardaki **Yenileme Kürelerinin** yerini mini haritada gösterir. Kürelere dokunarak kazanılan Yüzme Dayanıklılığı ve Can %25 artar."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Düzen Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Kavrama Dişlisi",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 4
+			},
+			{
+				"name": "Ezeli Kehribar",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 6
+			},
+			{
+				"name": "Ezeli Kehribar",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 9
+			},
+			{
+				"name": "Ezeli Kehribar",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 12
+			},
+			{
+				"name": "Ezeli Kehribar",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

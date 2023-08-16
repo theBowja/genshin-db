@@ -1,0 +1,213 @@
+{
+	"name": "Fréminet",
+	"combat1": {
+		"name": "Attaque normale : Tourbillon fluide",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 attaques.\n\n**Attaque chargée**\nConsomme de l'endurance de façon continue pour exécuter une succession d'attaques tournoyantes contre les ennemis proches.\nL'attaque chargée se termine sur un coup puissant.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT enchaînement attaque chargée|{param5:F1P}",
+				"DGT coup final attaque chargée|{param6:P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts/s",
+				"Durée max|{param8:F1} s",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Pressurisation des floes",
+		"info": "Effectue une attaque ascendante infligeant des DGT Cryo et fait entrer Fréminet dans l'état Indicateur de Pers pendant 10 s.\nDans cet état, sa compétence élémentaire devient un concassage pressurisé.\n\n**Concassage pressurisé**\nExécute différentes attaques selon le niveau de pression de l'indicateur de Pers, puis annule l'état.\n· Niveau 0 : Effectue une coupe verticale infligeant des DGT Cryo.\n· Niveau I à III : Effectue une coupe verticale en coordination avec Pers, infligeant des DGT Cryo et des DGT physiques, les DGT dépendant du niveau de pression.\n· Niveau IV : Utilise la puissance d'un Pers totalement pressurisé pour infliger des DGT physiques, ce niveau remplaçant également l'attaque normale « Tourbillon fluide » par un concassage pressurisé.\n\n**Indicateur de Pers**\nLorsque Fréminet utilise une attaque normale, il libère également un frimas infligeant des DGT Cryo et augmente le niveau de pression de l'indicateur de Pers.\nCes DGT Cryo sont considérés comme des DGT de compétence élémentaire.\n\n**Arkhe : Pneuma**\nRégulièrement, après avoir effectué une attaque ascendante, une épine d'inhalation prenant la forme d'une autre attaque ascendante est libérée pour infliger des DGT Cryo chargés d'énergie pneuma.",
+		"description": "Immobiliser son adversaire sans lui ôter la vie peut aussi être considéré comme une stratégie de « survie » que l'on peut choisir.\n« Pers... Je te laisse le reste. »",
+		"attributes": {
+			"labels": [
+				"DGT attaque ascendante|{param1:F1P}",
+				"DGT frimas|{param3:F1P}",
+				"DGT concassage pressurisé 0|{param4:F1P}",
+				"DGT concassage pressurisé I|{param5:F1P} Cryo +{param6:F1P} Physiques",
+				"DGT concassage pressurisé II|{param7:F1P} Cryo +{param8:F1P} Physiques",
+				"DGT concassage pressurisé III|{param9:F1P} Cryo +{param10:F1P} Physiques",
+				"DGT concassage pressurisé IV|{param11:F1P}",
+				"DGT épine d'inhalation|{param2:F1P}",
+				"Intervalle d'épine d'inhalation|{param13:F1} s",
+				"Temps de recharge|{param12:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Embuscade du chassombre",
+		"info": "Libère une vague de froid impalpable, infligeant des DGT Cryo de zone, réinitialisant le TdR de la compétence élémentaire « Pressurisation des floes » et faisant passer Fréminet en mode traque pendant 10 s.\n\nDans cet état, sa RÉS à l'interruption augmente, et Pressurisation des floes bénéfice des bonus suivants :\n· Son TdR diminue de 70 %.\n· Les attaques normales accordent à l'indicateur de Pers un niveau de pression supplémentaire, et leur frimas inflige des DGT pour une valeur équivalant à 200 % de leurs DGT d'origine.\n\nCet effet cesse lorsque Fréminet quitte le champ de bataille.",
+		"description": "« Maintenant... Je n'ai besoin d'aucun bruit superflu. »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"Durée|{param2:F1} s",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Plongée profonde saturée",
+		"info": "En utilisant un **concassage pressurisé**, si le niveau de pression de l'indicateur de Pers est inférieur à IV, le TdR de Pressurisation des floes diminue de 1 s."
+	},
+	"passive2": {
+		"name": "Condenseur parallèle",
+		"info": "Lorsque Fréminet a déclenché une réaction de Brise-glace sur un ennemi, les DGT infligés par le **concassage pressurisé** de Pressurisation des floes augmentent de 40 % pendant 5 s."
+	},
+	"passive3": {
+		"name": "Navigation en eaux profondes",
+		"info": "Réduit la consommation d'endurance aquatique de vos personnages dans l'équipe de 35 %.\nNe peut pas être cumulé avec d'autres aptitudes passives aux effets identiques."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la Justice",
+				"count": 3
+			},
+			{
+				"name": "Perle transocéanique",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 2
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 4
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 6
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 9
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 4
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 4
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 6
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 6
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 12
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 9
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 16
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 12
+			},
+			{
+				"name": "Fougère du monde luxuriant",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

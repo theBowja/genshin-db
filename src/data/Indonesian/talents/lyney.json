@@ -1,0 +1,213 @@
+{
+	"name": "Lyney",
+	"combat1": {
+		"name": "Normal Attack: Card Force Translocation",
+		"info": "**Normal Attack**\nMelancarkan hingga 4 serangan berturut-turut menggunakan busur.\n\n**Plunging Attack**\nMelancarkan hujan panah dari udara dan menerjang tanah dengan kecepatan tinggi, mengakibatkan DMG Area saat mendarat.\n\n**Charged Attack**\nMengerahkan sebuah **Serangan Membidik** yang lebih akurat untuk mengakibatkan DMG lebih besar.\nSaat membidik, kekuatan api akan berkumpul di ujung anak panah sebelum ditembakkan. Memiliki efek yang berbeda tergantung dari lama serangannya ditahan:\n·Charge Tahap 1: Menembakkan anak panah dengan efek Pyro dan mengakibatkan Pyro DMG;\n·Charge Tahap 2: Menembakkan sebuah Prop Arrow yang mengakibatkan Pyro DMG dan memanggil Grin-Malkin Hat saat mengenai target.\nKetika Lyney memiliki 60% HP atau lebih saat menembakkan Prop Arrow, Lyney akan mengonsumsi sebagian HP-nya untuk mendapatkan satu lapis Prop Surplus. Efek ini dapat ditumpuk sampai 5 lapis dan akan dihapus setelah meninggalkan medan pertempuran selama 30 detik.\nAngka terendah yang bisa dicapai oleh HP Lyney dengan cara ini adalah 60% HP.\n\n**Grin-Malkin Hat**\n·Dapat memprovokasi musuh di sekitar dan memancing serangan mereka. Setiap musuh dapat diprovokasi oleh Grin-Malkin Hat satu kali setiap 5 detik;\n·HP Grin-Malkin Hat akan ditentukan berdasarkan persentasi dari nilai Max HP Lyney;\n·Saat dihancurkan atau durasinya berakhir, akan melancarkan **Pyrotechnic Strike** terhadap salah satu musuh di sekitar dan mengakibatkan Pyro DMG.\nHanya 1 Grin-Malkin Hat yang dapat muncul di medan pertempuran dalam waktu yang bersamaan.\n\n**Arkhe: Pneuma**\nSetiap beberapa saat, Prop Arrow akan mendatangkan Spiritbreath Thorn di posisi target dan mengakibatkan Pneuma-aligned Pyro DMG.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}+{param4:F1P}",
+				"DMG Tahap 4|{param5:F1P}",
+				"DMG Selama Plunging|{param6:F1P}",
+				"DMG Plunging Attack Min./Maks.|{param7:F1P}/{param8:F1P}",
+				"DMG Membidik|{param9:F1P}",
+				"Serangan Membidik Tahap 1|{param10:F1P}",
+				"DMG Prop Arrow|{param11:F1P}",
+				"Konsumsi HP|{param12:P} Max HP",
+				"HP Diwarisi Grin-Malkin Hat|{param13:P}",
+				"Durasi Grin-Malkin Hat|{param14:F1} dtk",
+				"DMG Pyrotechnic Strike|{param15:F1P}",
+				"DMG Spiritbreath Thorn|{param16:F1P}",
+				"Jeda Spiritbreath Thorn|{param17:F1} dtk"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Bewildering Lights",
+		"info": "Lyney menggerakkan topinya dan meledakkan kembang api kejutan.\nSaat dilancarkan, akan menghapus seluruh lapisan Prop Surplus yang sudah dimiliki dan mengakibatkan Pyro DMG Area terhadap musuh yang berada di depan. DMG akan meningkat berdasarkan jumlah lapisan Prop Surplus yang dihapus. Juga akan memulihkan HP Lyney berdasarkan Max HP-nya.\n\nSaat ada Grin-Malkin Hat yang diciptakan oleh Lyney di medan perang, kembang api akan membuat Grin-Malkin Hat meledak dengan kuat dan mengakibatkan Pyro DMG Area yang setara dengan DMG Pyrotechnic Strike.\nDMG yang dihasilkan oleh Grin-Malkin Hat dengan cara ini akan dianggap sebagai DMG Charged Attack.",
+		"description": "\"Semua orang tahu kalau pesulap pasti akan mengalihkan perhatian para penonton ... Ah, ya, waktu kamu sedang memperhatikanku, topi dan asisten di sana sudah hilang dua-duanya ... Menarik, bukan?\"",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"Bonus DMG Skill|{param2:F1P} ATK/Lapis",
+				"Pemulihan HP|{param3:P}/Lapis",
+				"Cooldown|{param5:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Wondrous Trick: Miracle Parade",
+		"info": "Lyney melancarkan sulap dan berubah menjadi Grin-Malkin Cat yang dapat bergerak dengan cepat. (Bukan Grin-Malkin Hat ya. Ini dua alat sulap yang berbeda loh!)\nSaat Grin-Malkin Cat mendekati musuh, akan menurunkan bara api terhadap musuh di sekitar, dan mengakibatkan maksimum satu kali Pyro DMG terhadap setiap musuh. Setelah durasinya berakhir, Lyney akan membatalkan bentuk Grin-Malkin Cat, dan menyalakan kembang api yang mengakibatkan Pyro DMG Area, serta memanggil satu Grin-Malkin Hat dan mendapatkan satu lapis Prop Surplus.\n\nGrin-Malkin Cat bisa dibatalkan secara aktif.",
+		"description": "\"Lihat baik-baik ya. Waktunya untuk keajaiban, dan ini cuma milik kita berdua saja!\"",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"DMG Ledakan Kembang Api|{param2:F1P}",
+				"Durasi|{param3:F1} dtk",
+				"Cooldown|{param4:F1} dtk",
+				"Konsumsi Energy|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Perilous Performance",
+		"info": "Jika Lyney mengonsumsi HP saat menembakkan **Prop Arrow**, maka saat serangan Grin-Malkin Hat yang dipanggil dari Prop Arrow mengenai musuh, akan memulihkan 3 poin Energy Lyney dan meningkatkan DMG berdasarkan 80% ATK Lyney."
+	},
+	"passive2": {
+		"name": "Conclusive Ovation",
+		"info": "DMG yang dihasilkan Lyney terhadap musuh yang berada dalam pengaruh Pyro akan mendapatkan peningkatan sebagai berikut:\n·DMG dasar meningkat 60%.\n·Setiap Karakter Pyro di dalam party selain Lyney akan memberikan tambahan peningkatan 20%.\n\nLyney bisa mendapatkan peningkatan DMG seperti yang disebutkan di atas hingga maksimum 100% terhadap musuh yang berada dalam pengaruh Pyro."
+	},
+	"passive3": {
+		"name": "Trivial Observations",
+		"info": "Memperlihatkan lokasi **produk khas Fontaine** di sekitar pada peta kecil."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Equity",
+				"count": 3
+			},
+			{
+				"name": "Recruit's Insignia",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Equity",
+				"count": 2
+			},
+			{
+				"name": "Sergeant's Insignia",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Equity",
+				"count": 4
+			},
+			{
+				"name": "Sergeant's Insignia",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Equity",
+				"count": 6
+			},
+			{
+				"name": "Sergeant's Insignia",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Equity",
+				"count": 9
+			},
+			{
+				"name": "Sergeant's Insignia",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Equity",
+				"count": 4
+			},
+			{
+				"name": "Lieutenant's Insignia",
+				"count": 4
+			},
+			{
+				"name": "Primordial Greenbloom",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Equity",
+				"count": 6
+			},
+			{
+				"name": "Lieutenant's Insignia",
+				"count": 6
+			},
+			{
+				"name": "Primordial Greenbloom",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Equity",
+				"count": 12
+			},
+			{
+				"name": "Lieutenant's Insignia",
+				"count": 9
+			},
+			{
+				"name": "Primordial Greenbloom",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Equity",
+				"count": 16
+			},
+			{
+				"name": "Lieutenant's Insignia",
+				"count": 12
+			},
+			{
+				"name": "Primordial Greenbloom",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

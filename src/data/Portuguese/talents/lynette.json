@@ -1,0 +1,210 @@
+{
+	"name": "Lynette",
+	"combat1": {
+		"name": "Ataque Normal: Rapieira Veloz",
+		"info": "**Ataque Normal**\nRealiza até 4 golpes rápidos.\n\n**Ataque Carregado**\nConsome uma certa quantidade de Stamina para desferir 2 golpes rápidos com a espada.\n\n**Ataque Imersivo**\nMergulha em pleno ar para golpear o chão, causando Dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}+{param4:F1P}",
+				"Dano do 4° Golpe|{param5:F1P}",
+				"Dano de Ataque Carregado|{param6:F1P}+{param7:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param8:F1}",
+				"Dano Durante a Queda|{param9:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Barreira das Sombras",
+		"info": "Balança sua capa e faz um Golpe das Sombras, causando Dano Anemo.\nQuando o Golpe das Sombras atingir um inimigo, regenerará Vida para Lynette. A quantidade de Vida regenerada é baseada na Vida Máxima de Lynette, e depois disso, consumirá uma certa quantidade de Vida por segundo nos próximos 4s.\nFará o Golpe das Sombras de maneira diferente se Pressionar ou Manter Pressionado.\n\n**Pressionar**\nFaz um Golpe das Sombras rápido.\n\n**Manter Pressionado**\nLynette corre rapidamente no estado \"Sombra Enigmática\", e aplica \"Marca da Sombra\" nos inimigos próximos. Durante esse período, é possível controlar a direção da corrida, e lançar a Habilidade novamente fará terminar o estado de corrida mais cedo.\nQuando terminar de correr, Lynette fará um Golpe das Sombras. Se houver algum inimigo com a Marca da Sombra por perto, Lynette dará um Golpe das Sombras nele em alta velocidade.\n\nSó é possível existir até um inimigo com uma Marca da Sombra de Lynette simultaneamente. Se o inimigo que está com a Marca da Sombra estiver muito distante, a Marca da Sombra será removida.\n\n**Arkhe: Ousia**\nPeriodicamente, quando Lynette lançar um Golpe das Sombras, invocará uma Lâmina da Fluidez que causará Dano Anemo com Ousia.",
+		"description": "\"Agora, vire seus olhos para o palco e continue a se divertir com a apresentação. Quando eu aparecer pela próxima vez, será a última coisa que você esperará.\"",
+		"attributes": {
+			"labels": [
+				"Dano de Golpe das Sombras|{param1:F1P}",
+				"Dano de Lâmina da Fluidez|{param3:F1P}",
+				"Intervalo de Lâmina da Fluidez|{param8:F1}s",
+				"Regeneração de Vida por Acerto|{param4:P} da Vida Máxima",
+				"Consumo de Vida|{param6:P} da Vida atual/s",
+				"Duração máxima de Manter Pressionado|{param9:F1}s",
+				"Tempo de Recarga|{param7:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Magia: Transformação Surpreendente",
+		"info": "Lynette levanta um manto, causando Dano Anemo em AdE e usa uma técnica fantástica para se transformar numa gigantesca Caixa Surpresa Miau Miau!\n\n**Caixa Surpresa Miau Miau**\n· Provoca os inimigos próximos continuamente, atraindo seus ataques.\n· Periodicamente causa Dano Anemo contra os inimigos próximos.\n· Quando a Caixa Surpresa Miau Miau tocar Hydro/Pyro/Cryo/Electro, obterá o Elemento correspondente e periodicamente lançará contra os inimigos ao redor um Feixe Colorido, causando o respectivo Dano Elemental.\nEssa Conversão Elemental só pode ser desencadeada uma vez na duração da habilidade.",
+		"description": "\"Olhe bem nessa direção, preste bem atenção. Esse momento de magia pertence somente a nós.\"",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Dano de Caixa Surpresa Miau Miau|{param2:F1P}",
+				"Dano de Feixe Colorido|{param3:F1P}",
+				"Duração de Caixa Surpresa Miau Miau|{param4:F1}s",
+				"Tempo de Recarga|{param5:F1}s",
+				"Energia Elemental|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Sincronia Engenhosa",
+		"info": "Nos 10s depois de lançar **Magia: Transformação Surpreendente**, se a equipe possuir personagens de 1/2/3/4 Tipos Elementais diferentes, aumentará o ATQ de todos os membros da equipe em 8%/12%/16%/20%."
+	},
+	"passive2": {
+		"name": "Item Concluído",
+		"info": "Quando a Caixa Surpresa Miau Miau invocada de **Magia: Transformação Surpreendente** passar por uma Conversão Elemental, aumenta o Dano do Supremo de Lynette em 15%. Esse efeito é contínuo até o final da duração da Caixa Surpresa Miau Miau."
+	},
+	"passive3": {
+		"name": "Pontos Mnemônicos",
+		"info": "Mostra no Mini-mapa a localização dos **Orbes da Ressurreição** próximos. O Fôlego e Vida ganhados ao tocar um Orbe aumentará 25%."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos da Ordem",
+				"count": 3
+			},
+			{
+				"name": "Engrenagem Transmissora",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia da Ordem",
+				"count": 2
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia da Ordem",
+				"count": 4
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia da Ordem",
+				"count": 6
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia da Ordem",
+				"count": 9
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia da Ordem",
+				"count": 4
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 4
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia da Ordem",
+				"count": 6
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 6
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia da Ordem",
+				"count": 12
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 9
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia da Ordem",
+				"count": 16
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 12
+			},
+			{
+				"name": "Âmbar Eterno",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}
