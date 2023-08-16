@@ -718,9 +718,9 @@ gameVersion = "4.0"; // new data will use this as added version
 // importData('artifacts', collateArtifact, undefined, false);
 // importData('foods');
 // importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
-importData('domains');
-importData('enemies');
-importCurve('enemies');
+// importData('domains');
+// importData('enemies');
+// importCurve('enemies');
 
 // importData('outfits', collateOutfit);
 // importData('windgliders');
