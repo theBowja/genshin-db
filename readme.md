@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/genshin-db)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/genshin-db)
 
-### Genshin Impact JSON data with a robust searching functions! Updated to version 3.8. Sources from the fandom wiki and GenshinData repo.
+### Genshin Impact JSON data with a robust searching functions! Updated to version 4.0. Sources from the fandom wiki and GenshinData repo.
 
 ------------------------------------
 
