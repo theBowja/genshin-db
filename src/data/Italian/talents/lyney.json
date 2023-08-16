@@ -1,0 +1,213 @@
+{
+	"name": "Lyney",
+	"combat1": {
+		"name": "Attacco normale: Traslazione forzata",
+		"info": "**Attacco normale**\nEffettua fino a 4 tiri consecutivi con un arco.\n\n**Attacco in picchiata**\nScocca una pioggia di frecce a mezz'aria prima di cadere e colpire il suolo, infliggendo DAN ad area all'impatto.\n\n**Attacco caricato**\nEffettua un **attacco mirato** ancora più preciso con DAN aumentati.\nMentre mira, sulla punta della freccia divampano delle fiamme. In base al tempo di durata della carica, si verificano diversi effetti.\n· Livello di carica 1: scaglia una freccia infusa del potere di Pyro che infligge DAN da Pyro.\n· Livello di carica 2: scaglia una Freccia scenica che infligge DAN da Pyro ed evoca un Cappello sogghignante all'impatto.\nSe Lyney scocca una Freccia scenica mentre ha più di un 60% di PS a disposizione, consuma una parte dei suoi PS e ottiene 1 accumulo di Riserva scenica, fino a un massimo di 5. L'effetto viene rimosso dopo 30 s passati al di fuori di un combattimento.\nCon questo metodo, i PS di Lyney non possono calare al di sotto di un 60% dei suoi PS max.\n\n**Cappello sogghignante**\n· Provoca gli avversari circostanti attirando i loro attacchi. Ciascun avversario può essere provocato dal Cappello solo una volta ogni 5 s.\n· Il Cappello eredita una percentuale dei PS max di Lyney.\n· Se viene distrutto o la sua durata si esaurisce, il Cappello lancia una **Botta pirotecnica** a un avversario vicino, infliggendo DAN da Pyro.\nNon può esistere più di 1 Cappello alla volta.\n\n**Archè: Pneuma**\nA determinati intervalli, la Freccia scenica genera un Aculeo spettrale nel punto colpito che infligge DAN da Pyro di polarità Pneuma.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}+{param4:F1P}",
+				"DAN da 4º colpo|{param5:F1P}",
+				"DAN da ATT in picchiata|{param6:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param7:F1P}/{param8:F1P}",
+				"ATT mirato|{param9:F1P}",
+				"ATT mirato a livello di carica 1|{param10:F1P}",
+				"DAN da Freccia scenica|{param11:F1P}",
+				"Costo PS|{param12:P} PS max",
+				"PS ereditati da Cappello sogghignante|{param13:P}",
+				"Durata Cappello sogghignante|{param14:F1} s",
+				"DAN da Botta pirotecnica|{param15:F1P}",
+				"DAN da Aculeo spettrale|{param16:F1P}",
+				"Intervallo Aculeo spettrale|{param17:F1} s"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Luci stupefacenti",
+		"info": "Lyney esegue un gesto plateale con il cappello, scagliando fuochi d'artificio contro gli oppositori!\nConsuma tutti gli accumuli di Riserva scenica e infligge DAN da Pyro ad area agli avversari di fronte a lui. A seconda degli accumuli consumati, la quantità di DAN aumenta e i PS di Lyney si ripristinano in proporzione ai suoi PS max.\n\nIn presenza di un Cappello sogghignante creato da Lyney, i fuochi d'artificio lo faranno esplodere, infliggendo DAN da Pyro ad area pari a quelli inflitti da una Botta pirotecnica.\nI DAN inflitti in questo modo dal Cappello sogghignante vengono considerati DAN da attacco caricato.",
+		"description": "\"Ogni mago dev'essere bravo a sviare l'attenzione del suo pubblico, lo sanno tutti... Ah, già, mentre guardavi da questa parte, il cappello e l'assistente che erano laggiù sono svaniti nel nulla... Affascinante, non credi?\"",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P}",
+				"Bonus DAN da abilità|{param2:F1P} ATT/accumulo",
+				"RIGEN PS|{param3:P}/accumulo",
+				"TdR|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Trucco mirabolante: Corteo dei miracoli",
+		"info": "Lyney scatena tutta la sua magia per assumere la forma di Gatto sogghignante (da non confondersi con il Cappello sogghignante, che è un'altra cosa!), con cui può spostarsi a gran velocità.\nQuando il Gatto sogghignante si avvicina agli avversari, scatena delle fiamme impetuose che infliggono 1 iterazione di DAN da Pyro a ciascun avversario. Al termine dell'effetto, Lyney abbandona la forma di Gatto sogghignante e fa esplodere dei fuochi d'artificio che infliggono DAN da Pyro ad area, dopodiché evoca 1 Cappello sogghignante e ottiene 1 accumulo di Riserva scenica.\n\nIl Gatto sogghignante può essere interrotto attivamente.",
+		"description": "\"Ora guarda con attenzione. Questo è un momento miracoloso, e appartiene soltanto a noi due!\"",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P}",
+				"DAN da fuoco d'artificio esplosivo|{param2:F1P}",
+				"Durata|{param3:F1} s",
+				"TdR|{param4:F1} s",
+				"Costo energia|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Numero rischioso",
+		"info": "Se Lyney consuma PS quando scaglia una **Freccia scenica**, il Cappello sogghignante evocato dalla suddetta Freccia ripristina di 3 l'energia di Lyney all'impatto con l'avversario, aumentando al contempo i DAN inflitti di un 80% del suo ATT."
+	},
+	"passive2": {
+		"name": "Applauso finale",
+		"info": "I DAN inflitti da Lyney agli avversari sotto l'effetto di Pyro ricevono i seguenti effetti positivi:\n· i DAN aumentano di un 60%;\n· per ogni membro di Pyro presente nel gruppo, escluso Lyney, i DAN inflitti aumentano di un ulteriore 20%.\nIn questo modo, Lyney può infliggere fino a un 100% di DAN aumentati contro gli avversari sotto l'effetto di Pyro."
+	},
+	"passive3": {
+		"name": "Osservazioni irrilevanti",
+		"info": "Mostra sulla minimappa la posizione delle **risorse uniche di Fontaine**."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti di equità",
+				"count": 3
+			},
+			{
+				"name": "Emblema della recluta",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 2
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 4
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 6
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 9
+			},
+			{
+				"name": "Emblema del sergente",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 4
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 4
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 6
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 6
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 12
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 9
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 16
+			},
+			{
+				"name": "Emblema del tenente",
+				"count": 12
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

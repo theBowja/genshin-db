@@ -1,0 +1,213 @@
+{
+	"name": "Freminet",
+	"combat1": {
+		"name": "Normal Saldırı: Girdap Akıntısı",
+		"info": "**Normal Saldırı**\nArka arkaya en fazla 4 saldırı yapar.\n\n**Yüklü Saldırı**\nZamanla Dayanıklılık harcar ve yakındaki tüm düşmanlara dönerek saldırır.\nSaldırıları daha güçlü bir darbeyle bitirir.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}",
+				"Yüklü Saldırı Döngüsel Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Son Vuruş Hasarı|{param6:P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param7:F1}/sn",
+				"Maks. Süre|{param8:F1}sn",
+				"Havadan Saldırı Hasarı|{param9:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Tazyikli Buz",
+		"info": "Freminet, Buz Hasarı veren yukarı doğru bir saldırı yapar ve 10 saniyeliğine Pers Göstergesine girer.\nPers Göstergesi etkin durumdayken Freminet'nin Element Becerisi, Parçalayıcı Basınca dönüşür.\n\n**Parçalayıcı Basınç**\nPers Göstergesinin Basınç Seviyesine göre farklı türlerde saldırılar yapar ve ardından Pers Göstergesini sonlandırır.\n·0. Seviye: Buz Hasarı veren dikey bir darbe vurur.\n·1 ila 3. Seviyeler: Pers'in yanında Buz Hasarı ve Fiziksel Hasar veren dikey bir darbe vurur. Verilen Hasar, Basınç seviyesine göre değişir.\n·4. Seviye: Tam basınçtaki Pers'in gücünü kullanarak Fiziksel Hasar verir. Bu sırada Normal Saldırı: Girdap Akıntısının yerini Parçalayıcı Basınç alır.\n\n**Pers Göstergesi**\nFreminet, Normal Saldırı yaparken Buz Hasarı veren buzul dalgaları çıkarır ve Pers'in Basınç Seviyesini artırır.\nBu şekilde verilen Buz Hasarı, Element Becerisi Hasarı sayılır.\n\n**Arkhe: Ruh**\nBelirli aralıklarla Freminet, yukarı doğru bir saldırı yaptıktan sonra Ruh Nefesi Dikeni oluşturur ve Ruh tesirli Buz Hasarı veren yukarı doğru başka bir saldırı daha gerçekleşir.",
+		"description": "Düşmanı öldürmeden etkisiz hale getirmek, bazı kişiler için \"hayatta kalma\" stratejisi olarak görülebilir.\n\"Pers... Gerisini sana bırakıyorum.\"",
+		"attributes": {
+			"labels": [
+				"Yukarı Doğru Saldırı Hasarı|{param1:F1P}",
+				"Buzul Hasarı|{param3:F1P}",
+				"0. Seviye Parçalayıcı Basınç Hasarı|{param4:F1P}",
+				"1. Seviye Parçalayıcı Basınç Hasarı|{param5:F1P} Buz +{param6:F1P} Fiziksel",
+				"2. Seviye Parçalayıcı Basınç Hasarı|{param7:F1P} Buz +{param8:F1P} Fiziksel",
+				"3. Seviye Parçalayıcı Basınç Hasarı|{param9:F1P} Buz +{param10:F1P} Fiziksel",
+				"4. Seviye Parçalayıcı Basınç Hasarı|{param11:F1P}",
+				"Ruh Nefesi Dikeni Hasarı|{param2:F1P}",
+				"Ruh Nefesi Dikeni Aralığı|{param13:F1}sn",
+				"BS|{param12:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Gölge Avcısının Pususu",
+		"info": "Dokunulmaz derecede soğuk olan bir dalgalar zinciri çıkararak Buz Alan Hasarı verir, \"Tazyikli Buz\" Element Becerisinin Bekleme Süresini sıfırlar ve Freminet'nin 10 saniyeliğine Su Altı Avcısı moduna girmesine neden olur.\n\nSu Altı Avcısı modundayken Freminet'nin müdahaleye karşı direnci artar ve Element Becerisi \"Tazyikli Buz\" şu güçlendirmeleri alır:\n·Bekleme Süresi %70 azalır.\n·Normal Saldırılar Pers Göstergesine ek 1 Basınç kademesi sağlar ve Normal Saldırısıyla çıkardığı buzullar, asıl Hasarlarının %200'ü oranında Hasar verir.\n\nBu etkiler, Freminet savaş alanından ayrıldığında kaybolur.",
+		"description": "\"Artık... Dışarıdan hiçbir sese ihtiyacım yok.\"",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:F1P}",
+				"Süre|{param2:F1}sn",
+				"BS|{param3:F1}sn",
+				"Enerji Maliyeti|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Derin Satürasyon Dalışı",
+		"info": "Freminet, **Tazyikli Buz: Parçalayıcı Basınç** becerisini kullanırken Pers Göstergesinin Basınç Seviyesi 4'ten azsa Tazyikli Buzun Bekleme Süresi 1 saniye azalır."
+	},
+	"passive2": {
+		"name": "Paralel Akışlı Kondansatörler",
+		"info": "Freminet düşmanlarına karşı Tuzla Buz tetiklediğinde, 5 saniyeliğine **Tazyikli Buz: Parçalayıcı Basınç** Hasarı %40 artar."
+	},
+	"passive3": {
+		"name": "Derin Sularda Seyir",
+		"info": "Kendi grup üyelerinin Yüzme Dayanıklılığı tüketimini %35 azaltır.\nAynı etkiyi veren Pasif Yeteneklerle birikmez."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Adalet Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Okyanus Ötesi İncisi",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Adalet Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Okyanus Ötesi Parça",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Adalet Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Okyanus Ötesi Parça",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Adalet Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Okyanus Ötesi Parça",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Adalet Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Okyanus Ötesi Parça",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Adalet Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Alaca Kristal",
+				"count": 4
+			},
+			{
+				"name": "Dünyaya Yayılmış Eğrelti Otu",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Adalet Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Alaca Kristal",
+				"count": 6
+			},
+			{
+				"name": "Dünyaya Yayılmış Eğrelti Otu",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Adalet Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Alaca Kristal",
+				"count": 9
+			},
+			{
+				"name": "Dünyaya Yayılmış Eğrelti Otu",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Adalet Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Alaca Kristal",
+				"count": 12
+			},
+			{
+				"name": "Dünyaya Yayılmış Eğrelti Otu",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,206 @@
+{
+	"name": "นักเดินทาง (น้ำ)",
+	"combat1": {
+		"name": "โจมตีปกติ: Foreign Stream",
+		"info": "**โจมตีปกติ**\nโจมตีด้วยดาบต่อเนื่องมากสุด 5 ครั้ง\n\n**ชาร์จโจมตี**\nใช้พลังกายส่วนหนึ่ง เพื่อปลดปล่อยดาบออกไปข้างหน้าสองครั้งในช่วงเวลาสั้น ๆ\n\n**โจมตีพุ่งลงจากอากาศ**\nกระโจนจากกลางอากาศลงมายังพื้นดิน เพื่อโจมตีศัตรูที่อยู่ในเส้นทางการโจมตี โดยจะสร้างความเสียหายวงกว้างเมื่อลงถึงพื้น",
+		"attributes": {
+			"labels": [
+				"ความเสียหายขั้น 1|{param1:F1P}",
+				"ความเสียหายขั้น 2|{param2:F1P}",
+				"ความเสียหายขั้น 3|{param3:F1P}",
+				"ความเสียหายขั้น 4|{param4:F1P}",
+				"ความเสียหายขั้น 5|{param5:F1P}",
+				"ความเสียหายชาร์จโจมตี|{param6:F1P}+{param7:F1P}",
+				"ชาร์จโจมตีใช้พลังกาย|{param8:F1} หน่วย",
+				"ความเสียหายพุ่งลง|{param9:F1P}",
+				"ความเสียหายพุ่งถึงพื้นจากที่ต่ำ/สูง|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Aquacrest Saber",
+		"info": "ปลดปล่อยคลื่นน้ำที่สามารถชะล้างผืนแผ่นดิน\n\n**กด**\nปลดปล่อยคลื่นน้ำไปด้านหน้า เพื่อสร้างความเสียหายน้ำแก่ศัตรู\n\n**กดค้าง**\nเข้าสู่โหมดการเล็ง และยิง Dewdrop ไปทางทิศที่เล็งอย่างต่อเนื่อง เมื่อสัมผัสถูกศัตรูจะสร้างความเสียหายน้ำ\nตอนจบสกิล จะปลดปล่อยคลื่นน้ำไปด้านหน้า และเมื่อถูกศัตรูจะก่อให้เกิดความเสียหายน้ำ\nSuffusion: เมื่อกดค้างแล้ว ค่าพลังชีวิตของนักเดินทางสูงกว่า 50% ความเสียหายของ Dewdrop จะสูงขึ้น โดยปริมาณที่เพิ่มจะขึ้นอยู่กับค่าพลังชีวิตของนักเดินทาง และจะเสียค่าพลังชีวิตระดับหนึ่งในแต่ละวินาที\n\n**พลังปฐมภูมิ: วิญญาณ**\nทุกช่วงระยะเวลาหนึ่ง หลังจากปลดปล่อยคลื่นน้ำ จะปรากฏ Spiritbreath Thorn ที่สามารถแทงทะลุศัตรูได้ และสร้างความเสียหายน้ำที่มีพลังวิญญาณอยู่",
+		"description": "คุณกับ Paimon เคยนั่งสังเกตระลอกน้ำด้วยกันมาก่อน",
+		"attributes": {
+			"labels": [
+				"ความเสียหายคลื่นน้ำ|{param2:F1P}",
+				"ความเสียหาย Dewdrop|{param1:F1P}",
+				"ความเสียหาย Spiritbreath Thorn|{param3:F1P}",
+				"ช่วงเวลาเกิด Spiritbreath Thorn|ทุก {param4:F1} วิ",
+				"ค่าพลังชีวิตที่เสียจาก Suffusion|{param5:F2P} ของ HP สูงสุด",
+				"ความเสียหายเพิ่มเติมของ Suffusion|{param6:F2P} ของ HP สูงสุด",
+				"ระยะเวลาต่อเนื่องเมื่อกดค้าง|สูงสุด {param9:F1} วิ",
+				"คูลดาวน์|{param8:F1} วิ"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Rising Waters",
+		"info": "ปลดปล่อยฟองน้ำลอยตัวที่เคลื่อนไหวอย่างเชื่องช้า และสร้างความเสียหายน้ำแก่ศัตรูที่อยู่ใกล้เคียงอย่างต่อเนื่อง",
+		"description": "คุณกับ Paimon เคยนั่งวิเคราะห์น้ำขึ้นน้ำลงด้วยกันมาก่อน",
+		"attributes": {
+			"labels": [
+				"ความเสียหายสกิล|{param1:F1P}",
+				"ระยะเวลาต่อเนื่อง|{param2:F1} วิ",
+				"คูลดาวน์|{param3:F1} วิ",
+				"พลังงานธาตุ|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Spotless Waters",
+		"info": "หลังจาก Dewdrop ที่เกิดจากการกดค้างเพื่อปล่อย **Aquacrest Saber** โจมตีถูกศัตรู จะทำให้เกิด Sourcewater Droplet ในบริเวณที่นักเดินทางอยู่ เมื่อนักเดินทางทำการเก็บ Sourcewater Droplet จะช่วยฟื้นฟูค่าพลังชีวิต 7%\nโดยที่ทุกวินาที จะเกิด Sourcewater Droplet ได้ด้วยวิธีนี้ 1 อัน และทุกครั้งที่ใช้ Aquacrest Saber จะเกิด Sourcewater Droplet ได้มากสุด 4 อัน เท่านั้น"
+	},
+	"passive2": {
+		"name": "Clear Waters",
+		"info": "หากเสียพลังชีวิตผ่าน Suffusion ในขณะที่กดค้างเพื่อปล่อย **Aquacrest Saber** จะทำให้คลื่นน้ำหลังจบสกิลสร้างความเสียหายเพิ่มขึ้น โดยความเสียหายที่เพิ่มขึ้นจะคิดเป็น 45% ของค่าพลังชีวิตทั้งหมดที่นักเดินทางเสียให้กับ Suffusion ในระหว่างการใช้สกิลครั้งนี้\nสามารถเพิ่มความเสียหายผ่านวิธีนี้ได้สูงสุด 5,000 หน่วย"
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Equity",
+				"count": 3
+			},
+			{
+				"name": "Transoceanic Pearl",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 2
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Order",
+				"count": 4
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Equity",
+				"count": 6
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 9
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Order",
+				"count": 4
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 4
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Equity",
+				"count": 6
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 6
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 12
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 9
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Order",
+				"count": 16
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 12
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

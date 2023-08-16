@@ -1,0 +1,210 @@
+{
+	"name": "Lynette",
+	"combat1": {
+		"name": "Standardangriff: Flinker Degen",
+		"info": "**Standardangriff**\nFührt bis zu 4 Schwerthiebe hintereinander aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer und schwingt das Schwert zweimal schnell nach vorn.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P} + {param4:F1P}",
+				"SCH Phase 4|{param5:F1P}",
+				"SCH heftiger Schläge|{param6:F1P} + {param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Rätselhafte Schattenverhüllung",
+		"info": "Lynette schwingt ihren Umhang und vollführt einen Enigma-Stoß, der Anemo-Schaden verursacht.\nStellt Lynette LP basierend auf ihren max. LP wieder her, sobald sie Gegner mit ihrem Enigma-Stoß trifft. Allerdings verliert sie in den darauffolgenden 4 s eine bestimmte Menge LP.\nJe nachdem, ob gedrückt oder gedrückt gehalten wird, wird der Enigma-Stoß anders eingesetzt.\n\n**Drücken**\nFührt einen schnellen Enigma-Stoß aus.\n\n**Gedrückt halten**\nLynette wechselt in den flinken Zustand „Diebischer Schatten“ und fügt einem Gegner in der Nähe „Schattenzeichen“ zu. Während dieser Zeit kannst du die Richtung kontrollieren, in die sich Lynette bewegt. Außerdem kannst du ihren Sprint vorzeitig abbrechen, indem du die Fähigkeit erneut einsetzt.\nZum Ende des flinken Zustands vollführt Lynette dann einen Enigma-Stoß. Sollte sich in der Nähe ein Gegner befinden, der das Schattenzeichen trägt, so bewegt sich Lynette blitzschnell zu diesem hin, bevor sie ihren Stoß vollführt.\n\nEs kann jeweils nur ein Gegner zur selben Zeit das von Lynette auferlegte Schattenzeichen tragen. Außerdem verschwindet das Zeichen, wenn Lynette zu weit von seinem Träger entfernt ist.\n\n**Arkhe: Ousia**\nLynette wird in regelmäßigen Abständen beim Vollführen ihres Enigma-Stoßes eine Wogenklinge beschwören, die mit Ousia versehenen Anemo-Schaden verursacht.",
+		"description": "„Richte deinen Blick nun wieder auf die Bühne, die Darbietung geht weiter. Und wenn ich das nächste Mal wieder auftauche, wird es dort sein, wo du es am wenigsten vermutest.“",
+		"attributes": {
+			"labels": [
+				"Enigma-Stoß-SCH|{param1:F1P}",
+				"Wogenklinge-SCH|{param3:F1P}",
+				"Wogenklinge-Intervall|{param8:F1} s",
+				"Heilung bei Treffer|{param4:P} der max. LP",
+				"LP-Verbrauch|{param6:P} der aktuellen LP pro s",
+				"Höchstdauer beim Gedrückthalten|{param9:F1} s",
+				"Abklingzeit|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Zaubertrick – Erstaunlicher Wechsel",
+		"info": "Lynette lässt ihren Umhang flattern, verursacht Anemo-Flächenschaden und lässt mit einem erstaunlichen Trick eine riesige Überraschungskatzenkiste erscheinen!\n\n**Überraschungskatzenkiste**\n· Verspottet fortlaufend Gegner in der Umgebung und zieht ihre Angriffe auf sich.\n· Fügt in regelmäßigen Abständen Gegnern in der Nähe Anemo-Schaden zu.\n· Verleiht der Überraschungskatzenkiste beim Kontakt mit dem Hydro-, Pyro-, Kryo- oder Elektro-Element das jeweilige Element und feuert in regelmäßigen Abständen Farbgeschosse auf Gegner in der Nähe ab, die den entsprechenden Elementarschaden verursachen.\nElementarumwandlung ist nur einmal während der Wirkungsdauer möglich.",
+		"description": "„Schau einfach in diese Richtung und pass genau auf. Dieser Moment gehört uns ganz allein, ein Moment des Staunens.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P}",
+				"Überraschungskatzenkiste-SCH|{param2:F1P}",
+				"Farbgeschoss-SCH|{param3:F1P}",
+				"Überraschungskatzenkiste-Dauer|{param4:F1} s",
+				"Abklingzeit|{param5:F1} s",
+				"Elementarenergie|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Ausgefeilte Synergie",
+		"info": "Erhöht für 10 s nach Auslösen von **Zaubertrick – Erstaunlicher Wechsel** für jeweils 1/2/3/4 Figuren unterschiedlichen Elementartyps in deiner Truppe, den ANG aller Truppenmitglieder um 8/12/16/20 %."
+	},
+	"passive2": {
+		"name": "Alle Requisiten vorbereitet",
+		"info": "Erhöht, nachdem die durch **Zaubertrick – Erstaunlicher Wechsel** beschworene Überraschungskatzenkiste ihre Elementarumwandlung vollzogen hat, den Schaden, den Lynette mit Spezialfähigkeiten verursacht, um 15 %. Dieser Effekt hält bis zum Ende der Überraschungskatzenkiste."
+	},
+	"passive3": {
+		"name": "Punktuelle Mnemonik",
+		"info": "Zeigt die Positionen von **Wiederbelebungstropfen** auf der Minikarte an. Die Wasserausdauer und LP, die durch das Berühren von den Tropfen gewonnen werden, werden um 25 % erhöht."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Ordnung“",
+				"count": 3
+			},
+			{
+				"name": "Greifendes Zahnrad",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 2
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 4
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 6
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 9
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 4
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 4
+			},
+			{
+				"name": "Permabernstein",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 6
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 6
+			},
+			{
+				"name": "Permabernstein",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 12
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 9
+			},
+			{
+				"name": "Permabernstein",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 16
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 12
+			},
+			{
+				"name": "Permabernstein",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

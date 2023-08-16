@@ -1,0 +1,213 @@
+{
+	"name": "Fréminet",
+	"combat1": {
+		"name": "Ataque Normal: Espada vortiginosa",
+		"info": "**Ataque Normal**\nRealiza hasta 4 ataques de espada consecutivos.\n\n**Ataque Cargado**\nConsume Aguante de manera constante para realizar golpes de espada giratorios contra los enemigos cercanos.\nAl final del Ataque Cargado, realizará un golpe de espada más poderoso.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}",
+				"Daño de ATQ Cargado en ciclo|{param5:F1P}",
+				"Daño final de Ataque Cargado|{param6:P}",
+				"Coste de Aguante de ATQ Cargado|{param7:F1} pts./s",
+				"Duración máx.|{param8:F1} s",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Criopresurización",
+		"info": "Ejecuta un ataque ascendente que inflige Daño Cryo y hace que Fréminet entre en el estado de “hora de Pers” durante 10 s.\nEn este estado, la Habilidad Elemental de Fréminet se convierte en Presión quebrantadora.\n\n**Presión quebrantadora**\nEjecuta distintos ataques en función del nivel de presión de hora de Pers y cancela dicho estado.\n·Nivel 0: realiza un corte vertical que inflige Daño Cryo.\n·Niveles 1-3: junto a Pers, realiza un corte vertical que inflige Daño Cryo y Daño Físico. El daño infligido varía en función del nivel de presión.\n·Nivel 4: toma prestado todo el poder de un Pers completamente presurizado para infligir Daño Físico. Además, el Ataque Normal: Espada vortiginosa se convierte en Presión quebrantadora.\n\n**Hora de Pers**\nCuando Fréminet ejecuta un Ataque Normal, al mismo tiempo libera unas oleadas de escarcha que infligen Daño Cryo y aumenta el nivel de presión de hora de Pers.\nEl Daño Cryo infligido de esta forma se considera Daño de Habilidad Elemental.\n\n**Arjé: pneuma**\nCada cierto intervalo de tiempo, tras realizar su ataque ascendente, Fréminet crea una espina halitoespiritual que ejecuta otro ataque ascendente y que inflige Daño Cryo cargado de energía pneuma.",
+		"description": "Inmovilizar al oponente sin arrebatarle la vida podría considerarse una estrategia de supervivencia.\n“Pers, cuento contigo”.",
+		"attributes": {
+			"labels": [
+				"Daño de ataque ascendente|{param1:F1P}",
+				"Daño de oleadas de escarcha|{param3:F1P}",
+				"Daño de Presión quebrantadora (niv. 0)|{param4:F1P}",
+				"Daño de Presión quebrantadora (niv. 1)|{param5:F1P} Cryo + {param6:F1P} Físico",
+				"Daño de Presión quebrantadora (niv. 2)|{param7:F1P} Cryo + {param8:F1P} Físico",
+				"Daño de Presión quebrantadora (niv. 3)|{param9:F1P} Cryo + {param10:F1P} Físico",
+				"Daño de Presión quebrantadora (niv. 4)|{param11:F1P}",
+				"Daño de espina halitoespiritual|{param2:F1P}",
+				"Intervalo de espina halitoespiritual|{param13:F1} s",
+				"TdE|{param12:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Emboscada cazasombras",
+		"info": "Libera una ola de frío intocable que inflige Daño Cryo en el AdE, reinicia el TdE de la Habilidad Elemental, “Criopresurización”, y hace que Fréminet entre en modo “acecho subacuático” durante 10 s.\n\nEn este estado, aumenta la RES a interrupción de Fréminet, y Criopresurización obtiene los siguientes fortalecimientos:\n·Su TdE se reduce en un 70%.\n·Al ejecutar un Ataque Normal, el nivel de presión de hora de Pers aumenta en un nivel adicional y las oleadas de escarcha liberadas con el Ataque Normal infligen un 200% de su daño original.\n\nEste efecto se anulará si Fréminet abandona el campo de batalla.",
+		"description": "“Ahora... no necesito ningún ruido externo”.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Duración|{param2:F1} s",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Buceo de saturación",
+		"info": "El TdE de Criopresurización se reduce en 1 s si, al usar **Criopresurización: Presión quebrantadora**, el nivel de presión de hora de Pers es inferior a 4."
+	},
+	"passive2": {
+		"name": "Condensador de flujos",
+		"info": "Cuando Fréminet causa una reacción de Rompehielo contra un enemigo, el daño infligido por **Criopresurización: Presión quebrantadora** aumenta en un 40% durante 5 s."
+	},
+	"passive3": {
+		"name": "Pilotaje submarino",
+		"info": "Disminuye en un 35% el Coste de Resistencia Acuática de tus personajes del equipo.\nNo se puede acumular con otros talentos pasivos que tengan los mismos efectos."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la justicia",
+				"count": 3
+			},
+			{
+				"name": "Condensado engendroceánico",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 2
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 4
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 6
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 9
+			},
+			{
+				"name": "Fragmento engendroceánico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 4
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 4
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 6
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 6
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 12
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 9
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 16
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 12
+			},
+			{
+				"name": "Helecho del paraíso exuberante",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

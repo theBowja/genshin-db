@@ -1,0 +1,213 @@
+{
+	"name": "Freminet",
+	"combat1": {
+		"name": "Normal Attack: Flowing Eddies",
+		"info": "**Normal Attack**\nMelancarkan hingga 4 serangan berturut-turut.\n\n**Charged Attack**\nTerus menguras Stamina untuk melancarkan serangan berputar yang mengakibatkan DMG ke musuh di sekitar.\nDiakhiri dengan sebuah tebasan yang kuat.\n\n**Plunging Attack**\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG Area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}",
+				"DMG Tahap 4|{param4:F1P}",
+				"DMG Berputar Charged Attack|{param5:F1P}",
+				"DMG Akhir Charged Attack|{param6:P}",
+				"Konsumsi Stamina Charged Attack|{param7:F1}/dtk",
+				"Durasi Maksimum|{param8:F1} dtk",
+				"DMG Selama Plunging|{param9:F1P}",
+				"DMG Plunging Attack Min./Maks.|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Pressurized Floe",
+		"info": "Melancarkan serangan ke atas dan mengakibatkan Cryo DMG, lalu memasuki status Pers Timer selama 10 detik.\nSaat Freminent berada dalam status Pers Timer, Elemental Skill-nya akan berubah menjadi Shattering Pressure.\n\n**Shattering Pressure**\nMelancarkan serangan yang berbeda berdasarkan level Pressure dari status Pers Timer, lalu menghapus status Pers Timer:\n·Level 0: Melancarkan tebasan vertikal yang mengakibatkan Cryo DMG.\n·Level 1-3: Melancarkan tebasan vertikal bersamaan dengan Pers yang mengakibatkan Cryo DMG dan Physical DMG. DMG yang dihasilkan juga akan berbeda berdasarkan level Pressure.\n·Level 4: Meminjam kekuatan Pers yang penuh dengan tekanan untuk mengakibatkan Physical DMG. Saat ini, \"Normal Attack: Flowing Eddies\" akan diubah menjadi Shattering Pressure.\n\n**Pers Timer**\nSaat Freminet melancarkan Normal Attack, akan melancarkan gelombang Frost yang mengakibatkan Cryo DMG dan juga akan meningkatkan level Pressure Pers.\nCryo DMG yang dihasilkan di saat yang bersamaan akan dianggap sebagai DMG Elemental Skill.\n\n**Arkhe: Pneuma**\nSetiap kurun waktu tertentu, setelah melancarkan serangan ke atas, Spiritbreath Thorn akan tercipta dalam bentuk serangan ke atas tambahan, yang mengakibatkan Pneuma-aligned Cryo DMG.",
+		"description": "Melumpuhkan musuh tanpa merenggut nyawa mereka juga dapat dipertimbangkan sebagai strategi \"bertahan hidup\" yang dapat dipilih.\n\"Pers ... Aku serahkan sisanya kepadamu.\"",
+		"attributes": {
+			"labels": [
+				"DMG Serangan ke Atas|{param1:F1P}",
+				"DMG Frost|{param3:F1P}",
+				"DMG Shattering Pressure Lv. 0|{param4:F1P}",
+				"DMG Shattering Pressure Lv. 1|{param5:F1P} Cryo + {param6:F1P} Physical",
+				"DMG Shattering Pressure Lv. 2|{param7:F1P} Cryo + {param8:F1P} Physical",
+				"DMG Shattering Pressure Lv. 3|{param9:F1P} Cryo + {param10:F1P} Physical",
+				"DMG Shattering Pressure Lv. 4|{param11:F1P}",
+				"DMG Spiritbreath Thorn|{param2:F1P}",
+				"Jeda Spiritbreath Thorn|{param13:F1} dtk",
+				"Cooldown|{param12:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Shadowhunter's Ambush",
+		"info": "Melancarkan aura dingin yang tidak dapat disentuh dan mengakibatkan Cryo DMG Area, memulihkan kembali Cooldown Elemental Skill \"Pressurized Floe\" dan membuat Freminet memasuki status Subnautical Hunter selama 10 detik.\n\nSelama berada dalam status Subnautical Hunter, ketahanan Freminet terhadap interupsi meningkat dan Elemental Skill \"Pressurized Floe\" akan mendapatkan buff berikut:\n·Cooldown berkurang 70%.\n·Saat melancarkan Normal Attack, akan meningkatkan satu level Pressure dari Pers Timer dan DMG gelombang Frost yang dihasilkan oleh Normal Attack-nya menjadi 200% dari nilai awalnya.\n\nEfek ini akan dihapus jika Freminet meninggalkan medan pertempuran.",
+		"description": "\"Sekarang ... aku tidak perlu suara bising lainnya lagi.\"",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"Durasi|{param2:F1} dtk",
+				"Cooldown|{param3:F1} dtk",
+				"Konsumsi Energy|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Saturation Deep Dive",
+		"info": "Saat melancarkan **Pressurized Floe: Shattering Pressure**, jika level Pressure milik Pers Timer di bawah level 4, maka durasi Cooldown Pressurized Floe berkurang 1 detik."
+	},
+	"passive2": {
+		"name": "Parallel Condensers",
+		"info": "Setelah Freminet memicu reaksi Shatter terhadap musuh, DMG yang diakibatkan **Pressurized Floe: Shattering Pressure** akan meningkat 40% selama 5 detik."
+	},
+	"passive3": {
+		"name": "Deepwater Navigation",
+		"info": "Mengurangi 35% konsumsi Aquatic Stamina Karakter party sendiri di dalam air.\nEfek ini tidak dapat ditumpuk dengan Talenta Pasif lain dengan efek yang sama persis."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Justice",
+				"count": 3
+			},
+			{
+				"name": "Transoceanic Pearl",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 2
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 4
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 6
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 9
+			},
+			{
+				"name": "Transoceanic Chunk",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 4
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 4
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 6
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 6
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 12
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 9
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 16
+			},
+			{
+				"name": "Xenochromatic Crystal",
+				"count": 12
+			},
+			{
+				"name": "Worldspan Fern",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}
