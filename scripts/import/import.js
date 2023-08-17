@@ -192,7 +192,7 @@ async function getCharList(region) {
 }
 async function getUpperBodyImages() {
 	const util = require('util');
-	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru'];
+	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'Fontaine'];
 	let myimages = {};
 	try { myimages = require(`../../src/data/image/characters.json`); } catch(e) {}
 
@@ -709,7 +709,7 @@ gameVersion = "4.0"; // new data will use this as added version
 
 // importData('characters', collateCharacter);
 // importCurve('characters');
-// getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
+getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
 // importData('constellations', collateConstellation);
 // importData('talents', collateTalent);
@@ -732,16 +732,16 @@ gameVersion = "4.0"; // new data will use this as added version
 // importData('achievementgroups');
 // importData('adventureranks'); // max 60
 
-importData('tcgcharactercards');
-importData('tcgenemycards');
-importData('tcgactioncards');
-importData('tcgcardbacks');
-importData('tcgcardboxes');
-importData('tcgdetailedrules');
-importData('tcgkeywords');
-importData('tcglevelrewards');
-importData('tcgstatuseffects');
-importData('tcgsummons');
+// importData('tcgcharactercards');
+// importData('tcgenemycards');
+// importData('tcgactioncards');
+// importData('tcgcardbacks');
+// importData('tcgcardboxes');
+// importData('tcgdetailedrules');
+// importData('tcgkeywords');
+// importData('tcglevelrewards');
+// importData('tcgstatuseffects');
+// importData('tcgsummons');
 
 // updateURLs(); // must be separate
 
