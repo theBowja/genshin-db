@@ -1,5 +1,6 @@
 declare module "genshin-db" {
 	export interface Talent {
+		id: number;
 		name: string;
 		combat1: CombatTalentDetail;
 		combat2: CombatTalentDetail;
@@ -21,21 +22,23 @@ declare module "genshin-db" {
 			"lvl10": Items[];
 		}
 		images?: { // images for talents aren't available yet
-			combat1: string;
-			combat2: string;
-			combatsp?: string; // for mona/ayaka
-			combat3: string;
-			passive1: string;
-			passive2: string;
-			passive3?: string; // player character doesn't have a third talent
+			filename_combat1: string;
+			filename_combat2: string;
+			filename_combatsp?: string; // for mona/ayaka
+			filename_combat3: string;
+			filename_passive1: string;
+			filename_passive2: string;
+			filename_passive3?: string; // player character doesn't have a third talent
+			filename_passive4?: string; // for kokomi's negative crit passive
 		};
 		version: string;
 	}
 
 	export interface CombatTalentDetail {
 		name: string;
-		info: string;
-		description?: string; // no description for combat1
+		descriptionRaw: string;
+		description: string; // sanitized with removeColorHTML, removeHashtag, replaceGenderM, replaceLayoutPC, replaceNonBreakSpace
+		flavorText?: string; // no flavortext for combat1 (normal attack). sanitized with replaceGenderM, replaceNonBreakSpace
 		attributes: {
 			labels: string[];
 			parameters: {
@@ -46,6 +49,7 @@ declare module "genshin-db" {
 
 	export interface PassiveTalentDetail {
 		name: string;
-		info: string;
+		descriptionRaw: string;
+		description: string; // sanitized with removeColorHTML, removeHashtag, replaceGenderM, replaceLayoutPC, replaceNonBreakSpace
 	}
 }
