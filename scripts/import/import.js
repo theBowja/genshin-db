@@ -399,7 +399,6 @@ function updateTypeLiterals(folder, importdatafolder, properties) {
 		// create and save type literal.
 		if (values.length > 0) {
 			let literal = values.sort().map(e => typeof e === 'string' ? `'${e}'` : e).join(' | ');
-			console.log(literal);
 			newdts = newdts.replace(new RegExp(`${property}(\\??): .*?;`), `${property}$1: ${literal};`);
 		}
 	}
@@ -459,7 +458,7 @@ function writeFileIfDifferent(path, data) {
 
 const design = require(`../../src/design.json`);
 const importconfig = require('./configs/properties.json');
-function importData(folder, collateFunc, dontwrite=true, deleteexisting, skipimageredirect) {
+function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipimageredirect) {
 	language.languageCodes.forEach(async (langC) => {
 		if(dontwrite && langC !== 'EN') return; 
 
@@ -530,30 +529,30 @@ function importData(folder, collateFunc, dontwrite=true, deleteexisting, skipima
 // checkExistingImageBlacklist = true; // 
 gameVersion = "4.0"; // new data will use this as added version
 
-importData('characters');
+// importData('characters');
 // importCurve('characters');
 // getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
-importData('constellations');
-importData('talents');
-importData('weapons')
-importCurve('weapons');
-importData('artifacts');
-importData('foods');
-importData('materials');
-importData('domains');
-importData('enemies');
-importCurve('enemies');
+// importData('constellations');
+// importData('talents');
+// importData('weapons')
+// importCurve('weapons');
+// importData('artifacts');
+// importData('foods');
+// importData('materials');
+// importData('domains');
+// importData('enemies');
+// importCurve('enemies');
 
-importData('outfits');
-importData('windgliders');
-importData('animals');
-importData('namecards');
-importData('geographies');
-importData('crafts');
-importData('achievements');
-importData('achievementgroups');
-importData('adventureranks'); // max 60
+// importData('outfits');
+// importData('windgliders');
+// importData('animals');
+// importData('namecards');
+// importData('geographies');
+// importData('crafts');
+// importData('achievements');
+// importData('achievementgroups');
+// importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
 // importData('tcgactioncards');
