@@ -1,13 +1,14 @@
 declare module "genshin-db" {
 	export interface Namecard {
+		id: number;
 		name: string;
 		description: string;
-		sortorder: number;
+		sortOrder: number;
 		source: string[];
 		images: {
-			nameicon: string;
-			namebanner?: string; // the first namecard doesn't have this
-			namebackground: string;
+			filename_icon: string;
+			filename_banner?: string; // the first namecard doesn't have this
+			filename_background: string;
 		};
 		version: string;
 	}

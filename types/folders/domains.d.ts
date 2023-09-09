@@ -1,24 +1,30 @@
 declare module "genshin-db" {
 	export interface Domain {
+		id: number;
 		name: string;
 
-		region: string;
-		domainentrance: string;
-		domaintype: string; // Artifacts, Weapon Ascension Materials, Talent Level-Up Material
+		regionId: number;
+		regionName: string;
+		entranceId: number;
+		entranceName: string;
+		domainType: 'UI_ABYSSUS_AVATAR_PROUD' | 'UI_ABYSSUS_RELIC' | 'UI_ABYSSUS_WEAPON_PROMOTE'; // enum
+		domainText: string; // translated
+
 		description: string;
 
-		recommendedlevel: number;
-		recommendedelements: string[];
-		daysofweek?: string[]; // undefined for artifact domains
-		unlockrank: number; // adventure rank this domain unlocks at
-		rewardpreview: Rewards[];
+		recommendedLevel: number;
+		recommendedElements: string[];
+
+		daysOfWeek?: string[]; // undefined for artifact domains
+		unlockRank: number; // adventure rank this domain unlocks at
+		rewardPreview: Rewards[];
 		disorder: string[];
 
-		monsterlist?: string[]; // I manually keep this updated. If I forget, it'll be undefined.
+		monsterList?: string[]; // I manually keep this updated. If I forget, it'll be undefined.
 		// objectives?: string[]; // UNIMPLEMENTED TODO
 
 		images: {
-			namepic: string;
+			filename_image: string;
 		}
 	}
 

@@ -7,9 +7,9 @@ declare module "genshin-db" {
 		title: string; // empty strings for traveler
 		description: string; // sanitized with: removeNonBreakSpace, replaceGenderM, replaceGenderF, removeHashtag
 
-		weaponType: string; // enum
+		weaponType: 'WEAPON_BOW' | 'WEAPON_CATALYST' | 'WEAPON_CLAYMORE' | 'WEAPON_POLE' | 'WEAPON_SWORD_ONE_HAND'; // enum
 		weaponText: string; // translated
-		bodyType: string; // enum
+		bodyType: 'BODY_BOY' | 'BODY_GIRL' | 'BODY_LADY' | 'BODY_LOLI' | 'BODY_MALE'; // enum
 		gender: string; // manually translated
 
 		qualityType: string // enum
@@ -18,14 +18,14 @@ declare module "genshin-db" {
 		birthdaymmdd: string; // empty string if player character
 		birthday: string; // translated. empty string if player character
 
-		elementType: string; // enum
+		elementType: 'ELEMENT_ANEMO' | 'ELEMENT_CRYO' | 'ELEMENT_DENDRO' | 'ELEMENT_ELECTRO' | 'ELEMENT_GEO' | 'ELEMENT_HYDRO' | 'ELEMENT_NONE' | 'ELEMENT_PYRO'; // enum
 		elementText: string; // translated
 
 		affiliation: string; // empty string if player character
-		associationType: string; // enum;
+		associationType: 'ASSOC_FATUI' | 'ASSOC_FONTAINE' | 'ASSOC_INAZUMA' | 'ASSOC_LIYUE' | 'ASSOC_MAINACTOR' | 'ASSOC_MONDSTADT' | 'ASSOC_RANGER' | 'ASSOC_SUMERU'; // enum;
 		region: string; // empty string if player character or crossover (aloy)
 
-		substatType: string; // enum
+		substatType: 'FIGHT_PROP_ATTACK_PERCENT' | 'FIGHT_PROP_CHARGE_EFFICIENCY' | 'FIGHT_PROP_CRITICAL' | 'FIGHT_PROP_CRITICAL_HURT' | 'FIGHT_PROP_DEFENSE_PERCENT' | 'FIGHT_PROP_ELEC_ADD_HURT' | 'FIGHT_PROP_ELEMENT_MASTERY' | 'FIGHT_PROP_FIRE_ADD_HURT' | 'FIGHT_PROP_GRASS_ADD_HURT' | 'FIGHT_PROP_HEAL_ADD' | 'FIGHT_PROP_HP_PERCENT' | 'FIGHT_PROP_ICE_ADD_HURT' | 'FIGHT_PROP_PHYSICAL_ADD_HURT' | 'FIGHT_PROP_ROCK_ADD_HURT' | 'FIGHT_PROP_WATER_ADD_HURT' | 'FIGHT_PROP_WIND_ADD_HURT'; // enum
 		substatText: string; // translated
 
 		constellation: string;

@@ -1,16 +1,18 @@
 declare module "genshin-db" {
 	export interface Outfit {
+		id: number;
 		name: string;
 		description: string;
-		isdefault: boolean;
-		character: string;
+		isDefault: boolean;
+		characterId: number;
+		characterName: string;
 		source?: string[];
 
 		images: {
-			namecard: string;
-			nameicon?: string;
-			namesideicon?: string;
-			namesplash?: string;
+			filename_card: string;
+			filename_icon?: string;
+			filename_splash?: string;
+			filename_sideIcon?: string;
 		};
 		url: {
 			modelviewer?: string;

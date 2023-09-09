@@ -161,8 +161,9 @@ declare module "genshin-db" {
 	}
 
 	export interface Rewards {
+		id: number;
 		name: string;
-		rarity?: '1' | '2' | '3' | '4' | '5'; // only used for artifacts
+		rarity?: 1 | 2 | 3 | 4 | 5; // only used for artifacts
 		count?: number; // only used for adventure exp, mora, and companionship exp
 		countmax?: number; // upper range. used for enhancement ore which can be shown as "0~1"
 	}

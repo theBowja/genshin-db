@@ -1,10 +1,11 @@
 declare module "genshin-db" {
 	export interface Food {
+		id: number;
 		name: string;
-		rarity: '1' | '2' | '3' | '4'| '5';
+		rarity: 1 | 2 | 3 | 4 | 5;
 		foodtype: 'NORMAL' | 'SPECIALTY';
-		foodfilter: string;
-		foodcategory: string; // untranslated
+		filterType: 'COOK_FOOD_ATTACK' | 'COOK_FOOD_DEFENSE' | 'COOK_FOOD_FUNCTION' | 'COOK_FOOD_HEAL'; // enum
+		filterText: string; // translated
 		effect: string;
 		description: string;
 
@@ -20,20 +21,22 @@ declare module "genshin-db" {
 			effect: string;
 			description: string;
 		};
-		basedish?: string;
-		character?: string;
+
+		baseDishId?: number; // for specialty dish
+		baseDishName?: string; // for specialty dish
+		characterId?: number; // for specialty dish
+		characterName?: string; // for specialty dish
 
 		ingredients: FoodIngredient[];
 		images: {
-			nameicon: string;
-		};
-		url: {
-			fandom: string;
+			filename_buff: string;
+			filename_icon: string;
 		};
 		version: string;
 	}
 
 	export interface FoodIngredient {
+		id: number;
 		name: string;
 		count: number;
 	}

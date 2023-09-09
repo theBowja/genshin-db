@@ -1,13 +1,16 @@
 declare module "genshin-db" {
 	export interface Geography {
+		id: number;
 		name: string;
-		area: string;
-		description :string;
-		region: string;
-		showonlyunlocked?: true;
-		sortorder: number;
+		areaId: number;
+		areaName: string;
+		description: string;
+		regionId: string;
+		regionName: string;
+		showOnlyUnlocked?: true;
+		sortOrder: number;
 		images: {
-			nameimage: string;
+			filename_image: string;
 		};
 		version: string;
 	}

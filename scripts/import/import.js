@@ -304,7 +304,7 @@ function copyPropsIfExist(fromObj, toObj, props, setdefault) {
 	for(let prop of props) {
 		let isRequired = false;
 		if (prop[0] === '!') {
-			prop = slice(1);
+			prop = prop.slice(1);
 			isRequired = true;
 		}
 		let [fromProp, toProp] = splitFromTo(prop);
@@ -381,6 +381,34 @@ function importCurve(folder) {
 	} catch(e) {}
 }
 
+function updateTypeLiterals(folder, importdatafolder, properties) {
+	if (!properties) return
+	if (!fs.existsSync(`../../types/folders/${folder}.d.ts`)) return;
+
+	let resdts = fs.readFileSync(`../../types/folders/${folder}.d.ts`).toString();
+	newdts = resdts;
+
+	for (let property of properties) {
+		let values = {};
+		for (let data of Object.values(importdatafolder)) {
+			let value = data[property];
+			if (value && !values[value]) values[value] = value;
+		}
+		values = Object.values(values);
+
+		// create and save type literal.
+		if (values.length > 0) {
+			let literal = values.sort().map(e => typeof e === 'string' ? `'${e}'` : e).join(' | ');
+			console.log(literal);
+			newdts = newdts.replace(new RegExp(`${property}(\\??): .*?;`), `${property}$1: ${literal};`);
+		}
+	}
+
+	if (resdts !== newdts) {
+		fs.writeFileSync(`../../types/folders/${folder}.d.ts`, newdts);
+	}
+}
+
 function patchData(folder, data, langC, filename) {
 	if(folder === 'talents' && langC === 'DE' && filename === 'zhongli') {
 		const wrong = "Ein riesiger Meteorit fällt aus dem Himmel und fügt den Gegnern im Wirkungsbereich des Einschlags enormen Geo-Schaden sowie Versteinert zu.\n\n**Versteingert**\nGegner im Zustand Versteinert können sich nicht bewegen.";
@@ -431,7 +459,7 @@ function writeFileIfDifferent(path, data) {
 
 const design = require(`../../src/design.json`);
 const importconfig = require('./configs/properties.json');
-function importData(folder, collateFunc, dontwrite, deleteexisting, skipimageredirect) {
+function importData(folder, collateFunc, dontwrite=true, deleteexisting, skipimageredirect) {
 	language.languageCodes.forEach(async (langC) => {
 		if(dontwrite && langC !== 'EN') return; 
 
@@ -476,6 +504,8 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 			fs.writeFileSync(`../../src/data/${basepath}/${filename}.json`, JSON.stringify(dbdata, null, '\t'));
 		}
 
+		updateTypeLiterals(folder, importdatafolder, importconfig[folder].typeliteral);
+
 		// remove unused files
 		fs.readdirSync(`../../src/data/${language.languageMap[langC]}/${folder}`).forEach(file => {
 			if(!filenamelist.includes(file.substring(0, file.indexOf('.')))) {
@@ -500,30 +530,30 @@ function importData(folder, collateFunc, dontwrite, deleteexisting, skipimagered
 // checkExistingImageBlacklist = true; // 
 gameVersion = "4.0"; // new data will use this as added version
 
-// importData('characters');
+importData('characters');
 // importCurve('characters');
-getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
+// getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
-// importData('constellations');
-// importData('talents');
-// importData('weapons')
-// importCurve('weapons');
+importData('constellations');
+importData('talents');
+importData('weapons')
+importCurve('weapons');
 importData('artifacts');
-// importData('foods');
-// importData('materials', collateMaterial, undefined, false, true); // don't forget to remove sort first // don't forget change last bool param
-// importData('domains');
-// importData('enemies');
-// importCurve('enemies');
+importData('foods');
+importData('materials');
+importData('domains');
+importData('enemies');
+importCurve('enemies');
 
-// importData('outfits', collateOutfit);
-// importData('windgliders');
-// importData('animals');
-// importData('namecards');
-// importData('geographies');
-// importData('crafts');
-// importData('achievements');
-// importData('achievementgroups');
-// importData('adventureranks'); // max 60
+importData('outfits');
+importData('windgliders');
+importData('animals');
+importData('namecards');
+importData('geographies');
+importData('crafts');
+importData('achievements');
+importData('achievementgroups');
+importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
 // importData('tcgactioncards');

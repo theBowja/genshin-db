@@ -7,16 +7,16 @@ declare module "genshin-db" {
 		description: string;
 		descriptionRaw: string;
 
-		weaponType: string; // enum
+		weaponType: 'WEAPON_BOW' | 'WEAPON_CATALYST' | 'WEAPON_CLAYMORE' | 'WEAPON_POLE' | 'WEAPON_SWORD_ONE_HAND'; // enum
 		weaponText: string; // translated
 
 		rarity: 1 | 2 | 3 | 4 | 5;
 		story: string; // empty string if no story
 
-		baseAtkValue: number;
-		mainStatType: string; // enum
-		mainStatText: string; // translated
-		baseStatText: string;
+		baseAtkValue: number; // not rounded
+		mainStatType?: 'FIGHT_PROP_ATTACK_PERCENT' | 'FIGHT_PROP_CHARGE_EFFICIENCY' | 'FIGHT_PROP_CRITICAL' | 'FIGHT_PROP_CRITICAL_HURT' | 'FIGHT_PROP_DEFENSE_PERCENT' | 'FIGHT_PROP_ELEMENT_MASTERY' | 'FIGHT_PROP_HP_PERCENT' | 'FIGHT_PROP_PHYSICAL_ADD_HURT'; // enum. low rarity weapons dont have this
+		mainStatText?: string; // translated. low rarity weapons dont have this
+		baseStatText: string; // as shown in-game. low rarity weapons dont have this
 
 		effectName?: string; // low rarity weapons dont have this
 		effectTemplateRaw?: string; // low rarity weapons dont have this

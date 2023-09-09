@@ -1,10 +1,11 @@
 declare module "genshin-db" {
 	export interface Enemy {
+		id: number;
 		name: string;
-		specialname: string;
+		specialName: string;
 
-		type: 'COMMON' | 'ELITE' | 'BOSS';
-		category: string; 
+		enemyType: 'BOSS' | 'COMMON' | 'ELITE'; // enum
+		category: string; // translated
 		description: string;
 
 		investigation?: { // almost all but not every enemy has this.
@@ -25,10 +26,11 @@ declare module "genshin-db" {
 		//     cryo: number;
 		//     electro: number;
 		// };
-		rewardpreview: Rewards[];
+		rewardPreview: Rewards[];
 
 		images: {
-			nameicon: string;
+			filename_icon: string;
+			filename_investigationIcon: string;
 		};
 		stats: EnemyStatFunction;
 	}

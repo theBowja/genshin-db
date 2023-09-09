@@ -1,14 +1,16 @@
 declare module "genshin-db" {
 	export interface Animal {
+		id: number;
 		name: string;
 		dupealias?: string; // Vietnamese Vịt
 		description: string;
-		category: string;
-		counttype: 'CAPTURE' | 'NONE' | 'FISH';
-		sortorder: number;
+		categoryType: 'ANIMAL' | 'AVIARY' | 'CRITTER' | 'FISH'; // enum
+		categoryText: string; // translated
+		countType: 'CAPTURE' | 'FISH' | 'NONE'; // enum
+		sortOrder: number;
 		
 		images: {
-			nameicon: string;
+			filename_icon: string;
 		};
 
 		version: string;

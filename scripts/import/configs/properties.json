@@ -1,75 +1,93 @@
 {
 
 	"characters": {
-		"props": ["id", "name", "fullname", "title", "description", "weaponType", "weaponText", "bodyType", "gender", "qualityType", "rarity",
+		"props": ["!id", "name", "fullname", "title", "description", "weaponType", "weaponText", "bodyType", "gender", "qualityType", "rarity",
 					"birthdaymmdd", "birthday", "elementType", "elementText", "affiliation", "associationType", "region", "substatType", "substatText",
 					"constellation", "cv", "costs"],
+		"typeliteral": ["weaponType", "bodyType", "qualityType", "rarity", "elementType", "associationType", "substatType"],
 		"images": ["filename_icon", "filename_iconCard", "filename_sideIcon", "filename_gachaSplash", "filename_gachaSlice",
 					"mihoyo_icon", "mihoyo_sideIcon"]
 	},
 	"constellations": {
-		"props": ["id", "name", "c1", "c2", "c3", "c4", "c5", "c6"],
+		"props": ["!id", "name", "c1", "c2", "c3", "c4", "c5", "c6"],
 		"images": ["filename_c1", "filename_c2", "filename_c3", "filename_c4", "filename_c5", "filename_c6",
 					"filename_constellation", "filename_constellation2"]
 	},
 	"talents": {
-		"props": ["id", "name", "combat1", "combat2", "combatsp", "combat3", "passive1", "passive2", "passive3", "passive4", "costs"],
+		"props": ["!id", "name", "combat1", "combat2", "combatsp", "combat3", "passive1", "passive2", "passive3", "passive4", "costs"],
 		"images": ["filename_combat1", "filename_combat2", "filename_combatsp", "filename_combat3",
 					"filename_passive1", "filename_passive2", "filename_passive3", "filename_passive4"]
 	},
 	"weapons": {
-		"props": ["id", "name", "dupealias", "description", "descriptionRaw", "weaponType", "weaponText", "rarity", "story",
+		"props": ["!id", "name", "dupealias", "description", "descriptionRaw", "weaponType", "weaponText", "rarity", "story",
 					"baseAtkValue", "mainStatType", "mainStatText", "baseStatText", "effectName", "effectTemplateRaw",
 					"r1", "r2", "r3", "r4", "r5", "costs"],
+		"typeliteral": ["weaponType", "rarity", "mainStatType"],
 		"images": ["filename_icon", "filename_awakenIcon", "filename_gacha", "mihoyo_icon", "mihoyo_awakenIcon"]
 	},
 	"artifacts": {
-		"props": ["id", "name", "effect1Pc", "effect2Pc", "effect4Pc", "flower", "plume", "sands", "goblet", "circlet"],
+		"props": ["!id", "rarityList", "name", "effect1Pc", "effect2Pc", "effect4Pc", "flower", "plume", "sands", "goblet", "circlet"],
 		"images": ["filename_flower", "filename_plume", "filename_sands", "filename_goblet", "filename_circlet",
 					"mihoyo_flower", "mihoyo_plume", "mihoyo_sands", "mihoyo_goblet", "mihoyo_circlet"]
 	},
-	"domains": {
-		"props": ["name", "region", "domainentrance", "domaintype", "description", "recommendedlevel", "recommendedelements",
-                  "daysofweek", "unlockrank", "rewardpreview", "disorder", "monsterlist"],
-		"images": ["imagename=>namepic"]
-	},
 	"foods": {
-		"props": ["name", "rarity", "foodtype", "foodfilter", "foodcategory", "effect", "description", "suspicious", "normal",
-				  "delicious", "basedish", "character", "ingredients"],
-		"images": ["nameicon"]
+		"props": ["!id", "name", "rarity", "foodtype", "filterType", "filterText", "effect", "description", "suspicious", "normal",
+				  "delicious", "baseDishId", "baseDishName", "characterId", "characterName", "ingredients"],
+		"typeliteral": ["rarity", "foodtype", "filterType"],
+		"images": ["filename_buff", "filename_icon"]
+	},
+	"materials": {
+		"props": ["!id", "name", "dupealias", "rarity", "sortRank", "description", "category", "typeText", "dropDomainId", "dropDomainName", "daysOfWeek", "sources"],
+		"typeliteral": ["rarity", "category"],
+		"images": ["filename_icon"]
+	},
+	"domains": {
+		"props": ["!id", "name", "regionId", "regionName", "entranceId", "entranceName", "domainType", "domainText", "description",
+					"recommendedLevel", "recommendedElements", "daysOfWeek", "unlockRank", "rewardPreview", "disorder", "monsterList"],
+		"typeliteral": ["domainType"],
+		"images": ["filename_image"]
 	},
 	"enemies": {
-		"props": ["name", "specialname", "enemytype", "category", "description", "investigation", "rewardpreview"],
-		"images": ["nameicon"]
+		"props": ["!id", "name", "specialName", "enemyType", "category", "description", "investigation", "rewardPreview"],
+		"typeliteral": ["enemyType"],
+		"images": ["filename_icon", "filename_investigationIcon"]
 	},
-	"achievements": {
-		"props": ["name", "dupealias", "achievementgroup", "ishidden", "sortorder", "stages", "stage1", "stage2", "stage3"]
-	},
-	"achievementgroups": {
-		"props": ["name", "sortorder", "reward"],
-		"images": ["nameicon"]
+
+	"outfits": {
+		"props": ["!id", "name", "description", "isDefault", "characterId", "characterName", "source"],
+		"images": ["filename_card", "filename_icon", "filename_splash", "filename_sideIcon"]
 	},
 	"windgliders": {
-		"props": ["name", "description", "rarity", "story", "sortorder", "ishidden", "source"],
-		"images": ["nameicon", "namegacha"]
+		"props": ["!id", "name", "description", "rarity", "story", "isHidden", "source"],
+		"typeliteral": ["rarity"],
+		"images": ["filename_icon", "filename_gacha"]
 	},
 	"animals": {
-		"props": ["name", "dupealias", "description", "category", "counttype", "sortorder"],
-		"images": ["nameicon"]
+		"props": ["!id", "name", "dupealias", "description", "categoryType", "categoryText", "countType", "sortOrder"],
+		"typeliteral": ["categoryType", "countType"],
+		"images": ["filename_icon"]
 	},
 	"namecards": {
-		"props": ["name", "description", "sortorder", "source"],
-		"images": ["nameicon", "namebanner", "namebackground"]
+		"props": ["!id", "name", "description", "sortOrder", "source"],
+		"images": ["filename_icon", "filename_banner", "filename_background"]
 	},
 	"geographies": {
-		"props": ["name", "area", "description", "region", "showonlyunlocked", "sortorder"],
-		"images": ["nameimage"]
-	},
-	"adventureranks": {
-		"props": ["name", "exp", "unlockdescription", "reward"]
+		"props": ["!id", "name", "areaId", "areaName", "description", "regionId", "regionName", "showOnlyUnlocked", "sortOrder"],
+		"images": ["filename_image"]
 	},
 	"crafts": {
-		"props": ["name", "filter", "sortorder", "unlockrank", "resultcount", "moracost", "recipe", "altrecipes"]
+		"props": ["!id", "name", "filterText", "sortOrder", "unlockRank", "resultCount", "moraCost", "recipe", "altrecipes"]
+	},
+	"achievements": {
+		"props": ["!id", "name", "dupealias", "achievementGroupId", "achievementGroupName", "isHidden", "sortOrder", 
+					"stages", "stage1", "stage2", "stage3"]
+	},
+	"achievementgroups": {
+		"props": ["!id", "name", "sortOrder", "reward"],
+		"images": ["filename_icon"]
+	},
+	"adventureranks": {
+		"props": ["!id", "name", "exp", "unlockDescription", "reward"]
 	},
 
 	"tcgcharactercards": {
