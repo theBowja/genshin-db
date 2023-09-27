@@ -1,0 +1,207 @@
+{
+	"name": "Wriothesley",
+	"combat1": {
+		"name": "Attaque normale : Poing vigoureux du givre",
+		"info": "**Attaque normale**\nCondense du givre sur son poing et déclenche un puissant **poing de réprimande**, enchaînant jusqu'à 5 attaques rapides qui infligent des DGT Cryo.\nDe plus, l'enchaînement d'attaques normales ne sera pas réinitialisé pendant une courte période après la compétence élémentaire « Ruée glaciale du croc » ou l'initiation d'un sprint.\n\n**Attaque chargée**\nConsomme de l'endurance pour sauter et déclencher un **poing bondissant** qui inflige des DGT Cryo de zone.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT Cryo de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}+{param5:F1P}",
+				"DGT 5e coup|{param6:F1P}",
+				"DGT attaque chargée|{param7:F1P}",
+				"Coût d'endurance attaque chargée|{param8:F1} pts",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ruée glaciale du croc",
+		"info": "En ajustant sa respiration, son rythme et sa cadence, Wriothesley sprinte vers l'avant sur une courte distance, entrant dans l'état **Châtiment algide** qui lui permet de déclencher des attaques encore plus puissantes.\n\n**Châtiment algide**\n· Augmente la RÉS à l'interruption de Wriothesley.\n· Lorsque les PV de Wriothesley sont supérieurs à 50 % : le poing de réprimande de l'**attaque normale « Poing vigoureux du givre »** est renforcé et ses DGT augmentés, et toucher avec ce poing consomme une quantité fixe des PV de Wriothesley, les PV pouvant être perdus une fois toutes les 0,1 s de cette manière.\nCet effet cesse lorsque Wriothesley quitte le champ de bataille.",
+		"description": "« Les condamnations passées sont passées. Ce sont nos choix futurs que nous devons appréhender.\nSi vous ne voulez pas vous faire consumer par les péchés du moment, alors s'il vous plaît, chérissez cet instant. »",
+		"attributes": {
+			"labels": [
+				"DGT poing de réprimande renforcé|{param1:F1P} DGT d'attaque normale",
+				"Coût de PV|{param2:F1P} PV max",
+				"Durée|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Morsure lupine de l'or",
+		"info": "Activant ses gants de boxe, Wriothesley déclenche un coup droit condensé de givre, puis utilise un impact de stalactite pour infliger plusieurs fois des DGT Cryo de zone.\n\n**Arkhe : Ousia**\nAprès la fin de l'impact de stalactite, une lame fluide descend à l'emplacement de l'ennemi pour infliger des DGT Cryo chargés d'énergie ousia.",
+		"description": "Il y a des choses contre lesquelles même le duc de la Forteresse de Méropide ne peut pas faire grand-chose : par exemple, la paperasserie compliquée, les futilités d'un superviseur ou bien... les petits enfants qui collent toute une série d'autocollants mignons mais difficiles à enlever sur ses gants de boxe...",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F2P} ×5",
+				"DGT lame fluide|{param2:F2P}",
+				"Temps de recharge|{param3:F1} s",
+				"TdR lame fluide|{param5:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Plaidoirie pour la justice",
+		"info": "Lorsque les PV de Wriothesley sont inférieurs à 60 %, il obtient une réprimande miséricordieuse qui convertit la prochaine attaque chargée de son **attaque normale « Poing vigoureux du givre »** en poing bondissant de réprimande : ne consomme pas d'endurance, augmente les DGT infligés de 50 %, et restaure les PV de Wriothesley d'une valeur équivalant à 30 % de ses PV max en touchant.\nUne réprimande miséricordieuse peut être obtenue une fois toutes les 5 s de cette manière."
+	},
+	"passive2": {
+		"name": "Rétribution pour le péché",
+		"info": "Lorsque les PV actuels de Wriothesley augmentent ou diminuent et s'il est sous l'effet du châtiment algide accordé par **Ruée glaciale du croc**, le châtiment algide obtient un cumul d'édit d'accusation. Cet effet peut être cumulé 5 fois maximum, chaque cumul permettant d'augmenter l'ATQ de Wriothesley de 6 %."
+	},
+	"passive3": {
+		"name": "Clémence du duc",
+		"info": "10 % de chances d'obtenir le double de produits lors de la synthèse de matériaux d'élévation d'arme."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Ordre",
+				"count": 3
+			},
+			{
+				"name": "Engrenage de maillage",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 2
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 6
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 9
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 4
+			},
+			{
+				"name": "Floraison première de l'oasis",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 6
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 6
+			},
+			{
+				"name": "Floraison première de l'oasis",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 12
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 9
+			},
+			{
+				"name": "Floraison première de l'oasis",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 16
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 12
+			},
+			{
+				"name": "Floraison première de l'oasis",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

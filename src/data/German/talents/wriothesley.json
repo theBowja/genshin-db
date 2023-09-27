@@ -1,0 +1,207 @@
+{
+	"name": "Wriothesley",
+	"combat1": {
+		"name": "Standardangriff: Flinke Frostfaust",
+		"info": "**Standardangriff**\nWriothesley kondensiert Eis in seinen Fäusten und führt bis zu 5 blitzschnelle Angriffe mit seinen **„Sturmfäusten“** aus, die Kryo-Schaden verursachen.\nAußerdem wird die Angriffsphase des Standardangriffs nach dem Auslösen der Elementarfähigkeit „Eiszahn-Ansturm“ oder dem Rennen für kurze Zeit nicht zurückgesetzt.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer, springt in die Luft und führt eine **„Gefrierende Sprungfaust“** aus, die Kryo-Flächenschaden verursacht.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Kryo-Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P} + {param5:F1P}",
+				"SCH Phase 5|{param6:F1P}",
+				"SCH heftiger Schläge|{param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Eiszahn-Ansturm",
+		"info": "Wriothesley reguliert seine Atmung, Rhythmus und Tempo, legt einen kurzen Sprint nach vorn hin, wechselt in den Zustand **„Eiskalte Bestrafung“** und wendet einen ungestümen Angriff an.\n\n**Eiskalte Bestrafung**\n· Erhöht Wriothesleys Unterbrechungs-WDS.\n· Verstärkt Wriothesleys Sturmfäuste von **Standardangriff: Flinke Frostfaust** bei mehr als 50 % LP, wodurch sich der durch die Sturmfäuste verursachte Schaden erhöht. Bei Treffern wird eine bestimmte Menge an LP von Wriothesley verbraucht. Auf diese Weise können höchstens einmal alle 0,1 s LP verbraucht werden.\nDieser Effekt wird aufgehoben, wenn Wriothesley ausgewechselt wird.",
+		"description": "„Die Vergangenheit ward besiegelt, die Zukunft jedoch liegt in unserer Hand.“\n„Wenn du nicht willst, dass dein Schicksal von den Sünden des Moments verschlungen wird, dann solltest du das Licht eben jenes gegenwärtigen Moments wertschätzen.“",
+		"attributes": {
+			"labels": [
+				"SCH der verstärkten Sturmfäuste|{param1:F1P} des Standardangriffs-SCH",
+				"LP-Verbrauch|{param2:F1P} der max. LP",
+				"Dauer|{param3:F1} s",
+				"Abklingzeit|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Schwarzgoldener Wolfsbiss",
+		"info": "Wriothesley aktiviert seine Handschuhe und schlägt eine Gerade, die kontinuierlich den Bereich vor ihm mit Eiszapfen eindeckt, und mehrfach Kryo-Flächenschaden verursacht.\n\n**Arkhe: Ousia**\nNachdem die Eiszapfen-Angriffe beendet wurden, geht eine Wogenklinge auf die Position des Gegners nieder, die mit Ousia versehenen Kryo-Schaden verursacht.",
+		"description": "Es gibt ein paar Dinge, gegen die selbst der Herzog des Forts Méropide nichts auszurichten vermag ... zum Beispiel lästiger Papierkram, behördliche Pflichten, oder ... die Kleinen, die heimlich süße, aber schwer zu entfernende Sticker auf seine Handschuhe kleben.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F2P} ×5",
+				"Wogenklingen-SCH|{param2:F2P}",
+				"Abklingzeit|{param3:F1} s",
+				"Wogenklingen-Abklingzeit|{param5:F1} s",
+				"Elementarenergie|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Tag des Plädoyers der Gerechtigkeit",
+		"info": "Wriothesley erhält bei weniger als 60 % LP „Gebot der Gnade“, wodurch sein nächster heftiger Schlag von **Standardangriff: Flinke Frostfaust** zu „Rüge – Gefrierende Sprungfaust“ verstärkt wird. Es wird keine Ausdauer verbraucht, erhöht den Schaden um 50 % und stellt Wriothesley bei Treffern 30 % der max. LP wieder her.\n5 s Abklingzeit."
+	},
+	"passive2": {
+		"name": "Stunde der Vergeltung der Sünde",
+		"info": "Befindet sich Wriothesley beim Erhöhen oder Verringern seiner aktuellen LP im Zustand „Eiskalte Bestrafung“ von **Eiszahn-Ansturm**, erhält „Eiskalte Bestrafung“ einen Stapel „Erlass der Anklage“. 5-fach stapelbar, jeder Stapel erhöht Wriothesleys ANG um 6 %."
+	},
+	"passive3": {
+		"name": "Die Gunst des Herzogs",
+		"info": "Stellt beim Zusammensetzen von Material zum Aufstieg von Waffen mit einer Wahrscheinlichkeit von 10 % den 2-fachen Ertrag her."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Ordnung“",
+				"count": 3
+			},
+			{
+				"name": "Greifendes Zahnrad",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 2
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 4
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 6
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 9
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 4
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 4
+			},
+			{
+				"name": "Urblüte der ersten Oase",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 6
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 6
+			},
+			{
+				"name": "Urblüte der ersten Oase",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 12
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 9
+			},
+			{
+				"name": "Urblüte der ersten Oase",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 16
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 12
+			},
+			{
+				"name": "Urblüte der ersten Oase",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

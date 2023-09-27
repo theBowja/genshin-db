@@ -1,0 +1,207 @@
+{
+	"name": "Wriothesley",
+	"combat1": {
+		"name": "Attacco normale: Pugni del gelo veemente",
+		"info": "**Attacco normale**\nWriothesley convoglia il gelo sul suo pugno per sferrare dei potenti **Pugni espulsori**, eseguendo fino a 5 attacchi rapidi che infliggono DAN da Cryo.\nAnche dopo aver usato un Assalto della zanna di ghiaccio o uno Scatto, la combo di attacchi normali non si azzera per alcuni istanti.\n\n**Attacco caricato**\nConsuma una data quantità di vigore per eseguire un balzo e sferrare un **Pugno guizzante**, infliggendo DAN da Cryo ad area.\n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN da Cryo ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}+{param5:F1P}",
+				"DAN da 5º colpo|{param6:F1P}",
+				"DAN da ATT caricato|{param7:F1P}",
+				"Costo vigore ATT caricato|{param8:F1}",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Assalto della zanna di ghiaccio",
+		"info": "Regolando il respiro, il ritmo e l'andatura, Wriothesley esegue uno Scatto in avanti per un breve tratto ed entra nello stato di **Punizione rigente**, scatenando attacchi più potenti del normale.\n\n**Punizione rigente**\n· Aumenta la resistenza all'interruzione di Wriothesley.\n· Se i suoi PS sono superiori a un 50%, potenzia i Pugni espulsori di **Attacco normale: Pugni del gelo veemente** aumentando i DAN inflitti. Quando uno di tali attacchi va a segno, una certa quantità dei PS di Wriothesley si consuma. Tale perdita di PS può verificarsi solo una volta ogni 0,1 s.\nQuesto effetto viene annullato se Wriothesley lascia il campo.",
+		"description": "\"Le condanne del passato sono solo un ricordo. Ciò che davvero importa sono le scelte future.\nSe non vuoi che il peccato di un singolo istante ti consumi, allora fai tesoro di quell'istante.\"",
+		"attributes": {
+			"labels": [
+				"DAN da Pugno espulsore potenziato|{param1:F1P} DAN da ATT normale",
+				"Costo PS|{param2:F1P} PS max",
+				"Durata|{param3:F1} s",
+				"TdR|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Morso del lupo brunauro",
+		"info": "Attivando i suoi guantoni da pugile, Wriothesley sferra un diretto di ghiaccio condensato, dopodiché usa un Impatto glaciale per infliggere più iterazioni di DAN da Cryo ad area di fronte a sé.\n\n**Archè: Ousia**\nQuando l'effetto dell'Impatto glaciale termina, una Lama nascente precipita nella posizione dell'avversario, infliggendo DAN da Cryo di polarità Ousia.",
+		"description": "Ci sono cose su cui perfino il Duca di Forte Méropide non ha alcun controllo... Le scartoffie complicate, per esempio. O le frivolezze di un supervisore. Oppure... i bambini che incollano sui guantoni da pugile una sfilza di adesivi bellissimi da vedere ma difficili da rimuovere.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F2P}×5",
+				"DAN da Lama nascente|{param2:F2P}",
+				"TdR|{param3:F1} s",
+				"TdR Lama nascente|{param5:F1} s",
+				"Costo energia|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Supplica di giustizia",
+		"info": "Se Wriothesley possiede meno di un 60% dei PS, il personaggio ottiene un Rimprovero magnanimo. Il successivo attacco caricato di **Attacco normale: Pugni del gelo veemente** si potenzia per diventare Rimprovero: Pugno guizzante. Quest'ultimo non consuma vigore, infligge un 50% di DAN in più e ripristina un 30% dei PS max di Wriothesley all'impatto.\nÈ possibile ottenere Rimprovero magnanimo in questo modo ogni 5 s."
+	},
+	"passive2": {
+		"name": "Ascrizione del peccato",
+		"info": "Quando i PS attuali di Wriothesley aumentano o diminuiscono mentre è nello stato di Punizione rigente conferito da **Assalto della zanna di ghiaccio**, Punizione rigente ottiene 1 accumulo di Editto d'accusa, fino a un massimo di 5. Ogni accumulo aumenta di un 6% l'ATT di Wriothesley."
+	},
+	"passive3": {
+		"name": "Grazia del Duca",
+		"info": "Quando Wriothesley crea materiali d'ascensione delle armi, ha un 10% di probabilità di ricevere il doppio del prodotto."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti dell'ordine",
+				"count": 3
+			},
+			{
+				"name": "Ingranaggio dentato",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida all'ordine",
+				"count": 2
+			},
+			{
+				"name": "Ingranaggio cilindrico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida all'ordine",
+				"count": 4
+			},
+			{
+				"name": "Ingranaggio cilindrico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida all'ordine",
+				"count": 6
+			},
+			{
+				"name": "Ingranaggio cilindrico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida all'ordine",
+				"count": 9
+			},
+			{
+				"name": "Ingranaggio cilindrico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie dell'ordine",
+				"count": 4
+			},
+			{
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 4
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie dell'ordine",
+				"count": 6
+			},
+			{
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 6
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie dell'ordine",
+				"count": 12
+			},
+			{
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 9
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie dell'ordine",
+				"count": 16
+			},
+			{
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 12
+			},
+			{
+				"name": "Bocciolverde primordiale",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}
