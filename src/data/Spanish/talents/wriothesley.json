@@ -1,0 +1,207 @@
+{
+	"name": "Wriothesley",
+	"combat1": {
+		"name": "Ataque Normal: Combo glaciodemoledor",
+		"info": "**Ataque Normal**\nAcumula hielo en los puños para ejecutar hasta 5 potentes **puñetazos expeledores** que infligen Daño Cryo.\nAdemás, al usar la Habilidad Elemental, “Envite ateridor”, o durante un breve periodo de tiempo después de esprintar, la secuencia de los Ataques Normales no se reiniciará.\n\n**Ataque Cargado**\nConsume cierta cantidad de Aguante para dar un salto y ejecutar un **gancho alto** que inflige Daño Cryo en el AdE.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño Cryo en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P} + {param5:F1P}",
+				"Daño de 5.º golpe|{param6:F1P}",
+				"Daño de ATQ Cargado|{param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Envite ateridor",
+		"info": "Regula la respiración y el ritmo, avanza ligeramente hacia delante y entra en el estado de “**sentencia gélida**” para ejecutar ataques más potentes.\n\n**Sentencia gélida**\n·Aumenta la RES a interrupción de Wriothesley.\n·Cuando la Vida de Wriothesley está por encima del 50%, los puñetazos expeledores de su **Ataque Normal: Combo glaciodemoledor** se fortalecen, de modo que infligen más daño y, al golpear al objetivo, Wriothesley pierde cierta cantidad de Vida. Solo podrá perder Vida una vez cada 0.1 s de esta manera.\nEste efecto se anula cuando Wriothesley se retira del campo de batalla.",
+		"description": "Las sentencias del pasado pertenecen al pasado, pero en nuestras manos está decidir el futuro.\nSi no deseas que las ofensas acaben con tu destino, será mejor que aprecies el presente.",
+		"attributes": {
+			"labels": [
+				"Daño de puñetazo expeledor fortalecido|{param1:F1P} de daño de ATQ Normal",
+				"Consumo de Vida|{param2:F1P} de Vida Máx.",
+				"Duración|{param3:F1} s",
+				"TdE|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Devoración aureosombría",
+		"info": "Ejecuta un puñetazo de escarcha directo y, después, crea un carámbano apisonador enfrente de sí mismo, el cual inflige varias veces Daño Cryo en el AdE.\n\n**Arjé: ousía**\nTras liberar el carámbano apisonador, en la ubicación del enemigo caerá un filo fluyente que inflige Daño Cryo cargado de energía ousía.",
+		"description": "Hay cosas que sacan de quicio hasta al mismísimo duque del Fuerte Merópide, como por ejemplo, la tediosa burocracia, el trabajo de vigilancia o... la insistencia de ciertas criaturas de baja estatura en pegar en los guantes de combate del duque unas calcomanías muy difíciles de despegar.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F2P} ×5",
+				"Daño de filo fluyente|{param2:F2P}",
+				"TdE|{param3:F1} s",
+				"TdE de filo fluyente|{param5:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Refutación del dogma",
+		"info": "Cuando la Vida de Wriothesley está por debajo del 60%, obtiene el efecto de “merced reprensora”, el cual fortalece su siguiente Ataque Cargado de **Ataque Normal: Combo glaciodemoledor** para convertirlo en un gancho alto disciplinario que no consume Aguante, inflige un 50% más de daño y, al golpear al enemigo, restaura Vida a Wriothesley en una cantidad equivalente al 30% de su propia Vida Máx.\nComo máximo, el efecto de merced reprensora solo se puede obtener una vez cada 5 s de esta forma."
+	},
+	"passive2": {
+		"name": "Redención del pecado",
+		"info": "Cuando la Vida de Wriothesley aumenta o disminuye, si se encuentra en el estado de sentencia gélida de **Envite ateridor**, dicho estado obtiene el efecto de “decreto punitivo”. Este puede acumularse hasta 5 veces y cada acumulación aumenta el ATQ de Wriothesley en un 6%."
+	},
+	"passive3": {
+		"name": "Dádiva ducal",
+		"info": "Al crear materiales de ascensión de arma, hay una probabilidad del 10% de recibir el doble."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas del orden",
+				"count": 3
+			},
+			{
+				"name": "Engranaje de malla",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía del orden",
+				"count": 2
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía del orden",
+				"count": 4
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía del orden",
+				"count": 6
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía del orden",
+				"count": 9
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 4
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 4
+			},
+			{
+				"name": "Floración primigenia del oasis",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 6
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 6
+			},
+			{
+				"name": "Floración primigenia del oasis",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 12
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 9
+			},
+			{
+				"name": "Floración primigenia del oasis",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 16
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 12
+			},
+			{
+				"name": "Floración primigenia del oasis",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}
