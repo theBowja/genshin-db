@@ -2,7 +2,7 @@
 	"name": "Xinyan",
 	"combat1": {
 		"name": "Normal Attack: Dance on Fire",
-		"info": "**Normal Attack** Melancarkan hingga 4 tebasan berturut-turut.\n\n**Charged Attack**\nTerus menguras Stamina untuk melancarkan serangan berputar yang mengakibatkan DMG ke musuh di sekitar.\nDiakhiri dengan sebuah tebasan yang kuat.\n\n**Plunging Attack**\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"info": "**Normal Attack** Melancarkan hingga 4 tebasan berturut-turut.\n\n**Charged Attack**\nTerus menguras Stamina untuk melancarkan serangan berputar yang mengakibatkan DMG ke musuh di sekitar.\nMelancarkan sebuah tebasan yang kuat di akhir serangan berputar.\n\n**Plunging Attack**\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
 		"attributes": {
 			"labels": [
 				"DMG Tahap 1|{param1:F1P}",
@@ -14,20 +14,20 @@
 				"Konsumsi Stamina Charged Attack|{param7:F1}/dtk",
 				"Durasi Maksimum|{param8:F1} dtk",
 				"DMG Selama Plunging|{param9:F1P}",
-				"DMG Plunging Attack Min./Maks.|{param10:P}/{param11:P}"
+				"DMG Plunging Attack Rendah/Tinggi|{param10:P}/{param11:P}"
 			]
 		}
 	},
 	"combat2": {
 		"name": "Sweeping Fervor",
-		"info": "Xinyan mengayunkan instrumennya, mengakibatkan Pyro DMG terhadap semua musuh di dekatnya, dan membentuk sebuah perisai yang terbuat dari hasrat pendengarnya.\nSkala penahanan DMG didasarkan pada DEF Xinyan dan jumlah musuh yang terkena skill ini.\n·Memukul 0-1 musuh memberikan Perisai Level 1: Ad Lib.\n· Memukul 2 musuh memberikan Perisai Level 2: Lead-In.\n· Memukul 3 musuh memberikan Perisai Level 3: Rave, yang juga akan mengakibatkan Pyro DMG secara berkala terhadap semua musuh di dekatnya.\n\nPerisai memiliki sifat khusus berikut:\n·Ketika dilancarkan, perisai memberikan efek Pyro untuk Xinyan.\n·Perisai memiliki 250% efisiensi menahan Pyro DMG.",
-		"description": "Xinyan menegaskan bahwa pyrotechnics ini adalah puncak dari seni performatif, dan itu adalah fenomena fisik yang tidak ada kaitannya dengan Vision yang dia miliki.",
+		"info": "Xinyan mengayunkan alat musiknya, mengakibatkan Pyro DMG terhadap semua musuh di dekatnya, dan membentuk sebuah perisai yang terbuat dari hasrat para pendengarnya.\nJumlah DMG yang bisa ditahan perisai didasarkan pada DEF Xinyan dan jumlah musuh yang terkena skill ini.\n· Mengenai 0-1 musuh memberikan Perisai Level 1: Ad Lib.\n· Mengenai 2 musuh memberikan Perisai Level 2: Lead-In.\n· Mengenai 3 musuh memberikan Perisai Level 3: Rave, yang juga akan mengakibatkan Pyro DMG secara berkala terhadap semua musuh di dekatnya.\n\nPerisai Xinyan memiliki sifat khusus berikut:\n· Ketika dilancarkan, perisai akan memberikan efek Pyro untuk Xinyan.\n· Perisai dapat menahan Pyro DMG 250% lebih efektif.",
+		"description": "Xinyan menegaskan bahwa seni Pyrotechnic ini adalah puncak dari seni pertunjukan, dan itu adalah fenomena fisik yang tidak berhubungan dengan Vision yang dia miliki.",
 		"attributes": {
 			"labels": [
-				"Swing DMG|{param1:P}",
-				"Pertahanan Perisai Level 1|{param2:F1P}DEF+{param3:I}",
-				"Pertahanan Perisai Level 2|{param4:F1P}DEF+{param5:I}",
-				"Pertahanan Perisai Level 3|{param6:F1P}DEF+{param7:I}",
+				"DMG Tebasan|{param1:P}",
+				"Pertahanan Perisai Level 1|{param2:F1P} DEF+{param3:I}",
+				"Pertahanan Perisai Level 2|{param4:F1P} DEF+{param5:I}",
+				"Pertahanan Perisai Level 3|{param6:F1P} DEF+{param7:I}",
 				"DMG Berkelanjutan|{param8:F1P}",
 				"Durasi Perisai|{param9:F1} detik",
 				"Cooldown|{param10:F1} dtk"
@@ -36,8 +36,8 @@
 	},
 	"combat3": {
 		"name": "Riff Revolution",
-		"info": "Menggesek senarnya secara cepat dan menimbulkan bunyi kasar yang bisa menghempas musuh, serta mengakibatkan Physical DMG dan efek hipnotis terhadap mereka.\nIntensitas atmosfer yang tipis akan menyebabkan ledakan yang mengakibatkan Pyro DMG ke musuh di sekitarnya.",
-		"description": "Xinyan biasa mengakhiri rangkaian penampilannya dengan gerakan ini. Dia tidak berhenti karena itu berbahaya, tapi karena dia tidak memiliki penyelesaian yang lebih epik daripada seseorang yang akan berteriak \"Encore!\" ",
+		"info": "Xinyan memetik senar gitarnya dengan cepat untuk menghempaskan musuh di sekitar dan mengakibatkan Physical DMG serta membuat suasana menjadi semakin panas.\nAtmosfer yang semakin panas ini akan menyebabkan ledakan dan mengakibatkan Pyro DMG ke musuh di sekitarnya.",
+		"description": "Xinyan biasa mengakhiri rangkaian penampilannya dengan gerakan ini. Dia bukan berhenti karena berbahaya, tapi karena dia tidak punya gerakan penyelesaian yang lebih keren dari ini seandainya ada penonton yang meminta \"Encore!\". ",
 		"attributes": {
 			"labels": [
 				"DMG Skill|{param1:P}",
@@ -50,11 +50,11 @@
 	},
 	"passive1": {
 		"name": "\"The Show Goes On, Even Without An Audience...\"",
-		"info": "Mengurangi jumlah musuh yang harus diserang **Sweeping Fervor** untuk memicu setiap level perisai.\n·Perisai Level 2: syarat Lead-In dikurangi menjadi 1 musuh.\n·Perisai Level 3: syarat Rave dikurangi menjadi 2 musuh atau lebih."
+		"info": "Mengurangi jumlah musuh yang harus terkena serangan **Sweeping Fervor** untuk memicu setiap level perisai.\n· Perisai Level 2: Syarat memicu Lead-In dikurangi menjadi 1 musuh.\n·Perisai Level 3: Syarat memicu Rave dikurangi menjadi 2 musuh atau lebih."
 	},
 	"passive2": {
 		"name": "\"...Now That's Rock 'N' Roll!\"",
-		"info": "Meningkatkan 15% Physical DMG karakter yang dilindungi oleh perisai dari **Sweeping Fervor**."
+		"info": "Meningkatkan 15% Physical DMG Karakter yang dilindungi oleh perisai dari **Sweeping Fervor**."
 	},
 	"passive3": {
 		"name": "A Rad Recipe",
