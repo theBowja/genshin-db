@@ -1,0 +1,78 @@
+{
+	"id": 1506,
+	"name": "Trotamundos",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST"
+	],
+	"tagstext": [
+		"Anemo",
+		"Catalizador"
+	],
+	"storytitle": "Trotamundos - El Caminante Eterno",
+	"storytext": "Nadie puede predecir su destino.",
+	"source": "Se obtiene tras retar y ganar al Trotamundos en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 15061,
+			"name": "Ondeo de estandartes",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>.",
+			"description": "Inflige 1 pt. de Daño Anemo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15062,
+			"name": "Ilustración emplumada: Balada del viento",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene el efecto de <color=#FFFFFFFF>$[C115061|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y este personaje obtiene el efecto de <color=#FFFFFFFF>gracia del viento</color>.",
+			"description": "Inflige 2 pts. de Daño Anemo y este personaje obtiene el efecto de gracia del viento.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15063,
+			"name": "Kyougen: Cinco actos",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si el personaje está bajo el efecto de <color=#FFFFFFFF>$[C115061|s1]</color>, este se elimina e inflige daño +1.",
+			"basedamage": 7,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 7 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>. Si el personaje está bajo el efecto de <color=#FFFFFFFF>gracia del viento</color>, este se elimina e inflige daño +1.",
+			"description": "Inflige 7 pts. de Daño Anemo. Si el personaje está bajo el efecto de gracia del viento, este se elimina e inflige daño +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

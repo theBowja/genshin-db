@@ -1,0 +1,102 @@
+{
+	"id": 1309,
+	"name": "Дэхья",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Пиро",
+		"Двуручное",
+		"Сумеру"
+	],
+	"storytitle": "Пламенная грива: Дэхья",
+	"storytext": "Глаза стервятника, душа льва. Настоящая дочь пустыни.",
+	"source": "Награда за приглашение Дэхьи в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 13091,
+			"name": "Нападение песчаной бури",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13092,
+			"name": "Расплавленное пекло",
+			"descriptionraw": "Призывает <color=#FFFFFFFF>$[C113093]</color>. Если $[C113093] уже существует, сначала наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Призывает <color=#FFFFFFFF>Область Огненного узилища</color>. Если Область Огненного узилища уже существует, сначала наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед.",
+			"description": "Призывает Область Огненного узилища. Если Область Огненного узилища уже существует, сначала наносит Пиро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13093,
+			"name": "Клыки львицы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S13095]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Сжигающий удар</color>.",
+			"description": "Наносит Пиро урон, 3 ед., после чего начинается Подготовка навыка: Сжигающий удар.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13095,
+			"name": "Сжигающий удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед.",
+			"description": "Наносит Пиро урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		},
+		{
+			"id": 13096,
+			"name": "Огненное узилище: Кровь алой гривы",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

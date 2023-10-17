@@ -1,0 +1,102 @@
+{
+	"id": 1309,
+	"name": "Dehya",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Ateş",
+		"Çift Elli Kılıç",
+		"Sumeru"
+	],
+	"storytitle": "\"Alevli Yele\" Dehya",
+	"storytext": "Çölün akbaba gözlü, aslan ruhlu, özgürlüğü dizginlenemez kızı.",
+	"source": "Dehya'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 13091,
+			"name": "Kum Fırtınası Saldırısı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13092,
+			"name": "Ateşten Kafes",
+			"descriptionraw": "<color=#FFFFFFFF>$[C113093]</color> çağırır. Eğer zaten bir $[C113093] varsa önce $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>Yakıcı Sığınak Alanı</color> çağırır. Eğer zaten bir Yakıcı Sığınak Alanı varsa önce 1 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir.",
+			"description": "Yakıcı Sığınak Alanı çağırır. Eğer zaten bir Yakıcı Sığınak Alanı varsa önce 1 Ateş Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13093,
+			"name": "Aslan Isırığı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Ardından <color=#FFFFFFFF>$[S13095]</color> için \"$[K53]\" kullanır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir. Ardından <color=#FFFFFFFF>Kül Eden Tekme</color> için \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "3 Ateş Hasarı verir. Ardından Kül Eden Tekme için \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13095,
+			"name": "Kül Eden Tekme",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir.",
+			"description": "3 Ateş Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		},
+		{
+			"id": 13096,
+			"name": "Yakıcı Sığınak: Kızıl Yele Kanı",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

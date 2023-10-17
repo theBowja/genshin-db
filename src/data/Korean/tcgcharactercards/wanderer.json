@@ -1,0 +1,78 @@
+{
+	"id": 1506,
+	"name": "방랑자",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST"
+	],
+	"tagstext": [
+		"바람 원소",
+		"법구"
+	],
+	"storytitle": "기나긴 방황·방랑자",
+	"storytext": "천겁의 고난, 얻지 못한 깨달음",
+	"source": "캣테일 술집에서 방랑자 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 15061,
+			"name": "깃발과 메이겐",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 1pt 준다.",
+			"description": "바람 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15062,
+			"name": "우화·바람이 전하는 노래",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C115061]</color>를 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 2pt 주고 본 캐릭터에게 <color=#FFFFFFFF>바람의 자태</color>를 부착한다.",
+			"description": "바람 원소 피해를 2pt 주고 본 캐릭터에게 바람의 자태를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15063,
+			"name": "교겐·악극 제5번",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 캐릭터에게 <color=#FFFFFFFF>$[C115061]</color>가 부착되었을 시 제거하고 이번 피해가 1pt 증가한다.",
+			"basedamage": 7,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 7pt 준다. 캐릭터에게 <color=#FFFFFFFF>바람의 자태</color>가 부착되었을 시 제거하고 이번 피해가 1pt 증가한다.",
+			"description": "바람 원소 피해를 7pt 준다. 캐릭터에게 바람의 자태가 부착되었을 시 제거하고 이번 피해가 1pt 증가한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}

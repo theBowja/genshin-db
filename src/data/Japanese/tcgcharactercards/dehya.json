@@ -1,0 +1,102 @@
+{
+	"id": 1309,
+	"name": "ディシア",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"炎元素",
+		"両手剣",
+		"スメール"
+	],
+	"storytitle": "熾鬣の獅子·ディシア",
+	"storytext": "鷲の目と獅子の魂をもつ、自由な砂漠の娘。",
+	"source": "キャッツテールでディシアを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 13091,
+			"name": "剣闘術·金砂塵",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13092,
+			"name": "熔鉄流獄",
+			"descriptionraw": "<color=#FFFFFFFF>$[C113093]</color>を召喚する。$[C113093]がすでに存在する場合、まず$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>「浄焔剣獄」領域</color>を召喚する。「浄焔剣獄」領域がすでに存在する場合、まず{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。",
+			"description": "「浄焔剣獄」領域を召喚する。「浄焔剣獄」領域がすでに存在する場合、まず炎元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13093,
+			"name": "炎哮獅子咬",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K53]に入る：<color=#FFFFFFFF>$[S13095]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与え、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>残火蹴</color>。",
+			"description": "炎元素ダメージを3与え、スキル準備に入る：残火蹴。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13095,
+			"name": "残火蹴",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与える。",
+			"description": "炎元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 13096,
+			"name": "浄焔剣獄·赤鬣の血",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

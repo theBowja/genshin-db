@@ -1,0 +1,78 @@
+{
+	"id": 1704,
+	"name": "요요",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"풀 원소",
+		"장병기",
+		"리월"
+	],
+	"storytitle": "영롱한 선인의 꽃망울·요요",
+	"storytext": "앙증맞은 몸속 선인의 기개",
+	"source": "캣테일 술집에서 요요 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 17041,
+			"name": "돌격 연환창",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17042,
+			"name": "하늘에서 무가 내려와",
+			"descriptionraw": "<color=#FFFFFFFF>$[C117041]</color>을 소환한다.",
+			"descriptionreplaced": "<color=#FFFFFFFF>월계·투척형</color>을 소환한다.",
+			"description": "월계·투척형을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17043,
+			"name": "달빛 아래 떨어지는 옥구슬",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C117043]</color>를 생성한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 1pt 주고 <color=#FFFFFFFF>선인의 슬기</color>를 생성한다.",
+			"description": "풀 원소 피해를 1pt 주고 선인의 슬기를 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

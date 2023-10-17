@@ -1,0 +1,78 @@
+{
+	"id": 1506,
+	"name": "Wanderer",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST"
+	],
+	"tagstext": [
+		"Anemo",
+		"Katalysator"
+	],
+	"storytitle": "Bis in die Ewigkeit driften – Wanderer",
+	"storytext": "Unzählige Schwierigkeiten, unberechenbare Prüfungen.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit dem Wanderer in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 15061,
+			"name": "Yuuban Meigen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Anemo-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15062,
+			"name": "Hanega – Gesang des Windes",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C115061]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, erhält selbst <color=#FFFFFFFF>Haltung des eleganten Windes</color>.",
+			"description": "Verursacht 2 Pkt. Anemo-SCH, erhält selbst Haltung des eleganten Windes.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15063,
+			"name": "Kyougen – Fünf rituelle Stücke",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Entfernt <color=#FFFFFFFF>$[C115061]</color>, wenn die Figur damit ausgerüstet ist, und erhöht dabei diesen SCH um 1 Pkt.",
+			"basedamage": 7,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 7 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>. Entfernt <color=#FFFFFFFF>Haltung des eleganten Windes</color>, wenn die Figur damit ausgerüstet ist, und erhöht dabei diesen SCH um 1 Pkt.",
+			"description": "Verursacht 7 Pkt. Anemo-SCH. Entfernt Haltung des eleganten Windes, wenn die Figur damit ausgerüstet ist, und erhöht dabei diesen SCH um 1 Pkt.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		}
+	]
+}
