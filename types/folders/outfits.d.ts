@@ -11,6 +11,7 @@ declare module "genshin-db" {
 		images: {
 			filename_card: string;
 			filename_icon?: string;
+			filename_iconCircle: string;
 			filename_splash?: string;
 			filename_sideIcon?: string;
 		};

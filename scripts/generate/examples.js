@@ -25,7 +25,8 @@ let folders = [
 				 'arrowhead, { matchCategories: true }',
 				 'arrow, { dumpResult: true, matchCategories: true, resultLanguage: \'jp\' }',
 				 'december, { matchCategories: true }', 'pyro, { matchCategories: true }',
-				 'geo dmg, { matchCategories: true }', 'liyue, { matchCategories: true }',
+				 // 'geo dmg, { matchCategories: true }',
+				 'liyue, { matchCategories: true }',
 				 'sword, { matchCategories: true }',
 				 'klee/.stats(90)', 'klee/.stats(80)', 'klee/.stats(80, \'+\')', 'aether/.stats(12)']
 	},
@@ -59,7 +60,10 @@ let folders = [
 	},
 	{
 		function: 'artifacts',
-		params: ['flame', '5, { matchCategories: true }', 'noblesse/[\'2pc\']'],
+		params: ['flame',
+				 //'5, { matchCategories: true }',
+				 //'noblesse/[\'2pc\']'
+				 ],
 	},
 	{
 		function: 'foods',
@@ -70,7 +74,8 @@ let folders = [
 		function: 'domains',
 		params: ['flame', 'cecilia garden, { matchCategories: true }', 'inazuma, { matchCategories: true }',
 				 'anemo, { matchCategories: true }',
-		         'artifact, { matchCategories: true }', 'wednesday, { matchCategories: true }',
+		         'relic, { matchCategories: true }',
+		         'wednesday, { matchCategories: true }',
 		         'fatui pyro agent, { matchCategories: true }']
 	},
 	{
@@ -87,7 +92,7 @@ let folders = [
 	},
 	{
 		function: 'animals',
-		params: ['shiba', 'birds, { matchCategories: true }', 'true, { matchNames: false, matchCategories: true }']
+		params: ['shiba', 'bird, { matchCategories: true }', 'true, { matchNames: false, matchCategories: true }']
 	},
 	{
 		function: 'namecards',

@@ -4,9 +4,9 @@ declare module "genshin-db" {
 		name: string;
 		dupealias?: string; // Vietnamese Vịt
 		description: string;
-		categoryType: 'ANIMAL' | 'AVIARY' | 'CRITTER' | 'FISH'; // enum
+		categoryType: 'SUBTYPE_ANIMAL' | 'SUBTYPE_AVIARY' | 'SUBTYPE_CRITTER' | 'SUBTYPE_FISH'; // enum
 		categoryText: string; // translated
-		countType: 'CAPTURE' | 'FISH' | 'NONE'; // enum
+		countType: 'COUNT_TYPE_CAPTURE' | 'COUNT_TYPE_FISH' | 'COUNT_TYPE_NONE'; // enum
 		sortOrder: number;
 		
 		images: {

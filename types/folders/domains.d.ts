@@ -20,7 +20,10 @@ declare module "genshin-db" {
 		rewardPreview: Rewards[];
 		disorder: string[];
 
-		monsterList?: string[]; // I manually keep this updated. If I forget, it'll be undefined.
+		monsterList?: {
+			id: string;
+			name: string;
+		}[]; // I manually keep this updated. If I forget, it'll be undefined.
 		// objectives?: string[]; // UNIMPLEMENTED TODO
 
 		images: {
