@@ -1,0 +1,80 @@
+{
+	"id": 1410,
+	"name": "Dori",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Electro",
+		"Mandoble",
+		"Sumeru"
+	],
+	"storytitle": "Dori - La Magnate Acaudalada",
+	"storytext": "¡El Mora es mi felicidad!",
+	"source": "Se obtiene tras retar y ganar a Dori en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 14101,
+			"name": "Danza de espadas fantástica (modificada)",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14102,
+			"name": "Lámpara mágica: Cañonazo apaciguador",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C114101|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y crea una <color=#FFFFFFFF>bala posventa</color>.",
+			"description": "Inflige 2 pts. de Daño Electro y crea una bala posventa.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14103,
+			"name": "Meticulosidad de Alcazarzaray",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca al <color=#FFFFFFFF>$[C114102|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> e invoca al <color=#FFFFFFFF>genio de la lámpara</color>.",
+			"description": "Inflige 1 pt. de Daño Electro e invoca al genio de la lámpara.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

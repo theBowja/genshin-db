@@ -1,0 +1,80 @@
+{
+	"id": 1208,
+	"name": "닐루",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"물 원소",
+		"한손검",
+		"수메르"
+	],
+	"storytitle": "무대에 내려앉은 연꽃·닐루",
+	"storytext": "몽롱한 꿈 위에서 피어나는 매혹적인 수련의 춤",
+	"source": "캣테일 술집에서 닐루 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 12081,
+			"name": "현월의 춤",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12082,
+			"name": "칠역의 춤",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 만약 파티가 <color=#80C0FFFF>{SPRITE_PRESET#2102}물 원소 캐릭터</color>와 <color=#7EC236FF>{SPRITE_PRESET#2107}풀 원소 캐릭터</color>로만 구성되어 있을 경우 <color=#FFFFFFFF>$[C112081]</color>을 생성한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 3pt 준다. 만약 파티가 <color=#80C0FFFF>{SPRITE_PRESET#2102}물 원소 캐릭터</color>와 <color=#7EC236FF>{SPRITE_PRESET#2107}풀 원소 캐릭터</color>로만 구성되어 있을 경우 <color=#FFFFFFFF>황금잔의 선물</color>을 생성한다.",
+			"description": "물 원소 피해를 3pt 준다. 만약 파티가 물 원소 캐릭터와 풀 원소 캐릭터로만 구성되어 있을 경우 황금잔의 선물을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12083,
+			"name": "수련의 춤·먼 꿈속 샘물 소리",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>$[C112083]</color>이 부착된다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>영원한 침식</color>이 부착된다.",
+			"description": "물 원소 피해를 2pt 주고 대상 캐릭터에게 영원한 침식이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

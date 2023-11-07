@@ -1,0 +1,80 @@
+{
+	"id": 1208,
+	"name": "Nilou",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Hydro",
+		"Sword",
+		"Sumeru"
+	],
+	"storytitle": "\"Dance of Lotuslight\" Nilou",
+	"storytext": "Langkah tarian teratai yang lembut, muncul dari mimpi yang memabukkan.",
+	"source": "Didapatkan setelah mengundang Nilou ke Cat's Tail dan menang dalam Pertandingan Persahabatan melawannya",
+	"skills": [
+		{
+			"id": 12081,
+			"name": "Dance of Samser",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12082,
+			"name": "Dance of Haftkarsvar",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Jika memiliki Karakter <color=#80C0FFFF>{SPRITE_PRESET#2102}Hydro</color> dan <color=#7EC236FF>{SPRITE_PRESET#2107}Dendro</color> di dalam party, dan tidak memiliki Karakter dengan jenis elemen lainnya, maka akan menciptakan <color=#FFFFFFFF>$[C112081]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>. Jika memiliki Karakter <color=#80C0FFFF>{SPRITE_PRESET#2102}Hydro</color> dan <color=#7EC236FF>{SPRITE_PRESET#2107}Dendro</color> di dalam party, dan tidak memiliki Karakter dengan jenis elemen lainnya, maka akan menciptakan <color=#FFFFFFFF>Golden Chalice's Bounty</color>.",
+			"description": "Mengakibatkan 3 poin Hydro DMG. Jika memiliki Karakter Hydro dan Dendro di dalam party, dan tidak memiliki Karakter dengan jenis elemen lainnya, maka akan menciptakan Golden Chalice's Bounty.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12083,
+			"name": "Dance of Abzendegi: Distant Dreams, Listening Spring",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].\\nKarakter target menerima <color=#FFFFFFFF>$[C112083]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>.\\nKarakter target menerima <color=#FFFFFFFF>Lingering Aeon</color>.",
+			"description": "Mengakibatkan 2 poin Hydro DMG.\nKarakter target menerima Lingering Aeon.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

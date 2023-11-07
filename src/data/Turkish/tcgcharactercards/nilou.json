@@ -1,0 +1,80 @@
+{
+	"id": 1208,
+	"name": "Nilou",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Su",
+		"Kılıç",
+		"Sumeru"
+	],
+	"storytitle": "\"Nilüfer Işığı Dansı\" Nilou",
+	"storytext": "Mest edici bir rüyadan fırlamış nilüfer yaprakları gibi süzülen adımlar.",
+	"source": "Nilou'yu Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 12081,
+			"name": "Samser Dansı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12082,
+			"name": "Haftkarsvar Dansı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Grupta <color=#80C0FFFF>{SPRITE_PRESET#2102}Su Karakterleri</color> ile <color=#7EC236FF>{SPRITE_PRESET#2107}Doğa Karakterleri</color> varsa ve diğer Element türlerinden bir karakter yoksa 1 <color=#FFFFFFFF>$[C112081]</color> oluşturur.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir. Grupta <color=#80C0FFFF>{SPRITE_PRESET#2102}Su Karakterleri</color> ile <color=#7EC236FF>{SPRITE_PRESET#2107}Doğa Karakterleri</color> varsa ve diğer Element türlerinden bir karakter yoksa 1 <color=#FFFFFFFF>Altın Kadeh</color> oluşturur.",
+			"description": "3 Su Hasarı verir. Grupta Su Karakterleri ile Doğa Karakterleri varsa ve diğer Element türlerinden bir karakter yoksa 1 Altın Kadeh oluşturur.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12083,
+			"name": "Abzendegi Dansı: Uzak Düşler, Pınarların Sesi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve hedef karaktere <color=#FFFFFFFF>$[C112083]</color> eklenir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve hedef karaktere <color=#FFFFFFFF>Kalıcı Sonsuzluk</color> eklenir.",
+			"description": "2 Su Hasarı verir ve hedef karaktere Kalıcı Sonsuzluk eklenir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

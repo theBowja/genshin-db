@@ -1,0 +1,80 @@
+{
+	"id": 1208,
+	"name": "Nilou",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Hydro",
+		"Espada ligera",
+		"Sumeru"
+	],
+	"storytitle": "Nilou - La Bailarina de los Lotos",
+	"storytext": "Una danza de lotos que emerge de un sueño embriagador.",
+	"source": "Se obtiene tras retar y ganar a Nilou en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 12081,
+			"name": "Danza de la media luna",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12082,
+			"name": "Danza de los siete reinos",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si en el equipo hay personajes <color=#80C0FFFF>{SPRITE_PRESET#2102}Hydro</color> y <color=#7EC236FF>{SPRITE_PRESET#2107}Dendro</color>, pero no de otros tipos elementales, se genera el efecto de <color=#FFFFFFFF>$[C112081|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>. Si en el equipo hay personajes <color=#80C0FFFF>{SPRITE_PRESET#2102}Hydro</color> y <color=#7EC236FF>{SPRITE_PRESET#2107}Dendro</color>, pero no de otros tipos elementales, se genera el efecto de <color=#FFFFFFFF>cáliz de la abundancia</color>.",
+			"description": "Inflige 3 pts. de Daño Hydro. Si en el equipo hay personajes Hydro y Dendro, pero no de otros tipos elementales, se genera el efecto de cáliz de la abundancia.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12083,
+			"name": "Danza del loto: Manantial onírico",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y el personaje objetivo obtiene el efecto de <color=#FFFFFFFF>$[C112083|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y el personaje objetivo obtiene el efecto de <color=#FFFFFFFF>eón perpetuo</color>.",
+			"description": "Inflige 2 pts. de Daño Hydro y el personaje objetivo obtiene el efecto de eón perpetuo.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

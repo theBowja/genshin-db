@@ -1,0 +1,80 @@
+{
+	"id": 1208,
+	"name": "ニィロウ",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"水元素",
+		"片手剣",
+		"スメール"
+	],
+	"storytitle": "絨毯に舞い落ちる蓮光·ニィロウ",
+	"storytext": "蓮花の上で軽やかに舞う、世上を離れた夢に酔う。",
+	"source": "キャッツテールでニィロウを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 12081,
+			"name": "弦月のダンス",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12082,
+			"name": "七域のダンス",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。チームに<color=#80C0FFFF>{SPRITE_PRESET#2102}水元素キャラ</color>と<color=#7EC236FF>{SPRITE_PRESET#2107}草元素キャラ</color>を含み、かつ他の元素キャラを含まない場合、<color=#FFFFFFFF>$[C112081]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を3与える。チームに<color=#80C0FFFF>{SPRITE_PRESET#2102}水元素キャラ</color>と<color=#7EC236FF>{SPRITE_PRESET#2107}草元素キャラ</color>を含み、かつ他の元素キャラを含まない場合、<color=#FFFFFFFF>金盃の豊穣</color>を生成する。",
+			"description": "水元素ダメージを3与える。チームに水元素キャラと草元素キャラを含み、かつ他の元素キャラを含まない場合、金盃の豊穣を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12083,
+			"name": "浮蓮のダンス·遠夢聆泉",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標キャラに<color=#FFFFFFFF>$[C112083]</color>を付与する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与え、目標キャラに<color=#FFFFFFFF>久遠の惑溺</color>を付与する。",
+			"description": "水元素ダメージを2与え、目標キャラに久遠の惑溺を付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

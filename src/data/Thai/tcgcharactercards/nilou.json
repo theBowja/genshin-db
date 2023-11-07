@@ -1,0 +1,80 @@
+{
+	"id": 1208,
+	"name": "Nilou",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"ธาตุน้ำ",
+		"ดาบ",
+		"Sumeru"
+	],
+	"storytitle": "ระบำนิโลตบลพรายแสง - Nilou",
+	"storytext": "เริงระบำดังดอกบัว ทิ้งความฝันมัวชวนเมามาย",
+	"source": "ได้รับหลังจากเชิญ Nilou ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 12081,
+			"name": "Dance of Samser",
+			"descriptionraw": "จะสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "จะสร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "จะสร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12082,
+			"name": "Dance of Haftkarsvar",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย หากในทีมมี<color=#80C0FFFF>{SPRITE_PRESET#2102}ตัวละครธาตุน้ำ</color>กับ<color=#7EC236FF>{SPRITE_PRESET#2107}ตัวละครธาตุไม้</color> และไม่มีตัวละครธาตุอื่น ๆ จะทำให้เกิด <color=#FFFFFFFF>$[C112081]</color>",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 3 หน่วย หากในทีมมี<color=#80C0FFFF>{SPRITE_PRESET#2102}ตัวละครธาตุน้ำ</color>กับ<color=#7EC236FF>{SPRITE_PRESET#2107}ตัวละครธาตุไม้</color> และไม่มีตัวละครธาตุอื่น ๆ จะทำให้เกิด <color=#FFFFFFFF>Golden Chalice's Bounty</color>",
+			"description": "สร้างความเสียหายน้ำ 3 หน่วย หากในทีมมีตัวละครธาตุน้ำกับตัวละครธาตุไม้ และไม่มีตัวละครธาตุอื่น ๆ จะทำให้เกิด Golden Chalice's Bounty",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12083,
+			"name": "Dance of Abzendegi: Distant Dreams, Listening Spring",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และทำให้ตัวละครเป้าหมายได้รับ <color=#FFFFFFFF>$[C112083]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 2 หน่วย และทำให้ตัวละครเป้าหมายได้รับ <color=#FFFFFFFF>Lingering Aeon</color>",
+			"description": "สร้างความเสียหายน้ำ 2 หน่วย และทำให้ตัวละครเป้าหมายได้รับ Lingering Aeon",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

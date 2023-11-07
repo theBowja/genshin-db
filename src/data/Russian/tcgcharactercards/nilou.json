@@ -1,0 +1,80 @@
+{
+	"id": 1208,
+	"name": "Нилу",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Гидро",
+		"Одноручное",
+		"Сумеру"
+	],
+	"storytitle": "«Танец лотоса» Нилу",
+	"storytext": "Невесомые шаги, словно лотоса лепестки, являются из глубин сна.",
+	"source": "Награда за приглашение Нилу в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12081,
+			"name": "Танец шамшира",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12082,
+			"name": "Танец Хафткаршвар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Даёт 1 <color=#FFFFFFFF>$[C112081]</color>, если в отряде есть только <color=#80C0FFFF>персонажи {SPRITE_PRESET#2102}Гидро</color> и <color=#7EC236FF>персонажи {SPRITE_PRESET#2107}Дендро</color> (персонажей других элементов в отряде быть не должно).",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед. Даёт 1 <color=#FFFFFFFF>Изобилие золотого кубка</color>, если в отряде есть только <color=#80C0FFFF>персонажи {SPRITE_PRESET#2102}Гидро</color> и <color=#7EC236FF>персонажи {SPRITE_PRESET#2107}Дендро</color> (персонажей других элементов в отряде быть не должно).",
+			"description": "Наносит Гидро урон, 3 ед. Даёт 1 Изобилие золотого кубка, если в отряде есть только персонажи Гидро и персонажи Дендро (персонажей других элементов в отряде быть не должно).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12083,
+			"name": "Танец Абзендеги: Далёкие мечты, внемлющий ручей",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Цель получает <color=#FFFFFFFF>$[C112083]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед. Цель получает <color=#FFFFFFFF>Течение вечности</color>.",
+			"description": "Наносит Гидро урон, 2 ед. Цель получает Течение вечности.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
