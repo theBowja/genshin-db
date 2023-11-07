@@ -1,0 +1,215 @@
+{
+	"name": "Charlotte",
+	"combat1": {
+		"name": "Normal Attack: Cool-Color Capture",
+		"info": "**Normal Attack**\nTaking aim at targets using Monsieur Verite, her custom Kamera, Charlotte performs up to 3 consecutive attacks, dealing Cryo DMG.\n\n**Charged Attack**\nConsumes a fixed amount of Stamina, and after a moment's preparation, will deploy Monsieur Verite to deal AoE Cryo DMG.\n\n**Plunging Attack**\nGathering the power of Cryo, Charlotte plunges toward the ground, dealing DMG to all opponents in her path and dealing AoE Cryo DMG upon landing.\n\n**Arkhe: Pneuma**\nAt certain intervals, upon using a Charged Attack, Charlotte will cause a Spiritbreath Thorn to descend and pierce opponents, dealing Pneuma-aligned AoE Cryo DMG.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}",
+				"Charged Attack DMG|{param4:F1P}",
+				"Charged Attack Stamina Cost|{param5:F1}",
+				"Plunge DMG|{param6:F1P}",
+				"Low/High Plunge DMG|{param7:P}/{param8:P}",
+				"Spiritbreath Thorn DMG|{param9:F1P}",
+				"Spiritbreath Thorn DMG Interval|{param10:F1}s"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Framing: Freezing Point Composition",
+		"info": "Using the keen instincts of an ace reporter, Charlotte uses her photography skills to produce different effects based on whether the ability is Tapped or Held.\n\n**Tap**\nTakes a snapshot using Monsieur Verite, dealing AoE Cryo DMG to opponents in front of her and applying Snappy Silhouette to a maximum of 5 opponents. During this effect's duration, it will deal Cryo DMG to affected opponents at intervals.\n\n**Hold**\nPopping Monsieur Verite's viewfinder open, Charlotte enters Composition Mode, and during this time, the viewfinder will expand as you hold until you reach a Finisher Frame state. In this state, Charlotte can move and change direction freely.\nWhen the hold state ends, Monsieur Verite will deal Cryo DMG to all opponents locked on within the viewfinder, and apply the same Snappy Silhouette as Tap Mode does to them. If you unleash this ability only after reaching Finisher Frame, you will instead apply Focused Impression, which lasts longer and deals more DMG, although the Skill CD will be longer.\nComposition Mode lasts a maximum of 15s and allows a maximum of 5 opponents to be selected.",
+		"description": "\"Press photography requires simple shots with exceptional theming, but most of all, you need to have a knack for capturing the moment!\"",
+		"attributes": {
+			"labels": [
+				"Photo DMG (Press)|{param1:F1P}",
+				"Photo DMG (Hold)|{param2:F1P}",
+				"\"Snappy Silhouette\" Mark DMG|{param3:F1P}",
+				"\"Snappy Silhouette\" Mark Trigger Interval|{param4:F1}s",
+				"\"Snappy Silhouette\" Mark Duration|{param5:F1}s",
+				"\"Focused Impression\" Mark DMG|{param6:F1P}",
+				"\"Focused Impression\" Mark Trigger Interval|{param7:F1}s",
+				"\"Focused Impression\" Mark Duration|{param8:F1}s",
+				"CD|{param9:F1}s",
+				"Finisher Frame Cast CD|{param10:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Still Photo: Comprehensive Confirmation",
+		"info": "Condensing ice to create The Steambird's signature, Charlotte creates a Newsflash Field that will deal AoE Cryo DMG and restores HP for all nearby party members based on Charlotte's ATK.\n**Newsflash Field**\n·While the ability is active, Monsieur Verite will deal Cryo DMG at intervals to opponents within its AoE.\n·Will continuously restore HP to active character(s) within its AoE based on Charlotte's ATK.",
+		"description": "\"Hearing stories from multiple perspectives to recreate what really happened is key to a good report... I mean, that's how you can pick the best angle for your article!\"",
+		"attributes": {
+			"labels": [
+				"Cast Healing|{param1:F1P} ATK+{param2:I}",
+				"Skill DMG|{param3:F1P}",
+				"Kamera Continuous Regeneration|{param4:F1P} ATK+{param5:I}",
+				"Kamera DMG|{param6:F1P}",
+				"Newsflash Field Duration|{param7:F1}s",
+				"CD|{param8:F1}s",
+				"Energy Cost|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Moment of Impact",
+		"info": "When opponents marked by \"Focused Impression\" are defeated, **Framing: Freezing Point Composition**'s CD will be decreased by 2s. This CD decrease can be triggered 4 times every 12s."
+	},
+	"passive2": {
+		"name": "Diversified Investigation",
+		"info": "When the party contains 1/2/3 Fontainians other than herself, Charlotte gains a 5%/10%/15% Healing Bonus. When the party contains 1/2/3 non-Fontainians, Charlotte gains a 5%/10%/15% Cryo DMG Bonus."
+	},
+	"passive3": {
+		"name": "First-Person Shutter",
+		"info": "After activating the Special Analysis Zoom Lens, Charlotte's \"Framing: Freezing Point Composition\" Hold Mode cannot trigger its original effects, but instead enables her to take photos in a rather unique manner..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Justice",
+				"count": 3
+			},
+			{
+				"name": "Meshing Gear",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 2
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 4
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 6
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Justice",
+				"count": 9
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 4
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 4
+			},
+			{
+				"name": "Lightless Silk String",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 6
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 6
+			},
+			{
+				"name": "Lightless Silk String",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 12
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 9
+			},
+			{
+				"name": "Lightless Silk String",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Justice",
+				"count": 16
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 12
+			},
+			{
+				"name": "Lightless Silk String",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

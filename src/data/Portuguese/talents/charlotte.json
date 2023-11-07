@@ -1,0 +1,215 @@
+{
+	"name": "Charlotte",
+	"combat1": {
+		"name": "Ataque Normal: Foto de Cores Frias",
+		"info": "**Ataque Normal**\nMira nos alvos com o Monsieur Verite, e com sua câmera personalizada, Charlotte desfere 3 golpes consecutivos, causando Dano Cryo.\n\n**Ataque Carregado**\nConsome uma certa quantidade de Stamina, e depois de uma curta preparação, envia Monsieur Verite para causar Dano Cryo em AdE.\n\n**Ataque Imersivo**\nReunindo o poder do Cryo, mergulha em direção ao chão, causando Dano contra todos os oponentes no caminho e causando Dano Cryo em AdE ao impactar com o chão.\n\n**Arkhe: Pneuma**\nPeriodicamente, ao lançar um Ataque Carregado, um Espinho Espiritual cairá e perfurará os inimigos, causando Dano Cryo em AdE com Pneuma contra os oponentes.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano de Ataque Carregado|{param4:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param5:F1}",
+				"Dano Durante a Queda|{param6:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param7:P}/{param8:P}",
+				"Dano do Espinho Espiritual|{param9:F1P}",
+				"Intervalo de Espinho Espiritual|{param10:F1}s"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Enquadramento: Composição do Ponto de Congelamento",
+		"info": "Usando os instintos aguçados de uma repórter, Charlotte usa suas habilidades de fotografia para produzir efeitos diferentes ao pressionar ou manter pressionada a Habilidade.\n\n**Pressionar**\nTira uma foto usando Monsieur Verite, causando Dano Cryo em AdE contra os inimigos em frente, e marcando até 5 inimigos atingidos com Silhueta Instantânea. Na duração de Silhueta Instantânea, causará periodicamente Dano Cryo contra os inimigos.\n\n**Manter Pressionado**\nAbre o Visor do Monsieur Verite, entrando no estado Composição. O Visor irá gradualmente aumentar até virar a Foto Enorme enquanto estiver mantendo pressionado. Nesse estado, Charlotte é capaz de se mover e mudar de direção.\nQuando terminar de manter pressionado, Monsieur Verite causará Dano Cryo contra os inimigos fixados pelo Visor, e os aplicará com a mesma Silhueta Instantânea causada ao pressionar. Se a Habilidade for lançada depois que o Visor chegar em Foto Enorme, a duração e o Dano de Foco Impressionante serão mais altos, mas o tempo de recarga da Habilidade será maior.\nO estado Composição pode durar até 15 segundos e marcar até 5 inimigos.",
+		"description": "\"Fotografia jornalística precisa de ângulos simples com temas excepcionais, mas acima de tudo, você precisa ter talento pra capturar o momento!\"",
+		"attributes": {
+			"labels": [
+				"Dano de Pressionar Fotografar|{param1:F1P}",
+				"Dono de Manter Pressionado Fotografar|{param2:F1P}",
+				"Dano de Marca \"Silhueta Instantânea\"|{param3:F1P}",
+				"Intervalo de ativação de Marca \"Silhueta Instantânea\"|{param4:F1}s",
+				"Duração de Marca \"Silhueta Instantânea\"|{param5:F1}s",
+				"Dano da Marca \"Foco Impressionante\"|{param6:F1P}",
+				"Intervalo de Ativação da Marca \"Foco Impressionante\"|{param7:F1}s",
+				"Duração da Marca \"Foco Impressionante\"|{param8:F1}s",
+				"Recarga|{param9:F1}s",
+				"Recarga de lançamento de Foto Enorme|{param10:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Determinado: Confirmação Geral",
+		"info": "Condensando o gelo para criar a assinatura do Pássaro a Vapor, Charlotte cria a \"Área de Flash\", causando Dano Cryo em AdE e regenerando Vida para todos os membros próximos da equipe. A quantidade regenerada é baseada no ATQ de Charlotte.\n\n**Área de Flash**\n· Em sua duração, Monsieur Verite periodicamente atacará os inimigos dentro da AdE, causando Dano Cryo.\n· Personagens ativos no interior da área terão sua Vida regenerada continuamente, a quantidade regenerada é baseada no ATQ de Charlotte.",
+		"description": "\"Ouvir as histórias de múltiplas perspectivas para recriar o que aconteceu é a chave de uma notícia... Bem, é assim que você escolhe o melhor ângulo para o artigo!\"",
+		"attributes": {
+			"labels": [
+				"Cura ao lançar|{param1:F1P} do ATQ + {param2:I}",
+				"Dano de Habilidade|{param3:F1P}",
+				"Regeneração Contínua da Câmera|{param4:F1P} do ATQ + {param5:I}",
+				"Dano da Câmera|{param6:F1P}",
+				"Duração da Área de Flash|{param7:F1}s",
+				"Tempo de Recarga|{param8:F1}s",
+				"Energia Elemental|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Momento do Impacto",
+		"info": "Ao derrotar inimigos marcados por Foco Impressionante, reduz a recarga de **Enquadramento: Composição do Ponto de Congelamento** em 2s. A recarga da Habilidade Elemental pode ser reduzida até 4 vezes a cada 12s dessa forma."
+	},
+	"passive2": {
+		"name": "Investigação Diversa",
+		"info": "Quando a equipe contém 1/2/3 personagens de Fontaine além da própria Charlotte, ela ganha 5%/10%/15% de Bônus de Cura. Quando a equipe contém 1/2/3 personagens que não são de Fontaine, Charlotte ganha 5%/10%/15% de Bônus de Dano Cryo."
+	},
+	"passive3": {
+		"name": "Obturador em Primeira Pessoa",
+		"info": "Depois de ativar a Lente de Zoom de Análise Especial, não causará mais o efeito original de manter pressionada a Habilidade Elemental \"Enquadramento: Composição do Ponto de Congelamento\", mas agora vai poder tirar fotos de um jeito mais especial..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Ensinamentos da Justiça",
+				"count": 3
+			},
+			{
+				"name": "Engrenagem Transmissora",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guia da Justiça",
+				"count": 2
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guia da Justiça",
+				"count": 4
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guia da Justiça",
+				"count": 6
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guia da Justiça",
+				"count": 9
+			},
+			{
+				"name": "Engrenagem Reta",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofia da Justiça",
+				"count": 4
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 4
+			},
+			{
+				"name": "Fio de Seda Sem Luz",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofia da Justiça",
+				"count": 6
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 6
+			},
+			{
+				"name": "Fio de Seda Sem Luz",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofia da Justiça",
+				"count": 12
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 9
+			},
+			{
+				"name": "Fio de Seda Sem Luz",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofia da Justiça",
+				"count": 16
+			},
+			{
+				"name": "Engrenagem Dinâmica",
+				"count": 12
+			},
+			{
+				"name": "Fio de Seda Sem Luz",
+				"count": 2
+			},
+			{
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

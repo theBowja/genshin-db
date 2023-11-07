@@ -1,0 +1,215 @@
+{
+	"name": "Charlotte",
+	"combat1": {
+		"name": "Ataque Normal: Criografía",
+		"info": "**Ataque Normal**\nApunta a un objetivo con su particular Daguerrotipo llamado “Monsieur Vérité” para realizar hasta 3 ataques que infligen Daño Cryo.\n\n**Ataque Cargado**\nConsume una cierta cantidad de Aguante y usa a Monsieur Vérité para infligir Daño Cryo en el AdE después de un corto tiempo de canalización.\n\n**Ataque Descendente**\nConcentra el elemento Cryo y se lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño Cryo en el AdE en el momento del impacto.\n\n**Arjé: pneuma**\nCada cierto tiempo, aparecerá una espina halitoespiritual que inflige Daño Cryo en el AdE cargado de energía pneuma.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de ATQ Cargado|{param4:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param5:F1} pts.",
+				"Daño de Caída|{param6:F1P}",
+				"Daño de impacto de caída baja/alta|{param7:P}/{param8:P}",
+				"Daño de espina halitoespiritual|{param9:F1P}",
+				"Intervalo de daño de espina halitoespiritual|{param10:F1} s"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Enfoque: Composición gélida",
+		"info": "Con su agudo instinto de periodista, usa sus habilidades fotográficas para crear diferentes efectos dependiendo de si pulsa una vez la habilidad o la mantiene pulsada.\n\n**Pulsar una vez**\nHace una captura rápida utilizando a Monsieur Vérité para infligir Daño Cryo en el AdE a los enemigos frente a sí misma, y aplica el efecto de “fotosilueta” a un máximo de 5 enemigos afectados. Mientras la fotosilueta está activa, infligirá Daño Cryo periódicamente a los enemigos a los que afecta.\n\n**Mantener pulsado**\nAbre el visor de Monsieur Vérité y entra en el estado de “composición”. Al mantener pulsado, el visor irá ampliándose hasta llegar al tamaño máximo. Mientras está en el estado de composición, Charlotte puede moverse y cambiar de dirección libremente.\nAl dejar de mantener pulsado, Monsieur Vérité infligirá Daño Cryo a los enemigos fijados por el visor y, igual que al pulsar una vez, les aplicará el efecto de fotosilueta. Si dejas de pulsar la habilidad cuando el visor haya alcanzado el tamaño máximo, Charlotte aplicará el efecto de “imagen encuadrada”, el cual tiene una mayor duración e inflige más daño, pero también dejará a esta habilidad con un mayor TdE.\nEl estado de composición dura hasta 15 s y permite seleccionar hasta 5 enemigos.",
+		"description": "“Para la captura de imágenes periodísticas, hay que ser capaz de tomar imágenes sencillas con un tema claro. Aun así, ¡lo más importante sigue siendo tener talento para capturar el momento!”.",
+		"attributes": {
+			"labels": [
+				"Daño de foto al pulsar una vez|{param1:F1P}",
+				"Daño de foto al mantener pulsado|{param2:F1P}",
+				"Daño de marca de fotosilueta|{param3:F1P}",
+				"Intervalo de activación de fotosilueta|{param4:F1} s",
+				"Duración de fotosilueta|{param5:F1} s",
+				"Daño de marca de imagen encuadrada|{param6:F1P}",
+				"Intervalo de activación de imagen encuadrada|{param7:F1} s",
+				"Duración de imagen encuadrada|{param8:F1} s",
+				"TdE|{param9:F1} s",
+				"TdE de ampliación máxima|{param10:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Encuadre: Corroboración integral",
+		"info": "Concentra la escarcha para formar la insignia de «El Pájaro de Vapor», crear un “área de flashes” que inflige Daño Cryo en el AdE y curar a todos los miembros del equipo cercanos en función del ATQ de Charlotte.\n\n**Área de flashes**\n·Mientras está activa, Monsieur Vérité atacará periódicamente a los enemigos que haya dentro del área para infligirles Daño Cryo.\n·Cura continuamente a los personajes en uso que haya dentro del área en función del ATQ de Charlotte.",
+		"description": "“Conocer la posición de todas las partes, reconstruir los hechos... ¡Para hacer un buen reportaje, se debe investigar desde diferentes perspectivas y así decidir cuál de ellas es la mejor!”.",
+		"attributes": {
+			"labels": [
+				"Curación realizada|{param1:F1P} de ATQ + {param2:I}",
+				"Daño de habilidad|{param3:F1P}",
+				"Curación fotográfica continua|{param4:F1P} de ATQ +{param5:I}",
+				"Daño fotográfico|{param6:F1P}",
+				"Duración de área de flashes|{param7:F1} s",
+				"TdE|{param8:F1} s",
+				"Energía Elemental|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Instante impactante",
+		"info": "Cuando un enemigo marcado con imagen encuadrada es derrotado, el TdE de **Enfoque: Composición gélida** se reduce en 2 s. El TdE de la Habilidad Elemental solo se puede reducir un máximo de 4 veces cada 12 s de esta manera."
+	},
+	"passive2": {
+		"name": "Investigación diversificada",
+		"info": "Charlotte obtiene un 5/10/15% de Bono de Curación por cada 1/2/3 personajes de Fontaine (a excepción de sí misma) que haya en el equipo. Por otro lado, obtiene un 5/10/15% de Bono de Daño Cryo por cada 1/2/3 personajes del equipo que no sean de Fontaine."
+	},
+	"passive3": {
+		"name": "Obturador de primera persona",
+		"info": "Cuando Charlotte activa el Objetivo zoom de análisis especial, mantener pulsada la Habilidad Elemental, “Enfoque: Composición gélida”, no tendrá el efecto original, sino que pasará a tomar fotografías de un modo muy especial..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la justicia",
+				"count": 3
+			},
+			{
+				"name": "Engranaje de malla",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 2
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 4
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 6
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la justicia",
+				"count": 9
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 4
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 4
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 6
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 6
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 12
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 9
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la justicia",
+				"count": 16
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 12
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

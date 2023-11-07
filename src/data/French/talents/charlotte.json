@@ -1,0 +1,215 @@
+{
+	"name": "Charlotte",
+	"combat1": {
+		"name": "Attaque normale : Phototype à froid",
+		"info": "**Attaque normale**\nVisant ses cibles à l'aide de Monsieur Vérité, son Daguerréotype personnalisé, Charlotte enchaîne jusqu'à 3 attaques qui infligent des DGT Cryo.\n\n**Attaque chargée**\nConsomme de l'endurance pour déployer Monsieur Vérité après un moment de préparation et infliger des DGT Cryo de zone.\n\n**Attaque plongeante**\nPlonge depuis les airs en concentrant ses pouvoirs Cryo, infligeant des DGT aux ennemis en chemin et des DGT Cryo de zone à l'impact.\n\n**Arkhe : Pneuma**\nRégulièrement, après avoir utilisé une attaque chargée, une épine d'inhalation qui transperce les ennemis est libérée pour infliger des DGT Cryo de zone chargés d'énergie pneuma.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT attaque chargée|{param4:F1P}",
+				"Coût d'endurance attaque chargée|{param5:F1} pts",
+				"DGT durant la chute|{param6:F1P}",
+				"DGT chute basse/élevée|{param7:P}/{param8:P}",
+				"DGT épine d'inhalation|{param9:F1P}",
+				"Intervalle d'épine d'inhalation|{param10:F1} s"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Cadrage : Composition gelée",
+		"info": "Grâce à son instinct de grande journaliste, Charlotte utilise ses compétences en photographie pour produire différents effets selon la méthode de déclenchement :\n\n**Appui simple**\nPrend un cliché net à l'aide de Monsieur Vérité, infligeant des DGT Cryo de zone aux ennemis en face ainsi que l'effet Silhouette instantanée à un maximum de 5 ennemis touchés. Pendant sa durée, l'effet Silhouette instantanée inflige des DGT Cryo aux ennemis de façon intermittente.\n\n**Appui long**\nEn activant le mode visée de Monsieur Vérité, Charlotte entre dans l'état Composition et le viseur peut s'agrandir jusqu'à atteindre le cadre de finition en maintenant l'appui long. Dans cet état, Charlotte peut se déplacer et changer d'orientation.\nLorsque le mode visée se termine, Monsieur Vérité inflige des DGT Cryo aux ennemis verrouillés dans son viseur ainsi que le même effet Silhouette instantanée déclenché lors d'un appui simple. Si Charlotte met fin au mode visée après que le viseur a atteint le cadre de finition, elle inflige à la place l'effet Impression ciblée, ce dernier durant plus longtemps et infligeant plus de DGT, bien qu'il prolongera le TdR de la compétence.\nL'état Composition dure 15 s maximum et peut verrouiller un maximum de 5 ennemis.",
+		"description": "« Les photos de presse nécessitent des clichés simples avec une thématique exceptionnelle, mais il faut surtout avoir le don de capturer l'instant présent ! »",
+		"attributes": {
+			"labels": [
+				"DGT photo (appui simple)|{param1:F1P}",
+				"DGT photo (appui long)|{param2:F1P}",
+				"DGT effet Silhouette instantanée|{param3:F1P}",
+				"Intervalle de déclenchement d'effet Silhouette instantanée|{param4:F1} s",
+				"Durée d'effet Silhouette instantanée|{param5:F1} s",
+				"DGT effet Impression ciblée|{param6:F1P}",
+				"Intervalle d'effet Impression ciblée|{param7:F1} s",
+				"Durée d'effet Impression ciblée|{param8:F1} s",
+				"Temps de recharge|{param9:F1} s",
+				"TdR après le cadre de finition|{param10:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Pose : Corroboration complète",
+		"info": "En condensant de la glace pour créer l'emblème de L'Oiseau de vapeur, Charlotte crée un champ de flash info qui inflige des DGT Cryo de zone et restaure les PV de tous les personnages de l'équipe à proximité selon son ATQ.\n\n**Champ de flash info**\n· Tant qu'il est actif, Monsieur Vérité attaque les ennemis à l'intérieur de façon intermittente pour leur infliger des DGT Cryo.\n· Lorsque le personnage déployé est à l'intérieur du champ, ses PV sont restaurés de façon continue selon l'ATQ de Charlotte.",
+		"description": "« Écouter des histoires sous plusieurs perspectives pour recréer ce qui s'est réellement passé est la clé d'un bon reportage... Je veux dire, c'est ainsi qu'on peut choisir le meilleur angle pour son article ! »",
+		"attributes": {
+			"labels": [
+				"Soins lors du déclenchement|{param1:F1P} ATQ + {param2:I} PV",
+				"DGT compétence|{param3:F1P}",
+				"Soins continus|{param4:F1P} ATQ + {param5:I} PV",
+				"DGT Monsieur Vérité|{param6:F1P}",
+				"Durée du champ de flash info|{param7:F1} s",
+				"Temps de recharge|{param8:F1} s",
+				"Énergie élémentaire|{param9:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Moment d'impact",
+		"info": "Lorsqu'un ennemi affligé de l'effet Impression ciblée est éliminé, le TdR de **Cadrage : Composition gelée** diminue de 2 s. Le TdR peut être diminué 4 fois toutes les 12 s de cette manière."
+	},
+	"passive2": {
+		"name": "Enquête de diversité",
+		"info": "Lorsque l'équipe contient 1, 2 ou 3 personnages fontainois (en plus de Charlotte), Charlotte obtient un bonus de soins de 5 %, 10 % ou 15 %, respectivement. Lorsque l'équipe contient 1, 2 ou 3 personnages non-fontainois, Charlotte bénéficie d'un bonus de DGT Cryo de 5 %, 10 % ou 15 %, respectivement."
+	},
+	"passive3": {
+		"name": "Premier obturateur",
+		"info": "Une fois que Charlotte a activé son zoom d'analyse spéciale, l'appui long de sa compétence élémentaire « Cadrage : Composition gelée » ne peut plus déclencher les effets d'origine, mais elle peut désormais prendre des photos d'une manière spéciale..."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la Justice",
+				"count": 3
+			},
+			{
+				"name": "Engrenage de maillage",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 2
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 4
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 6
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 9
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 4
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 4
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 6
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 6
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 12
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 9
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 16
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 12
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

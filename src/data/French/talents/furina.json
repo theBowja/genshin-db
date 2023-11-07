@@ -1,0 +1,216 @@
+{
+	"name": "Furina",
+	"combat1": {
+		"name": "Attaque normale : Sollicitation de la soliste",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 attaques.\n\n**Attaque chargée**\nConsomme de l'endurance pour déclencher une aura de danse solo, infligeant des DGT physiques aux ennemis proches et modifiant l'alignement de l'Arkhe de Furina. Si des membres du salon ou un chanteur des eaux invoqués par sa compétence élémentaire « Salon solitaire » sont présents sur le champ de bataille, ils sont changés en conséquence.\n\n**Arkhe : Sacralité et sécularisation**\nRégulièrement, lorsque l'attaque normale de Furina touche, une épine d'inhalation ou une lame fluide est libérée à l'emplacement touché selon l'alignement actuel de son Arkhe pour infliger des DGT Hydro chargés d'énergie pneuma ou ousia.\nLorsque Furina est déployée au combat, son Arkhe est chargé d'énergie ousia.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT attaque chargée|{param5:F1P}",
+				"Coût d'endurance attaque chargée|{param6:F1} pts",
+				"DGT durant la chute|{param7:F1P}",
+				"DGT chute basse/élevée|{param8:P}/{param9:P}",
+				"DGT épine d'inhalation/lame fluide|{param10:F1P}",
+				"Intervalle épine d'inhalation/lame fluide|{param11:I} s/{param12:I} s"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Salon solitaire",
+		"info": "Furina invite les convives du Salon solitaire à se joindre à sa performance, convoquant les membres du salon ou le chanteur des eaux selon l'**alignement actuel de son Arkhe**.\n\n**Ousia**\nDe l'écume danse joyeusement, infligeant des DGT Hydro de zone selon les PV max de Furina et convoquant 3 membres du salon : le gentilhomme Usher en forme de poulpe bouffi, la surintendante Chevalmarin en forme d'Hippocampe bulleux et la demoiselle Crabaletta en forme de Cuiracrabe.\nCes derniers attaquent les ennemis proches de façon intermittente en donnant la priorité aux cibles que le personnage déployé attaque, infligeant des DGT Hydro selon les PV max de Furina.\nEn attaquant, les membres du salon renforcent l'attaque en cours selon le nombre de personnages de l'équipe à proximité dont les PV sont supérieurs à 50 % tout en consommant les PV de ces derniers : lorsque 1, 2, 3 ou au moins 4 personnages sont concernés, l'attaque inflige des DGT pour une valeur équivalant respectivement à 110 %, 120 %, 130 % ou 140 % des DGT d'origine.\n\n**Pneuma**\nFurina convoque le chanteur des eaux, qui restaure régulièrement les PV des personnages déployés à proximité selon ses PV max.\n\nLes membres du salon et le chanteur des eaux partagent la même durée. Ainsi, lorsque Furina change ces convives en utilisant son attaque chargée, les nouveaux arrivants héritent de la durée restante.\nLorsque des membres du salon ou un chanteur des eaux sont présents, Furina peut se déplacer sur l'eau.",
+		"description": "Une liste fixe d'habitués fréquente le Salon solitaire de Furina. Parfois, la demoiselle Crabaletta, la surintendante Chevalmarin et le gentilhomme Usher viennent ; les mercredis maussades, c'est le chanteur qui rend visite.",
+		"attributes": {
+			"labels": [
+				"DGT écume ousia|{param1:F1P} PV max",
+				"Durée|{param2:F1} s",
+				"DGT gentilhomme Usher|{param3:F2P} PV max",
+				"DGT surintendante Chevalmarin|{param4:F2P} PV max",
+				"DGT demoiselle Crabaletta|{param5:F2P} PV max",
+				"Offrande de PV de gentilhomme Usher|{param6:F1P} PV max",
+				"Offrande de PV de surintendante Chevalmarin|{param7:F1P} PV max",
+				"Offrande de PV de demoiselle Crabaletta|{param8:F1P} PV max",
+				"Soins du chanteur des eaux|{param9:F2P} PV max + {param10:I} PV",
+				"Temps de recharge|{param11:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Liesse populaire",
+		"info": "Éveille l'envie de se délecter, créant une scène d'écume qui inflige des DGT Hydro de zone selon les PV max de Furina et accorde l'état Réjouissance universelle aux personnages de l'équipe à proximité : pendant sa durée, lorsque les PV actuels d'un personnage augmentent ou diminuent, Furina obtient 1 pt de fanfare à chaque fois que le personnage obtient ou perd des PV pour une valeur équivalant à 1 % de ses PV Max.\nDe plus, les DGT infligés et le bonus de soins reçus de tous les personnages de l'équipe à proximité augmentent selon la quantité de points de fanfare de Furina.\nUne fois la durée terminée, la fanfare de Furina est annulée.",
+		"description": "« Acclamez ! Louez ! Réjouissez ! Buvez ! Chaque nuit sans banquet est un gaspillage sordide de douloureuse et sobre lumière du jour... Et, hmm, ceux qui ne sont pas encore en âge peuvent prendre du jus de raisin à la place ! »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P} PV max",
+				"Durée|{param2:F1} s",
+				"Limite de fanfare|{param4:I}",
+				"Conversion de fanfare en bonus de DGT|{param5:F2P}",
+				"Conversion de fanfare en bonus de soins reçus|{param6:F2P}",
+				"Temps de recharge|{param7:F1} s",
+				"Énergie élémentaire|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Valse inarrêtable",
+		"info": "Lorsque le personnage déployé de votre groupe est soigné, si ces soins ne proviennent pas de Furina et dépassent la quantité maximum qu'il peut recevoir, Furina soigne les personnages de l'équipe à proximité pour une valeur équivalant à 2 % de leurs PV max respectifs une fois toutes les 2 s pendant 4 s."
+	},
+	"passive2": {
+		"name": "Confession inattendue",
+		"info": "Chaque tranche de 1 000 PV max que Furina possède accorde à son **Salon solitaire** différents effets bonus selon l'alignement de son Arkhe :\n- Les DGT infligés par les membres du salon augmentent de 0,7 %, les DGT infligés pouvant être augmentés d'un maximum de 28 % de cette manière.\n- L'intervalle des soins accordés aux personnages déployés à proximité par le chanteur des eaux diminue de 0,4 %, l'intervalle des soins pouvant être diminué d'un maximum de 16 % de cette manière."
+	},
+	"passive3": {
+		"name": "Scène de la mer",
+		"info": "Le TdR des capacités des Aberrants fontemarins xénochromatiques diminue de 30 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de la Justice",
+				"count": 3
+			},
+			{
+				"name": "Nectar de Fleur mensongère",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 2
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 4
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 6
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de la Justice",
+				"count": 9
+			},
+			{
+				"name": "Nectar miroitant",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 4
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 4
+			},
+			{
+				"name": "Masse sans lumière",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 6
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 6
+			},
+			{
+				"name": "Masse sans lumière",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 12
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 9
+			},
+			{
+				"name": "Masse sans lumière",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de la Justice",
+				"count": 16
+			},
+			{
+				"name": "Nectar élémentaire",
+				"count": 12
+			},
+			{
+				"name": "Masse sans lumière",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

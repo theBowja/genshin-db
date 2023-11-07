@@ -1,0 +1,216 @@
+{
+	"name": "Furina",
+	"combat1": {
+		"name": "Standardangriff: Einladung der Solistin",
+		"info": "**Standardangriff**\nFührt bis zu 4 Angriffe hintereinander aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer, erschafft die Aura eines Solotanzes, die den Gegnern in der Nähe physischen Schaden zufügt und die eigene Arkhe-Energiesignatur ändert. Wenn „Salonmitglieder“ oder „Sängerin der Ströme“, die von der Elementarfähigkeit „Salon solitaire“ herbeigerufen wurden, anwesend sind, ändert sich ihre Aufstellung.\n\n**Arkhe: Thron der Geistlichkeit und Weltlichkeit**\nErzeugt in gewissen Zeitabständen bei Treffern mit Standardangriffen von Furina an der getroffenen Position basierend auf Furinas aktueller Arkhe-Energiesignatur einen Geisterstachel oder eine Wogenklinge, die auf Gegner herabfällt, diese durchbohrt und mit Pneuma oder Ousia versehenen Hydro-Schaden verursacht.\nWenn Furina eingewechselt wird, ist ihre anfängliche Arkhe-Energiesignatur Ousia.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P}",
+				"SCH heftiger Schläge|{param5:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param6:F1} Punkte",
+				"SCH beim Fallen|{param7:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param8:P}/{param9:P}",
+				"Geisterstachel-/Wogenklingen-SCH|{param10:F1P}",
+				"Geisterstachel-/Wogenklingen-SCH-{SPACE}Intervall|{param11:I} s bzw. {param12:I} s"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Salon solitaire",
+		"info": "Lädt die Gäste des Salon solitaire ein, Furina bei ihrem Auftritt zu unterstützen. Beschwört entweder die „Salonmitglieder“ oder die „Sängerin der Ströme“, je nach Furinas aktueller **Arkhe-Energiesignatur**.\n\n**Ousia**\nVersprüht feierliche Blasen, die Hydro-Flächenschaden basierend auf Furinas max. LP verursachen und 3 „Salonmitglieder“ beschwören: den poingpoing-oktopus-förmigen „Gentilhomme Usher“, die blubber-seepferdchen-förmige „Surintendante Chevalmarin“ und die panzerkrabbenförmige „Mademoiselle Crabaletta“.\nDie „Salonmitglieder“ greifen in gewissen Abständen Gegner in der Nähe an und bevorzugen das Ziel der aktiven Figur, wobei sie Hydro-Schaden basierend auf den max. LP verursachen.\nWenn die „Salonmitglieder“ angreifen, erhöht sich die Stärke ihres aktuellen Angriffs basierend auf der Anzahl der Figuren, die sich in der Nähe befinden und deren LP mehr als 50 % betragen, wobei deren LP verbraucht werden: Wenn die Anzahl der Figuren, die diese Bedingungen erfüllen, 1/2/3/4 oder mehr beträgt, verursacht der Angriff der Mitglieder 110/120/130/140 % des ursprünglichen Schadens.\n\n**Pneuma**\nBeschwört die „Sängerin der Ströme“, die in regelmäßigen Abständen die LP der in der Nähe befindlichen aktiven Figuren basierend auf den max. LP wiederherstellt.\n\nDie Dauer gilt für die „Salonmitglieder“ und die „Sängerin der Ströme“ gemeinsam. Wenn Furina ihren heftigen Schlag einsetzt, um die Aufstellung der Gäste zu ändern, übernehmen die neuen Gäste die verbleibende Dauer.\nWährend die „Salonmitglieder“ und die „Sängerin der Ströme“ existieren, kann Furina sich auf Wasseroberflächen bewegen.",
+		"description": "In Furinas Salon solitaire gibt es einen festen Stamm an Gästen. Zu anderen Zeiten kommen Mademoiselle Crabaletta, Surintendante Chevalmarin und Gentilhomme Usher, und an düsteren Mittwochen ist es die Sängerin, die vorbeikommt.",
+		"attributes": {
+			"labels": [
+				"Ousia-Blasen-SCH|{param1:F1P} der max. LP",
+				"Dauer|{param2:F1} s",
+				"SCH Gentilhomme Usher|{param3:F2P} der max. LP",
+				"SCH Surintendante Chevalmarin|{param4:F2P} der max. LP",
+				"SCH Mademoiselle Crabaletta|{param5:F2P} der max. LP",
+				"LP-Verbrauch Gentilhomme Usher|{param6:F1P} der max. LP",
+				"LP-Verbrauch Surintendante Chevalmarin|{param7:F1P} der max. LP",
+				"LP-Verbrauch Mademoiselle Crabaletta|{param8:F1P} der max. LP",
+				"Heilung durch Sängerin der Ströme|{param9:F2P} der max. LP + {param10:I}",
+				"Abklingzeit|{param11:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Möge das Volk frohlocken",
+		"info": "Entfacht den Impuls zum Schwelgen und erzeugt eine Schaumbühne, die Hydro-Flächenschaden basierend auf Furinas max. LP verursacht und Truppenmitglieder in der Nähe in den Zustand „Universelle Schwelgerei“ versetzt. Während dieser Zeit, wenn die aktuellen LP der Figuren steigen oder sinken, gewähren sie Furina für je 1 % der LP-Schwankung im Vergleich zu den max. LP 1 Punkt „Pomp“.\nGleichzeitig erhöht Furina den von allen Truppenmitgliedern in der Nähe verursachten Schaden und ihren passiven Heilungsbonus, je nachdem, wie viel Pomp sie hat.\nWenn die Wirkungsdauer endet, wird Furinas Pomp entfernt.",
+		"description": "„Jubelt! Lobt! Seid ehrfürchtig! Erhebt eure Gläser! Jede Nacht ohne Festmahl ist eine schmutzige Vergeudung von nüchternem Tageslicht ... Und die, die noch nicht volljährig sind, können stattdessen Traubensaft trinken!“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P} der max. LP",
+				"Dauer|{param2:F1} s",
+				"Max. Pomp|{param4:I}",
+				"Umwandlungsrate Pomp zu SCH-Bonus|{param5:F2P}",
+				"Umwandlungsrate Pomp zu passivem Heilungsbonus|{param6:F2P}",
+				"Abklingzeit|{param7:F1} s",
+				"Elementarenergie|{param8:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Endloser Walzer",
+		"info": "Wenn die aktive Figur in der Truppe geheilt wird, die Heilung aber nicht von Furina stammt und einen Überschuss aufweist, stellt Furina den Truppenmitgliedern in der Nähe innerhalb der nächsten 4 s alle 2 s 2 % ihrer jeweiligen max. LP wieder her."
+	},
+	"passive2": {
+		"name": "Ungehörter Monolog",
+		"info": "Verleiht Furinas **Salon solitaire** unter den verschiedenen Arkhe-Energiesignaturen für je 1.000 Punkte ihrer max. LP die entsprechenden Bonuseffekte:\nErhöht den von den Salonmitgliedern verursachten Schaden um 0,7 %. Auf diese Weise kann der durch die Salonmitglieder verursachte Schaden um bis zu 28 % erhöht werden.\nVerringert das Heilungsintervall der Sängerin der Ströme bei den aktiven Figuren in der Nähe um 0,4 %. Auf diese Weise kann das Heilungsintervall um bis zu 16 % verringert werden."
+	},
+	"passive3": {
+		"name": "Der Ozean ist meine Bühne",
+		"info": "Verringert die Abklingzeit der Kraft des xenochromatischen Fontemer-Mutanten um 30 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Gerechtigkeit“",
+				"count": 3
+			},
+			{
+				"name": "Vaniloqua-Nektar",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Gerechtigkeit“",
+				"count": 2
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Gerechtigkeit“",
+				"count": 4
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Gerechtigkeit“",
+				"count": 6
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Gerechtigkeit“",
+				"count": 9
+			},
+			{
+				"name": "Leuchtender Nektar",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Gerechtigkeit“",
+				"count": 4
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 4
+			},
+			{
+				"name": "Aphotische Masse",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Gerechtigkeit“",
+				"count": 6
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 6
+			},
+			{
+				"name": "Aphotische Masse",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Gerechtigkeit“",
+				"count": 12
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 9
+			},
+			{
+				"name": "Aphotische Masse",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Gerechtigkeit“",
+				"count": 16
+			},
+			{
+				"name": "Elementarnektar",
+				"count": 12
+			},
+			{
+				"name": "Aphotische Masse",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}
