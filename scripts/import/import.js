@@ -527,32 +527,32 @@ function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipim
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "4.1"; // new data will use this as added version
+gameVersion = "4.2"; // new data will use this as added version
 
 // importData('characters');
 // importCurve('characters');
 // getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
-// importData('constellations');
-// importData('talents');
-// importData('weapons')
-// importCurve('weapons');
-// importData('artifacts');
-// importData('foods');
-// importData('materials');
-// importData('domains');
-// importData('enemies');
-// importCurve('enemies');
+importData('constellations');
+importData('talents');
+importData('weapons')
+importCurve('weapons');
+importData('artifacts');
+importData('foods');
+importData('materials');
+importData('domains');
+importData('enemies');
+importCurve('enemies');
 
-// importData('outfits');
-// importData('windgliders');
-// importData('animals');
-// importData('namecards');
-// importData('geographies');
-// importData('crafts');
-// importData('achievements');
-// importData('achievementgroups');
-// importData('adventureranks'); // max 60
+importData('outfits');
+importData('windgliders');
+importData('animals');
+importData('namecards');
+importData('geographies');
+importData('crafts');
+importData('achievements');
+importData('achievementgroups');
+importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
 // importData('tcgactioncards');
