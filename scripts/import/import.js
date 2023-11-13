@@ -554,15 +554,15 @@ gameVersion = "4.2"; // new data will use this as added version
 // importData('achievementgroups');
 // importData('adventureranks'); // max 60
 
-importData('tcgcharactercards');
-importData('tcgactioncards');
-importData('tcgcardbacks');
-importData('tcgcardboxes');
-importData('tcgdetailedrules');
-importData('tcgkeywords');
-importData('tcglevelrewards');
-importData('tcgstatuseffects');
-importData('tcgsummons');
+// importData('tcgcharactercards');
+// importData('tcgactioncards');
+// importData('tcgcardbacks');
+// importData('tcgcardboxes');
+// importData('tcgdetailedrules');
+// importData('tcgkeywords');
+// importData('tcglevelrewards');
+// importData('tcgstatuseffects');
+// importData('tcgsummons');
 
 // updateURLs(); // must be separate
 
