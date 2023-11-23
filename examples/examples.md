@@ -1605,13 +1605,13 @@ const genshindb = require('genshin-db');
     description: "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
   },
   images: {
-    c1: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_01.png',
-    c2: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_02.png',
-    c3: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_02.png',
-    c4: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_03.png',
-    c5: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_Ambor_01.png',
-    c6: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_Ambor_04.png',
-    constellation: 'Eff_UI_Talent_Ambor'
+    filename_c1: 'UI_Talent_S_Ambor_01',
+    filename_c2: 'UI_Talent_S_Ambor_02',
+    filename_c3: 'UI_Talent_U_Ambor_02',
+    filename_c4: 'UI_Talent_S_Ambor_03',
+    filename_c5: 'UI_Talent_U_Ambor_01',
+    filename_c6: 'UI_Talent_S_Ambor_04',
+    filename_constellation: 'Eff_UI_Talent_Ambor'
   },
   version: '1.0'
 }
@@ -1676,14 +1676,15 @@ const genshindb = require('genshin-db');
       'The meteorite created by Starfell Sword lasts 10s longer.'
   },
   images: {
-    c1: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_01.png',
-    c2: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_02.png',
-    c3: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_PlayerRock_02.png',
-    c4: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_03.png',
-    c5: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_U_PlayerRock_01.png',
-    c6: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/constellation_icon/UI_Talent_S_PlayerRock_04.png',
-    constellation: 'Eff_UI_Talent_PlayerBoy_Rock',
-    constellation2: 'Eff_UI_Talent_PlayerGirl_Rock'
+    constellation2: 'Eff_UI_Talent_PlayerGirl_Rock',
+    filename_c1: 'UI_Talent_S_PlayerRock_01',
+    filename_c2: 'UI_Talent_S_PlayerRock_02',
+    filename_c3: 'UI_Talent_U_PlayerRock_02',
+    filename_c4: 'UI_Talent_S_PlayerRock_03',
+    filename_c5: 'UI_Talent_U_PlayerRock_01',
+    filename_c6: 'UI_Talent_S_PlayerRock_04',
+    filename_constellation: 'Eff_UI_Talent_PlayerBoy_Rock',
+    filename_constellation2: 'Eff_UI_Talent_PlayerGirl_Rock'
   },
   version: '1.0'
 }
@@ -2266,7 +2267,7 @@ const genshindb = require('genshin-db');
     'His enemies are the thousands who stand against the wind.',
   category: 'AVATAR_MATERIAL',
   typeText: 'Character Level-Up Material',
-  sources: [],
+  sources: [ 'Lv. 70+ Stormterror Challenge Reward' ],
   images: { filename_icon: 'UI_ItemIcon_113005' },
   version: ''
 }
