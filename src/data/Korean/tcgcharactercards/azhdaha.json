@@ -1,0 +1,90 @@
+{
+	"id": 2602,
+	"name": "야타용왕",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"바위 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "고대 바위 용의 조상·야타용왕",
+	"storytext": "족쇄가 흔들리는 소리와 용의 낮은 포효가 기억처럼 산골짜기에 울려 퍼진다",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 야타용왕에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 26021,
+			"name": "바위 분쇄 충돌",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26022,
+			"name": "웅장한 기운",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 결정 반응이 발생하면 캐릭터는 $[K1012]한다. \\n만약 이번 스킬에서 캐릭터가 원소의 힘을 흡수하지 않을 경우 <color=#FFFFFFFF>$[C126022]</color>을 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 3pt 주고 결정 반응이 발생하면 캐릭터는 <color=#FFFFFFFF>해당 원소의 힘을 흡수</color>한다. \\n만약 이번 스킬에서 캐릭터가 원소의 힘을 흡수하지 않을 경우 <color=#FFFFFFFF>반암백상·원소 응결</color>을 부착한다.",
+			"description": "바위 원소 피해를 3pt 주고 결정 반응이 발생하면 캐릭터는 해당 원소의 힘을 흡수한다. \n만약 이번 스킬에서 캐릭터가 원소의 힘을 흡수하지 않을 경우 반암백상·원소 응결을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26024,
+			"name": "파멸의 산사태",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 흡수한 원소 타입 하나당 이번 피해가 1pt 증가한다",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 4pt 주고 흡수한 원소 타입 하나당 이번 피해가 1pt 증가한다",
+			"description": "바위 원소 피해를 4pt 주고 흡수한 원소 타입 하나당 이번 피해가 1pt 증가한다",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26025,
+			"name": "반암백상",
+			"descriptionraw": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C126021]</color>가 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>반암백상·원소 흡수</color>가 부착된다.",
+			"description": "[패시브] 전투 시작 시, 시작부터 반암백상·원소 흡수가 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

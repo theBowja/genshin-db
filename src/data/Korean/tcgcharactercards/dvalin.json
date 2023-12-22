@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "드발린",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"바람 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "동풍의 용·드발린",
+	"storytext": "「네가 나였다면, 푸른 하늘을 누비는 고고하고 아름다운 네 자태를 볼 수 있을 텐데」\n「그랬다면 너도 알 수 있겠지. 이런 하늘과 땅을 지키기 위해 싸울 가치가 있다는 걸」",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 드발린에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "갈래 발톱 휩쓸기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "몰아치는 폭풍",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>$[C125021]</color>를 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 2pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>와해</color>를 부착한다.",
+			"description": "바람 원소 피해를 2pt 주고 대상 캐릭터에게 와해를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "바람 드래곤의 숨결",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S25025]</color>과 <color=#FFFFFFFF>$[S25026]</color>의 $[K53]를 한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>긴 숨결</color>과 <color=#FFFFFFFF>종막의 숨결</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "바람 원소 피해를 2pt 주고 긴 숨결과 종막의 숨결의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "파멸의 노래",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 모든 적 대기 캐릭터에게 <color=#FFFFFFFF>$[C125021]</color>를 부착한다.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 5pt 주고 모든 적 대기 캐릭터에게 <color=#FFFFFFFF>와해</color>를 부착한다.",
+			"description": "바람 원소 피해를 5pt 주고 모든 적 대기 캐릭터에게 와해를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "긴 숨결",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n다음 적 대기 캐릭터에게 $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S25026]</color>의 $[K53]를 한다. (상대에게 대기 캐릭터가 없을 시, 출전 캐릭터에게 피해를 준다)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n다음 적 대기 캐릭터에게 {SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 1pt 주고 <color=#FFFFFFFF>종막의 숨결</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다. (상대에게 대기 캐릭터가 없을 시, 출전 캐릭터에게 피해를 준다)",
+			"description": "(1차례 행동 준비 필요)\n다음 적 대기 캐릭터에게 바람 원소 피해를 1pt 주고 종막의 숨결의 스킬 준비를 한다. (상대에게 대기 캐릭터가 없을 시, 출전 캐릭터에게 피해를 준다)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "종막의 숨결",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n이전 적 대기 캐릭터에게 $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. (상대에게 대기 캐릭터가 없을 시, 출전 캐릭터에게 피해를 준다)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n이전 적 대기 캐릭터에게 {SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 2pt 준다. (상대에게 대기 캐릭터가 없을 시, 출전 캐릭터에게 피해를 준다)",
+			"description": "(1차례 행동 준비 필요)\n이전 적 대기 캐릭터에게 바람 원소 피해를 2pt 준다. (상대에게 대기 캐릭터가 없을 시, 출전 캐릭터에게 피해를 준다)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Senjata Lain",
+		"Monster"
+	],
+	"storytitle": "\"Dragon of the East\" Dvalin",
+	"storytext": "\"Alangkah baiknya kalau kamu bisa menjadi diriku, melihat wujudmu yang begitu mulia dan indah itu terbang bebas di langit yang biru.\"\n\"Dengan begitu, kamu akan menyadari bahwa langit dan bumi ini ... keduanya patut diperjuangkan.\"",
+	"source": "Didapatkan setelah menerima Tantangan Tavern di Cat's Tail dan menang dalam Pertandingan Persahabatan melawan Dvalin",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Lacerating Slash",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Tempestuous Barrage",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].\\nKarakter target menerima <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>.\\nKarakter target menerima <color=#FFFFFFFF>Total Collapse</color>.",
+			"description": "Mengakibatkan 2 poin Anemo DMG.\nKarakter target menerima Total Collapse.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Dvalin's Cleansing",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], lalu $[K53|s1]: <color=#FFFFFFFF>$[S25025]</color> dan <color=#FFFFFFFF>$[S25026]</color> secara terpisah.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>, lalu <color=#FFFFFFFF>mempersiapkan Skill</color>: <color=#FFFFFFFF>Perpetual Cleansing</color> dan <color=#FFFFFFFF>Ultimate Cleansing</color> secara terpisah.",
+			"description": "Mengakibatkan 2 poin Anemo DMG, lalu mempersiapkan Skill: Perpetual Cleansing dan Ultimate Cleansing secara terpisah.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].\\nSemua Karakter standby lawan memperoleh status <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Mengakibatkan 5 poin {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>.\\nSemua Karakter standby lawan memperoleh status <color=#FFFFFFFF>Total Collapse</color>.",
+			"description": "Mengakibatkan 5 poin Anemo DMG.\nSemua Karakter standby lawan memperoleh status Total Collapse.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Perpetual Cleansing",
+			"descriptionraw": "Persiapkan selama 1 giliran.\\nMengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] kepada Karakter standby lawan berikutnya, lalu $[K53|s1]: <color=#FFFFFFFF>$[S25026]</color>. (Jika lawan tidak memiliki Karakter standby, DMG akan ditujukan kepada Karakter aktif)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Persiapkan selama 1 giliran.\\nMengakibatkan 1 poin {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color> kepada Karakter standby lawan berikutnya, lalu <color=#FFFFFFFF>mempersiapkan Skill</color>: <color=#FFFFFFFF>Ultimate Cleansing</color>. (Jika lawan tidak memiliki Karakter standby, DMG akan ditujukan kepada Karakter aktif)",
+			"description": "Persiapkan selama 1 giliran.\nMengakibatkan 1 poin Anemo DMG kepada Karakter standby lawan berikutnya, lalu mempersiapkan Skill: Ultimate Cleansing. (Jika lawan tidak memiliki Karakter standby, DMG akan ditujukan kepada Karakter aktif)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Ultimate Cleansing",
+			"descriptionraw": "Persiapkan selama 1 giliran.\\nMengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] kepada Karakter standby lawan sebelumnya. (Jika lawan tidak memiliki Karakter standby, DMG akan ditujukan kepada Karakter aktif)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Persiapkan selama 1 giliran.\\nMengakibatkan 2 poin {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color> kepada Karakter standby lawan sebelumnya. (Jika lawan tidak memiliki Karakter standby, DMG akan ditujukan kepada Karakter aktif)",
+			"description": "Persiapkan selama 1 giliran.\nMengakibatkan 2 poin Anemo DMG kepada Karakter standby lawan sebelumnya. (Jika lawan tidak memiliki Karakter standby, DMG akan ditujukan kepada Karakter aktif)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		}
+	]
+}

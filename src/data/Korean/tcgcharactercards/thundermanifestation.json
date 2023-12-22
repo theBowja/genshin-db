@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "뇌음의 권현",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"번개 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "남겨진 증오·뇌음의 권현",
+	"storytext": "땅에 증오가 있는 한 번개는 끊이지 않을 것이다",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 뇌음의 권현에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "천둥 날개 베기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 1pt 준다.",
+			"description": "번개 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "배척의 번개 벽",
+			"descriptionraw": "<color=#FFFFFFFF>$[C124022]</color>가 부착된 적 캐릭터에게 $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. (조건에 맞는 상대 캐릭터가 없을 시 출전 캐릭터에게 피해를 준다)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>뇌명 탐지</color>가 부착된 적 캐릭터에게 {SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 준다. (조건에 맞는 상대 캐릭터가 없을 시 출전 캐릭터에게 피해를 준다)",
+			"description": "뇌명 탐지가 부착된 적 캐릭터에게 번개 원소 피해를 3pt 준다. (조건에 맞는 상대 캐릭터가 없을 시 출전 캐릭터에게 피해를 준다)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "속박의 천둥",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C124023]</color>을 소환한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>속박의 천둥</color>을 소환한다.",
+			"description": "번개 원소 피해를 2pt 주고 속박의 천둥을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "뇌정 탐지",
+			"descriptionraw": "[패시브] 전투 시작 시, 적 필드에 <color=#FFFFFFFF>$[C124021]</color>을 생성한다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 적 필드에 <color=#FFFFFFFF>뇌정 탐침</color>을 생성한다.",
+			"description": "[패시브] 전투 시작 시, 적 필드에 뇌정 탐침을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

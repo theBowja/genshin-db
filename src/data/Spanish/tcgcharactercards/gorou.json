@@ -1,0 +1,80 @@
+{
+	"id": 1606,
+	"name": "Gorou",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Geo",
+		"Arco",
+		"Inazuma"
+	],
+	"storytitle": "Gorou - El General Canino",
+	"storytext": "¡El líder que guía a sus soldados!",
+	"source": "Se obtiene tras retar y ganar a Gorou en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 16061,
+			"name": "Flecha resquebrajadora",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16062,
+			"name": "Defensa integral canina",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C116061|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color> y crea un <color=#FFFFFFFF>estandarte del general</color>.",
+			"description": "Inflige 2 pts. de Daño Geo y crea un estandarte del general.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16063,
+			"name": "Colmillo de la victoria",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], crea un <color=#FFFFFFFF>$[C116061|s1]</color> y genera el efecto de <color=#FFFFFFFF>$[C116062|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>, crea un <color=#FFFFFFFF>estandarte del general</color> y genera el efecto de <color=#FFFFFFFF>gloria del general</color>.",
+			"description": "Inflige 2 pts. de Daño Geo, crea un estandarte del general y genera el efecto de gloria del general.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

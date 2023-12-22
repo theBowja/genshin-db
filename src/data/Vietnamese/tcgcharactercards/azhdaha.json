@@ -1,0 +1,90 @@
+{
+	"id": 2602,
+	"name": "Azhdaha",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Nguyên Tố Nham",
+		"Vũ Khí Khác",
+		"Ma Vật"
+	],
+	"storytitle": "Rồng Tổ Cổ Nham - Azhdaha",
+	"storytext": "Tiếng xiềng xích khe khẽ và tiếng gầm trầm đục của tổ tiên loài rồng, giống như những ký ức, vang vọng giữa núi rừng.",
+	"source": "Nhận được sau khi Khiêu Chiến Quán Rượu ở chỗ Tiểu Hoàng Tử trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong độ khó Đánh Giải Trí với Azhdaha",
+	"skills": [
+		{
+			"id": 26021,
+			"name": "Đá Vỡ Dội Đến",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26022,
+			"name": "Khí Thế Hào Hùng",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], nếu xảy ra phản ứng kết tinh, nhân vật sẽ $[K1012].\\nNếu trong thời gian kỹ năng mà nhân vật chưa hấp thụ sức mạnh nguyên tố, sẽ áp dụng <color=#FFFFFFFF>$[C126022]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Gây 3 điểm {SPRITE_PRESET#2106}<color=#FFE699FF>Sát Thương Nguyên Tố Nham</color>, nếu xảy ra phản ứng kết tinh, nhân vật sẽ <color=#FFFFFFFF>Hấp thụ sức mạnh nguyên tố tương ứng</color>.\\nNếu trong thời gian kỹ năng mà nhân vật chưa hấp thụ sức mạnh nguyên tố, sẽ áp dụng <color=#FFFFFFFF>Bàn Nham Bách Tướng - Kết Tinh Nguyên Tố</color>.",
+			"description": "Gây 3 điểm Sát Thương Nguyên Tố Nham, nếu xảy ra phản ứng kết tinh, nhân vật sẽ Hấp thụ sức mạnh nguyên tố tương ứng.\nNếu trong thời gian kỹ năng mà nhân vật chưa hấp thụ sức mạnh nguyên tố, sẽ áp dụng Bàn Nham Bách Tướng - Kết Tinh Nguyên Tố.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26024,
+			"name": "Núi Lở Diệt Vong",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], mỗi khi hấp thụ 1 loại nguyên tố sẽ +1 sát thương này.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Gây 4 điểm {SPRITE_PRESET#2106}<color=#FFE699FF>Sát Thương Nguyên Tố Nham</color>, mỗi khi hấp thụ 1 loại nguyên tố sẽ +1 sát thương này.",
+			"description": "Gây 4 điểm Sát Thương Nguyên Tố Nham, mỗi khi hấp thụ 1 loại nguyên tố sẽ +1 sát thương này.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26025,
+			"name": "Hàng Trăm Phiến Đá",
+			"descriptionraw": "(Bị động) Khi bắt đầu chiến đấu, nhân vật này nhận <color=#FFFFFFFF>$[C126021]</color>.",
+			"descriptionreplaced": "(Bị động) Khi bắt đầu chiến đấu, nhân vật này nhận <color=#FFFFFFFF>Bàn Nham Bách Tướng - Hấp Thụ Nguyên Tố</color>.",
+			"description": "(Bị động) Khi bắt đầu chiến đấu, nhân vật này nhận Bàn Nham Bách Tướng - Hấp Thụ Nguyên Tố.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		}
+	]
+}

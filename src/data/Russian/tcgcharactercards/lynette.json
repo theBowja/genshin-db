@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Линетт",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Анемо",
+		"Одноручное",
+		"Фонтейн",
+		"Фатуи",
+		"Архэ: Усия"
+	],
+	"storytitle": "«Изящество среди теней» Линетт",
+	"storytext": "Истинная красота ночи, раскрывающаяся в отражении луны.",
+	"source": "Награда за приглашение Линетт в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Стремительная церемониальная рапира",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Таинственный трюк с исчезновением",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Когда навык используется первый раз в течение раунда, то использовавший его персонаж восстановит 2 HP (если его HP не более 8), но при этом получит <color=#FFFFFFFF>$[C115081]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 3 ед. Когда навык используется первый раз в течение раунда, то использовавший его персонаж восстановит 2 HP (если его HP не более 8), но при этом получит <color=#FFFFFFFF>Ужасающий штурм</color>.",
+			"description": "Наносит Анемо урон, 3 ед. Когда навык используется первый раз в течение раунда, то использовавший его персонаж восстановит 2 HP (если его HP не более 8), но при этом получит Ужасающий штурм.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Фокус: Удивительное превращение",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Призывается <color=#FFFFFFFF>$[C115082]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 2 ед. Призывается <color=#FFFFFFFF>Изумительная кошачья коробка</color>.",
+			"description": "Наносит Анемо урон, 2 ед. Призывается Изумительная кошачья коробка.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

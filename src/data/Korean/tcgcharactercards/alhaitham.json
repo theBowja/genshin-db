@@ -1,0 +1,80 @@
+{
+	"id": 1706,
+	"name": "알하이탐",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"풀 원소",
+		"한손검",
+		"수메르"
+	],
+	"storytitle": "충고와 직언·알하이탐",
+	"storytext": "학습과 사고 그리고 처세술",
+	"source": "캣테일 술집에서 알하이탐 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 17061,
+			"name": "귀추법",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17062,
+			"name": "보편성·이데아 모사",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C117061]</color>을 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 2pt 주고 본 캐릭터에게 <color=#FFFFFFFF>빛조각</color>을 부착한다.",
+			"description": "풀 원소 피해를 2pt 주고 본 캐릭터에게 빛조각을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17063,
+			"name": "특수 영역·현상의 족쇄",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. <color=#FFFFFFFF>$[C117061]</color>을 소모하며 이번 피해는 소모한 <color=#FFFFFFFF>$[C117061]</color>의 $[K4]만큼 증가한다.\\n소모한 <color=#FFFFFFFF>$[C117061]</color>의 $[K4]이 0/1/2이면 캐릭터에게 $[K4]이 3/2/1인 <color=#FFFFFFFF>$[C117061]</color>을 부착한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 4pt 준다. <color=#FFFFFFFF>빛조각</color>을 소모하며 이번 피해는 소모한 <color=#FFFFFFFF>빛조각</color>의 <color=#FFFFFFFF>지속 턴</color>만큼 증가한다.\\n소모한 <color=#FFFFFFFF>빛조각</color>의 <color=#FFFFFFFF>지속 턴</color>이 0/1/2이면 캐릭터에게 <color=#FFFFFFFF>지속 턴</color>이 3/2/1인 <color=#FFFFFFFF>빛조각</color>을 부착한다.",
+			"description": "풀 원소 피해를 4pt 준다. 빛조각을 소모하며 이번 피해는 소모한 빛조각의 지속 턴만큼 증가한다.\n소모한 빛조각의 지속 턴이 0/1/2이면 캐릭터에게 지속 턴이 3/2/1인 빛조각을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

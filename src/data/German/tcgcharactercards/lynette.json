@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Lynette",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Anemo",
+		"Einhänder",
+		"Fontaine",
+		"Fatui",
+		"Arkhe: Ousia"
+	],
+	"storytitle": "Eleganz im Schatten – Lynette",
+	"storytext": "Des Sternenzelts flüchtiger Anblick im gespiegelten Mond",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Lynette in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Flinker Degen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Rätselhafte Schattenverhüllung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Wenn diese Fähigkeit zum ersten Mal in dieser Runde angewendet wird und diese Figur nicht mehr als 8 LP hat, werden ihr 2 LP wiederhergestellt, wodurch ihr aber <color=#FFFFFFFF>$[C115081]</color> verliehen wird.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>. Wenn diese Fähigkeit zum ersten Mal in dieser Runde angewendet wird und diese Figur nicht mehr als 8 LP hat, werden ihr 2 LP wiederhergestellt, wodurch ihr aber <color=#FFFFFFFF>Nachbeben des Angriffs</color> verliehen wird.",
+			"description": "Verursacht 3 Pkt. Anemo-SCH. Wenn diese Fähigkeit zum ersten Mal in dieser Runde angewendet wird und diese Figur nicht mehr als 8 LP hat, werden ihr 2 LP wiederhergestellt, wodurch ihr aber Nachbeben des Angriffs verliehen wird.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Zaubertrick – Erstaunlicher Wechsel",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C115082]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, erschafft 1 <color=#FFFFFFFF>Überraschungskatzenkiste</color>.",
+			"description": "Verursacht 2 Pkt. Anemo-SCH, erschafft 1 Überraschungskatzenkiste.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

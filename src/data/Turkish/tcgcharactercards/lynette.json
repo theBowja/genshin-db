@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Lynette",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Rüzgar",
+		"Kılıç",
+		"Fontaine",
+		"Fatui",
+		"Arkhe: Öz"
+	],
+	"storytitle": "\"Gölgedeki Zarafet\" Lynette",
+	"storytext": "Gök kubbe ay ışığında bir an parlar.",
+	"source": "Lynette'i Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Seri Tören Kılıcı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Gizemli Aldatmaca",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bu Beceri bu Turda ilk defa kullanıldığında karakterin 8'den daha az Canı varsa onun için 2 Can yeniler ama söz konusu karaktere <color=#FFFFFFFF>$[C115081]</color> verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir. Bu Beceri bu Turda ilk defa kullanıldığında karakterin 8'den daha az Canı varsa onun için 2 Can yeniler ama söz konusu karaktere <color=#FFFFFFFF>Tehditkar Saldırı</color> verir.",
+			"description": "3 Rüzgar Hasarı verir. Bu Beceri bu Turda ilk defa kullanıldığında karakterin 8'den daha az Canı varsa onun için 2 Can yeniler ama söz konusu karaktere Tehditkar Saldırı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Sihir Numarası: Şaşırtıcı Değişim",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C115082]</color> çağırır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir ve 1 <color=#FFFFFFFF>Şaşırtıcı Kedi Kutusu</color> çağırır.",
+			"description": "2 Rüzgar Hasarı verir ve 1 Şaşırtıcı Kedi Kutusu çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

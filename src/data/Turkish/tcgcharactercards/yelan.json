@@ -1,0 +1,90 @@
+{
+	"id": 1209,
+	"name": "Yelan",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Su",
+		"Yay",
+		"Liyue"
+	],
+	"storytitle": "\"Vadi Orkidesi\" Yelan",
+	"storytext": "Dünya çok büyük ve sonsuzdur, yalnız olanlar istedikleri gibi gelip giderler.",
+	"source": "Yelan'ı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 12091,
+			"name": "Gizli Ok Saldırısı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12092,
+			"name": "Uzun Yaşam Hattı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karakter 2 <color=#FFFFFFFF>$[C112091]</color> kademesi kazanır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve bu karakter 2 <color=#FFFFFFFF>Del Geç</color> kademesi kazanır.",
+			"description": "3 Su Hasarı verir ve bu karakter 2 Del Geç kademesi kazanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12093,
+			"name": "Berrak Zar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C112092]</color> oluşturur.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve 1 <color=#FFFFFFFF>Seçkin Zar</color> oluşturur.",
+			"description": "1 Su Hasarı verir ve 1 Seçkin Zar oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12094,
+			"name": "Del Geç",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C112091]</color> kazanır.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Del Geç</color> kazanır.",
+			"description": "(Pasif) Savaş başladığında bu karakter Del Geç kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

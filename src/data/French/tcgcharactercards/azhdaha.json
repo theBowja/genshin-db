@@ -1,0 +1,90 @@
+{
+	"id": 2602,
+	"name": "Azhdaha",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Géo",
+		"Autre arme",
+		"Monstre"
+	],
+	"storytitle": "Ancêtre des Géosaures : Azhdaha",
+	"storytext": "Le bruit de ses chaînes et ses grognements de fureur résonnent toujours dans les entrailles des montagnes, souvenirs d'un lointain passé...",
+	"source": "Récompense pour avoir accepté un défi de taverne auprès de Prince à La Queue de Chat et remporté la victoire lors d'une partie amicale contre Azhdaha",
+	"skills": [
+		{
+			"id": 26021,
+			"name": "Ruée de concassage",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26022,
+			"name": "Aura de majesté",
+			"descriptionraw": "#Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT]. Si une réaction de Cristallisation se produit, le personnage $[K1012|s2].\\nSi le personnage n'absorbe aucun élément pendant l'utilisation de cette capacité, il obtient «{NON_BREAK_SPACE}<color=#FFFFFFFF>$[C126022]</color>{NON_BREAK_SPACE}».",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "#Inflige 3 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>. Si une réaction de Cristallisation se produit, le personnage <color=#FFFFFFFF>absorbe la puissance de l'élément correspondant</color>.\\nSi le personnage n'absorbe aucun élément pendant l'utilisation de cette capacité, il obtient «{NON_BREAK_SPACE}<color=#FFFFFFFF>Facettes de la roche : Condensation élémentaire</color>{NON_BREAK_SPACE}».",
+			"description": "Inflige 3 pts de DGT Géo. Si une réaction de Cristallisation se produit, le personnage absorbe la puissance de l'élément correspondant.\nSi le personnage n'absorbe aucun élément pendant l'utilisation de cette capacité, il obtient « Facettes de la roche : Condensation élémentaire ».",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26024,
+			"name": "Éboulement annihilateur",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et augmente ces DGT de 1 pour chaque élément précédemment absorbé.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 4 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color> et augmente ces DGT de 1 pour chaque élément précédemment absorbé.",
+			"description": "Inflige 4 pts de DGT Géo et augmente ces DGT de 1 pour chaque élément précédemment absorbé.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26025,
+			"name": "Facettes de la roche",
+			"descriptionraw": "(Passif) Applique « <color=#FFFFFFFF>$[C126021]</color> » au début du combat.",
+			"descriptionreplaced": "(Passif) Applique « <color=#FFFFFFFF>Facettes de la roche : Absorption élémentaire</color> » au début du combat.",
+			"description": "(Passif) Applique « Facettes de la roche : Absorption élémentaire » au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

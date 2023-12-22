@@ -1,0 +1,90 @@
+{
+	"id": 2602,
+	"name": "Azhdaha",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Andere Waffen",
+		"Monster"
+	],
+	"storytitle": "Vorfahre der alten Felsdrachen – Azhdaha",
+	"storytext": "Die schwachen Vibrationen seiner Fesseln und das leise Brüllen hallen bis heute durch die Berge und halten die Erinnerungen an den uralten Drachen wach.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Azhdaha in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 26021,
+			"name": "Steinschmetternde Welle",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26022,
+			"name": "Aura der Majestät",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Wenn dabei die Reaktion Kristallisation ausgelöst wird, wird die Figur $[K1012].\\nWenn die Figur beim Anwenden dieser Fähigkeit keine Elementarkraft absorbiert hat, wird ihr <color=#FFFFFFFF>$[C126022]</color> verliehen.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>. Wenn dabei die Reaktion Kristallisation ausgelöst wird, wird die Figur <color=#FFFFFFFF>Kraft des entsprechenden Elements absorbieren</color>.\\nWenn die Figur beim Anwenden dieser Fähigkeit keine Elementarkraft absorbiert hat, wird ihr <color=#FFFFFFFF>Facetten des Felsens – Elementarkristall</color> verliehen.",
+			"description": "Verursacht 3 Pkt. Geo-SCH. Wenn dabei die Reaktion Kristallisation ausgelöst wird, wird die Figur Kraft des entsprechenden Elements absorbieren.\nWenn die Figur beim Anwenden dieser Fähigkeit keine Elementarkraft absorbiert hat, wird ihr Facetten des Felsens – Elementarkristall verliehen.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26024,
+			"name": "Massiver Erdrutsch",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Erhöht den SCH für jedes absorbierte Element um 1 Pkt.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-SCH</color>. Erhöht den SCH für jedes absorbierte Element um 1 Pkt.",
+			"description": "Verursacht 4 Pkt. Geo-SCH. Erhöht den SCH für jedes absorbierte Element um 1 Pkt.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26025,
+			"name": "Facetten des Felsens",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C126021]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Facetten des Felsens – Elementarabsorption</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Facetten des Felsens – Elementarabsorption.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

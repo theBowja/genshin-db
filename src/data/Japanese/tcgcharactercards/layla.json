@@ -1,0 +1,78 @@
+{
+	"id": 1109,
+	"name": "レイラ",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"氷元素",
+		"片手剣",
+		"スメール"
+	],
+	"storytitle": "綺思と夜星·レイラ",
+	"storytext": "更けゆく夜に星が遷り、月籠に照らされる夢の軌跡。",
+	"source": "キャッツテールでレイラを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 11091,
+			"name": "煌めく軌跡の剣",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11092,
+			"name": "垂裳凛然の夜",
+			"descriptionraw": "<color=#FFFFFFFF>$[C111091]</color>と<color=#FFFFFFFF>$[C111092]</color>を生成する。",
+			"descriptionreplaced": "<color=#FFFFFFFF>安眠天幕シールド</color>と<color=#FFFFFFFF>飛星</color>を生成する。",
+			"description": "安眠天幕シールドと飛星を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11093,
+			"name": "星流揺籠の夢",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C111093]</color>を召喚する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を3与え、<color=#FFFFFFFF>夢の天球</color>を召喚する。",
+			"description": "氷元素ダメージを3与え、夢の天球を召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

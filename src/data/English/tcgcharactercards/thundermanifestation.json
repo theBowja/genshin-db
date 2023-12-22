@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "Thunder Manifestation",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Other Weapons",
+		"Monster"
+	],
+	"storytitle": "\"Lingering Hatred\" Thunder Manifestation",
+	"storytext": "As long as the grudges of the land do not fade, so will the roaring thunder persist.",
+	"source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Thunder Manifestation",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "Thunderous Wingslash",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Deals 1 Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "Strifeful Lightning",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] to the opposing character affected by <color=#FFFFFFFF>$[C124022]</color>. (If there are no eligible opposing characters, deals DMG to the active character instead)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color> to the opposing character affected by <color=#FFFFFFFF>Lightning Rod</color>. (If there are no eligible opposing characters, deals DMG to the active character instead)",
+			"description": "Deals 3 Electro DMG to the opposing character affected by Lightning Rod. (If there are no eligible opposing characters, deals DMG to the active character instead)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "Thundering Shackles",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C124023]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, summons 1 <color=#FFFFFFFF>Thundering Shackles</color>.",
+			"description": "Deals 2 Electro DMG, summons 1 Thundering Shackles.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "Lightning Probe",
+			"descriptionraw": "(Passive) When battle begins, create a <color=#FFFFFFFF>$[C124021]</color> on the opponent's side of the field.",
+			"descriptionreplaced": "(Passive) When battle begins, create a <color=#FFFFFFFF>Lightning Strike Probe</color> on the opponent's side of the field.",
+			"description": "(Passive) When battle begins, create a Lightning Strike Probe on the opponent's side of the field.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

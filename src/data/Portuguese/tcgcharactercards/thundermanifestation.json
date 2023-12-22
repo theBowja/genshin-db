@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "Manifestação Trovejante",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"storytitle": "Ódio Remanescente - Manifestação Trovejante",
+	"storytext": "Desde que as rivalidades não desapareçam, o trovão persistirá.",
+	"source": "Recompensa por aceitar o Desafio da Taverna na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com Manifestação Trovejante",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "Corte Trovejante das Asas",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>.",
+			"description": "Causa 1 ponto de Dano Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "Devastação do Trovão",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT] aos personagens oponentes afetados por <color=#FFFFFFFF>$[C124022]</color>. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color> aos personagens oponentes afetados por <color=#FFFFFFFF>Conhecimento do Trovão</color>. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"description": "Causa 3 pontos de Dano Electro aos personagens oponentes afetados por Conhecimento do Trovão. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "Correntes do Trovão",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], invoca <color=#FFFFFFFF>$[C124023]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>, invoca <color=#FFFFFFFF>Correntes do Trovão</color>.",
+			"description": "Causa 2 Dano Electro, invoca Correntes do Trovão.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "Sonda Relâmpago",
+			"descriptionraw": "(Passivo) Quando a batalha começa, cria uma <color=#FFFFFFFF>$[C124021]</color> no campo do oponente.",
+			"descriptionreplaced": "(Passivo) Quando a batalha começa, cria uma <color=#FFFFFFFF>Sonda do Golpe do Relâmpago</color> no campo do oponente.",
+			"description": "(Passivo) Quando a batalha começa, cria uma Sonda do Golpe do Relâmpago no campo do oponente.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

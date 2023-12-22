@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Andere Waffen",
+		"Monster"
+	],
+	"storytitle": "Drache des Ostens – Dvalin",
+	"storytext": "„Wie wunderbar es wäre, wenn du deine edle Erscheinung sehen würdest, wie sie über den Himmel gleitet.“\n„Dann würdest du wissen, dass es sich lohnt, um diesen Himmel und diese Erde zu kämpfen.“",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Dvalin in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Querkratzer",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Sturmbombardierung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht dem Ziel den Zustand <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, verleiht dem Ziel den Zustand <color=#FFFFFFFF>Einsturz</color>.",
+			"description": "Verursacht 2 Pkt. Anemo-SCH, verleiht dem Ziel den Zustand Einsturz.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Dvalin-Sintflut",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], $[K53|s1]: <color=#FFFFFFFF>$[S25025]</color> und <color=#FFFFFFFF>$[S25026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Endlose Strömung</color> und <color=#FFFFFFFF>Allerletzte Strömung</color>.",
+			"description": "Verursacht 2 Pkt. Anemo-SCH, bereitet folgende Fähigkeiten vor: Endlose Strömung und Allerletzte Strömung.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht allen inaktiven Figuren des Gegners <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 5 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, verleiht allen inaktiven Figuren des Gegners <color=#FFFFFFFF>Einsturz</color>.",
+			"description": "Verursacht 5 Pkt. Anemo-SCH, verleiht allen inaktiven Figuren des Gegners Einsturz.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Endlose Strömung",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nFügt der nächsten inaktiven Figur deines Gegners $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1] zu und $[K53|s1]: <color=#FFFFFFFF>$[S25026]</color>. (Wenn dein Gegner keine inaktive Figur hat, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nFügt der nächsten inaktiven Figur deines Gegners 1 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color> zu und <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Allerletzte Strömung</color>. (Wenn dein Gegner keine inaktive Figur hat, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nFügt der nächsten inaktiven Figur deines Gegners 1 Pkt. Anemo-SCH zu und bereitet folgende Fähigkeiten vor: Allerletzte Strömung. (Wenn dein Gegner keine inaktive Figur hat, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Allerletzte Strömung",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nFügt der vorigen inaktiven Figur deines Gegners $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1] zu. (Wenn dein Gegner keine inaktive Figur hat, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nFügt der vorigen inaktiven Figur deines Gegners 2 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color> zu. (Wenn dein Gegner keine inaktive Figur hat, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nFügt der vorigen inaktiven Figur deines Gegners 2 Pkt. Anemo-SCH zu. (Wenn dein Gegner keine inaktive Figur hat, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		}
+	]
+}

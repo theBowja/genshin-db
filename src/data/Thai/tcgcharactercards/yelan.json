@@ -1,0 +1,90 @@
+{
+	"id": 1209,
+	"name": "Yelan",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"ธาตุน้ำ",
+		"ธนู",
+		"Liyue"
+	],
+	"storytitle": "กล้วยไม้งามกลางหุบเขา - Yelan",
+	"storytext": "สวรรค์และพิภพล้วนเลื่อนลอย ผู้คนต่างผ่านมาและผ่านไป",
+	"source": "ได้รับหลังจากเชิญ Yelan ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 12091,
+			"name": "Stealthy Bowshot",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12092,
+			"name": "Lingering Lifeline",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย ตัวละครนี้มีจำนวนชั้น <color=#FFFFFFFF>$[C112091]</color> +2",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 3 หน่วย ตัวละครนี้มีจำนวนชั้น <color=#FFFFFFFF>Breakthrough</color> +2",
+			"description": "สร้างความเสียหายน้ำ 3 หน่วย ตัวละครนี้มีจำนวนชั้น Breakthrough +2",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12093,
+			"name": "Depth-Clarion Dice",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และสร้าง <color=#FFFFFFFF>$[C112092]</color>",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 1 หน่วย และสร้าง <color=#FFFFFFFF>Exquisite Throw</color>",
+			"description": "สร้างความเสียหายน้ำ 1 หน่วย และสร้าง Exquisite Throw",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12094,
+			"name": "Breakthrough",
+			"descriptionraw": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับ <color=#FFFFFFFF>$[C112091]</color>",
+			"descriptionreplaced": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับ <color=#FFFFFFFF>Breakthrough</color>",
+			"description": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับ Breakthrough",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

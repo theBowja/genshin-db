@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Otras armas",
+		"Monstruo"
+	],
+	"storytitle": "Dvalin - Dragón del Este",
+	"storytext": "“Si fueras yo, si te hubieras visto surcando el cielo azul con tu hermosa silueta...\nAsí entenderías que vale la pena luchar por este cielo y esta tierra”.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra Dvalin de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Arañazo transversal",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Asolación tempestuosa",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y el personaje objetivo es afectado por <color=#FFFFFFFF>$[C125021|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y el personaje objetivo es afectado por <color=#FFFFFFFF>derrumbamiento</color>.",
+			"description": "Inflige 2 pts. de Daño Anemo y el personaje objetivo es afectado por derrumbamiento.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Flujo de Stormterror",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y $[K53|s2] <color=#FFFFFFFF>$[S25025]</color> y <color=#FFFFFFFF>$[S25026]</color> respectivamente.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y <color=#FFFFFFFF>prepara las habilidades</color> <color=#FFFFFFFF>Flujo perpetuo</color> y <color=#FFFFFFFF>Flujo fenecedor</color> respectivamente.",
+			"description": "Inflige 2 pts. de Daño Anemo y prepara las habilidades Flujo perpetuo y Flujo fenecedor respectivamente.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum finale termini",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y aplica <color=#FFFFFFFF>$[C125021|s1]</color> a todos los personajes enemigos en reserva.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 5 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y aplica <color=#FFFFFFFF>derrumbamiento</color> a todos los personajes enemigos en reserva.",
+			"description": "Inflige 5 pts. de Daño Anemo y aplica derrumbamiento a todos los personajes enemigos en reserva.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Flujo perpetuo",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] al próximo personaje enemigo en reserva y $[K53|s1] <color=#FFFFFFFF>$[S25026]</color>. Si el enemigo no tiene personajes en reserva, el daño se le infligirá al personaje en combate.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 1 pt. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> al próximo personaje enemigo en reserva y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Flujo fenecedor</color>. Si el enemigo no tiene personajes en reserva, el daño se le infligirá al personaje en combate.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 1 pt. de Daño Anemo al próximo personaje enemigo en reserva y prepara la habilidad Flujo fenecedor. Si el enemigo no tiene personajes en reserva, el daño se le infligirá al personaje en combate.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Flujo fenecedor",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] al anterior personaje enemigo en reserva. Si el enemigo no tiene personajes en reserva, el daño se le infligirá al personaje en combate.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> al anterior personaje enemigo en reserva. Si el enemigo no tiene personajes en reserva, el daño se le infligirá al personaje en combate.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 2 pts. de Daño Anemo al anterior personaje enemigo en reserva. Si el enemigo no tiene personajes en reserva, el daño se le infligirá al personaje en combate.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		}
+	]
+}

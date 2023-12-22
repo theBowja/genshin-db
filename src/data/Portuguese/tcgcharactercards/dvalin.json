@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Outras Armas",
+		"Monstro"
+	],
+	"storytitle": "Dragão do Leste - Dvalin",
+	"storytext": "\"Quão maravilhoso seria se você fosse como eu, testemunhando sua nobre forma enquanto voava pelos céus.\"\n\"Então você saberia que esse céu e terra valem a pena serem defendidas.\"",
+	"source": "Recompensa por aceitar o Desafio da Taverna na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com Dvalin",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Corte Dilacerador",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Bombardeio Tempestuoso",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], o personagem alvo é afetado por <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color>, o personagem alvo é afetado por <color=#FFFFFFFF>Colapso Total</color>.",
+			"description": "Causa 2 pontos de Dano Anemo, o personagem alvo é afetado por Colapso Total.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Purificação de Dvalin",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] pontos de $[D__KEY__ELEMENT], então realiza separadamente $[K53]: <color=#FFFFFFFF>$[S25025]</color> e <color=#FFFFFFFF>$[S25026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color>, então realiza separadamente <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Purificação Perpétua</color> e <color=#FFFFFFFF>Purificação Final</color>.",
+			"description": "Causa 2 pontos de Dano Anemo, então realiza separadamente Preparar Habilidade: Purificação Perpétua e Purificação Final.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT]. Aplica <color=#FFFFFFFF>$[C125021]</color> em todos os personagens fora de combate do oponente.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Causa 5 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color>. Aplica <color=#FFFFFFFF>Colapso Total</color> em todos os personagens fora de combate do oponente.",
+			"description": "Causa 5 pontos de Dano Anemo. Aplica Colapso Total em todos os personagens fora de combate do oponente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Purificação Perpétua",
+			"descriptionraw": "(É necessário se preparar por 1 rodada de ação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT] no próximo personagem oponente em espera. Depois disso, $[K53]: <color=#FFFFFFFF>$[S25026]</color>. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(É necessário se preparar por 1 rodada de ação)\\nCausa 1 ponto de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color> no próximo personagem oponente em espera. Depois disso, <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Purificação Final</color>. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"description": "(É necessário se preparar por 1 rodada de ação)\nCausa 1 ponto de Dano Anemo no próximo personagem oponente em espera. Depois disso, Preparar Habilidade: Purificação Final. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Purificação Final",
+			"descriptionraw": "(É necessário se preparar por 1 rodada de ação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT] no personagem oponente anterior em espera. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(É necessário se preparar por 1 rodada de ação)\\nCausa 2 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color> no personagem oponente anterior em espera. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"description": "(É necessário se preparar por 1 rodada de ação)\nCausa 2 pontos de Dano Anemo no personagem oponente anterior em espera. (Caso não existam personagens oponentes elegíveis, causa Dano ao Personagem em Combate)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": []
+		}
+	]
+}

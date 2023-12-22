@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Lynette",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"ธาตุลม",
+		"ดาบ",
+		"Fontaine",
+		"Fatui",
+		"พลังปฐมภูมิ: สสาร"
+	],
+	"storytitle": "เงาฉายงามสง่า - Lynette",
+	"storytext": "มองเงาจันทร์เหนือผืนนที ราตรีใส",
+	"source": "ได้รับหลังจากเชิญ Lynette ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Rapid Ritesword",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Enigmatic Feint",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย เมื่อใช้สกิลนี้เป็นครั้งแรกในเทิร์นนี้ และค่าพลังชีวิตของตัวเองไม่เกิน 8 หน่วย จะฟื้นฟูค่าพลังชีวิตของตัวเอง 2 หน่วย แต่จะได้รับ <color=#FFFFFFFF>$[C115081]</color> ด้วย",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2105}<color=#80FFD7FF>ความเสียหายลม</color> 3 หน่วย เมื่อใช้สกิลนี้เป็นครั้งแรกในเทิร์นนี้ และค่าพลังชีวิตของตัวเองไม่เกิน 8 หน่วย จะฟื้นฟูค่าพลังชีวิตของตัวเอง 2 หน่วย แต่จะได้รับ <color=#FFFFFFFF>Overawing Assault</color> ด้วย",
+			"description": "สร้างความเสียหายลม 3 หน่วย เมื่อใช้สกิลนี้เป็นครั้งแรกในเทิร์นนี้ และค่าพลังชีวิตของตัวเองไม่เกิน 8 หน่วย จะฟื้นฟูค่าพลังชีวิตของตัวเอง 2 หน่วย แต่จะได้รับ Overawing Assault ด้วย",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Magic Trick: Astonishing Shift",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C115082]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2105}<color=#80FFD7FF>ความเสียหายลม</color> 2 หน่วย และเรียก <color=#FFFFFFFF>Bogglecat Box</color>",
+			"description": "สร้างความเสียหายลม 2 หน่วย และเรียก Bogglecat Box",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Lynette",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Anemo",
+		"Espada",
+		"Fontaine",
+		"Fatui",
+		"Arkhe: Ousia"
+	],
+	"storytitle": "Elegância nas Sombras - Lynette",
+	"storytext": "A beleza do firmamento refletida numa lua noturna.",
+	"source": "Recompensa por desafiar Lynette para um duelo na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com ela",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Rapieira Veloz",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Barreira das Sombras",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT]. A primeira vez que esta Habilidade é usada neste Turno, e quando a Vida não é maior que 8, cura o usuário em 2 de Vida caso sua Vida não esteja cheia, mas aplica <color=#FFFFFFFF>$[C115081]</color> ao usuário.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color>. A primeira vez que esta Habilidade é usada neste Turno, e quando a Vida não é maior que 8, cura o usuário em 2 de Vida caso sua Vida não esteja cheia, mas aplica <color=#FFFFFFFF>Assalto Ameaçador</color> ao usuário.",
+			"description": "Causa 3 pontos de Dano Anemo. A primeira vez que esta Habilidade é usada neste Turno, e quando a Vida não é maior que 8, cura o usuário em 2 de Vida caso sua Vida não esteja cheia, mas aplica Assalto Ameaçador ao usuário.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Magia: Transformação Surpreendente",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], invoca <color=#FFFFFFFF>$[C115082]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2105}<color=#80FFD7FF>Dano Anemo</color>, invoca <color=#FFFFFFFF>Caixa Surpresa Miau Miau</color>.",
+			"description": "Causa 2 pontos de Dano Anemo, invoca Caixa Surpresa Miau Miau.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

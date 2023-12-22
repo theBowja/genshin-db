@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anémo",
+		"Autre arme",
+		"Monstre"
+	],
+	"storytitle": "Dragon de l'Est : Dvalin",
+	"storytext": "« En te mettant à ma place, tu aurais pu ressentir à quel point il était beau de te voir voler fièrement dans le ciel bleu.\nTu aurais su que le ciel et la terre sont dignes de protection. »",
+	"source": "Récompense pour avoir accepté un défi de taverne auprès de Prince à La Queue de Chat et remporté la victoire lors d'une partie amicale contre Dvalin",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Lacération transversale",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Bombardement orageux",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique un <color=#FFFFFFFF>$[C125021|s1]</color> au personnage choisi.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> et applique un <color=#FFFFFFFF>effondrement total</color> au personnage choisi.",
+			"description": "Inflige 2 pts de DGT Anémo et applique un effondrement total au personnage choisi.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Ablution de Dvalin",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et $[K53|s2] : <color=#FFFFFFFF>$[S25025]</color> et <color=#FFFFFFFF>$[S25026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> et <color=#FFFFFFFF>prépare séparément les capacités</color> : <color=#FFFFFFFF>Ablution extensive</color> et <color=#FFFFFFFF>Ablution ultime</color>.",
+			"description": "Inflige 2 pts de DGT Anémo et prépare séparément les capacités : Ablution extensive et Ablution ultime.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique un <color=#FFFFFFFF>$[C125021|s1]</color> à tous les personnages adverses en attente.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 5 pts de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> et applique un <color=#FFFFFFFF>effondrement total</color> à tous les personnages adverses en attente.",
+			"description": "Inflige 5 pts de DGT Anémo et applique un effondrement total à tous les personnages adverses en attente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Ablution extensive",
+			"descriptionraw": "(À préparer pendant 1 tour)\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] au prochain personnage adverse en attente et $[K53|s1] : <color=#FFFFFFFF>$[S25026]</color>. (En l'absence de personnage adverse en attente, les DGT sont infligés au personnage actif à la place)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(À préparer pendant 1 tour)\\nInflige 1 pt de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> au prochain personnage adverse en attente et <color=#FFFFFFFF>prépare la capacité</color> : <color=#FFFFFFFF>Ablution ultime</color>. (En l'absence de personnage adverse en attente, les DGT sont infligés au personnage actif à la place)",
+			"description": "(À préparer pendant 1 tour)\nInflige 1 pt de DGT Anémo au prochain personnage adverse en attente et prépare la capacité : Ablution ultime. (En l'absence de personnage adverse en attente, les DGT sont infligés au personnage actif à la place)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Ablution ultime",
+			"descriptionraw": "(À préparer pendant 1 tour)\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] au précédent personnage adverse en attente. (En l'absence de personnage adverse en attente, les DGT sont infligés au personnage actif à la place)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(À préparer pendant 1 tour)\\nInflige 2 pts de {SPRITE_PRESET#2105}<color=#80FFD7FF>DGT Anémo</color> au précédent personnage adverse en attente. (En l'absence de personnage adverse en attente, les DGT sont infligés au personnage actif à la place)",
+			"description": "(À préparer pendant 1 tour)\nInflige 2 pts de DGT Anémo au précédent personnage adverse en attente. (En l'absence de personnage adverse en attente, les DGT sont infligés au personnage actif à la place)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": []
+		}
+	]
+}

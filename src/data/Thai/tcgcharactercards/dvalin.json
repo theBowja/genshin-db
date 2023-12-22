@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ธาตุลม",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"storytitle": "มังกรแห่งตะวันออก - Dvalin",
+	"storytext": "\"ถ้าเจ้าได้มาเป็นข้า และได้เห็นรูปร่างอันสง่างามของเจ้า ที่โผทะยานบนท้องฟ้าสีคราม\"\n\"แล้วเจ้าจะเข้าใจว่าท้องฟ้าและโลกเช่นนี้ ควรค่าแก่การต่อสู้เพื่อให้มันได้มา\"",
+	"source": "ได้รับหลังจากเอาชนะ Dvalin ระดับความยากฉันมิตร จากการดูเอลในร้านเหล้าที่ Prince ใน Cat's Tail",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Lacerating Slash",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Tempestuous Barrage",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และทำให้ตัวละครเป้าหมายได้รับ <color=#FFFFFFFF>$[C125021]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2105}<color=#80FFD7FF>ความเสียหายลม</color> 2 หน่วย และทำให้ตัวละครเป้าหมายได้รับ <color=#FFFFFFFF>Total Collapse</color>",
+			"description": "สร้างความเสียหายลม 2 หน่วย และทำให้ตัวละครเป้าหมายได้รับ Total Collapse",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Dvalin's Cleansing",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย จากนั้นจะดำเนินการ$[K53] <color=#FFFFFFFF>$[S25025]</color> และ <color=#FFFFFFFF>$[S25026]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2105}<color=#80FFD7FF>ความเสียหายลม</color> 2 หน่วย จากนั้นจะดำเนินการ<color=#FFFFFFFF>เตรียมสกิล</color> <color=#FFFFFFFF>Perpetual Cleansing</color> และ <color=#FFFFFFFF>Ultimate Cleansing</color>",
+			"description": "สร้างความเสียหายลม 2 หน่วย จากนั้นจะดำเนินการเตรียมสกิล Perpetual Cleansing และ Ultimate Cleansing",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวละครนอกสนามของฝ่ายศัตรูทั้งหมด จะได้รับ <color=#FFFFFFFF>$[C125021]</color>",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2105}<color=#80FFD7FF>ความเสียหายลม</color> 5 หน่วย และตัวละครนอกสนามของฝ่ายศัตรูทั้งหมด จะได้รับ <color=#FFFFFFFF>Total Collapse</color>",
+			"description": "สร้างความเสียหายลม 5 หน่วย และตัวละครนอกสนามของฝ่ายศัตรูทั้งหมด จะได้รับ Total Collapse",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Perpetual Cleansing",
+			"descriptionraw": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง $[D__KEY__ELEMENT] แก่ตัวละครนอกสนามตัวถัดไปของฝ่ายตรงข้าม $[D__KEY__DAMAGE] หน่วย จากนั้นจะ$[K53]: <color=#FFFFFFFF>$[S25026]</color> (เมื่อศัตรูไม่มีตัวละครนอกสนาม จะเปลี่ยนเป็นการสร้างความเสียหายให้แก่ตัวละครที่เข้าต่อสู้แทน)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง {SPRITE_PRESET#2105}<color=#80FFD7FF>ความเสียหายลม</color> แก่ตัวละครนอกสนามตัวถัดไปของฝ่ายตรงข้าม 1 หน่วย จากนั้นจะ<color=#FFFFFFFF>เตรียมสกิล</color>: <color=#FFFFFFFF>Ultimate Cleansing</color> (เมื่อศัตรูไม่มีตัวละครนอกสนาม จะเปลี่ยนเป็นการสร้างความเสียหายให้แก่ตัวละครที่เข้าต่อสู้แทน)",
+			"description": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\nสร้าง ความเสียหายลม แก่ตัวละครนอกสนามตัวถัดไปของฝ่ายตรงข้าม 1 หน่วย จากนั้นจะเตรียมสกิล: Ultimate Cleansing (เมื่อศัตรูไม่มีตัวละครนอกสนาม จะเปลี่ยนเป็นการสร้างความเสียหายให้แก่ตัวละครที่เข้าต่อสู้แทน)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Ultimate Cleansing",
+			"descriptionraw": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง $[D__KEY__ELEMENT] แก่ตัวละครนอกสนามตัวก่อนหน้าของฝ่ายตรงข้าม $[D__KEY__DAMAGE] หน่วย (เมื่อศัตรูไม่มีตัวละครนอกสนาม จะเปลี่ยนเป็นการสร้างความเสียหายให้แก่ตัวละครที่เข้าต่อสู้แทน)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง {SPRITE_PRESET#2105}<color=#80FFD7FF>ความเสียหายลม</color> แก่ตัวละครนอกสนามตัวก่อนหน้าของฝ่ายตรงข้าม 2 หน่วย (เมื่อศัตรูไม่มีตัวละครนอกสนาม จะเปลี่ยนเป็นการสร้างความเสียหายให้แก่ตัวละครที่เข้าต่อสู้แทน)",
+			"description": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\nสร้าง ความเสียหายลม แก่ตัวละครนอกสนามตัวก่อนหน้าของฝ่ายตรงข้าม 2 หน่วย (เมื่อศัตรูไม่มีตัวละครนอกสนาม จะเปลี่ยนเป็นการสร้างความเสียหายให้แก่ตัวละครที่เข้าต่อสู้แทน)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": []
+		}
+	]
+}

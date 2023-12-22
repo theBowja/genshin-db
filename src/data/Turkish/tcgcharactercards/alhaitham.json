@@ -1,0 +1,80 @@
+{
+	"id": 1706,
+	"name": "Alhaitham",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Doğa",
+		"Kılıç",
+		"Sumeru"
+	],
+	"storytitle": "\"Uyarı Talimatı\" Alhaitham",
+	"storytext": "Öğrenmek, düşünmek ve işleri halletmek.",
+	"source": "Alhaitham'ı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 17061,
+			"name": "Sürükleyici Tartışma",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17062,
+			"name": "Evrensellik: Ayna Teorisi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karakter <color=#FFFFFFFF>$[C117061]</color> kazanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2107}<color=#7EC236FF>Doğa Hasarı</color> verir ve bu karakter <color=#FFFFFFFF>Hafif Keski Ayna</color> kazanır.",
+			"description": "2 Doğa Hasarı verir ve bu karakter Hafif Keski Ayna kazanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17063,
+			"name": "Bağlam Alanı: Görüntü Zinciri",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, <color=#FFFFFFFF>$[C117061]</color> harcayarak <color=#FFFFFFFF>$[C117061]</color> tarafından harcanan $[K4] miktarına göre Hasar bonusu verir.\\n<color=#FFFFFFFF>$[C117061]</color> tarafından harcanan $[K4] 0/1/2 ise bu karaktere 3/2/1 $[K4] bulunan <color=#FFFFFFFF>$[C117061]</color> uygulanır.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2107}<color=#7EC236FF>Doğa Hasarı</color> verir, <color=#FFFFFFFF>Hafif Keski Ayna</color> harcayarak <color=#FFFFFFFF>Hafif Keski Ayna</color> tarafından harcanan <color=#FFFFFFFF>Tur Süresi</color> miktarına göre Hasar bonusu verir.\\n<color=#FFFFFFFF>Hafif Keski Ayna</color> tarafından harcanan <color=#FFFFFFFF>Tur Süresi</color> 0/1/2 ise bu karaktere 3/2/1 <color=#FFFFFFFF>Tur Süresi</color> bulunan <color=#FFFFFFFF>Hafif Keski Ayna</color> uygulanır.",
+			"description": "4 Doğa Hasarı verir, Hafif Keski Ayna harcayarak Hafif Keski Ayna tarafından harcanan Tur Süresi miktarına göre Hasar bonusu verir.\nHafif Keski Ayna tarafından harcanan Tur Süresi 0/1/2 ise bu karaktere 3/2/1 Tur Süresi bulunan Hafif Keski Ayna uygulanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

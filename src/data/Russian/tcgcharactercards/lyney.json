@@ -1,0 +1,101 @@
+{
+	"id": 1310,
+	"name": "Лини",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"Пиро",
+		"Стрелковое",
+		"Фонтейн",
+		"Фатуи",
+		"Архэ: Пневма"
+	],
+	"storytitle": "«Зрелищные фантасмагории» Лини",
+	"storytext": "Эти цветы в зеркале... Для кого они?",
+	"source": "Награда за приглашение Лини в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 13101,
+			"name": "Форсирование карты с подменой",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13102,
+			"name": "Стрела-реквизит",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., призывает помощника «<color=#FFFFFFFF>$[C113101]</color>», накапливается <color=#FFFFFFFF>$[C113102]</color> (1 уровень).\\nЕсли у этого персонажа не менее 6 HP, он получает $[K5], 1 ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 2 ед., призывает помощника «<color=#FFFFFFFF>Хохочущий котошляп</color>», накапливается <color=#FFFFFFFF>Избыточный реквизит</color> (1 уровень).\\nЕсли у этого персонажа не менее 6 HP, он получает <color=#FFFFFFFF>Проникающий урон</color>, 1 ед.",
+			"description": "Наносит Пиро урон, 2 ед., призывает помощника «Хохочущий котошляп», накапливается Избыточный реквизит (1 уровень).\nЕсли у этого персонажа не менее 6 HP, он получает Проникающий урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13103,
+			"name": "Ошеломляющие огни",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед.",
+			"description": "Наносит Пиро урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13104,
+			"name": "Великий фокус: Парад чудес",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., призывается <color=#FFFFFFFF>$[C113101]</color>, накапливается <color=#FFFFFFFF>$[C113102]</color> (1 уровень).",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед., призывается <color=#FFFFFFFF>Хохочущий котошляп</color>, накапливается <color=#FFFFFFFF>Избыточный реквизит</color> (1 уровень).",
+			"description": "Наносит Пиро урон, 3 ед., призывается Хохочущий котошляп, накапливается Избыточный реквизит (1 уровень).",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

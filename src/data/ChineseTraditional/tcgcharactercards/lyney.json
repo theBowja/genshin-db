@@ -1,0 +1,101 @@
+{
+	"id": 1310,
+	"name": "林尼",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"火元素",
+		"弓",
+		"楓丹",
+		"愚人眾",
+		"始基力：芒性"
+	],
+	"storytitle": "惑光幻戲·林尼",
+	"storytext": "鏡中捧花，贈予何人。",
+	"source": "在貓尾酒館中邀請林尼進行對局，在友好對局難度中獲得勝利後獲得",
+	"skills": [
+		{
+			"id": 13101,
+			"name": "迫牌易位式",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理傷害</color>。",
+			"description": "造成2點物理傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13102,
+			"name": "隱具魔術箭",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，召喚<color=#FFFFFFFF>$[C113101]</color>，累積1層<color=#FFFFFFFF>$[C113102]</color>。\\n如果本角色生命值至少為6，則對自身造成1點$[K5]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>，召喚<color=#FFFFFFFF>怪笑貓貓帽</color>，累積1層<color=#FFFFFFFF>隱具餘數</color>。\\n如果本角色生命值至少為6，則對自身造成1點<color=#FFFFFFFF>穿透傷害</color>。",
+			"description": "造成2點火元素傷害，召喚怪笑貓貓帽，累積1層隱具餘數。\n如果本角色生命值至少為6，則對自身造成1點穿透傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13103,
+			"name": "眩惑光戲法",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>。",
+			"description": "造成3點火元素傷害。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13104,
+			"name": "大魔術·靈跡巡遊",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，召喚<color=#FFFFFFFF>$[C113101]</color>，累積1層<color=#FFFFFFFF>$[C113102]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>，召喚<color=#FFFFFFFF>怪笑貓貓帽</color>，累積1層<color=#FFFFFFFF>隱具餘數</color>。",
+			"description": "造成3點火元素傷害，召喚怪笑貓貓帽，累積1層隱具餘數。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

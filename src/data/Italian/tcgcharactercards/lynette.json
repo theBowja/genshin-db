@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Lynette",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Anemo",
+		"Spada",
+		"Fontaine",
+		"Fatui",
+		"Archè: Ousia"
+	],
+	"storytitle": "Lynette, Eleganza nell'ombra",
+	"storytext": "Il firmamento intravisto in un riflesso di luna.",
+	"source": "Ricompensa ottenuta sfidando Lynette a duello alla Coda di Gatto e battendola in un duello amichevole",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Spada rituale",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Simulazione enigmatica",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. La prima volta che questa abilità viene usata in questo turno, se i PS del personaggio sono 8 o meno, ripristina 2 PS di questo personaggio e viene applicato <color=#FFFFFFFF>$[C115081]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color>. La prima volta che questa abilità viene usata in questo turno, se i PS del personaggio sono 8 o meno, ripristina 2 PS di questo personaggio e viene applicato <color=#FFFFFFFF>Assalto travolgente</color>.",
+			"description": "Infligge 3 DAN da Anemo. La prima volta che questa abilità viene usata in questo turno, se i PS del personaggio sono 8 o meno, ripristina 2 PS di questo personaggio e viene applicato Assalto travolgente.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Gioco di prestigio: Trasmutazione mirabolante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], invoca 1 <color=#FFFFFFFF>$[C115082]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color>, invoca 1 <color=#FFFFFFFF>Scatola Stravagatto</color>.",
+			"description": "Infligge 2 DAN da Anemo, invoca 1 Scatola Stravagatto.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

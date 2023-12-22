@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Other Weapons",
+		"Monster"
+	],
+	"storytitle": "\"Dragon of the East\" Dvalin",
+	"storytext": "\"How wonderful it would have been if you were as I, witnessing your noble, beautiful form as you soared through the blue sky.\"\n\"Then you would know that this sky and this earth are both things worth fighting for.\"",
+	"source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Dvalin",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Lacerating Slash",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Tempestuous Barrage",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. The target character receives <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>. The target character receives <color=#FFFFFFFF>Total Collapse</color>.",
+			"description": "Deals 2 Anemo DMG. The target character receives Total Collapse.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Dvalin's Cleansing",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and then separately performs \"$[K53]\" for <color=#FFFFFFFF>$[S25025]</color> and <color=#FFFFFFFF>$[S25026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color> and then separately performs \"<color=#FFFFFFFF>Prepare Skill</color>\" for <color=#FFFFFFFF>Perpetual Cleansing</color> and <color=#FFFFFFFF>Ultimate Cleansing</color>.",
+			"description": "Deals 2 Anemo DMG and then separately performs \"Prepare Skill\" for Perpetual Cleansing and Ultimate Cleansing.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Applies <color=#FFFFFFFF>$[C125021]</color> to all opposing standby characters.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Deals 5 {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>. Applies <color=#FFFFFFFF>Total Collapse</color> to all opposing standby characters.",
+			"description": "Deals 5 Anemo DMG. Applies Total Collapse to all opposing standby characters.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Perpetual Cleansing",
+			"descriptionraw": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] to the next opposing character on standby. After this, $[K53]: <color=#FFFFFFFF>$[S25026]</color>. (If there are no opposing characters on standby, deals DMG to active character instead)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(Prepare for 1 turn)\\nDeals 1 {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color> to the next opposing character on standby. After this, <color=#FFFFFFFF>Prepare Skill</color>: <color=#FFFFFFFF>Ultimate Cleansing</color>. (If there are no opposing characters on standby, deals DMG to active character instead)",
+			"description": "(Prepare for 1 turn)\nDeals 1 Anemo DMG to the next opposing character on standby. After this, Prepare Skill: Ultimate Cleansing. (If there are no opposing characters on standby, deals DMG to active character instead)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Ultimate Cleansing",
+			"descriptionraw": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] to the previous opposing character on standby. (If there are no opposing characters on standby, deals DMG to the active character instead)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(Prepare for 1 turn)\\nDeals 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color> to the previous opposing character on standby. (If there are no opposing characters on standby, deals DMG to the active character instead)",
+			"description": "(Prepare for 1 turn)\nDeals 2 Anemo DMG to the previous opposing character on standby. (If there are no opposing characters on standby, deals DMG to the active character instead)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		}
+	]
+}

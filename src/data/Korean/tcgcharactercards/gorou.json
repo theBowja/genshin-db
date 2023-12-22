@@ -1,0 +1,80 @@
+{
+	"id": 1606,
+	"name": "고로",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"바위 원소",
+		"활",
+		"이나즈마"
+	],
+	"storytitle": "견족의 전사·고로",
+	"storytext": "군대를 이끄는 충실한 대장!",
+	"source": "캣테일 술집에서 고로 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 16061,
+			"name": "야수 이빨 화살",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16062,
+			"name": "이누자카 멍멍 방원진",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116061]</color>을 생성한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>대장의 깃발</color>을 생성한다.",
+			"description": "바위 원소 피해를 2pt 주고 대장의 깃발을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16063,
+			"name": "야수 이빨 돌격형 승전법",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116061]</color>을 생성한 후 <color=#FFFFFFFF>$[C116062]</color>을 소환한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>대장의 깃발</color>을 생성한 후 <color=#FFFFFFFF>대장의 위용</color>을 소환한다.",
+			"description": "바위 원소 피해를 2pt 주고 대장의 깃발을 생성한 후 대장의 위용을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

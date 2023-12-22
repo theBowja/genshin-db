@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "리넷",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"바람 원소",
+		"한손검",
+		"폰타인",
+		"우인단",
+		"아르케의 힘: 우시아"
+	],
+	"storytitle": "그림자 속 우아한 걸음·리넷",
+	"storytext": "물에 비친 달빛",
+	"source": "캣테일 술집에서 리넷 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "신속한 예식 검술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "그림자 은신술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 이번 턴에 처음으로 이 스킬을 사용하고 자신의 HP가 8pt 이하이면 자신의 HP를 2pt 치유하고 <color=#FFFFFFFF>$[C115081]</color>를 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 3pt 준다. 이번 턴에 처음으로 이 스킬을 사용하고 자신의 HP가 8pt 이하이면 자신의 HP를 2pt 치유하고 <color=#FFFFFFFF>기습의 여파</color>를 부착한다.",
+			"description": "바람 원소 피해를 3pt 준다. 이번 턴에 처음으로 이 스킬을 사용하고 자신의 HP가 8pt 이하이면 자신의 HP를 2pt 치유하고 기습의 여파를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "마술·놀라운 변화",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C115082]</color>를 소환한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>깜짝 고양이 모자</color>를 소환한다.",
+			"description": "바람 원소 피해를 2pt 주고 깜짝 고양이 모자를 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

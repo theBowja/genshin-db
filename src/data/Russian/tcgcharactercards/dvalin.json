@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Двалин",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Анемо",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "«Дракон Востока» Двалин",
+	"storytext": "«Как было бы здорово, если бы ты моими глазами видел себя, прекрасного и гордого, парящего в голубой вышине.\nТогда бы ты понял, что за это небо и эту землю стоит сражаться».",
+	"source": "Награда за принятие испытания в «Кошкином хвосте» и победу над Двалином в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Рваная рана",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Шквальное заграждение",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Цель получает <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 2 ед. Цель получает <color=#FFFFFFFF>Коллапс</color>.",
+			"description": "Наносит Анемо урон, 2 ед. Цель получает Коллапс.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Очищение Двалина",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S25025]</color> и <color=#FFFFFFFF>$[S25026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 2 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Вечное очищение</color> и <color=#FFFFFFFF>Финальная очистка</color>.",
+			"description": "Наносит Анемо урон, 2 ед., после чего начинается Подготовка навыка: Вечное очищение и Финальная очистка.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Всем неактивным персонажам противника достаётся <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 5 ед. Всем неактивным персонажам противника достаётся <color=#FFFFFFFF>Коллапс</color>.",
+			"description": "Наносит Анемо урон, 5 ед. Всем неактивным персонажам противника достаётся Коллапс.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Вечное очищение",
+			"descriptionraw": "(На подготовку требуется 1 раунд)\\nСледующий неактивный персонаж противника получает $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53] <color=#FFFFFFFF>$[S25026]</color>. Если у противника остался только активный персонаж, он и получает урон.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(На подготовку требуется 1 раунд)\\nСледующий неактивный персонаж противника получает {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 1 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color> <color=#FFFFFFFF>Финальная очистка</color>. Если у противника остался только активный персонаж, он и получает урон.",
+			"description": "(На подготовку требуется 1 раунд)\nСледующий неактивный персонаж противника получает Анемо урон, 1 ед., после чего начинается Подготовка навыка Финальная очистка. Если у противника остался только активный персонаж, он и получает урон.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Финальная очистка",
+			"descriptionraw": "(На подготовку требуется 1 раунд)\\nПредыдущий неактивный персонаж противника получает $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если у противника остался только активный персонаж, он и получает урон.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(На подготовку требуется 1 раунд)\\nПредыдущий неактивный персонаж противника получает {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 2 ед. Если у противника остался только активный персонаж, он и получает урон.",
+			"description": "(На подготовку требуется 1 раунд)\nПредыдущий неактивный персонаж противника получает Анемо урон, 2 ед. Если у противника остался только активный персонаж, он и получает урон.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": []
+		}
+	]
+}

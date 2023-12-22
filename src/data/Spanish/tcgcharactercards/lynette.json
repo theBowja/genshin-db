@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Lynette",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Anemo",
+		"Espada ligera",
+		"Fontaine",
+		"Fatui",
+		"Arjé: ousía"
+	],
+	"storytitle": "Lynette - La Elegancia de las Sombras",
+	"storytext": "El firmamento de la noche se vislumbra en el reflejo de la luna.",
+	"source": "Se obtiene tras retar y ganar a Lynette en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Estocada veloz",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Ahora me ves...",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si usa esta habilidad por primera vez en la ronda actual y tiene 8 pts. de Vida o menos, obtiene Vida +2, pero también le aplica <color=#FFFFFFFF>$[C115081|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>. Si usa esta habilidad por primera vez en la ronda actual y tiene 8 pts. de Vida o menos, obtiene Vida +2, pero también le aplica <color=#FFFFFFFF>asalto intimidante</color>.",
+			"description": "Inflige 3 pts. de Daño Anemo. Si usa esta habilidad por primera vez en la ronda actual y tiene 8 pts. de Vida o menos, obtiene Vida +2, pero también le aplica asalto intimidante.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Truco: Desvío de atención",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C115082|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y crea una <color=#FFFFFFFF>michicaja sorpresa</color>.",
+			"description": "Inflige 2 pts. de Daño Anemo y crea una michicaja sorpresa.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

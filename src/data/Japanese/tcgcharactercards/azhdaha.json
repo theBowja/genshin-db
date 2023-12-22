@@ -1,0 +1,90 @@
+{
+	"id": 2602,
+	"name": "若陀龍王",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"岩元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "古岩龍祖·若陀龍王",
+	"storytext": "鎖の振動と巨龍の轟きが、山々の間に響き渡ったという。",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、若陀龍王に挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 26021,
+			"name": "砕岩衝撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26022,
+			"name": "威厳に満ちた気配",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。結晶反応を起こした場合、キャラは$[K1012]。\\n今回のスキル発動でキャラが元素の力を吸収しなかった場合、<color=#FFFFFFFF>$[C126022]</color>を付与する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を3与える。結晶反応を起こした場合、キャラは<color=#FFFFFFFF>対応元素の力を吸収する</color>。\\n今回のスキル発動でキャラが元素の力を吸収しなかった場合、<color=#FFFFFFFF>磐岩百相·元素凝晶</color>を付与する。",
+			"description": "岩元素ダメージを3与える。結晶反応を起こした場合、キャラは対応元素の力を吸収する。\n今回のスキル発動でキャラが元素の力を吸収しなかった場合、磐岩百相·元素凝晶を付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26024,
+			"name": "山崩陣滅",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。吸収した元素が1種類につき、このダメージ+1。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を4与える。吸収した元素が1種類につき、このダメージ+1。",
+			"description": "岩元素ダメージを4与える。吸収した元素が1種類につき、このダメージ+1。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26025,
+			"name": "磐岩百相",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C126021]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>磐岩百相·元素吸収</color>が付与される。",
+			"description": "【固有】戦闘開始時、磐岩百相·元素吸収が付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

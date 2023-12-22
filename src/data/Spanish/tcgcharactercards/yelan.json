@@ -1,0 +1,90 @@
+{
+	"id": 1209,
+	"name": "Yelan",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Hydro",
+		"Arco",
+		"Liyue"
+	],
+	"storytitle": "Yelan - La Orquídea del Valle",
+	"storytext": "En este ancho y vasto mundo, ella viaja sola con total libertad.",
+	"source": "Se obtiene tras retar y ganar a Yelan en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 12091,
+			"name": "Flecha subrepticia",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12092,
+			"name": "Atadura salvavidas",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene cargas de <color=#FFFFFFFF>$[C112091|s1]</color> +2.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y este personaje obtiene cargas de <color=#FFFFFFFF>irrupción</color> +2.",
+			"description": "Inflige 3 pts. de Daño Hydro y este personaje obtiene cargas de irrupción +2.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12093,
+			"name": "Dado clarividente",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C112092|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y crea un <color=#FFFFFFFF>dado intrincado</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro y crea un dado intrincado.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12094,
+			"name": "Irrupción",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, este personaje obtiene el estado de <color=#FFFFFFFF>$[C112091|s1]</color>.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, este personaje obtiene el estado de <color=#FFFFFFFF>irrupción</color>.",
+			"description": "Pasiva: cuando comienza el duelo, este personaje obtiene el estado de irrupción.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

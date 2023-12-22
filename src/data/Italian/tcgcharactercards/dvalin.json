@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Anemo",
+		"Altre armi",
+		"Mostro"
+	],
+	"storytitle": "Dvalin, Drago d'Oriente",
+	"storytext": "\"Che meraviglia se tu fossi come me, che sono testimone della tua nobile e bellissima forma mentre ti libri nel cielo azzurro, allora sapresti che vale la pena lottare per questo cielo e per questa terra.\"",
+	"source": "Ricompensa ottenuta accettando la sfida della taverna alla Coda di Gatto e battendo Dvalin in un duello amichevole",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Sferzata lacerante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Barriera tempestosa",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], il personaggio bersaglio subisce <color=#FFFFFFFF>$[C125021]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color>, il personaggio bersaglio subisce <color=#FFFFFFFF>Collasso totale</color>.",
+			"description": "Infligge 2 DAN da Anemo, il personaggio bersaglio subisce Collasso totale.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Flusso purificatore di Dvalin",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] e poi, separatamente, $[K53] per <color=#FFFFFFFF>$[S25025]</color> e <color=#FFFFFFFF>$[S25026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color> e poi, separatamente, <color=#FFFFFFFF>Prepara abilità</color> per <color=#FFFFFFFF>Purificazione perpetua</color> e <color=#FFFFFFFF>Purificazione assoluta</color>.",
+			"description": "Infligge 2 DAN da Anemo e poi, separatamente, Prepara abilità per Purificazione perpetua e Purificazione assoluta.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Applica <color=#FFFFFFFF>$[C125021]</color> a tutti i personaggi avversari inattivi.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Infligge 5 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color>. Applica <color=#FFFFFFFF>Collasso totale</color> a tutti i personaggi avversari inattivi.",
+			"description": "Infligge 5 DAN da Anemo. Applica Collasso totale a tutti i personaggi avversari inattivi.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Purificazione perpetua",
+			"descriptionraw": "(Prepara per 1 turno)\\nInfligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] al personaggio inattivo avversario successivo. Dopodiché, $[K53]: <color=#FFFFFFFF>$[S25026]</color> (se non ci sono personaggi inattivi avversari, infligge DAN al personaggio attivo avversario).",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(Prepara per 1 turno)\\nInfligge 1 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color> al personaggio inattivo avversario successivo. Dopodiché, <color=#FFFFFFFF>Prepara abilità</color>: <color=#FFFFFFFF>Purificazione assoluta</color> (se non ci sono personaggi inattivi avversari, infligge DAN al personaggio attivo avversario).",
+			"description": "(Prepara per 1 turno)\nInfligge 1 DAN da Anemo al personaggio inattivo avversario successivo. Dopodiché, Prepara abilità: Purificazione assoluta (se non ci sono personaggi inattivi avversari, infligge DAN al personaggio attivo avversario).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Purificazione assoluta",
+			"descriptionraw": "(Prepara per 1 turno)\\nInfligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] al personaggio inattivo avversario precedente (se non ci sono personaggi avversari inattivi, infligge DAN al personaggio avversario attivo).",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(Prepara per 1 turno)\\nInfligge 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>DAN da Anemo</color> al personaggio inattivo avversario precedente (se non ci sono personaggi avversari inattivi, infligge DAN al personaggio avversario attivo).",
+			"description": "(Prepara per 1 turno)\nInfligge 2 DAN da Anemo al personaggio inattivo avversario precedente (se non ci sono personaggi avversari inattivi, infligge DAN al personaggio avversario attivo).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": []
+		}
+	]
+}

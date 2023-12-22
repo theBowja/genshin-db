@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "Verkörperung des Donners",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"storytitle": "Nachklingender Groll – Verkörperung des Donners",
+	"storytext": "Solange der Groll des Landes nicht vergeht, wird auch der tosende Donner nicht aufhören.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Verkörperung des Donners in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "Donnernder Flügelschlag",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Elektro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "Überwältige Blitzwand",
+			"descriptionraw": "Fügt der von <color=#FFFFFFFF>$[C124022]</color> betroffenen Figur des Gegners $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1] zu. (Erfüllt keine Figur des Gegners die Bedingung, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Fügt der von <color=#FFFFFFFF>Kenntnis des Blitzes</color> betroffenen Figur des Gegners 3 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color> zu. (Erfüllt keine Figur des Gegners die Bedingung, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"description": "Fügt der von Kenntnis des Blitzes betroffenen Figur des Gegners 3 Pkt. Elektro-SCH zu. (Erfüllt keine Figur des Gegners die Bedingung, wird seiner aktiven Figur dieser SCH zugefügt.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "Donnernde Fesseln",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C124023]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Donnernde Fesseln</color>.",
+			"description": "Verursacht 2 Pkt. Elektro-SCH, erschafft 1 Donnernde Fesseln.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "Kenntnis des Donners",
+			"descriptionraw": "Passiv – Erschafft zu Beginn des Kampfes auf dem Feld des Gegners 1 <color=#FFFFFFFF>$[C124021]</color>.",
+			"descriptionreplaced": "Passiv – Erschafft zu Beginn des Kampfes auf dem Feld des Gegners 1 <color=#FFFFFFFF>Blitzsonde</color>.",
+			"description": "Passiv – Erschafft zu Beginn des Kampfes auf dem Feld des Gegners 1 Blitzsonde.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 1209,
+	"name": "야란",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"물 원소",
+		"활",
+		"리월"
+	],
+	"storytitle": "유곡에 피어난 난초·야란",
+	"storytext": "아득한 세상을 자유롭게 오고 가는 유객",
+	"source": "캣테일 술집에서 야란 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 12091,
+			"name": "빛을 감춘 활",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12092,
+			"name": "뒤얽힌 생명줄",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 이 캐릭터의 <color=#FFFFFFFF>$[C112091]</color> 스택+2",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 3pt 주고 이 캐릭터의 <color=#FFFFFFFF>타파</color> 스택+2",
+			"description": "물 원소 피해를 3pt 주고 이 캐릭터의 타파 스택+2",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12093,
+			"name": "심오하고 영롱한 주사위",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112092]</color>을 생성한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 주고 <color=#FFFFFFFF>던져진 영롱</color>을 생성한다.",
+			"description": "물 원소 피해를 1pt 주고 던져진 영롱을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12094,
+			"name": "타파",
+			"descriptionraw": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C112091]</color>가 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>타파</color>가 부착된다.",
+			"description": "[패시브] 전투 시작 시, 시작부터 타파가 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

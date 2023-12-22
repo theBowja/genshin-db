@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "雷音権現",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "残されし怨恨·雷音権現",
+	"storytext": "大地に晴らせぬ怨恨がある限り、雷鳴も響き続けるだろう。",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、雷音権現に挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "雷霆の翼斬り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。",
+			"description": "雷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "雷壁傾斜",
+			"descriptionraw": "<color=#FFFFFFFF>$[C124022]</color>が付与されている相手のキャラに$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。（相手に条件を満たすキャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>雷鳴探知</color>が付与されている相手のキャラに{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。（相手に条件を満たすキャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"description": "雷鳴探知が付与されている相手のキャラに雷元素ダメージを3与える。（相手に条件を満たすキャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "轟雷禁錮",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C124023]</color>を召喚する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を2与え、<color=#FFFFFFFF>轟雷禁錮</color>を召喚する。",
+			"description": "雷元素ダメージを2与え、轟雷禁錮を召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "雷霆探知",
+			"descriptionraw": "【固有】戦闘開始時、相手のフィールドに<color=#FFFFFFFF>$[C124021]</color>を生成する。",
+			"descriptionreplaced": "【固有】戦闘開始時、相手のフィールドに<color=#FFFFFFFF>雷霆探針</color>を生成する。",
+			"description": "【固有】戦闘開始時、相手のフィールドに雷霆探針を生成する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

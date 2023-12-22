@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "リネット",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"風元素",
+		"片手剣",
+		"フォンテーヌ",
+		"ファデュイ",
+		"アルケー：ウーシア"
+	],
+	"storytitle": "綺影で魅せるエレガンス·リネット",
+	"storytext": "水中の輪郭を窺い、月影を見透かす。",
+	"source": "キャッツテールでリネットを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "ラピッド·レイピア",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "エニグマティック·フェイント",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。本ラウンドでこのスキルを初めて発動する、かつ自身のHPが8以下の場合、自身のHPを2回復する。ただし、<color=#FFFFFFFF>$[C115081]</color>が付与される。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与える。本ラウンドでこのスキルを初めて発動する、かつ自身のHPが8以下の場合、自身のHPを2回復する。ただし、<color=#FFFFFFFF>襲撃の余威</color>が付与される。",
+			"description": "風元素ダメージを3与える。本ラウンドでこのスキルを初めて発動する、かつ自身のHPが8以下の場合、自身のHPを2回復する。ただし、襲撃の余威が付与される。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "魔術·アストニシングシフト",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115082]</color>を召喚する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与え、<color=#FFFFFFFF>ビックラキャット·ボックス</color>を召喚する。",
+			"description": "風元素ダメージを2与え、ビックラキャット·ボックスを召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "Manifestazione del tuono",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Altre armi",
+		"Mostro"
+	],
+	"storytitle": "Manifestazione del tuono, Odio persistente",
+	"storytext": "Fintanto che i rancori della terra non cesseranno, i ruggenti tuoni perdureranno.",
+	"source": "Ricompensa ottenuta accettando la sfida della taverna alla Coda di Gatto e battendo la Manifestazione del tuono in un duello amichevole",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "Colpo d'ala tonante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>.",
+			"description": "Infligge 1 DAN da Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "Lampo di guerra",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] al personaggio avversario affetto da <color=#FFFFFFFF>$[C124022]</color> (se non ci sono bersagli validi, infligge DAN al personaggio attivo).",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color> al personaggio avversario affetto da <color=#FFFFFFFF>Parafulmine</color> (se non ci sono bersagli validi, infligge DAN al personaggio attivo).",
+			"description": "Infligge 3 DAN da Electro al personaggio avversario affetto da Parafulmine (se non ci sono bersagli validi, infligge DAN al personaggio attivo).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "Prigione fulminante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], invoca 1 <color=#FFFFFFFF>$[C124023]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>, invoca 1 <color=#FFFFFFFF>Prigione fulminante</color>.",
+			"description": "Infligge 2 DAN da Electro, invoca 1 Prigione fulminante.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "Attira fulmini",
+			"descriptionraw": "(Passivo) All'inizio del duello, crea 1 <color=#FFFFFFFF>$[C124021] </color> sul lato dell'avversario.",
+			"descriptionreplaced": "(Passivo) All'inizio del duello, crea 1 <color=#FFFFFFFF>Sonda per fulmini </color> sul lato dell'avversario.",
+			"description": "(Passivo) All'inizio del duello, crea 1 Sonda per fulmini  sul lato dell'avversario.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		}
+	]
+}

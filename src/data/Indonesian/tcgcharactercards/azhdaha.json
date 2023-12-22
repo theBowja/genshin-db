@@ -1,0 +1,90 @@
+{
+	"id": 2602,
+	"name": "Azhdaha",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Senjata Lain",
+		"Monster"
+	],
+	"storytitle": "\"Ancient Stone Dragon Ancestor\" Azhdaha",
+	"storytext": "Getaran amarah yang samar dari naga di bawah tanah ini bergema melalui perut pegunungan bagaikan sebuah kenangan dari zaman dulu.",
+	"source": "Didapatkan setelah menerima Tantangan Tavern di Cat's Tail dan menang dalam Pertandingan Persahabatan melawan Azhdaha",
+	"skills": [
+		{
+			"id": 26021,
+			"name": "Sundering Charge",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26022,
+			"name": "Aura of Majesty",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Jika reaksi Crystallize terpicu, maka Karakter akan $[K1012|s1].\\nJika Karakter tidak menyerap kekuatan elemen saat Skill ini digunakan, maka akan memberikan <color=#FFFFFFFF>$[C126022]</color> kepada Karakter.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>. Jika reaksi Crystallize terpicu, maka Karakter akan <color=#FFFFFFFF>menyerap kekuatan elemen</color>.\\nJika Karakter tidak menyerap kekuatan elemen saat Skill ini digunakan, maka akan memberikan <color=#FFFFFFFF>Stone Facets: Elemental Crystallization</color> kepada Karakter.",
+			"description": "Mengakibatkan 3 poin Geo DMG. Jika reaksi Crystallize terpicu, maka Karakter akan menyerap kekuatan elemen.\nJika Karakter tidak menyerap kekuatan elemen saat Skill ini digunakan, maka akan memberikan Stone Facets: Elemental Crystallization kepada Karakter.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26024,
+			"name": "Decimating Rockfall",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Untuk setiap jenis elemen yang telah diserap sebelumnya, DMG +1.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Mengakibatkan 4 poin {SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>. Untuk setiap jenis elemen yang telah diserap sebelumnya, DMG +1.",
+			"description": "Mengakibatkan 4 poin Geo DMG. Untuk setiap jenis elemen yang telah diserap sebelumnya, DMG +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26025,
+			"name": "Stone Facets",
+			"descriptionraw": "[Pasif] Saat pertandingan dimulai, Karakter ini memperoleh status <color=#FFFFFFFF>$[C126021]</color>.",
+			"descriptionreplaced": "[Pasif] Saat pertandingan dimulai, Karakter ini memperoleh status <color=#FFFFFFFF>Stone Facets: Elemental Absorption</color>.",
+			"description": "[Pasif] Saat pertandingan dimulai, Karakter ini memperoleh status Stone Facets: Elemental Absorption.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

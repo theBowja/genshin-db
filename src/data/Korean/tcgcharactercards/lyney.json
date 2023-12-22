@@ -1,0 +1,101 @@
+{
+	"id": 1310,
+	"name": "리니",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"불 원소",
+		"활",
+		"폰타인",
+		"우인단",
+		"아르케의 힘: 프뉴마"
+	],
+	"storytitle": "현란한 빛의 마술쇼·리니",
+	"storytext": "거울에 비친 누군가를 위한 꽃",
+	"source": "캣테일 술집에서 리니 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 13101,
+			"name": "포스 트릭 샷",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13102,
+			"name": "트릭 화살",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C113101]</color>를 소환하며 <color=#FFFFFFFF>$[C113102]</color>을 1스택 누적한다.\\n만약 본 캐릭터의 HP가 6pt 이상일 경우 자신에게 $[K5]를 1pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>웃는 고양이 모자</color>를 소환하며 <color=#FFFFFFFF>잔여 트릭</color>을 1스택 누적한다.\\n만약 본 캐릭터의 HP가 6pt 이상일 경우 자신에게 <color=#FFFFFFFF>관통 피해</color>를 1pt 준다.",
+			"description": "불 원소 피해를 2pt 주고 웃는 고양이 모자를 소환하며 잔여 트릭을 1스택 누적한다.\n만약 본 캐릭터의 HP가 6pt 이상일 경우 자신에게 관통 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13103,
+			"name": "눈부신 트릭",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 준다.",
+			"description": "불 원소 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13104,
+			"name": "대마술·기적의 행진",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C113101]</color>를 소환하며 <color=#FFFFFFFF>$[C113102]</color>을 1스택 누적한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>웃는 고양이 모자</color>를 소환하며 <color=#FFFFFFFF>잔여 트릭</color>을 1스택 누적한다.",
+			"description": "불 원소 피해를 3pt 주고 웃는 고양이 모자를 소환하며 잔여 트릭을 1스택 누적한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,101 @@
+{
+	"id": 1310,
+	"name": "リネ",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"炎元素",
+		"弓",
+		"フォンテーヌ",
+		"ファデュイ",
+		"アルケー：プネウマ"
+	],
+	"storytitle": "幻光で惑わすトリック·リネ",
+	"storytext": "鏡中に咲くものを抱き、花捧ぐ人を求めゆく。",
+	"source": "キャッツテールでリネを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 13101,
+			"name": "フォース·カード",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13102,
+			"name": "プロップアロー",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。<color=#FFFFFFFF>$[C113101]</color>を召喚し、<color=#FFFFFFFF>$[C113102]</color>を1層獲得する。\\nこのキャラのHPが6以上の場合、自身に$[K5]を1与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を2与える。<color=#FFFFFFFF>ファニーキャット·ハット</color>を召喚し、<color=#FFFFFFFF>プロップ残数</color>を1層獲得する。\\nこのキャラのHPが6以上の場合、自身に<color=#FFFFFFFF>貫通ダメージ</color>を1与える。",
+			"description": "炎元素ダメージを2与える。ファニーキャット·ハットを召喚し、プロップ残数を1層獲得する。\nこのキャラのHPが6以上の場合、自身に貫通ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13103,
+			"name": "ビウィルダー·ライト",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与える。",
+			"description": "炎元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13104,
+			"name": "大魔術·ミラクルパレード",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C113101]</color>を召喚し、<color=#FFFFFFFF>$[C113102]</color>を1層蓄積する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与え、<color=#FFFFFFFF>ファニーキャット·ハット</color>を召喚し、<color=#FFFFFFFF>プロップ残数</color>を1層蓄積する。",
+			"description": "炎元素ダメージを3与え、ファニーキャット·ハットを召喚し、プロップ残数を1層蓄積する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 1706,
+	"name": "Аль-Хайтам",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Дендро",
+		"Одноручное",
+		"Сумеру"
+	],
+	"storytitle": "«Голос разума» аль-Хайтам",
+	"storytext": "Учись, размышляй, о работе не забывай.",
+	"source": "Награда за приглашение аль-Хайтама в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 17061,
+			"name": "Абдуктивная аргументация",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17062,
+			"name": "Универсалия: Совершенствование формы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа возникает <color=#FFFFFFFF>$[C117061]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>, 2 ед. У персонажа возникает <color=#FFFFFFFF>Зеркало света</color>.",
+			"description": "Наносит Дендро урон, 2 ед. У персонажа возникает Зеркало света.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17063,
+			"name": "Особое поле: Взаимосвязь феноменов",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., расходует <color=#FFFFFFFF>$[C117061]</color>. Урон эффекта <color=#FFFFFFFF>$[C117061]</color> повышается на истраченную $[K4].\\nКогда израсходованная у эффекта <color=#FFFFFFFF>$[C117061]</color> $[K4] равняется 0, 1 или 2, то этот персонаж получает 3, 2 или 1 <color=#FFFFFFFF>$[C117061]</color> соответственно.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>, 4 ед., расходует <color=#FFFFFFFF>Зеркало света</color>. Урон эффекта <color=#FFFFFFFF>Зеркало света</color> повышается на истраченную <color=#FFFFFFFF>Продолжительность (в раундах)</color>.\\nКогда израсходованная у эффекта <color=#FFFFFFFF>Зеркало света</color> <color=#FFFFFFFF>Продолжительность (в раундах)</color> равняется 0, 1 или 2, то этот персонаж получает 3, 2 или 1 <color=#FFFFFFFF>Зеркало света</color> соответственно.",
+			"description": "Наносит Дендро урон, 4 ед., расходует Зеркало света. Урон эффекта Зеркало света повышается на истраченную Продолжительность (в раундах).\nКогда израсходованная у эффекта Зеркало света Продолжительность (в раундах) равняется 0, 1 или 2, то этот персонаж получает 3, 2 или 1 Зеркало света соответственно.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

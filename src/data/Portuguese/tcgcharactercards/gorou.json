@@ -1,0 +1,80 @@
+{
+	"id": 1606,
+	"name": "Gorou",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Geo",
+		"Arco",
+		"Inazuma"
+	],
+	"storytitle": "Guerreiro Canino - Gorou",
+	"storytext": "O líder da equipe, liderando os soldados em frente!",
+	"source": "Recompensa por desafiar Gorou para um duelo na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com ele",
+	"skills": [
+		{
+			"id": 16061,
+			"name": "Flechas de Garras Dilacerantes",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16062,
+			"name": "Defesa Concentrada Inuzaka",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], gera <color=#FFFFFFFF>$[C116061]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2106}<color=#FFE699FF>Dano Geo</color>, gera <color=#FFFFFFFF>Estandarte do General</color>.",
+			"description": "Causa 2 pontos de Dano Geo, gera Estandarte do General.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16063,
+			"name": "Juuga: Para a Vitória",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], gera <color=#FFFFFFFF>$[C116061]</color> e invoca <color=#FFFFFFFF>$[C116062]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2106}<color=#FFE699FF>Dano Geo</color>, gera <color=#FFFFFFFF>Estandarte do General</color> e invoca <color=#FFFFFFFF>Glória do General</color>.",
+			"description": "Causa 2 pontos de Dano Geo, gera Estandarte do General e invoca Glória do General.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"id": 1508,
+	"name": "Lynette",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Anemo",
+		"Sword",
+		"Fontaine",
+		"Fatui",
+		"Arkhe: Ousia"
+	],
+	"storytitle": "\"Elegance in the Shadows\" Lynette",
+	"storytext": "The firmament glimpsed in a reflected moon.",
+	"source": "Reward for inviting Lynette to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+	"skills": [
+		{
+			"id": 15081,
+			"name": "Rapid Ritesword",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15082,
+			"name": "Enigmatic Feint",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. The first time this Skill is used this Round, heal the character for 2 HP if they have no more than 8 HP, but apply <color=#FFFFFFFF>$[C115081]</color> to said character.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>. The first time this Skill is used this Round, heal the character for 2 HP if they have no more than 8 HP, but apply <color=#FFFFFFFF>Overawing Assault</color> to said character.",
+			"description": "Deals 3 Anemo DMG. The first time this Skill is used this Round, heal the character for 2 HP if they have no more than 8 HP, but apply Overawing Assault to said character.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15083,
+			"name": "Magic Trick: Astonishing Shift",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C115082]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>, summons 1 <color=#FFFFFFFF>Bogglecat Box</color>.",
+			"description": "Deals 2 Anemo DMG, summons 1 Bogglecat Box.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 1209,
+	"name": "Yelan",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Hydro",
+		"Arc",
+		"Liyue"
+	],
+	"storytitle": "Yelan · Orchidée de la vallée",
+	"storytext": "Le monde est vaste et infini, et la solitaire va et vient à sa guise.",
+	"source": "Récompense pour avoir invité Yelan à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 12091,
+			"name": "Sagette furtive",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12092,
+			"name": "Ligne vitale persistante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et accorde 2 cumuls de <color=#FFFFFFFF>$[C112091|s1]</color> au personnage.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et accorde 2 cumuls de <color=#FFFFFFFF>percée</color> au personnage.",
+			"description": "Inflige 3 pts de DGT Hydro et accorde 2 cumuls de percée au personnage.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12093,
+			"name": "Dé exquis des profondeurs",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée un <color=#FFFFFFFF>$[C112092|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et crée un <color=#FFFFFFFF>dé exquis</color>.",
+			"description": "Inflige 1 pt de DGT Hydro et crée un dé exquis.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12094,
+			"name": "Percée",
+			"descriptionraw": "(Passif) Applique une <color=#FFFFFFFF>$[C112091|s1]</color> au début du combat.",
+			"descriptionreplaced": "(Passif) Applique une <color=#FFFFFFFF>percée</color> au début du combat.",
+			"description": "(Passif) Applique une percée au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

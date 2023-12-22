@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "Манифестация грома",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Электро",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "«Тягучая злоба» - Манифестация грома",
+	"storytext": "Пока на земле не утихнут обиды, в небе не смолкнут раскаты грома.",
+	"source": "Награда за принятие испытания в «Кошкином хвосте» и победу над манифестацией грома в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "Грозовой ветровал",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед.",
+			"description": "Наносит Электро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "Сильная молния",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. персонажам противника, на которых действует <color=#FFFFFFFF>$[C124022]</color>. Если у противника нет подходящих персонажей, урон наносится активному персонажу.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед. персонажам противника, на которых действует <color=#FFFFFFFF>Искатель молний</color>. Если у противника нет подходящих персонажей, урон наносится активному персонажу.",
+			"description": "Наносит Электро урон, 3 ед. персонажам противника, на которых действует Искатель молний. Если у противника нет подходящих персонажей, урон наносится активному персонажу.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "Громовые оковы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Призывает помощника: <color=#FFFFFFFF>$[C124023]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед. Призывает помощника: <color=#FFFFFFFF>Громовые оковы</color>.",
+			"description": "Наносит Электро урон, 2 ед. Призывает помощника: Громовые оковы.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "Молниеносный зонд",
+			"descriptionraw": "(Пассивный навык) В начале битвы на стороне противника появляется <color=#FFFFFFFF>$[C124021]</color>.",
+			"descriptionreplaced": "(Пассивный навык) В начале битвы на стороне противника появляется <color=#FFFFFFFF>Зонд для поиска молнии</color>.",
+			"description": "(Пассивный навык) В начале битвы на стороне противника появляется Зонд для поиска молнии.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

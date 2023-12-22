@@ -1,0 +1,90 @@
+{
+	"id": 1209,
+	"name": "Е Лань",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"Гидро",
+		"Стрелковое",
+		"Ли Юэ"
+	],
+	"storytitle": "«Орхидея долины» Е Лань",
+	"storytext": "Мир безбрежен, а призрачная гостья приходит и уходит, когда ей заблагорассудится.",
+	"source": "Награда за приглашение Е Лань в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12091,
+			"name": "Незаметная стрела",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12092,
+			"name": "Переплетённая нить жизни",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Персонаж получает <color=#FFFFFFFF>$[C112091]</color> (2 уровня).",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед. Персонаж получает <color=#FFFFFFFF>Прорыв</color> (2 уровня).",
+			"description": "Наносит Гидро урон, 3 ед. Персонаж получает Прорыв (2 уровня).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12093,
+			"name": "Изысканные игральные кости",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., создаёт <color=#FFFFFFFF>$[C112092]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед., создаёт <color=#FFFFFFFF>Изысканный бросок</color>.",
+			"description": "Наносит Гидро урон, 1 ед., создаёт Изысканный бросок.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12094,
+			"name": "Прорыв",
+			"descriptionraw": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>$[C112091]</color>.",
+			"descriptionreplaced": "(Пассивный) В начале сражения у персонажа будет <color=#FFFFFFFF>Прорыв</color>.",
+			"description": "(Пассивный) В начале сражения у персонажа будет Прорыв.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

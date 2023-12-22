@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "Manifestación del Trueno",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"storytitle": "Manifestación del Trueno - Odio moribundo",
+	"storytext": "Mientras el odio de esa tierra no desaparezca, los truenos no dejarán de caer.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra la Manifestación del Trueno de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "Alazo galvánico",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 1 pt. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "Relámpago del conflicto",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] al personaje enemigo afectado por <color=#FFFFFFFF>$[C124022|s1]</color>. Si ningún personaje enemigo cumple con este requisito, el daño se le infligirá al personaje en combate.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> al personaje enemigo afectado por <color=#FFFFFFFF>detección atronadora</color>. Si ningún personaje enemigo cumple con este requisito, el daño se le infligirá al personaje en combate.",
+			"description": "Inflige 3 pts. de Daño Electro al personaje enemigo afectado por detección atronadora. Si ningún personaje enemigo cumple con este requisito, el daño se le infligirá al personaje en combate.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "Prisión tronante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea una <color=#FFFFFFFF>$[C124023|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y crea una <color=#FFFFFFFF>prisión tronante</color>.",
+			"description": "Inflige 2 pts. de Daño Electro y crea una prisión tronante.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "Percepción del relámpago",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, crea una <color=#FFFFFFFF>$[C124021|s1]</color> en el campo enemigo.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, crea una <color=#FFFFFFFF>sonda del relámpago</color> en el campo enemigo.",
+			"description": "Pasiva: cuando comienza el duelo, crea una sonda del relámpago en el campo enemigo.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

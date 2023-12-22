@@ -1,0 +1,80 @@
+{
+	"id": 1606,
+	"name": "ゴロー",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"岩元素",
+		"弓",
+		"稲妻"
+	],
+	"storytitle": "雄々しき戎犬·ゴロー",
+	"storytext": "轟々たる行軍！",
+	"source": "キャッツテールでゴローを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 16061,
+			"name": "獣牙裂扇矢",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16062,
+			"name": "犬坂の遠吠え方円陣",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C116061]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を2与え、<color=#FFFFFFFF>大将の旗指物</color>を生成する。",
+			"description": "岩元素ダメージを2与え、大将の旗指物を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16063,
+			"name": "獣牙突撃陣形戦法",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C116061]</color>を生成し、<color=#FFFFFFFF>$[C116062]</color>を召喚する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を2与え、<color=#FFFFFFFF>大将の旗指物</color>を生成し、<color=#FFFFFFFF>大将威儀</color>を召喚する。",
+			"description": "岩元素ダメージを2与え、大将の旗指物を生成し、大将威儀を召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

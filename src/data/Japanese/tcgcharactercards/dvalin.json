@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "トワリン",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"風元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "東風の龍·トワリン",
+	"storytext": "「もし、君がボクのように、君の青い空を飛んでる孤独な、美しい姿を見ることがあれば…」\n「君もきっと分かってくるだろう。このような大空と大地は、戦う価値があるということを。」",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、トワリンに挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "裂爪の横撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "暴風の轟撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標キャラに<color=#FFFFFFFF>$[C125021]</color>を付与する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与え、目標キャラに<color=#FFFFFFFF>倒壊</color>を付与する。",
+			"description": "風元素ダメージを2与え、目標キャラに倒壊を付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "風龍の浄流",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、その後$[K53]に入る：<color=#FFFFFFFF>$[S25025]</color>と<color=#FFFFFFFF>$[S25026]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与え、その後<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>綿々たる浄流</color>と<color=#FFFFFFFF>終幕の浄流</color>。",
+			"description": "風元素ダメージを2与え、その後スキル準備に入る：綿々たる浄流と終幕の浄流。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "終焉のフィナーレ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手の待機キャラ全員に<color=#FFFFFFFF>$[C125021]</color>を付与する。",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を5与え、相手の待機キャラ全員に<color=#FFFFFFFF>倒壊</color>を付与する。",
+			"description": "風元素ダメージを5与え、相手の待機キャラ全員に倒壊を付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "綿々たる浄流",
+			"descriptionraw": "（1ターン準備必要）\\n相手の次の待機キャラに$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K53]に入る：<color=#FFFFFFFF>$[S25026]</color>。（相手に待機キャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "（1ターン準備必要）\\n相手の次の待機キャラに{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を1与え、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>終幕の浄流</color>。（相手に待機キャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"description": "（1ターン準備必要）\n相手の次の待機キャラに風元素ダメージを1与え、スキル準備に入る：終幕の浄流。（相手に待機キャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "終幕の浄流",
+			"descriptionraw": "（1ターン準備必要）\\n相手の前の待機キャラに$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。（相手に待機キャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "（1ターン準備必要）\\n相手の前の待機キャラに{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与える。（相手に待機キャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"description": "（1ターン準備必要）\n相手の前の待機キャラに風元素ダメージを2与える。（相手に待機キャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": []
+		}
+	]
+}

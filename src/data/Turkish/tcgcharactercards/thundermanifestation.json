@@ -1,0 +1,90 @@
+{
+	"id": 2402,
+	"name": "Yıldırım Alameti",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"storytitle": "\"Tükenmeyen Nefret\" Yıldırım Alameti",
+	"storytext": "Yerdeki öfke dinmedikçe gökteki gürleyen yıldırım devam edecektir.",
+	"source": "Kedi Kuyruğu'ndaki Han Mücadelesini kabul etme ve Yıldırım Alameti ile olan Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 24021,
+			"name": "Gürleyen Kanat Darbesi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.",
+			"description": "1 Elektrik Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24022,
+			"name": "Hiddetli Yıldırım",
+			"descriptionraw": "<color=#FFFFFFFF>$[C124022]</color> etkisindeki rakip karaktere $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. (Uygun rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "<color=#FFFFFFFF>Paratoner</color> etkisindeki rakip karaktere 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir. (Uygun rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"description": "Paratoner etkisindeki rakip karaktere 3 Elektrik Hasarı verir. (Uygun rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24023,
+			"name": "Gürleyen Prangalar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C124023]</color> çağırır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve 1 <color=#FFFFFFFF>Gürleyen Prangalar</color> çağırır.",
+			"description": "2 Elektrik Hasarı verir ve 1 Gürleyen Prangalar çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24024,
+			"name": "Yıldırım Algılama",
+			"descriptionraw": "(Pasif) Savaş başladığında rakibin alanında bir <color=#FFFFFFFF>$[C124021]</color> oluşur.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında rakibin alanında bir <color=#FFFFFFFF>Yıldırım Pusulası</color> oluşur.",
+			"description": "(Pasif) Savaş başladığında rakibin alanında bir Yıldırım Pusulası oluşur.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,121 @@
+{
+	"id": 2502,
+	"name": "Dvalin",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Rüzgar",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"storytitle": "\"Doğu'nun Ejderi\" Dvalin",
+	"storytext": "\"Sen de benim gibi mavi gökyüzünde uçarken kendi asil ve güzel suretini görebilseydin harika olurdu.\"\n\"İşte o zaman hem bu yeryüzünün hem de gökyüzünün uğruna savaşılacak şeyler olduğunu anlardın.\"",
+	"source": "Kedi Kuyruğu'ndaki Han Mücadelesini kabul etme ve Dvalin ile olan Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 25021,
+			"name": "Parçalayıcı Darbe",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25022,
+			"name": "Ağır Yaylım Ateşi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve hedef karaktere <color=#FFFFFFFF>$[C125021]</color> eklenir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir ve hedef karaktere <color=#FFFFFFFF>Komple Çöküş</color> eklenir.",
+			"description": "2 Rüzgar Hasarı verir ve hedef karaktere Komple Çöküş eklenir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25023,
+			"name": "Dvalin'in Arınması",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, ardından <color=#FFFFFFFF>$[S25025]</color> ve <color=#FFFFFFFF>$[S25026]</color> için ayrı ayrı \"$[K53]\" kullanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir, ardından <color=#FFFFFFFF>Daimi Arınma</color> ve <color=#FFFFFFFF>Yüce Arınma</color> için ayrı ayrı \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "2 Rüzgar Hasarı verir, ardından Daimi Arınma ve Yüce Arınma için ayrı ayrı \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 5
+				}
+			]
+		},
+		{
+			"id": 25024,
+			"name": "Caelestinum Finale Termini",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Rakibin hazırdaki karakterlerine <color=#FFFFFFFF>$[C125021]</color> uygular.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "5 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir. Rakibin hazırdaki karakterlerine <color=#FFFFFFFF>Komple Çöküş</color> uygular.",
+			"description": "5 Rüzgar Hasarı verir. Rakibin hazırdaki karakterlerine Komple Çöküş uygular.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25025,
+			"name": "Daimi Arınma",
+			"descriptionraw": "(1 Tur hazırlanır)\\nHazırda bulunan sonraki rakip karaktere $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bundan sonra <color=#FFFFFFFF>$[S25026]</color> için $[K53] kullanır. (Hazırda rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\nHazırda bulunan sonraki rakip karaktere 1 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir. Bundan sonra <color=#FFFFFFFF>Yüce Arınma</color> için <color=#FFFFFFFF>Beceri Hazırlama</color> kullanır. (Hazırda rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"description": "(1 Tur hazırlanır)\nHazırda bulunan sonraki rakip karaktere 1 Rüzgar Hasarı verir. Bundan sonra Yüce Arınma için Beceri Hazırlama kullanır. (Hazırda rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": []
+		},
+		{
+			"id": 25026,
+			"name": "Yüce Arınma",
+			"descriptionraw": "(1 Tur hazırlanır)\\nHazırda bulunan önceki rakip karaktere $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. (Hazırda rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\nHazırda bulunan önceki rakip karaktere 2 {SPRITE_PRESET#2105}<color=#80FFD7FF>Rüzgar Hasarı</color> verir. (Hazırda rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"description": "(1 Tur hazırlanır)\nHazırda bulunan önceki rakip karaktere 2 Rüzgar Hasarı verir. (Hazırda rakip karakter yoksa bunun yerine aktif karaktere Hasar verir)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": 2102,
+	"name": "Синьора",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Крио",
+		"Прочее",
+		"Фатуи"
+	],
+	"storytitle": "«Восьмой Предвестник» Синьора",
+	"storytext": "В её зрачках сиял багровый рассвет. Наконец, она распахнула огненные крылья и полетела навстречу свету.\n«Но это не рассвет, дорогая Розалина. Это море огня, что поглотит всё на свете».\nНо это не имело значения, ибо сердцем она понимала, что пламя уже давно поглотило её.",
+	"source": "Награда за принятие испытания в «Кошкином хвосте» и победу над Синьорой в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 21021,
+			"name": "Морозный град",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 1 ед.",
+			"description": "Наносит Крио урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21022,
+			"name": "Острые осколки",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Цель получает <color=#FFFFFFFF>$[C121022]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 2 ед. Цель получает <color=#FFFFFFFF>Лютый мороз</color>.",
+			"description": "Наносит Крио урон, 2 ед. Цель получает Лютый мороз.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21023,
+			"name": "Пунцовый кокон",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., восстанавливает 2 HP этому персонажу. Снимает состояние <color=#FFFFFFFF>$[C121021]</color>. Этот персонаж навсегда переходит в состояние $[K1013].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 4 ед., восстанавливает 2 HP этому персонажу. Снимает состояние <color=#FFFFFFFF>Тлеющая алая ведьма во льду</color>. Этот персонаж навсегда переходит в состояние <color=#FFFFFFFF>Тлеющая алая ведьма</color>.",
+			"description": "Наносит Крио урон, 4 ед., восстанавливает 2 HP этому персонажу. Снимает состояние Тлеющая алая ведьма во льду. Этот персонаж навсегда переходит в состояние Тлеющая алая ведьма.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21024,
+			"name": "Сила порчи",
+			"descriptionraw": "(Пассивный) В начале сражения персонаж будет в состоянии <color=#FFFFFFFF>$[C121021]</color>.",
+			"descriptionreplaced": "(Пассивный) В начале сражения персонаж будет в состоянии <color=#FFFFFFFF>Тлеющая алая ведьма во льду</color>.",
+			"description": "(Пассивный) В начале сражения персонаж будет в состоянии Тлеющая алая ведьма во льду.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

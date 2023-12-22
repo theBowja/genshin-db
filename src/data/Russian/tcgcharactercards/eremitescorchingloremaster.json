@@ -1,0 +1,90 @@
+{
+	"id": 2303,
+	"name": "Пустынник: Пылающий повествователь",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Пиро",
+		"Прочее",
+		"Пустынники"
+	],
+	"storytitle": "«Поэзия и тайные истории» - Пылающий повествователь",
+	"storytext": "Те, кто хранит память, никогда не предадут дух песков, что струится в их жилах.",
+	"source": "Награда за принятие испытания в «Кошкином хвосте» и победу над Пустынником: Пылающим повествователем в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 23031,
+			"name": "Палящий свет",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед.",
+			"description": "Наносит Пиро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23032,
+			"name": "Блестящий удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед.",
+			"description": "Наносит Пиро урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23033,
+			"name": "Пробуждение духа предзнаменования: Пиро скорпион",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Призывает помощника: <color=#FFFFFFFF>$[C123031]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 2 ед. Призывает помощника: <color=#FFFFFFFF>Дух предзнаменования: Пиро скорпион</color>.",
+			"description": "Наносит Пиро урон, 2 ед. Призывает помощника: Дух предзнаменования: Пиро скорпион.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23034,
+			"name": "Сила духа предзнаменования",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если его HP не более 7, у него прибавляется $[K310], 1 ед. Только 1 раз за игру.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если его HP не более 7, у него прибавляется <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color>, 1 ед. Только 1 раз за игру.",
+			"description": "(Пассивный навык) Когда этот персонаж получает урон: если его HP не более 7, у него прибавляется Энергия, 1 ед. Только 1 раз за игру.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}
