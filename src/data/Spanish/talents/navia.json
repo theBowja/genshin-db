@@ -1,0 +1,209 @@
+{
+	"name": "Navia",
+	"combat1": {
+		"name": "Ataque Normal: Declinación directa",
+		"info": "**Ataque Normal**\nRealiza hasta 4 tajos de espada consecutivos.\n\n**Ataque Cargado**\nConsume Aguante de manera constante para realizar golpes de espada giratorios contra los enemigos cercanos.\nAl final del Ataque Cargado, realizará un golpe de espada más poderoso.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}×3",
+				"Daño de 4.º golpe|{param4:F1P}",
+				"Daño de ATQ Cargado en ciclo|{param5:F1P}",
+				"Daño final de Ataque Cargado|{param6:P}",
+				"Coste de Aguante de ATQ Cargado|{param7:F1} pts./s",
+				"Duración máx.|{param8:F1} s",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Etiqueta vidriopírica",
+		"info": "Cuando un personaje del equipo recoge un fragmento creado con la reacción de Cristalización, Navia obtiene un “fragmento de metralla”, acumulable hasta 6 fragmentos. Cada vez que se recoja un fragmento de Cristalización, se reiniciará la duración de los fragmentos de metralla que posea Navia.\nAl usar esta habilidad, Navia consume todos los fragmentos de metralla, abre su elegante y letal rifleparaguas y dispara varias vidriobalas rosáceas capaces de atravesar las defensas de los enemigos alcanzados para infligirles Daño Geo.\nAl consumir 0/1/2/3 o más fragmentos de metralla, se dispararán respectivamente 5/7/9/11 vidriobalas rosáceas. Cuantas más vidriobalas alcancen a un enemigo, más daño recibirá. Si un enemigo es alcanzado por 11 vidriobalas rosáceas, estas infligirán un 200% de su daño original.\nAdemás, al consumir más de 3 fragmentos de metralla, cada fragmento por encima del tercero aumenta en un 15% adicional el daño infligido por el próximo disparo.\n\n**Mantener pulsado**\nApunta para obtener los fragmentos de Cristalización cercanos. Al dejar de mantener pulsado, dispara la misma cantidad de vidriobalas rosáceas que la que se dispara pulsando una vez.\n\nInicialmente, esta habilidad tiene 2 cargas.\n\n**Arjé: ousía**\nCada cierto tiempo, cuando Navia dispara con su rifleparaguas, libera un filo fluyente que inflige Daño Geo cargado de energía ousía.",
+		"description": "“Mantener cierta distancia con las personas con quienes debes mantenerla es parte de la etiqueta social. Ahora bien, hay muchas maneras de mantener esa distancia”.",
+		"attributes": {
+			"labels": [
+				"Daño básico de vidriobalas rosáceas|{param1:F1P}",
+				"Duración de fragmento de metralla|{param3:F1} s",
+				"Daño de filo fluyente|{param5:F1P}",
+				"Intervalo de filo fluyente|{param6:F1} s",
+				"TdE|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Aluvión artillero",
+		"info": "En calidad de presidenta de Spina di Rosula, ordena que se dispare una salva de cañones para bombardear a los enemigos frente a sí misma, infligirles Daño Geo en el AdE y crear un bombardeo auxiliar durante cierto tiempo que inflige Daño Geo periódicamente a los enemigos cercanos.\nCuando el bombardeo alcanza a un enemigo, Navia obtiene 1 fragmento de metralla. Este efecto puede ocurrir una vez cada 2.4 s.",
+		"description": "“Oh, no te confundas. La salva de cañones de Spina di Rosula no sirve para amenazar a nadie, sino que se dispara antes de una negociación para celebrar anticipadamente su éxito”.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de bombardeo auxiliar|{param2:F1P}",
+				"Duración de bombardeo auxiliar|{param3:F1} s",
+				"TdE|{param4:F1} s",
+				"Energía Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Canal no identificado",
+		"info": "Tras usar **Etiqueta vidriopírica**, el daño de los Ataques Normales, Cargados y Descendentes de Navia se transforma durante 4 s en Daño Geo, el cual no puede sustituirse imbuyéndose de otro elemento, y además, el daño de dichos ataques aumenta en un 40%."
+	},
+	"passive2": {
+		"name": "Red de apoyo mutuo",
+		"info": "El ATQ de Navia aumenta en un 20% por cada personaje Pyro, Electro, Cryo o Hydro que haya en el equipo. Este efecto puede acumularse hasta 2 veces."
+	},
+	"passive3": {
+		"name": "Transacción meticulosa",
+		"info": "Aumenta en un 25% las recompensas de las expediciones de 20 h en Fontaine."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas de la ecuanimidad",
+				"count": 3
+			},
+			{
+				"name": "Condensado extramarino",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía de la ecuanimidad",
+				"count": 2
+			},
+			{
+				"name": "Fragmento extramarino",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía de la ecuanimidad",
+				"count": 4
+			},
+			{
+				"name": "Fragmento extramarino",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía de la ecuanimidad",
+				"count": 6
+			},
+			{
+				"name": "Fragmento extramarino",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía de la ecuanimidad",
+				"count": 9
+			},
+			{
+				"name": "Fragmento extramarino",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía de la ecuanimidad",
+				"count": 4
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 4
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía de la ecuanimidad",
+				"count": 6
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 6
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía de la ecuanimidad",
+				"count": 12
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 9
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía de la ecuanimidad",
+				"count": 16
+			},
+			{
+				"name": "Cristalización cromática",
+				"count": 12
+			},
+			{
+				"name": "Hilo de seda deslucido",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

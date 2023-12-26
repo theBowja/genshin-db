@@ -1,0 +1,209 @@
+{
+	"name": "Chevreuse",
+	"combat1": {
+		"name": "Normal Attack: Line Bayonet Thrust EX",
+		"info": "**Normal Attack**\nMelancarkan hingga 4 serangan tombak berturut-turut.\n\n**Charged Attack**\nMengonsumsi sejumlah Stamina untuk menerjang ke depan, mengakibatkan DMG pada musuh di jalur terjangan.\n\n**Plunging Attack**\nMenerjang dari udara untuk menghantam tanah di bawahnya, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}+{param4:F1P}",
+				"DMG Tahap 4|{param5:F1P}",
+				"DMG Charged Attack|{param6:F1P}",
+				"Konsumsi Stamina Charged Attack|{param7:F1}",
+				"DMG Selama Plunging|{param8:F1P}",
+				"DMG Plunging Attack Rendah/Tinggi|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Short-Range Rapid Interdiction Fire",
+		"info": "Chevreuse mengangkat senapannya dengan cepat untuk menembak musuh dan mengakibatkan Pyro DMG Area.\nBeberapa saat setelah Chevreuse menembak, dia akan terus memulihkan HP Karakter aktif. Jumlah pemulihan didasarkan pada Max HP Chevreuse.\nSaat ditahan, akan melancarkan serangan dengan cara yang berbeda.\n\n**Mode Tahan**\nMemasuki Mode Membidik dan mengunci target dalam bidang penglihatannya untuk menembakkan tembakan pencegat dengan akurat. Jika Chevreuse memiliki \"Overcharged Ball\", maka akan menembakkan \"Overcharged Ball\" dan mengakibatkan Pyro DMG yang memiliki radius serangan yang lebih luas dan DMG yang lebih tinggi.\nChevreuse akan mendapatkan 1 Overcharged Ball saat Karakter dalam party di sekitar memicu Reaksi Overloaded. Hanya 1 Overcharged Ball yang dapat tercipta dalam waktu bersamaan.\n\n**Arkhe: Ousia**\nSetiap beberapa saat setelah \"Short-Range Rapid Interdiction Fire\" mengenai musuh, Chevreuse akan melancarkan Surging Blade yang mengakibatkan Ousia-aligned Pyro DMG.",
+		"description": "\"Sebenarnya di dalam panduan pelatihan istilahnya cuma \"tembakan pencegat\", tapi pemeran utama novel ini percaya kalau nama jurus yang keren bisa memengaruhi motivasi pasukanmu, sehingga musuh kehilangan momentumnya di awal ... Kurasa sih cukup masuk akal ya, jadi aku ubah peraturannya!\"",
+		"attributes": {
+			"labels": [
+				"DMG Tekan|{param1:F1P}",
+				"DMG Tahan|{param2:F1P}",
+				"DMG Overcharged Ball|{param3:F1P}",
+				"Pemulihan HP Berkelanjutan|{param5:F2P} Max HP+{param6:I}",
+				"Durasi Pemulihan|{param4:F1} dtk",
+				"DMG Surging Blade|{param7:F1P}",
+				"Jeda Surging Blade|{param8:F1} dtk",
+				"Cooldown|{param9:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Ring of Bursting Grenades",
+		"info": "Chevreuse menggunakan senapannya untuk menembakkan Explosive Grenade terhadap musuh dan mengakibatkan Pyro DMG Area. Setelah mengenai musuh, Explosive Grenade akan terpecah menjadi beberapa Secondary Explosive Shell.\nSecondary Explosive Shell akan meledak setelah jeda singkat dan mengakibatkan Pyro DMG terhadap musuh di sekitar.",
+		"description": "\"Secara teorinya sih, ledakan berbentuk persegi akan jauh lebih efisien dalam menghancurkan formasi musuh. Sayangnya, struktur gelombang ledakan kebanyakan bentuknya bulat seperti kue. Jadi granat terbangnya cuma bisa disusun seperti dekorasi buah yang mengelilingi tepi kue.\"",
+		"attributes": {
+			"labels": [
+				"DMG Explosive Grenade|{param1:F1P}",
+				"DMG Secondary Explosive Shell|{param2:F1P}",
+				"Cooldown|{param3:F1} dtk",
+				"Konsumsi Energy|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Vanguard's Coordinated Tactics",
+		"info": "Saat seluruh anggota party adalah Karakter Pyro dan Electro, serta terdapat minimal 1 Karakter Pyro dan 1 Karakter Electro:\nChevreuse akan memberikan \"Coordinated Tactics\" kepada Karakter dalam party di sekitarnya: Setelah Karakter memicu reaksi Overloaded, Pyro dan Electro RES milik target tersebut akan berkurang 40% selama 6 detik.\nSaat jenis elemen Karakter di dalam party tidak cukup untuk memicu Talenta Pasif, maka efek Coordinated Tactics yang sudah dimiliki akan dihapus."
+	},
+	"passive2": {
+		"name": "Vertical Force Coordination",
+		"info": "Setelah Chevreuse menembakkan \"Overcharged Ball\" dari **Short-Range Rapid Interdiction Fire**, ATK semua Karakter dalam party berelemen Pyro dan Electro di sekitar akan meningkat 1% untuk setiap 1.000 poin Max HP Chevreuse selama 30 detik. Peningkatan ATK maksimum yang bisa didapatkan dengan cara ini adalah 40%."
+	},
+	"passive3": {
+		"name": "Double Time March",
+		"info": "Mengurangi 20% konsumsi Stamina Karakter party sendiri saat berlari.\nEfek ini tidak dapat ditumpuk dengan Talenta Pasif lain dengan efek yang sama persis."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Teachings of Order",
+				"count": 3
+			},
+			{
+				"name": "Meshing Gear",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide to Order",
+				"count": 2
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide to Order",
+				"count": 4
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide to Order",
+				"count": 6
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide to Order",
+				"count": 9
+			},
+			{
+				"name": "Mechanical Spur Gear",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophies of Order",
+				"count": 4
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 4
+			},
+			{
+				"name": "Lightless Eye of the Maelstrom",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophies of Order",
+				"count": 6
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 6
+			},
+			{
+				"name": "Lightless Eye of the Maelstrom",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophies of Order",
+				"count": 12
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 9
+			},
+			{
+				"name": "Lightless Eye of the Maelstrom",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophies of Order",
+				"count": 16
+			},
+			{
+				"name": "Artificed Dynamic Gear",
+				"count": 12
+			},
+			{
+				"name": "Lightless Eye of the Maelstrom",
+				"count": 2
+			},
+			{
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

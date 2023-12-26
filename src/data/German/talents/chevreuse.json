@@ -1,0 +1,209 @@
+{
+	"name": "Chevreuse",
+	"combat1": {
+		"name": "Standardangriff: Bajonettangriff der Lineartaktik – Modifiziert",
+		"info": "**Standardangriff**\nFührt bis zu 4 Lanzenstiche hintereinander aus.\n\n**Heftiger Schlag**\nVerbraucht eine gewisse Menge Ausdauer, sticht geschwind nach vorn und fügt den Gegnern in der Bahn Schaden zu.\n\n**Angriff aus dem Fall**\nSchlägt beim Fallen aus der Luft auf den Boden auf, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P} + {param4:F1P}",
+				"SCH Phase 4|{param5:F1P}",
+				"SCH heftiger Schläge|{param6:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param7:F1} Punkte",
+				"SCH beim Fallen|{param8:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Schnelles Unterdrückungsfeuer auf kurze Distanz",
+		"info": "Chevreuse hebt schnell ihre Muskete an die Schulter und feuert auf ihre Gegner, wobei sie Pyro-Flächenschaden verursacht.\nNachdem Chevreuse einen Schuss abgefeuert hat, stellt sie der aktuellen Figur auf dem Feld für kurze Zeit fortlaufend LP basierend auf Chevreuses max. LP wieder her.\nBeim Gedrückthalten nimmt diese Fähigkeit einen anderen Modus an.\n\n**Gedrückt halten**\nTritt in den Zielmodus ein und visiert einen Gegner an, um einen präzisen Unterdrückungsschuss abzufeuern. Wenn Chevreuse eine überladene Kugel hat, feuert sie stattdessen die überladene Kugel ab, die mehr Pyro-Schaden in einem größeren Bereich verursacht.\nChevreuse erhält jedes Mal eine „überladene Kugel“, wenn ein in der Nähe befindliches Truppenmitglied die Reaktion „Überladen“ auslöst, und kann bis zu 1 „überladene Kugel“ auf einmal tragen.\n\n**Arkhe: Ousia**\nBeschwört in regelmäßigen Abständen beim Vollführen von „Schnelles Unterdrückungsfeuer auf kurze Distanz“ eine Wogenklinge, die mit Ousia versehenen Pyro-Schaden verursacht.",
+		"description": "„Eigentlich stand in den Ausbildungsvorschriften nur ‚Unterdrückungsfeuer‘, aber der Protagonist eines Romans ist der Meinung, dass auch eine stilvolle Terminologie Einfluss auf die Motivation der Truppen hat und die Gegner von Anfang an in die Enge getrieben werden können ... Ich denke, das ist ein gutes Argument, also habe ich die Vorschriften geändert!“",
+		"attributes": {
+			"labels": [
+				"SCH bei Drücken|{param1:F1P}",
+				"SCH bei Gedrückthalten|{param2:F1P}",
+				"SCH überladener Kugel|{param3:F1P}",
+				"Fortlaufende Heilung|{param5:F2P} der max. LP + {param6:I}",
+				"Heilungsdauer|{param4:F1} s",
+				"Wogenklinge-SCH|{param7:F1P}",
+				"Wogenklinge-Intervall|{param8:F1} s",
+				"Abklingzeit|{param9:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Kreisförmiger Kartätschenangriff",
+		"info": "Chevreuse feuert mit ihrer Muskete eine Kartätsche auf die Gegner ab und verursacht Pyro-Flächenschaden. Nachdem die Kartätsche getroffen hat, teilt sie sich in viele sekundäre Explosivgeschosse auf.\nDie sekundären Explosivgeschosse explodieren nach einem kurzen Intervall und fügen Gegnern in der Nähe Pyro-Schaden zu.",
+		"description": "„Theoretisch wäre eine rechteckige Explosion am effizientesten, um feindliche Formationen zu zerschlagen. Allerdings ist der Querschnitt der explosiven Schockwelle rund, wie bei den meisten Torten. Daher können die sekundären Explosivgeschosse nur wie die Früchte auf einer Torte angeordnet werden und einen Ring um den Rand bilden.“",
+		"attributes": {
+			"labels": [
+				"Kartätschen-SCH|{param1:F1P}",
+				"SCH der sekundären Explosivgeschosse|{param2:F1P}",
+				"Abklingzeit|{param3:F1} s",
+				"Elementarenergie|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Koordinierte Taktik der Vorhut",
+		"info": "Wenn die Truppe nur aus Pyro- und Elektro-Figuren besteht und sich mindestens 1 Pyro- und 1 Elektro-Figur darin befinden:\nChevreuse gewährt Truppenmitgliedern in der Nähe den Effekt „Koordinierte Taktik“, wodurch der Pyro- und Elektro-WDS der von der diesmaligen Reaktion „Überladen“ betroffenen Gegner 6 s lang um 40 % verringert wird, wenn diese Reaktion von den oben genannten Truppenmitgliedern ausgelöst wird.\nWenn die Elementartypen der Figuren in der Truppe die Bedingungen dieses passiven Talents nicht erfüllen, wird der vorhandene Effekt „Koordinierte Taktik“ entfernt."
+	},
+	"passive2": {
+		"name": "Vertikale Kraftkoordination",
+		"info": "Erhöht, nachdem Chevreuse eine überladene Kugel von **„Schnelles Unterdrückungsfeuer auf kurze Distanz“** abgefeuert hat, den ANG aller in der Nähe befindlichen Pyro- und Elektro-Figuren in der Truppe basierend auf den max. LP von Chevreuse 30 s lang, und zwar je 1.000 von Chevreuses max. LP um 1 %. Bis zu 40 % ANG-Bonus auf diese Weise möglich."
+	},
+	"passive3": {
+		"name": "Strategie des schnellen Vormarschs",
+		"info": "Verringert die beim Rennen verbrauchte Ausdauer aller eigenen Truppenmitglieder um 20 %.\nNicht mit passiven Talenten mit völlig gleichen Effekten stapelbar."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Lehren der „Ordnung“",
+				"count": 3
+			},
+			{
+				"name": "Greifendes Zahnrad",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 2
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 4
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 6
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Anleitung zur „Ordnung“",
+				"count": 9
+			},
+			{
+				"name": "Mechanisches Stirnrad",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 4
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 4
+			},
+			{
+				"name": "Aphotisches Auge des Wirbels",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 6
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 6
+			},
+			{
+				"name": "Aphotisches Auge des Wirbels",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 12
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 9
+			},
+			{
+				"name": "Aphotisches Auge des Wirbels",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie der „Ordnung“",
+				"count": 16
+			},
+			{
+				"name": "Neuartiges Uhrwerk-Zahnrad",
+				"count": 12
+			},
+			{
+				"name": "Aphotisches Auge des Wirbels",
+				"count": 2
+			},
+			{
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

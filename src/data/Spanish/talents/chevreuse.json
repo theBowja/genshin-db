@@ -1,0 +1,209 @@
+{
+	"name": "Chevreuse",
+	"combat1": {
+		"name": "Ataque Normal: Bayoneta de vanguardia (modificada)",
+		"info": "**Ataque Normal**\nRealiza hasta 4 ataques rápidos con lanza.\n\n**Ataque Cargado**\nConsume una cierta cantidad de Aguante para lanzarse al frente e infligir daño a los enemigos en el camino.\n\n**Ataque Descendente**\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P} + {param4:F1P}",
+				"Daño de 4.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param7:F1} pts.",
+				"Daño de Caída|{param8:F1P}",
+				"Daño de impacto de caída baja/alta|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Fuego rápido de proximidad e intercepción",
+		"info": "Chevreuse apoya rápidamente su rifle contra el hombro para disparar al enemigo e infligir Daño Pyro en el AdE.\nDurante un tiempo después de que Chevreuse realice su disparo, restaura Vida al personaje en uso de forma continua en función de la Vida Máx. de Chevreuse.\nEsta habilidad se libera de manera distinta al mantener pulsado.\n\n**Mantener pulsado**\nApunta y fija a un enemigo en su campo de visión para dispararle con un fuego de intercepción de mayor precisión. Si Chevreuse posee una bala de punta sobrecargada, la disparará e infligirá mayor cantidad de Daño Pyro con una mayor AdE.\nChevreuse obtiene una bala de punta sobrecargada cuando un miembro del equipo cercano causa una reacción de Sobrecarga. Solo se puede tener 1 bala de punta sobrecargada al mismo tiempo.\n\n**Arjé: ousía**\nCada cierto tiempo, cuando el Fuego rápido de proximidad e intercepción de Chevreuse alcance a un objetivo, caerá un filo fluyente que inflige Daño Pyro cargado de energía ousía.",
+		"description": "“De hecho, el único término que aparece en el reglamento de entrenamiento es ‘fuego de intercepción’, pero según el protagonista de una novela, usar vocabulario técnico para ponerle nombres llamativos a las habilidades es más motivador, y además puede hacer que el enemigo pierda empuje desde un principio. Me pareció algo muy lógico, ¡así que modifiqué el reglamento!”.",
+		"attributes": {
+			"labels": [
+				"Daño al pulsar una vez|{param1:F1P}",
+				"Daño al mantener pulsado|{param2:F1P}",
+				"Daño de bala de punta sobrecargada|{param3:F1P}",
+				"Curación continua|{param5:F2P} de Vida Máx. + {param6:I}",
+				"Duración de curación|{param4:F1} s",
+				"Daño de filo fluyente|{param7:F1P}",
+				"Intervalo de filo fluyente|{param8:F1} s",
+				"TdE|{param9:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Bombardeo radial",
+		"info": "Chevreuse utiliza su rifle para lanzar una granada explosiva a sus enemigos e infligir Daño Pyro en el AdE. Al impactar, la granada se divide en varias bombas secundarias.\nDichas bombas explotan tras un breve intervalo de tiempo e infligen Daño Pyro a los enemigos cercanos.",
+		"description": "“Por regla general, bombardear un área cuadrada es lo más eficaz contra un enemigo en formación cerrada, pero por desgracia, la sección transversal de la onda expansiva de la explosión es circular como un pastel, por lo que las granadas solo pueden esparcirse en círculo, al igual que la fruta alrededor de un pastel”.",
+		"attributes": {
+			"labels": [
+				"Daño de granada explosiva|{param1:F1P}",
+				"Daño de bombas secundarias|{param2:F1P}",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Vigilancia coordinada",
+		"info": "Si el equipo está formado únicamente por personajes Pyro y Electro y hay al menos un personaje Pyro y uno Electro en él, Chevreuse otorga el efecto de “maniobra coordinada” a los miembros del equipo cercanos. Cuando un personaje bajo este efecto causa una reacción de Sobrecarga, la RES Pyro y Electro del enemigo afectado por dicha reacción se reduce en un 40% durante 6 s.\nEl efecto de maniobra coordinada desaparecerá cuando el tipo elemental de los miembros de tu equipo no cumpla con los requisitos del talento pasivo."
+	},
+	"passive2": {
+		"name": "Formación lineal integral",
+		"info": "Cuando Chevreuse dispara una bala de punta sobrecargada de **Fuego rápido de proximidad e intercepción**, el ATQ de todos los personajes Pyro y Electro cercanos del equipo aumenta en un 1% durante 30 s por cada 1000 pts. de Vida Máx. que tenga Chevreuse. El ATQ puede aumentar en un máximo de un 40% de esta manera."
+	},
+	"passive3": {
+		"name": "Marcha rápida táctica",
+		"info": "Disminuye en un 20% el Coste de Aguante al esprintar de todos los miembros de tu equipo.\nNo se puede acumular con otros talentos pasivos que tengan los mismos efectos."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseñanzas del orden",
+				"count": 3
+			},
+			{
+				"name": "Engranaje de malla",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guía del orden",
+				"count": 2
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guía del orden",
+				"count": 4
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guía del orden",
+				"count": 6
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guía del orden",
+				"count": 9
+			},
+			{
+				"name": "Mecaengranaje recto",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 4
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 4
+			},
+			{
+				"name": "Ojo del vórtice deslucido",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 6
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 6
+			},
+			{
+				"name": "Ojo del vórtice deslucido",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 12
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 9
+			},
+			{
+				"name": "Ojo del vórtice deslucido",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofía del orden",
+				"count": 16
+			},
+			{
+				"name": "Engranaje mecadinámico",
+				"count": 12
+			},
+			{
+				"name": "Ojo del vórtice deslucido",
+				"count": 2
+			},
+			{
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,209 @@
+{
+	"name": "Navia",
+	"combat1": {
+		"name": "Attacco normale: Netto rifiuto",
+		"info": "**Attacco normale**\nSferra fino a 4 colpi consecutivi.\n\n**Attacco caricato**\nConsuma vigore nel tempo per sferrare attacchi rotanti contro tutti gli avversari vicini.\nAl termine della sequenza, sferra un affondo più potente.\n\n**Attacco in picchiata**\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}×3",
+				"DAN da 4º colpo|{param4:F1P}",
+				"DAN da ATT caricato ciclico|{param5:F1P}",
+				"DAN da ATT caricato finali|{param6:P}",
+				"Costo vigore ATT caricato|{param7:F1}/s",
+				"Durata max|{param8:F1} s",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Salva cristallina",
+		"info": "Quando un personaggio del gruppo ottiene un frammento elementale generato dalla reazione di Cristallizzazione, Navia riceve 1 accumulo di Bossolo di cristallo fino a un massimo di 6. A ogni accumulo ottenuto, la durata degli accumuli già in suo possesso viene ripristinata.\nQuando spara, Navia consuma tutti gli accumuli e apre il suo elegante e letale Piombrello, scagliando Proiettili di cristallo di Rosula in grado di penetrare gli avversari e infliggere DAN da Geo all'impatto.\nQuando vengono consumati 0/1/2/3 o più accumuli di Bossolo di cristallo, Navia spara rispettivamente 5/7/9/11 Proiettili di cristallo di Rosula. Maggiore è il numero di Proiettili che colpisce un avversario, maggiori sono i DAN subiti da quest'ultimo. Quando tutti e 11 i Proiettili colpiscono, viene inflitto un 200% della quantità di DAN originale.\nIn più, quando Navia consuma più di 3 accumuli di Bossolo di cristallo, ogni accumulo successivo al terzo aumenta i DAN inflitti dall'attacco del Piombrello di un 15% aggiuntivo.\n\n**Pressione prolungata**\nEntra in modalità di mira, raccogliendo continuamente i frammenti elementali generati dalle reazioni di Cristallizzazione nelle vicinanze. Quando l'abilità viene rilasciata, spara dei Proiettili di cristallo di Rosula con lo stesso effetto della variante a pressione.\n\nL'abilità ha 2 cariche inizialmente disponibili.\n\n**Archè: Ousia**\nQuando Navia spara col suo Piombrello, a determinati intervalli evoca una Lama nascente che infligge DAN da Geo di polarità Ousia.",
+		"description": "\"Mantenere una distanza appropriata dagli altri in base alla situazione è una delle regole fondamentali del galateo. Naturalmente, esistono diversi modi per rispettarla...\"",
+		"attributes": {
+			"labels": [
+				"DAN base da Proiettili di cristallo di Rosula|{param1:F1P}",
+				"Durata Bossolo di cristallo|{param3:F1} s",
+				"DAN da Lama nascente|{param5:F1P}",
+				"Intervallo Lama nascente|{param6:F1} s",
+				"TdR|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Tributo del sole luminoso",
+		"info": "La Presidentessa della Spina di Rosula ordina l'esecuzione del trionfale Saluto della Rosula dorata. Scatena un devastante bombardamento sugli avversari di fronte a lei, infliggendo DAN da Geo ad area e fornendo Fuoco di supporto coi suoi cannoni per una certa durata, infliggendo periodicamente DAN da Geo agli avversari nelle vicinanze.\nQuando gli attacchi dei cannoni colpiscono gli avversari, Navia ottiene 1 accumulo di Bossolo di cristallo. Quest'effetto può attivarsi una volta ogni 2,4 s.",
+		"description": "\"Il saluto della Spina di Rosula è una celebrazione preventiva per l'esito positivo dei nostri negoziati, e viene eseguito prima che le trattative abbiano inizio. Non fraintendere: non è affatto una forma di minaccia, nella maniera più assoluta.\"",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P}",
+				"DAN da Fuoco di supporto|{param2:F1P}",
+				"Durata Fuoco di supporto|{param3:F1} s",
+				"TdR|{param4:F1} s",
+				"Costo energia|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Canali di distribuzione segreti",
+		"info": "Per 4 s dopo aver usato **Salva cristallina**, i DAN inflitti dagli attacchi normali, caricati e in picchiata di Navia vengono convertiti in DAN da Geo che non possono essere contrastati da altre infusioni elementali. Inoltre, i DAN inflitti dai suoi attacchi normali, caricati e in picchiata aumentano di un 40%."
+	},
+	"passive2": {
+		"name": "Rete di assistenza reciproca",
+		"info": "Per ogni membro di Pyro/Electro/Cryo/Hydro presente nel gruppo, l'ATT di Navia aumenta di un 20%. Quest'effetto è cumulabile fino a 2 volte."
+	},
+	"passive3": {
+		"name": "Transazione scrupolosa",
+		"info": "Ottiene un 25% in più di ricompense quando intraprende una spedizione a Fontaine per 20 ore."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Insegnamenti di equità",
+				"count": 3
+			},
+			{
+				"name": "Perla transoceanica",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 2
+			},
+			{
+				"name": "Frammento transoceanico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 4
+			},
+			{
+				"name": "Frammento transoceanico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 6
+			},
+			{
+				"name": "Frammento transoceanico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guida all'equità",
+				"count": 9
+			},
+			{
+				"name": "Frammento transoceanico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 4
+			},
+			{
+				"name": "Cristallo xenocromatico",
+				"count": 4
+			},
+			{
+				"name": "Filo di seta senza luce",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 6
+			},
+			{
+				"name": "Cristallo xenocromatico",
+				"count": 6
+			},
+			{
+				"name": "Filo di seta senza luce",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 12
+			},
+			{
+				"name": "Cristallo xenocromatico",
+				"count": 9
+			},
+			{
+				"name": "Filo di seta senza luce",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Filosofie di equità",
+				"count": 16
+			},
+			{
+				"name": "Cristallo xenocromatico",
+				"count": 12
+			},
+			{
+				"name": "Filo di seta senza luce",
+				"count": 2
+			},
+			{
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

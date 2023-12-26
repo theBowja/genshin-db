@@ -1,0 +1,209 @@
+{
+	"name": "Chevreuse",
+	"combat1": {
+		"name": "Normal Saldırı: Süngü Hattı Saldırısı",
+		"info": "**Normal Saldırı**\nArka arkaya en fazla 4 mızrak saldırısı yapar.\n\n**Yüklü Saldırı**\nİleri atılırken belirli miktarda Dayanıklılık harcar ve önündeki düşmanlara hasar verir.\n\n**Havadan Saldırı**\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}+{param4:F1P}",
+				"4 Vuruş Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Hasarı|{param6:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param7:F1}",
+				"Havadan Saldırı Hasarı|{param8:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Kısa Menzilli Seri Tecrit Ateşi",
+		"info": "Chevreuse tüfeğiyle hızlı bir şekilde nişan alıp ateş ederek düşmanlarına Ateş Alan Hasarı verir.\nChevreuse ateş ettikten sonra kısa bir süre boyunca savaş alanındaki aktif karakter için sürekli Can yeniler. İyileştirme miktarı Chevreuse'ün Maks. Canına bağlıdır.\nFarklı bir şekilde ateş etmek için Basılı Tut.\n\n**Basılı Tut**\nNişan Alma Moduna girerek görüş alanındaki bir hedefe kilitlenir ve isabetli bir tecrit atışı yapar. Chevreuse'ün bir Aşırı Yüklü Topu varsa bunun yerine Aşırı Yüklü Topu ateşler ve daha geniş bir alana Ateş Hasarı verir.\nYakındaki bir grup karakteri her Yüksek Voltaj tepkimesi tetiklediğinde Chevreuse 1 Aşırı Yüklü Top elde eder, bir seferde en fazla 1 Aşırı Yüklü Topa sahip olabilir.\n\n**Arkhe: Öz**\nChevreuse'ün Kısa Menzilli Seri Tecrit Ateşi hedefe isabet ettikten sonra belirli aralıklarla bir Çalkantılı Kılıç oluşur ve Öz tesirli Ateş Hasarı verir.",
+		"description": "\"Aslında idman yönetmeliğinde sadece \"tecrit ateşi\" ifadesi yer alıyordu ama bu romanın kahramanı, kullanılan terminolojilerin şık olmasının bile birliklerin motivasyonunu etkileyebileceğini ve düşmanlara daha en başından geri adım attırabileceğine inanıyor... Bu bana mantıklı geldi, ben de yönetmeliği değiştirdim!\"",
+		"attributes": {
+			"labels": [
+				"Basma Hasarı|{param1:F1P}",
+				"Basılı Tutma Hasarı|{param2:F1P}",
+				"Aşırı Yüklü Top Hasarı|{param3:F1P}",
+				"Süreli Can Yenilenmesi|{param5:F2P} Maks. Can+{param6:I}",
+				"İyileştirme Süresi|{param4:F1}sn",
+				"Çalkantılı Kılıç Hasarı|{param7:F1P}",
+				"Çalkantılı Kılıç Aralığı|{param8:F1}sn",
+				"BS|{param9:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Patlayan Ateş Çemberi",
+		"info": "Chevreuse, tüfeğinden bir tahrip el bombası ateşleyerek düşmanlarına Ateş Alan Hasarı verir. Bomba hedefe isabet ettiğinde yeniden patlayan birçok kovana bölünür.\nBu kovanlar kısa bir süre sonra ikinci defa patlayarak yakındaki düşmanlara Ateş Hasarı verir.",
+		"description": "\"Teorik açıdan bakıldığında, dikdörtgen şeklindeki bir patlama düşman saflarını yok etmede en etkili yöntemdir. Ne yazık ki bir patlamanın şok dalgası kesiti yuvarlaktır, tıpkı çoğu pasta gibi. Bu yüzden, kovanlar ancak bir pastanın üzerindeki meyveler gibi kenarlara dizilerek bir halka oluşturulabilir.\"",
+		"attributes": {
+			"labels": [
+				"Tahrip El Bombası Hasarı|{param1:F1P}",
+				"İkincil Patlayıcı Kovan Hasarı|{param2:F1P}",
+				"BS|{param3:F1}sn",
+				"Enerji Maliyeti|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Öncülerin Eş Güdümlü Taktikleri",
+		"info": "Tüm grup üyeleri Ateş veya Elektrik karakteri olduğunda ve grupta en az bir Ateş ve bir Elektrik karakteri bulunduğunda:\nChevreuse, yakındaki grup üyelerine \"Eş Güdümlü Taktikler\" verir. Bir karakter Yüksek Voltaj tepkimesi tetikledikten sonra bu tepkimeden etkilenen rakibin 6sn boyunca Ateş ve Elektrik Direnci %40 azalır.\nGruptaki karakterlerin Element Türleri Pasif Yetenek için gereken temel şartları karşılamazsa \"Eş Güdümlü Taktikler\" etkisi kaldırılır."
+	},
+	"passive2": {
+		"name": "Dikey Güç Koordinasyonu",
+		"info": "Chevreuse **Kısa Menzilli Seri Tecrit Ateşi** kullanarak bir Aşırı Yüklü Top ateşlediğinde 30sn boyunca Chevreuse'ün sahip olduğu her 1.000 Maks. Can için yakındaki Ateş ve Elektrik karakteri grup üyelerinin Saldırısı %1 artar. Saldırı bu şekilde en fazla %40 artabilir."
+	},
+	"passive3": {
+		"name": "Koşar Adım Marş",
+		"info": "Kendi grup üyelerinin depar esnasında harcadığı Dayanıklılık %20 azalır.\nAynı etkiyi veren Pasif Yeteneklerle birikmez."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Düzen Öğretisi",
+				"count": 3
+			},
+			{
+				"name": "Kavrama Dişlisi",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 2
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 4
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 6
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Düzen Rehberi",
+				"count": 9
+			},
+			{
+				"name": "Mekanik Düz Dişli",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 4
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 4
+			},
+			{
+				"name": "Sönük Girdap Gözü",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 6
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 6
+			},
+			{
+				"name": "Sönük Girdap Gözü",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 12
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 9
+			},
+			{
+				"name": "Sönük Girdap Gözü",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Düzen Felsefesi",
+				"count": 16
+			},
+			{
+				"name": "Usta İşi Dinamik Dişli",
+				"count": 12
+			},
+			{
+				"name": "Sönük Girdap Gözü",
+				"count": 2
+			},
+			{
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
+}

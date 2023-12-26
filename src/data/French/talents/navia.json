@@ -1,0 +1,209 @@
+{
+	"name": "Navia",
+	"combat1": {
+		"name": "Attaque normale : Refus direct",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups.\n\n**Attaque chargée**\nConsomme de l'endurance de façon continue pour exécuter une succession d'attaques tournoyantes contre les ennemis proches.\nL'attaque chargée se termine sur un coup puissant.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P} ×3",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT enchaînement attaque chargée|{param5:F1P}",
+				"DGT coup final attaque chargée|{param6:P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts/s",
+				"Durée max|{param8:F1} s",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Tir cristallin de cérémonie",
+		"info": "Lorsqu'un personnage de l'équipe obtient un fragment généré par une réaction de Cristallisation, Navia obtient 1 shrapnel cristallin. Navia peut détenir un maximum de 6 shrapnels cristallins, et chaque fois que cet effet se déclenche, la durée des shrapnels en sa possession est réinitialisée.\nLorsqu'elle tire, Navia consomme tous ses shrapnels cristallins et ouvre son élégante, mais néanmoins mortelle, canombrelle pour tirer plusieurs balles cristarosulées qui transpercent les ennemis, infligeant des DGT Géo aux ennemis touchés.\nConsommer 0, 1, 2 ou au minimum 3 shrapnels cristallins permet de tirer respectivement 5, 7, 9 ou 11 balles cristarosulées. Plus le nombre de balles touchant un même ennemi est élevé, plus les DGT qu'il subit sont importants. Si toutes les 11 balles touchent, 200 % des DGT d'origine sont infligés.\nDe plus, chaque shrapnel consommé à partir du 4e augmente les DGT infligés de 15 % supplémentaires.\n\n**Appui long**\nBascule en mode visée pour collecter de façon continue les fragments proches qui ont été générés par des réactions de Cristallisation, ce qui permet, à la fin de l'appui long, de tirer des balles cristarosulées identiques à celle d'un appui simple.\n\nNavia commence avec 2 utilisations disponibles.\n\n**Arkhe : Ousia**\nRégulièrement, lorsque Navia utilise sa canombrelle pour tirer, elle déclenche une lame fluide pour infliger des DGT Géo chargés d'énergie ousia.",
+		"description": "« Se maintenir à une distance appropriée de ceux avec qui il est requis de le faire est un élément essentiel de l'étiquette. Naturellement, il existe de nombreuses façons d'y parvenir... »",
+		"attributes": {
+			"labels": [
+				"DGT de base balle cristarosulée|{param1:F1P}",
+				"Durée de shrapnel cristallin|{param3:F1} s",
+				"DGT lame fluide|{param5:F1P}",
+				"Intervalle de lame fluide|{param6:F1} s",
+				"Temps de recharge|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Salut du ciel ensoleillé",
+		"info": "Sur ordre de la présidente de la Spina di Rosula, un magnifique salut de rose d'or est déclenché : un massif bombardement de canon est alors exécuté sur les ennemis en face, ce qui inflige des DGT Géo de zone avant de déclencher un feu d'appui de canon infligeant des DGT Géo aux ennemis proches de façon intermittente pendant un moment.\nLorsqu'une attaque de canon touche un ennemi, Navia obtient 1 shrapnel cristallin. Cet effet peut être déclenché une fois toutes les 2,4 s.",
+		"description": "« Le salut de la Spina di Rosula est une célébration anticipative de la conclusion réussie de nos négociations et est tiré juste avant le début des pourparlers. Mais ne vous méprenez pas, il ne s'agit en aucun cas d'une sorte de menace. »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT feu d'appui de canon|{param2:F1P}",
+				"Durée de feu d'appui de canon|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s",
+				"Énergie élémentaire|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Canal de distribution inconnu",
+		"info": "Pendant 4 s après avoir utilisé **Tir cristallin de cérémonie**, les DGT infligés par les attaques normales, chargées et plongeantes de Navia sont convertis en DGT Géo ne pouvant pas être enchantés et augmentent de 40 %."
+	},
+	"passive2": {
+		"name": "Réseau d'assistance mutuelle",
+		"info": "Pour chaque personnage Pyro, Électro, Cryo et Hydro présent dans l'équipe, l'ATQ de Navia augmente de 20 %. Cet effet peut être cumulé 2 fois maximum."
+	},
+	"passive3": {
+		"name": "Processus de transaction minutieuse",
+		"info": "Augmente les récompenses d'une expédition de 20 h à Fontaine de 25 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Équité",
+				"count": 3
+			},
+			{
+				"name": "Perle transocéanique",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Équité",
+				"count": 2
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Équité",
+				"count": 4
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Équité",
+				"count": 6
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Équité",
+				"count": 9
+			},
+			{
+				"name": "Morceau transocéanique",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Équité",
+				"count": 4
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 4
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Équité",
+				"count": 6
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 6
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Équité",
+				"count": 12
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 9
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Équité",
+				"count": 16
+			},
+			{
+				"name": "Cristal xénochromatique",
+				"count": 12
+			},
+			{
+				"name": "Ficelle de soie sans lumière",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

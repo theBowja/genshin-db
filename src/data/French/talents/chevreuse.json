@@ -1,0 +1,209 @@
+{
+	"name": "Chevreuse",
+	"combat1": {
+		"name": "Attaque normale : Pique de baïonnette (modifiée)",
+		"info": "**Attaque normale**\nEnchaîne jusqu'à 4 coups de lance.\n\n**Attaque chargée**\nConsomme de l'endurance pour charger en ligne droite et infliger des DGT aux ennemis sur la route.\n\n**Attaque plongeante**\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}+{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}",
+				"DGT attaque chargée|{param6:F1P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts",
+				"DGT durant la chute|{param8:F1P}",
+				"DGT chute basse/élevée|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Tir de suppression rapide à courte portée",
+		"info": "Chevreuse place rapidement son mousquet sur son épaule et tire sur l'ennemi pour infliger des DGT Pyro de zone.\nPendant une courte durée après que Chevreuse tire un coup de feu, les PV du personnage déployé sont restaurés de façon continue selon les PV max de Chevreuse.\nEn cas d'appui long, la compétence est déclenchée différemment.\n\n**Appui long**\nBascule en mode visée, ce qui permet à Chevreuse de verrouiller une cible dans son réticule pour déclencher un tir de suppression précis. Si Chevreuse en possède une, elle tire une cartouche surchargée à la place pour infliger des DGT Pyro plus importants sur une zone plus grande.\nChevreuse obtient 1 cartouche surchargée chaque fois qu'un personnage de l'équipe à proximité déclenche une réaction de Surcharge, mais ne peut posséder qu'une seule cartouche surchargée à la fois.\n\n**Arkhe : Ousia**\nRégulièrement, lorsque Chevreuse touche avec Tir de suppression rapide à courte portée, elle déclenche une lame fluide pour infliger des DGT Pyro chargés d'énergie ousia.",
+		"description": "« En fait, le règlement d'entraînement ne comportait que le terme « Tir de suppression », mais le protagoniste de ce roman estime qu'une terminologie élégante peut affecter la motivation des troupes, et même acculer les adversaires dès le départ... Je pense que c'est un bon point, alors j'ai modifié le règlement ! »",
+		"attributes": {
+			"labels": [
+				"DGT appui simple|{param1:F1P}",
+				"DGT appui long|{param2:F1P}",
+				"DGT cartouche surchargée|{param3:F1P}",
+				"Soins continus|{param5:F2P} PV max + {param6:I} PV",
+				"Durée des soins|{param4:F1} s",
+				"DGT lame fluide|{param7:F1P}",
+				"Intervalle de lame fluide|{param8:F1} s",
+				"Temps de recharge|{param9:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Anneau de grenades éclatantes",
+		"info": "Chevreuse tire une grenade explosive sur les ennemis avec son mousquet pour infliger des DGT Pyro de zone. Lorsque la grenade a touché, elle se divise en plusieurs obus explosifs secondaires.\nCes obus explosent après un court intervalle pour infliger des DGT Pyro aux ennemis proches.",
+		"description": "« Théoriquement, une explosion rectangulaire serait la plus efficace pour détruire les formations ennemies. Cependant, la section transversale de l'onde de choc d'une explosion est ronde, comme la plupart des gâteaux. Ainsi, les obus explosifs secondaires ne peuvent être disposés que comme les fruits sur un gâteau, formant un anneau sur le pourtour. »",
+		"attributes": {
+			"labels": [
+				"DGT grenade explosive|{param1:F1P}",
+				"DGT obus explosif secondaire|{param2:F1P}",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Tactique coordonnée",
+		"info": "Lorsque les personnages de l'équipe sont de l'élément Pyro ou Électro et qu'il y a au moins un personnage Pyro et un personnage Électro :\nChevreuse accorde une coordination aux personnages de l'équipe à proximité : lorsqu'un personnage a déclenché une réaction de Surcharge, les RÉS Pyro et Électro des ennemis touchés par cette réaction de Surcharge diminuent de 40 % pendant 6 s.\nLa coordination est annulée lorsque les types élémentaires des personnages de l'équipe ne répondent pas aux conditions de base de l'aptitude passive."
+	},
+	"passive2": {
+		"name": "Agencement vertical",
+		"info": "Lorsque Chevreuse a tiré une cartouche surchargée de **Tir de suppression rapide à courte portée**, l'ATQ de tous les personnages Pyro et Électro de l'équipe à proximité augmente, pendant 30 s, de 1 % pour chaque tranche de 1 000 PV max de Chevreuse. L'ATQ peut être augmentée d'un maximum de 40 % de cette manière."
+	},
+	"passive3": {
+		"name": "Pas redoublé",
+		"info": "Diminue la consommation d'endurance de vos personnages dans l'équipe de 20 % lors du sprint.\nNe peut pas être cumulé avec d'autres aptitudes passives aux effets identiques."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"name": "Enseignement de l'Ordre",
+				"count": 3
+			},
+			{
+				"name": "Engrenage de maillage",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 2
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 6
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"name": "Guide de l'Ordre",
+				"count": 9
+			},
+			{
+				"name": "Engrenage à coupe droite",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 4
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 4
+			},
+			{
+				"name": "Œil de tourbillon sans lumière",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 6
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 6
+			},
+			{
+				"name": "Œil de tourbillon sans lumière",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 12
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 9
+			},
+			{
+				"name": "Œil de tourbillon sans lumière",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"name": "Philosophie de l'Ordre",
+				"count": 16
+			},
+			{
+				"name": "Engrenage dynamique artificié",
+				"count": 12
+			},
+			{
+				"name": "Œil de tourbillon sans lumière",
+				"count": 2
+			},
+			{
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}
