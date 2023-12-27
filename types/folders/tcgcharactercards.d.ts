@@ -3,6 +3,9 @@ declare module "genshin-db" {
 		id: number;
 		name: string; // translated
 
+		transformsinto?: number[]; // list of card ids that this card can transform into. undefined if none. example: azhdaha into cryo azhdaha
+		istransformation?: boolean; // is this card only accessible through transformation
+
 		hp: number;
 		maxenergy: number;
 
