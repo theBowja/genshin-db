@@ -1,0 +1,100 @@
+{
+	"id": 3408,
+	"name": "Assault Specialist Mek - Ousia",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 34081,
+			"name": "Rapid Melee",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34082,
+			"name": "Shield Riposte",
+			"descriptionraw": "This character gains a <color=#FFFFFFFF>$[C134081]</color>. $[K53]: <color=#FFFFFFFF>$[S34085]</color>.",
+			"descriptionreplaced": "This character gains a <color=#FFFFFFFF>Shield Block</color>. <color=#FFFFFFFF>Prepare Skill</color>: <color=#FFFFFFFF>Shield Slice</color>.",
+			"description": "This character gains a Shield Block. Prepare Skill: Shield Slice.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34083,
+			"name": "Shield Sweep",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 2 <color=#FFFFFFFF>$[K5]</color> to all opposing characters on standby.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, deals 2 <color=#FFFFFFFF><color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby.",
+			"description": "Deals 2 Electro DMG, deals 2 Piercing DMG to all opposing characters on standby.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34084,
+			"name": "Arkhe: Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>After being damaged by characters with \"{SPRITE_PRESET#3505}Arkhe: Pneuma,\"</color> this character will become $[K1014], and <color=#FFFFFFFF>cannot use skills</color> until this Round ends.",
+			"descriptionreplaced": "<color=#FFFFFFFF>After being damaged by characters with \"{SPRITE_PRESET#3505}Arkhe: Pneuma,\"</color> this character will become <color=#FFFFFFFF>Deactivated</color>, and <color=#FFFFFFFF>cannot use skills</color> until this Round ends.",
+			"description": "After being damaged by characters with \"Arkhe: Pneuma,\" this character will become Deactivated, and cannot use skills until this Round ends.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 34085,
+			"name": "Shield Slice",
+			"descriptionraw": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(Prepare for 1 turn)\\nDeals 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "(Prepare for 1 turn)\nDeals 3 Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		}
+	]
+}

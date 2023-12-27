@@ -1,0 +1,114 @@
+{
+	"id": 3308,
+	"name": "Robot Áp Chế Chuyên Dụng - Ousia",
+	"transformsinto": [
+		3007
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Nguyên Tố Hỏa",
+		"Vũ Khí Khác",
+		"Ma Vật"
+	],
+	"skills": [
+		{
+			"id": 33081,
+			"name": "Bắn Tỉa Đoạn Ngắn",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Gây 1 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.",
+			"description": "Gây 1 điểm Sát Thương Nguyên Tố Hỏa.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33082,
+			"name": "Xạ Kích Ngắm Thẳng",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], gây <color=#FFFFFFFF>1 điểm $[K5]</color> cho tất cả nhân vật dự bị phe địch.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Gây 1 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>, gây <color=#FFFFFFFF>1 điểm <color=#FFFFFFFF>Sát Thương Xuyên Thấu</color></color> cho tất cả nhân vật dự bị phe địch.",
+			"description": "Gây 1 điểm Sát Thương Nguyên Tố Hỏa, gây 1 điểm Sát Thương Xuyên Thấu cho tất cả nhân vật dự bị phe địch.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33083,
+			"name": "Tổ Hợp Xạ Kích",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], sau đó lần lượt $[K53]: <color=#FFFFFFFF>$[S33085]</color> và <color=#FFFFFFFF>$[S33086]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>, sau đó lần lượt <color=#FFFFFFFF>Chuẩn Bị Kỹ Năng</color>: <color=#FFFFFFFF>Tổ Hợp Xạ Kích - Xả Đạn Hạng Nhẹ</color> và <color=#FFFFFFFF>Tổ Hợp Xạ Kích - Xuyên Thủng Hạng Nặng</color>.",
+			"description": "Gây 2 điểm Sát Thương Nguyên Tố Hỏa, sau đó lần lượt Chuẩn Bị Kỹ Năng: Tổ Hợp Xạ Kích - Xả Đạn Hạng Nhẹ và Tổ Hợp Xạ Kích - Xuyên Thủng Hạng Nặng.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33084,
+			"name": "Đặc Tính Năng Lượng: Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Sau khi chịu sát thương có {SPRITE_PRESET#3505}Sức Mạnh Nền Tảng: Pneuma do nhân vật gây ra:</color> Nhân vật này đổi sang $[K1014], và <color=#FFFFFFFF>không thể dùng kỹ năng</color> cho đến trước khi hiệp này kết thúc.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Sau khi chịu sát thương có {SPRITE_PRESET#3505}Sức Mạnh Nền Tảng: Pneuma do nhân vật gây ra:</color> Nhân vật này đổi sang <color=#FFFFFFFF>Trạng Thái Mất Năng Lượng</color>, và <color=#FFFFFFFF>không thể dùng kỹ năng</color> cho đến trước khi hiệp này kết thúc.",
+			"description": "Sau khi chịu sát thương có Sức Mạnh Nền Tảng: Pneuma do nhân vật gây ra: Nhân vật này đổi sang Trạng Thái Mất Năng Lượng, và không thể dùng kỹ năng cho đến trước khi hiệp này kết thúc.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 33085,
+			"name": "Tổ Hợp Xạ Kích - Xả Đạn Hạng Nhẹ",
+			"descriptionraw": "(Cần chuẩn bị 1 lượt hành động)\\nGây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], sau đó $[K53]: <color=#FFFFFFFF>$[S33086]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Cần chuẩn bị 1 lượt hành động)\\nGây 2 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>, sau đó <color=#FFFFFFFF>Chuẩn Bị Kỹ Năng</color>: <color=#FFFFFFFF>Tổ Hợp Xạ Kích - Xuyên Thủng Hạng Nặng</color>.",
+			"description": "(Cần chuẩn bị 1 lượt hành động)\nGây 2 điểm Sát Thương Nguyên Tố Hỏa, sau đó Chuẩn Bị Kỹ Năng: Tổ Hợp Xạ Kích - Xuyên Thủng Hạng Nặng.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": []
+		},
+		{
+			"id": 33086,
+			"name": "Tổ Hợp Xạ Kích - Xuyên Thủng Hạng Nặng",
+			"descriptionraw": "(Cần chuẩn bị 1 lượt hành động)\\nGây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Cần chuẩn bị 1 lượt hành động)\\nGây 2 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.",
+			"description": "(Cần chuẩn bị 1 lượt hành động)\nGây 2 điểm Sát Thương Nguyên Tố Hỏa.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": []
+		}
+	]
+}

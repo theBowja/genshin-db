@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "Страж руин",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Без элемента",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "Твёрдый удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "Спиральное приближение",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S30045]</color> и <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 1 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Частотный удар</color> и <color=#FFFFFFFF>Скоростной удар</color>.",
+			"description": "Наносит Физический урон, 1 ед., после чего начинается Подготовка навыка: Частотный удар и Скоростной удар.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "Залп на подавление",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Вызывает <color=#FFFFFFFF>$[C130041]</color> в области противника.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 4 ед. Вызывает <color=#FFFFFFFF>Снаряд-следопыт</color> в области противника.",
+			"description": "Наносит Физический урон, 4 ед. Вызывает Снаряд-следопыт в области противника.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "Стандартная броня",
+			"descriptionraw": "(Пассивный навык) $[K100], который получает этот персонаж, снижается вдвое (округляется в большую сторону)",
+			"descriptionreplaced": "(Пассивный навык) {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, который получает этот персонаж, снижается вдвое (округляется в большую сторону)",
+			"description": "(Пассивный навык) Физический урон, который получает этот персонаж, снижается вдвое (округляется в большую сторону)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "Частотный удар",
+			"descriptionraw": "(На подготовку требуется 1 раунд)\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(На подготовку требуется 1 раунд)\\nНаносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 1 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Скоростной удар</color>.",
+			"description": "(На подготовку требуется 1 раунд)\nНаносит Физический урон, 1 ед., после чего начинается Подготовка навыка: Скоростной удар.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "Скоростной удар",
+			"descriptionraw": "(На подготовку нужен 1 ход)\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа появляется бонусная энергия, 1 ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(На подготовку нужен 1 ход)\\nНаносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 1 ед. У персонажа появляется бонусная энергия, 1 ед.",
+			"description": "(На подготовку нужен 1 ход)\nНаносит Физический урон, 1 ед. У персонажа появляется бонусная энергия, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": []
+		}
+	]
+}

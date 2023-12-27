@@ -1,0 +1,107 @@
+{
+	"id": 3106,
+	"name": "Пустынник: Пылающий лёд",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Крио",
+		"Прочее",
+		"Пустынники"
+	],
+	"skills": [
+		{
+			"id": 31061,
+			"name": "Двойной разрез",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31062,
+			"name": "Двусторонняя нарезка",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 3 ед.",
+			"description": "Наносит Физический урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31063,
+			"name": "Стойкий натиск",
+			"descriptionraw": "У персонажа начинается $[K53]: <color=#FFFFFFFF>$[S31065]</color>.",
+			"descriptionreplaced": "У персонажа начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Стойкий натиск: Удар по всем фронтам</color>.",
+			"description": "У персонажа начинается Подготовка навыка: Стойкий натиск: Удар по всем фронтам.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31064,
+			"name": "Зловещий дух (Крио)",
+			"descriptionraw": "(Пассивный навык)<color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если у этого персонажа не более 7 HP, ему добавляется 1 $[K310] и <color=#FFFFFFFF>$[C131061]</color> (только 1 раз за игру).",
+			"descriptionreplaced": "(Пассивный навык)<color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если у этого персонажа не более 7 HP, ему добавляется 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color> и <color=#FFFFFFFF>Пробуждение духа предзнаменования: Крио</color> (только 1 раз за игру).",
+			"description": "(Пассивный навык)Когда этот персонаж получает урон: если у этого персонажа не более 7 HP, ему добавляется 1 Энергия и Пробуждение духа предзнаменования: Крио (только 1 раз за игру).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 31065,
+			"name": "Стойкий натиск: Удар по всем фронтам",
+			"descriptionraw": "(На подготовку нужно 2 хода)\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(На подготовку нужно 2 хода)\\nНаносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 6 ед.",
+			"description": "(На подготовку нужно 2 хода)\nНаносит Физический урон, 6 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		},
+		{
+			"id": 31066,
+			"name": "Стойкий натиск: Изготовка",
+			"descriptionraw": "(На подготовку нужен 1 ход)\\nПри следующем действии используется навык <color=#FFFFFFFF>$[S31065]</color>.",
+			"descriptionreplaced": "(На подготовку нужен 1 ход)\\nПри следующем действии используется навык <color=#FFFFFFFF>Стойкий натиск: Удар по всем фронтам</color>.",
+			"description": "(На подготовку нужен 1 ход)\nПри следующем действии используется навык Стойкий натиск: Удар по всем фронтам.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		}
+	]
+}

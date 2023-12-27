@@ -1,0 +1,103 @@
+{
+	"id": 3005,
+	"name": "Ruin Drake: Earthguard",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ไม่มีธาตุ",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"skills": [
+		{
+			"id": 30051,
+			"name": "Close Expulsion",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30052,
+			"name": "Sudden Charge",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 3 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 3 หน่วย",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30053,
+			"name": "Energy Surge",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย หากตัวละครนี้ดูดซับพลังงานธาตุแล้ว พลังงานธาตุที่ถูกดูดซับจะถูกปลดปล่อย ทำให้ความเสียหายนี้ +1 และเปลี่ยนเป็นความเสียหายธาตุที่ดูดซับได้",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 5 หน่วย หากตัวละครนี้ดูดซับพลังงานธาตุแล้ว พลังงานธาตุที่ถูกดูดซับจะถูกปลดปล่อย ทำให้ความเสียหายนี้ +1 และเปลี่ยนเป็นความเสียหายธาตุที่ดูดซับได้",
+			"description": "สร้างความเสียหายกายภาพ 5 หน่วย หากตัวละครนี้ดูดซับพลังงานธาตุแล้ว พลังงานธาตุที่ถูกดูดซับจะถูกปลดปล่อย ทำให้ความเสียหายนี้ +1 และเปลี่ยนเป็นความเสียหายธาตุที่ดูดซับได้",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30054,
+			"name": "Standard Armor",
+			"descriptionraw": "[ติดตัว] $[K100]ที่ตัวละครนี้ได้รับลดลงครึ่งหนึ่ง (ปัดเศษขึ้น)",
+			"descriptionreplaced": "[ติดตัว] {SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color>ที่ตัวละครนี้ได้รับลดลงครึ่งหนึ่ง (ปัดเศษขึ้น)",
+			"description": "[ติดตัว] ความเสียหายกายภาพที่ตัวละครนี้ได้รับลดลงครึ่งหนึ่ง (ปัดเศษขึ้น)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 30055,
+			"name": "Elemental Absorption",
+			"descriptionraw": "[ติดตัว] <color=#FFFFFFFF>เมื่อตัวละครไม่ได้อยู่ในสถานะดูดซับธาตุ และได้รับความเสียหายธาตุ: </color>จะดูดซับพลังงานธาตุนี้\\nเมื่อตัวละครได้รับความเสียหายธาตุที่ถูกดูดซับไปแล้ว ความเสียหายจะลดลงครึ่งหนึ่ง (ปัดเศษขึ้น)",
+			"descriptionreplaced": "[ติดตัว] <color=#FFFFFFFF>เมื่อตัวละครไม่ได้อยู่ในสถานะดูดซับธาตุ และได้รับความเสียหายธาตุ: </color>จะดูดซับพลังงานธาตุนี้\\nเมื่อตัวละครได้รับความเสียหายธาตุที่ถูกดูดซับไปแล้ว ความเสียหายจะลดลงครึ่งหนึ่ง (ปัดเศษขึ้น)",
+			"description": "[ติดตัว] เมื่อตัวละครไม่ได้อยู่ในสถานะดูดซับธาตุ และได้รับความเสียหายธาตุ: จะดูดซับพลังงานธาตุนี้\nเมื่อตัวละครได้รับความเสียหายธาตุที่ถูกดูดซับไปแล้ว ความเสียหายจะลดลงครึ่งหนึ่ง (ปัดเศษขึ้น)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 30056,
+			"name": "Elemental Absorption",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

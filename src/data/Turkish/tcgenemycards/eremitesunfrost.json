@@ -1,0 +1,107 @@
+{
+	"id": 3106,
+	"name": "Münzevi Soğuk Güneş",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Buz",
+		"Diğer Silahlar",
+		"Münzeviler"
+	],
+	"skills": [
+		{
+			"id": 31061,
+			"name": "Çifte Vuruş",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31062,
+			"name": "Çifte Kılıç Kesiği",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "3 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31063,
+			"name": "Cesur Taarruz",
+			"descriptionraw": "Bu karakter <color=#FFFFFFFF>$[S31065]</color> için $[K53] durumuna girer.",
+			"descriptionreplaced": "Bu karakter <color=#FFFFFFFF>Cesur Taarruz: Topyekun Saldırı</color> için <color=#FFFFFFFF>Beceri Hazırlama</color> durumuna girer.",
+			"description": "Bu karakter Cesur Taarruz: Topyekun Saldırı için Beceri Hazırlama durumuna girer.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31064,
+			"name": "Serbest Kalan Uğursuz Ruh (Buz)",
+			"descriptionraw": "(Pasif) <color=#FFFFFFFF>Bu karakter Hasar aldıktan sonra</color> 7 veya daha az Cana sahipse 1 $[K310] kazanır ve karaktere <color=#FFFFFFFF>$[C131061]</color> eklenir. (Her Düelloda bir defa)",
+			"descriptionreplaced": "(Pasif) <color=#FFFFFFFF>Bu karakter Hasar aldıktan sonra</color> 7 veya daha az Cana sahipse 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}Enerji</color> kazanır ve karaktere <color=#FFFFFFFF>Alamet Ruhunun Uyanışı: Buz</color> eklenir. (Her Düelloda bir defa)",
+			"description": "(Pasif) Bu karakter Hasar aldıktan sonra 7 veya daha az Cana sahipse 1 Enerji kazanır ve karaktere Alamet Ruhunun Uyanışı: Buz eklenir. (Her Düelloda bir defa)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 31065,
+			"name": "Cesur Taarruz: Topyekun Saldırı",
+			"descriptionraw": "(2 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(2 Tur hazırlanır)\\n6 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "(2 Tur hazırlanır)\n6 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		},
+		{
+			"id": 31066,
+			"name": "Cesur Taarruz: Hücum Duruşu",
+			"descriptionraw": "(1 Tur hazırlanır)\\nBu karakter, bir sonraki hamlesinde <color=#FFFFFFFF>$[S31065]</color> Becerisini kullanır.",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\nBu karakter, bir sonraki hamlesinde <color=#FFFFFFFF>Cesur Taarruz: Topyekun Saldırı</color> Becerisini kullanır.",
+			"description": "(1 Tur hazırlanır)\nBu karakter, bir sonraki hamlesinde Cesur Taarruz: Topyekun Saldırı Becerisini kullanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		}
+	]
+}

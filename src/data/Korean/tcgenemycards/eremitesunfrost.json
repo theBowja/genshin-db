@@ -1,0 +1,107 @@
+{
+	"id": 3106,
+	"name": "도금 여단·태양의 서리",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"기타 무기",
+		"도금 여단"
+	],
+	"skills": [
+		{
+			"id": 31061,
+			"name": "이중 참격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31062,
+			"name": "쌍검 합참",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 3pt 준다.",
+			"description": "물리 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31063,
+			"name": "차지 맹격",
+			"descriptionraw": "본 캐릭터가 <color=#FFFFFFFF>$[S31065]</color>의 $[K53]를 한다.",
+			"descriptionreplaced": "본 캐릭터가 <color=#FFFFFFFF>차지 맹격·혼신의 일격</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "본 캐릭터가 차지 맹격·혼신의 일격의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31064,
+			"name": "악령 해방·얼음",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 $[K310]를 1pt 획득하고 <color=#FFFFFFFF>$[C131061]</color>을 부착한다. (대전당 1회 제한)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 1pt 획득하고 <color=#FFFFFFFF>악령 소생·얼음</color>을 부착한다. (대전당 1회 제한)",
+			"description": "[패시브] 이 캐릭터가 피해를 받은 후: 이 캐릭터의 HP가 7pt 이하이면 원소 에너지를 1pt 획득하고 악령 소생·얼음을 부착한다. (대전당 1회 제한)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 31065,
+			"name": "차지 맹격·혼신의 일격",
+			"descriptionraw": "(2차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(2차례 행동 준비 필요)\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 6pt 준다.",
+			"description": "(2차례 행동 준비 필요)\n물리 피해를 6pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		},
+		{
+			"id": 31066,
+			"name": "차지 맹격·차징 태세",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n다음 행동 시 <color=#FFFFFFFF>$[S31065]</color> 스킬을 사용한다.",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n다음 행동 시 <color=#FFFFFFFF>차지 맹격·혼신의 일격</color> 스킬을 사용한다.",
+			"description": "(1차례 행동 준비 필요)\n다음 행동 시 차지 맹격·혼신의 일격 스킬을 사용한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		}
+	]
+}

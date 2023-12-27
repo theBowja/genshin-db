@@ -1,0 +1,102 @@
+{
+	"id": 3307,
+	"name": "Assault Specialist Mek - Pneuma",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 33071,
+			"name": "Up-Close Pummelling",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33072,
+			"name": "Multi-Smash",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and performs \"$[K53]\" for <color=#FFFFFFFF>$[S33075]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color> and performs \"<color=#FFFFFFFF>Prepare Skill</color>\" for <color=#FFFFFFFF>Tracking Truncheon</color>.",
+			"description": "Deals 1 Pyro DMG and performs \"Prepare Skill\" for Tracking Truncheon.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33073,
+			"name": "Sprinting Strike",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Deals 5 {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>.",
+			"description": "Deals 5 Pyro DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33074,
+			"name": "Arkhe: Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>After being damaged by characters with \"{SPRITE_PRESET#3504}Arkhe: Ousia,\"</color> this character will become $[K1014], and <color=#FFFFFFFF>cannot use skills</color> until this Round ends.",
+			"descriptionreplaced": "<color=#FFFFFFFF>After being damaged by characters with \"{SPRITE_PRESET#3504}Arkhe: Ousia,\"</color> this character will become <color=#FFFFFFFF>Deactivated</color>, and <color=#FFFFFFFF>cannot use skills</color> until this Round ends.",
+			"description": "After being damaged by characters with \"Arkhe: Ousia,\" this character will become Deactivated, and cannot use skills until this Round ends.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 33075,
+			"name": "Tracking Truncheon",
+			"descriptionraw": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Prepare for 1 turn)\\nDeals 2 {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>.",
+			"description": "(Prepare for 1 turn)\nDeals 2 Pyro DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": []
+		}
+	]
+}

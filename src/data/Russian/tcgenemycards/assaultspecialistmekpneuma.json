@@ -1,0 +1,102 @@
+{
+	"id": 3307,
+	"name": "Спецмек: Штурм (пневма)",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Пиро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 33071,
+			"name": "Ближняя потасовка",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33072,
+			"name": "Мульти-побоище",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S33075]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Ведущая дубинка</color>.",
+			"description": "Наносит Пиро урон, 1 ед., после чего начинается Подготовка навыка: Ведущая дубинка.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33073,
+			"name": "Спринт-удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 5 ед.",
+			"description": "Наносит Пиро урон, 5 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33074,
+			"name": "Энергетическое свойство: пневма",
+			"descriptionraw": "<color=#FFFFFFFF>Получив урон от персонажа с {SPRITE_PRESET#3504}архэ: усия,</color> этот персонаж получает состояние «$[K1014]» и <color=#FFFFFFFF>не может использовать навыки</color> до конца раунда.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Получив урон от персонажа с {SPRITE_PRESET#3504}архэ: усия,</color> этот персонаж получает состояние «<color=#FFFFFFFF>Деактивировано</color>» и <color=#FFFFFFFF>не может использовать навыки</color> до конца раунда.",
+			"description": "Получив урон от персонажа с архэ: усия, этот персонаж получает состояние «Деактивировано» и не может использовать навыки до конца раунда.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 33075,
+			"name": "Ведущая дубинка",
+			"descriptionraw": "(На подготовку нужен 1 ход)\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(На подготовку нужен 1 ход)\\nНаносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 2 ед.",
+			"description": "(На подготовку нужен 1 ход)\nНаносит Пиро урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		}
+	]
+}

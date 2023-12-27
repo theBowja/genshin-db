@@ -555,6 +555,7 @@ gameVersion = "4.3"; // new data will use this as added version
 // importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
+// importData('tcgenemycards');
 // importData('tcgactioncards');
 // importData('tcgcardbacks');
 // importData('tcgcardboxes');

@@ -1,0 +1,109 @@
+{
+	"id": 3206,
+	"name": "Goldbrigade – Wüstenwasser",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Hydro",
+		"Andere Waffen",
+		"Goldbrigade"
+	],
+	"skills": [
+		{
+			"id": 32061,
+			"name": "Gewandter Durchschlag",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32062,
+			"name": "Huschende Attacke",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 3 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32063,
+			"name": "Wirbeltanz-Hiebe",
+			"descriptionraw": "Diese Figur $[K53|s1]: <color=#FFFFFFFF>$[S32065]</color> und <color=#FFFFFFFF>$[S32066]</color>.",
+			"descriptionreplaced": "Diese Figur <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Wirbeltanz-Hiebe – Vorstoß</color> und <color=#FFFFFFFF>Wirbeltanz-Hiebe – Fixpunkt</color>.",
+			"description": "Diese Figur bereitet folgende Fähigkeiten vor: Wirbeltanz-Hiebe – Vorstoß und Wirbeltanz-Hiebe – Fixpunkt.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32064,
+			"name": "Freilassung des Geists – Hydro",
+			"descriptionraw": "Passiv – <color=#FFFFFFFF>Nach Erleiden von SCH durch die Figur:</color> Erhält 1 Pkt. $[K310] und <color=#FFFFFFFF>$[C132061]</color>, wenn diese Figur nicht mehr als 7 LP hat (max. 1-mal pro Duell).",
+			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Nach Erleiden von SCH durch die Figur:</color> Erhält 1 Pkt. <color=#FFFFFFFF>{SPRITE_PRESET#1110}Aufladung</color> und <color=#FFFFFFFF>Erwachen des Geistes – Hydro</color>, wenn diese Figur nicht mehr als 7 LP hat (max. 1-mal pro Duell).",
+			"description": "Passiv – Nach Erleiden von SCH durch die Figur: Erhält 1 Pkt. Aufladung und Erwachen des Geistes – Hydro, wenn diese Figur nicht mehr als 7 LP hat (max. 1-mal pro Duell).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 32065,
+			"name": "Wirbeltanz-Hiebe – Vorstoß",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], $[K53|s1]: <color=#FFFFFFFF>$[S32066]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Wirbeltanz-Hiebe – Fixpunkt</color>.",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nVerursacht 2 Pkt. phys. SCH, bereitet folgende Fähigkeiten vor: Wirbeltanz-Hiebe – Fixpunkt.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 32066,
+			"name": "Wirbeltanz-Hiebe – Fixpunkt",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 3 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nVerursacht 3 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": []
+		}
+	]
+}

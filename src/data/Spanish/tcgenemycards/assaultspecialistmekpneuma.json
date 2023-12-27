@@ -1,0 +1,102 @@
+{
+	"id": 3307,
+	"name": "Mecaespecialista Asaltador - Pneuma",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 33071,
+			"name": "Sacudida de corto alcance",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33072,
+			"name": "Multiabatimiento",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y $[K53|s1] <color=#FFFFFFFF>$[S33075]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Porrazo aplastante</color>.",
+			"description": "Inflige 1 pt. de Daño Pyro y prepara la habilidad Porrazo aplastante.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33073,
+			"name": "Asalto arrollador",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 5 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "Inflige 5 pts. de Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33074,
+			"name": "Energía pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Tras recibir daño cargado de {SPRITE_PRESET#3504}arjé: ousía</color>, este personaje entra en $[K1014|s1] y <color=#FFFFFFFF>no puede usar habilidades</color> hasta el fin de la ronda actual.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Tras recibir daño cargado de {SPRITE_PRESET#3504}arjé: ousía</color>, este personaje entra en <color=#FFFFFFFF>estado desactivado</color> y <color=#FFFFFFFF>no puede usar habilidades</color> hasta el fin de la ronda actual.",
+			"description": "Tras recibir daño cargado de arjé: ousía, este personaje entra en estado desactivado y no puede usar habilidades hasta el fin de la ronda actual.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 33075,
+			"name": "Porrazo aplastante",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 2 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 2 pts. de Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": []
+		}
+	]
+}

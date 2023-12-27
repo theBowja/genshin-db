@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "Guardián de las Ruinas",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sin tipo elemental",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "Asalto adusto",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "Acercamiento espiral",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y $[K53|s2] <color=#FFFFFFFF>$[S30045]</color> y <color=#FFFFFFFF>$[S30046]</color> respectivamente.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> y <color=#FFFFFFFF>prepara las habilidades</color> <color=#FFFFFFFF>Girogolpe frecuente</color> y <color=#FFFFFFFF>Girogolpe veloz</color> respectivamente.",
+			"description": "Inflige 1 pt. de Daño Físico y prepara las habilidades Girogolpe frecuente y Girogolpe veloz respectivamente.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "Disparo supresor",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C130041|s1]</color> en el campo del rival.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> y crea un <color=#FFFFFFFF>proyectil persecutor</color> en el campo del rival.",
+			"description": "Inflige 4 pts. de Daño Físico y crea un proyectil persecutor en el campo del rival.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "Armadura estándar",
+			"descriptionraw": "Pasiva: el $[K100] que recibe el personaje se reduce a la mitad (se redondea hacia arriba).",
+			"descriptionreplaced": "Pasiva: el {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> que recibe el personaje se reduce a la mitad (se redondea hacia arriba).",
+			"description": "Pasiva: el Daño Físico que recibe el personaje se reduce a la mitad (se redondea hacia arriba).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "Girogolpe frecuente",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y $[K53|s1] <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 1 pt. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Girogolpe veloz</color>.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 1 pt. de Daño Físico y prepara la habilidad Girogolpe veloz.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "Girogolpe veloz",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene Energía +1 adicional.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 1 pt. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> y este personaje obtiene Energía +1 adicional.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 1 pt. de Daño Físico y este personaje obtiene Energía +1 adicional.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": []
+		}
+	]
+}

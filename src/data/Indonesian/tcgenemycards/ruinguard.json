@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "Ruin Guard",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Tidak ada tipe elemen",
+		"Senjata Lain",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "Stern Blow",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "Spiral Close-In",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], lalu $[K53|s1]: <color=#FFFFFFFF>$[S30045]</color> dan <color=#FFFFFFFF>$[S30046]</color> secara terpisah.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>, lalu <color=#FFFFFFFF>mempersiapkan Skill</color>: <color=#FFFFFFFF>High-Frequency Whirling Assault</color> dan <color=#FFFFFFFF>Hyperspeed Whirling Assault</color> secara terpisah.",
+			"description": "Mengakibatkan 1 poin Physical DMG, lalu mempersiapkan Skill: High-Frequency Whirling Assault dan Hyperspeed Whirling Assault secara terpisah.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "Suppressive Volley",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan menciptakan <color=#FFFFFFFF>$[C130041]</color> di area lawan.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 4 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color> dan menciptakan <color=#FFFFFFFF>Seeking Missile</color> di area lawan.",
+			"description": "Mengakibatkan 4 poin Physical DMG dan menciptakan Seeking Missile di area lawan.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "Standard Armor",
+			"descriptionraw": "[Pasif] $[K100] yang diterima Karakter ini berkurang setengah. (Dibulatkan ke atas)",
+			"descriptionreplaced": "[Pasif] {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color> yang diterima Karakter ini berkurang setengah. (Dibulatkan ke atas)",
+			"description": "[Pasif] Physical DMG yang diterima Karakter ini berkurang setengah. (Dibulatkan ke atas)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "High-Frequency Whirling Assault",
+			"descriptionraw": "Persiapkan selama 1 giliran.\\nMengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], lalu $[K53|s1]: <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Persiapkan selama 1 giliran.\\nMengakibatkan 1 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>, lalu <color=#FFFFFFFF>mempersiapkan Skill</color>: <color=#FFFFFFFF>Hyperspeed Whirling Assault</color>.",
+			"description": "Persiapkan selama 1 giliran.\nMengakibatkan 1 poin Physical DMG, lalu mempersiapkan Skill: Hyperspeed Whirling Assault.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "Hyperspeed Whirling Assault",
+			"descriptionraw": "Persiapkan selama 1 giliran.\\nMengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Karakter ini juga akan mendapatkan 1 poin Energy tambahan.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Persiapkan selama 1 giliran.\\nMengakibatkan 1 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>. Karakter ini juga akan mendapatkan 1 poin Energy tambahan.",
+			"description": "Persiapkan selama 1 giliran.\nMengakibatkan 1 poin Physical DMG. Karakter ini juga akan mendapatkan 1 poin Energy tambahan.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		}
+	]
+}

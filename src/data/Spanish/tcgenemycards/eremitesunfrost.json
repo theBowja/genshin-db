@@ -1,0 +1,107 @@
+{
+	"id": 3106,
+	"name": "Eremita Congelafuegos",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Cryo",
+		"Otras armas",
+		"Eremita"
+	],
+	"skills": [
+		{
+			"id": 31061,
+			"name": "Tajo doble",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31062,
+			"name": "Doble filo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 3 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31063,
+			"name": "Contusión potenciada",
+			"descriptionraw": "Este personaje $[K53|s1] <color=#FFFFFFFF>$[S31065]</color>.",
+			"descriptionreplaced": "Este personaje <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Contusión potenciada: Golpe culminante</color>.",
+			"description": "Este personaje prepara la habilidad Contusión potenciada: Golpe culminante.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31064,
+			"name": "Liberación de Ominoespíritu: Cryo",
+			"descriptionraw": "Pasiva: si este personaje tiene 7 pts. de Vida o menos <color=#FFFFFFFF>después de recibir daño</color>, obtiene $[K310] +1 y el efecto de <color=#FFFFFFFF>$[C131061|s1]</color> (solo se puede usar 1 vez por partida).",
+			"descriptionreplaced": "Pasiva: si este personaje tiene 7 pts. de Vida o menos <color=#FFFFFFFF>después de recibir daño</color>, obtiene <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energía</color> +1 y el efecto de <color=#FFFFFFFF>despertar de Ominoespíritu</color> (solo se puede usar 1 vez por partida).",
+			"description": "Pasiva: si este personaje tiene 7 pts. de Vida o menos después de recibir daño, obtiene Energía +1 y el efecto de despertar de Ominoespíritu (solo se puede usar 1 vez por partida).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 31065,
+			"name": "Contusión potenciada: Golpe culminante",
+			"descriptionraw": "Necesita prepararse durante 2 turnos.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Necesita prepararse durante 2 turnos.\\nInflige 6 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Necesita prepararse durante 2 turnos.\nInflige 6 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": []
+		},
+		{
+			"id": 31066,
+			"name": "Contusión potenciada: Posición de carga",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nUsa la habilidad <color=#FFFFFFFF>$[S31065]</color> en la siguiente acción.",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nUsa la habilidad <color=#FFFFFFFF>Contusión potenciada: Golpe culminante</color> en la siguiente acción.",
+			"description": "Necesita prepararse durante 1 turno.\nUsa la habilidad Contusión potenciada: Golpe culminante en la siguiente acción.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": []
+		}
+	]
+}

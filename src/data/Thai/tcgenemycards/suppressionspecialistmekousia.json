@@ -1,0 +1,114 @@
+{
+	"id": 3308,
+	"name": "จักรกลปราบปราม - สสาร",
+	"transformsinto": [
+		3007
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ธาตุไฟ",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"skills": [
+		{
+			"id": 33081,
+			"name": "Short-Range Snap Fire",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 1 หน่วย",
+			"description": "สร้างความเสียหายไฟ 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33082,
+			"name": "Spread Fire",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และสร้าง<color=#FFFFFFFF>$[K5] 1 หน่วย</color> ให้แก่ศัตรูที่อยู่นอกสนามทั้งหมด",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 1 หน่วย และสร้าง<color=#FFFFFFFF><color=#FFFFFFFF>ความเสียหายทะลวง</color> 1 หน่วย</color> ให้แก่ศัตรูที่อยู่นอกสนามทั้งหมด",
+			"description": "สร้างความเสียหายไฟ 1 หน่วย และสร้างความเสียหายทะลวง 1 หน่วย ให้แก่ศัตรูที่อยู่นอกสนามทั้งหมด",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33083,
+			"name": "Combined Fire",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย จากนั้นจะดำเนินการ$[K53]: <color=#FFFFFFFF>$[S33085]</color> และ <color=#FFFFFFFF>$[S33086]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 2 หน่วย จากนั้นจะดำเนินการ<color=#FFFFFFFF>เตรียมสกิล</color>: <color=#FFFFFFFF>Combined Fire: Light Barrage</color> และ <color=#FFFFFFFF>Combined Fire: Piercing Salvo</color>",
+			"description": "สร้างความเสียหายไฟ 2 หน่วย จากนั้นจะดำเนินการเตรียมสกิล: Combined Fire: Light Barrage และ Combined Fire: Piercing Salvo",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33084,
+			"name": "คุณสมบัติพลังงาน: พลังสสาร",
+			"descriptionraw": "<color=#FFFFFFFF>หลังจากตัวละครที่มี \"{SPRITE_PRESET#3505}พลังปฐมภูมิ: วิญญาณ\" สร้างความเสียหาย: </color>ตัวละครนี้จะถูกเปลี่ยนเป็น$[K1014] และจะ<color=#FFFFFFFF>ไม่สามารถใช้สกิล</color>ได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"descriptionreplaced": "<color=#FFFFFFFF>หลังจากตัวละครที่มี \"{SPRITE_PRESET#3505}พลังปฐมภูมิ: วิญญาณ\" สร้างความเสียหาย: </color>ตัวละครนี้จะถูกเปลี่ยนเป็น<color=#FFFFFFFF>\"รูปแบบไร้พลังงาน\"</color> และจะ<color=#FFFFFFFF>ไม่สามารถใช้สกิล</color>ได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"description": "หลังจากตัวละครที่มี \"พลังปฐมภูมิ: วิญญาณ\" สร้างความเสียหาย: ตัวละครนี้จะถูกเปลี่ยนเป็น\"รูปแบบไร้พลังงาน\" และจะไม่สามารถใช้สกิลได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 33085,
+			"name": "Combined Fire: Light Barrage",
+			"descriptionraw": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย จากนั้นจะ$[K53]: <color=#FFFFFFFF>$[S33086]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 2 หน่วย จากนั้นจะ<color=#FFFFFFFF>เตรียมสกิล</color>: <color=#FFFFFFFF>Combined Fire: Piercing Salvo</color>",
+			"description": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\nสร้างความเสียหายไฟ 2 หน่วย จากนั้นจะเตรียมสกิล: Combined Fire: Piercing Salvo",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": []
+		},
+		{
+			"id": 33086,
+			"name": "Combined Fire: Piercing Salvo",
+			"descriptionraw": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 2 หน่วย",
+			"description": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\nสร้างความเสียหายไฟ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": []
+		}
+	]
+}

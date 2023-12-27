@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "Harabe Muhafızı",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Element Türü Yok",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "Sağlam Darbe",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "Yakın Mesafeli Sarmal",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, ardından <color=#FFFFFFFF>$[S30045]</color> ve <color=#FFFFFFFF>$[S30046]</color> için ayrı ayrı \"$[K53]\" kullanır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir, ardından <color=#FFFFFFFF>Yüksek Frekanslı Sarmal Saldırı</color> ve <color=#FFFFFFFF>Yüksek Hızlı Sarmal Saldırı</color> için ayrı ayrı \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "1 Fiziksel Hasar verir, ardından Yüksek Frekanslı Sarmal Saldırı ve Yüksek Hızlı Sarmal Saldırı için ayrı ayrı \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "Baskılama Bombardımanı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve rakibin alanında 1 <color=#FFFFFFFF>$[C130041]</color> oluşturur.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir ve rakibin alanında 1 <color=#FFFFFFFF>Güdümlü Füze</color> oluşturur.",
+			"description": "4 Fiziksel Hasar verir ve rakibin alanında 1 Güdümlü Füze oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "Standart Zırh",
+			"descriptionraw": "(Pasif) Bu karakterin aldığı $[K100] yarıya iner. (Hasar değeri yuvarlanır)",
+			"descriptionreplaced": "(Pasif) Bu karakterin aldığı {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> yarıya iner. (Hasar değeri yuvarlanır)",
+			"description": "(Pasif) Bu karakterin aldığı Fiziksel Hasar yarıya iner. (Hasar değeri yuvarlanır)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "Yüksek Frekanslı Sarmal Saldırı",
+			"descriptionraw": "(1 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Ardından <color=#FFFFFFFF>$[S30046]</color> için \"$[K53]\" kullanır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\n1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir. Ardından <color=#FFFFFFFF>Yüksek Hızlı Sarmal Saldırı</color> için \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "(1 Tur hazırlanır)\n1 Fiziksel Hasar verir. Ardından Yüksek Hızlı Sarmal Saldırı için \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "Yüksek Hızlı Sarmal Saldırı",
+			"descriptionraw": "(1 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bu karakter ayrıca 1 bonus Enerji kazanır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\n1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir. Bu karakter ayrıca 1 bonus Enerji kazanır.",
+			"description": "(1 Tur hazırlanır)\n1 Fiziksel Hasar verir. Bu karakter ayrıca 1 bonus Enerji kazanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": []
+		}
+	]
+}

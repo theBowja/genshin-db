@@ -1,0 +1,107 @@
+{
+	"id": 3106,
+	"name": "Givre solaire des Érémites",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Cryo",
+		"Autre arme",
+		"Érémites"
+	],
+	"skills": [
+		{
+			"id": 31061,
+			"name": "Entaille double",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31062,
+			"name": "Tranchée double",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 3 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31063,
+			"name": "Contusion améliorée",
+			"descriptionraw": "Le personnage $[K53|s1] : <color=#FFFFFFFF>$[S31065]</color>.",
+			"descriptionreplaced": "Le personnage <color=#FFFFFFFF>prépare la capacité</color> : <color=#FFFFFFFF>Contusion améliorée : Frappe totale</color>.",
+			"description": "Le personnage prépare la capacité : Contusion améliorée : Frappe totale.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31064,
+			"name": "Délivrance d'esprit sinistre (Cryo)",
+			"descriptionraw": "(Passif) <color=#FFFFFFFF>Lorsque le personnage a subi des DGT</color> : Il obtient 1 $[K310|s2] et un <color=#FFFFFFFF>$[C131061|s1]</color> s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
+			"descriptionreplaced": "(Passif) <color=#FFFFFFFF>Lorsque le personnage a subi des DGT</color> : Il obtient 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}charge</color> et un <color=#FFFFFFFF>éveil d'esprit sinistre (Cryo)</color> s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
+			"description": "(Passif) Lorsque le personnage a subi des DGT : Il obtient 1 charge et un éveil d'esprit sinistre (Cryo) s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 31065,
+			"name": "Contusion améliorée : Frappe totale",
+			"descriptionraw": "(À préparer pendant 2 tours)\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(À préparer pendant 2 tours)\\nInflige 6 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "(À préparer pendant 2 tours)\nInflige 6 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": []
+		},
+		{
+			"id": 31066,
+			"name": "Contusion améliorée : Posture de charge",
+			"descriptionraw": "(À préparer pendant 1 tour)\\nLors de son prochain tour, le personnage utilise directement la capacité : <color=#FFFFFFFF>$[S31065]</color>.",
+			"descriptionreplaced": "(À préparer pendant 1 tour)\\nLors de son prochain tour, le personnage utilise directement la capacité : <color=#FFFFFFFF>Contusion améliorée : Frappe totale</color>.",
+			"description": "(À préparer pendant 1 tour)\nLors de son prochain tour, le personnage utilise directement la capacité : Contusion améliorée : Frappe totale.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": []
+		}
+	]
+}

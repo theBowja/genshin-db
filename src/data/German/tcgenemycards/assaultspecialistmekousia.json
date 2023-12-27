@@ -1,0 +1,100 @@
+{
+	"id": 3408,
+	"name": "Mecha – Typ: Angriffsspezialist – Ousia",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 34081,
+			"name": "Flinke Nahkampfmanöver",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34082,
+			"name": "Schildkonter",
+			"descriptionraw": "Erhält selbst <color=#FFFFFFFF>$[C134081]</color> und $[K53|s1]: <color=#FFFFFFFF>$[S34085]</color>.",
+			"descriptionreplaced": "Erhält selbst <color=#FFFFFFFF>Schildblockade</color> und <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Schildklingenhiebe</color>.",
+			"description": "Erhält selbst Schildblockade und bereitet folgende Fähigkeiten vor: Schildklingenhiebe.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34083,
+			"name": "Schildkantenschläge",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], fügt allen inaktiven Figuren des Gegners 2 Pkt. <color=#FFFFFFFF>$[K5|s1]</color> zu.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, fügt allen inaktiven Figuren des Gegners 2 Pkt. <color=#FFFFFFFF><color=#FFFFFFFF>durchdringenden SCH</color></color> zu.",
+			"description": "Verursacht 2 Pkt. Elektro-SCH, fügt allen inaktiven Figuren des Gegners 2 Pkt. durchdringenden SCH zu.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34084,
+			"name": "Energiesignatur – Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3505}Arkhe – Pneuma“ versehene Figur:</color> Diese Figur wird in den $[K1014] eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3505}Arkhe – Pneuma“ versehene Figur:</color> Diese Figur wird in den <color=#FFFFFFFF>„Deaktiviert-Modus“</color> eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"description": "Nach Erleiden von SCH durch eine mit „Arkhe – Pneuma“ versehene Figur: Diese Figur wird in den „Deaktiviert-Modus“ eintreten und bis Endphase dieser Runde keine Fähigkeit anwenden können.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 34085,
+			"name": "Schildklingenhiebe",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 3 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>.",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nVerursacht 3 Pkt. Elektro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		}
+	]
+}

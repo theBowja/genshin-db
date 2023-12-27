@@ -1,0 +1,100 @@
+{
+	"id": 3408,
+	"name": "Robot Đặc Công Chuyên Dụng - Ousia",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Nguyên Tố Lôi",
+		"Vũ Khí Khác",
+		"Ma Vật"
+	],
+	"skills": [
+		{
+			"id": 34081,
+			"name": "Cận Chiến Nhanh Nhẹn",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34082,
+			"name": "Khiên Phản Kích",
+			"descriptionraw": "Nhân vật này áp dụng <color=#FFFFFFFF>$[C134081]</color> và $[K53]: <color=#FFFFFFFF>$[S34085]</color>.",
+			"descriptionreplaced": "Nhân vật này áp dụng <color=#FFFFFFFF>Tấm Khiên Ngăn Chặn</color> và <color=#FFFFFFFF>Chuẩn Bị Kỹ Năng</color>: <color=#FFFFFFFF>Lưỡi Khiên Chia Cắt</color>.",
+			"description": "Nhân vật này áp dụng Tấm Khiên Ngăn Chặn và Chuẩn Bị Kỹ Năng: Lưỡi Khiên Chia Cắt.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34083,
+			"name": "Vung Khiên Quét Ngang",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], gây 2 điểm <color=#FFFFFFFF>$[K5]</color> cho tất cả nhân vật dự bị của kẻ địch.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2104}<color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color>, gây 2 điểm <color=#FFFFFFFF><color=#FFFFFFFF>Sát Thương Xuyên Thấu</color></color> cho tất cả nhân vật dự bị của kẻ địch.",
+			"description": "Gây 2 điểm Sát Thương Nguyên Tố Lôi, gây 2 điểm Sát Thương Xuyên Thấu cho tất cả nhân vật dự bị của kẻ địch.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34084,
+			"name": "Đặc Tính Năng Lượng: Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Sau khi chịu sát thương có {SPRITE_PRESET#3505}Sức Mạnh Nền Tảng: Pneuma do nhân vật gây ra:</color> Nhân vật này đổi sang $[K1014], và <color=#FFFFFFFF>không thể dùng kỹ năng</color> cho đến trước khi hiệp này kết thúc.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Sau khi chịu sát thương có {SPRITE_PRESET#3505}Sức Mạnh Nền Tảng: Pneuma do nhân vật gây ra:</color> Nhân vật này đổi sang <color=#FFFFFFFF>Trạng Thái Mất Năng Lượng</color>, và <color=#FFFFFFFF>không thể dùng kỹ năng</color> cho đến trước khi hiệp này kết thúc.",
+			"description": "Sau khi chịu sát thương có Sức Mạnh Nền Tảng: Pneuma do nhân vật gây ra: Nhân vật này đổi sang Trạng Thái Mất Năng Lượng, và không thể dùng kỹ năng cho đến trước khi hiệp này kết thúc.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 34085,
+			"name": "Lưỡi Khiên Chia Cắt",
+			"descriptionraw": "(Cần chuẩn bị 1 lượt hành động)\\nGây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(Cần chuẩn bị 1 lượt hành động)\\nGây 3 điểm {SPRITE_PRESET#2104}<color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color>.",
+			"description": "(Cần chuẩn bị 1 lượt hành động)\nGây 3 điểm Sát Thương Nguyên Tố Lôi.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": []
+		}
+	]
+}

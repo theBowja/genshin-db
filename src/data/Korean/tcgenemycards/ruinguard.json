@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "유적 가디언",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"원소 타입 없음",
+		"기타 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "견고한 타격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "회전 방어",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S30045]</color>과 <color=#FFFFFFFF>$[S30046]</color>의 $[K53]를 한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 1pt 주고 <color=#FFFFFFFF>고속 회전격</color>과 <color=#FFFFFFFF>초고속 회전격</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "물리 피해를 1pt 주고 고속 회전격과 초고속 회전격의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "제압 일제 사격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대방 필드에 <color=#FFFFFFFF>$[C130041]</color>을 생성한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 4pt 주고 상대방 필드에 <color=#FFFFFFFF>유도폭탄</color>을 생성한다.",
+			"description": "물리 피해를 4pt 주고 상대방 필드에 유도폭탄을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "표준 외갑",
+			"descriptionraw": "[패시브] 이 캐릭터가 받는 $[K100]가 절반으로 감소한다. (올림 처리)",
+			"descriptionreplaced": "[패시브] 이 캐릭터가 받는 {SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>가 절반으로 감소한다. (올림 처리)",
+			"description": "[패시브] 이 캐릭터가 받는 물리 피해가 절반으로 감소한다. (올림 처리)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "고속 회전격",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S30046]</color>의 $[K53]를 한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 1pt 주고 <color=#FFFFFFFF>초고속 회전격</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "(1차례 행동 준비 필요)\n물리 피해를 1pt 주고 초고속 회전격의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "초고속 회전격",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 이 캐릭터가 추가로 원소 에너지를 1pt 획득한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 1pt 주고 이 캐릭터가 추가로 원소 에너지를 1pt 획득한다.",
+			"description": "(1차례 행동 준비 필요)\n물리 피해를 1pt 주고 이 캐릭터가 추가로 원소 에너지를 1pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": []
+		}
+	]
+}

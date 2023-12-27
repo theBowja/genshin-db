@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "Ruinenwächter",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Kein Elementartyp",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "Heftiger Anschlag",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "Wirbelnde Annäherung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], $[K53|s1]: <color=#FFFFFFFF>$[S30045]</color> und <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Hochfrequenter Wirbelangriff</color> und <color=#FFFFFFFF>Ultraschneller Wirbelangriff</color>.",
+			"description": "Verursacht 1 Pkt. phys. SCH, bereitet folgende Fähigkeiten vor: Hochfrequenter Wirbelangriff und Ultraschneller Wirbelangriff.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "Unterdrückungsschüsse",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft auf dem Feld des Gegners 1 <color=#FFFFFFFF>$[C130041]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, erschafft auf dem Feld des Gegners 1 <color=#FFFFFFFF>Verfolgungsgeschoss</color>.",
+			"description": "Verursacht 4 Pkt. phys. SCH, erschafft auf dem Feld des Gegners 1 Verfolgungsgeschoss.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "Standard-Rüstung",
+			"descriptionraw": "Passiv – $[K100|s2] an dieser Figur wird halbiert (aufgerundet).",
+			"descriptionreplaced": "Passiv – {SPRITE_PRESET#2100}<color=#FFFFFFFF>Phys. SCH</color> an dieser Figur wird halbiert (aufgerundet).",
+			"description": "Passiv – Phys. SCH an dieser Figur wird halbiert (aufgerundet).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "Hochfrequenter Wirbelangriff",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], $[K53|s1]: <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 1 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Ultraschneller Wirbelangriff</color>.",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nVerursacht 1 Pkt. phys. SCH, bereitet folgende Fähigkeiten vor: Ultraschneller Wirbelangriff.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "Ultraschneller Wirbelangriff",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst zusätzlich 1 Pkt. Aufladung.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 1 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, erhält selbst zusätzlich 1 Pkt. Aufladung.",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nVerursacht 1 Pkt. phys. SCH, erhält selbst zusätzlich 1 Pkt. Aufladung.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		}
+	]
+}

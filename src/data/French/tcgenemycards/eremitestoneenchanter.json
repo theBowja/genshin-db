@@ -1,0 +1,97 @@
+{
+	"id": 3606,
+	"name": "Enchanteur graveleux des Érémites",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Géo",
+		"Autre arme",
+		"Érémites"
+	],
+	"skills": [
+		{
+			"id": 36061,
+			"name": "Triple frappe sismique",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 36062,
+			"name": "Fissuration de la roche",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>.",
+			"description": "Inflige 3 pts de DGT Géo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 36063,
+			"name": "Délivrance d'esprit sinistre (Géo)",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque l'<color=#FFFFFFFF>$[C136051|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color> et invoque l'<color=#FFFFFFFF>esprit sinistre du varan de pierre</color>.",
+			"description": "Inflige 3 pts de DGT Géo et invoque l'esprit sinistre du varan de pierre.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 36064,
+			"name": "Puissance d'esprit sinistre",
+			"descriptionraw": "(Passif) Lorsque le personnage a subi des DGT : Il obtient 1 charge s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
+			"descriptionreplaced": "(Passif) Lorsque le personnage a subi des DGT : Il obtient 1 charge s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
+			"description": "(Passif) Lorsque le personnage a subi des DGT : Il obtient 1 charge s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 36065,
+			"name": "Varan de pierre : Posture protectrice",
+			"descriptionraw": "(Passif) Au début de chaque manche, le bouclier est actualisé s'il y a une ou plusieurs invocations.",
+			"descriptionreplaced": "(Passif) Au début de chaque manche, le bouclier est actualisé s'il y a une ou plusieurs invocations.",
+			"description": "(Passif) Au début de chaque manche, le bouclier est actualisé s'il y a une ou plusieurs invocations.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,103 @@
+{
+	"id": 3005,
+	"name": "遺跡ドレイク·陸行",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"元素タイプなし",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 30051,
+			"name": "近接駆逐",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30052,
+			"name": "突進衝撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を3与える。",
+			"description": "物理ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30053,
+			"name": "エネルギーの奔流",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。本キャラがすでに元素エネルギーを吸収している場合、吸収した元素を放ち、このダメージ+1。さらに、与えるダメージが吸収した元素のダメージへと変わる。",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を5与える。本キャラがすでに元素エネルギーを吸収している場合、吸収した元素を放ち、このダメージ+1。さらに、与えるダメージが吸収した元素のダメージへと変わる。",
+			"description": "物理ダメージを5与える。本キャラがすでに元素エネルギーを吸収している場合、吸収した元素を放ち、このダメージ+1。さらに、与えるダメージが吸収した元素のダメージへと変わる。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30054,
+			"name": "スタンダード·アーマー",
+			"descriptionraw": "【固有】このキャラの受ける$[K100]が半減する。（切り上げ）",
+			"descriptionreplaced": "【固有】このキャラの受ける{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>が半減する。（切り上げ）",
+			"description": "【固有】このキャラの受ける物理ダメージが半減する。（切り上げ）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 30055,
+			"name": "元素吸収",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>元素を吸収していない場合、キャラが元素ダメージを受けた時</color>、該当元素のエネルギーを吸収する。\\nキャラが吸収済みの元素のダメージを受けた時、ダメージが半減する。（切り上げ）",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>元素を吸収していない場合、キャラが元素ダメージを受けた時</color>、該当元素のエネルギーを吸収する。\\nキャラが吸収済みの元素のダメージを受けた時、ダメージが半減する。（切り上げ）",
+			"description": "【固有】元素を吸収していない場合、キャラが元素ダメージを受けた時、該当元素のエネルギーを吸収する。\nキャラが吸収済みの元素のダメージを受けた時、ダメージが半減する。（切り上げ）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 30056,
+			"name": "元素吸収",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

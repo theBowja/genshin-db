@@ -1,0 +1,100 @@
+{
+	"id": 3408,
+	"name": "攻堅特化型マシナリー·ウーシア",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 34081,
+			"name": "素早い近接",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34082,
+			"name": "盾の反撃",
+			"descriptionraw": "本キャラに<color=#FFFFFFFF>$[C134081]</color>を付与し、$[K53]に入る：<color=#FFFFFFFF>$[S34085]</color>。",
+			"descriptionreplaced": "本キャラに<color=#FFFFFFFF>シールドガード</color>を付与し、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>盾刃斬り</color>。",
+			"description": "本キャラにシールドガードを付与し、スキル準備に入る：盾刃斬り。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34083,
+			"name": "盾の横振り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手の待機キャラ全員に<color=#FFFFFFFF>$[K5]</color>を2与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を2与え、相手の待機キャラ全員に<color=#FFFFFFFF><color=#FFFFFFFF>貫通ダメージ</color></color>を2与える。",
+			"description": "雷元素ダメージを2与え、相手の待機キャラ全員に貫通ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34084,
+			"name": "エネルギー特徴：ウーシア",
+			"descriptionraw": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}アルケー：プネウマ」を持つキャラからのダメージを受けた後</color>、本キャラは$[K1014]にチェンジする。本ラウンド終了まで<color=#FFFFFFFF>スキルを発動できなくなる</color>。",
+			"descriptionreplaced": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}アルケー：プネウマ」を持つキャラからのダメージを受けた後</color>、本キャラは<color=#FFFFFFFF>「無力化状態」</color>にチェンジする。本ラウンド終了まで<color=#FFFFFFFF>スキルを発動できなくなる</color>。",
+			"description": "「アルケー：プネウマ」を持つキャラからのダメージを受けた後、本キャラは「無力化状態」にチェンジする。本ラウンド終了までスキルを発動できなくなる。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 34085,
+			"name": "盾刃斬り",
+			"descriptionraw": "（1ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "（1ターン準備必要）\\n{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。",
+			"description": "（1ターン準備必要）\n雷元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": []
+		}
+	]
+}

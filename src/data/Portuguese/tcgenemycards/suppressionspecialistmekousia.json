@@ -1,0 +1,114 @@
+{
+	"id": 3308,
+	"name": "Mecassupressor - Ousia",
+	"transformsinto": [
+		3007
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 33081,
+			"name": "Disparo Rápido",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>.",
+			"description": "Causa 1 ponto de Dano Pyro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33082,
+			"name": "Disparo de Emboscada",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], causa <color=#FFFFFFFF>1 ponto de $[K5]</color> a todos os inimigos fora de combate.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>, causa <color=#FFFFFFFF>1 ponto de <color=#FFFFFFFF>Dano Perfurante</color></color> a todos os inimigos fora de combate.",
+			"description": "Causa 1 ponto de Dano Pyro, causa 1 ponto de Dano Perfurante a todos os inimigos fora de combate.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33083,
+			"name": "Disparo Combinado",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] pontos de $[D__KEY__ELEMENT], então realiza separadamente $[K53]: <color=#FFFFFFFF>$[S33085]</color> e <color=#FFFFFFFF>$[S33086]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>, então realiza separadamente <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Disparo Combinado: Saraivada Leve</color> e <color=#FFFFFFFF>Disparo Combinado: Saraivada Perfuradora</color>.",
+			"description": "Causa 2 pontos de Dano Pyro, então realiza separadamente Preparar Habilidade: Disparo Combinado: Saraivada Leve e Disparo Combinado: Saraivada Perfuradora.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33084,
+			"name": "Característica da Energia: Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Depois de ser danificado por personagem com \"{SPRITE_PRESET#3505}Arkhe: Pneuma\"</color>, esse personagem ficará $[K1014] e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Depois de ser danificado por personagem com \"{SPRITE_PRESET#3505}Arkhe: Pneuma\"</color>, esse personagem ficará <color=#FFFFFFFF>Desativado</color> e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"description": "Depois de ser danificado por personagem com \"Arkhe: Pneuma\", esse personagem ficará Desativado e não poderá usar Habilidades até o fim desse Turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 33085,
+			"name": "Disparo Combinado: Saraivada Leve",
+			"descriptionraw": "(Precisa de 1 rodada de ação para preparação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT]. Então, faz $[K53]: <color=#FFFFFFFF>$[S33086]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Precisa de 1 rodada de ação para preparação)\\nCausa 2 pontos de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>. Então, faz <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Disparo Combinado: Saraivada Perfuradora</color>.",
+			"description": "(Precisa de 1 rodada de ação para preparação)\nCausa 2 pontos de Dano Pyro. Então, faz Preparar Habilidade: Disparo Combinado: Saraivada Perfuradora.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": []
+		},
+		{
+			"id": 33086,
+			"name": "Disparo Combinado: Saraivada Perfuradora",
+			"descriptionraw": "(Precisa de 1 rodada de ação para preparação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Precisa de 1 rodada de ação para preparação)\\nCausa 2 pontos de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>.",
+			"description": "(Precisa de 1 rodada de ação para preparação)\nCausa 2 pontos de Dano Pyro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": []
+		}
+	]
+}

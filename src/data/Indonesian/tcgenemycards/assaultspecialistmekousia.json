@@ -1,0 +1,100 @@
+{
+	"id": 3408,
+	"name": "Assault Specialist Mek - Ousia",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Senjata Lain",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 34081,
+			"name": "Rapid Melee",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34082,
+			"name": "Shield Riposte",
+			"descriptionraw": "Karakter ini memperoleh status <color=#FFFFFFFF>$[C134081]</color> dan $[K53|s1]: <color=#FFFFFFFF>$[S34085]</color>.",
+			"descriptionreplaced": "Karakter ini memperoleh status <color=#FFFFFFFF>Shield Block</color> dan <color=#FFFFFFFF>mempersiapkan Skill</color>: <color=#FFFFFFFF>Shield Slice</color>.",
+			"description": "Karakter ini memperoleh status Shield Block dan mempersiapkan Skill: Shield Slice.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34083,
+			"name": "Shield Sweep",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], mengakibatkan 2 poin <color=#FFFFFFFF>$[K5]</color> ke seluruh Karakter standby lawan.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, mengakibatkan 2 poin <color=#FFFFFFFF><color=#FFFFFFFF>Piercing DMG</color></color> ke seluruh Karakter standby lawan.",
+			"description": "Mengakibatkan 2 poin Electro DMG, mengakibatkan 2 poin Piercing DMG ke seluruh Karakter standby lawan.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34084,
+			"name": "Arkhe: Ousia",
+			"descriptionraw": "#<color=#FFFFFFFF>Setelah menerima DMG dari Karakter yang memiliki \"{SPRITE_PRESET#3505}Arkhe:{NON_BREAK_SPACE}Pneuma\": </color>Karakter ini berubah menjadi $[K1014|s1] dan <color=#FFFFFFFF>tidak dapat menggunakan skill</color> hingga Ronde berakhir.",
+			"descriptionreplaced": "#<color=#FFFFFFFF>Setelah menerima DMG dari Karakter yang memiliki \"{SPRITE_PRESET#3505}Arkhe:{NON_BREAK_SPACE}Pneuma\": </color>Karakter ini berubah menjadi <color=#FFFFFFFF>nonaktif</color> dan <color=#FFFFFFFF>tidak dapat menggunakan skill</color> hingga Ronde berakhir.",
+			"description": "Setelah menerima DMG dari Karakter yang memiliki \"Arkhe: Pneuma\": Karakter ini berubah menjadi nonaktif dan tidak dapat menggunakan skill hingga Ronde berakhir.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 34085,
+			"name": "Shield Slice",
+			"descriptionraw": "Persiapkan selama 1 giliran.\\nMengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Persiapkan selama 1 giliran.\\nMengakibatkan 3 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Persiapkan selama 1 giliran.\nMengakibatkan 3 poin Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		}
+	]
+}

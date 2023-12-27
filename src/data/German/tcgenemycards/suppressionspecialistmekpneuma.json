@@ -1,0 +1,90 @@
+{
+	"id": 3704,
+	"name": "Mecha – Typ: Unterdrückungsspezialist – Pneuma",
+	"transformsinto": [
+		3007
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Dendro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 37041,
+			"name": "Präzisionsschuss",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Dendro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 37042,
+			"name": "Wildgras-Schüsse",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Dendro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 37043,
+			"name": "Granaten-Attacke",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C137041]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Geschoss mit Zeitzünder</color>.",
+			"description": "Verursacht 2 Pkt. Dendro-SCH, erschafft 1 Geschoss mit Zeitzünder.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 37044,
+			"name": "Energiesignatur – Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3504}Arkhe – Ousia“ versehene Figur:</color> Diese Figur wird in den $[K1014] eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3504}Arkhe – Ousia“ versehene Figur:</color> Diese Figur wird in den <color=#FFFFFFFF>„Deaktiviert-Modus“</color> eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"description": "Nach Erleiden von SCH durch eine mit „Arkhe – Ousia“ versehene Figur: Diese Figur wird in den „Deaktiviert-Modus“ eintreten und bis Endphase dieser Runde keine Fähigkeit anwenden können.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

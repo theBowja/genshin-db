@@ -1,0 +1,114 @@
+{
+	"id": 3308,
+	"name": "制圧特化型マシナリー·ウーシア",
+	"transformsinto": [
+		3007
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"炎元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 33081,
+			"name": "ショット点射",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。",
+			"description": "炎元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33082,
+			"name": "スプレッド射撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手の待機キャラ全員に<color=#FFFFFFFF>$[K5]を1</color>与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与え、相手の待機キャラ全員に<color=#FFFFFFFF><color=#FFFFFFFF>貫通ダメージ</color>を1</color>与える。",
+			"description": "炎元素ダメージを1与え、相手の待機キャラ全員に貫通ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33083,
+			"name": "コムバインド射撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、その後$[K53]に入る：<color=#FFFFFFFF>$[S33085]</color>と<color=#FFFFFFFF>$[S33086]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を2与え、その後<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>コムバインド射撃·軽量弾幕</color>と<color=#FFFFFFFF>コムバインド射撃·ヘビー掃射</color>。",
+			"description": "炎元素ダメージを2与え、その後スキル準備に入る：コムバインド射撃·軽量弾幕とコムバインド射撃·ヘビー掃射。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33084,
+			"name": "エネルギー特徴：ウーシア",
+			"descriptionraw": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}アルケー：プネウマ」を持つキャラからのダメージを受けた後</color>、本キャラは$[K1014]にチェンジする。本ラウンド終了まで<color=#FFFFFFFF>スキルを発動できなくなる</color>。",
+			"descriptionreplaced": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}アルケー：プネウマ」を持つキャラからのダメージを受けた後</color>、本キャラは<color=#FFFFFFFF>「無力化状態」</color>にチェンジする。本ラウンド終了まで<color=#FFFFFFFF>スキルを発動できなくなる</color>。",
+			"description": "「アルケー：プネウマ」を持つキャラからのダメージを受けた後、本キャラは「無力化状態」にチェンジする。本ラウンド終了までスキルを発動できなくなる。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 33085,
+			"name": "コムバインド射撃·軽量弾幕",
+			"descriptionraw": "（1ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K53]に入る：<color=#FFFFFFFF>$[S33086]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "（1ターン準備必要）\\n{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を2与え、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>コムバインド射撃·ヘビー掃射</color>。",
+			"description": "（1ターン準備必要）\n炎元素ダメージを2与え、スキル準備に入る：コムバインド射撃·ヘビー掃射。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 33086,
+			"name": "コムバインド射撃·ヘビー掃射",
+			"descriptionraw": "（1ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "（1ターン準備必要）\\n{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を2与える。",
+			"description": "（1ターン準備必要）\n炎元素ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		}
+	]
+}

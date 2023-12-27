@@ -1,0 +1,109 @@
+{
+	"id": 3206,
+	"name": "도금 여단·사막의 물",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"물 원소",
+		"기타 무기",
+		"도금 여단"
+	],
+	"skills": [
+		{
+			"id": 32061,
+			"name": "민첩한 찌르기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32062,
+			"name": "신속한 섬격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 3pt 준다.",
+			"description": "물리 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32063,
+			"name": "환무 연참",
+			"descriptionraw": "본 캐릭터가 <color=#FFFFFFFF>$[S32065]</color>과 <color=#FFFFFFFF>$[S32066]</color>의 $[K53]를 한다.",
+			"descriptionreplaced": "본 캐릭터가 <color=#FFFFFFFF>환무 연참·선공</color>과 <color=#FFFFFFFF>환무 연참·확정</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "본 캐릭터가 환무 연참·선공과 환무 연참·확정의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32064,
+			"name": "악령 해방·물",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 $[K310]를 1pt 획득하고 <color=#FFFFFFFF>$[C132061]</color>을 부착한다. (대전당 1회 제한)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 1pt 획득하고 <color=#FFFFFFFF>악령 소생·물</color>을 부착한다. (대전당 1회 제한)",
+			"description": "[패시브] 이 캐릭터가 피해를 받은 후: 이 캐릭터의 HP가 7pt 이하이면 원소 에너지를 1pt 획득하고 악령 소생·물을 부착한다. (대전당 1회 제한)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 32065,
+			"name": "환무 연참·선공",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S32066]</color>의 $[K53]를 한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 주고 <color=#FFFFFFFF>환무 연참·확정</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "(1차례 행동 준비 필요)\n물리 피해를 2pt 주고 환무 연참·확정의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		},
+		{
+			"id": 32066,
+			"name": "환무 연참·확정",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 3pt 준다.",
+			"description": "(1차례 행동 준비 필요)\n물리 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		}
+	]
+}

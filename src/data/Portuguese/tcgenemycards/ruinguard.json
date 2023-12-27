@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "Guarda das Ruínas",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sem Tipo Elemental",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "Golpe Firme",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "Aproximação Espiral",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] pontos de $[D__KEY__ELEMENT], então realiza separadamente $[K53]: <color=#FFFFFFFF>$[S30045]</color> e <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 1 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>, então realiza separadamente <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Giro Rápido</color> e <color=#FFFFFFFF>Giro Ultraveloz</color>.",
+			"description": "Causa 1 pontos de Dano Físico, então realiza separadamente Preparar Habilidade: Giro Rápido e Giro Ultraveloz.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "Saraivada de Supressão",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], gera <color=#FFFFFFFF>$[C130041]</color> no campo do oponente.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 4 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>, gera <color=#FFFFFFFF>Míssil Guiado</color> no campo do oponente.",
+			"description": "Causa 4 pontos de Dano Físico, gera Míssil Guiado no campo do oponente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "Armadura Padrão",
+			"descriptionraw": "(Passivo) O $[K100] que esse personagem recebe é diminuído pela metade. (Para cima)",
+			"descriptionreplaced": "(Passivo) O {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color> que esse personagem recebe é diminuído pela metade. (Para cima)",
+			"description": "(Passivo) O Dano Físico que esse personagem recebe é diminuído pela metade. (Para cima)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "Giro Rápido",
+			"descriptionraw": "(Precisa de 1 rodada de ação para preparação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT]. Então, faz $[K53]: <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Precisa de 1 rodada de ação para preparação)\\nCausa 1 ponto de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>. Então, faz <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Giro Ultraveloz</color>.",
+			"description": "(Precisa de 1 rodada de ação para preparação)\nCausa 1 ponto de Dano Físico. Então, faz Preparar Habilidade: Giro Ultraveloz.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "Giro Ultraveloz",
+			"descriptionraw": "(Precisa de 1 rodada de ação para preparação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT]. Esse personagem ganha 1 Carga extra.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Precisa de 1 rodada de ação para preparação)\\nCausa 1 ponto de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>. Esse personagem ganha 1 Carga extra.",
+			"description": "(Precisa de 1 rodada de ação para preparação)\nCausa 1 ponto de Dano Físico. Esse personagem ganha 1 Carga extra.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": []
+		}
+	]
+}

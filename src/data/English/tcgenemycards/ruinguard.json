@@ -1,0 +1,107 @@
+{
+	"id": 3004,
+	"name": "Ruin Guard",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"No Elemental Type",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 30041,
+			"name": "Stern Blow",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30042,
+			"name": "Spiral Close-In",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and then separately performs \"$[K53]\" for <color=#FFFFFFFF>$[S30045]</color> and <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color> and then separately performs \"<color=#FFFFFFFF>Prepare Skill</color>\" for <color=#FFFFFFFF>High-Frequency Whirling Assault</color> and <color=#FFFFFFFF>Hyperspeed Whirling Assault</color>.",
+			"description": "Deals 1 Physical DMG and then separately performs \"Prepare Skill\" for High-Frequency Whirling Assault and Hyperspeed Whirling Assault.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30043,
+			"name": "Suppressive Volley",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C130041]</color> in the opponent's play area.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 4 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>, creates 1 <color=#FFFFFFFF>Seeking Missile</color> in the opponent's play area.",
+			"description": "Deals 4 Physical DMG, creates 1 Seeking Missile in the opponent's play area.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30044,
+			"name": "Standard Armor",
+			"descriptionraw": "(Passive) The $[K100] this character receives is halved (Rounded up)",
+			"descriptionreplaced": "(Passive) The {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color> this character receives is halved (Rounded up)",
+			"description": "(Passive) The Physical DMG this character receives is halved (Rounded up)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 30045,
+			"name": "High-Frequency Whirling Assault",
+			"descriptionraw": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Then, perform \"$[K53]\" for <color=#FFFFFFFF>$[S30046]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Prepare for 1 turn)\\nDeals 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>. Then, perform \"<color=#FFFFFFFF>Prepare Skill</color>\" for <color=#FFFFFFFF>Hyperspeed Whirling Assault</color>.",
+			"description": "(Prepare for 1 turn)\nDeals 1 Physical DMG. Then, perform \"Prepare Skill\" for Hyperspeed Whirling Assault.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		},
+		{
+			"id": 30046,
+			"name": "Hyperspeed Whirling Assault",
+			"descriptionraw": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character also gains 1 bonus Energy.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(Prepare for 1 turn)\\nDeals 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>. This character also gains 1 bonus Energy.",
+			"description": "(Prepare for 1 turn)\nDeals 1 Physical DMG. This character also gains 1 bonus Energy.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": []
+		}
+	]
+}

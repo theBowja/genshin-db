@@ -1,0 +1,109 @@
+{
+	"id": 3206,
+	"name": "エルマイト旅団·サンドウォーター",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"水元素",
+		"他の武器",
+		"エルマイト旅団"
+	],
+	"skills": [
+		{
+			"id": 32061,
+			"name": "躍動刺突",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32062,
+			"name": "迅速急襲",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を3与える。",
+			"description": "物理ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32063,
+			"name": "連斬の輪舞",
+			"descriptionraw": "本キャラは$[K53]に入る：<color=#FFFFFFFF>$[S32065]</color>と<color=#FFFFFFFF>$[S32066]</color>。",
+			"descriptionreplaced": "本キャラは<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>連斬の輪舞·先攻</color>と<color=#FFFFFFFF>連斬の輪舞·定勢</color>。",
+			"description": "本キャラはスキル準備に入る：連斬の輪舞·先攻と連斬の輪舞·定勢。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32064,
+			"name": "悪霊解放·水",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、$[K310]を1獲得し、<color=#FFFFFFFF>$[C132061]</color>を付与する。（各対戦ごとに1回まで）",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得し、<color=#FFFFFFFF>悪霊蘇生·水</color>を付与する。（各対戦ごとに1回まで）",
+			"description": "【固有】本キャラがダメージを受けた後、本キャラのHPが7以下の場合、チャージを1獲得し、悪霊蘇生·水を付与する。（各対戦ごとに1回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 32065,
+			"name": "連斬の輪舞·先攻",
+			"descriptionraw": "（1ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K53]に入る：<color=#FFFFFFFF>$[S32066]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "（1ターン準備必要）\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与え、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>連斬の輪舞·定勢</color>。",
+			"description": "（1ターン準備必要）\n物理ダメージを2与え、スキル準備に入る：連斬の輪舞·定勢。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 32066,
+			"name": "連斬の輪舞·定勢",
+			"descriptionraw": "（1ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "（1ターン準備必要）\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を3与える。",
+			"description": "（1ターン準備必要）\n物理ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		}
+	]
+}

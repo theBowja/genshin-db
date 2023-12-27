@@ -1,0 +1,114 @@
+{
+	"id": 3308,
+	"name": "Baskılama Uzmanı Meka - Öz",
+	"transformsinto": [
+		3007
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Ateş",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 33081,
+			"name": "Kısa Menzilli Seri Ateş",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir.",
+			"description": "1 Ateş Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33082,
+			"name": "Yangın Yeri",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve rakibin hazırdaki karakterlerine <color=#FFFFFFFF>1 $[K5]</color> verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir ve rakibin hazırdaki karakterlerine <color=#FFFFFFFF>1 <color=#FFFFFFFF>Delme Hasarı</color></color> verir.",
+			"description": "1 Ateş Hasarı verir ve rakibin hazırdaki karakterlerine 1 Delme Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33083,
+			"name": "Karma Ateş",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, ardından <color=#FFFFFFFF>$[S33085]</color> ve <color=#FFFFFFFF>$[S33086]</color> için ayrı ayrı \"$[K53]\" kullanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir, ardından <color=#FFFFFFFF>Karma Ateş: Hafif Yayım Ateşi</color> ve <color=#FFFFFFFF>Karma Ateş: Delici Top Ateşi</color> için ayrı ayrı \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "2 Ateş Hasarı verir, ardından Karma Ateş: Hafif Yayım Ateşi ve Karma Ateş: Delici Top Ateşi için ayrı ayrı \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33084,
+			"name": "Arkhe: Öz",
+			"descriptionraw": "<color=#FFFFFFFF>\"{SPRITE_PRESET#3505}Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra</color> bu karakter $[K1014] kalır ve bu Tur sona erene kadar <color=#FFFFFFFF>beceri kullanamaz</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>\"{SPRITE_PRESET#3505}Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra</color> bu karakter <color=#FFFFFFFF>Devre dışı</color> kalır ve bu Tur sona erene kadar <color=#FFFFFFFF>beceri kullanamaz</color>.",
+			"description": "\"Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra bu karakter Devre dışı kalır ve bu Tur sona erene kadar beceri kullanamaz.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 33085,
+			"name": "Karma Ateş: Hafif Yayım Ateşi",
+			"descriptionraw": "(1 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Ardından <color=#FFFFFFFF>$[S33086]</color> için \"$[K53]\" kullanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\n2 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir. Ardından <color=#FFFFFFFF>Karma Ateş: Delici Top Ateşi</color> için \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "(1 Tur hazırlanır)\n2 Ateş Hasarı verir. Ardından Karma Ateş: Delici Top Ateşi için \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		},
+		{
+			"id": 33086,
+			"name": "Karma Ateş: Delici Top Ateşi",
+			"descriptionraw": "(1 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\n2 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir.",
+			"description": "(1 Tur hazırlanır)\n2 Ateş Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		}
+	]
+}

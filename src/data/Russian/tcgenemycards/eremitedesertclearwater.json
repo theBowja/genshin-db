@@ -1,0 +1,109 @@
+{
+	"id": 3206,
+	"name": "Пустынник: Родник в песках",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Гидро",
+		"Прочее",
+		"Пустынники"
+	],
+	"skills": [
+		{
+			"id": 32061,
+			"name": "Ловкий выпад",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32062,
+			"name": "Стремительный удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 3 ед.",
+			"description": "Наносит Физический урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32063,
+			"name": "Вихрь плетей",
+			"descriptionraw": "У персонажа происходит $[K53] навыков <color=#FFFFFFFF>$[S32065]</color> и <color=#FFFFFFFF>$[S32066]</color>.",
+			"descriptionreplaced": "У персонажа происходит <color=#FFFFFFFF>Подготовка навыка</color> навыков <color=#FFFFFFFF>Вихрь плетей: Первый удар</color> и <color=#FFFFFFFF>Вихрь плетей: Стойкий пример</color>.",
+			"description": "У персонажа происходит Подготовка навыка навыков Вихрь плетей: Первый удар и Вихрь плетей: Стойкий пример.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32064,
+			"name": "Зловещий дух (Гидро)",
+			"descriptionraw": "(Пассивный навык)<color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если у этого персонажа не более 7 HP, ему добавляется 1 $[K310] и <color=#FFFFFFFF>$[C132061]</color> (только 1 раз за игру).",
+			"descriptionreplaced": "(Пассивный навык)<color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если у этого персонажа не более 7 HP, ему добавляется 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color> и <color=#FFFFFFFF>Пробуждение духа предзнаменования: Гидро</color> (только 1 раз за игру).",
+			"description": "(Пассивный навык)Когда этот персонаж получает урон: если у этого персонажа не более 7 HP, ему добавляется 1 Энергия и Пробуждение духа предзнаменования: Гидро (только 1 раз за игру).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 32065,
+			"name": "Вихрь плетей: Первый удар",
+			"descriptionraw": "(На подготовку требуется 1 раунд)\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S32066]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(На подготовку требуется 1 раунд)\\nНаносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Вихрь плетей: Стойкий пример</color>.",
+			"description": "(На подготовку требуется 1 раунд)\nНаносит Физический урон, 2 ед., после чего начинается Подготовка навыка: Вихрь плетей: Стойкий пример.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		},
+		{
+			"id": 32066,
+			"name": "Вихрь плетей: Стойкий пример",
+			"descriptionraw": "(На подготовку нужен 1 ход)\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "(На подготовку нужен 1 ход)\\nНаносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 3 ед.",
+			"description": "(На подготовку нужен 1 ход)\nНаносит Физический урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		}
+	]
+}

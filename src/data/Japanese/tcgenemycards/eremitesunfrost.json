@@ -1,0 +1,107 @@
+{
+	"id": 3106,
+	"name": "エルマイト旅団·サンフロスト",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"氷元素",
+		"他の武器",
+		"エルマイト旅団"
+	],
+	"skills": [
+		{
+			"id": 31061,
+			"name": "ダブル斬撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31062,
+			"name": "双刃連斬",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を3与える。",
+			"description": "物理ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 31063,
+			"name": "蓄勢猛撃",
+			"descriptionraw": "本キャラは$[K53]に入る：<color=#FFFFFFFF>$[S31065]</color>。",
+			"descriptionreplaced": "本キャラは<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>蓄勢猛撃·渾身の一撃</color>。",
+			"description": "本キャラはスキル準備に入る：蓄勢猛撃·渾身の一撃。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 31064,
+			"name": "悪霊解放·氷",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、$[K310]を1獲得し、<color=#FFFFFFFF>$[C131061]</color>を付与する。（各対戦ごとに1回まで）",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得し、<color=#FFFFFFFF>悪霊蘇生·氷</color>を付与する。（各対戦ごとに1回まで）",
+			"description": "【固有】本キャラがダメージを受けた後、本キャラのHPが7以下の場合、チャージを1獲得し、悪霊蘇生·氷を付与する。（各対戦ごとに1回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 31065,
+			"name": "蓄勢猛撃·渾身の一撃",
+			"descriptionraw": "（2ターン準備必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "（2ターン準備必要）\\n{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を6与える。",
+			"description": "（2ターン準備必要）\n物理ダメージを6与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 31066,
+			"name": "蓄勢猛撃·力溜めの構え",
+			"descriptionraw": "（1ターン準備必要）\\n次のアクションでスキル<color=#FFFFFFFF>$[S31065]</color>を発動する。",
+			"descriptionreplaced": "（1ターン準備必要）\\n次のアクションでスキル<color=#FFFFFFFF>蓄勢猛撃·渾身の一撃</color>を発動する。",
+			"description": "（1ターン準備必要）\n次のアクションでスキル蓄勢猛撃·渾身の一撃を発動する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"id": 3408,
+	"name": "Mecassaltador - Ousia",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 34081,
+			"name": "Corpo-a-Corpo Veloz",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34082,
+			"name": "Contra-Ataque de Escudo",
+			"descriptionraw": "Este personagem é afetado por <color=#FFFFFFFF>$[C134081]</color> e $[K53]: <color=#FFFFFFFF>$[S34085]</color>.",
+			"descriptionreplaced": "Este personagem é afetado por <color=#FFFFFFFF>Bloqueio de Escudo</color> e <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Escudo Cortante</color>.",
+			"description": "Este personagem é afetado por Bloqueio de Escudo e Preparar Habilidade: Escudo Cortante.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34083,
+			"name": "Varredura de Escudo",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], causa 2 pontos de <color=#FFFFFFFF>$[K5]</color> a todos os personagens fora de combate do oponente.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>, causa 2 pontos de <color=#FFFFFFFF><color=#FFFFFFFF>Dano Perfurante</color></color> a todos os personagens fora de combate do oponente.",
+			"description": "Causa 2 pontos de Dano Electro, causa 2 pontos de Dano Perfurante a todos os personagens fora de combate do oponente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34084,
+			"name": "Característica da Energia: Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Depois de ser danificado por personagem com \"{SPRITE_PRESET#3505}Arkhe: Pneuma\"</color>, esse personagem ficará $[K1014] e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Depois de ser danificado por personagem com \"{SPRITE_PRESET#3505}Arkhe: Pneuma\"</color>, esse personagem ficará <color=#FFFFFFFF>Desativado</color> e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"description": "Depois de ser danificado por personagem com \"Arkhe: Pneuma\", esse personagem ficará Desativado e não poderá usar Habilidades até o fim desse Turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 34085,
+			"name": "Escudo Cortante",
+			"descriptionraw": "(Precisa de 1 rodada de ação para preparação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(Precisa de 1 rodada de ação para preparação)\\nCausa 3 pontos de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>.",
+			"description": "(Precisa de 1 rodada de ação para preparação)\nCausa 3 pontos de Dano Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,102 @@
+{
+	"id": 3307,
+	"name": "Mecassaltador - Pneuma",
+	"transformsinto": [
+		3006
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 33071,
+			"name": "Batalha Corpo-a-Corpo",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33072,
+			"name": "Golpes Múltiplos",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT] e realiza $[K53]: <color=#FFFFFFFF>$[S33075]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color> e realiza <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Cassetete do Rastreio</color>.",
+			"description": "Causa 1 ponto de Dano Pyro e realiza Preparar Habilidade: Cassetete do Rastreio.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33073,
+			"name": "Ataque de Investida",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Causa 5 pontos de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>.",
+			"description": "Causa 5 pontos de Dano Pyro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33074,
+			"name": "Característica da Energia: Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Depois de ser danificado por personagem com \"{SPRITE_PRESET#3504}Arkhe: Ousia\"</color>, esse personagem ficará $[K1014] e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Depois de ser danificado por personagem com \"{SPRITE_PRESET#3504}Arkhe: Ousia\"</color>, esse personagem ficará <color=#FFFFFFFF>Desativado</color> e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"description": "Depois de ser danificado por personagem com \"Arkhe: Ousia\", esse personagem ficará Desativado e não poderá usar Habilidades até o fim desse Turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 33075,
+			"name": "Cassetete do Rastreio",
+			"descriptionraw": "(Precisa de 1 rodada de ação para preparação)\\nCausa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Precisa de 1 rodada de ação para preparação)\\nCausa 2 pontos de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>.",
+			"description": "(Precisa de 1 rodada de ação para preparação)\nCausa 2 pontos de Dano Pyro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": []
+		}
+	]
+}
