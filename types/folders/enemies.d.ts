@@ -3,7 +3,7 @@ declare module "genshin-db" {
 		name: string;
 		specialname: string;
 
-		type: 'COMMON' | 'ELITE' | 'BOSS';
+		enemytype: 'COMMON' | 'ELITE' | 'BOSS';
 		category: string; 
 		description: string;
 
