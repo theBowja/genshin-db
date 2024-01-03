@@ -152,11 +152,11 @@ The API usually gets updated one or two days after the main package updates.\
 Caution: stat functions from characters/enemies are not included. Currently there is no solution for this.
 
 Format:\
-`https://genshin-db-api.vercel.app/api/[folder]?query=[query]`
+`https://genshin-db-api.vercel.app/api/v5/[folder]?query=[query]`
 
 Examples:\
-https://genshin-db-api.vercel.app/api/characters?query=hu  
-https://genshin-db-api.vercel.app/api/characters?query=hu&matchCategories=true&dumpResult=true&queryLanguages=english,jap
+https://genshin-db-api.vercel.app/api/v5/characters?query=hu  
+https://genshin-db-api.vercel.app/api/v5/characters?query=hu&matchCategories=true&dumpResult=true&queryLanguages=english,jap
 
 ### Interactive App
 
