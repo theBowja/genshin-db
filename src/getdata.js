@@ -49,6 +49,7 @@ const allcurve   = all.curve;
 const allversion = all.version
 
 const design = require('./design.json');
+const v4prop = require('./v4prop.js');
 
 const calcStatsMap = {
     'characters': calcStatsCharacter,
@@ -56,9 +57,10 @@ const calcStatsMap = {
     'enemies': calcStatsEnemy
 };
 
-function getData(lang, folder, filename) {
+function getData(lang, folder, filename, v4Prop, v4PropOnly) {
+    let tmp;
     try {
-        let tmp = alldata[lang][folder][filename];
+        tmp = alldata[lang][folder][filename];
         if(tmp.images === undefined && design.hasImage.includes(folder)) {
             tmp.images = getImage(folder, filename);
         }
@@ -74,8 +76,12 @@ function getData(lang, folder, filename) {
         if(tmp.version === undefined) {
             tmp.version = getVersion(folder, filename);
         }
-        return tmp;
     } catch(e) { return undefined; }
+
+    if (v4PropOnly) return v4prop.getv4(tmp, folder);
+    if (v4Prop) return v4prop.addv4(tmp, folder);
+
+    return tmp;
 }
 
 function getIndex(lang, folder) {

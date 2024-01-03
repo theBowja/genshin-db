@@ -84,6 +84,11 @@ The following are the **default options** that the library begins with:
     verboseCategories: false, // Used if a category is matched. If true, then replaces each string name in the array with the data object instead.
     queryLanguages: ["English"], // Array of languages that your query will be searched in.
     resultLanguage: "English" // Output language that you want your results to be in.
+
+    // Options for (almost) backwards compatibility with genshin-db v4 data properties.
+    // Please create a github issue for any problems with these options.
+    v4Props: false, // Adds genshin-db v4 data properties to the return result of the API.
+    v4PropsOnly: false, // Same as v4Props but removes v5 data properties.
 }
     transliterate: false // UNIMPLEMENTED. Allows the English alphabet to be used to match against words/characters in other languages.
 ````

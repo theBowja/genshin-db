@@ -613,7 +613,9 @@ const genshindb = require('genshin-db');
     matchCategories: true,
     verboseCategories: false,
     queryLanguages: [ 'English' ],
-    resultLanguage: 'Japanese'
+    resultLanguage: 'Japanese',
+    v4Props: false,
+    v4PropsOnly: false
   },
   filename: [ 'amber', 'collei', 'diona', 'fischl' ],
   result: [ 'アンバー', 'コレイ', 'ディオナ', 'フィッシュル' ]

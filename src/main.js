@@ -19,7 +19,9 @@ const baseoptions = new Options(
     false, // matchCategories
     false, // verboseCategories
     ["English"], // queryLanguages
-    "English" // resultLanguage
+    "English", // resultLanguage
+    false, // v4Props
+    false // v4PropsOnly
 );
 
 
@@ -61,7 +63,7 @@ function sanitizeOptions(opts) {
     if (!opts || typeof opts !== 'object') return;
 
     let sanOpts = {};
-    ['dumpResult', 'matchNames', 'matchAltNames', 'matchAliases', 'matchCategories', 'verboseCategories'].forEach(prop => {
+    ['dumpResult', 'matchNames', 'matchAltNames', 'matchAliases', 'matchCategories', 'verboseCategories', 'v4Props', 'v4PropsOnly'].forEach(prop => {
         if (typeof opts[prop] === 'boolean') sanOpts[prop] = opts[prop];
     });
     opts.resultLanguage = language.format(opts.resultLanguage);
@@ -117,7 +119,7 @@ function retrieveData(query, folders, opts, getfilename) {
         if (opts.matchNames && langindex.names[queryMatch] !== undefined) {
             const filename = langindex.names[queryMatch];
             if (getfilename) return filename;
-            let result = getData(opts.resultLanguage, folderMatch, filename);
+            let result = getData(opts.resultLanguage, folderMatch, filename, opts.v4Props, opts.v4PropsOnly);
             return opts.dumpResult ? getDump(query, folders, queryMatch, folderMatch, MatchType.Names, opts, filename, result) : result;
         }
 
@@ -125,7 +127,7 @@ function retrieveData(query, folders, opts, getfilename) {
         if (opts.matchAltNames && altnames.getFilename(lang, folderMatch, queryMatch)) {
             const filename = altnames.getFilename(lang, folderMatch, queryMatch);
             if (getfilename) return filename;
-            let result = getData(opts.resultLanguage, folderMatch, filename);
+            let result = getData(opts.resultLanguage, folderMatch, filename, opts.v4Props, opts.v4PropsOnly);
             return opts.dumpResult ? getDump(query, folders, queryMatch, folderMatch, MatchType.AltNames, opts, filename, result) : result;
         }
 
@@ -133,7 +135,7 @@ function retrieveData(query, folders, opts, getfilename) {
         if (opts.matchAliases && langindex.aliases[queryMatch] !== undefined) {
             const filename = langindex.aliases[queryMatch];
             if (getfilename) return filename;
-            let result = getData(opts.resultLanguage, folderMatch, filename);
+            let result = getData(opts.resultLanguage, folderMatch, filename, opts.v4Props, opts.v4PropsOnly);
             return opts.dumpResult ? getDump(query, folders, queryMatch, folderMatch, MatchType.Aliases, opts, filename, result) : result;
         }
 
@@ -145,7 +147,7 @@ function retrieveData(query, folders, opts, getfilename) {
             let tmparr = (queryMatch === 'names') ? Object.keys(reslangindex.namemap) : langindex.categories[queryMatch];
             // change the array of filenames into an array of data objects or data names. ignores undefined results if any
             let result = tmparr.reduce((accum, filename) => {
-                let res = opts.verboseCategories ? getData(opts.resultLanguage, folderMatch, filename) : reslangindex.namemap[filename];
+                let res = opts.verboseCategories ? getData(opts.resultLanguage, folderMatch, filename, opts.v4Props, opts.v4PropsOnly) : reslangindex.namemap[filename];
                 if (res !== undefined) accum.push(res);
                 return accum;
             }, []);
