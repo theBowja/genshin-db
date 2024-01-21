@@ -2,6 +2,7 @@ declare module "genshin-db" {
 	export interface TcgActionCards {
 		id: number;
 		name: string; // translated
+		shareid: number; // id for generating deck share code
 
 		cardtype: string; // enum
 		cardtypetext: string; // translated
