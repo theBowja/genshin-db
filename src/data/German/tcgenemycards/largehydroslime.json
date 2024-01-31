@@ -1,0 +1,87 @@
+{
+	"id": 3207,
+	"name": "Großer Hydro-Schleim",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 32071,
+			"name": "Rammen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32072,
+			"name": "Blubberndes Blasenspeien",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht dem Ziel den Zustand <color=#FFFFFFFF>$[C132071]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, verleiht dem Ziel den Zustand <color=#FFFFFFFF>Blubberblase</color>.",
+			"description": "Verursacht 2 Pkt. Hydro-SCH, verleiht dem Ziel den Zustand Blubberblase.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32073,
+			"name": "Gesprungener Aufschlag",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 5 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 5 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32043,
+			"name": "Elementarablagerung – Hydro",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C132041]</color>.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Elementarwesen – Hydro</color>.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Elementarwesen – Hydro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

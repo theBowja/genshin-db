@@ -1,0 +1,87 @@
+{
+	"id": 4406,
+	"name": "Bin Yıllık İnci Denizatı",
+	"hp": 18,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 24031,
+			"name": "Kuyruk Savurma",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24038,
+			"name": "Balık Sürüsü Dansı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bu karaktere <color=#FFFFFFFF>$[C124033]</color> eklenmişse onun $[K3] 1 artar. (Her Turda bir defa)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir. Bu karaktere <color=#FFFFFFFF>Fontemer İncisi</color> eklenmişse onun <color=#FFFFFFFF>Kullanım Hakkı</color> 1 artar. (Her Turda bir defa)",
+			"description": "3 Elektrik Hasarı verir. Bu karaktere Fontemer İncisi eklenmişse onun Kullanım Hakkı 1 artar. (Her Turda bir defa)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24036,
+			"name": "Fontemer Tufanı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, bu karaktere <color=#FFFFFFFF>$[C124033]</color> ekler ve 1 <color=#FFFFFFFF>$[C124031]</color> çağırır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir, bu karaktere <color=#FFFFFFFF>Fontemer İncisi</color> ekler ve 1 <color=#FFFFFFFF>Yankılanan Mercan Küre</color> çağırır.",
+			"description": "1 Elektrik Hasarı verir, bu karaktere Fontemer İncisi ekler ve 1 Yankılanan Mercan Küre çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24035,
+			"name": "İnci Zırh",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karaktere <color=#FFFFFFFF>$[C124033]</color> ekler.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karaktere <color=#FFFFFFFF>Fontemer İncisi</color> ekler.",
+			"description": "(Pasif) Savaş başladığında bu karaktere Fontemer İncisi ekler.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"id": 1507,
+	"name": "早柚",
+	"shareid": 320,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"风元素",
+		"双手剑",
+		"稻妻"
+	],
+	"storytitle": "忍里之貉·早柚",
+	"storytext": "一梦作伴，万野无踪。",
+	"source": "在猫尾酒馆中邀请早柚进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 15071,
+			"name": "忍刀·终末番",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>。",
+			"description": "造成2点物理伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15072,
+			"name": "呜呼流·风隐急进",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色$[K53]：<color=#FFFFFFFF>$[S15074]</color>。\\n如果当前技能引发了扩散，则<color=#FFFFFFFF>$[S15074]</color>将改为造成被扩散元素的伤害。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>，本角色<color=#FFFFFFFF>准备技能</color>：<color=#FFFFFFFF>风风轮舞踢</color>。\\n如果当前技能引发了扩散，则<color=#FFFFFFFF>风风轮舞踢</color>将改为造成被扩散元素的伤害。",
+			"description": "造成2点风元素伤害，本角色准备技能：风风轮舞踢。\n如果当前技能引发了扩散，则风风轮舞踢将改为造成被扩散元素的伤害。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15073,
+			"name": "呜呼流·影貉缭乱",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C115072]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>，召唤<color=#FFFFFFFF>不倒貉貉</color>。",
+			"description": "造成1点风元素伤害，召唤不倒貉貉。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15074,
+			"name": "风风轮舞踢",
+			"descriptionraw": "（需准备1个行动轮）\\n造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]（或被扩散元素的伤害）。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "（需准备1个行动轮）\\n造成2点{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>（或被扩散元素的伤害）。",
+			"description": "（需准备1个行动轮）\n造成2点风元素伤害（或被扩散元素的伤害）。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": []
+		}
+	]
+}

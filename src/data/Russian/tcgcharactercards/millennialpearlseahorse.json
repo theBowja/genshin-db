@@ -1,0 +1,101 @@
+{
+	"id": 2403,
+	"name": "Морской конёк тысячелетней жемчужины",
+	"shareid": 322,
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Электро",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "Морской конёк тысячелетней жемчужины",
+	"storytext": "Один из двух правителей, стоящих превыше всех инородов Фонтмера. Поэты и писатели считают его гордым и благородным созданием, что и дало ему столь высокопарный титул.",
+	"source": "Награда за принятие испытания в «Кошкином хвосте» и победу над Морским коньком тысячелетней жемчужины в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 24031,
+			"name": "Круговой удар хвостом",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24032,
+			"name": "Круговорот рыбьей стаи",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.\\nЕсли у персонажа уже наложено состояние <color=#FFFFFFFF>$[C124032]</color>, то его $[K3] увеличатся на 1 ед. (1 раз за раунд).",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед.\\nЕсли у персонажа уже наложено состояние <color=#FFFFFFFF>Жемчужина Фонтмера</color>, то его <color=#FFFFFFFF>Кол-во применений</color> увеличатся на 1 ед. (1 раз за раунд).",
+			"description": "Наносит Электро урон, 3 ед.\nЕсли у персонажа уже наложено состояние Жемчужина Фонтмера, то его Кол-во применений увеличатся на 1 ед. (1 раз за раунд).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24033,
+			"name": "Древний гром Фонтмера",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа возникает <color=#FFFFFFFF>$[C124032]</color>, призывается <color=#FFFFFFFF>$[C124031]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед. У персонажа возникает <color=#FFFFFFFF>Жемчужина Фонтмера</color>, призывается <color=#FFFFFFFF>Резонирующая коралловая сфера</color>.",
+			"description": "Наносит Электро урон, 1 ед. У персонажа возникает Жемчужина Фонтмера, призывается Резонирующая коралловая сфера.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24034,
+			"name": "Жемчужная броня",
+			"descriptionraw": "(Пассивный) В начале сражения у этого персонажа будет <color=#FFFFFFFF>$[C124032]</color>.",
+			"descriptionreplaced": "(Пассивный) В начале сражения у этого персонажа будет <color=#FFFFFFFF>Жемчужина Фонтмера</color>.",
+			"description": "(Пассивный) В начале сражения у этого персонажа будет Жемчужина Фонтмера.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 24037,
+			"name": "Круговорот рыбьей стаи",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

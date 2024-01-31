@@ -1,0 +1,91 @@
+{
+	"id": 2103,
+	"name": "Hypostase Cryo",
+	"shareid": 321,
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Cryo",
+		"Autre arme",
+		"Monstre"
+	],
+	"storytitle": "Hypostase Cryo",
+	"storytext": "Nom de code « Daleth », une entité Cryo de niveau supérieur.\nElle n'a pas l'air très douée pour les sports de ballon...",
+	"source": "Récompense pour avoir accepté un défi de taverne auprès de Prince à La Queue de Chat et remporté la victoire lors d'une partie amicale contre l'Hypostase Cryo",
+	"skills": [
+		{
+			"id": 21031,
+			"name": "Tir de stalactite",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color>.",
+			"description": "Inflige 1 pt de DGT Cryo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21032,
+			"name": "Valse givrée",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique une <color=#FFFFFFFF>$[C121031|s1]</color> au personnage.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color> et applique une <color=#FFFFFFFF>stalactite écrasante</color> au personnage.",
+			"description": "Inflige 3 pts de DGT Cryo et applique une stalactite écrasante au personnage.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21033,
+			"name": "Chute de glace",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], inflige <color=#FFFFFFFF>1 pt de $[K5]</color> à tous les personnages adverses en attente et invoque une <color=#FFFFFFFF>$[C121033|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2101}<color=#99FFFFFF>DGT Cryo</color>, inflige <color=#FFFFFFFF>1 pt de <color=#FFFFFFFF>DGT de perforation</color></color> à tous les personnages adverses en attente et invoque une <color=#FFFFFFFF>glace perçante</color>.",
+			"description": "Inflige 2 pts de DGT Cryo, inflige 1 pt de DGT de perforation à tous les personnages adverses en attente et invoque une glace perçante.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21034,
+			"name": "Noyau cristallin Cryo",
+			"descriptionraw": "(Passif) Applique un <color=#FFFFFFFF>$[C121034|s1]</color> au début du combat.",
+			"descriptionreplaced": "(Passif) Applique un <color=#FFFFFFFF>noyau cristallin Cryo</color> au début du combat.",
+			"description": "(Passif) Applique un noyau cristallin Cryo au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

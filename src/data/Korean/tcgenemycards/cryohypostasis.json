@@ -1,0 +1,97 @@
+{
+	"id": 4106,
+	"name": "무상의 얼음",
+	"hp": 30,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"기타 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 21031,
+			"name": "얼음송곳 분사",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 1pt 준다.",
+			"description": "얼음 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21032,
+			"name": "얼음고리 원무",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C121031]</color>을 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>흩어지는 얼음송곳</color>을 부착한다.",
+			"description": "얼음 원소 피해를 3pt 주고 본 캐릭터에게 흩어지는 얼음송곳을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21033,
+			"name": "얼음가시 폭격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 적의 모든 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]</color>를 1pt 주며 <color=#FFFFFFFF>$[C121033]</color>를 소환한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 2pt 주고 적의 모든 대기 캐릭터에게 <color=#FFFFFFFF><color=#FFFFFFFF>관통 피해</color></color>를 1pt 주며 <color=#FFFFFFFF>찌르는 얼음가시</color>를 소환한다.",
+			"description": "얼음 원소 피해를 2pt 주고 적의 모든 대기 캐릭터에게 관통 피해를 1pt 주며 찌르는 얼음가시를 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21037,
+			"name": "얼음수정 코어",
+			"descriptionraw": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C121035]</color>가 부착된다.\\n<color=#FFFFFFFF>행동 단계 시작 시: </color>본 캐릭터에 $[C121035]가 부착되지 않았을 경우 다시 $[C121035]를 부착한다. (대전 중 최대 1회 발동)",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>얼음수정 코어</color>가 부착된다.\\n<color=#FFFFFFFF>행동 단계 시작 시: </color>본 캐릭터에 얼음수정 코어가 부착되지 않았을 경우 다시 얼음수정 코어를 부착한다. (대전 중 최대 1회 발동)",
+			"description": "[패시브] 전투 시작 시, 시작부터 얼음수정 코어가 부착된다.\n행동 단계 시작 시: 본 캐릭터에 얼음수정 코어가 부착되지 않았을 경우 다시 얼음수정 코어를 부착한다. (대전 중 최대 1회 발동)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 31073,
+			"name": "원소 침적·얼음",
+			"descriptionraw": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C131071]</color>이 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>원소 생명체·얼음</color>이 부착된다.",
+			"description": "[패시브] 전투 시작 시, 시작부터 원소 생명체·얼음이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

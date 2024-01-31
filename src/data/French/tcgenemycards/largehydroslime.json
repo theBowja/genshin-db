@@ -1,0 +1,87 @@
+{
+	"id": 3207,
+	"name": "Hydroblob géant",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 32071,
+			"name": "Heurt",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Inflige 1 pt de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32072,
+			"name": "Jet de bulles",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique une <color=#FFFFFFFF>$[C132071|s1]</color> au personnage choisi.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et applique une <color=#FFFFFFFF>bulle gargouillante</color> au personnage choisi.",
+			"description": "Inflige 2 pts de DGT Hydro et applique une bulle gargouillante au personnage choisi.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32073,
+			"name": "Saut écrasant",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 5 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Inflige 5 pts de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32043,
+			"name": "Dépôt d'élément Hydro",
+			"descriptionraw": "(Passif) Accorde une <color=#FFFFFFFF>$[C132041]</color> au début du combat.",
+			"descriptionreplaced": "(Passif) Accorde une <color=#FFFFFFFF>Entité élémentaire Hydro</color> au début du combat.",
+			"description": "(Passif) Accorde une Entité élémentaire Hydro au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}
