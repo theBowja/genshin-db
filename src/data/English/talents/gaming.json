@@ -1,0 +1,246 @@
+{
+	"id": 9201,
+	"name": "Gaming",
+	"combat1": {
+		"name": "Normal Attack: Stellar Rend",
+		"descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"description": "Normal Attack\nPerforms up to 4 consecutive strikes.\n\nCharged Attack\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}",
+				"4-Hit DMG|{param4:F1P}",
+				"Charged Attack Cyclic DMG|{param5:F1P}",
+				"Charged Attack Final DMG|{param6:P}",
+				"Charged Attack Stamina Cost|{param7:F1}/s",
+				"Max Duration|{param8:F1}s",
+				"Plunge DMG|{param9:F1P}",
+				"Low/High Plunge DMG|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Bestial Ascent",
+		"descriptionRaw": "Pounces forward using the Wushou arts, leaping high into the air after coming into contact with a target or surface.\nAfter Gaming has used Bestial Ascent to rise into the air, he will use the especially powerful Plunging Attack: Charmed Cloudstrider when performing a Plunging Attack.\n\n<color=#FFD780FF>Plunging Attack: Charmed Cloudstrider</color>\nThe DMG from Plunging Attacks caused by Bestial Ascent is converted to <color=#FF9999FF>Pyro DMG</color> that cannot be overridden by other elemental infusions. Upon landing, Gaming will consume a fixed amount of HP. Gaming's HP cannot be reduced below 10% by this method.\nCharmed Cloudstrider DMG is considered Plunging Attack DMG.\n\n<i>\"Auspicious beasts leap high to pluck the greens — that symbolizes good fortune and knowing how to make some serious green, y'know — so may we all rise to new heights, one step at a time!\"</i>",
+		"description": "Pounces forward using the Wushou arts, leaping high into the air after coming into contact with a target or surface.\nAfter Gaming has used Bestial Ascent to rise into the air, he will use the especially powerful Plunging Attack: Charmed Cloudstrider when performing a Plunging Attack.\n\nPlunging Attack: Charmed Cloudstrider\nThe DMG from Plunging Attacks caused by Bestial Ascent is converted to Pyro DMG that cannot be overridden by other elemental infusions. Upon landing, Gaming will consume a fixed amount of HP. Gaming's HP cannot be reduced below 10% by this method.\nCharmed Cloudstrider DMG is considered Plunging Attack DMG.",
+		"flavorText": "\"Auspicious beasts leap high to pluck the greens — that symbolizes good fortune and knowing how to make some serious green, y'know — so may we all rise to new heights, one step at a time!\"",
+		"attributes": {
+			"labels": [
+				"Plunging Attack: Charmed Cloudstrider DMG|{param1:F1P}",
+				"HP Cost|{param2:F1P} Max HP",
+				"CD|{param3:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Suanni's Gilded Dance",
+		"descriptionRaw": "Gaming enters Wushou Stance, briefly applying <color=#FF9999FF>Pyro</color> to him, recovering a fixed amount of HP, and summons his companion, the Suanni Man Chai, to smash into his target, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\nAfter bashing its target, Man Chai will roll to a nearby location before moving towards Gaming. When it links up with Gaming, Man Chai will leave the field and reset the CD for Gaming's Elemental Skill, Bestial Ascent.\nWhile Wushou Stance is active, his resistance to interruption is increased, and when Gaming lands with Charmed Cloudstrider attack or completes the forward pounce attack from Bestial Ascent with over 50% HP, he will summon Man Chai again.\nEach Gaming can only have 1 Man Chai on the field simultaneously.\nThis effect will be canceled once Gaming leaves the field.\n\n<i>\"The gilded Suanni spits out fortune like a fireworks show! Hey, now that's what's called prosperity, when business is really 'booming'!\"</i>",
+		"description": "Gaming enters Wushou Stance, briefly applying Pyro to him, recovering a fixed amount of HP, and summons his companion, the Suanni Man Chai, to smash into his target, dealing AoE Pyro DMG.\nAfter bashing its target, Man Chai will roll to a nearby location before moving towards Gaming. When it links up with Gaming, Man Chai will leave the field and reset the CD for Gaming's Elemental Skill, Bestial Ascent.\nWhile Wushou Stance is active, his resistance to interruption is increased, and when Gaming lands with Charmed Cloudstrider attack or completes the forward pounce attack from Bestial Ascent with over 50% HP, he will summon Man Chai again.\nEach Gaming can only have 1 Man Chai on the field simultaneously.\nThis effect will be canceled once Gaming leaves the field.",
+		"flavorText": "\"The gilded Suanni spits out fortune like a fireworks show! Hey, now that's what's called prosperity, when business is really 'booming'!\"",
+		"attributes": {
+			"labels": [
+				"Suanni Man Chai Smash DMG|{param1:F1P}",
+				"Skill Healing|{param2:F1P} Max HP",
+				"Wushou Stance Duration|{param3:F1}s",
+				"CD|{param4:F1}s",
+				"Energy Cost|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Dance of Amity",
+		"descriptionRaw": "After <color=#FFD780FF>Bestial Ascent</color>'s Plunging Attack: Charmed Cloudstrider hits an opponent, Gaming will regain 1.5% of his Max HP once every 0.2s for 0.8s.",
+		"description": "After Bestial Ascent's Plunging Attack: Charmed Cloudstrider hits an opponent, Gaming will regain 1.5% of his Max HP once every 0.2s for 0.8s."
+	},
+	"passive2": {
+		"name": "Air of Prosperity",
+		"descriptionRaw": "When Gaming has less than 50% HP, he will receive a 20% Incoming Healing Bonus. When Gaming has 50% HP or more, Plunging Attack: Charmed Cloudstrider will deal 20% more DMG.",
+		"description": "When Gaming has less than 50% HP, he will receive a 20% Incoming Healing Bonus. When Gaming has 50% HP or more, Plunging Attack: Charmed Cloudstrider will deal 20% more DMG."
+	},
+	"passive3": {
+		"name": "The Striding Beast",
+		"descriptionRaw": "Increases the Movement SPD of your own party members by 10% during the day (6:00 – 18:00).\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Not stackable with Passive Talents that provide the exact same effects.",
+		"description": "Increases the Movement SPD of your own party members by 10% during the day (6:00 – 18:00).\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Not stackable with Passive Talents that provide the exact same effects."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104310,
+				"name": "Teachings of Prosperity",
+				"count": 3
+			},
+			{
+				"id": 112002,
+				"name": "Slime Condensate",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104311,
+				"name": "Guide to Prosperity",
+				"count": 2
+			},
+			{
+				"id": 112003,
+				"name": "Slime Secretions",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104311,
+				"name": "Guide to Prosperity",
+				"count": 4
+			},
+			{
+				"id": 112003,
+				"name": "Slime Secretions",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104311,
+				"name": "Guide to Prosperity",
+				"count": 6
+			},
+			{
+				"id": 112003,
+				"name": "Slime Secretions",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104311,
+				"name": "Guide to Prosperity",
+				"count": 9
+			},
+			{
+				"id": 112003,
+				"name": "Slime Secretions",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104312,
+				"name": "Philosophies of Prosperity",
+				"count": 4
+			},
+			{
+				"id": 112004,
+				"name": "Slime Concentrate",
+				"count": 4
+			},
+			{
+				"id": 113056,
+				"name": "Lightless Mass",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104312,
+				"name": "Philosophies of Prosperity",
+				"count": 6
+			},
+			{
+				"id": 112004,
+				"name": "Slime Concentrate",
+				"count": 6
+			},
+			{
+				"id": 113056,
+				"name": "Lightless Mass",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104312,
+				"name": "Philosophies of Prosperity",
+				"count": 12
+			},
+			{
+				"id": 112004,
+				"name": "Slime Concentrate",
+				"count": 9
+			},
+			{
+				"id": 113056,
+				"name": "Lightless Mass",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104312,
+				"name": "Philosophies of Prosperity",
+				"count": 16
+			},
+			{
+				"id": 112004,
+				"name": "Slime Concentrate",
+				"count": 12
+			},
+			{
+				"id": 113056,
+				"name": "Lightless Mass",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}
