@@ -51,7 +51,7 @@ function writeFileIfDifferent(path, data) {
 function makeDocTemplate(header, folder, typeinterface) {
 	return (`# ${header}\n\n` +
 	`Search function: \`genshindb.${folder}("query", opts);\`  \n` +
-	`Interactive: https://genshindb-ia.netlify.app/  \n` +
+	`Interactive: https://genshindb-ia.vercel.app/  \n` +
 	`Web API: https://genshin-db-api.vercel.app/api/${folder}?query=query\n\n` +
 	`Type:\n` + 
 	`\`\`\`ts\n`).replaceAll('\n', '\r\n') +

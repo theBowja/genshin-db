@@ -23,9 +23,12 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 
 - [Setup](#setup)
     - [Node](#node)
+    - [Webpack](#webpack)
+    - [distribution](#distribution)
+    - [Web API](#web-api)
 - [Introduction](#introduction)
-- [Query Options](#query-options)
 - [Query Functions](#query-functions)
+- [Query Options](#query-options)
 - [Adding Custom Names](#adding-custom-names)
 - [Adding Custom Data](#adding-custom-data)
 - [Contributing](#contributing)
@@ -38,6 +41,8 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 There are various ways you can add `genshin-db` to your project.
 
 ### Node
+
+Install a Node version that is still supported.  
 
 Install this package into your project with:
 ```cmd
@@ -62,11 +67,22 @@ Currently `genshin-db` does not support tree-shaking unreachable data by Webpack
 
 ### distribution
 
-theBowja/genshin-db-dist contains various gzips/scripts which allows you to reduce the size of your genshin-db dependency in the browser.
+[genshin-db-dist](https://github.com/theBowja/genshin-db-dist) contains various gzips/scripts which allows you to manually choose your genshin-db data and reduce the size of your genshin-db dependency in the browser.
 
-### genshin-db api
+### Web API
 
-theBowja/genshin-db-api is the web API for genshin-db using Vercel serverless functions.
+[genshin-db-api](https://github.com/theBowja/genshin-db-api) hosts Vercel serverless functions that allow access to genshin-db data via web API.
+
+It returns a JSON response if there is a result. Otherwise an empty response for no result.\
+The API usually gets updated one or two days after the main package updates.\
+Caution: stat functions from characters/enemies are not included. Currently there is no solution for this.
+
+Format:\
+`https://genshin-db-api.vercel.app/api/v5/[folder]?query=[query]`
+
+Examples:\
+https://genshin-db-api.vercel.app/api/v5/characters?query=hu  
+https://genshin-db-api.vercel.app/api/v5/characters?query=hu&matchCategories=true&dumpResult=true&queryLanguages=english,jap
 
 ## Introduction
 
@@ -76,9 +92,37 @@ You can retrieve the entire list of data in a folder by passing in `'names'` as 
 
 There is a function [genshindb.addData](https://github.com/theBowja/genshin-db/blob/main/src/getdata.js#L281) for adding custom data but there is no documentation for it yet. I plan to simplify this function further later.
 
+## Query Functions
+
+Query functions are the primary way to retrieve data.
+
+You can use the general folder search function `genshindb.searchFolder(folder, query[, opts])`
+Or the more specific query functions `genshindb.[folder](query[, opts])`
+
+genshindb.achievementgroups(query[, opts]);
+genshindb.achievements(query[, opts]);
+genshindb.adventureranks(query[, opts]);
+genshindb.animals(query[, opts]);
+genshindb.artifacts(query[, opts]);
+genshindb.characters(query[, opts]);
+genshindb.constellations(query[, opts]);
+genshindb.crafts(query[, opts]);
+genshindb.domains(query[, opts]);
+genshindb.elements(query[, opts]);
+genshindb.enemies(query[, opts]);
+genshindb.foods(query[, opts]);
+genshindb.geographies(query[, opts]);
+genshindb.materials(query[, opts]);
+genshindb.namecards(query[, opts]);
+genshindb.outfits(query[, opts]);
+genshindb.rarity(query[, opts]);
+genshindb.talents(query[, opts]);
+genshindb.weapons(query[, opts]);
+genshindb.windgliders(query[, opts]);
+
 ## Query Options
 
-Each query function can be augmented by various options.
+The search and result of each query function can be augmented by various options.
 
 The following are the **default options** that the library begins with:
 ```js
@@ -120,50 +164,10 @@ console.log(genshindb.characters("Éter")); // no need to pass in options as par
 
 Gets the options that are set. The object returned is cloned and not referenced to the original option.
 
-## Query Functions
-
-Query functions are the primary way to retrieve data.
-
-You can use the general folder search function `genshindb.searchFolder(folder, query[, opts])`
-Or the more specific query functions `genshindb.[folder](query[, opts])`
-
-genshindb.achievementgroups(query[, opts]);
-genshindb.achievements(query[, opts]);
-genshindb.adventureranks(query[, opts]);
-genshindb.animals(query[, opts]);
-genshindb.artifacts(query[, opts]);
-genshindb.characters(query[, opts]);
-genshindb.constellations(query[, opts]);
-genshindb.crafts(query[, opts]);
-genshindb.domains(query[, opts]);
-genshindb.elements(query[, opts]);
-genshindb.enemies(query[, opts]);
-genshindb.foods(query[, opts]);
-genshindb.geographies(query[, opts]);
-genshindb.materials(query[, opts]);
-genshindb.namecards(query[, opts]);
-genshindb.outfits(query[, opts]);
-genshindb.rarity(query[, opts]);
-genshindb.talents(query[, opts]);
-genshindb.weapons(query[, opts]);
-genshindb.windgliders(query[, opts]);
 
 ### Examples
 
 You can find [examples of query function usage in genshin-db here](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md).
-
-### API
-
-There is an API for these query functions. It returns a JSON response if there is a result. Otherwise an empty response for no result.\
-The API usually gets updated one or two days after the main package updates.\
-Caution: stat functions from characters/enemies are not included. Currently there is no solution for this.
-
-Format:\
-`https://genshin-db-api.vercel.app/api/v5/[folder]?query=[query]`
-
-Examples:\
-https://genshin-db-api.vercel.app/api/v5/characters?query=hu  
-https://genshin-db-api.vercel.app/api/v5/characters?query=hu&matchCategories=true&dumpResult=true&queryLanguages=english,jap
 
 ### Interactive App
 
@@ -235,7 +239,7 @@ There are scripts for building your own webpack distribution and gzipped data fi
 
 This script is for building webpack distributions of genshin-db for use anywhere.
 
-You can find prebuilt distributions at [genshin-db-dist](https://github.com/theBowja/genshin-db-dist) which gets updated after every new genshin-db release.
+You can find prebuilt distributions at [genshin-db-dist](https://github.com/theBowja/genshin-db-dist) which gets updated after every new genshin-db Github release.
 
 ```
 Usage:
@@ -317,7 +321,7 @@ Please write up an issue if something doesn't work.
 
 ## Time and Space
 
-genshin-db is over 50mb or 6mb compressed. If you're serving static content, please do not send the entire package to the client. A web page receiving the entire webpack will take some time to load, which does not provide for the best user experience.
+genshin-db is over 80mb or 10mb compressed. If you're serving static content, please do not send the entire package to the client. A web page receiving the entire webpack will take some time to load, which does not provide for the best user experience.
 
 My query functions aren't the fastest thing in existence. But it is fast enough that it doesn't really matter. Unless you're running the code on a real potato.
 

@@ -4,7 +4,6 @@ const fuzzysort = require('fuzzysort');
 // not really used internally. mainly for altnames api
 const FoldersEnum = {
 	characters     : 'characters',
-	outfits        : 'outfits',
 	talents        : 'talents',
 	constellations : 'constellations',
 	
@@ -13,8 +12,6 @@ const FoldersEnum = {
 	foods          : 'foods',
 	materials      : 'materials',
 	crafts         : 'crafts',
-	weaponmaterialtypes: 'weaponmaterialtypes',
-	talentmaterialtypes: 'talentmaterialtypes',
 
 	artifacts      : 'artifacts',
 	domains        : 'domains',
@@ -27,6 +24,7 @@ const FoldersEnum = {
 	achievementgroups: 'achievementgroups',
 
 	windgliders    : 'windgliders',
+	outfits        : 'outfits',
 	animals        : 'animals',
 	namecards      : 'namecards',
 	geographies    : 'geographies',
