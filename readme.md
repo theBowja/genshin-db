@@ -35,7 +35,7 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 
 ## Setup
 
-There are various ways you can add `genshin-db` to your project. Each has their pros and cons.
+There are various ways you can add `genshin-db` to your project.
 
 ### Node
 
@@ -57,8 +57,16 @@ npm install genshin-db@latest
 Make sure to check the [releases page](https://github.com/theBowja/genshin-db/releases) for any possible breaking changes between versions.
 
 ### Webpack
+
+Currently `genshin-db` does not support tree-shaking unreachable data by Webpack.
+
 ### distribution
+
+theBowja/genshin-db-dist contains various gzips/scripts which allows you to reduce the size of your genshin-db dependency in the browser.
+
 ### genshin-db api
+
+theBowja/genshin-db-api is the web API for genshin-db using Vercel serverless functions.
 
 ## Introduction
 
