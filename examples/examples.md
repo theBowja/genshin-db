@@ -2957,15 +2957,20 @@ const genshindb = require('genshin-db');
 ```js
 {
   id: 20010601,
+  monsterId: 20010601,
   name: 'Large Electro Slime',
-  specialName: 'Rolling Elemental',
+  specialNames: [ 'Rolling Elemental' ],
+  monsterType: 'MONSTER_ORDINARY',
   enemyType: 'COMMON',
-  category: 'Elemental Lifeforms',
+  categoryType: 'CODEX_SUBTYPE_ELEMENTAL',
+  categoryText: 'Elemental Lifeforms',
   description: 'A monster created by the coalescing of Electro dispersed throughout nature.\n' +
     'Due to the abundant Electro within its form, it will deliver an electric shock to its surroundings from time to time. At present, some have attempted to harness this energy to aid in production activities. Perhaps some new science will be born from this...?',
   investigation: {
+    investigationId: 20,
     name: 'Slime',
-    category: 'Easy',
+    categoryType: 'Common',
+    categoryText: 'Easy',
     description: "A pudgy elemental life form.\\nIt's said that desserts made from slimes of different elements will have incredibly distinctive flavors."
   },
   rewardPreview: [
@@ -3001,6 +3006,7 @@ const genshindb = require('genshin-db');
   'Dendro Hypostasis',
   'Electro Hypostasis',
   'Electro Regisvine',
+  'Emperor of Fire and Iron',
   'Experimental Field Generator',
   'Geo Hypostasis',
   'Golden Wolflord',

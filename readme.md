@@ -7,18 +7,17 @@
 
 ------------------------------------
 
-Flexibly search and get the information of characters, talents, constellations, weapons, weapon material, talent material, artifacts, food recipes, domains, etc.
+Flexibly search and get the JSON data of characters, talents, constellations, weapons, artifacts, food recipes, domains, tcg, etc.
 
-All in-game languages are supported for query and result.
+Querying and search results are available for all in-game languages.
 
-REFER TO [EXAMPLES.md](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md) since the readme below isn't detailed.
+genshin-db provides numerous query functions for searching various data folders. Every query input string will be **autocompleted** to match available values. For example `genshindb.characters('amb')` will autocomplete 'amb' into 'Amber' and return the data object for Amber. If there are no matches for your query, then **undefined** will be returned.
 
-This library provides numerous query functions for searching various data folders. Every query input string will be **autocompleted** to match available values. For example genshindb.characters('amb') will return data for 'Amber'. If there are no matches for your query, then **undefined** will be returned.
+[genshin-db example function calls](https://github.com/theBowja/genshin-db/blob/main/examples/examples.md).
 
 Data format may change between versions. If you need to know the data format for some specific version of this library, you can go to the github and switch to the tag version you're on. Then go into the data folder and look at the data to find the format. Don't look into the template folder since it isn't up-to-date.
 
 If you need help or have questions, you can talk to me in [my discord](https://discord.gg/utZRUky5Xm).
-
 
 ## Table of Contents
 
