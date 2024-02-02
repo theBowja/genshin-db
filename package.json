@@ -5,14 +5,15 @@
 	"main": "./src/main.js",
 	"types": "./types/index.d.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"examples": "cd scripts/generate && node ./examples.js",
 		"makeIndex": "cd scripts/generate && node ./makeIndex.js",
 		"combineData": "cd scripts/generate && node ./combineData.js",
 		"imagelist": "cd scripts/imagelist && node ./images.js",
 		"assemble": "npm run makeIndex && npm run combineData && npm run examples && npm run imagelist",
+		
 		"build": "node ./scripts/webpack/build.js",
 		"buildAllDist": "node ./scripts/webpack/buildAllDist.js",
+
 		"publish": "node ./scripts/publish/publish.js",
 		"publishTcg": "npm run publish tcg"
 	},

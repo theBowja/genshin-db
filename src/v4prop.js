@@ -323,11 +323,16 @@ function mapenemies(v5data) {
 	return {
 		id: v5data.id,
 		name: v5data.name,
-		specialname: v5data.specialName,
+		specialname: v5data.specialNames[0],
 		enemytype: v5data.enemyType,
-		category: v5data.category,
+		category: v5data.categoryText,
 		description: v5data.description,
-		investigation: v5data.investigation,
+		investigation: {
+			investigationId: v5data.investigation.investigationId,
+			name: v5data.investigation.name,
+			category: v5data.investigation.categoryText,
+			description: v5data.investigation.description
+		},
 		rewardpreview: v5data.rewardPreview,
 
 		images: {
