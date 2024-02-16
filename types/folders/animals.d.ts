@@ -1,6 +1,6 @@
 declare module "genshin-db" {
 	export interface Animal {
-		id: number;
+		id: number; // archive id
 		name: string;
 		dupealias?: string; // Vietnamese Vịt
 		description: string;

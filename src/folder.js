@@ -30,6 +30,9 @@ const FoldersEnum = {
 	geographies    : 'geographies',
 	adventureranks : 'adventureranks',
 
+	emojis         : 'emojis',
+	voiceovers     : 'voiceovers',
+
 	tcgactioncards:    'tcgactioncards',
 	tcgcardbacks:      'tcgcardbacks',
 	tcgcardboxes:      'tcgcardboxes',

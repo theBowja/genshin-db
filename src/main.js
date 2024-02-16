@@ -430,6 +430,27 @@ genshin.crafts = genshin.craft = function (query, opts) {
     return retrieveData(query, Folder.crafts, opts);
 }
 
+/**
+ * Get data about emojis
+ * @param {string} query - emoji name to search
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.emojis = genshin.emoji = function (query, opts) {
+    return retrieveData(query, Folder.emojis, opts);
+}
+
+/**
+ * Get data about voiceovers for characters
+ * @param {string} query - character name of the voiceover you want to search for
+ * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
+ * @returns {object} - The data found based on the query string and options parameter.
+ */
+genshin.voiceovers = genshin.voiceover = function (query, opts) {
+    return retrieveData(query, Folder.voiceovers, opts);
+}
+
+
 genshin.tcgactioncards = genshin.tcgactioncard = function (query, opts) {
     return retrieveData(query, Folder.tcgactioncards, opts);
 }

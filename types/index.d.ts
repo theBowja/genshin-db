@@ -20,6 +20,7 @@
 /// <reference path="./folders/weapons.d.ts" />
 /// <reference path="./folders/windgliders.d.ts" />
 /// <reference path="./folders/crafts.d.ts" />
+/// <reference path="./folders/emojis.d.ts" />
 
 /// <reference path="./folders/tcgactioncards.d.ts" />
 /// <reference path="./folders/tcgcardbacks.d.ts" />
@@ -136,6 +137,9 @@ declare module "genshin-db" {
 	// export const weaponmaterialtypes: QueryFunction<WeaponMaterial>;
 	export const weapons: QueryFunction<Weapon>;
 	export const windgliders: QueryFunction<WindGlider>;
+
+	export const emojis: QueryFunction<Emoji>;
+	export const voiceovers: QueryFunction<Voiceover>;
 
 	export const tcgactioncards: QueryFunction<TcgActionCards>;
 	export const tcgcardbacks: QueryFunction<TcgCardBacks>;

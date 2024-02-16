@@ -1,10 +1,10 @@
 declare module "genshin-db" {
 	export interface Enemy {
-		id: number;
-		monsterId: number;
+		id: number; // archive id
+		monsterId: number; // might be different from id
 
 		name: string;
-		specialNames: string[];
+		specialNames: string[]; // list of possible special names
 
 		monsterType: 'MONSTER_BOSS' | 'MONSTER_ORDINARY'; // enum
 		enemyType: 'BOSS' | 'COMMON' | 'ELITE'; // enum
