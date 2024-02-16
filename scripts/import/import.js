@@ -333,38 +333,6 @@ async function copyImagesProps(importdata, importconfig, dbimages) {
 	}
 }
 
-function collateOutfit(existing, newdata, lang) {
-	clearObject(existing);
-	copyPropsIfExist(newdata, existing, ['name', 'description', 'isdefault', 'character', 'source']);
-	if(lang === 'English') {
-		newdata.images = {};
-		copyPropsIfExist(newdata, newdata.images, ['namecard', 'nameicon', 'namesplash', 'namesideicon']);
-		if(!newdata.url) newdata.url = {};
-		if(!newdata.url.modelviewer) newdata.url.modelviewer = '';
-	}
-}
-
-async function collateMaterial(existing, newdata, lang, importconfig, skipimageredirect) {
-	if(existing.dropdomain && existing.dropdomain !== "" && !newdata.dropdomain) newdata.dropdomain = existing.dropdomain;
-	if(existing.daysofweek && existing.daysofweek.length !== 0 && !newdata.daysofweek) newdata.daysofweek = existing.daysofweek;
-	clearObject(existing);
-	let copyover = ['name', 'dupealias', 'description', 'sortorder', 'rarity', 'category', 'materialtype', 'dropdomain',
-					  'daysofweek', 'source'];
-	existing.name = newdata.name;
-	for(let prop of copyover) {
-		if(newdata[prop] !== undefined) existing[prop] = newdata[prop];
-	}
-	if(lang === 'English') {
-		newdata.images = {};
-		let imagename = newdata.name;
-		if(imagename === 'Ley Line Sprout') imagename = 'Ley Line Sprouts';
-		imagename = imagename.replace(/ /g, '_').replace(/"/g, '');
-		newdata.images.nameicon = newdata.imagename;
-		newdata.images.redirect = `https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_${imagename}.png`
-		if(!skipimageredirect) newdata.images.fandom = await getRedirectedUrl(newdata.images.redirect);
-	}
-}
-
 function collateData(dbdata, importdata, langC, importconfig, dbimages) {
 	clearObject(dbdata);
 	copyPropsIfExist(importdata, dbdata, importconfig.props);
@@ -427,6 +395,30 @@ function updateVersions(filenames, folder) {
 
 	for(const filename of filenames) {
 		myversions[filename] = existing[filename] || existing[filename] === "" ? JSON.parse(JSON.stringify(existing[filename])) : gameVersion;
+	}
+	writeFileIfDifferent(`../../src/data/version/${folder}.json`, myversions);
+}
+
+function updateVoiceoverVersions(importdata, folder) {
+	let existing = {};
+	let myversions = {};
+	try { existing = require(`../../src/data/version/${folder}.json`); } catch(e) {}
+
+	for(const [filename, data] of Object.entries(importdata)) {
+		myversions[filename] = {};
+
+		data.friendLines.forEach(voiceline => {
+			if (existing[filename] && (existing[filename][voiceline.voicelineId] || existing[filename][voiceline.voicelineId] === ""))
+				 myversions[filename][voiceline.voicelineId] = existing[filename][voiceline.voicelineId];
+			else
+				myversions[filename][voiceline.voicelineId] = gameVersion;
+		});
+		data.actionLines.forEach(voiceline => {
+			if (existing[filename] && (existing[filename][voiceline.voicelineId] || existing[filename][voiceline.voicelineId] === ""))
+				 myversions[filename][voiceline.voicelineId] = existing[filename][voiceline.voicelineId];
+			else
+				myversions[filename][voiceline.voicelineId] = gameVersion;
+		});
 	}
 	writeFileIfDifferent(`../../src/data/version/${folder}.json`, myversions);
 }
@@ -516,7 +508,9 @@ function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipim
 		if(dbimages)
 			writeFileIfDifferent(`../../src/data/image/${folder}.json`, dbimages);
 		if(langC === 'EN') {
-			updateVersions(filenamelist, folder);
+			if (!importconfig[folder].specialversion) updateVersions(filenamelist, folder);
+			else if (folder === 'voiceovers') updateVoiceoverVersions(importdatafolder, folder);
+
 			if(folder === 'outfits')
 				addURLsEmpty(filenamelist, folder, ['modelviewer']);
 			if(['characters', 'weapons', 'talents', 'enemies'].includes(folder))
@@ -551,7 +545,7 @@ gameVersion = "4.4"; // new data will use this as added version
 // importData('geographies');
 // importData('crafts');
 // importData('emojis');
-importData('voiceovers')
+// importData('voiceovers')
 // importData('achievements');
 // importData('achievementgroups');
 // importData('adventureranks'); // max 60
