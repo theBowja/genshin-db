@@ -115,6 +115,14 @@ let folders = [
 	// 	params: ['challenger II']
 	// },
 	{
+		function: 'emojis',
+		params: ['oh']
+	},
+	{
+		function: 'voiceovers',
+		params: ['ayaka']
+	},
+	{
 		function: 'elements',
 		params: [],
 	},

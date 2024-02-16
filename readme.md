@@ -31,6 +31,7 @@ If you need help or have questions, you can talk to me in [my discord](https://d
 - [Query Options](#query-options)
 - [Adding Custom Names](#adding-custom-names)
 - [Adding Custom Data](#adding-custom-data)
+- [Versioning](#versioning)
 - [Contributing](#contributing)
 - [Build scripts](#build-scripts)
 - [Typescript](#typescript)
@@ -286,6 +287,13 @@ More examples:
   npm run combineData -- --gzipfilepath D:/Workspace/tmp/data.gzip
 
 ```
+
+## Versioning
+
+This repo loosely follows semantic versioning. `[major].[minor].[patch]`  
+Major version increases have sweeping breaking changes.  
+Minor version increases may have breaking changes localized to folders.  
+Patch version increases can add additional data or functionality or fix bugs.  
 
 ## Contributing
 

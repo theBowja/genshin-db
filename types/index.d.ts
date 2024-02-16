@@ -21,6 +21,7 @@
 /// <reference path="./folders/windgliders.d.ts" />
 /// <reference path="./folders/crafts.d.ts" />
 /// <reference path="./folders/emojis.d.ts" />
+/// <reference path="./folders/voiceovers.d.ts" />
 
 /// <reference path="./folders/tcgactioncards.d.ts" />
 /// <reference path="./folders/tcgcardbacks.d.ts" />
