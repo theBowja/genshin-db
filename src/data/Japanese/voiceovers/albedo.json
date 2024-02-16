@@ -1,0 +1,660 @@
+{
+	"id": 10000038,
+	"name": "Albedo",
+	"friendLines": [
+		{
+			"voicelineId": 35009,
+			"title": "初めまして…",
+			"voicelineType": "1000",
+			"description": "ボクはアルベド、西風騎士団の首席錬金術師だ。キミから感じる星海の気配に興味があってね、近くで観察したいと思ったんだ。きっとこれから一緒に行動する機会が増えると思うよ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_draw_appear"
+		},
+		{
+			"voicelineId": 35010,
+			"title": "世間話·写生",
+			"voicelineType": "1101",
+			"description": "いい景色だね。休憩中にこの景色を絵にしようか。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_explore_idle_01"
+		},
+		{
+			"voicelineId": 35011,
+			"title": "世間話·探究",
+			"voicelineType": "1102",
+			"description": "「世界の真相」とは…一体何なんだろう？",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_explore_idle_02"
+		},
+		{
+			"voicelineId": 35012,
+			"title": "世間話·過去を懐かしむ",
+			"voicelineType": "1103",
+			"description": "自分の両足で土地を測り、「未知」を知識に変えていく。この感じ、懐かしいなぁ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_explore_idle_03"
+		},
+		{
+			"voicelineId": 35013,
+			"title": "雨の日…",
+			"voicelineType": "1201",
+			"description": "土が潤っている、ボムボムウリの根の採集に相応しいね。大丈夫、ボクに任せて。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 35014,
+			"title": "雪の日…",
+			"voicelineType": "1202",
+			"description": "師匠…",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_weather_snowy_01"
+		},
+		{
+			"voicelineId": 35015,
+			"title": "晴れの日…",
+			"voicelineType": "1203",
+			"description": "光が十分、生物活動も活発、うん、スケッチに向いてるね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_weather_sunny_01"
+		},
+		{
+			"voicelineId": 35016,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "おはよう、古代遺物を探しに出かけるのかい？",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 35017,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "こんにちは、キミの足音が聞こえたんだ。工房の外は賑やかだね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 35018,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "外はやっと静かになったね、ふう。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 35019,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "おやすみ、先に休んでていいよ。ボクは最後の実験を終わらせたいんだ。そんなに興味があるなら…明日会う時、実験結果について一緒に話し合おう。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 35020,
+			"title": "アルベド自身について·天才",
+			"voicelineType": "2001",
+			"description": "天才？ボクをそう呼ぶ人は多いけど…ボクはそうとは思わないんだ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_idle"
+		},
+		{
+			"voicelineId": 35021,
+			"title": "アルベド自身について·人付き合い",
+			"voicelineType": "2002",
+			"description": "人付き合いは…面倒だよ。始めると維持が必要だし、繋がりが途絶えると再び紡ぐのにもっと時間がかかる…",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_idle2"
+		},
+		{
+			"voicelineId": 35022,
+			"title": "実験について…",
+			"voicelineType": "2003",
+			"description": "キミ…ボクの実験に付き合ってくれるのかい？光栄だね。\nああ、緊張しないで。ボクの実験は危険だけど、無実の人を傷つけたりしないから。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_close"
+		},
+		{
+			"voicelineId": 35023,
+			"title": "助手について…",
+			"voicelineType": "2004",
+			"description": "ボクの助手になってくれないかい？何度もボクのそばで見てきたから、もう覚えてるよね。安心して、ボクがついてる。たとえ実験をするのが初めてだとしても、問題はないさ。ボクはボクの指導力に自信があるし、何よりもキミの才能を信じてるからね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35024,
+			"title": "「神の目」について…",
+			"voicelineType": "3001",
+			"description": "「神の目」？所詮実験用の道具だよ、ビーカーやるつぼと変わらないさ。唯一興味があるのはその原理だ…いつかボクが解明してみせる、時間の問題だよ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35025,
+			"title": "シェアしたいこと…",
+			"voicelineType": "3002",
+			"description": "キミに拒否されたら落ち込むから少し言いにくいけど…\nうーん…キミの周りを飛んでるちびっ子に興味があるんだ、少し貸してもらえないかな？",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_share_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35026,
+			"title": "興味のあること…",
+			"voicelineType": "3003",
+			"description": "石化古樹のことをもっと知りたい？うーん…キミが近くの秘境で見たあれはそれほど古くないものだ。より古い木だと2、3000メートルくらいの高さがあるからね。その根元には大きな蜘蛛が集まってる。その蜘蛛をクチナシとオガルカヤでくくって、カルダモンを塗り、数時間焼いた後の香りは…本当に忘れられないよ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_gift"
+		},
+		{
+			"voicelineId": 35027,
+			"title": "家族について…",
+			"voicelineType": "4001",
+			"description": "…家族のこと？お母さんって呼んでほしいとアリスさんには言われてるけど…ボクにとっての家族はやはり師匠かな。物心がついた頃から師匠と一緒に探検してたし、錬金術も世の中の知識も彼女が教えてくれたんだ。…ボクにとって彼女は、「家族」や「師匠」って言葉だけでは表現しきれないかもしれない。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_relatives_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35028,
+			"title": "スクロースについて·方向性",
+			"voicelineType": "4002",
+			"description": "スクロースかい？彼女が「生物錬金」に夢中になってる理由は理解できると思うよ…ともあれ、彼女の研究が順調に進んでるのを見ると、ボクも嬉しくなるんだ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35029,
+			"title": "スクロースについて·こだわり",
+			"voicelineType": "4003",
+			"description": "学術的な面に関しては仲良くやってるけど、研究課題以外のことに関しては、こだわりが強すぎるきらいがあるんだ。たとえば、同世代なんだからボクのことは呼び捨てでいいよって言っても、彼女は先生と呼んでくる。はぁ、彼女の好きなようにさせるしかないね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_sucrose_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35030,
+			"title": "リサについて…",
+			"voicelineType": "4004",
+			"description": "リサかい？彼女との話し合いはいつも価値のある結果をもたらしてくれるんだ。あんなに才能があるのに図書館司書の肩書きで満足するとは、きっとその才能に関わる因縁深い理由があるんだと思う。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35031,
+			"title": "クレーについて…",
+			"voicelineType": "4005",
+			"description": "クレーのことは実の妹のように思ってるよ。だから彼女が何かトラブルを起こしても、アリスさんに比べたらその破壊力はかわいいものだって自分に言い聞かせるようにしてるんだ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35032,
+			"title": "ジンについて…",
+			"voicelineType": "4006",
+			"description": "ジン？彼女は真面目な代理団長で、あの大団長よりも頼もしいと言える…みんなも、彼女が正式に団長となる日を密かに期待してるんじゃないかな。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35033,
+			"title": "行秋について…",
+			"voicelineType": "4007",
+			"description": "行秋かい？彼の書いた小説は面白いよ。ただ、稲妻の「八重堂」がいつも他の作者とコラボしてほしいと言ってくるんだ、そうすれば印税の収入も多くなるってさ。フン、ボクは別にお金に困ってないのに。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35034,
+			"title": "バーバラについて…",
+			"voicelineType": "4008",
+			"description": "バーバラかい？彼女は真面目な牧師だよ。そういえば昔、彼女のクロッキーを描いたことがあってね…絵はどうしたかって？うん…アルバートの購入希望を断って、代理団長にプレゼントしたよ。…人付き合いって、本当に大変だね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35035,
+			"title": "アルベドを知る·1",
+			"voicelineType": "5001",
+			"description": "ボクに聞きたいことがあるのかい？何かな。あっ、その前にひとつ聞きたいんだけど、その質問はそんなに時間かからないよね？いま進めている研究がもうすぐ最終段階に入るんだ…",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_01"
+		},
+		{
+			"voicelineId": 35036,
+			"title": "アルベドを知る·2",
+			"voicelineType": "5002",
+			"description": "ああ、これは余談なんだけど、人の介入がない限り、8倍の大きさの太陽が消滅しないと黄金は自然生成されないんだ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35037,
+			"title": "アルベドを知る·3",
+			"voicelineType": "5003",
+			"description": "人物画の作業時間は主に気分次第だ。ホフマンを描く時は半日もかかったりするけど、ガイアを描く時はちょんちょんで終わるよ——この丸は顔、これが眼帯の紐でこっちが眼帯って具合にね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35038,
+			"title": "アルベドを知る·4",
+			"voicelineType": "5004",
+			"description": "絵と研究以外では…たまに稲妻と璃月の小説を読んだりしているよ。面白い考えをたくさん見られるし、時には予想もつかないインスピレーションを得られるんだ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35039,
+			"title": "アルベドを知る·5",
+			"voicelineType": "5005",
+			"description": "今でも、師匠に教わった「黒土の術」は謎だらけだ、師匠は一体この技術で何を作り出そうとしていたんだろう…研究はまだまだ終わらない、キミにも一緒に探索をしてもらわないとね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35040,
+			"title": "アルベドの趣味…",
+			"voicelineType": "6001",
+			"description": "うーん…研究以外で一番時間をかけたいのは絵を描くことかな。最初は物体や材料の構造を理解し、それを研究に応用するために始めたんだけど、気付いたら趣味になっていた。うん、いいリラックスになってると思うよ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_hobby"
+		},
+		{
+			"voicelineId": 35041,
+			"title": "アルベドの悩み…",
+			"voicelineType": "6002",
+			"description": "時間が足りないことかな。面倒なことを他の人に任せても、やっぱり時間は足りないって思ってしまうよ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_annoyed"
+		},
+		{
+			"voicelineId": 35042,
+			"title": "好きな食べ物…",
+			"voicelineType": "6003",
+			"description": "スイーツは好きだよ。なんというか…スイーツを食べると、カロリーを一気に補給出来て、集中力や効率が上がるんだ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_foodLike"
+		},
+		{
+			"voicelineId": 35043,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "嫌いな食べ物…レストランに出てくる大量の肉かな。ボクは小食だから、「もったいない」上に「美味しくなくなる」。だからいっそのこと、ボクはレストランに行くことをやめたんだ。そのせいで、料理に費やす時間が増えてしまったけどね…",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_foodDislike"
+		},
+		{
+			"voicelineId": 35071,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "味覚が色をまるで反射しているようだ…ふむ、これは黄金色だね。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_spice_pref_01"
+		},
+		{
+			"voicelineId": 35072,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "キミは料理を作ることに時間をかけるようだ。だから、このような味が作れるのだろう。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_spice_normal_01"
+		},
+		{
+			"voicelineId": 35073,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "量が少し多いようだ…キミも一緒に食べないかい？",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_spice_dislike_01"
+		},
+		{
+			"voicelineId": 35044,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "誕生日おめでとう。嬉しそうだね。そんなキミを絵に描いてもいいかい？人の脳の容量は限られてるから、つい忘れてしまうんだ。でも絵にすれば、それは記憶の延長になる。将来、絵をもう一度目にすることで、当時の気持ちを思い出すことができるんだ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 35045,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "「黒土」は錬金術の語源でもあり、最初の状態のことだよ。この世界に生きてる限り、ボクたちは存在する意味を探さないといけない。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35046,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "「白亜」、それは変化の始まり。不純物が取り除かれ、あらゆる知識を受け入れる準備ができた。ボクと共に世界を探索してみないかい？",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35047,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "「赤化」、錬金術では感情の精錬を意味するんだ。ボクの赤はキミが原因らしい。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35048,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "「黄金」、錬金術の最後の段階。無価値のものは存在する意味を見つけ、黄金になった。ボクも、ちゃんと意味を見つけたよ。",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 35049,
+			"title": "元素スキル·1",
+			"voicelineType": "100001",
+			"description": "咲け。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill1_01"
+		},
+		{
+			"voicelineId": 35050,
+			"title": "元素スキル·2",
+			"voicelineType": "100002",
+			"description": "擬似陽華。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill1_02"
+		},
+		{
+			"voicelineId": 35051,
+			"title": "元素スキル·3",
+			"voicelineType": "100003",
+			"description": "創生の術。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill1_03"
+		},
+		{
+			"voicelineId": 35052,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "今こそ、誕生の時。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill3_01"
+		},
+		{
+			"voicelineId": 35053,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "冥王、顕生へ。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill3_02"
+		},
+		{
+			"voicelineId": 35054,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "偉業を見届けよ。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill3_03"
+		},
+		{
+			"voicelineId": 35055,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "大地の秘宝か。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_chest_open_01"
+		},
+		{
+			"voicelineId": 35056,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "無言なる叙述。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_chest_open_02"
+		},
+		{
+			"voicelineId": 35057,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "「黄金」の比ではないが、価値がある。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_chest_open_03"
+		},
+		{
+			"voicelineId": 35058,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "計算ミス…",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_01"
+		},
+		{
+			"voicelineId": 35059,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "再評価が必要だ…",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_02"
+		},
+		{
+			"voicelineId": 35060,
+			"title": "HP低下·3",
+			"voicelineType": "410003",
+			"description": "策を変えないと。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_03"
+		},
+		{
+			"voicelineId": 35061,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "ボクに任せて。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 35062,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "変わって、キミには無理だよ。",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 35063,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "灰は灰に、塵は塵に…",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_die_01"
+		},
+		{
+			"voicelineId": 35064,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "実験が失敗したのか？",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_die_02"
+		},
+		{
+			"voicelineId": 35065,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "ボクの研究も、終わりか…",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_die_03"
+		},
+		{
+			"voicelineId": 35066,
+			"title": "ダメージを受ける·1",
+			"voicelineType": "900001",
+			"description": "しきい値内だ…",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 35067,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "ミスしたか…",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 35068,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "了解。",
+			"voicefile": "VO_teamJoin/vo_albedo_teamJoin_01"
+		},
+		{
+			"voicelineId": 35069,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "課外活動かな？",
+			"voicefile": "VO_teamJoin/vo_albedo_teamJoin_02"
+		},
+		{
+			"voicelineId": 35070,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "一緒に探索しよう。",
+			"voicefile": "VO_teamJoin/vo_albedo_teamJoin_03"
+		}
+	]
+}

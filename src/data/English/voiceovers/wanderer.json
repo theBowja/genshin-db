@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "Hello",
+			"voicelineType": "1006",
+			"description": "You want me to introduce myself? I've gone by many names and titles during my journey. Although each one is more eminent than any ordinary mortal could imagine, they're all just water under the bridge to me now.\nCall me whatever you like. Go ahead, let me see what you can come up with. Don't disappoint me.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "Chat: The Wind",
+			"voicelineType": "1101",
+			"description": "There's no such thing as pure freedom in this world. Even the wind cannot blow on forever.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "Chat: Manner of Speech",
+			"voicelineType": "1102",
+			"description": "You think I've got a sharp tongue? I just tell it like it is. If someone can't handle it, maybe that's their problem.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "Chat: Exchanging Pleasantries",
+			"voicelineType": "1103",
+			"description": "There's no need to exchange pleasantries. It's rather pathetic to force a conversation just to occupy silence.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "When It Rains",
+			"voicelineType": "1201",
+			"description": "You want to use my hat as an umbrella? Hmph, the audacity to even make that request...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "After the Rain",
+			"voicelineType": "1202",
+			"description": "You're so happy just to see the sun again? How childish.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "When Thunder Strikes",
+			"voicelineType": "1203",
+			"description": "Huh. How irritating.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "When It Snows",
+			"voicelineType": "1204",
+			"description": "Fundamentally speaking, there's little difference between snow and rain, yet people lavish praise only upon the former... Fate can be truly arbitrary.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "When the Wind Is Blowing",
+			"voicelineType": "1205",
+			"description": "A simple breeze like this... Even you can conjure it, right?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "Good Morning",
+			"voicelineType": "1001",
+			"description": "\"Rise and shine, sleepyhead, the sun's already in your eyes!\" ...Haha, don't tell me you actually thought I'd wake you up like that?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "Good Afternoon",
+			"voicelineType": "1002",
+			"description": "I have no need for food. Save me the trouble and take care of yourself and that small thing floating next to you.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "Good Evening",
+			"voicelineType": "1003",
+			"description": "Finally, another boring day is drawing to a close.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "Good Night",
+			"voicelineType": "1004",
+			"description": "What, can't fall asleep with me around? Hehe.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#About {REALNAME[ID(1)]}: Puppet",
+			"voicelineType": "2001",
+			"description": "A puppet consumed by a raging fire will leave behind ashes. As for what will emerge from them...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#About {REALNAME[ID(1)]}: Heart",
+			"voicelineType": "2005",
+			"description": "I'll leave that kind of thing to fate. Obsessing over something that's destined to be ever out of one's reach is just a waste of time. I have more important things to attend to at the moment.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "About Us: Rivals",
+			"voicelineType": "2003",
+			"description": "So, you're still stewing over our run-ins from before? Huh. Well, what are you going to do about it? Take your time. I'm in no hurry.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "About Us: Collaborators",
+			"voicelineType": "2002",
+			"description": "I'll never be one of the good guys. I'm just here to pay my dues after what you've done for me.\nBut what about you? Shouldn't you come up with some excuse for our meetings? If one of your friends mistakes you for collaborating with the enemy, you're on your own.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "About the Vision",
+			"voicelineType": "3001",
+			"description": "Although the idea of \"divine favor\" makes me a little ill, I'm not going to be picky about a new source of power. You think there's some kind of meaning behind the element of Anemo? Hah, why did that thought even occur to you? The gods aren't guided by any kind of rationality or moral compass. Haven't I shown that to you already?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "Something to Share",
+			"voicelineType": "3002",
+			"description": "I've got nothing. Ask me anything if you want. If a question is interesting enough, I may give you an answer.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "Interesting Things",
+			"voicelineType": "3003",
+			"description": "Look. The birds are showing off their plumage, the squirrels are busy hoarding food, and humans are laboring for their livelihoods. Truly, simple animals don't need anything complicated to be fulfilled.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "About Lesser Lord Kusanali",
+			"voicelineType": "4001",
+			"description": "While I still had value as a pawn, she might have had other reasons to keep me alive. It's certainly possible that it was because she's wise or benevolent, or happened to see a hint of loneliness within me... You think I'm trying to think the worst of her? Hah, did you really expect anything else? In case you've forgotten, I'm no saint.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "About the Raiden Shogun",
+			"voicelineType": "4002",
+			"description": "She completely neglected her own creation, and to add insult to injury, she said it was because she \"couldn't bring herself to intervene\" in my fate...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "About the Tsaritsa",
+			"voicelineType": "4003",
+			"description": "Everyone praises her for her kindness and benevolence, but they forget that love is also a form of sin. What if she's just trying to compensate for something?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "About The Jester",
+			"voicelineType": "4004",
+			"description": "The Jester is a survivor of Khaenri'ah. Besides that singular fact, I know very little about him, and never had any kind of close association with him. He seems to want something from me, though. In the past, he assigned to me many important tasks, including a number of trips to the Abyss.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "About The Captain",
+			"voicelineType": "4005",
+			"description": "\"The ever-righteous Captain,\" \"the brave and fearless Captain,\" \"the nigh-invincible Captain\"... Even my mechanical ears demand maintenance after listening to so many compliments from the members of the Fatui. Don't you think that possessing absolute righteousness is actually a latent danger? And that's without taking his great personal strength into account.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "About The Doctor",
+			"voicelineType": "4006",
+			"description": "It's a pity that Lesser Lord Kusanali already forced him to erase so many of his segments. The joy I would have derived from slicing them apart one by one...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "About Damselette",
+			"voicelineType": "4007",
+			"description": "Let me ask: what should you do if you were to encounter a \"damsel\" who is oblivious and innocent at any given time, and unconcerned and unfeeling in any given situation? If it were me, I could at least challenge her to a fight. But if it were you... with your conscience, I would stay away from her.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "About The Knave",
+			"voicelineType": "4008",
+			"description": "A wolf in sheep's clothing. To exert a higher level of control over people, she puts on a graceful and cordial front. Most of those who have seen her true, crazy self... have gone poof.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "About The Rooster",
+			"voicelineType": "4009",
+			"description": "Only someone as dense as Childe would think The Rooster is looking after him and his family out of the goodness of his heart. Although the mayor has indeed done a number of things for their benefit, anyone with a brain would be able to tell that the underlying meaning is \"your entire family is in my hands.\"",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "About Marionette",
+			"voicelineType": "4010",
+			"description": "She has a terrible personality and cares for nothing outside of her own research. But even with that amount of dedication, she still produced a copious amount of garbage, and could only secure a ranking that's still one whole place beneath my own. How pitiful.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "About Regrator",
+			"voicelineType": "4011",
+			"description": "Oh, the ninth-ranked guy. He's obsessed with the idea of \"fair exchange,\" to the point of wanting to overthrow the natural imbalance between gods and humans. But, I guess it's just how ordinary mortals are like — it's easy for them to come up with pointless delusions. Honestly, it's nothing worth writing home about, just like how there's also nothing impressive about his abilities or choice of partner. Hmph. Anyone who chooses to work closely with The Doctor is sure to meet a nasty end.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "About Childe",
+			"voicelineType": "4012",
+			"description": "He's simple of mind and not that strong of body. Naming him to the lowest-ranked seat lowered the Harbingers' collective prestige. Thankfully, I'm no longer part of that group.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "About The Fair Lady",
+			"voicelineType": "4013",
+			"description": "Nothing remained in her ashes. I have no interest in those who have lost their future.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Omnipresence Over Mortals\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "About Yae Miko",
+			"voicelineType": "4014",
+			"description": "A smooth-talking youkai. Though she pretends to care about humans to gain the favor of her god, all she seeks are entertaining ways to pass her time.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Omnipresence Over Mortals\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "About Kaedehara Kazuha",
+			"voicelineType": "4015",
+			"description": "You speak of the descendant of the Kaedehara clan? Then isn't he... Wait, he also possesses an Anemo Vision? ...And even managed to take on the Raiden Shogun's Musou no Hitotachi? Hehe... Ahahahaha!",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#More About {REALNAME[ID(1)]}: I",
+			"voicelineType": "5001",
+			"description": "You want to learn more about me? How ridiculous. Don't you know that's only asking for trouble?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#More About {REALNAME[ID(1)]}: II",
+			"voicelineType": "5002",
+			"description": "Oh, I'm well aware that many, many people will want to seek me out and settle the grudges they've built against me in my past life. Fine by me — come one, come all, I say. As a matter of fact, I'm somewhat looking forward to it.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#More About {REALNAME[ID(1)]}: III",
+			"voicelineType": "5003",
+			"description": "I once thought that deification would allow me to get rid of all of my pointless emotions, but I've since abandoned that view. Anger, whether it be from others or myself, is too convenient and useful as a tool.\nHow can some people just never become angry? I find that impossible to even imagine. Do they just not have a single mean bone in their bodies?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#More About {REALNAME[ID(1)]}: IV",
+			"voicelineType": "5004",
+			"description": "When I entered Irminsul, there was only one thought in my mind: I wish I'd never been born at all.\nIrminsul responded to my wish, but didn't bring me the outcome I desired. The fate of this world hasn't changed a single bit when it comes to playing cruel tricks on its prisoners.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#More About {REALNAME[ID(1)]}: V",
+			"voicelineType": "5005",
+			"description": "You and I have crossed paths in the past, but our journeys will eventually diverge. Who knows what will happen next? Let's just wait and see.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"Inversion of Genesis\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#{REALNAME[ID(1)]}'s Hobbies",
+			"voicelineType": "6001",
+			"description": "Hobbies? Those are for idle bodies who have the free time to think about such things. Do I look like I have any interest in distractions?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#{REALNAME[ID(1)]}'s Troubles",
+			"voicelineType": "6002",
+			"description": "I'm trying to figure out a way to get rid of you so I can go commit atrocities. ...Wait, did you think I was being serious?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "Favorite Food",
+			"voicelineType": "6005",
+			"description": "Do you have some tea? The more bitter, the better. It leaves the most fascinating aftertaste.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "Least Favorite Food",
+			"voicelineType": "6004",
+			"description": "I'm no fan of Dango, or any other sticky sweets that make me feel like my teeth are fusing together. Keep them to yourself.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "Receiving a Gift: I",
+			"voicelineType": "6007",
+			"description": "It's okay. Guess this is one of the few things you're good at.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "Receiving a Gift: II",
+			"voicelineType": "6008",
+			"description": "Not bad. You actually made something edible.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "Receiving a Gift: III",
+			"voicelineType": "6009",
+			"description": "You wanna poison me? Are you so dumb as to have forgotten that I'm not human?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "Birthday",
+			"voicelineType": "7001",
+			"description": "Give me your hand. Heh, there's no need to be nervous. I'm just taking you to a vantage point.\nHow is it? The scenery here should be quite breathtaking. There's no need to thank me — I see little point in it.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "Feelings About Ascension: Intro",
+			"voicelineType": "8001",
+			"description": "...I can see the great deal of effort you put forth.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "Feelings About Ascension: Building Up",
+			"voicelineType": "8002",
+			"description": "The wind is blowing this way... What did you do?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "Feelings About Ascension: Climax",
+			"voicelineType": "8003",
+			"description": "You aren't worried about making me more powerful? ...Alright.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "Feelings About Ascension: Conclusion",
+			"voicelineType": "8004",
+			"description": "Although I can be of help to you, seeing me as an ally is still a dangerous endeavor. I hope you understand what you're doing. If you still insist on continuing down this path, then let me lead the way.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "The wind rises!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Behold!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Squall and fury!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Unsightly insects!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "Wretched vermin!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "Elemental Burst: III",
+			"voicelineType": "200003",
+			"description": "Cry louder!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "Elemental Burst: IV",
+			"voicelineType": "200004",
+			"description": "Bow your head!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "Elemental Burst: V",
+			"voicelineType": "200005",
+			"description": "Know your place!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "Elemental Burst: VI",
+			"voicelineType": "200006",
+			"description": "You dare to gaze upon me!?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "Sprint Start: I",
+			"voicelineType": "700001",
+			"description": "Surge forth!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "Sprint Start: II",
+			"voicelineType": "700002",
+			"description": "Upon the gale!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "Sprint Start: III",
+			"voicelineType": "700004",
+			"description": "...Too slow.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "Sprint Start: IV",
+			"voicelineType": "700005",
+			"description": "Quit following me!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "Opening Treasure Chest: I",
+			"voicelineType": "300001",
+			"description": "Unnecessary.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "Opening Treasure Chest: II",
+			"voicelineType": "300002",
+			"description": "Hah, you even want this?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "Opening Treasure Chest: III",
+			"voicelineType": "300003",
+			"description": "Take it and have fun.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "Low HP: I",
+			"voicelineType": "410001",
+			"description": "I'm used to this.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "Low HP: II",
+			"voicelineType": "410002",
+			"description": "Nothing worth mentioning.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "Ally at Low HP: I",
+			"voicelineType": "400001",
+			"description": "Why are you even here?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "Ally at Low HP: II",
+			"voicelineType": "400002",
+			"description": "Worthless as expected.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "Fallen: I",
+			"voicelineType": "500001",
+			"description": "Falling... into the abyss...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "Fallen: II",
+			"voicelineType": "500002",
+			"description": "Everything... was futile...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "Fallen: III",
+			"voicelineType": "500003",
+			"description": "The price... for my sins...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "Heavy Hit Taken: I",
+			"voicelineType": "910001",
+			"description": "That's far enough.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "Heavy Hit Taken: II",
+			"voicelineType": "910002",
+			"description": "...How amusing.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "Heavy Hit Taken: III",
+			"voicelineType": "910003",
+			"description": "...You're dead.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "Heavy Hit Taken: IV",
+			"voicelineType": "910004",
+			"description": "I'll have you beg for mercy.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "Heavy Hit Taken: V",
+			"voicelineType": "910005",
+			"description": "Prepare yourself for punishment.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "Joining Party: I",
+			"voicelineType": "600001",
+			"description": "Huh... What do you want from me?",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "Joining Party: II",
+			"voicelineType": "600002",
+			"description": "This had better be important.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "Joining Party: III",
+			"voicelineType": "600003",
+			"description": "Are you sure it has to be me? ...Fine, let's get this over with.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

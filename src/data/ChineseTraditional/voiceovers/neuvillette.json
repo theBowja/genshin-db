@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "初次見面…",
+			"voicelineType": "1006",
+			"description": "您好，我是楓丹的最高審判官，用我的姓氏那維萊特稱呼我就可以。並不是想要疏遠您的意思，但太過親近會被人懷疑司法體系有所不公。\n有什麼訴求的話——當然，合法範圍內——我們可以坐下來談一談，一起品嚐一下翹英莊運來的水。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "閒聊·審判",
+			"voicelineType": "1101",
+			"description": "我既認可我自身工作的價值，也認同楓丹大眾所作所為的意義。我想，我還是會以我的責任為榮的。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "閒聊·品水",
+			"voicelineType": "1102",
+			"description": "水的味道是很講究的。蒙德的水清冽；璃月的水回味悠長；稻妻的水口味幽邃深遠；須彌的水味道雖然豐富，但需要細品。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "閒聊·美露莘",
+			"voicelineType": "1103",
+			"description": "美露莘是楓丹引以為傲的美麗生靈。{F#妳}{M#你}一定要和她們做好朋友，也不要傷害她們。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "啊，抱歉。雨這麼大，對{F#妳}{M#你}來說想必是個麻煩吧…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "雨過天晴…",
+			"voicelineType": "1202",
+			"description": "結束了…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "打雷的時候…",
+			"voicelineType": "1203",
+			"description": "對{F#妳}{M#你}們來說，是不是有句話叫晴天霹靂？對我來說就是這種感覺。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "下雪的時候…",
+			"voicelineType": "1204",
+			"description": "雪本身也是一種水的自潔手段，但是人類活動讓雪不那麼乾淨了，不要吃。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "陽光很好…",
+			"voicelineType": "1205",
+			"description": "這種天氣最適合在室內窗邊，嗯，欣賞陽光。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "在沙漠的時候…",
+			"voicelineType": "1206",
+			"description": "這是…您對我的謀殺計畫的一環嗎？",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早安，希望{F#妳}{M#你}今天過得愉快。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "午安，{F#妳}{M#你}一定很期待紅茶或者咖啡的時間吧？我也是。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "晚上好，希望今天{F#妳}{M#你}沒有遇到什麼難以釋懷的壞事。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "晚安，對我來說平靜的水面是美好的意象，所以我祝{F#妳}{M#你}今夜能獲得無夢的安眠，不要有任何夢的漣漪撩撥{F#妳}{M#你}的心緒。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "關於那維萊特自己·審判",
+			"voicelineType": "2001",
+			"description": "我又不是什麼狂熱的審判愛好者。「審判」只是我職責所在，是我被委任的目的。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "關於那維萊特自己·哭泣的水龍",
+			"voicelineType": "2005",
+			"description": "{F#妳}{M#你}也聽說過楓丹的這句民謠是嗎？唉，這是誰教{F#妳}{M#你}的，又是誰讓它流傳開來的…嗯，沒什麼。我覺得水龍不會哭，他只是品嚐到了在大地之心裡匯聚的淚水與所有的情緒，所以有所觸動而已。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "關於那維萊特自己·審判的意義",
+			"voicelineType": "2006",
+			"description": "這是一個說爛的話題了。並非我要把自己置身人類之外，但是{F#妳}{M#你}看，「正義」、「公平」、「平等」、「法律」，這幾個概念互相之間其實無法等同。水天然有「如水之平」的本性。前代水神厄歌莉婭希望以愛將眾生相連，實現平等。如今這位選擇了平等的「法律」，最後卻因為種種外因扭曲成了一切只為「審判」的遺憾結果。不過這也另有原因，不該譴責。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "關於我們·見證者",
+			"voicelineType": "2003",
+			"description": "既然{F#妳}{M#你}是天地外之人，那就由{F#妳}{M#你}見證吧，我對於這個倒錯世界的審判。「本應由天父統治的雄邦，如今王位上坐的卻是雉雞。時代已然錯亂脫節，而我就是為了扭整乾坤而生」。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "關於我們·人間",
+			"voicelineType": "2002",
+			"description": "與楓丹人民長久的相處以及與{F#妳}{M#你}的同行早已讓我改觀。再加上我早已赦免了人的罪，我可以與{F#妳}{M#你}約定，接下來的審判不會危害到普通人。但是我與僭主尚有未結清的恩怨，還有未得償還的血仇。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "關於「神之眼」·其一",
+			"voicelineType": "3001",
+			"description": "曾經有人建議我佩戴一個假的玻璃珠，這樣方便危急時刻出手。說實話這個提議讓我很不愉快，行使自己的力量卻要帶著假的面具去偽裝。不過和持有神之眼的人相處久了，也明白他們的渴望與意志是如此難能可貴。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "關於「神之眼」·其二",
+			"voicelineType": "3006",
+			"description": "什麼？{F#妳}{M#你}說最古老的七神有幾個也需要帶著假玻璃珠行走在人間嗎？噗！對不起失態了，這件事有點好笑。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "有什麼想要分享·法律",
+			"voicelineType": "3002",
+			"description": "楓丹的確有很多奇妙的法律，比如「每個月前三天不能放飛飛行物」、「枯水期擱淺的雙殼貝類都屬於水神，螺貝則屬於人民」、「禁止把家裡養的動物取名『芙寧娜』」、「禁止在餐廳單吃番茄醬」、「對美露莘的稱呼必須使用人格意味的『她』，不能用『它』」…最後一條是我推動立法的。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "有什麼想要分享·雨天",
+			"voicelineType": "3005",
+			"description": "時常在想，什麼時候可以走入一場雨中。啊，{F#妳}{M#你}誤會了，並不是壓力太大。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "感興趣的見聞·龍蜥",
+			"voicelineType": "3003",
+			"description": "正是因牠們同為原海所出之嫡系，所以對於進化之事十分擅長。我想起過去龍族之間的風俗——我們啜飲一口早夭族類的血。當月與星的運行攪擾潮汐，我們水族體內的水也向上行去，我們便知道逝去的族人正在復活。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "感興趣的見聞·人類",
+			"voicelineType": "3004",
+			"description": "就我的觀察而言，人們習慣將自己與自然對立，而此時總會有人出來呼籲人也是自然的一部分。但在知道些許真相的我看來，人類的文明世界和這個星球的自然，應該算是需要尋求共處之道吧。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "關於岩之神…",
+			"voicelineType": "4001",
+			"description": "我將對諸神行使裁決，沒有任何事情可以改變這點。貴金之神贏取了岩之大權，他自然也在受審者之列。如果有誰不希望看到我們發生爭執，也不必擔心，我還需要在楓丹停留很久，說不定就要四百多年…而且最後的判決也不一定會導致兵戎相見。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "關於風之神…",
+			"voicelineType": "4002",
+			"description": "縱使天地翻覆，也無法停止我對於僭位七神的巡遊審判。微風與希望之神獲贈了風之大權，他也需要列席候審。{F#妳}{M#你}說他大部分時間都只是個醉漢，沒有什麼危險的了？那也要先見見吧？",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "關於雷之神…",
+			"voicelineType": "4003",
+			"description": "我作為重獲全龍之格的孑遺，就算是讓大海所有的水逆行回天，也需要履行我的誓言與責任。鳴神贏取了雷之大權，註定留名於僭權者之列。嗯…{F#妳}{M#你}說她現在蟄居於心成淨土之中，極少現身？那我過幾百年再去吧…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "關於草之神…",
+			"voicelineType": "4004",
+			"description": "即便將來會有審判她的一天，我也認可草木之神的責任感。世間難有完美的人與事，但專注和溺愛也證明了一個責任者不斷前行。聽說她曾遭到約五百年的冷遇，我很為她的經歷遺憾。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "關於萊歐斯利…",
+			"voicelineType": "4005",
+			"description": "萊歐斯利的確是一個值得信賴的人。他的頭銜和名譽都是我為他爭取的。是不是覺得我被他的話術和向上管理欺騙了？稻妻有句話叫「不說即是花」。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "關於克洛琳德…",
+			"voicelineType": "4006",
+			"description": "克洛琳德憑藉其超群實力達到了現任決鬥代理人中的實力巔峰，她是逐影獵人這一行業的後繼者，有她在，審判庭的公正更有保障。另外她會比外觀看起來更有人情味一點。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "關於林尼和琳妮特…",
+			"voicelineType": "4007",
+			"description": "很有趣的演出，不是嗎？這就是林尼和琳妮特的魔術世界——一切都假得出奇，但是只要{F#妳}{M#你}願意相信，一切都可以成真。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "關於希格雯…",
+			"voicelineType": "4008",
+			"description": "希格雯不知道過得好不好。要是她被欺負了我一定要把萊歐斯利叫進城裡質問，她是那麼脆弱，又那麼地善良。上次她回來還幫我帶了留影機底片，還說想要聽我繼續點評納塔的水…距離她下一個假期還要多久？",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "關於芙寧娜…",
+			"voicelineType": "4009",
+			"description": "時至今日，她的「演出」終於落幕。「表演」是想像的產物，但芙寧娜卻憑此完成了自己的職責…怯懦之人用瘋癲讓自己勇敢，一直以來辛苦她了。\n有機會的話，應當為她的舞臺獻上掌聲…嗯…如果有機會的話…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "關於娜維婭…",
+			"voicelineType": "4010",
+			"description": "雖然這麼說很對不起她，但無論是當時無意地觸怒她、接受她的道歉，還是我此時感受到的內疚，全部有種疏離的感覺，彷彿沉臥湖底看星星。我並不是有意的，我也知道很難有機會彌補。情緒並不像是水，能迅速地修復自己，恢復平靜。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「彷若無因飄落的輕雨」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "想要瞭解那維萊特·其一",
+			"voicelineType": "5001",
+			"description": "我會盡量避免與他人有私交以及流程外的合作。不過閣下的品行值得信任，與楓丹的勢力也沒有什麼糾纏，很樂意與{F#妳}{M#你}同行。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "想要瞭解那維萊特·其二",
+			"voicelineType": "5002",
+			"description": "這種話只能私下說，公共場合我絕對無法做此表態。楓達這個東西，能流行起來對我來說有點莫名其妙。不過人們很喜歡它也不是不能理解——{F#妳}{M#你}看，一邊喝水一邊補充糖分，而且它還價格低廉。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "想要瞭解那維萊特·其三",
+			"voicelineType": "5003",
+			"description": "最近看了一齣戲劇。是關於一個已經逝去的夫人憑藉個人魅力與惡意的安排，如同無法驅散的鬼魅一般籠罩著她已不在其中的豪宅。演員無可挑剔，故事也很精巧，而且讓我想到了世界的現狀。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "想要瞭解那維萊特·其四",
+			"voicelineType": "5004",
+			"description": "出於某些原因，我離開楓丹的次數屈指可數，因此我所品嚐的名泉雖是來自世界各地，但都是從外地送來，而非我親臨當地品嚐的。至於不同的飲用水裡面的細微味道，我當然能夠區分出來。言已至此，還不相信我嗎？我是最高審判官，不騙人。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "想要瞭解那維萊特·其五",
+			"voicelineType": "5005",
+			"description": "不得不說，我時常遇到一些令人無奈的事，例如坐下的時候踩到衣擺、偶爾壓到頭髮、往後靠頭部也可能被座椅裝飾品卡住。為了維持最高審判官的威嚴，我保持這類裝束，當然要忍受它帶來的麻煩。世間幾乎也遵循著如此的道理——接受一種身分，忍耐它、理解它、與它共存。這正是我一直在做的。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "那維萊特的愛好…",
+			"voicelineType": "6001",
+			"description": "品水是一門學問。用火元素加熱的水，味道就是自然界最標準的味道，而木炭燒開的水則有田園的味道。同理，冰元素處理的水是一種平淡無奇的清冽，但是至冬積冰所化之水就完全不一樣。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "那維萊特的煩惱…",
+			"voicelineType": "6012",
+			"description": "下雨天不撐傘是不是看起來有點奇怪…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "動物不進食尚能活些時日，不喝水卻活不了幾天。什麼美食都比不過純淨的水，所以湯水多的食物就是第二好的。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "油炸或者無醬烤製的食物真的能吃嗎？我想點名批評須彌椰炭餅，將乾燥劑塞進胃裡也不過如此。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "美味。菜餚最重要的汁水不僅很多，而且處理得很好。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "不錯的嘗試。只不過這道菜是不是可以多加一點湯汁，再濾一點油脂出來？",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "太乾了。沒有汁水的菜色嚐不出廚師的心情。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "今天是{F#妳}{M#你}的生日啊！祝{F#妳}{M#你}生日快樂。不知道今天會不會下雨，我會想想辦法的。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "稍微熟悉一點了。我可以配合{F#妳}{M#你}的動作。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "看來需要拿出點真本事了。沒想到{F#妳}{M#你}這麼容易身處險境。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "{F#妳}{M#你}的真正實力居然有如此地步嗎？看來我不認真的話就跟不上{F#妳}{M#你}了。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "從僭位者那裡回收了七之大權一角，這才是我本來的身姿。我已是「完全之龍」，足以審判其餘眾神，我的命運將是審判高天的僭位之王。但在那之前，我就將力量借予{F#妳}{M#你}吧！",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "肅靜！",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "低頭。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "不得喧嘩。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "潮水啊！我已歸來。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "化作，浮沫吧！",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "凡高大者，我無不蔑視。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "當{F#妳}{M#你}是第一個找到無主的它時，它就屬於{F#妳}{M#你}了。嗯，合法。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "是不錯的東西嗎？至少打開它的那一瞬期待是不錯的心緒吧？",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "我以口頭約定的方式將這些讓渡予{F#妳}{M#你}。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "並無妨害，不必擔心。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "風險漸增，不過我沒什麼問題。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "哼，衣服似乎刮壞了。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "讓我來吧。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "{F#妳}{M#你}先休息一下。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "潮汐再起時，我必將歸來…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "看到了…我誕生前的溫暖之海…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "萬籟…俱靜…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "角度意外啊…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "受重擊·其二",
+			"voicelineType": "910002",
+			"description": "是我疏忽了。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "感謝{F#妳}{M#你}許可…嗯，邀請我同行。",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "十分樂意。",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "一起走走吧！去水畔之類的地方。",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

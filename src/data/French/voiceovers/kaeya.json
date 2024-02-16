@@ -1,0 +1,773 @@
+{
+	"id": 10000015,
+	"name": "Kaeya",
+	"friendLines": [
+		{
+			"voicelineId": 7100,
+			"title": "Première rencontre...",
+			"voicelineType": "1000",
+			"description": "Kaeya de l'Ordre de Favonius. Laisse-moi me joindre à toi, tu ne le regretteras pas. En tout cas, ça me changera des missions qu'on nous confie d'habitude...",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_draw_appear"
+		},
+		{
+			"voicelineId": 7101,
+			"title": "Bavardage - Rien à faire",
+			"voicelineType": "1101",
+			"description": "Je ne te savais pas aussi {M#paresseux}{F#paresseuse}...",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_explore_idle_01"
+		},
+		{
+			"voicelineId": 7102,
+			"title": "Bavardage - Ordre de Favonius",
+			"voicelineType": "1102",
+			"description": "Mes collègues ont l'air débordés, haha.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_explore_idle_02"
+		},
+		{
+			"voicelineId": 7103,
+			"title": "Bavardage - Paresse",
+			"voicelineType": "1103",
+			"description": "Assez traîné. Si on reste encore longtemps ici, des champignons se mettront à germer.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_explore_idle_03"
+		},
+		{
+			"voicelineId": 7104,
+			"title": "Quand il pleut...",
+			"voicelineType": "1201",
+			"description": "Mon pouvoir Cryo est plus efficace en temps de pluie et ça pimente mes combats.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 7105,
+			"title": "Quand il neige - Anecdote",
+			"voicelineType": "1202",
+			"description": "C'est un temps parfait pour te raconter des histoires de fantômes !",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_weather_snowy_01"
+		},
+		{
+			"voicelineId": 7106,
+			"title": "Quand il neige - Froidure",
+			"voicelineType": "1203",
+			"description": "Ça va ? Pas trop froid ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_weather_snowy_02"
+		},
+		{
+			"voicelineId": 7107,
+			"title": "Quand le vent souffle...",
+			"voicelineType": "1204",
+			"description": "Le vent est doux... Mais pour combien de temps encore ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_weather_breezy_01"
+		},
+		{
+			"voicelineId": 7108,
+			"title": "Au réveil...",
+			"voicelineType": "1001",
+			"description": "Profitons de cette journée.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 7109,
+			"title": "À l'heure du déjeuner...",
+			"voicelineType": "1002",
+			"description": "Allons faire un tour à la taverne, qu'en dis-tu ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 7110,
+			"title": "Le soir...",
+			"voicelineType": "1003",
+			"description": "Oh, tu as peur du noir ? Je vois, intéressant...",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 7111,
+			"title": "La nuit...",
+			"voicelineType": "1004",
+			"description": "Tu t'en vas déjà ? À la prochaine, mais ne me fais pas trop attendre !",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 7112,
+			"title": "À propos de Kaeya...",
+			"voicelineType": "2001",
+			"description": "L'Ordre de l'Abîme te tracasse ces derniers temps ? N'hésite pas à m'en parler.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_idle"
+		},
+		{
+			"voicelineId": 7113,
+			"title": "À propos de nous - Relation employeur/employé",
+			"voicelineType": "2002",
+			"description": "Appelle-moi quand tu as besoin d'un coup de main dans un combat. Je suis ton ami après tout.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_close1"
+		},
+		{
+			"voicelineId": 7114,
+			"title": "À propos de nous - Force",
+			"voicelineType": "2003",
+			"description": "Oh ? Si tu veux qu'on maintienne une relation professionnelle, peut-être que tu pourrais me déployer plus souvent au combat, {M#patron}{F#patronne} ? Ne sois pas {M#surpris}{F#surprise} par ma force !",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7115,
+			"title": "À propos de l'œil divin...",
+			"voicelineType": "3001",
+			"description": "Tu ne comprends toujours pas le fonctionnement d'un œil divin ? Comment te l'expliquer... Les yeux sont des organes qui nous permettent de voir, n'est-ce pas ? Eh bien, l'œil divin est comme un organe qui nous permet de contrôler un élément. C'est simple comme bonjour !",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7116,
+			"title": "Quelque chose à partager ?",
+			"voicelineType": "3002",
+			"description": "Tu aimes le vin ? Le vin de dent-de-lion possède un goût unique. Ah, tu ne peux pas en boire ? Va pour du cidre de pomme alors, je connais un endroit parfait pour ça.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_share"
+		},
+		{
+			"voicelineId": 7117,
+			"title": "Détails intéressants...",
+			"voicelineType": "3003",
+			"description": "As-tu déjà aperçu les chouettes des Monts Dosdragon ? Quand on les regarde droit dans les yeux, on dirait qu'elles te percent à jour sans rien laisser paraître... Ça me fascine.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_pref_gift"
+		},
+		{
+			"voicelineId": 7118,
+			"title": "À propos de Jean...",
+			"voicelineType": "4001",
+			"description": "Jean ? Elle a besoin de toute l'aide que tu peux lui donner.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7119,
+			"title": "À propos de Lisa...",
+			"voicelineType": "4002",
+			"description": "Avec Lisa, n'oublie jamais de rendre tes livres en temps et en heure. Elle est entrée dans une colère noire quand j'ai eu le malheur de dépasser le délai d'emprunt. Mon bras me fait mal rien que d'y penser...",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7120,
+			"title": "À propos d'Amber...",
+			"voicelineType": "4003",
+			"description": "Amber est une Éclaireuse intelligente avec un sens aigu de la justice. Ne fais pas n'importe quoi devant elle.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7121,
+			"title": "À propos de Diluc...",
+			"voicelineType": "4004",
+			"description": "Diluc était mignon quand il était petit. Mais maintenant, on dirait qu'il vit dans son petit monde, différent du nôtre... Il n'est pas très amusant à fréquenter.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7122,
+			"title": "À propos de Klee...",
+			"voicelineType": "4005",
+			"description": "Cette chère petite Klee n'a jamais réussi à échapper à Jean, malgré mes précieux conseils... Je rigole ! Ne va pas me dénoncer.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7123,
+			"title": "À propos d'Albedo...",
+			"voicelineType": "4006",
+			"description": "Albedo ? C'est un garçon calme et très talentueux. Tout le monde aime les gens comme lui. Toi aussi ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7124,
+			"title": "À propos de Diona...",
+			"voicelineType": "4007",
+			"description": "Tu as déjà goûté aux cocktails de Diona ? Ah, j'oublie que tu n'as pas l'âge ! Et c'est bien dommage, héhé. On ne peut qu'attendre que tu grandisses un peu plus.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_diona_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7125,
+			"title": "À propos de Varka...",
+			"voicelineType": "4008",
+			"description": "Dommage que personne à l'Ordre de Favonius n'ait la même approche que le Grand Maître en matière de travail. Je dois dire que ça me manque...",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7126,
+			"title": "À propos de Fischl...",
+			"voicelineType": "4009",
+			"description": "Tu trouves que le cache-œil de Fischl lui va bien parce que ça colle avec son titre de Princesse du châtiment ? Dans ce cas-là, je devrais aussi être un prince, non ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_fischl_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7127,
+			"title": "À propos de Noëlle...",
+			"voicelineType": "4010",
+			"description": "Jean m'a demandé de prendre soin de Noëlle en secret, mais tout va bien. La petite a la tête sur les épaules et c'est un soulagement.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7128,
+			"title": "À propos de Rosalia...",
+			"voicelineType": "4011",
+			"description": "Tu veux savoir ce que sœur Rosalia cache ? Hélas, je ne peux rien te dire. Je la trouve plutôt bien comme personne, pas comme d'autres. Elle est honnête envers elle-même et ne fait pas semblant de s'intéresser à des futilités.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_rosaria_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7129,
+			"title": "À propos de Sucrose...",
+			"voicelineType": "4012",
+			"description": "Sucrose a beau sembler calme et introvertie, son labo est plein de choses très farfelues et terrifiantes... Enfin, d'après ce que j'en ai entendu. J'ai d'autres choses à faire que de fouiner dans cette pièce...",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7173,
+			"title": "À propos de Collei...",
+			"voicelineType": "4013",
+			"description": "Oh, Collei ? Eh bien, voilà un nom que je n'ai pas entendu depuis longtemps... Vous vous adressez à la bonne personne ! Laissez-moi vous raconter son histoire depuis le début, je vais vous dévoiler tout plein de détails croustillants !",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7174,
+			"title": "À propos de Mika...",
+			"voicelineType": "4014",
+			"description": "Quand j'ai rencontré Mika pour la première fois, il m'a paru être quelqu'un d'angoissé, alors j'ai voulu lui faire une petite blague. Je ne pensais pas que cela le rendrait encore plus nerveux, même son sourire s'est figé... Au final, il m'a carrément écrit une lettre d'excuses. Tss, c'est un trait de la famille Schmidt de tout prendre au sérieux comme ça ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7130,
+			"title": "Connaître Kaeya (1)",
+			"voicelineType": "5001",
+			"description": "Mon titre au sein de l'Ordre est obsolète dans la situation actuelle. Le Grand Maître a emmené toute la cavalerie avec lui...",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_friendship_01"
+		},
+		{
+			"voicelineId": 7131,
+			"title": "Connaître Kaeya (2)",
+			"voicelineType": "5002",
+			"description": "Il y a dix capitaines au sein de l'Ordre de Favonius, mais en toute honnêteté, certains ne sont pas à la hauteur de leur rôle.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7132,
+			"title": "Connaître Kaeya (3)",
+			"voicelineType": "5003",
+			"description": "Mon œil va bien, ne t'en fais pas. Ce n'est pas si étrange de vouloir couvrir une partie de son corps... Tu portes bien des vêtements après tout, non ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7133,
+			"title": "Connaître Kaeya (4)",
+			"voicelineType": "5004",
+			"description": "Khaenri'ah ? Tu en connais beaucoup sur Teyvat, dis donc. Ce pays n'existe plus, seuls restent les pécheurs qu'il vaut mieux oublier.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7134,
+			"title": "Connaître Kaeya (5)",
+			"voicelineType": "5005",
+			"description": "On se connaît depuis un bon bout de temps désormais ! Voyager avec toi est la chose la plus amusante que j'ai faite de toute ma vie. J'espère ne jamais être déçu de ce choix.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7135,
+			"title": "Les loisirs de Kaeya...",
+			"voicelineType": "6001",
+			"description": "L'œnologie est un art. Le vin mondstadtois est un cadeau de l'Archon Anémo que tout le monde doit apprendre à apprécier.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_pref_hobby"
+		},
+		{
+			"voicelineId": 7136,
+			"title": "Les problèmes de Kaeya...",
+			"voicelineType": "6002",
+			"description": "Moi, solitaire ? Jamais ! Pas quand j'ai quelqu'un d'aussi bavard avec moi.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_dialog_annoyed"
+		},
+		{
+			"voicelineId": 7137,
+			"title": "Plats préférés...",
+			"voicelineType": "6003",
+			"description": "Le vin pétillant est une spécialité mondstadtoise. Son amertume disparaît si on ajoute trois volumes de vin de dent-de-lion et c'est comme ça qu'on obtient une « mort de l'après-midi ». Exquis.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_pref_foodLike"
+		},
+		{
+			"voicelineId": 7138,
+			"title": "Plats détestés...",
+			"voicelineType": "6004",
+			"description": "Je n'arrive toujours pas à croire qu'il existe des gens qui boivent du jus de raisin. S'ils avaient un peu de patience, ce jus se transformerait en un merveilleux vin... Hmph. Ils n'y connaissent rien en bonnes choses.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_pref_foodDislike"
+		},
+		{
+			"voicelineId": 7170,
+			"title": "Cadeau reçu (1)",
+			"voicelineType": "6007",
+			"description": "Oh ! Quel délice ! On ne dirait pas, mais tu as plus d'un tour dans ton sac.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_spice_pref_01"
+		},
+		{
+			"voicelineId": 7171,
+			"title": "Cadeau reçu (2)",
+			"voicelineType": "6008",
+			"description": "Ce serait parfait avec un bon vin.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_spice_normal_01"
+		},
+		{
+			"voicelineId": 7172,
+			"title": "Cadeau reçu (3)",
+			"voicelineType": "6009",
+			"description": "Ne t'inquiète pas. Je suis un peu lent, mais je vais finir de tout manger.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_spice_dislike_01"
+		},
+		{
+			"voicelineId": 7139,
+			"title": "Anniversaire...",
+			"voicelineType": "7001",
+			"description": "Aujourd'hui est un grand jour. Je souhaite qu'il t'apporte joie et bonheur !",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 7140,
+			"title": "Affinité faible",
+			"voicelineType": "8001",
+			"description": "Oh, pas mal du tout.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 1.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7141,
+			"title": "Affinité moyenne",
+			"voicelineType": "8002",
+			"description": "Tu sembles te préoccuper beaucoup de ma personne, merci beaucoup.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 2.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7142,
+			"title": "Affinité élevée",
+			"voicelineType": "8003",
+			"description": "J'ai l'impression de devenir plus puissant... Mais tu as l'air de t'en réjouir beaucoup plus que moi, ai-je tort ?",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 4.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 7143,
+			"title": "Affinité max",
+			"voicelineType": "8004",
+			"description": "Nous étions censés n'être que de simples partenaires de voyage, alors je n'aurais jamais pensé que tu m'aiderais à en arriver là, merci. Je me dois de faire de même pour toi... Continuons notre chemin ensemble, mon {M#ami}{F#amie}.",
+			"voicefile": "VO_friendship/VO_kaeya/vo_kaeya_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 6.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 7144,
+			"title": "Compétence élémentaire (1)",
+			"voicelineType": "100001",
+			"description": "Du calme !",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_skill1_01"
+		},
+		{
+			"voicelineId": 7145,
+			"title": "Compétence élémentaire (2)",
+			"voicelineType": "100002",
+			"description": "Gelez !",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_skill1_02"
+		},
+		{
+			"voicelineId": 7146,
+			"title": "Compétence élémentaire (3)",
+			"voicelineType": "100003",
+			"description": "Esquivez ça !",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_skill1_03"
+		},
+		{
+			"voicelineId": 7147,
+			"title": "Déchaînement élémentaire (1)",
+			"voicelineType": "200001",
+			"description": "Attention, froid devant.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_skill3_01"
+		},
+		{
+			"voicelineId": 7148,
+			"title": "Déchaînement élémentaire (2)",
+			"voicelineType": "200002",
+			"description": "Oh, pardon !",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_skill3_02"
+		},
+		{
+			"voicelineId": 7149,
+			"title": "Déchaînement élémentaire (3)",
+			"voicelineType": "200003",
+			"description": "Cet instant deviendra votre éternité.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_skill3_03"
+		},
+		{
+			"voicelineId": 7150,
+			"title": "Début de sprint (1)",
+			"voicelineType": "700001",
+			"description": "Pourquoi tant de précipitation ?",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 7151,
+			"title": "Fin de sprint (1)",
+			"voicelineType": "710001",
+			"description": "Pfiou, haha.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_explore_sprint_end_01"
+		},
+		{
+			"voicelineId": 7152,
+			"title": "Utilisation de planeur (1)",
+			"voicelineType": "800001",
+			"description": "Le vent se lève.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 7154,
+			"title": "Ouverture de coffre (1)",
+			"voicelineType": "300001",
+			"description": "Quelle chance !",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_chest_open_01"
+		},
+		{
+			"voicelineId": 7155,
+			"title": "Ouverture de coffre (2)",
+			"voicelineType": "300002",
+			"description": "Fascinant.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_chest_open_02"
+		},
+		{
+			"voicelineId": 7156,
+			"title": "Ouverture de coffre (3)",
+			"voicelineType": "300003",
+			"description": "Haha, une bien belle trouvaille.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_chest_open_03"
+		},
+		{
+			"voicelineId": 7157,
+			"title": "PV faibles (1)",
+			"voicelineType": "410001",
+			"description": "On dirait qu'il est temps d'être sérieux.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_less30_01"
+		},
+		{
+			"voicelineId": 7158,
+			"title": "PV faibles (2)",
+			"voicelineType": "410002",
+			"description": "Tout cela me fatigue...",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_less30_02"
+		},
+		{
+			"voicelineId": 7159,
+			"title": "PV faibles (3)",
+			"voicelineType": "410003",
+			"description": "Quelle plaie...",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_less30_03"
+		},
+		{
+			"voicelineId": 7160,
+			"title": "Compagnon avec PV faibles (1)",
+			"voicelineType": "400001",
+			"description": "Je vais aider, mais tu m'en devras une.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 7161,
+			"title": "Compagnon avec PV faibles (2)",
+			"voicelineType": "400002",
+			"description": "Hé, ne meurs pas comme ça. Ce ne serait pas drôle.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 7162,
+			"title": "K.O. (1)",
+			"voicelineType": "500001",
+			"description": "Je n'en ai... pas fini...",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_die_01"
+		},
+		{
+			"voicelineId": 7163,
+			"title": "K.O. (2)",
+			"voicelineType": "500002",
+			"description": "Hmph, quelle surprise...",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_die_02"
+		},
+		{
+			"voicelineId": 7164,
+			"title": "K.O. (3)",
+			"voicelineType": "500003",
+			"description": "Je suis pathétique...",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_life_die_03"
+		},
+		{
+			"voicelineId": 7165,
+			"title": "Attaque puissante subie (1)",
+			"voicelineType": "910001",
+			"description": "Zut !",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 7166,
+			"title": "Attaque puissante subie (2)",
+			"voicelineType": "910002",
+			"description": "Arrêtez tant que vous le pouvez.",
+			"voicefile": "VO_gameplay/VO_kaeya/vo_kaeya_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 7167,
+			"title": "Ajout dans l'équipe (1)",
+			"voicelineType": "600001",
+			"description": "J'ai hâte.",
+			"voicefile": "VO_teamJoin/vo_kaeya_teamJoin_01"
+		},
+		{
+			"voicelineId": 7168,
+			"title": "Ajout dans l'équipe (2)",
+			"voicelineType": "600002",
+			"description": "On va s'amuser.",
+			"voicefile": "VO_teamJoin/vo_kaeya_teamJoin_02"
+		},
+		{
+			"voicelineId": 7169,
+			"title": "Ajout dans l'équipe (3)",
+			"voicelineType": "600003",
+			"description": "Je suis prêt.",
+			"voicefile": "VO_teamJoin/vo_kaeya_teamJoin_03"
+		}
+	]
+}

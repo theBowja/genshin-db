@@ -1,0 +1,864 @@
+{
+	"id": 10000027,
+	"name": "Ningguang",
+	"friendLines": [
+		{
+			"voicelineId": 15100,
+			"title": "พบกันครั้งแรก...",
+			"voicelineType": "1000",
+			"description": "ฉันคือ Ningguang Tianquan แห่ง Qixing อยากจะแลกเปลี่ยนมั้ย? เธอมาเป็นบอดี้การ์ดส่วนตัวของฉัน ส่วนฉันก็จะสอนเทคนิคที่ทำให้ เหนือกว่าคนอื่น ๆ ใน Liyue ให้",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_draw_appear"
+		},
+		{
+			"voicelineId": 15101,
+			"title": "แชท - ของโบราณ",
+			"voicelineType": "1101",
+			"description": "แม้ว่าของโบราณจะล้ำค่าเสียจน ประเมินค่ามิได้ แต่ความสุขที่ได้จากมันก็คงจะอยู่ แค่ชั่วครู่เท่านั้น",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_01"
+		},
+		{
+			"voicelineId": 15102,
+			"title": "แชท - สงครามการค้า",
+			"voicelineType": "1102",
+			"description": "ในสงครามการค้านั้น นักล่าที่สมบูรณ์แบบจะไม่ทิ้ง ร่องรอยใด ๆ ไว้เลย",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_02"
+		},
+		{
+			"voicelineId": 15103,
+			"title": "แชท - การลงทุน",
+			"voicelineType": "1103",
+			"description": "มองหาการลงทุนใหม่ ๆ เถอะ ไม่ว่าจะยังไง Mora ยิ่งเยอะก็ยิ่งดี",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_03"
+		},
+		{
+			"voicelineId": 15104,
+			"title": "ในเวลาที่ฝนตก...",
+			"voicelineType": "1201",
+			"description": "เอ๊ะ? ฝนตกแล้ว กางร่มให้ฉันหน่อยสิ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 15105,
+			"title": "ในเวลาที่หิมะตก...",
+			"voicelineType": "1202",
+			"description": "ก็แค่หิมะธรรมดา ๆ เดี๋ยวฉันจะพาเธอไปดู \"หิมะกระจาย\" ที่แท้จริง",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_snowy_01"
+		},
+		{
+			"voicelineId": 15106,
+			"title": "แดดส่องดีจัง...",
+			"voicelineType": "1203",
+			"description": "วันนี้อากาศเงียบสงบ? ฮึ อย่าเชื่อในสิ่งที่ตาเห็น เพราะมันหลอกตาได้",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_sunny_01"
+		},
+		{
+			"voicelineId": 15107,
+			"title": "ในเวลาที่ลมพัดแรง...",
+			"voicelineType": "1204",
+			"description": "วันที่มีลมพายุแบบนี้ อาจเป็นหายนะของชาวประมงก็ได้ และจะกลายเป็น... ฮึ ไม่มีอะไร",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_gale_01"
+		},
+		{
+			"voicelineId": 15108,
+			"title": "อรุณสวัสดิ์...",
+			"voicelineType": "1001",
+			"description": "สวัสดี รายงานตามลำดับความสำคัญมาได้เลย",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 15109,
+			"title": "สวัสดีตอนเที่ยง...",
+			"voicelineType": "1002",
+			"description": "Liuli Pavilion กับ Xinyue Kiosk เธอไปร้านไหนบ่อยมากกว่ากัน?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 15110,
+			"title": "สวัสดีตอนเย็น...",
+			"voicelineType": "1003",
+			"description": "โรงน้ำชาโต๊ะเต็มแล้วเหรอ? งั้นไปนั่งที่ Jade Chamber กันเถอะ ขอแค่... เธอจ่ายไหวนะ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ทำเควสต์ \"ลาก่อน เทพโบราณ\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15111,
+			"title": "ราตรีสวัสดิ์...",
+			"voicelineType": "1004",
+			"description": "อืม ไปพักเถอะ ถ้าเกิดเรื่องอะไรที่สำคัญ ฉันจะส่งคนไปแจ้งเธอเอง",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 15112,
+			"title": "เกี่ยวกับตัวของ Ningguang - แนวคิด",
+			"voicelineType": "2001",
+			"description": "ไม่ว่าจะเป็นการเจรจาต่อรองราคา หรือสงครามการค้า ชื่อเสียง และเงินนั้นต่างเป็นเรื่องรอง ถ้าอยากชนะเธอต้องรู้ไพ่ตาย ของฝ่ายตรงข้ามก่อน",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle"
+		},
+		{
+			"voicelineId": 15113,
+			"title": "เกี่ยวกับตัวของ Ningguang - ความประทับใจ",
+			"voicelineType": "2005",
+			"description": "รู้สึกว่าฉันเปลี่ยนไปงั้นเหรอ? ฮึ... ตอนนั้นฉันต้องการยืมพลังของเธอ แน่นอนว่าต้องทำให้เธอรู้สึกว่า ฉันเป็นมิตรและเข้าถึงง่าย แต่ตอนนี้เราเป็นหุ้นส่วนใน \"พันธสัญญา\" แล้ว ในเมื่อเป็นหุ้นส่วนกัน ก็ไม่จำเป็นต้องเสแสร้งต่อกันอีก",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ดาราใหม่ฉายแสง\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15114,
+			"title": "เกี่ยวกับเรา-ข่าวลือ",
+			"voicelineType": "2002",
+			"description": "ช่วงนี้คงได้ยินข่าวลือเกี่ยวกับฉันไม่น้อยเลยสินะ ฉันเป็นคนยังไงน่ะเหรอ? ใช้ตาของเธอตัดสินเอาเถอะ... แน่นอนว่าความคิดเห็นของเธอ ก็จะกลายเป็นส่วนหนึ่ง ของข่าวลือนั่นด้วย",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close1"
+		},
+		{
+			"voicelineId": 15115,
+			"title": "เกี่ยวกับเรา-ตรวจสอบ",
+			"voicelineType": "2003",
+			"description": "อยู่กับฉันมานานขนาดนี้ เธอคงรู้จัก \"สังเกต\" แล้วใช่มั้ย งั้นลองสังเกตฉันดูสิ สังเกตให้ลึกถึงแก่นแท้ของฉัน",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15116,
+			"title": "เกี่ยวกับเรา-Jade Chamber",
+			"voicelineType": "2004",
+			"description": "มายืนเคียงข้างฉันนี่สิ เธอเห็น Jade Chamber มั้ย? ตอนแรกมันใหญ่เท่าห้อง ๆ นึงเท่านั้น แต่ตอนนี้มันสามารถบดบังท้องฟ้าของ Liyue ได้แล้ว รอถึงวันที่ขนาดของมันครอบคลุมทั้งเจ็ดประเทศได้ ถึงเวลานั้นก็อยู่เคียงข้างฉันแบบนี้นะ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ลาก่อน เทพโบราณ\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15117,
+			"title": "เกี่ยวกับ \"วิชั่น\"...",
+			"voicelineType": "3001",
+			"description": "เรื่องที่สามารถแก้ไขได้ด้วย Mora ก็ไม่จำเป็นต้องใช้วิชั่นหรอก ส่วนเรื่องที่ Mora ไม่สามารถแก้ไขได้นั้น... จนถึงทุกวันนี้ ฉันเคยเจอเพียงแค่เรื่องเดียว",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15118,
+			"title": "ต้องการจะแชร์อะไร - นายธนาคาร",
+			"voicelineType": "3002",
+			"description": "นักพนันมักจะตั้งความหวังไว้กับ การทอยลูกเต๋าครั้งต่อไปเสมอ... แต่สุดท้ายคนที่ได้เงินไป แน่นอนว่าก็คือเจ้ามือ ที่ไม่ได้จับลูกเต๋าแม้แต่น้อยเลย",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share"
+		},
+		{
+			"voicelineId": 15119,
+			"title": "ต้องการจะแชร์อะไร - เป้าหมาย",
+			"voicelineType": "3004",
+			"description": "การจากไปของราชาแห่งหิน เป็นบททดสอบที่หนักหนาสาหัสต่อ Liyue และ Qixing ฉันเองก็ไม่ได้กลุ้มใจขนาดนี้มานานแล้ว \nแต่ฉันจะไม่ยอมทิ้งเป้าหมายของฉันหรอก สักวันฉันจะสร้าง Jade Chamber ให้ยิ่งใหญ่จนเงาของมันปกคลุมทั้งเจ็ดประเทศ!",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ดาราใหม่ฉายแสง\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15120,
+			"title": "ข้อมูลที่น่าสนใจ...",
+			"voicelineType": "3003",
+			"description": "ในตำราโบราณของ Liyue มักจะกล่าวถึงความงามของ Glaze Lily แต่ตอนนี้มันเกือบจะสูญพันธุ์ไปแล้ว ซึ่งมีเหลืออยู่ที่ Yujing Terrace เท่านั้น ด้วยชื่อเสียงของมันและความหายาก ดังนั้นราคาของมันจึงแพงมาก",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_gift"
+		},
+		{
+			"voicelineId": 15121,
+			"title": "เกี่ยวกับ Beidou - ค่าปรับ",
+			"voicelineType": "4001",
+			"description": "กัปตัน... คนนั้นได้รับการยกย่องจากผู้คนมากมาย แต่มักจะเป็นคนที่ไม่สนใจกฎระเบียบ ค่าปรับที่เธอจ่ายไปนั้น คงเพียงพอที่จะซื้อเรือลำใหม่ได้แล้วล่ะ...",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15122,
+			"title": "เกี่ยวกับ Beidou - ทัศนคติ",
+			"voicelineType": "4002",
+			"description": "บางทีเธออาจไม่เคยเจอกับการเจรจาที่แย่ขนาดนี้ พูดดีก็แล้ว พูดไม่ดีก็แล้ว สุดท้ายอีกฝ่ายก็ยังทำตามใจตัวเองอยู่ดี ช่างเถอะ อย่าให้ฉันได้เจอกัปตัน Beidou คนนั้นอีก",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15123,
+			"title": "เกี่ยวกับ Zhongli...",
+			"voicelineType": "4003",
+			"description": "Zhongli... คุณคนที่โถงแห่งการเกิดใหม่ Wangsheng พูดถึงนั้น มีความเชี่ยวชาญในหลายสิ่งที่ผู้อื่นไม่รู้ แต่ก่อนที่จะเข้าใจจุดอ่อนของเขา ไม่ว่าตัวหมากจะดีแค่ไหน ฉันก็ยังไม่สามารถใช้มันได้",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15124,
+			"title": "เกี่ยวกับ Xingqiu...",
+			"voicelineType": "4004",
+			"description": "นายน้อยคนที่สองของสมาคมการค้า Feiyun คนที่มีนิสัยแบบนั้นจะไม่ชอบหน้าฉันก็ไม่แปลก ฉันก็จะไม่ทำให้เขาลำบากใจ สำนวนที่ว่า \"หากมีจุดประสงค์ต่างกัน ก็ไม่เดินร่วมเส้นทางเดียวกัน\" มันก็คือแบบนี้แหละ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15125,
+			"title": "เกี่ยวกับ Xiangling...",
+			"voicelineType": "4005",
+			"description": "สาวน้อยแห่งภัตตาคาร Wanmin... มักจะทำหน้าไม่ไว้ใจฉันอยู่เสมอ เฮอะ ถ้าเธอรู้ว่าฉันให้เงินทุนสนับสนุนภัตตาคาร Wanmin มาหลายปี... เธอจะทำหน้ายังไงกันนะ?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xiangling_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15126,
+			"title": "เกี่ยวกับ Ganyu...",
+			"voicelineType": "4006",
+			"description": "แม้แต่ Ganyu ก็ไม่ควรพึ่งพามากเกินไป เหมือนคำกล่าวของ Liyue ที่ว่า \"แม้แต่คนที่รอบคอบที่สุด ก็สามารถประมาทได้ในสักวัน\" เรื่องที่สำคัญ ต้องลงมือจัดการเองถึงจะวางใจ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15127,
+			"title": "เกี่ยวกับ Yaoyao...",
+			"voicelineType": "4007",
+			"description": "เธอพูดถึงสาวน้อยที่ Ganyu ดูแลอยู่เหรอ? ฮึ ไม่ต้องกังวลไปหรอก ฉันไม่ได้คิดจะป่าวประกาศให้ใครรู้ ก็ถือซะว่ากัปตันเรือคนนั้น ได้ทำเรื่องฉลาดสักเรื่องสองเรื่องละกัน จริงสิ ช่วงนี้ Yaoyao กินแต่อาหารทะเล เธอควรจะเกลี้ยกล่อมให้ Ganyu หาผักผลไม้ไปให้เขากินเยอะ ๆ จะดีกว่านะ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15128,
+			"title": "เกี่ยวกับ Keqing...",
+			"voicelineType": "4008",
+			"description": "Yuheng แห่ง Liyue Qixing... ช่วงนี้เธอเปลี่ยนไปไม่น้อยเลย Liyue ต้องการเธอในตอนนี้ หรือต้องการเธอในอดีตกันนะ? คงต้องใช้เวลาอีกสักพัก ถึงจะสามารถตัดสินได้",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ดาราใหม่ฉายแสง\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15129,
+			"title": "เกี่ยวกับ Jean...",
+			"voicelineType": "4009",
+			"description": "รักษาการผู้บัญชาการแห่ง Mondstadt น่าจะเป็นหญิงสาวที่ทั้งเข้มงวดและละเอียดอ่อน ไม่ต้องพูดถึงการใช้คำพูดของเธอหรอก แค่ดูจากการพับจดหมายที่เป็นระเบียบเนี้ยบทุกกระเบียดนิ้วของเธอก็รู้แล้ว การใส่ใจในรายละเอียดเล็กน้อยที่ผู้อื่นมักมองข้าม มันแสดงให้เห็นถึงตัวตนที่แท้จริงของคนนั้น",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15130,
+			"title": "เกี่ยวกับ Yanfei...",
+			"voicelineType": "4010",
+			"description": "Yanfei? อ่า เธอเป็นคู่ปรับคนโปรดของฉันเลยล่ะ ถ้าไม่เป็นเพราะการตีความกฎหมายอัน \"เฉียบแหลม\" เพื่อให้คำแนะนำที่ \"ยอดเยี่ยม\" กับผู้ที่มาปรึกษาล่ะก็ ฉันคงต้องใช้เวลานานหลายเดือนกว่าจะหาช่องโหว่ของข้อกฎหมายและกว่าจะปรับให้ครบถ้วนได้",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15131,
+			"title": "เกี่ยวกับ Shenhe",
+			"voicelineType": "4012",
+			"description": "ช่วงนี้คุณ Shenhe สบายดีมั้ย? รบกวนเธอช่วยดูแลเขาหน่อยนะ เรื่องที่พวกเธอช่วยสร้าง Jade Chamber ขึ้นมาใหม่ ฉันจดจำไว้ในใจเสมอ และรู้สึกซาบซึ้งใจมากเลยล่ะ อ๊ะ ไม่พูดอะไรตามมารยาทแบบนี้แล้วดีกว่า ฉันเตรียมชาดี ๆ ไว้ให้ ถ้ามีเวลาว่างก็แวะมานั่งได้บ่อย ๆ เลยนะ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_shenhe_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"นกพิสุทธิ์หวนคืนสู่สายลม\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1101505
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15132,
+			"title": "เกี่ยวกับ Yun Jin...",
+			"voicelineType": "4011",
+			"description": "Yun Jin น่ะเหรอ... เป็นยังไงบ้าง เธอคุ้นเคยกับการแสดงของ Yun Jin รึยังล่ะ? มันอาจจะเข้าใจยากในตอนแรก แต่ลองพยายามอดทน และลิ้มรสมันให้มากขึ้นอีกสิ ฉันลงทุนในคณะละครของเธอไม่ใช่เพราะหวังอะไร ฉันแค่รู้สึกว่างานศิลปะที่สง่างามเช่นนี้ สมควรที่จะถูกสืบทอดตลอดไป",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yunjin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15133,
+			"title": "เกี่ยวกับ Yelan...",
+			"voicelineType": "4013",
+			"description": "เธอเป็นคนที่น่าสนใจมาก ถ้าให้ฉันพูดละก็ เธอเป็นคนที่น่าเชื่อถือมากคนหนึ่ง สมบูรณ์แบบในทุกด้าน ความสามารถนั้นไร้ที่ติ ฮ่ะ ๆ เพราะเป็นคนฉลาดเหมือนกัน ฉันหวังว่าพวกเธอจะเข้ากันได้ดีนะ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yelan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15174,
+			"title": "เกี่ยวกับ Xianyun...",
+			"voicelineType": "4014",
+			"description": "อีกไม่กี่วัน ฉันกะว่าจะชวนคุณ Xianyun ไปนั่งพักผ่อนกันในโรงน้ำชา ฉันบังเอิญสะสมของเล่นกลไกต่าง ๆ เอาไว้ เลยอยากฟังความคิดเห็นของเธอน่ะ อีกอย่างฉันอยากใช้โอกาสนี้ฟังเธอเล่าเรื่องที่น่าสนใจ เกี่ยวกับชีวิตของเซียนในท่าเรือ Liyue ด้วย ส่วนคนที่จะไปส่งจดหมายเชิญนี้ให้ฉัน... เธอสนใจรึเปล่าล่ะ?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์เนื้อเรื่อง \"แสงจันทร์พันลี้\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15134,
+			"title": "อยากรู้เกี่ยวกับ Ningguang - 1",
+			"voicelineType": "5001",
+			"description": "ถ้าเป็นเธอละก็ ไม่ต้องทำตามกฎที่ซับซ้อนนั่นหรอก ทำตัวตามสบายได้เลย แต่หวังว่า เธอจะไม่ทำให้ฉันเสียเวลา อธิบายมาอย่างกระชับและชัดเจน",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_01"
+		},
+		{
+			"voicelineId": 15135,
+			"title": "อยากรู้เกี่ยวกับ Ningguang - 2",
+			"voicelineType": "5002",
+			"description": "ฉันคิดมาตลอดว่า เด็กคือผ้าขาวบริสุทธิ์ ข้อมูลที่พวกเขาให้มานั้นมีค่ามาก แล้วเธอล่ะ? เธอจะให้อะไรฉัน",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15136,
+			"title": "อยากรู้เกี่ยวกับ Ningguang - 3",
+			"voicelineType": "5003",
+			"description": "ช่วงนี้ฉันกำลังครุ่นคิดเกี่ยวกับปัญหาบางอย่าง ถ้าให้เธออยู่ที่ Liyue ต่อไป สักวันหนึ่ง... บางทีอาจเปลี่ยนเมืองนี้ให้... ฮึ ก็แค่คิดดูเล่น ๆ น่ะ การลงทุนครั้งนี้จะคุ้มค่าหรือไม่ ฉันยังต้องคิดดูอีกที",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15137,
+			"title": "อยากรู้เกี่ยวกับ Ningguang - 4",
+			"voicelineType": "5004",
+			"description": "เธอจะทำแบบฉันก็ได้ ใช้ Mora เพื่อซื้อความสะดวกสบาย แต่ต้องจำไว้ว่า ความสัมพันธ์ที่ซื้อได้ด้วย Mora จะอยู่ได้เพียงชั่วครู่เท่านั้น ฮึ นี่เป็นเหตุผลที่ทำไมฉันไม่เคยใช้เงินเพื่อลองใจเธอ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15138,
+			"title": "อยากรู้เกี่ยวกับ Ningguang - 5",
+			"voicelineType": "5005",
+			"description": "เป็นการลงทุนที่ไม่เลวจริง ๆ ถึงแม้ว่าจะไม่ได้รับผลประโยชน์เป็น Mora อะไรมากมาย แต่เวลาที่ใช้ไปกับเธอนั้น ก็เป็นผลตอบแทนที่ดีมากแล้ว ฮ่า ๆ ดูเหมือนว่าฉันจะชนะอีกแล้ว... ฉันเดิมพันถูกคน",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15139,
+			"title": "งานอดิเรกของ Ningguang...",
+			"voicelineType": "6001",
+			"description": "อยากลองเล่นหมาก \"Liyue พันปี\" มั้ยล่ะ? ฉันจะได้ดูว่าฝีมือเธอในฐานะผู้เล่นหมากจะเป็นยังไง",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_hobby"
+		},
+		{
+			"voicelineId": 15140,
+			"title": "เรื่องกลุ้มใจของ Ningguang...",
+			"voicelineType": "6002",
+			"description": "กลุ้มใจ... หืม? หากบอกเรื่องกลุ้มใจของ Liyue Qixing ให้เธอรู้... ไหล่ของเธอจะสามารถแบกรับมันได้รึเปล่า? อีกอย่าง ถ้าเธอเผลอพูดออกไปโดยไม่ตั้งใจแล้วละก็...",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_annoyed"
+		},
+		{
+			"voicelineId": 15141,
+			"title": "อาหารที่ชอบ...",
+			"voicelineType": "6003",
+			"description": "ทำน้ำซุปไก่กับกระดูกหมูโดยใช้ไฟอ่อนและต้มนาน ๆ แล้วราดลงบนใบกะหล่ำปลีที่สดและอ่อน ฉันไม่ได้สนใจเรื่องอาหารมากนัก ในวันธรรมดา แค่ได้กินของง่าย ๆ แบบนี้ก็พอแล้ว",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodLike"
+		},
+		{
+			"voicelineId": 15142,
+			"title": "อาหารที่เกลียด...",
+			"voicelineType": "6004",
+			"description": "ทุกครั้งที่มีงานเลี้ยง ฉันมักจะเห็นคนสั่งอาหารหรูแสนแพงอย่าง Golden Crab แต่ฉันก็ไม่ได้รู้สึกดีหรอกนะ ถ้าจะใช้เมนูพวกนี้มาเอาใจฉัน ทีหลังเอา Mora มาให้ฉันเลยจะดีกว่า",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodDislike"
+		},
+		{
+			"voicelineId": 15171,
+			"title": "ได้รับของขวัญ - 1",
+			"voicelineType": "6007",
+			"description": "ไม่เลวนี่ เธอทำให้ฉันประหลาดใจได้เสมอ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_pref_01"
+		},
+		{
+			"voicelineId": 15172,
+			"title": "ได้รับของขวัญ - 2",
+			"voicelineType": "6008",
+			"description": "บางครั้งการไม่เข้าใจส่วนสำคัญ ก็เท่ากับว่าความพยายามทั้งหมดนั้นสูญเปล่า... เธอพอเข้าใจมั้ย?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_normal_01"
+		},
+		{
+			"voicelineId": 15173,
+			"title": "ได้รับของขวัญ - 3",
+			"voicelineType": "6009",
+			"description": "ฉันจะรับความหวังดีของเธอไว้นะ",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_dislike_01"
+		},
+		{
+			"voicelineId": 15143,
+			"title": "วันเกิด...",
+			"voicelineType": "7001",
+			"description": "{M#นี่เป็นผ้าที่ทอจาก Silk Flower เกรดดีที่สุด ผ้าผืนนี้มอบให้เธอ ส่วนอีกผืน... พอเธอตามหาน้องสาวของเธอเจอแล้ว ก็เอาไปทำชุดสวย ๆ ให้เขาใส่เถอะ สุขสันต์วันเกิดนะ}{F#นี่เป็นผ้าที่ทอจาก Silk Flower เกรดดีที่สุด เอาไปทำชุดสวย ๆ ใส่เถอะ สุขสันต์วันเกิด มีความสุขมาก ๆ นะ}",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_b",
+			"voicefile_male": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 15144,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทนำ",
+			"voicelineType": "8001",
+			"description": "การใช้ความรุนแรงโดยขาด ความยับยั้งชั่งใจ เป็นการกระทำที่โง่เง่ามาก",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15145,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - ชี้แจง",
+			"voicelineType": "8002",
+			"description": "การใช้เวลาและ Mora เป็นเครื่องต่อรอง เพื่อแลกกับ \"อำนาจ\" ที่เท่ากันเหรอ... น่าสนใจดี ฉันยอมรับในคุณค่าของมัน",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15146,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - มุมมองอื่น ๆ",
+			"voicelineType": "8003",
+			"description": "เธอมุ่งมั่นตั้งใจด้วยความรู้สึกแบบไหนกันแน่นะ? ชู่ว... อย่าเพิ่งพูด ให้ฉันใช้เวลาในการอ่านใจเธออีกนิดนึง",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15147,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทสรุป",
+			"voicelineType": "8004",
+			"description": "ฉันไม่ยอมรับคนอื่นง่าย ๆ หรอก แต่เท่าที่ดูตอนนี้ ไม่ชมสักหน่อยคงไม่ได้แล้ว เฮอะ... เธอทำได้ดีมาก ถ้าลูกน้องของฉัน มีความสามารถเหมือนเธอ... ไม่สิ บางที... มีเธอคนเดียวก็น่าจะพอแล้ว",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 15148,
+			"title": "สกิลธาตุ - 1",
+			"voicelineType": "100001",
+			"description": "กลอุบายเล็กน้อย",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_01"
+		},
+		{
+			"voicelineId": 15149,
+			"title": "สกิลธาตุ - 2",
+			"voicelineType": "100002",
+			"description": "อย่าเสียแรงเปล่าเลย",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_02"
+		},
+		{
+			"voicelineId": 15150,
+			"title": "สกิลธาตุ - 3",
+			"voicelineType": "100003",
+			"description": "ฮึ ยอมแพ้ซะเถอะ",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_03"
+		},
+		{
+			"voicelineId": 15151,
+			"title": "ท่าไม้ตาย - 1",
+			"voicelineType": "200001",
+			"description": "ชีวิตของแก ฉันจะรับไว้เอง",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_01"
+		},
+		{
+			"voicelineId": 15152,
+			"title": "ท่าไม้ตาย - 2",
+			"voicelineType": "200002",
+			"description": "ยอมสยบต่อฉันซะ!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_02"
+		},
+		{
+			"voicelineId": 15153,
+			"title": "ท่าไม้ตาย - 3",
+			"voicelineType": "200003",
+			"description": "ลาจากชั่วนิรันดร์",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_03"
+		},
+		{
+			"voicelineId": 15154,
+			"title": "เปิดหีบสมบัติ - 1",
+			"voicelineType": "300001",
+			"description": "สายตาเฉียบแหลม",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_01"
+		},
+		{
+			"voicelineId": 15155,
+			"title": "เปิดหีบสมบัติ - 2",
+			"voicelineType": "300002",
+			"description": "สมบัติทุกชิ้นต้องส่งเข้าคลัง",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_02"
+		},
+		{
+			"voicelineId": 15156,
+			"title": "เปิดหีบสมบัติ - 3",
+			"voicelineType": "300003",
+			"description": "ความมั่งคั่ง... ยิ่งมากยิ่งดี",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_03"
+		},
+		{
+			"voicelineId": 15157,
+			"title": "ค่าพลังชีวิตต่ำ - 1",
+			"voicelineType": "410001",
+			"description": "นี่กล้าทำร้ายฉันเชียวเรอะ",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_01"
+		},
+		{
+			"voicelineId": 15158,
+			"title": "ค่าพลังชีวิตต่ำ - 2",
+			"voicelineType": "410002",
+			"description": "ฉันจะจำไว้",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_02"
+		},
+		{
+			"voicelineId": 15159,
+			"title": "ค่าพลังชีวิตต่ำ - 3",
+			"voicelineType": "410003",
+			"description": "อึ่ก",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_03"
+		},
+		{
+			"voicelineId": 15160,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 1",
+			"voicelineType": "400001",
+			"description": "ดูจากสถานการณ์ตอนนี้ เธอมีโอกาสชนะน้อยมาก",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 15161,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 2",
+			"voicelineType": "400002",
+			"description": "ถ้าอย่างนั้น ฉันจะช่วยสักครั้งละกัน",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 15162,
+			"title": "หมดสติ - 1",
+			"voicelineType": "500001",
+			"description": "ทุกคนบนโลกนี้ ก็เป็นเพียงเบี้ยบนกระดาน...",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_01"
+		},
+		{
+			"voicelineId": 15163,
+			"title": "หมดสติ - 2",
+			"voicelineType": "500002",
+			"description": "ผู้แพ้ชนะได้ถูกตัดสินแล้ว... คงเลือกอะไรไม่ได้",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_02"
+		},
+		{
+			"voicelineId": 15164,
+			"title": "หมดสติ - 3",
+			"voicelineType": "500003",
+			"description": "นี่คือจุดจบของ Tianquan งั้นเหรอ?...",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_03"
+		},
+		{
+			"voicelineId": 15165,
+			"title": "รับการโจมตีปกติ - 1",
+			"voicelineType": "900001",
+			"description": "ไร้มารยาท",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 15166,
+			"title": "โดนโจมตีอย่างหนัก - 1",
+			"voicelineType": "910001",
+			"description": "ฝากไว้ก่อนนะ",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 15167,
+			"title": "โดนโจมตีอย่างหนัก - 2",
+			"voicelineType": "910002",
+			"description": "เลือดต้องชดใช้ด้วยเลือด",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 15168,
+			"title": "เข้าร่วมทีม - 1",
+			"voicelineType": "600001",
+			"description": "รับทราบ",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_01"
+		},
+		{
+			"voicelineId": 15169,
+			"title": "เข้าร่วมทีม - 2",
+			"voicelineType": "600002",
+			"description": "เร่งกันหน่อยเถอะ",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_02"
+		},
+		{
+			"voicelineId": 15170,
+			"title": "เข้าร่วมทีม - 3",
+			"voicelineType": "600003",
+			"description": "อย่าทำให้ฉันผิดหวังนะ",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_03"
+		}
+	]
+}

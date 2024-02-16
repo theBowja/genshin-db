@@ -1,0 +1,805 @@
+{
+	"id": 10000021,
+	"name": "Amber",
+	"friendLines": [
+		{
+			"voicelineId": 10100,
+			"title": "初めまして…",
+			"voicelineType": "1000",
+			"description": "偵察騎士アンバー、参上しました！今後何か必要なことがあれば、何でもお申しつけください！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_draw_appear"
+		},
+		{
+			"voicelineId": 10101,
+			"title": "世間話·趣味",
+			"voicelineType": "1101",
+			"description": "少し体を動かしたいなぁ。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_01"
+		},
+		{
+			"voicelineId": 10102,
+			"title": "世間話·心配",
+			"voicelineType": "1102",
+			"description": "ジンさんにサボっているところを見つかったら、ドヤされちゃうよ。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_02"
+		},
+		{
+			"voicelineId": 10103,
+			"title": "世間話·新たな発見",
+			"voicelineType": "1103",
+			"description": "向こうに何か変なものがあるみたい…見に行かないの？見に行かないの？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_03"
+		},
+		{
+			"voicelineId": 10104,
+			"title": "雨の日·心配",
+			"voicelineType": "1201",
+			"description": "雨だ…リボンが濡れちゃうよ…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 10105,
+			"title": "雨の日·注意",
+			"voicelineType": "1202",
+			"description": "雨か…視界が悪いね。気をつけてね。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_02"
+		},
+		{
+			"voicelineId": 10106,
+			"title": "雨上がり…",
+			"voicelineType": "1203",
+			"description": "うわ～本当にいい天気。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 10107,
+			"title": "晴れの日…",
+			"voicelineType": "1204",
+			"description": "う～ん…もう少し風があればいいのにな。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_sunny_01"
+		},
+		{
+			"voicelineId": 10108,
+			"title": "風の日·心地よい",
+			"voicelineType": "1205",
+			"description": "本当に気持ちいいなぁ…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_01"
+		},
+		{
+			"voicelineId": 10109,
+			"title": "風の日·リラックス",
+			"voicelineType": "1206",
+			"description": "こういう天気大好き。あ～、気持ちいい～",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_02"
+		},
+		{
+			"voicelineId": 10110,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "おはよう！一緒に朝のランニングに行かない？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 10111,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "お昼ご飯、一緒に食べてもいいの？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 10112,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "暗くなってきたよ。松明をつけようか？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 10113,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "うん、休憩も大切だよ！じゃあ約束だよ、また明日ね！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 10114,
+			"title": "アンバー自身について…",
+			"voicelineType": "2001",
+			"description": "モンドの飛行チャンピオンとは私のことだよ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_idle"
+		},
+		{
+			"voicelineId": 10115,
+			"title": "試合について…",
+			"voicelineType": "2002",
+			"description": "あんただからって、試合では手加減しないんだからね！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close1"
+		},
+		{
+			"voicelineId": 10116,
+			"title": "飛行について…",
+			"voicelineType": "2003",
+			"description": "飛び方のコツを教えてあげるよ…あんたと一緒に飛ぶ時、いつもより速く飛べる気がするの…あっ、何がおかしいの？もういい、勝負だよ、今から勝負しよう！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10117,
+			"title": "「神の目」について…",
+			"voicelineType": "3001",
+			"description": "「神の目」は神様がわたしのことを認めてくれた証でしょ。うん、わたし、一番優秀な偵察騎士になるんだから！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10118,
+			"title": "シェアしたいこと…",
+			"voicelineType": "3002",
+			"description": "ほらっ、大教会の時計台に上ってみよう。すっごい良い景色だよ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_share"
+		},
+		{
+			"voicelineId": 10119,
+			"title": "興味のあること…",
+			"voicelineType": "3003",
+			"description": "見て、あそこにハトがいる！ふふっ、あの子たちと一緒に飛びたいな。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_gift"
+		},
+		{
+			"voicelineId": 10120,
+			"title": "ジンについて·協力",
+			"voicelineType": "4001",
+			"description": "大団長が出征した後、仕事を全部ジンさんがすることになったんだよね。わたしがもっとジンさんの役に立てたらいいのに…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10121,
+			"title": "ジンについて·心遣い",
+			"voicelineType": "4002",
+			"description": "ジンさん、まだ仕事しているの？…一緒にコーヒーを飲もうって誘いに行こうよ。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10122,
+			"title": "リサについて·物語",
+			"voicelineType": "4003",
+			"description": "時間があったら、一緒にリサさんのところに行こうよ！この前、リサさんがドラゴンスパインの宝物の話をしてくれたんだけど、半分しか聞けなかったんだ。だから、その続きが聞きたいの！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10123,
+			"title": "リサについて·感心",
+			"voicelineType": "4004",
+			"description": "リサさんって寝ている時以外はずっと本を読んでいるみたい！本当にすごいなぁ。わたしなんかそんなに長時間座っていられないよ。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10124,
+			"title": "ガイアについて·心配",
+			"voicelineType": "4005",
+			"description": "…何か嫌な予感がする！さっきまでガイア先輩がいたでしょ？迷惑かけられなかった？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10125,
+			"title": "ガイアについて·元凶",
+			"voicelineType": "4006",
+			"description": "花畑の蒲公英がしおれてる。もうッ……きっとまたガイア先輩の仕業だよ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10126,
+			"title": "ベネットについて…",
+			"voicelineType": "4007",
+			"description": "ん？ベネット…どこかで聞いたような…あっ！冒険者協会にいたあの熱い男の子だね！うん、たまに秘境の周辺で彼を見かけるけど、宝探しに夢中みたいだよ。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10127,
+			"title": "クレーについて…",
+			"voicelineType": "4008",
+			"description": "クレーね、たまにいたずらするけど、騎士団のみんなは彼女のことが大好きだよ！むっ…またジンさんを困らせないよう、彼女のことはしっかり見張っておいたほうがよさそうね。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10128,
+			"title": "アルベドについて…",
+			"voicelineType": "4009",
+			"description": "アルベドはいつも自分の工房にこもって、すごいものを作ってるの。でも彼に会うたび何を考えているのか分からないのよね。う～ん、分からない…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10129,
+			"title": "ノエルについて…",
+			"voicelineType": "4010",
+			"description": "ノエル？彼女はとても粘り強いんだ。先輩として、彼女の面倒も見てあげないとね。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10130,
+			"title": "エウルアについて…",
+			"voicelineType": "4011",
+			"description": "エウルアはわたしの友達だよ！彼女の冗談に慣れれば、いい人だってことが分かるはず！エウルアは自分の名前のせいで、誤解されることが多いの。どうすればみんなに分かってもらえるのかな…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10179,
+			"title": "コレイについて…",
+			"voicelineType": "4012",
+			"description": "コレイからの手紙でね、「魔鱗病」が完治したことを知らせてくれたんだ…本当にうれしいよ！今すぐにでも飛んで行って、ぎゅっと抱きしめてあげたい。あの子、モンドのみんなにすごく会いたいって手紙に書いててね。いつか一人前になったら、直接自分の成長を見せに来るんだって…次のバドルドー祭に間に合うといいな。もう、本当に待ち遠しいよ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10180,
+			"title": "ミカについて…",
+			"voicelineType": "4013",
+			"description": "あっ！ミカはエウルアの隊の古参隊員なんだ。最初はわたしがエウルアと仲がいいのを見たからか、わたしのことをずっと長官って呼んでたの。偵察の心得を話してあげたら、今度は先輩って呼ぶようになって…なんだかわたしのほうが恥ずかしくなっちゃったんだ…職務は違うけど、ミカの地図を作る腕は、わたしじゃ到底かなわないものだよ。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10131,
+			"title": "アンバーを知る·1",
+			"voicelineType": "5001",
+			"description": "狩りならわたしも得意だよ！どう？わたしの腕を見たくない？それとも…狩りで試合をする？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_01"
+		},
+		{
+			"voicelineId": 10132,
+			"title": "アンバーを知る·2",
+			"voicelineType": "5002",
+			"description": "飛行チャンピオンとしての経験則を教えてあげるよ！一番大切なものはね、勇気を持つことだよ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10133,
+			"title": "アンバーを知る·3",
+			"voicelineType": "5003",
+			"description": "実は謎解きって得意じゃないの。バドルドー祭で謎解きの屋台を見つけても近づかないの…あんたはどう？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10134,
+			"title": "アンバーを知る·4",
+			"voicelineType": "5004",
+			"description": "わたしはおじいちゃんのために騎士団に入って、ジンさんのために団に残っているの。…そして今は、あんたがわたしにモンド以外の空を見せてくれた。とっても嬉しいよ。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10135,
+			"title": "アンバーを知る·5",
+			"voicelineType": "5005",
+			"description": "わたしはやっぱりもっと遠くの世界に行きたいな。大空の果てを見てみたいの！あんたもわたしについて来てくれるよね？そうでしょ？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10136,
+			"title": "アンバーの趣味…",
+			"voicelineType": "6001",
+			"description": "ウサギ伯爵、今日も素敵な一日だね！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_hobby"
+		},
+		{
+			"voicelineId": 10137,
+			"title": "アンバーの悩み…",
+			"voicelineType": "6002",
+			"description": "うーん…どうしたら美味しいムーンパイを作れるか知ってる？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_annoyed"
+		},
+		{
+			"voicelineId": 10138,
+			"title": "好きな食べ物…",
+			"voicelineType": "6003",
+			"description": "ジンさんの淹れてくれたコーヒーって本当にいい香りなんだよ！今度飲んでみてね。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodLike"
+		},
+		{
+			"voicelineId": 10139,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "ググプラムのジュースじゃなければ…うっ…それ以外なら大丈夫！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodDislike"
+		},
+		{
+			"voicelineId": 10176,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "わぁ、これ本当に美味しいよ。さすが旅人だね！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_pref_01"
+		},
+		{
+			"voicelineId": 10177,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "わたしも、あんたみたいな料理の腕があったらいいのになぁ…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_normal_01"
+		},
+		{
+			"voicelineId": 10178,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "この味は、ちょっとわたしの口に合わないかも。ごめんね！別に旅人のせいじゃないよ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_dislike_01"
+		},
+		{
+			"voicelineId": 10140,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "エヘヘ、誕生日おめでとう！ほら、これあげる。わたしが作った特製·ウサギ伯爵だよ……安心して、特製なんだから、爆発なんかしないよ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 10141,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "わぁっ！まるで風に乗った時みたいに体が軽い！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10142,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "このスピード、誰も追いつけないでしょ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10143,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "モンドの空が狭くなったような…ううん、わたしの視野が広くなったのかな？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10144,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "今のわたし…知り合ったばかりの頃よりも成長したでしょ。えへへっ、ありがとね！そうだ、ニンジンとお肉のハニーソテーを奢ってあげる。さあ、行こうっ！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 10145,
+			"title": "元素スキル·1",
+			"voicelineType": "100001",
+			"description": "頼んだわよ～",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_01"
+		},
+		{
+			"voicelineId": 10146,
+			"title": "元素スキル·2",
+			"voicelineType": "100002",
+			"description": "ウサギ伯爵、出撃！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_02"
+		},
+		{
+			"voicelineId": 10147,
+			"title": "元素スキル·3",
+			"voicelineType": "100003",
+			"description": "へんっふん～",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_03"
+		},
+		{
+			"voicelineId": 10148,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "百発百中！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_01"
+		},
+		{
+			"voicelineId": 10149,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "雨のような…矢を！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_02"
+		},
+		{
+			"voicelineId": 10150,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "もう逃げ道はないよ！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_03"
+		},
+		{
+			"voicelineId": 10151,
+			"title": "ダッシュ開始·1",
+			"voicelineType": "700001",
+			"description": "試合をしよ～",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 10152,
+			"title": "ダッシュ開始·2",
+			"voicelineType": "700002",
+			"description": "ついてこれるかな？",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 10153,
+			"title": "ダッシュ終了·1",
+			"voicelineType": "710001",
+			"description": "逃げられないって言ったでしょ。",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_01"
+		},
+		{
+			"voicelineId": 10154,
+			"title": "ダッシュ終了·2",
+			"voicelineType": "710002",
+			"description": "この感覚、たまらないよね！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_02"
+		},
+		{
+			"voicelineId": 10155,
+			"title": "風の翼を広げる·1",
+			"voicelineType": "800001",
+			"description": "わたしはモンドの飛行チャンピオンなんだから！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 10156,
+			"title": "風の翼を広げる·2",
+			"voicelineType": "800002",
+			"description": "任せてちょうだい！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_02"
+		},
+		{
+			"voicelineId": 10159,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "宝箱を開ける瞬間ってワクワクするね！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_01"
+		},
+		{
+			"voicelineId": 10160,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "偵察騎士、目標発見！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_02"
+		},
+		{
+			"voicelineId": 10161,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "わぁ——いいものばっかり！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_03"
+		},
+		{
+			"voicelineId": 10162,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "…負けを認めるわけないでしょ！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_01"
+		},
+		{
+			"voicelineId": 10163,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "イタタ…コイツ…",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_02"
+		},
+		{
+			"voicelineId": 10164,
+			"title": "HP低下·3",
+			"voicelineType": "410003",
+			"description": "ナメないでよ！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_03"
+		},
+		{
+			"voicelineId": 10165,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "気をつけて！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 10166,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "ねぇ…大丈夫？手を貸そうか？",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 10167,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "疲れた…",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_01"
+		},
+		{
+			"voicelineId": 10168,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "訓練…まだ足りないの…？",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_02"
+		},
+		{
+			"voicelineId": 10169,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "今回は…負けだよ…",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_03"
+		},
+		{
+			"voicelineId": 10170,
+			"title": "ダメージを受ける·1",
+			"voicelineType": "900001",
+			"description": "本当にしぶといんだから！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 10171,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "イッター！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 10172,
+			"title": "重ダメージを受ける·2",
+			"voicelineType": "910002",
+			"description": "反則だよ！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 10173,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "任せて！",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_01"
+		},
+		{
+			"voicelineId": 10174,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "準備完了！",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_02"
+		},
+		{
+			"voicelineId": 10175,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "偵察騎士参上！",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_03"
+		}
+	]
+}

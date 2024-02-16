@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "첫 만남…",
+			"voicelineType": "1006",
+			"description": "안녕하십니까, 전 폰타인의 최고 심판관입니다. 호칭은 성씨인 느비예트로 불러주십시오. 일부러 당신과 거리를 두는 건 아닙니다. 다만 너무 가까워 보이면 사법 체제의 불공정함을 의심받을 수 있으니까요.\n저에게 하실 부탁이 있다면——아 물론, 합법적인 부탁이라면, 교영 마을에서 운송된 물을 음미하며 앉아서 얘기를 나눠보죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "잡담·심판",
+			"voicelineType": "1101",
+			"description": "전 제 일의 가치와 폰타인 대중들이 한 일의 의미를 잘 압니다. 앞으로도 전 제 일에 자부심을 갖고 살아갈 겁니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "잡담·물맛 음미",
+			"voicelineType": "1102",
+			"description": "물은 아주 다양한 맛이 있습니다. 몬드의 물은 청량하고 리월의 물은 뒷맛이 오래 가며, 이나즈마의 물은 깊고 그윽한 맛이 있습니다. 수메르의 물은 풍부한 맛이 있지만 자세히 음미해야 알 수 있죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "잡담·멜뤼진",
+			"voicelineType": "1103",
+			"description": "멜뤼진은 폰타인의 자랑이자 매우 아름다운 생물입니다. 부디 그들을 해치지 말고 친하게 지내주세요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "비가 올 때…",
+			"voicelineType": "1201",
+			"description": "아, 미안합니다. 비가 많이 내리면 곤란하시겠군요…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "비가 그친 후…",
+			"voicelineType": "1202",
+			"description": "끝났군요…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "번개가 칠 때…",
+			"voicelineType": "1203",
+			"description": "「마른하늘에 날벼락」이라는 말이 있지 않습니까? 저에게 딱 그런 느낌입니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "「태동하는 종언의 계시」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "눈이 올 때…",
+			"voicelineType": "1204",
+			"description": "눈은 물의 자체 정화 수단이기도 하죠. 하지만 인간의 활동으로 더 이상 전처럼 깨끗하지 않으니 드시진 마십시오",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "햇살이 좋을 때…",
+			"voicelineType": "1205",
+			"description": "이런 날씨에는… 실내 창가에서 햇빛을 감상하는 게 최고죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "사막에 있을 때…",
+			"voicelineType": "1206",
+			"description": "이건… 저를 암살하려는 계획의 일환입니까?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "아침 인사…",
+			"voicelineType": "1001",
+			"description": "좋은 아침입니다. 즐거운 하루 보내시길 바랍니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "점심 인사…",
+			"voicelineType": "1002",
+			"description": "좋은 점심입니다. 분명 홍차나 커피를 마실 시간이 기대되시겠죠. 저도 그렇습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "저녁 인사…",
+			"voicelineType": "1003",
+			"description": "좋은 저녁입니다. 오늘은 신경 쓰이는 일이 없으셨길 바랍니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "굿나잇…",
+			"voicelineType": "1004",
+			"description": "좋은 밤 되십시오. 전 개인적으로 잔잔한 수면이 아주 아름답다고 생각하는데, 꿈을 꾸지 않고 편안하게 주무시길 바랍니다. 그 어떤 꿈의 물결에도 방해받지 않으셨으면 좋겠군요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "느비예트 자신에 대해·심판",
+			"voicelineType": "2001",
+			"description": "전 심판에 열광하는 심판 애호가가 아닙니다. 「심판」은 그저 저의 책임이자, 제가 위임받은 목적에 불과하죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "느비예트 자신에 대해·눈물을 흘리는 물의 용",
+			"voicelineType": "2005",
+			"description": "당신도 그 폰타인 민요에 대해 들으신 겁니까? 하아… 누구한테 들으셨습니까? 대체 누가 그걸 퍼트린 건지…. 아무것도 아닙니다. 전 물의 용이 울 거라고 생각하지 않습니다. 그저 대지에 모인 눈물과 모든 감정을 맛보고 느낀 바가 있는 것뿐이겠죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "느비예트 자신에 대해·심판의 의미",
+			"voicelineType": "2006",
+			"description": "입이 닳도록 얘기한 화제군요. 저를 인간의 범주에서 제외하려는 건 아닙니다만, 생각해 보십시오. 「정의」, 「공정」, 「평등」, 「법률」, 이 개념들은 서로 동등할 수 없습니다. 물은 「공평」하다는 본성을 지녔고, 전대 물의 신 에게리아는 모든 생명을 사랑으로 연결 지어 평등을 이루려고 했죠. 그리고 지금의 신은 평등한 「법률」을 추구하기로 했고, 각종 외부 요인으로 인해 「심판」만을 좇는 안타까운 결과를 낳았지만, 이유가 있어서 그런 거니 비난해선 안 되겠지요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "우리에 대해·증인",
+			"voicelineType": "2003",
+			"description": "당신이 세상 밖에서 왔다면, 제가 이 뒤집힌 세상에 내리는 심판을 지켜봐 주십시오. 「본디 위대하신 아버지께서 다스려야 할 나라였거늘, 지금은 추악한 깃털이 다스리고 있습니다. 뒤집히고 어긋난 이 세상을 바로잡기 위해 제가 이 땅에 왔습니다」",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "우리에 대해·인간 세상",
+			"voicelineType": "2002",
+			"description": "폰타인 사람들과 오랫동안 지내고 당신과 동행하다 보니 생각이 바뀌었습니다. 인간의 죄는 이미 사면했으니, 앞으로의 심판은 평범한 인간에게 해를 가하지 않을 것을 약속하지요. 다만 저와 참주 사이에는 아직 청산하지 못한 원한과 해야 할 복수가 남아 있습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "「신의 눈」에 대해·첫 번째",
+			"voicelineType": "3001",
+			"description": "위기의 순간에 더 쉽게 나설 수 있게 가짜 유리구슬을 차고 다니라고 저에게 조언한 사람이 있었습니다. 자신의 힘을 사용하는데 가면을 쓰고 위장해야 한다니, 솔직히 불쾌했습니다. 하지만 신의 눈을 가진 사람들과 지내다 보니, 그들의 갈망과 의지 역시 아주 귀하다는 걸 깨달았죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「태동하는 종언의 계시」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "「신의 눈」에 대해·두 번째",
+			"voicelineType": "3006",
+			"description": "네? 가장 오래된 일곱 신 중에서도 가짜 유리구슬을 차고 인간 세상을 돌아다니는 자들이 있단 말입니까? 푸흡, 하하하… 실례합니다. 좀 웃겨서 그만",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「태동하는 종언의 계시」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "하고 싶은 이야기·법률",
+			"voicelineType": "3002",
+			"description": "폰타인에는 신기한 법률이 많습니다. 예를 들어 「매월 초삼일은 비행 물체를 날릴 수 없고」, 「갈수기에 떠밀려 온 이매패류는 모두 물의 신의 것이며, 소라 껍데기는 백성들의 것」이라든가, 「집에서 키우는 동물에게 『푸리나』라는 이름을 붙이는 것을 금지」한다든가요. 또 「구내식당과 레스토랑에서 케첩만 먹을 수 없고」, 「멜뤼진은 인격을 나타내는 인칭 대명사로 불러야 한다」라든가 말이죠…. 마지막 조항의 입법은 제가 추진했습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "하고 싶은 이야기·비가 내리는 날",
+			"voicelineType": "3005",
+			"description": "전 종종 비를 맞는 상상을 합니다. 아, 오해 마십시오. 스트레스가 심해서 그런 건 아닙니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "흥미있는 일·용 도마뱀",
+			"voicelineType": "3003",
+			"description": "그들 역시 같은 원류바다 출신 혈통이라 진화에 매우 능숙합니다. 그러고 보니 과거에 있던 용의 풍습 하나가 떠오르는군요. 「우리가 요절한 동족의 피를 마시고 달과 별의 운동이 조석 현상에 영향을 줄 때, 우리 수생족 체내의 물 역시 위로 떠오를 것이며, 죽은 동족의 부활을 알 수 있을 것이다」",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "「태동하는 종언의 계시」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "흥미있는 일·인간",
+			"voicelineType": "3004",
+			"description": "제가 관찰한 결과, 인간은 늘 자연과 대립하더군요. 이렇게 말하면 인간도 자연의 일부라고 주장하는 사람이 있을 겁니다. 하지만 일부 진실을 아는 제가 보기에 인류 문명 세계와 이 별의 자연은 서로 공존하는 법을 찾아야 할 겁니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "바위의 신에 대해…",
+			"voicelineType": "4001",
+			"description": "제가 신들을 판결할 거라는 사실은 절대 바뀌지 않을 겁니다. 황금의 신은 바위의 권능을 쟁취했으니 당연히 심판을 받아야 하지요. 저와 그 신이 싸울까 봐 걱정할 필요는 없습니다. 전 폰타인에 아주 오래 머물러야 하니까요. 400년이 넘도록 있어야 할지도 모르죠. 게다가 판결이 꼭 싸움으로 이어질 거라는 보장도 없습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "바람의 신에 대해…",
+			"voicelineType": "4002",
+			"description": "천지가 뒤집혀도 찬탈자인 일곱 신을 향한 저의 심판은 계속될 겁니다. 미풍과 희망의 신은 바람의 권능을 받았으니, 똑같이 심판을 기다려야 하지요. 평소엔 그저 취객일 뿐이라 위험하지 않다고요? 그래도 일단 만나봐야겠습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "번개의 신에 대해…",
+			"voicelineType": "4003",
+			"description": "완전한 용의 자격을 다시 얻은 잔존자로서, 바다의 모든 물을 하늘로 돌려보내는 한이 있어도 전 저의 맹세와 책임을 이행할 겁니다. 나루카미는 번개의 권능을 쟁취했으니 찬탈자 명단에 오르는 건 당연한 일입니다. 음, 지금은 마음의 정토에 틀어박혀서 거의 나오지 않는다고요? 그럼 몇백 년 뒤에 찾아가도록 하죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "풀의 신에 대해…",
+			"voicelineType": "4004",
+			"description": "언젠가 초목의 신을 심판하게 되더라도 그 책임감만큼은 인정합니다. 세상에 완벽한 건 없다지만, 그녀가 보인 헌신과 애정은 책임자로서의 끊임없는 발전을 증명했으니까요. 약 500년 동안 냉대를 받았다고 들었는데, 그 신이 겪은 일에 대해선 매우 유감입니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "라이오슬리에 대해…",
+			"voicelineType": "4005",
+			"description": "라이오슬리 씨는 확실히 믿을 만한 사람입니다. 그의 칭호와 명예 모두 제가 얻게 해줬죠. 제가 그의 언변과 아첨에 속아 넘어갔다고 생각하십니까? 이나즈마에는 「말을 아끼는 게 꽃」이라는 말이 있죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "클로린드에 대해…",
+			"voicelineType": "4006",
+			"description": "클로린드 씨는 뛰어난 실력으로 현임 결투 대리인 중에서도 최강자가 되었습니다. 그림자 사냥꾼 업계의 후계자인 클로린드 씨가 있다면 심판청의 공정함이 더욱 잘 보장되겠죠. 그리고 보기보다 인간적이랍니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "리니와 리넷에 대해…",
+			"voicelineType": "4007",
+			"description": "공연이 아주 흥미롭더군요. 그게 바로 리니 씨와 리넷 씨의 마술 세계 아닐까요? 모든 게 가짜인 것 같지만, 믿기만 한다면 전부 진짜가 되는 거죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "시그윈에 대해…",
+			"voicelineType": "4008",
+			"description": "시그윈은 잘 지내고 있는지 모르겠군요. 만약 괴롭힘을 당했다면, 라이오슬리 씨를 폰타인성으로 불러와서 심문할 겁니다. 그야 시그윈은 아주 연약하고 상냥하니까요. 저번엔 사진기 필름을 갖고 돌아와서 나타의 물에 대한 저의 평가를 듣고 싶다고 했는데… 시그윈의 다음 휴가는 대체 언제죠?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "푸리나에 대해…",
+			"voicelineType": "4009",
+			"description": "그녀의 「공연」이 마침내 막을 내렸군요. 「연기」는 상상의 산물이지만, 푸리나는 이를 통해 자신의 직책을 완수했죠…. 겁 많고 나약한 인간이 광기에 의존해 용감해지다니, 지금까지 정말 고생했다고 말하고 싶군요.\n기회가 되면 그녀의 무대를 위해 박수를 치고 싶습니다…. 예, 기회가 닿는다면요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「죄인의 원무곡」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "나비아에 대해…",
+			"voicelineType": "4010",
+			"description": "이런 말 하면 죄송하지만, 그때 본의 아니게 나비아 씨를 화나게 한 일도, 그분의 사과를 받은 일도, 그리고 지금 제가 느끼는 죄책감도 전부 멀게만 느껴집니다. 마치 호수에 가라앉아서 별을 보는 것처럼요. 고의로 그런 건 아니었습니다. 더 이상 만회할 기회도 없겠죠. 감정은 물처럼 스스로 빠르게 회복하고 잠잠해지지 않는 법이니까요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「이유 없이 내리는 비처럼」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "느비예트에 대해 알기·첫 번째",
+			"voicelineType": "5001",
+			"description": "다른 사람과의 사적인 관계나 절차 밖의 협력은 최대한 피하고 있습니다. 하지만 당신은 품행이 믿을 만하고, 폰타인의 세력과 얽힌 것도 없으니 기꺼이 동행하도록 하죠",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "느비예트에 대해 알기·두 번째",
+			"voicelineType": "5002",
+			"description": "이런 말은 사석에서만 가능하지, 공개된 장소에서는 절대 할 수 없습니다. 개인적으로 폰타의 유행이 뜬금없다고 생각하지만, 사람들이 왜 좋아하는지 이해는 합니다. 수분을 섭취하며 당분도 보충할 수 있고 가격도 저렴하니까요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.3 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "느비예트에 대해 알기·세 번째",
+			"voicelineType": "5003",
+			"description": "최근에 한 연극을 봤습니다. 죽은 부인이 자신의 매력과 악의적인 계략을 통해 마치 사라지지 않는 유령처럼 그녀가 살던 저택에 남아 맴도는 이야기였죠. 연기는 흠 잡을 데가 없었고 스토리도 훌륭했습니다. 보고 나니 현실 세계의 상황이 떠오르더군요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "느비예트에 대해 알기·네 번째",
+			"voicelineType": "5004",
+			"description": "이런저런 이유로 전 폰타인을 떠난 적이 많지 않습니다. 그래서 제가 맛본 세계 각지의 물은 현지에서 마신 게 아니라 전부 외지에서 공수해 온 거죠. 그래도 다양한 식수의 미세한 맛 차이쯤은 구분할 수 있습니다. 이렇게까지 말했는데도 못 믿으시겠습니까? 전 최고 심판관이니 거짓말은 안 합니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.5 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "느비예트에 대해 알기·다섯 번째",
+			"voicelineType": "5005",
+			"description": "솔직히 골치 아픈 일이 종종 있긴 합니다. 앉을 때 옷자락을 밟거나, 가끔 머리카락이 눌리거나, 머리를 뒤로 기대면 의자 장식에 걸리기도 합니다. 최고 심판관의 위엄을 유지하기 위한 옷차림이니 불편은 당연히 감수해야겠죠. 세상일이 거의 다 그렇습니다. 신분을 받아들이고, 인내하고 이해하며 공존해야 하지요. 제가 늘 하는 일입니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "느비예트의 취미…",
+			"voicelineType": "6001",
+			"description": "물을 음미하는 것도 일종의 학문입니다. 불 원소로 가열한 물은 가장 기본적인 자연의 맛이고, 숯불로 끓인 물은 전원의 맛이 납니다. 마찬가지로 얼음 원소로 처리한 물은 특별할 것 없이 시원하기만 하지만, 스네즈나야의 얼음이 녹은 물은 완전히 다르지요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "느비예트의 고민…",
+			"voicelineType": "6012",
+			"description": "비 오는 날에 우산을 안 쓰면 이상해 보일까요…?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "좋아하는 음식…",
+			"voicelineType": "6003",
+			"description": "동물이 음식을 먹지 않으면 며칠은 살 수 있지만, 물이 없으면 얼마 못 버팁니다. 아무리 맛있는 음식도 깨끗한 물보다 못하지요. 그래서 국물이 많은 음식이 두 번째로 좋습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "싫어하는 음식…",
+			"voicelineType": "6004",
+			"description": "튀김이나 소스 없이 구운 음식을 정말 먹을 수 있는 겁니까? 특히 수메르의 대추야자 숯탄 전병에 대해선 꼭 한마디 해야겠군요. 그건 위장에 방습제를 집어넣는 것과 다름없습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "선물 획득·첫 번째",
+			"voicelineType": "6007",
+			"description": "맛이 좋군요. 음식에서 가장 중요한 수분도 가득하고, 재료 손질도 잘하셨습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "선물 획득·두 번째",
+			"voicelineType": "6008",
+			"description": "나쁘지 않은 시도입니다. 다만 국물을 좀 더 추가하고 기름을 걷으면 더 좋을 것 같군요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "선물 획득·세 번째",
+			"voicelineType": "6009",
+			"description": "너무 뻑뻑하군요. 촉촉하지 않은 요리에서는 요리사의 마음이 느껴지지 않는 법입니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "생일…",
+			"voicelineType": "7001",
+			"description": "오늘이 생일이군요. 축하합니다. 비가 올지 안 올지 모르겠지만, 제가 어떻게든 해결하겠습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "돌파의 느낌·기",
+			"voicelineType": "8001",
+			"description": "이제 조금 익숙해졌군요. 당신의 움직임에 맞추겠습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「1」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "돌파의 느낌·승",
+			"voicelineType": "8002",
+			"description": "저의 진짜 실력을 좀 발휘해야겠군요. 당신이 이렇게 쉽게 위험에 빠질 줄은 몰랐습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「2」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "돌파의 느낌·전",
+			"voicelineType": "8003",
+			"description": "이 정도 실력을 갖추고 계셨던 겁니까? 진지하게 임하지 않으면 당신을 따라잡을 수 없겠군요",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「4」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "돌파의 느낌·결",
+			"voicelineType": "8004",
+			"description": "찬탈자로부터 일곱 권능의 일부를 회수했습니다. 이게 제 본래 모습이죠. 「완전한 용」이 됐으니 이제 남은 신들도 심판할 수 있겠군요. 높은 하늘 위에 있는 찬탈자들의 왕을 심판하는 게 저의 운명이지만, 그전까지 힘을 빌려드리겠습니다",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「6」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "원소전투 스킬·첫 번째",
+			"voicelineType": "100001",
+			"description": "정숙!",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "원소전투 스킬·두 번째",
+			"voicelineType": "100002",
+			"description": "고개를 숙여라",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "원소전투 스킬·세 번째",
+			"voicelineType": "100003",
+			"description": "소란 금지",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "원소폭발·첫 번째",
+			"voicelineType": "200001",
+			"description": "밀물이여, 내가 돌아왔다",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "원소폭발·두 번째",
+			"voicelineType": "200002",
+			"description": "거품이 되어라",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "원소폭발·세 번째",
+			"voicelineType": "200003",
+			"description": "모든 높은 자를 내려볼지어다",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "보물상자 오픈·첫 번째",
+			"voicelineType": "300001",
+			"description": "주인이 없는 물건은 먼저 찾은 사람이 임자죠. 예, 합법입니다",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "보물상자 오픈·두 번째",
+			"voicelineType": "300002",
+			"description": "좋은 물건이 나왔습니까? 적어도 그것을 여는 순간엔 설렘이 가득하겠죠",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "보물상자 오픈·세 번째",
+			"voicelineType": "300003",
+			"description": "구두 약속으로 이 물건들을 당신에게 양도하겠습니다",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "HP 부족·첫 번째",
+			"voicelineType": "410001",
+			"description": "전 멀쩡하니 걱정 마십시오",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "HP 부족·두 번째",
+			"voicelineType": "410002",
+			"description": "위험이 커지고 있지만 제겐 위협이 되지 않습니다",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "HP 부족·세 번째",
+			"voicelineType": "410003",
+			"description": "흠, 옷에 흠집이 난 것 같군요",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "동료 HP 감소·첫 번째",
+			"voicelineType": "400001",
+			"description": "저에게 맡기십시오",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "동료 HP 감소·두 번째",
+			"voicelineType": "400002",
+			"description": "좀 쉬고 계십시오",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "전투 불능·첫 번째",
+			"voicelineType": "500001",
+			"description": "파도가 다시 밀려올 때 반드시 돌아올 겁니다…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "전투 불능·두 번째",
+			"voicelineType": "500002",
+			"description": "제가 태어나기 전의 따뜻한 바다를… 보았습니다…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "전투 불능·세 번째",
+			"voicelineType": "500003",
+			"description": "만물이… 고요하군요…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "강공격 피격·첫 번째",
+			"voicelineType": "910001",
+			"description": "뜻밖의 결과군요…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "강공격 피격·두 번째",
+			"voicelineType": "910002",
+			"description": "경솔했군요",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "파티 가입·첫 번째",
+			"voicelineType": "600001",
+			"description": "동행을 허가… 음, 초대해 주셔서 감사합니다",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "파티 가입·두 번째",
+			"voicelineType": "600002",
+			"description": "얼마든지요",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "파티 가입·세 번째",
+			"voicelineType": "600003",
+			"description": "같이 물가 같은 곳으로 가서 좀 걷죠",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

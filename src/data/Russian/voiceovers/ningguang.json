@@ -1,0 +1,864 @@
+{
+	"id": 10000027,
+	"name": "Ningguang",
+	"friendLines": [
+		{
+			"voicelineId": 15100,
+			"title": "Привет...",
+			"voicelineType": "1000",
+			"description": "Я госпожа Нин Гуан, Воля Небес группировки Цисин. Хочешь торговать? Будь моим телохранителем, а я покажу тебе, как превзойти всех в Ли Юэ.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_draw_appear"
+		},
+		{
+			"voicelineId": 15101,
+			"title": "Поболтаем: Антиквариат",
+			"voicelineType": "1101",
+			"description": "Хотя предметы старины и бесценны, они дарят радость только в момент приобретения.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_01"
+		},
+		{
+			"voicelineId": 15102,
+			"title": "Поболтаем: Торговая война",
+			"voicelineType": "1102",
+			"description": "В торговых войнах идеальный охотник не оставляет улик.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_02"
+		},
+		{
+			"voicelineId": 15103,
+			"title": "Поболтаем: Вложения",
+			"voicelineType": "1103",
+			"description": "Нам следует найти новый объект для инвестиций. В конце концов моры много не бывает.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_03"
+		},
+		{
+			"voicelineId": 15104,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Дождь начался. Будь добр{F#а}, подержи мне зонт.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 15105,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1202",
+			"description": "Обыкновенный снег. Когда-нибудь я возьму тебя с собой посмотреть на настоящий снегопад.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_snowy_01"
+		},
+		{
+			"voicelineId": 15106,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1203",
+			"description": "Штиль? Не верь глазам своим. Им свойственно лгать.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_sunny_01"
+		},
+		{
+			"voicelineId": 15107,
+			"title": "Когда дует сильный ветер...",
+			"voicelineType": "1204",
+			"description": "Такой ветер - беда для рыболовов и для... А, неважно.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_gale_01"
+		},
+		{
+			"voicelineId": 15108,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Доброе утро. Доложи о делах в порядке важности.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 15109,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Где ты предпочитаешь отобедать: «Глазурный павильон» или шатёр «Синьюэ»?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 15110,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "В чайном домике нет мест? Тогда пойдём в Нефритовый дворец... Если ты можешь себе это позволить.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Прощайте, древний лорд»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15111,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Да, иди, отдохни. Если возникнет важное дело, я за тобой пошлю.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 15112,
+			"title": "О Нин Гуан: Взгляд на мир",
+			"voicelineType": "2001",
+			"description": "Будь то переговоры о цене или полноценная торговая война, слава и деньги второстепенны. Чтобы добиться победы, нужно знать, какие карты у вашего оппонента на руках.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle"
+		},
+		{
+			"voicelineId": 15113,
+			"title": "О Нин Гуан: Впечатление",
+			"voicelineType": "2005",
+			"description": "Ты считаешь, что моё отношение к тебе изменилось? Хм... Когда мы встретились, мне нужна была твоя помощь. Конечно, мне нужно было демонстрировать дружелюбие. Но теперь ты для меня - важный партнёр по контракту, и мне больше не нужно притворяться.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15114,
+			"title": "О нас: Слухи",
+			"voicelineType": "2002",
+			"description": "Я думаю, ты слышал{F#а} немало слухов обо мне. Так кто же я, в конце концов? Решать только тебе. Естественно, твои умозаключения тоже станут частью слухов.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close1"
+		},
+		{
+			"voicelineId": 15115,
+			"title": "О нас: Наблюдения",
+			"voicelineType": "2003",
+			"description": "Ты уже давно путешествуешь со мной. Ты научил{F#ась}{M#ся} наблюдать? Тогда наблюдай за мной. Постарайся узнать мою душу.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15116,
+			"title": "О нас: Нефритовый дворец",
+			"voicelineType": "2004",
+			"description": "Выйди, встань наравне со мной. Ты видишь Нефритовый дворец? Сначала он был размером с комнату, а теперь заслоняет собой весь Ли Юэ. Когда он станет столь велик, что бросит тень на все семь королевств, ты точно так же встанешь со мной плечом к плечу.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Прощайте, древний лорд»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15117,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Нет необходимости пользоваться Глазом Бога там, где всё можно решить морой. Что касается ситуаций, где мора не сможет помочь... Я сталкивалась только с одной.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15118,
+			"title": "Давай поделимся: Крупье",
+			"voicelineType": "3002",
+			"description": "Азартные игроки всегда ставят всё на последний бросок игральных костей... Но все ставки, конечно, отходят крупье, который ни разу в жизни не прикасался к костям.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share"
+		},
+		{
+			"voicelineId": 15119,
+			"title": "Давай поделимся: Цель",
+			"voicelineType": "3004",
+			"description": "Властелин Камня покинул нас, и это стало испытанием что для Ли Юэ, что для Цисин. Я тоже давно не сталкивалась с такими масштабными трудностями. \nОднако я не могу отказаться от своей цели. Однажды я сделаю так, что тень Нефритового дворца накроет все семь королевств...",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15120,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "В древней поэзии Ли Юэ часто воспевается красота глазурных лилий, но сейчас они на грани вымирания. Они сохранились только в садах террасы Юйцзин. Поскольку эти цветы весьма известны и крайне редко встречаются, стоят они недёшево.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_gift"
+		},
+		{
+			"voicelineId": 15121,
+			"title": "О Бэй Доу: Штрафы",
+			"voicelineType": "4001",
+			"description": "Эта... Капитан. Она снискала уважение многих, но она же - первая, кто презирает правила. Она платит такие штрафы, каких хватило бы, чтобы купить новый корабль.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15122,
+			"title": "О Бэй Доу: Отношение",
+			"voicelineType": "4002",
+			"description": "Возможно, ты никогда не слышал{F#а}, чтобы я так плохо говорила о ком-то. Все хорошие и плохие слова были сказаны, но она всё равно делает так, как ей заблагорассудится... Ладно, хватит. Просто сделай так, чтобы я не видела капитана Бэй Доу.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15123,
+			"title": "О Чжун Ли...",
+			"voicelineType": "4003",
+			"description": "Чжун Ли... Тот господин из ритуального бюро «Ваншэн». Он хорошо разбирается в вещах, которых многие даже не знают. Но даже лучшие фигуры бесполезны для меня, пока я не узнаю их слабости.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15124,
+			"title": "О Син Цю...",
+			"voicelineType": "4004",
+			"description": "Второй наследник торговой гильдии «Фэйюнь». Люди такого склада характера терпеть меня не могут, но это естественно. У меня нет намерений вредить ему. Люди с разными убеждениями не способны плодотворно сотрудничать.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15125,
+			"title": "О Сян Лин...",
+			"voicelineType": "4005",
+			"description": "А, эта девочка из ресторана «Народный выбор»... Её недоверие ко мне всегда написано у неё на лице. Ха, интересно, какое бы у неё было выражение лица, узнай она, на какую сумму я оказала материальную помощь ресторану в этом году...",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xiangling_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15126,
+			"title": "О Гань Юй...",
+			"voicelineType": "4006",
+			"description": "Даже Гань Юй не может полностью полагаться на кого-либо. В Ли Юэ говорят, «чтобы секрет перестал быть секретом, достаточно одного человека». В важных делах ты можешь положиться только на себя.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15127,
+			"title": "О Яо Яо...",
+			"voicelineType": "4007",
+			"description": "Я полагаю, ты имеешь в виду девушку, которую Гань Юй взяла под своё крыло. Не волнуйся, я не планирую делать этот вопрос публичным. Я даже рада проявить некоторую снисходительность к её хитрому маневрированию. Однако в последнее время Яо Яо, похоже, слишком увлеклась морепродуктами. Тебе следует убедить её включить в свой рацион больше овощей и фруктов.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15128,
+			"title": "О Кэ Цин...",
+			"voicelineType": "4008",
+			"description": "Нефритовое Равновесие... Она сильно изменилась в последнее время. Какое Нефритовое Равновесие нужно Ли Юэ - то, что было в прошлом, или то, что есть сейчас? Время покажет.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15129,
+			"title": "О Джинн...",
+			"voicelineType": "4009",
+			"description": "Действующий магистр в Мондштадте, должно быть, дама строгая и безупречная. Даже бумагу для писем она всегда аккуратно складывает согласно предписанным правилам. Именно такие незаметные мелочи позволяют познакомиться с истинными качествами человека.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15130,
+			"title": "О Янь Фэй...",
+			"voicelineType": "4010",
+			"description": "Янь Фэй? В некотором смысле она «лучший враг». Если бы не её «ловкие» толкования закона и различные «оригинальные» предложения для своих клиентов, у меня ушли бы месяцы на то, чтобы самостоятельно найти пробелы в кодексе и постепенно улучшить его.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15131,
+			"title": "О Шэнь Хэ...",
+			"voicelineType": "4012",
+			"description": "Как поживает госпожа Шэнь Хэ? Прошу, заботься о ней как следует. Я глубоко признательна тебе за помощь в восстановлении Нефритового дворца. А если отставить церемонии - то просто заходи, когда у тебя будет свободная минутка, тебя всегда будет ждать чашка великолепного чая.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_shenhe_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Ветер дует - журавли возвращаются»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1101505
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15132,
+			"title": "О Юнь Цзинь...",
+			"voicelineType": "4011",
+			"description": "Юнь Цзинь... Ты можешь оценить её выступления? Поначалу это может быть трудно, но я советую всё же дать шанс. Причина, по которой я решила вложить деньги в её труппу, довольно проста: такое изящное искусство заслуживает того, чтобы передаваться из поколения в поколение.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yunjin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15133,
+			"title": "О Е Лань...",
+			"voicelineType": "4013",
+			"description": "Очень интересная девушка. Могу сказать с уверенностью, что я безоговорочно доверяю ей. Она идеальна буквально во всём. Хе-хе, вы об{F#е}{M#а} довольно умны, так что, надеюсь, вы поладите.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yelan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15174,
+			"title": "О Сянь Юнь...",
+			"voicelineType": "4014",
+			"description": "Я думаю пригласить Сянь Юнь на беседу за чашечкой чая. У меня оказалось несколько механических устройств, и мне было бы интересно узнать её мнение об их конструкции и применении. Я также хотела бы использовать эту возможность, чтобы расспросить её о том, как проходит жизнь Адепта в гавани Ли Юэ. Осталось лишь найти подходящего человека, чтобы доставить ей от меня приглашения. Возможно, тебя это заинтересует?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Тысяча лунных миль»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15134,
+			"title": "Узнать больше о Нин Гуан I",
+			"voicelineType": "5001",
+			"description": "Ты можешь позволить себе опустить некоторые формальности. Но я прошу тебя ценить моё время. Если нужно ко мне обратиться - говори кратко и по делу.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_01"
+		},
+		{
+			"voicelineId": 15135,
+			"title": "Узнать больше о Нин Гуан II",
+			"voicelineType": "5002",
+			"description": "Я считаю, что дети - самые чистые и наивные создания, поэтому сведения, предоставляемые ими, наиболее ценны. Так что насчёт тебя? Какие у тебя для меня сведения?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15136,
+			"title": "Узнать больше о Нин Гуан III",
+			"voicelineType": "5003",
+			"description": "Последнее время я размышляю над одним вопросом. Если бы я могла оставить тебя в Ли Юэ, возможно... Постепенно я смогла бы привести этот город... Ах, это только мысли вслух. Мне предстоит подумать, стоит ли того это вложение.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15137,
+			"title": "Узнать больше о Нин Гуан IV",
+			"voicelineType": "5004",
+			"description": "Ты можешь последовать моему примеру и использовать мору для получения выгоды. Но тебе следует помнить, что отношения, построенные на море, не могут длиться долго. Ха, да, именно поэтому я не прибегаю к использованию моры в наших с тобой отношениях.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15138,
+			"title": "Узнать больше о Нин Гуан V",
+			"voicelineType": "5005",
+			"description": "Неплохое капиталовложение. Конечно, накоплению моры оно не служит, но время, проведённое с тобой, само по себе есть прекрасная капиталоотдача. Думаю, я опять выиграла... Поставив на тебя.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15139,
+			"title": "Хобби Нин Гуан...",
+			"voicelineType": "6001",
+			"description": "Не хочешь попробовать сыграть в «Тысяча лет в Ли Юэ»? Я смогу оценить, насколько хорошо ты играешь в шахматы.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_hobby"
+		},
+		{
+			"voicelineId": 15140,
+			"title": "Беспокойство Нин Гуан...",
+			"voicelineType": "6002",
+			"description": "Что меня беспокоит?.. Думаешь, ты смог{F#ла} бы вынести то бремя, которое я возложу на тебя, поделившись своим беспокойством о группировке Цисин? К тому же если ты проговоришься по неосторожности...",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_annoyed"
+		},
+		{
+			"voicelineId": 15141,
+			"title": "Любимая еда...",
+			"voicelineType": "6003",
+			"description": "Бульон, сваренный на медленном огне из куриного мяса и свиных костей, заправленный листьями свежей молодой капусты. Я неприхотлива в еде. В простые дни такого рода блюд мне вполне хватает.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodLike"
+		},
+		{
+			"voicelineId": 15142,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Я встречала людей, которые на каждом приёме требовали сервировать им золотистого краба. Это блюдо дорого выглядит, но я нахожу такое вульгарным. Если ты хочешь пригласить на подобный приём меня, лучше просто заплати мне морой.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodDislike"
+		},
+		{
+			"voicelineId": 15171,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Неплохо. Ты снова {F#превзошла}{M#превзошёл} мои ожидания.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_pref_01"
+		},
+		{
+			"voicelineId": 15172,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Иногда, если не понимаешь основы, то вся работа становится бесполезной... Понимаешь, о чём я?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_normal_01"
+		},
+		{
+			"voicelineId": 15173,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Я ценю твои намерения.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_dislike_01"
+		},
+		{
+			"voicelineId": 15143,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "Дарю тебе эту парчу высшего качества из Ли Юэ, сплетённую из шелковиц. {M#И ещё одну... Однажды ты сможешь подарить её своей сестре и, надеюсь, она ей понравится. Поздравляю вас обоих с днём}{F#Сделай из неё одежду и хорошенько отпразднуй свой день} рождения.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_b",
+			"voicefile_male": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 15144,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Решение проблем насилием - это наихудшее решение.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15145,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Делать своей силой время и мору... Интересно. Это лишний раз доказывает их ценность.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15146,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Что заставляет тебя не сдаваться? Нет, не говори мне. Дай мне больше времени, и я пойму сама.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15147,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Обычно я не доверяю людям, но ты заслужил{F#а} моё доверие. Хорошая работа. Нужно больше таких людей, как ты... А возможно, кроме тебя, никого не надо.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 15148,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "...Пустяки.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_01"
+		},
+		{
+			"voicelineId": 15149,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Не трать моё время.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_02"
+		},
+		{
+			"voicelineId": 15150,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Фи! Сдавайся!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_03"
+		},
+		{
+			"voicelineId": 15151,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Твоя жизнь - моя!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_01"
+		},
+		{
+			"voicelineId": 15152,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Сдайся!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_02"
+		},
+		{
+			"voicelineId": 15153,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Счастливо!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_03"
+		},
+		{
+			"voicelineId": 15154,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Острый глаз.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_01"
+		},
+		{
+			"voicelineId": 15155,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Нельзя, чтобы сокровища пропали зря.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_02"
+		},
+		{
+			"voicelineId": 15156,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Богатство... Чем больше, тем лучше.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_03"
+		},
+		{
+			"voicelineId": 15157,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Ты смеешь бить меня?!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_01"
+		},
+		{
+			"voicelineId": 15158,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Я не забуду этого.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_02"
+		},
+		{
+			"voicelineId": 15159,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Ух!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_03"
+		},
+		{
+			"voicelineId": 15160,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "У тебя нет шансов на победу.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 15161,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "В таком случае, я помогу тебе.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 15162,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Мы всего лишь пешки...",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_01"
+		},
+		{
+			"voicelineId": 15163,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Победитель определён...",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_02"
+		},
+		{
+			"voicelineId": 15164,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Таков исход Воли Небес?",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_03"
+		},
+		{
+			"voicelineId": 15165,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900001",
+			"description": "Хм... грубо.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 15166,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Ох! Ну, погоди!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 15167,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Ох! Кровь за кровь!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 15168,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Понятно.",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_01"
+		},
+		{
+			"voicelineId": 15169,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Поспешим.",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_02"
+		},
+		{
+			"voicelineId": 15170,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Не разочаруй меня.",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_03"
+		}
+	]
+}

@@ -1,0 +1,759 @@
+{
+	"id": 10000067,
+	"name": "Collei",
+	"friendLines": [
+		{
+			"voicelineId": 67000,
+			"title": "初めまして…",
+			"voicelineType": "1000",
+			"description": "見習いレンジャーコレイ、参上！森を旅するお前の安全を保障する——ふぅ、やっとこの決めゼリフを言える時が来た。あたし、読み間違えてないよな…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_draw_appear"
+		},
+		{
+			"voicelineId": 67001,
+			"title": "世間話·パトロール",
+			"voicelineType": "1101",
+			"description": "今日のパトロールは…ここに行ってからこっちに曲がる…えっと、字が多い…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_01"
+		},
+		{
+			"voicelineId": 67002,
+			"title": "世間話·調子",
+			"voicelineType": "1102",
+			"description": "ふぅ、今日は調子がいいんだ。せっかくだから、もっと頑張ろう。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_02"
+		},
+		{
+			"voicelineId": 67003,
+			"title": "世間話·記憶",
+			"voicelineType": "1103",
+			"description": "今日みたいに暇だと、あれこれ考えてしまう——うぅ、嫌なことを思い出した…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_03"
+		},
+		{
+			"voicelineId": 67004,
+			"title": "雨上がり…",
+			"voicelineType": "1201",
+			"description": "雨は止んだけど、水溜りに気をつけないと。起きてしまったことは、たとえ過ぎ去ったとしても記憶に残ってしまうから——…コホン！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 67005,
+			"title": "雷の日…",
+			"voicelineType": "1202",
+			"description": "雷が鳴ってるときは、木から離れたほうがいい。こういう時、レンジャーは森林火災が起きないように、しっかり調べないといけないんだ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_thunder_01"
+		},
+		{
+			"voicelineId": 67006,
+			"title": "晴れの日…",
+			"voicelineType": "1203",
+			"description": "いい天気だな。日光浴は体にいい。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_sunny_01"
+		},
+		{
+			"voicelineId": 67007,
+			"title": "暴風の日…",
+			"voicelineType": "1204",
+			"description": "うん、ちょうどいい風だな。アンバーはきっと、こんな日に自分の限界に挑戦するのが好きだろう。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_gale_01"
+		},
+		{
+			"voicelineId": 67008,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "おはよう！ふぁあ…ごめん、昨夜はまた復習してたから…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 67009,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "パトロールのルートが長いときは昼に戻れないことも多いから、「ピタ」を少し多く用意したんだけど…食べる？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 67010,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "暗くなってきたな。森を歩くときには、細心の注意を払わないと。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 67011,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "休みたいのか？篝火はもう焚いたから、安心して寝るといい。あたしが見張ってる。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 67012,
+			"title": "コレイ自身について·パトロール",
+			"voicelineType": "2001",
+			"description": "スメールに来る前、野外をさすらっていた時期がある。食べられるものも、食べられないものもたくさん食べたから、野外には慣れてるって言えるかも。だから、ここに来てからはパトロールの仕事をし始めたんだ。もし「野外サバイバル」って科目があれば、及第点をとれる自信があるよ…えっと、筆記テストがない限りは。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_idle"
+		},
+		{
+			"voicelineId": 67013,
+			"title": "コレイ自身について·学習",
+			"voicelineType": "2005",
+			"description": "え？毎日何を学習しているのかって？すごい師匠の元で勉強してるからには、何か奥深いことを学んでいるに違いない？…えっと…その…『テイワット文字を学ぼう』なんだけど…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67014,
+			"title": "昔からの知人について…",
+			"voicelineType": "2003",
+			"description": "前、アンバーからの手紙に、お前のことが書いてあった。まさかあれからモンドであんなにたくさんのことが起こったなんてな。でも…残念だけど、あたしは字を飛ばしながら読んでいたから、細かいところはよく分からなかったんだ…えっ、もう一回教えてくれるのか？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "シナリオ「龍と自由の歌」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						39604
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67015,
+			"title": "友達について…",
+			"voicelineType": "2002",
+			"description": "モンドに行くまでは、「友達」なんてものはあたしの人生に一生関わりがないと思ってた…でも、あれからスメールで師匠と出会えて、そしてお前に出会えた。やっぱり、あたしは幸運なんだ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67016,
+			"title": "「神の目」について…",
+			"voicelineType": "3001",
+			"description": "はぁ…まさか、あたしが神の目を手に入れられるなんてな。神は、みんなに好かれるように生まれたヤツのことしか見てないと思ってたけど…うぅ、た、確かによくない偏見だった。あたしが間違ってた。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67017,
+			"title": "シェアしたいこと·能力の名前",
+			"voicelineType": "3002",
+			"description": "師匠はいつも、実践が一番効率的な勉強だって言ってる。だから、文字をもうちょっと覚えられるように、あたしもたまに娯楽小説を読んでる…少なくとも、師匠の論文よりは読みやすいしね。でも、最近読んだ本の中で、主人公がたくさんの能力を持ってるやつがあって。その能力の名前も、全部あたしの分からない単語なんだ…うん？本の名前？確か…『鬼武道』って言ったかな？お前も読んだことがあるのか？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_share_01"
+		},
+		{
+			"voicelineId": 67018,
+			"title": "シェアしたいこと·封印された力",
+			"voicelineType": "3005",
+			"description": "うわ…また「封印された力が蠢いている」とか…「俺に近づかないほうがいい」とか…何で稲妻人っていうのはこんなことを自然に言えるんだよ、恥ずかしさとか感じないのか？うぅ…だめだ、これ以上読めない！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67019,
+			"title": "興味のあること…",
+			"voicelineType": "3003",
+			"description": "植物と動物？…食べられるかどうか以外、大して違わない。しーっ、この話、師匠に聞こえちゃ駄目だから。あたしは、うろのある木が好きかな？特に、「穴があったら入りたい」って気持ちのときは尚更…誰だってそういう時はあるだろ？違うのか？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_gift_01"
+		},
+		{
+			"voicelineId": 67020,
+			"title": "ティナリについて…",
+			"voicelineType": "4001",
+			"description": "普段は厳しくて、毒キノコをみだりに食べる冒険者たちによく説教だってしてるけど、師匠はとっても優しい人なんだ。勉強に付き合ってくれるし、モンドからの手紙も読んでくれる。師匠にはずっと感謝してるんだ！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67021,
+			"title": "ドリーについて…",
+			"voicelineType": "4002",
+			"description": "パトロール中、彼女に会ったことがある。そしたら、あたしが喉乾いてたのを知ってたみたいに、布の袋から美味しそうなジュースを取り出したんだ…幸い師匠がその場にいて、彼女を止めてくれた。師匠がいなかったら流されて、せっかく貯めてきたモラを全部使っちゃうとこだったよ…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67022,
+			"title": "クラクサナリデビについて…",
+			"voicelineType": "4003",
+			"description": "草神、か…子供の頃、あたしは大声で神様に問いたかった——どうしてあたしに、こんなにたくさんの苦しみを与えるのかって。でも…はぁ。きっと神様でさえも、自身の無力さを色々と経験しているのかもしれない。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67023,
+			"title": "セノについて…",
+			"voicelineType": "4004",
+			"description": "か…彼の話をしないでくれる？いや、大マハマトラは悪い人じゃないよ。彼があたしをモンドからスメールに連れ戻してくれたから、あたしにも落ち着ける場所ができたんだ。ただ、スメールに帰る前の、あの「封印」のことを思い出すと…うぅ、首の後ろがまた痛くなってきた…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67024,
+			"title": "カーヴェについて…",
+			"voicelineType": "4005",
+			"description": "大マハマトラが彼を連れて来て、ここで一緒に食事したことがある。食前の果物が運ばれてきた辺りで、彼はあの頑固で理不尽なルームメイトについて話し始めた。口を挟むスキもなかったよ。それであたしたちは、食事が終わるまで笑いを我慢しながら頷くことしかできなかった。はぁ、本当に大変だったよ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67025,
+			"title": "ニィロウについて…",
+			"voicelineType": "4006",
+			"description": "彼女、ちょっとぼんやりしてるみたいだ。もしガンダルヴァー村の近くでパフォーマンスをする機会があったとき、森で迷子になってしまったりしないよな…うん、見習いレンジャーの名にかけて、あたしが彼女をしっかり見守るよ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67026,
+			"title": "アンバーについて…",
+			"voicelineType": "4007",
+			"description": "アンバーは本当にすごいんだ！親切で明るいし、勇敢で、正義感が強くて…あたしが一番尊敬している人なんだ！彼女はいつも炎のように、他の人を照らす。もし彼女がいなかったら、あたしもここまで来られなかった…もう随分経っているから、今の彼女はもっと落ち着いてて、さらにかっこよくなってるんだろうな！いつになったら彼女に追い付けるんだろう。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67027,
+			"title": "ガイアについて…",
+			"voicelineType": "4008",
+			"description": "モンドのみんなは元気なのか？あのとき、あたしは色んなトラブルを起こしてしまった…時間があったらお詫びに行ったほうがいいかな…うぅ、でも顔を出したら、あの騎兵隊長にからかわれるような気が…やっぱりまた今度にしよう、また今度…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67028,
+			"title": "リサについて…",
+			"voicelineType": "4009",
+			"description": "もうだいぶ経ってるのに、リサは手紙で未だにあたしのことを「コレイちゃん」って呼ぶんだ。何だか…え？お前、リサに可愛い子ちゃんって呼ばれてるのか？ぷふっ…ごめん、笑うつもりじゃなかったんだけど…何だか気分が良くなったな。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67029,
+			"title": "フィッシュルについて…",
+			"voicelineType": "4010",
+			"description": "…「断罪の皇女」？ごめん、あたしはモンドにいた時間が長くなくて。その人については聞いた覚えがないな。でもその名前…うぅ…コホン、なんでもない。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_fischl_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67068,
+			"title": "ファルザンについて…",
+			"voicelineType": "4011",
+			"description": "えっと…正直、あの先輩との付き合いはあまり得意じゃないんだ…あの方からよく真面目で勉強熱心だって褒められるけど、あたしは学ぶのが遅くて仕方ないから補習してるだけで…！それに前に一回、あの方の研究ノートを偶然見たことがある。あれは…絶対にスメールの中で一番恐ろしい本だ！——内容が全部古文で書かれてて、一文字も分からなかったよ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67030,
+			"title": "コレイを知る·1",
+			"voicelineType": "5001",
+			"description": "あたしのこと？もしスメールに来る前のことを聞きたいのなら、うーんと、その…手紙でアンバーに聞いてみたら？あっ、やっぱりダメだ。もし騎兵隊長のガイアに知られたらおしまいだ…うん、彼なら絶対気づく！や、やっぱりあたしから言うよ、ふぅ——ごめん！やっぱりもう少し心の準備をさせてくれ…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_01"
+		},
+		{
+			"voicelineId": 67031,
+			"title": "コレイを知る·2",
+			"voicelineType": "5002",
+			"description": "モンドにいたとき、アンバーたちに言っちゃいけないことをたくさん言ってしまった。今思い出してもそのことが恥ずかしいんだ…もう、あたしったら、なんであたしを助けようとしてくれた人たちにあんなことを言ったんだって！あのとき、みんなはあたしのことをどう思ってたのか？考えるだけで…うぅ、ごめん、今日はこの辺にしてくれないか？そうじゃないと、明日になったら…きっと今言ったことを後悔してしまうから。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67032,
+			"title": "コレイを知る·3",
+			"voicelineType": "5003",
+			"description": "「魔鱗病」のせいで、あたしは治療のために「博士」のところに送られた…いや、あれは治療なんかじゃなく、「実験」だった。ああいう環境に長くいると、こう思うようになった——自分は、何か悪いことでもしたのか。なんで誰も助けてくれないんだって…そうやって、だんだん「ファデュイ」以外の人たちも恨むようになった。思えば…本当に幼稚だったと思う。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67033,
+			"title": "コレイを知る·4",
+			"voicelineType": "5004",
+			"description": "お前らのおかげで、「魔鱗病」は消えた。これはかつてのあたしには想像もできない奇跡だ。だって…あたしは完治するなんて、希望を持ってもいなかった。体が動かなくなる前に、もう少し多くのことをやりたいと思っただけ。最初は復讐で、その後はパトロール…今、あたしはやっと自由に生きていける。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67034,
+			"title": "コレイを知る·5",
+			"voicelineType": "5005",
+			"description": "これからも旅を続けるのか？あたしが力になるよ。真面目に勉強する…文字の勉強とか医術とか、それに戦闘や危険の排除も…もちろん、街灯の点検みたいに細かいこともな！これからの旅で、あたしのように助けられる人間が増えるといいな——お前があたしを救ったみたいにさ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67035,
+			"title": "コレイの趣味…",
+			"voicelineType": "6001",
+			"description": "趣味は…裁縫に飛行の練習、それから他人を助けること！え？聞き覚えがあるって？それは…あたしも「誰かを照らす光」になりたいからだ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_hobby"
+		},
+		{
+			"voicelineId": 67036,
+			"title": "コレイの悩み…",
+			"voicelineType": "6002",
+			"description": "「現在の…農作物の品種…単いち化…長期的なキノコの食用をよけ…輸入方策の実施…」——なんだこれ！何で教令院は「キノコを食べたくない」って論文をこんなにややこしく書くんだ！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_annoyed"
+		},
+		{
+			"voicelineId": 67037,
+			"title": "好きな食べ物…",
+			"voicelineType": "6005",
+			"description": "「ピタ」は持ち運びできる上に、満腹感を得られやすいから、あたしはよく食べてる。もし腹を満たすってことを抜きにしたら、一番好きなのは…うん、「大根の揚げ団子」かな。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 67038,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "彷徨ってた時は、腹が減ったらググプラムまで割って食べてた。だから、すごく嫌いって食べ物はないかな。強いて言えば、あたしが絶対に食べないのはキノコかな？好き嫌いの問題じゃなくて、師匠に延々と説教されるのが嫌なだけだけど…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_foodDislike"
+		},
+		{
+			"voicelineId": 67039,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "うん——うまい！作り方を教えてくれる？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_pref_01"
+		},
+		{
+			"voicelineId": 67040,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "その腕前なら、外をさすらっても腹をすかせることはないだろうな。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_normal_01"
+		},
+		{
+			"voicelineId": 67041,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "ごめん、変わったものは食べちゃだめだって師匠に言われてる。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_dislike_01"
+		},
+		{
+			"voicelineId": 67042,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "た、誕生日おめでとう！これ、あたしが準備したケーキで、これは予備のキャンドルだ…こうすればいいってアンバーの手紙に書いてあったから…あっ、そ、それからこれはお前へのプレゼントだ！\n…ごめん、誕生日会をしたことがないから、これで合ってるのかどうか分からないんだ…色々バタバタしちゃったな。もし何かダメなところがあったら絶対に教えてくれよ。来年こそ、もっといいものを準備してやるよ！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 67043,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "あたしは進歩しているのか？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67044,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "感じられる、あたしはもう…昔のあたしじゃない。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67045,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "たとえ生きるか死ぬかの分かれ目になっても、「ヤツら」の力なんかに頼る必要はもうない。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67046,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "今のあたしなら、たとえ封印された力を解かれても、自由に操れるだろう。ハァッ！\n——なんつって。お前と共に冒険してきた経験こそ、あたしの持つ力だ。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 67047,
+			"title": "元素スキル·1",
+			"voicelineType": "100002",
+			"description": "行け。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_02"
+		},
+		{
+			"voicelineId": 67048,
+			"title": "元素スキル·2",
+			"voicelineType": "100003",
+			"description": "飛べ。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_03"
+		},
+		{
+			"voicelineId": 67069,
+			"title": "元素スキル·3",
+			"voicelineType": "100001",
+			"description": "せぁっ！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_01"
+		},
+		{
+			"voicelineId": 67049,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "頼むよ、コレアンバー！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_01"
+		},
+		{
+			"voicelineId": 67050,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "こ、これならどうだ！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_02"
+		},
+		{
+			"voicelineId": 67051,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "踊ろう！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_03"
+		},
+		{
+			"voicelineId": 67052,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "野外では常に補給に気を配らないと。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_01"
+		},
+		{
+			"voicelineId": 67053,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "ツイてるな。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_02"
+		},
+		{
+			"voicelineId": 67054,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "うん…毒キノコが生えてたりなんかしないよな。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_03"
+		},
+		{
+			"voicelineId": 67055,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "まだ…いける！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_01"
+		},
+		{
+			"voicelineId": 67056,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "こんな傷、なんてことない！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_02"
+		},
+		{
+			"voicelineId": 67057,
+			"title": "HP低下·3",
+			"voicelineType": "410003",
+			"description": "早く…治療を受けないと…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_03"
+		},
+		{
+			"voicelineId": 67058,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "身体の方が大事だ！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 67059,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "このままじゃまずい。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 67060,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "優秀な…レンジャーにならないと…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_01"
+		},
+		{
+			"voicelineId": 67061,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "こんなふうに…倒れるなんて…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_02"
+		},
+		{
+			"voicelineId": 67062,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "ついに…来たのか…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_03"
+		},
+		{
+			"voicelineId": 67063,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "そんな…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 67064,
+			"title": "重ダメージを受ける·2",
+			"voicelineType": "910002",
+			"description": "あたしに…触んな！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 67065,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "あたしが守ってやる。",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_01"
+		},
+		{
+			"voicelineId": 67066,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "準備万端だ、出発しよう！",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_02"
+		},
+		{
+			"voicelineId": 67067,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "見習いレンジャー、参上！",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_03"
+		}
+	]
+}

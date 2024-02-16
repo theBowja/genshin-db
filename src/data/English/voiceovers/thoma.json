@@ -1,0 +1,787 @@
+{
+	"id": 10000050,
+	"name": "Thoma",
+	"friendLines": [
+		{
+			"voicelineId": 50008,
+			"title": "Hello",
+			"voicelineType": "1000",
+			"description": "It's good to meet you at last, Traveler. I've been hearing about you for a long time now. I'm your new buddy, Thoma — as long as that's okay with you, of course!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_draw_appear"
+		},
+		{
+			"voicelineId": 50009,
+			"title": "Chat: Thoma's Treat",
+			"voicelineType": "1101",
+			"description": "Hey... how about we go for a nice meal some time? My treat, of course.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_01"
+		},
+		{
+			"voicelineId": 50010,
+			"title": "Chat: Concern",
+			"voicelineType": "1102",
+			"description": "I feel like there's something I forgot to do... hmm, I tidied the courtyard, put the tea on... Eh, it's probably just my mind playing tricks on me.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_02"
+		},
+		{
+			"voicelineId": 50011,
+			"title": "Chat: Mora",
+			"voicelineType": "1103",
+			"description": "I really did spend a lot recently, only 10 Mora left... Still, 10 Mora's better than no Mora!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_03"
+		},
+		{
+			"voicelineId": 50012,
+			"title": "When It Rains",
+			"voicelineType": "1201",
+			"description": "Where'd this rain come from? Are you gonna be okay? Here, I'll lend you my coat...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 50013,
+			"title": "When Thunder Strikes",
+			"voicelineType": "1202",
+			"description": "You don't wanna be out in open country in this kind of weather. You'll get struck by lightning for sure.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_thunder_01"
+		},
+		{
+			"voicelineId": 50014,
+			"title": "When It Snows",
+			"voicelineType": "1203",
+			"description": "Don't run on the ice... 'cause if you fall down, I won't help you up, you gotta learn somehow.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_snowy_01"
+		},
+		{
+			"voicelineId": 50015,
+			"title": "When the Sun Is Out",
+			"voicelineType": "1204",
+			"description": "Lovely weather we're having! Will you join me for a walk?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_sunny_01"
+		},
+		{
+			"voicelineId": 50016,
+			"title": "Good Morning",
+			"voicelineType": "1001",
+			"description": "Morning! If you're free, why not come with me to the market? The vegetables are freshest earlier in the day.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 50017,
+			"title": "Good Afternoon",
+			"voicelineType": "1002",
+			"description": "On the lunch menu today, we have Sakura Tempura and Tricolor Dango! Here, there's some for you, some for Paimon, and I also put some aside for milady and the man of the clan himself. Ah, wait, I forgot someone... There's none for me...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 50018,
+			"title": "Good Evening",
+			"voicelineType": "1003",
+			"description": "Come quick, we gotta get down to the market — they slash the prices on fish around this time of day. Oh, and if you find something that you just can't do without, I'll help you haggle the price down.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 50019,
+			"title": "Good Night",
+			"voicelineType": "1004",
+			"description": "Okay, good night. You had a busy day today, you should get some rest, too. Don't stay up too late.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 50020,
+			"title": "About Thoma: Housekeeper",
+			"voicelineType": "2001",
+			"description": "It was never Ayaka or Ayato's intention to make me the housekeeper, I volunteered. I like this kind of work. Putting everything in order gives me a great sense of achievement, and based on everyone's reactions... Yeah, I think I do a pretty good job.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle"
+		},
+		{
+			"voicelineId": 50021,
+			"title": "About Thoma: Meaning",
+			"voicelineType": "2005",
+			"description": "For me, housework is about keeping a space clean and tidy, so that everyone who lives there has a smile on their face. And now... it looks like I'm responsible for another smile. I'll do my best to deliver!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50022,
+			"title": "About Us: Eating Alone",
+			"voicelineType": "2003",
+			"description": "Hey, how come you're eating here all alone? ...Uh, is it okay if I join you? Or did you just want some space?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close"
+		},
+		{
+			"voicelineId": 50023,
+			"title": "About Us: Oath",
+			"voicelineType": "2002",
+			"description": "If you hadn't put yourself out there during the Vision Hunt Ceremony and taken on the Raiden Shogun all by yourself, I would've lost my Vision, and with it all my aspirations. I've been thinking about this a lot, and it seems like there's only one way I could ever properly repay you... \nI, Thoma, give to you my weapon and my loyalty, and I promise to fight for you, no matter what.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"Stillness, the Sublimation of Shadow\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50024,
+			"title": "About the Vision",
+			"voicelineType": "3001",
+			"description": "Those that receive Visions should look after them. I certainly don't plan on losing mine.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50025,
+			"title": "Something to Share",
+			"voicelineType": "3002",
+			"description": "I've gotten to know all kinds of people over the years, and I'd say that Inazumans are more particular about etiquette than Mondstadters. If you make sure you're always polite to people, it's much easier to get things done.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_share_01"
+		},
+		{
+			"voicelineId": 50026,
+			"title": "Interesting Things: Tanuki",
+			"voicelineType": "3003",
+			"description": "I've always wanted to see a tanuki shapeshifting. They say it can change into all kinds of things, and that it likes to play pranks on passersby. It's a creature with a sense of humor, that's for sure.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_01"
+		},
+		{
+			"voicelineId": 50027,
+			"title": "Interesting Things: Animals",
+			"voicelineType": "3004",
+			"description": "Are you an animal person, too? If you are, let me take you to the outskirts some time, it's great. I just need to give a whistle, and all these puppies and kittens will come out of nowhere and start strutting around your ankles, clamoring for your affection. Haha, just imagining it is already brightening my day.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_02"
+		},
+		{
+			"voicelineId": 50028,
+			"title": "About Yae Miko",
+			"voicelineType": "4001",
+			"description": "Lady Miko? Wh—What about her? *sigh* Every time Miss Kamisato sends me out to deliver messages, my least-favorite destination is the Grand Narukami Shrine... Oh! N—Not because Lady Miko scares the bejeebers out of me, it's, uh... respect. Yes! She strikes respect deep into my heart, ahahahaha...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50029,
+			"title": "About the Raiden Shogun: Comparison",
+			"voicelineType": "4002",
+			"description": "In my homeland of Mondstadt, almost everyone has great reverence for the Anemo Archon, Barbatos. But people in Inazuma feel a little differently toward the Shogun. How can I put this... They feel love, respect, gratitude... but also fear.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50030,
+			"title": "About the Raiden Shogun: The Unknown",
+			"voicelineType": "4003",
+			"description": "Honestly, I don't harbor any resentment toward the Shogun. Yes, she almost took my Vision away, but ultimately that's just because of her unique perspective. Everyone has their own perspective, there's nothing strange about that.\nThe only thing I don't understand is her goal in doing so. What does she imagine eternity really looks like for Inazuma? And why is sacrificing her people's aspirations so necessary to achieve it? I can neither understand nor agree with her approach.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Stillness, the Sublimation of Shadow\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50031,
+			"title": "About Beidou",
+			"voicelineType": "4004",
+			"description": "The captain of The Crux — a formidable woman indeed. She once promised to take me out onto the open ocean to get a look at the thunderstorm that seals off Inazuma from the outside world. It's a shame that to this day, I've never had the chance to take her up on the offer...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Stillness, the Sublimation of Shadow\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50032,
+			"title": "About Kamisato Ayato",
+			"voicelineType": "4005",
+			"description": "As head of the Kamisato Clan, he's in a tough position. With all the political upheaval, he has to contend with public disquiet on one hand and a bunch of self-serving, degenerate public officials on the other. It's best not to dwell on it. All I can do is make sure to look out for him when he's at home.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayato_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50033,
+			"title": "About Kamisato Ayaka",
+			"voicelineType": "4006",
+			"description": "Milady is in all respects a well-rounded person: erudite, compassionate, well-mannered, and elegant... The one thing she could do better is to speak her mind more. In fact, watch out for this the next time you're talking to her — sometimes, she looks like she's about to say something, but then she holds back. If that happens, keep asking her opinion, see if you can encourage her to open up a little.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayaka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Stillness, the Sublimation of Shadow\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50034,
+			"title": "About Yoimiya",
+			"voicelineType": "4007",
+			"description": "Of Naganohara Fireworks fame? She's so easy to get along with. Super straightforward, just says whatever she thinks. Oh, and Naganohara fireworks are just incredible, you should take every chance you get to see them in action. Ah, on that note — here, have a coupon!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yoimiya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50035,
+			"title": "About Sayu",
+			"voicelineType": "4008",
+			"description": "Ah Sayu, stubborn Sayu. I've asked her countless times to teach me ninjutsu, but she always refuses. She even goes out of her way to avoid me now... I'm just a student looking for a teacher, am I really that out of line?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_sayu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50036,
+			"title": "About Kujou Sara",
+			"voicelineType": "4009",
+			"description": "The Tenryou Commission General... Mm... Make sure to be extra careful if you have any dealings with her. She has a lot of power in her hands, and she's not very open to persuasion. Smiling and batting your eyelids certainly won't get you anywhere with her.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_kujoSara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50037,
+			"title": "About Arataki Itto",
+			"voicelineType": "4010",
+			"description": "Hmm... Word on the street is that he's quite a character — apparently, he even has youkai heritage. Have you met him? If you two are close, maybe you could introduce me sometime. It's good to make friends from all walks of life... youkai included!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_itto_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50038,
+			"title": "About Shikanoin Heizou",
+			"voicelineType": "4011",
+			"description": "Ho, that guy is a detective for the Tenryou Commission. He seems to have his own way of doing things — not the easiest person to get along with. Also... Any situation that involves a detective is probably not one that's going to end well. I think I'll keep on giving him a wide berth.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_heizou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50039,
+			"title": "About Jean",
+			"voicelineType": "4012",
+			"description": "Oh, so Jean from the Gunnhildr Clan is the Master of the Knights of Favonius now? She definitely deserves it, she's known all over for her impeccable conduct... Oh, just the \"Acting\" Grand Master? Haha, well, someone of her standing won't care about titles.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50040,
+			"title": "About Eula",
+			"voicelineType": "4013",
+			"description": "You've had a run-in with Eula Lawrence before, huh? All I know is that their whole family are about the worst-tempered people you could ever meet. You're better off steering clear of them if you can help it. Ah, now I'm in a Mondstadt mood again... The memories.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50041,
+			"title": "More About Thoma: I",
+			"voicelineType": "5001",
+			"description": "Anything I can lend a hand with? If something needs doing around the house or you're having some interpersonal strife, just say the word. Hmm? A conversation... I see, I see. That's a little different from what I'm used to, but I'm all for it.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_01"
+		},
+		{
+			"voicelineId": 50042,
+			"title": "More About Thoma: II",
+			"voicelineType": "5002",
+			"description": "I'm not from Inazuma originally — I think I've told you that before, right? I took a boat all the way here from Mondstadt, found I liked the place, and was also lucky enough to meet the wonderful Kamisato siblings, so I just ended up staying.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50043,
+			"title": "More About Thoma: III",
+			"voicelineType": "5003",
+			"description": "I get homesick once in a while, too, so I completely relate to all the international merchants on Ritou. I try to look out for them as much as I can. The difference between us is that they see themselves as just passing by, and have no intention of trying to integrate here. And because that's how they think, it becomes their reality. The majority of Inazumans will never see them as anything more than outsiders.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50044,
+			"title": "More About Thoma: IV",
+			"voicelineType": "5004",
+			"description": "For some of the more conservatively minded people in Inazuma, the idea of an outlander working as a retainer for one of the Commissions is unthinkable. So there was a time when I was not that welcome here. I'm pretty sure I'd have been deported a long time ago without a couple of Kamisatos fighting my corner. I couldn't let the clan down after they'd been so kind to me, so I put in a lot of honest work, and eventually, everyone was finally able to accept me.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50045,
+			"title": "More About Thoma: V",
+			"voicelineType": "5005",
+			"description": "I'm not sure if I should get into this, but... Ah, hopefully you won't mind. I went through a period where I really just wanted to go home — Mondstadt is my homeland, after all. But I was torn... It wouldn't be easy to leave Inazuma behind, either. I mean, just look how good the people here have been to me. The Kamisato Clan always has a room for me, and there are people I've met here that are like family. So, I went back and forth over it, and ultimately decided I'd stay in Inazuma. When I'm missing Mondstadt... I can just chat with you. You don't mind my rambling, do you?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50046,
+			"title": "Thoma's Hobbies",
+			"voicelineType": "6001",
+			"description": "I've been really getting into stories about the unnatural recently. Especially ones about shapeshifting youkai — they're so fascinating. Before that, I was really into ninjutsu for a while, and before that... Hmm? You think I'm not dedicated enough? N—No! It's not like that, you got me all wrong!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_hobby"
+		},
+		{
+			"voicelineId": 50047,
+			"title": "Thoma's Troubles",
+			"voicelineType": "6002",
+			"description": "I'm in a real pickle here. The chief is hosting a banquet for his friends tonight, and he says he wants me to splurge a little by cooking some Butter Crab. The only problem is that for the last two days, I haven't been able to buy crab anywhere! So, what, am I gonna have to dive into the ocean and grab them myself?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_annoyed"
+		},
+		{
+			"voicelineId": 50048,
+			"title": "Favorite Food",
+			"voicelineType": "6003",
+			"description": "Without a doubt, my favorite food is Rice Cake Soup. I like cooking up a big, delicious potful for everyone to share. It's a recipe for a good time.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodLike"
+		},
+		{
+			"voicelineId": 50049,
+			"title": "Least Favorite Food",
+			"voicelineType": "6004",
+			"description": "As far as food is concerned, I'm fine with anything. If we're counting beverages, though... I'm not very good with alcohol. Don't laugh, and before you say it — yes, I've wondered what this says about my identity as a Mondstadter. But, y'know... too much alcohol is bad for you, anyway. So not drinking is a good thing.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodDislike"
+		},
+		{
+			"voicelineId": 50077,
+			"title": "Receiving a Gift: I",
+			"voicelineType": "6007",
+			"description": "Delicious! Could I get another bowl of rice?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_pref_01"
+		},
+		{
+			"voicelineId": 50078,
+			"title": "Receiving a Gift: II",
+			"voicelineType": "6008",
+			"description": "Um, are you free right now? Would you mind sharing some of your cooking tips with me?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_normal_01"
+		},
+		{
+			"voicelineId": 50079,
+			"title": "Receiving a Gift: III",
+			"voicelineType": "6009",
+			"description": "I don't think I've ever tasted anything like this... Oh, it's not too bad, though.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_dislike_01"
+		},
+		{
+			"voicelineId": 50050,
+			"title": "Birthday",
+			"voicelineType": "7001",
+			"description": "Quick, come with me! I remembered it's your birthday, obviously, so I thought I'd throw you a proper party. There's food, there's drinks, and I invited a whole bunch of your friends, too. Hey, this is your birthday we're talking about! I wasn't about to let you spend it all alone!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 50051,
+			"title": "Feelings About Ascension: Intro",
+			"voicelineType": "8001",
+			"description": "Really? This'll make me stronger? You'd better not be kidding, I have stacks of laundry to do.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50052,
+			"title": "Feelings About Ascension: Building Up",
+			"voicelineType": "8002",
+			"description": "It feels like... a fire inside of me has just begun to burn.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50053,
+			"title": "Feelings About Ascension: Climax",
+			"voicelineType": "8003",
+			"description": "I have all of this power, but how should I use it? I need to give this one some serious thought.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50054,
+			"title": "Feelings About Ascension: Conclusion",
+			"voicelineType": "8004",
+			"description": "Thank you for placing your trust in me. Your kindness warms my heart more than the brightest flame ever could. But not to worry, I've figured out what I want to do now. My strength is your shield, and I will always be here to protect you.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 50055,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "Fire it up!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_01"
+		},
+		{
+			"voicelineId": 50056,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Check this out~",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_02"
+		},
+		{
+			"voicelineId": 50057,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Don't get too close!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_03"
+		},
+		{
+			"voicelineId": 50058,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Here's backup.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_01"
+		},
+		{
+			"voicelineId": 50059,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "Supporting fire!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_02"
+		},
+		{
+			"voicelineId": 50060,
+			"title": "Elemental Burst: III",
+			"voicelineType": "200003",
+			"description": "I got you covered.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_03"
+		},
+		{
+			"voicelineId": 50061,
+			"title": "Opening Treasure Chest: I",
+			"voicelineType": "300001",
+			"description": "Ooh, what's in here?",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_01"
+		},
+		{
+			"voicelineId": 50062,
+			"title": "Opening Treasure Chest: II",
+			"voicelineType": "300002",
+			"description": "Mm! The fortune slip was right...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_02"
+		},
+		{
+			"voicelineId": 50063,
+			"title": "Opening Treasure Chest: III",
+			"voicelineType": "300003",
+			"description": "Hehe, finders keepers.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_03"
+		},
+		{
+			"voicelineId": 50064,
+			"title": "Low HP: I",
+			"voicelineType": "410001",
+			"description": "Hey! What was that for?",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_01"
+		},
+		{
+			"voicelineId": 50065,
+			"title": "Low HP: II",
+			"voicelineType": "410002",
+			"description": "I'm done for...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_02"
+		},
+		{
+			"voicelineId": 50066,
+			"title": "Low HP: III",
+			"voicelineType": "410003",
+			"description": "*grimace* Right where it hurts...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_03"
+		},
+		{
+			"voicelineId": 50067,
+			"title": "Ally at Low HP: I",
+			"voicelineType": "400001",
+			"description": "Don't despair, I'm here to help.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 50068,
+			"title": "Ally at Low HP: II",
+			"voicelineType": "400002",
+			"description": "What a mess... go on, take a rest.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 50069,
+			"title": "Fallen: I",
+			"voicelineType": "500001",
+			"description": "Time to go home...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_01"
+		},
+		{
+			"voicelineId": 50070,
+			"title": "Fallen: II",
+			"voicelineType": "500002",
+			"description": "Take care, everyone...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_02"
+		},
+		{
+			"voicelineId": 50071,
+			"title": "Fallen: III",
+			"voicelineType": "500003",
+			"description": "I couldn't save everybody...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_03"
+		},
+		{
+			"voicelineId": 50072,
+			"title": "Heavy Hit Taken: I",
+			"voicelineType": "910001",
+			"description": "Ow ow ow...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 50073,
+			"title": "Heavy Hit Taken: II",
+			"voicelineType": "910002",
+			"description": "Stop it!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 50074,
+			"title": "Joining Party: I",
+			"voicelineType": "600001",
+			"description": "I guess the housework can wait.",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_01"
+		},
+		{
+			"voicelineId": 50075,
+			"title": "Joining Party: II",
+			"voicelineType": "600002",
+			"description": "Let's get out there and make some friends.",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_02"
+		},
+		{
+			"voicelineId": 50076,
+			"title": "Joining Party: III",
+			"voicelineType": "600003",
+			"description": "Where are we headed this time?",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_03"
+		}
+	]
+}

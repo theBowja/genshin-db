@@ -1,0 +1,759 @@
+{
+	"id": 10000067,
+	"name": "Collei",
+	"friendLines": [
+		{
+			"voicelineId": 67000,
+			"title": "Hola...",
+			"voicelineType": "1000",
+			"description": "Collei, guardabosques en prácticas, ¡a tu servicio! Me aseguraré de que tu estancia en el bosque sea lo más segura posible... Uff, ¡al fin lo dije bien! No me equivoqué en nada, ¿o sí?",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_draw_appear"
+		},
+		{
+			"voicelineId": 67001,
+			"title": "Charla - Hoja de ruta de patrulla",
+			"voicelineType": "1101",
+			"description": "De acuerdo con la hoja de ruta de hoy... primero hay que ir aquí y luego allá... Ay, cuántas palabras...",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_01"
+		},
+		{
+			"voicelineId": 67002,
+			"title": "Charla - Estado",
+			"voicelineType": "1102",
+			"description": "Uf, hoy me siento muy bien. Aprovecharé para hacer más cosas que de costumbre.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_02"
+		},
+		{
+			"voicelineId": 67003,
+			"title": "Charla - Recuerdos",
+			"voicelineType": "1103",
+			"description": "Los recuerdos no tardan en aparecer cuando no estoy ocupada haciendo algo. Ay, solo con pensarlo ya me vienen a la cabeza algunas imágenes...",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_03"
+		},
+		{
+			"voicelineId": 67004,
+			"title": "Tras la lluvia...",
+			"voicelineType": "1201",
+			"description": "Ha dejado de llover, pero deberías tener cuidado con los charcos. Lo mismo ocurre con los recuerdos: permanecen en la memoria incluso después de... *Ejem*, perdón.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 67005,
+			"title": "Cuando truena...",
+			"voicelineType": "1202",
+			"description": "Si oyes un trueno, es mejor mantenerse alejado de los árboles altos. Los guardabosques también tenemos que estar pendientes de cualquier indicio de fuego en el bosque.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_thunder_01"
+		},
+		{
+			"voicelineId": 67006,
+			"title": "Qué sol hace...",
+			"voicelineType": "1203",
+			"description": "Hoy hace muy buen día. ¡Vamos a disfrutar del sol! Después de todo, es bueno para la salud.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_sunny_01"
+		},
+		{
+			"voicelineId": 67007,
+			"title": "Hace mucho viento...",
+			"voicelineType": "1204",
+			"description": "Hoy corre una brisa perfecta, ni muy suave ni muy fuerte. Seguro que Amber aprovecharía un día así para ponerse a prueba a sí misma.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_gale_01"
+		},
+		{
+			"voicelineId": 67008,
+			"title": "Buenos días...",
+			"voicelineType": "1001",
+			"description": "¡Buenos días! *Bosteza*... Lo siento, pasé la noche entera poniéndome al corriente en mis estudios.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 67009,
+			"title": "Buenas tardes...",
+			"voicelineType": "1002",
+			"description": "A veces las patrullas se alargan más de lo normal. Traje un par de döner kebabs de sobra. ¿Te apetece uno?",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 67010,
+			"title": "Buenas noches... (I)",
+			"voicelineType": "1003",
+			"description": "El sol se ha puesto. Tienes que tener mucho cuidado si vas a adentrarte en el bosque de noche.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 67011,
+			"title": "Buenas noches... (II)",
+			"voicelineType": "1004",
+			"description": "¿Tienes sueño? Túmbate junto al fuego, yo haré guardia esta noche.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 67012,
+			"title": "Sobre Collei - Guardabosques",
+			"voicelineType": "2001",
+			"description": "Estuve vagando por la naturaleza durante un tiempo antes de llegar a Sumeru. He comido de todo varias veces, incluso lo que no es comestible. Estoy familiarizada con la naturaleza, así que cuando llegué aquí pensé en trabajar de guardabosques. Si se trata de supervivencia, estoy segura de que superaría cualquier prueba... Siempre y cuando no sea un examen escrito.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_idle"
+		},
+		{
+			"voicelineId": 67013,
+			"title": "Sobre Collei - Estudios",
+			"voicelineType": "2005",
+			"description": "¿Eh? ¿Que qué estudio cada día? B-bueno, sí, mi maestro es un genio, pero no, no me está enseñando nada complejo ahora mismo... Es... «Conocimientos básicos de la escritura de Teyvat»...",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67014,
+			"title": "#Sobre nosotr{F#as}{M#os} - Cuando te conocí",
+			"voicelineType": "2003",
+			"description": "Amber me habló de ti en sus cartas. No me puedo creer todas las cosas que han pasado en Mondstadt desde la última vez que estuve allí. Es una pena que haya tenido que saltarme las palabras que no conocía, seguro que se me ha escapado algún detalle... Aunque, ahora que estás aquí, ¿por qué no me cuentas tú toda la historia?",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Completa «Canción del dragón y la libertad»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						39604
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67015,
+			"title": "#Sobre nosotr{F#as}{M#os} - Nuevas amistades",
+			"voicelineType": "2002",
+			"description": "Nunca pensé que eso de la amistad fuera algo que yo podría tener. Pero todo cambió cuando fui a Mondstadt... Y después vine a Sumeru y conocí al maestro, y ahora a ti. Creo que he tenido mucha suerte.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67016,
+			"title": "Sobre la Visión...",
+			"voicelineType": "3001",
+			"description": "Nunca imaginé que llegaría el día en que tendría mi propia Visión. Solía pensar que los dioses solo tenían ojos para quienes nacían con estrella... Supongo que tengo muchos prejuicios. Lo siento.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67017,
+			"title": "¿Algo que decir? - Nombres de habilidades",
+			"voicelineType": "3002",
+			"description": "El maestro dice que la mejor forma de mejorar es practicando. Por eso me gusta leer novelas ligeras para practicar mi comprensión lectora. Al menos son más fáciles de entender que los artículos que escribe el maestro. Hace poco leí una novela en la que el protagonista tenía un montón de habilidades distintas, y no entendí el nombre de ninguna de ellas. ¿Eh? ¿Que cuál es el título del libro? Creo que era... «El espíritu marcial». ¿Lo has leído?",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_share_01"
+		},
+		{
+			"voicelineId": 67018,
+			"title": "¿Algo que decir? - Poder oculto",
+			"voicelineType": "3005",
+			"description": "Uff, ya estamos otra vez con “el poder oculto en mí se hace cada vez más fuerte” y “sería mejor que te alejaras de mí”... ¿Por qué la gente de Inazuma siempre dice cosas así? ¿No les da vergüenza cuando piensan en ello más tarde? ¡Puaj! No puedo seguir leyendo... ¡es demasiado bochornoso!",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67019,
+			"title": "Una noticia interesante...",
+			"voicelineType": "3003",
+			"description": "Están las plantas y los animales. Algunos se comen y otros no. Aparte de eso, no hay mucha diferencia. Pero no le digas al maestro que he dicho eso. Personalmente, yo prefiero los árboles que tienen un hueco, sobre todo en esos momentos en los que necesitas desesperadamente un refugio. Todo el mundo se siente así alguna vez, ¿no?",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_gift_01"
+		},
+		{
+			"voicelineId": 67020,
+			"title": "Sobre Tignari...",
+			"voicelineType": "4001",
+			"description": "Puede que el maestro dé la impresión de ser un tipo severo y siempre ande criticando a los aventureros por comer cualquier hongo venenoso que se encuentran en el camino, pero es una persona muy amable. Siempre es muy paciente conmigo. Incluso me lee la cartas que recibo desde Mondstadt. ¡Le estoy muy agradecida!",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67021,
+			"title": "Sobre Dori...",
+			"voicelineType": "4002",
+			"description": "Una vez, me crucé con ella mientras patrullaba por el bosque. Sacó una botellita de un jugo que se veía delicioso, como si supiera que yo estaba sedienta. Menos mal que el maestro me detuvo. Si no, me habría gastado en ese dichoso jugo todos los Moras que he ahorrado con tanto esfuerzo.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67022,
+			"title": "Sobre la Reina Menor Kusanali...",
+			"voicelineType": "4003",
+			"description": "¿La Arconte Dendro? De pequeña, quise gritarle a los dioses un montón de veces y preguntarles por qué me hacían pasar por todo aquel sufrimiento... *Suspira*, ¿quién sabe? Tal vez ellos se vieran tan impotentes como yo ante lo que me estaba sucediendo.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67023,
+			"title": "Sobre Cyno...",
+			"voicelineType": "4004",
+			"description": "*Suspira*, preferiría no hablar de él, si no te importa. No es que el Gran Juez sea mala persona ni nada de eso. En realidad, fue él el que me trajo de vuelta desde Mondstadt y me dio un lugar seguro donde vivir. Es solo que, cuando recuerdo todo el proceso de sellado antes de marcharme de Mondstadt, empieza a dolerme el cuello otra vez...",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67024,
+			"title": "Sobre Kaveh...",
+			"voicelineType": "4005",
+			"description": "El Gran Juez lo trajo una vez a comer con nosotros. Cuando nos trajeron la fruta a la mesa, empezó a quejarse de lo testarudo y antipático que es su compañero de piso. Ni siquiera nos dejó participar en la conversación. Tuvimos que concentrarnos en asentir y contener la risa todo el rato. Fue muy complicado.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67025,
+			"title": "Sobre Nilou...",
+			"voicelineType": "4006",
+			"description": "Parece que Nilou es un poco despistada. Me preocupa que se pierda por el bosque si alguna vez decide actuar en la Villa Gandharva. Tendré que vigilarla, es mi responsabilidad como guardabosques en prácticas.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67026,
+			"title": "Sobre Amber...",
+			"voicelineType": "4007",
+			"description": "Amber es realmente increíble. Es amable, superentusiasta, valiente y siempre hace lo correcto. ¡Es la persona a la que más admiro en todo Teyvat! Es como un fuego que siempre mantiene calentita a la gente. Yo no habría llegado tan lejos si no fuera por ella.. Ya ha pasado mucho tiempo, ¡seguro que ahora es incluso más genial y divertida que antes! Me pregunto si alguna vez seré como ella.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67027,
+			"title": "Sobre Kaeya...",
+			"voicelineType": "4008",
+			"description": "¿Cómo van las cosas por Mondstadt? ¿Están todos bien? Les causé muchos problemas cuando estuve allí. Tal vez debería sacar tiempo para volver unos días y disculparme con todos. Pero ¿y si me encuentro con ese Capitán de Caballería y vuelve tomarme el pelo? Bueno, supongo que no tengo prisa. Esperaré un poco más.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67028,
+			"title": "Sobre Lisa...",
+			"voicelineType": "4009",
+			"description": "Ya ha pasado mucho tiempo, pero cuando me escribe, Lisa siempre me llama “pequeña Collei”. ¿Eh? ¿Que a ti te llama “cariño”? Jajaja... Perdona, no quería reírme, pero sin duda me has hecho sentir mejor.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67029,
+			"title": "Sobre Fischl...",
+			"voicelineType": "4010",
+			"description": "¿La Princesa del Juicio? Lo siento, no me suena de nada. No estuve tanto tiempo en Mondstadt, así que no la conozco. Aunque ese nombre es... *Ejem*, no, no es nada.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_fischl_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67068,
+			"title": "Sobre Faruzán...",
+			"voicelineType": "4011",
+			"description": "Humm, para ser sincera, no sé muy bien cómo tratar a la gente como doña Faruzán. Siempre me dice que soy una estudiante muy aplicada y con ganas de aprender, ¡pero eso es porque no tengo otra opción! Soy lenta aprendiendo, así que tengo que esforzarme aún más que el resto. Ah, Una vez eché una ojeada por accidente a su diario de investigación, ¡pero fue solo un segundo! Estaba todo escrito en letras antiguas y no entendí ni jota de lo que ponía. ¡Es sin duda el libro más aterrador de todo Teyvat!",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67030,
+			"title": "Más sobre Collei (I)",
+			"voicelineType": "5001",
+			"description": "¿Quieres saber más sobre mí? ¿Te refieres a lo que pasó antes de que llegara a Sumeru? Pues... Bueno, tal vez deberías escribirle a Amber y preguntarle al respecto. ¡Ah, no! Mejor no. Si Kaeya se entera, sería el fin. ¿Pero qué estoy diciendo? Se enterará de todos modos. E-está bien, te lo contaré yo misma. *Suspira*, lo siento, primero necesito prepararme mentalmente...",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_01"
+		},
+		{
+			"voicelineId": 67031,
+			"title": "Más sobre Collei (II)",
+			"voicelineType": "5002",
+			"description": "Cuando estuve en Mondstadt, le dije a Amber y a los demás muchas cosas que no debí haber dicho. Cada vez que lo pienso, me muero de la vergüenza. ¿Cómo pude hablarle así a la gente que intentaba ayudarme? No quiero ni imaginarme qué pensarían de mí en aquel entonces... Humm, lo siento. ¿Te importa si hablamos de esto otro día? Si sigo hablando, mañana me arrepentiré de lo que diga.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67032,
+			"title": "Más sobre Collei (III)",
+			"voicelineType": "5003",
+			"description": "Una vez, me llevaron ante un tipo llamado “El Doctor” para que tratara mi eleazar. Bueno, “tratamiento” no es la palabra adecuada. Más bien fue un experimento. Después de tanto tiempo allí, no podía dejar de preguntarme a mí misma qué había hecho para merecer algo así. ¿Por qué nadie iba a rescatarme? Al final acabé odiando a los Fatui y a todo el mundo en general. Ahora que lo pienso, era un comportamiento muy infantil.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67033,
+			"title": "Más sobre Collei (IV)",
+			"voicelineType": "5004",
+			"description": "Gracias a todos ustedes, mi eleazar se ha curado por completo. Es el milagro que nunca pensé que ocurriría. Ni siquiera tenía esperanzas de que se encontrara una cura. Me había mentalizado para intentar hacer todo lo que pudiera antes de que perdiera el control de mi cuerpo por completo. Primero me concentré en la venganza, luego en mis patrullas de guardabosques y ahora... Ahora soy libre para hacer lo que quiera con mi vida.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67034,
+			"title": "Más sobre Collei (V)",
+			"voicelineType": "5005",
+			"description": "¿Vas a seguir con tu viaje? Entonces yo también haré todo lo que pueda. Estudiaré mucho, ya sea leer, aprender sobre medicina y combate, evaluar el peligro... Hasta las cosas más pequeñas, ¡como comprobar las farolas! Espero que todo el mundo encuentre en su camino una persona que le tienda la mano... como tú hiciste conmigo.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67035,
+			"title": "Aficiones de Collei...",
+			"voicelineType": "6001",
+			"description": "¿Mis aficiones? Me gusta coser, planear ¡y ayudar a la gente! ¿Eh? ¿Te resultan familiares? Eso es porque... yo también quiero ser una persona cálida.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_hobby"
+		},
+		{
+			"voicelineId": 67036,
+			"title": "Preocupaciones de Collei...",
+			"voicelineType": "6002",
+			"description": "“Como respuesta a la homa... homogenización de los cultivos atu... actuales para evitar el consomé... consumo de productos fun... fúngicos”... ¿Pero qué es todo esto? No está diciendo más que “No quiero comer champiñones”, pero como es de la Academia, tienen que hacer que suene complicadísimo.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_annoyed"
+		},
+		{
+			"voicelineId": 67037,
+			"title": "Comida que más le gusta...",
+			"voicelineType": "6005",
+			"description": "Los döner kebabs son fáciles de llevar y muy saciantes. Supongo que es lo que más como. Aunque si no tengo en cuenta el grado de saciedad... mi comida preferida serían... las albóndigas de rábano fritas.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 67038,
+			"title": "Comida que menos le gusta...",
+			"voicelineType": "6004",
+			"description": "Cuando vagaba por la naturaleza, llegué a comerme hasta los ganchos de lobo para no morirme de hambre, así que no hay nada que no me guste. Si tuviera que decir algo sí o sí, probablemente serían los champiñones de cualquier tipo. No es por el sabor, es solo que no quiero que el maestro me eche uno de sus sermones...",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_foodDislike"
+		},
+		{
+			"voicelineId": 67039,
+			"title": "Al recibir un regalo (I)",
+			"voicelineType": "6007",
+			"description": "¡Guau, qué rico está! ¿Me enseñarás a prepararlo?",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_pref_01"
+		},
+		{
+			"voicelineId": 67040,
+			"title": "Al recibir un regalo (II)",
+			"voicelineType": "6008",
+			"description": "Con tus habilidades, seguro que no pasas hambre cuando estás de aventuras.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_normal_01"
+		},
+		{
+			"voicelineId": 67041,
+			"title": "Al recibir un regalo (III)",
+			"voicelineType": "6009",
+			"description": "Lo siento, el maestro me ha dicho que no coma nada sospechoso.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_dislike_01"
+		},
+		{
+			"voicelineId": 67042,
+			"title": "Cumpleaños...",
+			"voicelineType": "7001",
+			"description": "¡F-feliz cumpleaños! Aquí tienes la tarta que he preparado y las velas... Amber dijo en su carta que con eso bastaría. ¡Ah, sí! T-también te he preparado un regalo.\nLo siento... No tengo mucha experiencia en esto de preparar fiestas de cumpleaños, ni tampoco sé si te gustan. Ay, me estoy poniendo nerviosa... Si hay algo que no te guste, dímelo ¡y el año que viene te preparé una fiesta aún mejor!",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 67043,
+			"title": "El sentimiento de Ascensión - Introducción",
+			"voicelineType": "8001",
+			"description": "¿Esto quiere decir que estoy mejorando?",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67044,
+			"title": "El sentimiento de Ascensión - Desarrollo",
+			"voicelineType": "8002",
+			"description": "Tengo la sensación de que... ya no soy la misma de antes.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67045,
+			"title": "El sentimiento de Ascensión - Nudo",
+			"voicelineType": "8003",
+			"description": "Aunque me encuentre en una situación de vida o muerte, no tendré que volver a depender de su poder...",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67046,
+			"title": "El sentimiento de Ascensión - Desenlace",
+			"voicelineType": "8004",
+			"description": "Seguramente no importaría que liberase ahora ese poder. He llegado tan lejos que creo que sería capaz de controlarlo, ¿no crees? Bueno, solo hay una forma de saberlo. ¡Uaaaa!\nEra broma, jiji. Mi verdadero superpoder es todo lo que he aprendido durante mis aventuras contigo.",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 67047,
+			"title": "Habilidad Elemental (I)",
+			"voicelineType": "100002",
+			"description": "¡Vamos!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_02"
+		},
+		{
+			"voicelineId": 67048,
+			"title": "Habilidad Elemental (II)",
+			"voicelineType": "100003",
+			"description": "¡A volar!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_03"
+		},
+		{
+			"voicelineId": 67069,
+			"title": "Habilidad Elemental (III)",
+			"voicelineType": "100001",
+			"description": "¡Toma!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_01"
+		},
+		{
+			"voicelineId": 67049,
+			"title": "Habilidad Definitiva (I)",
+			"voicelineType": "200001",
+			"description": "¡Ayúdame, Colleámbar!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_01"
+		},
+		{
+			"voicelineId": 67050,
+			"title": "Habilidad Definitiva (II)",
+			"voicelineType": "200002",
+			"description": "¡T-toma esa!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_02"
+		},
+		{
+			"voicelineId": 67051,
+			"title": "Habilidad Definitiva (III)",
+			"voicelineType": "200003",
+			"description": "¡Baila tal como ensayamos!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_03"
+		},
+		{
+			"voicelineId": 67052,
+			"title": "Al abrir un cofre (I)",
+			"voicelineType": "300001",
+			"description": "Es importante reabastecerse con frecuencia cuando estás en la naturaleza.",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_01"
+		},
+		{
+			"voicelineId": 67053,
+			"title": "Al abrir un cofre (II)",
+			"voicelineType": "300002",
+			"description": "Guau, ¡qué suerte la mía!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_02"
+		},
+		{
+			"voicelineId": 67054,
+			"title": "Al abrir un cofre (III)",
+			"voicelineType": "300003",
+			"description": "*Suspira*, menos mal que no había champiñones venenosos dentro.",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_03"
+		},
+		{
+			"voicelineId": 67055,
+			"title": "Vida baja (I)",
+			"voicelineType": "410001",
+			"description": "¡P-puedo seguir!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_01"
+		},
+		{
+			"voicelineId": 67056,
+			"title": "Vida baja (II)",
+			"voicelineType": "410002",
+			"description": "¡He pasado por cosas peores!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_02"
+		},
+		{
+			"voicelineId": 67057,
+			"title": "Vida baja (III)",
+			"voicelineType": "410003",
+			"description": "Me han herido gravemente...",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_03"
+		},
+		{
+			"voicelineId": 67058,
+			"title": "Aliado con vida baja (I)",
+			"voicelineType": "400001",
+			"description": "¡No te fuerces!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 67059,
+			"title": "Aliado con vida baja (II)",
+			"voicelineType": "400002",
+			"description": "Te vas a hacer daño.",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 67060,
+			"title": "Derrotada (I)",
+			"voicelineType": "500001",
+			"description": "Guardabosques... para siempre...",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_01"
+		},
+		{
+			"voicelineId": 67061,
+			"title": "Derrotada (II)",
+			"voicelineType": "500002",
+			"description": "No... Así no...",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_02"
+		},
+		{
+			"voicelineId": 67062,
+			"title": "Derrotada (III)",
+			"voicelineType": "500003",
+			"description": "Sabía que este día... llegaría...",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_03"
+		},
+		{
+			"voicelineId": 67063,
+			"title": "Recibiendo un fuerte ataque (I)",
+			"voicelineType": "910001",
+			"description": "¿Pero cómo...?",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 67064,
+			"title": "Recibiendo un fuerte ataque (II)",
+			"voicelineType": "910002",
+			"description": "¡No me toques!",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 67065,
+			"title": "Unirse al equipo (I)",
+			"voicelineType": "600001",
+			"description": "Yo te protegeré.",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_01"
+		},
+		{
+			"voicelineId": 67066,
+			"title": "Unirse al equipo (II)",
+			"voicelineType": "600002",
+			"description": "Todo listo, ¡en marcha!",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_02"
+		},
+		{
+			"voicelineId": 67067,
+			"title": "Unirse al equipo (III)",
+			"voicelineType": "600003",
+			"description": "¡Guardabosques en prácticas Collei, presente!",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_03"
+		}
+	]
+}

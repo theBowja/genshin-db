@@ -4,7 +4,6 @@ declare module "genshin-db" {
 		name: string;
 
 		friendLines: Voiceline[];
-
 		actionLines: Voiceline[];
 
 		version: {
@@ -21,5 +20,12 @@ declare module "genshin-db" {
 
 		hasGenderedVoicefile?: boolean;
 		voicefile_male?: string;
+
+		hasUnlockConditions?: boolean;
+		unlockConditions: {
+			unlockText: string;
+			conditionType: string; // enum
+			paramList: number[];
+		}[];
 	}
 }

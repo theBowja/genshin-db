@@ -1,0 +1,787 @@
+{
+	"id": 10000050,
+	"name": "Thoma",
+	"friendLines": [
+		{
+			"voicelineId": 50008,
+			"title": "พบกันครั้งแรก...",
+			"voicelineType": "1000",
+			"description": "ครั้งแรกที่ได้เจอหน้า นักเดินทางจากต่างแดน ชื่อของเธอฉันเคยได้ยินมานานแล้ว ถ้าเธอไม่รังเกียจล่ะก็ ฉันชื่อ Thoma นับตั้งแต่วันนี้ไปเราเป็นเพื่อนกันแล้วนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_draw_appear"
+		},
+		{
+			"voicelineId": 50009,
+			"title": "แชท - เลี้ยงข้าว",
+			"voicelineType": "1101",
+			"description": "อืม... หาเวลาไปหาอาหารอะไรดี ๆ กินด้วยกันสักมื้อไหม ฉันเลี้ยงเอง",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_01"
+		},
+		{
+			"voicelineId": 50010,
+			"title": "แชท - กังวล",
+			"voicelineType": "1102",
+			"description": "ฉันมักจะรู้สึกว่ามีบางอย่างที่ฉันลืมทำ... ลานบ้านก็กวาดแล้ว ชาก็ชงแล้ว อืม... น่าจะคิดไปเองล่ะมั้ง",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_02"
+		},
+		{
+			"voicelineId": 50011,
+			"title": "แชท - Mora",
+			"voicelineType": "1103",
+			"description": "ช่วงนี้ใช้เงินไปเยอะมาก ทั้งตัวเหลือแค่ 10 Mora เท่านั้นเอง แต่ว่ายังดีนะที่ยังเหลือตั้ง 10 Mora!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_03"
+		},
+		{
+			"voicelineId": 50012,
+			"title": "ในเวลาที่ฝนตก...",
+			"voicelineType": "1201",
+			"description": "ทำไมอยู่ดี ๆ ฝนถึงตกได้กันนะ? เธอโอเคไหม? เธออยากใช้เสื้อคลุมของฉันบังฝนไหม?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 50013,
+			"title": "ในเวลาที่ฟ้าผ่า...",
+			"voicelineType": "1202",
+			"description": "อากาศแบบนี้อย่าไปอย่าไปเถลไถลในป่าเชียวล่ะ เดี๋ยวจะถูกฟ้าผ่าเอา",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_thunder_01"
+		},
+		{
+			"voicelineId": 50014,
+			"title": "ในเวลาที่หิมะตก...",
+			"voicelineType": "1203",
+			"description": "อย่าวิ่งบนหิมะสิ ถ้าเธอล้มขึ้นมาฉันช่วยไม่ได้นะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_snowy_01"
+		},
+		{
+			"voicelineId": 50015,
+			"title": "แดดส่องดีจัง...",
+			"voicelineType": "1204",
+			"description": "อากาศดีนะเนี่ย ไปเดินเล่นด้วยกันเถอะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_sunny_01"
+		},
+		{
+			"voicelineId": 50016,
+			"title": "อรุณสวัสดิ์...",
+			"voicelineType": "1001",
+			"description": "อรุณสวัสดิ์ ถ้าเธอว่างล่ะก็ ไปซื้อของที่ตลาดกับฉันไหม? ผักในตอนเช้าน่ะ สดที่สุดเลยนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 50017,
+			"title": "สวัสดีตอนเที่ยง...",
+			"voicelineType": "1002",
+			"description": "มื้อกลางวัน นอกจากมี Sakura Tempura แล้วยังมี Tricolor Dango ด้วยนะ! มาเถอะ มีส่วนของเธอกับ Paimon ด้วยนะ แล้วก็มีของคุณหนู Kamisato กับท่านผู้นำตระกูล... อ๊ะ เดี๋ยวนะ ดูเหมือนว่าฉันจะลืมเตรียมส่วนของตัวเองไป",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 50018,
+			"title": "สวัสดีตอนเย็น...",
+			"voicelineType": "1003",
+			"description": "เร็วเข้า ๆ ถ้าตอนนี้เราไปตลาดจะซื้อปลาได้ถูกขึ้นเยอะเลยล่ะ แล้วถ้าเธอบังเอิญเจออะไรที่อยากจะซื้อล่ะก็ บอกฉันนะ ฉันจะช่วยต่อราคาให้เธอเอง",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 50019,
+			"title": "ราตรีสวัสดิ์...",
+			"voicelineType": "1004",
+			"description": "อื้ม ฝันดีนะ วันนี้เธอคงเหนื่อยมามาก รีบพักผ่อนซะนะ ไปเถอะ อย่านอนดึกล่ะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 50020,
+			"title": "เกี่ยวกับตัว Thoma - พ่อบ้าน",
+			"voicelineType": "2001",
+			"description": "ตั้งแต่ตอนแรกเลยนะ ไม่ว่าจะเป็นคุณหนู Kamisato หรือว่านายท่าน ต่างไม่มีใครคิดจะให้ฉันรับหน้าที่เป็นพ่อบ้าน ฉันเป็นคนอาสาเอง ฉันชอบงานพวกนี้นะ ฉันชอบเก็บทุกอย่างให้เป็นระเบียบเรียบร้อย ทั้งความรู้สึกหลังทำเสร็จ แล้วก็ตอนเห็นปฏิกิริยาของทุกคน... ฉันว่าฉันทำได้ไม่เลวเลยล่ะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle"
+		},
+		{
+			"voicelineId": 50021,
+			"title": "เกี่ยวกับตัว Thoma - ความหมาย",
+			"voicelineType": "2005",
+			"description": "ทำความสะอาดสถานที่ที่อาศัยอยู่ จัดวางของให้เป็นระเบียบเรียบร้อย ทำให้ทุกคนที่อาศัยอยู่ที่นี่มีรอยยิ้ม นี่เป็นความหมายของการดูแลทำความสะอาด จนถึงตอนนี้... ฉันเองก็จะทำเพื่อเธอด้วยเหมือนกัน ฉันจะพยายามนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50022,
+			"title": "เกี่ยวกับเรา - กินข้าว",
+			"voicelineType": "2003",
+			"description": "ทำไมถึงมานั่งกินข้าวที่นี่เงียบ ๆ คนเดียวล่ะ? ...อืม เธอจะถือไหมถ้าจะนั่งกินข้าวด้วยกันกับฉัน? หรือว่าเธออยากจะกินข้าวคนเดียวล่ะ?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close"
+		},
+		{
+			"voicelineId": 50023,
+			"title": "เกี่ยวกับพวกเรา - สาบาน",
+			"voicelineType": "2002",
+			"description": "ถ้าเธอไม่ยืนขึ้นเพื่อต่อสู้กับโชกุนใน \"พิธีล่าวิชั่น\" ในตอนนั้น ป่านนี้ฉันคงสูญเสียวิชั่น สูญเสียความปรารถนาไปแล้ว ฉันคิดอยู่นาน เกรงว่ามีแต่ทางนี้เท่านั้นที่คู่ควรพอที่จะตอบแทนเธอ\nฉัน Thoma ยินดีที่จะมอบทั้งพละกำลัง และความจงรักภักดีของฉันให้เธอ และจะต่อสู้เพื่อเธอ ไม่ว่าจะเกิดอะไรขึ้นก็ตาม",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ไร้พะวงปลงคะนึง\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50024,
+			"title": "เกี่ยวกับ \"วิชั่น\"...",
+			"voicelineType": "3001",
+			"description": "ตอนนี้ได้วิชั่นมาแล้ว ก็ต้องทะนุถนอมมันให้ดี ฉันไม่อยากสูญเสียมันไปอีกหรอกนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50025,
+			"title": "ต้องการจะแชร์อะไร...",
+			"voicelineType": "3002",
+			"description": "จากประสบการณ์ของฉัน ในการติดต่อกับผู้คนมามากหน้าหลายตา คน Inazuma ค่อนข้างถือเรื่องมารยาทมากกว่าคน Mondstadt ถ้าสามารถรักษาภาพลักษณ์ที่สุภาพไว้ได้ การทำอะไรหลาย ๆ อย่างก็จะง่ายขึ้นมาก",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_share_01"
+		},
+		{
+			"voicelineId": 50026,
+			"title": "ข้อมูลที่น่าสนใจ - ทานูกิ",
+			"voicelineType": "3003",
+			"description": "ฉันน่ะ อยากเห็นทานูกิแปลงร่างมาโดยตลอดเลยล่ะ ตามที่ได้ยินคนเขาเล่ามาบอกว่า ทานูกิสามารถแปลงร่างเป็นสิ่งต่าง ๆ ได้มากมาย และชอบกลั่นแกล้งคนที่เดินทางสัญจรไปมาอีกด้วย เป็นสิ่งมีชีวิตที่มีอารมณ์ขันใช่เล่นเลยนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_01"
+		},
+		{
+			"voicelineId": 50027,
+			"title": "ข้อมูลที่น่าสนใจ - สัตว์",
+			"voicelineType": "3004",
+			"description": "เธอชอบพวกสัตว์ตัวน้อย ๆ ไหม? ถ้าเธอชอบเหมือนกันล่ะก็ ครั้งหน้าฉันจะพาเธอไปเดินเล่นแถว ๆ ชานเมือง พอถึงตอนนั้นขอแค่ฉันเป่าปาก เจ้าสุนัขและแมวน้อยสุดน่ารักจะเดินออกมา คอยออดอ้อนถูไถอยู่ข้างเท้าของเธอ ฮ่า ๆ แค่นึกภาพก็มีความสุขสุด ๆ เลยล่ะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_02"
+		},
+		{
+			"voicelineId": 50028,
+			"title": "เกี่ยวกับ Yae Miko...",
+			"voicelineType": "4001",
+			"description": "ท่าน Yae Miko? ทะ...ทำไมอยู่ดี ๆ ถึงถามถึงท่านได้ล่ะ? เฮ้อ ทุกครั้งที่คุณหนูส่งฉันออกไปส่งข่าว สถานที่ที่ฉันไม่อยากไปมากที่สุดก็ศาลเจ้า Grand Narukami นี่ล่ะ อ๊ะ ไม่ใช่เพราะออร่าของท่าน Yae Miko ทำให้คนรู้สึกอึดอัดหรืออะไรหรอกนะ ก็แค่ เอ่อ...เกรงใจ...เกรงใจ! ฮะ ฮะ ฮะ...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50029,
+			"title": "เกี่ยวกับโชกุน Raiden - เปรียบเทียบ",
+			"voicelineType": "4002",
+			"description": "ในบ้านเกิดของฉัน Mondstadt ผู้คนส่วนใหญ่ที่นั่นจะนับถือเทพแห่งลม ท่าน Barbatos แต่ทัศนคติของชาว Inazuma ที่มีต่อท่านโชกุนนั้นแตกต่างออกไป จะว่ายังไงดี... นอกจากความรัก และความเคารพแล้ว มันยังแฝงไปด้วยความหวาดกลัวอยู่ด้วย",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50030,
+			"title": "เกี่ยวกับโชกุน Raiden - ไม่รู้จัก",
+			"voicelineType": "4003",
+			"description": "ด้วยความสัตย์จริง ฉันไม่มีความขุ่นเคืองต่อตัวโชกุนเอง ถึงแม้ว่าท่านเกือบจะเอาวิชั่นของฉันไปได้ แต่นั่นเป็นเพราะมีจุดยืน และมุมมองที่แตกต่างไปรึเปล่า เป็นเรื่องปกติที่คนเราจะมีมุมมองที่แตกต่างกัน\nแต่สิ่งที่ฉันคิดแล้วไม่เข้าใจก็คือจุดประสงค์ของโชกุน อาณาจักรนิรันดร์ที่โชกุนคิดไว้คืออะไรแน่นะ? ทำไมต้องเสียสละความปรารถนาของประชาชนเพื่อแลกกับมันด้วย ฉันไม่เข้าใจ และไม่เห็นด้วย",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ไร้พะวงปลงคะนึง\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50031,
+			"title": "เกี่ยวกับ Beidou...",
+			"voicelineType": "4004",
+			"description": "นายหญิงของกองเรือ \"Crux\" ช่างเป็นคนที่กระฉับกระเฉงซะจริง ๆ เลยนะ ครั้งหนึ่งเธอเคยสัญญาว่าจะพาฉันไปที่ทะเลอันไกลโพ้นเพื่อดูว่าพายุฝนฟ้าคะนองเป็นอย่างไร แต่น่าเสียดายที่ฉันยังไม่มีโอกาสได้ออกไปดู...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ไร้พะวงปลงคะนึง\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50032,
+			"title": "เกี่ยวกับ Kamisato Ayato...",
+			"voicelineType": "4005",
+			"description": "ท่านผู้นำตระกูลเองก็ไม่ได้ง่ายดายนัก สถานการณ์ตอนนี้ปั่นป่วน ผู้คนไม่สบายใจ ท่ามกลางเพื่อนร่วมงานเองก็มีไม่น้อยที่ทุจริต แค่คิดฉันก็ปวดหัวแล้ว ทำได้แค่ช่วยดูแลด้านการใช้ชีวิตแล้วล่ะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayato_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50033,
+			"title": "เกี่ยวกับ Kamisato Ayaka...",
+			"voicelineType": "4006",
+			"description": "คุณหนู Kamisato เป็นผู้มีความรู้ มีเหตุผล ใจดี อ่อนโยน และสง่างาม แค่ไม่ตรงไปตรงมาพอ อ๊ะ จริงสิ ครั้งหน้าเวลาพูดคุยกันแล้วคุณหนูแสดงท่าทีลังเลอ้ำอึ้งล่ะก็ เธอจะต้องชักจูง และถามความคิดเห็นของคุณหนูเพิ่มเติมนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayaka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"ไร้พะวงปลงคะนึง\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50034,
+			"title": "เกี่ยวกับ Yoimiya...",
+			"voicelineType": "4007",
+			"description": "เจ้าของ \"ร้านดอกไม้ไฟ Naganohara\"? เธอเป็นคนที่เข้ากับคนอื่นได้ง่าย เรียกได้ว่าเป็นคนประเภทปากตรงกับใจ อ้อ อีกอย่าง ดอกไม้ไฟร้านของเธอน่ะ สุดยอดมากเลยรู้ไหม ถ้ามีโอกาสต้องดูไว้เยอะ ๆ เลยนะ นี่ รับไปสิคูปองสำหรับเธอ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yoimiya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50035,
+			"title": "เกี่ยวกับ Sayu...",
+			"voicelineType": "4008",
+			"description": "เฮ้ Sayu ดื้อเกินไปแล้ว ไม่ว่าฉันจะเข้าหาเธอซักกี่ครั้ง เธอก็ปฏิเสธที่จะสอนวิชานินจาให้ฉันทุกครั้งเลย จนถึงตอนนี้เธอก็ยังคงหลบเลี่ยงฉันอยู่ ...ฉันก็แค่อยากจะฝากตัวเป็นศิษย์เท่านั้นเอง หรือว่าฉันทำเกินไปหน่อยงั้นเหรอ?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_sayu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50036,
+			"title": "เกี่ยวกับ Kujou Sara...",
+			"voicelineType": "4009",
+			"description": "นายพลของสำนัก Tenryou คนนี้ อืม... ต้องระมัดระวังอย่างมากในการเจรจากับเธอ เธอมีพลังอำนาจมากมายอยู่ในมือ และค่อนข้างดื้อรั้น และใบหน้าเปื้อนรอยยิ้มก็ใช้กับเธอไม่ได้ผล",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_kujoSara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50037,
+			"title": "เกี่ยวกับ Arataki Itto...",
+			"voicelineType": "4010",
+			"description": "คนประหลาดที่ลือกันในตลาดสินะ ว่ากันว่าเขามีเลือดของโยไกอยู่ในตัว เธอเคยเจอเขาไหม? ถ้าเธอคุ้นเคยล่ะก็ แนะนำให้ฉันรู้จักหน่อยสิ การมีเพื่อนใหม่ ๆ เป็นเรื่องที่ดีเสมอแหละนะ... เพื่อนที่เป็นโยไกก็นับนะ!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_itto_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50038,
+			"title": "เกี่ยวกับ Shikanoin Heizou...",
+			"voicelineType": "4011",
+			"description": "โฮ่ เขาเป็น \"นักสืบ\" ของสำนัก Tenryou เขาให้ความรู้สึกแบบว่า ฉันจะทำอย่างนี้แล้วจะทำไม เป็นคนประเภทที่จัดการได้ยากใช่เล่นเลยล่ะ นอกจากนี้ เมื่อไหร่ที่นักสืบปรากฏตัวขึ้นแล้วล่ะก็ โดยปกติก็คงไม่มีเรื่องดีอะไรหรอกนะ ฉันว่าฉันควรจะอยู่ให้ห่างจากใจกลางพายุดีกว่า",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_heizou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50039,
+			"title": "เกี่ยวกับ Jean...",
+			"voicelineType": "4012",
+			"description": "คุณหนู Jean จากตระกูล Gunnhildr เป็นหัวหน้ากองอัศวินแห่ง Favonius งั้นเหรอ? เหมาะสมมาก ๆ เธอมีชื่อเสียงในด้านความซื่อสัตย์น่ะ ...หืม ตอนนี้ยังเป็นแค่รักษาการผู้บัญชาการงั้นเหรอ? ฮ่า ๆ ชื่อตำแหน่งอะไรนั่นมันไม่สำคัญเลยล่ะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50040,
+			"title": "เกี่ยวกับ Eula...",
+			"voicelineType": "4013",
+			"description": "เธอยังได้เจอกับ Eula Lawrence ด้วยงั้นเหรอ? ฉันรู้แค่ว่า คนตระกูลนี้อารมณ์ค่อนข้างร้าย ทางที่ดีที่สุดคืออย่าไปยุ่งกับพวกเขา อา พอได้คุยเรื่องพวกนี้กับเธอแล้ว ก็นึกถึงเรื่องในอดีตตอนอยู่ Mondstadt ได้มากมายเลยล่ะ... ดีจังเลย",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50041,
+			"title": "อยากรู้เกี่ยวกับ Thoma - 1",
+			"voicelineType": "5001",
+			"description": "มีอะไรอยากให้ฉันช่วยมั้ย? ไม่ว่าจะเรื่องงานบ้าน หรือการติดต่อสื่อสารกับคนอื่น ขอแค่บอกมาคำเดียว เอ๋? คุยเล่นงั้นเหรอ... อย่างนี้นี่เอง ๆ คงต้องดูแลใส่ใจเป็นพิเศษซะแล้วสิ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_01"
+		},
+		{
+			"voicelineId": 50042,
+			"title": "อยากรู้เกี่ยวกับ Thoma - 2",
+			"voicelineType": "5002",
+			"description": "ฉันน่าเคยบอกเธอแล้วสินะ? ฉันไม่ใช่คน Inazuma โดยกำเนิด ฉันนั่งเรือมาจาก Mondstadt น่ะ เพราะชอบบรรยากาศของที่นี่ แล้วได้เจอกับคนดีอย่างท่านผู้นำตระกูลกับคุณหนู Kamisato พอดี ก็เลยถือโอกาสอยู่ที่นี่ซะเลย",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50043,
+			"title": "อยากรู้เกี่ยวกับ Thoma - 3",
+			"voicelineType": "5003",
+			"description": "ความจริงแล้ว ฉันเองก็มีช่วงเวลาที่คิดถึงบ้านเกิดเหมือนกันนะ เพราะงั้นฉันก็เลยเข้าใจพวกพ่อค้าแม่ค้าที่มาจากต่างแดนพวกนั้น และอยากจะช่วยเหลือพวกเขา แต่สิ่งที่แตกต่างกันก็คือ พวกเขาถือว่าตัวเองเป็นเพียงผู้ที่สัญจรผ่านมาเท่านั้น ไม่ได้ต้องการเข้าถึง Inazuma เพราะยังไงก็เป็นแค่ผู้ที่สัญจรผ่านมา ผู้คนส่วนใหญ่ใน Inazuma ก็เลยไม่ได้นับว่าพวกเขาเป็นพวกเดียวกัน",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50044,
+			"title": "อยากรู้เกี่ยวกับ Thoma - 4",
+			"voicelineType": "5004",
+			"description": "สำหรับพวกหัวอนุรักษนิยมบางคนใน Inazuma มันแทบจะเป็นไปไม่ได้เลยที่จะรับคนต่างแดนมาเป็นพ่อบ้านของสำนัก ฉันเองก็เคยมีประสบการณ์ไม่เป็นที่ยอมรับเหมือนกัน ถ้าไม่ได้รับความช่วยเหลือจากทั้งคู่ เกรงว่าฉันคนถูกขับไล่ออกไปตั้งนานแล้ว เพื่อเป็นการตอบแทนบุญคุณของตระกูล Kamisato ฉันก็เลยพยายามอย่างหนัก จนในที่สุดก็ได้รับการยอมรับจากทุกคน",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50045,
+			"title": "อยากรู้เกี่ยวกับ Thoma - 5",
+			"voicelineType": "5005",
+			"description": "เรื่องนี้บอกเธอ...ก็คงไม่เป็นไรมั้ง มีอยู่ช่วงหนึ่ง ฉันอยากกลับไปที่บ้านเกิดมาก เพราะยังไง Mondstadt ก็เป็นบ้านเกิดของฉัน แต่ Inazuma... ฉันเองก็ตัดใจที่จะจากไปยากเช่นกัน เธอดูสิ ฉันได้รับน้ำใจจากผู้คนใน Inazuma ตั้งมากมาย แล้วตระกูล Kamisato ก็เตรียมห้องไว้ให้ฉันเป็นอย่างดี แล้วยังมีคนที่สนิทซะยิ่งกว่าญาติสนิทอยู่อีกด้วย ถึงแม้จะเคยตกระกำลำบาก แต่ผู้คนที่คอยช่วยเหลือก็ยังมีมากกว่าอยู่ดี คิดไปคิดมา ฉันก็รู้สึกว่าตัวเองควรจะอยู่ที่ Inazuma ต่อไป ถ้าตอนไหนที่คิดถึง Mondstadt มาก ๆ เข้า... ก็มาคุยกับเธอก็แล้วกัน เธอคงไม่หาว่าฉันชอบเซ้าซี้หรอกใช่มั้ย?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50046,
+			"title": "งานอดิเรกของ Thoma...",
+			"voicelineType": "6001",
+			"description": "ถ้าเป็นช่วงนี้ล่ะก็ ฉันค่อนข้างชอบพวกเรื่องเหนือธรรมชาตินะ พวกภูตผีปีศาจที่สามารถแปลงกายได้นับพันนับหมื่นรูปแบบพวกนั้นมันน่าทึ่งมากเลยล่ะ ถ้าเป็นก่อนหน้านี้อีกก็เคยสนใจวิชานินจาอยู่ไม่น้อยเลย หืม? พวกสมาธิสั้นงั้นเหรอ? ...เปล่า ไม่ใช่อย่างนั้นนะ!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_hobby"
+		},
+		{
+			"voicelineId": 50047,
+			"title": "เรื่องกลุ้มใจของ Thoma...",
+			"voicelineType": "6002",
+			"description": "ตอนนี้ฉันกังวลมากจริง ๆ ตอนเย็นนายท่านจะจัดงานเลี้ยงสังสรรค์เพื่อนฝูงที่บ้าน พอพูดเสร็จก็ให้ฉันโชว์วิธีการทำ Butter Crab แต่กลับกลายเป็นว่าสองวันมานี้ซื้อปูไม่ได้เลยน่ะสิ! หรือว่าฉันต้องลงน้ำไปจับปูด้วยตัวเองจริง ๆ?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_annoyed"
+		},
+		{
+			"voicelineId": 50048,
+			"title": "อาหารที่ชอบ...",
+			"voicelineType": "6003",
+			"description": "ถ้าพูดถึงอาหารจานโปรดของฉันแล้วล่ะก็ ก็ต้องเป็น Rice Cake Soup อยู่แล้ว หม้อใบใหญ่ที่ต้มจนเดือดปุด ๆ จนส่งกลิ่นหอมฟุ้งไปทั่ว หลังจากนั้นทุกคนก็แบ่งปันอาหารกันอย่างชีวิตชีวา และมีความสุข",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodLike"
+		},
+		{
+			"voicelineId": 50049,
+			"title": "อาหารที่เกลียด...",
+			"voicelineType": "6004",
+			"description": "ถ้าในส่วนของอาหารก็ไม่มีอะไรมาก แต่ถ้านับเรื่องเครื่องดื่มด้วยล่ะก็... ฉันดื่มไม่ค่อยเก่งเท่าไหร่ อย่าหัวเราะสิ ฉันก็คิดนะว่าฉันใช่คน Mondstadt แน่เหรอ แต่ว่า... ถ้าดื่มมากเกินไปก็จะส่งผลเสียต่อร่างกายนะ ดังนั้น การไม่ดื่มจึงถือเป็นเรื่องดีนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodDislike"
+		},
+		{
+			"voicelineId": 50077,
+			"title": "ได้รับของขวัญ - 1",
+			"voicelineType": "6007",
+			"description": "อร่อย! ฉันอยากจะเบิ้ลข้าวอีกชามเลย!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_pref_01"
+		},
+		{
+			"voicelineId": 50078,
+			"title": "ได้รับของขวัญ - 2",
+			"voicelineType": "6008",
+			"description": "เธอยังพอมีเวลามั้ย? ช่วยแบ่งปันเคล็ดลับการทำอาหารให้ฉันหน่อยสิ!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_normal_01"
+		},
+		{
+			"voicelineId": 50079,
+			"title": "ได้รับของขวัญ - 3",
+			"voicelineType": "6009",
+			"description": "ฉันไม่เคยได้ลิ้มรสแบบนี้มาก่อน... ก็ไม่แย่แหละมั้งนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_dislike_01"
+		},
+		{
+			"voicelineId": 50050,
+			"title": "วันเกิด...",
+			"voicelineType": "7001",
+			"description": "มากับฉันเร็ว ๆ เข้าสิ ตอนนี้เลย! วันเกิดของเธอฉันไม่มีทางลืมอยู่แล้ว นี่ ไม่สิ งานปาร์ตี้สุดพิเศษพร้อมแล้ว มีทั้งของกินกับเครื่องดื่มมากมาย ไหนจะเพื่อน ๆ กลุ่มใหญ่ที่คอยช่วยเหลือเธออีก เฮ้ วันนี้เป็นวันดี เป็นวันเกิดของเธอ เพราะงั้นฉันจะไม่ยอมปล่อยให้เธออยู่คนเดียวเด็ดขาด!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 50051,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทนำ",
+			"voicelineType": "8001",
+			"description": "แบบนี้จะแข็งแกร่งจริงเหรอ? ไม่ได้ล้อเล่นใช่ไหม ฉันยังมีเสื้อผ้าที่ต้องซักอีกนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50052,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - ชี้แจง",
+			"voicelineType": "8002",
+			"description": "ดูเหมือน... จะมีเปลวไฟลุกโชนอยู่ในใจฉัน",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50053,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - มุมมองอื่น ๆ",
+			"voicelineType": "8003",
+			"description": "ถ้ามีพลังอำนาจอันทรงพลัง จะใช้มันเพื่อทำอะไรงั้นเหรอ? อืม... เรื่องนี้ต้องค่อย ๆ คิดให้ถี่ถ้วนล่ะนะ",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50054,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทสรุป",
+			"voicelineType": "8004",
+			"description": "ขอบคุณที่ไว้ใจฉันนะ ความใจดีของเธอที่มีให้ฉัน มันอบอุ่นกว่าเปลวไฟเสียอีก ไม่ต้องกังวลไป ฉันพบสิ่งที่ต้องการจะทำแล้ว พลังนี้จะกลายเป็นเกราะกำบังที่แข็งแกร่ง คอยปกป้องเธอตลอดไป",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 50055,
+			"title": "สกิลธาตุ - 1",
+			"voicelineType": "100001",
+			"description": "เกราะแห่งไฟ!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_01"
+		},
+		{
+			"voicelineId": 50056,
+			"title": "สกิลธาตุ - 2",
+			"voicelineType": "100002",
+			"description": "ดูนี่สิ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_02"
+		},
+		{
+			"voicelineId": 50057,
+			"title": "สกิลธาตุ - 3",
+			"voicelineType": "100003",
+			"description": "ระวังไฟด้วยนะ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_03"
+		},
+		{
+			"voicelineId": 50058,
+			"title": "ท่าไม้ตาย - 1",
+			"voicelineType": "200001",
+			"description": "กำลังเสริมมาแล้ว",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_01"
+		},
+		{
+			"voicelineId": 50059,
+			"title": "ท่าไม้ตาย - 2",
+			"voicelineType": "200002",
+			"description": "เพลิงแห่งความช่วยเหลือ!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_02"
+		},
+		{
+			"voicelineId": 50060,
+			"title": "ท่าไม้ตาย - 3",
+			"voicelineType": "200003",
+			"description": "ฉันมาเพื่อปกป้องเธอ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_03"
+		},
+		{
+			"voicelineId": 50061,
+			"title": "เปิดหีบสมบัติ - 1",
+			"voicelineType": "300001",
+			"description": "ข้างในมีอะไรดี ๆ งั้นเหรอ?",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_01"
+		},
+		{
+			"voicelineId": 50062,
+			"title": "เปิดหีบสมบัติ - 2",
+			"voicelineType": "300002",
+			"description": "โอ้ วันนี้โชคดีจริง ๆ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_02"
+		},
+		{
+			"voicelineId": 50063,
+			"title": "เปิดหีบสมบัติ - 3",
+			"voicelineType": "300003",
+			"description": "ฮิ ฮิ มีส่วนแบ่งสำหรับคนที่เจอ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_03"
+		},
+		{
+			"voicelineId": 50064,
+			"title": "ค่าพลังชีวิตต่ำ - 1",
+			"voicelineType": "410001",
+			"description": "เฮ้! มันจำเป็นเหรอ?",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_01"
+		},
+		{
+			"voicelineId": 50065,
+			"title": "ค่าพลังชีวิตต่ำ - 2",
+			"voicelineType": "410002",
+			"description": "บรรลัยล่ะ บรรลัยล่ะ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_02"
+		},
+		{
+			"voicelineId": 50066,
+			"title": "ค่าพลังชีวิตต่ำ - 3",
+			"voicelineType": "410003",
+			"description": "ซี๊ดด เจ็บนิดหน่อย...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_03"
+		},
+		{
+			"voicelineId": 50067,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 1",
+			"voicelineType": "400001",
+			"description": "ไม่ต้องกลัวฉันจะปกป้องเธอเอง",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 50068,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 2",
+			"voicelineType": "400002",
+			"description": "วุ่นวายจริง ๆ เลย รีบไปพักซะ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 50069,
+			"title": "หมดสติ - 1",
+			"voicelineType": "500001",
+			"description": "ต้องกลับบ้านเกิดแล้วเหรอ...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_01"
+		},
+		{
+			"voicelineId": 50070,
+			"title": "หมดสติ - 2",
+			"voicelineType": "500002",
+			"description": "ทุกคน... รักษาตัวด้วย",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_02"
+		},
+		{
+			"voicelineId": 50071,
+			"title": "หมดสติ - 3",
+			"voicelineType": "500003",
+			"description": "หน้าที่ที่ต้องปกป้อง... ฉันทำมันไม่สำเร็จ...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_03"
+		},
+		{
+			"voicelineId": 50072,
+			"title": "โดนโจมตีอย่างหนัก - 1",
+			"voicelineType": "910001",
+			"description": "เจ็บ ๆ ๆ",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 50073,
+			"title": "โดนโจมตีอย่างหนัก - 2",
+			"voicelineType": "910002",
+			"description": "หยุดนะ!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 50074,
+			"title": "เข้าร่วมทีม - 1",
+			"voicelineType": "600001",
+			"description": "ก็ได้ เรื่องงานบ้านค่อยว่ากันทีหลัง",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_01"
+		},
+		{
+			"voicelineId": 50075,
+			"title": "เข้าร่วมทีม - 2",
+			"voicelineType": "600002",
+			"description": "ออกไปหาเพื่อนใหม่ ๆ กันเถอะ",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_02"
+		},
+		{
+			"voicelineId": 50076,
+			"title": "เข้าร่วมทีม - 3",
+			"voicelineType": "600003",
+			"description": "ครั้งนี้จะไปที่ไหนกันดีล่ะ?",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_03"
+		}
+	]
+}

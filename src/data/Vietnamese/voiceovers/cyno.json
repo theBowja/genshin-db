@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "Lần đầu gặp mặt - Quá Khứ",
+			"voicelineType": "1000",
+			"description": "Tôi là Cyno, từng là \"Tổng Quản Mahamatra\", giờ đây tôi đang phán xét tội ác bằng chính năng lực của mình. Nếu {F#cô}{M#cậu} hướng về quy tắc và chính nghĩa thì tôi sẽ trợ giúp cho {F#cô}{M#cậu}.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "Lần đầu gặp mặt - Hiện Tại",
+			"voicelineType": "1006",
+			"description": "Tôi là Cyno, Tổng Quản Mahamatra của Giáo Viện. Nhiệm vụ của tôi là duy trì quy tắc và xét xử tội ác, tôi sẽ bảo vệ sự an toàn của các bạn trong hành trình sau này.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Akasha Rung Động, Kiếp Hỏa Dâng Trào\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "Nói chuyện phiếm - Ước Lượng",
+			"voicelineType": "1101",
+			"description": "Thiện và ác, tất cả đều sẽ được đặt lên bàn cân.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "Nói chuyện phiếm - May Mắn",
+			"voicelineType": "1102",
+			"description": "May mắn đôi khi sẽ quyết định thắng thua của một ván bài, nhưng sẽ không thể nào ảnh hưởng mãi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "Nói chuyện phiếm - Nghi Hoặc",
+			"voicelineType": "1103",
+			"description": "Đôi lúc tôi cũng muốn làm dịu bầu không khí, nhưng tôi lại không biết nói chuyện cười như thế nào mới khiến cho người khác vui.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "Khi trời mưa...",
+			"voicelineType": "1201",
+			"description": "Trời lại mưa rồi...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "Khi có sấm sét...",
+			"voicelineType": "1202",
+			"description": "Trong một số truyền thuyết, sấm sét chính là phán quyết của thần lên con người.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "Khi tuyết rơi...",
+			"voicelineType": "1203",
+			"description": "Tôi thích cảnh vật sau khi tuyết rơi, yên ả nhưng không tĩnh mịch.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "Ánh nắng thật chan hòa...",
+			"voicelineType": "1204",
+			"description": "Ánh mặt trời rồi sẽ chiếu rọi đến mọi ngóc ngách.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "Gió lớn quá...",
+			"voicelineType": "1205",
+			"description": "Gió to quá... cẩn thận.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "Khi trong sa mạc...",
+			"voicelineType": "1206",
+			"description": "Cảnh tượng quen thuộc...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "Chào buổi sáng...",
+			"voicelineType": "1001",
+			"description": "Tỉnh táo lên nào, đến lúc xuất phát rồi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "Chào buổi trưa...",
+			"voicelineType": "1002",
+			"description": "Cần tôi chuẩn bị cơm trưa cho không? Nói trước, chưa chắc ngon đâu đấy.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "Chào buổi tối...",
+			"voicelineType": "1003",
+			"description": "Còn nhớ lời tôi nói không? Đêm tối đi chung với nguy hiểm, dù là làm gì cũng đừng nên lơ là cảnh giác.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "Chúc ngủ ngon...",
+			"voicelineType": "1004",
+			"description": "Ngủ ngon. Tôi sẽ đi xử lý những tên tôi phạm hoạt động quanh đây.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "Về bản thân Cyno - Chuyện \"Cười\"",
+			"voicelineType": "2001",
+			"description": "Có một nhà lữ hành đang khát khô cổ trong sa mạc, thế là ước gặp được một con Slime Thủy, nhưng không ngờ có một con Slime Thủy đói lả cũng đang ước gặp được một nhà lữ hành đơn độc... Hửm? Biểu cảm gì thế? Không buồn cười sao?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "Về bản thân Cyno - Tản Bộ",
+			"voicelineType": "2005",
+			"description": "Buổi tối tôi thường hay đi tản bộ trong sa mạc, cơn gió lạnh khô ráo thổi qua khiến đầu tôi tỉnh táo hẳn.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "Về chúng ta - Quyết Đấu",
+			"voicelineType": "2003",
+			"description": "Làm ván \"Thất Thánh Triệu Hồi\" không? Để cho {F#cô}{M#cậu} chiêm ngưỡng bộ bài mới của tôi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "Về chúng ta - Thời Khắc Này",
+			"voicelineType": "2002",
+			"description": "Quá khứ không thể thay đổi, tương lai không thể dự liệu, cho nên phải trân trọng khoảnh khắc này.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "Về \"Vision\"...",
+			"voicelineType": "3001",
+			"description": "Dựa vào thứ trên người tôi cũng được, hay ma thần để mắt đến tôi cũng kệ, tôi nhận được sự ưu ái của thần, nhưng tôi sẽ không vì vậy mà thay đổi đạo nghĩa của tôi. Tôi chỉ căn cứ vào trách nhiệm để làm những việc tôi cần phải làm.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "Có gì muốn chia sẻ không - Ham Muốn Tri Thức",
+			"voicelineType": "3002",
+			"description": "\"Ham muốn có thể dẫn đến thảm họa\", đây là một nhận thức chung. Nhưng khi đề cập đến \"ham muốn tri thức\" thì con người chỉ luôn nói về mặt tích cực của nó... Theo tôi thấy, ham muốn tri thức cũng giống như dục vọng vậy, cần phải khống chế nó chặt chẽ.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "Có gì muốn chia sẻ - Lòng Kính Nể",
+			"voicelineType": "3005",
+			"description": "Khi chấp hành nhiệm vụ, mỗi một sự phán quyết của tôi đều sẽ thay đổi vận mệnh của người khác. Cho nên tôi cần phải yêu cầu bản thân luôn luôn kính nể chức vị \"Matra\", cũng giống như tôi kính nể tri thức và sức mạnh vậy.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "Những kiến thức thú vị...",
+			"voicelineType": "3003",
+			"description": "Tôi thích những bụi cây trong sa mạc. Sa mạc đại diện cho yên tĩnh và cô độc, tất cả nền văn minh đều sẽ bị vùi trong gió cát. Nhưng trên vùng đất hoang vu đó vẫn có thể thấy được vết tích của sinh mệnh đang phát triển, đến tôi cũng bị chúng làm cho ấn tượng đấy.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "Về Tighnari - Tri Thức",
+			"voicelineType": "4001",
+			"description": "Tighnari khác với những học giả mà tôi từng thấy. Anh ta cũng rất say mê tri thức, nhưng chưa từng vượt quá giới hạn. Có nhiều học giả tự xem mình là thần trong phòng thí nghiệm, nhưng Tighnari thì không, anh ta tôn trọng mỗi một sinh mệnh. Nghe nói Tighnari đã từ chối lời mời của Giáo Viện, tôi cũng đứng về phía anh ta.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "Về Tighnari - Chuyện Cười",
+			"voicelineType": "4002",
+			"description": "Tighnari từng khuyên tôi không nên kể chuyện cười trong lúc ăn, bảo là vốn dĩ không mắc cười. Tôi thì không cho là vậy, nên đã liên tục kể ba câu chuyện cười tâm đắc nhất của tôi, đồng thời giải thích điểm mắc cười trong đó... Cuối cùng thì chén cơm của tôi cũng nguội luôn rồi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "Về Collei...",
+			"voicelineType": "4003",
+			"description": "Tôi từng giúp cô ấy phong ấn tàn dư ma thần trong người, nhưng quá trình phong ấn khiến cô ấy rất đau đớn. Mức độ đau đớn đó có thể khiến người ta sợ hãi hơn cái chết, thế nhưng cô ấy đã có thể kiên trì được, thật bất ngờ.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "Về Alhaitham...",
+			"voicelineType": "4004",
+			"description": "Tôi không thích những người quá thông minh, họ sẽ luôn cho rằng bản thân có thể kiểm soát được mọi thứ, từ đó luôn vui đùa bên ranh giới nguy hiểm. Nhưng Alhaitham vẫn xem như khá ổn định, đa phần trường hợp anh ta đúng là có năng lực kiểm soát cục diện, chuyển nguy thành an.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Xích Thổ Chi Vương Và Tam Triều Thánh Giả\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "Về Kaveh...",
+			"voicelineType": "4005",
+			"description": "Tuy Tighnari và Collei không đích thân nói ra, nhưng ánh mắt nhìn nhau của họ đã nói rõ tất cả. Trải nghiệm bản thân của Kaveh thú vị hơn những câu chuyện cười mà tôi đã chuẩn bị. Cảm nhận của tôi sao? Tôi nghĩ thật buồn cười khi họ có thể cười trong một tình huống như vậy.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "Về Nahida...",
+			"voicelineType": "4006",
+			"description": "Đánh giá các vị thần... Điều này đối với tôi có vẻ là hơi quá. Tuy nhiên, trong thời gian đồng hành cùng cô ấy, tôi cũng đã tận mắt chứng kiến sự khôn ngoan, dũng cảm và quyết tâm của cô ấy. So với những hiền giả hạ thấp và chỉ trích cô ấy mà không có một chút bằng chứng nào, tôi nghĩ tôi có thể đưa ra một đánh giá đáng tin cậy hơn: Cô ấy là một vị thần ưu tú và đáng được mọi người tôn kính.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Akasha Rung Động, Kiếp Hỏa Dâng Trào\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "Về Nilou...",
+			"voicelineType": "4007",
+			"description": "Tôi có thể cảm nhận được niềm đam mê và chấp niệm về khiêu vũ từ cô ấy, chấp niệm này rất kiên định và sẽ không dễ dàng thay đổi. Hy vọng sau này, cô ấy cũng có thể mang lại hạnh phúc cho người khác bằng những điệu nhảy mà cô ấy yêu thích.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Akasha Rung Động, Kiếp Hỏa Dâng Trào\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "Về Faruzan...",
+			"voicelineType": "4008",
+			"description": "Tôi từng đọc tỉ mỉ những hồ sơ ghi chép lại vụ mất tích của tiền bối Faruzan, lúc đó tôi nghi ngờ cô ấy đang tiến hành một loại nghiên cứu nguy hiểm nào đó... Nhưng sau khi gặp được cô ấy tôi đã xóa triệt để suy nghĩ đó. Tuy ở chung có hơi khó khăn, nhưng mà cô ấy giống như một vị trưởng bối thích lải nhải vậy, trong lòng suy nghĩ đến người khác thì sẽ không làm ra những chuyện lệch lạc.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "Về Lisa...",
+			"voicelineType": "4009",
+			"description": "Lisa và tôi đều từng theo học từ một hiền giả, cho nên tôi biết chuyện của cô ấy. Thân là Tổng Quản Mahamatra, tôi cũng từng thấy được nhiều kẻ truy cầu tri thức quá độ mà dẫn đến bi kịch, cho nên tôi cũng hiểu được sự lựa chọn của cô ấy.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "Muốn tìm hiểu Cyno - Điều thứ 1",
+			"voicelineType": "5001",
+			"description": "Chuyện liên quan đến tôi sao? Cũng đúng, dẫu sao thì tôi trong mắt nhiều người cũng là một nỗi \"phiền phức\" mà... Không cần lo lắng, chỉ cần {F#cô}{M#cậu} không làm ra chuyện gì nguy hiểm thì tôi sẽ không làm phiền {F#cô}{M#cậu} đâu.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "Muốn tìm hiểu Cyno - Điều thứ 2",
+			"voicelineType": "5002",
+			"description": "Với cơ thể của mình như một vật chứa, tôi có thể khai thác sức mạnh ẩn chứa trong mình. Điều này có thể xảy ra một phần do bản chất tự nhiên của tôi, nhưng cũng do một thỏa thuận mà tôi sẵn sàng thực hiện trong quá khứ. Không có gì phải né tránh cả, tôi lấy thân phận Matra để đo lường tội ác của thế gian thì tôi cũng phải đặt linh hồn của mình lên bàn cân để được đo lường theo cách tương tự.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "Muốn tìm hiểu Cyno - Điều thứ 3",
+			"voicelineType": "5003",
+			"description": "So với \"tại sao lại làm\" thì tôi xem trọng \"đã làm gì\" hơn. Bởi vì trên thế gian này có cả ngàn vạn lý do, đôi lúc khi {F#cô}{M#cậu} nghe xong sẽ cảm thấy đồng cảm với người phạm tội, đồng thời cảm thấy những người xung quanh đã quá khắt khe. Bên thiệt thòi sẽ luôn giành được sự đồng cảm của mọi người, nhưng người phán xử phải bỏ đi tất cả những cảm xúc đó. Chúng tôi có thể đồng cảm với nỗi đau và động cơ của bị cáo, nhưng một khi đã phạm tội thì không thể không bị trừng phạt.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "Muốn tìm hiểu Cyno - Điều thứ 4",
+			"voicelineType": "5004",
+			"description": "Trong đại dương vô tri u ám, một tia sáng yếu ớt sẽ thi thoảng xuất hiện, thu hút những người không hiểu chân tướng hướng về phía nó. Mọi người sẽ thường coi tia sáng đó như một ngọn hải đăng chỉ đường cho họ, nhưng làm như vậy lại coi nhẹ những nguy cơ to lớn vẫn rình rập trong vùng nước tối đen như mực. Việc xua đuổi những kẻ lâu nay sống trong bóng tối ra khỏi ánh sáng dẫn dắt vốn là một chuyện tàn nhẫn, nhưng tôi phải tiếp tục làm như vậy cho đến khi chúng ta có thể đánh bại những kẻ thù ẩn mình dưới mặt nước đó.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "Muốn tìm hiểu Cyno - Điều thứ 5",
+			"voicelineType": "5005",
+			"description": "Tôi đã nói với {F#cô}{M#cậu} tất cả mọi thứ mà tôi nghĩ là đáng để chia sẻ rồi. {F#Cô}{M#Cậu} vẫn muốn nghe tiếp sao? Haha... sự hiếu kỳ của {F#cô}{M#cậu} cũng không đơn giản đấy, vậy thì cứ hỏi đi. Đối với một người đã quen tra khảo người khác, cảm giác bị tra khảo quả là... thú vị.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "Sở thích của Cyno...",
+			"voicelineType": "6001",
+			"description": "Mỗi khi nhàn rỗi, tôi đều sẽ chơi vài ván \"Thất Thánh Triệu Hồi\" với người khác. Có thể thể hiện rất nhiều sự sáng tạo và biến đổi trong một bộ quy tắc hoạt động, khiến nó không chỉ là một trò chơi, đối với tôi thì nó là một hình thức của nghệ thuật.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "Nỗi buồn của Cyno...",
+			"voicelineType": "6002",
+			"description": "Dạo trước tôi có đọc một quyển tiểu thuyết đến từ Inazuma, lấy chủ đề về \"Thất Thánh Triệu Hồi\", nhân vật chính trong đó khi lâm vào hiểm cảnh đều sẽ rút được một lá bài vốn không tồn tại. Tôi cảm thấy rất ấn tượng và cũng thắc mắc rất nhiều: Có thể thông qua điều khiển bộ bài để tạo ra những điều kỳ diệu, đây là phá vỡ quy tắc hay cũng được xem là một phần trong quy tắc đây?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "Món ăn yêu thích...",
+			"voicelineType": "6005",
+			"description": "Cơm, thịt, quả khô, thêm sữa chua vào rồi nướng lên với các hương liệu khác nhau. Gõ vỡ lớp ngoài giòn tan là sẽ nghe được hương thơm nóng tỏa ra. Không mất quá nhiều thời gian để làm, đây chính là món ăn yêu thích của tôi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "Món ăn ghét...",
+			"voicelineType": "6004",
+			"description": "Khi đi trong sa mạc tôi thường hay mang theo lương khô vô vị, sau khi ăn quen rồi sẽ không thấy ghét món ăn nào cả. Nhưng nếu phải nói thì những món ăn liên quan đến sâu bọ có hơi khó nuốt thật...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "Nhận Được Quà I",
+			"voicelineType": "6007",
+			"description": "Hương vị rất ngon, cảm ơn nhé.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "Nhận Được Quà II",
+			"voicelineType": "6008",
+			"description": "Tôi sẽ nhận lấy, cảm ơn.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "Nhận Được Quà III",
+			"voicelineType": "6009",
+			"description": "Cho tôi sao? Có lộn không vậy?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "Sinh Nhật...",
+			"voicelineType": "7001",
+			"description": "Ừm... Chúc {F#cô}{M#cậu} sinh vật vui vẻ. Tuy tôi không có nhiều kinh nghiệm trong việc tổ chức sinh nhật, nhưng nghĩ đến đó là sinh nhật của {F#cô}{M#cậu} thì tôi cũng đã có chuẩn bị đôi chút. Đầu tiên là một bộ bài mà tôi đã mất mấy ngày để nghiên cứu ra, phong cách rất hợp với {F#cô}{M#cậu}. Ngoài ra tôi cũng đã sắp xếp lại thời gian, {F#cô}{M#cậu} có chỗ nào muốn đi không? Tôi sẽ đi theo {F#cô}{M#cậu}. Tuy nói sinh nhật chỉ có một ngày, nhưng vẫn phải tận hưởng nó chứ, lịch trình sắp xếp tầm ba ngày đổ lại nhé.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "Cảm Giác Đột Phá - Khởi",
+			"voicelineType": "8001",
+			"description": "Tôi đã cảm nhận được luồng sức mạnh mới, đây là bằng chứng của việc mạnh mẽ hơn.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [1]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "Cảm Giác Đột Phá - Thừa",
+			"voicelineType": "8002",
+			"description": "Phán xử tội ác, duy trì quy tắc.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [2]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "Cảm Giác Đột Phá - Chuyển",
+			"voicelineType": "8003",
+			"description": "Cải thiện được đáng kể, cảm ơn {F#cô}{M#cậu} nhé.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [4]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "Cảm Giác Đột Phá - Hợp",
+			"voicelineType": "8004",
+			"description": "Sức mạnh của tôi đã đạt đến đỉnh cao, nhưng vẫn còn nhiều điều tôi sẽ không thể hoàn thành nếu chỉ dựa vào sức chiến đấu của mình. Vẫn còn nhiều cảm xúc và quy tắc không thống nhất với nhau, nhưng tôi nghĩ mình sẽ tìm ra chìa khóa để đạt được sự cân bằng đúng đắn trong những chặng đường sắp tới.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [6]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "Kỹ Năng Nguyên Tố I",
+			"voicelineType": "100001",
+			"description": "Mau chịu trói đi!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "Kỹ Năng Nguyên Tố II",
+			"voicelineType": "100002",
+			"description": "Cựa quậy vô ích.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "Kỹ Năng Nguyên Tố III",
+			"voicelineType": "100003",
+			"description": "Xem ngươi chạy đi đâu!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "Kỹ Năng Nguyên Tố IV",
+			"voicelineType": "100004",
+			"description": "Đến giờ phán xử.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "Kỹ Năng Nguyên Tố V",
+			"voicelineType": "100005",
+			"description": "Nên định tội rồi.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "Kỹ Năng Nguyên Tố VI",
+			"voicelineType": "100006",
+			"description": "Trả giá cho tội ác!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "Kỹ Năng Nộ I",
+			"voicelineType": "200001",
+			"description": "Dùng bản thân... để thực thi công lý!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "Kỹ Năng Nộ II",
+			"voicelineType": "200002",
+			"description": "Phán quyết giáng lâm.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "Kỹ Năng Nộ III",
+			"voicelineType": "200003",
+			"description": "Đo lường, tội ác của ngươi.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "Mở Rương I",
+			"voicelineType": "300001",
+			"description": "Vật phẩm xứng đáng.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "Mở Rương II",
+			"voicelineType": "300002",
+			"description": "Quý tại sự kiên trì.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "Mở Rương III",
+			"voicelineType": "300003",
+			"description": "Tích lũy tài phú chính là căn bản của một nền văn minh.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "HP Thấp I",
+			"voicelineType": "410001",
+			"description": "Khả năng uy hiếp... cao hơn ta tưởng.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "HP Thấp II",
+			"voicelineType": "410002",
+			"description": "Cũng sắp quen rồi.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "HP Thấp III",
+			"voicelineType": "410003",
+			"description": "Hừ... lại nào!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "HP Đồng Hành Thấp I",
+			"voicelineType": "400001",
+			"description": "Đừng cố gắng, lui về đi!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "HP Đồng Hành Thấp II",
+			"voicelineType": "400002",
+			"description": "Để tôi thay thế.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "Ngã Xuống I",
+			"voicelineType": "500001",
+			"description": "Đến lượt tôi rồi sao...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "Ngã Xuống II",
+			"voicelineType": "500002",
+			"description": "Diệt vong... bắt đầu vòng luân hồi.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "Ngã Xuống III",
+			"voicelineType": "500003",
+			"description": "Phán quyết... đã thất bại...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "Chịu Đòn Thường I",
+			"voicelineType": "900001",
+			"description": "Đừng chống cự vô ích.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "Bị Trọng Kích I",
+			"voicelineType": "910001",
+			"description": "Khó đối phó đấy.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "Bị Trọng Kích II",
+			"voicelineType": "910002",
+			"description": "Cũng có chút bản lĩnh.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "Vào Đội I",
+			"voicelineType": "600001",
+			"description": "Tôi sẽ dốc hết sức.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "Vào Đội II",
+			"voicelineType": "600002",
+			"description": "Bắt đầu hành động đi.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "Vào Đội III",
+			"voicelineType": "600003",
+			"description": "Mục tiêu lần này là ai?",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

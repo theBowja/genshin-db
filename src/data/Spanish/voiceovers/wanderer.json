@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "Hola...",
+			"voicelineType": "1006",
+			"description": "¿Que me presente? He recibido muchos nombres y títulos a lo largo de mis viajes. Aunque todos y cada uno de ellos resultan más vanagloriosos de lo que cualquier mortal podría esperar, ahora son cosa del pasado.\nPuedes llamarme como gustes. Adelante, veamos de lo que eres capaz. Espero que no me decepciones.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "Charla - Viento",
+			"voicelineType": "1101",
+			"description": "No existe una auténtica libertad en este mundo. Ni siquiera el viento puede soplar para siempre.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "Charla - Forma de hablar",
+			"voicelineType": "1102",
+			"description": "¿Crees que soy muy mordaz al hablar? Simplemente digo las cosas como son. Si alguien no puede aceptarlas, el problema es suyo, no mío.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "Charla - Cortesías",
+			"voicelineType": "1103",
+			"description": "Ahórrate las cortesías. Es una estupidez suplir el silencio con una conversación que no va a ninguna parte.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "Cuando llueve...",
+			"voicelineType": "1201",
+			"description": "¿Quieres usar mi sombrero como paraguas? ¡Hum! Qué osad{F#a}{M#o} eres para hacer semejante petición...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "Tras la lluvia...",
+			"voicelineType": "1202",
+			"description": "¿Tan content{F#a}{M#o} estás de ver el sol de nuevo? Qué infantil...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "Cuando truena...",
+			"voicelineType": "1203",
+			"description": "*Tch*, qué molesto.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "Cuando nieva...",
+			"voicelineType": "1204",
+			"description": "Técnicamente hablando, no hay gran diferencia entre la nieve y la lluvia, y aun así la gente solo elogia a la primera. Qué arbitrario puede ser el destino...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "Hace mucho viento...",
+			"voicelineType": "1205",
+			"description": "Hasta tú podrías crear una brisa así, ¿me equivoco?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "Buenos días...",
+			"voicelineType": "1001",
+			"description": "“Arriba, {F#dormilona}{M#dormilón}, el sol ya brilla con fuerza”... Jaja, ¿no me digas que esperabas que te despertara así?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "Buenas tardes...",
+			"voicelineType": "1002",
+			"description": "Yo no necesito alimentarme, así que haz el favor y ocúpate de ti mism{F#a}{M#o} y de la renacuaja flotante que llevas contigo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "Buenas noches... (I)",
+			"voicelineType": "1003",
+			"description": "Otro tedioso día por fin está terminando.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "Buenas noches... (II)",
+			"voicelineType": "1004",
+			"description": "¿Qué, no puedes dormir conmigo cerca? Jeje.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#Sobre {REALNAME[ID(1)]} - Marioneta",
+			"voicelineType": "2001",
+			"description": "Una marioneta consumida por el fuego de la venganza deja cenizas tras de sí. Pero ¿qué resurgirá de ellas?...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#Sobre {REALNAME[ID(1)]} - Corazón",
+			"voicelineType": "2005",
+			"description": "Dejaré eso en manos del destino. Obsesionarse por algo que jamás estará a mi alcance es una pérdida de tiempo. Tengo asuntos más importantes de los que ocuparme ahora mismo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "Sobre nosotros - Enemigos",
+			"voicelineType": "2003",
+			"description": "¿Aún sigues dándole vueltas a nuestros desencuentros del pasado? Ja, ¿y qué piensas hacer al respecto? Tómate tu tiempo, no tengo prisa.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "Sobre nosotros - Compañeros",
+			"voicelineType": "2002",
+			"description": "Nunca seré uno de los buenos, simplemente quiero devolverte el favor por todo lo que has hecho por mí.\n¿Pero qué hay de ti? ¿No deberías poner alguna excusa para reunirte conmigo? Si alguno de tus amigos te ve hablando conmigo y piensa que estás colaborando con el enemigo, no saldré a defenderte.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "Sobre la Visión...",
+			"voicelineType": "3001",
+			"description": "La mera idea de la “mirada de los dioses” me indigna, pero no me opondré a obtener una nueva fuente de poder. ¿Crees que hay un significado oculto en el elemento Anemo? Ja, ¿y qué te hace pensar eso? Los dioses no se rigen por la racionalidad o la moralidad. Pensé que ya te lo había demostrado.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "¿Algo que decir?",
+			"voicelineType": "3002",
+			"description": "Nada. Pregunta lo que quieras. Si la pregunta me parece interesante, puede que te responda.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "Una noticia interesante...",
+			"voicelineType": "3003",
+			"description": "Mira. Los pájaros se pavonean, las ardillas hacen acopio de alimentos y los humanos trabajan para ganarse la vida. Como ves, los animales más simples no necesitan cosas complicadas para sentirse realizados.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "Sobre la Reina Menor Kusanali...",
+			"voicelineType": "4001",
+			"description": "Tal vez solo decidiera perdonar mi vida porque aún puedo ser de utilidad. O tal vez se deba a que es sabia y benevolente, y vio en mí un cierto desamparo... ¿Crees que me esfuerzo por pensar lo peor de ella? Ja, ¿y qué esperabas si no? No soy ningún santo, por si te habías olvidado.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "Sobre la Shogun Raiden...",
+			"voicelineType": "4002",
+			"description": "Pensar que fue capaz de renunciar a su propia creación y que lo justifica alegando que no deseaba intervenir en mi destino...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "Sobre la Zarina...",
+			"voicelineType": "4003",
+			"description": "Todo el mundo la idolatra por su amabilidad y su magnanimidad, pero olvidan que el amor también es una forma de pecar. ¿Nadie se ha parado a pensar que tal vez esté intentando compensar algo?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "Sobre El Bufón...",
+			"voicelineType": "4004",
+			"description": "El Bufón es un superviviente de Khaenri'ah. Aparte de eso, no sé mucho más sobre él, y tampoco hemos tenido ninguna interacción cercana. Sin embargo, parece como si quisiera algo de mí. Me ha asignado bastantes encargos importantes, algunos de ellos incluso para incursionar en el Abismo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "Sobre El Capitán...",
+			"voicelineType": "4005",
+			"description": "“El íntegro y recto Capitano”, “el valeroso e intrépido Capitano”, “el invencible e inexpugnable Capitano”... Incluso mis oídos mecánicos requieren mantenimiento después de escuchar tantas veces la retahíla de halagos que los Fatui le dedican constantemente. ¿No crees que la integridad plena es un peligro en potencia? Y eso sin tener en cuenta su enorme fuerza.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "Sobre El Doctor...",
+			"voicelineType": "4006",
+			"description": "Es una auténtica lástima que la Reina Menor Kusanali le haya obligado a destruir tantos de sus segmentos. Hubiera disfrutado soberanamente destrozándolos yo mismo en pedazos.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "Sobre La Damisela...",
+			"voicelineType": "4007",
+			"description": "Dime una cosa, ¿qué harías si te encontraras con una “damisela” que es cándida y candorosa en todo momento e indolente e impasible ante cualquier situación? En mi caso, al menos podría retarla a un enfrentamiento, pero tú... Con tu moralidad, lo mejor será que te mantengas alejad{F#a}{M#o} de ella.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "Sobre La Sota...",
+			"voicelineType": "4008",
+			"description": "Un lobo con piel de cordero. Controla a los demás utilizando una máscara de elegancia y cordialidad. La mayoría de los que han visto su auténtico yo simplemente han... *puf*.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "Sobre El Gallo...",
+			"voicelineType": "4009",
+			"description": "Solo alguien tan zopenco como Nobile pensaría que Pulcinella se preocupa de verdad por él y su familia sin esperar nada a cambio. Puede que el alcalde haya hecho cosas buenas por ellos, pero está claro cuál es el mensaje oculto en todo esto: “Tu familia está en mis manos”.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "Sobre La Títere...",
+			"voicelineType": "4010",
+			"description": "Tiene una personalidad horrible y no le interesa nada salvo sus investigaciones. Pero incluso con su dedicación, lo único que ha conseguido es un puñado de objetos inútiles y un puesto por debajo del mío. Es realmente patético.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "Sobre El Regatero...",
+			"voicelineType": "4011",
+			"description": "Ah, el noveno de Los Once... Está obsesionado con la idea del “intercambio justo”, hasta el punto de querer eliminar la superioridad natural de los dioses sobre los mortales. Supongo que así son los simples mortales, siempre se hallan inmersos en todo tipo de falsas utopías. Al igual que sus habilidades para elegir compañero, él no tiene nada de especial. ¡Hum! Si alguien decide trabajar con El Doctor, sin duda acabará mal.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "Sobre Nobile...",
+			"voicelineType": "4012",
+			"description": "Tiene el desarrollo mental de un niño y una fuerza mínima. Asignarle el puesto más bajo de Los Once supuso un desprestigio para toda la organización. Por suerte, yo ya no formo parte de ella.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "Sobre Signora...",
+			"voicelineType": "4013",
+			"description": "No quedó nada en sus cenizas. No tengo interés en aquellos que carecen de futuro.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Omnipresencia sobre los mortales»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "Sobre Yae Miko...",
+			"voicelineType": "4014",
+			"description": "Solo es una youkai con mucha labia. Finge cuidar de los humanos para ganarse el favor de su diosa, pero en el fondo solo pretende buscar nuevas formas de entretenimiento.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Omnipresencia sobre los mortales»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "Sobre Kaedehara Kazuha...",
+			"voicelineType": "4015",
+			"description": "¿Te refieres al descendiente del clan Kaedehara? Entonces, ¿él es quien...? Tiene una Visión Anemo, ¿no? Y fue capaz de hacer frente al Filo del pensamiento vacío de la Shogun Raiden, ¿cierto? Jeje... ¡Jajajaja!",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#Más sobre {REALNAME[ID(1)]} (I)",
+			"voicelineType": "5001",
+			"description": "¿Quieres saber más sobre mí? No seas ridícul{F#a}{M#o}. Solo conseguirás buscarte problemas.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#Más sobre {REALNAME[ID(1)]} (II)",
+			"voicelineType": "5002",
+			"description": "Oh, soy consciente de que muchos querrán buscarme y saldar cuentas conmigo por el rencor que han ido acumulando contra mi pasado. Me parece perfecto, los estaré esperando. Se podría decir que incluso estoy ansioso por enfrentarme a ellos.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#Más sobre {REALNAME[ID(1)]} (III)",
+			"voicelineType": "5003",
+			"description": "Antes pensaba que la deificación me ayudaría a liberarme de todas estas emociones banales, pero ya no pienso así. El odio, proceda de otros o de mí mismo, es un instrumento demasiado poderoso como para dejarlo escapar.\n¿Cómo puede haber gente que no se enfade nunca? Es algo que nunca entenderé. ¿Acaso sus cuerpos carecen del odio necesario para hacerlo?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#Más sobre {REALNAME[ID(1)]} (IV)",
+			"voicelineType": "5004",
+			"description": "Cuando accedí al Irminsul, solo podía pensar en una cosa: deseaba con todas mis fuerzas no haber nacido.\nEl Irminsul respondió a mi anhelo, pero no me concedió aquello que quería. El destino de este mundo no ha cambiado nada, sigue regocijándose con las bromas crueles a las que somete a sus prisioneros.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#Más sobre {REALNAME[ID(1)]} (V)",
+			"voicelineType": "5005",
+			"description": "Puede que nuestros caminos se hayan cruzado en el pasado, pero volverán a sus respectivos cauces tarde o temprano. ¿Quién sabe lo que ocurrirá en el futuro? Solo podemos esperar a que ocurra.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Completa «La transposición de la génesis»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#Aficiones de {REALNAME[ID(1)]}...",
+			"voicelineType": "6001",
+			"description": "¿Aficiones? Eso es para personas ociosas con el tiempo libre suficiente para pensar en ese tipo de cosas. ¿Te parece que tengo interés alguno en esas distracciones?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#Preocupaciones de {REALNAME[ID(1)]}...",
+			"voicelineType": "6002",
+			"description": "Estaba pensando en cómo podría librarme de ti para seguir cometiendo atrocidades... Espera, ¿de verdad te lo has creído?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "Comida que más le gusta...",
+			"voicelineType": "6005",
+			"description": "¿Tienes té? Cuanto más amargo, mejor. El regusto que deja es inmejorable.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "Comida que menos le gusta...",
+			"voicelineType": "6004",
+			"description": "Las cosas dulces y grasientas me resultan empalagosas. Mejor cómetelas tú.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "Al recibir un regalo (I)",
+			"voicelineType": "6007",
+			"description": "No está mal. Por fin algo que se te da medianamente bien.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "Al recibir un regalo (II)",
+			"voicelineType": "6008",
+			"description": "Nada mal. Has conseguido hacer algo comestible.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "Al recibir un regalo (III)",
+			"voicelineType": "6009",
+			"description": "¿Intentas envenenarme? ¿De verdad eres tan torpe como para olvidar que no soy humano?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "Cumpleaños...",
+			"voicelineType": "7001",
+			"description": "Dame la mano. Je, no tienes por qué ponerte nervios{F#a}{M#o}, solo quiero llevarte a un lugar más elevado.\n¿Qué te parece? La vista que hay aquí es inmejorable. No me des las gracias, no tendría sentido.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "El sentimiento de Ascensión - Introducción",
+			"voicelineType": "8001",
+			"description": "Puedo notar el enorme esfuerzo que has hecho.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "El sentimiento de Ascensión - Desarrollo",
+			"voicelineType": "8002",
+			"description": "El viento sopla por aquí... ¿Qué has hecho?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "El sentimiento de Ascensión - Nudo",
+			"voicelineType": "8003",
+			"description": "¿No te preocupa estar prestándome tu poder? Muy bien, pues.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "El sentimiento de Ascensión - Desenlace",
+			"voicelineType": "8004",
+			"description": "Puedo servirte de ayuda, pero considerarme un aliado aún es peligroso. Espero que sepas lo que estás haciendo. Aunque, si ya has tomado la decisión, quédate detrás de mí.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "Habilidad Elemental (I)",
+			"voicelineType": "100001",
+			"description": "¡Que se alcen los vientos!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "Habilidad Elemental (II)",
+			"voicelineType": "100002",
+			"description": "¡Observen!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "Habilidad Elemental (III)",
+			"voicelineType": "100003",
+			"description": "¡Furia de la tormenta!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "Habilidad Definitiva (I)",
+			"voicelineType": "200001",
+			"description": "¡Insectos inmundos!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "Habilidad Definitiva (II)",
+			"voicelineType": "200002",
+			"description": "¡Miserables sabandijas!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "Habilidad Definitiva (III)",
+			"voicelineType": "200003",
+			"description": "¡Griten más fuerte!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "Habilidad Definitiva (IV)",
+			"voicelineType": "200004",
+			"description": "¡Póstrense ante mí!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "Habilidad Definitiva (V)",
+			"voicelineType": "200005",
+			"description": "¡No tienes cabida aquí!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "Habilidad Definitiva (VI)",
+			"voicelineType": "200006",
+			"description": "¿Cómo osas posar tu vulgar mirada en mí?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "Al esprintar (I)",
+			"voicelineType": "700001",
+			"description": "¡Como el viento!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "Al esprintar (II)",
+			"voicelineType": "700002",
+			"description": "¡Racha de viento!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "Al esprintar (III)",
+			"voicelineType": "700004",
+			"description": "... Qué lentitud.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "Al esprintar (IV)",
+			"voicelineType": "700005",
+			"description": "¿Quién te dijo que me siguieras?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "Al abrir un cofre (I)",
+			"voicelineType": "300001",
+			"description": "Innecesario.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "Al abrir un cofre (II)",
+			"voicelineType": "300002",
+			"description": "¿Eh? ¿Esto también lo quieres?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "Al abrir un cofre (III)",
+			"voicelineType": "300003",
+			"description": "Toma, diviértete.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "Vida baja (I)",
+			"voicelineType": "410001",
+			"description": "Estoy acostumbrado a esto.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "Vida baja (II)",
+			"voicelineType": "410002",
+			"description": "Nada digno de mención.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "Aliado con vida baja (I)",
+			"voicelineType": "400001",
+			"description": "¿Qué haces todavía aquí?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "Aliado con vida baja (II)",
+			"voicelineType": "400002",
+			"description": "Irrisorio, como era de esperar.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "Derrotado (I)",
+			"voicelineType": "500001",
+			"description": "He caído... al Abismo...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "Derrotado (II)",
+			"voicelineType": "500002",
+			"description": "Todo es... fútil...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "Derrotado (III)",
+			"voicelineType": "500003",
+			"description": "El precio... por mis pecados...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "Recibiendo un fuerte ataque (I)",
+			"voicelineType": "910001",
+			"description": "Hasta aquí llegaste.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "Recibiendo un fuerte ataque (II)",
+			"voicelineType": "910002",
+			"description": "... Ridículo.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "Recibiendo un fuerte ataque (III)",
+			"voicelineType": "910003",
+			"description": "... Has firmado tu sentencia.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "Recibiendo un fuerte ataque (IV)",
+			"voicelineType": "910004",
+			"description": "Haré que supliques clemencia.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "Recibiendo un fuerte ataque (V)",
+			"voicelineType": "910005",
+			"description": "Prepárate para tu castigo.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "Unirse al equipo (I)",
+			"voicelineType": "600001",
+			"description": "¿Eh? ¿Qué quieres de mí?",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "Unirse al equipo (II)",
+			"voicelineType": "600002",
+			"description": "Espero que esto sea importante.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "Unirse al equipo (III)",
+			"voicelineType": "600003",
+			"description": "¿Y tengo que ser yo?... Bien, acabemos con esto.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

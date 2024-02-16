@@ -1,0 +1,718 @@
+{
+	"id": 10000045,
+	"name": "Rosaria",
+	"friendLines": [
+		{
+			"voicelineId": 37009,
+			"title": "Hola...",
+			"voicelineType": "1000",
+			"description": "Hola, creyente. Si necesitas ayuda con algún problema, puedes venir a verme. Pero si solo quieres rezar, entonces mejor busca a otra monja.\n¿Eh? ¿No eres {F#una}{M#un} creyente?",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_draw_appear"
+		},
+		{
+			"voicelineId": 37010,
+			"title": "Charla - Aburrimiento",
+			"voicelineType": "1101",
+			"description": "¿Aún sigues aquí?",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_explore_idle_01"
+		},
+		{
+			"voicelineId": 37011,
+			"title": "Charla - Horas extra",
+			"voicelineType": "1102",
+			"description": "Todo puede negociarse, excepto hacer horas extra.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_explore_idle_02"
+		},
+		{
+			"voicelineId": 37012,
+			"title": "Charla - La vida en Mondstadt",
+			"voicelineType": "1103",
+			"description": "Terminar el trabajo y pasar una buena vida. ¿No es así la vida en Mondstadt?",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_explore_idle_03"
+		},
+		{
+			"voicelineId": 37013,
+			"title": "Cuando llueve...",
+			"voicelineType": "1201",
+			"description": "*Suspira*, esto afectará a mi eficacia.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 37014,
+			"title": "Cuando truena...",
+			"voicelineType": "1202",
+			"description": "*Tsk*, qué fastidio.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_thunder_01"
+		},
+		{
+			"voicelineId": 37015,
+			"title": "Cuando nieva...",
+			"voicelineType": "1203",
+			"description": "Ten cuidado por donde pisas si vas con prisa en un día como este.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_snowy_01"
+		},
+		{
+			"voicelineId": 37016,
+			"title": "Hace mucho viento...",
+			"voicelineType": "1204",
+			"description": "¿Y esto es una bendición de Basbartos? No, espera, creo que su nombre era “Bartabos”...",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_gale_01"
+		},
+		{
+			"voicelineId": 37017,
+			"title": "Buenos días...",
+			"voicelineType": "1001",
+			"description": "*Bosteza*, buenos días. ¿Ya comenzaron los rezos de por la mañana? Qué pronto.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 37018,
+			"title": "Buenas tardes...",
+			"voicelineType": "1002",
+			"description": "La luz de la tarde ayuda a dormir. Vamos, inténtalo tú también.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 37019,
+			"title": "Buenas noches... (I)",
+			"voicelineType": "1003",
+			"description": "Buenas noches. No participo en las oraciones de por la noche. ¿Que por qué? Porque no.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 37020,
+			"title": "Buenas noches... (II)",
+			"voicelineType": "1004",
+			"description": "No te preocupes, descansa. Yo me encargo de lo que queda por hacer.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 37021,
+			"title": "Sobre Rosaria - Monja",
+			"voicelineType": "2001",
+			"description": "¿Yo? No soy una persona interesante. Como ya te habrás dado cuenta, no me gusta ni la Iglesia ni trabajar.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_idle"
+		},
+		{
+			"voicelineId": 37022,
+			"title": "Sobre Rosaria - Molestias",
+			"voicelineType": "2002",
+			"description": "Esas monjas que están de guardia trabajando son todas tan molestas... O te atrapan para llevarte a rezar, o te llaman para cantar en el coro. Ni se te ocurra decirles que estoy aquí.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_idle2"
+		},
+		{
+			"voicelineId": 37023,
+			"title": "Sobre Rosaria - Fe",
+			"voicelineType": "2003",
+			"description": "Un dios podría tener el poder de proteger a todo el mundo. Aunque, la verdad, no creo que eso suceda nunca. Si no, el sufrimiento de la gente sería en vano.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_close"
+		},
+		{
+			"voicelineId": 37024,
+			"title": "#Sobre nosotr{F#as}{M#os} - Rezar",
+			"voicelineType": "2004",
+			"description": "Reza. Pero no por un dios o por otras personas, sino por ti.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37025,
+			"title": "#Sobre nosotr{F#as}{M#os} - Luchar",
+			"voicelineType": "2005",
+			"description": "No te preocupes. Yo me haré cargo del trabajo sucio.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37026,
+			"title": "Sobre la Visión...",
+			"voicelineType": "3001",
+			"description": "Una Visión puede ser una demostración de tu fuerza, pero también tu medalla de superviviente... ¿Quién sabe? Las cosas realmente buenas siempre tienen dos caras. Yo no me atrevo a definir lo que es una Visión, solo que mi relación con la mía es la de ser testigos la una de la otra.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37027,
+			"title": "¿Algo que decir?",
+			"voicelineType": "3002",
+			"description": "¿Quieres saber por qué cosas merece la pena estar content{F#a}{M#o}? Humm, es solo una suposición, pero, si alguna vez te encuentras con un problema que no puedes resolver, no pienses que ese es el fin del mundo. Tal vez alguien esté dispuesto a ayudarte a salir de esa situación.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_share_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37028,
+			"title": "Una noticia interesante...",
+			"voicelineType": "3003",
+			"description": "Las plantas no entran dentro de mis intereses. La única excepción es el diente de león, ya que con él se puede hacer un vino delicioso. Tomar una copa en mi hora de descanso es un placer mayor que dormir una siesta.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_gift"
+		},
+		{
+			"voicelineId": 37029,
+			"title": "Sobre Diluc...",
+			"voicelineType": "4001",
+			"description": "¿No te diste cuenta tan pronto como lo viste? Ese ricachón no es una persona de trato fácil. Siempre con un perfil bajo, tan seguro de sí mismo y con un aire de peligro...",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37030,
+			"title": "Sobre Kaeya...",
+			"voicelineType": "4002",
+			"description": "Solo muestra su verdadera personalidad cuando está borracho. Ser elocuente y tener labia es su manera de enmascarar su verdadero yo. ¡Hum! Se puede ver a simple vista que oculta algo. Deberías ir a verlo cuando está borracho.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37031,
+			"title": "Sobre Venti...",
+			"voicelineType": "4003",
+			"description": "Ese bardo tiene algo muy especial... Aún no estoy segura de qué es, pero es muy distinto al resto de los ciudadanos.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37032,
+			"title": "Sobre Bárbara...",
+			"voicelineType": "4004",
+			"description": "Bárbara siempre está pegada a mí, diciéndome que participe en los rezos y en el coro. ¿Acaso Victoria le ha ordenado que me vigile?",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37033,
+			"title": "Sobre Jean...",
+			"voicelineType": "4005",
+			"description": "No solo termina siempre su propio trabajo, sino también el de otros. Es una mujer que merece un enorme respeto.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37034,
+			"title": "Sobre Albedo...",
+			"voicelineType": "4006",
+			"description": "Es como un cuadro colgado en un edificio antiguo... enigmático, misterioso e imposible de descifrar a primera vista. No me disgusta la gente que tiene una historia.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37035,
+			"title": "Sobre Lisa...",
+			"voicelineType": "4007",
+			"description": "No me gusta la gente que holgazanea en sus horas de trabajo, aunque entiendo muy bien lo puntual que es para terminar de trabajar.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37036,
+			"title": "Sobre Klee...",
+			"voicelineType": "4008",
+			"description": "*Suspira*, esa niña no es más que una molestia. Una molestia bastante linda.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37037,
+			"title": "Sobre Varka...",
+			"voicelineType": "4009",
+			"description": "Aunque sus intenciones son buenas, Varka es como un viejo que no deja de hablar y que se preocupa bastante por su gente. *Suspira*, ese hombre...",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37038,
+			"title": "Sobre su padre...",
+			"voicelineType": "4010",
+			"description": "¿Mi padre? Hacía mucho tiempo que no escuchaba esa palabra. Se podría decir que no tengo padre, pero también que tengo más de uno. ¿Eh? ¿Estás sorprendid{F#a}{M#o}?",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_father_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37039,
+			"title": "Más sobre Rosaria (I)",
+			"voicelineType": "5001",
+			"description": "Dejémonos de formalidades. Si estoy aquí es para terminar el trabajo. Si no puedes solucionar algo, déjamelo a mí.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_01"
+		},
+		{
+			"voicelineId": 37040,
+			"title": "Más sobre Rosaria (II)",
+			"voicelineType": "5002",
+			"description": "No es raro que haya monjas que no creen en los dioses, igual que hay cazadores a los que no les gusta la carne de jabalí y pescadores que detestan el pescado. El hecho de hacer algo no implica que tengas que amarlo, y el hecho de que no te guste algo tampoco significa que no quieras tener nada que ver con ello. Así es el trabajo.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37041,
+			"title": "Más sobre Rosaria (III)",
+			"voicelineType": "5003",
+			"description": "¿Quieres un trago? Este es el vino de diente de león de este año. Su sabor no está nada mal.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37042,
+			"title": "Más sobre Rosaria (IV)",
+			"voicelineType": "5004",
+			"description": "Mondstadt es como un viejo y, al mismo tiempo, joven animal salvaje de color blanco: tan viejo como para necesitar ser protegido y tan joven como para no poder sobrevivir por sí solo. Solo un lugar así necesitaría a alguien como yo. Cuido a Mondstadt tal y como otras monjas cuidan a los ciudadanos y dejo que avance con seguridad por el camino de la libertad. ¿Que por qué tiene que ser de color blanco? Porque solo la gente como yo es oscura.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37043,
+			"title": "Más sobre Rosaria (V)",
+			"voicelineType": "5005",
+			"description": "A veces siento que mi yo del pasado aún sigue existiendo, que sigue cerca de mí y que tiene esperanzas en mí. Seguro que tú también has sentido algo parecido, así que aunque actualmente estés en un camino totalmente distinto, nunca debes olvidar a tu yo del pasado. Ese yo es la base sobre la que caminas hoy. No temas al pasado y no tengas miedo de enfrentarte a él.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37044,
+			"title": "Aficiones de Rosaria...",
+			"voicelineType": "6001",
+			"description": "Comer y beber son mi alegrías. Algunos problemas solo se pueden resolver con el alcohol. Aun así, yo nunca me emborracho.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_hobby"
+		},
+		{
+			"voicelineId": 37045,
+			"title": "Preocupaciones de Rosaria...",
+			"voicelineType": "6002",
+			"description": "*Suspira*, no quiero participar en la actividad de canto del mes que viene, pero Victoria va a comprobar la asistencia personalmente...",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_annoyed"
+		},
+		{
+			"voicelineId": 37046,
+			"title": "Comida que más le gusta...",
+			"voicelineType": "6003",
+			"description": "¿Has probado el estofado de carne al vino tinto? Alcohol y unos buenos trozos de carne en el mismo plato... Delicioso.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_foodLike"
+		},
+		{
+			"voicelineId": 37047,
+			"title": "Comida que menos le gusta...",
+			"voicelineType": "6004",
+			"description": "¿Lo... lo que se unta en la tortilla de papas es mermelada? ¡No tiene sentido!",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_foodDislike"
+		},
+		{
+			"voicelineId": 37075,
+			"title": "Al recibir un regalo (I)",
+			"voicelineType": "6007",
+			"description": "Parece que tenemos gustos parecidos en cuanto a la comida.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_spice_pref_01"
+		},
+		{
+			"voicelineId": 37076,
+			"title": "Al recibir un regalo (II)",
+			"voicelineType": "6008",
+			"description": "Al menos me servirá para llenar el estómago.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_spice_normal_01"
+		},
+		{
+			"voicelineId": 37077,
+			"title": "Al recibir un regalo (III)",
+			"voicelineType": "6009",
+			"description": "¿De verdad te gusta esta comida?",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_spice_dislike_01"
+		},
+		{
+			"voicelineId": 37048,
+			"title": "Cumpleaños...",
+			"voicelineType": "7001",
+			"description": "Hoy es tu cumpleaños, ¿hay alguien o algo de lo que tengas que hacerte cargo? Puedo ayudarte, pero no se lo cuentes a nadie.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 37049,
+			"title": "El sentimiento de Ascensión - Introducción",
+			"voicelineType": "8001",
+			"description": "Oh, qué bien me siento.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37050,
+			"title": "El sentimiento de Ascensión - Desarrollo",
+			"voicelineType": "8002",
+			"description": "¿Necesitas ayuda? Justo ahora estoy libre.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37051,
+			"title": "El sentimiento de Ascensión - Nudo",
+			"voicelineType": "8003",
+			"description": "No está mal. Cuanto más fuerte sea, más eficaz seré.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37052,
+			"title": "El sentimiento de Ascensión - Desenlace",
+			"voicelineType": "8004",
+			"description": "Aunque se me da muy bien luchar y matar, nunca había tenido tanta fuerza. Gracias por bendecirme de esta manera.",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 37053,
+			"title": "Habilidad Elemental (I)",
+			"voicelineType": "100001",
+			"description": "¡Jiá!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill1_01"
+		},
+		{
+			"voicelineId": 37054,
+			"title": "Habilidad Elemental (II)",
+			"voicelineType": "100002",
+			"description": "¡Sentencia!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill1_02"
+		},
+		{
+			"voicelineId": 37055,
+			"title": "Habilidad Elemental (III)",
+			"voicelineType": "100003",
+			"description": "¡No corras!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill1_03"
+		},
+		{
+			"voicelineId": 37056,
+			"title": "Habilidad Definitiva (I)",
+			"voicelineType": "200001",
+			"description": "¡Sanciones!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill3_01"
+		},
+		{
+			"voicelineId": 37057,
+			"title": "Habilidad Definitiva (II)",
+			"voicelineType": "200002",
+			"description": "¡Tiembla!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill3_02"
+		},
+		{
+			"voicelineId": 37058,
+			"title": "Habilidad Definitiva (III)",
+			"voicelineType": "200003",
+			"description": "Luces fuera...",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill3_03"
+		},
+		{
+			"voicelineId": 37059,
+			"title": "Al abrir un cofre (I)",
+			"voicelineType": "300001",
+			"description": "Humm, hay algunas cosas interesantes aquí.",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_chest_open_01"
+		},
+		{
+			"voicelineId": 37060,
+			"title": "Al abrir un cofre (II)",
+			"voicelineType": "300002",
+			"description": "Supongo que no llevó mucho esfuerzo.",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_chest_open_02"
+		},
+		{
+			"voicelineId": 37061,
+			"title": "Al abrir un cofre (III)",
+			"voicelineType": "300003",
+			"description": "Eso estuvo... bastante bien.",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_chest_open_03"
+		},
+		{
+			"voicelineId": 37062,
+			"title": "Vida baja (I)",
+			"voicelineType": "410001",
+			"description": "¡Hum! Las cosas se ponen interesantes.",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_01"
+		},
+		{
+			"voicelineId": 37063,
+			"title": "Vida baja (II)",
+			"voicelineType": "410002",
+			"description": "Parece que hoy tendré que hacer horas extra.",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_02"
+		},
+		{
+			"voicelineId": 37064,
+			"title": "Vida baja (III)",
+			"voicelineType": "410003",
+			"description": "Así que sabes lo que haces...",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_03"
+		},
+		{
+			"voicelineId": 37065,
+			"title": "Aliado con vida baja (I)",
+			"voicelineType": "400001",
+			"description": "¡Yo me encargaré de esto!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 37066,
+			"title": "Aliado con vida baja (II)",
+			"voicelineType": "400002",
+			"description": "¡No intentes hacerte {F#la heroína}{M#el héroe}!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 37067,
+			"title": "Derrotada (I)",
+			"voicelineType": "500001",
+			"description": "Al fin... No más... trabajo...",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_die_01"
+		},
+		{
+			"voicelineId": 37068,
+			"title": "Derrotada (II)",
+			"voicelineType": "500002",
+			"description": "Tal vez este es... mi destino...",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_die_02"
+		},
+		{
+			"voicelineId": 37069,
+			"title": "Derrotada (III)",
+			"voicelineType": "500003",
+			"description": "¿Es... mi último trabajo?",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_die_03"
+		},
+		{
+			"voicelineId": 37070,
+			"title": "Recibiendo un ligero ataque (I)",
+			"voicelineType": "900001",
+			"description": "Ya veo...",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 37071,
+			"title": "Recibiendo un fuerte ataque (I)",
+			"voicelineType": "910001",
+			"description": "¡Qué molestia!",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 37072,
+			"title": "Unirse al equipo (I)",
+			"voicelineType": "600001",
+			"description": "Oí que tienes un encargo para mí.",
+			"voicefile": "VO_teamJoin/vo_rosaria_teamJoin_01"
+		},
+		{
+			"voicelineId": 37073,
+			"title": "Unirse al equipo (II)",
+			"voicelineType": "600002",
+			"description": "No te quedes atrás.",
+			"voicefile": "VO_teamJoin/vo_rosaria_teamJoin_02"
+		},
+		{
+			"voicelineId": 37074,
+			"title": "Unirse al equipo (III)",
+			"voicelineType": "600003",
+			"description": "Cuanto antes acabemos, mejor.",
+			"voicefile": "VO_teamJoin/vo_rosaria_teamJoin_03"
+		}
+	]
+}

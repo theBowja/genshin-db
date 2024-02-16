@@ -1,0 +1,759 @@
+{
+	"id": 10000067,
+	"name": "Collei",
+	"friendLines": [
+		{
+			"voicelineId": 67000,
+			"title": "初次见面…",
+			"voicelineType": "1000",
+			"description": "见习巡林员柯莱，前来报到！我会保障你在林间出行时的安全——呼，总算能说出这句出场词了，我没念错字吧…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_draw_appear"
+		},
+		{
+			"voicelineId": 67001,
+			"title": "闲聊·巡林路线图",
+			"voicelineType": "1101",
+			"description": "今天的巡林路线图…先往这里再拐到那里…嗯，字好多…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_01"
+		},
+		{
+			"voicelineId": 67002,
+			"title": "闲聊·状态",
+			"voicelineType": "1102",
+			"description": "呼，今天的状态不错，趁着这个机会，多做一点事吧。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_02"
+		},
+		{
+			"voicelineId": 67003,
+			"title": "闲聊·回忆",
+			"voicelineType": "1103",
+			"description": "手头没有事情，心里就容易东想西想——唔，一说就想起了不好的事…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_character_idle_03"
+		},
+		{
+			"voicelineId": 67004,
+			"title": "雨过天晴…",
+			"voicelineType": "1201",
+			"description": "雨虽然停了，还是要小心水洼。就像一些事，明明过去了还是会留下回忆…咳咳！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 67005,
+			"title": "打雷的时候…",
+			"voicelineType": "1202",
+			"description": "打雷的时候，最好避开大树。对巡林员来说，还要格外注意检查，谨防森林火灾。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_thunder_01"
+		},
+		{
+			"voicelineId": 67006,
+			"title": "阳光很好…",
+			"voicelineType": "1203",
+			"description": "天气不错，多晒晒太阳，对身体也好。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_sunny_01"
+		},
+		{
+			"voicelineId": 67007,
+			"title": "刮大风了…",
+			"voicelineType": "1204",
+			"description": "嗯，风力正好。安柏应该会很喜欢趁这样的天气挑战自己吧。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_weather_gale_01"
+		},
+		{
+			"voicelineId": 67008,
+			"title": "早上好…",
+			"voicelineType": "1001",
+			"description": "早上好！哈…抱歉，昨晚又在补习…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 67009,
+			"title": "中午好…",
+			"voicelineType": "1002",
+			"description": "巡林路线一长，中午回不来也很正常。我多准备了一些「口袋饼」，要来一份吗？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 67010,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "天快黑了，走在林子里一定要加倍小心。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 67011,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "准备休息了吗？篝火已经生好了，我会为你守夜的。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 67012,
+			"title": "关于柯莱自己·巡林",
+			"voicelineType": "2001",
+			"description": "来须弥之前，我在野外流浪过一段日子，能吃不能吃的东西都尝过了好几遍，对野外还算熟悉，所以来这儿之后就做起了巡林的工作。如果「野外生存」也算一门课目的话，我还是有自信考到及格的…嗯，不做笔试的话。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_idle"
+		},
+		{
+			"voicelineId": 67013,
+			"title": "关于柯莱自己·补习",
+			"voicelineType": "2005",
+			"description": "欸？你问我每天都在补习什么？跟着这么厉害的师父，是不是什么很高深的知识…呃…这个么…《提瓦特识字大全》…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67014,
+			"title": "关于我们·旧识",
+			"voicelineType": "2003",
+			"description": "我听安柏在信里提起过你，没想到在蒙德又发生了这么多事。可惜跳着字读，好多细节都没弄懂…欸，你愿意再跟我讲一遍吗？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「巨龙与自由之歌」剧情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						39604
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67015,
+			"title": "关于我们·新交",
+			"voicelineType": "2002",
+			"description": "我曾经以为「朋友」什么的，这辈子都不会和我扯上关系，直到去了蒙德…后来在须弥遇见了师父，现在又遇到了你。果然，我还是很幸运的啊。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67016,
+			"title": "关于「神之眼」…",
+			"voicelineType": "3001",
+			"description": "哈…真没想到，我也会有拿到神之眼的一天。以前总觉得神明会看的，都是那些生来就被大家喜欢的人…唔，我…我承认我有很多不好的偏见。是我不对。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67017,
+			"title": "有什么想要分享·技能名",
+			"voicelineType": "3002",
+			"description": "师父常说最有效的学习就是实践，所以我偶尔也会找些轻小说来看，想多认些字…起码比师父的论文好读。不过，我最近读到的一本书里，主角有好多能力，起的名字全是我看不懂的词…嗯？书的名字？应该是叫…《鬼武道》？你也读过吗？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_share_01"
+		},
+		{
+			"voicelineId": 67018,
+			"title": "有什么想要分享·封印之力",
+			"voicelineType": "3005",
+			"description": "唔哇…又是「被封印的力量在躁动」…还有什么「离我远点才是上策」…为什么稻妻人都能这么自然地说出这些话，他们以后不会觉得尴尬吗？啊…不行，不能再读下去了！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67019,
+			"title": "感兴趣的见闻…",
+			"voicelineType": "3003",
+			"description": "花草动物吗…除了能不能吃，好像也没有太大区别。嘘，这话不能被师父听见。要问我的话，我比较喜欢有树洞的树？尤其是在想要「找个地方钻进去」的时候…每个人都会有的吧？不是吗？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_gift_01"
+		},
+		{
+			"voicelineId": 67020,
+			"title": "关于提纳里…",
+			"voicelineType": "4001",
+			"description": "师父虽然平时说话有些严厉，还经常批评那些乱吃毒蘑菇的冒险家，但他其实是个很温柔的人。不仅会耐心地给我补课，还会为我读蒙德寄来的信。我一直很感激他！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67021,
+			"title": "关于多莉…",
+			"voicelineType": "4002",
+			"description": "有次我在巡林路上遇见了她，像是知道我口渴一样，她从袋子里掏出了一瓶看起来特别好喝的果汁…还好当时师父在场，制止了她。不然，我差点就一个冲动，把好不容易攒起来的摩拉都花出去了…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67022,
+			"title": "关于小吉祥草王…",
+			"voicelineType": "4003",
+			"description": "草神啊…小时候我很多次想大声问问神明，为什么要让我经历这么多苦难。唉，说不定就连神明自己，也经历着各种无奈的事吧。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67023,
+			"title": "关于赛诺…",
+			"voicelineType": "4004",
+			"description": "欸…我们能不提他吗？不，大风纪官不是什么坏人，当初就是他带着我从蒙德回到了须弥，才让我有了安身的地方。只是一想起回须弥前那个「封印」的过程…唔…脖子后边又开始觉得痛了…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67024,
+			"title": "关于卡维…",
+			"voicelineType": "4005",
+			"description": "大风纪官曾带着他来我们这里吃过一顿饭。在餐前水果刚端上桌的时候，他就开始大谈他那个又不讲情理又固执的室友，我们连插话的时机都找不到。只能点点头，憋着笑，吃完了整顿饭。唉，真是不容易。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67025,
+			"title": "关于妮露…",
+			"voicelineType": "4006",
+			"description": "感觉她有点迷迷糊糊的样子，如果来化城郭附近表演的话，不会走着走着就迷路在深林里吧…那我可一定要好好看着她，尽我见习巡林员的职责。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67026,
+			"title": "关于安柏…",
+			"voicelineType": "4007",
+			"description": "安柏她真的很厉害，又热情又活泼，又勇敢又正义…是我最钦佩、最崇拜的人了！她总能像一团火一样照亮别人，要不是她，我肯定没法走到今天这一步…过了这么久，她现在一定变得更加沉稳、更加帅气了吧！真不知道什么时候才能赶上她。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67027,
+			"title": "关于凯亚…",
+			"voicelineType": "4008",
+			"description": "蒙德的大家都还好吗？那阵子我可是惹了不少麻烦啊，要不要找个时间回去道歉呢…唔，但感觉一露面就会被那位骑兵队长捉弄…还是再等等吧，再等等…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67028,
+			"title": "关于丽莎…",
+			"voicelineType": "4009",
+			"description": "明明已经过去了那么久，丽莎给我写信的时候，还是在叫我「小柯莱」，总感觉…嗯？你说她也叫你小可爱？噗…对不起，我不是有意要笑出来的…一下子就开心了好多啊。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67029,
+			"title": "关于菲谢尔…",
+			"voicelineType": "4010",
+			"description": "…「断罪之皇女」？抱歉，我在蒙德待的时间不长，没有听过这样的人物。不过这个名字…嘶…咳，没什么。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_fischl_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67068,
+			"title": "关于珐露珊…",
+			"voicelineType": "4011",
+			"description": "呃…老实说，我不太擅长应付这位前辈…虽然她经常夸我勤奋好学，但我真的是因为学得太慢，没办法了，才总是在补习啊！还有一回，我不小心看到了她的研究笔记，虽然只瞟了一眼，但那绝对是全须弥最可怕的书！——上面全是古文，我连半个字都看不懂。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67030,
+			"title": "想要了解柯莱·其一",
+			"voicelineType": "5001",
+			"description": "我的事情么？如果你问的是来须弥之前的…唔，要不…你写信问一下安柏？啊，不行，要是让凯亚发现了就全完了…不对，他肯定会发现的吧！还、还是我自己来说吧，呼——对不起！请先让我再做几天心理准备…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_01"
+		},
+		{
+			"voicelineId": 67031,
+			"title": "想要了解柯莱·其二",
+			"voicelineType": "5002",
+			"description": "流浪到蒙德的时候，我对安柏他们说了很多不该说的话，现在回想起来还是会很羞愧…我这人真是的，怎么能对想帮我的人说那些话呢！他们那时候究竟是怎么看我的？想想就又…呜，抱歉，今天先到这里可以吗？不然等到明天…我又要为刚刚说过的话后悔了。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到3后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67032,
+			"title": "想要了解柯莱·其三",
+			"voicelineType": "5003",
+			"description": "因为「魔鳞病」的关系，我曾经被送到「博士」手下治疗…不，那不是治疗，而是「实验」。在那种环境里待久了，我也不由开始想，自己到底做错了什么？为什么没有人来救我…渐渐地，就连「愚人众」以外的人也一并恨上了。现在想想…实在是，太幼稚了。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67033,
+			"title": "想要了解柯莱·其四",
+			"voicelineType": "5004",
+			"description": "多亏有你们在，「魔鳞病」消失了，是我从前想都不敢想的奇迹。嗯…我一直对完全治愈不抱希望，只想在身体不能活动前，多做一些事情。起初是复仇，后来是巡林…现在，我终于可以自由地活下去了。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到5后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "完成「虚空鼓动，劫火高扬」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67034,
+			"title": "想要了解柯莱·其五",
+			"voicelineType": "5005",
+			"description": "你接下来还会继续旅行吗，请让我多尽一份力吧。我会努力学习…不管是认字还是学医术，还有战斗、排查危险…甚至是检查路灯这种小事！希望这一路上，能有更多和我一样的人得到帮助——就像你拯救了我一样。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「虚空鼓动，劫火高扬」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67035,
+			"title": "柯莱的爱好…",
+			"voicelineType": "6001",
+			"description": "爱好嘛…缝纫、练习飞行，还有帮助他人！嗯？你说听着有点耳熟？因为…我也想成为「能照亮别人的人」。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_hobby"
+		},
+		{
+			"voicelineId": 67036,
+			"title": "柯莱的烦恼…",
+			"voicelineType": "6002",
+			"description": "「针对当前…农作物品种…单一化…避兔长期食用菌类…采取的进口错施…」——这都是什么和什么啊？为什么教令院的论文连「不想吃蘑菇」都能写得这么复杂啊！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_dialog_annoyed"
+		},
+		{
+			"voicelineId": 67037,
+			"title": "喜欢的食物…",
+			"voicelineType": "6005",
+			"description": "「口袋饼」方便携带，又容易吃饱，应该是我最常吃的东西了？如果不考虑肚子的需要，我最喜欢的食物…嗯，应该是「炸萝卜丸子」吧。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 67038,
+			"title": "讨厌的食物…",
+			"voicelineType": "6004",
+			"description": "流浪的时候肚子饿了，连钩钩果都要掰碎了吃下去，所以我没有什么特别讨厌的食物。一定要说的话，我不会碰的只有各种蘑菇吧？和口味无关，只是不希望被师父长篇大论批评的人是自己而已…",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_foodDislike"
+		},
+		{
+			"voicelineId": 67039,
+			"title": "收到赠礼·其一",
+			"voicelineType": "6007",
+			"description": "嗯——真好吃！你能教教我吗？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_pref_01"
+		},
+		{
+			"voicelineId": 67040,
+			"title": "收到赠礼·其二",
+			"voicelineType": "6008",
+			"description": "有这手艺，流浪在外也不会饿肚子了吧。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_normal_01"
+		},
+		{
+			"voicelineId": 67041,
+			"title": "收到赠礼·其三",
+			"voicelineType": "6009",
+			"description": "抱歉，师父交代过我，不能吃奇怪的东西。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_spice_dislike_01"
+		},
+		{
+			"voicelineId": 67042,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "生、生日快乐！这个是我准备的蛋糕，这个是备用的蜡烛…安柏在信里说这样就行…啊，还有、还有这个是送给你的礼物！\n…不好意思，我没什么办生日会的经验，也不知道合不合你的心意…弄得手忙脚乱的。有什么不足一定要跟我说，明年，我一定会准备得更好！",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 67043,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "我这是在进步吗？",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「1」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67044,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "我能感觉得到，我已经…不再是以前的我了。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「2」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67045,
+			"title": "突破的感受·转",
+			"voicelineType": "8003",
+			"description": "就算到生死关头，也不必再依靠「它们」的力量了。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「4」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 67046,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "现在的我，即使解开被封印的力量，也可以驾驭自如了吧？嘿！\n说笑的，和你一起辛苦冒险的经历，才是我现在拥有的力量啊。",
+			"voicefile": "VO_friendship/VO_collei/vo_collei_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「6」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 67047,
+			"title": "元素战技·其一",
+			"voicelineType": "100002",
+			"description": "去。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_02"
+		},
+		{
+			"voicelineId": 67048,
+			"title": "元素战技·其二",
+			"voicelineType": "100003",
+			"description": "飞吧。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_03"
+		},
+		{
+			"voicelineId": 67069,
+			"title": "元素战技·其三",
+			"voicelineType": "100001",
+			"description": "嘿。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill1_01"
+		},
+		{
+			"voicelineId": 67049,
+			"title": "元素爆发·其一",
+			"voicelineType": "200001",
+			"description": "拜托了，柯里安巴！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_01"
+		},
+		{
+			"voicelineId": 67050,
+			"title": "元素爆发·其二",
+			"voicelineType": "200002",
+			"description": "试、试试这个！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_02"
+		},
+		{
+			"voicelineId": 67051,
+			"title": "元素爆发·其三",
+			"voicelineType": "200003",
+			"description": "来跳舞吧！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_skill3_03"
+		},
+		{
+			"voicelineId": 67052,
+			"title": "打开宝箱·其一",
+			"voicelineType": "300001",
+			"description": "在野外要时刻注意补给。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_01"
+		},
+		{
+			"voicelineId": 67053,
+			"title": "打开宝箱·其二",
+			"voicelineType": "300002",
+			"description": "真幸运啊。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_02"
+		},
+		{
+			"voicelineId": 67054,
+			"title": "打开宝箱·其三",
+			"voicelineType": "300003",
+			"description": "嗯…箱里没长毒蘑菇吧。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_chest_open_03"
+		},
+		{
+			"voicelineId": 67055,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "我…还撑得住！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_01"
+		},
+		{
+			"voicelineId": 67056,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "这点小痛，不算什么！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_02"
+		},
+		{
+			"voicelineId": 67057,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "需要…尽快治疗…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_03"
+		},
+		{
+			"voicelineId": 67058,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "身体要紧！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 67059,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "这样下去不太妙啊。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 67060,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "得做优秀的…巡林员。",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_01"
+		},
+		{
+			"voicelineId": 67061,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "居然会…这么倒下…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_02"
+		},
+		{
+			"voicelineId": 67062,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "还是…到这一天了…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_life_die_03"
+		},
+		{
+			"voicelineId": 67063,
+			"title": "重受击·其一",
+			"voicelineType": "910001",
+			"description": "怎么会…",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 67064,
+			"title": "重受击·其二",
+			"voicelineType": "910002",
+			"description": "别碰我！",
+			"voicefile": "VO_gameplay/VO_collei/vo_collei_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 67065,
+			"title": "加入队伍·其一",
+			"voicelineType": "600001",
+			"description": "就由我来保护。",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_01"
+		},
+		{
+			"voicelineId": 67066,
+			"title": "加入队伍·其二",
+			"voicelineType": "600002",
+			"description": "准备齐全，出发吧！",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_02"
+		},
+		{
+			"voicelineId": 67067,
+			"title": "加入队伍·其三",
+			"voicelineType": "600003",
+			"description": "见习巡林员报到！",
+			"voicefile": "VO_teamJoin/vo_collei_teamJoin_03"
+		}
+	]
+}

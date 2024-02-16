@@ -1,0 +1,810 @@
+{
+	"id": 10000022,
+	"name": "Venti",
+	"friendLines": [
+		{
+			"voicelineId": 11100,
+			"title": "Hello",
+			"voicelineType": "1000",
+			"description": "*Yawn* That was a refreshing sleep. Ah, Traveler, we meet again! What? You don't remember me? Ahaha, well, allow me to join you on your quest once again. I must see to it that the bards of the world tell the Traveler's tales!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_draw_appear"
+		},
+		{
+			"voicelineId": 11101,
+			"title": "Chat: Playing the Lyre",
+			"voicelineType": "1101",
+			"description": "Sure, I'll play you another tune, but it'll cost you an apple.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_explore_idle_01"
+		},
+		{
+			"voicelineId": 11102,
+			"title": "Chat: Apple Cider",
+			"voicelineType": "1102",
+			"description": "Right now I wish I was sitting at the top of a tree, looking out over a meadow, cider in hand...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_explore_idle_02"
+		},
+		{
+			"voicelineId": 11103,
+			"title": "Chat: Ballads",
+			"voicelineType": "1103",
+			"description": "Come on Traveler, let's go! The world is full of lost ballads just waiting to be rediscovered.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_explore_idle_03"
+		},
+		{
+			"voicelineId": 11104,
+			"title": "When It Rains",
+			"voicelineType": "1201",
+			"description": "Let's go jumping in puddles and see who can make the biggest splash!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 11105,
+			"title": "After the Rain",
+			"voicelineType": "1202",
+			"description": "It's stopped raining already? A shame, I wanted to play some more.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 11106,
+			"title": "When It Snows",
+			"voicelineType": "1203",
+			"description": "Let's wait till the snow gets heavier and have a snowball fight!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_weather_snowy_01"
+		},
+		{
+			"voicelineId": 11107,
+			"title": "When the Wind Is Blowing",
+			"voicelineType": "1204",
+			"description": "The wind has returned! Quick, let's go gliding!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_weather_gale_01"
+		},
+		{
+			"voicelineId": 11108,
+			"title": "Good Morning",
+			"voicelineType": "1001",
+			"description": "Morning! Ah... what's in store for today?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 11109,
+			"title": "Good Afternoon",
+			"voicelineType": "1002",
+			"description": "My tummy is rumbling, but I can't get caught pilfering food from the Dawn Winery again... Oh, it's you! Where are you heading? May I join?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 11110,
+			"title": "Good Evening",
+			"voicelineType": "1003",
+			"description": "Hmm, I'm still not sleepy. Fancy an evening stroll?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 11111,
+			"title": "Good Night",
+			"voicelineType": "1004",
+			"description": "Off to the land of nod? Haha, farewell, my friend!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 11112,
+			"title": "About Venti",
+			"voicelineType": "2001",
+			"description": "Practice? Me? There's no need — I already know every song in Teyvat!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_idle"
+		},
+		{
+			"voicelineId": 11113,
+			"title": "About Us: New Songs",
+			"voicelineType": "2002",
+			"description": "I have decided to write a song about you! What are you giving me that look for? Can't afford it? Don't be preposterous, the price for you, my friend, is precisely zero Mora! Although... one thing you could do is tell me a few more of your stories!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_close1"
+		},
+		{
+			"voicelineId": 11114,
+			"title": "About Us: Heroes",
+			"voicelineType": "2003",
+			"description": "Haha, once the {M#hero}{F#heroine} in the song has actually rescued the {M#princess}{F#prince}, I will ensure this song spreads to every corner of the continent!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_close2_heroine",
+			"voicefile_male": "VO_friendship/VO_venti/vo_venti_dialog_close2_hero",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11115,
+			"title": "About Us: Apostles",
+			"voicelineType": "2004",
+			"description": "Ahh... an evening breeze really sets the mood for becoming my disciple, don't you think? We can do it right now... you just need to make me a small offering...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"Song of the Dragon and Freedom\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						39604
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11116,
+			"title": "About Us: Requests",
+			"voicelineType": "2005",
+			"description": "What's that? You think I should try harder to be a good Anemo Archon? Well, you could be a better devotee too... you could be more pious, more passionate, or... um...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_close4",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"Song of the Dragon and Freedom\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						39604
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11117,
+			"title": "About the Vision",
+			"voicelineType": "3001",
+			"description": "Hmm? You want to know about my Vision? Oh, go on then, take a look for yourself. I can make you a matching one if you like! Hehehe.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11118,
+			"title": "Something to Share",
+			"voicelineType": "3002",
+			"description": "Olah! Haha, that's how the Hilichurls say \"hello.\" Why, I learned it to aid with my songwriting, of course! Vast knowledge makes for a richer composition... That said, I haven't actually written any songs in Hilichurlian so far...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_share"
+		},
+		{
+			"voicelineId": 11119,
+			"title": "Interesting Things",
+			"voicelineType": "3003",
+			"description": "Traveler, have you ever seen a Cecilia? It's a magnificent white wildflower that only grows on the most remote mountains and clifftops. To me, at least, it is the most beautiful flower in all of Teyvat.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_pref_gift"
+		},
+		{
+			"voicelineId": 11120,
+			"title": "About Jean",
+			"voicelineType": "4001",
+			"description": "Acting Grand Master Jean... Well, what do you think of her? Yes, I couldn't agree more: conscientious, courageous... kind and considerate too. Reminds me of another good friend...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11121,
+			"title": "About Diluc",
+			"voicelineType": "4002",
+			"description": "I'm not surprised you want to befriend Master Diluc. Just think of all the vintage wine he must have stored away... Mwuhahaha... Huh? He doesn't let you sample it? Not even the slightest drop? Huh... Well, I guess you can still appreciate the aroma. That's still better than no wine at all, right? No?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11122,
+			"title": "About Barbara",
+			"voicelineType": "4003",
+			"description": "The darling Deaconess with the sweet singing voice — do you know her? You do? Idol, huh? Meet and greets? Concerts? Wow... That's the power of music for you...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11123,
+			"title": "About Razor",
+			"voicelineType": "4004",
+			"description": "Ah yes, the white-haired fellow from Wolvendom? Raised by wolves? Really? ... No wonder his scent is so familiar...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_razor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11124,
+			"title": "About Mona",
+			"voicelineType": "4005",
+			"description": "Oh, that astrologer? How should I put it? Fortune-telling and my singing are the same: Both lead to you being so poor you can't even cough up the money for a drink! ...You think that astrology is a cultural tradition, so at least still has some value? Hmph, so rude. In that case, so too is singing, so it still has its value too!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_mona_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11125,
+			"title": "About Diona",
+			"voicelineType": "4006",
+			"description": "There's a special drink known far and wide at Cat's Tail. But it ah... ahh... ACHOO! *sniffs* How about you go and fetch one for me? I'll be truly thankful, I promise.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_diona_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11126,
+			"title": "About Albedo",
+			"voicelineType": "4007",
+			"description": "How do you explain white chalk in black soil, or the earth's dense crust amidst the emptiness of space? Same reason the purest soil gave birth to human life... It's an ancient power with unmistakable properties. Trying to harness it is dangerous indeed, I can't imagine what would happen if someone lost control of it in the city... Ah, never mind! What goes on within Mondstadt's walls is up to Mondstadt's people to deal with!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11127,
+			"title": "About Morax",
+			"voicelineType": "4008",
+			"description": "Have you seen that gentleman around? Huh? He's just a normal man by the name of Zhongli now? That must be quite the change for that old block-head. Come with me to see him, will you? I have a vintage I dug up from Windrise that I can take as a condolence gift. Oh, ahh... did he still seem strong when you saw him? How strong? Am I likely to get blown away?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_morax_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11128,
+			"title": "About Eula",
+			"voicelineType": "4009",
+			"description": "Eula has good taste when it comes to beverages of the alcoholic variety. Come summer or winter, she always likes them ice-cold. That's rare among Mondstadters these days! She and I would make great drinking buddies. Huh? My songs about the Lawrence Clan... She's heard them already? Eh, no harm done. Maybe she and I can do a duet sometime!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11167,
+			"title": "About Baal",
+			"voicelineType": "4010",
+			"description": "So, I hear you defeated the mighty Raiden Shogun? Ah, I recall the days when she was a kagemusha, seeking to perfect her martial prowess. Hehe, she now no doubt employs a wide range of reasoning to get you to train with her. Oh but yes, come close and I shall let you in on her weakness — desserts!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_baal_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Omnipresence Over Mortals\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11171,
+			"title": "About Buer",
+			"voicelineType": "4011",
+			"description": "The first thing you think of when you hear \"Dendro Archon\" is her power over dreams. Her dreams are akin to my ballads: full of emotion and imagination. It goes without saying that we get along really well.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Akasha Pulses, the Kalpa Flame Rises\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11172,
+			"title": "About Furina",
+			"voicelineType": "4012",
+			"description": "A bard must be versed in both music and song, but a stage performer requires far more skills than just these... Hey, don't you think we should invite her over to put on a show at the next Windblume Festival? ...Huh? You want me to talk about how she saved Fontaine? Well, I mean, she's such a talented artiste, it's no wonder. I wouldn't be surprised even if she'd saved the entire world.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Masquerade of the Guilty\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11129,
+			"title": "More About Venti: I",
+			"voicelineType": "5001",
+			"description": "Perfect timing, Traveler! I was about to ask you — what is your greatest wish?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_friendship_01"
+		},
+		{
+			"voicelineId": 11130,
+			"title": "More About Venti: II",
+			"voicelineType": "5002",
+			"description": "There's never a dull moment traveling with you! The only minor inconvenience is that pesky little pixie thing that follows you everywhere... She never stops eating — I can't begin to imagine how much you spend on food!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11131,
+			"title": "More About Venti: III",
+			"voicelineType": "5003",
+			"description": "The Pyro Archon is a wayward, warmongering wretch, and the Geo Archon is a brutish, blundering buffoon! How do I know? Because, this is written in the epic poems of days gone by!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11132,
+			"title": "More About Venti: IV",
+			"voicelineType": "5004",
+			"description": "Celestia... I'm not sure even I could fly that far. In any case, the water there tastes foul, and the fruit is bland. You know what that means? No cider! Haha, in that case, I wouldn't go there even if I was invited.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11133,
+			"title": "More About Venti: V",
+			"voicelineType": "5005",
+			"description": "My greatest wish? It has always been to roam free and experience the whole world. Now, I would add that wherever I go, it simply must be with you! Each day with you is an adventure, and where adventurers go, storytellers must follow!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11134,
+			"title": "Venti's Hobbies",
+			"voicelineType": "6001",
+			"description": "I like to drink! And I like the wind! If only there were such a thing as wind-brewed cider...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_pref_hobby"
+		},
+		{
+			"voicelineId": 11135,
+			"title": "Venti's Troubles",
+			"voicelineType": "6002",
+			"description": "I'm actually highly allergic to cats. I start sneezing as soon as they enter the vicinity, and... Aah... Aa-choo! Ugh, apparently I can't even THINK about cats without sneezing. Do you think there is a cure for this monstrous affliction?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_dialog_annoyed"
+		},
+		{
+			"voicelineId": 11136,
+			"title": "Favorite Food",
+			"voicelineType": "6003",
+			"description": "Here, have an apple. I just picked it. Look how ripe and juicy it is... *munching* ... Truly the fruit of the gods.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_pref_foodLike"
+		},
+		{
+			"voicelineId": 11137,
+			"title": "Least Favorite Food",
+			"voicelineType": "6004",
+			"description": "Hmm, what's that tasty morsel you've got there...? Eww! A melted cheese pancake? A smelly, sticky, slimy, disgusting mess!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_pref_foodDislike"
+		},
+		{
+			"voicelineId": 11168,
+			"title": "Receiving a Gift: I",
+			"voicelineType": "6007",
+			"description": "Ahh, quite delightful! So... could I get the same again tomorrow? ...And maybe the day after that?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_spice_pref_01"
+		},
+		{
+			"voicelineId": 11169,
+			"title": "Receiving a Gift: II",
+			"voicelineType": "6008",
+			"description": "Oof, I'm so full... I'll have to pass on the post-meal fruits this time...",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_spice_normal_01"
+		},
+		{
+			"voicelineId": 11170,
+			"title": "Receiving a Gift: III",
+			"voicelineType": "6009",
+			"description": "I can't believe it, but I don't think I can stomach this... Oh boy... What a predicament.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_spice_dislike_01"
+		},
+		{
+			"voicelineId": 11138,
+			"title": "Birthday",
+			"voicelineType": "7001",
+			"description": "Someone once told me you're supposed to eat a cake on your birthday... Tada! Here's your birthday cake — it's apple-flavored! And here's a spoon. The cake didn't rise properly in the oven... That's why it looks more akin to an apple pie... Ugh, baking is really quite complicated!",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 11139,
+			"title": "Feelings About Ascension: Intro",
+			"voicelineType": "8001",
+			"description": "Woah! What was that?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11140,
+			"title": "Feelings About Ascension: Building Up",
+			"voicelineType": "8002",
+			"description": "Good work. Shall we repose for a moment with a tune? Shall it be a capriccio or a serenade?",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11141,
+			"title": "Feelings About Ascension: Climax",
+			"voicelineType": "8003",
+			"description": "Come, sit with me. I've written a new poem. I call it \"Wind of the Traveler.\"",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 11142,
+			"title": "Feelings About Ascension: Conclusion",
+			"voicelineType": "8004",
+			"description": "Hmm... Though I've long since viewed this scenery a great many times, there is something different about seeing it again with you. Surely you're not still concealing some other wondrous abilities? Hmm, even if you were, it would simply further prove that my intuition is correct.",
+			"voicefile": "VO_friendship/VO_venti/vo_venti_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 11143,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "Yoo-Hoo!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_skill1_01"
+		},
+		{
+			"voicelineId": 11144,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Here we go!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_skill1_02"
+		},
+		{
+			"voicelineId": 11145,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Brace yourselves!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_skill1_03"
+		},
+		{
+			"voicelineId": 11146,
+			"title": "Elemental Skill: IV",
+			"voicelineType": "100004",
+			"description": "Let's play!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_skill1_04"
+		},
+		{
+			"voicelineId": 11147,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Think you can get away?",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_skill3_01"
+		},
+		{
+			"voicelineId": 11148,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "Time for takeoff!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_skill3_02"
+		},
+		{
+			"voicelineId": 11149,
+			"title": "Sprint Start: I",
+			"voicelineType": "700001",
+			"description": "Wouldn't gliding be faster?",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 11150,
+			"title": "Deploying Wind Glider: I",
+			"voicelineType": "800001",
+			"description": "Yahoo!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 11151,
+			"title": "Opening Treasure Chest: I",
+			"voicelineType": "300001",
+			"description": "*clears throat* Have you heard The Ballad of the Treasure Chest?",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_chest_open_01"
+		},
+		{
+			"voicelineId": 11152,
+			"title": "Opening Treasure Chest: II",
+			"voicelineType": "300002",
+			"description": "Thank Barbatos! Wait a minute...",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_chest_open_02"
+		},
+		{
+			"voicelineId": 11153,
+			"title": "Opening Treasure Chest: III",
+			"voicelineType": "300003",
+			"description": "What a find! I wonder how many bottles this'll be worth...",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_chest_open_03"
+		},
+		{
+			"voicelineId": 11154,
+			"title": "Low HP: I",
+			"voicelineType": "410001",
+			"description": "Ugh, I'm not in the mood for this!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_less30_01"
+		},
+		{
+			"voicelineId": 11155,
+			"title": "Low HP: II",
+			"voicelineType": "410002",
+			"description": "Oh, dear!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_less30_02"
+		},
+		{
+			"voicelineId": 11156,
+			"title": "Low HP: III",
+			"voicelineType": "410003",
+			"description": "That was uncalled for.",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_less30_03"
+		},
+		{
+			"voicelineId": 11157,
+			"title": "Ally at Low HP: I",
+			"voicelineType": "400001",
+			"description": "Let me try!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 11158,
+			"title": "Ally at Low HP: II",
+			"voicelineType": "400002",
+			"description": "Don't give up!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 11159,
+			"title": "Fallen: I",
+			"voicelineType": "500001",
+			"description": "Let me sleep a while...",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_die_01"
+		},
+		{
+			"voicelineId": 11160,
+			"title": "Fallen: II",
+			"voicelineType": "500002",
+			"description": "Oh no, my lyre is broken...",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_die_02"
+		},
+		{
+			"voicelineId": 11161,
+			"title": "Fallen: III",
+			"voicelineType": "500003",
+			"description": "Ah... Ugh...",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_life_die_03"
+		},
+		{
+			"voicelineId": 11162,
+			"title": "Light Hit Taken: I",
+			"voicelineType": "900001",
+			"description": "Ah!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 11163,
+			"title": "Heavy Hit Taken: I",
+			"voicelineType": "910001",
+			"description": "How rude!",
+			"voicefile": "VO_gameplay/VO_venti/vo_venti_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 11164,
+			"title": "Joining Party: I",
+			"voicelineType": "600001",
+			"description": "Give me a moment to compose myself.",
+			"voicefile": "VO_teamJoin/vo_venti_teamJoin_01"
+		},
+		{
+			"voicelineId": 11165,
+			"title": "Joining Party: II",
+			"voicelineType": "600002",
+			"description": "Didn't keep you waiting, did I?",
+			"voicefile": "VO_teamJoin/vo_venti_teamJoin_02"
+		},
+		{
+			"voicelineId": 11166,
+			"title": "Joining Party: III",
+			"voicelineType": "600003",
+			"description": "Ready for a rehearsal?",
+			"voicefile": "VO_teamJoin/vo_venti_teamJoin_03"
+		}
+	]
+}

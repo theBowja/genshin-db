@@ -1,0 +1,864 @@
+{
+	"id": 10000027,
+	"name": "Ningguang",
+	"friendLines": [
+		{
+			"voicelineId": 15100,
+			"title": "Schön, dich kennenzulernen.",
+			"voicelineType": "1000",
+			"description": "Ich bin der „Tianquan“ der Qixing von Liyue, Ningguang. Wie wäre es mit einem kleinen Handel? Du darfst meine Leibwache sein, dafür zeige ich dir, wie man in Liyue vorankommt.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_draw_appear"
+		},
+		{
+			"voicelineId": 15101,
+			"title": "Gespräch – Antiquitäten",
+			"voicelineType": "1101",
+			"description": "Antiquitäten sind unbezahlbar. Das Glücksgefühl, wenn man eine ersteigert, hält aber nicht lange an.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_01"
+		},
+		{
+			"voicelineId": 15102,
+			"title": "Gespräch – Handelskrieg",
+			"voicelineType": "1102",
+			"description": "In einem Handelskrieg hinterlässt der perfekte Jäger keine Spuren.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_02"
+		},
+		{
+			"voicelineId": 15103,
+			"title": "Gespräch – Investitionen",
+			"voicelineType": "1103",
+			"description": "Wir müssen neue Investitionsmöglichkeiten finden. Mora wachsen schließlich nicht auf Bäumen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_03"
+		},
+		{
+			"voicelineId": 15104,
+			"title": "Wenn es regnet ...",
+			"voicelineType": "1201",
+			"description": "Es regnet. Halte mir bitte den Schirm auf.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 15105,
+			"title": "Wenn es schneit ...",
+			"voicelineType": "1202",
+			"description": "Dies ist doch ganz gewöhnlicher Schnee. Lass mich dir einmal zeigen, was echter „Schneefall“ in Liyue bedeutet.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_snowy_01"
+		},
+		{
+			"voicelineId": 15106,
+			"title": "Wie sonnig ...",
+			"voicelineType": "1203",
+			"description": "Gemäßigtes Wetter? Du darfst deinen Augen nicht trauen, deine Augen können dich täuschen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_sunny_01"
+		},
+		{
+			"voicelineId": 15107,
+			"title": "Ein Sturm zieht auf.",
+			"voicelineType": "1204",
+			"description": "Solch orkanartiges Wetter ist ein Albtraum für Fischerleute und erst recht für ... ach, nichts.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_gale_01"
+		},
+		{
+			"voicelineId": 15108,
+			"title": "Guten Morgen.",
+			"voicelineType": "1001",
+			"description": "Morgen. Melde deine Angelegenheiten, in der Reihenfolge der Priorität.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 15109,
+			"title": "Guten Tag.",
+			"voicelineType": "1002",
+			"description": "Möchtest du lieber in den Liuli-Pavillon oder in das Lokal Xinyue zum Mittagessen?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 15110,
+			"title": "Guten Abend.",
+			"voicelineType": "1003",
+			"description": "Das Teehaus ist bereits voll? Dann komm doch in mein Jadegemach. Aber nur, wenn du den Preis zahlen kannst.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Nach Abschluss von „Der Abschiedsbesuch“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15111,
+			"title": "Gute Nacht.",
+			"voicelineType": "1004",
+			"description": "Kein Problem, geh dich ausruhen. Sollte sich etwas Wichtiges ereignen, dann werde ich dich benachrichtigen lassen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 15112,
+			"title": "Über Ningguang – Weltanschauung",
+			"voicelineType": "2001",
+			"description": "Egal ob bei einer Preisverhandlung oder einem Handelskrieg, Ansehen und Geld sind zweitrangig. Um zu gewinnen, musst du der Erste sein und herausfinden, mit welchen Karten dein Gegenüber spielt.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle"
+		},
+		{
+			"voicelineId": 15113,
+			"title": "Über Ningguang – Eindruck",
+			"voicelineType": "2005",
+			"description": "Dein Eindruck von mir hat sich verändert? Hehe, zunächst brauchte ich deine Stärke, also musste ich so umgänglich wie möglich sein. Aber nun da wir durch einen Vertrag verbundene Partner sind, können wir solche unechten Formalitäten hinter uns lassen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Ein aufsteigender Stern“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15114,
+			"title": "Über uns – Gerüchte",
+			"voicelineType": "2002",
+			"description": "Du hast bestimmt einiges an Gerüchten über mich gehört. Wie ich wirklich bin? Nun, mach dir mit deinen eigenen Augen ein Bild ... Natürlich wird deine Meinung Teil der Gerüchte.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close1"
+		},
+		{
+			"voicelineId": 15115,
+			"title": "Über uns – Beobachtung",
+			"voicelineType": "2003",
+			"description": "Du bist jetzt schon eine ganze Weile an meiner Seite. Hast du jetzt verstanden, wie man gut beobachtet? Du kannst mich auch beobachten, bis du jemand wirst, der mir am nächsten steht.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15116,
+			"title": "Über uns – Jadegemach",
+			"voicelineType": "2004",
+			"description": "Komm hier nach vorn und stell dich neben mich. Kannst du das Jadegemach erkennen? Es war ursprünglich nur ein kleines Zimmer, jetzt überspannt es ganz Liyue. Wenn es eines Tages alle sieben Städte überspannt, dann sollst du erneut an meiner Seite stehen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Der Abschiedsbesuch“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15117,
+			"title": "Über das „Göttliche Auge“ ...",
+			"voicelineType": "3001",
+			"description": "Bei Angelegenheiten, die sich mit Mora erledigen lassen, braucht man kein „Göttliches Auge“. Von Angelegenheiten, die sich nicht mit Mora lösen lassen, gab es bisher nur eine.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15118,
+			"title": "Willst du mir etwas mitteilen – Bankhalter",
+			"voicelineType": "3002",
+			"description": "Glücksspieler setzen alles auf den nächsten Würfel, aber natürlich gewinnt am Ende immer die Bank.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share"
+		},
+		{
+			"voicelineId": 15119,
+			"title": "Willst du mir etwas mitteilen – Ziel",
+			"voicelineType": "3004",
+			"description": "Der Weggang von Rex Lapis wird keine kleine Herausforderung sein, für sowohl die Qixing als auch für die Stadt Liyue. Selten hat mich eine Angelegenheit so viel Schlaf gekostet wie die kürzlichen Ereignisse.\nDoch ich darf mein Ziel nicht aus den Augen verlieren. Es wird der Tag kommen, an dem die Schatten, die das Jadegemach wirft, jeden Winkel von Teyvat erreichen werden.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Ein aufsteigender Stern“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15120,
+			"title": "Interessante Vorkommnisse ...",
+			"voicelineType": "3003",
+			"description": "Texte aus dem alten Liyue preisen die Schönheit der Glaslilie, heutzutage jedoch steht sie kurz vor dem Aussterben. Man findet sie nur noch in der Nähe der Yujing-Terrasse, was ihren Preis natürlich besonders in die Höhe treibt.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_gift"
+		},
+		{
+			"voicelineId": 15121,
+			"title": "Über Beidou – Bußgeld",
+			"voicelineType": "4001",
+			"description": "Kapitän Beidou ... Auch wenn sie viele Bewunderer hat, hält sie das nicht davon ab, Regeln und Gesetze zu brechen. Die Bußgelder, die sie bereits zahlen musste, reichen, um ein komplett neues Schiff zu kaufen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15122,
+			"title": "Über Beidou – Einstellung",
+			"voicelineType": "4002",
+			"description": "Du hattest wohl noch nie schlechte Erfahrungen im Umgang mit Menschen. Alles, was zu sagen war, ist gesagt worden, Gutes und Schlechtes. Beidou hält jedoch weiter an ihrem eigenen Kurs fest. Also halte sie mir einfach aus dem Weg.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15123,
+			"title": "Über Zhongli ...",
+			"voicelineType": "4003",
+			"description": "Zhongli ... vom Bestattungsunternehmen Wangsheng ist sehr versiert in einer Reihe von Dingen. Jedoch ist er mir noch nicht wirklich von Nutzen, da ich seine Schwachstellen noch nicht kenne.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15124,
+			"title": "Über Xingqiu ...",
+			"voicelineType": "4004",
+			"description": "Der zweite Sohn der Händlergilde Feiyun. Solche Leute meiden mich in der Regel, was mir aber völlig klar ist. Ich habe auch nicht das Bedürfnis, mich mit ihm zu befassen. Leute mit unterschiedlichen Ansichten sollten besser nicht zusammenarbeiten.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15125,
+			"title": "Über Xiangling ...",
+			"voicelineType": "4005",
+			"description": "Dieses Mädchen vom Restaurant Wanmin ... wie misstrauisch sie mir gegenüber steht. Wenn sie nur wüsste, wie sehr ich das Restaurant in den letzten Jahren finanziell unterstützt habe ... Was für ein Gesicht sie dann wohl machen würde?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xiangling_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15126,
+			"title": "Über Ganyu ...",
+			"voicelineType": "4006",
+			"description": "Man sollte sich nie zu sehr auf andere verlassen oder gar von ihnen abhängig sein, selbst bei jemandem wie Ganyu. In Liyue gibt es ein Sprichwort „Selbst den Sorgfältigsten kann der Zufall einen Strich durch die Rechnung machen.“ Wichtige Verhandlungen nimmt man lieber selbst in die Hand.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15127,
+			"title": "Über Yaoyao ...",
+			"voicelineType": "4007",
+			"description": "Ich nehme an, du meinst das Mädchen, das Ganyu unter ihre Fittiche genommen hat. Keine Sorge, ich habe nicht vor, diese Angelegenheit öffentlich zu machen. Ich gebe mich damit zufrieden, ein wenig Nachsicht für das eine oder andere schelmische Manöver dieses Schiffskapitäns zu üben. Eine Sache aber. Yaoyao scheint in letzter Zeit etwas in Meeresfrüchte verliebt zu sein. Du solltest versuchen, sie davon zu überzeugen, mehr Obst und Gemüse in ihren Speiseplan aufzunehmen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15128,
+			"title": "Über Keqing ...",
+			"voicelineType": "4008",
+			"description": "Der Yuheng hat sich in der letzten Zeit sehr verändert. Ob das gut ist für Liyue oder nicht, das wird sich in Zukunft noch zeigen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Ein aufsteigender Stern“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15129,
+			"title": "Über Jean ...",
+			"voicelineType": "4009",
+			"description": "Der Stellvertretende Großmeister von Mondstadt ist eine strenge und unfehlbare Frau. Ihr perfektes Betragen kennt keine Fehler und selbst ihre Briefe sind akribisch genau verfasst und entsprechend aller geltenden Regeln gefaltet. Es sind diese oft leicht zu übersehenden Details, die einen tiefen Einblick in den Charakter gewähren.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15130,
+			"title": "Über Yanfei ...",
+			"voicelineType": "4010",
+			"description": "Yanfei? Hehe, in gewisser Weise ist sie also eine behutsame Gegnerin. Wenn es nicht ihre „geschickten“ Erklärungen der Gesetze und verschiedene „wunderbare“ Vorschläge für diejenigen, die sie konsultieren, gegeben hätte, hätte ich noch Monate gebraucht, um die Lücken in Gesetzen zu finden und den Kodex allmählich selbst zu verbessern.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15131,
+			"title": "Über Shenhe ...",
+			"voicelineType": "4012",
+			"description": "Wie geht es Shenhe in letzter Zeit? Bitte halte nach ihr Ausschau, wann immer du kannst. Ich bin euch beiden sehr dankbar für eure Hilfe beim Wiederaufbau des Jadegemachs. Ach, und noch etwas Persönliches: Wenn du mal Zeit hast, steht hier immer eine Tasse feinster Tee für dich bereit.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_shenhe_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Heimkehr des Kranichs mit dem Wind“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1101505
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15132,
+			"title": "Über Yun Jin ...",
+			"voicelineType": "4011",
+			"description": "Yun Jin ... Kannst du ihre Performance nachvollziehen? Am Anfang mag es schwierig sein, aber ich würde dich ermutigen, ihr eine Chance zu geben. Der Grund, warum ich beschlossen habe, in ihre Operntruppe zu investieren, ist ganz einfach: Elegante Kunstformen wie diese verdienen es, an zukünftige Generationen weitergegeben zu werden.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yunjin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15133,
+			"title": "Über Yelan ...",
+			"voicelineType": "4013",
+			"description": "Sie ist eine sehr interessante Person und für mich absolut glaubwürdig. Sie ist in der Lage, alle Aufgaben perfekt zu erledigen und hat tadelloses Talent. Hehe, da ihr beide intelligent seid, hoffe ich, dass ihr gut miteinander auskommen werdet.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yelan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15174,
+			"title": "Über Xianyun ...",
+			"voicelineType": "4014",
+			"description": "Ich habe vor, Xianyun in ein paar Tagen zu einem lockeren Gespräch beim Tee einzuladen. Zufällig besitze ich eine Reihe mechanischer Geräte und ich wäre sehr daran interessiert zu erfahren, was sie über deren Konstruktion und Verwendung denkt. Es wäre auch eine gute Gelegenheit, von ihren Erlebnissen als Adeptin zu hören, die sich an ein neues Leben in Liyue anpassen muss. Jetzt brauche ich nur noch einen geeigneten Kandidaten, der ihr die Einladung in meinem Namen überbringt ... Wärst du daran interessiert, Reisende{M#r}?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Tausend Meilen im Mondschein“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15134,
+			"title": "Ich will mehr über Ningguang erfahren I",
+			"voicelineType": "5001",
+			"description": "Weil du es bist, musst du nicht allzu formell mit mir umgehen, du kannst etwas lockerer sein. Dennoch solltest du stets meine Zeit respektieren. Wenn es etwas zu sagen gibt, komm direkt auf den Punkt.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_01"
+		},
+		{
+			"voicelineId": 15135,
+			"title": "Ich will mehr über Ningguang erfahren II",
+			"voicelineType": "5002",
+			"description": "Ich glaube, dass Kinder am verlässlichsten sind, weil sie naiv und unschuldig sind. Die Berichte, die ich von ihnen bekomme, sind die wertvollsten von allen. Und was ist mit dir, was bringst du mir?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 3 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15136,
+			"title": "Ich will mehr über Ningguang erfahren III",
+			"voicelineType": "5003",
+			"description": "Ich habe in letzter Zeit über etwas nachgedacht. Wenn ich dich in Liyue behalte, kann ich vielleicht zum richtigen Zeitpunkt diese Stadt nutzen, um ... Im Moment sind das nur Hypothesen. Ich sollte wirklich noch einmal darüber nachdenken, ob sich die Investition lohnt.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15137,
+			"title": "Ich will mehr über Ningguang erfahren IV",
+			"voicelineType": "5004",
+			"description": "Du kannst noch ein paar Dinge von mir lernen und Mora einsetzen, um Dinge zu bekommen, die schwer zu kriegen sind. Aber denke daran, auf Mora basierende Beziehungen halten meistens nicht sehr lange. Daher setze ich bei uns beiden nicht auf Mora.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 5 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15138,
+			"title": "Ich will mehr über Ningguang erfahren V",
+			"voicelineType": "5005",
+			"description": "Eine wirklich gute Investition. Ich habe zwar keine Mora damit verdient, aber die Zeit, die ich mit dir verbracht habe, ist mir Zins genug, hehe. Wie schön, dass ich mein Geld wieder auf die richtige Person gesetzt habe.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15139,
+			"title": "Ningguangs Hobbys ...",
+			"voicelineType": "6001",
+			"description": "Hast du Lust auf eine Runde „Tausend Jahre in Liyue“? Dann kann ich auch sehen, wie gut du dich als Spieler so machst.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_hobby"
+		},
+		{
+			"voicelineId": 15140,
+			"title": "Ningguangs Sorgen ...",
+			"voicelineType": "6002",
+			"description": "Sorgen? Wenn du die Bedenken der Qixing von Liyue kennen würdest, meinst du, könntest du ihre Last aushalten? Und schon gar nicht den Fehler zu machen, darüber mit anderen zu sprechen ...",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_annoyed"
+		},
+		{
+			"voicelineId": 15141,
+			"title": "Was sie so mag ...",
+			"voicelineType": "6003",
+			"description": "Eine lange gekochte Suppe aus Hühnchen und Knochen über zarten Kohl gegossen und serviert. Kulinarisch gesehen habe ich kaum Ansprüche. Ein paar Grundnahrungsmittel wie diese reichen aus.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodLike"
+		},
+		{
+			"voicelineId": 15142,
+			"title": "Was sie nicht mag ...",
+			"voicelineType": "6004",
+			"description": "Ich bin Leuten begegnet, die zu jeder Mahlzeit unbedingt etwas so Teures wie Goldkrebs bestellt haben. Auch wenn es gut aussieht, habe ich keinerlei Interesse an solchen Überschreitungen. Wenn du jemals vorhast, mich zu einem solchen Essen einzuladen, wäre es besser, wenn du mir die Mora einfach direkt gibst.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodDislike"
+		},
+		{
+			"voicelineId": 15171,
+			"title": "Geschenk erhalten I",
+			"voicelineType": "6007",
+			"description": "Sehr schön. Du übertriffst immer meine Erwartungen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_pref_01"
+		},
+		{
+			"voicelineId": 15172,
+			"title": "Geschenk erhalten II",
+			"voicelineType": "6008",
+			"description": "Manchmal ist es eine Übung in Vergeblichkeit, wenn man die Schlüsselelemente nicht begreift ... Kannst du das verstehen?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_normal_01"
+		},
+		{
+			"voicelineId": 15173,
+			"title": "Geschenk erhalten III",
+			"voicelineType": "6009",
+			"description": "Danke trotzdem für deine Mühen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_dislike_01"
+		},
+		{
+			"voicelineId": 15143,
+			"title": "Dein Geburtstag ...",
+			"voicelineType": "7001",
+			"description": "{M#Dies sind einige von Liyues feinsten Brokaten, gewebt aus Seidenblumen. Dieser hier ist für dich und dieser hier ... Ich hoffe, dass du diesen hier deiner Schwester bald schenken kannst, und ich hoffe auch, dass es ihr gefallen wird. Ich wünsche euch beiden alles Gute zum Geburtstag.}{F#Dies sind einige von Liyues feinsten Brokaten, gewebt aus Seidenblumen. Nutze sie, um etwas Schönes zum Anziehen daraus zu fertigen. Alles Gute zum Geburtstag.}",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_b",
+			"voicefile_male": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 15144,
+			"title": "Gedanken über den Aufstieg – Beginn",
+			"voicelineType": "8001",
+			"description": "Gewalt ist niemals eine gute Lösung. Es gibt immer einen anderen Weg.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 1 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15145,
+			"title": "Gedanken über den Aufstieg – Fortschritt",
+			"voicelineType": "8002",
+			"description": "Zeit und Mora im Austausch für Macht? Diese Art von Austausch hört sich interessant an, ich erkenne den Wert davon.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 2 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15146,
+			"title": "Gedanken über den Aufstieg – Höhepunkt",
+			"voicelineType": "8003",
+			"description": "Was ist es, das dich so sehr an eine Sache glauben lässt? Psst, sag es mir nicht. Gib mir noch etwas Zeit, dich zu durchschauen.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15147,
+			"title": "Gedanken über den Aufstieg – Ende",
+			"voicelineType": "8004",
+			"description": "Es ist normalerweise nicht mein Stil, Leute zu schnell zu loben, aber ich muss sagen, du hast dir das Lob wirklich verdient. Du hast hervorragende Arbeit geleistet. Wenn ich doch nur mehr Leute wie dich hätte ... Wobei du allein schon ausreichen würdest.",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 15148,
+			"title": "Elementarfähigkeit I",
+			"voicelineType": "100001",
+			"description": "Kinderspiel.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_01"
+		},
+		{
+			"voicelineId": 15149,
+			"title": "Elementarfähigkeit II",
+			"voicelineType": "100002",
+			"description": "Verschwende nicht meine Zeit.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_02"
+		},
+		{
+			"voicelineId": 15150,
+			"title": "Elementarfähigkeit III",
+			"voicelineType": "100003",
+			"description": "Hm! Gib auf.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_03"
+		},
+		{
+			"voicelineId": 15151,
+			"title": "Spezialfähigkeit I",
+			"voicelineType": "200001",
+			"description": "Dein Leben gehört mir.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_01"
+		},
+		{
+			"voicelineId": 15152,
+			"title": "Spezialfähigkeit II",
+			"voicelineType": "200002",
+			"description": "Gehorche!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_02"
+		},
+		{
+			"voicelineId": 15153,
+			"title": "Spezialfähigkeit III",
+			"voicelineType": "200003",
+			"description": "Auf Wiedersehen!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_03"
+		},
+		{
+			"voicelineId": 15154,
+			"title": "Truhe öffnen I",
+			"voicelineType": "300001",
+			"description": "Ein scharfes Auge.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_01"
+		},
+		{
+			"voicelineId": 15155,
+			"title": "Truhe öffnen II",
+			"voicelineType": "300002",
+			"description": "Alle Schätze sollten dorthin, wo sie hingehören.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_02"
+		},
+		{
+			"voicelineId": 15156,
+			"title": "Truhe öffnen III",
+			"voicelineType": "300003",
+			"description": "Reichtum ... Warum sich mit weniger als mit mehr zufrieden geben?",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_03"
+		},
+		{
+			"voicelineId": 15157,
+			"title": "Niedrige LP I",
+			"voicelineType": "410001",
+			"description": "Du wagst es, mich zu schlagen?",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_01"
+		},
+		{
+			"voicelineId": 15158,
+			"title": "Niedrige LP II",
+			"voicelineType": "410002",
+			"description": "Ich merke mir das.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_02"
+		},
+		{
+			"voicelineId": 15159,
+			"title": "Niedrige LP III",
+			"voicelineType": "410003",
+			"description": "Hm.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_03"
+		},
+		{
+			"voicelineId": 15160,
+			"title": "Verbündeter hat niedrige LP I",
+			"voicelineType": "400001",
+			"description": "Für dich stehen die Chancen wirklich schlecht.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 15161,
+			"title": "Verbündeter hat niedrige LP II",
+			"voicelineType": "400002",
+			"description": "Wenn das so ist, helfe ich euch einmal.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 15162,
+			"title": "Ohnmächtig I",
+			"voicelineType": "500001",
+			"description": "Wir sind alle nur Spielsteine ...",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_01"
+		},
+		{
+			"voicelineId": 15163,
+			"title": "Ohnmächtig II",
+			"voicelineType": "500002",
+			"description": "Der Sieger steht fest ...",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_02"
+		},
+		{
+			"voicelineId": 15164,
+			"title": "Ohnmächtig III",
+			"voicelineType": "500003",
+			"description": "Ist dies das Ende des Tianquan?",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_03"
+		},
+		{
+			"voicelineId": 15165,
+			"title": "Leichten Treffer erlitten I",
+			"voicelineType": "900001",
+			"description": "Unhöflich.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 15166,
+			"title": "Schweren Treffer erlitten I",
+			"voicelineType": "910001",
+			"description": "Warte nur.",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 15167,
+			"title": "Schweren Treffer erlitten II",
+			"voicelineType": "910002",
+			"description": "Auge um Auge!",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 15168,
+			"title": "Truppenbeitritt I",
+			"voicelineType": "600001",
+			"description": "Verstanden.",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_01"
+		},
+		{
+			"voicelineId": 15169,
+			"title": "Truppenbeitritt II",
+			"voicelineType": "600002",
+			"description": "Wir müssen uns beeilen.",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_02"
+		},
+		{
+			"voicelineId": 15170,
+			"title": "Truppenbeitritt III",
+			"voicelineType": "600003",
+			"description": "Enttäusche mich nicht.",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_03"
+		}
+	]
+}

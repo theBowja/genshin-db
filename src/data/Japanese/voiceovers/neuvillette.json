@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "初めまして…",
+			"voicelineType": "1006",
+			"description": "ごきげんよう。私はフォンテーヌの最高審判官——私を呼ぶ際は、姓であるヌヴィレットを使ってくれ…これはわざと君を遠ざけているわけではない。あまり関係が近すぎてしまうと、司法制度の不正を疑われかねないのでね。何か要求があれば、翹英荘から運ばれた水を味わいながら、共に話し合おう——もちろん、法の範囲内に限るが。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "世間話·審判",
+			"voicelineType": "1101",
+			"description": "私は、自身の仕事の価値とフォンテーヌの人々が為すことの意義を認めている。自分の責任を、誇りに思っているのだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "世間話·水の味",
+			"voicelineType": "1102",
+			"description": "水の味は、実に幽遠な趣を持つ——モンドの水は清く澄んでいて、璃月の水は後味が長く続く。稲妻の水は深みがあり、スメールの水は複雑で、じっくりと舌で味わう必要があるのだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "世間話·メリュジーヌ",
+			"voicelineType": "1103",
+			"description": "メリュジーヌはフォンテーヌが誇る美しき生命体だ。彼女らとは良い関係を築くといい。決して、傷つけたりしないように。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "雨の日…",
+			"voicelineType": "1201",
+			"description": "おっと、すまない。これほどの大雨は、君からすると厄介なものだったな…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "雨上がり…",
+			"voicelineType": "1202",
+			"description": "止んでしまったか…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "雷の日…",
+			"voicelineType": "1203",
+			"description": "たしか君たちの間には、青天の霹靂という言葉があったか？私からすれば、今がそのような感覚だ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "シナリオ「胎動を諭す終焉の刻」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "雪の日…",
+			"voicelineType": "1204",
+			"description": "雪とは、元より水の自浄手段だ。しかし人間の行いにより、雪はそう清潔なものではなくなった。口にするのはやめたほうがいい。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "晴れの日…",
+			"voicelineType": "1205",
+			"description": "このような天気の日は、室内の窓辺で過ごすのが最適だ。うむ、日差しを堪能しよう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "砂漠にいる時…",
+			"voicelineType": "1206",
+			"description": "これは…私の抹殺計画の一環か？",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "おはよう。善き一日になることを祈る。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "ごきげんよう。紅茶やコーヒーの時間を楽しみにしていることだろう。かくいう私もだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "こんばんは。今日の君が、胸を痛める出来事に遭遇していないことを祈ろう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "おやすみ。私にとって、静かな水面は美しさの表れだ。今宵、夢なき眠りに君が落ちることを祈ろう。如何なる夢のさざ波にも、気持ちを乱されず済むように。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "ヌヴィレット自身について·審判",
+			"voicelineType": "2001",
+			"description": "私は何も、熱狂的な審判愛好者ではない。「審判」は私の責務であり、委任された目的なのだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "ヌヴィレット自身について·涙を流す水龍",
+			"voicelineType": "2005",
+			"description": "君もフォンテーヌのあの民謡を聞いたことがあるのか？はぁ、一体誰から聞き、誰が広めている…いや、何でもない。水龍が泣くことはないと思うがな。彼はただ、大地の心に集う涙とすべての感情に触れ、心を動かされただけだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "ヌヴィレット自身について·審判の意味",
+			"voicelineType": "2006",
+			"description": "これはすでに議論され尽くしている話題だ。私は自分を人間と無関係な立場に置くつもりはないが…「正義」、「公平」、「平等」、「法律」、これらの概念は互いに等しくあることはできない。水は元より「清きこと水の如し」という本質を持つ。先代水神のエゲリアは、衆生を愛で繋ぎ、平等を実現しようとした。今の神は、平等な「法律」を選んだが、結局は様々な外的要因によって歪められ、すべては「審判」のために——という残念な結果を生んでしまっている。だが、これには他にも理由があるゆえ、非難すべきではないのだが…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "見届ける者について…",
+			"voicelineType": "2003",
+			"description": "君は天地の外の者だ。この倒錯した世界に対する私の審判は、君が見届けるといい。「天父が統べるべきだった国は、今や雉が王座に就いている。すでに錯乱と逸脱に蝕まれし時代——我は天地を正すために生まれた」。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "人間界について…",
+			"voicelineType": "2002",
+			"description": "フォンテーヌの民との長き付き合い、そして君との同行…これらにより、私の考えはとうに改まっている。それに、私はもう人の罪を赦した。今ここに君と約束しよう——今後の審判において、決して一般人には危害を加えない。ただ…私と僭主には、未だに清算されていない怨念と、償われていない血の仇がある。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "「神の目」について·1",
+			"voicelineType": "3001",
+			"description": "かつて、危急の事態に備えるためにも、偽のガラス玉を身に付けるようアドバイスされたことがある。正直、その提案は少々不愉快に感じた。自身の力を行使するのに、偽りの仮面で取り繕うなど…だが、神の目を持つ者との長い付き合いで、彼らの「渇望」と「意志」が貴重なものであると、私も理解した。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「胎動を諭す終焉の刻」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "「神の目」について·2",
+			"voicelineType": "3006",
+			"description": "何？最古の七神でさえ、偽のガラス玉を付けて俗世を歩んでいる者たちがいると…？くくっ…いや失礼、少々取り乱した。あまりにも滑稽だったものでな。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「胎動を諭す終焉の刻」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "シェアしたいこと·法律",
+			"voicelineType": "3002",
+			"description": "確かにフォンテーヌには、珍しい法律が数多くある。例えば「月始めの三日間は飛行物体を放ってはいけない」、「乾季に座礁した二枚貝はすべて水神のものであり、巻貝は民のものとする」、「ペットの名に『フリーナ』とつけてはいけない」、「食堂やレストランでケチャップのみを食べるのはいけない」、「メリュジーヌに対しては物を指す代名詞ではなく、人を指す『彼女』を使う」…最後の一条は私が推し進めたものだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "シェアしたいこと·雨の日",
+			"voicelineType": "3005",
+			"description": "いつになれば雨を浴びられるのだろうかと——常々そう考えている。おっと、誤解しないでくれ、別にストレスを溜めてはいない。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "興味のあること·ヴィシャップ",
+			"voicelineType": "3003",
+			"description": "あれらは原海と同じ直系であるゆえ、進化に長けている。かつて、龍の間にはこのような風習があった——我らは夭逝した族の血をすすった。月と星の運行が潮汐を乱す時、我ら水族の体内にある水は上へと昇り、逝去した族人の復活を知る。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "シナリオ「胎動を諭す終焉の刻」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "興味のあること·人間",
+			"voicelineType": "3004",
+			"description": "私の観察からして、人は己と自然を対立させたがる。人も自然の一部だと言う者もいるが、少しばかり真相を知る私からすれば、人間の文明世界とこの星の自然は、共存の道を探す必要があるように思う。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "岩の神について…",
+			"voicelineType": "4001",
+			"description": "私は神々を裁く、これは何者にも変えられない。岩の大権を勝ち取った貴金の神も、当然ながら裁かれる側だ。もし、我らの争いを見たくない者がいたとしても、心配する必要はない。私はまだ、フォンテーヌに居続ける必要がある。その訪れが四百年以上先になることだってあり得るだろう。それに最終的な裁決が、必ずしも武力戦争に繋がるとは限らない。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "風の神について…",
+			"voicelineType": "4002",
+			"description": "たとえ天地がひっくり返ろうとも、七神に対する私の裁きを止めることはできない。そよ風と希望の神は風の大権を得たが、彼もまた審判を受ける必要がある…ほとんどただの酔っぱらいで、もう危険性はない、と？ふむ、まずは会ってみなければな。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "雷の神について…",
+			"voicelineType": "4003",
+			"description": "龍の力をすべて取り戻した生き残りとして、たとえ一切の海水が天に逆行させられようとも、私は「誓い」と「責任」を果たさなければならない。鳴神は雷の大権を勝ち取ったゆえ、僭主の列に名を刻むことになる。ふむ…彼女は今、一心浄土に閉じこもっていて、滅多に姿を現さないと？では、数百年後に会いに行ってみるとしよう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "草の神について…",
+			"voicelineType": "4004",
+			"description": "たとえ将来、彼女を審判する日が訪れようとも、草木の神が持つ責任感は認めよう。この世に完璧な人間や事柄はほぼ存在し得ない。だが、あの神の「傾倒」と「寵愛」は、責任を担う者が前へと進み続けてきたことを証明している。彼女は約五百年もの間、冷遇され続けたと聞いた。彼女が置かれてきた環境は実に遺憾に思う。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "リオセスリについて…",
+			"voicelineType": "4005",
+			"description": "リオセスリ殿は確かに信頼に足る男だ。そして彼の肩書きと名誉は、いずれも私が与えたものになる。彼の話術と出世への策に、私がまんまと嵌ったと思っているのではないか？だが稲妻には…「言わぬが花」ということわざがある。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "クロリンデについて…",
+			"voicelineType": "4006",
+			"description": "その卓越した実力によって、クロリンデは現在いる決闘代理人の中で頂点に立つ存在となった。彼女はファントムハンターの後継者であり、彼女がいることで法廷の正義はより確固たるものになる。そして、彼女は見た目よりも些か人情を重んじるタイプだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "リネとリネットについて…",
+			"voicelineType": "4007",
+			"description": "あの公演はとても愉しませてもらった、君もそうだろう？あれがリネ君とリネット君が魅せるマジックの世界だ——驚くほどすべてがまやかしではあるが、信じる心を持てば如何なることも叶ってしまう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "シグウィンについて…",
+			"voicelineType": "4008",
+			"description": "シグウィンは息災だろうか。もし仮にあの子が虐げられるようなことがあれば、リオセスリ殿を必ず街まで呼び、事の真相を問い詰めよう。あの子はとてもナイーブで、とても優しい。この前帰ってきた時には、写真を手にしながら「ナタの水だけど、またレビューを聞かせて」と言ってくれた…あの子の次の休みまで、あと何日待てばいいのだろうか。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "フリーナについて…",
+			"voicelineType": "4009",
+			"description": "今こうして、彼女の「公演」はついに幕を閉じた。「パフォーマンス」とは想像から生み出されるものだが、フリーナはそれをもってして自らの責務を果たしたのだ…臆病な者が狂気を用いて自らを勇敢にする——今まで実にご苦労であった。\n機会があれば、彼女の舞台に拍手を送りたい…うむ、機会が出来次第、そうするとしよう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "ナヴィアについて…",
+			"voicelineType": "4010",
+			"description": "このようなことを言うのは忍びないが…あの時、意図せず彼女の怒りを買ってしまったことや、彼女の謝罪を受け入れたこと、それから私がいま抱いている罪悪感、それらすべてが遠くのものであるように感じるのだ——まるで湖の底に沈み、そこから星空を眺めているかのようにな…私はそのようなつもりは毛頭なかったし、埋め合わせの機会がそう滅多に巡ってこないことも重々承知している。感情は水とは異なり、すぐに修復し、落ち着きを取り戻せるものではないからな。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「ゆえなく煙る霧雨のように」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "ヌヴィレットを知る·1",
+			"voicelineType": "5001",
+			"description": "他人との個人的な付き合いや、必要なプロセスから外れた協力は極力避けるようにしている。だが、君の人柄は信頼に足るものであり、フォンテーヌの勢力と何の由縁もない。喜んで同行させてもらおう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "ヌヴィレットを知る·2",
+			"voicelineType": "5002",
+			"description": "これは内々にしか話せず、公にはできない類の考えなのだが…フォンタがこれほどまでに人気を博しているのは、私からすると些か不可解なことなのだ。だが、好きな人がいるのを理解できないわけでもない——水分を補給しながら糖分を摂取できる上に、値段も手頃だからな。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "ヌヴィレットを知る·3",
+			"voicelineType": "5003",
+			"description": "最近、ある劇を観た——亡くなった婦人がそのカリスマ性と悪意ある采配を持ってして、まるで振り払うことができない亡霊のように、自分が去った後の豪邸を今なお覆っている——というものだ。役者は申し分なく、ストーリーも非の打ち所がない。そして、この世界の現状について、考えさせられるものであった。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "ヌヴィレットを知る·4",
+			"voicelineType": "5004",
+			"description": "諸事情により、フォンテーヌを離れた回数は指で数えられるほどしかない。それゆえ、私が味わった名水は世界各地のものでありながら、いずれも自ら現地に足を運んで飲んだものではないのだ。だが、それぞれの飲み水が持つ微妙な味の違いは、無論区別できる…ん？ここまで言っても、まだ私を信じないと？私は最高審判官だ、嘘はつかん。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "ヌヴィレットを知る·5",
+			"voicelineType": "5005",
+			"description": "座った時に裾を踏んだり、たまに髪が乱れたり、背もたれに寄りかかると椅子の装飾に頭が引っかかったりなど…しばし、困ったことに遭遇する。だが、最高審判官の威厳を保つために、このような身なりをしているのだ。ゆえに、それがもたらす煩わしさにも耐えなければならない。そして、この世の大半がその道理に通じている——身分を受け入れ、それに耐え、理解し、共存していく…私はまさにそうしてきた。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "ヌヴィレットの趣味…",
+			"voicelineType": "6001",
+			"description": "水を味わうことは、一種の学問と言える。炎元素で熱した水の味は自然界において最も標準となる味であり、木炭で煮沸した水は田畑の味がする。同様に、氷元素で処理した水は平淡な清冽さを持つ。これはスネージナヤの積氷が溶けた水とは、全く異なるものだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "ヌヴィレットの悩み…",
+			"voicelineType": "6012",
+			"description": "雨の日に傘を差さないのは、些かおかしく映るだろうか…",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "好きな食べ物…",
+			"voicelineType": "6003",
+			"description": "動物は何も食わずに数日生きられるが、水となると話は違う。どんな美食であろうとも、清く澄んだ水に敵うことはない。ゆえに、二番目に好んでいるものは汁気の多い食べ物だ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "揚げ物や、タレを付けずに焼いたものをなぜ口にできる？取り分けその中でも、スメールのデーツナンは名指しで批判したいくらいだ。胃に乾燥剤を詰め込むのと同じようなものではないか。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "美味だ。料理において最も重要なのは溢れ出る汁気。それも、良く調理されているようだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "悪くない試みだ。ただ、もう少し出汁を加え、脂を抜けばより良くなるだろう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "少しパサパサしすぎている。汁気に欠ける料理は、料理人の気持ちも味わうことができない。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "ふむ、今日は君の誕生日か、おめでとう。雨が降るかどうか分からないが…何とかしよう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "少し慣れてきた。君の動きに合わせよう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "君がこうも簡単に危機に陥るとは…どうやら、真の力を発揮せねばならないようだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "君の実力がこれほどのものだったとはな。私も本気を出さなければついて行けないようだ。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "七つの大権の一角を、僭主から取り戻した姿が本来の私だ。この身は既に「完全なる龍」であり、他の神々に審判を下すのに十分な存在となった。私の運命は、高天に座す僭位の王を裁くことになる。だがそれまでは、この力を君に貸しておくとしよう。",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "元素スキル·1",
+			"voicelineType": "100001",
+			"description": "静粛に！",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "元素スキル·2",
+			"voicelineType": "100002",
+			"description": "頭を垂れろ。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "元素スキル·3",
+			"voicelineType": "100003",
+			"description": "騒ぐな。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "海よ、私は帰ってきた。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "泡沫となるがいい。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "高き者を、私は蔑む。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "主なきそれを初めて見つけたのが君であれば、それは君のものだ。うむ…法律上、問題はない。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "悪くない代物か？少なくとも、開けた瞬間の期待感は、心地良いものだったのだろう。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "口約束ですまないが、これを君に譲渡しよう。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "差し支えない、心配無用だ。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "リスクは上がっているが、支障ない。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "HP低下·3",
+			"voicelineType": "410003",
+			"description": "ふんっ、服が傷んだか。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "ここは私に。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "君は先に休むといい。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "潮が再び満ちる時、私は帰ってくる…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "見えた…私が誕生する前の、温かな海が…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "全てが…静寂に…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "そう来るか…",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "重ダメージを受ける·2",
+			"voicelineType": "910002",
+			"description": "油断した。",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "同行の招待に…うむ、感謝しよう。",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "喜んで。",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "共に少し、水辺を歩こう。",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

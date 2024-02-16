@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "첫 만남…",
+			"voicelineType": "1006",
+			"description": "내 이름? 세간에서 나는 여러 이름으로 불리지. 모두 다 일반인이 평생을 노력해도 얻을 수 없는 명성을 가진 이름이지만, 이제는 과거일 뿐이야.\n네가 부르고 싶은 대로 불러도 좋아. 이 기회에 네 품격을 확인해보고 싶으니까, 실망시키지 마",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "잡담·바람",
+			"voicelineType": "1101",
+			"description": "바람도 언젠간 막다른 곳에 막히듯이 세상에 순수한 자유란 없어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "잡담·대화방식",
+			"voicelineType": "1102",
+			"description": "내가 너무 쌀쌀맞다고? 난 사실을 있는 그대로 말할 뿐이야. 받아들이지 못하는 사람이 문제겠지",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "잡담·인사말",
+			"voicelineType": "1103",
+			"description": "겉치레는 됐어. 억지로 대화를 이어 나가는 것도 우스꽝스러우니까",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "비가 올 때…",
+			"voicelineType": "1201",
+			"description": "내 삿갓으로 비를 막고 싶다고? 뻔뻔하긴",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "비가 그친 후…",
+			"voicelineType": "1202",
+			"description": "햇빛 좀 봤다고 신나기는, 어린아이도 아니고",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "번개가 칠 때…",
+			"voicelineType": "1203",
+			"description": "칫… 짜증 나네",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "눈이 올 때…",
+			"voicelineType": "1204",
+			"description": "비나 눈이나 다를 것도 없는데, 사람들은 눈을 더 좋아하는 걸 보면… 다 자기 팔자라는 게 있나 봐",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "강풍이 불 때…",
+			"voicelineType": "1205",
+			"description": "이 정도 바람은 너도 일으킬 수 있겠지?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "아침 인사…",
+			"voicelineType": "1001",
+			"description": "「얼른 일어나. 해가 중천이야」… 라고 말하며 깨워줄 거라고 기대하는 건 아니겠지?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "점심 인사…",
+			"voicelineType": "1002",
+			"description": "난 식사가 필요 없으니, 너랑 옆에 있는 쪼그만 것이나 같이 잘 챙겨 먹어. 내가 신경 쓰지 않게 말이야",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "저녁 인사…",
+			"voicelineType": "1003",
+			"description": "드디어 시시한 하루가 끝나가네",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "굿나잇…",
+			"voicelineType": "1004",
+			"description": "내가 옆에 있으니까 잠이 안 오는 거야?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#{REALNAME[ID(1)]} 자신에 대해·인형",
+			"voicelineType": "2001",
+			"description": "불살라진 인형은 재를 남기지. 그럼 잿더미에선 뭐가 태어날까…",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#{REALNAME[ID(1)]} 자신에 대해·심장",
+			"voicelineType": "2005",
+			"description": "그건 아무래도 상관없어. 내 것이 될 수 없는 것에 집착해봤자 시간 낭비일 뿐이니까. 지금 난 더 중요한 할 일이 있어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "우리에 대해·적수",
+			"voicelineType": "2003",
+			"description": "우리가 서로 적대하던 시절을 아직도 마음에 담아두고 있다고? 오, 그래서 어쩔 건데? 천천히 생각해 봐. 난 급할 거 없으니까",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "우리에 대해·동료",
+			"voicelineType": "2002",
+			"description": "난 「정의」에 귀의하지는 않겠지만 은혜를 갚겠다는 약속은 꼭 지킬 거야.\n그나저나 나와 함께한다면 곤란해질 텐데 괜찮겠어? 다른 사람들이 너를 죄인과 「결탁」하는 악당 취급해도 난 책임 안 진다",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "「신의 눈」에 대해…",
+			"voicelineType": "3001",
+			"description": "「신의 주시」라는 건 상당히 불쾌하지만 쓸 수 있는 힘을 굳이 따지고 거를 필요는 없지. 넌 「바람 원소」에 깊은 의미가 담겨 있다고 생각한다고? 훗, 어째서 그렇게 생각하지? 신이란 제멋대로인 존재야. 내가 보여줬잖아",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "하고 싶은 이야기…",
+			"voicelineType": "3002",
+			"description": "없어. 궁금한 게 있으면 물어봐도 좋아. 기분이 좋으면 알려줄게",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "흥미있는 일…",
+			"voicelineType": "3003",
+			"description": "저기 봐. 새는 깃털을 뽐내고 다람쥐는 도토리를 모으며 인간은 먹고살기 위해 온종일 일하지. 생각이 단순한 생물일수록 살기 편하다니까",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "작은 쿠사나리 화신에 대해…",
+			"voicelineType": "4001",
+			"description": "그녀는 이용 가치가 있다는 이유만으로 날 살려둔 건 아닐 거야. 현명하고 자비로운 마음 때문일 수도 있고, 아니면 내 고독한 그림자를 보고… 내가 악의적인 추측을 하고 있다고? 하, 당연하잖아! 난 착한 사람이 아니니까",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "라이덴 쇼군에 대해…",
+			"voicelineType": "4002",
+			"description": "자신의 창조물을 나 몰라라 했으면서, 차마 간섭할 수 없었다고 미화했지…",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "「여왕」에 대해…",
+			"voicelineType": "4003",
+			"description": "사람들은 그녀의 자애를 찬양하지만, 「사랑」도 「죄」가 될 수 있단 건 모르지. 보상 심리에 빠진다고 할까나?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "「피에로」에 대해…",
+			"voicelineType": "4004",
+			"description": "「피에로」가 켄리아의 유민이란 사실을 제외하면 나도 딱히 아는 게 없어. 제대로 된 대화를 해봤어야 알지. 하지만 나한테 바라는 건 있는지, 꽤 중요한 임무를 여러 번 맡기더라고. 「심연」으로 향하는 것도 그중 하나였어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "「카피타노」에 대해…",
+			"voicelineType": "4005",
+			"description": "「강직하고 청렴한 『카피타노』」, 「정직하고 과감한 『카피타노』」, 「수많은 공을 세운 『카피타노』」…. 우인단에서 도는 말들을 얼마나 많이 들었는지 귀에 딱지가 앉을 지경이야. 하지만 절대적인 「올곧음」만큼 위험한 게 있을까? 더구나 「카피타노」는 절대적인 실력까지 갖추고 있지",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "「도토레」에 대해…",
+			"voicelineType": "4006",
+			"description": "안타깝게도 「도토레」가 작은 쿠사나리 화신의 말에 따라 수많은 조각을 소멸시키는 바람에, 그 자식을 한 조각씩 없애는 즐거움이 사라졌어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "「콜롬비나」에 대해…",
+			"voicelineType": "4007",
+			"description": "너라면 「언제나」 멍하며, 「뭘 하든」 무덤덤한 「콜롬비나」를 만나면 어떻게 할 거야? 난 일단 한번 싸워볼 거고, 넌… 착한 게 탈이니까 피하는 게 좋을 거야",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "「아를레키노」에 대해…",
+			"voicelineType": "4008",
+			"description": "「아를레키노」는 위선자야. 「우아」하고 「친절」하게 사람을 대하는 건 그들을 더 쉽게 「통제」하기 위함이지. 그녀의 광기를 마주한 사람들은 이미 다… 후~",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "「풀치넬라」에 대해…",
+			"voicelineType": "4009",
+			"description": "「풀치넬라」가 진심으로 아무런 대가 없이 자기 가족을 돌봐주고 있다고 생각하는 건 「타르탈리아」밖에 없어. 실제로 「풀치넬라」가 많이 도와주긴 했지만 그건 「네 가족은 내 손에 있다」는 경고나 다름없겠지?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "「산드로네」에 대해…",
+			"voicelineType": "4010",
+			"description": "「산드로네」는 연구에만 몰두하는 괴짜야. 하지만 그런 극단적인 행보에도 불구하고 만들어내는 건 쓰레기뿐이지. 집행관 서열도 나보다 한 단계 낮았고 말이야. 정말 불쌍한걸",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "「판탈로네」에 대해…",
+			"voicelineType": "4011",
+			"description": "그 서열 9위 말하는 거구나. 「판탈로네」는 「공정 거래」에 너무 집착한 나머지 신과 인간의 타고 난 불평등까지 뒤집어엎을 생각을 하고 있어. 뭐 평범한 인간이 과분한 망상을 하는 건 특이한 게 아니지. 「판탈로네」는 능력만큼이나 안목도 평범해서 「도토레」와 손잡고 있어. 흥, 결과는 안 봐도 뻔해",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "「타르탈리아」에 대해…",
+			"voicelineType": "4012",
+			"description": "머리가 나쁘면 몸이라도 좋아야 하는데 「타르탈리아」는 둘 다 엉망이야. 집행관 말석조차 과분해서 우인단의 수준을 떨어뜨리고 있지. 우인단을 나와서 정말 다행이야",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "「시뇨라」에 대해…",
+			"voicelineType": "4013",
+			"description": "「시뇨라」의 재에는 아무것도 없지. 난 미래를 잃은 사람에게는 관심 없어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「천수백안의 세상」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "야에 미코에 대해…",
+			"voicelineType": "4014",
+			"description": "입만 산 요괴야. 신의 총애를 등에 업고 인간을 위하는 척하면서 자신의 즐거움만을 좇고 있지",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「천수백안의 세상」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "카에데하라 카즈하에 대해…",
+			"voicelineType": "4015",
+			"description": "네가 말하는 카에데하라 가문의 후손은 혹시…. 뭐? 그 녀석도 바람 원소의 「신의 눈」을 가지고 있으며, 라이덴 쇼군의 검을 막아냈다고? 후후후… 하하하하하하하하!",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#{REALNAME[ID(1)]}에 대해 알기·첫 번째",
+			"voicelineType": "5001",
+			"description": "나에 대해 알고 싶어 할 줄이야. 하지만 알게 되면 귀찮은 일이 생길걸?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#{REALNAME[ID(1)]}에 대해 알기·두 번째",
+			"voicelineType": "5002",
+			"description": "아, 과거를 청산하려고 날 찾아오는 사람이 많을 거야. 난 오는 사람 막지 않는 주의라 상관없어. 오히려 기대되는걸",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.3 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#{REALNAME[ID(1)]}에 대해 알기·세 번째",
+			"voicelineType": "5003",
+			"description": "신이 되면 쓸데없는 감정은 다 버릴 수 있을 줄 알았는데, 지금은 생각이 바뀌었어. 적어도 「분노」만큼은 참 편리한 도구인 것 같아. 어디서 비롯됐든 말이야.\n세상에 화 한 번 안 낸 인간이 있다고? 놀랍군, 정말 성깔이 하나도 없는 걸까?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#{REALNAME[ID(1)]}에 대해 알기·네 번째",
+			"voicelineType": "5004",
+			"description": "세계수에 들어간 순간, 난 차라리 내가 이 세상에 존재하지 않았으면 좋겠다는 생각을 했어.\n그리고 세계수는 내 소원을 들어주었지. 하지만 내가 원하는 결과를 주진 않았어. 이 땅의 운명은 앞으로도 계속 이 땅을 밟고 살아가는 죄인을 농락할 거야",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.5 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#{REALNAME[ID(1)]}에 대해 알기·다섯 번째",
+			"voicelineType": "5005",
+			"description": "너와 나 사이에 접점이 있는 건 사실이지만 언젠가는 다른 길을 걷게 될 거야. 그때 무슨 일이 생길지는, 때가 되면 알 수 있겠지?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「뒤집힌 기원」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#{REALNAME[ID(1)]}의 취미…",
+			"voicelineType": "6001",
+			"description": "취미? 그런 건 한가한 사람들한테나 있는 거잖아. 내가 그리 한가한 것 같아?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#{REALNAME[ID(1)]}의 고민…",
+			"voicelineType": "6002",
+			"description": "어떻게 해야 널 따돌리고 한바탕 날뛸 수 있을까…. 농담이야. 그걸 정말 믿냐?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "좋아하는 음식…",
+			"voicelineType": "6005",
+			"description": "차 있어? 쓸수록 좋아. 그래야 끝맛이 깊거든",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "싫어하는 음식…",
+			"voicelineType": "6004",
+			"description": "달짝지근한 음식은 이에 달라붙어서 싫어. 그런 건 너나 먹어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "선물 획득·첫 번째",
+			"voicelineType": "6007",
+			"description": "굼벵이도 구르는 재주는 있다더니 괜찮네",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "선물 획득·두 번째",
+			"voicelineType": "6008",
+			"description": "나쁘지 않네. 적어도 먹을 순 있으니",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "선물 획득·세 번째",
+			"voicelineType": "6009",
+			"description": "날 독살할 생각이야? 멍청하긴, 내가 어떤 존재인지 잊은 건 아니겠지?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "생일…",
+			"voicelineType": "7001",
+			"description": "손 내밀어봐. …훗, 왜 긴장하는 거야. 높은 곳에서 공기나 쐬러 가자.\n어때? 대단한 경치지? 감사는 귀찮으니까 됐어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "돌파의 느낌·기",
+			"voicelineType": "8001",
+			"description": "…애쓴 게 보이네",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「1」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "돌파의 느낌·승",
+			"voicelineType": "8002",
+			"description": "바람이 불어오잖아…. 너 무슨 짓을 한 거야?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「2」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "돌파의 느낌·전",
+			"voicelineType": "8003",
+			"description": "나한테 힘을 주다니, 뒷감당할 자신은 있어? …알았어",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「4」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "돌파의 느낌·결",
+			"voicelineType": "8004",
+			"description": "네 힘이 되어줄 순 있지만 날 동료로 여기는 건 위험한 생각이야. 네가 마주하고 있는 게 무엇인지 다시 생각해 봐. 그래도 두렵지 않으면 내 뒤에 서도 좋아",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「6」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "원소전투 스킬·첫 번째",
+			"voicelineType": "100001",
+			"description": "바람이여!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "원소전투 스킬·두 번째",
+			"voicelineType": "100002",
+			"description": "속세를 내려볼지니!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "원소전투 스킬·세 번째",
+			"voicelineType": "100003",
+			"description": "분노의 바람!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "원소폭발·첫 번째",
+			"voicelineType": "200001",
+			"description": "벌레 주제에 무엄하구나!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "원소폭발·두 번째",
+			"voicelineType": "200002",
+			"description": "비천한 것!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "원소폭발·세 번째",
+			"voicelineType": "200003",
+			"description": "더 크게 울부짖어라!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "원소폭발·네 번째",
+			"voicelineType": "200004",
+			"description": "고개를 숙여라!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "원소폭발·다섯 번째",
+			"voicelineType": "200005",
+			"description": "네 주제를 파악하도록!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "원소폭발·여섯 번째",
+			"voicelineType": "200006",
+			"description": "감히 나랑 눈을 마주쳐?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "대시 시작·첫 번째",
+			"voicelineType": "700001",
+			"description": "바람 질주!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "대시 시작·두 번째",
+			"voicelineType": "700002",
+			"description": "질풍을 따라!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "대시 시작·세 번째",
+			"voicelineType": "700004",
+			"description": "…느려",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "대시 시작·네 번째",
+			"voicelineType": "700005",
+			"description": "따라오라고 한 적 없어",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "보물상자 오픈·첫 번째",
+			"voicelineType": "300001",
+			"description": "쓸모없군",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "보물상자 오픈·두 번째",
+			"voicelineType": "300002",
+			"description": "뭐? 이딴 게 좋다고?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "보물상자 오픈·세 번째",
+			"voicelineType": "300003",
+			"description": "이딴 건 너나 갖고 놀아",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "HP 부족·첫 번째",
+			"voicelineType": "410001",
+			"description": "이 정도는 익숙해",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "HP 부족·두 번째",
+			"voicelineType": "410002",
+			"description": "형편없군",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "동료 HP 감소·첫 번째",
+			"voicelineType": "400001",
+			"description": "쓸모없기는!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "동료 HP 감소·두 번째",
+			"voicelineType": "400002",
+			"description": "애초에 너한테 기대도 안 했어",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "전투 불능·첫 번째",
+			"voicelineType": "500001",
+			"description": "심연으로… 떨어지는구나…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "전투 불능·두 번째",
+			"voicelineType": "500002",
+			"description": "모든 게… 부질없군…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "전투 불능·세 번째",
+			"voicelineType": "500003",
+			"description": "죄업의 업보인가…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "강공격 피격·첫 번째",
+			"voicelineType": "910001",
+			"description": "하찮군",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "강공격 피격·두 번째",
+			"voicelineType": "910002",
+			"description": "…시시하긴",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "강공격 피격·세 번째",
+			"voicelineType": "910003",
+			"description": "…죽고 싶어 환장했군",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "강공격 피격·네 번째",
+			"voicelineType": "910004",
+			"description": "살려달라고 빌어봐라",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "강공격 피격·다섯 번째",
+			"voicelineType": "910005",
+			"description": "대가를 치르게 해주마",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "파티 가입·첫 번째",
+			"voicelineType": "600001",
+			"description": "날 부를 줄이야… 뭘 해줄까?",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "파티 가입·두 번째",
+			"voicelineType": "600002",
+			"description": "제대로 된 용건이 있는 게 좋을 거야",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "파티 가입·세 번째",
+			"voicelineType": "600003",
+			"description": "내가 아니면 안 된다고? …그럼 뭐 어쩔 수 없지",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

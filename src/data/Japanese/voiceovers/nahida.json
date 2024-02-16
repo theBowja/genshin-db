@@ -1,0 +1,860 @@
+{
+	"id": 10000073,
+	"name": "Nahida",
+	"friendLines": [
+		{
+			"voicelineId": 73000,
+			"title": "初めまして…",
+			"voicelineType": "1006",
+			"description": "初めまして、かしら？ふふっ、あなたのことはもうずっと見ていたわ。私はナヒーダ。子供に見えるかもしれないけど、どの大人よりもこの世界を理解しているはずよ。ねえ、私の知識とあなたの見識を交換しない？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_draw_appear_01"
+		},
+		{
+			"voicelineId": 73001,
+			"title": "世間話·誘い",
+			"voicelineType": "1101",
+			"description": "することがないなら、私が遊びに連れていってあげましょうか？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_01"
+		},
+		{
+			"voicelineId": 73002,
+			"title": "世間話·悩み事",
+			"voicelineType": "1102",
+			"description": "何か悩み事？一緒に考えてあげるわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_02"
+		},
+		{
+			"voicelineId": 73003,
+			"title": "世間話·体感",
+			"voicelineType": "1103",
+			"description": "やっぱり自分の目で見てこそ、世界の美しさを感じられる。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_03"
+		},
+		{
+			"voicelineId": 73004,
+			"title": "雨の日…",
+			"voicelineType": "1201",
+			"description": "早く雨宿りしましょう。じゃないと、頭にキノコが生えるわよ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 73005,
+			"title": "雷の日…",
+			"voicelineType": "1202",
+			"description": "知ってる？雷鳴はね、生命の前奏なの。この大地も、きっとすぐ活気に満ち溢れるわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_thunder_01"
+		},
+		{
+			"voicelineId": 73006,
+			"title": "雪の日…",
+			"voicelineType": "1203",
+			"description": "聞こえた？空が万物に「お休みの時間」だって言っているわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_snowy_01"
+		},
+		{
+			"voicelineId": 73007,
+			"title": "晴れの日…",
+			"voicelineType": "1204",
+			"description": "いい天気ね、暖かいわ。じきに辺りも賑やかになるわね。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_sunny_01"
+		},
+		{
+			"voicelineId": 73008,
+			"title": "風の日…",
+			"voicelineType": "1205",
+			"description": "宮殿に風は吹かない…あらっ、ごめんなさい。あなたにとっては当たり前の知識だったわね。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_breezy_01"
+		},
+		{
+			"voicelineId": 73009,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "おはよう、はやく出発しましょう。この世界にあるほとんどのものは、「待ってはくれない」わ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 73010,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "お昼休憩の時間ね。ミントベリージュースが飲みたいわ。太陽に関する物語二つと交換してくれないかしら？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 73011,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "日も暮れたし、そろそろ夜行性の大家族に舞台を譲ってあげないとね。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73012,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "はやく寝なさい。安心して、甘い夢をあなたに用意したから。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 73013,
+			"title": "ナヒーダ自身について·見識",
+			"voicelineType": "2001",
+			"description": "烬寂海？あそこには何もないわ。キノシシの脳みそみたいに空っぽ。もちろん知っているわよ。えっ？た…確かに直接見たことがあるわけじゃない…だってあそこも、私には手の届かない場所だもの。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle"
+		},
+		{
+			"voicelineId": 73014,
+			"title": "ナヒーダ自身について·知識欲",
+			"voicelineType": "2005",
+			"description": "神は人間に腹を満たせるだけの知識しか与えなかったのに、人間はそれを使って道具を作り、文字を書き、都市を育んだ。そして今や、星々と深淵にまで目を向けている…彼らは常にまったく新しい「知識」を生み出すから、本当に目が離せないわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73015,
+			"title": "物語について…",
+			"voicelineType": "2003",
+			"description": "あなたが旅先で見てきたものは、私が学んだ知識よりもずっと素晴らしいものよ。しかも、いつでもそれについて質問ができて、その詳細を知られるなんて…本当に満足だわ。そうね、時間を無駄にしてはいけないわ。さ、話の続きを。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close"
+		},
+		{
+			"voicelineId": 73016,
+			"title": "旅について…",
+			"voicelineType": "2002",
+			"description": "もう聞くだけじゃ満足できない。ずっと自分の足で行ってみたかったの。あなたは冒険の経験も豊富だし、私のガイドになってくれないかしら？あなたのこれからの物語…そのすべてを、私も感じていたいの。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73017,
+			"title": "「神の目」について…",
+			"voicelineType": "3001",
+			"description": "空に目が出来たのは、大地の美しさを見届けるため。なら、元から目を二つ持っている人間は、一体どんな状況で「神の目」を通して世界を見る必要があるのかしら？この質問の答え、頭の良いあなたならたどり着けるわよね？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73018,
+			"title": "シェアしたいこと…",
+			"voicelineType": "3002",
+			"description": "多くの場合、身を切られるような痛みを味わって、初めて自身の怠惰や愚昧さ、無謀さ、傲慢さを直視できるようになる。でも、それを後悔する必要なんてまったくないわ。未来に起こりうるすべての可能性をすべて見通すことなんて、私たちにはできない。だから、こんな不器用な方法でしか知識を得られないの。いわば授業料と同じね、至って普通のことよ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_share_01"
+		},
+		{
+			"voicelineId": 73019,
+			"title": "興味のあること·見たこともない花",
+			"voicelineType": "3003",
+			"description": "スメールの砂漠は雨林より活気に欠けるように見えるでしょうけど、あそこは古くからの文明を背負い、安定した生態系を育んできたの。いつか雨林とのいざこざが終わったら、きっと見たこともないような花を咲かせてくれるはずよ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_gift_01"
+		},
+		{
+			"voicelineId": 73020,
+			"title": "セノについて·ジョーク",
+			"voicelineType": "4001",
+			"description": "彼の話すジョークは奥が深くて、なかなか面白いわ。え？意味の分からなかったものがある？なら、私が解説してあげるわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73021,
+			"title": "セノについて·責務",
+			"voicelineType": "4002",
+			"description": "秩序と正義の衝突に直面した時、絶対に揺るがない答えをいつも「大マハマトラ」が出せるとは限らない——妥協すれば後戻りできなくなることは、彼自身が一番よく知っているはずよ。だからこそ、彼がいま本来の居場所に戻れたことは、スメール全体にとっても幸運なことなの。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73022,
+			"title": "ティナリについて…",
+			"voicelineType": "4003",
+			"description": "雨林が「死域」の侵蝕に対抗し、今でも活気に満ち溢れていられるのは、レンジャー長たちの働きがあってこそ。ティナリはその中でもずば抜けた存在よ。ただ…もう少しだけ優しい接し方をしてくれたら、新しいレンジャーの募集も捗るんだけど。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73023,
+			"title": "コレイについて…",
+			"voicelineType": "4004",
+			"description": "彼女のことは聞いたことがあるわ。そのタフな精神は宝石のように輝いていて、目を奪うものだった。あまりにも多くのことを経験してきたのね…彼女がスメールの豊かな緑に守られ、普通の女の子と同じように健康に成長できることを祈っているわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73024,
+			"title": "アルハイゼンについて…",
+			"voicelineType": "4005",
+			"description": "彼は遥か先を行く知識体系を持っていて、常に思考を巡らせている。もしかしたら、この世で彼に隠し通せるものなんてないのかもしれないわね。智者からすれば、平凡な人々の凡庸さは生まれ持っての過ちと言うけれど…本当にそう？私は…それら凡庸さも含めて「私たち」にとって不可欠な一部なのだと思っているわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73025,
+			"title": "ニィロウについて…",
+			"voicelineType": "4006",
+			"description": "昔、他の人の体を借りて、クラクサナリデビに踊りを見てほしいかどうか、彼女に聞いたことがあるの…実はもう何度もこっそり見たのだけれど…彼女の「花神誕祭」におけるパフォーマンスに敬意を示すためにも、理屈上は私が現場に居合わせる必要があるでしょう？でも結局、遠回しに断られてしまったの…うぅ、少し悲しいわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73026,
+			"title": "ドリーについて…",
+			"voicelineType": "4007",
+			"description": "彼女が私に初めて会った時、開口一番に「あなたの宮殿を気に入りましたわ、いくらなら売ってくださりますの？」と言われたわ。スラサタンナ聖処を売るなんてできないけど、その質問には確かに悩まされたわ。とても長い間考えたのだけれど、結局どれだけの値をつけるべきか分からなかったの…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73027,
+			"title": "カーヴェについて…",
+			"voicelineType": "4008",
+			"description": "スメールの知恵を実践することにおいて、すでに彼の理解は本質にとても近いところまで辿り着いている。ただ惜しいことに、彼の把握している真実は、この国の主流にはなれないわ。え？彼って、アルハイゼンと同居しているの？この世にこんな可能性があったなんて…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73028,
+			"title": "ファルザンについて…",
+			"voicelineType": "4009",
+			"description": "彼女の体は、キングデシェレト遺跡に残留していた力に影響されてしまったの…まるで時間という大きな亀の背から落ちて、永遠に置き去りにされてしまったかのように。興味があるなら、あるいは…彼女を通して、過去のスメールの片隅を覗けるかもしれないわね。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73029,
+			"title": "俗世の七執政について·紹介",
+			"voicelineType": "4010",
+			"description": "ずっとずっと昔、俗世の七執政は定期的に連絡を取り合っていたらしいわ。ただ、私だけは状況が特別だったから、そのことを覚えていない…スメールの混乱も一段落ついたし、そろそろ彼らともう一度会うべきよね。あなたのよく知っている神を、私に紹介してくれるかしら？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73030,
+			"title": "俗世の七執政について·ゲーム",
+			"voicelineType": "4011",
+			"description": "一緒にゲームをすると、人と人との距離は一気に縮まるのだと聞いたわ。それは神も同じよ。いっそ、今度またみんなで集まった時には、「ケンケンパ」で遊ぶことを提案しようかしら？…やっぱりやめておくわ。小さなマスを書いて、自分の優勢を利用してみんなをいじめてるって思われたらいけないもの。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73031,
+			"title": "散兵について…",
+			"voicelineType": "4012",
+			"description": "長きにわたって追い求めていた願いがようやく叶ったと思った時、彼の瞳に映るものは満足？それとも虚しさかしら？私たちは飛べないからこそ、空に焦がれる…彼にはきちんと考えてほしいものね、からっぽの空を抱いたその後に。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_scaramouche_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73074,
+			"title": "フリーナについて…",
+			"voicelineType": "4013",
+			"description": "知恵にとって重要なのは、何を知っているかではなく、何を変えられるか——人々はそう言うわ。間違いなく、あの「予言」はとうに世界樹に刻まれていた…まるで何も変わっていないように見えて、すべてが変わってしまった感じね。あなたも私も知っているように、彼女は世界の運命を変えるほど賢い人よ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「罪人の円舞曲」をクリア",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73032,
+			"title": "ナヒーダを知る·1",
+			"voicelineType": "5001",
+			"description": "私の過去なんてとても単調なものよ。聴いているうちに、きっと鉄砲フグが水を吸うみたいにあくびが抑えきれなくなるわ。でも、好奇心はとても貴重なものだから、私も無駄にはしたくない…そうね、私が今までに見た夢でも紹介しましょうか。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_01"
+		},
+		{
+			"voicelineId": 73033,
+			"title": "ナヒーダを知る·2",
+			"voicelineType": "5002",
+			"description": "私の夢にはよく、植木鉢が現れるの。それに水や肥料をやると、いつも同じ花が咲く。収穫が完全に約束されたものだったら、花を育てる過程すら楽しめないでしょ？ふふっ、でも私の場合は少なくとも、花が咲くたびに飛んでくる蝶々の色が違うし、たまに蜂がいたりもするの。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73034,
+			"title": "ナヒーダを知る·3",
+			"voicelineType": "5003",
+			"description": "私の夢にはよく、砂時計が現れるの。その中に少しだけ水を入れてかき混ぜて、落ちきるまでにどれくらいの時間を費やすか、それが前回と比べてどのくらい違うのかを眺めるのが好きよ。規則性も意味もないけれど、私の脳に蓄積された疲れを取り除いてくれる。もしかしたら、「何もない」ことこそが、この遊びの面白さなのかもしれないわね。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73035,
+			"title": "ナヒーダを知る·4",
+			"voicelineType": "5004",
+			"description": "私の夢にはよく、空き地が現れるの。どんなに周りの風景が変わっても、いつもその場所だけは一番重要な位置にある。変でしょ？かつてそこに何かがあったような気がするのだけど、夢境の権能を使ってさえも、答えは得られなかった。はぁ…まさか夢の中にも、私に制御できないものがあるなんて…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73036,
+			"title": "ナヒーダを知る·5",
+			"voicelineType": "5005",
+			"description": "私の夢にはなんでもある。けれど唯一、人はいない。でもあなたと出会ってからは、段々と賑やかになってきたのよ。もしかしたらあなたは、私の夢における「ガイド」役で、夢に人情味をもたらすと同時に、私を籠から連れ出してくれたのかもしれないわね。ふふっ、行きましょう。これからの旅路は、あなたが導いてちょうだい。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73037,
+			"title": "ナヒーダの趣味…",
+			"voicelineType": "6001",
+			"description": "こうしてあなたを見ること…これって趣味と言うべきなのかしら？あなたの一挙一動、そのすべてに興味をそそられるの。世界を旅する者として、あなたがどこから来て、どこへ向かい、どんな人に会い、どんな困難を乗り越えるか。そのすべてが私の追い求めている答えだわ。私のことは気にしないで…こうして、あなたをずっと観察させて。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_hobby"
+		},
+		{
+			"voicelineId": 73038,
+			"title": "ナヒーダの悩み…",
+			"voicelineType": "6002",
+			"description": "私、自分では質問したり答えたりするのが得意だと思っていたけれど、次第に分かってきたことがあるの。分かっているのに分かっていないふりをする人がたくさんいて、彼らにとっては答えなんて何の役にも立たないってこと。人は年を重ねていくにつれて、疑問や答えに向き合う勇気を失っていくものなのかしら…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_annoyed"
+		},
+		{
+			"voicelineId": 73039,
+			"title": "好きな食べ物…",
+			"voicelineType": "6005",
+			"description": "もちろんナツメヤシキャンディよ。一つ食べるだけで物凄い速さで頭が回り出すから、なんだって解決できるわ。ただ唯一注意すべきなのは、キャンディの入っている瓶をあまり手の届きやすい場所に置かないことね。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 73040,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "海鮮というものは、果てのない暗闇の中に生まれ、私の知らない深海で育った…それを食べろだなんて、汚れた雲を飲み込めって言うようなものよ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodDislike"
+		},
+		{
+			"voicelineId": 73041,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "ありがとう。これほどにおいしい味は、永久にこの世界に残されるべきね。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_pref_01"
+		},
+		{
+			"voicelineId": 73042,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "ふふっ。その気持ち、ちゃんと受け取ったわ。味も申し分なかった。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_normal_01"
+		},
+		{
+			"voicelineId": 73043,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "そうね、例えて言えば…あなたもワンちゃんには野菜ジュースをあげないでしょ？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_dislike_01"
+		},
+		{
+			"voicelineId": 73044,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "よく考えたのだけど、あなたの誕生日を祝うには、少なくとも「花神誕祭」くらいは盛大にやらないと…えっ？大げさですって？でも、もう準備の手配も済んだし…行きましょう、一度きりでもいいから、きっと満足させてあげるわ！",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 73045,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "頭が良くなったわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73046,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "考えが広がったわ。空と海さえ入ってしまうほどよ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73047,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "この感覚…まるでサウマラタ蓮が蓮の葉を見つけ、珊瑚真珠が貝を見つけたみたい。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73048,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "私を仲間にしてくれてありがとう。それだけでなく、こんなに多くの新しい知識を与えてくれた。これから先のあなたの旅路が、混乱に遮られないことを、知恵の神の名において祈るわ。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 73049,
+			"title": "元素スキル·1",
+			"voicelineType": "100001",
+			"description": "覚えたわよ。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_01"
+		},
+		{
+			"voicelineId": 73050,
+			"title": "元素スキル·2",
+			"voicelineType": "100002",
+			"description": "蔓延りなさい。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_02"
+		},
+		{
+			"voicelineId": 73051,
+			"title": "元素スキル·3",
+			"voicelineType": "100003",
+			"description": "痛くしちゃうかも。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_03"
+		},
+		{
+			"voicelineId": 73052,
+			"title": "元素スキル·4",
+			"voicelineType": "100004",
+			"description": "ふふっ！",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_04"
+		},
+		{
+			"voicelineId": 73053,
+			"title": "元素スキル·5",
+			"voicelineType": "100005",
+			"description": "手をつなぎましょう～",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_05"
+		},
+		{
+			"voicelineId": 73054,
+			"title": "元素スキル·6",
+			"voicelineType": "100006",
+			"description": "ぜんぶ丸見えね。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_06"
+		},
+		{
+			"voicelineId": 73055,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "私のおうちにいらっしゃい。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_01"
+		},
+		{
+			"voicelineId": 73056,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "知識を、あなたにも。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_02"
+		},
+		{
+			"voicelineId": 73057,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "これこそが知恵の殿堂——",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_03"
+		},
+		{
+			"voicelineId": 73058,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "賞賛すべき好奇心ね。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_01"
+		},
+		{
+			"voicelineId": 73059,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "誰からの贈り物かしら？",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_02"
+		},
+		{
+			"voicelineId": 73060,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "欲しいものはあった？",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_03"
+		},
+		{
+			"voicelineId": 73061,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "方策を変えましょう。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_01"
+		},
+		{
+			"voicelineId": 73062,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "もうやめてちょうだい！",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_02"
+		},
+		{
+			"voicelineId": 73063,
+			"title": "HP低下·3",
+			"voicelineType": "410003",
+			"description": "賢明とはいいがたいわ…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_03"
+		},
+		{
+			"voicelineId": 73064,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "私が何とかするわ。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 73065,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "やせ我慢しないで。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 73066,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "命は…いつか尽きるもの…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_01"
+		},
+		{
+			"voicelineId": 73067,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "枯れしぼむ刻…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_02"
+		},
+		{
+			"voicelineId": 73068,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "私には…分からない…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_03"
+		},
+		{
+			"voicelineId": 73069,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "痛いっ…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 73070,
+			"title": "重ダメージを受ける·2",
+			"voicelineType": "910002",
+			"description": "めまいが…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 73071,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "ずいぶん待ってたのよ。",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_01"
+		},
+		{
+			"voicelineId": 73072,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "まだ行ったことのない場所がたくさんあるの。",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_02"
+		},
+		{
+			"voicelineId": 73073,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "また見識を広められそうね。",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_03"
+		}
+	]
+}

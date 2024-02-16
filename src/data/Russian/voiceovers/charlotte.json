@@ -1,0 +1,729 @@
+{
+	"id": 10000088,
+	"name": "Charlotte",
+	"friendLines": [
+		{
+			"voicelineId": 88000,
+			"title": "Привет...",
+			"voicelineType": "1006",
+			"description": "Привет! Я Шарлотта, журналистка из «Паровой птицы». Приятно познакомиться. Может, у тебя найдётся время для эксклюзивного интервью? Моё журналистское чутьё подсказывает, что в тебе таится множество новостей, которые готовы вырваться наружу!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_draw_appear_01"
+		},
+		{
+			"voicelineId": 88001,
+			"title": "Поболтаем: Новости",
+			"voicelineType": "1101",
+			"description": "Если не терять бдительности, то выяснится, что поблизости полно новостей, которые только и ждут своего часа.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_character_idle_01"
+		},
+		{
+			"voicelineId": 88002,
+			"title": "Поболтаем: Журналисты",
+			"voicelineType": "1102",
+			"description": "В Кур-де-Фонтейне хватает журналистов, но не все они одинаково профессиональны. Если хочешь дать интервью, я - лучший выбор.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_character_idle_02"
+		},
+		{
+			"voicelineId": 88003,
+			"title": "Поболтаем: «Паровая птица»",
+			"voicelineType": "1103",
+			"description": "«Паровая птица» - прекрасное издание. Много выдающихся журналистов, а главный редактор всегда открыта для новых идей. Но самое главное - они вовремя платят авторам.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_character_idle_03"
+		},
+		{
+			"voicelineId": 88004,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Ой-ой, главное - чтобы вода не попала на камеру!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 88005,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1202",
+			"description": "Проклятье! Опять опоздала. Никак не могу сделать снимок удара молнии...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_weather_thunder_01"
+		},
+		{
+			"voicelineId": 88006,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1203",
+			"description": "Бр-р! Пальцы так замёрзли, что с трудом нажимают на кнопку спуска затвора.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_weather_snowy_01"
+		},
+		{
+			"voicelineId": 88007,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1204",
+			"description": "Отличное освещение для фото! Ну-ка, прими позу! Не забудь про улыбку!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_weather_sunny_01"
+		},
+		{
+			"voicelineId": 88008,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Доброе утро! Ты уже читал{F#а} газету? Нет?.. Ну ничего, я тебе прочитаю...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 88009,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Пора обедать! Идём со мной, я знаю одно славное местечко!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 88010,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Время для вечерней беседы. Хочешь поделиться какими-нибудь историями? Я с удовольствием их выслушаю. ...О, не волнуйся, я не напечатаю ни одной из них без твоего разрешения. Даю слово.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 88011,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Спокойной ночи. Отдохни, а я схожу в редакцию, сделаю последнюю вычитку пары статей. До завтра!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 88012,
+			"title": "О Шарлотте: Профессия",
+			"voicelineType": "2001",
+			"description": "Журналистов не все любят. Как говорится: «Ложь полна увиливаний, а правда - острых углов».",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_idle"
+		},
+		{
+			"voicelineId": 88013,
+			"title": "О Шарлотте: Фотография",
+			"voicelineType": "2005",
+			"description": "Я не могу сделать хорошую фотографию, если объект съёмки мне не интересен. Мне приходится заставлять себя нажимать на кнопку спуска затвора, если я не в восторге от того, что снимаю.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88014,
+			"title": "О нас: Эксклюзивный материал",
+			"voicelineType": "2003",
+			"description": "Итак, пришло время интервью. Готов{F#а} стать звездой? Просто следуй моим указаниям и постарайся хорошо выглядеть на фото! И ты, Паймон, - ты ведь обладаешь силой полёта! Можешь показать это как-то более захватывающе?",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_close"
+		},
+		{
+			"voicelineId": 88015,
+			"title": "О нас: Лица с обложки",
+			"voicelineType": "2002",
+			"description": "Хорошие новости, я уговорила Евфрасию сделать вас главной темой следующей «Паровой птицы». Ваше фото будет на обложке, а внутри целая статья, которую я сама написала... Что значит «не нужно»? Я потратила кучу времени, чтобы уговорить Евфрасию! Может, передумаешь? А я взамен угощу вас роскошным обедом!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Словно лёгкий дождь без причины»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88016,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Честно говоря... Я бы предпочла Анемо Глаз Бога. Если бы я могла свободно летать, мне было бы намного легче добираться до мест проведения интервью! Впрочем, Крио не так уж плох. По крайней мере, мне не нужно беспокоиться о том, что моя камера перегреется.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88017,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "«Ваш надёжный источник невероятных истин!» - это мой девиз в работе. А? Да-да, «надёжный» и «невероятный» в одном предложении. Если бы я должна была выбирать, то, конечно, важнее надёжность! Но большинство читателей скорее заплатят деньги за сенсационные выдумки, чем за обыденные факты... Поэтому мы должны сосредоточиться на самых невероятных правдивых историях, чтобы заинтересовать публику.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_share_01"
+		},
+		{
+			"voicelineId": 88018,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Позволь представить тебе единственного и неповторимого Господина Верите. Это не просто камера - он мой верный спутник и помощник. Видишь его шляпку и галстук-бабочку? Их мне сделала на заказ Тиори. Очень красиво, да? У меня есть для него несколько других нарядов, выполненных в разных стилях. На каждое интервью, по какому бы поводу оно ни проводилось, он приодевается, чтобы произвести впечатление!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_pref_gift_01"
+		},
+		{
+			"voicelineId": 88019,
+			"title": "О Навии...",
+			"voicelineType": "4001",
+			"description": "Теперь, когда имя её отца очищено, а дело об исчезновениях девушек раскрыто, Навии, наверное, наконец-то стало легче дышать. Не знаю почему, но в последнее время она оказалась в эпицентре всех плохих новостей... К счастью для неё, я отыскиваю все статьи, в которых она упоминается, и подправляю их перед публикацией. А потом меня постоянно отчитывает Евфрасия за вмешательство... Но, знаешь, я думаю, что Навия заслуживает передышки, так что я рада ей помочь. Кроме того, она согласилась дать мне подробное эксклюзивное интервью, ради такого стоит потерпеть!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Словно лёгкий дождь без причины»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88020,
+			"title": "О Лини",
+			"voicelineType": "4002",
+			"description": "Какая неожиданность - Лини опять отказался от интервью со мной. Знаешь, в какой раз? Вообще-то я уже сбилась со счёта. Но ничего! Отказ от интервью только подтверждает мои подозрения, что он скрывает потрясающую историю! И я буду копать, пока не найду её, чтобы потрясти мир!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_lyney_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88021,
+			"title": "О Линетт...",
+			"voicelineType": "4003",
+			"description": "Какой вопрос ей ни задай, Линетт просто спокойно опускает глаза, сохраняя отсутствующее выражение лица. Как будто она какая-то... кукла с заводным механизмом. Меня так и тянет написать статью под названием: «Механическая помощница фокусника»... но у меня есть подозрение, что даже это не вызовет у неё никакой реакции.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88022,
+			"title": "О Клоринде...",
+			"voicelineType": "4004",
+			"description": "Клоринда - самый известный судебный дуэлянт в Фонтейне, а заодно и самый загадочный. У меня есть источник, который говорит, что она использует какой-то мистический ритуал, чтобы сохранить своё оружие... Может быть, в этом секрет её знаменитого послужного списка на дуэльном ринге без единого поражения? Ах, как бы мне хотелось задать ей этот вопрос... Но вряд ли мне представится такая возможность. Она публично заявила, что не даёт интервью.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88023,
+			"title": "О Ризли...",
+			"voicelineType": "4005",
+			"description": "Итак... Ты ведь лично {M#встречался}{F#встречалась} с герцогом, да? Можешь поделиться какой-нибудь информацией о нём? Только не рассказывай про премиальные купоны, столовую, «Кто не работает, тот не ест»... Это всем известно. Меня же интересуют более личные моменты жизни главы крепости. Что значит «конфиденциально»? Мы же договаривались! А как же пир, который я для вас закатила? Ах вы, мошенники, в тюрьме вам самое место!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение катастрофы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88024,
+			"title": "Об Эмилии",
+			"voicelineType": "4006",
+			"description": "Эмилия делает лучшие духи во всём Кур-де-Фонтейне. На днях она показала мне удивительное средство, которое помогает от насекомых, излишнего потоотделения и запаха - всё в одном! Это просто спасение для таких людей, как я, которые всегда в дороге. Сегодня я капнула немного этого средства на запястье... Понюхай, это божественно!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_emilie_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88025,
+			"title": "О Тиори...",
+			"voicelineType": "4007",
+			"description": "Я немного покрутилась у Дома Тиори. Туда приходят не только богатые дамы Фонтейна и туристы из дальних стран, но и весьма суровые ребята. Здоровенные мускулистые типы со шрамами на лице, в масках, с мечами наготове... Но они всегда приходят с подарками и ведут себя кротко как овечки... В основном. Тех, кто не умеет себя сдерживать, буквально вышвыривают за дверь. Серьёзно! Я как-то засняла полёт одного высоченного громилы!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_chiori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88026,
+			"title": "О Фремине...",
+			"voicelineType": "4008",
+			"description": "Мы несколько раз встречались с Фремине, после того как познакомились. Он живо заинтересовался Господином Верите - моим фотографическим помощником - и даже внёс несколько усовершенствований в объектив. Но, признаться, у меня сердце замирало при виде того, как он за несколько секунд полностью разобрал Господина Верите... Поразительно, что и собрал его назад он так же быстро. Похоже, у Фремине богатый опыт - я была уверена, что он, должно быть, выходец из Исследовательского института Фонтейна, но он это отрицал.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_freminet_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88027,
+			"title": "О Нёвиллете...",
+			"voicelineType": "4009",
+			"description": "Чтобы взять интервью у юдекса, сначала нужно заранее представить все вопросы на рассмотрение во Дворец Мермония, который решает, какие вопросы утвердить, а какие запретить задавать... Так они хотят увериться, что интервью пройдёт без сучка без задоринки. Это такая морока. Один рассказ об этом меня выматывает.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_neuvillette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88028,
+			"title": "О Фурине...",
+			"voicelineType": "4010",
+			"description": "Манеры госпожи Фурины просто пленительны. Она рождена, чтобы быть звездой. Евфрасия как-то назначила одного журналиста её сопровождающим, но вскоре он уволился... Как я слышала, Фурина настаивала, чтобы он показывал ей все сделанные фотографии и заставляла переделывать, если её что-то не устраивало. Якобы она была настолько придирчива, что бедному парню пришлось сделать 127 снимков Фурины в одной и той же позе, прежде чем она осталась довольна...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88029,
+			"title": "Узнать больше о Шарлотте I",
+			"voicelineType": "5001",
+			"description": "Я прекрасно понимаю, что пускаться вслед за правдой - дело рискованное. Но из скрытых истин получаются эксклюзивные новости. А я эксклюзив не упущу! Кхм... Я хотела сказать, что не упущу возможности исполнить свой журналистский долг и представить общественности лучшие эксклюзивные новости в своих мощных, увлекательных и правдивых репортажах!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_friendship_01"
+		},
+		{
+			"voicelineId": 88030,
+			"title": "Узнать больше о Шарлотте II",
+			"voicelineType": "5002",
+			"description": "Когда я начинала работать журналистом, я ничего не знала о том, как писать новости, и мне пришлось разбираться самой, читая чужие статьи. Кроме «Паровой птицы», есть и другие независимые издания, как правило, с более узкой специализацией. Например, «Наблюдатель», где публикуются сплетни о знаменитостях, «Еженедельник развлечение», который освещает спортивные состязания и развлекательные мероприятия, «Шеф-повар», посвящающий себя ресторанной критике, и «Поразительно!» - нечто вроде фабрики слухов и домыслов. Я многое вынесла для себя из чтения этих изданий. Или... Ну, по крайней мере, ознакомилась с разными стилями письма.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88031,
+			"title": "Узнать больше о Шарлотте III",
+			"voicelineType": "5003",
+			"description": "Однажды я полгода работала под прикрытием для разоблачительной статьи о торговце некачественной едой. Я переоделась бродягой, проникла на заднюю кухню, устроилась кухонной работницей и оставалась там до тех пор, пока не собрала достаточно веских доказательств. Затем я изложила всё это в статье и опубликовала её в газете. Отклик был бурным. Виновные, конечно, понесли наказание за свои преступления, но это не помешало им начать на меня охоту. Каждый день, приходя домой, я видела письма с угрозами, лежащие на моем прикроватном столике, а входную дверь редакции забрасывали грязью... «Паровая птица» быстро направила жалобу жандармам, а меня отправили в Мондштадт писать репортаж о «Священном призыве семерых». Только спустя какое-то время я смогла спокойно вернуться в Фонтейн. Такие вещи случаются постоянно. Я, честно говоря, не знаю, как с этим справляется Евфрасия...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88032,
+			"title": "Узнать больше о Шарлотте IV",
+			"voicelineType": "5004",
+			"description": "Я всегда была любопытной. Ещё в детстве, задолго до того, как я задумалась о журналистике, я была убеждена, что в каждом уголке таятся секреты и тайны... Для меня мир - это огромный кладезь спрятанных сокровищ - бесчисленных историй, которые только и ждут, чтобы их раскрыли. Каждый раз, когда я вижу потенциальную тайну, я делаю снимок на камеру и добавляю его в свою коллекцию. Эти фотографии - как моя личная карта сокровищ... Я постоянно возвращаюсь к ним, пытаясь найти новые способы расшифровать их и раскрыть истину.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88033,
+			"title": "Узнать больше о Шарлотте V",
+			"voicelineType": "5005",
+			"description": "Меня не волнует, насколько значимы эти скрытые истины, что за ними кроется и какими будут последствия... Я просто хочу открыть их миру. Выражаясь языком искателей приключений, я думаю, что для меня... главное - это азарт погони, а не сокровища в конце. А ещё на этом пути мне встретилось много замечательных людей: мои друзья из Фонтейна, Евфрасия, которая считает меня прирождённой журналисткой, и такие люди, как ты, которые присоединяются ко мне в поисках правды. Без чужой помощи я бы, наверное, так и осталась девчонкой, которая носится по городу, беспорядочно снимая всё подряд... Знаешь, я нечасто оказываюсь в роли человека, у которого берут интервью, и это... было очень приятно.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88034,
+			"title": "Хобби Шарлотты",
+			"voicelineType": "6001",
+			"description": "Я коллекционирую объективы. Все они обладают разными достоинствами - у одних невероятный диапазон фокусных расстояний, у других - широкий обзор. А ещё есть новинки, которые позволяют накладывать на изображение специальные эффекты. Вот, например, этот объектив: если сделать с его помощью портретное фото, то лицо будет казаться пухлым... Давай, я тебя сфотографирую! И тебя, Паймон!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_pref_hobby"
+		},
+		{
+			"voicelineId": 88035,
+			"title": "Беспокойство Шарлотты",
+			"voicelineType": "6012",
+			"description": "У меня сложилась не самая лучшая репутация в глазах некоторых людей - думаю, это связано с тем, что я иногда бываю немного... жёсткой на интервью. И теперь, когда я прихожу задавать вопросы, меня часто ждут с настороженностью... Эх. Но в свою защиту скажу, что на некоторых действительно приходится давить, иначе они не раскроются...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_dialog_annoyed_01"
+		},
+		{
+			"voicelineId": 88036,
+			"title": "Любимая еда...",
+			"voicelineType": "6003",
+			"description": "Сладкое - моя слабость. Сколько бы я ни съела за обедом, никогда не откажусь от десерта. Как говорит моя мама... В моём желудке всегда есть специальное местечко для сладкого!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_pref_foodLike"
+		},
+		{
+			"voicelineId": 88037,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Терпеть не могу острое. Как будто мой желудок оснащён сверхчувствительным детектором специй или чем-то в этом роде, потому что даже самый слабый намёк на чили приводит его в действие. Один маленький кусочек - и желудок начинает болеть... и так на весь день, ох...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_pref_foodDislike"
+		},
+		{
+			"voicelineId": 88038,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "А ты отлично готовишь! Не хотите завести кулинарную колонку в нашей газете? Я уже придумала, как её вписать.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_spice_pref_01"
+		},
+		{
+			"voicelineId": 88039,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Неплохо... Научишь меня это готовить?",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_spice_normal_01"
+		},
+		{
+			"voicelineId": 88040,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Ух... Сочная новость... с душераздирающей концовкой...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_spice_dislike_01"
+		},
+		{
+			"voicelineId": 88041,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "С днём рождения! Ты уже читал{F#а} сегодняшний номер «Паровой птицы»? Я опубликовала там поздравление с днем рождения для тебя, хе-хе... Подожди, у тебя нет газеты? Ничего страшного, я как раз купила по дороге из редакции. Смотри! Пришлось постараться, чтобы поздравление попало в номер!",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 88042,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Какое странное и прекрасное чувство... Я должна это записать.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88043,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Значит, эта штука действительно повышает силу? Я думала, что это всё слухи, а теперь вот убедилась на собственном опыте...",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88044,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Ты уже делал{F#а} подобное для других? Для этого требовались такие же материалы или нет? А ещё мне интересно... О, прости, профессиональная привычка.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 88045,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Вот это да! Мой мозг действует быстрее, а у моего тела больше энергии... Теперь от меня не ускользнёт ни одна новость! Но сначала давай сделаем фото на память об этом прекрасном моменте.",
+			"voicefile": "VO_friendship/VO_charlotte/vo_charlotte_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 88046,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Скажи «сыр»!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_skill1_01"
+		},
+		{
+			"voicelineId": 88047,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Улыбочку!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_skill1_02"
+		},
+		{
+			"voicelineId": 88048,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Прими позу!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_skill1_03"
+		},
+		{
+			"voicelineId": 88049,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Настоящая бомба!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_skill3_01"
+		},
+		{
+			"voicelineId": 88050,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Экстренные новости!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_skill3_02"
+		},
+		{
+			"voicelineId": 88051,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Эксклюзивная новость сражает наповал!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_skill3_03"
+		},
+		{
+			"voicelineId": 88052,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "О! Выглядит неплохо.",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_chest_open_01"
+		},
+		{
+			"voicelineId": 88053,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Хотелось бы взять интервью у того, кто это здесь оставил.",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_chest_open_02"
+		},
+		{
+			"voicelineId": 88054,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Сомневаюсь, что кто-то до сих пор это ищет...",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_chest_open_03"
+		},
+		{
+			"voicelineId": 88055,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Я продолжаю съёмку...",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_less30_01"
+		},
+		{
+			"voicelineId": 88056,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Я не закончила с новостями!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_less30_02"
+		},
+		{
+			"voicelineId": 88057,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Камера ещё работает!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_less30_03"
+		},
+		{
+			"voicelineId": 88058,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Осторожно!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 88059,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Я не стану писать твой некролог!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 88060,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Передай фотографии в «Паровую птицу»...",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_die_01"
+		},
+		{
+			"voicelineId": 88061,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Хотя бы... я всё записала...",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_die_02"
+		},
+		{
+			"voicelineId": 88062,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Заголовок... Ещё нужен заголовок...",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_life_die_03"
+		},
+		{
+			"voicelineId": 88063,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900002",
+			"description": "Как грубо!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 88064,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910002",
+			"description": "Моя камера!",
+			"voicefile": "VO_gameplay/VO_charlotte/vo_charlotte_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 88065,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Начнём интервью!",
+			"voicefile": "VO_teamJoin/vo_charlotte_teamJoin_01"
+		},
+		{
+			"voicelineId": 88066,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Есть новости?",
+			"voicefile": "VO_teamJoin/vo_charlotte_teamJoin_02"
+		},
+		{
+			"voicelineId": 88067,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Чем ближе к месту событий, тем достовернее новости!",
+			"voicefile": "VO_teamJoin/vo_charlotte_teamJoin_03"
+		}
+	]
+}

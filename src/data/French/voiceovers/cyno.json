@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "Première rencontre - Le passé",
+			"voicelineType": "1000",
+			"description": "Je suis Cyno, l'ancien général mahamatra. J'utilise désormais mes pouvoirs pour punir le mal comme bon me semble. Si vous partagez mes idéaux d'ordre et de justice, je vous prêterai volontiers ma force.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "Première rencontre - Le présent",
+			"voicelineType": "1006",
+			"description": "Je suis Cyno, le général mahamatra de l'Académie. C'est mon devoir de faire respecter les règles et de punir les méfaits. J'assurerai votre sécurité lors de ce voyage.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terminez « Pulsation akashienne et montée de la flamme de kalpa ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "Bavardage - Peser le cœur",
+			"voicelineType": "1101",
+			"description": "À la fin, le bien et le mal seront pesés dans la balance.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "Bavardage - Chance du tirage",
+			"voicelineType": "1102",
+			"description": "La chance peut jouer un rôle dans l'issue d'un seul duel, mais elle ne peut pas être présente pour toujours.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "Bavardage - Doute",
+			"voicelineType": "1103",
+			"description": "Parfois, il m'arrive de vouloir détendre l'atmosphère. Seulement, je n'arrive pas du tout à savoir quelles blagues peuvent faire rire les gens.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "Quand il pleut...",
+			"voicelineType": "1201",
+			"description": "Il pleut encore...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "Quand le tonnerre gronde...",
+			"voicelineType": "1202",
+			"description": "Dans certaines légendes, le tonnerre est l'expression du jugement des divinités sur les hommes.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "Quand il neige...",
+			"voicelineType": "1203",
+			"description": "J'adore voir le monde recouvert de neige. Tout est immobile, sans pourtant être dénué de vie.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "Il fait bon dehors...",
+			"voicelineType": "1204",
+			"description": "Le soleil finira toujours par illuminer chaque recoin.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "Le vent souffle fort...",
+			"voicelineType": "1205",
+			"description": "Il y a beaucoup de vent... Faites attention.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "Dans le désert...",
+			"voicelineType": "1206",
+			"description": "Un paysage qui m'est familier...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "Au réveil...",
+			"voicelineType": "1001",
+			"description": "On se réveille, il est temps de se mettre en route.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "À l'heure du déjeuner...",
+			"voicelineType": "1002",
+			"description": "Je dois préparer le déjeuner ? Il faut que je vous prévienne : je ne garantis pas que ça sera bon.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "Le soir...",
+			"voicelineType": "1003",
+			"description": "Vous vous souvenez de ce que je vous ai dit ? Le danger rôde la nuit, alors quoi que vous fassiez, ne relâchez jamais votre vigilance.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "La nuit...",
+			"voicelineType": "1004",
+			"description": "Bonne nuit. Il y a des criminels actifs dans les alentours, je vais m'en occuper.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "À propos de Cyno - Blagues pas drôles",
+			"voicelineType": "2001",
+			"description": "C'est l'histoire d'un voyageur assoiffé dans le désert qui prie pour qu'un Hydroblob se présente sur son chemin. À sa grande surprise, il tombe effectivement sur... un Hydroblob affamé qui prie qu'un voyageur perdu se présente à lui... Euh ? Pourquoi vous faites cette tête, elle n'est pas drôle, ma blague ?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "À propos de Cyno - Promenades",
+			"voicelineType": "2005",
+			"description": "Il m'arrive de me promener dans le désert le soir. La fraîcheur et le vent sec me permettent de garder l'esprit éveillé.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "À propos de nous - Duel",
+			"voicelineType": "2003",
+			"description": "Que diriez-vous d'une petite partie d'Invocation des Sept ? Il faut que je vous montre mon nouveau deck.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "À propos de nous - Le présent",
+			"voicelineType": "2002",
+			"description": "Il est impossible de changer le passé, tout comme il est impossible de prédire l'avenir. C'est pourquoi je chéris le moment présent.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "À propos de l'œil divin...",
+			"voicelineType": "3001",
+			"description": "Certes, on peut tout à fait dire que j'ai reçu les faveurs divines : un esprit m'habite et le regard des divinités est posé sur moi. Cependant, je n'ai pas l'intention de laisser cela affecter mon sens de la justice. Je continuerai simplement à faire ce qui est nécessaire pour accomplir mon devoir.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "Quelque chose à partager - Soif de savoir",
+			"voicelineType": "3002",
+			"description": "« Les désirs incontrôlés sont source de calamités », tout le monde sait ça. Pourtant, lorsqu'il est question du désir de connaissance, les gens n'en parlent que de manière positive... Pour moi, le désir de connaissance est un désir comme les autres, et il doit être restreint.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "Quelque chose à partager - Respect solennel",
+			"voicelineType": "3005",
+			"description": "Lorsque je suis en mission, chacun de mes jugements peut changer le destin des autres personnes. C'est pour cela que je me dois de respecter ma fonction de matra... De la même manière que je respecte la connaissance et la force.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "Détails intéressants...",
+			"voicelineType": "3003",
+			"description": "J'aime ces arbustes qui poussent dans le désert. Le désert symbolise le repos et la solitude, et toute forme de civilisation finit enterrée dans le désert. Pourtant, dans ces terres désolées, il est possible de voir les traces du bourgeonnement incessant de formes de vie. Même moi, il m'arrive d'être stupéfait par leur ténacité.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "À propos de Tighnari - Connaissance",
+			"voicelineType": "4001",
+			"description": "Tighnari est différent des autres chercheurs que j'ai rencontrés. Il est tout aussi dévoué à la connaissance que les autres, mais il ne dépasse jamais les limites. Lorsqu'ils sont dans leurs laboratoires, certains chercheurs se prennent pour des dieux, mais pas Tighnari : il a toujours fait preuve de respect pour la vie. J'ai entendu dire qu'il a même refusé un poste à l'Académie. Je le soutiens totalement dans sa décision.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "À propos de Tighnari - Humour",
+			"voicelineType": "4002",
+			"description": "Tighnari m'a dit une fois de ne pas raconter de blagues à table, et a insisté sur le fait que mes blagues n'étaient pas drôles. Je n'étais pas d'accord, alors j'ai raconté trois de mes meilleures blagues à la suite, sans oublier d'expliquer ce qui était drôle... Quand j'ai fini de parler, mon assiette était froide.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "À propos de Collei...",
+			"voicelineType": "4003",
+			"description": "Je l'ai autrefois aidée à sceller les restes de divinités qui sont à l'intérieur de son corps, ce qui a été énormément douloureux pour elle. Cette souffrance est sans doute plus horrible que la mort, et pourtant, elle a tenu jusqu'au bout. Elle n'est vraiment pas comme les autres.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "À propos d'Alhaitham...",
+			"voicelineType": "4004",
+			"description": "Je n'aime pas vraiment les gens trop intelligents. Ils pensent être maîtres de tout, et sont toujours en train de flirter avec le danger. En revanche, Alhaitham est plutôt mesuré. Dans la plupart des situations, il a les choses sous contrôle et est capable de désamorcer les crises.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Le roi Deshret et les trois mages ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "À propos de Kaveh...",
+			"voicelineType": "4005",
+			"description": "Même si Tighnari et Collei ne l'ont pas dit, je sais qu'ils ont trouvé les anecdotes de Kaveh bien plus amusantes que les blagues que j'avais préparées... J'ai pu le voir sur leurs visages. Hmm ? Ce que ça m'a fait ? Eh bien, j'ai trouvé ça drôle que ça les fasse rire.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "À propos de Nahida...",
+			"voicelineType": "4006",
+			"description": "Je ne suis peut-être pas en position de donner mon avis sur une divinité, mais j'ai pu voir sa sagesse, son courage et sa détermination lorsque nous avons travaillé ensemble. Contrairement à ces sages qui ne savent qu'émettre des critiques à son égard sans la moindre preuve, je pense être une source d'information beaucoup plus fiable à son sujet : c'est une divinité exceptionnelle qui est digne de notre confiance.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Pulsation akashienne et montée de la flamme de kalpa ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "À propos de Nilou...",
+			"voicelineType": "4007",
+			"description": "Je peux voir son enthousiasme et sa passion pour la danse, c'est devenu partie intégrante de son être. J'espère qu'elle continuera d'apporter du bonheur aux gens grâce à cet art qu'elle aime tant.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Pulsation akashienne et montée de la flamme de kalpa ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "À propos de Faruzan...",
+			"voicelineType": "4008",
+			"description": "J'ai soigneusement parcouru les dossiers concernant la disparition de Faruzan. Au début, j'ai pensé qu'elle avait peut-être effectué des recherches dangereuses, mais une fois que je l'ai rencontrée en personne, j'ai complètement abandonné cette hypothèse. Même si j'ai un peu de mal à m'entendre avec elle, elle me fait surtout penser à une grande sœur gentille et bavarde. Elle est attentive aux autres et ne ferait jamais rien d'imprudent.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "À propos de Lisa...",
+			"voicelineType": "4009",
+			"description": "Bien sûr que je connais Lisa, nous avons tous deux étudié sous la direction du même sage. En tant que général mahamatra, j'ai vu de nombreuses tragédies arriver à ceux qui recherchaient la connaissance trop assidûment, il m'est donc facile de comprendre sa décision.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "Connaître Cyno (1)",
+			"voicelineType": "5001",
+			"description": "Hein ? Vous voulez en savoir plus sur moi ? Hmm, je suppose que beaucoup de gens me voient comme une épine dans leur pied... Mais ne vous inquiétez pas, tant que vous ne faites rien de dangereux, vous n'aurez aucun problème avec moi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "Connaître Cyno (2)",
+			"voicelineType": "5002",
+			"description": "Mon corps est un véhicule qui me permet d'exploiter le pouvoir de l'esprit qui m'habite. C'est en partie possible grâce à ma constitution naturelle, mais aussi grâce à un marché que j'ai volontairement conclu dans le passé. Je n'ai aucune raison d'éviter ce sujet. Si, en ma fonction de matra, je dois juger les âmes des autres dans ce monde, alors il m'est aussi nécessaire de placer ma propre âme sur la balance pour me soumettre au même jugement.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "Connaître Cyno (3)",
+			"voicelineType": "5003",
+			"description": "Plutôt que chercher à comprendre le pourquoi du comment, je préfère me concentrer sur les faits accomplis. Il y a d'innombrables motivations derrière les actes des gens dans ce monde, et lorsqu'on se penche sur certaines de ces motivations, on ne peut s'empêcher de penser que le malfaiteur avait raison, ou que l'opinion a été trop dure avec lui. Même si les gens ont toujours de la sympathie pour la partie désavantagée, le juge doit se libérer de ces sentiments. On peut compatir à la douleur et aux motivations de l'accusé, mais un crime, une fois commis, ne peut être laissé impuni.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "Connaître Cyno (4)",
+			"voicelineType": "5004",
+			"description": "Dans l'océan lugubre de l'ignorance, une faible lueur apparaît parfois, attirant vers elle ceux qui ne comprennent pas la vérité. Les gens voient souvent cette lueur comme une balise leur montrant la voie à suivre, mais ce faisant, ils négligent les grands dangers qui se cachent encore dans les eaux noires. Diriger ceux qui ont longtemps résidé dans les ténèbres loin de la lumière est une chose cruelle en soi, mais je dois continuer à le faire jusqu'à ce que nous puissions enfin vaincre les ennemis qui se cachent sous la surface de l'eau.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "Connaître Cyno (5)",
+			"voicelineType": "5005",
+			"description": "Je vous ai déjà dit tout ce que je pensais qui valait la peine d'être partagé. Que voulez-vous entendre d'autre ? Ha, votre curiosité est remarquable... Très bien, posez-moi vos questions. Pour quelqu'un qui a l'habitude d'interroger les autres, la sensation d'être interrogé est... intéressante.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "Les loisirs de Cyno...",
+			"voicelineType": "6001",
+			"description": "Pendant mon temps libre, j'aime trouver des gens pour jouer à l'Invocation des Sept. C'est un jeu qui repose sur des règles définies et qui autorise cependant une certaine flexibilité. Pour moi, c'est plutôt une forme d'art.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "Les problèmes de Cyno...",
+			"voicelineType": "6002",
+			"description": "J'ai récemment vu qu'il y avait un roman léger d'Inazuma qui a pour thème l'Invocation des Sept. Lorsque le personnage principal se trouve dans une situation difficile, il arrive à tirer une carte qui n'est même pas censée exister. Cela m'a profondément bouleversé et m'a rendus confus : en manipulant le deck de jeu, il est possible de créer un miracle auquel personne ne s'attend. Reste à savoir si une telle opération est considérée comme une violation des règles du jeu.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "Plats préférés...",
+			"voicelineType": "6005",
+			"description": "Du riz, de la viande et des noix séchées, mélangés à un peu de yaourt et rôtis ensemble... Quel merveilleux mélange de saveurs. On peut sentir l'arôme s'échapper avec la vapeur lorsqu'on coupe la coque croustillante. Ça ne prend pas beaucoup de temps à préparer et c'est mon plat préféré.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "Plats détestés...",
+			"voicelineType": "6004",
+			"description": "Les rations que je prends avec moi lorsque je voyage dans le désert sont généralement totalement insipides. Quand on est habitué à les manger, il n'y a plus aucune nourriture qui a mauvais goût. Si je devais choisir quelque chose que je déteste, cependant... Disons que je n'adore pas manger des insectes ou tout ce qui s'y rapporte...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "Cadeau reçu (1)",
+			"voicelineType": "6007",
+			"description": "C'est très bon. Merci beaucoup.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "Cadeau reçu (2)",
+			"voicelineType": "6008",
+			"description": "Je l'accepte volontiers, merci.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "Cadeau reçu (3)",
+			"voicelineType": "6009",
+			"description": "C'est pour moi ? Vous êtes {M#sûr}{F#sûre} ?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "Anniversaire...",
+			"voicelineType": "7001",
+			"description": "Ahem... Je voudrais vous souhaiter un joyeux anniversaire. Bien que je n'aie pas beaucoup d'expérience pour ce qui est de fêter les anniversaires, lorsque j'ai réalisé que le vôtre approchait, j'ai décidé de préparer quelques petites choses. Tout d'abord, il y a ce deck, je l'ai construit pour vous et je pense qu'il correspondra vraiment à votre style. De plus, j'ai ajusté mon emploi du temps pour avoir un peu de temps, alors y a-t-il un endroit où vous aimeriez aller ? Je serais heureux de vous accompagner. Un anniversaire ne dure qu'un jour, mais vous devriez en profiter le plus possible. Assurez-vous simplement que nous pourrons être rentrés dans les trois jours.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "Affinité faible",
+			"voicelineType": "8001",
+			"description": "Je sens une nouvelle force. C'est la preuve que je suis devenu plus fort.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 1.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "Affinité moyenne",
+			"voicelineType": "8002",
+			"description": "Je jure de faire respecter les règles et de punir le mal.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 2.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "Affinité élevée",
+			"voicelineType": "8003",
+			"description": "Belle progression. Merci à vous.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 4.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "Affinité max",
+			"voicelineType": "8004",
+			"description": "Ma puissance a atteint son niveau maximum, mais il y a encore beaucoup de choses que je ne pourrai jamais accomplir en me fiant à ma seule force au combat. Il y aura encore beaucoup de moments où mes sentiments seront en contradiction avec les règles. Toutefois, je pense qu'au cours de mes prochains voyages, je trouverai le moyen de concilier ces deux choses.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 6.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "Compétence élémentaire (1)",
+			"voicelineType": "100001",
+			"description": "Rendez-vous !",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "Compétence élémentaire (2)",
+			"voicelineType": "100002",
+			"description": "Il est inutile de se débattre.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "Compétence élémentaire (3)",
+			"voicelineType": "100003",
+			"description": "Vous n'avez nulle part où fuir !",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "Compétence élémentaire (4)",
+			"voicelineType": "100004",
+			"description": "Le jugement est tombé.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "Compétence élémentaire (5)",
+			"voicelineType": "100005",
+			"description": "Coupable !",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "Compétence élémentaire (6)",
+			"voicelineType": "100006",
+			"description": "Repentez-vous !",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "Déchaînement élémentaire (1)",
+			"voicelineType": "200001",
+			"description": "À travers moi... Justice est faite !",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "Déchaînement élémentaire (2)",
+			"voicelineType": "200002",
+			"description": "Votre jugement est tombé à l'heure prévue.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "Déchaînement élémentaire (3)",
+			"voicelineType": "200003",
+			"description": "Vos péchés pèsent sur la balance.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "Ouverture de coffre (1)",
+			"voicelineType": "300001",
+			"description": "Une récompense bien méritée.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "Ouverture de coffre (2)",
+			"voicelineType": "300002",
+			"description": "La persévérance est primordiale.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "Ouverture de coffre (3)",
+			"voicelineType": "300003",
+			"description": "L'accumulation des richesses est la base de la civilisation.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "PV faibles (1)",
+			"voicelineType": "410001",
+			"description": "La menace est plus importante que je ne le pensais...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "PV faibles (2)",
+			"voicelineType": "410002",
+			"description": "Il est temps de s'y habituer.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "PV faibles (3)",
+			"voicelineType": "410003",
+			"description": "Argh... Essaye encore !",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "Compagnon avec PV faibles (1)",
+			"voicelineType": "400001",
+			"description": "Reposez-vous, ne vous forcez pas.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "Compagnon avec PV faibles (2)",
+			"voicelineType": "400002",
+			"description": "Je prends la relève.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "K.O. (1)",
+			"voicelineType": "500001",
+			"description": "Est-ce mon tour...?",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "K.O. (2)",
+			"voicelineType": "500002",
+			"description": "L'anéantissement... et la renaissance... se suivent toujours.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "K.O. (3)",
+			"voicelineType": "500003",
+			"description": "Mon jugement... a échoué...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "Attaque légère subie (1)",
+			"voicelineType": "900001",
+			"description": "C'est futile.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "Attaque puissante subie (1)",
+			"voicelineType": "910001",
+			"description": "Il est coriace.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "Attaque puissante subie (2)",
+			"voicelineType": "910002",
+			"description": "Pas mal joué.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "Ajout dans l'équipe (1)",
+			"voicelineType": "600001",
+			"description": "Je vais tout donner.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "Ajout dans l'équipe (2)",
+			"voicelineType": "600002",
+			"description": "Passons à l'action.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "Ajout dans l'équipe (3)",
+			"voicelineType": "600003",
+			"description": "Qui est notre cible, cette fois-ci ?",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

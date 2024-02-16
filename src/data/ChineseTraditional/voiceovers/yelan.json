@@ -1,0 +1,712 @@
+{
+	"id": 10000060,
+	"name": "Yelan",
+	"friendLines": [
+		{
+			"voicelineId": 60000,
+			"title": "初次見面…",
+			"voicelineType": "1000",
+			"description": "{F#妳}{M#你}好，旅行者，叫我夜蘭就好。我想{F#妳}{M#你}或許會需要我的幫助，我恰好也對{F#妳}{M#你}所擁有的情報感興趣。總之，讓我們友好相處，互幫互助吧。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_draw_appear"
+		},
+		{
+			"voicelineId": 60001,
+			"title": "閒聊·線報",
+			"voicelineType": "1101",
+			"description": "線人來信了，嗯，看來又出現了新的變數。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_character_idle_01"
+		},
+		{
+			"voicelineId": 60002,
+			"title": "閒聊·翹班",
+			"voicelineType": "1102",
+			"description": "點數不錯，今天就繼續翹班吧，等到狀態好了，再去把活一次幹完。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_character_idle_02"
+		},
+		{
+			"voicelineId": 60003,
+			"title": "閒聊·身分",
+			"voicelineType": "1103",
+			"description": "在這世間行走，「身分」多一點才便利。需要我幫{F#妳}{M#你}捏造一些嗎？",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_character_idle_03"
+		},
+		{
+			"voicelineId": 60004,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "又下雨了？真是麻煩啊…痕跡一旦被雨水沖刷乾淨，就需要不少時間來還原了…",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 60005,
+			"title": "打雷的時候…",
+			"voicelineType": "1202",
+			"description": "在打雷時會感到害怕的，要嘛是純真的孩子，要嘛是心虛之人。{F#妳}{M#你}應該兩者都不算吧？",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_weather_thunder_01"
+		},
+		{
+			"voicelineId": 60006,
+			"title": "下雪的時候…",
+			"voicelineType": "1203",
+			"description": "有點冷嘛…不能把外套披在肩上了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_weather_snowy_01"
+		},
+		{
+			"voicelineId": 60007,
+			"title": "陽光很好…",
+			"voicelineType": "1204",
+			"description": "刺眼的陽光，好煩人啊。這樣一來，我可沒法打盹了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_weather_sunny_01"
+		},
+		{
+			"voicelineId": 60008,
+			"title": "颳大風了…",
+			"voicelineType": "1205",
+			"description": "風裡傳來了躁動不安的情緒…嗯…",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_weather_gale_01"
+		},
+		{
+			"voicelineId": 60009,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "…嗯~這麼早？沒有必要的工作時，我習慣中午起床。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 60010,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "啊，有點睏了，小睡一會吧，不用提醒我，到了工作時間，我自然會醒的。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 60011,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "晚上好啊，晚飯吃了嗎？吃了點什麼？啊…我就隨口問問，不要太在意。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 60012,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "把牛奶喝了，乖乖睡吧。嗯？{F#妳}{M#你}說{F#妳}{M#你}不是小孩子？呵呵…那就放在這裡，喝不喝隨便{F#妳}{M#你}。我的話，一般會在後半夜入睡。萬一{F#妳}{M#你}有講夢話的習慣，我不能保證不把它們記下來哦。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 60013,
+			"title": "關於夜蘭自己·職責",
+			"voicelineType": "2001",
+			"description": "七星對璃月各地的情況瞭若指掌，但總有一些情報需要透過特殊手段去收集。我算是這方面的行家，所以這類差事基本被我包攬了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_idle"
+		},
+		{
+			"voicelineId": 60014,
+			"title": "關於夜蘭自己·傳聞",
+			"voicelineType": "2005",
+			"description": "有人說，岩上茶室的現任老闆是個一夜暴富的年輕商人；有人說，總務司有位體虛多病的高等雇員，隱居在城外；還有人說，不要接近涉密地區，會被藍色的鬼魂纏上…當然，大多數普通人完全沒聽說過「夜蘭」這個名字。所以{F#妳}{M#你}把那些傳聞當成笑話聽就好。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60015,
+			"title": "關於我們·關係",
+			"voicelineType": "2003",
+			"description": "嗯？{F#妳}{M#你}那是什麼表情？跟我相處不用這麼警惕。我啊，從來不算計自己認可的人。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_close"
+		},
+		{
+			"voicelineId": 60016,
+			"title": "關於我們·欺騙",
+			"voicelineType": "2002",
+			"description": "別過分期待他人的「肺腑之言」，狡猾者只會說{F#妳}{M#你}愛聽的話；也別輕易迎接他人的目光，眼神最容易出賣一個人的情緒。我們怎麼說都是朋友，要是{F#妳}{M#你}被人騙，我也會有種吃了啞巴虧的感覺呢。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60017,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "重要情報所在的地點，往往隱藏著致命的殺機，無論有多少可靠的部下，都無法徹底排除風險，足夠破局的武力才是關鍵。我還算走運，至少在悟出這個道理後幾天，就獲得了「神之眼」。否則，站在這裡和{F#妳}{M#你}聊天的…就是蓬頭垢面的鬼魂了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60018,
+			"title": "有什麼想要分享·隔絕噪音",
+			"voicelineType": "3002",
+			"description": "仔細打磨鰍鰍寶玉後，可以將它當成耳塞，隔音效果很不錯，哪怕有人在{F#妳}{M#你}耳邊嘶聲哀嚎，都不會打擾{F#妳}{M#你}的美夢。當然，希望{F#妳}{M#你}以後不必用到這種東西。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_share_01"
+		},
+		{
+			"voicelineId": 60019,
+			"title": "有什麼想要分享·幽奇腕闌",
+			"voicelineType": "3004",
+			"description": "右手的鐲子？告訴{F#妳}{M#你}也無妨…它蘊含著我們家族的術法，能傳遞簡單的訊息。至於訊息的含義，都隱藏在這藍光中，只有我能看懂。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_share_02"
+		},
+		{
+			"voicelineId": 60020,
+			"title": "有什麼想要分享·追蹤目標",
+			"voicelineType": "3005",
+			"description": "在追蹤目標時，我一般傾向於給對方施加心理壓力。在試圖擺脫我的過程中，他們會陣腳大亂、搬救兵、改變計畫…直到把自己的老底都交待出來。呵…",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_share_03"
+		},
+		{
+			"voicelineId": 60021,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "{F#妳}{M#你}瞭解盜寶鼬嗎？牠們的智力平平，但經過人為馴化後，也能熟練地重複偷盜，甚至開鎖撬鎖。多鮮活的例子啊——只要方法得當，連動物都能作為合適的棋子，勾心鬥角的人們又何嘗不是如此？",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_pref_gift_01"
+		},
+		{
+			"voicelineId": 60022,
+			"title": "關於凝光·關係",
+			"voicelineType": "4001",
+			"description": "我跟凝光認識得早，那時她還不是七星，我們合作了一段時間。她能提前當上七星，說不定也有我的功勞。呵，誰知道呢？總之，現在這份工作是她推薦給我的。確實不錯，很適合我。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_ningguang_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60023,
+			"title": "關於凝光·期待",
+			"voicelineType": "4002",
+			"description": "凝光是個不錯的合作對象。不過我平日在外行走，得注意身分。總務司雇員見到七星，難免要尊稱一聲大人了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_ningguang_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60024,
+			"title": "關於甘雨…",
+			"voicelineType": "4003",
+			"description": "那位秘書啊…我不可能像她那樣，時刻不停地工作。何況她的效率同樣無可挑剔。半仙的血統大概給了她不少便捷吧，不用睡覺也能保持精力。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60025,
+			"title": "關於刻晴…",
+			"voicelineType": "4004",
+			"description": "我不太喜歡把行程排得很滿的人，他們沒有給自己留下調整的餘地，只要碰上意外，就會手忙腳亂，連累同僚。但「玉衡」不同，她總是有條不紊地辦事，每次與她共事，都令我相當愉快。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60026,
+			"title": "關於煙緋…",
+			"voicelineType": "4005",
+			"description": "煙緋啊，我還挺喜歡她的。不談以前的交情，作為鼎鼎有名的律法諮詢師，她是璃月港內諸多情報的交匯點。每次幫她搞定麻煩，我都能順帶收穫珍貴的線索。但她似乎對我有些敬重過度了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60027,
+			"title": "關於魈…",
+			"voicelineType": "4006",
+			"description": "家族的長輩們曾說，要對「護法夜叉」保持最大的敬畏。據說我那瘋瘋癲癲的先祖路過望舒客棧時，都會少見地安分下來，想必是被他那驅除邪祟的威壓給照顧了。但若是有一天，我有幸與那位「降魔大聖」並肩作戰，我還是會以任務為重，不可能因為他的身分而有所顧忌。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_xiao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60028,
+			"title": "關於香菱…",
+			"voicelineType": "4007",
+			"description": "香菱啊，討人喜歡的小廚師，挑選食材的標準完全不輸琉璃亭和新月軒。有時我會去她那裡買些風乾後的絕雲椒椒。她似乎不理解我吃辣的方式，我也不想和她解釋，這是家族的傳統。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_xiangling_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60029,
+			"title": "關於行秋…",
+			"voicelineType": "4008",
+			"description": "我當然記得他，飛雲商會家的小少爺。我經常和他們家來往。也許以後，他也會成為眼觀六路的能人呢？",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60030,
+			"title": "關於達達利亞…",
+			"voicelineType": "4009",
+			"description": "那位愚人眾的執行官？他在無意中給我帶來了一些好處。我原本打算徹查「岩上茶室」的前任老闆，但那位執行官下手更快，強硬地上門討債，還公開了前任老闆做的假帳，讓他獲罪入獄。我也因此順利接管了岩上茶室，得到了一個不錯的據點。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60031,
+			"title": "想要瞭解夜蘭·其一",
+			"voicelineType": "5001",
+			"description": "願意在{F#妳}{M#你}身上下注，是考慮到{F#妳}{M#你}身分特殊，應該能為我找來不少通往「真相」的線索。呵，今天帶來什麼消息了嗎？",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_friendship_01"
+		},
+		{
+			"voicelineId": 60032,
+			"title": "想要瞭解夜蘭·其二",
+			"voicelineType": "5002",
+			"description": "交換情報講究平等，和{F#妳}{M#你}講些往事也無妨。托家族的福，我從千岩軍的斥候那裡學到了一些本事，挺早就入行了。雖然收集情報的過程會受到各種阻撓，但只要丟不掉性命，最後的贏家，總歸是我…",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60033,
+			"title": "想要瞭解夜蘭·其三",
+			"voicelineType": "5003",
+			"description": "線索是一環扣一環的，沿著它們不斷追查到一切的根源，才算是個了結。為此，我有必要將耳目散佈到各行各業去。在這個過程中，難免就要扮演各種角色。有些人形容我「一人千面」，這種說法，我就當成誇獎收下了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60034,
+			"title": "想要瞭解夜蘭·其四",
+			"voicelineType": "5004",
+			"description": "有人告誡過我，貿然探查某些往事，有可能惹來殺身之禍。呵，我可不想停下，更不會因為別人的話就停下。哪怕無法改變事實，我也絕不能待在迷霧中。{F#妳}{M#你}呢？{F#妳}{M#你}的選擇會是什麼？",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60035,
+			"title": "想要瞭解夜蘭·其五",
+			"voicelineType": "5005",
+			"description": "說起來，{F#妳}{M#你}希望陪伴在{F#妳}{M#你}身邊的我，是怎樣的人？普通的合作對象？磨礪{F#妳}{M#你}的競爭對手？眾多泛泛之交中的一位…還是說…重要的夥伴？依{F#妳}{M#你}的期望和態度，我可以「扮演」或「成為」他們中的任何人。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60036,
+			"title": "夜蘭的愛好…",
+			"voicelineType": "6001",
+			"description": "閒暇之時，我會隨機安排生活。方法很簡單：列一張清單，投骰子來決定接下來要做的事。這種消遣能帶來意想不到的樂趣，還能讓我拓寬思維的邊界，對於我的本職工作而言，也算有不小的幫助。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_pref_hobby"
+		},
+		{
+			"voicelineId": 60037,
+			"title": "夜蘭的煩惱…",
+			"voicelineType": "6002",
+			"description": "相較於一些武人，我的體能其實不算太好，這是家族遺傳的毛病。處理某些不能怠慢的工作前，我會調整作息，積蓄精力，爭取一次完事收工。除此之外的時間裡，我會盡量保持悠哉的節奏。所以，體力活我會謝絕的。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_dialog_annoyed"
+		},
+		{
+			"voicelineId": 60038,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "將風乾後的絕雲椒椒和琉璃袋的花蕊一同研磨成粉，均勻混合在雲來白毫之中，沏一壺釅茶，它馥郁的香氣必定會讓{F#妳}{M#你}沉醉。相比咖啡和烈酒，我更偏好這種回味悠長的飲品。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 60039,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "對於甜食，可得保持警惕啊。那種強烈的滿足感…會削弱人的意志力，讓人放鬆警惕。只要吃過幾次，就有可能上癮。長期吃甜食的人，或許會在不知不覺中變得遲鈍吧。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_pref_foodDislike"
+		},
+		{
+			"voicelineId": 60068,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "嗯，手藝不錯，差點就要被{F#妳}{M#你}賄賂成功了。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_spice_pref_01"
+		},
+		{
+			"voicelineId": 60069,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "吃慣辣味之後，其他菜總覺得不夠勁。沒辦法啊。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_spice_normal_01"
+		},
+		{
+			"voicelineId": 60070,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "投個骰子吧？點數比我小的話…就{F#妳}{M#你}來吃？",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_spice_dislike_01"
+		},
+		{
+			"voicelineId": 60040,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "要是在這種日子裡，我還警告{F#妳}{M#你}「別因為慶祝而鬆懈，會被人趁機暗算」，可就太不解風情了。總之，今天{F#妳}{M#你}可以盡情放鬆。來「岩上茶室」坐坐，嚐嚐我為{F#妳}{M#你}特意準備的點心吧？當然，點心不甜，只是微微辣。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 60041,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "在我的工作中，戰鬥技巧從來不可或缺。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60042,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "唯有在必要時刻快準狠地出手，才能揭露某些謊言，排除沿途的干擾。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60043,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "探索「真相」聽來簡單，實則需要長期咬住線索的毅力，還有能夠深入險境的實力。",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 60044,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "我早已將{F#妳}{M#你}當成最為重要的線人。自然就要作好萬全的準備，迎接{F#妳}{M#你}為我帶來終極答案時附帶的風險。走吧，我們去把它拿下！",
+			"voicefile": "VO_friendship/VO_yelan/vo_yelan_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 60045,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "收。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_skill1_01"
+		},
+		{
+			"voicelineId": 60046,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "抓到了。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_skill1_02"
+		},
+		{
+			"voicelineId": 60047,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "別喊疼。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_skill1_03"
+		},
+		{
+			"voicelineId": 60048,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "終場~收工！",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_skill3_01"
+		},
+		{
+			"voicelineId": 60049,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "絲線，交織。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_skill3_02"
+		},
+		{
+			"voicelineId": 60050,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "點數如何呢？",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_skill3_03"
+		},
+		{
+			"voicelineId": 60051,
+			"title": "衝刺開始·其一",
+			"voicelineType": "700001",
+			"description": "不必心急。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 60052,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "取財有方。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_chest_open_01"
+		},
+		{
+			"voicelineId": 60053,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "寶箱，也能引蛇出洞。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_chest_open_02"
+		},
+		{
+			"voicelineId": 60054,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "散落的財物，無聲的線索。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_chest_open_03"
+		},
+		{
+			"voicelineId": 60055,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "有點掃興…",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_less30_01"
+		},
+		{
+			"voicelineId": 60056,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "不能敷衍了事呢…",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_less30_02"
+		},
+		{
+			"voicelineId": 60057,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "新的變數…",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_less30_03"
+		},
+		{
+			"voicelineId": 60058,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "點到為止，你退下。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 60059,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "殘局，讓我來吧。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 60060,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "哪一步…算錯了？",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_die_01"
+		},
+		{
+			"voicelineId": 60061,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "這種失誤…不合理…",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_die_02"
+		},
+		{
+			"voicelineId": 60062,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "真相…還沒揭曉…",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_life_die_03"
+		},
+		{
+			"voicelineId": 60063,
+			"title": "普通受擊·其一",
+			"voicelineType": "900002",
+			"description": "真有膽量。",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 60064,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "不對…",
+			"voicefile": "VO_gameplay/VO_yelan/vo_yelan_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 60065,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "咬住目標了？",
+			"voicefile": "VO_teamJoin/vo_yelan_teamJoin_01"
+		},
+		{
+			"voicelineId": 60066,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "去收網吧。",
+			"voicefile": "VO_teamJoin/vo_yelan_teamJoin_02"
+		},
+		{
+			"voicelineId": 60067,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "走吧，去打聽點新消息。",
+			"voicefile": "VO_teamJoin/vo_yelan_teamJoin_03"
+		}
+	]
+}

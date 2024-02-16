@@ -1,0 +1,681 @@
+{
+	"id": 10000059,
+	"name": "Shikanoin Heizou",
+	"friendLines": [
+		{
+			"voicelineId": 59000,
+			"title": "첫 만남…",
+			"voicelineType": "1000",
+			"description": "난 시카노인 헤이조라고 해. 텐료 봉행에서 사건 해결이 가장 많고 빠른 탐정이지…. 이런, 너한테서 귀찮은 일에 휘말린 냄새가 나는데. 어서 여기 앉아 봐. 무슨 일인지 처음부터 말해줄래?",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_draw_appear"
+		},
+		{
+			"voicelineId": 59001,
+			"title": "잡담·범죄 사건",
+			"voicelineType": "1101",
+			"description": "음… 사건의 냄새가 나는 것 같군",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_character_idle_01"
+		},
+		{
+			"voicelineId": 59002,
+			"title": "잡담·탐정",
+			"voicelineType": "1102",
+			"description": "탐정이면 탐정답게 행동해야지. 돌아다니면서 증거를 찾아야겠어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_character_idle_02"
+		},
+		{
+			"voicelineId": 59003,
+			"title": "잡담·직감",
+			"voicelineType": "1103",
+			"description": "직감이 와. 곧 흥미로운 일이 일어날 거야",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_character_idle_03"
+		},
+		{
+			"voicelineId": 59004,
+			"title": "비가 그친 후…",
+			"voicelineType": "1201",
+			"description": "방금 내린 비에 단서가 지워지면 안 되는데",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 59005,
+			"title": "번개가 칠 때…",
+			"voicelineType": "1202",
+			"description": "음? 교활한 범인이 맹세라도 하는 건가?",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_weather_thunder_01"
+		},
+		{
+			"voicelineId": 59006,
+			"title": "눈이 올 때…",
+			"voicelineType": "1203",
+			"description": "그거 알아? 아주 오래전에 드래곤 스파인에서 한밤중에 일어난 귀신 사건 말이야…",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_weather_snowy_01"
+		},
+		{
+			"voicelineId": 59007,
+			"title": "강풍이 불 때…",
+			"voicelineType": "1204",
+			"description": "힘내! 이 정도 풍력으로는 「폭풍」이 될 수 없어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_weather_gale_01"
+		},
+		{
+			"voicelineId": 59008,
+			"title": "아침 인사…",
+			"voicelineType": "1001",
+			"description": "좋은 아침. 기운이 없는 걸 보니, 악몽을 꿨나 봐? 이럴 줄 알았으면 강력 사건을 좀 더 늦게 보여줄걸",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 59009,
+			"title": "점심 인사…",
+			"voicelineType": "1002",
+			"description": "배불리 먹었으니까 두뇌게임을 좀 해볼까? 계전석? 하하, 그건 정신 단련밖에 못 하잖아",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 59010,
+			"title": "저녁 인사…",
+			"voicelineType": "1003",
+			"description": "해가 퇴근하면 별이 범인을 감시할 차례야",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 59011,
+			"title": "굿나잇…",
+			"voicelineType": "1004",
+			"description": "또 잘 시간이 됐네, 아주 좋아! 오늘은 어떤 꿈을 꿀까?",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 59012,
+			"title": "시카노인 헤이조 자신에 대해·탐정",
+			"voicelineType": "2001",
+			"description": "탐정이라면 어떻게든 빠져나가려는 범인의 요행 정도는 머리를 써서 막아 줘야지. 진정한 탐정은 무력을 쓸 일이 없어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_idle"
+		},
+		{
+			"voicelineId": 59013,
+			"title": "시카노인 헤이조 자신에 대해·키워드",
+			"voicelineType": "2005",
+			"description": "난 본 것을 키워드로 기억하는 습관이 있어. 추리에 큰 도움이 돼. 여기 이 사람 바지에 붙은 고양이 털과 손목에 긁힌 흔적을 보면, 동물과 놀고 싶지만 고양이 다루는 법을 모르는 것 같아. 저분은 다친 손이 신경 쓰이나 봐. 신분에 맞지 않는 새 신발을 신었네… 잠깐, 어쩌면 새로운 의뢰를 받을지도 모르겠어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59014,
+			"title": "우리에 대해·의뢰",
+			"voicelineType": "2003",
+			"description": "네 주변의 의뢰는 마르지 않는 우물처럼 아무리 퍼내도 끝이 없네. 네 덕 좀 볼게. 알잖아. 난 싸움, 심부름, 물건 찾기 같은 일은 안 해. 추리나 중요한 사건만 맡거든… 후후. 나 대신 눈여겨 봐줘",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_close"
+		},
+		{
+			"voicelineId": 59015,
+			"title": "우리에 대해·필연적 결과",
+			"voicelineType": "2002",
+			"description": "「우연」은 참 좋은 말이야. 운명 같잖아. 하지만 탐정은 우연을 믿지 않아. 우리의 만남은 과거의 모든 선택과 행동이 낳은 필연적 결과야. 그러니까, 이 만남은 우리가 결정했다는 거지",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_close1"
+		},
+		{
+			"voicelineId": 59016,
+			"title": "「신의 눈」에 대해…",
+			"voicelineType": "3001",
+			"description": "내가 신의 눈 없이도 동료들을 쓰러트릴 수 있다는 소문이 돈다고? 음… 정정할게. 첫째, 난 봉행소의 도신이지만, 탐정일 뿐이고, 머리를 쓴다고. 둘째, 평소 싸움 같은 건 안 해. 셋째… 휴, 넌 못 속이겠다니까. 됐다 됐어~",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59017,
+			"title": "하고 싶은 이야기·성취감",
+			"voicelineType": "3002",
+			"description": "단서를 연결해서 진범을 차근차근 찾아내고, 퍼즐의 마지막 조각을 직접 맞추는 성취감은, 이야아, 정말 짜릿하다니까",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_share_01"
+		},
+		{
+			"voicelineId": 59018,
+			"title": "하고 싶은 이야기·도신",
+			"voicelineType": "3005",
+			"description": "도신이란 직위는 명성을 얻을 수 있고, 사건 현장과 가장 가까워. 탐정소에 있을 때보다 무대가 많이 커졌지. 물론… 순찰과 체포는 능력 있는 사람에게 맡겨야지. 탐정의 체력엔 한계가 있으니까",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_share_02"
+		},
+		{
+			"voicelineId": 59019,
+			"title": "흥미있는 일…",
+			"voicelineType": "3003",
+			"description": "목재에 대해 연구한 적 있어? 아, 길가에 널린 나무 맞아. 범인이 나무껍질에 스치거나, 톱밥이 묻거나, 나뭇잎을 밟으면 뭔가 남을 수도 있거든. 나무의 성장 구역으로 중요한 단서를 추리할 때도 있고. 나무는 탐정의 좋은 친구라고 할 수 있지",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_pref_gift_01"
+		},
+		{
+			"voicelineId": 59020,
+			"title": "쿠죠 사라에 대해…",
+			"voicelineType": "4001",
+			"description": "쿠죠 사라 님은… 텐료 봉행을 통틀어서 제일 엄격한 사람이야! 그분이 조금 너그러웠으면 좋겠어. 부하를 좀 더 이해하고, 가끔 결근하는 날 질책하지 않았으면 해. 사건 조사 때문에 빠진 거니까",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_kujouSara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59021,
+			"title": "아라타키 이토에 대해…",
+			"voicelineType": "4002",
+			"description": "부탁을 받아 감옥에 구운 제비꽃 열매를 전달한 적이 있는데, 우연히 그가 노래 부르는 걸 들었어. 솔직히 가사는 별로였지만, 노래는 좋더라고. 감옥에 갇힌 사람이 그런 정신 상태인 경우는 드물어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_itto_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59022,
+			"title": "쿠키 시노부에 대해…",
+			"voicelineType": "4003",
+			"description": "아라타키파는 자유롭고 다채로운 조직이야. 어떤 스타일이든 잘 받아들이지. 정말 대단해. 시노부 씨가 잘 가르친 덕이야. 어떻게 알았냐고? 하하, 이건 너무 쉬워서 추리할 필요도 없잖아",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_shinobu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59023,
+			"title": "야에 미코에 대해…",
+			"voicelineType": "4004",
+			"description": "그러고 보니 궁사님의 야에 출판사도 추리 소설을 출판한다면서? 언제 소개 받을 수 있을까? 이 시대에 명탐정이 되려면 실력은 물론이고 홍보도 빠질 수 없거든. 에이, 다른 의도는 없어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59024,
+			"title": "카에데하라 카즈하에 대해·공통점",
+			"voicelineType": "4005",
+			"description": "카즈하는 정말 믿음직해. 카즈하의 충고로 단서가 보석 상자 안의 보석들처럼 쏟아져 나왔어. 나도 카즈하처럼 자연을 감지하는 능력이 있었으면… 아! 알겠다! 카즈하에게 「바람」은 내게 「직감」 같은 존재구나!",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59025,
+			"title": "카에데하라 카즈하에 대해·초대",
+			"voicelineType": "4006",
+			"description": "아쉽네! 안수령이 폐지돼서 정정당당하게 체포할 수 없잖아! 하지만 이러면… 대놓고 텐료 봉행에 초대해서 사건을 토론하자고 해도 되겠어!",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_kazuha_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59026,
+			"title": "고로에 대해…",
+			"voicelineType": "4007",
+			"description": "그 대장의 당부로 내 와타츠미섬 여행은 아주 파란만장했지. 어디를 가든지 병사가 지켜보고 있었거든. 양심을 걸고 난 평범한 관광객이야. 끽해야 탐정이고, 다른 의도는 전혀 없었단 말야",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_gorou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59027,
+			"title": "산고노미야 코코미에 대해…",
+			"voicelineType": "4008",
+			"description": "산고노미야 님을 본 적은 없어. 그분이 나타나는 자리는 사람들이 엄청 모이니까 구경은 안 가. 아, 참, 인파의 중심에는 무녀들도 있어! 우리 같은 젊은 사람이 인정받으려면 더 많은 노력이 필요하지",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_kokomi_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59028,
+			"title": "카미사토 아야카에 대해…",
+			"voicelineType": "4009",
+			"description": "나랑 카미사토 가문의 아가씨는 인사만 하는 사이야. 우리 가문은 명문가가 아니라서 다행이야. 내게 그런 생활은 안 맞거든",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_teammate_ayaka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59029,
+			"title": "시카노인 헤이조에 대해 알기·첫 번째",
+			"voicelineType": "5001",
+			"description": "입을 다물고 있어도 그 사람의 옷차림과 행동, 표정에서 정보를 파악할 수 있어. 내가 입을 닫으면… 넌 내게서 뭘 읽어낼 수 있을까?",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_friendship_01"
+		},
+		{
+			"voicelineId": 59030,
+			"title": "시카노인 헤이조에 대해 알기·두 번째",
+			"voicelineType": "5002",
+			"description": "전에 방청하다가 추리가 떠오르는 바람에 판결을 막은 적이 있어. 만약 당시에 내가 제기한 이의가 무효였다면, 탐정이 되는 계기가 아니라, 시카노인 헤이조가 법정 질서 방해죄로 구속됐겠지. 하하하…",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.3 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59031,
+			"title": "시카노인 헤이조에 대해 알기·세 번째",
+			"voicelineType": "5003",
+			"description": "외도를 조사하고, 애완동물을 찾고… 탐정소에서 받은 사건은 다 그저 그랬고 시시했어. 그래서 기회를 엿보다 텐료 봉행으로 갔지. 산고 사장이랑 이념이 안 맞았던 것도 이유 중 하나야. 어쩔 수 없었어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59032,
+			"title": "시카노인 헤이조에 대해 알기·네 번째",
+			"voicelineType": "5004",
+			"description": "텐료 봉행에 막 들어갔을 때는, 미해결 공문으로 연습했어. 어느새 「공문서 더미」가 금세 없어졌지…. 아쉽지만 이제는 예전 공문서를 볼 시간이 없어. 날 지명해서 지원을 요청하는 사건이 많아서 숨돌릴 틈도 없이 바쁘거든… 어쩔 수 없지. 뛰어난 탐정에겐 사건이 알아서 찾아오는 법이니까",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.5 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59033,
+			"title": "시카노인 헤이조에 대해 알기·다섯 번째",
+			"voicelineType": "5005",
+			"description": "범죄에 맞닥뜨린 탐정은 이미 실패한 거야. 진실을 밝히고 범인을 찾아도, 피해를 원상 복구시킬 순 없거든. 그래서 범인이 이름만 들어도 무서워하는 명탐정으로 이름을 날리고 싶어! 범죄의 싹을 자르는 거지. 자, 이런 것까지 말해 줬으니 이제 날 좀 도와줘",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59034,
+			"title": "시카노인 헤이조의 취미…",
+			"voicelineType": "6001",
+			"description": "텐료 봉행의 법정 판결을 방청해 볼래? 조각난 그림 같은 진실이 다시 맞춰지는 걸 보게 될 거야…. 좋은 자리를 맡아줄게. 나랑 모르는 척만 하면 돼",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_pref_hobby"
+		},
+		{
+			"voicelineId": 59035,
+			"title": "시카노인 헤이조의 고민…",
+			"voicelineType": "6002",
+			"description": "마지막 순간에 무력으로 반항하는 사람이 있어. 마치 그게 통할 것처럼 말이야. 거참, 난 완벽한 증거와 추리 앞에서 죄를 인정하는 모습을 기대했는데. 탐정이 무력을 행사하면 진 거나 마찬가지잖아",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_dialog_annoyed"
+		},
+		{
+			"voicelineId": 59036,
+			"title": "좋아하는 음식…",
+			"voicelineType": "6005",
+			"description": "기름으로 튀긴 건 다 맛있지 않아? 고기든 야채든 기름에서 건진 건 다 좋아해! 그 냄새… 배고픈 사람이라면 절대 거부할 수 없지",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 59037,
+			"title": "싫어하는 음식…",
+			"voicelineType": "6004",
+			"description": "난 봉행소에서 주는 저녁이 싫어. 매번 정해진 메뉴에다 맛도 별로야. 먹고 싶은 음식을 먹어야 즐거운 법이잖아. 안타깝지만 몰래 나가서 배를 채울 수밖에 없어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_pref_foodDislike"
+		},
+		{
+			"voicelineId": 59065,
+			"title": "선물 획득·첫 번째",
+			"voicelineType": "6007",
+			"description": "오… 맛있어! 힘 좀 썼네. 정말 고마워",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_spice_pref_01"
+		},
+		{
+			"voicelineId": 59066,
+			"title": "선물 획득·두 번째",
+			"voicelineType": "6008",
+			"description": "요리는 육체노동일까, 정신노동일까? 둘 다일지도 모르겠네. 그래서 네가 요리를 잘하는구나!",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_spice_normal_01"
+		},
+		{
+			"voicelineId": 59067,
+			"title": "선물 획득·세 번째",
+			"voicelineType": "6009",
+			"description": "어디 보자… 어디서 잘못된 걸까…?",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_spice_dislike_01"
+		},
+		{
+			"voicelineId": 59038,
+			"title": "생일…",
+			"voicelineType": "7001",
+			"description": "오늘이 네 생일인 걸 알았을 때부터 장치와 선물이 가득한 밀실로 데려가서 문제를 풀어야 나올 수 있게 하고 싶었어…. 후후, 장난이야. 네가 정말 좋아할 거라는 확신이 들기 전까지는 안 해. 자, 날 따라와. 해가 지기 전에 보여주고 싶은 예쁜 경치가 있어!",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 59039,
+			"title": "돌파의 느낌·기",
+			"voicelineType": "8001",
+			"description": "직감이 와… 넌 날 강하게 만들고 싶구나!",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「1」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59040,
+			"title": "돌파의 느낌·승",
+			"voicelineType": "8002",
+			"description": "무력이 향상된 만큼, 머리도 민첩해졌으면 좋겠어…",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「2」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59041,
+			"title": "돌파의 느낌·전",
+			"voicelineType": "8003",
+			"description": "어라라, 진짜로 모두가 얘기하는 「폭풍」이 돼버리겠어",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「4」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 59042,
+			"title": "돌파의 느낌·결",
+			"voicelineType": "8004",
+			"description": "날 믿어주고 마음 써줘서 고마워, 파트너. 여기까지 온 건 네 덕분이야. 자, 하이파이브! 이제 더 많은 사건을 해결해 보자!",
+			"voicefile": "VO_friendship/VO_heizou/vo_heizou_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「6」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 59043,
+			"title": "원소전투 스킬·첫 번째",
+			"voicelineType": "100004",
+			"description": "주먹맛 좀 볼래?",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_skill1_04"
+		},
+		{
+			"voicelineId": 59044,
+			"title": "원소전투 스킬·두 번째",
+			"voicelineType": "100005",
+			"description": "발뺌하지 마!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_skill1_05"
+		},
+		{
+			"voicelineId": 59045,
+			"title": "원소전투 스킬·세 번째",
+			"voicelineType": "100006",
+			"description": "덤벼!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_skill1_06"
+		},
+		{
+			"voicelineId": 59046,
+			"title": "원소폭발·첫 번째",
+			"voicelineType": "200001",
+			"description": "순순히 자백해!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_skill3_01"
+		},
+		{
+			"voicelineId": 59047,
+			"title": "원소폭발·두 번째",
+			"voicelineType": "200002",
+			"description": "폭풍!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_skill3_02"
+		},
+		{
+			"voicelineId": 59048,
+			"title": "원소폭발·세 번째",
+			"voicelineType": "200003",
+			"description": "안개를 가르리!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_skill3_03"
+		},
+		{
+			"voicelineId": 59049,
+			"title": "보물상자 오픈·첫 번째",
+			"voicelineType": "300001",
+			"description": "보물이 제 발로 도망가게 하지 마~",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_chest_open_01"
+		},
+		{
+			"voicelineId": 59050,
+			"title": "보물상자 오픈·두 번째",
+			"voicelineType": "300002",
+			"description": "바로 이거야. 내 직감, 나쁘지 않지?",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_chest_open_02"
+		},
+		{
+			"voicelineId": 59051,
+			"title": "보물상자 오픈·세 번째",
+			"voicelineType": "300003",
+			"description": "와, 눈부셔!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_chest_open_03"
+		},
+		{
+			"voicelineId": 59052,
+			"title": "HP 부족·첫 번째",
+			"voicelineType": "410001",
+			"description": "휴, 굳이 힘으로 해결해야겠어?",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_less30_01"
+		},
+		{
+			"voicelineId": 59053,
+			"title": "HP 부족·두 번째",
+			"voicelineType": "410002",
+			"description": "너무 날뛰는군",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_less30_02"
+		},
+		{
+			"voicelineId": 59054,
+			"title": "HP 부족·세 번째",
+			"voicelineType": "410003",
+			"description": "이건 탐정의 업무가 아니지 않아?",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_less30_03"
+		},
+		{
+			"voicelineId": 59055,
+			"title": "동료 HP 감소·첫 번째",
+			"voicelineType": "400001",
+			"description": "이봐, 조심해!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 59056,
+			"title": "동료 HP 감소·두 번째",
+			"voicelineType": "400002",
+			"description": "중요한 일이니 내가 할게",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 59057,
+			"title": "전투 불능·첫 번째",
+			"voicelineType": "500001",
+			"description": "이건 진실이 아니야…",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_die_01"
+		},
+		{
+			"voicelineId": 59058,
+			"title": "전투 불능·두 번째",
+			"voicelineType": "500002",
+			"description": "허, 탐정이 피해자가 되다니…",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_die_02"
+		},
+		{
+			"voicelineId": 59059,
+			"title": "전투 불능·세 번째",
+			"voicelineType": "500003",
+			"description": "계산… 착오라고…?",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_life_die_03"
+		},
+		{
+			"voicelineId": 59060,
+			"title": "일반 피격·첫 번째",
+			"voicelineType": "900002",
+			"description": "그만해",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 59061,
+			"title": "강공격 피격·첫 번째",
+			"voicelineType": "910002",
+			"description": "귀찮아 죽겠네!",
+			"voicefile": "VO_gameplay/VO_heizou/vo_heizou_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 59062,
+			"title": "파티 가입·첫 번째",
+			"voicelineType": "600001",
+			"description": "새로운 사건이야?",
+			"voicefile": "VO_teamJoin/vo_heizou_teamJoin_01"
+		},
+		{
+			"voicelineId": 59063,
+			"title": "파티 가입·두 번째",
+			"voicelineType": "600002",
+			"description": "무슨 문제 있어? 내게 말해봐",
+			"voicefile": "VO_teamJoin/vo_heizou_teamJoin_02"
+		},
+		{
+			"voicelineId": 59064,
+			"title": "파티 가입·세 번째",
+			"voicelineType": "600003",
+			"description": "출발하자, 파트너",
+			"voicefile": "VO_teamJoin/vo_heizou_teamJoin_03"
+		}
+	]
+}

@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "Merhaba",
+			"voicelineType": "1006",
+			"description": "Merhabalar. Ben Fontaine'in Başyargıcı, namıdiğer \"Iudex\"iyim fakat sen bana soyadım \"Neuvillette\" ile hitap edebilirsin. Aramıza mesafe koymak istediğimden değil... Fakat fazla samimiyet, bazıları için yargının tarafsızlığının sorgulanmasına sebep olabilir.\nHerhangi bir talebin veya endişen varsa, yasaların izin verdiği ölçüde, Qiaoying Köyü'nden ithal edilen sularımızı yudumlarken konuşabiliriz.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "Sohbet: Davalar",
+			"voicelineType": "1101",
+			"description": "Kendi işimin öneminin farkında olmakla birlikte Fontaine halkının gayretlerinde yatan anlamı da görüyorum. Görevimi yerine getirmeye devam etmekten gurur duyacağıma inanıyorum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "Sohbet: Su Tadımı",
+			"voicelineType": "1102",
+			"description": "Ayırt edebilenler için suyun çeşitli tatları vardır. Mondstadt'ın suyu saf ve keskindir, Liyue'nin suyu ise ağızda uzun süre tat bırakır. Inazuma'daki suyun tadı eşsiz bir derinliğe sahiptir. Sumeru'nun suyunda ise zengin ve karışık bir tat profili görülür fakat tadını tamamen alabilmek için yavaşça içilmesi gerekir.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "Sohbet: Melusinalar",
+			"voicelineType": "1103",
+			"description": "Melusinalar güzel canlılardır. Fontaine'in gururudur. Onlara arkadaşça davran ve sakın zarar verme.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "Yağmur Yağdığında",
+			"voicelineType": "1201",
+			"description": "Ah, özür dilerim. Bu sağanak yağmur işini epey zorlaştırıyor olmalı.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "Yağmurdan Sonra",
+			"voicelineType": "1202",
+			"description": "Bitti...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "Yıldırım Düştüğünde",
+			"voicelineType": "1203",
+			"description": "O söz neydi... \"Damdan düşercesine\" miydi? Evet, buydu. Şu anki duygularımı çok iyi ifade ediyor.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Hızla Yaklaşan Kıyamet\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "Kar Yağdığında",
+			"voicelineType": "1204",
+			"description": "Kar aslında suyun doğal kendini temizleme yöntemlerinden biridir. Ancak insanların faaliyetleri nedeniyle saflığı zedelendiği için yemeni önermem.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "Güneş Açtığında",
+			"voicelineType": "1205",
+			"description": "Bence, hım... Parlak güneş ışığının gerçek güzelliği, ancak bir pencereden içeri girdiğinde görülebilir.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "Çölde",
+			"voicelineType": "1206",
+			"description": "Beni buraya getirmenin bir tür suikast girişimi olduğunu düşünmeden edemiyorum doğrusu...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "Günaydın",
+			"voicelineType": "1001",
+			"description": "Günaydın. Umarım günün iyi geçer.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "İyi Günler",
+			"voicelineType": "1002",
+			"description": "Ah, saat öğleni geçmiş. Çay veya kahve molanı bekliyorsundur eminim. Şahsen ben iple çekiyorum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "İyi Akşamlar",
+			"voicelineType": "1003",
+			"description": "İyi akşamlar. Bugün nahoş bir durumla karşılaşmamışsındır umarım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "İyi Geceler",
+			"voicelineType": "1004",
+			"description": "İyi geceler. Gözlerimi kapatıp tamamen dingin bir su kütlesi hayal etmek çok hoşuma gider. Sana da kesintisiz ve huzurlu uykular diliyorum. Keder taşıyan dalgalar, bu gece rüyalarını es geçer umarım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "Neuvillette Hakkında: Duruşmalar",
+			"voicelineType": "2001",
+			"description": "Duruşmaların pek hayranı olduğum söylenemez. Yalnızca görevim gereği yönetiyorum duruşmaları, zira bana emanet edildi bu görev.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "Neuvillette Hakkında: Ağlayan Su Ejderhası",
+			"voicelineType": "2005",
+			"description": "O halk efsanesini sen de mi duydun? *iç çeker* Sana onu kim söyledi? Daha doğrusu onu ilk kim yaydı... Her neyse, boş ver. Aslında Su Ejderhası'nın \"ağlayabileceğini\" sanmıyorum. Bu topraklarda dökülen ve pek çok farklı duyguyu barındıran gözyaşlarının tadını alınca sanırım biraz duygulanıyordur.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "Neuvillette Hakkında: Davaların Anlamı",
+			"voicelineType": "2006",
+			"description": "Bu asırlardan beri konuşulan bir konu... İnsanlığı hor görmek istemiyorum ama benim gördüğüm kadarıyla adalet, hakkaniyet, eşitlik ve hukukun üstünlüğü kavramlarının toplumun nezdinde eşdeğer olmadığı ve asla olamayacağı gayet açık. Elbette su akar yolunu bulur derler. Önceki Su Hükümdarı Egeria, herkesi sevgiyle birleştirerek mutlak eşitliği sağlamak istemişti. Onun yerine gelen Hükümdar ise bu eşitliği kanunlarla sağlamak istedi. Fakat nihayetinde dış etkenlerden dolayı kanunlar çarpıtılarak davalar sırf duruşmalar yapılsın diye açılmaya başlandı. Neyse, her şeyin bir nedeni vardır. Onu bu şekilde eleştirmemeliyim.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "Hakkımızda: Tanık",
+			"voicelineType": "2003",
+			"description": "Yıldızların ötesinden geldiğin için ben bu altüst olmuş dünyayı yargılarken tanığım olmanı istiyorum. \"Bu paramparça olmuş diyar bir zamanlar Yüce Babaya aitti ama artık burada kirli tüylerden başka bir şey hüküm sürmüyor. Yoldan çıkmış bir dünyada yaşıyor olsak da yozlaşmış her şeyi eski haline döndürme sorumluluğunu üstlenmeliyim.\"",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "Hakkımızda: İnsanların Dünyası",
+			"voicelineType": "2002",
+			"description": "Fontaine halkı arasında ve seninle çıktığım yolculuklarda geçirdiğim zaman, birçok konudaki bakış açımı değiştirdi. Ayrıca insanlığın günahlarını uzun zaman önce affettim, o yüzden ileride vereceğim hükümlerin halka zarar vermeyeceğine dair sana söz verebilirim. Bununla birlikte taht hırsızlarına karşı olan kinim hâlâ devam ediyor... Ellerindeki kan asla unutulmayacak.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "Önsezi Hakkında: I",
+			"voicelineType": "3001",
+			"description": "Bir keresinde bana, kriz anlarında daha kolay müdahale edebileyim diye sahte bir Önsezi taşımam tavsiye edilmişti. Bu tavsiyenin hoşuma gittiği söylenemez. Birinin hakkı olan gerçek gücünü yalnızca sahte bir beyanla kullanması gerektiği fikrine katılmıyorum. Ancak bununla beraber Önsezi taşıyan insanların yanında zaman geçirdikçe insanların arzularını ve azimlerini keşfetme ve değerini anlama fırsatı buldum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Hızla Yaklaşan Kıyamet\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "Önsezi Hakkında: II",
+			"voicelineType": "3006",
+			"description": "Efendim? Yedilerin bazı üyelerinin bile insanların arasında sahte Önseziyle dolaştığını mı söylüyorsun? Ha... Kusura bakma, bu durumun absürtlüğüne hazırlıksız yakalandım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Hızla Yaklaşan Kıyamet\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "Paylaşılacak Bir Bilgi: Yasalar",
+			"voicelineType": "3002",
+			"description": "Fontaine'de bazı ilginç yasalar var. Mesela \"Her ayın ilk üç günü herhangi bir cisim uçurmak yasaktır\", \"Kurak mevsimde kıyıya vuran bütün çift kabuklular Su Hükümdarı'na aittir, diğer yumuşakçalar ise insanlarındır\", \"Hiçbir evcil hayvana Furina ismi verilemez\", \"Ketçap restoranlarda yalnızca sos olarak kullanılabilir, tek başına asla tüketilemez\" ve son olarak \"Melusinalara sadece kişi zamirleri kullanarak hitap edilebilir, asla bu/bunlar kullanılamaz\"... Sonuncusunu bizzat ben çıkardım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "Paylaşılacak Bir Bilgi: Yağmurlu Günler",
+			"voicelineType": "3005",
+			"description": "Bazı günler düşüncelere dalıyorum ve yağmurda yürüyüş yaptığımı hayal ediyorum... *iç çeker* Ah, merak etme. Hayallerim işimi yapmama engel olmuyor.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "İlginç Şeyler: Ejderler",
+			"voicelineType": "3003",
+			"description": "Ejderlerin soyu Fontemer Denizi'nden gelir. Evrimde bu kadar becerikli olmalarının sebebi budur. Ejderhaların zamanında uyguladığı eski bir gelenek geldi aklıma. Kaybettiğimiz genç akrabalarımızın kanından bir yudum alırdık. Ay ve yıldızların hareketinden sular ne zaman yükselse biz Su organizmalarının içindeki su da başımıza doğru yükselir ve bize ölmüş akrabalarımızın yakında dirileceğini hatırlatır.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Hızla Yaklaşan Kıyamet\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "İlginç Şeyler: İnsanlar",
+			"voicelineType": "3004",
+			"description": "Gözlemlerime göre insanların kendilerini doğaya karşı görmek gibi bir eğilimi var. Ne zaman bundan bahsetsem hemen biri itiraz edip insanların da aynı diğer organizmalar gibi doğanın bir parçası olduğunu ilan ediyor. Benim gibi gerçeklerin bir miktar farkında olan birine soracak olursan en iyisi, insan uygarlığının bu gezegenin doğasıyla beraber uyum içinde yaşayabileceği yollar araması olurdu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "Toprak Hükümdarı Hakkında",
+			"voicelineType": "4001",
+			"description": "Hiçbir şey beni Yedilerin her birini yargılamaktan alıkoyamaz. Toprak İktidarını kazanan Hükümdar Deus Auri de mahkemeye çıkarılmalıdır. İkimizi karşı karşıya görmek istemeyen varsa endişelenmesine gerek yok, zira yakın gelecekte, belki de önümüzdeki dört yüz yıl boyunca Fontaine'den çıkmayı düşünmüyorum. Ayrıca, duruşma nihayet görüldüğünde verilecek hükmün fiziksel bir yüzleşme ile sonuçlanacağı da kesin değil.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "Rüzgar Hükümdarı Hakkında",
+			"voicelineType": "4002",
+			"description": "Gökler çökse de yer yarılsa da Yedilerin hepsini yargılama yeminimi tutacağım. Rüzgar İktidarını alan Esinti ve Umut Tanrısı da mahkemeye çıkarılmalıdır. Hımm? Vaktinin çoğunu kimseye zararı dokunmayan bir ayyaş olarak mı geçiriyor? Öyle bile olsa onunla şahsen tanışıp kararımı ona göre vermem gerekir.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "Elektrik Hükümdarı Hakkında",
+			"voicelineType": "4003",
+			"description": "Ejderha ırkından geri kalan ve ejderliğimi tamamen geri kazanmış biri olarak tüm suları arşa çıkarmak anlamına gelse bile yeminimi ve sorumluluklarımı terk etmeyeceğim. Narukami, Elektrik İktidarını alarak taht hırsızları arasında kendine yer edindi. Hım, demek Zihnin Dinlenme Yerinde inzivaya çekildi ve nadiren dışarı çıkıyor, öyle mi? O halde ona birkaç yüzyıl sonra uğrasam iyi olur.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "Doğa Hükümdarı Hakkında",
+			"voicelineType": "4004",
+			"description": "Onu bir gün yargılayacak olsam da Yeşillik Tanrısı'nın sorumluluk bilincini takdir ediyorum. Bu dünyada kusursuz olan çok az şey vardır ama istikrarı ile cömertliği, onun sürekli gelişmekte kararlı olduğunu gösteriyor. Geçtiğimiz beş yüz yıl boyunca maruz kaldığı muameleyi öğrendiğimde gerçekten çok üzüldüm.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "Wriothesley Hakkında",
+			"voicelineType": "4005",
+			"description": "Wriothesley güvenilir bir adam. Onun sahip olduğu unvan ve itibar için çok uğraştım. Pohpohlamalarına ve sadık görünüşüne aldandığımı düşünebilirsin elbet... Fakat Inazuma'nın bir atasözünü hatırlatmak isterim: \"Söylenmemiş sözler çiçek gibidir.\" Yani bazı şeylerin dile getirilmemesi daha iyidir.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "Clorinde Hakkında",
+			"voicelineType": "4006",
+			"description": "Clorinde'in eşsiz yetenekleri onu ulusumuzdaki en güçlü Düello Şampiyonu yaptı. Eski Mareşose Avcılarının bir halefi olarak mahkeme salonundaki adaletin ve tarafsızlığın sağlanmasında kilit bir rol oynuyor. Ayrıca göründüğü kadar da vakur biri değil.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "Lyney ve Lynette Hakkında",
+			"voicelineType": "4007",
+			"description": "Gösterileri inanılmaz, sence de öyle değil mi? İnsanı adeta sihirli dünyalarına çekiyorlar. Yaşanan her şey özenle hazırlanmış aldatmacalarının bir parçası oluyor. Öte yandan gördüklerine inanmayı seçersen her türlü mucizeyi gerçekleştirmek mümkün.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "Sigewinne Hakkında",
+			"voicelineType": "4008",
+			"description": "Sigewinne son zamanlarda nasıl hiç bilmiyorum. Ama zorbalığa uğradığına dair en ufak bir şey bile duyarsam hemen Wriothesley'yi çağırır ve hesap vermesini isterim. O kadar nazik ve narin ki... Bir önceki ziyaretinde bana Kamera filmi getirdi ve Natlan'ın suları hakkındaki yorumlarımı dinlemek istedi... Bir sonraki tatiline daha ne kadar var acaba?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "Furina Hakkında",
+			"voicelineType": "4009",
+			"description": "Şu an perde indi ve \"gösterisi\" sona erdi. Ortaya koyduğu karakter her ne kadar hayal ürünü olsa da Furina görevini bir gösteriyle yerine getirdi... Doğası gereği sakin ve şüphe dolu biri olsa da azmini diri tutup görevinin sonucunu görmek için çılgınlığa başvurabildi. Yüzyıllar boyunca ortaya koyduğu performans gerçekten takdire şayandı. Elime fırsat geçerse gösterisini bizzat izleyip onu tüm kalbimle alkışlamalıyım... Evet, fırsatını bulduğum anda bunu yapmalıyım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "Navia Hakkında",
+			"voicelineType": "4010",
+			"description": "Üzülerek söylemeliyim ki kendisiyle yaşadığım bazı etkileşimlerden sonra... Örneğin kasıtlı olmadan onu kızdırdığımda ve onun özrünü kabul ettiğimde... Bugün dahi babasının başına gelenlere karşı duyduğum pişmanlığa rağmen kendimi ondan... Uzakta hissediyorum. Sanki gölün dibinden yıldızları izliyor gibiyim. Tercihen yaptığım bir şey olmadığı gibi kolaylıkla telafi edebileceğim bir durum olmadığını da biliyorum. Suyun aksine duygular bir kere hareketlendi mi hemen sakinleşmiyor, dengeye doğru meyil etmiyor.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Yağmur Çiseliyor Ama Neden?\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "Neuvillette Hakkında Daha Fazlası: I",
+			"voicelineType": "5001",
+			"description": "Genellikle şahsi ilişkilerden kaçınmak için ve hatta belirlenen prosedürlerin dışında iş birliği yapmamak için elimden geleni yaparım. Ama sen güvenilir olduğunu gösterdin, Fontaine'deki yerel örgütlerle de sorunlu bir ilişkin yok. Bu yüzden seninle yolculuğa çıkmaktan zevk duyarım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "Neuvillette Hakkında Daha Fazlası: II",
+			"voicelineType": "5002",
+			"description": "Bunun hakkında görüşlerimi asla halka açık bir şekilde söyleyemem. Sadece özel olarak paylaşabilirim: Fonta'nın bu kadar popüler bir içecek olması beni çok şaşırtıyor. İnsanlara hitap etmesi anlaşılmayacak bir şey değil sanırım. Tek yudumla hem susuzluğunu giderebiliyor hem de kan şekerini yükseltebiliyorsun. Üstelik fiyatı da oldukça ucuz.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "3. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "Neuvillette Hakkında Daha Fazlası: III",
+			"voicelineType": "5003",
+			"description": "Yakın zamanda opera izlemeye gittim. Şahsi cazibesi ve manipüle edici planları sayesinde öldükten sonra bile büyük malikanesinde yaşayanları etkilemeye devam eden bir hanımefendi hakkındaydı. Kovulmayı reddeden bir hayalet gibiydi adeta. Oyunculuklar kusursuzdu, hikaye de olağanüstüydü. Ayrıca bana günümüz dünyasının mevcut durumunu hatırlattı.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "Neuvillette Hakkında Daha Fazlası: IV",
+			"voicelineType": "5004",
+			"description": "Fontaine'den nadiren ayrılırım, bunun ardında birçok neden yatıyor. Dolayısıyla dünyanın dört bir yanından farklı kaynak suları tatmayı sevsem de gidip yerinde tatmak yerine onları buraya göndertiyorum. Ve evet, farklı bölgelerden gelen sular arasındaki ince tat farklarını ayırt edebiliyorum. Bana inanmıyor musun? Ben Iudex'im. Yalan söylemem.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "5. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "Neuvillette Hakkında Daha Fazlası: V",
+			"voicelineType": "5005",
+			"description": "Günlük hayatımın sıkıntısız geçmediğini söylemem gerek. Mesela otururken genellikle cübbemin üzerine basarım veya saçlarım sandalyeye takılır. Hatta kafamı geriye doğru biraz fazla yaslarsam saçlarım süslere dolanır. Buna rağmen Başyargıçlığın itibarını korumak için bu giysileri giymem ve her türlü sıkıntıya katlanmam gerek. Tesadüftür ki dünya da bu prensiple işliyor. Herkesin kabullenmesi, dayanması, anlaması ve birlikte yaşamayı öğrenmesi gereken bir kimliği var. Benim hayatım uzun zamandır böyle geçiyor.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "Neuvillette'in Hobileri",
+			"voicelineType": "6001",
+			"description": "Su tadımı son derece sofistike bir disiplindir. Örneğin Ateş ile ısıtılmış su, doğal yaşamda her yerde bulabileceğin \"natürel\" bir tada sahipken kömür ateşinde kaynatılan suyun tadında rustik notalar bulunur. Benzer bir şekilde Buz ile dondurulmuş su, soğuk olduğu kadar sıradandır fakat Snezhnaya'nın donmuş nehirlerinden eritilerek elde edilen suyun tamamen kendine has bir tat profili vardır.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "Neuvillette'in Sorunları",
+			"voicelineType": "6012",
+			"description": "İnsanlar yağmur yağarken şemsiye kullanmayanlara neden tuhaf tuhaf bakıyorlar anlamıyorum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "En Sevdiği Yemek",
+			"voicelineType": "6003",
+			"description": "Hayvanlar yemek yemeden haftalarca hayatta kalabilirler fakat su olmazsa birkaç günde ölürler. Saf ve insan eli değmemiş su ile kıyaslanabilecek hiçbir yemek yoktur dünyada. Bununla birlikte, içinde bolca sıvı bulunan yemekleri oldukça başarılı buluyorum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "En Sevmediği Yemek",
+			"voicelineType": "6004",
+			"description": "İnsanlar kızartılmış veya sossuz ızgara yemekleri nasıl yiyorlar anlamıyorum. Hele Ajilenakh Kömür Kekinden bahsetmek bile istemiyorum. Herhalde nem alıcı bir kimyasal yesen mideni daha az rahatsız edersin, o derece.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "Hediye Alma: I",
+			"voicelineType": "6007",
+			"description": "Lezzetli. Bol sulu ve malzemeleri tam kıvamında pişmiş.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "Hediye Alma: II",
+			"voicelineType": "6008",
+			"description": "Gerçekten iyi uğraşmışsın. Tek tavsiyem biraz daha sulu pişirilmesi ve yağının azaltılması olur.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "Hediye Alma: III",
+			"voicelineType": "6009",
+			"description": "Çok kuru. Sıvıdan yoksun bir yemek, aşçının niyetini iletemez.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "Doğum Günü",
+			"voicelineType": "7001",
+			"description": "Ah, demek doğum günün. Mutlu yıllar. Bugün hava durumunda yağmur var mı bilmiyorum ama ilgilenmeye çalışacağım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "Yükseltme Hakkında: Giriş",
+			"voicelineType": "8001",
+			"description": "Artık sana biraz daha aşinayım. Hareketlerine ayak uydurabiliyorum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "1. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "Yükseltme Hakkında: Gelişme",
+			"voicelineType": "8002",
+			"description": "Galiba gerçek yeteneklerimi biraz daha fazla göstermek durumunda kalacağım. Kendini tehlikeli durumlara sokmaya bu kadar meyilli olduğunu bilmiyordum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "2. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "Yükseltme Hakkında: Zirve",
+			"voicelineType": "8003",
+			"description": "Demek gerçek kuvvetin bu. O halde sana yetişebilmek için bu işi biraz daha ciddiye almak durumundayım.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "Yükseltme Hakkında: Sonuç",
+			"voicelineType": "8004",
+			"description": "Yedi İktidardan birini hırsızların elinden kurtardığım için gerçek formumu geri kazandım. Artık tam gücüne ulaşmış bir ejderhayım ve diğer tanrıları yargılayacak güce sahibim. Kaderimde, en sonunda göklerdeki Hırsız Kral'ı yargılamak var. O gün gelene dek sana gücümü ödünç veriyorum.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "Element Becerisi: I",
+			"voicelineType": "100001",
+			"description": "Sessizlik!",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "Element Becerisi: II",
+			"voicelineType": "100002",
+			"description": "Eğ başını.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "Element Becerisi: III",
+			"voicelineType": "100003",
+			"description": "Sakin ol.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "Element Patlaması: I",
+			"voicelineType": "200001",
+			"description": "Dalgalar çağırıyor.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "Element Patlaması: II",
+			"voicelineType": "200002",
+			"description": "Kutsanacaksın.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "Element Patlaması: III",
+			"voicelineType": "200003",
+			"description": "Güçlüler de öğrenmeli tevazuyu.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "Hazine Sandığı Açma: I",
+			"voicelineType": "300001",
+			"description": "Terk edilen mülk ilk bulana aittir. Dolayısıyla yasalar nezdinde artık senin.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "Hazine Sandığı Açma: II",
+			"voicelineType": "300002",
+			"description": "Umduğunu bulabildin mi? Dilerim hazine sandığı açarken hissettiğin heyecan, gösterdiğin çabaya değmiştir.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "Hazine Sandığı Açma: III",
+			"voicelineType": "300003",
+			"description": "Bu eşyaların senin sahipliğine bırakıldığını sözlü olarak onaylıyorum, kayda geçsin.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "Düşük Can: I",
+			"voicelineType": "410001",
+			"description": "Endişeye lüzum yok. Bir sıyrık bile almadım.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "Düşük Can: II",
+			"voicelineType": "410002",
+			"description": "Risk gittikçe artıyor ama benim için sorun değil.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "Düşük Can: III",
+			"voicelineType": "410003",
+			"description": "Hıh... Cübbem yırtılmış.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "Düşük Canlı Takım Arkadaşı: I",
+			"voicelineType": "400001",
+			"description": "Müsaadenle müdahale edeceğim.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "Düşük Canlı Takım Arkadaşı: II",
+			"voicelineType": "400002",
+			"description": "Sen bir dakika dinlen.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "Yere Serilme: I",
+			"voicelineType": "500001",
+			"description": "Metcezir geldiğinde geri döneceğim...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "Yere Serilme: II",
+			"voicelineType": "500002",
+			"description": "Eski çağların ılık sularını görüyorum...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "Yere Serilme: III",
+			"voicelineType": "500003",
+			"description": "Sessizlik hakim...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "Ağır Darbe Alma: I",
+			"voicelineType": "910001",
+			"description": "Adalet gafil avlandı...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "Ağır Darbe Alma: II",
+			"voicelineType": "910002",
+			"description": "Benim hatam.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "Gruba Katılma: I",
+			"voicelineType": "600001",
+			"description": "Teşekkürler izin verdiğin... Hayır, davet ettiğin için.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "Gruba Katılma: II",
+			"voicelineType": "600002",
+			"description": "Onur duydum.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "Gruba Katılma: III",
+			"voicelineType": "600003",
+			"description": "Nehir kenarında veya benzer bir yerde yürüyüşe çıkabiliriz.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

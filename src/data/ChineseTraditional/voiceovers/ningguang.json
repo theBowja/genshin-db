@@ -1,0 +1,864 @@
+{
+	"id": 10000027,
+	"name": "Ningguang",
+	"friendLines": [
+		{
+			"voicelineId": 15100,
+			"title": "初次見面…",
+			"voicelineType": "1000",
+			"description": "我是七星之「天權」，凝光。要做個交易嗎？{F#妳}{M#你}來做我的貼身侍衛，而我，會教導{F#妳}{M#你}在璃月出人頭地的技巧。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_draw_appear"
+		},
+		{
+			"voicelineId": 15101,
+			"title": "閒聊·古玩",
+			"voicelineType": "1101",
+			"description": "就算古玩價值連城，給人的快樂也只有剛擁有的一瞬。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_01"
+		},
+		{
+			"voicelineId": 15102,
+			"title": "閒聊·商戰",
+			"voicelineType": "1102",
+			"description": "在商戰中，完美的獵手不會留下任何痕跡。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_02"
+		},
+		{
+			"voicelineId": 15103,
+			"title": "閒聊·投資",
+			"voicelineType": "1103",
+			"description": "找筆新的投資吧。無論如何，摩拉都不會嫌多。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_03"
+		},
+		{
+			"voicelineId": 15104,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "哦？下雨了啊。替我打傘吧。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 15105,
+			"title": "下雪的時候…",
+			"voicelineType": "1202",
+			"description": "不過是尋常雪景。我帶{F#妳}{M#你}見見，真正的「碎雪」。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_snowy_01"
+		},
+		{
+			"voicelineId": 15106,
+			"title": "陽光很好…",
+			"voicelineType": "1203",
+			"description": "風平浪靜？呵，不要相信{F#妳}{M#你}的眼睛，眼睛會說謊。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_sunny_01"
+		},
+		{
+			"voicelineId": 15107,
+			"title": "颳大風了…",
+			"voicelineType": "1204",
+			"description": "這樣的大風天，會成為捕魚人的災難。也會成為…呵，沒什麼。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_gale_01"
+		},
+		{
+			"voicelineId": 15108,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早，按事情的輕重緩急向我稟報吧。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 15109,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "「琉璃亭」和「新月軒」，{F#妳}{M#你}更常去哪一家？",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 15110,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "茶館已經客滿了？那就來「群玉閣」坐坐吧。只要…{F#妳}{M#你}付得起價錢。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「辭行久遠之軀」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15111,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "嗯，去休息吧。要是發生了重要的事情，我會派人通知{F#妳}{M#你}的。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 15112,
+			"title": "關於凝光自己·觀點",
+			"voicelineType": "2001",
+			"description": "無論是價格談判還是商戰博弈，聲勢和籌碼都是次要的。想要取得勝利，就需要先去瞭解對手的底牌。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle"
+		},
+		{
+			"voicelineId": 15113,
+			"title": "關於凝光自己·印象",
+			"voicelineType": "2005",
+			"description": "覺得我給{F#妳}{M#你}的印象變了？呵…那時我需要借助{F#妳}{M#你}的力量，當然要讓{F#妳}{M#你}覺得我親切熱情。但現在我已將{F#妳}{M#你}當作重要的「契約」夥伴，夥伴之間，就不用這些虛情假意了。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15114,
+			"title": "關於我們·傳言",
+			"voicelineType": "2002",
+			"description": "關於我的傳言，最近聽了不少吧。我究竟是怎樣的人？用{F#妳}{M#你}自己的雙眼分辨吧…當然，{F#妳}{M#你}的看法，也會成為傳言的一部分。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close1"
+		},
+		{
+			"voicelineId": 15115,
+			"title": "關於我們·觀察",
+			"voicelineType": "2003",
+			"description": "跟了我那麼久，{F#妳}{M#你}學會「觀察」了嗎。那麼，試著來「觀察」我吧，直到成為我的心腹為止。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15116,
+			"title": "關於我們·群玉閣",
+			"voicelineType": "2004",
+			"description": "上前來，和我並肩站著。看到「群玉閣」了嗎。它起初只有房間大小，如今卻能遮蔽璃月上空。等到它的規模有朝一日籠罩七國，那時候，也這樣和我並肩而立吧。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「辭行久遠之軀」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15117,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "能用摩拉解決的事情，就無需使用「神之眼」。至於用摩拉也解決不了的事情…至今我只遇到過一件。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15118,
+			"title": "有什麼想要分享·莊家",
+			"voicelineType": "3002",
+			"description": "賭徒永遠會把希望寄託在下一顆骰子上…但最後賺錢的，當然是從來不碰骰子的莊家。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share"
+		},
+		{
+			"voicelineId": 15119,
+			"title": "有什麼想要分享·目標",
+			"voicelineType": "3004",
+			"description": "帝君的離去，無論對璃月還是七星來說，都是不小的考驗。我也很久沒有像最近這樣輾轉反側了。\n不過，我不會放棄我的目標。總有一日，我會讓群玉閣投下的影子籠罩七國——",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15120,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "璃月古代辭賦中不乏對於「琉璃百合」的溢美，但它現今卻近乎滅絕，只在「玉京臺」還有保留。名聲在外卻又不可多得，因此更加價格不菲。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_gift"
+		},
+		{
+			"voicelineId": 15121,
+			"title": "關於北斗·罰金",
+			"voicelineType": "4001",
+			"description": "那位…船長。明明也受到不少人推崇，卻總是帶頭漠視規則。她繳納的罰金，都夠買一艘嶄新的遠洋船了吧。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15122,
+			"title": "關於北斗·態度",
+			"voicelineType": "4002",
+			"description": "或許{F#妳}{M#你}沒有遇到過這種糟糕的交流體驗。將好話壞話說盡了，對方卻依然自行其是。罷了，盡可能不要讓我見到那位北斗船長。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15123,
+			"title": "關於鍾離…",
+			"voicelineType": "4003",
+			"description": "鍾離…「往生堂」口中的這位先生，精通許多旁人不知的事物。但在掌握他的弱點之前，再優秀的棋子，也還不能為我所用。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15124,
+			"title": "關於行秋…",
+			"voicelineType": "4004",
+			"description": "飛雲商會的二公子，那種性格的人看不慣我，是很自然的，而我也不會去為難他。「道不同不相為謀」，說的就是這個道理。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15125,
+			"title": "關於香菱…",
+			"voicelineType": "4005",
+			"description": "「萬民堂」的小丫頭…總是把對我的猜疑寫在臉上。呵，要是讓她知道了，這些年來我對「萬民堂」的資助…她會露出怎樣的表情來呢？",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xiangling_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15126,
+			"title": "關於甘雨…",
+			"voicelineType": "4006",
+			"description": "即使是甘雨，也不可過度依賴。璃月俗語說「百密終有一疏」。重要事情當前，只有自己親手處理，親眼查證，才可放心。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15127,
+			"title": "關於瑤瑤…",
+			"voicelineType": "4007",
+			"description": "是在談論甘雨正幫忙照看著的小姑娘嗎。呵，不用緊張，此事我並無聲張的打算。就當那個船長，總能做一兩件聰明事吧。對了，這瑤瑤，近來光顧著吃海產了，{F#妳}{M#你}得想辦法勸勸甘雨，叫她為瑤瑤多補充些瓜果蔬菜才對。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15128,
+			"title": "關於刻晴…",
+			"voicelineType": "4008",
+			"description": "「玉衡星」…她最近的變化可真不小。璃月究竟更需要曾經的她，還是更需要現在的她呢？可能要多花一些時間，才能判斷吧。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15129,
+			"title": "關於琴…",
+			"voicelineType": "4009",
+			"description": "蒙德城的代理團長，想必是一位嚴謹而又細膩的女性吧。且不說她恰如其分的用詞，連每張信紙的邊緣都折疊得一絲不苟。越是這些容易被人忽視的細節，越能透過它窺見一個人真正的素質。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15130,
+			"title": "關於煙緋…",
+			"voicelineType": "4010",
+			"description": "煙緋？呵，某種意義上，她是個貼心的對手呢。若不是她「靈巧」地解釋律法，為諮詢者們提供各種「奇妙」的建議，要讓我獨自找到律法的缺口，逐步完善法典，恐怕要多花數月的時間。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15131,
+			"title": "關於申鶴…",
+			"voicelineType": "4012",
+			"description": "申鶴小姐近來可好？有勞{F#妳}{M#你}多多關照她了。你們幫忙重建群玉閣的事，我一直記在心裡，也很是感激。啊，客套話就不多說了，我備了好茶，閒時多來坐坐吧。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_shenhe_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「風起鶴歸」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1101505
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15132,
+			"title": "關於雲堇…",
+			"voicelineType": "4011",
+			"description": "雲堇啊…怎麼樣，{F#妳}{M#你}聽得慣她的戲嗎？起初可能是有些難懂，試著耐下性子多品味一下吧。我投資她的戲班不為別的，只是覺得，這般典雅的藝術，值得被一直傳承下去。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yunjin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15133,
+			"title": "關於夜蘭…",
+			"voicelineType": "4013",
+			"description": "她是個很有意思的人，對我而言，也是絕對可信之人。八面玲瓏，才能無可挑剔。呵呵，既然同為聰明人，希望{F#妳}{M#你}們能相處愉快。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yelan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15174,
+			"title": "關於閒雲…",
+			"voicelineType": "4014",
+			"description": "再過些時日，我打算約閒雲女士去茶室小坐。我恰巧收集了一些機巧玩物，想聽聽她的高見，也想趁此機會，聽她講講仙人在璃月港生活的趣事。至於為我遞這份邀請函的人選…{F#妳}{M#你}可有意？",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「千里月明」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15134,
+			"title": "想要瞭解凝光·其一",
+			"voicelineType": "5001",
+			"description": "既然是{F#妳}{M#你}，就不用恪守那些繁文縟節了，可以隨意一些。不過，希望{F#妳}{M#你}能珍惜我的時間，言簡意賅地說明。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_01"
+		},
+		{
+			"voicelineId": 15135,
+			"title": "想要瞭解凝光·其二",
+			"voicelineType": "5002",
+			"description": "我向來以為，孩子們最為天真純粹，他們提供的情報也最有價值。那麼，{F#妳}{M#你}又如何呢？{F#妳}{M#你}向我提供的東西，會是些什麼呢。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3級後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15136,
+			"title": "想要瞭解凝光·其三",
+			"voicelineType": "5003",
+			"description": "最近我在思考一個問題。如果能把{F#妳}{M#你}留在璃月，假以時日…或許能撬動這座城市的…呵，只是設想而已。這筆投資值不值，我還得再考慮考慮。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15137,
+			"title": "想要瞭解凝光·其四",
+			"voicelineType": "5004",
+			"description": "{F#妳}{M#你}可以學我的做法，靠摩拉來為自己獲取一些便利。但{F#妳}{M#你}要記住，摩拉維持的關係只能依仗一時。呵，這也是我從不用摩拉來試探{F#妳}{M#你}的理由。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5級後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15138,
+			"title": "想要瞭解凝光·其五",
+			"voicelineType": "5005",
+			"description": "真是一筆不錯的投資。雖然沒有收益多少摩拉，但與{F#妳}{M#你}度過的這些時光，已是很不錯的回報。呵，看來我又贏了——我，賭對了人。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15139,
+			"title": "凝光的愛好…",
+			"voicelineType": "6001",
+			"description": "想來試試棋戲「璃月千年」嗎？正好也讓我看看，{F#妳}{M#你}作為一名棋手的素質，究竟如何呢。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_hobby"
+		},
+		{
+			"voicelineId": 15140,
+			"title": "凝光的煩惱…",
+			"voicelineType": "6002",
+			"description": "煩惱…喔？「璃月七星」的煩惱告訴了{F#妳}{M#你}…{F#妳}{M#你}的肩膀，能夠承受得住嗎？而且，如果{F#妳}{M#你}一不小心說出去了的話…",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_annoyed"
+		},
+		{
+			"voicelineId": 15141,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "用老雞和豬骨小火久煮熬製高湯，淋在只取菜心的鮮嫩白菜上。我對飲食追求不深。平日裡吃點這樣的東西，也就夠了。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodLike"
+		},
+		{
+			"voicelineId": 15142,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "我見過有人每次宴會必點「黃金蟹」這種看上去顯得大富大貴的食物，但我對此始終不敢恭維。如果{F#妳}{M#你}想用這樣的料理宴請我，還不如直接給我摩拉。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodDislike"
+		},
+		{
+			"voicelineId": 15171,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "不錯。{F#妳}{M#你}總能出乎我的意料。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_pref_01"
+		},
+		{
+			"voicelineId": 15172,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "有時，沒有把握關鍵要素，就等於徒勞無功…能明白嗎？",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_normal_01"
+		},
+		{
+			"voicelineId": 15173,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "心意我領了。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_dislike_01"
+		},
+		{
+			"voicelineId": 15143,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "{M#這是選用上等的霓裳花織出的錦緞。這份是留給你的，這一份…等你找到自己的妹妹之後，拿去做件她喜歡的衣服吧。祝你們，生日快樂。}{F#這是選用上等的霓裳花織出的錦緞。拿去做件自己喜歡的衣服，過個開心點的生日吧。}",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_b",
+			"voicefile_male": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 15144,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "「武鬥」缺乏風度，只能作為下策中的下策。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15145,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "將時間和摩拉作為籌碼，等價交換到「力量」嗎…有趣。我認可它的價值。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15146,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "{F#妳}{M#你}是懷著怎樣的心情堅持的呢？噓…不要說出來。讓我多花一點時間來看透{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15147,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "我並不輕易肯定別人，但現在看來，我這讚揚是留不住了。呵…{F#妳}{M#你}做得很出色。要是我的手下能多一點像{F#妳}{M#你}這樣的人…不，或許，有{F#妳}{M#你}一個就夠了。",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 15148,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "雕蟲小技。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_01"
+		},
+		{
+			"voicelineId": 15149,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "別白費功夫。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_02"
+		},
+		{
+			"voicelineId": 15150,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "哼，勸你放棄。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_03"
+		},
+		{
+			"voicelineId": 15151,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "你的性命，我收下了。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_01"
+		},
+		{
+			"voicelineId": 15152,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "向我臣服吧。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_02"
+		},
+		{
+			"voicelineId": 15153,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "永別了。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_03"
+		},
+		{
+			"voicelineId": 15154,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "好一雙慧眼。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_01"
+		},
+		{
+			"voicelineId": 15155,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "顆粒歸倉。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_02"
+		},
+		{
+			"voicelineId": 15156,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "財富，多多益善。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_03"
+		},
+		{
+			"voicelineId": 15157,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "竟然敢傷我。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_01"
+		},
+		{
+			"voicelineId": 15158,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "我記下了。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_02"
+		},
+		{
+			"voicelineId": 15159,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "哼。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_03"
+		},
+		{
+			"voicelineId": 15160,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "如今的局面，你沒有幾成勝算。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 15161,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "既然如此，就幫你一把。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 15162,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "這世上之人，皆為棋子…",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_01"
+		},
+		{
+			"voicelineId": 15163,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "勝負已分…真是無可奈何。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_02"
+		},
+		{
+			"voicelineId": 15164,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "這就是，「天權」的終焉？…",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_03"
+		},
+		{
+			"voicelineId": 15165,
+			"title": "普通受擊·其一",
+			"voicelineType": "900001",
+			"description": "無禮。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 15166,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "等著吧。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 15167,
+			"title": "受重擊·其二",
+			"voicelineType": "910002",
+			"description": "血債血還。",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 15168,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "知道了。",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_01"
+		},
+		{
+			"voicelineId": 15169,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "抓緊時間吧。",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_02"
+		},
+		{
+			"voicelineId": 15170,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "不要讓我失望。",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_03"
+		}
+	]
+}

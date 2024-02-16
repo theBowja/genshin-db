@@ -1,0 +1,996 @@
+{
+	"id": 10000052,
+	"name": "Raiden Shogun",
+	"friendLines": [
+		{
+			"voicelineId": 52009,
+			"title": "Merhaba",
+			"voicelineType": "1000",
+			"description": "Selamlaşmaya gerek yok. Sıradan insanlar arasında seyahat ederken yüceliğim açığa çıkmayacaktır. Üstün yetenekli bir insan olduğunu kabul ediyorum. Bundan böyle benim muhafızım olacaksın. Endişelenme. Herhangi bir tehlike ortaya çıkarsa, ben hallederim.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_draw_appear"
+		},
+		{
+			"voicelineId": 52010,
+			"title": "Sohbet: Başıboş",
+			"voicelineType": "1101",
+			"description": "Tembellik hiçbir amaca hizmet etmez. Pöh.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_character_idle_01"
+		},
+		{
+			"voicelineId": 52011,
+			"title": "Sohbet: Ölümlü Dünya",
+			"voicelineType": "1102",
+			"description": "Dünya yüzyıllar boyunca sabit kalır ama insan hayatı şafak vakti oluşan çiy veya suyun içinden yükselen bir baloncuk gibi geçicidir.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_character_idle_02"
+		},
+		{
+			"voicelineId": 52012,
+			"title": "Sohbet: Dünyevi Güzellik",
+			"voicelineType": "1103",
+			"description": "Ölümlüler için değerli olan her şey fanidir ve ben, onun karşısında tek başıma, değişmeden ve korkusuzca duruyorum.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_character_idle_03"
+		},
+		{
+			"voicelineId": 52013,
+			"title": "Yağmur Yağdığında",
+			"voicelineType": "1201",
+			"description": "Yağmur tek başına fırtınaya neden olmaz. Yıldırım gerekir.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 52014,
+			"title": "Yıldırım Düştüğünde",
+			"voicelineType": "1202",
+			"description": "Bu seni korkutmadı, değil mi? Ne de olsa, tüm Teyvat'taki yıldırımların en yüce ve en ürkütücü tecessümünün huzurundasın.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52015,
+			"title": "Kar Yağdığında",
+			"voicelineType": "1203",
+			"description": "Kış Şogunu yaklaşıyor.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_weather_snowy_01"
+		},
+		{
+			"voicelineId": 52016,
+			"title": "Açık Bir Günde",
+			"voicelineType": "1204",
+			"description": "Açık bir gökyüzü, yıldırımın parlaklığını asla gizleyemez. İlahi yıldırımlar ise yağmur yağmasa bile düşer. Şu ağacı görüyor musun? Bekle... Şimdi anlıyor musun? Yani... Göstermek gerekmiyor, değil mi? Güzel.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_weather_sunny_01"
+		},
+		{
+			"voicelineId": 52017,
+			"title": "Günaydın",
+			"voicelineType": "1001",
+			"description": "Ağzını kapatmadan esnemek mi? Ne kabalık. Bu seferlik bu kabalığını affedeceğim. Sana da günaydın.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 52018,
+			"title": "İyi Günler",
+			"voicelineType": "1002",
+			"description": "Tatlı zamanı. Ne? Neden olmasın? \"Ana yemekler önce gelir\" de ne demek? Sırf Şogun olduğum için beni mi şımarttılar? Hah, ilginç.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_greetingNoon",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52019,
+			"title": "İyi Akşamlar",
+			"voicelineType": "1003",
+			"description": "Geceleri kayan yıldızlar hakkında gerçeği öğrenmek ister misin? Haha, onlar yalnızca gelip geçici ışıklardır. Sen de onlardan biri miydin? Bir tengu savaşçısı mısın?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52020,
+			"title": "İyi Geceler",
+			"voicelineType": "1004",
+			"description": "Sen bu gece iyice dinlen diye, dünyanın her bir köşesindeki yıldırımların durmasını emrediyorum.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 52021,
+			"title": "Şogun Raiden Hakkında: Fani Dünya",
+			"voicelineType": "2001",
+			"description": "Gök gürültüsü ve şimşeklerin çakması. Ne kadar da gelip geçici. Sonsuzluğa ulaşmak işte bu yüzden arzu edilir. Aslında, hayır, Sonsuzluğa bu yüzden ulaşmak gerekir.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_idle"
+		},
+		{
+			"voicelineId": 52022,
+			"title": "Şogun Raiden Hakkında: Sonsuzluk",
+			"voicelineType": "2005",
+			"description": "Zamanla çökmek korkunç bir şey. Bu bedenin amacı, içindekinin Sonsuzluğa ulaşması için aşınma ve yıpranmaya dayanmaktır.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_idle2"
+		},
+		{
+			"voicelineId": 52023,
+			"title": "Hakkımızda: Okuzumeshuu",
+			"voicelineType": "2003",
+			"description": "Seni, saray nazırım ilan ediyorum. Diğer bir deyişle, hükmüme göre Şogunluk için faydalısın ve bana sadıksın.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_close"
+		},
+		{
+			"voicelineId": 52024,
+			"title": "Hakkımızda: Koruyucu",
+			"voicelineType": "2002",
+			"description": "Bu yolculuk sırasında muhafızım olarak hizmet etmene rağmen, beni tehlikeden korumana gerek yok. Şogun oldukça dayanıklıdır ve eğer bozulursa kolayca yenisini alabiliriz. Acil bir durumda, onu savaşa gönder gitsin.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52025,
+			"title": "Hakkımızda: Miras",
+			"voicelineType": "2004",
+			"description": "Inazumalıların mızrak ve kılıç savaşı sanatları ile birlikte demircilik yöntemleri aslında bana dayanır. O zamandan beri, bu yöntemler her ustanın bireysel yeteneğine göre çeşitli tekniklere ayrıldı ve geliştirildi. \nBaşka bir idman seansına ne dersin? Yine yara almadan kurtulursan Inazuma'da kendi dövüş sanatları geleneğini kurmana izin vereceğim. Dövüş sanatlarında ilerleme ve gelişme dürtüsü gerçekten durdurulamaz.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52026,
+			"title": "Önsezi Hakkında",
+			"voicelineType": "3001",
+			"description": "Gerçekten mi? Yani bunca zamandır dış dünyada yeni Elektrik Önsezileri ortaya çıkmadı mı? Pekala, bu konu hakkında söyleyebileceklerim belirli kısıtlamalara tabi ama önsezilerin kabul edilmesi veya reddedilmesi benim irademe bağlı değil. Önemli olan insanların arzusu ve... Aslında bunun başka bir boyutu daha var.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52027,
+			"title": "Paylaşılacak Bir Bilgi",
+			"voicelineType": "3002",
+			"description": "Hayır, şu anda seninle paylaşacak hiçbir şeyim yok. Ama sen... Element enerjisini bir Önsezinin yardımı olmadan kullanıyorsun. Bu nasıl mümkün olabilir? Lütfen beni aydınlat.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_share_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52028,
+			"title": "İlginç Şeyler",
+			"voicelineType": "3003",
+			"description": "Vücudu yok olmuş olabilir ama o Kutsal Kiraz Ağacına dönüştü. Bu da Sonsuzluğun bir biçimidir.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_gift"
+		},
+		{
+			"voicelineId": 52029,
+			"title": "Yae Miko Hakkında",
+			"voicelineType": "4001",
+			"description": "Ah, o kız... Bir miktar Kızarmış Tofuyla kolayca etkilenebilecek türden biriydi. Şimdi onun ne kadar kurnaz ve becerikli hale geldiğini görmek rahatlattı beni. Yine de onun entrikalarının hedefi olduğum için biraz üzüldüğümü itiraf etmeliyim. Bunun, benim iyiliğim için olduğunu biliyorum ama korkarım bir sonraki görüşmemizde benimle alay edecek... Belki de inisiyatif almalı ve önce ben hamle yapmalıyım, ne dersin? Neyse, nasıl olsa bundan kurtulacak.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52030,
+			"title": "Kamisato Ayato Hakkında",
+			"voicelineType": "4002",
+			"description": "Kamisato... Inazuma'nın en seçkin klanlarından biri. Ayato Üçlü Heyetin işleri konusundaki kurnazlığına rağmen, özünde sadık bir kuldur. Geçmişte işlediği suçlar affedilebilir.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_ayato_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52031,
+			"title": "Kamisato Ayaka Hakkında",
+			"voicelineType": "4003",
+			"description": "Kamisato... Inazuma'nın en seçkin klanlarından biri. Ne? Şogun tam olarak böyle mi söyledi? Pekala, A-Ayaka kılıç sanatında da ustadır.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_ayaka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52032,
+			"title": "Kujou Sara Hakkında",
+			"voicelineType": "4004",
+			"description": "Sadık ve dürüst bir kul, ayrıca başarılı bir savaşçı. Kahraman olarak anılmaya değer. Böyle büyük bir vaadin varisiyle, Kujou Klanının gelecekteki refahı garanti altına alındı.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_kujoSara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52033,
+			"title": "Yoimiya Hakkında",
+			"voicelineType": "4005",
+			"description": "Kim? Ah, havai fişek üreticisi. Fantezi ve hayal dünyasına aşık olan ve geçici illüzyonların üreticisi ama yine de benim kullarımdan biri. \nNe? Havai fişekler, Tenryou Heyetinin mülkünde mi patlatıldı? Kim yaptı bunu? O mu?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_yoimiya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52034,
+			"title": "Thoma Hakkında",
+			"voicelineType": "4006",
+			"description": "Neredeyse Önsezini kaybetmesine neden olan olaylarda, benim de biraz suçlu olduğumu inkar edemem ama her şeyden ziyade Şogunun ondan resmi bir özür dilemesi gerektiğini düşünüyorum... Tamam, peki. Biraz daha düşüneceğim.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_thoma_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52035,
+			"title": "Sangonomiya Kokomi Hakkında",
+			"voicelineType": "4007",
+			"description": "Gerçekten de Orobashi'yi öldüren bendim ama aynı zamanda Sangonomiya halkının ona Watatsumi Omikami olarak tapmaya devam etmesini sağladım; böylece onların adaklarından yararlanabildi. Şimdi ise Sangonomiya, yerel Narukami Tapınağını yok etti ve Şogunluğa karşı isyan başlattı. Watatsumi Omikami'yi temsil eden Kutsal Rahibe olarak, o bundan sorumlu tutulmalı.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_kokomi_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52036,
+			"title": "Kunikuzushi Hakkında",
+			"voicelineType": "4008",
+			"description": "Şogun'u yaratırken bir yan ürün olarak ortaya çıktı. Belki de ona bir şeyler borçlu olduğumu hissettiğimdendir ama onu kontrol etmek istemiyorum.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_kunikuzushi_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52037,
+			"title": "Arataki Itto Hakkında",
+			"voicelineType": "4009",
+			"description": "Kim?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_itto_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52038,
+			"title": "Morax Hakkında",
+			"voicelineType": "4010",
+			"description": "Tanrıların toplantısına katılan bir Kagemusha iken, onunla bir kez yemek yeme fırsatım oldu. Demek seçimini yapmış. Her ne olursa olsun, onun hikayesinin bitmek üzere olduğuna inanmıyorum.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52039,
+			"title": "Venti Hakkında",
+			"voicelineType": "4011",
+			"description": "Hımm, Rüzgar Hükümdarı'nın bugünlerde ölümlüler arasında kullandığı isim bu, değil mi? Doğruyu söylemek gerekirse, onunla tanıştığım ilk andan itibaren bir şekilde anlaşamayacağımızı hissetmiştim. Ayrıca kesinlikle çok içiyor.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52083,
+			"title": "Buer Hakkında",
+			"voicelineType": "4012",
+			"description": "Onun alçak gönüllülüğünü takdir ediyorum, bu gerçek bir bilgelik emaresidir. Buer, sahip olduğu güç sayesinde akla hayale sığmaz şeyler yapmaya muktedirdir. Yine de bu gücü yalnızca yanlışları düzeltmek ve korumak için kullanır. Gerçekten asil bir tanrıdır.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Akaşa Titreşiyor, Kalpa Alevleri Yükseliyor\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52084,
+			"title": "Furina Hakkında",
+			"voicelineType": "4013",
+			"description": "Beş yüz yıl boyunca zihin diyarımda irademi sınamak için Şogun Raiden ile düello yaptım. Bu bahsettiğin Furina ise yalnızca zayıf bir insan vücuduna sahip olmasına rağmen kendisini beş yüz yıl boyunca her an bu rolü oynamaya adayarak tam bir irade savaşı vermiş. Bana kalırsa iradesi bir tanrıyla eşdeğer.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Maskeli Balo\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				},
+				{
+					"unlockText": "\"Fani Rüyalar\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1204209
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52040,
+			"title": "Şogun Raiden Hakkında Daha Fazlası: I",
+			"voicelineType": "5001",
+			"description": "İsteğini belirt. Sadede gel lütfen.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_friendship_01"
+		},
+		{
+			"voicelineId": 52041,
+			"title": "Şogun Raiden Hakkında Daha Fazlası: II",
+			"voicelineType": "5002",
+			"description": "Fırtınalı günlerde Inazuma halkı, kendilerini yıldırım çarpmasından koruyacağına inanarak \"kuwabara, kuwabara\" derler. Kendi elimle çağırdığım herhangi bir fırtına için endişelenmene gerek yok, sana zarar vermezler. Öte yandan ise doğal olarak meydana gelen yıldırım fırtınaları daha öngörülemez olabilir.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "3. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52042,
+			"title": "Ei Hakkında Daha Fazlası: III",
+			"voicelineType": "5003",
+			"description": "\"İlginç Hikayeler\" kitabında yazılanlar büyük ölçüde doğru. O sıralarda adadaki çeşitli yerel meselelerle meşguldü, bu yüzden onun Kagemusha'sı oldum ve Watatsumi'ye barış getirmek için gönderilen birliklere katıldım ama bu noktadan sonra hikaye sadece kuruntulara dönüşüyor. O zamanlar sosyal reformcu ya da ahlaki bir lider değil, kendini mücadeleye adamış bir dövüş ustasıydım.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52043,
+			"title": "Ei Hakkında Daha Fazlası: IV",
+			"voicelineType": "5004",
+			"description": "Belki de Sonsuzluk arayışım bir tür kaçıştan ibarettir. Sonunda izlediğim yol, kabuğunda saklanan bir kaplumbağanın yolu gibiydi. Aslında kaplumbağalar her zaman uzun ömrün sembolü olmuştur. Belki de Sonsuzluğa ulaşmak için onların örneğini takip etmek gerekir.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "5. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52044,
+			"title": "Ei Hakkında Daha Fazlası: V",
+			"voicelineType": "5005",
+			"description": "Beş yüz yıl önce tanık olduklarım yüzünden korkuyorum. Onun ölümü ve o şey. Eğer... Sen olsaydın, herkes güvende olurdu. Dünyayı kurtarabilirdin. Tıpkı Inazuma'daki tüm anılara verdiğim değer gibi... Sen beni hatırladığın müddetçe, ben sonsuza dek yaşarım.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52045,
+			"title": "Şogun Raiden'ın Hobileri",
+			"voicelineType": "6001",
+			"description": "Aptalca bir soru. Sadece iki tür şey vardır: Yapılması gerekenler ve yapılmaması gerekenler.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_hobby"
+		},
+		{
+			"voicelineId": 52046,
+			"title": "Ei'in Sorunları",
+			"voicelineType": "6002",
+			"description": "Ne olur bana asla yemek yaptırmaya çalışma. Her şeyi yapabilirim ama asla yemek yapamam.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52047,
+			"title": "En Sevdiği Yemek",
+			"voicelineType": "6003",
+			"description": "Ah, Şoguna bakma sen. Tatlıları severim! Çürükler önemli değil, dişinin yerine yenisini takabilirsin. Tatlıların, Sonsuzluk arayışımda nasıl ciddi bir engel teşkil edebileceğini anlamıyorum.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_pref_foodLike",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52048,
+			"title": "En Sevmediği Yemek",
+			"voicelineType": "6004",
+			"description": "Aptalca bir soru. Sadece iki tür yiyecek vardır: Vücudu beslemek için tüketilmesi gerekenler ve vücuda zarar verenler.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_foodDislike"
+		},
+		{
+			"voicelineId": 52077,
+			"title": "Hediye Alma: I",
+			"voicelineType": "6007",
+			"description": "Bu tada aşinayım. Makbul.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_spice_pref_01"
+		},
+		{
+			"voicelineId": 52078,
+			"title": "Hediye Alma: II",
+			"voicelineType": "6008",
+			"description": "Şuraya bırakırsan tadına bakarım.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_spice_normal_01"
+		},
+		{
+			"voicelineId": 52079,
+			"title": "Hediye Alma: III",
+			"voicelineType": "6009",
+			"description": "Bunu yersem bana zararı dokunur. Yanıma bile yaklaştırma.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_spice_dislike_01"
+		},
+		{
+			"voicelineId": 52080,
+			"title": "Hediye Alma: IV",
+			"voicelineType": "6010",
+			"description": "Çok lezzetli. Artık çok daha iyi hissediyorum. Teşekkür ederim.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_spice_pref_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52081,
+			"title": "Hediye Alma: V",
+			"voicelineType": "6011",
+			"description": "Fena görünmüyor. Bunu nasıl yaptın?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_spice_normal_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52082,
+			"title": "Hediye Alma: VI",
+			"voicelineType": "6012",
+			"description": "Müsaadenle reddedeceğim.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_spice_dislike_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Ölümlülere Gaipten Sesler\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52049,
+			"title": "Doğum Tarihi",
+			"voicelineType": "7001",
+			"description": "Bugün senin yaratılış günün mü? Benimle şehre dön. Tüm hizmetkarlarımın önünde senin için bir konuşma yapacağım. \"Çok utanırım, yapma!\" mı diyorsun? Hım... Anlaşıldı.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 52050,
+			"title": "Doğum Günü",
+			"voicelineType": "7002",
+			"description": "Doğum günün kutlu olsun! Doğum gününü birlikte kutlayalım ve bir sonraki kutlamaya kadar tüm yıl boyunca hatırlanacak bir an yaşayalım. Böylece sonsuz mutluluğa sahip olabilirsin.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_pref_birthday_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 52051,
+			"title": "Yükseltme Hakkında: Giriş",
+			"voicelineType": "8001",
+			"description": "Yolculuğumun ilk aşaması ya da diğer adıyla Shoden, dokuz kılıç tekniğini ve mızrak sanatının temellerini öğrenmeyi içeriyor. Bu noktada benimkinin diğer geleneklerden pek büyük bir farkı yok. Daha doğrusu diğer geleneklerin benimkinden pek farkı yok.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "1. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52052,
+			"title": "Yükseltme Hakkında: Gelişme",
+			"voicelineType": "8002",
+			"description": "Yolculuğumun ikinci aşaması ya da diğer adıyla Chuuden, çeşitli duruşların ve geçişlerin incelenmesine odaklanan bir kılıç sanatıdır. Mızrak sanatı, kesikler ve ters kesiklerden oluşur.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "2. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52053,
+			"title": "Yükseltme Hakkında: Zirve",
+			"voicelineType": "8003",
+			"description": "Yolculuğumun son aşaması ya da diğer adıyla Kaiden, en etkili tekniklerin öğretisidir. Kaçınılmaz olarak bu teknikler element gücüne odaklanır ve onları, çoğu ölümlünün yeteneklerinin ötesinde kılar. Diğer geleneklerin çoğu takipçisi, bu seviyeye asla ulaşamaz.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52054,
+			"title": "Yükseltme Hakkında: Sonuç",
+			"voicelineType": "8004",
+			"description": "Musou no Hitotachi en etkili tekniktir. Tüm dünyada eşi benzeri olmayan bir kılıç sanatıdır. Dövüş partnerim olarak seninle bu tekniği daha da mükemmelleştirebilirim.",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 52055,
+			"title": "Element Becerisi: I",
+			"voicelineType": "100001",
+			"description": "Merhametsiz parlaklık!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill1_01"
+		},
+		{
+			"voicelineId": 52056,
+			"title": "Element Becerisi: II",
+			"voicelineType": "100002",
+			"description": "Kaçış yok!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill1_02"
+		},
+		{
+			"voicelineId": 52057,
+			"title": "Element Becerisi: III",
+			"voicelineType": "100003",
+			"description": "İllüzyon parçalandı!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill1_03"
+		},
+		{
+			"voicelineId": 52058,
+			"title": "Element Patlaması: I",
+			"voicelineType": "200001",
+			"description": "Unutulmaya mahkum ol!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill3_01"
+		},
+		{
+			"voicelineId": 52059,
+			"title": "Element Patlaması: II",
+			"voicelineType": "200002",
+			"description": "Şimdi yok olacaksın!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill3_02"
+		},
+		{
+			"voicelineId": 52060,
+			"title": "Element Patlaması: III",
+			"voicelineType": "200003",
+			"description": "Inazuma sonsuza dek parlayacak!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill3_03"
+		},
+		{
+			"voicelineId": 52061,
+			"title": "Hazine Sandığı Açma: I",
+			"voicelineType": "300001",
+			"description": "Onları al, benim ihtiyacım yok.",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_chest_open_01"
+		},
+		{
+			"voicelineId": 52062,
+			"title": "Hazine Sandığı Açma: II",
+			"voicelineType": "300002",
+			"description": "Bir anlık dikkat dağınıklığı.",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_chest_open_02"
+		},
+		{
+			"voicelineId": 52063,
+			"title": "Hazine Sandığı Açma: III",
+			"voicelineType": "300003",
+			"description": "Hımm?",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_chest_open_03"
+		},
+		{
+			"voicelineId": 52064,
+			"title": "Düşük Can: I",
+			"voicelineType": "410001",
+			"description": "Tüm zincirlerinden kurtul.",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_01"
+		},
+		{
+			"voicelineId": 52065,
+			"title": "Düşük Can: II",
+			"voicelineType": "410002",
+			"description": "Tüm tehditleri yok et.",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_02"
+		},
+		{
+			"voicelineId": 52066,
+			"title": "Düşük Can: III",
+			"voicelineType": "410003",
+			"description": "Tüm engelleri kaldır.",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_03"
+		},
+		{
+			"voicelineId": 52067,
+			"title": "Düşük Canlı Takım Arkadaşı: I",
+			"voicelineType": "400001",
+			"description": "Geri çekilip emirlerimi bekle!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 52068,
+			"title": "Düşük Canlı Takım Arkadaşı: II",
+			"voicelineType": "400002",
+			"description": "Kenara çekil.",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 52069,
+			"title": "Yere Serilme: I",
+			"voicelineType": "500001",
+			"description": "Bu ölümlü dünya... Gelip geçici bir rüya...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_die_01"
+		},
+		{
+			"voicelineId": 52070,
+			"title": "Yere Serilme: II",
+			"voicelineType": "500002",
+			"description": "Dünyayla bağı kesilmiş...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_die_02"
+		},
+		{
+			"voicelineId": 52071,
+			"title": "Yere Serilme: III",
+			"voicelineType": "500003",
+			"description": "Fırtına dindi...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_die_03"
+		},
+		{
+			"voicelineId": 52072,
+			"title": "Ağır Darbe Alma: I",
+			"voicelineType": "910001",
+			"description": "Küstah!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 52073,
+			"title": "Ağır Darbe Alma: II",
+			"voicelineType": "910002",
+			"description": "Saçmalık!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 52074,
+			"title": "Gruba Katılma: I",
+			"voicelineType": "600001",
+			"description": "Durum nedir?",
+			"voicefile": "VO_teamJoin/vo_raidenShogun_teamJoin_01"
+		},
+		{
+			"voicelineId": 52075,
+			"title": "Gruba Katılma: II",
+			"voicelineType": "600002",
+			"description": "Uzaklaşmazsan ölmezsin.",
+			"voicefile": "VO_teamJoin/vo_raidenShogun_teamJoin_02"
+		},
+		{
+			"voicelineId": 52076,
+			"title": "Gruba Katılma: III",
+			"voicelineType": "600003",
+			"description": "Mücadele başlıyor.",
+			"voicefile": "VO_teamJoin/vo_raidenShogun_teamJoin_03"
+		}
+	]
+}

@@ -1,0 +1,743 @@
+{
+	"id": 10000026,
+	"name": "Xiao",
+	"friendLines": [
+		{
+			"voicelineId": 16100,
+			"title": "Привет...",
+			"voicelineType": "1000",
+			"description": "Если ты {M#проснулся}{F#проснулась} с ножом у горла, если монстры вцепились в тебя, если смерть стоит у порога... Скажи моё имя. Адепт Сяо. Я приду на зов.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_draw_appear"
+		},
+		{
+			"voicelineId": 16101,
+			"title": "Поболтаем: Праздность",
+			"voicelineType": "1101",
+			"description": "Я опустился до безделья. Смехотворно.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_explore_idle_01"
+		},
+		{
+			"voicelineId": 16102,
+			"title": "Поболтаем: Свобода духа",
+			"voicelineType": "1102",
+			"description": "Духи пустошей умрут скорее, чем навредят мне.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_explore_idle_02"
+		},
+		{
+			"voicelineId": 16103,
+			"title": "Поболтаем: Осквернение",
+			"voicelineType": "1103",
+			"description": "Аргх... Эти воспоминания... мрачны...",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_explore_idle_03"
+		},
+		{
+			"voicelineId": 16104,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Демоны не отдыхают в дождь. Пойдём.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 16105,
+			"title": "После дождя...",
+			"voicelineType": "1202",
+			"description": "Прояснело? Хм. Погода неважна.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 16106,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1203",
+			"description": "Многие смертные боятся молний... Непостижимо. Бояться чего-то столь обычного.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_thunder_01"
+		},
+		{
+			"voicelineId": 16107,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1204",
+			"description": "Когда снег станет потолще, его можно будет есть...",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_snowy_01"
+		},
+		{
+			"voicelineId": 16108,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Мы теряем время. Пора в путь.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 16109,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Обед... Давай вернёмся на постоялый двор «Ваншу».",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 16110,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Ночь... Силы зла властвуют безраздельно. Не выходи на улицу.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 16111,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Иди. Я тут буду.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 16112,
+			"title": "О Сяо: Нелюдим",
+			"voicelineType": "2001",
+			"description": "Я вовсе не человек. Не очень понимаю людские чувства.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_idle_01"
+		},
+		{
+			"voicelineId": 16113,
+			"title": "О Сяо: Ли Юэ",
+			"voicelineType": "2006",
+			"description": "Ли Юэ быстро меняется... Неважно. Я не собираюсь приноравливаться.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_idle_02"
+		},
+		{
+			"voicelineId": 16114,
+			"title": "О нас: Предостережения",
+			"voicelineType": "2002",
+			"description": "Если наступит день, когда и ты впадёшь во тьму, то придётся мне...",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close1"
+		},
+		{
+			"voicelineId": 16115,
+			"title": "О нас: Доверие",
+			"voicelineType": "2003",
+			"description": "Остерегайся тьмы. От меня пощады не будет.\nХотя ты... Ты, пожалуй, сможешь устоять.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16116,
+			"title": "О нас: Сонливость",
+			"voicelineType": "2004",
+			"description": "Кто это?! А... Думаешь, я стоя сплю? Никакого уважения к Адептам.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16117,
+			"title": "О нас: Праздник морских фонарей",
+			"voicelineType": "2005",
+			"description": "Праздник морских фонарей? Опять пришла пора, когда смертные засыпают море Ли Юэ своим светящимся мусором. Какое ребячество...\nНо если хочешь, я пойду с тобой.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close4",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16118,
+			"title": "Глаз Бога: Желания",
+			"voicelineType": "3001",
+			"description": "Глаз Бога? Желание? Ха. Не суди Адептов по смертным. У меня нет желаний.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16119,
+			"title": "Глаз Бога: Причины",
+			"voicelineType": "3004",
+			"description": "Нет здесь никакого секрета. Я просто не говорю никому о своих желаниях.\nСмертные ведь говорят, что если рассказать о желании, то оно не сбудется... А? Не то же самое?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16120,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "Убийство - моя специальность. Если не можешь закончить дело - позови меня.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_share"
+		},
+		{
+			"voicelineId": 16121,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Когда-то на месте Тростниковых островов была пустошь.\nНо это было много лет... нет, веков назад.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_gift"
+		},
+		{
+			"voicelineId": 16122,
+			"title": "О Чжун Ли...",
+			"voicelineType": "4002",
+			"description": "Хочу спросить... Скажи, Чжун Ли целыми днями просто... Кормит птиц? Любуется цветами? Рассматривает старинные вещи?\nЭто всё... зачем?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16123,
+			"title": "О Бэй Доу...",
+			"voicelineType": "4003",
+			"description": "Бэй Доу? У меня с ней нет никаких отношений. Но морские чудовища - существуют. И она сильна для обычного человека, если смогла одолеть Хай Шаня.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16124,
+			"title": "О Бай Чжу...",
+			"voicelineType": "4004",
+			"description": "Думаешь... Бай Чжу сможет сделать лекарство от моей боли? Я ценю твоё намерение, но лекарства смертных не действуют на Адептов.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_baizhu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16125,
+			"title": "О Ху Тао...",
+			"voicelineType": "4001",
+			"description": "Ху Тао? Живая девушка, аж голова болит от неё. Но зато она забавная - точно не вырастет скучным человеком.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16126,
+			"title": "О Венти...",
+			"voicelineType": "4005",
+			"description": "Венти? Вот как его теперь зовут. Его музыка... Неважно.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16127,
+			"title": "О Гань Юй...",
+			"voicelineType": "4006",
+			"description": "Гань Юй не Божественный зверь, но и не человек. Нельзя не прийти в замешательство, идя лишь за долгом между мирами Адептов и смертных... Что? Я? Яксу, что умеет лишь убивать и выживать, на роль её наставника? Твой разум явно находится не в том мире, в котором живёт тело.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16128,
+			"title": "О Шэнь Хэ...",
+			"voicelineType": "4007",
+			"description": "Похоже, Шэнь Хэ доверяет тебе. Хотя, разве могло быть иначе? Такого доброго и сердечного человека, как ты, днём с огнём не сыщешь.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_shenhe_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Ветер дует - журавли возвращаются»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1101505
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16129,
+			"title": "О Е Лань...",
+			"voicelineType": "4008",
+			"description": "Говорят, однажды она последовала в Разлом по следам Миллелитов. Если она может самостоятельно раскрывать подобные тайны, то определённо обладает выдающимися способностями.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_yelan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16130,
+			"title": "Узнать больше о Сяо I",
+			"voicelineType": "5001",
+			"description": "Я согласен тебя защищать.\nНо не приближайся ко мне и не мешай мне. А то пожалеешь.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_01"
+		},
+		{
+			"voicelineId": 16131,
+			"title": "Узнать больше о Сяо II",
+			"voicelineType": "5002",
+			"description": "За тысячелетия я уничтожил несчётное количество призраков. Не хочешь навлечь на себя беду - держись от меня подальше. Считай меня просто оружием.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16132,
+			"title": "Узнать больше о Сяо III",
+			"voicelineType": "5003",
+			"description": "Их голоса... Я постоянно их слышу. Хрип, стоны... Они истошно требуют крови...\nЭто мой выбор и моё наказание. Тебя не касается.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16133,
+			"title": "Узнать больше о Сяо IV",
+			"voicelineType": "5004",
+			"description": "Моракс? Что ты можешь знать об этом имени?\nОн дал мне имя Сяо, освободил от бесконечных мук.\nНе прощу никого, кто будет порочить его. Даже тебя.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16134,
+			"title": "Узнать больше о Сяо V",
+			"voicelineType": "5005",
+			"description": "Уже поздно. Связь между нами слишком сильна. Даже если захочешь, ты не сможешь разорвать её. А? Не собираешься? Истребление всего зла... Моей битве не будет конца. Но я хочу узнать о тебе побольше.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16135,
+			"title": "Хобби Сяо...",
+			"voicelineType": "6001",
+			"description": "А ты {M#смелый}{F#смелая}. Спрашивать о моих увлечениях.\nСразись со мной. Посмотрим, выдержишь ли ты мои удары.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_hobby"
+		},
+		{
+			"voicelineId": 16136,
+			"title": "Беспокойство Сяо...",
+			"voicelineType": "6002",
+			"description": "Беспокойство? Ха... Это пустой звук для Адепта. Невозможно беспокоиться тысячу лет.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_annoyed"
+		},
+		{
+			"voicelineId": 16137,
+			"title": "Любимое блюдо: Миндальный тофу",
+			"voicelineType": "6003",
+			"description": "Меня не интересует еда смертных. Готовка мучительна, а ожидание долго. Разве что миндальный тофу ещё можно есть.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 16138,
+			"title": "Любимое блюдо: Воспоминания",
+			"voicelineType": "6004",
+			"description": "Вкус миндального тофу похож на вкус снов.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_foodLike_02"
+		},
+		{
+			"voicelineId": 16139,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6005",
+			"description": "Я сам должен положить мясо на лепёшку? А потом... всё вместе есть? Морока... Люди совсем уже здравый смысл потеряли.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_foodDislike"
+		},
+		{
+			"voicelineId": 16169,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Хм... Неплохо... Что ты так смотришь?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_spice_pref_01"
+		},
+		{
+			"voicelineId": 16170,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Не стоило.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_spice_normal_01"
+		},
+		{
+			"voicelineId": 16171,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "В следующий раз попробуй что-нибудь другое.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_spice_dislike_01"
+		},
+		{
+			"voicelineId": 16140,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "Идея смертных отмечать день своего рождения абсолютно излишня. Хм... Подожди. Я сложил тебе бабочку из листьев.\nВозьми. Это оберег Адептов, он отгоняет зло.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 16141,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "И это всё? Много шума из ничего.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16142,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Новая сила? Она будет только сеять смерть.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16143,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Предел силы - самоуничтожение. Ответь, зачем ты упорствуешь?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16144,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Своими руками я погубил бесчисленные души. И даже сам не смог избежать тьмы... Ты продолжаешь вынуждать меня стать своим... «товарищем».\nСобираешься меня спасти? Ты... Тебя так трудно понять.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 16145,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Хм!",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill1_01"
+		},
+		{
+			"voicelineId": 16146,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Скукота.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill1_02"
+		},
+		{
+			"voicelineId": 16147,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Бесполезно.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill1_03"
+		},
+		{
+			"voicelineId": 16148,
+			"title": "Атака в падении I",
+			"voicelineType": "110001",
+			"description": "Вот тебе!",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill2_01"
+		},
+		{
+			"voicelineId": 16149,
+			"title": "Атака в падении II",
+			"voicelineType": "110002",
+			"description": "Никчёмное существо!",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill2_02"
+		},
+		{
+			"voicelineId": 16150,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Исчезни!",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill3_01"
+		},
+		{
+			"voicelineId": 16151,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Истребление всего зла.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill3_02"
+		},
+		{
+			"voicelineId": 16152,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Плачь!",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill3_03"
+		},
+		{
+			"voicelineId": 16153,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Если это полезно, то я возьму.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_chest_open_01"
+		},
+		{
+			"voicelineId": 16154,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Зачем кому-то это нужно... Забудь, мне всё равно.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_chest_open_02"
+		},
+		{
+			"voicelineId": 16155,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Хм... Приличное качество.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_chest_open_03"
+		},
+		{
+			"voicelineId": 16156,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Молчи.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_01"
+		},
+		{
+			"voicelineId": 16157,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Приготовься к смерти, глупец!",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_03"
+		},
+		{
+			"voicelineId": 16158,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Уф!.. Ладно.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_04"
+		},
+		{
+			"voicelineId": 16159,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "...Слабо.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 16160,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Отойди, если хочешь выжить.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 16161,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Это... кара?",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_die_01"
+		},
+		{
+			"voicelineId": 16162,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Этот день... наконец, настал.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_die_02"
+		},
+		{
+			"voicelineId": 16163,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Невозможно...",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_die_03"
+		},
+		{
+			"voicelineId": 16164,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900001",
+			"description": "И всё?",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 16165,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Эй, прочь с дороги!",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 16166,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Меня кто-то звал?",
+			"voicefile": "VO_teamJoin/vo_xiao_teamJoin_01"
+		},
+		{
+			"voicelineId": 16167,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Зло должно быть изгнано.",
+			"voicefile": "VO_teamJoin/vo_xiao_teamJoin_02"
+		},
+		{
+			"voicelineId": 16168,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Побеждать демонов - моя работа.",
+			"voicefile": "VO_teamJoin/vo_xiao_teamJoin_03"
+		}
+	]
+}

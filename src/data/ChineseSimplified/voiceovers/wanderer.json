@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "初次见面…",
+			"voicelineType": "1006",
+			"description": "要我报上名来？此行世间，我名号诸多，虽然随便一个对凡人来说都高不可及，但于我都已成过往。\n想称呼什么就随你吧，让我见识下你的品味，可别让我失望。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "闲聊·风",
+			"voicelineType": "1101",
+			"description": "这世上没有纯粹的自由。风也会有吹到头的时候。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "闲聊·说话方式",
+			"voicelineType": "1102",
+			"description": "我说话刻薄吗？只是实话实说罢了，接受不了的人才该自己反思原因。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "闲聊·寒暄",
+			"voicelineType": "1103",
+			"description": "寒暄就免了吧，没话找话的样子也太可笑了。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "下雨的时候…",
+			"voicelineType": "1201",
+			"description": "想用我的斗笠遮雨？亏你提得出这种要求。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "雨过天晴…",
+			"voicelineType": "1202",
+			"description": "见了点阳光就能高兴成这个样子？幼稚。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "打雷的时候…",
+			"voicelineType": "1203",
+			"description": "啧…烦心。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "下雪的时候…",
+			"voicelineType": "1204",
+			"description": "明明和雨没什么区别，却讨人喜欢多了…真是人各有命。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "刮大风了…",
+			"voicelineType": "1205",
+			"description": "这点程度，你都能做到吧？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "早上好…",
+			"voicelineType": "1001",
+			"description": "「快醒醒——太阳要晒屁股咯——」…哈，你不会以为我会这么叫你起床吧？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "中午好…",
+			"voicelineType": "1002",
+			"description": "我不需要吃饭。管好你自己和身边的小东西，就算是让我省心了。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "终于，无聊的一天就要结束了。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "在我身边睡不着吗？呵呵。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#关于{REALNAME[ID(1)]}自己·人偶",
+			"voicelineType": "2001",
+			"description": "烧掉一个人偶会留下灰烬。至于灰烬中会诞生什么…",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#关于{REALNAME[ID(1)]}自己·心",
+			"voicelineType": "2005",
+			"description": "那种东西随便了。执着于注定不属于自己的事物只是在浪费时间，现在的我有更重要的事情要做。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "关于我们·对手",
+			"voicelineType": "2003",
+			"description": "对你我以前的对峙耿耿于怀？哦。所以呢，你要怎么做？慢慢想，我不急。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "关于我们·同伙",
+			"voicelineType": "2002",
+			"description": "我不可能皈依「正义」，但既然说过要偿还你的恩情，就定会做到。\n倒是你，在和我接触的时候可能需要想想自己立场哦？万一被人撞见，说你与罪人「狼狈为奸」，我可概不负责。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "关于「神之眼」…",
+			"voicelineType": "3001",
+			"description": "所谓「神明的注视」令人不爽，但反正是可用的力量，我不挑。你觉得「风元素」有其深意？呵，为什么会这么想？神明行事蛮横又无理，我不是让你领教过吗？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "有什么想要分享…",
+			"voicelineType": "3002",
+			"description": "没有。你想问什么就问吧，我看心情回答。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "感兴趣的见闻…",
+			"voicelineType": "3003",
+			"description": "看啊，鸟雀会炫耀羽毛，松鼠忙着囤积食物，人类为了柴米油盐整日奔走。头脑简单的生物活得就是比较容易呢。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "关于小吉祥草王…",
+			"voicelineType": "4001",
+			"description": "她选择不除掉我，或许不只是因为我有利用价值。也许是因为她很贤明，又有至善之心，又或许，是她在我身上看到了孤独的影子…你说我是在恶意揣测？哈，这不是当然的事情嘛！我又不是什么好人。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "关于雷电将军…",
+			"voicelineType": "4002",
+			"description": "对自己的造物视若不见，却又美其名曰不忍心干预…",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "关于「女皇」…",
+			"voicelineType": "4003",
+			"description": "人人都称赞她的温柔与慈爱，却不知「爱」也是「罪」的一种。搞不好是代偿心理作祟哦？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "关于「丑角」…",
+			"voicelineType": "4004",
+			"description": "「丑角」是坎瑞亚的遗民——除此之外，我对他知之甚少，也从未与他有过什么密切的交流。但他似乎对我意有所求，以前给我指派过不少重要的任务，包括前往「深渊」。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "关于「队长」…",
+			"voicelineType": "4005",
+			"description": "「刚正不阿的『队长』」、「正直果敢的『队长』」、「战功累累的『队长』」…这些愚人众里流传的言论，就算是人偶的耳朵也要听出茧子来了。你不觉得，绝对的「正直」，其实是个极其危险的隐患吗？更不用提，「队长」拥有顶尖的实力。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "关于「博士」…",
+			"voicelineType": "4006",
+			"description": "真遗憾，小吉祥草王让他消除了那么多的切片，剥夺了我将他一片一片千刀万剐的快乐。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "关于「少女」…",
+			"voicelineType": "4007",
+			"description": "试问：当遇到一名「无论何时」都懵懂无知，「无论做什么」都麻木平淡的「少女」时，该作何反应？我的话，尚可一战；你的话…因为太有良知，还是离她远些吧。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "关于「仆人」…",
+			"voicelineType": "4008",
+			"description": "道貌岸然的伪君子。她对人展露「优雅」与「亲切」都只是为了更好地「控制」罢了。而直面过她疯狂一面的人，大多已经…呼~。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "关于「公鸡」…",
+			"voicelineType": "4009",
+			"description": "也就是「公子」才会觉得「公鸡」是真心实意、不求回报地关心他和他的家人。虽然那位市长大人确实做了不少实事，但稍微有点脑子的人都能看出来，这里的潜台词是「你的家人都在我掌控之中」吧？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "关于「木偶」…",
+			"voicelineType": "4010",
+			"description": "她除了自己的研究以外什么都不关心，性格恶劣得很。但即便做到如此极端的地步，却也只是制造了大量废品，在我仍是执行官时还低我一席，真是可怜。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "关于「富人」…",
+			"voicelineType": "4011",
+			"description": "那个第九席啊，他对「公平交易」过分偏执，甚至试图推翻神与人之间天生的不平等。不过凡人就是这样，容易有不切实际的妄想，倒也没什么特别的，就像他平庸的能力和眼光一样——选择和「博士」密切合作，哼，是不会有好下场的。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "关于「公子」…",
+			"voicelineType": "4012",
+			"description": "头脑简单，四肢也不甚发达。让他做最后一席都是在拉低执行官的整体水准。万幸，我已经不在其列了。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "关于「女士」…",
+			"voicelineType": "4013",
+			"description": "她的灰烬里什么都没有。我对失去未来的人不感兴趣。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「千手百眼，天下人间」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "关于八重神子…",
+			"voicelineType": "4014",
+			"description": "油腔滑调的妖怪，为博神明的青睐，将自己伪装成关心人类的样子。其实，只是为了找乐子吧？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「千手百眼，天下人间」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "关于枫原万叶…",
+			"voicelineType": "4015",
+			"description": "你说枫原家的后人？那岂不是…哦？他也有风元素的「神之眼」，还扛下过雷电将军的一刀？呵呵…哈哈哈哈哈哈哈哈！",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#想要了解{REALNAME[ID(1)]}·其一",
+			"voicelineType": "5001",
+			"description": "真稀奇，竟然想了解我。会招来麻烦哦？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#想要了解{REALNAME[ID(1)]}·其二",
+			"voicelineType": "5002",
+			"description": "啊，一定有很多、很多人想要找我清算前尘。无所谓，我来者不拒——或者说，还挺期待的呢。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到3后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#想要了解{REALNAME[ID(1)]}·其三",
+			"voicelineType": "5003",
+			"description": "我曾以为成神便可摒弃无用的情感，现在不这么觉得了。至少「愤怒」，无论来自他人还是自我，都是方便使用的工具。\n怎么会有人永远不生气呢？难以想象，这种人就没有一点脾气吗？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#想要了解{REALNAME[ID(1)]}·其四",
+			"voicelineType": "5004",
+			"description": "在进入世界树时，我心中只有一个念头：希望自己从未来到这个世上。\n世界树回应了这个愿望，却没有带来我期盼的结果。这片土地的命运在捉弄它的囚徒方面一如往常。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到5后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#想要了解{REALNAME[ID(1)]}·其五",
+			"voicelineType": "5005",
+			"description": "你我有过交点，但终有一天会去往不同的地方。谁知道以后会发生什么呢？走着瞧吧。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「倾落伽蓝」剧情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#{REALNAME[ID(1)]}的爱好…",
+			"voicelineType": "6001",
+			"description": "爱好？那是闲人才有空琢磨的东西吧，我看起来像是没事做吗？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#{REALNAME[ID(1)]}的烦恼…",
+			"voicelineType": "6002",
+			"description": "在想怎么才能把你甩掉，去胡作非为一番。——开玩笑的，你信了？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "喜欢的食物…",
+			"voicelineType": "6005",
+			"description": "有茶吗？越苦越好，回味无穷。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "讨厌的食物…",
+			"voicelineType": "6004",
+			"description": "腻腻歪歪的甜东西，牙齿都要被黏在一起了。你自己留着吧。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "收到赠礼·其一",
+			"voicelineType": "6007",
+			"description": "还行吧，算是你为数不多的优点了。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "收到赠礼·其二",
+			"voicelineType": "6008",
+			"description": "不错，至少做出了能入口的食物。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "收到赠礼·其三",
+			"voicelineType": "6009",
+			"description": "想害我？难不成你笨到忘了我非凡胎？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "把手给我。…呵，别紧张啊，只是带你去高处看看而已。\n如何？应当是非凡的景色。感谢就免了，谢来谢去的没意思。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "…看得出来，你尽力了。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「1」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "风吹过来了…你做了什么？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「2」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "突破的感受·转",
+			"voicelineType": "8003",
+			"description": "给我力量，你不担心后果吗？…好吧。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「4」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "虽说我可以成为你的助力，但将我视作同伴仍是件危险的事情，希望你清楚自己在面对什么。若你不畏惧，便站到我身后吧。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「6」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "元素战技·其一",
+			"voicelineType": "100001",
+			"description": "风起！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "元素战技·其二",
+			"voicelineType": "100002",
+			"description": "俯瞰凡尘！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "元素战技·其三",
+			"voicelineType": "100003",
+			"description": "怒风腾天！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "元素爆发·其一",
+			"voicelineType": "200001",
+			"description": "不度蝼蚁！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "元素爆发·其二",
+			"voicelineType": "200002",
+			"description": "鼠雀之辈！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "元素爆发·其三",
+			"voicelineType": "200003",
+			"description": "叫大声点！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "元素爆发·其四",
+			"voicelineType": "200004",
+			"description": "把头低下！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "元素爆发·其五",
+			"voicelineType": "200005",
+			"description": "毫无自知之明！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "元素爆发·其六",
+			"voicelineType": "200006",
+			"description": "就凭你，也配直视我？",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "冲刺开始·其一",
+			"voicelineType": "700001",
+			"description": "风驰！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "冲刺开始·其二",
+			"voicelineType": "700002",
+			"description": "疾风随行！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "冲刺开始·其三",
+			"voicelineType": "700004",
+			"description": "…真慢。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "冲刺开始·其四",
+			"voicelineType": "700005",
+			"description": "没叫你跟着。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "打开宝箱·其一",
+			"voicelineType": "300001",
+			"description": "多余。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "打开宝箱·其二",
+			"voicelineType": "300002",
+			"description": "啊？这你也要？",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "打开宝箱·其三",
+			"voicelineType": "300003",
+			"description": "你自己拿着玩吧。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "习惯了。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "不值一提。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "要你何用！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "也没指望你派上用场。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "坠入…深渊…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "皆为…徒劳…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "罪业的报偿…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "重受击·其一",
+			"voicelineType": "910001",
+			"description": "不过如此。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "重受击·其二",
+			"voicelineType": "910002",
+			"description": "…可笑。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "重受击·其三",
+			"voicelineType": "910003",
+			"description": "…你死定了。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "重受击·其四",
+			"voicelineType": "910004",
+			"description": "等着求饶吧。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "重受击·其五",
+			"voicelineType": "910005",
+			"description": "做好付出代价的准备。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "加入队伍·其一",
+			"voicelineType": "600001",
+			"description": "没想到…叫我做什么？",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "加入队伍·其二",
+			"voicelineType": "600002",
+			"description": "你最好有要事相求。",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "加入队伍·其三",
+			"voicelineType": "600003",
+			"description": "非我不可？…行吧，勉为其难。",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

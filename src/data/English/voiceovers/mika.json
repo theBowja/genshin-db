@@ -1,0 +1,767 @@
+{
+	"id": 10000080,
+	"name": "Mika",
+	"friendLines": [
+		{
+			"voicelineId": 80000,
+			"title": "Hello",
+			"voicelineType": "1006",
+			"description": "Mika, Front-Line Land Surveyor, Knights of Favonius Reconnaissance Company, reporting in. It's an honor to fight alongside you. If there's anything I can do to support you, just let me know and I'll get to it right away. Anyway, I'll make every effort to navigate us safely and report accurate intel on the enemy!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_draw_appear_01"
+		},
+		{
+			"voicelineId": 80001,
+			"title": "Chat: Staying on Target",
+			"voicelineType": "1101",
+			"description": "We'd better stay battle ready... Our next mission could start at any time.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_character_idle_01"
+		},
+		{
+			"voicelineId": 80002,
+			"title": "Chat: Situation Report",
+			"voicelineType": "1102",
+			"description": "Verifying our current position, measuring distance to target area... Alright, I've recorded the terrain conditions.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_character_idle_02"
+		},
+		{
+			"voicelineId": 80003,
+			"title": "Chat: Establishing a Route",
+			"voicelineType": "1103",
+			"description": "No matter what kind of environment you may find yourself in, with thorough reconnaissance, you should be able to establish a safe route.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_character_idle_03"
+		},
+		{
+			"voicelineId": 80004,
+			"title": "When It Rains",
+			"voicelineType": "1201",
+			"description": "Ahh, the rain is really coming down... let's just hope the conditions out here won't get too muddy. Otherwise, I'll need to help everyone clean their boots, and there won't be enough time to prepare a meal...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 80005,
+			"title": "When Thunder Strikes",
+			"voicelineType": "1202",
+			"description": "Thunder can mask the sound of movement, which is why it's our friend.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_thunder_01"
+		},
+		{
+			"voicelineId": 80006,
+			"title": "When It Snows",
+			"voicelineType": "1203",
+			"description": "Freshly fallen snow may be beautiful, but it masks the more nuanced features of terrain, which can be a pain.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_snowy_01"
+		},
+		{
+			"voicelineId": 80007,
+			"title": "When the Sun Is Out",
+			"voicelineType": "1204",
+			"description": "The sun is out and visibility is excellent... Perfect conditions for observation. Couldn't ask for anything better!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_sunny_01"
+		},
+		{
+			"voicelineId": 80008,
+			"title": "When the Wind Is Blowing",
+			"voicelineType": "1205",
+			"description": "Huh... Could this wind be a sign from the Anemo Archon? Or is it just a result of the terrain's effects on the atmosphere...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_gale_01"
+		},
+		{
+			"voicelineId": 80009,
+			"title": "Good Morning",
+			"voicelineType": "1001",
+			"description": "Oh, good morning! ...I prepared the breakfast we usually eat in the expeditionary force. If you don't mind, maybe you could tell me our plan of action for today while you eat.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 80010,
+			"title": "Good Afternoon",
+			"voicelineType": "1002",
+			"description": "Oh, please wait a moment, our meal's almost ready! Field ration no.3 — it's the Reconnaissance Company's favorite. I'll check the nearby area again shortly to see if there are any suitable places for a short rest.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 80011,
+			"title": "Good Evening",
+			"voicelineType": "1003",
+			"description": "Dinner's served! Although it's just some basic field rations, it should still have all the nutrients you need. Please, dig in... If you have any equipment that needs maintenance, you can also give them to me.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 80012,
+			"title": "Good Night",
+			"voicelineType": "1004",
+			"description": "It's getting late, and I need to get the day's survey records in order. The camp beds are ready, so why don't you have a rest? After you've recovered your energy, our midnight snack should also be ready, and we can trade posts.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 80013,
+			"title": "About Mika: Work",
+			"voicelineType": "2001",
+			"description": "Hmm? What's a Front-Line Land Surveyor? Well, my duty is to scout ahead into unknown territory, survey the terrain, and identify key locations. Sometimes, we also have to deal with enemy sentries, so in addition to being able to map out the terrain, I also have to stay combat ready, know first aid, and have strong survival skills...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_idle"
+		},
+		{
+			"voicelineId": 80014,
+			"title": "About Mika: Mundane Tasks",
+			"voicelineType": "2005",
+			"description": "Making camp, starting a fire, cooking food, and maintaining equipment... these are all essential tasks that must be done. If the others dislike such duties, and if I can uh, manage them to a satisfactory degree, then the least I can do is to help out... That way, everyone can have a breather and relax a little...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80015,
+			"title": "About Us: Rumors",
+			"voicelineType": "2003",
+			"description": "Ah, sorry... I heard all about you when I first arrived back in Mondstadt. Super powerful people like you and Paimon usually have some kind of strict personal code. Since many super powerful people would also have a bad temper, I was afraid that if I misspoke, you might get upset. But luckily, you two are really nice, and I have nothing to worry about!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_close"
+		},
+		{
+			"voicelineId": 80016,
+			"title": "About Us: Speaking in Code",
+			"voicelineType": "2002",
+			"description": "Some forward scouts will use the word \"Octave\" to indicate that they've run out of arrows and are returning to camp... Or \"Vera\" to mean \"the conditions are good, we should engage the enemy\"... Hey, why don't we also come up with some code words? It'll come in handy, especially if we'll be working together long term. Go ahead, I'm good with any of your ideas!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80017,
+			"title": "About the Vision",
+			"voicelineType": "3001",
+			"description": "To be honest, even I was amazed that I managed to receive a Vision. It's really come in handy, but I shouldn't completely rely on its powers. Instead, I prefer to think of it as a sort of safeguard to use in case something happens. As a member of the Knights of Favonius, I should place more importance on team cooperation, and come up with ways to overcome difficulties together with my teammates.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80018,
+			"title": "Something to Share",
+			"voicelineType": "3002",
+			"description": "Here's a simple survey trick that you might find useful... Stretch out your arm, and raise your thumb towards the target area. Align your right eye's line of sight and your thumb to the left side of the target, and your left eye to the right side of the target, and multiply the distance between the two sides by the right multiplier... You can use this trick to estimate the height of a mountain and whether it's climbable, or the width of a river and whether you can swim across.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_share_01"
+		},
+		{
+			"voicelineId": 80019,
+			"title": "Interesting Things",
+			"voicelineType": "3003",
+			"description": "I heard Klee mention that there's a type of plant that can relay sound... if only we could somehow carry this plant with us in the field. That way, I could instantly report back about the terrain... I could even stay near the front lines and guide our rear forces to attack enemy targets from afar with volleys of arrows.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_gift_01"
+		},
+		{
+			"voicelineId": 80020,
+			"title": "About Kaeya",
+			"voicelineType": "4001",
+			"description": "Before joining the Knights, I had to take a number of exams. Captain Kaeya was the main person in charge of all the testing. He was really supportive, and gave me all kinds of tips, but sometimes, I would struggle to understand what he was saying... I would get worried that I was not keeping up with his pace, and that I was letting him down...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80021,
+			"title": "About Varka: Instruction",
+			"voicelineType": "4002",
+			"description": "Grand Master Varka is not only a strong leader who commands respect, but also my personal combat instructor. He taught me to think on my feet and avoid engaging enemies at close combat to make up for my small stature and relative lack of stamina. Following his advice, I learned how to fight with a polearm and crossbow, and I must say, this fighting style is far more suitable to me.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80022,
+			"title": "About Varka: The Captain",
+			"voicelineType": "4003",
+			"description": "The Grand Master said that I need to set higher goals for myself, and strive to achieve them. I've always had that kind of attitude, but it wasn't until I was on the expedition that I realized how serious things can become... One day, I met the Fatui Harbinger known as The Captain. I can't even begin to imagine how I can deal with an opponent like him. I just... Such powerful people are really on a level of their own, I'm not even remotely close...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_varka_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80023,
+			"title": "About Jean",
+			"voicelineType": "4004",
+			"description": "The Deputy... I mean, the Acting Grand Master is a strong and considerate leader who always makes me feel at ease. She's always out there looking after all of us. Whether it's organizing work, rendering first aid, or cooking delicious meals, there's so much I can learn from her...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80024,
+			"title": "About Amber",
+			"voicelineType": "4005",
+			"description": "Oh? Amber the Outrider? She's the most reliable vanguard, and has amazing reconnaissance skills! The roles of Front-Line Surveyors and the Outriders are similar given that we both operate ahead of the main force. Amber has a lot of experience, and I've learned a lot of survival skills from her, as well as how to better maintain my crossbow strings and arrows.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80025,
+			"title": "About Eula: Tasks",
+			"voicelineType": "4006",
+			"description": "Captain Eula is a strong fighter with a combat style of her own, and she's always looked out for me. When I first joined the company, she assigned me a variety of tasks, way more than what other members had, and that quickly improved my ability to adapt. Once I grew accustomed to the way she expresses herself, I was able to work together with her just fine!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80026,
+			"title": "About Eula: Daily Conduct",
+			"voicelineType": "4007",
+			"description": "Actually, I really admire Captain Eula. She is friendly and free-spirited, and her mental fortitude is out of this world. If other people gave me strange looks all the time and talked behind my back like they do about her, I don't think I'd be able to leave my room...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_eula_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80027,
+			"title": "About Lisa",
+			"voicelineType": "4008",
+			"description": "Our librarian Lisa had always offered her help when I was first teaching myself how to draw maps. She even found a bunch of useful books for me to study. *sigh* If only I could be as well-learned as she is... After all, it never hurts to have more knowledge, and you never know when you might need it...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80028,
+			"title": "About Klee",
+			"voicelineType": "4009",
+			"description": "Oh? Klee? She's super cheerful, and I've heard that... she's as strong as the Grand Master himself. She's invited me to go on adventures with her before, and we always had a great time together! Although she would experiment with dangerous weapons from time to time, which means I've had to revise my maps on several occasions... But I still feel it's worth it!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80029,
+			"title": "About Venti",
+			"voicelineType": "4010",
+			"description": "I really like that bard... He's a very talented performer, and his melodies always seem to make me feel at home. If I had to pick a tune that best represents Mondstadt, it'd definitely be one of his. It's too bad that I'm not often in the city, otherwise, I could bring him some gifts every day...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80030,
+			"title": "About Albedo",
+			"voicelineType": "4011",
+			"description": "The Chief Alchemist has been very kind to me. He helped me make all the survey equipment I use in the field... I even have some pens he made that will work even when I'm hanging upside down from a tree. But it seems that making artistic sketches is quite different from making maps. I've tried to make some sketches of a target area as supplemental intel before, and word has it that Captain Albedo went silent for a long time when he saw them...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80031,
+			"title": "More About Mika: I",
+			"voicelineType": "5001",
+			"description": "Hmm? You want to know more about me? Well, I'm just an ordinary person, so I don't really have any interesting stories... I guess all I could talk about is my experiences, would you be willing to hear about that?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_01"
+		},
+		{
+			"voicelineId": 80032,
+			"title": "More About Mika: II",
+			"voicelineType": "5002",
+			"description": "Ever since I was a kid, I've wanted to become a cartographer, and map out every corner of Teyvat. It's only later on that I discovered the Knights of Favonius actually have that kind of role. Thanks to my father and brother's support, I was able to make it through the selection process and become a Front-Line Surveyor. This job has let me live out my dreams, and it's already brought me lots of fulfillment.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80033,
+			"title": "More About Mika: III",
+			"voicelineType": "5003",
+			"description": "Everyone in the Knights of Favonius is really strong, and I feel like there's something I could learn from each member. After gaining new skills from everyone, I should also do my best to return the favor. So if there's anything the others need help with, then I'll do my best to make that happen.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80034,
+			"title": "More About Mika: IV",
+			"voicelineType": "5004",
+			"description": "It seems like... after I assisted the Grand Master and Captain Eula a few times with their errands, some members of our group have begun to see me as their official messenger. If I ever misspoke, it would cause trouble for our leaders, and the blame would be all mine. So, whenever I am around others I'm unfamiliar with, I often try to only comment on things I'm absolutely confident in, which makes everyone think I'm timid. But would you say this whole situation is just a sort of misunderstanding?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80035,
+			"title": "More About Mika: V",
+			"voicelineType": "5005",
+			"description": "You know, one good thing after coming back from the expedition is that I don't feel so worried anymore. As long as I'm not causing trouble for anyone else, then I don't really mind what anyone might think of me. The Knights of Favonius is like my second family, and I've got to master my work as a Front-Line Surveyor. My hard work can let everyone finish their tasks more smoothly and end their days with just that much less to worry about...",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80036,
+			"title": "Mika's Hobbies",
+			"voicelineType": "6001",
+			"description": "Oh? My hobbies? ...I guess my favorite thing would be camping out in unknown territory. Just taking in the fresh scenery, making a cozy little camp, starting a bonfire and making some food. It really brings me happiness!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_hobby"
+		},
+		{
+			"voicelineId": 80037,
+			"title": "Mika's Troubles",
+			"voicelineType": "6002",
+			"description": "To be honest, I'm not too good at dealing with people I'm not familiar with. Maybe it's because I'm not really good at holding a conversation. Can you give me some pointers in that area?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_annoyed"
+		},
+		{
+			"voicelineId": 80038,
+			"title": "Favorite Food",
+			"voicelineType": "6005",
+			"description": "The Grand Master said that a youngster like me needs to eat more meat, which will build more strength and physical stamina. Even though there's little chance I'll ever get really buff. I do like eating meat dishes. The others in the Reconnaissance Company seem to share this taste as well.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 80039,
+			"title": "Least Favorite Food",
+			"voicelineType": "6004",
+			"description": "Unlike my brother, I can't stand the taste of alcohol. All it takes is one sip and I'd be out cold, and the others would have to go out of their way to take care of me. Even just the smell of a strong drink being opened is enough to make me dizzy.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_foodDislike"
+		},
+		{
+			"voicelineId": 80040,
+			"title": "Receiving a Gift: I",
+			"voicelineType": "6007",
+			"description": "Thanks so much... this is such a marvelous dish, I would feel terrible using it just to fill my stomach! Can I put it away for storage?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_spice_pref_01"
+		},
+		{
+			"voicelineId": 80041,
+			"title": "Receiving a Gift: II",
+			"voicelineType": "6008",
+			"description": "The taste and portions are both incredible. You really went the extra mile for me.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_spice_normal_01"
+		},
+		{
+			"voicelineId": 80042,
+			"title": "Receiving a Gift: III",
+			"voicelineType": "6009",
+			"description": "Ugh... well, since you went to the trouble of making this for me. I promise I'll finish it.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_spice_dislike_01"
+		},
+		{
+			"voicelineId": 80043,
+			"title": "Birthday",
+			"voicelineType": "7001",
+			"description": "Oh, what should we do for an occasion like this? Hmm... Today is your most special day, so we should really live it up! I've prepared \"A Tour of Mondstadt's Most Stunning Spots.\" It contains information on lots of beautiful locations that are hardly known to anyone else. I wish you happiness every day until this day arrives again next year.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 80044,
+			"title": "Feelings About Ascension: Intro",
+			"voicelineType": "8001",
+			"description": "Even though I'm still miles behind you, I'm feeling a little more confident now. At least, I won't end up dragging you down again.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80045,
+			"title": "Feelings About Ascension: Building Up",
+			"voicelineType": "8002",
+			"description": "I hope I'll be able to provide more useful intelligence, and help take some weight off of your shoulders!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80046,
+			"title": "Feelings About Ascension: Climax",
+			"voicelineType": "8003",
+			"description": "Please allow me to always travel alongside you, and survey the land around us!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80047,
+			"title": "Feelings About Ascension: Conclusion",
+			"voicelineType": "8004",
+			"description": "Thank you so much! With this, I am now so much closer to my goal — allowing everyone to advance safely and navigate through rough terrain without any fear of fatigue or potential danger!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Ascension Phase 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 80048,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "Providing cover fire.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_01"
+		},
+		{
+			"voicelineId": 80049,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Engaging.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_02"
+		},
+		{
+			"voicelineId": 80050,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Final warning.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_03"
+		},
+		{
+			"voicelineId": 80051,
+			"title": "Elemental Skill: IV",
+			"voicelineType": "100004",
+			"description": "Precision strike!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_04"
+		},
+		{
+			"voicelineId": 80052,
+			"title": "Elemental Skill: V",
+			"voicelineType": "100005",
+			"description": "You had your chance!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_05"
+		},
+		{
+			"voicelineId": 80053,
+			"title": "Elemental Skill: VI",
+			"voicelineType": "100006",
+			"description": "Neutralizing threats!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_06"
+		},
+		{
+			"voicelineId": 80054,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Let's keep going, team!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill3_01"
+		},
+		{
+			"voicelineId": 80055,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "Leave the wounded to me!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill3_02"
+		},
+		{
+			"voicelineId": 80056,
+			"title": "Elemental Burst: III",
+			"voicelineType": "200003",
+			"description": "Now's our chance!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill3_03"
+		},
+		{
+			"voicelineId": 80057,
+			"title": "Deploying Wind Glider: I",
+			"voicelineType": "800001",
+			"description": "I'll be the eyes above...",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 80058,
+			"title": "Opening Treasure Chest: I",
+			"voicelineType": "300001",
+			"description": "Scouting ahead has its benefits!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_chest_open_01"
+		},
+		{
+			"voicelineId": 80059,
+			"title": "Opening Treasure Chest: II",
+			"voicelineType": "300002",
+			"description": "What do we have here?",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_chest_open_02"
+		},
+		{
+			"voicelineId": 80060,
+			"title": "Opening Treasure Chest: III",
+			"voicelineType": "300003",
+			"description": "Treasure located. Good work, everyone!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_chest_open_03"
+		},
+		{
+			"voicelineId": 80061,
+			"title": "Low HP: I",
+			"voicelineType": "410001",
+			"description": "This is... a tight spot...",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_01"
+		},
+		{
+			"voicelineId": 80062,
+			"title": "Low HP: II",
+			"voicelineType": "410002",
+			"description": "Should we reconsider our tactics?",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_02"
+		},
+		{
+			"voicelineId": 80063,
+			"title": "Low HP: III",
+			"voicelineType": "410003",
+			"description": "The enemy is... quite strong.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_03"
+		},
+		{
+			"voicelineId": 80064,
+			"title": "Ally at Low HP: I",
+			"voicelineType": "400001",
+			"description": "Fall back, I'll cover you!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 80065,
+			"title": "Ally at Low HP: II",
+			"voicelineType": "400002",
+			"description": "You need medical attention...",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 80066,
+			"title": "Fallen: I",
+			"voicelineType": "500001",
+			"description": "Should have... tried to flank them...",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_die_01"
+		},
+		{
+			"voicelineId": 80067,
+			"title": "Fallen: II",
+			"voicelineType": "500002",
+			"description": "I'm sorry... everyone...",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_die_02"
+		},
+		{
+			"voicelineId": 80068,
+			"title": "Fallen: III",
+			"voicelineType": "500003",
+			"description": "No... I blew it...",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_die_03"
+		},
+		{
+			"voicelineId": 80069,
+			"title": "Light Hit Taken: I",
+			"voicelineType": "900001",
+			"description": "Hang in there!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 80070,
+			"title": "Light Hit Taken: II",
+			"voicelineType": "900002",
+			"description": "I'll be alright!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 80071,
+			"title": "Heavy Hit Taken: I",
+			"voicelineType": "910001",
+			"description": "I'm fine... really!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 80072,
+			"title": "Heavy Hit Taken: II",
+			"voicelineType": "910002",
+			"description": "Keep your cool...",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 80073,
+			"title": "Joining Party: I",
+			"voicelineType": "600001",
+			"description": "Let me double check our equipment... alright, everything's ready.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teamJoin_01"
+		},
+		{
+			"voicelineId": 80074,
+			"title": "Joining Party: II",
+			"voicelineType": "600002",
+			"description": "My lance and crossbow are prepped and ready.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teamJoin_02"
+		},
+		{
+			"voicelineId": 80075,
+			"title": "Joining Party: III",
+			"voicelineType": "600003",
+			"description": "I—I'll take point and scout ahead!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teamJoin_03"
+		}
+	]
+}

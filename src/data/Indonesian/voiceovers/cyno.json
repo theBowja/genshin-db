@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "Halo: Masa Lalu",
+			"voicelineType": "1000",
+			"description": "Aku Cyno, mantan Mahamatra Agung. Sekarang aku pakai kemampuanku untuk menghukum yang menurutku jahat. Kalau kamu memiliki pengabdian yang sama denganku dalam peraturan dan keadilan, aku akan pinjamkan kekuatanku kepadamu.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "Halo: Saat Ini",
+			"voicelineType": "1006",
+			"description": "Aku Cyno, Mahamatra Agung di Akademiya. Menegakkan peraturan dan menghukum kejahatan adalah tanggung jawabku. Aku akan melindungi keselamatanmu sepanjang perjalananmu.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Selesaikan Akasha Berdetak, Api Kalpa Bergelora",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "Berbincang: Menimbang",
+			"voicelineType": "1101",
+			"description": "Pada akhirnya, kebaikan dan kejahatan akan dinilai dengan seimbang.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "Berbincang: Takdir Kartu",
+			"voicelineType": "1102",
+			"description": "Keberuntungan bisa mengubah hasil dari sebuah pertandingan, tetapi cepat atau lambat, keberuntungan pasti akan habis.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "Berbincang: Keraguan",
+			"voicelineType": "1103",
+			"description": "Aku memang berusaha untuk meringankan suasana kadang-kadang, tapi ... Aku tidak terlalu pintar menilai selera humor orang lain.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "Waktu Hujan",
+			"voicelineType": "1201",
+			"description": "Hujan lagi ....",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "Ketika Petir Menyambar",
+			"voicelineType": "1202",
+			"description": "Di beberapa legenda, guntur itu sebuah bentuk penghakiman dari dewa di atas.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "Ketika Turun Salju",
+			"voicelineType": "1203",
+			"description": "Aku suka melihat semuanya dilapisi oleh lapisan salju yang segar. Ada keheningan yang sempurna di dalamnya, bukan yang tidak bernyawa, tapi yang tenang dan damai.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "Ketika Matahari Bersinar",
+			"voicelineType": "1204",
+			"description": "Cahaya matahari pada akhirnya akan menerangi setiap sudut yang tersembunyi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "Ketika Angin Berembus",
+			"voicelineType": "1205",
+			"description": "Hati-hati, anginnya mulai kuat.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "Di Padang Pasir",
+			"voicelineType": "1206",
+			"description": "Pemandangan yang familier",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "Selamat Pagi",
+			"voicelineType": "1001",
+			"description": "Ayo bersiap. Sudah waktunya berangkat.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "Selamat Siang",
+			"voicelineType": "1002",
+			"description": "Mau aku siapkan makan malam hari ini? Aku tidak apa-apa sih. Tapi aku peringatkan kamu dulu ya, aku tidak bisa jamin kalau makanannya enak.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "Selamat Malam",
+			"voicelineType": "1003",
+			"description": "Masih ingat yang aku bilang? Selalu akan ada bahaya yang mengintai di malam hari. Jadi apa pun yang kamu lakukan, jangan lengah.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "Selamat Tidur",
+			"voicelineType": "1004",
+			"description": "Selamat malam. Sedang ada aktivitas kriminal di sekitar sekarang, akan aku bereskan sekarang.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "Tentang Cyno: Lelucon Dingin",
+			"voicelineType": "2001",
+			"description": "Hem ... lelucon? Ah, kebetulan ada satu. Ehem ... Pernah ada satu pengembara yang terdampar di padang pasir dan sekarat karena kehausan. Di dalam keputusasaannya, dia berdoa agar Hydro Slime datang kepadanya. Tapi pengembara itu tidak sadar, kalau di saat yang sama, Hydro Slime yang sedang kelaparan juga sedang berdoa sekuat tenaga agar bisa bertemu dengan pengembara yang sendirian dan terdampar ... Hmm? Tidak lucu, ya?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "Tentang Cyno: Berjalan Santai",
+			"voicelineType": "2005",
+			"description": "Kadang-kadang aku akan jalan santai di padang pasir saat malam hari ... Udaranya yang dingin dan kering di luar sana membuat pikiranku lebih jernih.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "Tentang Kita: Duel",
+			"voicelineType": "2003",
+			"description": "Mau coba satu permainan Genius Invokation TCG? Akan kutunjukkan dek kartu baru yang baru aku susun.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "Tentang Kita: Saat Ini",
+			"voicelineType": "2002",
+			"description": "Yang lalu tidak bisa lagi diubah, yang akan datang tidak bisa diprediksi. Sebagai hasilnya, aku selalu menghargai saat ini.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "Tentang Vision",
+			"voicelineType": "3001",
+			"description": "Kamu mungkin bilang aku sudah menerima banyak bantuan dari langit, karena roh yang ada di dalam diriku, dan dewa yang memerhatikan ambisiku. Tapi, aku tidak akan biarkan semua ini pengaruhi kode etik keadilanku. Aku akan terus-menerus melakukan apa yang diperlukan untuk memenuhi kewajibanku.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "Berbagi Cerita: Keinginan Menuntut Ilmu",
+			"voicelineType": "3002",
+			"description": "Aku rasa banyak orang yang mengerti kalau keinginan yang berlebihan akan membawa petaka, tapi orang-orang jarang mengakui hal ini kalau sudah berkaitan dengan pengejaran terhadap ilmu pengetahuan ... Mereka cuma ingin melihatnya dari sisi yang positif. Kalau menurutku, mengejar pengetahuan juga adalah satu bentuk keinginan juga, dan harus dikontrol.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "Berbagi Cerita: Rasa Hormat",
+			"voicelineType": "3005",
+			"description": "Semua keputusan yang aku ambil selama misi akan bisa berdampak besar kepada nasib orang lain. Inilah kenapa aku harus selalu menjaga rasa hormatku terhadap posisiku sebagai Matra dengan sungguh-sungguh, sama seperti aku menghormati pengetahuan dan kekuatan.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "Cerita yang Menarik ....",
+			"voicelineType": "3003",
+			"description": "Aku suka semak-semak yang tumbuh di padang pasir. Padang pasir adalah simbol ketenangan dan kesendirian, dan semua peradaban akan terkubur oleh badai pasir pada akhirnya. Tapi terlepas dari semua kondisi terpencil ini, masih tetap ada tanda-tanda kehidupan. Kadang-kadang aku benar-benar terkesan dengan kegigihannya.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "Tentang Tighnari: Pengetahuan",
+			"voicelineType": "4001",
+			"description": "Tighnari beda dari peneliti lain yang pernah aku temui. Dia punya dedikasi sepenuh hati yang sama untuk pengetahuan, tapi dia tidak akan pernah melanggar batasan yang paling penting. Beberapa peneliti menganggap diri mereka sendiri sebagai dewa di laboratorium mereka, tapi Tighnari tidak. Dia selalu menunjukkan rasa hormat kepada seluruh bentuk kehidupan. Aku pernah dengar dia bahkan menolak posisi di Akademiya, dan aku dukung keputusannya.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "Tentang Tighnari: Lelucon",
+			"voicelineType": "4002",
+			"description": "Tighnari pernah suruh aku untuk tidak bercanda di meja makan. Dia terus ngotot kalau candaanku tidak lucu sama sekali. Aku tidak setuju dengan dia, makanya aku ceritakan tiga lelucon secara berurutan dan jelaskan tentang dasar pemikiran setiap cerita dengan mendetail. Waktu aku selesai berbicara, makananku sudah jadi dingin ....",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "Tentang Collei",
+			"voicelineType": "4003",
+			"description": "Aku pernah bantu Collei segel sisa-sisa dewa yang tersisa di dalam tubuhnya, tapi proses ini menyakitkan sekali bagi dia. Bagi kebanyakan orang, bisa menahan kesakitan seperti itu mungkin akan lebih sulit dari mati saja. Makanya, saat tahu dia bisa menahan semua kesakitan itu, aku rasa dia mengagumkan sekali.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "Tentang Alhaitham",
+			"voicelineType": "4004",
+			"description": "Aku tidak begitu suka dengan orang yang terlalu pintar. Mereka pikir mereka bisa mengontrol segalanya, dan terus menjelajah ke batas bahaya. Tapi Alhaitham termasuk salah satu yang bisa diandalkan. Pada sebagian besar kasus, dia sebenarnya bisa mengontrol semuanya dan punya kemampuan untuk mencegah potensi bencana.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Selesaikan kisah \"Raja Tanah Merah dan Tiga Peziarah\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "Tentang Kaveh",
+			"voicelineType": "4005",
+			"description": "Tighnari dan Collei tidak pernah bicara di depanku, tapi mereka rasa anekdot pribadi Kaveh jauh lebih menghibur daripada lelucon yang aku siapkan ... Aku bisa baca dari ekspresi muka mereka. Hmm? Kalau menurutmu bagaimana? Yah, aku rasa lucu sih mereka malah bisa tertawa dalam kondisi seperti itu.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "Tentang Nahida",
+			"voicelineType": "4006",
+			"description": "Mengomentari seorang dewi ... mungkin ini hal yang sedikit melampaui kapasitasku untuk melakukannya. Tapi, di masa-masa aku bersamanya, aku menyaksikan kebijaksanaan, keberanian, dan tekadnya dengan mata kepalaku sendiri. Dibandingkan dengan para Sage yang terus-menerus meremehkan dan mengkritiknya tanpa bukti sedikit pun, kupikir aku bisa memberikan penilaian yang lebih terpercaya: Dia adalah dewi luar biasa yang layak dihormati semua orang.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Selesaikan Akasha Berdetak, Api Kalpa Bergelora",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "Tentang Nilou",
+			"voicelineType": "4007",
+			"description": "Aku bisa merasakan antusias dan obsesi tarian darinya. Itu sudah menjadi bagian yang tidak terpisahkan darinya. Semoga di masa depan, dia juga bisa membawa kebahagiaan bagi orang lain dengan seni yang dia cintai.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Selesaikan Akasha Berdetak, Api Kalpa Bergelora",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "Tentang Faruzan",
+			"voicelineType": "4008",
+			"description": "Aku pernah telusuri dokumen kasus tentang hilangnya Faruzan dengan teliti. Waktu itu, aku pikir dia mungkin sudah melakukan sejenis penelitian berbahaya, tapi waktu bertemu dengannya langsung, aku benar-benar menghapus pikiran itu dari benakku. Meski mungkin agak susah bagiku untuk bisa berteman dengannya, kebanyakan waktu, dia mengingatkan aku kepada orang tua yang baik dan cerewet. Dia selalu pengertian terhadap orang lain, dan tidak akan pernah berbuat hal yang tidak bijak.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "Tentang Lisa",
+			"voicelineType": "4009",
+			"description": "Tentu saja aku kenal Lisa, kami berdua pernah belajar kepada Sage yang sama. Sebagai Mahamatra Agung, aku sudah banyak melihat petaka menimpa orang-orang yang terlalu rajin menuntut ilmu itu, makanya aku sangat bisa mengerti keputusannya.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "Mengenal Cyno: I",
+			"voicelineType": "5001",
+			"description": "Eh? Kamu ingin tahu lebih banyak tentang aku? Hmmm, aku rasa banyak orang yang melihatku sebagai duri di mata mereka .... Tapi tidak perlu khawatir, asal kamu tidak melakukan hal yang berbahaya, kamu tidak akan punya masalah denganku.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "Mengenal Cyno: II",
+			"voicelineType": "5002",
+			"description": "Dengan tubuhku sebagai wadah, aku bisa menahan kekuatan roh yang bernaung di dalam diriku. Ini mungkin terjadi karena konstitusi alamiku, juga karena kesepakatan yang aku buat secara sukarela waktu dulu. Tidak perlu menghindar dari topik ini. Kalau aku harus menimbang jiwa orang-orang lain di dunia ini sebagai Matra, maka aku juga harus bisa menimbang jiwaku sendiri dengan cara yang sama.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "Mengenal Cyno: III",
+			"voicelineType": "5003",
+			"description": "Daripada memikirkan \"kenapa\", aku lebih fokus kepada \"apa\" yang sudah dilakukan. Ada berbagai alasan kenapa orang melakukan hal-hal di dunia ini, dan waktu kamu dengar alasan mereka, kamu akan mulai bisa merasakan kalau mereka yang bersalah ternyata ada benarnya, atau mungkin kaum masyarakat yang terlalu keras terhadap mereka. Pihak yang dirugikan akan selalu bisa menarik simpati orang, tapi hakim harus bisa terlepas dari semua perasaan itu. Kami mungkin bisa berempati dengan penderitaan dan motivasi para tertuduh, tapi begitu sebuah kejahatan dilakukan, tidak boleh dibiarkan begitu saja tanpa dihukum.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "Mengenal Cyno: IV",
+			"voicelineType": "5004",
+			"description": "Dalam lautan ketidaktahuan yang suram, secercah cahaya samar-samar kadang-kadang bisa muncul untuk memikat mereka yang tidak mengerti akan kebenarannya. Orang-orang kebanyakan menganggap cahaya itu sebagai mercusuar untuk memandu jalan mereka. Tapi kalau mengikutinya, mereka sudah mengabaikan bahaya yang mengintai di bawah perairan yang gelap gulita. Mengarahkan orang-orang yang sudah lama di dalam kegelapan untuk meninggalkan cahaya memang hal yang kejam, tapi aku harus terus berbuat seperti ini, sampai aku akhirnya bisa mengalahkan musuh yang sedang menunggu di bawah permukaan air.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "Mengenal Cyno: V",
+			"voicelineType": "5005",
+			"description": "Aku sudah ceritakan semua yang menurutku layak diceritakan. Apa lagi yang ingin kamu dengar dariku? Heh, rasa penasaranmu benar-benar luar biasa ... Baiklah, apa pertanyaanmu? Bagi orang yang sudah terbiasa menginterogasi orang lain, perasaan waktu sedang ditanyai pertanyaan itu ... menarik.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "Hobi Cyno",
+			"voicelineType": "6001",
+			"description": "Di waktu luangku, aku suka bermain Genius Invokation TCG dengan orang lain. Bisa mengekspresikan kreativitas dan variasi yang sebanyak itu ke dalam satu set aturan kerja membuatnya lebih dari sekedar permainan, itu adalah bentuk seni.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "Kekhawatiran Cyno",
+			"voicelineType": "6002",
+			"description": "Baru-baru ini, aku melihat novel ringan dari Inazuma yang didasarkan kepada Genius Invokation TCG. Waktu karakter utama menemui kesulitan, entah kenapa mereka menarik kartu yang tidak seharusnya ada. Ini benar-benar mengejutkanku dan meninggalkan teka-teki besar di kepalaku: dengan memanipulasi susunan kartu secara langsung, mereka bisa menciptakan keajaiban yang tidak pernah diperkirakan siapa pun. Masalahnya adalah ... apa itu harus dianggap sebagai pelanggaran peraturan, atau ... ini juga bagian dari peraturan permainan itu sendiri?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "Makanan Favorit",
+			"voicelineType": "6005",
+			"description": "Nasi, daging, dan kacang kering, dicampur dengan yoghurt dan dipanggang bersama ... perpaduan rasanya luar biasa. Kamu bisa merasakan aromanya keluar dengan uap makanan saat kamu memotong bagian luarnya yang renyah. Waktu persiapannya bahkan tidak terlalu lama, benar-benar hidangan favoritku.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "Makanan yang Tidak Disukai",
+			"voicelineType": "6004",
+			"description": "Makanan yang aku bawa waktu berpergian ke padang pasir itu biasanya benar-benar hambar. Begitu kamu sudah muak dengan makanan itu, kamu akan bersyukur bisa makan apa pun yang punya rasa. Kalau aku boleh pilih, sih ... aku tidak akan bilang aku suka makan serangga atau semuanya yang berhubungan dengan serangga, yah ....",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "Menerima Hadiah: I",
+			"voicelineType": "6007",
+			"description": "Rasanya enak sekali. Aku ucapkan terima kasih untukmu.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "Menerima Hadiah: II",
+			"voicelineType": "6008",
+			"description": "Sudah aku terima. Terima kasih.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "Menerima Hadiah: III",
+			"voicelineType": "6009",
+			"description": "Ini untukku? ... Kamu yakin?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "Ulang Tahun",
+			"voicelineType": "7001",
+			"description": "Ehem ... Aku mau ucapkan selamat ulang tahun. Meski aku tidak punya banyak pengalaman merayakan, begitu aku tahu ulang tahunmu sudah mau dekat, aku putuskan untuk buat sedikit persiapan. Pertama, aku sudah siapkan susunan kartu yang sudah kususun selama beberapa hari. Aku rasa pasti cocok dengan gayamu. Aku juga sudah sesuaikan jadwalku agar bisa kosong sementara waktu. Jadi, apa ada tempat yang mau kamu kunjungi? Aku akan senang kalau bisa temani kamu. Ulang tahun memang cuma satu hari, tapi kamu harus pakai kesempatan ini untuk benar-benar menikmatinya. Pastikan saja kita bisa kembali dalam waktu tiga hari.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "Perasaan Tentang Ascension: Permulaan",
+			"voicelineType": "8001",
+			"description": "Aku bisa merasakan kekuatan baru mengalir dalam tubuhku, ini bukti dari perkembanganku.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "Perasaan Tentang Ascension: Persiapan",
+			"voicelineType": "8002",
+			"description": "Aku bersumpah untuk menegakkan peraturan dan menghukum yang jahat.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "Perasaan Tentang Ascension: Klimaks",
+			"voicelineType": "8003",
+			"description": "Perkembangan yang lumayan. Terima kasih banyak!",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "Perasaan Tentang Ascension: Konklusi",
+			"voicelineType": "8004",
+			"description": "Kekuatanku sudah mencapai batasnya, tapi ada banyak sekali hal yang tidak bisa aku capai dalam hidupku dengan kekuatanku sendiri. Akan ada waktu-waktu saat emosi dan peraturan tidak bisa selaras, tapi aku rasa aku akan bisa temukan kunci untuk mencapai keseimbangan yang tepat dalam perjalananku di masa depan.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "Menyerah!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Tidak ada gunanya.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Tidak ada tempat untuk kabur!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "Elemental Skill: IV",
+			"voicelineType": "100004",
+			"description": "Kamu akan dihukum!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "Elemental Skill: V",
+			"voicelineType": "100005",
+			"description": "Bersalah!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "Elemental Skill: VI",
+			"voicelineType": "100006",
+			"description": "Waktunya kamu menebus dosamu!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Melalui diriku, keadilan ditegakkan!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "Penghakiman akan menghampirimu.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "Elemental Burst: III",
+			"voicelineType": "200003",
+			"description": "Dosamu membebani jiwamu.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "Membuka Peti Harta: I",
+			"voicelineType": "300001",
+			"description": "Penemuan yang pantas.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "Membuka Peti Harta: II",
+			"voicelineType": "300002",
+			"description": "Kegigihan kita membuahkan hasil.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "Membuka Peti Harta: III",
+			"voicelineType": "300003",
+			"description": "Kekayaan adalah fondasi peradaban dibangun.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "HP Rendah: I",
+			"voicelineType": "410001",
+			"description": "Lebih kuat dari yang aku perkirakan ....",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "HP Rendah: II",
+			"voicelineType": "410002",
+			"description": "Aku sudah terbiasa.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "HP Rendah: III",
+			"voicelineType": "410003",
+			"description": "Ugh ... sekali lagi!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "HP Rekan Rendah: I",
+			"voicelineType": "400001",
+			"description": "Mundur. Jangan sok kuat.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "HP Rekan Rendah: II",
+			"voicelineType": "400002",
+			"description": "Serahkan kepadaku mulai sekarang.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "Gugur: I",
+			"voicelineType": "500001",
+			"description": "Apa waktuku ... sudah tiba ....",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "Gugur: II",
+			"voicelineType": "500002",
+			"description": "Siklus yang baru dimulai ... dari kematian ....",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "Gugur: III",
+			"voicelineType": "500003",
+			"description": "Penghakimanku ... telah gagal ....",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "Menerima Serangan Ringan: I",
+			"voicelineType": "900001",
+			"description": "Tidak ada gunanya.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "Menerima Serangan Hebat: I",
+			"voicelineType": "910001",
+			"description": "Benar-benar sulit.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "Menerima Serangan Hebat: II",
+			"voicelineType": "910002",
+			"description": "Hebat juga.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "Bergabung ke Party: I",
+			"voicelineType": "600001",
+			"description": "Siap untuk melakukan yang aku bisa.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "Bergabung ke Party: II",
+			"voicelineType": "600002",
+			"description": "Misi kita dimulai",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "Bergabung ke Party: III",
+			"voicelineType": "600003",
+			"description": "Siapa target selanjutnya?",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

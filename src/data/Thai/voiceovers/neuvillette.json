@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "พบกันครั้งแรก...",
+			"voicelineType": "1006",
+			"description": "สวัสดี ฉันคือผู้พิพากษาสูงสุดของ Fontaine เรียกฉันด้วยนามสกุลอย่าง Neuvillette ก็พอ ไม่ได้มีเจตนาจะทำตัวห่างเหินกับคุณหรอก แต่ถ้าสนิทสนมมากไป อาจมีคนกังขาในความยุติธรรมของระบบกฎหมายได้\nถ้ามีอะไรอยากจะร้องขอ... พวกเราก็มานั่งคุยพลางจิบน้ำที่ส่งมาจากหมู่บ้าน Qiaoying กันเถอะ แต่แน่นอนว่าสิ่งที่ร้องขอต้องอยู่ในขอบเขตของกฎหมายนะ...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "แชท - การพิพากษา",
+			"voicelineType": "1101",
+			"description": "นอกจากจะยอมรับในคุณค่าของงานที่ตัวเองทำแล้ว ฉันยังยอมรับในคุณค่าของทุกสิ่งอย่างที่ชาว Fontaine ส่วนใหญ่ทำกันด้วย ไม่ว่าอย่างไร ฉันก็รู้สึกเป็นเกียรติที่ได้ทำหน้าที่ของตัวเองอยู่ดี",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "แชท - ลิ้มรสน้ำ",
+			"voicelineType": "1102",
+			"description": "รสชาติของน้ำเป็นสิ่งที่ค่อนข้างละเอียดอ่อน น้ำจาก Mondstadt ใสบริสุทธิ์ น้ำจาก Liyue ทิ้งทวนรสชาติไว้นาน น้ำจาก Inazuma ให้ความรู้สึกลึกล้ำห่างไกล ส่วนน้ำของ Sumeru แม้จะอุดมสมบูรณ์ แต่ก็ต้องค่อย ๆ ลิ้มรสอย่างละเมียดละไม",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "แชท - เมลูซีน",
+			"voicelineType": "1103",
+			"description": "เมลูซีนเป็นเผ่าพันธุ์สิ่งมีชีวิตที่ Fontaine ภาคภูมิใจ คุณต้องเป็นเพื่อนที่ดีของพวกเธอนะ อย่าทำร้ายพวกเธอเชียว",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "ในเวลาที่ฝนตก...",
+			"voicelineType": "1201",
+			"description": "อ่า ขอโทษที ฝนตกหนักขนาดนี้ คงสร้างความลำบากให้คุณสินะ...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "ฟ้าหลังฝน...",
+			"voicelineType": "1202",
+			"description": "หยุดแล้ว...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "ในเวลาที่ฟ้าผ่า...",
+			"voicelineType": "1203",
+			"description": "ในหมู่มนุษย์อย่างพวกคุณ มีสำนวนที่ว่าฟ้าผ่าในวันฟ้าใสใช่รึเปล่า? สำหรับฉันแล้วก็เป็นความรู้สึกแบบนั้นแหละ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"ช่วงเวลาสุดท้ายก่อนคำพยากรณ์จะถือกำเนิด\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "ในเวลาที่หิมะตก...",
+			"voicelineType": "1204",
+			"description": "หิมะก็เป็นหนึ่งในกระบวนการที่น้ำใช้ทำความสะอาดตัวเองเช่นกัน แต่หลายการกระทำของมนุษย์ ทำให้หิมะไม่สะอาดขนาดนั้นอีกต่อไป อย่ากินล่ะ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "แดดส่องดีจัง...",
+			"voicelineType": "1205",
+			"description": "อากาศแบบนี้เหมาะกับการ... อืม ยืนชมแดดอยู่ริมหน้าต่างในห้องมาก",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "ในเวลาที่อยู่ในทะเลทราย...",
+			"voicelineType": "1206",
+			"description": "นี่คือ... หนึ่งในแผนลอบสังหารของคุณสินะ?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "อรุณสวัสดิ์...",
+			"voicelineType": "1001",
+			"description": "อรุณสวัสดิ์ ขอให้คุณมีความสุขในวันนี้",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "สวัสดีตอนเที่ยง...",
+			"voicelineType": "1002",
+			"description": "สวัสดีตอนเที่ยง คุณคงกำลังตั้งตารอเวลาน้ำชาหรือกาแฟอยู่สินะ ฉันก็เช่นกัน",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "สวัสดีตอนเย็น...",
+			"voicelineType": "1003",
+			"description": "สายัณห์สวัสดิ์ หวังว่าวันนี้คุณคงไม่ได้เจอเรื่องไม่ดีที่คิดไม่ตกนะ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "ราตรีสวัสดิ์...",
+			"voicelineType": "1004",
+			"description": "ราตรีสวัสดิ์ สำหรับฉันแล้ว ผืนน้ำสงบเป็นลางดี เพราะฉะนั้นขอให้คืนนี้ คุณได้นอนหลับโดยไร้ฝันนะ อย่าได้มีริ้วคลื่นจากความฝันใด มากระทบอารมณ์ของคุณเลย",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "เกี่ยวกับตัวของ Neuvillette เอง - การพิพากษา",
+			"voicelineType": "2001",
+			"description": "ฉันไม่ได้เป็นพวกคนคลั่งการพิพากษาอะไร \"การพิพากษา\" ก็เป็นเพียงหน้าที่ของฉัน เป็นสิ่งที่ฉันได้รับมอบหมายก็เท่านั้น",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "เกี่ยวกับตัวของ Neuvillette เอง - มังกรวารีผู้ร่ำไห้",
+			"voicelineType": "2005",
+			"description": "คุณก็เคยได้ยินเพลงพื้นบ้านของ Fontaine นี้ด้วยสินะ? เฮ้อ ใครเป็นคนสอนคุณกัน และใครเป็นคนเผยแพร่มันกันนะ... อืม ไม่มีอะไร ฉันว่ามังกรวารีคงไม่ร้องไห้หรอก เขาคงแค่รู้สึกสะเทือนใจกับรสชาติของน้ำตา และความรู้สึกทั้งมวลที่ไหลมารวมกัน ณ ใจกลางผืนดินก็เท่านั้น",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "เกี่ยวกับตัวของ Neuvillette เอง - ความหมายของการพิพากษา",
+			"voicelineType": "2006",
+			"description": "นี่เป็นเรื่องที่ถูกหยิบยกขึ้นมาพูดกันบ่อยแล้ว ไม่ใช่ว่าฉันแยกตัวเองออกจากสังคมมนุษย์ แต่คุณลองดูสิว่าแนวคิดระหว่าง \"ความยุติธรรม\", \"ความเท่าเทียม\", \"ความเสมอภาค\" และ \"กฎหมาย\" จริง ๆ แล้วไม่สามารถอยู่บนเส้นระดับเดียวกันได้ น้ำมีคุณสมบัติ \"เท่าเทียมดั่งสายน้ำ\" โดยธรรมชาติ Egeria เทพแห่งน้ำองค์ก่อนหวังอยากใช้ความรักเชื่อมโยงสรรพสิ่ง เพื่อทำให้ความเท่าเทียมกลายเป็นจริง ทว่าเทพองค์ปัจจุบันเลือก \"กฎหมาย\" ที่เท่าเทียมแทน แต่สุดท้ายกลับกลายเป็นผลลัพธ์ที่น่าเสียดายจากการบิดเบือนของปัจจัยภายนอก ซึ่งทั้งหมดเพียงเพื่อ \"การพิพากษา\" เท่านั้น แต่นี่ก็เป็นเพราะสาเหตุอื่นเหมือนกัน ไม่ควรจะตำหนิกล่าวโทษ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "เกี่ยวกับเรา - สักขีพยาน",
+			"voicelineType": "2003",
+			"description": "ในเมื่อคุณคือบุคคลจากข้างนอกโลก งั้นก็มาเป็นสักขีพยานให้ฉันในการพิพากษาโลกที่ผิดพลาดนี้เถอะ \"อาณาจักรซึ่งเดิมทีควรปกครองด้วยราชาแห่งสวรรค์ แต่บัดนี้ผู้นั่งบัลลังก์กลับเป็นไก่ป่าไร้น้ำยา ยุคสมัยหลุดออกจากเส้นทางอันควรแล้ว และฉันเกิดมาเพื่อยุติความไม่ถูกต้องนี้\"",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "เกี่ยวกับเรา - โลกมนุษย์",
+			"voicelineType": "2002",
+			"description": "การใช้ชีวิตร่วมกับชาว Fontaine มาเป็นเวลานาน และการได้ร่วมเดินทางไปกับคุณ ทำให้ฉันเปลี่ยนแปลงความคิด บวกกับที่ฉันอภัยโทษให้กับมนุษย์ไปนานแล้ว ดังนั้นฉันสามารถสัญญากับคุณได้ว่า การพิพากษาหลังจากนี้จะไม่ส่งผลอันตรายต่อคนทั่วไป แต่ฉันยังไม่ได้คิดบัญชีกับทรราช และยังมีความแค้นที่กำลังรอการชำระ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "เกี่ยวกับ \"วิชั่น\" - 1",
+			"voicelineType": "3001",
+			"description": "เคยมีคนแนะนำให้ฉันพกลูกแก้วกระจกปลอมติดตัวเอาไว้ แบบนี้จะได้สะดวกต่อการลงมือในยามคับขัน บอกตามตรง ฉันไม่ค่อยพอใจกับข้อเสนอแนะนี้เท่าไหร่ ทั้ง ๆ ที่ใช้พลังของตัวเอง แต่กลับต้องเสแสร้งด้วยการสวมหน้ากาก แต่พอได้ใช้เวลาร่วมกับผู้ถือครองวิชั่นนานเข้า ฉันถึงเข้าใจว่า ความปรารถนาและเจตจำนงของพวกเขา ก็เป็นสิ่งล้ำค่าอย่างหาได้ยากเช่นกัน",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"ช่วงเวลาสุดท้ายก่อนคำพยากรณ์จะถือกำเนิด\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "เกี่ยวกับ \"วิชั่น\" - 2",
+			"voicelineType": "3006",
+			"description": "อะไรนะ คุณบอกว่า ในเหล่าเจ็ดเทพผู้เก่าแก่ที่สุด ก็มีอยู่คนสองคนที่พกลูกแก้วปลอม เที่ยวเดินเหินอยู่ในโลกมนุษย์งั้นเหรอ? ฮึฮึ ขอโทษด้วยที่เสียมารยาท แต่นี่ช่างเป็นเรื่องที่ตลกจริง ๆ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"ช่วงเวลาสุดท้ายก่อนคำพยากรณ์จะถือกำเนิด\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "ต้องการจะแชร์อะไร - กฎหมาย",
+			"voicelineType": "3002",
+			"description": "ใน Fontaine มีกฎหมายประหลาดมากมายอย่างที่ว่า อย่างเช่น \"ไม่อนุญาตให้ปล่อยวัตถุบินได้ในทุกสามวันแรกของเดือน\" \"เปลือกหอยฝาคู่ทุกสายพันธุ์ที่เกยตื้นในช่วงน้ำลง ถือเป็นของเทพแห่งน้ำแต่เพียงผู้เดียว ส่วนหอยสังข์เป็นของประชาชน\" \"ห้ามตั้งชื่อสัตว์เลี้ยงว่า 'Furina'\" \"ห้ามกินซอสมะเขือเทศโดด ๆ ในโรงอาหารหรือร้านอาหาร\" \"สรรพนามที่ใช้เรียกเมลูซีนต้องเท่าเทียมกับมนุษย์ ต้องใช้ 'เธอ' ห้ามใช้ 'มัน' โดยเด็ดขาด\"... ข้อสุดท้ายเป็นกฎหมายที่ฉันบัญญัติขึ้นเอง",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "ต้องการจะแชร์อะไร - วันฝนตก",
+			"voicelineType": "3005",
+			"description": "บ่อยครั้งก็เอาแต่คิดว่า เมื่อไหร่ถึงจะได้เดินอยู่กลางสายฝนสักทีนะ อ่า คุณเข้าใจผิดแล้ว ฉันไม่ได้รู้สึกกดดันหนักจนเกินไปหรอก",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "ข้อมูลที่น่าสนใจ - Vishap",
+			"voicelineType": "3003",
+			"description": "เนื่องด้วยพวกมันเป็นทายาทสายตรงจากทะเลดึกดำบรรพ์ (Fontemer) เช่นกัน เพราะงั้นจึงค่อนข้างสันทัดในเรื่องวิวัฒนาการ ฉันนึกถึงขนบที่หมู่มังกรยึดถือในอดีตได้อย่างหนึ่ง: พวกเราดื่มโลหิตของผู้ล่วงลับในเผ่าเดียวกัน เมื่อการโคจรของดวงจันทร์และดาราส่งผลกระทบต่อคลื่น น้ำในร่างของเผ่าพันธุ์แห่งวารีอย่างพวกเราก็จะเคลื่อนขึ้นตาม จากนั้นพวกเราจะรู้สึกได้ถึงการฟื้นคืนชีวิตของผู้ล่วงลับในเผ่าเรา",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"ช่วงเวลาสุดท้ายก่อนคำพยากรณ์จะถือกำเนิด\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "ข้อมูลที่น่าสนใจ - มนุษย์",
+			"voicelineType": "3004",
+			"description": "จากการสังเกตการณ์ส่วนตัวแล้ว มนุษย์เคยชินกับการตั้งตัวเป็นศัตรูต่อธรรมชาติ และในขณะนั้นก็มักจะมีคนออกมาร้องบอกว่า มนุษย์ก็เป็นส่วนหนึ่งของธรรมชาติเหมือนกัน แต่ในสายตาของฉันที่รู้ความจริงอยู่บ้างนั้น อารยธรรมโลกของมนุษย์กับธรรมชาติของดวงดาวแห่งนี้ ควรจะหาวิถีตรงกลางที่จะอยู่ร่วมกันมากกว่า",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "เกี่ยวกับเทพแห่งหิน...",
+			"voicelineType": "4001",
+			"description": "ฉันจะพิพากษาเทพทั้งปวง ไม่มีสิ่งใดที่จะเปลี่ยนแปลงเรื่องนี้ได้ เทพแห่งทองคำช่วงชิงพลังแห่งหินผาไป แน่นอนว่าเขาอยู่ในรายชื่อของผู้ถูกพิพากษา หากผู้ใดไม่อยากเห็นพวกเราเกิดความขัดแย้งกัน ก็ไม่ต้องกังวลไปหรอก เพราะฉันยังต้องอยู่ที่ Fontaine ไปอีกนาน ไม่แน่ว่าอาจต้องใช้เวลาถึงสี่ร้อยปี อีกอย่าง การตัดสินสุดท้ายก็ใช่ว่าจะต้องหันอาวุธใส่กันเสมอไป",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "เกี่ยวกับเทพแห่งลม...",
+			"voicelineType": "4002",
+			"description": "ต่อให้ฟ้าดินกลับตาลปัตร ก็ไม่อาจหยุดยั้งให้ฉันพิพากษาเทพทรราชทั้งเจ็ดได้ เทพแห่งสายลมและความหวังช่วงชิงพลังแห่งวายุไป ซึ่งเขาก็สมควรที่จะอยู่ในรายชื่อเพื่อรอการพิพากษา คุณบอกว่าเวลาส่วนใหญ่เขาเป็นแค่ขี้เมาติดเหล้า ไม่เป็นอันตรายใด ๆ งั้นเหรอ? แต่ยังไงก็ต้องไปพบกันก่อน",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "เกี่ยวกับเทพแห่งไฟฟ้า...",
+			"voicelineType": "4003",
+			"description": "ฉันในฐานะผู้เหลือรอดซึ่งได้รับพลังแห่งมังกรคืนกลับมาโดยสมบูรณ์ ต่อให้มหาสมุทรจะไหลย้อนขึ้นสู่นภา ก็ต้องปฏิบัติตามคำสัตย์และหน้าที่ของฉัน Narukami ช่วงชิงพลังแห่งอัสนีไป ซึ่งถูกระบุไว้ในรายชื่อผู้ครองอำนาจโดยมิชอบ หืม คุณบอกว่าตอนนี้เขาอาศัยอยู่ในดินแดนแห่งใจที่บริสุทธิ์ ไม่ค่อยปรากฏตัวงั้นเหรอ? งั้นอีกสักสองสามร้อยปีค่อยไปพบเขาละกัน",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "เกี่ยวกับเทพแห่งพฤกษา...",
+			"voicelineType": "4004",
+			"description": "แม้ว่าสักวันหนึ่งจะต้องพิพากษาเขา แต่ฉันก็ยอมรับในความรับผิดชอบของเทพแห่งแมกไม้ บนโลกนี้ไม่มีใครหรือเรื่องใดที่สมบูรณ์แบบหรอก แต่การจดจ่อและความรักก็เป็นเครื่องยืนยันว่าผู้รับผิดชอบกำลังเดินหน้าต่อไป ได้ยินมาว่าเขาได้รับการปฏิบัติที่เย็นชามาเกือบห้าร้อยปี ฉันรู้สึกเศร้าใจอย่างมากต่อเรื่องราวที่เขาประสบพบเจอมา",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "เกี่ยวกับ Wriothesley...",
+			"voicelineType": "4005",
+			"description": "Wriothesley เป็นคนที่เชื่อถือได้มากทีเดียว ฉันเป็นคนยื่นเรื่องขอบรรดาศักดิ์และเกียรติยศให้เขาเอง คุณกำลังคิดว่า ฉันถูกวาทศิลป์กับท่าทีที่มีต่อเบื้องบนของเขาหลอกเข้าสินะ? Inazuma มีประโยคหนึ่งกล่าวไว้ว่า \"สิ่งใดที่ไม่เอ่ยวาจาย่อมเป็นบุปผา\" ไม่ใช่หรือไง",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "เกี่ยวกับ Clorinde...",
+			"voicelineType": "4006",
+			"description": "ด้วยกำลังความสามารถที่โดดเด่น Clorinde จึงกลายมาเป็นตัวแทนประลองที่มีฝีมือแกร่งสุดในปัจจุบัน เธอเป็นผู้สืบทอดในสายงานนักล่าเงา เธอจะเป็นสิ่งรับประกันความยุติธรรมในศาลพิพากษามากยิ่งขึ้น นอกจากนี้ เธอยังดูเป็นมิตรกว่าที่เห็นจากภายนอกด้วย",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "เกี่ยวกับ Lyney และ Lynette...",
+			"voicelineType": "4007",
+			"description": "เป็นการแสดงที่น่าสนใจทีเดียว เห็นด้วยมั้ย? นี่คือโลกมายากลของ Lyney และ Lynette ทุกอย่างต่างเป็นของปลอมที่น่ามหัศจรรย์ แต่ขอแค่คุณเชื่อ ทุกสิ่งก็กลายเป็นจริงได้เช่นกัน",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "เกี่ยวกับ Sigewinne...",
+			"voicelineType": "4008",
+			"description": "ไม่รู้ว่า Sigewinne จะสบายดีมั้ย ถ้าเกิดเธอถูกรังแก ฉันจะเรียก Wriothesley เข้าเมืองมาถามให้รู้เรื่อง นอกจากจะบอบบางแล้ว เธอยังใจดีมากอีกต่างหาก รอบก่อนเธอยังเอาฟิล์มกล่องถ่ายรูปมาฝากฉันอยู่เลย แถมบอกว่าอยากฟังฉันวิจารณ์น้ำของ Natlan ต่อด้วย... อีกนานแค่ไหน กว่าจะถึงวันหยุดครั้งหน้าของเธอนะ?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "เกี่ยวกับ Furina...",
+			"voicelineType": "4009",
+			"description": "จวบจนวันนี้ \"ละคร\" ของเขาก็ได้ปิดฉากลงในที่สุด \"การแสดง\" คือผลผลิตของจินตนาการ แต่ Furina กลับทำหน้าที่ของตนได้สำเร็จด้วยสิ่งนี้... คนขี้ขลาดใช้ความบ้าคลั่งเพื่อให้ตนเองกล้าหาญขึ้น ที่ผ่านมานี้ ลำบากเขาไม่น้อยเลยล่ะ\nถ้ามีโอกาส ฉันควรปรบมือให้กับการแสดงของเขา... อืม ถ้ามีโอกาสน่ะนะ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "เกี่ยวกับ Navia...",
+			"voicelineType": "4010",
+			"description": "แม้การพูดแบบนี้จะผิดต่อเจ้าตัวไปหน่อย แต่ไม่ว่าจะเป็นการทำให้เธอโกรธโดยไม่เจตนา การยอมรับคำขอโทษของเธอ หรือจะเป็นความรู้สึกผิดของฉันในตอนนี้ก็ตาม ทั้งหมดทั้งมวลกลับให้ความรู้สึกห่างเหิน ราวกับว่ากำลังมองดูดวงดาวจากก้นทะเลสาบอย่างไรอย่างนั้น ฉันไม่ได้ตั้งใจจะเป็นแบบนี้ และฉันก็รู้ด้วยว่า คงยากจะหาโอกาสมาไถ่โทษได้ ความรู้สึกไม่เหมือนกับน้ำที่สามารถฟื้นฟู และสงบลงได้อย่างรวดเร็วหรอก",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"ไร้เหตุผลที่ฝนปราย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "อยากรู้เกี่ยวกับ Neuvillette - 1",
+			"voicelineType": "5001",
+			"description": "ฉันมักพยายามหลีกเลี่ยงที่จะคบค้าสมาคมเป็นส่วนตัว หรือร่วมงานกันนอกเหนือจากกระบวนการยุติธรรม แต่คุณเป็นคนที่เชื่อถือได้ และไม่มีส่วนข้องเกี่ยวกับขั้วอำนาจใน Fontaine แต่อย่างใด ฉันจึงยินดีอย่างยิ่งที่ได้ร่วมทางกับคุณ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "อยากรู้เกี่ยวกับ Neuvillette - 2",
+			"voicelineType": "5002",
+			"description": "เรื่องพวกนี้คงพูดกันได้แค่เป็นการส่วนตัว ฉันคงไม่สามารถเอาไปพูดในที่สาธารณะได้ สำหรับฉันแล้ว การที่ของอย่าง Fonta กลายเป็นที่นิยมได้ ช่างเป็นเรื่องที่น่าประหลาดใจจริง ๆ แต่ก็ใช่ว่าจะเข้าใจสาเหตุที่ผู้คนชื่นชอบมันไม่ได้... คุณดูสิ นอกจากจะดื่มน้ำแล้วยังได้เติมระดับน้ำตาลในเลือดด้วย แถมมันยังราคาย่อมเยาอีกต่างหาก",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "อยากรู้เกี่ยวกับ Neuvillette - 3",
+			"voicelineType": "5003",
+			"description": "ช่วงนี้ได้ดูละครเวทีมาเรื่องหนึ่ง หญิงแต่งงานที่เสียชีวิตผู้หนึ่ง ได้ใช้เสน่ห์ของตนและแผนการชั่วร้าย คอยวนเวียนอยู่ในคฤหาสน์ที่เธอไม่ได้อยู่อีกต่อไป ราวกับภูตผีวิญญาณที่ไม่มีทางขับไล่ นักแสดงเล่นได้สมบทบาท เนื้อเรื่องก็เล่าได้งดงาม และมันก็ทำให้ฉันนึกถึงสภาพของสังคมในปัจจุบันด้วย",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "อยากรู้เกี่ยวกับ Neuvillette - 4",
+			"voicelineType": "5004",
+			"description": "ด้วยสาเหตุบางอย่าง จำนวนครั้งที่ฉันออกจาก Fontaine จึงน้อยจนนับได้ด้วยมือเดียว เพราะฉะนั้น แม้ว่าน้ำแร่ที่ฉันลิ้มลองจะมาจากทั่วทุกมุมโลก แต่ก็ถูกส่งมาโดยที่เหล่านั้นหมด ฉันไม่ได้ไปเยี่ยมเยือนด้วยตัวเองแต่อย่างใด ส่วนในด้านรสชาติที่ยากจะรู้สึกได้ในน้ำดื่มหลายแห่งนั้น ฉันย่อมสามารถจำแนกได้โดยธรรมชาติ พูดถึงขนาดนี้แล้ว คุณยังไม่เชื่ออีกเหรอ? ฉันเป็นผู้พิพากษาสูงสุด ไม่โกหกคุณหรอก",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "อยากรู้เกี่ยวกับ Neuvillette - 5",
+			"voicelineType": "5005",
+			"description": "ไม่พูดไม่ได้ ฉันมักจะเจอเรื่องที่ชวนระอาใจอยู่บ่อยครั้ง อย่างเช่น บางครั้งเวลานั่งจะเหยียบโดนชายเสื้อ นั่งทับโดนผม หรือถูกสิ่งประดับพนักเก้าอี้หนีบผมตอนพิงหัว เป็นต้น ฉันแต่งตัวแบบนี้ เพื่อรักษาภาพลักษณ์เกรงขามของผู้พิพากษาสูงสุด แน่นอนว่าก็ต้องอดทนกับความยุ่งยากที่มันนำพามาด้วย โลกใบนี้ก็เป็นไปตามหลักการเช่นนี้... เมื่อยอมรับตัวตนหนึ่ง ก็ต้องอดทน ทำความเข้าใจ และใช้ชีวิตร่วมกับมัน ซึ่งนี่ก็เป็นสิ่งที่ฉันทำมาโดยตลอด",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "งานอดิเรกของ Neuvillette...",
+			"voicelineType": "6001",
+			"description": "การลิ้มรสน้ำเป็นความรู้แขนงหนึ่ง น้ำที่ผ่านการต้มร้อนโดยธาตุไฟ ถือเป็นรสชาติมาตรฐานสุดของโลกธรรมชาติ ส่วนน้ำที่ถูกต้มด้วยถ่านและฟืนจะมีรสชาติของสวนไร่อยู่ด้วย เช่นเดียวกัน น้ำที่ผ่านการแช่ด้วยธาตุน้ำแข็ง จะบริสุทธิ์จืดชืดธรรมดา ทว่าน้ำที่ละลายมาจากก้อนน้ำแข็งใน Snezhnaya จะต่างออกไปโดยสิ้นเชิง",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "เรื่องกลุ้มใจของ Neuvillette...",
+			"voicelineType": "6012",
+			"description": "ถ้าไม่กางร่มในวันฝนตก จะดูเป็นคนแปลก ๆ ใช่มั้ยนะ...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "อาหารที่ชอบ...",
+			"voicelineType": "6003",
+			"description": "สิ่งมีชีวิตไม่กินอาหารก็ยังสามารถมีชีวิตรอดได้อีกหลายวัน แต่หากไม่ดื่มน้ำคงอยู่ได้แค่ไม่กี่วัน อาหารเลิศรสใด ๆ ก็สู้น้ำสะอาดบริสุทธิ์ไม่ได้ เพราะฉะนั้นอาหารที่มีน้ำเป็นส่วนผสมเยอะ ย่อมเป็นของที่ดีรองลงมา",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "อาหารที่เกลียด...",
+			"voicelineType": "6004",
+			"description": "อาหารทอดกับอาหารย่างโดยไร้ซอสนี่ มันกินได้จริงหรือ? ฉันอยากขอวิจารณ์ Charcoal-Baked Ajilenakh Cake ของ Sumeru หน่อย มันไม่ต่างอะไรกับการยัดสารดูดความชื้นใส่ท้องเลยสักนิด",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "ได้รับของขวัญ - 1",
+			"voicelineType": "6007",
+			"description": "อร่อยมาก นอกจากจะมีความชุ่มฉ่ำอย่างเพียงพอ ซึ่งเป็นคุณสมบัติสำคัญสุดในอาหารแล้ว ยังทำออกมาได้อย่างพอดิบพอดีอีกด้วย",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "ได้รับของขวัญ - 2",
+			"voicelineType": "6008",
+			"description": "เป็นการทดลองทำที่ไม่เลว แต่อาหารจานนี้น่าจะเพิ่มความชุ่มฉ่ำให้มากขึ้นหน่อย และกรองน้ำมันออกอีกนิด",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "ได้รับของขวัญ - 3",
+			"voicelineType": "6009",
+			"description": "แห้งไปหน่อย อาหารที่ไม่มีความชุ่มฉ่ำ ก็ลิ้มรสถึงความรู้สึกเชฟไม่ได้หรอกนะ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "วันเกิด...",
+			"voicelineType": "7001",
+			"description": "วันนี้เป็นวันเกิดของคุณสินะ สุขสันต์วันเกิด ไม่รู้ว่าวันนี้ฝนจะตกหรือเปล่า ฉันจะลองคิดหาวิธีนะ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทนำ",
+			"voicelineType": "8001",
+			"description": "เริ่มคุ้นเคยมากขึ้นแล้ว ฉันน่าจะพอให้ความร่วมมือ กับการเคลื่อนไหวของคุณได้แล้ว",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - ชี้แจง",
+			"voicelineType": "8002",
+			"description": "ดูท่าคงต้องแสดงความสามารถที่แท้จริงบ้างแล้ว คิดไม่ถึงเลยว่า คุณจะตกอยู่ในอันตรายได้ง่ายขนาดนั้น",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - มุมมองอื่น ๆ",
+			"voicelineType": "8003",
+			"description": "ฝีมือที่แท้จริงของคุณแข็งแกร่งขนาดนี้เลยหรือ? ถ้าฉันไม่จริงจังขึ้นบ้าง คงจะตามคุณไม่ทันสินะ",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทสรุป",
+			"voicelineType": "8004",
+			"description": "ฉันได้ชิงส่วนหนึ่งของพลังทั้งเจ็ดกลับคืนมาจากเงื้อมมือของทรราชแล้ว นี่ต่างหากคือร่างที่แท้จริงของฉัน ฉันได้กลายเป็น \"มังกรที่สมบูรณ์\" มีสิทธิ์เพียงพอที่จะพิพากษาทวยเทพทั้งมวล ชะตากรรมของฉันคือ การพิพากษาราชันแห่งผู้ล้มล้างอำนาจที่อยู่บนฟ้าสูง แต่ก่อนจะถึงตอนนั้น ฉันจะให้คุณยืมพลังก่อนแล้วกัน",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "สกิลธาตุ - 1",
+			"voicelineType": "100001",
+			"description": "อยู่ในความสงบ!",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "สกิลธาตุ - 2",
+			"voicelineType": "100002",
+			"description": "ก้มหัวลงไปซะ",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "สกิลธาตุ - 3",
+			"voicelineType": "100003",
+			"description": "อย่าส่งเสียงรบกวน",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "ท่าไม้ตาย - 1",
+			"voicelineType": "200001",
+			"description": "คลื่นน้ำเอ๋ย ข้าได้กลับมาแล้ว",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "ท่าไม้ตาย - 2",
+			"voicelineType": "200002",
+			"description": "จงสลายกลายเป็นละอองคลื่นเถอะ",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "ท่าไม้ตาย - 3",
+			"voicelineType": "200003",
+			"description": "สรรพสิ่งที่แสนยโส ข้าขอดูแคลนเจ้า",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "เปิดหีบสมบัติ - 1",
+			"voicelineType": "300001",
+			"description": "ถ้าคุณเป็นคนแรกที่เจอมันยามไร้เจ้าของ งั้นมันย่อมตกเป็นของคุณ อืม ถูกกฎหมาย",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "เปิดหีบสมบัติ - 2",
+			"voicelineType": "300002",
+			"description": "เป็นของดีหรือเปล่า? อย่างน้อยจังหวะตอนตั้งตารอ ก็คงจะเป็นความรู้สึกที่ไม่เลวเลยใช่มั้ย",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "เปิดหีบสมบัติ - 3",
+			"voicelineType": "300003",
+			"description": "ฉันจะมอบของพวกนี้ให้คุณด้วยสัญญาปากเปล่าแล้วกัน",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "ค่าพลังชีวิตต่ำ - 1",
+			"voicelineType": "410001",
+			"description": "ไม่ได้บาดเจ็บสาหัสอะไร ไม่ต้องเป็นห่วง",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "ค่าพลังชีวิตต่ำ - 2",
+			"voicelineType": "410002",
+			"description": "ความเสี่ยงเพิ่มมากขึ้น แต่ฉันไม่เป็นไร",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "ค่าพลังชีวิตต่ำ - 3",
+			"voicelineType": "410003",
+			"description": "ฮึ เหมือนเสื้อผ้าจะได้รับความเสียหายสินะ",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 1",
+			"voicelineType": "400001",
+			"description": "ให้ฉันจัดการเอง",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 2",
+			"voicelineType": "400002",
+			"description": "คุณไปพักก่อนเถอะ",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "หมดสติ - 1",
+			"voicelineType": "500001",
+			"description": "ฉันจะกลับมาเมื่อน้ำขึ้นอีกครา...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "หมดสติ - 2",
+			"voicelineType": "500002",
+			"description": "ฉันมองเห็น... ท้องทะเลแสนอบอุ่นก่อนฉันจะถือกำเนิด...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "หมดสติ - 3",
+			"voicelineType": "500003",
+			"description": "สรรพสิ่ง... เงียบสงัด...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "โดนโจมตีอย่างหนัก - 1",
+			"voicelineType": "910001",
+			"description": "มาจากองศาที่ไม่คาดคิดเลย...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "โดนโจมตีอย่างหนัก - 2",
+			"voicelineType": "910002",
+			"description": "ฉันประมาทเอง",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "เข้าร่วมทีม - 1",
+			"voicelineType": "600001",
+			"description": "ขอบคุณสำหรับคำอนุญาต... อืม ที่ให้ฉันได้ร่วมเดินทางด้วยนะ",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "เข้าร่วมทีม - 2",
+			"voicelineType": "600002",
+			"description": "ด้วยความยินดีเป็นอย่างยิ่ง",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "เข้าร่วมทีม - 3",
+			"voicelineType": "600003",
+			"description": "เดินทางไปด้วยกันเถอะ ไปสถานที่อย่างริมตลิ่งอะไรทำนองนั้น",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

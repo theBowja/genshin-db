@@ -1,0 +1,767 @@
+{
+	"id": 10000080,
+	"name": "Mika",
+	"friendLines": [
+		{
+			"voicelineId": 80000,
+			"title": "Halo",
+			"voicelineType": "1006",
+			"description": "Mika, petugas survei lapangan barisan depan dari Pasukan Gerilya Knights of Favonius melapor! Sungguh sebuah keberuntungan bisa bertarung bersamamu. Kalau kamu perlu sesuatu yang bisa saya bantu, katakan saja, saya pasti akan langsung jalankan. Oh ya, saya juga pasti akan melakukan sebisa saya untuk mengetahui kondisi jalan di depan dan menyediakan laporan yang akurat tentang musuh!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_draw_appear_01"
+		},
+		{
+			"voicelineId": 80001,
+			"title": "Berbincang: Target",
+			"voicelineType": "1101",
+			"description": "Lebih baik kita bersiap untuk bertempur ... Misi selanjutnya bisa datang kapan saja.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_character_idle_01"
+		},
+		{
+			"voicelineId": 80002,
+			"title": "Berbincang: Catatan Situasi",
+			"voicelineType": "1102",
+			"description": "Memastikan posisi kita sekarang, mengukur jarak ke area target ... Baiklah, saya sudah mencatat kondisi medannya.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_character_idle_02"
+		},
+		{
+			"voicelineId": 80003,
+			"title": "Berbincang: Mencari Jalan",
+			"voicelineType": "1103",
+			"description": "Apa pun kondisi yang kamu mungkin temukan, dengan penjelajahan yang teliti, kamu pasti akan bisa menemukan rute yang aman.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_character_idle_03"
+		},
+		{
+			"voicelineId": 80004,
+			"title": "Ketika Turun Hujan",
+			"voicelineType": "1201",
+			"description": "Ahh, hujannya deras sekali ... Semoga di luar tidak terlalu berlumpur. Kalau tidak, saya harus bantu semua orang bersihkan sepatu bot mereka. Waktu memasak pasti tidak cukup ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 80005,
+			"title": "Ketika Petir Menyambar",
+			"voicelineType": "1202",
+			"description": "Petir bisa menutupi suara gerakan, makanya petir itu teman baik kita.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_thunder_01"
+		},
+		{
+			"voicelineId": 80006,
+			"title": "Ketika Turun Salju",
+			"voicelineType": "1203",
+			"description": "Salju yang baru turun mungkin indah, tapi dia bisa menutupi medan, jadinya merepotkan.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_snowy_01"
+		},
+		{
+			"voicelineId": 80007,
+			"title": "Ketika Matahari Bersinar",
+			"voicelineType": "1204",
+			"description": "Mataharinya sudah keluar, dan jarak pandangnya cukup ... Kondisi yang cocok untuk observasi. Ideal sekali!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_sunny_01"
+		},
+		{
+			"voicelineId": 80008,
+			"title": "Ketika Angin Berembus",
+			"voicelineType": "1205",
+			"description": "Eh? Apa mungkin angin ini tanda dari Archon Anemo? Atau mungkin cuma akibat dari efek medan di atmosfer ...?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_weather_gale_01"
+		},
+		{
+			"voicelineId": 80009,
+			"title": "Selamat Pagi",
+			"voicelineType": "1001",
+			"description": "Oh! Selamat pagi! Saya sudah siapkan sarapan yang biasa kita makan di tim ekspedisi. Kalau tidak keberatan, mungkin kamu bisa ceritakan kepada saya sambil makan, rencana pergerakanmu hari ini seperti apa.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 80010,
+			"title": "Selamat Siang",
+			"voicelineType": "1002",
+			"description": "Oh, tolong tunggu sebentar. Makanan kita hampir beres. Jatah lapangan nomor tiga itu makanan favorit Pasukan Gerilya. Saya akan cek area di sekitar lagi, siapa tahu ada tempat yang cocok untuk istirahat sebentar.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 80011,
+			"title": "Selamat Malam",
+			"voicelineType": "1003",
+			"description": "Makan malam sudah siap! Meski cuma jatah lapangan yang sederhana saja, tapi seharusnya sudah mencakup semua nutrisi yang diperlukan. Jadi, silakan makan ... Kalau kamu ada peralatan yang perlu dirawat, boleh berikan kepada saya juga!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 80012,
+			"title": "Selamat Tidur",
+			"voicelineType": "1004",
+			"description": "Sudah mulai malam, saya juga perlu siapkan catatan survei siang hari ini. Ranjang kemahnya sudah disiapkan, kamu tidur saja dulu. Setelah energimu pulih, camilan tengah malam kita juga pasti sudah beres, terus kita bisa gantian jaga.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 80013,
+			"title": "Tentang Mika: Pekerjaan",
+			"voicelineType": "2001",
+			"description": "Hmm? Petugas survei lapangan barisan depan itu apa? Yah, tugas saya itu mengintai ke wilayah yang tidak diketahui, melakukan survei medan, dan identifikasi lokasi kunci. Terkadang, kami juga harus menghadapi penjaga musuh, jadi selain bisa memetakan medan, saya juga harus tetap siap siaga untuk bertempur, menguasai pertolongan pertama, dan memiliki keterampilan bertahan hidup yang kuat ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_idle"
+		},
+		{
+			"voicelineId": 80014,
+			"title": "Tentang Mika: Pekerjaan Sepele",
+			"voicelineType": "2005",
+			"description": "Mendirikan kemah, menyalakan api, memasak makanan, dan memelihara peralatan ... semua ini tugas penting yang harus saya lakukan. Kalau orang lain tidak suka tugas seperti itu, dan jika saya bisa ... um, kurang lebih bisa melakukannya sampai lumayan memuaskan, minimal saya bisa membantu ... Jadi, semua orang bisa lega sedikit dan bahagia sedikit, benar kan?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80015,
+			"title": "Tentang Kita: Rumor",
+			"voicelineType": "2003",
+			"description": "Ah, maaf ... Saya sudah dengar semua kabar tentangmu waktu saya pertama kali balik ke Mondstadt. Orang super kuat sepertimu dan Paimon biasanya pasti punya aturan yang sangat ketat. Karena banyak orang super kuat juga punya emosi yang meledak-ledak, saya takut kalau saya salah bicara, kalian akan jadi marah. Tapi untung saja, kalian berdua baik sekali, jadi tidak ada yang perlu saya khawatirkan.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_close"
+		},
+		{
+			"voicelineId": 80016,
+			"title": "Tentang Kita: Kode Rahasia",
+			"voicelineType": "2002",
+			"description": "Sebagian pengintai barisan depan akan pakai kata \"Octave\" untuk menandakan kalau mereka sudah kehabisan anak panah dan akan kembali ke kemah ... Atau \"Vera\" yang berarti \"kondisinya bagus, kita boleh mulai menyerang\" ... Hei, kenapa kamu tidak bergabung dengan kami untuk ciptakan kata rahasia yang baru saja? Pasti akan membantu sekali, apalagi kalau kita bekerja sama dalam jangka panjang. Yuk, saya siap menampung idemu!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80017,
+			"title": "Tentang Vision",
+			"voicelineType": "3001",
+			"description": "Jujur ya, bahkan saya pun terkejut waktu saya dapat Vision. Benar-benar berguna sekali. Tapi saya tidak boleh terlalu bergantung kepada kekuatannya. Sebagai gantinya, saya lebih pilih untuk menganggapnya sebagai pengaman kalau terjadi apa-apa. Sebagai anggota Knights of Favonius, saya seharusnya lebih mementingkan kerja sama tim, dan mencari cara untuk menghadapi kesulitannya dengan teman-teman secara bersama-sama.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80018,
+			"title": "Berbagi Cerita",
+			"voicelineType": "3002",
+			"description": "Ini ada satu trik survei yang mudah, mungkin akan berguna bagi kalian. Rentangkan lenganmu, angkat ibu jarimu ke arah area target. Sejajarkan garis pandang mata kananmu dan ibu jarimu ke sisi kiri target, dan mata kirimu ke sisi kanan target, gandakan jarak antara kedua sisi menjadi dua kali lipat ... Kamu bisa pakai trik ini untuk memperkirakan ketinggian gunung dan semua yang bisa didaki, atau lebar sungai atau apa pun untuk bisa berenang ke seberang.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_share_01"
+		},
+		{
+			"voicelineId": 80019,
+			"title": "Kisah Menarik",
+			"voicelineType": "3003",
+			"description": "Saya pernah dengar Senior Klee bilang kalau ada jenis tumbuhan yang bisa mengirimkan suara ... Kalau saja kita bisa bawa tumbuhan seperti ini ke medan ... Kita pasti bisa langsung melapor kembali tentang medan di lapangan ... Saya bahkan bisa berada di barisan depan dan mengarahkan tim barisan belakang untuk menyerang target musuh dari jauh dengan anak panah.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_gift_01"
+		},
+		{
+			"voicelineId": 80020,
+			"title": "Tentang Kaeya",
+			"voicelineType": "4001",
+			"description": "Sebelum bergabung ke dalam Knights of Favonius, saya dites beberapa kali. Kapten Kaeya yang utamanya bertanggung jawab untuk semua tes yang dilakukan. Dia benar-benar membantu sekali dan memberikan banyak masukan untuk saya. Tapi kadang-kadang, saya juga tidak mengerti dia sedang bicara apa ... Saya khawatir sekali kalau saya tidak bisa mengikuti temponya dan membuatnya kecewa ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80021,
+			"title": "Tentang Varka: Pengajaran",
+			"voicelineType": "4002",
+			"description": "Grand Master Varka itu bukan cuma pemimpin kuat yang patut dihormati, tapi juga instruktur bertarung pribadi saya. Dia sudah ajari saya untuk berpikir secara cepat dan tepat, dan tidak terlibat dalam pertempuran jarak dekat dengan musuh karena tubuh saya yang kecil dan kurangnya stamina saya. Saya mengikuti sarannya dan belajar untuk bertempur dengan tombak dan busur. Harus diakui, gaya bertarung seperti ini memang lebih cocok untuk saya.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80022,
+			"title": "Tentang Varka: Sang Kapten",
+			"voicelineType": "4003",
+			"description": "Grand Master juga bilang kalau saya harus menetapkan tujuan yang tinggi untuk diri saya sendiri dan berusaha untuk mencapainya. Saya selalu seperti itu sebelum saya bergabung dengan ekspedisi, lalu kemudian saya menyadari kalau segala sesuatu bisa menjadi serius sekali ... Suatu hari, saya bertemu dengan Fatui Harbinger yang dikenal dengan The Captain. Saya bahkan tidak bisa memikirkan bagaimana caranya saya bisa bertempur dengan musuh seperti dia. Orang sekuat dia memang benar-benar ada di level yang berbeda. Saya merasa perbedaannya terlalu jauh ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_varka_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80023,
+			"title": "Tentang Jean",
+			"voicelineType": "4004",
+			"description": "Wakil ... Maksud saya Acting Grand Master itu pemimpin yang kuat dan pengertian, dia selalu bisa membuat saya merasa aman. Dia selalu melindungi kita semua. Entah itu mengatur pekerjaan, memberikan pertolongan pertama, atau memasak makanan enak ... Banyak sekali yang bisa saya pelajari darinya.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80024,
+			"title": "Tentang Amber",
+			"voicelineType": "4005",
+			"description": "Oh? Amber sang Outrider? Dia itu pelopor paling andal, dan punya kemampuan mengintai yang luar biasa. Peran petugas survei lapangan barisan depan dan Outrider itu kan hampir sama. Dua posisi ini beroperasi di depan pasukan utama. Amber punya banyak pengalaman, dan saya juga belajar banyak kemampuan bertahan hidup darinya, serta cara memelihara busur dan anak panah saya dengan lebih baik.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80025,
+			"title": "Tentang Eula: Tugas",
+			"voicelineType": "4006",
+			"description": "Kapten Eula itu petarung kuat dengan gaya bertarungnya yang unik. Dia selalu menjaga saya. Waktu saya baru bergabung, dia memberikan berbagai macam tugas kepada saya, lebih banyak daripada anggota lainnya, jadi kemampuan saya untuk beradaptasi meningkat pesat. Begitu saya sudah terbiasa dengan cara dia menunjukkan dirinya, saya bisa bekerja sama dengan dia kok!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80026,
+			"title": "Tentang Eula: Gaya Keseharian",
+			"voicelineType": "4007",
+			"description": "Sebenarnya, saya benar-benar kagum dengan Kapten Eula. Dia itu ramah, bersikap bebas, dan punya mental yang sangat kuat. Kalau ada orang yang selalu melihat saya dengan tatapan aneh dan membicarakan saya di belakangnya, seperti yang orang-orang lakukan kepada dia ... Saya rasa saya tidak berani keluar deh ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_eula_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80027,
+			"title": "Tentang Lisa",
+			"voicelineType": "4008",
+			"description": "Pustakawan Lisa kami selalu menawarkan bantuan waktu saya pertama kali belajar untuk menggambar peta. Dia bahkan mencarikan banyak buku berguna supaya saya bisa belajar. *huff* Kalau saja saya bisa sepintar dirinya ... Soalnya, tidak rugi kan kalau tahu banyak. Siapa tahu suatu hari nanti akan terpakai ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80028,
+			"title": "Tentang Klee",
+			"voicelineType": "4009",
+			"description": "Oh? Senior Klee? Dia itu super semangat, dan saya juga dengar ... Dia itu kuatnya sebanding dengan Grand Master ya ... Dia pernah mengundang saya untuk bertualang dengannya bersama, dan saat kami bersama, waktu terasa begitu menyenangkan! Meski dia kadang-kadang suka bereksperimen dengan senjata yang berbahaya, yang berarti saya harus merevisi banyak peta ... Tapi saya tetap merasa semua itu pantas.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80029,
+			"title": "Tentang Venti",
+			"voicelineType": "4010",
+			"description": "Saya suka penyair itu. Dia itu berbakat sekali, dan melodinya selalu membuat saya merasa saya sedang ada di rumah saya. Kalau saya boleh pilih satu lagu yang bisa mewakili Mondstadt, saya pasti akan pilih salah satu dari lagunya. Sayang sekali, saya jarang di kota, kalau tidak, saya pasti bisa kasih dia hadiah setiap hari ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80030,
+			"title": "Tentang Albedo",
+			"voicelineType": "4011",
+			"description": "Kapten Alkemis itu baik sekali terhadap saya. Dia bantu saya membuat semua peralatan survei yang akan dipakai di lapangan. Saya bahkan punya pena yang dia berikan, penanya bisa berfungsi meski saya sedang bergantung terbalik di atas pohon. Tapi sepertinya membuat gambar seni sedikit berbeda daripada menggambar peta deh. Saya pernah coba untuk menggambar area target sebagai informasi tambahan. Tapi saya dengar, Kapten Albedo jadi terdiam lama sekali setelah dia melihat gambar itu ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80031,
+			"title": "Mengenal Mika: I",
+			"voicelineType": "5001",
+			"description": "Hmm? Kamu mau tahu lebih banyak tentang saya? Yah, saya itu cuma orang biasa saja. Jadi saya tidak punya cerita menarik ... Mungkin yang bisa saya ceritakan itu ya pengalaman saya saja. Mau dengar?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_01"
+		},
+		{
+			"voicelineId": 80032,
+			"title": "Mengenal Mika: II",
+			"voicelineType": "5002",
+			"description": "Dari kecil, saya itu sudah ingin menjadi pembuat peta dan memetakan setiap lokasi di Teyvat. Belakangan saya baru tahu kalau ada posisi seperti itu di Knights of Favonius. Berkat dukungan dari ayah dan kakak, saya bisa melewati proses seleksinya dan menjadi petugas survei lapangan barisan depan. Pekerjaan ini benar-benar pekerjaan impian, saya benar-benar puas.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80033,
+			"title": "Mengenal Mika: III",
+			"voicelineType": "5003",
+			"description": "Semua orang di Knights of Favonius itu kuat sekali. Saya rasa pasti ada yang bisa saya pelajari dari setiap anggota. Setelah mendapatkan kemampuan baru dari semua orang, saya juga harus berusaha untuk melakukan sesuatu sebagai balasannya. Jika mereka butuh bantuan, saya pasti akan berusaha sekuat mungkin untuk mewujudkannya.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80034,
+			"title": "Mengenal Mika: IV",
+			"voicelineType": "5004",
+			"description": "Tapi sepertinya ... Setelah saya mengikuti Grand Master dan Kapten Eula dengan pekerjaan mereka beberapa kali, ada anggota yang mulai menganggap saya sebagai perantara pesan mereka yang resmi. Kalau saya salah ngomong, kedua pemimpin ini pasti akan tertimpa masalah, dan semua itu karena kesalahan saya. Jadi, waktu saya berada di sekitar orang-orang yang tidak terlalu kenal saya, saya berusaha untuk berbicara tentang hal-hal yang saya kuasai saja. Tapi orang-orang malah jadi menganggap saya tidak berani. Tapi kalau menurutmu, ini semua cuma salah paham saja atau bukan?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80035,
+			"title": "Mengenal Mika: V",
+			"voicelineType": "5005",
+			"description": "Untung saja, ada hal baik yang terjadi setelah kembali dari ekspedisi. Saya tidak terlalu khawatir lagi. Asalkan saya tidak mengakibatkan masalah bagi orang lain, saya tidak akan terlalu peduli apa yang orang lain pikirkan terhadap saya. Knights of Favonius itu keluarga kedua saya. Saya harus menguasai pekerjaan saya sebagai petugas survei lapangan barisan depan. Kerja keras saya akan bisa buat semua orang menyelesaikan tugasnya dengan lebih lancar dan melewati setiap harinya tanpa khawatir ....",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80036,
+			"title": "Hobi Mika",
+			"voicelineType": "6001",
+			"description": "Oh? Hobi saya ya ... Kegiatan favorit saya sih harusnya berkemah di luar ya, di area yang tidak diketahui. Tenggelam dalam pemandangan yang baru, mendirikan kemah kecil yang nyaman, menyalakan api unggun, dan memasak sedikit makanan. Saya benar-benar senang.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_hobby"
+		},
+		{
+			"voicelineId": 80037,
+			"title": "Kekhawatiran Mika",
+			"voicelineType": "6002",
+			"description": "Kalau mau jujur sih, saya tidak terlalu pintar berkomunikasi dengan orang yang tidak terlalu saya kenal. Mungkin karena saya tidak pintar berbicara. Apa kamu bisa ajarkan sedikit caranya?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_dialog_annoyed"
+		},
+		{
+			"voicelineId": 80038,
+			"title": "Makanan Favorit",
+			"voicelineType": "6005",
+			"description": "Grand Master bilang anak muda seperti saya perlu makan lebih banyak daging, jadi kekuatan dan stamina fisik saya bisa lebih kuat lagi. Meski kemungkinannya kecil kalau saya bisa jadi lebih berotot ... Saya suka makanan berdaging kok. Teman-teman lain di Pasukan Gerilya juga suka rasa ini.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 80039,
+			"title": "Makanan yang Tidak Disukai",
+			"voicelineType": "6004",
+			"description": "Saya tidak tahan rasa anggur, berbeda dengan kakak saya. Cuma perlu satu teguk saja, saya pasti sudah mabuk pingsan. Dan lainnya harus repot-repot untuk mengurus saya. Bahkan aroma botol minuman yang baru dibuka saja sudah cukup untuk membuat saya pusing.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_foodDislike"
+		},
+		{
+			"voicelineId": 80040,
+			"title": "Menerima Hadiah: I",
+			"voicelineType": "6007",
+			"description": "Terima kasih banyak ya, makanan ini terlalu berharga. Rasanya sayang sekali kalau cuma dimakan! Apa lebih baik disimpan atau dipajang, atau lainnya?",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_spice_pref_01"
+		},
+		{
+			"voicelineId": 80041,
+			"title": "Menerima Hadiah: II",
+			"voicelineType": "6008",
+			"description": "Baik rasa maupun porsinya benar-benar dahsyat. Kamu benar-benar membuatkan yang terbaik untuk saya.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_spice_normal_01"
+		},
+		{
+			"voicelineId": 80042,
+			"title": "Menerima Hadiah: III",
+			"voicelineType": "6009",
+			"description": "Ugh ... karena kamu sudah repot-repot untuk buatkan saya semua ini, saya berjanji akan habiskan semuanya.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_spice_dislike_01"
+		},
+		{
+			"voicelineId": 80043,
+			"title": "Ulang Tahun",
+			"voicelineType": "7001",
+			"description": "Oh, saya harus ngapain ya pada waktu-waktu seperti ini? Hmm ... hari ini kan hari spesialmu, jadi kita harus rayakan dengan meriah! Saya sudah siapkan \"Tur di Tempat Paling Indah di Mondstadt\". Di dalamnya ada banyak informasi yang tidak banyak diketahui orang lain. Saya berdoa semoga kamu bahagia setiap hari sampai tahun depan di hari yang sama!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 80044,
+			"title": "Perasaan Tentang Ascension: Permulaan",
+			"voicelineType": "8001",
+			"description": "Meski saya masih jauh darimu, tapi setidaknya saya merasa lebih percaya diri sekarang. Setidaknya, saya tidak akan repotkan kamu lagi.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80045,
+			"title": "Perasaan Tentang Ascension: Persiapan",
+			"voicelineType": "8002",
+			"description": "Semoga saya akan bisa menyediakan informasi yang lebih berguna, dan bisa membantumu meringankan bebanmu.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80046,
+			"title": "Perasaan Tentang Ascension: Klimaks",
+			"voicelineType": "8003",
+			"description": "Mohon izinkan saya untuk terus bertualang di sisimu, dan melakukan survei lapangan di sekitarmu!",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 80047,
+			"title": "Perasaan Tentang Ascension: Konklusi",
+			"voicelineType": "8004",
+			"description": "Terima kasih sekali! Dengan ini, saya akan lebih dekat ke tujuan saya, semua orang bisa maju dengan lebih aman dan melewati medan sulit tanpa harus takut letih atau bahaya tersembunyi.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 80048,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "Menyediakan tembakan bantuan.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_01"
+		},
+		{
+			"voicelineId": 80049,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Tembakan percobaan.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_02"
+		},
+		{
+			"voicelineId": 80050,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Peringatan terakhir.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_03"
+		},
+		{
+			"voicelineId": 80051,
+			"title": "Elemental Skill: IV",
+			"voicelineType": "100004",
+			"description": "Serangan presisi!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_04"
+		},
+		{
+			"voicelineId": 80052,
+			"title": "Elemental Skill: V",
+			"voicelineType": "100005",
+			"description": "Kamu sudah kuberikan kesempatan!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_05"
+		},
+		{
+			"voicelineId": 80053,
+			"title": "Elemental Skill: VI",
+			"voicelineType": "100006",
+			"description": "Membasmi seluruh ancaman!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill1_06"
+		},
+		{
+			"voicelineId": 80054,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Ayo kita bergerak, tim!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill3_01"
+		},
+		{
+			"voicelineId": 80055,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "Serahkan yang terluka kepada saya!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill3_02"
+		},
+		{
+			"voicelineId": 80056,
+			"title": "Elemental Burst: III",
+			"voicelineType": "200003",
+			"description": "Sekarang kesempatan kita!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_skill3_03"
+		},
+		{
+			"voicelineId": 80057,
+			"title": "Membuka Wind Glider: I",
+			"voicelineType": "800001",
+			"description": "Saya akan menjadi pengawas dari atas ....",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 80058,
+			"title": "Membuka Peti Harta: I",
+			"voicelineType": "300001",
+			"description": "Mengintai di depan sangat menguntungkan!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_chest_open_01"
+		},
+		{
+			"voicelineId": 80059,
+			"title": "Membuka Peti Harta: II",
+			"voicelineType": "300002",
+			"description": "Ada apa di sini?",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_chest_open_02"
+		},
+		{
+			"voicelineId": 80060,
+			"title": "Membuka Peti Harta: III",
+			"voicelineType": "300003",
+			"description": "Harta karun ketemu! Kerja bagus, semuanya!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_chest_open_03"
+		},
+		{
+			"voicelineId": 80061,
+			"title": "HP Rendah: I",
+			"voicelineType": "410001",
+			"description": "Ini ... sedikit sulit ....",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_01"
+		},
+		{
+			"voicelineId": 80062,
+			"title": "HP Rendah: II",
+			"voicelineType": "410002",
+			"description": "Haruskah kita mempertimbangkan ulang taktik kita?",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_02"
+		},
+		{
+			"voicelineId": 80063,
+			"title": "HP Rendah: III",
+			"voicelineType": "410003",
+			"description": "Musuhnya ... lumayan kuat.",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_03"
+		},
+		{
+			"voicelineId": 80064,
+			"title": "HP Rekan Rendah: I",
+			"voicelineType": "400001",
+			"description": "Mundur! Saya akan melindungimu!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 80065,
+			"title": "HP Rekan Rendah: II",
+			"voicelineType": "400002",
+			"description": "Kamu perlu tim medis ....",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 80066,
+			"title": "Gugur: I",
+			"voicelineType": "500001",
+			"description": "Tahu begitu ... saya tadi memutar jalan ....",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_die_01"
+		},
+		{
+			"voicelineId": 80067,
+			"title": "Gugur: II",
+			"voicelineType": "500002",
+			"description": "Maafkan saya ... semuanya ....",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_die_02"
+		},
+		{
+			"voicelineId": 80068,
+			"title": "Gugur: III",
+			"voicelineType": "500003",
+			"description": "Gawat ... saya mengacaukannya ....",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_life_die_03"
+		},
+		{
+			"voicelineId": 80069,
+			"title": "Menerima Serangan Ringan: I",
+			"voicelineType": "900001",
+			"description": "Bertahanlah!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 80070,
+			"title": "Menerima Serangan Ringan: II",
+			"voicelineType": "900002",
+			"description": "Saya tidak masalah!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 80071,
+			"title": "Menerima Serangan Hebat: I",
+			"voicelineType": "910001",
+			"description": "Saya tidak apa-apa ... Serius!",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 80072,
+			"title": "Menerima Serangan Hebat: II",
+			"voicelineType": "910002",
+			"description": "Tetap tenang ....",
+			"voicefile": "VO_gameplay/VO_mika/vo_mika_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 80073,
+			"title": "Bergabung ke Party: I",
+			"voicelineType": "600001",
+			"description": "Saya akan cek ulang semua peralatan kita ... Baiklah, semuanya sudah beres.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teamJoin_01"
+		},
+		{
+			"voicelineId": 80074,
+			"title": "Bergabung ke Party: II",
+			"voicelineType": "600002",
+			"description": "Tombak dan busur saya sudah dipersiapkan.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teamJoin_02"
+		},
+		{
+			"voicelineId": 80075,
+			"title": "Bergabung ke Party: III",
+			"voicelineType": "600003",
+			"description": "Sa-Saya akan mengintai di barisan depan.",
+			"voicefile": "VO_friendship/VO_mika/vo_mika_teamJoin_03"
+		}
+	]
+}

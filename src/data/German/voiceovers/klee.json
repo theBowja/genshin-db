@@ -1,0 +1,744 @@
+{
+	"id": 10000029,
+	"name": "Klee",
+	"friendLines": [
+		{
+			"voicelineId": 18009,
+			"title": "Schön, dich kennenzulernen.",
+			"voicelineType": "1000",
+			"description": "Funkenritter Klee vom Ordo Favonius meldet sich zum Dienst! Da war doch noch irgendwas, aber ich erinnere mich nicht ... Mein Gedächtnis lässt mich manchmal im Stich.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_draw_appear"
+		},
+		{
+			"voicelineId": 18010,
+			"title": "Gespräch – Ertrag",
+			"voicelineType": "1101",
+			"description": "Ich war heute furchtbar mutig und habe eine merkwürdig aussehende Echse gefunden! So eine Musterung habe ich noch nie zuvor gesehen. Willst du sie auch mal sehen?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_explore_idle_01"
+		},
+		{
+			"voicelineId": 18011,
+			"title": "Gespräch – Abenteuer",
+			"voicelineType": "1102",
+			"description": "Willst du mit mir Fische platzen lassen? Dafür krieg ich zwar bestimmt einen Tag Hausarrest, aber der Fisch schmeckt so gut, das ist es wert!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_explore_idle_02"
+		},
+		{
+			"voicelineId": 18012,
+			"title": "Gespräch – Regeln",
+			"voicelineType": "1103",
+			"description": "„Hausarrest für Böller in der Stadt“, „Verständigung von Jean bei Verletzungen durch Explosionen“, „Alles aus für Klee, wenn die Stadt brennt“. Alles Auszüge aus Klees Regelwerk zum Überleben im Ritterorden.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_explore_idle_03"
+		},
+		{
+			"voicelineId": 18013,
+			"title": "Wenn es regnet ...",
+			"voicelineType": "1201",
+			"description": "Mihihihi, dieses Mal sind alle meine Bomben wasserfest!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 18014,
+			"title": "Wenn es blitzt ...",
+			"voicelineType": "1202",
+			"description": "Ah! Was ist denn jetzt explodiert?! Oh, war doch nur Gewitter.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_weather_thunder_01"
+		},
+		{
+			"voicelineId": 18015,
+			"title": "Ein Sturm zieht auf.",
+			"voicelineType": "1203",
+			"description": "Lieber Gott des Windes, bitte lass meine Bomben immer in die richtige Richtung explodieren.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_weather_gale_01"
+		},
+		{
+			"voicelineId": 18016,
+			"title": "Guten Morgen.",
+			"voicelineType": "1001",
+			"description": "Guten Morgen! Kann ich heute mit dir raus zum Spielen? Wir gehen zusammen ein Abenteuer bestehen!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 18017,
+			"title": "Guten Tag.",
+			"voicelineType": "1002",
+			"description": "Mittagessenszeit! Na, was sollen wir denn essen? Mal sehen, was der „Reiseführer Teyvat“ so vorzuschlagen hat ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 18018,
+			"title": "Guten Abend.",
+			"voicelineType": "1003",
+			"description": "Guten Abend! Ich bitte dich, kannst du Huffman bitte sagen, dass Klee kein kleines Kind mehr ist und abends sehr wohl noch raus darf? Nimm mich bitte mit!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 18019,
+			"title": "Gute Nacht.",
+			"voicelineType": "1004",
+			"description": "Ich hab zwar gesagt, dass ich nicht wieder nach Hause will, aber jetzt ist es so dunkel und ich finde den Weg nicht. Kannst du mich doch nach Hause bringen? Bitte, bitte ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 18020,
+			"title": "Über Klee – Unfall",
+			"voicelineType": "2001",
+			"description": "Oh nein! Dieses Mal hab ich ein Windmühlenblatt abgebrochen ... Das tut mir wirklich leid!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_idle"
+		},
+		{
+			"voicelineId": 18021,
+			"title": "Über Klee – Wiedergutmachung",
+			"voicelineType": "2002",
+			"description": "Ich bin aber auch gut im Reparieren von Dingen. Ich helfe euch einen Neuen zu basten! Was? Kinderarbeit ist verboten? Och menno ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_idle2"
+		},
+		{
+			"voicelineId": 18022,
+			"title": "Über uns – Ritter",
+			"voicelineType": "2003",
+			"description": "Hihi ... Ehrenritter ... Ich bin aber schon Funkenritter, also bin ich schon länger beim Ordo Favonius? Das heißt, der Unfall gerade, da kannst du mir doch bestimmt aushelfen, oder?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Nach Abschluss von „Für ein Morgen ohne Tränen“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						38406
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18023,
+			"title": "Über uns – Spielpartner",
+			"voicelineType": "2004",
+			"description": "Das geht nicht! Es ist gerade erst neun Uhr. Ich werde heute Abend ganz bestimmt aufbleiben, um mir die Mitternachtsvorstellung vom Zirkus anzusehen! Du bist mein Freund, denk ja nicht daran, mich nach Hause zu schicken, *kicher* ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_close1_b",
+			"voicefile_male": "VO_friendship/VO_klee/vo_klee_dialog_close1_a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18024,
+			"title": "Über das „Göttliche Auge“ ...",
+			"voicelineType": "3001",
+			"description": "Diese Murmel ist ein Geschenk von Barbatos als Anerkennung? Welchen Teil erkennt er denn an? Freiheit? Na, dann nehme ich mir die Freiheit, noch mehr Fische in die Luft zu jagen. Ist das richtig so?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18025,
+			"title": "Willst du mir etwas mitteilen?",
+			"voicelineType": "3002",
+			"description": "Ich weiß ganz genau, an den Wänden des Ritterordens darf nicht gesprengt werden. Zwar wäre das ein Weg raus aus dem Arrest, aber Kaeya hat mir schon gesagt, wenn ich das wirklich tun würde, macht Jean ernst und ich sehe nie wieder das Tageslicht ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_share"
+		},
+		{
+			"voicelineId": 18026,
+			"title": "Interessante Vorkommnisse ...",
+			"voicelineType": "3003",
+			"description": "Jede Echse hat ein anderes Muster und von einigen Echsen kann man die getrockneten abgefallenen Schwänze sogar als Schießpulver verwenden. Das hat Albedo mir beigebracht.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_gift"
+		},
+		{
+			"voicelineId": 18027,
+			"title": "Über Razor ...",
+			"voicelineType": "4001",
+			"description": "Wir sind sehr gute Freunde! Razor gibt sich große Mühe, wenn es gefährlich wird und er mich beschützen muss. Da fühlt man sich einfach sicher! Obwohl ich meistens der Auslöser der Gefahr bin ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_razor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18028,
+			"title": "Über ihre Eltern ...",
+			"voicelineType": "4002",
+			"description": "Meine Mama und mein Papa haben schon ganz Teyvat bereist! Der Reiseführer Teyvat wurde von meiner Mama geschrieben. Daher ist allen Hotels und Restaurants sehr wichtig, was sie über sie denkt.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_parent_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18029,
+			"title": "Über Kaeya ...",
+			"voicelineType": "4003",
+			"description": "Kaeya ist wie mein großer Bruder! Er hat mir sogar das Regelwerk zum Überleben im Ritterorden geschrieben. Wenn ich wieder etwas angestellt habe, hilft er mir oft aus der Patsche.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18030,
+			"title": "Über Amber ...",
+			"voicelineType": "4004",
+			"description": "Amber ist wirklich toll! Und ich liebe ihren Grafen von Hoppel, so plüschig und er kann sogar explodieren, einfach nur toll!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18031,
+			"title": "Über Jean ...",
+			"voicelineType": "4005",
+			"description": "Unsere Jean ist die Beste! Aber ein bisschen unheimlich ist sie auch ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18032,
+			"title": "Über Diluc ...",
+			"voicelineType": "4006",
+			"description": "Ein komischer Erwachsener, immer so grummelig. Warum lacht er denn nicht?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18033,
+			"title": "Über Lisa ...",
+			"voicelineType": "4007",
+			"description": "Lisa, meine liebe Lisa! Jedes Mal, wenn ich sie in ihrer Werkstadt besuchen gehe, gibt sie mir ein paar Leckereien ... Oh? Wo wir gerade davon sprechen, ich wollte sie immer fragen, ob ich in ihrer Werkstatt neues Schießpulver herstellen darf ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18034,
+			"title": "Über Bennett ...",
+			"voicelineType": "4008",
+			"description": "Bennett ist ein Superkumpel! Wenn wir zusammen auf Abenteuerreisen gehen, finde ich immer mehr Schätze als alleine! Er selbst findet aber nie welche. Woran das nur liegt?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18035,
+			"title": "Über Diona ...",
+			"voicelineType": "4009",
+			"description": "Diona ist toll! Sie sagt immer, „Ich werde die Getränkewirtschaft Mondstadts im Alleingang zerstören“, und das hört sich interessant an. Ich kann bei den Explosionen helfen! Auch wenn ich nicht ganz verstehe, „Mondstadts Getränkewirtschaft“, ist das ein Monster?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_diona_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18036,
+			"title": "Über Albedo ...",
+			"voicelineType": "4010",
+			"description": "Albedo und ich, wir haben einen Geheimcode! Wenn ich an seiner Tür ein Schild sehe, worauf steht „Beim Experimentieren!“, dann weiß ich, dass ich später wiederkommen soll. Albedo ist immer so nett zu mir, wenn er nicht arbeiten muss. Deshalb warte ich auch gerne.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18037,
+			"title": "Über Mona ...",
+			"voicelineType": "4011",
+			"description": "Mona ist die Beste! Es macht jedes Mal soviel Spaß, wenn sie mit Albedo und mir spielt. Manchmal erzählt sie von ganz tollen Sachen, die ich nicht verstehe, aber es ist trotzdem alles interessant! Ich mag, wenn sie vorbeikommt!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_mona_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18038,
+			"title": "Über Saccharose ...",
+			"voicelineType": "4012",
+			"description": "Saccharose ist auch toll! Sie hat mich einmal gefragt, ob ich noch etwas wie die Bimm-Bamm-Bombe haben will, das auch laufen und hüpfen kann, hehehe! Natürlich will ich das, ich will Hunderte davon, damit ich jede Ecke von Mondstadt damit zupflastern kann!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18039,
+			"title": "Ich will mehr über Klee erfahren I",
+			"voicelineType": "5001",
+			"description": "Hallo, bist du gekommen, um mit mir zu spielen?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_01"
+		},
+		{
+			"voicelineId": 18040,
+			"title": "Ich will mehr über Klee erfahren II",
+			"voicelineType": "5002",
+			"description": "Genau, das ist meine neuste und verbesserte Bombe! Und, wie findest du sie? Nur ... solltest du sie einmal in der Nähe von Feuer oder so finden, dann ist das nicht meine, ganz sicher nicht meine.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 3 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18041,
+			"title": "Ich will mehr über Klee erfahren III",
+			"voicelineType": "5003",
+			"description": "*seufz* ... Natürlich habe ich bei Hausarrest viel Zeit, mir neue Formeln auszudenken ... Aber erst gar keinen Hausarrest zu haben, wäre noch besser ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18042,
+			"title": "Ich will mehr über Klee erfahren IV",
+			"voicelineType": "5004",
+			"description": "Dies ist Dodoco, meine älteste Freundin. Du musst dir den Namen gut merken, du darfst sie nicht mehr „Puppe an Klees Rucksack“ nennen.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 5 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18043,
+			"title": "Ich will mehr über Klee erfahren V",
+			"voicelineType": "5005",
+			"description": "Danke, dass du mir immer hilfst, wenn ich in Schwierigkeiten bin! Das ist ein Grillspieß, auch genannt „Klees Grillfisch“, um dir zu danken! Der Fisch muss eigentlich nicht mehr gegrillt werden, er ist nach der Explosion im Teich sofort gar. Sag das aber keinem, das ist ein Geheimnis.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18044,
+			"title": "Klees Hobbys ...",
+			"voicelineType": "6001",
+			"description": "Ich liebte alles, was fluffig ist. So wie Dodoco, Löwenzahn und Razors Haare.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_hobby"
+		},
+		{
+			"voicelineId": 18045,
+			"title": "Klees Sorgen ...",
+			"voicelineType": "6002",
+			"description": "Hach, du bist eine gute Person, aber ich nicht ... Warte, bis ich meinen Hausarrest abgesessen habe. Dann können wir wieder zusammen spielen gehen ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_annoyed"
+		},
+		{
+			"voicelineId": 18046,
+			"title": "Was sie so mag ...",
+			"voicelineType": "6003",
+			"description": "Mondstadts Bärsche schmecken am besten, besonders die vom Mostsee! Meine Mutter findet das auch.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_foodLike"
+		},
+		{
+			"voicelineId": 18047,
+			"title": "Was sie nicht mag ...",
+			"voicelineType": "6004",
+			"description": "Ich hasse Mondstadts Krebse, ich hasse sie! Klee will einfach nur raus zum Spielen und nicht den ganzen Tag rumsitzen und Krebsfleisch aus dem Panzer kratzen.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_foodDislike"
+		},
+		{
+			"voicelineId": 18077,
+			"title": "Geschenk erhalten I",
+			"voicelineType": "6007",
+			"description": "Es riecht so gut! Ooh, ich bin so satt ...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_spice_pref_01"
+		},
+		{
+			"voicelineId": 18078,
+			"title": "Geschenk erhalten II",
+			"voicelineType": "6008",
+			"description": "Ich hatte heute auch ein köstliches Essen, ich war so glücklich! Ich danke dir!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_spice_normal_01"
+		},
+		{
+			"voicelineId": 18079,
+			"title": "Geschenk erhalten III",
+			"voicelineType": "6009",
+			"description": "Es sieht köstlich aus, aber es ist nicht ganz einfach zu essen ... Kannst du mir bitte helfen?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_spice_dislike_01"
+		},
+		{
+			"voicelineId": 18048,
+			"title": "Dein Geburtstag ...",
+			"voicelineType": "7001",
+			"description": "Herzlichen Glückwunsch zum Geburtstag! Am heutigen Tag sollst du viel Freude haben, du bist älter als Klee, dann hast du bestimmt schon oft gefeiert? Klee ist ganz neidisch!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 18049,
+			"title": "Gedanken über den Aufstieg – Beginn",
+			"voicelineType": "8001",
+			"description": "Ok, Neuer Sprengstoff-Recherche abgeschlossen! Nur Jean darf davon nichts erfahren!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 1 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18050,
+			"title": "Gedanken über den Aufstieg – Fortschritt",
+			"voicelineType": "8002",
+			"description": "Und wieder besser geworden! Obwohl, Jean sagt immer: „Fortschritt ist nur ein kleiner Teil vom Ganzen.“",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 2 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18051,
+			"title": "Gedanken über den Aufstieg – Höhepunkt",
+			"voicelineType": "8003",
+			"description": "Danke, dass du mir geholfen hast soviel neues Material zu sammeln! Wenn du einmal etwas über Bomben-Bauen lernen willst, dann sag nur Bescheid!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18052,
+			"title": "Gedanken über den Aufstieg – Ende",
+			"voicelineType": "8004",
+			"description": "Ich erinnere mich noch, vor langer Zeit, als ich das erste Mal eine Explosion gehört habe, dass ich gar keine Angst hatte ... Erst später erfuhr ich, dass die meisten Menschen nicht so sind ... Obwohl, du scheinst auch keine Angst vor meinen Bomben zu haben! Hehe, sehr gut, Klee hat also einen sehr guten neuen Freund gefunden!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 18053,
+			"title": "Elementarfähigkeit I",
+			"voicelineType": "100001",
+			"description": "Bimm-Bamm-Bombe!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill1_01"
+		},
+		{
+			"voicelineId": 18054,
+			"title": "Elementarfähigkeit II",
+			"voicelineType": "100002",
+			"description": "Boing, boing, bumm!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill1_02"
+		},
+		{
+			"voicelineId": 18055,
+			"title": "Elementarfähigkeit III",
+			"voicelineType": "100003",
+			"description": "Schwupp!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill1_03"
+		},
+		{
+			"voicelineId": 18056,
+			"title": "Spezialfähigkeit I",
+			"voicelineType": "200001",
+			"description": "Funkelfunken!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill3_01"
+		},
+		{
+			"voicelineId": 18057,
+			"title": "Spezialfähigkeit II",
+			"voicelineType": "200002",
+			"description": "Feuer frei!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill3_02"
+		},
+		{
+			"voicelineId": 18058,
+			"title": "Spezialfähigkeit III",
+			"voicelineType": "200003",
+			"description": "Ich spreng sie alle in die Luft!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill3_03"
+		},
+		{
+			"voicelineId": 18059,
+			"title": "Rennen – Start I",
+			"voicelineType": "700001",
+			"description": "La la la la ♪",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 18060,
+			"title": "Rennen – Start II",
+			"voicelineType": "700002",
+			"description": "Dabbadida!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 18061,
+			"title": "Truhe öffnen I",
+			"voicelineType": "300001",
+			"description": "Mehr Schatz, mehr Schatz! Hehe ...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_chest_open_01"
+		},
+		{
+			"voicelineId": 18062,
+			"title": "Truhe öffnen II",
+			"voicelineType": "300002",
+			"description": "Juhu, glänzend!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_chest_open_02"
+		},
+		{
+			"voicelineId": 18063,
+			"title": "Truhe öffnen III",
+			"voicelineType": "300003",
+			"description": "Vielleicht gibt es sogar noch mehr unter der Erde ...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_chest_open_03"
+		},
+		{
+			"voicelineId": 18064,
+			"title": "Niedrige LP I",
+			"voicelineType": "410001",
+			"description": "Wie kann jemand nur so etwas tun?",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_01"
+		},
+		{
+			"voicelineId": 18065,
+			"title": "Niedrige LP II",
+			"voicelineType": "410002",
+			"description": "Jeeeean ... sie hacken auf mir herum!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_02"
+		},
+		{
+			"voicelineId": 18066,
+			"title": "Niedrige LP III",
+			"voicelineType": "410003",
+			"description": "Ich fühle mich irgendwie benebelt ...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_03"
+		},
+		{
+			"voicelineId": 18067,
+			"title": "Verbündeter hat niedrige LP I",
+			"voicelineType": "400001",
+			"description": "Ich kann einen großen Knall machen, wenn du willst!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 18068,
+			"title": "Verbündeter hat niedrige LP II",
+			"voicelineType": "400002",
+			"description": "Geht es dir gut?",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 18069,
+			"title": "Ohnmächtig I",
+			"voicelineType": "500001",
+			"description": "Juhu, ich habe es geschafft! Oh warte, nein, habe ich nicht ...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_die_01"
+		},
+		{
+			"voicelineId": 18070,
+			"title": "Ohnmächtig II",
+			"voicelineType": "500002",
+			"description": "Ich möchte jetzt nach Hause gehen ...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_die_02"
+		},
+		{
+			"voicelineId": 18071,
+			"title": "Ohnmächtig III",
+			"voicelineType": "500003",
+			"description": "Es war ein Unfall ...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_die_03"
+		},
+		{
+			"voicelineId": 18072,
+			"title": "Leichten Treffer erlitten I",
+			"voicelineType": "900001",
+			"description": "Das ist nicht gerecht!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 18073,
+			"title": "Schweren Treffer erlitten I",
+			"voicelineType": "910001",
+			"description": "Das tat wirklich weh!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 18074,
+			"title": "Truppenbeitritt I",
+			"voicelineType": "600001",
+			"description": "Klee kann helfen!",
+			"voicefile": "VO_teamJoin/vo_klee_teamJoin_01"
+		},
+		{
+			"voicelineId": 18075,
+			"title": "Truppenbeitritt II",
+			"voicelineType": "600002",
+			"description": "Tada! Klee ist da!",
+			"voicefile": "VO_teamJoin/vo_klee_teamJoin_02"
+		},
+		{
+			"voicelineId": 18076,
+			"title": "Truppenbeitritt III",
+			"voicelineType": "600003",
+			"description": "Juhu! Lass uns ein großes Abenteuer erleben!",
+			"voicefile": "VO_teamJoin/vo_klee_teamJoin_03"
+		}
+	]
+}

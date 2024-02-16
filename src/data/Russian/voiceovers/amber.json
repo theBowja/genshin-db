@@ -1,0 +1,805 @@
+{
+	"id": 10000021,
+	"name": "Amber",
+	"friendLines": [
+		{
+			"voicelineId": 10100,
+			"title": "Привет...",
+			"voicelineType": "1000",
+			"description": "Скаут Эмбер готова к службе! Найдите меня, если вам понадобится помощь!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_draw_appear"
+		},
+		{
+			"voicelineId": 10101,
+			"title": "Поболтаем: Увлечения",
+			"voicelineType": "1101",
+			"description": "Хочется пробежаться.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_01"
+		},
+		{
+			"voicelineId": 10102,
+			"title": "Поболтаем: Волнения",
+			"voicelineType": "1102",
+			"description": "Джинн расстроится, если увидит, что мы валяем дурака.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_02"
+		},
+		{
+			"voicelineId": 10103,
+			"title": "Поболтаем: Открытия",
+			"voicelineType": "1103",
+			"description": "Смотри, что это там? Пойдём проверим!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_03"
+		},
+		{
+			"voicelineId": 10104,
+			"title": "Когда идёт дождь: Тревога",
+			"voicelineType": "1201",
+			"description": "О нет, пошёл дождь... Теперь моя форма вся промокнет...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 10105,
+			"title": "Когда идёт дождь: Напоминание",
+			"voicelineType": "1202",
+			"description": "Снова пошёл дождь... Наша видимость уменьшится, мы должны быть начеку.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_02"
+		},
+		{
+			"voicelineId": 10106,
+			"title": "После дождя...",
+			"voicelineType": "1203",
+			"description": "Ого! Погода такая классная!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 10107,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1204",
+			"description": "Если бы только ветер был немного сильнее...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_sunny_01"
+		},
+		{
+			"voicelineId": 10108,
+			"title": "Когда дует ветер: Удовлетворение",
+			"voicelineType": "1205",
+			"description": "Ветерок такой приятный...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_01"
+		},
+		{
+			"voicelineId": 10109,
+			"title": "Когда дует ветер: Отдых",
+			"voicelineType": "1206",
+			"description": "Мне нравится такая погода. Ах... Так расслабляет!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_02"
+		},
+		{
+			"voicelineId": 10110,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Доброе утро! Хочешь пойти на утреннюю пробежку вместе?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 10111,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Можно пообедать вместе с тобой?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 10112,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Темнеет... Мне зажечь факел?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 10113,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Правильно, отдых очень важен! Встретимся завтра здесь же, пока!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 10114,
+			"title": "Об Эмбер...",
+			"voicelineType": "2001",
+			"description": "Чемпион полётов Мондштадта. Да, это я!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_idle"
+		},
+		{
+			"voicelineId": 10115,
+			"title": "О нас: Соревнования",
+			"voicelineType": "2002",
+			"description": "Запомни, что я не уступлю победу даже тебе!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close1"
+		},
+		{
+			"voicelineId": 10116,
+			"title": "О нас: Полёты",
+			"voicelineType": "2003",
+			"description": "Когда я учу тебя летать, сама чувствую, что могу лететь ещё быстрее... Что? Почему ты смеёшься? Я докажу это! Давай наперегонки, прямо сейчас!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10117,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Мой Глаз Бога - это знак того, что Архонты верят в меня. Да, я должна стать лучшим скаутом!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10118,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "Вид с башен собора просто великолепный, тебе обязательно надо туда подняться!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_share"
+		},
+		{
+			"voicelineId": 10119,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Смотри, это голуби! Эх... Я бы хотела летать вместе с ними.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_gift"
+		},
+		{
+			"voicelineId": 10120,
+			"title": "О Джинн: Помощь",
+			"voicelineType": "4001",
+			"description": "После того как магистр ордена отправился в экспедицию, все дела ордена, большие и маленькие, легли на плечи Джинн. Я так хочу ей помочь...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10121,
+			"title": "О Джинн: Забота",
+			"voicelineType": "4002",
+			"description": "Джинн всё ещё работает? Нам следует пригласить её на кофе... Пойдём!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10122,
+			"title": "О Лизе: Истории",
+			"voicelineType": "4003",
+			"description": "Мы должны заглянуть к Лизе, когда выдастся свободная минутка! Когда мы виделись в последний раз, она рассказывала историю о сокровище на Драконьем хребте, но тогда её отвлекли, и она не смогла закончить. Не могу дождаться услышать конец этой истории!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10123,
+			"title": "О Лизе: Восторг",
+			"voicelineType": "4004",
+			"description": "Если Лиза не спит, то она читает! Не понимаю, как ей это удаётся, я бы не смогла сидеть так долго и не шевелиться.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10124,
+			"title": "О Кэйе: Тревога",
+			"voicelineType": "4005",
+			"description": "У меня странное предчувствие... Ты недавно общал{F#ась}{M#ся} с Кэйей? Он не досаждал тебе?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10125,
+			"title": "О Кэйе: Смутьян",
+			"voicelineType": "4006",
+			"description": "С одуванчиками в саду что-то не так... Я уверена, что Кэйа имеет к этому какое-то отношение!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10126,
+			"title": "О Беннете...",
+			"voicelineType": "4007",
+			"description": "Кто? Беннет? Хм... Кажется, я уже слышала это имя. Ах, точно! Это тот непоседливый парень из Гильдии искателей приключений! Я иногда натыкаюсь на него в своих патрулях. Кажется, он очень любит искать сокровища.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10127,
+			"title": "О Кли...",
+			"voicelineType": "4008",
+			"description": "Кли? Иногда она бывает капризной, но все в Ордо Фавониус её обожают. Но всё же... мне нужно следить за ней, иначе Джинн снова посадит её под замок.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10128,
+			"title": "Об Альбедо...",
+			"voicelineType": "4009",
+			"description": "Всё своё время Альбедо проводит в своей мастерской, копаясь в своём крутом оборудовании. Но при разговоре с ним никогда непонятно, о чём он думает... Кто знает, что творится у него в голове...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10129,
+			"title": "О Ноэлль...",
+			"voicelineType": "4010",
+			"description": "Хочешь спросить о Ноэлль? Она очень-очень сильная. Но всё же она младше нас, поэтому нам нужно заботиться о ней.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10130,
+			"title": "Об Эоле...",
+			"voicelineType": "4011",
+			"description": "Эола - моя лучшая подруга! Как только ты привыкнешь к её шуткам, ты увидишь, что она на самом деле очень милая. Тем не менее из-за её фамилии люди часто относятся к ней предвзято. Как можно заставить людей понять её?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10179,
+			"title": "О Коллеи...",
+			"voicelineType": "4012",
+			"description": "Коллеи мне написала, что её элеазар совсем прошёл... Я так за неё рада! Очень хотелось бы подлететь к ней и крепко-крепко обнять! Ещё она говорит, что очень по всем в Мондштадте соскучилась и, как будет готова, обязательно к нам приедет и всё расскажет... Ах, было бы здорово, если бы она успела к следующему Луди Гарпастуму. Скорее бы её увидеть!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10180,
+			"title": "О Мике...",
+			"voicelineType": "4013",
+			"description": "О, Мика - ветеран отряда Эолы. Поначалу он всё время называл меня «командир» - наверное, потому что у меня неплохие отношения с Эолой. Потом я рассказала ему, что я скаут, но он всё равно обращается ко мне на «вы»... Мне очень неловко. У нас разные обязанности, он специалист по картографии, и в этом мне с ним никогда не сравниться.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10131,
+			"title": "Узнать больше об Эмбер I",
+			"voicelineType": "5001",
+			"description": "А я отличный охотник! Хочешь посмотреть, на что я способна? А хочешь устроить охотничье состязание?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_01"
+		},
+		{
+			"voicelineId": 10132,
+			"title": "Узнать больше об Эмбер II",
+			"voicelineType": "5002",
+			"description": "А теперь я раскрою тебе самый главный секрет чемпиона полётов! Самое главное - это быть храбрым!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10133,
+			"title": "Узнать больше об Эмбер III",
+			"voicelineType": "5003",
+			"description": "У меня не получается решать загадки. Во время Луди Гарпастума я всегда обхожу сцену с загадками стороной... А ты любишь загадки?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10134,
+			"title": "Узнать больше об Эмбер IV",
+			"voicelineType": "5004",
+			"description": "Я присоединилась к рыцарям из-за дедушки, осталась из-за Джинн, а благодаря тебе увидела мир за стенами Мондштадта. Я так счастлива!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10135,
+			"title": "Узнать больше об Эмбер V",
+			"voicelineType": "5005",
+			"description": "Я хочу увидеть другие миры, хочу знать, насколько велика вселенная! Ты же будешь со мной, да? Будешь?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10136,
+			"title": "Хобби Эмбер...",
+			"voicelineType": "6001",
+			"description": "Барон Зайчик, смотрите, какой сегодня безупречный день!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_hobby"
+		},
+		{
+			"voicelineId": 10137,
+			"title": "Беспокойство Эмбер...",
+			"voicelineType": "6002",
+			"description": "А ты знаешь, как печь вкусные лунные пироги?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_annoyed"
+		},
+		{
+			"voicelineId": 10138,
+			"title": "Любимая еда...",
+			"voicelineType": "6003",
+			"description": "Джинн готовит невероятно вкусный кофе! Тебе обязательно стоит его попробовать.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodLike"
+		},
+		{
+			"voicelineId": 10139,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Я могу вытерпеть всё что угодно, но только не холодный сок из волчьих крюков... Фу...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodDislike"
+		},
+		{
+			"voicelineId": 10176,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Ого! Как вкусно, да ты превосходный повар!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_pref_01"
+		},
+		{
+			"voicelineId": 10177,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Хотела бы я готовить так же хорошо...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_normal_01"
+		},
+		{
+			"voicelineId": 10178,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Эм, я просто не привыкла к такому вкусу, прости! Ты здесь совершенно ни при чём!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_dislike_01"
+		},
+		{
+			"voicelineId": 10140,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "С днём рождения тебя! Вот, держи, это мой подарок - Барон Зайчик, особый экземпляр. Я сама его сшила для тебя, а это значит, что он не взорвётся. Не бойся!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 10141,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Да! Быстра как ветер!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10142,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "На такой скорости никто не сможет меня обогнать!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10143,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Небеса над Мондштадтом стали меньше... или это мой взгляд стал видеть дальше?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10144,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Кажется, что с нашей первой встречи я стала намного сильнее. Хи-хи, спасибо тебе большое! Можно, я угощу тебя медовым мясом с морковкой? Ну давай же, пойдём!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 10145,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Взять!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_01"
+		},
+		{
+			"voicelineId": 10146,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Вперёд, Барон Зайчик!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_02"
+		},
+		{
+			"voicelineId": 10147,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "♪М-ммм-ммм-ммм... М-ммм-ммм-ммм...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_03"
+		},
+		{
+			"voicelineId": 10148,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "От моего взгляда не ускользнуть!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_01"
+		},
+		{
+			"voicelineId": 10149,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Град стрел!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_02"
+		},
+		{
+			"voicelineId": 10150,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Вам не сбежать!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_03"
+		},
+		{
+			"voicelineId": 10151,
+			"title": "Начало спринта I",
+			"voicelineType": "700001",
+			"description": "Встретимся там!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 10152,
+			"title": "Начало спринта II",
+			"voicelineType": "700002",
+			"description": "Спорим, ты меня не догонишь!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 10153,
+			"title": "Конец спринта I",
+			"voicelineType": "710001",
+			"description": "Говорю же - победа за мной!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_01"
+		},
+		{
+			"voicelineId": 10154,
+			"title": "Конец спринта II",
+			"voicelineType": "710002",
+			"description": "Так-то лучше!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_02"
+		},
+		{
+			"voicelineId": 10155,
+			"title": "Запуск планера I",
+			"voicelineType": "800001",
+			"description": "Чемпион полётов Мондштадта. Да, это я!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 10156,
+			"title": "Запуск планера II",
+			"voicelineType": "800002",
+			"description": "Я не подведу!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_02"
+		},
+		{
+			"voicelineId": 10159,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Открывать сундук - всё равно что разворачивать подарок!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_01"
+		},
+		{
+			"voicelineId": 10160,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Скаут Эмбер нашла ещё одну цель!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_02"
+		},
+		{
+			"voicelineId": 10161,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Ого, это пригодится!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_03"
+		},
+		{
+			"voicelineId": 10162,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Я никогда не сдамся!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_01"
+		},
+		{
+			"voicelineId": 10163,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Ай! Злюка...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_02"
+		},
+		{
+			"voicelineId": 10164,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "*тяжело дышит* О... ты... заплатишь за это!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_03"
+		},
+		{
+			"voicelineId": 10165,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Осторожно!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 10166,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Эй... Нужна помощь?",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 10167,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Больше нет сил...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_01"
+		},
+		{
+			"voicelineId": 10168,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Надо больше... тренировок...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_02"
+		},
+		{
+			"voicelineId": 10169,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Победа за тобой...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_03"
+		},
+		{
+			"voicelineId": 10170,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900001",
+			"description": "Эй!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 10171,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Эй, не так сильно!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 10172,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Это жульничество!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 10173,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Предоставь это мне!",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_01"
+		},
+		{
+			"voicelineId": 10174,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Приготовились!",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_02"
+		},
+		{
+			"voicelineId": 10175,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Скаут Эмбер, докладываю!",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_03"
+		}
+	]
+}

@@ -1,0 +1,729 @@
+{
+	"id": 10000086,
+	"name": "Wriothesley",
+	"friendLines": [
+		{
+			"voicelineId": 86000,
+			"title": "初次見面…",
+			"voicelineType": "1006",
+			"description": "{F#妳}{M#你}好，請盡量簡潔地說明{F#妳}{M#你}的來意。嗯？不是公事？那我反而更緊張了。\n坐下詳談吧。順帶一提，{F#妳}{M#你}可以稱呼我「公爵」，他們都是這樣叫的，我也聽習慣了。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_draw_appear_01"
+		},
+		{
+			"voicelineId": 86001,
+			"title": "閒聊·貼紙",
+			"voicelineType": "1101",
+			"description": "如果看到我背後黏著美露莘畫的貼紙，幫我撕掉吧？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_character_idle_01"
+		},
+		{
+			"voicelineId": 86002,
+			"title": "閒聊·寵物",
+			"voicelineType": "1102",
+			"description": "我曾經考慮過要不要在辦公室裡養寵物，但小貓小狗在不見陽光的地方生活太可憐了，還是算了吧。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_character_idle_02"
+		},
+		{
+			"voicelineId": 86003,
+			"title": "閒聊·忠告",
+			"voicelineType": "1103",
+			"description": "不要違法。還有什麼需要叮囑的嗎？哦對了，不要違法。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_character_idle_03"
+		},
+		{
+			"voicelineId": 86004,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "下雨了？還好。要是在梅洛彼得堡感到頭頂在滴水的話，問題可就大了。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 86005,
+			"title": "打雷的時候…",
+			"voicelineType": "1202",
+			"description": "心中無罪的人，在這種天氣下也能安睡吧。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_weather_thunder_01"
+		},
+		{
+			"voicelineId": 86006,
+			"title": "下雪的時候…",
+			"voicelineType": "1203",
+			"description": "嗯…和水下的冷不太一樣。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_weather_snowy_01"
+		},
+		{
+			"voicelineId": 86007,
+			"title": "陽光很好…",
+			"voicelineType": "1204",
+			"description": "「太陽之下無新事」，但可以找個好地方野餐。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_weather_sunny_01"
+		},
+		{
+			"voicelineId": 86008,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早，晨報上的天氣預測怎麼說？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 86009,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "現在特許餐廳人正多，我叫人送餐到辦公室來吧！",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 86010,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "已經這個時間了？總覺得才剛剛喝過下午茶。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 86011,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "晚安，我要等會再睡，趁夜深人靜正好算幾筆帳。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 86012,
+			"title": "關於萊歐斯利自己·誤解",
+			"voicelineType": "2001",
+			"description": "他們不是把我想得太神秘，就是太全能了。我只有一雙眼睛、一對耳朵，怎麼可能照顧到梅洛彼得堡的每一個角落呢？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_idle"
+		},
+		{
+			"voicelineId": 86013,
+			"title": "關於萊歐斯利自己·小憩",
+			"voicelineType": "2005",
+			"description": "我早已服完刑，現在是自由公民，當然可以來水上閒逛。\n不必擔憂。要是梅洛彼得堡必須要我一直待在下面才能穩定運作，那也太不健康了。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「於怨嗟之地重生」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						14006
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86014,
+			"title": "關於我們·收監",
+			"voicelineType": "2003",
+			"description": "我對很多人的第一印象都是從收監登記表開始的，看來{F#妳}{M#你}也不是例外。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86015,
+			"title": "關於我們·出獄",
+			"voicelineType": "2002",
+			"description": "都說沒了利益牽扯才好做朋友，我們可以從現在開始。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86016,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "我以前跟一些罪人學過藉助化學藥劑使用元素的方法。無論「神之眼」的發放歸哪個部門管，他們似乎不是很介意這點僭越之舉。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86017,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "知道怎麼做比較容易逃脫警備隊的追捕嗎？幫自己取個又長又難記的名字，然後他們在大喊「那個誰，把手舉起來！」時就會卡住。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_share_01"
+		},
+		{
+			"voicelineId": 86018,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "「不勞動者不得食」，這句話很久以前就刷在梅洛彼得堡牆上了。我也不知道是誰安排的，在水下的確很實用。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_pref_gift_01"
+		},
+		{
+			"voicelineId": 86019,
+			"title": "關於那維萊特…",
+			"voicelineType": "4001",
+			"description": "記得有次被那維萊特叫去上面談事情，走到沫芒宮門口正好看到他在路邊淋雨。我幫他撐了傘，他禮貌地道了謝，表情卻不太自然，我大概是打擾到了什麼吧。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_neuvillette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86020,
+			"title": "關於芙寧娜…",
+			"voicelineType": "4002",
+			"description": "可能是因為我認罪得太快，芙寧娜小姐在當年的審判中看起來興致索然，早早就退場了。讓水神大人失望可是大事，只好今後多送些好茶給她了。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「於怨嗟之地重生」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						14006
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86021,
+			"title": "關於希格雯…",
+			"voicelineType": "4003",
+			"description": "希格雯護士長具備一名醫護人員所需的全部美德，並關心著身邊每一位同伴。\n不過她似乎從我身上學到了一些壞習慣，比如時常和她的美露莘朋友們打賭，看誰能偷偷在我的東西上貼更多貼紙。不，我並不覺得困擾。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86022,
+			"title": "關於克洛琳德…",
+			"voicelineType": "4004",
+			"description": "克洛琳德應該是{F#妳}{M#你}能找到最好的決鬥代理人了，實力有目共睹。我從未和她比試過，沒有那個必要。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86023,
+			"title": "關於林尼…",
+			"voicelineType": "4005",
+			"description": "我承認，拔除「壁爐之家」安插在水下的眼線是種挑釁，而他們的回應是只派幾個孩子下來，的確令我有點難辦。是真心覺得他們也可以被犧牲，還是看準了我不會對小孩下狠手呢…唉。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_lyney_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86024,
+			"title": "關於娜維婭…",
+			"voicelineType": "4006",
+			"description": "梅洛彼得堡和刺玫會有一些物資方面的合作，但僅限於此。並不是不信任娜維婭小姐或是質疑她的能力——實際上恰恰相反——只不過，我們之間水下水上的事務互不干涉是我與卡雷斯先生約好的規矩，維持不變就好。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86025,
+			"title": "關於艾梅莉埃…",
+			"voicelineType": "4007",
+			"description": "梅洛彼得堡應該用不到她的服務，有些痕跡就是作為「前車之鑑」被留下來的…氣味也是痕跡的一種，不是嗎？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_emilie_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86026,
+			"title": "關於夏沃蕾…",
+			"voicelineType": "4008",
+			"description": "被特巡隊關照過的犯人大多滿老實的，這位隊長功不可沒。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_teammate_chevreuse_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86027,
+			"title": "想要瞭解萊歐斯利·其一",
+			"voicelineType": "5001",
+			"description": "理論上來講，完全不認識我的人會比較幸福。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_friendship_01"
+		},
+		{
+			"voicelineId": 86028,
+			"title": "想要瞭解萊歐斯利·其二",
+			"voicelineType": "5002",
+			"description": "身上的疤痕？曾有深海巨獸企圖占領梅洛彼得堡，我和牠搏鬥時被抓傷了…當然是假的，不要信。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86029,
+			"title": "想要瞭解萊歐斯利·其三",
+			"voicelineType": "5003",
+			"description": "{F#妳}{M#你}知道嗎？手銬只要型號相近，大部分都能夠用通用的鑰匙打開，只有我這副不一樣。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86030,
+			"title": "想要瞭解萊歐斯利·其四",
+			"voicelineType": "5004",
+			"description": "我的個人能力其實很有限。{F#妳}{M#你}看，我既不會治病，也不會做發明，更不會造大船。我只是知道該去哪裡找人做這些事，而他們恰好願意賣我這個面子而已。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "完成「諭示胎動的終焉之刻」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86031,
+			"title": "想要瞭解萊歐斯利·其五",
+			"voicelineType": "5005",
+			"description": "我現在過著還不錯的生活，但也仍然羨慕一些我得不到的東西——比如安逸快樂的童年，和輕易信賴他人的能力。可能有人認為這很矛盾，或者難以啟齒，我倒是覺得沒什麼不好承認的——何必和自己的本心過不去呢？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「於怨嗟之地重生」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						14006
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86032,
+			"title": "萊歐斯利的愛好…",
+			"voicelineType": "6001",
+			"description": "拳擊？不算是愛好吧，只是生活所需。{F#妳}{M#你}有什麼其他推薦嗎？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_pref_hobby"
+		},
+		{
+			"voicelineId": 86033,
+			"title": "萊歐斯利的煩惱…",
+			"voicelineType": "6012",
+			"description": "我的確有著楓丹人的長相，但沒辦法百分之百肯定——只能跳胎海水確認了？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「於怨嗟之地重生」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						14006
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86034,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "喝咖啡時我習慣加牛奶，茶的話，兩塊糖就好了。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_pref_foodLike"
+		},
+		{
+			"voicelineId": 86035,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "{F#妳}{M#你}喝過護士長做的奶昔嗎？能從中嚐出…「荒蕪」的味道。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_pref_foodDislike"
+		},
+		{
+			"voicelineId": 86036,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "完美的調味，我就不擅長這個。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_spice_pref_01"
+		},
+		{
+			"voicelineId": 86037,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "好吃。下次換我請客。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_spice_normal_01"
+		},
+		{
+			"voicelineId": 86038,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "等我去泡杯茶。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_spice_dislike_01"
+		},
+		{
+			"voicelineId": 86039,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "楓丹的孩子是伴隨著雙親的心願與祝福誕生的，不過我願意相信這世上的每一個人都是如此。和這個比起來，我的祝願就有點微不足道了。\n不，如果{F#妳}{M#你}犯法的話我是沒辦法幫{F#妳}{M#你}減刑的，只能在今天幫{F#妳}{M#你}安排一份特殊的福利餐。所以生日期間還是安分一點，保證我們可以在水上慶祝，好嗎？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 86040,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "能獲得{F#妳}{M#你}的信任，是我的榮幸。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86041,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "這下必須還{F#妳}{M#你}一個人情了。",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86042,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "哈，{F#妳}{M#你}怎麼看起來比我還要得意？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 86043,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "我喜歡力量和希望的信號，會讓我感覺未來一切往好的方向發展。這並非悲觀，只是陳述事實，因為現實本來就不可能一帆風順。但有個好消息，就是當壞事發生時，我們可以站在同一陣線，對吧？",
+			"voicefile": "VO_friendship/VO_wriothesley/vo_wriothesley_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 86044,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "開始吧！",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_skill1_01"
+		},
+		{
+			"voicelineId": 86045,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "別跑啊！",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_skill1_02"
+		},
+		{
+			"voicelineId": 86046,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "請留步。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_skill1_03"
+		},
+		{
+			"voicelineId": 86047,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "一路順風。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_skill3_01"
+		},
+		{
+			"voicelineId": 86048,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "注意防寒。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_skill3_02"
+		},
+		{
+			"voicelineId": 86049,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "無需畏懼，直面罪責。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_skill3_03"
+		},
+		{
+			"voicelineId": 86050,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "沒有鎖嗎？真方便啊！",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_chest_open_01"
+		},
+		{
+			"voicelineId": 86051,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "先收好吧，總能派上用場。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_chest_open_02"
+		},
+		{
+			"voicelineId": 86052,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "無主之物最好充公…所以這裡什麼都沒有，對吧？",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_chest_open_03"
+		},
+		{
+			"voicelineId": 86053,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "不用慌。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_less30_01"
+		},
+		{
+			"voicelineId": 86054,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "不叫增援？也可以。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_less30_02"
+		},
+		{
+			"voicelineId": 86055,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "見機行事。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_less30_03"
+		},
+		{
+			"voicelineId": 86056,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "退後。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 86057,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "去醫務室。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 86058,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "抱歉，沒能守住…",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_die_01"
+		},
+		{
+			"voicelineId": 86059,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "孤注一擲的後果…",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_die_02"
+		},
+		{
+			"voicelineId": 86060,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "我沒有異議。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_life_die_03"
+		},
+		{
+			"voicelineId": 86061,
+			"title": "普通受擊·其一",
+			"voicelineType": "900001",
+			"description": "這麼客氣？",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 86062,
+			"title": "受重擊·其一",
+			"voicelineType": "910002",
+			"description": "…還可以。",
+			"voicefile": "VO_gameplay/VO_wriothesley/vo_wriothesley_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 86063,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "開工。",
+			"voicefile": "VO_teamJoin/vo_wriothesley_teamJoin_01"
+		},
+		{
+			"voicelineId": 86064,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "請我出外勤？走。",
+			"voicefile": "VO_teamJoin/vo_wriothesley_teamJoin_02"
+		},
+		{
+			"voicelineId": 86065,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "我盡力，但不保證贏。",
+			"voicefile": "VO_teamJoin/vo_wriothesley_teamJoin_03"
+		}
+	]
+}

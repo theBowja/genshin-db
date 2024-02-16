@@ -1,0 +1,769 @@
+{
+	"id": 10000003,
+	"name": "Jean",
+	"friendLines": [
+		{
+			"voicelineId": 4100,
+			"title": "初次見面…",
+			"voicelineType": "1000",
+			"description": "「蒲公英騎士」，琴，申請入隊。從今往後，我的榮譽與忠誠將與{F#妳}{M#你}同在！",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_draw_appear"
+		},
+		{
+			"voicelineId": 4101,
+			"title": "閒聊·行動",
+			"voicelineType": "1101",
+			"description": "行動起來吧，我們不該在這裡停留。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_01"
+		},
+		{
+			"voicelineId": 4102,
+			"title": "閒聊·騎士團",
+			"voicelineType": "1102",
+			"description": "騎士團的大家…有沒有認真工作呢？",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_02"
+		},
+		{
+			"voicelineId": 4103,
+			"title": "閒聊·目標",
+			"voicelineType": "1103",
+			"description": "走吧，前往下一個目標！",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_03"
+		},
+		{
+			"voicelineId": 4104,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "下雨也無法阻擋我的腳步。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 4105,
+			"title": "雨過天晴…",
+			"voicelineType": "1202",
+			"description": "這樣的天氣，正適合行動。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 4106,
+			"title": "下雪的時候…",
+			"voicelineType": "1203",
+			"description": "下雪了，要注意戰靴的保養啊。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_snowy_01"
+		},
+		{
+			"voicelineId": 4107,
+			"title": "起風的時候…",
+			"voicelineType": "1204",
+			"description": "舒適的天氣。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_breezy_01"
+		},
+		{
+			"voicelineId": 4108,
+			"title": "颳大風了…",
+			"voicelineType": "1205",
+			"description": "傳說，那天也颳著罕見的大風…",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_gale_01"
+		},
+		{
+			"voicelineId": 4109,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "「一日之計在於晨」，今天也請加油。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 4110,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "好，現在開始處理任務吧。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 4111,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "看樣子，差不多已經對咖啡免疫了。如果有什麼替代品的話…問問麗莎好了。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 4112,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "今日的修煉就到此為止，做得很棒，辛苦{F#妳}{M#你}了。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 4113,
+			"title": "關於琴自己…",
+			"voicelineType": "2001",
+			"description": "今天為了保護民眾，把五座遺蹟守衛斬成了碎片。唉，我還需要繼續磨練自己…這麼珍貴的文化遺產，下次應該嘗試空手制伏…",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_idle"
+		},
+		{
+			"voicelineId": 4114,
+			"title": "關於我們·信條",
+			"voicelineType": "2002",
+			"description": "我會全力幫助{F#妳}{M#你}，當然，如果{F#妳}{M#你}的方向偏離了正義，我也會毫不猶豫地指出。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close1"
+		},
+		{
+			"voicelineId": 4115,
+			"title": "關於我們·誓言",
+			"voicelineType": "2003",
+			"description": "我以此劍起誓，必將勝利獻給{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4116,
+			"title": "關於我們·任務",
+			"voicelineType": "2004",
+			"description": "任務可是不會自動完成的，但適當放鬆一下也好。今天就破例午休幾分鐘吧。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4117,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "「永護蒙德」是古恩希爾德家族的家訓。每當驅動「神之眼」，我都會想起母親、還有蒙德民眾的期盼。為蒙德而戰，為自由而戰——我，在所不辭。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4118,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "我謹代表西風騎士團，向{F#妳}{M#你}為蒙德所做的一切致以謝意。還請{F#妳}{M#你}勞逸結合，量力而…怎麼了，{F#妳}{M#你}突然笑了起來，我說了什麼奇怪的話嗎？",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_share"
+		},
+		{
+			"voicelineId": 4119,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "「蒲公英，蒲公英，跟風一起，到遠方去吧。」…它乘上風，說不定連天空島都能飛到呢。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_gift"
+		},
+		{
+			"voicelineId": 4120,
+			"title": "關於芭芭拉…",
+			"voicelineType": "4001",
+			"description": "芭芭拉非常努力，只不過有時過於勉強自己…嗯？問我為什麼瞭解得這麼清楚？因為西風教會也歸屬騎士團管轄。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4121,
+			"title": "關於麗莎…",
+			"voicelineType": "4002",
+			"description": "麗莎，有她在的話，我會安心很多。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4122,
+			"title": "關於安柏…",
+			"voicelineType": "4003",
+			"description": "安柏這段時間確實有所成長。希望有朝一日，她的事蹟也會被吟遊詩人傳頌。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4123,
+			"title": "關於凱亞…",
+			"voicelineType": "4004",
+			"description": "是嗎…凱亞也向{F#妳}{M#你}提出建言了啊。他是一名優秀的西風騎士，這點毋庸置疑。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4124,
+			"title": "關於可莉…",
+			"voicelineType": "4005",
+			"description": "雖說玩樂是孩子的天性，但可莉中意的玩具卻都是些危險品。讓人難以放心。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4125,
+			"title": "關於阿貝多…",
+			"voicelineType": "4006",
+			"description": "「天才」這種名詞，或許正是為了阿貝多這樣的人準備的吧。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4126,
+			"title": "關於法爾伽…",
+			"voicelineType": "4007",
+			"description": "法爾伽大團長，他是西風騎士團的當代傳奇。等到他凱旋歸來的那一天，就請{F#妳}{M#你}親自和他交談吧。相信{F#妳}{M#你}也能從中受益。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4127,
+			"title": "關於諾艾爾…",
+			"voicelineType": "4008",
+			"description": "諾艾爾，嗯…那個努力想要成為西風騎士的少女。她的內心仍有軟弱之處，現在這個階段，也許還不適合讓她接觸外界的兇險。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4128,
+			"title": "關於蘿莎莉亞…",
+			"voicelineType": "4009",
+			"description": "蘿莎莉亞修女總是把「麻煩」掛在嘴邊，實際卻十分稱職。上次我和她說「如果覺得麻煩也可以找我幫忙」，她卻回答「這樣更麻煩」。嗯…我果然還有很多欠缺啊。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_rosaria_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4129,
+			"title": "關於迪盧克·愧歉",
+			"voicelineType": "4010",
+			"description": "迪盧克前輩對騎士團的指摘事出有因，即使心中愧疚也無法改變既定的結果…我只想通過我的努力，讓他對騎士團有所改觀…嗯，這是我的責任。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4130,
+			"title": "關於迪盧克·敬重",
+			"voicelineType": "4011",
+			"description": "迪盧克…是一位非常可敬的前輩。雖然我們選擇的道路不同，但這份共通的守護蒙德的心意，我能感受得到。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_diluc_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4131,
+			"title": "關於砂糖…",
+			"voicelineType": "4012",
+			"description": "作為煉金術士，砂糖也算天賦異稟。況且她的身邊還有阿貝多指點，未來應該不用擔心。只是…不，沒什麼，沉浸在自己的世界裡，也不算壞事吧。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4132,
+			"title": "關於優菈…",
+			"voicelineType": "4013",
+			"description": "優菈？咳…請不要對她的身世耿耿於懷，西風騎士會公正地評價每個人。優菈明辨是非、才華出眾，偶爾發表危險言論也只是她的性格使然。哪怕她總是說要挑戰我，我也不介意。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4171,
+			"title": "關於米卡…",
+			"voicelineType": "4014",
+			"description": "大團長選中米卡作為遠征隊的主要前偵，不僅是出於任務需要，更是看中了他踏實勤懇的品質。從我個人角度而言，我也很榮幸能與這樣的同伴共事。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4133,
+			"title": "想要瞭解琴·其一",
+			"voicelineType": "5001",
+			"description": "我肩負著西風騎士團的信任，還有蒙德民眾的期待。為此，我不能鬆懈。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_01"
+		},
+		{
+			"voicelineId": 4134,
+			"title": "想要瞭解琴·其二",
+			"voicelineType": "5002",
+			"description": "溫妮莎的「蒲公英騎士」之名傳承至今，曾經有無數偉大的騎士獲授這一榮譽。我不能辱沒這個名字。因此，絕不能鬆懈。要成為守護眾人的堅盾與利劍。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4135,
+			"title": "想要瞭解琴·其三",
+			"voicelineType": "5003",
+			"description": "無論是傳奇故事還是史書，都只記載了偉大騎士的功績。難道，他們一次也不曾迷失過嗎…？\n風啊，請指引我前進的道路。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4136,
+			"title": "想要瞭解琴·其四",
+			"voicelineType": "5004",
+			"description": "全身心投入工作的時候，煩惱和時間會一併被忘卻。「妳是最適合做這種事情的人選。」…那個時候，大團長法爾伽就是這樣對我說的。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4137,
+			"title": "想要瞭解琴·其五",
+			"voicelineType": "5005",
+			"description": "與{F#妳}{M#你}同行時，前進的道路變得無比清晰。就好像，終於有人能依靠，這究竟是…\n不，一定是我還不夠努力。絕對不能鬆懈，不能辜負西風騎士團和蒙德…但是，謝謝{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4138,
+			"title": "琴的愛好…",
+			"voicelineType": "6001",
+			"description": "或許可以和{F#妳}{M#你}聊聊書上那些英雄傳記。嗯，{F#妳}{M#你}聽說過「坎瑞亞英雄王」的故事嗎？",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_hobby"
+		},
+		{
+			"voicelineId": 4139,
+			"title": "琴的煩惱…",
+			"voicelineType": "6002",
+			"description": "假如有什麼神奇的藥劑，喝了就不需要睡覺…嗯，要不明天問問麗莎吧？",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_annoyed"
+		},
+		{
+			"voicelineId": 4140,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "貓尾酒館的披薩…很久沒吃過了。如果能外送到辦公室就好了呢。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_foodLike"
+		},
+		{
+			"voicelineId": 4141,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "優秀的騎士不能挑食。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_foodDislike"
+		},
+		{
+			"voicelineId": 4168,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "不僅味道好，還兼顧了健康。讓{F#妳}{M#你}費心了。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_pref_01"
+		},
+		{
+			"voicelineId": 4169,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "嗯，精神振奮不少。謝謝{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_normal_01"
+		},
+		{
+			"voicelineId": 4170,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "呼…總之，辛苦{F#妳}{M#你}了。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_dislike_01"
+		},
+		{
+			"voicelineId": 4142,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "今天是值得慶祝的日子。要說為何的話，因為這是受風護佑的{F#妳}{M#你}，誕生的日子啊。既然是生日，那就好好休息一下吧。\n咳咳…祝{F#妳}{M#你}生日快樂…\n啊，請原諒我的冒昧。不知這份禮物，是否能令{F#妳}{M#你}滿意呢？",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 4143,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "好，一鼓作氣前往下一個目標。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4144,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "只要風不停歇，我就不會停下腳步。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4145,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "就算暫時獲得了平靜，也不能掉以輕心。身為代理團長，我必須未雨綢繆。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4146,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "我做得還不夠好。自從與{F#妳}{M#你}相遇，一直承蒙{F#妳}{M#你}的關照。這份感激…\n風啊，請容許我的私心。並非作為代理團長，只是作為「琴」，在此起誓——我的劍將與{F#妳}{M#你}同在。",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 4147,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "一決勝負！",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_01"
+		},
+		{
+			"voicelineId": 4148,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "…哈！",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_02"
+		},
+		{
+			"voicelineId": 4149,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "…散！",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_03"
+		},
+		{
+			"voicelineId": 4150,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "風，回應我吧",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_01"
+		},
+		{
+			"voicelineId": 4151,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "以劍為誓！",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_02"
+		},
+		{
+			"voicelineId": 4152,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "風之神，請指引我們",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_03"
+		},
+		{
+			"voicelineId": 4153,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "驚喜的收穫。",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_01"
+		},
+		{
+			"voicelineId": 4154,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "嗯，真是幸運的一天。",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_02"
+		},
+		{
+			"voicelineId": 4155,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "希望大家都能獲得寶藏。",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_03"
+		},
+		{
+			"voicelineId": 4156,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "我，沒事…！",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_01"
+		},
+		{
+			"voicelineId": 4157,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "還有同伴…需要保護…",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_02"
+		},
+		{
+			"voicelineId": 4158,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "還不能放棄…",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_03"
+		},
+		{
+			"voicelineId": 4159,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "你受傷了…請暫時退後吧！",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 4160,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "讓我來吧。",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 4161,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "蒙德…",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_01"
+		},
+		{
+			"voicelineId": 4162,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "個人的力量是有極限的…",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_02"
+		},
+		{
+			"voicelineId": 4163,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "我…還不夠稱職…",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_03"
+		},
+		{
+			"voicelineId": 4164,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "這點傷而已！",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 4165,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "隨時可以出發。",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_01"
+		},
+		{
+			"voicelineId": 4166,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "已做好萬全準備。",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_02"
+		},
+		{
+			"voicelineId": 4167,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "聽憑風引。",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_03"
+		}
+	]
+}

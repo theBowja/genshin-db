@@ -1,0 +1,784 @@
+{
+	"id": 10000083,
+	"name": "Lynette",
+	"friendLines": [
+		{
+			"voicelineId": 83000,
+			"title": "初次見面…",
+			"voicelineType": "1006",
+			"description": "初次見面，我是林尼的魔術助手，工作事宜請諮詢林尼。觀看演出請諮詢售票處。找我？…請長話短說。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_draw_appear_01"
+		},
+		{
+			"voicelineId": 83001,
+			"title": "閒聊·喝茶",
+			"voicelineType": "1101",
+			"description": "茶泡好了，接下來可以休息一會了。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_character_idle_01"
+		},
+		{
+			"voicelineId": 83002,
+			"title": "閒聊·哥哥",
+			"voicelineType": "1102",
+			"description": "林尼好像又在說什麼奇怪的話了…真讓人放心不下。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_character_idle_02"
+		},
+		{
+			"voicelineId": 83003,
+			"title": "閒聊·發呆",
+			"voicelineType": "1103",
+			"description": "進入待機模式…希望不要有人來打擾我。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_character_idle_03"
+		},
+		{
+			"voicelineId": 83004,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "雨天適合發呆…",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 83005,
+			"title": "雨過天晴…",
+			"voicelineType": "1202",
+			"description": "這麼快天晴了，可惜。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 83006,
+			"title": "打雷的時候…",
+			"voicelineType": "1203",
+			"description": "唔…耳朵痛。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_weather_thunder_01"
+		},
+		{
+			"voicelineId": 83007,
+			"title": "下雪的時候…",
+			"voicelineType": "1204",
+			"description": "冷…把{F#妳}{M#你}藏到帽子裡吧。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 83008,
+			"title": "陽光很好…",
+			"voicelineType": "1205",
+			"description": "太陽底下沒有新鮮事…真是這樣嗎？",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 83009,
+			"title": "颳大風了…",
+			"voicelineType": "1206",
+			"description": "風裡傳來的氣息…不，沒什麼。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_weather_gale_01"
+		},
+		{
+			"voicelineId": 83010,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早安…充能尚未完成，即將再次休眠。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 83011,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "我習慣工作之前喝一杯茶，能轉換心情，也能保持清醒。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 83012,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "太陽下山之後，人們內心潛藏的欲望，就會浮上水面…我是說，晚上的演出會很精彩。要給{F#妳}{M#你}留票嗎？",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 83013,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "快睡吧，我還要處理白天沒做完的事情…（還要把弄壞的吸塵器修好。）",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 83014,
+			"title": "關於琳妮特自己·魔術",
+			"voicelineType": "2001",
+			"description": "表演的時候，我通常擔任林尼的助手，因為一直不說話也不做表情，有人以為我是魔術人偶…這種誤解能避免不必要的交際，倒也不錯。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_idle"
+		},
+		{
+			"voicelineId": 83015,
+			"title": "關於琳妮特自己·情報",
+			"voicelineType": "2005",
+			"description": "沉默有助於集中精神，看清有用情報。曾經來看演出的某位貴客，掏出了不屬於他太太的手帕…至於情報的具體用途，嗯…就看那位大人的意思了。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83016,
+			"title": "關於我們·傾聽",
+			"voicelineType": "2003",
+			"description": "我不習慣主動表達，但應該算是個不錯的聽眾。如果有什麼煩惱，就來找我吧。我會為{F#妳}{M#你}保密。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83017,
+			"title": "關於我們·興趣",
+			"voicelineType": "2002",
+			"description": "我曾經以為，金色的「太陽」和夜色的「暗影」，是無法互相理解的，但{F#妳}{M#你}身上有著奇特的複雜性，讓我產生了不必要的好奇心…今後也讓我繼續觀察{F#妳}{M#你}吧。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83018,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "比起武力，我更喜歡用自己的眼睛掌握現狀，找到適合的解決方法。不過，擁有力量就會擁有更多底牌，就能在危急情況下保護重要的人。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83019,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "泡茶是一件看似簡單實則費心的事情，茶葉的品質、茶水的溫度、沖泡的次數，只有所有的變數都控制恰當，才能泡出味道最純正的茶。要來一杯嗎？",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_share_01"
+		},
+		{
+			"voicelineId": 83020,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "小動物們也會表達自己的情緒，如果仔細聆聽的話就會知道牠們現在的狀態。對於小貓來說，「喵~」比起「喵喵喵！」，前者心情比較好，這時候不管怎麼摸牠都不會逃走哦。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_pref_gift_01"
+		},
+		{
+			"voicelineId": 83021,
+			"title": "關於林尼·默契",
+			"voicelineType": "4001",
+			"description": "我和林尼一直都待在一起，我們即使不開口也能明白對方的想法，所以單獨相處時，他會比平時要安靜。{F#妳}{M#你}問我他說的哪些是真話、哪些是假話？其實我都知道，但這是最高保密事項。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_lyney_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83022,
+			"title": "關於林尼·擔憂",
+			"voicelineType": "4002",
+			"description": "林尼平時總是自信不疑，做起事來游刃有餘，或者說，他讓所有人都以為他一直如此，所以在遇到麻煩的時候，他也總會想要一個人完美地解決…如果遇到這種情況，還請多多關照他吧。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_lyney_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83023,
+			"title": "關於菲米尼…",
+			"voicelineType": "4003",
+			"description": "他是個細膩溫柔的孩子，卻有些喜歡妄自菲薄…或許是和之前的經歷有關吧。有時候他給我的感覺就像是林尼的反面…既然兩邊都是我的家人，意見不合時，我會負責彌合分歧。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_freminet_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83024,
+			"title": "關於「父親」…",
+			"voicelineType": "4004",
+			"description": "「父親」表達愛意的方式…不一定能被每個人接受，但正是因為有「父親」在，家…才得以為家。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「彷若無因飄落的輕雨」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83025,
+			"title": "關於那維萊特…",
+			"voicelineType": "4005",
+			"description": "最高審判官總給我一種奇怪的疏離感，明明言行談吐都很謙和…還是說，他也不怎麼喜歡跟人打交道呢？不過他和美露莘們說話的時候，倒是很親切。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_neuvillette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83026,
+			"title": "關於芙寧娜…",
+			"voicelineType": "4006",
+			"description": "芙寧娜大人的行為太難解讀了，也觀察不出什麼有用的情報，總覺得她一舉一動像是在扮演不同的人…不愧是神明，不能用普通人的角度來揣測。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83027,
+			"title": "關於娜維婭…",
+			"voicelineType": "4007",
+			"description": "雖然是「刺玫會」的新會長，作風卻像鄰居家愛管閒事的大姐姐呢。要是「家」裡真有這麼一位姐姐就好了…啊，這話好像不太適合…",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「彷若無因飄落的輕雨」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83028,
+			"title": "關於克洛琳德…",
+			"voicelineType": "4008",
+			"description": "我曾經奉命觀摩過她的決鬥，僅僅是從旁觀察，就能感覺到令人害怕的寒意…真不知道在決鬥場上直面她會是什麼感覺…嗯，希望這輩子都不要知道。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「彷若無因飄落的輕雨」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83029,
+			"title": "關於千織…",
+			"voicelineType": "4009",
+			"description": "我跟林尼的演出服都是請她訂製的。有一次林尼用小刀表演魔術，不小心劃到了袖口，後來被她數落了好久…真可怕。幸好每次去她店裡，都可以躲到林尼背後。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_chiori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83030,
+			"title": "關於夏洛蒂",
+			"voicelineType": "4010",
+			"description": "呃…我後來也被她抓著採訪過幾次。明明被林尼拒絕了那麼多次，真是毅力可嘉…可惜她準備了這麼多問題，我一個也沒回答。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_charlotte_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「彷若無因飄落的輕雨」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83031,
+			"title": "關於艾梅莉埃…",
+			"voicelineType": "4011",
+			"description": "這位香水設計師小姐的作品熱門到需要凌晨排隊搶購。但我對香水的味道太敏感，打出噴嚏來就太失禮了…所以只能繞著走。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_teammate_emilie_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83032,
+			"title": "想要瞭解琳妮特·其一",
+			"voicelineType": "5001",
+			"description": "如果要解釋魔術，就會失去看表演的樂趣，人際關係也是這樣，想瞭解我的話，不妨一點一點收集資訊，拼湊答案吧。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_friendship_01"
+		},
+		{
+			"voicelineId": 83033,
+			"title": "想要瞭解琳妮特·其二",
+			"voicelineType": "5002",
+			"description": "人是很複雜的生物，即便不是有意欺瞞，也會不自覺地隱藏自己的真實一面。雖然我總能注意到一些「多餘」的細節，但除非必要情況，我不會拆穿別人的偽裝。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83034,
+			"title": "想要瞭解琳妮特·其三",
+			"voicelineType": "5003",
+			"description": "魔術曾經是我和林尼的謀生手段，現在更多是一種便利的社會身分，以魔術表演的名義，我們就能融入這座城市，成為家的「眼睛」。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「彷若無因飄落的輕雨」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83035,
+			"title": "想要瞭解琳妮特·其四",
+			"voicelineType": "5004",
+			"description": "在來到新家之前，我和林尼一直到處流浪，經歷了許多艱難和危險的狀況。從那時起，我便習慣隨時注意一切危險的跡象，也逐漸學會解讀他人的所思所想。好在，如今我們擁有了一個安身之所。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "完成「彷若無因飄落的輕雨」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83036,
+			"title": "想要瞭解琳妮特·其五",
+			"voicelineType": "5005",
+			"description": "建立人際關係是一種賭局，無論掌握多少資訊，都難以預測人心的變化。一直以來我習慣待在安全的距離，但如果是{F#妳}{M#你}的話…我願意承擔輸掉的風險。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6級後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83037,
+			"title": "琳妮特的愛好…",
+			"voicelineType": "6001",
+			"description": "人的精神和弓弦一樣，如果一直繃得太緊，就會有斷裂的風險。所以在工作之外，我會做一些能放鬆神經的事情，比如泡茶、餵貓、發呆。平時心情越是平靜，就越能應對將來的危險。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_pref_hobby"
+		},
+		{
+			"voicelineId": 83038,
+			"title": "琳妮特的煩惱…",
+			"voicelineType": "6012",
+			"description": "我不是很習慣操作機械，一旦不注意就會出現意外狀況，有一次在雨天搞壞了烘乾機…還好菲米尼很擅長修理東西。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_dialog_annoyed_01"
+		},
+		{
+			"voicelineId": 83039,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "撬開貝殼，在新鮮貝肉上擠點檸檬汁，連餐盤都不需要了。完美。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_pref_foodLike"
+		},
+		{
+			"voicelineId": 83040,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "調味過重的食物，不行。食材就是要保留原始的口味才好。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 83041,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "好吃，配方我已經記下來了。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_spice_pref_01"
+		},
+		{
+			"voicelineId": 83042,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "謝謝招待。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_spice_normal_01"
+		},
+		{
+			"voicelineId": 83043,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "調味料的比例，再斟酌一下吧？",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 83044,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "生日快樂！卡片給{F#妳}{M#你}…這不是賀卡，當然沒寫東西了。寫下{F#妳}{M#你}想要的禮物，放進我的帽子裡，不管是什麼，都會為{F#妳}{M#你}準備的。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 83045,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "感知更敏銳了。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83046,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "思考速度…繼續上升。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83047,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "看到了，勝利的條件。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 83048,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "我竟然能獲得這樣的力量…這樣我也能站在{F#妳}{M#你}的身前了吧。",
+			"voicefile": "VO_friendship/VO_lynette/vo_lynette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 83049,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "一點把戲。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 83050,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "在這裡。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 83051,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "驚喜。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 83052,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "魔術開場。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 83053,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "來點燈光。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 83054,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "請看這邊。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 83055,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "寶物的氣息。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_chest_open_01"
+		},
+		{
+			"voicelineId": 83056,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "不出所料。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_chest_open_02"
+		},
+		{
+			"voicelineId": 83057,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "輕鬆到手。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_chest_open_03"
+		},
+		{
+			"voicelineId": 83058,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "保持冷靜。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_less30_01"
+		},
+		{
+			"voicelineId": 83059,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "我得集中精神。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_less30_02"
+		},
+		{
+			"voicelineId": 83060,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "啟動應敵模式…",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_less30_03"
+		},
+		{
+			"voicelineId": 83061,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "快退後。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 83062,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "我來吸引火力。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 83063,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "我…看漏了什麼…",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_die_01"
+		},
+		{
+			"voicelineId": 83064,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "魔術失誤了…",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_die_02"
+		},
+		{
+			"voicelineId": 83065,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "林尼…",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_life_die_03"
+		},
+		{
+			"voicelineId": 83066,
+			"title": "普通受擊·其一",
+			"voicelineType": "900001",
+			"description": "還好。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 83067,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "啊，沒躲開。",
+			"voicefile": "VO_gameplay/VO_lynette/vo_lynette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 83068,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "魔術要開演了嗎？",
+			"voicefile": "VO_teamJoin/vo_lynette_teamJoin_01"
+		},
+		{
+			"voicelineId": 83069,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "下午茶時間到了。",
+			"voicefile": "VO_teamJoin/vo_lynette_teamJoin_02"
+		},
+		{
+			"voicelineId": 83070,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "{F#妳}{M#你}帶路吧。",
+			"voicefile": "VO_teamJoin/vo_lynette_teamJoin_03"
+		}
+	]
+}

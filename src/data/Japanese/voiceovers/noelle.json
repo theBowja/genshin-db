@@ -1,0 +1,715 @@
+{
+	"id": 10000034,
+	"name": "Noelle",
+	"friendLines": [
+		{
+			"voicelineId": 21009,
+			"title": "初めまして…",
+			"voicelineType": "1000",
+			"description": "私はノエル、西風騎士団のメイドです。今日から一緒に冒険させていただきます。何かお困りごとや悩みごとがありましたら、全力で解決しますのでご心配なく。ええ、今からでも大丈夫ですよ。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_draw_appear"
+		},
+		{
+			"voicelineId": 21010,
+			"title": "世間話·手伝い",
+			"voicelineType": "1101",
+			"description": "任せてください！なんでも私にお任せを！——そういえば、何をすればよろしいのでしょうか？聞いていませんでしたね…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_explore_idle_01"
+		},
+		{
+			"voicelineId": 21011,
+			"title": "世間話·休み",
+			"voicelineType": "1102",
+			"description": "疲れましたか？ここで少し休みましょう。今お茶をご用意しますね。お砂糖はどうしますか？多め？普通？それともなしでしょうか？",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_explore_idle_02"
+		},
+		{
+			"voicelineId": 21012,
+			"title": "世間話·頼もしい",
+			"voicelineType": "1103",
+			"description": "私を必要とされる限り、いつまでもそばでお仕えいたします。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_explore_idle_03"
+		},
+		{
+			"voicelineId": 21013,
+			"title": "雨の日…",
+			"voicelineType": "1201",
+			"description": "大変です、皆さまのお洋服を干したままでした！帰って洗濯物を取り込んでもよろしいでしょうか？",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 21014,
+			"title": "雷の日…",
+			"voicelineType": "1202",
+			"description": "雷の日は屋内にいたほうがよろしいかと。どうしても外出しなければいけない用事がありましたら、この私に任せてください。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_weather_thunder_01"
+		},
+		{
+			"voicelineId": 21015,
+			"title": "晴れの日…",
+			"voicelineType": "1203",
+			"description": "晴れてますね。何か気持ちが晴れるようなことでもしましょうか。え？具体的にですか…ふふっ、気持ちが晴れやかになるならなんでもいいですよ。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_weather_sunny_01"
+		},
+		{
+			"voicelineId": 21016,
+			"title": "風の日…",
+			"voicelineType": "1204",
+			"description": "聞こえましたか？風神さまの声ですよ。気分が沈んでいる時に、風の音を聞くといつも落ち着きます。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_weather_breezy_01"
+		},
+		{
+			"voicelineId": 21017,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "おはようございます。朝食のご用意ができましたよ。近くにいますので、何かお口に合わないものがありましたら、いつでもお申し付けください。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 21018,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "座ってお茶でもしますか？すぐにご用意しますね。そうだ、ついでにパンケーキもご用意します。得意料理ですので、ぜひ召し上がってください。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 21019,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "夜は皆さまがお休みになる時間で、私が一番忙しくなる時間でもあります…アンバーさまの洗濯済みのリボンがどこに置いてあるのかも、ガイアさまが新たに購入した眼帯の数も、全部覚えています。メイドのお仕事ですから。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 21020,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "本日の冒険、お疲れ様でした。どうぞお休みください。私は騎士団に…えっ？眠るまでそばにいてほしいのですか？えと…問題ありませんが…私をからかっているんじゃありませんよね？",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_greetingNight2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21021,
+			"title": "ノエル自身について·自律",
+			"voicelineType": "2001",
+			"description": "毎日同じことを繰り返しているだけです。本物の騎士と比べたらまだまだです…でも、これも騎士になるための修行のひとつです。修行は口先だけでは成せませんから。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_idle"
+		},
+		{
+			"voicelineId": 21022,
+			"title": "ノエル自身について·分岐",
+			"voicelineType": "2002",
+			"description": "他人と言い争うことは少し苦手です。道理を説明できない上に、怒らせてしまうことが多いですので。まずは私の考えに従って行動しますが、結局「頑固」と言われます…結果を示して説得しようと思っただけですが、それも「頑固」なのでしょうか？",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_idle2"
+		},
+		{
+			"voicelineId": 21023,
+			"title": "身分について…",
+			"voicelineType": "2003",
+			"description": "私の奉仕は自由への奉仕です。私の中で「メイド」こそが最も自由な身分ですが、シェフ、庭師、戦士、ガイド…必要がありましたら、私はなんでもします！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_close"
+		},
+		{
+			"voicelineId": 21024,
+			"title": "注意について…",
+			"voicelineType": "2004",
+			"description": "いくら忙しくても、三食きちんと食べませんと。正体不明のものを食べてはいけません、肉ばかりで野菜を食べないのもいけません。あと胃に優しくないので冷たい水もなるべく控えたほうが…あっ、今「面倒だからノエルに任せよう」って思っていませんか？うーん…本当にそう思っていますなら…わかりました、任せてください！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21025,
+			"title": "歓迎会について…",
+			"voicelineType": "2005",
+			"description": "西風騎士団の栄誉騎士になったと聞きました。羨ましいです…では今後、あなたさまは先輩ですね。そうだ、歓迎会の準備をしないといけません！今すぐ準備にとりかかります！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「涙のない明日のために」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						38406
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21026,
+			"title": "「神の目」について…",
+			"voicelineType": "3001",
+			"description": "正直に言いますと、少し残念です…「神の目」は神様が私を認めた証ですが、なぜ「風」ではなく、風と一番相性の悪い「岩」なのでしょう？一番西風騎士団に相応しい元素はやはり…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21027,
+			"title": "シェアしたいこと…",
+			"voicelineType": "3002",
+			"description": "お酒のにおいが好きですが、まだお酒を飲める歳ではありませんので…こっそり飲む機会も何回かありましたが、我慢しました。この楽しみは、やはり成人の日まで取っておきたいのです。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_share"
+		},
+		{
+			"voicelineId": 21028,
+			"title": "興味のあること…",
+			"voicelineType": "3003",
+			"description": "秘密を守るのがメイドですので、バラが好きです。モンドでバラは「口の堅さ」を象徴するものですから…えっ？あなたの故郷でバラは「愛情」を表すのですか？そ、そんな情熱的な意味があるのですね…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_pref_gift"
+		},
+		{
+			"voicelineId": 21029,
+			"title": "アンバーについて…",
+			"voicelineType": "4001",
+			"description": "アンバーさまは尊敬する先輩です。実力者で、とても親切なんですよ。「ウサギ伯爵」の作り方も教えてくれました。ほら、いつもお守り代わりに持ち歩いています。よくできてますよね？",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21030,
+			"title": "クレーについて…",
+			"voicelineType": "4002",
+			"description": "まだ幼いのに正式な騎士になれた理由をずっと聞きたいと思っていました。以前、彼女に教えてもらおうと思って声をかけたのですが、話の途中で引っ張られて騎士団の外で爆弾を…何かの修行かと思いましたが、結局二人で反省室行きでしたね…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21031,
+			"title": "ジンについて…",
+			"voicelineType": "4003",
+			"description": "団長さまは私の目標です。実力も真面目さも全然適いませんが、自分自身と他人に厳しいジン団長に認められる日が来ましたら、きっと今までの努力が認められるような気がします。そうなるまで、私は怠けたりしません！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21032,
+			"title": "ファルカについて…",
+			"voicelineType": "4004",
+			"description": "一緒に遠征して、メイドの責任を果たそうと思いましたが、大団長さまは私がモンドに残っていたほうが安心だと言ってくれましたので…大団長さまにそんな風に信用されて、とても嬉しかったです！大団長さまがそんなことを言う相手は私だけじゃないって後から知りましたが…信用されていることには変わりありませんから！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21033,
+			"title": "ガイアについて…",
+			"voicelineType": "4005",
+			"description": "ガイアさまはとてもミステリアスな方で、毎日重要な任務があるようです。彼はよく私に小さな任務をまかせてくれますが、まるで私を彼の隊員のように…ただの使い走りって？いえいえ、確かに使い走りかもしれませんが、大切な任務です！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21034,
+			"title": "ベネットについて…",
+			"voicelineType": "4006",
+			"description": "騎士団よりも冒険者協会の方が私に相応しいと、何回もお誘いをいただきました…確かに普通の冒険者のように、彼のオヤジさんたちの世話を手伝いますが…私にとって騎士団には特別な意味がありますし、負けたくありません…うん、やはりお受けできませんね。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21035,
+			"title": "フィッシュルについて·お菓子",
+			"voicelineType": "4008",
+			"description": "別の世界から来たようですが、それ以外はよくわかりません…でも騎士団の図書館がお気に入りのようで、よくそこで読書をしています。私が掃除を担当する時はできたてのお菓子を差し上げますが、彼女はいつもよく分からない、誇張した感謝の言葉をくれますね…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_fischl_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21036,
+			"title": "フィッシュルについて·身の上",
+			"voicelineType": "4007",
+			"description": "以前、図書館を掃除した時、『フィッシュル皇女物語』という本を見かけました。ただのファンタジー小説かと思いましたが…その主人公が実在していたとは！本になるくらいですから、きっとすごい人なのでしょう。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_fischl_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21037,
+			"title": "バーバラについて…",
+			"voicelineType": "4009",
+			"description": "よく一緒にお茶をしますよ。バーバラちゃんはたまに綺麗なメロディーを口ずさんで、インスピレーションが降りてきたと教えてくれます。音楽に関して建設的な意見は出せませんが…バーバラちゃんとそういう時間を一緒に過ごせて、とても嬉しいです。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21038,
+			"title": "ノエルを知る·1",
+			"voicelineType": "5001",
+			"description": "助けが必要でしょうか？えっ…ただお話したいと？わかりました、それがお手伝いになるのでしたら、最後までお付き合いしますよ。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_friendship_01"
+		},
+		{
+			"voicelineId": 21039,
+			"title": "ノエルを知る·2",
+			"voicelineType": "5002",
+			"description": "私の気持ちは考えなくても大丈夫です、なんでもお任せを…えっ？それは「メイド」ではなく「道具」？…うーん、道具はたくさんお仕事しても喜ぶとは限りませんよね。私はお手伝いできてとても満足していますよ。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21040,
+			"title": "ノエルを知る·3",
+			"voicelineType": "5003",
+			"description": "こ、これらのお菓子を私に？いえいえ、そんな、申し訳ないです。…では、お返しに私もお菓子をたくさん作りますね！今、今作りますから、あと30分…えっと、あと1時間ください。他にご用がありましたら先にどうぞ。すぐにできたてのお菓子を送りますからね！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21041,
+			"title": "ノエルを知る·4",
+			"voicelineType": "5004",
+			"description": "私が毎日するのは些細なことばかりです。でも、そんなことであなたさまの冒険や暮らしのお手伝いができたのなら、とてもうれしいです。ふふっ、お礼を言われると、そんな些細なことも…ちゃんと意味があると思えてきます。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21042,
+			"title": "ノエルを知る·5",
+			"voicelineType": "5005",
+			"description": "私は騎士団のメイド、皆さまのお手伝いがしたいと思います。でも、いつの間にかあなたに使う時間が多くなってしまいました…はあ、そんな身勝手なやり方は、よろしくないのでしょうか？",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21043,
+			"title": "ノエルの趣味…",
+			"voicelineType": "6001",
+			"description": "趣味ですか？お掃除することが好きです。洗濯、床掃除、窓掃除、いろんなものが綺麗になっていくのを見ると達成感があります…えっ？「休みの日の趣味」ですか？そうですね…うん、やはりお掃除ですね！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_pref_hobby"
+		},
+		{
+			"voicelineId": 21044,
+			"title": "ノエルの悩み…",
+			"voicelineType": "6002",
+			"description": "最も少ない予算で一番いいものを買う方法はないでしょうか…一人で璃月に行って値段を比べて、買ったものを一人で運んだことがありますが…時間がかかりすぎたせいで、風魔龍に食べられたんじゃないかと団長さまにご心配をかけたようで…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_dialog_annoyed"
+		},
+		{
+			"voicelineId": 21045,
+			"title": "好きな食べ物…",
+			"voicelineType": "6003",
+			"description": "「満足サラダ」ですね。一皿でモンドの自然を感じられますし、栄養バランスがよく、カロリーも低いです…飽きないかって？もちろん飽きません、美味しいですから！10年は食べ続けてますよ。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_pref_foodLike"
+		},
+		{
+			"voicelineId": 21046,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "好き嫌いはしません！でも唯一困っている状況があります…メイドとして、会食の食事は全部試食しないといけません。ただこうして一口一口食べ続けますと…はあ、罪悪感が。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_pref_foodDislike"
+		},
+		{
+			"voicelineId": 21075,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "よく見るお料理なのに、こんなに美味しく作れるなんて…あなたを尊敬するところが、また増えてしまいましたね！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_spice_pref_01"
+		},
+		{
+			"voicelineId": 21076,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "なんて美味しいのでしょう。私も見習わなければなりませんね！お料理もメイドの務めですから…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_spice_normal_01"
+		},
+		{
+			"voicelineId": 21077,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "カロリーが…一日に必要な量を超えているのではないでしょうか…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_spice_dislike_01"
+		},
+		{
+			"voicelineId": 21047,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "毎日冒険に勤しんで、処理できていないことが溜まっていませんか？今日、私はあなたの専属メイドですから、全部私に任せてください！それと…この素敵な日に祝福を、お誕生日おめでとうございます。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 21048,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "これが…新しい力ですか？これでより多くの方を助けられますね、ありがとうございます。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21049,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "満足はしません。正式な西風騎士になるまで、人の倍努力しませんと。",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21050,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "あなたさまと共に冒険させていただき、私は成長できました。メイドの仕事はあなたさまの悩みをなくすことなのに、かえってあなたさまに助けられましたね…",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 21051,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "モンドの皆様に以前より頼もしくなった、きっとすぐに本物の西風騎士になれると言われましたが、私は何も…えっ？あなたさまもそう思うんですか？えっと…そう言ってくださってありがとうございます、最高の褒め言葉です！",
+			"voicefile": "VO_friendship/VO_noel/vo_noel_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 21052,
+			"title": "元素スキル·1",
+			"voicelineType": "100001",
+			"description": "岩の重さは安心できます。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_battle_skill1_01"
+		},
+		{
+			"voicelineId": 21053,
+			"title": "元素スキル·2",
+			"voicelineType": "100002",
+			"description": "綺麗にしませんと。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_battle_skill1_02"
+		},
+		{
+			"voicelineId": 21054,
+			"title": "元素スキル·3",
+			"voicelineType": "100003",
+			"description": "任せてください。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_battle_skill1_03"
+		},
+		{
+			"voicelineId": 21055,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "戦場のお掃除の時間です。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_battle_skill3_01"
+		},
+		{
+			"voicelineId": 21056,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "騎士の風格に気を付けます。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_battle_skill3_02"
+		},
+		{
+			"voicelineId": 21057,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "メイドの礼儀に気を付けます。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_battle_skill3_03"
+		},
+		{
+			"voicelineId": 21058,
+			"title": "ダッシュ開始·1",
+			"voicelineType": "700001",
+			"description": "これで間に合いますね。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 21059,
+			"title": "ダッシュ開始·2",
+			"voicelineType": "700002",
+			"description": "助けが必要な方がいるはずです。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 21060,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "とても満足です。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_chest_open_01"
+		},
+		{
+			"voicelineId": 21061,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "心から嬉しく思います…",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_chest_open_02"
+		},
+		{
+			"voicelineId": 21062,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "ほこりをきれいにしますね！",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_chest_open_03"
+		},
+		{
+			"voicelineId": 21063,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "かすり傷ですから、大丈夫です。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_less30_01"
+		},
+		{
+			"voicelineId": 21064,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "うっ、服が汚れてしまいましたね…",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_less30_02"
+		},
+		{
+			"voicelineId": 21065,
+			"title": "HP低下·3",
+			"voicelineType": "410003",
+			"description": "引きません。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_less30_03"
+		},
+		{
+			"voicelineId": 21066,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "動かないでください、手当します！",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 21067,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "任せてください！私の番です！",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 21068,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "騎士団に…恥を…",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_die_01"
+		},
+		{
+			"voicelineId": 21069,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "まだ…皆様を守りたいのに…",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_die_02"
+		},
+		{
+			"voicelineId": 21070,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "さようなら…ご主人様…",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_life_die_03"
+		},
+		{
+			"voicelineId": 21071,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "うっ…失礼しました。",
+			"voicefile": "VO_gameplay/VO_noel/vo_noel_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 21072,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "うれしい…あ、いえ。",
+			"voicefile": "VO_teamJoin/vo_noel_teamJoin_01"
+		},
+		{
+			"voicelineId": 21073,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "必ずあなたをお守りします。",
+			"voicefile": "VO_teamJoin/vo_noel_teamJoin_02"
+		},
+		{
+			"voicelineId": 21074,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "はい、お望みのままに。",
+			"voicefile": "VO_teamJoin/vo_noel_teamJoin_03"
+		}
+	]
+}

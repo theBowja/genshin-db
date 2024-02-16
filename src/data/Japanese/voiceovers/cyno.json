@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "初めまして·過去",
+			"voicelineType": "1000",
+			"description": "俺はセノ、かつての「大マハマトラ」だ。今は己の力で悪しき罪を裁いている。もし、お前も規則と正義を求める心を持つならば、助けになろう。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "初めまして·今",
+			"voicelineType": "1006",
+			"description": "俺はセノ。教令院の「大マハマトラ」で、規則を保ち、悪しき罪を裁くのが俺の仕事だ。今後の旅でも、お前の安全をしっかり守ろう。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "世間話·秤量",
+			"voicelineType": "1101",
+			"description": "善悪は、いずれ秤にかけられる。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "世間話·カードゲームの運勢",
+			"voicelineType": "1102",
+			"description": "運が結末を左右することはあるが、永遠に影響し続けるわけじゃない。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "世間話·戸惑う",
+			"voicelineType": "1103",
+			"description": "場の雰囲気を和らげたい時があるんだが…どんなジョークで人が笑うのか、俺には分からないんだ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "雨の日…",
+			"voicelineType": "1201",
+			"description": "また雨だ…",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "雷の日…",
+			"voicelineType": "1202",
+			"description": "一部の伝説によれば、雷は神が俗世に下す審判らしい。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "雪の日…",
+			"voicelineType": "1203",
+			"description": "雪が止んだ後の世界が好きだ。完全な沈黙というわけじゃないこの静けさは落ち着く。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "晴れの日…",
+			"voicelineType": "1204",
+			"description": "太陽の光は、あらゆる場所に降り注ぐ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "暴風の日…",
+			"voicelineType": "1205",
+			"description": "強い風だな…気を付けろ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "砂漠にいる時…",
+			"voicelineType": "1206",
+			"description": "おなじみの風景だ…",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "元気を出せ、出発の時間だ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "昼食を用意しようか？先に言っておくが、味は保証できないからな。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "俺の言ったことを覚えてるな？夜は常に危険が伴う。何をするにしても、油断は禁物だ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "おやすみ。近くに犯罪者がいるから、片付けてくるよ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "セノ自身について·ジョーク",
+			"voicelineType": "2001",
+			"description": "昔、砂漠に渇いた旅人がいて、水スライムに出会えるように祈った。しかしやつは、ちょうど腹の減った水スライムも、はぐれた旅人に出会えるように祈っているとは思ってもみなかった…ん？その表情…面白くなかったか？",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "セノ自身について·散歩",
+			"voicelineType": "2005",
+			"description": "たまに、夜の砂漠へ散歩に行くんだ。冷たく乾いた風は心をすっきりさせてくれる。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "決闘について…",
+			"voicelineType": "2003",
+			"description": "「七聖召喚」をやらないか？新しいデッキを見せるよ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "目の前の時間について…",
+			"voicelineType": "2002",
+			"description": "過去を変えることはできないし、未来を予測することもできない。だから、俺は目の前の時間を大切にしているんだ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "「神の目」について…",
+			"voicelineType": "3001",
+			"description": "「人ならざる存在」に憑依されようが、魔神に目を留められていようが…俺は神に寵愛されているからと言って己の道義を変えるつもりは毛頭ない。ただ、負うべき責任となすべきことを貫こうと思ってる。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "シェアしたいこと·知識欲",
+			"voicelineType": "3002",
+			"description": "「欲深ければ災い重し」——誰もがそう分かっている。だが、人々はこと「知識欲」においてはポジティブな面のみを語ってしまう…俺に言わせれば、知識欲だって欲望の一種だ。制限を課すべきだと思う。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "シェアしたいこと·畏敬の念",
+			"voicelineType": "3005",
+			"description": "任務を遂行する上で、俺の判断は他人の運命を変えてしまうかもしれない。だから常に、「マハマトラ」としての立場に畏敬の念を抱くよう努めてきた——知識や力を畏れ敬うのと同じようにな。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "興味のあること…",
+			"voicelineType": "3003",
+			"description": "砂漠に生える低木が好きだ。砂漠は帰元の象徴であり、すべての文明を砂と風に埋もれさせてしまう。だが、荒涼とした土地にもかかわらず、生命の芽生えをはっきりと見届けられる…その逞しさには俺ですら心が震えることがあるよ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "ティナリについて·知識",
+			"voicelineType": "4001",
+			"description": "ティナリは、俺がこれまで出会ったどの学者とも違う。知識に対する深い執念を持ちながら、一線を越えることは決してなかった。自分のことを「研究室の神」だと思っている学者もいるが、ティナリはそうじゃない。あいつはあらゆる生命を等しく尊重してるんだ。教令院の仕事を断ったと聞いたが、俺もその判断は正しいと思う。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "ティナリについて·ジョーク",
+			"voicelineType": "4002",
+			"description": "食卓でジョークを言うなって、ティナリに忠告されたことがあるんだ。理由は、俺のジョークが全然笑えないかららしい。俺は納得できずに、とっておきのネタを三つ一斉に披露して、笑いどころを一つずつ解説したんだが…俺の食事まで冷めてしまった。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "コレイについて…",
+			"voicelineType": "4003",
+			"description": "以前、あいつの身体に巣くう魔神の残滓を封印するのを助けたんだが…封印の過程ではあいつにひどい苦痛を味わわせてしまった。それは恐らく、死にも勝るほどだったろう。よく耐えてくれた。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "アルハイゼンについて…",
+			"voicelineType": "4004",
+			"description": "俺は、賢すぎるやつとはあまり仲良くしたくない。やつらは自分がすべてをコントロールできると思って、常に危ない橋を渡ろうとするからな。でもまあ、例外もある。アルハイゼンはかなり安定している方だ。あいつは確かに大概の状況をコントロールできるし、さらにそれを好転させる能力も持ってる。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「赤砂の王と三人の巡礼者」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "カーヴェについて…",
+			"voicelineType": "4005",
+			"description": "ティナリやコレイが直接そうと言ったわけじゃないが、二人の目はすべてを物語っていた。俺のジョークより、カーヴェの体験談のほうがずっと面白かったってな。俺の感想？うーん…あんなことで笑ってしまうなんて、逆に面白いとは思うが。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "ナヒーダについて…",
+			"voicelineType": "4006",
+			"description": "神について評せと言うのか…それはちょっと、俺には僭越なことだ。だが、あの方と一緒にいる間、確かに俺はこの目でその知恵と勇気、そして決心を見届けた。単なる憶測であの方のことをあれこれ言う賢者なんかよりも、俺のほうがこう結論づける資格はあるだろう——あの方は尊敬に値する立派な神だよ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "ニィロウについて…",
+			"voicelineType": "4007",
+			"description": "あいつからは、踊りに対する強い情熱と執念を感じる。その執念は驚くほどに堅く、そう簡単には曲げられない。これからも、踊りへの情熱を活かし、人々に喜びを与えてくれればいいと思う。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「虚空の鼓動、熾盛の劫火」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "ファルザンについて…",
+			"voicelineType": "4008",
+			"description": "以前、ファルザン先輩の失踪に関する書類を念入りに調べたことがある。先輩がとある危険な研究に関わっていたのではないかと疑ったんだ…だが、実際に彼女と会って、その考えは完全に覆された。多少付き合いにくくは感じたが、口うるさくも世話焼きな年長者のように、心の中ではいつも人のためを想ってる人だ。彼女が常軌を逸するようなことなどするはずがないと思ったよ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "リサについて…",
+			"voicelineType": "4009",
+			"description": "ああ、当然知ってる。リサと俺は同じ賢者に師事していたからな。大マハマトラとして、知識の過剰な追求が引き起こす悲劇を数多く見てきた——あいつの選択も理解できる。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "セノを知る·1",
+			"voicelineType": "5001",
+			"description": "俺のことが知りたいのか？まあ確かに、多くの人にとって、俺は無視できない「面倒な存在」だからな…だが心配するな。お前が危ない真似をしない限り、お前を悩ませるようなことはしないさ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "セノを知る·2",
+			"voicelineType": "5002",
+			"description": "この身を器として、俺は人ならざる存在の力を顕現させられる。これは、生まれつきの体質のおかげとも言えるし、後の取引で得たものとも言える。別に隠すようなことでもない。マハマトラとしてこの世の悪を計るように、己の魂も審判の秤にかけるのは当然のことだ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "セノを知る·3",
+			"voicelineType": "5003",
+			"description": "俺は「何故そうしたか」より、「何をしたか」ってことの方をずっと大切にしてる。何故なら、世の中には幾千万の理由があるからだ。理由を耳にしてしまえば、悪いことをした人が正義だと思ったり、野次馬が厳しすぎると感じたりしてしまうだろう？逆風はいとも簡単に他人の同情を引くものだが、審判する側はこういった感情を押し殺さなければならない。情状酌量の余地はあっても、罪をまぬがれる言い訳など決して存在しないんだからな。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "セノを知る·4",
+			"voicelineType": "5004",
+			"description": "昏き無知の海には時折微かな光が輝き、真実を知らない者を引き寄せる。人々は度々それを灯台だと思い、漆黒の海に隠された巨大な危機を無視してしまう。長きにわたって暗闇の中で生きてきた人を光の導きから遠ざけること自体残酷なことだが、俺はそれをやらなければならない——いつか、海の深くに潜む敵に打ち勝つ日が来るまで。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "セノを知る·5",
+			"voicelineType": "5005",
+			"description": "価値のありそうな情報はすべて打ち明けたが、まだ何か期待してるのか？はぁ…好奇心旺盛なやつだ。それじゃ、お前から質問してくれ。尋問に慣れた身で、それをされる側になるとは…新鮮な感覚だな。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "セノの趣味…",
+			"voicelineType": "6001",
+			"description": "暇な時は、「七聖召喚」を皆と一緒に何度かプレイするんだ。規則に基づきながらも柔軟性に富んだこのゲームは、俺にとって芸術みたいなものだ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "セノの悩み…",
+			"voicelineType": "6002",
+			"description": "この前、稲妻の娯楽小説を読んだ。「七聖召喚」をテーマにした小説でな、ある場面で、追い込まれた主人公がいきなりデッキから存在しないカードを引いたんだ。俺は衝撃を受けたと同時に、戸惑いを覚えた——デッキに特殊な操作を行い、わけのわからない奇跡を作り出す…これは規則を破ったってことか？それとも、これも規則の一環なのか…",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "好きな食べ物…",
+			"voicelineType": "6005",
+			"description": "米に肉やドライフルーツを混ぜ、ヨーグルトと一緒に焼くと、さまざまな香りが一つに混じり合う。パリッとした殻を割ると、湯気と一緒に香りが立ち昇ってくるんだ。作るのにあまり時間もかからないし、俺が一番気に入ってる料理だ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "砂漠を歩く時、持っていく食糧は大抵硬くて味が薄い。これにも慣れてしまったし、嫌いなものはないな。強いて言えば、虫関連の食べ物はやっぱり受け入れ難い…",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "美味かった——手を煩わせてしまったな。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "確かに受け取った。感謝する。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "これを俺に？何かの間違いじゃないのか？",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "うむ…とりあえず、誕生日おめでとう。誰かを祝った経験はあまりないが、お前の誕生日だからと思って少し準備をしてみた。まずは数日かけて研究し、手に入れたデッキ——お前のスタイルにも合ってるはずだ。それから、この数日間のスケジュールを調整したんだが、どこか行きたい場所はないか？俺も同行しよう。誕生日は1日だけだが、せっかくなら思う存分楽しまないとな。3日以内に戻れば大丈夫だ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "新たな力を感じた。確実に強くなった証だ。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "罪を審判し、規則を維持させる。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "おかげでしっかり鍛えられた、感謝する。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "力が頂点に達したようだ。だが、この力だけではまだやり遂げられないことが沢山ある。人情と規則は常にぶつかり合うものだ…そのバランスをどう取っていくか、これからの旅で答えを見つけよう。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "元素スキル·1",
+			"voicelineType": "100001",
+			"description": "降伏しろ。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "元素スキル·2",
+			"voicelineType": "100002",
+			"description": "無意味な抵抗を。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "元素スキル·3",
+			"voicelineType": "100003",
+			"description": "逃げ場はないぞ！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "元素スキル·4",
+			"voicelineType": "100004",
+			"description": "審判の時だ！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "元素スキル·5",
+			"voicelineType": "100005",
+			"description": "罪過を断つ！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "元素スキル·6",
+			"voicelineType": "100006",
+			"description": "罪を償うがいい！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "この身で…万象を粛清する。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "判決からは逃れられない。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "秤量してやる——お前の罪を。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "相応の報酬だな。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "大事なのはコツコツ積み重ねることだ。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "蓄積された富は、文明の礎となる。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "予想以上の脅威だ。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "そろそろ慣れてきた。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "HP低下·3",
+			"voicelineType": "410003",
+			"description": "くっ…もう一度！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "無理しないで休んでろ！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "俺が代わってやる。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "俺の番か…",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "滅亡と…新生…これも循環。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "審判…し損じたか…",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "ダメージを受ける·1",
+			"voicelineType": "900001",
+			"description": "無駄だ。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "手強いな。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "重ダメージを受ける·2",
+			"voicelineType": "910002",
+			"description": "やるじゃないか。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "最善を尽くそう。",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "行動開始。",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "今回のターゲットは誰だ？",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

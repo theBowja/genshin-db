@@ -1,0 +1,688 @@
+{
+	"id": 10000035,
+	"name": "Qiqi",
+	"friendLines": [
+		{
+			"voicelineId": 24009,
+			"title": "Привет...",
+			"voicelineType": "1000",
+			"description": "Я Ци Ци, я зомби... Ээ, чего дальше говорить?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_draw_appear"
+		},
+		{
+			"voicelineId": 24010,
+			"title": "Поболтаем: Разговоры с собой",
+			"voicelineType": "1101",
+			"description": "Эй, знаешь что? Эээ... я тоже. О чём это я...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_01"
+		},
+		{
+			"voicelineId": 24011,
+			"title": "Поболтаем: Страх жары",
+			"voicelineType": "1102",
+			"description": "Хочу куда-нибудь попрохладней.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_02"
+		},
+		{
+			"voicelineId": 24012,
+			"title": "Поболтаем: Тренировка",
+			"voicelineType": "1103",
+			"description": "Один, два, три, четыре... Два... Два, три, четыре...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_03"
+		},
+		{
+			"voicelineId": 24013,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Опять зонтик забыла.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 24014,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1202",
+			"description": "Хочу снеговика слепить... Поможешь?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_snowy_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24015,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1203",
+			"description": "Не стоило выходить из дома.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_sunny_01"
+		},
+		{
+			"voicelineId": 24016,
+			"title": "Когда дует ветер...",
+			"voicelineType": "1204",
+			"description": "Прохладненький, очень хорошо.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_breezy_01"
+		},
+		{
+			"voicelineId": 24017,
+			"title": "Когда дует сильный ветер...",
+			"voicelineType": "1205",
+			"description": "Хватай... хватай меня... А то меня сдует...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_gale_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24018,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Утром нужно проверить дневник. Дневник знает, что нужно делать утром.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 24019,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Вспомнила... Забыла разложить лекарства для господина Бая.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 24020,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Добрый вечер. Как прошёл твой день? Мой - хорошо. Кажется... Но я не помню...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 24021,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Ты иди отдыхай, а мне ещё надо гимнастику сделать. ...Не подглядывай.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 24022,
+			"title": "О Ци Ци...",
+			"voicelineType": "2001",
+			"description": "А, ты мне?.. Извини, я не помню...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_idle"
+		},
+		{
+			"voicelineId": 24023,
+			"title": "О нас: Память",
+			"voicelineType": "2002",
+			"description": "Я много что забываю, но... в этом нет ничего страшного.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_close"
+		},
+		{
+			"voicelineId": 24024,
+			"title": "О нас: Тренировка памяти",
+			"voicelineType": "2003",
+			"description": "Я теперь делаю много упражнений на память, так что я тебя не забуду, не волнуйся.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24025,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Глаз Бога не может остановить время, но теперь я могу защитить дорогих мне людей.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24026,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "На самом деле, моё физическое состояние намного лучше, чем у господина Бая...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_share"
+		},
+		{
+			"voicelineId": 24027,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Иногда к аптеке прилетает стайка зябликов. Маленькая такая стайка.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_gift"
+		},
+		{
+			"voicelineId": 24028,
+			"title": "О Бай Чжу...",
+			"voicelineType": "4001",
+			"description": "Никак не запомню, как выглядит господин Бай, но это ничего...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_baizhu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24029,
+			"title": "О Ху Тао...",
+			"voicelineType": "4002",
+			"description": "Жара, фальшивая улыбка и смерть... Ненавижу Ху Тао.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24030,
+			"title": "О Сяо: Имя",
+			"voicelineType": "4003",
+			"description": "Хм, звучит как что-то антикварное...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xiao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24031,
+			"title": "О Сяо: Память",
+			"voicelineType": "4004",
+			"description": "Я его уже видела?..",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xiao_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24032,
+			"title": "О Синь Янь...",
+			"voicelineType": "4005",
+			"description": "...Кто?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xinyan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24033,
+			"title": "О Яо Яо...",
+			"voicelineType": "4006",
+			"description": "Милая... Похожа на зяблика.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24034,
+			"title": "О малышке Мин...",
+			"voicelineType": "4007",
+			"description": "Вечером... иногда такое ощущение, что кто-то делает гимнастику вместе со мной... Или кажется?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_duskyMing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24035,
+			"title": "Узнать больше о Ци Ци I",
+			"voicelineType": "5001",
+			"description": "Что такое?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_01"
+		},
+		{
+			"voicelineId": 24036,
+			"title": "Узнать больше о Ци Ци II",
+			"voicelineType": "5002",
+			"description": "Гимнастика позволяет мне сохранять подвижность, как у нормальных людей. Но стоит перестать и всё станет как раньше...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24037,
+			"title": "Узнать больше о Ци Ци III",
+			"voicelineType": "5003",
+			"description": "Некоторые люди пытаются меня использовать, некоторые - боятся. Но ты... совсем {M#другой}{F#другая}.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24038,
+			"title": "Узнать больше о Ци Ци IV",
+			"voicelineType": "5004",
+			"description": "С первой нашей встречи у меня появилось ощущение тепла. Не той жары, от которой мне нехорошо, а что-то другое. Тепло в моём сердце. Спасибо тебе... Я очень рада. Жаль, что я знаю только {M#нынешнего}{F#нынешнюю} тебя. Если я тебя забуду... то мы... нет, я прикажу себе помнить тебя.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24039,
+			"title": "Узнать больше о Ци Ци V",
+			"voicelineType": "5005",
+			"description": "Раньше я только хотела продолжать жить, хотя и не знала, зачем мне это... Но теперь я, кажется, знаю. Я хочу жить с тобой. Мы можем быть вместе всю жизнь?.. До самой смерти?.. Да или нет? Да? Правда? Хорошо! Я буду тебя защищать!",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24040,
+			"title": "Хобби Ци Ци...",
+			"voicelineType": "6001",
+			"description": "Хочу завести домашнее животное... типа зяблика.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_hobby"
+		},
+		{
+			"voicelineId": 24041,
+			"title": "Беспокойство Ци Ци...",
+			"voicelineType": "6002",
+			"description": "Не знаю почему, но от жары мне как-то неприятно в теле...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_annoyed"
+		},
+		{
+			"voicelineId": 24042,
+			"title": "Любимая еда...",
+			"voicelineType": "6003",
+			"description": "Мне нравится кокосовое молоко. Но... я не чувствую вкуса.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_foodLike"
+		},
+		{
+			"voicelineId": 24043,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Извини, я не знаю...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_foodDislike"
+		},
+		{
+			"voicelineId": 24076,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Холодненькое. Нравится. Но вкуса нет...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_pref_01"
+		},
+		{
+			"voicelineId": 24077,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Эм...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_normal_01"
+		},
+		{
+			"voicelineId": 24078,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Язык горит...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_dislike_01"
+		},
+		{
+			"voicelineId": 24044,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "Счастливых тебе воскрешений! Вот тебе мешочек с целебными травами. {M#Удивлён}{F#Удивлена}, что я вспомнила? Когда ты мне сказал{F#а}, я записала, а потом каждый день смотрела. Теперь это не сотрётся у меня из памяти.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 24045,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "О, я стала сильнее?.. А как это? Объясни, пожалуйста. Спасибо.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24046,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "А, поняла. Если стать сильнее, то нужно больше усилий, чтобы контролировать силу.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24047,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Раньше я не понимала, как это - стать сильнее. Но теперь... я хочу стать ещё немного сильнее.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24048,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Это всё благодаря тебе. Спасибо... Можно попросить тебя кое о чём? Отныне... я буду тебя защищать. Можно?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 24049,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Круговорот жизни.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_01"
+		},
+		{
+			"voicelineId": 24050,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Жизнь продолжается.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_02"
+		},
+		{
+			"voicelineId": 24051,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Иди.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_03"
+		},
+		{
+			"voicelineId": 24052,
+			"title": "Элементальный навык IV",
+			"voicelineType": "100004",
+			"description": "Восстань.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_04"
+		},
+		{
+			"voicelineId": 24053,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Приказы отданы. Приказы получены.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_01"
+		},
+		{
+			"voicelineId": 24054,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Священное имя: Хранитель Фортуны",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_02"
+		},
+		{
+			"voicelineId": 24055,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Открываю шкатулку Искусства Адепта.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_03"
+		},
+		{
+			"voicelineId": 24056,
+			"title": "Начало спринта I",
+			"voicelineType": "700001",
+			"description": "Быстрее? Ладно, быстрее.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 24057,
+			"title": "Запуск планера I",
+			"voicelineType": "800001",
+			"description": "А?",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 24059,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Красиво.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_01"
+		},
+		{
+			"voicelineId": 24060,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Сундук... Хм... Нам нравятся сундуки?",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_02"
+		},
+		{
+			"voicelineId": 24061,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Разве секунду назад здесь ничего не было?..",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_03"
+		},
+		{
+			"voicelineId": 24062,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Ох...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_01"
+		},
+		{
+			"voicelineId": 24063,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "О нет...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_02"
+		},
+		{
+			"voicelineId": 24064,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Мне надо жить дальше...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_03"
+		},
+		{
+			"voicelineId": 24065,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Опасно.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 24066,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Стой. Позволь мне.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 24067,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Я не хочу... снова... в заточение...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_01"
+		},
+		{
+			"voicelineId": 24068,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Холодно... Как холодно...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_02"
+		},
+		{
+			"voicelineId": 24069,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Нет...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_03"
+		},
+		{
+			"voicelineId": 24070,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900001",
+			"description": "Пустяки.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 24071,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Ух ты!",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 24072,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Ой...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 24073,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Я здесь.",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_01"
+		},
+		{
+			"voicelineId": 24074,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Что происходит?",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_02"
+		},
+		{
+			"voicelineId": 24075,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Я захвачу... свою тетрадь.",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_03"
+		}
+	]
+}

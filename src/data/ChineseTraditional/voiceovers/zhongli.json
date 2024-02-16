@@ -1,0 +1,922 @@
+{
+	"id": 10000030,
+	"name": "Zhongli",
+	"friendLines": [
+		{
+			"voicelineId": 17100,
+			"title": "初次見面…",
+			"voicelineType": "1000",
+			"description": "一份新的「契約」？好吧…雖然我還在度假，但也可以陪{F#妳}{M#你}走一趟。契約書上，該簽什麼名字呢？我有許多名字，度假期間的話…我會自稱「鍾離」。{F#妳}{M#你}呢，旅行者？{F#妳}{M#你}會簽下什麼名字？",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_draw_appear"
+		},
+		{
+			"voicelineId": 17101,
+			"title": "閒聊·旅程",
+			"voicelineType": "1101",
+			"description": "旅程總有一天會迎來終點，不必匆忙。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_01"
+		},
+		{
+			"voicelineId": 17102,
+			"title": "閒聊·遊覽",
+			"voicelineType": "1102",
+			"description": "接下來想去哪裡？如果想遊歷璃月名勝的話，我有一些不錯的參考方案。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_02"
+		},
+		{
+			"voicelineId": 17103,
+			"title": "閒聊·璃月",
+			"voicelineType": "1103",
+			"description": "為「流通」而造的船，遇到港口也會停泊，所以璃月是一切財富「沉澱」的地方。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_03"
+		},
+		{
+			"voicelineId": 17104,
+			"title": "閒聊·懷舊",
+			"voicelineType": "1104",
+			"description": "欲買桂花同載酒…只可惜故人，何日再見呢？",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_04"
+		},
+		{
+			"voicelineId": 17105,
+			"title": "雨過天晴…",
+			"voicelineType": "1201",
+			"description": "「琉璃袋」這種植物，它偏愛潮濕的環境，最適合雨後採摘。如果發現的話，適當儲備些吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 17106,
+			"title": "下雪的時候…",
+			"voicelineType": "1202",
+			"description": "找個地方避避雪吧。我不會有事，但{F#妳}{M#你}可能會著涼。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_snowy_01"
+		},
+		{
+			"voicelineId": 17107,
+			"title": "颳大風了…",
+			"voicelineType": "1203",
+			"description": "嗯…不適合度假的天氣。去聽聽戲吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_gale_01"
+		},
+		{
+			"voicelineId": 17108,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "希望今日也有好景氣。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 17109,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "想要吃點提神的？嗯，吃虎岩倒是有間不錯的店…",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 17110,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "雖然這種時候已經錯過了雲先生的戲，但夜晚的璃月仍有許多好去處。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 17111,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "集市已收，喧鬧的碼頭也已沉睡。去休息吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 17112,
+			"title": "關於鍾離自己…",
+			"voicelineType": "2001",
+			"description": "不以規矩，不能成方圓。不管是常人還是仙人，惟有各司其職，方能保璃月長久太平。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_idle",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17113,
+			"title": "關於我們·黃金",
+			"voicelineType": "2002",
+			"description": "黃金是璃月的財富，是令璃月的心臟搏動的血液。{F#妳}{M#你}是否擁有黃金般閃耀的心，就讓我拭目以待吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close1"
+		},
+		{
+			"voicelineId": 17114,
+			"title": "關於我們·契約",
+			"voicelineType": "2003",
+			"description": "{F#妳}{M#你}我既有「契約」之交——那麼凡在契約範圍內的事，都可同我商量。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17115,
+			"title": "關於我們·公平",
+			"voicelineType": "2004",
+			"description": "「契約」之外的事也可與我相談。畢竟我在這片土地上活了這麼久，凡事都略通一二。哦，雖說如此，我也有希望{F#妳}{M#你}能為我做的事情。畢竟，這樣才符合「公平」嘛。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17116,
+			"title": "關於我們·困惑",
+			"voicelineType": "2006",
+			"description": "「契約」無法界定「友誼」、無法丈量「情誼」，那到底用什麼才能稱量{F#妳}{M#你}我之間情感的重量呢？「朋友」，{F#妳}{M#你}知道答案嗎？",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close4",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17117,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "「神之眼」…也是一種「契約」。須知一切力量皆有其代價，一千種權力伴隨著一千種責任。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17118,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "「交易」的規矩是「契約」，準則是「公平」。這是訂立、遵循「契約」者絕不可忘卻之事：倘若失了公平，那契約便成了欺瞞的憑據。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_share"
+		},
+		{
+			"voicelineId": 17119,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "{F#妳}{M#你}若去往「絕雲間」，便替我採來一束「清心」吧。一束就好。此行的旅費…啊，差些忘了，「契約」生效期間，旅費由{F#妳}{M#你}代為墊付。那就有勞了。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_gift"
+		},
+		{
+			"voicelineId": 17120,
+			"title": "關於魈…",
+			"voicelineType": "4001",
+			"description": "{F#妳}{M#你}說，歸離原的少年仙人…啊…直至今日，他仍在履行他的職責…哦，這副「連理鎮心散」，請替我帶給他。對了，可千萬不能讓小派蒙偷吃了去，這裡的藥力…絕非常人所能承受。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_xiao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17121,
+			"title": "關於溫迪…",
+			"voicelineType": "4002",
+			"description": "嘶…好濃的酒氣。那個詩人剛剛來過吧，那個和風雅二字搭不上一點關係的酒鬼詩人！你這裡…唔，被他誘騙著灌了酒，話也說不清了嗎…{F#妳}{M#你}等一下，我去沏一壺「醒神茶」，只需三個時辰便好。{F#妳}{M#你}等一下…",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17122,
+			"title": "關於凝光…",
+			"voicelineType": "4003",
+			"description": "即便每日經手的事務千條萬縷，她仍不失進取之心，實屬難得。讓我想起，彼時的她赤著腳從瑤光灘走到南碼頭，一路叫賣貨品的樣子。時間對於常人，真是殘酷…",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_ningguang_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17123,
+			"title": "關於胡桃…",
+			"voicelineType": "4004",
+			"description": "當代堂主？嗯…那孩子，我應付不來。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17124,
+			"title": "關於達達利亞·沉著",
+			"voicelineType": "4005",
+			"description": "那位來自至冬的武人，還沒離開璃月嗎？沒關係，要是他找{F#妳}{M#你}麻煩，{F#妳}{M#你}可以喚我去應付他。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17125,
+			"title": "關於達達利亞·酒桌",
+			"voicelineType": "4006",
+			"description": "聽說「公子」最近在愚人眾的風評又變糟了不少。但像他這樣的人，一定會用積極的行動去掃清那些對他的怨言吧。嗯…這樣想來，下回酒桌上又有不少趣事可以聽了。旅者，{F#妳}{M#你}也一起來嗎？",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_tartaglia_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17126,
+			"title": "關於甘雨…",
+			"voicelineType": "4007",
+			"description": "璃月這個國度的繁榮，靠的絕不僅是「岩王帝君」的神諭，而是無數響應「契約」的岩神子民。在這之中，甘雨已是就職時間最長的一位了。關於她的往事…我怕她怪罪，讓她自己和{F#妳}{M#你}說吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17127,
+			"title": "關於刻晴…",
+			"voicelineType": "4008",
+			"description": "她是當代七星中最「不敬神」的，但我還挺欣賞這樣的人。「覺得自己是正確的，就大聲地說出來、堅決地去行動」——就是因為璃月有這樣的人，我才會考慮退休一事。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17128,
+			"title": "關於煙緋…",
+			"voicelineType": "4009",
+			"description": "她未曾與我簽訂「契約」，卻在以自己的方式維護璃月各界的規矩，並將有失偏頗的觀念糾正。倘若某天，她的父親遠遊歸來，想來會比我更欣慰吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17168,
+			"title": "關於巴爾…",
+			"voicelineType": "4010",
+			"description": "時間會淬煉一切意志。而她，恰好是會為信念付出所有的人。或許正因如此，她才能走到這一步。如有機會，我也想見識一下她為之傾盡一切的「永恆」。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17172,
+			"title": "關於布耶爾…",
+			"voicelineType": "4011",
+			"description": "智慧之神布耶爾，不僅統管整個須彌，還肩負著守護世界樹的職責。若非有大智慧，的確難以司掌這些。拯救世界樹一事，整個提瓦特的生靈都理應向她致謝。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17173,
+			"title": "關於芙寧娜…",
+			"voicelineType": "4012",
+			"description": "與「自我」簽訂下拯救國家的契約，並嚴守五百年，最終騙過了天理…我尊敬一切需要自我踐行的「正義」。即便神性的部分已經消散，神座不復存在，但對於整個楓丹的歷史來說，芙寧娜依舊是值得被認可的正義之神。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17174,
+			"title": "關於閒雲…",
+			"voicelineType": "4013",
+			"description": "我聽不少商人聊起過「閒雲」的逸聞。說是這位女子看似倨傲，不喜言談，交談一番卻發現她性格耿直，作風正派，是位值得結交的良友。我為她高興。但「出手闊綽」這則評價，嗯，也有不少人對我說過…",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「千里月明」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17129,
+			"title": "想要瞭解鍾離·其一",
+			"voicelineType": "5001",
+			"description": "怎麼，難得閒暇，不好好休息卻反來找我。是想聽我講故事嗎？",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_01"
+		},
+		{
+			"voicelineId": 17130,
+			"title": "想要瞭解鍾離·其二",
+			"voicelineType": "5002",
+			"description": "「黑岩廠」的起源，聽說過嗎？\n在過去，人們一邊將天衡山中的礦脈挖空，一邊在裡面修建工廠設施，漸漸建成了東大陸最大的工廠。山中黯道四通八達，一些甚至能通往大地深處的古遺蹟。能掌握其中一切通路的人，如今大概沒有了吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17131,
+			"title": "想要瞭解鍾離·其三",
+			"voicelineType": "5003",
+			"description": "「海燈節」的起源，聽說過嗎？\n在很久以前的戰爭中，璃月人會在夜裡放飛明亮的燈，讓廝殺的戰士不迷失回家的方向，不迷失自己的心。這種事情，如今大概已經沒有人記得了。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17132,
+			"title": "想要瞭解鍾離·其四",
+			"voicelineType": "5004",
+			"description": "「契約之神」的事情，聽說過嗎？\n他的記性很好。每位對手的名字，璃港船局建成以來製造的每一艘船起航的日子，都不曾忘卻。畢竟，有這樣的記憶力，才能銘記一切「契約」。\n然而，記性很好有時是令人不快的事。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17133,
+			"title": "想要瞭解鍾離·其五",
+			"voicelineType": "5005",
+			"description": "活得太久的人，只能在記憶中尋訪往昔的戰友、過去的景色。\n即使如此我也不後悔與{F#妳}{M#你}相識，「朋友」。假使有一日不得不同{F#妳}{M#你}相別，{F#妳}{M#你}在我的記憶中也會如黃金般閃耀。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17134,
+			"title": "鍾離的愛好…",
+			"voicelineType": "6001",
+			"description": "得閒時在城內散步，就能讓我心安不少。嗯…這種心情，是從何時開始…？",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_hobby"
+		},
+		{
+			"voicelineId": 17135,
+			"title": "鍾離的煩惱…",
+			"voicelineType": "6002",
+			"description": "讓人們遵循「契約」，依照契約的規矩行事，其實是希望人們能遵循「公平」。只是這一點，總有人意識不到。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17136,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "很久以前，與朋友共飲的酒。是因為氣候變了嗎？唉，過去的滋味，或許再也不能重現了吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_foodLike"
+		},
+		{
+			"voicelineId": 17137,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "我不喜歡海鮮。僅僅是看到海鮮，就會想到那種…該怎麼說呢，滑溜溜的觸感，洗不淨的腥味。哦，原因的話…\n唉，說來話長，就當是因為我記性太好了吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_foodDislike"
+		},
+		{
+			"voicelineId": 17169,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "用料講究，做法道地。屬實不易。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_pref_01"
+		},
+		{
+			"voicelineId": 17170,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "烹飪是一件饒有趣味的事，想來對{F#妳}{M#你}而言也是如此。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_normal_01"
+		},
+		{
+			"voicelineId": 17171,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "既有閒暇，不如找一處庭院，和{F#妳}{M#你}說一段故事吧。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_dislike_01"
+		},
+		{
+			"voicelineId": 17138,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "生日快樂。這是曾在{F#妳}{M#你}出生的那天盛開的，「琉璃百合」的乾花。\n很久以前的璃月人會說，這種花承載著大地中的美好記憶與祈願而盛開。我願意相信，{F#妳}{M#你}的誕生也是同樣的道理。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 17139,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "力量似乎漸漸回來了。不多，但有用。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17140,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "力量增長了，身體的負擔隨之劇增…哦，我沒事，我的構造不同常人，請不用擔心。",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17141,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "原來如此，驅動「神之眼」駕馭元素力，對於常人而言不啻偉業。哦，原來如此…那時的他們，是抱著這樣的覺悟站在我身旁啊…",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17142,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "不曾料想，放下「神之心」後，還能看到這種景色——感謝{F#妳}{M#你}，「朋友」…對了，我這裡有一份新的「契約」，不一起來看看嗎？",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「迫近的客星」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 17143,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "壁立千仞。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_01"
+		},
+		{
+			"voicelineId": 17144,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "震天撼地。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_02"
+		},
+		{
+			"voicelineId": 17145,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "靡堅不摧。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_03"
+		},
+		{
+			"voicelineId": 17146,
+			"title": "元素戰技·其四",
+			"voicelineType": "100004",
+			"description": "俱收並蓄。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_04"
+		},
+		{
+			"voicelineId": 17147,
+			"title": "元素戰技·其五",
+			"voicelineType": "100005",
+			"description": "安如磐石。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_05"
+		},
+		{
+			"voicelineId": 17148,
+			"title": "元素戰技·其六",
+			"voicelineType": "100006",
+			"description": "固若金湯。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_06"
+		},
+		{
+			"voicelineId": 17149,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "天理長驅。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_01"
+		},
+		{
+			"voicelineId": 17150,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "此乃天道。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_02"
+		},
+		{
+			"voicelineId": 17151,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "天動萬象。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_03"
+		},
+		{
+			"voicelineId": 17152,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "遺珠棄璧，吉光片裘…",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_01"
+		},
+		{
+			"voicelineId": 17153,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "偶遇之物，亦有風雅。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_02"
+		},
+		{
+			"voicelineId": 17154,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "不虛此行。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_03"
+		},
+		{
+			"voicelineId": 17155,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "你的實力我姑且認可。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_01"
+		},
+		{
+			"voicelineId": 17156,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "哈，有點意思。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_02"
+		},
+		{
+			"voicelineId": 17157,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "不太擅長危機應對啊。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_03"
+		},
+		{
+			"voicelineId": 17158,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "不可貿然進攻。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 17159,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "下去休息。這裡交給我。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 17160,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "啊，略感疲憊…",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_01"
+		},
+		{
+			"voicelineId": 17161,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "讓{F#妳}{M#你}看到，難堪的一面了啊。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_02"
+		},
+		{
+			"voicelineId": 17162,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "磐石…也會歸於塵土…",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_03"
+		},
+		{
+			"voicelineId": 17163,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "大意了嗎。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 17164,
+			"title": "受重擊·其二",
+			"voicelineType": "910002",
+			"description": "不足為懼。",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 17165,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "也好。",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_01"
+		},
+		{
+			"voicelineId": 17166,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "就當是散心了。",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_02"
+		},
+		{
+			"voicelineId": 17167,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "做些什麼好呢…",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_03"
+		}
+	]
+}

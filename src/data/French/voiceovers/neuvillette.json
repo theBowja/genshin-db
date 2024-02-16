@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "Première rencontre...",
+			"voicelineType": "1006",
+			"description": "Salutations. Je suis le juge suprême, ou l'iudex, de Fontaine, mais vous pouvez simplement vous adresser à moi en utilisant mon nom de famille, Neuvillette. Non pas parce que je souhaite garder mes distances avec vous... Je suis simplement conscient qu'être trop familier peut remettre en cause l'impartialité de la justice aux yeux de certains.\nSi vous avez des demandes ou des préoccupations, alors — dans la mesure permise par la loi, du moins — nous pouvons nous asseoir et en discuter tout en buvant de l'eau importée du Village de Qiaoying.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "Bavardage - Procès",
+			"voicelineType": "1101",
+			"description": "Je vois la valeur de mon propre travail, mais je vois aussi le sens de tous les efforts des gens de Fontaine. Je crois que je continuerai d'être fier de remplir mes fonctions.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "Bavardage - Goût de l'eau",
+			"voicelineType": "1102",
+			"description": "L'eau se décline en plusieurs saveurs pour les palais exigeants. L'eau de Mondstadt est nette et pure, tandis que l'eau de Liyue a un arrière-goût persistant. À Inazuma, l'eau possède une saveur d'une profondeur incomparable. L'eau de Sumeru, quant à elle, possède un profil aromatique riche et complexe, mais il faut la savourer patiemment pour l'apprécier pleinement.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "Bavardage - Mélusines",
+			"voicelineType": "1103",
+			"description": "Les mélusines sont de belles créatures, et elles font la fierté de Fontaine. Assurez-vous bien de vous lier d'amitié avec elles et de ne leur causer aucun mal.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "Quand il pleut...",
+			"voicelineType": "1201",
+			"description": "Ah, mes excuses. Une telle pluie doit être assez gênante pour vous.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "Après la pluie...",
+			"voicelineType": "1202",
+			"description": "C'est fini...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "Quand le tonnerre gronde...",
+			"voicelineType": "1203",
+			"description": "Comment dit-on déjà... « Un coup de tonnerre dans un ciel serein » ? Oui, je crois que cela reflète ce que je ressens.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terminez « Imminence de l'apocalypse ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "Quand il neige...",
+			"voicelineType": "1204",
+			"description": "La neige est en fait l'un des mécanismes naturels de purification de l'eau. Mais l'activité humaine a tendance à réduire la pureté de la neige, alors ne la consommez pas...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "Il fait bon dehors...",
+			"voicelineType": "1205",
+			"description": "Je trouve que la beauté de la lumière du soleil est mieux appréciée à l'intérieur, au travers d'une fenêtre.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "Dans le désert...",
+			"voicelineType": "1206",
+			"description": "Je ne peux m'empêcher de penser que m'amener ici fait partie d'une tentative d'assassinat...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "Au réveil...",
+			"voicelineType": "1001",
+			"description": "Bonjour. J'espère que vous allez bien aujourd'hui.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "À l'heure du déjeuner...",
+			"voicelineType": "1002",
+			"description": "Ah, il est midi passé. Vous devez avoir hâte de prendre votre thé ou votre café de l'après-midi ? Je le suis certainement.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "Le soir...",
+			"voicelineType": "1003",
+			"description": "Bonsoir. J'espère que vous n'avez rencontré aucun désagrément aujourd'hui.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "La nuit...",
+			"voicelineType": "1004",
+			"description": "Bonne nuit. J'aime beaucoup l'image d'une étendue d'eau parfaitement immobile, et c'est sur cette note que je voudrais vous souhaiter un sommeil calme et paisible. Puisse aucune vague de détresse émotionnelle ne se propager dans vos rêves ce soir...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "À propos de Neuvillette - Procès",
+			"voicelineType": "2001",
+			"description": "Je ne suis pas un fanatique des procès. Je ne les préside que par devoir, car c'est la tâche qui m'a été confiée.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "À propos de Neuvillette - Dragon Hydro qui pleure",
+			"voicelineType": "2005",
+			"description": "Vous avez donc également entendu parler de cette légende locale ? *soupir* Qui vous en a parlé ? Ou plus précisément, qui est responsable de sa propagation... Eh bien, tant pis. Je ne pense pas que le Dragon Hydro « pleure » en soi. Je pense qu'il est simplement un peu ému quand il goûte aux larmes qui ont été versées sur cette terre, à cause de toutes les émotions qu'elles contiennent.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "À propos de Neuvillette - Sens des procès",
+			"voicelineType": "2006",
+			"description": "C'est un sujet dont nous avons beaucoup parlé. Je ne cherche pas à m'exclure de l'humanité, mais réfléchissez-y. Justice, équité, égalité et loi sont des concepts différents qui ne seront jamais équivalents. Bien sûr, l'eau cherche toujours son propre niveau, et c'est dans cet esprit qu'Egeria, l'ancien Archon Hydro, a tenté d'atteindre l'égalité en unissant tous les êtres vivants par l'amour. L'Archon actuel a décidé de poursuivre le même objectif par la loi. Différents facteurs externes ont malheureusement réduit cela à des « procès », mais elle avait ses raisons, et nous ne devrions donc pas la critiquer.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "À propos de nous - Témoin",
+			"voicelineType": "2003",
+			"description": "Puisque vous venez d'un monde extérieur, je vous invite à être le témoin de mon jugement sur ce monde bouleversé. « La grande nation qui devrait être gouvernée par notre Père céleste est maintenant aux mains d'usurpateurs. Les temps sont chaotiques, mais je suis né pour arranger les choses. »",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "À propos de nous - Le monde des humains",
+			"voicelineType": "2002",
+			"description": "Depuis le temps que je vis parmi les Fontainois et que je voyage avec vous, ma façon de voir les choses a évolué. De plus, j'ai déjà pardonné les péchés des humains, et je peux vous garantir que les prochains procès ne nuiront pas aux gens ordinaires. J'ai en revanche toujours une rancune pour les usurpateurs, et ma vengeance sera terrible.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "À propos de l'œil divin... (1)",
+			"voicelineType": "3001",
+			"description": "On m'a un jour conseillé de porter un faux œil divin afin de pouvoir intervenir plus facilement dans les moments de crise. Pour être tout à fait franc, je n'ai pas été séduit par cette suggestion, ni par l'implication selon laquelle nous ne devrions exercer le pouvoir qui nous revient de droit que sous de faux prétextes. Cela dit, cependant, j'ai développé une nouvelle appréciation de la valeur de l'aspiration et de la détermination humaines après avoir passé beaucoup de temps autour d'humains détenteurs d'yeux divins.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Imminence de l'apocalypse ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "À propos de l'œil divin... (2)",
+			"voicelineType": "3006",
+			"description": "Quoi ? Même certains membres des Sept mettent un œil contrefait avant de se mêler à leur peuple ? Euh... Mes excuses. J'ai juste été pris au dépourvu par l'absurdité de cette situation.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Imminence de l'apocalypse ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "Quelque chose à partager - Lois",
+			"voicelineType": "3002",
+			"description": "Fontaine a des lois plutôt intrigantes dans ses livres. Par exemple : il est interdit de relâcher des objets volants pendant les trois premiers jours de chaque mois ; pendant la saison sèche, tous les bivalves qui s'échouent appartiennent à l'Archon Hydro, tandis que les autres mollusques appartiennent au peuple ; aucun animal domestique ne doit porter le nom de Furina ; le ketchup de tomates doit être consommé dans les restaurants uniquement comme condiment, et jamais seul ; il convient de parler des mélusines en utilisant le pronom « elle », et jamais « ça »... Ce dernier point était ma contribution personnelle.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "Quelque chose à partager - Jours pluvieux",
+			"voicelineType": "3005",
+			"description": "Certains jours, mon esprit vagabonde et je m'imagine marcher sous la pluie... *soupir* Ah, mais ne vous inquiétez pas, ces envolées d'imagination ne me distraient pas de mon travail.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "Détails intéressants - Élémentosaures",
+			"voicelineType": "3003",
+			"description": "L'ascendance des Élémentosaures remonte directement à la Fontemer, c'est pourquoi ils sont si doués pour tout ce qui a trait à l'évolution. Je me souviens d'une vieille coutume que les dragons observaient autrefois : nous buvions une gorgée du sang de nos jeunes frères morts. Chaque fois que les marées sont perturbées par le mouvement de la lune et des étoiles, l'eau dans le corps des organismes Hydro tels que nous nous monte vers la tête, nous rappelant que nos parents décédés seront bientôt ressuscités.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terminez « Imminence de l'apocalypse ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "Détails intéressants - Humains",
+			"voicelineType": "3004",
+			"description": "D'après mes observations, les humains ont tendance à se considérer comme étant en opposition avec la nature. Et chaque fois que ce point est soulevé, quelqu'un est toujours prompt à répondre en déclarant que l'homme fait en fait partie de la nature, comme tout autre organisme. Pour quelqu'un comme moi cependant, qui connaît un peu la vérité, ce qui serait le plus bénéfique, c'est que la civilisation humaine et le monde naturel de cette planète puissent chercher des moyens de coexister.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "À propos de l'Archon Géo...",
+			"voicelineType": "4001",
+			"description": "Rien ne m'empêchera de porter un jugement sur chacun des Sept. En tant qu'Archon qui a remporté l'autorité du Géo, Deus Auri doit être traduit en justice. Si quelqu'un ne souhaite pas nous voir dans des camps opposés lors d'un conflit, qu'il n'ait pas à s'inquiéter. J'ai l'intention de rester à Fontaine dans un avenir proche, ce qui pourrait bien signifier encore quatre cents ans. Autre point de consolation, même lorsque le procès aura finalement lieu, il n'est toujours pas acquis que le jugement débouchera sur une confrontation physique.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "À propos de l'Archon Anémo...",
+			"voicelineType": "4002",
+			"description": "J'accomplirai mon vœu de juger tous les Sept à tour de rôle, même si le ciel devait s'effondrer et le sol céder. En tant que récipiendaire de l'autorité de l'Anémo, le dieu de la brise et de l'espoir doit également être jugé... Hmm ? Il passe la plupart de son temps ivre et inoffensif, dites-vous ? Eh bien, quand même, je dois le rencontrer moi-même et partir de là.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "À propos de l'Archon Électro...",
+			"voicelineType": "4003",
+			"description": "En tant qu'héritier ayant récupéré le pouvoir de sa pleine dragonté, je dois toujours respecter mon serment et assumer mes responsabilités, même si ça veut dire que toute l'eau de la mer doit retourner au ciel. En acceptant l'autorité de l'Électro, Narukami a gagné sa place sur la liste des usurpateurs. Vous avez dit qu'elle hibernait maintenant dans le plan euthymique et qu'elle apparaissait rarement en public ? Je devrais donc lui rendre visite dans quelques centaines d'années.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "À propos de l'Archon Dendro...",
+			"voicelineType": "4004",
+			"description": "Même si viendra inévitablement le jour où elle sera jugée dans le futur, je reconnais toujours le sens des responsabilités de la divinité de l'herbe et des arbres. Personne ni rien n'est parfait dans le monde, mais son dévouement et ses actes de bienfaisance prouvent également ses efforts en faveur d'un progrès continu. J'ai entendu dire qu'elle avait été ignorée pendant environ cinq cents ans, et je ne peux qu'être désolé pour elle.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "À propos de Wriothesley...",
+			"voicelineType": "4005",
+			"description": "Wriothesley est un homme de confiance. Je me suis battu dur pour le titre et la réputation qu'il possède maintenant. Je m'attends à ce que vous pensiez que j'ai simplement été dupé par sa flatterie et son apparence de loyauté... Mais à cela, je citerais le proverbe inazumien : les mots non prononcés sont la fleur... Ce qui signifie qu'il vaut mieux ne pas dire certaines choses.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "À propos de Clorinde...",
+			"voicelineType": "4006",
+			"description": "Les compétences inégalées de Clorinde ont fait d'elle la duelliste mandatée la plus puissante de notre pays. En tant que successeure des anciens chasseurs de la Maréchaussée, elle joue un rôle essentiel pour assurer l'équité et l'impartialité de la salle d'audience. De plus, elle n'est en fait pas aussi stoïque qu'elle pourrait le paraître.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "À propos de Lyney et Lynette...",
+			"voicelineType": "4007",
+			"description": "Leurs performances sont tout simplement fascinantes, vous ne trouvez pas ? Ils vous entraînent dans un monde magique où, d'une part, tout ce qui se passe fait partie d'une tromperie élaborée... Mais d'autre part, toutes sortes de miracles sont possibles si vous êtes ne serait-ce que prêt à croire.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "À propos de Sigewinne...",
+			"voicelineType": "4008",
+			"description": "Je ne sais pas comment va Sigewinne ces jours-ci. Mais si j'entends ne serait-ce que le murmure d'une rumeur selon laquelle elle est victime d'intimidation, je convoquerai Wriothesley ici et exigerai une explication sur-le-champ. Elle est si gentille et vulnérable... Elle m'a apporté un négatif de Daguerréotype la dernière fois qu'elle est venue, et a demandé à écouter davantage de mes commentaires sur l'eau natlanoise... Combien de temps reste-t-il avant ses prochaines vacances ?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "À propos de Furina...",
+			"voicelineType": "4009",
+			"description": "Aujourd'hui, sa performance touche enfin à sa fin. Son rôle fut le produit de son imagination, mais ça lui a permis de remplir sa mission... Les gens timides utilisent la folie pour se donner du courage, et ça lui a demandé énormément d'efforts.\nSi vous en avez l'occasion, vous devriez l'applaudir sur scène... Enfin, si l'opportunité se présente.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Mascarade des coupables ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "À propos de Navia...",
+			"voicelineType": "4010",
+			"description": "Bien que je me sente coupable envers elle d'avouer cela, je dois dire que je me sens très distant d'elle, que ce soit lorsque je l'ai mise en colère par inadvertance, lorsque j'ai ensuite accepté ses excuses, ou malgré la culpabilité que je ressentais à ce moment-là... C'est comme si j'observais le ciel étoilé du fond d'un lac profond. Ce n'est en aucun cas intentionnel, et je sais aussi que ce n'est pas quelque chose que je peux facilement rattraper. Contrairement à l'eau, l'émotion ne se calme pas rapidement une fois agitée, ni n'est naturellement inclinée vers l'équilibre.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Alors que la bruine tombe sans raison ».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "Connaître Neuvillette (1)",
+			"voicelineType": "5001",
+			"description": "Je fais généralement de mon mieux pour éviter de nouer des relations personnelles, ou même de collaborer avec d'autres en dehors des procédures établies. Mais vous vous êtes {F#montrée}{M#montré} digne de confiance et vous n'avez aucun problème avec les factions locales de Fontaine. Par conséquent, je serais heureux de voyager avec vous.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "Connaître Neuvillette (2)",
+			"voicelineType": "5002",
+			"description": "C'est quelque chose que je ne peux dire qu'en privé, et je ne pourrais jamais partager publiquement mon point de vue à ce sujet : cela me déconcerte que le fonta ait réussi à devenir une boisson si populaire. Cependant, je suppose que son attrait pour les humains n'est pas au-delà de la compréhension. Il peut à la fois réhydrater et reconstituer la glycémie en une seule gorgée, et à un prix exceptionnellement bon marché.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "Connaître Neuvillette (3)",
+			"voicelineType": "5003",
+			"description": "Je suis allé voir un opéra récemment. Il s'agissait d'une dame dont le charme et le penchant pour la manipulation lui permettaient de continuer à contrôler les affaires du grand manoir où elle vivait même après sa mort, comme un fantôme qui refusait d'être exorcisé. Le jeu des acteurs était impeccable et l'histoire exceptionnelle. Cela m'a également rappelé l'état actuel des choses dans le monde réel.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "Connaître Neuvillette (4)",
+			"voicelineType": "5004",
+			"description": "Pour plusieurs raisons, je quitte rarement Fontaine. Ainsi, bien que j'aime goûter l'eau de source du monde entier, je me la fais toujours livrer ici, plutôt que de la récupérer moi-même. Et oui, aussi subtiles que soient les différences de saveur entre les échantillons de différentes régions, je suis parfaitement capable de les distinguer. Doutez-vous encore ? Je suis l'iudex, je ne mens pas.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "Connaître Neuvillette (5)",
+			"voicelineType": "5005",
+			"description": "Je dois dire que mon quotidien n'est pas sans inconvénients. Par exemple, je me retrouve souvent à marcher sur ma robe en m'asseyant ou à écraser ma coiffure contre le dos de ma chaise. Et si je penche trop la tête en arrière, il arrive même que mes cheveux se prennent dans l'ornementation. Néanmoins, je dois porter ces vêtements pour maintenir la dignité d'un juge suprême, et endurer ainsi tous les désagréments que cela entraîne. Incidemment, le monde dans son ensemble semble également fonctionner selon ce principe général : chacun est confronté à une identité qu'il doit accepter, endurer, comprendre et finalement apprendre à assimiler. Cela a toujours été mon expérience.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "Les loisirs de Neuvillette...",
+			"voicelineType": "6001",
+			"description": "La dégustation de l'eau est une discipline assez sophistiquée. L'eau réchauffée par l'élément Pyro est la saveur la plus courante dans le monde naturel, tandis que l'eau bouillie au charbon de bois a des notes nettement rustiques. De même, alors que l'eau refroidie par l'élément Cryo est froide mais des plus banales, les rivières gelées de Snezhnaya, une fois fondues, produisent une eau avec une saveur totalement différente.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "Les problèmes de Neuvillette...",
+			"voicelineType": "6012",
+			"description": "Les gens semblent réagir à la vue d'un homme sous la pluie sans parapluie comme s'il s'agissait d'une sorte de spectacle étrange.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "Plats préférés...",
+			"voicelineType": "6003",
+			"description": "Les animaux peuvent survivre des semaines sans nourriture, mais seulement quelques jours sans eau. Aucun plat ne peut se comparer à l'eau claire et pure. Dans cet esprit, les aliments à haute teneur en liquide sont en deuxième position dans ce qui se fait de mieux.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "Plats détestés...",
+			"voicelineType": "6004",
+			"description": "Comment les gens peuvent-ils se résoudre à consommer des aliments frits ? Ou des grillades sans sauce ? Est-ce même comestible ? Les pires coupables à mon avis sont ces charbons d'ajilenakh de Sumeru. Sûrement, même consommer un déshydratant serait plus doux pour l'estomac...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "Cadeau reçu (1)",
+			"voicelineType": "6007",
+			"description": "Délicieux, avec une abondance de jus — élément important — et des ingrédients cuits à la perfection.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "Cadeau reçu (2)",
+			"voicelineType": "6008",
+			"description": "Bel effort en effet. Mon seul conseil serait d'augmenter la teneur en liquide et de réduire la quantité de matières grasses.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "Cadeau reçu (3)",
+			"voicelineType": "6009",
+			"description": "Trop sec. Un plat dépourvu de sauce n'a aucun moyen de transmettre les intentions de son chef.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "Anniversaire...",
+			"voicelineType": "7001",
+			"description": "Ah, alors c'est votre anniversaire. Joyeux anniversaire ! Je ne sais pas si la pluie est prévue aujourd'hui, mais laissez-moi voir ce que je peux faire.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "Affinité faible",
+			"voicelineType": "8001",
+			"description": "Je vous connais un peu mieux maintenant, alors je peux m'adapter à vos mouvements.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 1.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "Affinité moyenne",
+			"voicelineType": "8002",
+			"description": "Je vais apparemment devoir montrer un peu plus de mes vraies capacités. Je ne savais pas que vous aviez un tel penchant pour vous mettre dans des situations dangereuses.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 2.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "Affinité élevée",
+			"voicelineType": "8003",
+			"description": "Voilà donc ce dont vous êtes réellement capable ? Je vais devoir m'y mettre sérieusement si je veux vous rattraper.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 4.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "Affinité max",
+			"voicelineType": "8004",
+			"description": "Maintenant que j'ai récupéré l'une des sept autorités des mains des usurpateurs, j'ai retrouvé ma vraie forme. Je suis maintenant un dragon à part entière, assez puissant pour juger le reste des dieux. Mon destin final est de juger le roi-usurpateur dans les cieux d'en haut. Mais jusqu'à ce que ce moment vienne, je vous prêterai mon pouvoir.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 6.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "Compétence élémentaire (1)",
+			"voicelineType": "100001",
+			"description": "Silence !",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "Compétence élémentaire (2)",
+			"voicelineType": "100002",
+			"description": "Baissez la tête.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "Compétence élémentaire (3)",
+			"voicelineType": "100003",
+			"description": "Calmez-vous.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "Déchaînement élémentaire (1)",
+			"voicelineType": "200001",
+			"description": "Ô marées, je reviens.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "Déchaînement élémentaire (2)",
+			"voicelineType": "200002",
+			"description": "Que la sanctification soit vôtre.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "Déchaînement élémentaire (3)",
+			"voicelineType": "200003",
+			"description": "Que les hautains soient humiliés.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "Ouverture de coffre (1)",
+			"voicelineType": "300001",
+			"description": "Un bien abandonné appartient à celle ou celui qui le trouve en premier. C'est donc légalement le vôtre maintenant.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "Ouverture de coffre (2)",
+			"voicelineType": "300002",
+			"description": "Est-ce ce que vous souhaitiez trouver ? Espérons que l'excitation d'ouvrir un coffre en a au moins fait une expérience enrichissante.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "Ouverture de coffre (3)",
+			"voicelineType": "300003",
+			"description": "Qu'il soit consigné que je consens verbalement à remettre ces objets en votre possession.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "PV faibles (1)",
+			"voicelineType": "410001",
+			"description": "Aucune inquiétude à avoir, je suis indemne.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "PV faibles (2)",
+			"voicelineType": "410002",
+			"description": "Le risque grandit, mais il ne me menace pas.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "PV faibles (3)",
+			"voicelineType": "410003",
+			"description": "Hmph... Une déchirure dans ma robe...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "Compagnon avec PV faibles (1)",
+			"voicelineType": "400001",
+			"description": "Laissez-moi intervenir.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "Compagnon avec PV faibles (2)",
+			"voicelineType": "400002",
+			"description": "Faites une courte pause.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "K.O. (1)",
+			"voicelineType": "500001",
+			"description": "Quand la marée montera, je reviendrai...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "K.O. (2)",
+			"voicelineType": "500002",
+			"description": "Je vois les eaux tempérées des éons passés...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "K.O. (3)",
+			"voicelineType": "500003",
+			"description": "Un silence emplit l'air...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "Attaque puissante subie (1)",
+			"voicelineType": "910001",
+			"description": "Un revirement inattendu.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "Attaque puissante subie (2)",
+			"voicelineType": "910002",
+			"description": "Une négligence de ma part...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "Ajout dans l'équipe (1)",
+			"voicelineType": "600001",
+			"description": "Merci de me permettre... Non, de m'inviter à vous rejoindre.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "Ajout dans l'équipe (2)",
+			"voicelineType": "600002",
+			"description": "Le plaisir est mien.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "Ajout dans l'équipe (3)",
+			"voicelineType": "600003",
+			"description": "Peut-être pourrions-nous faire une promenade au bord d'une rivière ou dans un endroit fluvial similaire.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

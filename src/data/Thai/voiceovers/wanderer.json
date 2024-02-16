@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "พบกันครั้งแรก...",
+			"voicelineType": "1006",
+			"description": "จะให้ฉันแนะนำชื่อตัวเอง? บนโลกนี้ ฉันมีชื่อฉายานับไม่ถ้วน แม้ว่าแต่ละอันจะสูงส่ง เกินกว่าคนธรรมดาจะเอื้อมถึงก็เถอะ แต่สำหรับฉัน มันก็เป็นเพียงอดีตไปแล้ว\nอยากเรียกอะไรก็ตามใจเธอเถอะ ไหนขอดูรสนิยมของเธอหน่อย อย่าให้ฉันผิดหวังล่ะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "แชท - ลม",
+			"voicelineType": "1101",
+			"description": "บนโลกนี้ไม่มีอิสระอันบริสุทธิ์หรอกนะ สายลมก็มีวันที่หยุดพัดเช่นกัน",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "แชท - การพูดการจา",
+			"voicelineType": "1102",
+			"description": "ฉันพูดจาโผงผางขวานผ่าซากงั้นเหรอ? ก็แค่พูดไปตามความจริงก็เท่านั้น คนที่รับไม่ได้ต่างหากที่ควรต้องพิจารณาตัวเอง",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "แชท - พูดจาตามมารยาท",
+			"voicelineType": "1103",
+			"description": "ไม่จำเป็นต้องคุยกันตามมารยาท เวลาหาอะไรมาคุยตอนไม่มีอะไรจะพูดนั้น น่าขันสิ้นดี",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "ในเวลาที่ฝนตก...",
+			"voicelineType": "1201",
+			"description": "อยากใช้หมวกของฉันมากันฝน? คำขอแบบนี้เธอก็กล้าพูดออกมาเนอะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "ฟ้าหลังฝน...",
+			"voicelineType": "1202",
+			"description": "เห็นแสงแดดนิด ๆ หน่อย ๆ ต้องดีใจถึงขั้นนี้เลยหรือไง? เด็กน้อยจริง ๆ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "ในเวลาที่ฟ้าผ่า...",
+			"voicelineType": "1203",
+			"description": "ชิ... น่ารำคาญ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "ในเวลาที่หิมะตก...",
+			"voicelineType": "1204",
+			"description": "ทั้ง ๆ ที่ไม่ต่างอะไรไปจากฝน แต่กลับชวนให้ชอบมากกว่าเยอะ... โชคชะตาชีวิตขึ้นอยู่กับแต่ละคนจริงด้วย",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "ในเวลาที่ลมพัดแรง...",
+			"voicelineType": "1205",
+			"description": "ลมแค่นี้เอง เธอก็ทำได้เหมือนกันนี่?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "อรุณสวัสดิ์...",
+			"voicelineType": "1001",
+			"description": "\"รีบตื่นเร็ววว... พระอาทิตย์จะส่องถึงก้นแล้วน้า...\" ...เฮอะ เธอคงไม่คิดว่า ฉันจะปลุกเธอแบบนี้หรอกใช่มั้ย?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "สวัสดีตอนเที่ยง...",
+			"voicelineType": "1002",
+			"description": "ฉันไม่จำเป็นต้องกินอาหาร แค่ช่วยฉันด้วยการดูแลตัวเองกับของที่ลอยข้างเธอให้ดีก็พอ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "สวัสดีตอนเย็น...",
+			"voicelineType": "1003",
+			"description": "ในที่สุด วันที่แสนน่าเบื่อก็จะจบลงแล้วสินะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "ราตรีสวัสดิ์...",
+			"voicelineType": "1004",
+			"description": "อยู่ข้างฉันแล้วนอนไม่หลับเหรอ? ฮึฮึ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#เกี่ยวกับ {REALNAME[ID(1)]} - หุ่นเชิด",
+			"voicelineType": "2001",
+			"description": "การเผาหุ่นเชิดจะหลงเหลือเถ้าถ่าน ส่วนจากเถ้าถ่านจะเกิดเป็นอะไรนั้น...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#เกี่ยวกับ {REALNAME[ID(1)]} - หัวใจ",
+			"voicelineType": "2005",
+			"description": "ของแบบนั้นจะเป็นยังไงก็ช่าง การยึดติดกับสิ่งที่กำหนดไว้แล้วว่าไม่ใช่ของตัวเองนั้น ก็เป็นเพียงการเสียเวลาเปล่า ฉันในตอนนี้ มีสิ่งสำคัญกว่าที่ต้องทำ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "เกี่ยวกับเรา - คู่ต่อสู้",
+			"voicelineType": "2003",
+			"description": "ยังติดใจกับการกระทบกระทั่งเมื่อก่อนของพวกเราหรือไง? โฮ่ แล้วยังไงดีล่ะ เธอจะทำยังไง? ค่อย ๆ คิด ฉันไม่รีบ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "เกี่ยวกับเรา - พวกเดียวกัน",
+			"voicelineType": "2002",
+			"description": "ฉันไม่มีทางกลายเป็นฝ่าย \"ธรรมะ\" ได้ แต่ในเมื่อเคยพูดไว้แล้วว่า จะตอบแทนบุญคุณเธอ ฉันก็จะทำตามที่รับปากไว้\nว่าแต่เธอเถอะ ตอนมาเจอกับฉันอย่าลืมนึกถึงจุดยืนตัวเองให้ดีนะ? ถ้าเกิดมีคนมาพบเข้าแล้ว บอกว่าเธอ \"สมรู้ร่วมคิด\" กับคนชั่วล่ะก็ ฉันไม่รับผิดชอบหรอกนะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "เกี่ยวกับ \"วิชั่น\"...",
+			"voicelineType": "3001",
+			"description": "ประโยคที่ว่า \"การเฝ้ามองจากพระเจ้า\" ชวนให้ไม่สบอารมณ์ชะมัด แต่ยังไงก็เป็นพลังที่เอามาใช้ได้ ฉันไม่เรื่องมากหรอก เธอรู้สึกว่า \"ธาตุลม\" มีความหมายลึกซึ้งซ่อนอยู่เหรอ? ฮึ ทำไมถึงคิดแบบนั้น? เวลาเทพเจ้าทำอะไรก็เผด็จการและไร้เหตุผลทั้งนั้นแหละ ฉันเคยแสดงให้เธอเห็นแล้วไม่ใช่หรือไง?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "ต้องการจะแชร์อะไร...",
+			"voicelineType": "3002",
+			"description": "ไม่มี เธออยากถามอะไรก็ว่ามา ฉันจะตอบตามอารมณ์",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "ข้อมูลที่น่าสนใจ...",
+			"voicelineType": "3003",
+			"description": "ดูเถอะ นกจะอวดปีกของตน กระรอกจะรีบตุนเสบียง ส่วนมนุษย์ก็เอาแต่วิ่งวุ่นทั้งวันเพื่อชีวิตความเป็นอยู่ สิ่งมีชีวิตที่มีความคิดเรียบง่ายต่างมีชีวิตที่ง่ายดายทั้งนั้นเลยนะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "เกี่ยวกับท่านหญิงน้อย Kusanali...",
+			"voicelineType": "4001",
+			"description": "การที่เทพแห่งพฤกษาไม่เลือกกำจัดฉัน บางทีอาจไม่ใช่แค่เพราะฉันยังมีประโยชน์ บางทีอาจเป็นเพราะว่าเจ้าตัวฉลาดเฉลียวและมีจิตใจเมตตา หรือบางทีอีกฝ่ายก็อาจเห็นความโดดเดี่ยวบนตัวฉัน... เธอบอกว่า ฉันกำลังเดาไปในทางที่แย่งั้นเหรอ? เฮอะ มันก็เป็นเรื่องแน่นอน! ฉันไม่ใช่คนดีอะไรอยู่แล้ว",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "เกี่ยวกับโชกุน Raiden...",
+			"voicelineType": "4002",
+			"description": "ไม่สนใจไยดีต่อสิ่งที่ตัวเองสร้างขึ้น แต่กลับอ้างด้วยเหตุผลสวยหรูว่า ไม่อยากแทรกแซงโชคชะตาของฉัน...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "เกี่ยวกับ \"ราชินี\"...",
+			"voicelineType": "4003",
+			"description": "ใคร ๆ ต่างก็ชื่นชมถึงความอ่อนโยนและความเมตตาของเธอคนนี้ หารู้ไม่ว่า \"รัก\" ก็เป็นอีกรูปแบบของ \"บาป\" ด้วยเช่นกัน ไม่แน่เจ้าตัวอาจแค่อยากชดใช้อะไรบางอย่างก็ได้นะ?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "เกี่ยวกับ The Jester...",
+			"voicelineType": "4004",
+			"description": "\"The Jester\" เป็นชาว Khaenri'ah ผู้เหลือรอด... ฉันไม่รู้อะไรเกี่ยวกับเขาไปนอกเหนือจากนี้แล้ว และไม่เคยได้คุยอะไรกับเขาอย่างใกล้ชิดด้วย แต่เขาดูเหมือนจะมีอะไรที่ต้องการจากตัวฉัน ก่อนหน้านี้เลยส่งฉันไปปฏิบัติภารกิจสำคัญไม่น้อย รวมถึงการไปยัง \"Abyss\" ด้วย",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "เกี่ยวกับ The Captain...",
+			"voicelineType": "4005",
+			"description": "\"Captain ผู้ทรงความยุติธรรม\", \"Captain ผู้กล้าหาญเฉียบขาด\", \"Captain ผู้สร้างคุณงามความดี\"... ถ้อยคำที่แพร่หลายในหมู่ Fatui เหล่านี้ ขนาดหุ่นเชิดยังฟังจนหูด้านได้เลย เธอไม่คิดว่า \"ความยุติธรรม\" เป็นความอันตรายสุดขีดที่แฝงอยู่หรือไง? ยิ่งไม่ต้องพูดถึงความสามารถแข็งแกร่งของ \"The Captain\" เลย",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "เกี่ยวกับ The Doctor...",
+			"voicelineType": "4006",
+			"description": "น่าเสียดายซะจริง ท่านหญิงน้อย Kusanali ให้เขากำจัดชิ้นส่วนตั้งมากมายทิ้งไป ช่วงชิงความสุขที่ฉันจะได้เชือดเฉือนเขาทีละชิ้นส่วนไปหมด",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "เกี่ยวกับ Damselette...",
+			"voicelineType": "4007",
+			"description": "คำถาม: เมื่อพบ \"สาวน้อย\" ที่ \"ไม่ว่าเวลาไหน\" ก็ดูใสซื่อบริสุทธิ์ \"ไม่ว่าจะทำอะไร\" ก็เรียบเฉยชินชานั้น ควรทำอย่างไร? ถ้าเป็นฉันก็คงเข้าไปท้าสู้ ส่วนเธอ... มีจิตสำนึกดีเกินไป อยู่ให้ห่างเจ้าตัวหน่อยจะดีกว่า",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "เกี่ยวกับ The Knave...",
+			"voicelineType": "4008",
+			"description": "หมาป่าหุ้มหนังแกะ \"ความสง่างาม\" และ \"ความสนิทสนม\" ที่เธอคนนั้นแสดงออก ก็เพื่อที่จะ \"ควบคุม\" ได้ง่ายขึ้นก็เท่านั้น และคนที่เคยพบกับด้านบ้าคลั่งของเจ้าตัวนั้น ส่วนมากก็... ฟู่ว~",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "เกี่ยวกับ The Rooster...",
+			"voicelineType": "4009",
+			"description": "ก็มีแต่ \"Childe\" เท่านั้นแหละที่จะคิดว่า \"The Rooster\" เอาใจใส่เขากับครอบครัวอย่างจริงใจไม่หวังผล แม้ว่าท่านนายกคนนั้นจะทำเรื่องดีเอาไว้เยอะก็ตาม แต่ขอแค่คนมีสมองคิดหน่อยก็จะดูออกว่า ความหมายที่แฝงอยู่ก็คือ \"ครอบครัวของเธออยู่ในกำมือของฉัน\" ไม่ใช่หรือไง?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "เกี่ยวกับ Marionette...",
+			"voicelineType": "4010",
+			"description": "นอกจากการวิจัยของตัวเองแล้ว เธอคนนี้ก็ไม่สนใจอะไรอีก นิสัยเลวร้ายสุดขีด แต่แม้ว่าจะทำตัวสุดโต่งถึงขนาดนี้แล้ว สิ่งที่ผลิตออกมาก็เป็นแค่ขยะกองใหญ่ ตอนฉันยังเป็นผู้บริหาร อันดับก็ต่ำกว่าฉันที่หนึ่งอีก น่าสงสารจริง ๆ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "เกี่ยวกับ Regrator...",
+			"voicelineType": "4011",
+			"description": "ผู้บริหารอันดับที่เก้าคนนั้นน่ะเหรอ เขายึดติดกับ \"การแลกเปลี่ยนที่เท่าเทียม\" มาก ถึงขั้นเคยลองล้มล้างความไม่เท่าเทียมตั้งแต่เกิดที่มีระหว่างมนุษย์กับเทพเจ้าด้วย แต่มนุษย์ธรรมดาก็เป็นอย่างนี้ ชอบมีความคิดเพ้อฝันไปเรื่อย ไม่มีอะไรเป็นพิเศษหรอก ก็เหมือนกับความสามารถและสายตาที่แสนจะธรรมดาของเขานั่นแหละ... เลือกที่จะร่วมมืออย่างใกล้ชิดกับ \"The Doctor\" ฮึ แบบนี้จบไม่สวยหรอกนะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "เกี่ยวกับ Childe...",
+			"voicelineType": "4012",
+			"description": "หัวสมองคิดอะไรเรียบง่าย แขนขาก็ไม่แข็งแรง ให้เขาอยู่อันดับสุดท้ายยังถือว่าดึงมาตรฐานโดยรวมของผู้บริหารให้ต่ำลงเลย โชคดีที่ฉันไม่ใช่หนึ่งในนั้นแล้ว",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "เกี่ยวกับ The Fair Lady...",
+			"voicelineType": "4013",
+			"description": "ในเถ้าถ่านของเธอคนนี้ไม่หลงเหลืออะไรทั้งนั้น ฉันไม่สนใจคนที่สูญสิ้นอนาคตไปแล้วหรอกนะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "เกี่ยวกับ Yae Miko...",
+			"voicelineType": "4014",
+			"description": "โยไกที่พูดจาปลิ้นปล้อนไหลไปเรื่อย เพื่อเอาใจเทพเจ้า จึงแสร้งทำตัวเหมือนเอาใจใส่มนุษย์ แต่จริง ๆ แล้ว ก็แค่กำลังหาเรื่องสนุกฆ่าเวลาไม่ใช่หรือไง?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "เกี่ยวกับ Kaedehara Kazuha...",
+			"voicelineType": "4015",
+			"description": "เธอหมายถึงทายาทรุ่นหลังของตระกูล Kaedehara? งั้นเขาก็... โฮ่? เขาก็มี \"วิชั่น\" ธาตุลม แถมยังเคยรับดาบของโชกุน Raiden ได้ด้วย? ฮึฮึ... ฮ่าฮ่าฮ่าฮ่าฮ่าฮ่าฮ่าฮ่า!",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#อยากรู้เกี่ยวกับ {REALNAME[ID(1)]} - 1",
+			"voicelineType": "5001",
+			"description": "หาได้ยากจริง ไม่คิดเลยว่าอยากจะรู้เกี่ยวกับฉัน รู้แล้วจะเรียกปัญหาเข้าตัวได้นะ?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#อยากรู้เกี่ยวกับ {REALNAME[ID(1)]} - 2",
+			"voicelineType": "5002",
+			"description": "อ่า ต้องมีคนอีกเยอะมากมายที่อยากมาคิดบัญชีกับฉันแน่นอน ไม่เป็นไร ฉันไม่ถือสาคนที่มาหาหรอก... อันที่จริงก็เรียกได้ว่า ค่อนข้างจะตั้งตารอเลยต่างหาก",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#อยากรู้เกี่ยวกับ {REALNAME[ID(1)]} - 3",
+			"voicelineType": "5003",
+			"description": "ฉันเคยนึกว่าการกลายเป็นเทพเจ้า จะทำให้ละทิ้งความรู้สึกอันไร้ประโยชน์ได้ แต่ตอนนี้ไม่คิดแบบนั้นแล้ว ไม่ว่า \"ความโกรธแค้น\" จะมาจากผู้อื่นหรือตัวเอง มันก็เป็นเครื่องมือที่ใช้งานได้สะดวกทีเดียว\nจะไปมีคนที่ไม่โกรธไปเลยตลอดได้ยังไง? จินตนาการไม่ออกด้วยซ้ำ คนแบบนี้ไม่มีอารมณ์ฉุนเฉียวเลยหรือไงนะ?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#อยากรู้เกี่ยวกับ {REALNAME[ID(1)]} - 4",
+			"voicelineType": "5004",
+			"description": "ตอนเข้าสู่ Irminsul นั้น ในใจฉันมีเพียงแค่ความคิดเดียวเท่านั้น: หวังว่าตัวเองจะไม่เคยเกิดมาบนโลกนี้\nIrminsul ตอบรับความปรารถนานี้ แต่กลับไม่ได้นำพามาซึ่งผลลัพธ์ที่ฉันต้องการ โลกแห่งนี้ก็ยังคงล้อเล่นกับโชคชะตาของเหล่านักโทษบนดินดั่งเช่นเคย",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#อยากรู้เกี่ยวกับ {REALNAME[ID(1)]} - 5",
+			"voicelineType": "5005",
+			"description": "เธอกับฉันเคยเดินมาบรรจบกันบนเส้นทางหนึ่ง แต่สักวันก็คงต้องแยกกันไปคนละทาง ใครจะรู้บ้างว่า หลังจากนี้จะเกิดอะไรขึ้นบ้าง? รอดูต่อไปเถอะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเนื้อเรื่อง \"พระวิหารที่ล่มสลาย\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#งานอดิเรกของ {REALNAME[ID(1)]}...",
+			"voicelineType": "6001",
+			"description": "งานอดิเรก? นั่นเป็นสิ่งที่คนว่างไม่มีอะไรทำถึงจะมานั่งนึกถึงกัน ฉันดูเหมือนว่างนักหรือไง?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#เรื่องกลุ้มใจของ {REALNAME[ID(1)]}...",
+			"voicelineType": "6002",
+			"description": "ต้องทำไงถึงจะสลัดเธอทิ้งแล้ว ไปอาละวาดสักตั้งได้ ...ล้อเล่นน่ะ เธอเชื่อเหรอ?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "อาหารที่ชอบ...",
+			"voicelineType": "6005",
+			"description": "มีชามั้ย? ยิ่งขมก็ยิ่งดี รสชาติทิ้งทวนทำให้ไม่รู้จักเบื่อ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "อาหารที่เกลียด...",
+			"voicelineType": "6004",
+			"description": "พวกของหวาน ๆ เลี่ยน ๆ จนฟันแทบจะติดหนึบกันแบบนั้นน่ะ เธอเก็บไว้กินเองเถอะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "ได้รับของขวัญ - 1",
+			"voicelineType": "6007",
+			"description": "พอได้อยู่ ถือว่าเป็นหนึ่งในข้อดีที่เธอมีอยู่แค่น้อยนิดล่ะนะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "ได้รับของขวัญ - 2",
+			"voicelineType": "6008",
+			"description": "ไม่เลว อย่างน้อยก็ทำอาหารที่กินเข้าปากได้",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "ได้รับของขวัญ - 3",
+			"voicelineType": "6009",
+			"description": "คิดจะฆ่ากันเหรอ? หรือเธอจะลืมไปว่าฉันไม่ใช่มนุษย์?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "วันเกิด...",
+			"voicelineType": "7001",
+			"description": "ส่งมือมาให้ฉัน... ฮึ อย่าเกร็งไปสิ ก็แค่จะพาเธอไปที่สูงดูก็เท่านั้นเอง\nเป็นไง? ทัศนียภาพสวยตรึงตาใจมั้ยล่ะ ไม่ต้องขอบคุณหรอก ขอบคุณกันไปมาไม่เห็นมีประโยชน์อะไร",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทนำ",
+			"voicelineType": "8001",
+			"description": "...มองออกได้ว่า เธอพยายามแล้ว",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - ชี้แจง",
+			"voicelineType": "8002",
+			"description": "ลมพัดมาแล้ว... เธอทำอะไรไป?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - มุมมองอื่น ๆ",
+			"voicelineType": "8003",
+			"description": "มอบพลังให้กับฉันแบบนี้ เธอไม่กลัวผลลัพธ์ที่จะตามมาหรือไง? ...ก็ได้",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทสรุป",
+			"voicelineType": "8004",
+			"description": "ถึงจะบอกว่า ฉันสามารถกลายเป็นพลังให้กับเธอได้ แต่การเห็นฉันเป็นพวกพ้องก็เป็นเรื่องที่อันตรายอยู่ดี หวังว่าเธอจะรู้ชัดเจนว่าตัวเองกำลังเผชิญหน้ากับอะไรอยู่ ถ้าเธอไม่กลัว ก็มายืนหลบด้านหลังฉันเถอะ",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "สกิลธาตุ - 1",
+			"voicelineType": "100001",
+			"description": "ลมจงมา!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "สกิลธาตุ - 2",
+			"voicelineType": "100002",
+			"description": "โลกที่แสนต้อยต่ำ!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "สกิลธาตุ - 3",
+			"voicelineType": "100003",
+			"description": "สายลมพัดเกรี้ยว!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "ท่าไม้ตาย - 1",
+			"voicelineType": "200001",
+			"description": "แมลงที่น่ารังเกียจ!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "ท่าไม้ตาย - 2",
+			"voicelineType": "200002",
+			"description": "เจ้าหนูขี้ขลาด!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "ท่าไม้ตาย - 3",
+			"voicelineType": "200003",
+			"description": "ร้องเสียงดังกว่านี้สิ!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "ท่าไม้ตาย - 4",
+			"voicelineType": "200004",
+			"description": "ก้มหัวลงไปซะ!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "ท่าไม้ตาย - 5",
+			"voicelineType": "200005",
+			"description": "ไม่รู้สถานะของตัวเองเลยนะ!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "ท่าไม้ตาย - 6",
+			"voicelineType": "200006",
+			"description": "แกมีสิทธิ์มองตรงมาที่ฉันด้วยหรือไง?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "เริ่มวิ่ง - 1",
+			"voicelineType": "700001",
+			"description": "สายลมพวยพุ่ง!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "เริ่มวิ่ง - 2",
+			"voicelineType": "700002",
+			"description": "มุ่งสู่วายุ!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "เริ่มวิ่ง - 3",
+			"voicelineType": "700004",
+			"description": "...ช้าจัง",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "เริ่มวิ่ง - 4",
+			"voicelineType": "700005",
+			"description": "ไม่ได้บอกให้เธอตามมาด้วยสักหน่อย",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "เปิดหีบสมบัติ - 1",
+			"voicelineType": "300001",
+			"description": "ไม่เห็นจำเป็น",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "เปิดหีบสมบัติ - 2",
+			"voicelineType": "300002",
+			"description": "เฮอะ? แค่นี้ก็ยังจะเอา?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "เปิดหีบสมบัติ - 3",
+			"voicelineType": "300003",
+			"description": "เก็บไว้เล่นเองเถอะ",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "ค่าพลังชีวิตต่ำ - 1",
+			"voicelineType": "410001",
+			"description": "ชินแล้ว",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "ค่าพลังชีวิตต่ำ - 2",
+			"voicelineType": "410002",
+			"description": "ไม่ควรค่าแก่การพูดถึง",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 1",
+			"voicelineType": "400001",
+			"description": "ไร้ประโยชน์!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 2",
+			"voicelineType": "400002",
+			"description": "ไม่ได้หวังให้เธอมีประโยชน์อะไรแต่แรกแล้ว",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "หมดสติ - 1",
+			"voicelineType": "500001",
+			"description": "จมดิ่งสู่... Abyss...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "หมดสติ - 2",
+			"voicelineType": "500002",
+			"description": "ทุกอย่าง... เสียแรงเปล่า...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "หมดสติ - 3",
+			"voicelineType": "500003",
+			"description": "ผลกรรมของบาป...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "โดนโจมตีอย่างหนัก - 1",
+			"voicelineType": "910001",
+			"description": "ก็แค่นี้",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "โดนโจมตีอย่างหนัก - 2",
+			"voicelineType": "910002",
+			"description": "...น่าขันสิ้นดี",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "โดนโจมตีอย่างหนัก - 3",
+			"voicelineType": "910003",
+			"description": "...แกตายแน่",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "โดนโจมตีอย่างหนัก - 4",
+			"voicelineType": "910004",
+			"description": "รออ้อนวอนขอชีวิตได้เลย",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "โดนโจมตีอย่างหนัก - 5",
+			"voicelineType": "910005",
+			"description": "เตรียมจะรับผลลงโทษหรือยัง",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "เข้าร่วมทีม - 1",
+			"voicelineType": "600001",
+			"description": "คิดไม่ถึงเลย... จะให้ฉันทำอะไร?",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "เข้าร่วมทีม - 2",
+			"voicelineType": "600002",
+			"description": "บอกฉันทีว่าเป็นเรื่องสำคัญ",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "เข้าร่วมทีม - 3",
+			"voicelineType": "600003",
+			"description": "ต้องฉันเท่านั้นเหรอ? ...ก็ได้ จะฝืน ๆ ไปแล้วกัน",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

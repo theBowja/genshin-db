@@ -1,0 +1,743 @@
+{
+	"id": 10000026,
+	"name": "Xiao",
+	"friendLines": [
+		{
+			"voicelineId": 16100,
+			"title": "Première rencontre...",
+			"voicelineType": "1000",
+			"description": "Si vous vous réveillez avec un couteau sous la gorge, si des monstres approchent leurs griffes de vos entrailles, si la mort vient frapper à votre porte... Dites mon nom : Adepte Xiao, et je viendrai à votre appel.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_draw_appear"
+		},
+		{
+			"voicelineId": 16101,
+			"title": "Bavardage - Oisiveté",
+			"voicelineType": "1101",
+			"description": "J'en suis réduit à me tenir debout à rien faire... Comme c'est bête.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_explore_idle_01"
+		},
+		{
+			"voicelineId": 16102,
+			"title": "Bavardage - Esprits errants",
+			"voicelineType": "1102",
+			"description": "Les damnés périront avant de pouvoir porter la main sur moi.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_explore_idle_02"
+		},
+		{
+			"voicelineId": 16103,
+			"title": "Bavardage - Corruption",
+			"voicelineType": "1103",
+			"description": "Ughhh... *halète* Ces souvenirs... si noirs...",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_explore_idle_03"
+		},
+		{
+			"voicelineId": 16104,
+			"title": "Quand il pleut...",
+			"voicelineType": "1201",
+			"description": "Les monstres ne s'arrêtent pas parce qu'il pleut. Alors on bouge.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 16105,
+			"title": "Après la pluie...",
+			"voicelineType": "1202",
+			"description": "La pluie s'est arrêtée ? Je ne me soucie guère du temps qu'il fait.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 16106,
+			"title": "Quand le tonnerre gronde...",
+			"voicelineType": "1203",
+			"description": "Nombre de mortels sont effrayés par le tonnerre... C'est incompréhensible. Avoir peur de quelque chose d'aussi commun.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_thunder_01"
+		},
+		{
+			"voicelineId": 16107,
+			"title": "Quand il neige...",
+			"voicelineType": "1204",
+			"description": "Lorsqu'il y aura assez de neige, on pourra la manger.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_weather_snowy_01"
+		},
+		{
+			"voicelineId": 16108,
+			"title": "Au réveil...",
+			"voicelineType": "1001",
+			"description": "On perd du temps. Allons-y.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 16109,
+			"title": "À l'heure du déjeuner...",
+			"voicelineType": "1002",
+			"description": "C'est l'heure du déjeuner... On va retourner à l'Auberge Wangshu.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 16110,
+			"title": "Le soir...",
+			"voicelineType": "1003",
+			"description": "La nuit... Quand la pénombre vient vous envelopper. Ne restez pas dehors.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 16111,
+			"title": "La nuit...",
+			"voicelineType": "1004",
+			"description": "Allez-y. Je serai là.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 16112,
+			"title": "À propos de Xiao - Inhumain",
+			"voicelineType": "2001",
+			"description": "Je suis loin d'être humain, alors je ne comprends pas grand-chose à leurs émotions.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_idle_01"
+		},
+		{
+			"voicelineId": 16113,
+			"title": "À propos de Xiao - Liyue",
+			"voicelineType": "2006",
+			"description": "Liyue change. À grande vitesse... Oubliez ça. Ça ne veut rien dire pour moi.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_idle_02"
+		},
+		{
+			"voicelineId": 16114,
+			"title": "À propos de nous - Avertissement",
+			"voicelineType": "2002",
+			"description": "Si arrive un jour où même vous êtes {M#emporté}{F#emportée} par les ténèbres, ce sera alors à moi de...",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close1"
+		},
+		{
+			"voicelineId": 16115,
+			"title": "À propos de nous - Confiance",
+			"voicelineType": "2003",
+			"description": "Ne vous laissez pas emporter par les ténèbres. Je suis sans pitié.\nMais, peut-être que vous arriverez à vous en sortir {M#seul}{F#seule}.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16116,
+			"title": "À propos de nous - Sommeil",
+			"voicelineType": "2004",
+			"description": "Qui va là ? Oh... Vous pensiez que je dormais ? Vous n'avez vraiment aucun respect pour les Adeptes.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16117,
+			"title": "À propos de nous - Festival des lanternes",
+			"voicelineType": "2005",
+			"description": "Le Festival des lanternes ? Le moment pour les humains de jeter leurs déchets volants lumineux dans la mer... Comme c'est stupide...\nMais bon, si vous insistez... j'irai avec vous.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_close4",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16118,
+			"title": "À propos de l'œil divin - Désirs",
+			"voicelineType": "3001",
+			"description": "Si j'ai le moindre désir ? Pff. Ne considérez pas qu'un Adepte ait les mêmes aspirations qu'un mortel. Je n'ai aucun désir.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16119,
+			"title": "À propos de l'œil divin - Raisons",
+			"voicelineType": "3004",
+			"description": "Si je cache quelque chose ? Je ne cache rien. Je ne parle juste pas de mes désirs aux autres.\nEst-ce que vous autres, mortels, n'avez pas une règle selon laquelle si on dévoile son vœu, il ne se réalise pas ? Hmm ? Qu'est-ce que vous voulez dire par ce n'est pas la même chose ?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16120,
+			"title": "Quelque chose à partager ?",
+			"voicelineType": "3002",
+			"description": "La mort est ma spécialité. Si vous n'arrivez pas à passer à l'acte, appelez-moi.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_share"
+		},
+		{
+			"voicelineId": 16121,
+			"title": "Détails intéressants...",
+			"voicelineType": "3003",
+			"description": "Le Marais Dihua était autrefois abandonné.\nEnfin, cela remonte à des dizai... Non, des centaines d'années.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_gift"
+		},
+		{
+			"voicelineId": 16122,
+			"title": "À propos de Zhongli...",
+			"voicelineType": "4002",
+			"description": "Est-ce que je peux demander... Zhongli, que fait-il de ses journées ? Hein ? Des oiseaux, des antiquités, des fleurs...\nHmm... Quelle est la signification de tout cela ?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Une étoile en approche ».",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16123,
+			"title": "À propos de Beidou...",
+			"voicelineType": "4003",
+			"description": "Beidou ? Je n'ai rien à faire avec elle. Mais le léviathan existe. En tant que simple humaine, elle a prouvé sa force en terrassant « Haishan ».",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16124,
+			"title": "À propos de Baizhu...",
+			"voicelineType": "4004",
+			"description": "Vous voulez... que Baizhu confectionne un remède pour alléger mes souffrances ? Je comprends vos intentions, mais les remèdes pour les mortels n'ont aucun effet sur les Adeptes.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_baizhu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16125,
+			"title": "À propos de Hu Tao...",
+			"voicelineType": "4001",
+			"description": "Hu Tao ? Son énergie débordante m'irrite. Heureusement, elle est aussi pleine d'esprit, ce qui fait qu'elle ne deviendra pas une humaine ennuyeuse.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16126,
+			"title": "À propos de Venti...",
+			"voicelineType": "4005",
+			"description": "Venti ? C'est donc son nom. La musique qu'il joue est... Oubliez ça.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16127,
+			"title": "À propos de Ganyu...",
+			"voicelineType": "4006",
+			"description": "Ganyu n'est ni mortelle ni une bête sacrée. À force d'errer dans le monde mortel et celui des Adeptes en ayant le devoir comme seul guide, il était inévitable qu'elle se perde... Quoi ? Moi ? Vous trouvez qu'un Yaksha qui ne sait que massacrer d'innombrables âmes et en émerger indemne constitue un bon mentor pour cette personne ? ... Votre esprit s'est égaré dans un monde bien différent de votre corps...",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16128,
+			"title": "À propos de Shenhe...",
+			"voicelineType": "4007",
+			"description": "On dirait que Shenhe a une grande confiance en vous. Rien d'étonnant à cela, je dois dire. Il y a peu de gens en ce monde qui soient aussi gentils et compatissants que vous.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_shenhe_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Terminez « Retour de la grue dans le vent ».",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1101505
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16129,
+			"title": "À propos de Yelan...",
+			"voicelineType": "4008",
+			"description": "J'ai entendu dire qu'elle avait suivi la piste des Millelithes dans le Gouffre pour mener une enquête. Elle doit être douée pour pouvoir enquêter sur de tels mystères toute seule.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_teammate_yelan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16130,
+			"title": "Connaître Xiao (1)",
+			"voicelineType": "5001",
+			"description": "Je vous protégerai.\nMais ne cherchez pas à m'approcher et ne vous mettez pas en travers de mon chemin, ou vous le regretterez.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_01"
+		},
+		{
+			"voicelineId": 16131,
+			"title": "Connaître Xiao (2)",
+			"voicelineType": "5002",
+			"description": "Au cours des derniers millénaires, j'ai traqué d'innombrables spectres. Si vous ne voulez pas de problème, tenez-vous à l'écart. Considérez-moi comme une arme, rien de plus.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16132,
+			"title": "Connaître Xiao (3)",
+			"voicelineType": "5003",
+			"description": "Leurs voix... Je ne cesse de les entendre. Leurs cris, leurs pleurs, humpf... Réclamant toujours plus de morts...\nC'est mon fardeau. Cela n'a rien à voir avec vous.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16133,
+			"title": "Connaître Xiao (4)",
+			"voicelineType": "5004",
+			"description": "Morax ? Que savez-vous de lui ?\nIl m'a donné le nom de « Xiao » et m'a libéré d'une vie de souffrance sans fin.\nJe ne pardonnerai jamais à ceux qui osent parler contre lui, même pas à vous.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16134,
+			"title": "Connaître Xiao (5)",
+			"voicelineType": "5005",
+			"description": "C'est trop tard. Notre connexion est trop forte. Même si vous le vouliez, il est trop tard pour la rompre. Hmm ? Cela ne vous a jamais traversé l'esprit ?\n*soupir* Cette danse perpétuelle de soumission des démons... Mon combat ne s'arrête jamais.\nMais... j'aimerais en savoir plus sur vous.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16135,
+			"title": "Les loisirs de Xiao...",
+			"voicelineType": "6001",
+			"description": "Vous avez du cran pour oser m'interroger sur mes loisirs.\nVenez donc vous battre. Combien de temps pensez-vous que votre corps supportera mes coups ?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_hobby"
+		},
+		{
+			"voicelineId": 16136,
+			"title": "Les problèmes de Xiao...",
+			"voicelineType": "6002",
+			"description": "Des problèmes ? Hmph. Les problèmes ne représentent rien pour les Adeptes. Il n'y a aucun problème qui puisse résister à des milliers d'années.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_dialog_annoyed"
+		},
+		{
+			"voicelineId": 16137,
+			"title": "Plat préféré - Tofu aux amandes",
+			"voicelineType": "6003",
+			"description": "Je n'ai aucun intérêt pour la nourriture mortelle. La cuisine est un processus fastidieux et l'attente est longue. La seule chose que mon estomac supporte est le tofu aux amandes.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 16138,
+			"title": "Plat préféré - Rêve",
+			"voicelineType": "6004",
+			"description": "Le tofu aux amandes a le goût d'un beau songe.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_foodLike_02"
+		},
+		{
+			"voicelineId": 16139,
+			"title": "Plats détestés...",
+			"voicelineType": "6005",
+			"description": "Attendez. Je suis censé placer des tranches de viande dans cette galette moi-même ? Et puis... les manger ? Ensemble ? Ugh, les humains de nos jours ne savent pas ce qu'ils font.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_foodDislike"
+		},
+		{
+			"voicelineId": 16169,
+			"title": "Cadeau reçu (1)",
+			"voicelineType": "6007",
+			"description": "Pas mal... Pourquoi me fixez-vous du regard ?",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_spice_pref_01"
+		},
+		{
+			"voicelineId": 16170,
+			"title": "Cadeau reçu (2)",
+			"voicelineType": "6008",
+			"description": "Ne vous embêtez pas.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_spice_normal_01"
+		},
+		{
+			"voicelineId": 16171,
+			"title": "Cadeau reçu (3)",
+			"voicelineType": "6009",
+			"description": "Cuisinez autre chose la prochaine fois.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_spice_dislike_01"
+		},
+		{
+			"voicelineId": 16140,
+			"title": "Anniversaire...",
+			"voicelineType": "7001",
+			"description": "L'anniversaire de votre naissance... Les mortels ont vraiment des fêtes redondantes. Hum, un instant... Je vous ai fabriqué ce papillon avec des feuilles de platane.\nAllez, prenez-le. Il a le pouvoir de chasser les esprits maléfiques car j'ai utilisé un arcane d'Adepte dessus.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 16141,
+			"title": "Affinité faible",
+			"voicelineType": "8001",
+			"description": "C'est tout ? Pas de quoi s'enthousiasmer.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 1.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16142,
+			"title": "Affinité moyenne",
+			"voicelineType": "8002",
+			"description": "Un nouveau pouvoir ? Il ne servira qu'à donner la mort.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 2.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16143,
+			"title": "Affinité élevée",
+			"voicelineType": "8003",
+			"description": "L'autodestruction est la limite du pouvoir de chacun. Pourquoi persistez-vous ? Répondez.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 4.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 16144,
+			"title": "Affinité max",
+			"voicelineType": "8004",
+			"description": "D'innombrables âmes ont péri de ces mains. J'ai moi-même été englouti par les ténèbres... Et pourtant, vous osez continuer. Vous me considérez comme... un compagnon. Vous essayez de me sauver ?\n... Vous... êtes vraiment une personne spéciale.",
+			"voicefile": "VO_friendship/VO_xiao/vo_xiao_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 6.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 16145,
+			"title": "Compétence élémentaire (1)",
+			"voicelineType": "100001",
+			"description": "Hmph !",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill1_01"
+		},
+		{
+			"voicelineId": 16146,
+			"title": "Compétence élémentaire (2)",
+			"voicelineType": "100002",
+			"description": "Ennuyeux.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill1_02"
+		},
+		{
+			"voicelineId": 16147,
+			"title": "Compétence élémentaire (3)",
+			"voicelineType": "100003",
+			"description": "Inutile.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill1_03"
+		},
+		{
+			"voicelineId": 16148,
+			"title": "Attaque plongeante (1)",
+			"voicelineType": "110001",
+			"description": "Par ici !",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill2_01"
+		},
+		{
+			"voicelineId": 16149,
+			"title": "Attaque plongeante (2)",
+			"voicelineType": "110002",
+			"description": "Incompétent.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill2_02"
+		},
+		{
+			"voicelineId": 16150,
+			"title": "Déchaînement élémentaire (1)",
+			"voicelineType": "200001",
+			"description": "Disparaissez.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill3_01"
+		},
+		{
+			"voicelineId": 16151,
+			"title": "Déchaînement élémentaire (2)",
+			"voicelineType": "200002",
+			"description": "Fléau du mal.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill3_02"
+		},
+		{
+			"voicelineId": 16152,
+			"title": "Déchaînement élémentaire (3)",
+			"voicelineType": "200003",
+			"description": "Pleurez.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_skill3_03"
+		},
+		{
+			"voicelineId": 16153,
+			"title": "Ouverture de coffre (1)",
+			"voicelineType": "300001",
+			"description": "Si c'est utile, je vais le prendre.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_chest_open_01"
+		},
+		{
+			"voicelineId": 16154,
+			"title": "Ouverture de coffre (2)",
+			"voicelineType": "300002",
+			"description": "Pourquoi quelqu'un voudrait-il... *soupir* Enfin, cela ne me concerne pas.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_chest_open_02"
+		},
+		{
+			"voicelineId": 16155,
+			"title": "Ouverture de coffre (3)",
+			"voicelineType": "300003",
+			"description": "Hmm... C'est d'assez bonne qualité.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_chest_open_03"
+		},
+		{
+			"voicelineId": 16156,
+			"title": "PV faibles (1)",
+			"voicelineType": "410001",
+			"description": "Silence.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_01"
+		},
+		{
+			"voicelineId": 16157,
+			"title": "PV faibles (2)",
+			"voicelineType": "410002",
+			"description": "Stupide.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_03"
+		},
+		{
+			"voicelineId": 16158,
+			"title": "PV faibles (3)",
+			"voicelineType": "410003",
+			"description": "Bien.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_04"
+		},
+		{
+			"voicelineId": 16159,
+			"title": "Compagnon avec PV faibles (1)",
+			"voicelineType": "400001",
+			"description": "... Faible.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 16160,
+			"title": "Compagnon avec PV faibles (2)",
+			"voicelineType": "400002",
+			"description": "Revenez si vous voulez survivre.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 16161,
+			"title": "K.O. (1)",
+			"voicelineType": "500001",
+			"description": "Est-ce... la fatalité...",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_die_01"
+		},
+		{
+			"voicelineId": 16162,
+			"title": "K.O. (2)",
+			"voicelineType": "500002",
+			"description": "Ce jour... est arrivé.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_die_02"
+		},
+		{
+			"voicelineId": 16163,
+			"title": "K.O. (3)",
+			"voicelineType": "500003",
+			"description": "Impossible...",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_life_die_03"
+		},
+		{
+			"voicelineId": 16164,
+			"title": "Attaque légère subie (1)",
+			"voicelineType": "900001",
+			"description": "C'est tout ?",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 16165,
+			"title": "Attaque puissante subie (1)",
+			"voicelineType": "910001",
+			"description": "Dégagez de mon chemin.",
+			"voicefile": "VO_gameplay/VO_xiao/vo_xiao_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 16166,
+			"title": "Ajout dans l'équipe (1)",
+			"voicelineType": "600001",
+			"description": "Vous m'avez appelé ?",
+			"voicefile": "VO_teamJoin/vo_xiao_teamJoin_01"
+		},
+		{
+			"voicelineId": 16167,
+			"title": "Ajout dans l'équipe (2)",
+			"voicelineType": "600002",
+			"description": "Le mal doit être éradiqué.",
+			"voicefile": "VO_teamJoin/vo_xiao_teamJoin_02"
+		},
+		{
+			"voicelineId": 16168,
+			"title": "Ajout dans l'équipe (3)",
+			"voicelineType": "600003",
+			"description": "Mon devoir est de dompter les démons.",
+			"voicefile": "VO_teamJoin/vo_xiao_teamJoin_03"
+		}
+	]
+}

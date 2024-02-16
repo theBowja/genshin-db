@@ -1,0 +1,996 @@
+{
+	"id": 10000052,
+	"name": "Raiden Shogun",
+	"friendLines": [
+		{
+			"voicelineId": 52009,
+			"title": "พบกันครั้งแรก...",
+			"voicelineType": "1000",
+			"description": "ไม่ต้องคำนับ แม้ว่าร่างนี้จะสูงส่ง แต่การมาแบบนี้เพราะอยากลองเดินทางท่องเที่ยวแบบคนปกติทั่วไปบ้าง ดูจากฝีมือของเธอแล้ว ตั้งแต่นี้ไปเธอคือผู้คุ้มกันของฉันก็แล้วกัน แต่ไม่ต้องกังวลไป ถ้าพบอันตรายอะไรฉันจะเป็นคนออกโรงเอง",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_draw_appear"
+		},
+		{
+			"voicelineId": 52010,
+			"title": "แชท - ไม่มีอะไรทำ",
+			"voicelineType": "1101",
+			"description": "แค่บังเอิญไม่มีอะไรทำ เลยนั่งมองที่ฝนหมึกเท่านั้นเอง ฮึ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_character_idle_01"
+		},
+		{
+			"voicelineId": 52011,
+			"title": "แชท - โลกมนุษย์",
+			"voicelineType": "1102",
+			"description": "วิวทิวทัศน์ของโลกมนุษย์ ไม่ว่าผ่านไปกี่ร้อยกี่พันปีก็ยังคงเหมือนเดิม ชีวิตมนุษย์ก็เหมือนดั่งหยาดน้ำค้าง ดั่งฟองสบู่ ล้วนแตกสลายว่างเปล่า",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_character_idle_02"
+		},
+		{
+			"voicelineId": 52012,
+			"title": "แชท -ความเสน่หาของบุปผาและวิหค",
+			"voicelineType": "1103",
+			"description": "ไร้คนเคียงข้างดั่งความเสน่หาของบุปผาและวิหค แต่เบื้องหลังนั้นช่างเดียวดาย ไม่มีอะไรเปลี่ยนแปลงไปเลย",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_character_idle_03"
+		},
+		{
+			"voicelineId": 52013,
+			"title": "ในเวลาที่ฝนตก...",
+			"voicelineType": "1201",
+			"description": "แค่เพียงหยาดฝนเท่านั้น ไม่ได้มีอะไรมากมาย สายฟ้ายังไม่ผ่าลงมาซะหน่อย",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 52014,
+			"title": "ในเวลาที่ฟ้าผ่า...",
+			"voicelineType": "1202",
+			"description": "หื้ม เธอคงไม่ได้กลัวหรอกใช่มั้ย ทั้ง ๆ ที่อวตารสายฟ้าที่น่าสะพรึงกลัวที่สุดในโลกใบนี้ก็คือฉันที่ยืนอยู่เคียงข้างเธอน่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52015,
+			"title": "ในเวลาที่หิมะตก...",
+			"voicelineType": "1203",
+			"description": "โชกุนแห่งฤดูหนาวมาแล้ว",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_weather_snowy_01"
+		},
+		{
+			"voicelineId": 52016,
+			"title": "ในวันที่อากาศแจ่มใส...",
+			"voicelineType": "1204",
+			"description": "แม้แต่วันที่ท้องฟ้าแจ่มใส ก็ไม่อาจปิดบังรัศมีความยิ่งใหญ่ของสายฟ้าได้ สายฟ้าแห่งทวยเทพสามารถกู่ร้องได้แม้ไร้ซึ่งหยาดฝน เห็นต้นไม้ตรงนั้นมั้ย? เธอเข้าใจแล้วงั้นเหรอ บอกให้ฉันพอเหรอ ก็ได้",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_weather_sunny_01"
+		},
+		{
+			"voicelineId": 52017,
+			"title": "อรุณสวัสดิ์...",
+			"voicelineType": "1001",
+			"description": "หาวทันทีหลังจากกล่าวอรุณสวัสดิ์เนี่ยนะ ขี้เซาจริง ๆ แต่ครั้งนี้ฉันจะให้อภัยในความหยาบคายของเธอแล้วกัน อรุณสวัสดิ์นะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 52018,
+			"title": "สวัสดีตอนเที่ยง...",
+			"voicelineType": "1002",
+			"description": "นี่ ฉันอยากกินของหวาน หื้ม ทำไมถึงไม่ได้ล่ะ? อะไรคือ \"เวลานี้ใครเขากินของหวานกัน\" เพราะว่าเมื่อก่อนเห็นว่าฉันเป็นโชกุนเลยตามใจฉัน? เอ๋อ เป็นอย่างนี่เอง",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_greetingNoon",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52019,
+			"title": "สวัสดีตอนเย็น...",
+			"voicelineType": "1003",
+			"description": "เธออยากรู้ความจริงเกี่ยวกับดาวตกใช่มั้ย? ฮ่าฮ่า ความจริงแล้วก็เป็นแค่แสงที่พาดผ่านท้องฟ้าในชั่วพริบตาก็เท่านั้น หื้ม เธอบอกว่าความจริงแล้วมันคือเธองั้นเหรอ? เธอเป็นเท็งงุรึไงกัน?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52020,
+			"title": "ราตรีสวัสดิ์...",
+			"voicelineType": "1004",
+			"description": "ฉันจะสั่งให้สายฟ้าทั่วทั้งสิบทิศให้สงบลงแล้ว ขอให้คืนนี้เธอหลับฝันดี",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 52021,
+			"title": "เกี่ยวกับตัวโชกุน Raiden - ไม่จีรัง",
+			"voicelineType": "2001",
+			"description": "สายฟ้าคู่คำรามสาดแสงแปลบปลาบ เพียงพริบตาก็หายวับไป ที่เป็นแบบนี้เพราะจะได้ยึดครอง \"นิรันดร์\" ได้ไงล่ะ ไม่สิ จะได้ควบคุม \"นิรันดร์\" ได้ต่างหากล่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_idle"
+		},
+		{
+			"voicelineId": 52022,
+			"title": "เกี่ยวกับตัวโชกุน Raiden - นิรันดร์",
+			"voicelineType": "2005",
+			"description": "\"การสึกหรอ\" เป็นสิ่งที่น่ากลัวมากเลยล่ะ ที่ร่างนี้ถือกำเนิดขึ้นก็เพื่อทนทานต่อการสึกหรอ แบบนี้บางที \"ภายใน\" อาจสัมผัสได้ถึงนิรันดร์ก็ได้",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_idle2"
+		},
+		{
+			"voicelineId": 52023,
+			"title": "เกี่ยวกับพวกเรา - Okuzumeshuu",
+			"voicelineType": "2003",
+			"description": "ตอนนี้เธอคือผู้รับใช้ที่อยู่ข้างกายฉัน กล่าวอีกนัยหนึ่ง จากที่ฉันพิจารณาดูแล้ว เธอมีประโยชน์ต่อ Shogunate และเป็นคนที่ภักดีต่อฉันน่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_close"
+		},
+		{
+			"voicelineId": 52024,
+			"title": "เกี่ยวกับพวกเรา - ผู้คุ้มกัน",
+			"voicelineType": "2002",
+			"description": "ถึงแม้ว่าจะคอยคุ้มกันฉันในระหว่างการเดินทางครั้งนี้ แต่หากฉันพบอันตรายก็ไม่จำเป็นต้องปกป้องฉัน ร่างของโชกุนมีโครงสร้างที่แข็งแกร่ง ถ้าพังเสียหายก็สามารถเปลี่ยนได้ ดังนั้นหากพบเจออันตราย ก็แค่ผลักโชกุนไปข้างหน้าก็พอแล้วล่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52025,
+			"title": "เกี่ยวกับพวกเรา - ถ่ายทอด",
+			"voicelineType": "2004",
+			"description": "ศาสตร์แห่งการใช้นางินาตะและดาบใน Inazuma นั้น ต่างก็เป็นศาสตร์ที่ได้รับการถ่ายทอดจากฉันโดยตรง จากนั้นก็แตกแขนง และผลิบานตามความถนัดที่แตกต่างกันไป\nลองรับดาบของฉันอีกสักครั้งไหมล่ะ? ถ้ายังเบื่อหน่ายอยู่อีกล่ะก็ ฉันจะอนุญาตให้เธอเปิดสำนักใน Inazuma นะ อาา...แรงผลักดันที่จะก้าวหน้า และพัฒนาต่อศิลปะการต่อสู้นี่มัน น่าสนใจเสียจนหยุดไม่ได้เลยจริง ๆ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52026,
+			"title": "เกี่ยวกับ \"วิชั่น\"...",
+			"voicelineType": "3001",
+			"description": "ภายนอกนั่น ไม่มีวิชั่นธาตุไฟฟ้าปรากฏขึ้นใหม่มานานแล้วเหรอ? แม้ฉันจะอธิบายไม่ได้เพราะข้อจำกัดบางอย่าง... แต่เรื่องการส่งมอบวิชั่นนั้น ไม่ได้เกี่ยวข้องกับเจตจำนงของฉัน สิ่งสำคัญคือ \"ความปรารถนา\" ของผู้คน รวมถึง...",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52027,
+			"title": "ต้องการจะแชร์อะไร...",
+			"voicelineType": "3002",
+			"description": "มีอะไรจะแบ่งปันงั้นเหรอ? ไม่มีนะ ว่าแต่เธอไม่มีวิชั่นแท้ ๆ แต่ทำไมถึงใช้พลังธาตุได้ล่ะ บอกฉันหน่อยสิ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_dialog_share_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52028,
+			"title": "ข้อมูลที่น่าสนใจ...",
+			"voicelineType": "3003",
+			"description": "ถึงแม้ว่าร่างกายจะสูญสลายไป แต่ทว่าเธอได้กลายเป็น Sacred Sakura นี่ก็เป็น \"นิรันดร์\" เช่นกัน",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_gift"
+		},
+		{
+			"voicelineId": 52029,
+			"title": "เกี่ยวกับ Yae Miko...",
+			"voicelineType": "4001",
+			"description": "เธอน่ะเหรอ... ในครั้งแรกที่เจอเธอเป็นคนที่ถูกเต้าหู้ทอดมันเยิ้มล่อลวงได้ง่าย ๆ เลยล่ะ ในตอนนี้ พอได้เห็นว่าเธอเริ่มฉลาดและมีไหวพริบแล้ว ฉันก็รู้สึกดีใจมากเลยล่ะ แต่ฉันต้องยอมรับว่ารู้สึกไม่สบายใจเล็กน้อยที่ตกอยู่ในการคำนวณของเธอน่ะ ถึงแม้ว่าจะทำเพื่อฉัน แต่ฉันเกรงว่าเธอจะเยาะเย้ยฉันในครั้งหน้าที่เราพบกัน... บางทีฉันควรจะเริ่มจู่โจมเธอก่อน ถึงยังไงเธอก็หลบได้อยู่ดี",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52030,
+			"title": "เกี่ยวกับ Kamisato Ayato...",
+			"voicelineType": "4002",
+			"description": "ตระกูล Kamisato หนึ่งในตระกูลที่มีชื่อเสียงที่สุดใน Inazuma ถึงแม้ว่า Ayato จะใช้กลอุบายมากมายในสามสำนักมหาอำนาจ แต่เขาก็ยังเป็นคนที่จงรักภักดี ความผิดในอดีตของเขาจะได้รับการให้อภัย",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_ayato_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52031,
+			"title": "เกี่ยวกับ Kamisato Ayaka...",
+			"voicelineType": "4003",
+			"description": "ตระกูล Kamisato หนึ่งในตระกูลที่มีชื่อเสียงที่สุดใน Inazuma เอ๊ะ เธอบอกว่าฉันพูดเหมือนกับโชกุนเลยงั้นเหรอ ถ้างั้น เอาเป็น วิชาดาบของ Ayaka นั้นดีมากแล้วกันนะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_ayaka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52032,
+			"title": "เกี่ยวกับ Kujou Sara...",
+			"voicelineType": "4004",
+			"description": "ผู้จงรักภักดีที่มีฝีมือการต่อสู้ที่ยอดเยี่ยม จนสามารถเรียกได้ว่ามี \"พรสวรรค์\" เลยทีเดียว มีลูกหลานเช่นนี้ ตระกูล Kujou จะต้องยิ่งเจริญรุ่งเรืองยิ่งขึ้นแน่ ๆ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_kujoSara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52033,
+			"title": "เกี่ยวกับ Yoimiya...",
+			"voicelineType": "4005",
+			"description": "ใครกันน่ะ? อ้อ คนที่ทำดอกไม้ไฟ ผู้ที่สร้างสรรค์ภาพมายา และผู้ที่หลงระเริงไปกับภาพมายาในฤดูร้อน แต่ถึงยังไงก็ตามเธอก็เป็นชาวเมืองของฉันอยู่ดี\nหื้ม จุดดอกไม้ไฟในอาณาเขตของสำนัก Tenryou? ใครกันนะ คือเธอคนนั้นงั้นเหรอ?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_yoimiya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52034,
+			"title": "เกี่ยวกับ Thoma...",
+			"voicelineType": "4006",
+			"description": "เรื่องที่เกือบเอาวิชั่นของเขาไปนั้น ฉันเองก็พูดได้ไม่เต็มปากว่าไม่มีส่วนรับผิดชอบ แต่ถ้าจะให้ฉันขอโทษล่ะก็ ให้โชกุนไปแทนดีกว่า... ก็ได้ ฉันเองก็จะไตร่ตรองเรื่องนี้เหมือนกัน",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_thoma_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52035,
+			"title": "เกี่ยวกับ Sangonomiya Kokomi...",
+			"voicelineType": "4007",
+			"description": "Orobaxi จบชีวิตลงเพราะร่างนี้ก็จริง แต่ฉันก็ยังยอมให้ผู้คนใน Sangonomiya ถวายเครื่องบูชาในนามของ Watatsumi Omikami เพื่อจะได้รำลึกถึงการเสียสละของมัน แต่ในตอนนี้ Sangonomiya ได้ทำลายศาลเจ้า Narukami ในท้องถิ่นและต่อต้าน Shogunate เธอในฐานะผู้นำมิโกะคนปัจจุบันของ Watatsumi Omikami เธอต้องรับผิดชอบ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_kokomi_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52036,
+			"title": "เกี่ยวกับ Kunikuzushi...",
+			"voicelineType": "4008",
+			"description": "เขาเป็นผลพลอยได้จากการสร้างโชกุนน่ะ ฉันไม่ได้ควบคุมเขาหรอก อาจเป็นเพราะว่าในใจของฉันยังรู้สึกว่ายังติดหนี้อะไรบางอย่างกับเขาอยู่น่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_kunikuzushi_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52037,
+			"title": "เกี่ยวกับ Arataki Itto...",
+			"voicelineType": "4009",
+			"description": "ใครกันน่ะ?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_teammate_itto_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52038,
+			"title": "เกี่ยวกับ Morax...",
+			"voicelineType": "4010",
+			"description": "ในตอนที่ฉันเคยดื่มกับเขา ตอนนั้นฉันยังเป็นแค่ Kagemusha นั่งอยู่แถวหลังสุดจากพวกเทพเจ้าน่ะ เขาเลือกที่จะทำแบบนั้นงั้นเหรอ? แต่ฉันว่าเรื่องราวของเขาคงยังไม่จบแค่นั้นหรอก",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52039,
+			"title": "เกี่ยวกับ Venti...",
+			"voicelineType": "4011",
+			"description": "ร่างอวตารของเทพลมก็ยังใช้ชื่อนี้งั้นเหรอ? พูดตามตรงเลยนะ ครั้งแรกที่เจอกันฉันรู้สึกว่าเข้ากับเขาไม่ค่อยได้น่ะ แล้วก็ เขาน่ะ ดื่มเก่งมากเลยล่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52083,
+			"title": "เกี่ยวกับ Buer...",
+			"voicelineType": "4012",
+			"description": "ฉันชื่นชมความถ่อมตัวของเธอมาก ซึ่งความถ่อมตัวนั้นคือคุณงามความดีของผู้มีปัญญาเช่นกัน ด้วยพลังของเธอแล้ว เธอน่าจะทำเรื่องหลายสิ่งหลายอย่างที่เหนือความคาดหมายได้มากมาย ทว่า Buer กลับใช้มันเพื่อ \"แก้ไขและปกป้อง\" เพียงเท่านั้น... ช่างเป็นเทพเจ้าที่อ่อนโยนจริง ๆ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "ทำเควสต์ \"Akasha ปลุกปั่น เปลวเพลิงลุกโชน\" ให้สำเร็จ",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52084,
+			"title": "เกี่ยวกับ Furina...",
+			"voicelineType": "4013",
+			"description": "\"โชกุน Raiden\" เคยต่อสู้กับฉันในโลกแห่งจิตใต้สำนึกมานับร้อยปี เพื่อให้มั่นใจว่าเจตจำนงของฉันไม่เคยสั่นคลอน แต่ Furina คนนี้ที่เธอพูดถึง แม้จะมีร่างเป็นมนุษย์ แต่การแสดงในช่วงห้าร้อยปีมานี้ก็ไม่ต่างอะไรกับ \"การต่อสู้\" กับจิตใจตลอดเวลา ฉันยอมรับในตัวของเขา เจตจำนงเช่นนี้ นับว่าเป็นจุดสูงสุดของเทพแล้วล่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"การเต้นรำของคนบาป\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์เนื้อเรื่อง \"ความฝันอันแสนสั้น\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1204209
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52040,
+			"title": "อยากรู้เกี่ยวกับโชกุน Raiden - 1",
+			"voicelineType": "5001",
+			"description": "มีเรื่องอะไรก็พูดมาสิ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_friendship_01"
+		},
+		{
+			"voicelineId": 52041,
+			"title": "อยากรู้เกี่ยวกับโชกุน Raiden - 2",
+			"voicelineType": "5002",
+			"description": "ในวันที่พายุเข้า ชาวเมือง Inazuma จะสวดภาวนาว่า \"kuwabara, kuwabara\" โดยเชื่อว่าสิ่งนี้จะป้องกันตนเองจากการถูกฟ้าผ่า แต่ถ้าเป็นพายุที่เกิดขึ้นด้วยมือของฉันเอง จะไม่เป็นอันตรายใด ๆ กับเธอ แต่พายุสายฟ้าที่เกิดขึ้นเองตามธรรมชาติพวกนั้น คาดเดาไม่ได้มากกว่าซะอีก",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52042,
+			"title": "อยากรู้เกี่ยวกับ Ei - 3",
+			"voicelineType": "5003",
+			"description": "สิ่งที่หนังสือ \"Treasured Tales\" พูดถึงส่วนใหญ่ก็เป็นเรื่องจริงนะ ในเวลานั้น เธอมัวยุ่งอยู่กับการจัดการสิ่งของต่าง ๆ บนเกาะ ดังนั้นในฐานะ Kagemusha ของเธอ ฉันจึงเข้าร่วมกับกองทหารที่ส่งไปเพื่อสยบ Watatsumii ภายใต้ชื่อของเธอ แต่โครงเรื่องพวกนี้เป็นเพียงความปรารถนาของผู้คน ที่จริงแล้วฉันเป็นแค่ซามูไรที่หลงใหลในวิชาดาบ ไม่ใช่นักปฏิรูปสังคมหรือผู้นำทางศีลธรรมหรอกนะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52043,
+			"title": "อยากรู้เกี่ยวกับ Ei - 4",
+			"voicelineType": "5004",
+			"description": "บางทีการแสวงหาความเป็นนิรันดร์ของฉันอาจเป็นเพียงรูปแบบหนึ่งของการหลบหนี ในท้ายที่สุดแล้ว เส้นทางที่ฉันเดินไปก็เหมือนกับเส้นทางของเต่าที่หดหัวอยู่ในกระดอง แต่ถึงยังไงก็ตามเต่าก็เป็นสัญลักษณ์ของการมีอายุยืนยาว บางทีเพื่อที่จะไปให้ถึงความเป็นนิรันดร์ เราอาจต้องทำแบบที่พวกมันทำก็ได้นะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52044,
+			"title": "อยากรู้เกี่ยวกับ Ei - 5",
+			"voicelineType": "5005",
+			"description": "ความกลัวเป็นเพราะฉันได้เห็นการตายของเธอและ \"สิ่งนั้น\" เมื่อห้าร้อยปีก่อน แต่ถ้า... ถ้าเป็นเธอ เธอจะต้องช่วยทุกคนไว้ได้แน่นอน ถ้าเป็นเธอก็คงจะสามารถกอบกู้โลกนี้ได้แน่ เหมือนทุกสิ่งอย่างของ Inazuma ในความทรงจำที่มีค่าของฉัน ขอแค่เธอจำฉันได้ ฉันก็จะคงอยู่ตลอดไป",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกเมื่อความประทับใจถึง Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52045,
+			"title": "งานอดิเรกของโชกุน Raiden...",
+			"voicelineType": "6001",
+			"description": "ช่างเป็นคำถามที่โง่เขลา มีเพียงเรื่องที่ต้องทำ และเรื่องที่ทำไม่ได้เท่านั้นแหละ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_hobby"
+		},
+		{
+			"voicelineId": 52046,
+			"title": "เรื่องกลุ้มใจของ Ei...",
+			"voicelineType": "6002",
+			"description": "เธออย่าให้ฉันทำอาหารเลยนะ ฉันทำได้หมดทุกอย่างเลยล่ะ ยกเว้นเรื่องทำอาหารน่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52047,
+			"title": "อาหารที่ชอบ...",
+			"voicelineType": "6003",
+			"description": "อย่าไปฟังที่โชกุนพูดเลยนะ เรื่องขนมหวานน่ะ! ฟันผุก็เปลี่ยนแค่นั้นเอง ฉันไม่เห็นว่ามันจะส่งผลกับการแสวงหาความเป็นนิรันดร์ตรงไหน",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_pref_foodLike",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52048,
+			"title": "อาหารที่เกลียด...",
+			"voicelineType": "6004",
+			"description": "ช่างเป็นคำถามที่โง่เขลา มันก็มีแค่อาหารที่เป็นประโยชน์ต่อร่างกาย กับอาหารที่เป็นโทษต่อร่างกายก็เท่านั้น",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_foodDislike"
+		},
+		{
+			"voicelineId": 52077,
+			"title": "ได้รับของขวัญ - 1",
+			"voicelineType": "6007",
+			"description": "รสชาติที่คุ้นเคย ไม่เลว",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_spice_pref_01"
+		},
+		{
+			"voicelineId": 52078,
+			"title": "ได้รับของขวัญ - 2",
+			"voicelineType": "6008",
+			"description": "วางไว้ตรงนั้นแหละ เดี๋ยวฉันชิมเอง",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_spice_normal_01"
+		},
+		{
+			"voicelineId": 52079,
+			"title": "ได้รับของขวัญ - 3",
+			"voicelineType": "6009",
+			"description": "มันจะทำลายการทำงานของร่างกาย เอาออกไปซะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_spice_dislike_01"
+		},
+		{
+			"voicelineId": 52080,
+			"title": "ได้รับของขวัญ - 4",
+			"voicelineType": "6010",
+			"description": "อร่อยดี ผ่อนคลายอารมณ์ขึ้นเยอะเลย ขอบคุณนะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_spice_pref_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52081,
+			"title": "ได้รับของขวัญ - 5",
+			"voicelineType": "6011",
+			"description": "ดูหน้าตาไม่เลวเลยนะ เธอทำออกมาได้ยังไงเหรอ?",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_spice_normal_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52082,
+			"title": "ได้รับของขวัญ - 6",
+			"voicelineType": "6012",
+			"description": "ขออภัยที่ต้องปฏิเสธ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_spice_dislike_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "สำเร็จเควสต์ \"พันมือร้อยเนตรในโลกหล้า\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52049,
+			"title": "วันถือกำเนิด...",
+			"voicelineType": "7001",
+			"description": "วันนี้เป็นวันที่เจ้าถือกำเนิดอย่างนั้นเหรอ? กลับเมืองกับข้าสิ ฉันจะกล่าวอวยพรเธอต่อหน้าทุกคน หื้ม? \"น่าขายหน้าจะตายไป ไม่ต้องทำแบบนั้นหรอก\"... งั้นก็ตามใจเจ้า",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 52050,
+			"title": "วันเกิด...",
+			"voicelineType": "7002",
+			"description": "สุขสันต์วันเกิดนะ! งั้นวันนี้เรามาฉลองกันเถอะ และทำให้เป็นช่วงเวลาที่น่าจดจำสำหรับทั้งปีจนกว่าถึงวันเกิดครั้งต่อไปของเธอ พอถึงวันเกิดปีหน้าก็ทำแบบนี้ต่อไป แบบนี้เธอก็จะมีความสุขชั่วนิรันดร์แล้วล่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_pref_birthday_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 52051,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทนำ",
+			"voicelineType": "8001",
+			"description": "ช่วงแรกในการเดินทางของฉันหรือ Shoden จะสามารถเรียนรู้พื้นฐานการฟันดาบเก้าทิศทางและพื้นฐานของนางินาตะ ซึ่งก็ไม่ต่างจากคนอื่นมากนัก ไม่สิ ที่ถูกต้องจะต้องบอกว่า คนอื่น ๆ ไม่แตกต่างจากฉันมากนักต่างหากล่ะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52052,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - ชี้แจง",
+			"voicelineType": "8002",
+			"description": "ในช่วงกลางของการเดินทางของฉันหรือ Chuuden จำเป็นต้องเรียนรู้การเปลี่ยนแปลงใน \"ท่าทาง\" ที่จำเป็นสำหรับการใช้ดาบและเพื่อทำความเข้าใจหลักการ \"การฟัน\" และ \"การดึงกลับ\" ที่จำเป็นสำหรับการใช้นางินาตะ",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52053,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - มุมมองอื่น ๆ",
+			"voicelineType": "8003",
+			"description": "ขั้นตอนสุดท้ายของการเดินทางของฉันหรือ Kaiden คือการศึกษาเทคนิคที่ลึกซึ้งที่สุด สิ่งเหล่านี้ดึงพลังธาตุมาอย่างหลีกเลี่ยงไม่ได้ซึ่งเกินความสามารถของมนุษย์ส่วนใหญ่ ศิษย์ในสำนักอื่น ๆ ส่วนใหญ่จะไม่สามารถไปถึงระดับนี้ได้",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenShogun_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 52054,
+			"title": "ความรู้สึกที่ได้เลื่อนขั้น - บทสรุป",
+			"voicelineType": "8004",
+			"description": "สิ่งที่ลึกซึ้งที่สุดของความลึกซึ้งคือ Musou no Hitotachi เป็นศิลปะดาบที่ไม่มีใครเทียบได้ทั่วโลก มีเธอเป็นคู่ฝึกซ้อมของฉัน ฉันก็จะสามารถทำให้เทคนิคนั้นสมบูรณ์แบบยิ่งขึ้นไปอีก",
+			"voicefile": "VO_friendship/VO_raidenShogun/vo_raidenEi_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "ปลดล็อกที่ระดับการเลื่อนขั้น 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 52055,
+			"title": "สกิลธาตุ - 1",
+			"voicelineType": "100001",
+			"description": "สายฟ้าไร้ปรานี!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill1_01"
+		},
+		{
+			"voicelineId": 52056,
+			"title": "สกิลธาตุ - 2",
+			"voicelineType": "100002",
+			"description": "ไร้ทางหลบเลี่ยง!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill1_02"
+		},
+		{
+			"voicelineId": 52057,
+			"title": "สกิลธาตุ - 3",
+			"voicelineType": "100003",
+			"description": "ทลายภาพลวงตา!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill1_03"
+		},
+		{
+			"voicelineId": 52058,
+			"title": "ท่าไม้ตาย - 1",
+			"voicelineType": "200001",
+			"description": "ตัดสัมพันธ์จนหมดสิ้น!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill3_01"
+		},
+		{
+			"voicelineId": 52059,
+			"title": "ท่าไม้ตาย - 2",
+			"voicelineType": "200002",
+			"description": "ถึงเวลาแห่งความตายแล้ว!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill3_02"
+		},
+		{
+			"voicelineId": 52060,
+			"title": "ท่าไม้ตาย - 3",
+			"voicelineType": "200003",
+			"description": "Inazuma เปล่งประกายชั่วนิรันดร์!",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_skill3_03"
+		},
+		{
+			"voicelineId": 52061,
+			"title": "เปิดหีบสมบัติ - 1",
+			"voicelineType": "300001",
+			"description": "เก็บไว้เถอะ มันไม่มีประโยชน์กับฉัน",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_chest_open_01"
+		},
+		{
+			"voicelineId": 52062,
+			"title": "เปิดหีบสมบัติ - 2",
+			"voicelineType": "300002",
+			"description": "...เป็นแค่ความฝันอันแสนสั้น",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_chest_open_02"
+		},
+		{
+			"voicelineId": 52063,
+			"title": "เปิดหีบสมบัติ - 3",
+			"voicelineType": "300003",
+			"description": "หือ?",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_chest_open_03"
+		},
+		{
+			"voicelineId": 52064,
+			"title": "ค่าพลังชีวิตต่ำ - 1",
+			"voicelineType": "410001",
+			"description": "...ก้าวข้ามขีดจำกัด",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_01"
+		},
+		{
+			"voicelineId": 52065,
+			"title": "ค่าพลังชีวิตต่ำ - 2",
+			"voicelineType": "410002",
+			"description": "...ฟาดฟันสิ่งชั่วร้าย",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_02"
+		},
+		{
+			"voicelineId": 52066,
+			"title": "ค่าพลังชีวิตต่ำ - 3",
+			"voicelineType": "410003",
+			"description": "...ขจัดสิ่งกีดขวาง",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_03"
+		},
+		{
+			"voicelineId": 52067,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 1",
+			"voicelineType": "400001",
+			"description": "ไปยืนรอข้างหลังฉัน",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 52068,
+			"title": "ค่าพลังชีวิตของเพื่อนต่ำ - 2",
+			"voicelineType": "400002",
+			"description": "ถอยไป",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 52069,
+			"title": "หมดสติ - 1",
+			"voicelineType": "500001",
+			"description": "เป็นเพียงฝันอันเลื่อนลอย...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_die_01"
+		},
+		{
+			"voicelineId": 52070,
+			"title": "หมดสติ - 2",
+			"voicelineType": "500002",
+			"description": "ไร้ความคะนึง ไร้ความยึดติด...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_die_02"
+		},
+		{
+			"voicelineId": 52071,
+			"title": "หมดสติ - 3",
+			"voicelineType": "500003",
+			"description": "เสียงฟ้าร้องกำลังจะสงบลง...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_life_die_03"
+		},
+		{
+			"voicelineId": 52072,
+			"title": "โดนโจมตีอย่างหนัก - 1",
+			"voicelineType": "910001",
+			"description": "ไร้มารยาท...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 52073,
+			"title": "โดนโจมตีอย่างหนัก - 2",
+			"voicelineType": "910002",
+			"description": "ช่างโง่เขลา...",
+			"voicefile": "VO_gameplay/VO_raidenShogun/vo_raidenShogun_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 52074,
+			"title": "เข้าร่วมทีม - 1",
+			"voicelineType": "600001",
+			"description": "มีอะไรเหรอ?",
+			"voicefile": "VO_teamJoin/vo_raidenShogun_teamJoin_01"
+		},
+		{
+			"voicelineId": 52075,
+			"title": "เข้าร่วมทีม - 2",
+			"voicelineType": "600002",
+			"description": "อยู่ข้าง ๆ กายฉันไว้ก็พอ",
+			"voicefile": "VO_teamJoin/vo_raidenShogun_teamJoin_02"
+		},
+		{
+			"voicelineId": 52076,
+			"title": "เข้าร่วมทีม - 3",
+			"voicelineType": "600003",
+			"description": "ถึงเวลาออกเดินทางแล้ว",
+			"voicefile": "VO_teamJoin/vo_raidenShogun_teamJoin_03"
+		}
+	]
+}

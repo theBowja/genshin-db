@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "Привет: Прошлое",
+			"voicelineType": "1000",
+			"description": "Я Сайно, в прошлом - генерал махаматра. А теперь я караю зло, полагаясь только на свои силы. Если твоё сердце тоже радеет за закон и справедливость, я всегда готов протянуть руку помощи.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "Привет: Настоящее",
+			"voicelineType": "1006",
+			"description": "Я Сайно, генерал махаматра Академии. Мой долг - поддерживать правила и наказывать преступления. Я буду защищать тебя в путешествии.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "Поболтаем: Весы",
+			"voicelineType": "1101",
+			"description": "Рано или поздно добро и зло лягут на разные чаши весов. Посмотрим тогда, что перевесит.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "Поболтаем: Карточное везение",
+			"voicelineType": "1102",
+			"description": "Везение может принести тебе одну случайную победу, но рано или поздно оно иссякнет.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "Поболтаем: Сомнения",
+			"voicelineType": "1103",
+			"description": "Иногда мне тоже хочется разрядить обстановку, но я плохо разбираюсь, какие шутки смешные, а какие нет.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Снова капает...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1202",
+			"description": "В некоторых легендах гром и молния олицетворяют суд Архонтов над людьми.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1203",
+			"description": "Мне очень нравится смотреть на мир, занесённый снегом. Спокойная, но не безжизненная тишина.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1204",
+			"description": "Рано или поздно солнечные лучи осветят каждый тёмный уголок.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "Когда дует сильный ветер...",
+			"voicelineType": "1205",
+			"description": "Какой ветер... Осторожно.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "В пустыне...",
+			"voicelineType": "1206",
+			"description": "Знакомый вид...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Собирайся, нам пора в путь.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Давай я приготовлю обед? Но предупреждаю: может получиться невкусно.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Помнишь, о чём я тебе говорил? Вечер всегда полон опасностей, в это время нельзя терять бдительности.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Спокойной ночи. В окрестностях заметили преступников, я пойду разберусь с ними.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "О Сайно: Несмешные анекдоты",
+			"voicelineType": "2001",
+			"description": "Один путник умирал от жажды в пустыне и молился, чтобы ему повстречался Гидро слайм. Но он не знал, что в это самое время голодный Гидро слайм молился о встрече с одиноким путником... А? Неужели тебе совсем не смешно?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "О Сайно: Прогулки",
+			"voicelineType": "2005",
+			"description": "Иногда я выхожу погулять по ночной пустыне. Холодный сухой ветер хорошо прочищает голову.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "О нас: Поединок",
+			"voicelineType": "2003",
+			"description": "Хочешь сыграть в «Священный призыв семерых»? Давай покажу свою новую колоду.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "О нас: Настоящее",
+			"voicelineType": "2002",
+			"description": "Прошлого не изменить, будущего не угадать. Остаётся дорожить настоящим.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Какая разница, что именно помогает мне бороться со злом: потусторонние силы или Глаз Бога. Пусть даже Архонт благоволит мне, это не даёт мне права изменять своим принципам. Я просто исполняю свой долг, делаю то, что обязан делать.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "Давай поделимся: Жажда знаний",
+			"voicelineType": "3002",
+			"description": "Разгул страстей приводит к беде - кажется, всем известна эта простая истина. Но жажду знаний люди возвели на пьедестал и не хотят замечать её оборотной стороны... А по-моему, жажда знаний тоже своего рода страсть, и её нужно держать в узде.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "Давай поделимся: Благоговение",
+			"voicelineType": "3005",
+			"description": "Когда я выполняю свой долг, любое моё решение может изменить судьбы людей. Вот почему я всегда должен сохранять благоговение к своему положению матры - с таким же благоговением я отношусь к знаниям и силе.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Меня восхищают кустарники, растущие в пустыне. Пустыня - символ смерти, все цивилизации рано или поздно будут погребены в песках. Но даже на этой безлюдной земле можно увидеть, как жизнь несмотря ни на что празднует победу. Иногда я бываю просто потрясён стойкостью этих растений.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "О Тигнари: Знания",
+			"voicelineType": "4001",
+			"description": "Тигнари отличается от остальных знакомых мне учёных. Он тоже беззаветно предан знаниям, но никогда не переходит границы. Некоторые учёные мнят себя богами в своих лабораториях, но только не Тигнари - он с уважением относится к каждой жизни. Слышал, он отказался занять пост наставника в Академии, и я очень поддерживаю его в этом решении.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "О Тигнари: Анекдоты",
+			"voicelineType": "4002",
+			"description": "Тигнари просил меня не рассказывать за столом анекдоты, говорил, что они у меня несмешные. Я не стал его слушать, рассказал три своих самых любимых анекдота и ещё подробно объяснил, в чём там соль... А потом оказалось, что у меня вся еда остыла.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "О Коллеи...",
+			"voicelineType": "4003",
+			"description": "Я запечатал в её теле останки павших Архонтов, но пока накладывал печать, ей было очень больно. Должно быть, такая боль даже страшнее смерти. Она смогла её выдержать, и одно это достойно восхищения.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "Об аль-Хайтаме...",
+			"voicelineType": "4004",
+			"description": "Я не люблю слишком умных людей, они уверены, что им подвластно всё на свете, и поэтому частенько ходят по краю. Но на аль-Хайтама можно положиться - он действительно хорошо контролирует происходящее и умеет предотвращать опасности.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Царь Дешрет и три волхва».",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "О Кавехе...",
+			"voicelineType": "4005",
+			"description": "Тигнари и Коллеи не говорили этого прямо, но я всё понял по взглядам, которыми они обменивались. Истории Кавеха им слушать гораздо интереснее, чем мои анекдоты. Что я думаю по этому поводу? Мне кажется смешным уже то, что истории Кавеха вызывают у них улыбки.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "О Нахиде...",
+			"voicelineType": "4006",
+			"description": "Оценивать божество - это, пожалуй, несколько превышает мои полномочия... Но когда я с ней работал, я лично видел её мудрость, храбрость и решимость. В отличие от мудрецов, которые постоянно безосновательно её критиковали, я могу дать более квалифицированную оценку: она выдающееся божество и заслуживает всеобщего уважения.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "О Нилу...",
+			"voicelineType": "4007",
+			"description": "Я чувствую её энтузиазм и страсть к танцам - это неотделимая её часть. Надеюсь, она всегда будет иметь возможность приносить людям радость своим любимым искусством.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "О Фарузан...",
+			"voicelineType": "4008",
+			"description": "Я внимательно просмотрел материалы дела об исчезновении Фарузан. Поначалу я думал, что она занималась какими-то опасными исследованиями... Но после встречи с ней решительно отбросил эту мысль. С ней бывает непросто, но она похожа на разговорчивую тётушку, которая изведёт тебя своей заботой, но никогда не выйдет за рамки дозволенного.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "О Лизе...",
+			"voicelineType": "4009",
+			"description": "Мы с Лизой учились у одного наставника, поэтому я знаю, что с ней произошло. И как генерал махаматра я видел много трагедий, случившихся из-за чрезмерной тяги к знаниям, поэтому понимаю её выбор.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "Узнать больше о Сайно I",
+			"voicelineType": "5001",
+			"description": "Хочешь узнать меня получше? Гм, думаю, многие люди видят во мне досадную неприятность, с которой приходится считаться. Но не беспокойся, если ты не делаешь ничего опасного, тебе я никаких неприятностей не доставлю.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "Узнать больше о Сайно II",
+			"voicelineType": "5002",
+			"description": "Моё тело - сосуд, способный вмещать нечеловеческие силы. Отчасти дело в моих природных особенностях, но ещё и в сделке, которую я добровольно заключил в прошлом. Я не считаю эту тему запретной. Я - матра, который взвешивает на весах людские преступления. Значит, и сам я должен быть готов положить на весы собственную душу, чтобы её судили тем же судом.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "Узнать больше о Сайно III",
+			"voicelineType": "5003",
+			"description": "Я не люблю задаваться вопросом: «Почему человек пошёл на это преступление?» Для меня куда важнее вопрос: «Что именно он сделал?» Существует бесчисленное множество причин, по которым люди совершают те или иные поступки, некоторые причины вызывают сочувствие, иногда даже кажется, что преступника можно понять, а люди обошлись с ним слишком сурово. Побеждённый всегда вызывает сочувствие, но судья должен отбросить все сантименты. Мы можем сопереживать обвиняемым, но преступление не должно оставаться безнаказанным.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "Узнать больше о Сайно IV",
+			"voicelineType": "5004",
+			"description": "В мрачном море невежества время от времени мерцает слабый свет, манящий к себе тех, кто не знает истины. Многие люди плывут на свет в уверенности, что это маяк, указывающий им путь, но забывают про великие опасности, что притаились в чёрных водах. Уводить от света тех, кто слишком долго пребывал во тьме, само по себе жестоко, но я буду исполнять свой долг до тех пор, пока мы не одолеем всех врагов под водой.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "Узнать больше о Сайно V",
+			"voicelineType": "5005",
+			"description": "Я уже рассказал о себе всё, что стоит знать. Что ещё ты хочешь услышать? Ха, ты {F#такая любопытная}{M#такой любопытный}. Ладно, тогда давай ты будешь задавать вопросы. Обычно вопросы задаю я, теперь же допрашивать будут меня... Интересные ощущения.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "Хобби Сайно...",
+			"voicelineType": "6001",
+			"description": "В свободное время я люблю поиграть в «Священный призыв семерых». У этой игры строгие правила, но она предоставляет огромный простор для творчества. Для меня это уже не просто игра, а вид искусства.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "Беспокойство Сайно...",
+			"voicelineType": "6002",
+			"description": "Я недавно читал один лёгкий роман из Инадзумы, там всё действие крутится вокруг «Священного призыва семерых». Оказавшись в безвыходной ситуации, главный герой вдруг достал из колоды карту, которой вообще не существовало. Я очень удивился и до сих пор не могу понять: выполнив несколько действий с колодой, игрок сотворил необъяснимое чудо. Вопрос: можно ли это считать нарушением правил? Или его действия укладываются в правила игры?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "Любимая еда...",
+			"voicelineType": "6005",
+			"description": "Если смешать мясо, рис и сухофрукты, потом залить их йогуртом и запечь, получится настоящее душистое ассорти. Снимаешь хрустящую корочку, и от риса поднимается ароматный пар... Приготовление не займёт много времени, это одно из моих любимых блюд.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Провиант, который берёшь с собой в пустыню, обычно довольно сухой и безвкусный. Но постепенно и к такой еде привыкаешь. Если нужно обязательно вспомнить какую-то нелюбимую еду, пожалуй, я назову блюда, приготовленные из насекомых...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Очень вкусно, ты здорово {F#потрудилась}{M#потрудился}.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Спасибо, возьму.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Это мне? Ты ничего не напутал{F#а}?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "Гм... С днём рождения. Праздники не моя стихия, но я подумал, что это всё-таки твой день рождения, нужно подготовиться. Во-первых, возьми эту колоду - я работал над ней несколько дней, думаю, она подойдёт тебе по стилю. Ещё я немного расчистил своё расписание на ближайшие дни - может, хочешь куда-нибудь отправиться? Я могу составить тебе компанию. День рождения длится всего один день, но на настоящий отдых дня может и не хватить. Так что я выделил целых три дня, можем придумать какой-нибудь маршрут.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Чувствую новую силу. Значит, я расту.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Клянусь стоять на страже закона и наказывать зло.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Неплохие ощущения. Спасибо!",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Моя сила достигла своего предела, но остаётся ещё много задач, которые невозможно решить, полагаясь на одну только боевую мощь. Часто случается, что чувства спорят с законом, но в следующих своих путешествиях я постараюсь найти между ними баланс.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Сдавайся!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Сопротивление бесполезно!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Тебе не сбежать!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "Элементальный навык IV",
+			"voicelineType": "100004",
+			"description": "Приговор уже вынесен.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "Элементальный навык V",
+			"voicelineType": "100005",
+			"description": "Виновен!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "Элементальный навык VI",
+			"voicelineType": "100006",
+			"description": "Ты загладишь свою вину!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Да свершится правосудие!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Приговор приведён в исполнение.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "На тебе лежит тяжёлая вина.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Заслуженная награда.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Наша настойчивость вознаграждена.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Богатства - фундамент, на котором зиждется цивилизация.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Сильнее... чем я ожидал.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Я почти привык.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Ух... Давай ещё!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Отдохни, не нужно геройствовать!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Я тебя подменю.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Вот и мой черёд...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Смерть... Даёт начало новой жизни...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Мой суд... повержен...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900001",
+			"description": "Бессмысленные потуги.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "А ты сильнее, чем я думал...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Недурно.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Я покажу всё, на что способен.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Действуем.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Кто наша следующая цель?",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

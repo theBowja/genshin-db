@@ -1,0 +1,860 @@
+{
+	"id": 10000073,
+	"name": "Nahida",
+	"friendLines": [
+		{
+			"voicelineId": 73000,
+			"title": "初次見面…",
+			"voicelineType": "1006",
+			"description": "初次見面，我已經注意{F#妳}{M#你}很久了。我叫納西妲。別看我像個孩子，我比任何一位大人都瞭解這個世界。所以，我可以用我的知識，換取{F#妳}{M#你}路上的見聞嗎？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_draw_appear_01"
+		},
+		{
+			"voicelineId": 73001,
+			"title": "閒聊·邀請",
+			"voicelineType": "1101",
+			"description": "不知道做什麼的話，要不要我帶{F#妳}{M#你}去走走呀？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_01"
+		},
+		{
+			"voicelineId": 73002,
+			"title": "閒聊·心事",
+			"voicelineType": "1102",
+			"description": "又有心事嗎？我來陪{F#妳}{M#你}一起想吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_02"
+		},
+		{
+			"voicelineId": 73003,
+			"title": "閒聊·感受",
+			"voicelineType": "1103",
+			"description": "果然要親眼去看，才能感受到世界的美。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_03"
+		},
+		{
+			"voicelineId": 73004,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "快去避雨吧，小心頭頂上長出蘑菇喔。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 73005,
+			"title": "打雷的時候…",
+			"voicelineType": "1202",
+			"description": "{F#妳}{M#你}知道嗎？雷鳴是生命的前奏，很快這片大地就會充滿生機。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_thunder_01"
+		},
+		{
+			"voicelineId": 73006,
+			"title": "下雪的時候…",
+			"voicelineType": "1203",
+			"description": "聽見了嗎？天空正對萬物輕語：「睡覺時間到了喔。」",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_snowy_01"
+		},
+		{
+			"voicelineId": 73007,
+			"title": "陽光很好…",
+			"voicelineType": "1204",
+			"description": "天氣真好啊，暖洋洋的，我們的身邊馬上也要熱鬧起來了。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_sunny_01"
+		},
+		{
+			"voicelineId": 73008,
+			"title": "起風的時候…",
+			"voicelineType": "1205",
+			"description": "宮殿裡是不會起風的…哦，抱歉，對{F#妳}{M#你}來說是理所當然的知識吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_breezy_01"
+		},
+		{
+			"voicelineId": 73009,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早安，我們趕快出發吧，這世上有太多的東西都是「逾時不候」的呢。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 73010,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "午休時間到，我想喝樹莓薄荷飲。用兩個和太陽有關的故事跟{F#妳}{M#你}換，好不好？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 73011,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "太陽下山啦，我們也該把舞臺讓給夜行的大家族了。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73012,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "快去睡吧，放心，我已經為{F#妳}{M#你}準備好甜甜的夢啦。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 73013,
+			"title": "關於納西妲自己·見識",
+			"voicelineType": "2001",
+			"description": "燼寂海啊，那裡什麼都沒有，就像蕈豬的腦子一樣空空如也，我當然知道。啊？我…我確實沒有親眼見過，那也是我所觸及不到的地方呀。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle"
+		},
+		{
+			"voicelineId": 73014,
+			"title": "關於納西妲自己·癡迷",
+			"voicelineType": "2005",
+			"description": "神明只送給人類填飽肚子的知識，人類卻藉此製作了工具、書寫了文字、壯大了城邦，現在又放眼星辰與深淵…他們每時每刻都在創造全新的「知識」，也令我再也無法移開雙眼。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73015,
+			"title": "關於我們·故事集錦",
+			"voicelineType": "2003",
+			"description": "{F#妳}{M#你}旅途中的見聞，比我學習到的知識要精彩太多，而且我還能隨時提問，把所有的細節都瞭解到一清二楚…真是太滿足了。好了好了，別浪費時間，我們快繼續吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close"
+		},
+		{
+			"voicelineId": 73016,
+			"title": "關於我們·旅行",
+			"voicelineType": "2002",
+			"description": "我早就不滿足於當一位聽眾了，一直都想出去看看。{F#妳}{M#你}冒險經驗這麼豐富，當我的嚮導好不好啊？{F#妳}{M#你}之後所有的故事，我都想親身感受。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73017,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "天空長出眼睛是為了見證大地的美好，而本來就擁有雙眼的人類，是在什麼模樣的情況下，才需要靠「神之眼」觀察這個世界呢？這個問題的答案，聰明的{F#妳}{M#你}能夠明白嗎？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73018,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "很多時候，我們直到經受切膚之痛，才不得不直視自身的懶惰、愚昧、魯莽或傲慢。但大可不必為此懊悔。我們無法觀測未來的所有可能性，只能靠這樣略顯笨拙的方式獲得知識。學費而已，再正常不過啦。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_share_01"
+		},
+		{
+			"voicelineId": 73019,
+			"title": "感興趣的見聞·未見之花",
+			"voicelineType": "3003",
+			"description": "須彌的沙漠看起來比雨林缺乏生機，但它也承載了久遠的文明，孕育了穩定的生態。等哪天它不再和雨林吵架了，一定能開出我從來沒見過的花吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_gift_01"
+		},
+		{
+			"voicelineId": 73020,
+			"title": "關於賽諾·笑話",
+			"voicelineType": "4001",
+			"description": "他講的笑話確實深奧，還滿有趣的。嗯？{F#妳}{M#你}有哪句沒聽懂嗎？那我來解釋給{F#妳}{M#你}聽吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73021,
+			"title": "關於賽諾·職責",
+			"voicelineType": "4002",
+			"description": "在面對秩序與正義的衝突之時，不是每一位「大風紀官」都能得出絕對堅定的答案。他應該最清楚，妥協的結果只有無路可退，所以他現在能回到屬於他的位置上，對整個須彌而言都是一大幸事。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73022,
+			"title": "關於提納里…",
+			"voicelineType": "4003",
+			"description": "雨林能夠對抗「死域」的侵蝕，至今都生機煥發。巡林官們的付出舉足輕重，而提納里又是他們之中的佼佼者。只是…希望他可以稍稍溫柔一些，這樣才更有利於巡林員招賢納士嘛。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73023,
+			"title": "關於柯萊…",
+			"voicelineType": "4004",
+			"description": "我聽說過她的故事，她的堅韌如寶石般璀璨奪目。她經歷了太多，希望須彌的蔥綠能夠長久地庇護她，令她像普通的女孩子那樣健康成長。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73024,
+			"title": "關於艾爾海森…",
+			"voicelineType": "4005",
+			"description": "他擁有很超前的知識體系，並且每時每刻都在保持思考，或許這個世界上沒有什麼事能瞞過他吧。然而對智慧者而言，普通人的凡庸是一種與生俱來的錯嗎？那都是「我們」不可分割的一部分。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73025,
+			"title": "關於妮露…",
+			"voicelineType": "4006",
+			"description": "我曾經借用別人的身體，問她想不想讓小吉祥草王來看她的舞蹈…雖然我已經悄悄看了很多次，但按理來說，應該要我本人到場，才算是對她「花神誕祭」表演的尊重。結果我卻被委婉地拒絕了…唔，有點傷心。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73026,
+			"title": "關於多莉…",
+			"voicelineType": "4007",
+			"description": "她見到我的第一句話就是，「我看上了{F#妳}{M#你}的宮殿，怎麼賣啊？」淨善宮怎麼可能賣給她呢？不過她的問題確實把我問倒了。我想了好久，也不知道淨善宮該定價多少摩拉…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73027,
+			"title": "關於卡維…",
+			"voicelineType": "4008",
+			"description": "他對須彌推行智慧這一事的理解，已經非常接近本質了，很可惜的是，他掌握的真相無法成為這個國度的主流。什麼？{F#妳}{M#你}說他和艾爾海森是室友？世上居然還有這種可能性…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73028,
+			"title": "關於琺露珊…",
+			"voicelineType": "4009",
+			"description": "她的身體遭受了赤王遺蹟中殘留力量的影響，就像是被時間這隻大烏龜不小心甩下了背，永遠忘在身後。如果{F#妳}{M#你}感興趣的話，應該能從她身上窺見過去須彌的一角吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73029,
+			"title": "關於塵世七執政·引薦",
+			"voicelineType": "4010",
+			"description": "好像塵世七執政之間在很久很久以前還會定期聯絡，只是我的情況比較特殊，已經不記得這段經歷了…既然須彌的混亂告一段落，我覺得我該重新見他們一面。{F#妳}{M#你}熟識的那幾位神明，能為我引薦一下嗎？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73030,
+			"title": "關於塵世七執政·遊戲",
+			"voicelineType": "4011",
+			"description": "聽說玩遊戲能夠快速縮短人與人之間的距離。神也是如此吧。不如，在和大家相聚之後，我就主動提議一起玩「跳房子」…好像也不適合。弄得像是我把房門做成了小小的洞口，仗著自己的優勢欺負大家一樣。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73031,
+			"title": "關於散兵…",
+			"voicelineType": "4012",
+			"description": "當他自認為追尋已久的願望終於實現，他眼中所見的究竟是滿足，還是更大的空虛呢？正是因為我們不會飛，才會無比嚮往天空…讓他好好想想吧，在擁抱過空無一物的天空之後。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_scaramouche_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73074,
+			"title": "關於芙寧娜…",
+			"voicelineType": "4013",
+			"description": "人們常說，智慧並不取決於知道什麼，而是取決於可以改變什麼。毫無疑問，那個「預言」早就刻寫在了世界樹中…明明好像一切都沒改變，但又好像什麼都已經改變了。{F#妳}{M#你}我都知道，她是聰明到可以扭轉世界命運的人呀…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「罪人舞步旋」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73032,
+			"title": "想要瞭解納西妲·其一",
+			"voicelineType": "5001",
+			"description": "我的過往相當單調，大概{F#妳}{M#你}聽上一陣子就會像炮魨吸水那樣打哈欠。不過好奇心是彌足珍貴的東西，我也不想浪費…既然這樣，我跟{F#妳}{M#你}分享一些我做過的夢吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_01"
+		},
+		{
+			"voicelineId": 73033,
+			"title": "想要瞭解納西妲·其二",
+			"voicelineType": "5002",
+			"description": "我的夢中總會出現一個花盆，每次澆水施肥就會長出相同的花。對於完全確定的收穫，{F#妳}{M#你}還能享受養花的過程嗎？呵呵，對我來說，至少每次開花之後飛過的蝴蝶，都有不一樣的顏色，有時候還會有蜜蜂呢。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73034,
+			"title": "想要瞭解納西妲·其三",
+			"voicelineType": "5003",
+			"description": "我的夢中總會出現一個沙漏，我喜歡往裡面加一點點水，攪勻之後看它走完一次需要多長時間，和上一次又差了多少。沒有規律，也沒有意義，卻能帶走我大腦累積的疲憊。我想「什麼都沒有」正是它的樂趣所在。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73035,
+			"title": "想要瞭解納西妲·其四",
+			"voicelineType": "5004",
+			"description": "我的夢中總會出現一片空地，無論周遭的景色如何變化，它都會佔據最重要的位置，滿奇怪的吧？我覺得這裡曾經應該存在過什麼東西，可是就算我驅使夢境的權能也無法獲得答案。唔，夢中居然也有我不能掌控的東西…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73036,
+			"title": "想要瞭解納西妲·其五",
+			"voicelineType": "5005",
+			"description": "我的夢中什麼都有，唯獨缺少來來往往的人。但在與{F#妳}{M#你}相遇之後，這裡漸漸變得熱鬧了。或許{F#妳}{M#你}在夢中扮演的是「嚮導」這樣的角色，不僅讓我的夢變得更有人情味，也帶我走出了牢籠。呵呵，走吧，接下來的旅途也請{F#妳}{M#你}引路了。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開啟",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73037,
+			"title": "納西妲的愛好…",
+			"voicelineType": "6001",
+			"description": "就這麼看著{F#妳}{M#你}，算是愛好嗎？因為{F#妳}{M#你}的一舉一動都讓我很好奇啊。作為世界的旅行者，{F#妳}{M#你}從哪裡來、將到哪裡去、會遇到什麼人、戰勝什麼困難，都是我想尋求的答案。{F#妳}{M#你}不用太在意我，就讓我一直觀察{F#妳}{M#你}吧。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_hobby"
+		},
+		{
+			"voicelineId": 73038,
+			"title": "納西妲的煩惱…",
+			"voicelineType": "6002",
+			"description": "我自認為我擅長提問和回答問題，但我漸漸明白，有很多人是揣著明白裝糊塗，問題的答案並不能幫上他們的忙。是不是隨著年齡增長，大家都會失去面對質問和答案的勇氣呢…",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_annoyed"
+		},
+		{
+			"voicelineId": 73039,
+			"title": "喜歡的食物…",
+			"voicelineType": "6005",
+			"description": "當然是棗椰蜜糖了，只要吃上一小塊，大腦就會劈哩啪啦地飛速運轉，沒什麼問題解決不了。唯一需要注意的是，裝蜜糖的罐子不能放在太容易伸手搆到的地方。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 73040,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "那些海鮮，牠們在無邊無際的黑暗中出生，成長在我所不瞭解的海底深處。要我吃下牠們，就好像要我咽下一團髒兮兮的烏雲一樣。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodDislike"
+		},
+		{
+			"voicelineId": 73041,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "像這樣的好味道，應該被世界永久記錄下來。謝謝{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_pref_01"
+		},
+		{
+			"voicelineId": 73042,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "呵呵，{F#妳}{M#你}的心意我收到了，味道也可圈可點。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_normal_01"
+		},
+		{
+			"voicelineId": 73043,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "…怎麼說呢？打比方的話，{F#妳}{M#你}不會讓狗狗喝蔬菜汁吧？",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_dislike_01"
+		},
+		{
+			"voicelineId": 73044,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "我想了想，要慶祝{F#妳}{M#你}的生日，至少也要像「花神誕祭」一樣隆重…欸？太誇張了嗎？可是我都讓人準備好了，走吧走吧，僅限一次也好，絕對會讓{F#妳}{M#你}滿意的！",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 73045,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "變聰明啦~",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73046,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "想法變得更開闊了，天空和大海都能裝進去。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73047,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "這種感覺，就像月蓮找到了蓮葉，珊瑚真珠找到了貝殼。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73048,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "感謝{F#妳}{M#你}願意讓我成為{F#妳}{M#你}的同伴，還教會了我那麼多新的知識。我以智慧之神的名義為{F#妳}{M#你}賜福，從今往後不再會有困惑阻礙{F#妳}{M#你}的旅途。",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 73049,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "記住你了。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_01"
+		},
+		{
+			"voicelineId": 73050,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "蔓延吧。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_02"
+		},
+		{
+			"voicelineId": 73051,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "等一下會有點痛喔。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_03"
+		},
+		{
+			"voicelineId": 73052,
+			"title": "元素戰技·其四",
+			"voicelineType": "100004",
+			"description": "嘿！",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_04"
+		},
+		{
+			"voicelineId": 73053,
+			"title": "元素戰技·其五",
+			"voicelineType": "100005",
+			"description": "手牽手~",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_05"
+		},
+		{
+			"voicelineId": 73054,
+			"title": "元素戰技·其六",
+			"voicelineType": "100006",
+			"description": "全都看見囉。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_06"
+		},
+		{
+			"voicelineId": 73055,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "來我家作客吧~",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_01"
+		},
+		{
+			"voicelineId": 73056,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "知識，與你分享。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_02"
+		},
+		{
+			"voicelineId": 73057,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "此即智慧之殿堂。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_03"
+		},
+		{
+			"voicelineId": 73058,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "好奇心值得嘉獎喔。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_01"
+		},
+		{
+			"voicelineId": 73059,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "是源自誰的饋贈呢？",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_02"
+		},
+		{
+			"voicelineId": 73060,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "有{F#妳}{M#你}想要的嗎？",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_03"
+		},
+		{
+			"voicelineId": 73061,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "換個策略吧。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_01"
+		},
+		{
+			"voicelineId": 73062,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "別打啦！",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_02"
+		},
+		{
+			"voicelineId": 73063,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "這樣不太明智…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_03"
+		},
+		{
+			"voicelineId": 73064,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "讓我來想想辦法。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 73065,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "別再硬撐了。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 73066,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "生命…終有盡時…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_01"
+		},
+		{
+			"voicelineId": 73067,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "枯萎之刻…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_02"
+		},
+		{
+			"voicelineId": 73068,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "我…不明白…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_03"
+		},
+		{
+			"voicelineId": 73069,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "好痛啊。",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 73070,
+			"title": "受重擊·其二",
+			"voicelineType": "910002",
+			"description": "被打暈了…",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 73071,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "我等{F#妳}{M#你}好久啦。",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_01"
+		},
+		{
+			"voicelineId": 73072,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "沒去過的地方還有很多呢。",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_02"
+		},
+		{
+			"voicelineId": 73073,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "又可以增長見識了。",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_03"
+		}
+	]
+}

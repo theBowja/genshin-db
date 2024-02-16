@@ -1,0 +1,864 @@
+{
+	"id": 10000027,
+	"name": "Ningguang",
+	"friendLines": [
+		{
+			"voicelineId": 15100,
+			"title": "첫 만남…",
+			"voicelineType": "1000",
+			"description": "난 칠성의 「천권」 응광이야. 나와 거래할래? 내 호위 무사가 되어줘. 그럼 난 네게 리월에서 두각을 나타낼 수 있는 기술을 가르쳐줄게",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_draw_appear"
+		},
+		{
+			"voicelineId": 15101,
+			"title": "잡담·골동품",
+			"voicelineType": "1101",
+			"description": "아무리 값이 많이 나가는 골동품이라도 사람에게 주는 기쁨은 소유했을 때, 그 한순간뿐이야",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_01"
+		},
+		{
+			"voicelineId": 15102,
+			"title": "잡담·상업 전쟁",
+			"voicelineType": "1102",
+			"description": "상업 전쟁에서 완벽한 사냥꾼은 흔적을 남기지 않아",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_02"
+		},
+		{
+			"voicelineId": 15103,
+			"title": "잡담·투자",
+			"voicelineType": "1103",
+			"description": "새로운 투자를 찾지. 어쨌든 모라는 많을수록 좋으니까",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_explore_idle_03"
+		},
+		{
+			"voicelineId": 15104,
+			"title": "비가 올 때…",
+			"voicelineType": "1201",
+			"description": "어? 비가 오네. 우산 좀 받쳐줘",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 15105,
+			"title": "눈이 올 때…",
+			"voicelineType": "1202",
+			"description": "평범한 설경일 뿐이잖아. 내가 「흩날리는 눈」이 뭔지 제대로 보여주지",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_snowy_01"
+		},
+		{
+			"voicelineId": 15106,
+			"title": "햇살이 좋을 때…",
+			"voicelineType": "1203",
+			"description": "평온하다고? 너의 눈을 믿지 마. 눈은 거짓말을 하니까",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_sunny_01"
+		},
+		{
+			"voicelineId": 15107,
+			"title": "강풍이 불 때…",
+			"voicelineType": "1204",
+			"description": "이렇게 바람이 거센 날은 어부들에게 재앙이지. 그리고… 흥, 아니야",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_weather_gale_01"
+		},
+		{
+			"voicelineId": 15108,
+			"title": "아침 인사…",
+			"voicelineType": "1001",
+			"description": "좋은 아침이야. 일은 경중을 따져서 보고하도록 해",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 15109,
+			"title": "점심 인사…",
+			"voicelineType": "1002",
+			"description": "넌 「유리정」하고 「신월헌」 중에 어딜 더 많이 가지?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 15110,
+			"title": "저녁 인사…",
+			"voicelineType": "1003",
+			"description": "찻집이 꽉 찼다고? 그럼 「군옥각」에 가봐. 가격이… 감당 된다면",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "「오래된 몸과의 이별」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15111,
+			"title": "굿나잇…",
+			"voicelineType": "1004",
+			"description": "응, 가서 쉬어. 중요한 일이 생기면 사람을 보내 알릴게",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 15112,
+			"title": "응광 자신에 대해·관점",
+			"voicelineType": "2001",
+			"description": "가격협상이나 상업 경쟁에서 기세나 조건은 다음이야. 이기고 싶다면 먼저 상대의 히든카드를 파악해야 돼",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle"
+		},
+		{
+			"voicelineId": 15113,
+			"title": "응광 자신에 대해·인상",
+			"voicelineType": "2005",
+			"description": "내 인상이 달라진 것 같다고? 그땐 네 힘이 필요했으니 당연히 너한테 친절하게 보이려고 했지. 하지만 이제는 널 내 중요한 「계약」 파트너라고 생각하니 더 이상 가식 떨 필요가 없지",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_idle_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「다가오는 객성」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15114,
+			"title": "우리에 대해·소문",
+			"voicelineType": "2002",
+			"description": "요새 나에 대한 소문을 많이 들었나 보네. 내가 대체 어떤 사람인지 궁금해? 네 두 눈으로 직접 판단해…. 너의 생각도 소문의 일부가 되겠지",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close1"
+		},
+		{
+			"voicelineId": 15115,
+			"title": "우리에 대해·관찰",
+			"voicelineType": "2003",
+			"description": "내 밑에 오래 있었으니 「관찰」을 할 수 있겠어? 그럼 날 「관찰」해봐. 내 심복이 될 때까지",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15116,
+			"title": "우리에 대해·군옥각",
+			"voicelineType": "2004",
+			"description": "앞으로 와서 내 옆에 서. 「군옥각」 봤지? 처음엔 조그만 방 크기였지만 지금은 리월 상공을 찌르고 있어. 군옥각의 규모가 칠국을 뒤덮는 날에도 이렇게 내 옆에 있자",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「오래된 몸과의 이별」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						101609
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15117,
+			"title": "「신의 눈」에 대해…",
+			"voicelineType": "3001",
+			"description": "모라로 해결할 수 있는 일에 「신의 눈」을 쓸 필요 없지. 모라로 해결할 수 없는 일은… 여태까지 단 한 번뿐이었어",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15118,
+			"title": "하고 싶은 이야기·딜러",
+			"voicelineType": "3002",
+			"description": "노름꾼은 언제나 다음 주사위에 희망을 걸지…하지만 돈을 따는 사람은 판에 끼지 않는 설계자일 뿐이야",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share"
+		},
+		{
+			"voicelineId": 15119,
+			"title": "하고 싶은 이야기·목표",
+			"voicelineType": "3004",
+			"description": "제군의 부재는 리월에게든 칠성에게든 큰 시험이지. 나도 요즘처럼 이렇게 잠을 이루지 못하는 건 아주 오랜만이야. \n하지만 난 내 목표를 포기하지 않아. 언젠가 7개국을 군옥각의 그림자로 뒤덮을 테니까",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「다가오는 객성」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15120,
+			"title": "흥미있는 일…",
+			"voicelineType": "3003",
+			"description": "리월의 고대 문학 중에 「유리백합」을 찬미하는 작품은 많아. 하지만 요새 거의 멸종이라 「옥경대」에만 좀 남아있지. 명성이 자자하지만 얻기 힘드니 가격이 엄청나",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_gift"
+		},
+		{
+			"voicelineId": 15121,
+			"title": "북두에 대해·벌금",
+			"voicelineType": "4001",
+			"description": "그… 함장. 사람들에게 존경을 받긴 하지만 늘 앞장서서 규칙을 무시하잖아. 그녀가 낸 벌금으로 새로운 원양선을 살 정도야",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15122,
+			"title": "북두에 대해·태도",
+			"voicelineType": "4002",
+			"description": "넌 이렇게 엉망으로 교류한 경험이 없겠지. 별말을 다해도 상대는 여전히 제멋대로야. 됐다. 그 북두 선장을 최대한 안 보게 해줘",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_beidou_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15123,
+			"title": "종려에 대해…",
+			"voicelineType": "4003",
+			"description": "종려… 「왕생당」이 말한 그 선생, 다른 사람이 모르는 것에 정통하다지. 하지만 약점을 손에 쥐기 전에는 아무리 우수한 장기말이라도 사용할 수 없어",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15124,
+			"title": "행추에 대해…",
+			"voicelineType": "4004",
+			"description": "비운 상회의 둘째 공자, 그런 성격의 사람은 내가 거슬릴 거야. 당연한 일이지. 나도 그를 곤란하게 하지 않아. 「갈 길이 다른 사람은 함께하지 못한다」라는 말과 같은 이치야",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15125,
+			"title": "향릉에 대해…",
+			"voicelineType": "4005",
+			"description": "「만민당」의 그 여자아이… 얼굴에 날 경계한다고 쓰여 있어. 훗, 그 아이가 요 몇 년 내가 「만민당」에 한 후원을 안다면… 어떤 표정을 지을까?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xiangling_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15126,
+			"title": "감우에 대해…",
+			"voicelineType": "4006",
+			"description": "아무리 감우라고 해도 지나치게 의존해선 안 돼. 리월엔 「완벽해 보이는 것에도 빈틈이 있다」는 속담이 있지. 중요한 일은 자신이 직접 처리하고 검사해야 안심이 되는 법",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15127,
+			"title": "요요에 대해…",
+			"voicelineType": "4007",
+			"description": "감우가 돌봐주고 있는 그 소녀를 말하는 건가. 하, 긴장할 것 없어, 그 일을 퍼뜨릴 생각은 없으니까. 그 함장도 가끔은 똑똑할 때가 있군. 맞다, 그 요요라는 아이, 최근에 계속 해산물만 먹던데, 감우한테 과일과 야채도 좀 먹이라고 전해주렴",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15128,
+			"title": "각청에 대해…",
+			"voicelineType": "4008",
+			"description": "「옥형성」… 최근 그녀는 많이 변했어. 리월에 필요한 건 예전의 그녀일까, 아니면 현재의 그녀일까? 아마 이를 판단하려면, 오랜 시간이 걸리겠지",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「다가오는 객성」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15129,
+			"title": "진에 대해…",
+			"voicelineType": "4009",
+			"description": "몬드성의 단장 대행은 분명 신중하고 섬세한 여성이겠지. 항상 적절한 용어를 쓰는 건 둘째치고, 그녀는 매번 편지의 끝을 조금도 비뚤어지지 않게 접거든. 사람들이 알아채지 못하는 이런 사소한 부분일수록 그 사람의 진정한 품성을 엿볼 수 있는 법이야",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15130,
+			"title": "연비에 대해…",
+			"voicelineType": "4010",
+			"description": "연비? 흠, 어떻게 보면 정말 훌륭한 라이벌이지. 만약 연비가 법을 「교묘하게」 해석해서 상담자들한테 온갖 절묘한 조언을 해주지 않았다면, 나 혼자서 법의 빈틈을 찾아 메꾸며 법전을 보완하는 데 몇 달은 더 걸렸겠지",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15131,
+			"title": "신학에 대해…",
+			"voicelineType": "4012",
+			"description": "신학 씨는 요즘 어때? 수고스럽겠지만 그녀를 잘 부탁해. 너희가 군옥각 재건을 도와준 건 항상 기억하고 있어, 정말 고마워. 아, 인사치레는 여기까지 하고, 좋은 차를 준비해뒀으니 시간 있을 때 놀러 와",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_shenhe_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「바람이 불면 돌아오는 학」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1101505
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15132,
+			"title": "운근에 대해…",
+			"voicelineType": "4011",
+			"description": "운근은… 네가 보기에 그녀의 연극은 어때? 처음엔 난해할 수도 있지만 조금만 참고 감상해봐. 이런 고상한 예술은 계속 전승돼야 한다고 생각해서 그녀의 극단에 투자한 거거든",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yunjin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15133,
+			"title": "야란에 대해…",
+			"voicelineType": "4013",
+			"description": "재밌는 사람이야. 내가 절대적으로 신뢰하는 사람이기도 하고. 팔방미인에 재능도 아주 뛰어나지. 후후, 너도 그녀처럼 똑똑한 사람이니, 사이좋게 지내길 바라",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_yelan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15174,
+			"title": "한운에 대해…",
+			"voicelineType": "4014",
+			"description": "얼마 뒤에 한운 씨를 찻집으로 초대할 생각이야. 마침 재밌는 기계 장난감을 몇 개 수집했는데, 의견을 듣고 싶거든. 이참에 선인이 리월항에 살면서 겪는 재밌는 일화도 들어보고 싶고. 그 초대장을 보낼 사람은… 네가 좋을 것 같은데, 어때?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「천 리를 밝히는 달」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15134,
+			"title": "응광에 대해 알기·첫 번째",
+			"voicelineType": "5001",
+			"description": "넌 그런 번거로운 예절 따지지 말고 편하게 해도 돼. 하지만 내 시간을 소중히 여겨줘. 설명은 간단명료하게 하도록 해",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_01"
+		},
+		{
+			"voicelineId": 15135,
+			"title": "응광에 대해 알기·두 번째",
+			"voicelineType": "5002",
+			"description": "아이들은 천진하고 순수해. 그래서 그들이 제공하는 정보도 가장 값지지. 그럼 넌 어떻지? 네가 제공하는 것들은 어떤 것들일까",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.3 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15136,
+			"title": "응광에 대해 알기·세 번째",
+			"voicelineType": "5003",
+			"description": "요새 고민이 하나 있어. 네가 한동안 리월항에 남는다면… 앞으로 이 도시를 주무를 수 있게 될지도 모르겠군… 훗, 가정일 뿐이야. 이 투자가 가치 있을지는 좀 더 생각해봐야겠어",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15137,
+			"title": "응광에 대해 알기·네 번째",
+			"voicelineType": "5004",
+			"description": "내 방법을 따라 모라로 편리를 도모해도 돼. 그러나 모라로 유지되는 관계는 일시적이라는 것을 기억해. 훗, 그래서 난 널 모라로 떠보지 않아",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.5 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15138,
+			"title": "응광에 대해 알기·다섯 번째",
+			"voicelineType": "5005",
+			"description": "꽤 훌륭한 투자였어. 수익은 별로였지만 너와 함께 보낸 시간은 근사한 보답이었어. 이번에도 내가 이긴 것 같군——내가 제대로 된 사람에게 걸었어",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15139,
+			"title": "응광의 취미…",
+			"voicelineType": "6001",
+			"description": "「리월 천년」이란 게임을 해보고 싶어? 나도 네가 게임을 잘하나 보고 싶었는데, 잘됐네",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_hobby"
+		},
+		{
+			"voicelineId": 15140,
+			"title": "응광의 고민…",
+			"voicelineType": "6002",
+			"description": "고민…어? 「리월 칠성」의 고민을 알려주면…네가 감당할 수 있겠어? 그리고 혹시라도 그걸 발설한다면…",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_dialog_annoyed"
+		},
+		{
+			"voicelineId": 15141,
+			"title": "좋아하는 음식…",
+			"voicelineType": "6003",
+			"description": "묵은닭과 돼지 뼈를 오래 고아 만든 탕을 속이 부드럽고 신선한 배추에 뿌려. 난 음식에 까다롭지 않아. 평소에 이런 것만 먹어도 충분해",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodLike"
+		},
+		{
+			"voicelineId": 15142,
+			"title": "싫어하는 음식…",
+			"voicelineType": "6004",
+			"description": "어떤 사람은 연회마다 「골든크랩」 같이 부를 과시하는 음식을 주문하지만 난 아무래도 이해가 안 돼. 그런 요리로 날 연회에 초청하려면 차라리 모라로 줘",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_foodDislike"
+		},
+		{
+			"voicelineId": 15171,
+			"title": "선물 획득·첫 번째",
+			"voicelineType": "6007",
+			"description": "훌륭해, 넌 항상 내 예상을 뒤엎는군",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_pref_01"
+		},
+		{
+			"voicelineId": 15172,
+			"title": "선물 획득·두 번째",
+			"voicelineType": "6008",
+			"description": "핵심을 파악하지 못한다면 다 무용지물이 되는 수 있어… 무슨 말인지 알겠니?",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_normal_01"
+		},
+		{
+			"voicelineId": 15173,
+			"title": "선물 획득·세 번째",
+			"voicelineType": "6009",
+			"description": "마음만 받을게",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_spice_dislike_01"
+		},
+		{
+			"voicelineId": 15143,
+			"title": "생일…",
+			"voicelineType": "7001",
+			"description": "{M#이건 고급 예상꽃으로 만든 비단이야. 이건 네 거고, 이건… 여동생을 찾고 나면 그 아이가 좋아하는 옷을 지어줘. 생일 축하해}{F#이건 고급 예상꽃으로 만든 비단이야. 가져가서 마음에 드는 옷을 지어. 생일 즐겁게 보내고}",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_b",
+			"voicefile_male": "VO_friendship/VO_ningguang/vo_ningguang_pref_birthday_a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 15144,
+			"title": "돌파의 느낌·기",
+			"voicelineType": "8001",
+			"description": "「무력」은 품위가 없어. 하책 중의 하책이지",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「1」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15145,
+			"title": "돌파의 느낌·승",
+			"voicelineType": "8002",
+			"description": "시간과 모라를 「힘」으로 등가 교환한다…라. 재미있군. 그 가치를 인정해",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「2」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15146,
+			"title": "돌파의 느낌·전",
+			"voicelineType": "8003",
+			"description": "넌 무슨 마음을 품고 밀고 나가는 거야? 쉿… 말하지 마. 시간을 가지고 널 파악하겠어",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「4」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 15147,
+			"title": "돌파의 느낌·결",
+			"voicelineType": "8004",
+			"description": "난 경솔하게 남을 인정하지 않지만 지금 보니 칭찬하지 않고는 못 배기겠어. 아주 잘했어. 나한테 너 같은 부하가 더 있다면…아니, 너 하나로 충분할지도 몰라",
+			"voicefile": "VO_friendship/VO_ningguang/vo_ningguang_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「6」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 15148,
+			"title": "원소전투 스킬·첫 번째",
+			"voicelineType": "100001",
+			"description": "보잘것없는 재주군",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_01"
+		},
+		{
+			"voicelineId": 15149,
+			"title": "원소전투 스킬·두 번째",
+			"voicelineType": "100002",
+			"description": "괜히 시간 낭비하지 마",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_02"
+		},
+		{
+			"voicelineId": 15150,
+			"title": "원소전투 스킬·세 번째",
+			"voicelineType": "100003",
+			"description": "흥, 포기해",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill1_03"
+		},
+		{
+			"voicelineId": 15151,
+			"title": "원소폭발·첫 번째",
+			"voicelineType": "200001",
+			"description": "네 목숨은 내가 거두지",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_01"
+		},
+		{
+			"voicelineId": 15152,
+			"title": "원소폭발·두 번째",
+			"voicelineType": "200002",
+			"description": "복종하라",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_02"
+		},
+		{
+			"voicelineId": 15153,
+			"title": "원소폭발·세 번째",
+			"voicelineType": "200003",
+			"description": "훗, 잘가~",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_skill3_03"
+		},
+		{
+			"voicelineId": 15154,
+			"title": "보물상자 오픈·첫 번째",
+			"voicelineType": "300001",
+			"description": "눈썰미가 좋네",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_01"
+		},
+		{
+			"voicelineId": 15155,
+			"title": "보물상자 오픈·두 번째",
+			"voicelineType": "300002",
+			"description": "작은 수확도 알뜰하게 모아야지",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_02"
+		},
+		{
+			"voicelineId": 15156,
+			"title": "보물상자 오픈·세 번째",
+			"voicelineType": "300003",
+			"description": "재물은 많을수록 좋은 법이야",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_chest_open_03"
+		},
+		{
+			"voicelineId": 15157,
+			"title": "HP 부족·첫 번째",
+			"voicelineType": "410001",
+			"description": "감히 날 다치게 하다니",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_01"
+		},
+		{
+			"voicelineId": 15158,
+			"title": "HP 부족·두 번째",
+			"voicelineType": "410002",
+			"description": "잊지 않겠다",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_02"
+		},
+		{
+			"voicelineId": 15159,
+			"title": "HP 부족·세 번째",
+			"voicelineType": "410003",
+			"description": "흥",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_03"
+		},
+		{
+			"voicelineId": 15160,
+			"title": "동료 HP 감소·첫 번째",
+			"voicelineType": "400001",
+			"description": "지금 상황으로 네게는 승산이 없어",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 15161,
+			"title": "동료 HP 감소·두 번째",
+			"voicelineType": "400002",
+			"description": "이렇게 된 이상 내가 도와주지",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 15162,
+			"title": "전투 불능·첫 번째",
+			"voicelineType": "500001",
+			"description": "세상 사람들은 모두 장기판의 말일뿐이야…",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_01"
+		},
+		{
+			"voicelineId": 15163,
+			"title": "전투 불능·두 번째",
+			"voicelineType": "500002",
+			"description": "승부는 결정됐어…. 이렇게 끝나는 건가",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_02"
+		},
+		{
+			"voicelineId": 15164,
+			"title": "전투 불능·세 번째",
+			"voicelineType": "500003",
+			"description": "이게 바로 「천권」의 종언인가?…",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_life_die_03"
+		},
+		{
+			"voicelineId": 15165,
+			"title": "일반 피격·첫 번째",
+			"voicelineType": "900001",
+			"description": "무례하군",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 15166,
+			"title": "강공격 피격·첫 번째",
+			"voicelineType": "910001",
+			"description": "두고 보자",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 15167,
+			"title": "강공격 피격·두 번째",
+			"voicelineType": "910002",
+			"description": "피에는 피로 갚아야지",
+			"voicefile": "VO_gameplay/VO_ningguang/vo_ningguang_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 15168,
+			"title": "파티 가입·첫 번째",
+			"voicelineType": "600001",
+			"description": "알겠다",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_01"
+		},
+		{
+			"voicelineId": 15169,
+			"title": "파티 가입·두 번째",
+			"voicelineType": "600002",
+			"description": "서두르라",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_02"
+		},
+		{
+			"voicelineId": 15170,
+			"title": "파티 가입·세 번째",
+			"voicelineType": "600003",
+			"description": "날 실망시키지 마",
+			"voicefile": "VO_teamJoin/vo_ningguang_teamJoin_03"
+		}
+	]
+}

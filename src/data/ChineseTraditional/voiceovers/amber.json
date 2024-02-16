@@ -1,0 +1,805 @@
+{
+	"id": 10000021,
+	"name": "Amber",
+	"friendLines": [
+		{
+			"voicelineId": 10100,
+			"title": "初次見面…",
+			"voicelineType": "1000",
+			"description": "偵察騎士安柏，前來報到！今後有什麼需要幫忙的，儘管說好啦！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_draw_appear"
+		},
+		{
+			"voicelineId": 10101,
+			"title": "閒聊·興趣",
+			"voicelineType": "1101",
+			"description": "好想跑一會步呀。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_01"
+		},
+		{
+			"voicelineId": 10102,
+			"title": "閒聊·掛念",
+			"voicelineType": "1102",
+			"description": "要是被琴發現我們在偷懶，她會不高興的。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_02"
+		},
+		{
+			"voicelineId": 10103,
+			"title": "閒聊·新發現",
+			"voicelineType": "1103",
+			"description": "那邊好像有什麼奇怪的東西耶…不去看嗎、不去看看嗎？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_03"
+		},
+		{
+			"voicelineId": 10104,
+			"title": "下雨的時候·擔憂",
+			"voicelineType": "1201",
+			"description": "下雨了…蝴蝶結會淋濕的…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 10105,
+			"title": "下雨的時候·提醒",
+			"voicelineType": "1202",
+			"description": "下雨了啊…視野會有影響，要小心哦。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_02"
+		},
+		{
+			"voicelineId": 10106,
+			"title": "雨過天晴…",
+			"voicelineType": "1203",
+			"description": "唔哇~天氣真好。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 10107,
+			"title": "陽光很好…",
+			"voicelineType": "1204",
+			"description": "嗯…要是風大點就好了。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_sunny_01"
+		},
+		{
+			"voicelineId": 10108,
+			"title": "起風的時候·愜意",
+			"voicelineType": "1205",
+			"description": "真是舒服呀…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_01"
+		},
+		{
+			"voicelineId": 10109,
+			"title": "起風的時候·放鬆",
+			"voicelineType": "1206",
+			"description": "我喜歡這種天氣，嗯…真輕鬆！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_02"
+		},
+		{
+			"voicelineId": 10110,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早安喲！要不要一起晨跑？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 10111,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "可以跟{F#妳}{M#你}一起吃午飯嗎？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 10112,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "天黑了，要我點個火把嗎？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 10113,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "沒錯，休息也很重要！那就說好了哦，明天見！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 10114,
+			"title": "關於安柏自己…",
+			"voicelineType": "2001",
+			"description": "蒙德城的飛行冠軍，就是我啦！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_idle"
+		},
+		{
+			"voicelineId": 10115,
+			"title": "關於我們·比賽",
+			"voicelineType": "2002",
+			"description": "就算是{F#妳}{M#你}，比賽我也不會放水！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close1"
+		},
+		{
+			"voicelineId": 10116,
+			"title": "關於我們·飛行",
+			"voicelineType": "2003",
+			"description": "教{F#妳}{M#你}飛…與{F#妳}{M#你}一起飛行的時候，我自己好像也能飛得更快…欸，{F#妳}{M#你}在笑什麼啊？來比賽吧！現在就比！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10117,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "「神之眼」，是神對我的認可吧。嗯，我要成為最優秀的偵察騎士才行！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10118,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "走嘛~去大教堂的鐘樓上看看，風景超棒的！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_share"
+		},
+		{
+			"voicelineId": 10119,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "看，那裡有鴿子！嗯…想跟牠們一起飛呢。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_gift"
+		},
+		{
+			"voicelineId": 10120,
+			"title": "關於琴·幫忙",
+			"voicelineType": "4001",
+			"description": "大團長出征之後，大大小小的事務都壓在了琴的身上。如果我也能多幫到她一點就好了…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10121,
+			"title": "關於琴·關懷",
+			"voicelineType": "4002",
+			"description": "琴可能還在工作？…走，一起請她喝杯咖啡吧。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10122,
+			"title": "關於麗莎·聽故事",
+			"voicelineType": "4003",
+			"description": "等{F#妳}{M#你}有空，我們一起去找麗莎吧！她上次和我講了一個龍脊雪山寶藏的故事，只講到一半。唔，我還想知道後續！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10123,
+			"title": "關於麗莎·欽佩",
+			"voicelineType": "4004",
+			"description": "麗莎好像除了睡覺的時間都在看書！真厲害啊，我就坐不住那麼長時間。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10124,
+			"title": "關於凱亞·憂慮",
+			"voicelineType": "4005",
+			"description": "…有種不安的感覺！剛才是凱亞陪著{F#妳}{M#你}吧？他沒給{F#妳}{M#你}添麻煩吧？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10125,
+			"title": "關於凱亞·禍首",
+			"voicelineType": "4006",
+			"description": "花圃裡的蒲公英看上去蔫蔫的，哼…一定又是凱亞搞的鬼！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10126,
+			"title": "關於班尼特…",
+			"voicelineType": "4007",
+			"description": "嗯？班尼特…好像在哪裡聽過…哦！{F#妳}{M#你}說的是冒險家協會那個熱血的男孩子啊！嗯，我有時會在秘境附近見到他，好像對尋寶很有熱情呢。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10127,
+			"title": "關於可莉…",
+			"voicelineType": "4008",
+			"description": "可莉呀，偶爾會有點調皮，但騎士團的大家都很喜歡她！唔…為了不讓她又被琴抓去關禁閉，還是看緊她一點吧。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10128,
+			"title": "關於阿貝多…",
+			"voicelineType": "4009",
+			"description": "阿貝多，大多數時候都待在自己的工坊裡，搞一些很厲害的東西。但是，見到他的時候，會有種猜不透他在想些什麼的感覺。嗯，猜不透呢…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10129,
+			"title": "關於諾艾爾…",
+			"voicelineType": "4010",
+			"description": "{F#妳}{M#你}問諾艾爾嗎？她的韌性可是很強的。作為前輩，{F#妳}{M#你}也要多照顧她一點哦。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10130,
+			"title": "關於優菈…",
+			"voicelineType": "4011",
+			"description": "優菈是我的好夥伴！只要習慣了優菈開的玩笑，{F#妳}{M#你}就會發現，其實她是很好相處的。只不過，優菈因為自己的姓氏，經常被很多人誤解，怎麼樣才能讓大家理解她呢…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10179,
+			"title": "關於柯萊…",
+			"voicelineType": "4012",
+			"description": "柯萊寫信給我說，她的「魔鱗病」已經徹底康復…我太為她高興了！真想下一秒就飛到她身邊，緊緊地抱住她。她還說很想念蒙德的大家，想等哪一天獨當一面之後，親口來彙報自己的成長…啊，要是能趕上下一次羽球節就好了，我都快等不及了！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10180,
+			"title": "關於米卡…",
+			"voicelineType": "4013",
+			"description": "哦，米卡是優菈那邊的老隊員了，最初可能是看我和優菈關係比較好吧，總是長官長官地叫我。在我跟他分享自己的偵察心得之後，他又改叫我前輩了…弄得我滿不好意思的。明明我們的職責不一樣，他在繪製地圖上的專業性，是我怎麼都比不上的。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10131,
+			"title": "想要瞭解安柏·其一",
+			"voicelineType": "5001",
+			"description": "狩獵我也很擅長哦！怎麼樣，想不想看看我的身手？還是…要來個狩獵比賽？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_01"
+		},
+		{
+			"voicelineId": 10132,
+			"title": "想要瞭解安柏·其二",
+			"voicelineType": "5002",
+			"description": "和{F#妳}{M#你}分享我的飛行冠軍經驗吧！最重要的，就是要有勇氣！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10133,
+			"title": "想要瞭解安柏·其三",
+			"voicelineType": "5003",
+			"description": "其實我不擅長解謎，羽球節裡看到猜謎的攤位都要繞著走…{F#妳}{M#你}呢？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10134,
+			"title": "想要瞭解安柏·其四",
+			"voicelineType": "5004",
+			"description": "我因為爺爺才加入騎士團，因為琴留在了團裡。現在，是{F#妳}{M#你}陪我見到了蒙德以外的天空。我真的很開心。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10135,
+			"title": "想要瞭解安柏·其五",
+			"voicelineType": "5005",
+			"description": "我還想去更遠的世界。我想去看天空的盡頭！{F#妳}{M#你}也會繼續陪著我的，對吧、對吧？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10136,
+			"title": "安柏的愛好…",
+			"voicelineType": "6001",
+			"description": "兔兔伯爵，今天也是乾乾淨淨的一天！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_hobby"
+		},
+		{
+			"voicelineId": 10137,
+			"title": "安柏的煩惱…",
+			"voicelineType": "6002",
+			"description": "唔…{F#妳}{M#你}知道，怎樣才能做出好吃的月亮派嗎？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_annoyed"
+		},
+		{
+			"voicelineId": 10138,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "琴泡的咖啡真的好香！有機會{F#妳}{M#你}要嚐嚐哦。",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodLike"
+		},
+		{
+			"voicelineId": 10139,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "只要不是冰鉤鉤果汁…唔…我都應付得來！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodDislike"
+		},
+		{
+			"voicelineId": 10176,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "哇，這個太好吃了。{F#妳}{M#你}真厲害！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_pref_01"
+		},
+		{
+			"voicelineId": 10177,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "要是我也有這樣的手藝就好了…",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_normal_01"
+		},
+		{
+			"voicelineId": 10178,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "我不太習慣這種味道，抱歉啦！不是{F#妳}{M#你}的問題！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_dislike_01"
+		},
+		{
+			"voicelineId": 10140,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "嘿嘿嘿，生日快樂！來，這個給{F#妳}{M#你}，是我親手縫的「兔兔伯爵·特別定製版」…放心放心，是特別定製版哦，不會爆炸的！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 10141,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "哇！像乘著風一樣輕快~",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10142,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "現在的速度，沒有人能追得上了吧！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10143,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "蒙德的天空好像變小了…還是因為我的視野變大了？",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10144,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "我現在…比起最初跟{F#妳}{M#你}認識的時候，又進步了不少吧。嘿嘿，非常感謝！讓我請{F#妳}{M#你}吃蜜醬胡蘿蔔煎肉吧，跟我來跟我來！",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 10145,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "靠你囉。",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_01"
+		},
+		{
+			"voicelineId": 10146,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "兔兔伯爵，出擊！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_02"
+		},
+		{
+			"voicelineId": 10147,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "♪哼哼~哼哼哼~",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_03"
+		},
+		{
+			"voicelineId": 10148,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "百發百中！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_01"
+		},
+		{
+			"voicelineId": 10149,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "箭如…雨下！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_02"
+		},
+		{
+			"voicelineId": 10150,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "你沒有退路了！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_03"
+		},
+		{
+			"voicelineId": 10151,
+			"title": "衝刺開始·其一",
+			"voicelineType": "700001",
+			"description": "來比賽吧！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 10152,
+			"title": "衝刺開始·其二",
+			"voicelineType": "700002",
+			"description": "跟得上我嗎？",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 10153,
+			"title": "衝刺結束·其一",
+			"voicelineType": "710001",
+			"description": "說了你們跑不過我。",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_01"
+		},
+		{
+			"voicelineId": 10154,
+			"title": "衝刺結束·其二",
+			"voicelineType": "710002",
+			"description": "就是這種感覺！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_02"
+		},
+		{
+			"voicelineId": 10155,
+			"title": "打開風之翼·其一",
+			"voicelineType": "800001",
+			"description": "我可是蒙德城的飛行冠軍！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 10156,
+			"title": "打開風之翼·其二",
+			"voicelineType": "800002",
+			"description": "儘管交給我吧！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_02"
+		},
+		{
+			"voicelineId": 10159,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "打開寶箱的一瞬間，最興奮了！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_01"
+		},
+		{
+			"voicelineId": 10160,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "偵察騎士，發現目標！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_02"
+		},
+		{
+			"voicelineId": 10161,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "哇，都是好東西！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_03"
+		},
+		{
+			"voicelineId": 10162,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "…我可不會認輸！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_01"
+		},
+		{
+			"voicelineId": 10163,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "好痛…這傢伙…",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_02"
+		},
+		{
+			"voicelineId": 10164,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "別小瞧我！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_03"
+		},
+		{
+			"voicelineId": 10165,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "小心啊！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 10166,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "你…要不要緊？我來幫幫你吧？",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 10167,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "跑累了…",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_01"
+		},
+		{
+			"voicelineId": 10168,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "訓練…還不夠…",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_02"
+		},
+		{
+			"voicelineId": 10169,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "這次我…輸了啊…",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_03"
+		},
+		{
+			"voicelineId": 10170,
+			"title": "普通受擊·其一",
+			"voicelineType": "900001",
+			"description": "真難纏！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 10171,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "好痛！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 10172,
+			"title": "受重擊·其二",
+			"voicelineType": "910002",
+			"description": "犯規啦！",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 10173,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "交給我吧！",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_01"
+		},
+		{
+			"voicelineId": 10174,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "準備就緒！",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_02"
+		},
+		{
+			"voicelineId": 10175,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "偵察騎士登場！",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_03"
+		}
+	]
+}

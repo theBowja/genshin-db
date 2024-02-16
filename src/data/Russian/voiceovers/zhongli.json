@@ -1,0 +1,922 @@
+{
+	"id": 10000030,
+	"name": "Zhongli",
+	"friendLines": [
+		{
+			"voicelineId": 17100,
+			"title": "Привет...",
+			"voicelineType": "1000",
+			"description": "Новый контракт? Что ж, хорошо... Хотя я всё ещё в отпуске, я могу составить тебе компанию один раз. Каким именем мне подписать наше соглашение? У меня много имён... Отпуск я провожу под именем «Чжун Ли». А каким именем подпишешь контракт ты, путешественн{F#ица}{M#ик}?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_draw_appear"
+		},
+		{
+			"voicelineId": 17101,
+			"title": "Поболтаем: Путешествия",
+			"voicelineType": "1101",
+			"description": "Все пути однажды приведут к концу. Не стоит торопиться.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_01"
+		},
+		{
+			"voicelineId": 17102,
+			"title": "Поболтаем: Туры",
+			"voicelineType": "1102",
+			"description": "Куда направимся? Если хочешь посмотреть на достопримечательности Ли Юэ, то у меня есть несколько неплохих вариантов.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_02"
+		},
+		{
+			"voicelineId": 17103,
+			"title": "Поболтаем: Ли Юэ",
+			"voicelineType": "1103",
+			"description": "Корабли созданы, чтобы перевозить товары по морям. Они с удовольствием бросают якорь в гавани Ли Юэ. Поэтому здесь оседают богатства.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_03"
+		},
+		{
+			"voicelineId": 17104,
+			"title": "Поболтаем: Воспоминания",
+			"voicelineType": "1104",
+			"description": "Вкус вина из османтуса не изменился... Но где же те, кто разделит воспоминания?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_04"
+		},
+		{
+			"voicelineId": 17105,
+			"title": "После дождя...",
+			"voicelineType": "1201",
+			"description": "Стеклянные колокольчики предпочитают сырую погоду, их лучше всего собирать после дождя. Если встретишь эти цветы, собери несколько впрок.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 17106,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1202",
+			"description": "Давай найдём место, где можно спрятаться от снега. Мне всё равно, но вот ты можешь простудиться.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_snowy_01"
+		},
+		{
+			"voicelineId": 17107,
+			"title": "Когда дует сильный ветер...",
+			"voicelineType": "1203",
+			"description": "Хм... Не лучшая погода для отпуска. Пойдём в театр, послушаем оперу.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_gale_01"
+		},
+		{
+			"voicelineId": 17108,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Надеюсь, экономическая ситуация сегодня будет благоприятна.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 17109,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Хочешь поесть, чтобы взбодриться? Хм. На горе Тигра есть неплохой ресторан...",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 17110,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Хотя к этому времени постановки госпожи Юнь уже заканчиваются, в ночном Ли Юэ есть много других мест, стоящих того, чтобы их посетить.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 17111,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Рынок закрыт, спит причал крепким сном. Иди и ты отдохни.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 17112,
+			"title": "О Чжун Ли...",
+			"voicelineType": "2001",
+			"description": "Нет жизни без правил. Будь то Адепт или простой смертный, каждый должен выполнять свою работу. Вот почему в Ли Юэ царит спокойствие.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_idle",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17113,
+			"title": "О нас: Золото",
+			"voicelineType": "2002",
+			"description": "Золото - это богатство Ли Юэ, это кровь, которая заставляет биться сердце города. Сияет ли золотом твоё сердце?.. Время покажет.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close1"
+		},
+		{
+			"voicelineId": 17114,
+			"title": "О нас: Соглашение",
+			"voicelineType": "2003",
+			"description": "Между нами существует контракт, и в его рамках ты можешь обратиться ко мне с чем угодно.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17115,
+			"title": "О нас: Честность",
+			"voicelineType": "2004",
+			"description": "Впрочем, мы можем обсудить и дела, не входящие в рамки контракта. В конце концов я давно живу на этой земле и знаю многие вещи. В то же время я надеюсь, что и ты сможешь помочь мне. Ведь так будет справедливо.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17116,
+			"title": "О нас: Недоразумение",
+			"voicelineType": "2006",
+			"description": "Контракт не может определить границы дружбы, не может исчислить её в какой-либо величине. Так как нам измерить те отношения, что возникли между нами? Ты знаешь ответ на этот вопрос, мой друг?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close4",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17117,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Глаз Бога... Это тоже своего рода «контракт». Нужно понимать, что всё имеет свою цену. С великой силой приходит большая ответственность.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17118,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "Торговля - это и правила, и справедливость. Это то, о чём не должны забывать заключающие контракт: лишённый справедливости, договор превращается в свидетельство обмана.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_share"
+		},
+		{
+			"voicelineId": 17119,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Если ты направляешься в Заоблачный предел, будь добр{F#а}, принеси мне цветы цинсинь. Да, букета будет достаточно. Что касается расходов на дорогу... А, чуть не забыл, в период действия контракта все путевые расходы ложатся на тебя. Благодарю за любезность.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_gift"
+		},
+		{
+			"voicelineId": 17120,
+			"title": "О Сяо...",
+			"voicelineType": "4001",
+			"description": "Говоришь, юный Адепт из долины Гуйли... Хм... Он и поныне беспрекословно исполняет свои обязанности... Пожалуйста, передай ему от меня это лекарство. Ах да, ни в коем случае не давай малышке Паймон съесть его. Это лекарство... Слишком сильное для простых смертных.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_xiao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17121,
+			"title": "О Венти...",
+			"voicelineType": "4002",
+			"description": "Хм... Я чую винный перегар. Здесь только что был этот бард, да? Этот пьяница - позор для искусства... Постой, ты невнятно говоришь. Он и тебя обманом напоил?.. Подожди, я заварю для тебя освежающий чай. Через шесть часов будет готов... Подожди, хорошо?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17122,
+			"title": "О Нин Гуан...",
+			"voicelineType": "4003",
+			"description": "Хотя Нин Гуан приходится заботиться о множестве дел каждый день, она продолжает идти вперёд. Это такая редкость. Напоминает мне те времена, когда она босиком шла с отмели Яогуан на южный причал и продавала по дороге свои товары. Время не щадит смертных...",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_ningguang_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17123,
+			"title": "О Ху Тао...",
+			"voicelineType": "4004",
+			"description": "Нынешняя хозяйка ритуального бюро? Кхм, я не справляюсь с этим ребёнком.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17124,
+			"title": "О Тарталье: Хладнокровие",
+			"voicelineType": "4005",
+			"description": "Тот пройдоха из Снежной ещё не покинул Ли Юэ? Ничего страшного. Если он будет докучать, позови меня, я с ним справлюсь.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17125,
+			"title": "О Тарталье: Ужин",
+			"voicelineType": "4006",
+			"description": "Я слышал, что репутация Чайльда среди Фатуи пошатнулась. Но таким, как он, не составляет труда свергнуть недовольных. Хм... Похоже, когда мы вновь соберёмся за одним столом, нас ждёт много интересных историй. Путешественн{F#ица}{M#ик}, ты присоединишься к нам?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_tartaglia_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17126,
+			"title": "О Гань Юй...",
+			"voicelineType": "4007",
+			"description": "Процветание Ли Юэ основано не только на провидении Властелина Камня, но и на людях, заключивших с ним контракт. Среди них Гань Юй дольше всех исполняет свои обязанности. Что касается её прошлого... Пусть она расскажет сама. Боюсь, что мой рассказ будет не столь тактичным по отношению к ней.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17127,
+			"title": "О Кэ Цин...",
+			"voicelineType": "4008",
+			"description": "В группировке Цисин она меньше всех проявляет уважение к богам, но я восхищаюсь такими людьми. «Громко заявлять о том, что правильно, и неуклонно двигаться вперёд» - раз в Ли Юэ есть мыслящие так люди, я могу спокойно задуматься об уходе от дел.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17128,
+			"title": "О Янь Фэй...",
+			"voicelineType": "4009",
+			"description": "Она не заключала со мной контракт, но она поддерживает порядок в Ли Юэ, исправляет несправедливость и искореняет предрассудки. Если её отец однажды вернётся из долгого путешествия, думаю, он будет ещё более доволен ею, чем я.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17168,
+			"title": "О Баал...",
+			"voicelineType": "4010",
+			"description": "Время закаляет волю. Она одна из тех, кто отдаст всё, что у неё есть, за убеждения. Возможно, именно поэтому она зашла так далеко. Я бы хотел увидеть «вечность», ради которой она пожертвовала всем.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17172,
+			"title": "О Буер...",
+			"voicelineType": "4011",
+			"description": "Божество мудрости Буер не только управляет всем Сумеру - на ней лежит долг защищать Ирминсуль. Такое по плечу только тем, кто обладает великой мудростью. Все существа Тейвата должны быть благодарны ей за спасение Ирминсуля.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17173,
+			"title": "О Фурине...",
+			"voicelineType": "4012",
+			"description": "Подписать контракт с «самой собой» о спасении страны, строго следовать ему в течение пяти веков и в итоге обмануть небесный порядок... Я уважаю все формы справедливости, которые люди для себя устанавливают. Хотя её божественность исчезла, а трон Архонта прекратил существование, Фурина по праву остаётся достойной признания Богиней справедливости.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17174,
+			"title": "О Сянь Юнь...",
+			"voicelineType": "4013",
+			"description": "Я слышал от многих торговцев рассказы о Сянь Юнь. Говорят, на первый взгляд она кажется гордой и неприветливой, но в разговоре оказывается, что она честная и прямолинейная. В итоге все очень рады знакомству с ней. Это замечательно. Но ещё от многих я слышал, что она «сорит деньгами»...",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Тысяча лунных миль»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17129,
+			"title": "Узнать больше о Чжун Ли I",
+			"voicelineType": "5001",
+			"description": "Тебе редко выпадает возможность отдохнуть, но, вместо того, чтобы ею воспользоваться, ты приходишь ко мне. Хочешь послушать мои истории?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_01"
+		},
+		{
+			"voicelineId": 17130,
+			"title": "Узнать больше о Чжун Ли II",
+			"voicelineType": "5002",
+			"description": "Знаешь, как появилась кузница Черногорья? \nВ далёком прошлом люди добывали руду в горах Тяньхэн и сооружали там цеха для работы с ней. Постепенно они отстроили крупнейший завод на восточном побережье континента. В горах осталось множество дорог и туннелей, и некоторые из них ведут к древним руинам, что погребены глубоко под землёй. Сейчас, пожалуй, не осталось никого, кто знал бы все эти пути.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17131,
+			"title": "Узнать больше о Чжун Ли III",
+			"voicelineType": "5003",
+			"description": "А знаешь ли ты историю Праздника морских фонарей? \nВо времена древней войны по ночам люди запускали ярко горящие фонари, чтобы отчаянно сражавшиеся на полях брани солдаты не забыли дорогу домой и чтобы сердца их не забывали о доброте. Наверное, сейчас никто уже не помнит об этом.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17132,
+			"title": "Узнать больше о Чжун Ли IV",
+			"voicelineType": "5004",
+			"description": "Ты слышал{F#а}, что говорят о боге контрактов? \nУ него прекрасная память. Он помнит имя каждого соперника и даты спуска на воду всех созданных на верфи Ли Юэ кораблей. В конце концов только обладатель такой памяти может хранить в ней все контракты до последней буквы. \nНо... не все воспоминания приносят радость.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17133,
+			"title": "Узнать больше о Чжун Ли V",
+			"voicelineType": "5005",
+			"description": "Удел тех, кто живёт слишком долго - искать в памяти образы друзей из давних времён и вспоминать пейзажи прошлого. \nНо я всё равно не жалею, что встретил тебя, друг мой. Если однажды нам придётся расстаться, в моей памяти ты всегда будешь сиять, как золото.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17134,
+			"title": "Хобби Чжун Ли...",
+			"voicelineType": "6001",
+			"description": "Люблю прогуляться по городу на досуге. Такие прогулки расслабляют и развеивают тревоги... Хм. С каких это пор меня посещают такие чувства?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_hobby"
+		},
+		{
+			"voicelineId": 17135,
+			"title": "Беспокойство Чжун Ли...",
+			"voicelineType": "6002",
+			"description": "Я сделал так, чтобы люди руководствовались контрактами и прописанными в них правилами, в надежде, что благодаря этому они начнут руководствоваться и понятием справедливости. Это совсем не сложно. Вот только всегда остаются люди, которые этого не осознают.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17136,
+			"title": "Любимая еда...",
+			"voicelineType": "6003",
+			"description": "Давным-давно я пил вино с друзьями. Как жаль, что я больше не могу насладиться тем мягким вкусом. Хм, возможно, это из-за изменения климата?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_foodLike"
+		},
+		{
+			"voicelineId": 17137,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Я не люблю морепродукты. Как только я их вижу, тут же возникает это ощущение чего-то липкого, скользкого, вспоминается запах сырой рыбы, который ничем не вытравить... Спрашиваешь, почему такие ассоциации? \nДолгая история. Просто у меня слишком хорошая память.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_foodDislike"
+		},
+		{
+			"voicelineId": 17169,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Лучшие ингредиенты, приготовленные с истинным профессионализмом. Настоящий кулинарный подвиг.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_pref_01"
+		},
+		{
+			"voicelineId": 17170,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Искусство гастрономии невероятно увлекательно. Неудивительно, что тебе нравится.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_normal_01"
+		},
+		{
+			"voicelineId": 17171,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Раз у тебя столько свободного времени, давай лучше найдём тихое местечко, и я расскажу тебе одну из своих историй.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_dislike_01"
+		},
+		{
+			"voicelineId": 17138,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "С днём рождения. Это засушенные цветы глазурной лилии, распустившейся в тот день, когда ты родил{F#ась}{M#ся}. \nВ давние времена жители Ли Юэ говорили, что эти цветы впитывают прекрасные воспоминания и молитвы земли, на которой распустились. Мне хочется верить, что твоё рождение подобно их цветению.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 17139,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Кажется, прежние силы начинают возвращаться ко мне. Это немного, но лучше, чем ничего.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17140,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Сила растёт, и с ней увеличивается нагрузка на физическое тело... О, не волнуйся, моя конституция отличается от той, что присуща простым смертным. Я буду в порядке.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17141,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Оказывается, управлять элементами через Глаз Бога - сложная задача для простого смертного. Вот как... В те времена они осознавали это и всё равно стояли со мной плечом к плечу...",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17142,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Я и не думал, что, отдав Сердце Бога, ещё смогу увидеть такую картину. Спасибо тебе, друг мой. Ах, да, у меня есть новый контракт... Посмотрим вместе?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение новой звезды»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 17143,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Подъём!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_01"
+		},
+		{
+			"voicelineId": 17144,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Встряска!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_02"
+		},
+		{
+			"voicelineId": 17145,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "В крошку!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_03"
+		},
+		{
+			"voicelineId": 17146,
+			"title": "Элементальный навык IV",
+			"voicelineType": "100004",
+			"description": "Сбор!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_04"
+		},
+		{
+			"voicelineId": 17147,
+			"title": "Элементальный навык V",
+			"voicelineType": "100005",
+			"description": "Стабилизация!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_05"
+		},
+		{
+			"voicelineId": 17148,
+			"title": "Элементальный навык VI",
+			"voicelineType": "100006",
+			"description": "Закрепление!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_06"
+		},
+		{
+			"voicelineId": 17149,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Следуй приказу.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_01"
+		},
+		{
+			"voicelineId": 17150,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Это приказ.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_02"
+		},
+		{
+			"voicelineId": 17151,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Приказывать буду я!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_03"
+		},
+		{
+			"voicelineId": 17152,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Что для одного - мусор, для другого - сокровище.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_01"
+		},
+		{
+			"voicelineId": 17153,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Неожиданно... И потому более ценно.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_02"
+		},
+		{
+			"voicelineId": 17154,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Путь того стоил.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_03"
+		},
+		{
+			"voicelineId": 17155,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Я вижу твою мощь.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_01"
+		},
+		{
+			"voicelineId": 17156,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Ха, это уже интересно!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_02"
+		},
+		{
+			"voicelineId": 17157,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Срочные контрмеры - это не моё.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_03"
+		},
+		{
+			"voicelineId": 17158,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Не нападай опрометчиво.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 17159,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Отдохни. Предоставь это мне.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 17160,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Ох... я слегка... не в себе...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_01"
+		},
+		{
+			"voicelineId": 17161,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Тебе нельзя смотреть на меня в таком виде...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_02"
+		},
+		{
+			"voicelineId": 17162,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Даже скалы рассыпаются в прах...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_03"
+		},
+		{
+			"voicelineId": 17163,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Какая беспечность...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 17164,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Бояться нечего.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 17165,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Идёт.",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_01"
+		},
+		{
+			"voicelineId": 17166,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Прогуляться было бы неплохо.",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_02"
+		},
+		{
+			"voicelineId": 17167,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Что будем делать?",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_03"
+		}
+	]
+}

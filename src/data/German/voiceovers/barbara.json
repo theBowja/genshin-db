@@ -1,0 +1,695 @@
+{
+	"id": 10000014,
+	"name": "Barbara",
+	"friendLines": [
+		{
+			"voicelineId": 6100,
+			"title": "Schön, dich kennenzulernen.",
+			"voicelineType": "1000",
+			"description": "Barbara ist hier, um zu heilen! Ich werde dich nicht enttäuschen!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_draw_appear"
+		},
+		{
+			"voicelineId": 6101,
+			"title": "Gespräch – Müdigkeit",
+			"voicelineType": "1101",
+			"description": "Wenn wir noch weiter hier stehen müssen, werde ich noch ganz müde ...",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_explore_idle_01"
+		},
+		{
+			"voicelineId": 6102,
+			"title": "Gespräch – Aufgeregtheit",
+			"voicelineType": "1102",
+			"description": "Jeder gibt sich so viel Mühe, dann müssen wir uns umso mehr Mühe geben!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_explore_idle_02"
+		},
+		{
+			"voicelineId": 6103,
+			"title": "Gespräch – Aufmunterung",
+			"voicelineType": "1103",
+			"description": "Bist du etwas erschöpft? Versuch doch mal meinen scharfen Energietrank, der macht müde Geister wieder wach!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_explore_idle_03"
+		},
+		{
+			"voicelineId": 6104,
+			"title": "Wenn es regnet ...",
+			"voicelineType": "1201",
+			"description": "Wenn ich so lange im Regen bleibe, werde ich mich bestimmt erkälten, oder?",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 6105,
+			"title": "Wenn es blitzt ...",
+			"voicelineType": "1202",
+			"description": "Oha!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_weather_thunder_01"
+		},
+		{
+			"voicelineId": 6106,
+			"title": "Wenn es schneit ...",
+			"voicelineType": "1203",
+			"description": "Es sind Schneeflocken! Frostig fröhlich tanzen sie!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_weather_snowy_01"
+		},
+		{
+			"voicelineId": 6107,
+			"title": "Wie sonnig ...",
+			"voicelineType": "1204",
+			"description": "Solch ein schönes Wetter lädt doch direkt zum Singen ein!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_weather_sunny_01"
+		},
+		{
+			"voicelineId": 6108,
+			"title": "Ein Sturm zieht auf.",
+			"voicelineType": "1205",
+			"description": "Keine Sorge, ich werde schon nicht davongeweht werden!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_weather_gale_01"
+		},
+		{
+			"voicelineId": 6109,
+			"title": "Guten Morgen.",
+			"voicelineType": "1001",
+			"description": "Guten Morgen! Auch heute wollen wir wieder unser Bestes geben!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 6110,
+			"title": "Guten Tag.",
+			"voicelineType": "1002",
+			"description": "Wie, du willst mich singen hören? Entschuldigung, aber die Darbietung hat noch gar nicht angefangen.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 6111,
+			"title": "Guten Abend.",
+			"voicelineType": "1003",
+			"description": "Ich würde so gern pikanten Barsch beim Hirschjäger essen ... Aber ob mein Magen das zulässt ...",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 6112,
+			"title": "Gute Nacht.",
+			"voicelineType": "1004",
+			"description": "Danke für deine Mühe! Jetzt ruh dich erst einmal gut aus.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 6113,
+			"title": "Über Barbara ...",
+			"voicelineType": "2001",
+			"description": "„Wind, der du mich geleitest, wenn ich erschöpft bin, segne mich mit Kraft voranzuschreiten. Wenn ich unsicher bin, segne mich mit Weisheit, um Gut und Böse zu unterscheiden, und mit Mut, um Ungerechtigkeit zu bekämpfen, wo immer ich sie sehe.“ Oh, Verzeihung, ich war gerade in ein Gebet vertieft. Wie kann ich dir helfen?",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_idle"
+		},
+		{
+			"voicelineId": 6114,
+			"title": "Über uns – Hoffnungen",
+			"voicelineType": "2002",
+			"description": "Mein einziger Wunsch ist es, ein Lächeln auf die Gesichter der Leute zu zaubern! Solange ich dir helfen kann, werde ich glücklich sein.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_close1"
+		},
+		{
+			"voicelineId": 6115,
+			"title": "Über uns – Träume",
+			"voicelineType": "2003",
+			"description": "Danke, dass du mich bis jetzt begleitet hast. Ich bin meinem Traum nicht mehr fern. Bitte vergiss mich in der Zukunft nicht!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6116,
+			"title": "Über das „Göttliche Auge“ ...",
+			"voicelineType": "3001",
+			"description": "Jeder Mensch hat seine eigenen Wünsche. Es muss wohl meine göttliche Mission sein, diese Wünsche zu sammeln und uns alle glücklich zu machen.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6117,
+			"title": "Willst du mir etwas mitteilen?",
+			"voicelineType": "3002",
+			"description": "Die grünen Ebenen, die Mondstadt umgeben, sind schon ein prächtiger Anblick. Wie ich gehört habe, gibt es jedoch auch noch blaue Wälder irgendwo in der Welt! Über den Ozean, direkt hinter Inazuma. Nun, dafür muss ich wohl doch noch etwas sparen. Was ich da gerade gesagt habe? Hehe, das ist ein Geheimnis!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_share"
+		},
+		{
+			"voicelineId": 6118,
+			"title": "Interessante Vorkommnisse ...",
+			"voicelineType": "3003",
+			"description": "Sonnenblumen richten sich immer nach der Sonne und sind sehr auffällig. Meine Mutter hat mir sogar einst ein Sonnenblumenkleid geschenkt. Aber zu welchem Anlass soll ich es nur tragen?",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_pref_gift"
+		},
+		{
+			"voicelineId": 6119,
+			"title": "Über Jean ...",
+			"voicelineType": "4001",
+			"description": "Der stellvertretende Großmeister ... Anführer des Ordo Favonius, jeder liebt sie, oder? Du fragst mich? Ich habe natürlich auch den größten Respekt für sie!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6120,
+			"title": "Über Lisa ...",
+			"voicelineType": "4002",
+			"description": "Ich werde für immer tief in Lisas Schuld stehen, da sie sich immer so gut um mich gekümmert hat. Sollte sie auch eines Tages ein Star werden, so werde ich sie ganz bestimmt unterstützen und mir für sie die Kehle aus dem Leib schreien ... Das wird den meisten Leuten wahrscheinlich eher Angst machen.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6121,
+			"title": "Über Amber ...",
+			"voicelineType": "4003",
+			"description": "Ich habe oft gesehen, wie Amber fast fluchtartig aus der Stadt gerast ist, bereit für eine neue Mission. Es ist anscheinend nicht leicht ein Kundschafter zu sein.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6122,
+			"title": "Über Diluc ...",
+			"voicelineType": "4004",
+			"description": "Der gute alte Diluc? Gerade letztens noch, als ich in der Engelsgabe einen Auftritt hatte, habe ich ihn gesehen. Er runzelte aber die ganze Zeit die Stirn. Ob ihm meine Musik nicht gefällt?",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6123,
+			"title": "Über Venti ...",
+			"voicelineType": "4005",
+			"description": "Ventis Stimme ist ein wahrer Ohrenschmaus! Obwohl seine Lieder so anders sind als die, die ich gut singen kann. Ich habe sogar heimlich versucht sie zu lernen ... aber die Melodien sind alle viel zu kompliziert.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6124,
+			"title": "Über Bennett ...",
+			"voicelineType": "4006",
+			"description": "Bennett kommt oft mit blauen Flecken übersäht in die Kathedrale ... Jedes Mal grinst er dabei, als würde es ihm nichts ausmachen. Man sollte trotzdem mehr Selbstrespekt haben.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6125,
+			"title": "Über Varka ...",
+			"voicelineType": "4007",
+			"description": "Mein Vater ist mit Großmeister Varka auf eine Mission gegangen und er wusste nicht, was ihn erwarten würde. Aber keine Sorge, der Großmeister ist der Ritter des Nordwinds, da passiert ihm bestimmt nichts! Trotzdem werde ich für eine sichere Rückkehr beten.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6126,
+			"title": "Über Rosaria ...",
+			"voicelineType": "4008",
+			"description": "Schwester Rosaria nahezukommen ist sehr schwierig. Sie nimmt auch nie an den Gebeten teil. Aber ich denke ... sie glaubt bestimmt fest an den Anemo-Archon! Jedoch fehlt mir der Mut mit ihr zu sprechen ...",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_rosaria_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6127,
+			"title": "Über Noelle ...",
+			"voicelineType": "4009",
+			"description": "Noelle ist einfach zu niedlich! Sie ist zuvorkommend und geduldig und man fühlt keinerlei Zwang, wenn man mit ihr zusammen ist ... Oh, und sie macht einen ganz besonderen Tee. Sehr aromatisch und süß, trotzdem sehr gesund, hehe.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6128,
+			"title": "Ich will mehr über Barbara erfahren I",
+			"voicelineType": "5001",
+			"description": "Ritter sehen so gut aus, wenn ihre Klingen im Kampf aneinanderschlagen! Denkst du nicht auch so? Auch ich habe mich früher im Schwertkampf versucht ... Aber nicht sehr erfolgreich, dafüer habe ich kein Talent.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_friendship_01"
+		},
+		{
+			"voicelineId": 6129,
+			"title": "Ich will mehr über Barbara erfahren II",
+			"voicelineType": "5002",
+			"description": "Ich möchte dich heilen. Einfach nur dieser Wunsch ließ mich Bischöfin werden. Solange ich anderen nur helfen kann ...",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 3 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6130,
+			"title": "Ich will mehr über Barbara erfahren III",
+			"voicelineType": "5003",
+			"description": "Ein Star, also das ... hab ich von Alice gelernt ... „Echte Stars können die Herzen der Menschen heilen.“ Ja, das stimmt schon.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6131,
+			"title": "Ich will mehr über Barbara erfahren IV",
+			"voicelineType": "5004",
+			"description": "Jeden Tag gebe ich mir Mühe. Diese Mühe ist es wert, wenn die Bewohner von Mondstadt mir vertrauen ...",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 5 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6132,
+			"title": "Ich will mehr über Barbara erfahren V",
+			"voicelineType": "5005",
+			"description": "Jedes Mal, wenn ich eine Darbietung gebe, denke ich, kann ich wirklich jeden in Mondstadt heilen? Aber wenn ich dich jetzt so ansehe, wie weit wir bereits gekommen sind, vielleicht ist es eines Tages möglich! Habe ich dich denn bereits geheilt? Egal, das ist noch nicht genug. Du meinst, ich habe schon viele geheilt? Ich hoffe es sehr ...",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6133,
+			"title": "Barbaras Hobbys ...",
+			"voicelineType": "6001",
+			"description": "Es ist das Lächeln auf den Gesichtern der Menschen, das mich jeden Tag aufs Neue motiviert.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_pref_hobby"
+		},
+		{
+			"voicelineId": 6134,
+			"title": "Barbaras Sorgen ...",
+			"voicelineType": "6002",
+			"description": "Meine Mitstreiter werden immer wieder verletzt und ich kann nichts tun, ihren Schmerz zu teilen. Das Einzige, was ich tun kann, ist, ihre Wunden zu heilen, damit jeder wieder gesund wird.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_dialog_annoyed"
+		},
+		{
+			"voicelineId": 6135,
+			"title": "Was sie so mag ...",
+			"voicelineType": "6003",
+			"description": "Magst du scharfen Trockenfisch? Ich habe noch zwei übrig, einen kannst du haben!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_pref_foodLike"
+		},
+		{
+			"voicelineId": 6136,
+			"title": "Was sie nicht mag ...",
+			"voicelineType": "6004",
+			"description": "Ich mag nichts Bitteres, schon gar keine Bittermelone.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_pref_foodDislike"
+		},
+		{
+			"voicelineId": 6167,
+			"title": "Geschenk erhalten I",
+			"voicelineType": "6007",
+			"description": "Es ist selten, dass ein Gericht meinen Geschmack so gut trifft. Heute ist ein Glückstag!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_spice_pref_01"
+		},
+		{
+			"voicelineId": 6168,
+			"title": "Geschenk erhalten II",
+			"voicelineType": "6008",
+			"description": "Danke, dass du das gemacht hast, dieses Mal wurde ich von dir geheilt.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_spice_normal_01"
+		},
+		{
+			"voicelineId": 6169,
+			"title": "Geschenk erhalten III",
+			"voicelineType": "6009",
+			"description": "Nicht gut ...",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_spice_dislike_01"
+		},
+		{
+			"voicelineId": 6137,
+			"title": "Dein Geburtstag ...",
+			"voicelineType": "7001",
+			"description": "Nimm dies bitte an! Dies ist mein Geburtstagsgeschenk für dich, mitsamt meines Autogramms. Warte, bis mein neuestes Lied rauskommt, dann bist du {F#die Erste, die}{M#der Erste, der} es zu Ohren bekommt! Herzlichen Glückwunsch zum Geburtstag!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 6138,
+			"title": "Gedanken über den Aufstieg – Beginn",
+			"voicelineType": "8001",
+			"description": "Ein Tanz von Barbara ... erweckt alle Lebensgeister!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 1 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6139,
+			"title": "Gedanken über den Aufstieg – Fortschritt",
+			"voicelineType": "8002",
+			"description": "Vielen Dank für deine Unterstützung! Das war nicht gut, anscheinend bin ich zu aufgeregt ... mein Herz, es rast wie verrückt und kann nicht einfach nicht aufhören.",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 2 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6140,
+			"title": "Gedanken über den Aufstieg – Höhepunkt",
+			"voicelineType": "8003",
+			"description": "Bitte verrate mir, wie kann ich noch stärker werden? Wie? Ich soll das ganz dir überlassen? Das geht doch so nicht, ich muss auch einen Teil leisten!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 6141,
+			"title": "Gedanken über den Aufstieg – Ende",
+			"voicelineType": "8004",
+			"description": "Mit dir zu reisen, hat mir erst bewusst gemacht, dass die ganze Welt meine Bühne ist. Danke dir! Hehe, gut, lass uns noch einmal zusammen rufen! Drei, zwei, eins, los geht’s, Barbara!",
+			"voicefile": "VO_friendship/VO_barbara/vo_barbara_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 6142,
+			"title": "Elementarfähigkeit I",
+			"voicelineType": "100001",
+			"description": "Ich werde uns beschützen!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_skill1_01"
+		},
+		{
+			"voicelineId": 6143,
+			"title": "Elementarfähigkeit II",
+			"voicelineType": "100002",
+			"description": "Lass uns tanzen!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_skill1_02"
+		},
+		{
+			"voicelineId": 6144,
+			"title": "Elementarfähigkeit III",
+			"voicelineType": "100003",
+			"description": "Die Darbietung beginnt!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_skill1_03"
+		},
+		{
+			"voicelineId": 6145,
+			"title": "Spezialfähigkeit I",
+			"voicelineType": "200001",
+			"description": "♪Lalalalaaa ... Tralalala!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_skill3_01"
+		},
+		{
+			"voicelineId": 6146,
+			"title": "Spezialfähigkeit II",
+			"voicelineType": "200002",
+			"description": "Bist du bereit?",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_skill3_02"
+		},
+		{
+			"voicelineId": 6147,
+			"title": "Spezialfähigkeit III",
+			"voicelineType": "200003",
+			"description": "Wir schaffen das!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_skill3_03"
+		},
+		{
+			"voicelineId": 6148,
+			"title": "Rennen – Start I",
+			"voicelineType": "700001",
+			"description": "Los, Barbara, los!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 6149,
+			"title": "Rennen – Ende I",
+			"voicelineType": "710001",
+			"description": "Puh ... Alles gut!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_explore_sprint_end_01"
+		},
+		{
+			"voicelineId": 6150,
+			"title": "Rennen – Ende II",
+			"voicelineType": "710002",
+			"description": "Den krieg ich noch!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_explore_sprint_end_02"
+		},
+		{
+			"voicelineId": 6151,
+			"title": "Truhe öffnen I",
+			"voicelineType": "300001",
+			"description": "Das ist die Art von Überraschung, von der ich singen könnte.",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_chest_open_01"
+		},
+		{
+			"voicelineId": 6152,
+			"title": "Truhe öffnen II",
+			"voicelineType": "300002",
+			"description": "Oh, wie das funkelt!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_chest_open_02"
+		},
+		{
+			"voicelineId": 6153,
+			"title": "Truhe öffnen III",
+			"voicelineType": "300003",
+			"description": "Hmm ♪ hmm ♪ hmm ♪ Was für ein Glückstag!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_chest_open_03"
+		},
+		{
+			"voicelineId": 6154,
+			"title": "Niedrige LP I",
+			"voicelineType": "410001",
+			"description": "Bei mir ist alles gut!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_less30_01"
+		},
+		{
+			"voicelineId": 6155,
+			"title": "Niedrige LP II",
+			"voicelineType": "410002",
+			"description": "Ich kann noch nicht aufhören. Die anderen brauchen mich!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_less30_02"
+		},
+		{
+			"voicelineId": 6156,
+			"title": "Niedrige LP III",
+			"voicelineType": "410003",
+			"description": "Noch ein wenig durchhalten ...",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_less30_03"
+		},
+		{
+			"voicelineId": 6157,
+			"title": "Verbündeter hat niedrige LP I",
+			"voicelineType": "400001",
+			"description": "Ich will nicht, dass du verletzt wirst ...",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 6158,
+			"title": "Verbündeter hat niedrige LP II",
+			"voicelineType": "400002",
+			"description": "Bitte, lass mich deine Wunden behandeln!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 6159,
+			"title": "Ohnmächtig I",
+			"voicelineType": "500001",
+			"description": "Ich fühle mich schwach ...",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_die_01"
+		},
+		{
+			"voicelineId": 6160,
+			"title": "Ohnmächtig II",
+			"voicelineType": "500002",
+			"description": "Ich höre die anderen nicht mehr ...",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_die_02"
+		},
+		{
+			"voicelineId": 6161,
+			"title": "Ohnmächtig III",
+			"voicelineType": "500003",
+			"description": "Meine Schwester ...",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_life_die_03"
+		},
+		{
+			"voicelineId": 6162,
+			"title": "Leichten Treffer erlitten I",
+			"voicelineType": "900001",
+			"description": "Aua ...",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 6163,
+			"title": "Schweren Treffer erlitten I",
+			"voicelineType": "910001",
+			"description": "Oh nein!",
+			"voicefile": "VO_gameplay/VO_barbara/vo_barbara_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 6164,
+			"title": "Truppenbeitritt I",
+			"voicelineType": "600001",
+			"description": "Ich kümmere mich darum.",
+			"voicefile": "VO_teamJoin/vo_barbara_teamJoin_01"
+		},
+		{
+			"voicelineId": 6165,
+			"title": "Truppenbeitritt II",
+			"voicelineType": "600002",
+			"description": "Wünsch mir Glück!",
+			"voicefile": "VO_teamJoin/vo_barbara_teamJoin_02"
+		},
+		{
+			"voicelineId": 6166,
+			"title": "Truppenbeitritt III",
+			"voicelineType": "600003",
+			"description": "Wir schaffen das!",
+			"voicefile": "VO_teamJoin/vo_barbara_teamJoin_03"
+		}
+	]
+}

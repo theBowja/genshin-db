@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "Merhaba: Geçmiş",
+			"voicelineType": "1000",
+			"description": "Ben Cyno, eski General Mahamatra'yım. Şimdi de kötülüğü savuşturmak için becerilerimi kullanıyorum. Kurallara ve adalete olan bağlılığımı paylaşırsan sana destek olabilirim.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "Merhaba: Şimdi",
+			"voicelineType": "1006",
+			"description": "Ben Cyno, Akademinin General Mahamatra'sıyım. Kurallara uymak ve yanlış yapanları cezalandırmak benim görevim. Yolculuğun sırasında seni koruyacağım.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "\"Akaşa Titreşiyor, Kalpa Alevleri Yükseliyor\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "Sohbet: Kalbi Tartmak",
+			"voicelineType": "1101",
+			"description": "İyilik ve kötülük... Sonunda hepsi tartılacağı teraziye konur.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "Sohbet: Şans",
+			"voicelineType": "1102",
+			"description": "Şans bir oyunun sonucunu değiştirebilir ancak şansın etkisi er ya da geç biter.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "Sohbet: Şüphe",
+			"voicelineType": "1103",
+			"description": "Bazen ortamı yumuşatmaya çalışırım ama... Başkalarının espri anlayışını çok iyi anlarım denilemez.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "Yağmur Yağdığında",
+			"voicelineType": "1201",
+			"description": "Hımm, yine yağmur yağıyor...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "Yıldırım Düştüğünde",
+			"voicelineType": "1202",
+			"description": "Bazı efsanelerde yıldırımlar, tanrıların bir yargılama biçimidir.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "Kar Yağdığında",
+			"voicelineType": "1203",
+			"description": "Her yerin yeni yağan karla örtülmesini seviyorum. Bunda insana huzur veren müthiş bir dinginlik var.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "Güneş Açtığında",
+			"voicelineType": "1204",
+			"description": "Güneş ışığı bir gün tüm saklı köşeleri aydınlatacak.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "Rüzgar Şiddetlendiğinde",
+			"voicelineType": "1205",
+			"description": "Dikkatli ol, rüzgar şiddetleniyor.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "Çölde",
+			"voicelineType": "1206",
+			"description": "Tanıdık bir manzara...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "Günaydın",
+			"voicelineType": "1001",
+			"description": "Hazırlan. Gitme zamanı.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "İyi Günler",
+			"voicelineType": "1002",
+			"description": "Bugün öğle yemeği hazırlamamı ister misin? Benim için sorun yok ama yine de uyarmış olayım, lezzetli olacağına dair bir söz vermiyorum.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "İyi Akşamlar",
+			"voicelineType": "1003",
+			"description": "Sana ne söylediğimi hatırlıyor musun? Geceleri pusuya yatmak tehlikelidir, bu yüzden mutlaka tetikte ol.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "İyi Geceler",
+			"voicelineType": "1004",
+			"description": "İyi geceler. Yakın çevrede şimdi ilgilenmem gereken bir suç olayı var.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "Cyno Hakkında: Komik Olmayan Şakalar",
+			"voicelineType": "2001",
+			"description": "Hımm... Espri mi? Ah, bir tane buldum. Öhöm... Bir zamanlar çölde mahsur kalmış, susuzluktan ölmek üzere olan bir gezgin varmış. Çaresizlik içinde bir Su Bodurlopuyla karşılaşmak için dua etmiş. Ne var ki, gezgin tam o anda açlıktan ölmek üzere olan bir Su Bodurlopunun yalnız ve yolda kalmış bir gezginle karşılaşmak için dua ettiğini bilmiyormuş... Nasıl ama? Komik değil mi? Bence aşırı komik.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "Cyno Hakkında: Çölde Gezinti",
+			"voicelineType": "2005",
+			"description": "Bazen geceleri çölde yürüyüşe çıkarım. Soğuk ve kuru hava zihnimi toplamama yardımcı oluyor.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "Hakkımızda: Kart Oyunu Düellosu",
+			"voicelineType": "2003",
+			"description": "Bir el Dehanın Yakarışı Kart Oyunu oynamaya ne dersin? Sana yeni kart destemi göstereceğim.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "Hakkımızda: Şu An",
+			"voicelineType": "2002",
+			"description": "Geçmiş değiştirilemez ve gelecek önceden bilinemez. Bu yüzden her zaman bulunduğum yerin ve anın tadını çıkarırım.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "Önsezi Hakkında",
+			"voicelineType": "3001",
+			"description": "İçimdeki ruh ve hırsıma kulak veren tanrı ile birçok kutsal lütuf elde ettiğimi söyleyebilirsin. Ancak bunun adalet değerlerimi etkilemesine izin verecek değilim. Görevimi yerine getirmek için ne gerekiyorsa yapmaya devam edeceğim.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "Paylaşılacak Bir Bilgi: Bilgi Hırsı",
+			"voicelineType": "3002",
+			"description": "Bence çoğu insan bir şeyin aşırı arzulanmasının felakete yol açacağını bilir ancak konu bilginin peşinden gitmek olunca az sayıda insan bunu kabul eder. Bunu sadece pozitif bir şey olarak görürler. Bana kalırsa bilginin peşinden koşmak da bir tür arzudur ve kontrol altına alınması gerekir.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "Paylaşılacak Bir Bilgi: Saygı",
+			"voicelineType": "3005",
+			"description": "Görev sırasında verdiğim her karar diğer kişilerin kaderini derinden etkiler. Bu yüzden bir Matra olarak bu pozisyona olan saygımı her zaman korumalıyım, tıpkı bilgi ve güce duyduğum saygım gibi.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "İlginç Şeyler",
+			"voicelineType": "3003",
+			"description": "Çölde yetişen çalıların hastasıyım. Çöl sükunetin ve ıssızlığın simgesidir, ayrıca tüm uygarlıklar eninde sonunda bir çöl fırtınasının altında kalacaklardır. Bu zorlu koşullara rağmen yine de gelişme belirtileri yok değil. Bazen kendimi bu azimlerinden etkilenmiş halde buluyorum.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "Tighnari Hakkında: Bilgi",
+			"voicelineType": "4001",
+			"description": "Tighnari tanıştığım diğer alimlerden farklı. Bilgiye diğer herkes gibi içten bağlıdır ama en önemli sınırları asla geçmez. Bazı alimler kendi laboratuvarları içinde kendilerini bir tanrı zanneder ama Tighnari öyle değildir. Her yaşam formuna eşit derecede saygı gösterir. Hatta Akademide bir pozisyonu reddettiğini bile duydum ve onun bu kararını destekliyorum.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "Tighnari Hakkında: Espriler",
+			"voicelineType": "4002",
+			"description": "Tighnari bir keresinde bana akşam yemeğinde espri yapmamamı söylemiş ve esprilerimin komik olmadığı konusunda ısrar etmişti. Onun bu görüşüne katılmadığım için en iyi üç esprimi art arda patlattım ve her birinin dayanak noktasını detaylıca açıkladım. Konuşmamı bitirdiğimde yemeğim soğumuştu bile.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "Collei Hakkında",
+			"voicelineType": "4003",
+			"description": "Bir keresinde Collei'e bedenindeki tanrı kalıntılarını kapatmasında yardım etmiştim ancak süreç tahmin edilmez bir şekilde acı vericiydi. Bazıları için böylesi bir acıya dayanmak ölümden bile beterdir, bu yüzden buna dayanabilmesi gerçekten takdire değer.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "Alhaitham Hakkında",
+			"voicelineType": "4004",
+			"description": "Çok zeki insanlardan hoşlanmam. Her şeyi kontrol edebileceklerini düşünürler ve sürekli kendilerini tehlikeye atarlar. Ama Alhaitham en güvenilir olanlardan biridir. Çoğu durumda kontrolü elinde tutar ve potansiyel felaketleri engelleme becerisine sahiptir.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Kral Deshret ve Üç Büyücü\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "Kaveh Hakkında",
+			"voicelineType": "4005",
+			"description": "Tighnari ve Collei bunu hiç yüzüme söylemediler ama Kaveh'in kişisel hikayelerini, hazırladığım esprilerden daha eğlenceli buldular. Bunu yüzlerinde görebiliyordum. Bunun hakkında ne mi düşündüm? Yani öyle bir durumda gülebilmeleri bana komik gelmişti.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "Nahida Hakkında",
+			"voicelineType": "4006",
+			"description": "Bir tanrı hakkında yorum yapmak, benim konumuma pek uygun düşmez. Ancak onunla çalışırken onun bilgeliğine, cesaretine ve kararlılığına tanıklık ettim. Elinde hiçbir kanıt olmadığı halde onun kuyusunu kazan ve onu eleştiren bilgelere kıyasla, daha güvenilir bir değerlendirme yapabileceğimi düşünüyorum. O, herkesin saygısını hak eden olağanüstü bir tanrıdır.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Akaşa Titreşiyor, Kalpa Alevleri Yükseliyor\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "Nilou Hakkında",
+			"voicelineType": "4007",
+			"description": "Onun dans etme coşkusunu ve tutkusunu hissedebiliyorum. Dans, adeta onun bir parçası olmuş durumda. Umarım her zaman, sevdiği sanatı diğer insanları mutlu etmek için kullanabilir.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "\"Akaşa Titreşiyor, Kalpa Alevleri Yükseliyor\" görevini tamamla.",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "Faruzan Hakkında",
+			"voicelineType": "4008",
+			"description": "Faruzan'ın kayboluşuyla ilgili dava dosyalarını dikkatlice inceledim. O zamanlar onun tehlikeli bir araştırma yürüttüğünü düşünüyordum ama onunla bireysel olarak tanışınca bu fikrimden vazgeçtim. Onunla anlaşmak benim için pek kolay olmasa da genelde bana iyi niyetli ve konuşkan biri izlenimi verdi. Başkaları konusunda oldukça düşünceli, kesinlikle basiretsiz hareketlerde bulunabilecek biri değil.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "Lisa Hakkında",
+			"voicelineType": "4009",
+			"description": "Lisa'yı elbette tanıyorum, bir zamanlar aynı bilgenin altında çalışmıştık. General Mahamatra olarak, fazla hırsla bilgi peşinde koşanların başlarına gelen trajedilere çok kez tanık oldum, bu yüzden onun kararını anlıyorum.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "Cyno Hakkında Daha Fazlası: I",
+			"voicelineType": "5001",
+			"description": "Ha? Benim hakkımda daha fazla şey mi öğrenmek istiyorsun? Hımm, sanırım çoğu insan beni bir baş belası olarak görüyor... Ama endişelenme, tehlikeli bir şey yapmadığın sürece benimle başın derde girmez.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "Cyno Hakkında Daha Fazlası: II",
+			"voicelineType": "5002",
+			"description": "Bedenimi bir taşıyıcı gibi kullanarak içimdeki ruhun gücünü dışarı çıkarabilirim. Bu, kısmen doğal yapımdan dolayı mümkün ancak geçmişte isteyerek yaptığım bir anlaşma sayesinde oldu. Konu dışına çıkmaya gerek yok. Bir Matra olarak bu dünyada başkalarının ruhlarını tartacaksam aynı şekilde kendi ruhumu da teraziye koymak zorundayım.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "3. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "Cyno Hakkında Daha Fazlası: III",
+			"voicelineType": "5003",
+			"description": "Bir şeylerin \"nedenini\" düşünmek yerine \"ne\" yapıldığıyla ilgilenmeyi tercih ederim. Bu dünyada insanların bir şeyi neden yaptıklarıyla ilgili sayısız sebep vardır ve bu sebepleri öğrendiğinde yanlış yapan birinin haklı olduğu durumları da anlamaya ya da toplumun bu kişilere çok sert davrandığını düşünmeye başlarsın. Dezavantajlı olan taraf her zaman insanların sempatisini kazanır; ancak yargıç bu duyguları geride bırakmalıdır. Acıya ve suçlanan kişinin sebeplerine empati kurabiliriz ancak bir suç işlendiğinde, kesinlikle cezasız kalmamalıdır.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "Cyno Hakkında Daha Fazlası: IV",
+			"voicelineType": "5004",
+			"description": "Cehaletin kasvetli denizinde ara sıra gerçeği anlamayanları kendine çeken zayıf bir ışık parıltısı ortaya çıkar. İnsanlar bu parıltıyı genellikle yollarına rehberlik eden bir işaret ışığı olarak görürler ama bunu yaparken zifiri karanlık sularda yatan büyük tehlikeleri gözden kaçırırlar. Uzun süredir karanlıkta yaşayanları ışıktan uzaklaştırmak başlı başına zalimce bir şey ancak yüzeyinin altında gizlenen düşmanları yenene kadar bunu yapmaya devam etmeliyim.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "5. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "Cyno Hakkında Daha Fazlası: V",
+			"voicelineType": "5005",
+			"description": "Paylaşmaya değer ne varsa sana anlattım. Benden başka ne duymak istiyor olabilirsin? Hah, merak duygun dikkate değer, o halde sorularını sor. Başkalarını sorgulamaya alışmış biri için, sorgulanma hissi... Enteresan.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "Cyno'nun Hobileri",
+			"voicelineType": "6001",
+			"description": "Boş zamanlarımda diğer insanlarla Dehanın Yakarışı Kart Oyununu oynamayı severim. Kurallar dahilinde çok fazla yaratıcılığı ve farklılığı ifade edebilmek bunu sadece bir oyun olmaktan çıkarıyor, bu bir sanat tarzı.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "Cyno'nun Sorunları",
+			"voicelineType": "6002",
+			"description": "Son zamanlarda Dehanın Yakarışı Kart Oyununa dayanan, Inazuma'dan çıkma bir resimli roman gördüm. Ana karakter zor duruma düştüğünde bir şekilde aslında var olmaması gereken bir kart çekti. Bu beni derinden sarstı ve geride büyük bir muamma bıraktı. Desteyi kontrol ederek kimsenin ummadığı bir mucizeyi gerçekleştirdiler. Soru şu, bu bir kural ihlali olarak mı görülmeli yoksa oyun kuralları dahilinde mi kabul edilmeli?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "En Sevdiği Yemek",
+			"voicelineType": "6005",
+			"description": "Pirinç, et ve kuru yemişler yoğurt ile karıştırılır ve birlikte kavrulur... Ne muhteşem bir lezzet bombardımanı! Dışındaki çıtır kısmı açtığında buharla birlikte sızan aromayı hissedebilirsin. Ayrıca yapımı çok uzun sürmüyor, kesinlikle favori yemeğim.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "En Sevmediği Yemek",
+			"voicelineType": "6004",
+			"description": "Çölde seyahat ederken yanıma aldığım erzak genelde lezzetsizdir. Bunlardan yeteri kadar yersen birazcık bile lezzeti olan her yiyecek seni mutlu edecektir. Eğer seçim yapmak zorunda kalsaydım... Böcek veya böcekle ilgili herhangi bir şeyi yemekten keyif aldığımı söylemezdim...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "Hediye Alma: I",
+			"voicelineType": "6007",
+			"description": "Çok lezzetli. Ellerine sağlık.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "Hediye Alma: II",
+			"voicelineType": "6008",
+			"description": "Kabul ediyorum. Teşekkürler.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "Hediye Alma: III",
+			"voicelineType": "6009",
+			"description": "Of... Bana mı aldın? Emin misin?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "Doğum Günü",
+			"voicelineType": "7001",
+			"description": "Öhöm... Doğum gününü kutlarım. Kutlamalarda pek tecrübeli olmasam da doğum gününün yaklaştığını öğrenince hazırlık yapmak istedim. Öncelikle, bu desteyi birkaç gündür senin için hazırlıyordum, senin tarzına uyacağını düşünüyorum. Ayrıca biraz vakit yaratmak için programımı düzenledim. Gitmek istediğin bir yer var mı? Sana eşlik etmeyi çok isterim. Doğum günü sadece bir gün ama bu bir günün tadını çıkarmalısın. Üç gün içinde geri dönebiliyor olsak bizim için yeterli.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "Yükseltme Hakkında: Giriş",
+			"voicelineType": "8001",
+			"description": "İçimde yükselen yeni gücü hissedebiliyorum, gelişmemin bir kanıtı.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "1. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "Yükseltme Hakkında: Gelişme",
+			"voicelineType": "8002",
+			"description": "Kurallara uyacağıma ve kötüyü cezalandıracağıma yemin ederim.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "2. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "Yükseltme Hakkında: Zirve",
+			"voicelineType": "8003",
+			"description": "Güzel destek. Çok teşekkürler.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "Yükseltme Hakkında: Sonuç",
+			"voicelineType": "8004",
+			"description": "Gücümün zirvesindeyim ama sadece dövüş gücüme güvenerek halledemeyeceğim çok şey var. Duyguların ve kuralların uyuşmadığı çok zamanlar olacaktır ancak önümdeki yolculuklarda doğru dengeyi kurmanın püf noktasını bulacağım.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Yükseltme Aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "Element Becerisi: I",
+			"voicelineType": "100001",
+			"description": "Teslim ol!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "Element Becerisi: II",
+			"voicelineType": "100002",
+			"description": "Beyhude.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "Element Becerisi: III",
+			"voicelineType": "100003",
+			"description": "Kaçacak yer yok!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "Element Becerisi: IV",
+			"voicelineType": "100004",
+			"description": "Suçun sabit görüldü.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "Element Becerisi: V",
+			"voicelineType": "100005",
+			"description": "Suçlu!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "Element Becerisi: VI",
+			"voicelineType": "100006",
+			"description": "Kefaretini ödemelisin!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "Element Patlaması: I",
+			"voicelineType": "200001",
+			"description": "Adalet benimle yerini bulacak!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "Element Patlaması: II",
+			"voicelineType": "200002",
+			"description": "Hükmüm üzerinde.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "Element Patlaması: III",
+			"voicelineType": "200003",
+			"description": "Günahların ruhunda ağırlık yapıyor.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "Hazine Sandığı Açma: I",
+			"voicelineType": "300001",
+			"description": "Hak edilen bir buluş.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "Hazine Sandığı Açma: II",
+			"voicelineType": "300002",
+			"description": "Azmimiz sonuç verdi.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "Hazine Sandığı Açma: III",
+			"voicelineType": "300003",
+			"description": "Zenginlik, üzerine uygarlığın inşa edildiği temeldir.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "Düşük Can: I",
+			"voicelineType": "410001",
+			"description": "Beklediğimden daha güçlü...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "Düşük Can: II",
+			"voicelineType": "410002",
+			"description": "Alıştım artık.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "Düşük Can: III",
+			"voicelineType": "410003",
+			"description": "Öf... Tekrar saldırsana!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "Düşük Canlı Takım Arkadaşı: I",
+			"voicelineType": "400001",
+			"description": "Geri çekil. Sert davranmaya kalkma.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "Düşük Canlı Takım Arkadaşı: II",
+			"voicelineType": "400002",
+			"description": "Bundan sonrası bende.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "Yere Serilme: I",
+			"voicelineType": "500001",
+			"description": "Benim zamanım... Geldi mi?",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "Yere Serilme: II",
+			"voicelineType": "500002",
+			"description": "Ölümle... Yeni bir döngü başlar.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "Yere Serilme: III",
+			"voicelineType": "500003",
+			"description": "Yargılamam başarısız oldu...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "Hafif Darbe Alma: I",
+			"voicelineType": "900001",
+			"description": "Anlamsız.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "Ağır Darbe Alma: I",
+			"voicelineType": "910001",
+			"description": "Zor bir kalabalık.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "Ağır Darbe Alma: II",
+			"voicelineType": "910002",
+			"description": "İyi oynadın.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "Gruba Katılma: I",
+			"voicelineType": "600001",
+			"description": "Elimden geleni yapmaya hazırım.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "Gruba Katılma: II",
+			"voicelineType": "600002",
+			"description": "Görevimiz başlıyor.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "Gruba Katılma: III",
+			"voicelineType": "600003",
+			"description": "Sıradaki hedefimiz kim?",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

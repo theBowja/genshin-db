@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "初次見面·過往",
+			"voicelineType": "1000",
+			"description": "我是賽諾，曾經的「大風紀官」。如今我正在以自己的力量審判罪惡，若{F#妳}{M#你}同樣心繫規則與正義，我可以助你一臂之力。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "初次見面·如今",
+			"voicelineType": "1006",
+			"description": "我是賽諾，教令院的「大風紀官」。維護規則、審判罪惡是我的職責，今後的旅途中，我會保護好{F#妳}{M#你}的安全。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "閒聊·秤重",
+			"voicelineType": "1101",
+			"description": "善與惡，最終都會被秤量。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "閒聊·牌運",
+			"voicelineType": "1102",
+			"description": "運勢會左右某一場對決的勝負，但不會一直影響下去。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "閒聊·疑惑",
+			"voicelineType": "1103",
+			"description": "偶爾我也想緩解一下氣氛，但我其實分不太清什麼笑話能夠引人發笑。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "又下雨了…",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "打雷的時候…",
+			"voicelineType": "1202",
+			"description": "在一些傳說中，雷電是神明對人間降下的審判。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "下雪的時候…",
+			"voicelineType": "1203",
+			"description": "我很喜歡下雪後的世界，安靜卻並非一片死寂。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "陽光很好…",
+			"voicelineType": "1204",
+			"description": "陽光終會照進每一個角落。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "颳大風了…",
+			"voicelineType": "1205",
+			"description": "好大的風…小心。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "在沙漠的時候…",
+			"voicelineType": "1206",
+			"description": "熟悉的風景…",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "打起精神，該出發了。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "需要我準備午飯嗎？事先說好，我可不保證好吃。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "還記得我跟{F#妳}{M#你}說過的話嗎？夜晚總是伴隨著危險，無論做什麼都不要放鬆警惕。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "晚安。一些罪犯在附近活動，我去處理。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "關於賽諾自己·冷笑話",
+			"voicelineType": "2001",
+			"description": "有一個旅人在沙漠中口渴無比，於是祈禱自己遇到一隻水史萊姆，沒想到一隻餓著肚子的水史萊姆也在祈禱自己遇見落單的旅人…嗯？{F#妳}{M#你}那是什麼表情，不好笑嗎？",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "關於賽諾自己·散步",
+			"voicelineType": "2005",
+			"description": "我偶爾會去夜晚的沙漠散步，寒冷而乾澀的風讓人頭腦清醒。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "關於我們·決鬥",
+			"voicelineType": "2003",
+			"description": "要打一局「七聖召喚」嗎？給{F#妳}{M#你}看看我的新牌組。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "關於我們·此刻",
+			"voicelineType": "2002",
+			"description": "過去無法更改、未來無法預料，所以我很珍惜眼前的時光。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "憑依在我身上的非人之物也好、將視線投射於我的魔神也罷，我受神明青睞，但我無意為此而改變自己的道義。我只盡我應盡之責、做我應做之事。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "有什麼想要分享·求知欲",
+			"voicelineType": "3002",
+			"description": "「欲望氾濫就會引發災害」，這似乎已經是一種共識。然而提及「求知欲」的時候，人們卻往往只願意談論它的正面作用…在我看來，求知欲也是欲望的一種，必須加以控制。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "有什麼想要分享·敬畏心",
+			"voicelineType": "3005",
+			"description": "在執行任務時，我的任何一個判斷都可能會改變他人的命運。所以我必須要求自己時刻對「風紀官」這個職位保持敬畏——就像我敬畏知識與力量一樣。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "我喜歡生長在沙漠中的那些灌木。沙漠象徵著歸寂，一切文明都會被風沙掩埋。但就在這片荒涼的土地上，卻能見到生命不斷萌發的跡象，有時連我也會被它們的堅韌震撼。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "關於提納里·知識",
+			"voicelineType": "4001",
+			"description": "提納里和我見過的其他學者不同。他對知識同樣有著很深的執著，卻始終不會逾越那道紅線。有些學者會將自己視為「實驗室中的神明」，但提納里不會，他一直平等地尊重每一種生命。聽說他拒絕了教令院的聘請，我也站在他這一邊。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "關於提納里·笑話",
+			"voicelineType": "4002",
+			"description": "提納里曾勸我不要在餐桌上講笑話，說是根本笑不出來。我不以為然，連講了三個壓箱底的笑話，並逐一解釋了笑點…然後我的飯菜涼了。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "關於柯萊…",
+			"voicelineType": "4003",
+			"description": "我曾經幫她封印了體內的魔神殘骸，但封印的過程給她帶來了很大的痛苦。那種程度的痛苦可能比死亡更讓人害怕，她能夠堅持下來，很了不起。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "關於艾爾海森…",
+			"voicelineType": "4004",
+			"description": "我不太喜歡過於聰明的人，他們總是自認為能掌控一切，從而經常在危險的邊緣遊走。不過艾爾海森還算穩定，在絕大部分場合，他確實有掌控局面、化險為夷的能力。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「赤土之王與三朝聖者」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "關於卡維…",
+			"voicelineType": "4005",
+			"description": "提納里和柯萊沒有親口說出來，但他們之間的眼神交流已經說明了一切。卡維分享的親身經歷比我準備的笑話有趣多了。我的看法？我覺得他們會為這種事情發笑，反倒是滿好笑的。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "關於納西妲…",
+			"voicelineType": "4006",
+			"description": "評價神明…這在我看來是略微有些僭越的事情。不過在同行的那段時間裡，我也親眼見證了她的智慧、勇氣與決心。相較於那些只靠臆想就對她指指點點的賢者，我應該更有資格下這個結論：她是一位優秀而值得尊敬的神明。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "關於妮露…",
+			"voicelineType": "4007",
+			"description": "我能從她身上感到對舞蹈的熱情與執念，這股執念非常堅定，不會輕易改變。希望以後，她也可以用自己熱愛的舞蹈為他人帶去快樂。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「虛空鼓動，劫火高揚」劇情",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "關於琺露珊…",
+			"voicelineType": "4008",
+			"description": "我曾仔細翻閱過記載琺露珊前輩失蹤的案卷，那時候我懷疑她進行了某種危險的研究…不過與她見面之後，我就徹底打消了這個念頭。雖然相處起來有些困難，不過她就像一位喜歡碎碎唸的長輩，心裡會為他人著想，不會做什麼脫序的事情。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "關於麗莎…",
+			"voicelineType": "4009",
+			"description": "麗莎和我曾向同一位賢者求學，我自然知道她的事。身為大風紀官，我也見過許多過分追求知識而引發的悲劇，所以能理解她的選擇。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "想要瞭解賽諾·其一",
+			"voicelineType": "5001",
+			"description": "{F#妳}{M#你}問關於我的事？也是，畢竟在很多人眼中我是一個無法忽視的「麻煩」…不用擔心，只要{F#妳}{M#你}不做什麼危險的事情，我就不會找{F#妳}{M#你}的麻煩。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "想要瞭解賽諾·其二",
+			"voicelineType": "5002",
+			"description": "以此身為容器，可以令非人之物的力量顯現。這既得益於先天的體質，也是一種後天的交易。沒什麼可避諱的，我以風紀官的身分秤量世間的罪惡，自然也要把我自己的靈魂放到審判之秤上一同秤量。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "想要瞭解賽諾·其三",
+			"voicelineType": "5003",
+			"description": "比起「為什麼做」，我更看重「做了什麼」。因為這個世界上有成千上萬種理由，有時{F#妳}{M#你}聽到那些理由，會覺得做了錯事的人情有可原，甚至覺得旁人對他們太過苛責。劣勢方總是容易引起別人的同情，但審判者卻要摒棄這種情緒。情有可原，但罪無可赦。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "想要瞭解賽諾·其四",
+			"voicelineType": "5004",
+			"description": "在幽暗的無知之海上，偶爾會泛起微光，吸引著不明真相的人靠近。常有人視其為燈塔，卻看不到漆黑的海水中隱藏的巨大危險。將久居在黑暗中的人帶離光明的指引，本身是一件殘酷的事情，但我不得不這麼做——直到未來有一天，我們能夠戰勝海水中潛藏的敵人為止。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "想要瞭解賽諾·其五",
+			"voicelineType": "5005",
+			"description": "我判斷有價值的資訊，已經如數分享了，{F#妳}{M#你}還在期待聽我說什麼？哈…{F#妳}{M#你}的好奇心真是不簡單，那就由{F#妳}{M#你}提問吧。習慣了審問別人之後，這種被人詢問的感覺…也算新奇。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "賽諾的愛好…",
+			"voicelineType": "6001",
+			"description": "閒暇的時候，我會和其他人打幾局「七聖召喚」。這種建立在規則之上，卻又充滿靈活變通的遊戲，在我看來更像是一種藝術。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "賽諾的煩惱…",
+			"voicelineType": "6002",
+			"description": "前段時間，我看到了一本來自稻妻的輕小說。小說以「七聖召喚」為主題，裡面的主角被逼入絕境的時候，忽然從卡組中抽到了一張原本不存在的卡。我深受震撼，同時也陷入困惑：透過對卡組進行特殊操作，創造出讓人摸不著頭腦的奇蹟，這究竟是打破了規則，還是也算規則的一部分？",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "喜歡的食物…",
+			"voicelineType": "6005",
+			"description": "大米與肉類、乾果混合，加酪乳進行烤製，不同的香味會混合到一起。敲開焦脆的外殼，香味就會隨著蒸騰的熱氣一同冒出來。製作起來也不會花太長時間，是我很喜歡的菜餚。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "在沙漠中行走的時候，帶的乾糧通常堅硬無味，習慣之後就沒有什麼討厭的東西了。非要說的話，跟蟲子有關的食物還是有些難以接受…",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "味道很好，勞{F#妳}{M#你}費心了。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "我收下了，多謝。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "給我的嗎？是不是搞錯了？",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "嗯…先祝{F#妳}{M#你}生日快樂。雖然沒有太多慶祝的經驗，不過想到是{F#妳}{M#你}的生日，我還是提前做了一些準備。首先是一套我研究了幾天後得到的卡組組合，風格和{F#妳}{M#你}比較契合。另外我調整了這段時間的安排，{F#妳}{M#你}有什麼想去的地方嗎？我可以陪{F#妳}{M#你}一起去。雖然生日只有一天，但放鬆還是需要盡興，行程安排在三天內即可。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "我能感受到新的力量，這是變強的證明。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "審判罪惡，維護規則。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "不錯的提升，多謝{F#妳}{M#你}了。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "力量已達頂峰，然而僅靠這一身武力，仍舊有許多做不到的事情。人情與規則許多時候相互衝突，如何更好地兼顧，我會在今後的旅途中尋找答案。",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "束手就擒吧。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "徒勞的掙扎。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "你無處可逃！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "元素戰技·其四",
+			"voicelineType": "100004",
+			"description": "裁決已至。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "元素戰技·其五",
+			"voicelineType": "100005",
+			"description": "該定罪了。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "元素戰技·其六",
+			"voicelineType": "100006",
+			"description": "償還罪業！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "以此身…肅正萬象！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "判決，如期降臨。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "秤量，你的罪孽。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "應得之物。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "貴在恆心。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "財富累積，成為文明的基石。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "威脅程度…比預想中要高。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "差不多也該習慣了。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "咳…再來！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "去休整，別逞強！",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "我來替你。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "輪到我了嗎…",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "覆滅…新生…終而復始。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "審判，失敗了…",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "普通受擊·其一",
+			"voicelineType": "900001",
+			"description": "無用的掙扎。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "真難對付。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "受重擊·其二",
+			"voicelineType": "910002",
+			"description": "有兩下子。",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "我會盡我所能。",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "行動開始。",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "這次的目標是誰？",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

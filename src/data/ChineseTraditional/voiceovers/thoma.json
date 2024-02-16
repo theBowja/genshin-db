@@ -1,0 +1,787 @@
+{
+	"id": 10000050,
+	"name": "Thoma",
+	"friendLines": [
+		{
+			"voicelineId": 50008,
+			"title": "初次見面…",
+			"voicelineType": "1000",
+			"description": "初次見面，異鄉的旅人，{F#妳}{M#你}的名字我可是早就聽說了。只要{F#妳}{M#你}不嫌棄，我托馬，從今天起就是{F#妳}{M#你}的朋友了。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_draw_appear"
+		},
+		{
+			"voicelineId": 50009,
+			"title": "閒聊·請客",
+			"voicelineType": "1101",
+			"description": "嗯…找個時間一起吃頓好的怎麼樣，我請客。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_01"
+		},
+		{
+			"voicelineId": 50010,
+			"title": "閒聊·擔憂",
+			"voicelineType": "1102",
+			"description": "總覺得有什麼事忘記做了…庭院打理過，茶也煎了，嗯…應該是錯覺吧。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_02"
+		},
+		{
+			"voicelineId": 50011,
+			"title": "閒聊·摩拉",
+			"voicelineType": "1103",
+			"description": "這幾天花得太多，身上只剩十摩拉了，不過幸好還有十摩拉！",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_03"
+		},
+		{
+			"voicelineId": 50012,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "怎麼突然下雨了？{F#妳}{M#你}沒事吧？要不要用我的外套擋擋？",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 50013,
+			"title": "打雷的時候…",
+			"voicelineType": "1202",
+			"description": "這種天氣就別在野外閒晃了，會被劈的。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_thunder_01"
+		},
+		{
+			"voicelineId": 50014,
+			"title": "下雪的時候…",
+			"voicelineType": "1203",
+			"description": "別在雪地上跑哦，跌倒了我可不扶{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_snowy_01"
+		},
+		{
+			"voicelineId": 50015,
+			"title": "陽光很好…",
+			"voicelineType": "1204",
+			"description": "天氣真不錯啊，一起散步吧。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_sunny_01"
+		},
+		{
+			"voicelineId": 50016,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早啊。要是{F#妳}{M#你}不忙，要不要跟我一起去市集上逛逛？早上的蔬菜可是最水靈的哦。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 50017,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "今天午飯除了緋櫻天婦羅還有三彩糰子！來，{F#妳}{M#你}和派蒙都有份，還有神里小姐和家主大人的…欸等下，我好像忘了準備自己的份。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 50018,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "快走快走，這個時間去市場買魚能便宜不少。要是心血來潮想買什麼小東西，我幫{F#妳}{M#你}砍價。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 50019,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "嗯，晚安。{F#妳}{M#你}這一天也辛苦了吧。早點休息去吧，別熬夜。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 50020,
+			"title": "關於托馬自己·家政官",
+			"voicelineType": "2001",
+			"description": "不論是神里小姐還是家主大人，最初都沒打算讓我擔任家政官，還是我自告奮勇的。我很喜歡這些事情，將一切打理得井井有條，特別有成就感。看大家的反應…嗯，我應該做得不錯。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle"
+		},
+		{
+			"voicelineId": 50021,
+			"title": "關於托馬自己·意義",
+			"voicelineType": "2005",
+			"description": "把居住的地方打掃乾淨，佈置整齊，讓所有生活在這裡的人露出笑容，這就是家政的意義。至於現在…我會連帶著為了{F#妳}{M#你}的份一起，好好努力的。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50022,
+			"title": "關於我們·一人食",
+			"voicelineType": "2003",
+			"description": "怎麼一個人在這安安靜靜吃飯？…嗯，{F#妳}{M#你}介不介意跟我一起？還是說{F#妳}{M#你}比較想一個人吃？",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close"
+		},
+		{
+			"voicelineId": 50023,
+			"title": "關於我們·立誓",
+			"voicelineType": "2002",
+			"description": "要不是{F#妳}{M#你}在「狩眼儀式」上站出來，單槍匹馬與將軍對抗，我應該已經失去神之眼、失去願望了。我想了很久，恐怕只有這樣才配得上{F#妳}{M#你}挺身而出的覺悟——\n我，托馬，願獻上我的武藝與忠誠。不惜一切，為{F#妳}{M#你}而戰。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "完成「無念無想，泡影斷滅」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50024,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "既然得到了神之眼，就得好好珍惜，我可不想把它弄丟了。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50025,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "以我長期和大家打交道的經驗來看，比起蒙德人，稻妻人更加在意禮節。要是能始終保持禮貌的態度，事情會變得好辦不少。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_share_01"
+		},
+		{
+			"voicelineId": 50026,
+			"title": "感興趣的見聞·狸貓",
+			"voicelineType": "3003",
+			"description": "我一直想見識狸貓的變化手段。傳聞中，狸貓能夠變化成各種各樣的形態，跟路人開玩笑，是一種很有幽默感的生靈哦。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_01"
+		},
+		{
+			"voicelineId": 50027,
+			"title": "感興趣的見聞·動物",
+			"voicelineType": "3004",
+			"description": "{F#妳}{M#你}喜歡小動物嗎？要是{F#妳}{M#你}也喜歡的話，下次我帶{F#妳}{M#你}去城郊附近走走。到時候我一聲口哨，好多可愛的小貓小狗就會鑽出來，黏在{F#妳}{M#你}的腳邊向{F#妳}{M#你}撒嬌。哈哈，光是想像就覺得很開心了。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_02"
+		},
+		{
+			"voicelineId": 50028,
+			"title": "關於八重神子…",
+			"voicelineType": "4001",
+			"description": "神子大人？為、為什麼突然提她？唉，每次小姐派我出去送口信，我最不想去的就是鳴神大社了。啊，倒不是神子大人的氣場讓人發慌，而是，呃…是敬畏…敬畏！啊哈哈…",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50029,
+			"title": "關於雷電將軍·比較",
+			"voicelineType": "4002",
+			"description": "在我的故鄉蒙德，絕大多數人都尊敬著風神巴巴托斯大人。但稻妻人對待將軍大人的態度就不同了。怎麼說呢…除了愛戴與感激，好像還有些畏懼的成分。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50030,
+			"title": "關於雷電將軍·未知",
+			"voicelineType": "4003",
+			"description": "說實話，我對將軍本人沒什麼怨恨。雖說她差點奪走我的神之眼，但那是因為她的立場特殊吧。立場不同是很正常的事情。\n我想不明白的，是她的目的。她所設想的永恆國度到底是什麼樣？為什麼非得犧牲民眾的願望換取。我無法理解，也無法認同。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「無念無想，泡影斷滅」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50031,
+			"title": "關於北斗…",
+			"voicelineType": "4004",
+			"description": "「南十字」船隊的大姐頭可真是個颯爽的人哪。她曾經允諾帶我去遙遠的外海，看看封鎖一切的雷暴是個什麼樣子。只是可惜，我一直沒這個機會出去看看…",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「無念無想，泡影斷滅」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50032,
+			"title": "關於神里綾人…",
+			"voicelineType": "4005",
+			"description": "家主大人也真的不容易。時局動盪，人心不安，同僚裡又有不少貪官敗類，想想都頭痛。我所能做的，也就是在生活方面給予些照顧了。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayato_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50033,
+			"title": "關於神里綾華…",
+			"voicelineType": "4006",
+			"description": "神里小姐知書達理，心地善良又溫柔端莊，就是不夠坦率。欸對了，下次說話的時候，要是小姐又露出那副欲言又止的模樣，{F#妳}{M#你}一定要主動些，多問問她的想法。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayaka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "完成「無念無想，泡影斷滅」劇情",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50034,
+			"title": "關於宵宮…",
+			"voicelineType": "4007",
+			"description": "「長野原煙花店」的那位店長？她很容易相處的，算是心直口快的類型。哦對了，她家的煙花也是厲害得很，有機會一定要多看幾次。喏，優惠券給{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yoimiya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50035,
+			"title": "關於早柚…",
+			"voicelineType": "4008",
+			"description": "唉，早柚太倔強了。不管我找她多少次，都不肯傳授我忍術。甚至最近都刻意躲著我了…明明只是想求師而已，是我做得太過頭了嗎？",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_sayu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50036,
+			"title": "關於九條裟羅…",
+			"voicelineType": "4009",
+			"description": "這位天領奉行麾下的將領，嗯…跟她交涉得拿出十二分的謹慎。她手握實權，又有點固執，嬉皮笑臉是絕對行不通的。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_kujoSara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50037,
+			"title": "關於荒瀧一斗…",
+			"voicelineType": "4010",
+			"description": "那是市井傳聞中的怪人，據說還擁有妖怪的血脈，{F#妳}{M#你}見過他了嗎？要是你們熟絡的話，幫我引薦引薦唄。廣交朋友總是好事…妖怪朋友也算！",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_itto_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50038,
+			"title": "關於鹿野院平藏…",
+			"voicelineType": "4011",
+			"description": "嚯，他可是天領奉行那邊的「偵探」。他給人一種我行我素的感覺，不太容易打交道。另外，需要偵探出現的場合，一般也不會有什麼好事。我還是和風暴中心保持距離吧。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_heizou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50039,
+			"title": "關於琴…",
+			"voicelineType": "4012",
+			"description": "古恩希爾德家的琴小姐做了西風騎士團的團長嗎？的確合適，她的優秀正直是出了名的…哦，目前還只是代理團長嗎？哈哈，那種名頭根本無所謂啦。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50040,
+			"title": "關於優菈…",
+			"voicelineType": "4013",
+			"description": "{F#妳}{M#你}還遇見過優菈·勞倫斯嗎？我只知道，他們家的人脾氣爛透了，最好不要有什麼來往。啊，跟{F#妳}{M#你}聊這些，又想起了很多蒙德的往事…真好。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50041,
+			"title": "想要瞭解托馬·其一",
+			"voicelineType": "5001",
+			"description": "有什麼需要我幫忙的嗎？家中雜務、人際交往，一句話的事。欸？聊天嗎…這樣這樣。那倒是需要更用心一些了。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_01"
+		},
+		{
+			"voicelineId": 50042,
+			"title": "想要瞭解托馬·其二",
+			"voicelineType": "5002",
+			"description": "我應該跟{F#妳}{M#你}提過吧？我不是土生土長的稻妻人。我是從蒙德一路坐船來的，因為喜歡這裡的風土，又遇到了家主大人和神里小姐這樣親切的人，乾脆就留了下來。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50043,
+			"title": "想要瞭解托馬·其三",
+			"voicelineType": "5003",
+			"description": "其實我也會有想老家的時候，所以，我特別能理解離島上那些外國商人，也想盡量多關照關照。不同的是，他們只把自己當作一個過客，並不想融入稻妻，因此也就只是過客了。大多數稻妻人不會把他們當自己人。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50044,
+			"title": "想要瞭解托馬·其四",
+			"voicelineType": "5004",
+			"description": "對一些保守的稻妻人來說，一個外國人要做奉行家的家臣，是幾乎不能想像的事。因此，我有過一段不受人待見的經歷。要不是他倆力保，恐怕我早被趕走了。為了不辜負神里家的恩情，那之後我誠心努力了很久，最終才被大家接納。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50045,
+			"title": "想要瞭解托馬·其五",
+			"voicelineType": "5005",
+			"description": "這個跟{F#妳}{M#你}說…應該沒關係吧。有一陣子，我很想回老家去。畢竟蒙德才是我的故鄉，但稻妻…我同樣難以割捨。{F#妳}{M#你}看，我受過許多稻妻人的恩惠——神里家始終有留給我的房間，還有不是親人勝似親人的人。就算吃過苦頭，但也是幫助我的人多。想來想去，覺得自己還是留在稻妻好。實在想念蒙德的時候…就找{F#妳}{M#你}聊聊好了。{F#妳}{M#你}不會嫌棄我囉嗦吧？",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50046,
+			"title": "托馬的愛好…",
+			"voicelineType": "6001",
+			"description": "最近的話，我比較喜歡怪談故事，那些千變萬化的妖怪實在是神奇。之前的話，對忍術也有不小的興趣。嗯？三分鐘熱度？…不，不是這樣的！",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_hobby"
+		},
+		{
+			"voicelineId": 50047,
+			"title": "托馬的煩惱…",
+			"voicelineType": "6002",
+			"description": "我現在真的很煩惱。晚上大人要在家設宴招待朋友，說好了由我來露一手，做奶油蟹蟹撐場面的。結果這兩天根本買不到螃蟹！難道我只能下水抓螃蟹了嗎？",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_annoyed"
+		},
+		{
+			"voicelineId": 50048,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "要說我最喜歡的食物，那絕對是市井雜煮了。煮好香噴噴的一大鍋，然後大家一起分著吃，又熱鬧又開心。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodLike"
+		},
+		{
+			"voicelineId": 50049,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "食物的範圍裡沒什麼，但如果飲料也算的話…我不怎麼能喝酒。別笑我，我也懷疑過自己是不是蒙德人了。不過…過量飲酒對身體有害，不喝酒，也是好事吧。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodDislike"
+		},
+		{
+			"voicelineId": 50077,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "好香！我還想再添一碗米飯！",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_pref_01"
+		},
+		{
+			"voicelineId": 50078,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "{F#妳}{M#你}還有時間嗎？和我一起分享廚藝心得吧！",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_normal_01"
+		},
+		{
+			"voicelineId": 50079,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "沒怎麼嘗試過的味道…雖然也不壞吧。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_dislike_01"
+		},
+		{
+			"voicelineId": 50050,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "快跟我來，現在就來！{F#妳}{M#你}的生日我當然不會忘記，{F#妳}{M#你}看，準備好了一場大聚會。有吃有喝，還有一大幫{F#妳}{M#你}的朋友。嘿，這是紀念{F#妳}{M#你}誕生的好日子，我可不會讓{F#妳}{M#你}一個人孤零零地過！",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 50051,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "這樣就能變強嗎？不是在開玩笑吧，我還有衣服沒洗完呢。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50052,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "似乎…有一股火焰在我心中燃燒。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50053,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "擁有了強大的力量，要用來做什麼呢？嗯…得好好考慮考慮了啊。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50054,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "謝謝{F#妳}{M#你}對我的信賴。{F#妳}{M#你}給予我的恩惠，比火焰更溫暖。放心吧，我找到自己想做的事了。這份力量將化作堅盾，一直守護{F#妳}{M#你}。",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 50055,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "火之盾！",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_01"
+		},
+		{
+			"voicelineId": 50056,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "看看這個。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_02"
+		},
+		{
+			"voicelineId": 50057,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "小心著火。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_03"
+		},
+		{
+			"voicelineId": 50058,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "後援登場。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_01"
+		},
+		{
+			"voicelineId": 50059,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "護持之火！",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_02"
+		},
+		{
+			"voicelineId": 50060,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "我來守護{F#妳}{M#你}。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_03"
+		},
+		{
+			"voicelineId": 50061,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "裡面有什麼好東西呢？",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_01"
+		},
+		{
+			"voicelineId": 50062,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "喲，果然今天運勢大吉。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_02"
+		},
+		{
+			"voicelineId": 50063,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "嘿嘿，見者有份。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_03"
+		},
+		{
+			"voicelineId": 50064,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "喂！有必要嗎？",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_01"
+		},
+		{
+			"voicelineId": 50065,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "慘了慘了…",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_02"
+		},
+		{
+			"voicelineId": 50066,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "嘶，有那麼點痛…",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_03"
+		},
+		{
+			"voicelineId": 50067,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "別怕，我會保護你的。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 50068,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "真是亂來，快去歇著。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 50069,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "要回老家了啊…",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_01"
+		},
+		{
+			"voicelineId": 50070,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "各位…保重。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_02"
+		},
+		{
+			"voicelineId": 50071,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "沒能盡到…守護的職責…",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_03"
+		},
+		{
+			"voicelineId": 50072,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "疼疼疼。",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 50073,
+			"title": "受重擊·其二",
+			"voicelineType": "910002",
+			"description": "住手！",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 50074,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "好吧，家務待會再說。",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_01"
+		},
+		{
+			"voicelineId": 50075,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "出門找點新朋友。",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_02"
+		},
+		{
+			"voicelineId": 50076,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "這次去哪裡逛逛？",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_03"
+		}
+	]
+}

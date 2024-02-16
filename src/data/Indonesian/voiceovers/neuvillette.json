@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "Halo",
+			"voicelineType": "1006",
+			"description": "Salam. Aku Hakim Agung, atau \"Iudex\" Fontaine, tapi kamu boleh memanggil nama belakangku saja — \"Neuvillette\". Aku bukan berniat menjaga jarak darimu ... Bukan, hanya saja aku sadar bahwa sikap yang terlalu akrab dapat membuat ketidakberpihakan peradilan dipertanyakan di mata sebagian orang.\nKalau kamu punya permintaan atau masalah apa pun, maka — sejauh hukum mengizinkan, minimal — saat kita mencicipi air impor dari Desa Qiaoying, kita bisa duduk dan mendiskusikannya bersama.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "Mengobrol: Pengadilan",
+			"voicelineType": "1101",
+			"description": "Aku melihat nilai dalam pekerjaanku sendiri, tapi aku juga melihat makna dalam semua upaya orang Fontaine. Kuyakin aku akan terus memenuhi tugasku dengan perasaan bangga.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "Mengobrol: Mencicipi Air",
+			"voicelineType": "1102",
+			"description": "Air hadir dalam berbagai rasa sesuai selera. Air Mondstadt jernih dan murni, sedangkan air Liyue punya sisa rasa yang bertahan lama. Di Inazuma, air punya rasa yang berbeda dari yang lain. Sementara air Sumeru memiliki profil rasa yang kaya dan rumit, namun harus kita cicipi dengan sabar agar dapat menikmati sepenuhnya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "Mengobrol: Melusine",
+			"voicelineType": "1103",
+			"description": "Melusine adalah makhluk yang cantik dan merupakan kebanggaan Fontaine. Bertemanlah dengan mereka, janganlah menyakitinya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "Ketika Hujan",
+			"voicelineType": "1201",
+			"description": "Ah, maaf. Hujan deras ini pasti cukup merepotkanmu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "Setelah Hujan",
+			"voicelineType": "1202",
+			"description": "Ini sudah berakhir ....",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "Ketika Petir Menyambar",
+			"voicelineType": "1203",
+			"description": "Apa ya pepatahnya ... \"Tidak ada angin 'tapi' ada 'petir'?\" Ya, ya, kuyakin begitulah perasaanku.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Selesaikan \"Percepatan Bencana Alam\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "Ketika Turun Salju",
+			"voicelineType": "1204",
+			"description": "Salju sebenarnya merupakan salah satu mekanisme pembersihan alami air. Tapi aktivitas manusia cenderung mengurangi kemurnian salju, jadi janganlah mengonsumsinya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "Ketika Matahari Bersinar",
+			"voicelineType": "1205",
+			"description": "Kutemukan bahwa, uhm ... keindahan cerahnya sinar mentari paling bagusnya dinikmati dari dalam ruangan melalui jendela.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "Di Padang Pasir",
+			"voicelineType": "1206",
+			"description": "Aku merasa kalau kamu membawaku ke sini termasuk semacam upaya pembunuhan ....",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "Selamat Pagi",
+			"voicelineType": "1001",
+			"description": "Selamat pagi, mudah-mudahan harimu indah.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "Selamat Siang",
+			"voicelineType": "1002",
+			"description": "Ah, sudah lewat tengah hari. Kamu pasti sudah menantikan istirahat untuk minum teh atau kopi di sore hari? Aku tentu saja sama.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "Selamat Malam",
+			"voicelineType": "1003",
+			"description": "Selamat malam. Kuharap hari ini kamu tidak mengalami ketidaknyamanan apa pun.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "Selamat Tidur",
+			"voicelineType": "1004",
+			"description": "Selamat malam. Aku sangat suka gambar tentang perairan yang sangat tenang, dan di catatan ini pula kudoakan kamu tidur dengan tenang dan nyenyak. Semoga mimpimu malam ini tidak terusik oleh gelombang tekanan batin.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "Tentang Neuvillette: Pengadilan",
+			"voicelineType": "2001",
+			"description": "Aku bukan penggemar berat pengadilan. Aku memimpin jalannya pengadilan hanya untuk menunaikan kewajibanku karena ini adalah tugas yang telah dipercayakan padaku.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "Tentang Neuvillette: Naga Air yang Menangis",
+			"voicelineType": "2005",
+			"description": "Jadi, kamu pernah mendengar legenda lokal itu juga? Huh, kamu tahu dari mana? Atau lebih tepatnya, siapa yang menyebarkannya pertama kali ... Yah, sudahlah. Kurasa Naga Air tidak akan \"menangis\". Menurutku dia hanya merasa sedikit tersentuh saat dia merasakan air mata yang telah tertumpahkan di tanah ini, beserta seluruh emosi yang melingkupinya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "Tentang Neuvillette: Makna Pengadilan",
+			"voicelineType": "2006",
+			"description": "Ini adalah topik yang sudah dibahas ad nauseum. Aku bukan ingin merendahkan manusia, tetapi jelas sekali bahwa masyarakat melihat keadilan, kesetaraan, ketidakberpihakan, dan hukum sebagai sesuatu yang berbeda, dan selamanya akan begitu. Permukaan air selalu rata, dan Archon Hydro terdahulu, Egeria, berharap untuk mencapai kesetaraan bagi semua dengan cara menghubungkan semua oleh cinta kasih. Penerusnya memilih untuk mengejar kesetaraan via hukum dan undang-undang. Pada akhirnya, kebijakan ini diselewengkan dengan \"mengadakan pengadilan hanya demi mengadakan pengadilan\". Tapi ada sebab untuk segala akibat, dan aku sebaiknya tidak mengkritik.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "Tentang Kita: Saksi",
+			"voicelineType": "2003",
+			"description": "Karena kamu berasal dari luar kubah cakrawala, aku ingin mengundangmu menjadi saksi di persidangan dunia yang kacau ini. \"Alam yang seharusnya menjadi milik Bapa Yang Mahakuasa kini dikuasai oleh barisan burung pegar. Kekacauan melanda dunia ini, dan aku terlahir untuk memulihkan segalanya\".",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "Tentang Kita: Dunia Manusia",
+			"voicelineType": "2002",
+			"description": "Hidup bersama warga Fontaine serta mengembara bersamamu telah mengubah pandangan hidupku. Selain itu, aku telah sejak dulu mengampuni dosa-dosa manusia, dan aku berjanji ke depannya tidak akan ada penghakiman yang akan melukai orang biasa. Tetapi urusanku dengan para perampas kuasa masih belum selesai ... hutang darah harus dibayar dengan darah.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "Tentang Vision: I",
+			"voicelineType": "3001",
+			"description": "Aku pernah disarankan untuk memakai Vision palsu supaya lebih mudah melakukan intervensi di waktu-waktu krisis. Sejujurnya, aku tidak tergiur oleh saran ini, atau oleh kesimpulan bahwa seseorang hanya bisa menggunakan kekuatan yang menjadi haknya dengan kepura-puraan. Namun setelah menghabiskan banyak waktu bergaul di antara manusia pemilik Vision, aku bisa memahami bahwa keinginan dan kemauan mereka begitu berharga.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Percepatan Bencana Alam\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "Tentang Vision: II",
+			"voicelineType": "3006",
+			"description": "Maaf? Maksudmu bahkan beberapa anggota The Seven pun memakai Vision palsu sebelum berbaur dengan rakyatnya? Heh ... Maaf — aku baru saja terkejut oleh konyolnya hal itu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Percepatan Bencana Alam\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "Berbagi Cerita: Hukum",
+			"voicelineType": "3002",
+			"description": "Fontaine memang punya beberapa undang-undang yang agak menarik. Misalnya, \"dilarang melepaskan benda terbang apa pun selama tiga hari pertama setiap bulannya\", \"selama musim kemarau, semua kerang-kerangan yang terdampar di pantai adalah milik Archon Hydro, sementara moluska lainnya milik manusia\", \"tidak boleh ada hewan peliharaan domestik yang diberikan nama Furina,\" \"saus tomat di restoran hanya boleh dipakai sebagai bumbu, tidak boleh digado\", dan \"Melusine harus disapa menggunakan kata ganti orang, tidak boleh kata ganti benda\"... Yang terakhir itu kontribusiku pribadi.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "Berbagi Cerita: Hari Hujan",
+			"voicelineType": "3005",
+			"description": "Suatu hari, pikiranku mengembara, dan aku membayangkan sedang berjalan di tengah hujan ... *huff* Ah, tenang, tenang ... fantasiku tidak akan mengalihkanku dari pekerjaan.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "Kisah Menarik: Vishap",
+			"voicelineType": "3003",
+			"description": "Nenek moyang Vishap dapat ditelusuri kembali secara langsung ke Fontemer, itulah alasan mereka sangat mahir dalam berevolusi. Aku teringat akan sebuah kebiasaan lama yang pernah para naga lakukan: kami akan meminum darah kerabat kami yang mati muda. Setiap kali pasang surut air laut bergerak oleh pergeseran bulan dan bintang, air dalam tubuh organisme Hydro seperti kami akan melonjak naik menuju kepala, mengingatkan kami bahwa kerabat yang telah gugur itu akan segera bangkit kembali.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Selesaikan \"Percepatan Bencana Alam\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "Kisah Menarik: Manusia",
+			"voicelineType": "3004",
+			"description": "Berdasarkan pengamatanku, manusia cenderung memandang dirinya bertentangan dengan alam. Dan setiap kali poin ini muncul ke permukaan, akan selalu ada orang yang langsung menanggapinya dengan menyatakan bahwa manusia sebenarnya juga merupakan bagian dari alam, sama seperti organisme lainnya. Namun bagi seseorang yang hanya mengetahui sedikit kebenaran sepertiku, hal yang paling bermanfaat kiranya adalah jika peradaban manusia dan alam di dunia ini dapat menemukan cara hidup berdampingan satu sama lain.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "Tentang Archon Geo",
+			"voicelineType": "4001",
+			"description": "Tidak ada yang dapat mencegahku untuk menghakimi para dewa. Deus Auri, Archon yang berkuasa atas Geo, akan diadili. Jika tidak ingin melihat aku dan dia berdiri berseberangan, tenang, karena aku akan terus diam di Fontaine selama waktu yang diperlukan, mungkin sampai empat ratus tahun ke depan. Juga jangan khawatir, karena ketika pengadilan itu terjadi pun, belum tentu putusannya akan berakhir dengan konfrontasi fisik.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "Tentang Archon Anemo",
+			"voicelineType": "4002",
+			"description": "Kewajibanku untuk menghakimi para dewa akan dipenuhi, meski langit runtuh dan bumi terbelah sekali pun. Sebagai Archon yang berkuasa atas Anemo, Dewa Angin dan Pengharapan juga harus diadili. Ah? Dia menghabiskan waktunya sebagai ... pemabuk tidak berguna? Yah, aku harus bertemu dirinya langsung terlebih dahulu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "Tentang Archon Electro",
+			"voicelineType": "4003",
+			"description": "Sebagai keturunan naga yang telah mendapatkan kembali seluruh kekuatannya, aku harus menepati sumpah dan menjalankan kewajibanku untuk mengembalikan semua air di lautan ke langit. Narukami telah menjadi perampas karena merebut kekuasaan atas Electro. Oh, dia mengurung diri di Plane of Euthymia, dan jarang muncul di depan umum? Baiklah, nanti saja aku ke sananya. Tunggu beberapa abad lagi.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "Tentang Archon Dendro",
+			"voicelineType": "4004",
+			"description": "Akan tiba hari ketika penghakiman harus dijatuhkan ke atasnya, namun rasa tanggung jawab Dewa dari Segala Yang Hijau patut dihargai. Hampir tidak ada hal yang tak bercacat cela di dunia, namun pengabdian dan welas asihnya adalah saksi kesungguhannya untuk kemajuan umat. Aku sangat menyesali perlakuan yang harus dia terima selama lima ratus tahun terakhir ini.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "Tentang Wriothesley",
+			"voicelineType": "4005",
+			"description": "Wriothesley adalah laki-laki terpercaya. Aku berjuang keras demi gelar dan reputasi yang dimilikinya sekarang. Aku tebak kamu berpikir bahwa aku telah tertipu oleh sanjungan dan penampilan kesetiaannya ... Tapi tunggu dulu, aku mau mengutip pepatah orang Inazuma: \"Kata-kata yang tak terucapkan adalah bunga.\" Artinya, beberapa hal memang sebaiknya tidak perlu diungkapkan.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "Tentang Clorinde",
+			"voicelineType": "4006",
+			"description": "Keahlian Clorinde yang tak tertandingi menjadikannya Petarung Juara terkuat di bangsa kami. Sebagai penerus Marechaussee Hunter yang terdahulu, dia berperan penting dalam menjamin keadilan dan kenetralan dalam ruang pengadilan. Selain itu, dia juga sedikit lebih manusiawi daripada penampilannya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "Tentang Lyney dan Lynette",
+			"voicelineType": "4007",
+			"description": "Menarik sekali bukan penampilan mereka? Mereka menarikmu ke dalam dunia magis di mana: pada satu sisi, segala sesuatu yang terjadi merupakan bagian dari penipuan yang rumit — namun di sisi lain, segala macam keajaiban mungkin saja terjadi selama kamu sudi mempercayainya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "Tentang Sigewinne",
+			"voicelineType": "4008",
+			"description": "Entah bagaimanakah nasib Sigewinne belakangan ini. Tapi kalau sampai aku mendengar desas-desus ada orang yang mengintimidasinya, aku pasti akan memanggil Wriothesley ke sini dan meminta penjelasan darinya. Perempuan itu sangat baik namun juga rentan ... Dia membawakanku beberapa film Kamera saat terakhir kali dia berkunjung, dan memintaku untuk berkomentar lebih banyak tentang air dari Natlan ... Berapa lama sampai nanti dia liburan lagi?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "Tentang Furina",
+			"voicelineType": "4009",
+			"description": "Kini tirai penanda akhir \"sandiwara\" telah diturunkan. Peran adalah buah alam khayalan, namun Furina mengandalkannya untuk menunaikan tugas. Mereka yang berhati lemah akan mengandalkan kegilaan untuk menguatkan hati, dan segala beban yang dibawanya selama bertahun-tahun ini bergantung kepada keyakinannya tersebut.\nJika ada kesempatan, bersorak-sorailah, berikanlah tepuk tangan yang paling meriah ... ya, ketika kesempatan itu tiba.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Penyamaran Sang Pendosa\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "Tentang Navia",
+			"voicelineType": "4010",
+			"description": "Dengan menyesal kukatakan bahwa melalui beberapa interaksiku dengannya — seperti saat aku tidak sengaja membuatnya marah, saat aku menerima permintaan maafnya — dan bahkan saat ini, terlepas dari rasa bersalah yang terus kurasakan atas apa yang terjadi pada ayahnya, aku merasa ... begitu jauh darinya, seolah-olah diriku sedang mengamati langit berbintang dari dasar danau yang dalam. Aku sama sekali tidak sengaja, namun aku juga paham kalau hal itu bukanlah sesuatu yang dapat dengan mudahnya kutebus. Berbeda dengan air, emosi hanya bisa mereda perlahan setelah ia bergolak, cenderung sulit pula kembali menuju titik keseimbangan secara alami.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Selesaikan \"Bagai Rintik Hujan, Turun Tanpa Sebab\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "Mengenal Neuvillette: I",
+			"voicelineType": "5001",
+			"description": "Aku biasanya akan melakukan segala upaya untuk menghindari interaksi personal, bahkan termasuk berkolaborasi dengan orang lain di luar prosedur yang sudah ditetapkan. Tapi kamu sudah menunjukkan bahwa kamu layak dipercaya dan tidak punya masalah apa pun dengan faksi lokal Fontaine. Karena itu, senang bisa melakukan perjalanan denganmu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "Mengenal Neuvillette: II",
+			"voicelineType": "5002",
+			"description": "Pernyataan ini hanya bisa kunyatakan secara personal — mustahil kunyatakan pandangan terkait hal ini di tempat umum: aku benar-benar tercengang Fonta bisa menjadi minuman yang sangat populer. Meskipun begitu, menurutku mudah saja memahami daya tariknya untuk orang-orang: orang dapat merehidrasi tubuhnya sambil menyuplai kembali kandungan gula darahnya dalam sekali teguk, dengan harga yang sangat murah pula.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "Mengenal Neuvillette: III",
+			"voicelineType": "5003",
+			"description": "Belakangan ini aku baru pergi menonton opera. Isinya bercerita tentang seorang wanita yang sudah meninggal, namun dengan daya tarik dan skema manipulatifnya, dia berhasil terus mendominasi segala sesuatu terkait rumah mewah tempat tinggalnya dulu layaknya hantu yang menolak untuk diusir. Aktingnya sempurna, ceritanya pun luar biasa. Cerita itu mengingatkanku juga pada keadaan dunia nyata saat ini.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "Mengenal Neuvillette: IV",
+			"voicelineType": "5004",
+			"description": "Karena berbagai alasan, jarang sekali aku pergi meninggalkan Fontaine. Karena itu, walaupun aku senang mencicipi mata air dari seluruh dunia, tapi aku selalu mendapatkannya dari kiriman, dan bukan secara langsung pergi mencicipinya sendiri. Dan betul, mau setipis apa pun perbedaan rasa antara sampel dari berbagai daerah, aku selalu mampu membedakannya dengan sempurna. Kamu masih meragukanku? Aku ini Iudex — mana mungkin berbohong.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "Mengenal Neuvillette: V",
+			"voicelineType": "5005",
+			"description": "Harus kutegaskan kalau kehidupan sehari-hariku tidaklah terlepas dari ketidaknyamanan. Sebagai contoh, sering terjadi padaku: jubah terinjak saat aku mau duduk, atau potongan rambut yang tertekan ke kursi. Termasuk saat aku menyandarkan kepala terlalu jauh ke belakang, terkadang rambutku malah tersangkut ornamen kursinya. Namun dengan begitu, aku tetap harus mengenakan pakaian ini demi martabat seorang Hakim Agung, dan harus rela dalam menanggung segala ketidaknyamanan yang ditimbulkannya. Dan kebetulan, dunia pada umumnya pun tampak berlaku sesuai prinsip universal ini. Setiap orang dihadapkan pada identitas yang harus mereka terima, tanggung, dan pahami, untuk pada akhirnya dapat hidup berdampingan bersamanya. Inilah pengalamanku selama ini.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "Hobi Neuvillette",
+			"voicelineType": "6001",
+			"description": "Mencicipi air adalah sebuah keilmuan yang cukup canggih. Air yang dipanaskan menggunakan Pyro menghasilkan rasa \"termurni\" standar yang bisa ditemukan di mana pun di alam ini, sedangkan air yang direbus menggunakan arang beraroma khas pedesaan. Demikian pula, meskipun air yang didinginkan menggunakan Cryo itu dingin dan biasa-biasa saja, tapi sungai beku Snezhnaya menghasilkan air dengan cita rasa yang berbeda seutuhnya saat mencair.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "Kekhawatiran Neuvillette",
+			"voicelineType": "6012",
+			"description": "Orang-orang sepertinya menyikapi adegan seorang pria tak berpayung di tengah hujan seakan-akan menjadi tontonan yang aneh.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Persahabatan Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "Makanan Favorit",
+			"voicelineType": "6003",
+			"description": "Hewan sanggup bertahan hidup selama beberapa minggu tanpa makanan, tapi hanya sanggup bertahan beberapa hari saja tanpa air. Tidak ada makanan yang bisa menandingi Pure Water tanpa campuran apa pun. Karena itu, makanan yang mengandung banyak cairan adalah pilihan terbaik kedua.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "Makanan yang Tidak Disukai",
+			"voicelineType": "6004",
+			"description": "Aku heran kok bisa orang mengonsumsi makanan gorengan? Atau makanan panggang tanpa saus? Menurut pandanganku, Charcoal-Baked Ajilenakh Cake adalah contoh terburuk. Memangnya, memasukkan bahan pengering ke perut itu tidak akan apa-apa?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "Menerima Hadiah: I",
+			"voicelineType": "6007",
+			"description": "Lezat. Kandungan cairannya melimpah, bahan-bahannya pun sudah dimasak sempurna.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "Menerima Hadiah: II",
+			"voicelineType": "6008",
+			"description": "Upayanya memang sudah bagus. Aku cuma punya satu saran — tingkatkan kandungan cairannya dan kurangi kadar lemaknya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "Menerima Hadiah: III",
+			"voicelineType": "6009",
+			"description": "Terlalu kering. Hidangan tanpa kelembapan tidak akan berhasil dalam menyampaikan niat kokinya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "Ulang Tahun",
+			"voicelineType": "7001",
+			"description": "Ah, jadi ini hari ulang tahunmu ya. Selamat ulang tahun. Entah hari ini akan turun hujan atau tidak, tapi coba kupikirkan apa yang bisa kulakukan.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "Perasaan Tentang Ascension: Permulaan",
+			"voicelineType": "8001",
+			"description": "Aku sudah sedikit lebih akrab denganmu sekarang. Aku bisa bergerak seiring dengan gerakanmu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "Perasaan Tentang Ascension: Persiapan",
+			"voicelineType": "8002",
+			"description": "Ternyata aku harus mengerahkan kemampuanku yang sebenarnya lebih banyak lagi. Aku tidak sadar kalau kamu cenderung berada dalam situasi yang berbahaya.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "Perasaan Tentang Ascension: Klimaks",
+			"voicelineType": "8003",
+			"description": "Jadi inikah kemampuanmu yang sebenarnya? Kalau iya berarti aku harus sungguh-sungguh supaya bisa menandingimu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "Perasaan Tentang Ascension: Konklusi",
+			"voicelineType": "8004",
+			"description": "Kini setelah aku merebut kembali salah satu Tujuh Otoritas dari tangan para tiran, aku berhasil mendapatkan kembali wujud asliku. Kini aku adalah naga yang sudah matang seutuhnya, cukup kuat untuk menghakimi para dewa lainnya. Takdir terakhirku adalah untuk menghakimi Raja Tiran di atas langit sana. Namun sebelum saatnya tiba, aku akan meminjamkan kekuatanku padamu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Terbuka saat Ascension tahap 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "Diam!",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Tunduk.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Tenang.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Air pasang.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "Disucikan.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "Elemental Burst: III",
+			"voicelineType": "200003",
+			"description": "Yang tinggi akan direndahkan.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "Membuka Peti Harta: I",
+			"voicelineType": "300001",
+			"description": "Properti tak bertuan adalah milik penemunya. Secara legal, ini sudah jadi milikmu.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "Membuka Peti Harta: II",
+			"voicelineType": "300002",
+			"description": "Apa ini yang kamu cari? Semoga kesenangan saat membuka peti bisa menjadikannya sebuah pengalaman berharga.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "Membuka Peti Harta: III",
+			"voicelineType": "300003",
+			"description": "Catat, aku telah bersedia menghibahkan semua yang ada di dalam kepada dirimu.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "HP Rendah: I",
+			"voicelineType": "410001",
+			"description": "Jangan gentar, aku baik-baik saja.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "HP Rendah: II",
+			"voicelineType": "410002",
+			"description": "Risiko meningkat, tapi tidak sampai mengancam.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "HP Rendah: III",
+			"voicelineType": "410003",
+			"description": "Hmm, jubahku sobek.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "HP Rekan Rendah: I",
+			"voicelineType": "400001",
+			"description": "Biar aku yang turun.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "HP Rekan Rendah: II",
+			"voicelineType": "400002",
+			"description": "Istirahatlah.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "Gugur: I",
+			"voicelineType": "500001",
+			"description": "Aku akan kembali bersama air pasang ....",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "Gugur: II",
+			"voicelineType": "500002",
+			"description": "Air hangat dari zaman dahulu ... kala ....",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "Gugur: III",
+			"voicelineType": "500003",
+			"description": "Kesunyian melanda ....",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "Menerima Serangan Hebat: I",
+			"voicelineType": "910001",
+			"description": "Keadilan telah ditusuk.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "Menerima Serangan Hebat: II",
+			"voicelineType": "910002",
+			"description": "Aku lengah.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "Bergabung ke Party: I",
+			"voicelineType": "600001",
+			"description": "Terima kasih karena telah mengizinkan ... salah, karena telah mengundang aku bergabung.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "Bergabung ke Party: II",
+			"voicelineType": "600002",
+			"description": "Dengan senang hati.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "Bergabung ke Party: III",
+			"voicelineType": "600003",
+			"description": "Mari kita berjalan di tepi air, atau di mana pun yang ada airnya.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

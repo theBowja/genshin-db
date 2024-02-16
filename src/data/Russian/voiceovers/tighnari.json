@@ -1,0 +1,808 @@
+{
+	"id": 10000069,
+	"name": "Tighnari",
+	"friendLines": [
+		{
+			"voicelineId": 69000,
+			"title": "Привет...",
+			"voicelineType": "1000",
+			"description": "Привет! Меня зовут Тигнари, я страж леса Авидья, отвечаю за сохранение естественной среды тропического леса и безопасность людей в лесу. Если ты здесь впервые, советую прежде всего внимательно прочесть «Руководство по выживанию в лесу Авидья» и обратить особое внимание на главу «Как отличить съедобные грибы от ядовитых».",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_draw_appear"
+		},
+		{
+			"voicelineId": 69001,
+			"title": "Поболтаем: Закладки из листьев",
+			"voicelineType": "1101",
+			"description": "Если взять зелёный лист и просто придавить его сухими страницами, получится красивая и удобная закладка.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_character_idle_01"
+		},
+		{
+			"voicelineId": 69002,
+			"title": "Поболтаем: Ошибки",
+			"voicelineType": "1102",
+			"description": "Не нужно бояться ошибок, без них ничему не научишься.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_character_idle_02"
+		},
+		{
+			"voicelineId": 69003,
+			"title": "Поболтаем: Ценность знаний",
+			"voicelineType": "1103",
+			"description": "Ценность знаний невозможно измерить морой.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_character_idle_03"
+		},
+		{
+			"voicelineId": 69004,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Я к такой погоде привык, а тебе лучше спрятаться под зонт.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 69005,
+			"title": "После дождя...",
+			"voicelineType": "1202",
+			"description": "Я натираю хвост специальным эфирным маслом с защитой от влаги. Отряхнул немного, и он снова сухой!",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 69006,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1203",
+			"description": "Ничего себе, какой гром! Ох... Даже голова разболелась.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_weather_thunder_01"
+		},
+		{
+			"voicelineId": 69007,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1204",
+			"description": "Это бывает так редко! Ой, тебе холодно? Если хочешь, можешь погреть руки у меня в хвосте.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_weather_snowy_01"
+		},
+		{
+			"voicelineId": 69008,
+			"title": "Когда дует сильный ветер...",
+			"voicelineType": "1205",
+			"description": "Мои уши!.. Того и гляди вывернутся наизнанку!",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_weather_gale_01"
+		},
+		{
+			"voicelineId": 69009,
+			"title": "В пустыне...",
+			"voicelineType": "1206",
+			"description": "Ну и жара... Под таким солнцем растают даже туманные цветки... Хотя... Ничего им не будет, аха-ха-ха... Ох...",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_weather_heat_01"
+		},
+		{
+			"voicelineId": 69010,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Слышишь? Это капля росы сорвалась с листка.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 69011,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "После обеда я люблю забраться на дерево и наблюдать, как солнце играет на зелёных листьях. Иногда так засмотришься, что даже уснёшь. Хе-хе.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 69012,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Добрый вечер. Я иду понаблюдать за лесом при свете луны. Пойдём вместе?",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 69013,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Ложись спать, а я пока подежурю. Заодно заполню журнал патрулирования.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 69014,
+			"title": "О Тигнари: Профессия",
+			"voicelineType": "2001",
+			"description": "Я учился в даршане Амурта, специализировался на ботанике. Наставник хотел, чтобы после выпуска я остался в Академии преподавать, но, если честно, мне требуется чуть более свободная среда для исследований. И ещё я не разделяю некоторые принципы, которых придерживаются учёные Академии. Хорошо, что наставник не стал меня уговаривать... Хотя я бы всё равно его не послушал.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_idle"
+		},
+		{
+			"voicelineId": 69015,
+			"title": "О Тигнари: Род",
+			"voicelineType": "2005",
+			"description": "Многие считают мой народ замкнутым и нелюдимым, и это представление появилось не на пустом месте. Нас на самом деле очень мало, и каждый второй - учёный, мы постоянно заняты своими исследованиями. Бывает, что за целый год даже хвостами друг другу не помашем. Например, папа у меня - энтомолог, последнее время он живёт в пустыне, изучает эволюционные процессы жуков. Ну не буду же я путаться у него под ногами. Стыдно признаться, но я плохо переношу палящее солнце. У меня от него все мысли плавятся.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69016,
+			"title": "О нас: Узнать друг друга",
+			"voicelineType": "2003",
+			"description": "Мне кажется, лучший способ узнать друг друга - провести вместе достаточно времени, а всё остальное - ерунда. Поэтому не пытайся сразу подать себя в выгодном свете, время всё расставит по своим местам.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_close"
+		},
+		{
+			"voicelineId": 69017,
+			"title": "О нас: Друзья",
+			"voicelineType": "2002",
+			"description": "Ты спрашиваешь, можем ли мы считаться друзьями? А что, тут нужно какое-то официальное подтверждение? Тогда давай скорее сюда своё «Удостоверение друга», я на нём распишусь.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69018,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Помню, в детстве я молился: если однажды мне посчастливится обрести Глаз Бога, пусть это будет Дендро. Тогда я ещё не интересовался никакими исследованиями, мне просто хотелось смастерить себе лестницу из лозы и забираться по ней на фруктовые деревья.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69019,
+			"title": "Давай поделимся: Аранары",
+			"voicelineType": "3002",
+			"description": "Я наслышан об этих существах, но сам никогда их не видел. Иногда из глубины леса доносятся какие-то шорохи, но когда я подхожу ближе, всё стихает. И к лучшему: значит, аранары умеют себя защитить. Не то что некоторые искатели приключений: встретят в лесу леопарда Авидьи и лезут к нему пообщаться.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_share_01"
+		},
+		{
+			"voicelineId": 69020,
+			"title": "Давай поделимся: Карката",
+			"voicelineType": "3005",
+			"description": "Не переживай о Каркате. Я поговорил с одним знакомым матрой. Сказал, что Карката - мой ассистент, теперь без моего разрешения его никто пальцем не тронет. Хм, вижу, тебя очень беспокоит его судьба. Может, возьмёшь пару курсов в даршане Спантамад? Тогда, если меня однажды не станет, ты сможешь о нём позаботиться.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Вопросы без ответов»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						1300303
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69021,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Знаешь, растения отлично умеют маскироваться. Одни мимикрируют под насекомых и птиц, чтобы отпугивать естественных врагов. Другие умеют приманивать опылителей. Третьи ведут себя как настоящие хищники: завлекают добычу запахом или сладкой пыльцой... Гм, да ведь так ведут себя не только растения.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_pref_gift_01"
+		},
+		{
+			"voicelineId": 69022,
+			"title": "О Коллеи...",
+			"voicelineType": "4001",
+			"description": "Когда она сюда попала, то не умела толком ни читать, ни писать. Но это не беда, она очень старается и хорошо учится, у неё быстрый прогресс. Правда, она задалась целью стать хорошим врачом, а до этого ей ещё далеко. Иногда она бывает очень строга к себе... Гм, помоги ей как-нибудь при случае? Прошу тебя как её наставник. Спасибо.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69023,
+			"title": "О Сайно: Генерал махаматра",
+			"voicelineType": "4002",
+			"description": "Хочешь увидеть Сайно? Скажу тебе так: не завидую тем, кого он преследует по служебной надобности. Махаматра - человек большой, просто так с ним не повидаешься. Но иногда он появляется в окрестностях Гандхарвы, чтобы издалека посмотреть на Коллеи. Он старается, чтобы его никто не видел, но я всё равно слышу его шаги.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69072,
+			"title": "О Сайно: Хороший вопрос",
+			"voicelineType": "4009",
+			"description": "После спасения моего наставника я отправил ему письмо, чтобы справиться о его здоровье. К моему удивлению, он ответил, что кто-то уже лично передал ему мои пожелания. А закончил он письмо вопросом: «Почему генерал махаматра сказал, что собирается использовать всю мощь Сумеру, чтобы восстановить репутацию мудрецов?»\n...Хороший вопрос. Действительно, почему?",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_cyno_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69024,
+			"title": "Об аль-Хайтаме...",
+			"voicelineType": "4003",
+			"description": "Будь с ним {F#осторожна}{M#осторожен}. Я не в том смысле, что он какой-то злодей, просто им всегда и во всём руководит рассудок, и обычному человеку порой непросто это принять. Если не веришь, спроси у его соседа - иногда аль-Хайтам так выводит его из себя, что он раздувается от злости, словно настоящий Анемо слайм.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69025,
+			"title": "О Кавехе...",
+			"voicelineType": "4004",
+			"description": "Кавех - известный архитектор Сумеру, его главное творение - великолепный Алькасар-сарай. Выполняя проект, Кавех даже обращался ко мне за консультацией, просил порекомендовать подходящие декоративные растения. Но когда дворец был уже построен, Кавех почему-то оказался весь в долгах. Теперь аль-Хайтам приютил его у себя дома и помог с деньгами. Не знаю, к добру это или к худу...",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69026,
+			"title": "О Дори...",
+			"voicelineType": "4005",
+			"description": "Знаменитая госпожа Сангема-бай. В одном из исследований мне понадобился очень редкий материал, который можно было получить только через секретные каналы Дори, так мы и познакомились. Гм... Даже не спрашивай, что это был за материал и что за исследование.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69027,
+			"title": "О Лайле...",
+			"voicelineType": "4006",
+			"description": "Я слышал о ней. Знаменитая «Чудаковатая полуночница». Слухи о её лунатизме довольно абсурдные: нечеловеческая сила, ночной забег по деревне Аару, преодоление Стены Самиэль голыми руками... Некоторые даже говорят, что она во сне может написать работу в десять тысяч слов! Ну и небылицы.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_layla_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69028,
+			"title": "О Лизе...",
+			"voicelineType": "4007",
+			"description": "Сайно много о ней рассказывал. По его словам, Лиза - незаурядная личность. Образованная, талантливая - жаль, что она так скоро вернулась в Мондштадт. Может, «знания» повернулись к ней своей пугающей стороной?..",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69029,
+			"title": "О малой властительнице Кусанали...",
+			"voicelineType": "4008",
+			"description": "Однажды в Академии я услышал такую фразу: «История растений есть история царства Дендро». Возможно, сказавший эту фразу не имел в виду ничего особенного, но мне всегда казалось, что в ней сокрыт глубокий смысл. Если однажды я повстречаю малую властительницу Кусанали, она мне всё объяснит?",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69073,
+			"title": "О Дэхье...",
+			"voicelineType": "4010",
+			"description": "Всё так быстро случилось, что у меня совсем не было возможности её как следует поблагодарить. Это большая удача - иметь рядом такого способного и надёжного человека. Уверен, что многие пытались переманить её на свою сторону, но не похоже, чтобы Дэхью интересовала служба в Академии или Лесном дозоре. Так что я не буду напрашиваться на неизбежный отказ.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_dehya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69074,
+			"title": "О Фарузан...",
+			"voicelineType": "4011",
+			"description": "Профессор Фарузан обладает обширными познаниями. Я часто приглашаю её осмотреть разные механизмы в тропическом лесу... Надеюсь, во время следующего своего визита она не станет тайком подсовывать Коллеи разные угощения. Пища подобна лекарству, в питании главное - умеренность, а переедание ещё никому не шло на пользу.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69030,
+			"title": "Узнать больше о Тигнари I",
+			"voicelineType": "5001",
+			"description": "Ты уже {F#освоилась}{M#освоился} в тропическом лесу? Ни в коем случае не теряй бдительности, соблюдай правила безопасности и не стесняйся обращаться за помощью к Лесному дозору.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_friendship_01"
+		},
+		{
+			"voicelineId": 69031,
+			"title": "Узнать больше о Тигнари II",
+			"voicelineType": "5002",
+			"description": "Эх, иногда я даже завидую этим чудакам, которые ничегошеньки не знают, но всюду тянут свои руки и всё тащат в рот. Наверное, их мир полон разных «чудес», да?",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69032,
+			"title": "Узнать больше о Тигнари III",
+			"voicelineType": "5003",
+			"description": "Как командир Лесного дозора время от времени я читаю своим подчинённым лекции. Если вдуматься, эти лекции нарушают запрет Академии на «распространение знаний», но что они мне сделают? Давайте, посадите меня под замок, посмотрим, справится ли Бимарстан с притоком новых больных, страдающих от странных недугов.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69033,
+			"title": "Узнать больше о Тигнари IV",
+			"voicelineType": "5004",
+			"description": "Скажу тебе по секрету: я обожаю Большой базар. Бойкие торговцы, весёлая толпа, сцена с артистами и музыкантами. Жаль только, что мои уши плохо выносят весь этот шум. А? Ты будешь ходить за мной и прикрывать мне уши? Ха-ха, так нам будет не слишком удобно идти. Но всё равно, спасибо за предложение!",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69034,
+			"title": "Узнать больше о Тигнари V",
+			"voicelineType": "5005",
+			"description": "Когда я был маленьким, мне постоянно снились прекрасные и удивительные сны, но однажды я вырос, и сны навсегда исчезли, даже в памяти их не отыскать. Ты ещё видишь сны? Расскажи, что тебе снится?",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69035,
+			"title": "Хобби Тигнари...",
+			"voicelineType": "6001",
+			"description": "В лесу Авидья часто можно увидеть опавшие листья или цветы, многие ещё совсем целые. Мне жаль оставлять их лежать на земле, и я собираю гербарий. Во-первых, гербарий - отличный учебный инструмент для подготовки дозорных. А ещё это просто красиво.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_pref_hobby"
+		},
+		{
+			"voicelineId": 69036,
+			"title": "Беспокойство Тигнари...",
+			"voicelineType": "6002",
+			"description": "Беспокойство? Гм, дай-ка подумать... Загрязнение в лесу Авидья, искатели приключений, которые постоянно попадают в разные истории, собаки-спасатели, которые норовят вцепиться мне в хвост... Но это всё мелочи. А настоящих поводов для беспокойства у меня нет. Если так посмотреть, жизнь у лесных стражей довольно простая.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69037,
+			"title": "Любимая еда...",
+			"voicelineType": "6005",
+			"description": "Странно, хотя в моих жилах течёт кровь плотоядного существа, но больше всего на свете я люблю грибы. Существует огромное множество съедобных грибов, их можно есть свежими и сухими. Ни на что не променяю этот аромат... А вкусом грибы затмевают даже тушёное мясо.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 69038,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Чувствительное обоняние не даёт мне наслаждаться слишком пряными блюдами. Эх, в Сумеру я многое теряю.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_pref_foodDislike"
+		},
+		{
+			"voicelineId": 69039,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Превосходные ингредиенты, сдобренные изысканными приправами. Словом, так вкусно, что пальчики оближешь!",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_spice_pref_01"
+		},
+		{
+			"voicelineId": 69040,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Интересное сочетание. Можешь написать мне рецепт? Включу его в меню угощений на следующем застолье нашего отряда.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_spice_normal_01"
+		},
+		{
+			"voicelineId": 69041,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "...Может, научить тебя каким-нибудь новым рецептам?",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_spice_dislike_01"
+		},
+		{
+			"voicelineId": 69042,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "С днём рождения! Я решил подарить тебе бонсай, который как раз расцвёл, к нему прилагается руководство по уходу. Если с ним вдруг что-то случится, не стесняйся просить помощи, на этот бонсай распространяется «Пожизненное обслуживание от Лесного дозора».\nЗнаешь, к твоему дню рождения распустилось столько цветов, я долго не мог выбрать. В следующем году подарю какой-нибудь другой!",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 69043,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Семена прорастают и пускают корни.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69044,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Ростки тянутся к солнцу, появляются первые листья.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69045,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Почки набухают, и распускаются цветы.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 69046,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Плоды с каждым днём тяжелеют.",
+			"voicefile": "VO_friendship/VO_tighnari/vo_tighnari_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 69047,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Деревья заслоняют лес.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_skill1_01"
+		},
+		{
+			"voicelineId": 69048,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Фокус!",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_skill1_02"
+		},
+		{
+			"voicelineId": 69049,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Что, ничего не видно?",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_skill1_03"
+		},
+		{
+			"voicelineId": 69050,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Вырвать корни!",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_skill3_01"
+		},
+		{
+			"voicelineId": 69051,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Обрубить все ветки!",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_skill3_02"
+		},
+		{
+			"voicelineId": 69052,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Я слышу всё!",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_skill3_03"
+		},
+		{
+			"voicelineId": 69053,
+			"title": "Начало спринта I",
+			"voicelineType": "700001",
+			"description": "Не отставай.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 69054,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Откуда здесь сундук?",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_chest_open_01"
+		},
+		{
+			"voicelineId": 69055,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Наверное, можно не обращаться в бюро находок.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_chest_open_02"
+		},
+		{
+			"voicelineId": 69056,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Приятный запах.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_chest_open_03"
+		},
+		{
+			"voicelineId": 69057,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Ай, вот же...",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_less30_01"
+		},
+		{
+			"voicelineId": 69058,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Даже хвост распушился...",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_less30_02"
+		},
+		{
+			"voicelineId": 69059,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Пора выполоть эти сорняки.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_less30_03"
+		},
+		{
+			"voicelineId": 69060,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Здесь нужен врач.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 69061,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "На кону твоя жизнь.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 69062,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Опавшие листья... Вернутся к корням...",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_die_01"
+		},
+		{
+			"voicelineId": 69063,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Мои исследования...",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_die_02"
+		},
+		{
+			"voicelineId": 69064,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Я не увидел, как распускаются цветы...",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_life_die_03"
+		},
+		{
+			"voicelineId": 69065,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900001",
+			"description": "Ох.",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 69066,
+			"title": "Получен лёгкий удар II",
+			"voicelineType": "900002",
+			"description": "И всё?",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 69067,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Да что ж такое!",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 69068,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Я тебя закопаю!",
+			"voicefile": "VO_gameplay/VO_tighnari/vo_tighnari_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 69069,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Я покажу дорогу.",
+			"voicefile": "VO_teamJoin/vo_tighnari_teamJoin_01"
+		},
+		{
+			"voicelineId": 69070,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Эй! Кто опять наелся ядовитых грибов?",
+			"voicefile": "VO_teamJoin/vo_tighnari_teamJoin_02"
+		},
+		{
+			"voicelineId": 69071,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Идём собирать новые образцы!",
+			"voicefile": "VO_teamJoin/vo_tighnari_teamJoin_03"
+		}
+	]
+}

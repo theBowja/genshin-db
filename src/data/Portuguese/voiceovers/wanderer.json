@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "Olá...",
+			"voicelineType": "1006",
+			"description": "Você quer que eu me apresente? Eu tive muitos nomes e títulos durante minha jornada. Apesar de todos eles serem eminentes demais para um mortal comum imaginar, isto já é coisa do passado para mim.\nMe chame do que quiser. Vamos lá, me mostre o que consegue pensar. Não me desaponte.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "Bate-papo - O Vento",
+			"voicelineType": "1101",
+			"description": "Não há tal coisa como pura liberdade neste mundo. Até o vento não sopra para sempre.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "Bate-papo - Maneira de Falar",
+			"voicelineType": "1102",
+			"description": "Você acha que tenho uma língua afiada? Eu só falo a verdade. Se alguém não consegue lidar com isso, talvez seja problema deles.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "Bate-papo - Elogios",
+			"voicelineType": "1103",
+			"description": "Não há razão para troca de gentilezas. É muito patético forçar uma conversa apenas para fugir do silêncio.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "Quando está chovendo...",
+			"voicelineType": "1201",
+			"description": "Você quer usar meu chapéu como guarda-chuva? Hmph, a audácia de sequer fazer esse pedido...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "Depois da Chuva...",
+			"voicelineType": "1202",
+			"description": "Você está feliz assim só de ver o sol novamente? Que infantil.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "Quando Está Trovejando...",
+			"voicelineType": "1203",
+			"description": "Tsc.. Que irritante.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "Quando Está Nevando...",
+			"voicelineType": "1204",
+			"description": "Fundamentalmente, há pouca diferença entre neve e chuva, mesmo assim as pessoas derramam elogios sobre o primeiro... O destino pode realmente ser arbitrário.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "A Ventania Está Chegando...",
+			"voicelineType": "1205",
+			"description": "Uma brisa simples como essa... Até você pode imaginar, certo?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "Bom Dia...",
+			"voicelineType": "1001",
+			"description": "\"Hora de levantar, dorminhoc{M#o}{F#a}, já está ficando tarde!\"... Haha, não me diga que você realmente achou que eu te acordaria assim?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "Boa Tarde...",
+			"voicelineType": "1002",
+			"description": "Eu não necessito de comida. Me poupe do trabalho e cuide de si e dessa coisinha flutuando ao seu lado.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "Boa Noite...",
+			"voicelineType": "1003",
+			"description": "Finalmente esse dia entediante acabou.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "Boa Noite...",
+			"voicelineType": "1004",
+			"description": "O quê, não consegue cair no sono comigo por perto? Hehe.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#Sobre {REALNAME[ID(1)]} Marionete",
+			"voicelineType": "2001",
+			"description": "Uma marionete consumida por um fogo furioso deixará cinzas para trás. Quanto ao que surgirá delas...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#Sobre {REALNAME[ID(1)]} Coração",
+			"voicelineType": "2005",
+			"description": "Eu deixarei esse tipo de coisa para o destino. Ficar obcecado com algo destinado a estar sempre fora do alcance é uma perda de tempo. Eu tenho coisas mais importantes para fazer no momento.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "Sobre Nós - Oponentes",
+			"voicelineType": "2003",
+			"description": "Então, você ainda está sofrendo de ansiedade sobre nossos encontros anteriores? Huh. Bem, o que você vai fazer sobre isso? Leve o tempo que precisar. Eu não estou com pressa.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "Sobre Nós - Companheiros",
+			"voicelineType": "2002",
+			"description": "Eu nunca serei um dos mocinhos. Estou aqui apenas pagando o que devo após o que você fez por mim.\nMas e você? Você não deveria elaborar desculpas para nossos encontros? Se um dos seus amigos pensar que você está colaborando com o inimigo, eles te deixarão.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "Sobre a Visão...",
+			"voicelineType": "3001",
+			"description": "Apesar da ideia de \"favoritismo divino\" me enojar um pouco, eu não serei exigente sobre uma nova fonte de poder. Você acha que há algum tipo de significado por trás do elemento Anemo? Hah, por que esse pensamento sequer ocorreu a você? Os deuses não são guiados por qualquer tipo de racionalidade ou bússola moral. Eu já não mostrei isso para você?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "Algo para compartilhar...",
+			"voicelineType": "3002",
+			"description": "Não tenho nada para dizer. Se quer perguntar algo, fale. Se a pergunta for interessante o bastante, talvez eu responda.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "Coisas interessantes...",
+			"voicelineType": "3003",
+			"description": "Olhe. Os pássaros estão exibindo suas plumas, os esquilos estão ocupados estocando comida, e os humanos estão trabalhando pelos seus sustentos. Realmente, animais simples não precisam de nada complexo para se sentirem realizados.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "Sobre a Lorde Menor Kusanali...",
+			"voicelineType": "4001",
+			"description": "Enquanto eu ainda possuía valor como um peão, ela pode ter tido outras razões para me manter vivo. É certamente possível que foi porque ela é sábia e benevolente, ou aconteceu de ver um pouco de solidão dentro de mim... Você acha que estou tentando pensar o pior dela? Hah, você esperava mesmo algo diferente? Em caso que tenha esquecido, eu não sou nenhum santo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "Sobre a Shogun Raiden...",
+			"voicelineType": "4002",
+			"description": "Negligenciar completamente o que ela mesma criou, e dizer que foi porque ela não conseguia intervir no meu destino...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "Sobre a Tsaritsa...",
+			"voicelineType": "4003",
+			"description": "Todos a elogiam por sua bondade e benevolência, mas se esquecem que amor também é uma forma de pecado. E se ela estivesse apenas tentando compensar por algo?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "Sobre Pierro...",
+			"voicelineType": "4004",
+			"description": "O Bobo da Corte é um sobrevivente de Khaenri'ah. Além deste único fato, eu sei muito pouco sobre ele, e nunca tive qualquer tipo de associação com ele. Mas ele parece querer algo de mim. No passado, ele me atribuiu muitas tarefas importantes, incluindo várias viagens ao Abismo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "Sobre Capitano...",
+			"voicelineType": "4005",
+			"description": "\"O sempre correto Capitano\", \"o bravo e destemido Capitano\", \"o quase invencível Capitano\"... Até meus ouvidos mecânicos precisam de manutenção após ouvir tantos elogios dos membros dos Fatui. Você não acha que destilar justiça absoluta é, na verdade, um perigo latente? E isso é sem considerar sua grande força pessoal.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "Sobre Dottore...",
+			"voicelineType": "4006",
+			"description": "É uma pena que a Lorde Menor Kusanali já o forçou a apagar tantos de seus segmentos. A alegria que eu teria de poder fatiá-los um a um...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "Sobre Columbina...",
+			"voicelineType": "4007",
+			"description": "Deixe-me perguntar: o que você faria se encontrasse uma \"donzela\" que é desatenta e inocente em qualquer momento, e despreocupada e insensível em qualquer situação? Se fosse eu, eu poderia pelo menos desafiá-la a uma luta. Mas se fosse você... com sua consciência, eu ficaria longe dela.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "Sobre Arlecchino...",
+			"voicelineType": "4008",
+			"description": "Um lobo em pele de cordeiro. Para exercer um controle maior sobre as pessoas, ela põe uma máscara de cordialidade e graça. A maioria das pessoas que veem sua forma louca e verdadeira acabaram... desaparecendo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "Sobre Pulcinella...",
+			"voicelineType": "4009",
+			"description": "Apenas alguém tapado como Childe pensaria que O Galo está voluntariamente cuidando dele e da família dele por causa do seu coração bondoso. Apesar de o prefeito de fato ter feito várias coisas para o benefício deles, qualquer um com um cérebro saberia que o significado por trás disso é \"toda a sua família está em minhas mãos\".",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "Sobre Sandrone...",
+			"voicelineType": "4010",
+			"description": "Ela tem uma personalidade terrível e não se importa com nada além da própria pesquisa. Mas mesmo com essa quantidade de dedicação, ela ainda produziu quantidades abundantes de lixo, e só pôde garantir uma posição inteira abaixo da minha. Que patético.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "Sobre o Magnata...",
+			"voicelineType": "4011",
+			"description": "Ah, o cara do nono lugar. Ele é obcecado com a ideia de \"troca justa\", ao ponto de querer derrubar o desequilíbrio natural entre deuses e humanos. Mas acho que isso é apenas a natureza dos mortais — é fácil para eles elaborarem ilusões sem sentido. Honestamente, não é nada que valha a pena, assim como não há nada impressionante sobre as habilidades ou escolha de parceiro dele. Hmph, qualquer um que escolha trabalhar próximo a Dottore certamente terá um fim desagradável.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "Sobre Childe...",
+			"voicelineType": "4012",
+			"description": "Ele tem uma mente simples e um corpo não tão forte. Nomeá-lo a posição mais baixa diminui o prestígio coletivo dos Mensageiros. Felizmente, eu não faço mais parte daquele grupo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "Sobre Signora...",
+			"voicelineType": "4013",
+			"description": "Nada sobrou das cinzas dela. Eu não tenho interesse naqueles que perderam seus futuros.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Conclua o enredo Onipresença Sobre os Mortais",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "Sobre Yae Miko...",
+			"voicelineType": "4014",
+			"description": "Um Youkai de fala mansa. Apesar de fingir se importar com humanos para ganhar o favor de sua deusa, tudo que ela busca são maneiras divertidas de passar o tempo.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Conclua o enredo Onipresença Sobre os Mortais",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "Sobre Kaedehara Kazuha...",
+			"voicelineType": "4015",
+			"description": "Você fala do descendente do Clã Kaedehara? Então ele não... Oh? Ele também possui uma Visão Anemo e até conseguiu enfrentar o Musou no Hitotachi da Shogun Raiden? Hehe... Ahahahaha!",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#Mais sobre {REALNAME[ID(1)]} I",
+			"voicelineType": "5001",
+			"description": "Você quer saber mais sobre mim? Que ridículo. Você não sabe que isso é apenas procurar problemas?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#Mais sobre {REALNAME[ID(1)]} II",
+			"voicelineType": "5002",
+			"description": "Ah, estou ciente que muitas, muitas pessoas me buscarão para acabar com problemas que tiveram contra mim no passado. Tudo bem por mim — eu enfrentarei a todos de frente. Você poderia até dizer que estou meio que ansioso por isso.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#Mais sobre {REALNAME[ID(1)]} III",
+			"voicelineType": "5003",
+			"description": "Uma vez eu pensei que a divinização me permitiria me libertar de todas as emoções sem propósito, mas eu já abandonei essa percepção. Raiva, seja para você ou outros, é muito conveniente e útil como ferramente.\nComo algumas pessoas nunca ficam raiva? Eu acho que é impossível até de imaginar. Elas não têm um único pedaço de maldade em seus corpos?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#Mais sobre {REALNAME[ID(1)]} IV",
+			"voicelineType": "5004",
+			"description": "Quando eu entrei na Irminsul, havia apenas um pensamento em minha mente: Eu queria nunca ter nascido.\nA Irminsul respondeu ao meu desejo, mas não me trouxe o resultado que desejei. O destino deste mundo não mudou nem um pouco no que diz respeito a pregar peças cruéis em seus prisioneiros.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#Mais sobre {REALNAME[ID(1)]} V",
+			"voicelineType": "5005",
+			"description": "Você e eu cruzamos caminhos no passado, mas nossas jornadas eventualmente divergirão. Quem sabe o que acontecerá depois? Vamos aguardar e ver.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando Amizade atingir Nv.6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Concluir a história \"Santuário Decrépito\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#Passatempos de {REALNAME[ID(1)]}",
+			"voicelineType": "6001",
+			"description": "Passatempos? Isso é para corpos estáticos com tempo livre para pensar em tais coisas. Parece que eu tenho interesse em tais distrações?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#Preocupações de {REALNAME[ID(1)]}",
+			"voicelineType": "6002",
+			"description": "Estou tentando descobrir uma maneira de me livrar de você para que eu possa ficar livre de cometer atrocidades... Espera, você achou que eu estava falando sério?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "Comida Favorita...",
+			"voicelineType": "6005",
+			"description": "Você tem um pouco de chá? Quanto mais amargo, melhor. Ele deixa o sabor residual mais fascinante.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "Comida que Odeia...",
+			"voicelineType": "6004",
+			"description": "Doces grudentos e gordurosos me fazem sentir como se meus dentes estivessem se fundindo. Pode ficar com eles.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "Recebendo Presentes - I",
+			"voicelineType": "6007",
+			"description": "Está tudo bem. Acho que essa é uma das poucas coisas que você faz bem.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "Recebendo Presentes - II",
+			"voicelineType": "6008",
+			"description": "Nada mal. Você fez algo realmente comestível.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "Recebendo Presentes - III",
+			"voicelineType": "6009",
+			"description": "Você quer me envenenar? Você é tão burr{M#o}{F#a} que se esqueceu que não sou humano?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "Aniversário...",
+			"voicelineType": "7001",
+			"description": "Me dê sua mão. Hehe, não há motivo para nervosismo. Eu só estou te levando até um mirante.\nO que acha? A paisagem aqui deve ser de tirar o fôlego. Não há razão para me agradecer — eu não vejo propósito nisso.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "Sentimentos sobre a Ascensão - Introdução",
+			"voicelineType": "8001",
+			"description": "... Eu posso ver muito esforço sendo empreendido.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando nível de Ascensão atingir Nv.1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "Sentimentos sobre a Ascensão - Desenvolvimento",
+			"voicelineType": "8002",
+			"description": "O vento está soprando nesta direção... O que você fez?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando nível de Ascensão atingir Nv.2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "Sentimentos sobre a Ascensão - Auge",
+			"voicelineType": "8003",
+			"description": "Você não se preocupa em emprestar seu poder a mim?... Tudo bem.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando nível de Ascensão atingir Nv.4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "Sentimentos sobre a Ascensão - Conclusão",
+			"voicelineType": "8004",
+			"description": "Apesar de eu conseguir ajudar você, me ver como um aliado ainda é uma atitude perigosa. Eu espero que entenda o que está fazendo. Se você ainda insistir em continuar nesse caminho, então fique atrás de mim.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueia quando nível de Ascensão atingir Nv.6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "Habilidade Elemental - I",
+			"voicelineType": "100001",
+			"description": "O vento aumenta!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "Habilidade Elemental - II",
+			"voicelineType": "100002",
+			"description": "Contemplem!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "Habilidade Elemental - III",
+			"voicelineType": "100003",
+			"description": "Tempestade e fúria!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "Supremo - I",
+			"voicelineType": "200001",
+			"description": "Insetos nojentos!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "Supremo - II",
+			"voicelineType": "200002",
+			"description": "Vermes miseráveis!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "Supremo - III",
+			"voicelineType": "200003",
+			"description": "Chorem mais!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "Supremo - IV",
+			"voicelineType": "200004",
+			"description": "Curvem-se!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "Supremo - V",
+			"voicelineType": "200005",
+			"description": "Coloquem-se nos seus lugares!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "Supremo - VI",
+			"voicelineType": "200006",
+			"description": "Você ousa olhar em minha direção?!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "Início da Corrida - I",
+			"voicelineType": "700001",
+			"description": "Expanda-se!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "Início da Corrida - II",
+			"voicelineType": "700002",
+			"description": "Sofra com a rajada!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "Início da Corrida - III",
+			"voicelineType": "700004",
+			"description": "... Que lentidão.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "Início da Corrida - IV",
+			"voicelineType": "700005",
+			"description": "Quem disse para seguir?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "Abrir Baú do Tesouro: I",
+			"voicelineType": "300001",
+			"description": "Desnecessário.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "Abrir Baú do Tesouro: II",
+			"voicelineType": "300002",
+			"description": "Hah, você quer mesmo isso?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "Abrir Baú do Tesouro: III",
+			"voicelineType": "300003",
+			"description": "Pegue e divirta-se.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "Vida Baixa - I",
+			"voicelineType": "410001",
+			"description": "Estou acostumado com isso.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "Vida Baixa - II",
+			"voicelineType": "410002",
+			"description": "Nada que valha ser mencionado.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "Aliado com Vida baixa: I",
+			"voicelineType": "400001",
+			"description": "Por que você está aqui?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "Aliado com Vida baixa: II",
+			"voicelineType": "400002",
+			"description": "Imprestável, como esperado.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "Derrotado - I",
+			"voicelineType": "500001",
+			"description": "Caindo... no abismo...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "Derrotado - II",
+			"voicelineType": "500002",
+			"description": "Tudo... era fútil...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "Derrotado - III",
+			"voicelineType": "500003",
+			"description": "O preço... dos meus pecados...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "Ataque Pesado Sofrido - I",
+			"voicelineType": "910001",
+			"description": "Isso é longe demais.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "Ataque Pesado Sofrido - II",
+			"voicelineType": "910002",
+			"description": "... Que divertido.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "Ataque Pesado Sofrido - III",
+			"voicelineType": "910003",
+			"description": "... Você está morto.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "Ataque Pesado Sofrido - IV",
+			"voicelineType": "910004",
+			"description": "Você implorará por misericórdia.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "Ataque Pesado Sofrido - V",
+			"voicelineType": "910005",
+			"description": "Prepare-se para sua punição.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "Entrando na Equipe - I",
+			"voicelineType": "600001",
+			"description": "Eu não esperava por isso... Por que você me chamou?",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "Entrando na Equipe - II",
+			"voicelineType": "600002",
+			"description": "É melhor que seja para algo importante.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "Entrando na Equipe - III",
+			"voicelineType": "600003",
+			"description": "Tem certeza que precisa ser eu?... Está bem, vamos acabar logo com isso.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

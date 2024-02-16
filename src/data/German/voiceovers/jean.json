@@ -1,0 +1,769 @@
+{
+	"id": 10000003,
+	"name": "Jean",
+	"friendLines": [
+		{
+			"voicelineId": 4100,
+			"title": "Schön, dich kennenzulernen.",
+			"voicelineType": "1000",
+			"description": "Löwenzahnritter Jean meldet sich zum Dienst. Von heute an gehört meine Ehre und Loyalität nur dir!",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_draw_appear"
+		},
+		{
+			"voicelineId": 4101,
+			"title": "Gespräch – Einsatz",
+			"voicelineType": "1101",
+			"description": "Jetzt komm schon! Wir sollten hier nicht verweilen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_01"
+		},
+		{
+			"voicelineId": 4102,
+			"title": "Gespräch – Ritterorden",
+			"voicelineType": "1102",
+			"description": "Mitglieder des Ritterordens ... habt ihr wirklich alle gewissenhaft gearbeitet?",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_02"
+		},
+		{
+			"voicelineId": 4103,
+			"title": "Gespräch – Ziel",
+			"voicelineType": "1103",
+			"description": "Weiter, auf zum nächsten Ziel!",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_03"
+		},
+		{
+			"voicelineId": 4104,
+			"title": "Wenn es regnet ...",
+			"voicelineType": "1201",
+			"description": "Regen kann mich nicht aufhalten.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 4105,
+			"title": "Es hat aufgehört zu regnen ...",
+			"voicelineType": "1202",
+			"description": "Dieses Wetter lädt gerade dazu ein, aktiv zu werden.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 4106,
+			"title": "Wenn es schneit ...",
+			"voicelineType": "1203",
+			"description": "Es schneit, achte auf gutes Schuhwerk.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_snowy_01"
+		},
+		{
+			"voicelineId": 4107,
+			"title": "Wenn es windig ist ...",
+			"voicelineType": "1204",
+			"description": "Angenehmes Wetter heute.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_breezy_01"
+		},
+		{
+			"voicelineId": 4108,
+			"title": "Ein Sturm zieht auf.",
+			"voicelineType": "1205",
+			"description": "Der Legende nach gab es an jenem Tag auch starken Wind ...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_gale_01"
+		},
+		{
+			"voicelineId": 4109,
+			"title": "Guten Morgen.",
+			"voicelineType": "1001",
+			"description": "Ein guter Tag hängt ganz vom Morgen ab. Heute strengen wir uns auch wieder an.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 4110,
+			"title": "Guten Tag.",
+			"voicelineType": "1002",
+			"description": "Gut, dann wollen wir mal mit der Arbeit beginnen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 4111,
+			"title": "Guten Abend.",
+			"voicelineType": "1003",
+			"description": "Es sieht so aus, als ob Kaffee schon nicht mehr wirken würde. Frag einfach Lisa, wenn du Alternativen suchst.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 4112,
+			"title": "Gute Nacht.",
+			"voicelineType": "1004",
+			"description": "Das heutige Training ist hiermit beendet. Das hast du wirklich gut gemacht! Jetzt ruh dich erstmal aus.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 4113,
+			"title": "Über Jean ...",
+			"voicelineType": "2001",
+			"description": "Um die Bevölkerung zu schützen, musste ich heute fünf Ruinenwächter in Stücke hacken. Ich muss härter arbeiten und daran denken ... solch wertvolle Stücke und Kulturgut nicht einfach zu zerstören. Das nächste Mal muss ich einen anderen Weg finden ...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_idle"
+		},
+		{
+			"voicelineId": 4114,
+			"title": "Über uns – Glaubensbekenntnis",
+			"voicelineType": "2002",
+			"description": "Ich werde mein Bestes tun, um dir zu helfen und natürlich auch nicht davor zurückschrecken, dir zu sagen, wenn du vom Pfad der Tugend abkommen solltest.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close1"
+		},
+		{
+			"voicelineId": 4115,
+			"title": "Über uns – Schwur",
+			"voicelineType": "2003",
+			"description": "Ich schwöre bei diesem Schwert, dass ich dir den glorreichen Sieg bescheren werde.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4116,
+			"title": "Über uns – Auftrag",
+			"voicelineType": "2004",
+			"description": "Keine Aufgaben erledigen sich von selbst, aber eine kurze Pause hat noch keinem geschadet. Heute können wir uns ein paar Minuten ausruhen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4117,
+			"title": "Über das „Göttliche Auge“ ...",
+			"voicelineType": "3001",
+			"description": "„Immer für Mondstadt“ ist das Familienmotto der Gunnhildr-Familie. Jedes Mal, wenn ich mein Göttliches Auge benutze, denke ich an meine Mutter sowie an die Hoffnungen und Erwartungen der Bewohner von Mondstadt. Für Mondstadt, für Freiheit, dafür kämpfe ich.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4118,
+			"title": "Willst du mir etwas mitteilen?",
+			"voicelineType": "3002",
+			"description": "Im Namen der Ritter des Ordo Favonius danke ich dir für alles, was du für Mondstadt getan hast. Bitte ruhe dich beim Arbeiten auch öfter aus und ... was ist? Warum lachst du auf einmal? Habe ich etwas Lustiges gesagt?",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_share"
+		},
+		{
+			"voicelineId": 4119,
+			"title": "Interessante Vorkommnisse ...",
+			"voicelineType": "3003",
+			"description": "„Löwenzahn, Löwenzahn, fliege mit dem Wind in die Ferne“. Er nutzt den Auftrieb des Windes und kann möglicherweise sogar Celestia erreichen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_gift"
+		},
+		{
+			"voicelineId": 4120,
+			"title": "Über Barbara ...",
+			"voicelineType": "4001",
+			"description": "Barbara gibt sich sehr viel Mühe, nur manchmal gibt sie sich zu viel Mühe. Woher ich das weiß? Weil die Kathedrale auch zum Ritterorden gehört.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4121,
+			"title": "Über Lisa ...",
+			"voicelineType": "4002",
+			"description": "Solange Lisa da ist, bin ich beruhigt.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4122,
+			"title": "Über Amber ...",
+			"voicelineType": "4003",
+			"description": "Amber hat es in der kurzen Zeit wirklich zu etwas gebracht. Ich hoffe, eines Tages werden Barden auch von ihrer Geschichte singen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4123,
+			"title": "Über Kaeya ...",
+			"voicelineType": "4004",
+			"description": "Ist das so? Kaeya hat dir also auch eine Empfehlung gegeben. Er ist ein formidabler Ritter des Ordo Favonius, daran besteht kein Zweifel.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4124,
+			"title": "Über Klee ...",
+			"voicelineType": "4005",
+			"description": "Spielen liegt in der Natur eines Kindes. Klees Spielzeuge jedoch sind ganz schön gefährlich. Man fühlt sich nie ganz sicher.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4125,
+			"title": "Über Albedo ...",
+			"voicelineType": "4006",
+			"description": "Der Begriff „Talent“ wurde geradezu für Leute wie Albedo erfunden.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4126,
+			"title": "Über Varka ...",
+			"voicelineType": "4007",
+			"description": "Großmeister Varka ist eine Legende des Ordo Favonius. Warte auf den Tag seiner triumphalen Rückkehr, um dich persönlich davon zu überzeugen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4127,
+			"title": "Über Noelle ...",
+			"voicelineType": "4008",
+			"description": "Noelle, das Mädchen, das versucht hat ein Ritter des Ordo Favonius zu werden. Sie hat noch ein paar Schwächen in ihrem Herzen. Daher wäre es nicht weise, sie zum jetzigen Zeitpunkt den Gefahren der Welt auszusetzen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4128,
+			"title": "Über Rosaria ...",
+			"voicelineType": "4009",
+			"description": "Schwester Rosaria beschwert sich oft über den Schweregrad ihrer Arbeit, dennoch führt sie sie tadellos aus. Gerade letztens noch habe ich zu ihr gesagt „Sag mir Bescheid, wenn du bei irgendetwas Hilfe brauchst.“ Darauf antwortete sie mir, „Das wäre ja noch mühseliger“. Anscheinend muss ich härter arbeiten, um eine wirkliche Hilfe zu sein.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_rosaria_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4129,
+			"title": "Über Diluc – Scham",
+			"voicelineType": "4010",
+			"description": "Es gibt einen Grund, weshalb Diluc dem Ordo Favonius so kritisch gegenüber steht. Selbst ein schulderfülltes Gewissen kann das Ergebnis nicht ändern ... Ich will, dass er durch meine Bemühungen seine Ansicht über den Ordo Favonius ändert ... Das allein ist meine Sorge.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4130,
+			"title": "Über Diluc – Respekt",
+			"voicelineType": "4011",
+			"description": "Diluc ... wie soll ich sagen? Er ist ein sehr ehrwürdiger und respektabler Mann. Auch wenn wir unterschiedliche Pfade gewählt haben, so kann ich dennoch den Beschützerwunsch in seinem Herzen erkennen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_diluc_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4131,
+			"title": "Über Saccharose ...",
+			"voicelineType": "4012",
+			"description": "Saccharose ist ein Alchimisten-Naturtalent. Mit Albedo an ihrer Seite braucht sie sich auch nicht um ihre Zukunft zu sorgen. Es ist nur ... ach nichts. Es ist keine schlechte Sache, sich in seiner eigenen kleinen Welt aufzuhalten.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4132,
+			"title": "Über Eula ...",
+			"voicelineType": "4013",
+			"description": "Eula? Ähem ... Bitte nehmt ihr ihre Vergangenheit nicht übel. Die Ritter des Ordo Favonius richten jeden gerecht. Eula kann sehr gut Richtig von Falsch unterscheiden. Sie hat brillantes Talent. Und ihre gelegentlichen gefährlichen Bemerkungen gehören einfach zu ihrem Charakter. Auch wenn sie immer sagt, dass sie mich herausfordern wird, macht mir das nichts aus.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4171,
+			"title": "Über Mika ...",
+			"voicelineType": "4014",
+			"description": "Der Großmeister arrangierte Mika als Pfadfinder des Expeditionsteams, nicht nur, weil Mika die Anforderungen des Auftrags erfüllte, sondern, was noch wichtiger ist, Mikas fleißiger und bodenständiger Charakter hinterließ einen tiefen Eindruck bei ihm. Aus meiner Sicht ist es eine Ehre, mit jemandem wie ihm zusammenzuarbeiten.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4133,
+			"title": "Ich will mehr über Jean erfahren I",
+			"voicelineType": "5001",
+			"description": "Ich schultere das Vertrauen des Ordo Favonius und die Erwartungen der Bewohner von Mondstadt. Aus diesem Grund kann ich mich nicht entspannen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_01"
+		},
+		{
+			"voicelineId": 4134,
+			"title": "Ich will mehr über Jean erfahren II",
+			"voicelineType": "5002",
+			"description": "Vennessa, der erste „Löwenzahnritter“, ist bis heute nicht vergessen. Die Ehre, diesen Namen zu tragen, wurde bisher einigen großartigen Rittern erwiesen. Ich darf diesen Titel nicht beschmutzen und mich ausruhen. Denn ich muss der Schild und das Schwert des Volkes sein.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 3 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4135,
+			"title": "Ich will mehr über Jean erfahren III",
+			"voicelineType": "5003",
+			"description": "Legenden und Geschichtsbücher berichten nur von erfolgreichen Rittern. Sind die alten Ritter denn nie in Schwierigkeiten geraten?\nO Wind, bitte weise mir den Weg.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4136,
+			"title": "Ich will mehr über Jean erfahren IV",
+			"voicelineType": "5004",
+			"description": "Wenn du mit Leib und Seele dabei bist, vergisst du sowohl deine Schwierigkeiten als auch die Zeit. „Du bist am besten dafür geeignet.“ ... Das sagte Großmeister Varka vor seiner Abreise zu mir.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 5 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4137,
+			"title": "Ich will mehr über Jean erfahren V",
+			"voicelineType": "5005",
+			"description": "Wenn ich so mit dir gehe, wird der Pfad vor mir immer klarer, klarer denn je. So, als ob ich endlich jemanden hätte, auf den ich mich im Notfall voll und ganz verlassen kann.\nNein, das heißt bestimmt, dass ich mich noch nicht genug angestrengt habe. Ich darf den Ordo Favonius und die Bewohner Mondstadts nicht im Stich lassen ... Dennoch, danke dir.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4138,
+			"title": "Jeans Hobbys ...",
+			"voicelineType": "6001",
+			"description": "Vielleicht können wir uns über die Helden in dem Buch unterhalten. Hast du schon einmal die Geschichte vom heldenhaften König von Khaenri’ah gehört?",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_hobby"
+		},
+		{
+			"voicelineId": 4139,
+			"title": "Jeans Sorgen ...",
+			"voicelineType": "6002",
+			"description": "Wenn es doch nur eine Art Trank gäbe, der mich für immer wach halten würde, sodass ich nicht mehr zu schlafen bräuchte ... Morgen muss ich das wirklich mit Lisa besprechen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_annoyed"
+		},
+		{
+			"voicelineId": 4140,
+			"title": "Was sie so mag ...",
+			"voicelineType": "6003",
+			"description": "Ich habe schon ewig nicht mehr die Pizza von der Taverne „Zum Katzenschwanz“ gegessen. Wenn sie nur zu mir ins Büro liefern würden ...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_foodLike"
+		},
+		{
+			"voicelineId": 4141,
+			"title": "Was sie nicht mag ...",
+			"voicelineType": "6004",
+			"description": "Ein wahrer Ritter darf nicht pingelig beim Essen sein.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_foodDislike"
+		},
+		{
+			"voicelineId": 4168,
+			"title": "Geschenk erhalten I",
+			"voicelineType": "6007",
+			"description": "Es schmeckt nicht nur gut, sondern ist auch gesund. Vielen Dank für deine Aufmerksamkeit.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_pref_01"
+		},
+		{
+			"voicelineId": 4169,
+			"title": "Geschenk erhalten II",
+			"voicelineType": "6008",
+			"description": "Nun, meine Stimmung ist schon viel besser. Danke!",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_normal_01"
+		},
+		{
+			"voicelineId": 4170,
+			"title": "Geschenk erhalten III",
+			"voicelineType": "6009",
+			"description": "Hmm ... Danke für deine Mühen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_dislike_01"
+		},
+		{
+			"voicelineId": 4142,
+			"title": "Dein Geburtstag ...",
+			"voicelineType": "7001",
+			"description": "Heute ist ein Tag zum Feiern. Warum? Nun, weil heute der Tag ist, an dem du, {F#die vom}{M#der vom} Wind Gesegnete, in unsere Welt kamst. Da dies deine Art Geburtstag ist, kannst du es langsam angehen lassen.\nÄhem, alles Gute für dich ... Bitte vergib mein nonchalantes Vorstoßen. Schau, ob dir dieses Geschenk gefällt.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 4143,
+			"title": "Gedanken über den Aufstieg – Beginn",
+			"voicelineType": "8001",
+			"description": "Gut, nun zum nächsten Ziel.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 1 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4144,
+			"title": "Gedanken über den Aufstieg – Fortschritt",
+			"voicelineType": "8002",
+			"description": "Solange der Wind weht, werden wir auch nicht aufhören zu kämpfen.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 2 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4145,
+			"title": "Gedanken über den Aufstieg – Höhepunkt",
+			"voicelineType": "8003",
+			"description": "Auch wenn wir in Friedenszeiten leben, dürfen wir nicht einrosten. Als stellvertretender Großmeister muss ich wachsam bleiben.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4146,
+			"title": "Gedanken über den Aufstieg – Ende",
+			"voicelineType": "8004",
+			"description": "Noch bin ich nicht gut genug. Seit ich dich getroffen habe, bin ich sehr dankbar und stehe tief in deiner Schuld.\nWind, bitte vergib mir meine Selbstsucht. Nicht als stellvertretender Großmeister, sondern als Jean. Ich schwöre hiermit, dass mein Schwert immer mit dir sein wird.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 4147,
+			"title": "Elementarfähigkeit I",
+			"voicelineType": "100001",
+			"description": "Lasst uns den Sieg entscheiden!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_01"
+		},
+		{
+			"voicelineId": 4148,
+			"title": "Elementarfähigkeit II",
+			"voicelineType": "100002",
+			"description": "Ha!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_02"
+		},
+		{
+			"voicelineId": 4149,
+			"title": "Elementarfähigkeit III",
+			"voicelineType": "100003",
+			"description": "Hinfort!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_03"
+		},
+		{
+			"voicelineId": 4150,
+			"title": "Spezialfähigkeit I",
+			"voicelineType": "200001",
+			"description": "Wind, gib mir Kraft!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_01"
+		},
+		{
+			"voicelineId": 4151,
+			"title": "Spezialfähigkeit II",
+			"voicelineType": "200002",
+			"description": "Bei meinem Schwert!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_02"
+		},
+		{
+			"voicelineId": 4152,
+			"title": "Spezialfähigkeit III",
+			"voicelineType": "200003",
+			"description": "O Archon des Windes, weise uns den Weg!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_03"
+		},
+		{
+			"voicelineId": 4153,
+			"title": "Truhe öffnen I",
+			"voicelineType": "300001",
+			"description": "Was für eine angenehme Überraschung.",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_01"
+		},
+		{
+			"voicelineId": 4154,
+			"title": "Truhe öffnen II",
+			"voicelineType": "300002",
+			"description": "Hmm, die Dinge laufen heute ein wenig zu glatt ...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_02"
+		},
+		{
+			"voicelineId": 4155,
+			"title": "Truhe öffnen III",
+			"voicelineType": "300003",
+			"description": "Ich hoffe die anderen finden welche.",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_03"
+		},
+		{
+			"voicelineId": 4156,
+			"title": "Niedrige LP I",
+			"voicelineType": "410001",
+			"description": "Mir ... geht’s gut!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_01"
+		},
+		{
+			"voicelineId": 4157,
+			"title": "Niedrige LP II",
+			"voicelineType": "410002",
+			"description": "Ich muss meine Kameraden beschützen ...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_02"
+		},
+		{
+			"voicelineId": 4158,
+			"title": "Niedrige LP III",
+			"voicelineType": "410003",
+			"description": "Ich kann nicht aufgeben ...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_03"
+		},
+		{
+			"voicelineId": 4159,
+			"title": "Verbündeter hat niedrige LP I",
+			"voicelineType": "400001",
+			"description": "Du bist verletzt ... Geh in Deckung!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 4160,
+			"title": "Verbündeter hat niedrige LP II",
+			"voicelineType": "400002",
+			"description": "Überlasse es mir!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 4161,
+			"title": "Ohnmächtig I",
+			"voicelineType": "500001",
+			"description": "Mondstadt ...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_01"
+		},
+		{
+			"voicelineId": 4162,
+			"title": "Ohnmächtig II",
+			"voicelineType": "500002",
+			"description": "Jeder hat seine Grenzen ...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_02"
+		},
+		{
+			"voicelineId": 4163,
+			"title": "Ohnmächtig III",
+			"voicelineType": "500003",
+			"description": "Ich habe versagt ...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_03"
+		},
+		{
+			"voicelineId": 4164,
+			"title": "Schweren Treffer erlitten I",
+			"voicelineType": "910001",
+			"description": "Kaum ein Kratzer!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 4165,
+			"title": "Truppenbeitritt I",
+			"voicelineType": "600001",
+			"description": "Wir können jederzeit gehen.",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_01"
+		},
+		{
+			"voicelineId": 4166,
+			"title": "Truppenbeitritt II",
+			"voicelineType": "600002",
+			"description": "Bereit für alles.",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_02"
+		},
+		{
+			"voicelineId": 4167,
+			"title": "Truppenbeitritt III",
+			"voicelineType": "600003",
+			"description": "Möge der Wind dich führen.",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_03"
+		}
+	]
+}

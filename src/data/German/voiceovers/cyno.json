@@ -1,0 +1,791 @@
+{
+	"id": 10000071,
+	"name": "Cyno",
+	"friendLines": [
+		{
+			"voicelineId": 71000,
+			"title": "Erste Begegnung – Die Vergangenheit",
+			"voicelineType": "1000",
+			"description": "Ich bin Cyno, der ehemalige „Mahamatra“. Jetzt bestrafe ich die Bösen mit meiner eigenen Kraft. Wenn du meine Hingabe an Regeln und Gerechtigkeit teilst, kann ich dir meine Kräfte zur Verfügung stellen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_01"
+		},
+		{
+			"voicelineId": 71001,
+			"title": "Erste Begegnung – Die Gegenwart",
+			"voicelineType": "1006",
+			"description": "Ich bin Cyno, „Mahamatra“ der Akademie. Es ist meine Pflicht, die Regeln zu verteidigen und Fehlverhalten zu bestrafen. Ich werde dich auf deiner zukünftigen Reise beschützen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_draw_appear_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Nach Abschluss von „Akasha pulsiert, die Kalpa-Flamme lodert“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71002,
+			"title": "Gespräch – Wiegen",
+			"voicelineType": "1101",
+			"description": "Ob gut oder böse, am Ende werden alle auf die Waage gelegt.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_01"
+		},
+		{
+			"voicelineId": 71003,
+			"title": "Gespräch – Glück beim Kartenspiel",
+			"voicelineType": "1102",
+			"description": "Das Glück kann den Ausgang eines Spiels beeinflussen, aber dieser Einfluss hält nicht ewig an.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_02"
+		},
+		{
+			"voicelineId": 71004,
+			"title": "Gespräch – Zweifel",
+			"voicelineType": "1103",
+			"description": "Ich versuche auch manchmal, die Stimmung aufzulockern, aber ich bin mir nicht sicher, welche Witze die Leute zum Lachen bringen werden.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_character_idle_03"
+		},
+		{
+			"voicelineId": 71005,
+			"title": "Wenn es regnet ...",
+			"voicelineType": "1201",
+			"description": "Es regnet wieder ...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 71006,
+			"title": "Wenn es blitzt ...",
+			"voicelineType": "1202",
+			"description": "In einigen Legenden sind Blitze eine Form der Strafe durch die Götter im Himmel.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_thunder_01"
+		},
+		{
+			"voicelineId": 71007,
+			"title": "Wenn es schneit ...",
+			"voicelineType": "1203",
+			"description": "Ich liebe die Welt nach einem Schneefall, still, friedlich, aber nicht leblos.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_snowy_01"
+		},
+		{
+			"voicelineId": 71008,
+			"title": "Wie sonnig ...",
+			"voicelineType": "1204",
+			"description": "Die Sonne wird schließlich jeden versteckten Winkel beleuchten.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_sunny_01"
+		},
+		{
+			"voicelineId": 71009,
+			"title": "Ein Sturm zieht auf.",
+			"voicelineType": "1205",
+			"description": "Vorsicht, der Wind frischt auf.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_gale_01"
+		},
+		{
+			"voicelineId": 71010,
+			"title": "In der Wüste ...",
+			"voicelineType": "1206",
+			"description": "Eine vertraute Landschaft ...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_weather_desert_01"
+		},
+		{
+			"voicelineId": 71011,
+			"title": "Guten Morgen.",
+			"voicelineType": "1001",
+			"description": "Mach dich bereit. Es ist Zeit zu gehen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 71012,
+			"title": "Guten Tag.",
+			"voicelineType": "1002",
+			"description": "Soll ich heute das Mittagessen vorbereiten? Das kann ich machen, aber ich kann nicht versprechen, dass es dir schmeckt.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 71013,
+			"title": "Guten Abend.",
+			"voicelineType": "1003",
+			"description": "Erinnerst du dich, was ich dir gesagt habe? Die Gefahr lauert immer in der Nacht, also was auch immer du tust, sei auf der Hut.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 71014,
+			"title": "Gute Nacht.",
+			"voicelineType": "1004",
+			"description": "Gute Nacht. In der Nähe gibt es ein paar kriminelle Aktivitäten, ich kümmere mich darum.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 71015,
+			"title": "Über Cyno – Schräge Witze",
+			"voicelineType": "2001",
+			"description": "Es war einmal ein Reisender, der sich in der Wüste verirrte und verdurstete. Er betete, um einen Hydro-Schleim zu treffen. Aber der Reisende wusste nicht, dass genau in diesem Moment ein verhungernder Hydro-Schleim darum betete, einen einsamen, verirrten Reisenden zu treffen ... Hm? Nicht lustig?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle"
+		},
+		{
+			"voicelineId": 71016,
+			"title": "Über Cyno – Spazieren",
+			"voicelineType": "2005",
+			"description": "Manchmal mache ich nachts einen Spaziergang durch die Wüste ... Die kalte, trockene Luft hilft mir, den Kopf frei zu bekommen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71017,
+			"title": "Über uns – Duell",
+			"voicelineType": "2003",
+			"description": "Lust auf „Geniale Beschwörung“? Ich zeige dir mein neues Deck.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close"
+		},
+		{
+			"voicelineId": 71018,
+			"title": "Über uns – zur Zeit",
+			"voicelineType": "2002",
+			"description": "Die Vergangenheit kann man nicht ändern und die Zukunft nicht vorhersehen. Deshalb achte ich darauf, dass ich das Hier und Jetzt immer zu schätzen weiß.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71019,
+			"title": "Über das „Göttliche Auge“ ...",
+			"voicelineType": "3001",
+			"description": "Der Geist in mir und die Götter, die ihre Augen auf mich richten, gewähren mir viel Gunst. Aber es kann meinen Gerechtigkeitskodex nicht beeinflussen. Ich werde einfach weiter tun, was nötig ist, um meine Pflicht zu erfüllen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71020,
+			"title": "Willst du mir etwas mitteilen? – Das Streben nach Wissen",
+			"voicelineType": "3002",
+			"description": "„Ein Übermaß an Begierden führt zu einer Katastrophe“ ist ein Konsens. Ich glaube, die meisten Menschen wissen, dass ein Übermaß an Begierde in die Katastrophe führt, aber wenn es um „das Streben nach Wissen“ geht, neigen die Menschen dazu, nur über seine positiven Auswirkungen zu sprechen. Meiner Meinung nach ist es immer noch eine Form der Begierde, die kontrolliert werden muss.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_01"
+		},
+		{
+			"voicelineId": 71021,
+			"title": "Willst du mir etwas mitteilen? – Respekt",
+			"voicelineType": "3005",
+			"description": "Jede Entscheidung, die ich während einer Mission treffe, kann tiefgreifende Auswirkungen auf das Schicksal anderer haben. Deshalb muss ich meine Position als „Matra“ immer mit großem Respekt betrachten, so wie ich auch Wissen und Kraft respektiere.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_share_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71022,
+			"title": "Interessante Vorkommnisse ...",
+			"voicelineType": "3003",
+			"description": "Ich mag die Sträucher, die in der Wüste wachsen. Die Wüste ist ein Symbol für Stille und Einsamkeit. Alle Zivilisationen werden irgendwann von Sand begraben. Aber trotz dieser trostlosen Bedingungen sprießen immer wieder Lebenszeichen. Manchmal bin ich wirklich beeindruckt von ihrer Hartnäckigkeit.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_gift_01"
+		},
+		{
+			"voicelineId": 71023,
+			"title": "Über Tighnari – Wissen",
+			"voicelineType": "4001",
+			"description": "Tighnari ist anders als andere Gelehrte, denen ich begegnet bin. Er widmet sich dem Wissen von ganzem Herzen, aber er wird niemals die Grenzen überschreiten. Mache Gelehrte sehen sich selbst als „Götter in ihren eigenen Laboren“, aber nicht Tighnari. Er hat immer alle Formen von Leben gleichermaßen respektiert. Mir wurde gesagt, dass er ein Stellenangebot der Akademie abgelehnt hatte, und ich unterstütze seine Entscheidung.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71024,
+			"title": "Über Tighnari – Witz",
+			"voicelineType": "4002",
+			"description": "Tighnari hat mir einmal gesagt, ich solle beim Essen keine Witze erzählen, da meine Witze überhaupt nicht lustig seien. Das glaubte ich nicht und erzählte ich drei meiner besten Witze hintereinander und erläuterte, warum sie lustig sein sollten. Als ich mit dem Erzählen fertig war, war mein Essen schon kalt.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_tighnari_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71025,
+			"title": "Über Collei ...",
+			"voicelineType": "4003",
+			"description": "Ich habe ihr einmal geholfen, die Überreste des Gottes in ihrem Körper zu versiegeln, aber der Prozess brachte ihr unvorstellbare Schmerzen. Für viele wären die Schmerzen schrecklicher als der Tod, daher war es sehr bewundernswert, dass sie das alles durchgestanden hat.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71026,
+			"title": "Über Alhaitham ...",
+			"voicelineType": "4004",
+			"description": "Ich bin kein großer Anhänger von Menschen, die zu klug sind. Sie denken, dass sie alles kontrollieren können, und wagen sich ständig an den Rand der Gefahr. Aber Alhaitham ist einer der zuverlässigeren. In den meisten Fällen hat er die Dinge tatsächlich unter Kontrolle und ist in der Lage, potenzielles Unheil abzuwenden.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „König Deshret und die drei Heiligen“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71027,
+			"title": "Über Kaveh ...",
+			"voicelineType": "4005",
+			"description": "Tighnari und Collei haben es mir nie ins Gesicht gesagt, aber ich weiß genau, dass sie Kavehs persönliche Anekdoten viel unterhaltsamer als meine Witze fanden. Ja, ich sah es in ihren Gesichtern. Was ich darüber gedacht habe? Tja, ich fand es lustig, dass sie über so etwas lachen konnten.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71028,
+			"title": "Über Nahida ...",
+			"voicelineType": "4006",
+			"description": "Eine Gottheit zu kommentieren ... Das würde meine Befugnisse überschreiten. Aber während wir zusammen auf dem Weg waren, wurde ich persönlich Zeuge ihrer Weisheit, Tapferkeit und Entschlossenheit. Im Vergleich zu den Weisen, die sie ohne Beweise ständig verleumden und kritisieren, denke ich, dass ich eine verlässlichere Einschätzung abgeben kann: Sie ist eine außergewöhnliche Gottheit, die allen Respekt verdient.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Akasha pulsiert, die Kalpa-Flamme lodert“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71029,
+			"title": "Über Nilou ...",
+			"voicelineType": "4007",
+			"description": "Ich kann ihre Leidenschaft und Liebe zum Tanzen spüren. Diese Liebe ist unglaublich tief und lässt sich nicht leicht ändern. Ich hoffe, sie wird immer in der Lage sein, anderen mit dem Tanz, den sie liebt, Freude zu bereiten.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Akasha pulsiert, die Kalpa-Flamme lodert“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71030,
+			"title": "Über Faruzan ...",
+			"voicelineType": "4008",
+			"description": "Ich habe die Akten über das Verschwinden von Faruzan sorgfältig durchgesehen. Damals dachte ich, dass sie vielleicht irgendeine gefährliche Forschung gemacht hat, aber als ich sie persönlich kennenlernte, verwarf ich diese Idee völlig. Obwohl es mir vielleicht etwas schwer fällt, mit ihr auszukommen, erinnert sie mich immer an eine freundliche und gesprächige Ältere. Sie nimmt Rücksicht auf andere und würde nie etwas Unüberlegtes tun.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71031,
+			"title": "Über Lisa ...",
+			"voicelineType": "4009",
+			"description": "Natürlich weiß ich über Lisa Bescheid, wir haben beide einmal bei demselbem Weisen studiert. Als Mahamatra habe ich viele Tragödien gesehen, die durch das übermäßige Streben nach Wissen verursacht wurden, daher kann ich ihre Entscheidung verstehen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71032,
+			"title": "Ich will mehr über Cyno erfahren I",
+			"voicelineType": "5001",
+			"description": "Hm? Du willst mehr über mich wissen? Hm, ich nehme an, dass ich vielen Leuten ein „Dorn“ im Auge bin ... Aber keine Sorge, solange du nichts Gefährliches tust, wirst du keine Probleme mit mir haben.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_01"
+		},
+		{
+			"voicelineId": 71033,
+			"title": "Ich will mehr über Cyno erfahren II",
+			"voicelineType": "5002",
+			"description": "Mit meinem Körper als Gefäß kann ich mir die Kraft des Geistes, der in mir wohnt, zunutze machen. Dies ist zum Teil aufgrund meiner natürlichen Konstitution möglich, aber auch aufgrund eines Geschäfts, das ich in der Vergangenheit bereitwillig eingegangen bin. Es gibt nichts zu vermeiden. Wenn ich als Matra die Seelen der anderen in dieser Welt wiegen soll, muss ich auch meine eigene Seele auf die Waage legen, um auf dieselbe Weise beurteilt zu werden.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 3 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71034,
+			"title": "Ich will mehr über Cyno erfahren III",
+			"voicelineType": "5003",
+			"description": "Ich interessiere mich mehr für das, „was getan wurde“, als für den Grund, „warum es getan wurde“. Es gibt unzählige Gründe, warum Menschen etwas tun, und wenn man einige dieser Gründe hört, kann man sich des Eindrucks nicht erwehren, dass der Übeltäter recht hatte oder dass die Öffentlichkeit zu hart mit ihm umgeht. Die benachteiligte Seite wird immer das Mitgefühl der Menschen auf sich ziehen, aber der Richter muss sich von solchen Gefühlen frei machen. Wir können die Gründe für ein Verbrechen nachempfinden, aber es darf nicht ungestraft bleiben.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71035,
+			"title": "Ich will mehr über Cyno erfahren IV",
+			"voicelineType": "5004",
+			"description": "Im düsteren Meer der Unwissenheit wird gelegentlich ein schwacher Lichtschimmer auftauchen, der diejenigen, die die Wahrheit nicht verstehen, zu ihm hinführt. Die Menschen sehen diesen Schimmer oft als einen Leuchtturm, der ihnen den Weg weist, übersehen dabei aber die großen Gefahren, die noch in den pechschwarzen Gewässern lauern. Diejenigen, die lange in der Dunkelheit gelebt haben, vom solchen Lichtschimmer wegzulenken, ist an sich schon grausam. Aber ich muss es weiter machen, bis wir endlich die unter der Wasseroberfläche verborgenen Gegner besiegen können.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 5 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71036,
+			"title": "Ich will mehr über Cyno erfahren V",
+			"voicelineType": "5005",
+			"description": "Ich habe dir bereits alles gesagt, was ich für erzählenswert halte. was hast du sonst noch von mir zu hören erwartet? Haha, deine Neugier ist bemerkenswert ... Also gut, stell mir ein paar Fragen! Nachdem ich mich daran gewöhnt habe, andere zu verhören, ist dieses Gefühl, befragt zu werden ... irgendwie interessant.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71037,
+			"title": "Cynos Hobbys ...",
+			"voicelineType": "6001",
+			"description": "In meiner Freizeit spiele ich gerne „Geniale Beschwörung“ mit anderen Leuten. Dieses Spiel, das zwar auf Regeln aufbaut, aber voller Flexibilität ist, scheint mir eher eine Kunst zu sein.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_hobby"
+		},
+		{
+			"voicelineId": 71038,
+			"title": "Cynos Sorgen ...",
+			"voicelineType": "6002",
+			"description": "Vor Kurzem habe ich eine kurze Erzählung aus Inazuma gelesen, die auf „Geniale Beschwörung“ basiert. Als die Hauptfigur in eine schwierige Lage geriet, zog sie irgendwie eine Karte, die eigentlich gar nicht existieren sollte. Das hat mich zutiefst erschüttert und mich vor ein großes Rätsel gestellt. Ist es ein Regelverstoß oder gehört es zu den Regeln, durch besondere Manipulation des Decks Wunder zu schaffen?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71039,
+			"title": "Was er so mag ...",
+			"voicelineType": "6005",
+			"description": "Back Reis, Fleisch und getrocknete Nüsse, mit etwas Joghurt zusammen ... Die Geschmackskombination ist erstaunlich. Wenn man die knusprigen Schalen aufbricht, entfaltet sich das Aroma durch die dampfende Hitze. Die Zubereitung dauert nicht lange, definitiv mein Lieblingsgericht.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 71040,
+			"title": "Was er nicht mag ...",
+			"voicelineType": "6004",
+			"description": "Das Essen, das ich auf meinen Reisen durch die Wüste mitnehme, ist normalerweise völlig geschmacklos und hart. Aber wenn man sich einmal daran gewöhnt hat, gibt es kein schlechtes Essen mehr. Wenn ich etwas auswählen müsste, na ja, von Gerichten mit Würmern oder Insekten darin kann ich bis jetzt noch keinen großen Bissen nehmen ...",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_foodDislike"
+		},
+		{
+			"voicelineId": 71041,
+			"title": "Geschenk erhalten I",
+			"voicelineType": "6007",
+			"description": "Schmeckt sehr gut. Danke.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_pref_01"
+		},
+		{
+			"voicelineId": 71042,
+			"title": "Geschenk erhalten II",
+			"voicelineType": "6008",
+			"description": "Ich nehme es an. Danke.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_normal_01"
+		},
+		{
+			"voicelineId": 71043,
+			"title": "Geschenk erhalten III",
+			"voicelineType": "6009",
+			"description": "Für mich? ... Sicher?",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_spice_dislike_01"
+		},
+		{
+			"voicelineId": 71044,
+			"title": "Geburtstag ...",
+			"voicelineType": "7001",
+			"description": "Ähm ... Ich möchte dir zum Geburtstag gratulieren. Ich habe zwar nicht viel Erfahrung mit Feiern, aber da es dein Geburtstag ist, habe ich einige Vorbereitungen getroffen. Hier, dieses Deck ist für dich. Ich habe ein paar Tage lang daran gearbeitet und ich denke, dass es gut zu deinem Stil passt. Außerdem habe ich meinen Terminkalender so angepasst, dass ich mehr Zeit mit dir verbringen kann. Gibt es einen Ort, an den du gehen möchtest? Ich würde dich gern begleiten. Ein Geburtstag dauert zwar nur einen Tag, aber man sollte die Gelegenheit nutzen, ihn richtig zu genießen, daher können wir eine Reise von bis zu drei Tagen machen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 71045,
+			"title": "Gedanken über den Aufstieg – Beginn",
+			"voicelineType": "8001",
+			"description": "Ich kann spüren, wie neue Kraft in mir aufsteigt. Es ist der Beweis für meine wachsende Kraft.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 1 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71046,
+			"title": "Gedanken über den Aufstieg – Fortschritt",
+			"voicelineType": "8002",
+			"description": "Ich werde die Regeln einhalten und das Böse bestrafen.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 2 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71047,
+			"title": "Gedanken über den Aufstieg – Höhepunkt",
+			"voicelineType": "8003",
+			"description": "Neuer Fortschritt, vielen Dank.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 71048,
+			"title": "Gedanken über den Aufstieg – Ende",
+			"voicelineType": "8004",
+			"description": "Meine Kraft hat ihren Höhepunkt erreicht, aber es gibt immer noch viele Dinge, die ich niemals allein mit meiner Kampfkraft erreichen kann. Es wird immer noch viele Momente geben, in denen Emotionen und Regeln im Widerspruch zueinander stehen. Aber ich denke, dass ich auf den kommenden Reisen die richtige Antwort darauf finden werde, wie ich sie am besten in Einklang bringen kann.",
+			"voicefile": "VO_friendship/VO_cyno/vo_cyno_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 71049,
+			"title": "Elementarfähigkeit I",
+			"voicelineType": "100001",
+			"description": "Ergib dich!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_01"
+		},
+		{
+			"voicelineId": 71050,
+			"title": "Elementarfähigkeit II",
+			"voicelineType": "100002",
+			"description": "Vergeblicher Kampf.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_02"
+		},
+		{
+			"voicelineId": 71051,
+			"title": "Elementarfähigkeit III",
+			"voicelineType": "100003",
+			"description": "Kein Entkommen!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_03"
+		},
+		{
+			"voicelineId": 71052,
+			"title": "Elementarfähigkeit IV",
+			"voicelineType": "100004",
+			"description": "Verurteilt.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_04"
+		},
+		{
+			"voicelineId": 71053,
+			"title": "Elementarfähigkeit V",
+			"voicelineType": "100005",
+			"description": "Schuldig!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_05"
+		},
+		{
+			"voicelineId": 71054,
+			"title": "Elementarfähigkeit VI",
+			"voicelineType": "100006",
+			"description": "Bekenne deine Sünden und bereue!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill1_06"
+		},
+		{
+			"voicelineId": 71055,
+			"title": "Spezialfähigkeit I",
+			"voicelineType": "200001",
+			"description": "Durch mich wird der Gerechtigkeit Genüge getan!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_01"
+		},
+		{
+			"voicelineId": 71056,
+			"title": "Spezialfähigkeit II",
+			"voicelineType": "200002",
+			"description": "Das Urteil kam, wie erwartet.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_02"
+		},
+		{
+			"voicelineId": 71057,
+			"title": "Spezialfähigkeit III",
+			"voicelineType": "200003",
+			"description": "Wiege deine Sünden.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_skill3_03"
+		},
+		{
+			"voicelineId": 71058,
+			"title": "Truhe öffnen I",
+			"voicelineType": "300001",
+			"description": "Ein wohlverdienter Fund.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_01"
+		},
+		{
+			"voicelineId": 71059,
+			"title": "Truhe öffnen II",
+			"voicelineType": "300002",
+			"description": "Beharrlichkeit ist wertvoll.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_02"
+		},
+		{
+			"voicelineId": 71060,
+			"title": "Truhe öffnen III",
+			"voicelineType": "300003",
+			"description": "Reichtum ist die Grundlage der Zivilisation.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_chest_open_03"
+		},
+		{
+			"voicelineId": 71061,
+			"title": "Niedrige LP I",
+			"voicelineType": "410001",
+			"description": "Stärker als ich erwartet hatte ...",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_01"
+		},
+		{
+			"voicelineId": 71062,
+			"title": "Niedrige LP II",
+			"voicelineType": "410002",
+			"description": "Es ist Zeit, sich daran zu gewöhnen.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_02"
+		},
+		{
+			"voicelineId": 71063,
+			"title": "Niedrige LP III",
+			"voicelineType": "410003",
+			"description": "Noch einmal!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_03"
+		},
+		{
+			"voicelineId": 71064,
+			"title": "Verbündeter hat niedrige LP I",
+			"voicelineType": "400001",
+			"description": "Zieh dich zurück. Überanstrenge dich nicht!",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 71065,
+			"title": "Verbündeter hat niedrige LP II",
+			"voicelineType": "400002",
+			"description": "Ich schaffe das.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 71066,
+			"title": "Ohnmächtig I",
+			"voicelineType": "500001",
+			"description": "Bin ich dran?",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_01"
+		},
+		{
+			"voicelineId": 71067,
+			"title": "Ohnmächtig II",
+			"voicelineType": "500002",
+			"description": "Zerstörung, Wiedergeburt ... Der Kreislauf endet nie.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_02"
+		},
+		{
+			"voicelineId": 71068,
+			"title": "Ohnmächtig III",
+			"voicelineType": "500003",
+			"description": "Mein Urteil ... hat versagt.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_life_die_03"
+		},
+		{
+			"voicelineId": 71069,
+			"title": "Leichten Treffer erlitten I",
+			"voicelineType": "900001",
+			"description": "Sinnloser Kampf.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 71070,
+			"title": "Schweren Treffer erlitten I",
+			"voicelineType": "910001",
+			"description": "Was für eine Nervensäge.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 71071,
+			"title": "Schweren Treffer erlitten II",
+			"voicelineType": "910002",
+			"description": "Nicht schlecht.",
+			"voicefile": "VO_gameplay/VO_cyno/vo_cyno_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 71072,
+			"title": "Truppenbeitritt I",
+			"voicelineType": "600001",
+			"description": "Ich werde mein Bestes tun.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_01"
+		},
+		{
+			"voicelineId": 71073,
+			"title": "Truppenbeitritt II",
+			"voicelineType": "600002",
+			"description": "Mission beginnt.",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_02"
+		},
+		{
+			"voicelineId": 71074,
+			"title": "Truppenbeitritt III",
+			"voicelineType": "600003",
+			"description": "Wer ist unser Ziel?",
+			"voicefile": "VO_teamJoin/vo_cyno_teamJoin_03"
+		}
+	]
+}

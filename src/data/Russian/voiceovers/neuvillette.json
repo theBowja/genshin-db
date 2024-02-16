@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "Привет...",
+			"voicelineType": "1006",
+			"description": "Приветствую. Я верховный судья или «юдекс» Фонтейна, но можете называть меня просто по фамилии - Нёвиллет. Я не пытаюсь держаться от вас на расстоянии... Нет, я просто сознаю, что излишняя сердечность может поставить под сомнение беспристрастность судебной власти в глазах некоторых людей. Если у вас есть какой-либо запрос - разумеется, согласующийся с рамками закона - мы можем присесть и обсудить его за стаканчиком воды из деревни Цяоин.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "Поболтаем: Судебные процессы",
+			"voicelineType": "1101",
+			"description": "Я вижу ценность не только в своей работе, но и во всех начинаниях жителей Фонтейна. Думаю, что могу гордиться своими обязанностями.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "Поболтаем: Вкус воды",
+			"voicelineType": "1102",
+			"description": "Вода из разных мест имеет разный вкус. Вода из Мондштадта студёная и кристально чистая, у воды из Ли Юэ есть стойкое послевкусие, в Инадзуме вода обладает несравнимой глубиной вкуса, а у воды Сумеру сложный букет, который можно оценить в полной мере, только если набраться терпения.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "Поболтаем: Мелюзины",
+			"voicelineType": "1103",
+			"description": "Мелюзины - прекрасные существа, настоящая гордость Фонтейна. К ним следует относиться по-дружески, и им ни в коем случае не стоит причинять вреда.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Ах, прошу прощения. Этот дождь, должно быть, доставляет тебе неудобства...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "После дождя...",
+			"voicelineType": "1202",
+			"description": "Вот и всё...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1203",
+			"description": "Как там говорится? «Гром среди ясного неба»? Да, думаю, именно это я и чувствую.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Приближение катастрофы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1204",
+			"description": "Изначально снег для воды являлся средством самоочищения. Но из-за деятельности людей снег уже не так чист, так что лучше не ешь его.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1205",
+			"description": "В такую погоду хорошо сидеть где-нибудь у окна и, хм, любоваться солнечным светом.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "В пустыне...",
+			"voicelineType": "1206",
+			"description": "Это покушение на моё убийство?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Доброе утро. Надеюсь, у тебя будет хороший день.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "А, уже полдень. Ты, наверное, с нетерпением ждёшь послеобеденной чашки чая или кофе? Я так вот точно жду.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Добрый вечер. Надеюсь, сегодня тебе не пришлось столкнуться с неприятностями.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Спокойной ночи. Я нахожу прекрасным зрелище недвижной глади воды, а потому желаю тебе спокойного, ничем не омрачённого сна. Пусть простор твоих сновидений не тронут волны и зыбь потрясений.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "О Нёвиллете: Судебные процессы",
+			"voicelineType": "2001",
+			"description": "Я не являюсь ярым поклонником судебных процессов. Я председательствую на них только по долгу службы, из-за порученной мне миссии.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "О Нёвиллете: Плачущий Гидро дракон",
+			"voicelineType": "2005",
+			"description": "Так ты уже слышал{F#а} эту местную легенду? Ох, и кто же её тебе рассказал? И кто вообще пустил этот слух?.. Впрочем, неважно. Не думаю, что Гидро дракон действительно умеет плакать. Думаю, он лишь пробует на вкус слёзы, пролитые на этой земле, и эмоции, что в них содержатся, и оттого бывает взволнован.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "О Нёвиллете: Значение судебных процессов",
+			"voicelineType": "2006",
+			"description": "Обсуждения этой темы давно набили оскомину... Я не лучший знаток человечества, но для меня очевидно, что понятия справедливости, честности, равенства и законности в обществе не равнозначны и никогда таковыми не станут. Вода по своей природе всегда стремится обрести единый уровень по всей поверхности. Прошлый Гидро Архонт Эгерия надеялась достичь всеобщего равенства, соединив всё живое любовью. Её преемница предпочла путь законности, но в итоге это вылилось в проведение судов ради самих судов. Но у всего есть свои причины, а потому мне стоит воздержаться от критики.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "О нас: Свидетели",
+			"voicelineType": "2003",
+			"description": "Хочу пригласить тебя, гостя из-за звёзд, стать свидетелем того, как я буду судить этот искажённый мир. «На троне страны героев, которой прежде правил сам Небесный отец, теперь утвердилась кучка грязных перьев. Век полон беспорядка, но я рождён, чтоб всё исправить».",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "О нас: Мир людей",
+			"voicelineType": "2002",
+			"description": "Время, проведённое среди жителей Фонтейна и в путешествии с тобой, изменило мои взгляды. Кроме того, я давно простил грехи человечества, поэтому могу обещать, что мои будущие суждения не причинят вреда простым людям. А вот мои претензии к узурпаторам ещё не исчерпаны... Их кровный долг не будет забыт.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "Глаз Бога I",
+			"voicelineType": "3001",
+			"description": "Мне как-то посоветовали носить фальшивый Глаз Бога, чтобы легче было вмешиваться в момент опасности. Честно говоря, я был не в восторге от предложения маскировать собственную силу. Но, проведя немало времени рядом с обладателями Глаз Бога, я научился ценить человеческие стремления и волю.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение катастрофы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "Глаз Бога II",
+			"voicelineType": "3006",
+			"description": "Что? Ты говоришь, что даже некоторые из Семи богов среди людей носят поддельные Глаза Бога? Ха... Прошу прощения, на миг утратил контроль над собой, настолько это абсурдно.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Приближение катастрофы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "Давай поделимся: Законы",
+			"voicelineType": "3002",
+			"description": "В Фонтейне много диковинных законов, например, «третьего числа каждого месяца запрещено запускать летающие объекты», «все двустворчатые моллюски, выброшенные на берег в сезон малой воды, принадлежат Гидро Архонту, а спиралевидные - гражданам», «запрещено давать животным имя Фурина», «томатный соус запрещено употреблять в ресторанах и столовых как самостоятельное блюдо», «по отношению к мелюзинам следует использовать местоимение \"она\", а не \"оно\"»... Последнее правило - моего авторства.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "Давай поделимся: Дождливые дни",
+			"voicelineType": "3005",
+			"description": "Порой я мечтаю о том, чтобы иметь возможность в любое время выйти под дождь. Ох, не думай, дело вовсе не в чрезмерной нагрузке.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "Интересные вещи: Вишапы",
+			"voicelineType": "3003",
+			"description": "Родословная вишапов восходит к Фонтмеру, поэтому они так искусны в эволюции. Мне вспоминается старый обычай драконов: если кто-то из наших собратьев умирал до срока, мы делали глоток его крови. И каждый раз, когда движение луны и звёзд вздымает в море приливы, вода в наших телах, порождённых Гидро, тоже поднимается, и мы знаем, что в этот момент воскресают наши ушедшие сородичи.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Приближение катастрофы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "Интересные вещи: Люди",
+			"voicelineType": "3004",
+			"description": "По моим наблюдениям, люди привыкли противостоять природе. Сейчас наконец начали звучать отдельные голоса о том, что человек - такая же часть природы, как другие существа. Как тот, кто немного разбирается в этом вопросе, я сказал бы, что человеческой цивилизации и природе этой планеты нужно начать искать пути сосуществования друг с другом.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "О Гео Архонте...",
+			"voicelineType": "4001",
+			"description": "Ничто не помешает мне вынести приговор каждому из Семи. Золотой бог узурпировал власть Гео, а значит, должен быть призван к суду. Но тем, кто не хочет видеть нас по разные стороны конфликта, не стоит беспокоиться: я намерен оставаться в Фонтейне в обозримом будущем, что может означать ещё четыре сотни лет. К тому же, даже когда суд состоится, он не обязательно должен закончиться битвой.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "Об Анемо Архонте...",
+			"voicelineType": "4002",
+			"description": "Я исполню свою клятву судить всех Семерых по очереди, даже если небо рухнет и земля перевернётся. Как захватчик власти Анемо, бог ветра и надежды также должен предстать перед судом. ...Хм? Ты говоришь, он проводит большую часть своего времени в безобидном пьянстве? Что ж, даже если так, я должен сам встретиться с ним, чтобы понять, как действовать дальше.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "Об Электро Архонте...",
+			"voicelineType": "4003",
+			"description": "Как выживший представитель расы драконов, вновь обрётший полную силу, я должен выполнить свою клятву и обязательства, даже если для этого понадобится вернуть всю воду в океане в небеса. Приняв власть Электро, Наруками включила себя в список узурпаторов. О, так она уединилась в Царстве эвтюмии и теперь редко появляется на публике? Тогда я нанесу ей визит через несколько веков.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "О Дендро Архонте...",
+			"voicelineType": "4004",
+			"description": "Хотя однажды она предстанет пред моим судом, но я должен отдать должное богине трав и деревьев. Никто не идеален, но её преданность и добрая воля свидетельствуют о неустанном стремлении к развитию. Мне очень жаль, что с ней так плохо обращались на протяжении последних пятисот лет.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "О Ризли",
+			"voicelineType": "4005",
+			"description": "Ризли - человек, заслуживающий доверия. Мне пришлось побороться за его титул и репутацию. Думаешь, меня подкупили его лесть и преданный вид? В Инадзуме есть пословица: «Невысказанное слово - цветок», что означает, что порой лучше помолчать.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "О Клоринде...",
+			"voicelineType": "4006",
+			"description": "Непревзойденное мастерство Клоринды сделало её самым влиятельным судебным дуэлянтом нашей страны. Будучи преемницей былых Охотников Сумеречного двора, она играет важную роль в обеспечении справедливости и беспристрастности судебного процесса. А ещё она куда человечнее, чем кажется.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "О Лини и Линетт...",
+			"voicelineType": "4007",
+			"description": "Они устраивают просто потрясающие выступления, не правда ли? Вовлекают вас в собственный волшебный мир, где, с одной стороны, всё происходящее не более, чем ловкий обман, а с другой - возможны любые чудеса, если только вы готовы в них поверить.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "О Сиджвин...",
+			"voicelineType": "4008",
+			"description": "Не знаю, как Сиджвин сейчас поживает. Но если я только узнаю, что её хоть в чём-то обижают, я сразу призову к себе Ризли и потребую объяснений. Она так добра, её легко ранить... В свой прошлый визит она привезла мне несколько плёнок со снимками и попросила рассказать больше о том, как мне понравилась вода Натлана... Когда уже там её следующий отпуск?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "О Фурине...",
+			"voicelineType": "4009",
+			"description": "Наконец-то занавес её представления опустился. Театр - это всего лишь игра воображения, но Фурина смогла воспользоваться ей, чтобы исполнить свой долг. Чтобы наполниться решимостью, слабые должны опираться на заложенное в них безумие, и Фурина испила эту чашу сполна. Если будет возможность, надо будет воздать ей должное аплодисментами. Да, как только представится случай.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "О Навии...",
+			"voicelineType": "4010",
+			"description": "Мне жаль так говорить, но после всех наших столкновений - когда я нечаянно разгневал её и когда принял её извинения - да даже сейчас, несмотря на чувство вины за произошедшее с её отцом, я чувствую себя... очень далёким от нее, как будто я наблюдаю за звездным небом со дна глубокого озера. Это ни в коем случае не намеренно, но и исправить это не так легко. Волны эмоций не так легко успокаиваются, как гладь воды.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Словно лёгкий дождь без причины»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "Узнать больше о Нёвиллете I",
+			"voicelineType": "5001",
+			"description": "Обычно я стараюсь не устанавливать личных отношений с другими людьми и даже не сотрудничать с ними вне установленных процедур. Но вы показали себя надёжным человеком, кроме того, вы не замешаны ни в каких запутанных отношениях с различными влиятельными силами Фонтейна. Поэтому я с удовольствием отправлюсь с вами в путешествие.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "Узнать больше о Нёвиллете II",
+			"voicelineType": "5002",
+			"description": "Об этом я могу сказать только в приватной беседе - публично я никогда не смогу поделиться своим мнением: мне совершенно непонятно, как Фонта смогла стать таким популярным напитком. Хотя, наверное, её привлекательность для людей небезынтересна. Одним глотком можно и восстановить водный баланс, и восполнить уровень сахара в крови, и всё это совсем недорого.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "Узнать больше о Нёвиллете III",
+			"voicelineType": "5003",
+			"description": "Недавно я ходил на спектакль. Речь в нём шла о даме, чьё личное обаяние и злонамеренные интриги позволили ей, подобно призраку, не поддающемуся изгнанию, властвовать над делами грандиозного особняка, в котором она жила. Игра актеров была безупречной, а сюжет - исключительным. Он также напомнил мне о сегодняшнем положении дел в реальном мире.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "Узнать больше о Нёвиллете IV",
+			"voicelineType": "5004",
+			"description": "По ряду причин я редко покидаю Фонтейн. Поэтому, хотя я с удовольствием пробую родниковую воду со всего мира, но сам я не предпринимаю путешествий за ней, эту воду мне доставляют сюда. И да, какими бы тонкими ни были вкусовые различия между образцами из разных регионов, я прекрасно умею их различать. Вы сомневаетесь в моих словах? Я - юдекс. Я не лгу.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "Узнать больше о Нёвиллете V",
+			"voicelineType": "5005",
+			"description": "Должен сказать, что моя повседневная жизнь не лишена неудобств. Например, я часто наступаю на полы своего одеяния, когда сажусь, или сминаю свою прическу о кресло. А если слишком откидываю голову назад, то волосы порой цепляются за украшение. Тем не менее я должен носить эту одежду и терпеть все связанные с этим неудобства, поскольку это помогает сохранить достоинство верховного судьи. Кажется, по такому же принципу работает и весь мир в целом. Получив определённый статус, человек должен принять его, понять и научиться с ним сосуществовать. Именно этим я и занимаюсь.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "Хобби Нёвиллета...",
+			"voicelineType": "6001",
+			"description": "Пробовать воду на вкус - целая наука. Если согреть воду элементом Пиро, у неё будет стандартный природный вкус, а вот если вскипятить на углях, то во вкусе появятся буколические нотки. Точно так же вода, охлаждённая Крио, довольно заурядна, совсем другое дело - вода из многолетних льдов Снежной.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "Беспокойство Нёвиллета...",
+			"voicelineType": "6012",
+			"description": "Не выгляжу ли я в дождливые дни странно без зонта?..",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "Любимая еда...",
+			"voicelineType": "6003",
+			"description": "Животные могут довольно долго жить без пищи, но без воды они погибнут за пару дней. Ни один деликатес не сравнится с чистой водой. На втором месте - еда, в которой содержится много воды.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Как люди могут есть жареную или запечённую на огне пищу без соуса? Отдельно хочу критически отметить угольные лепёшки аджиленах, - с таким же успехом можно просто закинуть себе в желудок осушитель.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Очень вкусно. Так сочно, и все ингредиенты приготовлены идеально.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Неплохая попытка. Правда я бы посоветовал увеличить количество жидкости и уменьшить количество жира.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Слишком сухо. Блюдо, лишенное влаги, не может передать чувства повара.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "А, так сегодня у тебя день рождения. Не знаю, планируется ли сегодня дождь, но я посмотрю, что можно сделать.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Теперь я знаю тебя немного лучше, мы можем согласовывать действия.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Видимо, мне придётся раскрыть тебе чуть больше моих истинных способностей. Не думал, что ты так часто попадаешь в опасные ситуации.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Так вот что ты на самом деле можешь? Тогда мне придётся серьёзно взяться за дело, если я хочу тебя догнать.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Сейчас, когда я вернул из рук узурпаторов часть власти семерых, я вновь обрёл свой истинный облик. Теперь я достигший полной формы дракон, достаточно могущественный, чтобы судить остальных богов. Моя судьба - свершить суд над королём-узурпатором в небесах. Но пока это время не настало, я не против использовать свою силу, чтобы помочь тебе.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Требую тишины!",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Склоните голову.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Прекратите шум.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "О волны, я возвратился.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Прими очищение.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Да смирятся сильные мира сего.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Брошенное имущество принадлежит тому, кто первым его найдет. Так что по закону это теперь твоё.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Это то, что ты искал{F#а}? Надеюсь, что как минимум ты испытал{F#а} приятное чувство предвкушения.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Я в устной форме даю согласие на передачу этих предметов в твоё распоряжение.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Волноваться не о чем. Я практически невредим.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Риск нарастает, но для меня это не представляет угрозы.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Хм... Кажется, в моей одежде появилась прореха.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Позволь мне вмешаться.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Тебе следует отдохнуть.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Я вернусь с приливом...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Я вижу тёплые воды прежних эпох...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Кругом всё наполнилось тишиной...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Правосудие застигнуто врасплох...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Это мой недосмотр.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Спасибо за разрешение... прости, приглашение присоединиться.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Безмерно рад.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Возможно, мы могли бы прогуляться по берегу реки или в другом подобном месте.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

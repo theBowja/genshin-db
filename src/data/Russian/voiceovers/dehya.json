@@ -1,0 +1,767 @@
+{
+	"id": 10000079,
+	"name": "Dehya",
+	"friendLines": [
+		{
+			"voicelineId": 79000,
+			"title": "Привет...",
+			"voicelineType": "1006",
+			"description": "Меня зовут Дэхья. Я наёмник, про которого ты спрашивал{F#а}. Есть для меня поручение? Сражение? Конвой? Что бы это ни было - ты знаешь, где меня найти.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_draw_appear_01"
+		},
+		{
+			"voicelineId": 79001,
+			"title": "Поболтаем: Наёмники",
+			"voicelineType": "1101",
+			"description": "У нас, наёмников, правило простое: кто больше платит, тот и главный.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_character_idle_01"
+		},
+		{
+			"voicelineId": 79002,
+			"title": "Поболтаем: Пустыня",
+			"voicelineType": "1102",
+			"description": "Пустыня - суровый противник, но она, по крайней мере, ничего не скрывает. Все опасности на виду - лишь тебе решать, готов{F#а} ли ты испытать себя.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_character_idle_02"
+		},
+		{
+			"voicelineId": 79003,
+			"title": "Поболтаем: Мой народ",
+			"voicelineType": "1103",
+			"description": "Мой народ привык к жизни в пустыне... Но я всё равно надеюсь, что однажды они смогут оставить песчаные бури позади и счастливо жить в каком-нибудь оазисе.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_character_idle_03"
+		},
+		{
+			"voicelineId": 79004,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Старики из Пустынников говорят, что и в пустыне иногда случаются дожди. А если уж идут, но намного сильнее, чем этот.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 79005,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1202",
+			"description": "Ничего себе, как грохочет... Зато враги нас не услышат. Правда, мы их тоже.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_weather_thunder_01"
+		},
+		{
+			"voicelineId": 79006,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1203",
+			"description": "Бр-р... Здесь даже холоднее, чем ночью в пустыне.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_weather_snowy_01"
+		},
+		{
+			"voicelineId": 79007,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1204",
+			"description": "Вот и солнышко... Даже обидно, что у меня сегодня столько работы.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_weather_sunny_01"
+		},
+		{
+			"voicelineId": 79008,
+			"title": "Когда дует сильный ветер...",
+			"voicelineType": "1205",
+			"description": "Ветер поднялся... Разобьём лагерь с подветренной стороны - так безопасней.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_weather_breezy_01"
+		},
+		{
+			"voicelineId": 79009,
+			"title": "В пустыне...",
+			"voicelineType": "1206",
+			"description": "Держись рядом и никуда не убегай. Пустыня не знает, что такое жалость.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_weather_desert_01"
+		},
+		{
+			"voicelineId": 79010,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Вижу, ты уже готов{F#а} к подвигам. Тогда собираемся и выступаем.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 79011,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Уже день?.. Ладно, сейчас присмотрю местечко для привала, и сообразим что-нибудь на обед.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 79012,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Ты всё ещё работаешь? А я думала, это у наёмников жизнь тяжёлая.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 79013,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Уже поздно. Я останусь дежурить, а ты ложись спать.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 79014,
+			"title": "О Дэхье: Пустынники",
+			"voicelineType": "2001",
+			"description": "«Пустынники» - что-то вроде титула, любой наёмник Сумеру может объявить себя Пустынником. К сожалению, некоторые наёмники называются Пустынниками, чтобы нагнать страху на чужеземцев. По их милости теперь слово «Пустынники» внушает людям одно отвращение.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_idle"
+		},
+		{
+			"voicelineId": 79015,
+			"title": "О Дэхье: Отец",
+			"voicelineType": "2005",
+			"description": "Его звали Кусайла... Наёмником он был никчёмным, любил показуху. Но он спас меня от смерти в пустыне и постарался передать мне всё, что у него было.\nБлагодаря ему я выросла и стала той, кем стала.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Львиная кровь»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						13026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79016,
+			"title": "О нас: Великие подвиги",
+			"voicelineType": "2003",
+			"description": "Знаешь, вокруг только и разговоров, что о твоих подвигах. И ребята из моего отряда не устают тобой восхищаться, несколько человек даже просили, чтобы я вас познакомила.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Львиная кровь»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						13026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79017,
+			"title": "О нас: Товарищи по оружию",
+			"voicelineType": "2002",
+			"description": "Друзья? Хм-м... Не знаю, мы столько раз выручали друг друга из разных передряг, столько раз сражались плечом к плечу, что слово «друзья» кажется мне слишком легковесным.\nДай подумать... может, «товарищи по оружию»? Наша дружба закалена в огне сражений, разорвать такую связь почти невозможно.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79018,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Что изменил в моей жизни Глаз Бога? Гм... Само собой, он служит подспорьем в бою. Но самое главное, что Глаз Бога помог мне привлечь новых наёмников в отряд «Пламенные звери».",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Львиная кровь»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						13026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79019,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "Ты ведь пробовал{F#а} орехи аджиленах? В детстве я их обожала. Но отец совсем не умел их чистить, он просто лупил по ним ножом, превращая мякоть в несъедобное месиво. Потом он отскребал мякоть от скорлупы, смешивал с молоком и говорил мне, что это каша.\nИногда я с грустью вспоминаю вкус той каши... И отца, сражающегося с орехами.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_share_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Львиная кровь»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						13026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79020,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Многие люди считают красных стервятников предвестниками смерти и беды, потому что они питаются мертвечиной. Но когда я вижу, как стервятники парят, раскинув крылья над пустыней... для меня это символ стойкости и жизнелюбия.\nИнтересно, как выглядит Море красных песков с высоты птичьего полёта?",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_pref_gift_01"
+		},
+		{
+			"voicelineId": 79021,
+			"title": "О Тигнари...",
+			"voicelineType": "4001",
+			"description": "Ха-ха-ха, представляешь, однажды я чуть было не нанялась к нему в проводники! Тигнари узнал обо мне от знакомых, ему требовался проводник в пустыне, чтобы провести какое-то исследование. Но потом он передумал... Кажется, дело было в том, что он не выносит жары. А может, нашлась другая причина, уже не помню...",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79022,
+			"title": "О малой властительнице Кусанали...",
+			"voicelineType": "4002",
+			"description": "Хм... Знаешь, раньше я думала, что все эти мудрецы в Академии - просто стая жадных гиен, которые не могут поделить кусок мяса... А оказалось, это не гиены, а неблагодарные волки, поднявшие мятеж. По-моему, малая властительница Кусанали была к ним слишком добра. Эти поганцы заслужили того, чтобы им все кости переломали! А она отправила их в лес на покой... Слишком уж легко они отделались!",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79023,
+			"title": "О Кандакии...",
+			"voicelineType": "4003",
+			"description": "Кандакия... Я её просто обожаю, но иногда она бывает упрямой, как вьючный як. Я постоянно говорю, что надо иногда отдыхать, устраивать себе каникулы... Мы могли бы прогуляться по городу Сумеру, купить красивых нарядов или украшений... Но она каждый раз мне отказывает, твердит, что не может оставить деревню. Наверное, придётся мне подежурить в деревне вместо Кандакии и отправить кого-нибудь из девочек нашего отряда прогуляться с ней по Сумеру.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_candace_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79024,
+			"title": "Об аль-Хайтаме...",
+			"voicelineType": "4004",
+			"description": "Он предлагал мне работу в Академии, но я отказалась. Сидеть в этом болоте - скука смертная. Зато ему в Академии самое место, он ведь у нас такой речистый, и ни слова не может сказать, чтобы не съязвить. Пфф...",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79025,
+			"title": "О Сайно...",
+			"voicelineType": "4005",
+			"description": "Генерал махаматра? Крутой парень, сразу берёт быка за рога. Мне нравится, как он работает, молодец.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79026,
+			"title": "О Нилу...",
+			"voicelineType": "4006",
+			"description": "Теперь, когда заваруха с Академией позади, Нилу может танцевать, где и когда ей захочется. Ещё она хотела отсыпать мне немного своей пудры, но я всё время на заданиях. Так что я предложила ей поделиться пудрой с Кандакией. Да... Надо будет найти время и проведать её.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79027,
+			"title": "О Дори...",
+			"voicelineType": "4007",
+			"description": "А, знаменитая негоциантка. Говорят, она может достать любой товар, вот только обойдётся это недёшево. Верно? Ха-ха, тогда надо мне с ней повидаться. Просто... Некоторые вещицы, нужные наёмникам, на рынке ни за какие деньги не купишь.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79028,
+			"title": "О Лайле...",
+			"voicelineType": "4008",
+			"description": "Да, помню её, вечно спит на ходу. Однажды я встретила её в оазисе на окраине пустыни. Она была с какой-то группой из Академии, занималась астрономическими наблюдениями или чем-то вроде того. Я не придала особенного значения той встрече. Что? Кандакия?.. Звёздный посланник?.. Полная чушь. Ей бы не помешало наконец проснуться.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_teammate_layla_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79029,
+			"title": "Узнать больше о Дэхье I",
+			"voicelineType": "5001",
+			"description": "Я росла среди наёмников, играла мечами и ножами из дерева, и все люди вокруг либо служили наёмниками, либо собирались стать наёмниками. И даже ели мы из деревянных мисок, которые выстругали ребята из нашего отряда. Когда ты с раннего детства растёшь в таком окружении, кем ещё тебе быть, если не наёмником?",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_friendship_01"
+		},
+		{
+			"voicelineId": 79030,
+			"title": "Узнать больше о Дэхье II",
+			"voicelineType": "5002",
+			"description": "Где моё место? Не знаю. Никогда об этом не думала. Но если надо обязательно что-то выбрать... Большую часть жизни я провела в пустыне, так что, наверное, моё место здесь.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79031,
+			"title": "Узнать больше о Дэхье III",
+			"voicelineType": "5003",
+			"description": "У наёмников жизнь не сахар. Получить работу - та ещё задачка, но труднее всего бывает выбить из заказчика мору, когда работа выполнена. Академия - мой любимый заказчик, они никогда не забывают заплатить. С Гильдией искателей приключений тоже приятно иметь дело. Но вот торговцы со своими караванами - это просто кошмар. Постоянно твердят, что пустили всю мору в оборот, поэтому платёж придётся отложить. «Подожди ещё пару дней, ладно?»\nЕсли у тебя так туго с наличными, откуда в твоей повозке столько товаров, м?",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79032,
+			"title": "Узнать больше о Дэхье IV",
+			"voicelineType": "5004",
+			"description": "После той истории Академия стала относиться к нам добрее. Я слышала, они выпустили целый свод новых законов для поддержки жителей пустыни. Хм, мне их читать бесполезно, ни слова не пойму... Но надеюсь, что теперь о Стену Самиэль будут разбиваться только песчаные бури, а не надежды и мечты моего народа.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79033,
+			"title": "Узнать больше о Дэхье V",
+			"voicelineType": "5005",
+			"description": "Большинство наёмников мечтают прославиться и разбогатеть. Они берутся за самые трудные поручения, чтобы заработать мору и покрыть себя славой. Некоторым везёт: они остаются в живых и становятся легендами, а другие безвестно погибают в пустыне.\nМои цели куда скромнее, мне просто хочется, чтобы дорогие мне люди были в безопасности, чтобы они могли спокойно жить своей жизнью. Правда, получать мору за работу я тоже люблю, ха-ха.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79034,
+			"title": "Хобби Дэхьи...",
+			"voicelineType": "6001",
+			"description": "Я обожаю перебирать сокровища в своей косметичке. Сколько моры я потратила на все эти пудры и кисти! Только посмотри на эту пудру, какой мелкий помол! Макияж не поплывёт, даже если вспотеешь или попадёшь под дождь. Да уж, такой товар стоит своих денег.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_pref_hobby"
+		},
+		{
+			"voicelineId": 79035,
+			"title": "Беспокойство Дэхьи...",
+			"voicelineType": "6002",
+			"description": "Заказчики опять не платят, а ещё несколько парней из отряда снова попали в беду на задании... Я никакой не командир, но почему-то не могу выкинуть это из головы...",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Завершите главу «Львиная кровь»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						13026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79036,
+			"title": "Любимая еда...",
+			"voicelineType": "6005",
+			"description": "Само собой, засахаренные орехи аджиленах. Вкусные, и в дороге не портятся.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 79037,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Ненавижу горькое. Просто на дух не переношу.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_pref_foodDislike"
+		},
+		{
+			"voicelineId": 79038,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Вкус просто потрясающий! Но лучше остановиться, иначе я потом никогда не смогу есть свой дорожный провиант.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_spice_pref_01"
+		},
+		{
+			"voicelineId": 79039,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Ммм, неплохо... ну, вкуснее, чем мой дорожный провиант.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_spice_normal_01"
+		},
+		{
+			"voicelineId": 79040,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Знаешь, если ничего другого нет, это по крайней мере... сытно. А сытная еда - хорошая еда! Ха-ха-ха...",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_spice_dislike_01"
+		},
+		{
+			"voicelineId": 79041,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "С днём рождения! Проверь карманы, твой подарок уже там! Как мне это удалось? Хе-хе, ловкость рук, базовый навык любого наёмника! Но это ладно, ещё я заказала тебе настоящий пир в таверне Ламбада, пойдём скорее туда. А? Да не бойся, из отряда буду только я. С этим галдящим сбродом весь праздник пойдёт насмарку. Такой день бывает только раз в году, давай проведём его вместе? Идём, за мной!",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 79042,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Ого! Ничего себе... Силы и правда прибавилось.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79043,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Классное ощущение! Больше сил в руках, чтобы размахивать мечом.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79044,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Как много силы... Так и хочется проверить её в деле. Может, устроим небольшой поединок?",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 79045,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Я и представить не могла, что достигну такого уровня... Спасибо тебе. Ну как, у тебя есть для меня задание? Соглашусь на любую работу - одно твоё слово, и я в деле.",
+			"voicefile": "VO_friendship/VO_dehya/vo_dehya_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 79046,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "За дело!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_skill1_01"
+		},
+		{
+			"voicelineId": 79047,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Забудьте о пощаде.",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_skill1_02"
+		},
+		{
+			"voicelineId": 79048,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Вперёд!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_skill1_03"
+		},
+		{
+			"voicelineId": 79049,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Выдержишь?",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_skill3_01"
+		},
+		{
+			"voicelineId": 79050,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "От тебя мокрого места не останется!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_skill3_02"
+		},
+		{
+			"voicelineId": 79051,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Ну, держись!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_skill3_03"
+		},
+		{
+			"voicelineId": 79052,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Ого, неожиданно...",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_chest_open_01"
+		},
+		{
+			"voicelineId": 79053,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Ха-ха-ха, неплохой улов!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_chest_open_02"
+		},
+		{
+			"voicelineId": 79054,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Это можно будет неплохо продать...",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_chest_open_03"
+		},
+		{
+			"voicelineId": 79055,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Ох... А ты молодец!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_less30_01"
+		},
+		{
+			"voicelineId": 79056,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Ладно, шутки в сторону!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_less30_02"
+		},
+		{
+			"voicelineId": 79057,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Вот и отлично... Ох!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_less30_03"
+		},
+		{
+			"voicelineId": 79058,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Возьми себя в руки!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 79059,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Уходи, я прикрою!",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 79060,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Здорово меня... отделали...",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_die_01"
+		},
+		{
+			"voicelineId": 79061,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Я всё испортила...",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_die_02"
+		},
+		{
+			"voicelineId": 79062,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Судьба любого... наёмника...",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_life_die_03"
+		},
+		{
+			"voicelineId": 79063,
+			"title": "Получен лёгкий удар I",
+			"voicelineType": "900001",
+			"description": "Тебя кто такому научил?",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_hit_L_01"
+		},
+		{
+			"voicelineId": 79064,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Впечатляет...",
+			"voicefile": "VO_gameplay/VO_dehya/vo_dehya_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 79065,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Как скажешь.",
+			"voicefile": "VO_teamJoin/vo_dehya_teamJoin_01"
+		},
+		{
+			"voicelineId": 79066,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Есть работа?",
+			"voicefile": "VO_teamJoin/vo_dehya_teamJoin_02"
+		},
+		{
+			"voicelineId": 79067,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Пора за работу.",
+			"voicefile": "VO_teamJoin/vo_dehya_teamJoin_03"
+		}
+	]
+}

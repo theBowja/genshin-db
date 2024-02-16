@@ -1,0 +1,860 @@
+{
+	"id": 10000073,
+	"name": "Nahida",
+	"friendLines": [
+		{
+			"voicelineId": 73000,
+			"title": "Hola...",
+			"voicelineType": "1006",
+			"description": "¡Encantada de conocerte! En realidad llevo mucho tiempo observándote. Me llamo Nahida. Aunque tenga el aspecto de una niña, sé más de este mundo que la mayoría de los adultos. ¡Deberíamos intercambiar conocimientos! Quiero escucharlo todo sobre tus viajes, así que ¿qué te gustaría saber?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_draw_appear_01"
+		},
+		{
+			"voicelineId": 73001,
+			"title": "Charla - Invitación",
+			"voicelineType": "1101",
+			"description": "Si no tienes nada que hacer, ¿qué te parece si te acompaño a dar un paseo?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_01"
+		},
+		{
+			"voicelineId": 73002,
+			"title": "Charla - Preocupaciones",
+			"voicelineType": "1102",
+			"description": "¿Hay algo que te preocupa? Esforcémonos amb{F#as}{M#os}, ¡dos cabezas piensan mejor que una!",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_02"
+		},
+		{
+			"voicelineId": 73003,
+			"title": "Charla - Apreciación",
+			"voicelineType": "1103",
+			"description": "Es cierto eso que dicen: para poder apreciar la belleza de este mundo, debes verlo con tus propios ojos.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_03"
+		},
+		{
+			"voicelineId": 73004,
+			"title": "Cuando llueve...",
+			"voicelineType": "1201",
+			"description": "¡Resguardémonos de la lluvia o nos crecerán champiñones en la cabeza!",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 73005,
+			"title": "Cuando truena...",
+			"voicelineType": "1202",
+			"description": "¿Sabías que el sonido del trueno es el preludio de una nueva vida? *Suspira*, pronto toda la tierra se empapará de vitalidad.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_thunder_01"
+		},
+		{
+			"voicelineId": 73006,
+			"title": "Cuando nieva...",
+			"voicelineType": "1203",
+			"description": "¿Tú también lo oyes? El cielo le está susurrando a todo ser vivo: “Es hora de dormir”.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_snowy_01"
+		},
+		{
+			"voicelineId": 73007,
+			"title": "Qué sol hace...",
+			"voicelineType": "1204",
+			"description": "Qué tiempo tan cálido y agradable. Las cosas están volviendo a cobrar vida.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_sunny_01"
+		},
+		{
+			"voicelineId": 73008,
+			"title": "Cuando hace viento...",
+			"voicelineType": "1205",
+			"description": "Nunca sopla el viento en el Santuario Surasthana... Oh, lo siento. Supongo que es muy obvio para ti.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_breezy_01"
+		},
+		{
+			"voicelineId": 73009,
+			"title": "Buenos días...",
+			"voicelineType": "1001",
+			"description": "¡Buenos días! Deberíamos ponernos en marcha. Hay demasiadas cosas que hacer en este mundo y el tiempo no espera a nadie.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 73010,
+			"title": "Buenas tardes...",
+			"voicelineType": "1002",
+			"description": "Hora de descansar. Me apetece una bebida de bayas y menta... Si me traes un vasito, te contaré alguna historia sobre el sol, ¿qué te parece?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 73011,
+			"title": "Buenas noches... (I)",
+			"voicelineType": "1003",
+			"description": "El sol se está poniendo. Es hora de despedirse y dejar que las criaturas nocturnas tomen el relevo.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73012,
+			"title": "Buenas noches... (II)",
+			"voicelineType": "1004",
+			"description": "Deberías irte a dormir. Y no te preocupes. Te he preparado unos dulces sueños para hoy.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 73013,
+			"title": "Sobre Nahida - Conocimiento",
+			"voicelineType": "2001",
+			"description": "¿Mare Jivari? Un lugar sin absolutamente nada, completamente vacío, como el cerebro de un micóquero. Claro que lo conozco. ¿Eh? P-pues no, nunca lo he visto con mis propios ojos. Es uno de esos lugares que están fuera de mi alcance.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle"
+		},
+		{
+			"voicelineId": 73014,
+			"title": "Sobre Nahida - Obsesión",
+			"voicelineType": "2005",
+			"description": "Los dioses solo dotaron a los humanos con el saber necesario para poder alimentarse, pero ellos lo utilizaron para crear herramientas, escribir libros y construir ciudades. Y ahora han fijado la mirada en las estrellas y el abismo... Los humanos crean conocimiento a cada momento que pasa, así que nunca les voy a quitar la vista de encima.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73015,
+			"title": "#Sobre nosotr{F#a}{M#o}s - Hora de un cuento",
+			"voicelineType": "2003",
+			"description": "Todo lo que has vivido durante tu viaje es mucho más emocionante que cualquier cosa que yo haya aprendido. Y ahora tengo la oportunidad de preguntarte todo lo que quiera para comprender todos los detalles. Me hace muy feliz. Bueno, no perdamos más tiempo. ¿Por dónde íbamos?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close"
+		},
+		{
+			"voicelineId": 73016,
+			"title": "#Sobre nosotr{F#a}{M#o}s - Viaje",
+			"voicelineType": "2002",
+			"description": "El mero acto de escuchar no es suficiente para mí. Siempre he soñado con salir al mundo y experimentar las cosas por mí misma. Y tú eres {F#una aventurera}{M#un aventurero} con tanta experiencia... ¿Podrías ser mi guía? Me gustaría vivir tus futuras historias de primera mano.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73017,
+			"title": "Sobre la Visión...",
+			"voicelineType": "3001",
+			"description": "Los cielos abrieron sus ojos para poder admirar la magnificencia del mundo a sus pies, pero los humanos ya poseían el don de la vista. ¿Qué es lo que ven los humanos cuando contemplan el mundo no a través de sus ojos, sino a través de su Visión? Con lo inteligente que eres, seguro que eres capaz de descubrirlo.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73018,
+			"title": "¿Algo que decir?",
+			"voicelineType": "3002",
+			"description": "Con demasiada frecuencia, no es hasta que algo nos hiere en lo más profundo de nuestro ser que nos percatamos de la desidia, la ignorancia, la imprudencia y la arrogancia que nos ciegan. Y aun así no debemos lamentarnos. Es imposible prever todas las posibilidades que nos esperan en el futuro, así que dependemos del ensayo prueba-error para obtener conocimiento. El dolor es algo así como el precio que debemos pagar por ello.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_share_01"
+		},
+		{
+			"voicelineId": 73019,
+			"title": "Una noticia interesante - Preantesis",
+			"voicelineType": "3003",
+			"description": "El desierto de Sumeru da la impresión de estar más desolado que la selva, pero es también hogar de una antigua civilización y posee un ecosistema estable de lo más particular. Un día, cuando zanje sus disputas con el bosque, estoy segura de que las flores se abrirán allí de una manera nunca antes vista.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_gift_01"
+		},
+		{
+			"voicelineId": 73020,
+			"title": "Sobre Cyno - Chistes",
+			"voicelineType": "4001",
+			"description": "Sus chistes son como un tesoro enterrado: joyas ocultas bajo la superficie. A mí me parecen muy divertidos. ¿Eh? ¿Qué es lo que no entiendes de ellos? A ver, deja que te los explique.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73021,
+			"title": "Sobre Cyno - Deber",
+			"voicelineType": "4002",
+			"description": "No todos los Grandes Jueces serían capaces de adoptar una posición tan clara al enfrentarse a la coyuntura entre orden y justicia. Probablemente sea consciente de que el compromiso es un callejón sin salida. Tenemos mucha suerte en Sumeru de que vuelva a ocupar su legítimo puesto.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73022,
+			"title": "Sobre Tignari...",
+			"voicelineType": "4003",
+			"description": "Nuestros bosques no habrían sido capaces de hacer frente a las zonas marchitas y haber seguido floreciendo a pesar de ellas si no fuera por los guardas forestales, y Tignari es el mejor entre los mejores. No obstante, espero que aprenda a ser un poco más amable con la gente. Si no, a los guardabosques les costará encontrar nuevos reclutas de gran talento.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73023,
+			"title": "Sobre Collei...",
+			"voicelineType": "4004",
+			"description": "Cuando escuché su historia por primera vez, su tenacidad me pareció como una gema que brilla con un singular fulgor. Ha pasado por tantas cosas... Espero que, igual que la selva acoge toda clase de vida, Sumeru sea siempre un entorno donde se sienta protegida y a salvo para que pueda seguir creciendo sana y fuerte.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73024,
+			"title": "Sobre Alhacén...",
+			"voicelineType": "4005",
+			"description": "Posee un acervo de conocimiento mucho más avanzado de lo que cabría imaginar, y su mente siempre está pensando. No creo que haya nada en este mundo capaz de engañarle. Pero ¿un hombre sabio es realmente sabio si ve al pueblo llano como algo defectuoso? Al fin y al cabo, sin esa parte de la gente, no existiría un “nosotros”.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73025,
+			"title": "Sobre Nilou...",
+			"voicelineType": "4006",
+			"description": "Una vez tomé prestado el cuerpo de una persona para preguntarle si le gustaría que la Reina Menor Kusanali la viera bailar. Ya la había visto bailar antes unas cuantas veces, pero quería asistir personalmente al Festival Sabzeruz como muestra de respeto. Sin embargo, rechazó la oferta con delicadeza... Debo admitir que me dolió un poco.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73026,
+			"title": "Sobre Dori...",
+			"voicelineType": "4007",
+			"description": "Lo primero que dijo al verme fue: “Bonito palacio. Dame un precio”. Obviamente no iba a venderle el Santuario Surasthana, pero lo que dijo me dejó pasmada. Aunque lo he pensado largo y tendido, no sé muy bien cuánta cantidad de Moras sería la adecuada.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73027,
+			"title": "Sobre Kaveh...",
+			"voicelineType": "4008",
+			"description": "Entiende casi a la perfección lo que significa que Sumeru sea la Nación de la Sabiduría. Por desgracia, ese concepto que tiene nunca será aceptado de manera generalizada. ¿Eh? ¿Que es compañero de piso de Alhacén? Guau... El mundo está lleno de sorpresas...",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73028,
+			"title": "Sobre Faruzán...",
+			"voicelineType": "4009",
+			"description": "Su cuerpo sufre por haberse expuesto al poder remanente de las ruinas del Rey Deshret. Es como si la gran tortuga que es el tiempo la hubiera arrojado por accidente de su caparazón y se hubiera quedado atrapada en el pasado. Si te interesa, seguro que con ella puedes aprender mucho sobre Sumeru en los viejos tiempos.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73029,
+			"title": "Sobre Los Siete - Presentación",
+			"voicelineType": "4010",
+			"description": "Parece ser que hace mucho, mucho tiempo, los siete Arcontes mantenían el contacto entre sí, pero mi caso es un poquito particular, así que no recuerdo nada de aquella época. Ahora que todo marcha bien en Sumeru, tal vez debería ponerme en contacto con ellos otra vez. Tú los conoces, ¿verdad? ¿Podrías presentármelos?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73030,
+			"title": "Sobre Los Siete - Juegos",
+			"voicelineType": "4011",
+			"description": "Dicen que jugar a algo juntos es la mejor forma de conocerse. Supongo que también servirá para los dioses. Si nos reunimos, ¡les diré de jugar a la rayuela! Aunque pensándolo bien, tal vez no sea buena idea. Si yo dibujo los cuadraditos, parecerá que los he hecho más pequeños a propósito para ganar. Eso no sería justo para los demás.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73031,
+			"title": "Sobre El Baladista...",
+			"voicelineType": "4012",
+			"description": "Me pregunto si se sintió al fin satisfecho cuando logró aquello que tanto deseaba o si, por el contrario, se sintió aún más vacío por dentro. Anhelamos tanto los cielos precisamente porque no podemos volar... Humm, tal vez debería reflexionar al respecto cuando haya sentido en sus propias manos la nada que impera en los cielos.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_scaramouche_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73074,
+			"title": "Sobre Furina...",
+			"voicelineType": "4013",
+			"description": "La gente suele decir que no es sabio quien sabe muchas cosas, sino quien sabe qué cosas puede cambiar. No cabe duda de que esa profecía estaba escrita en el Irminsul desde hace mucho tiempo... Y aunque parezca que nada ha cambiado, también parece que todo es diferente. Tanto tú como yo sabemos que Furina posee la inteligencia necesaria para cambiar el destino del mundo.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa la misión «Mascarada de los culpables»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73032,
+			"title": "Más sobre Nahida (I)",
+			"voicelineType": "5001",
+			"description": "Mi pasado es bastante monótono. Podría contártelo todo, pero no tardarías en dejar escapar un gran bostezo cual pez globo que absorbe un montón de agua. Sin embargo, la curiosidad lo es todo en este mundo, así que no me gustaría que la tuya se echara a perder... Ah, ya sé, te hablaré de mis sueños.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_01"
+		},
+		{
+			"voicelineId": 73033,
+			"title": "Más sobre Nahida (II)",
+			"voicelineType": "5002",
+			"description": "A veces sueño con una maceta. Cada vez que la riego o uso fertilizante, crece la misma flor. ¿Es posible apreciar los cuidados de una planta cuando conoces de antemano el resultado? Jeje, al menos a mí me alegra que, cada vez que florece, atrae a mariposas de colores diferentes. A veces, incluso a abejas.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73034,
+			"title": "Más sobre Nahida (III)",
+			"voicelineType": "5003",
+			"description": "A veces sueño con un reloj de arena. Me gusta añadirle un par de gotas de agua, agitarlo, cronometrar cuánto tarda en caer la arena por completo y comprobar si ha habido alguna diferencia con respecto a la última vez. No lo hago por ninguna razón, ni tampoco es que gane nada con ello, pero de algún modo me ayuda a aliviar el cansancio. Creo que la carencia de una razón es precisamente lo que lo hace divertido.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73035,
+			"title": "Más sobre Nahida (IV)",
+			"voicelineType": "5004",
+			"description": "A veces sueño con un espacio vacío. No importa cómo cambie el paisaje a su alrededor, el vacío siempre ocupa el lugar más importante. Es extraño, ¿no crees? Estoy convencida de que había algo en ese lugar, pero a pesar del poder que tengo sobre los sueños, soy incapaz de descubrir qué era. Humm, parece que todavía hay cosas que escapan a mi control, incluso en mis propios sueños.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73036,
+			"title": "Más sobre Nahida (V)",
+			"voicelineType": "5005",
+			"description": "En mis sueños hay de todo; de todo menos gente. Aunque es cierto que, desde que te conocí, mis sueños ya no son tan solitarios. Tal vez seas como {F#una}{M#un} guía que añade el toque humano a mis sueños y me lleva hasta fuera de mi jaula. Jeje, en marcha. El viaje apenas comienza y me gustaría que siguieras liderando el camino.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73037,
+			"title": "Aficiones de Nahida...",
+			"voicelineType": "6001",
+			"description": "Humm, ¿observarte cuenta como afición? Es que todo lo que haces me resulta fascinante. Viajas por todo el mundo... ¿De dónde vienes? ¿A dónde irás? ¿A quién conocerás? ¿Qué clase de retos tendrás que superar? Me encantaría saber las respuestas a todas esas preguntas y a muchas más. Espero que no te moleste, pero me gustaría seguir observándote todo el tiempo.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_hobby"
+		},
+		{
+			"voicelineId": 73038,
+			"title": "Preocupaciones de Nahida...",
+			"voicelineType": "6002",
+			"description": "Tengo un don para hacer las preguntas adecuadas y para responderlas, pero con el tiempo me he dado cuenta de que muchos fingen no comprender. Responder a sus preguntas no sirve de nada. Empiezo a creer que, cuanto más crece la gente, menos se atreve a cuestionar las cosas y a aceptar la verdad...",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_annoyed"
+		},
+		{
+			"voicelineId": 73039,
+			"title": "Comida que más le gusta...",
+			"voicelineType": "6005",
+			"description": "¡Sin duda son los dátiles caramelizados! Un solo bocado y mi cerebro empieza a funcionar a toda máquina. De repente, cualquier problema deja de ser difícil. Pero sí tienes que tener cuidado con una cosa: no pongas el tarro en un lugar fácil de alcanzar.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 73040,
+			"title": "Comida que menos le gusta...",
+			"voicelineType": "6004",
+			"description": "Las criaturas marinas nacen en medio de la completa oscuridad y viven en lo más profundo del océano. Es algo totalmente desconocido para mí. Por eso, comer marisco es como tragar un pegajoso pedacito de nube de tormenta.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodDislike"
+		},
+		{
+			"voicelineId": 73041,
+			"title": "Al recibir un regalo (I)",
+			"voicelineType": "6007",
+			"description": "Mmm, ¡gracias! Espero que el mundo no olvide nunca este sabor.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_pref_01"
+		},
+		{
+			"voicelineId": 73042,
+			"title": "Al recibir un regalo (II)",
+			"voicelineType": "6008",
+			"description": "Jeje, te lo agradezco mucho. Está muy rico.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_normal_01"
+		},
+		{
+			"voicelineId": 73043,
+			"title": "Al recibir un regalo (III)",
+			"voicelineType": "6009",
+			"description": "¿Cómo explicártelo? Digamos que... nunca le darías jugo de verduras a un cachorrito, ¿verdad?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_dislike_01"
+		},
+		{
+			"voicelineId": 73044,
+			"title": "Cumpleaños...",
+			"voicelineType": "7001",
+			"description": "He estado pensando que tenemos que celebrar tu cumpleaños por todo lo alto, ¡como el Festival Sabzeruz! Así que... ¿Eh? ¿Te parece demasiado? Pero ya he hecho que lo preparen todo. ¡Anda, vamos! Solo será esta vez. ¡Ya verás qué divertido!",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 73045,
+			"title": "El sentimiento de Ascensión - Introducción",
+			"voicelineType": "8001",
+			"description": "¡Ahora soy un poquito más lista!",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73046,
+			"title": "El sentimiento de Ascensión - Desarrollo",
+			"voicelineType": "8002",
+			"description": "Mi mente se amplía cada vez más. Siento como si en ella cupieran todo el cielo y el océano.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73047,
+			"title": "El sentimiento de Ascensión - Nudo",
+			"voicelineType": "8003",
+			"description": "Me siento como un loto nilotpala que se ha reencontrado con sus hojas, o como una perla de coral que ha vuelto a su concha marina.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73048,
+			"title": "El sentimiento de Ascensión - Desenlace",
+			"voicelineType": "8004",
+			"description": "Muchas gracias por permitirme ser tu compañera y enseñarme tantas cosas nuevas. Quiero concederte mi bendición como Diosa de la Sabiduría: que las nubes de la duda y la dificultad no vuelvan a enturbiar tu camino.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 73049,
+			"title": "Habilidad Elemental (I)",
+			"voicelineType": "100001",
+			"description": "Grabado en la memoria.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_01"
+		},
+		{
+			"voicelineId": 73050,
+			"title": "Habilidad Elemental (II)",
+			"voicelineType": "100002",
+			"description": "¡Crece, crece, crece!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_02"
+		},
+		{
+			"voicelineId": 73051,
+			"title": "Habilidad Elemental (III)",
+			"voicelineType": "100003",
+			"description": "Esto te va a doler un poquito.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_03"
+		},
+		{
+			"voicelineId": 73052,
+			"title": "Habilidad Elemental (IV)",
+			"voicelineType": "100004",
+			"description": "¡Eh!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_04"
+		},
+		{
+			"voicelineId": 73053,
+			"title": "Habilidad Elemental (V)",
+			"voicelineType": "100005",
+			"description": "¡Tómense de las manos!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_05"
+		},
+		{
+			"voicelineId": 73054,
+			"title": "Habilidad Elemental (VI)",
+			"voicelineType": "100006",
+			"description": "Yo lo veo todo.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_06"
+		},
+		{
+			"voicelineId": 73055,
+			"title": "Habilidad Definitiva (I)",
+			"voicelineType": "200001",
+			"description": "¡Siéntanse como en casa!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_01"
+		},
+		{
+			"voicelineId": 73056,
+			"title": "Habilidad Definitiva (II)",
+			"voicelineType": "200002",
+			"description": "¡Les comparto mi conocimiento!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_02"
+		},
+		{
+			"voicelineId": 73057,
+			"title": "Habilidad Definitiva (III)",
+			"voicelineType": "200003",
+			"description": "¡He aquí el templo de la sabiduría!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_03"
+		},
+		{
+			"voicelineId": 73058,
+			"title": "Al abrir un cofre (I)",
+			"voicelineType": "300001",
+			"description": "La curiosidad ha de ser recompensada.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_01"
+		},
+		{
+			"voicelineId": 73059,
+			"title": "Al abrir un cofre (II)",
+			"voicelineType": "300002",
+			"description": "¿De quién será este regalo?",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_02"
+		},
+		{
+			"voicelineId": 73060,
+			"title": "Al abrir un cofre (III)",
+			"voicelineType": "300003",
+			"description": "¿Ves algo que te guste?",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_03"
+		},
+		{
+			"voicelineId": 73061,
+			"title": "Vida baja (I)",
+			"voicelineType": "410001",
+			"description": "Cambiemos de táctica.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_01"
+		},
+		{
+			"voicelineId": 73062,
+			"title": "Vida baja (II)",
+			"voicelineType": "410002",
+			"description": "¡Se acabaron las peleas!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_02"
+		},
+		{
+			"voicelineId": 73063,
+			"title": "Vida baja (III)",
+			"voicelineType": "410003",
+			"description": "Esa no ha sido una sabia decisión.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_03"
+		},
+		{
+			"voicelineId": 73064,
+			"title": "Aliado con vida baja (I)",
+			"voicelineType": "400001",
+			"description": "Deja que piense en algo.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 73065,
+			"title": "Aliado con vida baja (II)",
+			"voicelineType": "400002",
+			"description": "Quien mucho abarca poco aprieta.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 73066,
+			"title": "Derrotada (I)",
+			"voicelineType": "500001",
+			"description": "Toda vida... es pasajera...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_01"
+		},
+		{
+			"voicelineId": 73067,
+			"title": "Derrotada (II)",
+			"voicelineType": "500002",
+			"description": "Me... marchito...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_02"
+		},
+		{
+			"voicelineId": 73068,
+			"title": "Derrotada (III)",
+			"voicelineType": "500003",
+			"description": "No logro... comprenderlo...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_03"
+		},
+		{
+			"voicelineId": 73069,
+			"title": "Recibiendo un fuerte ataque (I)",
+			"voicelineType": "910001",
+			"description": "¡Eso duele!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 73070,
+			"title": "Recibiendo un fuerte ataque (II)",
+			"voicelineType": "910002",
+			"description": "Estoy viendo las estrellas...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 73071,
+			"title": "Unirse al equipo (I)",
+			"voicelineType": "600001",
+			"description": "Llevo esperándote mucho, mucho tiempo.",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_01"
+		},
+		{
+			"voicelineId": 73072,
+			"title": "Unirse al equipo (II)",
+			"voicelineType": "600002",
+			"description": "Hay tantos lugares por explorar...",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_02"
+		},
+		{
+			"voicelineId": 73073,
+			"title": "Unirse al equipo (III)",
+			"voicelineType": "600003",
+			"description": "Otra vez ha llegado la hora de ampliar nuestros horizontes.",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_03"
+		}
+	]
+}

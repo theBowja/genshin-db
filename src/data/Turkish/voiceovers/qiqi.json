@@ -1,0 +1,688 @@
+{
+	"id": 10000035,
+	"name": "Qiqi",
+	"friendLines": [
+		{
+			"voicelineId": 24009,
+			"title": "Merhaba",
+			"voicelineType": "1000",
+			"description": "Adım Qiqi. Ben bir zombiyim ve... Ne diyeceğimi unuttum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_draw_appear"
+		},
+		{
+			"voicelineId": 24010,
+			"title": "Sohbet: Kendi Kendine Konuşma",
+			"voicelineType": "1101",
+			"description": "Baksana, ne oldu biliyor musun? Şey... Ben de bilmiyorum. Unuttum bile.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_01"
+		},
+		{
+			"voicelineId": 24011,
+			"title": "Sohbet: Ateş Korkusu",
+			"voicelineType": "1102",
+			"description": "Daha serin bir yere gidelim.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_02"
+		},
+		{
+			"voicelineId": 24012,
+			"title": "Sohbet: Eğitim",
+			"voicelineType": "1103",
+			"description": "Bir, iki, üç, dört. İki, iki, üç, dört...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_03"
+		},
+		{
+			"voicelineId": 24013,
+			"title": "Yağmur Yağdığında",
+			"voicelineType": "1201",
+			"description": "Yine şemsiyemi unutmuşum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 24014,
+			"title": "Kar Yağdığında",
+			"voicelineType": "1202",
+			"description": "Kardan adam yapmak istiyorum. Yardım eder misin?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_snowy_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24015,
+			"title": "Güneş Açtığında",
+			"voicelineType": "1203",
+			"description": "Bugün dışarı çıkmamalıydım.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_sunny_01"
+		},
+		{
+			"voicelineId": 24016,
+			"title": "Rüzgar Estiğinde",
+			"voicelineType": "1204",
+			"description": "Rüzgar buz gibi esiyor. Hoşuma gitti.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_breezy_01"
+		},
+		{
+			"voicelineId": 24017,
+			"title": "Rüzgar Şiddetlendiğinde",
+			"voicelineType": "1205",
+			"description": "Elimi tut lütfen. Yoksa rüzgara kapılıp giderim.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_gale_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24018,
+			"title": "Günaydın",
+			"voicelineType": "1001",
+			"description": "Sabah olduğunda ajandama bakmam gerekir. Sabah yapmam gereken işler orada yazıyor da.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 24019,
+			"title": "İyi Günler",
+			"voicelineType": "1002",
+			"description": "Şimdi aklıma geldi... Doktor Baizhu'ya ilaçları hazırlamasında yardım etmeyi unuttum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 24020,
+			"title": "İyi Akşamlar",
+			"voicelineType": "1003",
+			"description": "İyi akşamlar. Günün nasıl geçti? Benimki... Sanırım fena değildi. Gerçi tam hatırlayamıyorum ama.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 24021,
+			"title": "İyi Geceler",
+			"voicelineType": "1004",
+			"description": "Senin uyku vaktin geldi. Ben de esneme hareketleri yapacağım. Bana bakma lütfen.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 24022,
+			"title": "Qiqi Hakkında",
+			"voicelineType": "2001",
+			"description": "Bir şey mi sormuştun? Kusura bakma unuttum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_idle"
+		},
+		{
+			"voicelineId": 24023,
+			"title": "Hakkımızda: Hafıza",
+			"voicelineType": "2002",
+			"description": "Hafızam pek iyi değildir ama bildiğim kadarıyla bu çok da değil.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_close"
+		},
+		{
+			"voicelineId": 24024,
+			"title": "Hakkımızda: Hafıza Eğitimi",
+			"voicelineType": "2003",
+			"description": "Geçtiğimiz günlerde hafıza eğitimine başladım. Yani merak etme. Senin kim olduğunu unutmayacağım.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24025,
+			"title": "Önsezi Hakkında",
+			"voicelineType": "3001",
+			"description": "Önsezim, zamanı tersine çeviremiyor ama en azından sevdiklerimi korumam için bana güç veriyor.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24026,
+			"title": "Paylaşılacak Bir Bilgi",
+			"voicelineType": "3002",
+			"description": "Bir ceset olabilirim ama Doktor Baizhu'dan çok daha dincim.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_share"
+		},
+		{
+			"voicelineId": 24027,
+			"title": "İlginç Şeyler",
+			"voicelineType": "3003",
+			"description": "Bazen eczanenin yakınında serçeler görüyorum. Bir grup tatlı serçe.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_gift"
+		},
+		{
+			"voicelineId": 24028,
+			"title": "Baizhu Hakkında",
+			"voicelineType": "4001",
+			"description": "Doktor Baizhu'nun yüzü bir türlü aklıma gelmiyor ama çok da önemli değil.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_baizhu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24029,
+			"title": "Hu Tao Hakkında",
+			"voicelineType": "4002",
+			"description": "Sıcakkanlı, sahte gülüşlü ve ölü... Hu Tao'dan nefret ediyorum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24030,
+			"title": "Xiao Hakkında: İsim",
+			"voicelineType": "4003",
+			"description": "Bana daha çok tarihi bir yadigar gibi geldi.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xiao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24031,
+			"title": "Xiao Hakkında: Hafıza",
+			"voicelineType": "4004",
+			"description": "Onunla daha önce tanışmış mıydım?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xiao_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24032,
+			"title": "Xinyan Hakkında",
+			"voicelineType": "4005",
+			"description": "Kim?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xinyan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24033,
+			"title": "Yaoyao Hakkında",
+			"voicelineType": "4006",
+			"description": "Tatlı biri. Tıpkı ufak bir serçe gibi.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24034,
+			"title": "Küçük Ming Hakkında",
+			"voicelineType": "4007",
+			"description": "Bazı gecelerde, sanki benimle birlikte esneme hareketleri yapan başka biri varmış gibi hissediyorum. Belki de hayal gücüm çok geniştir.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_duskyMing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24035,
+			"title": "Qiqi Hakkında Daha Fazlası: I",
+			"voicelineType": "5001",
+			"description": "Neler oluyor?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_01"
+		},
+		{
+			"voicelineId": 24036,
+			"title": "Qiqi Hakkında Daha Fazlası: II",
+			"voicelineType": "5002",
+			"description": "Normal bir insan kadar esnek kalabilmem için düzenli olarak esneme hareketleri yapıyorum ama ne zaman ara versem, vücudum hemen kaskatı kesiliyor.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "3. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24037,
+			"title": "Qiqi Hakkında Daha Fazlası: III",
+			"voicelineType": "5003",
+			"description": "Bazı insanlar benden yararlanmak istiyor, bazıları da benden korkuyor ama sen... Sen hiç onlar gibi değilsin.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24038,
+			"title": "Qiqi Hakkında Daha Fazlası: IV",
+			"voicelineType": "5004",
+			"description": "Tanıştığımızdan beri içimde bir his var. Böyle içimi kemiren cinsten değil ama... Güzel bir his. Kalbimin derinliklerinden gelen bir his. Sana teşekkür ediyorum. Artık mutluyum ama maalesef yalnızca şu anki seni tanıyorum. Olur da seni unutursam... Hayır. Kendime seni hatırlamam için emir veriyorum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "5. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24039,
+			"title": "Qiqi Hakkında Daha Fazlası: V",
+			"voicelineType": "5005",
+			"description": "Geçmişte, ne için yaşadığımı bilmeden sadece hayatta kalmaya çalışıyordum ama şimdi bu hayattaki amacımı biliyorum sanırım. Seninle birlikte yaşamak istiyorum. Hayatımızın sonuna kadar, ölüm bizi ayırana dek birlikte kalabilir miyiz? Evet mi hayır mı? Evet mi? Gerçekten bunu istiyor musun? Vay canına, harika. Söz veriyorum, seni her zaman koruyacağım.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. Arkadaşlık Seviyesinde açılır.",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24040,
+			"title": "Qiqi'nin Hobileri",
+			"voicelineType": "6001",
+			"description": "Bir hayvan sahiplenmek istiyorum. Minik, tatlı bir serçe olabilir.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_hobby"
+		},
+		{
+			"voicelineId": 24041,
+			"title": "Qiqi'nin Sorunları",
+			"voicelineType": "6002",
+			"description": "Niye bilmiyorum ama sıcak havaya katlanamıyorum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_annoyed"
+		},
+		{
+			"voicelineId": 24042,
+			"title": "En Sevdiği Yemek",
+			"voicelineType": "6003",
+			"description": "Hindistan cevizi sütünü severim ama tadını bilmiyorum.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_foodLike"
+		},
+		{
+			"voicelineId": 24043,
+			"title": "En Sevmediği Yemek",
+			"voicelineType": "6004",
+			"description": "Kusura bakma, bu konuda hiçbir fikrim yok.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_foodDislike"
+		},
+		{
+			"voicelineId": 24076,
+			"title": "Hediye Alma: I",
+			"voicelineType": "6007",
+			"description": "Soğuk. Sevdim ama tadı yok...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_pref_01"
+		},
+		{
+			"voicelineId": 24077,
+			"title": "Hediye Alma: II",
+			"voicelineType": "6008",
+			"description": "Hımm...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_normal_01"
+		},
+		{
+			"voicelineId": 24078,
+			"title": "Hediye Alma: III",
+			"voicelineType": "6009",
+			"description": "Dilim yandı...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_dislike_01"
+		},
+		{
+			"voicelineId": 24044,
+			"title": "Doğum Günü",
+			"voicelineType": "7001",
+			"description": "Nice senelere. Bu torbada bitkisel ilaçlar var, sana getirdim. Doğum gününü hatırlamam seni şaşırttı, değil mi? Söylediğinde bir yere not almıştım. Bir şeye her gün bakınca eninde sonunda kafanda yer ediyor ve bir daha unutmuyorsun.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 24045,
+			"title": "Yükseltme Hakkında: Giriş",
+			"voicelineType": "8001",
+			"description": "Artık daha güçlüyüm. Ama... Bu ne anlama geliyor? Anlatır mısın lütfen? Sağ ol.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "1. yükseltme aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24046,
+			"title": "Yükseltme Hakkında: Gelişme",
+			"voicelineType": "8002",
+			"description": "Ah, şimdi anladım. Ne kadar güçlenirsem, gücümü kontrol etmem de o kadar zorlaşıyor demek.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "2. yükseltme aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24047,
+			"title": "Yükseltme Hakkında: Zirve",
+			"voicelineType": "8003",
+			"description": "Eskiden daha güçlü olma düşüncesi bana anlamsız geliyordu ama artık gayet iyi anlıyorum. Keşke azıcık daha güçlü olabilseydim.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "4. yükseltme aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24048,
+			"title": "Yükseltme Hakkında: Sonuç",
+			"voicelineType": "8004",
+			"description": "Bunların hepsi senin sayende oldu. Ne kadar teşekkür etsem az. Bana bir söz vermeni istiyorum. Bu andan itibaren seni korumama izin ver. Kabul ediyor musun? Evet mi, hayır mı?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "6. yükseltme aşamasında açılır.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 24049,
+			"title": "Element Becerisi: I",
+			"voicelineType": "100001",
+			"description": "Hayat döngüsü.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_01"
+		},
+		{
+			"voicelineId": 24050,
+			"title": "Element Becerisi: II",
+			"voicelineType": "100002",
+			"description": "Hayat devam ediyor.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_02"
+		},
+		{
+			"voicelineId": 24051,
+			"title": "Element Becerisi: III",
+			"voicelineType": "100003",
+			"description": "Git.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_03"
+		},
+		{
+			"voicelineId": 24052,
+			"title": "Element Becerisi: IV",
+			"voicelineType": "100004",
+			"description": "Yüksel.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_04"
+		},
+		{
+			"voicelineId": 24053,
+			"title": "Element Patlaması: I",
+			"voicelineType": "200001",
+			"description": "Emir verildi. Emir alındı.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_01"
+		},
+		{
+			"voicelineId": 24054,
+			"title": "Element Patlaması: II",
+			"voicelineType": "200002",
+			"description": "Kutsal isim: Uğur Getiren",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_02"
+		},
+		{
+			"voicelineId": 24055,
+			"title": "Element Patlaması: III",
+			"voicelineType": "200003",
+			"description": "Adeptuslardan ipuçları geliyor.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_03"
+		},
+		{
+			"voicelineId": 24056,
+			"title": "Depar Başlangıcı: I",
+			"voicelineType": "700001",
+			"description": "Daha mı hızlı gideyim? Peki, daha hızlı gidiyorum.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 24057,
+			"title": "Kanadı Açma: I",
+			"voicelineType": "800001",
+			"description": "Şey... Vay be...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 24059,
+			"title": "Hazine Sandığı Açma: I",
+			"voicelineType": "300001",
+			"description": "Pek güzelmiş.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_01"
+		},
+		{
+			"voicelineId": 24060,
+			"title": "Hazine Sandığı Açma: II",
+			"voicelineType": "300002",
+			"description": "Hazine sandığı... Hım... Hazine sandıklarını seviyor muyuz?",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_02"
+		},
+		{
+			"voicelineId": 24061,
+			"title": "Hazine Sandığı Açma: III",
+			"voicelineType": "300003",
+			"description": "Daha demin burada bir şeyler yok muydu?",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_03"
+		},
+		{
+			"voicelineId": 24062,
+			"title": "Düşük Can: I",
+			"voicelineType": "410001",
+			"description": "Ah.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_01"
+		},
+		{
+			"voicelineId": 24063,
+			"title": "Düşük Can: II",
+			"voicelineType": "410002",
+			"description": "Eyvah...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_02"
+		},
+		{
+			"voicelineId": 24064,
+			"title": "Düşük Can: III",
+			"voicelineType": "410003",
+			"description": "Devam etmeliyim...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_03"
+		},
+		{
+			"voicelineId": 24065,
+			"title": "Düşük Canlı Takım Arkadaşı: I",
+			"voicelineType": "400001",
+			"description": "Tehlikeli.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 24066,
+			"title": "Düşük Canlı Takım Arkadaşı: II",
+			"voicelineType": "400002",
+			"description": "Dur. Bırak ben yapayım.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 24067,
+			"title": "Yere Serilme: I",
+			"voicelineType": "500001",
+			"description": "Mühürlenmek... istemiyorum... Kalkmalıyım...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_01"
+		},
+		{
+			"voicelineId": 24068,
+			"title": "Yere Serilme: II",
+			"voicelineType": "500002",
+			"description": "Soğuk... Çok soğuk...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_02"
+		},
+		{
+			"voicelineId": 24069,
+			"title": "Yere Serilme: III",
+			"voicelineType": "500003",
+			"description": "Olamaz...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_03"
+		},
+		{
+			"voicelineId": 24070,
+			"title": "Hafif Darbe Alma: I",
+			"voicelineType": "900001",
+			"description": "Bunu hissetmedim bile.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 24071,
+			"title": "Ağır Darbe Alma: I",
+			"voicelineType": "910001",
+			"description": "Vay canına.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 24072,
+			"title": "Ağır Darbe Alma: II",
+			"voicelineType": "910002",
+			"description": "Ah...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 24073,
+			"title": "Gruba Katılma: I",
+			"voicelineType": "600001",
+			"description": "Geldim.",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_01"
+		},
+		{
+			"voicelineId": 24074,
+			"title": "Gruba Katılma: II",
+			"voicelineType": "600002",
+			"description": "Ne var ne yok?",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_02"
+		},
+		{
+			"voicelineId": 24075,
+			"title": "Gruba Katılma: III",
+			"voicelineType": "600003",
+			"description": "Not defterimi de getireceğim.",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_03"
+		}
+	]
+}

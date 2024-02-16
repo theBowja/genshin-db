@@ -1,0 +1,688 @@
+{
+	"id": 10000035,
+	"name": "Qiqi",
+	"friendLines": [
+		{
+			"voicelineId": 24009,
+			"title": "Hola...",
+			"voicelineType": "1000",
+			"description": "Soy Qiqi. Soy una zombi... Ah, ¿qué más?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_draw_appear"
+		},
+		{
+			"voicelineId": 24010,
+			"title": "Charla - Hablando consigo misma",
+			"voicelineType": "1101",
+			"description": "¿Sabes que...? Espera, ¿qué iba a decir?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_01"
+		},
+		{
+			"voicelineId": 24011,
+			"title": "Charla - Miedo al calor",
+			"voicelineType": "1102",
+			"description": "Vamos a un lugar más frío.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_02"
+		},
+		{
+			"voicelineId": 24012,
+			"title": "Charla - Ejercicio",
+			"voicelineType": "1103",
+			"description": "Un, dos, tres, cuatro. Dos, dos, tres, cuatro... Cinco, seis, tres, cuatro. Cinco, seis, siete, siete...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_explore_idle_03"
+		},
+		{
+			"voicelineId": 24013,
+			"title": "Cuando llueve...",
+			"voicelineType": "1201",
+			"description": "Olvidé mi paraguas de nuevo.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 24014,
+			"title": "Cuando nieva...",
+			"voicelineType": "1202",
+			"description": "Quiero hacer un muñeco de nieve... ¿Me ayudas?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_snowy_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24015,
+			"title": "Qué sol hace...",
+			"voicelineType": "1203",
+			"description": "Hoy debí quedarme en casa.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_sunny_01"
+		},
+		{
+			"voicelineId": 24016,
+			"title": "Cuando hace viento...",
+			"voicelineType": "1204",
+			"description": "Hace frío. Me gusta.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_breezy_01"
+		},
+		{
+			"voicelineId": 24017,
+			"title": "Hace mucho viento...",
+			"voicelineType": "1205",
+			"description": "Tómame de la mano. El viento puede mandarme a volar.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_weather_gale_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24018,
+			"title": "Buenos días...",
+			"voicelineType": "1001",
+			"description": "¿Ya es de día? ¿Qué tengo que hacer hoy?... Tengo que ver mi diario.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 24019,
+			"title": "Buenas tardes...",
+			"voicelineType": "1002",
+			"description": "Olvidé ayudar al doctor Baizhu a preparar los medicamentos.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 24020,
+			"title": "Buenas noches... (I)",
+			"voicelineType": "1003",
+			"description": "Buenas noches. El día de hoy... ¿qué hice el día de hoy?...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 24021,
+			"title": "Buenas noches... (II)",
+			"voicelineType": "1004",
+			"description": "Es hora de dormir. Tengo que hacer unos estiramientos... Por favor, no mires.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 24022,
+			"title": "Sobre Qiqi...",
+			"voicelineType": "2001",
+			"description": "¿Me preguntas a mí? Lo siento, lo olvidé.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_idle"
+		},
+		{
+			"voicelineId": 24023,
+			"title": "#Sobre nosotr{F#as}{M#os} - Memoria",
+			"voicelineType": "2002",
+			"description": "Tengo mala memoria para la mayoría de las cosas... Pero no es tan grave.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_close"
+		},
+		{
+			"voicelineId": 24024,
+			"title": "#Sobre nosotr{F#as}{M#os} - Ejercicios de memoria",
+			"voicelineType": "2003",
+			"description": "Recientemente comencé a ejercitar la memoria, así que no te preocupes, no te olvidaré.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24025,
+			"title": "Sobre la Visión...",
+			"voicelineType": "3001",
+			"description": "Mi Visión no puede hacer retroceder el tiempo. Pero me da el poder necesario para proteger a la gente que me importa.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24026,
+			"title": "¿Algo que decir?",
+			"voicelineType": "3002",
+			"description": "Aunque soy un cadáver, estoy en mejor condición que el doctor Baizhu...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_share"
+		},
+		{
+			"voicelineId": 24027,
+			"title": "Una noticia interesante...",
+			"voicelineType": "3003",
+			"description": "A veces veo pinzones cerca de la farmacia. Una pequeña bandada de pinzones.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_gift"
+		},
+		{
+			"voicelineId": 24028,
+			"title": "Sobre Baizhu...",
+			"voicelineType": "4001",
+			"description": "No puedo recordar el rostro del doctor Baizhu, pero no importa.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_baizhu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24029,
+			"title": "Sobre Hu Tao...",
+			"voicelineType": "4002",
+			"description": "No me gusta. Da mucho calor, se ríe mucho y habla todo el tiempo de la muerte.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24030,
+			"title": "Sobre Xiao - Nombre",
+			"voicelineType": "4003",
+			"description": "Suena a que es un artefacto antiguo...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xiao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24031,
+			"title": "Sobre Xiao - Recuerdos",
+			"voicelineType": "4004",
+			"description": "¿Lo he visto antes?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xiao_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24032,
+			"title": "Sobre Xinyan...",
+			"voicelineType": "4005",
+			"description": "¿Quién?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_xinyan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24033,
+			"title": "Sobre Yaoyao...",
+			"voicelineType": "4006",
+			"description": "Es como un pequeño pinzón. Qué bonito...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_yaoyao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24034,
+			"title": "Sobre la Pequeña Ming",
+			"voicelineType": "4007",
+			"description": "En las noches, siento que hay alguien más haciendo estiramientos conmigo... ¿Es mi imaginación?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_teammate_duskyMing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24035,
+			"title": "Más sobre Qiqi (I)",
+			"voicelineType": "5001",
+			"description": "¿Qué está pasando?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_01"
+		},
+		{
+			"voicelineId": 24036,
+			"title": "Más sobre Qiqi (II)",
+			"voicelineType": "5002",
+			"description": "Hago estiramientos con frecuencia para tener la misma flexibilidad que un humano, pero en cuanto dejo de hacerlos, el rigor mortis vuelve...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24037,
+			"title": "Más sobre Qiqi (III)",
+			"voicelineType": "5003",
+			"description": "Algunas personas se aprovechan de mí. Otras me temen. Pero tú... no eres como los demás.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24038,
+			"title": "Más sobre Qiqi (IV)",
+			"voicelineType": "5004",
+			"description": "Desde que nos conocimos, tengo una sensación cálida por dentro. No es del tipo de calor que me hace sentir podrida, asquerosa y más cerca de la muerte. Es otro tipo de calor dentro de mi corazón. Gracias. Estoy feliz. Lamentablemente, solo reconozco {F#a la}{M#al} “tú” de ahora. Si te olvido... No, me ordeno no olvidarte.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24039,
+			"title": "Más sobre Qiqi (V)",
+			"voicelineType": "5005",
+			"description": "En el pasado, solo pensaba en mantenerme con vida, aunque no sabía para qué vivir. Pero ahora, creo que lo sé. Quiero vivir contigo. ¿Podemos permanecer siempre junt{F#as}{M#os} para el resto de la vida y hasta que muramos? ¿Sí o no? ¿Sí? ¿Esa es tu respuesta? Excelente. Prometo protegerte por siempre.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24040,
+			"title": "Aficiones de Qiqi...",
+			"voicelineType": "6001",
+			"description": "Quiero tener una mascota. Por ejemplo, un lindo y pequeño pinzón.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_hobby"
+		},
+		{
+			"voicelineId": 24041,
+			"title": "Preocupaciones de Qiqi...",
+			"voicelineType": "6002",
+			"description": "No sé por qué, pero las altas temperaturas me hacen sentir podrida y asquerosa... y más cerca de la muerte.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_dialog_annoyed"
+		},
+		{
+			"voicelineId": 24042,
+			"title": "Comida que más le gusta...",
+			"voicelineType": "6003",
+			"description": "Me gusta la leche de coco... aunque no tengo ni idea de a qué sabe.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_foodLike"
+		},
+		{
+			"voicelineId": 24043,
+			"title": "Comida que menos le gusta...",
+			"voicelineType": "6004",
+			"description": "Lo siento, no lo sé.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_foodDislike"
+		},
+		{
+			"voicelineId": 24076,
+			"title": "Al recibir un regalo (I)",
+			"voicelineType": "6007",
+			"description": "Está frío. Me gusta. Pero no sabe a nada...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_pref_01"
+		},
+		{
+			"voicelineId": 24077,
+			"title": "Al recibir un regalo (II)",
+			"voicelineType": "6008",
+			"description": "Eh...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_normal_01"
+		},
+		{
+			"voicelineId": 24078,
+			"title": "Al recibir un regalo (III)",
+			"voicelineType": "6009",
+			"description": "Quema un poco...",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_spice_dislike_01"
+		},
+		{
+			"voicelineId": 24044,
+			"title": "Cumpleaños...",
+			"voicelineType": "7001",
+			"description": "Muchas felicidades. Aquí tienes una bolsa de hierbas medicinales. Debes estar muy sorprendid{F#a}{M#o} de que me haya acordado, ¿cierto? Deja que te lo explique. La última vez que me lo dijiste, escribí tu cumpleaños en un papel. Si miro algo una vez al día, al final se graba en mi memoria a largo plazo y permanecerá en ella para siempre.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 24045,
+			"title": "El sentimiento de Ascensión - Introducción",
+			"voicelineType": "8001",
+			"description": "¿Que ahora soy más fuerte? ¿Qué quiere decir eso?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24046,
+			"title": "El sentimiento de Ascensión - Desarrollo",
+			"voicelineType": "8002",
+			"description": "Ah, ya entendí. Después de volverme fuerte, tengo que esforzarme más por controlarme.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24047,
+			"title": "El sentimiento de Ascensión - Nudo",
+			"voicelineType": "8003",
+			"description": "Antes, no entendía el concepto de volverse más fuerte. Ahora que lo entiendo, quisiera ser más fuerte aún.",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 24048,
+			"title": "El sentimiento de Ascensión - Desenlace",
+			"voicelineType": "8004",
+			"description": "Todo esto es por ti. Muchas gracias. ¿Puedes prometerme una cosa? De ahora en adelante, deja que yo te proteja. ¿Aceptas? ¿Sí?",
+			"voicefile": "VO_friendship/VO_qiqi/vo_qiqi_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 24049,
+			"title": "Habilidad Elemental (I)",
+			"voicelineType": "100001",
+			"description": "Ciclo de la vida.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_01"
+		},
+		{
+			"voicelineId": 24050,
+			"title": "Habilidad Elemental (II)",
+			"voicelineType": "100002",
+			"description": "La vida sigue.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_02"
+		},
+		{
+			"voicelineId": 24051,
+			"title": "Habilidad Elemental (III)",
+			"voicelineType": "100003",
+			"description": "Ve.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_03"
+		},
+		{
+			"voicelineId": 24052,
+			"title": "Habilidad Elemental (IV)",
+			"voicelineType": "100004",
+			"description": "Levántate.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill1_04"
+		},
+		{
+			"voicelineId": 24053,
+			"title": "Habilidad Definitiva (I)",
+			"voicelineType": "200001",
+			"description": "Orden dada, orden recibida.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_01"
+		},
+		{
+			"voicelineId": 24054,
+			"title": "Habilidad Definitiva (II)",
+			"voicelineType": "200002",
+			"description": "Soy la Preservadora de la Fortuna.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_02"
+		},
+		{
+			"voicelineId": 24055,
+			"title": "Habilidad Definitiva (III)",
+			"voicelineType": "200003",
+			"description": "Abriendo la caja de trucos de Adeptus.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_skill3_03"
+		},
+		{
+			"voicelineId": 24056,
+			"title": "Al esprintar (I)",
+			"voicelineType": "700001",
+			"description": "¿Más rápido? De acuerdo, más rápido.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 24057,
+			"title": "Al abrir el planeador (I)",
+			"voicelineType": "800001",
+			"description": "¿Eh?",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 24059,
+			"title": "Al abrir un cofre (I)",
+			"voicelineType": "300001",
+			"description": "Oh, ¡qué hermoso!",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_01"
+		},
+		{
+			"voicelineId": 24060,
+			"title": "Al abrir un cofre (II)",
+			"voicelineType": "300002",
+			"description": "Los cofres... Humm, ¿me gustan los cofres?",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_02"
+		},
+		{
+			"voicelineId": 24061,
+			"title": "Al abrir un cofre (III)",
+			"voicelineType": "300003",
+			"description": "¿No había algo aquí antes?",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_chest_open_03"
+		},
+		{
+			"voicelineId": 24062,
+			"title": "Vida baja (I)",
+			"voicelineType": "410001",
+			"description": "¡Au!",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_01"
+		},
+		{
+			"voicelineId": 24063,
+			"title": "Vida baja (II)",
+			"voicelineType": "410002",
+			"description": "Oh, no...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_02"
+		},
+		{
+			"voicelineId": 24064,
+			"title": "Vida baja (III)",
+			"voicelineType": "410003",
+			"description": "Tengo que seguir viviendo...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_03"
+		},
+		{
+			"voicelineId": 24065,
+			"title": "Aliado con vida baja (I)",
+			"voicelineType": "400001",
+			"description": "Peligro.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 24066,
+			"title": "Aliado con vida baja (II)",
+			"voicelineType": "400002",
+			"description": "Para. Déjame a mí.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 24067,
+			"title": "Derrotada (I)",
+			"voicelineType": "500001",
+			"description": "No quiero... que me sellen... de nuevo...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_01"
+		},
+		{
+			"voicelineId": 24068,
+			"title": "Derrotada (II)",
+			"voicelineType": "500002",
+			"description": "Qué frío...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_02"
+		},
+		{
+			"voicelineId": 24069,
+			"title": "Derrotada (III)",
+			"voicelineType": "500003",
+			"description": "No...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_life_die_03"
+		},
+		{
+			"voicelineId": 24070,
+			"title": "Recibiendo un ligero ataque (I)",
+			"voicelineType": "900001",
+			"description": "No noté nada...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 24071,
+			"title": "Recibiendo un fuerte ataque (I)",
+			"voicelineType": "910001",
+			"description": "Guau.",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 24072,
+			"title": "Recibiendo un fuerte ataque (II)",
+			"voicelineType": "910002",
+			"description": "Oh...",
+			"voicefile": "VO_gameplay/VO_qiqi/vo_qiqi_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 24073,
+			"title": "Unirse al equipo (I)",
+			"voicelineType": "600001",
+			"description": "Aquí estoy.",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_01"
+		},
+		{
+			"voicelineId": 24074,
+			"title": "Unirse al equipo (II)",
+			"voicelineType": "600002",
+			"description": "¿Qué sucede?",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_02"
+		},
+		{
+			"voicelineId": 24075,
+			"title": "Unirse al equipo (III)",
+			"voicelineType": "600003",
+			"description": "Traeré... mi cuaderno.",
+			"voicefile": "VO_teamJoin/vo_qiqi_teamJoin_03"
+		}
+	]
+}

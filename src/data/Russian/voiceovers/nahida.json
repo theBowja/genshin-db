@@ -1,0 +1,860 @@
+{
+	"id": 10000073,
+	"name": "Nahida",
+	"friendLines": [
+		{
+			"voicelineId": 73000,
+			"title": "Привет...",
+			"voicelineType": "1006",
+			"description": "Приятно познакомиться! Я давно уже за тобой слежу. Меня зовут Нахида. Может, я и выгляжу как ребёнок, но понимаю этот мир получше любого взрослого. Так что... можно я обменяю свои знания на истории о твоих путешествиях?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_draw_appear_01"
+		},
+		{
+			"voicelineId": 73001,
+			"title": "Поболтаем: Приглашение",
+			"voicelineType": "1101",
+			"description": "Если не знаешь, чем заняться, давай я свожу тебя на прогулку?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_01"
+		},
+		{
+			"voicelineId": 73002,
+			"title": "Поболтаем: Заботы",
+			"voicelineType": "1102",
+			"description": "Опять что-то беспокоит? Давай вместе подумаем.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_02"
+		},
+		{
+			"voicelineId": 73003,
+			"title": "Поболтаем: Чувства",
+			"voicelineType": "1103",
+			"description": "Действительно, чтобы почувствовать красоту мира, нужно увидеть его своими глазами.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_character_idle_03"
+		},
+		{
+			"voicelineId": 73004,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Давай скорее спрячемся, а то у нас грибы на голове вырастут.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 73005,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1202",
+			"description": "Ты знаешь, что гром - прелюдия новой жизни? Скоро эта земля наполнится ею.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_thunder_01"
+		},
+		{
+			"voicelineId": 73006,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1203",
+			"description": "Слышишь? Небеса шепчут природе: «Пора спать».",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_snowy_01"
+		},
+		{
+			"voicelineId": 73007,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1204",
+			"description": "Такая тёплая и приятная погода. Скоро вокруг нас всё снова оживёт.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_sunny_01"
+		},
+		{
+			"voicelineId": 73008,
+			"title": "Когда дует ветер...",
+			"voicelineType": "1205",
+			"description": "В Храме Сурастаны никогда не дует ветер... А, прости, ты это, конечно, и так знаешь.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_weather_breezy_01"
+		},
+		{
+			"voicelineId": 73009,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Доброе утро. Нам пора отправляться. В мире так много всего можно пропустить, если не успеть.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 73010,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Пора отдохнуть. Я бы выпила ягодный напиток с мятой. Могу дать тебе за него две истории про солнце. Хорошо?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 73011,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Солнце заходит... Пора и нам освободить сцену для созданий ночи.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73012,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Спи скорее. Не волнуйся, я уже приготовила для тебя сладкий сон.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 73013,
+			"title": "О Нахиде: Знания",
+			"voicelineType": "2001",
+			"description": "А, Пепельное море. Там ничего нет. Совсем пустое место - как мозг грибосвина. Конечно, я о нём знаю. А? Я... Действительно, сама я его не видела. Это одно из недоступных для меня мест.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle"
+		},
+		{
+			"voicelineId": 73014,
+			"title": "О Нахиде: Одержимость",
+			"voicelineType": "2005",
+			"description": "Боги дали людям знание, достаточное лишь, чтобы наполнить животы. Но, используя его, люди создали инструменты, написали книги, построили города. А теперь они направили свой взор к звёздам и безднам. Каждое мгновение они создают новое знание, и я больше не могу отвести свой взор.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73015,
+			"title": "О нас: Истории",
+			"voicelineType": "2003",
+			"description": "Увиденное тобой в путешествии намного интересней всего, что я выучила до этого. А ещё я могу задавать сколько угодно вопросов и разузнать всё до мельчайших подробностей... Я так довольна. Ладно, хватит терять время. Так на чём мы остановились?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close"
+		},
+		{
+			"voicelineId": 73016,
+			"title": "О нас: Путешествие",
+			"voicelineType": "2002",
+			"description": "Мне никогда не было достаточно быть просто слушателем, я всегда мечтала сама отправиться в путь и увидеть всё своими глазами. Ты {M#такой опытный путешественник}{F#такая опытная путешественница}... Станешь моим проводником? Хочу лично узнавать все твои будущие истории.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73017,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Небеса отрастили глаза, чтобы увидеть красоту мира. Так зачем людям, у которых и так два глаза, может понадобиться смотреть на мир Глазом Бога? Ты {M#такой умный}{F#такая умная}. Сможешь ответить на этот вопрос?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73018,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "Часто, только испытав боль, мы вынуждены вглядеться в свою лень, невежество, грубость и высокомерие. Но не стоит об этом сожалеть. Мы не видим скрытые в будущем возможности. И лишь этот неуклюжий способ может дать нам знания. Плата за обучение, только и всего.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_share_01"
+		},
+		{
+			"voicelineId": 73019,
+			"title": "Интересные вещи: Невиданные цветы",
+			"voicelineType": "3003",
+			"description": "Пустыня Сумеру по сравнению с тропическим лесом выглядит безжизненной, но она взрастила древнюю цивилизацию и поддерживает устойчивую природную среду. Когда-нибудь она перестанет ссориться с лесом, и тогда здесь появятся цветы, которых я ещё не видела.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_gift_01"
+		},
+		{
+			"voicelineId": 73020,
+			"title": "О Сайно: Шутки",
+			"voicelineType": "4001",
+			"description": "Его шутки действительно сложно понять. Очень интересно. А? Какую часть не понял{F#а}? Сейчас объясню.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73021,
+			"title": "О Сайно: Долг",
+			"voicelineType": "4002",
+			"description": "Не каждый генерал махаматра принял бы такую твёрдую позицию в конфликте между порядком и справедливостью. Сайно, наверное, лучше всех знает, что компромисс лишь заводит в тупик. Так что всему Сумеру очень повезло, что он смог вернуться на свой пост.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_cyno_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73022,
+			"title": "О Тигнари...",
+			"voicelineType": "4003",
+			"description": "Лесные дозорные сыграли решающую роль в том, что тропический лес выстоял перед опасностью Увядания и снова процветает, а Тигнари - лучший из них. И всё же... Я надеюсь, что он научится быть теплее к людям. Только так можно будет найти новые таланты для Лесного дозора.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73023,
+			"title": "О Коллеи...",
+			"voicelineType": "4004",
+			"description": "Я слышала историю Коллеи, её стойкость сверкает, словно драгоценный камень. Она через такое прошла... Надеюсь, зелень Сумеру всегда будет её защищать, и она вырастет здоровой и сильной девушкой.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73024,
+			"title": "Об аль-Хайтаме...",
+			"voicelineType": "4005",
+			"description": "Его система знаний опережает своё время, а разум постоянно находится в раздумьях. Возможно, ничто в этом мире не может его обмануть. Но не ошибаются ли мудрецы, считая заурядность простых людей неким врождённым дефектом? Всё-таки часть них - это часть «нас», и никуда от этого не деться.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_alhaitham_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73025,
+			"title": "О Нилу...",
+			"voicelineType": "4006",
+			"description": "Как-то, одолжив чужое тело, я спросила её, не позволит ли она малой властительнице Кусанали посмотреть её танец... Я уже много раз тайно смотрела за ней, но в знак почтения хотела бы лично увидеть её танец во время Сабзеруза. Но она мне деликатно отказала... Я немного расстроилась.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_nilou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73026,
+			"title": "О Дори...",
+			"voicelineType": "4007",
+			"description": "Первое, что она сказала, увидев меня: «Хороший дворец. За сколько продашь?» Конечно, я бы не продала Храм Сурастаны, но её вопрос меня озадачил. Я долго об этом думала, но так и не решила, сколько он мог бы стоить...",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73027,
+			"title": "О Кавехе...",
+			"voicelineType": "4008",
+			"description": "Он почти полностью осознал суть продвижения мудрости в Сумеру. Жаль, что его точка зрения никогда не станет в этой стране основной. А? Они с аль-Хайтамом - соседи? Мир полон сюрпризов...",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73028,
+			"title": "О Фарузан...",
+			"voicelineType": "4009",
+			"description": "Она пострадала от остатков силы царя Дешрета. Как если бы великая черепаха времени случайно сбросила её со своей спины и навечно забыла позади. Если тебе интересно, можешь через неё взглянуть на Сумеру прошлого.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_faruzan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73029,
+			"title": "О Семи: Знакомство",
+			"voicelineType": "4010",
+			"description": "Похоже, что когда-то давно семь Архонтов регулярно общались. Но моя ситуация особенная, и я уже не помню то время... Раз в Сумеру всё пока успокоилось, мне, пожалуй, стоит снова с ними встретиться. Ты ведь знаешь некоторых из Архонтов. Познакомишь?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73030,
+			"title": "О Семи: Игры",
+			"voicelineType": "4011",
+			"description": "Говорят, что игры быстро сближают людей. Думаю, что с богами это тоже должно работать. Если все соберутся вместе, я предложу сыграть в классики... Хм, пожалуй, так не пойдёт - будет выглядеть, как будто я специально нарисовала клетки поменьше, чтобы победить. Так будет нечестно.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_theSeven_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73031,
+			"title": "О Сказителе...",
+			"voicelineType": "4012",
+			"description": "Когда он добился того, что, как ему казалось, так долго искал, наступил ли покой, или лишь больше стала пустота? Мы мечтаем о небе, потому что не умеем летать... Пусть подумает об этом, когда подержит в руках порожние небеса.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_scaramouche_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73074,
+			"title": "О Фурине...",
+			"voicelineType": "4013",
+			"description": "Часто говорят, что мудрость заключается не в том, что ты знаешь, а в том, что можешь изменить. То, что «пророчество» было высечено в Ирминсуле давным-давно, не вызывает сомнений... И хотя может показаться, что ничего не изменилось, но на самом деле изменилось все. Думаю, мы {M#оба}{F#обе} понимаем, что ей хватило мудрости, чтобы перевернуть судьбы мира.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Маскарад виновных»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73032,
+			"title": "Узнать больше о Нахиде I",
+			"voicelineType": "5001",
+			"description": "Моё прошлое довольно однообразно. Я могу тебе рассказать, но вскоре ты начнёшь зевать, как иглобрюх, глотающий воду. Но любопытство дороже золота, мне не хотелось бы, чтобы оно пропало зря... Давай так, я расскажу о виденных мной снах.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_01"
+		},
+		{
+			"voicelineId": 73033,
+			"title": "Узнать больше о Нахиде II",
+			"voicelineType": "5002",
+			"description": "В моих снах часто появляется цветочный горшок. Каждый раз я поливаю и удобряю в нём землю, и из него вырастает один и тот же цветок. Можно ли наслаждаться выращиванием цветов, если знаешь результат заранее? Хе-хе, я, по крайней мере, довольна, что распустившийся цветок привлекает разноцветных бабочек, а иногда и пчёл.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73034,
+			"title": "Узнать больше о Нахиде III",
+			"voicelineType": "5003",
+			"description": "В моих снах часто появляются песочные часы. Я люблю налить внутрь них немного воды, как следует размешать, а потом смотреть, сколько займёт один цикл, и насколько он отличается от предыдущего. В этом нет никакой пользы и никакого смысла, но почему-то избавляет мой мозг от накопившейся усталости. Думаю, что именно бесполезность этого занятия приносит мне радость.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73035,
+			"title": "Узнать больше о Нахиде IV",
+			"voicelineType": "5004",
+			"description": "В моих снах часто появляется пустое пространство. Как бы ни менялся пейзаж вокруг, оно всё равно оказывается на самом важном месте. Странно, да? Мне кажется, там что-то раньше было, но даже со своей властью над снами я не могу найти ответ. Эх, даже в снах есть вещи, которые мне неподвластны...",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73036,
+			"title": "Узнать больше о Нахиде V",
+			"voicelineType": "5005",
+			"description": "В моих снах есть всё, не хватает только снующих людей. Но после нашего знакомства тут постепенно становится оживлённей. Возможно, ты «{M#проводник}{F#проводница}», {M#который}{F#которая} не только сделал{F#а} мои сны более человечными, но вывел{F#а} меня из клетки. Хе-хе, пойдём. Путешествие только начинается. Прошу тебя, указывай путь.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Пульс Акаши и пламя кальпы»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73037,
+			"title": "Хобби Нахиды...",
+			"voicelineType": "6001",
+			"description": "Хм... Смотреть на тебя считается за хобби? Потому что всё, что ты делаешь, очень меня интересует. Ты путешествуешь по всему миру... Откуда ты {M#пришёл}{F#пришла} и куда отправишься дальше? Кого встретишь и какие трудности преодолеешь? Я хочу узнать ответы на эти вопросы. Так что если не возражаешь, я просто хочу продолжать на тебя смотреть.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_hobby"
+		},
+		{
+			"voicelineId": 73038,
+			"title": "Беспокойство Нахиды...",
+			"voicelineType": "6002",
+			"description": "Думаю, что я умею задавать вопросы и давать ответы, но постепенно я поняла, что многие люди просто прикидываются дураками. Вопросы и ответы им уже не помогают. Похоже, что с возрастом люди теряют храбрость спрашивать и отвечать...",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_dialog_annoyed"
+		},
+		{
+			"voicelineId": 73039,
+			"title": "Любимая еда...",
+			"voicelineType": "6005",
+			"description": "Конечно, засахаренные орехи аджиленах. Достаточно укусить разочек и мой мозг начинает с треском ломиться вперёд так, что никакая проблема не устоит. Главное только не ставить банку с орехами там, куда легко дотянуться.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 73040,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Морские гады рождаются в бескрайней тьме и живут в бездонных глубинах моря. Я ничего об этом не знаю. Если их съесть, то я как будто проглотила грязную грозовую тучу.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_foodDislike"
+		},
+		{
+			"voicelineId": 73041,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Пусть мир вечно помнит этот прекрасный вкус. Спасибо.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_pref_01"
+		},
+		{
+			"voicelineId": 73042,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Хе-хе, благодарю за внимание. Вкус достоин похвалы.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_normal_01"
+		},
+		{
+			"voicelineId": 73043,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Как бы сказать... Ты же не станешь, например, поить собаку овощным соком?",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_spice_dislike_01"
+		},
+		{
+			"voicelineId": 73044,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "Я вот думаю, твой день рождения должен быть не менее величественным, чем Сабзеруз... А? Это слишком? Но все уже готовятся. Пойдём-пойдём! Всего разок, тебе обязательно понравится!",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 73045,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Я становлюсь умнее!",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73046,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Мой разум становится шире. Туда теперь можно поместить и небо, и море.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73047,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Я чувствую себя будто лотос нилотпала, нашедший свои листья, или жемчужина санго, нашедшая свою раковину.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 73048,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Спасибо, что разрешил{F#а} стать твоим компаньоном и научил{F#а} многим новым вещам. Как божество мудрости я дарую тебе своё благословение: пусть твой путь будет свободен от сомнений и преград.",
+			"voicefile": "VO_friendship/VO_nahida/vo_nahida_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 73049,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Я запомнила.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_01"
+		},
+		{
+			"voicelineId": 73050,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Расти, расти, расти.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_02"
+		},
+		{
+			"voicelineId": 73051,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Сейчас будет больно.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_03"
+		},
+		{
+			"voicelineId": 73052,
+			"title": "Элементальный навык IV",
+			"voicelineType": "100004",
+			"description": "Эй!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_04"
+		},
+		{
+			"voicelineId": 73053,
+			"title": "Элементальный навык V",
+			"voicelineType": "100005",
+			"description": "Держитесь за руки!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_05"
+		},
+		{
+			"voicelineId": 73054,
+			"title": "Элементальный навык VI",
+			"voicelineType": "100006",
+			"description": "Я вижу всё.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill1_06"
+		},
+		{
+			"voicelineId": 73055,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Чувствуйте себя как дома!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_01"
+		},
+		{
+			"voicelineId": 73056,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Делюсь своими знаниями.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_02"
+		},
+		{
+			"voicelineId": 73057,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Храм мудрости.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_skill3_03"
+		},
+		{
+			"voicelineId": 73058,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Любознательность заслуживает награды.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_01"
+		},
+		{
+			"voicelineId": 73059,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "От кого же этот подарок?",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_02"
+		},
+		{
+			"voicelineId": 73060,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Тебе что-нибудь приглянулось?",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_chest_open_03"
+		},
+		{
+			"voicelineId": 73061,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Сменим тактику?",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_01"
+		},
+		{
+			"voicelineId": 73062,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Хватит драться!",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_02"
+		},
+		{
+			"voicelineId": 73063,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Было не очень умно...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_03"
+		},
+		{
+			"voicelineId": 73064,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Сейчас что-нибудь придумаю.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 73065,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Не упорствуй.",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 73066,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Никто не живёт вечно...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_01"
+		},
+		{
+			"voicelineId": 73067,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Я... чахну...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_02"
+		},
+		{
+			"voicelineId": 73068,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Я... не понимаю...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_life_die_03"
+		},
+		{
+			"voicelineId": 73069,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Очень больно...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 73070,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Вижу звёздочки...",
+			"voicefile": "VO_gameplay/VO_nahida/vo_nahida_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 73071,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Я давно тебя ждала.",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_01"
+		},
+		{
+			"voicelineId": 73072,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Столько ещё мест для исследования.",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_02"
+		},
+		{
+			"voicelineId": 73073,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Снова пора расширить горизонты.",
+			"voicefile": "VO_teamJoin/vo_nahida_teamJoin_03"
+		}
+	]
+}

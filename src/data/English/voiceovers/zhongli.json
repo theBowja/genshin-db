@@ -1,0 +1,922 @@
+{
+	"id": 10000030,
+	"name": "Zhongli",
+	"friendLines": [
+		{
+			"voicelineId": 17100,
+			"title": "Hello",
+			"voicelineType": "1000",
+			"description": "A new contract? Okay. I'm still on leave, but I can accompany you for a while. What name should I use on the contract? I have a great many names, though when on leave I tend to go by Zhongli. And you, Traveler? What name will you be signing on this contract?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_draw_appear"
+		},
+		{
+			"voicelineId": 17101,
+			"title": "Chat: Journeys",
+			"voicelineType": "1101",
+			"description": "Every journey has its final day. Don't rush.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_01"
+		},
+		{
+			"voicelineId": 17102,
+			"title": "Chat: Tours",
+			"voicelineType": "1102",
+			"description": "Where do you want to go next? If you'd like to see Liyue's tourist spots, I have a few references.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_02"
+		},
+		{
+			"voicelineId": 17103,
+			"title": "Chat: Liyue",
+			"voicelineType": "1103",
+			"description": "Boats are made for transferring commodities back and forth, and those that come across Liyue tend to stay a while, so it is where many things come to settle.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_03"
+		},
+		{
+			"voicelineId": 17104,
+			"title": "Chat: Reminiscing",
+			"voicelineType": "1104",
+			"description": "Osmanthus wine tastes the same as I remember... But where are those who share the memory?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_explore_idle_04"
+		},
+		{
+			"voicelineId": 17105,
+			"title": "After the Rain",
+			"voicelineType": "1201",
+			"description": "Violetgrass is a plant that enjoys a moist environment and is best picked after it rains. If you should choose to pick any, be sure to store them appropriately.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 17106,
+			"title": "When It Snows",
+			"voicelineType": "1202",
+			"description": "We should look for a place to take shelter. I'll be fine, but we don't want you catching a cold.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_snowy_01"
+		},
+		{
+			"voicelineId": 17107,
+			"title": "When the Wind Is Blowing",
+			"voicelineType": "1203",
+			"description": "This weather is no good for being on vacation. We should go and take in an opera.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_weather_gale_01"
+		},
+		{
+			"voicelineId": 17108,
+			"title": "Good Morning",
+			"voicelineType": "1001",
+			"description": "I hope today too shall be prosperous.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 17109,
+			"title": "Good Afternoon",
+			"voicelineType": "1002",
+			"description": "Want a quick meal to pick us back up? I know a good place in Chihu Rock.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 17110,
+			"title": "Good Evening",
+			"voicelineType": "1003",
+			"description": "By this time of night, we will have already missed Ms. Yun's play, but Liyue is full of interesting places to explore, even at night.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 17111,
+			"title": "Good Night",
+			"voicelineType": "1004",
+			"description": "The market is closed and the port has settled. Go get some rest.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 17112,
+			"title": "About Zhongli",
+			"voicelineType": "2001",
+			"description": "Nothing can be accomplished without rules or standards. No matter if it is mortals or adepti, everyone has their place. This rule is what keeps Liyue in peace.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_idle",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17113,
+			"title": "About Us: Gold",
+			"voicelineType": "2002",
+			"description": "Gold is Liyue's treasure. It is the blood that runs through her heart. As for whether your own heart shines like gold — we will have to wait and see.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close1"
+		},
+		{
+			"voicelineId": 17114,
+			"title": "About Us: Contracts",
+			"voicelineType": "2003",
+			"description": "You and I have a contract, so feel free to discuss anything at all within the scope of said contract.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17115,
+			"title": "About Us: Fairness",
+			"voicelineType": "2004",
+			"description": "We can discuss matters that fall outside of our contract, too. After all, I have been on this land for a time, and have come to know a thing or two. Of course, I do hope you can do some things for me as well. That would only be fair.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17116,
+			"title": "About Us: Confusion",
+			"voicelineType": "2006",
+			"description": "Contracts cannot be used to define friendship, nor measure sentiment. So just what can we use to measure the weight of our emotions? Do you know the answer, friend?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_close4",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17117,
+			"title": "About the Vision",
+			"voicelineType": "3001",
+			"description": "Visions... are also a type of contract. You should know that all power comes at a price. For every bit of power you gain, so too do you gain more responsibility.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17118,
+			"title": "Something to Share",
+			"voicelineType": "3002",
+			"description": "Trade relies on both contracts and fairness. There is one thing you must never forget when making and abiding by a contract: if fairness is lost, then the contract shall become proof of one's deception.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_share"
+		},
+		{
+			"voicelineId": 17119,
+			"title": "Interesting Things",
+			"voicelineType": "3003",
+			"description": "If you're heading to Jueyun Karst, please bring me back a bunch of Qingxin. Just one bunch is enough. Travel expenses...? Ah, I almost forgot. During the effective period of our contract, travel expenses are to be paid for by yourself. Sorry to bother you.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_gift"
+		},
+		{
+			"voicelineId": 17120,
+			"title": "About Xiao",
+			"voicelineType": "4001",
+			"description": "You speak of the young adeptus of Guili Plains... *sigh* Still fulfilling his duty to this very day. Please, give this Remedium Tertiorum to him on my behalf. Oh, yes... be sure not to let Paimon eat them. Nothing of this world can withstand the power of this medicine.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_xiao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17121,
+			"title": "About Venti",
+			"voicelineType": "4002",
+			"description": "*sniff* Tsk... It reeks of wine. That bard has just been through here, hasn't he? That drunkard is a disgrace to the arts. Oh... Has he tricked you into getting drunk? You're slurring a little. Wait a moment, I'll brew a pot of sobering tea. It'll be ready in only six hours, so just wait a moment.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17122,
+			"title": "About Ningguang",
+			"voicelineType": "4003",
+			"description": "Despite the multitude of affairs that she deals with in a day, Ningguang always continues to press on. A rare gem indeed. I'm reminded of the time that she used to walk barefoot from Yaoguang Shoal to the south wharf, trying to sell her wares as she went. Time is cruel to humans.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_ningguang_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17123,
+			"title": "About Hu Tao",
+			"voicelineType": "4004",
+			"description": "The current overseer of the funeral parlor? Ahem. I cannot deal with that child.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_hutao_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17124,
+			"title": "About Tartaglia: Composed",
+			"voicelineType": "4005",
+			"description": "That rascal from Snezhnaya has yet to depart from Liyue? Heh, no matter. Just let me know if he gives you any trouble. I shall deal with the matter swiftly.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17125,
+			"title": "About Tartaglia: Drinks",
+			"voicelineType": "4006",
+			"description": "It's said that Childe and his reputation have yet again stirred up waves among the inner ranks of the Fatui. Knowing his type, he will be sure to swiftly depose anyone who dares to challenge his actions. Hmm... Come to think of it, there will be a lot of interesting news to be heard the next time we gather for drinks. Care to join me when the time comes, Traveler?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_tartaglia_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17126,
+			"title": "About Ganyu",
+			"voicelineType": "4007",
+			"description": "Liyue's prosperity has not merely been built on Rex Lapis' oracles or wisdom. It is also thanks to the countless servants of the Geo Archon who have honored their end of the contract. Of them, Ganyu is the one who has served for the longest time. If you want to know about her past... You should ask her about it. I fear my wording would not be delicate enough to receive her approval.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_ganyu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17127,
+			"title": "About Keqing",
+			"voicelineType": "4008",
+			"description": "She is the most impious of the Qixing — but I actually find the conviction of such people quite endearing. The only reason I was able to consider taking a step back from such overarching management of Liyue was because there are people like her. People who speak up when they believe themselves to be right, and then go and do something decisive about it.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_keqing_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17128,
+			"title": "About Yanfei",
+			"voicelineType": "4009",
+			"description": "Despite never having signed a contract with me, she upholds order within many strata of Liyue society in her own way, dispelling misconceptions and correcting biases... Should her father one day return from his travels, I imagine that he would be even more delighted than I.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_yanfei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17168,
+			"title": "About Baal",
+			"voicelineType": "4010",
+			"description": "Time tempers all volition. Yet she would give up everyone for her beliefs. Perhaps it is for this very reason that she has come to where she stands today... Should the chance come by me, I too would like to learn of the Eternity for which she so earnestly endeavors.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17172,
+			"title": "About Buer",
+			"voicelineType": "4011",
+			"description": "As well as ruling over all of Sumeru, the God of Wisdom, Buer, has a duty to guard Irminsul. Only one who possesses great wisdom could hope to shoulder these responsibilities. All life in Teyvat owes her gratitude for saving Irminsul.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Akasha Pulses, the Kalpa Flame Rises\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17173,
+			"title": "About Furina",
+			"voicelineType": "4012",
+			"description": "She made a contract with her own self to save the nation, strictly adhered to it for over five centuries without once wavering, and even fooled the Heavenly Principles in the end... I have great respect for approaches to justice that place exacting demands not only on others, but also on the self. Though her divinity has vanished and the throne of the Archon is no more, Furina will go down in Fontaine's history as a God of Justice worthy of recognition.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"Masquerade of the Guilty\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17174,
+			"title": "About Xianyun",
+			"voicelineType": "4013",
+			"description": "I hear many merchants of Liyue tell tales of a Ms. Xianyun. By most accounts, she appears proud and taciturn upon first glance, yet in conversation, people find her to be forthright and fair-minded, and they are pleased to make her acquaintance. I am glad to hear this. But... I have also heard a great many accounts lauding her readiness to part with large sums of Mora...",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_teammate_xianyun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A Thousand Moonlit Miles\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						11035
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17129,
+			"title": "More About Zhongli: I",
+			"voicelineType": "5001",
+			"description": "Why is it that once you finally get a break, rather than taking a rest, you instead come to me? Is it that you want to hear one of my stories?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_01"
+		},
+		{
+			"voicelineId": 17130,
+			"title": "More About Zhongli: II",
+			"voicelineType": "5002",
+			"description": "Have you heard of the origin of the Blackcliff Forge? In the past, they would mine the ore veins of Mt. Tianheng, and then replace the cavities with factory equipment. Tunnels run in all directions throughout the mountain — some even run to the ruins deep within the earth. I doubt there is a person today who could map out all the tunnels.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17131,
+			"title": "More About Zhongli: III",
+			"voicelineType": "5003",
+			"description": "Have you heard of the origins of the Lantern Rite? In a war, long ago, the people of Liyue would release lanterns to remind their soldiers of the way home, and to never lose sight of themselves. Though in this day and age, I doubt there are any that remember.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17132,
+			"title": "More About Zhongli: IV",
+			"voicelineType": "5004",
+			"description": "The God of Contracts. Have you heard of him? He has an impressive memory. He remembers the name of every person he comes across, and the date that every ship built in Liyue sets sail. After all, only in being able to do so can he memorize all of the contracts he holds. With that said, not every memory is a happy one...",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17133,
+			"title": "More About Zhongli: V",
+			"voicelineType": "5005",
+			"description": "For those that live too long, the friends of days gone by and scenes from their adventures live on in their memories. As such, I have no regrets in meeting you, friend. Should the day ever come that we are not together, you will continue to shine like gold in my memories.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at Friendship Lv. 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17134,
+			"title": "Zhongli's Hobbies",
+			"voicelineType": "6001",
+			"description": "I enjoy partaking in walks through the city — when time permits. I find it very calming. Yes... Just when did this feeling begin...?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_hobby"
+		},
+		{
+			"voicelineId": 17135,
+			"title": "Zhongli's Troubles",
+			"voicelineType": "6002",
+			"description": "To get people to abide by a contract and act in accordance with the guidelines set out within is simply to ask them to respect the concept of fairness. It is not a large request. How are there those who still do not understand such simplicity?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_dialog_annoyed",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17136,
+			"title": "Favorite Food",
+			"voicelineType": "6003",
+			"description": "There was once a drink I used to enjoy with friends — long ago... Is it because the climate has changed? A shame I will never be able to relish in its smooth flavor again.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_foodLike"
+		},
+		{
+			"voicelineId": 17137,
+			"title": "Least Favorite Food",
+			"voicelineType": "6004",
+			"description": "I don't like seafood. Just seeing it reminds me of that... slimy texture, and that scent that just won't wash off. As for why I hate it... *sigh* It's a long story, so let's just say my memory is a little too good.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_foodDislike"
+		},
+		{
+			"voicelineId": 17169,
+			"title": "Receiving a Gift: I",
+			"voicelineType": "6007",
+			"description": "The finest ingredients cooked with true expertise. This is no small feat.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_pref_01"
+		},
+		{
+			"voicelineId": 17170,
+			"title": "Receiving a Gift: II",
+			"voicelineType": "6008",
+			"description": "The art of gastronomy is a fascinating one. That it appeals to you comes as no surprise.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_normal_01"
+		},
+		{
+			"voicelineId": 17171,
+			"title": "Receiving a Gift: III",
+			"voicelineType": "6009",
+			"description": "Since you seem to have some time on your hands, why don't we find a quiet place and I'll share one of my stories with you.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_spice_dislike_01"
+		},
+		{
+			"voicelineId": 17138,
+			"title": "Birthday",
+			"voicelineType": "7001",
+			"description": "Happy birthday. This is a dried Glaze Lily that came into bloom on the day of your birth. Long ago, the people of Liyue would say that this flower blooms bearing the weight of the beautiful memories and prayers of the land. I believe this to have applied on the day you were born as well.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 17139,
+			"title": "Feelings About Ascension: Intro",
+			"voicelineType": "8001",
+			"description": "It seems my strength is returning. Not a lot, but enough.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at ascension phase 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17140,
+			"title": "Feelings About Ascension: Building Up",
+			"voicelineType": "8002",
+			"description": "My power is growing, and so with it grows the burden on my body... I'm okay. My structure is not the same as that of normal people. Please, do not worry yourself.",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at ascension phase 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17141,
+			"title": "Feelings About Ascension: Climax",
+			"voicelineType": "8003",
+			"description": "I see. Using a Vision harnesses elements. As far as the common folk are concerned, this is no small feat. So... back then... they were aware of this as they stood beside me...",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at ascension phase 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 17142,
+			"title": "Feelings About Ascension: Conclusion",
+			"voicelineType": "8004",
+			"description": "After letting go of my Gnosis, I never expected to see a day like this again. Thank you, friend. Ah, yes, I have a new contract here. Care to take a look at it together?",
+			"voicefile": "VO_friendship/VO_zhongli/vo_zhongli_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Unlocks at ascension phase 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Complete \"A New Star Approaches\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						102510
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 17143,
+			"title": "Elemental Skill: I",
+			"voicelineType": "100001",
+			"description": "Rise!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_01"
+		},
+		{
+			"voicelineId": 17144,
+			"title": "Elemental Skill: II",
+			"voicelineType": "100002",
+			"description": "Quake!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_02"
+		},
+		{
+			"voicelineId": 17145,
+			"title": "Elemental Skill: III",
+			"voicelineType": "100003",
+			"description": "Crumble!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_03"
+		},
+		{
+			"voicelineId": 17146,
+			"title": "Elemental Skill: IV",
+			"voicelineType": "100004",
+			"description": "Gather.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_04"
+		},
+		{
+			"voicelineId": 17147,
+			"title": "Elemental Skill: V",
+			"voicelineType": "100005",
+			"description": "Stabilize.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_05"
+		},
+		{
+			"voicelineId": 17148,
+			"title": "Elemental Skill: VI",
+			"voicelineType": "100006",
+			"description": "Solidify.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill1_06"
+		},
+		{
+			"voicelineId": 17149,
+			"title": "Elemental Burst: I",
+			"voicelineType": "200001",
+			"description": "Order guide you.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_01"
+		},
+		{
+			"voicelineId": 17150,
+			"title": "Elemental Burst: II",
+			"voicelineType": "200002",
+			"description": "This is order.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_02"
+		},
+		{
+			"voicelineId": 17151,
+			"title": "Elemental Burst: III",
+			"voicelineType": "200003",
+			"description": "I will have order!",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_skill3_03"
+		},
+		{
+			"voicelineId": 17152,
+			"title": "Opening Treasure Chest: I",
+			"voicelineType": "300001",
+			"description": "One man's stone is another man's gem...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_01"
+		},
+		{
+			"voicelineId": 17153,
+			"title": "Opening Treasure Chest: II",
+			"voicelineType": "300002",
+			"description": "Unsolicited... and all the more valuable for it.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_02"
+		},
+		{
+			"voicelineId": 17154,
+			"title": "Opening Treasure Chest: III",
+			"voicelineType": "300003",
+			"description": "Certainly worth the extra mile.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_chest_open_03"
+		},
+		{
+			"voicelineId": 17155,
+			"title": "Low HP: I",
+			"voicelineType": "410001",
+			"description": "I see your power.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_01"
+		},
+		{
+			"voicelineId": 17156,
+			"title": "Low HP: II",
+			"voicelineType": "410002",
+			"description": "Ha, this is getting interesting.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_02"
+		},
+		{
+			"voicelineId": 17157,
+			"title": "Low HP: III",
+			"voicelineType": "410003",
+			"description": "Emergency countermeasures aren't my thing.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_03"
+		},
+		{
+			"voicelineId": 17158,
+			"title": "Ally at Low HP: I",
+			"voicelineType": "400001",
+			"description": "Don't try to rush your enemy.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 17159,
+			"title": "Ally at Low HP: II",
+			"voicelineType": "400002",
+			"description": "Take a rest. Leave it to me.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 17160,
+			"title": "Fallen: I",
+			"voicelineType": "500001",
+			"description": "Ugh... I'm feeling a little... off...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_01"
+		},
+		{
+			"voicelineId": 17161,
+			"title": "Fallen: II",
+			"voicelineType": "500002",
+			"description": "You shouldn't see me like this...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_02"
+		},
+		{
+			"voicelineId": 17162,
+			"title": "Fallen: III",
+			"voicelineType": "500003",
+			"description": "Even bedrock can be turned to dust...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_life_die_03"
+		},
+		{
+			"voicelineId": 17163,
+			"title": "Heavy Hit Taken: I",
+			"voicelineType": "910001",
+			"description": "Careless...",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 17164,
+			"title": "Heavy Hit Taken: II",
+			"voicelineType": "910002",
+			"description": "Nothing to fear.",
+			"voicefile": "VO_gameplay/VO_zhongli/vo_zhongli_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 17165,
+			"title": "Joining Party: I",
+			"voicelineType": "600001",
+			"description": "Sure.",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_01"
+		},
+		{
+			"voicelineId": 17166,
+			"title": "Joining Party: II",
+			"voicelineType": "600002",
+			"description": "A walk would be nice.",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_02"
+		},
+		{
+			"voicelineId": 17167,
+			"title": "Joining Party: III",
+			"voicelineType": "600003",
+			"description": "What shall we do?",
+			"voicefile": "VO_teamJoin/vo_zhongli_teamJoin_03"
+		}
+	]
+}

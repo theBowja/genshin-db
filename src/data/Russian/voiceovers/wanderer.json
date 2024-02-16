@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "Привет...",
+			"voicelineType": "1006",
+			"description": "Хочешь, чтобы я представился? За время своего пути я сменил множество имён и титулов. Хотя простому смертному каждый из них покажется недосягаемым, для меня все они давно в прошлом.\nНазывай меня как хочешь. Заодно проверим твой вкус. Смотри, не разочаруй меня.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "Поболтаем: Ветер",
+			"voicelineType": "1101",
+			"description": "В мире нет настоящей свободы. Даже ветер не может дуть вечно.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "Поболтаем: Манера речи",
+			"voicelineType": "1102",
+			"description": "Я бываю резок? Я всего лишь говорю правду, а если кому-то не нравится слушать, это его проблемы.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "Поболтаем: Обмен любезностями",
+			"voicelineType": "1103",
+			"description": "Избавь меня от обмена любезностями. Жалкое зрелище - когда люди пытаются найти тему для разговора, только чтобы не молчать.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Хочешь взять мою шляпу вместо зонта? Как тебе в голову могло такое прийти...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "После дождя...",
+			"voicelineType": "1202",
+			"description": "Ты так радуешься тому, что выглянуло солнце? Знаешь, пора тебе повзрослеть.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1203",
+			"description": "Хм... Да сколько можно.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1204",
+			"description": "Снег ничем не отличается от дождя, но нравится людям куда больше. Воистину, у каждого своя судьба.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "Когда дует сильный ветер...",
+			"voicelineType": "1205",
+			"description": "Такой ветерок даже тебе под силу наколдовать, правда?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "«Доброе утречко, вставай, засоня!..» Ха-ха, только не говори, что ждал{F#а} от меня такого приветствия.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Мне еда не нужна. Позаботься лучше о себе и о своей летающей подружке.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Наконец этот скучный день подошёл к концу.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Что, не можешь уснуть, когда я рядом? Хе-хе.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#{REALNAME[ID(1)]}: Кукла",
+			"voicelineType": "2001",
+			"description": "Сожги куклу, и от неё останется горстка пепла. А что родится из пепла - другой вопрос...",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#{REALNAME[ID(1)]}: Сердце",
+			"voicelineType": "2005",
+			"description": "Мне нет до него дела. Гнаться за тем, что никогда не будет твоим, - пустая трата времени. У меня сейчас есть дела поважнее.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "О нас: Соперники",
+			"voicelineType": "2003",
+			"description": "Значит, ты всё ещё злишься из-за наших прошлых стычек? Хм. И что ты собираешься делать со своей злостью? Подумай как следует, я не тороплюсь.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "О нас: Союзники",
+			"voicelineType": "2002",
+			"description": "Я никогда не встану на сторону «добра». Я здесь только для того, чтобы оплатить тебе свой долг.\nА вот тебе лучше что-нибудь придумать. Если кто-то увидит нас вместе и обвинит тебя в союзе с врагом, я не виноват.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Хотя при мысли о «внимании божества» меня немного тошнит, но Глаз Бога - источник силы, зачем я буду от него отказываться. Ты думаешь, Глаз Бога Анемо наделён каким-то сокровенным смыслом? Ха, откуда такая мысль? Поступки Архонтов грубы и безрассудны. Мне казалось, я уже помог тебе усвоить этот урок.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "Нет. Если хочешь что-то спросить, пожалуйста. На интересный вопрос я отвечу.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "Интересные вещи...",
+			"voicelineType": "3003",
+			"description": "Смотри, птицы кичатся друг перед другом оперением, белки запасают орехи на зиму, а люди трудятся, чтобы прокормить себя. Бесхитростным созданиям просто живётся на свете.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "О малой властительнице Кусанали...",
+			"voicelineType": "4001",
+			"description": "Возможно, она сохранила мне жизнь не только ради выгоды. Наверное, она мудра, у неё доброе сердце, а может быть, она просто почувствовала моё одиночество... Что, я думаю о ней слишком плохо? Ха, так это естественно. Я ведь злодей.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "О сёгуне Райдэн...",
+			"voicelineType": "4002",
+			"description": "Бросить своё создание на произвол судьбы, прикрываясь красивыми словами: «Я не хотела вмешиваться...»",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "О Царице...",
+			"voicelineType": "4003",
+			"description": "Все восхваляют её за доброту и мягкосердечие, но забывают, что любовь - тоже форма греха. Возможно, показная доброта помогает ей скрыть чёрствость своего сердца?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "О Шуте...",
+			"voicelineType": "4004",
+			"description": "Шут выжил во время бедствия в Каэнри'ах. Кроме этого я ничего о нём больше не знаю и никогда не имел с ним близких отношений. Но, похоже, он возлагал на меня определённые надежды, давал мне много важных поручений, в том числе и в Бездне.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "О Капитане...",
+			"voicelineType": "4005",
+			"description": "«Справедливый Капитано», «честный и бесстрашный Капитано», «непобедимый Капитано»... Даже в кукольных ушах натёрлись мозоли от бесчисленных похвал, которые расточают ему Фатуи. Тебе не кажется, что доведённая до предела честность - очень опасная штука? И не будем забывать, что сила у Капитано немаленькая.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "О Докторе...",
+			"voicelineType": "4006",
+			"description": "Как жаль, что малая властительница Кусанали повелела Доктору уничтожить все его «версии». Лишила меня удовольствия рассечь каждую из них на мелкие кусочки.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "О Субретке...",
+			"voicelineType": "4007",
+			"description": "Позволь спросить, что ты будешь делать, встретившись с девицей, которая при любых обстоятельствах остаётся одинаково глупой, невежественной и чёрствой? Я бы вызвал её на бой. А ты... ты слишком совестлив{F#а}, так что тебе лучше держаться от неё подальше.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "О Слуге...",
+			"voicelineType": "4008",
+			"description": "Волк в овечьей шкуре. Она производит впечатление утончённой и милой особы, но единственная её цель - власть. А те, кто видел её истинное, безумное я... как правило, их уже нет с нами.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "О Цыплёнке...",
+			"voicelineType": "4009",
+			"description": "Только такой простак, как Чайльд, может верить, что Цыплёнок заботится о нём и его семье по доброте душевной. Господин градоначальник в самом деле немало постарался ради их блага, но любой здравомыслящий человек видит истинный смысл его поступков: «Теперь твоя семья в моих руках».",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "О Марионетке...",
+			"voicelineType": "4010",
+			"description": "Девица с ужасным характером, которую заботят только её исследования. Несмотря на такую самоотверженность, результаты её исследований весьма скромны, если не сказать хуже. И ранг ниже моего. Какая жалость.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "О Дельце...",
+			"voicelineType": "4011",
+			"description": "А, девятый из Предвестников. Одержим идеей «справедливого обмена» до такой степени, что пытается нарушить природное неравенство людей и Архонтов. Наверное, все смертные устроены одинаково - любят предаваться бессмысленным фантазиям. У него нет ни впечатляющих способностей, ни обширного кругозора, а дружба с Доктором сулит ему одни неприятности.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "О Чайльде...",
+			"voicelineType": "4012",
+			"description": "Простак, и силой тоже не блещет. Его назначение последним из Предвестников тянет команду вниз. К счастью, я теперь не с ними.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "О Даме...",
+			"voicelineType": "4013",
+			"description": "От неё остался один прах. Меня не интересуют люди без будущего.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Всевидящий бог, бренный мир»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "О Яэ Мико...",
+			"voicelineType": "4014",
+			"description": "Ёкай с хорошо подвешенным языком. Стараясь втереться в милость своему Архонту, она притворяется, будто заботится о людях. Но на самом деле ищет одних развлечений.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Всевидящий бог, бренный мир»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "О Кадзухе...",
+			"voicelineType": "4015",
+			"description": "Ты о потомке клана Каэдэхара? Так он... У него тоже есть Глаз Бога Анемо? И ему удалось отразить удар сёгуна Райдэн? Ха-ха... А-ха-ха-ха-ха!",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#{REALNAME[ID(1)]}: Узнать больше I",
+			"voicelineType": "5001",
+			"description": "Надо же, ты хочешь узнать меня получше? Берегись, это может плохо кончиться.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#{REALNAME[ID(1)]}: Узнать больше II",
+			"voicelineType": "5002",
+			"description": "О, я прекрасно понимаю, многие люди спят и видят, как бы свести со мной счёты. Что ж, я готов. Я даже жду их.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#{REALNAME[ID(1)]}: Узнать больше III",
+			"voicelineType": "5003",
+			"description": "Когда-то я думал, что превращение в Архонта позволит мне избавиться от бессмысленного груза чувств, но теперь я не считаю все чувства бессмысленными. По крайней мере, гнев бывает очень полезным инструментом - что мой собственный, что гнев окружающих.\nНеужели есть люди, которые совсем не умеют злиться? Даже представить трудно. В них что, нет ни капли зла?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#{REALNAME[ID(1)]}: Узнать больше IV",
+			"voicelineType": "5004",
+			"description": "Когда я попал в Ирминсуль, у меня было только одно желание: начисто стереть себя из этого мира.\nИрминсуль исполнил желание, но результат меня разочаровал. Мир продолжает куражиться над своими узниками, в этом смысле его судьба нисколько не изменилась.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#{REALNAME[ID(1)]}: Узнать больше V",
+			"voicelineType": "5005",
+			"description": "Наши пути пересекались в прошлом, но однажды они разойдутся. Кто знает, что будет дальше? Посмотрим.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Инверсия бытия»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#{REALNAME[ID(1)]} и его хобби...",
+			"voicelineType": "6001",
+			"description": "Хобби? Хобби бывают только у бездельников. Я что, похож на бездельника?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#{REALNAME[ID(1)]} и его беспокойство...",
+			"voicelineType": "6002",
+			"description": "Думаю, как бы избавиться от тебя и натворить побольше зла. Шучу. А ты поверил{F#а}?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "Любимая еда...",
+			"voicelineType": "6005",
+			"description": "У тебя есть чай? Чем горче, тем лучше. Горечь с послевкусием горечи.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Приторные сладости, от которых слипаются зубы. Оставь их себе.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Недурно. То немногое, что ты умеешь.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "Неплохо. По крайней мере, это съедобно.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Хочешь меня отравить? Неужели ты настолько оглупел{F#а}, что забыл{F#а}: я не простой смертный!",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "Дай мне руку. Ха, да не бойся. Я просто отведу тебя в одно место с красивым видом.\nНу как? Редко такое увидишь, да? Не благодари, я не люблю бессмысленные церемонии.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "...Вижу, это стоило тебе больших усилий.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Дует ветер... Что ты сделал{F#а}?",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Ты не боишься делиться со мной своей силой?.. Ладно.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Я могу оказаться полезен, но не стоит считать меня своим союзником, это слишком опасно. Надеюсь, ты понимаешь, что делаешь. Если не боишься, вставай позади меня.",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Поднимается ветер!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Мирская пыль!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Яростный шквал!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Ничтожные насекомые!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Жалкий паразит!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Кричи громче!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "Взрыв стихии IV",
+			"voicelineType": "200004",
+			"description": "Склони голову!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "Взрыв стихии V",
+			"voicelineType": "200005",
+			"description": "Знай своё место!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "Взрыв стихии VI",
+			"voicelineType": "200006",
+			"description": "Как ты смеешь смотреть мне в глаза?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "Начало спринта I",
+			"voicelineType": "700001",
+			"description": "Рывок вперёд!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "Начало спринта II",
+			"voicelineType": "700002",
+			"description": "На крыльях ветра!",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "Начало спринта III",
+			"voicelineType": "700004",
+			"description": "...Как же медленно.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "Начало спринта IV",
+			"voicelineType": "700005",
+			"description": "Я тебя не звал.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Хлам.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "А? Ты и от этого не откажешься?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Бери себе, если хочешь.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Я привык.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Ничего особенного.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Какой от тебя прок?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Я и не ждал от тебя помощи.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Я падаю... в бездну...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Всё... было напрасно...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Расплата за грехи...",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "И это всё?",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "...Смешно.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "Получен тяжёлый удар III",
+			"voicelineType": "910003",
+			"description": "...Тебе конец.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "Получен тяжёлый удар IV",
+			"voicelineType": "910004",
+			"description": "Ты будешь молить о пощаде.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "Получен тяжёлый удар V",
+			"voicelineType": "910005",
+			"description": "Готовься к расплате.",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "А?.. Что тебе от меня нужно?",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Надеюсь, ты не будешь отвлекать меня по пустякам.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Без меня никак?.. Ладно, так и быть.",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

@@ -1,0 +1,660 @@
+{
+	"id": 10000038,
+	"name": "Albedo",
+	"friendLines": [
+		{
+			"voicelineId": 35009,
+			"title": "Presentazione",
+			"voicelineType": "1000",
+			"description": "Sono Albedo, capo alchimista dei Cavalieri di Favonius. Vedo che sei avvolt{F#a}{M#o} dall'aura delle stelle, interessante... Vorrei fare degli studi su di te, se non ti dispiace. Sono certo che avremo molte occasioni di passare tempo assieme.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_draw_appear"
+		},
+		{
+			"voicelineId": 35010,
+			"title": "Dialogo: Natura morta",
+			"voicelineType": "1101",
+			"description": "Che spettacolo... Che ne dici di fare una pausa, così posso disegnare un bozzetto di questo splendido paesaggio?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_explore_idle_01"
+		},
+		{
+			"voicelineId": 35011,
+			"title": "Dialogo: Indagine",
+			"voicelineType": "1102",
+			"description": "\"La verità di questo mondo...\" *sospira* Quale potrà mai essere?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_explore_idle_02"
+		},
+		{
+			"voicelineId": 35012,
+			"title": "Dialogo: Reminiscenze",
+			"voicelineType": "1103",
+			"description": "Perlustrare il mondo, trasformando ciò che è sconosciuto in conoscenza. Aaah, quanto mi mancava questa sensazione!",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_explore_idle_03"
+		},
+		{
+			"voicelineId": 35013,
+			"title": "Quando piove",
+			"voicelineType": "1201",
+			"description": "Ora che il suolo è umido, è il momento perfetto per raccogliere le radici di Fiorbomba. No, lascia che ci pensi io, per favore.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 35014,
+			"title": "Quando nevica",
+			"voicelineType": "1202",
+			"description": "Maestra...",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_weather_snowy_01"
+		},
+		{
+			"voicelineId": 35015,
+			"title": "Quando spunta il sole",
+			"voicelineType": "1203",
+			"description": "Luce in abbondanza... Organismi biologici in attività... Sì, è il posto perfetto per fare un bozzetto.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_weather_sunny_01"
+		},
+		{
+			"voicelineId": 35016,
+			"title": "Buongiorno",
+			"voicelineType": "1001",
+			"description": "Buongiorno. Oggi andiamo a cercare un po' di antiche reliquie?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 35017,
+			"title": "Buon pomeriggio",
+			"voicelineType": "1002",
+			"description": "Buon pomeriggio. Ho sentito i tuoi passi. Accidenti... C'è senz'altro molto movimento fuori dal laboratorio.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 35018,
+			"title": "Buonasera",
+			"voicelineType": "1003",
+			"description": "*sospira* Fuori è diventato tutto tranquillo...",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 35019,
+			"title": "Buonanotte",
+			"voicelineType": "1004",
+			"description": "Buonanotte, vai pure a dormire. Io ho ancora un esperimento da finire prima di andare a letto. Se ti interessa il risultato, ne possiamo parlare insieme domani.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 35020,
+			"title": "A proposito di Albedo: Genio",
+			"voicelineType": "2001",
+			"description": "Un genio? Ci sono varie persone che mi definiscono così. Io però non mi ritengo un genio.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_idle"
+		},
+		{
+			"voicelineId": 35021,
+			"title": "A proposito di Albedo: Socializzare",
+			"voicelineType": "2002",
+			"description": "Le relazioni sono... *sospira* alquanto complicate. Quando cominci una relazione con una persona, devi coltivarla costantemente. Se perdi il contatto, devi ristabilirlo. Questo gravoso ciclo richiede... molto tempo.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_idle2"
+		},
+		{
+			"voicelineId": 35022,
+			"title": "A proposito di noi: Esperimenti",
+			"voicelineType": "2003",
+			"description": "Vuoi... farmi compagnia durante un esperimento? Sono onorato.\nOh, non essere nervos{F#a}{M#o}. A volte i miei esperimenti sono un po' pericolosi, ma nessuno si fa male... di solito.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_close"
+		},
+		{
+			"voicelineId": 35023,
+			"title": "A proposito di noi: Assistente",
+			"voicelineType": "2004",
+			"description": "Mi faresti il grande onore di aiutarmi come assistente? Dopo aver seguito così tanti esperimenti, avrai già imparato diverse cose sull'alchimia. Rilassati, lavoreremo insieme. Non credo che ti troverai in difficoltà. Ho fiducia nelle mie competenze di insegnante, e ancora di più nelle tue doti eccezionali.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35024,
+			"title": "A proposito della Visione",
+			"voicelineType": "3001",
+			"description": "La mia Visione? Ah, non è altro che uno strumento utile per i miei esperimenti, esattamente come un alambicco o un crogiolo. L'unica cosa che mi incuriosisce nei suoi confronti è il suo principio di funzionamento... Un giorno, ne svelerò i segreti. È solo questione di tempo.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35025,
+			"title": "Qualcosa da condividere",
+			"voicelineType": "3002",
+			"description": "C'è una cosa che volevo chiederti da sempre, ma temevo il tuo disappunto e possibile rifiuto...\nEhm... Sono molto interessato alla tua... compagna fluttuante. Posso rubartela per un breve studio?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_share_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35026,
+			"title": "Curiosità",
+			"voicelineType": "3003",
+			"description": "Ti piacerebbe saperne di più sugli Alberi pietrificati? Mmmh... ehm. A dire il vero, gli Alberi pietrificati che hai visto nei vari domini non sono così vecchi. Quelli veramente antichi possono estendersi dai 1.600 ai 3.200 metri di altezza. Oh, e tra le loro radici dimorano dei ragni piuttosto grandi. Se ne avvolgi uno con un po' di gelsomino crespo e citronella, lo cospargi di cardamomo e poi lo fai affumicare per qualche ora, acquisterà un gusto e una fragranza semplicemente... indimenticabili.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_gift"
+		},
+		{
+			"voicelineId": 35027,
+			"title": "A proposito della famiglia",
+			"voicelineType": "4001",
+			"description": "La mia famiglia? Sebbene Alice mi abbia sempre chiesto di chiamarla \"mamma\", quando penso all'idea di famiglia, mi viene subito in mente la mia insegnante. I ricordi più vecchi che ho risalgono a quando mi portava con sé all'avventura. Mi ha insegnato l'arte dell'alchimia e molte nozioni sul nostro mondo. Forse nemmeno le parole \"famiglia\" e \"maestra\" sono sufficienti a esprimere pienamente quanto lei conti per me.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_relatives_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35028,
+			"title": "A proposito di Sucrose: Direzione",
+			"voicelineType": "4002",
+			"description": "Sucrose? Credo di capire più o meno il motivo che la spinge a condurre ricerche nel campo della bioalchimia. In ogni caso, sono contento di vedere che con il suo lavoro ottiene sempre più risultati.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35029,
+			"title": "A proposito di Sucrose: Abitudini",
+			"voicelineType": "4003",
+			"description": "Condurre ricerche alchemiche insieme a Sucrose è molto piacevole, ma è un po'... testarda su certi aspetti non legati alla ricerca. Per esempio, le ho detto diverse volte di chiamarmi semplicemente \"Albedo\", visto che abbiamo all'incirca la stessa età, ma continua comunque a rivolgersi a me in modo molto formale. *sospira* La lascerò fare come vuole, suppongo.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_sucrose_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35030,
+			"title": "A proposito di Lisa",
+			"voicelineType": "4004",
+			"description": "Lisa? Sono molto colpito dai validi punti di vista con i quali contribuisce alle discussioni. Tuttavia, può una persona con le sue doti essere soddisfatta lavorando come semplice bibliotecaria? Secondo me, c'è sotto un'altra ragione.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35031,
+			"title": "A proposito di Klee",
+			"voicelineType": "4005",
+			"description": "Ai miei occhi, Klee è proprio come una sorella minore. Ogni volta che si ficca in un gran bel pasticcio, mi consolo pensando che la sua potenza distruttiva è nulla rispetto a quella di Alice.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35032,
+			"title": "A proposito di Jean",
+			"voicelineType": "4006",
+			"description": "Jean? Ha svolto un lavoro eccezionale come Gran Maestra Reggente. Si potrebbe addirittura dire che sia più affidabile del Gran Maestro Varka. Forse, in cuor nostro, stiamo tutti aspettando il giorno in cui diventerà ufficialmente Gran Maestra.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35033,
+			"title": "A proposito di Xingqiu",
+			"voicelineType": "4007",
+			"description": "Oh, Xingqiu? Trovo che le sue opere siano alquanto interessanti. La Casa editrice Yae di Inazuma continua a chiedermi di cooperare con un nuovo autore per ottenere maggiori introiti dai diritti. Umpf, ti sembro forse il tipo che si fa influenzare da qualche Mora in più?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_xingqiu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35034,
+			"title": "A proposito di Barbara",
+			"voicelineType": "4008",
+			"description": "Barbara? È una diaconessa molto severa. Una volta, ho avuto l'occasione di farle un ritratto... Vuoi sapere dov'è finito? Ah, sì... Albert voleva comprarlo e mi ha fatto un'offerta, ma ho preferito rifiutare e donarlo invece alla Gran Maestra Reggente. Le relazioni sociali... richiedono proprio tanti sforzi.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35035,
+			"title": "Altro su Albedo (1)",
+			"voicelineType": "5001",
+			"description": "Hai una domanda per me? Chiedi pure. Non ti ci vorrà molto per fare una singola domanda, dico bene? Sto per iniziare la fase finale di un esperimento...",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_01"
+		},
+		{
+			"voicelineId": 35036,
+			"title": "Altro su Albedo (2)",
+			"voicelineType": "5002",
+			"description": "Oh, a proposito: sapevi che senza l'intervento dell'uomo, per creare dell'oro sarebbe necessario sfruttare la potenza di un sole otto volte più grande del nostro?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35037,
+			"title": "Altro su Albedo (3)",
+			"voicelineType": "5003",
+			"description": "Il tempo necessario per abbozzare un ritratto cambia a seconda dell'indole della persona. Un ritratto di Huffman potrebbe prendermi anche mezza giornata, mentre per disegnare Kaeya mi basterebbero solo pochi tratti: uno per il volto, uno per l'elastico della benda e... uno per la benda.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35038,
+			"title": "Altro su Albedo (4)",
+			"voicelineType": "5004",
+			"description": "Cos'altro faccio oltre a condurre ricerche e a disegnare? Qualche volta leggo dei romanzi da Inazuma e Liyue. Contengono molte idee affascinanti che a volte possono rivelarsi un'inaspettata fonte di ispirazione per le mie creazioni.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35039,
+			"title": "Altro su Albedo (5)",
+			"voicelineType": "5005",
+			"description": "Ancora oggi, trovo che la fase nigredo del processo alchemico, tramandatami dalla mia insegnante, sia piena di misteri. Cosa intendeva creare la maestra tramite quella tecnica...? La mia ricerca è tutt'altro che finita. Mi servirà il tuo aiuto per proseguire l'indagine.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca al liv. amicizia 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35040,
+			"title": "Gli hobby di Albedo",
+			"voicelineType": "6001",
+			"description": "Mmmh... L'attività a cui dedico più tempo dopo la ricerca è probabilmente il disegno a matita. All'inizio era solo un modo per studiare meglio la struttura di forme di vita e materiali, una sorta di aiuto per i miei esperimenti, ma alla fine è diventato un hobby vero e proprio. Sì, è un ottimo modo per rilassarsi.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_hobby"
+		},
+		{
+			"voicelineId": 35041,
+			"title": "I guai di Albedo",
+			"voicelineType": "6002",
+			"description": "Il tempo non è mai abbastanza, vero? Anche mettendo in sospeso le faccende più complicate, non riesco comunque a trovare il tempo per tutto.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_dialog_annoyed"
+		},
+		{
+			"voicelineId": 35042,
+			"title": "Cibo preferito",
+			"voicelineType": "6003",
+			"description": "Mi piacciono molto i dessert. Come posso dire... Dopo aver consumato le proprie energie fisiche e mentali, i composti altamente energetici forniscono una sorta di potenziamento primordiale alquanto efficace.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_foodLike"
+		},
+		{
+			"voicelineId": 35043,
+			"title": "Cibo meno amato",
+			"voicelineType": "6004",
+			"description": "Cosa non mi piace mangiare? Le grandi porzioni di carne nei ristoranti. Non ho mai molto appetito, quindi un pasto come quello finisce sempre in una tragedia: o mangio troppo senza godermi i sapori, oppure non finisco il piatto ed è un vero spreco. Pertanto, ho deciso di non andare più al ristorante, nonostante ciò significhi passare più tempo a cucinare.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_foodDislike"
+		},
+		{
+			"voicelineId": 35071,
+			"title": "Ricevere un regalo (1)",
+			"voicelineType": "6007",
+			"description": "Se i sapori fossero colori... questo piatto sarebbe oro.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_spice_pref_01"
+		},
+		{
+			"voicelineId": 35072,
+			"title": "Ricevere un regalo (2)",
+			"voicelineType": "6008",
+			"description": "Sei dispost{F#a}{M#o} a passare molto tempo a migliorare le tue competenze culinarie. È questa la ragione per cui riesci a creare un sapore così buono.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_spice_normal_01"
+		},
+		{
+			"voicelineId": 35073,
+			"title": "Ricevere un regalo (3)",
+			"voicelineType": "6009",
+			"description": "Questa porzione è troppo abbondante per me... Magari possiamo condividerla?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_spice_dislike_01"
+		},
+		{
+			"voicelineId": 35044,
+			"title": "Compleanno",
+			"voicelineType": "7001",
+			"description": "Buon compleanno. Sembri particolarmente content{F#a}{M#o}, ti piacerebbe che ti facessi un ritratto? La capacità del nostro cervello è limitata, quindi tendiamo a dimenticare le cose. Tuttavia, quando un'immagine viene trasferita su carta o su tela, il disegno diventa un'estensione della nostra memoria. Riguardandolo in futuro, ci torneranno in mente le emozioni del passato.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 35045,
+			"title": "Pensieri sull'ascensione: Introduzione",
+			"voicelineType": "8001",
+			"description": "La nigredo è la prima fase dell'alchimia, in cui si attinge dalle forme primordiali della materia. In quanto esseri di questo mondo, dobbiamo trovare il senso della nostra vita.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca con la fase d'ascensione 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35046,
+			"title": "Pensieri sull'ascensione: Crescendo",
+			"voicelineType": "8002",
+			"description": "La albedo è la fase in cui inizia il cambiamento. Ci si libera di tutto ciò che è superfluo per apprendere tutta la conoscenza disponibile. Ti andrebbe di perlustrare questo mondo con me?",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca con la fase d'ascensione 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35047,
+			"title": "Pensieri sull'ascensione: Culmine",
+			"voicelineType": "8003",
+			"description": "La rubedo è la fase di affinamento dei sentimenti. Credo di essere riuscito ad affinare le mie emozioni anche grazie a te.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca con la fase d'ascensione 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 35048,
+			"title": "Pensieri sull'ascensione: Conclusione",
+			"voicelineType": "8004",
+			"description": "La citrinitas è la fase finale della trasmutazione alchemica. Il significato dell'oggetto trasmutato vede finalmente la luce diventando oro e rivelando il suo vero valore. Anch'io ho trovato il significato della mia esistenza.",
+			"voicefile": "VO_friendship/VO_albedo/vo_albedo_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Si sblocca con la fase d'ascensione 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 35049,
+			"title": "Abilità elementale (1)",
+			"voicelineType": "100001",
+			"description": "Fiorisci.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill1_01"
+		},
+		{
+			"voicelineId": 35050,
+			"title": "Abilità elementale (2)",
+			"voicelineType": "100002",
+			"description": "Vieni alla luce!",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill1_02"
+		},
+		{
+			"voicelineId": 35051,
+			"title": "Abilità elementale (3)",
+			"voicelineType": "100003",
+			"description": "Vivi!",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill1_03"
+		},
+		{
+			"voicelineId": 35052,
+			"title": "Tripudio elementale (1)",
+			"voicelineType": "200001",
+			"description": "È ora di nascere.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill3_01"
+		},
+		{
+			"voicelineId": 35053,
+			"title": "Tripudio elementale (2)",
+			"voicelineType": "200002",
+			"description": "Assaggia l'antico potere.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill3_02"
+		},
+		{
+			"voicelineId": 35054,
+			"title": "Tripudio elementale (3)",
+			"voicelineType": "200003",
+			"description": "Assisti alla mia impresa.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_skill3_03"
+		},
+		{
+			"voicelineId": 35055,
+			"title": "Apertura baule (1)",
+			"voicelineType": "300001",
+			"description": "Il mondo custodisce tanti tesori rari.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_chest_open_01"
+		},
+		{
+			"voicelineId": 35056,
+			"title": "Apertura baule (2)",
+			"voicelineType": "300002",
+			"description": "Se questo tesoro potesse parlare...",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_chest_open_02"
+		},
+		{
+			"voicelineId": 35057,
+			"title": "Apertura baule (3)",
+			"voicelineType": "300003",
+			"description": "Non sarà oro, ma di certo luccica.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_chest_open_03"
+		},
+		{
+			"voicelineId": 35058,
+			"title": "PS bassi (1)",
+			"voicelineType": "410001",
+			"description": "Ho sbagliato i miei calcoli...",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_01"
+		},
+		{
+			"voicelineId": 35059,
+			"title": "PS bassi (2)",
+			"voicelineType": "410002",
+			"description": "È il caso di rivalutare...",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_02"
+		},
+		{
+			"voicelineId": 35060,
+			"title": "PS bassi (3)",
+			"voicelineType": "410003",
+			"description": "Serve una nuova strategia.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_03"
+		},
+		{
+			"voicelineId": 35061,
+			"title": "PS bassi alleato (1)",
+			"voicelineType": "400001",
+			"description": "Da qui ci penso io.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 35062,
+			"title": "PS bassi alleato (2)",
+			"voicelineType": "400002",
+			"description": "È troppo pericoloso per te.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 35063,
+			"title": "Fuori combattimento (1)",
+			"voicelineType": "500001",
+			"description": "Cenere alla cenere, polvere alla polvere...",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_die_01"
+		},
+		{
+			"voicelineId": 35064,
+			"title": "Fuori combattimento (2)",
+			"voicelineType": "500002",
+			"description": "Il mio... esperimento... è fallito...",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_die_02"
+		},
+		{
+			"voicelineId": 35065,
+			"title": "Fuori combattimento (3)",
+			"voicelineType": "500003",
+			"description": "Pare che la mia ricerca... sia finita...",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_life_die_03"
+		},
+		{
+			"voicelineId": 35066,
+			"title": "Danni da colpo leggero (1)",
+			"voicelineType": "900001",
+			"description": "Posso ancora resistere.",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 35067,
+			"title": "Danni da colpo pesante (1)",
+			"voicelineType": "910001",
+			"description": "Ho valutato male...",
+			"voicefile": "VO_gameplay/VO_albedo/vo_albedo_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 35068,
+			"title": "Unione al gruppo (1)",
+			"voicelineType": "600001",
+			"description": "Ho capito.",
+			"voicefile": "VO_teamJoin/vo_albedo_teamJoin_01"
+		},
+		{
+			"voicelineId": 35069,
+			"title": "Unione al gruppo (2)",
+			"voicelineType": "600002",
+			"description": "Una ricerca sul campo?",
+			"voicefile": "VO_teamJoin/vo_albedo_teamJoin_02"
+		},
+		{
+			"voicelineId": 35070,
+			"title": "Unione al gruppo (3)",
+			"voicelineType": "600003",
+			"description": "Diamo un'occhiata più approfondita.",
+			"voicefile": "VO_teamJoin/vo_albedo_teamJoin_03"
+		}
+	]
+}

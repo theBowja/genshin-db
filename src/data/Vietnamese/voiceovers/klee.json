@@ -1,0 +1,744 @@
+{
+	"id": 10000029,
+	"name": "Klee",
+	"friendLines": [
+		{
+			"voicelineId": 18009,
+			"title": "Lần đầu gặp mặt...",
+			"voicelineType": "1000",
+			"description": "Kỵ Sĩ Tia Lửa của Đội Kỵ Sĩ Tây Phong, Klee báo cáo! A... Tiếp theo phải nói gì nhỉ? Klee quên mất rồi...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_draw_appear"
+		},
+		{
+			"voicelineId": 18010,
+			"title": "Nói chuyện phiếm - Thu hoạch",
+			"voicelineType": "1101",
+			"description": "Hôm nay Klee lại dũng cảm bắt được một con Rồng Đất hoa văn kỳ quái đó! Hoa văn này Klee chưa từng thấy bao giờ, {F#chị}{M#anh} muốn xem thử không?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_explore_idle_01"
+		},
+		{
+			"voicelineId": 18011,
+			"title": "Nói chuyện phiếm - Mạo hiểm",
+			"voicelineType": "1102",
+			"description": "{F#Chị}{M#Anh} có muốn đi nổ cá cùng Klee không? Mặc dù bị tóm thì sẽ bị cấm túc một ngày, nhưng cá rất ngon, cho nên cũng xứng đáng mà!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_explore_idle_02"
+		},
+		{
+			"voicelineId": 18012,
+			"title": "Nói chuyện phiếm - Quy tắc",
+			"voicelineType": "1103",
+			"description": "\"Trong thành đốt pháo, phòng giam báo cáo\", \"Bom gây thương tích, Jean tìm đến cửa\", \"Phóng hỏa đốt rừng Klee chết chắc\" - Đây chính là quy tắc sinh tồn trong Đội Kỵ Sĩ của Klee.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_explore_idle_03"
+		},
+		{
+			"voicelineId": 18013,
+			"title": "Khi trời mưa...",
+			"voicelineType": "1201",
+			"description": "Hừ hừ, quả bom lần này là loại chống thấm.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 18014,
+			"title": "Khi có sấm sét...",
+			"voicelineType": "1202",
+			"description": "A! Thứ gì nổ vậy? A... Là sấm sét!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_weather_thunder_01"
+		},
+		{
+			"voicelineId": 18015,
+			"title": "Gió lớn quá...",
+			"voicelineType": "1203",
+			"description": "Phong Thần phù hộ, hãy thổi quả bom của Klee đến nơi thích hợp đi!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_weather_gale_01"
+		},
+		{
+			"voicelineId": 18016,
+			"title": "Chào buổi sáng...",
+			"voicelineType": "1001",
+			"description": "Chào buổi sáng! Đưa Klee đi chơi đi! Chúng ta cùng đi mạo hiểm nhé!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 18017,
+			"title": "Chào buổi trưa...",
+			"voicelineType": "1002",
+			"description": "Đến giờ cơm trưa rồi! A... Ăn gì đây nhỉ? Để em xem thử cuốn \"Hướng Dẫn Du Ngoạn Teyvat\"...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 18018,
+			"title": "Chào buổi tối...",
+			"voicelineType": "1003",
+			"description": "Chào buổi tối! Xin {F#chị}{M#anh} hãy giúp em nói với ngài Huffman rằng Klee không còn là trẻ con nữa, buổi tối Klee cũng có thể đi chơi... Đưa Klee đi chơi đi mà...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 18019,
+			"title": "Chúc ngủ ngon...",
+			"voicelineType": "1004",
+			"description": "Tuy lúc đi chơi thì nói là không muốn về nhà, nhưng mà sau khi trời tối, một mình giữa chốn hoang vu mù mịt, lại không biết đường... Xin {F#chị}{M#anh}... khi trở về, hãy dắt em về cùng với, có được không...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 18020,
+			"title": "Về bản thân Klee - Tai họa",
+			"voicelineType": "2001",
+			"description": "Huhu... Không ngờ lần này lại làm nổ cả cánh quạt của cối xay gió... Thật sự xin lỗi!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_idle"
+		},
+		{
+			"voicelineId": 18021,
+			"title": "Về bản thân Klee - Bồi thường",
+			"voicelineType": "2002",
+			"description": "Em... Em làm thủ công giỏi lắm đó, hãy để em giúp mọi người làm lại một cái... Sao chứ? Cấm thuê lao động trẻ em? Hu...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_idle2"
+		},
+		{
+			"voicelineId": 18022,
+			"title": "Về chúng ta - Kỵ sĩ",
+			"voicelineType": "2003",
+			"description": "Hì hì... Kỵ Sĩ Danh Dự, Klee là Kỵ Sĩ Tia Lửa, có thể nói là tiền bối của {F#chị}{M#anh} trong Đội Kỵ Sĩ Tây Phong á? Cho nên, cho nên... Rắc rối mà em đã gây ra lần này, có thể giúp em che giấu không...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Vì Một Ngày Mai Không Rơi Lệ\"",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						38406
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18023,
+			"title": "Về chúng ta - Bạn cùng chơi",
+			"voicelineType": "2004",
+			"description": "Không được! Mới 9 giờ mà, đêm nay Klee nhất định phải xem hết chương trình xiếc đặc biệt này! {F#Chị}{M#Anh} là đồng hành của Klee đúng chứ! Vậy thì đừng hòng bắt Klee về nhà vào lúc này, lêu lêu lêu lêu...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_close1_b",
+			"voicefile_male": "VO_friendship/VO_klee/vo_klee_dialog_close1_a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18024,
+			"title": "Về Vision...",
+			"voicelineType": "3001",
+			"description": "Quả cầu pha lê nhỏ xíu này là đại diện cho sự khẳng định của ngài Barbatos đối với Klee sao... Ừm... Rốt cuộc là khẳng định về mặt nào của em nhỉ? Sự tự do chăng? Vậy hay là sau này em cứ tự do đi nổ cá nhiều thật nhiều để báo đáp sự kỳ vọng của ngài Barbatos nhỉ...?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18025,
+			"title": "Có gì muốn chia sẻ không...",
+			"voicelineType": "3002",
+			"description": "Klee biết, không được phá nổ bức tường của Đội Kỵ Sĩ. Tuy rằng cho nổ xong có thể dễ dàng ra khỏi phòng giam, nhưng anh Kaeya nói rồi, nếu em làm như vậy, thì e là đội trưởng Jean sẽ không bao giờ cho em nhìn thấy mặt trời của ngày hôm sau nữa...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_share"
+		},
+		{
+			"voicelineId": 18026,
+			"title": "Những kiến thức thú vị...",
+			"voicelineType": "3003",
+			"description": "Hoa văn của mỗi con Rồng Đất đều khác nhau, đuôi của một số con sau khi phơi khô rồi nghiền thành bột có thể dùng làm nguyên liệu điều chế thuốc nổ. Đây là do anh Albedo nói cho em biết đó.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_gift"
+		},
+		{
+			"voicelineId": 18027,
+			"title": "Về Razor...",
+			"voicelineType": "4001",
+			"description": "Tụi em là bạn bè! Dáng vẻ Razor cố gắng chống lại nguy hiểm, bảo vệ Klee thật khiến người ta cảm thấy an tâm... Ừm... Mặc dù đa số nguy hiểm đều là do em mang đến cho anh ấy...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_razor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18028,
+			"title": "Về Cha Mẹ...",
+			"voicelineType": "4002",
+			"description": "Cha và mẹ em đều là nhà lữ hành nổi tiếng khắp đại lục! Có rất nhiều khách sạn và quán ăn đều quan tâm đến những đánh giá đầy quyền lực trong tác phẩm Hướng Dẫn Du Ngoạn Teyvat do mẹ em viết.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_parent_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18029,
+			"title": "Về Kaeya...",
+			"voicelineType": "4003",
+			"description": "Anh Kaeya là người tốt! \"Quy Tắc Sinh Tồn Đội Kỵ Sĩ\" là do anh Kaeya giúp Klee viết. Khi Klee gây ra rắc rối, anh ấy cũng thường giúp Klee che giấu.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18030,
+			"title": "Về Amber...",
+			"voicelineType": "4004",
+			"description": "Chị Amber là người tốt! Bá Tước Thỏ sờ vào toàn là lông xù, còn có thể phát nổ nữa, quá tuyệt vời!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18031,
+			"title": "Về Jean...",
+			"voicelineType": "4005",
+			"description": "Đội Trưởng Jean là người tốt! Tuy có... hơi đáng sợ một chút...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18032,
+			"title": "Về Diluc...",
+			"voicelineType": "4006",
+			"description": "Ngài kỳ quái luôn mang dáng vẻ cau có... Ừm... Tại sao lại không thích cười vậy chứ?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18033,
+			"title": "Về Lisa...",
+			"voicelineType": "4007",
+			"description": "Lisa à... Chị Lisa là người tốt! Mỗi lần Klee đến xưởng của chị ấy, chị ấy đều cho Klee trà bánh rất ngon... Í? Nói mới nhớ, hình như mục đích ban đầu em đến xưởng của chị ấy là để làm thuốc nổ mới mà...?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18034,
+			"title": "Về Bennett...",
+			"voicelineType": "4008",
+			"description": "Anh Bennett là người tốt! Đi mạo hiểm cùng anh ấy Klee luôn có được nhiều thu hoạch hơn!... Mặc dù anh Bennett thì lần nào cũng không tìm thấy bảo vật gì cả. Ưm... Tại sao vậy nhỉ?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18035,
+			"title": "Về Diona...",
+			"voicelineType": "4009",
+			"description": "Chị Diona là người tốt! Suy nghĩ \"dựa vào bản thân mình phá hủy ngành rượu Mondstadt\" rất thú vị, Klee cũng muốn dùng bom để giúp đỡ! Tuy rằng Klee cũng không rõ lắm \"Ngành Rượu Mondstadt\" là quái vật gì?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_diona_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18036,
+			"title": "Về Albedo...",
+			"voicelineType": "4010",
+			"description": "Anh Albedo và Klee có một giao hẹn bí mật! Nếu Klee nhìn thấy trước xưởng treo bảng \"Đang thí nghiệm\" thì Klee sẽ quay lại tìm anh ấy sau. Lúc không làm việc, anh Albedo rất kiên nhẫn chơi cùng với Klee, nên Klee cũng kiên nhẫn chờ anh ấy!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18037,
+			"title": "Về Mona...",
+			"voicelineType": "4011",
+			"description": "Chị Mona là người tốt! Mỗi lần chị ấy tìm anh Albedo và Klee chơi đều nói ra nhiều thứ tuy khó hiểu nhưng lại rất thú vị! Klee rất thích chị ấy đến chơi!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_mona_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18038,
+			"title": "Về Sucrose...",
+			"voicelineType": "4012",
+			"description": "Chị Sucrose là người tốt! Chị ấy hỏi em có muốn một chiếc bom nảy vừa có thể chạy vừa có thể nhảy không? Hihi, đương nhiên là muốn rồi, em còn muốn có mấy trăm cái, để trên đường phố, trên bậc thang, trên quảng trường Mondstadt đều là bom nảy!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18039,
+			"title": "Muốn tìm hiểu Klee - Điều thứ 1",
+			"voicelineType": "5001",
+			"description": "Xin chào! {F#Chị}{M#Anh} đến tìm Klee chơi à?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_01"
+		},
+		{
+			"voicelineId": 18040,
+			"title": "Muốn tìm hiểu Klee - Điều thứ 2",
+			"voicelineType": "5002",
+			"description": "Đúng vậy, quả bom này là tác phẩm cải tạo mới nhất của Klee! {F#Chị}{M#Anh} thấy em làm có tốt không? Chẹp... Nếu như thấy nó ở hiện trường phóng hỏa gì gì đó, thì tuyệt đối không phải do em làm đâu, tuyệt đối không phải.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18041,
+			"title": "Muốn tìm hiểu Klee - Điều thứ 3",
+			"voicelineType": "5003",
+			"description": "Tuy rằng hầu hết công thức thuốc nổ mới đều được nghĩ ra trong lúc bị cấm túc... Nhưng nếu không bị cấm túc thì sẽ tốt hơn...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18042,
+			"title": "Muốn tìm hiểu Klee - Điều thứ 4",
+			"voicelineType": "5004",
+			"description": "Đây là Dodoco, là người bạn Klee quen biết từ rất lâu rồi. Hãy nhớ tên của bạn ấy nhé, về sau đừng gọi bạn ấy là \"búp bê treo trên ba lô của em\" nữa.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18043,
+			"title": "Muốn tìm hiểu Klee - Điều thứ 5",
+			"voicelineType": "5005",
+			"description": "Cảm ơn {F#chị}{M#anh} đã luôn giúp Klee giải quyết rắc rối! Xin dùng xiên \"Cá Nướng Klee\" này để báo đáp {F#chị}{M#anh} vậy! À... Thật ra, cá này lúc ở trong hồ đã bị bom nổ chín luôn đó, nhưng chuyện này cũng như mọi khi, {F#chị}{M#anh} cứ giả vờ không biết là được rồi.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18044,
+			"title": "Sở thích của Klee...",
+			"voicelineType": "6001",
+			"description": "Klee thích những thứ có lông xù. Ví dụ như Dodoco, bồ công anh, và còn mái tóc của Razor nữa.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_hobby"
+		},
+		{
+			"voicelineId": 18045,
+			"title": "Nỗi buồn của Klee...",
+			"voicelineType": "6002",
+			"description": "Haiz, {F#chị}{M#anh} là người tốt, em là đứa trẻ hư... Lần này sau khi cấm túc tự kiểm điểm xong, em sẽ đến tìm {F#chị}{M#anh}, để {F#chị}{M#anh} dẫn em đi chơi nha...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_dialog_annoyed"
+		},
+		{
+			"voicelineId": 18046,
+			"title": "Món ăn yêu thích...",
+			"voicelineType": "6003",
+			"description": "Cá chép của Mondstadt rất ngon, đặc biệt là cá bắt lên từ Hồ Rượu Trái Cây! Không phải Klee nói bừa, ngay cả mẹ Klee cũng đồng ý với Klee.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_foodLike"
+		},
+		{
+			"voicelineId": 18047,
+			"title": "Món ăn ghét...",
+			"voicelineType": "6004",
+			"description": "Ghét cua của Mondstadt... Tất cả loại cua đều đáng ghét... Klee muốn đi chơi... Không muốn ngồi bên bàn ăn từ từ bóc vỏ cua...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_foodDislike"
+		},
+		{
+			"voicelineId": 18077,
+			"title": "Nhận Được Quà I",
+			"voicelineType": "6007",
+			"description": "Woa, thơm quá thơm quá! Klee no bụng đến nỗi ăn không nổi nữa rồi...",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_spice_pref_01"
+		},
+		{
+			"voicelineId": 18078,
+			"title": "Nhận Được Quà II",
+			"voicelineType": "6008",
+			"description": "Hôm nay cũng được ăn món ngon, Klee rất vui! Cảm ơn {F#chị}{M#anh}!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_spice_normal_01"
+		},
+		{
+			"voicelineId": 18079,
+			"title": "Nhận Được Quà III",
+			"voicelineType": "6009",
+			"description": "Trông có vẻ ngon, nhưng ăn thì không tiện lắm... Hì hì, {F#chị}{M#anh} giúp Klee được không?",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_spice_dislike_01"
+		},
+		{
+			"voicelineId": 18048,
+			"title": "Sinh nhật...",
+			"voicelineType": "7001",
+			"description": "Sinh nhật vui vẻ! Đón sinh nhật rất là vui, {F#chị}{M#anh} lớn hơn Klee, vậy số lần ăn mừng sinh nhật cũng nhiều hơn Klee đúng không? Thật ngưỡng mộ!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 18049,
+			"title": "Cảm Giác Đột Phá - Khởi",
+			"voicelineType": "8001",
+			"description": "Công trình nghiên cứu bom loại mới đã hoàn tất! Nhân lúc Đội Trưởng Jean chưa phát hiện chuồn thôi nào!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [1]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18050,
+			"title": "Cảm Giác Đột Phá - Thừa",
+			"voicelineType": "8002",
+			"description": "Lại tiến bộ thêm một chút rồi! Nhưng Đội Trưởng Jean luôn nói: \"Tiến bộ là trách nhiệm.\"",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [2]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18051,
+			"title": "Cảm Giác Đột Phá - Chuyển",
+			"voicelineType": "8003",
+			"description": "Cảm ơn {F#chị}{M#anh} đã luôn cùng em đi thu thập nguyên liệu nghiên cứu! Nếu {F#chị}{M#anh} muốn học cách chế tạo bom, em cũng có thể dạy cho {F#chị}{M#anh} đó.",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [4]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 18052,
+			"title": "Cảm Giác Đột Phá - Hợp",
+			"voicelineType": "8004",
+			"description": "Rất lâu trước kia, lần đầu nghe thấy tiếng bom, em đã không hề sợ hãi... Sau đó em mới biết, đa số người khác sẽ không như vậy... Nhưng mà, {F#chị}{M#anh} cũng không sợ bom của em đúng không! Hihi, Klee quả nhiên đã tìm được một người bạn tốt!",
+			"voicefile": "VO_friendship/VO_klee/vo_klee_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [6]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 18053,
+			"title": "Kỹ Năng Nguyên Tố I",
+			"voicelineType": "100001",
+			"description": "Bom Nảy!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill1_01"
+		},
+		{
+			"voicelineId": 18054,
+			"title": "Kỹ Năng Nguyên Tố II",
+			"voicelineType": "100002",
+			"description": "Nảy lên nào!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill1_02"
+		},
+		{
+			"voicelineId": 18055,
+			"title": "Kỹ Năng Nguyên Tố III",
+			"voicelineType": "100003",
+			"description": "Pieew!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill1_03"
+		},
+		{
+			"voicelineId": 18056,
+			"title": "Kỹ Năng Nộ I",
+			"voicelineType": "200001",
+			"description": "Tia lửa mãnh liệt!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill3_01"
+		},
+		{
+			"voicelineId": 18057,
+			"title": "Kỹ Năng Nộ II",
+			"voicelineType": "200002",
+			"description": "Tổng lực tấn công!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill3_02"
+		},
+		{
+			"voicelineId": 18058,
+			"title": "Kỹ Năng Nộ III",
+			"voicelineType": "200003",
+			"description": "Nổ sạch hết nào!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_skill3_03"
+		},
+		{
+			"voicelineId": 18059,
+			"title": "Xung Kích Bắt Đầu I",
+			"voicelineType": "700001",
+			"description": "La la la~",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 18060,
+			"title": "Xung Kích Bắt Đầu II",
+			"voicelineType": "700002",
+			"description": "Da-da-da~",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 18061,
+			"title": "Mở Rương I",
+			"voicelineType": "300001",
+			"description": "Klee lại tìm được báu vật mới rồi!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_chest_open_01"
+		},
+		{
+			"voicelineId": 18062,
+			"title": "Mở Rương II",
+			"voicelineType": "300002",
+			"description": "Lấp la lấp lánh, vui quá!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_chest_open_02"
+		},
+		{
+			"voicelineId": 18063,
+			"title": "Mở Rương III",
+			"voicelineType": "300003",
+			"description": "Có khi nào dưới đất còn nhiều rương báu hơn không nhỉ...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_chest_open_03"
+		},
+		{
+			"voicelineId": 18064,
+			"title": "HP Thấp I",
+			"voicelineType": "410001",
+			"description": "Ui... sao lại như vậy...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_01"
+		},
+		{
+			"voicelineId": 18065,
+			"title": "HP Thấp II",
+			"voicelineType": "410002",
+			"description": "Đội trưởng Jean... nó ăn hiếp em...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_02"
+		},
+		{
+			"voicelineId": 18066,
+			"title": "HP Thấp III",
+			"voicelineType": "410003",
+			"description": "Chơi mệt rồi, hơi chóng mặt...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_03"
+		},
+		{
+			"voicelineId": 18067,
+			"title": "HP Đồng Hành Thấp I",
+			"voicelineType": "400001",
+			"description": "Kỵ Sĩ Tia Lửa, pùm!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 18068,
+			"title": "HP Đồng Hành Thấp II",
+			"voicelineType": "400002",
+			"description": "{M#Anh}{F#Chị} không sao chứ?",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 18069,
+			"title": "Ngã Xuống I",
+			"voicelineType": "500001",
+			"description": "Hãy xem em chuồn đây...! Á, thất bại rồi.",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_die_01"
+		},
+		{
+			"voicelineId": 18070,
+			"title": "Ngã Xuống II",
+			"voicelineType": "500002",
+			"description": "Klee... muốn về nhà...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_die_02"
+		},
+		{
+			"voicelineId": 18071,
+			"title": "Ngã Xuống III",
+			"voicelineType": "500003",
+			"description": "Lại gây họa rồi...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_life_die_03"
+		},
+		{
+			"voicelineId": 18072,
+			"title": "Chịu Đòn Thường I",
+			"voicelineType": "900001",
+			"description": "Quá đáng...",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 18073,
+			"title": "Bị Trọng Kích I",
+			"voicelineType": "910001",
+			"description": "Đau quá đi!",
+			"voicefile": "VO_gameplay/VO_klee/vo_klee_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 18074,
+			"title": "Vào Đội I",
+			"voicelineType": "600001",
+			"description": "Để Klee giúp đỡ!",
+			"voicefile": "VO_teamJoin/vo_klee_teamJoin_01"
+		},
+		{
+			"voicelineId": 18075,
+			"title": "Vào Đội II",
+			"voicelineType": "600002",
+			"description": "Tèn ten! Klee có mặt.",
+			"voicefile": "VO_teamJoin/vo_klee_teamJoin_02"
+		},
+		{
+			"voicelineId": 18076,
+			"title": "Vào Đội III",
+			"voicelineType": "600003",
+			"description": "Hay quá! Mạo hiểm thôi.",
+			"voicefile": "VO_teamJoin/vo_klee_teamJoin_03"
+		}
+	]
+}

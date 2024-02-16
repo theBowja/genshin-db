@@ -1,0 +1,787 @@
+{
+	"id": 10000050,
+	"name": "Thoma",
+	"friendLines": [
+		{
+			"voicelineId": 50008,
+			"title": "Привет...",
+			"voicelineType": "1000",
+			"description": "Рад наконец-то встретиться с тобой, {M#путешественник}{F#путешественница}. Я уже давно слышу о тебе. Я твой новый друг, Тома. Если ты, конечно, не против!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_draw_appear"
+		},
+		{
+			"voicelineId": 50009,
+			"title": "Поболтаем: Приглашение",
+			"voicelineType": "1101",
+			"description": "Эй... Как насчёт того, чтобы как-нибудь вместе поужинать? Разумеется, я угощаю.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_01"
+		},
+		{
+			"voicelineId": 50010,
+			"title": "Поболтаем: Беспокойство",
+			"voicelineType": "1102",
+			"description": "Такое ощущение, будто я забыл что-то сделать... Я прибрался во дворе, поставил чай... Эх, наверно, мне просто кажется.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_02"
+		},
+		{
+			"voicelineId": 50011,
+			"title": "Поболтаем: Мора",
+			"voicelineType": "1103",
+			"description": "Последнее время я много тратил, и у меня осталось всего 10 моры... Ну, 10 моры лучше отсутствия моры!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_character_idle_03"
+		},
+		{
+			"voicelineId": 50012,
+			"title": "Когда идёт дождь...",
+			"voicelineType": "1201",
+			"description": "Почему вдруг пошёл дождь? Ты в порядке? Вот, возьми мой плащ...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 50013,
+			"title": "Когда гремит гром...",
+			"voicelineType": "1202",
+			"description": "В такую погоду лучше не оставаться под открытым небом, иначе в тебя точно ударит молния.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_thunder_01"
+		},
+		{
+			"voicelineId": 50014,
+			"title": "Когда идёт снег...",
+			"voicelineType": "1203",
+			"description": "Не бегай по льду... Если ты упадёшь, я не стану помогать, ведь тебе нужно же как-то учиться.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_snowy_01"
+		},
+		{
+			"voicelineId": 50015,
+			"title": "Когда светит солнце...",
+			"voicelineType": "1204",
+			"description": "Какая прекрасная погода! Может, прогуляемся?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_weather_sunny_01"
+		},
+		{
+			"voicelineId": 50016,
+			"title": "Доброе утро...",
+			"voicelineType": "1001",
+			"description": "Доброе утро! Если ты {M#свободен}{F#свободна}, давай вместе сходим на рынок. С утра овощи самые свежие.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 50017,
+			"title": "Добрый день...",
+			"voicelineType": "1002",
+			"description": "Сегодня на обед у нас тэмпура с сакурой и трёхцветное данго! Вот, это для тебя, это для Паймон, а ещё я немного отложил для госпожи Камисато и самого главы клана. Постой, я кое-кого забыл... Себя.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 50018,
+			"title": "Добрый вечер...",
+			"voicelineType": "1003",
+			"description": "Давай быстрее, нам нужно сходить на рынок, в это время дня цены на рыбу снижаются. О, и если ты найдёшь что-то, без чего не сможешь обойтись, я помогу тебе сбить цену.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 50019,
+			"title": "Спокойной ночи...",
+			"voicelineType": "1004",
+			"description": "Ладно, спокойной ночи. У тебя был напряжённый день, тебе тоже следует немного отдохнуть. Не засиживайся допоздна.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 50020,
+			"title": "О Томе: Управляющий",
+			"voicelineType": "2001",
+			"description": "Ни Аяка, ни Аято не собирались делать меня управляющим, я вызвался сам. Мне нравится такая работа. Когда я привожу всё в порядок, то испытываю чувство выполненного долга. Да и посмотри на реакцию остальных... Да, думаю, я делаю хорошую работу.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle"
+		},
+		{
+			"voicelineId": 50021,
+			"title": "О Томе: Значение",
+			"voicelineType": "2005",
+			"description": "Для меня работа по дому - это поддержание чистоты, чтобы у всех, кто там живёт, была улыбка на лице. А теперь... Похоже, я ответственен за ещё одну улыбку. Буду стараться изо всех сил!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50022,
+			"title": "О нас: Обед в одиночестве",
+			"voicelineType": "2003",
+			"description": "Эй, как так получилось, что ты ешь здесь совсем {M#один}{F#одна}? ...Ничего, если я присоединюсь к тебе? Или ты предпочитаешь есть в одиночестве?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close"
+		},
+		{
+			"voicelineId": 50023,
+			"title": "О нас: Клятва",
+			"voicelineType": "2002",
+			"description": "Если бы ты не проявил{F#а} храбрость и не выступил{F#а} в одиночку против сёгуна Райдэн на церемонии Охоты за Глазами Бога, я бы потерял свой Глаз Бога, а вместе с ним и все свои стремления. Я много об этом думал, и, кажется, есть только один способ, как я могу тебе отплатить... \nЯ, Тома, даю тебе своё оружие и свою преданность. Несмотря ни на что, я буду сражаться за тебя.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Забвение, исчезновение теней»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50024,
+			"title": "Глаз Бога...",
+			"voicelineType": "3001",
+			"description": "Те, кому дарован Глаз Бога, должны дорожить им. Я точно не хочу потерять свой.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50025,
+			"title": "Давай поделимся...",
+			"voicelineType": "3002",
+			"description": "Я знаком со многими людьми и должен заметить, что инадзумцы уделяют больше внимания этикету, чем мондштадтцы. Если всегда будешь проявлять вежливость, всё станет намного проще.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_share_01"
+		},
+		{
+			"voicelineId": 50026,
+			"title": "Интересные вещи: Тануки",
+			"voicelineType": "3003",
+			"description": "Мне всегда хотелось увидеть, как тануки меняет облик. Говорят, он может превратиться во что угодно, и что ему нравится разыгрывать прохожих. У него есть чувство юмора, это уж точно.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_01"
+		},
+		{
+			"voicelineId": 50027,
+			"title": "Интересные вещи: Животные",
+			"voicelineType": "3004",
+			"description": "Ты тоже любишь животных? Если да, позволь как-нибудь отвести тебя на прогулку по пригороду. Стоит только свистнуть, как отовсюду вылезут щенки и котята и начнут тереться об ноги, требуя ласки. Ха-ха, просто представляя это, я уже чувствую себя гораздо счастливее.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_gift_02"
+		},
+		{
+			"voicelineId": 50028,
+			"title": "О Яэ Мико...",
+			"voicelineType": "4001",
+			"description": "Госпожа Мико? А... а что с ней? Ах... Каждый раз, когда госпожа Камисато отправляет меня передать сообщения, меньше всего я хочу отправляться в Великий храм Наруками... Ох! Не потому, что госпожа Мико ужасно пугает меня, а... уважение! Она вызывает у меня уважение, ха-ха-ха...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50029,
+			"title": "О сёгуне Райдэн: Сравнение",
+			"voicelineType": "4002",
+			"description": "На моей родине, в Мондштадте, практически все с большим уважением относятся к Анемо Архонту, Барбатосу. Но люди в Инадзуме немного по-другому относятся к сёгуну. Как бы так выразиться... Они чувствуют любовь, уважение, благодарность... А ещё страх.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50030,
+			"title": "О сёгуне Райдэн: Неизвестность",
+			"voicelineType": "4003",
+			"description": "Если честно, у меня нет никакой обиды на сёгуна. Да, она чуть не лишила меня Глаза Бога, но это всё из-за её особенной точки зрения. У всех своя точка зрения, и в этом нет ничего странного. \nЕдинственное, чего я не понимаю, - это её цель. Как она представляет себе вечность для Инадзумы? И почему для этого необходимо пожертвовать стремлениями её народа? Я не могу ни понять, ни согласиться с её подходом.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_raidenShogun_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Забвение, исчезновение теней»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50031,
+			"title": "О Бэй Доу...",
+			"voicelineType": "4004",
+			"description": "Капитан Южного Креста - действительно грозная женщина. Однажды она пообещала вывезти меня в открытый океан, чтобы взглянуть на грозу, отделяющую Инадзуму от внешнего мира. Жаль, что у меня пока не получилось принять её предложение...",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_beidou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Забвение, исчезновение теней»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50032,
+			"title": "О Камисато Аято...",
+			"voicelineType": "4005",
+			"description": "Как главе клана Камисато, ему приходится непросто. Из-за нестабильной политической ситуации ему приходится бороться с общественным беспокойством с одной стороны, и кучкой корыстных и подлых чиновников с другой стороны. Лучше не зацикливаться на этом. Всё, что я могу сделать, это присматривать за ним, когда он дома.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayato_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50033,
+			"title": "О Камисато Аяке...",
+			"voicelineType": "4006",
+			"description": "Госпожа - во всех отношениях всесторонне развитая личность. Она эрудированная, милосердная, хорошо воспитанная и элегантная... Единственное, чего ей не хватает, это откровенности. Иногда кажется, будто она собирается что-то сказать, но потом сдерживается. Если такое произойдёт, продолжай спрашивать её мнение, возможно, ты сможешь помочь ей немного открыться.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_ayaka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Завершите главу «Забвение, исчезновение теней»",
+					"conditionType": "FETTER_COND_FINISH_QUEST",
+					"paramList": [
+						200908
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50034,
+			"title": "О Ёимии...",
+			"voicelineType": "4007",
+			"description": "Знаменитая владелица «Фейерверков Наганохары»? С ней легко поладить. Она очень прямолинейная, говорит всё, что думает. О, фейерверки Наганохары - просто потрясающие, если выдастся шанс посмотреть на них, не упусти его. Кстати об этом, держи скидочный купон.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_yoimiya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50035,
+			"title": "О Саю...",
+			"voicelineType": "4008",
+			"description": "Ах, Саю, упрямая Саю. Я бесчисленное количество раз просил её научить меня ниндзюцу, но она всегда отказывается. А теперь она меня даже избегает... Я просто ученик, ищущий учителя, неужели я и правда перегнул палку?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_sayu_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50036,
+			"title": "О Кудзё Саре...",
+			"voicelineType": "4009",
+			"description": "Генерал комиссии Тэнрё, хм... Столкнувшись с ней, веди себя осторожнее. Она обладает реальной властью и довольно упряма. Улыбка и невинный взгляд не окажут на неё влияния.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_kujoSara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50037,
+			"title": "Об Аратаки Итто...",
+			"voicelineType": "4010",
+			"description": "Ходят слухи, что он довольно интересный человек. Говорят, что в нём даже течёт кровь ёкаев. Вы с ним встречались? Если вы знакомы, может, представишь меня ему когда-нибудь? Лучше заводить самых разных друзей... В том числе ёкаев!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_itto_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50038,
+			"title": "О Сиканоине Хэйдзо...",
+			"voicelineType": "4011",
+			"description": "Хо, это детектив из комиссии Тэнрё. Он делает всё по-своему, и с ним нелегко поладить. Кроме того... Если требуется детектив, то это дело вряд ли закончится хорошо. Думаю, лучше и дальше держаться от него подальше.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_heizou_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50039,
+			"title": "О Джинн...",
+			"voicelineType": "4012",
+			"description": "Джинн из клана Гуннхильдр теперь магистр Ордо Фавониус? Она определённо это заслужила, ведь она известна своим безупречным поведением... А, просто «действующий» магистр? Ха-ха, ну, человеку с её положением плевать на титулы.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50040,
+			"title": "Об Эоле...",
+			"voicelineType": "4013",
+			"description": "Ты уже {M#встречался}{F#встречалась} с Эолой Лоуренс? Я знаю только, что её семья - самые вспыльчивые люди, которых ты когда-либо встретишь. Лучше держаться от них подальше. Ах, я снова думаю о Мондштадте... Столько хороших воспоминаний.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50041,
+			"title": "Узнать больше о Томе I",
+			"voicelineType": "5001",
+			"description": "Я могу чем-нибудь помочь? Если нужно сделать что-то по дому, или у тебя возникли с кем-то разногласия, просто скажи. Хм? Разговор... Ясно. Это немного отличается от того, к чему я привык, но я буду стараться.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_01"
+		},
+		{
+			"voicelineId": 50042,
+			"title": "Узнать больше о Томе II",
+			"voicelineType": "5002",
+			"description": "Я родом не из Инадзумы...Кажется, я уже говорил об этом? Я добрался сюда на лодке из Мондштадта. Мне понравилось это место, а ещё мне посчастливилось познакомиться с замечательными братом и сестрой Камисато, поэтому я остался.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50043,
+			"title": "Узнать больше о Томе III",
+			"voicelineType": "5003",
+			"description": "Я тоже иногда скучаю по дому, поэтому могу понять иностранных торговцев на острове Рито. Я стараюсь присматривать за ними. Разница между нами в том, что они считают себя временными жителями и не пытаются влиться в жизнь Инадзумы. И поскольку они так думают, это становится реальностью. Большинство Инадзумцев всегда будет считать их чужаками.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50044,
+			"title": "Узнать больше о Томе IV",
+			"voicelineType": "5004",
+			"description": "Для некоторых наиболее консервативных жителей Инадзумы идея того, что иностранец может работать на одну из комиссий, немыслима. Так что когда-то мне были здесь не очень рады. Уверен, меня бы давно выгнали, если бы Камисато не вступались за меня. Я не мог подвести клан после всего добра, что они мне оказали, поэтому проделал много работы, и наконец все смогли принять меня.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50045,
+			"title": "Узнать больше о Томе V",
+			"voicelineType": "5005",
+			"description": "Не уверен, стоит ли об этом рассказывать, но... Надеюсь, ты не против. Какое-то время мне очень хотелось вернуться домой. Мондштадт - моя родина, в конце концов. Но я разрывался... Я не мог оставить и Инадзуму. Просто посмотри, как хорошо ко мне относились местные. В клане Камисато всегда было для меня место, а люди, с которыми я здесь познакомился, стали мне словно родными. Я долго раздумывал об этом и в итоге решил остаться в Инадзуме. Когда я скучаю по Мондштадту... то могу просто поговорить с тобой. Ты ведь не возражаешь против моей болтовни, да?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Уровень дружбы 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50046,
+			"title": "Хобби Томы...",
+			"voicelineType": "6001",
+			"description": "В последнее время я увлечён историями о сверхъестественном. Особенно мне нравятся истории о ёкаях, меняющих облик. Они такие увлекательные! До этого я какое-то время увлекался ниндзюцу, а ещё раньше... Хм? Ты считаешь, я недостаточно целеустремлённый? Нет! Ты всё неправильно понял{F#а}!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_hobby"
+		},
+		{
+			"voicelineId": 50047,
+			"title": "Беспокойство Томы...",
+			"voicelineType": "6002",
+			"description": "Я расстроен. Господин устраивает званый ужин для гостей сегодня вечером и попросил меня приготовить крабов в масле. Но проблема в том, что за последние два дня я так и не смог нигде найти крабов! Мне что, придётся нырять в океан и ловить их самому?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_dialog_annoyed"
+		},
+		{
+			"voicelineId": 50048,
+			"title": "Любимая еда...",
+			"voicelineType": "6003",
+			"description": "Без сомнений, моя любимая еда - суп одзони. Мне нравится готовить одну большую кастрюлю на всех. Это рецепт хорошего времяпрепровождения.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodLike"
+		},
+		{
+			"voicelineId": 50049,
+			"title": "Нелюбимая еда...",
+			"voicelineType": "6004",
+			"description": "Что касается еды, то меня всё устраивает. Хотя, если считать напитки... Я не могу много пить. Не смейся! И, прежде чем ты спросишь, да, мне тоже интересно, какой я после этого мондштадтец. Но, знаешь... Чрезмерное употребление алкоголя вредно для здоровья, поэтому лучше не пить.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_foodDislike"
+		},
+		{
+			"voicelineId": 50077,
+			"title": "Подарок I",
+			"voicelineType": "6007",
+			"description": "Вкусно! Можно мне ещё пиалу риса?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_pref_01"
+		},
+		{
+			"voicelineId": 50078,
+			"title": "Подарок II",
+			"voicelineType": "6008",
+			"description": "У тебя есть минутка? Не поделишься со мной своими кулинарными секретами?",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_normal_01"
+		},
+		{
+			"voicelineId": 50079,
+			"title": "Подарок III",
+			"voicelineType": "6009",
+			"description": "Не думаю, что когда-либо пробовал такое... Но всё не так уж и плохо.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_spice_dislike_01"
+		},
+		{
+			"voicelineId": 50050,
+			"title": "День рождения...",
+			"voicelineType": "7001",
+			"description": "Быстрее, пойдём со мной! Я вспомнил, что у тебя день рождения, и решил устроить настоящую вечеринку. Там есть еда, есть напитки, и я пригласил целую кучу твоих друзей. Эй, это же твой день рождения! Я не собирался позволить тебе провести его в одиночестве!",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 50051,
+			"title": "Чувство возвышения: Начало",
+			"voicelineType": "8001",
+			"description": "Правда? Это сделает меня сильнее? Лучше не шути, мне ещё нужно постирать кучу белья.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50052,
+			"title": "Чувство возвышения: Нарастание",
+			"voicelineType": "8002",
+			"description": "Такое чувство, словно... внутри меня начал разгораться огонь.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50053,
+			"title": "Чувство возвышения: Кульминация",
+			"voicelineType": "8003",
+			"description": "Как мне использовать всю эту силу? Нужно серьёзно над этим подумать.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 50054,
+			"title": "Чувство возвышения: Окончание",
+			"voicelineType": "8004",
+			"description": "Спасибо, что доверяешь мне. Твоя доброта согревает моё сердце сильнее, чем самое яркое пламя. Не волнуйся, я понял, чем хочу заниматься. Моя сила станет твоим щитом, и я всегда буду рядом, чтобы защитить тебя.",
+			"voicefile": "VO_friendship/VO_thoma/vo_thoma_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Фаза возвышения 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 50055,
+			"title": "Элементальный навык I",
+			"voicelineType": "100001",
+			"description": "Зажжём!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_01"
+		},
+		{
+			"voicelineId": 50056,
+			"title": "Элементальный навык II",
+			"voicelineType": "100002",
+			"description": "Посмотри!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_02"
+		},
+		{
+			"voicelineId": 50057,
+			"title": "Элементальный навык III",
+			"voicelineType": "100003",
+			"description": "Не подходи близко!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill1_03"
+		},
+		{
+			"voicelineId": 50058,
+			"title": "Взрыв стихии I",
+			"voicelineType": "200001",
+			"description": "Вот и подкрепление.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_01"
+		},
+		{
+			"voicelineId": 50059,
+			"title": "Взрыв стихии II",
+			"voicelineType": "200002",
+			"description": "Огневая поддержка!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_02"
+		},
+		{
+			"voicelineId": 50060,
+			"title": "Взрыв стихии III",
+			"voicelineType": "200003",
+			"description": "Я тебя прикрою.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_skill3_03"
+		},
+		{
+			"voicelineId": 50061,
+			"title": "Открытие сундука I",
+			"voicelineType": "300001",
+			"description": "Что у нас здесь?",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_01"
+		},
+		{
+			"voicelineId": 50062,
+			"title": "Открытие сундука II",
+			"voicelineType": "300002",
+			"description": "Предсказание судьбы было верным...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_02"
+		},
+		{
+			"voicelineId": 50063,
+			"title": "Открытие сундука III",
+			"voicelineType": "300003",
+			"description": "Хе-хе, было ничьё - стало моё.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_chest_open_03"
+		},
+		{
+			"voicelineId": 50064,
+			"title": "Низкий уровень HP I",
+			"voicelineType": "410001",
+			"description": "Эй! Зачем это?",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_01"
+		},
+		{
+			"voicelineId": 50065,
+			"title": "Низкий уровень HP II",
+			"voicelineType": "410002",
+			"description": "Мне конец...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_02"
+		},
+		{
+			"voicelineId": 50066,
+			"title": "Низкий уровень HP III",
+			"voicelineType": "410003",
+			"description": "Как же больно...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_03"
+		},
+		{
+			"voicelineId": 50067,
+			"title": "Низкий уровень HP компаньона I",
+			"voicelineType": "400001",
+			"description": "Не отчаивайся. Я здесь, чтобы помочь.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 50068,
+			"title": "Низкий уровень HP компаньона II",
+			"voicelineType": "400002",
+			"description": "Ну и дела... иди, отдохни.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 50069,
+			"title": "Без сознания I",
+			"voicelineType": "500001",
+			"description": "Пора вернуться домой...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_01"
+		},
+		{
+			"voicelineId": 50070,
+			"title": "Без сознания II",
+			"voicelineType": "500002",
+			"description": "Берегите себя...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_02"
+		},
+		{
+			"voicelineId": 50071,
+			"title": "Без сознания III",
+			"voicelineType": "500003",
+			"description": "Я не смог спасти всех...",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_life_die_03"
+		},
+		{
+			"voicelineId": 50072,
+			"title": "Получен тяжёлый удар I",
+			"voicelineType": "910001",
+			"description": "Ай-ай-ай.",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 50073,
+			"title": "Получен тяжёлый удар II",
+			"voicelineType": "910002",
+			"description": "Хватит!",
+			"voicefile": "VO_gameplay/VO_thoma/vo_thoma_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 50074,
+			"title": "Присоединяется к группе I",
+			"voicelineType": "600001",
+			"description": "Думаю, домашние дела подождут.",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_01"
+		},
+		{
+			"voicelineId": 50075,
+			"title": "Присоединяется к группе II",
+			"voicelineType": "600002",
+			"description": "Пойдём найдём новых друзей.",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_02"
+		},
+		{
+			"voicelineId": 50076,
+			"title": "Присоединяется к группе III",
+			"voicelineType": "600003",
+			"description": "Куда направимся в этот раз?",
+			"voicefile": "VO_teamJoin/vo_thoma_teamJoin_03"
+		}
+	]
+}

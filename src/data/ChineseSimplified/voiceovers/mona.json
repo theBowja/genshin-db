@@ -1,0 +1,694 @@
+{
+	"id": 10000041,
+	"name": "Mona",
+	"friendLines": [
+		{
+			"voicelineId": 30009,
+			"title": "初次见面…",
+			"voicelineType": "1000",
+			"description": "我的名字是阿斯托洛吉斯·莫娜·梅姬斯图斯，意为「伟大的占星术士莫娜」。如果想找我占卜，记住我的名字是最基本的尊重…而且要一次性全念对！",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_draw_appear"
+		},
+		{
+			"voicelineId": 30010,
+			"title": "闲聊·占卜",
+			"voicelineType": "1101",
+			"description": "占卜就是把既定的命运准确地展示出来。过度的修饰，只会让人们产生误解。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_explore_idle_01"
+		},
+		{
+			"voicelineId": 30011,
+			"title": "闲聊·生活",
+			"voicelineType": "1102",
+			"description": "限制物欲是占星术士修行的一部分，只有简朴地生活，才能窥探到世界的真实。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_explore_idle_02"
+		},
+		{
+			"voicelineId": 30012,
+			"title": "闲聊·命运",
+			"voicelineType": "1103",
+			"description": "正是因为无法更改，无可违逆，只能接受，命运才会被称之为命运。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_explore_idle_03"
+		},
+		{
+			"voicelineId": 30013,
+			"title": "下雨的时候…",
+			"voicelineType": "1201",
+			"description": "这么大的雨…不仅看不见星光，连水占盘都模糊了。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 30014,
+			"title": "打雷的时候…",
+			"voicelineType": "1202",
+			"description": "这些落雷…究竟是从哪个星空降下的呢？",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_weather_thunder_01"
+		},
+		{
+			"voicelineId": 30015,
+			"title": "下雪的时候…",
+			"voicelineType": "1203",
+			"description": "纯净的融雪之水，很适合用在水占盘里。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_weather_snowy_01"
+		},
+		{
+			"voicelineId": 30016,
+			"title": "阳光很好…",
+			"voicelineType": "1204",
+			"description": "嗯，是个无须占卜也能感觉到的好天气。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_weather_sunny_01"
+		},
+		{
+			"voicelineId": 30017,
+			"title": "早上好…",
+			"voicelineType": "1001",
+			"description": "你来得不巧，清晨的启明星刚刚消失了…早餐？我，我已经吃过了。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 30018,
+			"title": "中午好…",
+			"voicelineType": "1002",
+			"description": "已经正午了，去吃点东西吧，嗯？我…我吃份沙拉就行了，呃…简朴的生活是…是占星术士修行的一环！",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 30019,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "入夜了，过会就可以开始占卜…呃，昨天的稿子我写了没…",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 30020,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "已经这么晚了，明天截稿的稿子一点没动…什么？你要去休息了？呜…我也想去睡觉…",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 30021,
+			"title": "关于莫娜自己…",
+			"voicelineType": "2001",
+			"description": "占星术士的工作，是向人们明确地展示他们即将面对的命运，我也是这么做的…不过，总有些人不愿意接受。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_idle"
+		},
+		{
+			"voicelineId": 30022,
+			"title": "关于我们·工作",
+			"voicelineType": "2002",
+			"description": "为什么要写稿，不用占卜来赚钱？…我才不会为摩拉而使用「水占术」…我也不是因为这个而学习「水占术」的。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_idle2"
+		},
+		{
+			"voicelineId": 30023,
+			"title": "关于我们·我的命运",
+			"voicelineType": "2003",
+			"description": "我不知道。除非万不得已，占星术士不会占卜自己的命运。老太婆以前说过，这种行为可能会导致命运的自相矛盾，很危险。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30024,
+			"title": "关于我们·你的命运",
+			"voicelineType": "2004",
+			"description": "你不是这个世界的人，所以我无法准确地为你预言。我只能告诉你，你要走的路还远未到尽头。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30025,
+			"title": "关于「神之眼」·嫌弃",
+			"voicelineType": "3001",
+			"description": "我刚刚拿到「神之眼」的时候，那个老太婆还假模假样地说什么「愿你求真之心永在」。结果这东西在「水占术」上一点用场都派不上，只会糊我一身水…",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到3后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30026,
+			"title": "关于「神之眼」·价值",
+			"voicelineType": "3002",
+			"description": "哎…不过，「神之眼」当成个小饰品，装在身上倒是无所谓。毕竟，这也算那个抠门老太婆破天荒送我的「教具」。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到5后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30027,
+			"title": "有什么想要分享…",
+			"voicelineType": "3003",
+			"description": "你听说过「命之座」吗？占星术士认为，「命之座」是「神之眼」持有者的命运在星空上的映射，过去，现在和未来，所有的一切都在其中昭示。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_share",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30028,
+			"title": "感兴趣的见闻…",
+			"voicelineType": "3004",
+			"description": "欸——你身边带着的这个小家伙，到底来自哪里？无论我用什么方法，都没法找到一丝关于她命运的踪迹。\n…哈？你也不知道？",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_pref_gift",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30029,
+			"title": "关于琴…",
+			"voicelineType": "4001",
+			"description": "那位西风骑士团代理团长？她的「命之座」是「幼狮座」，象征着力量，还有过早担负的责任。「雄狮」早早离群，但她会继续成长，直到能完全继承狮群的荣耀。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30030,
+			"title": "关于阿贝多…",
+			"voicelineType": "4002",
+			"description": "阿贝多？啊…我真羡慕他，只用专注于研究就好，不用管其他的杂事，真是美好的生活啊。如果那个老太婆脑筋正常一点，我应该也过着这种生活吧…",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30031,
+			"title": "关于可莉…",
+			"voicelineType": "4003",
+			"description": "你是说，艾莉丝的女儿啊。她住在西风骑士团，还有阿贝多照顾…怎么说呢，哎…她的「命之座」不愧是象征着幸运的「四叶草」啊，真羡慕…\n啊不过，要是我也有这么好的运气，首先就不会遇见那个老太婆了。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30032,
+			"title": "关于迪卢克…",
+			"voicelineType": "4004",
+			"description": "迪卢克·莱艮芬德。「夜枭」是他的「命之座」，象征着黑夜中的警觉，和孤独的守望。在他所认可的白昼来临之前，他都将孤独前行。\n等等，「夜枭」象不象征财富来着？",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30033,
+			"title": "关于凯亚…",
+			"voicelineType": "4005",
+			"description": "凯亚·亚尔伯里奇吗？他的「孔雀羽座」象征着高贵，但同时也象征着「华丽的掩饰」。他以为已经和过去一刀两断。但到了命中注定的那天，他依然必须做出自己的选择。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30034,
+			"title": "关于丽莎…",
+			"voicelineType": "4006",
+			"description": "她的「命之座」以「沙漏」为名，象征着知识、时间与等价交换。一粒沙子落下，时间…或者说生命，就消逝一刹。如果想要止住沙粒奔流，只能平放沙漏，让它永不流动。嗨…简单来说，就是变着法偷懒啦。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30035,
+			"title": "关于温迪…",
+			"voicelineType": "4007",
+			"description": "温迪？那个成天无所事事的吟游诗人？咦，他有什么有趣的吗？我占卜看看…\n咦，水占盘怎么…什么也看不清，怎，怎么起风了，眼睛都睁不开了！我的帽子！衣服，衣服要被吹跑了！停下来！我不干了！我不干了！",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30036,
+			"title": "想要了解莫娜·其一",
+			"voicelineType": "5001",
+			"description": "你的意思是…想要闲聊？唔，我很少做这种浪费时间的事，而且稿子还有很多没写…嗯，不过，对象是你的话，也不是不行。呵呵，就当是换个心情吧。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_friendship_01"
+		},
+		{
+			"voicelineId": 30037,
+			"title": "想要了解莫娜·其二",
+			"voicelineType": "5002",
+			"description": "占卜的收入…？不要用钱财这种…「东西」来衡量占星术！你听好了，我的「水占术」可是这片提瓦特大陆上，唯一能窥探到真实命运的占卜术！无论是摩拉还是宝石，都无法用来称量「命运」！所以，不要再问这种蠢问题了！",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到3后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30038,
+			"title": "想要了解莫娜·其三",
+			"voicelineType": "5003",
+			"description": "我的占卜术？说了你也不明白，哼，不过…给你解释一下也不是不行。\n我使用的是「水占术」。是基由星空映射在水面上的幻象进行推演的占卜术，以水中幻相倒映虚假之天，以此来窥探着世界的真实。这是那个老太婆唯一一个正经的研究成果。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到4后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30039,
+			"title": "想要了解莫娜·其四",
+			"voicelineType": "5004",
+			"description": "阿斯托洛吉斯·莫娜·梅姬斯图斯。这是那个老太婆之前和我一起定的名字，她说这名字的拼写里有一些她很喜欢的要素。哼，不过她有时会叫我「梅姬」，和常用的「莫娜」不一样，更像是小名…喂！你不能这么叫！很害羞的！早知道…早知道就不告诉你了！",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到5后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30040,
+			"title": "想要了解莫娜·其五",
+			"voicelineType": "5005",
+			"description": "占卜师有一个禁忌：在占卜时只陈述预言，绝不提出任何建议。以免自己也陷入别人的「命运」之中。但如果占卜对象是你，那这个「禁忌」就无所谓了。\n因为，我们的「命运」早就交织在一起了。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等级达到6后开启",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30041,
+			"title": "莫娜的爱好…",
+			"voicelineType": "6001",
+			"description": "我的爱好？仰望星空。在这个真实得太过分的世界里，每个人都需要仰望星空，更何况，我还是个占星术士。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_pref_hobby"
+		},
+		{
+			"voicelineId": 30042,
+			"title": "莫娜的烦恼…",
+			"voicelineType": "6002",
+			"description": "仪器修缮费，预订的星象仪要补款了，学术杂志的订购钱也没交，还有下个月的房租…到底先交哪个比较好。果然还是…先把星象仪的尾款补了，不然被抢购光了就糟糕了…",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_dialog_annoyed"
+		},
+		{
+			"voicelineId": 30043,
+			"title": "喜欢的食物…",
+			"voicelineType": "6003",
+			"description": "沙拉，沙拉是天底下最棒的食物。原料便宜，容易做，饱肚子。而且吃起来很方便，在写稿或者修理仪器的时候，可以很快吃掉。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_pref_foodLike"
+		},
+		{
+			"voicelineId": 30044,
+			"title": "讨厌的食物…",
+			"voicelineType": "6004",
+			"description": "各种…价格很昂贵，吃起来又很麻烦的食物。因为，呃…用摩拉去满足不必要的食欲，是低俗又危险的。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_pref_foodDislike"
+		},
+		{
+			"voicelineId": 30074,
+			"title": "收到赠礼·其一",
+			"voicelineType": "6007",
+			"description": "啊，好满足——没想到，认识你还是挺不错的嘛。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_spice_pref_01"
+		},
+		{
+			"voicelineId": 30075,
+			"title": "收到赠礼·其二",
+			"voicelineType": "6008",
+			"description": "我再确认一下。真的是…你请客吗？",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_spice_normal_01"
+		},
+		{
+			"voicelineId": 30076,
+			"title": "收到赠礼·其三",
+			"voicelineType": "6009",
+			"description": "我没有什么想挑剔的。就是…唔…没怎么吃饱。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_spice_dislike_01"
+		},
+		{
+			"voicelineId": 30045,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "生日快乐。这个袋子给你，里面有一个帮你渡过难关的「建议」。别着急打开，在往后的一年之内，这个袋子会有自己打开的机会。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 30046,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "命中当如此，我早已预知到了。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「1」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30047,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "…再进一步，就能找到世界的真实了吗？",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「2」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30048,
+			"title": "突破的感受·转",
+			"voicelineType": "8003",
+			"description": "虚假之天，星空下的命运早已注定。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「4」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 30049,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "水中之影，涟漪中窥见启明星升起。",
+			"voicefile": "VO_friendship/VO_mona/vo_mona_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等级「6」阶后开启",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 30050,
+			"title": "元素战技·其一",
+			"voicelineType": "100001",
+			"description": "水中幻愿。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_skill1_01"
+		},
+		{
+			"voicelineId": 30051,
+			"title": "元素战技·其二",
+			"voicelineType": "100002",
+			"description": "…命运的虚影。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_skill1_02"
+		},
+		{
+			"voicelineId": 30052,
+			"title": "元素战技·其三",
+			"voicelineType": "100003",
+			"description": "命运，倒映水中。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_skill1_03"
+		},
+		{
+			"voicelineId": 30053,
+			"title": "元素爆发·其一",
+			"voicelineType": "200001",
+			"description": "命运，在此显现。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_skill3_01"
+		},
+		{
+			"voicelineId": 30054,
+			"title": "元素爆发·其二",
+			"voicelineType": "200002",
+			"description": "命定于此。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_skill3_02"
+		},
+		{
+			"voicelineId": 30055,
+			"title": "元素爆发·其三",
+			"voicelineType": "200003",
+			"description": "天命既定！",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_skill3_03"
+		},
+		{
+			"voicelineId": 30056,
+			"title": "打开风之翼·其一",
+			"voicelineType": "700001",
+			"description": "这样更能看清星空了…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 30058,
+			"title": "打开宝箱·其一",
+			"voicelineType": "300001",
+			"description": "希望这种好事能多来几次…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_chest_open_01"
+		},
+		{
+			"voicelineId": 30059,
+			"title": "打开宝箱·其二",
+			"voicelineType": "300002",
+			"description": "房租和伙食费，都有着落了！",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_chest_open_02"
+		},
+		{
+			"voicelineId": 30060,
+			"title": "打开宝箱·其三",
+			"voicelineType": "300003",
+			"description": "呜…找到宝物的感觉真棒啊…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_chest_open_03"
+		},
+		{
+			"voicelineId": 30061,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "无法判断…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_less30_01"
+		},
+		{
+			"voicelineId": 30062,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "讨厌的命运…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_less30_02"
+		},
+		{
+			"voicelineId": 30063,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "还没…推算到这！",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_less30_03"
+		},
+		{
+			"voicelineId": 30064,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "再硬撑，你就会倒下咯。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 30065,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "你还没到命运的终点。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 30066,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "星空…黯淡…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_die_01"
+		},
+		{
+			"voicelineId": 30067,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "无法违抗的…命运…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_die_02"
+		},
+		{
+			"voicelineId": 30068,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "推算结束了…",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_life_die_03"
+		},
+		{
+			"voicelineId": 30069,
+			"title": "普通受击·其一",
+			"voicelineType": "900001",
+			"description": "烦人。",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 30070,
+			"title": "重受击·其一",
+			"voicelineType": "910001",
+			"description": "离我…远点！",
+			"voicefile": "VO_gameplay/VO_mona/vo_mona_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 30071,
+			"title": "加入队伍·其一",
+			"voicelineType": "600001",
+			"description": "此乃，命运。",
+			"voicefile": "VO_teamJoin/vo_mona_teamJoin_01"
+		},
+		{
+			"voicelineId": 30072,
+			"title": "加入队伍·其二",
+			"voicelineType": "600002",
+			"description": "真没办法。",
+			"voicefile": "VO_teamJoin/vo_mona_teamJoin_02"
+		},
+		{
+			"voicelineId": 30073,
+			"title": "加入队伍·其三",
+			"voicelineType": "600003",
+			"description": "繁星，尽在掌握。",
+			"voicefile": "VO_teamJoin/vo_mona_teamJoin_03"
+		}
+	]
+}

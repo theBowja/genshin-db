@@ -1,0 +1,805 @@
+{
+	"id": 10000021,
+	"name": "Amber",
+	"friendLines": [
+		{
+			"voicelineId": 10100,
+			"title": "Hola...",
+			"voicelineType": "1000",
+			"description": "¡Amber la Caballera Exploradora presente! Si necesitas ayuda, ¡pídemela y allí estaré!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_draw_appear"
+		},
+		{
+			"voicelineId": 10101,
+			"title": "Charla - Intereses",
+			"voicelineType": "1101",
+			"description": "¡Me encantaría ir a correr!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_01"
+		},
+		{
+			"voicelineId": 10102,
+			"title": "Charla - Anhelos",
+			"voicelineType": "1102",
+			"description": "A Jean no le gustará nada vernos holgazanear.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_02"
+		},
+		{
+			"voicelineId": 10103,
+			"title": "Charla - Nuevos descubrimientos",
+			"voicelineType": "1103",
+			"description": "Por ahí hay algo extraño... ¡Andando, vamos a ver qué es!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_explore_idle_03"
+		},
+		{
+			"voicelineId": 10104,
+			"title": "Cuando llueve - Preocupaciones",
+			"voicelineType": "1201",
+			"description": "Oh, no, está lloviendo... Mi ropa se va a empapar...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 10105,
+			"title": "Cuando llueve - Advertencia",
+			"voicelineType": "1202",
+			"description": "¡Otra vez está lloviendo! Esto reduce nuestro campo de visión. Debemos ir con cuidado.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_heavyRain_02"
+		},
+		{
+			"voicelineId": 10106,
+			"title": "Tras la lluvia...",
+			"voicelineType": "1203",
+			"description": "¡Guau! ¡Hace un tiempo increíble!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 10107,
+			"title": "Qué sol hace...",
+			"voicelineType": "1204",
+			"description": "Ojalá hubiera algo más de viento.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_sunny_01"
+		},
+		{
+			"voicelineId": 10108,
+			"title": "Cuando hace viento - Contenta",
+			"voicelineType": "1205",
+			"description": "Esta brisa... ¡es muy refrescante!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_01"
+		},
+		{
+			"voicelineId": 10109,
+			"title": "Cuando hace viento - Relajada",
+			"voicelineType": "1206",
+			"description": "Me encanta este tiempo. Ah... es tan relajante...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_weather_breezy_02"
+		},
+		{
+			"voicelineId": 10110,
+			"title": "Buenos días...",
+			"voicelineType": "1001",
+			"description": "¡Buenos días! ¿Quieres ir a correr?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 10111,
+			"title": "Buenas tardes...",
+			"voicelineType": "1002",
+			"description": "¿Puedo comer contigo?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 10112,
+			"title": "Buenas noches... (I)",
+			"voicelineType": "1003",
+			"description": "Está oscureciendo. ¿Prendo una antorcha?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 10113,
+			"title": "Buenas noches... (II)",
+			"voicelineType": "1004",
+			"description": "Cierto. ¡Descansar es importante! Bien, entonces, nos vemos mañana.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 10114,
+			"title": "Sobre Amber...",
+			"voicelineType": "2001",
+			"description": "La Campeona de Vuelo de Mondstadt, ¡sí, esa soy yo! ¡La Campeona de Vuelo!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_idle"
+		},
+		{
+			"voicelineId": 10115,
+			"title": "#Sobre nosotr{F#as}{M#os} - Competiciones",
+			"voicelineType": "2002",
+			"description": "¡Recuerda que nunca se lo pongo fácil a nadie! ¡Ni siquiera a ti!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close1"
+		},
+		{
+			"voicelineId": 10116,
+			"title": "#Sobre nosotr{F#as}{M#os} - Vuelo",
+			"voicelineType": "2003",
+			"description": "A medida que te enseño a volar, siento que mi velocidad va aumentando. ¿Eh? ¿De qué te ríes? ¡Mira, te lo voy a demostrar! ¡Hagamos una carrera ahora mismo!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10117,
+			"title": "Sobre la Visión...",
+			"voicelineType": "3001",
+			"description": "Mi Visión... es una señal de que los Arcontes creen en mí. Sí, ¡tengo que llegar a ser la mejor Caballera Exploradora!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10118,
+			"title": "¿Algo que decir?",
+			"voicelineType": "3002",
+			"description": "Las vistas desde la torre del reloj de la Catedral son increíbles, ¡deberías echarles un ojo!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_share"
+		},
+		{
+			"voicelineId": 10119,
+			"title": "Una noticia interesante...",
+			"voicelineType": "3003",
+			"description": "¡Mira, allí hay una paloma! Jeje, me gustaría volar con ellas.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_gift"
+		},
+		{
+			"voicelineId": 10120,
+			"title": "Sobre Jean - Ayuda",
+			"voicelineType": "4001",
+			"description": "Después de que el Gran Maestro partiera en su expedición, es Jean la que se encarga de todo lo relacionado con los Caballeros de Favonius, ya sean problemas grandes o pequeños. Ojalá pudiera ayudarla más...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10121,
+			"title": "Sobre Jean - Preocupación",
+			"voicelineType": "4002",
+			"description": "¿Crees que Jean está todavía trabajando? Podríamos invitarla a tomar un café... Vamos.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_qin_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10122,
+			"title": "Sobre Lisa - Historias",
+			"voicelineType": "4003",
+			"description": "¡Cuando tengas tiempo, hay que ir a ver a Lisa! La última vez que la vi, me contó una historia sobre un tesoro en Espinadragón. Pero nos interrumpieron antes de que acabara la historia... ¡quiero escuchar el resto!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10123,
+			"title": "Sobre Lisa - Admiración",
+			"voicelineType": "4004",
+			"description": "Si Lisa no está durmiendo, ¡está leyendo! No sé cómo lo hace, yo no podría quedarme sentada tanto tiempo.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_lisa_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10124,
+			"title": "Sobre Kaeya - Preocupaciones",
+			"voicelineType": "4005",
+			"description": "¡Ah, de repente me siento muy intranquila! ¿Estaba antes Kaeya contigo? ¿Te ha causado algún problema?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10125,
+			"title": "Sobre Kaeya - Culpable",
+			"voicelineType": "4006",
+			"description": "Hay algo raro en los dientes de león del jardín... Hummm... Seguro que Kaeya tiene algo que ver con esto.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_kaeya_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10126,
+			"title": "Sobre Bennett...",
+			"voicelineType": "4007",
+			"description": "¿Bennett? Me suena ese nombre... ¡Ah, sí! Es ese chico tan apasionado del Gremio de Aventureros. A veces me lo encuentro cerca de los dominios, parece que le gusta mucho buscar tesoros.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_bennett_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10127,
+			"title": "Sobre Klee...",
+			"voicelineType": "4008",
+			"description": "¿Klee? Puede ser un poco traviesa a veces, pero a todos los Caballeros de Favonius les agrada. Aunque... debería vigilarla más si quiero evitar que Jean la vuelva a encerrar.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10128,
+			"title": "Sobre Albedo...",
+			"voicelineType": "4009",
+			"description": "Albedo pasa la mayor parte del tiempo en su taller, trabajando con cosas increíbles. Pero cuando lo ves en persona, nunca sabes en lo que está pensando.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10129,
+			"title": "Sobre Noelle...",
+			"voicelineType": "4010",
+			"description": "¿Quieres saber más sobre Noelle? Es muy fuerte y tenaz. No obstante, deberíamos hacer lo que podamos para ayudarla.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10130,
+			"title": "Sobre Eula...",
+			"voicelineType": "4011",
+			"description": "¡Eula es una gran amiga mía! Ya verás como, una vez que te acostumbres a su sentido del humor, te llevarás muy bien con ella. Su único problema es que la gente la malinterpreta por su apellido. ¿Cómo puedo hacer que la gente vea cómo es realmente?...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10179,
+			"title": "Sobre Collei...",
+			"voicelineType": "4012",
+			"description": "¡Collei me ha contado en una carta que se ha curado por completo de la eleazar! ¡Estoy tan contenta! Ojalá pudiera ir hasta donde está para darle un abrazo enorme ahora mismo. También me ha dicho que echa mucho de menos a la gente de Mondstadt y que, cuando esté lista, nos visitará para contarnos sus avances. ¡Sería maravilloso si pudiera venir a tiempo para el próximo Ludi Harpastum! ¡Aaah, tengo muchas ganas de verla!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Completa «Pulso de Akasha, fuego que arrasa»",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3026
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10180,
+			"title": "Sobre Mika...",
+			"voicelineType": "4013",
+			"description": "Oh, Mika es un veterano del equipo de Eula. Cuando llegó, solo decía “¡Sí, comandante!” cada vez que hablaba conmigo. Supongo que lo hacía porque sabía lo bien que me llevo con Eula. Pero entonces, empezó a llamarme “señora” cuando le conté que era una Exploradora... Qué vergüenza... Bueno, después de todo, tenemos responsabilidades muy distintas. Yo jamás podría alcanzar su nivel con la cartografía.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10131,
+			"title": "Más sobre Amber (I)",
+			"voicelineType": "5001",
+			"description": "¿Sabías que soy una experta en cacería? ¿Quieres que te enseñe alguna de mis habilidades? O... ¿te gustaría que hiciéramos una pequeña competición?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_01"
+		},
+		{
+			"voicelineId": 10132,
+			"title": "Más sobre Amber (II)",
+			"voicelineType": "5002",
+			"description": "¡Compartiré contigo mi gran secreto de Campeona de Vuelo! ¡Lo más importante que debes recordar es siempre tener valor!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10133,
+			"title": "Más sobre Amber (III)",
+			"voicelineType": "5003",
+			"description": "No se me dan muy bien los acertijos. Siempre trato de evitar el puesto de adivinanzas durante el Ludi Harpastum... ¿Y tú?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10134,
+			"title": "Más sobre Amber (IV)",
+			"voicelineType": "5004",
+			"description": "Me uní a los Caballeros por mi abuelo, me quedé por Jean y... ahora, tú eres quien me ha enseñado que hay mundo más allá de Mondstadt. No podría ser más feliz.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10135,
+			"title": "Más sobre Amber (V)",
+			"voicelineType": "5005",
+			"description": "Me gustaría explorar otros mundos... ¡Quiero llegar al punto más lejano del cielo! Vendrás conmigo, ¿verdad?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Amistad 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10136,
+			"title": "Aficiones de Amber...",
+			"voicelineType": "6001",
+			"description": "Barón Bunny, ¡hoy nos espera otro día explosivamente limpio!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_hobby"
+		},
+		{
+			"voicelineId": 10137,
+			"title": "Preocupaciones de Amber...",
+			"voicelineType": "6002",
+			"description": "Oh... Por casualidad, ¿no sabrás hacer un pastelillo de luna decente?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_dialog_annoyed"
+		},
+		{
+			"voicelineId": 10138,
+			"title": "Comida que más le gusta...",
+			"voicelineType": "6003",
+			"description": "¡El café que hace Jean es increíble! Tienes que probarlo alguna vez.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodLike"
+		},
+		{
+			"voicelineId": 10139,
+			"title": "Comida que menos le gusta...",
+			"voicelineType": "6004",
+			"description": "¡Puedo con cualquier cosa! Siempre que no sea un jugo de gancho de lobo helado... Puaj.",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_foodDislike"
+		},
+		{
+			"voicelineId": 10176,
+			"title": "Al recibir un regalo (I)",
+			"voicelineType": "6007",
+			"description": "¡Vaya! Está delicioso. ¡Eres {F#una cocinera}{M#un cocinero} increíble!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_pref_01"
+		},
+		{
+			"voicelineId": 10177,
+			"title": "Al recibir un regalo (II)",
+			"voicelineType": "6008",
+			"description": "Ojalá yo también supiera cocinar así de bien...",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_normal_01"
+		},
+		{
+			"voicelineId": 10178,
+			"title": "Al recibir un regalo (III)",
+			"voicelineType": "6009",
+			"description": "No estoy acostumbrada a este tipo de platos, ¡lo siento! ¡No es culpa tuya!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_spice_dislike_01"
+		},
+		{
+			"voicelineId": 10140,
+			"title": "Cumpleaños...",
+			"voicelineType": "7001",
+			"description": "¡Ah, feliz cumpleaños! Ten, un regalo para ti: una exclusiva versión a medida de Barón Bunny que he hecho a medida con mis propias manos... No te preocupes, “hecho a medida” significa ¡que no explotará!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 10141,
+			"title": "El sentimiento de Ascensión - Introducción",
+			"voicelineType": "8001",
+			"description": "¡Sí! ¡Tan rápido como el viento!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 1",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10142,
+			"title": "El sentimiento de Ascensión - Desarrollo",
+			"voicelineType": "8002",
+			"description": "¡A esta velocidad, nadie podrá conmigo!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 2",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10143,
+			"title": "El sentimiento de Ascensión - Nudo",
+			"voicelineType": "8003",
+			"description": "El cielo de Mondstadt parece más pequeño... ¿o es que ahora veo mejor que antes?",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 4",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 10144,
+			"title": "El sentimiento de Ascensión - Desenlace",
+			"voicelineType": "8004",
+			"description": "¡Creo que he mejorado mucho desde que nos conocimos! ¡Jeje, muchas gracias! ¡Déjame invitarte a una ración de asado a la miel! ¡Vamos, vamos!",
+			"voicefile": "VO_friendship/VO_ambor/vo_ambor_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Desbloqueable en Niv. de Ascensión 6",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 10145,
+			"title": "Habilidad Elemental (I)",
+			"voicelineType": "100001",
+			"description": "¡Por ellos!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_01"
+		},
+		{
+			"voicelineId": 10146,
+			"title": "Habilidad Elemental (II)",
+			"voicelineType": "100002",
+			"description": "¡Vamos, Barón Bunny!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_02"
+		},
+		{
+			"voicelineId": 10147,
+			"title": "Habilidad Elemental (III)",
+			"voicelineType": "100003",
+			"description": "♪ Mmm mmm mmm mmm mmm... ♪",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill1_03"
+		},
+		{
+			"voicelineId": 10148,
+			"title": "Habilidad Definitiva (I)",
+			"voicelineType": "200001",
+			"description": "¡Nadie se escapa de mí!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_01"
+		},
+		{
+			"voicelineId": 10149,
+			"title": "Habilidad Definitiva (II)",
+			"voicelineType": "200002",
+			"description": "¡Lluvia de flechas!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_02"
+		},
+		{
+			"voicelineId": 10150,
+			"title": "Habilidad Definitiva (III)",
+			"voicelineType": "200003",
+			"description": "¡No tienes escapatoria!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_skill3_03"
+		},
+		{
+			"voicelineId": 10151,
+			"title": "Al esprintar (I)",
+			"voicelineType": "700001",
+			"description": "¡Te reto a una carrera!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 10152,
+			"title": "Al esprintar (II)",
+			"voicelineType": "700002",
+			"description": "¡A ver si puedes seguirme el paso!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 10153,
+			"title": "Después de esprintar (I)",
+			"voicelineType": "710001",
+			"description": "Te dije que ganaría.",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_01"
+		},
+		{
+			"voicelineId": 10154,
+			"title": "Después de esprintar (II)",
+			"voicelineType": "710002",
+			"description": "¡Así está mejor!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_sprint_end_02"
+		},
+		{
+			"voicelineId": 10155,
+			"title": "Al abrir el planeador (I)",
+			"voicelineType": "800001",
+			"description": "¡La campeona de vuelo de Mondstadt ya está aquí!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_01"
+		},
+		{
+			"voicelineId": 10156,
+			"title": "Al abrir el planeador (II)",
+			"voicelineType": "800002",
+			"description": "¡No te defraudaré!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_explore_fly_start_02"
+		},
+		{
+			"voicelineId": 10159,
+			"title": "Al abrir un cofre (I)",
+			"voicelineType": "300001",
+			"description": "¡Abrir un cofre es como abrir un regalo!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_01"
+		},
+		{
+			"voicelineId": 10160,
+			"title": "Al abrir un cofre (II)",
+			"voicelineType": "300002",
+			"description": "¡Otro objetivo alcanzado por la Caballera Exploradora, Amber!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_02"
+		},
+		{
+			"voicelineId": 10161,
+			"title": "Al abrir un cofre (III)",
+			"voicelineType": "300003",
+			"description": "¡Guau! ¡Qué bien me va a venir esto!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_chest_open_03"
+		},
+		{
+			"voicelineId": 10162,
+			"title": "Vida baja (I)",
+			"voicelineType": "410001",
+			"description": "¡Nunca me rendiré!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_01"
+		},
+		{
+			"voicelineId": 10163,
+			"title": "Vida baja (II)",
+			"voicelineType": "410002",
+			"description": "¡Auch! Qué malvado...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_02"
+		},
+		{
+			"voicelineId": 10164,
+			"title": "Vida baja (III)",
+			"voicelineType": "410003",
+			"description": "¡No me subestimes!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_03"
+		},
+		{
+			"voicelineId": 10165,
+			"title": "Aliado con vida baja (I)",
+			"voicelineType": "400001",
+			"description": "¡A cubierto!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 10166,
+			"title": "Aliado con vida baja (II)",
+			"voicelineType": "400002",
+			"description": "¡Ey! ¿Necesitas una ayudita?",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 10167,
+			"title": "Derrotada (I)",
+			"voicelineType": "500001",
+			"description": "Estoy cansada...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_01"
+		},
+		{
+			"voicelineId": 10168,
+			"title": "Derrotada (II)",
+			"voicelineType": "500002",
+			"description": "Debo seguir... entrenando...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_02"
+		},
+		{
+			"voicelineId": 10169,
+			"title": "Derrotada (III)",
+			"voicelineType": "500003",
+			"description": "Me venciste...",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_life_die_03"
+		},
+		{
+			"voicelineId": 10170,
+			"title": "Recibiendo un ligero ataque (I)",
+			"voicelineType": "900001",
+			"description": "¡Oye!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 10171,
+			"title": "Recibiendo un fuerte ataque (I)",
+			"voicelineType": "910001",
+			"description": "¡Auch! ¡No tan fuerte!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 10172,
+			"title": "Recibiendo un fuerte ataque (II)",
+			"voicelineType": "910002",
+			"description": "¡Eso es trampa!",
+			"voicefile": "VO_gameplay/VO_ambor/vo_ambor_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 10173,
+			"title": "Unirse al equipo (I)",
+			"voicelineType": "600001",
+			"description": "¡Cuenta conmigo!",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_01"
+		},
+		{
+			"voicelineId": 10174,
+			"title": "Unirse al equipo (II)",
+			"voicelineType": "600002",
+			"description": "¡Preparada!",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_02"
+		},
+		{
+			"voicelineId": 10175,
+			"title": "Unirse al equipo (III)",
+			"voicelineType": "600003",
+			"description": "Amber la Exploradora, ¡presente!",
+			"voicefile": "VO_teamJoin/vo_ambor_teamJoin_03"
+		}
+	]
+}

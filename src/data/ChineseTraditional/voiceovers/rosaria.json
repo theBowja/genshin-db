@@ -1,0 +1,718 @@
+{
+	"id": 10000045,
+	"name": "Rosaria",
+	"friendLines": [
+		{
+			"voicelineId": 37009,
+			"title": "初次見面…",
+			"voicelineType": "1000",
+			"description": "這位信徒，如果遇到難以解決的麻煩，可以來找我，如果只想祈禱，還請找其他修女。\n…嗯？{F#妳}{M#你}不是信徒嗎？",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_draw_appear"
+		},
+		{
+			"voicelineId": 37010,
+			"title": "閒聊·無聊",
+			"voicelineType": "1101",
+			"description": "還不走嗎？",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_explore_idle_01"
+		},
+		{
+			"voicelineId": 37011,
+			"title": "閒聊·加班",
+			"voicelineType": "1102",
+			"description": "什麼都可以商量，除了加班。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_explore_idle_02"
+		},
+		{
+			"voicelineId": 37012,
+			"title": "閒聊·蒙德生活",
+			"voicelineType": "1103",
+			"description": "好好完成工作，好好度過每一天。蒙德的生活不就是如此嗎？",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_explore_idle_03"
+		},
+		{
+			"voicelineId": 37013,
+			"title": "下雨的時候…",
+			"voicelineType": "1201",
+			"description": "唉，影響效率。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 37014,
+			"title": "打雷的時候…",
+			"voicelineType": "1202",
+			"description": "嘖，麻煩。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_thunder_01"
+		},
+		{
+			"voicelineId": 37015,
+			"title": "下雪的時候…",
+			"voicelineType": "1203",
+			"description": "雪天趕路，最好小心一些。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_snowy_01"
+		},
+		{
+			"voicelineId": 37016,
+			"title": "颳大風了…",
+			"voicelineType": "1204",
+			"description": "是風神巴斯巴托的庇佑嗎？等等，好像是巴托巴斯…",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_weather_gale_01"
+		},
+		{
+			"voicelineId": 37017,
+			"title": "早安…",
+			"voicelineType": "1001",
+			"description": "早安，哈…晨禱已經開始了嗎？也太早了。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 37018,
+			"title": "午安…",
+			"voicelineType": "1002",
+			"description": "午後的陽光對睡眠有好處。{F#妳}{M#你}也試試吧。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 37019,
+			"title": "晚上好…",
+			"voicelineType": "1003",
+			"description": "晚上好。晚間禱告的話，我不參加。嗯？不為什麼。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 37020,
+			"title": "晚安…",
+			"voicelineType": "1004",
+			"description": "去休息吧，不用操心，剩下的事我會處理。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 37021,
+			"title": "關於蘿莎莉亞自己·修女",
+			"voicelineType": "2001",
+			"description": "我？只是個無趣的人而已。如{F#妳}{M#你}所見，不愛教會也不愛工作。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_idle"
+		},
+		{
+			"voicelineId": 37022,
+			"title": "關於蘿莎莉亞自己·麻煩",
+			"voicelineType": "2002",
+			"description": "那些值班修女一個比一個麻煩，不是抓人去禱告，就是叫人去唱詩班。{F#妳}{M#你}不要告訴她們我在這裡。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_idle2"
+		},
+		{
+			"voicelineId": 37023,
+			"title": "關於我們·信仰",
+			"voicelineType": "2003",
+			"description": "神或許能庇護所有人，可是他不會這樣做。否則，人的苦難就成了笑話。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_close"
+		},
+		{
+			"voicelineId": 37024,
+			"title": "關於我們·禱告",
+			"voicelineType": "2004",
+			"description": "祈禱吧。不是為了神或其他任何人，而是為了自己。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37025,
+			"title": "關於我們·戰鬥",
+			"voicelineType": "2005",
+			"description": "不要勉強，有困難可以叫我。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37026,
+			"title": "關於「神之眼」…",
+			"voicelineType": "3001",
+			"description": "「神之眼」可以是實力的證明，也可以是倖存的勳章…誰知道呢？真正的好東西總是具有兩面性。我不會定義「神之眼」。我和它只是互相見證的關係罷了。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37027,
+			"title": "有什麼想要分享…",
+			"voicelineType": "3002",
+			"description": "要說什麼是值得高興的好事…呵，只是假設而已。如果有一天{F#妳}{M#你}遇到無法解決的難題，也別認為那就是人生的終點。說不定，會有人替{F#妳}{M#你}解決困境呢",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_share_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37028,
+			"title": "感興趣的見聞…",
+			"voicelineType": "3003",
+			"description": "花草不屬於我感興趣的範疇。不過，蒲公英是個例外，它能釀出相當美味的蒲公英酒。休息時間來一杯，比睡懶覺還舒服。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_gift"
+		},
+		{
+			"voicelineId": 37029,
+			"title": "關於迪盧克…",
+			"voicelineType": "4001",
+			"description": "一看就知道了吧？那位富豪老爺可不是個簡單的人物。低調、自信…還有一點危險的氣息。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37030,
+			"title": "關於凱亞…",
+			"voicelineType": "4002",
+			"description": "人往往要到酒醉以後才會露出真面目。油嘴滑舌算是凱亞的保護色吧，呵，一目了然的偽裝。{F#妳}{M#你}該看看他喝醉的樣子。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37031,
+			"title": "關於溫迪…",
+			"voicelineType": "4003",
+			"description": "這個吟遊詩人身上有種非常特殊的氣息…我還不能確定真相，但他與別的市民似乎很不一樣。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37032,
+			"title": "關於芭芭拉…",
+			"voicelineType": "4004",
+			"description": "芭芭拉總是纏著我，叫我參加禮拜和唱詩班。難道維多利亞向她下了監督我工作的命令？",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37033,
+			"title": "關於琴…",
+			"voicelineType": "4005",
+			"description": "不僅完成本職工作，還會替他人收尾。值得欽佩的女人。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_qin_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37034,
+			"title": "關於阿貝多…",
+			"voicelineType": "4006",
+			"description": "他就像一副掛在古舊房屋裡的油畫…厚重、神秘，無法被一眼看透。我不討厭有故事的人。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37035,
+			"title": "關於麗莎…",
+			"voicelineType": "4007",
+			"description": "我不喜歡上班偷懶的人，不過也很能理解她準時下班的心情。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37036,
+			"title": "關於可莉…",
+			"voicelineType": "4008",
+			"description": "唉，除了麻煩就是麻煩，雖然是可愛的麻煩。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37037,
+			"title": "關於法爾伽…",
+			"voicelineType": "4009",
+			"description": "雖說是出於好意，但法爾伽囉嗦起來像個老頭一樣，相當在意身邊的人呢。唉，那傢伙。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37038,
+			"title": "關於父親…",
+			"voicelineType": "4010",
+			"description": "父親？好遙遠的詞彙啊。對我而言可以說沒有，也可以說有不止一個。怎麼？很驚訝嗎？",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_teammate_father_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37039,
+			"title": "想要瞭解蘿莎莉亞·其一",
+			"voicelineType": "5001",
+			"description": "跳過寒暄吧。我來這裡是為了完成工作，你解決不了的問題可以移交給我。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_01"
+		},
+		{
+			"voicelineId": 37040,
+			"title": "想要瞭解蘿莎莉亞·其二",
+			"voicelineType": "5002",
+			"description": "不信神的修女並不稀奇，就像世上也有不喜歡吃豬肉的獵人、討厭魚肉的漁民。做某一件事不代表愛它，不愛一件事也不意味著必須遠離。工作就是這樣的東西。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到3後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37041,
+			"title": "想要瞭解蘿莎莉亞·其三",
+			"voicelineType": "5003",
+			"description": "來一杯嗎？這是今年的蒲公英酒，味道很不錯。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到4後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37042,
+			"title": "想要瞭解蘿莎莉亞·其四",
+			"voicelineType": "5004",
+			"description": "蒙德是一頭既古老又年輕的白色野獸，古老到需要人去保護，也年輕到無法獨立生存。只有這樣的地方才會需要我這樣的人。我像其他修女照顧市民那樣照顧著蒙德，讓它在自由的道路上平穩前進。{F#妳}{M#你}問我為什麼它是白色的？…因為像我這樣的人，是黑色的。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到5後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37043,
+			"title": "想要瞭解蘿莎莉亞·其五",
+			"voicelineType": "5005",
+			"description": "我偶爾能感覺到過去每一年的自己都存在著、圍繞著我…對我有所寄託。{F#妳}{M#你}一定也有相同的感覺，所以，哪怕如今{F#妳}{M#你}已走上截然不同的道路，也不要否認從前的自己。從前的每一個{F#妳}{M#你}，都是{F#妳}{M#你}腳下的基石。不要害怕過去，不要畏懼與它抗衡。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感等級達到6後開放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37044,
+			"title": "蘿莎莉亞的愛好…",
+			"voicelineType": "6001",
+			"description": "小酌怡情，有些煩心事只能靠酒精解決。話雖如此，我是不會醉的。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_hobby"
+		},
+		{
+			"voicelineId": 37045,
+			"title": "蘿莎莉亞的煩惱…",
+			"voicelineType": "6002",
+			"description": "唉…真不想參加下個月的合唱活動，可是維多利亞親自點名了…",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_dialog_annoyed"
+		},
+		{
+			"voicelineId": 37046,
+			"title": "喜歡的食物…",
+			"voicelineType": "6003",
+			"description": "試過紅酒燉獸肉嗎？酒精和大塊的動物肉出現在一個盤子裡，相當有品味。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_foodLike"
+		},
+		{
+			"voicelineId": 37047,
+			"title": "討厭的食物…",
+			"voicelineType": "6004",
+			"description": "這個…這個薯餅的沾醬居然是果醬？完全不合理！",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_foodDislike"
+		},
+		{
+			"voicelineId": 37075,
+			"title": "收到贈禮·其一",
+			"voicelineType": "6007",
+			"description": "看來這方面，我們品味相投。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_spice_pref_01"
+		},
+		{
+			"voicelineId": 37076,
+			"title": "收到贈禮·其二",
+			"voicelineType": "6008",
+			"description": "至少能填飽肚子。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_spice_normal_01"
+		},
+		{
+			"voicelineId": 37077,
+			"title": "收到贈禮·其三",
+			"voicelineType": "6009",
+			"description": "{F#妳}{M#你}對這種食物很感興趣嗎？",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_spice_dislike_01"
+		},
+		{
+			"voicelineId": 37048,
+			"title": "生日…",
+			"voicelineType": "7001",
+			"description": "今天是{F#妳}{M#你}生日，有什麼想處理的人或事嗎？我可以幫個小忙，別告訴其他人就行。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 37049,
+			"title": "突破的感受·起",
+			"voicelineType": "8001",
+			"description": "嗯，感覺不錯。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「1」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37050,
+			"title": "突破的感受·承",
+			"voicelineType": "8002",
+			"description": "需要幫忙嗎？我現在有空。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「2」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37051,
+			"title": "突破的感受·轉",
+			"voicelineType": "8003",
+			"description": "也好。能力越強，效率越高。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「4」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 37052,
+			"title": "突破的感受·合",
+			"voicelineType": "8004",
+			"description": "哪怕是擅長戰鬥與殺戮的我，也從未擁有過如此強大的力量，謝謝{F#妳}{M#你}的祝福。",
+			"voicefile": "VO_friendship/VO_rosaria/vo_rosaria_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破等級「6」階後開啟",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 37053,
+			"title": "元素戰技·其一",
+			"voicelineType": "100001",
+			"description": "嘿呀！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill1_01"
+		},
+		{
+			"voicelineId": 37054,
+			"title": "元素戰技·其二",
+			"voicelineType": "100002",
+			"description": "審判！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill1_02"
+		},
+		{
+			"voicelineId": 37055,
+			"title": "元素戰技·其三",
+			"voicelineType": "100003",
+			"description": "別想跑！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill1_03"
+		},
+		{
+			"voicelineId": 37056,
+			"title": "元素爆發·其一",
+			"voicelineType": "200001",
+			"description": "制裁！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill3_01"
+		},
+		{
+			"voicelineId": 37057,
+			"title": "元素爆發·其二",
+			"voicelineType": "200002",
+			"description": "顫慄吧！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill3_02"
+		},
+		{
+			"voicelineId": 37058,
+			"title": "元素爆發·其三",
+			"voicelineType": "200003",
+			"description": "晚安了…",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_skill3_03"
+		},
+		{
+			"voicelineId": 37059,
+			"title": "打開寶箱·其一",
+			"voicelineType": "300001",
+			"description": "…倒也有不錯的東西。",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_chest_open_01"
+		},
+		{
+			"voicelineId": 37060,
+			"title": "打開寶箱·其二",
+			"voicelineType": "300002",
+			"description": "還行，不算很麻煩。",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_chest_open_02"
+		},
+		{
+			"voicelineId": 37061,
+			"title": "打開寶箱·其三",
+			"voicelineType": "300003",
+			"description": "心情不錯。",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_chest_open_03"
+		},
+		{
+			"voicelineId": 37062,
+			"title": "生命值低·其一",
+			"voicelineType": "410001",
+			"description": "沒想到…哼。",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_01"
+		},
+		{
+			"voicelineId": 37063,
+			"title": "生命值低·其二",
+			"voicelineType": "410002",
+			"description": "得加個班了。",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_02"
+		},
+		{
+			"voicelineId": 37064,
+			"title": "生命值低·其三",
+			"voicelineType": "410003",
+			"description": "有兩下子！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_03"
+		},
+		{
+			"voicelineId": 37065,
+			"title": "同伴生命值低·其一",
+			"voicelineType": "400001",
+			"description": "退後！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 37066,
+			"title": "同伴生命值低·其二",
+			"voicelineType": "400002",
+			"description": "不要戀戰！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 37067,
+			"title": "倒下·其一",
+			"voicelineType": "500001",
+			"description": "這樣也好…",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_die_01"
+		},
+		{
+			"voicelineId": 37068,
+			"title": "倒下·其二",
+			"voicelineType": "500002",
+			"description": "或許是…命中註定…",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_die_02"
+		},
+		{
+			"voicelineId": 37069,
+			"title": "倒下·其三",
+			"voicelineType": "500003",
+			"description": "唔…到此為止了嗎…",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_life_die_03"
+		},
+		{
+			"voicelineId": 37070,
+			"title": "普通受擊·其一",
+			"voicelineType": "900001",
+			"description": "不過如此。",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_hit_L_02"
+		},
+		{
+			"voicelineId": 37071,
+			"title": "受重擊·其一",
+			"voicelineType": "910001",
+			"description": "嘖，真麻煩！",
+			"voicefile": "VO_gameplay/VO_rosaria/vo_rosaria_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 37072,
+			"title": "加入隊伍·其一",
+			"voicelineType": "600001",
+			"description": "又有新工作了？",
+			"voicefile": "VO_teamJoin/vo_rosaria_teamJoin_01"
+		},
+		{
+			"voicelineId": 37073,
+			"title": "加入隊伍·其二",
+			"voicelineType": "600002",
+			"description": "但願配合順利。",
+			"voicefile": "VO_teamJoin/vo_rosaria_teamJoin_02"
+		},
+		{
+			"voicelineId": 37074,
+			"title": "加入隊伍·其三",
+			"voicelineType": "600003",
+			"description": "呼…速戰速決。",
+			"voicefile": "VO_teamJoin/vo_rosaria_teamJoin_03"
+		}
+	]
+}

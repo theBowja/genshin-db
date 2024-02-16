@@ -1,0 +1,866 @@
+{
+	"id": 10000087,
+	"name": "Neuvillette",
+	"friendLines": [
+		{
+			"voicelineId": 87000,
+			"title": "Lần đầu gặp mặt...",
+			"voicelineType": "1006",
+			"description": "Xin chào, tôi là thẩm phán tối cao của Fontaine, cứ xưng hô với tôi bằng họ Neuvillette là được. Không phải có ý muốn giữ khoảng cách với {F#cô}{M#cậu} đâu, nhưng quá thân thiết sẽ bị người ta nghi ngờ rằng hệ thống tư pháp không công bằng.\nNếu có yêu cầu gì... đương nhiên là phải trong phạm vi hợp pháp, thì chúng ta có thể ngồi xuống nói chuyện, cùng thưởng thức món nước được chuyển đến từ Làng Kiều Anh.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_draw_appear_01"
+		},
+		{
+			"voicelineId": 87001,
+			"title": "Nói chuyện phiếm - Phán Quyết",
+			"voicelineType": "1101",
+			"description": "Tôi vừa công nhận giá trị công việc của chính mình, vừa công nhận ý nghĩa từ mọi hành vi của cư dân Fontaine. Tôi nghĩ, tôi vẫn sẽ xem trách nhiệm của mình là niềm vinh dự.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_01"
+		},
+		{
+			"voicelineId": 87002,
+			"title": "Nói chuyện phiếm - Thưởng Thức Nước",
+			"voicelineType": "1102",
+			"description": "Hương vị của nước rất tinh tế. Nước của Mondstadt trong lành, nước của Liyue có dư vị lâu dài, nước của Inazuma có mùi vị sâu đậm, nước của Sumeru tuy phong phú nhưng cần phải thưởng thức thật tỉ mỉ.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_02"
+		},
+		{
+			"voicelineId": 87003,
+			"title": "Nói chuyện phiếm - Melusine",
+			"voicelineType": "1103",
+			"description": "Melusine là loài sinh vật xinh đẹp mà Fontaine rất tự hào. {F#Cô}{M#Cậu} nhất định phải làm bạn tốt của họ, cũng đừng nên làm tổn thương họ.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_character_idle_03"
+		},
+		{
+			"voicelineId": 87004,
+			"title": "Khi trời mưa...",
+			"voicelineType": "1201",
+			"description": "Ah, xin lỗi. Mưa lớn như vậy, chắc rất phiền phức cho {F#cô}{M#cậu} nhỉ...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 87005,
+			"title": "Sau cơn mưa trời lại sáng...",
+			"voicelineType": "1202",
+			"description": "Kết thúc rồi...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 87006,
+			"title": "Khi có sấm sét...",
+			"voicelineType": "1203",
+			"description": "Con người có câu \"sấm sét giữa trời quang\" đúng không? Đối với tôi mà nói thì chính là cảm giác này.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_thunder_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành \"Thảm Họa Cận Kề\".",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87007,
+			"title": "Khi tuyết rơi...",
+			"voicelineType": "1204",
+			"description": "Bản thân tuyết cũng là một cách tự làm sạch của nước. Nhưng hoạt động của con người đã làm cho tuyết không còn sạch sẽ nữa, nên đừng ăn nhé.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_snowy_01"
+		},
+		{
+			"voicelineId": 87008,
+			"title": "Ánh nắng thật chan hòa...",
+			"voicelineType": "1205",
+			"description": "Thời tiết này thích hợp nhất là ngồi bên cửa sổ trong nhà, ừm, thưởng thức ánh nắng.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_sunny_01"
+		},
+		{
+			"voicelineId": 87009,
+			"title": "Khi trong sa mạc...",
+			"voicelineType": "1206",
+			"description": "Đây là... một phần trong kế hoạch mưu sát tôi của {F#cô}{M#cậu} sao?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_weather_desert_01"
+		},
+		{
+			"voicelineId": 87010,
+			"title": "Chào buổi sáng...",
+			"voicelineType": "1001",
+			"description": "Chào buổi sáng. Hy vọng {F#cô}{M#cậu} sẽ có một ngày vui vẻ.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 87011,
+			"title": "Chào buổi trưa...",
+			"voicelineType": "1002",
+			"description": "Chào buổi trưa. {F#Cô}{M#Cậu} chắc rất mong chờ thời gian uống trà hoặc cà phê phải không? Tôi cũng vậy.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 87012,
+			"title": "Chào buổi tối...",
+			"voicelineType": "1003",
+			"description": "Chào buổi tối. Hy vọng hôm nay {F#cô}{M#cậu} không gặp phải chuyện xấu gì để phải canh cánh trong lòng.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 87013,
+			"title": "Chúc ngủ ngon...",
+			"voicelineType": "1004",
+			"description": "Chúc ngủ ngon. Đối với tôi, mặt nước bình lặng là cảnh tượng đẹp đẽ nhất, cho nên tôi chúc {F#cô}{M#cậu} tối nay sẽ có được một giấc ngủ an lành không bị quấy rầy. Đừng nên có bất kỳ giấc mơ nào làm dậy sóng tâm trạng của {F#cô}{M#cậu}.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 87014,
+			"title": "Về bản thân Neuvillette - Xét Xử",
+			"voicelineType": "2001",
+			"description": "Tôi cũng chẳng phải kiểu người đam mê xét xử gì đâu. Đó chỉ là trách nhiệm của tôi mà thôi, và cũng là mục đích mà tôi được ủy nhiệm.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle"
+		},
+		{
+			"voicelineId": 87015,
+			"title": "Về bản thân Neuvillette - Thủy Long Khóc",
+			"voicelineType": "2005",
+			"description": "{F#Cô}{M#Cậu} cũng từng nghe về câu ca dao này của Fontaine sao? Haiz, là ai dạy {F#cô}{M#cậu} thế, và ai đã lan truyền nó ra... Ừm, không có gì. Tôi cảm thấy Thủy Long sẽ không khóc, đó chẳng qua là anh ta đã nếm trải tất cả mọi tâm tư và nước mắt hội tụ trong vùng đất này, cho nên có hơi xúc động mà thôi.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87016,
+			"title": "Về bản thân Neuvillette - Ý Nghĩa Của Phán Quyết",
+			"voicelineType": "2006",
+			"description": "Đây là một chủ đề không hay để nói. Không phải tôi tách mình ra khỏi loài người, nhưng chúng ta đều thấy, chính nghĩa, công bằng, bình đẳng, pháp luật, tất cả những khái niệm này đều không thể coi là một được. Bản chất của nước sẽ có \"công bằng\" của nó. Thủy Thần Egeria tiền nhiệm đã hy vọng liên kết mọi người bằng tình yêu, hiện thực hóa sự bình đẳng. Nhưng sau đó, vị thần của chúng ta đã lựa chọn một sự bình đẳng dưới \"pháp luật\", cuối cùng vì nhiều nguyên nhân khác nhau mà trở thành kết quả là chỉ vì \"phán quyết\". Nhưng chuyện này cũng có lý do của nó, không thể chê trách được.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_idle3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87017,
+			"title": "Về chúng ta - Người Chứng Kiến",
+			"voicelineType": "2003",
+			"description": "Dù sao thì {F#cô}{M#cậu} cũng là người từ bên kia thế giới, vậy thì tôi sẽ để {F#cô}{M#cậu} chứng kiến phán quyết của tôi đối với thế giới đảo ngược này. \"Vốn là vương quốc hùng mạnh được Đấng Toàn Năng thống trị, nay ngai vàng chỉ còn lại đống hỗn độn. Thời thế rối ren hỗn loạn, nhưng tôi sống là để khôi phục lại tất cả những gì đã bị phá vỡ\".",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87018,
+			"title": "Về chúng ta - Nhân Gian",
+			"voicelineType": "2002",
+			"description": "Sinh sống lâu dài cùng người dân Fontaine và những chuyến đồng hành cùng {F#cô}{M#cậu} đã khiến tôi thay đổi quan điểm. Thêm việc tôi từ lâu đã tha thứ cho tội lỗi của con người, tôi có thể hứa với {F#cô}{M#cậu}, những phán quyết về sau sẽ không ảnh hưởng tới những người vô tội. Tuy nhiên, giữa tôi và kẻ soán ngôi vẫn còn nhiều ân oán chưa giải quyết, nhiều món nợ máu vẫn chưa được trả.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87019,
+			"title": "Về Vision I",
+			"voicelineType": "3001",
+			"description": "Từng có người kiến nghị tôi đeo một viên pha lê giả, như vậy tiện ra tay vào thời khắc nguy cấp. Nói thật thì đề nghị này làm tôi thấy không vui, sử dụng sức mạnh của chính mình mà lại phải đeo một chiếc mặt nạ giả để ngụy trang. Nhưng khi qua lại nhiều với người đeo Vision, tôi cũng đã hiểu được khát vọng và ý chí của họ là vô cùng đáng quý.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Thảm Họa Cận Kề\".",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87020,
+			"title": "Về Vision II",
+			"voicelineType": "3006",
+			"description": "Sao? {F#Cô}{M#Cậu} nói trong bảy vị thần cổ xưa cũng có người đeo pha lê giả để đi lại giữa nhân gian sao? Hì... À xin lỗi, tôi có hơi bất lịch sự rồi, do tôi thấy chuyện này khá hài hước thôi.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_pendant_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Thảm Họa Cận Kề\".",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87021,
+			"title": "Có gì muốn chia sẻ không - Pháp Luật",
+			"voicelineType": "3002",
+			"description": "Fontaine quả thực có rất nhiều điều luật kỳ lạ, ví dụ như \"ba ngày đầu của mỗi tháng không được thả vật thể bay\", \"sò ốc mắc cạn vào mùa nước khô, loại sò hai vỏ sẽ thuộc về Thủy Thần, loại ốc sẽ thuộc về người dân\", \"cấm lấy tên 'Furina' để đặt cho vật nuôi trong nhà\", \"cấm dùng riêng tương cà trong nhà ăn hay nhà hàng\", \"xưng hô với Melusine phải dùng nhân xưng là 'cô ấy', không được dùng 'nó'\"... À, điều lệ cuối là do tôi lập nên.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_01"
+		},
+		{
+			"voicelineId": 87022,
+			"title": "Có gì muốn chia sẻ không - Ngày Mưa",
+			"voicelineType": "3005",
+			"description": "Có những ngày tâm trí tôi lang thang và tôi tưởng tượng mình đang đi dưới mưa. À, {F#cô}{M#cậu} hiểu lầm rồi, không phải do áp lực quá lớn đâu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_share_02"
+		},
+		{
+			"voicelineId": 87023,
+			"title": "Những kiến thức thú vị - Rồng Đất",
+			"voicelineType": "3003",
+			"description": "Chính vì chúng cũng là chủng loài sinh ra từ biển sâu, cho nên rất có sở trường trong chuyện tiến hóa. Làm tôi nhớ đến phong tục xưa kia trong loài rồng: Chúng tôi sẽ uống một ngụm máu của những đồng tộc đã chết yểu. Khi trăng sao di chuyển làm khuấy động thủy triều, nước trong người của thủy tộc chúng tôi cũng dâng lên, chúng tôi biết rằng, những người cùng tộc đã mất đang hồi sinh.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành \"Thảm Họa Cận Kề\".",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4019
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87024,
+			"title": "Những kiến thức thú vị - Nhân Loại",
+			"voicelineType": "3004",
+			"description": "Theo quan sát của tôi, con người có thói quen đặt mình đối lập với tự nhiên. Và bất cứ khi nào quan điểm này được nêu ra, luôn có người nhanh chóng phản ứng bằng cách tuyên bố rằng con người trên thực tế cũng là một phần của tự nhiên. Nhưng người biết một số chân tướng như tôi cho rằng, thế giới văn minh của nhân loại và hệ tự nhiên của tinh cầu này nên tìm ra một cách để sinh tồn cùng nhau sẽ tốt hơn.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_gift_02"
+		},
+		{
+			"voicelineId": 87025,
+			"title": "Về Nham Thần...",
+			"voicelineType": "4001",
+			"description": "Không có thứ gì thay đổi được phán quyết của tôi đối với chúng thần. Deus Auri đã chiến thắng được quyền năng của nham thạch, nên đương nhiên cũng phải chịu phán quyết. Nếu có người không muốn thấy cảnh chúng tôi xảy ra tranh chấp thì cũng đừng lo, tôi còn ở lại Fontaine khá lâu... Không chừng cũng phải hơn 400 năm nữa. Hơn hết, phán quyết cuối cùng chưa chắc đã dẫn đến màn đối đầu bằng vũ lực.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_zhongli_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87026,
+			"title": "Về Phong Thần...",
+			"voicelineType": "4002",
+			"description": "Dù trời đất có sụp đổ, cũng không có cách nào ngăn cản màn xét xử của tôi với Thất Thần. Vị thần của ngọn gió và hy vọng đã nhận được quyền năng của gió, vậy thì anh ta cũng phải đứng trước bục xét xử. {F#Cô}{M#Cậu} nói phần lớn thời gian anh ta đều say xỉn, không có nguy hiểm gì sao? Vậy thì phải gặp nhau trước đã.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_venti_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87027,
+			"title": "Về Lôi Thần...",
+			"voicelineType": "4003",
+			"description": "Với tư cách là kẻ sống sót của loài rồng và đã lấy lại được toàn bộ sức mạnh, tôi cho dù phải khiến tất cả nước biển về với trời cao thì cũng phải thực hiện trách nhiệm và lời thề của mình. Narukami đã thắng được quyền năng của sấm sét, nên đã được định sẵn là có tên trong danh sách kẻ soán ngôi rồi. Ừm, {F#cô}{M#cậu} nói giờ cô ấy sống trong Tịnh Thổ, hiếm khi xuất hiện sao? Vậy để vài trăm năm nữa tôi tới thăm vậy.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87028,
+			"title": "Về Thảo Thần...",
+			"voicelineType": "4004",
+			"description": "Dù cho sau này tôi sẽ đưa cô ấy ra xét xử, thì tôi cũng phải công nhận tính trách nhiệm của Thảo Thần. Thế giới này không có ai hay điều gì là hoàn hảo, nhưng sự chuyên tâm và tình yêu thương đã chứng minh được một con người có trách nhiệm vẫn sẽ luôn tiến bước. Tôi rất tiếc cho sự lạnh nhạt mà cô ấy phải chịu đựng trong suốt 500 năm qua.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87029,
+			"title": "Về Wriothesley...",
+			"voicelineType": "4005",
+			"description": "Wriothesley quả thật là một người đáng tin cậy. Tôi đã ra sức đấu tranh cho danh hiệu và danh tiếng của anh ấy đấy. Có phải cảm thấy tôi đã bị nghệ thuật nói chuyện và tinh thần cầu tiến của anh ấy lừa gạt không? Inazuma có câu: \"Không nói tức là hoa\".",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_wriothesley_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87030,
+			"title": "Về Clorinde...",
+			"voicelineType": "4006",
+			"description": "Clorinde đã dựa vào sức mạnh vượt trội của mình để trở thành đỉnh cao trong số Đấu Sĩ Đại Diện đương nhiệm. Là người kế nhiệm của Thợ Săn Marechaussee, cô ấy đóng vai trò quan trọng trong việc đảm bảo sự công bằng của tòa án. Ngoài ra, cô ấy cũng sống khá tình cảm, khác với vẻ bề ngoài của mình.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_clorinde_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87031,
+			"title": "Về Lyney và Lynette...",
+			"voicelineType": "4007",
+			"description": "Màn biểu diễn rất thú vị phải không? Trong thế giới ảo thuật của Lyney và Lynette, mọi thứ đều giả đến ly kỳ, nhưng chỉ cần {F#cô}{M#cậu} muốn tin, thì mọi thứ đều có thể biến thành sự thật.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_lyney&lynette_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87032,
+			"title": "Về Sigewinne...",
+			"voicelineType": "4008",
+			"description": "Không biết Sigewinne sống có tốt không. Nếu như cô ấy bị ức hiếp thì tôi sẽ gọi Wriothesley vào thành chất vấn. Cô ấy yếu đuối như vậy, lại lương thiện như thế, lần trước khi đến đây còn mang cho tôi phim của máy ảnh, còn nói là muốn nghe tôi đánh giá về nước của Natlan... Bao lâu nữa mới tới kỳ nghỉ tiếp theo của cô ấy nhỉ?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_sigewinne_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87033,
+			"title": "Về Furina...",
+			"voicelineType": "4009",
+			"description": "Đến nay, \"phần diễn xuất\" của cô ấy cuối cùng cũng đã hạ màn. Màn biểu diễn đó là sản phẩm của trí tưởng tượng, nhưng Furina lại dựa vào nó để hoàn thành chức trách của mình... Một người nhút nhát lấy sự điên cuồng làm dũng khí, thời gian qua vất vả cho cô ấy rồi.\nNếu có cơ hội, tôi cũng nên tán dương cho vở kịch của cô ấy... Ừm, là nếu như có cơ hội.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_furina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Vũ Điệu Của Tội Lỗi\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4025
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87034,
+			"title": "Về Navia...",
+			"voicelineType": "4010",
+			"description": "Tuy nói thế rất có lỗi với Navia, nhưng bất luận là lúc đó đã vô tình chọc giận cô ấy, nhận lời xin lỗi hay là sự cắn rứt trong lòng mà tôi đang cảm nhận lúc này... tất cả đều có một cảm giác xa cách, giống như chìm dưới đáy hồ ngắm sao trời vậy. Không phải là tôi cố ý, tôi cũng biết sẽ không dễ dàng bù đắp. Tâm trạng không giống như nước, không thể nhanh chóng điều tiết và khôi phục sự bình lặng.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_teammate_navia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành \"Như Làn Mưa Nhẹ Không Rõ Nguyên Nhân\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						4002
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87035,
+			"title": "Muốn tìm hiểu Neuvillette - Điều thứ 1",
+			"voicelineType": "5001",
+			"description": "Tôi sẽ cố gắng tránh né qua lại cá nhân với người khác hoặc hợp tác ngoài quy trình. Nhưng phẩm hạnh của {F#cô}{M#cậu} hoàn toàn đáng tin tưởng, cũng không có dính líu gì với thế lực ở Fontaine. Rất vui được đồng hành cùng {F#cô}{M#cậu}.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_01"
+		},
+		{
+			"voicelineId": 87036,
+			"title": "Muốn tìm hiểu Neuvillette - Điều thứ 2",
+			"voicelineType": "5002",
+			"description": "Chuyện này chỉ có thể nói riêng, ở nơi công cộng tôi tuyệt đối không thể bày tỏ quan điểm này. Fonta có thể thịnh hành như vậy cũng làm tôi cảm thấy khó hiểu. Nhưng việc mọi người rất thích nó cũng không phải là không thể lý giải: {F#Cô}{M#Cậu} xem, vừa uống nước vừa bổ sung lượng đường, hơn nữa giá thành cũng rẻ.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87037,
+			"title": "Muốn tìm hiểu Neuvillette - Điều thứ 3",
+			"voicelineType": "5003",
+			"description": "Gần đây tôi có xem một vở kịch, kể về một người phụ nữ có sức quyến rũ cá nhân và những âm mưu lôi kéo, khiến cô tiếp tục thống trị dinh thự lớn nơi cô sống ngay cả sau khi chết. Diễn viên diễn xuất rất tuyệt vời, câu chuyện cũng rất sắc sảo, hơn nữa đã giúp tôi nghĩ về hiện trạng của thế giới.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87038,
+			"title": "Muốn tìm hiểu Neuvillette - Điều thứ 4",
+			"voicelineType": "5004",
+			"description": "Vì một số nguyên nhân mà số lần tôi rời khỏi Fontaine chỉ đếm trên đầu ngón tay. Do đó, nước suối mà tôi được thưởng thức tuy là đến từ khắp nơi trên thế giới, nhưng đều là từ nơi khác chuyển về, chứ không phải do tôi đến tận nơi trải nghiệm. Còn về hương vị trong các loại nước uống khác nhau, tôi đương nhiên có thể phân biệt được. Vẫn không tin tôi sao? Tôi là thẩm phán tối cao, nên sẽ không nói dối đâu.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87039,
+			"title": "Muốn tìm hiểu Neuvillette - Điều thứ 5",
+			"voicelineType": "5005",
+			"description": "Tôi thường hay gặp một số bất tiện trong cuộc sống hằng ngày. Ví dụ khi ngồi xuống sẽ giẫm lên vạt áo, thỉnh thoảng đè lên tóc, dựa đầu ra sau có thể bị kẹt vào đồ trang trí trên ghế. Tôi sẽ luôn ăn mặc như thế này để giữ sự uy nghiêm của thẩm phán tối cao, và đương nhiên cũng phải gánh chịu những phiền phức mà nó mang lại. Thế gian dường như cũng theo đạo lý này, chấp nhận một loại thân phận, nhẫn nhịn nó, thấu hiểu nó, và cùng tồn tại với nó. Đây là điều mà tôi vẫn luôn làm.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87040,
+			"title": "Sở thích của Neuvillette...",
+			"voicelineType": "6001",
+			"description": "Thưởng thức nước là một môn học phức tạp. Mùi vị của nước được làm nóng bằng nguyên tố Hỏa chính là hương vị tiêu chuẩn nhất trong tự nhiên, còn nước được nấu sôi bằng than củi thì sẽ có hương vị của đồng ruộng. Cùng nguyên tắc, nước được đông lạnh từ nguyên tố Băng thì mát lạnh nhưng không có gì đặc biệt, còn nước tan ra từ sông băng ở Snezhnaya thì lại hoàn toàn khác.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_hobby"
+		},
+		{
+			"voicelineId": 87041,
+			"title": "Phiền não của Neuvillette...",
+			"voicelineType": "6012",
+			"description": "Ngày mưa mà không che ô có phải trông rất kỳ lạ không...",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_dialog_annoyed_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87042,
+			"title": "Món ăn yêu thích...",
+			"voicelineType": "6003",
+			"description": "Động vật không ăn vẫn có thể sống được một thời gian, nhưng không uống nước thì chẳng sống nổi mấy ngày. Cho nên, bất kể món ngon gì cũng không thể so sánh được với nước tinh khiết, còn món ăn có nhiều nước canh sẽ được xếp thứ hai.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodLike"
+		},
+		{
+			"voicelineId": 87043,
+			"title": "Món ăn ghét...",
+			"voicelineType": "6004",
+			"description": "Món chiên và món nướng không có sốt thực sự có thể ăn sao? Tôi muốn chỉ đích danh phê bình món Bánh Ajilenakh Nướng của Sumeru, chẳng khác gì ăn chất chống ẩm vào bụng cả.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_foodDislike"
+		},
+		{
+			"voicelineId": 87044,
+			"title": "Nhận Được Quà I",
+			"voicelineType": "6007",
+			"description": "Rất ngon. Nước cốt quan trọng nhất trong món ăn không chỉ rất nhiều, mà còn được xử lý rất tốt nữa.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_pref_01"
+		},
+		{
+			"voicelineId": 87045,
+			"title": "Nhận Được Quà II",
+			"voicelineType": "6008",
+			"description": "Một trải nghiệm không tồi. Nhưng có thể cho thêm một ít nước dùng và lọc bớt dầu mỡ đi không?",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_normal_01"
+		},
+		{
+			"voicelineId": 87046,
+			"title": "Nhận Được Quà III",
+			"voicelineType": "6009",
+			"description": "Khô quá. Món ăn không có nước dùng thì không thể nào nếm ra tâm trạng của đầu bếp được.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_spice_dislike_01"
+		},
+		{
+			"voicelineId": 87047,
+			"title": "Sinh nhật...",
+			"voicelineType": "7001",
+			"description": "Hôm nay là sinh nhật của {F#cô}{M#cậu}, chúc mừng sinh nhật. Không biết hôm nay trời có mưa không, nhưng tôi sẽ nghĩ cách trong khả năng tôi có thể làm.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 87048,
+			"title": "Cảm Giác Đột Phá - Khởi",
+			"voicelineType": "8001",
+			"description": "Đã có chút quen thuộc rồi. Tôi có thể phối hợp với động tác của {F#cô}{M#cậu}.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [1]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87049,
+			"title": "Cảm Giác Đột Phá - Thừa",
+			"voicelineType": "8002",
+			"description": "Xem ra phải lấy bản lĩnh thật sự ra rồi. Không ngờ {F#cô}{M#cậu} lại dễ dàng rơi vào nguy hiểm như vậy.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [2]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87050,
+			"title": "Cảm Giác Đột Phá - Chuyển",
+			"voicelineType": "8003",
+			"description": "Thực lực của {F#cô}{M#cậu} cao đến mức như vậy sao? Xem ra nếu tôi không nghiêm túc thì sẽ không theo kịp rồi.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [4]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 87051,
+			"title": "Cảm Giác Đột Phá - Hợp",
+			"voicelineType": "8004",
+			"description": "Đã thu hồi lại một trong Bảy Quyền Năng từ tay kẻ soán ngôi, đây mới là dáng vẻ vốn dĩ của tôi. Tôi đã là rồng hoàn chỉnh, đủ để phán xử chúng thần còn lại. Vận mệnh của tôi sẽ là phán xử kẻ soán ngôi trên trời cao. Nhưng trước đó, tôi sẽ cho {F#cô}{M#cậu} mượn sức mạnh này.",
+			"voicefile": "VO_friendship/VO_neuvillette/vo_neuvillette_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [6]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 87052,
+			"title": "Kỹ Năng Nguyên Tố I",
+			"voicelineType": "100001",
+			"description": "Trật tự!",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_01"
+		},
+		{
+			"voicelineId": 87053,
+			"title": "Kỹ Năng Nguyên Tố II",
+			"voicelineType": "100002",
+			"description": "Cúi đầu.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_02"
+		},
+		{
+			"voicelineId": 87054,
+			"title": "Kỹ Năng Nguyên Tố III",
+			"voicelineType": "100003",
+			"description": "Không được ồn ào.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill1_03"
+		},
+		{
+			"voicelineId": 87055,
+			"title": "Kỹ Năng Nộ I",
+			"voicelineType": "200001",
+			"description": "Về với thủy triều.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_01"
+		},
+		{
+			"voicelineId": 87056,
+			"title": "Kỹ Năng Nộ II",
+			"voicelineType": "200002",
+			"description": "Tan thành bọt biển.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_02"
+		},
+		{
+			"voicelineId": 87057,
+			"title": "Kỹ Năng Nộ III",
+			"voicelineType": "200003",
+			"description": "Phàm kẻ kiêu căng, ta luôn khinh miệt.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_skill3_03"
+		},
+		{
+			"voicelineId": 87058,
+			"title": "Mở Rương I",
+			"voicelineType": "300001",
+			"description": "Khi {F#cô}{M#cậu} là người đầu tiên tìm ra chiếc rương vô chủ, thì nó đã thuộc về {F#cô}{M#cậu}. Ừm, hợp pháp.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_01"
+		},
+		{
+			"voicelineId": 87059,
+			"title": "Mở Rương II",
+			"voicelineType": "300002",
+			"description": "Là đồ tốt sao? Chí ít thì sự mong chờ trong khoảnh khắc mở nó ra là một tâm trạng không tồi nhỉ.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_02"
+		},
+		{
+			"voicelineId": 87060,
+			"title": "Mở Rương III",
+			"voicelineType": "300003",
+			"description": "Tôi sẽ dùng hình thức thỏa thuận miệng để nhường những thứ này lại cho {F#cô}{M#cậu}.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_chest_open_03"
+		},
+		{
+			"voicelineId": 87061,
+			"title": "HP Thấp I",
+			"voicelineType": "410001",
+			"description": "Không sao, đừng lo lắng.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_01"
+		},
+		{
+			"voicelineId": 87062,
+			"title": "HP Thấp II",
+			"voicelineType": "410002",
+			"description": "Rủi ro tăng dần, nhưng tôi không sao đâu.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_02"
+		},
+		{
+			"voicelineId": 87063,
+			"title": "HP Thấp III",
+			"voicelineType": "410003",
+			"description": "Hmm, trang phục bị rách rồi.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_03"
+		},
+		{
+			"voicelineId": 87064,
+			"title": "HP Đồng Hành Thấp I",
+			"voicelineType": "400001",
+			"description": "Để tôi.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 87065,
+			"title": "HP Đồng Hành Thấp II",
+			"voicelineType": "400002",
+			"description": "Nghỉ ngơi chút đi.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 87066,
+			"title": "Ngã Xuống I",
+			"voicelineType": "500001",
+			"description": "Khi thủy triều dâng lên, tôi sẽ quay trở về...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_01"
+		},
+		{
+			"voicelineId": 87067,
+			"title": "Ngã Xuống II",
+			"voicelineType": "500002",
+			"description": "Nhìn thấy rồi... Vùng biển ấm áp trước khi tôi được sinh ra...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_02"
+		},
+		{
+			"voicelineId": 87068,
+			"title": "Ngã Xuống III",
+			"voicelineType": "500003",
+			"description": "Vạn vật... yên tĩnh...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_life_die_03"
+		},
+		{
+			"voicelineId": 87069,
+			"title": "Bị Trọng Kích I",
+			"voicelineType": "910001",
+			"description": "Công lý đang bị che mắt...",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 87070,
+			"title": "Bị Trọng Kích II",
+			"voicelineType": "910002",
+			"description": "Là tôi đã lơ là.",
+			"voicefile": "VO_gameplay/VO_neuvillette/vo_neuvillette_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 87071,
+			"title": "Vào Đội I",
+			"voicelineType": "600001",
+			"description": "Cảm ơn đã cho phép... ừm, mời tôi đồng hành.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_01"
+		},
+		{
+			"voicelineId": 87072,
+			"title": "Vào Đội II",
+			"voicelineType": "600002",
+			"description": "Rất sẵn lòng.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_02"
+		},
+		{
+			"voicelineId": 87073,
+			"title": "Vào Đội III",
+			"voicelineType": "600003",
+			"description": "Cùng đi nào, đến những nơi như bờ biển.",
+			"voicefile": "VO_teamJoin/vo_neuvillette_teamJoin_03"
+		}
+	]
+}

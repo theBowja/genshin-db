@@ -1,0 +1,933 @@
+{
+	"id": 10000075,
+	"name": "Wanderer",
+	"friendLines": [
+		{
+			"voicelineId": 75000,
+			"title": "初めまして…",
+			"voicelineType": "1006",
+			"description": "名を名乗れって？僕はこの世において、様々な名で呼ばれているんだ。まあ、いずれも凡人が呼ぶにはおこがましいものだけど、今やすべて過去のものさ。\n好きに呼んでくれて構わないよ。ちょうど、君のセンスも確かめられるしね。僕を…がっかりさせないでくれよ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_draw_appear_01"
+		},
+		{
+			"voicelineId": 75001,
+			"title": "世間話·風",
+			"voicelineType": "1101",
+			"description": "この世に純粋な自由なんてないのさ。風さえ、いつか止む時が来る。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_01"
+		},
+		{
+			"voicelineId": 75002,
+			"title": "世間話·話し方",
+			"voicelineType": "1102",
+			"description": "言い方がきついかい？ただ本当のことを言っているだけさ。それを受け入れられない者こそ、もっと自分の問題を反省したほうがいい。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_02"
+		},
+		{
+			"voicelineId": 75003,
+			"title": "世間話·挨拶",
+			"voicelineType": "1103",
+			"description": "世間話はよそう。話すこともないのに必死に話題を探すなんて、滑稽だからね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_character_idle_03"
+		},
+		{
+			"voicelineId": 75004,
+			"title": "雨の日…",
+			"voicelineType": "1201",
+			"description": "僕の笠で雨宿りがしたい？よくもそんな要求ができるね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 75005,
+			"title": "雨上がり…",
+			"voicelineType": "1202",
+			"description": "少し日差しが見えただけで、そんなにはしゃいじゃってさ…まったく幼稚極まりないね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 75006,
+			"title": "雷の日…",
+			"voicelineType": "1203",
+			"description": "チッ…煩わしい。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_thunder_01"
+		},
+		{
+			"voicelineId": 75007,
+			"title": "雪の日…",
+			"voicelineType": "1204",
+			"description": "雨と大差ないはずなのに、人に好かれるのはこっちのほうなんだ…まったく、運命ってのは気まぐれだね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_snowy_01"
+		},
+		{
+			"voicelineId": 75008,
+			"title": "暴風の日…",
+			"voicelineType": "1205",
+			"description": "この程度なら、君にだってできるよね？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_weather_gale_01"
+		},
+		{
+			"voicelineId": 75009,
+			"title": "おはよう…",
+			"voicelineType": "1001",
+			"description": "「起きて——もう朝だよ——」…なんて、まさか僕がこんな感じに起こしてあげると思ってないよね？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 75010,
+			"title": "こんにちは…",
+			"voicelineType": "1002",
+			"description": "僕に食事は必要ない。君は自分と隣のちっこいのについてだけ考えていれば十分だ。そうしてくれれば、僕も手間が省ける。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 75011,
+			"title": "こんばんは…",
+			"voicelineType": "1003",
+			"description": "やっと、退屈な一日が終わる。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 75012,
+			"title": "おやすみ…",
+			"voicelineType": "1004",
+			"description": "僕がそばにいると眠れないかい？ふふっ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 75013,
+			"title": "#{REALNAME[ID(1)]}自身について·人形",
+			"voicelineType": "2001",
+			"description": "人形を燃やせば灰が残る。その灰から何が生まれるかについては…",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle"
+		},
+		{
+			"voicelineId": 75014,
+			"title": "#{REALNAME[ID(1)]}自身について·心",
+			"voicelineType": "2005",
+			"description": "あんなのは適当でいいのさ。自分のものでもないものに執着するのは時間の無駄だし、今はもっと大事なことがあるからね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75015,
+			"title": "戦ったことについて…",
+			"voicelineType": "2003",
+			"description": "かつて君と僕が戦ったことが、どうしても忘れられない？ふーん。それで、どうしたいんだい？いいよ、ゆっくり考えても。どうせ、僕もたっぷりと時間があるしね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close"
+		},
+		{
+			"voicelineId": 75016,
+			"title": "仲間について…",
+			"voicelineType": "2002",
+			"description": "僕が「正義」に帰依することはない。でも君からの恩を返すと言ったからには、必ずやり遂げる。\nそれよりも君こそ、僕と接触する際は自分の立場をよく考えたほうがいいんじゃない？万が一誰かに見られて、君が罪人と「悪巧み」してるって言われたとしても、僕は知らないよ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75017,
+			"title": "「神の目」について…",
+			"voicelineType": "3001",
+			"description": "「神の眼差し」は不快なものだけど、確かに使える力ではある。だからそれについてケチをつけるつもりはない。ん？「風元素」には深い意味がある気がする？ふんっ、どうしてそう思うんだい？神は残忍で理不尽な行いをする、前に君にも見せたはずだろう？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75018,
+			"title": "シェアしたいこと…",
+			"voicelineType": "3002",
+			"description": "ないよ。聞きたいことがあるなら何でも聞いてくれ。気分次第で答えてやってもいい。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_share_01"
+		},
+		{
+			"voicelineId": 75019,
+			"title": "興味のあること…",
+			"voicelineType": "3003",
+			"description": "ほら、見てごらん。鳥は羽を見せびらかし、リスは食料を蓄え、人間は生きるための糧を求めて一日中走り回る…頭が単純な生き物ほど、楽に生きてるよね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_gift_01"
+		},
+		{
+			"voicelineId": 75020,
+			"title": "クラクサナリデビについて…",
+			"voicelineType": "4001",
+			"description": "彼女が僕を消さなかったのは、僕に利用価値があること以外にも、何か他の理由があったからかもね。もしかすると、それは彼女が賢明で、至善の心を持っていたからかもしれないし、あるいは僕の身に孤独の影を垣間見たからかもしれない…ん？悪意に満ちた憶測だって？ハッ、当たり前じゃないか！僕は善人なんかじゃないんだから。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75021,
+			"title": "雷電将軍について…",
+			"voicelineType": "4002",
+			"description": "自らの創ったものに目を向けようともせず、干渉するのが忍びないとか、そんな言葉で取り繕うなんて…",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_raidenShogun_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75022,
+			"title": "「女皇」について…",
+			"voicelineType": "4003",
+			"description": "誰もが彼女の優しさと慈愛を称賛するけど、「愛」も「罪」の一種であることを知る者は誰一人としていない。もしかしたらその愛っていうのは、いわゆる代償行動ってやつなのかもね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tsaritsa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75023,
+			"title": "「道化」について…",
+			"voicelineType": "4004",
+			"description": "「道化」はカーンルイアの遺民さ——それ以外について、僕は彼をほとんど知らないし、彼と親しく交流したこともない。でも、彼は僕に対して何か考えがあったようで、前に重要な任務をいくつもくれた…「アビス」へ向かうことも含めてね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pierro_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75024,
+			"title": "「隊長」について…",
+			"voicelineType": "4005",
+			"description": "「剛直で硬骨な『隊長』」、「公正で果敢な『隊長』」、「功績の豊富な『隊長』」…これらファデュイの中で流れている噂は、人形の耳でさえタコができるほど聞いたよ。絶対的な「公正」だなんて、とても危険な脅威だと思わない？ましてや、「隊長」はトップクラスの実力を持っているから、尚更さ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_capitano_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75025,
+			"title": "「博士」について…",
+			"voicelineType": "4006",
+			"description": "実に残念だ。クラクサナリデビが、彼にあんなに多くの断片を消させたことで、僕が彼の断片を一枚ずつ切り刻む楽しみがなくなってしまった。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_dottore_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75026,
+			"title": "「少女」について…",
+			"voicelineType": "4007",
+			"description": "質問だ。「どんな時も」ぼんやりと間が抜けていて、「どんなことをするにも」鈍くてとろい「少女」に遭遇した時、どのような反応をすればいいと思う？僕は、構わず戦える。でも君は…良心を痛めるだろうから、やっぱり彼女からは離れたほうがいいよ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_columbina_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75027,
+			"title": "「召使」について…",
+			"voicelineType": "4008",
+			"description": "道徳家気取りの偽善者さ。彼女が「優雅」と「親切」を見せるのは、人をよりうまく「コントロール」するためだ。彼女の狂った一面を見た者は、もうほとんど…ふぅ～。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_arlecchino_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75028,
+			"title": "「雄鶏」について…",
+			"voicelineType": "4009",
+			"description": "「公子」くらいだろうね、「雄鶏」が誠心誠意、見返りもなく彼とその家族を気にかけてくれてるなんて思うのは。あの市長様は確かに実のあることを多くしてきたけど、ちょっとでも頭のいいやつなら分かるはずだよ。それが意味することは——「君の家族を握ってるぞ」、でしょ？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pulcinella_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75029,
+			"title": "「傀儡」について…",
+			"voicelineType": "4010",
+			"description": "彼女は自分の研究以外には興味がないんだ。性格だって、極めて酷いものさ。だけどそこまで極端に振る舞って、でき上がったのは大量の廃品のみ。僕が執行官だった時も、僕より一位下だった。実に哀れだね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_sandrone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75030,
+			"title": "「富者」について…",
+			"voicelineType": "4011",
+			"description": "あの第九位のことか。彼は「公平な取引」にすごく固執していて、あまつさえ、神と人の間にあってしかるべき不公平さえ覆そうとしている。まあ、凡人はそういうものさ、非現実的な妄想を抱きやすいんだ。別に特別なことなんかじゃないよ、彼の平凡な能力や目利きと同じようにね。——ふんっ、「博士」と密接な協力をとるなんてね…いい結果にはならないさ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_pantalone_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75031,
+			"title": "「公子」について…",
+			"voicelineType": "4012",
+			"description": "脳筋で、手先も器用なわけじゃない。いくら最下位だとはいえ、あいつが執行官にいるだけで全体のレベルが下がる。幸い、僕はもうそこにいないからいいけど。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_tartaglia_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75032,
+			"title": "「淑女」について…",
+			"voicelineType": "4013",
+			"description": "彼女の灰には何もない。僕は未来を失った者には興味がないんだ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_signora_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「千手百目の浮世」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75033,
+			"title": "八重神子について…",
+			"voicelineType": "4014",
+			"description": "心にもないことぺらぺら喋る妖怪さ。神の寵愛を受けるために、人間に関心があるふりをしてるんだろう。でも実際のところ、ただ面白いことが好きなだけなんじゃない？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_yaeMiko_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「千手百目の浮世」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						2021
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75034,
+			"title": "楓原万葉について…",
+			"voicelineType": "4015",
+			"description": "楓原家の末裔？それってつまり…ほう？彼にも風元素の「神の目」が…しかも、雷電将軍の一太刀を受け止めたって？ふふふっ…ハハハハハッ！",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_teammate_kazuha_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75035,
+			"title": "#{REALNAME[ID(1)]}を知る·1",
+			"voicelineType": "5001",
+			"description": "僕を知ろうだなんて、珍しいね。面倒を招くかもよ？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_01"
+		},
+		{
+			"voicelineId": 75036,
+			"title": "#{REALNAME[ID(1)]}を知る·2",
+			"voicelineType": "5002",
+			"description": "ああ、僕と過去のことについて清算したい人はたくさんいるだろうね。なんだっていいさ、誰でもかかってくるがいい——むしろ、楽しみなくらいだよ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.3後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75037,
+			"title": "#{REALNAME[ID(1)]}を知る·3",
+			"voicelineType": "5003",
+			"description": "かつて、神になれば無駄な感情を捨てられると思っていたけど、今はそうは思わない。少なくとも「怒り」は、他人のものであれ自分のものであれ、使い勝手のいい道具なのさ。\n永遠に怒らない人なんていないだろう？まったく想像もできないよ。そういう人って、怒りの神経ってものすらないのかな？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.4後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75038,
+			"title": "#{REALNAME[ID(1)]}を知る·4",
+			"voicelineType": "5004",
+			"description": "世界樹に入った時、僕の頭の中にこう浮かんだんだ——「最初から、この世に生まれてこなければよかった」ってね。\n世界樹はその願いに応えてくれたけど、僕が期待した結果はもたらしてくれなかったよ。この土地の運命は、相変わらずその虜囚たちを翻弄するのが得意だね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.5後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75039,
+			"title": "#{REALNAME[ID(1)]}を知る·5",
+			"voicelineType": "5005",
+			"description": "僕たちはつながり、交差して、そして…いつかは異なる場所へ向かうだろう。でもこれからなにが起こるかなんて、誰にも分からないじゃない？成り行きに任せよう。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "好感度Lv.6後に解放",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "シナリオ「伽藍に落ちて」をクリアする",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3032
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75040,
+			"title": "#{REALNAME[ID(1)]}の趣味…",
+			"voicelineType": "6001",
+			"description": "趣味？それって、暇人のやることだよね。僕がそんなふうに見えるのかい？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_hobby"
+		},
+		{
+			"voicelineId": 75041,
+			"title": "#{REALNAME[ID(1)]}の悩み…",
+			"voicelineType": "6002",
+			"description": "どうやったら君を撒いて、ひと暴れできるか考えてるんだ。——冗談だよ、もしかして信じちゃった？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_dialog_annoyed"
+		},
+		{
+			"voicelineId": 75042,
+			"title": "好きな食べ物…",
+			"voicelineType": "6005",
+			"description": "茶はある？苦ければ苦いほどいい。どこまでも後味が広がるからね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 75043,
+			"title": "嫌いな食べ物…",
+			"voicelineType": "6004",
+			"description": "ベタベタしてて甘いものかな。歯がくっつく感じがするからね。君ひとりで食べてくれ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_foodDislike"
+		},
+		{
+			"voicelineId": 75044,
+			"title": "贈り物を受け取る·1",
+			"voicelineType": "6007",
+			"description": "まあまあかな。君の数少ない長所の一つだ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_pref_01"
+		},
+		{
+			"voicelineId": 75045,
+			"title": "贈り物を受け取る·2",
+			"voicelineType": "6008",
+			"description": "悪くはない。少なくとも口には入れられる。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_normal_01"
+		},
+		{
+			"voicelineId": 75046,
+			"title": "贈り物を受け取る·3",
+			"voicelineType": "6009",
+			"description": "僕を殺す気か？まさか、僕が凡人じゃないことを忘れたとでも？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_spice_dislike_01"
+		},
+		{
+			"voicelineId": 75047,
+			"title": "誕生日…",
+			"voicelineType": "7001",
+			"description": "僕の手を取って。…ふふっ、身構えなくていい、高いところに連れてってあげるだけだから。\nいいでしょ？絶景が見られるよ。このくらいのことで礼なんていい、そんなのまどろっこしいからね。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 75048,
+			"title": "突破した感想·起",
+			"voicelineType": "8001",
+			"description": "…うん、尽力したのが分かるよ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「1」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75049,
+			"title": "突破した感想·承",
+			"voicelineType": "8002",
+			"description": "風が吹いてきたね…何をしたんだい？",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「2」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75050,
+			"title": "突破した感想·転",
+			"voicelineType": "8003",
+			"description": "僕に力をくれるなんて…どうなるか心配じゃないの？…そう。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「4」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 75051,
+			"title": "突破した感想·結",
+			"voicelineType": "8004",
+			"description": "確かに僕は君の力になれるけど、僕を仲間として見るのは危険なことなんだ。自分が直面しているのが何なのか、きちんと理解したほうがいい。それでも怖くないのなら、僕の背中を預けるよ。",
+			"voicefile": "VO_friendship/VO_wanderer/vo_wanderer_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "突破段階「6」で解放",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 75052,
+			"title": "元素スキル·1",
+			"voicelineType": "100001",
+			"description": "風よ！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_01"
+		},
+		{
+			"voicelineId": 75053,
+			"title": "元素スキル·2",
+			"voicelineType": "100002",
+			"description": "俗世を見下ろさん。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_02"
+		},
+		{
+			"voicelineId": 75054,
+			"title": "元素スキル·3",
+			"voicelineType": "100003",
+			"description": "天へと舞え！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill1_03"
+		},
+		{
+			"voicelineId": 75055,
+			"title": "元素爆発·1",
+			"voicelineType": "200001",
+			"description": "礼を弁えぬ虫けらが。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_01"
+		},
+		{
+			"voicelineId": 75056,
+			"title": "元素爆発·2",
+			"voicelineType": "200002",
+			"description": "雑魚どもが！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_02"
+		},
+		{
+			"voicelineId": 75057,
+			"title": "元素爆発·3",
+			"voicelineType": "200003",
+			"description": "もっと泣きわめけ！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_03"
+		},
+		{
+			"voicelineId": 75058,
+			"title": "元素爆発·4",
+			"voicelineType": "200004",
+			"description": "頭が高いぞ。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_04"
+		},
+		{
+			"voicelineId": 75059,
+			"title": "元素爆発·5",
+			"voicelineType": "200005",
+			"description": "身の程を知れ。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_05"
+		},
+		{
+			"voicelineId": 75060,
+			"title": "元素爆発·6",
+			"voicelineType": "200006",
+			"description": "君ごときが、僕を直視する気か？",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_skill3_06"
+		},
+		{
+			"voicelineId": 75061,
+			"title": "ダッシュ開始·1",
+			"voicelineType": "700001",
+			"description": "疾風！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_01"
+		},
+		{
+			"voicelineId": 75062,
+			"title": "ダッシュ開始·2",
+			"voicelineType": "700002",
+			"description": "風が如し！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_02"
+		},
+		{
+			"voicelineId": 75064,
+			"title": "ダッシュ開始·3",
+			"voicelineType": "700004",
+			"description": "…おそい。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_04"
+		},
+		{
+			"voicelineId": 75065,
+			"title": "ダッシュ開始·4",
+			"voicelineType": "700005",
+			"description": "ついて来いなんて言ってないよ。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_explore_sprint_start_05"
+		},
+		{
+			"voicelineId": 75066,
+			"title": "宝箱を開ける·1",
+			"voicelineType": "300001",
+			"description": "ふん、ゴミか。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_01"
+		},
+		{
+			"voicelineId": 75067,
+			"title": "宝箱を開ける·2",
+			"voicelineType": "300002",
+			"description": "はぁ？こんなのも欲しいの？",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_02"
+		},
+		{
+			"voicelineId": 75068,
+			"title": "宝箱を開ける·3",
+			"voicelineType": "300003",
+			"description": "欲しいなら君にやるよ。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_chest_open_03"
+		},
+		{
+			"voicelineId": 75069,
+			"title": "HP低下·1",
+			"voicelineType": "410001",
+			"description": "もう慣れた。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_01"
+		},
+		{
+			"voicelineId": 75070,
+			"title": "HP低下·2",
+			"voicelineType": "410002",
+			"description": "取るに足らない。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_02"
+		},
+		{
+			"voicelineId": 75071,
+			"title": "仲間HP低下·1",
+			"voicelineType": "400001",
+			"description": "使えないやつめ！",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 75072,
+			"title": "仲間HP低下·2",
+			"voicelineType": "400002",
+			"description": "あらら～へなちょこめ～",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 75073,
+			"title": "戦闘不能·1",
+			"voicelineType": "500001",
+			"description": "深淵へ…落ちる…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_01"
+		},
+		{
+			"voicelineId": 75074,
+			"title": "戦闘不能·2",
+			"voicelineType": "500002",
+			"description": "すべて…無駄…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_02"
+		},
+		{
+			"voicelineId": 75075,
+			"title": "戦闘不能·3",
+			"voicelineType": "500003",
+			"description": "罪の…報いか…",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_life_die_03"
+		},
+		{
+			"voicelineId": 75076,
+			"title": "重ダメージを受ける·1",
+			"voicelineType": "910001",
+			"description": "その程度か。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 75077,
+			"title": "重ダメージを受ける·2",
+			"voicelineType": "910002",
+			"description": "…笑える。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_03"
+		},
+		{
+			"voicelineId": 75078,
+			"title": "重ダメージを受ける·3",
+			"voicelineType": "910003",
+			"description": "…死にたいようだね？",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_06"
+		},
+		{
+			"voicelineId": 75079,
+			"title": "重ダメージを受ける·4",
+			"voicelineType": "910004",
+			"description": "命乞いをすることになるよ。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_07"
+		},
+		{
+			"voicelineId": 75080,
+			"title": "重ダメージを受ける·5",
+			"voicelineType": "910005",
+			"description": "そろそろ代価を支払ってもらおう。",
+			"voicefile": "VO_gameplay/VO_wanderer/vo_wanderer_battle_hit_H_08"
+		},
+		{
+			"voicelineId": 75081,
+			"title": "チーム加入·1",
+			"voicelineType": "600001",
+			"description": "そう来たか…僕に何をしてほしいんだい？",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_01"
+		},
+		{
+			"voicelineId": 75082,
+			"title": "チーム加入·2",
+			"voicelineType": "600002",
+			"description": "まさか、用もなく呼んだわけじゃないよね？",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_02"
+		},
+		{
+			"voicelineId": 75083,
+			"title": "チーム加入·3",
+			"voicelineType": "600003",
+			"description": "僕じゃなきゃだめ？…いいだろう、仕方ない…",
+			"voicefile": "VO_teamJoin/vo_wanderer_teamJoin_03"
+		}
+	]
+}

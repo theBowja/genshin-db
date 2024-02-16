@@ -1,0 +1,769 @@
+{
+	"id": 10000003,
+	"name": "Jean",
+	"friendLines": [
+		{
+			"voicelineId": 4100,
+			"title": "Première rencontre...",
+			"voicelineType": "1000",
+			"description": "Jean, Chevalier au Pissenlit, au rapport. Je demande l'autorisation de rejoindre l'équipe. Ma loyauté est tienne !",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_draw_appear"
+		},
+		{
+			"voicelineId": 4101,
+			"title": "Bavardage - Action",
+			"voicelineType": "1101",
+			"description": "On ferait mieux de bouger au lieu de rester ici.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_01"
+		},
+		{
+			"voicelineId": 4102,
+			"title": "Bavardage - Ordre de Favonius",
+			"voicelineType": "1102",
+			"description": "J'espère que les chevaliers sont en train de travailler d'arrache-pied...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_02"
+		},
+		{
+			"voicelineId": 4103,
+			"title": "Bavardage - Cible",
+			"voicelineType": "1103",
+			"description": "En route ! Nous avons du chemin à faire !",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_explore_idle_03"
+		},
+		{
+			"voicelineId": 4104,
+			"title": "Quand il pleut...",
+			"voicelineType": "1201",
+			"description": "La pluie ne m'empêchera pas d'avancer.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 4105,
+			"title": "Après la pluie...",
+			"voicelineType": "1202",
+			"description": "Un temps idéal pour passer à l'action.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_afterRain_01"
+		},
+		{
+			"voicelineId": 4106,
+			"title": "Quand il neige...",
+			"voicelineType": "1203",
+			"description": "De la neige... Il va falloir que je fasse attention à mes bottes.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_snowy_01"
+		},
+		{
+			"voicelineId": 4107,
+			"title": "Quand le vent souffle...",
+			"voicelineType": "1204",
+			"description": "Quel temps agréable...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_breezy_01"
+		},
+		{
+			"voicelineId": 4108,
+			"title": "Le vent souffle fort...",
+			"voicelineType": "1205",
+			"description": "La légende raconte que le vent soufflait fort ce jour-là...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_weather_gale_01"
+		},
+		{
+			"voicelineId": 4109,
+			"title": "Au réveil...",
+			"voicelineType": "1001",
+			"description": "L'avenir appartient à ceux qui se lèvent tôt. Ne ménageons pas nos efforts aujourd'hui non plus !",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 4110,
+			"title": "À l'heure du déjeuner...",
+			"voicelineType": "1002",
+			"description": "Bien, c'est l'heure du travail.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 4111,
+			"title": "Le soir...",
+			"voicelineType": "1003",
+			"description": "On n'a plus de café à ce que je vois... Je vais demander à Lisa par quoi je peux le substituer.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 4112,
+			"title": "La nuit...",
+			"voicelineType": "1004",
+			"description": "On va arrêter la méditation pour aujourd'hui. Tu t'en sors bien, continue comme ça.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 4113,
+			"title": "À propos de Jean...",
+			"voicelineType": "2001",
+			"description": "Je n'ai pas eu d'autre choix aujourd'hui que de mettre en pièces cinq Gardiens des ruines pour protéger les habitants de la ville... *soupir* Je dois pouvoir faire mieux. Ces créatures ont beau être un danger, elles n'en font pas moins partie de notre culture... Je tâcherai d'être moins destructrice la prochaine fois.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_idle"
+		},
+		{
+			"voicelineId": 4114,
+			"title": "À propos de nous - Devise",
+			"voicelineType": "2002",
+			"description": "Mon arme est à ton service. Mais si jamais ton chemin s'éloigne de la justice, je n'hésiterai pas à te le rappeler.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close1"
+		},
+		{
+			"voicelineId": 4115,
+			"title": "À propos de nous - Serment",
+			"voicelineType": "2003",
+			"description": "La victoire sera nôtre. Je le jure sur ma lame.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4116,
+			"title": "À propos de nous - Mission",
+			"voicelineType": "2004",
+			"description": "Le travail ne va pas se faire tout seul, mais il faut se reposer parfois. Prenons exceptionnellement dix minutes de pause-déjeuner aujourd'hui...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_close3",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4117,
+			"title": "À propos de l'œil divin...",
+			"voicelineType": "3001",
+			"description": "« Pour Mondstadt, toujours » est la devise de ma famille, les Gunnhildr. À chaque fois que j'utilise mon œil divin, je pense à ma mère et aux Mondstadtois qui me font confiance. Je n'hésiterai jamais à me battre pour leur liberté.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4118,
+			"title": "Quelque chose à partager ?",
+			"voicelineType": "3002",
+			"description": "Au nom de l'Ordre de Favonius, j'aimerais t'exprimer notre plus profonde gratitude pour tes actions en faveur de Mondstadt. Cela dit, le repos est aussi important que l'effort, alors je te prie de... Pourquoi ce fou rire ? Ai-je dit quelque chose de drôle ou d'étrange ?",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_share"
+		},
+		{
+			"voicelineId": 4119,
+			"title": "Détails intéressants...",
+			"voicelineType": "3003",
+			"description": "« Pissenlit, dent-de-lion, vole vers une autre destination ! »... Grâce au vent, peut-être qu'il atteindra Celestia, qui sait ?",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_gift"
+		},
+		{
+			"voicelineId": 4120,
+			"title": "À propos de Barbara...",
+			"voicelineType": "4001",
+			"description": "Barbara travaille dur, mais elle se surmène parfois... Pourquoi je le sais ? L'Ordre de Favonius dépend de l'Église, tout simplement.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_barbara_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4121,
+			"title": "À propos de Lisa...",
+			"voicelineType": "4002",
+			"description": "Je sais que je peux me détendre si Lisa est là.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_lisa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4122,
+			"title": "À propos d'Amber...",
+			"voicelineType": "4003",
+			"description": "Amber a vraiment grandi en tant que chevalier. J'espère qu'un barde chantera ses louanges un jour...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_ambor_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4123,
+			"title": "À propos de Kaeya...",
+			"voicelineType": "4004",
+			"description": "Ah ? Kaeya t'a aussi fait quelques suggestions. C'est un excellent chevalier. Personne n'irait dire le contraire.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_kaeya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4124,
+			"title": "À propos de Klee...",
+			"voicelineType": "4005",
+			"description": "Je sais que les enfants aiment jouer, mais Klee a toujours des explosifs entre les mains. Tout le monde s'en inquiète...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_klee_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4125,
+			"title": "À propos d'Albedo...",
+			"voicelineType": "4006",
+			"description": "On dirait que le mot « prodige » a été inventé pour Albedo.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_albedo_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4126,
+			"title": "À propos de Varka...",
+			"voicelineType": "4007",
+			"description": "Le Grand Maître Varka est une légende. Tu devrais le rencontrer quand il reviendra de son expédition. Je pense que tu pourrais apprendre énormément de lui.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_varka_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4127,
+			"title": "À propos de Noëlle...",
+			"voicelineType": "4008",
+			"description": "Noëlle... C'est cette jeune fille qui veut rejoindre l'Ordre de Favonius, n'est-ce pas ? Hélas, je ne pense pas qu'elle soit prête à affronter les horreurs de ce monde...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_noel_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4128,
+			"title": "À propos de Rosalia...",
+			"voicelineType": "4009",
+			"description": "Sœur Rosalia se plaint tout le temps de son travail, mais elle le fait à merveille. L'autre fois, je lui ai proposé mon aide, mais elle m'a dit que ça l'embêterait davantage. Je vois que j'ai encore beaucoup de lacunes à combler...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_rosaria_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4129,
+			"title": "À propos de Diluc - Remords",
+			"voicelineType": "4010",
+			"description": "Les critiques de Diluc envers l'Ordre de Favonius sont fondées. J'ai beau me sentir coupable de ce qu'il s'est passé, on ne peut pas revenir dans le passé. Je ferai en sorte qu'il change d'avis sur nous un jour...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_diluc_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4130,
+			"title": "À propos de Diluc - Respect",
+			"voicelineType": "4011",
+			"description": "Diluc est quelqu'un de très respectable. Nos chemins sont désormais différents, mais notre objectif est le même : protéger Mondstadt. Je le sais.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_diluc_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4131,
+			"title": "À propos de Sucrose...",
+			"voicelineType": "4012",
+			"description": "Sucrose est une alchimiste douée. Avec Albedo à ses côtés, elle n'a aucun souci à se faire, mais... Non, il n'y a pas de mal à rester dans son petit monde après tout.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_sucrose_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4132,
+			"title": "À propos d'Eula...",
+			"voicelineType": "4013",
+			"description": "Eula ? Hum... Ne lui tenez pas rigueur de son passé. Les chevaliers de l'Ordre de Favonius jugent chacun de manière aussi impartiale que possible. Eula possède une idée très claire du bien et du mal, et elle est plus douée que la plupart. Les controverses qu'elle suscite ne sont qu'un résultat de sa personnalité. Elle répète vouloir me défier, et ça ne me dérange pas outre mesure.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_eula_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4171,
+			"title": "À propos de Mika...",
+			"voicelineType": "4014",
+			"description": "Si le Grand Maître a choisi Mika pour être en première ligne de l'unité d'expédition, ce n'est pas seulement pour les besoins de la mission, c'est surtout parce qu'il a été impressionné par le caractère travailleur et mesuré de Mika. Quant à moi, je suis très honoré de travailler avec quelqu'un comme lui.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_teammate_mika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4133,
+			"title": "Connaître Jean (1)",
+			"voicelineType": "5001",
+			"description": "Les chevaliers et les Mondstadtois comptent sur moi. Je ne peux pas me permettre le moindre répit.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_01"
+		},
+		{
+			"voicelineId": 4134,
+			"title": "Connaître Jean (2)",
+			"voicelineType": "5002",
+			"description": "Nombreux sont les illustres chevaliers à avoir porté le titre de « Chevalier au Pissenlit ». Pour lui faire honneur, je ne dois pas relâcher mes efforts et continuer d'être le bouclier et l'épée de Mondstadt.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4135,
+			"title": "Connaître Jean (3)",
+			"voicelineType": "5003",
+			"description": "Seules les victoires forment les légendes et les livres d'histoire. Même les meilleurs des chevaliers d'antan ont dû avoir leur part d'épreuves.\nÔ vents, montrez-moi le chemin à suivre.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4136,
+			"title": "Connaître Jean (4)",
+			"voicelineType": "5004",
+			"description": "Quand je suis complètement absorbée par le travail, j'oublie tous mes problèmes, et jusqu'au temps qui passe... Je me rappelle des mots du Grand Maître Varka : « Jean, il n'y a pas meilleur candidat pour ce poste que toi. »",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4137,
+			"title": "Connaître Jean (5)",
+			"voicelineType": "5005",
+			"description": "Le chemin à suivre me paraît plus clair à force de marcher à tes côtés. C'est un peu comme si j'avais enfin trouvé quelqu'un en qui croire, comme si...\nNon, ça veut dire que mes efforts ne sont pas suffisants. Je ne dois pas abandonner, je n'abandonnerai jamais. Les chevaliers et les gens de Mondstadt comptent sur moi. Mais... je te remercie.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Débloqué au Niv. d'affinité 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4138,
+			"title": "Les loisirs de Jean...",
+			"voicelineType": "6001",
+			"description": "Discutons des histoires de héros légendaires... Connais-tu celle du roi de Khaenri'ah ?",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_hobby"
+		},
+		{
+			"voicelineId": 4139,
+			"title": "Les problèmes de Jean...",
+			"voicelineType": "6002",
+			"description": "Existe-t-il une potion qui permet de rester éveillé en permanence ? Lisa en saura certainement quelque chose...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_dialog_annoyed"
+		},
+		{
+			"voicelineId": 4140,
+			"title": "Plats préférés...",
+			"voicelineType": "6003",
+			"description": "Ça fait longtemps que je n'ai pas mangé une pizza de chez La Queue de Chat. Ça aurait été bien si je pouvais la faire livrer au bureau...",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_foodLike"
+		},
+		{
+			"voicelineId": 4141,
+			"title": "Plats détestés...",
+			"voicelineType": "6004",
+			"description": "Un chevalier digne de ce nom ne saute pas de repas.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_foodDislike"
+		},
+		{
+			"voicelineId": 4168,
+			"title": "Cadeau reçu (1)",
+			"voicelineType": "6007",
+			"description": "C'est non seulement délicieux, mais aussi équilibré et sain. Tu t'es donné du mal.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_pref_01"
+		},
+		{
+			"voicelineId": 4169,
+			"title": "Cadeau reçu (2)",
+			"voicelineType": "6008",
+			"description": "Tu m'as remonté le moral, merci.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_normal_01"
+		},
+		{
+			"voicelineId": 4170,
+			"title": "Cadeau reçu (3)",
+			"voicelineType": "6009",
+			"description": "Euh... Merci quand même pour tes efforts.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_spice_dislike_01"
+		},
+		{
+			"voicelineId": 4142,
+			"title": "Anniversaire...",
+			"voicelineType": "7001",
+			"description": "Aujourd'hui est un jour spécial que nous devons célébrer. Pourquoi ? Parce que c'est ton anniversaire, chevalier honoraire.\nJoyeux anniversaire !\nJe me suis permis de t'apporter un cadeau... J'espère qu'il te plaira.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_pref_birthday",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 4143,
+			"title": "Affinité faible",
+			"voicelineType": "8001",
+			"description": "Très bien. Continuons jusqu'à notre prochain objectif.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 1.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4144,
+			"title": "Affinité moyenne",
+			"voicelineType": "8002",
+			"description": "Je continuerai d'avancer tant que le vent continue de souffler.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 2.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4145,
+			"title": "Affinité élevée",
+			"voicelineType": "8003",
+			"description": "Nous ne pouvons pas baisser notre garde, même en temps de paix. En tant que Grande Maîtresse suppléante, je dois me préparer à toute éventualité.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 4.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 4146,
+			"title": "Affinité max",
+			"voicelineType": "8004",
+			"description": "Je ne suis pas encore assez puissante. J'ai fait appel à ton aide à de nombreuses reprises depuis que je te connais. Tu as toute ma gratitude, non seulement en tant que Grande Maîtresse suppléante, mais aussi en tant que Jean. Mon épée sera toujours tienne.",
+			"voicefile": "VO_friendship/VO_qin/vo_qin_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Atteignez la phase d'élévation 6.",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 4147,
+			"title": "Compétence élémentaire (1)",
+			"voicelineType": "100001",
+			"description": "Finissons-en !",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_01"
+		},
+		{
+			"voicelineId": 4148,
+			"title": "Compétence élémentaire (2)",
+			"voicelineType": "100002",
+			"description": "... Ha !",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_02"
+		},
+		{
+			"voicelineId": 4149,
+			"title": "Compétence élémentaire (3)",
+			"voicelineType": "100003",
+			"description": "... Dispersion !",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill1_03"
+		},
+		{
+			"voicelineId": 4150,
+			"title": "Déchaînement élémentaire (1)",
+			"voicelineType": "200001",
+			"description": "Ô Vent, entends mon appel !",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_01"
+		},
+		{
+			"voicelineId": 4151,
+			"title": "Déchaînement élémentaire (2)",
+			"voicelineType": "200002",
+			"description": "Au nom de ma lame !",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_02"
+		},
+		{
+			"voicelineId": 4152,
+			"title": "Déchaînement élémentaire (3)",
+			"voicelineType": "200003",
+			"description": "Guidez-nous, grand Barbatos.",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_skill3_03"
+		},
+		{
+			"voicelineId": 4153,
+			"title": "Ouverture de coffre (1)",
+			"voicelineType": "300001",
+			"description": "Quelle surprise agréable.",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_01"
+		},
+		{
+			"voicelineId": 4154,
+			"title": "Ouverture de coffre (2)",
+			"voicelineType": "300002",
+			"description": "Hmm, les choses se passent un peu trop bien aujourd'hui...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_02"
+		},
+		{
+			"voicelineId": 4155,
+			"title": "Ouverture de coffre (3)",
+			"voicelineType": "300003",
+			"description": "J'espère que les autres en trouveront aussi.",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_chest_open_03"
+		},
+		{
+			"voicelineId": 4156,
+			"title": "PV faibles (1)",
+			"voicelineType": "410001",
+			"description": "Je... Je vais bien...!",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_01"
+		},
+		{
+			"voicelineId": 4157,
+			"title": "PV faibles (2)",
+			"voicelineType": "410002",
+			"description": "Mes compagnons... ont besoin de moi...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_02"
+		},
+		{
+			"voicelineId": 4158,
+			"title": "PV faibles (3)",
+			"voicelineType": "410003",
+			"description": "Je ne peux pas abandonner...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_03"
+		},
+		{
+			"voicelineId": 4159,
+			"title": "Compagnon avec PV faibles (1)",
+			"voicelineType": "400001",
+			"description": "Une blessure... Mets-toi vite en sécurité !",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 4160,
+			"title": "Compagnon avec PV faibles (2)",
+			"voicelineType": "400002",
+			"description": "Je vais prendre le relais.",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 4161,
+			"title": "K.O. (1)",
+			"voicelineType": "500001",
+			"description": "Mondstadt...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_01"
+		},
+		{
+			"voicelineId": 4162,
+			"title": "K.O. (2)",
+			"voicelineType": "500002",
+			"description": "Il y a une limite à la force individuelle...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_02"
+		},
+		{
+			"voicelineId": 4163,
+			"title": "K.O. (3)",
+			"voicelineType": "500003",
+			"description": "Je... ne suis pas assez qualifiée...",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_life_die_03"
+		},
+		{
+			"voicelineId": 4164,
+			"title": "Attaque puissante subie (1)",
+			"voicelineType": "910001",
+			"description": "Ce n'est qu'une égratignure !",
+			"voicefile": "VO_gameplay/VO_qin/vo_qin_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 4165,
+			"title": "Ajout dans l'équipe (1)",
+			"voicelineType": "600001",
+			"description": "Prête à partir.",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_01"
+		},
+		{
+			"voicelineId": 4166,
+			"title": "Ajout dans l'équipe (2)",
+			"voicelineType": "600002",
+			"description": "Je suis préparée à tout.",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_02"
+		},
+		{
+			"voicelineId": 4167,
+			"title": "Ajout dans l'équipe (3)",
+			"voicelineType": "600003",
+			"description": "Que le vent vous guide.",
+			"voicefile": "VO_teamJoin/vo_qin_teamJoin_03"
+		}
+	]
+}

@@ -1,0 +1,698 @@
+{
+	"id": 10000070,
+	"name": "Nilou",
+	"friendLines": [
+		{
+			"voicelineId": 70000,
+			"title": "Schön, dich kennenzulernen.",
+			"voicelineType": "1000",
+			"description": "Hallo, ich bin Nilou vom Theater Zubayr. Für heute ist ein Tanz geplant, blinzle nicht, gleich geht es los ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_draw_appear_01"
+		},
+		{
+			"voicelineId": 70001,
+			"title": "Gespräch – Übung",
+			"voicelineType": "1101",
+			"description": "Zuerst so ... Dann diese Tanzschritte ... Ja, genau so.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_character_idle_01"
+		},
+		{
+			"voicelineId": 70002,
+			"title": "Gespräch – Schläfrigkeit",
+			"voicelineType": "1102",
+			"description": "Atme tief ein, als würdest du gleich einen riesigen Ballon aufblasen. Setz deine Schläfrigkeit in den Ballon, blase weiter ... Und jetzt fliegt sie mit dem Ballon davon!",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_character_idle_02"
+		},
+		{
+			"voicelineId": 70003,
+			"title": "Gespräch – Ruhe",
+			"voicelineType": "1103",
+			"description": "Schön, einen entspannten Tag wie diesen zu haben.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_character_idle_03"
+		},
+		{
+			"voicelineId": 70004,
+			"title": "Wenn es regnet ...",
+			"voicelineType": "1201",
+			"description": "Wie unsere Stimmung kann auch das Wetter mal düster werden. Aber keine Sorge, denn der Himmel wird heller nach dem Regen.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 70005,
+			"title": "Wenn es blitzt ...",
+			"voicelineType": "1202",
+			"description": "Donner ist ein wenig beängstigend. Hast du Angst davor? Wenn ja, kann ich dir eine verblüffende Methode zuteilwerden lassen, damit du keine Angst mehr vor Donner hast.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_weather_thunder_01"
+		},
+		{
+			"voicelineId": 70006,
+			"title": "Wenn es schneit ...",
+			"voicelineType": "1203",
+			"description": "Äh? Oh, es schneit! Hör, der Schnee fällt! Findest du nicht, dass die Schneeflocken, die durch die Luft wirbeln, wie Feen am Himmel tanzen?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_weather_snowy_01"
+		},
+		{
+			"voicelineId": 70007,
+			"title": "Wie sonnig ...",
+			"voicelineType": "1204",
+			"description": "Sonnige Tage sind so warm und gemütlich ... *gähn* Sie machen mich schläfrig ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_weather_sunny_01"
+		},
+		{
+			"voicelineId": 70008,
+			"title": "Ein Sturm zieht auf.",
+			"voicelineType": "1205",
+			"description": "Bist du in Ordnung? Vorsicht vor Sandstürmen.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_weather_gale_01"
+		},
+		{
+			"voicelineId": 70009,
+			"title": "Guten Morgen.",
+			"voicelineType": "1001",
+			"description": "Guten Morgen! Huch, warum starrst du mich an? Meine Haare sind durcheinander? Ah, warte, schau nicht hin! Ich mache mich gleich zurecht.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 70010,
+			"title": "Guten Tag.",
+			"voicelineType": "1002",
+			"description": "Hmm ... Was soll ich zum Mittag essen, Fladenbrot oder Reis ... Oder lieber Bohnenmus?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 70011,
+			"title": "Guten Abend.",
+			"voicelineType": "1003",
+			"description": "Guten Abend! Heute habe ich eine Aufführung im Theater Zubayr. Willst du ein paar Tickets?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_greetingNight",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70012,
+			"title": "Gute Nacht.",
+			"voicelineType": "1004",
+			"description": "Denk daran, all deine Frustrationen vor dem Schlaf abzulassen, um eine bessere Nachtruhe zu bekommen. Wenn du möchtest, bin ich gerne dein Publikum.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 70013,
+			"title": "Über Nilou – Körpersprache",
+			"voicelineType": "2001",
+			"description": "Tanzen vermittelt Gefühle manchmal besser als Worte. Wenn du nicht weißt, was du sagen sollst, dann tanz einfach.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_idle"
+		},
+		{
+			"voicelineId": 70014,
+			"title": "Über Nilou – Tanz und Wissen",
+			"voicelineType": "2005",
+			"description": "Das Streben nach Wissen erfordert großes Talent. Viele Menschen bemühen sich ihr ganzes Leben, nur um am Ende erschöpft und frustriert zu sein ... Beim Tanzen ist es aber anders. Ohne die Technik eines Tanzes kennen zu müssen, kann man ihn beim Zuschauen auch genießen. Wenn die Zuschauer die Ästhetik und den Wert des Tanzes durch meine Tanzbewegungen verstehen könnten, würde ich umso glücklicher sein.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70015,
+			"title": "Über uns – Umgang mit Wut",
+			"voicelineType": "2003",
+			"description": "Schmollst du? Das ist aber nicht gut. Komm und folg mir. Zeichne zuerst mit der rechten Hand einen großen Kreis vor dir. Nimm dann all die negativen Gefühle aus deiner Brust heraus und leg sie in diesen Kreis. Schieb ihn dann so weit weg, wie du kannst! Na, fühlst du dich jetzt besser?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_close"
+		},
+		{
+			"voicelineId": 70016,
+			"title": "Über uns – Auf Abenteuer gehen",
+			"voicelineType": "2002",
+			"description": "Ich habe Sumeru noch nie verlassen, aber ... Ich möchte mit dir auf Abenteuer gehen. An neue Orte zu gehen, ist in Ordnung, solange ich mich anpassen kann ... Ähm, eine kurze Frage, an Inazumas Stränden gibt es doch keine riesigen Wenut, die plötzlich auf uns zu springen, oder?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70017,
+			"title": "Über das „Göttliche Auge“ ...",
+			"voicelineType": "3001",
+			"description": "Ich erhielt mein Göttliches Auge, als ich auf der Bühne debütierte. Ich dachte, dass die Göttin die Schönheit der von Menschen geschaffenen Kunst erkannt haben müssen, indem sie mein Zuschauer wurde.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_pendant",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70018,
+			"title": "Willst du mir etwas mitteilen?",
+			"voicelineType": "3002",
+			"description": "Es ist normal, dass harte Arbeit keine Ergebnisse bringt. Wie sehr ich mich auch bemühe, ich kann zum Beispiel die Lehren der Himmelskunde nicht verstehen. Wenn du nicht weiterkommst, kreise ein wenig mit deinem Kopf, schüttle ihn herum, das wird dich in eine neue Richtung führen.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_share_01"
+		},
+		{
+			"voicelineId": 70019,
+			"title": "Interessante Vorkommnisse – \\nTanz des Kristallschmetterlings",
+			"voicelineType": "3003",
+			"description": "Kristallschmetterlinge gibt es in allen erdenklichen Farben. Sie sind so schön, dass man sie bemerken muss. Wenn du leise nach einem greifst, beginnt er sofort einen eleganten und flinken Tanz und fliegt von dir weg. Oh, wenn ich fliegen könnte, hätte ich den Tanz des Kristallschmetterlings gelernt.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_pref_gift_01"
+		},
+		{
+			"voicelineId": 70020,
+			"title": "Interessante Vorkommnisse – Padisarah",
+			"voicelineType": "3004",
+			"description": "Wenn die Blumengöttin tanzte, blühten unter ihren Füßen echte Padisarah. Oh, das klingt nach einer so schönen Szene. Ich würde sie gerne sehen.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_pref_gift_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Nach Abschluss von „Des Morgens tausend Rosen erwachen“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3012
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70021,
+			"title": "Über Cyno ...",
+			"voicelineType": "4001",
+			"description": "Ich habe nicht gerne mit Leuten von der Akademie zu tun, weil sie meinen Künsten nicht allzu wohlgesonnen sind. Ich frage mich oft, was sie tun, wenn sie sich langweilen ... Was? Cyno spielt „Geniale Beschwörung“? Ich kann es nicht glauben ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_teammate_cyno_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70022,
+			"title": "Über Tighnari ...",
+			"voicelineType": "4002",
+			"description": "Ich habe gehört, dass er ein wirklich begabter Botaniker ist. Er muss gut darin sein, Pilze zu unterscheiden. Zumindest müsste er sich nie Sorgen machen, einen Giftigen zu essen ... Ich bin so neidisch.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_teammate_tighnari_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70023,
+			"title": "Über Collei ...",
+			"voicelineType": "4003",
+			"description": "Manchmal kommt sie, um sich meine Aufführungen anzusehen. Sie ist eine wirklich fleißige auszubildende Waldhüterin. Einmal hat sie mich davor gewarnt, mich zu verlaufen. Was hat sie damit gemeint? Ich habe mich noch nie verirrt ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_teammate_collei_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70024,
+			"title": "Über Kaveh ...",
+			"voicelineType": "4004",
+			"description": "Ich habe gehört, dass er derjenige war, der den herrlichen Palast Alcazarzaray gebaut hat. Er muss eine wunderbare Zeit gehabt haben, um ein solches Meisterwerk zu schaffen, so wie ich mitten im Tanztraining bin. Allein der Gedanke daran, für alle zu tanzen, gibt mir so viel Freude und Motivation.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_teammate_kaveh_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70025,
+			"title": "Über Dehya ...",
+			"voicelineType": "4005",
+			"description": "Kaum zu glauben, dass in letzter Zeit so viele Dinge passiert sind ... Ich wollte ein paar gute Geschenke für Dehya und Dunyarzad aussuchen, aber ich kann mich einfach nicht entscheiden. Jeder auf dem Großen Basar hat mir viele Vorschläge gegeben, aber wenn ich sie alle annehmen würde, wäre das zu viel ... Was soll ich bloß tun?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_teammate_dehya_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Des Morgens tausend Rosen erwachen“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3012
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70026,
+			"title": "Über Dori ...",
+			"voicelineType": "4006",
+			"description": "Die großzügige Händlerin Dori hat mich schon einmal tanzen sehen. Ich erinnere mich, dass sie einmal mit Herrn Zubayr gesprochen hat und dann nicht mehr zurückgekommen ist. Was ist passiert? ... Was? Sie wollte, dass ich auf Tournee durch Teyvat gehe? Auf keinen Fall, Herr Zubayr hätte das bestimmt abgelehnt! ... Oder? Bitte sag mir, dass er das getan hätte ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_teammate_dori_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70027,
+			"title": "Über die Niedere Herrin Kusanali ...",
+			"voicelineType": "4007",
+			"description": "Die Menschen auf dem Großen Basar lieben die Niedere Herrin Kusanali. Ich würde gern ihre Meinung zu meinem Sabzeruz-Tanz hören ... Nein, nein, nein, vergiss es ... Wenn sie wirklich anwesend wäre, würde ich Lampenfieber bekommen ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_teammate_nahida_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Nach Abschluss von „Des Morgens tausend Rosen erwachen“ verfügbar",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						3012
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70028,
+			"title": "Ich will mehr über Nilou erfahren I",
+			"voicelineType": "5001",
+			"description": "Oh! Tut mir leid, ich versuche zu entscheiden, was ich später essen soll, und bin in Gedanken versunken. Und ja, brauchst du vielleicht Hilfe von mir?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_friendship_01"
+		},
+		{
+			"voicelineId": 70029,
+			"title": "Ich will mehr über Nilou erfahren II",
+			"voicelineType": "5002",
+			"description": "Meine Meisterin hat mir alles beigebracht, was es über das Tanzen zu wissen gibt. Aber sie sagte, das Wichtigste sei, Gefühl in den Tanz einzubringen. Damit kann man seine Zuschauer berühren und ihnen Emotionen vermitteln. Nur wenn man etwas fühlt, kann man es auch ausdrücken, das heißt, um Schönheit auszudrücken, muss ich erst einmal zur Verkörperung der Schönheit werden.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 3 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70030,
+			"title": "Ich will mehr über Nilou erfahren III",
+			"voicelineType": "5003",
+			"description": "Manchmal erhalte ich Briefe von Zuschauern, die sagen, dass mein Tanz sie erheitert hat. Ich teile diese Freude immer mit allen im Theater Zubayr. Auch wenn ich diejenige bin, die das Publikum auf der Bühne sieht, ist es der gemeinsamen Anstrengung aller zu verdanken, dass ich überhaupt auf der Bühne stehen kann.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70031,
+			"title": "Ich will mehr über Nilou erfahren IV",
+			"voicelineType": "5004",
+			"description": "Auf dem Großen Basar finden gelegentlich auch akrobatische Darbietungen statt, zum Beispiel Jonglieren. Ich habe schon mal versucht zu jonglieren, aber ich schaffe es einfach nicht. Herr Zubayr und alle anderen haben sich über mich kaputt gelacht. Alle dachten, meine Körperkoordination sei hervorragend ... Aber da wurde meine Schwäche aufgedeckt.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 5 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70032,
+			"title": "Ich will mehr über Nilou erfahren V",
+			"voicelineType": "5005",
+			"description": "Jemand hat mir einmal gesagt, dass ich wie eine leuchtende Oase sei, die anderen Freude und Wärme bringt. Ich habe mich gefreut, das zu hören. Aber mein Streben und was ich den Menschen zeigen möchte, sind viel mehr als das. Nachdem ich so viel Zeit mit dir verbracht habe, verstehe ich endlich, wie es sich anfühlt, wenn sich jemand um dich kümmert und für dich sorgt. Nun ... Ich denke, dass du meine Oase bist.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Freundschaftsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70033,
+			"title": "Nilous Hobbys ...",
+			"voicelineType": "6001",
+			"description": "„Mein Leben ist Tanz!“, nein, „Tanz ist mein Leben!“ Tja, welcher Satz ist denn besser? Ich bin wirklich nicht dafür geschaffen, logisch nachzudenken. Ich werde auf jeden Fall weiter tanzen. Mit meinem Auftritt möchte ich die Schönheit der Kunst mehr Menschen nahe bringen.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_pref_hobby"
+		},
+		{
+			"voicelineId": 70034,
+			"title": "Nilous Sorgen ...",
+			"voicelineType": "6002",
+			"description": "Ich kann giftige Pilze immer noch nicht von ungiftigen unterscheiden ... Anscheinend verät die Farbe nicht viel. Jeder Pilz, egal ob farbenfroh oder unscheinbar, kann giftig sein. Nun, ich scheine es zu verstehen, und ich scheine nichts zu verstehen ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_dialog_annoyed"
+		},
+		{
+			"voicelineId": 70035,
+			"title": "Was sie so mag ...",
+			"voicelineType": "6005",
+			"description": "Süßigkeiten sorgen für gute Laune! Die meisten Menschen in Sumeru lieben sie. Willst du welche probieren? Ich kann dir ein paar empfehlen.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_pref_foodLike_01"
+		},
+		{
+			"voicelineId": 70036,
+			"title": "Was sie nicht mag ...",
+			"voicelineType": "6004",
+			"description": "Es fällt mir schwer, Pilze zu essen, hauptsächlich weil ich Angst habe ... Aber nicht die Art von Angst, bei der man weglaufen möchte! Als ich klein war, habe ich einmal einen giftigen Pilz gegessen und lag dann tagelang im Bett ... Wenn du also eines von Sumerus Pilzgerichten essen willst, vergewissere dich bitte, dass alle Pilze darin ungiftig sind!",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_pref_foodDislike"
+		},
+		{
+			"voicelineId": 70037,
+			"title": "Geschenk erhalten I",
+			"voicelineType": "6007",
+			"description": "So fühlt es sich wohl an, wenn die Aromen auf der Zunge tanzen ... Wie wunderbar!",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_spice_pref_01"
+		},
+		{
+			"voicelineId": 70038,
+			"title": "Geschenk erhalten II",
+			"voicelineType": "6008",
+			"description": "Danke. Du musst viel Liebe und Mühe in dieses Gericht gesteckt haben, so wie ich beim Tanztraining.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_spice_normal_01"
+		},
+		{
+			"voicelineId": 70039,
+			"title": "Geschenk erhalten III",
+			"voicelineType": "6009",
+			"description": "Tut mir leid, in letzter Zeit habe ich kaum Appetit. Bitte sei nicht böse auf mich.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_spice_dislike_01"
+		},
+		{
+			"voicelineId": 70040,
+			"title": "Geburtstag ...",
+			"voicelineType": "7001",
+			"description": "Herzlichen Glückwunsch zum Geburtstag! Ich habe einen neuen Tanz gelernt, den ich dir zeigen möchte. Hmm, bin ich nervös? *seufz* Du hast mich durchschaut. Es ist weil ... Ich wollte meine Gefühle in die Bewegungen einfließen lassen, aber dann wurde die Choreografie immer schwieriger ... Wie auch immer, ich wünsche dir, dass dein Leben immer voller Wunder und Glück sein wird.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 70041,
+			"title": "Gedanken über den Aufstieg – Beginn",
+			"voicelineType": "8001",
+			"description": "Oh? Was ist das für ein Gefühl ...?",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 1 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70042,
+			"title": "Gedanken über den Aufstieg – Fortschritt",
+			"voicelineType": "8002",
+			"description": "Mein Körper hat sich gestreckt, und ich kann besser tanzen als je zuvor.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_starUp_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 2 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70043,
+			"title": "Gedanken über den Aufstieg – Höhepunkt",
+			"voicelineType": "8003",
+			"description": "Ich fühle mich, als läge ich auf dem Rücken eines riesigen Anemo-Schleims, so leicht und gemütlich.",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 4 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 70044,
+			"title": "Gedanken über den Aufstieg – Ende",
+			"voicelineType": "8004",
+			"description": "Ich liebe es, Zeit mit dir zu verbringen. Ich weiß nicht warum, aber es fühlt sich an, als würden mir gleich die Schmetterlinge aus der Brust fliegen. Oh, lass mich für dich tanzen ...",
+			"voicefile": "VO_friendship/VO_nilou/vo_nilou_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Ab Aufstiegsstufe 6 verfügbar",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 70045,
+			"title": "Elementarfähigkeit I",
+			"voicelineType": "100001",
+			"description": "Hier bin ich.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_skill1_01"
+		},
+		{
+			"voicelineId": 70046,
+			"title": "Elementarfähigkeit II",
+			"voicelineType": "100002",
+			"description": "Bereit zu tanzen.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_skill1_02"
+		},
+		{
+			"voicelineId": 70047,
+			"title": "Elementarfähigkeit III",
+			"voicelineType": "100003",
+			"description": "Ich tue mein Bestes.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_skill1_03"
+		},
+		{
+			"voicelineId": 70048,
+			"title": "Spezialfähigkeit I",
+			"voicelineType": "200001",
+			"description": "Tanz mit den Wellen.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_skill3_01"
+		},
+		{
+			"voicelineId": 70049,
+			"title": "Spezialfähigkeit II",
+			"voicelineType": "200002",
+			"description": "Sieh mich an.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_skill3_02"
+		},
+		{
+			"voicelineId": 70050,
+			"title": "Spezialfähigkeit III",
+			"voicelineType": "200003",
+			"description": "Dieser Tanz ist für dich.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_skill3_03"
+		},
+		{
+			"voicelineId": 70051,
+			"title": "Truhe öffnen I",
+			"voicelineType": "300001",
+			"description": "Alles für dich.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_chest_open_01"
+		},
+		{
+			"voicelineId": 70052,
+			"title": "Truhe öffnen II",
+			"voicelineType": "300002",
+			"description": "Ich helfe dir beim Einpacken.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_chest_open_02"
+		},
+		{
+			"voicelineId": 70053,
+			"title": "Truhe öffnen III",
+			"voicelineType": "300003",
+			"description": "Was für eine schöne Überraschung!",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_chest_open_03"
+		},
+		{
+			"voicelineId": 70054,
+			"title": "Niedrige LP I",
+			"voicelineType": "410001",
+			"description": "Mach dir keine Sorgen um mich ...",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_less30_01"
+		},
+		{
+			"voicelineId": 70055,
+			"title": "Niedrige LP II",
+			"voicelineType": "410002",
+			"description": "Wie lästig ...",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_less30_02"
+		},
+		{
+			"voicelineId": 70056,
+			"title": "Niedrige LP III",
+			"voicelineType": "410003",
+			"description": "Atme schnell tief ein ...",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_less30_03"
+		},
+		{
+			"voicelineId": 70057,
+			"title": "Verbündeter hat niedrige LP I",
+			"voicelineType": "400001",
+			"description": "Keine Sorge, ich komme gleich.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 70058,
+			"title": "Verbündeter hat niedrige LP II",
+			"voicelineType": "400002",
+			"description": "Lass mich!",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 70059,
+			"title": "Ohnmächtig I",
+			"voicelineType": "500001",
+			"description": "Der Vorhang ... fällt ...",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_die_01"
+		},
+		{
+			"voicelineId": 70060,
+			"title": "Ohnmächtig II",
+			"voicelineType": "500002",
+			"description": "Der Tanz ... kann nicht weitergehen ...",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_die_02"
+		},
+		{
+			"voicelineId": 70061,
+			"title": "Ohnmächtig III",
+			"voicelineType": "500003",
+			"description": "Schönheit ... Verlass mich nicht ...",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_life_die_03"
+		},
+		{
+			"voicelineId": 70062,
+			"title": "Schweren Treffer erlitten I",
+			"voicelineType": "910001",
+			"description": "Ah, ich muss mein Gleichgewicht halten ...",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 70063,
+			"title": "Schweren Treffer erlitten II",
+			"voicelineType": "910002",
+			"description": "Es tut ... ein bisschen weh.",
+			"voicefile": "VO_gameplay/VO_nilou/vo_nilou_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 70064,
+			"title": "Truppenbeitritt I",
+			"voicelineType": "600001",
+			"description": "Wo tanzen wir heute?",
+			"voicefile": "VO_teamJoin/vo_nilou_teamJoin_01"
+		},
+		{
+			"voicelineId": 70065,
+			"title": "Truppenbeitritt II",
+			"voicelineType": "600002",
+			"description": "Kann ich dir helfen?",
+			"voicefile": "VO_teamJoin/vo_nilou_teamJoin_02"
+		},
+		{
+			"voicelineId": 70066,
+			"title": "Truppenbeitritt III",
+			"voicelineType": "600003",
+			"description": "Oh ... du rufst nach mir? Ich komme!",
+			"voicefile": "VO_teamJoin/vo_nilou_teamJoin_03"
+		}
+	]
+}
