@@ -30,12 +30,13 @@ function combineData() {
 			mydata[lang][folder] = {};
 			myindex[lang][folder] = require(`../../src/data/index/${lang}/${folder}.json`);
 
-			fs.readdirSync(`../../src/data/${lang}/${folder}`).forEach(filename => {
-				if(!filename.endsWith('.json')) return;
-				filename = filename.substring(0, filename.length-5);
-				mydata[lang][folder][filename] = require(`../../src/data/${lang}/${folder}/${filename}`);
-
-			});
+			fs.readdirSync(`../../src/data/${lang}/${folder}`)
+				.filter(filename => filename.endsWith('.json'))
+				.map(filename => filename.substring(0, filename.length-5))
+				.sort()
+				.forEach(filename => {
+					mydata[lang][folder][filename] = require(`../../src/data/${lang}/${folder}/${filename}`);
+				});
 		}
 	}
 	for(const folder of specificfolders) {
