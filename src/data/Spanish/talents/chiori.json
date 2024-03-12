@@ -1,0 +1,244 @@
+{
+	"id": 9401,
+	"name": "Chiori",
+	"combat1": {
+		"name": "Ataque Normal: Técnica tejecorazones",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nRealiza hasta 4 ataques consecutivos con espada.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"description": "Ataque Normal\nRealiza hasta 4 ataques consecutivos con espada.\n\nAtaque Cargado\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P} + {param4:F1P}",
+				"Daño de 4.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P} + {param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Caricia de mangas",
+		"descriptionRaw": "Arremete a gran velocidad hacia delante con un movimiento grácil como la seda y, tras ello, invoca a su lado a la robomuñeca Tamoto y ejecuta un ataque ascendente que inflige <color=#FFE699FF>Daño Geo en el AdE</color> a los enemigos cercanos en función del ATQ y la DEF de Chiori.\nEsta habilidad se libera de manera distinta al mantener pulsado.\n\n<color=#FFD780FF>Mantener pulsado</color>\nApunta para ajustar la dirección en la que arremete.\n\n<color=#FFD780FF>Tamoto</color>\n·Ejecuta un tajo cada cierto tiempo contra los enemigos cercanos que inflige <color=#FFE699FF>Daño Geo en el AdE</color> en función del ATQ y la DEF de Chiori.\n·Si mientras Tamoto está activa se genera una <color=#FFE699FF>creación Geo</color> o ya hay alguna en las cercanías, invoca otra Tamoto al lado de tu personaje en uso. Como máximo, solo se puede crear una Tamoto adicional de esta forma, y su duración se calculará de manera independiente.\n\n<i>“Bordados lilas,\nmangas ornamentadas,\naves borrachas”.</i>",
+		"description": "Arremete a gran velocidad hacia delante con un movimiento grácil como la seda y, tras ello, invoca a su lado a la robomuñeca Tamoto y ejecuta un ataque ascendente que inflige Daño Geo en el AdE a los enemigos cercanos en función del ATQ y la DEF de Chiori.\nEsta habilidad se libera de manera distinta al mantener pulsado.\n\nMantener pulsado\nApunta para ajustar la dirección en la que arremete.\n\nTamoto\n·Ejecuta un tajo cada cierto tiempo contra los enemigos cercanos que inflige Daño Geo en el AdE en función del ATQ y la DEF de Chiori.\n·Si mientras Tamoto está activa se genera una creación Geo o ya hay alguna en las cercanías, invoca otra Tamoto al lado de tu personaje en uso. Como máximo, solo se puede crear una Tamoto adicional de esta forma, y su duración se calculará de manera independiente.",
+		"flavorText": "“Bordados lilas,\nmangas ornamentadas,\naves borrachas”.",
+		"attributes": {
+			"labels": [
+				"Daño de Tamoto|{param1:P} de ATQ + {param2:P} de DEF",
+				"Duración de Tamoto|{param3:F1} s",
+				"Intervalo de ataque de Tamoto|{param4:F1} s",
+				"Daño de ataque ascendente|{param5:P} de ATQ + {param6:P} de DEF",
+				"TdE|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Filos gemelos: Desenvaine alígero",
+		"descriptionRaw": "Desenvaina dos espadas para ejecutar un feroz tajo de maestra costurera que inflige <color=#FFE699FF>Daño Geo en el AdE</color> en función del ATQ y la DEF de Chiori.\n\n<i>“Sigue tus ideales y las leyes del mundo se volverán más claras”.</i>",
+		"description": "Desenvaina dos espadas para ejecutar un feroz tajo de maestra costurera que inflige Daño Geo en el AdE en función del ATQ y la DEF de Chiori.",
+		"flavorText": "“Sigue tus ideales y las leyes del mundo se volverán más claras”.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:P} de ATQ + {param2:P} de DEF",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Hecho a medida",
+		"descriptionRaw": "#Durante un breve periodo de tiempo tras ejecutar el ataque ascendente de <color=#FFD780FF>Caricia de mangas</color>, se producen distintos efectos dependiendo de lo que se haga después de realizar dicho ataque: si {LAYOUT_MOBILE#tocas}{LAYOUT_PC#pulsas una vez}{LAYOUT_PS#pulsas una vez} la Habilidad Elemental, se activa el efecto de “bordado”; si {LAYOUT_MOBILE#tocas}{LAYOUT_PC#haces clic}{LAYOUT_PS#pulsas} para ejecutar un Ataque Normal, se activa el efecto de “costura”.\n\n<color=#FFD780FF>Bordado</color>\n·Cambia a tu siguiente personaje.\n·Aplica a todos tus personajes del equipo el efecto de “agudeza”, de manera que cuando tu personaje en uso golpea a un enemigo cercano con un Ataque Normal, Cargado o Descendente, Tamoto ejecutará en la ubicación de dicho enemigo un ataque coordinado que inflige <color=#FFE699FF>Daño Geo en el AdE</color> en una cantidad equivalente al 100% del daño del ataque ascendente de “Caricia de mangas”. El daño infligido de esta manera se considera daño de Habilidad Elemental.\n·El efecto de agudeza dura 8{NON_BREAK_SPACE}s y Tamoto solo puede ejecutar un ataque coordinado cada 2{NON_BREAK_SPACE}s. Mientras agudeza esté activa, como máximo se podrán ejecutar 2 ataques coordinados.\n\n<color=#FFD780FF>Costura</color>\nChiori se <color=#FFE699FF>imbuye del elemento Geo</color> durante 5{NON_BREAK_SPACE}s.\n\nSi Chiori está en uso y no vuelves a {LAYOUT_MOBILE#tocar}{LAYOUT_PC#pulsar una vez}{LAYOUT_PS#pulsar una vez} la Habilidad Elemental o a ejecutar un Ataque Normal durante el breve periodo de tiempo tras efectuar el ataque ascendente de “Caricia de mangas”, se activará directamente el efecto de “costura”.",
+		"description": "Durante un breve periodo de tiempo tras ejecutar el ataque ascendente de Caricia de mangas, se producen distintos efectos dependiendo de lo que se haga después de realizar dicho ataque: si pulsas una vez la Habilidad Elemental, se activa el efecto de “bordado”; si haces clic para ejecutar un Ataque Normal, se activa el efecto de “costura”.\n\nBordado\n·Cambia a tu siguiente personaje.\n·Aplica a todos tus personajes del equipo el efecto de “agudeza”, de manera que cuando tu personaje en uso golpea a un enemigo cercano con un Ataque Normal, Cargado o Descendente, Tamoto ejecutará en la ubicación de dicho enemigo un ataque coordinado que inflige Daño Geo en el AdE en una cantidad equivalente al 100% del daño del ataque ascendente de “Caricia de mangas”. El daño infligido de esta manera se considera daño de Habilidad Elemental.\n·El efecto de agudeza dura 8 s y Tamoto solo puede ejecutar un ataque coordinado cada 2 s. Mientras agudeza esté activa, como máximo se podrán ejecutar 2 ataques coordinados.\n\nCostura\nChiori se imbuye del elemento Geo durante 5 s.\n\nSi Chiori está en uso y no vuelves a pulsar una vez la Habilidad Elemental o a ejecutar un Ataque Normal durante el breve periodo de tiempo tras efectuar el ataque ascendente de “Caricia de mangas”, se activará directamente el efecto de “costura”."
+	},
+	"passive2": {
+		"name": "Retoque final",
+		"descriptionRaw": "#Cuando un personaje cercano del equipo genera una <color=#FFE699FF>creación Geo</color>, Chiori obtiene un 20% de <color=#FFE699FF>Bono de Daño Geo</color> durante 20{NON_BREAK_SPACE}s.",
+		"description": "Cuando un personaje cercano del equipo genera una creación Geo, Chiori obtiene un 20% de Bono de Daño Geo durante 20 s."
+	},
+	"passive3": {
+		"name": "Hermosa figura",
+		"descriptionRaw": "Si cualquier personaje del equipo lleva equipado un vestuario distinto al vestuario por defecto o un planeador distinto a las Alas del principiante, tus personajes del equipo obtienen el efecto de “paso ligero”, de manera que su Vel. Movimiento aumenta en un 10%.\nEste efecto no se activará en dominios, Dominios de la cruzada y la Espiral del Abismo, y no se puede acumular con otros efectos de paso ligero.",
+		"description": "Si cualquier personaje del equipo lleva equipado un vestuario distinto al vestuario por defecto o un planeador distinto a las Alas del principiante, tus personajes del equipo obtienen el efecto de “paso ligero”, de manera que su Vel. Movimiento aumenta en un 10%.\nEste efecto no se activará en dominios, Dominios de la cruzada y la Espiral del Abismo, y no se puede acumular con otros efectos de paso ligero."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104326,
+				"name": "Enseñanzas de la luz",
+				"count": 3
+			},
+			{
+				"id": 112053,
+				"name": "Caparazón espectral",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104327,
+				"name": "Guía de la luz",
+				"count": 2
+			},
+			{
+				"id": 112054,
+				"name": "Corazón espectral",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104327,
+				"name": "Guía de la luz",
+				"count": 4
+			},
+			{
+				"id": 112054,
+				"name": "Corazón espectral",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104327,
+				"name": "Guía de la luz",
+				"count": 6
+			},
+			{
+				"id": 112054,
+				"name": "Corazón espectral",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104327,
+				"name": "Guía de la luz",
+				"count": 9
+			},
+			{
+				"id": 112054,
+				"name": "Corazón espectral",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofía de la luz",
+				"count": 4
+			},
+			{
+				"id": 112055,
+				"name": "Núcleo espectral",
+				"count": 4
+			},
+			{
+				"id": 113054,
+				"name": "Hilo de seda deslucido",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofía de la luz",
+				"count": 6
+			},
+			{
+				"id": 112055,
+				"name": "Núcleo espectral",
+				"count": 6
+			},
+			{
+				"id": 113054,
+				"name": "Hilo de seda deslucido",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofía de la luz",
+				"count": 12
+			},
+			{
+				"id": 112055,
+				"name": "Núcleo espectral",
+				"count": 9
+			},
+			{
+				"id": 113054,
+				"name": "Hilo de seda deslucido",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofía de la luz",
+				"count": 16
+			},
+			{
+				"id": 112055,
+				"name": "Núcleo espectral",
+				"count": 12
+			},
+			{
+				"id": 113054,
+				"name": "Hilo de seda deslucido",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

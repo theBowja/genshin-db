@@ -1,0 +1,244 @@
+{
+	"id": 9401,
+	"name": "Chiori",
+	"combat1": {
+		"name": "Normal Attack: Weaving Blade",
+		"descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nMelancarkan hingga 4 serangan berturut-turut.\n\n<color=#FFD780FF>Charged Attack</color>\nMengonsumsi sejumlah Stamina untuk melancarkan dua tebasan pedang.\n\n<color=#FFD780FF>Plunging Attack</color>\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"description": "Normal Attack\nMelancarkan hingga 4 serangan berturut-turut.\n\nCharged Attack\nMengonsumsi sejumlah Stamina untuk melancarkan dua tebasan pedang.\n\nPlunging Attack\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}+{param4:F1P}",
+				"DMG Tahap 4|{param5:F1P}",
+				"DMG Charged Attack|{param6:F1P}+{param7:F1P}",
+				"Konsumsi Stamina Charged Attack|{param8:F1}",
+				"DMG Selama Plunging|{param9:F1P}",
+				"DMG Plunging Attack Rendah/Tinggi|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Fluttering Hasode",
+		"descriptionRaw": "Menerjang dengan cepat dengan tarian selembut sutra. Saat terjangan berakhir, akan memanggil \"Tamoto\" si boneka automaton dan melancarkan serangan ke atas, mengakibatkan <color=#FFE699FF>Geo DMG Area</color> yang didasarkan pada ATK dan DEF Chiori.\nSaat ditahan, akan melancarkan serangan dengan cara yang berbeda.\n\n<color=#FFD780FF>Mode Tahan</color>\nMemasuki mode membidik untuk menyesuaikan arah terjangan.\n\n<color=#FFD780FF>Tamoto</color>\n·Menebas musuh di sekitar secara bertahap, mengakibatkan <color=#FFE699FF>Geo DMG Area</color> yang didasarkan pada ATK dan DEF Chiori;\n·Selama aktif, jika ada <color=#FFE699FF>Geo Construct</color> di sekitar, atau ada <color=#FFE699FF>Geo Construct</color> yang diciptakan di sekitar, maka akan memanggil satu Tamoto tambahan di sisi Karakter aktif saat ini. Maksimum satu Tamoto tambahan yang bisa dipanggil dengan cara ini, dan durasinya dihitung secara terpisah.\n\n<i>\"Sakura merah mewarnai brokatnya, sisa wanginya yang terselip di lengan baju, bahkan bisa membuat burung oriole mabuk.\"</i>",
+		"description": "Menerjang dengan cepat dengan tarian selembut sutra. Saat terjangan berakhir, akan memanggil \"Tamoto\" si boneka automaton dan melancarkan serangan ke atas, mengakibatkan Geo DMG Area yang didasarkan pada ATK dan DEF Chiori.\nSaat ditahan, akan melancarkan serangan dengan cara yang berbeda.\n\nMode Tahan\nMemasuki mode membidik untuk menyesuaikan arah terjangan.\n\nTamoto\n·Menebas musuh di sekitar secara bertahap, mengakibatkan Geo DMG Area yang didasarkan pada ATK dan DEF Chiori;\n·Selama aktif, jika ada Geo Construct di sekitar, atau ada Geo Construct yang diciptakan di sekitar, maka akan memanggil satu Tamoto tambahan di sisi Karakter aktif saat ini. Maksimum satu Tamoto tambahan yang bisa dipanggil dengan cara ini, dan durasinya dihitung secara terpisah.",
+		"flavorText": "\"Sakura merah mewarnai brokatnya, sisa wanginya yang terselip di lengan baju, bahkan bisa membuat burung oriole mabuk.\"",
+		"attributes": {
+			"labels": [
+				"DMG Tamoto|{param1:P} ATK+{param2:P} DEF",
+				"Durasi Tamoto|{param3:F1} dtk",
+				"Jeda Serangan Tamoto|{param4:F1} dtk",
+				"DMG Serangan ke Atas|{param5:P} ATK+{param6:P} DEF",
+				"Cooldown|{param7:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Hiyoku: Twin Blades",
+		"descriptionRaw": "Menarik kedua pedang dari sarungnya, mengayunkan sebuah tebasan tajam dengan gaya menjahit, mengakibatkan <color=#FFE699FF>Geo DMG Area</color> yang didasarkan pada ATK dan DEF Chiori.\n\n<i>\"Hanya satu prinsip yang dibutuhkan untuk menembus seluruh kebenaran\".</i>",
+		"description": "Menarik kedua pedang dari sarungnya, mengayunkan sebuah tebasan tajam dengan gaya menjahit, mengakibatkan Geo DMG Area yang didasarkan pada ATK dan DEF Chiori.",
+		"flavorText": "\"Hanya satu prinsip yang dibutuhkan untuk menembus seluruh kebenaran\".",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:P} ATK+{param2:P} DEF",
+				"Cooldown|{param3:F1} dtk",
+				"Konsumsi Energy|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Tailor-Made",
+		"descriptionRaw": "Dalam waktu singkat setelah melancarkan serangan ke atas dari <color=#FFD780FF>Fluttering Hasode</color>, akan menghasilkan efek yang berbeda berdasarkan pengoperasian lanjutannya: Menekan tombol Elemental Skill akan memicu Tapestry; Menekan Normal Attack akan memicu Tailoring.\n\n<color=#FFD780FF>Tapestry</color>\n·Mengganti Karakter dan membuat Karakter selanjutnya memasuki medan pertempuran;\n·Memberikan Seize the Moment kepada seluruh Karakter di dalam party: Saat Normal Attack, Charged Attack, atau Plunging Attack Karakter aktif di dalam party mengenai musuh di sekitar, maka \"Tamoto\" akan melancarkan serangan terkoordinasi dan mengakibatkan <color=#FFE699FF>Geo DMG Area</color> di posisi musuh yang setara dengan 100% DMG serangan ke atas dari Fluttering Hasode. DMG yang diakibatkan dengan cara ini dianggap sebagai DMG Elemental Skill;\n·Seize the Moment berlangsung selama 8 detik, serangan terkoordinasi \"Tamoto\" dapat terpicu maksimum sekali setiap 2 detik. Dalam satu kali durasi Seize the Moment, maksimum dapat memicu 2 kali serangan terkoordinasi ini.\n\n<color=#FFD780FF>Tailoring</color>\n·Chiori mendapatkan <color=#FFE699FF>Geo Infusion</color> selama 5 detik.\n\nSaat Chiori berada di medan pertempuran, jika tidak menekan Normal Attack atau tombol Elemental Skill lagi dalam waktu singkat setelah melancarkan serangan ke atas dari Fluttering Hasode, maka efek lanjutan Tailoring yang akan terpicu.",
+		"description": "Dalam waktu singkat setelah melancarkan serangan ke atas dari Fluttering Hasode, akan menghasilkan efek yang berbeda berdasarkan pengoperasian lanjutannya: Menekan tombol Elemental Skill akan memicu Tapestry; Menekan Normal Attack akan memicu Tailoring.\n\nTapestry\n·Mengganti Karakter dan membuat Karakter selanjutnya memasuki medan pertempuran;\n·Memberikan Seize the Moment kepada seluruh Karakter di dalam party: Saat Normal Attack, Charged Attack, atau Plunging Attack Karakter aktif di dalam party mengenai musuh di sekitar, maka \"Tamoto\" akan melancarkan serangan terkoordinasi dan mengakibatkan Geo DMG Area di posisi musuh yang setara dengan 100% DMG serangan ke atas dari Fluttering Hasode. DMG yang diakibatkan dengan cara ini dianggap sebagai DMG Elemental Skill;\n·Seize the Moment berlangsung selama 8 detik, serangan terkoordinasi \"Tamoto\" dapat terpicu maksimum sekali setiap 2 detik. Dalam satu kali durasi Seize the Moment, maksimum dapat memicu 2 kali serangan terkoordinasi ini.\n\nTailoring\n·Chiori mendapatkan Geo Infusion selama 5 detik.\n\nSaat Chiori berada di medan pertempuran, jika tidak menekan Normal Attack atau tombol Elemental Skill lagi dalam waktu singkat setelah melancarkan serangan ke atas dari Fluttering Hasode, maka efek lanjutan Tailoring yang akan terpicu."
+	},
+	"passive2": {
+		"name": "The Finishing Touch",
+		"descriptionRaw": "Saat Karakter di dalam party di sekitar menciptakan <color=#FFE699FF>Geo Construct</color>, Chiori mendapatkan 20% <color=#FFE699FF>Geo DMG Bonus</color> yang berlangsung 20 detik.",
+		"description": "Saat Karakter di dalam party di sekitar menciptakan Geo Construct, Chiori mendapatkan 20% Geo DMG Bonus yang berlangsung 20 detik."
+	},
+	"passive3": {
+		"name": "Brocaded Collar's Beauteous Silhouette",
+		"descriptionRaw": "Saat Karakter apa pun di dalam party mengenakan kostum selain kostum semula, atau saat wind glider yang dikenakan bukan merupakan Wings of First Flight, Karakter sendiri di dalam party mendapatkan efek peningkatan kecepatan: Movement SPD meningkat 10%.\nEfek ini tidak aktif dalam Domain, Domain Trounce, atau Spiral Abyss. Efek peningkatan kecepatan tidak dapat ditumpuk.",
+		"description": "Saat Karakter apa pun di dalam party mengenakan kostum selain kostum semula, atau saat wind glider yang dikenakan bukan merupakan Wings of First Flight, Karakter sendiri di dalam party mendapatkan efek peningkatan kecepatan: Movement SPD meningkat 10%.\nEfek ini tidak aktif dalam Domain, Domain Trounce, atau Spiral Abyss. Efek peningkatan kecepatan tidak dapat ditumpuk."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104326,
+				"name": "Teachings of Light",
+				"count": 3
+			},
+			{
+				"id": 112053,
+				"name": "Spectral Husk",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104327,
+				"name": "Guide to Light",
+				"count": 2
+			},
+			{
+				"id": 112054,
+				"name": "Spectral Heart",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104327,
+				"name": "Guide to Light",
+				"count": 4
+			},
+			{
+				"id": 112054,
+				"name": "Spectral Heart",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104327,
+				"name": "Guide to Light",
+				"count": 6
+			},
+			{
+				"id": 112054,
+				"name": "Spectral Heart",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104327,
+				"name": "Guide to Light",
+				"count": 9
+			},
+			{
+				"id": 112054,
+				"name": "Spectral Heart",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophies of Light",
+				"count": 4
+			},
+			{
+				"id": 112055,
+				"name": "Specter Nucleus",
+				"count": 4
+			},
+			{
+				"id": 113054,
+				"name": "Lightless Silk String",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophies of Light",
+				"count": 6
+			},
+			{
+				"id": 112055,
+				"name": "Specter Nucleus",
+				"count": 6
+			},
+			{
+				"id": 113054,
+				"name": "Lightless Silk String",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophies of Light",
+				"count": 12
+			},
+			{
+				"id": 112055,
+				"name": "Specter Nucleus",
+				"count": 9
+			},
+			{
+				"id": 113054,
+				"name": "Lightless Silk String",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophies of Light",
+				"count": 16
+			},
+			{
+				"id": 112055,
+				"name": "Specter Nucleus",
+				"count": 12
+			},
+			{
+				"id": 113054,
+				"name": "Lightless Silk String",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

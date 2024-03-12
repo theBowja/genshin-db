@@ -1,0 +1,244 @@
+{
+	"id": 9401,
+	"name": "Chiori",
+	"combat1": {
+		"name": "Standardangriff: Webende Klinge",
+		"descriptionRaw": "<color=#FFD780FF>Standardangriff</color>\nFührt bis zu 4 Schwerthiebe hintereinander aus.\n\n<color=#FFD780FF>Heftiger Schlag</color>\nVerbraucht eine gewisse Menge Ausdauer und schwingt das Schwert zweimal schnell nach vorn.\n\n<color=#FFD780FF>Angriff aus dem Fall</color>\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"description": "Standardangriff\nFührt bis zu 4 Schwerthiebe hintereinander aus.\n\nHeftiger Schlag\nVerbraucht eine gewisse Menge Ausdauer und schwingt das Schwert zweimal schnell nach vorn.\n\nAngriff aus dem Fall\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P} + {param4:F1P}",
+				"SCH Phase 4|{param5:F1P}",
+				"SCH heftiger Schläge|{param6:F1P} + {param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Streichelnde Hasode",
+		"descriptionRaw": "Stößt mit einer seidig weichen Bewegung schnell nach vorn und beschwört im Anschluss Automaton-Puppe „Tamoto“ neben sich. Führt danach einen nach oben gerichteten Angriff aus und fügt Gegnern in der Nähe basierend auf Chioris ANG und VTD <color=#FFE699FF>Geo-Flächenschaden</color> zu.\nBeim Gedrückthalten nimmt diese Fähigkeit einen anderen Modus an.\n\n<color=#FFD780FF>Gedrückt halten</color>\nTritt in einen Zielmodus ein, in dem die Richtung des schnellen Vorstoßes bestimmt werden kann.\n\n<color=#FFD780FF>Tamoto</color>\n· Fügt Gegnern in der Nähe in regelmäßigen Abständen Hiebe zu und verursacht basierend auf Chioris ANG und VTD <color=#FFE699FF>Geo-Flächenschaden</color>.\n· Erschafft, wenn während der Wirkungsdauer in der Nähe ein <color=#FFE699FF>Geo-Objekt</color> existiert oder eines erschaffen wird, neben der aktuellen eigenen Figur 1 weitere Tamoto. Auf diese Weise kann höchstens 1 Tamoto erschaffen werden. Deren Wirkungsdauer wird unabhängig berechnet.\n\n<i>„Rosarot ist der Brokat und schmückt die Ärmel mit betörendem Duft, den selbst die Pirole bewundern.“</i>",
+		"description": "Stößt mit einer seidig weichen Bewegung schnell nach vorn und beschwört im Anschluss Automaton-Puppe „Tamoto“ neben sich. Führt danach einen nach oben gerichteten Angriff aus und fügt Gegnern in der Nähe basierend auf Chioris ANG und VTD Geo-Flächenschaden zu.\nBeim Gedrückthalten nimmt diese Fähigkeit einen anderen Modus an.\n\nGedrückt halten\nTritt in einen Zielmodus ein, in dem die Richtung des schnellen Vorstoßes bestimmt werden kann.\n\nTamoto\n· Fügt Gegnern in der Nähe in regelmäßigen Abständen Hiebe zu und verursacht basierend auf Chioris ANG und VTD Geo-Flächenschaden.\n· Erschafft, wenn während der Wirkungsdauer in der Nähe ein Geo-Objekt existiert oder eines erschaffen wird, neben der aktuellen eigenen Figur 1 weitere Tamoto. Auf diese Weise kann höchstens 1 Tamoto erschaffen werden. Deren Wirkungsdauer wird unabhängig berechnet.",
+		"flavorText": "„Rosarot ist der Brokat und schmückt die Ärmel mit betörendem Duft, den selbst die Pirole bewundern.“",
+		"attributes": {
+			"labels": [
+				"SCH durch Tamoto|{param1:P} ANG + {param2:P} VTD",
+				"Dauer von Tamoto|{param3:F1} s",
+				"Angriffsintervall von Tamoto|{param4:F1} s",
+				"SCH Aufwärtshaken|{param5:P} ANG + {param6:P} VTD",
+				"Abklingzeit|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Doppelklinge – Hiyoku",
+		"descriptionRaw": "Chiori zieht ihre beiden Schwerter, während sie mit präzisen Schnitten wie eine Meisterschneiderin zuschlägt und basierend auf ihrem ANG und ihrer VTD <color=#FFE699FF>Geo-Flächenschaden</color> verursacht.\n\n<i>„Hat man ein Prinzip gemeistert, stehen einem alle anderen offen.“</i>",
+		"description": "Chiori zieht ihre beiden Schwerter, während sie mit präzisen Schnitten wie eine Meisterschneiderin zuschlägt und basierend auf ihrem ANG und ihrer VTD Geo-Flächenschaden verursacht.",
+		"flavorText": "„Hat man ein Prinzip gemeistert, stehen einem alle anderen offen.“",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:P} ANG + {param2:P} VTD",
+				"Abklingzeit|{param3:F1} s",
+				"Elementarenergie|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Mode nach Maß",
+		"descriptionRaw": "#Löst innerhalb kurzer Zeit nach dem nach oben gerichteten Angriff von <color=#FFD780FF>Streichelnde Hasode</color> je nach folgender Handlung unterschiedliche Effekte aus: Löst bei Drücken der Elementarfähigkeit den Effekt „Brokatstoff“ und bei Drücken des Standardangriffs den Effekt „Brokatschnitt“ aus.\n\n<color=#FFD780FF>Brokatstoff</color>\n· Wechselt die Figur automatisch zum nächsten eigenen Truppenmitglied.\n· Gewährt allen eigenen Truppenmitgliedern den Effekt „Gute Stimmung“: Lässt Tamoto beim Treffen von Gegnern in der Nähe mit Standardangriffen, heftigen Schlägen und Angriffen aus dem Fall des aktuellen eigenen Truppenmitglieds einen abgestimmten Angriff ausführen. Verursacht an der Stelle des Gegners <color=#FFE699FF>Geo-Flächenschaden</color> in Höhe von 100{NON_BREAK_SPACE}% des Schadens des nach oben gerichteten Angriffs von „Streichelnde Hasode“. Hierdurch verursachter Schaden wird als Schaden der Elementarfähigkeit gewertet.\n· „Gute Stimmung“ hält 8{NON_BREAK_SPACE}s. Alle 2{NON_BREAK_SPACE}s kann 1 abgestimmter Angriff von Tamoto ausgelöst werden. Während der Wirkungsdauer von „Gute Stimmung“ können bis zu 2 abgestimmte Angriffe ausgelöst werden.\n\n<color=#FFD780FF>Brokatschnitt</color>\n· Verleiht Chiori 5{NON_BREAK_SPACE}s lang die <color=#FFE699FF>Geo-Kraft</color>.\n\nLöst den Effekt „Brokatschnitt“ automatisch aus, wenn Chiori auf dem Feld ist und innerhalb kurzer Zeit nach dem nach oben gerichteten Angriff von Streichelnde Hasode weder erneut die Elementarfähigkeit noch der Standardangriff gedrückt wird.",
+		"description": "Löst innerhalb kurzer Zeit nach dem nach oben gerichteten Angriff von Streichelnde Hasode je nach folgender Handlung unterschiedliche Effekte aus: Löst bei Drücken der Elementarfähigkeit den Effekt „Brokatstoff“ und bei Drücken des Standardangriffs den Effekt „Brokatschnitt“ aus.\n\nBrokatstoff\n· Wechselt die Figur automatisch zum nächsten eigenen Truppenmitglied.\n· Gewährt allen eigenen Truppenmitgliedern den Effekt „Gute Stimmung“: Lässt Tamoto beim Treffen von Gegnern in der Nähe mit Standardangriffen, heftigen Schlägen und Angriffen aus dem Fall des aktuellen eigenen Truppenmitglieds einen abgestimmten Angriff ausführen. Verursacht an der Stelle des Gegners Geo-Flächenschaden in Höhe von 100 % des Schadens des nach oben gerichteten Angriffs von „Streichelnde Hasode“. Hierdurch verursachter Schaden wird als Schaden der Elementarfähigkeit gewertet.\n· „Gute Stimmung“ hält 8 s. Alle 2 s kann 1 abgestimmter Angriff von Tamoto ausgelöst werden. Während der Wirkungsdauer von „Gute Stimmung“ können bis zu 2 abgestimmte Angriffe ausgelöst werden.\n\nBrokatschnitt\n· Verleiht Chiori 5 s lang die Geo-Kraft.\n\nLöst den Effekt „Brokatschnitt“ automatisch aus, wenn Chiori auf dem Feld ist und innerhalb kurzer Zeit nach dem nach oben gerichteten Angriff von Streichelnde Hasode weder erneut die Elementarfähigkeit noch der Standardangriff gedrückt wird."
+	},
+	"passive2": {
+		"name": "Vollendete Muster",
+		"descriptionRaw": "#Erhöht den von Chiori verursachten <color=#FFE699FF>Geo-Schaden</color> 20{NON_BREAK_SPACE}s lang um 20{NON_BREAK_SPACE}%, wenn Truppenmitglieder in der Nähe <color=#FFE699FF>Geo-Objekte</color> erschaffen.",
+		"description": "Erhöht den von Chiori verursachten Geo-Schaden 20 s lang um 20 %, wenn Truppenmitglieder in der Nähe Geo-Objekte erschaffen."
+	},
+	"passive3": {
+		"name": "Bezaubernde Silhouette",
+		"descriptionRaw": "#Verleiht, wenn beliebig viele eigene Figuren in der Truppe Kleidung außer ihrer Standardkleidung oder Windgleiter außer den Anfängerschwingen angelegt haben, eigenen Figuren in der Truppe den Effekt „Schneller Schritt“: Erhöht die Bewegungs-GSW um 10{NON_BREAK_SPACE}%.\nDieser Effekt gilt nicht in Sphären, Gebietssäuberungen oder im Gewundenen Abgrund und ist nicht stapelbar.",
+		"description": "Verleiht, wenn beliebig viele eigene Figuren in der Truppe Kleidung außer ihrer Standardkleidung oder Windgleiter außer den Anfängerschwingen angelegt haben, eigenen Figuren in der Truppe den Effekt „Schneller Schritt“: Erhöht die Bewegungs-GSW um 10 %.\nDieser Effekt gilt nicht in Sphären, Gebietssäuberungen oder im Gewundenen Abgrund und ist nicht stapelbar."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104326,
+				"name": "Lehren des „Lichts“",
+				"count": 3
+			},
+			{
+				"id": 112053,
+				"name": "Geisterhülle",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104327,
+				"name": "Anleitung zum „Licht“",
+				"count": 2
+			},
+			{
+				"id": 112054,
+				"name": "Gespensterherz",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104327,
+				"name": "Anleitung zum „Licht“",
+				"count": 4
+			},
+			{
+				"id": 112054,
+				"name": "Gespensterherz",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104327,
+				"name": "Anleitung zum „Licht“",
+				"count": 6
+			},
+			{
+				"id": 112054,
+				"name": "Gespensterherz",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104327,
+				"name": "Anleitung zum „Licht“",
+				"count": 9
+			},
+			{
+				"id": 112054,
+				"name": "Gespensterherz",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophie des „Lichts“",
+				"count": 4
+			},
+			{
+				"id": 112055,
+				"name": "Gespensterkern",
+				"count": 4
+			},
+			{
+				"id": 113054,
+				"name": "Aphotischer Seidenfaden",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophie des „Lichts“",
+				"count": 6
+			},
+			{
+				"id": 112055,
+				"name": "Gespensterkern",
+				"count": 6
+			},
+			{
+				"id": 113054,
+				"name": "Aphotischer Seidenfaden",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophie des „Lichts“",
+				"count": 12
+			},
+			{
+				"id": 112055,
+				"name": "Gespensterkern",
+				"count": 9
+			},
+			{
+				"id": 113054,
+				"name": "Aphotischer Seidenfaden",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104328,
+				"name": "Philosophie des „Lichts“",
+				"count": 16
+			},
+			{
+				"id": 112055,
+				"name": "Gespensterkern",
+				"count": 12
+			},
+			{
+				"id": 113054,
+				"name": "Aphotischer Seidenfaden",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
+}

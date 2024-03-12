@@ -1,0 +1,244 @@
+{
+	"id": 9401,
+	"name": "Chiori",
+	"combat1": {
+		"name": "Attacco normale: Lama intrecciata",
+		"descriptionRaw": "<color=#FFD780FF>Attacco normale</color>\nSferra fino a 4 colpi rapidi.\n\n<color=#FFD780FF>Attacco caricato</color>\nConsuma una determinata quantità di vigore per sferrare 2 colpi di spada rapidi.\n\n<color=#FFD780FF>Attacco in picchiata</color>\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo il percorso e DAN ad area all'impatto.",
+		"description": "Attacco normale\nSferra fino a 4 colpi rapidi.\n\nAttacco caricato\nConsuma una determinata quantità di vigore per sferrare 2 colpi di spada rapidi.\n\nAttacco in picchiata\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo il percorso e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}+{param4:F1P}",
+				"DAN da 4º colpo|{param5:F1P}",
+				"DAN da ATT caricato|{param6:F1P}+{param7:F1P}",
+				"Costo vigore ATT caricato|{param8:F1}",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Hasode svolazzante",
+		"descriptionRaw": "Compie uno scatto in avanti a passo vellutato. Al termine dello scatto, Chiori evoca al suo fianco la Robobambola Tamoto e sferra un colpo ascendente con la sua lama, infliggendo <color=#FFE699FF>DAN da Geo ad area</color> ai nemici vicini in base ai suoi attributi di ATT e DIF.\nLa pressione prolungata permette di eseguire una versione alternativa dell'abilità.\n\n<color=#FFD780FF>Pressione prolungata</color>\nEntra in modalità di mira per regolare la direzione dello scatto.\n\n<color=#FFD780FF>Tamoto</color>\n· Scaglia fendenti contro i nemici vicini a intervalli regolari, infliggendo <color=#FFE699FF>DAN da Geo ad area</color> in base agli attributi di ATT e DIF di Chiori.\n· Mentre è attiva, se sono presenti o vengono creati <color=#FFE699FF>costrutti di Geo</color> nelle vicinanze, viene evocata 1 ulteriore Tamoto accanto al personaggio attivo. È possibile evocare in questo modo 1 unica Tamoto aggiuntiva, e la sua durata è calcolata in modo indipendente.\n\n<i>\"Broccato tinto di rosso, una fragranza cosparge le maniche, i rigogoli ne vengono inebriati.\"</i>",
+		"description": "Compie uno scatto in avanti a passo vellutato. Al termine dello scatto, Chiori evoca al suo fianco la Robobambola Tamoto e sferra un colpo ascendente con la sua lama, infliggendo DAN da Geo ad area ai nemici vicini in base ai suoi attributi di ATT e DIF.\nLa pressione prolungata permette di eseguire una versione alternativa dell'abilità.\n\nPressione prolungata\nEntra in modalità di mira per regolare la direzione dello scatto.\n\nTamoto\n· Scaglia fendenti contro i nemici vicini a intervalli regolari, infliggendo DAN da Geo ad area in base agli attributi di ATT e DIF di Chiori.\n· Mentre è attiva, se sono presenti o vengono creati costrutti di Geo nelle vicinanze, viene evocata 1 ulteriore Tamoto accanto al personaggio attivo. È possibile evocare in questo modo 1 unica Tamoto aggiuntiva, e la sua durata è calcolata in modo indipendente.",
+		"flavorText": "\"Broccato tinto di rosso, una fragranza cosparge le maniche, i rigogoli ne vengono inebriati.\"",
+		"attributes": {
+			"labels": [
+				"DAN da Tamoto|{param1:P} ATT+{param2:P} DIF",
+				"Durata Tamoto|{param3:F1} s",
+				"Intervallo attacco Tamoto|{param4:F1} s",
+				"DAN da colpo ascendente|{param5:P} ATT+{param6:P} DIF",
+				"TdR|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Hiyoku: Lame gemelle",
+		"descriptionRaw": "Sguainando le Lame gemelle, Chiori esegue un taglio con la maestria e la precisione di una sarta esperta, infliggendo <color=#FFE699FF>DAN da Geo ad area</color> in base ai suoi attributi di ATT e DIF.\n\n<i>\"Padroneggia un singolo principio e il sentiero per tutti gli altri s'aprirà dinanzi a te.\"</i>",
+		"description": "Sguainando le Lame gemelle, Chiori esegue un taglio con la maestria e la precisione di una sarta esperta, infliggendo DAN da Geo ad area in base ai suoi attributi di ATT e DIF.",
+		"flavorText": "\"Padroneggia un singolo principio e il sentiero per tutti gli altri s'aprirà dinanzi a te.\"",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:P} ATT+{param2:P} DIF",
+				"TdR|{param3:F1} s",
+				"Costo energia|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Su misura",
+		"descriptionRaw": "#Entro un breve intervallo di tempo dall'uso del colpo ascendente di <color=#FFD780FF>Hasode svolazzante</color>, ottieni svariati effetti in base all'azione successiva eseguita. {LAYOUT_MOBILE#Toccando il pulsante}{LAYOUT_PC#Premendo il tasto}{LAYOUT_PS#Premendo il tasto} dell'abilità elementale, si attiva l'effetto Broccato; {LAYOUT_MOBILE#toccando}{LAYOUT_PC#premendo}{LAYOUT_PS#premendo} quello dell'attacco normale, invece, si attiva l'effetto Sartoria.\n\n<color=#FFD780FF>Broccato</color>\n· Passa al personaggio successivo nella tua formazione.\n· Conferisce Carpe diem a tutti i membri del tuo gruppo: quando il membro attivo del gruppo colpisce un avversario vicino con attacchi normali, caricati o in picchiata, Tamoto esegue un attacco coordinato nella posizione dell'avversario che infligge un 100% dei DAN del colpo ascendente di Hasode svolazzante come <color=#FFE699FF>DAN da Geo ad area</color>. I DAN inflitti in questo modo sono considerati DAN da abilità elementale.\n· Carpe diem dura 8{NON_BREAK_SPACE}s, e permette di scatenare 1 attacco coordinato di Tamoto ogni 2{NON_BREAK_SPACE}s, per un massimo di 2 volte entro la durata dell'effetto Carpe diem.\n\n<color=#FFD780FF>Sartoria</color>\n· Chiori ottiene un'<color=#FFE699FF>infusione di Geo</color> per 5{NON_BREAK_SPACE}s.\n\nQuando Chiori è in campo, se non si {LAYOUT_MOBILE#tocca né il pulsante}{LAYOUT_PC#preme né il tasto}{LAYOUT_PS#preme né il tasto} dell'abilità elementale né quello dell'attacco normale per un breve lasso di tempo dopo aver sferrato il colpo ascendente di Hasode svolazzante, si attiva automaticamente l'effetto Sartoria.",
+		"description": "Entro un breve intervallo di tempo dall'uso del colpo ascendente di Hasode svolazzante, ottieni svariati effetti in base all'azione successiva eseguita. Premendo il tasto dell'abilità elementale, si attiva l'effetto Broccato; premendo quello dell'attacco normale, invece, si attiva l'effetto Sartoria.\n\nBroccato\n· Passa al personaggio successivo nella tua formazione.\n· Conferisce Carpe diem a tutti i membri del tuo gruppo: quando il membro attivo del gruppo colpisce un avversario vicino con attacchi normali, caricati o in picchiata, Tamoto esegue un attacco coordinato nella posizione dell'avversario che infligge un 100% dei DAN del colpo ascendente di Hasode svolazzante come DAN da Geo ad area. I DAN inflitti in questo modo sono considerati DAN da abilità elementale.\n· Carpe diem dura 8 s, e permette di scatenare 1 attacco coordinato di Tamoto ogni 2 s, per un massimo di 2 volte entro la durata dell'effetto Carpe diem.\n\nSartoria\n· Chiori ottiene un'infusione di Geo per 5 s.\n\nQuando Chiori è in campo, se non si preme né il tasto dell'abilità elementale né quello dell'attacco normale per un breve lasso di tempo dopo aver sferrato il colpo ascendente di Hasode svolazzante, si attiva automaticamente l'effetto Sartoria."
+	},
+	"passive2": {
+		"name": "Tocco finale",
+		"descriptionRaw": "#Quando un membro del gruppo vicino crea un <color=#FFE699FF>costrutto di Geo</color>, Chiori ottiene un 20% di <color=#FFE699FF>bonus DAN da Geo</color> per 20{NON_BREAK_SPACE}s.",
+		"description": "Quando un membro del gruppo vicino crea un costrutto di Geo, Chiori ottiene un 20% di bonus DAN da Geo per 20 s."
+	},
+	"passive3": {
+		"name": "Silhouette avvenente",
+		"descriptionRaw": "Quando un membro del gruppo indossa un completo non predefinito o equipaggia un aliante diverso dalle Ali del principiante, i membri del tuo gruppo ottengono l'effetto Piè veloce: la VEL di movimento aumenta di un 10%.\nNon ha effetto all'interno di Domini, Domini della conquista o nell'Abisso a spirale. Piè veloce non è cumulabile.",
+		"description": "Quando un membro del gruppo indossa un completo non predefinito o equipaggia un aliante diverso dalle Ali del principiante, i membri del tuo gruppo ottengono l'effetto Piè veloce: la VEL di movimento aumenta di un 10%.\nNon ha effetto all'interno di Domini, Domini della conquista o nell'Abisso a spirale. Piè veloce non è cumulabile."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104326,
+				"name": "Insegnamenti della luce",
+				"count": 3
+			},
+			{
+				"id": 112053,
+				"name": "Guscio spettrale",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104327,
+				"name": "Guida alla luce",
+				"count": 2
+			},
+			{
+				"id": 112054,
+				"name": "Cuore spettrale",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104327,
+				"name": "Guida alla luce",
+				"count": 4
+			},
+			{
+				"id": 112054,
+				"name": "Cuore spettrale",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104327,
+				"name": "Guida alla luce",
+				"count": 6
+			},
+			{
+				"id": 112054,
+				"name": "Cuore spettrale",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104327,
+				"name": "Guida alla luce",
+				"count": 9
+			},
+			{
+				"id": 112054,
+				"name": "Cuore spettrale",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofie della luce",
+				"count": 4
+			},
+			{
+				"id": 112055,
+				"name": "Nucleo spettrale",
+				"count": 4
+			},
+			{
+				"id": 113054,
+				"name": "Filo di seta senza luce",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofie della luce",
+				"count": 6
+			},
+			{
+				"id": 112055,
+				"name": "Nucleo spettrale",
+				"count": 6
+			},
+			{
+				"id": 113054,
+				"name": "Filo di seta senza luce",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofie della luce",
+				"count": 12
+			},
+			{
+				"id": 112055,
+				"name": "Nucleo spettrale",
+				"count": 9
+			},
+			{
+				"id": 113054,
+				"name": "Filo di seta senza luce",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104328,
+				"name": "Filosofie della luce",
+				"count": 16
+			},
+			{
+				"id": 112055,
+				"name": "Nucleo spettrale",
+				"count": 12
+			},
+			{
+				"id": 113054,
+				"name": "Filo di seta senza luce",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}
