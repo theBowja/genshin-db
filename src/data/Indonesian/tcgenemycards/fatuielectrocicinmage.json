@@ -1,0 +1,87 @@
+{
+	"id": 4408,
+	"name": "Fatui - Electro Cicin Mage",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Electro",
+		"Senjata Lain",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 24041,
+			"name": "Hurtling Bolts",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Mengakibatkan 1 poin Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24042,
+			"name": "Misty Call",
+			"descriptionraw": "Memanggil <color=#FFFFFFFF>$[C124041]</color>.",
+			"descriptionreplaced": "Memanggil <color=#FFFFFFFF>Electro Cicin</color>.",
+			"description": "Memanggil Electro Cicin.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24043,
+			"name": "Thundering Shield",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], memberikan $[K204] kepada diri sendiri, menciptakan <color=#FFFFFFFF>$[C124042]</color> dan mempersiapkan Skill <color=#FFFFFFFF>$[S24044]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, memberikan <color=#FFACFFFF>Memberikan efek {SPRITE_PRESET#2104}Electro</color> kepada diri sendiri, menciptakan <color=#FFFFFFFF>Electro Cicin Shield</color> dan mempersiapkan Skill <color=#FFFFFFFF>Surging Thunder</color>.",
+			"description": "Mengakibatkan 1 poin Electro DMG, memberikan Memberikan efek Electro kepada diri sendiri, menciptakan Electro Cicin Shield dan mempersiapkan Skill Surging Thunder.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24044,
+			"name": "Surging Thunder",
+			"descriptionraw": "Persiapkan selama 1 giliran.\\nMengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Persiapkan selama 1 giliran.\\nMengakibatkan 2 poin {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Persiapkan selama 1 giliran.\nMengakibatkan 2 poin Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"id": 4408,
+	"name": "Fatui - Feiticeira Cicin Electro",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Electro",
+		"Outras Armas",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 24041,
+			"name": "Relâmpago Electro",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>.",
+			"description": "Causa 1 Dano Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24042,
+			"name": "Chamado Nevoento",
+			"descriptionraw": "Invoca <color=#FFFFFFFF>$[C124041]</color>.",
+			"descriptionreplaced": "Invoca <color=#FFFFFFFF>Cicin Electro</color>.",
+			"description": "Invoca Cicin Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24043,
+			"name": "Escudo Trovejante",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], concede a este personagem $[K204], cria 1 <color=#FFFFFFFF>$[C124042]</color> e prepara <color=#FFFFFFFF>$[S24044]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>, concede a este personagem <color=#FFACFFFF>Aplicação {SPRITE_PRESET#2104}Electro</color>, cria 1 <color=#FFFFFFFF>Escudo Cicin Electro</color> e prepara <color=#FFFFFFFF>Trovão Furioso</color>.",
+			"description": "Causa 1 Dano Electro, concede a este personagem Aplicação Electro, cria 1 Escudo Cicin Electro e prepara Trovão Furioso.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24044,
+			"name": "Trovão Furioso",
+			"descriptionraw": "(É necessário se preparar por 1 rodada de ação)\\nCausa $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(É necessário se preparar por 1 rodada de ação)\\nCausa 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>.",
+			"description": "(É necessário se preparar por 1 rodada de ação)\nCausa 2 Dano Electro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": []
+		}
+	]
+}

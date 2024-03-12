@@ -1,0 +1,87 @@
+{
+	"id": 4408,
+	"name": "Fatui Electro Cicin Mage",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Electro",
+		"Other Weapons",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 24041,
+			"name": "Hurtling Bolts",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Deals 1 Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24042,
+			"name": "Misty Call",
+			"descriptionraw": "Summons 1 <color=#FFFFFFFF>$[C124041]</color>.",
+			"descriptionreplaced": "Summons 1 <color=#FFFFFFFF>Electro Cicin</color>.",
+			"description": "Summons 1 Electro Cicin.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24043,
+			"name": "Thundering Shield",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], applies $[K204] to this character, creates 1 <color=#FFFFFFFF>$[C124042]</color> and prepares <color=#FFFFFFFF>$[S24044]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, applies <color=#FFACFFFF>{SPRITE_PRESET#2104}Electro Application</color> to this character, creates 1 <color=#FFFFFFFF>Electro Cicin Shield</color> and prepares <color=#FFFFFFFF>Surging Thunder</color>.",
+			"description": "Deals 1 Electro DMG, applies Electro Application to this character, creates 1 Electro Cicin Shield and prepares Surging Thunder.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24044,
+			"name": "Surging Thunder",
+			"descriptionraw": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(Prepare for 1 turn)\\nDeals 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "(Prepare for 1 turn)\nDeals 2 Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"id": 4408,
+	"name": "Фатуи: Маг Электро цицинов",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Электро",
+		"Прочее",
+		"Фатуи"
+	],
+	"skills": [
+		{
+			"id": 24041,
+			"name": "Грозовые разряды",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед.",
+			"description": "Наносит Электро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24042,
+			"name": "Зов в тумане",
+			"descriptionraw": "Призывает помощника: <color=#FFFFFFFF>$[C124041]</color>.",
+			"descriptionreplaced": "Призывает помощника: <color=#FFFFFFFF>Электро цицин</color>.",
+			"description": "Призывает помощника: Электро цицин.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24043,
+			"name": "Громовая защита",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., этот персонаж получает $[K204], создаёт <color=#FFFFFFFF>$[C124042]</color> и подготавливает <color=#FFFFFFFF>$[S24044]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед., этот персонаж получает <color=#FFACFFFF>Эффект {SPRITE_PRESET#2104}Электро</color>, создаёт <color=#FFFFFFFF>Купол Электро цицина</color> и подготавливает <color=#FFFFFFFF>Молниеносный взрыв</color>.",
+			"description": "Наносит Электро урон, 1 ед., этот персонаж получает Эффект Электро, создаёт Купол Электро цицина и подготавливает Молниеносный взрыв.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24044,
+			"name": "Молниеносный взрыв",
+			"descriptionraw": "На подготовку требуется 1 раунд.\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "На подготовку требуется 1 раунд.\\nНаносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед.",
+			"description": "На подготовку требуется 1 раунд.\nНаносит Электро урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		}
+	]
+}

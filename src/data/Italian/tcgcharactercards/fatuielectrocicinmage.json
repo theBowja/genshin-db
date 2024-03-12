@@ -1,0 +1,91 @@
+{
+	"id": 2404,
+	"name": "Maga Cicin di Electro dei Fatui",
+	"shareid": 337,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Electro",
+		"Altre armi",
+		"Fatui"
+	],
+	"storytitle": "Maga Cicin di Electro, Tuono nella nebbia",
+	"storytext": "...Così come l'odore dell'Erbafosca inebria le Cicin di Electro, le maghe sadiche bramano il piacere di dilettarsi con il loro nemico...",
+	"source": "Ricompensa ottenuta accettando la sfida della taverna alla Coda di Gatto e battendo la Maga Cicin di Electro in un duello amichevole",
+	"skills": [
+		{
+			"id": 24041,
+			"name": "Saette repentine",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>.",
+			"description": "Infligge 1 DAN da Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24042,
+			"name": "Richiamo nebuloso",
+			"descriptionraw": "Invoca 1 <color=#FFFFFFFF>$[C124041]</color>.",
+			"descriptionreplaced": "Invoca 1 <color=#FFFFFFFF>Cicin di Electro</color>.",
+			"description": "Invoca 1 Cicin di Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24043,
+			"name": "Scudo tonante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], questo personaggio subisce $[K204], crea 1 <color=#FFFFFFFF>$[C124042]</color> e prepara <color=#FFFFFFFF>$[S24044]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>, questo personaggio subisce <color=#FFACFFFF>{SPRITE_PRESET#2104}Applicazione di Electro</color>, crea 1 <color=#FFFFFFFF>Scudo Cicin di Electro</color> e prepara <color=#FFFFFFFF>Tuono ruggente</color>.",
+			"description": "Infligge 1 DAN da Electro, questo personaggio subisce Applicazione di Electro, crea 1 Scudo Cicin di Electro e prepara Tuono ruggente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24044,
+			"name": "Tuono ruggente",
+			"descriptionraw": "(Prepara per 1 turno)\\nInfligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(Prepara per 1 turno)\\nInfligge 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>.",
+			"description": "(Prepara per 1 turno)\nInfligge 2 DAN da Electro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": []
+		}
+	]
+}

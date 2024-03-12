@@ -1,0 +1,105 @@
+{
+	"id": 1210,
+	"name": "ヌヴィレット",
+	"shareid": 335,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"水元素",
+		"法器",
+		"フォンテーヌ",
+		"アルケー：プネウマ"
+	],
+	"storytitle": "告諭の潮騒·ヌヴィレット",
+	"storytext": "高き者を、私は蔑む。",
+	"source": "キャッツテールでヌヴィレットを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 12101,
+			"name": "清きこと水の如し",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。",
+			"description": "水元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12102,
+			"name": "涙よ、私は必ずや償おう",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112101]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与え、<color=#FFFFFFFF>源水の雫</color>を生成する。",
+			"description": "水元素ダメージを2与え、源水の雫を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12103,
+			"name": "海よ、私は帰ってきた",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手の待機キャラ全員に<color=#FFFFFFFF>$[K5]</color>を1与える。さらに、使用可能回数が2の<color=#FFFFFFFF>$[C112101]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与え、相手の待機キャラ全員に<color=#FFFFFFFF><color=#FFFFFFFF>貫通ダメージ</color></color>を1与える。さらに、使用可能回数が2の<color=#FFFFFFFF>源水の雫</color>を生成する。",
+			"description": "水元素ダメージを2与え、相手の待機キャラ全員に貫通ダメージを1与える。さらに、使用可能回数が2の源水の雫を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12104,
+			"name": "衡平な裁量",
+			"descriptionraw": "（1ターンの準備が必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。HPが6以上の場合、自身に$[K5]を1与え、与えるダメージ+1。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "（1ターンの準備が必要）\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。HPが6以上の場合、自身に<color=#FFFFFFFF>貫通ダメージ</color>を1与え、与えるダメージ+1。",
+			"description": "（1ターンの準備が必要）\n水元素ダメージを2与える。HPが6以上の場合、自身に貫通ダメージを1与え、与えるダメージ+1。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": []
+		},
+		{
+			"id": 12105,
+			"name": "源水の雫",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_NONE",
+			"type": "",
+			"playcost": []
+		}
+	]
+}

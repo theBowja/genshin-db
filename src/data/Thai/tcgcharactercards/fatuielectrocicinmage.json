@@ -1,0 +1,91 @@
+{
+	"id": 2404,
+	"name": "Fatui - Electro Cicin Mage",
+	"shareid": 337,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"ธาตุไฟฟ้า",
+		"อาวุธอื่น ๆ",
+		"Fatui"
+	],
+	"storytitle": "สายฟ้ากลางหมอก - Electro Cicin Mage",
+	"storytext": "...เช่นเดียวกับกลิ่นของ Mist Grass ที่ทำให้ Electro Cicin หลงใหล นักเวทจอมซาดิสม์ก็กระหายที่จะหยอกล้อคู่ต่อสู้...",
+	"source": "ได้รับหลังจากเอาชนะ Fatui - Electro Cicin Mage ระดับความยากฉันมิตร จากการดูเอลในร้านเหล้าที่ Prince ใน Cat's Tail",
+	"skills": [
+		{
+			"id": 24041,
+			"name": "Hurtling Bolts",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 1 หน่วย",
+			"description": "สร้างความเสียหายไฟฟ้า 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24042,
+			"name": "Misty Call",
+			"descriptionraw": "เรียก <color=#FFFFFFFF>$[C124041]</color>",
+			"descriptionreplaced": "เรียก <color=#FFFFFFFF>Electro Cicin</color>",
+			"description": "เรียก Electro Cicin",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24043,
+			"name": "Thundering Shield",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย ทำให้ตัวละครนี้ติด$[K204] สร้าง <color=#FFFFFFFF>$[C124042]</color> และเตรียมสกิล <color=#FFFFFFFF>$[S24044]</color>",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 1 หน่วย ทำให้ตัวละครนี้ติด<color=#FFACFFFF>ติดสถานะ{SPRITE_PRESET#2104}ธาตุไฟฟ้า</color> สร้าง <color=#FFFFFFFF>Electro Cicin Shield</color> และเตรียมสกิล <color=#FFFFFFFF>Surging Thunder</color>",
+			"description": "สร้างความเสียหายไฟฟ้า 1 หน่วย ทำให้ตัวละครนี้ติดติดสถานะธาตุไฟฟ้า สร้าง Electro Cicin Shield และเตรียมสกิล Surging Thunder",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24044,
+			"name": "Surging Thunder",
+			"descriptionraw": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 2 หน่วย",
+			"description": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\nสร้างความเสียหายไฟฟ้า 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": []
+		}
+	]
+}

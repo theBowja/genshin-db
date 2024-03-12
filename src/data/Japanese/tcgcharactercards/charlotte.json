@@ -1,0 +1,83 @@
+{
+	"id": 1110,
+	"name": "シャルロット",
+	"shareid": 334,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"氷元素",
+		"法器",
+		"フォンテーヌ",
+		"アルケー：プネウマ"
+	],
+	"storytitle": "真実を求める曇りなきモノクル·シャルロット",
+	"storytext": "「真実至上主義、優れたストーリー性！」",
+	"source": "キャッツテールでシャルロットを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 11101,
+			"name": "寒色撮影技法",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。",
+			"description": "氷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11102,
+			"name": "フレーミング·氷点法",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標に<color=#FFFFFFFF>$[C111101]</color>を付与する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与え、目標に<color=#FFFFFFFF>スナップシルエット</color>を付与する。",
+			"description": "氷元素ダメージを1与え、目標にスナップシルエットを付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11103,
+			"name": "スチルフォト·多角的立証",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、味方のチーム全員のHPを1回復し、<color=#FFFFFFFF>$[C111102]</color>を召喚する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与え、味方のチーム全員のHPを1回復し、<color=#FFFFFFFF>スクープフィールド</color>を召喚する。",
+			"description": "氷元素ダメージを1与え、味方のチーム全員のHPを1回復し、スクープフィールドを召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

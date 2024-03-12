@@ -1,0 +1,91 @@
+{
+	"id": 2404,
+	"name": "Soldado Fatui - Maga de Cicin Electro",
+	"shareid": 337,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Electro",
+		"Otras armas",
+		"Fatui"
+	],
+	"storytitle": "Maga de Cicin Electro - Trueno neblinoso",
+	"storytext": "Igual que los Cicines Electro se embriagan con la fragancia de la Hierba neblinosa, las malvadas magas también ansían experimentar el placer de jugar con sus enemigos.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra la Soldado Fatui - Maga de Cicin Electro de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 24041,
+			"name": "Chispazo abrupto",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 1 pt. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24042,
+			"name": "Llamada neblinosa",
+			"descriptionraw": "Invoca unos <color=#FFFFFFFF>$[C124041]</color>.",
+			"descriptionreplaced": "Invoca unos <color=#FFFFFFFF>Cicines Electro</color>.",
+			"description": "Invoca unos Cicines Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24043,
+			"name": "Escudo electrizante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Este personaje recibe una $[K204|s1], crea un <color=#FFFFFFFF>$[C124042|s1]</color> y prepara la habilidad <color=#FFFFFFFF>$[S24044]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>. Este personaje recibe una <color=#FFACFFFF>{SPRITE_PRESET#2104}aplicación Electro</color>, crea un <color=#FFFFFFFF>escudo de Cicin Electro</color> y prepara la habilidad <color=#FFFFFFFF>Estallido eléctrico</color>.",
+			"description": "Inflige 1 pt. de Daño Electro. Este personaje recibe una aplicación Electro, crea un escudo de Cicin Electro y prepara la habilidad Estallido eléctrico.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24044,
+			"name": "Estallido eléctrico",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 2 pts. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": []
+		}
+	]
+}
