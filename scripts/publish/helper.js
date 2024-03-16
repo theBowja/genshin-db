@@ -16,8 +16,9 @@ helper.readAndCacheFile = function(namespace, pathfromprojectroot, filetype) {
 
 		case 'md':
 		case 'txt':
-
-			return '';
+		case 'd.ts':
+			cache[namespace][pathfromprojectroot] = fs.readFileSync(`./${pathfromprojectroot}`).toString();
+			return cache[namespace][pathfromprojectroot];
 	}
 	return undefined;
 };
