@@ -525,7 +525,7 @@ gameVersion = "4.5"; // new data will use this as added version
 
 // importData('characters');
 // importCurve('characters');
-// getUpperBodyImages(); // grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
+// getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
 // importData('constellations');
 // importData('talents');
