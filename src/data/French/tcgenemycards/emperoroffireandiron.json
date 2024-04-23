@@ -1,0 +1,107 @@
+{
+	"id": 4306,
+	"name": "Empereur du feu ferreux",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Coup pinçant",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Explosion flagrante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT]. Si le personnage possède au moins 7 cumuls de <color=#FFFFFFFF>$[C123041|s1]</color>, ces DGT augmentent de 1.\\nLe personnage obtient ensuite 2 cumuls de <color=#FFFFFFFF>$[C123041|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color>. Si le personnage possède au moins 7 cumuls de <color=#FFFFFFFF>carapace de Cuiracrabe</color>, ces DGT augmentent de 1.\\nLe personnage obtient ensuite 2 cumuls de <color=#FFFFFFFF>carapace de Cuiracrabe</color>.",
+			"description": "Inflige 1 pt de DGT Pyro. Si le personnage possède au moins 7 cumuls de carapace de Cuiracrabe, ces DGT augmentent de 1.\nLe personnage obtient ensuite 2 cumuls de carapace de Cuiracrabe.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23048,
+			"name": "Détonation de formation",
+			"descriptionraw": "Applique 3 cumuls de <color=#FFFFFFFF>$[C123041|s1]</color> au personnage et $[K53|s1] : <color=#FFFFFFFF>$[S23046]</color>.",
+			"descriptionreplaced": "Applique 3 cumuls de <color=#FFFFFFFF>carapace de Cuiracrabe</color> au personnage et <color=#FFFFFFFF>prépare la capacité</color> : <color=#FFFFFFFF>Explosion brûlante</color>.",
+			"description": "Applique 3 cumuls de carapace de Cuiracrabe au personnage et prépare la capacité : Explosion brûlante.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "Armure impériale",
+			"descriptionraw": "(Passif) <color=#FFFFFFFF>Au début du combat : </color>Accorde 5 cumuls de <color=#FFFFFFFF>$[C123041|s1]</color>.\\n<color=#FFFFFFFF>Lorsque vous avez effectué une action : </color>Annule les $[K6|s3] (hormis ceux accordés par une $[C123041|s1]) et les états de déploiement « $[K6] » que vous possédez et vous accorde 2 cumuls de <color=#FFFFFFFF>$[C123041|s1]</color> pour chacun des boucliers et états annulés.",
+			"descriptionreplaced": "(Passif) <color=#FFFFFFFF>Au début du combat : </color>Accorde 5 cumuls de <color=#FFFFFFFF>carapace de Cuiracrabe</color>.\\n<color=#FFFFFFFF>Lorsque vous avez effectué une action : </color>Annule les {SPRITE_PRESET#4007}<color=#FFFFFFFF>boucliers</color> (hormis ceux accordés par une carapace de Cuiracrabe) et les états de déploiement « {SPRITE_PRESET#4007}<color=#FFFFFFFF>Bouclier</color> » que vous possédez et vous accorde 2 cumuls de <color=#FFFFFFFF>carapace de Cuiracrabe</color> pour chacun des boucliers et états annulés.",
+			"description": "(Passif) Au début du combat : Accorde 5 cumuls de carapace de Cuiracrabe.\nLorsque vous avez effectué une action : Annule les boucliers (hormis ceux accordés par une carapace de Cuiracrabe) et les états de déploiement « Bouclier » que vous possédez et vous accorde 2 cumuls de carapace de Cuiracrabe pour chacun des boucliers et états annulés.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Explosion brûlante",
+			"descriptionraw": "(À préparer pendant 1 tour)\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], et inflige 2 pts de $[K5] à tous les personnages adverses en attente. Les $[K103] infligés par cette capacité augmentent de 1 tous les 2 cumuls de <color=#FFFFFFFF>$[C123041|s1]</color> que le personnage possède.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(À préparer pendant 1 tour)\\nInflige 1 pt de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color>, et inflige 2 pts de <color=#FFFFFFFF>DGT de perforation</color> à tous les personnages adverses en attente. Les {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color> infligés par cette capacité augmentent de 1 tous les 2 cumuls de <color=#FFFFFFFF>carapace de Cuiracrabe</color> que le personnage possède.",
+			"description": "(À préparer pendant 1 tour)\nInflige 1 pt de DGT Pyro, et inflige 2 pts de DGT de perforation à tous les personnages adverses en attente. Les DGT Pyro infligés par cette capacité augmentent de 1 tous les 2 cumuls de carapace de Cuiracrabe que le personnage possède.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "Armure impériale",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

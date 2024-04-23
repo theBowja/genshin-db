@@ -1,0 +1,107 @@
+{
+	"id": 4306,
+	"name": "Imperador do Fogo e Ferro",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Golpe Esmagador",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Explosão Flamejante",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Se esse personagem tem pelo menos 7 acúmulos de <color=#FFFFFFFF>$[C123041]</color>, esse Dano +1.\\nApós isso, esse personagem ganha 2 acúmulos de <color=#FFFFFFFF>$[C123041]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Causa 1 {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>. Se esse personagem tem pelo menos 7 acúmulos de <color=#FFFFFFFF>Carapaça do Caranguejo de Armadura</color>, esse Dano +1.\\nApós isso, esse personagem ganha 2 acúmulos de <color=#FFFFFFFF>Carapaça do Caranguejo de Armadura</color>.",
+			"description": "Causa 1 Dano Pyro. Se esse personagem tem pelo menos 7 acúmulos de Carapaça do Caranguejo de Armadura, esse Dano +1.\nApós isso, esse personagem ganha 2 acúmulos de Carapaça do Caranguejo de Armadura.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23048,
+			"name": "Linha de Detonação",
+			"descriptionraw": "Esse personagem ganha 3 acúmulos de <color=#FFFFFFFF>$[C123041]</color>. $[K53]: <color=#FFFFFFFF>$[S23046]</color>.",
+			"descriptionreplaced": "Esse personagem ganha 3 acúmulos de <color=#FFFFFFFF>Carapaça do Caranguejo de Armadura</color>. <color=#FFFFFFFF>Preparar Habilidade</color>: <color=#FFFFFFFF>Explosão Ardente</color>.",
+			"description": "Esse personagem ganha 3 acúmulos de Carapaça do Caranguejo de Armadura. Preparar Habilidade: Explosão Ardente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "Panóplia Imperial",
+			"descriptionraw": "(Passivo) <color=#FFFFFFFF>Quando o combate inicia:</color> ganha 5 acúmulos inicias de <color=#FFFFFFFF>$[C123041]</color>.\\n<color=#FFFFFFFF>Depois que seu lado realiza qualquer Ação:</color> se seu lado tem o estado $[K6] ou Estado de Combate $[K6] sem ser $[C123041], esses outros efeitos serão cancelados. Para cada efeito cancelado, esse personagem ganha 2 acúmulos de <color=#FFFFFFFF>$[C123041]</color>.",
+			"descriptionreplaced": "(Passivo) <color=#FFFFFFFF>Quando o combate inicia:</color> ganha 5 acúmulos inicias de <color=#FFFFFFFF>Carapaça do Caranguejo de Armadura</color>.\\n<color=#FFFFFFFF>Depois que seu lado realiza qualquer Ação:</color> se seu lado tem o estado {SPRITE_PRESET#4007}<color=#FFFFFFFF>Escudo</color> ou Estado de Combate {SPRITE_PRESET#4007}<color=#FFFFFFFF>Escudo</color> sem ser Carapaça do Caranguejo de Armadura, esses outros efeitos serão cancelados. Para cada efeito cancelado, esse personagem ganha 2 acúmulos de <color=#FFFFFFFF>Carapaça do Caranguejo de Armadura</color>.",
+			"description": "(Passivo) Quando o combate inicia: ganha 5 acúmulos inicias de Carapaça do Caranguejo de Armadura.\nDepois que seu lado realiza qualquer Ação: se seu lado tem o estado Escudo ou Estado de Combate Escudo sem ser Carapaça do Caranguejo de Armadura, esses outros efeitos serão cancelados. Para cada efeito cancelado, esse personagem ganha 2 acúmulos de Carapaça do Caranguejo de Armadura.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Explosão Ardente",
+			"descriptionraw": "(Esse movimento requer 2 rodadas de preparação)\\nCausa $[D__KEY__DAMAGE] ponto de $[D__KEY__ELEMENT], e causa 2 pontos de $[K5]. Para cada 2 acúmulos de <color=#FFFFFFFF>$[C123041]</color> que esse personagem está afetado, $[K103] causado +1.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Esse movimento requer 2 rodadas de preparação)\\nCausa 1 ponto de {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color>, e causa 2 pontos de <color=#FFFFFFFF>Dano Perfurante</color>. Para cada 2 acúmulos de <color=#FFFFFFFF>Carapaça do Caranguejo de Armadura</color> que esse personagem está afetado, {SPRITE_PRESET#2103}<color=#FF9999FF>Dano Pyro</color> causado +1.",
+			"description": "(Esse movimento requer 2 rodadas de preparação)\nCausa 1 ponto de Dano Pyro, e causa 2 pontos de Dano Perfurante. Para cada 2 acúmulos de Carapaça do Caranguejo de Armadura que esse personagem está afetado, Dano Pyro causado +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "Panóplia Imperial",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

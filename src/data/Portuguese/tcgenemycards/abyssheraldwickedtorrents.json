@@ -1,0 +1,134 @@
+{
+	"id": 4206,
+	"name": "Apóstolo do Abismo - Corrente Torrencial",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 22031,
+			"name": "Corte Ondulante",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22032,
+			"name": "Lâmina Vórtice",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], então realiza $[K53] para <color=#FFFFFFFF>$[S22035]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, então realiza <color=#FFFFFFFF>Preparar Habilidade</color> para <color=#FFFFFFFF>Lâminas Ondulantes</color>.",
+			"description": "Causa 2 pontos de Dano Hydro, então realiza Preparar Habilidade para Lâminas Ondulantes.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22033,
+			"name": "Choque Torrencial",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], gera <color=#FFFFFFFF>$[C122033]</color> no campo adversário.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, gera <color=#FFFFFFFF>Maldição da Corrente</color> no campo adversário.",
+			"description": "Causa 3 pontos de Dano Hydro, gera Maldição da Corrente no campo adversário.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22034,
+			"name": "Ressurreição Aquosa",
+			"descriptionraw": "(Passivo) Quando a batalha começa, esse personagem ganha <color=#FFFFFFFF>$[C122031]</color>.",
+			"descriptionreplaced": "(Passivo) Quando a batalha começa, esse personagem ganha <color=#FFFFFFFF>Ressurreição Aquosa</color>.",
+			"description": "(Passivo) Quando a batalha começa, esse personagem ganha Ressurreição Aquosa.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 22035,
+			"name": "Lâminas Ondulantes",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>.",
+			"description": "Causa 1 ponto de Dano Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22036,
+			"name": "Barreira Torrencial",
+			"descriptionraw": "(Passivo) Quando este personagem desencadeia <color=#FFFFFFFF>$[C122031]</color>: é afetado por <color=#FFFFFFFF>$[C122035]</color>.",
+			"descriptionreplaced": "(Passivo) Quando este personagem desencadeia <color=#FFFFFFFF>Ressurreição Aquosa</color>: é afetado por <color=#FFFFFFFF>Escudo Crescente</color>.",
+			"description": "(Passivo) Quando este personagem desencadeia Ressurreição Aquosa: é afetado por Escudo Crescente.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 22037,
+			"name": "Escudo Quebrado",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 22038,
+			"name": "Ressurreição Aquosa",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

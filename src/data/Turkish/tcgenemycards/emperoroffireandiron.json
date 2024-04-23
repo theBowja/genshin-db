@@ -1,0 +1,107 @@
+{
+	"id": 4306,
+	"name": "Ateş ve Demir İmparatoru",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Ateş",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Tuzla Buz Eden Saldırı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Alev Kapanı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bu karakter en az 7 <color=#FFFFFFFF>$[C123041]</color> kademesine sahipse bu Hasar 1 artar.\\nArdından bu karakter 2 <color=#FFFFFFFF>$[C123041]</color> kademesi kazanır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir. Bu karakter en az 7 <color=#FFFFFFFF>Zırhlı Yengeç Kabuğu</color> kademesine sahipse bu Hasar 1 artar.\\nArdından bu karakter 2 <color=#FFFFFFFF>Zırhlı Yengeç Kabuğu</color> kademesi kazanır.",
+			"description": "1 Ateş Hasarı verir. Bu karakter en az 7 Zırhlı Yengeç Kabuğu kademesine sahipse bu Hasar 1 artar.\nArdından bu karakter 2 Zırhlı Yengeç Kabuğu kademesi kazanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23048,
+			"name": "Savaş Hattı Patlaması",
+			"descriptionraw": "Bu karakter 3 kademe <color=#FFFFFFFF>$[C123041]</color> kazanır ve <color=#FFFFFFFF>$[S23046]</color> için $[K53] kullanır.",
+			"descriptionreplaced": "Bu karakter 3 kademe <color=#FFFFFFFF>Zırhlı Yengeç Kabuğu</color> kazanır ve <color=#FFFFFFFF>Haşlayıcı Patlama</color> için <color=#FFFFFFFF>Beceri Hazırlama</color> kullanır.",
+			"description": "Bu karakter 3 kademe Zırhlı Yengeç Kabuğu kazanır ve Haşlayıcı Patlama için Beceri Hazırlama kullanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "İmparatorluk Zırhı",
+			"descriptionraw": "(Pasif) <color=#FFFFFFFF>Savaş başladığında</color> 5 <color=#FFFFFFFF>$[C123041]</color> kademesi kazanır.\\n<color=#FFFFFFFF>Senin tarafından herhangi bir hamle yapıldığında</color> eğer tarafında $[C123041] dışında $[K6] Durumu veya $[K6] Savaş Durumu varsa diğer etkiler iptal edilir. İptal edilen her etki için bu karakter 2 <color=#FFFFFFFF>$[C123041]</color> kademesi kazanır.",
+			"descriptionreplaced": "(Pasif) <color=#FFFFFFFF>Savaş başladığında</color> 5 <color=#FFFFFFFF>Zırhlı Yengeç Kabuğu</color> kademesi kazanır.\\n<color=#FFFFFFFF>Senin tarafından herhangi bir hamle yapıldığında</color> eğer tarafında Zırhlı Yengeç Kabuğu dışında {SPRITE_PRESET#4007}<color=#FFFFFFFF>Kalkan</color> Durumu veya {SPRITE_PRESET#4007}<color=#FFFFFFFF>Kalkan</color> Savaş Durumu varsa diğer etkiler iptal edilir. İptal edilen her etki için bu karakter 2 <color=#FFFFFFFF>Zırhlı Yengeç Kabuğu</color> kademesi kazanır.",
+			"description": "(Pasif) Savaş başladığında 5 Zırhlı Yengeç Kabuğu kademesi kazanır.\nSenin tarafından herhangi bir hamle yapıldığında eğer tarafında Zırhlı Yengeç Kabuğu dışında Kalkan Durumu veya Kalkan Savaş Durumu varsa diğer etkiler iptal edilir. İptal edilen her etki için bu karakter 2 Zırhlı Yengeç Kabuğu kademesi kazanır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Haşlayıcı Patlama",
+			"descriptionraw": "(1 Tur hazırlanır)\\n$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, rakibin hazırdaki tüm karakterlerine 2 $[K5] verir. Bu beceri bu karakterin sahip olduğu her 2 <color=#FFFFFFFF>$[C123041]</color> kademesi için fazladan 1 $[K103] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(1 Tur hazırlanır)\\n1 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir, rakibin hazırdaki tüm karakterlerine 2 <color=#FFFFFFFF>Delme Hasarı</color> verir. Bu beceri bu karakterin sahip olduğu her 2 <color=#FFFFFFFF>Zırhlı Yengeç Kabuğu</color> kademesi için fazladan 1 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir.",
+			"description": "(1 Tur hazırlanır)\n1 Ateş Hasarı verir, rakibin hazırdaki tüm karakterlerine 2 Delme Hasarı verir. Bu beceri bu karakterin sahip olduğu her 2 Zırhlı Yengeç Kabuğu kademesi için fazladan 1 Ateş Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "İmparatorluk Zırhı",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

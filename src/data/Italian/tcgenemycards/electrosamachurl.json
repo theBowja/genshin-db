@@ -1,0 +1,75 @@
+{
+	"id": 3410,
+	"name": "Sciamachurl di Electro",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"Electro",
+		"Altre armi",
+		"Mostro",
+		"Hilichurl"
+	],
+	"skills": [
+		{
+			"id": 34101,
+			"name": "Bastone sferzante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 1 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34102,
+			"name": "Totem del tuono",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], crea 1 <color=#FFFFFFFF>$[C134101]</color> sul lato dell'avversario.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>, crea 1 <color=#FFFFFFFF>Bastone del tuono</color> sul lato dell'avversario.",
+			"description": "Infligge 2 DAN da Electro, crea 1 Bastone del tuono sul lato dell'avversario.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34103,
+			"name": "Maledizione del tuono",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 5 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>.",
+			"description": "Infligge 5 DAN da Electro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

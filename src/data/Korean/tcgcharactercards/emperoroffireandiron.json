@@ -1,0 +1,111 @@
+{
+	"id": 2304,
+	"name": "용암철갑 제왕",
+	"shareid": 351,
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"불 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "용암철갑 제왕",
+	"storytext": "원류바다 이종의 최정상에 있는 두 패자 중 하나. 천적이 없으며, 항상 사냥하고 성장하는 중갑 게다. 사람들은 반쯤은 경외심으로, 반쯤은 장난으로 이를 「용암철갑 제왕」이라고 부른다",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 용암철갑 제왕에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 23041,
+			"name": "집게 파쇄격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "용암 불꽃",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 본 캐릭터에게 <color=#FFFFFFFF>$[C123041]</color>가 7스택 이상 부착된 경우, 이번 피해+1pt\\n이후 본 캐릭터에게 <color=#FFFFFFFF>$[C123041]</color>를 2스택 부착한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 1pt 준다. 본 캐릭터에게 <color=#FFFFFFFF>중갑 게딱지</color>가 7스택 이상 부착된 경우, 이번 피해+1pt\\n이후 본 캐릭터에게 <color=#FFFFFFFF>중갑 게딱지</color>를 2스택 부착한다.",
+			"description": "불 원소 피해를 1pt 준다. 본 캐릭터에게 중갑 게딱지가 7스택 이상 부착된 경우, 이번 피해+1pt\n이후 본 캐릭터에게 중갑 게딱지를 2스택 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23043,
+			"name": "적진 포격",
+			"descriptionraw": "본 캐릭터가 <color=#FFFFFFFF>$[S23046]</color>의 $[K53]를 한다.",
+			"descriptionreplaced": "본 캐릭터가 <color=#FFFFFFFF>용암 폭발</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "본 캐릭터가 용암 폭발의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "제왕의 갑주",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>전투 시작 시:</color> 시작부터 <color=#FFFFFFFF>$[C123041]</color> 5스택을 부착한다.\\n<color=#FFFFFFFF>아군이 임의의 행동 후:</color> 아군 필드에 $[C123041] 이외의 $[K6] 상태 또는 $[K6] 출전 상태가 있을 경우 이를 전부 제거하고, 1개 제거할 때마다 캐릭터에게 <color=#FFFFFFFF>$[C123041]</color>를 2스택 부착한다.",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>전투 시작 시:</color> 시작부터 <color=#FFFFFFFF>중갑 게딱지</color> 5스택을 부착한다.\\n<color=#FFFFFFFF>아군이 임의의 행동 후:</color> 아군 필드에 중갑 게딱지 이외의 {SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color> 상태 또는 {SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color> 출전 상태가 있을 경우 이를 전부 제거하고, 1개 제거할 때마다 캐릭터에게 <color=#FFFFFFFF>중갑 게딱지</color>를 2스택 부착한다.",
+			"description": "[패시브] 전투 시작 시: 시작부터 중갑 게딱지 5스택을 부착한다.\n아군이 임의의 행동 후: 아군 필드에 중갑 게딱지 이외의 보호막 상태 또는 보호막 출전 상태가 있을 경우 이를 전부 제거하고, 1개 제거할 때마다 캐릭터에게 중갑 게딱지를 2스택 부착한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "용암 폭발",
+			"descriptionraw": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 모든 대기 캐릭터에게 $[K5]를 2pt 준다. 본 캐릭터가 보유한 <color=#FFFFFFFF>$[C123041]</color> 2스택마다 이 스킬이 주는 $[K103]+1pt",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 1pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF>관통 피해</color>를 2pt 준다. 본 캐릭터가 보유한 <color=#FFFFFFFF>중갑 게딱지</color> 2스택마다 이 스킬이 주는 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>+1pt",
+			"description": "(1차례 행동 준비 필요)\n불 원소 피해를 1pt 주고 상대의 모든 대기 캐릭터에게 관통 피해를 2pt 준다. 본 캐릭터가 보유한 중갑 게딱지 2스택마다 이 스킬이 주는 불 원소 피해+1pt",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "제왕의 갑주",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,107 @@
+{
+	"id": 4306,
+	"name": "Imperatore del Fuoco e del Ferro",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Altre armi",
+		"Mostro"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Tenaglia distruttiva",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Vampata infuocata",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Se questo personaggio ha almeno 7 accumuli di <color=#FFFFFFFF>$[C123041]</color>, DAN inflitti +1.\\nDopodiché, il personaggio ottiene 2 accumuli di <color=#FFFFFFFF>$[C123041]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color>. Se questo personaggio ha almeno 7 accumuli di <color=#FFFFFFFF>Carapace di Granchio corazzato</color>, DAN inflitti +1.\\nDopodiché, il personaggio ottiene 2 accumuli di <color=#FFFFFFFF>Carapace di Granchio corazzato</color>.",
+			"description": "Infligge 1 DAN da Pyro. Se questo personaggio ha almeno 7 accumuli di Carapace di Granchio corazzato, DAN inflitti +1.\nDopodiché, il personaggio ottiene 2 accumuli di Carapace di Granchio corazzato.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23048,
+			"name": "Linea di detonazione",
+			"descriptionraw": "Questo personaggio ottiene 3 accumuli di <color=#FFFFFFFF>$[C123041]</color> ed esegue $[K53]: <color=#FFFFFFFF>$[S23046]</color>.",
+			"descriptionreplaced": "Questo personaggio ottiene 3 accumuli di <color=#FFFFFFFF>Carapace di Granchio corazzato</color> ed esegue <color=#FFFFFFFF>Preparazione abilità</color>: <color=#FFFFFFFF>Esplosione incandescente</color>.",
+			"description": "Questo personaggio ottiene 3 accumuli di Carapace di Granchio corazzato ed esegue Preparazione abilità: Esplosione incandescente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "Panoplia imperiale",
+			"descriptionraw": "(Passiva) <color=#FFFFFFFF>All'inizio del combattimento:</color> ottieni 5 accumuli di <color=#FFFFFFFF>$[C123041]</color>.\\n<color=#FFFFFFFF>Dopo che esegui un'azione:</color> se sul tuo lato c'è uno stato di $[K6] o uno stato di combattimento $[K6] diverso da $[C123041], questi altri effetti verranno rimossi. Per ogni effetto rimosso, questo personaggio ottiene 2 accumuli di <color=#FFFFFFFF>$[C123041]</color>.",
+			"descriptionreplaced": "(Passiva) <color=#FFFFFFFF>All'inizio del combattimento:</color> ottieni 5 accumuli di <color=#FFFFFFFF>Carapace di Granchio corazzato</color>.\\n<color=#FFFFFFFF>Dopo che esegui un'azione:</color> se sul tuo lato c'è uno stato di {SPRITE_PRESET#4007}<color=#FFFFFFFF>Scudo</color> o uno stato di combattimento {SPRITE_PRESET#4007}<color=#FFFFFFFF>Scudo</color> diverso da Carapace di Granchio corazzato, questi altri effetti verranno rimossi. Per ogni effetto rimosso, questo personaggio ottiene 2 accumuli di <color=#FFFFFFFF>Carapace di Granchio corazzato</color>.",
+			"description": "(Passiva) All'inizio del combattimento: ottieni 5 accumuli di Carapace di Granchio corazzato.\nDopo che esegui un'azione: se sul tuo lato c'è uno stato di Scudo o uno stato di combattimento Scudo diverso da Carapace di Granchio corazzato, questi altri effetti verranno rimossi. Per ogni effetto rimosso, questo personaggio ottiene 2 accumuli di Carapace di Granchio corazzato.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Esplosione incandescente",
+			"descriptionraw": "(Prepara per 1 turno)\\nInfligge $[D__KEY__DAMAGE]$[D__KEY__ELEMENT], infligge 2 $[K5] a tutti i personaggi avversari inattivi. Questa abilità infligge $[K103] +1 per ogni 2 accumuli di <color=#FFFFFFFF>$[C123041]</color> che possiede questo personaggio.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Prepara per 1 turno)\\nInfligge 1{SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color>, infligge 2 <color=#FFFFFFFF>DAN da perforazione</color> a tutti i personaggi avversari inattivi. Questa abilità infligge {SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color> +1 per ogni 2 accumuli di <color=#FFFFFFFF>Carapace di Granchio corazzato</color> che possiede questo personaggio.",
+			"description": "(Prepara per 1 turno)\nInfligge 1DAN da Pyro, infligge 2 DAN da perforazione a tutti i personaggi avversari inattivi. Questa abilità infligge DAN da Pyro +1 per ogni 2 accumuli di Carapace di Granchio corazzato che possiede questo personaggio.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "Panoplia imperiale",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		}
+	]
+}

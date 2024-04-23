@@ -1,0 +1,107 @@
+{
+	"id": 4306,
+	"name": "Emperador Piroacorazado",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Golpe tenaza",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Explosión flagrante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si este personaje tiene un <color=#FFFFFFFF>$[C123041|s1]</color> con al menos 7 cargas, infligirá daño +1.\\nDespués, este personaje obtiene un <color=#FFFFFFFF>$[C123041|s1]</color> de 2 cargas.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>. Si este personaje tiene un <color=#FFFFFFFF>caparazón de Cangrejo Acorazado</color> con al menos 7 cargas, infligirá daño +1.\\nDespués, este personaje obtiene un <color=#FFFFFFFF>caparazón de Cangrejo Acorazado</color> de 2 cargas.",
+			"description": "Inflige 1 pt. de Daño Pyro. Si este personaje tiene un caparazón de Cangrejo Acorazado con al menos 7 cargas, infligirá daño +1.\nDespués, este personaje obtiene un caparazón de Cangrejo Acorazado de 2 cargas.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23048,
+			"name": "Detonación bélica",
+			"descriptionraw": "Este personaje obtiene 3 cargas de <color=#FFFFFFFF>$[C123041|s1]</color> y $[K53|s1] <color=#FFFFFFFF>$[S23046]</color>.",
+			"descriptionreplaced": "Este personaje obtiene 3 cargas de <color=#FFFFFFFF>caparazón de Cangrejo Acorazado</color> y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Explosión ardiente</color>.",
+			"description": "Este personaje obtiene 3 cargas de caparazón de Cangrejo Acorazado y prepara la habilidad Explosión ardiente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "Armadura imperial",
+			"descriptionraw": "Pasiva: <color=#FFFFFFFF>cuando comienza el duelo</color>, otorga una cantidad inicial de 5 cargas de <color=#FFFFFFFF>$[C123041|s1]</color>.\\n<color=#FFFFFFFF>Cuando llevas a cabo cualquier acción</color>, si en tu campo hay un estado de $[K6|s2] o un estado de combate de $[K6|s2] que no sea el $[C123041|s1], los elimina todos y, por cada uno, el personaje obtiene un <color=#FFFFFFFF>$[C123041|s1]</color> de 2 cargas.",
+			"descriptionreplaced": "Pasiva: <color=#FFFFFFFF>cuando comienza el duelo</color>, otorga una cantidad inicial de 5 cargas de <color=#FFFFFFFF>caparazón de Cangrejo Acorazado</color>.\\n<color=#FFFFFFFF>Cuando llevas a cabo cualquier acción</color>, si en tu campo hay un estado de {SPRITE_PRESET#4007}<color=#FFFFFFFF>escudo</color> o un estado de combate de {SPRITE_PRESET#4007}<color=#FFFFFFFF>escudo</color> que no sea el caparazón de Cangrejo Acorazado, los elimina todos y, por cada uno, el personaje obtiene un <color=#FFFFFFFF>caparazón de Cangrejo Acorazado</color> de 2 cargas.",
+			"description": "Pasiva: cuando comienza el duelo, otorga una cantidad inicial de 5 cargas de caparazón de Cangrejo Acorazado.\nCuando llevas a cabo cualquier acción, si en tu campo hay un estado de escudo o un estado de combate de escudo que no sea el caparazón de Cangrejo Acorazado, los elimina todos y, por cada uno, el personaje obtiene un caparazón de Cangrejo Acorazado de 2 cargas.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Explosión ardiente",
+			"descriptionraw": "Necesita prepararse durante 1 turno.\\nInflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], así como 2 pts. de $[K5] a todos los personajes enemigos en reserva. Por cada 2 cargas de <color=#FFFFFFFF>$[C123041|s1]</color> que tenga este personaje, esta habilidad inflige $[K103] +1.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Necesita prepararse durante 1 turno.\\nInflige 1 pt. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>, así como 2 pts. de <color=#FFFFFFFF>Daño Penetrante</color> a todos los personajes enemigos en reserva. Por cada 2 cargas de <color=#FFFFFFFF>caparazón de Cangrejo Acorazado</color> que tenga este personaje, esta habilidad inflige {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> +1.",
+			"description": "Necesita prepararse durante 1 turno.\nInflige 1 pt. de Daño Pyro, así como 2 pts. de Daño Penetrante a todos los personajes enemigos en reserva. Por cada 2 cargas de caparazón de Cangrejo Acorazado que tenga este personaje, esta habilidad inflige Daño Pyro +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "Armadura imperial",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

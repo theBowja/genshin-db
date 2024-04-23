@@ -1,0 +1,111 @@
+{
+	"id": 2304,
+	"name": "鐵甲熔火帝皇",
+	"shareid": 351,
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"火元素",
+		"其他武器",
+		"魔物"
+	],
+	"storytitle": "鐵甲熔火帝皇",
+	"storytext": "矗立在原海異種頂端的兩位霸主之一，不遇天敵，不倦狩獵並成長之蟹。有著半是敬畏，半是戲謔的「帝皇」之稱。",
+	"source": "在貓尾酒館中小王子處進行酒館挑戰，在友好對局難度鐵甲熔火帝皇中獲得勝利後獲得",
+	"skills": [
+		{
+			"id": 23041,
+			"name": "重鉗碎擊",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理傷害</color>。",
+			"description": "造成2點物理傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "烈焰燃綻",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]；如果本角色附屬有至少7層<color=#FFFFFFFF>$[C123041]</color>，則此傷害+1。\\n然後，本角色附屬2層<color=#FFFFFFFF>$[C123041]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成1點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>；如果本角色附屬有至少7層<color=#FFFFFFFF>重甲蟹殼</color>，則此傷害+1。\\n然後，本角色附屬2層<color=#FFFFFFFF>重甲蟹殼</color>。",
+			"description": "造成1點火元素傷害；如果本角色附屬有至少7層重甲蟹殼，則此傷害+1。\n然後，本角色附屬2層重甲蟹殼。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23043,
+			"name": "戰陣爆轟",
+			"descriptionraw": "本角色$[K53]：<color=#FFFFFFFF>$[S23046]</color>。",
+			"descriptionreplaced": "本角色<color=#FFFFFFFF>準備技能</color>：<color=#FFFFFFFF>熾烈轟破</color>。",
+			"description": "本角色準備技能：熾烈轟破。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "帝王甲冑",
+			"descriptionraw": "【被動】<color=#FFFFFFFF>戰鬥開始時：</color>初始附屬5層<color=#FFFFFFFF>$[C123041]</color>。\\n<color=#FFFFFFFF>我方執行任意行動後：</color>如果我方場上存在$[C123041]以外的$[K6]狀態或$[K6]出戰狀態，則將其全部移除；每移除1個，就使角色附屬2層<color=#FFFFFFFF>$[C123041]</color>。",
+			"descriptionreplaced": "【被動】<color=#FFFFFFFF>戰鬥開始時：</color>初始附屬5層<color=#FFFFFFFF>重甲蟹殼</color>。\\n<color=#FFFFFFFF>我方執行任意行動後：</color>如果我方場上存在重甲蟹殼以外的{SPRITE_PRESET#4007}<color=#FFFFFFFF>護盾</color>狀態或{SPRITE_PRESET#4007}<color=#FFFFFFFF>護盾</color>出戰狀態，則將其全部移除；每移除1個，就使角色附屬2層<color=#FFFFFFFF>重甲蟹殼</color>。",
+			"description": "【被動】戰鬥開始時：初始附屬5層重甲蟹殼。\n我方執行任意行動後：如果我方場上存在重甲蟹殼以外的護盾狀態或護盾出戰狀態，則將其全部移除；每移除1個，就使角色附屬2層重甲蟹殼。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被動技能",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "熾烈轟破",
+			"descriptionraw": "（需準備1個行動輪）\\n造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，對敵方所有後臺角色造成2點$[K5]。本角色每附屬有2層<color=#FFFFFFFF>$[C123041]</color>，就使此技能造成的$[K103]+1。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "（需準備1個行動輪）\\n造成1點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>，對敵方所有後臺角色造成2點<color=#FFFFFFFF>穿透傷害</color>。本角色每附屬有2層<color=#FFFFFFFF>重甲蟹殼</color>，就使此技能造成的{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>+1。",
+			"description": "（需準備1個行動輪）\n造成1點火元素傷害，對敵方所有後臺角色造成2點穿透傷害。本角色每附屬有2層重甲蟹殼，就使此技能造成的火元素傷害+1。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "帝王甲冑",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被動技能",
+			"playcost": []
+		}
+	]
+}

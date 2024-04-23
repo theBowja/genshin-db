@@ -1,0 +1,75 @@
+{
+	"id": 3410,
+	"name": "Elektrik Dağ Şamanı",
+	"hp": 4,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Diğer Silahlar",
+		"Canavar",
+		"Dağ Yabanisi"
+	],
+	"skills": [
+		{
+			"id": 34101,
+			"name": "Asa Darbesi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "1 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34102,
+			"name": "Yıldırım Darbesi Totemi",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve rakibinin tarafında 1 <color=#FFFFFFFF>$[C134101]</color> oluşturur.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve rakibinin tarafında 1 <color=#FFFFFFFF>Yıldırım Asası</color> oluşturur.",
+			"description": "2 Elektrik Hasarı verir ve rakibinin tarafında 1 Yıldırım Asası oluşturur.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34103,
+			"name": "Yıldırım Darbesi Laneti",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "5 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir.",
+			"description": "5 Elektrik Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

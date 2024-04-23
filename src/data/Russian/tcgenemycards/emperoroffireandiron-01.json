@@ -1,0 +1,107 @@
+{
+	"id": 4307,
+	"name": "Император огня и железа",
+	"hp": 24,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Пиро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Дробящая хватка",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Взрывная жара",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если у этого персонажа <color=#FFFFFFFF>$[C123041]</color> не менее 7 ур., то этот урон увеличивается на 1 ед.\\nЗатем <color=#FFFFFFFF>$[C123041]</color> этого персонажа увеличивается на 2 ур.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед. Если у этого персонажа <color=#FFFFFFFF>Щит бронекраба</color> не менее 7 ур., то этот урон увеличивается на 1 ед.\\nЗатем <color=#FFFFFFFF>Щит бронекраба</color> этого персонажа увеличивается на 2 ур.",
+			"description": "Наносит Пиро урон, 1 ед. Если у этого персонажа Щит бронекраба не менее 7 ур., то этот урон увеличивается на 1 ед.\nЗатем Щит бронекраба этого персонажа увеличивается на 2 ур.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23049,
+			"name": "Взрыв на линии боя",
+			"descriptionraw": "У персонажа добавляется <color=#FFFFFFFF>$[C123041]</color> (6 ед.). Начинается $[K53]: <color=#FFFFFFFF>$[S23046]</color>.",
+			"descriptionreplaced": "У персонажа добавляется <color=#FFFFFFFF>Щит бронекраба</color> (6 ед.). Начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Огненный взрыв</color>.",
+			"description": "У персонажа добавляется Щит бронекраба (6 ед.). Начинается Подготовка навыка: Огненный взрыв.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "Имперская броня",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>В начале битвы:</color> у персонажа сразу есть <color=#FFFFFFFF>$[C123041]</color> (5 ур.).\\n<color=#FFFFFFFF>Когда вы совершаете любое действие</color>: если у вас есть $[K6] или боевой статус $[K6] (не считая $[C123041]), то все они исчезают, и за каждый исчезнувший статус активировавший этот эффект персонаж получает <color=#FFFFFFFF>$[C123041]</color> (2 ур.).",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>В начале битвы:</color> у персонажа сразу есть <color=#FFFFFFFF>Щит бронекраба</color> (5 ур.).\\n<color=#FFFFFFFF>Когда вы совершаете любое действие</color>: если у вас есть {SPRITE_PRESET#4007}<color=#FFFFFFFF>Щит</color> или боевой статус {SPRITE_PRESET#4007}<color=#FFFFFFFF>Щит</color> (не считая Щит бронекраба), то все они исчезают, и за каждый исчезнувший статус активировавший этот эффект персонаж получает <color=#FFFFFFFF>Щит бронекраба</color> (2 ур.).",
+			"description": "(Пассивный навык) В начале битвы: у персонажа сразу есть Щит бронекраба (5 ур.).\nКогда вы совершаете любое действие: если у вас есть Щит или боевой статус Щит (не считая Щит бронекраба), то все они исчезают, и за каждый исчезнувший статус активировавший этот эффект персонаж получает Щит бронекраба (2 ур.).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Огненный взрыв",
+			"descriptionraw": "На подготовку требуется 1 раунд.\\nНаносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Все неактивные персонажи противника получают $[K5], 2 ед. Если у этого персонажа есть <color=#FFFFFFFF>$[C123041]</color>, то за каждые 2 ур. Щита этот навык наносит на 1 ед. $[K103]а больше.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "На подготовку требуется 1 раунд.\\nНаносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед. Все неактивные персонажи противника получают <color=#FFFFFFFF>Проникающий урон</color>, 2 ед. Если у этого персонажа есть <color=#FFFFFFFF>Щит бронекраба</color>, то за каждые 2 ур. Щита этот навык наносит на 1 ед. {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>а больше.",
+			"description": "На подготовку требуется 1 раунд.\nНаносит Пиро урон, 1 ед. Все неактивные персонажи противника получают Проникающий урон, 2 ед. Если у этого персонажа есть Щит бронекраба, то за каждые 2 ур. Щита этот навык наносит на 1 ед. Пиро урона больше.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "Имперская броня",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

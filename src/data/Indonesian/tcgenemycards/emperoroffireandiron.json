@@ -1,0 +1,107 @@
+{
+	"id": 4306,
+	"name": "Emperor of Fire and Iron",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Senjata Lain",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Shatterclamp Strike",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Buster Blaze",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Jika Karakter ini memiliki minimal 7 lapis <color=#FFFFFFFF>$[C123041]</color>, maka akan mengakibatkan DMG +1.\\nKemudian, Karakter ini memperoleh 2 lapis <color=#FFFFFFFF>$[C123041]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>. Jika Karakter ini memiliki minimal 7 lapis <color=#FFFFFFFF>Armored Crab Carapace</color>, maka akan mengakibatkan DMG +1.\\nKemudian, Karakter ini memperoleh 2 lapis <color=#FFFFFFFF>Armored Crab Carapace</color>.",
+			"description": "Mengakibatkan 1 poin Pyro DMG. Jika Karakter ini memiliki minimal 7 lapis Armored Crab Carapace, maka akan mengakibatkan DMG +1.\nKemudian, Karakter ini memperoleh 2 lapis Armored Crab Carapace.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23048,
+			"name": "Battle-Line Detonation",
+			"descriptionraw": "Karakter ini memperoleh 3 lapis <color=#FFFFFFFF>$[C123041]</color> dan $[K53|s1]: <color=#FFFFFFFF>$[S23046]</color>.",
+			"descriptionreplaced": "Karakter ini memperoleh 3 lapis <color=#FFFFFFFF>Armored Crab Carapace</color> dan <color=#FFFFFFFF>mempersiapkan Skill</color>: <color=#FFFFFFFF>Searing Blast</color>.",
+			"description": "Karakter ini memperoleh 3 lapis Armored Crab Carapace dan mempersiapkan Skill: Searing Blast.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "Imperial Panoply",
+			"descriptionraw": "[Pasif] <color=#FFFFFFFF>Saat pertempuran dimulai: </color>mendapat 5 lapis <color=#FFFFFFFF>$[C123041] di awal.</color>\\n<color=#FFFFFFFF>Setelah kamu melakukan Aksi apa pun: </color>jika di sisimu terdapat status $[K6] atau Status Pertempuran $[K6] selain daripada $[C123041], maka semua efek lainnya akan dihapus. Untuk setiap 1 efek yang dihapus, Karakter ini mendapatkan 2 lapis <color=#FFFFFFFF>$[C123041]</color>.",
+			"descriptionreplaced": "[Pasif] <color=#FFFFFFFF>Saat pertempuran dimulai: </color>mendapat 5 lapis <color=#FFFFFFFF>Armored Crab Carapace di awal.</color>\\n<color=#FFFFFFFF>Setelah kamu melakukan Aksi apa pun: </color>jika di sisimu terdapat status {SPRITE_PRESET#4007}<color=#FFFFFFFF>Perisai</color> atau Status Pertempuran {SPRITE_PRESET#4007}<color=#FFFFFFFF>Perisai</color> selain daripada Armored Crab Carapace, maka semua efek lainnya akan dihapus. Untuk setiap 1 efek yang dihapus, Karakter ini mendapatkan 2 lapis <color=#FFFFFFFF>Armored Crab Carapace</color>.",
+			"description": "[Pasif] Saat pertempuran dimulai: mendapat 5 lapis Armored Crab Carapace di awal.\nSetelah kamu melakukan Aksi apa pun: jika di sisimu terdapat status Perisai atau Status Pertempuran Perisai selain daripada Armored Crab Carapace, maka semua efek lainnya akan dihapus. Untuk setiap 1 efek yang dihapus, Karakter ini mendapatkan 2 lapis Armored Crab Carapace.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Searing Blast",
+			"descriptionraw": "(Persiapkan selama 1 giliran)\\nMengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan mengakibatkan 2 poin $[K5] kepada semua Karakter standby lawan. Untuk setiap 2 lapis <color=#FFFFFFFF>$[C123041]</color> yang dimiliki Karakter, Skill ini akan mengakibatkan $[K103] +1.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Persiapkan selama 1 giliran)\\nMengakibatkan 1 poin {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color> dan mengakibatkan 2 poin <color=#FFFFFFFF>Piercing DMG</color> kepada semua Karakter standby lawan. Untuk setiap 2 lapis <color=#FFFFFFFF>Armored Crab Carapace</color> yang dimiliki Karakter, Skill ini akan mengakibatkan {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color> +1.",
+			"description": "(Persiapkan selama 1 giliran)\nMengakibatkan 1 poin Pyro DMG dan mengakibatkan 2 poin Piercing DMG kepada semua Karakter standby lawan. Untuk setiap 2 lapis Armored Crab Carapace yang dimiliki Karakter, Skill ini akan mengakibatkan Pyro DMG +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "Imperial Panoply",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

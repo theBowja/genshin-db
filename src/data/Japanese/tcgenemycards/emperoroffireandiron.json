@@ -1,0 +1,107 @@
+{
+	"id": 4306,
+	"name": "鉄甲熔炎帝王",
+	"hp": 15,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"炎元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "ハサミハンマー",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "烈炎噴射",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。本キャラが<color=#FFFFFFFF>$[C123041]</color>を7層以上付与されている場合、このダメージ+1。\\nその後、本キャラに<color=#FFFFFFFF>$[C123041]</color>を2層付与する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。本キャラが<color=#FFFFFFFF>重甲ヤドカニの殻</color>を7層以上付与されている場合、このダメージ+1。\\nその後、本キャラに<color=#FFFFFFFF>重甲ヤドカニの殻</color>を2層付与する。",
+			"description": "炎元素ダメージを1与える。本キャラが重甲ヤドカニの殻を7層以上付与されている場合、このダメージ+1。\nその後、本キャラに重甲ヤドカニの殻を2層付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23048,
+			"name": "戦陣爆撃",
+			"descriptionraw": "本キャラに<color=#FFFFFFFF>$[C123041]</color>を3層付与し、$[K53]に入る：<color=#FFFFFFFF>$[S23046]</color>。",
+			"descriptionreplaced": "本キャラに<color=#FFFFFFFF>重甲ヤドカニの殻</color>を3層付与し、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>熾烈轟破</color>。",
+			"description": "本キャラに重甲ヤドカニの殻を3層付与し、スキル準備に入る：熾烈轟破。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "帝王の鎧",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>戦闘開始時</color>、<color=#FFFFFFFF>$[C123041]</color>を5層付与する。\\n<color=#FFFFFFFF>味方が任意のアクションをした後</color>、味方のフィールドに$[C123041]以外の$[K6]状態、または$[K6]出撃状態が存在する場合、それらをすべて解除する。1個解除するたびに、キャラに<color=#FFFFFFFF>$[C123041]</color>を2層付与する。",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>戦闘開始時</color>、<color=#FFFFFFFF>重甲ヤドカニの殻</color>を5層付与する。\\n<color=#FFFFFFFF>味方が任意のアクションをした後</color>、味方のフィールドに重甲ヤドカニの殻以外の{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>状態、または{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>出撃状態が存在する場合、それらをすべて解除する。1個解除するたびに、キャラに<color=#FFFFFFFF>重甲ヤドカニの殻</color>を2層付与する。",
+			"description": "【固有】戦闘開始時、重甲ヤドカニの殻を5層付与する。\n味方が任意のアクションをした後、味方のフィールドに重甲ヤドカニの殻以外のシールド状態、またはシールド出撃状態が存在する場合、それらをすべて解除する。1個解除するたびに、キャラに重甲ヤドカニの殻を2層付与する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "熾烈轟破",
+			"descriptionraw": "（1ターンの準備が必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。相手の待機キャラ全員に$[K5]を2与える。本キャラに付与されている<color=#FFFFFFFF>$[C123041]</color>が2層につき、このスキルの与える$[K103]+1。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "（1ターンの準備が必要）\\n{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。相手の待機キャラ全員に<color=#FFFFFFFF>貫通ダメージ</color>を2与える。本キャラに付与されている<color=#FFFFFFFF>重甲ヤドカニの殻</color>が2層につき、このスキルの与える{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>+1。",
+			"description": "（1ターンの準備が必要）\n炎元素ダメージを1与える。相手の待機キャラ全員に貫通ダメージを2与える。本キャラに付与されている重甲ヤドカニの殻が2層につき、このスキルの与える炎元素ダメージ+1。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "帝王の鎧",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

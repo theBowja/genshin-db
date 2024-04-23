@@ -1,0 +1,107 @@
+{
+	"id": 4307,
+	"name": "Kaiser von Feuer und Eisen",
+	"hp": 24,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 23041,
+			"name": "Hämmernde Zangen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23042,
+			"name": "Glutwirbel",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Erhöht diesen SCH um 1 Pkt., wenn die Figur mindestens 7 Stapelungen <color=#FFFFFFFF>$[C123041]</color> hat.\\nVerleiht dieser Figur daraufhin 2 Stapelungen <color=#FFFFFFFF>$[C123041]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>. Erhöht diesen SCH um 1 Pkt., wenn die Figur mindestens 7 Stapelungen <color=#FFFFFFFF>Rüstung der Panzerkrabbe</color> hat.\\nVerleiht dieser Figur daraufhin 2 Stapelungen <color=#FFFFFFFF>Rüstung der Panzerkrabbe</color>.",
+			"description": "Verursacht 1 Pkt. Pyro-SCH. Erhöht diesen SCH um 1 Pkt., wenn die Figur mindestens 7 Stapelungen Rüstung der Panzerkrabbe hat.\nVerleiht dieser Figur daraufhin 2 Stapelungen Rüstung der Panzerkrabbe.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23049,
+			"name": "Sprengung der Kampflinie",
+			"descriptionraw": "Erhält selbst 6 Stapelungen <color=#FFFFFFFF>$[C123041]</color> und $[K53|s1]: <color=#FFFFFFFF>$[S23046]</color>.",
+			"descriptionreplaced": "Erhält selbst 6 Stapelungen <color=#FFFFFFFF>Rüstung der Panzerkrabbe</color> und <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Versengender Knall</color>.",
+			"description": "Erhält selbst 6 Stapelungen Rüstung der Panzerkrabbe und bereitet folgende Fähigkeiten vor: Versengender Knall.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23044,
+			"name": "Kaiserliche Rüstung",
+			"descriptionraw": "Passiv – <color=#FFFFFFFF>Zu Beginn des Kampfes:</color> Erhält 5 Stapelungen <color=#FFFFFFFF>$[C123041]</color>.\\n<color=#FFFFFFFF>Nach einer beliebigen Aktion deiner Seite:</color> Entfernt all den $[K6]-Status oder $[K6]-Kampfstatus außer $[C123041] auf deiner Seite; Verleiht der Figur für jeden entfernten Status 2 Stapelungen <color=#FFFFFFFF>$[C123041]</color>.",
+			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Zu Beginn des Kampfes:</color> Erhält 5 Stapelungen <color=#FFFFFFFF>Rüstung der Panzerkrabbe</color>.\\n<color=#FFFFFFFF>Nach einer beliebigen Aktion deiner Seite:</color> Entfernt all den {SPRITE_PRESET#4007}<color=#FFFFFFFF>Schild</color>-Status oder {SPRITE_PRESET#4007}<color=#FFFFFFFF>Schild</color>-Kampfstatus außer Rüstung der Panzerkrabbe auf deiner Seite; Verleiht der Figur für jeden entfernten Status 2 Stapelungen <color=#FFFFFFFF>Rüstung der Panzerkrabbe</color>.",
+			"description": "Passiv – Zu Beginn des Kampfes: Erhält 5 Stapelungen Rüstung der Panzerkrabbe.\nNach einer beliebigen Aktion deiner Seite: Entfernt all den Schild-Status oder Schild-Kampfstatus außer Rüstung der Panzerkrabbe auf deiner Seite; Verleiht der Figur für jeden entfernten Status 2 Stapelungen Rüstung der Panzerkrabbe.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 23046,
+			"name": "Versengender Knall",
+			"descriptionraw": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Fügt allen inaktiven Figuren des Gegners 2 Pkt. $[K5|s1] zu. Erhöht für je 2 Stapelungen von <color=#FFFFFFFF>$[C123041]</color> den $[K103|s1] dieser Fähigkeit um 1 Pkt.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 1 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>. Fügt allen inaktiven Figuren des Gegners 2 Pkt. <color=#FFFFFFFF>durchdringenden SCH</color> zu. Erhöht für je 2 Stapelungen von <color=#FFFFFFFF>Rüstung der Panzerkrabbe</color> den {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color> dieser Fähigkeit um 1 Pkt.",
+			"description": "(Die Vorbereitung dauert 1 Zug)\nVerursacht 1 Pkt. Pyro-SCH. Fügt allen inaktiven Figuren des Gegners 2 Pkt. durchdringenden SCH zu. Erhöht für je 2 Stapelungen von Rüstung der Panzerkrabbe den Pyro-SCH dieser Fähigkeit um 1 Pkt.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 23047,
+			"name": "Kaiserliche Rüstung",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}
