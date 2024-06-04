@@ -1,0 +1,96 @@
+{
+	"id": 3010,
+	"name": "Mek amplificateur - Pneuma",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sans élément",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 30101,
+			"name": "Heurt",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30102,
+			"name": "Amplification énergétique pneuma",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique un <color=#FFFFFFFF>$[C130101|s1]</color> au personnage.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color> et applique un <color=#FFFFFFFF>boost d'énergie pneuma</color> au personnage.",
+			"description": "Inflige 2 pts de DGT physiques et applique un boost d'énergie pneuma au personnage.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30103,
+			"name": "Explosion énergétique pneuma",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique un <color=#FFFFFFFF>$[C130101|s1]</color> au personnage.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color> et applique un <color=#FFFFFFFF>boost d'énergie pneuma</color> au personnage.",
+			"description": "Inflige 3 pts de DGT physiques et applique un boost d'énergie pneuma au personnage.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30104,
+			"name": "Réparation structurelle pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Lorsque votre personnage a utilisé une capacité : </color>Soigne votre personnage ayant subi le plus de DGT pour 1 pt.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Lorsque votre personnage a utilisé une capacité : </color>Soigne votre personnage ayant subi le plus de DGT pour 1 pt.",
+			"description": "Lorsque votre personnage a utilisé une capacité : Soigne votre personnage ayant subi le plus de DGT pour 1 pt.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 30105,
+			"name": "Signature énergétique : Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'{SPRITE_PRESET#3504}Arkhe ousia : </color>il change en $[K1014|s1] et <color=#FFFFFFFF>ne peut pas utiliser de capacité</color> jusqu'à la fin de la manche.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'{SPRITE_PRESET#3504}Arkhe ousia : </color>il change en <color=#FFFFFFFF>forme désactivée</color> et <color=#FFFFFFFF>ne peut pas utiliser de capacité</color> jusqu'à la fin de la manche.",
+			"description": "Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'Arkhe ousia : il change en forme désactivée et ne peut pas utiliser de capacité jusqu'à la fin de la manche.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

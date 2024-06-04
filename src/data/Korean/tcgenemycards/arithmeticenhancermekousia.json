@@ -1,0 +1,96 @@
+{
+	"id": 3009,
+	"name": "장치·연산 증폭기·우시아",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"원소 타입 없음",
+		"기타 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 30091,
+			"name": "돌진",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30092,
+			"name": "에너지 증폭·우시아",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C130091]</color>를 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 주고 본 캐릭터에게 <color=#FFFFFFFF>에너지 강화·우시아</color>를 부착한다.",
+			"description": "물리 피해를 2pt 주고 본 캐릭터에게 에너지 강화·우시아를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30093,
+			"name": "에너지 폭파·우시아",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C130091]</color>를 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>에너지 강화·우시아</color>를 부착한다.",
+			"description": "물리 피해를 3pt 주고 본 캐릭터에게 에너지 강화·우시아를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30094,
+			"name": "기체 강화·우시아",
+			"descriptionraw": "아군 캐릭터가 주는 피해+1pt",
+			"descriptionreplaced": "아군 캐릭터가 주는 피해+1pt",
+			"description": "아군 캐릭터가 주는 피해+1pt",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 30095,
+			"name": "에너지원 특징: 우시아",
+			"descriptionraw": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}아르케의 힘: 프뉴마」 성질을 가진 캐릭터에게 피해를 받은 후:</color> 이 캐릭터가 $[K1014]로 전환되고 이번 턴이 종료되기 전까지 <color=#FFFFFFFF>스킬을 사용할 수 없다</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}아르케의 힘: 프뉴마」 성질을 가진 캐릭터에게 피해를 받은 후:</color> 이 캐릭터가 <color=#FFFFFFFF>「에너지 상실 형태」</color>로 전환되고 이번 턴이 종료되기 전까지 <color=#FFFFFFFF>스킬을 사용할 수 없다</color>.",
+			"description": "「아르케의 힘: 프뉴마」 성질을 가진 캐릭터에게 피해를 받은 후: 이 캐릭터가 「에너지 상실 형태」로 전환되고 이번 턴이 종료되기 전까지 스킬을 사용할 수 없다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

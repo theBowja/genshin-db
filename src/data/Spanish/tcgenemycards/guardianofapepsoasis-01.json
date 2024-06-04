@@ -1,0 +1,87 @@
+{
+	"id": 4706,
+	"name": "Guardián del Oasis de Apep",
+	"hp": 35,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Dendro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 27021,
+			"name": "Ataque del desarraigo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27022,
+			"name": "Flujo vital",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE_2] pts. de $[D__KEY__ELEMENT]. Tomas 1 carta de <color=#FFFFFFFF>$[C127021]</color> y crea 1 carga de <color=#FFFFFFFF>$[C127026|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2107}<color=#7EC236FF>Daño Dendro</color>. Tomas 1 carta de <color=#FFFFFFFF>Llamada a un familiar</color> y crea 1 carga de <color=#FFFFFFFF>nutrición del oasis</color>.",
+			"description": "Inflige 2 pts. de Daño Dendro. Tomas 1 carta de Llamada a un familiar y crea 1 carga de nutrición del oasis.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27023,
+			"name": "Final inminente",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE_2] pts. de $[D__KEY__ELEMENT]. Tomas 1 carta de <color=#FFFFFFFF>$[C127021]</color> y crea 2 cargas de <color=#FFFFFFFF>$[C127026|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2107}<color=#7EC236FF>Daño Dendro</color>. Tomas 1 carta de <color=#FFFFFFFF>Llamada a un familiar</color> y crea 2 cargas de <color=#FFFFFFFF>nutrición del oasis</color>.",
+			"description": "Inflige 2 pts. de Daño Dendro. Tomas 1 carta de Llamada a un familiar y crea 2 cargas de nutrición del oasis.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27024,
+			"name": "Invocación proliferante",
+			"descriptionraw": "Pasiva: al comenzar el duelo, crea 6 cartas de <color=#FFFFFFFF>$[C127021]</color> que se colocan aleatoriamente en tu pila. Cuando hayas invocado 4 <color=#FFFFFFFF>$[C127022|s2]</color>, este personaje obtiene una carta de <color=#FFFFFFFF>$[C127027]</color> y 2 pts. de <color=#FFFFFFFF>$[K6|s2]</color>.",
+			"descriptionreplaced": "Pasiva: al comenzar el duelo, crea 6 cartas de <color=#FFFFFFFF>Llamada a un familiar</color> que se colocan aleatoriamente en tu pila. Cuando hayas invocado 4 <color=#FFFFFFFF>organismos proliferadores</color>, este personaje obtiene una carta de <color=#FFFFFFFF>Corazón del Oasis resurgido</color> y 2 pts. de <color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>escudo</color></color>.",
+			"description": "Pasiva: al comenzar el duelo, crea 6 cartas de Llamada a un familiar que se colocan aleatoriamente en tu pila. Cuando hayas invocado 4 organismos proliferadores, este personaje obtiene una carta de Corazón del Oasis resurgido y 2 pts. de escudo.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

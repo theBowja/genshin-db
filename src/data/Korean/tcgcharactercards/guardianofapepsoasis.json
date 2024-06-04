@@ -1,0 +1,91 @@
+{
+	"id": 2702,
+	"name": "아펩의 오아시스 파수꾼",
+	"shareid": 371,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"풀 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "종말을 맞은 지혜·아펩의 오아시스 파수꾼",
+	"storytext": "한때 아펩은 홀로 최후의 풍경에 빠졌다. 모든 인간, 신, 용, 들짐승, 새, 물고기와 모든 기억, 지혜, 말 그리고 증오는 색 없는 가루가 되었고 마지막 달빛은 밝은 불의 비가 되어 황야에 내렸다.\n……\n한때 아펩은 고향 잃은 왕의 행궁이 아닌 모래바다 아래를 자신의 무덤으로 여겼다. 그러나 「지혜」의 독은 곧 그를 무수히 많은 달이 지나간 세월의 증오와 분노에서 해방시킬 것이다. 그는 색 없는 최후의 경치에 염증을 느꼈고 마침내 젊은 신과 금색의 여행자를 통해 떠올렸기 때문이다, 비록 자신이 지배하던 푸른 땅은 도금된 황야가 되었고 자신의 자손은 생존을 위해 뒤틀려졌으나, 여전히 마음속 한구석에 오아시스의 경치를 품고 있었다는 것을 말이다",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 아펩의 오아시스 파수꾼에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 27021,
+			"name": "고향 잃은 자의 공격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27022,
+			"name": "생명의 나선",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_2]pt 주고 <color=#FFFFFFFF>$[C127021]</color>을 1장 드로우하며 <color=#FFFFFFFF>$[C127026]</color>을 1스택 생성한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>권속 소환</color>을 1장 드로우하며 <color=#FFFFFFFF>오아시스의 양분</color>을 1스택 생성한다.",
+			"description": "풀 원소 피해를 2pt 주고 권속 소환을 1장 드로우하며 오아시스의 양분을 1스택 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27023,
+			"name": "종말의 추락",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_2]pt 주고 <color=#FFFFFFFF>$[C127021]</color>을 1장 드로우하며 <color=#FFFFFFFF>$[C127026]</color>을 2스택 생성한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>권속 소환</color>을 1장 드로우하며 <color=#FFFFFFFF>오아시스의 양분</color>을 2스택 생성한다.",
+			"description": "풀 원소 피해를 2pt 주고 권속 소환을 1장 드로우하며 오아시스의 양분을 2스택 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27024,
+			"name": "증식의 부름",
+			"descriptionraw": "[패시브] 전투 시작 시, <color=#FFFFFFFF>$[C127021]</color>을 6장 생성해 카드 더미에 랜덤으로 넣는다. 아군이 <color=#FFFFFFFF>$[C127022]</color>를 4기 소환 후, 이 캐릭터에 <color=#FFFFFFFF>$[C127027]</color>이 부착되며 <color=#FFFFFFFF>$[K6]</color>을 2pt 획득한다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, <color=#FFFFFFFF>권속 소환</color>을 6장 생성해 카드 더미에 랜덤으로 넣는다. 아군이 <color=#FFFFFFFF>증식 생명체</color>를 4기 소환 후, 이 캐릭터에 <color=#FFFFFFFF>다시 타오른 오아시스의 심장</color>이 부착되며 <color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color></color>을 2pt 획득한다.",
+			"description": "[패시브] 전투 시작 시, 권속 소환을 6장 생성해 카드 더미에 랜덤으로 넣는다. 아군이 증식 생명체를 4기 소환 후, 이 캐릭터에 다시 타오른 오아시스의 심장이 부착되며 보호막을 2pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

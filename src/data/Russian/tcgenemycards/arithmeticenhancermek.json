@@ -1,0 +1,74 @@
+{
+	"id": 3008,
+	"name": "Мек: Улучшение вычислений",
+	"istransformation": true,
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Без элемента",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 30081,
+			"name": "Таран",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 1 ед.",
+			"description": "Наносит Физический урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30082,
+			"name": "Тяжёлый таран",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30083,
+			"name": "Накачка",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., персонаж возвращается в изначальное состояние архэ (пневма/усия).",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 3 ед., персонаж возвращается в изначальное состояние архэ (пневма/усия).",
+			"description": "Наносит Физический урон, 3 ед., персонаж возвращается в изначальное состояние архэ (пневма/усия).",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		}
+	]
+}

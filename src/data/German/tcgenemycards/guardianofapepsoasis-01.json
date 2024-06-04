@@ -1,0 +1,87 @@
+{
+	"id": 4706,
+	"name": "Beschützer von Apeps Oase",
+	"hp": 35,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Dendro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 27021,
+			"name": "Schlag des Exilanten",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27022,
+			"name": "Fluss des Lebens",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE_2] Pkt. $[D__KEY__ELEMENT|s1], zieht 1 <color=#FFFFFFFF>$[C127021]</color>, erschafft 1 Stapelung <color=#FFFFFFFF>$[C127026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>, zieht 1 <color=#FFFFFFFF>Erwacht, meine Untergebenen</color>, erschafft 1 Stapelung <color=#FFFFFFFF>Nahrung der Oase</color>.",
+			"description": "Verursacht 2 Pkt. Dendro-SCH, zieht 1 Erwacht, meine Untergebenen, erschafft 1 Stapelung Nahrung der Oase.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27023,
+			"name": "Der Abschied ist nahe",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE_2] Pkt. $[D__KEY__ELEMENT|s1], zieht 1 <color=#FFFFFFFF>$[C127021]</color>, erschafft 2 Stapelungen <color=#FFFFFFFF>$[C127026]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>, zieht 1 <color=#FFFFFFFF>Erwacht, meine Untergebenen</color>, erschafft 2 Stapelungen <color=#FFFFFFFF>Nahrung der Oase</color>.",
+			"description": "Verursacht 2 Pkt. Dendro-SCH, zieht 1 Erwacht, meine Untergebenen, erschafft 2 Stapelungen Nahrung der Oase.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27024,
+			"name": "Ruf der Wucherung",
+			"descriptionraw": "Passiv – Erschafft zu Beginn des Kampfes 6 <color=#FFFFFFFF>$[C127021]</color> und legt sie zufällig in deinen Stapel. Nachdem du 4 <color=#FFFFFFFF>$[C127022]</color> erschaffen hast, erhält diese Figur <color=#FFFFFFFF>$[C127027]</color> und 2 Pkt. <color=#FFFFFFFF>$[K6]</color>.",
+			"descriptionreplaced": "Passiv – Erschafft zu Beginn des Kampfes 6 <color=#FFFFFFFF>Erwacht, meine Untergebenen</color> und legt sie zufällig in deinen Stapel. Nachdem du 4 <color=#FFFFFFFF>Wucherungsorganismus</color> erschaffen hast, erhält diese Figur <color=#FFFFFFFF>Wiedererwecktes Herz der Oase</color> und 2 Pkt. <color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>Schild</color></color>.",
+			"description": "Passiv – Erschafft zu Beginn des Kampfes 6 Erwacht, meine Untergebenen und legt sie zufällig in deinen Stapel. Nachdem du 4 Wucherungsorganismus erschaffen hast, erhält diese Figur Wiedererwecktes Herz der Oase und 2 Pkt. Schild.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

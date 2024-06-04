@@ -1,0 +1,101 @@
+{
+	"id": 1212,
+	"name": "Furina",
+	"transformsinto": [
+		1211
+	],
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"Hydro",
+		"Espada",
+		"Fontaine",
+		"Arkhe: Pneuma"
+	],
+	"skills": [
+		{
+			"id": 12121,
+			"name": "Solicitação da Solista",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>Uma vez por Turno:</color> Cria 1 carta <color=#FFFFFFFF>$[C112113]</color> em sua Mão.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.\\n<color=#FFFFFFFF>Uma vez por Turno:</color> Cria 1 carta <color=#FFFFFFFF>Trono Sagrado e Secular</color> em sua Mão.",
+			"description": "Causa 2 pontos de Dano Físico.\nUma vez por Turno: Cria 1 carta Trono Sagrado e Secular em sua Mão.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12122,
+			"name": "Salon Solitaire",
+			"descriptionraw": "<color=#FFFFFFFF>$[A1211]</color> está atualmente no estado {SPRITE_PRESET#3505}Arkhe: Pneuma. Invoca <color=#FFFFFFFF>$[C112112]</color>.\\n(Quando $[A1211] está no estado {SPRITE_PRESET#3504}Arkhe: Ousia, ela invocará <color=#FFFFFFFF>$[C112111]</color> ao invés disso)",
+			"descriptionreplaced": "<color=#FFFFFFFF>Furina</color> está atualmente no estado {SPRITE_PRESET#3505}Arkhe: Pneuma. Invoca <color=#FFFFFFFF>Cantora das Correntes</color>.\\n(Quando Furina está no estado {SPRITE_PRESET#3504}Arkhe: Ousia, ela invocará <color=#FFFFFFFF>Membros do Salon</color> ao invés disso)",
+			"description": "Furina está atualmente no estado Arkhe: Pneuma. Invoca Cantora das Correntes.\n(Quando Furina está no estado Arkhe: Ousia, ela invocará Membros do Salon ao invés disso)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12113,
+			"name": "E o Povo Vai à Loucura",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], gera <color=#FFFFFFFF>$[C112114]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, gera <color=#FFFFFFFF>Euforia Universal</color>.",
+			"description": "Causa 2 pontos de Dano Hydro, gera Euforia Universal.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12114,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 12115,
+			"name": "Arkhe: Trono Sagrado e Secular",
+			"descriptionraw": "(Passivo) Quando a batalha começa, gera 1 carta <color=#FFFFFFFF>$[C112113]</color> em sua Mão.",
+			"descriptionreplaced": "(Passivo) Quando a batalha começa, gera 1 carta <color=#FFFFFFFF>Trono Sagrado e Secular</color> em sua Mão.",
+			"description": "(Passivo) Quando a batalha começa, gera 1 carta Trono Sagrado e Secular em sua Mão.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

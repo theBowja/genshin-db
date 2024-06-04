@@ -1,0 +1,100 @@
+{
+	"id": 3208,
+	"name": "殲滅特化型マシナリー·ウーシア",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"水元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 32081,
+			"name": "ヴィシャスキック",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32082,
+			"name": "ブレイドダンス",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を3与える。",
+			"description": "水元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32083,
+			"name": "ブレイドワルツ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を5与える。",
+			"description": "水元素ダメージを5与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32084,
+			"name": "支援ユニット·ウーシア",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C132081]</color>を生成する。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>マシナリー·区域警戒型·ウーシア</color>を生成する。",
+			"description": "【固有】戦闘開始時、マシナリー·区域警戒型·ウーシアを生成する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 32085,
+			"name": "エネルギー特徴·ウーシア",
+			"descriptionraw": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}アルケー：プネウマ」を持つキャラからのダメージを受けた後</color>、本キャラは$[K1014]にチェンジする。本ラウンド終了まで<color=#FFFFFFFF>スキルを発動できなくなる</color>。",
+			"descriptionreplaced": "<color=#FFFFFFFF>「{SPRITE_PRESET#3505}アルケー：プネウマ」を持つキャラからのダメージを受けた後</color>、本キャラは<color=#FFFFFFFF>「無力化状態」</color>にチェンジする。本ラウンド終了まで<color=#FFFFFFFF>スキルを発動できなくなる</color>。",
+			"description": "「アルケー：プネウマ」を持つキャラからのダメージを受けた後、本キャラは「無力化状態」にチェンジする。本ラウンド終了までスキルを発動できなくなる。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

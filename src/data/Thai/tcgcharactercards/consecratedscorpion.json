@@ -1,0 +1,93 @@
+{
+	"id": 2405,
+	"name": "Consecrated Scorpion",
+	"shareid": 369,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_SACREAD"
+	],
+	"tagstext": [
+		"ธาตุไฟฟ้า",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์",
+		"Consecrated Beast"
+	],
+	"storytitle": "พิษมรณะ - Consecrated Scorpion",
+	"storytext": "สิ่งมีชีวิตที่กลายพันธุ์บิดเบี้ยว เพราะได้กัดกินแมงป่องอันยิ่งใหญ่ไป มันสามารถควบคุมสายฟ้าอันน่าหวาดผวาได้",
+	"source": "ได้รับหลังจากเอาชนะ Consecrated Scorpion ระดับความยากฉันมิตร จากการดูเอลในร้านเหล้าที่ Prince ใน Cat's Tail",
+	"skills": [
+		{
+			"id": 24051,
+			"name": "Scorpion Strike",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24052,
+			"name": "Stinging Spine",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย\\nทำให้เกิด <color=#FFFFFFFF>$[C124051]</color> 1 ใบ และสุ่มวางไว้ในการ์ด 2 ใบบนสุดของเด็คฝ่ายเรา",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 3 หน่วย\\nทำให้เกิด <color=#FFFFFFFF>Bonecruncher's Energy Block</color> 1 ใบ และสุ่มวางไว้ในการ์ด 2 ใบบนสุดของเด็คฝ่ายเรา",
+			"description": "สร้างความเสียหายไฟฟ้า 3 หน่วย\nทำให้เกิด Bonecruncher's Energy Block 1 ใบ และสุ่มวางไว้ในการ์ด 2 ใบบนสุดของเด็คฝ่ายเรา",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24053,
+			"name": "Thunderbore Blast",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย $[K56]การ์ด <color=#FFFFFFFF>$[C124051]</color> ในมือสูงสุด 3 ใบ และทำให้เกิด <color=#FFFFFFFF>$[C124052]</color> ในสนามของฝ่ายศัตรู",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 3 หน่วย <color=#FFFFFFFF>ทิ้ง</color>การ์ด <color=#FFFFFFFF>Bonecruncher's Energy Block</color> ในมือสูงสุด 3 ใบ และทำให้เกิด <color=#FFFFFFFF>Thunderbore Trap</color> ในสนามของฝ่ายศัตรู",
+			"description": "สร้างความเสียหายไฟฟ้า 3 หน่วย ทิ้งการ์ด Bonecruncher's Energy Block ในมือสูงสุด 3 ใบ และทำให้เกิด Thunderbore Trap ในสนามของฝ่ายศัตรู",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24054,
+			"name": "Immortal Remnants: Electro",
+			"descriptionraw": "[ติดตัว] เมื่อจบเทิร์น ทำให้เกิด <color=#FFFFFFFF>$[C124051]</color> 2 ใบ และสุ่มวางไว้ในการ์ด 10 ใบบนสุดของเด็คฝ่ายเรา",
+			"descriptionreplaced": "[ติดตัว] เมื่อจบเทิร์น ทำให้เกิด <color=#FFFFFFFF>Bonecruncher's Energy Block</color> 2 ใบ และสุ่มวางไว้ในการ์ด 10 ใบบนสุดของเด็คฝ่ายเรา",
+			"description": "[ติดตัว] เมื่อจบเทิร์น ทำให้เกิด Bonecruncher's Energy Block 2 ใบ และสุ่มวางไว้ในการ์ด 10 ใบบนสุดของเด็คฝ่ายเรา",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

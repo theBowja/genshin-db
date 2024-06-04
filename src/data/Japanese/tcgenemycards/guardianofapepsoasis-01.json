@@ -1,0 +1,87 @@
+{
+	"id": 4706,
+	"name": "アペプのオアシス守護者",
+	"hp": 35,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"草元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 27021,
+			"name": "ノスタルジックショック",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27022,
+			"name": "生命の流れ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_2]与え、<color=#FFFFFFFF>$[C127021]</color>を1枚引く。また、<color=#FFFFFFFF>$[C127026]</color>を1層生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を2与え、<color=#FFFFFFFF>眷属召喚</color>を1枚引く。また、<color=#FFFFFFFF>オアシスの養分供給</color>を1層生成する。",
+			"description": "草元素ダメージを2与え、眷属召喚を1枚引く。また、オアシスの養分供給を1層生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27023,
+			"name": "終景の崩落",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_2]与え、<color=#FFFFFFFF>$[C127021]</color>を1枚引く。また、<color=#FFFFFFFF>$[C127026]</color>を2層生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を2与え、<color=#FFFFFFFF>眷属召喚</color>を1枚引く。また、<color=#FFFFFFFF>オアシスの養分供給</color>を2層生成する。",
+			"description": "草元素ダメージを2与え、眷属召喚を1枚引く。また、オアシスの養分供給を2層生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27024,
+			"name": "増殖召喚",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C127021]</color>を6枚生成し、ランダムにデッキに配置する。味方が<color=#FFFFFFFF>$[C127022]</color>を4体召喚した後、本キャラに<color=#FFFFFFFF>$[C127027]</color>を付与し、<color=#FFFFFFFF>$[K6]</color>を2獲得する。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>眷属召喚</color>を6枚生成し、ランダムにデッキに配置する。味方が<color=#FFFFFFFF>増殖生命体</color>を4体召喚した後、本キャラに<color=#FFFFFFFF>蘇るオアシスの心</color>を付与し、<color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color></color>を2獲得する。",
+			"description": "【固有】戦闘開始時、眷属召喚を6枚生成し、ランダムにデッキに配置する。味方が増殖生命体を4体召喚した後、本キャラに蘇るオアシスの心を付与し、シールドを2獲得する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

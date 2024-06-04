@@ -1,0 +1,96 @@
+{
+	"id": 3009,
+	"name": "จักรกลรุ่นเพิ่มประสิทธิภาพการคำนวณ - สสาร",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ไม่มีธาตุ",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"skills": [
+		{
+			"id": 30091,
+			"name": "Ram",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30092,
+			"name": "Energy Boost: สสาร",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>$[C130091]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>Energy Boost: Ousia</color>",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย และตัวละครนี้จะได้รับ Energy Boost: Ousia",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30093,
+			"name": "Energy Burst: สสาร",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>$[C130091]</color>",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 3 หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>Energy Boost: Ousia</color>",
+			"description": "สร้างความเสียหายกายภาพ 3 หน่วย และตัวละครนี้จะได้รับ Energy Boost: Ousia",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30094,
+			"name": "Frame Enhancement: สสาร",
+			"descriptionraw": "ตัวละครฝ่ายเราสร้างความเสียหาย +1",
+			"descriptionreplaced": "ตัวละครฝ่ายเราสร้างความเสียหาย +1",
+			"description": "ตัวละครฝ่ายเราสร้างความเสียหาย +1",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 30095,
+			"name": "คุณสมบัติพลังงาน: พลังสสาร",
+			"descriptionraw": "<color=#FFFFFFFF>หลังจากตัวละครที่มี \"{SPRITE_PRESET#3505}พลังปฐมภูมิ: วิญญาณ\" สร้างความเสียหาย: </color>ตัวละครนี้จะถูกเปลี่ยนเป็น$[K1014] และจะ<color=#FFFFFFFF>ไม่สามารถใช้สกิล</color>ได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"descriptionreplaced": "<color=#FFFFFFFF>หลังจากตัวละครที่มี \"{SPRITE_PRESET#3505}พลังปฐมภูมิ: วิญญาณ\" สร้างความเสียหาย: </color>ตัวละครนี้จะถูกเปลี่ยนเป็น<color=#FFFFFFFF>\"รูปแบบไร้พลังงาน\"</color> และจะ<color=#FFFFFFFF>ไม่สามารถใช้สกิล</color>ได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"description": "หลังจากตัวละครที่มี \"พลังปฐมภูมิ: วิญญาณ\" สร้างความเสียหาย: ตัวละครนี้จะถูกเปลี่ยนเป็น\"รูปแบบไร้พลังงาน\" และจะไม่สามารถใช้สกิลได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

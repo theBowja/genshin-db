@@ -1,0 +1,96 @@
+{
+	"id": 3009,
+	"name": "Hesap Geliştirici Meka - Öz",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Element Türü Yok",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 30091,
+			"name": "Koçbaşı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30092,
+			"name": "Enerji Takviyesi: Öz",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karakter <color=#FFFFFFFF>$[C130091]</color> kazanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir ve bu karakter <color=#FFFFFFFF>Enerji Takviyesi: Öz</color> kazanır.",
+			"description": "2 Fiziksel Hasar verir ve bu karakter Enerji Takviyesi: Öz kazanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30093,
+			"name": "Enerji Patlaması: Öz",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve bu karakter <color=#FFFFFFFF>$[C130091]</color> kazanır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir ve bu karakter <color=#FFFFFFFF>Enerji Takviyesi: Öz</color> kazanır.",
+			"description": "3 Fiziksel Hasar verir ve bu karakter Enerji Takviyesi: Öz kazanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30094,
+			"name": "Gövde Geliştirme: Öz",
+			"descriptionraw": "Karakterlerin fazladan 1 Hasar verir.",
+			"descriptionreplaced": "Karakterlerin fazladan 1 Hasar verir.",
+			"description": "Karakterlerin fazladan 1 Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 30095,
+			"name": "Arkhe: Öz",
+			"descriptionraw": "<color=#FFFFFFFF>\"{SPRITE_PRESET#3505}Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra</color> bu karakter $[K1014] kalır ve bu Tur sona erene kadar <color=#FFFFFFFF>beceri kullanamaz</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>\"{SPRITE_PRESET#3505}Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra</color> bu karakter <color=#FFFFFFFF>Devre dışı</color> kalır ve bu Tur sona erene kadar <color=#FFFFFFFF>beceri kullanamaz</color>.",
+			"description": "\"Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra bu karakter Devre dışı kalır ve bu Tur sona erene kadar beceri kullanamaz.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,96 @@
+{
+	"id": 3010,
+	"name": "Mecha – Rechenleistungsverstärker – Pneuma",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Kein Elementartyp",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 30101,
+			"name": "Rammen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30102,
+			"name": "Energieschwung – Pneuma",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C130101]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, erhält selbst <color=#FFFFFFFF>Energieverstärkung – Pneuma</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH, erhält selbst Energieverstärkung – Pneuma.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30103,
+			"name": "Energieexplosion – Pneuma",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C130101]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, erhält selbst <color=#FFFFFFFF>Energieverstärkung – Pneuma</color>.",
+			"description": "Verursacht 3 Pkt. phys. SCH, erhält selbst Energieverstärkung – Pneuma.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30104,
+			"name": "Modulreparatur – Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Nach Anwenden einer Fähigkeit deiner Figuren:</color> Stellt deiner Figur, die den meisten Schaden erlitten hat, 1 LP wieder her.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Nach Anwenden einer Fähigkeit deiner Figuren:</color> Stellt deiner Figur, die den meisten Schaden erlitten hat, 1 LP wieder her.",
+			"description": "Nach Anwenden einer Fähigkeit deiner Figuren: Stellt deiner Figur, die den meisten Schaden erlitten hat, 1 LP wieder her.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 30105,
+			"name": "Energiesignatur – Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3504}Arkhe – Ousia“ versehene Figur:</color> Diese Figur wird in den $[K1014] eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3504}Arkhe – Ousia“ versehene Figur:</color> Diese Figur wird in den <color=#FFFFFFFF>„Deaktiviert-Modus“</color> eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"description": "Nach Erleiden von SCH durch eine mit „Arkhe – Ousia“ versehene Figur: Diese Figur wird in den „Deaktiviert-Modus“ eintreten und bis Endphase dieser Runde keine Fähigkeit anwenden können.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,104 @@
+{
+	"id": 1211,
+	"name": "Furina",
+	"shareid": 364,
+	"transformsinto": [
+		1212
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Hydro",
+		"Espada ligera",
+		"Fontaine",
+		"Arjé: ousía"
+	],
+	"storytitle": "Furina - La Bailarina Incansable",
+	"storytext": "Solista eterna, bailarina infinita.",
+	"source": "Se obtiene tras retar y ganar a Furina en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 12111,
+			"name": "Convite de la solista",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>Una vez por ronda:</color> si no tienes la carta <color=#FFFFFFFF>$[C112113]</color> en la mano, crea una.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.\\n<color=#FFFFFFFF>Una vez por ronda:</color> si no tienes la carta <color=#FFFFFFFF>Sacralidad y secularidad</color> en la mano, crea una.",
+			"description": "Inflige 2 pts. de Daño Físico.\nUna vez por ronda: si no tienes la carta Sacralidad y secularidad en la mano, crea una.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12112,
+			"name": "Salón Solitaire",
+			"descriptionraw": "El tipo de arjé actual de <color=#FFFFFFFF>$[A1211]</color> es {SPRITE_PRESET#3504}ousía: invoca a los <color=#FFFFFFFF>$[C112111|s1]</color>.\\nCuando el tipo de arjé de $[A1211] sea {SPRITE_PRESET#3505}pneuma, invoca al <color=#FFFFFFFF>$[C112112|s1]</color> en su lugar.",
+			"descriptionreplaced": "El tipo de arjé actual de <color=#FFFFFFFF>Furina</color> es {SPRITE_PRESET#3504}ousía: invoca a los <color=#FFFFFFFF>miembros del salón</color>.\\nCuando el tipo de arjé de Furina sea {SPRITE_PRESET#3505}pneuma, invoca al <color=#FFFFFFFF>juglar de las aguas</color> en su lugar.",
+			"description": "El tipo de arjé actual de Furina es ousía: invoca a los miembros del salón.\nCuando el tipo de arjé de Furina sea pneuma, invoca al juglar de las aguas en su lugar.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12113,
+			"name": "¡Que el mundo entero festeje!",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea el estado de <color=#FFFFFFFF>$[C112114|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y crea el estado de <color=#FFFFFFFF>jolgorio ecuménico</color>.",
+			"description": "Inflige 2 pts. de Daño Hydro y crea el estado de jolgorio ecuménico.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12114,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 12115,
+			"name": "Arjé: sacralidad y secularidad",
+			"descriptionraw": "Pasiva: al comenzar el duelo, se crea 1 carta de “<color=#FFFFFFFF>$[C112113]</color>”.",
+			"descriptionreplaced": "Pasiva: al comenzar el duelo, se crea 1 carta de “<color=#FFFFFFFF>Sacralidad y secularidad</color>”.",
+			"description": "Pasiva: al comenzar el duelo, se crea 1 carta de “Sacralidad y secularidad”.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

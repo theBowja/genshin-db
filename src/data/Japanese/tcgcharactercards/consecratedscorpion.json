@@ -1,0 +1,93 @@
+{
+	"id": 2405,
+	"name": "聖骸サソリ",
+	"shareid": 369,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_SACREAD"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器",
+		"魔物",
+		"聖骸獣"
+	],
+	"storytitle": "亡骸の残毒·聖骸サソリ",
+	"storytext": "偉大なる生命体を蝕むことで歪み、変異したサソリ。恐ろしい迅雷を操る。",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、聖骸サソリに挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 24051,
+			"name": "サソリの挟み撃ち",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24052,
+			"name": "サソリの尻尾刺し",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n<color=#FFFFFFFF>$[C124051]</color>を1枚生成し、ランダムで味方のデッキの一番上にある2枚のカードのうちに配置する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。\\n<color=#FFFFFFFF>喰骸エネルギークラスター</color>を1枚生成し、ランダムで味方のデッキの一番上にある2枚のカードのうちに配置する。",
+			"description": "雷元素ダメージを3与える。\n喰骸エネルギークラスターを1枚生成し、ランダムで味方のデッキの一番上にある2枚のカードのうちに配置する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24053,
+			"name": "雷刺乱落",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、手札から<color=#FFFFFFFF>$[C124051]</color>を最大3枚まで$[K56]し、相手のフィールドに<color=#FFFFFFFF>$[C124052]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与え、手札から<color=#FFFFFFFF>喰骸エネルギークラスター</color>を最大3枚まで<color=#FFFFFFFF>破棄</color>し、相手のフィールドに<color=#FFFFFFFF>雷棘トラップ</color>を生成する。",
+			"description": "雷元素ダメージを3与え、手札から喰骸エネルギークラスターを最大3枚まで破棄し、相手のフィールドに雷棘トラップを生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24054,
+			"name": "朽ちぬ亡骸·雷",
+			"descriptionraw": "【固有】ラウンド終了時、<color=#FFFFFFFF>$[C124051]</color>を2枚生成し、ランダムで味方のデッキの一番上にある10枚のカードのうちに配置する。",
+			"descriptionreplaced": "【固有】ラウンド終了時、<color=#FFFFFFFF>喰骸エネルギークラスター</color>を2枚生成し、ランダムで味方のデッキの一番上にある10枚のカードのうちに配置する。",
+			"description": "【固有】ラウンド終了時、喰骸エネルギークラスターを2枚生成し、ランダムで味方のデッキの一番上にある10枚のカードのうちに配置する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

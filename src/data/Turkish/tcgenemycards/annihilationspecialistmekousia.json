@@ -1,0 +1,100 @@
+{
+	"id": 3208,
+	"name": "Kıyım Uzmanı Meka - Öz",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Su",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 32081,
+			"name": "Vahşi Tekmeler",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32082,
+			"name": "Dönen Bacak Bıçakları",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "3 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32083,
+			"name": "Bıçaklı Vals",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "5 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "5 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32084,
+			"name": "Destek Birimi: Öz",
+			"descriptionraw": "(Pasif) Savaş başladığında 1 <color=#FFFFFFFF>$[C132081]</color> oluşur.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında 1 <color=#FFFFFFFF>Bölge Uyarı Mekası - Öz</color> oluşur.",
+			"description": "(Pasif) Savaş başladığında 1 Bölge Uyarı Mekası - Öz oluşur.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 32085,
+			"name": "Arkhe: Öz",
+			"descriptionraw": "<color=#FFFFFFFF>\"{SPRITE_PRESET#3505}Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra</color> bu karakter $[K1014] kalır ve bu Tur sona erene kadar <color=#FFFFFFFF>beceri kullanamaz</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>\"{SPRITE_PRESET#3505}Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra</color> bu karakter <color=#FFFFFFFF>Devre dışı</color> kalır ve bu Tur sona erene kadar <color=#FFFFFFFF>beceri kullanamaz</color>.",
+			"description": "\"Arkhe: Ruh\"a sahip karakterler tarafından hasar aldıktan sonra bu karakter Devre dışı kalır ve bu Tur sona erene kadar beceri kullanamaz.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

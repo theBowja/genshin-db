@@ -1,0 +1,113 @@
+{
+	"id": 1111,
+	"name": "라이오슬리",
+	"shareid": 363,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"법구",
+		"폰타인",
+		"아르케의 힘: 우시아"
+	],
+	"storytitle": "고요한 죄의 밀사·라이오슬리",
+	"storytext": "죄가 잠긴 심해엔 물결이 일지 않는다",
+	"source": "캣테일 술집에서 라이오슬리 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 11111,
+			"name": "된서리 연타",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 1pt 준다.",
+			"description": "얼음 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11112,
+			"name": "얼음송곳니 돌진",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C111111]</color>을 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 2pt 주고 본 캐릭터에게 <color=#FFFFFFFF>혹한의 징벌</color>을 부착한다.",
+			"description": "얼음 원소 피해를 2pt 주고 본 캐릭터에게 혹한의 징벌을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11113,
+			"name": "짓씹는 흑금늑대",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111112]</color>를 생성한다.\\n<color=#FFFFFFFF>본 캐릭터가 이번 턴에 피해 또는 치유를 누적 2회 받을 때마다:</color> 이 스킬의 원소 주사위 소모 개수-1 (최대-2)",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>얼음송곳의 여파</color>를 생성한다.\\n<color=#FFFFFFFF>본 캐릭터가 이번 턴에 피해 또는 치유를 누적 2회 받을 때마다:</color> 이 스킬의 원소 주사위 소모 개수-1 (최대-2)",
+			"description": "얼음 원소 피해를 2pt 주고 얼음송곳의 여파를 생성한다.\n본 캐릭터가 이번 턴에 피해 또는 치유를 누적 2회 받을 때마다: 이 스킬의 원소 주사위 소모 개수-1 (최대-2)",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11114,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 11115,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 11116,
+			"name": "짓씹는 흑금늑대",
+			"descriptionraw": "<color=#FFFFFFFF>본 캐릭터가 이번 턴에 치유 또는 피해를 누적 2회 받을 시:</color> 원소 폭발의 원소 주사위 소모 개수-1 (최대-2)",
+			"descriptionreplaced": "<color=#FFFFFFFF>본 캐릭터가 이번 턴에 치유 또는 피해를 누적 2회 받을 시:</color> 원소 폭발의 원소 주사위 소모 개수-1 (최대-2)",
+			"description": "본 캐릭터가 이번 턴에 치유 또는 피해를 누적 2회 받을 시: 원소 폭발의 원소 주사위 소모 개수-1 (최대-2)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

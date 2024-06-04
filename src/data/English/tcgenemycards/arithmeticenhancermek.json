@@ -1,0 +1,74 @@
+{
+	"id": 3008,
+	"name": "Arithmetic Enhancer Mek",
+	"istransformation": true,
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"No Elemental Type",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 30081,
+			"name": "Ram",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 1 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30082,
+			"name": "Brutal Ram",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30083,
+			"name": "Charging Up",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and causes this character to be restored to their original Pneuma/Ousia form.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color> and causes this character to be restored to their original Pneuma/Ousia form.",
+			"description": "Deals 3 Physical DMG and causes this character to be restored to their original Pneuma/Ousia form.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		}
+	]
+}

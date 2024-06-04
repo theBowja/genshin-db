@@ -1,0 +1,104 @@
+{
+	"id": 1211,
+	"name": "Furina",
+	"shareid": 364,
+	"transformsinto": [
+		1212
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Su",
+		"Kılıç",
+		"Fontaine",
+		"Arkhe: Öz"
+	],
+	"storytitle": "\"Ebedi Yalnızlık Senfonisi\" Furina",
+	"storytext": "Dans ve şarkıların ilham perisi.",
+	"source": "Furina'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 12111,
+			"name": "Dansa Davet",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.\\n<color=#FFFFFFFF>Her Turda bir defa:</color> Elinde <color=#FFFFFFFF>$[C112113]</color> yoksa elinde 1 <color=#FFFFFFFF>$[C112113]</color> kartı oluşur.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.\\n<color=#FFFFFFFF>Her Turda bir defa:</color> Elinde <color=#FFFFFFFF>Kutsal ve Laik Tahtlar</color> yoksa elinde 1 <color=#FFFFFFFF>Kutsal ve Laik Tahtlar</color> kartı oluşur.",
+			"description": "2 Fiziksel Hasar verir.\nHer Turda bir defa: Elinde Kutsal ve Laik Tahtlar yoksa elinde 1 Kutsal ve Laik Tahtlar kartı oluşur.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12112,
+			"name": "Yalnızlık Salonu",
+			"descriptionraw": "<color=#FFFFFFFF>$[A1211]</color> şu anda {SPRITE_PRESET#3504}Arkhe: Öz durumunda. <color=#FFFFFFFF>$[C112111]</color> çağırır.\\n($[A1211], {SPRITE_PRESET#3505}Arkhe: Ruh durumunda olduğunda bunun yerine <color=#FFFFFFFF>$[C112112]</color> çağırır.)",
+			"descriptionreplaced": "<color=#FFFFFFFF>Furina</color> şu anda {SPRITE_PRESET#3504}Arkhe: Öz durumunda. <color=#FFFFFFFF>Salon Üyeleri</color> çağırır.\\n(Furina, {SPRITE_PRESET#3505}Arkhe: Ruh durumunda olduğunda bunun yerine <color=#FFFFFFFF>Tüm Suların Şarkıcısı</color> çağırır.)",
+			"description": "Furina şu anda Arkhe: Öz durumunda. Salon Üyeleri çağırır.\n(Furina, Arkhe: Ruh durumunda olduğunda bunun yerine Tüm Suların Şarkıcısı çağırır.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12113,
+			"name": "Cümbüş Havası",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 1 <color=#FFFFFFFF>$[C112114]</color> oluşturur.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve 1 <color=#FFFFFFFF>Evrensel Cümbüş</color> oluşturur.",
+			"description": "2 Su Hasarı verir ve 1 Evrensel Cümbüş oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12114,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 12115,
+			"name": "Arkhe: Kutsal ve Laik Tahtlar",
+			"descriptionraw": "(Pasif) Savaş başladığında elinde 1 <color=#FFFFFFFF>$[C112113]</color> kartı oluşur.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında elinde 1 <color=#FFFFFFFF>Kutsal ve Laik Tahtlar</color> kartı oluşur.",
+			"description": "(Pasif) Savaş başladığında elinde 1 Kutsal ve Laik Tahtlar kartı oluşur.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

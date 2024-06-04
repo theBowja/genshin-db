@@ -1,0 +1,96 @@
+{
+	"id": 3010,
+	"name": "Мек: Улучшение вычислений (пневма)",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Без элемента",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 30101,
+			"name": "Таран",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30102,
+			"name": "Усиление энергии: пневма",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа возникает <color=#FFFFFFFF>$[C130101]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед. У персонажа возникает <color=#FFFFFFFF>Усиление энергии: пневма</color>.",
+			"description": "Наносит Физический урон, 2 ед. У персонажа возникает Усиление энергии: пневма.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30103,
+			"name": "Детонация: пневма",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа возникает <color=#FFFFFFFF>$[C130101]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 3 ед. У персонажа возникает <color=#FFFFFFFF>Усиление энергии: пневма</color>.",
+			"description": "Наносит Физический урон, 3 ед. У персонажа возникает Усиление энергии: пневма.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30104,
+			"name": "Ремонт каркаса: пневма",
+			"descriptionraw": "<color=#FFFFFFFF>Когда ваш персонаж использует навык:</color> ваш персонаж, получивший наибольший урон, восстанавливает 1 HP.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Когда ваш персонаж использует навык:</color> ваш персонаж, получивший наибольший урон, восстанавливает 1 HP.",
+			"description": "Когда ваш персонаж использует навык: ваш персонаж, получивший наибольший урон, восстанавливает 1 HP.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 30105,
+			"name": "Энергетическое свойство: пневма",
+			"descriptionraw": "<color=#FFFFFFFF>Получив урон от персонажа с {SPRITE_PRESET#3504}архэ: усия,</color> этот персонаж получает состояние «$[K1014]» и <color=#FFFFFFFF>не может использовать навыки</color> до конца раунда.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Получив урон от персонажа с {SPRITE_PRESET#3504}архэ: усия,</color> этот персонаж получает состояние «<color=#FFFFFFFF>Деактивировано</color>» и <color=#FFFFFFFF>не может использовать навыки</color> до конца раунда.",
+			"description": "Получив урон от персонажа с архэ: усия, этот персонаж получает состояние «Деактивировано» и не может использовать навыки до конца раунда.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

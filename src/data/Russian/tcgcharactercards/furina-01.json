@@ -1,0 +1,101 @@
+{
+	"id": 1212,
+	"name": "Фурина",
+	"transformsinto": [
+		1211
+	],
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"Гидро",
+		"Одноручное",
+		"Фонтейн",
+		"Архэ: Пневма"
+	],
+	"skills": [
+		{
+			"id": 12121,
+			"name": "Приглашение на одиночный танец",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.\\n<color=#FFFFFFFF>Один раз за раунд:</color> вы получаете карту <color=#FFFFFFFF>$[C112113]</color> в руку.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.\\n<color=#FFFFFFFF>Один раз за раунд:</color> вы получаете карту <color=#FFFFFFFF>Священные и мирские места</color> в руку.",
+			"description": "Наносит Физический урон, 2 ед.\nОдин раз за раунд: вы получаете карту Священные и мирские места в руку.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12122,
+			"name": "Салон одиноких сердец",
+			"descriptionraw": "Когда <color=#FFFFFFFF>$[A1211]</color> в форме {SPRITE_PRESET#3505}пневма, призывается <color=#FFFFFFFF>$[C112112]</color>.\\nКогда $[A1211] в форме {SPRITE_PRESET#3504}усия, призывается <color=#FFFFFFFF>$[C112111]</color>.",
+			"descriptionreplaced": "Когда <color=#FFFFFFFF>Фурина</color> в форме {SPRITE_PRESET#3505}пневма, призывается <color=#FFFFFFFF>Певец Потоков</color>.\\nКогда Фурина в форме {SPRITE_PRESET#3504}усия, призывается <color=#FFFFFFFF>Участник салона</color>.",
+			"description": "Когда Фурина в форме пневма, призывается Певец Потоков.\nКогда Фурина в форме усия, призывается Участник салона.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12113,
+			"name": "Да возрадуются люди",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., вы получаете <color=#FFFFFFFF>$[C112114]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед., вы получаете <color=#FFFFFFFF>Всемирное веселье</color>.",
+			"description": "Наносит Гидро урон, 2 ед., вы получаете Всемирное веселье.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12114,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 12115,
+			"name": "Архэ: Священные и мирские места",
+			"descriptionraw": "(Пассивный навык) В начале битвы вы получаете карту <color=#FFFFFFFF>$[C112113]</color>.",
+			"descriptionreplaced": "(Пассивный навык) В начале битвы вы получаете карту <color=#FFFFFFFF>Священные и мирские места</color>.",
+			"description": "(Пассивный навык) В начале битвы вы получаете карту Священные и мирские места.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

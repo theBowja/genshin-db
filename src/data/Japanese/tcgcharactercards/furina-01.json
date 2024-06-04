@@ -1,0 +1,101 @@
+{
+	"id": 1212,
+	"name": "フリーナ",
+	"transformsinto": [
+		1211
+	],
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"水元素",
+		"片手剣",
+		"フォンテーヌ",
+		"アルケー：プネウマ"
+	],
+	"skills": [
+		{
+			"id": 12121,
+			"name": "ソリストの誘い",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n<color=#FFFFFFFF>各ラウンドで1回のみ</color>：手札<color=#FFFFFFFF>$[C112113]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。\\n<color=#FFFFFFFF>各ラウンドで1回のみ</color>：手札<color=#FFFFFFFF>聖俗の座客</color>を生成する。",
+			"description": "物理ダメージを2与える。\n各ラウンドで1回のみ：手札聖俗の座客を生成する。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12122,
+			"name": "サロン·ソリティア",
+			"descriptionraw": "<color=#FFFFFFFF>$[A1211]</color>は現在「{SPRITE_PRESET#3505}アルケー：プネウマ」状態で、<color=#FFFFFFFF>$[C112112]</color>を召喚する。\\n（「{SPRITE_PRESET#3504}アルケー：ウーシア」状態の時は、<color=#FFFFFFFF>$[C112111]</color>を召喚する）",
+			"descriptionreplaced": "<color=#FFFFFFFF>フリーナ</color>は現在「{SPRITE_PRESET#3505}アルケー：プネウマ」状態で、<color=#FFFFFFFF>衆の水の歌い手</color>を召喚する。\\n（「{SPRITE_PRESET#3504}アルケー：ウーシア」状態の時は、<color=#FFFFFFFF>サロンメンバー</color>を召喚する）",
+			"description": "フリーナは現在「アルケー：プネウマ」状態で、衆の水の歌い手を召喚する。\n（「アルケー：ウーシア」状態の時は、サロンメンバーを召喚する）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12113,
+			"name": "万民のカルナバル",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112114]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与え、<color=#FFFFFFFF>もろびとこぞりて</color>を生成する。",
+			"description": "水元素ダメージを2与え、もろびとこぞりてを生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12114,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 12115,
+			"name": "アルケー：聖俗の座客",
+			"descriptionraw": "【固有】戦闘開始時、手札<color=#FFFFFFFF>$[C112113]</color>を生成する。",
+			"descriptionreplaced": "【固有】戦闘開始時、手札<color=#FFFFFFFF>聖俗の座客</color>を生成する。",
+			"description": "【固有】戦闘開始時、手札聖俗の座客を生成する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"id": 3008,
+	"name": "Mecaritmético",
+	"istransformation": true,
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sem Tipo Elemental",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 30081,
+			"name": "Colidir",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 1 ponto de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30082,
+			"name": "Colisão Brutal",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30083,
+			"name": "Carregando",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT] e faz esse personagem a ser restaurado para sua forma Pneuma/Ousia original.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color> e faz esse personagem a ser restaurado para sua forma Pneuma/Ousia original.",
+			"description": "Causa 3 pontos de Dano Físico e faz esse personagem a ser restaurado para sua forma Pneuma/Ousia original.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		}
+	]
+}

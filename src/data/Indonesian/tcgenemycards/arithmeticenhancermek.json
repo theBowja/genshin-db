@@ -1,0 +1,74 @@
+{
+	"id": 3008,
+	"name": "Arithmetic Enhancer Mek",
+	"istransformation": true,
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Tidak ada tipe elemen",
+		"Senjata Lain",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 30081,
+			"name": "Ram",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 1 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30082,
+			"name": "Brutal Ram",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30083,
+			"name": "Charging Up",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Karakter ini akan kembali ke status \"Ousia\" atau \"Pneuma\" asalnya.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>. Karakter ini akan kembali ke status \"Ousia\" atau \"Pneuma\" asalnya.",
+			"description": "Mengakibatkan 3 poin Physical DMG. Karakter ini akan kembali ke status \"Ousia\" atau \"Pneuma\" asalnya.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		}
+	]
+}

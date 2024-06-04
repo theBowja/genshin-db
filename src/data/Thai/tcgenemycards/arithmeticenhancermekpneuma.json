@@ -1,0 +1,96 @@
+{
+	"id": 3010,
+	"name": "จักรกลรุ่นเพิ่มประสิทธิภาพการคำนวณ - วิญญาณ",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ไม่มีธาตุ",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"skills": [
+		{
+			"id": 30101,
+			"name": "Ram",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30102,
+			"name": "Energy Boost: วิญญาณ",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>$[C130101]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>Energy Boost: Pneuma</color>",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย และตัวละครนี้จะได้รับ Energy Boost: Pneuma",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30103,
+			"name": "Energy Burst: วิญญาณ",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>$[C130101]</color>",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 3 หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>Energy Boost: Pneuma</color>",
+			"description": "สร้างความเสียหายกายภาพ 3 หน่วย และตัวละครนี้จะได้รับ Energy Boost: Pneuma",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30104,
+			"name": "Frame Repair: วิญญาณ",
+			"descriptionraw": "<color=#FFFFFFFF>หลังจากตัวละครฝ่ายเราใช้สกิล:</color> รักษาตัวละครฝ่ายเรา ที่ได้รับความเสียหายมากสุด 1 หน่วย",
+			"descriptionreplaced": "<color=#FFFFFFFF>หลังจากตัวละครฝ่ายเราใช้สกิล:</color> รักษาตัวละครฝ่ายเรา ที่ได้รับความเสียหายมากสุด 1 หน่วย",
+			"description": "หลังจากตัวละครฝ่ายเราใช้สกิล: รักษาตัวละครฝ่ายเรา ที่ได้รับความเสียหายมากสุด 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 30105,
+			"name": "คุณสมบัติพลังงาน: พลังวิญญาณ",
+			"descriptionraw": "<color=#FFFFFFFF>หลังจากตัวละครที่มี \"{SPRITE_PRESET#3504}พลังปฐมภูมิ: สสาร\" สร้างความเสียหาย: </color>ตัวละครนี้จะถูกเปลี่ยนเป็น$[K1014] และจะ<color=#FFFFFFFF>ไม่สามารถใช้สกิล</color>ได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"descriptionreplaced": "<color=#FFFFFFFF>หลังจากตัวละครที่มี \"{SPRITE_PRESET#3504}พลังปฐมภูมิ: สสาร\" สร้างความเสียหาย: </color>ตัวละครนี้จะถูกเปลี่ยนเป็น<color=#FFFFFFFF>\"รูปแบบไร้พลังงาน\"</color> และจะ<color=#FFFFFFFF>ไม่สามารถใช้สกิล</color>ได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"description": "หลังจากตัวละครที่มี \"พลังปฐมภูมิ: สสาร\" สร้างความเสียหาย: ตัวละครนี้จะถูกเปลี่ยนเป็น\"รูปแบบไร้พลังงาน\" และจะไม่สามารถใช้สกิลได้จนกว่าจะสิ้นสุดเทิร์นนี้",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"id": 3208,
+	"name": "Mek annihilateur - Ousia",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 32081,
+			"name": "Pied vivace",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32082,
+			"name": "Lame de farandole",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Inflige 3 pts de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32083,
+			"name": "Lame de valse",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 5 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Inflige 5 pts de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32084,
+			"name": "Unité ousia de soutien",
+			"descriptionraw": "(Passif) Crée un <color=#FFFFFFFF>$[C132081|s1]</color> d'origine au début du combat.",
+			"descriptionreplaced": "(Passif) Crée un <color=#FFFFFFFF>Mek détecteur « Ousia »</color> d'origine au début du combat.",
+			"description": "(Passif) Crée un Mek détecteur « Ousia » d'origine au début du combat.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 32085,
+			"name": "Signature énergétique : Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'{SPRITE_PRESET#3505}Arkhe pneuma : </color>il change en $[K1014|s1] et <color=#FFFFFFFF>ne peut pas utiliser de capacité</color> jusqu'à la fin de la manche.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'{SPRITE_PRESET#3505}Arkhe pneuma : </color>il change en <color=#FFFFFFFF>forme désactivée</color> et <color=#FFFFFFFF>ne peut pas utiliser de capacité</color> jusqu'à la fin de la manche.",
+			"description": "Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'Arkhe pneuma : il change en forme désactivée et ne peut pas utiliser de capacité jusqu'à la fin de la manche.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"id": 3411,
+	"name": "Mecaniquilador - Pneuma",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 34111,
+			"name": "Impacto Perfurante",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34112,
+			"name": "Incursão Relâmpago",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>.",
+			"description": "Causa 3 pontos de Dano Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34113,
+			"name": "Salto Relâmpago",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Causa 5 pontos de {SPRITE_PRESET#2104}<color=#FFACFFFF>Dano Electro</color>.",
+			"description": "Causa 5 pontos de Dano Electro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34114,
+			"name": "Unidade de Suporte: Pneuma",
+			"descriptionraw": "(Passivo) Quando a batalha começa, cria 1 <color=#FFFFFFFF>$[C134111]</color> inicial.",
+			"descriptionreplaced": "(Passivo) Quando a batalha começa, cria 1 <color=#FFFFFFFF>Mecalerta - Pneuma</color> inicial.",
+			"description": "(Passivo) Quando a batalha começa, cria 1 Mecalerta - Pneuma inicial.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 34115,
+			"name": "Arkhe: Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Após ser danificado por personagem com \"{SPRITE_PRESET#3504}Arkhe: Ousia\"</color>, esse personagem ficará $[K1014] e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Após ser danificado por personagem com \"{SPRITE_PRESET#3504}Arkhe: Ousia\"</color>, esse personagem ficará <color=#FFFFFFFF>Desativado</color> e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"description": "Após ser danificado por personagem com \"Arkhe: Ousia\", esse personagem ficará Desativado e não poderá usar Habilidades até o fim desse Turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

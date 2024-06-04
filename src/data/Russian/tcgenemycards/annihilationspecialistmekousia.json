@@ -1,0 +1,100 @@
+{
+	"id": 3208,
+	"name": "Спецмек: Ликвидация (усия)",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Гидро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 32081,
+			"name": "Яростный пинок",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32082,
+			"name": "Вихрь клинков",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед.",
+			"description": "Наносит Гидро урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32083,
+			"name": "Острый вальс",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 5 ед.",
+			"description": "Наносит Гидро урон, 5 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32084,
+			"name": "Единица поддержки: усия",
+			"descriptionraw": "(Пассивный навык) В начале битвы вы сразу получаете карту <color=#FFFFFFFF>$[C132081]</color>.",
+			"descriptionreplaced": "(Пассивный навык) В начале битвы вы сразу получаете карту <color=#FFFFFFFF>Мек: Сигнализация области (усия)</color>.",
+			"description": "(Пассивный навык) В начале битвы вы сразу получаете карту Мек: Сигнализация области (усия).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 32085,
+			"name": "Энергетическое свойство: усия",
+			"descriptionraw": "<color=#FFFFFFFF>Получив урон от персонажа с {SPRITE_PRESET#3505}архэ: пневма,</color> этот персонаж получает состояние «$[K1014]» и <color=#FFFFFFFF>не может использовать навыки</color> до конца раунда.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Получив урон от персонажа с {SPRITE_PRESET#3505}архэ: пневма,</color> этот персонаж получает состояние «<color=#FFFFFFFF>Деактивировано</color>» и <color=#FFFFFFFF>не может использовать навыки</color> до конца раунда.",
+			"description": "Получив урон от персонажа с архэ: пневма, этот персонаж получает состояние «Деактивировано» и не может использовать навыки до конца раунда.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

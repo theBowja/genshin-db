@@ -1,0 +1,96 @@
+{
+	"id": 3009,
+	"name": "Mecha – Rechenleistungsverstärker – Ousia",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Kein Elementartyp",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 30091,
+			"name": "Rammen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30092,
+			"name": "Energieschwung – Ousia",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C130091]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, erhält selbst <color=#FFFFFFFF>Energieverstärkung – Ousia</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH, erhält selbst Energieverstärkung – Ousia.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30093,
+			"name": "Energieexplosion – Ousia",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C130091]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>, erhält selbst <color=#FFFFFFFF>Energieverstärkung – Ousia</color>.",
+			"description": "Verursacht 3 Pkt. phys. SCH, erhält selbst Energieverstärkung – Ousia.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30094,
+			"name": "Moduloptimierung – Ousia",
+			"descriptionraw": "Schaden durch deine Figuren +1.",
+			"descriptionreplaced": "Schaden durch deine Figuren +1.",
+			"description": "Schaden durch deine Figuren +1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 30095,
+			"name": "Energiesignatur – Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3505}Arkhe – Pneuma“ versehene Figur:</color> Diese Figur wird in den $[K1014] eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3505}Arkhe – Pneuma“ versehene Figur:</color> Diese Figur wird in den <color=#FFFFFFFF>„Deaktiviert-Modus“</color> eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"description": "Nach Erleiden von SCH durch eine mit „Arkhe – Pneuma“ versehene Figur: Diese Figur wird in den „Deaktiviert-Modus“ eintreten und bis Endphase dieser Runde keine Fähigkeit anwenden können.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

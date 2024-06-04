@@ -1,0 +1,81 @@
+{
+	"id": 1312,
+	"name": "辛炎",
+	"shareid": 365,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"炎元素",
+		"両手剣",
+		"璃月"
+	],
+	"storytitle": "爆熱リズム·辛炎",
+	"storytext": "ロックの時間だぞ！",
+	"source": "キャッツテールで辛炎を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 13121,
+			"name": "炎舞",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13122,
+			"name": "情熱の薙ぎ払い",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、ランダムで元素サイコロの初期コストが最も高い手札を1枚$[K56]し、<color=#FFFFFFFF>$[C113121]</color>を生成する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を2与え、ランダムで元素サイコロの初期コストが最も高い手札を1枚<color=#FFFFFFFF>破棄</color>し、<color=#FFFFFFFF>情熱シールド</color>を生成する。",
+			"description": "炎元素ダメージを2与え、ランダムで元素サイコロの初期コストが最も高い手札を1枚破棄し、情熱シールドを生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13123,
+			"name": "反逆の弾き",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手の待機キャラ全員に<color=#FFFFFFFF>$[K5]</color>を2与える。味方のすべての手札を$[K56]し、<color=#FFFFFFFF>$[C113123]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を3与え、相手の待機キャラ全員に<color=#FFFFFFFF><color=#FFFFFFFF>貫通ダメージ</color></color>を2与える。味方のすべての手札を<color=#FFFFFFFF>破棄</color>し、<color=#FFFFFFFF>烈火のオーラ</color>を生成する。",
+			"description": "物理ダメージを3与え、相手の待機キャラ全員に貫通ダメージを2与える。味方のすべての手札を破棄し、烈火のオーラを生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

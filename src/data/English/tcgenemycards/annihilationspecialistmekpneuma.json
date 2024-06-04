@@ -1,0 +1,100 @@
+{
+	"id": 3411,
+	"name": "Annihilation Specialist Mek - Pneuma",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 34111,
+			"name": "Piercing Blow",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34112,
+			"name": "Lightning Raid",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Deals 3 Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34113,
+			"name": "Leaping Thunder",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 5 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.",
+			"description": "Deals 5 Electro DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34114,
+			"name": "Support Unit: Pneuma",
+			"descriptionraw": "(Passive) When battle begins, create 1 initial <color=#FFFFFFFF>$[C134111]</color>.",
+			"descriptionreplaced": "(Passive) When battle begins, create 1 initial <color=#FFFFFFFF>Area Alert Mek - Pneuma</color>.",
+			"description": "(Passive) When battle begins, create 1 initial Area Alert Mek - Pneuma.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 34115,
+			"name": "Arkhe: Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>After being damaged by characters with \"{SPRITE_PRESET#3504}Arkhe: Ousia,\"</color> this character will become $[K1014], and <color=#FFFFFFFF>cannot use skills</color> until this Round ends.",
+			"descriptionreplaced": "<color=#FFFFFFFF>After being damaged by characters with \"{SPRITE_PRESET#3504}Arkhe: Ousia,\"</color> this character will become <color=#FFFFFFFF>Deactivated</color>, and <color=#FFFFFFFF>cannot use skills</color> until this Round ends.",
+			"description": "After being damaged by characters with \"Arkhe: Ousia,\" this character will become Deactivated, and cannot use skills until this Round ends.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

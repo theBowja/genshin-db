@@ -1,0 +1,74 @@
+{
+	"id": 3008,
+	"name": "Mek amplificateur",
+	"istransformation": true,
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sans élément",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 30081,
+			"name": "Heurt",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 1 pt de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30082,
+			"name": "Charge brutale",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30083,
+			"name": "Accumulation énergétique",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et renvoie ce personnage dans son état pneuma/ousia d'origine.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color> et renvoie ce personnage dans son état pneuma/ousia d'origine.",
+			"description": "Inflige 3 pts de DGT physiques et renvoie ce personnage dans son état pneuma/ousia d'origine.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		}
+	]
+}

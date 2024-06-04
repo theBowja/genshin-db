@@ -1,0 +1,100 @@
+{
+	"id": 3208,
+	"name": "Mecha – Typ: Vernichtungsspezialist – Ousia",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 32081,
+			"name": "Stürmische Tritte",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32082,
+			"name": "Wirbel der Klingen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32083,
+			"name": "Hagel der Klingen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 5 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 5 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32084,
+			"name": "Unterstützungseinheit – Ousia",
+			"descriptionraw": "Passiv – Erschafft zu Beginn des Kampfes 1 <color=#FFFFFFFF>$[C132081]</color>.",
+			"descriptionreplaced": "Passiv – Erschafft zu Beginn des Kampfes 1 <color=#FFFFFFFF>Mecha – Typ: Gebietsalarm – Ousia</color>.",
+			"description": "Passiv – Erschafft zu Beginn des Kampfes 1 Mecha – Typ: Gebietsalarm – Ousia.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 32085,
+			"name": "Energiesignatur – Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3505}Arkhe – Pneuma“ versehene Figur:</color> Diese Figur wird in den $[K1014] eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Nach Erleiden von SCH durch eine mit „{SPRITE_PRESET#3505}Arkhe – Pneuma“ versehene Figur:</color> Diese Figur wird in den <color=#FFFFFFFF>„Deaktiviert-Modus“</color> eintreten und bis Endphase dieser Runde <color=#FFFFFFFF>keine Fähigkeit anwenden können</color>.",
+			"description": "Nach Erleiden von SCH durch eine mit „Arkhe – Pneuma“ versehene Figur: Diese Figur wird in den „Deaktiviert-Modus“ eintreten und bis Endphase dieser Runde keine Fähigkeit anwenden können.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

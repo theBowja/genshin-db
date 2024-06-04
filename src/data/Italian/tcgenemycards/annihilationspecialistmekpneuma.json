@@ -1,0 +1,100 @@
+{
+	"id": 3411,
+	"name": "Meka sterminatore specializzato (Pneuma)",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Altre armi",
+		"Mostro"
+	],
+	"skills": [
+		{
+			"id": 34111,
+			"name": "Colpo perforante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34112,
+			"name": "Incursione fulminante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>.",
+			"description": "Infligge 3 DAN da Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34113,
+			"name": "Tuono balzante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 5 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>.",
+			"description": "Infligge 5 DAN da Electro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34114,
+			"name": "Unita di supporto (Pneuma)",
+			"descriptionraw": "(Passiva) All'inizio del duello, crea 1 <color=#FFFFFFFF>$[C134111]</color>.",
+			"descriptionreplaced": "(Passiva) All'inizio del duello, crea 1 <color=#FFFFFFFF>Meka segnalatore (Pneuma)</color>.",
+			"description": "(Passiva) All'inizio del duello, crea 1 Meka segnalatore (Pneuma).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		},
+		{
+			"id": 34115,
+			"name": "Archè: Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Dopo aver subito DAN da personaggi con {SPRITE_PRESET#3504}Archè: Ousia</color>, questo personaggio entra in stato di $[K1014] e <color=#FFFFFFFF>non potrà usare abilità</color> fino alla fine del turno.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Dopo aver subito DAN da personaggi con {SPRITE_PRESET#3504}Archè: Ousia</color>, questo personaggio entra in stato di <color=#FFFFFFFF>Disattivazione</color> e <color=#FFFFFFFF>non potrà usare abilità</color> fino alla fine del turno.",
+			"description": "Dopo aver subito DAN da personaggi con Archè: Ousia, questo personaggio entra in stato di Disattivazione e non potrà usare abilità fino alla fine del turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		}
+	]
+}

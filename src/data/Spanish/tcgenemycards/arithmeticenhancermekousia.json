@@ -1,0 +1,96 @@
+{
+	"id": 3009,
+	"name": "Mecaoptimizador Aritmético - Ousía",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sin tipo elemental",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 30091,
+			"name": "Placaje",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30092,
+			"name": "Aumento de energía ousía",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene el efecto de <color=#FFFFFFFF>$[C130091|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> y este personaje obtiene el efecto de <color=#FFFFFFFF>potenciación de energía ousía</color>.",
+			"description": "Inflige 2 pts. de Daño Físico y este personaje obtiene el efecto de potenciación de energía ousía.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30093,
+			"name": "Explosión de energía ousía",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene el efecto de <color=#FFFFFFFF>$[C130091|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> y este personaje obtiene el efecto de <color=#FFFFFFFF>potenciación de energía ousía</color>.",
+			"description": "Inflige 3 pts. de Daño Físico y este personaje obtiene el efecto de potenciación de energía ousía.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30094,
+			"name": "Mecafortalecimiento: ousía",
+			"descriptionraw": "Tus personajes infligen daño +1.",
+			"descriptionreplaced": "Tus personajes infligen daño +1.",
+			"description": "Tus personajes infligen daño +1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 30095,
+			"name": "Energía ousía",
+			"descriptionraw": "<color=#FFFFFFFF>Tras recibir daño cargado de {SPRITE_PRESET#3505}arjé: pneuma</color>, este personaje entra en $[K1014|s1] y <color=#FFFFFFFF>no puede usar habilidades</color> hasta el fin de la ronda actual.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Tras recibir daño cargado de {SPRITE_PRESET#3505}arjé: pneuma</color>, este personaje entra en <color=#FFFFFFFF>estado desactivado</color> y <color=#FFFFFFFF>no puede usar habilidades</color> hasta el fin de la ronda actual.",
+			"description": "Tras recibir daño cargado de arjé: pneuma, este personaje entra en estado desactivado y no puede usar habilidades hasta el fin de la ronda actual.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

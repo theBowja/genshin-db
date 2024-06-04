@@ -1,0 +1,96 @@
+{
+	"id": 3009,
+	"name": "Mek amplificateur - Ousia",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sans élément",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 30091,
+			"name": "Heurt",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30092,
+			"name": "Amplification énergétique ousia",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique un <color=#FFFFFFFF>$[C130091|s1]</color> au personnage.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color> et applique un <color=#FFFFFFFF>boost d'énergie ousia</color> au personnage.",
+			"description": "Inflige 2 pts de DGT physiques et applique un boost d'énergie ousia au personnage.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30093,
+			"name": "Explosion énergétique ousia",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique un <color=#FFFFFFFF>$[C130091|s1]</color> au personnage.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color> et applique un <color=#FFFFFFFF>boost d'énergie ousia</color> au personnage.",
+			"description": "Inflige 3 pts de DGT physiques et applique un boost d'énergie ousia au personnage.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30094,
+			"name": "Renforcement structurel ousia",
+			"descriptionraw": "DGT infligés par vos personnages +1.",
+			"descriptionreplaced": "DGT infligés par vos personnages +1.",
+			"description": "DGT infligés par vos personnages +1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		},
+		{
+			"id": 30095,
+			"name": "Signature énergétique : Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'{SPRITE_PRESET#3505}Arkhe pneuma : </color>il change en $[K1014|s1] et <color=#FFFFFFFF>ne peut pas utiliser de capacité</color> jusqu'à la fin de la manche.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'{SPRITE_PRESET#3505}Arkhe pneuma : </color>il change en <color=#FFFFFFFF>forme désactivée</color> et <color=#FFFFFFFF>ne peut pas utiliser de capacité</color> jusqu'à la fin de la manche.",
+			"description": "Lorsque le personnage a subi des DGT venant d'un personnage chargé d'énergie d'Arkhe pneuma : il change en forme désactivée et ne peut pas utiliser de capacité jusqu'à la fin de la manche.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

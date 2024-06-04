@@ -1,0 +1,96 @@
+{
+	"id": 3010,
+	"name": "Meka potenziatore aritmetico (Pneuma)",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Nessun tipo elementale",
+		"Altre armi",
+		"Mostro"
+	],
+	"skills": [
+		{
+			"id": 30101,
+			"name": "Collisione",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30102,
+			"name": "Potenziamento energetico: Pneuma",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Questo personaggio ottiene l'effetto <color=#FFFFFFFF>$[C130101]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>. Questo personaggio ottiene l'effetto <color=#FFFFFFFF>Potenziamento energetico: Pneuma</color>.",
+			"description": "Infligge 2 DAN fisici. Questo personaggio ottiene l'effetto Potenziamento energetico: Pneuma.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30103,
+			"name": "Esplosione energetica: Pneuma",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Questo personaggio ottiene l'effetto <color=#FFFFFFFF>$[C130101]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>. Questo personaggio ottiene l'effetto <color=#FFFFFFFF>Potenziamento energetico: Pneuma</color>.",
+			"description": "Infligge 3 DAN fisici. Questo personaggio ottiene l'effetto Potenziamento energetico: Pneuma.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30104,
+			"name": "Riparazione strutturale: Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Dopo che il tuo personaggio usa un'abilità:</color> ripristina 1 PS del personaggio che ha subito più DAN.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Dopo che il tuo personaggio usa un'abilità:</color> ripristina 1 PS del personaggio che ha subito più DAN.",
+			"description": "Dopo che il tuo personaggio usa un'abilità: ripristina 1 PS del personaggio che ha subito più DAN.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		},
+		{
+			"id": 30105,
+			"name": "Archè: Pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Dopo aver subito DAN da personaggi con {SPRITE_PRESET#3504}Archè: Ousia</color>, questo personaggio entra in stato di $[K1014] e <color=#FFFFFFFF>non potrà usare abilità</color> fino alla fine del turno.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Dopo aver subito DAN da personaggi con {SPRITE_PRESET#3504}Archè: Ousia</color>, questo personaggio entra in stato di <color=#FFFFFFFF>Disattivazione</color> e <color=#FFFFFFFF>non potrà usare abilità</color> fino alla fine del turno.",
+			"description": "Dopo aver subito DAN da personaggi con Archè: Ousia, questo personaggio entra in stato di Disattivazione e non potrà usare abilità fino alla fine del turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"id": 3411,
+	"name": "Mecaespecialista Aniquiladora - Pneuma",
+	"transformsinto": [
+		3011
+	],
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Electro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 34111,
+			"name": "Asalto directo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34112,
+			"name": "Embestida estruendosa",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 3 pts. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34113,
+			"name": "Salto estrepitoso",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 5 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>.",
+			"description": "Inflige 5 pts. de Daño Electro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34114,
+			"name": "Unidad de apoyo: pneuma",
+			"descriptionraw": "Pasiva: al comenzar el duelo, crea un <color=#FFFFFFFF>$[C134111]</color>.",
+			"descriptionreplaced": "Pasiva: al comenzar el duelo, crea un <color=#FFFFFFFF>Mecacentinela Zonal - Pneuma</color>.",
+			"description": "Pasiva: al comenzar el duelo, crea un Mecacentinela Zonal - Pneuma.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 34115,
+			"name": "Energía pneuma",
+			"descriptionraw": "<color=#FFFFFFFF>Tras recibir daño cargado de {SPRITE_PRESET#3504}arjé: ousía</color>, este personaje entra en $[K1014|s1] y <color=#FFFFFFFF>no puede usar habilidades</color> hasta el fin de la ronda actual.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Tras recibir daño cargado de {SPRITE_PRESET#3504}arjé: ousía</color>, este personaje entra en <color=#FFFFFFFF>estado desactivado</color> y <color=#FFFFFFFF>no puede usar habilidades</color> hasta el fin de la ronda actual.",
+			"description": "Tras recibir daño cargado de arjé: ousía, este personaje entra en estado desactivado y no puede usar habilidades hasta el fin de la ronda actual.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

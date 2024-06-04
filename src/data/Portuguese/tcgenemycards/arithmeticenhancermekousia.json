@@ -1,0 +1,96 @@
+{
+	"id": 3009,
+	"name": "Mecaritmético - Ousia",
+	"transformsinto": [
+		3008
+	],
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Sem Tipo Elemental",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 30091,
+			"name": "Colidir",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30092,
+			"name": "Aumento de Energia: Ousia",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], este personagem ganha <color=#FFFFFFFF>$[C130091]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>, este personagem ganha <color=#FFFFFFFF>Aumento de Energia: Ousia</color>.",
+			"description": "Causa 2 pontos de Dano Físico, este personagem ganha Aumento de Energia: Ousia.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30093,
+			"name": "Explosão de Energia: Ousia",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], este personagem ganha <color=#FFFFFFFF>$[C130091]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>, este personagem ganha <color=#FFFFFFFF>Aumento de Energia: Ousia</color>.",
+			"description": "Causa 3 pontos de Dano Físico, este personagem ganha Aumento de Energia: Ousia.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 30094,
+			"name": "Aprimoramento de Estrutura: Ousia",
+			"descriptionraw": "Seus personagens causam +1 de Dano.",
+			"descriptionreplaced": "Seus personagens causam +1 de Dano.",
+			"description": "Seus personagens causam +1 de Dano.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 30095,
+			"name": "Arkhe: Ousia",
+			"descriptionraw": "<color=#FFFFFFFF>Após ser danificado por personagem com \"{SPRITE_PRESET#3505}Arkhe: Pneuma\"</color>, esse personagem ficará $[K1014] e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Após ser danificado por personagem com \"{SPRITE_PRESET#3505}Arkhe: Pneuma\"</color>, esse personagem ficará <color=#FFFFFFFF>Desativado</color> e <color=#FFFFFFFF>não poderá usar Habilidades</color> até o fim desse Turno.",
+			"description": "Após ser danificado por personagem com \"Arkhe: Pneuma\", esse personagem ficará Desativado e não poderá usar Habilidades até o fim desse Turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

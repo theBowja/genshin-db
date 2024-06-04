@@ -1,0 +1,74 @@
+{
+	"id": 3008,
+	"name": "Meka potenziatore aritmetico",
+	"istransformation": true,
+	"hp": 4,
+	"maxenergy": 1,
+	"tags": [
+		"GCG_TAG_ELEMENT_NONE",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Nessun tipo elementale",
+		"Altre armi",
+		"Mostro"
+	],
+	"skills": [
+		{
+			"id": 30081,
+			"name": "Collisione",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 1 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 30082,
+			"name": "Impatto brutale",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 30083,
+			"name": "Ricarica di energia",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] e ripristina la forma Pneuma/Ousia originale di questo personaggio.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color> e ripristina la forma Pneuma/Ousia originale di questo personaggio.",
+			"description": "Infligge 3 DAN fisici e ripristina la forma Pneuma/Ousia originale di questo personaggio.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_SAME",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 1
+				}
+			]
+		}
+	]
+}
