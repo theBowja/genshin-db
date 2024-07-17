@@ -1,0 +1,91 @@
+{
+	"id": 2104,
+	"name": "Фатуи: Оперативник мороза",
+	"shareid": 397,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Крио",
+		"Прочее",
+		"Фатуи"
+	],
+	"storytitle": "Фильтрация при ликвидации: Оперативник мороза",
+	"storytext": "Их вербуют ещё в детстве, но настоящими «оперативниками» они становятся лишь после долгих лет тренировок и обучения, после бесчисленных этапов отбора.",
+	"source": "Награда за принятие испытания в «Кошкином хвосте» и победу над Фатуи: Оперативник мороза в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 21041,
+			"name": "Рапира",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21042,
+			"name": "Морозный перехват",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 3 ед.",
+			"description": "Наносит Крио урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21043,
+			"name": "Колючий натиск",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа возникает <color=#FFFFFFFF>$[C121042]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 4 ед. У персонажа возникает <color=#FFFFFFFF>Боевая стойка</color>.",
+			"description": "Наносит Крио урон, 4 ед. У персонажа возникает Боевая стойка.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21044,
+			"name": "Кровавая тень",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>После использования навыка этим персонажем:</color> активный персонаж противника с $[K3], равным значению «финальный урон этого навыка минус 2», получает <color=#FFFFFFFF>$[C122]</color>. До 5 уровней.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>После использования навыка этим персонажем:</color> активный персонаж противника с <color=#FFFFFFFF>Кол-во применений</color>, равным значению «финальный урон этого навыка минус 2», получает <color=#FFFFFFFF>Долг жизни</color>. До 5 уровней.",
+			"description": "(Пассивный навык) После использования навыка этим персонажем: активный персонаж противника с Кол-во применений, равным значению «финальный урон этого навыка минус 2», получает Долг жизни. До 5 уровней.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

@@ -521,10 +521,11 @@ function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipim
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "4.7"; // new data will use this as added version
+gameVersion = "4.8"; // new data will use this as added version
 
 // importData('characters');
 // importCurve('characters');
+
 // getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
 // importData('constellations');
@@ -560,6 +561,9 @@ gameVersion = "4.7"; // new data will use this as added version
 // importData('tcglevelrewards');
 // importData('tcgstatuseffects');
 // importData('tcgsummons');
+
+
+// i dont actually do these below
 
 // updateURLs(); // must be separate
 

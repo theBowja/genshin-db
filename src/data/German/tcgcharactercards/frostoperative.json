@@ -1,0 +1,91 @@
+{
+	"id": 2104,
+	"name": "Fatui – Frostdienerin",
+	"shareid": 397,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Kryo",
+		"Andere Waffen",
+		"Fatui"
+	],
+	"storytitle": "Frucht der Ausscheidungen – Frostdienerin",
+	"storytext": "Schon im Kindesalter ausgewählt, müssen sie sich einer langen Ausbildung und einem harten Training unterziehen und erst nach unzähligen Ausscheidungen werden die sogenannten „Dienerinnen“ ernannt.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Fatui – Frostdienerin in der Tavernen-Herausforderung bei „Prinz“ in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 21041,
+			"name": "Flinke Klinge",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21042,
+			"name": "Wuchtiger Frosthieb",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>.",
+			"description": "Verursacht 3 Pkt. Kryo-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21043,
+			"name": "Stürzende Eiszapfen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erhält selbst <color=#FFFFFFFF>$[C121042]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2101}<color=#99FFFFFF>Kryo-SCH</color>, erhält selbst <color=#FFFFFFFF>Plündernde Wut</color>.",
+			"description": "Verursacht 4 Pkt. Kryo-SCH, erhält selbst Plündernde Wut.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21044,
+			"name": "Schatten des Bluteides",
+			"descriptionraw": "Passiv – <color=#FFFFFFFF>Nach Anwenden von Fähigkeiten dieser Figur</color>: Verleiht der aktiven Figur des Gegners <color=#FFFFFFFF>$[C122]</color> mit der $[K3], die 2 weniger als der SCH-Wert dieser Fähigkeit ist (5-fach stapelbar).",
+			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Nach Anwenden von Fähigkeiten dieser Figur</color>: Verleiht der aktiven Figur des Gegners <color=#FFFFFFFF>Eid des Lebens</color> mit der <color=#FFFFFFFF>Einsatzmöglichkeit</color>, die 2 weniger als der SCH-Wert dieser Fähigkeit ist (5-fach stapelbar).",
+			"description": "Passiv – Nach Anwenden von Fähigkeiten dieser Figur: Verleiht der aktiven Figur des Gegners Eid des Lebens mit der Einsatzmöglichkeit, die 2 weniger als der SCH-Wert dieser Fähigkeit ist (5-fach stapelbar).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

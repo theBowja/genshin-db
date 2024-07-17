@@ -1,0 +1,91 @@
+{
+	"id": 2104,
+	"name": "우인단·서리 심부름꾼",
+	"shareid": 397,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"기타 무기",
+		"우인단"
+	],
+	"storytitle": "걸러낸 열매·서리 심부름꾼",
+	"storytext": "어린 나이에 선택받아, 오랜 교화와 훈련 속에서 무수한 시험을 거쳐 살아남은 자만이 소위 말하는 「심부름꾼」이 될 수 있다",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 우인단·서리 심부름꾼에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 21041,
+			"name": "빠른 칼끝",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21042,
+			"name": "서늘한 요격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 3pt 준다.",
+			"description": "얼음 원소 피해를 3pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21043,
+			"name": "기습 찌르기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C121042]</color>을 부착한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 4pt 주고 본 캐릭터에게 <color=#FFFFFFFF>예리한 기습</color>을 부착한다.",
+			"description": "얼음 원소 피해를 4pt 주고 본 캐릭터에게 예리한 기습을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21044,
+			"name": "기습 핏빛 계약",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>본 캐릭터가 스킬 사용 후:</color> 상대 출전 캐릭터에게 $[K3]가 (해당 스킬 최종 피해량-2)인 <color=#FFFFFFFF>$[C122]</color>을 부착한다. (최대 5스택)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>본 캐릭터가 스킬 사용 후:</color> 상대 출전 캐릭터에게 <color=#FFFFFFFF>사용 가능 횟수</color>가 (해당 스킬 최종 피해량-2)인 <color=#FFFFFFFF>생명의 계약</color>을 부착한다. (최대 5스택)",
+			"description": "[패시브] 본 캐릭터가 스킬 사용 후: 상대 출전 캐릭터에게 사용 가능 횟수가 (해당 스킬 최종 피해량-2)인 생명의 계약을 부착한다. (최대 5스택)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

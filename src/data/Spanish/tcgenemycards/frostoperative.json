@@ -1,0 +1,87 @@
+{
+	"id": 4109,
+	"name": "Soldado Fatui - Senescal Cryo",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Cryo",
+		"Otras armas",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 21041,
+			"name": "Cuchilla rápida",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21042,
+			"name": "Interceptación hojaescarcha",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color>.",
+			"description": "Inflige 3 pts. de Daño Cryo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21043,
+			"name": "Espina de asalto",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y este personaje obtiene el efecto de <color=#FFFFFFFF>$[C121042|s1]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> y este personaje obtiene el efecto de <color=#FFFFFFFF>posición de asalto</color>.",
+			"description": "Inflige 4 pts. de Daño Cryo y este personaje obtiene el efecto de posición de asalto.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21044,
+			"name": "Sombra sanguínea",
+			"descriptionraw": "Pasiva: <color=#FFFFFFFF>después de que este personaje use una habilidad</color>, el personaje en combate enemigo obtiene un <color=#FFFFFFFF>$[C122|s1]</color> con un número de $[K3|s3] equivalente al daño final de esta habilidad -2 (acumulable hasta 5 veces).",
+			"descriptionreplaced": "Pasiva: <color=#FFFFFFFF>después de que este personaje use una habilidad</color>, el personaje en combate enemigo obtiene un <color=#FFFFFFFF>pacto vital</color> con un número de <color=#FFFFFFFF>usos</color> equivalente al daño final de esta habilidad -2 (acumulable hasta 5 veces).",
+			"description": "Pasiva: después de que este personaje use una habilidad, el personaje en combate enemigo obtiene un pacto vital con un número de usos equivalente al daño final de esta habilidad -2 (acumulable hasta 5 veces).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,247 @@
+{
+	"id": 9901,
+	"name": "Émilie",
+	"combat1": {
+		"name": "Attaque normale : Lance d'éclombre (modifiée)",
+		"descriptionRaw": "<color=#FFD780FF>Attaque normale</color>\nEnchaîne jusqu'à 4 coups de lance.\n\n<color=#FFD780FF>Attaque chargée</color>\nConsomme de l'endurance pour déclencher une attaque ascendante.\n\n<color=#FFD780FF>Attaque plongeante</color>\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"description": "Attaque normale\nEnchaîne jusqu'à 4 coups de lance.\n\nAttaque chargée\nConsomme de l'endurance pour déclencher une attaque ascendante.\n\nAttaque plongeante\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT attaque chargée|{param5:F1P}",
+				"Coût d'endurance attaque chargée|{param6:F1} pts",
+				"DGT durant la chute|{param7:F1P}",
+				"DGT chute basse/élevée|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Extraction de fragrance",
+		"descriptionRaw": "Crée un flacon de Lumidouce qui inflige des <color=#99FF88FF>DGT Dendro de zone</color>.\n\n<color=#FFD780FF>Flacon de Lumidouce</color>\n· Tire de façon intermittente des bouffées d'aiguail pur sur les ennemis proches, infligeant des <color=#99FF88FF>DGT Dendro</color>.\n· Tout ennemi brûlé à proximité dégagera de façon intermittente de la senteur, une senteur pouvant être créée de cette manière une fois toutes les 2 s. Le flacon de Lumidouce peut collecter les senteurs à proximité, et après avoir collecté 2 senteurs, il monte d'un niveau pour tirer 1 bouffée d'aiguail pur supplémentaire chaque fois qu'il en tire et augmenter les DGT infligés et la portée de ces bouffées.\n· Il ne peut exister qu'un seul flacon de Lumidouce créé par Émilie à la fois. Le flacon de Lumidouce commence au niveau 1 et peut atteindre le niveau 2. Si le flacon ne collecte aucune senteur pendant 8 s alors qu'il est sur le terrain, il passe au niveau 1.\n\n<color=#FFD780FF>Arkhe : Pneuma</color>\nRégulièrement, après qu'Émilie a créé un flacon de Lumidouce de cette façon, une épine d'inhalation qui transperce les ennemis descend devant elle pour infliger des <color=#99FF88FF>DGT Dendro</color> chargés d'énergie pneuma.\n\n<i>« Le monde est une harmonie infinie de parfums, de couleurs et de chants. »</i>",
+		"description": "Crée un flacon de Lumidouce qui inflige des DGT Dendro de zone.\n\nFlacon de Lumidouce\n· Tire de façon intermittente des bouffées d'aiguail pur sur les ennemis proches, infligeant des DGT Dendro.\n· Tout ennemi brûlé à proximité dégagera de façon intermittente de la senteur, une senteur pouvant être créée de cette manière une fois toutes les 2 s. Le flacon de Lumidouce peut collecter les senteurs à proximité, et après avoir collecté 2 senteurs, il monte d'un niveau pour tirer 1 bouffée d'aiguail pur supplémentaire chaque fois qu'il en tire et augmenter les DGT infligés et la portée de ces bouffées.\n· Il ne peut exister qu'un seul flacon de Lumidouce créé par Émilie à la fois. Le flacon de Lumidouce commence au niveau 1 et peut atteindre le niveau 2. Si le flacon ne collecte aucune senteur pendant 8 s alors qu'il est sur le terrain, il passe au niveau 1.\n\nArkhe : Pneuma\nRégulièrement, après qu'Émilie a créé un flacon de Lumidouce de cette façon, une épine d'inhalation qui transperce les ennemis descend devant elle pour infliger des DGT Dendro chargés d'énergie pneuma.",
+		"flavorText": "« Le monde est une harmonie infinie de parfums, de couleurs et de chants. »",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT flacon de Lumidouce (niveau 1)|{param2:F1P}",
+				"DGT flacon de Lumidouce (niveau 2)|{param3:F1P} ×2",
+				"Durée de flacon de Lumidouce|{param4:F1} s",
+				"DGT épine d'inhalation|{param5:F1P}",
+				"Intervalle d'épine d'inhalation|{param6:F1} s",
+				"Temps de recharge|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Explication de parfum",
+		"descriptionRaw": "Émilie guide le parfum rassemblé dans le flacon pour le convertir en énergie Dendro pure, créant ainsi un flacon de Lumidouce de niveau 3 et rangeant tout flacon présent.\nPendant sa durée, le flacon de Lumidouce de niveau 3 ne collecte pas les senteurs à proximité et fait descendre de façon continue de la rosée parfumée pour attaquer les ennemis à portée, infligeant des <color=#99FF88FF>DGT Dendro</color>. Pendant sa durée, le flacon de Lumidouce de niveau 3 fait descendre une rosée parfumée toutes les 0,3 s et chaque ennemi peut être ciblé une fois toutes les 0,7 s.\nÀ la fin de la durée, un flacon de Lumidouce de niveau 1 sera recréé. Si l'utilisation d'Explication de parfum a rangé un flacon de Lumidouce, ce flacon sera déployé à la place et sa durée sera réinitialisée.\nPendant la durée d'<color=#FFD780FF>Explication de parfum</color>, la compétence élémentaire « Extraction de fragrance » ne crée pas de flacon de Lumidouce.\n\n<i>Quel que soit le parfum, il commence à changer dès qu'il entre en contact avec l'air, avant de finalement se dissiper au milieu des murmures du vent, des arbres et de l'herbe. Ainsi, personne n'apprécie exactement la même senteur.\nIl en va de même pour les chemins empruntés par tous ceux qui vivent. En ce sens, on peut considérer les parfums comme une analogie de la vie humaine.</i>",
+		"description": "Émilie guide le parfum rassemblé dans le flacon pour le convertir en énergie Dendro pure, créant ainsi un flacon de Lumidouce de niveau 3 et rangeant tout flacon présent.\nPendant sa durée, le flacon de Lumidouce de niveau 3 ne collecte pas les senteurs à proximité et fait descendre de façon continue de la rosée parfumée pour attaquer les ennemis à portée, infligeant des DGT Dendro. Pendant sa durée, le flacon de Lumidouce de niveau 3 fait descendre une rosée parfumée toutes les 0,3 s et chaque ennemi peut être ciblé une fois toutes les 0,7 s.\nÀ la fin de la durée, un flacon de Lumidouce de niveau 1 sera recréé. Si l'utilisation d'Explication de parfum a rangé un flacon de Lumidouce, ce flacon sera déployé à la place et sa durée sera réinitialisée.\nPendant la durée d'Explication de parfum, la compétence élémentaire « Extraction de fragrance » ne crée pas de flacon de Lumidouce.",
+		"flavorText": "Quel que soit le parfum, il commence à changer dès qu'il entre en contact avec l'air, avant de finalement se dissiper au milieu des murmures du vent, des arbres et de l'herbe. Ainsi, personne n'apprécie exactement la même senteur.\nIl en va de même pour les chemins empruntés par tous ceux qui vivent. En ce sens, on peut considérer les parfums comme une analogie de la vie humaine.",
+		"attributes": {
+			"labels": [
+				"DGT flacon de Lumidouce (niveau 3)|{param1:F1P}",
+				"Durée de flacon de Lumidouce (niveau 3)|{param2:F1} s",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Arôme persistant",
+		"descriptionRaw": "Chaque fois qu'il collecte 2 <color=#FFD780FF>senteurs</color>, un flacon de Lumidouce de niveau 2 consomme ses senteurs pour libérer une cologne d'aiguail clair qui inflige des <color=#99FF88FF>DGT Dendro de zone</color> d'une valeur équivalant à 600 % de l'ATQ d'Émilie aux ennemis. Ces DGT ne sont pas considérés comme des DGT de compétence élémentaire.",
+		"description": "Chaque fois qu'il collecte 2 senteurs, un flacon de Lumidouce de niveau 2 consomme ses senteurs pour libérer une cologne d'aiguail clair qui inflige des DGT Dendro de zone d'une valeur équivalant à 600 % de l'ATQ d'Émilie aux ennemis. Ces DGT ne sont pas considérés comme des DGT de compétence élémentaire."
+	},
+	"passive2": {
+		"name": "Distillat raffiné",
+		"descriptionRaw": "Les DGT qu'Émilie inflige aux ennemis brûlés augmentent selon son ATQ : chaque tranche de 1 000 pts d'ATQ augmente les DGT de 15 %, les DGT pouvant être augmentés d'un maximum de 36 % de cette manière.",
+		"description": "Les DGT qu'Émilie inflige aux ennemis brûlés augmentent selon son ATQ : chaque tranche de 1 000 pts d'ATQ augmente les DGT de 15 %, les DGT pouvant être augmentés d'un maximum de 36 % de cette manière."
+	},
+	"passive3": {
+		"name": "Extraction de senteur",
+		"descriptionRaw": "Lorsqu'un flacon de Lumidouce créé par Émilie est sur le terrain, tous les personnages de l'équipe à proximité voient leur <color=#FF9999FF>RÉS Pyro</color> contre les DGT de Brûlure augmenter de 85 %.",
+		"description": "Lorsqu'un flacon de Lumidouce créé par Émilie est sur le terrain, tous les personnages de l'équipe à proximité voient leur RÉS Pyro contre les DGT de Brûlure augmenter de 85 %."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104344,
+				"name": "Enseignement de l'Ordre",
+				"count": 3
+			},
+			{
+				"id": 112083,
+				"name": "Engrenage de maillage",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104345,
+				"name": "Guide de l'Ordre",
+				"count": 2
+			},
+			{
+				"id": 112084,
+				"name": "Engrenage à coupe droite",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104345,
+				"name": "Guide de l'Ordre",
+				"count": 4
+			},
+			{
+				"id": 112084,
+				"name": "Engrenage à coupe droite",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104345,
+				"name": "Guide de l'Ordre",
+				"count": 6
+			},
+			{
+				"id": 112084,
+				"name": "Engrenage à coupe droite",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104345,
+				"name": "Guide de l'Ordre",
+				"count": 9
+			},
+			{
+				"id": 112084,
+				"name": "Engrenage à coupe droite",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104346,
+				"name": "Philosophie de l'Ordre",
+				"count": 4
+			},
+			{
+				"id": 112085,
+				"name": "Engrenage dynamique artificié",
+				"count": 4
+			},
+			{
+				"id": 113061,
+				"name": "Plume soyeuse",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104346,
+				"name": "Philosophie de l'Ordre",
+				"count": 6
+			},
+			{
+				"id": 112085,
+				"name": "Engrenage dynamique artificié",
+				"count": 6
+			},
+			{
+				"id": 113061,
+				"name": "Plume soyeuse",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104346,
+				"name": "Philosophie de l'Ordre",
+				"count": 12
+			},
+			{
+				"id": 112085,
+				"name": "Engrenage dynamique artificié",
+				"count": 9
+			},
+			{
+				"id": 113061,
+				"name": "Plume soyeuse",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104346,
+				"name": "Philosophie de l'Ordre",
+				"count": 16
+			},
+			{
+				"id": 112085,
+				"name": "Engrenage dynamique artificié",
+				"count": 12
+			},
+			{
+				"id": 113061,
+				"name": "Plume soyeuse",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

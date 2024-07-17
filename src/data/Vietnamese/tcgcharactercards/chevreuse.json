@@ -1,0 +1,105 @@
+{
+	"id": 1313,
+	"name": "Chevreuse",
+	"shareid": 395,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Nguyên Tố Hỏa",
+		"Vũ Khí Cán Dài",
+		"Fontaine",
+		"Sức Mạnh Nền Tảng: Ousia"
+	],
+	"storytitle": "Người Thực Thi Công Lý - Chevreuse",
+	"storytext": "Hành pháp đúng luật, hỏi tội công chính.",
+	"source": "Nhận được sau khi mời Chevreuse giao đấu trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong Đánh Giải Trí",
+	"skills": [
+		{
+			"id": 13131,
+			"name": "Lưỡi Lê Cải Tiến",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13132,
+			"name": "Đánh Chặn Nhanh Tầm Gần",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>Sau khi tổng kết kỹ năng này:</color> Nếu trên tay phe ta có thẻ <color=#FFFFFFFF>$[C113131]</color>, sẽ $[K56] 1 lá và chữa trị 1 điểm cho nhân vật chịu nhiều sát thương nhất phe ta.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.\\n<color=#FFFFFFFF>Sau khi tổng kết kỹ năng này:</color> Nếu trên tay phe ta có thẻ <color=#FFFFFFFF>Đầu Đạn Quá Tải</color>, sẽ <color=#FFFFFFFF>Vứt Bỏ</color> 1 lá và chữa trị 1 điểm cho nhân vật chịu nhiều sát thương nhất phe ta.",
+			"description": "Gây 2 điểm Sát Thương Nguyên Tố Hỏa.\nSau khi tổng kết kỹ năng này: Nếu trên tay phe ta có thẻ Đầu Đạn Quá Tải, sẽ Vứt Bỏ 1 lá và chữa trị 1 điểm cho nhân vật chịu nhiều sát thương nhất phe ta.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13133,
+			"name": "Bom Chùm Oanh Tạc",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], sinh ra <color=#FFFFFFFF>$[C113132]</color> trên sân phe địch.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>, sinh ra <color=#FFFFFFFF>Bom Nổ Kép</color> trên sân phe địch.",
+			"description": "Gây 2 điểm Sát Thương Nguyên Tố Hỏa, sinh ra Bom Nổ Kép trên sân phe địch.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13134,
+			"name": "Phối Hợp Vũ Lực Xuyên Thấu",
+			"descriptionraw": "(Bị động) <color=#FFFFFFFF>Sau khi nhân vật phe địch nhận sát thương phản ứng Quá Tải:</color> Sinh ra thẻ <color=#FFFFFFFF>$[C113131]</color> trên tay (Mỗi hiệp 1 lần)",
+			"descriptionreplaced": "(Bị động) <color=#FFFFFFFF>Sau khi nhân vật phe địch nhận sát thương phản ứng Quá Tải:</color> Sinh ra thẻ <color=#FFFFFFFF>Đầu Đạn Quá Tải</color> trên tay (Mỗi hiệp 1 lần)",
+			"description": "(Bị động) Sau khi nhân vật phe địch nhận sát thương phản ứng Quá Tải: Sinh ra thẻ Đầu Đạn Quá Tải trên tay (Mỗi hiệp 1 lần)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 13135,
+			"name": "Đánh Chặn Nhanh Tầm Gần",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>Sau khi tổng kết kỹ năng này:</color> Nếu trên tay phe ta có thẻ <color=#FFFFFFFF>$[C113131]</color>, sẽ $[K56] 1 lá và chữa trị 1 điểm cho nhân vật chịu nhiều sát thương nhất phe ta.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Gây 3 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.\\n<color=#FFFFFFFF>Sau khi tổng kết kỹ năng này:</color> Nếu trên tay phe ta có thẻ <color=#FFFFFFFF>Đầu Đạn Quá Tải</color>, sẽ <color=#FFFFFFFF>Vứt Bỏ</color> 1 lá và chữa trị 1 điểm cho nhân vật chịu nhiều sát thương nhất phe ta.",
+			"description": "Gây 3 điểm Sát Thương Nguyên Tố Hỏa.\nSau khi tổng kết kỹ năng này: Nếu trên tay phe ta có thẻ Đầu Đạn Quá Tải, sẽ Vứt Bỏ 1 lá và chữa trị 1 điểm cho nhân vật chịu nhiều sát thương nhất phe ta.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": []
+		}
+	]
+}

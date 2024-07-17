@@ -1,0 +1,247 @@
+{
+	"id": 9901,
+	"name": "Émilie",
+	"combat1": {
+		"name": "Ataque Normal: Lanza fantasmal (modificada)",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nRealiza hasta 4 ataques rápidos con lanza.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume una cierta cantidad de Aguante para realizar un ataque hacia arriba.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"description": "Ataque Normal\nRealiza hasta 4 ataques rápidos con lanza.\n\nAtaque Cargado\nConsume una cierta cantidad de Aguante para realizar un ataque hacia arriba.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}",
+				"Daño de ATQ Cargado|{param5:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param6:F1} pts.",
+				"Daño de Caída|{param7:F1P}",
+				"Daño de impacto de caída baja/alta|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Colección de fragancias",
+		"descriptionRaw": "#Crea un perfume lumidulce que inflige <color=#99FF88FF>Daño Dendro en el AdE</color>.\n\n<color=#FFD780FF>Perfume lumidulce</color>\n·Cada cierto tiempo, dispara “eau de rosée” a los enemigos cercanos para infligirles <color=#99FF88FF>Daño Dendro</color>.\n·Cuando un enemigo cercano esté quemado, emitirá una fragancia. Solo se puede crear una fragancia cada 2{NON_BREAK_SPACE}s de esta manera. El perfume lumidulce recogerá las fragancias cercanas y, tras recoger dos, subirá de nivel, de manera que al disparar una vez “eau de rosée”, disparará otra adicional y aumentará tanto el daño infligido como el AdE de dichos ataques.\n·Solo puede existir un perfume lumidulce creado por Émilie a la vez. El perfume empieza en nivel 1 y puede aumentar hasta el nivel 2. Si un perfume lumidulce activo no recoge ninguna fragancia en 8{NON_BREAK_SPACE}s, volverá a nivel 1.\n\n<color=#FFD780FF>Arjé: pneuma</color>\nCuando Émilie crea un perfume lumidulce de esta forma, cada cierto tiempo cae frente a ella misma una espina halitoespiritual que atraviesa a los enemigos y les inflige <color=#99FF88FF>Daño Dendro</color> cargado de energía pneuma.\n\n<i>El mundo consiste en una armonía interminable de fragancias, colores y canciones.</i>",
+		"description": "Crea un perfume lumidulce que inflige Daño Dendro en el AdE.\n\nPerfume lumidulce\n·Cada cierto tiempo, dispara “eau de rosée” a los enemigos cercanos para infligirles Daño Dendro.\n·Cuando un enemigo cercano esté quemado, emitirá una fragancia. Solo se puede crear una fragancia cada 2 s de esta manera. El perfume lumidulce recogerá las fragancias cercanas y, tras recoger dos, subirá de nivel, de manera que al disparar una vez “eau de rosée”, disparará otra adicional y aumentará tanto el daño infligido como el AdE de dichos ataques.\n·Solo puede existir un perfume lumidulce creado por Émilie a la vez. El perfume empieza en nivel 1 y puede aumentar hasta el nivel 2. Si un perfume lumidulce activo no recoge ninguna fragancia en 8 s, volverá a nivel 1.\n\nArjé: pneuma\nCuando Émilie crea un perfume lumidulce de esta forma, cada cierto tiempo cae frente a ella misma una espina halitoespiritual que atraviesa a los enemigos y les inflige Daño Dendro cargado de energía pneuma.",
+		"flavorText": "El mundo consiste en una armonía interminable de fragancias, colores y canciones.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de perfume lumidulce niv. 1|{param2:F1P}",
+				"Daño de perfume lumidulce niv. 2|{param3:F1P} ×2",
+				"Duración de perfume lumidulce|{param4:F1} s",
+				"Daño de espina halitoespiritual|{param5:F1P}",
+				"Intervalo de espina halitoespiritual|{param6:F1} s",
+				"TdE de la habilidad|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Representación perfumada",
+		"descriptionRaw": "#Transforma en energía Dendro pura las fragancias recogidas en su perfume para crear un perfume lumidulce de nivel 3 y guardar el que ya haya creado.\nMientras el perfume lumidulce de nivel 3 está activo, no recogerá las fragancias cercanas, sino que hará caer continuamente gotas rociofragantes que atacan a los enemigos situados en su AdE para infligirles <color=#99FF88FF>Daño Dendro</color>. Mientras este efecto esté activo, cada 0.3{NON_BREAK_SPACE}s caerá una gota rociofragante. Un mismo enemigo solo puede ser escogido una vez cada 0.7{NON_BREAK_SPACE}s como objetivo de la gota.\nCuando la duración de este efecto termine, se volverá a crear un perfume lumidulce de nivel 1. Si al usar Representación perfumada se guardó un perfume lumidulce, se colocará el perfume guardado y su duración se reiniciará.\nMientras <color=#FFD780FF>Representación perfumada</color> esté activa, la Habilidad Elemental, “Colección de fragancias”, no creará perfumes lumidulces.\n\n<i>Da igual cuál sea el perfume, en cuanto entre en contacto con el aire, su fragancia cambiará con el paso del tiempo hasta fundirse entre los murmullos del viento y las plantas. En cierto sentido, nadie puede apreciar de la misma forma un mismo perfume.\nLo mismo ocurre con el curso que sigue todo ser vivo. Por tanto, se podría decir que un perfume es una representación de la vida misma.</i>",
+		"description": "Transforma en energía Dendro pura las fragancias recogidas en su perfume para crear un perfume lumidulce de nivel 3 y guardar el que ya haya creado.\nMientras el perfume lumidulce de nivel 3 está activo, no recogerá las fragancias cercanas, sino que hará caer continuamente gotas rociofragantes que atacan a los enemigos situados en su AdE para infligirles Daño Dendro. Mientras este efecto esté activo, cada 0.3 s caerá una gota rociofragante. Un mismo enemigo solo puede ser escogido una vez cada 0.7 s como objetivo de la gota.\nCuando la duración de este efecto termine, se volverá a crear un perfume lumidulce de nivel 1. Si al usar Representación perfumada se guardó un perfume lumidulce, se colocará el perfume guardado y su duración se reiniciará.\nMientras Representación perfumada esté activa, la Habilidad Elemental, “Colección de fragancias”, no creará perfumes lumidulces.",
+		"flavorText": "Da igual cuál sea el perfume, en cuanto entre en contacto con el aire, su fragancia cambiará con el paso del tiempo hasta fundirse entre los murmullos del viento y las plantas. En cierto sentido, nadie puede apreciar de la misma forma un mismo perfume.\nLo mismo ocurre con el curso que sigue todo ser vivo. Por tanto, se podría decir que un perfume es una representación de la vida misma.",
+		"attributes": {
+			"labels": [
+				"Daño de perfume lumidulce niv. 3|{param1:F1P}",
+				"Duración de perfume lumidulce niv. 3|{param2:F1} s",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Fragancia persistente",
+		"descriptionRaw": "Por cada dos <color=#FFD780FF>fragancias</color> recogidas, el perfume lumidulce de nivel 2 las consumirá para liberar una vez “eau de pureté” e infligir a los enemigos <color=#99FF88FF>Daño Dendro en el AdE</color> en una cantidad equivalente al 600% del ATQ de Émilie. Este daño no se considera daño de Habilidad Elemental.",
+		"description": "Por cada dos fragancias recogidas, el perfume lumidulce de nivel 2 las consumirá para liberar una vez “eau de pureté” e infligir a los enemigos Daño Dendro en el AdE en una cantidad equivalente al 600% del ATQ de Émilie. Este daño no se considera daño de Habilidad Elemental."
+	},
+	"passive2": {
+		"name": "Rectificación",
+		"descriptionRaw": "#El daño que inflige Émilie contra los enemigos quemados aumenta en un 15% por cada 1000{NON_BREAK_SPACE}pts. de ATQ que tenga. Como máximo, dicho daño puede aumentar en un 36% de esta manera.",
+		"description": "El daño que inflige Émilie contra los enemigos quemados aumenta en un 15% por cada 1000 pts. de ATQ que tenga. Como máximo, dicho daño puede aumentar en un 36% de esta manera."
+	},
+	"passive3": {
+		"name": "Aroma ambiental",
+		"descriptionRaw": "Cuando en el campo de batalla haya algún perfume lumidulce creado por Émilie, aumenta en un 85% la <color=#FF9999FF>RES Pyro</color> de todos los personajes cercanos del equipo contra el daño de la reacción de Quemadura.",
+		"description": "Cuando en el campo de batalla haya algún perfume lumidulce creado por Émilie, aumenta en un 85% la RES Pyro de todos los personajes cercanos del equipo contra el daño de la reacción de Quemadura."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104344,
+				"name": "Enseñanzas del orden",
+				"count": 3
+			},
+			{
+				"id": 112083,
+				"name": "Engranaje de malla",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104345,
+				"name": "Guía del orden",
+				"count": 2
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104345,
+				"name": "Guía del orden",
+				"count": 4
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104345,
+				"name": "Guía del orden",
+				"count": 6
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104345,
+				"name": "Guía del orden",
+				"count": 9
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104346,
+				"name": "Filosofía del orden",
+				"count": 4
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 4
+			},
+			{
+				"id": 113061,
+				"name": "Pluma de seda",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104346,
+				"name": "Filosofía del orden",
+				"count": 6
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 6
+			},
+			{
+				"id": 113061,
+				"name": "Pluma de seda",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104346,
+				"name": "Filosofía del orden",
+				"count": 12
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 9
+			},
+			{
+				"id": 113061,
+				"name": "Pluma de seda",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104346,
+				"name": "Filosofía del orden",
+				"count": 16
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 12
+			},
+			{
+				"id": 113061,
+				"name": "Pluma de seda",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

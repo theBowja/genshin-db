@@ -1,0 +1,87 @@
+{
+	"id": 3412,
+	"name": "Пустынник: Полуденный гром",
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Электро",
+		"Прочее",
+		"Пустынники"
+	],
+	"skills": [
+		{
+			"id": 34121,
+			"name": "Удар топором",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34122,
+			"name": "Вихревой удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 3 ед.",
+			"description": "Наносит Физический урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 34123,
+			"name": "Тяжёлый удар топором",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 5,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 5 ед.",
+			"description": "Наносит Физический урон, 5 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 34124,
+			"name": "Зловещий дух (Электро)",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если у этого персонажа не более 7 HP, ему добавляется 1 $[K310] и <color=#FFFFFFFF>$[C134121]</color>. Только 1 раз за игру.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если у этого персонажа не более 7 HP, ему добавляется 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color> и <color=#FFFFFFFF>Пробуждение духа предзнаменования: Электро</color>. Только 1 раз за игру.",
+			"description": "(Пассивный навык) Когда этот персонаж получает урон: если у этого персонажа не более 7 HP, ему добавляется 1 Энергия и Пробуждение духа предзнаменования: Электро. Только 1 раз за игру.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

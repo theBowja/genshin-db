@@ -1,0 +1,87 @@
+{
+	"id": 4109,
+	"name": "Buz Ajanı",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Buz",
+		"Diğer Silahlar",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 21041,
+			"name": "Hızlı Nokta",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21042,
+			"name": "Donduran Nidalar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir.",
+			"description": "3 Buz Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21043,
+			"name": "Dikenli Taarruz",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bu karaktere <color=#FFFFFFFF>$[C121042]</color> ekler.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir. Bu karaktere <color=#FFFFFFFF>Taarruz Duruşu</color> ekler.",
+			"description": "4 Buz Hasarı verir. Bu karaktere Taarruz Duruşu ekler.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21044,
+			"name": "Kanla Bağlı Gölge",
+			"descriptionraw": "(Pasif) <color=#FFFFFFFF>Bu karakter bir Beceri kullandıktan sonra</color> rakibin aktif karakterine $[K3] (bu Becerinin Son Hasar toplamı -2) kadar olan <color=#FFFFFFFF>$[C122]</color> eklenir. (5 kademeye kadar birikir.)",
+			"descriptionreplaced": "(Pasif) <color=#FFFFFFFF>Bu karakter bir Beceri kullandıktan sonra</color> rakibin aktif karakterine <color=#FFFFFFFF>Kullanım Hakkı</color> (bu Becerinin Son Hasar toplamı -2) kadar olan <color=#FFFFFFFF>Hayat Bağı</color> eklenir. (5 kademeye kadar birikir.)",
+			"description": "(Pasif) Bu karakter bir Beceri kullandıktan sonra rakibin aktif karakterine Kullanım Hakkı (bu Becerinin Son Hasar toplamı -2) kadar olan Hayat Bağı eklenir. (5 kademeye kadar birikir.)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

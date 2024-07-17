@@ -1,0 +1,87 @@
+{
+	"id": 4109,
+	"name": "Frost Operative",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Cryo",
+		"Other Weapons",
+		"Fatui"
+	],
+	"skills": [
+		{
+			"id": 21041,
+			"name": "Swift Point",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21042,
+			"name": "Frosty Interjection",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>.",
+			"description": "Deals 3 Cryo DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21043,
+			"name": "Thorny Onslaught",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Attaches <color=#FFFFFFFF>$[C121042]</color> to this character.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Deals 4 {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>. Attaches <color=#FFFFFFFF>Onslaught Stance</color> to this character.",
+			"description": "Deals 4 Cryo DMG. Attaches Onslaught Stance to this character.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21044,
+			"name": "Blood-Bonded Shadow",
+			"descriptionraw": "(Passive) <color=#FFFFFFFF>After this character uses a Skill:</color> Attach <color=#FFFFFFFF>$[C122]</color> to the opponent's active character with $[K3] equal to (this Skill's finalized DMG total -2). (Max 5 stacks)",
+			"descriptionreplaced": "(Passive) <color=#FFFFFFFF>After this character uses a Skill:</color> Attach <color=#FFFFFFFF>Bond of Life</color> to the opponent's active character with <color=#FFFFFFFF>Usage(s)</color> equal to (this Skill's finalized DMG total -2). (Max 5 stacks)",
+			"description": "(Passive) After this character uses a Skill: Attach Bond of Life to the opponent's active character with Usage(s) equal to (this Skill's finalized DMG total -2). (Max 5 stacks)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

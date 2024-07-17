@@ -1,0 +1,105 @@
+{
+	"id": 1313,
+	"name": "Chevreuse",
+	"shareid": 395,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Pyro",
+		"Stangenwaffe",
+		"Fontaine",
+		"Arkhe: Ousia"
+	],
+	"storytitle": "Vollstreckerin des Gesetzes – Chevreuse",
+	"storytext": "Gerechte Hüterin des Gesetzes.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Chevreuse in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 13131,
+			"name": "Bajonettangriff der Lineartaktik – Modifiziert",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13132,
+			"name": "Schnelles Unterdrückungsfeuer auf kurze Distanz",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].\\n<color=#FFFFFFFF>Nach Auswertung dieser Fähigkeit:</color> Wenn du <color=#FFFFFFFF>$[C113131]</color> in der Hand hast, wird 1 davon $[K56|s1]; stellt dabei deiner Figur, die den meisten SCH erlitten hat, 1 LP wieder her.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.\\n<color=#FFFFFFFF>Nach Auswertung dieser Fähigkeit:</color> Wenn du <color=#FFFFFFFF>Überladene Kugel</color> in der Hand hast, wird 1 davon <color=#FFFFFFFF>abgeworfen</color>; stellt dabei deiner Figur, die den meisten SCH erlitten hat, 1 LP wieder her.",
+			"description": "Verursacht 2 Pkt. Pyro-SCH.\nNach Auswertung dieser Fähigkeit: Wenn du Überladene Kugel in der Hand hast, wird 1 davon abgeworfen; stellt dabei deiner Figur, die den meisten SCH erlitten hat, 1 LP wieder her.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13133,
+			"name": "Kreisförmiger Kartätschenangriff",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft auf dem Feld des Gegners 1 <color=#FFFFFFFF>$[C113132]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, erschafft auf dem Feld des Gegners 1 <color=#FFFFFFFF>Sekundäres Explosivgeschoss</color>.",
+			"description": "Verursacht 2 Pkt. Pyro-SCH, erschafft auf dem Feld des Gegners 1 Sekundäres Explosivgeschoss.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13134,
+			"name": "Vertikale Kraftkoordination",
+			"descriptionraw": "Passiv – <color=#FFFFFFFF>Nachdem eine Figur des Gegners SCH durch Überladen erlitten hat:</color> Erschafft 1 <color=#FFFFFFFF>$[C113131]</color> auf deiner Hand (1-mal pro Runde).",
+			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Nachdem eine Figur des Gegners SCH durch Überladen erlitten hat:</color> Erschafft 1 <color=#FFFFFFFF>Überladene Kugel</color> auf deiner Hand (1-mal pro Runde).",
+			"description": "Passiv – Nachdem eine Figur des Gegners SCH durch Überladen erlitten hat: Erschafft 1 Überladene Kugel auf deiner Hand (1-mal pro Runde).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 13135,
+			"name": "Schnelles Unterdrückungsfeuer auf kurze Distanz",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].\\n<color=#FFFFFFFF>Nach Auswertung dieser Fähigkeit:</color> Wenn du <color=#FFFFFFFF>$[C113131]</color> in der Hand hast, wird 1 davon $[K56|s1]; stellt dabei deiner Figur, die den meisten SCH erlitten hat, 1 LP wieder her.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.\\n<color=#FFFFFFFF>Nach Auswertung dieser Fähigkeit:</color> Wenn du <color=#FFFFFFFF>Überladene Kugel</color> in der Hand hast, wird 1 davon <color=#FFFFFFFF>abgeworfen</color>; stellt dabei deiner Figur, die den meisten SCH erlitten hat, 1 LP wieder her.",
+			"description": "Verursacht 3 Pkt. Pyro-SCH.\nNach Auswertung dieser Fähigkeit: Wenn du Überladene Kugel in der Hand hast, wird 1 davon abgeworfen; stellt dabei deiner Figur, die den meisten SCH erlitten hat, 1 LP wieder her.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"id": 1608,
+	"name": "나비아",
+	"shareid": 396,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"바위 원소",
+		"양손검",
+		"폰타인",
+		"아르케의 힘: 우시아"
+	],
+	"storytitle": "빛나는 장미의 타륜·나비아",
+	"storytext": "《비상하는 노란 장미》",
+	"source": "캣테일 술집에서 나비아 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 16081,
+			"name": "솔직한 거절",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16082,
+			"name": "결정 축포",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C116084]</color>를 부착한다. 핸드 카드에서 <color=#FFFFFFFF>$[C116081]</color>을 최대 5장 $[K56]하고 1장 $[K56]할 때마다 1pt의 피해를 더 주고 카드를 1장 드로우한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 3pt 주고 본 캐릭터에게 <color=#FFFFFFFF>바위 원소 부여</color>를 부착한다. 핸드 카드에서 <color=#FFFFFFFF>결정 파편</color>을 최대 5장 <color=#FFFFFFFF>포기</color>하고 1장 <color=#FFFFFFFF>포기</color>할 때마다 1pt의 피해를 더 주고 카드를 1장 드로우한다.",
+			"description": "바위 원소 피해를 3pt 주고 본 캐릭터에게 바위 원소 부여를 부착한다. 핸드 카드에서 결정 파편을 최대 5장 포기하고 1장 포기할 때마다 1pt의 피해를 더 주고 카드를 1장 드로우한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16083,
+			"name": "창공을 울리는 포성",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 모든 대기 캐릭터에게 $[K5]를 1pt 준다. <color=#FFFFFFFF>$[C116082]</color>를 소환하고 <color=#FFFFFFFF>$[C116081]</color> 카드를 1장 생성해 핸드 카드로 가져온다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 1pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF>관통 피해</color>를 1pt 준다. <color=#FFFFFFFF>금장미 대포</color>를 소환하고 <color=#FFFFFFFF>결정 파편</color> 카드를 1장 생성해 핸드 카드로 가져온다.",
+			"description": "바위 원소 피해를 1pt 주고 상대의 모든 대기 캐릭터에게 관통 피해를 1pt 준다. 금장미 대포를 소환하고 결정 파편 카드를 1장 생성해 핸드 카드로 가져온다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16084,
+			"name": "상호 협력망",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>상대 캐릭터가 결정 반응 피해를 받은 후:</color> <color=#FFFFFFFF>$[C116081]</color>을 3장 생성하고 아군 카드 더미에 랜덤으로 넣는다.",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>상대 캐릭터가 결정 반응 피해를 받은 후:</color> <color=#FFFFFFFF>결정 파편</color>을 3장 생성하고 아군 카드 더미에 랜덤으로 넣는다.",
+			"description": "[패시브] 상대 캐릭터가 결정 반응 피해를 받은 후: 결정 파편을 3장 생성하고 아군 카드 더미에 랜덤으로 넣는다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

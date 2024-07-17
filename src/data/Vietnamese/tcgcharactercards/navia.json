@@ -1,0 +1,93 @@
+{
+	"id": 1608,
+	"name": "Navia",
+	"shareid": 396,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Nguyên Tố Nham",
+		"Trọng Kiếm",
+		"Fontaine",
+		"Sức Mạnh Nền Tảng: Ousia"
+	],
+	"storytitle": "Bánh Lái Hoa Lệ - Navia",
+	"storytext": "\"Hoa Hồng Vàng Tung Bay\".",
+	"source": "Nhận được sau khi mời Navia giao đấu trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong Đánh Giải Trí",
+	"skills": [
+		{
+			"id": 16081,
+			"name": "Từ Chối Thẳng Thừng",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16082,
+			"name": "Đạn Pha Lê Thanh Lịch",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], nhân vật này áp dụng <color=#FFFFFFFF>$[C116084]</color>; $[K56] tối đa 5 lá <color=#FFFFFFFF>$[C116081]</color> trên tay, với mỗi lá bị $[K56] sẽ +1 sát thương này và rút 1 lá bài.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Gây 3 điểm {SPRITE_PRESET#2106}<color=#FFE699FF>Sát Thương Nguyên Tố Nham</color>, nhân vật này áp dụng <color=#FFFFFFFF>Đính Kèm Nguyên Tố Nham</color>; <color=#FFFFFFFF>Vứt Bỏ</color> tối đa 5 lá <color=#FFFFFFFF>Mảnh Đạn Pha Lê</color> trên tay, với mỗi lá bị <color=#FFFFFFFF>Vứt Bỏ</color> sẽ +1 sát thương này và rút 1 lá bài.",
+			"description": "Gây 3 điểm Sát Thương Nguyên Tố Nham, nhân vật này áp dụng Đính Kèm Nguyên Tố Nham; Vứt Bỏ tối đa 5 lá Mảnh Đạn Pha Lê trên tay, với mỗi lá bị Vứt Bỏ sẽ +1 sát thương này và rút 1 lá bài.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16083,
+			"name": "Pháo Mừng Vang Trời",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], gây 1 điểm $[K5] cho tất cả nhân vật dự bị phe địch. Triệu hồi <color=#FFFFFFFF>$[C116082]</color>, sinh ra 1 lá <color=#FFFFFFFF>$[C116081]</color> và thêm vào bộ bài trên tay.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Gây 1 điểm {SPRITE_PRESET#2106}<color=#FFE699FF>Sát Thương Nguyên Tố Nham</color>, gây 1 điểm <color=#FFFFFFFF>Sát Thương Xuyên Thấu</color> cho tất cả nhân vật dự bị phe địch. Triệu hồi <color=#FFFFFFFF>Pháo Hoa Hồng Vàng</color>, sinh ra 1 lá <color=#FFFFFFFF>Mảnh Đạn Pha Lê</color> và thêm vào bộ bài trên tay.",
+			"description": "Gây 1 điểm Sát Thương Nguyên Tố Nham, gây 1 điểm Sát Thương Xuyên Thấu cho tất cả nhân vật dự bị phe địch. Triệu hồi Pháo Hoa Hồng Vàng, sinh ra 1 lá Mảnh Đạn Pha Lê và thêm vào bộ bài trên tay.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16084,
+			"name": "Mạng Lưới Hỗ Trợ",
+			"descriptionraw": "(Bị động) <color=#FFFFFFFF>Sau khi nhân vật phe địch nhận sát thương phản ứng Kết Tinh:</color> Sinh ra 3 lá <color=#FFFFFFFF>$[C116081]</color>, đưa ngẫu nhiên vào kho bài phe ta.",
+			"descriptionreplaced": "(Bị động) <color=#FFFFFFFF>Sau khi nhân vật phe địch nhận sát thương phản ứng Kết Tinh:</color> Sinh ra 3 lá <color=#FFFFFFFF>Mảnh Đạn Pha Lê</color>, đưa ngẫu nhiên vào kho bài phe ta.",
+			"description": "(Bị động) Sau khi nhân vật phe địch nhận sát thương phản ứng Kết Tinh: Sinh ra 3 lá Mảnh Đạn Pha Lê, đưa ngẫu nhiên vào kho bài phe ta.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		}
+	]
+}
