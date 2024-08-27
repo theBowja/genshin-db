@@ -1,0 +1,85 @@
+{
+	"id": 1112,
+	"name": "Freminet",
+	"shareid": 407,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"ธาตุน้ำแข็ง",
+		"ดาบใหญ่",
+		"Fontaine",
+		"Fatui",
+		"พลังปฐมภูมิ: วิญญาณ"
+	],
+	"storytitle": "ดำดิ่งสู่ภวังค์ฝัน - Freminet",
+	"storytext": "ท้องฟ้าเต็มไปด้วยดวงดาว อ้างว้างและเหน็บหนาว",
+	"source": "ได้รับหลังจากเชิญ Freminet ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 11121,
+			"name": "Flowing Eddies",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11122,
+			"name": "Pressurized Floe",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และหากตัวละครนี้ยังไม่ได้รับ <color=#FFFFFFFF>$[C111121]</color> จะทำให้ได้รับ <color=#FFFFFFFF>$[C111121]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2101}<color=#99FFFFFF>ความเสียหายน้ำแข็ง</color> 2 หน่วย และหากตัวละครนี้ยังไม่ได้รับ <color=#FFFFFFFF>Pers Timer</color> จะทำให้ได้รับ <color=#FFFFFFFF>Pers Timer</color>",
+			"description": "สร้างความเสียหายน้ำแข็ง 2 หน่วย และหากตัวละครนี้ยังไม่ได้รับ Pers Timer จะทำให้ได้รับ Pers Timer",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11123,
+			"name": "Shadowhunter's Ambush",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>$[C111122]</color>",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2101}<color=#99FFFFFF>ความเสียหายน้ำแข็ง</color> 4 หน่วย และตัวละครนี้จะได้รับ <color=#FFFFFFFF>Subnautical Hunter Mode</color>",
+			"description": "สร้างความเสียหายน้ำแข็ง 4 หน่วย และตัวละครนี้จะได้รับ Subnautical Hunter Mode",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

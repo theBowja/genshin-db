@@ -1,0 +1,85 @@
+{
+	"id": 1112,
+	"name": "Фремине",
+	"shareid": 407,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_CAMP_FATUI",
+		"GCG_TAG_ARKHE_OUSIA"
+	],
+	"tagstext": [
+		"Крио",
+		"Двуручное",
+		"Фонтейн",
+		"Фатуи",
+		"Архэ: Пневма"
+	],
+	"storytitle": "«Тоска по невиданным глубинам» Фремине",
+	"storytext": "В одиночестве под холодным светом звёзд",
+	"source": "Награда за приглашение Фремине в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 11121,
+			"name": "Меч водоворотов",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11122,
+			"name": "Давление дрейфующего льда",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если у этого персонажа нет эффекта <color=#FFFFFFFF>$[C111121]</color>, то даёт эффект <color=#FFFFFFFF>$[C111121]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 2 ед. Если у этого персонажа нет эффекта <color=#FFFFFFFF>Таймер Пера</color>, то даёт эффект <color=#FFFFFFFF>Таймер Пера</color>.",
+			"description": "Наносит Крио урон, 2 ед. Если у этого персонажа нет эффекта Таймер Пера, то даёт эффект Таймер Пера.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11123,
+			"name": "Засада теневого охотника",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. У персонажа возникает <color=#FFFFFFFF>$[C111122]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2101}<color=#99FFFFFF>Крио урон</color>, 4 ед. У персонажа возникает <color=#FFFFFFFF>Режим Подводной охоты</color>.",
+			"description": "Наносит Крио урон, 4 ед. У персонажа возникает Режим Подводной охоты.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

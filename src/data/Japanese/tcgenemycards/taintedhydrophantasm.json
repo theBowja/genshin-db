@@ -1,0 +1,97 @@
+{
+	"id": 3209,
+	"name": "濁水幻霊",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"水元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 32091,
+			"name": "濁水ストライク",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。",
+			"description": "水元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32092,
+			"name": "バブル連射",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。",
+			"description": "水元素ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 32093,
+			"name": "濁水スプラッシュ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を4与える。",
+			"description": "水元素ダメージを4与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 32094,
+			"name": "元素蓄積·水",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C132041]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>元素生命·水</color>が付与される。",
+			"description": "【固有】戦闘開始時、元素生命·水が付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 32095,
+			"name": "濁水の変化",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>$[C106]</color>しない。\\n本キャラのHPが5以下の時、与えるダメージ+2。\\n<color=#FFFFFFFF>本キャラがスキルを発動した後</color>、HPが6以上の場合、相手の待機キャラ全員に$[K5]を1与える。",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>凍結</color>しない。\\n本キャラのHPが5以下の時、与えるダメージ+2。\\n<color=#FFFFFFFF>本キャラがスキルを発動した後</color>、HPが6以上の場合、相手の待機キャラ全員に<color=#FFFFFFFF>貫通ダメージ</color>を1与える。",
+			"description": "【固有】凍結しない。\n本キャラのHPが5以下の時、与えるダメージ+2。\n本キャラがスキルを発動した後、HPが6以上の場合、相手の待機キャラ全員に貫通ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

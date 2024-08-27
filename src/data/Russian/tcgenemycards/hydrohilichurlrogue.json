@@ -1,0 +1,89 @@
+{
+	"id": 4209,
+	"name": "Гидро хиличурл-изгой",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_HILICHURL"
+	],
+	"tagstext": [
+		"Гидро",
+		"Прочее",
+		"Монстр",
+		"Хиличурл"
+	],
+	"skills": [
+		{
+			"id": 22051,
+			"name": "Вихрь косы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22052,
+			"name": "Резня бушующих волн",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.\\nЕсли персонаж противника в статусе <color=#FFFFFFFF>$[C106]</color> или <color=#FFFFFFFF>$[C122052]</color>, этот персонаж получает $[K310], 1 ед. (1 раз за раунд)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед.\\nЕсли персонаж противника в статусе <color=#FFFFFFFF>Заморозка</color> или <color=#FFFFFFFF>Заточение в туманных пузырях</color>, этот персонаж получает <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color>, 1 ед. (1 раз за раунд)",
+			"description": "Наносит Гидро урон, 3 ед.\nЕсли персонаж противника в статусе Заморозка или Заточение в туманных пузырях, этот персонаж получает Энергия, 1 ед. (1 раз за раунд)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22056,
+			"name": "Удар парящих пузырей",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. У персонажа возникает <color=#FFFFFFFF>$[C122051]</color>.\\n(Персонажи, экипированные картой <color=#FFFFFFFF>$[C122051]</color>, могут использовать технику: <color=#FFFFFFFF>$[S1220511]</color>)",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>. У персонажа возникает <color=#FFFFFFFF>Туманный пузырь-слайм</color>.\\n(Персонажи, экипированные картой <color=#FFFFFFFF>Туманный пузырь-слайм</color>, могут использовать технику: <color=#FFFFFFFF>Пузырчатая тактика боя</color>)",
+			"description": "Наносит 4 Гидро урон. У персонажа возникает Туманный пузырь-слайм.\n(Персонажи, экипированные картой Туманный пузырь-слайм, могут использовать технику: Пузырчатая тактика боя)",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22054,
+			"name": "Резня бушующих волн",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_NONE",
+			"type": "",
+			"playcost": []
+		}
+	]
+}
