@@ -1,0 +1,249 @@
+{
+	"id": 10001,
+	"name": "Kachina",
+	"combat1": {
+		"name": "Attacco normale: Mangiaroccia",
+		"descriptionRaw": "<color=#FFD780FF>Attacco normale</color>\nSferra fino a 4 colpi di lancia consecutivi.\n\n<color=#FFD780FF>Attacco caricato</color>\nConsuma una determinata quantità di vigore per attaccare balzando in avanti e infliggendo DAN agli avversari lungo la traiettoria.\n\n<color=#FFD780FF>Attacco in picchiata</color>\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"description": "Attacco normale\nSferra fino a 4 colpi di lancia consecutivi.\n\nAttacco caricato\nConsuma una determinata quantità di vigore per attaccare balzando in avanti e infliggendo DAN agli avversari lungo la traiettoria.\n\nAttacco in picchiata\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}+{param3:F1P}",
+				"DAN da 3º colpo|{param4:F1P}",
+				"DAN da 4º colpo|{param5:F1P}",
+				"DAN da ATT caricato|{param6:F1P}",
+				"Costo vigore ATT caricato|{param7:F1}",
+				"DAN da ATT in picchiata|{param8:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Vai, Trottolino, vai!",
+		"descriptionRaw": "Combatte insieme a Trottolino, la sua fidata turbotrottola!\nEvoca Trottolino. La pressione prolungata dell'abilità permette a Kachina di evocare Trottolino e salirci a bordo immediatamente.\nDopo l'attivazione dell'abilità, Kachina ottiene 60 punti Anima della Notte ed entra nello stato di Grazia dell'Anima della Notte.\n\n<color=#FFD780FF>Grazia dell'Anima della Notte: Kachina</color>\nLe azioni eseguite da Trottolino consumano punti Anima della Notte.\nLo stato termina quando tutti i punti vengono consumati.\n\n<color=#FFD780FF>Trottolino</color>\nPuò sia agire in autonomia che essere manovrato da Kachina quando quest'ultima ci si trova sopra. Quando Trottolino è in campo, l'abilità elementale di Kachina \"Vai, Trottolino, vai!\" viene sostituita da un comando che permette a Kachina di salire a bordo e scendere da Trottolino.\n· Quando agisce in autonomia, Trottolino colpisce il terreno con violenza a intervalli regolari, infliggendo <color=#FFE699FF>DAN da Geo ad area</color> basati sulla DIF di Kachina e con attributo Anima della Notte.\n· Quando Kachina è a bordo di Trottolino, quest'ultima può controllarne i movimenti, usarlo per arrampicarsi rapidamente e sferrare l'attacco normale per colpire il terreno con violenza, infliggendo <color=#FFE699FF>DAN da Geo ad area</color> basati sulla DIF di Kachina e con attributo Anima della Notte.\n\nTrottolino è considerato un costrutto di Geo, e scompare al termine dello stato di Grazia dell'Anima della Notte di Kachina. Può esistere soltanto 1 Trottolino creato da Kachina in campo alla volta.\n\n<i>Trottolino può sembrare una trottola, ma l'apparenza inganna: in realtà è una trivella in grado di spaccare anche la roccia più dura!</i>",
+		"description": "Combatte insieme a Trottolino, la sua fidata turbotrottola!\nEvoca Trottolino. La pressione prolungata dell'abilità permette a Kachina di evocare Trottolino e salirci a bordo immediatamente.\nDopo l'attivazione dell'abilità, Kachina ottiene 60 punti Anima della Notte ed entra nello stato di Grazia dell'Anima della Notte.\n\nGrazia dell'Anima della Notte: Kachina\nLe azioni eseguite da Trottolino consumano punti Anima della Notte.\nLo stato termina quando tutti i punti vengono consumati.\n\nTrottolino\nPuò sia agire in autonomia che essere manovrato da Kachina quando quest'ultima ci si trova sopra. Quando Trottolino è in campo, l'abilità elementale di Kachina \"Vai, Trottolino, vai!\" viene sostituita da un comando che permette a Kachina di salire a bordo e scendere da Trottolino.\n· Quando agisce in autonomia, Trottolino colpisce il terreno con violenza a intervalli regolari, infliggendo DAN da Geo ad area basati sulla DIF di Kachina e con attributo Anima della Notte.\n· Quando Kachina è a bordo di Trottolino, quest'ultima può controllarne i movimenti, usarlo per arrampicarsi rapidamente e sferrare l'attacco normale per colpire il terreno con violenza, infliggendo DAN da Geo ad area basati sulla DIF di Kachina e con attributo Anima della Notte.\n\nTrottolino è considerato un costrutto di Geo, e scompare al termine dello stato di Grazia dell'Anima della Notte di Kachina. Può esistere soltanto 1 Trottolino creato da Kachina in campo alla volta.",
+		"flavorText": "Trottolino può sembrare una trottola, ma l'apparenza inganna: in realtà è una trivella in grado di spaccare anche la roccia più dura!",
+		"attributes": {
+			"labels": [
+				"DAN da Trottolino con Kachina a bordo|{param1:F1P} DIF",
+				"DAN da Trottolino in autonomia|{param2:F1P} DIF",
+				"Limite punti Anima della Notte|{param3:F1}",
+				"TdR|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Ora si fa sul serio!",
+		"descriptionRaw": "Kachina colpisce il terreno infliggendo <color=#FFE699FF>DAN da Geo ad area</color> in base alla sua DIF, schierando un Campo Turbotrivella.\nIl Campo aumenta l'area d'effetto degli attacchi di Trottolino e la sua VEL di movimento quando Kachina si trova sopra di lui.\n\nSe il Trottolino di Kachina è già presente in campo quando viene usata questa abilità, Trottolino riappare nuovamente al suo fianco.\n\n<i>Come gli interpreti agitati tendono a paragonare gli spettatori a dei pupazzi di legno, a Kachina piace immaginare i suoi avversari come minerali pieni di splendide gemme preziose, di quelle che non vedi l'ora di raccogliere e portarti a casa.</i>",
+		"description": "Kachina colpisce il terreno infliggendo DAN da Geo ad area in base alla sua DIF, schierando un Campo Turbotrivella.\nIl Campo aumenta l'area d'effetto degli attacchi di Trottolino e la sua VEL di movimento quando Kachina si trova sopra di lui.\n\nSe il Trottolino di Kachina è già presente in campo quando viene usata questa abilità, Trottolino riappare nuovamente al suo fianco.",
+		"flavorText": "Come gli interpreti agitati tendono a paragonare gli spettatori a dei pupazzi di legno, a Kachina piace immaginare i suoi avversari come minerali pieni di splendide gemme preziose, di quelle che non vedi l'ora di raccogliere e portarti a casa.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P} DIF",
+				"Durata campo|{param2:F1} s",
+				"TdR|{param3:F1} s",
+				"Costo energia|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Echi della montagna",
+		"descriptionRaw": "#Dopo che un membro vicino del gruppo innesca un Impeto dell'Anima della Notte, il <color=#FFE699FF>bonus DAN da Geo</color> di Kachina aumenta di un 20% per 12{NON_BREAK_SPACE}s.",
+		"description": "Dopo che un membro vicino del gruppo innesca un Impeto dell'Anima della Notte, il bonus DAN da Geo di Kachina aumenta di un 20% per 12 s."
+	},
+	"passive2": {
+		"name": "Peso della pietra",
+		"descriptionRaw": "I DAN inflitti da <color=#FFD780FF>Trottolino</color> aumentano di un 20% della DIF di Kachina.",
+		"description": "I DAN inflitti da Trottolino aumentano di un 20% della DIF di Kachina."
+	},
+	"passive3": {
+		"name": "Dono del Reame notturno: Cuore dell'unità",
+		"descriptionRaw": "#Dopo aver esaurito i punti Anima della Notte, Kachina consuma il Flogisto per conservare la sua Grazia dell'Anima della Notte.\nSe si trova in un'area di Natlan dove sono presenti uno o più Meccanismi flogistici, può usare Trasmissione dell'Anima della Notte: Kachina. Quando il personaggio attivo sta eseguendo uno Scatto, si sta arrampicando o compiendo un movimento causato da determinati talenti, oppure è sospeso in aria a una certa altezza, passare il controllo a Kachina attiva il seguente effetto: Kachina entra nello stato di Grazia dell'Anima della Notte, sale a bordo di <color=#FFD780FF>Trottolino</color> appena entra in campo e ottiene 30 punti Anima della Notte. Trasmissione dell'Anima della Notte può attivarsi una volta ogni 10{NON_BREAK_SPACE}s all'interno del tuo gruppo.\n\nInoltre, quando si trova a Natlan, Kachina consuma un 90% di vigore in meno durante le arrampicate quando si trova a bordo di <color=#FFD780FF>Trottolino</color>.",
+		"description": "Dopo aver esaurito i punti Anima della Notte, Kachina consuma il Flogisto per conservare la sua Grazia dell'Anima della Notte.\nSe si trova in un'area di Natlan dove sono presenti uno o più Meccanismi flogistici, può usare Trasmissione dell'Anima della Notte: Kachina. Quando il personaggio attivo sta eseguendo uno Scatto, si sta arrampicando o compiendo un movimento causato da determinati talenti, oppure è sospeso in aria a una certa altezza, passare il controllo a Kachina attiva il seguente effetto: Kachina entra nello stato di Grazia dell'Anima della Notte, sale a bordo di Trottolino appena entra in campo e ottiene 30 punti Anima della Notte. Trasmissione dell'Anima della Notte può attivarsi una volta ogni 10 s all'interno del tuo gruppo.\n\nInoltre, quando si trova a Natlan, Kachina consuma un 90% di vigore in meno durante le arrampicate quando si trova a bordo di Trottolino."
+	},
+	"passive4": {
+		"name": "Favore della fiamma di cristallo",
+		"descriptionRaw": "Quando si trova in un'area di Natlan dove sono presenti dei Meccanismi flogistici, interagire con alcuni materiali da raccolta ripristina 20 di vigore. Inoltre, la posizione delle <color=#FFD780FF>risorse uniche di Natlan</color> circostanti viene mostrata sulla minimappa.",
+		"description": "Quando si trova in un'area di Natlan dove sono presenti dei Meccanismi flogistici, interagire con alcuni materiali da raccolta ripristina 20 di vigore. Inoltre, la posizione delle risorse uniche di Natlan circostanti viene mostrata sulla minimappa."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104353,
+				"name": "Insegnamenti del conflitto",
+				"count": 3
+			},
+			{
+				"id": 112104,
+				"name": "Fischietto di legno della sentinella",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104354,
+				"name": "Guida al conflitto",
+				"count": 2
+			},
+			{
+				"id": 112105,
+				"name": "Fischietto di metallo del guerriero",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104354,
+				"name": "Guida al conflitto",
+				"count": 4
+			},
+			{
+				"id": 112105,
+				"name": "Fischietto di metallo del guerriero",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104354,
+				"name": "Guida al conflitto",
+				"count": 6
+			},
+			{
+				"id": 112105,
+				"name": "Fischietto di metallo del guerriero",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104354,
+				"name": "Guida al conflitto",
+				"count": 9
+			},
+			{
+				"id": 112105,
+				"name": "Fischietto di metallo del guerriero",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofie del conflitto",
+				"count": 4
+			},
+			{
+				"id": 112106,
+				"name": "Fischietto d'oro del guerriero dei Saurici",
+				"count": 4
+			},
+			{
+				"id": 113060,
+				"name": "Candela evanescente",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofie del conflitto",
+				"count": 6
+			},
+			{
+				"id": 112106,
+				"name": "Fischietto d'oro del guerriero dei Saurici",
+				"count": 6
+			},
+			{
+				"id": 113060,
+				"name": "Candela evanescente",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofie del conflitto",
+				"count": 12
+			},
+			{
+				"id": 112106,
+				"name": "Fischietto d'oro del guerriero dei Saurici",
+				"count": 9
+			},
+			{
+				"id": 113060,
+				"name": "Candela evanescente",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofie del conflitto",
+				"count": 16
+			},
+			{
+				"id": 112106,
+				"name": "Fischietto d'oro del guerriero dei Saurici",
+				"count": 12
+			},
+			{
+				"id": 113060,
+				"name": "Candela evanescente",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

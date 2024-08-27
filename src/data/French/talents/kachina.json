@@ -1,0 +1,249 @@
+{
+	"id": 10001,
+	"name": "Kachina",
+	"combat1": {
+		"name": "Attaque normale : Morsure de crête",
+		"descriptionRaw": "<color=#FFD780FF>Attaque normale</color>\nEnchaîne jusqu'à 4 coups de lance.\n\n<color=#FFD780FF>Attaque chargée</color>\nConsomme de l'endurance pour charger en ligne droite et infliger des DGT aux ennemis en chemin.\n\n<color=#FFD780FF>Attaque plongeante</color>\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"description": "Attaque normale\nEnchaîne jusqu'à 4 coups de lance.\n\nAttaque chargée\nConsomme de l'endurance pour charger en ligne droite et infliger des DGT aux ennemis en chemin.\n\nAttaque plongeante\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}+{param3:F1P}",
+				"DGT 3e coup|{param4:F1P}",
+				"DGT 4e coup|{param5:F1P}",
+				"DGT attaque chargée|{param6:F1P}",
+				"Coût d'endurance attaque chargée|{param7:F1} pts",
+				"DGT durant la chute|{param8:F1P}",
+				"DGT chute basse/élevée|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Allez, Virevolturbo !",
+		"descriptionRaw": "Combattez aux côtés du fidèle Virevolturbo !\nInvoque Virevolturbo. Avec un appui long, Kachina invoque et chevauche Virevolturbo.\nAprès utilisation, Kachina obtient 60 pts de noctâme et entre dans l'état Bénédiction noctâme.\n\n<color=#FFD780FF>Bénédiction noctâme : Kachina</color>\nLes différentes actions de Virevolturbo consomment les points de noctâme de Kachina.\nL'état Bénédiction noctâme de Kachina dure jusqu'à ce que tous les points de noctâme soient épuisés.\n\n<color=#FFD780FF>Virevolturbo</color>\nVirevolturbo peut exister indépendamment ou être chevauché et contrôlé par Kachina. Lorsque Virevolturbo est présent, la compétence élémentaire de Kachina « Allez, Virevolturbo ! » sert à monter sur Virevolturbo ou à en descendre.\n· Lorsqu'il est présent indépendamment de Kachina, Virevolturbo frappe le sol de façon intermittente, infligeant des <color=#FFE699FF>DGT Géo de zone</color> infusés de noctâme selon la DÉF de Kachina.\n· Lorsque Kachina chevauche Virevolturbo, elle peut contrôler ses mouvements rapides, escalader et utiliser son attaque normale pour frapper le sol, infligeant des <color=#FFE699FF>DGT Géo de zone</color> infusés de noctâme selon la DÉF de Kachina.\n\nVirevolturbo disparaît une fois la bénédiction noctâme de Kachina terminée et est considéré comme une construction Géo. Il ne peut exister qu'un seul Virevolturbo de Kachina à la fois.\n\n<i>Virevolturbo n'a que l'apparence d'une toupie : il s'agit en fait d'une perceuse pouvant briser même les roches les plus solides !</i>",
+		"description": "Combattez aux côtés du fidèle Virevolturbo !\nInvoque Virevolturbo. Avec un appui long, Kachina invoque et chevauche Virevolturbo.\nAprès utilisation, Kachina obtient 60 pts de noctâme et entre dans l'état Bénédiction noctâme.\n\nBénédiction noctâme : Kachina\nLes différentes actions de Virevolturbo consomment les points de noctâme de Kachina.\nL'état Bénédiction noctâme de Kachina dure jusqu'à ce que tous les points de noctâme soient épuisés.\n\nVirevolturbo\nVirevolturbo peut exister indépendamment ou être chevauché et contrôlé par Kachina. Lorsque Virevolturbo est présent, la compétence élémentaire de Kachina « Allez, Virevolturbo ! » sert à monter sur Virevolturbo ou à en descendre.\n· Lorsqu'il est présent indépendamment de Kachina, Virevolturbo frappe le sol de façon intermittente, infligeant des DGT Géo de zone infusés de noctâme selon la DÉF de Kachina.\n· Lorsque Kachina chevauche Virevolturbo, elle peut contrôler ses mouvements rapides, escalader et utiliser son attaque normale pour frapper le sol, infligeant des DGT Géo de zone infusés de noctâme selon la DÉF de Kachina.\n\nVirevolturbo disparaît une fois la bénédiction noctâme de Kachina terminée et est considéré comme une construction Géo. Il ne peut exister qu'un seul Virevolturbo de Kachina à la fois.",
+		"flavorText": "Virevolturbo n'a que l'apparence d'une toupie : il s'agit en fait d'une perceuse pouvant briser même les roches les plus solides !",
+		"attributes": {
+			"labels": [
+				"DGT Virevolturbo (si chevauché)|{param1:F1P} DÉF",
+				"DGT Virevolturbo (si indépendant)|{param2:F1P} DÉF",
+				"Limite de noctâme|{param3:F1} pts",
+				"Temps de recharge|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Un peu de sérieux !",
+		"descriptionRaw": "Kachina frappe le sol, infligeant des <color=#FFE699FF>DGT Géo de zone</color> selon sa DÉF et créant un super champ de forage.\nCe champ augmente la portée d'attaque de Virevolturbo, ainsi que sa VIT de déplacement lorsque Kachina le chevauche.\n\nSi un Virevolturbo de Kachina est présent lors de l'utilisation, il est invoqué à côté d'elle.\n\n<i>Tout comme les artistes nerveux aiment imaginer le public comme des pantins en bois, Kachina imagine ses adversaires comme des beaux gisements de pierres précieuses... Le genre qu'on aimerait ramener à la maison et collectionner...</i>",
+		"description": "Kachina frappe le sol, infligeant des DGT Géo de zone selon sa DÉF et créant un super champ de forage.\nCe champ augmente la portée d'attaque de Virevolturbo, ainsi que sa VIT de déplacement lorsque Kachina le chevauche.\n\nSi un Virevolturbo de Kachina est présent lors de l'utilisation, il est invoqué à côté d'elle.",
+		"flavorText": "Tout comme les artistes nerveux aiment imaginer le public comme des pantins en bois, Kachina imagine ses adversaires comme des beaux gisements de pierres précieuses... Le genre qu'on aimerait ramener à la maison et collectionner...",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P} DÉF",
+				"Durée de champ|{param2:F1} s",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Écho de la montagne",
+		"descriptionRaw": "Lorsqu'un membre de l'équipe à proximité a déclenché une éruption noctâme, le <color=#FFE699FF>bonus de DGT Géo</color> de Kachina augmente de 20 % pendant 12 s.",
+		"description": "Lorsqu'un membre de l'équipe à proximité a déclenché une éruption noctâme, le bonus de DGT Géo de Kachina augmente de 20 % pendant 12 s."
+	},
+	"passive2": {
+		"name": "Poids de la roche",
+		"descriptionRaw": "Augmente les DGT infligés par <color=#FFD780FF>Virevolturbo</color> d'une valeur équivalant à 20 % de la DÉF de Kachina.",
+		"description": "Augmente les DGT infligés par Virevolturbo d'une valeur équivalant à 20 % de la DÉF de Kachina."
+	},
+	"passive3": {
+		"name": "Don de la nuit : Foyer de l'unité",
+		"descriptionRaw": "Après avoir épuisé ses points de noctâme, Kachina change pour consommer du phlogistique afin de maintenir sa bénédiction noctâme.\nDans une zone de Natlan avec des mécanismes phlogistiques, la transmission noctâme « Kachina » peut être utilisée. Lorsque le personnage déployé sprinte, escalade, est en plein mouvement provoqué par une aptitude particulière ou est à une certaine hauteur dans les airs, le déploiement de Kachina déclenche l'effet suivant : Kachina entre dans l'état Bénédiction noctâme, chevauche <color=#FFD780FF>Virevolturbo</color> en arrivant sur le terrain et obtient 30 pts de noctâme. La transmission noctâme peut être déclenchée une fois toutes les 10 s par votre équipe.\n\nDe plus, la consommation d'endurance de Kachina lors de l'escalade diminue de 90 % lorsqu'elle chevauche <color=#FFD780FF>Virevolturbo</color> dans la région de Natlan.",
+		"description": "Après avoir épuisé ses points de noctâme, Kachina change pour consommer du phlogistique afin de maintenir sa bénédiction noctâme.\nDans une zone de Natlan avec des mécanismes phlogistiques, la transmission noctâme « Kachina » peut être utilisée. Lorsque le personnage déployé sprinte, escalade, est en plein mouvement provoqué par une aptitude particulière ou est à une certaine hauteur dans les airs, le déploiement de Kachina déclenche l'effet suivant : Kachina entre dans l'état Bénédiction noctâme, chevauche Virevolturbo en arrivant sur le terrain et obtient 30 pts de noctâme. La transmission noctâme peut être déclenchée une fois toutes les 10 s par votre équipe.\n\nDe plus, la consommation d'endurance de Kachina lors de l'escalade diminue de 90 % lorsqu'elle chevauche Virevolturbo dans la région de Natlan."
+	},
+	"passive4": {
+		"name": "Bénédiction des flammes cristallines",
+		"descriptionRaw": "Dans une zone de Natlan avec des mécanismes phlogistiques, interagir avec certains objets récoltables restaure 20 pts d'endurance. De plus, l'emplacement des <color=#FFD780FF>produits de Natlan</color> est affiché sur la mini-carte.",
+		"description": "Dans une zone de Natlan avec des mécanismes phlogistiques, interagir avec certains objets récoltables restaure 20 pts d'endurance. De plus, l'emplacement des produits de Natlan est affiché sur la mini-carte."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104353,
+				"name": "Enseignement du Conflit",
+				"count": 3
+			},
+			{
+				"id": 112104,
+				"name": "Sifflet en bois de sentinelle",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 2
+			},
+			{
+				"id": 112105,
+				"name": "Sifflet en métal de guerrier",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 4
+			},
+			{
+				"id": 112105,
+				"name": "Sifflet en métal de guerrier",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 6
+			},
+			{
+				"id": 112105,
+				"name": "Sifflet en métal de guerrier",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 9
+			},
+			{
+				"id": 112105,
+				"name": "Sifflet en métal de guerrier",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 4
+			},
+			{
+				"id": 112106,
+				"name": "Sifflet en or de guerrier couronné par les sauriens",
+				"count": 4
+			},
+			{
+				"id": 113060,
+				"name": "Bougie vacillante",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 6
+			},
+			{
+				"id": 112106,
+				"name": "Sifflet en or de guerrier couronné par les sauriens",
+				"count": 6
+			},
+			{
+				"id": 113060,
+				"name": "Bougie vacillante",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 12
+			},
+			{
+				"id": 112106,
+				"name": "Sifflet en or de guerrier couronné par les sauriens",
+				"count": 9
+			},
+			{
+				"id": 113060,
+				"name": "Bougie vacillante",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 16
+			},
+			{
+				"id": 112106,
+				"name": "Sifflet en or de guerrier couronné par les sauriens",
+				"count": 12
+			},
+			{
+				"id": 113060,
+				"name": "Bougie vacillante",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

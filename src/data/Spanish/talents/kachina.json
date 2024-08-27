@@ -1,0 +1,249 @@
+{
+	"id": 10001,
+	"name": "Kachina",
+	"combat1": {
+		"name": "Ataque Normal: Riscomordisco",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nRealiza hasta 4 ataques rápidos con lanza.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume una cierta cantidad de Aguante para lanzarse al frente e infligir daño a los enemigos en el camino.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"description": "Ataque Normal\nRealiza hasta 4 ataques rápidos con lanza.\n\nAtaque Cargado\nConsume una cierta cantidad de Aguante para lanzarse al frente e infligir daño a los enemigos en el camino.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P} + {param3:F1P}",
+				"Daño de 3er golpe|{param4:F1P}",
+				"Daño de 4.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param7:F1} pts.",
+				"Daño de Caída|{param8:F1P}",
+				"Daño de impacto de caída baja/alta|{param9:P}/{param10:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "¡Adelante, turbogirador!",
+		"descriptionRaw": "#¡Lucha junto a su superadorable turbogirador!\nInvoca al turbogirador. Al mantener pulsado, Kachina invoca al turbogirador y se monta en él.\nAl usar esta habilidad, Kachina obtiene 60{NON_BREAK_SPACE}pts. de noctambulismo y entra en el estado de “bendición noctámbula”.\n\n<color=#FFD780FF>Bendición noctámbula: Kachina</color>\nLas acciones del turbogirador consumen pts. de noctambulismo.\nAl consumirlos todos, la duración del estado de bendición noctámbula de Kachina terminará.\n\n<color=#FFD780FF>Turbogirador</color>\nPuede estar en el campo de batalla de forma independiente o Kachina puede subirse a él para manejarlo. Mientras el turbogirador esté activo, la Habilidad Elemental de Kachina, “¡Adelante, turbogirador!”, se sustituye por las acciones de subirse o bajarse de dicho artilugio.\n·Cuando este esté en el campo de batalla de forma independiente, impactará contra el suelo cada cierto tiempo para infligir <color=#FFE699FF>Daño Geo en el AdE</color> de naturaleza noctámbula en función de la DEF de Kachina.\n·Cuando Kachina se sube al turbogirador, podrá controlarlo para moverse y escalar a gran velocidad. Además, al ejecutar un Ataque Normal, impactará contra el suelo e infligirá <color=#FFE699FF>Daño Geo en el AdE</color> de naturaleza noctámbula en función de su DEF.\n\nEl turbogirador se considera una creación Geo y desaparece cuando termina la duración de la bendición noctámbula de Kachina. Solo puede existir al mismo tiempo un turbogirador invocado por ella.\n\n<i>Puede que el turbogirador no parezca más que una simple peonza, pero en realidad es un taladro capaz de perforar hasta la más robusta de las rocas.</i>",
+		"description": "¡Lucha junto a su superadorable turbogirador!\nInvoca al turbogirador. Al mantener pulsado, Kachina invoca al turbogirador y se monta en él.\nAl usar esta habilidad, Kachina obtiene 60 pts. de noctambulismo y entra en el estado de “bendición noctámbula”.\n\nBendición noctámbula: Kachina\nLas acciones del turbogirador consumen pts. de noctambulismo.\nAl consumirlos todos, la duración del estado de bendición noctámbula de Kachina terminará.\n\nTurbogirador\nPuede estar en el campo de batalla de forma independiente o Kachina puede subirse a él para manejarlo. Mientras el turbogirador esté activo, la Habilidad Elemental de Kachina, “¡Adelante, turbogirador!”, se sustituye por las acciones de subirse o bajarse de dicho artilugio.\n·Cuando este esté en el campo de batalla de forma independiente, impactará contra el suelo cada cierto tiempo para infligir Daño Geo en el AdE de naturaleza noctámbula en función de la DEF de Kachina.\n·Cuando Kachina se sube al turbogirador, podrá controlarlo para moverse y escalar a gran velocidad. Además, al ejecutar un Ataque Normal, impactará contra el suelo e infligirá Daño Geo en el AdE de naturaleza noctámbula en función de su DEF.\n\nEl turbogirador se considera una creación Geo y desaparece cuando termina la duración de la bendición noctámbula de Kachina. Solo puede existir al mismo tiempo un turbogirador invocado por ella.",
+		"flavorText": "Puede que el turbogirador no parezca más que una simple peonza, pero en realidad es un taladro capaz de perforar hasta la más robusta de las rocas.",
+		"attributes": {
+			"labels": [
+				"Daño al subirse al turbogirador|{param1:F1P} de DEF",
+				"Daño independiente del turbogirador|{param2:F1P} de DEF",
+				"Límite de pts. de noctambulismo|{param3:F1}",
+				"TdE|{param4:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "¡Ahora voy en serio!",
+		"descriptionRaw": "Impacta contra el suelo para infligir <color=#FFE699FF>Daño Geo en el AdE</color> en función de la DEF de Kachina y crear un “área supergiratoria”.\nDicha área aumenta el AdE de ataque del turbogirador y su Vel. Movimiento cuando Kachina está subida en él.\n\nSi al usar esta habilidad ya hay en el campo de batalla un turbogirador invocado por Kachina, lo invocará para que aparezca a su lado.\n\n<i>Igual que alguien que está nervioso antes de dar un espectáculo se imagina que su público son muñecos, Kachina se imagina que sus enemigos son piedras preciosas que se puede llevar a casa para coleccionarlas.</i>",
+		"description": "Impacta contra el suelo para infligir Daño Geo en el AdE en función de la DEF de Kachina y crear un “área supergiratoria”.\nDicha área aumenta el AdE de ataque del turbogirador y su Vel. Movimiento cuando Kachina está subida en él.\n\nSi al usar esta habilidad ya hay en el campo de batalla un turbogirador invocado por Kachina, lo invocará para que aparezca a su lado.",
+		"flavorText": "Igual que alguien que está nervioso antes de dar un espectáculo se imagina que su público son muñecos, Kachina se imagina que sus enemigos son piedras preciosas que se puede llevar a casa para coleccionarlas.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P} de DEF",
+				"Duración del área|{param2:F1} s",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Eco montañoso",
+		"descriptionRaw": "#Cuando un personaje cercano del equipo causa una explosión noctámbula, Kachina obtiene un 20% de <color=#FFE699FF>Bono de Daño Geo</color> durante 12{NON_BREAK_SPACE}s.",
+		"description": "Cuando un personaje cercano del equipo causa una explosión noctámbula, Kachina obtiene un 20% de Bono de Daño Geo durante 12 s."
+	},
+	"passive2": {
+		"name": "Peso rocoso",
+		"descriptionRaw": "El daño que inflige el <color=#FFD780FF>turbogirador</color> aumenta en una cantidad equivalente al 20% de la DEF de Kachina.",
+		"description": "El daño que inflige el turbogirador aumenta en una cantidad equivalente al 20% de la DEF de Kachina."
+	},
+	"passive3": {
+		"name": "Gracia de la noche: Corazones unidos",
+		"descriptionRaw": "#Cuando no tenga más pts. de noctambulismo, Kachina consumirá flogisto para conservar la bendición noctámbula.\nSi se encuentra en una zona con alguna mecánica de flogisto de Natlan, podrá utilizar “Transmisión noctambular: Kachina”. Cuando el personaje en uso esté esprintando, escalando, se encuentre en un estado de movimiento derivado de algún talento o esté a cierta altura en el aire, al cambiar a Kachina, esta entrará en estado de bendición noctámbula, se subirá al <color=#FFD780FF>turbogirador</color> y obtendrá 30{NON_BREAK_SPACE}pts. de noctambulismo. Tu equipo solo puede activar Transmisión noctambular una vez cada 10{NON_BREAK_SPACE}s.\n\nAdemás, al estar en Natlan, el Coste de Aguante de Kachina al escalar mientras está montada en el <color=#FFD780FF>turbogirador</color> se reduce en un 90%.",
+		"description": "Cuando no tenga más pts. de noctambulismo, Kachina consumirá flogisto para conservar la bendición noctámbula.\nSi se encuentra en una zona con alguna mecánica de flogisto de Natlan, podrá utilizar “Transmisión noctambular: Kachina”. Cuando el personaje en uso esté esprintando, escalando, se encuentre en un estado de movimiento derivado de algún talento o esté a cierta altura en el aire, al cambiar a Kachina, esta entrará en estado de bendición noctámbula, se subirá al turbogirador y obtendrá 30 pts. de noctambulismo. Tu equipo solo puede activar Transmisión noctambular una vez cada 10 s.\n\nAdemás, al estar en Natlan, el Coste de Aguante de Kachina al escalar mientras está montada en el turbogirador se reduce en un 90%."
+	},
+	"passive4": {
+		"name": "Bendición pirominera",
+		"descriptionRaw": "#Restaura 20{NON_BREAK_SPACE}pts. de Aguante al interactuar con algunos objetos recolectables en zonas de Natlan con mecánicas de flogisto. Además, muestra la ubicación de los <color=#FFD780FF>objetos típicos de Natlan</color> cercanos en el minimapa.",
+		"description": "Restaura 20 pts. de Aguante al interactuar con algunos objetos recolectables en zonas de Natlan con mecánicas de flogisto. Además, muestra la ubicación de los objetos típicos de Natlan cercanos en el minimapa."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104353,
+				"name": "Enseñanzas del conflicto",
+				"count": 3
+			},
+			{
+				"id": 112104,
+				"name": "Silbato de madera del guardián",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104354,
+				"name": "Guía del conflicto",
+				"count": 2
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104354,
+				"name": "Guía del conflicto",
+				"count": 4
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104354,
+				"name": "Guía del conflicto",
+				"count": 6
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104354,
+				"name": "Guía del conflicto",
+				"count": 9
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofía del conflicto",
+				"count": 4
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 4
+			},
+			{
+				"id": 113060,
+				"name": "Vela agonizante",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofía del conflicto",
+				"count": 6
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 6
+			},
+			{
+				"id": 113060,
+				"name": "Vela agonizante",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofía del conflicto",
+				"count": 12
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 9
+			},
+			{
+				"id": 113060,
+				"name": "Vela agonizante",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofía del conflicto",
+				"count": 16
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 12
+			},
+			{
+				"id": 113060,
+				"name": "Vela agonizante",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}
