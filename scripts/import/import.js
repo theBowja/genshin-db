@@ -551,16 +551,16 @@ gameVersion = "5.0"; // new data will use this as added version
 // importData('achievementgroups');
 // importData('adventureranks'); // max 60
 
-importData('tcgcharactercards');
-importData('tcgenemycards');
-importData('tcgactioncards');
-importData('tcgcardbacks');
-importData('tcgcardboxes');
-importData('tcgdetailedrules');
-importData('tcgkeywords');
-importData('tcglevelrewards');
-importData('tcgstatuseffects');
-importData('tcgsummons');
+// importData('tcgcharactercards');
+// importData('tcgenemycards');
+// importData('tcgactioncards');
+// importData('tcgcardbacks');
+// importData('tcgcardboxes');
+// importData('tcgdetailedrules');
+// importData('tcgkeywords');
+// importData('tcglevelrewards');
+// importData('tcgstatuseffects');
+// importData('tcgsummons');
 
 
 // i dont actually do these below
