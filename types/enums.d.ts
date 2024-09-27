@@ -54,6 +54,7 @@ declare module "genshin-db" {
 		tcgcardboxes      = "tcgcardboxes",
 		tcgcharactercards = "tcgcharactercards",
 		tcgdetailedrules  = "tcgdetailedrules",
+		tcgenemycards     = "tcgenemycards",
 		tcgkeywords       = "tcgkeywords",
 		tcglevelrewards   = "tcglevelrewards",
 		tcgstatuseffects  = "tcgstatuseffects",

@@ -125,7 +125,7 @@ declare module "genshin-db" {
 	export const constellations: QueryFunction<Constellation>;
 	export const crafts: QueryFunction<Craft>;
 	export const domains: QueryFunction<Domain>;
-	export const elements: QueryFunction<Element>;
+	export const elements: QueryFunction<Element>; 
 	export const enemies: QueryFunction<Enemy>;
 	export const foods: QueryFunction<Food>;
 	export const geographies: QueryFunction<Geography>;
@@ -147,6 +147,7 @@ declare module "genshin-db" {
 	export const tcgcardboxes: QueryFunction<TcgCardBoxes>;
 	export const tcgcharactercards: QueryFunction<TcgCharacterCards>;
 	export const tcgdetailedrules: QueryFunction<TcgDetailedRules>;
+	export const tcgenemycards: QueryFunction<TcgEnemyCards>;
 	export const tcgkeywords: QueryFunction<TcgKeywords>;
 	export const tcglevelrewards: QueryFunction<TcgLevelRewards>;
 	export const tcgstatuseffects: QueryFunction<TcgStatusEffects>;
