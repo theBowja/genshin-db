@@ -46,7 +46,8 @@ declare module "genshin-db" {
 		emojis         = "emojis",
 		voiceovers     = "voiceovers",
 
-		rarity         = "rarity", // deprecated
+		/** @deprecated */
+		rarity         = "rarity",
 		elements       = "elements",
 
 		tcgactioncards    = "tcgactioncards",

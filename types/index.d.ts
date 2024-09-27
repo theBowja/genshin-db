@@ -132,6 +132,7 @@ declare module "genshin-db" {
 	export const materials: QueryFunction<Material>;
 	export const namecards: QueryFunction<Namecard>;
 	export const outfits: QueryFunction<Outfit>;
+	/** @deprecated */
 	export const rarity: QueryFunction<Rarity>;
 	export const talentmaterialtypes: QueryFunction<TalentMaterial>;
 	export const talents: QueryFunction<Talent>;
