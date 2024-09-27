@@ -377,9 +377,9 @@ function addData(newdata, override = true) {
 }
 
 module.exports = {
-    addData: addData,
-    getData: getData,
-    getIndex: getIndex,
-    getImage: getImage,
-    getStats: getStats
+    addData,
+    getData,
+    getIndex,
+    getImage,
+    getStats
 }

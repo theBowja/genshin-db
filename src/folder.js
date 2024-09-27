@@ -1,51 +1,5 @@
 const fuzzysort = require('fuzzysort');
-
-// enum for folders. // make sure update index.d.ts too
-// not really used internally. mainly for altnames api
-const FoldersEnum = {
-	characters     : 'characters',
-	talents        : 'talents',
-	constellations : 'constellations',
-	
-	weapons        : 'weapons',
-
-	foods          : 'foods',
-	materials      : 'materials',
-	crafts         : 'crafts',
-
-	artifacts      : 'artifacts',
-	domains        : 'domains',
-	enemies        : 'enemies',
-
-	rarity         : 'rarity',
-	elements       : 'elements',
-
-	achievements   : 'achievements',
-	achievementgroups: 'achievementgroups',
-
-	windgliders    : 'windgliders',
-	outfits        : 'outfits',
-	animals        : 'animals',
-	namecards      : 'namecards',
-	geographies    : 'geographies',
-	adventureranks : 'adventureranks',
-
-	emojis         : 'emojis',
-	voiceovers     : 'voiceovers',
-
-	tcgactioncards:    'tcgactioncards',
-	tcgcardbacks:      'tcgcardbacks',
-	tcgcardboxes:      'tcgcardboxes',
-	tcgcharactercards: 'tcgcharactercards',
-	tcgdetailedrules:  'tcgdetailedrules',
-	tcgenemycards:     'tcgenemycards',
-	tcgkeywords:       'tcgkeywords',
-	tcglevelrewards:   'tcglevelrewards',
-	tcgstatuseffects:  'tcgstatuseffects',
-	tcgsummons:        'tcgsummons'
-};
-
-const folders = Object.values(FoldersEnum);
+const { folders, FoldersEnum } = require('./constants');
 
 function autocompleteFolder(input) {
     let result = fuzzysort.go(input, folders, { limit: 1 })[0];
@@ -54,7 +8,7 @@ function autocompleteFolder(input) {
 
 /**
  * @param folders - a string or array of strings
- * @returns - autocompleted full name of the folder. see FoldersEnum.
+ * @returns {string | string[] | undefined} - autocompleted full name of the folder. see FoldersEnum.
  *            undefined if none of the strings are valid folders.
  */
 function format(folders) {
@@ -72,7 +26,7 @@ function format(folders) {
 }
 
 module.exports = {
-	FoldersEnum: FoldersEnum,
-	folders: folders, // Object.values(FoldersEnum)
-	format: format
+	FoldersEnum,
+	folders, // Object.values(FoldersEnum)
+	format
 };

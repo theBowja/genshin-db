@@ -85,9 +85,10 @@ const MatchType = {
 
 // TODO: if folder is undefined, search through every folder
 /**
- * @param query {string}
- * @param folders {string|string[]}
- * @param opts {object|Options}
+ * @param {string} query
+ * @param {string|string[]} folders
+ * @param {object|Options=} opts
+ * @param {boolean=} getfilename 
  */
 function retrieveData(query, folders, opts, getfilename) {
     opts = Object.assign({}, baseoptions, sanitizeOptions(opts));
@@ -189,7 +190,7 @@ genshin.getOptions = function () {
 /**
  * Get list of possible values for a category property.
  * @param {string} query -
- * @param {string|Folder} - 
+ * @param {string|Folder} folder - 
  * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
  * @returns {array|undefined} - 
  */
@@ -484,7 +485,7 @@ genshin.tcgsummons = genshin.tcgsummon = function (query, opts) {
 
 /**
  * Get data in any specified folder.
- * @param {string} folder - Folder name. For example: 'characters'.
+ * @param {string | string[]} folder - Folder name. For example: 'characters'.
  * @param {object|Options} opts - The library options, see [Valid Options](https://github.com/theBowja/genshin-db/blob/main/readme.md#genshindbsetoptionsopts)
  * @returns {object} - The data found based on the query string and options parameter.
  */

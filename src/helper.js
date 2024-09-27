@@ -165,11 +165,4 @@ helper.formatTalentLabels = function(attributes, talentlevel) {
 	return outlabels;
 }
 
-
-
-
-
-
-
-
 module.exports = helper;

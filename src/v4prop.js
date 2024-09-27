@@ -3,11 +3,6 @@ const Folder = require('./folder.js').FoldersEnum;
 // Maps v5 property values to v4 property names for backwards compatibility purposes.
 // It's not a 100% match to v4 but it's good enough for a quick bandaid fix.
 
-module.exports = {
-	addv4: addv4,
-	getv4: getv4
-}
-
 function addv4(v5data, folder) {
 	const v4 = getv4(v5data, folder);
 	copyOverwriteObj(v4, v5data);
@@ -493,4 +488,9 @@ function mapadventureranks(v5data) {
 
 		version: v5data.version
 	};
+}
+
+module.exports = {
+	addv4,
+	getv4
 }
