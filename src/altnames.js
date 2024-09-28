@@ -113,9 +113,16 @@ altnames.addAltName('English', 'constellations', 'Baal', 'raidenshogun');
 altnames.addAltName('English', 'talents', 'Anemo Traveler', 'traveleranemo');
 altnames.addAltName('English', 'talents', 'Electro Traveler', 'travelerelectro');
 altnames.addAltName('English', 'talents', 'Geo Traveler', 'travelergeo');
+altnames.addAltName('English', 'talents', 'Hydro Traveler', 'travelerhydro');
+// TODO: when pyro traveler is added
+// altnames.addAltName('English', 'talents', 'Pyro Traveler', 'travelerpyro');
+
 altnames.addAltName('English', 'constellations', 'Anemo Traveler', 'traveleranemo');
 altnames.addAltName('English', 'constellations', 'Electro Traveler', 'travelerelectro');
 altnames.addAltName('English', 'constellations', 'Geo Traveler', 'travelergeo');
+altnames.addAltName('English', 'constellations', 'Hydro Traveler', 'travelerhydro');
+// TODO: when pyro traveler is added
+// altnames.addAltName('English', 'constellations', 'Pyro Traveler', 'travelerpyro');
 
 altnames.addAltName('English', 'enemies', 'Dvalin', 'stormterror');
 
