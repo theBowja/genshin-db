@@ -60,10 +60,10 @@ const genshindb = require('genshin-db');
   'Sigewinne',    'Sucrose',            'Tartaglia',
   'Thoma',        'Tighnari',           'Venti',
   'Wanderer',     'Wriothesley',        'Xiangling',
-  'Xianyun',      'Xiao',               'Xingqiu',
-  'Xinyan',       'Yae Miko',           'Yanfei',
-  'Yaoyao',       'Yelan',              'Yoimiya',
-  'Yun Jin',      'Zhongli'
+  'Xianyun',      'Xiao',               'Xilonen',
+  'Xingqiu',      'Xinyan',             'Yae Miko',
+  'Yanfei',       'Yaoyao',             'Yelan',
+  'Yoimiya',      'Yun Jin',            'Zhongli'
 ]
 ```
 
@@ -697,7 +697,7 @@ const genshindb = require('genshin-db');
   'Kuki Shinobu',     'Layla',
   'Lumine',           'Lynette',
   'Nilou',            'Qiqi',
-  'Xingqiu'
+  'Xilonen',          'Xingqiu'
 ]
 ```
 
@@ -797,10 +797,10 @@ const genshindb = require('genshin-db');
   'Traveler (Anemo)', 'Traveler (Dendro)', 'Traveler (Electro)',
   'Traveler (Geo)',   'Traveler (Hydro)',  'Venti',
   'Wanderer',         'Wriothesley',       'Xiangling',
-  'Xianyun',          'Xiao',              'Xingqiu',
-  'Xinyan',           'Yae Miko',          'Yanfei',
-  'Yaoyao',           'Yelan',             'Yoimiya',
-  'Yun Jin',          'Zhongli'
+  'Xianyun',          'Xiao',              'Xilonen',
+  'Xingqiu',          'Xinyan',            'Yae Miko',
+  'Yanfei',           'Yaoyao',            'Yelan',
+  'Yoimiya',          'Yun Jin',           'Zhongli'
 ]
 ```
 
@@ -1675,6 +1675,7 @@ const genshindb = require('genshin-db');
   'Forest Regalia',
   'Freedom-Sworn',
   'Frostbearer',
+  'Fruitful Hook',
   'Fruit of Fulfillment',
   'Hakushin Ring',
   'Halberd',
@@ -1710,8 +1711,7 @@ const genshindb = require('genshin-db');
   'Mistsplitter Reforged',
   'Mitternachts Waltz',
   'Moonpiercer',
-  "Mouun's Moon",
-  ... 97 more items
+  ... 101 more items
 ]
 ```
 
@@ -2050,7 +2050,7 @@ const genshindb = require('genshin-db');
   dropDomainId: 4231,
   dropDomainName: 'Domain of Mastery: Realm of Slumber',
   daysOfWeek: [ 'Wednesday', 'Saturday', 'Sunday' ],
-  sources: [ 'Crafted' ],
+  sources: [],
   images: { filename_icon: 'UI_ItemIcon_104308' },
   version: ''
 }
@@ -2591,7 +2591,8 @@ const genshindb = require('genshin-db');
   'Triple-Layered Consommé',
   'Unagi Chazuke',
   'Wakatakeni',
-  'Woodland Dream'
+  'Woodland Dream',
+  'Xocoatl'
 ]
 ```
 
@@ -2988,6 +2989,7 @@ const genshindb = require('genshin-db');
   'Pyro Regisvine',
   'Rimebiter Bathysmal Vishap',
   'Ruin Serpent',
+  'Secret Source Automaton: Configuration Device',
   'Setekh Wenut',
   'Shouki no Kami, the Prodigal',
   'Solitary Suanni',
