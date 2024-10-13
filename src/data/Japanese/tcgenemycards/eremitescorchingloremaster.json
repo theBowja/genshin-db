@@ -38,11 +38,11 @@
 		{
 			"id": 23032,
 			"name": "炎晶迸撃",
-			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C123032]</color>を1層生成する。",
 			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与える。",
-			"description": "炎元素ダメージを3与える。",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与え、<color=#FFFFFFFF>魔蠍の祝福</color>を1層生成する。",
+			"description": "炎元素ダメージを3与え、魔蠍の祝福を1層生成する。",
 			"typetag": "GCG_SKILL_TAG_E",
 			"type": "元素スキル",
 			"playcost": [
@@ -53,13 +53,13 @@
 			]
 		},
 		{
-			"id": 23033,
-			"name": "悪霊蘇生·炎の魔蠍",
-			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C123031]</color>を召喚する。",
-			"basedamage": 2,
+			"id": 23038,
+			"name": "悪霊蘇生・炎の魔蠍",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。各対戦ごとに1回のみ、自身に<color=#FFFFFFFF>$[C123031]</color>を付与する。\\n（<color=#FFFFFFFF>$[C123031]</color>を装備したキャラは特技<color=#FFFFFFFF>$[S1230311]</color>を使用できる。）",
+			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を2与え、<color=#FFFFFFFF>悪霊·炎の魔蠍</color>を召喚する。",
-			"description": "炎元素ダメージを2与え、悪霊·炎の魔蠍を召喚する。",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与える。各対戦ごとに1回のみ、自身に<color=#FFFFFFFF>悪霊·炎の魔蠍</color>を付与する。\\n（<color=#FFFFFFFF>悪霊·炎の魔蠍</color>を装備したキャラは特技<color=#FFFFFFFF>バーニング・アサルト</color>を使用できる。）",
+			"description": "炎元素ダメージを3与える。各対戦ごとに1回のみ、自身に悪霊·炎の魔蠍を付与する。\n（悪霊·炎の魔蠍を装備したキャラは特技バーニング・アサルトを使用できる。）",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "元素爆発",
 			"playcost": [
@@ -76,41 +76,11 @@
 		{
 			"id": 23034,
 			"name": "悪霊の力",
-			"descriptionraw": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、$[K310]を1獲得する。（各対戦ごとに1回まで）",
-			"descriptionreplaced": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得する。（各対戦ごとに1回まで）",
-			"description": "【固有】本キャラがダメージを受けた後、本キャラのHPが7以下の場合、チャージを1獲得する。（各対戦ごとに1回まで）",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、$[K310]を1獲得する。（各ラウンドで1回のみ）",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得する。（各ラウンドで1回のみ）",
+			"description": "【固有】本キャラがダメージを受けた後、本キャラのHPが7以下の場合、チャージを1獲得する。（各ラウンドで1回のみ）",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "固有スキル",
-			"playcost": []
-		},
-		{
-			"id": 23035,
-			"name": "",
-			"descriptionraw": "各ラウンド開始時、本キャラのカウントをリセットする",
-			"descriptionreplaced": "各ラウンド開始時、本キャラのカウントをリセットする",
-			"description": "各ラウンド開始時、本キャラのカウントをリセットする",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23036,
-			"name": "炎の魔蠍·守勢",
-			"descriptionraw": "各ラウンド開始時、フィールドに召喚物が存在する場合、シールドをリセットする",
-			"descriptionreplaced": "各ラウンド開始時、フィールドに召喚物が存在する場合、シールドをリセットする",
-			"description": "各ラウンド開始時、フィールドに召喚物が存在する場合、シールドをリセットする",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23037,
-			"name": "炎の魔蠍·守勢",
-			"descriptionraw": "各ラウンド開始時、フィールドに召喚物が存在する場合、シールドをリセットする（天賦）",
-			"descriptionreplaced": "各ラウンド開始時、フィールドに召喚物が存在する場合、シールドをリセットする（天賦）",
-			"description": "各ラウンド開始時、フィールドに召喚物が存在する場合、シールドをリセットする（天賦）",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
 			"playcost": []
 		}
 	]

@@ -1,0 +1,86 @@
+{
+	"id": 4707,
+	"name": "Пустынник: Танцовщица лиственного круга",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"Дендро",
+		"Прочее",
+		"Пустынники"
+	],
+	"skills": [
+		{
+			"id": 27031,
+			"name": "Лёгкий взмах лиственного круга",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27032,
+			"name": "Закрученный вихрь",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE_3] ед., вы получаете <color=#FFFFFFFF>$[C127033]</color> (1 уровень).",
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>, 3 ед., вы получаете <color=#FFFFFFFF>Благословение духа змеи</color> (1 уровень).",
+			"description": "Наносит Дендро урон, 3 ед., вы получаете Благословение духа змеи (1 уровень).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27035,
+			"name": "Пробуждение духа предзнаменования: Дендро дух змеи",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Только 1 раз за игру у персонажа возникает <color=#FFFFFFFF>$[C127032]</color>.\\nПерсонаж с картой <color=#FFFFFFFF>$[C127032]</color> может использовать технику: <color=#FFFFFFFF>$[S1270321]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>, 4 ед. Только 1 раз за игру у персонажа возникает <color=#FFFFFFFF>Дух предзнаменования: Дендро дух змеи</color>.\\nПерсонаж с картой <color=#FFFFFFFF>Дух предзнаменования: Дендро дух змеи</color> может использовать технику: <color=#FFFFFFFF>Ветвистые чешуйчатые клинки</color>.",
+			"description": "Наносит Дендро урон, 4 ед. Только 1 раз за игру у персонажа возникает Дух предзнаменования: Дендро дух змеи.\nПерсонаж с картой Дух предзнаменования: Дендро дух змеи может использовать технику: Ветвистые чешуйчатые клинки.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27034,
+			"name": "Сила духа предзнаменования",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если его HP не более 7, у него прибавляется $[K310], 1 ед. Только 1 раз за раунд.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если его HP не более 7, у него прибавляется <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color>, 1 ед. Только 1 раз за раунд.",
+			"description": "(Пассивный навык) Когда этот персонаж получает урон: если его HP не более 7, у него прибавляется Энергия, 1 ед. Только 1 раз за раунд.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

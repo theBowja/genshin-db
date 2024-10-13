@@ -1,0 +1,101 @@
+{
+	"id": 2406,
+	"name": "アビスの詠唱者・紫電",
+	"shareid": 421,
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"雷元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "アビスの詠唱者・紫電",
+	"storytext": "讃えよ深淵、侵蝕の知恵。",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、アビスの詠唱者・紫電に挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 24061,
+			"name": "淵薮の落雷",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。",
+			"description": "雷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24062,
+			"name": "秘淵の衝撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n目標が雷元素付着状態の場合、そのチャージを1奪う。（奪う時、このキャラのチャージが満タンの場合、代わりにチャージが満タンでない次のキャラがチャージを獲得する）",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。\\n目標が雷元素付着状態の場合、そのチャージを1奪う。（奪う時、このキャラのチャージが満タンの場合、代わりにチャージが満タンでない次のキャラがチャージを獲得する）",
+			"description": "雷元素ダメージを3与える。\n目標が雷元素付着状態の場合、そのチャージを1奪う。（奪う時、このキャラのチャージが満タンの場合、代わりにチャージが満タンでない次のキャラがチャージを獲得する）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24063,
+			"name": "狂う雷霆",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n目標のチャージが1以下の場合、与えるダメージ+2。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。\\n目標のチャージが1以下の場合、与えるダメージ+2。",
+			"description": "雷元素ダメージを3与える。\n目標のチャージが1以下の場合、与えるダメージ+2。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24064,
+			"name": "雷の新生",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C124061]</color>が付与される。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>雷の新生</color>が付与される。",
+			"description": "【固有】戦闘開始時、雷の新生が付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 24065,
+			"name": "雷の新生",
+			"descriptionraw": "戦闘開始時、<color=#FFFFFFFF>$[C124061]</color>が付与される。",
+			"descriptionreplaced": "戦闘開始時、<color=#FFFFFFFF>雷の新生</color>が付与される。",
+			"description": "戦闘開始時、雷の新生が付与される。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

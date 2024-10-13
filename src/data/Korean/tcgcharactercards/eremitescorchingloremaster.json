@@ -42,11 +42,11 @@
 		{
 			"id": 23032,
 			"name": "화염 결정 쇄도",
-			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C123032]</color>을 1스택 생성한다.",
 			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 준다.",
-			"description": "불 원소 피해를 3pt 준다.",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>마의 전갈 축복</color>을 1스택 생성한다.",
+			"description": "불 원소 피해를 3pt 주고 마의 전갈 축복을 1스택 생성한다.",
 			"typetag": "GCG_SKILL_TAG_E",
 			"type": "원소전투 스킬",
 			"playcost": [
@@ -59,11 +59,11 @@
 		{
 			"id": 23033,
 			"name": "악령 소생·마의 화염 전갈",
-			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C123031]</color>을 소환한다.",
-			"basedamage": 2,
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 대전당 1회 제한: <color=#FFFFFFFF>$[C123031]</color> 1장을 아군 핸드 카드로 가져온다.\\n(<color=#FFFFFFFF>$[C123031]</color>을 장착한 캐릭터는 특수 스킬 사용 가능: <color=#FFFFFFFF>$[S1230311]</color>)",
+			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>악령·마의 화염 전갈</color>을 소환한다.",
-			"description": "불 원소 피해를 2pt 주고 악령·마의 화염 전갈을 소환한다.",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 준다. 대전당 1회 제한: <color=#FFFFFFFF>악령·마의 화염 전갈</color> 1장을 아군 핸드 카드로 가져온다.\\n(<color=#FFFFFFFF>악령·마의 화염 전갈</color>을 장착한 캐릭터는 특수 스킬 사용 가능: <color=#FFFFFFFF>불타는 공세</color>)",
+			"description": "불 원소 피해를 3pt 준다. 대전당 1회 제한: 악령·마의 화염 전갈 1장을 아군 핸드 카드로 가져온다.\n(악령·마의 화염 전갈을 장착한 캐릭터는 특수 스킬 사용 가능: 불타는 공세)",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "원소폭발",
 			"playcost": [
@@ -80,41 +80,11 @@
 		{
 			"id": 23034,
 			"name": "악령의 힘",
-			"descriptionraw": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 $[K310]를 1pt 획득한다. (대전당 1회 제한)",
-			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 1pt 획득한다. (대전당 1회 제한)",
-			"description": "[패시브] 이 캐릭터가 피해를 받은 후: 이 캐릭터의 HP가 7pt 이하이면 원소 에너지를 1pt 획득한다. (대전당 1회 제한)",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 $[K310]를 1pt 획득한다. (턴당 1회)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 1pt 획득한다. (턴당 1회)",
+			"description": "[패시브] 이 캐릭터가 피해를 받은 후: 이 캐릭터의 HP가 7pt 이하이면 원소 에너지를 1pt 획득한다. (턴당 1회)",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "패시브 스킬",
-			"playcost": []
-		},
-		{
-			"id": 23035,
-			"name": "",
-			"descriptionraw": "턴이 시작될 때마다 이 캐릭터의 카운트가 초기화된다.",
-			"descriptionreplaced": "턴이 시작될 때마다 이 캐릭터의 카운트가 초기화된다.",
-			"description": "턴이 시작될 때마다 이 캐릭터의 카운트가 초기화된다.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23036,
-			"name": "마의 화염 전갈·방어",
-			"descriptionraw": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다.",
-			"descriptionreplaced": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다.",
-			"description": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23037,
-			"name": "마의 화염 전갈·방어",
-			"descriptionraw": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다. (특성)",
-			"descriptionreplaced": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다. (특성)",
-			"description": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다. (특성)",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
 			"playcost": []
 		}
 	]

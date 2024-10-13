@@ -38,11 +38,11 @@
 		{
 			"id": 23032,
 			"name": "Blazing Strike",
-			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan menciptakan 1 lapis <color=#FFFFFFFF>$[C123032]</color>.",
 			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>.",
-			"description": "Mengakibatkan 3 poin Pyro DMG.",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color> dan menciptakan 1 lapis <color=#FFFFFFFF>Scorpion Blessing</color>.",
+			"description": "Mengakibatkan 3 poin Pyro DMG dan menciptakan 1 lapis Scorpion Blessing.",
 			"typetag": "GCG_SKILL_TAG_E",
 			"type": "Elemental Skill",
 			"playcost": [
@@ -53,13 +53,13 @@
 			]
 		},
 		{
-			"id": 23033,
+			"id": 23038,
 			"name": "Spirit of Omen's Awakening: Pyro Scorpion",
-			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan memanggil <color=#FFFFFFFF>$[C123031]</color>.",
-			"basedamage": 2,
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT]. Sekali selama pertandingan, memberikan <color=#FFFFFFFF>$[C123031]</color> kepada diri sendiri.\\n(Karakter yang mengenakan <color=#FFFFFFFF>$[C123031]</color> dapat menggunakan Teknik: <color=#FFFFFFFF>$[S1230311]</color>)",
+			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color> dan memanggil <color=#FFFFFFFF>Spirit of Omen: Pyro Scorpion</color>.",
-			"description": "Mengakibatkan 2 poin Pyro DMG dan memanggil Spirit of Omen: Pyro Scorpion.",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>. Sekali selama pertandingan, memberikan <color=#FFFFFFFF>Spirit of Omen: Pyro Scorpion</color> kepada diri sendiri.\\n(Karakter yang mengenakan <color=#FFFFFFFF>Spirit of Omen: Pyro Scorpion</color> dapat menggunakan Teknik: <color=#FFFFFFFF>Burning Assault</color>)",
+			"description": "Mengakibatkan 3 poin Pyro DMG. Sekali selama pertandingan, memberikan Spirit of Omen: Pyro Scorpion kepada diri sendiri.\n(Karakter yang mengenakan Spirit of Omen: Pyro Scorpion dapat menggunakan Teknik: Burning Assault)",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "Elemental Burst",
 			"playcost": [
@@ -76,41 +76,11 @@
 		{
 			"id": 23034,
 			"name": "Spirit of Omen's Power",
-			"descriptionraw": "[Pasif] <color=#FFFFFFFF>Setelah Karakter ini menerima DMG: </color>Jika Karakter memiliki 7 poin HP atau lebih sedikit, akan mendapatkan 1 poin $[K310]. (Sekali selama pertandingan)",
-			"descriptionreplaced": "[Pasif] <color=#FFFFFFFF>Setelah Karakter ini menerima DMG: </color>Jika Karakter memiliki 7 poin HP atau lebih sedikit, akan mendapatkan 1 poin <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>. (Sekali selama pertandingan)",
-			"description": "[Pasif] Setelah Karakter ini menerima DMG: Jika Karakter memiliki 7 poin HP atau lebih sedikit, akan mendapatkan 1 poin Energy. (Sekali selama pertandingan)",
+			"descriptionraw": "[Pasif] <color=#FFFFFFFF>Setelah Karakter ini menerima DMG: </color>Jika HP Karakter tidak lebih dari 7 poin, maka akan mendapatkan 1 poin $[K310]. (Sekali setiap Ronde)",
+			"descriptionreplaced": "[Pasif] <color=#FFFFFFFF>Setelah Karakter ini menerima DMG: </color>Jika HP Karakter tidak lebih dari 7 poin, maka akan mendapatkan 1 poin <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>. (Sekali setiap Ronde)",
+			"description": "[Pasif] Setelah Karakter ini menerima DMG: Jika HP Karakter tidak lebih dari 7 poin, maka akan mendapatkan 1 poin Energy. (Sekali setiap Ronde)",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "Passive Skill",
-			"playcost": []
-		},
-		{
-			"id": 23035,
-			"name": "",
-			"descriptionraw": "Penghitungan untuk Karakter ini akan diulang di setiap awal Ronde.",
-			"descriptionreplaced": "Penghitungan untuk Karakter ini akan diulang di setiap awal Ronde.",
-			"description": "Penghitungan untuk Karakter ini akan diulang di setiap awal Ronde.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23036,
-			"name": "Pyro Scorpion: Guardian Stance",
-			"descriptionraw": "Setiap Ronde dimulai: Jika ada Panggilan di arena, maka akan memperbarui Perisai.",
-			"descriptionreplaced": "Setiap Ronde dimulai: Jika ada Panggilan di arena, maka akan memperbarui Perisai.",
-			"description": "Setiap Ronde dimulai: Jika ada Panggilan di arena, maka akan memperbarui Perisai.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23037,
-			"name": "Pyro Scorpion: Guardian Stance",
-			"descriptionraw": "Setiap Ronde dimulai: Jika ada Panggilan di arena, maka akan memperbarui Perisai (Talenta).",
-			"descriptionreplaced": "Setiap Ronde dimulai: Jika ada Panggilan di arena, maka akan memperbarui Perisai (Talenta).",
-			"description": "Setiap Ronde dimulai: Jika ada Panggilan di arena, maka akan memperbarui Perisai (Talenta).",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
 			"playcost": []
 		}
 	]

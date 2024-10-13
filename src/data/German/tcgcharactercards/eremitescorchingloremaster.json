@@ -42,11 +42,11 @@
 		{
 			"id": 23032,
 			"name": "Ansturm der Flammenkristalle",
-			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 Stapelung <color=#FFFFFFFF>$[C123032]</color>.",
 			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
-			"description": "Verursacht 3 Pkt. Pyro-SCH.",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, erschafft 1 Stapelung <color=#FFFFFFFF>Segen des Skorpions</color>.",
+			"description": "Verursacht 3 Pkt. Pyro-SCH, erschafft 1 Stapelung Segen des Skorpions.",
 			"typetag": "GCG_SKILL_TAG_E",
 			"type": "Elementarfähigkeit",
 			"playcost": [
@@ -59,11 +59,11 @@
 		{
 			"id": 23033,
 			"name": "Erwachen des Geistes – Feuerskorpion",
-			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C123031]</color>.",
-			"basedamage": 2,
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Fügt eine <color=#FFFFFFFF>$[C123031]</color> deiner Hand hinzu (max. 1-mal pro Duell).\\n(Figuren, die mit <color=#FFFFFFFF>$[C123031]</color> ausgerüstet sind, können die Spezialtechnik anwenden: <color=#FFFFFFFF>$[S1230311]</color>)",
+			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Geist – Feuerskorpion</color>.",
-			"description": "Verursacht 2 Pkt. Pyro-SCH, erschafft 1 Geist – Feuerskorpion.",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>. Fügt eine <color=#FFFFFFFF>Geist – Feuerskorpion</color> deiner Hand hinzu (max. 1-mal pro Duell).\\n(Figuren, die mit <color=#FFFFFFFF>Geist – Feuerskorpion</color> ausgerüstet sind, können die Spezialtechnik anwenden: <color=#FFFFFFFF>Brennende Attacke</color>)",
+			"description": "Verursacht 3 Pkt. Pyro-SCH. Fügt eine Geist – Feuerskorpion deiner Hand hinzu (max. 1-mal pro Duell).\n(Figuren, die mit Geist – Feuerskorpion ausgerüstet sind, können die Spezialtechnik anwenden: Brennende Attacke)",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "Spezialfähigkeit",
 			"playcost": [
@@ -80,41 +80,11 @@
 		{
 			"id": 23034,
 			"name": "Dämonische Kraft des Geistes",
-			"descriptionraw": "Passiv – <color=#FFFFFFFF>Nachdem die Figur SCH erlitten hat:</color> Erhält 1 Pkt. $[K310], wenn diese Figur nicht mehr als 7 LP hat (max. 1-mal pro Duell).",
-			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Nachdem die Figur SCH erlitten hat:</color> Erhält 1 Pkt. <color=#FFFFFFFF>{SPRITE_PRESET#1110}Aufladung</color>, wenn diese Figur nicht mehr als 7 LP hat (max. 1-mal pro Duell).",
-			"description": "Passiv – Nachdem die Figur SCH erlitten hat: Erhält 1 Pkt. Aufladung, wenn diese Figur nicht mehr als 7 LP hat (max. 1-mal pro Duell).",
+			"descriptionraw": "Passiv – <color=#FFFFFFFF>Nachdem die Figur SCH erlitten hat:</color> Erhält 1 Pkt. $[K310], wenn diese Figur nicht mehr als 7 LP hat (1-mal pro Runde).",
+			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Nachdem die Figur SCH erlitten hat:</color> Erhält 1 Pkt. <color=#FFFFFFFF>{SPRITE_PRESET#1110}Aufladung</color>, wenn diese Figur nicht mehr als 7 LP hat (1-mal pro Runde).",
+			"description": "Passiv – Nachdem die Figur SCH erlitten hat: Erhält 1 Pkt. Aufladung, wenn diese Figur nicht mehr als 7 LP hat (1-mal pro Runde).",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "Passive Fähigkeit",
-			"playcost": []
-		},
-		{
-			"id": 23035,
-			"name": "",
-			"descriptionraw": "Zu Beginn jeder Runde werden die Stapelungen geleert.",
-			"descriptionreplaced": "Zu Beginn jeder Runde werden die Stapelungen geleert.",
-			"description": "Zu Beginn jeder Runde werden die Stapelungen geleert.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23036,
-			"name": "Feuerskorpion – Abwehr",
-			"descriptionraw": "Zu Beginn jeder Runde wird der Schild erneuert, wenn sich auf dem Feld Beschwörungen befinden.",
-			"descriptionreplaced": "Zu Beginn jeder Runde wird der Schild erneuert, wenn sich auf dem Feld Beschwörungen befinden.",
-			"description": "Zu Beginn jeder Runde wird der Schild erneuert, wenn sich auf dem Feld Beschwörungen befinden.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23037,
-			"name": "Feuerskorpion – Abwehr",
-			"descriptionraw": "Zu Beginn jeder Runde wird der Schild erneuert, wenn sich auf dem Feld Beschwörungen befinden. (Talent)",
-			"descriptionreplaced": "Zu Beginn jeder Runde wird der Schild erneuert, wenn sich auf dem Feld Beschwörungen befinden. (Talent)",
-			"description": "Zu Beginn jeder Runde wird der Schild erneuert, wenn sich auf dem Feld Beschwörungen befinden. (Talent)",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
 			"playcost": []
 		}
 	]

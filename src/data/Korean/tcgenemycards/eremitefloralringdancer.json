@@ -1,0 +1,86 @@
+{
+	"id": 4707,
+	"name": "도금 여단·풀고리 무용수",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_EREMITE"
+	],
+	"tagstext": [
+		"풀 원소",
+		"기타 무기",
+		"도금 여단"
+	],
+	"skills": [
+		{
+			"id": 27031,
+			"name": "풀고리 쓸기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27032,
+			"name": "만연하는 원무",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_3]pt 주고 <color=#FFFFFFFF>$[C127033]</color>을 1스택 생성한다",
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>영혼의 뱀 축복</color>을 1스택 생성한다",
+			"description": "풀 원소 피해를 3pt 주고 영혼의 뱀 축복을 1스택 생성한다",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27035,
+			"name": "악령 소생·영혼의 풀뱀",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 대전당 1회 제한. 자신에게 <color=#FFFFFFFF>$[C127032]</color>을 부착한다.\\n(<color=#FFFFFFFF>$[C127032]</color>을 장착한 캐릭터는 특수 스킬 사용 가능: <color=#FFFFFFFF>$[S1270321]</color>)",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 4pt 준다. 대전당 1회 제한. 자신에게 <color=#FFFFFFFF>악령·영혼의 풀뱀</color>을 부착한다.\\n(<color=#FFFFFFFF>악령·영혼의 풀뱀</color>을 장착한 캐릭터는 특수 스킬 사용 가능: <color=#FFFFFFFF>날카로운 넝쿨 비늘</color>)",
+			"description": "풀 원소 피해를 4pt 준다. 대전당 1회 제한. 자신에게 악령·영혼의 풀뱀을 부착한다.\n(악령·영혼의 풀뱀을 장착한 캐릭터는 특수 스킬 사용 가능: 날카로운 넝쿨 비늘)",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27034,
+			"name": "악령의 힘",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 $[K310]를 1pt 획득한다. (턴당 1회)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 1pt 획득한다. (턴당 1회)",
+			"description": "[패시브] 이 캐릭터가 피해를 받은 후: 이 캐릭터의 HP가 7pt 이하이면 원소 에너지를 1pt 획득한다. (턴당 1회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

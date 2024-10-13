@@ -38,11 +38,11 @@
 		{
 			"id": 23032,
 			"name": "Frappe enflammée",
-			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée 1 cumul de <color=#FFFFFFFF>$[C123032|s1]</color>.",
 			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color>.",
-			"description": "Inflige 3 pts de DGT Pyro.",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color> et crée 1 cumul de <color=#FFFFFFFF>bénédiction de scorpion</color>.",
+			"description": "Inflige 3 pts de DGT Pyro et crée 1 cumul de bénédiction de scorpion.",
 			"typetag": "GCG_SKILL_TAG_E",
 			"type": "Compétence élémentaire",
 			"playcost": [
@@ -53,13 +53,13 @@
 			]
 		},
 		{
-			"id": 23033,
+			"id": 23038,
 			"name": "Éveil d'esprit sinistre du scorpion ardent",
-			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et invoque l'<color=#FFFFFFFF>$[C123031|s1]</color>.",
-			"basedamage": 2,
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], et applique un <color=#FFFFFFFF>$[C123031|s1]</color> au personnage (Limité à 1 fois par partie).\\n(Les personnages équipés avec [<color=#FFFFFFFF>$[C123031]</color>] peuvent utiliser l'habilité : <color=#FFFFFFFF>$[S1230311]</color>)",
+			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color> et invoque l'<color=#FFFFFFFF>esprit sinistre du scorpion ardent</color>.",
-			"description": "Inflige 2 pts de DGT Pyro et invoque l'esprit sinistre du scorpion ardent.",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color>, et applique un <color=#FFFFFFFF>esprit sinistre du scorpion ardent</color> au personnage (Limité à 1 fois par partie).\\n(Les personnages équipés avec [<color=#FFFFFFFF>Esprit sinistre du scorpion ardent</color>] peuvent utiliser l'habilité : <color=#FFFFFFFF>Assaut flambant</color>)",
+			"description": "Inflige 3 pts de DGT Pyro, et applique un esprit sinistre du scorpion ardent au personnage (Limité à 1 fois par partie).\n(Les personnages équipés avec [Esprit sinistre du scorpion ardent] peuvent utiliser l'habilité : Assaut flambant)",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "Déchaînement élémentaire",
 			"playcost": [
@@ -76,41 +76,11 @@
 		{
 			"id": 23034,
 			"name": "Puissance d'esprit sinistre",
-			"descriptionraw": "(Passif) <color=#FFFFFFFF>Lorsque le personnage a subi des DGT : </color>Il obtient 1 $[K310|s2] s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
-			"descriptionreplaced": "(Passif) <color=#FFFFFFFF>Lorsque le personnage a subi des DGT : </color>Il obtient 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}charge</color> s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
-			"description": "(Passif) Lorsque le personnage a subi des DGT : Il obtient 1 charge s'il a 7 PV ou moins. (Limité à 1 fois par partie)",
+			"descriptionraw": "(Passif) <color=#FFFFFFFF>Lorsque le personnage a subi des DGT : </color>Il obtient 1 $[K310|s2] s'il a 7 PV ou moins. (1 fois par manche)",
+			"descriptionreplaced": "(Passif) <color=#FFFFFFFF>Lorsque le personnage a subi des DGT : </color>Il obtient 1 <color=#FFFFFFFF>{SPRITE_PRESET#1110}charge</color> s'il a 7 PV ou moins. (1 fois par manche)",
+			"description": "(Passif) Lorsque le personnage a subi des DGT : Il obtient 1 charge s'il a 7 PV ou moins. (1 fois par manche)",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "Capacité passive",
-			"playcost": []
-		},
-		{
-			"id": 23035,
-			"name": "",
-			"descriptionraw": "Le compteur du personnage est effacé au début de chaque manche.",
-			"descriptionreplaced": "Le compteur du personnage est effacé au début de chaque manche.",
-			"description": "Le compteur du personnage est effacé au début de chaque manche.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23036,
-			"name": "Scorpion ardent : Posture protectrice",
-			"descriptionraw": "Au début de chaque manche, le bouclier est actualisé si une ou plusieurs invocations sont sur le terrain.",
-			"descriptionreplaced": "Au début de chaque manche, le bouclier est actualisé si une ou plusieurs invocations sont sur le terrain.",
-			"description": "Au début de chaque manche, le bouclier est actualisé si une ou plusieurs invocations sont sur le terrain.",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23037,
-			"name": "Scorpion ardent : Posture protectrice",
-			"descriptionraw": "Au début de chaque manche, le bouclier est actualisé si une ou plusieurs invocations sont sur le terrain. (aptitude)",
-			"descriptionreplaced": "Au début de chaque manche, le bouclier est actualisé si une ou plusieurs invocations sont sur le terrain. (aptitude)",
-			"description": "Au début de chaque manche, le bouclier est actualisé si une ou plusieurs invocations sont sur le terrain. (aptitude)",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
 			"playcost": []
 		}
 	]

@@ -1,0 +1,87 @@
+{
+	"id": 3309,
+	"name": "Пиро попрыгунья",
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Пиро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 33091,
+			"name": "Сокрушительный удар головой",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 33092,
+			"name": "Пылающие листья",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед.",
+			"description": "Наносит Пиро урон, 3 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33093,
+			"name": "Взрыв раскалённого нектара",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 7,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 7 ед.",
+			"description": "Наносит Пиро урон, 7 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 33094,
+			"name": "Искусная маскировка",
+			"descriptionraw": "<color=#FFFFFFFF>В начале раунда:</color> противник выбирает одну из трёх случайных карт. Если противник выберет маскировку попрыгуньи, попрыгунья получает $[K310], 1 ед.",
+			"descriptionreplaced": "<color=#FFFFFFFF>В начале раунда:</color> противник выбирает одну из трёх случайных карт. Если противник выберет маскировку попрыгуньи, попрыгунья получает <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color>, 1 ед.",
+			"description": "В начале раунда: противник выбирает одну из трёх случайных карт. Если противник выберет маскировку попрыгуньи, попрыгунья получает Энергия, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}
