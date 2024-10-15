@@ -38,11 +38,11 @@
 		{
 			"id": 23032,
 			"name": "Chớp Lửa Tấn Công",
-			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], sinh ra 1 tầng <color=#FFFFFFFF>$[C123032]</color>.",
 			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Gây 3 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.",
-			"description": "Gây 3 điểm Sát Thương Nguyên Tố Hỏa.",
+			"descriptionreplaced": "Gây 3 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>, sinh ra 1 tầng <color=#FFFFFFFF>Chúc Phúc Bò Cạp</color>.",
+			"description": "Gây 3 điểm Sát Thương Nguyên Tố Hỏa, sinh ra 1 tầng Chúc Phúc Bò Cạp.",
 			"typetag": "GCG_SKILL_TAG_E",
 			"type": "Kỹ Năng Nguyên Tố",
 			"playcost": [
@@ -53,13 +53,13 @@
 			]
 		},
 		{
-			"id": 23033,
+			"id": 23038,
 			"name": "Ách Linh Thức Tỉnh - Bò Cạp Lửa",
-			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], triệu hồi <color=#FFFFFFFF>$[C123031]</color>.",
-			"basedamage": 2,
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT]. Cả ván đấu giới hạn 1 lần, áp dụng <color=#FFFFFFFF>$[C123031]</color> cho bản thân.\\n(Nhân vật trang bị <color=#FFFFFFFF>$[C123031]</color> có thể sử dụng Đặc Kỹ: <color=#FFFFFFFF>$[S1230311]</color>)",
+			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>, triệu hồi <color=#FFFFFFFF>Ách Linh - Bò Cạp Lửa</color>.",
-			"description": "Gây 2 điểm Sát Thương Nguyên Tố Hỏa, triệu hồi Ách Linh - Bò Cạp Lửa.",
+			"descriptionreplaced": "Gây 3 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>. Cả ván đấu giới hạn 1 lần, áp dụng <color=#FFFFFFFF>Ách Linh - Bò Cạp Lửa</color> cho bản thân.\\n(Nhân vật trang bị <color=#FFFFFFFF>Ách Linh - Bò Cạp Lửa</color> có thể sử dụng Đặc Kỹ: <color=#FFFFFFFF>Tấn Công Đốt Cháy</color>)",
+			"description": "Gây 3 điểm Sát Thương Nguyên Tố Hỏa. Cả ván đấu giới hạn 1 lần, áp dụng Ách Linh - Bò Cạp Lửa cho bản thân.\n(Nhân vật trang bị Ách Linh - Bò Cạp Lửa có thể sử dụng Đặc Kỹ: Tấn Công Đốt Cháy)",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "Kỹ Năng Nộ",
 			"playcost": [
@@ -76,41 +76,11 @@
 		{
 			"id": 23034,
 			"name": "Sức Mạnh Ách Linh",
-			"descriptionraw": "(Bị Động) <color=#FFFFFFFF>Sau khi nhân vật này chịu sát thương: </color>Nếu nhân vật này HP không hơn 7, sẽ nhận được 1 điểm $[K310]. (Cả ván đấu tối đa 1 lần)",
-			"descriptionreplaced": "(Bị Động) <color=#FFFFFFFF>Sau khi nhân vật này chịu sát thương: </color>Nếu nhân vật này HP không hơn 7, sẽ nhận được 1 điểm <color=#FFFFFFFF>{SPRITE_PRESET#1110}Năng Lượng</color>. (Cả ván đấu tối đa 1 lần)",
-			"description": "(Bị Động) Sau khi nhân vật này chịu sát thương: Nếu nhân vật này HP không hơn 7, sẽ nhận được 1 điểm Năng Lượng. (Cả ván đấu tối đa 1 lần)",
+			"descriptionraw": "(Bị động) <color=#FFFFFFFF>Sau khi nhân vật này chịu sát thương:</color> Nếu nhân vật này HP không hơn 7, sẽ nhận được 1 điểm $[K310]. (Mỗi hiệp 1 lần)",
+			"descriptionreplaced": "(Bị động) <color=#FFFFFFFF>Sau khi nhân vật này chịu sát thương:</color> Nếu nhân vật này HP không hơn 7, sẽ nhận được 1 điểm <color=#FFFFFFFF>{SPRITE_PRESET#1110}Năng Lượng</color>. (Mỗi hiệp 1 lần)",
+			"description": "(Bị động) Sau khi nhân vật này chịu sát thương: Nếu nhân vật này HP không hơn 7, sẽ nhận được 1 điểm Năng Lượng. (Mỗi hiệp 1 lần)",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "Kỹ Năng Bị Động",
-			"playcost": []
-		},
-		{
-			"id": 23035,
-			"name": "",
-			"descriptionraw": "Khi bắt đầu mỗi hiệp sẽ xóa sạch bộ đếm của nhân vật",
-			"descriptionreplaced": "Khi bắt đầu mỗi hiệp sẽ xóa sạch bộ đếm của nhân vật",
-			"description": "Khi bắt đầu mỗi hiệp sẽ xóa sạch bộ đếm của nhân vật",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23036,
-			"name": "Bò Cạp Lửa - Thế Thủ",
-			"descriptionraw": "Khi bắt đầu mỗi hiệp nếu trong trận có tồn tại vật triệu hồi sẽ tạo mới khiên",
-			"descriptionreplaced": "Khi bắt đầu mỗi hiệp nếu trong trận có tồn tại vật triệu hồi sẽ tạo mới khiên",
-			"description": "Khi bắt đầu mỗi hiệp nếu trong trận có tồn tại vật triệu hồi sẽ tạo mới khiên",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23037,
-			"name": "Bò Cạp Lửa - Thế Thủ",
-			"descriptionraw": "Khi bắt đầu mỗi hiệp nếu trong trận có tồn tại vật triệu hồi sẽ tạo mới khiên (Thiên Phú)",
-			"descriptionreplaced": "Khi bắt đầu mỗi hiệp nếu trong trận có tồn tại vật triệu hồi sẽ tạo mới khiên (Thiên Phú)",
-			"description": "Khi bắt đầu mỗi hiệp nếu trong trận có tồn tại vật triệu hồi sẽ tạo mới khiên (Thiên Phú)",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
 			"playcost": []
 		}
 	]

@@ -38,11 +38,11 @@
 		{
 			"id": 23032,
 			"name": "Asalto flamígero",
-			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y genera 1 carga de <color=#FFFFFFFF>$[C123032|s1]</color>.",
 			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
-			"description": "Inflige 3 pts. de Daño Pyro.",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y genera 1 carga de <color=#FFFFFFFF>bendición del escorpio ígneo</color>.",
+			"description": "Inflige 3 pts. de Daño Pyro y genera 1 carga de bendición del escorpio ígneo.",
 			"typetag": "GCG_SKILL_TAG_E",
 			"type": "Habilidad Elemental",
 			"playcost": [
@@ -53,13 +53,13 @@
 			]
 		},
 		{
-			"id": 23033,
-			"name": "Despertar de Ominoespíritu - Escorpio ígneo",
-			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca un <color=#FFFFFFFF>$[C123031]</color>.",
-			"basedamage": 2,
+			"id": 23038,
+			"name": "Despertar del Ominoespíritu - Escorpio ígneo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Este personaje se equipa la carta de <color=#FFFFFFFF>$[C123031]</color> (1 vez por partida).\\nEl personaje que tenga equipada la carta de <color=#FFFFFFFF>$[C123031]</color> puede usar la técnica especial <color=#FFFFFFFF>$[S1230311]</color>.",
+			"basedamage": 3,
 			"baseelement": "GCG_ELEMENT_PYRO",
-			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> e invoca un <color=#FFFFFFFF>Ominoespíritu - Escorpio ígneo</color>.",
-			"description": "Inflige 2 pts. de Daño Pyro e invoca un Ominoespíritu - Escorpio ígneo.",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>. Este personaje se equipa la carta de <color=#FFFFFFFF>Ominoespíritu - Escorpio ígneo</color> (1 vez por partida).\\nEl personaje que tenga equipada la carta de <color=#FFFFFFFF>Ominoespíritu - Escorpio ígneo</color> puede usar la técnica especial <color=#FFFFFFFF>Ofensiva incineradora</color>.",
+			"description": "Inflige 3 pts. de Daño Pyro. Este personaje se equipa la carta de Ominoespíritu - Escorpio ígneo (1 vez por partida).\nEl personaje que tenga equipada la carta de Ominoespíritu - Escorpio ígneo puede usar la técnica especial Ofensiva incineradora.",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "Habilidad Definitiva",
 			"playcost": [
@@ -76,41 +76,11 @@
 		{
 			"id": 23034,
 			"name": "Poder de Ominoespíritu",
-			"descriptionraw": "Pasiva: si tiene 7 pts. de Vida o menos <color=#FFFFFFFF>después de que reciba daño</color>, obtiene $[K310] +1 (1 vez por partida).",
-			"descriptionreplaced": "Pasiva: si tiene 7 pts. de Vida o menos <color=#FFFFFFFF>después de que reciba daño</color>, obtiene <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energía</color> +1 (1 vez por partida).",
-			"description": "Pasiva: si tiene 7 pts. de Vida o menos después de que reciba daño, obtiene Energía +1 (1 vez por partida).",
+			"descriptionraw": "Pasiva: si tiene 7 pts. de Vida o menos <color=#FFFFFFFF>después de que reciba daño</color>, obtiene $[K310] +1 (1 vez por ronda).",
+			"descriptionreplaced": "Pasiva: si tiene 7 pts. de Vida o menos <color=#FFFFFFFF>después de que reciba daño</color>, obtiene <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energía</color> +1 (1 vez por ronda).",
+			"description": "Pasiva: si tiene 7 pts. de Vida o menos después de que reciba daño, obtiene Energía +1 (1 vez por ronda).",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "Habilidad pasiva",
-			"playcost": []
-		},
-		{
-			"id": 23035,
-			"name": "",
-			"descriptionraw": "Al comienzo de cada ronda, las cargas de este personaje se eliminan",
-			"descriptionreplaced": "Al comienzo de cada ronda, las cargas de este personaje se eliminan",
-			"description": "Al comienzo de cada ronda, las cargas de este personaje se eliminan",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23036,
-			"name": "Escorpio ígneo: defensa",
-			"descriptionraw": "Al comienzo de cada ronda, el escudo se reinicia si había invocaciones en juego",
-			"descriptionreplaced": "Al comienzo de cada ronda, el escudo se reinicia si había invocaciones en juego",
-			"description": "Al comienzo de cada ronda, el escudo se reinicia si había invocaciones en juego",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
-			"playcost": []
-		},
-		{
-			"id": 23037,
-			"name": "Escorpio ígneo: defensa",
-			"descriptionraw": "Al comienzo de cada ronda, el escudo se reinicia si había invocaciones en juego (talento)",
-			"descriptionreplaced": "Al comienzo de cada ronda, el escudo se reinicia si había invocaciones en juego (talento)",
-			"description": "Al comienzo de cada ronda, el escudo se reinicia si había invocaciones en juego (talento)",
-			"typetag": "GCG_SKILL_TAG_NONE",
-			"type": "",
 			"playcost": []
 		}
 	]

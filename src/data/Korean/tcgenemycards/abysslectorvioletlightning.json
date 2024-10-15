@@ -1,0 +1,117 @@
+{
+	"id": 4409,
+	"name": "심연 봉독자·자색 뇌전",
+	"hp": 6,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"번개 원소",
+		"기타 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 24061,
+			"name": "심연 낙뢰",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 1pt 준다.",
+			"description": "번개 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24062,
+			"name": "허계 천둥",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n대상에 이미 번개 원소가 부착되었을 경우, 상대의 원소 에너지를 1pt 빼앗는다. (빼앗을 때 이 캐릭터의 원소 에너지가 가득 찬 경우, 원소 에너지가 가득 차지 않은 다음 캐릭터가 원소 에너지를 획득하는 것으로 변경된다.)",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 준다.\\n대상에 이미 번개 원소가 부착되었을 경우, 상대의 원소 에너지를 1pt 빼앗는다. (빼앗을 때 이 캐릭터의 원소 에너지가 가득 찬 경우, 원소 에너지가 가득 차지 않은 다음 캐릭터가 원소 에너지를 획득하는 것으로 변경된다.)",
+			"description": "번개 원소 피해를 3pt 준다.\n대상에 이미 번개 원소가 부착되었을 경우, 상대의 원소 에너지를 1pt 빼앗는다. (빼앗을 때 이 캐릭터의 원소 에너지가 가득 찬 경우, 원소 에너지가 가득 차지 않은 다음 캐릭터가 원소 에너지를 획득하는 것으로 변경된다.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 24063,
+			"name": "몰아치는 벼락",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n대상의 원소 에너지가 1pt 이하일 시, 주는 피해+2pt",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 준다.\\n대상의 원소 에너지가 1pt 이하일 시, 주는 피해+2pt",
+			"description": "번개 원소 피해를 3pt 준다.\n대상의 원소 에너지가 1pt 이하일 시, 주는 피해+2pt",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 24065,
+			"name": "다시 태어난 번개",
+			"descriptionraw": "전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C124061]</color>가 부착된다.",
+			"descriptionreplaced": "전투 시작 시, 시작부터 <color=#FFFFFFFF>다시 태어난 번개</color>가 부착된다.",
+			"description": "전투 시작 시, 시작부터 다시 태어난 번개가 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 24066,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 24067,
+			"name": "",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 24068,
+			"name": "다시 태어난 번개",
+			"descriptionraw": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C124061]</color>가 부착된다.\\n본 캐릭터가 <color=#FFFFFFFF>$[C124061]</color> 발동 시: 해당 캐릭터에게 <color=#FFFFFFFF>$[C124063]</color>이 부착된다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>다시 태어난 번개</color>가 부착된다.\\n본 캐릭터가 <color=#FFFFFFFF>다시 태어난 번개</color> 발동 시: 해당 캐릭터에게 <color=#FFFFFFFF>천둥 방어막</color>이 부착된다.",
+			"description": "[패시브] 전투 시작 시, 시작부터 다시 태어난 번개가 부착된다.\n본 캐릭터가 다시 태어난 번개 발동 시: 해당 캐릭터에게 천둥 방어막이 부착된다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

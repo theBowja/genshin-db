@@ -159,6 +159,7 @@ async function getCharList(region) {
 			let data = '';
 			res.on('data', function(chunk) { data += chunk;	});
 			res.on('end', function() {
+				// TODO: hoyo changes to not using SSR so this doesn't work anymore :(
 				const regex = /<div data-server-rendered="true".*?window.*?=(.*?)</gm;
 				const found = regex.exec(data);
 				const charList = eval(found[1]).data[0].charList;
@@ -171,7 +172,7 @@ async function getCharList(region) {
 }
 async function getUpperBodyImages() {
 	const util = require('util');
-	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'Fontaine'];
+	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'Fontaine', 'Natlan'];
 	let myimages = {};
 	try { myimages = require(`../../src/data/image/characters.json`); } catch(e) {}
 
@@ -521,7 +522,7 @@ function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipim
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "5.0"; // new data will use this as added version
+gameVersion = "5.1"; // new data will use this as added version
 
 // importData('characters');
 // importCurve('characters');
