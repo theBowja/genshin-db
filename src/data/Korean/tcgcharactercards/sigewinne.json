@@ -1,0 +1,123 @@
+{
+	"id": 1213,
+	"name": "시그윈",
+	"shareid": 433,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"물 원소",
+		"활",
+		"폰타인",
+		"아르케의 힘: 우시아"
+	],
+	"storytitle": "용의 딸의 화려한 변신·시그윈",
+	"storytext": "「순수한 영혼이여, 제 소원을 들어주소서」",
+	"source": "캣테일 술집에서 시그윈 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 12131,
+			"name": "표적 치료",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12132,
+			"name": "통통 물요법",
+			"descriptionraw": "<color=#FFFFFFFF>$[C112131]</color>를 1장 생성해 해당 카드를 아군 카드 더미 맨 위의 세 번째 카드 자리에 넣고, 본 캐릭터에게 <color=#FFFFFFFF>$[C122]</color>을 3스택 부착한다. (<color=#FFFFFFFF>$[C112131]</color>의 효과 발동 후, <color=#FFFFFFFF>$[C112132]</color>을 생성해 상대의 카드 더미에 넣는다. <color=#FFFFFFFF>$[C112132]</color>의 효과 발동 후, <color=#FFFFFFFF>$[C112133]</color>를 생성해 아군 카드 더미에 넣는다)",
+			"descriptionreplaced": "<color=#FFFFFFFF>치료 방울·대</color>를 1장 생성해 해당 카드를 아군 카드 더미 맨 위의 세 번째 카드 자리에 넣고, 본 캐릭터에게 <color=#FFFFFFFF>생명의 계약</color>을 3스택 부착한다. (<color=#FFFFFFFF>치료 방울·대</color>의 효과 발동 후, <color=#FFFFFFFF>치료 방울·중</color>을 생성해 상대의 카드 더미에 넣는다. <color=#FFFFFFFF>치료 방울·중</color>의 효과 발동 후, <color=#FFFFFFFF>치료 방울·소</color>를 생성해 아군 카드 더미에 넣는다)",
+			"description": "치료 방울·대를 1장 생성해 해당 카드를 아군 카드 더미 맨 위의 세 번째 카드 자리에 넣고, 본 캐릭터에게 생명의 계약을 3스택 부착한다. (치료 방울·대의 효과 발동 후, 치료 방울·중을 생성해 상대의 카드 더미에 넣는다. 치료 방울·중의 효과 발동 후, 치료 방울·소를 생성해 아군 카드 더미에 넣는다)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12133,
+			"name": "정성 듬뿍 주사",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S12135]</color>의 $[K53]를 한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>정성과 약 뿌리기</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "물 원소 피해를 2pt 주고 정성과 약 뿌리기의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12134,
+			"name": "세심한 진료",
+			"descriptionraw": "[패시브] 아군 캐릭터가 치유를 받아 부착된 <color=#FFFFFFFF>$[C122]</color>이 완전히 제거된 후, 해당 캐릭터가 추가로 HP 최대치를 1pt 획득한다. (캐릭터마다 최대 3회 발동)\\n<color=#FFFFFFFF>아군이 본 캐릭터로 교체 시: </color>아군 필드에 <color=#FFFFFFFF>$[C112101]</color>이 있을 경우 $[K3]-1, 본 캐릭터가 $[K310]를 1pt 획득한다.",
+			"descriptionreplaced": "[패시브] 아군 캐릭터가 치유를 받아 부착된 <color=#FFFFFFFF>생명의 계약</color>이 완전히 제거된 후, 해당 캐릭터가 추가로 HP 최대치를 1pt 획득한다. (캐릭터마다 최대 3회 발동)\\n<color=#FFFFFFFF>아군이 본 캐릭터로 교체 시: </color>아군 필드에 <color=#FFFFFFFF>원천의 방울</color>이 있을 경우 <color=#FFFFFFFF>사용 가능 횟수</color>-1, 본 캐릭터가 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 1pt 획득한다.",
+			"description": "[패시브] 아군 캐릭터가 치유를 받아 부착된 생명의 계약이 완전히 제거된 후, 해당 캐릭터가 추가로 HP 최대치를 1pt 획득한다. (캐릭터마다 최대 3회 발동)\n아군이 본 캐릭터로 교체 시: 아군 필드에 원천의 방울이 있을 경우 사용 가능 횟수-1, 본 캐릭터가 원소 에너지를 1pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 12135,
+			"name": "정성과 약 뿌리기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 준다.",
+			"description": "물 원소 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": []
+		},
+		{
+			"id": 12136,
+			"name": "세심한 진료",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 12137,
+			"name": "세심한 진료",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>아군이 본 캐릭터로 교체 시:</color> 아군 필드에 <color=#FFFFFFFF>$[C112101]</color>이 있을 경우 $[K3]-1, 본 캐릭터가 $[K310]를 1pt 획득한다.",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>아군이 본 캐릭터로 교체 시:</color> 아군 필드에 <color=#FFFFFFFF>원천의 방울</color>이 있을 경우 <color=#FFFFFFFF>사용 가능 횟수</color>-1, 본 캐릭터가 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 1pt 획득한다.",
+			"description": "[패시브] 아군이 본 캐릭터로 교체 시: 아군 필드에 원천의 방울이 있을 경우 사용 가능 횟수-1, 본 캐릭터가 원소 에너지를 1pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

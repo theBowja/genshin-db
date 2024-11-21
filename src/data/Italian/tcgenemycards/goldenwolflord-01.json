@@ -1,0 +1,77 @@
+{
+	"id": 4608,
+	"name": "Signore dei lupi dorato",
+	"hp": 40,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Altre armi",
+		"Mostro"
+	],
+	"skills": [
+		{
+			"id": 26031,
+			"name": "Colpo del Signore dei lupi",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>.",
+			"description": "Infligge 2 DAN fisici.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26032,
+			"name": "Richiamo della Faglia ululante",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], associa 2 accumuli di <color=#FFFFFFFF>$[C126031]</color> al personaggio bersaglio e invoca 1 <color=#FFFFFFFF>$[C126032]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2106}<color=#FFE699FF>DAN da Geo</color>, associa 2 accumuli di <color=#FFFFFFFF>Corrosione aurea</color> al personaggio bersaglio e invoca 1 <color=#FFFFFFFF>Teschio di Segugio della Faglia</color>.",
+			"description": "Infligge 1 DAN da Geo, associa 2 accumuli di Corrosione aurea al personaggio bersaglio e invoca 1 Teschio di Segugio della Faglia.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26033,
+			"name": "Intrusione dorata",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], infligge 1 $[K5] a tutti i personaggi avversari inattivi, quindi associa <color=#FFFFFFFF>$[C126031]</color> a tutti i personaggi avversari.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2106}<color=#FFE699FF>DAN da Geo</color>, infligge 1 <color=#FFFFFFFF>DAN da perforazione</color> a tutti i personaggi avversari inattivi, quindi associa <color=#FFFFFFFF>Corrosione aurea</color> a tutti i personaggi avversari.",
+			"description": "Infligge 3 DAN da Geo, infligge 1 DAN da perforazione a tutti i personaggi avversari inattivi, quindi associa Corrosione aurea a tutti i personaggi avversari.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

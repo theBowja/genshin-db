@@ -1,0 +1,77 @@
+{
+	"id": 4607,
+	"name": "Золотой волчий вожак",
+	"hp": 25,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Гео",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 26031,
+			"name": "Удар Волчьего вожака",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26032,
+			"name": "Вой Разрыва",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Выбранный персонаж получает состояние <color=#FFFFFFFF>$[C126031]</color>, 2 уровня. Призывается помощник: <color=#FFFFFFFF>$[C126032]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 1 ед. Выбранный персонаж получает состояние <color=#FFFFFFFF>Золотое разложение</color>, 2 уровня. Призывается помощник: <color=#FFFFFFFF>Матёрый пёс Разрыва</color>.",
+			"description": "Наносит Гео урон, 1 ед. Выбранный персонаж получает состояние Золотое разложение, 2 уровня. Призывается помощник: Матёрый пёс Разрыва.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26033,
+			"name": "Золотое удушение",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и наносит $[K5], 1 ед. всем неактивным персонажам противника. Все персонажи противника получают <color=#FFFFFFFF>$[C126031]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 3 ед. и наносит <color=#FFFFFFFF>Проникающий урон</color>, 1 ед. всем неактивным персонажам противника. Все персонажи противника получают <color=#FFFFFFFF>Золотое разложение</color>.",
+			"description": "Наносит Гео урон, 3 ед. и наносит Проникающий урон, 1 ед. всем неактивным персонажам противника. Все персонажи противника получают Золотое разложение.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

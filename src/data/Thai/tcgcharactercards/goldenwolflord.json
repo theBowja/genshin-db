@@ -1,0 +1,81 @@
+{
+	"id": 2603,
+	"name": "Golden Wolflord",
+	"shareid": 434,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"ธาตุหิน",
+		"อาวุธอื่น ๆ",
+		"มอนสเตอร์"
+	],
+	"storytitle": "ราชา Riftwolf - Golden Wolflord",
+	"storytext": "อสูรร้ายแสนผิดเพี้ยนที่มาจากต่างโลก Wolflord ผู้ที่ควบคุม Riftwolf มีอำนาจในการสั่งให้ฝูง Riftwolf ละลายดินแดนได้",
+	"source": "ได้รับหลังจากเอาชนะ Golden Wolflord ระดับความยากฉันมิตร จากการดูเอลในร้านเหล้าที่ Prince ใน Cat's Tail",
+	"skills": [
+		{
+			"id": 26031,
+			"name": "Wolflord's Strike",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26032,
+			"name": "Howling Riftcall",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย ตัวละครเป้าหมายได้รับ <color=#FFFFFFFF>$[C126031]</color> 2 ชั้น และเรียก <color=#FFFFFFFF>$[C126032]</color>",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2106}<color=#FFE699FF>ความเสียหายหิน</color> 1 หน่วย ตัวละครเป้าหมายได้รับ <color=#FFFFFFFF>Golden Corrosion</color> 2 ชั้น และเรียก <color=#FFFFFFFF>Rifthound Skull</color>",
+			"description": "สร้างความเสียหายหิน 1 หน่วย ตัวละครเป้าหมายได้รับ Golden Corrosion 2 ชั้น และเรียก Rifthound Skull",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26033,
+			"name": "Golden Cankerbind",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย สร้าง$[K5] 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และทำให้ตัวละครฝ่ายศัตรูทั้งหมดได้รับ <color=#FFFFFFFF>$[C126031]</color>",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2106}<color=#FFE699FF>ความเสียหายหิน</color> 3 หน่วย สร้าง<color=#FFFFFFFF>ความเสียหายทะลวง</color> 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และทำให้ตัวละครฝ่ายศัตรูทั้งหมดได้รับ <color=#FFFFFFFF>Golden Corrosion</color>",
+			"description": "สร้างความเสียหายหิน 3 หน่วย สร้างความเสียหายทะลวง 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และทำให้ตัวละครฝ่ายศัตรูทั้งหมดได้รับ Golden Corrosion",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

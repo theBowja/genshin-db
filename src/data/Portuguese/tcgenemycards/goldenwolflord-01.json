@@ -1,0 +1,77 @@
+{
+	"id": 4608,
+	"name": "Rei Canino Dourado",
+	"hp": 40,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 26031,
+			"name": "Golpe do Lorde Lupino",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26032,
+			"name": "Chamado da Fenda Uivante",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], aplica 2 acúmulos de <color=#FFFFFFFF>$[C126031]</color> ao alvo e invoca <color=#FFFFFFFF>$[C126032]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2106}<color=#FFE699FF>Dano Geo</color>, aplica 2 acúmulos de <color=#FFFFFFFF>Corrosão Dourada</color> ao alvo e invoca <color=#FFFFFFFF>Cães da Fenda Alfa</color>.",
+			"description": "Causa 1 ponto de Dano Geo, aplica 2 acúmulos de Corrosão Dourada ao alvo e invoca Cães da Fenda Alfa.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26033,
+			"name": "Destruição Dourada",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], causa 1 de $[K5] a todos os personagens fora de combate, então aplica <color=#FFFFFFFF>$[C126031]</color> a todos os personagens adversários.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2106}<color=#FFE699FF>Dano Geo</color>, causa 1 de <color=#FFFFFFFF>Dano Perfurante</color> a todos os personagens fora de combate, então aplica <color=#FFFFFFFF>Corrosão Dourada</color> a todos os personagens adversários.",
+			"description": "Causa 3 pontos de Dano Geo, causa 1 de Dano Perfurante a todos os personagens fora de combate, então aplica Corrosão Dourada a todos os personagens adversários.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

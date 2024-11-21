@@ -1,0 +1,81 @@
+{
+	"id": 1113,
+	"name": "Rosaria",
+	"shareid": 432,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Buz",
+		"Mızrak",
+		"Mondstadt"
+	],
+	"storytitle": "\"Dikenli Gül\" Rosaria",
+	"storytext": "\"Gölgeyi ışık yaratır ama gölge ışıkla kontrol edilemez.\"",
+	"source": "Rosaria'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 11131,
+			"name": "Kilisenin Mızrağı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11132,
+			"name": "Hiddetli İtiraf",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, 2 kademe <color=#FFFFFFFF>$[C111131]</color> oluşturur. ($[C111131] etkisi tetiklendikten sonra <color=#FFFFFFFF>$[C111133]</color> oluşturur.)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir, 2 kademe <color=#FFFFFFFF>Zaafları Bul</color> oluşturur. (Zaafları Bul etkisi tetiklendikten sonra <color=#FFFFFFFF>Can Damarına Saldır</color> oluşturur.)",
+			"description": "1 Buz Hasarı verir, 2 kademe Zaafları Bul oluşturur. (Zaafları Bul etkisi tetiklendikten sonra Can Damarına Saldır oluşturur.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11133,
+			"name": "Son Ayin",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, 2 kademe <color=#FFFFFFFF>$[C111131]</color> oluşturur ve <color=#FFFFFFFF>$[C111132]</color> çağırır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir, 2 kademe <color=#FFFFFFFF>Zaafları Bul</color> oluşturur ve <color=#FFFFFFFF>Dondurucu Buz Mızrağı</color> çağırır.",
+			"description": "1 Buz Hasarı verir, 2 kademe Zaafları Bul oluşturur ve Dondurucu Buz Mızrağı çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

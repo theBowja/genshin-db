@@ -1,0 +1,123 @@
+{
+	"id": 1213,
+	"name": "シグウィン",
+	"shareid": 433,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"水元素",
+		"弓",
+		"フォンテーヌ",
+		"アルケー：ウーシア"
+	],
+	"storytitle": "龍の愛娘・シグウィン",
+	"storytext": "「神聖なる純潔の魂に、想いが届きますように。」",
+	"source": "キャッツテールでシグウィンを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 12131,
+			"name": "ターゲットセラピー",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12132,
+			"name": "ぴょんぴょんハイドロセラピー",
+			"descriptionraw": "<color=#FFFFFFFF>$[C112131]</color>を1枚生成し、味方の山札の上から3枚目の位置に配置し、本キャラに<color=#FFFFFFFF>$[C122]</color>を3層付与する。（<color=#FFFFFFFF>$[C112131]</color>の効果が発動すると、<color=#FFFFFFFF>$[C112132]</color>が生成され、相手の山札に配置される。<color=#FFFFFFFF>$[C112132]</color>の効果が発動すると、<color=#FFFFFFFF>$[C112133]</color>が生成され、味方の山札に配置される）",
+			"descriptionreplaced": "<color=#FFFFFFFF>ヒーリングバブル・大</color>を1枚生成し、味方の山札の上から3枚目の位置に配置し、本キャラに<color=#FFFFFFFF>命の契約</color>を3層付与する。（<color=#FFFFFFFF>ヒーリングバブル・大</color>の効果が発動すると、<color=#FFFFFFFF>ヒーリングバブル・中</color>が生成され、相手の山札に配置される。<color=#FFFFFFFF>ヒーリングバブル・中</color>の効果が発動すると、<color=#FFFFFFFF>ヒーリングバブル・小</color>が生成され、味方の山札に配置される）",
+			"description": "ヒーリングバブル・大を1枚生成し、味方の山札の上から3枚目の位置に配置し、本キャラに命の契約を3層付与する。（ヒーリングバブル・大の効果が発動すると、ヒーリングバブル・中が生成され、相手の山札に配置される。ヒーリングバブル・中の効果が発動すると、ヒーリングバブル・小が生成され、味方の山札に配置される）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12133,
+			"name": "過飽和まごころお注射",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K53]に入る：<color=#FFFFFFFF>$[S12135]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与え、<color=#FFFFFFFF>スキル準備</color>に入る：<color=#FFFFFFFF>思いやりたっぷりの薬剤衝撃波</color>。",
+			"description": "水元素ダメージを2与え、スキル準備に入る：思いやりたっぷりの薬剤衝撃波。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12134,
+			"name": "丁寧な診療",
+			"descriptionraw": "【固有】味方キャラが治療を受け、付与された<color=#FFFFFFFF>$[C122]</color>が完全にクリアされた後、該当キャラのHP上限+1。（1キャラにつき最大3回まで有効）\\n<color=#FFFFFFFF>味方が本キャラにチェンジする時</color>、味方のフィールドに<color=#FFFFFFFF>$[C112101]</color>が存在する場合、その$[K3]-1、本キャラが$[K310]を1獲得する。",
+			"descriptionreplaced": "【固有】味方キャラが治療を受け、付与された<color=#FFFFFFFF>命の契約</color>が完全にクリアされた後、該当キャラのHP上限+1。（1キャラにつき最大3回まで有効）\\n<color=#FFFFFFFF>味方が本キャラにチェンジする時</color>、味方のフィールドに<color=#FFFFFFFF>源水の雫</color>が存在する場合、その<color=#FFFFFFFF>使用可能回数</color>-1、本キャラが<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得する。",
+			"description": "【固有】味方キャラが治療を受け、付与された命の契約が完全にクリアされた後、該当キャラのHP上限+1。（1キャラにつき最大3回まで有効）\n味方が本キャラにチェンジする時、味方のフィールドに源水の雫が存在する場合、その使用可能回数-1、本キャラがチャージを1獲得する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 12135,
+			"name": "思いやりたっぷりの薬剤衝撃波",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。",
+			"description": "水元素ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": []
+		},
+		{
+			"id": 12136,
+			"name": "丁寧な診療",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 12137,
+			"name": "丁寧な診療",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>味方が本キャラにチェンジする時に</color>、味方のフィールドに<color=#FFFFFFFF>$[C112101]</color>が存在する場合、その$[K3]が-1、本キャラが$[K310]を1獲得する。",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>味方が本キャラにチェンジする時に</color>、味方のフィールドに<color=#FFFFFFFF>源水の雫</color>が存在する場合、その<color=#FFFFFFFF>使用可能回数</color>が-1、本キャラが<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得する。",
+			"description": "【固有】味方が本キャラにチェンジする時に、味方のフィールドに源水の雫が存在する場合、その使用可能回数が-1、本キャラがチャージを1獲得する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

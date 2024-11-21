@@ -1,0 +1,77 @@
+{
+	"id": 4607,
+	"name": "黄金王獣",
+	"hp": 25,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"岩元素",
+		"他の武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 26031,
+			"name": "ウルブズの王の直撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26032,
+			"name": "獣域召喚",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標キャラに<color=#FFFFFFFF>$[C126031]</color>を2層付与し、<color=#FFFFFFFF>$[C126032]</color>を召喚する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を1与え、目標キャラに<color=#FFFFFFFF>黄金の侵蝕</color>を2層付与し、<color=#FFFFFFFF>獣域スカル</color>を召喚する。",
+			"description": "岩元素ダメージを1与え、目標キャラに黄金の侵蝕を2層付与し、獣域スカルを召喚する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26033,
+			"name": "黄金の縛り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。相手の待機キャラ全員に$[K5]を1与え、相手キャラ全員に<color=#FFFFFFFF>$[C126031]</color>を付与する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を3与える。相手の待機キャラ全員に<color=#FFFFFFFF>貫通ダメージ</color>を1与え、相手キャラ全員に<color=#FFFFFFFF>黄金の侵蝕</color>を付与する。",
+			"description": "岩元素ダメージを3与える。相手の待機キャラ全員に貫通ダメージを1与え、相手キャラ全員に黄金の侵蝕を付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

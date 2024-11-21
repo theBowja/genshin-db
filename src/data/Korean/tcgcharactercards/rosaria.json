@@ -1,0 +1,81 @@
+{
+	"id": 1113,
+	"name": "로자리아",
+	"shareid": 432,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"장병기",
+		"몬드"
+	],
+	"storytitle": "가시관의 은혜·로자리아",
+	"storytext": "「검은 그림자는 빛으로부터 왔지만, 빛은 검은 그림자를 다스리지 않는다」",
+	"source": "캣테일 술집에서 로자리아 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 11131,
+			"name": "성당 창술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11132,
+			"name": "죄를 삼키는 고해",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111131]</color>를 2스택 생성한다. ($[C111131]의 효과 발동 시, <color=#FFFFFFFF>$[C111133]</color>를 생성한다)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 1pt 주고 <color=#FFFFFFFF>약점 간파</color>를 2스택 생성한다. (약점 간파의 효과 발동 시, <color=#FFFFFFFF>약점 강타</color>를 생성한다)",
+			"description": "얼음 원소 피해를 1pt 주고 약점 간파를 2스택 생성한다. (약점 간파의 효과 발동 시, 약점 강타를 생성한다)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11133,
+			"name": "죽음의 성례",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111131]</color>를 2스택 생성한 후 <color=#FFFFFFFF>$[C111132]</color>을 소환한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 1pt 주고 <color=#FFFFFFFF>약점 간파</color>를 2스택 생성한 후 <color=#FFFFFFFF>혹한의 얼음창</color>을 소환한다.",
+			"description": "얼음 원소 피해를 1pt 주고 약점 간파를 2스택 생성한 후 혹한의 얼음창을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

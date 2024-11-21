@@ -1,0 +1,81 @@
+{
+	"id": 2603,
+	"name": "Rey Acechador Dorado",
+	"shareid": 434,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Otras armas",
+		"Monstruo"
+	],
+	"storytitle": "Monarca de los lobos - Rey Acechador Dorado",
+	"storytext": "Un monstruo retorcido procedente de otro mundo. Es el rey de los Acechadores y tiene el poder de dirigirlos para disolver el mismo espacio.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra el Rey Acechador Dorado de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 26031,
+			"name": "Zarpazo del Rey Acechador",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26032,
+			"name": "Aullido acechador",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Al personaje objetivo se le aplican 2 cargas de <color=#FFFFFFFF>$[C126031|s1]</color> e invoca unas <color=#FFFFFFFF>$[C126032|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>. Al personaje objetivo se le aplican 2 cargas de <color=#FFFFFFFF>corrosión dorada</color> e invoca unas <color=#FFFFFFFF>calaveras de Acechador</color>.",
+			"description": "Inflige 1 pt. de Daño Geo. Al personaje objetivo se le aplican 2 cargas de corrosión dorada e invoca unas calaveras de Acechador.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26033,
+			"name": "Intrusión dorada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], así como 1 pt. de $[K5] contra todos los personajes enemigos en reserva y les aplica el efecto de <color=#FFFFFFFF>$[C126031|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>, así como 1 pt. de <color=#FFFFFFFF>Daño Penetrante</color> contra todos los personajes enemigos en reserva y les aplica el efecto de <color=#FFFFFFFF>corrosión dorada</color>.",
+			"description": "Inflige 3 pts. de Daño Geo, así como 1 pt. de Daño Penetrante contra todos los personajes enemigos en reserva y les aplica el efecto de corrosión dorada.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

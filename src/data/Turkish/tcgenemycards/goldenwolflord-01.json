@@ -1,0 +1,77 @@
+{
+	"id": 4608,
+	"name": "Kurtların Altın Efendisi",
+	"hp": 40,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Toprak",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 26031,
+			"name": "Kurtların Efendisi'nin Saldırısı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26032,
+			"name": "Yarığın Uluyan Çağrısı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, hedef karaktere 2 kademe <color=#FFFFFFFF>$[C126031]</color> ekler ve <color=#FFFFFFFF>$[C126032]</color> çağırır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2106}<color=#FFE699FF>Toprak Hasarı</color> verir, hedef karaktere 2 kademe <color=#FFFFFFFF>Altın Aşınma</color> ekler ve <color=#FFFFFFFF>Hiçlik Kurdu Kafatası</color> çağırır.",
+			"description": "1 Toprak Hasarı verir, hedef karaktere 2 kademe Altın Aşınma ekler ve Hiçlik Kurdu Kafatası çağırır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26033,
+			"name": "Altın Taarruz",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir, hazırdaki tüm rakip karakterlere 1 $[K5] verir ve tüm rakip karakterlere <color=#FFFFFFFF>$[C126031]</color> ekler.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2106}<color=#FFE699FF>Toprak Hasarı</color> verir, hazırdaki tüm rakip karakterlere 1 <color=#FFFFFFFF>Delme Hasarı</color> verir ve tüm rakip karakterlere <color=#FFFFFFFF>Altın Aşınma</color> ekler.",
+			"description": "3 Toprak Hasarı verir, hazırdaki tüm rakip karakterlere 1 Delme Hasarı verir ve tüm rakip karakterlere Altın Aşınma ekler.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
