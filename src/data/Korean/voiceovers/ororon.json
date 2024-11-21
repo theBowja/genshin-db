@@ -1,0 +1,721 @@
+{
+	"id": 10000105,
+	"name": "Ororon",
+	"friendLines": [
+		{
+			"voicelineId": 105000,
+			"title": "첫 만남…",
+			"voicelineType": "1006",
+			"description": "안녕, 난 「연기 주인」의 올로룬이야. 야채 장사를 하진 않지만, 선물로 좀 줄게.\n걱정 마, 무슨 특별한 의도가 있다거나, 너한테서 뭘 얻어내려는 건 아니야. 난 그냥 모든 씨앗이 마지막에 어떤 모습으로 성장하는지 궁금해서 이것저것 심게 된 것뿐이거든. 야채들이 다들 자신을 좋아해 주는 위장 속에서 편안한 말년을 보냈으면 좋겠어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_draw_appear_01"
+		},
+		{
+			"voicelineId": 105001,
+			"title": "잡담·괴짜",
+			"voicelineType": "1101",
+			"description": "연기 주인 사람은 다 괴짜라고? 난 나만 그런 줄 알았는데. 또 누가 있어?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_character_idle_01"
+		},
+		{
+			"voicelineId": 105002,
+			"title": "잡담·목표",
+			"voicelineType": "1102",
+			"description": "누구나 좋아하는 동물이나 야채, 과일 하나쯤은 있어야 돼. 그래야 자신이 어떤 사람이 되고 싶은지 알 수 있거든",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_character_idle_02"
+		},
+		{
+			"voicelineId": 105003,
+			"title": "잡담·연기",
+			"voicelineType": "1103",
+			"description": "모든 연기를 다 통과할 수 있는 건 아니야. 야망이 과하게 크면, 연기에 질식할 수도 있어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_character_idle_03"
+		},
+		{
+			"voicelineId": 105004,
+			"title": "비가 올 때…",
+			"voicelineType": "1201",
+			"description": "달리면 옷에 흙탕물이 튈 거고, 날면… 망토가 젖어서 무거워질 거야. 그냥 잠깐 앉아 있을 곳을 찾자",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 105005,
+			"title": "번개가 칠 때…",
+			"voicelineType": "1202",
+			"description": "번개는 뱀 같아. 번개의 색과 형상으로 점을 보는 사람도 있을까…. 솔직히, 그 사람들의 안전이 좀 걱정돼",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_thunder_01"
+		},
+		{
+			"voicelineId": 105006,
+			"title": "눈이 올 때…",
+			"voicelineType": "1203",
+			"description": "…눈 아래에 무언가가 있어. 녀석들을 깨우지 않게 조심히 가자",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_snowy_01"
+		},
+		{
+			"voicelineId": 105007,
+			"title": "햇살이 좋을 때…",
+			"voicelineType": "1204",
+			"description": "태양은 영원히 타오르는 불이지. 나타 사람들은 태양을 바라보는 걸 두려워하지 않아. 물론, 정말 힘들면 선글라스를 써도 돼",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_sunny_01"
+		},
+		{
+			"voicelineId": 105008,
+			"title": "사막에 있을 때…",
+			"voicelineType": "1205",
+			"description": "이곳은… 무언가를 재배하기에 좋은 곳은 아니네. 그냥 지나갈까?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_desert_01"
+		},
+		{
+			"voicelineId": 105009,
+			"title": "아침 인사…",
+			"voicelineType": "1001",
+			"description": "미안, 눈은 떴지만 아직 잠에서 못 깼어…. 일 얘기는 나중에 하지 않을래?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 105010,
+			"title": "점심 인사…",
+			"voicelineType": "1002",
+			"description": "위장이 뭔가 먹을 시간이 됐대. 근데 먹고 싶은 게 떠오르질 않네…. 아직 머리는 덜 깼나 봐",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 105011,
+			"title": "저녁 인사…",
+			"voicelineType": "1003",
+			"description": "갑자기 뚱룡장 거품 커피가 마시고 싶어졌어, 우유 안 넣은 걸로. 너무 늦었다고? 그럼… 좋은 아침",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 105012,
+			"title": "굿나잇…",
+			"voicelineType": "1004",
+			"description": "이 시간만 되면 머리가 쌩쌩해져. 그래서 억지로 잠을 청하는 건 포기한 지 오래야. 넌 먼저 가서 쉬어. 난 등불을 들고 밭에 무를 좀 보러 갈게",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 105013,
+			"title": "올로룬 자신에 대해·교류",
+			"voicelineType": "2001",
+			"description": "나도 가끔 내 말이 이해하기 어렵다는 건 알아. 이해하지 못하겠으면 바로 물어봐도 돼, 난 괜찮으니까",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_idle"
+		},
+		{
+			"voicelineId": 105014,
+			"title": "올로룬 자신에 대해·풀리지 않는 수수께끼",
+			"voicelineType": "2005",
+			"description": "내가 어디에서 왔는지 모르지만, 딱히 궁금하지는 않아…. 그보다는 내가 어디로 가야 하는지를 더 알고 싶어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105015,
+			"title": "우리에 대해·사과",
+			"voicelineType": "2003",
+			"description": "미안… 음… 그러니까, 정말로 미안해. 만나자마자 속이고, 정말 나쁜 인상을 줬지. 이유는 이미 다 말했지만, 그 말에 절대 거짓은 없어. 받아주지 않는다 해도 괜찮아. 내가 최대한… 네 앞에 나타나지 않으면 되니까…",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105016,
+			"title": "우리에 대해·답례",
+			"voicelineType": "2002",
+			"description": "여기 「새벽 네 시」의 뚱룡장이랑 「머리보다 큰」 마몬치요, 「지난주까진 제일 달콤했던」 꿀… 그리고… 아, 「카쿠쿠 무료 진찰권」도 있어.\n왜 의아한 표정을 지어? 다 선물이야, 받아줘. 너에게 도움을 받았는데 넌 딱히 부족한 게 없어 보여서, 어쩔 수 없이 내가 좋아하는 걸로 준비했어.\n카쿠쿠가 누구냐고? 카쿠쿠는 용이야. 언제 한 번 소개해 줄게",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105017,
+			"title": "「신의 눈」에 대해…",
+			"voicelineType": "3006",
+			"description": "작물이 번개를 맞으면 더 잘 자란다는 소문을 들었어. 그래서 밭에서 「신의 눈」을 사용해 봤는데, 안타깝게도 양배추와 토마토 모두 좋아하지 않아서 더 해 보지는 않았어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105018,
+			"title": "하고 싶은 이야기…",
+			"voicelineType": "3002",
+			"description": "삶의 지혜를 하나 알려줄게. 맨 처음으로 의견을 내는 사람은 되지 마. 먼저 맺은 열매가 쉽게 노려지듯이, 가장 먼저 눈에 띄는 사람은 종종 처참하게 패배하거든",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_share_01"
+		},
+		{
+			"voicelineId": 105019,
+			"title": "흥미있는 일…",
+			"voicelineType": "3003",
+			"description": "날다람쥐는 사실 하늘에서 활강할 때처럼 항상 안하무인인 건 아니야. 갑자기 날아들어서 네 몸에 달라붙어 있으면 뭐라도 챙겨주고 싶어지거든. 어떤 의미로는 참 교활한 녀석들이라 할 수 있어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_gift_01"
+		},
+		{
+			"voicelineId": 105020,
+			"title": "실로닌에 대해…",
+			"voicelineType": "4001",
+			"description": "실로닌은 높은 곳, 특히 나무 위를 좋아하는 듯해. 난 나뭇가지에 거꾸로 매달려 있는 게 위에 누워 있는 것보다 스트레스가 풀리던데, 기회가 되면 노하우를 나눠 봐야겠어. 어, 별로야? 다들 세상을 보는 각도를 바꿔보라고 하잖아. 실로닌 같은 발명가라면 더 그래야 하지 않나?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_xilonen_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105021,
+			"title": "키니치에 대해…",
+			"voicelineType": "4002",
+			"description": "아쥬는 참 흥미로워. 나이가 많은데, 또 나이가 적지. 키니치는 딱 반대야. 나이가 적은데, 또 나이가 많아. 어… 내 말 이해하고 있는 거지?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_kinich_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105022,
+			"title": "차스카에 대해…",
+			"voicelineType": "4003",
+			"description": "차스카는 대단하고 또 유명해. 싸우던 사람들도 차스카만 오면 싸움을 멈추고 화기애애하게 악수를 하지. 가장 말이 잘 통하는 녀석은 「무력행사」였구나 싶어. 훌륭한 이름이야",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_chasca_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105023,
+			"title": "이파에 대해…",
+			"voicelineType": "4004",
+			"description": "이파는 환자를 자주 혼내지만, 사실 용들과 관계가 아주 좋아. 한가할 땐 진료소 앞에서 기타를 치면서, 주위를 둘러싼 용들한테 하나씩 따라 부르게 하지.\n사실 노래라기보다는 울음소리에 가까워. 나도 지나가다 보면 끼곤 해. 아, 그러니까 용들한테 낀다고",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_ifa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105024,
+			"title": "시틀라리에 대해…",
+			"voicelineType": "4005",
+			"description": "할머니는 사실 무척 솔직한 사람이야. 기쁜 것도 안 기쁜 것도 전부 드러내지. 자기 감정을 숨기는 데도 능숙하지 못하고 말이야. 너는 할머니와 동년배거나… 더 나이가 많아 보이는데?\n미안, 무례한 질문 같으니 더는 묻지 않을게. 하지만 정말 그렇다면, 할머니와 자주 대화를 나눠줘. 할머니는 주변에 온통 어린 사람들뿐이라, 네가 있어 주면 정말 기뻐할 거야",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_citlali_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105025,
+			"title": "얀사에 대해…",
+			"voicelineType": "4006",
+			"description": "불의 신님이 날 잡으러 얀사를 안 보내서 다행이야. 얀사는 곳곳에 이름을 날린 운동 코치인데, 내가 신장은 더 우세할지 몰라도, 얀사에게서 도망칠 수는 없을 거야. 속임수? 그건 너무 많이 쓰면 효과가 떨어져",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_iansan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105026,
+			"title": "마비카에 대해…",
+			"voicelineType": "4007",
+			"description": "나는 불의 신님을 몰랐어.\n내 말은, 불의 신님이 누구인지는 당연히 알지만, 실제로 대화를 나눠 본 「아는 사이」가 아니었다는 거야. 이전까지 내게 불의 신님은 힘이 각인된 토템 같았어. 모든 상황을 제어하는 상징적 표식이랄까. 그건 제대로 된 이해가 아니었기에, 나는 항상 의문을 품었어.\n지금은 그 의문이 많이 해소돼서 무척 기뻐. 한편으론 민망하고 부끄럽기도 해…. 그분은 한 번도 길을 잃은 적이 없으시고, 불꽃이 왜 오랫동안 타오르는지 알고 계셨어. 그래서 어떤 상황에서도 불이 꺼지지 않도록 하셨지. 나도… 나타 사람들을 도울 수 있는 존재가 되고 싶어.\n물론, 불의 신님에 관한 생각은 이게 다가 아니야…. 저번에 연회에서 그분이 녹색 채소를 많이 드시는 걸 봤어. 그것에 대해 이야기도 나눠봤는데, 균형 잡힌 영양 섭취를 좋아하신다더라. 불의 신님은 내 생각보다 훨씬 섬세한 분이셨어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_mavuika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105028,
+			"title": "올로룬에 대해 알기·첫 번째",
+			"voicelineType": "5001",
+			"description": "안녕, 악수할래? 나타 사람들은 인사할 때 보통 이렇게 격식을 차리진 않지만, 네가 원한다면 해도 좋아. 사실 그냥 멀리서 크게 외치는 정도면 충분해. 나는 청력이 좋으니까 알아챌 수 있어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_01"
+		},
+		{
+			"voicelineId": 105029,
+			"title": "올로룬에 대해 알기·두 번째",
+			"voicelineType": "5002",
+			"description": "너는 항상 바빠 보이네, 나도 너처럼 늘 할 일이 있으면 좋겠어. 그런데 또 가끔은 한가로운 시간이 좋기도 해. 사람의 마음은 참 갈대 같다니까. 나 자신도 제어할 수 없다니, 정말 곤란해",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.3 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105030,
+			"title": "올로룬에 대해 알기·세 번째",
+			"voicelineType": "5003",
+			"description": "낮의 나타는 많이 더워. 그러니까 꼭 필요한 경우가 아니면 나는 저녁에 외출하길 선호해. 밤의 수면을 본 적 있어? 물결이 달빛을 받아 반짝여서 정말 아름다운 장면을 자아내. 하지만 수면이 정말로 깨끗한지는 햇빛 아래서만 확인할 수 있으니, 밤의 어두컴컴한 물은 최대한 피하는 게 좋아",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.4 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105031,
+			"title": "올로룬에 대해 알기·네 번째",
+			"voicelineType": "5004",
+			"description": "나는 태생적으로 남들보다 강한 영혼 감지 능력을 가지고 있어. 뭐랄까… 사람의 영혼은 마치 변화무쌍한 에너지 덩어리 같아. 만약 세상에 다양한 형태의 꼬마 용 솜사탕이 있다면, 그게 바로 영혼의 모습일 거야. 그리고 네 영혼은 무척 따뜻한, 갓 만든 그런 종류고",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.5 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105032,
+			"title": "올로룬에 대해 알기·다섯 번째",
+			"voicelineType": "5005",
+			"description": "솔직히 나도 나 자신을 잘 모르겠어. 나는 늘 궁금한 게 많아. 갖고 있는 의문이 다 해결도 안 됐는데, 금세 또 새로운 의문이 생기지.\n특별한 해결 방법은 없는 것 같아…. 그저 최선을 다해 앞으로 나아갈 수밖에. 안 그래?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "호감도 Lv.6 달성 후 개방",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105033,
+			"title": "올로룬의 취미…",
+			"voicelineType": "6001",
+			"description": "야채 재배랑 꿀벌레 관찰 빼고? 있어. …당연히 있지. 조금만 시간을 줘. 분명 생각 날 거야",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_hobby"
+		},
+		{
+			"voicelineId": 105034,
+			"title": "올로룬의 고민…",
+			"voicelineType": "6012",
+			"description": "가끔은, 원하는 것과 할 수 있는 것 사이의 괴리감이 정말 크다고 느껴져",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_annoyed_01"
+		},
+		{
+			"voicelineId": 105035,
+			"title": "좋아하는 음식…",
+			"voicelineType": "6003",
+			"description": "나는 타코를 먹을 때 아래에 토르티야를 한 장 펼쳐 놔. 그러면 어느 정도 먹고 나서 흘러내린 재료로 새로운 타코를 만들 수 있거든",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_foodLike"
+		},
+		{
+			"voicelineId": 105036,
+			"title": "싫어하는 음식…",
+			"voicelineType": "6004",
+			"description": "군용 식품… 특히 건빵류. 마치 「카피타노」의 영혼처럼 묵직한 게… 품질은 우수하지만 너무 딱딱해",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_foodDislike",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "「타오를 운명의 무지개」 스토리 클리어",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105037,
+			"title": "선물 획득·첫 번째",
+			"voicelineType": "6007",
+			"description": "대단해, 내가 만든 것보다 훨씬 맛있어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_spice_pref_01"
+		},
+		{
+			"voicelineId": 105038,
+			"title": "선물 획득·두 번째",
+			"voicelineType": "6008",
+			"description": "부족하지도 과하지도 않은 딱 알맞은 맛이야",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_spice_normal_01"
+		},
+		{
+			"voicelineId": 105039,
+			"title": "선물 획득·세 번째",
+			"voicelineType": "6009",
+			"description": "잘 모르겠어…. 예술의 일종이야?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_spice_dislike_01"
+		},
+		{
+			"voicelineId": 105040,
+			"title": "생일…",
+			"voicelineType": "7001",
+			"description": "나타에서는 태어난 날이 그 사람의 운명을 결정짓는다는 설이 있어. 만약 그 사람이 어느 영웅과 같은 날에 태어났다면, 그 사람은 영웅의 가호를 받고 그와 동등한 자질을 갖추지.\n너와 생일이 같은 사람은 분명 엄청난 행운아일 거야. 생일 축하해",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 105041,
+			"title": "돌파의 느낌·기",
+			"voicelineType": "8001",
+			"description": "방금 나한테 준 거 뭐야? 다시 한번 봐도 될까?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「1」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105042,
+			"title": "돌파의 느낌·승",
+			"voicelineType": "8002",
+			"description": "너를 선생님이라고 불러야 할까? 고마워, 선생님 {M#할아버지}{F#할머니}. 덕분에 많이 배웠어",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_02b",
+			"voicefile_male": "VO_friendship/VO_olorun/vo_olorun_starUp_02a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「2」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105043,
+			"title": "돌파의 느낌·전",
+			"voicelineType": "8003",
+			"description": "몸이 가벼워, 단숨에 더 높은 곳에 뛰어오를 수 있을 거 같아. 하지만 힘 조절을 잘해야겠어, 머리를 부딪히면 아프니까",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「4」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105044,
+			"title": "돌파의 느낌·결",
+			"voicelineType": "8004",
+			"description": "아직 죽음의 경계를 엿볼 능력은 안 되지만, 네 덕분에 죽음을 더 멀리 밀어낸 것 같아. 이걸로 내 사리사욕을 채우는 나쁜 짓은 안 할 테니 안심해. 약속할게",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "돌파 Lv.「6」 달성 후 개방",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 105045,
+			"title": "원소전투 스킬·첫 번째",
+			"voicelineType": "100001",
+			"description": "너무 멀리 가진 마",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill1_01"
+		},
+		{
+			"voicelineId": 105046,
+			"title": "원소전투 스킬·두 번째",
+			"voicelineType": "100002",
+			"description": "잘 가",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill1_02"
+		},
+		{
+			"voicelineId": 105047,
+			"title": "원소전투 스킬·세 번째",
+			"voicelineType": "100003",
+			"description": "방생해 줄게",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill1_03"
+		},
+		{
+			"voicelineId": 105048,
+			"title": "원소폭발·첫 번째",
+			"voicelineType": "200001",
+			"description": "가, 넌 자유야",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill3_01"
+		},
+		{
+			"voicelineId": 105049,
+			"title": "원소폭발·두 번째",
+			"voicelineType": "200002",
+			"description": "자, 모두한테 인사해",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill3_02"
+		},
+		{
+			"voicelineId": 105050,
+			"title": "원소폭발·세 번째",
+			"voicelineType": "200003",
+			"description": "나 대신 잘 둘러봐 줘",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill3_03"
+		},
+		{
+			"voicelineId": 105051,
+			"title": "보물상자 오픈·첫 번째",
+			"voicelineType": "300001",
+			"description": "보물상자를 향한 네 열정이 이들의 생존 환경을 위협하고 있어",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_chest_open_01"
+		},
+		{
+			"voicelineId": 105052,
+			"title": "보물상자 오픈·두 번째",
+			"voicelineType": "300002",
+			"description": "두드려 보니 맑은 소리가 나, 훌륭한 과실이야",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_chest_open_02"
+		},
+		{
+			"voicelineId": 105053,
+			"title": "보물상자 오픈·세 번째",
+			"voicelineType": "300003",
+			"description": "조심해, 상자 안에 숨어 있길 좋아하는 용도 있거든. 내향적인 성격인가 봐",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_chest_open_03"
+		},
+		{
+			"voicelineId": 105054,
+			"title": "HP 부족·첫 번째",
+			"voicelineType": "410001",
+			"description": "더는 못 뛰겠어…",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_01"
+		},
+		{
+			"voicelineId": 105055,
+			"title": "HP 부족·두 번째",
+			"voicelineType": "410002",
+			"description": "경계해야 해…!",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_02"
+		},
+		{
+			"voicelineId": 105056,
+			"title": "HP 부족·세 번째",
+			"voicelineType": "410003",
+			"description": "나쁜 징조야",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_03"
+		},
+		{
+			"voicelineId": 105057,
+			"title": "동료 HP 감소·첫 번째",
+			"voicelineType": "400001",
+			"description": "의사한테 데려다줄까?",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 105058,
+			"title": "동료 HP 감소·두 번째",
+			"voicelineType": "400002",
+			"description": "일단 내가 나설게",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 105059,
+			"title": "전투 불능·첫 번째",
+			"voicelineType": "500001",
+			"description": "먼저 갈게…",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_die_01"
+		},
+		{
+			"voicelineId": 105060,
+			"title": "전투 불능·두 번째",
+			"voicelineType": "500002",
+			"description": "눈앞이 흐릿해…",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_die_02"
+		},
+		{
+			"voicelineId": 105061,
+			"title": "전투 불능·세 번째",
+			"voicelineType": "500003",
+			"description": "존재해선 안 될 목소리가… 들려…",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_die_03"
+		},
+		{
+			"voicelineId": 105062,
+			"title": "강공격 피격·첫 번째",
+			"voicelineType": "910001",
+			"description": "아, 늦었네…",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 105063,
+			"title": "강공격 피격·두 번째",
+			"voicelineType": "910002",
+			"description": "이건 좀…",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 105064,
+			"title": "파티 가입·첫 번째",
+			"voicelineType": "600001",
+			"description": "내가 필요해?",
+			"voicefile": "VO_teamJoin/vo_olorun_teamJoin_01"
+		},
+		{
+			"voicelineId": 105065,
+			"title": "파티 가입·두 번째",
+			"voicelineType": "600002",
+			"description": "어디 가?",
+			"voicefile": "VO_teamJoin/vo_olorun_teamJoin_02"
+		},
+		{
+			"voicelineId": 105066,
+			"title": "파티 가입·세 번째",
+			"voicelineType": "600003",
+			"description": "좋은 일인지 나쁜 일인지 먼저 알려주지 않을래?",
+			"voicefile": "VO_teamJoin/vo_olorun_teamJoin_03"
+		}
+	]
+}

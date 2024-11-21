@@ -1,0 +1,721 @@
+{
+	"id": 10000105,
+	"name": "Ororon",
+	"friendLines": [
+		{
+			"voicelineId": 105000,
+			"title": "Lần đầu gặp mặt...",
+			"voicelineType": "1006",
+			"description": "Xin chào, tôi là Ororon của Chủ Nhân Gió Đêm. Tôi không phải người bán rau, nhưng có thể tặng {F#cô}{M#cậu} một ít. Đừng lo, không có lý do gì đặc biệt cả, cũng không muốn đổi lấy thứ gì từ {F#cô}{M#cậu}. Tôi chỉ tò mò về kết quả sinh trưởng của mỗi hạt giống thôi, cho nên là càng trồng càng nhiều. Hy vọng rau của tôi sẽ đến được dạ dày của người thích chúng, thế là đủ.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_draw_appear_01"
+		},
+		{
+			"voicelineId": 105001,
+			"title": "Nói chuyện phiếm - Quái Nhân",
+			"voicelineType": "1101",
+			"description": "{F#Cô}{M#Cậu} nghe người ta nói người trong Chủ Nhân Gió Đêm đều là quái nhân sao? Tôi tưởng chỉ có mình tôi thôi chứ, còn ai nữa à?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_character_idle_01"
+		},
+		{
+			"voicelineId": 105002,
+			"title": "Nói chuyện phiếm - Mục Tiêu",
+			"voicelineType": "1102",
+			"description": "Mỗi người đều nên có một loại động vật, rau củ, hoặc là trái cây mà bản thân thích nhất. Như vậy mới biết mình muốn trở thành người như thế nào.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_character_idle_02"
+		},
+		{
+			"voicelineId": 105003,
+			"title": "Nói chuyện phiếm - Sương Mù",
+			"voicelineType": "1103",
+			"description": "Không phải tất cả con đường có sương mù đều có thể xuyên qua. Nếu như dã tâm quá lớn thì sẽ bị sương mù làm cho nghẹt thở.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_character_idle_03"
+		},
+		{
+			"voicelineId": 105004,
+			"title": "Khi trời mưa...",
+			"voicelineType": "1201",
+			"description": "Nếu đi dưới mưa thì bùn sẽ dính lên ống quần, còn bay thì... áo choàng sẽ thấm nước mà nặng hơn. Vẫn nên tìm chỗ nào đó ngồi một lúc đi.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_heavyRain_01"
+		},
+		{
+			"voicelineId": 105005,
+			"title": "Khi có sấm sét...",
+			"voicelineType": "1202",
+			"description": "Sấm sét rất giống loài rắn. Không biết có ai dùng màu sắc và hình dạng của chúng để xem bói không... Nói thật, tôi hơi lo cho sự an toàn của những người đó đấy.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_thunder_01"
+		},
+		{
+			"voicelineId": 105006,
+			"title": "Khi tuyết rơi...",
+			"voicelineType": "1203",
+			"description": "...Bên dưới lớp tuyết có chôn thứ gì đó. Nhẹ thôi, đừng đánh thức chúng.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_snowy_01"
+		},
+		{
+			"voicelineId": 105007,
+			"title": "Ánh nắng thật chan hòa...",
+			"voicelineType": "1204",
+			"description": "Mặt trời là ngọn lửa vĩnh hằng, người Natlan chưa từng sợ việc nhìn thẳng vào mặt trời. Đương nhiên, nếu thực sự không chịu nổi thì có thể đeo kính râm.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_sunny_01"
+		},
+		{
+			"voicelineId": 105008,
+			"title": "Khi trong sa mạc...",
+			"voicelineType": "1205",
+			"description": "Nơi này... cảm thấy rất khó để trồng được gì đó. Hay là đi thôi nhỉ?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_weather_desert_01"
+		},
+		{
+			"voicelineId": 105009,
+			"title": "Chào buổi sáng...",
+			"voicelineType": "1001",
+			"description": "Xin lỗi, tuy đang mở mắt, nhưng tôi vẫn chưa tỉnh ngủ... Chuyện chính có thể nói sau không?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingMorning"
+		},
+		{
+			"voicelineId": 105010,
+			"title": "Chào buổi trưa...",
+			"voicelineType": "1002",
+			"description": "Dạ dày nói là đã đến giờ rồi, nên đi ăn chút gì đó thôi. Nhưng tôi không nghĩ ra được là nên ăn gì... Cũng có thể là do đầu óc vẫn chưa tỉnh.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingNoon"
+		},
+		{
+			"voicelineId": 105011,
+			"title": "Chào buổi tối...",
+			"voicelineType": "1003",
+			"description": "Đột nhiên muốn uống cà phê sủi bọt vị Sen Đá Saurian quá, không cần thêm sữa. Hửm? {F#Cô}{M#Cậu} bảo là chỉ nên uống vào buổi sáng à? Vậy... Vậy thì chào buổi sáng.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingNight"
+		},
+		{
+			"voicelineId": 105012,
+			"title": "Chúc ngủ ngon...",
+			"voicelineType": "1004",
+			"description": "Mỗi khi đến lúc này là đầu óc tôi tỉnh táo hẳn ra. Tôi đã từ bỏ việc ép mình ngủ từ lâu rồi, cho nên {F#cô}{M#cậu} cứ nghỉ ngơi trước đi, tôi mang đèn đi xem mớ củ cải đã.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_greetingNight2"
+		},
+		{
+			"voicelineId": 105013,
+			"title": "Về bản thân Ororon - Giao Tiếp",
+			"voicelineType": "2001",
+			"description": "Tôi biết đôi khi lời mình nói rất khó hiểu. Nếu {F#cô}{M#cậu} có gì không hiểu thì cứ hỏi thẳng nhé, tôi không để bụng đâu.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_idle"
+		},
+		{
+			"voicelineId": 105014,
+			"title": "Về bản thân Ororon - Bí Ẩn Chưa Rõ",
+			"voicelineType": "2005",
+			"description": "Tôi không biết mình từ đâu đến, nhưng tôi cũng không tò mò lắm... So với chuyện này thì tôi muốn biết mình nên đi đâu hơn.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_idle2",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105015,
+			"title": "Về chúng ta - Xin Lỗi",
+			"voicelineType": "2003",
+			"description": "Xin lỗi... À ừm... Ý tôi là rất xin lỗi vì vừa gặp đã lừa dối {F#cô}{M#cậu}. Lý do thì tôi đã nói hết rồi, không có che giấu gì cả. Nếu {F#cô}{M#cậu} không muốn chấp nhận cũng không sao, tôi sẽ cố gắng không xuất hiện trước mặt {F#cô}{M#cậu}.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_close",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105016,
+			"title": "Về chúng ta - Quà Cảm Ơn",
+			"voicelineType": "2002",
+			"description": "Đây là Sen Đá Saurian hái lúc bốn giờ sáng, Quả Quenepa to hơn cả đầu, và loại mật ngọt nhất tính đến tuần trước... Còn có... À, phiếu khám miễn phí của Cacucu.\nSao lại tỏ ra nghi ngờ như vậy chứ? Những thứ này tặng cho {F#cô}{M#cậu} đó, xin hãy nhận lấy. {F#Cô}{M#Cậu} đã giúp tôi, nhưng trông {F#cô}{M#cậu} như không có thiếu gì cả, nên tôi đành chọn quà theo sở thích cá nhân.\nCacucu là ai à? Nó là Saurian. Khi nào có cơ hội thì tôi giới thiệu cho.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_close1",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105017,
+			"title": "Về Vision...",
+			"voicelineType": "3006",
+			"description": "Một số người nói rằng sét sẽ giúp cây trồng phát triển. Tôi đã thử sử dụng Vision của mình ở giữa vườn rau, nhưng bắp cải và cà chua không thích, vì vậy tôi đã bỏ cuộc.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_pendant_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105018,
+			"title": "Có gì muốn chia sẻ không...",
+			"voicelineType": "3002",
+			"description": "Một mẹo nhỏ: Đừng là người đầu tiên đưa ra ý kiến. Giống như quả chín đầu tiên sẽ là mục tiêu dễ bị nhắm đến nhất. Người đứng ra đầu tiên thường sẽ có kết cục không mấy suôn sẻ.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_share_01"
+		},
+		{
+			"voicelineId": 105019,
+			"title": "Những kiến thức thú vị...",
+			"voicelineType": "3003",
+			"description": "Thật ra sóc bay không phải lúc nào cũng kiêu hãnh khi có thể bay trên trời cao. Chúng sẽ đột nhiên bay đến, bám lấy chúng ta cho đến khi được thưởng... Nhìn từ góc độ nào đó thì đúng là một đám xảo quyệt mà.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_gift_01"
+		},
+		{
+			"voicelineId": 105020,
+			"title": "Về Xilonen...",
+			"voicelineType": "4001",
+			"description": "Hình như cô ấy rất thích ở trên cao, đặc biệt là trên cây. Theo kinh nghiệm của tôi, treo ngược bản thân trên cành cây sẽ thư giãn hơn là nằm trên đó. Khi có cơ hội tôi sẽ tìm cô ấy để chia sẻ kinh nghiệm với nhau. Mọi người luôn nói là phải nhìn thế giới theo góc độ khác, đối với nhà phát minh như Xilonen thì việc này lại còn cần thiết hơn nữa.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_xilonen_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105021,
+			"title": "Về Kinich...",
+			"voicelineType": "4002",
+			"description": "Ajaw đó rất thú vị. Nó lớn tuổi, nhưng cũng rất trẻ... Còn Kinich thì trẻ, nhưng lại trông khá già... {F#Cô}{M#Cậu} hiểu ý tôi mà đúng không?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_kinich_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105022,
+			"title": "Về Chasca...",
+			"voicelineType": "4003",
+			"description": "Chasca rất lợi hại, cũng rất nổi tiếng. Chỉ cần cô ấy đến thì mọi người đều sẽ không cãi nhau nữa, mà lại bắt tay nhau một cách hòa nhã. \"Răn đe bằng vũ lực\" hóa ra lại là cách tốt nhất để nói lý lẽ... Đúng là một cái tên hay mà.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_chasca_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105023,
+			"title": "Về Ifa...",
+			"voicelineType": "4004",
+			"description": "Đừng thấy Ifa thường xuyên giáo huấn bệnh nhân như thế mà hiểu lầm, mối quan hệ của anh ấy với đám Saurian thật ra rất tốt đấy. Khi rảnh rỗi, anh ấy sẽ đánh đàn trước cửa phòng khám, để những con Saurian vây quanh hát theo.\nNhưng thật ra chúng chỉ là kêu lên thôi. Nếu tôi gặp họ thì cũng sẽ tham gia đấy... Ý tôi là tham gia vào đám Saurian.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_ifa_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105024,
+			"title": "Về Citlali...",
+			"voicelineType": "4005",
+			"description": "Thật ra bà ấy là người rất thẳng thắn, vui hay không vui đều sẽ thể hiện ra bên ngoài, cũng không giỏi che giấu cảm xúc của mình. Trông tuổi tác của {F#cô}{M#cậu} khá tương đồng với bà ấy... Hoặc thậm chí là lớn hơn luôn nhỉ?\nXin lỗi, hỏi như vậy hình như không lịch sự lắm. Nhưng nếu thật sự là vậy thì phiền {F#cô}{M#cậu} nói chuyện với bà ấy nhiều hơn nhé. Bà ấy đã ngán việc bị vây quanh bởi các hậu bối rồi, gặp được {F#cô}{M#cậu} chắc sẽ rất vui.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_citlali_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105025,
+			"title": "Về Iansan...",
+			"voicelineType": "4006",
+			"description": "Chỉ có thể nói, may mà Hỏa Thần đại nhân không phái cô ấy đến bắt tôi. Cô ấy là huấn luyện viên thể thao nổi tiếng ở đây đó. Tuy tôi có lợi thế về chiều cao, nhưng rất có thể sẽ không chạy lại cô ấy. Thuật che mắt à? Trò này dùng nhiều sẽ không có tác dụng đâu.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_iansan_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105026,
+			"title": "Về Mavuika...",
+			"voicelineType": "4007",
+			"description": "Trước kia tôi không quen biết Hỏa Thần đại nhân.\nÝ là tôi đương nhiên biết Hỏa Thần là ai, nhưng không phải kiểu đã từng gặp mặt nói chuyện qua ấy. Trước đây, Hỏa Thần đại nhân giống như một vật tổ khắc chữ \"sức mạnh\" hơn, là biểu tượng của sức mạnh kiểm soát toàn cục. Tôi thì không hiểu rõ điều này lắm, nên cũng không đi sâu vào.\nBây giờ nghi vấn đã biến mất khá nhiều, tôi rất vui, cũng có chút bối rối và áy náy... Dường như cô ấy chưa từng lạc lối, và bản thân cũng biết rõ tại sao ngọn lửa lại bùng cháy, cho nên dù thế nào cũng không để nó bị dập tắt. Tôi hy vọng... hy vọng mình có thể trở thành người có ích cho Natlan.\nĐương nhiên, tôi vẫn còn kha khá thắc mắc về Hỏa Thần... Trong bữa tiệc lần trước tôi thấy cô ấy ăn rất nhiều rau cải. Khi tôi hỏi thăm thì cô ấy nói là bản thân rất thích chế độ dinh dưỡng cân bằng. Tôi cảm thấy cô ấy là một người tỉ mỉ hơn tôi nghĩ.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_teammate_mavuika_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105028,
+			"title": "Muốn tìm hiểu Ororon - Điều thứ 1",
+			"voicelineType": "5001",
+			"description": "Xin chào. Muốn bắt tay không? Người Natlan chào hỏi thường sẽ không trang trọng như vậy, nhưng nếu {F#cô}{M#cậu} muốn thì cũng được. Nhưng thực ra thì chỉ cần đứng từ xa gọi là được rồi, thính lực của tôi rất tốt, nên sẽ cảm nhận được thôi.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_01"
+		},
+		{
+			"voicelineId": 105029,
+			"title": "Muốn tìm hiểu Ororon - Điều thứ 2",
+			"voicelineType": "5002",
+			"description": "Hình như {F#cô}{M#cậu} lúc nào cũng bận rộn nhỉ. Tôi cũng muốn như {F#cô}{M#cậu}, lúc nào cũng có việc để làm. Nhưng đôi khi tôi lại rất thích cuộc sống nhàn nhã. Tâm trạng của con người thay đổi nhiều thật đấy, bản thân tôi cũng không thể kiểm soát được, thật là khó xử mà.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_02",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 3",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						3
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105030,
+			"title": "Muốn tìm hiểu Ororon - Điều thứ 3",
+			"voicelineType": "5003",
+			"description": "Natlan ban ngày rất nóng, nên trừ khi cần thiết thì tôi thích ra ngoài vào buổi tối hơn. {F#Cô}{M#Cậu} đã từng thấy mặt nước vào ban đêm chưa? Ánh trăng khiến sóng nước lấp lánh, trông rất trong trẻo, nhưng chỉ khi ở dưới ánh mặt trời thì mới biết được nó có sạch hay không. Vì vậy, tôi sẽ tránh chạm vào làn nước đen kịt đó trong đêm.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 4",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105031,
+			"title": "Muốn tìm hiểu Ororon - Điều thứ 4",
+			"voicelineType": "5004",
+			"description": "Tôi bẩm sinh có khả năng cảm nhận linh hồn mạnh hơn người khác. Nói thế nào nhỉ... Linh hồn con người có phần giống như một khối năng lượng khó đoán, giống như kẹo bông gòn Saurian có đủ loại hình dạng vậy. Linh hồn của {F#cô}{M#cậu} rất ấm áp, như thể được hơ nhẹ qua ngọn lửa vậy.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 5",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						5
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105032,
+			"title": "Muốn tìm hiểu Ororon - Điều thứ 5",
+			"voicelineType": "5005",
+			"description": "Nói thật thì tôi cũng có nhiều thứ không hiểu rõ về bản thân. Tôi luôn có rất nhiều câu hỏi, cái cũ chưa kịp giải quyết thì cái mới lại kéo đến.\nNhưng cũng không có cách giải quyết nhanh chóng nào cho tình huống này nhỉ... Cứ tiếp tục tiến về phía trước thôi, đúng không?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_friendship_05",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi cấp Yêu Thích đạt cấp 6",
+					"conditionType": "FETTER_COND_FETTER_LEVEL",
+					"paramList": [
+						6
+					]
+				},
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105033,
+			"title": "Sở thích của Ororon...",
+			"voicelineType": "6001",
+			"description": "Ngoài việc trồng rau và quan sát bọ ra thì còn những sở thích nào à? Đương nhiên là có rồi... À ừm, cho tôi chút thời gian, tôi sẽ nghĩ ra thôi.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_hobby"
+		},
+		{
+			"voicelineId": 105034,
+			"title": "Nỗi buồn của Ororon...",
+			"voicelineType": "6012",
+			"description": "Đôi khi, khoảng cách giữa muốn và làm thật sự rất khó vượt qua.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_dialog_annoyed_01"
+		},
+		{
+			"voicelineId": 105035,
+			"title": "Món ăn yêu thích...",
+			"voicelineType": "6003",
+			"description": "Khi ăn Tatacos thì tôi sẽ đặt miếng vỏ bánh bên dưới. Chỉ cần ăn đủ nhiều thì vụn bánh rơi ra cũng sẽ trở thành cái Tatacos mới.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_foodLike"
+		},
+		{
+			"voicelineId": 105036,
+			"title": "Món ăn ghét...",
+			"voicelineType": "6004",
+			"description": "Thực phẩm quân dụng... đặc biệt là bánh quy nén. Chúng nặng nề như linh hồn của Capitano vậy... Chất lượng rất tốt, chỉ là cứng quá thôi.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_foodDislike",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Hoàn thành cốt truyện \"Cầu Vồng Định Sẵn Sẽ Cháy\"",
+					"conditionType": "FETTER_COND_FINISH_PARENT_QUEST",
+					"paramList": [
+						5014
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105037,
+			"title": "Nhận Được Quà I",
+			"voicelineType": "6007",
+			"description": "Lợi hại, còn ngon hơn tôi tự làm đấy.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_spice_pref_01"
+		},
+		{
+			"voicelineId": 105038,
+			"title": "Nhận Được Quà II",
+			"voicelineType": "6008",
+			"description": "Không nhiều không ít, mùi vị vừa đủ.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_spice_normal_01"
+		},
+		{
+			"voicelineId": 105039,
+			"title": "Nhận Được Quà III",
+			"voicelineType": "6009",
+			"description": "Tôi không hiểu lắm... Đây là nghệ thuật gì vậy?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_spice_dislike_01"
+		},
+		{
+			"voicelineId": 105040,
+			"title": "Sinh nhật...",
+			"voicelineType": "7001",
+			"description": "Có một câu nói ở Natlan là ngày sinh của một người sẽ quyết định vận mệnh của họ. Nếu có ngày sinh nhật trùng với vị anh hùng nào đó, vậy thì sẽ có phẩm chất giống vị anh hùng đó, và được vị ấy phù hộ đấy.\nTôi nghĩ, người cùng chia sẻ ngày sinh nhật với {F#cô}{M#cậu} nhất định sẽ rất may mắn. Chúc mừng sinh nhật.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_pref_birthday_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"conditionType": "FETTER_COND_PLAYER_BIRTHDAY",
+					"paramList": []
+				}
+			]
+		},
+		{
+			"voicelineId": 105041,
+			"title": "Cảm Giác Đột Phá - Khởi",
+			"voicelineType": "8001",
+			"description": "{F#Cô}{M#Cậu} vừa đưa tôi cái gì vậy? Có thể cho tôi xem lại không?",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_01",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [1]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						1
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105042,
+			"title": "Cảm Giác Đột Phá - Thừa",
+			"voicelineType": "8002",
+			"description": "Có phải tôi nên gọi {F#cô}{M#cậu} một tiếng sư phụ không? Cảm ơn nhé.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_02b",
+			"voicefile_male": "VO_friendship/VO_olorun/vo_olorun_starUp_02a",
+			"hasGenderedVoicefile": true,
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [2]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						2
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105043,
+			"title": "Cảm Giác Đột Phá - Chuyển",
+			"voicelineType": "8003",
+			"description": "Cơ thể rất nhẹ nhàng, xem ra tôi có thể nhanh chóng đến được nơi cao hơn rồi. Nhưng cũng phải khống chế sức mạnh, bởi vì té đập đầu sẽ rất đau đấy.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_03",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [4]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						4
+					]
+				}
+			]
+		},
+		{
+			"voicelineId": 105044,
+			"title": "Cảm Giác Đột Phá - Hợp",
+			"voicelineType": "8004",
+			"description": "Tôi chưa có khả năng nhìn thấu giới hạn của cái chết, nhưng sự giúp đỡ của {F#cô}{M#cậu} dường như đã đẩy cái chết đi xa hơn một chút. Yên tâm, tôi sẽ không lợi dụng điều đó để làm bất kỳ điều vô trách nhiệm nào đâu. Tôi đảm bảo đấy.",
+			"voicefile": "VO_friendship/VO_olorun/vo_olorun_starUp_04",
+			"hasUnlockConditions": true,
+			"unlockConditions": [
+				{
+					"unlockText": "Mở sau khi đột phá cấp [6]",
+					"conditionType": "FETTER_COND_AVATAR_PROMOTE_LEVEL",
+					"paramList": [
+						6
+					]
+				}
+			]
+		}
+	],
+	"actionLines": [
+		{
+			"voicelineId": 105045,
+			"title": "Kỹ Năng Nguyên Tố I",
+			"voicelineType": "100001",
+			"description": "Đừng chạy xa quá.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill1_01"
+		},
+		{
+			"voicelineId": 105046,
+			"title": "Kỹ Năng Nguyên Tố II",
+			"voicelineType": "100002",
+			"description": "Tạm biệt nhé.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill1_02"
+		},
+		{
+			"voicelineId": 105047,
+			"title": "Kỹ Năng Nguyên Tố III",
+			"voicelineType": "100003",
+			"description": "Phóng sinh!",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill1_03"
+		},
+		{
+			"voicelineId": 105048,
+			"title": "Kỹ Năng Nộ I",
+			"voicelineType": "200001",
+			"description": "Đi đi, ngươi tự do rồi.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill3_01"
+		},
+		{
+			"voicelineId": 105049,
+			"title": "Kỹ Năng Nộ II",
+			"voicelineType": "200002",
+			"description": "Chào mọi người nào.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill3_02"
+		},
+		{
+			"voicelineId": 105050,
+			"title": "Kỹ Năng Nộ III",
+			"voicelineType": "200003",
+			"description": "Giúp ta đi xung quanh xem thử đi.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_skill3_03"
+		},
+		{
+			"voicelineId": 105051,
+			"title": "Mở Rương I",
+			"voicelineType": "300001",
+			"description": "Sự nhiệt tình của {F#cô}{M#cậu} đối với rương báu đang khiến chúng có nguy cơ tuyệt chủng đấy.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_chest_open_01"
+		},
+		{
+			"voicelineId": 105052,
+			"title": "Mở Rương II",
+			"voicelineType": "300002",
+			"description": "Có thể nhận biết quả nào đã chín bằng cách lắng nghe âm thanh phát ra khi gõ vào chúng.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_chest_open_02"
+		},
+		{
+			"voicelineId": 105053,
+			"title": "Mở Rương III",
+			"voicelineType": "300003",
+			"description": "Cẩn thận nhé, có một số Saurian thích trốn trong rương. Có thể nó hướng nội đấy.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_chest_open_03"
+		},
+		{
+			"voicelineId": 105054,
+			"title": "HP Thấp I",
+			"voicelineType": "410001",
+			"description": "Chạy không nổi nữa rồi...",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_01"
+		},
+		{
+			"voicelineId": 105055,
+			"title": "HP Thấp II",
+			"voicelineType": "410002",
+			"description": "Không ổn rồi...!",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_02"
+		},
+		{
+			"voicelineId": 105056,
+			"title": "HP Thấp III",
+			"voicelineType": "410003",
+			"description": "Điềm xấu.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_03"
+		},
+		{
+			"voicelineId": 105057,
+			"title": "HP Đồng Hành Thấp I",
+			"voicelineType": "400001",
+			"description": "Có cần tôi đưa đi khám bác sĩ không?",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_teammate_01"
+		},
+		{
+			"voicelineId": 105058,
+			"title": "HP Đồng Hành Thấp II",
+			"voicelineType": "400002",
+			"description": "Để tôi thay thế cho.",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_less30_teammate_02"
+		},
+		{
+			"voicelineId": 105059,
+			"title": "Ngã Xuống I",
+			"voicelineType": "500001",
+			"description": "Tôi đi trước đây...",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_die_01"
+		},
+		{
+			"voicelineId": 105060,
+			"title": "Ngã Xuống II",
+			"voicelineType": "500002",
+			"description": "Nhìn không rõ nữa rồi...",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_die_02"
+		},
+		{
+			"voicelineId": 105061,
+			"title": "Ngã Xuống III",
+			"voicelineType": "500003",
+			"description": "Nghe thấy rồi... Những âm thanh không nên tồn tại...",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_life_die_03"
+		},
+		{
+			"voicelineId": 105062,
+			"title": "Bị Trọng Kích I",
+			"voicelineType": "910001",
+			"description": "Chậc, chậm rồi...",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_hit_H_01"
+		},
+		{
+			"voicelineId": 105063,
+			"title": "Bị Trọng Kích II",
+			"voicelineType": "910002",
+			"description": "Có gì đó không đúng...",
+			"voicefile": "VO_gameplay/VO_olorun/vo_olorun_battle_hit_H_02"
+		},
+		{
+			"voicelineId": 105064,
+			"title": "Vào Đội I",
+			"voicelineType": "600001",
+			"description": "Muốn tôi tham gia sao?",
+			"voicefile": "VO_teamJoin/vo_olorun_teamJoin_01"
+		},
+		{
+			"voicelineId": 105065,
+			"title": "Vào Đội II",
+			"voicelineType": "600002",
+			"description": "Đi đâu đây?",
+			"voicefile": "VO_teamJoin/vo_olorun_teamJoin_02"
+		},
+		{
+			"voicelineId": 105066,
+			"title": "Vào Đội III",
+			"voicelineType": "600003",
+			"description": "Có thể nói trước là chuyện tốt hay chuyện xấu không?",
+			"voicefile": "VO_teamJoin/vo_olorun_teamJoin_03"
+		}
+	]
+}

@@ -160,10 +160,15 @@ async function getCharList(region) {
 			res.on('data', function(chunk) { data += chunk;	});
 			res.on('end', function() {
 				// TODO: hoyo changes to not using SSR so this doesn't work anymore :(
-				const regex = /<div data-server-rendered="true".*?window.*?=(.*?)</gm;
-				const found = regex.exec(data);
-				const charList = eval(found[1]).data[0].charList;
-				resolve(charList);
+				// get list of characters
+				const characters = [];
+				console.log(data);
+				const regex = /<ul .*?character__page--render.*?>(.*?)<\/ul>/gm;
+				const charactersListHtml = regex.exec(data);
+				// :( need puppeteer so we can grab html after it finishes loading
+				console.log(charactersListHtml)
+				// const charList = eval(found[1]).data[0].charList;
+				resolve(charactersListHtml);
 			});
 		}).on('error', function() {
 			console.log('error');
