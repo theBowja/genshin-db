@@ -225,7 +225,7 @@ function getPromotionBonus(promotions, level, ascension) {
 
 function setAttributesTalent(data, filename) {
     const myparams = getStats('talents', filename);
-    for(const prop of ['combat1', 'combat2', 'combatsp', 'combat3']) {
+    for(const prop of ['combat1', 'combat2', 'combatsp', 'combatju', 'combat3']) {
         if(myparams[prop] === undefined) continue;
         data[prop].attributes.parameters = myparams[prop];
     }

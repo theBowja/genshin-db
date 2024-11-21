@@ -522,7 +522,7 @@ function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipim
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "5.1"; // new data will use this as added version
+gameVersion = "5.2"; // new data will use this as added version
 
 // importData('characters');
 // importCurve('characters');

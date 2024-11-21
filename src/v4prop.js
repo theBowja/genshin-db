@@ -153,7 +153,7 @@ function maptalents(v5data) {
 	return { 
 		id: v5data.id,
 		name: v5data.name,
-		...['combat1', 'combat2', 'combatsp', 'combat3'].reduce((accum, combat) => {
+		...['combat1', 'combat2', 'combatsp', 'combatju', 'combat3'].reduce((accum, combat) => {
 			if (v5data[combat]) {
 				accum[combat] = {
 					name: v5data[combat].name,
@@ -179,6 +179,7 @@ function maptalents(v5data) {
 			combat1: v5data.images.filename_combat1,
 			combat2: v5data.images.filename_combat2,
 			combatsp: v5data.images.filename_combatsp,
+			combatju: v5data.images.filename_combatju,
 			combat3: v5data.images.filename_combat3,
 			passive1: v5data.images.filename_passive1,
 			passive2: v5data.images.filename_passive2,

@@ -5,6 +5,7 @@ declare module "genshin-db" {
 		combat1: CombatTalentDetail;
 		combat2: CombatTalentDetail;
 		combatsp?: CombatTalentDetail; // for mona/ayaka
+		combatju?: CombatTalentDetail; // for ororon
 		combat3: CombatTalentDetail;
 		passive1: PassiveTalentDetail;
 		passive2: PassiveTalentDetail;
@@ -25,6 +26,7 @@ declare module "genshin-db" {
 			filename_combat1: string;
 			filename_combat2: string;
 			filename_combatsp?: string; // for mona/ayaka
+			filename_combatju?: string; // for ororon
 			filename_combat3: string;
 			filename_passive1: string;
 			filename_passive2: string;
