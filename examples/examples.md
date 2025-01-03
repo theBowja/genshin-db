@@ -39,19 +39,20 @@ const genshindb = require('genshin-db');
   'Arlecchino',         'Baizhu',           'Barbara',
   'Beidou',             'Bennett',          'Candace',
   'Charlotte',          'Chasca',           'Chevreuse',
-  'Chiori',             'Chongyun',         'Clorinde',
-  'Collei',             'Cyno',             'Dehya',
-  'Diluc',              'Diona',            'Dori',
-  'Emilie',             'Eula',             'Faruzan',
-  'Fischl',             'Freminet',         'Furina',
-  'Gaming',             'Ganyu',            'Gorou',
-  'Hu Tao',             'Jean',             'Kachina',
-  'Kaedehara Kazuha',   'Kaeya',            'Kamisato Ayaka',
-  'Kamisato Ayato',     'Kaveh',            'Keqing',
-  'Kinich',             'Kirara',           'Klee',
-  'Kujou Sara',         'Kuki Shinobu',     'Layla',
-  'Lisa',               'Lumine',           'Lynette',
-  'Lyney',              'Mika',             'Mona',
+  'Chiori',             'Chongyun',         'Citlali',
+  'Clorinde',           'Collei',           'Cyno',
+  'Dehya',              'Diluc',            'Diona',
+  'Dori',               'Emilie',           'Eula',
+  'Faruzan',            'Fischl',           'Freminet',
+  'Furina',             'Gaming',           'Ganyu',
+  'Gorou',              'Hu Tao',           'Jean',
+  'Kachina',            'Kaedehara Kazuha', 'Kaeya',
+  'Kamisato Ayaka',     'Kamisato Ayato',   'Kaveh',
+  'Keqing',             'Kinich',           'Kirara',
+  'Klee',               'Kujou Sara',       'Kuki Shinobu',
+  'Lan Yan',            'Layla',            'Lisa',
+  'Lumine',             'Lynette',          'Lyney',
+  'Mavuika',            'Mika',             'Mona',
   'Mualani',            'Nahida',           'Navia',
   'Neuvillette',        'Nilou',            'Ningguang',
   'Noelle',             'Ororon',           'Qiqi',
@@ -649,14 +650,14 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Amber',   'Arlecchino',
-  'Bennett', 'Chevreuse',
-  'Dehya',   'Diluc',
-  'Gaming',  'Hu Tao',
-  'Klee',    'Lyney',
-  'Thoma',   'Xiangling',
-  'Xinyan',  'Yanfei',
-  'Yoimiya'
+  'Amber',     'Arlecchino',
+  'Bennett',   'Chevreuse',
+  'Dehya',     'Diluc',
+  'Gaming',    'Hu Tao',
+  'Klee',      'Lyney',
+  'Mavuika',   'Thoma',
+  'Xiangling', 'Xinyan',
+  'Yanfei',    'Yoimiya'
 ]
 ```
 
@@ -666,16 +667,13 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Baizhu',    'Beidou',
-  'Chongyun',  'Gaming',
-  'Ganyu',     'Hu Tao',
-  'Keqing',    'Ningguang',
-  'Qiqi',      'Shenhe',
-  'Xiangling', 'Xianyun',
-  'Xiao',      'Xingqiu',
-  'Xinyan',    'Yanfei',
-  'Yaoyao',    'Yelan',
-  'Yun Jin',   'Zhongli'
+  'Baizhu',  'Beidou',  'Chongyun',
+  'Gaming',  'Ganyu',   'Hu Tao',
+  'Keqing',  'Lan Yan', 'Ningguang',
+  'Qiqi',    'Shenhe',  'Xiangling',
+  'Xianyun', 'Xiao',    'Xingqiu',
+  'Xinyan',  'Yanfei',  'Yaoyao',
+  'Yelan',   'Yun Jin', 'Zhongli'
 ]
 ```
 
@@ -773,18 +771,19 @@ const genshindb = require('genshin-db');
   'Baizhu',            'Barbara',            'Beidou',
   'Bennett',           'Candace',            'Charlotte',
   'Chasca',            'Chevreuse',          'Chiori',
-  'Chongyun',          'Clorinde',           'Collei',
-  'Cyno',              'Dehya',              'Diluc',
-  'Diona',             'Dori',               'Emilie',
-  'Eula',              'Faruzan',            'Fischl',
-  'Freminet',          'Furina',             'Gaming',
-  'Ganyu',             'Gorou',              'Hu Tao',
-  'Jean',              'Kachina',            'Kaedehara Kazuha',
-  'Kaeya',             'Kamisato Ayaka',     'Kamisato Ayato',
-  'Kaveh',             'Keqing',             'Kinich',
-  'Kirara',            'Klee',               'Kujou Sara',
-  'Kuki Shinobu',      'Layla',              'Lisa',
-  'Lynette',           'Lyney',              'Mika',
+  'Chongyun',          'Citlali',            'Clorinde',
+  'Collei',            'Cyno',               'Dehya',
+  'Diluc',             'Diona',              'Dori',
+  'Emilie',            'Eula',               'Faruzan',
+  'Fischl',            'Freminet',           'Furina',
+  'Gaming',            'Ganyu',              'Gorou',
+  'Hu Tao',            'Jean',               'Kachina',
+  'Kaedehara Kazuha',  'Kaeya',              'Kamisato Ayaka',
+  'Kamisato Ayato',    'Kaveh',              'Keqing',
+  'Kinich',            'Kirara',             'Klee',
+  'Kujou Sara',        'Kuki Shinobu',       'Lan Yan',
+  'Layla',             'Lisa',               'Lynette',
+  'Lyney',             'Mavuika',            'Mika',
   'Mona',              'Mualani',            'Nahida',
   'Navia',             'Neuvillette',        'Nilou',
   'Ningguang',         'Noelle',             'Ororon',
@@ -794,12 +793,12 @@ const genshindb = require('genshin-db');
   'Sigewinne',         'Sucrose',            'Tartaglia',
   'Thoma',             'Tighnari',           'Traveler (Anemo)',
   'Traveler (Dendro)', 'Traveler (Electro)', 'Traveler (Geo)',
-  'Traveler (Hydro)',  'Venti',              'Wanderer',
-  'Wriothesley',       'Xiangling',          'Xianyun',
-  'Xiao',              'Xilonen',            'Xingqiu',
-  'Xinyan',            'Yae Miko',           'Yanfei',
-  'Yaoyao',            'Yelan',              'Yoimiya',
-  'Yun Jin',           'Zhongli'
+  'Traveler (Hydro)',  'Traveler (Pyro)',    'Venti',
+  'Wanderer',          'Wriothesley',        'Xiangling',
+  'Xianyun',           'Xiao',               'Xilonen',
+  'Xingqiu',           'Xinyan',             'Yae Miko',
+  'Yanfei',            'Yaoyao',             'Yelan',
+  'Yoimiya',           'Yun Jin',            'Zhongli'
 ]
 ```
 
@@ -1620,6 +1619,7 @@ const genshindb = require('genshin-db');
   'Aquila Favonia',
   'Ash-Graven Drinking Horn',
   "Astral Vulture's Crimson Plumage",
+  'A Thousand Blazing Suns',
   'A Thousand Floating Dreams',
   'Ballad of the Boundless Blue',
   'Ballad of the Fjords',
@@ -1709,8 +1709,7 @@ const genshindb = require('genshin-db');
   'Mappa Mare',
   'Memory of Dust',
   'Messenger',
-  'Missive Windspear',
-  ... 105 more items
+  ... 107 more items
 ]
 ```
 
@@ -2520,6 +2519,7 @@ const genshindb = require('genshin-db');
   'Butter Crab',
   'Chicken Tofu Pudding',
   'Chili-Mince Cornbread Buns',
+  'Drunken Plums in Snow',
   'Eight-Treasure Duck',
   'Fontinalia Mousse',
   'Glittering Gemstones',
@@ -2560,6 +2560,7 @@ const genshindb = require('genshin-db');
   'Chili-Mince Cornbread Buns',
   'Conch Madeleine',
   'Dew-Dipped Shrimp',
+  'Drunken Plums in Snow',
   'Eight-Treasure Duck',
   "Feast-O's",
   "Fisherman's Toast",
@@ -2987,6 +2988,7 @@ const genshindb = require('genshin-db');
   'Jadeplume Terrorshroom',
   'La Signora',
   'Legatus Golem',
+  'Lord of Eroded Primal Fire',
   'Lupus Boreas, Dominator of Wolves',
   'Magatsu Mitake Narukami no Mikoto',
   'Maguu Kenki',
@@ -3005,7 +3007,8 @@ const genshindb = require('genshin-db');
   'Stormterror',
   'Tenebrous Papilla: Type I',
   'The Knave',
-  'Thunder Manifestation'
+  'Thunder Manifestation',
+  'Wayward Hermetic Spiritspeaker'
 ]
 ```
 
