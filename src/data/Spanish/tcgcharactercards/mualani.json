@@ -1,0 +1,79 @@
+{
+	"id": 1214,
+	"name": "Mualani",
+	"shareid": 444,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Hydro",
+		"Catalizador",
+		"Natlan"
+	],
+	"storytitle": "Mualani - La Cabalgadora de Olas Rugientes",
+	"storytext": "Cabalgando sobre las olas de manantiales interminables.",
+	"source": "Se obtiene tras retar y ganar a Mualani en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 12141,
+			"name": "Refrescamiento",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12142,
+			"name": "Escualosurf rompeolas",
+			"descriptionraw": "Se equipa la carta de <color=#FFFFFFFF>$[C112142]</color> y entra en el estado de <color=#FFFFFFFF>$[C112141|s1]</color>. Además, obtiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color> (cuando el personaje entre en el estado de <color=#FFFFFFFF>$[C112141|s1]</color>, no podrá volver a usar esta habilidad).\\nLos personajes que estén en el estado de $[C112141|s1] pueden usar la técnica especial: <color=#FFFFFFFF>$[S1121422]</color>.",
+			"descriptionreplaced": "Se equipa la carta de <color=#FFFFFFFF>Mordisco de tiburón</color> y entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color>. Además, obtiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color> (cuando el personaje entre en el estado de <color=#FFFFFFFF>bendición noctámbula</color>, no podrá volver a usar esta habilidad).\\nLos personajes que estén en el estado de bendición noctámbula pueden usar la técnica especial: <color=#FFFFFFFF>Escualotabla de surf</color>.",
+			"description": "Se equipa la carta de Mordisco de tiburón y entra en el estado de bendición noctámbula. Además, obtiene 2 pts. de noctambulismo (cuando el personaje entre en el estado de bendición noctámbula, no podrá volver a usar esta habilidad).\nLos personajes que estén en el estado de bendición noctámbula pueden usar la técnica especial: Escualotabla de surf.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12143,
+			"name": "Misil acuaexplosivo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca un <color=#FFFFFFFF>$[C112144|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> e invoca un <color=#FFFFFFFF>escualoproyectil</color>.",
+			"description": "Inflige 2 pts. de Daño Hydro e invoca un escualoproyectil.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

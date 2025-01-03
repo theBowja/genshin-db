@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Clorinde",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"ธาตุไฟฟ้า",
+		"ดาบ",
+		"Fontaine",
+		"พลังปฐมภูมิ: สสาร"
+	],
+	"storytitle": "ล่าเงาพิทักษ์ราตรี - Clorinde",
+	"storytext": "ล่าเงาปีศาจ พิทักษ์รัตติกาล",
+	"source": "ได้รับหลังจากเชิญ Clorinde ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Oath of Hunting Shadows",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย หากตัวละครนี้ได้รับ <color=#FFFFFFFF>$[C114121]</color> สกิลนี้จะใช้$[K309]น้อยลง 1 ลูก",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 1 หน่วย หากตัวละครนี้ได้รับ <color=#FFFFFFFF>Night Vigil</color> สกิลนี้จะใช้<color=#FFFFFFFF>{SPRITE_PRESET#1109}ธาตุไร้สี</color>น้อยลง 1 ลูก",
+			"description": "สร้างความเสียหายกายภาพ 1 หน่วย หากตัวละครนี้ได้รับ Night Vigil สกิลนี้จะใช้ธาตุไร้สีน้อยลง 1 ลูก",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Hunter's Vigil",
+			"descriptionraw": "ตนเองได้รับ <color=#FFFFFFFF>$[C114121]</color> และลบล้าง <color=#FFFFFFFF>$[C122]</color> ทั้งหมดของตัวเอง จากนั้นสร้าง $[D__KEY__ELEMENT] ตามจำนวนชั้นที่ถูกลบล้าง และรักษาตัวเอง (ความเสียหายและการรักษาสูงสุด 4 หน่วย)",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "ตนเองได้รับ <color=#FFFFFFFF>Night Vigil</color> และลบล้าง <color=#FFFFFFFF>บ่วงพันธะชีวัน</color> ทั้งหมดของตัวเอง จากนั้นสร้าง {SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> ตามจำนวนชั้นที่ถูกลบล้าง และรักษาตัวเอง (ความเสียหายและการรักษาสูงสุด 4 หน่วย)",
+			"description": "ตนเองได้รับ Night Vigil และลบล้าง บ่วงพันธะชีวัน ทั้งหมดของตัวเอง จากนั้นสร้าง ความเสียหายไฟฟ้า ตามจำนวนชั้นที่ถูกลบล้าง และรักษาตัวเอง (ความเสียหายและการรักษาสูงสุด 4 หน่วย)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Last Lightfall",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และตัวเองได้รับ <color=#FFFFFFFF>$[C122]</color> 4 ชั้น",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2104}<color=#FFACFFFF>ความเสียหายไฟฟ้า</color> 3 หน่วย และตัวเองได้รับ <color=#FFFFFFFF>บ่วงพันธะชีวัน</color> 4 ชั้น",
+			"description": "สร้างความเสียหายไฟฟ้า 3 หน่วย และตัวเองได้รับ บ่วงพันธะชีวัน 4 ชั้น",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

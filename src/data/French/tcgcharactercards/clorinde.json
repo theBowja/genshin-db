@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Clorinde",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Électro",
+		"Épée à une main",
+		"Fontaine",
+		"Arkhe : Ousia"
+	],
+	"storytitle": "Clorinde · Porteuse de bougie et chasseuse d'ombres",
+	"storytext": "Pourfendeuse de fantômes, protégeant la longue nuit...",
+	"source": "Récompense pour avoir invité Clorinde à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Crédo des ombres chasseuses",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT]. Si le personnage est sous l'effet d'une <color=#FFFFFFFF>$[C114121|s1]</color>, cette capacité dépense 1 dé $[K309|s2] en moins.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>. Si le personnage est sous l'effet d'une <color=#FFFFFFFF>vigile nocturne</color>, cette capacité dépense 1 dé <color=#FFFFFFFF>{SPRITE_PRESET#1109}élément neutre</color> en moins.",
+			"description": "Inflige 1 pt de DGT physiques. Si le personnage est sous l'effet d'une vigile nocturne, cette capacité dépense 1 dé élément neutre en moins.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Ronde de la nuitée",
+			"descriptionraw": "Applique une <color=#FFFFFFFF>$[C114121|s1]</color> au personnage et annule tout son <color=#FFFFFFFF>$[C122|s1]</color>, puis inflige des $[D__KEY__ELEMENT] et soigne le personnage selon la quantité de cumuls annulés. (Maximum 4 pts de DGT et de soins)",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Applique une <color=#FFFFFFFF>vigile nocturne</color> au personnage et annule tout son <color=#FFFFFFFF>engagement vital</color>, puis inflige des {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et soigne le personnage selon la quantité de cumuls annulés. (Maximum 4 pts de DGT et de soins)",
+			"description": "Applique une vigile nocturne au personnage et annule tout son engagement vital, puis inflige des DGT Électro et soigne le personnage selon la quantité de cumuls annulés. (Maximum 4 pts de DGT et de soins)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Fin de la clarté",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et applique 4 cumuls d'<color=#FFFFFFFF>$[C122|s1]</color> au personnage.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2104}<color=#FFACFFFF>DGT Électro</color> et applique 4 cumuls d'<color=#FFFFFFFF>engagement vital</color> au personnage.",
+			"description": "Inflige 3 pts de DGT Électro et applique 4 cumuls d'engagement vital au personnage.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

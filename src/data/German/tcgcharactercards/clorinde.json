@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Clorinde",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Elektro",
+		"Einhänder",
+		"Fontaine",
+		"Arkhe: Ousia"
+	],
+	"storytitle": "Kerzenträgerin, Häscherin der Schatten – Clorinde",
+	"storytext": "Bezwingerin der Phantome, Wächterin der Nacht",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Clorinde in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Eid der Schattenjäger",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Wenn die Figur mit <color=#FFFFFFFF>$[C114121]</color> ausgerüstet ist, wird für diese Fähigkeit 1 $[K309] weniger verbraucht.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>. Wenn die Figur mit <color=#FFFFFFFF>Nachtpatrouille</color> ausgerüstet ist, wird für diese Fähigkeit 1 <color=#FFFFFFFF>{SPRITE_PRESET#1109}Würfel (beliebig)</color> weniger verbraucht.",
+			"description": "Verursacht 1 Pkt. phys. SCH. Wenn die Figur mit Nachtpatrouille ausgerüstet ist, wird für diese Fähigkeit 1 Würfel (beliebig) weniger verbraucht.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Nächtliche Jagd",
+			"descriptionraw": "Verleiht sich selbst <color=#FFFFFFFF>$[C114121]</color> und entfernt sämtlichen eigenen <color=#FFFFFFFF>$[C122]</color>. Verursacht anschließend basierend auf den entfernten Stapelungen $[D__KEY__ELEMENT|s1] und heilt sich selbst (max. 4 Pkt. Schaden und Heilung).",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verleiht sich selbst <color=#FFFFFFFF>Nachtpatrouille</color> und entfernt sämtlichen eigenen <color=#FFFFFFFF>Eid des Lebens</color>. Verursacht anschließend basierend auf den entfernten Stapelungen {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color> und heilt sich selbst (max. 4 Pkt. Schaden und Heilung).",
+			"description": "Verleiht sich selbst Nachtpatrouille und entfernt sämtlichen eigenen Eid des Lebens. Verursacht anschließend basierend auf den entfernten Stapelungen Elektro-SCH und heilt sich selbst (max. 4 Pkt. Schaden und Heilung).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Sterbende Lichtstrahlen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], verleiht sich selbst 4 Stapelungen <color=#FFFFFFFF>$[C122]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-SCH</color>, verleiht sich selbst 4 Stapelungen <color=#FFFFFFFF>Eid des Lebens</color>.",
+			"description": "Verursacht 3 Pkt. Elektro-SCH, verleiht sich selbst 4 Stapelungen Eid des Lebens.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

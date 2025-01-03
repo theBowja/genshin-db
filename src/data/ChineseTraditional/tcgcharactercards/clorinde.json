@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "克洛琳德",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"雷元素",
+		"單手劍",
+		"楓丹",
+		"始基力：荒性"
+	],
+	"storytitle": "秉燭獮影·克洛琳德",
+	"storytext": "洞滅魔影，持護長夜。",
+	"source": "在貓尾酒館中邀請克洛琳德進行對局，在友好對局難度中獲得勝利後獲得",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "逐影之誓",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。如果本角色附屬<color=#FFFFFFFF>$[C114121]</color>，則此技能少花費1個$[K309]。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "造成1點{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理傷害</color>。如果本角色附屬<color=#FFFFFFFF>夜巡</color>，則此技能少花費1個<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>。",
+			"description": "造成1點物理傷害。如果本角色附屬夜巡，則此技能少花費1個無色元素。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "狩夜之巡",
+			"descriptionraw": "自身附屬<color=#FFFFFFFF>$[C114121]</color>，移除自身所有<color=#FFFFFFFF>$[C122]</color>。然後根據所移除的層數，造成$[D__KEY__ELEMENT]，並治療自身。（傷害和治療最多4點）",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "自身附屬<color=#FFFFFFFF>夜巡</color>，移除自身所有<color=#FFFFFFFF>生命之契</color>。然後根據所移除的層數，造成{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素傷害</color>，並治療自身。（傷害和治療最多4點）",
+			"description": "自身附屬夜巡，移除自身所有生命之契。然後根據所移除的層數，造成雷元素傷害，並治療自身。（傷害和治療最多4點）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "殘光將終",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，自身附屬4層<color=#FFFFFFFF>$[C122]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素傷害</color>，自身附屬4層<color=#FFFFFFFF>生命之契</color>。",
+			"description": "造成3點雷元素傷害，自身附屬4層生命之契。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "クロリンデ",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"雷元素",
+		"片手剣",
+		"フォンテーヌ",
+		"アルケー：ウーシア"
+	],
+	"storytitle": "燭火を携えた影の狩人・クロリンデ",
+	"storytext": "魔影を滅し、永夜を守らん。",
+	"source": "キャッツテールでクロリンデを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "影追いの誓い",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。本キャラが<color=#FFFFFFFF>$[C114121]</color>を付与されている場合、このスキルに必要な$[K309]-1。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を1与える。本キャラが<color=#FFFFFFFF>夜巡り</color>を付与されている場合、このスキルに必要な<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>-1。",
+			"description": "物理ダメージを1与える。本キャラが夜巡りを付与されている場合、このスキルに必要な無色元素-1。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "夜狩の巡回",
+			"descriptionraw": "自身に<color=#FFFFFFFF>$[C114121]</color>を付与し、自身のすべての<color=#FFFFFFFF>$[C122]</color>を取り除く。取り除かれた層数に応じて$[D__KEY__ELEMENT]を与え、自身を治療する。（ダメージ、治療ともに最大4まで）",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "自身に<color=#FFFFFFFF>夜巡り</color>を付与し、自身のすべての<color=#FFFFFFFF>命の契約</color>を取り除く。取り除かれた層数に応じて{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を与え、自身を治療する。（ダメージ、治療ともに最大4まで）",
+			"description": "自身に夜巡りを付与し、自身のすべての命の契約を取り除く。取り除かれた層数に応じて雷元素ダメージを与え、自身を治療する。（ダメージ、治療ともに最大4まで）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "消えゆく残光",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、自身に<color=#FFFFFFFF>$[C122]</color>を4層付与する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与え、自身に<color=#FFFFFFFF>命の契約</color>を4層付与する。",
+			"description": "雷元素ダメージを3与え、自身に命の契約を4層付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

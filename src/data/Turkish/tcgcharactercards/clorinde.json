@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Clorinde",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Elektrik",
+		"Kılıç",
+		"Fontaine",
+		"Arkhe: Öz"
+	],
+	"storytitle": "\"Mum Işığının Muhafızı, Gölge Avcısı\" Clorinde",
+	"storytext": "Gölgelerin Yok Edicisi, Uzun Gece Nöbeti",
+	"source": "Clorinde'i Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Gölge Avı Yemini",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Bu karaktere <color=#FFFFFFFF>$[C114121]</color> ekliyse bu Beceri için 1 adet daha az $[K309] harcanır.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir. Bu karaktere <color=#FFFFFFFF>Gece Nöbeti</color> ekliyse bu Beceri için 1 adet daha az <color=#FFFFFFFF>{SPRITE_PRESET#1109}Nötr Element</color> harcanır.",
+			"description": "1 Fiziksel Hasar verir. Bu karaktere Gece Nöbeti ekliyse bu Beceri için 1 adet daha az Nötr Element harcanır.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Avcının Nöbeti",
+			"descriptionraw": "Kendine <color=#FFFFFFFF>$[C114121]</color> ekler ve ardından sahip olduğu tüm <color=#FFFFFFFF>$[C122]</color> kaldırılır. Kaldırılan kademe başına $[D__KEY__ELEMENT] verir ve kendini iyileştirir. (Hasar ve İyileştirme miktarı en fazla 4 puan olabilir.)",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Kendine <color=#FFFFFFFF>Gece Nöbeti</color> ekler ve ardından sahip olduğu tüm <color=#FFFFFFFF>Hayat Bağı</color> kaldırılır. Kaldırılan kademe başına {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve kendini iyileştirir. (Hasar ve İyileştirme miktarı en fazla 4 puan olabilir.)",
+			"description": "Kendine Gece Nöbeti ekler ve ardından sahip olduğu tüm Hayat Bağı kaldırılır. Kaldırılan kademe başına Elektrik Hasarı verir ve kendini iyileştirir. (Hasar ve İyileştirme miktarı en fazla 4 puan olabilir.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Son Parıltı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve kendine 4 kademe <color=#FFFFFFFF>$[C122]</color> ekler.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektrik Hasarı</color> verir ve kendine 4 kademe <color=#FFFFFFFF>Hayat Bağı</color> ekler.",
+			"description": "3 Elektrik Hasarı verir ve kendine 4 kademe Hayat Bağı ekler.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

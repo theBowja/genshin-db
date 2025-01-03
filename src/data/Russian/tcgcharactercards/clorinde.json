@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Клоринда",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Электро",
+		"Одноручное",
+		"Фонтейн",
+		"Архэ: Усия"
+	],
+	"storytitle": "«Хранительница света, теневая охотница» Клоринда",
+	"storytext": "Истребительница теней, хранительница ночи",
+	"source": "Награда за приглашение Клоринды в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Клятва Сумеречного двора",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Если на этом персонаже есть эффект <color=#FFFFFFFF>$[C114121]</color>, этот навык расходует $[K309] на 1 ед. меньше.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>. Если на этом персонаже есть эффект <color=#FFFFFFFF>Ночной дозор</color>, этот навык расходует <color=#FFFFFFFF>{SPRITE_PRESET#1109}Неопределённый элемент</color> на 1 ед. меньше.",
+			"description": "Наносит 1 Физический урон. Если на этом персонаже есть эффект Ночной дозор, этот навык расходует Неопределённый элемент на 1 ед. меньше.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Охота на тьму",
+			"descriptionraw": "Персонаж получает эффект <color=#FFFFFFFF>$[C114121]</color>. Весь ваш <color=#FFFFFFFF>$[C122]</color> снимается. В зависимости от количества снятых уровней наносится $[D__KEY__ELEMENT] урон и восстанавливается HP. (Урон и лечение ограничены 4 ед.)",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Персонаж получает эффект <color=#FFFFFFFF>Ночной дозор</color>. Весь ваш <color=#FFFFFFFF>Долг жизни</color> снимается. В зависимости от количества снятых уровней наносится {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color> урон и восстанавливается HP. (Урон и лечение ограничены 4 ед.)",
+			"description": "Персонаж получает эффект Ночной дозор. Весь ваш Долг жизни снимается. В зависимости от количества снятых уровней наносится Электро урон урон и восстанавливается HP. (Урон и лечение ограничены 4 ед.)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Последние лучи света",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Персонаж получает <color=#FFFFFFFF>$[C122]</color>, 4 уровня.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед. Персонаж получает <color=#FFFFFFFF>Долг жизни</color>, 4 уровня.",
+			"description": "Наносит Электро урон, 3 ед. Персонаж получает Долг жизни, 4 уровня.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

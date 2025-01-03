@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Clorinde",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Electro",
+		"Espada ligera",
+		"Fontaine",
+		"Arjé: ousía"
+	],
+	"storytitle": "Clorinde - La Cazasombras Portavelas",
+	"storytext": "Conquistadora de fantasmas, guardiana de la noche.",
+	"source": "Se obtiene tras retar y ganar a Clorinde en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Credo fantasmal",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si este personaje está en el estado de <color=#FFFFFFFF>$[C114121|s1]</color>, gasta 1 $[K309|s2] menos en lanzar esta habilidad.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>. Si este personaje está en el estado de <color=#FFFFFFFF>patrulla nocturna</color>, gasta 1 <color=#FFFFFFFF>{SPRITE_PRESET#1109}dado indefinido</color> menos en lanzar esta habilidad.",
+			"description": "Inflige 1 pt. de Daño Físico. Si este personaje está en el estado de patrulla nocturna, gasta 1 dado indefinido menos en lanzar esta habilidad.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Caza noctámbula",
+			"descriptionraw": "Entra en el estado de <color=#FFFFFFFF>$[C114121]</color> y elimina todas las acumulaciones de <color=#FFFFFFFF>$[C122|s1]</color>. Después, inflige $[D__KEY__ELEMENT] y regenera Vida según la cantidad de cargas consumidas (máximo 4 pts. de daño y Vida).",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Entra en el estado de <color=#FFFFFFFF>Patrulla nocturna</color> y elimina todas las acumulaciones de <color=#FFFFFFFF>pacto vital</color>. Después, inflige {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y regenera Vida según la cantidad de cargas consumidas (máximo 4 pts. de daño y Vida).",
+			"description": "Entra en el estado de Patrulla nocturna y elimina todas las acumulaciones de pacto vital. Después, inflige Daño Electro y regenera Vida según la cantidad de cargas consumidas (máximo 4 pts. de daño y Vida).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Destello final",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y obtiene 4 acumulaciones de <color=#FFFFFFFF>$[C122|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y obtiene 4 acumulaciones de <color=#FFFFFFFF>pacto vital</color>.",
+			"description": "Inflige 3 pts. de Daño Electro y obtiene 4 acumulaciones de pacto vital.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

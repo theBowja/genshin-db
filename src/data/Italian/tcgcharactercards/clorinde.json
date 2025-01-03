@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Clorinde",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Electro",
+		"Spada",
+		"Fontaine",
+		"Archè: Ousia"
+	],
+	"storytitle": "Clorinde, Cacciatrice d'ombre",
+	"storytext": "Trionfatrice di spettri, Guardiana della lunga notte.",
+	"source": "Ricompensa ottenuta sfidando Clorinde a duello alla Coda di Gatto e battendola in un duello amichevole",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Patto delle Ombre Cacciatrici",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Se questo personaggio ha associata <color=#FFFFFFFF>$[C114121]</color>, questa abilità costa 1 $[K309] in meno.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>. Se questo personaggio ha associata <color=#FFFFFFFF>Vigilante della notte</color>, questa abilità costa 1 <color=#FFFFFFFF>{SPRITE_PRESET#1109}elemento indefinito</color> in meno.",
+			"description": "Infligge 1 DAN fisici. Se questo personaggio ha associata Vigilante della notte, questa abilità costa 1 elemento indefinito in meno.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Veglia della cacciatrice",
+			"descriptionraw": "Associa <color=#FFFFFFFF>$[C114121]</color> a sé stessa, dopodiché rimuovi tutto il tuo <color=#FFFFFFFF>$[C122]</color>. In base al numero di accumuli rimossi, infliggi $[D__KEY__ELEMENT] e ripristina i PS (i DAN e la guarigione sono limitati a 4).",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Associa <color=#FFFFFFFF>Vigilante della notte</color> a sé stessa, dopodiché rimuovi tutto il tuo <color=#FFFFFFFF>Legame vitale</color>. In base al numero di accumuli rimossi, infliggi {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color> e ripristina i PS (i DAN e la guarigione sono limitati a 4).",
+			"description": "Associa Vigilante della notte a sé stessa, dopodiché rimuovi tutto il tuo Legame vitale. In base al numero di accumuli rimossi, infliggi DAN da Electro e ripristina i PS (i DAN e la guarigione sono limitati a 4).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Fulgore finale",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], e associa 4 accumuli di <color=#FFFFFFFF>$[C122]</color> a sé stessa.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>DAN da Electro</color>, e associa 4 accumuli di <color=#FFFFFFFF>Legame vitale</color> a sé stessa.",
+			"description": "Infligge 3 DAN da Electro, e associa 4 accumuli di Legame vitale a sé stessa.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

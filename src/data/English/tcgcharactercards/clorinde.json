@@ -1,0 +1,82 @@
+{
+	"id": 1412,
+	"name": "Clorinde",
+	"shareid": 445,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Electro",
+		"Sword",
+		"Fontaine",
+		"Arkhe: Ousia"
+	],
+	"storytitle": "\"Candlebearer, Shadowhunter\" Clorinde",
+	"storytext": "Vanquisher of Phantoms, Vigil of the Long Night",
+	"source": "Reward for inviting Clorinde to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+	"skills": [
+		{
+			"id": 14121,
+			"name": "Oath of Hunting Shadows",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If this character has <color=#FFFFFFFF>$[C114121]</color> attached, this Skill costs 1 less $[K309].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>. If this character has <color=#FFFFFFFF>Night Vigil</color> attached, this Skill costs 1 less <color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>.",
+			"description": "Deals 1 Physical DMG. If this character has Night Vigil attached, this Skill costs 1 less Unaligned Element.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14122,
+			"name": "Hunter's Vigil",
+			"descriptionraw": "Attach <color=#FFFFFFFF>$[C114121]</color> to self, then remove all of your <color=#FFFFFFFF>$[C122]</color>. Based on the number of stacks removed, deal $[D__KEY__ELEMENT] and heal yourself. (DMG and healing are capped at 4 points)",
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Attach <color=#FFFFFFFF>Night Vigil</color> to self, then remove all of your <color=#FFFFFFFF>Bond of Life</color>. Based on the number of stacks removed, deal {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color> and heal yourself. (DMG and healing are capped at 4 points)",
+			"description": "Attach Night Vigil to self, then remove all of your Bond of Life. Based on the number of stacks removed, deal Electro DMG and heal yourself. (DMG and healing are capped at 4 points)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14123,
+			"name": "Last Lightfall",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], and attaches 4 stacks of <color=#FFFFFFFF>$[C122]</color> to self.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, and attaches 4 stacks of <color=#FFFFFFFF>Bond of Life</color> to self.",
+			"description": "Deals 3 Electro DMG, and attaches 4 stacks of Bond of Life to self.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}
