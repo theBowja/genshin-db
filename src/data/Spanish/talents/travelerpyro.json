@@ -1,0 +1,240 @@
+{
+	"id": 702,
+	"name": "Viajera (Pyro)",
+	"combat1": {
+		"name": "Ataque Normal: Llamarada extranjera",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nRealiza hasta 5 ataques consecutivos con espada.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño en el AdE en el momento del impacto.",
+		"description": "Ataque Normal\nRealiza hasta 5 ataques consecutivos con espada.\n\nAtaque Cargado\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}",
+				"Daño de 5.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P} + {param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Espada ignífera",
+		"descriptionRaw": "#Invoca unas llamas capaces de incinerar la tierra. Esta habilidad produce distintos efectos dependiendo de si se libera {LAYOUT_MOBILE#tocando una vez}{LAYOUT_PC#pulsando una vez}{LAYOUT_PS#pulsando una vez} o manteniendo pulsado.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Un toque}{LAYOUT_PC#Pulsar una vez}{LAYOUT_PS#Pulsar una vez}</color>\nHace uso del poder abrasador del fuego. Al usar la habilidad, {F#la Viajera}{M#el Viajero} obtiene 42{NON_BREAK_SPACE}pts. de noctambulismo, entra en estado de bendición noctámbula e invoca un “umbral flagrante” que sigue al personaje en uso.\nCuando el umbral esté cerca de un enemigo, le infligirá <color=#FF9999FF>Daño Pyro</color> de naturaleza noctámbula cada cierto tiempo.\n\n<color=#FFD780FF>Mantener pulsado</color>\nHace uso del poder firme del fuego para infligir <color=#FF9999FF>Daño Pyro en el AdE</color> de naturaleza noctámbula a los enemigos cercanos. Al usar la habilidad, {F#la Viajera}{M#el Viajero} obtiene 42{NON_BREAK_SPACE}pts. de noctambulismo, entra en estado de bendición noctámbula e invoca un “umbral abrasador” que sigue al personaje en uso.\nCuando el personaje en uso que esté bajo los efectos del umbral abrasador inflija daño a un enemigo, el umbral ejecutará un ataque coordinado que inflige <color=#FF9999FF>Daño Pyro</color> de naturaleza noctámbula en función del ATQ {F#de la Viajera}{M#del Viajero}. Este efecto solo puede ocurrir una vez cada 3{NON_BREAK_SPACE}s.\n\n<color=#FFD780FF>Bendición noctámbula: Viajer{F#a}{M#o}</color>\nConsume continuamente pts. de noctambulismo. Los pts. de noctambulismo {F#de la Viajera}{M#del Viajero} duran un máximo de 12{NON_BREAK_SPACE}s y, al agotarse todos, terminará su bendición noctámbula. Si en ese tiempo vuelve a usar la Habilidad Elemental, sus pts. de noctambulismo se reiniciarán a 42.\nTanto el umbral flagrante como el abrasador desaparecerán cuando termine la bendición noctámbula {F#de la Viajera}{M#del Viajero}. Solo puede existir a la vez o bien un umbral flagrante, o bien un umbral abrasador creado por {F#la Viajera}{M#el Viajero}.\n\n<i>Observaste con Paimon los cambios de color del fuego.</i>",
+		"description": "Invoca unas llamas capaces de incinerar la tierra. Esta habilidad produce distintos efectos dependiendo de si se libera pulsando una vez o manteniendo pulsado.\n\nPulsar una vez\nHace uso del poder abrasador del fuego. Al usar la habilidad, el Viajero obtiene 42 pts. de noctambulismo, entra en estado de bendición noctámbula e invoca un “umbral flagrante” que sigue al personaje en uso.\nCuando el umbral esté cerca de un enemigo, le infligirá Daño Pyro de naturaleza noctámbula cada cierto tiempo.\n\nMantener pulsado\nHace uso del poder firme del fuego para infligir Daño Pyro en el AdE de naturaleza noctámbula a los enemigos cercanos. Al usar la habilidad, el Viajero obtiene 42 pts. de noctambulismo, entra en estado de bendición noctámbula e invoca un “umbral abrasador” que sigue al personaje en uso.\nCuando el personaje en uso que esté bajo los efectos del umbral abrasador inflija daño a un enemigo, el umbral ejecutará un ataque coordinado que inflige Daño Pyro de naturaleza noctámbula en función del ATQ del Viajero. Este efecto solo puede ocurrir una vez cada 3 s.\n\nBendición noctámbula: Viajero\nConsume continuamente pts. de noctambulismo. Los pts. de noctambulismo del Viajero duran un máximo de 12 s y, al agotarse todos, terminará su bendición noctámbula. Si en ese tiempo vuelve a usar la Habilidad Elemental, sus pts. de noctambulismo se reiniciarán a 42.\nTanto el umbral flagrante como el abrasador desaparecerán cuando termine la bendición noctámbula del Viajero. Solo puede existir a la vez o bien un umbral flagrante, o bien un umbral abrasador creado por el Viajero.",
+		"flavorText": "Observaste con Paimon los cambios de color del fuego.",
+		"attributes": {
+			"labels": [
+				"Daño de umbral flagrante|{param1:F1P}",
+				"Daño al mantener pulsado|{param2:F1P}",
+				"Daño de umbral abrasador|{param3:F1P}",
+				"Límite de pts. de noctambulismo|{param4:F1}",
+				"TdE|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Abrasallanuras",
+		"descriptionRaw": "#Concentra las llamas en un sello que inflige <color=#FF9999FF>Daño Pyro en el AdE</color> de naturaleza noctámbula a los enemigos frente a sí mism{F#a}{M#o} y que, durante los próximos 4{NON_BREAK_SPACE}s, restaura {F#a la Viajera}{M#al Viajero} 7{NON_BREAK_SPACE}pts. de noctambulismo por segundo.\n\n<i>Investigaste con Paimon las condiciones necesarias para que el fuego no se apague.</i>",
+		"description": "Concentra las llamas en un sello que inflige Daño Pyro en el AdE de naturaleza noctámbula a los enemigos frente a sí mismo y que, durante los próximos 4 s, restaura al Viajero 7 pts. de noctambulismo por segundo.",
+		"flavorText": "Investigaste con Paimon las condiciones necesarias para que el fuego no se apague.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"TdE|{param2:F1} s",
+				"Energía Elemental|{param3:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Fuego incinerador",
+		"descriptionRaw": "#Cuando {F#la Viajera}{M#el Viajero} tiene más de 20{NON_BREAK_SPACE}pts. de noctambulismo, aumenta el AdE del umbral flagrante y el umbral abrasador de la Habilidad Elemental, <color=#FFD780FF>Espada ignífera</color>, tras golpear a un oponente.",
+		"description": "Cuando el Viajero tiene más de 20 pts. de noctambulismo, aumenta el AdE del umbral flagrante y el umbral abrasador de la Habilidad Elemental, Espada ignífera, tras golpear a un oponente."
+	},
+	"passive2": {
+		"name": "Perduración de las ascuas",
+		"descriptionRaw": "#Cuando el personaje en uso afectado por el <color=#FFD780FF>umbral flagrante</color> o el <color=#FFD780FF>umbral abrasador</color> causa una <color=#FF9999FF>Reacción Elemental Pyro</color>, {F#la Viajera}{M#el Viajero} recupera 5{NON_BREAK_SPACE}pts. de Energía Elemental. Este efecto solo puede ocurrir una vez cada 12{NON_BREAK_SPACE}s. Además, cuando un personaje cercano del equipo causa una explosión noctámbula, {F#la Viajera}{M#el Viajero} recupera 4{NON_BREAK_SPACE}pts. de Energía Elemental.",
+		"description": "Cuando el personaje en uso afectado por el umbral flagrante o el umbral abrasador causa una Reacción Elemental Pyro, el Viajero recupera 5 pts. de Energía Elemental. Este efecto solo puede ocurrir una vez cada 12 s. Además, cuando un personaje cercano del equipo causa una explosión noctámbula, el Viajero recupera 4 pts. de Energía Elemental."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104347,
+				"name": "Enseñanzas de la contienda",
+				"count": 3
+			},
+			{
+				"id": 112104,
+				"name": "Silbato de madera del guardián",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104351,
+				"name": "Guía de las brasas",
+				"count": 2
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104354,
+				"name": "Guía del conflicto",
+				"count": 4
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104348,
+				"name": "Guía de la contienda",
+				"count": 6
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104351,
+				"name": "Guía de las brasas",
+				"count": 9
+			},
+			{
+				"id": 112105,
+				"name": "Silbato de hierro del guerrero",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofía del conflicto",
+				"count": 4
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 4
+			},
+			{
+				"id": 113063,
+				"name": "Piedra angular piroastral",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104349,
+				"name": "Filosofía de la contienda",
+				"count": 6
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 6
+			},
+			{
+				"id": 113063,
+				"name": "Piedra angular piroastral",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104352,
+				"name": "Filosofía de las brasas",
+				"count": 12
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 9
+			},
+			{
+				"id": 113063,
+				"name": "Piedra angular piroastral",
+				"count": 1
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104355,
+				"name": "Filosofía del conflicto",
+				"count": 16
+			},
+			{
+				"id": 112106,
+				"name": "Silbato de oro del soldado sauriocoronado",
+				"count": 12
+			},
+			{
+				"id": 113063,
+				"name": "Piedra angular piroastral",
+				"count": 1
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}
