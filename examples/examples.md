@@ -65,7 +65,7 @@ const genshindb = require('genshin-db');
   'Xiao',               'Xilonen',          'Xingqiu',
   'Xinyan',             'Yae Miko',         'Yanfei',
   'Yaoyao',             'Yelan',            'Yoimiya',
-  'Yun Jin',            'Zhongli'
+  'Yumemizuki Mizuki',  'Yun Jin',          'Zhongli'
 ]
 ```
 
@@ -798,7 +798,8 @@ const genshindb = require('genshin-db');
   'Xianyun',           'Xiao',               'Xilonen',
   'Xingqiu',           'Xinyan',             'Yae Miko',
   'Yanfei',            'Yaoyao',             'Yelan',
-  'Yoimiya',           'Yun Jin',            'Zhongli'
+  'Yoimiya',           'Yumemizuki Mizuki',  'Yun Jin',
+  'Zhongli'
 ]
 ```
 
@@ -1709,7 +1710,7 @@ const genshindb = require('genshin-db');
   'Mappa Mare',
   'Memory of Dust',
   'Messenger',
-  ... 107 more items
+  ... 109 more items
 ]
 ```
 
@@ -2943,9 +2944,9 @@ const genshindb = require('genshin-db');
   },
   rewardPreview: [
     { id: 202, name: 'Mora' },
-    { id: 112002, name: 'Slime Condensate', count: 0.6723 },
+    { id: 112004, name: 'Slime Concentrate', count: 0.0448 },
     { id: 112003, name: 'Slime Secretions', count: 0.1792 },
-    { id: 112004, name: 'Slime Concentrate', count: 0.0448 }
+    { id: 112002, name: 'Slime Condensate', count: 0.6723 }
   ],
   images: {
     filename_icon: 'UI_MonsterIcon_Slime_Electric_03',
@@ -3103,7 +3104,7 @@ const genshindb = require('genshin-db');
   categoryType: 'SUBTYPE_ANIMAL',
   categoryText: 'Beasts',
   countType: 'COUNT_TYPE_NONE',
-  sortOrder: 11014,
+  sortOrder: 11015,
   images: { filename_icon: 'UI_AnimalIcon_DogPrick_02' },
   version: '1.0'
 }
@@ -3122,7 +3123,7 @@ const genshindb = require('genshin-db');
   categoryType: 'SUBTYPE_AVIARY',
   categoryText: 'Birds',
   countType: 'COUNT_TYPE_CAPTURE',
-  sortOrder: 10023,
+  sortOrder: 10025,
   images: { filename_icon: 'UI_AnimalIcon_Pigeon_Beak' },
   version: '3.0'
 }
