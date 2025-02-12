@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "Arlecchino",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Ateş",
+		"Mızrak",
+		"Fatui"
+	],
+	"storytitle": "\"Uğursuz Ayın Karanlığı\" Arlecchino",
+	"storytext": "Karanlık Yıldızlarla Dolu Gökyüzündeki Yalnız Ay.",
+	"source": "Arlecchino'yu Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "İnfaza Çağrı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Mümkünse hedeften 3 kademe <color=#FFFFFFFF>$[C122]</color> tüketir ve aynı oranda Hasarı artırır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir. Mümkünse hedeften 3 kademe <color=#FFFFFFFF>Hayat Bağı</color> tüketir ve aynı oranda Hasarı artırır.",
+			"description": "2 Fiziksel Hasar verir. Mümkünse hedeften 3 kademe Hayat Bağı tüketir ve aynı oranda Hasarı artırır.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "Hepsi Kül Oldu",
+			"descriptionraw": "Rakibinin alanında 5 kademe <color=#FFFFFFFF>$[C113141]</color> oluşturur ve $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Rakibinin alanında 5 kademe <color=#FFFFFFFF>Kan Borcu Fermanı</color> oluşturur ve 2 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir.",
+			"description": "Rakibinin alanında 5 kademe Kan Borcu Fermanı oluşturur ve 2 Ateş Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "Uğursuz Ayın Doğuşu",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Tüm <color=#FFFFFFFF>$[C122]</color> kademelerini kaldırır ve kademe başına kendisi için 1 Can yeniler.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> verir. Tüm <color=#FFFFFFFF>Hayat Bağı</color> kademelerini kaldırır ve kademe başına kendisi için 1 Can yeniler.",
+			"description": "4 Ateş Hasarı verir. Tüm Hayat Bağı kademelerini kaldırır ve kademe başına kendisi için 1 Can yeniler.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "Yalnızca Uğursuz Ay Bilebilir",
+			"descriptionraw": "Karakterler <color=#FFFFFFFF>$[S13143]</color> dışındaki kaynaklardan iyileştirme alamaz.\\n<color=#FFFFFFFF><color=#FFFFFFFF>$[C122]</color>kendisine ekliyken </color>karakterlerin verdiği $[K100], $[K103] olarak değişir.",
+			"descriptionreplaced": "Karakterler <color=#FFFFFFFF>Uğursuz Ayın Doğuşu</color> dışındaki kaynaklardan iyileştirme alamaz.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Hayat Bağı</color>kendisine ekliyken </color>karakterlerin verdiği {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color>, {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> olarak değişir.",
+			"description": "Karakterler Uğursuz Ayın Doğuşu dışındaki kaynaklardan iyileştirme alamaz.\nHayat Bağıkendisine ekliyken karakterlerin verdiği Fiziksel Hasar, Ateş Hasarı olarak değişir.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "Yalnızca Uğursuz Ay Bilebilir",
+			"descriptionraw": "Karakterler <color=#FFFFFFFF>$[S13143]</color> dışındaki kaynaklardan iyileştirme alamaz.\\n<color=#FFFFFFFF><color=#FFFFFFFF>$[C122]</color>kendisine ekliyken </color>karakterlerin verdiği $[K100], $[K103] olarak değişir.",
+			"descriptionreplaced": "Karakterler <color=#FFFFFFFF>Uğursuz Ayın Doğuşu</color> dışındaki kaynaklardan iyileştirme alamaz.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Hayat Bağı</color>kendisine ekliyken </color>karakterlerin verdiği {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color>, {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> olarak değişir.",
+			"description": "Karakterler Uğursuz Ayın Doğuşu dışındaki kaynaklardan iyileştirme alamaz.\nHayat Bağıkendisine ekliyken karakterlerin verdiği Fiziksel Hasar, Ateş Hasarı olarak değişir.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "Yalnızca Uğursuz Ay Bilebilir",
+			"descriptionraw": "Karakterler <color=#FFFFFFFF>$[S13143]</color> dışındaki kaynaklardan iyileştirme alamaz.\\n<color=#FFFFFFFF><color=#FFFFFFFF>$[C122]</color>kendisine ekliyken </color>karakterlerin verdiği $[K100], $[K103] olarak değişir.",
+			"descriptionreplaced": "Karakterler <color=#FFFFFFFF>Uğursuz Ayın Doğuşu</color> dışındaki kaynaklardan iyileştirme alamaz.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Hayat Bağı</color>kendisine ekliyken </color>karakterlerin verdiği {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color>, {SPRITE_PRESET#2103}<color=#FF9999FF>Ateş Hasarı</color> olarak değişir.",
+			"description": "Karakterler Uğursuz Ayın Doğuşu dışındaki kaynaklardan iyileştirme alamaz.\nHayat Bağıkendisine ekliyken karakterlerin verdiği Fiziksel Hasar, Ateş Hasarı olarak değişir.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

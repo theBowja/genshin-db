@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "Арлекино",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Пиро",
+		"Древковое",
+		"Фатуи"
+	],
+	"storytitle": "«Роковая луна» Арлекино",
+	"storytext": "Одинокая луна средь гаснущих звезд.",
+	"source": "Награда за приглашение Арлекино в «Кошкин хвост» и победу над ним в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "Приглашение на казнь",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если возможно, поглощает до 3 уровней эффекта <color=#FFFFFFFF>$[C122]</color> и равноценно увеличивает урон.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед. Если возможно, поглощает до 3 уровней эффекта <color=#FFFFFFFF>Долг жизни</color> и равноценно увеличивает урон.",
+			"description": "Наносит Физический урон, 2 ед. Если возможно, поглощает до 3 уровней эффекта Долг жизни и равноценно увеличивает урон.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "Всё превращается в прах",
+			"descriptionraw": "Противник получает <color=#FFFFFFFF>$[C113141]</color>, 5 уровней, и наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Противник получает <color=#FFFFFFFF>Веление кровавого долга</color>, 5 уровней, и наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 2 ед.",
+			"description": "Противник получает Веление кровавого долга, 5 уровней, и наносит Пиро урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "Восхождение роковой луны",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Снимает все ваши уровни эффекта <color=#FFFFFFFF>$[C122]</color> и восстанавливает по 1 HP за каждый уровень.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 4 ед. Снимает все ваши уровни эффекта <color=#FFFFFFFF>Долг жизни</color> и восстанавливает по 1 HP за каждый уровень.",
+			"description": "Наносит Пиро урон, 4 ед. Снимает все ваши уровни эффекта Долг жизни и восстанавливает по 1 HP за каждый уровень.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "Лишь роковой луне известно",
+			"descriptionraw": "Персонажи могут получать лечение только от навыка <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Когда на персонажа</color> накладывается эффект <color=#FFFFFFFF>$[C122]</color>: $[K100], который наносит этот персонаж, превращается в $[K103].",
+			"descriptionreplaced": "Персонажи могут получать лечение только от навыка <color=#FFFFFFFF>Восхождение роковой луны</color>.\\n<color=#FFFFFFFF>Когда на персонажа</color> накладывается эффект <color=#FFFFFFFF>Долг жизни</color>: {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, который наносит этот персонаж, превращается в {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>.",
+			"description": "Персонажи могут получать лечение только от навыка Восхождение роковой луны.\nКогда на персонажа накладывается эффект Долг жизни: Физический урон, который наносит этот персонаж, превращается в Пиро урон.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "Лишь роковой луне известно",
+			"descriptionraw": "Персонажи могут получать лечение только от навыка <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Когда на персонажа</color> накладывается эффект <color=#FFFFFFFF>$[C122]</color>: $[K100], который наносит этот персонаж, превращается в $[K103].",
+			"descriptionreplaced": "Персонажи могут получать лечение только от навыка <color=#FFFFFFFF>Восхождение роковой луны</color>.\\n<color=#FFFFFFFF>Когда на персонажа</color> накладывается эффект <color=#FFFFFFFF>Долг жизни</color>: {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, который наносит этот персонаж, превращается в {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>.",
+			"description": "Персонажи могут получать лечение только от навыка Восхождение роковой луны.\nКогда на персонажа накладывается эффект Долг жизни: Физический урон, который наносит этот персонаж, превращается в Пиро урон.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "Лишь роковой луне известно",
+			"descriptionraw": "Персонажи могут получать лечение только от навыка <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Когда на персонажа</color> накладывается эффект <color=#FFFFFFFF>$[C122]</color>: $[K100], который наносит этот персонаж, превращается в $[K103].",
+			"descriptionreplaced": "Персонажи могут получать лечение только от навыка <color=#FFFFFFFF>Восхождение роковой луны</color>.\\n<color=#FFFFFFFF>Когда на персонажа</color> накладывается эффект <color=#FFFFFFFF>Долг жизни</color>: {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, который наносит этот персонаж, превращается в {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>.",
+			"description": "Персонажи могут получать лечение только от навыка Восхождение роковой луны.\nКогда на персонажа накладывается эффект Долг жизни: Физический урон, который наносит этот персонаж, превращается в Пиро урон.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

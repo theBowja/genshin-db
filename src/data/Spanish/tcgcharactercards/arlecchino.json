@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "Arlecchino",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Pyro",
+		"Lanza",
+		"Fatui"
+	],
+	"storytitle": "Arlecchino - La Portadora Lunaciaga",
+	"storytext": "Una solitaria luna aciaga entre estrellas apagadas.",
+	"source": "Se obtiene tras retar y ganar a Arlecchino en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "Invitación a una decapitación",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si es posible, consume hasta 3 cargas de <color=#FFFFFFFF>$[C122|s1]</color> del objetivo y aumenta en la misma cantidad el daño infligido.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>. Si es posible, consume hasta 3 cargas de <color=#FFFFFFFF>pacto vital</color> del objetivo y aumenta en la misma cantidad el daño infligido.",
+			"description": "Inflige 2 pts. de Daño Físico. Si es posible, consume hasta 3 cargas de pacto vital del objetivo y aumenta en la misma cantidad el daño infligido.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "Que todo sea cenizas",
+			"descriptionraw": "Crea 5 cargas de <color=#FFFFFFFF>$[C113141|s1]</color> en el campo del rival e inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Crea 5 cargas de <color=#FFFFFFFF>decreto deudosangriento</color> en el campo del rival e inflige 2 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "Crea 5 cargas de decreto deudosangriento en el campo del rival e inflige 2 pts. de Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "Ascenso lunaciago",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y elimina todas sus cargas de <color=#FFFFFFFF>$[C122|s1]</color>. Por cada carga eliminada, obtiene Vida +1.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y elimina todas sus cargas de <color=#FFFFFFFF>pacto vital</color>. Por cada carga eliminada, obtiene Vida +1.",
+			"description": "Inflige 4 pts. de Daño Pyro y elimina todas sus cargas de pacto vital. Por cada carga eliminada, obtiene Vida +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "Solo la luna aciaga podrá saber",
+			"descriptionraw": "El personaje solo puede recibir curación de <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Cuando el personaje obtiene un <color=#FFFFFFFF>$[C122|s1]</color></color>, el $[K100] que inflige se convierte en $[K103].",
+			"descriptionreplaced": "El personaje solo puede recibir curación de <color=#FFFFFFFF>Ascenso lunaciago</color>.\\n<color=#FFFFFFFF>Cuando el personaje obtiene un <color=#FFFFFFFF>pacto vital</color></color>, el {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> que inflige se convierte en {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "El personaje solo puede recibir curación de Ascenso lunaciago.\nCuando el personaje obtiene un pacto vital, el Daño Físico que inflige se convierte en Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "Solo la luna aciaga podrá saber",
+			"descriptionraw": "El personaje solo puede recibir curación de <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Cuando el personaje obtiene un <color=#FFFFFFFF>$[C122|s1]</color></color>, el $[K100] que inflige se convierte en $[K103].",
+			"descriptionreplaced": "El personaje solo puede recibir curación de <color=#FFFFFFFF>Ascenso lunaciago</color>.\\n<color=#FFFFFFFF>Cuando el personaje obtiene un <color=#FFFFFFFF>pacto vital</color></color>, el {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> que inflige se convierte en {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "El personaje solo puede recibir curación de Ascenso lunaciago.\nCuando el personaje obtiene un pacto vital, el Daño Físico que inflige se convierte en Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "Solo la luna aciaga podrá saber",
+			"descriptionraw": "El personaje solo puede recibir curación de <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Cuando el personaje obtiene un <color=#FFFFFFFF>$[C122|s1]</color></color>, el $[K100] que inflige se convierte en $[K103].",
+			"descriptionreplaced": "El personaje solo puede recibir curación de <color=#FFFFFFFF>Ascenso lunaciago</color>.\\n<color=#FFFFFFFF>Cuando el personaje obtiene un <color=#FFFFFFFF>pacto vital</color></color>, el {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> que inflige se convierte en {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color>.",
+			"description": "El personaje solo puede recibir curación de Ascenso lunaciago.\nCuando el personaje obtiene un pacto vital, el Daño Físico que inflige se convierte en Daño Pyro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

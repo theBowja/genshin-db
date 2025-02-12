@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "Arlecchino",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Nguyên Tố Hỏa",
+		"Vũ Khí Cán Dài",
+		"Fatui"
+	],
+	"storytitle": "Vầng Trăng Tai Họa - Arlecchino",
+	"storytext": "Trời đêm không ánh sao, mỗi vầng trăng tai họa.",
+	"source": "Nhận được sau khi mời Arlecchino giao đấu trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong Đánh Giải Trí",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "Lời Mời Trảm Thủ",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT]. Nếu có thể, tiêu hao tối đa 3 tầng <color=#FFFFFFFF>$[C122]</color> của mục tiêu và gia tăng lượng sát thương tương ứng.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>. Nếu có thể, tiêu hao tối đa 3 tầng <color=#FFFFFFFF>Khế Ước Sinh Mệnh</color> của mục tiêu và gia tăng lượng sát thương tương ứng.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý. Nếu có thể, tiêu hao tối đa 3 tầng Khế Ước Sinh Mệnh của mục tiêu và gia tăng lượng sát thương tương ứng.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "Vạn Vật Hóa Tro",
+			"descriptionraw": "Sinh ra 5 tầng <color=#FFFFFFFF>$[C113141]</color> trên sân đối phương, sau đó gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Sinh ra 5 tầng <color=#FFFFFFFF>Chỉ Lệnh Nợ Máu</color> trên sân đối phương, sau đó gây 2 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.",
+			"description": "Sinh ra 5 tầng Chỉ Lệnh Nợ Máu trên sân đối phương, sau đó gây 2 điểm Sát Thương Nguyên Tố Hỏa.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "Ách Nguyệt Trỗi Dậy",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], xóa bỏ tất cả <color=#FFFFFFFF>$[C122]</color> của bản thân, mỗi 1 tầng xóa bỏ sẽ chữa trị 1 điểm cho bản thân.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Gây 4 điểm {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>, xóa bỏ tất cả <color=#FFFFFFFF>Khế Ước Sinh Mệnh</color> của bản thân, mỗi 1 tầng xóa bỏ sẽ chữa trị 1 điểm cho bản thân.",
+			"description": "Gây 4 điểm Sát Thương Nguyên Tố Hỏa, xóa bỏ tất cả Khế Ước Sinh Mệnh của bản thân, mỗi 1 tầng xóa bỏ sẽ chữa trị 1 điểm cho bản thân.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "Chỉ Ách Nguyệt Mới Có Thể Thấu Hiểu",
+			"descriptionraw": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Khi bản thân áp dụng <color=#FFFFFFFF>$[C122]</color>:</color> $[K100] nhân vật gây ra chuyển thành $[K103].",
+			"descriptionreplaced": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài <color=#FFFFFFFF>Ách Nguyệt Trỗi Dậy</color>.\\n<color=#FFFFFFFF>Khi bản thân áp dụng <color=#FFFFFFFF>Khế Ước Sinh Mệnh</color>:</color> {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color> nhân vật gây ra chuyển thành {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.",
+			"description": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài Ách Nguyệt Trỗi Dậy.\nKhi bản thân áp dụng Khế Ước Sinh Mệnh: Sát Thương Vật Lý nhân vật gây ra chuyển thành Sát Thương Nguyên Tố Hỏa.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "Chỉ Ách Nguyệt Mới Có Thể Thấu Hiểu",
+			"descriptionraw": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Khi bản thân áp dụng <color=#FFFFFFFF>$[C122]</color>:</color> $[K100] nhân vật gây ra chuyển thành $[K103].",
+			"descriptionreplaced": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài <color=#FFFFFFFF>Ách Nguyệt Trỗi Dậy</color>.\\n<color=#FFFFFFFF>Khi bản thân áp dụng <color=#FFFFFFFF>Khế Ước Sinh Mệnh</color>:</color> {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color> nhân vật gây ra chuyển thành {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.",
+			"description": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài Ách Nguyệt Trỗi Dậy.\nKhi bản thân áp dụng Khế Ước Sinh Mệnh: Sát Thương Vật Lý nhân vật gây ra chuyển thành Sát Thương Nguyên Tố Hỏa.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "Chỉ Ách Nguyệt Mới Có Thể Thấu Hiểu",
+			"descriptionraw": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Khi bản thân áp dụng <color=#FFFFFFFF>$[C122]</color>:</color> $[K100] nhân vật gây ra chuyển thành $[K103].",
+			"descriptionreplaced": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài <color=#FFFFFFFF>Ách Nguyệt Trỗi Dậy</color>.\\n<color=#FFFFFFFF>Khi bản thân áp dụng <color=#FFFFFFFF>Khế Ước Sinh Mệnh</color>:</color> {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color> nhân vật gây ra chuyển thành {SPRITE_PRESET#2103}<color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.",
+			"description": "Nhân vật sẽ không nhận chữa trị từ nguồn nào khác ngoài Ách Nguyệt Trỗi Dậy.\nKhi bản thân áp dụng Khế Ước Sinh Mệnh: Sát Thương Vật Lý nhân vật gây ra chuyển thành Sát Thương Nguyên Tố Hỏa.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		}
+	]
+}

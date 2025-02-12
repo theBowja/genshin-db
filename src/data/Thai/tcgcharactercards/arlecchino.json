@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "Arlecchino",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"ธาตุไฟ",
+		"หอก",
+		"Fatui"
+	],
+	"storytitle": "เดือนดับผู้เดียวดาย - Arlecchino",
+	"storytext": "ดาราอับแสง จันทร์โฉดเดียวดาย",
+	"source": "ได้รับหลังจากเชิญ Arlecchino ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "Invitation to a Beheading",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย หากเป็นไปได้ จะใช้<color=#FFFFFFFF>$[C122]</color>ของเป้าหมายสูงสุด 3 ชั้น เพื่อเพิ่มความเสียหายที่เท่ากัน",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย หากเป็นไปได้ จะใช้<color=#FFFFFFFF>บ่วงพันธะชีวัน</color>ของเป้าหมายสูงสุด 3 ชั้น เพื่อเพิ่มความเสียหายที่เท่ากัน",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย หากเป็นไปได้ จะใช้บ่วงพันธะชีวันของเป้าหมายสูงสุด 3 ชั้น เพื่อเพิ่มความเสียหายที่เท่ากัน",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "All Is Ash",
+			"descriptionraw": "สร้าง <color=#FFFFFFFF>$[C113141]</color> 5 ชั้น ในสนามของฝ่ายศัตรู และทำให้เกิด$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง <color=#FFFFFFFF>Blood-Debt Directive</color> 5 ชั้น ในสนามของฝ่ายศัตรู และทำให้เกิด{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 2 หน่วย",
+			"description": "สร้าง Blood-Debt Directive 5 ชั้น ในสนามของฝ่ายศัตรู และทำให้เกิดความเสียหายไฟ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "Balemoon Rising",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และลบล้าง <color=#FFFFFFFF>$[C122]</color>ทั้งหมดของตนเอง โดยที่ทุกการลบล้าง 1 ชั้น จะรักษาพลังชีวิตของตนเอง 1 หน่วย",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 4 หน่วย และลบล้าง <color=#FFFFFFFF>บ่วงพันธะชีวัน</color>ทั้งหมดของตนเอง โดยที่ทุกการลบล้าง 1 ชั้น จะรักษาพลังชีวิตของตนเอง 1 หน่วย",
+			"description": "สร้างความเสียหายไฟ 4 หน่วย และลบล้าง บ่วงพันธะชีวันทั้งหมดของตนเอง โดยที่ทุกการลบล้าง 1 ชั้น จะรักษาพลังชีวิตของตนเอง 1 หน่วย",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "The Balemoon Alone May Know",
+			"descriptionraw": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก <color=#FFFFFFFF>$[S13143]</color>\\n<color=#FFFFFFFF>เมื่อตนเองได้รับ<color=#FFFFFFFF>$[C122]</color>: </color>$[K100]ที่ตัวละครสร้าง จะเปลี่ยนเป็น$[K103]",
+			"descriptionreplaced": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก <color=#FFFFFFFF>Balemoon Rising</color>\\n<color=#FFFFFFFF>เมื่อตนเองได้รับ<color=#FFFFFFFF>บ่วงพันธะชีวัน</color>: </color>{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color>ที่ตัวละครสร้าง จะเปลี่ยนเป็น{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color>",
+			"description": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก Balemoon Rising\nเมื่อตนเองได้รับบ่วงพันธะชีวัน: ความเสียหายกายภาพที่ตัวละครสร้าง จะเปลี่ยนเป็นความเสียหายไฟ",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "The Balemoon Alone May Know",
+			"descriptionraw": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก <color=#FFFFFFFF>$[S13143]</color>\\n<color=#FFFFFFFF>เมื่อตนเองได้รับ<color=#FFFFFFFF>$[C122]</color>: </color>$[K100]ที่ตัวละครสร้าง จะเปลี่ยนเป็น$[K103]",
+			"descriptionreplaced": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก <color=#FFFFFFFF>Balemoon Rising</color>\\n<color=#FFFFFFFF>เมื่อตนเองได้รับ<color=#FFFFFFFF>บ่วงพันธะชีวัน</color>: </color>{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color>ที่ตัวละครสร้าง จะเปลี่ยนเป็น{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color>",
+			"description": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก Balemoon Rising\nเมื่อตนเองได้รับบ่วงพันธะชีวัน: ความเสียหายกายภาพที่ตัวละครสร้าง จะเปลี่ยนเป็นความเสียหายไฟ",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "The Balemoon Alone May Know",
+			"descriptionraw": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก <color=#FFFFFFFF>$[S13143]</color>\\n<color=#FFFFFFFF>เมื่อตนเองได้รับ<color=#FFFFFFFF>$[C122]</color>: </color>$[K100]ที่ตัวละครสร้าง จะเปลี่ยนเป็น$[K103]",
+			"descriptionreplaced": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก <color=#FFFFFFFF>Balemoon Rising</color>\\n<color=#FFFFFFFF>เมื่อตนเองได้รับ<color=#FFFFFFFF>บ่วงพันธะชีวัน</color>: </color>{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color>ที่ตัวละครสร้าง จะเปลี่ยนเป็น{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color>",
+			"description": "ตัวละครจะไม่ได้รับการรักษานอกเหนือจาก Balemoon Rising\nเมื่อตนเองได้รับบ่วงพันธะชีวัน: ความเสียหายกายภาพที่ตัวละครสร้าง จะเปลี่ยนเป็นความเสียหายไฟ",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

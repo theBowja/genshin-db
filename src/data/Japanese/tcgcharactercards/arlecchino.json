@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "アルレッキーノ",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"炎元素",
+		"長柄武器",
+		"ファデュイ"
+	],
+	"storytitle": "暝天の凶月・アルレッキーノ",
+	"storytext": "晦暝の群星、孤独なる凶月。",
+	"source": "キャッツテールでアルレッキーノを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "斬首への招待状",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。可能であれば、目標の<color=#FFFFFFFF>$[C122]</color>を最大3層まで消費して、消費した層数に応じてダメージをアップする。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。可能であれば、目標の<color=#FFFFFFFF>命の契約</color>を最大3層まで消費して、消費した層数に応じてダメージをアップする。",
+			"description": "物理ダメージを2与える。可能であれば、目標の命の契約を最大3層まで消費して、消費した層数に応じてダメージをアップする。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "万象、灰に帰す",
+			"descriptionraw": "相手のフィールドに<color=#FFFFFFFF>$[C113141]</color>を5層生成し、$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "相手のフィールドに<color=#FFFFFFFF>血償の勅令</color>を5層生成し、{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を2与える。",
+			"description": "相手のフィールドに血償の勅令を5層生成し、炎元素ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "昇りゆく凶月",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。自身のすべての<color=#FFFFFFFF>$[C122]</color>を取り除き、1層につき自身のHPを1回復する。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を4与える。自身のすべての<color=#FFFFFFFF>命の契約</color>を取り除き、1層につき自身のHPを1回復する。",
+			"description": "炎元素ダメージを4与える。自身のすべての命の契約を取り除き、1層につき自身のHPを1回復する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "悟れるものは凶月のみ",
+			"descriptionraw": "キャラが<color=#FFFFFFFF>$[S13143]</color>以外の治療を受けなくなる。\\n<color=#FFFFFFFF>自身に<color=#FFFFFFFF>$[C122]</color>が付与されている場合</color>、キャラの与える$[K100]が$[K103]へと変わる。",
+			"descriptionreplaced": "キャラが<color=#FFFFFFFF>昇りゆく凶月</color>以外の治療を受けなくなる。\\n<color=#FFFFFFFF>自身に<color=#FFFFFFFF>命の契約</color>が付与されている場合</color>、キャラの与える{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>が{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>へと変わる。",
+			"description": "キャラが昇りゆく凶月以外の治療を受けなくなる。\n自身に命の契約が付与されている場合、キャラの与える物理ダメージが炎元素ダメージへと変わる。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "悟れるものは凶月のみ",
+			"descriptionraw": "キャラが<color=#FFFFFFFF>$[S13143]</color>以外の治療を受けなくなる。\\n<color=#FFFFFFFF>自身に<color=#FFFFFFFF>$[C122]</color>が付与されている場合</color>、キャラの与える$[K100]が$[K103]へと変わる。",
+			"descriptionreplaced": "キャラが<color=#FFFFFFFF>昇りゆく凶月</color>以外の治療を受けなくなる。\\n<color=#FFFFFFFF>自身に<color=#FFFFFFFF>命の契約</color>が付与されている場合</color>、キャラの与える{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>が{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>へと変わる。",
+			"description": "キャラが昇りゆく凶月以外の治療を受けなくなる。\n自身に命の契約が付与されている場合、キャラの与える物理ダメージが炎元素ダメージへと変わる。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "悟れるものは凶月のみ",
+			"descriptionraw": "キャラが<color=#FFFFFFFF>$[S13143]</color>以外の治療を受けなくなる。\\n<color=#FFFFFFFF>自身に<color=#FFFFFFFF>$[C122]</color>が付与されている場合</color>、キャラの与える$[K100]が$[K103]へと変わる。",
+			"descriptionreplaced": "キャラが<color=#FFFFFFFF>昇りゆく凶月</color>以外の治療を受けなくなる。\\n<color=#FFFFFFFF>自身に<color=#FFFFFFFF>命の契約</color>が付与されている場合</color>、キャラの与える{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>が{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>へと変わる。",
+			"description": "キャラが昇りゆく凶月以外の治療を受けなくなる。\n自身に命の契約が付与されている場合、キャラの与える物理ダメージが炎元素ダメージへと変わる。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

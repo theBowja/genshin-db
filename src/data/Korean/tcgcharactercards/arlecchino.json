@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "아를레키노",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"불 원소",
+		"장병기",
+		"우인단"
+	],
+	"storytitle": "어둠 속 재액의 달·아를레키노",
+	"storytext": "희미한 뭇별 사이 고고한 액월",
+	"source": "캣테일 술집에서 아를레키노 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "사형장으로의 초대",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 가능할 경우, 대상의 <color=#FFFFFFFF>$[C122]</color>을 최대 3스택 소모하고, 해당 수치만큼 피해를 증가시킨다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다. 가능할 경우, 대상의 <color=#FFFFFFFF>생명의 계약</color>을 최대 3스택 소모하고, 해당 수치만큼 피해를 증가시킨다.",
+			"description": "물리 피해를 2pt 준다. 가능할 경우, 대상의 생명의 계약을 최대 3스택 소모하고, 해당 수치만큼 피해를 증가시킨다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "재가 된 만상",
+			"descriptionraw": "상대 필드에 <color=#FFFFFFFF>$[C113141]</color>을 5스택 생성하고 $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "상대 필드에 <color=#FFFFFFFF>핏값</color>을 5스택 생성하고 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 2pt 준다.",
+			"description": "상대 필드에 핏값을 5스택 생성하고 불 원소 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "떠오르는 재액의 달",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 자신의 모든 <color=#FFFFFFFF>$[C122]</color>을 제거한다. 1스택을 제거할 때마다 자신을 1pt 치유한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 4pt 주고 자신의 모든 <color=#FFFFFFFF>생명의 계약</color>을 제거한다. 1스택을 제거할 때마다 자신을 1pt 치유한다.",
+			"description": "불 원소 피해를 4pt 주고 자신의 모든 생명의 계약을 제거한다. 1스택을 제거할 때마다 자신을 1pt 치유한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "재액의 달만이 알 수 있다",
+			"descriptionraw": "캐릭터는 <color=#FFFFFFFF>$[S13143]</color> 이외의 치유를 받지 않는다.\\n<color=#FFFFFFFF>자신이 $[C122]을 부착 시:</color> 캐릭터가 주는 $[K100]가 $[K103]로 전환된다",
+			"descriptionreplaced": "캐릭터는 <color=#FFFFFFFF>떠오르는 재액의 달</color> 이외의 치유를 받지 않는다.\\n<color=#FFFFFFFF>자신이 생명의 계약을 부착 시:</color> 캐릭터가 주는 {SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>가 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>로 전환된다",
+			"description": "캐릭터는 떠오르는 재액의 달 이외의 치유를 받지 않는다.\n자신이 생명의 계약을 부착 시: 캐릭터가 주는 물리 피해가 불 원소 피해로 전환된다",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "재액의 달만이 알 수 있다",
+			"descriptionraw": "캐릭터는 <color=#FFFFFFFF>$[S13143]</color> 이외의 치유를 받지 않는다.\\n<color=#FFFFFFFF>자신이 $[C122]을 부착 시:</color> 캐릭터가 주는 $[K100]가 $[K103]로 전환된다",
+			"descriptionreplaced": "캐릭터는 <color=#FFFFFFFF>떠오르는 재액의 달</color> 이외의 치유를 받지 않는다.\\n<color=#FFFFFFFF>자신이 생명의 계약을 부착 시:</color> 캐릭터가 주는 {SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>가 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>로 전환된다",
+			"description": "캐릭터는 떠오르는 재액의 달 이외의 치유를 받지 않는다.\n자신이 생명의 계약을 부착 시: 캐릭터가 주는 물리 피해가 불 원소 피해로 전환된다",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "재액의 달만이 알 수 있다",
+			"descriptionraw": "캐릭터는 <color=#FFFFFFFF>$[S13143]</color> 이외의 치유를 받지 않는다.\\n<color=#FFFFFFFF>자신이 $[C122]을 부착 시:</color> 캐릭터가 주는 $[K100]가 $[K103]로 전환된다",
+			"descriptionreplaced": "캐릭터는 <color=#FFFFFFFF>떠오르는 재액의 달</color> 이외의 치유를 받지 않는다.\\n<color=#FFFFFFFF>자신이 생명의 계약을 부착 시:</color> 캐릭터가 주는 {SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>가 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>로 전환된다",
+			"description": "캐릭터는 떠오르는 재액의 달 이외의 치유를 받지 않는다.\n자신이 생명의 계약을 부착 시: 캐릭터가 주는 물리 피해가 불 원소 피해로 전환된다",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

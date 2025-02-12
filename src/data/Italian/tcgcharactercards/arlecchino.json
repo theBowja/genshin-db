@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "Arlecchino",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Pyro",
+		"Lancia",
+		"Fatui"
+	],
+	"storytitle": "Arlecchino, Mezzaluna di presagi nefasti",
+	"storytext": "Luna cruenta tra stelle evanescenti.",
+	"source": "Ricompensa ottenuta sfidando Arlecchino a duello alla Coda di Gatto e battendola in un duello amichevole",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "Invito alla decapitazione",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Se possibile, consuma fino a 3 accumuli di <color=#FFFFFFFF>$[C122]</color> del bersaglio e aumenta i DAN di una quantità equivalente.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>. Se possibile, consuma fino a 3 accumuli di <color=#FFFFFFFF>Legame vitale</color> del bersaglio e aumenta i DAN di una quantità equivalente.",
+			"description": "Infligge 2 DAN fisici. Se possibile, consuma fino a 3 accumuli di Legame vitale del bersaglio e aumenta i DAN di una quantità equivalente.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "Cenere alla cenere",
+			"descriptionraw": "Crea 5 accumuli di <color=#FFFFFFFF>$[C113141]</color> sul lato dell'avversario e infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Crea 5 accumuli di <color=#FFFFFFFF>Direttiva del debito di sangue</color> sul lato dell'avversario e infligge 2 {SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color>.",
+			"description": "Crea 5 accumuli di Direttiva del debito di sangue sul lato dell'avversario e infligge 2 DAN da Pyro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "Ascesa della Luna cruenta",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Rimuovi tutti gli accumuli di <color=#FFFFFFFF>$[C122]</color> e ripristina 1 PS per ogni accumulo.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Infligge 4 {SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color>. Rimuovi tutti gli accumuli di <color=#FFFFFFFF>Legame vitale</color> e ripristina 1 PS per ogni accumulo.",
+			"description": "Infligge 4 DAN da Pyro. Rimuovi tutti gli accumuli di Legame vitale e ripristina 1 PS per ogni accumulo.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "Cognizione della Luna cruenta",
+			"descriptionraw": "Il personaggio non riceverà effetti di guarigione fatta eccezione per <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Quando <color=#FFFFFFFF>$[C122]</color> è associato a sé stessi:</color> i $[K100] inflitti dal personaggio vengono convertiti in $[K103].",
+			"descriptionreplaced": "Il personaggio non riceverà effetti di guarigione fatta eccezione per <color=#FFFFFFFF>Ascesa della Luna cruenta</color>.\\n<color=#FFFFFFFF>Quando <color=#FFFFFFFF>Legame vitale</color> è associato a sé stessi:</color> i {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color> inflitti dal personaggio vengono convertiti in {SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color>.",
+			"description": "Il personaggio non riceverà effetti di guarigione fatta eccezione per Ascesa della Luna cruenta.\nQuando Legame vitale è associato a sé stessi: i DAN fisici inflitti dal personaggio vengono convertiti in DAN da Pyro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "Cognizione della Luna cruenta",
+			"descriptionraw": "Il personaggio non riceverà effetti di guarigione fatta eccezione per <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Quando <color=#FFFFFFFF>$[C122]</color> è associato a sé stessi:</color> i $[K100] inflitti dal personaggio vengono convertiti in $[K103].",
+			"descriptionreplaced": "Il personaggio non riceverà effetti di guarigione fatta eccezione per <color=#FFFFFFFF>Ascesa della Luna cruenta</color>.\\n<color=#FFFFFFFF>Quando <color=#FFFFFFFF>Legame vitale</color> è associato a sé stessi:</color> i {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color> inflitti dal personaggio vengono convertiti in {SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color>.",
+			"description": "Il personaggio non riceverà effetti di guarigione fatta eccezione per Ascesa della Luna cruenta.\nQuando Legame vitale è associato a sé stessi: i DAN fisici inflitti dal personaggio vengono convertiti in DAN da Pyro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "Cognizione della Luna cruenta",
+			"descriptionraw": "Il personaggio non riceverà effetti di guarigione fatta eccezione per <color=#FFFFFFFF>$[S13143]</color>.\\n<color=#FFFFFFFF>Quando <color=#FFFFFFFF>$[C122]</color> è associato a sé stessi:</color> i $[K100] inflitti dal personaggio vengono convertiti in $[K103].",
+			"descriptionreplaced": "Il personaggio non riceverà effetti di guarigione fatta eccezione per <color=#FFFFFFFF>Ascesa della Luna cruenta</color>.\\n<color=#FFFFFFFF>Quando <color=#FFFFFFFF>Legame vitale</color> è associato a sé stessi:</color> i {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color> inflitti dal personaggio vengono convertiti in {SPRITE_PRESET#2103}<color=#FF9999FF>DAN da Pyro</color>.",
+			"description": "Il personaggio non riceverà effetti di guarigione fatta eccezione per Ascesa della Luna cruenta.\nQuando Legame vitale è associato a sé stessi: i DAN fisici inflitti dal personaggio vengono convertiti in DAN da Pyro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		}
+	]
+}

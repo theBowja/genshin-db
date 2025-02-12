@@ -1,0 +1,111 @@
+{
+	"id": 1314,
+	"name": "Arlecchino",
+	"shareid": 454,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_CAMP_FATUI"
+	],
+	"tagstext": [
+		"Pyro",
+		"Stangenwaffe",
+		"Fatui"
+	],
+	"storytitle": "Unheil verkündender Mond – Arlecchino",
+	"storytext": "Einsamer Mond in einer Nacht erlöschender Sterne.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Arlecchino in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 13141,
+			"name": "Einladung zur Enthauptung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Verbraucht, wenn möglich, bis zu 3 Stapelungen <color=#FFFFFFFF>$[C122]</color> und erhöht den Schaden um dieselbe Menge.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_NONE",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>. Verbraucht, wenn möglich, bis zu 3 Stapelungen <color=#FFFFFFFF>Eid des Lebens</color> und erhöht den Schaden um dieselbe Menge.",
+			"description": "Verursacht 2 Pkt. phys. SCH. Verbraucht, wenn möglich, bis zu 3 Stapelungen Eid des Lebens und erhöht den Schaden um dieselbe Menge.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13142,
+			"name": "Alles wird zu Staub",
+			"descriptionraw": "Erschafft auf dem Feld deines Gegners 5 Stapelungen <color=#FFFFFFFF>$[C113141]</color> und verursacht anschließend $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Erschafft auf dem Feld deines Gegners 5 Stapelungen <color=#FFFFFFFF>Blutige Vergeltung</color> und verursacht anschließend 2 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Erschafft auf dem Feld deines Gegners 5 Stapelungen Blutige Vergeltung und verursacht anschließend 2 Pkt. Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13143,
+			"name": "Aufgehen des Mondes des Verderbens",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], entfernt sämtlichen eigenen <color=#FFFFFFFF>$[C122]</color> und stellt selbst für jede entfernte Stapelung 1 LP wieder her.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>, entfernt sämtlichen eigenen <color=#FFFFFFFF>Eid des Lebens</color> und stellt selbst für jede entfernte Stapelung 1 LP wieder her.",
+			"description": "Verursacht 4 Pkt. Pyro-SCH, entfernt sämtlichen eigenen Eid des Lebens und stellt selbst für jede entfernte Stapelung 1 LP wieder her.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13144,
+			"name": "Nur der Mond des Verderbens weiß",
+			"descriptionraw": "Figuren können keine Heilung außer von <color=#FFFFFFFF>$[S13143]</color> erhalten.\\n<color=#FFFFFFFF>Wenn sich selbst <color=#FFFFFFFF>$[C122]</color> verliehen wird:</color> $[K100|s2] durch die Figur wird nun $[K103|s1].",
+			"descriptionreplaced": "Figuren können keine Heilung außer von <color=#FFFFFFFF>Aufgehen des Mondes des Verderbens</color> erhalten.\\n<color=#FFFFFFFF>Wenn sich selbst <color=#FFFFFFFF>Eid des Lebens</color> verliehen wird:</color> {SPRITE_PRESET#2100}<color=#FFFFFFFF>Phys. SCH</color> durch die Figur wird nun {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Figuren können keine Heilung außer von Aufgehen des Mondes des Verderbens erhalten.\nWenn sich selbst Eid des Lebens verliehen wird: Phys. SCH durch die Figur wird nun Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 13146,
+			"name": "Nur der Mond des Verderbens weiß",
+			"descriptionraw": "Figuren können keine Heilung außer von <color=#FFFFFFFF>$[S13143]</color> erhalten.\\n<color=#FFFFFFFF>Wenn sich selbst <color=#FFFFFFFF>$[C122]</color> verliehen wird:</color> $[K100|s2] durch die Figur wird nun $[K103|s1].",
+			"descriptionreplaced": "Figuren können keine Heilung außer von <color=#FFFFFFFF>Aufgehen des Mondes des Verderbens</color> erhalten.\\n<color=#FFFFFFFF>Wenn sich selbst <color=#FFFFFFFF>Eid des Lebens</color> verliehen wird:</color> {SPRITE_PRESET#2100}<color=#FFFFFFFF>Phys. SCH</color> durch die Figur wird nun {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Figuren können keine Heilung außer von Aufgehen des Mondes des Verderbens erhalten.\nWenn sich selbst Eid des Lebens verliehen wird: Phys. SCH durch die Figur wird nun Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 13147,
+			"name": "Nur der Mond des Verderbens weiß",
+			"descriptionraw": "Figuren können keine Heilung außer von <color=#FFFFFFFF>$[S13143]</color> erhalten.\\n<color=#FFFFFFFF>Wenn sich selbst <color=#FFFFFFFF>$[C122]</color> verliehen wird:</color> $[K100|s2] durch die Figur wird nun $[K103|s1].",
+			"descriptionreplaced": "Figuren können keine Heilung außer von <color=#FFFFFFFF>Aufgehen des Mondes des Verderbens</color> erhalten.\\n<color=#FFFFFFFF>Wenn sich selbst <color=#FFFFFFFF>Eid des Lebens</color> verliehen wird:</color> {SPRITE_PRESET#2100}<color=#FFFFFFFF>Phys. SCH</color> durch die Figur wird nun {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color>.",
+			"description": "Figuren können keine Heilung außer von Aufgehen des Mondes des Verderbens erhalten.\nWenn sich selbst Eid des Lebens verliehen wird: Phys. SCH durch die Figur wird nun Pyro-SCH.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}
