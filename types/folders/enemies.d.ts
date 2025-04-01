@@ -7,7 +7,7 @@ declare module "genshin-db" {
 		specialNames: string[]; // list of possible special names
 
 		monsterType: 'MONSTER_BOSS' | 'MONSTER_ORDINARY'; // enum
-		enemyType: 'BOSS' | 'COMMON' | 'ELITE'; // enum
+		enemyType: 'BOSS' | 'ELITE' | 'NORMAL'; // enum
 		categoryType: 'CODEX_SUBTYPE_ABYSS' | 'CODEX_SUBTYPE_AUTOMATRON' | 'CODEX_SUBTYPE_BEAST' | 'CODEX_SUBTYPE_BOSS' | 'CODEX_SUBTYPE_ELEMENTAL' | 'CODEX_SUBTYPE_FATUI' | 'CODEX_SUBTYPE_HILICHURL' | 'CODEX_SUBTYPE_HUMAN'; // enum
 		categoryText: string; // translated
 		description: string;
