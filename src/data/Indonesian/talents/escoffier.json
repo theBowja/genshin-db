@@ -1,0 +1,244 @@
+{
+	"id": 11201,
+	"name": "Escoffier",
+	"combat1": {
+		"name": "Kitchen Skills",
+		"descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nMelancarkan hingga 3 serangan tombak berturut-turut.\n\n<color=#FFD780FF>Charged Attack</color>\nMengonsumsi sejumlah Stamina untuk menyerang ke atas.\n\n<color=#FFD780FF>Plunging Attack</color>\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"description": "Normal Attack\nMelancarkan hingga 3 serangan tombak berturut-turut.\n\nCharged Attack\nMengonsumsi sejumlah Stamina untuk menyerang ke atas.\n\nPlunging Attack\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}+{param4:F1P}",
+				"DMG Charged Attack|{param5:F1P}",
+				"Konsumsi Stamina Charged Attack|{param6:F1}",
+				"DMG Selama Plunging|{param7:F1P}",
+				"DMG Plunging Attack Rendah/Tinggi|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Low-Temperature Cooking",
+		"descriptionRaw": "Silakan saksikan makna \"memasak\" yang sebenarnya! Melancarkan keterampilan memasak Escoffier yang dibangga-banggakan berdasarkan Mode Tekan atau Mode Tahan.\n\n<color=#FFD780FF>Mode Tekan</color>\nMengaktifkan All-Spectrum Multi-Use Cooking Mek dalam Cold Storage Mode dan mengakibatkan <color=#99FFFFFF>Cryo DMG Area</color> ke musuh sekitar.\n\n<color=#FFD780FF>Cooking Mek: Cold Storage Mode</color>\nAkan mengikuti Karakter aktif dan menembakkan Frosty Parfait yang mengakibatkan <color=#99FFFFFF>Cryo DMG</color> ke musuh di sekitar secara berkala.\n\n<color=#FFD780FF>Arkhe: Ousia</color>\nSetiap satu kurun waktu, saat Escoffier mengaktifkan Cooking Mek dalam Cold Storage Mode, akan menjatuhkan Surging Blade yang mengakibatkan Ousia-aligned <color=#99FFFFFF>Cryo DMG Area</color>.\n\n<color=#FFD780FF>Mode Tahan</color>\nMengaktifkan {LINK#N11120002}<color=#FFD780FF>Off-the-Cuff Cookery Mode</color>{/LINK} pada Cooking Mek miliknya.",
+		"description": "Silakan saksikan makna \"memasak\" yang sebenarnya! Melancarkan keterampilan memasak Escoffier yang dibangga-banggakan berdasarkan Mode Tekan atau Mode Tahan.\n\nMode Tekan\nMengaktifkan All-Spectrum Multi-Use Cooking Mek dalam Cold Storage Mode dan mengakibatkan Cryo DMG Area ke musuh sekitar.\n\nCooking Mek: Cold Storage Mode\nAkan mengikuti Karakter aktif dan menembakkan Frosty Parfait yang mengakibatkan Cryo DMG ke musuh di sekitar secara berkala.\n\nArkhe: Ousia\nSetiap satu kurun waktu, saat Escoffier mengaktifkan Cooking Mek dalam Cold Storage Mode, akan menjatuhkan Surging Blade yang mengakibatkan Ousia-aligned Cryo DMG Area.\n\nMode Tahan\nMengaktifkan **Off-the-Cuff Cookery Mode** pada Cooking Mek miliknya.",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"DMG Frosty Parfait|{param2:F1P}",
+				"Durasi Cold Storage Mode|{param3:F1} dtk",
+				"DMG Surging Blade|{param4:F1P}",
+				"Jeda CD Surging Blade|{param5:F1} dtk",
+				"Cooldown (Mode Tekan)|{param6:F1} detik",
+				"Cooldown (Mode Tahan)|{param7:F1} detik"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Scoring Cuts",
+		"descriptionRaw": "Escoffier menunjukkan keahlian pisaunya, mengakibatkan <color=#99FFFFFF>Cryo DMG Area</color> dan memulihkan HP seluruh karakter party di sekitar berdasarkan ATK Escoffier.",
+		"description": "Escoffier menunjukkan keahlian pisaunya, mengakibatkan Cryo DMG Area dan memulihkan HP seluruh karakter party di sekitar berdasarkan ATK Escoffier.",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"Jumlah Pemulihan HP|{param2:F1P} ATK+{param3:I}",
+				"Cooldown|{param4:F1} dtk",
+				"Konsumsi Energy|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Better to Salivate Than Medicate",
+		"descriptionRaw": "Setelah melancarkan Elemental Burst <color=#FFD780FF>{LINK#S11125}Scoring Cuts{/LINK}</color>, Escoffier akan mendapatkan efek Rehab Diet selama 9 detik: Memulihkan HP Karakter aktif di sekitar sebesar 138,24% ATK Escoffier setiap detiknya.",
+		"description": "Setelah melancarkan Elemental Burst **Scoring Cuts**, Escoffier akan mendapatkan efek Rehab Diet selama 9 detik: Memulihkan HP Karakter aktif di sekitar sebesar 138,24% ATK Escoffier setiap detiknya."
+	},
+	"passive2": {
+		"name": "Inspiration-Immersed Seasoning",
+		"descriptionRaw": "Saat ada 1/2/3/4 Karakter <color=#80C0FFFF>Hydro</color> atau <color=#99FFFFFF>Cryo</color> di dalam party, setelah Elemental Skill <color=#FFD780FF>{LINK#S11122}Low-Temperature Cooking{/LINK}</color> atau Elemental Burst <color=#FFD780FF>{LINK#S11125}Scoring Cuts{/LINK}</color> miliknya mengenai musuh, akan mengurangi <color=#80C0FFFF>Hydro RES</color> dan <color=#99FFFFFF>Cryo RES</color> musuh ini sebesar 5%/10%/15%/55% selama 12 detik.",
+		"description": "Saat ada 1/2/3/4 Karakter Hydro atau Cryo di dalam party, setelah Elemental Skill **Low-Temperature Cooking** atau Elemental Burst **Scoring Cuts** miliknya mengenai musuh, akan mengurangi Hydro RES dan Cryo RES musuh ini sebesar 5%/10%/15%/55% selama 12 detik."
+	},
+	"passive3": {
+		"name": "Constant Off-the-Cuff Cookery",
+		"descriptionRaw": "Saat menahan tombol Elemental Skill <color=#FFD780FF>{LINK#S11122}Low-Temperature Cooking{/LINK}</color>, Escoffier akan mengaktifkan All-Spectrum Multi-Use Cooking Mek dalam Off-the-Cuff Cookery Mode.\n\n<color=#FFD780FF>Cooking Mek: Off-the-Cuff Cookery Mode</color>\n·Meletakkan Cooking Mek di medan pertempuran. Cooking Mek bisa menyerap serangan elemental. Saat energi elemental yang diserap mencapai batas tertentu, Escoffier akan mengonversi Bahan Masak yang sudah diletakkan sebelumnya menjadi makanan yang lezat.\n·Escoffier membutuhkan waktu untuk membeli Bahan Masak yang baru. Setiap minggunya, dia hanya dapat menggunakan cara ini untuk menghasilkan Makanan dalam jumlah tertentu, jumlah ini akan direset setiap hari Senin pukul 04:00.",
+		"description": "Saat menahan tombol Elemental Skill **Low-Temperature Cooking**, Escoffier akan mengaktifkan All-Spectrum Multi-Use Cooking Mek dalam Off-the-Cuff Cookery Mode.\n\nCooking Mek: Off-the-Cuff Cookery Mode\n·Meletakkan Cooking Mek di medan pertempuran. Cooking Mek bisa menyerap serangan elemental. Saat energi elemental yang diserap mencapai batas tertentu, Escoffier akan mengonversi Bahan Masak yang sudah diletakkan sebelumnya menjadi makanan yang lezat.\n·Escoffier membutuhkan waktu untuk membeli Bahan Masak yang baru. Setiap minggunya, dia hanya dapat menggunakan cara ini untuk menghasilkan Makanan dalam jumlah tertentu, jumlah ini akan direset setiap hari Senin pukul 04:00."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104341,
+				"name": "Teachings of Justice",
+				"count": 3
+			},
+			{
+				"id": 112083,
+				"name": "Meshing Gear",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104342,
+				"name": "Guide to Justice",
+				"count": 2
+			},
+			{
+				"id": 112084,
+				"name": "Mechanical Spur Gear",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104342,
+				"name": "Guide to Justice",
+				"count": 4
+			},
+			{
+				"id": 112084,
+				"name": "Mechanical Spur Gear",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104342,
+				"name": "Guide to Justice",
+				"count": 6
+			},
+			{
+				"id": 112084,
+				"name": "Mechanical Spur Gear",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104342,
+				"name": "Guide to Justice",
+				"count": 9
+			},
+			{
+				"id": 112084,
+				"name": "Mechanical Spur Gear",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104343,
+				"name": "Philosophies of Justice",
+				"count": 4
+			},
+			{
+				"id": 112085,
+				"name": "Artificed Dynamic Gear",
+				"count": 4
+			},
+			{
+				"id": 113068,
+				"name": "Eroded Horn",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104343,
+				"name": "Philosophies of Justice",
+				"count": 6
+			},
+			{
+				"id": 112085,
+				"name": "Artificed Dynamic Gear",
+				"count": 6
+			},
+			{
+				"id": 113068,
+				"name": "Eroded Horn",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104343,
+				"name": "Philosophies of Justice",
+				"count": 12
+			},
+			{
+				"id": 112085,
+				"name": "Artificed Dynamic Gear",
+				"count": 9
+			},
+			{
+				"id": 113068,
+				"name": "Eroded Horn",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104343,
+				"name": "Philosophies of Justice",
+				"count": 16
+			},
+			{
+				"id": 112085,
+				"name": "Artificed Dynamic Gear",
+				"count": 12
+			},
+			{
+				"id": 113068,
+				"name": "Eroded Horn",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

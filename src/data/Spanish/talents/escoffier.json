@@ -1,0 +1,244 @@
+{
+	"id": 11201,
+	"name": "Escoffier",
+	"combat1": {
+		"name": "Habilidades culinarias",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nRealiza hasta 3 ataques rápidos con lanza.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume una cierta cantidad de Aguante para realizar un ataque ascendente.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño en el AdE en el momento del impacto.",
+		"description": "Ataque Normal\nRealiza hasta 3 ataques rápidos con lanza.\n\nAtaque Cargado\nConsume una cierta cantidad de Aguante para realizar un ataque ascendente.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P} + {param4:F1P}",
+				"Daño de ATQ Cargado|{param5:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param6:F1} pts.",
+				"Daño de Caída|{param7:F1P}",
+				"Daño de impacto de caída baja/alta|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Cocina a baja temperatura",
+		"descriptionRaw": "#¡Presencia la verdadera esencia de la cocina! Dependiendo de si se {LAYOUT_MOBILE#toca una vez}{LAYOUT_PC#pulsa una vez}{LAYOUT_PS#pulsa una vez} o se mantiene pulsado, Escoffier mostrará diferentes técnicas culinarias, cada una de las cuales representa un orgullo para Fontaine.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Un toque}{LAYOUT_PC#Pulsar una vez}{LAYOUT_PS#Pulsar una vez}</color>\nActiva el mecachef multitarea de amplio espectro en modo “crioalmacenamiento” e inflige <color=#99FFFFFF>Daño Cryo en el AdE</color> a los enemigos cercanos.\n\n<color=#FFD780FF>Mecachef: modo crioalmacenamiento</color>\nEl mecachef sigue al personaje en uso y, cada cierto tiempo, lanza un parfait helado a los enemigos cercanos que inflige <color=#99FFFFFF>Daño Cryo</color>.\n\n<color=#FFD780FF>Arjé: ousía</color>\nCada cierto tiempo, cuando Escoffier activa el mecachef multitarea de amplio espectro en modo crioalmacenamiento, invoca un filo fluyente que inflige <color=#99FFFFFF>Daño Cryo en el AdE</color> cargado de energía ousía.\n\n<color=#FFD780FF>Mantener pulsado</color>\nActiva el mecachef en {LINK#N11120002}<color=#FFD780FF>modo cocina improvisada</color>{/LINK}.",
+		"description": "¡Presencia la verdadera esencia de la cocina! Dependiendo de si se pulsa una vez o se mantiene pulsado, Escoffier mostrará diferentes técnicas culinarias, cada una de las cuales representa un orgullo para Fontaine.\n\nPulsar una vez\nActiva el mecachef multitarea de amplio espectro en modo “crioalmacenamiento” e inflige Daño Cryo en el AdE a los enemigos cercanos.\n\nMecachef: modo crioalmacenamiento\nEl mecachef sigue al personaje en uso y, cada cierto tiempo, lanza un parfait helado a los enemigos cercanos que inflige Daño Cryo.\n\nArjé: ousía\nCada cierto tiempo, cuando Escoffier activa el mecachef multitarea de amplio espectro en modo crioalmacenamiento, invoca un filo fluyente que inflige Daño Cryo en el AdE cargado de energía ousía.\n\nMantener pulsado\nActiva el mecachef en **modo cocina improvisada**.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de parfait helado|{param2:F1P}",
+				"Duración de modo crioalmacenamiento|{param3:F1} s",
+				"Daño de filo fluyente|{param4:F1P}",
+				"Intervalo de filo fluyente|{param5:F1} s",
+				"TdE al pulsar una vez|{param6:F1} s",
+				"TdE de mantener pulsado|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Técnica de corte",
+		"descriptionRaw": "En un alarde de su excepcional habilidad con el cuchillo, Escoffier inflige <color=#99FFFFFF>Daño Cryo en el AdE</color> y regenera Vida a todos los personajes cercanos del equipo en función del ATQ de Escoffier.",
+		"description": "En un alarde de su excepcional habilidad con el cuchillo, Escoffier inflige Daño Cryo en el AdE y regenera Vida a todos los personajes cercanos del equipo en función del ATQ de Escoffier.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Curación|{param2:F1P} de ATQ + {param3:I}",
+				"TdE|{param4:F1} s",
+				"Energía Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Más vale comer que curar",
+		"descriptionRaw": "#Tras usar su Habilidad Definitiva, <color=#FFD780FF>{LINK#S11125}Técnica de corte{/LINK}</color>, Escoffier obtiene el efecto de “dieta rehabilitadora” durante 9{NON_BREAK_SPACE}s, con el cual regenera Vida cada segundo a los personajes en uso cercanos en una cantidad equivalente al 138.24% del ATQ de Escoffier.",
+		"description": "Tras usar su Habilidad Definitiva, **Técnica de corte**, Escoffier obtiene el efecto de “dieta rehabilitadora” durante 9 s, con el cual regenera Vida cada segundo a los personajes en uso cercanos en una cantidad equivalente al 138.24% del ATQ de Escoffier."
+	},
+	"passive2": {
+		"name": "Condimentación inspirada",
+		"descriptionRaw": "#Si en el equipo hay 1/2/3/4 personajes <color=#80C0FFFF>Hydro</color> o <color=#99FFFFFF>Cryo</color>, al golpear a un enemigo con la Habilidad Elemental, <color=#FFD780FF>{LINK#S11122}Cocina a baja temperatura{/LINK}</color>, o la Habilidad Definitiva, <color=#FFD780FF>{LINK#S11125}Técnica de corte{/LINK}</color>, de Escoffier, la RES <color=#80C0FFFF>Hydro</color> y la RES <color=#99FFFFFF>Cryo</color> de dicho enemigo se reducen en un 5%/10%/15%/55% durante 12{NON_BREAK_SPACE}s.",
+		"description": "Si en el equipo hay 1/2/3/4 personajes Hydro o Cryo, al golpear a un enemigo con la Habilidad Elemental, **Cocina a baja temperatura**, o la Habilidad Definitiva, **Técnica de corte**, de Escoffier, la RES Hydro y la RES Cryo de dicho enemigo se reducen en un 5%/10%/15%/55% durante 12 s."
+	},
+	"passive3": {
+		"name": "Siempre lista para improvisar",
+		"descriptionRaw": "Al mantener pulsada la Habilidad Elemental, <color=#FFD780FF>{LINK#S11122}Cocina a baja temperatura{/LINK}</color>, Escoffier activará el mecachef multitarea de amplio espectro en modo cocina improvisada.\n\n<color=#FFD780FF>Mecachef: modo cocina improvisada</color>\n·Coloca al mecachef en el campo de batalla. El mecachef puede absorber ataques elementales. Cuando la Energía Elemental absorbida alcance el límite, Escoffier podrá convertir los ingredientes que ha colocado en él en platos de comida.\n·Escoffier necesita tiempo para comprar nuevos ingredientes y solo puede cocinar cierta cantidad de comida de esta manera semanalmente. Los intentos para cocinar se reinician todos los lunes a las 4:00 a.m.",
+		"description": "Al mantener pulsada la Habilidad Elemental, **Cocina a baja temperatura**, Escoffier activará el mecachef multitarea de amplio espectro en modo cocina improvisada.\n\nMecachef: modo cocina improvisada\n·Coloca al mecachef en el campo de batalla. El mecachef puede absorber ataques elementales. Cuando la Energía Elemental absorbida alcance el límite, Escoffier podrá convertir los ingredientes que ha colocado en él en platos de comida.\n·Escoffier necesita tiempo para comprar nuevos ingredientes y solo puede cocinar cierta cantidad de comida de esta manera semanalmente. Los intentos para cocinar se reinician todos los lunes a las 4:00 a.m."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104341,
+				"name": "Enseñanzas de la justicia",
+				"count": 3
+			},
+			{
+				"id": 112083,
+				"name": "Engranaje de malla",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104342,
+				"name": "Guía de la justicia",
+				"count": 2
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104342,
+				"name": "Guía de la justicia",
+				"count": 4
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104342,
+				"name": "Guía de la justicia",
+				"count": 6
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104342,
+				"name": "Guía de la justicia",
+				"count": 9
+			},
+			{
+				"id": 112084,
+				"name": "Mecaengranaje recto",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofía de la justicia",
+				"count": 4
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 4
+			},
+			{
+				"id": 113068,
+				"name": "Cuerno corroído",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofía de la justicia",
+				"count": 6
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 6
+			},
+			{
+				"id": 113068,
+				"name": "Cuerno corroído",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofía de la justicia",
+				"count": 12
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 9
+			},
+			{
+				"id": 113068,
+				"name": "Cuerno corroído",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofía de la justicia",
+				"count": 16
+			},
+			{
+				"id": 112085,
+				"name": "Engranaje mecadinámico",
+				"count": 12
+			},
+			{
+				"id": 113068,
+				"name": "Cuerno corroído",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}

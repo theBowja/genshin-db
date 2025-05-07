@@ -1,0 +1,246 @@
+{
+	"id": 11301,
+	"name": "Ifa",
+	"combat1": {
+		"name": "Rite des vents dissipateurs",
+		"descriptionRaw": "<color=#FFD780FF>Attaque normale</color>\nEnchaîne jusqu'à 3 attaques qui infligent des <color=#80FFD7FF>DGT Anémo</color>.\n\n<color=#FFD780FF>Attaque chargée</color>\nConsomme de l'endurance pour tirer en avant et infliger des <color=#80FFD7FF>DGT Anémo de zone</color>.\n\n<color=#FFD780FF>Attaque plongeante</color>\nPlonge depuis les airs, infligeant des DGT aux ennemis en chemin et des <color=#80FFD7FF>DGT Anémo de zone</color> à l'impact.",
+		"description": "Attaque normale\nEnchaîne jusqu'à 3 attaques qui infligent des DGT Anémo.\n\nAttaque chargée\nConsomme de l'endurance pour tirer en avant et infliger des DGT Anémo de zone.\n\nAttaque plongeante\nPlonge depuis les airs, infligeant des DGT aux ennemis en chemin et des DGT Anémo de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT attaque chargée|{param4:F1P}",
+				"Coût d'endurance attaque chargée|{param5:F1} pts",
+				"DGT durant la chute|{param6:F1P}",
+				"DGT chute basse/élevée|{param7:P}/{param8:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Prévention des maladies aériennes",
+		"descriptionRaw": "Il est temps qu'un vrai poto prenne le relais ! Ifa appelle Cacucu en renfort.\nAprès utilisation, Ifa obtient 80 pts de noctâme et entre dans l'état {LINK#N11130003}<color=#FFD780FF>Bénédiction noctâme</color>{/LINK}. Pendant sa bénédiction noctâme, Ifa flotte dans les airs avec l'aide de Cacucu et ses attaques normales sont converties en {LINK#N11130001}<color=#FFD780FF>tirs de soutien</color>{/LINK} qui diffèrent selon qu'ils sont déclenchés avec un appui simple ou un appui long, envoyant des tirs toniques qui peuvent soigner tous les personnages de l'équipe.\n\nDe plus, utiliser sa compétence élémentaire <color=#FFD780FF>Prévention des maladies aériennes</color> avec un appui long pendant sa bénédiction noctâme permet à Ifa de déclencher à la place une attaque plongeante infusée de noctâme, relâcher la compétence permettant d'interrompre l'attaque plongeante tout en continuant à flotter. La bénédiction noctâme d'Ifa prend cependant fin lorsqu'il touche terre après cette attaque plongeante.",
+		"description": "Il est temps qu'un vrai poto prenne le relais ! Ifa appelle Cacucu en renfort.\nAprès utilisation, Ifa obtient 80 pts de noctâme et entre dans l'état **Bénédiction noctâme**. Pendant sa bénédiction noctâme, Ifa flotte dans les airs avec l'aide de Cacucu et ses attaques normales sont converties en **tirs de soutien** qui diffèrent selon qu'ils sont déclenchés avec un appui simple ou un appui long, envoyant des tirs toniques qui peuvent soigner tous les personnages de l'équipe.\n\nDe plus, utiliser sa compétence élémentaire Prévention des maladies aériennes avec un appui long pendant sa bénédiction noctâme permet à Ifa de déclencher à la place une attaque plongeante infusée de noctâme, relâcher la compétence permettant d'interrompre l'attaque plongeante tout en continuant à flotter. La bénédiction noctâme d'Ifa prend cependant fin lorsqu'il touche terre après cette attaque plongeante.",
+		"attributes": {
+			"labels": [
+				"DGT tir tonique|{param1:F1P}",
+				"Soins tir tonique|{param2:F1P} de maîtrise élémentaire + {param3:F1}",
+				"Limite de noctâme|{param4:F1} pts",
+				"Temps de recharge|{param5:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Champ de sédation composé",
+		"descriptionRaw": "Ifa envoie un sédatif thérapeutique sur un ennemi (temporairement agressif). Le sédatif explose à l'impact, créant un champ de vent restrictif qui attire les éléments et ennemis proches tout en infligeant des <color=#80FFD7FF>DGT Anémo de zone</color> infusés de noctâme.\nEn touchant un ennemi affecté par l'élément <color=#80C0FFFF>Hydro</color>, <color=#FF9999FF>Pyro</color>, <color=#99FFFFFF>Cryo</color> ou <color=#FFACFFFF>Électro</color>, le sédatif thérapeutique applique à ce dernier une {LINK#N11130004}<color=#FFD780FF>marque de sédation</color>{/LINK}.",
+		"description": "Ifa envoie un sédatif thérapeutique sur un ennemi (temporairement agressif). Le sédatif explose à l'impact, créant un champ de vent restrictif qui attire les éléments et ennemis proches tout en infligeant des DGT Anémo de zone infusés de noctâme.\nEn touchant un ennemi affecté par l'élément Hydro, Pyro, Cryo ou Électro, le sédatif thérapeutique applique à ce dernier une **marque de sédation**.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT marque de sédation|{param2:F1P}",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Vision de médecin de terrain",
+		"descriptionRaw": "Pendant sa bénédiction noctâme, Ifa obtient 1 pt d'{LINK#N11130002}<color=#FFD780FF>Essentiels de sauvetage</color>{/LINK} pour chaque point de noctâme que tous les personnages de l'équipe possèdent actuellement. Les points d'Essentiels de sauvetage augmentent les DGT des réactions de Dispersion et d'Électrocution déclenchées par les membres de l'équipe à proximité.",
+		"description": "Pendant sa bénédiction noctâme, Ifa obtient 1 pt d'**Essentiels de sauvetage** pour chaque point de noctâme que tous les personnages de l'équipe possèdent actuellement. Les points d'Essentiels de sauvetage augmentent les DGT des réactions de Dispersion et d'Électrocution déclenchées par les membres de l'équipe à proximité."
+	},
+	"passive2": {
+		"name": "Accord d'entraide",
+		"descriptionRaw": "Lorsqu'un membre de l'équipe à proximité déclenche une éruption noctâme, la maîtrise élémentaire d'Ifa augmente de 80 pts pendant 10 s.",
+		"description": "Lorsqu'un membre de l'équipe à proximité déclenche une éruption noctâme, la maîtrise élémentaire d'Ifa augmente de 80 pts pendant 10 s."
+	},
+	"passive3": {
+		"name": "Don de la nuit : Secours d'urgence ciblé",
+		"descriptionRaw": "Après avoir épuisé ses points de noctâme, Ifa change pour consommer du phlogistique afin de maintenir sa bénédiction noctâme.\nDans une zone de Natlan avec des mécanismes phlogistiques, la transmission noctâme « Ifa » peut être utilisée. Lorsque le personnage déployé est à une certaine hauteur dans les airs, le déploiement d'Ifa déclenche l'effet suivant : Ifa entre dans l'état Bénédiction noctâme et obtient 32 pts de noctâme. La transmission noctâme peut être déclenchée une fois toutes les 10 s par votre équipe.",
+		"description": "Après avoir épuisé ses points de noctâme, Ifa change pour consommer du phlogistique afin de maintenir sa bénédiction noctâme.\nDans une zone de Natlan avec des mécanismes phlogistiques, la transmission noctâme « Ifa » peut être utilisée. Lorsque le personnage déployé est à une certaine hauteur dans les airs, le déploiement d'Ifa déclenche l'effet suivant : Ifa entre dans l'état Bénédiction noctâme et obtient 32 pts de noctâme. La transmission noctâme peut être déclenchée une fois toutes les 10 s par votre équipe."
+	},
+	"passive4": {
+		"name": "Bandage tactique à compresses chaudes",
+		"descriptionRaw": "Lorsque votre personnage déployé ou saurien habité a moins de 40 % de PV dans une zone de Natlan avec des mécanismes phlogistiques, Ifa consomme 10 pts de phlogistique pour restaurer 40 % de ses PV. Cet effet peut être déclenché une fois toutes les 10 s et ne s'applique pas dans les donjons, dans les Donjons de la conquête et dans les Profondeurs spiralées.",
+		"description": "Lorsque votre personnage déployé ou saurien habité a moins de 40 % de PV dans une zone de Natlan avec des mécanismes phlogistiques, Ifa consomme 10 pts de phlogistique pour restaurer 40 % de ses PV. Cet effet peut être déclenché une fois toutes les 10 s et ne s'applique pas dans les donjons, dans les Donjons de la conquête et dans les Profondeurs spiralées."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104353,
+				"name": "Enseignement du Conflit",
+				"count": 3
+			},
+			{
+				"id": 112101,
+				"name": "Croc juvénile",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 2
+			},
+			{
+				"id": 112102,
+				"name": "Croc mature",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 4
+			},
+			{
+				"id": 112102,
+				"name": "Croc mature",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 6
+			},
+			{
+				"id": 112102,
+				"name": "Croc mature",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104354,
+				"name": "Guide du Conflit",
+				"count": 9
+			},
+			{
+				"id": 112102,
+				"name": "Croc mature",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 4
+			},
+			{
+				"id": 112103,
+				"name": "Croc de tyran",
+				"count": 4
+			},
+			{
+				"id": 113074,
+				"name": "Échantillon ascensionné : Tour",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 6
+			},
+			{
+				"id": 112103,
+				"name": "Croc de tyran",
+				"count": 6
+			},
+			{
+				"id": 113074,
+				"name": "Échantillon ascensionné : Tour",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 12
+			},
+			{
+				"id": 112103,
+				"name": "Croc de tyran",
+				"count": 9
+			},
+			{
+				"id": 113074,
+				"name": "Échantillon ascensionné : Tour",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104355,
+				"name": "Philosophie du Conflit",
+				"count": 16
+			},
+			{
+				"id": 112103,
+				"name": "Croc de tyran",
+				"count": 12
+			},
+			{
+				"id": 113074,
+				"name": "Échantillon ascensionné : Tour",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

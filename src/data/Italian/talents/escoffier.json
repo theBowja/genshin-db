@@ -1,0 +1,244 @@
+{
+	"id": 11201,
+	"name": "Escoffier",
+	"combat1": {
+		"name": "Abilità culinarie",
+		"descriptionRaw": "<color=#FFD780FF>Attacco normale</color>\nSferra fino a 3 colpi di lancia consecutivi.\n\n<color=#FFD780FF>Attacco caricato</color>\nConsuma una determinata quantità di vigore per eseguire un fendente verso l'alto.\n\n<color=#FFD780FF>Attacco in picchiata</color>\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"description": "Attacco normale\nSferra fino a 3 colpi di lancia consecutivi.\n\nAttacco caricato\nConsuma una determinata quantità di vigore per eseguire un fendente verso l'alto.\n\nAttacco in picchiata\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}+{param4:F1P}",
+				"DAN da ATT caricato|{param5:F1P}",
+				"Costo vigore attacco caricato|{param6:F1}",
+				"DAN da ATT in picchiata|{param7:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Cottura a bassa temperatura",
+		"descriptionRaw": "#Ammirate il vero significato della \"cucina\"! Escoffier dimostra diverse tecniche culinarie in base alla diversa pressione dell'abilità, ma niente paura: ciascuna di esse è il fiore all'occhiello di Fontaine.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tocco}{LAYOUT_PC#Pressione}{LAYOUT_PS#Pressione}</color>\nEscoffier attiva il suo Meka da cucina multiuso nella modalità Refrigerazione e infligge <color=#99FFFFFF>DAN da Cryo ad area</color> agli avversari vicini.\n\n<color=#FFD780FF>Meka da cucina: modalità Refrigerazione</color>\nSegue il personaggio attivo e scaglia dei Parfait congelati contro gli avversari vicini periodicamente, infliggendo <color=#99FFFFFF>DAN da Cryo</color>.\n\n<color=#FFD780FF>Archè: Ousia</color>\nA intervalli, Escoffier genera una Lama nascente quando attiva il suo Meka da cucina in modalità Refrigerazione, infliggendo <color=#99FFFFFF>DAN da Cryo ad area</color> di polarità Ousia.\n\n<color=#FFD780FF>Pressione prolungata</color>\nAttiva la modalità {LINK#N11120002}<color=#FFD780FF>Cucina estemporanea</color>{/LINK} del suo Meka da cucina multiuso.",
+		"description": "Ammirate il vero significato della \"cucina\"! Escoffier dimostra diverse tecniche culinarie in base alla diversa pressione dell'abilità, ma niente paura: ciascuna di esse è il fiore all'occhiello di Fontaine.\n\nPressione\nEscoffier attiva il suo Meka da cucina multiuso nella modalità Refrigerazione e infligge DAN da Cryo ad area agli avversari vicini.\n\nMeka da cucina: modalità Refrigerazione\nSegue il personaggio attivo e scaglia dei Parfait congelati contro gli avversari vicini periodicamente, infliggendo DAN da Cryo.\n\nArchè: Ousia\nA intervalli, Escoffier genera una Lama nascente quando attiva il suo Meka da cucina in modalità Refrigerazione, infliggendo DAN da Cryo ad area di polarità Ousia.\n\nPressione prolungata\nAttiva la modalità **Cucina estemporanea** del suo Meka da cucina multiuso.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P}",
+				"DAN da Parfait congelato|{param2:F1P}",
+				"Durata modalità Refrigerazione|{param3:F1} s",
+				"DAN da Lama nascente|{param4:F1P}",
+				"Intervallo TdR Lama nascente|{param5:F1} s",
+				"TdR pressione|{param6:F1} s",
+				"TdR (pressione prolungata)|{param7:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Tecnica di taglio",
+		"descriptionRaw": "Escoffier dimostra le sue straordinarie abilità con il coltello, infliggendo <color=#99FFFFFF>DAN da Cryo ad area</color> e ripristinando i PS di tutti i membri del gruppo vicini in base al suo ATT.",
+		"description": "Escoffier dimostra le sue straordinarie abilità con il coltello, infliggendo DAN da Cryo ad area e ripristinando i PS di tutti i membri del gruppo vicini in base al suo ATT.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P}",
+				"Guarigione|{param2:F1P} ATT+{param3:I}",
+				"TdR|{param4:F1} s",
+				"Costo energia|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Mangiare bene è la cura migliore",
+		"descriptionRaw": "#Dopo aver usato il Tripudio elementale <color=#FFD780FF>{LINK#S11125}Tecnica di taglio{/LINK}</color>, Escoffier ottiene l'effetto Dieta riabilitativa per 9{NON_BREAK_SPACE}s, grazie al quale ripristina i PS dei personaggi attivi vicini ogni 1{NON_BREAK_SPACE}s in base a un 138,24% del suo ATT.",
+		"description": "Dopo aver usato il Tripudio elementale **Tecnica di taglio**, Escoffier ottiene l'effetto Dieta riabilitativa per 9 s, grazie al quale ripristina i PS dei personaggi attivi vicini ogni 1 s in base a un 138,24% del suo ATT."
+	},
+	"passive2": {
+		"name": "Condimento ispiratore",
+		"descriptionRaw": "#Quando nel gruppo sono presenti 1/2/3/4 personaggi di <color=#80C0FFFF>Hydro</color> o <color=#99FFFFFF>Cryo</color>, Escoffier riduce la <color=#80C0FFFF>RES a Hydro</color> e la <color=#99FFFFFF>RES a Cryo</color> di ogni avversario colpito dalla sua abilità elementale <color=#FFD780FF>{LINK#S11122}Cottura a bassa temperatura{/LINK}</color> o dal suo Tripudio elementale <color=#FFD780FF>{LINK#S11125}Tecnica di taglio{/LINK}</color> di un 5%/10%/15%/55% per 12{NON_BREAK_SPACE}s.",
+		"description": "Quando nel gruppo sono presenti 1/2/3/4 personaggi di Hydro o Cryo, Escoffier riduce la RES a Hydro e la RES a Cryo di ogni avversario colpito dalla sua abilità elementale **Cottura a bassa temperatura** o dal suo Tripudio elementale **Tecnica di taglio** di un 5%/10%/15%/55% per 12 s."
+	},
+	"passive3": {
+		"name": "Cucina estemporanea costante",
+		"descriptionRaw": "Con la pressione prolungata dell'abilità elementale <color=#FFD780FF>{LINK#S11122}Cottura a bassa temperatura{/LINK}</color>, Escoffier attiva il suo Meka da cucina multiuso nella modalità Cucina estemporanea.\n\n<color=#FFD780FF>Meka da cucina: modalità Cucina estemporanea</color>\n· Il Meka da cucina viene posizionato in campo e assorbe gli attacchi elementali. Quando l'energia elementale assorbita raggiunge un certo limite, Escoffier converte gli ingredienti contenuti nel Meka in dei piatti deliziosi.\n· Escoffier ha bisogno di tempo per comprare nuovi ingredienti, quindi può creare in questo modo solo un certo numero di piatti alla settimana. Il numero di piatti che Escoffier può preparare si ripristina ogni lunedì alle 04:00.",
+		"description": "Con la pressione prolungata dell'abilità elementale **Cottura a bassa temperatura**, Escoffier attiva il suo Meka da cucina multiuso nella modalità Cucina estemporanea.\n\nMeka da cucina: modalità Cucina estemporanea\n· Il Meka da cucina viene posizionato in campo e assorbe gli attacchi elementali. Quando l'energia elementale assorbita raggiunge un certo limite, Escoffier converte gli ingredienti contenuti nel Meka in dei piatti deliziosi.\n· Escoffier ha bisogno di tempo per comprare nuovi ingredienti, quindi può creare in questo modo solo un certo numero di piatti alla settimana. Il numero di piatti che Escoffier può preparare si ripristina ogni lunedì alle 04:00."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104341,
+				"name": "Insegnamenti della giustizia",
+				"count": 3
+			},
+			{
+				"id": 112083,
+				"name": "Ingranaggio dentato",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104342,
+				"name": "Guida alla giustizia",
+				"count": 2
+			},
+			{
+				"id": 112084,
+				"name": "Ingranaggio cilindrico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104342,
+				"name": "Guida alla giustizia",
+				"count": 4
+			},
+			{
+				"id": 112084,
+				"name": "Ingranaggio cilindrico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104342,
+				"name": "Guida alla giustizia",
+				"count": 6
+			},
+			{
+				"id": 112084,
+				"name": "Ingranaggio cilindrico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104342,
+				"name": "Guida alla giustizia",
+				"count": 9
+			},
+			{
+				"id": 112084,
+				"name": "Ingranaggio cilindrico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofie della giustizia",
+				"count": 4
+			},
+			{
+				"id": 112085,
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 4
+			},
+			{
+				"id": 113068,
+				"name": "Corno eroso",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofie della giustizia",
+				"count": 6
+			},
+			{
+				"id": 112085,
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 6
+			},
+			{
+				"id": 113068,
+				"name": "Corno eroso",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofie della giustizia",
+				"count": 12
+			},
+			{
+				"id": 112085,
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 9
+			},
+			{
+				"id": 113068,
+				"name": "Corno eroso",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104343,
+				"name": "Filosofie della giustizia",
+				"count": 16
+			},
+			{
+				"id": 112085,
+				"name": "Ingranaggio dinamico artificiato",
+				"count": 12
+			},
+			{
+				"id": 113068,
+				"name": "Corno eroso",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}
