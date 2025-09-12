@@ -527,7 +527,7 @@ function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipim
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "5.8"; // new data will use this as added version
+gameVersion = "6.0"; // new data will use this as added version
 console.log(gameVersion);
 
 // importData('characters');
@@ -541,7 +541,7 @@ console.log(gameVersion);
 // importCurve('weapons');
 // importData('artifacts');
 // importData('foods');
-// importData('materials');
+importData('materials');
 // importData('domains');
 // importData('enemies');
 // importCurve('enemies');
