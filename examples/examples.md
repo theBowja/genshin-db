@@ -2055,7 +2055,7 @@ const genshindb = require('genshin-db');
   dropDomainId: 4231,
   dropDomainName: 'Domain of Mastery: Realm of Slumber',
   daysOfWeek: [ 'Wednesday', 'Saturday', 'Sunday' ],
-  sources: [],
+  sources: [ 'Placeholder - Craftable Amount: {0}' ],
   images: { filename_icon: 'UI_ItemIcon_104308' },
   version: ''
 }
@@ -2218,7 +2218,10 @@ const genshindb = require('genshin-db');
     'His enemies are the thousands who stand against the wind.',
   category: 'AVATAR_MATERIAL',
   typeText: 'Character Level-Up Material',
-  sources: [],
+  sources: [
+    'Lv. 70+ Stormterror Challenge Reward',
+    'Obtained from the Crafting Bench Conversion Tab'
+  ],
   images: { filename_icon: 'UI_ItemIcon_113005' },
   version: ''
 }

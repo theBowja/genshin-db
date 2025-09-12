@@ -541,7 +541,7 @@ console.log(gameVersion);
 // importCurve('weapons');
 // importData('artifacts');
 // importData('foods');
-importData('materials');
+// importData('materials');
 // importData('domains');
 // importData('enemies');
 // importCurve('enemies');
