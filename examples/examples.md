@@ -762,6 +762,21 @@ const genshindb = require('genshin-db');
 ```
 
 </details>
+<details>
+<summary>genshindb.characters('<b>furina'</b>)<b>.stats(95)</b></summary>
+
+```js
+{
+  level: 95,
+  ascension: 6,
+  hp: 15850.780750000002,
+  attack: 271.4059676,
+  defense: 720.23234925,
+  specialized: 0.242
+}
+```
+
+</details>
 
 ## genshindb.talents(query[, opts])]
 

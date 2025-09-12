@@ -28,7 +28,7 @@ let folders = [
 				 // 'geo dmg, { matchCategories: true }',
 				 'liyue, { matchCategories: true }',
 				 'sword, { matchCategories: true }',
-				 'klee/.stats(90)', 'klee/.stats(80)', 'klee/.stats(80, \'+\')', 'aether/.stats(12)']
+				 'klee/.stats(90)', 'klee/.stats(80)', 'klee/.stats(80, \'+\')', 'aether/.stats(12)', 'furina/.stats(95)']
 	},
 	{
 		function: 'talents',

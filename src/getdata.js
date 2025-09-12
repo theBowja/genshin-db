@@ -126,14 +126,14 @@ function calcStatsCharacter(filename) {
     if(mystats === undefined || mycurve === undefined) return undefined;
     /** 
      * Calculates the stats of a character at a specific level and ascension phase.
-     * @param level: number - level. number between 1-90. returns undefined if not within range.
+     * @param level: number - level. number between 1-100. returns undefined if not within range.
      * @param ascension: undefined | number | string - the ascension number, or '-'/'+'. defaults to '-'.
      *                   only decides which stats to return at level boundaries (20, 40, 50, 60, 70, 80).
      */
     return function(level, ascension) {
         level = parseInt(level, 10);
         if(isNaN(level)) return undefined;
-        if(level > 90 || level < 1) return undefined;
+        if(level > 100 || level < 1) return undefined;
 
         const [phase, promotion] = getPromotionBonus(mystats.promotion, level, ascension);
         let output = {
