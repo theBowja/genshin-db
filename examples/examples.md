@@ -54,9 +54,10 @@ const genshindb = require('genshin-db');
   'Kirara',           'Klee',           'Kujou Sara',
   'Kuki Shinobu',     'Lan Yan',        'Lauma',
   'Layla',            'Lisa',           'Lumine',
-  'Lynette',          'Lyney',          'Mavuika',
-  'Mika',             'Mona',           'Mualani',
-  'Nahida',           'Navia',          'Neuvillette',
+  'Lynette',          'Lyney',          'Manekin',
+  'Manekina',         'Mavuika',        'Mika',
+  'Mona',             'Mualani',        'Nahida',
+  'Navia',            'Nefer',          'Neuvillette',
   'Nilou',            'Ningguang',      'Noelle',
   'Ororon',           'Qiqi',           'Raiden Shogun',
   'Razor',            'Rosaria',        'Sangonomiya Kokomi',
@@ -66,9 +67,8 @@ const genshindb = require('genshin-db');
   'Tighnari',         'Varesa',         'Venti',
   'Wanderer',         'Wriothesley',    'Xiangling',
   'Xianyun',          'Xiao',           'Xilonen',
-  'Xingqiu',          'Xinyan',         'Yae Miko',
-  'Yanfei',
-  ... 6 more items
+  'Xingqiu',
+  ... 9 more items
 ]
 ```
 
@@ -695,7 +695,8 @@ const genshindb = require('genshin-db');
   'Kamisato Ayato', 'Keqing',
   'Kirara',         'Kuki Shinobu',
   'Layla',          'Lumine',
-  'Lynette',        'Nilou',
+  'Lynette',        'Manekin',
+  'Manekina',       'Nilou',
   'Qiqi',           'Skirk',
   'Xilonen',        'Xingqiu'
 ]
@@ -805,8 +806,9 @@ const genshindb = require('genshin-db');
   'Klee',               'Kujou Sara',        'Kuki Shinobu',
   'Lan Yan',            'Lauma',             'Layla',
   'Lisa',               'Lynette',           'Lyney',
-  'Mavuika',            'Mika',              'Mona',
-  'Mualani',            'Nahida',            'Navia',
+  'Manekin',            'Manekina',          'Mavuika',
+  'Mika',               'Mona',              'Mualani',
+  'Nahida',             'Navia',             'Nefer',
   'Neuvillette',        'Nilou',             'Ningguang',
   'Noelle',             'Ororon',            'Qiqi',
   'Raiden Shogun',      'Razor',             'Rosaria',
@@ -817,9 +819,8 @@ const genshindb = require('genshin-db');
   'Traveler (Cryo)',    'Traveler (Dendro)', 'Traveler (Electro)',
   'Traveler (Geo)',     'Traveler (Hydro)',  'Traveler (Pyro)',
   'Varesa',             'Venti',             'Wanderer',
-  'Wriothesley',        'Xiangling',         'Xianyun',
-  'Xiao',
-  ... 11 more items
+  'Wriothesley',
+  ... 14 more items
 ]
 ```
 
@@ -1669,6 +1670,7 @@ const genshindb = require('genshin-db');
   'Crescent Pike',
   "Crimson Moon's Semblance",
   'Dark Iron Sword',
+  'Dawning Frost',
   'Deathmatch',
   'Debate Club',
   'Dialogues of the Desert Sages',
@@ -1730,8 +1732,7 @@ const genshindb = require('genshin-db');
   'Lithic Spear',
   'Lost Prayer to the Sacred Winds',
   'Lumidouce Elegy',
-  'Luxurious Sea-Lord',
-  ... 124 more items
+  ... 127 more items
 ]
 ```
 
@@ -3049,6 +3050,7 @@ const genshindb = require('genshin-db');
   'Electro Regisvine',
   'Emperor of Fire and Iron',
   'Experimental Field Generator',
+  'Frostnight Herra',
   'Geo Hypostasis',
   'Gluttonous Yumkasaur Mountain King',
   'Golden Wolflord',
@@ -3200,7 +3202,7 @@ const genshindb = require('genshin-db');
   categoryType: 'SUBTYPE_AVIARY',
   categoryText: 'Birds',
   countType: 'COUNT_TYPE_CAPTURE',
-  sortOrder: 10025,
+  sortOrder: 10026,
   images: { filename_icon: 'UI_AnimalIcon_Pigeon_Beak' },
   version: '3.0'
 }
