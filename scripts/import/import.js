@@ -535,16 +535,16 @@ console.log(gameVersion);
 
 // getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
-importData('constellations');
-importData('talents');
-importData('weapons')
-// importCurve('weapons');
-// importData('artifacts');
-// importData('foods');
-// importData('materials');
-// importData('domains');
-// importData('enemies');
-// importCurve('enemies');
+// importData('constellations');
+// importData('talents');
+// importData('weapons')
+importCurve('weapons');
+importData('artifacts');
+importData('foods');
+importData('materials');
+importData('domains');
+importData('enemies');
+importCurve('enemies');
 
 // importData('outfits');
 // importData('windgliders');

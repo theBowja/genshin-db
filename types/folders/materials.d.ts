@@ -7,7 +7,7 @@ declare module "genshin-db" {
 		sortRank: number;
 
 		description: string;
-		category: 'ADSORBATE' | 'AVATAR_MATERIAL' | 'CONSUME' | 'EXCHANGE' | 'EXP_FRUIT' | 'FISH_BAIT' | 'FISH_ROD' | 'NONE' | 'NOTICE_ADD_HP' | 'WEAPON_EXP_STONE' | 'WOOD'; // enum
+		category: 'ADSORBATE' | 'AVATAR_MATERIAL' | 'CONSUME' | 'ELEM_CRYSTAL' | 'EXCHANGE' | 'EXP_FRUIT' | 'FISH_BAIT' | 'FISH_ROD' | 'NONE' | 'NOTICE_ADD_HP' | 'WEAPON_EXP_STONE' | 'WOOD'; // enum
 		typeText: string; // translated
 
 		dropDomainId?: number;
