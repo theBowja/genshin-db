@@ -538,13 +538,13 @@ console.log(gameVersion);
 // importData('constellations');
 // importData('talents');
 // importData('weapons')
-importCurve('weapons');
-importData('artifacts');
-importData('foods');
-importData('materials');
-importData('domains');
-importData('enemies');
-importCurve('enemies');
+// importCurve('weapons');
+// importData('artifacts');
+// importData('foods');
+// importData('materials');
+// importData('domains');
+// importData('enemies');
+// importCurve('enemies');
 
 // importData('outfits');
 // importData('windgliders');
