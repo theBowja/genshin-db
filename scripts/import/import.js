@@ -178,7 +178,7 @@ async function getCharList(region) {
 }
 async function getUpperBodyImages() {
 	const util = require('util');
-	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'Fontaine', 'Natlan'];
+	const regions = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'Fontaine', 'Natlan', 'NODKRAI'];
 	let myimages = {};
 	try { myimages = require(`../../src/data/image/characters.json`); } catch(e) {}
 
@@ -534,8 +534,8 @@ console.log(gameVersion);
 // importData('characters');
 // importCurve('characters');
 
-getHoyowikiIcons(); // RUN SEPARATELY. grabbing hoyowiki_icon from hoyolab wiki API, // MUST IMPORT SEPARATELY FROM import characters
-// getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
+// getHoyowikiIcons(); // RUN SEPARATELY. grabbing hoyowiki_icon from hoyolab wiki API, // MUST IMPORT SEPARATELY FROM import characters
+// // getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
 // importData('constellations');
 // importData('talents');
