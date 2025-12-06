@@ -5,6 +5,7 @@
 const fs = require('fs');
 const language = require(`../../src/language.js`);
 //const genshindb = require('../src/main.js');
+const getHoyowikiIcons = require('./getHoyowikiIcons.js');
 
 
 if(!fs.existsSync('./import/EN')) {
@@ -527,12 +528,13 @@ function importData(folder, collateFunc, dontwrite=false, deleteexisting, skipim
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "6.1"; // new data will use this as added version
+gameVersion = "6.2"; // new data will use this as added version
 console.log(gameVersion);
 
 // importData('characters');
 // importCurve('characters');
 
+getHoyowikiIcons(); // RUN SEPARATELY. grabbing hoyowiki_icon from hoyolab wiki API, // MUST IMPORT SEPARATELY FROM import characters
 // getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
 // importData('constellations');

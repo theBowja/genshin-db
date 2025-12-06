@@ -56,6 +56,7 @@ declare module "genshin-db" {
 			cover1?: string; // official site
 			cover2?: string; // official site
 			"hoyolab-avatar"?: string; // manually entered from hoyolab
+			hoyowiki_icon?: string; // hoyolab wiki API
 		};
 		url: {
 			fandom: string;
