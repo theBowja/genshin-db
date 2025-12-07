@@ -34,41 +34,41 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',           'Aino',           'Albedo',
-  'Alhaitham',        'Aloy',           'Amber',
-  'Arataki Itto',     'Arlecchino',     'Baizhu',
-  'Barbara',          'Beidou',         'Bennett',
-  'Candace',          'Charlotte',      'Chasca',
-  'Chevreuse',        'Chiori',         'Chongyun',
-  'Citlali',          'Clorinde',       'Collei',
-  'Cyno',             'Dahlia',         'Dehya',
-  'Diluc',            'Diona',          'Dori',
-  'Emilie',           'Escoffier',      'Eula',
-  'Faruzan',          'Fischl',         'Flins',
-  'Freminet',         'Furina',         'Gaming',
-  'Ganyu',            'Gorou',          'Hu Tao',
-  'Iansan',           'Ifa',            'Ineffa',
-  'Jean',             'Kachina',        'Kaedehara Kazuha',
-  'Kaeya',            'Kamisato Ayaka', 'Kamisato Ayato',
-  'Kaveh',            'Keqing',         'Kinich',
-  'Kirara',           'Klee',           'Kujou Sara',
-  'Kuki Shinobu',     'Lan Yan',        'Lauma',
-  'Layla',            'Lisa',           'Lumine',
-  'Lynette',          'Lyney',          'Manekin',
-  'Manekina',         'Mavuika',        'Mika',
-  'Mona',             'Mualani',        'Nahida',
-  'Navia',            'Nefer',          'Neuvillette',
-  'Nilou',            'Ningguang',      'Noelle',
-  'Ororon',           'Qiqi',           'Raiden Shogun',
-  'Razor',            'Rosaria',        'Sangonomiya Kokomi',
-  'Sayu',             'Sethos',         'Shenhe',
-  'Shikanoin Heizou', 'Sigewinne',      'Skirk',
-  'Sucrose',          'Tartaglia',      'Thoma',
-  'Tighnari',         'Varesa',         'Venti',
-  'Wanderer',         'Wriothesley',    'Xiangling',
-  'Xianyun',          'Xiao',           'Xilonen',
-  'Xingqiu',
-  ... 9 more items
+  'Aether',         'Aino',               'Albedo',
+  'Alhaitham',      'Aloy',               'Amber',
+  'Arataki Itto',   'Arlecchino',         'Baizhu',
+  'Barbara',        'Beidou',             'Bennett',
+  'Candace',        'Charlotte',          'Chasca',
+  'Chevreuse',      'Chiori',             'Chongyun',
+  'Citlali',        'Clorinde',           'Collei',
+  'Cyno',           'Dahlia',             'Dehya',
+  'Diluc',          'Diona',              'Dori',
+  'Durin',          'Emilie',             'Escoffier',
+  'Eula',           'Faruzan',            'Fischl',
+  'Flins',          'Freminet',           'Furina',
+  'Gaming',         'Ganyu',              'Gorou',
+  'Hu Tao',         'Iansan',             'Ifa',
+  'Ineffa',         'Jahoda',             'Jean',
+  'Kachina',        'Kaedehara Kazuha',   'Kaeya',
+  'Kamisato Ayaka', 'Kamisato Ayato',     'Kaveh',
+  'Keqing',         'Kinich',             'Kirara',
+  'Klee',           'Kujou Sara',         'Kuki Shinobu',
+  'Lan Yan',        'Lauma',              'Layla',
+  'Lisa',           'Lumine',             'Lynette',
+  'Lyney',          'Manekin',            'Manekina',
+  'Mavuika',        'Mika',               'Mona',
+  'Mualani',        'Nahida',             'Navia',
+  'Nefer',          'Neuvillette',        'Nilou',
+  'Ningguang',      'Noelle',             'Ororon',
+  'Qiqi',           'Raiden Shogun',      'Razor',
+  'Rosaria',        'Sangonomiya Kokomi', 'Sayu',
+  'Sethos',         'Shenhe',             'Shikanoin Heizou',
+  'Sigewinne',      'Skirk',              'Sucrose',
+  'Tartaglia',      'Thoma',              'Tighnari',
+  'Varesa',         'Venti',              'Wanderer',
+  'Wriothesley',    'Xiangling',          'Xianyun',
+  'Xiao',
+  ... 11 more items
 ]
 ```
 
@@ -159,7 +159,8 @@ const genshindb = require('genshin-db');
     filename_gachaSplash: 'UI_Gacha_AvatarImg_Ganyu',
     filename_gachaSlice: 'UI_Gacha_AvatarIcon_Ganyu',
     mihoyo_icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png',
-    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png'
+    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ganyu.png',
+    hoyowiki_icon: 'https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/797ded201635d241d358c307e9e7417f_464481961971717418.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Ganyu' },
   stats: [Function (anonymous)],
@@ -304,7 +305,8 @@ const genshindb = require('genshin-db');
     filename_gachaSplash: 'UI_Gacha_AvatarImg_Ambor',
     filename_gachaSlice: 'UI_Gacha_AvatarIcon_Ambor',
     mihoyo_icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
-    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png'
+    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
+    hoyowiki_icon: 'https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)],
@@ -399,7 +401,8 @@ const genshindb = require('genshin-db');
     filename_gachaSplash: 'UI_Gacha_AvatarImg_Ambor',
     filename_gachaSlice: 'UI_Gacha_AvatarIcon_Ambor',
     mihoyo_icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png',
-    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png'
+    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Ambor.png',
+    hoyowiki_icon: 'https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Amber' },
   stats: [Function (anonymous)],
@@ -494,7 +497,8 @@ const genshindb = require('genshin-db');
     filename_gachaSplash: 'UI_Gacha_AvatarImg_Tartaglia',
     filename_gachaSlice: 'UI_Gacha_AvatarIcon_Tartaglia',
     mihoyo_icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png',
-    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Tartaglia.png'
+    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Tartaglia.png',
+    hoyowiki_icon: 'https://bbs.hoyolab.com/hoyowiki/picture/character/Tartaglia_icon.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Tartaglia' },
   stats: [Function (anonymous)],
@@ -589,7 +593,8 @@ const genshindb = require('genshin-db');
     filename_gachaSplash: 'UI_Gacha_AvatarImg_Venti',
     filename_gachaSlice: 'UI_Gacha_AvatarIcon_Venti',
     mihoyo_icon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png',
-    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png'
+    mihoyo_sideIcon: 'https://upload-os-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Venti.png',
+    hoyowiki_icon: 'https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png'
   },
   url: { fandom: 'https://genshin-impact.fandom.com/wiki/Venti' },
   stats: [Function (anonymous)],
@@ -653,14 +658,15 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Amber',     'Arlecchino',
-  'Bennett',   'Chevreuse',
-  'Dehya',     'Diluc',
-  'Gaming',    'Hu Tao',
-  'Klee',      'Lyney',
-  'Mavuika',   'Thoma',
-  'Xiangling', 'Xinyan',
-  'Yanfei',    'Yoimiya'
+  'Amber',   'Arlecchino',
+  'Bennett', 'Chevreuse',
+  'Dehya',   'Diluc',
+  'Durin',   'Gaming',
+  'Hu Tao',  'Klee',
+  'Lyney',   'Mavuika',
+  'Thoma',   'Xiangling',
+  'Xinyan',  'Yanfei',
+  'Yoimiya'
 ]
 ```
 
@@ -686,19 +692,20 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aether',         'Albedo',
-  'Alhaitham',      'Bennett',
-  'Chiori',         'Clorinde',
-  'Dahlia',         'Furina',
-  'Jean',           'Kaedehara Kazuha',
-  'Kaeya',          'Kamisato Ayaka',
-  'Kamisato Ayato', 'Keqing',
-  'Kirara',         'Kuki Shinobu',
-  'Layla',          'Lumine',
-  'Lynette',        'Manekin',
-  'Manekina',       'Nilou',
-  'Qiqi',           'Skirk',
-  'Xilonen',        'Xingqiu'
+  'Aether',           'Albedo',
+  'Alhaitham',        'Bennett',
+  'Chiori',           'Clorinde',
+  'Dahlia',           'Durin',
+  'Furina',           'Jean',
+  'Kaedehara Kazuha', 'Kaeya',
+  'Kamisato Ayaka',   'Kamisato Ayato',
+  'Keqing',           'Kirara',
+  'Kuki Shinobu',     'Layla',
+  'Lumine',           'Lynette',
+  'Manekin',          'Manekina',
+  'Nilou',            'Qiqi',
+  'Skirk',            'Xilonen',
+  'Xingqiu'
 ]
 ```
 
@@ -786,41 +793,41 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aino',               'Albedo',            'Alhaitham',
-  'Aloy',               'Amber',             'Arataki Itto',
-  'Arlecchino',         'Baizhu',            'Barbara',
-  'Beidou',             'Bennett',           'Candace',
-  'Charlotte',          'Chasca',            'Chevreuse',
-  'Chiori',             'Chongyun',          'Citlali',
-  'Clorinde',           'Collei',            'Cyno',
-  'Dahlia',             'Dehya',             'Diluc',
-  'Diona',              'Dori',              'Emilie',
-  'Escoffier',          'Eula',              'Faruzan',
-  'Fischl',             'Flins',             'Freminet',
-  'Furina',             'Gaming',            'Ganyu',
-  'Gorou',              'Hu Tao',            'Iansan',
-  'Ifa',                'Ineffa',            'Jean',
-  'Kachina',            'Kaedehara Kazuha',  'Kaeya',
-  'Kamisato Ayaka',     'Kamisato Ayato',    'Kaveh',
-  'Keqing',             'Kinich',            'Kirara',
-  'Klee',               'Kujou Sara',        'Kuki Shinobu',
-  'Lan Yan',            'Lauma',             'Layla',
-  'Lisa',               'Lynette',           'Lyney',
-  'Manekin',            'Manekina',          'Mavuika',
-  'Mika',               'Mona',              'Mualani',
-  'Nahida',             'Navia',             'Nefer',
-  'Neuvillette',        'Nilou',             'Ningguang',
-  'Noelle',             'Ororon',            'Qiqi',
-  'Raiden Shogun',      'Razor',             'Rosaria',
-  'Sangonomiya Kokomi', 'Sayu',              'Sethos',
-  'Shenhe',             'Shikanoin Heizou',  'Sigewinne',
-  'Skirk',              'Sucrose',           'Tartaglia',
-  'Thoma',              'Tighnari',          'Traveler (Anemo)',
-  'Traveler (Cryo)',    'Traveler (Dendro)', 'Traveler (Electro)',
-  'Traveler (Geo)',     'Traveler (Hydro)',  'Traveler (Pyro)',
-  'Varesa',             'Venti',             'Wanderer',
-  'Wriothesley',
-  ... 14 more items
+  'Aino',              'Albedo',             'Alhaitham',
+  'Aloy',              'Amber',              'Arataki Itto',
+  'Arlecchino',        'Baizhu',             'Barbara',
+  'Beidou',            'Bennett',            'Candace',
+  'Charlotte',         'Chasca',             'Chevreuse',
+  'Chiori',            'Chongyun',           'Citlali',
+  'Clorinde',          'Collei',             'Cyno',
+  'Dahlia',            'Dehya',              'Diluc',
+  'Diona',             'Dori',               'Durin',
+  'Emilie',            'Escoffier',          'Eula',
+  'Faruzan',           'Fischl',             'Flins',
+  'Freminet',          'Furina',             'Gaming',
+  'Ganyu',             'Gorou',              'Hu Tao',
+  'Iansan',            'Ifa',                'Ineffa',
+  'Jahoda',            'Jean',               'Kachina',
+  'Kaedehara Kazuha',  'Kaeya',              'Kamisato Ayaka',
+  'Kamisato Ayato',    'Kaveh',              'Keqing',
+  'Kinich',            'Kirara',             'Klee',
+  'Kujou Sara',        'Kuki Shinobu',       'Lan Yan',
+  'Lauma',             'Layla',              'Lisa',
+  'Lynette',           'Lyney',              'Manekin',
+  'Manekina',          'Mavuika',            'Mika',
+  'Mona',              'Mualani',            'Nahida',
+  'Navia',             'Nefer',              'Neuvillette',
+  'Nilou',             'Ningguang',          'Noelle',
+  'Ororon',            'Qiqi',               'Raiden Shogun',
+  'Razor',             'Rosaria',            'Sangonomiya Kokomi',
+  'Sayu',              'Sethos',             'Shenhe',
+  'Shikanoin Heizou',  'Sigewinne',          'Skirk',
+  'Sucrose',           'Tartaglia',          'Thoma',
+  'Tighnari',          'Traveler (Anemo)',   'Traveler (Cryo)',
+  'Traveler (Dendro)', 'Traveler (Electro)', 'Traveler (Geo)',
+  'Traveler (Hydro)',  'Traveler (Pyro)',    'Varesa',
+  'Venti',
+  ... 16 more items
 ]
 ```
 
@@ -1465,6 +1472,7 @@ const genshindb = require('genshin-db');
 [
   'Albedo',
   'Dahlia',
+  'Durin',
   'Fischl',
   'Kaeya',
   'Lisa',
@@ -1642,6 +1650,7 @@ const genshindb = require('genshin-db');
   'Aquila Favonia',
   'Ash-Graven Drinking Horn',
   "Astral Vulture's Crimson Plumage",
+  'Athame Artis',
   'A Thousand Blazing Suns',
   'A Thousand Floating Dreams',
   'Azurelight',
@@ -1731,8 +1740,7 @@ const genshindb = require('genshin-db');
   'Lithic Blade',
   'Lithic Spear',
   'Lost Prayer to the Sacred Winds',
-  'Lumidouce Elegy',
-  ... 127 more items
+  ... 130 more items
 ]
 ```
 
@@ -1971,17 +1979,18 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  "Apprentice's Notes",   'Aquila Favonia',
-  'Cinnabar Spindle',     'Cool Steel',
-  'Dull Blade',           'Favonius Codex',
-  'Favonius Sword',       'Ferrous Shadow',
-  'Magic Guide',          'Mitternachts Waltz',
-  'Pocket Grimoire',      'Raven Bow',
-  'Royal Grimoire',       'Royal Longsword',
-  'Silver Sword',         'Snow-Tombed Starsilver',
-  'Song of Broken Pines', 'The Alley Flash',
-  'The Bell',             'The Stringless',
-  'The Viridescent Hunt', 'Wolf-Fang'
+  "Apprentice's Notes",     'Aquila Favonia',
+  'Athame Artis',           'Cinnabar Spindle',
+  'Cool Steel',             'Dull Blade',
+  'Favonius Codex',         'Favonius Sword',
+  'Ferrous Shadow',         'Magic Guide',
+  'Mitternachts Waltz',     'Pocket Grimoire',
+  'Raven Bow',              'Royal Grimoire',
+  'Royal Longsword',        'Silver Sword',
+  'Snow-Tombed Starsilver', 'Song of Broken Pines',
+  'The Alley Flash',        'The Bell',
+  'The Stringless',         'The Viridescent Hunt',
+  'Wolf-Fang'
 ]
 ```
 
@@ -2588,6 +2597,7 @@ const genshindb = require('genshin-db');
   'Puff Pops',
   'Sashimi Platter',
   'Sing Your Heart Out',
+  'Spiced Fried Chicken',
   'Stormcrest Pie',
   'Super Magnificent Pizza',
   'Tandoori Roast Chicken',
@@ -3084,6 +3094,7 @@ const genshindb = require('genshin-db');
   'Shouki no Kami, the Prodigal',
   'Solitary Suanni',
   'Stormterror',
+  'Super-Heavy Landrover: Mechanized Fortress',
   'Tenebrous Papilla: Type I',
   'The Game Before the Gate',
   'The Knave',
