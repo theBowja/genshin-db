@@ -66,9 +66,9 @@ const genshindb = require('genshin-db');
   'Shenhe',             'Shikanoin Heizou', 'Sigewinne',
   'Skirk',              'Sucrose',          'Tartaglia',
   'Thoma',              'Tighnari',         'Varesa',
-  'Venti',              'Wanderer',         'Wriothesley',
-  'Xiangling',
-  ... 14 more items
+  'Varka',              'Venti',            'Wanderer',
+  'Wriothesley',
+  ... 15 more items
 ]
 ```
 
@@ -827,7 +827,7 @@ const genshindb = require('genshin-db');
   'Traveler (Anemo)',   'Traveler (Cryo)',    'Traveler (Dendro)',
   'Traveler (Electro)', 'Traveler (Geo)',     'Traveler (Hydro)',
   'Traveler (Pyro)',
-  ... 19 more items
+  ... 20 more items
 ]
 ```
 
@@ -1718,6 +1718,7 @@ const genshindb = require('genshin-db');
   'Frostbearer',
   'Fruitful Hook',
   'Fruit of Fulfillment',
+  'Gest of the Mighty Wolf',
   'Hakushin Ring',
   'Halberd',
   'Hamayumi',
@@ -1739,8 +1740,7 @@ const genshindb = require('genshin-db');
   'Light of Foliar Incision',
   "Lion's Roar",
   'Lithic Blade',
-  'Lithic Spear',
-  ... 132 more items
+  ... 133 more items
 ]
 ```
 
@@ -2694,6 +2694,7 @@ const genshindb = require('genshin-db');
   'Der Weisheit Letzter Schluss (Life)',
   'Golden Chicken Burger',
   'Grainfruit Meat Soup',
+  'Hearty Indulgence',
   'Invigorating Pizza',
   'Jade Parcels',
   'Katsu Sandwich',
@@ -3094,6 +3095,7 @@ const genshindb = require('genshin-db');
   'Pyro Hypostasis',
   'Pyro Regisvine',
   'Radiant Moonfly',
+  'Radiant Moongecko',
   'Rimebiter Bathysmal Vishap',
   'Ruin Serpent',
   'Secret Source Automaton: Configuration Device',
