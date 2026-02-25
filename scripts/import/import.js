@@ -545,20 +545,20 @@ console.log(gameVersion);
 // importData('foods');
 // importData('materials');
 // importData('domains');
-importData('enemies');
+// importData('enemies');
 // importCurve('enemies');
 
-// importData('outfits');
-// importData('windgliders');
-// importData('animals');
-// importData('namecards');
-// importData('geographies');
-// importData('crafts');
-// importData('emojis');
-// // importData('voiceovers')
-// importData('achievements');
-// importData('achievementgroups');
-// importData('adventureranks'); // max 60
+importData('outfits');
+importData('windgliders');
+importData('animals');
+importData('namecards');
+importData('geographies');
+importData('crafts');
+importData('emojis');
+// importData('voiceovers')
+importData('achievements');
+importData('achievementgroups');
+importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
 // importData('tcgenemycards');
