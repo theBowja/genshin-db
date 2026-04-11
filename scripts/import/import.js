@@ -533,13 +533,13 @@ gameVersion = "6.5"; // new data will use this as added version
 console.log(gameVersion);
 
 // importData('characters');
-importCurve('characters');
+// importCurve('characters');
 
 // getHoyowikiIcons(); // RUN SEPARATELY. grabbing hoyowiki_icon from hoyolab wiki API, // MUST IMPORT SEPARATELY FROM import characters
 // // getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
 
-importData('constellations');
-importData('talents');
+// importData('constellations');
+// importData('talents');
 // importData('weapons')
 // importCurve('weapons');
 // importData('artifacts');
