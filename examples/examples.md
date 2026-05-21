@@ -55,20 +55,20 @@ const genshindb = require('genshin-db');
   'Kinich',           'Kirara',             'Klee',
   'Kujou Sara',       'Kuki Shinobu',       'Lan Yan',
   'Lauma',            'Layla',              'Linnea',
-  'Lisa',             'Lumine',             'Lynette',
-  'Lyney',            'Manekin',            'Manekina',
-  'Mavuika',          'Mika',               'Mona',
-  'Mualani',          'Nahida',             'Navia',
-  'Nefer',            'Neuvillette',        'Nilou',
-  'Ningguang',        'Noelle',             'Ororon',
+  'Lisa',             'Lohen',              'Lumine',
+  'Lynette',          'Lyney',              'Manekin',
+  'Manekina',         'Mavuika',            'Mika',
+  'Mona',             'Mualani',            'Nahida',
+  'Navia',            'Nefer',              'Neuvillette',
+  'Nicole',           'Nilou',              'Ningguang',
+  'Noelle',           'Ororon',             'Prune',
   'Qiqi',             'Raiden Shogun',      'Razor',
   'Rosaria',          'Sangonomiya Kokomi', 'Sayu',
   'Sethos',           'Shenhe',             'Shikanoin Heizou',
   'Sigewinne',        'Skirk',              'Sucrose',
   'Tartaglia',        'Thoma',              'Tighnari',
-  'Varesa',           'Varka',              'Venti',
-  'Wanderer',
-  ... 16 more items
+  'Varesa',
+  ... 19 more items
 ]
 ```
 
@@ -607,7 +607,7 @@ const genshindb = require('genshin-db');
 <summary>genshindb.characters('<b>arrowhead', { matchCategories: true }</b>)</summary>
 
 ```js
-[ 'Amber', 'Collei', 'Dahlia', 'Diona', 'Fischl' ]
+[ 'Amber', 'Collei', 'Dahlia', 'Diona', 'Fischl', 'Lohen' ]
 ```
 
 </details>
@@ -633,8 +633,8 @@ const genshindb = require('genshin-db');
     v4Props: false,
     v4PropsOnly: false
   },
-  filename: [ 'amber', 'collei', 'dahlia', 'diona', 'fischl' ],
-  result: [ 'アンバー', 'コレイ', 'ダリア', 'ディオナ', 'フィッシュル' ]
+  filename: [ 'amber', 'collei', 'dahlia', 'diona', 'fischl', 'lohen' ],
+  result: [ 'アンバー', 'コレイ', 'ダリア', 'ディオナ', 'フィッシュル', 'ローエン' ]
 }
 ```
 
@@ -658,15 +658,15 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Amber',   'Arlecchino',
-  'Bennett', 'Chevreuse',
-  'Dehya',   'Diluc',
-  'Durin',   'Gaming',
-  'Hu Tao',  'Klee',
-  'Lyney',   'Mavuika',
-  'Thoma',   'Xiangling',
-  'Xinyan',  'Yanfei',
-  'Yoimiya'
+  'Amber',     'Arlecchino',
+  'Bennett',   'Chevreuse',
+  'Dehya',     'Diluc',
+  'Durin',     'Gaming',
+  'Hu Tao',    'Klee',
+  'Lyney',     'Mavuika',
+  'Nicole',    'Thoma',
+  'Xiangling', 'Xinyan',
+  'Yanfei',    'Yoimiya'
 ]
 ```
 
@@ -793,41 +793,41 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Aino',              'Albedo',             'Alhaitham',
-  'Aloy',              'Amber',              'Arataki Itto',
-  'Arlecchino',        'Baizhu',             'Barbara',
-  'Beidou',            'Bennett',            'Candace',
-  'Charlotte',         'Chasca',             'Chevreuse',
-  'Chiori',            'Chongyun',           'Citlali',
-  'Clorinde',          'Collei',             'Columbina',
-  'Cyno',              'Dahlia',             'Dehya',
-  'Diluc',             'Diona',              'Dori',
-  'Durin',             'Emilie',             'Escoffier',
-  'Eula',              'Faruzan',            'Fischl',
-  'Flins',             'Freminet',           'Furina',
-  'Gaming',            'Ganyu',              'Gorou',
-  'Hu Tao',            'Iansan',             'Ifa',
-  'Illuga',            'Ineffa',             'Jahoda',
-  'Jean',              'Kachina',            'Kaedehara Kazuha',
-  'Kaeya',             'Kamisato Ayaka',     'Kamisato Ayato',
-  'Kaveh',             'Keqing',             'Kinich',
-  'Kirara',            'Klee',               'Kujou Sara',
-  'Kuki Shinobu',      'Lan Yan',            'Lauma',
-  'Layla',             'Linnea',             'Lisa',
-  'Lynette',           'Lyney',              'Manekin',
-  'Manekina',          'Mavuika',            'Mika',
-  'Mona',              'Mualani',            'Nahida',
-  'Navia',             'Nefer',              'Neuvillette',
-  'Nilou',             'Ningguang',          'Noelle',
-  'Ororon',            'Qiqi',               'Raiden Shogun',
-  'Razor',             'Rosaria',            'Sangonomiya Kokomi',
-  'Sayu',              'Sethos',             'Shenhe',
-  'Shikanoin Heizou',  'Sigewinne',          'Skirk',
-  'Sucrose',           'Tartaglia',          'Thoma',
-  'Tighnari',          'Traveler (Anemo)',   'Traveler (Cryo)',
-  'Traveler (Dendro)', 'Traveler (Electro)', 'Traveler (Geo)',
-  'Traveler (Hydro)',
-  ... 21 more items
+  'Aino',              'Albedo',           'Alhaitham',
+  'Aloy',              'Amber',            'Arataki Itto',
+  'Arlecchino',        'Baizhu',           'Barbara',
+  'Beidou',            'Bennett',          'Candace',
+  'Charlotte',         'Chasca',           'Chevreuse',
+  'Chiori',            'Chongyun',         'Citlali',
+  'Clorinde',          'Collei',           'Columbina',
+  'Cyno',              'Dahlia',           'Dehya',
+  'Diluc',             'Diona',            'Dori',
+  'Durin',             'Emilie',           'Escoffier',
+  'Eula',              'Faruzan',          'Fischl',
+  'Flins',             'Freminet',         'Furina',
+  'Gaming',            'Ganyu',            'Gorou',
+  'Hu Tao',            'Iansan',           'Ifa',
+  'Illuga',            'Ineffa',           'Jahoda',
+  'Jean',              'Kachina',          'Kaedehara Kazuha',
+  'Kaeya',             'Kamisato Ayaka',   'Kamisato Ayato',
+  'Kaveh',             'Keqing',           'Kinich',
+  'Kirara',            'Klee',             'Kujou Sara',
+  'Kuki Shinobu',      'Lan Yan',          'Lauma',
+  'Layla',             'Linnea',           'Lisa',
+  'Lohen',             'Lynette',          'Lyney',
+  'Manekin',           'Manekina',         'Mavuika',
+  'Mika',              'Mona',             'Mualani',
+  'Nahida',            'Navia',            'Nefer',
+  'Neuvillette',       'Nicole',           'Nilou',
+  'Ningguang',         'Noelle',           'Ororon',
+  'Prune',             'Qiqi',             'Raiden Shogun',
+  'Razor',             'Rosaria',          'Sangonomiya Kokomi',
+  'Sayu',              'Sethos',           'Shenhe',
+  'Shikanoin Heizou',  'Sigewinne',        'Skirk',
+  'Sucrose',           'Tartaglia',        'Thoma',
+  'Tighnari',          'Traveler (Anemo)', 'Traveler (Cryo)',
+  'Traveler (Dendro)',
+  ... 24 more items
 ]
 ```
 
@@ -1496,7 +1496,15 @@ const genshindb = require('genshin-db');
 <summary>genshindb.talents('<b>arrowhead', { matchCategories: true }</b>)</summary>
 
 ```js
-[ 'Amber', 'Collei', 'Dahlia', 'Diona', 'Fischl', 'Traveler (Geo)' ]
+[
+  'Amber',
+  'Collei',
+  'Dahlia',
+  'Diona',
+  'Fischl',
+  'Lohen',
+  'Traveler (Geo)'
+]
 ```
 
 </details>
@@ -1645,6 +1653,7 @@ const genshindb = require('genshin-db');
   'Alley Hunter',
   'Amenoma Kageuchi',
   "Amos' Bow",
+  "Angelos' Heptades",
   "Apprentice's Notes",
   'Aqua Simulacra',
   'Aquila Favonia',
@@ -1683,6 +1692,7 @@ const genshindb = require('genshin-db');
   'Deathmatch',
   'Debate Club',
   'Dialogues of the Desert Sages',
+  'Disaster and Remorse',
   'Dodoco Tales',
   "Dragon's Bane",
   'Dragonspine Spear',
@@ -1738,9 +1748,7 @@ const genshindb = require('genshin-db');
   "King's Squire",
   'Kitain Cross Spear',
   'Lightbearing Moonshard',
-  'Light of Foliar Incision',
-  "Lion's Roar",
-  ... 134 more items
+  ... 136 more items
 ]
 ```
 
@@ -1979,18 +1987,18 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  "Apprentice's Notes",     'Aquila Favonia',
-  'Athame Artis',           'Cinnabar Spindle',
-  'Cool Steel',             'Dull Blade',
-  'Favonius Codex',         'Favonius Sword',
-  'Ferrous Shadow',         'Magic Guide',
-  'Mitternachts Waltz',     'Pocket Grimoire',
-  'Raven Bow',              'Royal Grimoire',
-  'Royal Longsword',        'Silver Sword',
-  'Snow-Tombed Starsilver', 'Song of Broken Pines',
-  'The Alley Flash',        'The Bell',
-  'The Stringless',         'The Viridescent Hunt',
-  'Wolf-Fang'
+  "Apprentice's Notes",   'Aquila Favonia',
+  'Athame Artis',         'Cinnabar Spindle',
+  'Cool Steel',           'Disaster and Remorse',
+  'Dull Blade',           'Favonius Codex',
+  'Favonius Sword',       'Ferrous Shadow',
+  'Magic Guide',          'Mitternachts Waltz',
+  'Pocket Grimoire',      'Raven Bow',
+  'Royal Grimoire',       'Royal Longsword',
+  'Silver Sword',         'Snow-Tombed Starsilver',
+  'Song of Broken Pines', 'The Alley Flash',
+  'The Bell',             'The Stringless',
+  'The Viridescent Hunt', 'Wolf-Fang'
 ]
 ```
 
@@ -2864,6 +2872,10 @@ const genshindb = require('genshin-db');
   'Domain of Blessing: Desert Citadel II',
   'Domain of Blessing: Desert Citadel III',
   'Domain of Blessing: Desert Citadel IV',
+  'Domain of Blessing: Flower Feast I',
+  'Domain of Blessing: Flower Feast II',
+  'Domain of Blessing: Flower Feast III',
+  'Domain of Blessing: Flower Feast IV',
   'Domain of Blessing: Harmony I',
   'Domain of Blessing: Harmony II',
   'Domain of Blessing: Harmony III',
@@ -3079,6 +3091,7 @@ const genshindb = require('genshin-db');
   'Hydro Hypostasis',
   'Hydro Tulpa',
   'Icewind Suite',
+  'Il Dottore',
   'Iniquitous Baptist',
   'Jadeplume Terrorshroom',
   'Knuckle Duckle',

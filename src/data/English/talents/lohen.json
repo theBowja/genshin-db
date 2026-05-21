@@ -1,0 +1,254 @@
+{
+	"id": 12901,
+	"name": "Lohen",
+	"combat1": {
+		"name": "Spear of Favonius — Broken Oath",
+		"descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a forward thrust.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"description": "Normal Attack\nPerforms up to 5 consecutive strikes.\n\nCharged Attack\nConsumes a certain amount of Stamina to perform a forward thrust.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}×3",
+				"4-Hit DMG|{param4:F1P}",
+				"5-Hit DMG|{param5:F1P}+{param6:F1P}",
+				"Charged Attack DMG|{param7:F1P}×2",
+				"Charged Attack Stamina Cost|{param8:F1}",
+				"Plunge DMG|{param9:F1P}",
+				"Low/High Plunge DMG|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Unforeseen Strike",
+		"descriptionRaw": "As he searches for weaknesses, Lohen switches to {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode. While in this state:\n· Lohen can actively accumulate {LINK#N11290003}<color=#FFD780FF>Joy</color>{/LINK}, using it to unleash the special Elemental Skill {LINK#N11290002}<color=#FFD780FF>Etched Into Bone and Soul</color>{/LINK}.\n· Nearby party members can accumulate {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} for Lohen, increasing the DMG dealt by <color=#FFD780FF>Etched Into Bone and Soul</color>.\nLohen can unleash <color=#FFD780FF>Etched Into Bone and Soul</color> up to 3 times while in <color=#FFD780FF>Masterstroke</color> mode, after which, he will no longer be able to accumulate <color=#FFD780FF>Joy</color>.\n\n<i>\"Chivalry? Hah, what better way to bait the trap? When an enemy dreams of an honorable victory, they inevitably fail to suspect the 'pleasant surprise' that awaits them.\"</i>",
+		"description": "As he searches for weaknesses, Lohen switches to **Masterstroke** mode. While in this state:\n· Lohen can actively accumulate **Joy**, using it to unleash the special Elemental Skill **Etched Into Bone and Soul**.\n· Nearby party members can accumulate **Will to Win** for Lohen, increasing the DMG dealt by Etched Into Bone and Soul.\nLohen can unleash Etched Into Bone and Soul up to 3 times while in Masterstroke mode, after which, he will no longer be able to accumulate Joy.",
+		"flavorText": "\"Chivalry? Hah, what better way to bait the trap? When an enemy dreams of an honorable victory, they inevitably fail to suspect the 'pleasant surprise' that awaits them.\"",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}×3",
+				"4-Hit DMG|{param4:F1P}",
+				"5-Hit DMG|{param5:F1P}+{param6:F1P}",
+				"Charged Attack DMG|{param7:F1P}×2",
+				"Charged Attack Stamina Cost|{param8:F1}",
+				"Plunge DMG|{param9:F1P}",
+				"Low/High Plunge DMG|{param10:P}/{param11:P}",
+				"Masterstroke|{param12:F1}s",
+				"Etched Into Bone and Soul DMG|{param17:F1P}×4",
+				"DMG Increase From Will to Win|{param18:F2P}/Point",
+				"CD|{param19:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Manifest Judgment",
+		"descriptionRaw": "Performs a swift series of forward strikes, consuming all {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} and dealing <color=#99FFFFFF>Cryo DMG</color>. This DMG will be increased based on the amount of <color=#FFD780FF>Will to Win</color> consumed. If Lohen is in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode when this is performed, the duration of <color=#FFD780FF>Masterstroke</color> will be extended by 1.65s.\n\n<i>\"So quick to cave? What a pity, I was just starting to enjoy myself...\"</i>",
+		"description": "Performs a swift series of forward strikes, consuming all **Will to Win** and dealing Cryo DMG. This DMG will be increased based on the amount of Will to Win consumed. If Lohen is in **Masterstroke** mode when this is performed, the duration of Masterstroke will be extended by 1.65s.",
+		"flavorText": "\"So quick to cave? What a pity, I was just starting to enjoy myself...\"",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:F1P}×6",
+				"DMG Increase From Will to Win|{param2:F2P}/Point",
+				"CD|{param3:F1}s",
+				"Energy Cost|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Moratorium on Questioning",
+		"descriptionRaw": "When nearby party members accumulate {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} for Lohen by dealing DMG while he is in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode, if that DMG is not less than 3,000% of Lohen's Base ATK, it will accumulate an extra 60 <color=#FFD780FF>Will to Win</color>.",
+		"description": "When nearby party members accumulate **Will to Win** for Lohen by dealing DMG while he is in **Masterstroke** mode, if that DMG is not less than 3,000% of Lohen's Base ATK, it will accumulate an extra 60 Will to Win."
+	},
+	"passive2": {
+		"name": "Flippant Masterpiece",
+		"descriptionRaw": "While in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode, for 8s after another nearby party member triggers a <color=#99FFFFFF>Cryo Reaction</color>, that character's ATK is increased by 15%, while Lohen's ATK is increased by 15%.",
+		"description": "While in **Masterstroke** mode, for 8s after another nearby party member triggers a Cryo Reaction, that character's ATK is increased by 15%, while Lohen's ATK is increased by 15%."
+	},
+	"passive3": {
+		"name": "When the Mood Strikes",
+		"descriptionRaw": "Lohen gains \"High Spirits\" for 9s after he unleashes the Elemental Skill <color=#FFD780FF>Unforeseen Strike</color>: Increases the Skill Level of <color=#FFD780FF>Unforeseen Strike</color> by 1.\nWhen unleashing an Elemental Skill, if the Level of any other party member's Normal Attack, Elemental Skill, or Elemental Burst is not lower than Lohen's Elemental Skill Level, the duration of this instance of High Spirits will be increased by an additional 6s.\nHigh Spirits can be gained once every 18s.",
+		"description": "Lohen gains \"High Spirits\" for 9s after he unleashes the Elemental Skill Unforeseen Strike: Increases the Skill Level of Unforeseen Strike by 1.\nWhen unleashing an Elemental Skill, if the Level of any other party member's Normal Attack, Elemental Skill, or Elemental Burst is not lower than Lohen's Elemental Skill Level, the duration of this instance of High Spirits will be increased by an additional 6s.\nHigh Spirits can be gained once every 18s."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104304,
+				"name": "Teachings of Resistance",
+				"count": 3
+			},
+			{
+				"id": 112011,
+				"name": "Firm Arrowhead",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104305,
+				"name": "Guide to Resistance",
+				"count": 2
+			},
+			{
+				"id": 112012,
+				"name": "Sharp Arrowhead",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104305,
+				"name": "Guide to Resistance",
+				"count": 4
+			},
+			{
+				"id": 112012,
+				"name": "Sharp Arrowhead",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104305,
+				"name": "Guide to Resistance",
+				"count": 6
+			},
+			{
+				"id": 112012,
+				"name": "Sharp Arrowhead",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104305,
+				"name": "Guide to Resistance",
+				"count": 9
+			},
+			{
+				"id": 112012,
+				"name": "Sharp Arrowhead",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophies of Resistance",
+				"count": 4
+			},
+			{
+				"id": 112013,
+				"name": "Weathered Arrowhead",
+				"count": 4
+			},
+			{
+				"id": 113073,
+				"name": "Ascended Sample: Knight",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophies of Resistance",
+				"count": 6
+			},
+			{
+				"id": 112013,
+				"name": "Weathered Arrowhead",
+				"count": 6
+			},
+			{
+				"id": 113073,
+				"name": "Ascended Sample: Knight",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophies of Resistance",
+				"count": 12
+			},
+			{
+				"id": 112013,
+				"name": "Weathered Arrowhead",
+				"count": 9
+			},
+			{
+				"id": 113073,
+				"name": "Ascended Sample: Knight",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophies of Resistance",
+				"count": 16
+			},
+			{
+				"id": 112013,
+				"name": "Weathered Arrowhead",
+				"count": 12
+			},
+			{
+				"id": 113073,
+				"name": "Ascended Sample: Knight",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

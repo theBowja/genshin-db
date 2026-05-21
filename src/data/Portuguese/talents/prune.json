@@ -1,0 +1,241 @@
+{
+	"id": 13201,
+	"name": "Prune",
+	"combat1": {
+		"name": "Cabum! Martelo Destruidor de Magia!",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nRealiza até 3 ataques com o Martelo do Juramento Livrador, infligindo <color=#80FFD7FF>Dano Anemo</color>.\n\n<color=#FFD780FF>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para martelar para cima, causando <color=#80FFD7FF>Dano Anemo</color> contra os inimigos em frente.\n\n<color=#FFD780FF>Ataque Imersivo</color>\nConvocando os poderes do vento para si, mergulha ao chão em pleno ar, infligindo dano a todos os inimigos em seu caminho. Inflige <color=#80FFD7FF>Dano Anemo em uma AdE</color> durante o impacto com o chão.",
+		"description": "Ataque Normal\nRealiza até 3 ataques com o Martelo do Juramento Livrador, infligindo Dano Anemo.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para martelar para cima, causando Dano Anemo contra os inimigos em frente.\n\nAtaque Imersivo\nConvocando os poderes do vento para si, mergulha ao chão em pleno ar, infligindo dano a todos os inimigos em seu caminho. Inflige Dano Anemo em uma AdE durante o impacto com o chão.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano de Ataque Carregado|{param4:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param5:F1}",
+				"Dano Durante a Queda|{param6:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param7:F1P}/{param8:F1P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ding-ding! Tilintar Caçador de Magia!",
+		"descriptionRaw": "Lance o poder do vento para derrotar as bruxas maléficas e salvar Descartes! Prune usa o Martelo do Juramento Livrador para golpear o Sino Chama-Bruxa, causando <color=#80FFD7FF>Dano Anemo</color>.\nSe esse ataque de Prune causar uma reação de Redemoinho no inimigo, <color=#FFD780FF>Ding-ding! Tilintar Caçador de Magia!</color> será substituído por <color=#FFD780FF>Ting-Ting! Retribuição das Bruxas!</color> pelos próximos 6s.\n\n<color=#FFD780FF>Ting-Ting! Retribuição das Bruxas!</color>\nEnvolve o martelo com o Tipo Elemental do Redemoinho, e faz o {LINK#N11320001}<color=#FFD780FF>Martelo do Juramento Livrador</color>{/LINK} passar por uma Conversão Elemental. Ao pressionar para lançar, Prune salta em frente com seu Martelo do Juramento Livrador, causando Dano Elemental correspondente contra os inimigos em frente.",
+		"description": "Lance o poder do vento para derrotar as bruxas maléficas e salvar Descartes! Prune usa o Martelo do Juramento Livrador para golpear o Sino Chama-Bruxa, causando Dano Anemo.\nSe esse ataque de Prune causar uma reação de Redemoinho no inimigo, Ding-ding! Tilintar Caçador de Magia! será substituído por Ting-Ting! Retribuição das Bruxas! pelos próximos 6s.\n\nTing-Ting! Retribuição das Bruxas!\nEnvolve o martelo com o Tipo Elemental do Redemoinho, e faz o **Martelo do Juramento Livrador** passar por uma Conversão Elemental. Ao pressionar para lançar, Prune salta em frente com seu Martelo do Juramento Livrador, causando Dano Elemental correspondente contra os inimigos em frente.",
+		"attributes": {
+			"labels": [
+				"Dano de Ding-ding! Tilintar Caçador de Magia!|{param1:F1P}",
+				"Dano de Ting-Ting! Retribuição das Bruxas!|{param2:F1P}",
+				"Tempo de Recarga|{param3:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "O Sino Toca! A Caçada Chegou!",
+		"descriptionRaw": "Prune balança o Sino Chama-Bruxa, causando <color=#80FFD7FF>Dano Anemo</color> contra os inimigos próximos. Em seguida, o Sino Chama-Bruxa entra no Modo Caçador.\n\n<color=#FFD780FF>Sino Chama-Bruxa: Modo Caçador</color>\nNesse modo, o Sino Chama-Bruxa segue o personagem ativo, e periodicamente ataca os inimigos próximos, causando <color=#80FFD7FF>Dano Anemo em AdE</color>. Esse Dano é considerado Dano de Supremo.",
+		"description": "Prune balança o Sino Chama-Bruxa, causando Dano Anemo contra os inimigos próximos. Em seguida, o Sino Chama-Bruxa entra no Modo Caçador.\n\nSino Chama-Bruxa: Modo Caçador\nNesse modo, o Sino Chama-Bruxa segue o personagem ativo, e periodicamente ataca os inimigos próximos, causando Dano Anemo em AdE. Esse Dano é considerado Dano de Supremo.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Dano do Sino Chama-Bruxa|{param2:F1P}",
+				"Duração do Modo Caçador|{param3:F1}s",
+				"Tempo de Recarga|{param4:F1}s",
+				"Energia Elemental|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Veredito e Punição",
+		"descriptionRaw": "Quando causar Dano contra o inimigo no Modo Caçador do Sino Chama-Bruxa do Supremo <color=#FFD780FF>{LINK#S11325}O Sino Toca! A Caçada Chegou!{/LINK}</color>, se esse Dano desencadear Redemoinho, invoca um {LINK#N11320001}<color=#FFD780FF>Martelo do Juramento Livrador</color>{/LINK} que passou por Conversão Elemental do tipo de Redemoinho para golpear o inimigo em frente, causando 150% do ATQ de Prune como Dano Elemental correspondente. Esse Dano é considerado Dano de Supremo.",
+		"description": "Quando causar Dano contra o inimigo no Modo Caçador do Sino Chama-Bruxa do Supremo **O Sino Toca! A Caçada Chegou!**, se esse Dano desencadear Redemoinho, invoca um **Martelo do Juramento Livrador** que passou por Conversão Elemental do tipo de Redemoinho para golpear o inimigo em frente, causando 150% do ATQ de Prune como Dano Elemental correspondente. Esse Dano é considerado Dano de Supremo."
+	},
+	"passive2": {
+		"name": "Badalar Síncrono",
+		"descriptionRaw": "Após Prune atingir um inimigo com {LINK#N11320001}<color=#FFD780FF>Martelo do Juramento Livrador</color>{/LINK} que passou por Conversão Elemental, os outros membros próximos da equipe obtêm o efeito Dança dos Sinos por 5s: quando o Ataque Normal, Carregado, Imersivo, Habilidade Elemental ou Supremo causarem Dano contra um inimigo, aumenta o Dano causado por esse ataque com base em parte de ATQ de Prune que seja maior que 2.000 quando ela é afetada pelo efeito de Dança dos Sinos. Cada ponto de ATQ a mais aumenta o Dano causado por esse ataque em 0.025%. É possível aumentar até no máximo 50% dessa forma.",
+		"description": "Após Prune atingir um inimigo com **Martelo do Juramento Livrador** que passou por Conversão Elemental, os outros membros próximos da equipe obtêm o efeito Dança dos Sinos por 5s: quando o Ataque Normal, Carregado, Imersivo, Habilidade Elemental ou Supremo causarem Dano contra um inimigo, aumenta o Dano causado por esse ataque com base em parte de ATQ de Prune que seja maior que 2.000 quando ela é afetada pelo efeito de Dança dos Sinos. Cada ponto de ATQ a mais aumenta o Dano causado por esse ataque em 0.025%. É possível aumentar até no máximo 50% dessa forma."
+	},
+	"passive3": {
+		"name": "Ting-tang! Clang-bang!",
+		"descriptionRaw": "Ao sintetizar Materiais de Talento de Personagem, há 10% de chance de obter um Material de Talento extra aleatório da mesma região. A raridade será a mesma dos materiais obtidos ao fabricar.",
+		"description": "Ao sintetizar Materiais de Talento de Personagem, há 10% de chance de obter um Material de Talento extra aleatório da mesma região. A raridade será a mesma dos materiais obtidos ao fabricar."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104304,
+				"name": "Ensinamentos de Resistência",
+				"count": 3
+			},
+			{
+				"id": 112035,
+				"name": "Insígnia dos Ladrões de Tesouro",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104305,
+				"name": "Guia de Resistência",
+				"count": 2
+			},
+			{
+				"id": 112036,
+				"name": "Insígnia do Corvo Prateado",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104305,
+				"name": "Guia de Resistência",
+				"count": 4
+			},
+			{
+				"id": 112036,
+				"name": "Insígnia do Corvo Prateado",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104305,
+				"name": "Guia de Resistência",
+				"count": 6
+			},
+			{
+				"id": 112036,
+				"name": "Insígnia do Corvo Prateado",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104305,
+				"name": "Guia de Resistência",
+				"count": 9
+			},
+			{
+				"id": 112036,
+				"name": "Insígnia do Corvo Prateado",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104306,
+				"name": "Filosofia de Resistência",
+				"count": 4
+			},
+			{
+				"id": 112037,
+				"name": "Insígnia de Corvo Dourado",
+				"count": 4
+			},
+			{
+				"id": 113081,
+				"name": "Máscara do Doutor Virtuoso",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104306,
+				"name": "Filosofia de Resistência",
+				"count": 6
+			},
+			{
+				"id": 112037,
+				"name": "Insígnia de Corvo Dourado",
+				"count": 6
+			},
+			{
+				"id": 113081,
+				"name": "Máscara do Doutor Virtuoso",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104306,
+				"name": "Filosofia de Resistência",
+				"count": 12
+			},
+			{
+				"id": 112037,
+				"name": "Insígnia de Corvo Dourado",
+				"count": 9
+			},
+			{
+				"id": 113081,
+				"name": "Máscara do Doutor Virtuoso",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104306,
+				"name": "Filosofia de Resistência",
+				"count": 16
+			},
+			{
+				"id": 112037,
+				"name": "Insígnia de Corvo Dourado",
+				"count": 12
+			},
+			{
+				"id": 113081,
+				"name": "Máscara do Doutor Virtuoso",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

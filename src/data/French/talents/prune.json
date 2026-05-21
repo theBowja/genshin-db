@@ -1,0 +1,241 @@
+{
+	"id": 13201,
+	"name": "Prune",
+	"combat1": {
+		"name": "Badaboum ! Marteau d'exorcisme",
+		"descriptionRaw": "<color=#FFD780FF>Attaque normale</color>\nBrandit le marteau-serment de chasse des fléaux et enchaîne jusqu'à 3 attaques qui infligent des <color=#80FFD7FF>DGT Anémo</color>.\n\n<color=#FFD780FF>Attaque chargée</color>\nConsomme de l'endurance et effectue un coup de marteau ascendant pour infliger des <color=#80FFD7FF>DGT Anémo</color> après un court délai.\n\n<color=#FFD780FF>Attaque plongeante</color>\nPlonge depuis les airs en concentrant ses pouvoirs élémentaires, infligeant des DGT aux ennemis en chemin et des <color=#80FFD7FF>DGT Anémo de zone</color> à l'impact.",
+		"description": "Attaque normale\nBrandit le marteau-serment de chasse des fléaux et enchaîne jusqu'à 3 attaques qui infligent des DGT Anémo.\n\nAttaque chargée\nConsomme de l'endurance et effectue un coup de marteau ascendant pour infliger des DGT Anémo après un court délai.\n\nAttaque plongeante\nPlonge depuis les airs en concentrant ses pouvoirs élémentaires, infligeant des DGT aux ennemis en chemin et des DGT Anémo de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT attaque chargée|{param4:F1P}",
+				"Coût d'endurance attaque chargée|{param5:F1} pts",
+				"DGT durant la chute|{param6:F1P}",
+				"DGT chute basse/élevée|{param7:F1P}/{param8:F1P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ding ding ding ! Carillon de chasse aux sorcières",
+		"descriptionRaw": "Libère la puissance du vent pour vaincre la sorcière maléfique et sauver Descartes ! Prune frappe sa cloche de l'ensorceleuse avec son marteau-serment de chasse des fléaux, infligeant des <color=#80FFD7FF>DGT Anémo</color>.\nSi Prune déclenche une réaction de Dispersion sur un ennemi grâce à cette attaque, <color=#FFD780FF>Ding ding ding ! Carillon de chasse aux sorcières</color> est converti en <color=#FFD780FF>Bang bang ! Arrivée de la rétribution de sorcière</color> pendant 6 s.\n\n<color=#FFD780FF>Bang bang ! Arrivée de la rétribution de sorcière</color>\nLe {LINK#N11320001}<color=#FFD780FF>marteau-serment de chasse des fléaux</color>{/LINK} subit une conversion de l'élément impliqué dans la réaction de Dispersion. Utiliser un appui simple permet à Prune de bondir et de propulser son marteau vers l'avant d'un coup de pied, infligeant des DGT de l'élément correspondant aux ennemis devant elle.",
+		"description": "Libère la puissance du vent pour vaincre la sorcière maléfique et sauver Descartes ! Prune frappe sa cloche de l'ensorceleuse avec son marteau-serment de chasse des fléaux, infligeant des DGT Anémo.\nSi Prune déclenche une réaction de Dispersion sur un ennemi grâce à cette attaque, Ding ding ding ! Carillon de chasse aux sorcières est converti en Bang bang ! Arrivée de la rétribution de sorcière pendant 6 s.\n\nBang bang ! Arrivée de la rétribution de sorcière\nLe **marteau-serment de chasse des fléaux** subit une conversion de l'élément impliqué dans la réaction de Dispersion. Utiliser un appui simple permet à Prune de bondir et de propulser son marteau vers l'avant d'un coup de pied, infligeant des DGT de l'élément correspondant aux ennemis devant elle.",
+		"attributes": {
+			"labels": [
+				"DGT de Ding ding ding ! Carillon de chasse aux sorcières|{param1:F1P}",
+				"DGT de Bang bang ! Arrivée de la rétribution de sorcière|{param2:F1P}",
+				"Temps de recharge|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Le glas sonne ! La chasse est ouverte",
+		"descriptionRaw": "Prune agite doucement sa cloche de l'ensorceleuse, infligeant des <color=#80FFD7FF>DGT Anémo</color> aux ennemis proches avant que la cloche ne passe en mode Chasse-traque.\n\n<color=#FFD780FF>Cloche de l'ensorceleuse : Chasse-traque</color>\nDans ce mode, la cloche de l'ensorceleuse suit le personnage déployé, attaquant les ennemis à proximité de façon intermittente en leur infligeant des <color=#80FFD7FF>DGT Anémo de zone</color>, ces DGT étant considérés comme des DGT de déchaînement élémentaire.",
+		"description": "Prune agite doucement sa cloche de l'ensorceleuse, infligeant des DGT Anémo aux ennemis proches avant que la cloche ne passe en mode Chasse-traque.\n\nCloche de l'ensorceleuse : Chasse-traque\nDans ce mode, la cloche de l'ensorceleuse suit le personnage déployé, attaquant les ennemis à proximité de façon intermittente en leur infligeant des DGT Anémo de zone, ces DGT étant considérés comme des DGT de déchaînement élémentaire.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT cloche de l'ensorceleuse|{param2:F1P}",
+				"Durée du mode Chasse-traque|{param3:F1} s",
+				"Temps de recharge|{param4:F1} s",
+				"Énergie élémentaire|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Verdict et peine",
+		"descriptionRaw": "Lorsque la cloche de l'ensorceleuse du mode Chasse-traque inflige des DGT à un ennemi pendant le déchaînement élémentaire <color=#FFD780FF>{LINK#S11325}Le glas sonne ! La chasse est ouverte{/LINK}</color>, déclencher par la même occasion une réaction de Dispersion sur l'ennemi invoque un {LINK#N11320001}<color=#FFD780FF>marteau-serment de chasse des fléaux</color>{/LINK} dont l'élément est converti selon la réaction élémentaire, infligeant des DGT élémentaires d'une valeur équivalant à 150 % de l'ATQ de Prune. Ces dégâts sont considérés comme des DGT de déchaînement élémentaire.",
+		"description": "Lorsque la cloche de l'ensorceleuse du mode Chasse-traque inflige des DGT à un ennemi pendant le déchaînement élémentaire **Le glas sonne ! La chasse est ouverte**, déclencher par la même occasion une réaction de Dispersion sur l'ennemi invoque un **marteau-serment de chasse des fléaux** dont l'élément est converti selon la réaction élémentaire, infligeant des DGT élémentaires d'une valeur équivalant à 150 % de l'ATQ de Prune. Ces dégâts sont considérés comme des DGT de déchaînement élémentaire."
+	},
+	"passive2": {
+		"name": "Synchronicité des cloches",
+		"descriptionRaw": "Lorsque Prune a touché un ennemi avec un {LINK#N11320001}<color=#FFD780FF>marteau-serment de chasse des fléaux</color>{/LINK} dont l'élément a été converti, les autres personnages de l'équipe à proximité obtiennent l'effet Ralliement du glas pendant 5 s : chaque pt d'ATQ de Prune au-dessus de 2 000 pts lors de l'obtention de l'effet Ralliement du glas augmente les DGT infligés par les attaques normales, les attaques chargées, les attaques plongeantes, les compétences élémentaires et les déchaînements élémentaires de 0,025 %, jusqu'à un maximum de 50 %.",
+		"description": "Lorsque Prune a touché un ennemi avec un **marteau-serment de chasse des fléaux** dont l'élément a été converti, les autres personnages de l'équipe à proximité obtiennent l'effet Ralliement du glas pendant 5 s : chaque pt d'ATQ de Prune au-dessus de 2 000 pts lors de l'obtention de l'effet Ralliement du glas augmente les DGT infligés par les attaques normales, les attaques chargées, les attaques plongeantes, les compétences élémentaires et les déchaînements élémentaires de 0,025 %, jusqu'à un maximum de 50 %."
+	},
+	"passive3": {
+		"name": "Modification bing, bang, boum !",
+		"descriptionRaw": "10 % de chances de synthétiser un matériau d'aptitude aléatoire supplémentaire (même rareté et région que le matériau obtenu).",
+		"description": "10 % de chances de synthétiser un matériau d'aptitude aléatoire supplémentaire (même rareté et région que le matériau obtenu)."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104304,
+				"name": "Enseignement de la Résistance",
+				"count": 3
+			},
+			{
+				"id": 112035,
+				"name": "Insigne des Pilleurs",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104305,
+				"name": "Guide de la Résistance",
+				"count": 2
+			},
+			{
+				"id": 112036,
+				"name": "Insigne de corbeau en argent",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104305,
+				"name": "Guide de la Résistance",
+				"count": 4
+			},
+			{
+				"id": 112036,
+				"name": "Insigne de corbeau en argent",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104305,
+				"name": "Guide de la Résistance",
+				"count": 6
+			},
+			{
+				"id": 112036,
+				"name": "Insigne de corbeau en argent",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104305,
+				"name": "Guide de la Résistance",
+				"count": 9
+			},
+			{
+				"id": 112036,
+				"name": "Insigne de corbeau en argent",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophie de la Résistance",
+				"count": 4
+			},
+			{
+				"id": 112037,
+				"name": "Insigne de corbeau en or",
+				"count": 4
+			},
+			{
+				"id": 113081,
+				"name": "Masque du médecin vertueux",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophie de la Résistance",
+				"count": 6
+			},
+			{
+				"id": 112037,
+				"name": "Insigne de corbeau en or",
+				"count": 6
+			},
+			{
+				"id": 113081,
+				"name": "Masque du médecin vertueux",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophie de la Résistance",
+				"count": 12
+			},
+			{
+				"id": 112037,
+				"name": "Insigne de corbeau en or",
+				"count": 9
+			},
+			{
+				"id": 113081,
+				"name": "Masque du médecin vertueux",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104306,
+				"name": "Philosophie de la Résistance",
+				"count": 16
+			},
+			{
+				"id": 112037,
+				"name": "Insigne de corbeau en or",
+				"count": 12
+			},
+			{
+				"id": 113081,
+				"name": "Masque du médecin vertueux",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

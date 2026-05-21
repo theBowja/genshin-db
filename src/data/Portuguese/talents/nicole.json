@@ -1,0 +1,246 @@
+{
+	"id": 13101,
+	"name": "Nicole",
+	"combat1": {
+		"name": "Allegoria",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nProclama o decreto na língua primordial, realizando até 3 golpes que causam <color=#FF9999FF>Dano Pyro</color>.\n\n<color=#FFD780FF>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para infligir <color=#FF9999FF>Dano Pyro em uma AdE</color> após um curto período de canalização.\n\n<color=#FFD780FF>Ataque Imersivo</color>\nMergulha em direção ao chão em pleno ar, infligindo dano a todos os inimigos em seu caminho. Inflige <color=#FF9999FF>Dano Pyro em uma AdE</color> durante o impacto com o chão.",
+		"description": "Ataque Normal\nProclama o decreto na língua primordial, realizando até 3 golpes que causam Dano Pyro.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para infligir Dano Pyro em uma AdE após um curto período de canalização.\n\nAtaque Imersivo\nMergulha em direção ao chão em pleno ar, infligindo dano a todos os inimigos em seu caminho. Inflige Dano Pyro em uma AdE durante o impacto com o chão.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano de Ataque Carregado|{param4:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param5:F1}",
+				"Dano Durante a Queda|{param6:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param7:F1P}/{param8:F1P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Revelação: Luz Não Criada",
+		"descriptionRaw": "Recria um vislumbre passageiro de uma era longínqua quando a autoridade dos céus ainda podia ser invocada, concedendo para todos os personagens próximos o efeito {LINK#N11310001}<color=#FFD780FF>Graça de Kenosis</color>{/LINK}{LINK#N11310002}{/LINK}, aumentando o ATQ desses personagens, causando <color=#FF9999FF>Dano Pyro em AdE</color> e revelando o Escudo da Luz Flamejante.\nA absorção de Dano do Escudo da Luz Flamejante é baseada no ATQ de Nicole, e possui 250% de eficácia contra <color=#FF9999FF>Dano Pyro</color>.",
+		"description": "Recria um vislumbre passageiro de uma era longínqua quando a autoridade dos céus ainda podia ser invocada, concedendo para todos os personagens próximos o efeito **Graça de Kenosis******, aumentando o ATQ desses personagens, causando Dano Pyro em AdE e revelando o Escudo da Luz Flamejante.\nA absorção de Dano do Escudo da Luz Flamejante é baseada no ATQ de Nicole, e possui 250% de eficácia contra Dano Pyro.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Absorção de Dano do Escudo|{param2:F1P} do ATQ + {param3:I}",
+				"Duração do Escudo|{param4:F1}s",
+				"Proporção do Bônus de ATQ da Graça de Kenosis|{param5:F2P} do ATQ",
+				"Bônus de ATQ Máximo da Graça de Kenosis|{param6:F1}",
+				"Duração de Graça de Kenosis|{param7:F1}s",
+				"Tempo de Recarga|{param8:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Revelação: Caminho da Jornada Celestial",
+		"descriptionRaw": "Tece o caminho do destino ancorado com fios dourados de luz, causando <color=#FF9999FF>Dano Pyro em AdE</color>, e troca para o modo Contemplação Silenciosa.\nQuando Nicole está nesse modo e quando um ataque do personagem ativo atinge um inimigo, invoca uma Projeção Arcana que realiza um Ataque Coordenado contra o inimigo, causando Dano em AdE do Tipo Elemental correspondente ao do personagem. Esse Dano é baseado no ATQ do personagem, e é considerado Dano causado por esse personagem.\nEsse efeito pode ser desencadeado uma vez a cada 3s, e pode ser desencadeado 4 vezes por modo de Contemplação Silenciosa de Nicole.\n\nAlém disso, personagens Mágicos terão alguma diferença de aparência quando estiverem em Projeção Arcana...",
+		"description": "Tece o caminho do destino ancorado com fios dourados de luz, causando Dano Pyro em AdE, e troca para o modo Contemplação Silenciosa.\nQuando Nicole está nesse modo e quando um ataque do personagem ativo atinge um inimigo, invoca uma Projeção Arcana que realiza um Ataque Coordenado contra o inimigo, causando Dano em AdE do Tipo Elemental correspondente ao do personagem. Esse Dano é baseado no ATQ do personagem, e é considerado Dano causado por esse personagem.\nEsse efeito pode ser desencadeado uma vez a cada 3s, e pode ser desencadeado 4 vezes por modo de Contemplação Silenciosa de Nicole.\n\nAlém disso, personagens Mágicos terão alguma diferença de aparência quando estiverem em Projeção Arcana...",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P}",
+				"Dano de Projeção Arcana|{param2:F1P} do ATQ do personagem correspondente",
+				"Instâncias de Ataque de Projeção Arcana|{param3:I} vez(es)",
+				"Duração de Contemplação Silenciosa|{param4:F1}s",
+				"Tempo de Recarga|{param5:F1}s",
+				"Energia Elemental|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Methexis",
+		"descriptionRaw": "Nos 20s após lançar a Habilidade Elemental <color=#FFD780FF>{LINK#S11312}Revelação: Luz Não Criada{/LINK}</color>, Nicole aplicará Observação no personagem ativo da equipe. Personagens sob efeito de Observação terão sua {LINK#N11310001}<color=#FFD780FF>Graça de Kenosis</color>{/LINK} elevada para {LINK#N11310002}<color=#FFD780FF>Orientação de Theosis</color>{/LINK} 3s após entrarem em campo, aumentando seu ATQ em 300 adicionais. Se o personagem sob efeito de Observação for um personagem Mágico, o efeito <color=#FFD780FF>Graça de Kenosis</color> será elevado automaticamente para <color=#FFD780FF>Orientação de Theosis</color>.\nCom exceção de Nicole, outros personagens que possuem <color=#FFD780FF>Orientação de Theosis</color> voltarão a ter <color=#FFD780FF>Graça de Kenosis</color> quando saírem de campo.",
+		"description": "Nos 20s após lançar a Habilidade Elemental **Revelação: Luz Não Criada**, Nicole aplicará Observação no personagem ativo da equipe. Personagens sob efeito de Observação terão sua **Graça de Kenosis** elevada para **Orientação de Theosis** 3s após entrarem em campo, aumentando seu ATQ em 300 adicionais. Se o personagem sob efeito de Observação for um personagem Mágico, o efeito Graça de Kenosis será elevado automaticamente para Orientação de Theosis.\nCom exceção de Nicole, outros personagens que possuem Orientação de Theosis voltarão a ter Graça de Kenosis quando saírem de campo."
+	},
+	"passive2": {
+		"name": "Philokalia",
+		"descriptionRaw": "Depois que o personagem ativo próximo atingir o inimigo com Dano Elemental, a {LINK#N11310001}<color=#FFD780FF>Graça de Kenosis</color>{/LINK} de Nicole será elevada para {LINK#N11310002}<color=#FFD780FF>Orientação de Theosis</color>{/LINK} por 8s.",
+		"description": "Depois que o personagem ativo próximo atingir o inimigo com Dano Elemental, a **Graça de Kenosis** de Nicole será elevada para **Orientação de Theosis** por 8s."
+	},
+	"passive3": {
+		"name": "Nepsis",
+		"descriptionRaw": "Em Teyvat, quando não estiver em combate, se já tiver obtido a Bússola de Tesouros da região atual, o Ataque Carregado de Nicole será convertido para Orientação da Emissária: invoca os Seelies próximos para ajudar a mostrar o caminho, e desencadeia o efeito igual ao da Bússola de Tesouros da região atual.\nEsse efeito possui uma recarga de 5s, e não pode ser ativado em Domínios, Domínios Dizimados e Abismo do Espiral.",
+		"description": "Em Teyvat, quando não estiver em combate, se já tiver obtido a Bússola de Tesouros da região atual, o Ataque Carregado de Nicole será convertido para Orientação da Emissária: invoca os Seelies próximos para ajudar a mostrar o caminho, e desencadeia o efeito igual ao da Bússola de Tesouros da região atual.\nEsse efeito possui uma recarga de 5s, e não pode ser ativado em Domínios, Domínios Dizimados e Abismo do Espiral."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104359,
+				"name": "Ensinamentos do Elísio",
+				"count": 3
+			},
+			{
+				"id": 112125,
+				"name": "Garantia Desgastada",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104360,
+				"name": "Guia do Elísio",
+				"count": 2
+			},
+			{
+				"id": 112126,
+				"name": "Garantia Imaculada",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104360,
+				"name": "Guia do Elísio",
+				"count": 4
+			},
+			{
+				"id": 112126,
+				"name": "Garantia Imaculada",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104360,
+				"name": "Guia do Elísio",
+				"count": 6
+			},
+			{
+				"id": 112126,
+				"name": "Garantia Imaculada",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104360,
+				"name": "Guia do Elísio",
+				"count": 9
+			},
+			{
+				"id": 112126,
+				"name": "Garantia Imaculada",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofia do Elísio",
+				"count": 4
+			},
+			{
+				"id": 112127,
+				"name": "Garantia Gélida",
+				"count": 4
+			},
+			{
+				"id": 113087,
+				"name": "Resina Falsificada",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofia do Elísio",
+				"count": 6
+			},
+			{
+				"id": 112127,
+				"name": "Garantia Gélida",
+				"count": 6
+			},
+			{
+				"id": 113087,
+				"name": "Resina Falsificada",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofia do Elísio",
+				"count": 12
+			},
+			{
+				"id": 112127,
+				"name": "Garantia Gélida",
+				"count": 9
+			},
+			{
+				"id": 113087,
+				"name": "Resina Falsificada",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofia do Elísio",
+				"count": 16
+			},
+			{
+				"id": 112127,
+				"name": "Garantia Gélida",
+				"count": 12
+			},
+			{
+				"id": 113087,
+				"name": "Resina Falsificada",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

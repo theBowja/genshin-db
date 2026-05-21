@@ -1,0 +1,246 @@
+{
+	"id": 13101,
+	"name": "Nicole",
+	"combat1": {
+		"name": "Alegoría",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nProclama un decreto en el lenguaje primigenio y realiza hasta 3 ataques que infligen <color=#FF9999FF>Daño Pyro</color>.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume cierta cantidad de Aguante para infligir <color=#FF9999FF>Daño Pyro en el AdE</color> frente a sí misma tras un breve periodo de canalización.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo <color=#FF9999FF>Daño Pyro en el AdE</color> en el momento del impacto.",
+		"description": "Ataque Normal\nProclama un decreto en el lenguaje primigenio y realiza hasta 3 ataques que infligen Daño Pyro.\n\nAtaque Cargado\nConsume cierta cantidad de Aguante para infligir Daño Pyro en el AdE frente a sí misma tras un breve periodo de canalización.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño Pyro en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de ATQ Cargado|{param4:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param5:F1} pts.",
+				"Daño de Caída|{param6:F1P}",
+				"Daño de impacto de caída baja/alta|{param7:F1P}/{param8:F1P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Revelación: Luz no manifiesta",
+		"descriptionRaw": "Recrea un fugaz destello de la autoridad que llegó a ejercerse en nombre de los cielos en una era pasada para otorgar a todos los personajes cercanos del equipo el efecto de {LINK#N11310001}<color=#FFD780FF>gracia de la kénosis</color>{/LINK}{LINK#N11310002}{/LINK}, el cual aumenta el ATQ de dichos personajes. Además, inflige <color=#FF9999FF>Daño Pyro en el AdE</color> y crea un escudo refulgellamas.\nLa absorción de daño del escudo refulgellamas dependerá del ATQ de Nicole, y tiene un 250% de efectividad de absorción de <color=#FF9999FF>Daño Pyro</color>.",
+		"description": "Recrea un fugaz destello de la autoridad que llegó a ejercerse en nombre de los cielos en una era pasada para otorgar a todos los personajes cercanos del equipo el efecto de **gracia de la kénosis******, el cual aumenta el ATQ de dichos personajes. Además, inflige Daño Pyro en el AdE y crea un escudo refulgellamas.\nLa absorción de daño del escudo refulgellamas dependerá del ATQ de Nicole, y tiene un 250% de efectividad de absorción de Daño Pyro.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Absorción de escudo|{param2:F1P} de ATQ + {param3:I}",
+				"Duración del escudo|{param4:F1} s",
+				"Proporción del Bono de ATQ de gracia de la kénosis|{param5:F2P} de ATQ",
+				"Bono de ATQ máximo de gracia de la kénosis|{param6:F1} pts.",
+				"Duración de gracia de la kénosis|{param7:F1} s",
+				"TdE|{param8:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Revelación: Escalinata del ascenso divino",
+		"descriptionRaw": "#Nicole teje el camino del destino “anclado” con hilos de luz dorada, inflige <color=#FF9999FF>Daño Pyro en el AdE</color> y pasa al modo de “plegaria contemplativa”.\nMientras Nicole se encuentre en dicho modo, cuando un personaje en uso cercano del equipo golpee a un enemigo, se invocará una proyección arcana que realizará un ataque coordinado contra el enemigo e infligirá Daño en el AdE del elemento correspondiente al tipo elemental del personaje en cuestión. Dicho daño se beneficiará del ATQ del personaje y se considerará infligido por este mismo.\nEste efecto puede ocurrir, como máximo, una vez cada 3{NON_BREAK_SPACE}s, y solo podrá activarse 4 veces cada vez que Nicole cambie al modo de plegaria contemplativa.\n\nAdemás, las proyecciones arcanas de los personajes taumatúrgicos parecen tener un aspecto diferente...",
+		"description": "Nicole teje el camino del destino “anclado” con hilos de luz dorada, inflige Daño Pyro en el AdE y pasa al modo de “plegaria contemplativa”.\nMientras Nicole se encuentre en dicho modo, cuando un personaje en uso cercano del equipo golpee a un enemigo, se invocará una proyección arcana que realizará un ataque coordinado contra el enemigo e infligirá Daño en el AdE del elemento correspondiente al tipo elemental del personaje en cuestión. Dicho daño se beneficiará del ATQ del personaje y se considerará infligido por este mismo.\nEste efecto puede ocurrir, como máximo, una vez cada 3 s, y solo podrá activarse 4 veces cada vez que Nicole cambie al modo de plegaria contemplativa.\n\nAdemás, las proyecciones arcanas de los personajes taumatúrgicos parecen tener un aspecto diferente...",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de proyección arcana|{param2:F1P} de ATQ del personaje correspondiente",
+				"Número de ataques de proyección arcana|{param3:I}",
+				"Duración de plegaria contemplativa|{param4:F1} s",
+				"TdE|{param5:F1} s",
+				"Energía Elemental|{param6:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Méthexis",
+		"descriptionRaw": "#Tras usar la Habilidad Elemental, <color=#FFD780FF>{LINK#S11312}Revelación: Luz no manifiesta{/LINK}</color>, Nicole “observará” continuamente a tu personaje en uso del equipo (a excepción de ella misma) durante 20{NON_BREAK_SPACE}s. Cuando un personaje observado permanezca en el campo de batalla durante 3{NON_BREAK_SPACE}s, su {LINK#N11310001}<color=#FFD780FF>gracia de la kénosis</color>{/LINK} mejorará a {LINK#N11310002}<color=#FFD780FF>guía de la teosis</color>{/LINK}, lo que aumentará su ATQ de forma adicional en 300{NON_BREAK_SPACE}pts. Si el personaje observado es un personaje taumatúrgico, el efecto de <color=#FFD780FF>gracia de la kénosis</color> se convertirá directamente en <color=#FFD780FF>guía de la teosis</color>.\nA excepción de Nicole, cuando los demás personajes se retiren del combate, su <color=#FFD780FF>guía de la teosis</color> volverá a convertirse en <color=#FFD780FF>gracia de la kénosis</color>.",
+		"description": "Tras usar la Habilidad Elemental, **Revelación: Luz no manifiesta**, Nicole “observará” continuamente a tu personaje en uso del equipo (a excepción de ella misma) durante 20 s. Cuando un personaje observado permanezca en el campo de batalla durante 3 s, su **gracia de la kénosis** mejorará a **guía de la teosis**, lo que aumentará su ATQ de forma adicional en 300 pts. Si el personaje observado es un personaje taumatúrgico, el efecto de gracia de la kénosis se convertirá directamente en guía de la teosis.\nA excepción de Nicole, cuando los demás personajes se retiren del combate, su guía de la teosis volverá a convertirse en gracia de la kénosis."
+	},
+	"passive2": {
+		"name": "Filocalia",
+		"descriptionRaw": "#Cuando un personaje en uso cercano del equipo golpee a un enemigo con Daño Elemental, la {LINK#N11310001}<color=#FFD780FF>gracia de la kénosis</color>{/LINK} de Nicole mejorará a {LINK#N11310002}<color=#FFD780FF>guía de la teosis</color>{/LINK} durante 8{NON_BREAK_SPACE}s.",
+		"description": "Cuando un personaje en uso cercano del equipo golpee a un enemigo con Daño Elemental, la **gracia de la kénosis** de Nicole mejorará a **guía de la teosis** durante 8 s."
+	},
+	"passive3": {
+		"name": "Nepsis",
+		"descriptionRaw": "#Cuando Nicole se encuentre fuera de combate en una región de Teyvat en la que se haya desbloqueado la Brújula buscatesoros, su Ataque Cargado se convertirá en “Emisaria guía”, con lo que invocará a un Seelie cercano para que muestre el camino, activando un efecto similar al de la Brújula buscatesoros de la región.\nEste efecto tiene un TdE de 5{NON_BREAK_SPACE}s, y no se activará en dominios, Dominios de la cruzada o en la Espiral del Abismo.",
+		"description": "Cuando Nicole se encuentre fuera de combate en una región de Teyvat en la que se haya desbloqueado la Brújula buscatesoros, su Ataque Cargado se convertirá en “Emisaria guía”, con lo que invocará a un Seelie cercano para que muestre el camino, activando un efecto similar al de la Brújula buscatesoros de la región.\nEste efecto tiene un TdE de 5 s, y no se activará en dominios, Dominios de la cruzada o en la Espiral del Abismo."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104359,
+				"name": "Enseñanzas del paraíso",
+				"count": 3
+			},
+			{
+				"id": 112125,
+				"name": "Distintivo desgastado",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104360,
+				"name": "Guía del paraíso",
+				"count": 2
+			},
+			{
+				"id": 112126,
+				"name": "Distintivo sofisticado",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104360,
+				"name": "Guía del paraíso",
+				"count": 4
+			},
+			{
+				"id": 112126,
+				"name": "Distintivo sofisticado",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104360,
+				"name": "Guía del paraíso",
+				"count": 6
+			},
+			{
+				"id": 112126,
+				"name": "Distintivo sofisticado",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104360,
+				"name": "Guía del paraíso",
+				"count": 9
+			},
+			{
+				"id": 112126,
+				"name": "Distintivo sofisticado",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofía del paraíso",
+				"count": 4
+			},
+			{
+				"id": 112127,
+				"name": "Distintivo escarchado",
+				"count": 4
+			},
+			{
+				"id": 113087,
+				"name": "Resina falsa",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofía del paraíso",
+				"count": 6
+			},
+			{
+				"id": 112127,
+				"name": "Distintivo escarchado",
+				"count": 6
+			},
+			{
+				"id": 113087,
+				"name": "Resina falsa",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofía del paraíso",
+				"count": 12
+			},
+			{
+				"id": 112127,
+				"name": "Distintivo escarchado",
+				"count": 9
+			},
+			{
+				"id": 113087,
+				"name": "Resina falsa",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104361,
+				"name": "Filosofía del paraíso",
+				"count": 16
+			},
+			{
+				"id": 112127,
+				"name": "Distintivo escarchado",
+				"count": 12
+			},
+			{
+				"id": 113087,
+				"name": "Resina falsa",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}
