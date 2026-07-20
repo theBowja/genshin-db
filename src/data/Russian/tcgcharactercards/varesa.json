@@ -1,0 +1,104 @@
+{
+	"id": 1415,
+	"name": "Вареса",
+	"shareid": 521,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Электро",
+		"Катализатор",
+		"Натлан"
+	],
+	"storytitle": "«Безмятежная сила» Вареса",
+	"storytext": "Сохранять спокойствие и мир, стремиться вперед с отвагой и решимостью.",
+	"source": "Награда за приглашение Варесы в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 14151,
+			"name": "За рога",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>Когда используется $[K52]:</color> наносит на 1 ед. урона больше, а персонаж входит в состояние <color=#FFFFFFFF>$[C114151]</color> и получает 1 <color=#FFFFFFFF>очко Ночного духа</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>.\\n<color=#FFFFFFFF>Когда используется <color=#FFFFFFFF>Атака в падении</color>:</color> наносит на 1 ед. урона больше, а персонаж входит в состояние <color=#FFFFFFFF>Благословение Ночного духа</color> и получает 1 <color=#FFFFFFFF>очко Ночного духа</color>.",
+			"description": "Наносит 1 Электро урон.\nКогда используется Атака в падении: наносит на 1 ед. урона больше, а персонаж входит в состояние Благословение Ночного духа и получает 1 очко Ночного духа.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14152,
+			"name": "Верхом на ночной радуге",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Накладывает на себя <color=#FFFFFFFF>$[C114154]</color>, персонаж входит в состояние <color=#FFFFFFFF>$[C114151]</color>. Даёт 1 <color=#FFFFFFFF>очко Ночного духа</color>, затем переключается на следующего персонажа.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>. Накладывает на себя <color=#FFFFFFFF>Внезапный натиск</color>, персонаж входит в состояние <color=#FFFFFFFF>Благословение Ночного духа</color>. Даёт 1 <color=#FFFFFFFF>очко Ночного духа</color>, затем переключается на следующего персонажа.",
+			"description": "Наносит 2 Электро урон. Накладывает на себя Внезапный натиск, персонаж входит в состояние Благословение Ночного духа. Даёт 1 очко Ночного духа, затем переключается на следующего персонажа.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14153,
+			"name": "Ослепительное сошествие!",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. На персонажа накладывается <color=#FFFFFFFF>$[C114152]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед. На персонажа накладывается <color=#FFFFFFFF>Предельный импульс</color>.",
+			"description": "Наносит Электро урон, 3 ед. На персонажа накладывается Предельный импульс.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14154,
+			"name": "Трёхкратный командный прыжок!",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>Когда <color=#FFFFFFFF>$[A1415]</color> использует навык:</color> если у неё есть 2 <color=#FFFFFFFF>очка Ночного духа</color>, она тратит их и накладывает на себя <color=#FFFFFFFF>$[C114152]</color>.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>Когда <color=#FFFFFFFF>Вареса</color> использует навык:</color> если у неё есть 2 <color=#FFFFFFFF>очка Ночного духа</color>, она тратит их и накладывает на себя <color=#FFFFFFFF>Предельный импульс</color>.",
+			"description": "(Пассивный навык) Когда Вареса использует навык: если у неё есть 2 очка Ночного духа, она тратит их и накладывает на себя Предельный импульс.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 14155,
+			"name": "Ослепительное сошествие: Обрушение вулкана",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Этот навык считается как $[K52].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед. Этот навык считается как <color=#FFFFFFFF>Атака в падении</color>.",
+			"description": "Наносит Электро урон, 3 ед. Этот навык считается как Атака в падении.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

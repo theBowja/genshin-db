@@ -1,0 +1,81 @@
+{
+	"id": 1515,
+	"name": "이파",
+	"shareid": 522,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"바람 원소",
+		"법구",
+		"나타"
+	],
+	"storytitle": "생명을 잇는 바람·이파",
+	"storytext": "질풍의 구조대",
+	"source": "캣테일 술집에서 이파 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 15151,
+			"name": "환기의 바람",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 1pt 준다.",
+			"description": "바람 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15152,
+			"name": "공중 구조대",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 자신이 <color=#FFFFFFFF>$[C115151]</color>에 진입해 <color=#FFFFFFFF>「밤혼」</color>을 2pt 획득하며 <color=#FFFFFFFF>$[C115152]</color>를 부착한다. (캐릭터가 <color=#FFFFFFFF>$[C115151]</color> 진입 후, 해당 스킬을 사용할 수 없다)\\n(<color=#FFFFFFFF>$[C115152]</color>를 부착한 캐릭터가 사용 가능한 특수 스킬: <color=#FFFFFFFF>$[S1151521]</color>)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 1pt 주고 자신이 <color=#FFFFFFFF>밤혼 가호</color>에 진입해 <color=#FFFFFFFF>「밤혼」</color>을 2pt 획득하며 <color=#FFFFFFFF>카쿠쿠</color>를 부착한다. (캐릭터가 <color=#FFFFFFFF>밤혼 가호</color> 진입 후, 해당 스킬을 사용할 수 없다)\\n(<color=#FFFFFFFF>카쿠쿠</color>를 부착한 캐릭터가 사용 가능한 특수 스킬: <color=#FFFFFFFF>지원 사격</color>)",
+			"description": "바람 원소 피해를 1pt 주고 자신이 밤혼 가호에 진입해 「밤혼」을 2pt 획득하며 카쿠쿠를 부착한다. (캐릭터가 밤혼 가호 진입 후, 해당 스킬을 사용할 수 없다)\n(카쿠쿠를 부착한 캐릭터가 사용 가능한 특수 스킬: 지원 사격)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15153,
+			"name": "강제 진정 구역",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 피해를 가장 많이 받은 아군 캐릭터의 HP를 2pt 치유한다. 해당 스킬이 $[K215]을 발동했을 경우, 상대 출전 캐릭터에게 상응하는 원소의 $[K1038]을 부착한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 2pt 주고 피해를 가장 많이 받은 아군 캐릭터의 HP를 2pt 치유한다. 해당 스킬이 <color=#80FFD7FF>{SPRITE_PRESET#2105}바람 원소 관련 반응</color>을 발동했을 경우, 상대 출전 캐릭터에게 상응하는 원소의 <color=#FFFFFFFF>진정 표식</color>을 부착한다.",
+			"description": "바람 원소 피해를 2pt 주고 피해를 가장 많이 받은 아군 캐릭터의 HP를 2pt 치유한다. 해당 스킬이 바람 원소 관련 반응을 발동했을 경우, 상대 출전 캐릭터에게 상응하는 원소의 진정 표식을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

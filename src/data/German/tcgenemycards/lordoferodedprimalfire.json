@@ -1,0 +1,84 @@
+{
+	"id": 4308,
+	"name": "Herr des erodierten Urfeuers",
+	"hp": 18,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 23051,
+			"name": "Schattenklauenschlag",
+			"descriptionraw": "Verursacht 2 Pkt. $[D__KEY__ELEMENT|s1].",
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23052,
+			"name": "Erodierte flammende Federn",
+			"descriptionraw": "Verursacht 3 Pkt. $[D__KEY__ELEMENT|s1] und die oberste Karte deines Stapels wird $[K56|s1].",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-SCH</color> und die oberste Karte deines Stapels wird <color=#FFFFFFFF>abgeworfen</color>.",
+			"description": "Verursacht 3 Pkt. Pyro-SCH und die oberste Karte deines Stapels wird abgeworfen.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23053,
+			"name": "Teilendes Urfeuer",
+			"descriptionraw": "Verursacht 1 Pkt. $[D__KEY__ELEMENT] und fügt allen inaktiven Figuren des Gegners 1 Pkt. $[K5|s1] zu. Die oberen drei Karten von den Stapeln beider Seiten werden $[K56|s1]. Verleiht selbst 1 Stapelung <color=#FFFFFFFF>$[C123051]</color>.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro-Schaden</color> und fügt allen inaktiven Figuren des Gegners 1 Pkt. <color=#FFFFFFFF>durchdringenden SCH</color> zu. Die oberen drei Karten von den Stapeln beider Seiten werden <color=#FFFFFFFF>abgeworfen</color>. Verleiht selbst 1 Stapelung <color=#FFFFFFFF>Missgunst</color>.",
+			"description": "Verursacht 1 Pkt. Pyro-Schaden und fügt allen inaktiven Figuren des Gegners 1 Pkt. durchdringenden SCH zu. Die oberen drei Karten von den Stapeln beider Seiten werden abgeworfen. Verleiht selbst 1 Stapelung Missgunst.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23055,
+			"name": "Gebrüll aus der Dunkelheit",
+			"descriptionraw": "Passiv – <color=#FFFFFFFF>Erleidet diese Figur SCH:</color> Wenn ihre LP nicht höher als 6 ist, werden von beiden Seiten die oberen 9 Karten vom Stapel $[K56|s1] (1-mal pro Duell).",
+			"descriptionreplaced": "Passiv – <color=#FFFFFFFF>Erleidet diese Figur SCH:</color> Wenn ihre LP nicht höher als 6 ist, werden von beiden Seiten die oberen 9 Karten vom Stapel <color=#FFFFFFFF>abgeworfen</color> (1-mal pro Duell).",
+			"description": "Passiv – Erleidet diese Figur SCH: Wenn ihre LP nicht höher als 6 ist, werden von beiden Seiten die oberen 9 Karten vom Stapel abgeworfen (1-mal pro Duell).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

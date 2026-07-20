@@ -1,0 +1,87 @@
+{
+	"id": 4210,
+	"name": "물의 환인간",
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"물 원소",
+		"기타 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 22061,
+			"name": "너울",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다.",
+			"description": "물 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22062,
+			"name": "급류",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 아군 「소환물」 1개의 「종료 단계」 효과를 랜덤으로 발동한다. 만약 자신의 HP가 2pt 이상일 경우 자신이 <color=#FFFFFFFF>$[K5]</color>를 1pt 받는다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 주고 아군 「소환물」 1개의 「종료 단계」 효과를 랜덤으로 발동한다. 만약 자신의 HP가 2pt 이상일 경우 자신이 <color=#FFFFFFFF><color=#FFFFFFFF>관통 피해</color></color>를 1pt 받는다.",
+			"description": "물 원소 피해를 2pt 주고 아군 「소환물」 1개의 「종료 단계」 효과를 랜덤으로 발동한다. 만약 자신의 HP가 2pt 이상일 경우 자신이 관통 피해를 1pt 받는다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22063,
+			"name": "홍수",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 아군의 모든 「소환물」의 「종료 단계」 효과를 발동한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 4pt 주고 아군의 모든 「소환물」의 「종료 단계」 효과를 발동한다.",
+			"description": "물 원소 피해를 4pt 주고 아군의 모든 「소환물」의 「종료 단계」 효과를 발동한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22064,
+			"name": "분류",
+			"descriptionraw": "<color=#FFFFFFFF>자신의 HP가 3pt 이상이며 아군 $[C122061] 이외의 「소환물」이 필드를 떠날 시:</color> 자신이 <color=#FFFFFFFF>$[K5]</color>를 2pt 받고 독립적인 <color=#FFFFFFFF>$[C122061]</color>을 1개 소환한다. (턴당 1회)",
+			"descriptionreplaced": "<color=#FFFFFFFF>자신의 HP가 3pt 이상이며 아군 불완전한 환인간 이외의 「소환물」이 필드를 떠날 시:</color> 자신이 <color=#FFFFFFFF><color=#FFFFFFFF>관통 피해</color></color>를 2pt 받고 독립적인 <color=#FFFFFFFF>불완전한 환인간</color>을 1개 소환한다. (턴당 1회)",
+			"description": "자신의 HP가 3pt 이상이며 아군 불완전한 환인간 이외의 「소환물」이 필드를 떠날 시: 자신이 관통 피해를 2pt 받고 독립적인 불완전한 환인간을 1개 소환한다. (턴당 1회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

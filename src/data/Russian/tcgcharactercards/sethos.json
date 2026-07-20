@@ -1,0 +1,89 @@
+{
+	"id": 1413,
+	"name": "Сетос",
+	"shareid": 469,
+	"hp": 10,
+	"maxenergy": 4,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"Электро",
+		"Стрелковое",
+		"Сумеру"
+	],
+	"storytitle": "«Мера мудрости» Сетос",
+	"storytext": "Гость из бескрайней пустыни, всевидящий разум",
+	"source": "Награда за приглашение Сетоса в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 14131,
+			"name": "Королевское мастерство стрельбы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14132,
+			"name": "Древний обряд: Громогласный рёв песка",
+			"descriptionraw": "Активный персонаж противника получает $[K204], а ваш персонаж автоматически сменяется на следующего. Персонаж накладывает на себя <color=#FFFFFFFF>$[C114132]</color>.",
+			"descriptionreplaced": "Активный персонаж противника получает <color=#FFACFFFF>Эффект {SPRITE_PRESET#2104}Электро</color>, а ваш персонаж автоматически сменяется на следующего. Персонаж накладывает на себя <color=#FFFFFFFF>Громовое слияние</color>.",
+			"description": "Активный персонаж противника получает Эффект Электро, а ваш персонаж автоматически сменяется на следующего. Персонаж накладывает на себя Громовое слияние.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14133,
+			"name": "Тайный ритуал: Сумеречный пронзитель теней",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. На персонажа накладывается <color=#FFFFFFFF>$[C114131]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 3 ед. На персонажа накладывается <color=#FFFFFFFF>Сумрачная медитация</color>.",
+			"description": "Наносит Электро урон, 3 ед. На персонажа накладывается Сумрачная медитация.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 4
+				}
+			]
+		},
+		{
+			"id": 14134,
+			"name": "Загадка чёрного коршуна",
+			"descriptionraw": "$[K310] не будет создаваться от обычных атак персонажа.\\nПосле выполнения обычной атаки: если есть возможность, расходуется вся $[K310] и наносится $[K5] противнику с наименьшим количеством HP в размере количества потраченной энергии +1.",
+			"descriptionreplaced": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color> не будет создаваться от обычных атак персонажа.\\nПосле выполнения обычной атаки: если есть возможность, расходуется вся <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color> и наносится <color=#FFFFFFFF>Проникающий урон</color> противнику с наименьшим количеством HP в размере количества потраченной энергии +1.",
+			"description": "Энергия не будет создаваться от обычных атак персонажа.\nПосле выполнения обычной атаки: если есть возможность, расходуется вся Энергия и наносится Проникающий урон противнику с наименьшим количеством HP в размере количества потраченной энергии +1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

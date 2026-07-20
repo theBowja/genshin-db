@@ -1,0 +1,80 @@
+{
+	"id": 6605,
+	"name": "Skirk",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Épée à une main",
+		"Calamité cosmique"
+	],
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Ravage : Scission",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Ravage : Distorsion",
+			"descriptionraw": "Accorde 2 pts de <color=#FFFFFFFF>finesse serpentine</color> et crée une carte [<color=#FFFFFFFF>$[C111161]</color>] dans votre main. (1 fois par manche)",
+			"descriptionreplaced": "Accorde 2 pts de <color=#FFFFFFFF>finesse serpentine</color> et crée une carte [<color=#FFFFFFFF>Mentorat mutuel d'armement</color>] dans votre main. (1 fois par manche)",
+			"description": "Accorde 2 pts de finesse serpentine et crée une carte [Mentorat mutuel d'armement] dans votre main. (1 fois par manche)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11165,
+			"name": "Ravage : Extinction",
+			"descriptionraw": "Convertit 2 dés élémentaires (dés Omni exclus) en <color=#99FFFFFF>dés {SPRITE_PRESET#1101}Cryo</color>, $[K56|s1] un maximum de 2 cartes dont le $[K3002|s1] est de 0 et accorde 1 pt de <color=#FFFFFFFF>finesse serpentine</color> à <color=#FFFFFFFF>$[A1116]</color> pour chaque carte $[K56|s2].",
+			"descriptionreplaced": "Convertit 2 dés élémentaires (dés Omni exclus) en <color=#99FFFFFF>dés {SPRITE_PRESET#1101}Cryo</color>, <color=#FFFFFFFF>défausse</color> un maximum de 2 cartes dont le <color=#FFFFFFFF>coût actuel de dés élémentaires</color> est de 0 et accorde 1 pt de <color=#FFFFFFFF>finesse serpentine</color> à <color=#FFFFFFFF>Skirk</color> pour chaque carte <color=#FFFFFFFF>défaussée</color>.",
+			"description": "Convertit 2 dés élémentaires (dés Omni exclus) en dés Cryo, défausse un maximum de 2 cartes dont le coût actuel de dés élémentaires est de 0 et accorde 1 pt de finesse serpentine à Skirk pour chaque carte défaussée.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Raisonnement outre-raison",
+			"descriptionraw": "(Passif) Skirk ne peut pas obtenir de charge, mais peut obtenir un maximum de 7 pts de <color=#FFFFFFFF>finesse serpentine</color>.\\n<color=#FFFFFFFF>Lorsque vous avez déclenché une réaction de Gel, de Dispersion Cryo, de Supraconduction ou de Cristallisation Cryo : </color>Crée une carte [<color=#FFFFFFFF>$[C111163]</color>]. (3 fois par manche)",
+			"descriptionreplaced": "(Passif) Skirk ne peut pas obtenir de charge, mais peut obtenir un maximum de 7 pts de <color=#FFFFFFFF>finesse serpentine</color>.\\n<color=#FFFFFFFF>Lorsque vous avez déclenché une réaction de Gel, de Dispersion Cryo, de Supraconduction ou de Cristallisation Cryo : </color>Crée une carte [<color=#FFFFFFFF>Faille du néant</color>]. (3 fois par manche)",
+			"description": "(Passif) Skirk ne peut pas obtenir de charge, mais peut obtenir un maximum de 7 pts de finesse serpentine.\nLorsque vous avez déclenché une réaction de Gel, de Dispersion Cryo, de Supraconduction ou de Cristallisation Cryo : Crée une carte [Faille du néant]. (3 fois par manche)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

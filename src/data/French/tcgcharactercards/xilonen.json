@@ -1,0 +1,89 @@
+{
+	"id": 1611,
+	"name": "Xilonen",
+	"shareid": 470,
+	"hp": 12,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Géo",
+		"Épée à une main",
+		"Natlan"
+	],
+	"storytitle": "Xilonen · Âme forgée par les vives flammes",
+	"storytext": "Les sommets résonnent, les veines dorées scintillent.",
+	"source": "Récompense pour avoir invité Xilonen à une partie amicale dans La Queue de Chat et remporté la victoire",
+	"skills": [
+		{
+			"id": 16111,
+			"name": "Cri d'Ehecatl",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], puis restaure 1 pt de <color=#FFFFFFFF>noctâme</color> si le personnage affecté bénéficie d'une <color=#FFFFFFFF>$[C116111|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>, puis restaure 1 pt de <color=#FFFFFFFF>noctâme</color> si le personnage affecté bénéficie d'une <color=#FFFFFFFF>bénédiction noctâme</color>.",
+			"description": "Inflige 2 pts de DGT physiques, puis restaure 1 pt de noctâme si le personnage affecté bénéficie d'une bénédiction noctâme.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16112,
+			"name": "Scratch de Yohual",
+			"descriptionraw": "Applique des <color=#FFFFFFFF>$[C116112|s1]</color> à ce personnage, le fait passer en <color=#FFFFFFFF>$[C116111|s1]</color> et accorde 1 pt de <color=#FFFFFFFF>noctâme</color>. (Un personnage ne peut plus utiliser cette capacité après être passé en <color=#FFFFFFFF>$[C116111|s1]</color>)\\n(Les personnages équipés avec [<color=#FFFFFFFF>$[C116112]</color>] peuvent utiliser l'habilité : <color=#FFFFFFFF>$[S1161121]</color>)",
+			"descriptionreplaced": "Applique des <color=#FFFFFFFF>patins de combat</color> à ce personnage, le fait passer en <color=#FFFFFFFF>bénédiction noctâme</color> et accorde 1 pt de <color=#FFFFFFFF>noctâme</color>. (Un personnage ne peut plus utiliser cette capacité après être passé en <color=#FFFFFFFF>bénédiction noctâme</color>)\\n(Les personnages équipés avec [<color=#FFFFFFFF>Patins de combat</color>] peuvent utiliser l'habilité : <color=#FFFFFFFF>Saut à grande vitesse</color>)",
+			"description": "Applique des patins de combat à ce personnage, le fait passer en bénédiction noctâme et accorde 1 pt de noctâme. (Un personnage ne peut plus utiliser cette capacité après être passé en bénédiction noctâme)\n(Les personnages équipés avec [Patins de combat] peuvent utiliser l'habilité : Saut à grande vitesse)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16113,
+			"name": "Rythme d'Ocelotlicue !",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], pioche 1 carte et soigne votre personnage ayant subi le plus de DGT pour 1 pt. Chaque cumul d'<color=#FFFFFFFF>$[C116113|s1]</color> permet de piocher 1 carte supplémentaire et chaque cumul d'<color=#FFFFFFFF>échantillon source</color> d'un élément différent permet de soigner 1 pt de plus.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color>, pioche 1 carte et soigne votre personnage ayant subi le plus de DGT pour 1 pt. Chaque cumul d'<color=#FFFFFFFF>échantillon source de type Géo</color> permet de piocher 1 carte supplémentaire et chaque cumul d'<color=#FFFFFFFF>échantillon source</color> d'un élément différent permet de soigner 1 pt de plus.",
+			"description": "Inflige 2 pts de DGT Géo, pioche 1 carte et soigne votre personnage ayant subi le plus de DGT pour 1 pt. Chaque cumul d'échantillon source de type Géo permet de piocher 1 carte supplémentaire et chaque cumul d'échantillon source d'un élément différent permet de soigner 1 pt de plus.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16114,
+			"name": "Échantillons sources",
+			"descriptionraw": "#(Passif) Au début du combat{NON_BREAK_SPACE}: Crée 3 cumuls d'<color=#FFFFFFFF>$[C116113|s1]</color>, puis convertit 1 cumul d'<color=#FFFFFFFF>$[C116113|s1]</color> en <color=#FFFFFFFF>échantillon source</color> de l'élément correspondant si votre équipe contient un personnage Pyro, Hydro, Cryo ou Électro.",
+			"descriptionreplaced": "#(Passif) Au début du combat{NON_BREAK_SPACE}: Crée 3 cumuls d'<color=#FFFFFFFF>échantillon source de type Géo</color>, puis convertit 1 cumul d'<color=#FFFFFFFF>échantillon source de type Géo</color> en <color=#FFFFFFFF>échantillon source</color> de l'élément correspondant si votre équipe contient un personnage Pyro, Hydro, Cryo ou Électro.",
+			"description": "(Passif) Au début du combat : Crée 3 cumuls d'échantillon source de type Géo, puis convertit 1 cumul d'échantillon source de type Géo en échantillon source de l'élément correspondant si votre équipe contient un personnage Pyro, Hydro, Cryo ou Électro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"id": 1611,
+	"name": "Xilonen",
+	"shareid": 470,
+	"hp": 12,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Geo",
+		"Spada",
+		"Natlan"
+	],
+	"storytitle": "Xilonen, Anima forgiata da fiamme ardenti",
+	"storytext": "Tra gli echi delle sommità, le vene d'oro risplendono.",
+	"source": "Ricompensa ottenuta sfidando Xilonen a duello alla Coda di Gatto e battendola in un duello amichevole",
+	"skills": [
+		{
+			"id": 16111,
+			"name": "Ruggito di Ehecatl",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Se è nello stato di <color=#FFFFFFFF>$[C116111]</color>, recupera 1 <color=#FFFFFFFF>punto Anima della Notte</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>DAN fisici</color>. Se è nello stato di <color=#FFFFFFFF>Grazia dell'Anima della Notte</color>, recupera 1 <color=#FFFFFFFF>punto Anima della Notte</color>.",
+			"description": "Infligge 2 DAN fisici. Se è nello stato di Grazia dell'Anima della Notte, recupera 1 punto Anima della Notte.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16112,
+			"name": "Graffio di Yohual",
+			"descriptionraw": "Associa <color=#FFFFFFFF>$[C116112]</color> a questo personaggio, che poi entra in stato di <color=#FFFFFFFF>$[C116111]</color> e ottiene 1 <color=#FFFFFFFF>punto Anima della Notte</color> (quest'abilità non può essere usata dopo che il personaggio è entrato nello stato di <color=#FFFFFFFF>$[C116111]</color>)\\n(I personaggi associati a <color=#FFFFFFFF>$[C116112]</color> possono usare la tecnica <color=#FFFFFFFF>$[S1161121]</color>)",
+			"descriptionreplaced": "Associa <color=#FFFFFFFF>Roller blade da combattimento</color> a questo personaggio, che poi entra in stato di <color=#FFFFFFFF>Grazia dell'Anima della Notte</color> e ottiene 1 <color=#FFFFFFFF>punto Anima della Notte</color> (quest'abilità non può essere usata dopo che il personaggio è entrato nello stato di <color=#FFFFFFFF>Grazia dell'Anima della Notte</color>)\\n(I personaggi associati a <color=#FFFFFFFF>Roller blade da combattimento</color> possono usare la tecnica <color=#FFFFFFFF>Salto a gran velocità</color>)",
+			"description": "Associa Roller blade da combattimento a questo personaggio, che poi entra in stato di Grazia dell'Anima della Notte e ottiene 1 punto Anima della Notte (quest'abilità non può essere usata dopo che il personaggio è entrato nello stato di Grazia dell'Anima della Notte)\n(I personaggi associati a Roller blade da combattimento possono usare la tecnica Salto a gran velocità)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16113,
+			"name": "A ritmo dell'ozelot!",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Pesca 1 carta e ripristina 1 PS del tuo personaggio che ha subito più DAN. Pesca un'altra carta per ogni accumulo di <color=#FFFFFFFF>$[C116113]</color> e ripristina 1 PS aggiuntivo per ogni accumulo di <color=#FFFFFFFF>Campione musicale</color> di un altro elemento.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2106}<color=#FFE699FF>DAN da Geo</color>. Pesca 1 carta e ripristina 1 PS del tuo personaggio che ha subito più DAN. Pesca un'altra carta per ogni accumulo di <color=#FFFFFFFF>Campione musicale: Geo</color> e ripristina 1 PS aggiuntivo per ogni accumulo di <color=#FFFFFFFF>Campione musicale</color> di un altro elemento.",
+			"description": "Infligge 2 DAN da Geo. Pesca 1 carta e ripristina 1 PS del tuo personaggio che ha subito più DAN. Pesca un'altra carta per ogni accumulo di Campione musicale: Geo e ripristina 1 PS aggiuntivo per ogni accumulo di Campione musicale di un altro elemento.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16114,
+			"name": "Campione musicale",
+			"descriptionraw": "(Passiva) All'inizio del duello, crea 3 accumuli di <color=#FFFFFFFF>$[C116113]</color>. Quando hai personaggi di Pyro, Hydro, Cryo o Electro dalla tua parte, converti 1 accumulo di <color=#FFFFFFFF>$[C116113]</color> in un <color=#FFFFFFFF>Campione musicale</color> dell'elemento corrispondente.",
+			"descriptionreplaced": "(Passiva) All'inizio del duello, crea 3 accumuli di <color=#FFFFFFFF>Campione musicale: Geo</color>. Quando hai personaggi di Pyro, Hydro, Cryo o Electro dalla tua parte, converti 1 accumulo di <color=#FFFFFFFF>Campione musicale: Geo</color> in un <color=#FFFFFFFF>Campione musicale</color> dell'elemento corrispondente.",
+			"description": "(Passiva) All'inizio del duello, crea 3 accumuli di Campione musicale: Geo. Quando hai personaggi di Pyro, Hydro, Cryo o Electro dalla tua parte, converti 1 accumulo di Campione musicale: Geo in un Campione musicale dell'elemento corrispondente.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+	"id": 1116,
+	"name": "Skirk",
+	"shareid": 544,
+	"transformsinto": [
+		6605
+	],
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Nguyên Tố Băng",
+		"Kiếm Đơn",
+		"Kiếp Nạn Vũ Trụ"
+	],
+	"storytitle": "Ánh Sao Hư Không - Skirk",
+	"storytext": "Biển sao luôn lặng lẽ, diệt vong trong âm thầm.",
+	"source": "Nhận được sau khi mời Skirk giao đấu trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong Đánh Giải Trí",
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Cực Ác Kỹ - Đoạn",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Cực Ác Kỹ - Tránh",
+			"descriptionraw": "Nhận 2 điểm <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, sinh ra thẻ <color=#FFFFFFFF>$[C111161]</color> trên tay. (Mỗi hiệp 1 lần)",
+			"descriptionreplaced": "Nhận 2 điểm <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, sinh ra thẻ <color=#FFFFFFFF>Truyền Thụ Võ Thuật</color> trên tay. (Mỗi hiệp 1 lần)",
+			"description": "Nhận 2 điểm Rắn Xảo Quyệt, sinh ra thẻ Truyền Thụ Võ Thuật trên tay. (Mỗi hiệp 1 lần)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11163,
+			"name": "Cực Ác Kỹ - Diệt",
+			"descriptionraw": "Tiêu hao toàn bộ <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, gây $[D__KEY__ELEMENT] bằng số <color=#FFFFFFFF>Rắn Xảo Quyệt</color> tiêu hao, và gây 2 điểm $[K5] cho các nhân vật dự bị. Nếu tiêu hao 7 điểm <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, sẽ chuyển sang gây 3 điểm $[K5] cho các nhân vật dự bị.",
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Tiêu hao toàn bộ <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, gây {SPRITE_PRESET#2101}<color=#99FFFFFF>Sát Thương Nguyên Tố Băng</color> bằng số <color=#FFFFFFFF>Rắn Xảo Quyệt</color> tiêu hao, và gây 2 điểm <color=#FFFFFFFF>Sát Thương Xuyên Thấu</color> cho các nhân vật dự bị. Nếu tiêu hao 7 điểm <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, sẽ chuyển sang gây 3 điểm <color=#FFFFFFFF>Sát Thương Xuyên Thấu</color> cho các nhân vật dự bị.",
+			"description": "Tiêu hao toàn bộ Rắn Xảo Quyệt, gây Sát Thương Nguyên Tố Băng bằng số Rắn Xảo Quyệt tiêu hao, và gây 2 điểm Sát Thương Xuyên Thấu cho các nhân vật dự bị. Nếu tiêu hao 7 điểm Rắn Xảo Quyệt, sẽ chuyển sang gây 3 điểm Sát Thương Xuyên Thấu cho các nhân vật dự bị.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_SKIRK_SPECIAL_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Lý Luận Vượt Nguyên Lý",
+			"descriptionraw": "(Bị động) Skirk không thể nhận Năng Lượng, thay vào đó có thể tích lũy <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, tối đa 7 điểm.\\n<color=#FFFFFFFF>Sau khi phe ta kích hoạt phản ứng Đóng Băng/Khuếch Tán Băng/Siêu Dẫn/Kết Tinh Băng:</color> Sinh ra thẻ <color=#FFFFFFFF>$[C111163]</color> trên tay. (Mỗi hiệp 3 lần)",
+			"descriptionreplaced": "(Bị động) Skirk không thể nhận Năng Lượng, thay vào đó có thể tích lũy <color=#FFFFFFFF>Rắn Xảo Quyệt</color>, tối đa 7 điểm.\\n<color=#FFFFFFFF>Sau khi phe ta kích hoạt phản ứng Đóng Băng/Khuếch Tán Băng/Siêu Dẫn/Kết Tinh Băng:</color> Sinh ra thẻ <color=#FFFFFFFF>Vết Nứt Hư Không</color> trên tay. (Mỗi hiệp 3 lần)",
+			"description": "(Bị động) Skirk không thể nhận Năng Lượng, thay vào đó có thể tích lũy Rắn Xảo Quyệt, tối đa 7 điểm.\nSau khi phe ta kích hoạt phản ứng Đóng Băng/Khuếch Tán Băng/Siêu Dẫn/Kết Tinh Băng: Sinh ra thẻ Vết Nứt Hư Không trên tay. (Mỗi hiệp 3 lần)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		}
+	]
+}

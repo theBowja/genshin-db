@@ -1,0 +1,91 @@
+{
+	"id": 1116,
+	"name": "スカーク",
+	"shareid": 544,
+	"transformsinto": [
+		6605
+	],
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"氷元素",
+		"片手剣",
+		"宇宙の劫災"
+	],
+	"storytitle": "虚淵の暗星・スカーク",
+	"storytext": "星海は黙し、破滅は静かに訪れる。",
+	"source": "キャッツテールでスカークを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 11161,
+			"name": "極悪技・断",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "極悪技・閃",
+			"descriptionraw": "<color=#FFFFFFFF>蛇の狡智</color>を2獲得し、手札に<color=#FFFFFFFF>$[C111161]</color>を生成する。（各ラウンドで1回のみ）",
+			"descriptionreplaced": "<color=#FFFFFFFF>蛇の狡智</color>を2獲得し、手札に<color=#FFFFFFFF>武芸伝授</color>を生成する。（各ラウンドで1回のみ）",
+			"description": "蛇の狡智を2獲得し、手札に武芸伝授を生成する。（各ラウンドで1回のみ）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11163,
+			"name": "極悪技・滅",
+			"descriptionraw": "<color=#FFFFFFFF>蛇の狡智</color>をすべて消費し、消費した<color=#FFFFFFFF>蛇の狡智</color>の数に等しい$[D__KEY__ELEMENT]を与え、待機キャラに$[K5]を2与える。<color=#FFFFFFFF>蛇の狡智</color>を7消費した場合、代わりに待機キャラに$[K5]を3与える。",
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "<color=#FFFFFFFF>蛇の狡智</color>をすべて消費し、消費した<color=#FFFFFFFF>蛇の狡智</color>の数に等しい{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を与え、待機キャラに<color=#FFFFFFFF>貫通ダメージ</color>を2与える。<color=#FFFFFFFF>蛇の狡智</color>を7消費した場合、代わりに待機キャラに<color=#FFFFFFFF>貫通ダメージ</color>を3与える。",
+			"description": "蛇の狡智をすべて消費し、消費した蛇の狡智の数に等しい氷元素ダメージを与え、待機キャラに貫通ダメージを2与える。蛇の狡智を7消費した場合、代わりに待機キャラに貫通ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_SKIRK_SPECIAL_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "理の超越",
+			"descriptionraw": "【固有】スカークはチャージを獲得できず、代わりに<color=#FFFFFFFF>蛇の狡智</color>を最大7まで蓄積できる。\\n<color=#FFFFFFFF>味方が凍結/氷拡散/超電導/氷結晶反応を起こした時、</color>手札に<color=#FFFFFFFF>$[C111163]</color>を生成する。（1ラウンド3回まで）",
+			"descriptionreplaced": "【固有】スカークはチャージを獲得できず、代わりに<color=#FFFFFFFF>蛇の狡智</color>を最大7まで蓄積できる。\\n<color=#FFFFFFFF>味方が凍結/氷拡散/超電導/氷結晶反応を起こした時、</color>手札に<color=#FFFFFFFF>虚境の裂け目</color>を生成する。（1ラウンド3回まで）",
+			"description": "【固有】スカークはチャージを獲得できず、代わりに蛇の狡智を最大7まで蓄積できる。\n味方が凍結/氷拡散/超電導/氷結晶反応を起こした時、手札に虚境の裂け目を生成する。（1ラウンド3回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

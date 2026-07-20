@@ -1,0 +1,91 @@
+{
+	"id": 1116,
+	"name": "Skirk",
+	"shareid": 544,
+	"transformsinto": [
+		6605
+	],
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Espada ligera",
+		"Calamidad Cósmica"
+	],
+	"storytitle": "Skirk - La Estrella del Vacío",
+	"storytext": "El mar de estrellas se desvanece en la oscuridad.",
+	"source": "Se obtiene tras retar y ganar a Skirk en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Caos: Escisión",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Caos: Distorsión",
+			"descriptionraw": "Obtiene 2 pts. de <color=#FFFFFFFF>astucia serpentina</color> y crea 1 carta de <color=#FFFFFFFF>$[C111161]</color> (1 vez por ronda).",
+			"descriptionreplaced": "Obtiene 2 pts. de <color=#FFFFFFFF>astucia serpentina</color> y crea 1 carta de <color=#FFFFFFFF>Entrenamiento de armas recíproco</color> (1 vez por ronda).",
+			"description": "Obtiene 2 pts. de astucia serpentina y crea 1 carta de Entrenamiento de armas recíproco (1 vez por ronda).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11163,
+			"name": "Caos: Aniquilación",
+			"descriptionraw": "Consume todos los pts. de <color=#FFFFFFFF>astucia serpentina</color> e inflige $[D__KEY__ELEMENT] en una cantidad equivalente a los pts. de <color=#FFFFFFFF>astucia serpentina</color> consumidos. Después, inflige 2 pts. de $[K5] a los enemigos en reserva. Si ha consumido 7 pts. de <color=#FFFFFFFF>astucia serpentina</color>, pasará a infligir 3 pts. de $[K5] a los enemigos en reserva.",
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Consume todos los pts. de <color=#FFFFFFFF>astucia serpentina</color> e inflige {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> en una cantidad equivalente a los pts. de <color=#FFFFFFFF>astucia serpentina</color> consumidos. Después, inflige 2 pts. de <color=#FFFFFFFF>Daño Penetrante</color> a los enemigos en reserva. Si ha consumido 7 pts. de <color=#FFFFFFFF>astucia serpentina</color>, pasará a infligir 3 pts. de <color=#FFFFFFFF>Daño Penetrante</color> a los enemigos en reserva.",
+			"description": "Consume todos los pts. de astucia serpentina e inflige Daño Cryo en una cantidad equivalente a los pts. de astucia serpentina consumidos. Después, inflige 2 pts. de Daño Penetrante a los enemigos en reserva. Si ha consumido 7 pts. de astucia serpentina, pasará a infligir 3 pts. de Daño Penetrante a los enemigos en reserva.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_SKIRK_SPECIAL_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "La razón más allá de la razón",
+			"descriptionraw": "Pasiva: Skirk no puede obtener Energía. En su lugar puede acumular hasta 7 pts. de <color=#FFFFFFFF>astucia serpentina</color>.\\n<color=#FFFFFFFF>Después de que tus personajes causen una reacción de Congelado, Torbellino Cryo, Superconductor o Cristalización Cryo</color>, crea 1 carta de <color=#FFFFFFFF>$[C111163]</color> (3 veces por ronda).",
+			"descriptionreplaced": "Pasiva: Skirk no puede obtener Energía. En su lugar puede acumular hasta 7 pts. de <color=#FFFFFFFF>astucia serpentina</color>.\\n<color=#FFFFFFFF>Después de que tus personajes causen una reacción de Congelado, Torbellino Cryo, Superconductor o Cristalización Cryo</color>, crea 1 carta de <color=#FFFFFFFF>Fisura del vacío</color> (3 veces por ronda).",
+			"description": "Pasiva: Skirk no puede obtener Energía. En su lugar puede acumular hasta 7 pts. de astucia serpentina.\nDespués de que tus personajes causen una reacción de Congelado, Torbellino Cryo, Superconductor o Cristalización Cryo, crea 1 carta de Fisura del vacío (3 veces por ronda).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

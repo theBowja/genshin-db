@@ -1,0 +1,81 @@
+{
+	"id": 2605,
+	"name": "Générateur de champ expérimental",
+	"shareid": 586,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Géo",
+		"Autre arme",
+		"Monstre"
+	],
+	"storytitle": "Idéal non terminé : Générateur de champ expérimental",
+	"storytext": "Un produit de l'Institut de recherche d'ingénierie cinétique de Fontaine qui est devenu incontrôlable en raison d'un accident, ayant la capacité de « contrecarrer » les effets de la gravité.",
+	"source": "Récompense pour avoir accepté un défi de taverne auprès de Prince à La Queue de Chat et remporté la victoire lors d'une partie amicale contre le Générateur de champ expérimental",
+	"skills": [
+		{
+			"id": 26051,
+			"name": "Application de gravité : Écrasement",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26052,
+			"name": "Application de gravité : Annihilation de point",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée 2 cumuls de <color=#FFFFFFFF>$[C169|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color> et crée 2 cumuls de <color=#FFFFFFFF>changement efficient</color>.",
+			"description": "Inflige 2 pts de DGT Géo et crée 2 cumuls de changement efficient.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26053,
+			"name": "Application de gravité : Réduction de champ",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée un <color=#FFFFFFFF>$[C126051|s1]</color> et une <color=#FFFFFFFF>$[C126052|s2]</color>. De plus, la prochaine <color=#FFFFFFFF>attaque normale</color> de tous vos personnages en attente pendant la manche dépense 1 dé d'$[K309|s2] en moins.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2106}<color=#FFE699FF>DGT Géo</color> et crée un <color=#FFFFFFFF>fond à faible gravité</color> et une <color=#FFFFFFFF>explosion de choc</color>. De plus, la prochaine <color=#FFFFFFFF>attaque normale</color> de tous vos personnages en attente pendant la manche dépense 1 dé d'<color=#FFFFFFFF>{SPRITE_PRESET#1109}élément neutre</color> en moins.",
+			"description": "Inflige 3 pts de DGT Géo et crée un fond à faible gravité et une explosion de choc. De plus, la prochaine attaque normale de tous vos personnages en attente pendant la manche dépense 1 dé d'élément neutre en moins.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

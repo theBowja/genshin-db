@@ -1,0 +1,81 @@
+{
+	"id": 2605,
+	"name": "實驗性場力發生裝置",
+	"shareid": 586,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"岩元素",
+		"其他武器",
+		"魔物"
+	],
+	"storytitle": "未竟理想·實驗性場力發生裝置",
+	"storytext": "楓丹動能工程科學研究院的作品，因為事故而失控，擁有「抵消」重力的效果。",
+	"source": "在貓尾酒館中小王子處進行酒館挑戰，在友好對局難度實驗性場力發生裝置中獲得勝利後獲得",
+	"skills": [
+		{
+			"id": 26051,
+			"name": "重力應用程式·砸擊",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理傷害</color>。",
+			"description": "造成2點物理傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26052,
+			"name": "重力應用程式·點狀抵消",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，生成2層<color=#FFFFFFFF>$[C169]</color>。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素傷害</color>，生成2層<color=#FFFFFFFF>高效切換</color>。",
+			"description": "造成2點岩元素傷害，生成2層高效切換。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26053,
+			"name": "重力應用程式·削減場域",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]點$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C126051]</color>和<color=#FFFFFFFF>$[C126052]</color>，本回合中我方所有後臺角色下次<color=#FFFFFFFF>「普通攻擊」</color>少花費1個$[K309]。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素傷害</color>，生成<color=#FFFFFFFF>低重力背景</color>和<color=#FFFFFFFF>振盪衝擊</color>，本回合中我方所有後臺角色下次<color=#FFFFFFFF>「普通攻擊」</color>少花費1個<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>。",
+			"description": "造成3點岩元素傷害，生成低重力背景和振盪衝擊，本回合中我方所有後臺角色下次「普通攻擊」少花費1個無色元素。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

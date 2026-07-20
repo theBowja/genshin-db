@@ -1,0 +1,101 @@
+{
+	"id": 1513,
+	"name": "Сиканоин Хэйдзо",
+	"shareid": 493,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Анемо",
+		"Катализатор",
+		"Инадзума"
+	],
+	"storytitle": "«Невозмутимое спокойствие» Сиканоин Хэйдзо",
+	"storytext": "Небесные одежды, хоть сшиты без шва, всё так же боятся холодного ветра.",
+	"source": "Награда за приглашение Сиканоина Хэйдзо в «Кошкин хвост» и победу над ним в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 15131,
+			"name": "Боевой стиль Фудо",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 1 ед.",
+			"description": "Наносит Анемо урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15132,
+			"name": "Убиение сердца",
+			"descriptionraw": "$[K53]: <color=#FFFFFFFF>$[S15135]</color>",
+			"descriptionreplaced": "<color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Убиение сердца: Заряд</color>",
+			"description": "Подготовка навыка: Убиение сердца: Заряд",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15133,
+			"name": "Ураганный удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если навыком вызывается $[K215], то персонаж противника получает $[K1036] соответствующего элемента.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 4 ед. Если навыком вызывается <color=#80FFD7FF>{SPRITE_PRESET#2105}Анемо реакция</color>, то персонаж противника получает <color=#FFFFFFFF>Око урагана</color> соответствующего элемента.",
+			"description": "Наносит Анемо урон, 4 ед. Если навыком вызывается Анемо реакция, то персонаж противника получает Око урагана соответствующего элемента.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15134,
+			"name": "Парадоксальное учение",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>Когда вы активируете $[K215]:</color> вы получаете <color=#FFFFFFFF>$[C115132]</color>, 1 уровень.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>Когда вы активируете <color=#80FFD7FF>{SPRITE_PRESET#2105}Анемо реакция</color>:</color> вы получаете <color=#FFFFFFFF>Отклонение</color>, 1 уровень.",
+			"description": "(Пассивный навык) Когда вы активируете Анемо реакция: вы получаете Отклонение, 1 уровень.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 15135,
+			"name": "Убиение сердца: Заряд",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE_4] ед.",
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 4 ед.",
+			"description": "Наносит Анемо урон, 4 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,101 @@
+{
+	"id": 1414,
+	"name": "Iansán",
+	"shareid": 506,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Electro",
+		"Lanza",
+		"Natlan"
+	],
+	"storytitle": "Iansán - La Entrenadora Funderrocas",
+	"storytext": "Acostarse temprano, levantarse temprano, comer poco azúcar y poca sal.",
+	"source": "Se obtiene tras retar y ganar a Iansán en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 14141,
+			"name": "Punzada pesada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14142,
+			"name": "Acelerón relámpago",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Entra en el estado de <color=#FFFFFFFF>$[C114141|s1]</color>, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> y crea 1 carga de <color=#FFFFFFFF>$[C170|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>. Entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color>, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> y crea 1 carga de <color=#FFFFFFFF>cambio rápido</color>.",
+			"description": "Inflige 2 pts. de Daño Electro. Entra en el estado de bendición noctámbula, obtiene 1 pt. de noctambulismo y crea 1 carga de cambio rápido.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14143,
+			"name": "Los tres principios de la fuerza",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Entra en el estado de <color=#FFFFFFFF>$[C114141|s1]</color>, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> y crea 1 carga de <color=#FFFFFFFF>$[C114142|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>. Entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color>, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> y crea 1 carga de <color=#FFFFFFFF>indicador de energía cinética</color>.",
+			"description": "Inflige 2 pts. de Daño Electro. Entra en el estado de bendición noctámbula, obtiene 1 pt. de noctambulismo y crea 1 carga de indicador de energía cinética.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14144,
+			"name": "Plan calórico equilibrado",
+			"descriptionraw": "Pasiva: cuando está en el estado de <color=#FFFFFFFF>$[C114141|s1]</color> y después de que hayas realizado una $[K53] o cambiado de personaje 2 veces, si tiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>, el personaje que más daño haya recibido obtiene Vida +1. De lo contrario, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> (3 veces por ronda).",
+			"descriptionreplaced": "Pasiva: cuando está en el estado de <color=#FFFFFFFF>bendición noctámbula</color> y después de que hayas realizado una <color=#FFFFFFFF>Preparación de habilidad</color> o cambiado de personaje 2 veces, si tiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>, el personaje que más daño haya recibido obtiene Vida +1. De lo contrario, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> (3 veces por ronda).",
+			"description": "Pasiva: cuando está en el estado de bendición noctámbula y después de que hayas realizado una Preparación de habilidad o cambiado de personaje 2 veces, si tiene 2 pts. de noctambulismo, el personaje que más daño haya recibido obtiene Vida +1. De lo contrario, obtiene 1 pt. de noctambulismo (3 veces por ronda).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 14145,
+			"name": "Plan calórico equilibrado",
+			"descriptionraw": "Pasiva: cuando está en el estado de <color=#FFFFFFFF>$[C114141|s1]</color> y después de que hayas realizado una $[K53] o cambiado de personaje 2 veces, si tiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>, el personaje que más daño haya recibido obtiene Vida +1. De lo contrario, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> (3 veces por ronda).",
+			"descriptionreplaced": "Pasiva: cuando está en el estado de <color=#FFFFFFFF>bendición noctámbula</color> y después de que hayas realizado una <color=#FFFFFFFF>Preparación de habilidad</color> o cambiado de personaje 2 veces, si tiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>, el personaje que más daño haya recibido obtiene Vida +1. De lo contrario, obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> (3 veces por ronda).",
+			"description": "Pasiva: cuando está en el estado de bendición noctámbula y después de que hayas realizado una Preparación de habilidad o cambiado de personaje 2 veces, si tiene 2 pts. de noctambulismo, el personaje que más daño haya recibido obtiene Vida +1. De lo contrario, obtiene 1 pt. de noctambulismo (3 veces por ronda).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"id": 4210,
+	"name": "Hydro-Imitator",
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 22061,
+			"name": "Wilde Wellen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22062,
+			"name": "Flutwelle",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Löst den Effekt der „Endphase“ einer zufälligen Beschwörung deiner Seite aus. Wenn die LP dieser Figur nicht weniger als 2 betragen, erleidet sie 1 Pkt. <color=#FFFFFFFF>$[K5|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>. Löst den Effekt der „Endphase“ einer zufälligen Beschwörung deiner Seite aus. Wenn die LP dieser Figur nicht weniger als 2 betragen, erleidet sie 1 Pkt. <color=#FFFFFFFF><color=#FFFFFFFF>durchdringenden SCH</color></color>.",
+			"description": "Verursacht 2 Pkt. Hydro-SCH. Löst den Effekt der „Endphase“ einer zufälligen Beschwörung deiner Seite aus. Wenn die LP dieser Figur nicht weniger als 2 betragen, erleidet sie 1 Pkt. durchdringenden SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22063,
+			"name": "Tosende Flut",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]. Löst den Effekt der „Endphase“ aller Beschwörungen deiner Seite aus.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 4 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>. Löst den Effekt der „Endphase“ aller Beschwörungen deiner Seite aus.",
+			"description": "Verursacht 4 Pkt. Hydro-SCH. Löst den Effekt der „Endphase“ aller Beschwörungen deiner Seite aus.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22064,
+			"name": "Verzweigter Fluss",
+			"descriptionraw": "<color=#FFFFFFFF>Wenn die LP dieser Figur mindestens 3 betragen und eine Beschwörung von dir (außer $[C122061]) das Feld verlässt:</color> Diese Figur erleidet 2 Pkt. <color=#FFFFFFFF>$[K5|s1]</color> und beschwört 1 unabhängigen <color=#FFFFFFFF>$[C122061]</color>. (1-mal pro Runde)",
+			"descriptionreplaced": "<color=#FFFFFFFF>Wenn die LP dieser Figur mindestens 3 betragen und eine Beschwörung von dir (außer Unvollkommener Imitator) das Feld verlässt:</color> Diese Figur erleidet 2 Pkt. <color=#FFFFFFFF><color=#FFFFFFFF>durchdringenden SCH</color></color> und beschwört 1 unabhängigen <color=#FFFFFFFF>Unvollkommener Imitator</color>. (1-mal pro Runde)",
+			"description": "Wenn die LP dieser Figur mindestens 3 betragen und eine Beschwörung von dir (außer Unvollkommener Imitator) das Feld verlässt: Diese Figur erleidet 2 Pkt. durchdringenden SCH und beschwört 1 unabhängigen Unvollkommener Imitator. (1-mal pro Runde)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

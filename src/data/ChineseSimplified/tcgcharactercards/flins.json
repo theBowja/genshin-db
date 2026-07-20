@@ -1,0 +1,104 @@
+{
+	"id": 1418,
+	"name": "菲林斯",
+	"shareid": 584,
+	"hp": 10,
+	"maxenergy": 4,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"雷元素",
+		"长柄武器",
+		"挪德卡莱"
+	],
+	"storytitle": "诡灯陌影·菲林斯",
+	"storytext": "墓园灯火，引向深邃之暗。",
+	"source": "在猫尾酒馆中邀请菲林斯进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 14181,
+			"name": "扈圣魔枪",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>。",
+			"description": "造成2点物理伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14182,
+			"name": "古律·孤灯遗秘",
+			"descriptionraw": "每回合首次使用此技能时，造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，自身附属<color=#FFFFFFFF>$[C114181]</color>。再次使用此技能，消耗2点$[K310]，自身$[K53]：<color=#FFFFFFFF>$[K1051]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "每回合首次使用此技能时，造成1点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，自身附属<color=#FFFFFFFF>幽焰显迹</color>。再次使用此技能，消耗2点<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>，自身<color=#FFFFFFFF>准备技能</color>：<color=#FFFFFFFF><color=#FFFFFFFF>雷霆交响</color></color>。",
+			"description": "每回合首次使用此技能时，造成1点雷元素伤害，自身附属幽焰显迹。再次使用此技能，消耗2点充能，自身准备技能：雷霆交响。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14183,
+			"name": "旧仪·夜客致访",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成2点$[K5]。",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成6点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，对所有敌方后台角色造成2点<color=#FFFFFFFF>穿透伤害</color>。",
+			"description": "造成6点雷元素伤害，对所有敌方后台角色造成2点穿透伤害。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 4
+				}
+			]
+		},
+		{
+			"id": 14184,
+			"name": "月兆祝赐·旧世潜藏",
+			"descriptionraw": "【被动】本局游戏中，敌方受到<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}感电反应</color>时，改为<color=#FFFFFFFF>$[K3001]</color>反应。\\n<color=#FFFFFFFF>自身在场，敌方行动牌被赋予<color=#FFFFFFFF>$[C204]</color>时：</color>对敌方场上生命值最高的角色造成1点$[K5]。",
+			"descriptionreplaced": "【被动】本局游戏中，敌方受到<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}感电反应</color>时，改为<color=#FFFFFFFF><color=#FFFFFFFF>月感电</color></color>反应。\\n<color=#FFFFFFFF>自身在场，敌方行动牌被赋予<color=#FFFFFFFF>电击</color>时：</color>对敌方场上生命值最高的角色造成1点<color=#FFFFFFFF>穿透伤害</color>。",
+			"description": "【被动】本局游戏中，敌方受到感电反应时，改为月感电反应。\n自身在场，敌方行动牌被赋予电击时：对敌方场上生命值最高的角色造成1点穿透伤害。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		},
+		{
+			"id": 14185,
+			"name": "雷霆交响",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，如果我方场上存在<color=#FFFFFFFF>$[C205]</color>，则造成的伤害额外+2。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，如果我方场上存在<color=#FFFFFFFF>雷暴云</color>，则造成的伤害额外+2。",
+			"description": "造成2点雷元素伤害，如果我方场上存在雷暴云，则造成的伤害额外+2。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

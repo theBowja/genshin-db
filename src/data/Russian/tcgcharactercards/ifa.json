@@ -1,0 +1,81 @@
+{
+	"id": 1515,
+	"name": "Ифа",
+	"shareid": 522,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Анемо",
+		"Катализатор",
+		"Натлан"
+	],
+	"storytitle": "«Вслед за блуждающим ветром» Ифа",
+	"storytext": "Лечебный десант",
+	"source": "Награда за приглашение Ифы в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 15151,
+			"name": "Ритуал изгнания ветров",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 1 ед.",
+			"description": "Наносит Анемо урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15152,
+			"name": "Профилактика воздушно-капельных инфекций",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], входит в состояние <color=#FFFFFFFF>$[C115151]</color>, получает 2 <color=#FFFFFFFF>очка Ночного духа</color> и накладывает на себя <color=#FFFFFFFF>$[C115152]</color>. (Этот навык нельзя использовать в состоянии <color=#FFFFFFFF>$[C115151]</color>.)\\n(Персонажи с эффектом <color=#FFFFFFFF>$[C115152]</color> могут использовать технику: <color=#FFFFFFFF>$[S1151521]</color>)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит 1 {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, входит в состояние <color=#FFFFFFFF>Благословение Ночного духа</color>, получает 2 <color=#FFFFFFFF>очка Ночного духа</color> и накладывает на себя <color=#FFFFFFFF>Какуку</color>. (Этот навык нельзя использовать в состоянии <color=#FFFFFFFF>Благословение Ночного духа</color>.)\\n(Персонажи с эффектом <color=#FFFFFFFF>Какуку</color> могут использовать технику: <color=#FFFFFFFF>Огневая поддержка</color>)",
+			"description": "Наносит 1 Анемо урон, входит в состояние Благословение Ночного духа, получает 2 очка Ночного духа и накладывает на себя Какуку. (Этот навык нельзя использовать в состоянии Благословение Ночного духа.)\n(Персонажи с эффектом Какуку могут использовать технику: Огневая поддержка)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15153,
+			"name": "Составное поле успокоения",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Восстанавливает 2 ед. HP вашему персонажу, который получил больше всего урона. Если навыком вызывается $[K215], то активный персонаж противника получает $[K1038] соответствующего элемента.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2105}<color=#80FFD7FF>Анемо урон</color>, 2 ед. Восстанавливает 2 ед. HP вашему персонажу, который получил больше всего урона. Если навыком вызывается <color=#80FFD7FF>{SPRITE_PRESET#2105}Анемо реакция</color>, то активный персонаж противника получает <color=#FFFFFFFF>Седативная метка</color> соответствующего элемента.",
+			"description": "Наносит Анемо урон, 2 ед. Восстанавливает 2 ед. HP вашему персонажу, который получил больше всего урона. Если навыком вызывается Анемо реакция, то активный персонаж противника получает Седативная метка соответствующего элемента.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

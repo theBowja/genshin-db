@@ -1,0 +1,91 @@
+{
+	"id": 1116,
+	"name": "Skirk",
+	"shareid": 544,
+	"transformsinto": [
+		6605
+	],
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Espada",
+		"Calamidade Cósmica"
+	],
+	"storytitle": "\"Astro do Vazio\", Skirk",
+	"storytext": "As estrelas se apagam.",
+	"source": "Recompensa por desafiar Skirk para um duelo na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com ela",
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Devastação: Destruição",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Devastação: Lampejo",
+			"descriptionraw": "Ganhe 2 de <color=#FFFFFFFF>Sutileza da Serpente</color>, então cria 1 <color=#FFFFFFFF>$[C111161]</color> e a adiciona à sua Mão. (Uma vez por Turno)",
+			"descriptionreplaced": "Ganhe 2 de <color=#FFFFFFFF>Sutileza da Serpente</color>, então cria 1 <color=#FFFFFFFF>Mentoria Mútua de Armamentos</color> e a adiciona à sua Mão. (Uma vez por Turno)",
+			"description": "Ganhe 2 de Sutileza da Serpente, então cria 1 Mentoria Mútua de Armamentos e a adiciona à sua Mão. (Uma vez por Turno)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11163,
+			"name": "Arte Apodrecida: Obliteração",
+			"descriptionraw": "Consome toda a <color=#FFFFFFFF>Sutileza da Serpente</color>, causa $[D__KEY__ELEMENT] igual à quantidade de <color=#FFFFFFFF>Sutileza da Serpente</color> consumida e causa 2 de $[K5] aos personagens adversários fora de combate. Se 7 de <color=#FFFFFFFF>Sutileza da Serpente</color> for consumido, causa 3 de $[K5] a personagens fora de combate ao invés disso.",
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Consome toda a <color=#FFFFFFFF>Sutileza da Serpente</color>, causa {SPRITE_PRESET#2101}<color=#99FFFFFF>Dano Cryo</color> igual à quantidade de <color=#FFFFFFFF>Sutileza da Serpente</color> consumida e causa 2 de <color=#FFFFFFFF>Dano Perfurante</color> aos personagens adversários fora de combate. Se 7 de <color=#FFFFFFFF>Sutileza da Serpente</color> for consumido, causa 3 de <color=#FFFFFFFF>Dano Perfurante</color> a personagens fora de combate ao invés disso.",
+			"description": "Consome toda a Sutileza da Serpente, causa Dano Cryo igual à quantidade de Sutileza da Serpente consumida e causa 2 de Dano Perfurante aos personagens adversários fora de combate. Se 7 de Sutileza da Serpente for consumido, causa 3 de Dano Perfurante a personagens fora de combate ao invés disso.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_SKIRK_SPECIAL_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Razão Além da Razão",
+			"descriptionraw": "(Passivo) Skirk não ganha Carga. Ao invés disso, ela pode acumular até 7 pontos de <color=#FFFFFFFF>Sutileza da Serpente</color>.\\n<color=#FFFFFFFF>Quando seus personagens desencadeiam reações de Congelado, Redemoinho Cryo, Supercondutor ou Cristalização Cryo:</color> Cria 1 <color=#FFFFFFFF>$[C111163]</color> em sua Mão. (Até 3 vezes por Turno)",
+			"descriptionreplaced": "(Passivo) Skirk não ganha Carga. Ao invés disso, ela pode acumular até 7 pontos de <color=#FFFFFFFF>Sutileza da Serpente</color>.\\n<color=#FFFFFFFF>Quando seus personagens desencadeiam reações de Congelado, Redemoinho Cryo, Supercondutor ou Cristalização Cryo:</color> Cria 1 <color=#FFFFFFFF>Fenda do Vazio</color> em sua Mão. (Até 3 vezes por Turno)",
+			"description": "(Passivo) Skirk não ganha Carga. Ao invés disso, ela pode acumular até 7 pontos de Sutileza da Serpente.\nQuando seus personagens desencadeiam reações de Congelado, Redemoinho Cryo, Supercondutor ou Cristalização Cryo: Cria 1 Fenda do Vazio em sua Mão. (Até 3 vezes por Turno)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

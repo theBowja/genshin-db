@@ -1,0 +1,111 @@
+{
+	"id": 4609,
+	"name": "Black Serpent Knight: Rockbreaker Ax",
+	"hp": 18,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Senjata Lain",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 26041,
+			"name": "Supreme Strike",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26042,
+			"name": "Axe and Aegis",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>.",
+			"description": "Mengakibatkan 3 poin Geo DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26043,
+			"name": "Stone Stance",
+			"descriptionraw": "<color=#FFFFFFFF>$[K206]</color> kepada diri sendiri, menyiapkan Skill <color=#FFFFFFFF>$[S26045]</color>, lalu menyiapkan Skill <color=#FFFFFFFF>$[S26047]</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF><color=#FFE699FF>Memberikan {SPRITE_PRESET#2106}Geo</color></color> kepada diri sendiri, menyiapkan Skill <color=#FFFFFFFF>Greataxe Strike</color>, lalu menyiapkan Skill <color=#FFFFFFFF>Master's Strike</color>.",
+			"description": "Memberikan Geo kepada diri sendiri, menyiapkan Skill Greataxe Strike, lalu menyiapkan Skill Master's Strike.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26044,
+			"name": "Attacking Momentum",
+			"descriptionraw": "(Pasif) Jika di sisi musuh terdapat Status <color=#FFFFFFFF> Pengurangan DMG</color> atau{SPRITE_PRESET#4007}<color=#FFFFFFFF>Perisai</color> di sisi mereka, atau memiliki Status Pertempuran <color=#FFFFFFFF>Pengurangan DMG</color> atau {SPRITE_PRESET#4007}<color=#FFFFFFFF>Perisai</color>, maka Karaktermu akan mendapatkan 1 lapis <color=#FFFFFFFF>$[C126041]</color> setelah menggunakan Skill.",
+			"descriptionreplaced": "(Pasif) Jika di sisi musuh terdapat Status <color=#FFFFFFFF> Pengurangan DMG</color> atau{SPRITE_PRESET#4007}<color=#FFFFFFFF>Perisai</color> di sisi mereka, atau memiliki Status Pertempuran <color=#FFFFFFFF>Pengurangan DMG</color> atau {SPRITE_PRESET#4007}<color=#FFFFFFFF>Perisai</color>, maka Karaktermu akan mendapatkan 1 lapis <color=#FFFFFFFF>Might of Stone</color> setelah menggunakan Skill.",
+			"description": "(Pasif) Jika di sisi musuh terdapat Status  Pengurangan DMG atauPerisai di sisi mereka, atau memiliki Status Pertempuran Pengurangan DMG atau Perisai, maka Karaktermu akan mendapatkan 1 lapis Might of Stone setelah menggunakan Skill.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 26045,
+			"name": "Greataxe Strike",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan menyiapkan Skill <color=#FFFFFFFF>$[S26047]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color> dan menyiapkan Skill <color=#FFFFFFFF>Master's Strike</color>.",
+			"description": "Mengakibatkan 3 poin Geo DMG dan menyiapkan Skill Master's Strike.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 26047,
+			"name": "Master's Strike",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>.",
+			"description": "Mengakibatkan 3 poin Geo DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

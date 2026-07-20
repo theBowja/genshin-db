@@ -7,8 +7,9 @@
 	"tags": [
 		"GCG_TAG_ARTIFACT"
 	],
-	"description": "所附属角色为出战角色，敌方受到草元素伤害后：累积1枚「花冠水晶」。如果「花冠水晶」大于等于我方手牌数，则生成1个随机基础元素骰。\n（每回合至多生成2个）",
-	"descriptionraw": "<color=#FFFFFFFF>所附属角色为出战角色，敌方受到$[K107]后：</color>累积1枚<color=#FFFFFFFF>「花冠水晶」</color>。如果<color=#FFFFFFFF>「花冠水晶」</color>大于等于我方手牌数，则生成1个随机基础元素骰。\\n（每回合至多生成2个）",
-	"descriptionreplaced": "<color=#FFFFFFFF>所附属角色为出战角色，敌方受到{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>后：</color>累积1枚<color=#FFFFFFFF>「花冠水晶」</color>。如果<color=#FFFFFFFF>「花冠水晶」</color>大于等于我方手牌数，则生成1个随机基础元素骰。\\n（每回合至多生成2个）",
-	"countingtype": "GCG_TOKEN_COUNTER"
+	"description": "敌方受到伤害后：如果此伤害是草元素伤害或发生了草元素相关反应，则累积1枚「花冠水晶」。（最多叠加到2）\n行动阶段开始时：如果「花冠水晶」数量为2，则本回合内下次我方引发元素反应时伤害额外+2。",
+	"descriptionraw": "<color=#FFFFFFFF>敌方受到伤害后：</color>如果此伤害是$[K107]或发生了$[K217]，则累积1枚<color=#FFFFFFFF>「花冠水晶」</color>。（最多叠加到2）\\n<color=#FFFFFFFF>行动阶段开始时：</color>如果<color=#FFFFFFFF>「花冠水晶」</color>数量为2，则本回合内下次我方引发元素反应时伤害额外+2。",
+	"descriptionreplaced": "<color=#FFFFFFFF>敌方受到伤害后：</color>如果此伤害是{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>或发生了<color=#7EC236FF>{SPRITE_PRESET#2107}草元素相关反应</color>，则累积1枚<color=#FFFFFFFF>「花冠水晶」</color>。（最多叠加到2）\\n<color=#FFFFFFFF>行动阶段开始时：</color>如果<color=#FFFFFFFF>「花冠水晶」</color>数量为2，则本回合内下次我方引发元素反应时伤害额外+2。",
+	"countingtype": "GCG_TOKEN_COUNTER",
+	"bufftype": "GCG_STATE_BUFF_NONE"
 }

@@ -1,0 +1,91 @@
+{
+	"id": 1116,
+	"name": "Skirk",
+	"shareid": 544,
+	"transformsinto": [
+		6605
+	],
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Sword",
+		"Cosmic Calamity"
+	],
+	"storytitle": "\"Void Star\" Skirk",
+	"storytext": "The stars fade to black.",
+	"source": "Reward for inviting Skirk to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Havoc: Sunder",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Havoc: Warp",
+			"descriptionraw": "Gains 2 <color=#FFFFFFFF>Serpent's Subtlety</color>, then creates 1 <color=#FFFFFFFF>$[C111161]</color> and adds it to your Hand. (Once per Round)",
+			"descriptionreplaced": "Gains 2 <color=#FFFFFFFF>Serpent's Subtlety</color>, then creates 1 <color=#FFFFFFFF>Mutual Weapons Mentorship</color> and adds it to your Hand. (Once per Round)",
+			"description": "Gains 2 Serpent's Subtlety, then creates 1 Mutual Weapons Mentorship and adds it to your Hand. (Once per Round)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11163,
+			"name": "Havoc: Ruin",
+			"descriptionraw": "Consumes all <color=#FFFFFFFF>Serpent's Subtlety</color>, deals $[D__KEY__ELEMENT] equal to the <color=#FFFFFFFF>Serpent's Subtlety</color> consumed, and deals 2 $[K5] to characters on standby. If 7 <color=#FFFFFFFF>Serpent's Subtlety</color> are consumed, deal 3 $[K5] to characters on standby instead.",
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Consumes all <color=#FFFFFFFF>Serpent's Subtlety</color>, deals {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color> equal to the <color=#FFFFFFFF>Serpent's Subtlety</color> consumed, and deals 2 <color=#FFFFFFFF>Piercing DMG</color> to characters on standby. If 7 <color=#FFFFFFFF>Serpent's Subtlety</color> are consumed, deal 3 <color=#FFFFFFFF>Piercing DMG</color> to characters on standby instead.",
+			"description": "Consumes all Serpent's Subtlety, deals Cryo DMG equal to the Serpent's Subtlety consumed, and deals 2 Piercing DMG to characters on standby. If 7 Serpent's Subtlety are consumed, deal 3 Piercing DMG to characters on standby instead.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_SKIRK_SPECIAL_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Reason Beyond Reason",
+			"descriptionraw": "(Passive) Skirk is unable to gain Energy but can now accumulate up to 7 points of <color=#FFFFFFFF>Serpent's Subtlety</color>.\\n<color=#FFFFFFFF>After you trigger Frozen, Cryo Swirl, Superconduct, or Cryo Crystallize reactions:</color> Create 1 <color=#FFFFFFFF>$[C111163]</color> in your hand. (3 times per Round)",
+			"descriptionreplaced": "(Passive) Skirk is unable to gain Energy but can now accumulate up to 7 points of <color=#FFFFFFFF>Serpent's Subtlety</color>.\\n<color=#FFFFFFFF>After you trigger Frozen, Cryo Swirl, Superconduct, or Cryo Crystallize reactions:</color> Create 1 <color=#FFFFFFFF>Void Rift</color> in your hand. (3 times per Round)",
+			"description": "(Passive) Skirk is unable to gain Energy but can now accumulate up to 7 points of Serpent's Subtlety.\nAfter you trigger Frozen, Cryo Swirl, Superconduct, or Cryo Crystallize reactions: Create 1 Void Rift in your hand. (3 times per Round)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

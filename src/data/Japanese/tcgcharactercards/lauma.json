@@ -1,0 +1,89 @@
+{
+	"id": 1711,
+	"name": "ラウマ",
+	"shareid": 585,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"草元素",
+		"法器",
+		"ナド・クライ"
+	],
+	"storytitle": "永月の祀り歌・ラウマ",
+	"storytext": "月は鏡に映り、水の中で散る。",
+	"source": "キャッツテールでラウマを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 17111,
+			"name": "森を巡る旅",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を1与える。",
+			"description": "草元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17112,
+			"name": "聖言のルノ・永夜の眠り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C117111]</color>を生成する。味方の手札に$[K3005]が付与されたカードが存在する場合、ランダムなカード1枚から$[K3005]効果を1層削除し、代わりに2ダメージを与える<color=#FFFFFFFF>$[C117111]</color>を生成する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を1与え、<color=#FFFFFFFF>霜林の聖域</color>を生成する。味方の手札に<color=#FFFFFFFF>コストダウン</color>が付与されたカードが存在する場合、ランダムなカード1枚から<color=#FFFFFFFF>コストダウン</color>効果を1層削除し、代わりに2ダメージを与える<color=#FFFFFFFF>霜林の聖域</color>を生成する。",
+			"description": "草元素ダメージを1与え、霜林の聖域を生成する。味方の手札にコストダウンが付与されたカードが存在する場合、ランダムなカード1枚からコストダウン効果を1層削除し、代わりに2ダメージを与える霜林の聖域を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17113,
+			"name": "聖言のルノ・月の心",
+			"descriptionraw": "味方の<color=#FFFFFFFF>$[K3002]</color>が0ではないランダムな手札3枚に<color=#FFFFFFFF>$[K3005]</color>を付与する。<color=#FFFFFFFF>$[C117112]</color>を3層生成する。",
+			"descriptionreplaced": "味方の<color=#FFFFFFFF><color=#FFFFFFFF>現在の元素サイコロのコスト</color></color>が0ではないランダムな手札3枚に<color=#FFFFFFFF><color=#FFFFFFFF>コストダウン</color></color>を付与する。<color=#FFFFFFFF>「蒼の讃歌」</color>を3層生成する。",
+			"description": "味方の現在の元素サイコロのコストが0ではないランダムな手札3枚にコストダウンを付与する。「蒼の讃歌」を3層生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17114,
+			"name": "月兆の祝福・千響の恩寵",
+			"descriptionraw": "【固有】この対局中、相手が<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}開花反応</color>を受けた時、代わりに<color=#FFFFFFFF>$[K3009]</color>反応が起きるようになる。\\n<color=#FFFFFFFF>相手が$[K3009]反応を受けた時、</color>味方の山札からランダムに1枚に$[K3005]を付与する。",
+			"descriptionreplaced": "【固有】この対局中、相手が<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}開花反応</color>を受けた時、代わりに<color=#FFFFFFFF><color=#FFFFFFFF>月開花</color></color>反応が起きるようになる。\\n<color=#FFFFFFFF>相手が<color=#FFFFFFFF>月開花</color>反応を受けた時、</color>味方の山札からランダムに1枚に<color=#FFFFFFFF>コストダウン</color>を付与する。",
+			"description": "【固有】この対局中、相手が開花反応を受けた時、代わりに月開花反応が起きるようになる。\n相手が月開花反応を受けた時、味方の山札からランダムに1枚にコストダウンを付与する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

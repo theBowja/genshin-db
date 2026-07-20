@@ -1,0 +1,89 @@
+{
+	"id": 1117,
+	"name": "미카",
+	"shareid": 555,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"장병기",
+		"몬드"
+	],
+	"storytitle": "맑은 서리의 좌표·미카",
+	"storytext": "황금빛 깃으로 그린 미지의 영역",
+	"source": "캣테일 술집에서 미카 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 11171,
+			"name": "페보니우스 창술·화살촉",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11172,
+			"name": "별서리 소용돌이",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111171]</color>을 생성한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>영혼의 바람</color>을 생성한다.",
+			"description": "얼음 원소 피해를 2pt 주고 영혼의 바람을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11173,
+			"name": "푸른 깃털의 기도",
+			"descriptionraw": "모든 아군 캐릭터를 1pt 치유하고, <color=#FFFFFFFF>$[C111172]</color>과 <color=#FFFFFFFF>$[C111176]</color>을 생성한다.",
+			"descriptionreplaced": "모든 아군 캐릭터를 1pt 치유하고, <color=#FFFFFFFF>매 깃털의 비결</color>과 <color=#FFFFFFFF>매 깃털의 축복</color>을 생성한다.",
+			"description": "모든 아군 캐릭터를 1pt 치유하고, 매 깃털의 비결과 매 깃털의 축복을 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11174,
+			"name": "견제 사격",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>자신이 스킬을 사용한 후:</color> 아군이 다음번에 주는 $[K100]+1pt (턴당 2회)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>자신이 스킬을 사용한 후:</color> 아군이 다음번에 주는 {SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>+1pt (턴당 2회)",
+			"description": "[패시브] 자신이 스킬을 사용한 후: 아군이 다음번에 주는 물리 피해+1pt (턴당 2회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

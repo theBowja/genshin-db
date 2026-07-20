@@ -1,0 +1,80 @@
+{
+	"id": 6605,
+	"name": "Skirk",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Espada",
+		"Calamidade Cósmica"
+	],
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Devastação: Destruição",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Devastação: Lampejo",
+			"descriptionraw": "Ganhe 2 de <color=#FFFFFFFF>Sutileza da Serpente</color>, então cria 1 <color=#FFFFFFFF>$[C111161]</color> e a adiciona à sua Mão. (Uma vez por Turno)",
+			"descriptionreplaced": "Ganhe 2 de <color=#FFFFFFFF>Sutileza da Serpente</color>, então cria 1 <color=#FFFFFFFF>Mentoria Mútua de Armamentos</color> e a adiciona à sua Mão. (Uma vez por Turno)",
+			"description": "Ganhe 2 de Sutileza da Serpente, então cria 1 Mentoria Mútua de Armamentos e a adiciona à sua Mão. (Uma vez por Turno)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11165,
+			"name": "Devastação: Obliteração",
+			"descriptionraw": "Converte 2 Dados Elementais não Omni em <color=#99FFFFFF>{SPRITE_PRESET#1101}Dados Elementais Cryo</color>. $[K56] até 2 Cartas de 0 de $[K3002]. Para cada Carta que você $[K56], <color=#FFFFFFFF>$[A1116]</color> ganha 1 ponto de <color=#FFFFFFFF>Sutileza da Serpente</color>.",
+			"descriptionreplaced": "Converte 2 Dados Elementais não Omni em <color=#99FFFFFF>{SPRITE_PRESET#1101}Dados Elementais Cryo</color>. <color=#FFFFFFFF>Descarta</color> até 2 Cartas de 0 de <color=#FFFFFFFF>Custo de Dados Elementais Atual</color>. Para cada Carta que você <color=#FFFFFFFF>Descarta</color>, <color=#FFFFFFFF>Skirk</color> ganha 1 ponto de <color=#FFFFFFFF>Sutileza da Serpente</color>.",
+			"description": "Converte 2 Dados Elementais não Omni em Dados Elementais Cryo. Descarta até 2 Cartas de 0 de Custo de Dados Elementais Atual. Para cada Carta que você Descarta, Skirk ganha 1 ponto de Sutileza da Serpente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Razão Além da Razão",
+			"descriptionraw": "(Passivo) Skirk não ganha Carga. Ao invés disso, ela pode acumular até 7 pontos de <color=#FFFFFFFF>Sutileza da Serpente</color>.\\n<color=#FFFFFFFF>Quando seus personagens desencadeiam reações de Congelado, Redemoinho Cryo, Supercondutor ou Cristalização Cryo:</color> Cria 1 <color=#FFFFFFFF>$[C111163]</color> em sua Mão. (Até 3 vezes por Turno)",
+			"descriptionreplaced": "(Passivo) Skirk não ganha Carga. Ao invés disso, ela pode acumular até 7 pontos de <color=#FFFFFFFF>Sutileza da Serpente</color>.\\n<color=#FFFFFFFF>Quando seus personagens desencadeiam reações de Congelado, Redemoinho Cryo, Supercondutor ou Cristalização Cryo:</color> Cria 1 <color=#FFFFFFFF>Fenda do Vazio</color> em sua Mão. (Até 3 vezes por Turno)",
+			"description": "(Passivo) Skirk não ganha Carga. Ao invés disso, ela pode acumular até 7 pontos de Sutileza da Serpente.\nQuando seus personagens desencadeiam reações de Congelado, Redemoinho Cryo, Supercondutor ou Cristalização Cryo: Cria 1 Fenda do Vazio em sua Mão. (Até 3 vezes por Turno)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

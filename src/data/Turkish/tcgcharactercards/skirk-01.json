@@ -1,0 +1,80 @@
+{
+	"id": 6605,
+	"name": "Skirk",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Buz",
+		"Kılıç",
+		"Kozmik Facia"
+	],
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Yıkım: Parçalama",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Yıkım: Bükme",
+			"descriptionraw": "2 <color=#FFFFFFFF>Yılan Kurnazlığı</color> kazanır, ardından 1 <color=#FFFFFFFF>$[C111161]</color> oluşturup eline ekler. (Her Turda bir defa)",
+			"descriptionreplaced": "2 <color=#FFFFFFFF>Yılan Kurnazlığı</color> kazanır, ardından 1 <color=#FFFFFFFF>Çapraz Silah Hocalığı</color> oluşturup eline ekler. (Her Turda bir defa)",
+			"description": "2 Yılan Kurnazlığı kazanır, ardından 1 Çapraz Silah Hocalığı oluşturup eline ekler. (Her Turda bir defa)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11165,
+			"name": "Yıkım: Tükeniş",
+			"descriptionraw": "Kararsız Element Zarı olmayan 2 zar <color=#99FFFFFF>{SPRITE_PRESET#1101}Buz Zarına</color> dönüşür. $[K3002] 0 olan en fazla 2 karta $[K56] uygularsın. $[K56] uyguladığın her kart için <color=#FFFFFFFF>$[A1116]</color> 1 puan <color=#FFFFFFFF>Yılan Kurnazlığı</color> kazanır.",
+			"descriptionreplaced": "Kararsız Element Zarı olmayan 2 zar <color=#99FFFFFF>{SPRITE_PRESET#1101}Buz Zarına</color> dönüşür. <color=#FFFFFFFF>Mevcut Element Zarı Maliyeti</color> 0 olan en fazla 2 karta <color=#FFFFFFFF>Dışarı Atma</color> uygularsın. <color=#FFFFFFFF>Dışarı Atma</color> uyguladığın her kart için <color=#FFFFFFFF>Skirk</color> 1 puan <color=#FFFFFFFF>Yılan Kurnazlığı</color> kazanır.",
+			"description": "Kararsız Element Zarı olmayan 2 zar Buz Zarına dönüşür. Mevcut Element Zarı Maliyeti 0 olan en fazla 2 karta Dışarı Atma uygularsın. Dışarı Atma uyguladığın her kart için Skirk 1 puan Yılan Kurnazlığı kazanır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Akıl Almaz Mantık",
+			"descriptionraw": "(Pasif) Skirk Enerji kazanamaz, bunun yerine 7 puana kadar <color=#FFFFFFFF>Yılan Kurnazlığı</color> biriktirebilir.\\n<color=#FFFFFFFF>Bir Donma, Buz Girdabı, Süper İletim veya Buz Kristalleşmesi tepkimesi tetiklediğinde</color> 1 <color=#FFFFFFFF>$[C111163]</color> oluşur ve eline eklenir. (Her Turda en fazla 3 defa)",
+			"descriptionreplaced": "(Pasif) Skirk Enerji kazanamaz, bunun yerine 7 puana kadar <color=#FFFFFFFF>Yılan Kurnazlığı</color> biriktirebilir.\\n<color=#FFFFFFFF>Bir Donma, Buz Girdabı, Süper İletim veya Buz Kristalleşmesi tepkimesi tetiklediğinde</color> 1 <color=#FFFFFFFF>Boşluk Yarığı</color> oluşur ve eline eklenir. (Her Turda en fazla 3 defa)",
+			"description": "(Pasif) Skirk Enerji kazanamaz, bunun yerine 7 puana kadar Yılan Kurnazlığı biriktirebilir.\nBir Donma, Buz Girdabı, Süper İletim veya Buz Kristalleşmesi tepkimesi tetiklediğinde 1 Boşluk Yarığı oluşur ve eline eklenir. (Her Turda en fazla 3 defa)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

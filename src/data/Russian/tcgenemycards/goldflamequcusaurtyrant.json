@@ -1,0 +1,87 @@
+{
+	"id": 4310,
+	"name": "Кукузавр-тиран золотого пламени",
+	"hp": 16,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Пиро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 23061,
+			"name": "Удар крыльев",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23062,
+			"name": "Вздымающийся пламенный ветер",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Накладывает на себя <color=#FFFFFFFF>$[C123062]</color>, 2 уровня.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед. Накладывает на себя <color=#FFFFFFFF>Вихрь</color>, 2 уровня.",
+			"description": "Наносит Пиро урон, 1 ед. Накладывает на себя Вихрь, 2 уровня.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23063,
+			"name": "Взрыв золотого пламени",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., наносит $[K5], 1 ед. всем неактивным персонажам противника, персонаж получает статус: <color=#FFFFFFFF>$[C123061]</color>, 1 уровень.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед., наносит <color=#FFFFFFFF>Проникающий урон</color>, 1 ед. всем неактивным персонажам противника, персонаж получает статус: <color=#FFFFFFFF>Форма золотого пламени</color>, 1 уровень.",
+			"description": "Наносит Пиро урон, 3 ед., наносит Проникающий урон, 1 ед. всем неактивным персонажам противника, персонаж получает статус: Форма золотого пламени, 1 уровень.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23065,
+			"name": "Кровь древних",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>В начале фазы ходов:</color> вы получаете <color=#FFFFFFFF>$[C123061]</color>, 1 уровень, и случайным образом генерирует 1 карту в руку стоимостью 2 Элементальных дайса.",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>В начале фазы ходов:</color> вы получаете <color=#FFFFFFFF>Форма золотого пламени</color>, 1 уровень, и случайным образом генерирует 1 карту в руку стоимостью 2 Элементальных дайса.",
+			"description": "(Пассивный навык) В начале фазы ходов: вы получаете Форма золотого пламени, 1 уровень, и случайным образом генерирует 1 карту в руку стоимостью 2 Элементальных дайса.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

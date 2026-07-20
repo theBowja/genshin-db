@@ -1,0 +1,84 @@
+{
+	"id": 4309,
+	"name": "蝕滅的源焰之主",
+	"hp": 28,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"火元素",
+		"其他武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 23051,
+			"name": "虛界玄爪",
+			"descriptionraw": "造成2點$[D__KEY__ELEMENT]。",
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "造成2點{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理傷害</color>。",
+			"description": "造成2點物理傷害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻擊",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23052,
+			"name": "蝕滅火羽",
+			"descriptionraw": "造成3點$[D__KEY__ELEMENT]，我方$[K56]牌組頂部1張牌。",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成3點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>，我方<color=#FFFFFFFF>捨棄</color>牌組頂部1張牌。",
+			"description": "造成3點火元素傷害，我方捨棄牌組頂部1張牌。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素戰技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23053,
+			"name": "斫劫源焰",
+			"descriptionraw": "造成1點$[D__KEY__ELEMENT]，對所有敵方後臺角色造成1點$[K5]。雙方$[K56]牌組頂部3張牌，自身附屬1層<color=#FFFFFFFF>$[C123051]</color>.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "造成1點{SPRITE_PRESET#2103}<color=#FF9999FF>火元素傷害</color>，對所有敵方後臺角色造成1點<color=#FFFFFFFF>穿透傷害</color>。雙方<color=#FFFFFFFF>捨棄</color>牌組頂部3張牌，自身附屬1層<color=#FFFFFFFF>忿恨</color>.",
+			"description": "造成1點火元素傷害，對所有敵方後臺角色造成1點穿透傷害。雙方捨棄牌組頂部3張牌，自身附屬1層忿恨.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆發",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23055,
+			"name": "漆黑的怒號",
+			"descriptionraw": "【被動】<color=#FFFFFFFF>自身受到傷害時：</color>若自身生命值不高於6，$[K56]雙方牌組頂部9張牌。（整局遊戲1次）",
+			"descriptionreplaced": "【被動】<color=#FFFFFFFF>自身受到傷害時：</color>若自身生命值不高於6，<color=#FFFFFFFF>捨棄</color>雙方牌組頂部9張牌。（整局遊戲1次）",
+			"description": "【被動】自身受到傷害時：若自身生命值不高於6，捨棄雙方牌組頂部9張牌。（整局遊戲1次）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被動技能",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"id": 4212,
+	"name": "Crococornu sacralisé",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 22071,
+			"name": "Morsure de croc",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22072,
+			"name": "Vague croquante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], place un maximum de 1 carte ayant le $[K3002|s1] le plus élevé depuis votre main dans le bas de votre deck et crée une carte [<color=#FFFFFFFF>$[C124051]</color>] dans votre main.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>, place un maximum de 1 carte ayant le <color=#FFFFFFFF>coût actuel de dés élémentaires</color> le plus élevé depuis votre main dans le bas de votre deck et crée une carte [<color=#FFFFFFFF>Bloc d'énergie phagocytaire</color>] dans votre main.",
+			"description": "Inflige 3 pts de DGT Hydro, place un maximum de 1 carte ayant le coût actuel de dés élémentaires le plus élevé depuis votre main dans le bas de votre deck et crée une carte [Bloc d'énergie phagocytaire] dans votre main.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22073,
+			"name": "Rage reptilienne",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT], $[K56|s1] un maximum de 3 cartes [<color=#FFFFFFFF>$[C124051]</color>], puis soigne votre personnage ayant subi le plus de DGT pour 1 pt et lui accorde 1 PV max pour chaque carte $[K56|s2].",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 4 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>, <color=#FFFFFFFF>défausse</color> un maximum de 3 cartes [<color=#FFFFFFFF>Bloc d'énergie phagocytaire</color>], puis soigne votre personnage ayant subi le plus de DGT pour 1 pt et lui accorde 1 PV max pour chaque carte <color=#FFFFFFFF>défaussée</color>.",
+			"description": "Inflige 4 pts de DGT Hydro, défausse un maximum de 3 cartes [Bloc d'énergie phagocytaire], puis soigne votre personnage ayant subi le plus de DGT pour 1 pt et lui accorde 1 PV max pour chaque carte défaussée.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22074,
+			"name": "Sens sacralisés",
+			"descriptionraw": "(Passif) Lorsque vous avez joué ou $[K56|s4] une carte [<color=#FFFFFFFF>$[C124051]</color>] : Soigne votre personnage ayant subi le plus de DGT pour 1 pt.",
+			"descriptionreplaced": "(Passif) Lorsque vous avez joué ou <color=#FFFFFFFF>défaussé</color> une carte [<color=#FFFFFFFF>Bloc d'énergie phagocytaire</color>] : Soigne votre personnage ayant subi le plus de DGT pour 1 pt.",
+			"description": "(Passif) Lorsque vous avez joué ou défaussé une carte [Bloc d'énergie phagocytaire] : Soigne votre personnage ayant subi le plus de DGT pour 1 pt.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,104 @@
+{
+	"id": 1418,
+	"name": "플린스",
+	"shareid": 584,
+	"hp": 10,
+	"maxenergy": 4,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"번개 원소",
+		"장병기",
+		"노드크라이"
+	],
+	"storytitle": "등불의 그림자·플린스",
+	"storytext": "어둠으로 이끄는 묘지의 등불",
+	"source": "캣테일 술집에서 플린스 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 14181,
+			"name": "호위 마창",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14182,
+			"name": "고대 율법·등불의 신비",
+			"descriptionraw": "턴마다 처음 해당 스킬 사용 시, $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 자신에게 <color=#FFFFFFFF>$[C114181]</color>을 부착한다. 해당 스킬을 다시 사용하면 $[K310]를 2pt 소모하고, 자신의 <color=#FFFFFFFF>$[K1051]</color>의 $[K53]를 한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "턴마다 처음 해당 스킬 사용 시, {SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 1pt 주고 자신에게 <color=#FFFFFFFF>푸른불</color>을 부착한다. 해당 스킬을 다시 사용하면 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 2pt 소모하고, 자신의 <color=#FFFFFFFF><color=#FFFFFFFF>낙뢰 교향곡</color></color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "턴마다 처음 해당 스킬 사용 시, 번개 원소 피해를 1pt 주고 자신에게 푸른불을 부착한다. 해당 스킬을 다시 사용하면 원소 에너지를 2pt 소모하고, 자신의 낙뢰 교향곡의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14183,
+			"name": "고대 예법·밤의 손님",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 모든 대기 캐릭터에게 $[K5]를 2pt 준다.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 6pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF>관통 피해</color>를 2pt 준다.",
+			"description": "번개 원소 피해를 6pt 주고 상대의 모든 대기 캐릭터에게 관통 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 4
+				}
+			]
+		},
+		{
+			"id": 14184,
+			"name": "달빛 징조의 축복·구시대의 비밀",
+			"descriptionraw": "[패시브] 이번 대전에서 상대가 <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}감전 반응</color>을 받을 시, <color=#FFFFFFFF>$[K3001]</color> 반응으로 전환된다.\\n<color=#FFFFFFFF>자신이 필드에 있을 때 상대의 행동 카드에 <color=#FFFFFFFF>$[C204]</color> 부여 시:</color> 상대 필드에서 HP가 가장 높은 캐릭터에게 $[K5]를 1pt 준다.",
+			"descriptionreplaced": "[패시브] 이번 대전에서 상대가 <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}감전 반응</color>을 받을 시, <color=#FFFFFFFF><color=#FFFFFFFF>달 감전</color></color> 반응으로 전환된다.\\n<color=#FFFFFFFF>자신이 필드에 있을 때 상대의 행동 카드에 <color=#FFFFFFFF>전기 충격</color> 부여 시:</color> 상대 필드에서 HP가 가장 높은 캐릭터에게 <color=#FFFFFFFF>관통 피해</color>를 1pt 준다.",
+			"description": "[패시브] 이번 대전에서 상대가 감전 반응을 받을 시, 달 감전 반응으로 전환된다.\n자신이 필드에 있을 때 상대의 행동 카드에 전기 충격 부여 시: 상대 필드에서 HP가 가장 높은 캐릭터에게 관통 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 14185,
+			"name": "낙뢰 교향곡",
+			"descriptionraw": "$[D__KEY__ELEMENT] $[D__KEY__DAMAGE]pt를 준다. 만약 아군 필드에 <color=#FFFFFFFF>$[C205]</color> 존재 시, 주는 피해 추가+2pt",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color> 2pt를 준다. 만약 아군 필드에 <color=#FFFFFFFF>번개구름</color> 존재 시, 주는 피해 추가+2pt",
+			"description": "번개 원소 피해 2pt를 준다. 만약 아군 필드에 번개구름 존재 시, 주는 피해 추가+2pt",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

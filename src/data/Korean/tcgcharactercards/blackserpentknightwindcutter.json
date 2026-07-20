@@ -1,0 +1,115 @@
+{
+	"id": 2504,
+	"name": "흑 뱀 기사·바람을 가르는 검",
+	"shareid": 598,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"바람 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "흑 뱀 기사·바람을 가르는 검",
+	"storytext": "「왕궁에서 다소 높은 지위를 가진 근위병. 『여광의 검』도 한때 그들 중 한 명이었다」",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 흑 뱀 기사·바람을 가르는 검에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 25041,
+			"name": "반검술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25042,
+			"name": "하단 올려베기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, 카드를 1장 드로우한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 3pt 주고, 카드를 1장 드로우한다.",
+			"description": "바람 원소 피해를 3pt 주고, 카드를 1장 드로우한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25043,
+			"name": "호위 자세",
+			"descriptionraw": "<color=#FFFFFFFF>$[S25045]</color>의 $[K53]를 한다. 그 후 <color=#FFFFFFFF>$[S25046]</color>의 $[K53]를 한다.",
+			"descriptionreplaced": "<color=#FFFFFFFF>전력 태세</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다. 그 후 <color=#FFFFFFFF>돌풍 타격</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "전력 태세의 스킬 준비를 한다. 그 후 돌풍 타격의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25044,
+			"name": "진격의 기세",
+			"descriptionraw": "[패시브] 아군이 확산 반응을 발동하거나 상대가 {SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>, <color=#FFFFFFFF> 피해 상쇄</color> 상태 및 출전 상태 상실 시, 카드를 1장 드로우한다. (턴당 2회)",
+			"descriptionreplaced": "[패시브] 아군이 확산 반응을 발동하거나 상대가 {SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>, <color=#FFFFFFFF> 피해 상쇄</color> 상태 및 출전 상태 상실 시, 카드를 1장 드로우한다. (턴당 2회)",
+			"description": "[패시브] 아군이 확산 반응을 발동하거나 상대가 보호막,  피해 상쇄 상태 및 출전 상태 상실 시, 카드를 1장 드로우한다. (턴당 2회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 25045,
+			"name": "전력 태세",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 $[K3002]가 가장 높은 핸드 카드를 1장 $[K56]한 뒤 <color=#FFFFFFFF>$[S25046]</color>의 $[K53]를 한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>현재 원소 주사위 코스트</color>가 가장 높은 핸드 카드를 1장 <color=#FFFFFFFF>포기</color>한 뒤 <color=#FFFFFFFF>돌풍 타격</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "바람 원소 피해를 3pt 주고 현재 원소 주사위 코스트가 가장 높은 핸드 카드를 1장 포기한 뒤 돌풍 타격의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 25046,
+			"name": "돌풍 타격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 $[K3002]가 가장 높은 핸드 카드를 1장 $[K56]한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>현재 원소 주사위 코스트</color>가 가장 높은 핸드 카드를 1장 <color=#FFFFFFFF>포기</color>한다.",
+			"description": "바람 원소 피해를 3pt 주고 현재 원소 주사위 코스트가 가장 높은 핸드 카드를 1장 포기한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

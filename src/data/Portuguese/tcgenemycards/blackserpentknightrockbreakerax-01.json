@@ -1,0 +1,111 @@
+{
+	"id": 4610,
+	"name": "Cavaleiro da Serpente Negra - Machado Quebra-rocha",
+	"hp": 30,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 26041,
+			"name": "Golpe Supremo",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26042,
+			"name": "Machado e Égide",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2106}<color=#FFE699FF>Dano Geo</color>.",
+			"description": "Causa 3 pontos de Dano Geo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26043,
+			"name": "Postura da Pedra",
+			"descriptionraw": "<color=#FFFFFFFF>$[K206]</color> a si e prepara <color=#FFFFFFFF>$[S26045]</color>, então prepara <color=#FFFFFFFF>$[S26047]</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF><color=#FFE699FF>Aplicação {SPRITE_PRESET#2106}Geo</color></color> a si e prepara <color=#FFFFFFFF>Impacto do Machadão</color>, então prepara <color=#FFFFFFFF>Golpe do Mestre</color>.",
+			"description": "Aplicação Geo a si e prepara Impacto do Machadão, então prepara Golpe do Mestre.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26044,
+			"name": "Vigor de Ataque",
+			"descriptionraw": "(Passivo) Se houver <color=#FFFFFFFF>negação de Dano</color> e {SPRITE_PRESET#4007}<color=#FFFFFFFF>Escudo</color> no lado inimigo, ou se houver <color=#FFFFFFFF>negação de Dano</color> e {SPRITE_PRESET#4007}<color=#FFFFFFFF>Escudo</color> no Estado de Combate, depois que seu personagem usar a Habilidade, aplica 1 acúmulo de <color=#FFFFFFFF>$[C126041]</color> a si mesmo.",
+			"descriptionreplaced": "(Passivo) Se houver <color=#FFFFFFFF>negação de Dano</color> e {SPRITE_PRESET#4007}<color=#FFFFFFFF>Escudo</color> no lado inimigo, ou se houver <color=#FFFFFFFF>negação de Dano</color> e {SPRITE_PRESET#4007}<color=#FFFFFFFF>Escudo</color> no Estado de Combate, depois que seu personagem usar a Habilidade, aplica 1 acúmulo de <color=#FFFFFFFF>Poderio da Pedra</color> a si mesmo.",
+			"description": "(Passivo) Se houver negação de Dano e Escudo no lado inimigo, ou se houver negação de Dano e Escudo no Estado de Combate, depois que seu personagem usar a Habilidade, aplica 1 acúmulo de Poderio da Pedra a si mesmo.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 26045,
+			"name": "Impacto do Machadão",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], prepara <color=#FFFFFFFF>$[S26047]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2106}<color=#FFE699FF>Dano Geo</color>, prepara <color=#FFFFFFFF>Golpe do Mestre</color>.",
+			"description": "Causa 3 pontos de Dano Geo, prepara Golpe do Mestre.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 26047,
+			"name": "Golpe do Mestre",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2106}<color=#FFE699FF>Dano Geo</color>.",
+			"description": "Causa 3 pontos de Dano Geo.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

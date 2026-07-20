@@ -1,0 +1,89 @@
+{
+	"id": 1711,
+	"name": "Lauma",
+	"shareid": 585,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Nguyên Tố Thảo",
+		"Pháp Khí",
+		"Nod-Krai"
+	],
+	"storytitle": "Tế Ca Vĩnh Nguyệt - Lauma",
+	"storytext": "Trăng ở trong gương, trăng tan trong nước.",
+	"source": "Nhận được sau khi mời Lauma giao đấu trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong Đánh Giải Trí",
+	"skills": [
+		{
+			"id": 17111,
+			"name": "Phiêu Du Núi Rừng",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Gây 1 điểm {SPRITE_PRESET#2107}<color=#7EC236FF>Sát Thương Nguyên Tố Thảo</color>.",
+			"description": "Gây 1 điểm Sát Thương Nguyên Tố Thảo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17112,
+			"name": "Runo - Karsikko Yên Giấc",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], sinh ra <color=#FFFFFFFF>$[C117111]</color>. Nếu trên tay phe ta có thẻ bài được áp dụng $[K3005], thì sẽ xóa 1 tầng $[K3005] của 1 lá ngẫu nhiên và chuyển sang sinh ra <color=#FFFFFFFF>$[C117111]</color> gây 2 điểm sát thương.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Gây 1 điểm {SPRITE_PRESET#2107}<color=#7EC236FF>Sát Thương Nguyên Tố Thảo</color>, sinh ra <color=#FFFFFFFF>Thánh Vực Rừng Sương</color>. Nếu trên tay phe ta có thẻ bài được áp dụng <color=#FFFFFFFF>Giảm Chi Phí</color>, thì sẽ xóa 1 tầng <color=#FFFFFFFF>Giảm Chi Phí</color> của 1 lá ngẫu nhiên và chuyển sang sinh ra <color=#FFFFFFFF>Thánh Vực Rừng Sương</color> gây 2 điểm sát thương.",
+			"description": "Gây 1 điểm Sát Thương Nguyên Tố Thảo, sinh ra Thánh Vực Rừng Sương. Nếu trên tay phe ta có thẻ bài được áp dụng Giảm Chi Phí, thì sẽ xóa 1 tầng Giảm Chi Phí của 1 lá ngẫu nhiên và chuyển sang sinh ra Thánh Vực Rừng Sương gây 2 điểm sát thương.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17113,
+			"name": "Runo - Vạn Tâm Vì Ánh Trăng",
+			"descriptionraw": "Áp dụng <color=#FFFFFFFF>$[K3005]</color> cho 3 lá ngẫu nhiên có <color=#FFFFFFFF>$[K3002]</color> khác 0 trên tay phe ta. Sinh ra 3 tầng <color=#FFFFFFFF>$[C117112]</color>.",
+			"descriptionreplaced": "Áp dụng <color=#FFFFFFFF><color=#FFFFFFFF>Giảm Chi Phí</color></color> cho 3 lá ngẫu nhiên có <color=#FFFFFFFF><color=#FFFFFFFF>Chi Phí Xúc Xắc Nguyên Tố Hiện Tại</color></color> khác 0 trên tay phe ta. Sinh ra 3 tầng <color=#FFFFFFFF>Thánh Ca Sắc Xanh</color>.",
+			"description": "Áp dụng Giảm Chi Phí cho 3 lá ngẫu nhiên có Chi Phí Xúc Xắc Nguyên Tố Hiện Tại khác 0 trên tay phe ta. Sinh ra 3 tầng Thánh Ca Sắc Xanh.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17114,
+			"name": "Chúc Phúc Nguyệt Triệu - Ân Sủng Ngàn Âm",
+			"descriptionraw": "(Bị động) Trong ván này, khi phe địch chịu <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}phản ứng Sum Suê</color>, sẽ chuyển thành phản ứng <color=#FFFFFFFF>$[K3009]</color>.\\n<color=#FFFFFFFF>Khi phe địch chịu phản ứng $[K3009]:</color> Áp dụng $[K3005] cho 1 thẻ ngẫu nhiên trong bộ bài phe ta.",
+			"descriptionreplaced": "(Bị động) Trong ván này, khi phe địch chịu <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}phản ứng Sum Suê</color>, sẽ chuyển thành phản ứng <color=#FFFFFFFF><color=#FFFFFFFF>Nguyệt-Sum Suê</color></color>.\\n<color=#FFFFFFFF>Khi phe địch chịu phản ứng <color=#FFFFFFFF>Nguyệt-Sum Suê</color>:</color> Áp dụng <color=#FFFFFFFF>Giảm Chi Phí</color> cho 1 thẻ ngẫu nhiên trong bộ bài phe ta.",
+			"description": "(Bị động) Trong ván này, khi phe địch chịu phản ứng Sum Suê, sẽ chuyển thành phản ứng Nguyệt-Sum Suê.\nKhi phe địch chịu phản ứng Nguyệt-Sum Suê: Áp dụng Giảm Chi Phí cho 1 thẻ ngẫu nhiên trong bộ bài phe ta.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		}
+	]
+}

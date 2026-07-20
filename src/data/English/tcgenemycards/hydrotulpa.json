@@ -1,0 +1,87 @@
+{
+	"id": 4210,
+	"name": "Hydro Tulpa",
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 22061,
+			"name": "Savage Swell",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>.",
+			"description": "Deals 1 Hydro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22062,
+			"name": "Storm Surge",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], and randomly triggers the End Phase effect for 1 of your Summons. If this character's HP is not lower than 2, they will receive 1 <color=#FFFFFFFF>$[K5]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>, and randomly triggers the End Phase effect for 1 of your Summons. If this character's HP is not lower than 2, they will receive 1 <color=#FFFFFFFF><color=#FFFFFFFF>Piercing DMG</color></color>.",
+			"description": "Deals 2 Hydro DMG, and randomly triggers the End Phase effect for 1 of your Summons. If this character's HP is not lower than 2, they will receive 1 Piercing DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22063,
+			"name": "Thundering Tide",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], triggers the End Phase effect for all of your Summons.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>, triggers the End Phase effect for all of your Summons.",
+			"description": "Deals 4 Hydro DMG, triggers the End Phase effect for all of your Summons.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22064,
+			"name": "Branching Flow",
+			"descriptionraw": "<color=#FFFFFFFF>When this character's HP is not lower than 3, and your Summon apart from $[C122061] leaves play:</color> This character receives 2 <color=#FFFFFFFF>$[K5]</color> and summons 1 independent <color=#FFFFFFFF>$[C122061]</color>. (Once per Round)",
+			"descriptionreplaced": "<color=#FFFFFFFF>When this character's HP is not lower than 3, and your Summon apart from Half-Tulpa leaves play:</color> This character receives 2 <color=#FFFFFFFF><color=#FFFFFFFF>Piercing DMG</color></color> and summons 1 independent <color=#FFFFFFFF>Half-Tulpa</color>. (Once per Round)",
+			"description": "When this character's HP is not lower than 3, and your Summon apart from Half-Tulpa leaves play: This character receives 2 Piercing DMG and summons 1 independent Half-Tulpa. (Once per Round)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

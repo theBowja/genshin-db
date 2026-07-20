@@ -1,0 +1,84 @@
+{
+	"id": 4309,
+	"name": "Владыка истлевшего первобытного пламени",
+	"hp": 28,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Пиро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 23051,
+			"name": "Удар когтем пустоты",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], 2 ед.",
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23052,
+			"name": "Обгоревшие огненные перья",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], 3 ед. Происходит $[K56] от верхней карты вашей колоды.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 3 ед. Происходит <color=#FFFFFFFF>Отказ</color> от верхней карты вашей колоды.",
+			"description": "Наносит Пиро урон, 3 ед. Происходит Отказ от верхней карты вашей колоды.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23053,
+			"name": "Разящее первобытное пламя",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], 1 ед., а также $[K5], 1 ед., всем неактивным персонажам противника. Обе стороны производят $[K56] от 3 верхних карт и получают <color=#FFFFFFFF>$[C123051]</color>, 1 уровень.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, 1 ед., а также <color=#FFFFFFFF>Проникающий урон</color>, 1 ед., всем неактивным персонажам противника. Обе стороны производят <color=#FFFFFFFF>Отказ</color> от 3 верхних карт и получают <color=#FFFFFFFF>Негодование</color>, 1 уровень.",
+			"description": "Наносит Пиро урон, 1 ед., а также Проникающий урон, 1 ед., всем неактивным персонажам противника. Обе стороны производят Отказ от 3 верхних карт и получают Негодование, 1 уровень.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23055,
+			"name": "Рёв из тьмы",
+			"descriptionraw": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если его HP не больше 6, оба игрока производят $[K56] от 9 верхних карт. (Один раз за раунд)",
+			"descriptionreplaced": "(Пассивный навык) <color=#FFFFFFFF>Когда этот персонаж получает урон:</color> если его HP не больше 6, оба игрока производят <color=#FFFFFFFF>Отказ</color> от 9 верхних карт. (Один раз за раунд)",
+			"description": "(Пассивный навык) Когда этот персонаж получает урон: если его HP не больше 6, оба игрока производят Отказ от 9 верхних карт. (Один раз за раунд)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

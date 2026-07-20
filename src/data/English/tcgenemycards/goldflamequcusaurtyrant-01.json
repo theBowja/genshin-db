@@ -1,0 +1,87 @@
+{
+	"id": 4311,
+	"name": "Goldflame Qucusaur Tyrant",
+	"hp": 24,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Pyro",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 23061,
+			"name": "Wingcleave",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23062,
+			"name": "Rising Scorchwind",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], and attaches 2 stacks of <color=#FFFFFFFF>$[C123062]</color> to self.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Deals 1 {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>, and attaches 2 stacks of <color=#FFFFFFFF>Flying Swirl</color> to self.",
+			"description": "Deals 1 Pyro DMG, and attaches 2 stacks of Flying Swirl to self.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23063,
+			"name": "Goldflame Detonation",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], and deals 1 $[K5] to all opponent's off-field characters. Attaches 1 stack of <color=#FFFFFFFF>$[C123061]</color> to self.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>, and deals 1 <color=#FFFFFFFF>Piercing DMG</color> to all opponent's off-field characters. Attaches 1 stack of <color=#FFFFFFFF>Goldflame State</color> to self.",
+			"description": "Deals 3 Pyro DMG, and deals 1 Piercing DMG to all opponent's off-field characters. Attaches 1 stack of Goldflame State to self.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23065,
+			"name": "Ancient Bloodline",
+			"descriptionraw": "(Passive) <color=#FFFFFFFF>When Action Phase begins,</color> attach 1 stack of <color=#FFFFFFFF>$[C123061]</color> to self while also generating 1 random card that costs 2 Elemental Dice.",
+			"descriptionreplaced": "(Passive) <color=#FFFFFFFF>When Action Phase begins,</color> attach 1 stack of <color=#FFFFFFFF>Goldflame State</color> to self while also generating 1 random card that costs 2 Elemental Dice.",
+			"description": "(Passive) When Action Phase begins, attach 1 stack of Goldflame State to self while also generating 1 random card that costs 2 Elemental Dice.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

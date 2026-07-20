@@ -1,0 +1,101 @@
+{
+	"id": 1513,
+	"name": "鹿野院平蔵",
+	"shareid": 493,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"風元素",
+		"法器",
+		"稲妻"
+	],
+	"storytitle": "乂安を願う者・鹿野院平蔵",
+	"storytext": "天衣にほころび無し、但し寒風には弱し。",
+	"source": "キャッツテールで鹿野院平蔵を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 15131,
+			"name": "不動流格闘術",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を1与える。",
+			"description": "風元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15132,
+			"name": "戮心拳",
+			"descriptionraw": "$[K53]：<color=#FFFFFFFF>$[S15135]</color>",
+			"descriptionreplaced": "<color=#FFFFFFFF>スキル準備</color>：<color=#FFFFFFFF>戮心拳・力溜め</color>",
+			"description": "スキル準備：戮心拳・力溜め",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15133,
+			"name": "廻風蹴",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。このスキルで$[K215]を起こした場合、相手の出撃キャラに対応する元素の$[K1036]を付与する。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を4与える。このスキルで<color=#80FFD7FF>{SPRITE_PRESET#2105}風元素関連反応</color>を起こした場合、相手の出撃キャラに対応する元素の<color=#FFFFFFFF>廻風真眼</color>を付与する。",
+			"description": "風元素ダメージを4与える。このスキルで風元素関連反応を起こした場合、相手の出撃キャラに対応する元素の廻風真眼を付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15134,
+			"name": "反論稽古",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>味方が$[K215]を起こした後、</color>自身に<color=#FFFFFFFF>$[C115132]</color>を1層付与する。",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>味方が<color=#80FFD7FF>{SPRITE_PRESET#2105}風元素関連反応</color>を起こした後、</color>自身に<color=#FFFFFFFF>変格</color>を1層付与する。",
+			"description": "【固有】味方が風元素関連反応を起こした後、自身に変格を1層付与する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 15135,
+			"name": "戮心拳・力溜め",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_4]与える。",
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を4与える。",
+			"description": "風元素ダメージを4与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

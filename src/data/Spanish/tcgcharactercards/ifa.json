@@ -1,0 +1,81 @@
+{
+	"id": 1515,
+	"name": "Ifá",
+	"shareid": 522,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Anemo",
+		"Catalizador",
+		"Natlan"
+	],
+	"storytitle": "Ifá - El Guiado por Vientos Errantes",
+	"storytext": "Un rescate raudo como una emboscada.",
+	"source": "Se obtiene tras retar y ganar a Ifá en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 15151,
+			"name": "Ritual disipavientos",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>.",
+			"description": "Inflige 1 pt. de Daño Anemo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15152,
+			"name": "Aeroprevención de enfermedades",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], entra en el estado de <color=#FFFFFFFF>$[C115151|s1]</color> y obtiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>. Además, el personaje se equipa la carta de <color=#FFFFFFFF>$[C115152]</color>.\\n(Esta habilidad no se puede usar una vez que el personaje esté en estado de <color=#FFFFFFFF>$[C115151|s1]</color>).\\n(El personaje que tenga equipada la carta de <color=#FFFFFFFF>$[C115152]</color> puede usar la técnica especial: <color=#FFFFFFFF>$[S1151521]</color>).",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>, entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color> y obtiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>. Además, el personaje se equipa la carta de <color=#FFFFFFFF>Cacucu</color>.\\n(Esta habilidad no se puede usar una vez que el personaje esté en estado de <color=#FFFFFFFF>bendición noctámbula</color>).\\n(El personaje que tenga equipada la carta de <color=#FFFFFFFF>Cacucu</color> puede usar la técnica especial: <color=#FFFFFFFF>Disparo auxiliar</color>).",
+			"description": "Inflige 1 pt. de Daño Anemo, entra en el estado de bendición noctámbula y obtiene 2 pts. de noctambulismo. Además, el personaje se equipa la carta de Cacucu.\n(Esta habilidad no se puede usar una vez que el personaje esté en estado de bendición noctámbula).\n(El personaje que tenga equipada la carta de Cacucu puede usar la técnica especial: Disparo auxiliar).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15153,
+			"name": "Campo de sedación complejo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y el personaje que más daño haya recibido obtiene Vida +2. Si esta habilidad causa una $[K215|s1], el personaje en combate enemigo obtendrá una $[K1038|s1] del elemento correspondiente.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y el personaje que más daño haya recibido obtiene Vida +2. Si esta habilidad causa una <color=#80FFD7FF>{SPRITE_PRESET#2105}Reacción Elemental Anemo</color>, el personaje en combate enemigo obtendrá una <color=#FFFFFFFF>marca tranquilizante</color> del elemento correspondiente.",
+			"description": "Inflige 2 pts. de Daño Anemo y el personaje que más daño haya recibido obtiene Vida +2. Si esta habilidad causa una Reacción Elemental Anemo, el personaje en combate enemigo obtendrá una marca tranquilizante del elemento correspondiente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

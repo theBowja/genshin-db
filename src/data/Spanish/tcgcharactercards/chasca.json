@@ -1,0 +1,91 @@
+{
+	"id": 1511,
+	"name": "Chasca",
+	"shareid": 479,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Anemo",
+		"Arco",
+		"Natlan"
+	],
+	"storytitle": "Chasca - La Pacificadora del Firmamento",
+	"storytext": "Alzando el vuelo entre plumas y flores.",
+	"source": "Se obtiene tras retar y ganar a Chasca en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 15111,
+			"name": "Corriente plumífera",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15112,
+			"name": "Riendas persiguesombras",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y tomas 1 carta.\\nEste personaje se equipa la carta de <color=#FFFFFFFF>$[C115112]</color>, entra en el estado de <color=#FFFFFFFF>$[C115111|s1]</color> y obtiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>. (Esta habilidad no se puede usar una vez que el personaje esté en estado de <color=#FFFFFFFF>$[C115111|s1]</color>).\\nEl personaje que tenga equipada la carta de <color=#FFFFFFFF>$[C115112]</color> puede usar la técnica especial: <color=#FFFFFFFF>$[S1151121]</color>.\\nAdemás, <color=#FFFFFFFF>las 2 próximas veces que cambies de personaje</color>, tomas 1 carta.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color> y tomas 1 carta.\\nEste personaje se equipa la carta de <color=#FFFFFFFF>Riflespíritu ceremonial</color>, entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color> y obtiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>. (Esta habilidad no se puede usar una vez que el personaje esté en estado de <color=#FFFFFFFF>bendición noctámbula</color>).\\nEl personaje que tenga equipada la carta de <color=#FFFFFFFF>Riflespíritu ceremonial</color> puede usar la técnica especial: <color=#FFFFFFFF>Multiapuntamiento</color>.\\nAdemás, <color=#FFFFFFFF>las 2 próximas veces que cambies de personaje</color>, tomas 1 carta.",
+			"description": "Inflige 1 pt. de Daño Anemo y tomas 1 carta.\nEste personaje se equipa la carta de Riflespíritu ceremonial, entra en el estado de bendición noctámbula y obtiene 2 pts. de noctambulismo. (Esta habilidad no se puede usar una vez que el personaje esté en estado de bendición noctámbula).\nEl personaje que tenga equipada la carta de Riflespíritu ceremonial puede usar la técnica especial: Multiapuntamiento.\nAdemás, las 2 próximas veces que cambies de personaje, tomas 1 carta.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15113,
+			"name": "Asalto espectral",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], así como 1 pt. de Daño Penetrante a todos los personajes enemigos en reserva, y tomas 3 cartas.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>, así como 1 pt. de Daño Penetrante a todos los personajes enemigos en reserva, y tomas 3 cartas.",
+			"description": "Inflige 1 pt. de Daño Anemo, así como 1 pt. de Daño Penetrante a todos los personajes enemigos en reserva, y tomas 3 cartas.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15114,
+			"name": "Bala persiguesombras",
+			"descriptionraw": "Cuando comienza el duelo, mete al azar en la pila 6 cartas de <color=#FFFFFFFF>$[C115113]</color>.",
+			"descriptionreplaced": "Cuando comienza el duelo, mete al azar en la pila 6 cartas de <color=#FFFFFFFF>Bala persiguesombras</color>.",
+			"description": "Cuando comienza el duelo, mete al azar en la pila 6 cartas de Bala persiguesombras.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

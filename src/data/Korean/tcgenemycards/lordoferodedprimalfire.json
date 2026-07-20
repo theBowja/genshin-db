@@ -1,0 +1,84 @@
+{
+	"id": 4308,
+	"name": "침식된 근원의 불꽃 주인",
+	"hp": 18,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"불 원소",
+		"기타 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 23051,
+			"name": "허계의 검은 발톱",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 2pt 준다.",
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23052,
+			"name": "침식된 화염깃",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 3pt 주고, 아군 카드 덱 상단의 카드 1장을 $[K56]한다.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 주고, 아군 카드 덱 상단의 카드 1장을 <color=#FFFFFFFF>포기</color>한다.",
+			"description": "불 원소 피해를 3pt 주고, 아군 카드 덱 상단의 카드 1장을 포기한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23053,
+			"name": "근원의 불꽃 가르기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 1pt 주고 상대의 모든 대기 캐릭터에게 $[K5]를 1pt 준다. 양측이 카드 덱 상단의 카드 3장을 $[K56]하고, 자신에게 <color=#FFFFFFFF>$[C123051]</color> 1스택을 부착한다.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 1pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF>관통 피해</color>를 1pt 준다. 양측이 카드 덱 상단의 카드 3장을 <color=#FFFFFFFF>포기</color>하고, 자신에게 <color=#FFFFFFFF>격노</color> 1스택을 부착한다.",
+			"description": "불 원소 피해를 1pt 주고 상대의 모든 대기 캐릭터에게 관통 피해를 1pt 준다. 양측이 카드 덱 상단의 카드 3장을 포기하고, 자신에게 격노 1스택을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23055,
+			"name": "칠흑의 포효",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>자신이 피해를 받을 시:</color> 자신의 HP가 6 이하일 경우, 양측 카드 덱 상단의 카드 9장을 $[K56]한다. (대전당 1회)",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>자신이 피해를 받을 시:</color> 자신의 HP가 6 이하일 경우, 양측 카드 덱 상단의 카드 9장을 <color=#FFFFFFFF>포기</color>한다. (대전당 1회)",
+			"description": "[패시브] 자신이 피해를 받을 시: 자신의 HP가 6 이하일 경우, 양측 카드 덱 상단의 카드 9장을 포기한다. (대전당 1회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

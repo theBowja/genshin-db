@@ -1,0 +1,105 @@
+{
+	"id": 1712,
+	"name": "ネフェル",
+	"shareid": 596,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_SUMERU",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"草元素",
+		"法器",
+		"スメール",
+		"ナド・クライ"
+	],
+	"storytitle": "砂に埋もれた秘話・ネフェル",
+	"storytext": "秘密を暴き、数多の心を覗き見る。",
+	"source": "キャッツテールでネフェルを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 17121,
+			"name": "蛇の威嚇",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を1与える。",
+			"description": "草元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17122,
+			"name": "盤術・千夜一舞",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、自身に<color=#FFFFFFFF>$[C210]</color>を1層付与する。味方の次のアクション前に、手札にあるコストが最も高い最大3枚の<color=#FFFFFFFF>$[C117121]</color>に$[K3005]を付与する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を1与え、自身に<color=#FFFFFFFF>耐性</color>を1層付与する。味方の次のアクション前に、手札にあるコストが最も高い最大3枚の<color=#FFFFFFFF>虚言の核</color>に<color=#FFFFFFFF>コストダウン</color>を付与する。",
+			"description": "草元素ダメージを1与え、自身に耐性を1層付与する。味方の次のアクション前に、手札にあるコストが最も高い最大3枚の虚言の核にコストダウンを付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17123,
+			"name": "聖約・真眼の幻戯",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。手札にある<color=#FFFFFFFF>$[C117121]</color>1枚につき、ダメージ+1。（最大+2）",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を4与える。手札にある<color=#FFFFFFFF>虚言の核</color>1枚につき、ダメージ+1。（最大+2）",
+			"description": "草元素ダメージを4与える。手札にある虚言の核1枚につき、ダメージ+1。（最大+2）",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17125,
+			"name": "月兆の祝福・廊下の夕影",
+			"descriptionraw": "【固有】この対局中、敵が<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}開花反応</color>を受けた時、代わりに<color=#FFFFFFFF>$[K3009]</color>反応が起きるようになる。\\n<color=#FFFFFFFF>味方の手札にある虚言の核が3枚未満で、敵が$[K3009]反応を受けた時、</color>手札に<color=#FFFFFFFF>$[C117121]</color>を生成する。（各ラウンドで最大2回まで）",
+			"descriptionreplaced": "【固有】この対局中、敵が<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}開花反応</color>を受けた時、代わりに<color=#FFFFFFFF><color=#FFFFFFFF>月開花</color></color>反応が起きるようになる。\\n<color=#FFFFFFFF>味方の手札にある虚言の核が3枚未満で、敵が<color=#FFFFFFFF>月開花</color>反応を受けた時、</color>手札に<color=#FFFFFFFF>虚言の核</color>を生成する。（各ラウンドで最大2回まで）",
+			"description": "【固有】この対局中、敵が開花反応を受けた時、代わりに月開花反応が起きるようになる。\n味方の手札にある虚言の核が3枚未満で、敵が月開花反応を受けた時、手札に虚言の核を生成する。（各ラウンドで最大2回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 17126,
+			"name": "幻の戯",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を4与える。",
+			"description": "草元素ダメージを4与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": []
+		}
+	]
+}

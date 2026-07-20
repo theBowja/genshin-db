@@ -1,0 +1,91 @@
+{
+	"id": 2105,
+	"name": "迷える霊覚の修験者",
+	"shareid": 597,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"氷元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "独歩・迷える霊覚の修験者",
+	"storytext": "一人、集落の外で修行する「謎煙の主」の祭司。「謎煙の主」の大霊の加護を受けたために、通常の祭司やシャーマンよりも強い「霊覚」の力を持つと言われている。",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、「迷える霊覚の修験者」に挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 21051,
+			"name": "霊覚・寒星",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。",
+			"description": "氷元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21052,
+			"name": "千変万化の色彩",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C121051]</color>1枚を山札の3枚目の位置に加え、ランダムな<color=#FFFFFFFF>$[C121051]</color>の強化効果3つの中から1つを$[K59]する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与え、<color=#FFFFFFFF>色彩</color>1枚を山札の3枚目の位置に加え、ランダムな<color=#FFFFFFFF>色彩</color>の強化効果3つの中から1つを<color=#FFFFFFFF>選択</color>する。",
+			"description": "氷元素ダメージを1与え、色彩1枚を山札の3枚目の位置に加え、ランダムな色彩の強化効果3つの中から1つを選択する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21053,
+			"name": "極寒の絵巻",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C121051]</color>を1枚手札に加える。",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を4与え、<color=#FFFFFFFF>色彩</color>を1枚手札に加える。",
+			"description": "氷元素ダメージを4与え、色彩を1枚手札に加える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21054,
+			"name": "絢爛の影",
+			"descriptionraw": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C121051]</color>を3枚生成し、均等に山札に配置する。",
+			"descriptionreplaced": "【固有】戦闘開始時、<color=#FFFFFFFF>色彩</color>を3枚生成し、均等に山札に配置する。",
+			"description": "【固有】戦闘開始時、色彩を3枚生成し、均等に山札に配置する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

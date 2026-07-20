@@ -1,0 +1,89 @@
+{
+	"id": 1711,
+	"name": "菈乌玛",
+	"shareid": 585,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"草元素",
+		"法器",
+		"挪德卡莱"
+	],
+	"storytitle": "永月的祀歌·菈乌玛",
+	"storytext": "镜中有月，月碎水中。",
+	"source": "在猫尾酒馆中邀请菈乌玛进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 17111,
+			"name": "林麓旅踏",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>。",
+			"description": "造成1点草元素伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17112,
+			"name": "圣言述咏·终宵永眠",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C117111]</color>。如果我方手牌中存在附着有$[K3005]的卡牌，则移除随机1张牌的1层$[K3005]效果并改为生成可造成2点伤害的<color=#FFFFFFFF>$[C117111]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>，生成<color=#FFFFFFFF>霜林圣域</color>。如果我方手牌中存在附着有<color=#FFFFFFFF>费用降低</color>的卡牌，则移除随机1张牌的1层<color=#FFFFFFFF>费用降低</color>效果并改为生成可造成2点伤害的<color=#FFFFFFFF>霜林圣域</color>。",
+			"description": "造成1点草元素伤害，生成霜林圣域。如果我方手牌中存在附着有费用降低的卡牌，则移除随机1张牌的1层费用降低效果并改为生成可造成2点伤害的霜林圣域。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17113,
+			"name": "圣言述咏·众心为月",
+			"descriptionraw": "赋予我方随机3张<color=#FFFFFFFF>$[K3002]</color>不为0的手牌<color=#FFFFFFFF>$[K3005]</color>。生成3层<color=#FFFFFFFF>$[C117112]</color>。",
+			"descriptionreplaced": "赋予我方随机3张<color=#FFFFFFFF><color=#FFFFFFFF>当前元素骰费用</color></color>不为0的手牌<color=#FFFFFFFF><color=#FFFFFFFF>费用降低</color></color>。生成3层<color=#FFFFFFFF>「苍色祷歌」</color>。",
+			"description": "赋予我方随机3张当前元素骰费用不为0的手牌费用降低。生成3层「苍色祷歌」。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17114,
+			"name": "月兆祝赐·千籁恩宠",
+			"descriptionraw": "【被动】本局游戏中，敌方受到<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}绽放反应</color>时，改为<color=#FFFFFFFF>$[K3009]</color>反应。\\n<color=#FFFFFFFF>敌方受到$[K3009]反应时：</color>使我方牌组中随机1张卡牌附着$[K3005]。",
+			"descriptionreplaced": "【被动】本局游戏中，敌方受到<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}绽放反应</color>时，改为<color=#FFFFFFFF><color=#FFFFFFFF>月绽放</color></color>反应。\\n<color=#FFFFFFFF>敌方受到<color=#FFFFFFFF>月绽放</color>反应时：</color>使我方牌组中随机1张卡牌附着<color=#FFFFFFFF>费用降低</color>。",
+			"description": "【被动】本局游戏中，敌方受到绽放反应时，改为月绽放反应。\n敌方受到月绽放反应时：使我方牌组中随机1张卡牌附着费用降低。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		}
+	]
+}

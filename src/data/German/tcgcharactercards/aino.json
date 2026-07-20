@@ -1,0 +1,91 @@
+{
+	"id": 1216,
+	"name": "Aino",
+	"shareid": 571,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Hydro",
+		"Zweihänder",
+		"Nod-Krai"
+	],
+	"storytitle": "Scheppernde Wundermaschinen – Aino",
+	"storytext": "Mit einem Kling-Klang werden Träume wahr.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Aino in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 12161,
+			"name": "Klopf-mal-drauf-Reparatur",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12162,
+			"name": "Ideenfänger",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1] und erschafft 1 Stapelung <color=#FFFFFFFF>$[C170]</color>. Wenn sich auf deiner Hand eine Karte mit $[K3006] befindet, werden stattdessen $[D__KEY__DAMAGE_1] Pkt. $[D__KEY__ELEMENT|s1] verursacht.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color> und erschafft 1 Stapelung <color=#FFFFFFFF>Gewandter Wechsel</color>. Wenn sich auf deiner Hand eine Karte mit <color=#FFFFFFFF>Ermächtigung</color> befindet, werden stattdessen 3 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color> verursacht.",
+			"description": "Verursacht 2 Pkt. Hydro-SCH und erschafft 1 Stapelung Gewandter Wechsel. Wenn sich auf deiner Hand eine Karte mit Ermächtigung befindet, werden stattdessen 3 Pkt. Hydro-SCH verursacht.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12163,
+			"name": "Präzises Wasserkühlgerät",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C112161]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Sprudelente</color>.",
+			"description": "Verursacht 2 Pkt. Hydro-SCH, erschafft 1 Sprudelente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12164,
+			"name": "Modularer Hochleistungsbetrieb",
+			"descriptionraw": "<color=#FFFFFFFF>Beim Gewähren von $[K3006] an deine Karten:</color> Wenn es auf deinem Feld <color=#FFFFFFFF>$[C112161]</color> gibt, wird deren Einsatzmöglichkeit um 1 erhöht. Erhält andernfalls 1 Pkt. $[K310] (1-mal pro Runde).",
+			"descriptionreplaced": "<color=#FFFFFFFF>Beim Gewähren von <color=#FFFFFFFF>Ermächtigung</color> an deine Karten:</color> Wenn es auf deinem Feld <color=#FFFFFFFF>Sprudelente</color> gibt, wird deren Einsatzmöglichkeit um 1 erhöht. Erhält andernfalls 1 Pkt. <color=#FFFFFFFF>{SPRITE_PRESET#1110}Aufladung</color> (1-mal pro Runde).",
+			"description": "Beim Gewähren von Ermächtigung an deine Karten: Wenn es auf deinem Feld Sprudelente gibt, wird deren Einsatzmöglichkeit um 1 erhöht. Erhält andernfalls 1 Pkt. Aufladung (1-mal pro Runde).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

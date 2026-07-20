@@ -2,7 +2,7 @@
 	"id": 1213,
 	"name": "Sigewinne",
 	"shareid": 433,
-	"hp": 10,
+	"hp": 12,
 	"maxenergy": 2,
 	"tags": [
 		"GCG_TAG_ELEMENT_HYDRO",
@@ -25,7 +25,7 @@
 			"name": "Gezielte Behandlung",
 			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
 			"basedamage": 2,
-			"baseelement": "GCG_ELEMENT_NONE",
+			"baseelement": "GCG_ELEMENT_PHYSIC",
 			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
 			"description": "Verursacht 2 Pkt. phys. SCH.",
 			"typetag": "GCG_SKILL_TAG_A",
@@ -78,16 +78,6 @@
 			]
 		},
 		{
-			"id": 12134,
-			"name": "Detaillierte Diagnose, sorgfältige Behandlung",
-			"descriptionraw": "Passiv – Wenn der zu deiner Figur gehörende <color=#FFFFFFFF>$[C122]</color> vollständig entfernt wird, max. LP dieser Figur +1 (max. 3-mal pro Figur).\\n<color=#FFFFFFFF>Beim Wechseln zu dieser Figur:</color> Wenn bei dir auf dem Feld <color=#FFFFFFFF>$[C112101]</color> existiert, $[K3] -1, verleiht dieser Figur 1 Pkt. $[K310].",
-			"descriptionreplaced": "Passiv – Wenn der zu deiner Figur gehörende <color=#FFFFFFFF>Eid des Lebens</color> vollständig entfernt wird, max. LP dieser Figur +1 (max. 3-mal pro Figur).\\n<color=#FFFFFFFF>Beim Wechseln zu dieser Figur:</color> Wenn bei dir auf dem Feld <color=#FFFFFFFF>Quellwassertropfen</color> existiert, <color=#FFFFFFFF>Einsatzmöglichkeit</color> -1, verleiht dieser Figur 1 Pkt. <color=#FFFFFFFF>{SPRITE_PRESET#1110}Aufladung</color>.",
-			"description": "Passiv – Wenn der zu deiner Figur gehörende Eid des Lebens vollständig entfernt wird, max. LP dieser Figur +1 (max. 3-mal pro Figur).\nBeim Wechseln zu dieser Figur: Wenn bei dir auf dem Feld Quellwassertropfen existiert, Einsatzmöglichkeit -1, verleiht dieser Figur 1 Pkt. Aufladung.",
-			"typetag": "GCG_SKILL_TAG_PASSIVE",
-			"type": "Passive Fähigkeit",
-			"playcost": []
-		},
-		{
 			"id": 12135,
 			"name": "Trankvorstoß mit besten Absichten",
 			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
@@ -97,16 +87,7 @@
 			"description": "Verursacht 2 Pkt. Hydro-SCH.",
 			"typetag": "GCG_SKILL_TAG_Q",
 			"type": "Spezialfähigkeit",
-			"playcost": []
-		},
-		{
-			"id": 12136,
-			"name": "Detaillierte Diagnose, sorgfältige Behandlung",
-			"descriptionraw": "",
-			"descriptionreplaced": "",
-			"description": "",
-			"typetag": "GCG_SKILL_TAG_PASSIVE",
-			"type": "Passive Fähigkeit",
+			"isPrepareSkill": true,
 			"playcost": []
 		},
 		{
@@ -117,6 +98,7 @@
 			"description": "Passiv – Beim Wechseln zu dieser Figur: Wenn bei dir auf dem Feld Quellwassertropfen existiert, Einsatzmöglichkeit -1, verleiht dieser Figur 1 Pkt. Aufladung.",
 			"typetag": "GCG_SKILL_TAG_PASSIVE",
 			"type": "Passive Fähigkeit",
+			"isPrepareSkill": true,
 			"playcost": []
 		}
 	]

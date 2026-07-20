@@ -1,0 +1,91 @@
+{
+	"id": 1511,
+	"name": "Chasca",
+	"shareid": 479,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Anemo",
+		"Bogen",
+		"Natlan"
+	],
+	"storytitle": "Himmelsvermittlerin – Chasca",
+	"storytext": "Anmut und Kraft, die Schwingen des Himmels.",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Chasca in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 15111,
+			"name": "Phantomfederschwarm",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2100}<color=#FFFFFFFF>phys. SCH</color>.",
+			"description": "Verursacht 2 Pkt. phys. SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15112,
+			"name": "Auf der Jagd nach dem Schatten",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1]; zieht 1 Karte.\\nVerleiht dieser Figur <color=#FFFFFFFF>$[C115112]</color>. Die Figur tritt in <color=#FFFFFFFF>$[C115111]</color> ein und erhält 2 <color=#FFFFFFFF>Nachtseelenpunkte</color>. (Diese Fähigkeit kann nicht verwendet werden, nachdem die Figur in <color=#FFFFFFFF>$[C115111]</color> eingetreten ist.) (Figuren, die mit <color=#FFFFFFFF>$[C115112]</color> ausgerüstet sind, können folgende Spezialtechnik anwenden: <color=#FFFFFFFF>$[S1151121]</color>.)\\n<color=#FFFFFFFF>Bei den nächsten 2 Figurenwechseln deiner Seite:</color> Zieht 1 Karte.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>; zieht 1 Karte.\\nVerleiht dieser Figur <color=#FFFFFFFF>Seelenflinte – Zeremonienstab</color>. Die Figur tritt in <color=#FFFFFFFF>Nachtseelensegen</color> ein und erhält 2 <color=#FFFFFFFF>Nachtseelenpunkte</color>. (Diese Fähigkeit kann nicht verwendet werden, nachdem die Figur in <color=#FFFFFFFF>Nachtseelensegen</color> eingetreten ist.) (Figuren, die mit <color=#FFFFFFFF>Seelenflinte – Zeremonienstab</color> ausgerüstet sind, können folgende Spezialtechnik anwenden: <color=#FFFFFFFF>Mehrfaches Zielen</color>.)\\n<color=#FFFFFFFF>Bei den nächsten 2 Figurenwechseln deiner Seite:</color> Zieht 1 Karte.",
+			"description": "Verursacht 1 Pkt. Anemo-SCH; zieht 1 Karte.\nVerleiht dieser Figur Seelenflinte – Zeremonienstab. Die Figur tritt in Nachtseelensegen ein und erhält 2 Nachtseelenpunkte. (Diese Fähigkeit kann nicht verwendet werden, nachdem die Figur in Nachtseelensegen eingetreten ist.) (Figuren, die mit Seelenflinte – Zeremonienstab ausgerüstet sind, können folgende Spezialtechnik anwenden: Mehrfaches Zielen.)\nBei den nächsten 2 Figurenwechseln deiner Seite: Zieht 1 Karte.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15113,
+			"name": "Der letzte Tanz des Sensenmanns",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], fügt allen inaktiven Figuren deines Gegners 1 Pkt. durchdringenden SCH zu und zieht selbst 3 Karten.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo-SCH</color>, fügt allen inaktiven Figuren deines Gegners 1 Pkt. durchdringenden SCH zu und zieht selbst 3 Karten.",
+			"description": "Verursacht 1 Pkt. Anemo-SCH, fügt allen inaktiven Figuren deines Gegners 1 Pkt. durchdringenden SCH zu und zieht selbst 3 Karten.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15114,
+			"name": "Schattenjagd-Projektil",
+			"descriptionraw": "Legt zu Beginn eines Duells <color=#FFFFFFFF>$[C115113]</color> ×6 zufällig unter die Karten in deinem Stapel.",
+			"descriptionreplaced": "Legt zu Beginn eines Duells <color=#FFFFFFFF>Schattenjagd-Projektil</color> ×6 zufällig unter die Karten in deinem Stapel.",
+			"description": "Legt zu Beginn eines Duells Schattenjagd-Projektil ×6 zufällig unter die Karten in deinem Stapel.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		}
+	]
+}

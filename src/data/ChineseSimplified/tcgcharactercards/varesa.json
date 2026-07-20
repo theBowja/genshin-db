@@ -1,0 +1,104 @@
+{
+	"id": 1415,
+	"name": "瓦雷莎",
+	"shareid": 521,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"雷元素",
+		"法器",
+		"纳塔"
+	],
+	"storytitle": "悠暇豪劲·瓦雷莎",
+	"storytext": "谨守恬安，豪勇锐进。",
+	"source": "在猫尾酒馆中邀请瓦雷莎进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 14151,
+			"name": "角力搏摔",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。<color=#FFFFFFFF>此次技能为$[K52]时：</color>造成的伤害+1，自身进入<color=#FFFFFFFF>$[C114151]</color>，并获得1点<color=#FFFFFFFF>「夜魂值」</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>。<color=#FFFFFFFF>此次技能为<color=#FFFFFFFF>下落攻击</color>时：</color>造成的伤害+1，自身进入<color=#FFFFFFFF>夜魂加持</color>，并获得1点<color=#FFFFFFFF>「夜魂值」</color>。",
+			"description": "造成1点雷元素伤害。此次技能为下落攻击时：造成的伤害+1，自身进入夜魂加持，并获得1点「夜魂值」。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14152,
+			"name": "夜虹逐跃",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，自身附属<color=#FFFFFFFF>$[C114154]</color>，进入<color=#FFFFFFFF>$[C114151]</color>，并获得1点<color=#FFFFFFFF>「夜魂值」</color>，然后我方切换到下一个角色。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，自身附属<color=#FFFFFFFF>突驰烈进</color>，进入<color=#FFFFFFFF>夜魂加持</color>，并获得1点<color=#FFFFFFFF>「夜魂值」</color>，然后我方切换到下一个角色。",
+			"description": "造成2点雷元素伤害，自身附属突驰烈进，进入夜魂加持，并获得1点「夜魂值」，然后我方切换到下一个角色。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14153,
+			"name": "闪烈降临！",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，自身附属<color=#FFFFFFFF>$[C114152]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，自身附属<color=#FFFFFFFF>极限驱动</color>。",
+			"description": "造成3点雷元素伤害，自身附属极限驱动。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14154,
+			"name": "连势，三重腾跃！",
+			"descriptionraw": "【被动】<color=#FFFFFFFF><color=#FFFFFFFF>$[A1415]</color>使用技能后：</color>如果自身<color=#FFFFFFFF>「夜魂值」</color>等于2，则消耗2点<color=#FFFFFFFF>「夜魂值」</color>，自身附属<color=#FFFFFFFF>$[C114152]</color>。",
+			"descriptionreplaced": "【被动】<color=#FFFFFFFF><color=#FFFFFFFF>瓦雷莎</color>使用技能后：</color>如果自身<color=#FFFFFFFF>「夜魂值」</color>等于2，则消耗2点<color=#FFFFFFFF>「夜魂值」</color>，自身附属<color=#FFFFFFFF>极限驱动</color>。",
+			"description": "【被动】瓦雷莎使用技能后：如果自身「夜魂值」等于2，则消耗2点「夜魂值」，自身附属极限驱动。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		},
+		{
+			"id": 14155,
+			"name": "闪烈降临·大火山崩落",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，此技能视为$[K52]。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，此技能视为<color=#FFFFFFFF>下落攻击</color>。",
+			"description": "造成3点雷元素伤害，此技能视为下落攻击。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

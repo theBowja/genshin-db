@@ -1,0 +1,104 @@
+{
+	"id": 1418,
+	"name": "Flins",
+	"shareid": 584,
+	"hp": 10,
+	"maxenergy": 4,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Electro",
+		"Polearm",
+		"Nod-Krai"
+	],
+	"storytitle": "\"Shadowy Lights, Stranger Wights\" Flins",
+	"storytext": "The graven light leads into fathomless night.",
+	"source": "Reward for inviting Flins to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+	"skills": [
+		{
+			"id": 14181,
+			"name": "Pocztowy Demonspear",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14182,
+			"name": "Ancient Rite: Arcane Light",
+			"descriptionraw": "The first time this Skill is used each Round, deal $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and attach <color=#FFFFFFFF>$[C114181]</color> to this character. When this Skill is used again, consume 2 $[K310] and this character $[K53|s1]: <color=#FFFFFFFF>$[K1051]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "The first time this Skill is used each Round, deal 1 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color> and attach <color=#FFFFFFFF>Manifest Flame</color> to this character. When this Skill is used again, consume 2 <color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color> and this character <color=#FFFFFFFF>prepares</color>: <color=#FFFFFFFF><color=#FFFFFFFF>Thunderous Symphony</color></color>.",
+			"description": "The first time this Skill is used each Round, deal 1 Electro DMG and attach Manifest Flame to this character. When this Skill is used again, consume 2 Energy and this character prepares: Thunderous Symphony.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14183,
+			"name": "Ancient Ritual: Cometh the Night",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 2 $[K5] to all opposing characters on standby.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deals 6 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>, deals 2 <color=#FFFFFFFF>Piercing DMG</color> to all opposing characters on standby.",
+			"description": "Deals 6 Electro DMG, deals 2 Piercing DMG to all opposing characters on standby.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 4
+				}
+			]
+		},
+		{
+			"id": 14184,
+			"name": "Moonsign Benediction: Old World Secrets",
+			"descriptionraw": "(Passive) During this game, when your opponent is affected by <color=#FFFFFFFF>{SPRITE_PRESET#2102} {SPRITE_PRESET#2104} Electro-Charged reaction(s)</color>, the reaction will be converted to the <color=#FFFFFFFF>$[K3001]</color> reaction.\\n<color=#FFFFFFFF>When this character is on the field, and <color=#FFFFFFFF>$[C204]</color> is attached to the opponent's Action Card: </color>Deal 1 $[K5] to the opposing character with the highest HP.",
+			"descriptionreplaced": "(Passive) During this game, when your opponent is affected by <color=#FFFFFFFF>{SPRITE_PRESET#2102} {SPRITE_PRESET#2104} Electro-Charged reaction(s)</color>, the reaction will be converted to the <color=#FFFFFFFF><color=#FFFFFFFF>Lunar-Charged</color></color> reaction.\\n<color=#FFFFFFFF>When this character is on the field, and <color=#FFFFFFFF>Electric Shock</color> is attached to the opponent's Action Card: </color>Deal 1 <color=#FFFFFFFF>Piercing DMG</color> to the opposing character with the highest HP.",
+			"description": "(Passive) During this game, when your opponent is affected by   Electro-Charged reaction(s), the reaction will be converted to the Lunar-Charged reaction.\nWhen this character is on the field, and Electric Shock is attached to the opponent's Action Card: Deal 1 Piercing DMG to the opposing character with the highest HP.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 14185,
+			"name": "Thunderous Symphony",
+			"descriptionraw": "Deal $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If there is <color=#FFFFFFFF>$[C205]</color> on your side, deal +2 DMG.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Deal 2 {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>. If there is <color=#FFFFFFFF>Thundercloud</color> on your side, deal +2 DMG.",
+			"description": "Deal 2 Electro DMG. If there is Thundercloud on your side, deal +2 DMG.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

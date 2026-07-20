@@ -1,0 +1,87 @@
+{
+	"id": 4212,
+	"name": "Crocodilo da Ossada Sagrada",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"skills": [
+		{
+			"id": 22071,
+			"name": "Mordida de Presas",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22072,
+			"name": "Onda Dentada",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], então coloca até 1 carta com o maior $[K3002] de sua Mão no fundo do seu deck e gera <color=#FFFFFFFF>$[C124051]</color> na sua Mão.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, então coloca até 1 carta com o maior <color=#FFFFFFFF>Custo de Dados Elementais Atual</color> de sua Mão no fundo do seu deck e gera <color=#FFFFFFFF>Blocos de Energia Vorazes</color> na sua Mão.",
+			"description": "Causa 3 pontos de Dano Hydro, então coloca até 1 carta com o maior Custo de Dados Elementais Atual de sua Mão no fundo do seu deck e gera Blocos de Energia Vorazes na sua Mão.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22073,
+			"name": "Fúria Reptiliana",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], então $[K56] até 3 <color=#FFFFFFFF>$[C124051]</color>. Para cada carta que você $[K56], cura seu personagem que mais sofreu dano em 1 de Vida e aumenta sua Vida Máxima em 1.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 4 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, então <color=#FFFFFFFF>Descarta</color> até 3 <color=#FFFFFFFF>Blocos de Energia Vorazes</color>. Para cada carta que você <color=#FFFFFFFF>Descarta</color>, cura seu personagem que mais sofreu dano em 1 de Vida e aumenta sua Vida Máxima em 1.",
+			"description": "Causa 4 pontos de Dano Hydro, então Descarta até 3 Blocos de Energia Vorazes. Para cada carta que você Descarta, cura seu personagem que mais sofreu dano em 1 de Vida e aumenta sua Vida Máxima em 1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22074,
+			"name": "Sentidos da Ossada Sagrada",
+			"descriptionraw": "(Passivo) Depois que você joga ou $[K56] <color=#FFFFFFFF>$[C124051]</color>, cura seu personagem que mais sofreu Dano em 1 de Vida.",
+			"descriptionreplaced": "(Passivo) Depois que você joga ou <color=#FFFFFFFF>Descarta</color> <color=#FFFFFFFF>Blocos de Energia Vorazes</color>, cura seu personagem que mais sofreu Dano em 1 de Vida.",
+			"description": "(Passivo) Depois que você joga ou Descarta Blocos de Energia Vorazes, cura seu personagem que mais sofreu Dano em 1 de Vida.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		}
+	]
+}

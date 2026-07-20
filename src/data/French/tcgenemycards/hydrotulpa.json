@@ -1,0 +1,87 @@
+{
+	"id": 4210,
+	"name": "Tulpa Hydro",
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Autre arme",
+		"Monstre"
+	],
+	"skills": [
+		{
+			"id": 22061,
+			"name": "Houle sauvage",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color>.",
+			"description": "Inflige 1 pt de DGT Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22062,
+			"name": "Marée déchaînée",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et déclenche aléatoirement l'effet de phase finale d'une de vos invocations. Si les PV du personnage affecté ne sont pas inférieurs à 2, il subit 1 pt de <color=#FFFFFFFF>$[K5]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et déclenche aléatoirement l'effet de phase finale d'une de vos invocations. Si les PV du personnage affecté ne sont pas inférieurs à 2, il subit 1 pt de <color=#FFFFFFFF><color=#FFFFFFFF>DGT de perforation</color></color>.",
+			"description": "Inflige 2 pts de DGT Hydro et déclenche aléatoirement l'effet de phase finale d'une de vos invocations. Si les PV du personnage affecté ne sont pas inférieurs à 2, il subit 1 pt de DGT de perforation.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22063,
+			"name": "Marée tonitruante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et déclenche l'effet de phase finale de toutes vos invocations.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 4 pts de {SPRITE_PRESET#2102}<color=#80C0FFFF>DGT Hydro</color> et déclenche l'effet de phase finale de toutes vos invocations.",
+			"description": "Inflige 4 pts de DGT Hydro et déclenche l'effet de phase finale de toutes vos invocations.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22064,
+			"name": "Courant séparé",
+			"descriptionraw": "<color=#FFFFFFFF>Lorsque les PV du personnage affecté ne sont pas inférieurs à 3 et qu'une de vos invocations autre qu'un $[C122061] quitte le terrain : </color>Inflige 2 pts de <color=#FFFFFFFF>$[K5]</color> au personnage affecté et invoque 1 <color=#FFFFFFFF>$[C122061]</color> indépendant. (1 fois par manche)",
+			"descriptionreplaced": "<color=#FFFFFFFF>Lorsque les PV du personnage affecté ne sont pas inférieurs à 3 et qu'une de vos invocations autre qu'un Demi-tulpa quitte le terrain : </color>Inflige 2 pts de <color=#FFFFFFFF><color=#FFFFFFFF>DGT de perforation</color></color> au personnage affecté et invoque 1 <color=#FFFFFFFF>Demi-tulpa</color> indépendant. (1 fois par manche)",
+			"description": "Lorsque les PV du personnage affecté ne sont pas inférieurs à 3 et qu'une de vos invocations autre qu'un Demi-tulpa quitte le terrain : Inflige 2 pts de DGT de perforation au personnage affecté et invoque 1 Demi-tulpa indépendant. (1 fois par manche)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

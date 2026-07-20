@@ -1,0 +1,80 @@
+{
+	"id": 6605,
+	"name": "Skirk",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Sword",
+		"Cosmic Calamity"
+	],
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Havoc: Sunder",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Havoc: Warp",
+			"descriptionraw": "Gains 2 <color=#FFFFFFFF>Serpent's Subtlety</color>, then creates 1 <color=#FFFFFFFF>$[C111161]</color> and adds it to your Hand. (Once per Round)",
+			"descriptionreplaced": "Gains 2 <color=#FFFFFFFF>Serpent's Subtlety</color>, then creates 1 <color=#FFFFFFFF>Mutual Weapons Mentorship</color> and adds it to your Hand. (Once per Round)",
+			"description": "Gains 2 Serpent's Subtlety, then creates 1 Mutual Weapons Mentorship and adds it to your Hand. (Once per Round)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11165,
+			"name": "Havoc: Extinction",
+			"descriptionraw": "Convert 2 non-Omni Elemental Dice into <color=#99FFFFFF>{SPRITE_PRESET#1101}Cryo Dice</color>. $[K56] up to 2 cards with a $[K3002] of 0. For each card you $[K56], <color=#FFFFFFFF>$[A1116]</color> gains 1 point of <color=#FFFFFFFF>Serpent's Subtlety</color>.",
+			"descriptionreplaced": "Convert 2 non-Omni Elemental Dice into <color=#99FFFFFF>{SPRITE_PRESET#1101}Cryo Dice</color>. <color=#FFFFFFFF>Discard</color> up to 2 cards with a <color=#FFFFFFFF>Current Elemental Dice Cost</color> of 0. For each card you <color=#FFFFFFFF>Discard</color>, <color=#FFFFFFFF>Skirk</color> gains 1 point of <color=#FFFFFFFF>Serpent's Subtlety</color>.",
+			"description": "Convert 2 non-Omni Elemental Dice into Cryo Dice. Discard up to 2 cards with a Current Elemental Dice Cost of 0. For each card you Discard, Skirk gains 1 point of Serpent's Subtlety.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Reason Beyond Reason",
+			"descriptionraw": "(Passive) Skirk is unable to gain Energy but can now accumulate up to 7 points of <color=#FFFFFFFF>Serpent's Subtlety</color>.\\n<color=#FFFFFFFF>After you trigger Frozen, Cryo Swirl, Superconduct, or Cryo Crystallize reactions:</color> Create 1 <color=#FFFFFFFF>$[C111163]</color> in your hand. (3 times per Round)",
+			"descriptionreplaced": "(Passive) Skirk is unable to gain Energy but can now accumulate up to 7 points of <color=#FFFFFFFF>Serpent's Subtlety</color>.\\n<color=#FFFFFFFF>After you trigger Frozen, Cryo Swirl, Superconduct, or Cryo Crystallize reactions:</color> Create 1 <color=#FFFFFFFF>Void Rift</color> in your hand. (3 times per Round)",
+			"description": "(Passive) Skirk is unable to gain Energy but can now accumulate up to 7 points of Serpent's Subtlety.\nAfter you trigger Frozen, Cryo Swirl, Superconduct, or Cryo Crystallize reactions: Create 1 Void Rift in your hand. (3 times per Round)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

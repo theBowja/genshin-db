@@ -1,0 +1,87 @@
+{
+	"id": 4210,
+	"name": "Su Tulpası",
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Su",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 22061,
+			"name": "Vahşi Dalgalar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "1 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22062,
+			"name": "Fırtına Dalgası",
+			"descriptionraw": "$[D__KEY__DAMAGE]$[D__KEY__ELEMENT] verir ve rastgele 1 Minyonunun Son Aşama etkisini tetikler. Bu karakterin Canı 2'den az değilse 1 <color=#FFFFFFFF>$[K5]</color> alır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "2{SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve rastgele 1 Minyonunun Son Aşama etkisini tetikler. Bu karakterin Canı 2'den az değilse 1 <color=#FFFFFFFF><color=#FFFFFFFF>Delme Hasarı</color></color> alır.",
+			"description": "2Su Hasarı verir ve rastgele 1 Minyonunun Son Aşama etkisini tetikler. Bu karakterin Canı 2'den az değilse 1 Delme Hasarı alır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22063,
+			"name": "Uğultulu Dalgalar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve tüm Minyonlarının Son Aşama etkilerini tetikler.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve tüm Minyonlarının Son Aşama etkilerini tetikler.",
+			"description": "4 Su Hasarı verir ve tüm Minyonlarının Son Aşama etkilerini tetikler.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22064,
+			"name": "Dallanan Akıntı",
+			"descriptionraw": "<color=#FFFFFFFF>Bu karakterin Canı 3'ten az değilse ve $[C122061] hariç tüm Minyonların oyundan çıkarsa</color> bu karakter 2 <color=#FFFFFFFF>$[K5]</color> alır ve 1 bağımsız <color=#FFFFFFFF>$[C122061]</color> çağırır. (Her Turda bir defa)",
+			"descriptionreplaced": "<color=#FFFFFFFF>Bu karakterin Canı 3'ten az değilse ve Yarı Tulpa hariç tüm Minyonların oyundan çıkarsa</color> bu karakter 2 <color=#FFFFFFFF><color=#FFFFFFFF>Delme Hasarı</color></color> alır ve 1 bağımsız <color=#FFFFFFFF>Yarı Tulpa</color> çağırır. (Her Turda bir defa)",
+			"description": "Bu karakterin Canı 3'ten az değilse ve Yarı Tulpa hariç tüm Minyonların oyundan çıkarsa bu karakter 2 Delme Hasarı alır ve 1 bağımsız Yarı Tulpa çağırır. (Her Turda bir defa)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

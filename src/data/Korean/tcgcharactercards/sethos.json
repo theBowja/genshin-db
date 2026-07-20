@@ -1,0 +1,89 @@
+{
+	"id": 1413,
+	"name": "세토스",
+	"shareid": 469,
+	"hp": 10,
+	"maxenergy": 4,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_SUMERU"
+	],
+	"tagstext": [
+		"번개 원소",
+		"활",
+		"수메르"
+	],
+	"storytitle": "지혜의 척도·세토스",
+	"storytext": "모래바다에서 온 지혜로운 손님",
+	"source": "캣테일 술집에서 세토스 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 14131,
+			"name": "왕가의 갈대 궁술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14132,
+			"name": "고대 의식·울리는 천둥과 모래",
+			"descriptionraw": "상대 출전 캐릭터에게 $[K204] 및 아군 다음 캐릭터로 교체한다. 자신에게 <color=#FFFFFFFF>$[C114132]</color>을 부착한다.",
+			"descriptionreplaced": "상대 출전 캐릭터에게 <color=#FFACFFFF>{SPRITE_PRESET#2104}번개 원소 부착</color> 및 아군 다음 캐릭터로 교체한다. 자신에게 <color=#FFFFFFFF>우레 결속</color>을 부착한다.",
+			"description": "상대 출전 캐릭터에게 번개 원소 부착 및 아군 다음 캐릭터로 교체한다. 자신에게 우레 결속을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14133,
+			"name": "비밀 의식·그림자를 꿰뚫는 황혼",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 자신에게 <color=#FFFFFFFF>$[C114131]</color>을 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>를 3pt 주고 자신에게 <color=#FFFFFFFF>황혼 명상</color>을 부착한다.",
+			"description": "번개 원소 피해를 3pt 주고 자신에게 황혼 명상을 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 4
+				}
+			]
+		},
+		{
+			"id": 14134,
+			"name": "솔개의 수수께끼",
+			"descriptionraw": "자신의 「일반 공격」은 $[K310]를 획득할 수 없다.\\n자신이 「일반 공격」 후: 가능할 경우 $[K310]를 전부 소모하고, HP가 가장 낮은 상대에게 원소 에너지 소모량+1pt에 해당하는 $[K5]를 준다.",
+			"descriptionreplaced": "자신의 「일반 공격」은 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 획득할 수 없다.\\n자신이 「일반 공격」 후: 가능할 경우 <color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>를 전부 소모하고, HP가 가장 낮은 상대에게 원소 에너지 소모량+1pt에 해당하는 <color=#FFFFFFFF>관통 피해</color>를 준다.",
+			"description": "자신의 「일반 공격」은 원소 에너지를 획득할 수 없다.\n자신이 「일반 공격」 후: 가능할 경우 원소 에너지를 전부 소모하고, HP가 가장 낮은 상대에게 원소 에너지 소모량+1pt에 해당하는 관통 피해를 준다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

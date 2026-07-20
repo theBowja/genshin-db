@@ -1,0 +1,81 @@
+{
+	"id": 1512,
+	"name": "藍硯",
+	"shareid": 492,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_LIYUE"
+	],
+	"tagstext": [
+		"風元素",
+		"法器",
+		"璃月"
+	],
+	"storytitle": "春を編む翦玉・藍硯",
+	"storytext": "喜びをもたらす軽やかな燕",
+	"source": "キャッツテールで藍硯を招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 15121,
+			"name": "玄鳥画水",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を1与える。",
+			"description": "風元素ダメージを1与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15122,
+			"name": "鳳跡随翦舞",
+			"descriptionraw": "<color=#FFFFFFFF>$[C115121]</color>を2層生成し、<color=#FFFFFFFF>$[C169]</color>を1層獲得する。さらに、$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。このスキルで拡散反応を起こした場合、<color=#FFFFFFFF>$[C115121]</color>を追加で1層生成する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "<color=#FFFFFFFF>鳳跡シールド</color>を2層生成し、<color=#FFFFFFFF>効率的キャラチェンジ</color>を1層獲得する。さらに、{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を1与える。このスキルで拡散反応を起こした場合、<color=#FFFFFFFF>鳳跡シールド</color>を追加で1層生成する。",
+			"description": "鳳跡シールドを2層生成し、効率的キャラチェンジを1層獲得する。さらに、風元素ダメージを1与える。このスキルで拡散反応を起こした場合、鳳跡シールドを追加で1層生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15123,
+			"name": "月踏む鶴弦",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115121]</color>を2層生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与え、<color=#FFFFFFFF>鳳跡シールド</color>を2層生成する。",
+			"description": "風元素ダメージを3与え、鳳跡シールドを2層生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

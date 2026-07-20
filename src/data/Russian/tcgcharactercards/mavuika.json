@@ -1,0 +1,99 @@
+{
+	"id": 1315,
+	"name": "Мавуика",
+	"shareid": 478,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Пиро",
+		"Двуручное",
+		"Натлан"
+	],
+	"storytitle": "«Пылающая ночь» Мавуика",
+	"storytext": "Возрождённое пламя",
+	"source": "Награда за приглашение Мавуики в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 13151,
+			"name": "Огонь плетёт жизнь",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13152,
+			"name": "Именованное мгновение",
+			"descriptionraw": "Входит в состояние <color=#FFFFFFFF>$[C113151]</color>, получает <color=#FFFFFFFF>очки Ночного духа</color>, 2 ед., затем происходит $[K59] 1 из 3 карт <color=#FFFFFFFF>пламецикла</color> в вашу руку.",
+			"descriptionreplaced": "Входит в состояние <color=#FFFFFFFF>Благословение Ночного духа</color>, получает <color=#FFFFFFFF>очки Ночного духа</color>, 2 ед., затем происходит <color=#FFFFFFFF>Выбор</color> 1 из 3 карт <color=#FFFFFFFF>пламецикла</color> в вашу руку.",
+			"description": "Входит в состояние Благословение Ночного духа, получает очки Ночного духа, 2 ед., затем происходит Выбор 1 из 3 карт пламецикла в вашу руку.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13153,
+			"name": "Час пылающих небес",
+			"descriptionraw": "Персонаж входит в состояние <color=#FFFFFFFF>$[C113151]</color> и получает <color=#FFFFFFFF>очки Ночного духа</color>, 1 ед., расходуя Боевой дух. Затем активному персонажу противника наносится $[D__KEY__ELEMENT], равный потраченному Боевому духу.\\nЕсли расходуется 6 ед. <color=#FFFFFFFF>Боевого духа</color>, персонаж получает <color=#FFFFFFFF>$[C113152]</color>.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Персонаж входит в состояние <color=#FFFFFFFF>Благословение Ночного духа</color> и получает <color=#FFFFFFFF>очки Ночного духа</color>, 1 ед., расходуя Боевой дух. Затем активному персонажу противника наносится {SPRITE_PRESET#2103}<color=#FF9999FF>Пиро урон</color>, равный потраченному Боевому духу.\\nЕсли расходуется 6 ед. <color=#FFFFFFFF>Боевого духа</color>, персонаж получает <color=#FFFFFFFF>Горнило смерти и жизни</color>.",
+			"description": "Персонаж входит в состояние Благословение Ночного духа и получает очки Ночного духа, 1 ед., расходуя Боевой дух. Затем активному персонажу противника наносится Пиро урон, равный потраченному Боевому духу.\nЕсли расходуется 6 ед. Боевого духа, персонаж получает Горнило смерти и жизни.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_SPECIAL_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13154,
+			"name": "Боевой дух",
+			"descriptionraw": "Этот персонаж не может получить <color=#FFFFFFFF>энергию</color>.\\nКогда вы расходуете <color=#FFFFFFFF>очки Ночного духа</color> или используете обычную атаку, вы получаете 1 ед. Боевого духа.\\nКогда этот персонаж использует <color=#FFFFFFFF>элементальный навык</color> или <color=#FFFFFFFF>взрыв стихии</color>, накладывается <color=#FFFFFFFF>$[C113153]</color>.",
+			"descriptionreplaced": "Этот персонаж не может получить <color=#FFFFFFFF>энергию</color>.\\nКогда вы расходуете <color=#FFFFFFFF>очки Ночного духа</color> или используете обычную атаку, вы получаете 1 ед. Боевого духа.\\nКогда этот персонаж использует <color=#FFFFFFFF>элементальный навык</color> или <color=#FFFFFFFF>взрыв стихии</color>, накладывается <color=#FFFFFFFF>Всеогненное вооружение: Кольцо испепеляющего сияния</color>.",
+			"description": "Этот персонаж не может получить энергию.\nКогда вы расходуете очки Ночного духа или используете обычную атаку, вы получаете 1 ед. Боевого духа.\nКогда этот персонаж использует элементальный навык или взрыв стихии, накладывается Всеогненное вооружение: Кольцо испепеляющего сияния.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 13155,
+			"name": "Пламецикл: Пламенный восторг",
+			"descriptionraw": "<color=#FFFFFFFF>В начале фазы ходов:</color> вы получаете 2 Универсальных дайса.",
+			"descriptionreplaced": "<color=#FFFFFFFF>В начале фазы ходов:</color> вы получаете 2 Универсальных дайса.",
+			"description": "В начале фазы ходов: вы получаете 2 Универсальных дайса.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

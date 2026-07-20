@@ -1,0 +1,93 @@
+{
+	"id": 1115,
+	"name": "Escoffier",
+	"shareid": 533,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_FONTAINE",
+		"GCG_TAG_ARKHE_PNEUMA"
+	],
+	"tagstext": [
+		"Cryo",
+		"Lanza",
+		"Fontaine",
+		"Arjé: ousía"
+	],
+	"storytitle": "Escoffier - La Guinda del Pastel",
+	"storytext": "Glaseado y horneado, el mejor sabor del mercado.",
+	"source": "Se obtiene tras retar y ganar a Escoffier en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 11151,
+			"name": "Habilidades culinarias",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11152,
+			"name": "Cocina a baja temperatura",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca el <color=#FFFFFFFF>$[C111151|s1]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> e invoca el <color=#FFFFFFFF>mecachef</color>.",
+			"description": "Inflige 1 pt. de Daño Cryo e invoca el mecachef.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11153,
+			"name": "Técnica de corte",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y todos tus personajes obtienen Vida +2.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> y todos tus personajes obtienen Vida +2.",
+			"description": "Inflige 1 pt. de Daño Cryo y todos tus personajes obtienen Vida +2.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11154,
+			"name": "Siempre lista para improvisar",
+			"descriptionraw": "Pasiva: al comenzar el duelo, crea un <color=#FFFFFFFF>$[C111159|s1:]</color>.",
+			"descriptionreplaced": "Pasiva: al comenzar el duelo, crea un <color=#FFFFFFFF>mecachef multitarea de amplio espectro</color>.",
+			"description": "Pasiva: al comenzar el duelo, crea un mecachef multitarea de amplio espectro.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

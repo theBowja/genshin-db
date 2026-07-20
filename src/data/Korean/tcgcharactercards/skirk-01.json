@@ -1,0 +1,80 @@
+{
+	"id": 6605,
+	"name": "스커크",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"한손검",
+		"우주적 재앙"
+	],
+	"skills": [
+		{
+			"id": 11161,
+			"name": "극악기·단",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "극악기·섬",
+			"descriptionraw": "<color=#FFFFFFFF>뱀의 계략</color>을 2pt 획득하고 <color=#FFFFFFFF>$[C111161]</color>를 핸드 카드로 생성한다. (턴당 1회)",
+			"descriptionreplaced": "<color=#FFFFFFFF>뱀의 계략</color>을 2pt 획득하고 <color=#FFFFFFFF>무예 전수</color>를 핸드 카드로 생성한다. (턴당 1회)",
+			"description": "뱀의 계략을 2pt 획득하고 무예 전수를 핸드 카드로 생성한다. (턴당 1회)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11165,
+			"name": "극악기·진",
+			"descriptionraw": "만능 원소가 아닌 주사위 2개를 <color=#99FFFFFF>{SPRITE_PRESET#1101}얼음 원소 주사위</color>로 전환하고, $[K3002]가 0인 카드를 최대 2장 $[K56]한다. 1장 $[K56]할 때마다 <color=#FFFFFFFF>$[A1116]</color>가 추가로 <color=#FFFFFFFF>뱀의 계략</color>을 1pt 획득한다.",
+			"descriptionreplaced": "만능 원소가 아닌 주사위 2개를 <color=#99FFFFFF>{SPRITE_PRESET#1101}얼음 원소 주사위</color>로 전환하고, <color=#FFFFFFFF>현재 원소 주사위 코스트</color>가 0인 카드를 최대 2장 <color=#FFFFFFFF>포기</color>한다. 1장 <color=#FFFFFFFF>포기</color>할 때마다 <color=#FFFFFFFF>스커크</color>가 추가로 <color=#FFFFFFFF>뱀의 계략</color>을 1pt 획득한다.",
+			"description": "만능 원소가 아닌 주사위 2개를 얼음 원소 주사위로 전환하고, 현재 원소 주사위 코스트가 0인 카드를 최대 2장 포기한다. 1장 포기할 때마다 스커크가 추가로 뱀의 계략을 1pt 획득한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "이치 너머의 이치",
+			"descriptionraw": "[패시브] 스커크는 원소 에너지를 획득할 수 없는 대신 <color=#FFFFFFFF>뱀의 계략</color>을 최대 7pt 누적할 수 있다.\\n아군이 <color=#FFFFFFFF>빙결/얼음 확산/초전도/얼음 결정 반응 발동 후</color>: <color=#FFFFFFFF>$[C111163]</color>을 핸드 카드로 생성한다. (턴당 3회)",
+			"descriptionreplaced": "[패시브] 스커크는 원소 에너지를 획득할 수 없는 대신 <color=#FFFFFFFF>뱀의 계략</color>을 최대 7pt 누적할 수 있다.\\n아군이 <color=#FFFFFFFF>빙결/얼음 확산/초전도/얼음 결정 반응 발동 후</color>: <color=#FFFFFFFF>허계 균열</color>을 핸드 카드로 생성한다. (턴당 3회)",
+			"description": "[패시브] 스커크는 원소 에너지를 획득할 수 없는 대신 뱀의 계략을 최대 7pt 누적할 수 있다.\n아군이 빙결/얼음 확산/초전도/얼음 결정 반응 발동 후: 허계 균열을 핸드 카드로 생성한다. (턴당 3회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

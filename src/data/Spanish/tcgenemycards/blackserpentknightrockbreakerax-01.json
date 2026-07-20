@@ -1,0 +1,111 @@
+{
+	"id": 4610,
+	"name": "Caballero Serpiente Negra - Hachero demolerrocas",
+	"hp": 30,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 26041,
+			"name": "Tajo supremo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26042,
+			"name": "Hacha y escudo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>.",
+			"description": "Inflige 3 pts. de Daño Geo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26043,
+			"name": "Postura pétrea",
+			"descriptionraw": "Obtiene una <color=#FFFFFFFF>$[K206|s1]</color>, prepara la habilidad <color=#FFFFFFFF>$[S26045]</color>, y luego prepara la habilidad <color=#FFFFFFFF>$[S26047]</color>.",
+			"descriptionreplaced": "Obtiene una <color=#FFFFFFFF><color=#FFE699FF>{SPRITE_PRESET#2106}aplicación Geo</color></color>, prepara la habilidad <color=#FFFFFFFF>Embestida con hacha gigante</color>, y luego prepara la habilidad <color=#FFFFFFFF>Golpetazo de maestro</color>.",
+			"description": "Obtiene una aplicación Geo, prepara la habilidad Embestida con hacha gigante, y luego prepara la habilidad Golpetazo de maestro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26044,
+			"name": "Vigor ofensivo",
+			"descriptionraw": "Pasiva: si en el campo del rival hay estados de <color=#FFFFFFFF>reducción de daño</color> o {SPRITE_PRESET#4007}<color=#FFFFFFFF>escudos</color>, después de que tu personaje use una habilidad, obtendrá 1 carga de <color=#FFFFFFFF>$[C126041|s1]</color>.",
+			"descriptionreplaced": "Pasiva: si en el campo del rival hay estados de <color=#FFFFFFFF>reducción de daño</color> o {SPRITE_PRESET#4007}<color=#FFFFFFFF>escudos</color>, después de que tu personaje use una habilidad, obtendrá 1 carga de <color=#FFFFFFFF>poder demoledor</color>.",
+			"description": "Pasiva: si en el campo del rival hay estados de reducción de daño o escudos, después de que tu personaje use una habilidad, obtendrá 1 carga de poder demoledor.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 26045,
+			"name": "Embestida con hacha gigante",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y prepara la habilidad <color=#FFFFFFFF>$[S26047]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color> y prepara la habilidad <color=#FFFFFFFF>Golpetazo de maestro</color>.",
+			"description": "Inflige 3 pts. de Daño Geo y prepara la habilidad Golpetazo de maestro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 26047,
+			"name": "Golpetazo de maestro",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>.",
+			"description": "Inflige 3 pts. de Daño Geo.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+	"id": 2206,
+	"name": "Tulpa Hidromimético",
+	"shareid": 523,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"storytitle": "Tulpa Hidromimético - Criatura revitalizada",
+	"storytext": "Un monstruo con forma humana formado a partir de incontables gotas de agua.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra el Tulpa Hidromimético de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 22061,
+			"name": "Marejada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22062,
+			"name": "Oleada rápida",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y activa el efecto de fase final de 1 de tus invocaciones al azar. Si tiene 2 o más pts. de Vida, recibe 1 pt. de <color=#FFFFFFFF>$[K5]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y activa el efecto de fase final de 1 de tus invocaciones al azar. Si tiene 2 o más pts. de Vida, recibe 1 pt. de <color=#FFFFFFFF><color=#FFFFFFFF>Daño Penetrante</color></color>.",
+			"description": "Inflige 2 pts. de Daño Hydro y activa el efecto de fase final de 1 de tus invocaciones al azar. Si tiene 2 o más pts. de Vida, recibe 1 pt. de Daño Penetrante.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22063,
+			"name": "Tumbazón",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y activa el efecto de fase final de todas tus invocaciones.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y activa el efecto de fase final de todas tus invocaciones.",
+			"description": "Inflige 4 pts. de Daño Hydro y activa el efecto de fase final de todas tus invocaciones.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22064,
+			"name": "División de corrientes",
+			"descriptionraw": "<color=#FFFFFFFF>Cuando tiene 3 o más pts. de Vida y una invocación (a excepción de tu $[C122061]) se retira del campo</color>, este personaje recibe 2 pts. de <color=#FFFFFFFF>$[K5]</color> e invoca un <color=#FFFFFFFF>$[C122061]</color> independiente (1 vez por ronda).",
+			"descriptionreplaced": "<color=#FFFFFFFF>Cuando tiene 3 o más pts. de Vida y una invocación (a excepción de tu Tulpa Semimimético) se retira del campo</color>, este personaje recibe 2 pts. de <color=#FFFFFFFF><color=#FFFFFFFF>Daño Penetrante</color></color> e invoca un <color=#FFFFFFFF>Tulpa Semimimético</color> independiente (1 vez por ronda).",
+			"description": "Cuando tiene 3 o más pts. de Vida y una invocación (a excepción de tu Tulpa Semimimético) se retira del campo, este personaje recibe 2 pts. de Daño Penetrante e invoca un Tulpa Semimimético independiente (1 vez por ronda).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

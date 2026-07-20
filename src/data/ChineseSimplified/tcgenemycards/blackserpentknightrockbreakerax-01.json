@@ -1,0 +1,111 @@
+{
+	"id": 4610,
+	"name": "黑蛇骑士·摧岩之钺",
+	"hp": 30,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"岩元素",
+		"其他武器",
+		"魔物"
+	],
+	"skills": [
+		{
+			"id": 26041,
+			"name": "顶位迅斩",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>。",
+			"description": "造成2点物理伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26042,
+			"name": "斧盾震击",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>。",
+			"description": "造成3点岩元素伤害。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26043,
+			"name": "坚岩姿态",
+			"descriptionraw": "自身<color=#FFFFFFFF>$[K206]</color>，准备技能<color=#FFFFFFFF>$[S26045]</color>，然后准备技能<color=#FFFFFFFF>$[S26047]</color>。",
+			"descriptionreplaced": "自身<color=#FFFFFFFF><color=#FFE699FF>附着{SPRITE_PRESET#2106}岩元素</color></color>，准备技能<color=#FFFFFFFF>巨钺强袭</color>，然后准备技能<color=#FFFFFFFF>大师之击</color>。",
+			"description": "自身附着岩元素，准备技能巨钺强袭，然后准备技能大师之击。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26044,
+			"name": "攻阵气势",
+			"descriptionraw": "【被动】如果敌方场上存在<color=#FFFFFFFF> 伤害抵消</color>、{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>状态；或存在<color=#FFFFFFFF> 伤害抵消</color>、{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>出战状态，则我方角色使用技能后，自身附属1层<color=#FFFFFFFF>$[C126041]</color>。",
+			"descriptionreplaced": "【被动】如果敌方场上存在<color=#FFFFFFFF> 伤害抵消</color>、{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>状态；或存在<color=#FFFFFFFF> 伤害抵消</color>、{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>出战状态，则我方角色使用技能后，自身附属1层<color=#FFFFFFFF>摧岩伟力</color>。",
+			"description": "【被动】如果敌方场上存在 伤害抵消、护盾状态；或存在 伤害抵消、护盾出战状态，则我方角色使用技能后，自身附属1层摧岩伟力。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		},
+		{
+			"id": 26045,
+			"name": "巨钺强袭",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，准备技能<color=#FFFFFFFF>$[S26047]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>，准备技能<color=#FFFFFFFF>大师之击</color>。",
+			"description": "造成3点岩元素伤害，准备技能大师之击。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 26047,
+			"name": "大师之击",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>。",
+			"description": "造成3点岩元素伤害。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

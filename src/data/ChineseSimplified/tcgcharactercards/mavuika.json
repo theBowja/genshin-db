@@ -1,0 +1,99 @@
+{
+	"id": 1315,
+	"name": "玛薇卡",
+	"shareid": 478,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"火元素",
+		"双手剑",
+		"纳塔"
+	],
+	"storytitle": "焚夜以炎·玛薇卡",
+	"storytext": "至明、至炽、至烈的再临之火。",
+	"source": "在猫尾酒馆中邀请玛薇卡进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 13151,
+			"name": "以火织命",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "造成2点{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>。",
+			"description": "造成2点物理伤害。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13152,
+			"name": "称名之刻",
+			"descriptionraw": "自身进入<color=#FFFFFFFF>$[C113151]</color>，获得2点<color=#FFFFFFFF>「夜魂值」</color>，并从3张<color=#FFFFFFFF>驰轮车</color>中$[K59]1张加入手牌。",
+			"descriptionreplaced": "自身进入<color=#FFFFFFFF>夜魂加持</color>，获得2点<color=#FFFFFFFF>「夜魂值」</color>，并从3张<color=#FFFFFFFF>驰轮车</color>中<color=#FFFFFFFF>挑选</color>1张加入手牌。",
+			"description": "自身进入夜魂加持，获得2点「夜魂值」，并从3张驰轮车中挑选1张加入手牌。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13153,
+			"name": "燔天之时",
+			"descriptionraw": "本角色进入<color=#FFFFFFFF>$[C113151]</color>，获得1点<color=#FFFFFFFF>「夜魂值」</color>，消耗自身全部战意，对敌方前台造成等同于消耗战意数量的$[D__KEY__ELEMENT]。\\n若消耗了6点<color=#FFFFFFFF>战意</color>，则自身附属<color=#FFFFFFFF>$[C113152]</color>。",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "本角色进入<color=#FFFFFFFF>夜魂加持</color>，获得1点<color=#FFFFFFFF>「夜魂值」</color>，消耗自身全部战意，对敌方前台造成等同于消耗战意数量的{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>。\\n若消耗了6点<color=#FFFFFFFF>战意</color>，则自身附属<color=#FFFFFFFF>死生之炉</color>。",
+			"description": "本角色进入夜魂加持，获得1点「夜魂值」，消耗自身全部战意，对敌方前台造成等同于消耗战意数量的火元素伤害。\n若消耗了6点战意，则自身附属死生之炉。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_SPECIAL_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13154,
+			"name": "战意",
+			"descriptionraw": "角色不会获得<color=#FFFFFFFF>充能</color>。\\n在我方消耗<color=#FFFFFFFF>「夜魂值」</color>或使用「普通攻击」后，获得1点战意。\\n本角色使用<color=#FFFFFFFF>元素战技</color>或<color=#FFFFFFFF>元素爆发</color>时，附属<color=#FFFFFFFF>$[C113153]</color>。",
+			"descriptionreplaced": "角色不会获得<color=#FFFFFFFF>充能</color>。\\n在我方消耗<color=#FFFFFFFF>「夜魂值」</color>或使用「普通攻击」后，获得1点战意。\\n本角色使用<color=#FFFFFFFF>元素战技</color>或<color=#FFFFFFFF>元素爆发</color>时，附属<color=#FFFFFFFF>诸火武装·焚曜之环</color>。",
+			"description": "角色不会获得充能。\n在我方消耗「夜魂值」或使用「普通攻击」后，获得1点战意。\n本角色使用元素战技或元素爆发时，附属诸火武装·焚曜之环。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		},
+		{
+			"id": 13155,
+			"name": "驰轮车·疾驰",
+			"descriptionraw": "<color=#FFFFFFFF>行动阶段开始时：</color>生成2个万能元素骰。",
+			"descriptionreplaced": "<color=#FFFFFFFF>行动阶段开始时：</color>生成2个万能元素骰。",
+			"description": "行动阶段开始时：生成2个万能元素骰。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"id": 2605,
+	"name": "Экспериментальный генератор поля",
+	"shareid": 586,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Гео",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "Незавершённый идеал: Экспериментальный генератор поля",
+	"storytext": "Продукт Научно-исследовательского института кинетической энергии. Из-за происшествия потерял управление. Способно «противодействовать гравитации».",
+	"source": "Награда за принятие испытания в «Кошкином хвосте» и победу над Экспериментальным генератором поля в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 26051,
+			"name": "Гравитационная система: Удар",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26052,
+			"name": "Гравитационная система: Нулевая точка",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., вы получаете <color=#FFFFFFFF>$[C169]</color>, 2 уровня.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 2 ед., вы получаете <color=#FFFFFFFF>Эффективный обмен</color>, 2 уровня.",
+			"description": "Наносит Гео урон, 2 ед., вы получаете Эффективный обмен, 2 уровня.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26053,
+			"name": "Гравитационная система: Сужение поля",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., вы получаете <color=#FFFFFFFF>$[C126051]</color> и <color=#FFFFFFFF>$[C126052]</color>. В этом раунде все ваши неактивные персонажи потратят на 1 ед. $[K309] меньше при следующей <color=#FFFFFFFF>обычной атаке</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 3 ед., вы получаете <color=#FFFFFFFF>Фон низкой гравитации</color> и <color=#FFFFFFFF>Ударная волна</color>. В этом раунде все ваши неактивные персонажи потратят на 1 ед. <color=#FFFFFFFF>{SPRITE_PRESET#1109}Неопределённый элемент</color> меньше при следующей <color=#FFFFFFFF>обычной атаке</color>.",
+			"description": "Наносит Гео урон, 3 ед., вы получаете Фон низкой гравитации и Ударная волна. В этом раунде все ваши неактивные персонажи потратят на 1 ед. Неопределённый элемент меньше при следующей обычной атаке.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

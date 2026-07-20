@@ -1,0 +1,91 @@
+{
+	"id": 1216,
+	"name": "アイノ",
+	"shareid": 571,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"水元素",
+		"両手剣",
+		"ナド・クライ"
+	],
+	"storytitle": "ドンドンワンダフルマシーン・アイノ",
+	"storytext": "カチャカチャ・ドリームカムトゥルー。",
+	"source": "キャッツテールでアイノを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 12161,
+			"name": "叩いて直す！",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12162,
+			"name": "アイデアキャッチャー",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C170]</color>を1層生成する。$[K3006]を持つカードが手札にある場合、代わりに$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_1]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与え、<color=#FFFFFFFF>高速キャラチェンジ</color>を1層生成する。<color=#FFFFFFFF>エンパワー</color>を持つカードが手札にある場合、代わりに{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を3与える。",
+			"description": "水元素ダメージを2与え、高速キャラチェンジを1層生成する。エンパワーを持つカードが手札にある場合、代わりに水元素ダメージを3与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12163,
+			"name": "お水ひえひえ装置",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112161]</color>を召喚する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与え、<color=#FFFFFFFF>落ち着いた方がいいカモ？</color>を召喚する。",
+			"description": "水元素ダメージを2与え、落ち着いた方がいいカモ？を召喚する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12164,
+			"name": "効率運用プロトコル",
+			"descriptionraw": "<color=#FFFFFFFF>味方カードに$[K3006]が付与された時</color>、味方フィールド上に<color=#FFFFFFFF>$[C112161]</color>が存在する場合、その使用可能回数+1。存在しない場合、自身が$[K310]を1獲得する。（各ラウンドで1回のみ）",
+			"descriptionreplaced": "<color=#FFFFFFFF>味方カードに<color=#FFFFFFFF>エンパワー</color>が付与された時</color>、味方フィールド上に<color=#FFFFFFFF>落ち着いた方がいいカモ？</color>が存在する場合、その使用可能回数+1。存在しない場合、自身が<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>を1獲得する。（各ラウンドで1回のみ）",
+			"description": "味方カードにエンパワーが付与された時、味方フィールド上に落ち着いた方がいいカモ？が存在する場合、その使用可能回数+1。存在しない場合、自身がチャージを1獲得する。（各ラウンドで1回のみ）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"id": 6605,
+	"name": "Skirk",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Espada ligera",
+		"Calamidad Cósmica"
+	],
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Caos: Escisión",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Caos: Distorsión",
+			"descriptionraw": "Obtiene 2 pts. de <color=#FFFFFFFF>astucia serpentina</color> y crea 1 carta de <color=#FFFFFFFF>$[C111161]</color> (1 vez por ronda).",
+			"descriptionreplaced": "Obtiene 2 pts. de <color=#FFFFFFFF>astucia serpentina</color> y crea 1 carta de <color=#FFFFFFFF>Entrenamiento de armas recíproco</color> (1 vez por ronda).",
+			"description": "Obtiene 2 pts. de astucia serpentina y crea 1 carta de Entrenamiento de armas recíproco (1 vez por ronda).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11165,
+			"name": "Caos: Exterminio",
+			"descriptionraw": "Convierte 2 dados elementales (a excepción de los omnidados) en 2 <color=#99FFFFFF>{SPRITE_PRESET#1101}dados Cryo</color> y realiza un $[K56|s1] de hasta 2 cartas cuyo $[K3002|s1] sea 0. Por cada $[K56|s1] que realice, <color=#FFFFFFFF>$[A1116]</color> obtiene 1 pt. de <color=#FFFFFFFF>astucia serpentina</color>.",
+			"descriptionreplaced": "Convierte 2 dados elementales (a excepción de los omnidados) en 2 <color=#99FFFFFF>{SPRITE_PRESET#1101}dados Cryo</color> y realiza un <color=#FFFFFFFF>descarte</color> de hasta 2 cartas cuyo <color=#FFFFFFFF>coste actual de dados elementales</color> sea 0. Por cada <color=#FFFFFFFF>descarte</color> que realice, <color=#FFFFFFFF>Skirk</color> obtiene 1 pt. de <color=#FFFFFFFF>astucia serpentina</color>.",
+			"description": "Convierte 2 dados elementales (a excepción de los omnidados) en 2 dados Cryo y realiza un descarte de hasta 2 cartas cuyo coste actual de dados elementales sea 0. Por cada descarte que realice, Skirk obtiene 1 pt. de astucia serpentina.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "La razón más allá de la razón",
+			"descriptionraw": "Pasiva: Skirk no puede obtener Energía. En su lugar puede acumular hasta 7 pts. de <color=#FFFFFFFF>astucia serpentina</color>.\\n<color=#FFFFFFFF>Después de que tus personajes causen una reacción de Congelado, Torbellino Cryo, Superconductor o Cristalización Cryo</color>, crea 1 carta de <color=#FFFFFFFF>$[C111163]</color> (3 veces por ronda).",
+			"descriptionreplaced": "Pasiva: Skirk no puede obtener Energía. En su lugar puede acumular hasta 7 pts. de <color=#FFFFFFFF>astucia serpentina</color>.\\n<color=#FFFFFFFF>Después de que tus personajes causen una reacción de Congelado, Torbellino Cryo, Superconductor o Cristalización Cryo</color>, crea 1 carta de <color=#FFFFFFFF>Fisura del vacío</color> (3 veces por ronda).",
+			"description": "Pasiva: Skirk no puede obtener Energía. En su lugar puede acumular hasta 7 pts. de astucia serpentina.\nDespués de que tus personajes causen una reacción de Congelado, Torbellino Cryo, Superconductor o Cristalización Cryo, crea 1 carta de Fisura del vacío (3 veces por ronda).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

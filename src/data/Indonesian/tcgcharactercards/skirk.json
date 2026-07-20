@@ -1,0 +1,91 @@
+{
+	"id": 1116,
+	"name": "Skirk",
+	"shareid": 544,
+	"transformsinto": [
+		6605
+	],
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Cryo",
+		"Sword",
+		"Cosmic Calamity"
+	],
+	"storytitle": "\"Void Star\" Skirk",
+	"storytext": "Bintang-bintang ... kelam ....",
+	"source": "Didapatkan setelah mengundang Skirk ke Cat's Tail dan menang dalam Pertandingan Persahabatan melawannya",
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Havoc: Sunder",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Mengakibatkan 2 poin Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Havoc: Warp",
+			"descriptionraw": "Mendapatkan 2 poin <color=#FFFFFFFF>Serpent's Subtlety</color> dan menciptakan 1 <color=#FFFFFFFF>$[C111161]</color> ke Tangan. (Sekali setiap Ronde)",
+			"descriptionreplaced": "Mendapatkan 2 poin <color=#FFFFFFFF>Serpent's Subtlety</color> dan menciptakan 1 <color=#FFFFFFFF>Mutual Weapons Mentorship</color> ke Tangan. (Sekali setiap Ronde)",
+			"description": "Mendapatkan 2 poin Serpent's Subtlety dan menciptakan 1 Mutual Weapons Mentorship ke Tangan. (Sekali setiap Ronde)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11163,
+			"name": "Havoc: Ruin",
+			"descriptionraw": "Mengonsumsi seluruh <color=#FFFFFFFF>Serpent's Subtlety</color>, mengakibatkan $[D__KEY__ELEMENT] setara jumlah <color=#FFFFFFFF>Serpent's Subtlety</color> yang dikonsumsi, dan mengakibatkan 2 poin $[K5] kepada Karakter standby. Jika 7 poin <color=#FFFFFFFF>Serpent's Subtlety</color> dikonsumsi, maka akan diubah menjadi mengakibatkan 3 poin $[K5] kepada Karakter standby.",
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Mengonsumsi seluruh <color=#FFFFFFFF>Serpent's Subtlety</color>, mengakibatkan {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color> setara jumlah <color=#FFFFFFFF>Serpent's Subtlety</color> yang dikonsumsi, dan mengakibatkan 2 poin <color=#FFFFFFFF>Piercing DMG</color> kepada Karakter standby. Jika 7 poin <color=#FFFFFFFF>Serpent's Subtlety</color> dikonsumsi, maka akan diubah menjadi mengakibatkan 3 poin <color=#FFFFFFFF>Piercing DMG</color> kepada Karakter standby.",
+			"description": "Mengonsumsi seluruh Serpent's Subtlety, mengakibatkan Cryo DMG setara jumlah Serpent's Subtlety yang dikonsumsi, dan mengakibatkan 2 poin Piercing DMG kepada Karakter standby. Jika 7 poin Serpent's Subtlety dikonsumsi, maka akan diubah menjadi mengakibatkan 3 poin Piercing DMG kepada Karakter standby.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_SKIRK_SPECIAL_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Reason Beyond Reason",
+			"descriptionraw": "(Pasif) Skirk tidak akan mendapatkan Energy, melainkan dapat mengakumulasi <color=#FFFFFFFF>Serpent's Subtlety</color> hingga 7 poin.\\n<color=#FFFFFFFF>Setelah kamu memicu reaksi Frozen/Cryo Swirl/Superconduct/Cryo Crystallize: </color>Menciptakan kartu <color=#FFFFFFFF>$[C111163]</color> ke Tangan. (3 kali setiap Ronde)",
+			"descriptionreplaced": "(Pasif) Skirk tidak akan mendapatkan Energy, melainkan dapat mengakumulasi <color=#FFFFFFFF>Serpent's Subtlety</color> hingga 7 poin.\\n<color=#FFFFFFFF>Setelah kamu memicu reaksi Frozen/Cryo Swirl/Superconduct/Cryo Crystallize: </color>Menciptakan kartu <color=#FFFFFFFF>Void Rift</color> ke Tangan. (3 kali setiap Ronde)",
+			"description": "(Pasif) Skirk tidak akan mendapatkan Energy, melainkan dapat mengakumulasi Serpent's Subtlety hingga 7 poin.\nSetelah kamu memicu reaksi Frozen/Cryo Swirl/Superconduct/Cryo Crystallize: Menciptakan kartu Void Rift ke Tangan. (3 kali setiap Ronde)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

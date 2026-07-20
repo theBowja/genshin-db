@@ -1,0 +1,115 @@
+{
+	"id": 2504,
+	"name": "黒蛇騎士・斬風の剣",
+	"shareid": 598,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"風元素",
+		"他の武器",
+		"魔物"
+	],
+	"storytitle": "黒蛇騎士・斬風の剣",
+	"storytext": "「宮廷において高い地位を得た近衛兵士。『末光の剣』もかつて、彼らの一員であった。」",
+	"source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、「黒蛇騎士・斬風の剣」に挑戦して友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 25041,
+			"name": "半剣の技",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25042,
+			"name": "低位斬撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、手札を1枚引く。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与え、手札を1枚引く。",
+			"description": "風元素ダメージを3与え、手札を1枚引く。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 25043,
+			"name": "近衛兵の構え",
+			"descriptionraw": "<color=#FFFFFFFF>$[S25045]</color>を$[K53]し、その後<color=#FFFFFFFF>$[S25046]</color>を$[K53]する。",
+			"descriptionreplaced": "<color=#FFFFFFFF>捨て身の構え</color>を<color=#FFFFFFFF>スキル準備</color>し、その後<color=#FFFFFFFF>怒風の連撃</color>を<color=#FFFFFFFF>スキル準備</color>する。",
+			"description": "捨て身の構えをスキル準備し、その後怒風の連撃をスキル準備する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 25044,
+			"name": "気迫の前のめり",
+			"descriptionraw": "【固有】味方が拡散反応を起こした時、または相手が{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>、<color=#FFFFFFFF>ダメージ相殺</color>状態、出撃状態を失った時、カードを1枚引く。（各ラウンドで最大2回まで）",
+			"descriptionreplaced": "【固有】味方が拡散反応を起こした時、または相手が{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>、<color=#FFFFFFFF>ダメージ相殺</color>状態、出撃状態を失った時、カードを1枚引く。（各ラウンドで最大2回まで）",
+			"description": "【固有】味方が拡散反応を起こした時、または相手がシールド、ダメージ相殺状態、出撃状態を失った時、カードを1枚引く。（各ラウンドで最大2回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 25045,
+			"name": "捨て身の構え",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K3002]が最も高い手札を1枚$[K56]し、<color=#FFFFFFFF>$[S25046]</color>を$[K53]する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与え、<color=#FFFFFFFF>現在の元素サイコロのコスト</color>が最も高い手札を1枚<color=#FFFFFFFF>破棄</color>し、<color=#FFFFFFFF>怒風の連撃</color>を<color=#FFFFFFFF>スキル準備</color>する。",
+			"description": "風元素ダメージを3与え、現在の元素サイコロのコストが最も高い手札を1枚破棄し、怒風の連撃をスキル準備する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 25046,
+			"name": "怒風の連撃",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K3002]が最も高い手札を1枚$[K56]する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与え、<color=#FFFFFFFF>現在の元素サイコロのコスト</color>が最も高い手札を1枚<color=#FFFFFFFF>破棄</color>する。",
+			"description": "風元素ダメージを3与え、現在の元素サイコロのコストが最も高い手札を1枚破棄する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

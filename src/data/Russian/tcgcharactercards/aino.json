@@ -1,0 +1,91 @@
+{
+	"id": 1216,
+	"name": "Айно",
+	"shareid": 571,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Гидро",
+		"Двуручное",
+		"Нод-Край"
+	],
+	"storytitle": "«Грохочущие чудо-машины» Айно",
+	"storytext": "Мечты сбываются с «Дзынь-Клац»",
+	"source": "Награда за приглашение Айно в «Кошкин хвост» и победу над ним в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12161,
+			"name": "Починка методом «бах-бум-бац»",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12162,
+			"name": "Ловец вдохновения",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Получаете <color=#FFFFFFFF>$[C170]</color>, 1 уровень. Если в руке есть карта с эффектом $[K3006], наносит $[D__KEY__DAMAGE_1], $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед. Получаете <color=#FFFFFFFF>Оперативное переключение</color>, 1 уровень. Если в руке есть карта с эффектом <color=#FFFFFFFF>Усиление</color>, наносит 3, {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>.",
+			"description": "Наносит Гидро урон, 2 ед. Получаете Оперативное переключение, 1 уровень. Если в руке есть карта с эффектом Усиление, наносит 3, Гидро урон.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12163,
+			"name": "Точный водоохладитель",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C112161]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед. и призывает помощника: <color=#FFFFFFFF>Охладительный утёнок</color>.",
+			"description": "Наносит Гидро урон, 2 ед. и призывает помощника: Охладительный утёнок.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12164,
+			"name": "Протокол модульной эффективности",
+			"descriptionraw": "<color=#FFFFFFFF>Когда вашей карте присваивается $[K3006]</color>: если на вашей стороне поля есть <color=#FFFFFFFF>$[C112161]</color>, увеличивает количество применений на 1, в противном случае вы получаете $[K310], 1 ед. (1 раз за раунд)",
+			"descriptionreplaced": "<color=#FFFFFFFF>Когда вашей карте присваивается <color=#FFFFFFFF>Усиление</color></color>: если на вашей стороне поля есть <color=#FFFFFFFF>Охладительный утёнок</color>, увеличивает количество применений на 1, в противном случае вы получаете <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color>, 1 ед. (1 раз за раунд)",
+			"description": "Когда вашей карте присваивается Усиление: если на вашей стороне поля есть Охладительный утёнок, увеличивает количество применений на 1, в противном случае вы получаете Энергия, 1 ед. (1 раз за раунд)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

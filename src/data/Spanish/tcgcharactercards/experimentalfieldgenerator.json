@@ -1,0 +1,81 @@
+{
+	"id": 2605,
+	"name": "Generador de Campo Experimental",
+	"shareid": 586,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Geo",
+		"Otras armas",
+		"Monstruo"
+	],
+	"storytitle": "Generador de Campo Experimental - Ideal inconcluso",
+	"storytext": "Una creación del Instituto de Investigación Científica e Ingeniería de Energía Cinética de Fontaine. Cierto accidente ha hecho que pierda por completo el control. Posee unos efectos capaces de contrarrestar la fuerza de la gravedad.",
+	"source": "Se obtiene de Príncipe de la taberna Cola de Gato tras ganar el duelo amistoso contra el Generador de Campo Experimental de los duelos tabernarios",
+	"skills": [
+		{
+			"id": 26051,
+			"name": "Aplicación gravitacional: Aplastamiento",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 26052,
+			"name": "Aplicación gravitacional: Contrarresto puntual",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y otorga 2 cargas de <color=#FFFFFFFF>$[C169|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color> y otorga 2 cargas de <color=#FFFFFFFF>cambio eficiente</color>.",
+			"description": "Inflige 2 pts. de Daño Geo y otorga 2 cargas de cambio eficiente.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 26053,
+			"name": "Aplicación gravitacional: Campo de reducción",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], y crea un <color=#FFFFFFFF>$[C126051|s1]</color> y el efecto de <color=#FFFFFFFF>$[C126052|s1]</color>. En esta ronda, el próximo <color=#FFFFFFFF>Ataque Normal</color> de todos tus personajes en reserva consume 1 $[K309|s2] menos.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>, y crea un <color=#FFFFFFFF>entorno de baja gravedad</color> y el efecto de <color=#FFFFFFFF>impacto explosivo</color>. En esta ronda, el próximo <color=#FFFFFFFF>Ataque Normal</color> de todos tus personajes en reserva consume 1 <color=#FFFFFFFF>{SPRITE_PRESET#1109}dado indefinido</color> menos.",
+			"description": "Inflige 3 pts. de Daño Geo, y crea un entorno de baja gravedad y el efecto de impacto explosivo. En esta ronda, el próximo Ataque Normal de todos tus personajes en reserva consume 1 dado indefinido menos.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		}
+	]
+}

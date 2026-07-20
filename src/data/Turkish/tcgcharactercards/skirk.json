@@ -1,0 +1,91 @@
+{
+	"id": 1116,
+	"name": "Skirk",
+	"shareid": 544,
+	"transformsinto": [
+		6605
+	],
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"Buz",
+		"Kılıç",
+		"Kozmik Facia"
+	],
+	"storytitle": "\"Boşluk Yıldızı\" Skirk",
+	"storytext": "Yıldızlar bir bir sönüyor.",
+	"source": "Skirk'ü Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 11161,
+			"name": "Yıkım: Parçalama",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "Yıkım: Bükme",
+			"descriptionraw": "2 <color=#FFFFFFFF>Yılan Kurnazlığı</color> kazanır, ardından 1 <color=#FFFFFFFF>$[C111161]</color> oluşturup eline ekler. (Her Turda bir defa)",
+			"descriptionreplaced": "2 <color=#FFFFFFFF>Yılan Kurnazlığı</color> kazanır, ardından 1 <color=#FFFFFFFF>Çapraz Silah Hocalığı</color> oluşturup eline ekler. (Her Turda bir defa)",
+			"description": "2 Yılan Kurnazlığı kazanır, ardından 1 Çapraz Silah Hocalığı oluşturup eline ekler. (Her Turda bir defa)",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11163,
+			"name": "Yıkım: Harap Etme",
+			"descriptionraw": "Tüm <color=#FFFFFFFF>Yılan Kurnazlığını</color> tüketir, tüketilen <color=#FFFFFFFF>Yılan Kurnazlığına</color> eşit miktarda $[D__KEY__ELEMENT] verir ve hazırdaki karakterlere de 2 $[K5] verir. Eğer 7 <color=#FFFFFFFF>Yılan Kurnazlığı</color> tüketilirse hazırdaki karakterlere 2 yerine 3 $[K5] verir.",
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Tüm <color=#FFFFFFFF>Yılan Kurnazlığını</color> tüketir, tüketilen <color=#FFFFFFFF>Yılan Kurnazlığına</color> eşit miktarda {SPRITE_PRESET#2101}<color=#99FFFFFF>Buz Hasarı</color> verir ve hazırdaki karakterlere de 2 <color=#FFFFFFFF>Delme Hasarı</color> verir. Eğer 7 <color=#FFFFFFFF>Yılan Kurnazlığı</color> tüketilirse hazırdaki karakterlere 2 yerine 3 <color=#FFFFFFFF>Delme Hasarı</color> verir.",
+			"description": "Tüm Yılan Kurnazlığını tüketir, tüketilen Yılan Kurnazlığına eşit miktarda Buz Hasarı verir ve hazırdaki karakterlere de 2 Delme Hasarı verir. Eğer 7 Yılan Kurnazlığı tüketilirse hazırdaki karakterlere 2 yerine 3 Delme Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_SKIRK_SPECIAL_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "Akıl Almaz Mantık",
+			"descriptionraw": "(Pasif) Skirk Enerji kazanamaz, bunun yerine 7 puana kadar <color=#FFFFFFFF>Yılan Kurnazlığı</color> biriktirebilir.\\n<color=#FFFFFFFF>Bir Donma, Buz Girdabı, Süper İletim veya Buz Kristalleşmesi tepkimesi tetiklediğinde</color> 1 <color=#FFFFFFFF>$[C111163]</color> oluşur ve eline eklenir. (Her Turda en fazla 3 defa)",
+			"descriptionreplaced": "(Pasif) Skirk Enerji kazanamaz, bunun yerine 7 puana kadar <color=#FFFFFFFF>Yılan Kurnazlığı</color> biriktirebilir.\\n<color=#FFFFFFFF>Bir Donma, Buz Girdabı, Süper İletim veya Buz Kristalleşmesi tepkimesi tetiklediğinde</color> 1 <color=#FFFFFFFF>Boşluk Yarığı</color> oluşur ve eline eklenir. (Her Turda en fazla 3 defa)",
+			"description": "(Pasif) Skirk Enerji kazanamaz, bunun yerine 7 puana kadar Yılan Kurnazlığı biriktirebilir.\nBir Donma, Buz Girdabı, Süper İletim veya Buz Kristalleşmesi tepkimesi tetiklediğinde 1 Boşluk Yarığı oluşur ve eline eklenir. (Her Turda en fazla 3 defa)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

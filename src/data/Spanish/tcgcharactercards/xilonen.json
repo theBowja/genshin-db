@@ -1,0 +1,89 @@
+{
+	"id": 1611,
+	"name": "Xilonen",
+	"shareid": 470,
+	"hp": 12,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Geo",
+		"Espada ligera",
+		"Natlan"
+	],
+	"storytitle": "Xilonen - La Forjaalmas Candente",
+	"storytext": "Minerales dorados y refulgentes entre cumbres que resuenan.",
+	"source": "Se obtiene tras retar y ganar a Xilonen en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 16111,
+			"name": "Cacería de Ehécatl",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si está en estado de <color=#FFFFFFFF>$[C116111|s1]</color>, recupera 1 pt. de <color=#FFFFFFFF>noctambulismo</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>. Si está en estado de <color=#FFFFFFFF>bendición noctámbula</color>, recupera 1 pt. de <color=#FFFFFFFF>noctambulismo</color>.",
+			"description": "Inflige 2 pts. de Daño Físico. Si está en estado de bendición noctámbula, recupera 1 pt. de noctambulismo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16112,
+			"name": "Mezcla de la yohual",
+			"descriptionraw": "Se equipa la carta de <color=#FFFFFFFF>$[C116112]</color>, entra en el estado de <color=#FFFFFFFF>$[C116111|s1]</color> y obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> (cuando el personaje entre en el estado de <color=#FFFFFFFF>$[C116111|s1]</color>, no podrá volver a usar esta habilidad).\\nEl personaje que tenga equipada la carta de <color=#FFFFFFFF>$[C116112]</color> puede usar la técnica especial: <color=#FFFFFFFF>$[S1161121]</color>.",
+			"descriptionreplaced": "Se equipa la carta de <color=#FFFFFFFF>Patines</color>, entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color> y obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color> (cuando el personaje entre en el estado de <color=#FFFFFFFF>bendición noctámbula</color>, no podrá volver a usar esta habilidad).\\nEl personaje que tenga equipada la carta de <color=#FFFFFFFF>Patines</color> puede usar la técnica especial: <color=#FFFFFFFF>Salto rápido</color>.",
+			"description": "Se equipa la carta de Patines, entra en el estado de bendición noctámbula y obtiene 1 pt. de noctambulismo (cuando el personaje entre en el estado de bendición noctámbula, no podrá volver a usar esta habilidad).\nEl personaje que tenga equipada la carta de Patines puede usar la técnica especial: Salto rápido.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16113,
+			"name": "¡Al ritmo del ocelote!",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], tomas 1 carta y el personaje de tu equipo que más daño haya recibido obtiene Vida +1. Por cada carga de <color=#FFFFFFFF>$[C116113|s1]</color>, tomas 1 carta adicional y el personaje obtiene Vida +1 adicional por cada <color=#FFFFFFFF>muestra musical</color> que sea de otro elemento.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2106}<color=#FFE699FF>Daño Geo</color>, tomas 1 carta y el personaje de tu equipo que más daño haya recibido obtiene Vida +1. Por cada carga de <color=#FFFFFFFF>muestra musical Geo</color>, tomas 1 carta adicional y el personaje obtiene Vida +1 adicional por cada <color=#FFFFFFFF>muestra musical</color> que sea de otro elemento.",
+			"description": "Inflige 2 pts. de Daño Geo, tomas 1 carta y el personaje de tu equipo que más daño haya recibido obtiene Vida +1. Por cada carga de muestra musical Geo, tomas 1 carta adicional y el personaje obtiene Vida +1 adicional por cada muestra musical que sea de otro elemento.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16114,
+			"name": "Muestras musicales",
+			"descriptionraw": "Pasiva: al comienzo de la batalla, crea 3 <color=#FFFFFFFF>$[C116113|s2]</color>. Si en tu equipo hay personajes Pyro, Hydro, Cryo o Electro, 1 <color=#FFFFFFFF>$[C116113|s1]</color> se convertirá en una <color=#FFFFFFFF>muestra musical</color> del elemento correspondiente.",
+			"descriptionreplaced": "Pasiva: al comienzo de la batalla, crea 3 <color=#FFFFFFFF>muestras musicales Geo</color>. Si en tu equipo hay personajes Pyro, Hydro, Cryo o Electro, 1 <color=#FFFFFFFF>muestra musical Geo</color> se convertirá en una <color=#FFFFFFFF>muestra musical</color> del elemento correspondiente.",
+			"description": "Pasiva: al comienzo de la batalla, crea 3 muestras musicales Geo. Si en tu equipo hay personajes Pyro, Hydro, Cryo o Electro, 1 muestra musical Geo se convertirá en una muestra musical del elemento correspondiente.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"id": 4311,
+	"name": "황금불꽃의 깃룡 폭군",
+	"hp": 24,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"불 원소",
+		"기타 무기",
+		"마물"
+	],
+	"skills": [
+		{
+			"id": 23061,
+			"name": "날개 가르기",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23062,
+			"name": "열풍 도약",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 자신에게 <color=#FFFFFFFF>$[C123062]</color>을 2스택 부착한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 1pt 주고 자신에게 <color=#FFFFFFFF>회전 비행</color>을 2스택 부착한다.",
+			"description": "불 원소 피해를 1pt 주고 자신에게 회전 비행을 2스택 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 23063,
+			"name": "황금불꽃 폭격",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 모든 대기 캐릭터에게 $[K5]를 1pt 주며 자신에게 <color=#FFFFFFFF>$[C123061]</color>를 1스택 부착한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 3pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF>관통 피해</color>를 1pt 주며 자신에게 <color=#FFFFFFFF>황금불꽃 형태</color>를 1스택 부착한다.",
+			"description": "불 원소 피해를 3pt 주고 상대의 모든 대기 캐릭터에게 관통 피해를 1pt 주며 자신에게 황금불꽃 형태를 1스택 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 23065,
+			"name": "고대 혈통",
+			"descriptionraw": "[패시브] <color=#FFFFFFFF>행동 단계 시작 시:</color> 자신에게 <color=#FFFFFFFF>$[C123061]</color>를 1스택 부착하고, 랜덤으로 원소 코스트가 2인 핸드 카드를 1장 생성한다.",
+			"descriptionreplaced": "[패시브] <color=#FFFFFFFF>행동 단계 시작 시:</color> 자신에게 <color=#FFFFFFFF>황금불꽃 형태</color>를 1스택 부착하고, 랜덤으로 원소 코스트가 2인 핸드 카드를 1장 생성한다.",
+			"description": "[패시브] 행동 단계 시작 시: 자신에게 황금불꽃 형태를 1스택 부착하고, 랜덤으로 원소 코스트가 2인 핸드 카드를 1장 생성한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"id": 4212,
+	"name": "Corniodrilo Sacróseo",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 22071,
+			"name": "Mordisco de colmillo",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22072,
+			"name": "Onda aserradora",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Coloca 1 carta de tu mano con el mayor $[K3002|s1] al final del mazo y crea 1 carta de <color=#FFFFFFFF>$[C124051]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>. Coloca 1 carta de tu mano con el mayor <color=#FFFFFFFF>coste actual de dados elementales</color> al final del mazo y crea 1 carta de <color=#FFFFFFFF>Bloques de energía voraces</color>.",
+			"description": "Inflige 3 pts. de Daño Hydro. Coloca 1 carta de tu mano con el mayor coste actual de dados elementales al final del mazo y crea 1 carta de Bloques de energía voraces.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22073,
+			"name": "Ola reptiliana",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y realiza un $[K56|s1] de hasta 3 cartas de <color=#FFFFFFFF>$[C124051]</color>. Por cada carta descartada, tu personaje que más daño haya recibido obtiene Vida +1 y Vida Máx. +1.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y realiza un <color=#FFFFFFFF>descarte</color> de hasta 3 cartas de <color=#FFFFFFFF>Bloques de energía voraces</color>. Por cada carta descartada, tu personaje que más daño haya recibido obtiene Vida +1 y Vida Máx. +1.",
+			"description": "Inflige 4 pts. de Daño Hydro y realiza un descarte de hasta 3 cartas de Bloques de energía voraces. Por cada carta descartada, tu personaje que más daño haya recibido obtiene Vida +1 y Vida Máx. +1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22074,
+			"name": "Percepción sacrósea",
+			"descriptionraw": "Pasiva: cuando juegas o realizas un $[K56|s1] de <color=#FFFFFFFF>$[C124051]</color>, tu personaje que más daño haya recibido obtiene Vida +1.",
+			"descriptionreplaced": "Pasiva: cuando juegas o realizas un <color=#FFFFFFFF>descarte</color> de <color=#FFFFFFFF>Bloques de energía voraces</color>, tu personaje que más daño haya recibido obtiene Vida +1.",
+			"description": "Pasiva: cuando juegas o realizas un descarte de Bloques de energía voraces, tu personaje que más daño haya recibido obtiene Vida +1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,104 @@
+{
+	"id": 1415,
+	"name": "ヴァレサ",
+	"shareid": 521,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"雷元素",
+		"法器",
+		"ナタ"
+	],
+	"storytitle": "おっとりパワフル！・ヴァレサ",
+	"storytext": "心はのんびり、突進は勇猛に",
+	"source": "キャッツテールでヴァレサを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 14151,
+			"name": "バイ・ザ・ホーンズ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。<color=#FFFFFFFF>このスキルが$[K52]の時</color>、与えるダメージ+1、自身が<color=#FFFFFFFF>$[C114151]</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を1獲得する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。<color=#FFFFFFFF>このスキルが<color=#FFFFFFFF>落下攻撃</color>の時</color>、与えるダメージ+1、自身が<color=#FFFFFFFF>夜魂の加護</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を1獲得する。",
+			"description": "雷元素ダメージを1与える。このスキルが落下攻撃の時、与えるダメージ+1、自身が夜魂の加護状態に入り、「夜魂値」を1獲得する。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14152,
+			"name": "ホッピング・ナイトレインボー",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。自身に<color=#FFFFFFFF>$[C114154]</color>を付与して<color=#FFFFFFFF>$[C114151]</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を1獲得する。その後、味方の次のキャラへとチェンジする。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を2与える。自身に<color=#FFFFFFFF>パワフルタックル</color>を付与して<color=#FFFFFFFF>夜魂の加護</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を1獲得する。その後、味方の次のキャラへとチェンジする。",
+			"description": "雷元素ダメージを2与える。自身にパワフルタックルを付与して夜魂の加護状態に入り、「夜魂値」を1獲得する。その後、味方の次のキャラへとチェンジする。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14153,
+			"name": "シャイニングヴェント！",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、自身に<color=#FFFFFFFF>$[C114152]</color>を付与する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与え、自身に<color=#FFFFFFFF>マキシマムドライブ</color>を付与する。",
+			"description": "雷元素ダメージを3与え、自身にマキシマムドライブを付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14154,
+			"name": "連翔、三段跳び！",
+			"descriptionraw": "【固有】<color=#FFFFFFFF><color=#FFFFFFFF>$[A1415]</color>がスキルを発動した後</color>、自身の<color=#FFFFFFFF>「夜魂値」</color>が2の場合、<color=#FFFFFFFF>「夜魂値」</color>を2消費して、自身に<color=#FFFFFFFF>$[C114152]</color>を付与する。",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF><color=#FFFFFFFF>ヴァレサ</color>がスキルを発動した後</color>、自身の<color=#FFFFFFFF>「夜魂値」</color>が2の場合、<color=#FFFFFFFF>「夜魂値」</color>を2消費して、自身に<color=#FFFFFFFF>マキシマムドライブ</color>を付与する。",
+			"description": "【固有】ヴァレサがスキルを発動した後、自身の「夜魂値」が2の場合、「夜魂値」を2消費して、自身にマキシマムドライブを付与する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 14155,
+			"name": "シャイニングヴェント・大火山おろし",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。このスキルは$[K52]と見なされる。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を3与える。このスキルは<color=#FFFFFFFF>落下攻撃</color>と見なされる。",
+			"description": "雷元素ダメージを3与える。このスキルは落下攻撃と見なされる。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

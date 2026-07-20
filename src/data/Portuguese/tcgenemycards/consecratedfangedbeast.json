@@ -1,0 +1,113 @@
+{
+	"id": 4710,
+	"name": "Besta de Presas da Ossada Sagrada",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER",
+		"GCG_TAG_CAMP_SACREAD"
+	],
+	"tagstext": [
+		"Dendro",
+		"Outras Armas",
+		"Monstro",
+		"Besta da Ossada Sagrada"
+	],
+	"skills": [
+		{
+			"id": 27051,
+			"name": "Corte de Garras",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Dano Físico</color>.",
+			"description": "Causa 2 pontos de Dano Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27052,
+			"name": "Onda de Sifão",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT] e saque 1 carta <color=#FFFFFFFF>$[C124051]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2107}<color=#7EC236FF>Dano Dendro</color> e saque 1 carta <color=#FFFFFFFF>Blocos de Energia Vorazes</color>.",
+			"description": "Causa 2 pontos de Dano Dendro e saque 1 carta Blocos de Energia Vorazes.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 27053,
+			"name": "Vinhas Arruinadas Espalhadas",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], se <color=#FFFFFFFF>$[C124051]</color> estiver em sua Mão, a $[K56] e prepara essa habilidade: <color=#FFFFFFFF>$[S27055]</color>.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Causa 4 pontos de {SPRITE_PRESET#2107}<color=#7EC236FF>Dano Dendro</color>, se <color=#FFFFFFFF>Blocos de Energia Vorazes</color> estiver em sua Mão, a <color=#FFFFFFFF>Descarta</color> e prepara essa habilidade: <color=#FFFFFFFF>Brotos do Apodrecimento Arruinado</color>.",
+			"description": "Causa 4 pontos de Dano Dendro, se Blocos de Energia Vorazes estiver em sua Mão, a Descarta e prepara essa habilidade: Brotos do Apodrecimento Arruinado.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 27054,
+			"name": "Fome de Restos Mortais",
+			"descriptionraw": "(Passivo) Quando a batalha começa, cria 2 cartas <color=#FFFFFFFF>$[C124051]</color> e as coloca no fundo do seu deck. Você pode jogar 1 carta <color=#FFFFFFFF>$[C124051]</color> extra a cada Turno.",
+			"descriptionreplaced": "(Passivo) Quando a batalha começa, cria 2 cartas <color=#FFFFFFFF>Blocos de Energia Vorazes</color> e as coloca no fundo do seu deck. Você pode jogar 1 carta <color=#FFFFFFFF>Blocos de Energia Vorazes</color> extra a cada Turno.",
+			"description": "(Passivo) Quando a batalha começa, cria 2 cartas Blocos de Energia Vorazes e as coloca no fundo do seu deck. Você pode jogar 1 carta Blocos de Energia Vorazes extra a cada Turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 27055,
+			"name": "Brotos do Apodrecimento Arruinado",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2107}<color=#7EC236FF>Dano Dendro</color>.",
+			"description": "Causa 2 pontos de Dano Dendro.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 27056,
+			"name": "Fome de Restos Mortais",
+			"descriptionraw": "(Passivo) Quando a batalha começa, cria 2 cartas <color=#FFFFFFFF>$[C124051]</color> e as coloca no fundo do seu deck. Você pode jogar 1 carta <color=#FFFFFFFF>$[C124051]</color> extra a cada Turno.",
+			"descriptionreplaced": "(Passivo) Quando a batalha começa, cria 2 cartas <color=#FFFFFFFF>Blocos de Energia Vorazes</color> e as coloca no fundo do seu deck. Você pode jogar 1 carta <color=#FFFFFFFF>Blocos de Energia Vorazes</color> extra a cada Turno.",
+			"description": "(Passivo) Quando a batalha começa, cria 2 cartas Blocos de Energia Vorazes e as coloca no fundo do seu deck. Você pode jogar 1 carta Blocos de Energia Vorazes extra a cada Turno.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

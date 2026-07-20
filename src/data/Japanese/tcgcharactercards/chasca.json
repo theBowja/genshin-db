@@ -1,0 +1,91 @@
+{
+	"id": 1511,
+	"name": "チャスカ",
+	"shareid": 479,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"風元素",
+		"弓",
+		"ナタ"
+	],
+	"storytitle": "巡空の裁翼・チャスカ",
+	"storytext": "風の律動、翼は空高く。",
+	"source": "キャッツテールでチャスカを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 15111,
+			"name": "フェザー・フルーリー",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15112,
+			"name": "スピリット・レインズ",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、手札を1枚引く。\\n本キャラが<color=#FFFFFFFF>$[C115112]</color>を装備して<color=#FFFFFFFF>$[C115111]</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を2獲得する。（キャラが<color=#FFFFFFFF>$[C115111]</color>に入った後、このスキルは使用できなくなる）\\n（<color=#FFFFFFFF>$[C115112]</color>を装備したキャラは特技：<color=#FFFFFFFF>$[S1151121]</color>を使用できる）\\n<color=#FFFFFFFF>次の2回まで、味方が「キャラチェンジ」を行う時</color>、手札を1枚引く。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を1与え、手札を1枚引く。\\n本キャラが<color=#FFFFFFFF>スピリットリボルバー・ライトワンド</color>を装備して<color=#FFFFFFFF>夜魂の加護</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を2獲得する。（キャラが<color=#FFFFFFFF>夜魂の加護</color>に入った後、このスキルは使用できなくなる）\\n（<color=#FFFFFFFF>スピリットリボルバー・ライトワンド</color>を装備したキャラは特技：<color=#FFFFFFFF>マルチ照準</color>を使用できる）\\n<color=#FFFFFFFF>次の2回まで、味方が「キャラチェンジ」を行う時</color>、手札を1枚引く。",
+			"description": "風元素ダメージを1与え、手札を1枚引く。\n本キャラがスピリットリボルバー・ライトワンドを装備して夜魂の加護状態に入り、「夜魂値」を2獲得する。（キャラが夜魂の加護に入った後、このスキルは使用できなくなる）\n（スピリットリボルバー・ライトワンドを装備したキャラは特技：マルチ照準を使用できる）\n次の2回まで、味方が「キャラチェンジ」を行う時、手札を1枚引く。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15113,
+			"name": "ソウルリーパーの猛襲",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手の待機キャラ全員に貫通ダメージを1与える。手札を3枚引く。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を1与え、相手の待機キャラ全員に貫通ダメージを1与える。手札を3枚引く。",
+			"description": "風元素ダメージを1与え、相手の待機キャラ全員に貫通ダメージを1与える。手札を3枚引く。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15114,
+			"name": "シャドウチェイサー弾",
+			"descriptionraw": "対戦開始時、ランダムで6枚の<color=#FFFFFFFF>$[C115113]</color>を山札に加える。",
+			"descriptionreplaced": "対戦開始時、ランダムで6枚の<color=#FFFFFFFF>シャドウチェイサー弾</color>を山札に加える。",
+			"description": "対戦開始時、ランダムで6枚のシャドウチェイサー弾を山札に加える。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

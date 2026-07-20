@@ -1,0 +1,87 @@
+{
+	"id": 4212,
+	"name": "Consecrated Horned Crocodile",
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Other Weapons",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 22071,
+			"name": "Fang Bite",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Deals 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.",
+			"description": "Deals 2 Physical DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22072,
+			"name": "Saw-Toothed Surge",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], puts up to 1 card with the highest $[K3002] in your Hand at the bottom of your deck, then creates 1 <color=#FFFFFFFF>$[C124051]</color> and adds it to your Hand.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 3 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>, puts up to 1 card with the highest <color=#FFFFFFFF>Current Elemental Dice Cost</color> in your Hand at the bottom of your deck, then creates 1 <color=#FFFFFFFF>Bonecruncher's Energy Block</color> and adds it to your Hand.",
+			"description": "Deals 3 Hydro DMG, puts up to 1 card with the highest Current Elemental Dice Cost in your Hand at the bottom of your deck, then creates 1 Bonecruncher's Energy Block and adds it to your Hand.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22073,
+			"name": "Reptilian Rage",
+			"descriptionraw": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], then $[K56]s up to 3 <color=#FFFFFFFF>$[C124051]</color> cards. For each of those cards $[K56]ed, heal the character on your team that has taken the most damage for 1 HP and increase their Max HP by 1.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Deals 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>, then <color=#FFFFFFFF>Discard</color>s up to 3 <color=#FFFFFFFF>Bonecruncher's Energy Block</color> cards. For each of those cards <color=#FFFFFFFF>Discard</color>ed, heal the character on your team that has taken the most damage for 1 HP and increase their Max HP by 1.",
+			"description": "Deals 4 Hydro DMG, then Discards up to 3 Bonecruncher's Energy Block cards. For each of those cards Discarded, heal the character on your team that has taken the most damage for 1 HP and increase their Max HP by 1.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22074,
+			"name": "Consecrated Senses",
+			"descriptionraw": "(Passive) After you play or $[K56] a <color=#FFFFFFFF>$[C124051]</color> card, heal the character on your team that has taken the most damage for 1 HP.",
+			"descriptionreplaced": "(Passive) After you play or <color=#FFFFFFFF>Discard</color> a <color=#FFFFFFFF>Bonecruncher's Energy Block</color> card, heal the character on your team that has taken the most damage for 1 HP.",
+			"description": "(Passive) After you play or Discard a Bonecruncher's Energy Block card, heal the character on your team that has taken the most damage for 1 HP.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		}
+	]
+}

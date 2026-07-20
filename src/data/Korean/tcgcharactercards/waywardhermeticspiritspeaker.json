@@ -1,0 +1,91 @@
+{
+	"id": 2105,
+	"name": "수수께끼 영력 수행자",
+	"shareid": 597,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"얼음 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "무리를 떠난·수수께끼 영력 수행자",
+	"storytext": "홀로 외부에서 수행 중인 「연기 주인」 제사장. 「연기 주인」 대영혼의 비호를 받아 일반 제사장과 샤먼보다 강력한 「영력 교감」 능력을 지니고 있다고 한다",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 수수께끼 영력 수행자에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 21051,
+			"name": "영력 교감·차가운 별",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 1pt 준다.",
+			"description": "얼음 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21052,
+			"name": "변화무쌍한 색채",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, <color=#FFFFFFFF>$[C121051]</color> 1장을 카드 더미의 3번째 자리에 넣는다. 또한 3개의 랜덤 <color=#FFFFFFFF>$[C121051]</color> 강화 효과 중 1개를 $[K59]한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 1pt 주고, <color=#FFFFFFFF>색채</color> 1장을 카드 더미의 3번째 자리에 넣는다. 또한 3개의 랜덤 <color=#FFFFFFFF>색채</color> 강화 효과 중 1개를 <color=#FFFFFFFF>선정</color>한다.",
+			"description": "얼음 원소 피해를 1pt 주고, 색채 1장을 카드 더미의 3번째 자리에 넣는다. 또한 3개의 랜덤 색채 강화 효과 중 1개를 선정한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 21053,
+			"name": "혹한의 그림",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, <color=#FFFFFFFF>$[C121051]</color> 1장을 핸드 카드에 추가한다.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>를 4pt 주고, <color=#FFFFFFFF>색채</color> 1장을 핸드 카드에 추가한다.",
+			"description": "얼음 원소 피해를 4pt 주고, 색채 1장을 핸드 카드에 추가한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 21054,
+			"name": "화려한 그림자",
+			"descriptionraw": "[패시브] 전투 시작 시, <color=#FFFFFFFF>$[C121051]</color>를 3장 생성해 카드 더미에 골고루 넣는다.",
+			"descriptionreplaced": "[패시브] 전투 시작 시, <color=#FFFFFFFF>색채</color>를 3장 생성해 카드 더미에 골고루 넣는다.",
+			"description": "[패시브] 전투 시작 시, 색채를 3장 생성해 카드 더미에 골고루 넣는다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

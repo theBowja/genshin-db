@@ -1,0 +1,99 @@
+{
+	"id": 1315,
+	"name": "マーヴィカ",
+	"shareid": 478,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"炎元素",
+		"両手剣",
+		"ナタ"
+	],
+	"storytitle": "夜を焼き尽くす炎・マーヴィカ",
+	"storytext": "至烈なる再臨の炎。",
+	"source": "キャッツテールでマーヴィカを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 13151,
+			"name": "命を紡ぐ炎",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13152,
+			"name": "名を称える刻",
+			"descriptionraw": "本キャラが<color=#FFFFFFFF>$[C113151]</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を2獲得する。さらに、3枚の<color=#FFFFFFFF>双駆輪</color>の中から1枚を$[K59]し、手札に加える。",
+			"descriptionreplaced": "本キャラが<color=#FFFFFFFF>夜魂の加護</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を2獲得する。さらに、3枚の<color=#FFFFFFFF>双駆輪</color>の中から1枚を<color=#FFFFFFFF>選択</color>し、手札に加える。",
+			"description": "本キャラが夜魂の加護状態に入り、「夜魂値」を2獲得する。さらに、3枚の双駆輪の中から1枚を選択し、手札に加える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13153,
+			"name": "天を焦がす刻",
+			"descriptionraw": "本キャラが<color=#FFFFFFFF>$[C113151]</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を1獲得する。自身のすべての戦意を消費し、相手の出撃キャラに消費した戦意分の$[D__KEY__ELEMENT]を与える。\\n消費した<color=#FFFFFFFF>戦意</color>が6の場合、自身に<color=#FFFFFFFF>$[C113152]</color>を付与する。",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "本キャラが<color=#FFFFFFFF>夜魂の加護</color>状態に入り、<color=#FFFFFFFF>「夜魂値」</color>を1獲得する。自身のすべての戦意を消費し、相手の出撃キャラに消費した戦意分の{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を与える。\\n消費した<color=#FFFFFFFF>戦意</color>が6の場合、自身に<color=#FFFFFFFF>死生の炉</color>を付与する。",
+			"description": "本キャラが夜魂の加護状態に入り、「夜魂値」を1獲得する。自身のすべての戦意を消費し、相手の出撃キャラに消費した戦意分の炎元素ダメージを与える。\n消費した戦意が6の場合、自身に死生の炉を付与する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_SPECIAL_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13154,
+			"name": "戦意",
+			"descriptionraw": "このキャラは<color=#FFFFFFFF>チャージ</color>を獲得しない。\\n味方が<color=#FFFFFFFF>「夜魂値」</color>を消費する、または通常攻撃を行うと、戦意を1獲得する。\\nこのキャラが<color=#FFFFFFFF>元素スキル</color>または<color=#FFFFFFFF>元素爆発</color>を発動する時、<color=#FFFFFFFF>$[C113153]</color>を付与する。",
+			"descriptionreplaced": "このキャラは<color=#FFFFFFFF>チャージ</color>を獲得しない。\\n味方が<color=#FFFFFFFF>「夜魂値」</color>を消費する、または通常攻撃を行うと、戦意を1獲得する。\\nこのキャラが<color=#FFFFFFFF>元素スキル</color>または<color=#FFFFFFFF>元素爆発</color>を発動する時、<color=#FFFFFFFF>諸火武装・焚曜の輪</color>を付与する。",
+			"description": "このキャラはチャージを獲得しない。\n味方が「夜魂値」を消費する、または通常攻撃を行うと、戦意を1獲得する。\nこのキャラが元素スキルまたは元素爆発を発動する時、諸火武装・焚曜の輪を付与する。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 13155,
+			"name": "双駆輪・疾駆",
+			"descriptionraw": "<color=#FFFFFFFF>アクションフェーズ開始時：</color>万能元素サイコロを2個生成する。",
+			"descriptionreplaced": "<color=#FFFFFFFF>アクションフェーズ開始時：</color>万能元素サイコロを2個生成する。",
+			"description": "アクションフェーズ開始時：万能元素サイコロを2個生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

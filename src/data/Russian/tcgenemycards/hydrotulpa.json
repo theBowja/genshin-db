@@ -1,0 +1,87 @@
+{
+	"id": 4210,
+	"name": "Гидротульпа",
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Гидро",
+		"Прочее",
+		"Монстр"
+	],
+	"skills": [
+		{
+			"id": 22061,
+			"name": "Яростная волна",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед.",
+			"description": "Наносит Гидро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22062,
+			"name": "Штормовая волна",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], случайным образом активирует эффект финальной фазы у одного из ваших помощников. Если HP этого персонажа не меньше 2, он получает <color=#FFFFFFFF>$[K5]</color>, 1 ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит 2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, случайным образом активирует эффект финальной фазы у одного из ваших помощников. Если HP этого персонажа не меньше 2, он получает <color=#FFFFFFFF><color=#FFFFFFFF>Проникающий урон</color></color>, 1 ед.",
+			"description": "Наносит 2 Гидро урон, случайным образом активирует эффект финальной фазы у одного из ваших помощников. Если HP этого персонажа не меньше 2, он получает Проникающий урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22063,
+			"name": "Громовой прибой",
+			"descriptionraw": "Наносит $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], активирует эффект финальной фазы у всех ваших помощников.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит 4 {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, активирует эффект финальной фазы у всех ваших помощников.",
+			"description": "Наносит 4 Гидро урон, активирует эффект финальной фазы у всех ваших помощников.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22064,
+			"name": "Разветвлённый поток",
+			"descriptionraw": "<color=#FFFFFFFF>Когда HP этого персонажа не меньше 3 и все ваши помощники, кроме помощника $[C122061], покидают поле:</color> этот персонаж получает <color=#FFFFFFFF>$[K5]</color>, 2 ед., и призывается 1 независимая <color=#FFFFFFFF>$[C122061]</color>. (1 раз за раунд)",
+			"descriptionreplaced": "<color=#FFFFFFFF>Когда HP этого персонажа не меньше 3 и все ваши помощники, кроме помощника Полутульпа, покидают поле:</color> этот персонаж получает <color=#FFFFFFFF><color=#FFFFFFFF>Проникающий урон</color></color>, 2 ед., и призывается 1 независимая <color=#FFFFFFFF>Полутульпа</color>. (1 раз за раунд)",
+			"description": "Когда HP этого персонажа не меньше 3 и все ваши помощники, кроме помощника Полутульпа, покидают поле: этот персонаж получает Проникающий урон, 2 ед., и призывается 1 независимая Полутульпа. (1 раз за раунд)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		}
+	]
+}

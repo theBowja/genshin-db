@@ -1,0 +1,91 @@
+{
+	"id": 1216,
+	"name": "Aino",
+	"shareid": 571,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"ธาตุน้ำ",
+		"ดาบใหญ่",
+		"Nod-Krai"
+	],
+	"storytitle": "กลไกมหัศจรรย์กรุ๊งกริ๊ง - Aino",
+	"storytext": "เสียงดังกรุ๊งกริ๊ง เปลี่ยนไอเดียบรรเจิดให้เป็นจริง",
+	"source": "ได้รับหลังจากเชิญ Aino ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร",
+	"skills": [
+		{
+			"id": 12161,
+			"name": "Bish-Bash-Bosh Repair",
+			"descriptionraw": "จะสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "จะสร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "จะสร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12162,
+			"name": "Musecatcher",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และสร้าง <color=#FFFFFFFF>$[C170]</color> 1 ชั้น หากมีการ์ดในมือที่มี $[K3006] จะเปลี่ยนเป็นสร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE_1] หน่วยแทน",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 2 หน่วย และสร้าง <color=#FFFFFFFF>Agile Switch</color> 1 ชั้น หากมีการ์ดในมือที่มี <color=#FFFFFFFF>เสริมพลัง</color> จะเปลี่ยนเป็นสร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 3 หน่วยแทน",
+			"description": "สร้างความเสียหายน้ำ 2 หน่วย และสร้าง Agile Switch 1 ชั้น หากมีการ์ดในมือที่มี เสริมพลัง จะเปลี่ยนเป็นสร้างความเสียหายน้ำ 3 หน่วยแทน",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12163,
+			"name": "Precision Hydronic Cooler",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และเรียก <color=#FFFFFFFF>$[C112161]</color>",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2102}<color=#80C0FFFF>ความเสียหายน้ำ</color> 2 หน่วย และเรียก <color=#FFFFFFFF>Cool Your Jets Ducky</color>",
+			"description": "สร้างความเสียหายน้ำ 2 หน่วย และเรียก Cool Your Jets Ducky",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12164,
+			"name": "Modular Efficiency Protocol",
+			"descriptionraw": "<color=#FFFFFFFF>เมื่อการ์ดฝ่ายเราได้รับ $[K3006]</color>: หากในสนามของฝ่ายเรามี <color=#FFFFFFFF>$[C112161]</color> จะทำให้จำนวนครั้งที่ใช้ได้ +1 แต่ถ้าไม่มี ตัวเองจะได้รับ $[K310] 1 หน่วย (เทิร์นละ 1 ครั้ง)",
+			"descriptionreplaced": "<color=#FFFFFFFF>เมื่อการ์ดฝ่ายเราได้รับ <color=#FFFFFFFF>เสริมพลัง</color></color>: หากในสนามของฝ่ายเรามี <color=#FFFFFFFF>Cool Your Jets Ducky</color> จะทำให้จำนวนครั้งที่ใช้ได้ +1 แต่ถ้าไม่มี ตัวเองจะได้รับ <color=#FFFFFFFF>{SPRITE_PRESET#1110}พลังงาน</color> 1 หน่วย (เทิร์นละ 1 ครั้ง)",
+			"description": "เมื่อการ์ดฝ่ายเราได้รับ เสริมพลัง: หากในสนามของฝ่ายเรามี Cool Your Jets Ducky จะทำให้จำนวนครั้งที่ใช้ได้ +1 แต่ถ้าไม่มี ตัวเองจะได้รับ พลังงาน 1 หน่วย (เทิร์นละ 1 ครั้ง)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,104 @@
+{
+	"id": 1415,
+	"name": "Varesa",
+	"shareid": 521,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"Electro",
+		"Catalizador",
+		"Natlan"
+	],
+	"storytitle": "Varesa - La Heroína Sosegada",
+	"storytext": "Inamovible en la defensa, firme en el ataque.",
+	"source": "Se obtiene tras retar y ganar a Varesa en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 14151,
+			"name": "¡Usa la cabeza!",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. <color=#FFFFFFFF>Cuando esta habilidad se considera un $[K52]</color>, inflige daño +1, el personaje entra en el estado de <color=#FFFFFFFF>$[C114151|s1]</color> y obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>. <color=#FFFFFFFF>Cuando esta habilidad se considera un <color=#FFFFFFFF>Ataque Descendente</color></color>, inflige daño +1, el personaje entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color> y obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color>.",
+			"description": "Inflige 1 pt. de Daño Electro. Cuando esta habilidad se considera un Ataque Descendente, inflige daño +1, el personaje entra en el estado de bendición noctámbula y obtiene 1 pt. de noctambulismo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14152,
+			"name": "Salto del arcoíris nocturno",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT], obtiene el efecto de <color=#FFFFFFFF>$[C114154|s1]</color>, entra en el estado de <color=#FFFFFFFF>$[C114151|s1]</color> y obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color>. Después, cambias a tu siguiente personaje.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color>, obtiene el efecto de <color=#FFFFFFFF>avance impetuoso</color>, entra en el estado de <color=#FFFFFFFF>bendición noctámbula</color> y obtiene 1 pt. de <color=#FFFFFFFF>noctambulismo</color>. Después, cambias a tu siguiente personaje.",
+			"description": "Inflige 2 pts. de Daño Electro, obtiene el efecto de avance impetuoso, entra en el estado de bendición noctámbula y obtiene 1 pt. de noctambulismo. Después, cambias a tu siguiente personaje.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14153,
+			"name": "¡Descenso fulgurante!",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y obtiene el efecto de <color=#FFFFFFFF>$[C114152|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> y obtiene el efecto de <color=#FFFFFFFF>propulsión extrema</color>.",
+			"description": "Inflige 3 pts. de Daño Electro y obtiene el efecto de propulsión extrema.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 14154,
+			"name": "Impulso y... ¡salto triple!",
+			"descriptionraw": "Pasiva: <color=#FFFFFFFF>después de que <color=#FFFFFFFF>$[A1415]</color> use una habilidad</color>, si tiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>, los consume para obtener el efecto de <color=#FFFFFFFF>$[C114152|s1]</color>.",
+			"descriptionreplaced": "Pasiva: <color=#FFFFFFFF>después de que <color=#FFFFFFFF>Varesa</color> use una habilidad</color>, si tiene 2 pts. de <color=#FFFFFFFF>noctambulismo</color>, los consume para obtener el efecto de <color=#FFFFFFFF>propulsión extrema</color>.",
+			"description": "Pasiva: después de que Varesa use una habilidad, si tiene 2 pts. de noctambulismo, los consume para obtener el efecto de propulsión extrema.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 14155,
+			"name": "Descenso fulgurante: Colapso volcánico",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] (esta habilidad se considera un $[K52]).",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2104}<color=#FFACFFFF>Daño Electro</color> (esta habilidad se considera un <color=#FFFFFFFF>Ataque Descendente</color>).",
+			"description": "Inflige 3 pts. de Daño Electro (esta habilidad se considera un Ataque Descendente).",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

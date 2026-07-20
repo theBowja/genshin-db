@@ -1,0 +1,104 @@
+{
+	"id": 1418,
+	"name": "Флинс",
+	"shareid": 584,
+	"hp": 10,
+	"maxenergy": 4,
+	"tags": [
+		"GCG_TAG_ELEMENT_ELECTRO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Электро",
+		"Древковое",
+		"Нод-Край"
+	],
+	"storytitle": "«Дивный свет, неведомые тени» Флинс",
+	"storytext": "Кладбищенский фонарь увлекает в бездонную ночь.",
+	"source": "Награда за приглашение Флинса в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 14181,
+			"name": "Демоническое копьё",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2100}<color=#FFFFFFFF>Физический урон</color>, 2 ед.",
+			"description": "Наносит Физический урон, 2 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14182,
+			"name": "Древний обряд: Тайный свет",
+			"descriptionraw": "При первом использовании этого навыка в раунде наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., накладывает на этого персонажа <color=#FFFFFFFF>$[C114181]</color>. При повторном использовании навыка расходуется $[K310], 2 ед., этот персонаж получает $[K53]: <color=#FFFFFFFF>$[K1051]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "При первом использовании этого навыка в раунде наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 1 ед., накладывает на этого персонажа <color=#FFFFFFFF>Явление пламени</color>. При повторном использовании навыка расходуется <color=#FFFFFFFF>{SPRITE_PRESET#1110}Энергия</color>, 2 ед., этот персонаж получает <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF><color=#FFFFFFFF>Громогласная симфония</color></color>.",
+			"description": "При первом использовании этого навыка в раунде наносит Электро урон, 1 ед., накладывает на этого персонажа Явление пламени. При повторном использовании навыка расходуется Энергия, 2 ед., этот персонаж получает Подготовка навыка: Громогласная симфония.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 14183,
+			"name": "Древний ритуал: Наступает ночь",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., наносит $[K5], 2 ед. всем неактивным персонажам противника.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 6 ед., наносит <color=#FFFFFFFF>Проникающий урон</color>, 2 ед. всем неактивным персонажам противника.",
+			"description": "Наносит Электро урон, 6 ед., наносит Проникающий урон, 2 ед. всем неактивным персонажам противника.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ELECTRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 4
+				}
+			]
+		},
+		{
+			"id": 14184,
+			"name": "Дар лунного знамения: Секреты старого мира",
+			"descriptionraw": "(Пассивный навык) В этой игре, когда сторона противника активирует реакцию <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}Заряжен</color>, она будет заменена на реакцию <color=#FFFFFFFF>$[K3001]</color>.\\n<color=#FFFFFFFF>Пока персонаж на поле, когда карте действия противника присваивается статус <color=#FFFFFFFF>$[C204]</color>:</color> наносит $[K5], 1 ед., персонажу противника с наибольшим HP.",
+			"descriptionreplaced": "(Пассивный навык) В этой игре, когда сторона противника активирует реакцию <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}Заряжен</color>, она будет заменена на реакцию <color=#FFFFFFFF><color=#FFFFFFFF>Лунный заряд</color></color>.\\n<color=#FFFFFFFF>Пока персонаж на поле, когда карте действия противника присваивается статус <color=#FFFFFFFF>Электрошок</color>:</color> наносит <color=#FFFFFFFF>Проникающий урон</color>, 1 ед., персонажу противника с наибольшим HP.",
+			"description": "(Пассивный навык) В этой игре, когда сторона противника активирует реакцию Заряжен, она будет заменена на реакцию Лунный заряд.\nПока персонаж на поле, когда карте действия противника присваивается статус Электрошок: наносит Проникающий урон, 1 ед., персонажу противника с наибольшим HP.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 14185,
+			"name": "Громогласная симфония",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. Если на вашей стороне есть <color=#FFFFFFFF>$[C205]</color>, наносимый урон дополнительно увеличивается на 2 ед.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ELECTRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>, 2 ед. Если на вашей стороне есть <color=#FFFFFFFF>Грозовая туча</color>, наносимый урон дополнительно увеличивается на 2 ед.",
+			"description": "Наносит Электро урон, 2 ед. Если на вашей стороне есть Грозовая туча, наносимый урон дополнительно увеличивается на 2 ед.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

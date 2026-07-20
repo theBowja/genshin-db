@@ -1,0 +1,101 @@
+{
+	"id": 1513,
+	"name": "Shikanoin Heizou",
+	"shareid": 493,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_INAZUMA"
+	],
+	"tagstext": [
+		"Anemo",
+		"Catalizador",
+		"Inazuma"
+	],
+	"storytitle": "Shikanoin Heizou - El Detective de la Armonía",
+	"storytext": "Ni las túnicas celestiales, perfectas y sin costura, escapan al temor de los vientos helados.",
+	"source": "Se obtiene tras retar y ganar a Shikanoin Heizou en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 15131,
+			"name": "Artes marciales Fudou",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>.",
+			"description": "Inflige 1 pt. de Daño Anemo.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15132,
+			"name": "Puñetazo cardiaco",
+			"descriptionraw": "$[K53]: <color=#FFFFFFFF>$[S15135]</color>.",
+			"descriptionreplaced": "<color=#FFFFFFFF>Preparación de habilidad</color>: <color=#FFFFFFFF>Puñetazo cardiaco (carga)</color>.",
+			"description": "Preparación de habilidad: Puñetazo cardiaco (carga).",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15133,
+			"name": "Patada huracanada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT]. Si esta habilidad causa una $[K215|s1], el personaje en combate enemigo obtendrá el efecto de $[K1036|s1] del elemento correspondiente.",
+			"basedamage": 4,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>. Si esta habilidad causa una <color=#80FFD7FF>{SPRITE_PRESET#2105}Reacción Elemental Anemo</color>, el personaje en combate enemigo obtendrá el efecto de <color=#FFFFFFFF>ojo del tifón</color> del elemento correspondiente.",
+			"description": "Inflige 4 pts. de Daño Anemo. Si esta habilidad causa una Reacción Elemental Anemo, el personaje en combate enemigo obtendrá el efecto de ojo del tifón del elemento correspondiente.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15134,
+			"name": "Práctica paradójica",
+			"descriptionraw": "Pasiva: <color=#FFFFFFFF>cuando tus personajes provoquen una $[K215|s1]</color>, obtiene 1 carga de <color=#FFFFFFFF>$[C115132|s1]</color>.",
+			"descriptionreplaced": "Pasiva: <color=#FFFFFFFF>cuando tus personajes provoquen una <color=#80FFD7FF>{SPRITE_PRESET#2105}Reacción Elemental Anemo</color></color>, obtiene 1 carga de <color=#FFFFFFFF>decantación</color>.",
+			"description": "Pasiva: cuando tus personajes provoquen una Reacción Elemental Anemo, obtiene 1 carga de decantación.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 15135,
+			"name": "Puñetazo cardiaco (carga)",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE_4] pts. de $[D__KEY__ELEMENT].",
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Inflige 4 pts. de {SPRITE_PRESET#2105}<color=#80FFD7FF>Daño Anemo</color>.",
+			"description": "Inflige 4 pts. de Daño Anemo.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

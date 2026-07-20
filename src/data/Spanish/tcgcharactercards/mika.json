@@ -1,0 +1,89 @@
+{
+	"id": 1117,
+	"name": "Mika",
+	"shareid": 555,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Cryo",
+		"Lanza",
+		"Mondstadt"
+	],
+	"storytitle": "Mika - El Agrimensor Nieveclara",
+	"storytext": "Una pluma dorada como el trigo capaz de dilucidar fronteras inexploradas.",
+	"source": "Se obtiene tras retar y ganar a Mika en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 11171,
+			"name": "Lanza de Favonius - Punta afilada",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11172,
+			"name": "Vórtice hieloastral",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea el estado de <color=#FFFFFFFF>$[C111171|s1]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_CRYO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2101}<color=#99FFFFFF>Daño Cryo</color> y crea el estado de <color=#FFFFFFFF>aeroánima</color>.",
+			"description": "Inflige 2 pts. de Daño Cryo y crea el estado de aeroánima.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 11173,
+			"name": "Himno plumiceleste",
+			"descriptionraw": "Todos tus personajes obtienen Vida +1. Crea una <color=#FFFFFFFF>$[C111172|s1]</color> y una <color=#FFFFFFFF>$[C111176|s1]</color>.",
+			"descriptionreplaced": "Todos tus personajes obtienen Vida +1. Crea una <color=#FFFFFFFF>sabiduría de la pluma aquilae</color> y una <color=#FFFFFFFF>bendición de la pluma aquilae</color>.",
+			"description": "Todos tus personajes obtienen Vida +1. Crea una sabiduría de la pluma aquilae y una bendición de la pluma aquilae.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11174,
+			"name": "Supresión fuegorrápido",
+			"descriptionraw": "Pasiva: <color=#FFFFFFFF>cuando usa una habilidad,</color> tus personajes infligen $[K100] +1 la próxima vez (2 veces por ronda).",
+			"descriptionreplaced": "Pasiva: <color=#FFFFFFFF>cuando usa una habilidad,</color> tus personajes infligen {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color> +1 la próxima vez (2 veces por ronda).",
+			"description": "Pasiva: cuando usa una habilidad, tus personajes infligen Daño Físico +1 la próxima vez (2 veces por ronda).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

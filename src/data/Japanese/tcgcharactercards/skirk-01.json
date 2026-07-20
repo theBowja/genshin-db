@@ -1,0 +1,80 @@
+{
+	"id": 6605,
+	"name": "スカーク",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_CRYO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_COSMIC_CALAMITY"
+	],
+	"tagstext": [
+		"氷元素",
+		"片手剣",
+		"宇宙の劫災"
+	],
+	"skills": [
+		{
+			"id": 11161,
+			"name": "極悪技・断",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11162,
+			"name": "極悪技・閃",
+			"descriptionraw": "<color=#FFFFFFFF>蛇の狡智</color>を2獲得し、手札に<color=#FFFFFFFF>$[C111161]</color>を生成する。（各ラウンドで1回のみ）",
+			"descriptionreplaced": "<color=#FFFFFFFF>蛇の狡智</color>を2獲得し、手札に<color=#FFFFFFFF>武芸伝授</color>を生成する。（各ラウンドで1回のみ）",
+			"description": "蛇の狡智を2獲得し、手札に武芸伝授を生成する。（各ラウンドで1回のみ）",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 11165,
+			"name": "極悪技・尽",
+			"descriptionraw": "万能元素以外の元素サイコロ2個を<color=#99FFFFFF>{SPRITE_PRESET#1101}氷元素サイコロ</color>に変換する。$[K3002]が0のカードを最大2枚まで$[K56]し、1枚$[K56]するごとに、<color=#FFFFFFFF>$[A1116]</color>は<color=#FFFFFFFF>蛇の狡智</color>を1獲得する。",
+			"descriptionreplaced": "万能元素以外の元素サイコロ2個を<color=#99FFFFFF>{SPRITE_PRESET#1101}氷元素サイコロ</color>に変換する。<color=#FFFFFFFF>現在の元素サイコロのコスト</color>が0のカードを最大2枚まで<color=#FFFFFFFF>破棄</color>し、1枚<color=#FFFFFFFF>破棄</color>するごとに、<color=#FFFFFFFF>スカーク</color>は<color=#FFFFFFFF>蛇の狡智</color>を1獲得する。",
+			"description": "万能元素以外の元素サイコロ2個を氷元素サイコロに変換する。現在の元素サイコロのコストが0のカードを最大2枚まで破棄し、1枚破棄するごとに、スカークは蛇の狡智を1獲得する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_CRYO",
+					"count": 1
+				}
+			]
+		},
+		{
+			"id": 11164,
+			"name": "理の超越",
+			"descriptionraw": "【固有】スカークはチャージを獲得できず、代わりに<color=#FFFFFFFF>蛇の狡智</color>を最大7まで蓄積できる。\\n<color=#FFFFFFFF>味方が凍結/氷拡散/超電導/氷結晶反応を起こした時、</color>手札に<color=#FFFFFFFF>$[C111163]</color>を生成する。（1ラウンド3回まで）",
+			"descriptionreplaced": "【固有】スカークはチャージを獲得できず、代わりに<color=#FFFFFFFF>蛇の狡智</color>を最大7まで蓄積できる。\\n<color=#FFFFFFFF>味方が凍結/氷拡散/超電導/氷結晶反応を起こした時、</color>手札に<color=#FFFFFFFF>虚境の裂け目</color>を生成する。（1ラウンド3回まで）",
+			"description": "【固有】スカークはチャージを獲得できず、代わりに蛇の狡智を最大7まで蓄積できる。\n味方が凍結/氷拡散/超電導/氷結晶反応を起こした時、手札に虚境の裂け目を生成する。（1ラウンド3回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

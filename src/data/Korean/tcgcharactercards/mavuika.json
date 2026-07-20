@@ -1,0 +1,99 @@
+{
+	"id": 1315,
+	"name": "마비카",
+	"shareid": 478,
+	"hp": 10,
+	"maxenergy": 0,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_NATLAN"
+	],
+	"tagstext": [
+		"불 원소",
+		"양손검",
+		"나타"
+	],
+	"storytitle": "밤을 사르는 불꽃·마비카",
+	"storytext": "다시 타오른 가장 찬란한 불",
+	"source": "캣테일 술집에서 마비카 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 13151,
+			"name": "불로 엮은 삶",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13152,
+			"name": "해방의 순간",
+			"descriptionraw": "자신이 <color=#FFFFFFFF>$[C113151]</color>에 진입해 <color=#FFFFFFFF>「밤혼」</color>을 2pt 획득하고, <color=#FFFFFFFF>바이크</color> 3장 중 1장을 $[K59]해 핸드 카드로 가져온다.",
+			"descriptionreplaced": "자신이 <color=#FFFFFFFF>밤혼 가호</color>에 진입해 <color=#FFFFFFFF>「밤혼」</color>을 2pt 획득하고, <color=#FFFFFFFF>바이크</color> 3장 중 1장을 <color=#FFFFFFFF>선정</color>해 핸드 카드로 가져온다.",
+			"description": "자신이 밤혼 가호에 진입해 「밤혼」을 2pt 획득하고, 바이크 3장 중 1장을 선정해 핸드 카드로 가져온다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13153,
+			"name": "불타는 하늘",
+			"descriptionraw": "본 캐릭터가 <color=#FFFFFFFF>$[C113151]</color>에 진입하고 <color=#FFFFFFFF>「밤혼」</color>을 1pt 획득하며, 자신의 모든 전의를 소모해 상대 출전 캐릭터에게 소모한 전의 만큼의 $[D__KEY__ELEMENT]를 준다.\\n<color=#FFFFFFFF>전의</color>를 6pt 소모하면 자신에게 <color=#FFFFFFFF>$[C113152]</color>를 부착한다.",
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "본 캐릭터가 <color=#FFFFFFFF>밤혼 가호</color>에 진입하고 <color=#FFFFFFFF>「밤혼」</color>을 1pt 획득하며, 자신의 모든 전의를 소모해 상대 출전 캐릭터에게 소모한 전의 만큼의 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 준다.\\n<color=#FFFFFFFF>전의</color>를 6pt 소모하면 자신에게 <color=#FFFFFFFF>삶과 죽음의 용광로</color>를 부착한다.",
+			"description": "본 캐릭터가 밤혼 가호에 진입하고 「밤혼」을 1pt 획득하며, 자신의 모든 전의를 소모해 상대 출전 캐릭터에게 소모한 전의 만큼의 불 원소 피해를 준다.\n전의를 6pt 소모하면 자신에게 삶과 죽음의 용광로를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 4
+				},
+				{
+					"costtype": "GCG_COST_SPECIAL_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13154,
+			"name": "전의",
+			"descriptionraw": "캐릭터가 <color=#FFFFFFFF>원소 에너지</color>를 획득하지 않는다.\\n아군이 <color=#FFFFFFFF>「밤혼」</color>을 소모하거나 「일반 공격」 사용 후, 전의를 1pt 획득한다.\\n본 캐릭터가 <color=#FFFFFFFF>원소전투 스킬</color> 또는 <color=#FFFFFFFF>원소폭발</color> 사용 시, <color=#FFFFFFFF>$[C113153]</color>를 부착한다.",
+			"descriptionreplaced": "캐릭터가 <color=#FFFFFFFF>원소 에너지</color>를 획득하지 않는다.\\n아군이 <color=#FFFFFFFF>「밤혼」</color>을 소모하거나 「일반 공격」 사용 후, 전의를 1pt 획득한다.\\n본 캐릭터가 <color=#FFFFFFFF>원소전투 스킬</color> 또는 <color=#FFFFFFFF>원소폭발</color> 사용 시, <color=#FFFFFFFF>불꽃 무장·불볕 고리</color>를 부착한다.",
+			"description": "캐릭터가 원소 에너지를 획득하지 않는다.\n아군이 「밤혼」을 소모하거나 「일반 공격」 사용 후, 전의를 1pt 획득한다.\n본 캐릭터가 원소전투 스킬 또는 원소폭발 사용 시, 불꽃 무장·불볕 고리를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 13155,
+			"name": "바이크·질주",
+			"descriptionraw": "<color=#FFFFFFFF>행동 단계 시작 시:</color> 만능 원소 주사위를 2개 생성한다.",
+			"descriptionreplaced": "<color=#FFFFFFFF>행동 단계 시작 시:</color> 만능 원소 주사위를 2개 생성한다.",
+			"description": "행동 단계 시작 시: 만능 원소 주사위를 2개 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"id": 1711,
+	"name": "Lauma",
+	"shareid": 585,
+	"hp": 11,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_DENDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Dendro",
+		"Catalizador",
+		"Nod Krai"
+	],
+	"storytitle": "Lauma - La Cantora Lunaperpetua",
+	"storytext": "La luna reflejada en el agua se fragmenta entre las ondulaciones.",
+	"source": "Se obtiene tras retar y ganar a Lauma en un duelo amistoso en la taberna Cola de Gato",
+	"skills": [
+		{
+			"id": 17111,
+			"name": "Peregrinaje de la Linnunrata",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2107}<color=#7EC236FF>Daño Dendro</color>.",
+			"description": "Inflige 1 pt. de Daño Dendro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17112,
+			"name": "Runo: Reposo sin alba del Karsikko",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y crea un <color=#FFFFFFFF>$[C117111|s1]</color>. Si en tu mano tienes alguna carta con $[K3005|s1], se elimina 1 carga de $[K3005|s1] de 1 carta aleatoria y, en su lugar, crea un <color=#FFFFFFFF>$[C117111|s1]</color> que inflige 2 pts. de daño.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_DENDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2107}<color=#7EC236FF>Daño Dendro</color> y crea un <color=#FFFFFFFF>santuario bosquescarcha</color>. Si en tu mano tienes alguna carta con <color=#FFFFFFFF>reducción de coste</color>, se elimina 1 carga de <color=#FFFFFFFF>reducción de coste</color> de 1 carta aleatoria y, en su lugar, crea un <color=#FFFFFFFF>santuario bosquescarcha</color> que inflige 2 pts. de daño.",
+			"description": "Inflige 1 pt. de Daño Dendro y crea un santuario bosquescarcha. Si en tu mano tienes alguna carta con reducción de coste, se elimina 1 carga de reducción de coste de 1 carta aleatoria y, en su lugar, crea un santuario bosquescarcha que inflige 2 pts. de daño.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 17113,
+			"name": "Runo: Luna de mil corazones",
+			"descriptionraw": "Aplica una <color=#FFFFFFFF>$[K3005|s1]</color> a 3 cartas aleatorias de tu mano cuyo <color=#FFFFFFFF>$[K3002|s1]</color> no sea 0, y otorga 3 cargas de <color=#FFFFFFFF>$[C117112|s1]</color>.",
+			"descriptionreplaced": "Aplica una <color=#FFFFFFFF><color=#FFFFFFFF>reducción de coste</color></color> a 3 cartas aleatorias de tu mano cuyo <color=#FFFFFFFF><color=#FFFFFFFF>coste actual de dados elementales</color></color> no sea 0, y otorga 3 cargas de <color=#FFFFFFFF>letanía albar</color>.",
+			"description": "Aplica una reducción de coste a 3 cartas aleatorias de tu mano cuyo coste actual de dados elementales no sea 0, y otorga 3 cargas de letanía albar.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_DENDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 17114,
+			"name": "Bendición presagiolunar: Coro de la naturaleza",
+			"descriptionraw": "Pasiva: cuando los personajes enemigos se vean afectados por una reacción de <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}Florecimiento</color> en esta partida, esta se convertirá en la reacción de <color=#FFFFFFFF>$[K3009]</color>.\\n<color=#FFFFFFFF>Cuando el enemigo es afectado por una reacción de $[K3009]</color>, aplica una $[K3005|s1] a 1 carta aleatoria de tu mazo.",
+			"descriptionreplaced": "Pasiva: cuando los personajes enemigos se vean afectados por una reacción de <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}Florecimiento</color> en esta partida, esta se convertirá en la reacción de <color=#FFFFFFFF><color=#FFFFFFFF>Florecimiento Lunar</color></color>.\\n<color=#FFFFFFFF>Cuando el enemigo es afectado por una reacción de <color=#FFFFFFFF>Florecimiento Lunar</color></color>, aplica una <color=#FFFFFFFF>reducción de coste</color> a 1 carta aleatoria de tu mazo.",
+			"description": "Pasiva: cuando los personajes enemigos se vean afectados por una reacción de Florecimiento en esta partida, esta se convertirá en la reacción de Florecimiento Lunar.\nCuando el enemigo es afectado por una reacción de Florecimiento Lunar, aplica una reducción de coste a 1 carta aleatoria de tu mazo.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}
