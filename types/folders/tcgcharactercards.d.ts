@@ -17,7 +17,7 @@ declare module "genshin-db" {
 		storytext: string; // translated
 
 		source: string; // translated
-		
+
 		skills: TcgSkills[];
 
 		images: {
@@ -44,6 +44,7 @@ declare module "genshin-db" {
 		descriptionraw: string; // translated
 		descriptionreplaced: string; // translated
 
+		isPrepareSkill?: boolean; // if a skill needs to be prepared (takes one turn to use)
 		playcost: TcgSkillPlayCost[];
 	}
 
