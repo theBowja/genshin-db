@@ -529,7 +529,7 @@ function importData(folder, collateFunc, dontwrite = false, deleteexisting, skip
 }
 
 // checkExistingImageBlacklist = true; // 
-gameVersion = "6.7"; // new data will use this as added version. replace this with empty string if you dont know
+gameVersion = "7.0"; // new data will use this as added version. replace this with empty string if you dont know
 console.log(gameVersion);
 
 // importData('characters');
