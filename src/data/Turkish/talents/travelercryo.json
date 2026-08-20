@@ -1,6 +1,251 @@
 {
 	"id": 705,
 	"name": "Gezgin (Buz)",
-	"combat1": {},
-	"costs": {}
+	"combat1": {
+		"name": "Yabancı Buz Parıltısı",
+		"descriptionRaw": "<color=#FFD780FF>Normal Saldırı</color>\nEn fazla 5 hızlı saldırı yapar.\n\n<color=#FFD780FF>Yüklü Saldırı</color>\nBelirli miktarda Dayanıklılık harcayarak 2 hızlı kılıç saldırısı yapar.\n\n<color=#FFD780FF>Havadan Saldırı</color>\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"description": "Normal Saldırı\nEn fazla 5 hızlı saldırı yapar.\n\nYüklü Saldırı\nBelirli miktarda Dayanıklılık harcayarak 2 hızlı kılıç saldırısı yapar.\n\nHavadan Saldırı\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.",
+		"attributes": {
+			"labels": [
+				"1 Vuruş Hasarı|{param1:F1P}",
+				"2 Vuruş Hasarı|{param2:F1P}",
+				"3 Vuruş Hasarı|{param3:F1P}",
+				"4 Vuruş Hasarı|{param4:F1P}",
+				"5 Vuruş Hasarı|{param5:F1P}",
+				"Yüklü Saldırı Hasarı|{param6:F1P}+{param7:F1P}",
+				"Yüklü Saldırı Dayanıklılık Maliyeti|{param8:F1}",
+				"Havadan Saldırı Hasarı|{param9:F1P}",
+				"Havadan Saldırı Hasarı (Alçaktan/Yüksekten)|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Buz Sisi Kılıcı",
+		"descriptionRaw": "Silahını düşmana saplar ve buz gibi soğuk bir sis ortaya çıkarır. Bu saldırı, önündeki düşmanlara <color=#99FFFFFF>Buz Hasarı</color> verir ve Gezginin yanında bir Buzdelen Yıldızı oluşturur.\n\n<color=#FFD780FF>Buzdelen Yıldızı</color>\n·Kendi grup üyelerini savaş alanında takip eder ve düzenli aralıklarla yakındaki düşmanlara buz kristalleri fırlatarak <color=#99FFFFFF>Buz Hasarı</color> verir.\n<color=#FFD780FF>Işıltı: Yıldız İletimi</color>: Buzdelen Yıldızı artık düzenli aralıklarla düşmanlara buz kristalleri fırlatmaz. Bunun yerine, Gezgin bir düşmana Normal Saldırı, Yüklü Saldırı veya Havadan Saldırıyla vurduğunda ortak saldırı yaparak düşmanlara buz kristali fırlatır. Bu etki 0,2 saniyede bir tetiklenebilir.\n·Bir düşmana buz kristali isabet ettiğinde Gezgin 1 kademe {LINK#N10050002}<color=#FFD780FF>Buz Işıltısı</color>{/LINK} kazanır, 8 kademeye kadar birikebilir.\n·Savaşta değilken <color=#FFD780FF>Buz Işıltısı</color> 30sn sonra sona erer.\n\n<i>Paimon ile birlikte buzun oluşumunu gözlemlediniz.</i>",
+		"description": "Silahını düşmana saplar ve buz gibi soğuk bir sis ortaya çıkarır. Bu saldırı, önündeki düşmanlara Buz Hasarı verir ve Gezginin yanında bir Buzdelen Yıldızı oluşturur.\n\nBuzdelen Yıldızı\n·Kendi grup üyelerini savaş alanında takip eder ve düzenli aralıklarla yakındaki düşmanlara buz kristalleri fırlatarak Buz Hasarı verir.\nIşıltı: Yıldız İletimi: Buzdelen Yıldızı artık düzenli aralıklarla düşmanlara buz kristalleri fırlatmaz. Bunun yerine, Gezgin bir düşmana Normal Saldırı, Yüklü Saldırı veya Havadan Saldırıyla vurduğunda ortak saldırı yaparak düşmanlara buz kristali fırlatır. Bu etki 0,2 saniyede bir tetiklenebilir.\n·Bir düşmana buz kristali isabet ettiğinde Gezgin 1 kademe **Buz Işıltısı** kazanır, 8 kademeye kadar birikebilir.\n·Savaşta değilken Buz Işıltısı 30sn sonra sona erer.",
+		"flavorText": "Paimon ile birlikte buzun oluşumunu gözlemlediniz.",
+		"attributes": {
+			"labels": [
+				"Beceri Hasarı|{param1:F1P}",
+				"Buz Kristali Hasarı|{param2:F1P}",
+				"Buzdelen Yıldızı Süresi|{param4:F1}sn",
+				"BS|{param3:F1}sn"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Donuk Mızrak",
+		"descriptionRaw": "Buz elementinin gücüyle bir buz mızrağı oluşturur, ardından mızrağı düşmana fırlatarak birden fazla defa <color=#99FFFFFF>Buz Hasarı</color> verir.\nKullanıldığında Gezgin mevcut tüm {LINK#N10050002}<color=#FFD780FF>Buz Işıltısı</color>{/LINK} kademelerini tüketerek bu Element Patlamasının verdiği Hasarı artırır. 8 kademe <color=#FFD780FF>Buz Işıltısı</color> tüketildiğinde mızrakların Hasar verme sayısı da artar.\n\n{LINK#N11500004}<color=#FFD780FF>Işıltı: Yıldız Parıltısı</color>{/LINK}: Mevcut Element Patlamasının Hasarı değişerek ilgili Yıldız Parıltısı tepkimesi türünün <color=#99FFFFFF>Buz Hasarını</color> verir.\n\n<i>Paimon ile beraber buz sarkıtlarının keskin kenarlarını hissettiniz.</i>",
+		"description": "Buz elementinin gücüyle bir buz mızrağı oluşturur, ardından mızrağı düşmana fırlatarak birden fazla defa Buz Hasarı verir.\nKullanıldığında Gezgin mevcut tüm **Buz Işıltısı** kademelerini tüketerek bu Element Patlamasının verdiği Hasarı artırır. 8 kademe Buz Işıltısı tüketildiğinde mızrakların Hasar verme sayısı da artar.\n\n**Işıltı: Yıldız Parıltısı**: Mevcut Element Patlamasının Hasarı değişerek ilgili Yıldız Parıltısı tepkimesi türünün Buz Hasarını verir.",
+		"flavorText": "Paimon ile beraber buz sarkıtlarının keskin kenarlarını hissettiniz.",
+		"attributes": {
+			"labels": [
+				"Buz Mızrağı Hasarı|{param1:F1P}/Vuruş",
+				"Buz Işıltısı Hasar Bonusu|{param2:F1P}",
+				"Yıldız İletimi Buz Mızrağı Tek Vuruş Hasarı|{param8:F1P}",
+				"Yıldız İletimi Buz Işıltısı Hasar Bonusu|{param9:F1P}",
+				"Yıldız Girdabı Buz Mızrağı Tek Vuruş Hasarı|{param10:F1P}",
+				"Yıldız Girdabı Buz Işıltısı Hasar Bonusu|{param11:F1P}",
+				"Saldırıdaki Darbe Sayısı|{param3:I}",
+				"Maks. Kademede Ek Buz Işıltısı Darbesi|{param4:I}",
+				"BS|{param6:F1}sn",
+				"Enerji Maliyeti|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Keskin Soğuk",
+		"descriptionRaw": "<color=#FFD780FF>Işıltı: Yıldız İletimi</color>: Alanda bir <color=#FFD780FF>Buzdelen Yıldızı</color> varken Gezginin Normal, Yüklü ve Havadan Saldırılarıyla verdiği Hasar, başka bir Element Tesiriyle değiştirilemeyecek şekilde <color=#99FFFFFF>Buz Hasarına</color> dönüşür. Ayrıca verilen Hasar, Gezginin Saldırısının %80'i kadar artar.",
+		"description": "Işıltı: Yıldız İletimi: Alanda bir Buzdelen Yıldızı varken Gezginin Normal, Yüklü ve Havadan Saldırılarıyla verdiği Hasar, başka bir Element Tesiriyle değiştirilemeyecek şekilde Buz Hasarına dönüşür. Ayrıca verilen Hasar, Gezginin Saldırısının %80'i kadar artar."
+	},
+	"passive2": {
+		"name": "Berrak Buz",
+		"descriptionRaw": "Gezginin Element Ustalığı, Saldırısının %8'i kadar artar. Bu şekilde en fazla 160 Element Ustalığı artışı sağlanabilir.",
+		"description": "Gezginin Element Ustalığı, Saldırısının %8'i kadar artar. Bu şekilde en fazla 160 Element Ustalığı artışı sağlanabilir."
+	},
+	"passive3": {
+		"name": "Yıldız Takdisi: Yanıltıcı Buzul Ayna",
+		"descriptionRaw": "Gezgin bir <color=#FFD780FF>Kutup Yıldızı Alanı</color> içindeyken {LINK#N11330003}<color=#FFD780FF>Işıltı: Yıldız İletimi</color>{/LINK} durumuna, yakındaki bir grup üyesi bir Yıldız Girdabı tepkimesi tetiklediğinde ise 8 saniyeliğine <color=#FFD780FF>Işıltı: Yıldız Girdabı</color> durumuna girer.\nBir grup üyesi bir Süper İletim veya Buz Girdabı tepkimesi tetiklediğinde bu tepkime, Yıldız İletimi veya Yıldız Girdabı tepkimesine dönüşür ve Gezginin Saldırısının her 100 puanı için söz konusu tepkimenin Temel Hasarı %0,35 artar. Bu şekilde en fazla %7 artış elde edilebilir.",
+		"description": "Gezgin bir Kutup Yıldızı Alanı içindeyken **Işıltı: Yıldız İletimi** durumuna, yakındaki bir grup üyesi bir Yıldız Girdabı tepkimesi tetiklediğinde ise 8 saniyeliğine Işıltı: Yıldız Girdabı durumuna girer.\nBir grup üyesi bir Süper İletim veya Buz Girdabı tepkimesi tetiklediğinde bu tepkime, Yıldız İletimi veya Yıldız Girdabı tepkimesine dönüşür ve Gezginin Saldırısının her 100 puanı için söz konusu tepkimenin Temel Hasarı %0,35 artar. Bu şekilde en fazla %7 artış elde edilebilir."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104365,
+				"name": "Merhamet Öğretisi",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Kimerik Çekirdek",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Metanet Rehberi",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Simbiyotik Kimerik Çekirdek",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104372,
+				"name": "İhtişam Rehberi",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Simbiyotik Kimerik Çekirdek",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104366,
+				"name": "Merhamet Rehberi",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Simbiyotik Kimerik Çekirdek",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Metanet Rehberi",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Simbiyotik Kimerik Çekirdek",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104373,
+				"name": "İhtişam Felsefesi",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Asal Kimerik Düğüm",
+				"count": 4
+			},
+			{
+				"id": 113075,
+				"name": "Yükselmiş Örnek: Vezir",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104367,
+				"name": "Merhamet Felsefesi",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Asal Kimerik Düğüm",
+				"count": 6
+			},
+			{
+				"id": 113075,
+				"name": "Yükselmiş Örnek: Vezir",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Metanet Felsefesi",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Asal Kimerik Düğüm",
+				"count": 9
+			},
+			{
+				"id": 113075,
+				"name": "Yükselmiş Örnek: Vezir",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104373,
+				"name": "İhtişam Felsefesi",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Asal Kimerik Düğüm",
+				"count": 12
+			},
+			{
+				"id": 113075,
+				"name": "Yükselmiş Örnek: Vezir",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Bilgelik Tacı",
+				"count": 1
+			}
+		]
+	}
 }

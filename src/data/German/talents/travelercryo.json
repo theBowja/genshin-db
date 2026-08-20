@@ -1,6 +1,251 @@
 {
 	"id": 705,
 	"name": "Reisende (Kryo)",
-	"combat1": {},
-	"costs": {}
+	"combat1": {
+		"name": "Frostschimmer aus der Ferne",
+		"descriptionRaw": "<color=#FFD780FF>Standardangriff</color>\nFührt bis zu 5 Schwerthiebe hintereinander aus.\n\n<color=#FFD780FF>Heftiger Schlag</color>\nVerbraucht eine gewisse Menge Ausdauer und schwingt das Schwert zweimal schnell nach vorn.\n\n<color=#FFD780FF>Angriff aus dem Fall</color>\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"description": "Standardangriff\nFührt bis zu 5 Schwerthiebe hintereinander aus.\n\nHeftiger Schlag\nVerbraucht eine gewisse Menge Ausdauer und schwingt das Schwert zweimal schnell nach vorn.\n\nAngriff aus dem Fall\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden.",
+		"attributes": {
+			"labels": [
+				"SCH Phase 1|{param1:F1P}",
+				"SCH Phase 2|{param2:F1P}",
+				"SCH Phase 3|{param3:F1P}",
+				"SCH Phase 4|{param4:F1P}",
+				"SCH Phase 5|{param5:F1P}",
+				"SCH heftiger Schläge|{param6:F1P} + {param7:F1P}",
+				"Ausdauerverbrauch heftiger Schläge|{param8:F1} Punkte",
+				"SCH beim Fallen|{param9:F1P}",
+				"SCH beim Fallen aus niedriger/großer Höhe|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Eisnebelklinge",
+		"descriptionRaw": "#Schwingt die Waffe nach vorn, sticht zu und setzt starken Eisnebel frei, der Gegnern vor ihr <color=#99FFFFFF>Kryo-Schaden</color> zufügt sowie an ihrer Seite einen frostdurchbohrenden Stern beschwört.\n\n<color=#FFD780FF>Frostdurchbohrender Stern</color>\n· Folgt der eigenen Figur in der Truppe und schießt in regelmäßigen Abständen Kryo-Kristalle auf Gegner in der Nähe, die diesen <color=#99FFFFFF>Kryo-Schaden</color> zufügen.\n<color=#FFD780FF>Leuchten – Stellar-Supraleiter</color>: Der frostdurchbohrende Stern schießt Kryo-Kristalle nicht mehr in regelmäßigen Abständen, sondern feuert, wenn {F#die}{M#der} Reisende einen Gegner mit einem Standardangriff, heftigen Schlag oder Angriff aus dem Fall trifft, als ein abgestimmter Angriff einen Kryo-Kristall ab, 0,2{NON_BREAK_SPACE}s Abklingzeit.\n· Sammelt für {F#die Reisende}{M#den Reisenden}, wenn ein Gegner von einem Kryo-Kristall getroffen wird, eine Stapelung {LINK#N10050002}<color=#FFD780FF>Kälteglanz</color>{/LINK} an. Dieser Effekt ist bis zu 8-fach stapelbar.\n· Entfernt, wenn {F#sie}{M#er} sich nicht im Kampf befindet, den <color=#FFD780FF>Kälteglanz</color> nach 30{NON_BREAK_SPACE}s.\n\n<i>Du hast mit Paimon zusammen beobachtet, wie sich Raureif bildet.</i>",
+		"description": "Schwingt die Waffe nach vorn, sticht zu und setzt starken Eisnebel frei, der Gegnern vor ihr Kryo-Schaden zufügt sowie an ihrer Seite einen frostdurchbohrenden Stern beschwört.\n\nFrostdurchbohrender Stern\n· Folgt der eigenen Figur in der Truppe und schießt in regelmäßigen Abständen Kryo-Kristalle auf Gegner in der Nähe, die diesen Kryo-Schaden zufügen.\nLeuchten – Stellar-Supraleiter: Der frostdurchbohrende Stern schießt Kryo-Kristalle nicht mehr in regelmäßigen Abständen, sondern feuert, wenn der Reisende einen Gegner mit einem Standardangriff, heftigen Schlag oder Angriff aus dem Fall trifft, als ein abgestimmter Angriff einen Kryo-Kristall ab, 0,2 s Abklingzeit.\n· Sammelt für den Reisenden, wenn ein Gegner von einem Kryo-Kristall getroffen wird, eine Stapelung **Kälteglanz** an. Dieser Effekt ist bis zu 8-fach stapelbar.\n· Entfernt, wenn er sich nicht im Kampf befindet, den Kälteglanz nach 30 s.",
+		"flavorText": "Du hast mit Paimon zusammen beobachtet, wie sich Raureif bildet.",
+		"attributes": {
+			"labels": [
+				"Fähigkeits-SCH|{param1:F1P}",
+				"Kryo-Kristall-SCH|{param2:F1P}",
+				"SCH durch Frostdurchbohrender Stern|{param4:F1} s",
+				"Abklingzeit|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Frostspeer",
+		"descriptionRaw": "#Formt mithilfe von Kryo-Kraft einen Speer, schleudert diesen auf Gegner und fügt diesen mehrfach <color=#99FFFFFF>Kryo-Schaden</color> zu.\nBeim Anwenden verbraucht {F#die}{M#der} Reisende alle Stapelungen {LINK#N10050002}<color=#FFD780FF>Kälteglanz</color>{/LINK}, um den durch diese Spezialfähigkeit verursachten Schaden zu erhöhen. Erhöht bei 8 verbrauchten Stapelungen <color=#FFD780FF>Kälteglanz</color> zudem die Anzahl der Schadenstreffer des Speers.\n\n{LINK#N11500004}<color=#FFD780FF>Leuchten – Stellarfunkeln</color>{/LINK}: Durch die diesmalige Spezialfähigkeit verursachter Schaden wird als <color=#99FFFFFF>Kryo-Schaden</color> der entsprechenden Stellarfunkeln-Reaktion gewertet.\n\n<i>Du hast mit Paimon zusammen die Schärfe des Eises gespürt.</i>",
+		"description": "Formt mithilfe von Kryo-Kraft einen Speer, schleudert diesen auf Gegner und fügt diesen mehrfach Kryo-Schaden zu.\nBeim Anwenden verbraucht der Reisende alle Stapelungen **Kälteglanz**, um den durch diese Spezialfähigkeit verursachten Schaden zu erhöhen. Erhöht bei 8 verbrauchten Stapelungen Kälteglanz zudem die Anzahl der Schadenstreffer des Speers.\n\n**Leuchten – Stellarfunkeln**: Durch die diesmalige Spezialfähigkeit verursachter Schaden wird als Kryo-Schaden der entsprechenden Stellarfunkeln-Reaktion gewertet.",
+		"flavorText": "Du hast mit Paimon zusammen die Schärfe des Eises gespürt.",
+		"attributes": {
+			"labels": [
+				"Speer-SCH Phase 1|{param1:F1P}",
+				"SCH-Bonus von Kälteglanz|{param2:F1P}",
+				"SCH durch Stellar-Supraleiter-Speer Phase 1|{param8:F1P}",
+				"SCH-Bonus von Stellar-Supraleiter-Kälteglanz|{param9:F1P}",
+				"SCH durch Stellar-Verwirbelungs-Speer Phase 1|{param10:F1P}",
+				"SCH-Bonus für Stellar-Verwirbelungs-Kälteglanz|{param11:F1P}",
+				"Angriffszahl|{param3:I}",
+				"Zusätzliche Angriffszahl bei vollem Kälteglanz|{param4:I}",
+				"Abklingzeit|{param6:F1} s",
+				"Elementarenergie|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Selbstschärfender Frost",
+		"descriptionRaw": "#<color=#FFD780FF>Leuchten – Stellar-Supraleiter</color>: Wandelt während der Wirkungsdauer von <color=#FFD780FF>Frostdurchbohrender Stern</color> den durch Standardangriffe, heftige Schläge und Angriffe aus dem Fall {F#der}{M#des} Reisenden verursachten Schaden in <color=#99FFFFFF>Kryo-Schaden</color> um, der nicht durch andere Elemente überdeckt werden kann. Erhöht zudem den verursachten Schaden um 80{NON_BREAK_SPACE}% des ANG {F#der}{M#des} Reisenden.",
+		"description": "Leuchten – Stellar-Supraleiter: Wandelt während der Wirkungsdauer von Frostdurchbohrender Stern den durch Standardangriffe, heftige Schläge und Angriffe aus dem Fall des Reisenden verursachten Schaden in Kryo-Schaden um, der nicht durch andere Elemente überdeckt werden kann. Erhöht zudem den verursachten Schaden um 80 % des ANG des Reisenden."
+	},
+	"passive2": {
+		"name": "Klares Eis",
+		"descriptionRaw": "#Erhöht die Elementarkunde {F#der}{M#des} Reisenden um 8{NON_BREAK_SPACE}% {F#ihres}{M#seines} ANG. Auf diese Weise kann die Elementarkunde {F#der}{M#des} Reisenden um maximal 160 Punkte erhöht werden.",
+		"description": "Erhöht die Elementarkunde des Reisenden um 8 % seines ANG. Auf diese Weise kann die Elementarkunde des Reisenden um maximal 160 Punkte erhöht werden."
+	},
+	"passive3": {
+		"name": "Sternensegnung – Wandelnder Eisspiegel",
+		"descriptionRaw": "#Versetzt {F#die Reisende}{M#den Reisenden}, wenn {F#sie}{M#er} sich im {LINK#N11330003}<color=#FFD780FF>Sternglanzfeld</color>{/LINK} befindet oder ein Truppenmitglied in der Nähe die Reaktion Stellar-Verwirbelung auslöst, innerhalb von 8{NON_BREAK_SPACE}s in den Zustand <color=#FFD780FF>Leuchten – Stellar-Supraleiter</color>/<color=#FFD780FF>Leuchten – Stellar-Verwirbelung</color>.\nWandelt, wenn ein Truppenmitglied die Reaktion Supraleiter/Kryo-Verwirbelung auslöst, diese stattdessen in die Reaktion Stellar-Supraleiter/Stellar-Verwirbelung um und erhöht den Basis-Schaden der oben genannten Reaktionen von Truppenmitgliedern basierend auf dem ANG {F#der}{M#des} Reisenden: Erhöht den Basis-SCH der oben genannten Reaktionen pro 100 Punkte um 0,35{NON_BREAK_SPACE}%. Auf diese Weise kann der Schaden um bis zu 7{NON_BREAK_SPACE}% erhöht werden.",
+		"description": "Versetzt den Reisenden, wenn er sich im **Sternglanzfeld** befindet oder ein Truppenmitglied in der Nähe die Reaktion Stellar-Verwirbelung auslöst, innerhalb von 8 s in den Zustand Leuchten – Stellar-Supraleiter/Leuchten – Stellar-Verwirbelung.\nWandelt, wenn ein Truppenmitglied die Reaktion Supraleiter/Kryo-Verwirbelung auslöst, diese stattdessen in die Reaktion Stellar-Supraleiter/Stellar-Verwirbelung um und erhöht den Basis-Schaden der oben genannten Reaktionen von Truppenmitgliedern basierend auf dem ANG des Reisenden: Erhöht den Basis-SCH der oben genannten Reaktionen pro 100 Punkte um 0,35 %. Auf diese Weise kann der Schaden um bis zu 7 % erhöht werden."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104365,
+				"name": "Lehren der „Güte“",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Chimärischer Kern",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Anleitung zur „Beharrlichkeit“",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Symbiontischer chimärischer Nukleus",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104372,
+				"name": "Anleitung zum „Ruhm“",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Symbiontischer chimärischer Nukleus",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104366,
+				"name": "Anleitung zur „Güte“",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Symbiontischer chimärischer Nukleus",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Anleitung zur „Beharrlichkeit“",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Symbiontischer chimärischer Nukleus",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104373,
+				"name": "Philosophie des „Ruhms“",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Primordiale Chimäre",
+				"count": 4
+			},
+			{
+				"id": 113075,
+				"name": "Aufstiegsprobe – Dame",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104367,
+				"name": "Philosophie der „Güte“",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Primordiale Chimäre",
+				"count": 6
+			},
+			{
+				"id": 113075,
+				"name": "Aufstiegsprobe – Dame",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophie der „Beharrlichkeit“",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Primordiale Chimäre",
+				"count": 9
+			},
+			{
+				"id": 113075,
+				"name": "Aufstiegsprobe – Dame",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104373,
+				"name": "Philosophie des „Ruhms“",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Primordiale Chimäre",
+				"count": 12
+			},
+			{
+				"id": 113075,
+				"name": "Aufstiegsprobe – Dame",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Krone der Weisheit",
+				"count": 1
+			}
+		]
+	}
 }

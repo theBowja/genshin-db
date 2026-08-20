@@ -1,6 +1,251 @@
 {
 	"id": 705,
 	"name": "Voyageuse (Cryo)",
-	"combat1": {},
-	"costs": {}
+	"combat1": {
+		"name": "Givre scintillant au loin",
+		"descriptionRaw": "<color=#FFD780FF>Attaque normale</color>\nEnchaîne jusqu'à 5 coups d'épée.\n\n<color=#FFD780FF>Attaque chargée</color>\nConsomme de l'endurance pour déclencher deux coups d'épée rapides.\n\n<color=#FFD780FF>Attaque plongeante</color>\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"description": "Attaque normale\nEnchaîne jusqu'à 5 coups d'épée.\n\nAttaque chargée\nConsomme de l'endurance pour déclencher deux coups d'épée rapides.\n\nAttaque plongeante\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT 5e coup|{param5:F1P}",
+				"DGT attaque chargée|{param6:F1P}+{param7:F1P}",
+				"Coût d'endurance attaque chargée|{param8:F1} pts",
+				"DGT durant la chute|{param9:F1P}",
+				"DGT chute basse/élevée|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Percée du brouillard givrant",
+		"descriptionRaw": "#Poignarde l'adversaire et libère un brouillard glacial, infligeant des <color=#99FFFFFF>DGT Cryo</color> devant {M#le voyageur}{F#la voyageuse} et formant une étoile perce-givre à ses côtés.\n\n<color=#FFD780FF>Étoile perce-givre</color>\n· Suit votre personnage dans l'équipe et tire périodiquement des cristaux de glace sur les ennemis proches, infligeant des <color=#99FFFFFF>DGT Cryo</color>.\n<color=#FFD780FF>Radiance « Astroconduction »</color> : l'étoile perce-givre ne tire plus périodiquement de cristaux de glace sur les ennemis, mais en tire lors d'une attaque coordonnée lorsque {M#le voyageur}{F#la voyageuse} touche un ennemi avec une attaque normale, chargée ou plongeante, cet effet pouvant être déclenché une fois toutes les 0,2 s.\n· Lorsqu'un cristal de glace touche un ennemi, {M#le voyageur}{F#la voyageuse} obtient 1 cumul de {LINK#N10050002}<color=#FFD780FF>lueur givrée</color>{/LINK}, jusqu'à un maximum de 8 cumuls.\n· Hors combat, la <color=#FFD780FF>lueur givrée</color> prend fin après 30 s.\n\n<i>Paimon et vous avez observé la formation des cristaux de givre.</i>",
+		"description": "Poignarde l'adversaire et libère un brouillard glacial, infligeant des DGT Cryo devant le voyageur et formant une étoile perce-givre à ses côtés.\n\nÉtoile perce-givre\n· Suit votre personnage dans l'équipe et tire périodiquement des cristaux de glace sur les ennemis proches, infligeant des DGT Cryo.\nRadiance « Astroconduction » : l'étoile perce-givre ne tire plus périodiquement de cristaux de glace sur les ennemis, mais en tire lors d'une attaque coordonnée lorsque le voyageur touche un ennemi avec une attaque normale, chargée ou plongeante, cet effet pouvant être déclenché une fois toutes les 0,2 s.\n· Lorsqu'un cristal de glace touche un ennemi, le voyageur obtient 1 cumul de **lueur givrée**, jusqu'à un maximum de 8 cumuls.\n· Hors combat, la lueur givrée prend fin après 30 s.",
+		"flavorText": "Paimon et vous avez observé la formation des cristaux de givre.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P}",
+				"DGT cristal de glace|{param2:F1P}",
+				"Durée d'étoile perce-givre|{param4:F1} s",
+				"Temps de recharge|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Javelot de congélation",
+		"descriptionRaw": "#Utilise l'élément Cryo pour créer un javelot de glace avant de le lancer sur les ennemis pour infliger plusieurs fois des <color=#99FFFFFF>DGT Cryo</color>.\nLors de l'utilisation {M#le voyageur}{F#la voyageuse} consomme toute sa {LINK#N10050002}<color=#FFD780FF>lueur givrée</color>{/LINK} pour augmenter les DGT infligés par ce déchaînement élémentaire. Consommer 8 cumuls de <color=#FFD780FF>lueur givrée</color> permet également d'augmenter le nombre d'instances de DGT infligés par le javelot.\n\n{LINK#N11500004}<color=#FFD780FF>Radiance astrale</color>{/LINK} : convertit les DGT infligés en <color=#99FFFFFF>DGT Cryo</color> considérés comme des DGT de réaction astrale correspondante.\n\n<i>Paimon et vous avez ressenti la morsure glacée des stalactites.</i>",
+		"description": "Utilise l'élément Cryo pour créer un javelot de glace avant de le lancer sur les ennemis pour infliger plusieurs fois des DGT Cryo.\nLors de l'utilisation le voyageur consomme toute sa **lueur givrée** pour augmenter les DGT infligés par ce déchaînement élémentaire. Consommer 8 cumuls de lueur givrée permet également d'augmenter le nombre d'instances de DGT infligés par le javelot.\n\n**Radiance astrale** : convertit les DGT infligés en DGT Cryo considérés comme des DGT de réaction astrale correspondante.",
+		"flavorText": "Paimon et vous avez ressenti la morsure glacée des stalactites.",
+		"attributes": {
+			"labels": [
+				"DGT javelot de glace|{param1:F1P}/coup",
+				"Bonus de DGT (lueur givrée)|{param2:F1P}",
+				"DGT d'Astroconduction javelot de glace|{param8:F1P}/coup",
+				"Bonus de DGT d'Astroconduction (lueur givrée)|{param9:F1P}",
+				"DGT d'Astrodispersion javelot de glace|{param10:F1P}/coup",
+				"Bonus de DGT d'Astrodispersion (lueur givrée)|{param11:F1P}",
+				"Enchaînement d'attaques|{param3:I}",
+				"Enchaînement d'attaques supplémentaires (lueur givrée, cumuls max)|{param4:I}",
+				"Temps de recharge|{param6:F1} s",
+				"Énergie élémentaire|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Gelée toujours vive",
+		"descriptionRaw": "#<color=#FFD780FF>Radiance « Astroconduction »</color> : Pendant la durée d'une <color=#FFD780FF>étoile perce-givre</color>, les attaques normales, chargées et plongeantes {M#du voyageur}{F#de la voyageuse} sont converties pour infliger des <color=#99FFFFFF>DGT Cryo</color> ne pouvant pas être enchantés, et les DGT infligés augmentent d'une valeur équivalant à 80 % de son ATQ.",
+		"description": "Radiance « Astroconduction » : Pendant la durée d'une étoile perce-givre, les attaques normales, chargées et plongeantes du voyageur sont converties pour infliger des DGT Cryo ne pouvant pas être enchantés, et les DGT infligés augmentent d'une valeur équivalant à 80 % de son ATQ."
+	},
+	"passive2": {
+		"name": "Glace lucide",
+		"descriptionRaw": "#La maîtrise élémentaire {M#du voyageur}{F#de la voyageuse} augmente d'une valeur équivalant à 8 % de son ATQ, la maîtrise élémentaire pouvant être augmentée d'un maximum de 160 pts de cette manière.",
+		"description": "La maîtrise élémentaire du voyageur augmente d'une valeur équivalant à 8 % de son ATQ, la maîtrise élémentaire pouvant être augmentée d'un maximum de 160 pts de cette manière."
+	},
+	"passive3": {
+		"name": "Jubilé stellaire : Miroir de givre illusoire",
+		"descriptionRaw": "#{M#Le voyageur}{F#La voyageuse} passe en <color=#FFD780FF>radiance « Astroconduction »</color> ou en <color=#FFD780FF>radiance « Astrodispersion »</color> pendant 8 s lorsqu'{M#il}{F#elle} est dans une {LINK#N11330003}<color=#FFD780FF>étendue polaris</color>{/LINK} ou lorsqu'un personnage de l'équipe a déclenché une réaction d'Astrodispersion à proximité, respectivement.\nLorsqu'un personnage de l'équipe déclenche une réaction de Supraconduction ou de Dispersion Cryo, elle est convertie en réaction d'Astroconduction ou d'Astrodispersion, dont les DGT de base augmentent selon l'ATQ {M#du voyageur}{F#de la voyageuse} : chaque tranche de 100 pts d'ATQ augmente les DGT de base de ces réactions de 0,35 %, les DGT pouvant être augmentés d'un maximum de 7 % de cette manière.",
+		"description": "Le voyageur passe en radiance « Astroconduction » ou en radiance « Astrodispersion » pendant 8 s lorsqu'il est dans une **étendue polaris** ou lorsqu'un personnage de l'équipe a déclenché une réaction d'Astrodispersion à proximité, respectivement.\nLorsqu'un personnage de l'équipe déclenche une réaction de Supraconduction ou de Dispersion Cryo, elle est convertie en réaction d'Astroconduction ou d'Astrodispersion, dont les DGT de base augmentent selon l'ATQ du voyageur : chaque tranche de 100 pts d'ATQ augmente les DGT de base de ces réactions de 0,35 %, les DGT pouvant être augmentés d'un maximum de 7 % de cette manière."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104365,
+				"name": "Enseignement de la Charité",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Graine chimérique",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guide de la Persévérance",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104372,
+				"name": "Guide de la Gloire",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104366,
+				"name": "Guide de la Charité",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guide de la Persévérance",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104373,
+				"name": "Philosophie de la Gloire",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 4
+			},
+			{
+				"id": 113075,
+				"name": "Échantillon ascensionné : Dame",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104367,
+				"name": "Philosophie de la Charité",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 6
+			},
+			{
+				"id": 113075,
+				"name": "Échantillon ascensionné : Dame",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophie de la Persévérance",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 9
+			},
+			{
+				"id": 113075,
+				"name": "Échantillon ascensionné : Dame",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104373,
+				"name": "Philosophie de la Gloire",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 12
+			},
+			{
+				"id": 113075,
+				"name": "Échantillon ascensionné : Dame",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
 }

@@ -1,6 +1,251 @@
 {
 	"id": 705,
 	"name": "Pengembara (Cryo)",
-	"combat1": {},
-	"costs": {}
+	"combat1": {
+		"name": "Foreign Frostglint",
+		"descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nMelancarkan hingga 5 serangan berturut-turut.\n\n<color=#FFD780FF>Charged Attack</color>\nMengonsumsi sejumlah Stamina untuk melancarkan dua tebasan pedang.\n\n<color=#FFD780FF>Plunging Attack</color>\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"description": "Normal Attack\nMelancarkan hingga 5 serangan berturut-turut.\n\nCharged Attack\nMengonsumsi sejumlah Stamina untuk melancarkan dua tebasan pedang.\n\nPlunging Attack\nMenerjang dari udara untuk menghantam tanah, menyerang musuh di jalur terjangan dan mengakibatkan DMG area saat mendarat.",
+		"attributes": {
+			"labels": [
+				"DMG Tahap 1|{param1:F1P}",
+				"DMG Tahap 2|{param2:F1P}",
+				"DMG Tahap 3|{param3:F1P}",
+				"DMG Tahap 4|{param4:F1P}",
+				"DMG Tahap 5|{param5:F1P}",
+				"DMG Charged Attack|{param6:F1P}+{param7:F1P}",
+				"Konsumsi Stamina Charged Attack|{param8:F1}",
+				"DMG Selama Plunging|{param9:F1P}",
+				"DMG Plunging Attack Rendah/Tinggi|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Ice Fog Piercer",
+		"descriptionRaw": "Mengayunkan senjata untuk menusuk ke depan dan melepaskan kabut es yang sangat dingin, mengakibatkan <color=#99FFFFFF>Cryo DMG</color> ke area depan dan membentuk Frostpierce Star di dekatmu.\n\n<color=#FFD780FF>Frostpierce Star</color>\n·Akan mengikuti Karakter sendiri di dalam party dan menembakkan kristal es secara berkala untuk menyerang musuh di sekitar, mengakibatkan <color=#99FFFFFF>Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: Frostpierce Star tidak akan lagi menembakkan kristal es secara berkala, melainkan akan menembakkan satu kristal es untuk melakukan serangan terkoordinasi pada musuh saat Normal Attack, Charged Attack, atau Plunging Attack Pengembara mengenai musuh, dapat terpicu sekali setiap 0,2 detik.\n·Saat kristal es mengenai musuh, Pengembara akan mengakumulasi 1 lapisan {LINK#N10050002}<color=#FFD780FF>Frostglow</color>{/LINK} untuk Pengembara, hingga maksimum 8 lapis.\n·Saat tidak dalam kondisi bertempur, <color=#FFD780FF>Frostglow</color> akan hilang setelah 30 detik.\n\n<i>Kamu telah mengamati pembentukan embun beku bersama Paimon.</i>",
+		"description": "Mengayunkan senjata untuk menusuk ke depan dan melepaskan kabut es yang sangat dingin, mengakibatkan Cryo DMG ke area depan dan membentuk Frostpierce Star di dekatmu.\n\nFrostpierce Star\n·Akan mengikuti Karakter sendiri di dalam party dan menembakkan kristal es secara berkala untuk menyerang musuh di sekitar, mengakibatkan Cryo DMG.\nRadiance: Stellar-Conduct: Frostpierce Star tidak akan lagi menembakkan kristal es secara berkala, melainkan akan menembakkan satu kristal es untuk melakukan serangan terkoordinasi pada musuh saat Normal Attack, Charged Attack, atau Plunging Attack Pengembara mengenai musuh, dapat terpicu sekali setiap 0,2 detik.\n·Saat kristal es mengenai musuh, Pengembara akan mengakumulasi 1 lapisan **Frostglow** untuk Pengembara, hingga maksimum 8 lapis.\n·Saat tidak dalam kondisi bertempur, Frostglow akan hilang setelah 30 detik.",
+		"flavorText": "Kamu telah mengamati pembentukan embun beku bersama Paimon.",
+		"attributes": {
+			"labels": [
+				"DMG Skill|{param1:F1P}",
+				"DMG Kristal Es|{param2:F1P}",
+				"Durasi Frostpierce Star|{param4:F1} dtk",
+				"Cooldown|{param3:F1} dtk"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Frostbound Javelin",
+		"descriptionRaw": "Menggunakan kekuatan elemen Cryo untuk menciptakan tombak es dan melemparkannya ke arah musuh, mengakibatkan <color=#99FFFFFF>Cryo DMG</color> beberapa kali.\nSaat dilancarkan, Pengembara akan mengonsumsi semua lapisan {LINK#N10050002}<color=#FFD780FF>Frostglow</color>{/LINK} untuk meningkatkan DMG yang diakibatkan oleh Elemental Burst ini. Jika mengonsumsi 8 lapis <color=#FFD780FF>Frostglow</color>, banyaknya jumlah serangan tombak esnya juga akan meningkat.\n\n{LINK#N11500004}<color=#FFD780FF>Radiance: Stellar Glimmer</color>{/LINK}: Elemental Burst kali ini berubah menjadi <color=#99FFFFFF>Cryo DMG</color> yang dianggap sebagai DMG reaksi Stellar Glimmer yang sesuai.\n\n<i>Kamu telah merasakan tajamnya tusukan es bersama Paimon.</i>",
+		"description": "Menggunakan kekuatan elemen Cryo untuk menciptakan tombak es dan melemparkannya ke arah musuh, mengakibatkan Cryo DMG beberapa kali.\nSaat dilancarkan, Pengembara akan mengonsumsi semua lapisan **Frostglow** untuk meningkatkan DMG yang diakibatkan oleh Elemental Burst ini. Jika mengonsumsi 8 lapis Frostglow, banyaknya jumlah serangan tombak esnya juga akan meningkat.\n\n**Radiance: Stellar Glimmer**: Elemental Burst kali ini berubah menjadi Cryo DMG yang dianggap sebagai DMG reaksi Stellar Glimmer yang sesuai.",
+		"flavorText": "Kamu telah merasakan tajamnya tusukan es bersama Paimon.",
+		"attributes": {
+			"labels": [
+				"DMG Satuan Tombak Es|{param1:F1P}",
+				"Peningkatan DMG Frostglow|{param2:F1P}",
+				"DMG Satuan Tombak Es Stellar-Conduct|{param8:F1P}",
+				"Peningkatan DMG Frostglow Stellar-Conduct|{param9:F1P}",
+				"DMG Satuan Tombak Es Stellar Swirl|{param10:F1P}",
+				"Peningkatan DMG Stellar Swirl Frostglow|{param11:F1P}",
+				"Jumlah Serangan|{param3:I}",
+				"Jumlah Serangan Frostglow Tambahan di Lapisan Maksimum|{param4:I}",
+				"Cooldown|{param6:F1} dtk",
+				"Konsumsi Energy|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Ever-Keen Frost",
+		"descriptionRaw": "<color=#FFD780FF>Radiance: Stellar-Conduct</color>: Selama durasi <color=#FFD780FF>Frostpierce Star</color>, Normal Attack, Charged Attack, dan Plunging Attack Pengembara akan dikonversi menjadi <color=#99FFFFFF>Cryo DMG</color> yang tidak bisa ditimpa Elemental Infusion lainnya, dan DMG yang diakibatkan meningkat sebesar 80% dari ATK Pengembara.",
+		"description": "Radiance: Stellar-Conduct: Selama durasi Frostpierce Star, Normal Attack, Charged Attack, dan Plunging Attack Pengembara akan dikonversi menjadi Cryo DMG yang tidak bisa ditimpa Elemental Infusion lainnya, dan DMG yang diakibatkan meningkat sebesar 80% dari ATK Pengembara."
+	},
+	"passive2": {
+		"name": "Lucent Ice",
+		"descriptionRaw": "Elemental Mastery Pengembara meningkat sebesar 8% ATK-nya. Peningkatan Elemental Mastery yang bisa diperoleh Pengembara dengan cara ini adalah maksimum 160 poin.",
+		"description": "Elemental Mastery Pengembara meningkat sebesar 8% ATK-nya. Peningkatan Elemental Mastery yang bisa diperoleh Pengembara dengan cara ini adalah maksimum 160 poin."
+	},
+	"passive3": {
+		"name": "Stellar Jubilee: Illusory Frostmirror",
+		"descriptionRaw": "Pengembara akan memasuki status <color=#FFD780FF>Radiance: Stellar-Conduct</color> saat berada di dalam {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK} atau <color=#FFD780FF>Radiance: Stellar Swirl</color> selama 8 detik setelah Karakter dalam party di sekitar memicu reaksi Stellar Swirl.\nKetika Karakter dalam party memicu reaksi Superconduct/Cryo Swirl, reaksi ini akan berubah menjadi reaksi Stellar-Conduct/Stellar Swirl dan DMG dasar dari reaksi yang disebutkan di atas akan meningkat berdasarkan ATK Pengembara: Setiap 100 poin ATK akan meningkatkan DMG dasar reaksinya sebesar 0,35%. Peningkatan DMG maksimum yang bisa didapatkan dengan cara ini adalah 7%.",
+		"description": "Pengembara akan memasuki status Radiance: Stellar-Conduct saat berada di dalam **Polestar Field** atau Radiance: Stellar Swirl selama 8 detik setelah Karakter dalam party di sekitar memicu reaksi Stellar Swirl.\nKetika Karakter dalam party memicu reaksi Superconduct/Cryo Swirl, reaksi ini akan berubah menjadi reaksi Stellar-Conduct/Stellar Swirl dan DMG dasar dari reaksi yang disebutkan di atas akan meningkat berdasarkan ATK Pengembara: Setiap 100 poin ATK akan meningkatkan DMG dasar reaksinya sebesar 0,35%. Peningkatan DMG maksimum yang bisa didapatkan dengan cara ini adalah 7%."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104365,
+				"name": "Teachings of Charity",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Chimeric Core",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guide to Fortitude",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104372,
+				"name": "Guide to Glory",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104366,
+				"name": "Guide to Charity",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guide to Fortitude",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104373,
+				"name": "Philosophies of Glory",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 4
+			},
+			{
+				"id": 113075,
+				"name": "Ascended Sample: Queen",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104367,
+				"name": "Philosophies of Charity",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 6
+			},
+			{
+				"id": 113075,
+				"name": "Ascended Sample: Queen",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophies of Fortitude",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 9
+			},
+			{
+				"id": 113075,
+				"name": "Ascended Sample: Queen",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104373,
+				"name": "Philosophies of Glory",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 12
+			},
+			{
+				"id": 113075,
+				"name": "Ascended Sample: Queen",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
 }

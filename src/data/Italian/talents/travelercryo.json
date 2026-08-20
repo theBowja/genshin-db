@@ -1,6 +1,251 @@
 {
 	"id": 705,
 	"name": "#Viaggiat{M#ore}{F#rice} (Cryo)",
-	"combat1": {},
-	"costs": {}
+	"combat1": {
+		"name": "Gelobarlume straniero",
+		"descriptionRaw": "<color=#FFD780FF>Attacco normale</color>\nSferra fino a 5 colpi rapidi.\n\n<color=#FFD780FF>Attacco caricato</color>\nConsuma una determinata quantità di vigore per sferrare 2 colpi di spada rapidi.\n\n<color=#FFD780FF>Attacco in picchiata</color>\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"description": "Attacco normale\nSferra fino a 5 colpi rapidi.\n\nAttacco caricato\nConsuma una determinata quantità di vigore per sferrare 2 colpi di spada rapidi.\n\nAttacco in picchiata\nAttacca scagliandosi contro il suolo da mezz'aria, infliggendo DAN agli avversari lungo la traiettoria e DAN ad area all'impatto.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}",
+				"DAN da 5º colpo|{param5:F1P}",
+				"DAN da ATT caricato|{param6:F1P}+{param7:F1P}",
+				"Costo vigore ATT caricato|{param8:F1}",
+				"DAN da ATT in picchiata|{param9:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Perforazione della Nebbia glaciale",
+		"descriptionRaw": "#{F#La viaggiatrice}{M#Il viaggiatore} attacca l'avversario sferrando un affondo con la sua arma e rilascia una nebbia glaciale, infliggendo <color=#99FFFFFF>DAN da Cryo</color> agli avversari di fronte e creando una Stella perforagelo accanto a sé.\n\n<color=#FFD780FF>Stella perforagelo</color>\n· Segue i membri del tuo gruppo per il campo e scaglia periodicamente cristalli di ghiaccio contro gli avversari vicini, infliggendo <color=#99FFFFFF>DAN da Cryo</color>.\nNello stato di <color=#FFD780FF>Splendore: Astroconduzione</color>, la Stella perforagelo non scaglia più cristalli di ghiaccio contro l'avversario periodicamente, bensì come attacco coordinato ogni volta che {M#il viaggiatore}{F#la viaggiatrice} colpisce un avversario con un attacco normale, caricato o in picchiata. Quest'effetto può attivarsi una volta ogni 0,2{NON_BREAK_SPACE}s.\n· Quando un avversario viene colpito da un cristallo di ghiaccio, {M#il viaggiatore}{F#la viaggiatrice} ottiene 1 accumulo di {LINK#N10050002}<color=#FFD780FF>Gelobagliore</color>{/LINK}, per un massimo di 8.\n· Quando {F#la viaggiatrice}{M#il viaggiatore} non è in un combattimento, <color=#FFD780FF>Gelobagliore</color> si esaurisce dopo 30{NON_BREAK_SPACE}s.\n\n<i>Hai esaminato la formazione del gelo insieme a Paimon.</i>",
+		"description": "Il viaggiatore attacca l'avversario sferrando un affondo con la sua arma e rilascia una nebbia glaciale, infliggendo DAN da Cryo agli avversari di fronte e creando una Stella perforagelo accanto a sé.\n\nStella perforagelo\n· Segue i membri del tuo gruppo per il campo e scaglia periodicamente cristalli di ghiaccio contro gli avversari vicini, infliggendo DAN da Cryo.\nNello stato di Splendore: Astroconduzione, la Stella perforagelo non scaglia più cristalli di ghiaccio contro l'avversario periodicamente, bensì come attacco coordinato ogni volta che il viaggiatore colpisce un avversario con un attacco normale, caricato o in picchiata. Quest'effetto può attivarsi una volta ogni 0,2 s.\n· Quando un avversario viene colpito da un cristallo di ghiaccio, il viaggiatore ottiene 1 accumulo di **Gelobagliore**, per un massimo di 8.\n· Quando il viaggiatore non è in un combattimento, Gelobagliore si esaurisce dopo 30 s.",
+		"flavorText": "Hai esaminato la formazione del gelo insieme a Paimon.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P}",
+				"DAN da cristallo di ghiaccio|{param2:F1P}",
+				"Durata Stella perforagelo|{param4:F1} s",
+				"TdR|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Giavellotto glaciale",
+		"descriptionRaw": "#Genera un giavellotto di ghiaccio infuso di Cryo, scagliandolo contro i nemici per infliggere più iterazioni di <color=#99FFFFFF>DAN da Cryo</color>.\nAll'attivazione, {F#la viaggiatrice}{M#il viaggiatore} consuma tutti gli accumuli di <color=#FFD780FF>Gelobagliore</color> a disposizione, aumentando a sua volta i DAN inflitti dall'attuale iterazione del Tripudio elementale. Quando vengono consumati 8 accumuli di {LINK#N10050002}<color=#FFD780FF>Gelobagliore</color>{/LINK}, aumenta anche il numero di iterazioni di DAN causate dai giavellotti.\n\nNello stato di {LINK#N11500004}<color=#FFD780FF>Splendore: Barlume astrale</color>{/LINK}, i DAN dell'attuale iterazione del Tripudio elementale si convertono in <color=#99FFFFFF>DAN da Cryo</color> del tipo di reazione Barlume astrale corrispondente.\n\n<i>Hai percepito la lama affilata delle stalattiti insieme a Paimon.</i>",
+		"description": "Genera un giavellotto di ghiaccio infuso di Cryo, scagliandolo contro i nemici per infliggere più iterazioni di DAN da Cryo.\nAll'attivazione, il viaggiatore consuma tutti gli accumuli di Gelobagliore a disposizione, aumentando a sua volta i DAN inflitti dall'attuale iterazione del Tripudio elementale. Quando vengono consumati 8 accumuli di **Gelobagliore**, aumenta anche il numero di iterazioni di DAN causate dai giavellotti.\n\nNello stato di **Splendore: Barlume astrale**, i DAN dell'attuale iterazione del Tripudio elementale si convertono in DAN da Cryo del tipo di reazione Barlume astrale corrispondente.",
+		"flavorText": "Hai percepito la lama affilata delle stalattiti insieme a Paimon.",
+		"attributes": {
+			"labels": [
+				"DAN da giavellotto di ghiaccio|{param1:F1P}/colpo",
+				"Bonus DAN da Gelobagliore|{param2:F1P}",
+				"DAN da Astroconduzione giavellotto di ghiaccio|{param8:F1P}/colpo singolo",
+				"Bonus DAN da Astroconduzione Gelobagliore|{param9:F1P}",
+				"DAN da Turbinio astrale giavellotto di ghiaccio|{param10:F1P}/colpo singolo",
+				"Bonus DAN da Turbinio astrale Gelobagliore|{param11:F1P}",
+				"Nº colpi nell'attacco|{param3:I}",
+				"Colpi Gelobagliore aggiuntivi ad accumuli massimi|{param4:I}",
+				"TdR|{param6:F1} s",
+				"Costo energia|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Gelo perpetuo",
+		"descriptionRaw": "#Nello stato di <color=#FFD780FF>Splendore: Astroconduzione</color>, quando una <color=#FFD780FF>Stella perforagelo</color> è in campo, i DAN di attacchi normali, caricati e in picchiata {F#della viaggiatrice}{M#del viaggiatore} vengono convertiti in <color=#99FFFFFF>DAN da Cryo</color> che non possono essere influenzati da altre infusioni elementali. In più, i DAN inflitti aumentano di un 80% dell'ATT {F#della viaggiatrice}{M#del viaggiatore}.",
+		"description": "Nello stato di Splendore: Astroconduzione, quando una Stella perforagelo è in campo, i DAN di attacchi normali, caricati e in picchiata del viaggiatore vengono convertiti in DAN da Cryo che non possono essere influenzati da altre infusioni elementali. In più, i DAN inflitti aumentano di un 80% dell'ATT del viaggiatore."
+	},
+	"passive2": {
+		"name": "Ghiaccio lucente",
+		"descriptionRaw": "#La maestria elementale {M#del viaggiatore}{F#della viaggiatrice} aumenta di un 8% del suo ATT. L'incremento massimo ottenibile in questo modo è di 160.",
+		"description": "La maestria elementale del viaggiatore aumenta di un 8% del suo ATT. L'incremento massimo ottenibile in questo modo è di 160."
+	},
+	"passive3": {
+		"name": "Giubileo astrale: Specchio del gelo illusorio",
+		"descriptionRaw": "#{F#La viaggiatrice}{M#Il viaggiatore} entra nello stato di {LINK#N11330003}<color=#FFD780FF>Splendore: Astroconduzione</color>{/LINK} quando si trova all'interno di un <color=#FFD780FF>Campo astropolare</color> o nello stato di <color=#FFD780FF>Splendore: Turbinio astrale</color> per 8{NON_BREAK_SPACE}s dopo che un membro vicino del gruppo ha innescato una reazione di Turbinio astrale.\nQuando un membro del gruppo innesca una reazione di Superconduzione o Turbinio di Cryo, quest'ultima diventa una reazione di Astroconduzione o di Turbinio astrale, e i DAN base di tale reazione aumentano di un ulteriore 0,35% per ogni 100 di ATT {F#della viaggiatrice}{M#del viaggiatore}. In questo modo è possibile ottenere fino a un 7% di aumento massimo.",
+		"description": "Il viaggiatore entra nello stato di **Splendore: Astroconduzione** quando si trova all'interno di un Campo astropolare o nello stato di Splendore: Turbinio astrale per 8 s dopo che un membro vicino del gruppo ha innescato una reazione di Turbinio astrale.\nQuando un membro del gruppo innesca una reazione di Superconduzione o Turbinio di Cryo, quest'ultima diventa una reazione di Astroconduzione o di Turbinio astrale, e i DAN base di tale reazione aumentano di un ulteriore 0,35% per ogni 100 di ATT del viaggiatore. In questo modo è possibile ottenere fino a un 7% di aumento massimo."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104365,
+				"name": "Insegnamenti della benevolenza",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Nucleo chimerico",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guida alla fermezza",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104372,
+				"name": "Guida alla gloria",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104366,
+				"name": "Guida alla benevolenza",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guida alla fermezza",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104373,
+				"name": "Filosofie della gloria",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 4
+			},
+			{
+				"id": 113075,
+				"name": "Campione asceso: Regina",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104367,
+				"name": "Filosofie della benevolenza",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 6
+			},
+			{
+				"id": 113075,
+				"name": "Campione asceso: Regina",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofie della fermezza",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 9
+			},
+			{
+				"id": 113075,
+				"name": "Campione asceso: Regina",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104373,
+				"name": "Filosofie della gloria",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 12
+			},
+			{
+				"id": 113075,
+				"name": "Campione asceso: Regina",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
 }

@@ -1,6 +1,251 @@
 {
 	"id": 705,
 	"name": "Viajera (Cryo)",
-	"combat1": {},
-	"costs": {}
+	"combat1": {
+		"name": "Destello gélido extranjero",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nRealiza hasta 5 ataques consecutivos con espada.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño en el AdE en el momento del impacto.",
+		"description": "Ataque Normal\nRealiza hasta 5 ataques consecutivos con espada.\n\nAtaque Cargado\nConsume cierta cantidad de Aguante para desatar un doble golpe de espada.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}",
+				"Daño de 5.º golpe|{param5:F1P}",
+				"Daño de ATQ Cargado|{param6:F1P} + {param7:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param8:F1} pts.",
+				"Daño de Caída|{param9:F1P}",
+				"Daño de impacto de caída baja/alta|{param10:P}/{param11:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Espada brumahelada",
+		"descriptionRaw": "#Blande el arma y ejecuta una estocada hacia adelante para liberar una bruma helada que inflige <color=#99FFFFFF>Daño Cryo</color> a los enemigos que tenga enfrente, y crea a su lado una estrella glacial.\n\n<color=#FFD780FF>Estrella glacial</color>\n·Sigue a tus personajes del equipo y dispara periódicamente cristales de hielo a los enemigos cercanos para infligirles <color=#99FFFFFF>Daño Cryo</color>.\n<color=#FFD780FF>Esplendor: Superconductor Estelar</color>\nLa estrella glacial ya no dispara cristales de hielo periódicamente, sino que, en su lugar, cuando {F#la Viajera}{M#el Viajero} golpee a un enemigo con un Ataque Normal, Cargado o Descendente, se disparará un cristal de hielo para realizar un ataque coordinado contra el enemigo. Esto solo puede ocurrir una vez cada 0.2{NON_BREAK_SPACE}s.\n·Cuando un cristal de hielo golpee a un enemigo, {F#la Viajera}{M#el Viajero} obtendrá 1 carga de {LINK#N10050002}<color=#FFD780FF>fulgor gélido</color>{/LINK}. Este efecto se puede acumular hasta 8 veces.\n·Cuando no esté en combate, las cargas de <color=#FFD780FF>fulgor gélido</color> se eliminarán después de 30{NON_BREAK_SPACE}s.\n\n<i>Observaste con Paimon cómo se forma la escarcha.</i>",
+		"description": "Blande el arma y ejecuta una estocada hacia adelante para liberar una bruma helada que inflige Daño Cryo a los enemigos que tenga enfrente, y crea a su lado una estrella glacial.\n\nEstrella glacial\n·Sigue a tus personajes del equipo y dispara periódicamente cristales de hielo a los enemigos cercanos para infligirles Daño Cryo.\nEsplendor: Superconductor Estelar\nLa estrella glacial ya no dispara cristales de hielo periódicamente, sino que, en su lugar, cuando el Viajero golpee a un enemigo con un Ataque Normal, Cargado o Descendente, se disparará un cristal de hielo para realizar un ataque coordinado contra el enemigo. Esto solo puede ocurrir una vez cada 0.2 s.\n·Cuando un cristal de hielo golpee a un enemigo, el Viajero obtendrá 1 carga de **fulgor gélido**. Este efecto se puede acumular hasta 8 veces.\n·Cuando no esté en combate, las cargas de fulgor gélido se eliminarán después de 30 s.",
+		"flavorText": "Observaste con Paimon cómo se forma la escarcha.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P}",
+				"Daño de cristal de hielo|{param2:F1P}",
+				"Duración de estrella glacial|{param4:F1} s",
+				"TdE|{param3:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Lanza álgida",
+		"descriptionRaw": "#Usa el poder del elemento Cryo para formar una lanza de hielo y arrojarla contra los enemigos, lo que les inflige varias veces <color=#99FFFFFF>Daño Cryo</color>.\nAl usar esta habilidad, {F#la Viajera}{M#el Viajero} consumirá todas las cargas de {LINK#N10050002}<color=#FFD780FF>fulgor gélido</color>{/LINK}, lo que aumentará el daño infligido por la Habilidad Definitiva. Si se consumen 8 cargas de <color=#FFD780FF>fulgor gélido</color>, también aumentará la cantidad de veces que inflige daño la lanza.\n\n{LINK#N11500004}<color=#FFD780FF>Esplendor: Destello Estelar</color>{/LINK}\nLa Habilidad Definitiva pasará a infligir <color=#99FFFFFF>Daño Cryo</color> considerado como daño de la reacción de Destello Estelar correspondiente.\n\n<i>Sentiste con Paimon el frío punzante de los carámbanos de hielo.</i>",
+		"description": "Usa el poder del elemento Cryo para formar una lanza de hielo y arrojarla contra los enemigos, lo que les inflige varias veces Daño Cryo.\nAl usar esta habilidad, el Viajero consumirá todas las cargas de **fulgor gélido**, lo que aumentará el daño infligido por la Habilidad Definitiva. Si se consumen 8 cargas de fulgor gélido, también aumentará la cantidad de veces que inflige daño la lanza.\n\n**Esplendor: Destello Estelar**\nLa Habilidad Definitiva pasará a infligir Daño Cryo considerado como daño de la reacción de Destello Estelar correspondiente.",
+		"flavorText": "Sentiste con Paimon el frío punzante de los carámbanos de hielo.",
+		"attributes": {
+			"labels": [
+				"Daño de lanza|{param1:F1P}/golpe",
+				"Aumento de daño de fulgor gélido|{param2:F1P}",
+				"Daño de Superconductor Estelar de lanza|{param8:F1P}/golpe",
+				"Aumento de daño de Superconductor Estelar de fulgor gélido|{param9:F1P}",
+				"Daño de Torbellino Estelar de lanza|{param10:F1P}/golpe",
+				"Aumento de daño de Torbellino Estelar de fulgor gélido|{param11:F1P}",
+				"Cantidad de ataques|{param3:I}",
+				"Ataques adicionales con máx. de cargas de fulgor gélido|{param4:I}",
+				"TdE|{param6:F1} s",
+				"Energía Elemental|{param7:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Algidez afilada",
+		"descriptionRaw": "#<color=#FFD780FF>Esplendor: Superconductor Estelar</color>\nMientras la <color=#FFD780FF>estrella glacial</color> esté activa, el daño de los Ataques Normales, Cargados y Descendentes {F#de la Viajera}{M#del Viajero} se convertirá en <color=#99FFFFFF>Daño Cryo</color>, el cual no puede sustituirse imbuyéndose de otro elemento. Además, el daño que infligen aumentará en una cantidad equivalente al 80% del ATQ {F#de la Viajera}{M#del Viajero}.",
+		"description": "Esplendor: Superconductor Estelar\nMientras la estrella glacial esté activa, el daño de los Ataques Normales, Cargados y Descendentes del Viajero se convertirá en Daño Cryo, el cual no puede sustituirse imbuyéndose de otro elemento. Además, el daño que infligen aumentará en una cantidad equivalente al 80% del ATQ del Viajero."
+	},
+	"passive2": {
+		"name": "Témpano cristalino",
+		"descriptionRaw": "#La Maestría Elemental {F#de la Viajera}{M#del Viajero} aumenta en una cantidad equivalente al 8% de su ATQ. La Maestría Elemental solo puede aumentar en un máximo de 160{NON_BREAK_SPACE}pts. de esta manera.",
+		"description": "La Maestría Elemental del Viajero aumenta en una cantidad equivalente al 8% de su ATQ. La Maestría Elemental solo puede aumentar en un máximo de 160 pts. de esta manera."
+	},
+	"passive3": {
+		"name": "Bendición fulgorestelar: Crioespejo ilusorio",
+		"descriptionRaw": "#Al estar dentro de un {LINK#N11330003}<color=#FFD780FF>campo estrellapolar</color>{/LINK} o durante 8{NON_BREAK_SPACE}s después de que un personaje del equipo cause una reacción de Torbellino Estelar en las cercanías, {F#la Viajera}{M#el Viajero} entrará en el estado de <color=#FFD780FF>esplendor: Superconductor Estelar</color> o el de <color=#FFD780FF>esplendor: Torbellino Estelar</color>, respectivamente.\nCuando un personaje del equipo cause una reacción de Superconductor o Torbellino Cryo, esta se transformará respectivamente en una reacción de Superconductor Estelar o Torbellino Estelar. El daño base de estas reacciones de los personajes del equipo aumentará en un 0.35% por cada 100{NON_BREAK_SPACE}pts. de ATQ que tenga {F#la Viajera}{M#el Viajero}. Como máximo, dicho daño puede aumentar en un 7% de esta manera.",
+		"description": "Al estar dentro de un **campo estrellapolar** o durante 8 s después de que un personaje del equipo cause una reacción de Torbellino Estelar en las cercanías, el Viajero entrará en el estado de esplendor: Superconductor Estelar o el de esplendor: Torbellino Estelar, respectivamente.\nCuando un personaje del equipo cause una reacción de Superconductor o Torbellino Cryo, esta se transformará respectivamente en una reacción de Superconductor Estelar o Torbellino Estelar. El daño base de estas reacciones de los personajes del equipo aumentará en un 0.35% por cada 100 pts. de ATQ que tenga el Viajero. Como máximo, dicho daño puede aumentar en un 7% de esta manera."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104365,
+				"name": "Enseñanzas del amor",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Semilla quimérica",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guía de la tenacidad",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104372,
+				"name": "Guía de la gloria",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104366,
+				"name": "Guía del amor",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guía de la tenacidad",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104373,
+				"name": "Filosofía de la gloria",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 4
+			},
+			{
+				"id": 113075,
+				"name": "Muestra ascendida: Reina",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104367,
+				"name": "Filosofía del amor",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 6
+			},
+			{
+				"id": 113075,
+				"name": "Muestra ascendida: Reina",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofía de la tenacidad",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 9
+			},
+			{
+				"id": 113075,
+				"name": "Muestra ascendida: Reina",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104373,
+				"name": "Filosofía de la gloria",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 12
+			},
+			{
+				"id": 113075,
+				"name": "Muestra ascendida: Reina",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
 }
