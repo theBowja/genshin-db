@@ -1,0 +1,252 @@
+{
+	"id": 14001,
+	"name": "Vodyanitsa",
+	"combat1": {
+		"name": "Psyshkhwe Arietta",
+		"descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nSings an ancient song of the Water Imps, unleashing up to 4 strikes. This deals <color=#80C0FFFF>Hydro DMG</color> to the opponent.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to hurl a water ball forward, dealing <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges towards the ground from mid-air, damaging all opponents along the path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
+		"description": "Normal Attack\nSings an ancient song of the Water Imps, unleashing up to 4 strikes. This deals Hydro DMG to the opponent.\n\nCharged Attack\nConsumes a certain amount of Stamina to hurl a water ball forward, dealing Hydro DMG.\n\nPlunging Attack\nPlunges towards the ground from mid-air, damaging all opponents along the path. Deals AoE Hydro DMG upon impact with the ground.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}",
+				"4-Hit DMG|{param4:F1P}",
+				"Charged Attack DMG|{param5:F1P}",
+				"Charged Attack Stamina Cost|{param6:F1}",
+				"Plunge DMG|{param7:F1P}",
+				"Low/High Plunge DMG|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Rechitativ: Sonorous Dawn",
+		"descriptionRaw": "Reveals her true Water Imp form, dealing <color=#80C0FFFF>AoE Hydro DMG</color> and gaining the <color=#FFD780FF>Song of Ages Past</color> effect: While this effect is active, Vodyanitsa summons the ancient <color=#FFD780FF>Horn of Spring's Call</color>, periodically moving closer to an opponent in a swift movement to attack them, dealing <color=#80C0FFFF>Hydro DMG</color>.\nThe above two types of attacks will also decrease the <color=#80C0FFFF>Hydro RES</color> and <color=#99FFFFFF>Cryo RES</color> of opponents hit. Additionally, while the <color=#FFD780FF>Song of Ages Past</color> effect is active, the party's active character gains increased resistance to interruption and periodically regenerates HP based on Vodyanitsa's Max HP.",
+		"description": "Reveals her true Water Imp form, dealing AoE Hydro DMG and gaining the Song of Ages Past effect: While this effect is active, Vodyanitsa summons the ancient Horn of Spring's Call, periodically moving closer to an opponent in a swift movement to attack them, dealing Hydro DMG.\nThe above two types of attacks will also decrease the Hydro RES and Cryo RES of opponents hit. Additionally, while the Song of Ages Past effect is active, the party's active character gains increased resistance to interruption and periodically regenerates HP based on Vodyanitsa's Max HP.",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:F2P} Max HP",
+				"Duration|{param2:F1}s",
+				"Horn of Spring's Call Attack Interval|{param3:F1}s",
+				"Horn of Spring's Call DMG|{param4:F2P} Max HP",
+				"Song of Ages Past Healing|{param5:I} + {param6:F2P} Max HP",
+				"Song of Ages Past Healing Interval|{param7:F1}s",
+				"Hydro/Cryo RES Reduction|{param8:F1P}",
+				"RES Reduction Duration|{param9:F1}s",
+				"Skill CD|{param10:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Koda: Sink With Thee",
+		"descriptionRaw": "Leads a song of the Water Imps which lures its listeners to their doom. This deals <color=#80C0FFFF>AoE Hydro DMG</color> to the opponent.\nWhen in the <color=#FFD780FF>{LINK#S11402}Song of Ages Past{/LINK}</color> state, DMG dealt is further increased.",
+		"description": "Leads a song of the Water Imps which lures its listeners to their doom. This deals AoE Hydro DMG to the opponent.\nWhen in the **Song of Ages Past** state, DMG dealt is further increased.",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:F1P} Max HP",
+				"Song of Ages Past DMG Bonus|{param2:F1P}",
+				"CD|{param3:F1}s",
+				"Energy Cost|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "The Last Djeguako Songstress",
+		"descriptionRaw": "When the Elemental Skill <color=#FFD780FF>Rechitativ: Sonorous Dawn</color> is used, any Stellar Vortex on the field will turn into a Wandering Vortex instead. While the <color=#FFD780FF>{LINK#S11402}Song of Ages Past{/LINK}</color> effect is active, nearby party members' Stellar Swirl reactions will generate Wandering Vortex instead.\nGenerating or detonating a Wandering Vortex will also reduce nearby opponents' <color=#80FFD7FF>Anemo RES</color> by 35% for 6s. \nAdditionally, nearby party members who enter the <color=#FFD780FF>Radiance: Stellar Swirl</color> state while <color=#FFD780FF>Song of Ages Past</color> is in effect will have the <color=#FFD780FF>Radiance: Stellar Swirl</color> state extended by 4s.",
+		"description": "When the Elemental Skill Rechitativ: Sonorous Dawn is used, any Stellar Vortex on the field will turn into a Wandering Vortex instead. While the **Song of Ages Past** effect is active, nearby party members' Stellar Swirl reactions will generate Wandering Vortex instead.\nGenerating or detonating a Wandering Vortex will also reduce nearby opponents' Anemo RES by 35% for 6s. \nAdditionally, nearby party members who enter the Radiance: Stellar Swirl state while Song of Ages Past is in effect will have the Radiance: Stellar Swirl state extended by 4s."
+	},
+	"passive2": {
+		"name": "Dirge of the Fandyr",
+		"descriptionRaw": "When the Elemental Skill <color=#FFD780FF>Rechitativ: Sonorous Dawn</color> is used, Vodyanitsa will also gain 25 stacks of {LINK#N11400001}<color=#FFD780FF>Lead Vocal</color>{/LINK} as well as 10 stacks of {LINK#N11400002}<color=#FFD780FF>Chorus</color>{/LINK}.\nThe two effects above last 30s each, and the stack count is refreshed when the Elemental Skill is used.",
+		"description": "When the Elemental Skill Rechitativ: Sonorous Dawn is used, Vodyanitsa will also gain 25 stacks of **Lead Vocal** as well as 10 stacks of **Chorus**.\nThe two effects above last 30s each, and the stack count is refreshed when the Elemental Skill is used."
+	},
+	"passive3": {
+		"name": "Echoes Over the Frozen Lake",
+		"descriptionRaw": "Holding the Elemental Skill outside of combat will cause Vodyanitsa to embody her true Water Imp form and swim for up to 10s at the cost of Stamina. Naturally, as a Water Imp, she can also move across the water's surface. Vodyanitsa will exit her Water Imp form when the Elemental Skill is used again, when the duration ends, or when all Stamina is depleted.\nAdditionally, while Vodyanitsa can swim faster, her Stamina consumption rate is also increased.",
+		"description": "Holding the Elemental Skill outside of combat will cause Vodyanitsa to embody her true Water Imp form and swim for up to 10s at the cost of Stamina. Naturally, as a Water Imp, she can also move across the water's surface. Vodyanitsa will exit her Water Imp form when the Elemental Skill is used again, when the duration ends, or when all Stamina is depleted.\nAdditionally, while Vodyanitsa can swim faster, her Stamina consumption rate is also increased."
+	},
+	"passive4": {
+		"name": "Heartless Siren Song",
+		"descriptionRaw": "As the Prima Donna of the Korolevskiy Troupe, Vodyanitsa sings in person in place of playing an instrument.",
+		"description": "As the Prima Donna of the Korolevskiy Troupe, Vodyanitsa sings in person in place of playing an instrument."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104368,
+				"name": "Teachings of Fortitude",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Chimeric Core",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guide to Fortitude",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104369,
+				"name": "Guide to Fortitude",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104369,
+				"name": "Guide to Fortitude",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guide to Fortitude",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophies of Fortitude",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 4
+			},
+			{
+				"id": 113082,
+				"name": "Madman's Restraint",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophies of Fortitude",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 6
+			},
+			{
+				"id": 113082,
+				"name": "Madman's Restraint",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophies of Fortitude",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 9
+			},
+			{
+				"id": 113082,
+				"name": "Madman's Restraint",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophies of Fortitude",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 12
+			},
+			{
+				"id": 113082,
+				"name": "Madman's Restraint",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}

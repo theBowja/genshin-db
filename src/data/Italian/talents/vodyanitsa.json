@@ -1,0 +1,252 @@
+{
+	"id": 14001,
+	"name": "Vodyanitsa",
+	"combat1": {
+		"name": "Arietta del Psyshkhwe",
+		"descriptionRaw": "<color=#FFD780FF>Attacco normale</color>\nIntona un antico canto dei Folletti dell'acqua, sferrando fino a 4 colpi che infliggono <color=#80C0FFFF>DAN da Hydro</color> agli avversari.\n\n<color=#FFD780FF>Attacco caricato</color>\nConsuma una certa quantità di vigore per scagliare una sfera d'acqua in avanti, infliggendo <color=#80C0FFFF>DAN da Hydro</color>.\n\n<color=#FFD780FF>Attacco in picchiata</color>\nSi lancia verso il suolo da mezz'aria, danneggiando tutti gli avversari lungo la traiettoria. Infligge <color=#80C0FFFF>DAN da Hydro ad area</color> all'impatto col suolo.",
+		"description": "Attacco normale\nIntona un antico canto dei Folletti dell'acqua, sferrando fino a 4 colpi che infliggono DAN da Hydro agli avversari.\n\nAttacco caricato\nConsuma una certa quantità di vigore per scagliare una sfera d'acqua in avanti, infliggendo DAN da Hydro.\n\nAttacco in picchiata\nSi lancia verso il suolo da mezz'aria, danneggiando tutti gli avversari lungo la traiettoria. Infligge DAN da Hydro ad area all'impatto col suolo.",
+		"attributes": {
+			"labels": [
+				"DAN da 1º colpo|{param1:F1P}",
+				"DAN da 2º colpo|{param2:F1P}",
+				"DAN da 3º colpo|{param3:F1P}",
+				"DAN da 4º colpo|{param4:F1P}",
+				"DAN da ATT caricato|{param5:F1P}",
+				"Costo vigore attacco caricato|{param6:F1}",
+				"DAN da ATT in picchiata|{param7:F1P}",
+				"DAN da ATT in picchiata basso/alto|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Recitativo: Alba altisonante",
+		"descriptionRaw": "Rivela la sua vera forma di Folletto dell'acqua, infliggendo <color=#80C0FFFF>DAN da Hydro ad area</color> e ottenendo l'effetto <color=#FFD780FF>Canzone di ere passate</color>: mentre quest'ultimo è attivo, Vodyanitsa evoca l'antico <color=#FFD780FF>Richiamo della Cornucopia</color>, che si avvicina periodicamente a un avversario per attaccarlo a gran velocità, infliggendo <color=#80C0FFFF>DAN da Hydro</color>.\nGli avversari che subiscono i due tipi di DAN sopracitati subiscono anche una riduzione delle RES a <color=#80C0FFFF>Hydro</color> e a <color=#99FFFFFF>Cryo</color>. Inoltre, mentre l'effetto <color=#FFD780FF>Canzone di ere passate</color> è presente, il personaggio attivo del gruppo ottiene una maggiore resistenza all'interruzione e riceve effetti di guarigione periodici in base ai PS max di Vodyanitsa.",
+		"description": "Rivela la sua vera forma di Folletto dell'acqua, infliggendo DAN da Hydro ad area e ottenendo l'effetto Canzone di ere passate: mentre quest'ultimo è attivo, Vodyanitsa evoca l'antico Richiamo della Cornucopia, che si avvicina periodicamente a un avversario per attaccarlo a gran velocità, infliggendo DAN da Hydro.\nGli avversari che subiscono i due tipi di DAN sopracitati subiscono anche una riduzione delle RES a Hydro e a Cryo. Inoltre, mentre l'effetto Canzone di ere passate è presente, il personaggio attivo del gruppo ottiene una maggiore resistenza all'interruzione e riceve effetti di guarigione periodici in base ai PS max di Vodyanitsa.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F2P} PS max",
+				"Durata|{param2:F1} s",
+				"Intervallo attacco Richiamo della Cornucopia|{param3:F1} s",
+				"DAN da Richiamo della Cornucopia|{param4:F2P} PS max",
+				"Guarigione da Canzone di ere passate|{param5:I}+{param6:F2P} PS max",
+				"Intervallo di guarigione Canzone di ere passate|{param7:F1} s",
+				"Riduzione RES a Cryo/Hydro|{param8:F1P}",
+				"Durata riduzione RES|{param9:F1} s",
+				"TdR abilità|{param10:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Coda: Giù negli abissi con te",
+		"descriptionRaw": "Intona un canto dei Folletti dell'acqua che condanna chiunque lo ascolti. Infligge <color=#80C0FFFF>DAN da Hydro ad area</color> agli avversari.\nNello stato <color=#FFD780FF>{LINK#S11402}Canzone di ere passate{/LINK}</color>, i DAN inflitti aumentano ulteriormente.",
+		"description": "Intona un canto dei Folletti dell'acqua che condanna chiunque lo ascolti. Infligge DAN da Hydro ad area agli avversari.\nNello stato **Canzone di ere passate**, i DAN inflitti aumentano ulteriormente.",
+		"attributes": {
+			"labels": [
+				"DAN da abilità|{param1:F1P} PS max",
+				"Bonus DAN Canzone di ere passate|{param2:F1P}",
+				"TdR|{param3:F1} s",
+				"Costo energia|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "L'ultima cantastorie Djeguako",
+		"descriptionRaw": "#Quando si utilizza l'abilità elementale <color=#FFD780FF>Recitativo: Alba altisonante</color>, qualsiasi Vortice astrale presente in campo si trasforma in un Vortice errante. Inoltre, se i membri vicini del gruppo innescano una reazione di Turbinio astrale mentre l'effetto <color=#FFD780FF>{LINK#S11402}Canzone di ere passate{/LINK}</color> è attivo, si genera un Vortice errante anziché un Vortice astrale.\nIn aggiunta, generare o far esplodere un Vortice errante riduce la <color=#80FFD7FF>RES ad Anemo</color> degli avversari nelle vicinanze di un 35% per 6{NON_BREAK_SPACE}s.\nIn più, se durante l'effetto di <color=#FFD780FF>Canzone di ere passate</color> i membri del gruppo vicini entrano nello stato di <color=#FFD780FF>Splendore: Turbinio astrale</color>, la durata di quest'ultimo viene estesa di 4{NON_BREAK_SPACE}s.",
+		"description": "Quando si utilizza l'abilità elementale Recitativo: Alba altisonante, qualsiasi Vortice astrale presente in campo si trasforma in un Vortice errante. Inoltre, se i membri vicini del gruppo innescano una reazione di Turbinio astrale mentre l'effetto **Canzone di ere passate** è attivo, si genera un Vortice errante anziché un Vortice astrale.\nIn aggiunta, generare o far esplodere un Vortice errante riduce la RES ad Anemo degli avversari nelle vicinanze di un 35% per 6 s.\nIn più, se durante l'effetto di Canzone di ere passate i membri del gruppo vicini entrano nello stato di Splendore: Turbinio astrale, la durata di quest'ultimo viene estesa di 4 s."
+	},
+	"passive2": {
+		"name": "Marcia funebre del Fandyr",
+		"descriptionRaw": "#Quando si utilizza l'abilità elementale <color=#FFD780FF>Recitativo: Alba altisonante</color>, Vodyanitsa ottiene anche 25 accumuli di {LINK#N11400001}<color=#FFD780FF>Voce solista</color>{/LINK} e 10 accumuli di {LINK#N11400002}<color=#FFD780FF>Coro</color>{/LINK}.\nI due effetti suddetti durano 30{NON_BREAK_SPACE}s ciascuno e il conteggio degli accumuli si ripristina quando si utilizza l'abilità elementale.",
+		"description": "Quando si utilizza l'abilità elementale Recitativo: Alba altisonante, Vodyanitsa ottiene anche 25 accumuli di **Voce solista** e 10 accumuli di **Coro**.\nI due effetti suddetti durano 30 s ciascuno e il conteggio degli accumuli si ripristina quando si utilizza l'abilità elementale."
+	},
+	"passive3": {
+		"name": "Echi sul lago ghiacciato",
+		"descriptionRaw": "#Quando Vodyanitsa è fuori da un combattimento, la pressione prolungata dell'abilità elementale le permette di assumere la sua vera forma di Folletto dell'acqua e di nuotare per un massimo di 10{NON_BREAK_SPACE}s consumando vigore. Data la sua natura, può anche spostarsi sulla superficie dell'acqua. Vodyanitsa esce da questa forma utilizzando di nuovo l'abilità elementale, quando la durata dello stato termina o quando il vigore si esaurisce.\nInoltre, per quanto Vodyanitsa possa nuotare più velocemente, il costo di vigore è maggiore.",
+		"description": "Quando Vodyanitsa è fuori da un combattimento, la pressione prolungata dell'abilità elementale le permette di assumere la sua vera forma di Folletto dell'acqua e di nuotare per un massimo di 10 s consumando vigore. Data la sua natura, può anche spostarsi sulla superficie dell'acqua. Vodyanitsa esce da questa forma utilizzando di nuovo l'abilità elementale, quando la durata dello stato termina o quando il vigore si esaurisce.\nInoltre, per quanto Vodyanitsa possa nuotare più velocemente, il costo di vigore è maggiore."
+	},
+	"passive4": {
+		"name": "Canzone della sirena crudele",
+		"descriptionRaw": "In quanto Primadonna della Compagnia Korolevskiy, Vodyanitsa canta invece di suonare uno strumento musicale.",
+		"description": "In quanto Primadonna della Compagnia Korolevskiy, Vodyanitsa canta invece di suonare uno strumento musicale."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104368,
+				"name": "Insegnamenti della fermezza",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Nucleo chimerico",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guida alla fermezza",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104369,
+				"name": "Guida alla fermezza",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104369,
+				"name": "Guida alla fermezza",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guida alla fermezza",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Nucleo chimerico simbiotico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofie della fermezza",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 4
+			},
+			{
+				"id": 113082,
+				"name": "Vincolo del folle",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofie della fermezza",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 6
+			},
+			{
+				"id": 113082,
+				"name": "Vincolo del folle",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofie della fermezza",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 9
+			},
+			{
+				"id": 113082,
+				"name": "Vincolo del folle",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofie della fermezza",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Nucleo chimerico primordiale",
+				"count": 12
+			},
+			{
+				"id": 113082,
+				"name": "Vincolo del folle",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona della saggezza",
+				"count": 1
+			}
+		]
+	}
+}

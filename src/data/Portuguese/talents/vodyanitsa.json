@@ -1,0 +1,252 @@
+{
+	"id": 14001,
+	"name": "Vodyanitsa",
+	"combat1": {
+		"name": "Ária das Águas",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nCanta uma canção antiga das sereias, realizando até 4 ataques, infligindo <color=#80C0FFFF>Dano Hydro</color>.\n\n<color=#FFD780FF>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para disparar uma bola d'água <color=#80C0FFFF>Dano Hydro</color>.\n\n<color=#FFD780FF>Ataque Imersivo</color>\nMergulha ao chão em pleno ar, infligindo dano a todos os inimigos em seu caminho. Inflige <color=#80C0FFFF>Dano Hydro em uma AdE</color> durante o impacto com o chão.",
+		"description": "Ataque Normal\nCanta uma canção antiga das sereias, realizando até 4 ataques, infligindo Dano Hydro.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para disparar uma bola d'água Dano Hydro.\n\nAtaque Imersivo\nMergulha ao chão em pleno ar, infligindo dano a todos os inimigos em seu caminho. Inflige Dano Hydro em uma AdE durante o impacto com o chão.",
+		"attributes": {
+			"labels": [
+				"Dano do 1° Golpe|{param1:F1P}",
+				"Dano do 2° Golpe|{param2:F1P}",
+				"Dano do 3° Golpe|{param3:F1P}",
+				"Dano do 4° Golpe|{param4:F1P}",
+				"Dano de Ataque Carregado|{param5:F1P}",
+				"Consumo de Stamina de Ataque Carregado|{param6:F1}",
+				"Dano Durante a Queda|{param7:F1P}",
+				"Dano de Queda de Baixa/Alta Altitude|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Recitativo: Alvorada Sonora",
+		"descriptionRaw": "Revela sua verdadeira forma de Sereia, causando <color=#80C0FFFF>Dano Hydro em uma AdE</color> e obtendo o efeito <color=#FFD780FF>Canção de Outrora</color>: enquanto esse efeito estiver ativo, Vodyanitsa invocará o antigo <color=#FFD780FF>Berrante da Primavera</color>, que periodicamente avançará com rapidez em direção a um inimigo para atacá-lo, causando <color=#80C0FFFF>Dano Hydro</color>.\nOs dois tipos de ataque mencionados acima também reduzem a <color=#80C0FFFF>RES Hydro</color> e a <color=#99FFFFFF>RES Cryo</color> dos inimigos atingidos. Além disso, enquanto o efeito <color=#FFD780FF>Canção de Outrora</color> estiver ativo, o personagem ativo da equipe terá sua Resistência contra Interrupção aumentada e recuperará Vida periodicamente com base na Vida Máxima de Vodyanitsa.",
+		"description": "Revela sua verdadeira forma de Sereia, causando Dano Hydro em uma AdE e obtendo o efeito Canção de Outrora: enquanto esse efeito estiver ativo, Vodyanitsa invocará o antigo Berrante da Primavera, que periodicamente avançará com rapidez em direção a um inimigo para atacá-lo, causando Dano Hydro.\nOs dois tipos de ataque mencionados acima também reduzem a RES Hydro e a RES Cryo dos inimigos atingidos. Além disso, enquanto o efeito Canção de Outrora estiver ativo, o personagem ativo da equipe terá sua Resistência contra Interrupção aumentada e recuperará Vida periodicamente com base na Vida Máxima de Vodyanitsa.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F2P} da Vida Máxima",
+				"Duração|{param2:F1}s",
+				"Intervalo de Ataque do Berrante da Primavera|{param3:F1}s",
+				"Dano do Berrante da Primavera|{param4:F2P} da Vida Máxima",
+				"Cura da Canção de Outrora|{param5:I} + {param6:F2P} da Vida Máxima",
+				"Intervalo de Cura de Canção de Outrora|{param7:F1}s",
+				"Redução de RES Hydro/Cryo|{param8:F1P}",
+				"Duração da Redução de RES|{param9:F1}s",
+				"Recarga da Habilidade|{param10:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Finalização: Afundando Contigo",
+		"descriptionRaw": "Entoa a canção das sereias, que atrai quem a escuta para as profundezas, causando <color=#80C0FFFF>Dano Hydro em AdE</color>.\nQuando estiver no estado <color=#FFD780FF>{LINK#S11402}Canção de Outrora{/LINK}</color>, aumenta ainda mais o Dano causado.",
+		"description": "Entoa a canção das sereias, que atrai quem a escuta para as profundezas, causando Dano Hydro em AdE.\nQuando estiver no estado **Canção de Outrora**, aumenta ainda mais o Dano causado.",
+		"attributes": {
+			"labels": [
+				"Dano de Habilidade|{param1:F1P} da Vida Máxima",
+				"Bônus de Dano da Canção de Outrora|{param2:F1P}",
+				"Tempo de Recarga|{param3:F1}s",
+				"Energia Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Último Poeta",
+		"descriptionRaw": "Ao lançar a Habilidade Elemental <color=#FFD780FF>Recitativo: Alvorada Sonora</color>, faz o Vórtice do Vento Estelar ativo mudar para Vórtice Flutuante, e para personagens próximos da equipe que estejam sob a duração do efeito <color=#FFD780FF>{LINK#S11402}Canção de Outrora{/LINK}</color>, ao desencadearem Redemoinho Estelar, passarão a criar um Vórtice Flutuante que substitui o Vórtice do Vento Estelar.\nAo criar ou explodir um Vórtice Flutuante, reduz a <color=#80FFD7FF>RES Anemo</color> dos inimigos próximos em 35% por 6s.\nAlém disso, na duração de <color=#FFD780FF>Canção de Outrora</color>, quando um personagem próximo entrar em <color=#FFD780FF>Brilho Reluzente: Redemoinho Estelar</color>, a duração de <color=#FFD780FF>Brilho Reluzente: Redemoinho Estelar</color> é prolongada em 4s.",
+		"description": "Ao lançar a Habilidade Elemental Recitativo: Alvorada Sonora, faz o Vórtice do Vento Estelar ativo mudar para Vórtice Flutuante, e para personagens próximos da equipe que estejam sob a duração do efeito **Canção de Outrora**, ao desencadearem Redemoinho Estelar, passarão a criar um Vórtice Flutuante que substitui o Vórtice do Vento Estelar.\nAo criar ou explodir um Vórtice Flutuante, reduz a RES Anemo dos inimigos próximos em 35% por 6s.\nAlém disso, na duração de Canção de Outrora, quando um personagem próximo entrar em Brilho Reluzente: Redemoinho Estelar, a duração de Brilho Reluzente: Redemoinho Estelar é prolongada em 4s."
+	},
+	"passive2": {
+		"name": "Lágrimas das Doze Cordas",
+		"descriptionRaw": "Ao lançar a Habilidade Elemental <color=#FFD780FF>Recitativo: Alvorada Sonora</color>, Vodyanitsa obtém 25 acúmulos de {LINK#N11400001}<color=#FFD780FF>Primeira Cantora</color>{/LINK} e 10 acúmulos de {LINK#N11400002}<color=#FFD780FF>Concerto</color>{/LINK}.\nEsses efeitos duram 30s cada, e são redefinidos ao lançar a Habilidade Elemental novamente.",
+		"description": "Ao lançar a Habilidade Elemental Recitativo: Alvorada Sonora, Vodyanitsa obtém 25 acúmulos de **Primeira Cantora** e 10 acúmulos de **Concerto**.\nEsses efeitos duram 30s cada, e são redefinidos ao lançar a Habilidade Elemental novamente."
+	},
+	"passive3": {
+		"name": "Ecos do Lago Congelado",
+		"descriptionRaw": "Quando não está em combate, ao manter pressionada a Habilidade Elemental, Vodyanitsa revela sua forma de Sereia e consumindo Stamina, nada até 10s. É óbvio que ela pode nadar na água, já que é uma Sereia. Ao lançar a Habilidade Elemental novamente, quando a Duração acabar ou a Stamina acabar, Vodyanitsa não manterá mais sua forma de Sereia.\nAlém disso, aumenta a velocidade de nado de Vodyanitsa, mas também aumenta a velocidade de consumo de Stamina.",
+		"description": "Quando não está em combate, ao manter pressionada a Habilidade Elemental, Vodyanitsa revela sua forma de Sereia e consumindo Stamina, nada até 10s. É óbvio que ela pode nadar na água, já que é uma Sereia. Ao lançar a Habilidade Elemental novamente, quando a Duração acabar ou a Stamina acabar, Vodyanitsa não manterá mais sua forma de Sereia.\nAlém disso, aumenta a velocidade de nado de Vodyanitsa, mas também aumenta a velocidade de consumo de Stamina."
+	},
+	"passive4": {
+		"name": "Música Desalmada da Sereia",
+		"descriptionRaw": "Como a prima donna da Companhia Korolevskiy, quando Vodyanitsa toca um instrumento, mudará para ela mesma cantar.",
+		"description": "Como a prima donna da Companhia Korolevskiy, quando Vodyanitsa toca um instrumento, mudará para ela mesma cantar."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104368,
+				"name": "Ensinamentos da Tenacidade",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Núcleo Quimérico",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guia da Tenacidade",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Núcleo Quimérico Simbiótico",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104369,
+				"name": "Guia da Tenacidade",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Núcleo Quimérico Simbiótico",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104369,
+				"name": "Guia da Tenacidade",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Núcleo Quimérico Simbiótico",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guia da Tenacidade",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Núcleo Quimérico Simbiótico",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofia da Tenacidade",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Nexo Quimérico Primordial",
+				"count": 4
+			},
+			{
+				"id": 113082,
+				"name": "Contenções do Louco",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofia da Tenacidade",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Nexo Quimérico Primordial",
+				"count": 6
+			},
+			{
+				"id": 113082,
+				"name": "Contenções do Louco",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofia da Tenacidade",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Nexo Quimérico Primordial",
+				"count": 9
+			},
+			{
+				"id": 113082,
+				"name": "Contenções do Louco",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofia da Tenacidade",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Nexo Quimérico Primordial",
+				"count": 12
+			},
+			{
+				"id": 113082,
+				"name": "Contenções do Louco",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Coroa da Sabedoria",
+				"count": 1
+			}
+		]
+	}
+}

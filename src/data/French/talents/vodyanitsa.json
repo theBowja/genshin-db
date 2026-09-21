@@ -1,0 +1,252 @@
+{
+	"id": 14001,
+	"name": "Vodyanitsa",
+	"combat1": {
+		"name": "Arietta de psyshkhwe",
+		"descriptionRaw": "<color=#FFD780FF>Attaque normale</color>\nChante un chant ancestral des diableautins et enchaîne jusqu'à 4 attaques qui infligent des <color=#80C0FFFF>DGT Hydro</color>.\n\n<color=#FFD780FF>Attaque chargée</color>\nConsomme de l'endurance pour lancer une boule d'eau en avant, infligeant des <color=#80C0FFFF>DGT Hydro</color>.\n\n<color=#FFD780FF>Attaque plongeante</color>\nPlonge depuis les airs, infligeant des DGT aux ennemis en chemin et des <color=#80C0FFFF>DGT Hydro de zone</color> à l'impact.",
+		"description": "Attaque normale\nChante un chant ancestral des diableautins et enchaîne jusqu'à 4 attaques qui infligent des DGT Hydro.\n\nAttaque chargée\nConsomme de l'endurance pour lancer une boule d'eau en avant, infligeant des DGT Hydro.\n\nAttaque plongeante\nPlonge depuis les airs, infligeant des DGT aux ennemis en chemin et des DGT Hydro de zone à l'impact.",
+		"attributes": {
+			"labels": [
+				"DGT 1er coup|{param1:F1P}",
+				"DGT 2e coup|{param2:F1P}",
+				"DGT 3e coup|{param3:F1P}",
+				"DGT 4e coup|{param4:F1P}",
+				"DGT attaque chargée|{param5:F1P}",
+				"Coût d'endurance attaque chargée|{param6:F1} pts",
+				"DGT durant la chute|{param7:F1P}",
+				"DGT chute basse/élevée|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Rechitativ : Aube sonore",
+		"descriptionRaw": "Vodyanitsa révèle sa véritable forme de diableautine, infligeant des <color=#80C0FFFF>DGT Hydro de zone</color> et obtenant l'effet <color=#FFD780FF>Chant d'antan</color> : pendant sa durée, Vodyanitsa invoque un ancien <color=#FFD780FF>cor du printemps</color> qui se rapproche rapidement d'un ennemi proche de façon intermittente afin de l'attaquer et de lui infliger des <color=#80C0FFFF>DGT Hydro</color>.\nLa <color=#80C0FFFF>RÉS Hydro</color> et la <color=#99FFFFFF>RÉS Cryo</color> des ennemis touchés par ces types d'attaque diminue. De plus, pendant la durée du <color=#FFD780FF>chant d'antan</color>, la RÉS à l'interruption de vos personnages déployés augmente et ils récupèrent périodiquement des PV selon les PV max de Vodyanitsa.",
+		"description": "Vodyanitsa révèle sa véritable forme de diableautine, infligeant des DGT Hydro de zone et obtenant l'effet Chant d'antan : pendant sa durée, Vodyanitsa invoque un ancien cor du printemps qui se rapproche rapidement d'un ennemi proche de façon intermittente afin de l'attaquer et de lui infliger des DGT Hydro.\nLa RÉS Hydro et la RÉS Cryo des ennemis touchés par ces types d'attaque diminue. De plus, pendant la durée du chant d'antan, la RÉS à l'interruption de vos personnages déployés augmente et ils récupèrent périodiquement des PV selon les PV max de Vodyanitsa.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F2P} PV max",
+				"Durée|{param2:F1} s",
+				"Intervalle d'attaques de cor du printemps|{param3:F1} s",
+				"DGT cor du printemps|{param4:F2P} PV max",
+				"Soin de chant d'antan|{param5:I} + {param6:F2P} PV max",
+				"Intervalle de soin de chant d'antan|{param7:F1} s",
+				"Baisse RÉS élémentaire Hydro/Cryo|{param8:F1P}",
+				"Durée de baisse de RÉS|{param9:F1} s",
+				"Temps de recharge|{param10:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Koda : Coule avec toi",
+		"descriptionRaw": "Entonne un chant des diableautins qui attire ses auditeurs vers leur perte, infligeant des <color=#80C0FFFF>DGT Hydro de zone</color>.\nDe plus, les DGT infligés pendant le <color=#FFD780FF>{LINK#S11402}chant d'antan{/LINK}</color> augmentent davantage.",
+		"description": "Entonne un chant des diableautins qui attire ses auditeurs vers leur perte, infligeant des DGT Hydro de zone.\nDe plus, les DGT infligés pendant le **chant d'antan** augmentent davantage.",
+		"attributes": {
+			"labels": [
+				"DGT compétence|{param1:F1P} PV max",
+				"Bonus DGT chant d'antan|{param2:F1P}",
+				"Temps de recharge|{param3:F1} s",
+				"Énergie élémentaire|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "La dernière compositrice de djeguako",
+		"descriptionRaw": "#Utiliser la compétence élémentaire <color=#FFD780FF>Rechitativ : Aube sonore</color> convertit les vortex stellaires sur le terrain en vortex errants et permet aux personnages de l'équipe à proximité de créer des vortex errants à la place des vortex stellaires lorsqu'ils déclenchent des réactions d'Astrodispersion pendant la durée d'un <color=#FFD780FF>{LINK#S11402}chant d'antan{/LINK}</color>.\nLorsqu'un vortex errant est créé ou explose, les <color=#80FFD7FF>DGT Anémo</color> des ennemis proches diminuent également de 35 % pendant 6 s.\nDe plus, lorsqu'un personnage de l'équipe à proximité passe en <color=#FFD780FF>radiance «{NON_BREAK_SPACE}Astrodispersion »</color> pendant la durée d'un <color=#FFD780FF>chant d'antan</color>, la durée de la <color=#FFD780FF>radiance «{NON_BREAK_SPACE}Astrodispersion »</color> augmente de 4 s.",
+		"description": "Utiliser la compétence élémentaire Rechitativ : Aube sonore convertit les vortex stellaires sur le terrain en vortex errants et permet aux personnages de l'équipe à proximité de créer des vortex errants à la place des vortex stellaires lorsqu'ils déclenchent des réactions d'Astrodispersion pendant la durée d'un **chant d'antan**.\nLorsqu'un vortex errant est créé ou explose, les DGT Anémo des ennemis proches diminuent également de 35 % pendant 6 s.\nDe plus, lorsqu'un personnage de l'équipe à proximité passe en radiance « Astrodispersion » pendant la durée d'un chant d'antan, la durée de la radiance « Astrodispersion » augmente de 4 s."
+	},
+	"passive2": {
+		"name": "Chant funèbre du fandyr",
+		"descriptionRaw": "Utiliser la compétence élémentaire <color=#FFD780FF>Rechitativ : Aube sonore</color> accorde 25 cumuls de {LINK#N11400001}<color=#FFD780FF>chant principal</color>{/LINK} et 10 cumuls de {LINK#N11400002}<color=#FFD780FF>chœur</color>{/LINK} à Vodyanitsa.\nCes effets durent 30 s et les cumuls sont actualisés en utilisant à nouveau la compétence élémentaire.",
+		"description": "Utiliser la compétence élémentaire Rechitativ : Aube sonore accorde 25 cumuls de **chant principal** et 10 cumuls de **chœur** à Vodyanitsa.\nCes effets durent 30 s et les cumuls sont actualisés en utilisant à nouveau la compétence élémentaire."
+	},
+	"passive3": {
+		"name": "Échos sur le lac gelé",
+		"descriptionRaw": "Hors combat, utiliser sa compétence élémentaire avec un appui long permet à Vodyanitsa de révéler sa véritable forme de diableautine et de nager pendant 10 s en consommant de l'endurance. Étant une diableautine, Vodyanitsa peut également se déplacer sur la surface de l'eau. Vodyanitsa reprend son apparence normale en utilisant à nouveau sa compétence élémentaire, à la fin de la durée ou une fois son endurance épuisée.\nDe plus, Vodyanitsa nage plus vite, mais consomme son endurance plus rapidement.",
+		"description": "Hors combat, utiliser sa compétence élémentaire avec un appui long permet à Vodyanitsa de révéler sa véritable forme de diableautine et de nager pendant 10 s en consommant de l'endurance. Étant une diableautine, Vodyanitsa peut également se déplacer sur la surface de l'eau. Vodyanitsa reprend son apparence normale en utilisant à nouveau sa compétence élémentaire, à la fin de la durée ou une fois son endurance épuisée.\nDe plus, Vodyanitsa nage plus vite, mais consomme son endurance plus rapidement."
+	},
+	"passive4": {
+		"name": "Chant de sirène sans cœur",
+		"descriptionRaw": "Vodyanitsa, première soprano de la Troupe Korolevskiy, chantera de sa propre voix au lieu de jouer d'un instrument de musique.",
+		"description": "Vodyanitsa, première soprano de la Troupe Korolevskiy, chantera de sa propre voix au lieu de jouer d'un instrument de musique."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104368,
+				"name": "Enseignement de la Persévérance",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Graine chimérique",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guide de la Persévérance",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104369,
+				"name": "Guide de la Persévérance",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104369,
+				"name": "Guide de la Persévérance",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guide de la Persévérance",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Noyau chimérique",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophie de la Persévérance",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 4
+			},
+			{
+				"id": 113082,
+				"name": "Contrainte du fou",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophie de la Persévérance",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 6
+			},
+			{
+				"id": 113082,
+				"name": "Contrainte du fou",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophie de la Persévérance",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 9
+			},
+			{
+				"id": 113082,
+				"name": "Contrainte du fou",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104370,
+				"name": "Philosophie de la Persévérance",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Cœur chimérique",
+				"count": 12
+			},
+			{
+				"id": 113082,
+				"name": "Contrainte du fou",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Couronne de la sagesse",
+				"count": 1
+			}
+		]
+	}
+}

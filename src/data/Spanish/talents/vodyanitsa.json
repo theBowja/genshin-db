@@ -1,0 +1,252 @@
+{
+	"id": 14001,
+	"name": "Vodyanitsa",
+	"combat1": {
+		"name": "Arieta psishjwe",
+		"descriptionRaw": "<color=#FFD780FF>Ataque Normal</color>\nEntona una antigua canción de los nixies para realizar hasta 4 ataques, los cuales infligen <color=#80C0FFFF>Daño Hydro</color>.\n\n<color=#FFD780FF>Ataque Cargado</color>\nConsume una cierta cantidad de Aguante y lanza una esfera de agua hacia delante para infligir <color=#80C0FFFF>Daño Hydro</color>.\n\n<color=#FFD780FF>Ataque Descendente</color>\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo <color=#80C0FFFF>Daño Hydro en el AdE</color> en el momento del impacto.",
+		"description": "Ataque Normal\nEntona una antigua canción de los nixies para realizar hasta 4 ataques, los cuales infligen Daño Hydro.\n\nAtaque Cargado\nConsume una cierta cantidad de Aguante y lanza una esfera de agua hacia delante para infligir Daño Hydro.\n\nAtaque Descendente\nSe lanza desde el aire para golpear el suelo, atacando a los enemigos que encuentre en su trayecto e infligiendo Daño Hydro en el AdE en el momento del impacto.",
+		"attributes": {
+			"labels": [
+				"Daño de 1er golpe|{param1:F1P}",
+				"Daño de 2.º golpe|{param2:F1P}",
+				"Daño de 3er golpe|{param3:F1P}",
+				"Daño de 4.º golpe|{param4:F1P}",
+				"Daño de ATQ Cargado|{param5:F1P}",
+				"Coste de Aguante de ATQ Cargado|{param6:F1} pts.",
+				"Daño de Caída|{param7:F1P}",
+				"Daño de impacto de caída baja/alta|{param8:P}/{param9:P}"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Recitativo: Alba sonora",
+		"descriptionRaw": "Revela su forma original de nixie, inflige <color=#80C0FFFF>Daño Hydro en el AdE</color> y obtiene el efecto de <color=#FFD780FF>canción de otrora</color>. Mientras este efecto esté activo, Vodyanitsa invocará un antiguo <color=#FFD780FF>cuerno del llamado primaveral</color> que se desplazará rápidamente hacia un enemigo cada cierto tiempo para atacarlo e infligirle <color=#80C0FFFF>Daño Hydro</color>.\nLas <color=#80C0FFFF>RES Hydro</color> y <color=#99FFFFFF>Cryo</color> de los enemigos que sean golpeados por cualquiera de los dos ataques anteriores se verán reducidas. Además, mientras el efecto de <color=#FFD780FF>canción de otrora</color> esté activo, aumentará la <color=#FFD780FF>RES a interrupción</color> de tu personaje en uso del equipo y le restaurará Vida periódicamente en función de la Vida Máx. de Vodyanitsa.",
+		"description": "Revela su forma original de nixie, inflige Daño Hydro en el AdE y obtiene el efecto de canción de otrora. Mientras este efecto esté activo, Vodyanitsa invocará un antiguo cuerno del llamado primaveral que se desplazará rápidamente hacia un enemigo cada cierto tiempo para atacarlo e infligirle Daño Hydro.\nLas RES Hydro y Cryo de los enemigos que sean golpeados por cualquiera de los dos ataques anteriores se verán reducidas. Además, mientras el efecto de canción de otrora esté activo, aumentará la RES a interrupción de tu personaje en uso del equipo y le restaurará Vida periódicamente en función de la Vida Máx. de Vodyanitsa.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F2P} de Vida Máx.",
+				"Duración|{param2:F1} s",
+				"Intervalo de ataque de cuerno del llamado primaveral|{param3:F1} s",
+				"Daño de cuerno del llamado primaveral|{param4:F2P} de Vida Máx.",
+				"Curación de canción de otrora|{param5:I} + {param6:F2P} de Vida Máx.",
+				"Intervalo de curación de canción de otrora|{param7:F1} s",
+				"Reducción de RES Hydro/Cryo|{param8:F1P}",
+				"Duración de reducción de RES|{param9:F1} s",
+				"TdE de habilidad|{param10:F1} s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Coda: Hundiéndome contigo",
+		"descriptionRaw": "Entona una canción de los nixies que seduce y hunde para infligir <color=#80C0FFFF>Daño Hydro en el AdE</color>.\nSi se encuentra en el estado de <color=#FFD780FF>{LINK#S11402}canción de otrora{/LINK}</color>, el daño infligido aumentará aún más.",
+		"description": "Entona una canción de los nixies que seduce y hunde para infligir Daño Hydro en el AdE.\nSi se encuentra en el estado de **canción de otrora**, el daño infligido aumentará aún más.",
+		"attributes": {
+			"labels": [
+				"Daño de habilidad|{param1:F1P} de Vida Máx.",
+				"Bono de daño de canción de otrora|{param2:F1P}",
+				"TdE|{param3:F1} s",
+				"Energía Elemental|{param4:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "La última cantante djeguako",
+		"descriptionRaw": "#Al usar la Habilidad Elemental, <color=#FFD780FF>Recitativo: Alba sonora</color>, cualquier vórtice brilloestelar que haya en el campo de batalla se transformará en un vórtice errante. Además, cuando un personaje cercano del equipo cause una reacción de Torbellino Estelar mientras el efecto de <color=#FFD780FF>{LINK#S11402}canción de otrora{/LINK}</color> esté activo, se creará un vórtice errante en lugar de un vórtice brilloestelar.\nAl crear o detonar un vórtice errante, la <color=#80FFD7FF>RES Anemo</color> de los enemigos cercanos se reducirá en un 35% durante 6{NON_BREAK_SPACE}s.\nAdemás, cuando los personajes cercanos del equipo entren en el estado de <color=#FFD780FF>esplendor: Torbellino Estelar</color> mientras la <color=#FFD780FF>canción de otrora</color> esté activa, la duración de <color=#FFD780FF>esplendor: Torbellino Estelar</color> se prolongará 4{NON_BREAK_SPACE}s.",
+		"description": "Al usar la Habilidad Elemental, Recitativo: Alba sonora, cualquier vórtice brilloestelar que haya en el campo de batalla se transformará en un vórtice errante. Además, cuando un personaje cercano del equipo cause una reacción de Torbellino Estelar mientras el efecto de **canción de otrora** esté activo, se creará un vórtice errante en lugar de un vórtice brilloestelar.\nAl crear o detonar un vórtice errante, la RES Anemo de los enemigos cercanos se reducirá en un 35% durante 6 s.\nAdemás, cuando los personajes cercanos del equipo entren en el estado de esplendor: Torbellino Estelar mientras la canción de otrora esté activa, la duración de esplendor: Torbellino Estelar se prolongará 4 s."
+	},
+	"passive2": {
+		"name": "Endecha del fandyr",
+		"descriptionRaw": "#Al usar la Habilidad Elemental, <color=#FFD780FF>Recitativo: Alba sonora</color>, Vodyanitsa obtiene 25 cargas de {LINK#N11400001}<color=#FFD780FF>vocalista principal</color>{/LINK} y 10 cargas de {LINK#N11400002}<color=#FFD780FF>coro</color>{/LINK}.\nCada uno de estos efectos dura 30{NON_BREAK_SPACE}s y sus cargas se reiniciarán al usar la Habilidad Elemental.",
+		"description": "Al usar la Habilidad Elemental, Recitativo: Alba sonora, Vodyanitsa obtiene 25 cargas de **vocalista principal** y 10 cargas de **coro**.\nCada uno de estos efectos dura 30 s y sus cargas se reiniciarán al usar la Habilidad Elemental."
+	},
+	"passive3": {
+		"name": "Ecos sobre el Lago Helado",
+		"descriptionRaw": "#Cuando no esté en combate, al mantener pulsada la Habilidad Elemental, Vodyanitsa revelará su forma original de nixie y podrá nadar durante un máximo de 10{NON_BREAK_SPACE}s a costa de consumir Aguante. Dado que es una nixie, también podrá desplazarse sobre la superficie del agua. Al volver a usar la Habilidad Elemental, cuando termine su duración o cuando se quede sin Aguante, Vodyanitsa saldrá de su forma original de nixie.\nAdemás, la velocidad de nado de Vodyanitsa aumenta, pero consume Aguante más rápidamente.",
+		"description": "Cuando no esté en combate, al mantener pulsada la Habilidad Elemental, Vodyanitsa revelará su forma original de nixie y podrá nadar durante un máximo de 10 s a costa de consumir Aguante. Dado que es una nixie, también podrá desplazarse sobre la superficie del agua. Al volver a usar la Habilidad Elemental, cuando termine su duración o cuando se quede sin Aguante, Vodyanitsa saldrá de su forma original de nixie.\nAdemás, la velocidad de nado de Vodyanitsa aumenta, pero consume Aguante más rápidamente."
+	},
+	"passive4": {
+		"name": "Canción desalmada de sirena",
+		"descriptionRaw": "Como soprano principal de la Compañía Korolevski, al tocar un instrumento, en su lugar, Vodyanitsa cantará ella misma.",
+		"description": "Como soprano principal de la Compañía Korolevski, al tocar un instrumento, en su lugar, Vodyanitsa cantará ella misma."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104368,
+				"name": "Enseñanzas de la tenacidad",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Semilla quimérica",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104369,
+				"name": "Guía de la tenacidad",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104369,
+				"name": "Guía de la tenacidad",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104369,
+				"name": "Guía de la tenacidad",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104369,
+				"name": "Guía de la tenacidad",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Célula quimérica simbiótica",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofía de la tenacidad",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 4
+			},
+			{
+				"id": 113082,
+				"name": "Ataduras del demente",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofía de la tenacidad",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 6
+			},
+			{
+				"id": 113082,
+				"name": "Ataduras del demente",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofía de la tenacidad",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 9
+			},
+			{
+				"id": 113082,
+				"name": "Ataduras del demente",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104370,
+				"name": "Filosofía de la tenacidad",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Organismo quimérico primigenio",
+				"count": 12
+			},
+			{
+				"id": 113082,
+				"name": "Ataduras del demente",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Corona de la sabiduría",
+				"count": 1
+			}
+		]
+	}
+}
