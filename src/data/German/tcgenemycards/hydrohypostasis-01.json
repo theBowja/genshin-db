@@ -1,0 +1,100 @@
+{
+	"id": 4214,
+	"name": "Hydro-Hypostase",
+	"hp": 40,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Andere Waffen",
+		"Monster"
+	],
+	"skills": [
+		{
+			"id": 22081,
+			"name": "Wassertropfen-Kugel",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "Tosende Wellen",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], $[K53|s1]: <color=#FFFFFFFF>$[S22085]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 2 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, <color=#FFFFFFFF>bereitet folgende Fähigkeiten vor</color>: <color=#FFFFFFFF>Überschwemmung</color>.",
+			"description": "Verursacht 2 Pkt. Hydro-SCH, bereitet folgende Fähigkeiten vor: Überschwemmung.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "Flut des Unheils",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C122082]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Wassertropfen</color>.",
+			"description": "Verursacht 3 Pkt. Hydro-SCH, erschafft 1 Wassertropfen.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "Hydro-Kristallkern",
+			"descriptionraw": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>$[C122081]</color>.\\nWenn <color=#FFFFFFFF>$[C122082]</color> auf dem Feld ist: Verleiht der Figur beim Verbrauchen von <color=#FFFFFFFF>$[C122081]</color> erneut <color=#FFFFFFFF>$[C122081]</color> und reduziert die Einsatzmöglichkeit von <color=#FFFFFFFF>$[C122082]</color> um 1.",
+			"descriptionreplaced": "Passiv – Erhält zu Beginn des Kampfes <color=#FFFFFFFF>Hydro-Kristallkern</color>.\\nWenn <color=#FFFFFFFF>Wassertropfen</color> auf dem Feld ist: Verleiht der Figur beim Verbrauchen von <color=#FFFFFFFF>Hydro-Kristallkern</color> erneut <color=#FFFFFFFF>Hydro-Kristallkern</color> und reduziert die Einsatzmöglichkeit von <color=#FFFFFFFF>Wassertropfen</color> um 1.",
+			"description": "Passiv – Erhält zu Beginn des Kampfes Hydro-Kristallkern.\nWenn Wassertropfen auf dem Feld ist: Verleiht der Figur beim Verbrauchen von Hydro-Kristallkern erneut Hydro-Kristallkern und reduziert die Einsatzmöglichkeit von Wassertropfen um 1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "Überschwemmung",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

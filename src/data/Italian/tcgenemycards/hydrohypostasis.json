@@ -1,0 +1,100 @@
+{
+	"id": 4213,
+	"name": "Ipostasi di Hydro",
+	"hp": 25,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Altre armi",
+		"Mostro"
+	],
+	"skills": [
+		{
+			"id": 22081,
+			"name": "Diffusione di gocce",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>DAN da Hydro</color>.",
+			"description": "Infligge 1 DAN da Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attacco normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "Maree impetuose",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], poi esegue $[K53] per <color=#FFFFFFFF>$[S22085]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Infligge 2 {SPRITE_PRESET#2102}<color=#80C0FFFF>DAN da Hydro</color>, poi esegue <color=#FFFFFFFF>Preparazione abilità</color> per <color=#FFFFFFFF>Trabocco</color>.",
+			"description": "Infligge 2 DAN da Hydro, poi esegue Preparazione abilità per Trabocco.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "Maree esiziali",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] ed evoca <color=#FFFFFFFF>$[C122082]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Infligge 3 {SPRITE_PRESET#2102}<color=#80C0FFFF>DAN da Hydro</color> ed evoca <color=#FFFFFFFF>Goccia d'acqua</color>.",
+			"description": "Infligge 3 DAN da Hydro ed evoca Goccia d'acqua.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Tripudio elementale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "Nucleo cristallino di Hydro",
+			"descriptionraw": "(Passiva) All'inizio del duello, questo personaggio inizia con un <color=#FFFFFFFF>$[C122081]</color> associato. Se la <color=#FFFFFFFF>$[C122082]</color> è in campo quando il <color=#FFFFFFFF>$[C122081]</color> viene consumato: associa nuovamente un <color=#FFFFFFFF>$[C122081]</color> e diminuisce di 1 gli utilizzi della <color=#FFFFFFFF>$[C122082]</color>.",
+			"descriptionreplaced": "(Passiva) All'inizio del duello, questo personaggio inizia con un <color=#FFFFFFFF>Nucleo cristallino di Hydro</color> associato. Se la <color=#FFFFFFFF>Goccia d'acqua</color> è in campo quando il <color=#FFFFFFFF>Nucleo cristallino di Hydro</color> viene consumato: associa nuovamente un <color=#FFFFFFFF>Nucleo cristallino di Hydro</color> e diminuisce di 1 gli utilizzi della <color=#FFFFFFFF>Goccia d'acqua</color>.",
+			"description": "(Passiva) All'inizio del duello, questo personaggio inizia con un Nucleo cristallino di Hydro associato. Se la Goccia d'acqua è in campo quando il Nucleo cristallino di Hydro viene consumato: associa nuovamente un Nucleo cristallino di Hydro e diminuisce di 1 gli utilizzi della Goccia d'acqua.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Abilità passiva",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "Trabocco",
+			"descriptionraw": "Infligge $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Infligge 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>DAN da Hydro</color>.",
+			"description": "Infligge 1 DAN da Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Abilità elementale",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"id": 4213,
+	"name": "Hipóstasis Hydro",
+	"hp": 25,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Otras armas",
+		"Monstruo"
+	],
+	"skills": [
+		{
+			"id": 22081,
+			"name": "Difusión de gotas",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "Mareas crecientes",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y $[K53|s1] <color=#FFFFFFFF>$[S22085]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> y <color=#FFFFFFFF>prepara la habilidad</color> <color=#FFFFFFFF>Desbordamiento</color>.",
+			"description": "Inflige 2 pts. de Daño Hydro y prepara la habilidad Desbordamiento.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "Mareas calamitosas",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] e invoca una <color=#FFFFFFFF>$[C122082|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color> e invoca una <color=#FFFFFFFF>masa de agua</color>.",
+			"description": "Inflige 3 pts. de Daño Hydro e invoca una masa de agua.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "Núcleo de cristal Hydro",
+			"descriptionraw": "Pasiva: cuando comienza el duelo, este personaje obtiene un <color=#FFFFFFFF>$[C122081|s1]</color>. Si hay en juego una <color=#FFFFFFFF>$[C122082|s1]</color> cuando se consume el <color=#FFFFFFFF>$[C122081|s1]</color>, vuelve a obtenerlo y el número de usos de la <color=#FFFFFFFF>$[C122082|s1]</color> -1.",
+			"descriptionreplaced": "Pasiva: cuando comienza el duelo, este personaje obtiene un <color=#FFFFFFFF>núcleo de cristal Hydro</color>. Si hay en juego una <color=#FFFFFFFF>masa de agua</color> cuando se consume el <color=#FFFFFFFF>núcleo de cristal Hydro</color>, vuelve a obtenerlo y el número de usos de la <color=#FFFFFFFF>masa de agua</color> -1.",
+			"description": "Pasiva: cuando comienza el duelo, este personaje obtiene un núcleo de cristal Hydro. Si hay en juego una masa de agua cuando se consume el núcleo de cristal Hydro, vuelve a obtenerlo y el número de usos de la masa de agua -1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "Desbordamiento",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Inflige 1 pt. de {SPRITE_PRESET#2102}<color=#80C0FFFF>Daño Hydro</color>.",
+			"description": "Inflige 1 pt. de Daño Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

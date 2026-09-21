@@ -1,0 +1,100 @@
+{
+	"id": 4214,
+	"name": "Su Hipostazı",
+	"hp": 40,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Su",
+		"Diğer Silahlar",
+		"Canavar"
+	],
+	"skills": [
+		{
+			"id": 22081,
+			"name": "Damlacık Yayılımı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "1 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "Yükselen Dalgalar",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir. Ardından <color=#FFFFFFFF>$[S22085]</color> için \"$[K53]\" kullanır.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir. Ardından <color=#FFFFFFFF>Taşkın</color> için \"<color=#FFFFFFFF>Beceri Hazırlama</color>\" kullanır.",
+			"description": "2 Su Hasarı verir. Ardından Taşkın için \"Beceri Hazırlama\" kullanır.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "Felaket Dalgaları",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve <color=#FFFFFFFF>$[C122082]</color> çağırır.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir ve <color=#FFFFFFFF>Su Damlacığı</color> çağırır.",
+			"description": "3 Su Hasarı verir ve Su Damlacığı çağırır.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "Su Kristali Çekirdeği",
+			"descriptionraw": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>$[C122081]</color> ekli olarak başlar. <color=#FFFFFFFF>$[C122081]</color> tüketildiğinde alanda <color=#FFFFFFFF>$[C122082]</color> varsa <color=#FFFFFFFF>$[C122081]</color> yeniden eklenir ve <color=#FFFFFFFF>$[C122082]</color> için Kullanım Hakkı 1 azalır.",
+			"descriptionreplaced": "(Pasif) Savaş başladığında bu karakter <color=#FFFFFFFF>Su Kristali Çekirdeği</color> ekli olarak başlar. <color=#FFFFFFFF>Su Kristali Çekirdeği</color> tüketildiğinde alanda <color=#FFFFFFFF>Su Damlacığı</color> varsa <color=#FFFFFFFF>Su Kristali Çekirdeği</color> yeniden eklenir ve <color=#FFFFFFFF>Su Damlacığı</color> için Kullanım Hakkı 1 azalır.",
+			"description": "(Pasif) Savaş başladığında bu karakter Su Kristali Çekirdeği ekli olarak başlar. Su Kristali Çekirdeği tüketildiğinde alanda Su Damlacığı varsa Su Kristali Çekirdeği yeniden eklenir ve Su Damlacığı için Kullanım Hakkı 1 azalır.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "Taşkın",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Su Hasarı</color> verir.",
+			"description": "1 Su Hasarı verir.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}
