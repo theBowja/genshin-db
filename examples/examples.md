@@ -68,7 +68,7 @@ const genshindb = require('genshin-db');
   'Sethos',         'Shenhe',             'Shikanoin Heizou',
   'Sigewinne',      'Skirk',              'Sucrose',
   'Tartaglia',
-  ... 22 more items
+  ... 24 more items
 ]
 ```
 
@@ -705,8 +705,8 @@ const genshindb = require('genshin-db');
   'Manekin',          'Manekina',
   'Nilou',            'Odette',
   'Qiqi',             'Skirk',
-  'Xilonen',          'Xingqiu',
-  'Zibai'
+  'Vesna',            'Xilonen',
+  'Xingqiu',          'Zibai'
 ]
 ```
 
@@ -828,7 +828,7 @@ const genshindb = require('genshin-db');
   'Skirk',              'Sucrose',          'Tartaglia',
   'Thoma',              'Tighnari',         'Traveler (Anemo)',
   'Traveler (Cryo)',
-  ... 25 more items
+  ... 27 more items
 ]
 ```
 
@@ -1669,6 +1669,7 @@ const genshindb = require('genshin-db');
   'Ballad of the Fjords',
   'Beacon of the Reed Sea',
   "Beginner's Protector",
+  'Beyond the Chrysalis',
   'Blackcliff Agate',
   'Blackcliff Longsword',
   'Blackcliff Pole',
@@ -1679,6 +1680,7 @@ const genshindb = require('genshin-db');
   'Blade of Atonement',
   'Bloodsoaked Ruins',
   'Bloodtainted Greatsword',
+  'Breezeborne Refrain',
   'Calamity of Eshu',
   'Calamity Queller',
   'Cashflow Supervision',
@@ -1747,9 +1749,7 @@ const genshindb = require('genshin-db');
   'Harbinger of Dawn',
   "Heretic's Molten Blade",
   "Hunter's Bow",
-  "Hunter's Path",
-  'Ibis Piercer',
-  ... 149 more items
+  ... 155 more items
 ]
 ```
 
@@ -2607,6 +2607,7 @@ const genshindb = require('genshin-db');
   'Bountiful Year',
   'Butter Crab',
   'Candy Shells',
+  'Celestial Tea Crisp',
   'Chicken Tofu Pudding',
   'Chili-Mince Cornbread Buns',
   'Drunken Plums in Snow',
@@ -2629,6 +2630,7 @@ const genshindb = require('genshin-db');
   'Mystique Soup',
   'Petit Gateau Debord: Revised Version',
   'Puff Pops',
+  'Royal Grilled Fish',
   'Sashimi Platter',
   'Sing Your Heart Out',
   'Spiced Fried Chicken',
@@ -2686,6 +2688,7 @@ const genshindb = require('genshin-db');
   'Halvamazd',
   'Harbor Fish Burger',
   'Heat-Quelling Soup',
+  'Hoarfrost Soup',
   'Jade Fruit Soup',
   'Jewelry Soup',
   'Lakkaberry Krumkakes',
@@ -2700,6 +2703,7 @@ const genshindb = require('genshin-db');
   'Quiet Elegance',
   'Rice Cake Soup',
   'Right at Home',
+  'Royal Grilled Fish',
   'Sakura Shrimp Crackers',
   'Sakura Tempura',
   'Shimi Chazuke',
@@ -3138,6 +3142,7 @@ const genshindb = require('genshin-db');
   'Gluttonous Yumkasaur Mountain King',
   'Golden Wolflord',
   'Goldflame Qucusaur Tyrant',
+  'Guardian Blade of Drifting Snow',
   "Guardian of Apep's Oasis",
   'Hydro Hypostasis',
   'Hydro Tulpa',
