@@ -1,0 +1,91 @@
+{
+	"id": 1612,
+	"name": "Illuga",
+	"shareid": 621,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Toprak",
+		"Mızrak",
+		"Nod-Krai"
+	],
+	"storytitle": "\"Kabusun Alevli Kalbi\" Illuga",
+	"storytext": "Kabusları dağıtarak şafağı müjdeler.",
+	"source": "Illuga'yı Kedi Kuyruğu'nda bir düelloya davet etme ve onunla yaptığın Dostluk Düellosunu kazanma ödülü.",
+	"skills": [
+		{
+			"id": 16121,
+			"name": "Söz Erinin Mızrağı",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Fiziksel Hasar</color> verir.",
+			"description": "2 Fiziksel Hasar verir.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Saldırı",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16122,
+			"name": "Şafak Şarkısı Kuşu",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve elinde 1 <color=#FFFFFFFF>$[C116121]</color> oluşturur.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2106}<color=#FFE699FF>Toprak Hasarı</color> verir ve elinde 1 <color=#FFFFFFFF>Aedon</color> oluşturur.",
+			"description": "3 Toprak Hasarı verir ve elinde 1 Aedon oluşturur.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Element Becerisi",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16123,
+			"name": "Gölgesiz Yansıma",
+			"descriptionraw": "$[D__KEY__DAMAGE] $[D__KEY__ELEMENT] verir ve 3 Kullanım Hakkı olan <color=#FFFFFFFF>$[C116122]</color> oluşturur.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "3 {SPRITE_PRESET#2106}<color=#FFE699FF>Toprak Hasarı</color> verir ve 3 Kullanım Hakkı olan <color=#FFFFFFFF>Bülbülün Şarkısı</color> oluşturur.",
+			"description": "3 Toprak Hasarı verir ve 3 Kullanım Hakkı olan Bülbülün Şarkısı oluşturur.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Element Patlaması",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16124,
+			"name": "Ay Sembolü Kutsaması: Kışın Solmayan",
+			"descriptionraw": "(Pasif) Başlangıç destende ismi olmayan bir kart eline geldiğinde ona $[K3005] uygulanır. (Her Turda bir defa.)",
+			"descriptionreplaced": "(Pasif) Başlangıç destende ismi olmayan bir kart eline geldiğinde ona <color=#FFFFFFFF>Maliyet Azaltma</color> uygulanır. (Her Turda bir defa.)",
+			"description": "(Pasif) Başlangıç destende ismi olmayan bir kart eline geldiğinde ona Maliyet Azaltma uygulanır. (Her Turda bir defa.)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Pasif Beceri",
+			"playcost": []
+		}
+	]
+}

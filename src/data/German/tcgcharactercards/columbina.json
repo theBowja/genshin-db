@@ -1,0 +1,113 @@
+{
+	"id": 1217,
+	"name": "Columbina",
+	"shareid": 620,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Hydro",
+		"Katalysator",
+		"Nod-Krai"
+	],
+	"storytitle": "Heimkehr des leeren Mondes – Columbina",
+	"storytext": "Wo findet die weiße Taube unter dem Mond ihr Zuhause?",
+	"source": "Nach einem gewonnenen „Duell – Nett“ mit Columbina in der Taverne Zum Katzenschwanz zu erhalten.",
+	"skills": [
+		{
+			"id": 12171,
+			"name": "Mondtau-Kaskade",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1].\\nWählt, nachdem der Gegner insgesamt 3-mal Mondleuchten-Reaktionen erlitten hat und sich mind. 1 von $[K3005] betroffene Karte auf deiner Hand befindet, eine zufällige von $[K3005] betroffene Karte aus, legt sie oben auf deinen Stapel und verursacht danach nochmal 1 Pkt. $[K107|s1].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>.\\nWählt, nachdem der Gegner insgesamt 3-mal Mondleuchten-Reaktionen erlitten hat und sich mind. 1 von <color=#FFFFFFFF>Kostenverringerung</color> betroffene Karte auf deiner Hand befindet, eine zufällige von <color=#FFFFFFFF>Kostenverringerung</color> betroffene Karte aus, legt sie oben auf deinen Stapel und verursacht danach nochmal 1 Pkt. {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-SCH</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH.\nWählt, nachdem der Gegner insgesamt 3-mal Mondleuchten-Reaktionen erlitten hat und sich mind. 1 von Kostenverringerung betroffene Karte auf deiner Hand befindet, eine zufällige von Kostenverringerung betroffene Karte aus, legt sie oben auf deinen Stapel und verursacht danach nochmal 1 Pkt. Dendro-SCH.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12172,
+			"name": "Ewige Gezeiten",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C112172]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 1 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Gravitationswelle</color>.",
+			"description": "Verursacht 1 Pkt. Hydro-SCH, erschafft 1 Gravitationswelle.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elementarfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12173,
+			"name": "Melancholie unterm Mond",
+			"descriptionraw": "Verursacht $[D__KEY__DAMAGE] Pkt. $[D__KEY__ELEMENT|s1], erschafft 1 <color=#FFFFFFFF>$[C112171]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Verursacht 3 Pkt. {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro-SCH</color>, erschafft 1 <color=#FFFFFFFF>Mondgebiet</color>.",
+			"description": "Verursacht 3 Pkt. Hydro-SCH, erschafft 1 Mondgebiet.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Spezialfähigkeit",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12174,
+			"name": "Mondomen-Segen – Geliehenes Mondlicht",
+			"descriptionraw": "Passiv – Wandelt, wenn in dieser Partie die gegnerische Seite die <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}Reaktion Unter Strom</color> / <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}Sprießen</color> oder <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}Kristallisation (Hydro)</color> erleidet, diese in <color=#FFFFFFFF>$[K3001]</color> / <color=#FFFFFFFF>$[K3009]</color> oder <color=#FFFFFFFF>$[K3010]</color> um.\\nVerursacht, nachdem die gegnerische Seite die Reaktion <color=#FFFFFFFF>$[K3001]</color> / <color=#FFFFFFFF>$[K3009]</color> oder <color=#FFFFFFFF>$[K3010]</color> erlitten hat, 1 Pkt. $[K104] / $[K107] oder $[K106] (1-mal pro Runde).",
+			"descriptionreplaced": "Passiv – Wandelt, wenn in dieser Partie die gegnerische Seite die <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}Reaktion Unter Strom</color> / <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}Sprießen</color> oder <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}Kristallisation (Hydro)</color> erleidet, diese in <color=#FFFFFFFF><color=#FFFFFFFF>Mond unter Strom</color></color> / <color=#FFFFFFFF><color=#FFFFFFFF>Mondspross</color></color> oder <color=#FFFFFFFF><color=#FFFFFFFF>Mond-Kristallisation</color></color> um.\\nVerursacht, nachdem die gegnerische Seite die Reaktion <color=#FFFFFFFF><color=#FFFFFFFF>Mond unter Strom</color></color> / <color=#FFFFFFFF><color=#FFFFFFFF>Mondspross</color></color> oder <color=#FFFFFFFF><color=#FFFFFFFF>Mond-Kristallisation</color></color> erlitten hat, 1 Pkt. {SPRITE_PRESET#2104}<color=#FFACFFFF>Elektro-Schaden</color> / {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro-Schaden</color> oder {SPRITE_PRESET#2106}<color=#FFE699FF>Geo-Schaden</color> (1-mal pro Runde).",
+			"description": "Passiv – Wandelt, wenn in dieser Partie die gegnerische Seite die Reaktion Unter Strom / Sprießen oder Kristallisation (Hydro) erleidet, diese in Mond unter Strom / Mondspross oder Mond-Kristallisation um.\nVerursacht, nachdem die gegnerische Seite die Reaktion Mond unter Strom / Mondspross oder Mond-Kristallisation erlitten hat, 1 Pkt. Elektro-Schaden / Dendro-Schaden oder Geo-Schaden (1-mal pro Runde).",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"playcost": []
+		},
+		{
+			"id": 12175,
+			"name": "Mondomen-Segen – Geliehenes Mondlicht",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Fähigkeit",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 12176,
+			"name": "Mondtau-Kaskade",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Standardangriff",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

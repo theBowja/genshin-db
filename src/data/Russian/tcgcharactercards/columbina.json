@@ -1,0 +1,113 @@
+{
+	"id": 1217,
+	"name": "Коломбина",
+	"shareid": 620,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Гидро",
+		"Катализатор",
+		"Нод-Край"
+	],
+	"storytitle": "«Возвращение полой луны» Коломбина",
+	"storytext": "Белый голубь под луной, где дом твой?",
+	"source": "Награда за приглашение Коломбины в «Кошкин хвост» и победу в Дружеской дуэли",
+	"skills": [
+		{
+			"id": 12171,
+			"name": "Ливень лунных рос",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.\\nКогда в этой игре противник суммарно получит урон от Лунных реакций 3 раза, если среди карт в вашей руке есть карты с эффектом $[K3005], помещает 1 случайную карту с эффектом $[K3005] наверх колоды, а затем дополнительно наносит $[K107], 1 ед. (1 раз за раунд)",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед.\\nКогда в этой игре противник суммарно получит урон от Лунных реакций 3 раза, если среди карт в вашей руке есть карты с эффектом <color=#FFFFFFFF>Снижение стоимости</color>, помещает 1 случайную карту с эффектом <color=#FFFFFFFF>Снижение стоимости</color> наверх колоды, а затем дополнительно наносит {SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>, 1 ед. (1 раз за раунд)",
+			"description": "Наносит Гидро урон, 1 ед.\nКогда в этой игре противник суммарно получит урон от Лунных реакций 3 раза, если среди карт в вашей руке есть карты с эффектом Снижение стоимости, помещает 1 случайную карту с эффектом Снижение стоимости наверх колоды, а затем дополнительно наносит Дендро урон, 1 ед. (1 раз за раунд)",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12172,
+			"name": "Вечные приливы",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., вы получаете <color=#FFFFFFFF>$[C112172]</color>.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед., вы получаете <color=#FFFFFFFF>Зыбь тяготения</color>.",
+			"description": "Наносит Гидро урон, 1 ед., вы получаете Зыбь тяготения.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12173,
+			"name": "Тоска во свете луны",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., вы получаете <color=#FFFFFFFF>$[C112171]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед., вы получаете <color=#FFFFFFFF>Владения луны</color>.",
+			"description": "Наносит Гидро урон, 3 ед., вы получаете Владения луны.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12174,
+			"name": "Дар лунного знамения: Одолженный тебе лунный свет",
+			"descriptionraw": "(Пассивный навык) В текущей игре, когда враг получает реакцию <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}Заряжен</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}Бутонизация</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}Кристалл (Гидро)</color>, она заменяется на реакцию <color=#FFFFFFFF>$[K3001]</color>/<color=#FFFFFFFF>$[K3009]</color>/<color=#FFFFFFFF>$[K3010]</color>.\\nКогда противник получает реакцию <color=#FFFFFFFF>$[K3001]</color>/<color=#FFFFFFFF>$[K3009]</color>/<color=#FFFFFFFF>$[K3010]</color>: наносит $[K104]/$[K107]/$[K106], 1 ед. (1 раз за раунд)",
+			"descriptionreplaced": "(Пассивный навык) В текущей игре, когда враг получает реакцию <color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}Заряжен</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}Бутонизация</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}Кристалл (Гидро)</color>, она заменяется на реакцию <color=#FFFFFFFF><color=#FFFFFFFF>Лунный заряд</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>Лунная бутонизация</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>Лунный кристалл</color></color>.\\nКогда противник получает реакцию <color=#FFFFFFFF><color=#FFFFFFFF>Лунный заряд</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>Лунная бутонизация</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>Лунный кристалл</color></color>: наносит {SPRITE_PRESET#2104}<color=#FFACFFFF>Электро урон</color>/{SPRITE_PRESET#2107}<color=#7EC236FF>Дендро урон</color>/{SPRITE_PRESET#2106}<color=#FFE699FF>Гео урон</color>, 1 ед. (1 раз за раунд)",
+			"description": "(Пассивный навык) В текущей игре, когда враг получает реакцию Заряжен/Бутонизация/Кристалл (Гидро), она заменяется на реакцию Лунный заряд/Лунная бутонизация/Лунный кристалл.\nКогда противник получает реакцию Лунный заряд/Лунная бутонизация/Лунный кристалл: наносит Электро урон/Дендро урон/Гео урон, 1 ед. (1 раз за раунд)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 12175,
+			"name": "Дар лунного знамения: Одолженный тебе лунный свет",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 12176,
+			"name": "Ливень лунных рос",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

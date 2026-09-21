@@ -1,0 +1,91 @@
+{
+	"id": 1612,
+	"name": "일루가",
+	"shareid": 621,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_GEO",
+		"GCG_TAG_WEAPON_POLE",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"바위 원소",
+		"장병기",
+		"노드크라이"
+	],
+	"storytitle": "악몽을 불태우는 심지·일루가",
+	"storytext": "악몽을 밝히는 등불",
+	"source": "캣테일 술집에서 일루가 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 16121,
+			"name": "맹세의 창술",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16122,
+			"name": "새벽을 여는 밤꾀꼬리",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116121]</color> 카드를 생성한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>아에돈</color> 카드를 생성한다.",
+			"description": "바위 원소 피해를 3pt 주고 아에돈 카드를 생성한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 16123,
+			"name": "그림자를 밝히는 등불",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, 사용 가능 횟수가 3인 <color=#FFFFFFFF>$[C116122]</color>를 생성한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_GEO",
+			"descriptionreplaced": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>를 3pt 주고, 사용 가능 횟수가 3인 <color=#FFFFFFFF>밤꾀꼬리 노래</color>를 생성한다.",
+			"description": "바위 원소 피해를 3pt 주고, 사용 가능 횟수가 3인 밤꾀꼬리 노래를 생성한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_GEO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 16124,
+			"name": "달빛 징조의 축복·상록수",
+			"descriptionraw": "[패시브] 이번 대전의 최초 카드 덱에 이름이 존재하지 않는 카드가 아군 핸드 카드에 추가될 시, 해당 카드에 $[K3005] 부여. (턴당 1회)",
+			"descriptionreplaced": "[패시브] 이번 대전의 최초 카드 덱에 이름이 존재하지 않는 카드가 아군 핸드 카드에 추가될 시, 해당 카드에 <color=#FFFFFFFF>코스트 감소</color> 부여. (턴당 1회)",
+			"description": "[패시브] 이번 대전의 최초 카드 덱에 이름이 존재하지 않는 카드가 아군 핸드 카드에 추가될 시, 해당 카드에 코스트 감소 부여. (턴당 1회)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		}
+	]
+}

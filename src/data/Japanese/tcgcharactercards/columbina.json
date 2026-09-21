@@ -1,0 +1,113 @@
+{
+	"id": 1217,
+	"name": "コロンビーナ",
+	"shareid": 620,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"水元素",
+		"法器",
+		"ナド・クライ"
+	],
+	"storytitle": "空月の帰郷・コロンビーナ",
+	"storytext": "月の下の白き鳩よ、何処へ帰る——？",
+	"source": "キャッツテールでコロンビーナを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 12171,
+			"name": "注がれる月露",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n本ラウンドで月反応を累計3回受けて、味方の手札に$[K3005]が付与されたカードが存在する場合、$[K3005]が付与された手札をランダムに1枚、山札の一番上に置き、さらに$[K107]を1与える。（各ラウンドで1回のみ）",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。\\n本ラウンドで月反応を累計3回受けて、味方の手札に<color=#FFFFFFFF>コストダウン</color>が付与されたカードが存在する場合、<color=#FFFFFFFF>コストダウン</color>が付与された手札をランダムに1枚、山札の一番上に置き、さらに{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を1与える。（各ラウンドで1回のみ）",
+			"description": "水元素ダメージを1与える。\n本ラウンドで月反応を累計3回受けて、味方の手札にコストダウンが付与されたカードが存在する場合、コストダウンが付与された手札をランダムに1枚、山札の一番上に置き、さらに草元素ダメージを1与える。（各ラウンドで1回のみ）",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12172,
+			"name": "万古の潮汐",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112172]</color>を生成する。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与え、<color=#FFFFFFFF>引力のさざ波</color>を生成する。",
+			"description": "水元素ダメージを1与え、引力のさざ波を生成する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12173,
+			"name": "月明かりの郷愁",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112171]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を3与え、<color=#FFFFFFFF>月の領域</color>を生成する。",
+			"description": "水元素ダメージを3与え、月の領域を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12174,
+			"name": "月兆の祝福・汝に月光を授けん",
+			"descriptionraw": "【固有】この対局中、敵が<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}感電反応</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}開花反応</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}結晶（水）反応</color>を受けた時、代わりに<color=#FFFFFFFF>$[K3001]</color>/<color=#FFFFFFFF>$[K3009]</color>/<color=#FFFFFFFF>$[K3010]</color>反応が起きるようになる。\\n敵が<color=#FFFFFFFF>$[K3001]</color>/<color=#FFFFFFFF>$[K3009]</color>/<color=#FFFFFFFF>$[K3010]</color>反応を受けた後、$[K104]/$[K107]/$[K106]を1与える。（各ラウンドで1回のみ）",
+			"descriptionreplaced": "【固有】この対局中、敵が<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}感電反応</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}開花反応</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}結晶（水）反応</color>を受けた時、代わりに<color=#FFFFFFFF><color=#FFFFFFFF>月感電</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月開花</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月結晶</color></color>反応が起きるようになる。\\n敵が<color=#FFFFFFFF><color=#FFFFFFFF>月感電</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月開花</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月結晶</color></color>反応を受けた後、{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>/{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>/{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>を1与える。（各ラウンドで1回のみ）",
+			"description": "【固有】この対局中、敵が感電反応/開花反応/結晶（水）反応を受けた時、代わりに月感電/月開花/月結晶反応が起きるようになる。\n敵が月感電/月開花/月結晶反応を受けた後、雷元素ダメージ/草元素ダメージ/岩元素ダメージを1与える。（各ラウンドで1回のみ）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 12175,
+			"name": "月兆の祝福・汝に月光を授けん",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 12176,
+			"name": "注がれる月露",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

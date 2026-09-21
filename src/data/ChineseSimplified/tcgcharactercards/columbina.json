@@ -1,0 +1,113 @@
+{
+	"id": 1217,
+	"name": "哥伦比娅",
+	"shareid": 620,
+	"hp": 10,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_CATALYST",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"水元素",
+		"法器",
+		"挪德卡莱"
+	],
+	"storytitle": "空月归乡·哥伦比娅",
+	"storytext": "月下白鸽，何以为家？",
+	"source": "在猫尾酒馆中邀请哥伦比娅进行对局，在友好对局难度中获得胜利后获取",
+	"skills": [
+		{
+			"id": 12171,
+			"name": "月露泼降",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。\\n本局游戏中，敌方累计受到3次月曜反应后，如果我方手牌中存在附着有$[K3005]的卡牌，则将随机1张附着有$[K3005]的手牌置于牌组顶，然后再造成1点$[K107]。（每回合1次）",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>。\\n本局游戏中，敌方累计受到3次月曜反应后，如果我方手牌中存在附着有<color=#FFFFFFFF>费用降低</color>的卡牌，则将随机1张附着有<color=#FFFFFFFF>费用降低</color>的手牌置于牌组顶，然后再造成1点{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>。（每回合1次）",
+			"description": "造成1点水元素伤害。\n本局游戏中，敌方累计受到3次月曜反应后，如果我方手牌中存在附着有费用降低的卡牌，则将随机1张附着有费用降低的手牌置于牌组顶，然后再造成1点草元素伤害。（每回合1次）",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 12172,
+			"name": "万古潮汐",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C112172]</color>。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成1点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，生成<color=#FFFFFFFF>引力涟漪</color>。",
+			"description": "造成1点水元素伤害，生成引力涟漪。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素战技",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12173,
+			"name": "她的乡愁",
+			"descriptionraw": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C112171]</color>。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "造成3点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，生成<color=#FFFFFFFF>月之领域</color>。",
+			"description": "造成3点水元素伤害，生成月之领域。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆发",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 12174,
+			"name": "月兆祝赐·借汝月光",
+			"descriptionraw": "【被动】本局游戏中，敌方受到<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}感电反应</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}绽放反应</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}结晶(水)反应</color>时，改为<color=#FFFFFFFF>$[K3001]</color>/<color=#FFFFFFFF>$[K3009]</color>/<color=#FFFFFFFF>$[K3010]</color>反应。\\n敌方受到<color=#FFFFFFFF>$[K3001]</color>/<color=#FFFFFFFF>$[K3009]</color>/<color=#FFFFFFFF>$[K3010]</color>反应后：造成1点$[K104]/$[K107]/$[K106]。（每回合1次）",
+			"descriptionreplaced": "【被动】本局游戏中，敌方受到<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}感电反应</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}绽放反应</color>/<color=#FFFFFFFF>{SPRITE_PRESET#2102}{SPRITE_PRESET#2106}结晶(水)反应</color>时，改为<color=#FFFFFFFF><color=#FFFFFFFF>月感电</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月绽放</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月结晶</color></color>反应。\\n敌方受到<color=#FFFFFFFF><color=#FFFFFFFF>月感电</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月绽放</color></color>/<color=#FFFFFFFF><color=#FFFFFFFF>月结晶</color></color>反应后：造成1点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>/{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>/{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>。（每回合1次）",
+			"description": "【被动】本局游戏中，敌方受到感电反应/绽放反应/结晶(水)反应时，改为月感电/月绽放/月结晶反应。\n敌方受到月感电/月绽放/月结晶反应后：造成1点雷元素伤害/草元素伤害/岩元素伤害。（每回合1次）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"playcost": []
+		},
+		{
+			"id": 12175,
+			"name": "月兆祝赐·借汝月光",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "被动技能",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 12176,
+			"name": "月露泼降",
+			"descriptionraw": "",
+			"descriptionreplaced": "",
+			"description": "",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "普通攻击",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}
