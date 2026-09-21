@@ -1,0 +1,104 @@
+{
+	"id": 2208,
+	"name": "Hydro Hypostasis",
+	"shareid": 610,
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Senjata Lain",
+		"Monster"
+	],
+	"storytitle": "Hydro Hypostasis",
+	"storytext": "Code Name: \"He\". Entitas Hydro dengan kemurnian tinggi dan memiliki naluri penolakan yang sangat kuat, dan akan mengusir siapa pun yang mencoba menyelidikinya.",
+	"source": "Didapatkan setelah menerima Tantangan Tavern di Cat's Tail dan menang dalam Pertandingan Persahabatan melawan Hydro Hypostasis",
+	"skills": [
+		{
+			"id": 22081,
+			"name": "Droplet Diffusion",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>.",
+			"description": "Mengakibatkan 1 poin Hydro DMG.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Normal Attack",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "Surging Tides",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT], lalu $[K53|s1]: <color=#FFFFFFFF>$[S22085]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Mengakibatkan 2 poin {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>, lalu <color=#FFFFFFFF>mempersiapkan Skill</color>: <color=#FFFFFFFF>Overflow</color>.",
+			"description": "Mengakibatkan 2 poin Hydro DMG, lalu mempersiapkan Skill: Overflow.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "Calamitous Tides",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT] dan memanggil <color=#FFFFFFFF>$[C122082]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Mengakibatkan 3 poin {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color> dan memanggil <color=#FFFFFFFF>Water Droplet</color>.",
+			"description": "Mengakibatkan 3 poin Hydro DMG dan memanggil Water Droplet.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Elemental Burst",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "Hydro Crystal Core",
+			"descriptionraw": "(Pasif) Saat pertandingan dimulai, Karakter ini memperoleh <color=#FFFFFFFF>$[C122081]</color>. Jika terdapat <color=#FFFFFFFF>$[C122082]</color> di arena, maka saat <color=#FFFFFFFF>$[C122081]</color> dikonsumsi, akan memberikan lagi <color=#FFFFFFFF>$[C122081]</color> dan membuat Penggunaan <color=#FFFFFFFF>$[C122082]</color> -1.",
+			"descriptionreplaced": "(Pasif) Saat pertandingan dimulai, Karakter ini memperoleh <color=#FFFFFFFF>Hydro Crystal Core</color>. Jika terdapat <color=#FFFFFFFF>Water Droplet</color> di arena, maka saat <color=#FFFFFFFF>Hydro Crystal Core</color> dikonsumsi, akan memberikan lagi <color=#FFFFFFFF>Hydro Crystal Core</color> dan membuat Penggunaan <color=#FFFFFFFF>Water Droplet</color> -1.",
+			"description": "(Pasif) Saat pertandingan dimulai, Karakter ini memperoleh Hydro Crystal Core. Jika terdapat Water Droplet di arena, maka saat Hydro Crystal Core dikonsumsi, akan memberikan lagi Hydro Crystal Core dan membuat Penggunaan Water Droplet -1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Passive Skill",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "Overflow",
+			"descriptionraw": "Mengakibatkan $[D__KEY__DAMAGE] poin $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Mengakibatkan 1 poin {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>.",
+			"description": "Mengakibatkan 1 poin Hydro DMG.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Elemental Skill",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

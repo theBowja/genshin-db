@@ -1,0 +1,88 @@
+{
+	"id": 6606,
+	"name": "Durin",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"ธาตุไฟ",
+		"ดาบ",
+		"Mondstadt"
+	],
+	"skills": [
+		{
+			"id": 13171,
+			"name": "Radiant Wingslash",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2100}<color=#FFFFFFFF>ความเสียหายกายภาพ</color> 2 หน่วย",
+			"description": "สร้างความเสียหายกายภาพ 2 หน่วย",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "โจมตีปกติ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13172,
+			"name": "Binary Form: Convergence and Division",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และทำให้ตนเองได้รับ <color=#FFFFFFFF>$[C113175]</color>",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 3 หน่วย และทำให้ตนเองได้รับ <color=#FFFFFFFF>แปรแก่นสสาร</color>",
+			"description": "สร้างความเสียหายไฟ 3 หน่วย และทำให้ตนเองได้รับ แปรแก่นสสาร",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "สกิลธาตุ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13174,
+			"name": "Principle of Darkness: As the Stars Smolder",
+			"descriptionraw": "สร้าง$[D__KEY__ELEMENT] $[D__KEY__DAMAGE] หน่วย และสร้าง <color=#FFFFFFFF>$[C113172]</color>",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "สร้าง{SPRITE_PRESET#2103}<color=#FF9999FF>ความเสียหายไฟ</color> 3 หน่วย และสร้าง <color=#FFFFFFFF>Denial of Darkness</color>",
+			"description": "สร้างความเสียหายไฟ 3 หน่วย และสร้าง Denial of Darkness",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "ท่าไม้ตาย",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13175,
+			"name": "Light Manifest of the Divine Calculus",
+			"descriptionraw": "[ติดตัว] <color=#FFFFFFFF>หลังจากที่ตัวเองใช้ \"โจมตีปกติ\":</color> จะเปลี่ยน \"ท่าไม้ตาย\" ของตัวเองเป็น <color=#FFFFFFFF>$[S13174]</color>\\n<color=#FFFFFFFF>หลังจากที่ตัวเองใช้ \"สกิลธาตุ\":</color> จะเปลี่ยน \"ท่าไม้ตาย\" ของตัวเองเป็น <color=#FFFFFFFF>$[S13173]</color>",
+			"descriptionreplaced": "[ติดตัว] <color=#FFFFFFFF>หลังจากที่ตัวเองใช้ \"โจมตีปกติ\":</color> จะเปลี่ยน \"ท่าไม้ตาย\" ของตัวเองเป็น <color=#FFFFFFFF>Principle of Darkness: As the Stars Smolder</color>\\n<color=#FFFFFFFF>หลังจากที่ตัวเองใช้ \"สกิลธาตุ\":</color> จะเปลี่ยน \"ท่าไม้ตาย\" ของตัวเองเป็น <color=#FFFFFFFF>Principle of Purity: As the Light Shifts</color>",
+			"description": "[ติดตัว] หลังจากที่ตัวเองใช้ \"โจมตีปกติ\": จะเปลี่ยน \"ท่าไม้ตาย\" ของตัวเองเป็น Principle of Darkness: As the Stars Smolder\nหลังจากที่ตัวเองใช้ \"สกิลธาตุ\": จะเปลี่ยน \"ท่าไม้ตาย\" ของตัวเองเป็น Principle of Purity: As the Light Shifts",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "สกิลติดตัว",
+			"playcost": []
+		}
+	]
+}

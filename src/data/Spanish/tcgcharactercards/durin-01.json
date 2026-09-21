@@ -1,0 +1,88 @@
+{
+	"id": 6606,
+	"name": "Durin",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Pyro",
+		"Espada ligera",
+		"Mondstadt"
+	],
+	"skills": [
+		{
+			"id": 13171,
+			"name": "Corte del ala ardiente",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts. de {SPRITE_PRESET#2100}<color=#FFFFFFFF>Daño Físico</color>.",
+			"description": "Inflige 2 pts. de Daño Físico.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13172,
+			"name": "Forma binaria: Convergencia y división",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y obtiene el efecto de <color=#FFFFFFFF>$[C113175|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y obtiene el efecto de <color=#FFFFFFFF>transmutación esencial</color>.",
+			"description": "Inflige 3 pts. de Daño Pyro y obtiene el efecto de transmutación esencial.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidad Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13174,
+			"name": "Principio de oscuridad: Combustión estelar",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt.|pts.} de $[D__KEY__ELEMENT] y otorga el estado de <color=#FFFFFFFF>$[C113172|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts. de {SPRITE_PRESET#2103}<color=#FF9999FF>Daño Pyro</color> y otorga el estado de <color=#FFFFFFFF>negación de la oscuridad</color>.",
+			"description": "Inflige 3 pts. de Daño Pyro y otorga el estado de negación de la oscuridad.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Habilidad Definitiva",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13175,
+			"name": "Lumimanifestación del cálculo divino",
+			"descriptionraw": "Pasiva: <color=#FFFFFFFF>tras usar el Ataque Normal</color>, su Habilidad Definitiva pasa a ser <color=#FFFFFFFF>$[S13174]</color>.\\n<color=#FFFFFFFF>Tras usar la Habilidad Elemental</color>, su Habilidad Definitiva pasa a ser <color=#FFFFFFFF>$[S13173]</color>.",
+			"descriptionreplaced": "Pasiva: <color=#FFFFFFFF>tras usar el Ataque Normal</color>, su Habilidad Definitiva pasa a ser <color=#FFFFFFFF>Principio de oscuridad: Combustión estelar</color>.\\n<color=#FFFFFFFF>Tras usar la Habilidad Elemental</color>, su Habilidad Definitiva pasa a ser <color=#FFFFFFFF>Principio de pureza: Fluctuación lumínica</color>.",
+			"description": "Pasiva: tras usar el Ataque Normal, su Habilidad Definitiva pasa a ser Principio de oscuridad: Combustión estelar.\nTras usar la Habilidad Elemental, su Habilidad Definitiva pasa a ser Principio de pureza: Fluctuación lumínica.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidad pasiva",
+			"playcost": []
+		}
+	]
+}

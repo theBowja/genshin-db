@@ -1,0 +1,104 @@
+{
+	"id": 2208,
+	"name": "Гидро гипостазис",
+	"shareid": 610,
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Гидро",
+		"Прочее",
+		"Монстр"
+	],
+	"storytitle": "Гидро гипостазис",
+	"storytext": "Высокоуровневая форма жизни Гидро элемента под кодовым названием «Хе». Обладает сильным инстинктом отторжения и безжалостно изгоняет любого, кто осмелится его проверить.",
+	"source": "Награда за победу над Гидро гипостазисом в Дружеской дуэли в «Кошкином хвосте»",
+	"skills": [
+		{
+			"id": 22081,
+			"name": "Рассеивание водяных капель",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед.",
+			"description": "Наносит Гидро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Обычная атака",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "Бушующие волны",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед., после чего начинается $[K53]: <color=#FFFFFFFF>$[S22085]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 2 ед., после чего начинается <color=#FFFFFFFF>Подготовка навыка</color>: <color=#FFFFFFFF>Прибой</color>.",
+			"description": "Наносит Гидро урон, 2 ед., после чего начинается Подготовка навыка: Прибой.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "Волна бедствия",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед. и призывает помощника: <color=#FFFFFFFF>$[C122082]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 3 ед. и призывает помощника: <color=#FFFFFFFF>Капля</color>.",
+			"description": "Наносит Гидро урон, 3 ед. и призывает помощника: Капля.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Взрыв стихии",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "Кристальное ядро Гидро",
+			"descriptionraw": "(Пассивный навык) В начале битвы у персонажа будет <color=#FFFFFFFF>$[C122081]</color>. Если на поле существует <color=#FFFFFFFF>$[C122082]</color>, при расходовании <color=#FFFFFFFF>$[C122081]</color> повторно даёт <color=#FFFFFFFF>$[C122081]</color>, а <color=#FFFFFFFF>$[C122082]</color> получает уменьшение количества применений на 1.",
+			"descriptionreplaced": "(Пассивный навык) В начале битвы у персонажа будет <color=#FFFFFFFF>Кристальное ядро Гидро</color>. Если на поле существует <color=#FFFFFFFF>Капля</color>, при расходовании <color=#FFFFFFFF>Кристальное ядро Гидро</color> повторно даёт <color=#FFFFFFFF>Кристальное ядро Гидро</color>, а <color=#FFFFFFFF>Капля</color> получает уменьшение количества применений на 1.",
+			"description": "(Пассивный навык) В начале битвы у персонажа будет Кристальное ядро Гидро. Если на поле существует Капля, при расходовании Кристальное ядро Гидро повторно даёт Кристальное ядро Гидро, а Капля получает уменьшение количества применений на 1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Пассивный навык",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "Прибой",
+			"descriptionraw": "Наносит $[D__KEY__ELEMENT], $[D__KEY__DAMAGE] ед.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Наносит {SPRITE_PRESET#2102}<color=#80C0FFFF>Гидро урон</color>, 1 ед.",
+			"description": "Наносит Гидро урон, 1 ед.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Элементальный навык",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

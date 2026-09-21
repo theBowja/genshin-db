@@ -1,0 +1,104 @@
+{
+	"id": 2208,
+	"name": "Hypostasis Hydro",
+	"shareid": 610,
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"Hydro",
+		"Outras Armas",
+		"Monstro"
+	],
+	"storytitle": "Hypostasis Hydro",
+	"storytext": "Uma forma de vida elemental Hydro de alta pureza e de codinome \"He\". Eles têm fortes propriedades de rejeição, e expulsarão impiedosamente qualquer um que os testar.",
+	"source": "Recompensa por aceitar o Desafio da Taverna na Cauda do Gato e conquistar a vitória em uma Partida Amistosa com o Hypostasis Hydro",
+	"skills": [
+		{
+			"id": 22081,
+			"name": "Difusão de Gotas",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>.",
+			"description": "Causa 1 ponto de Dano Hydro.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Ataque Normal",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "Maré Torrencial",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], então realiza $[K53] para <color=#FFFFFFFF>$[S22085]</color>.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 2 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, então realiza <color=#FFFFFFFF>Preparar Habilidade</color> para <color=#FFFFFFFF>Transbordamento</color>.",
+			"description": "Causa 2 pontos de Dano Hydro, então realiza Preparar Habilidade para Transbordamento.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "Maré Calamitosa",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT], invoca <color=#FFFFFFFF>$[C122082]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 3 pontos de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>, invoca <color=#FFFFFFFF>Gota d'Água</color>.",
+			"description": "Causa 3 pontos de Dano Hydro, invoca Gota d'Água.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Supremo",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "Núcleo de Cristal Hydro",
+			"descriptionraw": "(Passivo) Quando a batalha começa, esse personagem começa com <color=#FFFFFFFF>$[C122081]</color> aplicado. Se <color=#FFFFFFFF>$[C122082]</color> estiver em campo quando <color=#FFFFFFFF>$[C122081]</color> for consumido: Reaplica <color=#FFFFFFFF>$[C122081]</color> e reduz Usos de <color=#FFFFFFFF>$[C122082]</color> em 1.",
+			"descriptionreplaced": "(Passivo) Quando a batalha começa, esse personagem começa com <color=#FFFFFFFF>Núcleo de Cristal Hydro</color> aplicado. Se <color=#FFFFFFFF>Gota d'Água</color> estiver em campo quando <color=#FFFFFFFF>Núcleo de Cristal Hydro</color> for consumido: Reaplica <color=#FFFFFFFF>Núcleo de Cristal Hydro</color> e reduz Usos de <color=#FFFFFFFF>Gota d'Água</color> em 1.",
+			"description": "(Passivo) Quando a batalha começa, esse personagem começa com Núcleo de Cristal Hydro aplicado. Se Gota d'Água estiver em campo quando Núcleo de Cristal Hydro for consumido: Reaplica Núcleo de Cristal Hydro e reduz Usos de Gota d'Água em 1.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Habilidade Passiva",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "Transbordamento",
+			"descriptionraw": "Causa $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|ponto|pontos} de $[D__KEY__ELEMENT].",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "Causa 1 ponto de {SPRITE_PRESET#2102}<color=#80C0FFFF>Dano Hydro</color>.",
+			"description": "Causa 1 ponto de Dano Hydro.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Habilidade Elemental",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

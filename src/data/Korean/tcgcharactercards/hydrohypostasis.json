@@ -1,0 +1,104 @@
+{
+	"id": 2208,
+	"name": "무상의 물",
+	"shareid": 610,
+	"hp": 8,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_HYDRO",
+		"GCG_TAG_WEAPON_NONE",
+		"GCG_TAG_CAMP_MONSTER"
+	],
+	"tagstext": [
+		"물 원소",
+		"기타 무기",
+		"마물"
+	],
+	"storytitle": "무상의 물",
+	"storytext": "코드 네임이 「헤」인 상급 물 원소 생명체. 강력한 배척 본능을 지니고 있어 자신을 시험하려는 자를 무자비하게 내쫓는다",
+	"source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 무상의 물에게 승리 후 획득",
+	"skills": [
+		{
+			"id": 22081,
+			"name": "물방울 난사",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다.",
+			"description": "물 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22082,
+			"name": "솟구치는 격류",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S22085]</color>의 $[K53]를 한다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 주고 <color=#FFFFFFFF>범람</color>의 <color=#FFFFFFFF>스킬 준비</color>를 한다.",
+			"description": "물 원소 피해를 2pt 주고 범람의 스킬 준비를 한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 22083,
+			"name": "재앙의 파도",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C122082]</color>을 소환한다.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 3pt 주고 <color=#FFFFFFFF>물방울</color>을 소환한다.",
+			"description": "물 원소 피해를 3pt 주고 물방울을 소환한다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_HYDRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 22084,
+			"name": "물수정 코어",
+			"descriptionraw": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C122081]</color>가 부착된다. 필드에 <color=#FFFFFFFF>$[C122082]</color>이 존재할 경우, <color=#FFFFFFFF>$[C122081]</color> 소모 시 <color=#FFFFFFFF>$[C122081]</color>를 다시 부착하며, <color=#FFFFFFFF>$[C122082]</color>의 사용 가능 횟수-1",
+			"descriptionreplaced": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>물수정 코어</color>가 부착된다. 필드에 <color=#FFFFFFFF>물방울</color>이 존재할 경우, <color=#FFFFFFFF>물수정 코어</color> 소모 시 <color=#FFFFFFFF>물수정 코어</color>를 다시 부착하며, <color=#FFFFFFFF>물방울</color>의 사용 가능 횟수-1",
+			"description": "[패시브] 전투 시작 시, 시작부터 물수정 코어가 부착된다. 필드에 물방울이 존재할 경우, 물수정 코어 소모 시 물수정 코어를 다시 부착하며, 물방울의 사용 가능 횟수-1",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "패시브 스킬",
+			"playcost": []
+		},
+		{
+			"id": 22085,
+			"name": "범람",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_HYDRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다.",
+			"description": "물 원소 피해를 1pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

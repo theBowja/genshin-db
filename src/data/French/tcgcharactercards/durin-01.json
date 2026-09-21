@@ -1,0 +1,88 @@
+{
+	"id": 6606,
+	"name": "Durin",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"Pyro",
+		"Épée à une main",
+		"Mondstadt"
+	],
+	"skills": [
+		{
+			"id": 13171,
+			"name": "Coupe d'aile radieuse",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Inflige 2 pts de {SPRITE_PRESET#2100}<color=#FFFFFFFF>DGT physiques</color>.",
+			"description": "Inflige 2 pts de DGT physiques.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Attaque normale",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13172,
+			"name": "Forme binaire : Convergence et division",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et accorde une <color=#FFFFFFFF>$[C113175|s1]</color> au personnage affecté.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color> et accorde une <color=#FFFFFFFF>transmutation essentielle</color> au personnage affecté.",
+			"description": "Inflige 3 pts de DGT Pyro et accorde une transmutation essentielle au personnage affecté.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Compétence élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13174,
+			"name": "Principe de ténèbre : Comme les étoiles qui brûlent",
+			"descriptionraw": "Inflige $[D__KEY__DAMAGE] {PLURAL#$[D__KEY__DAMAGE|nc]|pt|pts} de $[D__KEY__ELEMENT] et crée un <color=#FFFFFFFF>$[C113172|s1]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "Inflige 3 pts de {SPRITE_PRESET#2103}<color=#FF9999FF>DGT Pyro</color> et crée un <color=#FFFFFFFF>déni de ténèbre</color>.",
+			"description": "Inflige 3 pts de DGT Pyro et crée un déni de ténèbre.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Déchaînement élémentaire",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13175,
+			"name": "Manifestation lumineuse du calcul divin",
+			"descriptionraw": "(Passif) <color=#FFFFFFFF>Lorsque le personnage affecté a utilisé une attaque normale : </color>Convertit son déchaînement élémentaire en <color=#FFFFFFFF>$[S13174]</color>.\\n<color=#FFFFFFFF>Lorsque le personnage affecté a utilisé une compétence élémentaire : </color>Convertit son déchaînement élémentaire en <color=#FFFFFFFF>$[S13173]</color>.",
+			"descriptionreplaced": "(Passif) <color=#FFFFFFFF>Lorsque le personnage affecté a utilisé une attaque normale : </color>Convertit son déchaînement élémentaire en <color=#FFFFFFFF>Principe de ténèbre : Comme les étoiles qui brûlent</color>.\\n<color=#FFFFFFFF>Lorsque le personnage affecté a utilisé une compétence élémentaire : </color>Convertit son déchaînement élémentaire en <color=#FFFFFFFF>Principe de pureté : Comme la lumière qui fluctue</color>.",
+			"description": "(Passif) Lorsque le personnage affecté a utilisé une attaque normale : Convertit son déchaînement élémentaire en Principe de ténèbre : Comme les étoiles qui brûlent.\nLorsque le personnage affecté a utilisé une compétence élémentaire : Convertit son déchaînement élémentaire en Principe de pureté : Comme la lumière qui fluctue.",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Capacité passive",
+			"playcost": []
+		}
+	]
+}

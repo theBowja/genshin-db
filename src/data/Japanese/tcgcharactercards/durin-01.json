@@ -1,0 +1,88 @@
+{
+	"id": 6606,
+	"name": "ドゥリン",
+	"istransformation": true,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_PYRO",
+		"GCG_TAG_WEAPON_SWORD",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"炎元素",
+		"片手剣",
+		"モンド"
+	],
+	"skills": [
+		{
+			"id": 13171,
+			"name": "輝炎の翼斬り",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13172,
+			"name": "二元術式・融合精錬",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、自身に<color=#FFFFFFFF>$[C113175]</color>を付与する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与え、自身に<color=#FFFFFFFF>本質変転</color>を付与する。",
+			"description": "炎元素ダメージを3与え、自身に本質変転を付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 13174,
+			"name": "漆黒の法則・燻る星",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C113172]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_PYRO",
+			"descriptionreplaced": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を3与え、<color=#FFFFFFFF>漆黒の否</color>を生成する。",
+			"description": "炎元素ダメージを3与え、漆黒の否を生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_PYRO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 13175,
+			"name": "顕現せし光霊",
+			"descriptionraw": "【固有】<color=#FFFFFFFF>自身が「通常攻撃」を使用した後、</color>自身の「元素爆発」を<color=#FFFFFFFF>$[S13174]</color>に切り替える。\\n<color=#FFFFFFFF>自身が「元素スキル」を使用した後、</color>自身の「元素爆発」を<color=#FFFFFFFF>$[S13173]</color>に切り替える。",
+			"descriptionreplaced": "【固有】<color=#FFFFFFFF>自身が「通常攻撃」を使用した後、</color>自身の「元素爆発」を<color=#FFFFFFFF>漆黒の法則・燻る星</color>に切り替える。\\n<color=#FFFFFFFF>自身が「元素スキル」を使用した後、</color>自身の「元素爆発」を<color=#FFFFFFFF>純白の法則・変転する光</color>に切り替える。",
+			"description": "【固有】自身が「通常攻撃」を使用した後、自身の「元素爆発」を漆黒の法則・燻る星に切り替える。\n自身が「元素スキル」を使用した後、自身の「元素爆発」を純白の法則・変転する光に切り替える。",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		}
+	]
+}

@@ -1,0 +1,102 @@
+{
+	"id": 1516,
+	"name": "ヤフォダ",
+	"shareid": 609,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"風元素",
+		"弓",
+		"ナド・クライ"
+	],
+	"storytitle": "風を繋ぎ、影を捕らえる・ヤフォダ",
+	"storytext": "千の秘聞に導かれた先。",
+	"source": "キャッツテールでヤフォダを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 15161,
+			"name": "気転の矢",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15162,
+			"name": "奇策・財宝分配法",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C170]</color>を1層生成し、味方は次のキャラに切り替わる。手札にいずれの元素の<color=#FFFFFFFF>$[C115161]</color>もない場合、手札に<color=#FFFFFFFF>$[C115161]</color>を生成する。そうでない場合、手札にあるすべての<color=#FFFFFFFF>$[C115161]</color>に$[K3005]を付与する。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与え、<color=#FFFFFFFF>高速キャラチェンジ</color>を1層生成し、味方は次のキャラに切り替わる。手札にいずれの元素の<color=#FFFFFFFF>ゴロニャンお宝ボトル</color>もない場合、手札に<color=#FFFFFFFF>ゴロニャンお宝ボトル</color>を生成する。そうでない場合、手札にあるすべての<color=#FFFFFFFF>ゴロニャンお宝ボトル</color>に<color=#FFFFFFFF>コストダウン</color>を付与する。",
+			"description": "風元素ダメージを2与え、高速キャラチェンジを1層生成し、味方は次のキャラに切り替わる。手札にいずれの元素のゴロニャンお宝ボトルもない場合、手札にゴロニャンお宝ボトルを生成する。そうでない場合、手札にあるすべてのゴロニャンお宝ボトルにコストダウンを付与する。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15163,
+			"name": "秘器・狩人の七つ道具",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115166]</color>を生成する。",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与え、<color=#FFFFFFFF>家庭用肉球アシスタントマシン</color>を生成する。",
+			"description": "風元素ダメージを3与え、家庭用肉球アシスタントマシンを生成する。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15164,
+			"name": "月兆の祝福・屋根上の疾走",
+			"descriptionraw": "【固有】戦闘開始時、手札に<color=#FFFFFFFF>$[C115161]</color>を生成する。\\n味方が月反応または拡散反応を起こした後、味方の手札にあるすべての<color=#FFFFFFFF>$[C115161]</color>に$[K3005]を付着させる。（各ラウンド最大2回まで）",
+			"descriptionreplaced": "【固有】戦闘開始時、手札に<color=#FFFFFFFF>ゴロニャンお宝ボトル</color>を生成する。\\n味方が月反応または拡散反応を起こした後、味方の手札にあるすべての<color=#FFFFFFFF>ゴロニャンお宝ボトル</color>に<color=#FFFFFFFF>コストダウン</color>を付着させる。（各ラウンド最大2回まで）",
+			"description": "【固有】戦闘開始時、手札にゴロニャンお宝ボトルを生成する。\n味方が月反応または拡散反応を起こした後、味方の手札にあるすべてのゴロニャンお宝ボトルにコストダウンを付着させる。（各ラウンド最大2回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"playcost": []
+		},
+		{
+			"id": 15165,
+			"name": "月兆の祝福・屋根上の疾走",
+			"descriptionraw": "【固有】戦闘開始時、手札に<color=#FFFFFFFF>$[C115161]</color>を生成する。\\n味方が月反応または拡散反応を起こした後、味方の手札にあるすべての<color=#FFFFFFFF>$[C115161]</color>に$[K3005]を付着させる。（各ラウンド最大2回まで）",
+			"descriptionreplaced": "【固有】戦闘開始時、手札に<color=#FFFFFFFF>ゴロニャンお宝ボトル</color>を生成する。\\n味方が月反応または拡散反応を起こした後、味方の手札にあるすべての<color=#FFFFFFFF>ゴロニャンお宝ボトル</color>に<color=#FFFFFFFF>コストダウン</color>を付着させる。（各ラウンド最大2回まで）",
+			"description": "【固有】戦闘開始時、手札にゴロニャンお宝ボトルを生成する。\n味方が月反応または拡散反応を起こした後、味方の手札にあるすべてのゴロニャンお宝ボトルにコストダウンを付着させる。（各ラウンド最大2回まで）",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "固有スキル",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

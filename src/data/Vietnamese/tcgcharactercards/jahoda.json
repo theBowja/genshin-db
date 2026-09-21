@@ -1,0 +1,102 @@
+{
+	"id": 1516,
+	"name": "Jahoda",
+	"shareid": 609,
+	"hp": 10,
+	"maxenergy": 2,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_BOW",
+		"GCG_TAG_NATION_NODKRAI"
+	],
+	"tagstext": [
+		"Nguyên Tố Phong",
+		"Cung",
+		"Nod-Krai"
+	],
+	"storytitle": "Bóng Hình Đan Gió - Jahoda",
+	"storytext": "Kiên trì suy ngẫm, ắt được điều hay.",
+	"source": "Nhận được sau khi mời Jahoda giao đấu trong Quán Rượu Đuôi Mèo, và giành chiến thắng trong Đánh Giải Trí",
+	"skills": [
+		{
+			"id": 15161,
+			"name": "Tùy Cơ Mà Bắn",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT].",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2100}<color=#FFFFFFFF>Sát Thương Vật Lý</color>.",
+			"description": "Gây 2 điểm Sát Thương Vật Lý.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "Tấn Công Thường",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15162,
+			"name": "Kỳ Sách - Cách Phân Chia Của Cải",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], sinh ra 1 tầng <color=#FFFFFFFF>$[C170]</color>, phe ta đổi sang nhân vật kế tiếp. Nếu trên tay không có thẻ <color=#FFFFFFFF>$[C115161]</color> thuộc nguyên tố bất kỳ, sẽ sinh ra thẻ <color=#FFFFFFFF>$[C115161]</color> trên tay. Nếu không, áp dụng $[K3005] cho tất cả thẻ <color=#FFFFFFFF>$[C115161]</color> trên tay.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Gây 2 điểm {SPRITE_PRESET#2105}<color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color>, sinh ra 1 tầng <color=#FFFFFFFF>Chuyển Đổi Nhanh Nhẹn</color>, phe ta đổi sang nhân vật kế tiếp. Nếu trên tay không có thẻ <color=#FFFFFFFF>Bình Kho Báu Khò Khè</color> thuộc nguyên tố bất kỳ, sẽ sinh ra thẻ <color=#FFFFFFFF>Bình Kho Báu Khò Khè</color> trên tay. Nếu không, áp dụng <color=#FFFFFFFF>Giảm Chi Phí</color> cho tất cả thẻ <color=#FFFFFFFF>Bình Kho Báu Khò Khè</color> trên tay.",
+			"description": "Gây 2 điểm Sát Thương Nguyên Tố Phong, sinh ra 1 tầng Chuyển Đổi Nhanh Nhẹn, phe ta đổi sang nhân vật kế tiếp. Nếu trên tay không có thẻ Bình Kho Báu Khò Khè thuộc nguyên tố bất kỳ, sẽ sinh ra thẻ Bình Kho Báu Khò Khè trên tay. Nếu không, áp dụng Giảm Chi Phí cho tất cả thẻ Bình Kho Báu Khò Khè trên tay.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "Kỹ Năng Nguyên Tố",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15163,
+			"name": "Bí Khí - Bảy Đạo Cụ Thợ Săn",
+			"descriptionraw": "Gây $[D__KEY__DAMAGE] điểm $[D__KEY__ELEMENT], sinh ra <color=#FFFFFFFF>$[C115166]</color>.",
+			"basedamage": 3,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "Gây 3 điểm {SPRITE_PRESET#2105}<color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color>, sinh ra <color=#FFFFFFFF>Thiết Bị Điều Phối Giúp Việc Dạng Mèo</color>.",
+			"description": "Gây 3 điểm Sát Thương Nguyên Tố Phong, sinh ra Thiết Bị Điều Phối Giúp Việc Dạng Mèo.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "Kỹ Năng Nộ",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15164,
+			"name": "Chúc Phúc Nguyệt Triệu - Lướt Trên Nóc Nhà",
+			"descriptionraw": "(Bị động) Khi bắt đầu chiến đấu, sinh ra <color=#FFFFFFFF>$[C115161]</color> trên tay.\\nSau khi phe ta kích hoạt phản ứng Nguyệt hoặc phản ứng Khuếch Tán, áp dụng $[K3005] cho tất cả thẻ <color=#FFFFFFFF>$[C115161]</color> trên tay phe ta. (Mỗi hiệp 2 lần)",
+			"descriptionreplaced": "(Bị động) Khi bắt đầu chiến đấu, sinh ra <color=#FFFFFFFF>Bình Kho Báu Khò Khè</color> trên tay.\\nSau khi phe ta kích hoạt phản ứng Nguyệt hoặc phản ứng Khuếch Tán, áp dụng <color=#FFFFFFFF>Giảm Chi Phí</color> cho tất cả thẻ <color=#FFFFFFFF>Bình Kho Báu Khò Khè</color> trên tay phe ta. (Mỗi hiệp 2 lần)",
+			"description": "(Bị động) Khi bắt đầu chiến đấu, sinh ra Bình Kho Báu Khò Khè trên tay.\nSau khi phe ta kích hoạt phản ứng Nguyệt hoặc phản ứng Khuếch Tán, áp dụng Giảm Chi Phí cho tất cả thẻ Bình Kho Báu Khò Khè trên tay phe ta. (Mỗi hiệp 2 lần)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"playcost": []
+		},
+		{
+			"id": 15165,
+			"name": "Chúc Phúc Nguyệt Triệu - Lướt Trên Nóc Nhà",
+			"descriptionraw": "(Bị động) Khi bắt đầu chiến đấu, sinh ra <color=#FFFFFFFF>$[C115161]</color> trên tay.\\nSau khi phe ta kích hoạt phản ứng Nguyệt hoặc phản ứng Khuếch Tán, áp dụng $[K3005] cho tất cả thẻ <color=#FFFFFFFF>$[C115161]</color> trên tay phe ta. (Mỗi hiệp 2 lần)",
+			"descriptionreplaced": "(Bị động) Khi bắt đầu chiến đấu, sinh ra <color=#FFFFFFFF>Bình Kho Báu Khò Khè</color> trên tay.\\nSau khi phe ta kích hoạt phản ứng Nguyệt hoặc phản ứng Khuếch Tán, áp dụng <color=#FFFFFFFF>Giảm Chi Phí</color> cho tất cả thẻ <color=#FFFFFFFF>Bình Kho Báu Khò Khè</color> trên tay phe ta. (Mỗi hiệp 2 lần)",
+			"description": "(Bị động) Khi bắt đầu chiến đấu, sinh ra Bình Kho Báu Khò Khè trên tay.\nSau khi phe ta kích hoạt phản ứng Nguyệt hoặc phản ứng Khuếch Tán, áp dụng Giảm Chi Phí cho tất cả thẻ Bình Kho Báu Khò Khè trên tay phe ta. (Mỗi hiệp 2 lần)",
+			"typetag": "GCG_SKILL_TAG_PASSIVE",
+			"type": "Kỹ Năng Bị Động",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}
