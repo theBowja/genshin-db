@@ -12,9 +12,9 @@ declare module "genshin-db" {
 		descriptionraw: string; // translated
 		descriptionreplaced: string; // translated
 
-		countingtype: string; // enum
-		tokentype: string; // enum
-		hinttype: string; // enum
+		countingtype?: string; // enum
+		tokentype?: string; // enum
+		hinttype?: string; // enum
 
 		images: {
 			filename_tagsicon: string[];
