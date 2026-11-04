@@ -1,0 +1,106 @@
+{
+	"id": 1517,
+	"name": "ファルカ",
+	"shareid": 630,
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"風元素",
+		"両手剣",
+		"モンド"
+	],
+	"storytitle": "北風騎士・ファルカ",
+	"storytext": "魔を掃う凡鉄の剣。",
+	"source": "キャッツテールでファルカを招待し、友好対戦に勝利することで獲得",
+	"skills": [
+		{
+			"id": 15171,
+			"name": "西風剣術・流光の舞",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15172,
+			"name": "堕ちる烈風",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、自身に<color=#FFFFFFFF>$[C115171]</color>を付与する。味方のフィールド上に炎/水/雷/氷元素キャラクターが存在する場合、この優先順位に従って自身に対応する元素付与を行う。",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を1与え、自身に<color=#FFFFFFFF>疾風怒濤</color>を付与する。味方のフィールド上に炎/水/雷/氷元素キャラクターが存在する場合、この優先順位に従って自身に対応する元素付与を行う。",
+			"description": "風元素ダメージを1与え、自身に疾風怒濤を付与する。味方のフィールド上に炎/水/雷/氷元素キャラクターが存在する場合、この優先順位に従って自身に対応する元素付与を行う。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15173,
+			"name": "我こそ朔風",
+			"descriptionraw": "$[K105]を$[D__KEY__DAMAGE]与える。味方フィールド上に炎/水/雷/氷元素キャラクターが存在する場合、この優先順位に従って該当する元素ダメージへと変わる。このスキル終了後、さらに$[K105]を2与える。",
+			"basedamage": 3,
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を3与える。味方フィールド上に炎/水/雷/氷元素キャラクターが存在する場合、この優先順位に従って該当する元素ダメージへと変わる。このスキル終了後、さらに{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を2与える。",
+			"description": "風元素ダメージを3与える。味方フィールド上に炎/水/雷/氷元素キャラクターが存在する場合、この優先順位に従って該当する元素ダメージへと変わる。このスキル終了後、さらに風元素ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "元素爆発",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15174,
+			"name": "出づる四風",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>を6与える。",
+			"description": "風元素ダメージを6与える。",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "元素スキル",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 15175,
+			"name": "蒼牙",
+			"descriptionraw": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。",
+			"description": "物理ダメージを2与える。",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "通常攻撃",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}

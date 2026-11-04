@@ -1,0 +1,106 @@
+{
+	"id": 1517,
+	"name": "바르카",
+	"shareid": 630,
+	"hp": 12,
+	"maxenergy": 3,
+	"tags": [
+		"GCG_TAG_ELEMENT_ANEMO",
+		"GCG_TAG_WEAPON_CLAYMORE",
+		"GCG_TAG_NATION_MONDSTADT"
+	],
+	"tagstext": [
+		"바람 원소",
+		"양손검",
+		"몬드"
+	],
+	"storytitle": "북풍 기사·바르카",
+	"storytext": "악을 베는 인간의 검",
+	"source": "캣테일 술집에서 바르카 초대 및 친선 대전 난이도 승리 후 획득",
+	"skills": [
+		{
+			"id": 15171,
+			"name": "페보니우스 검술·빛의 검무",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 1
+				},
+				{
+					"costtype": "GCG_COST_DICE_VOID",
+					"count": 2
+				}
+			]
+		},
+		{
+			"id": 15172,
+			"name": "열풍의 추락",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, 자신에게 <color=#FFFFFFFF>$[C115171]</color>을 부착한다. 아군 필드에 불/물/번개/얼음 원소 캐릭터가 있을 경우, 해당 우선순위에 따라 자신에게 상응하는 원소 부여를 부착한다.",
+			"basedamage": 1,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 1pt 주고, 자신에게 <color=#FFFFFFFF>광풍</color>을 부착한다. 아군 필드에 불/물/번개/얼음 원소 캐릭터가 있을 경우, 해당 우선순위에 따라 자신에게 상응하는 원소 부여를 부착한다.",
+			"description": "바람 원소 피해를 1pt 주고, 자신에게 광풍을 부착한다. 아군 필드에 불/물/번개/얼음 원소 캐릭터가 있을 경우, 해당 우선순위에 따라 자신에게 상응하는 원소 부여를 부착한다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15173,
+			"name": "내가 곧 북풍이다",
+			"descriptionraw": "$[K105]를 $[D__KEY__DAMAGE]pt 준다. 아군 필드에 불/물/번개/얼음 원소 캐릭터가 있을 경우, 해당 우선순위에 따라 상응하는 원소 피해로 변경된다. 스킬 종료 후 다시 $[K105]를 2pt 준다.",
+			"basedamage": 3,
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 3pt 준다. 아군 필드에 불/물/번개/얼음 원소 캐릭터가 있을 경우, 해당 우선순위에 따라 상응하는 원소 피해로 변경된다. 스킬 종료 후 다시 {SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 2pt 준다.",
+			"description": "바람 원소 피해를 3pt 준다. 아군 필드에 불/물/번개/얼음 원소 캐릭터가 있을 경우, 해당 우선순위에 따라 상응하는 원소 피해로 변경된다. 스킬 종료 후 다시 바람 원소 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_Q",
+			"type": "원소폭발",
+			"playcost": [
+				{
+					"costtype": "GCG_COST_DICE_ANEMO",
+					"count": 3
+				},
+				{
+					"costtype": "GCG_COST_ENERGY",
+					"count": 3
+				}
+			]
+		},
+		{
+			"id": 15174,
+			"name": "사풍의 도래",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 6,
+			"baseelement": "GCG_ELEMENT_ANEMO",
+			"descriptionreplaced": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>를 6pt 준다.",
+			"description": "바람 원소 피해를 6pt 준다.",
+			"typetag": "GCG_SKILL_TAG_E",
+			"type": "원소전투 스킬",
+			"isPrepareSkill": true,
+			"playcost": []
+		},
+		{
+			"id": 15175,
+			"name": "푸른 포식",
+			"descriptionraw": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+			"basedamage": 2,
+			"baseelement": "GCG_ELEMENT_PHYSIC",
+			"descriptionreplaced": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.",
+			"description": "물리 피해를 2pt 준다.",
+			"typetag": "GCG_SKILL_TAG_A",
+			"type": "일반 공격",
+			"isPrepareSkill": true,
+			"playcost": []
+		}
+	]
+}
