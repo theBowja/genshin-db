@@ -1,0 +1,251 @@
+{
+	"id": 13601,
+	"name": "Mitya",
+	"combat1": {
+		"name": "Chain Reaction",
+		"descriptionRaw": "<color=#FFD780FF>Normal Attack</color>\nPerforms a maximum of 3 attacks that deal <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#FFACFFFF>AoE Electro DMG</color> to the area in front after a short casting time.\nMitya will instead perform the special Charged Attack <color=#FFD780FF>Gradient Detonation</color>, which consumes no Stamina, if a <color=#FFD780FF>{LINK#N11360002}Detection Core: Overload{/LINK}</color> created by Mitya himself is currently on the field and he has at least 1 <color=#FFD780FF>{LINK#N11360001}Gradient Beacon{/LINK}</color>: Deals 1 instance of <color=#FFACFFFF>AoE Electro DMG</color> to the area in front and continuously consumes <color=#FFD780FF>Gradient Beacons</color> while held. Each <color=#FFD780FF>Gradient Beacon</color> consumed deals 1 instance of <color=#FFACFFFF>AoE Electro DMG</color> to the area in front that is considered Stellar-Conduct reaction DMG.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing <color=#FFACFFFF>AoE Electro DMG</color> upon impact.",
+		"description": "Normal Attack\nPerforms a maximum of 3 attacks that deal Electro DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina to deal AoE Electro DMG to the area in front after a short casting time.\nMitya will instead perform the special Charged Attack Gradient Detonation, which consumes no Stamina, if a **Detection Core: Overload** created by Mitya himself is currently on the field and he has at least 1 **Gradient Beacon**: Deals 1 instance of AoE Electro DMG to the area in front and continuously consumes Gradient Beacons while held. Each Gradient Beacon consumed deals 1 instance of AoE Electro DMG to the area in front that is considered Stellar-Conduct reaction DMG.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE Electro DMG upon impact.",
+		"attributes": {
+			"labels": [
+				"1-Hit DMG|{param1:F1P}",
+				"2-Hit DMG|{param2:F1P}",
+				"3-Hit DMG|{param3:F1P}",
+				"Charged Attack DMG|{param4:F1P}",
+				"Charged Attack Stamina Cost|{param5:F1}",
+				"Plunge DMG|{param6:F1P}",
+				"Low/High Plunge DMG|{param7:F1P}/{param8:F1P}",
+				"Gradient Detonation DMG|{param9:F1P}",
+				"Gradient Detonation Stellar-Conduct DMG|{param10:F1P} Elemental Mastery"
+			]
+		}
+	},
+	"combat2": {
+		"name": "Principle: Variable Detection",
+		"descriptionRaw": "Conducts a theoretically relatively safe experiment at a theoretically relatively safe yield, dealing <color=#FFACFFFF>AoE Electro DMG</color> and creating a <color=#FFD780FF>{LINK#N11360002}Detection Core{/LINK}</color> in different ways depending on whether the Skill is tapped or held.\n\nTapping the Elemental Skill <color=#FFD780FF>Principle: Variable Detection</color> again within 6s after using it changes the <color=#FFD780FF>Detection Core</color>'s state. The Detection Core's state can be changed in this way every 1.5s.",
+		"description": "Conducts a theoretically relatively safe experiment at a theoretically relatively safe yield, dealing AoE Electro DMG and creating a **Detection Core** in different ways depending on whether the Skill is tapped or held.\n\nTapping the Elemental Skill Principle: Variable Detection again within 6s after using it changes the Detection Core's state. The Detection Core's state can be changed in this way every 1.5s.",
+		"attributes": {
+			"labels": [
+				"Tap Skill DMG|{param1:F1P}",
+				"Hold Skill DMG|{param2:F1P}",
+				"Steady State Core DMG|{param3:F1P}",
+				"Steady State Core Gradient Beacon Consumption DMG|{param4:F1P} Elemental Mastery",
+				"Steady State Core Detonation DMG|{param5:F1P} Elemental Mastery/Beacon",
+				"Detection Core Duration|{param6:F1}s",
+				"CD|{param7:F1}s"
+			]
+		}
+	},
+	"combat3": {
+		"name": "Analysis: Gradient Theory",
+		"descriptionRaw": "Let the elements burst forth like inspiration itself! Deals <color=#FFACFFFF>AoE Electro DMG</color> and creates 3 <color=#FFD780FF>{LINK#N11360001}Gradient Beacons{/LINK}</color>.",
+		"description": "Let the elements burst forth like inspiration itself! Deals AoE Electro DMG and creates 3 **Gradient Beacons**.",
+		"attributes": {
+			"labels": [
+				"Skill DMG|{param1:F1P} ATK+{param2:F1P} Elemental Mastery",
+				"Gradient Beacons Generated|{param3:F1}",
+				"CD|{param4:F1}s",
+				"Energy Cost|{param5:I}"
+			]
+		}
+	},
+	"passive1": {
+		"name": "Baseline Stress Test",
+		"descriptionRaw": "The <color=#FFD780FF>{LINK#N11360002}Detection Core{/LINK}</color> created by the Elemental Skill <color=#FFD780FF>Principle: Variable Detection</color> is enhanced. Depending on the state of the <color=#FFD780FF>Detection Core</color> created:\n·Steady State: All nearby party members gain 30 Elemental Mastery for each <color=#FFD780FF>{LINK#N11360001}Gradient Beacon{/LINK}</color> Mitya has;\n·Overloaded: After nearby party members trigger Stellar-Conduct reactions, instead obtain 1 <color=#FFD780FF>Gradient Beacon</color> every 1.5s for 6s.",
+		"description": "The **Detection Core** created by the Elemental Skill Principle: Variable Detection is enhanced. Depending on the state of the Detection Core created:\n·Steady State: All nearby party members gain 30 Elemental Mastery for each **Gradient Beacon** Mitya has;\n·Overloaded: After nearby party members trigger Stellar-Conduct reactions, instead obtain 1 Gradient Beacon every 1.5s for 6s."
+	},
+	"passive2": {
+		"name": "Explosive Reagent: Safe Limits Exceeded",
+		"descriptionRaw": "The duration of <color=#FFD780FF>{LINK#N11360001}Gradient Beacons{/LINK}</color> is increased to 10s. Additionally, Mitya's CRIT Rate increases by 5% for 15s after creating a <color=#FFD780FF>Gradient Beacon</color>. This effect can stack up to 4 times.",
+		"description": "The duration of **Gradient Beacons** is increased to 10s. Additionally, Mitya's CRIT Rate increases by 5% for 15s after creating a Gradient Beacon. This effect can stack up to 4 times."
+	},
+	"passive3": {
+		"name": "Stellar Jubilee: Top-Secret Protocol",
+		"descriptionRaw": "When party members trigger Superconduct, it will be changed to Stellar-Conduct. Stellar-Conduct reactions will no longer create <color=#FFD780FF>Starlight Prisms</color>, and will instead create 1 <color=#FFD780FF>{LINK#N11360001}Gradient Beacon{/LINK}</color> nearby every 1.5s for 3s. These Beacons can be carried by Mitya and transform the area around them into an even larger <color=#FFD780FF>Polestar Field</color>. Triggering another Stellar-Conduct reaction will refresh the duration of the aforementioned effects.\nAdditionally, the Base Stellar-Conduct DMG dealt by all nearby party members will be increased based on Mitya's Elemental Mastery: Every point of Elemental Mastery he has increases Base Stellar-Conduct DMG by 0.028%. The maximum Base DMG increase that can be gained this way is 14%. While within a <color=#FFD780FF>Polestar Field</color>, Mitya will also enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+		"description": "When party members trigger Superconduct, it will be changed to Stellar-Conduct. Stellar-Conduct reactions will no longer create Starlight Prisms, and will instead create 1 **Gradient Beacon** nearby every 1.5s for 3s. These Beacons can be carried by Mitya and transform the area around them into an even larger Polestar Field. Triggering another Stellar-Conduct reaction will refresh the duration of the aforementioned effects.\nAdditionally, the Base Stellar-Conduct DMG dealt by all nearby party members will be increased based on Mitya's Elemental Mastery: Every point of Elemental Mastery he has increases Base Stellar-Conduct DMG by 0.028%. The maximum Base DMG increase that can be gained this way is 14%. While within a Polestar Field, Mitya will also enter the Radiance: Stellar-Conduct state."
+	},
+	"passive4": {
+		"name": "Energy Catalysis",
+		"descriptionRaw": "When destructible rocks are nearby, <color=#FFD780FF>{LINK#N11360002}Detection Core: Steady State{/LINK}</color> can quickly clear them.\nAdditionally, when Mitya is in the party, creating <color=#FFD780FF>Prime Ice Construct: Basic Heat Source</color> does not consume Kresnik Energy.",
+		"description": "When destructible rocks are nearby, **Detection Core: Steady State** can quickly clear them.\nAdditionally, when Mitya is in the party, creating Prime Ice Construct: Basic Heat Source does not consume Kresnik Energy."
+	},
+	"costs": {
+		"lvl2": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 12500
+			},
+			{
+				"id": 104365,
+				"name": "Teachings of Charity",
+				"count": 3
+			},
+			{
+				"id": 112149,
+				"name": "Chimeric Core",
+				"count": 6
+			}
+		],
+		"lvl3": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 17500
+			},
+			{
+				"id": 104366,
+				"name": "Guide to Charity",
+				"count": 2
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 3
+			}
+		],
+		"lvl4": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 25000
+			},
+			{
+				"id": 104366,
+				"name": "Guide to Charity",
+				"count": 4
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 4
+			}
+		],
+		"lvl5": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 30000
+			},
+			{
+				"id": 104366,
+				"name": "Guide to Charity",
+				"count": 6
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 6
+			}
+		],
+		"lvl6": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 37500
+			},
+			{
+				"id": 104366,
+				"name": "Guide to Charity",
+				"count": 9
+			},
+			{
+				"id": 112150,
+				"name": "Symbiotic Chimeric Nucleus",
+				"count": 9
+			}
+		],
+		"lvl7": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 120000
+			},
+			{
+				"id": 104367,
+				"name": "Philosophies of Charity",
+				"count": 4
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 4
+			},
+			{
+				"id": 113081,
+				"name": "Mask of the Virtuous Doctor",
+				"count": 1
+			}
+		],
+		"lvl8": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 260000
+			},
+			{
+				"id": 104367,
+				"name": "Philosophies of Charity",
+				"count": 6
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 6
+			},
+			{
+				"id": 113081,
+				"name": "Mask of the Virtuous Doctor",
+				"count": 1
+			}
+		],
+		"lvl9": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 450000
+			},
+			{
+				"id": 104367,
+				"name": "Philosophies of Charity",
+				"count": 12
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 9
+			},
+			{
+				"id": 113081,
+				"name": "Mask of the Virtuous Doctor",
+				"count": 2
+			}
+		],
+		"lvl10": [
+			{
+				"id": 202,
+				"name": "Mora",
+				"count": 700000
+			},
+			{
+				"id": 104367,
+				"name": "Philosophies of Charity",
+				"count": 16
+			},
+			{
+				"id": 112151,
+				"name": "Prime Chimeric Nexus",
+				"count": 12
+			},
+			{
+				"id": 113081,
+				"name": "Mask of the Virtuous Doctor",
+				"count": 2
+			},
+			{
+				"id": 104319,
+				"name": "Crown of Insight",
+				"count": 1
+			}
+		]
+	}
+}
