@@ -532,34 +532,24 @@ function importData(folder, collateFunc, dontwrite = false, deleteexisting, skip
 gameVersion = "7.2"; // new data will use this as added version. replace this with empty string if you dont know
 console.log(gameVersion);
 
-// importData('characters');
-// importCurve('characters');
+// importDat
 
-// getHoyowikiIcons(); // RUN SEPARATELY. grabbing hoyowiki_icon from hoyolab wiki API, // MUST IMPORT SEPARATELY FROM import characters
-// // getUpperBodyImages(); // RUN SEPARATELY. grabbing cover1, cover2 from official genshin impact site, // MUST IMPORT SEPARATELY FROM import characters
-
-// importData('constellations');
-// importData('talents');
-// importData('weapons')
-// importCurve('weapons');
-// importData('artifacts');
-// importData('foods');
 // importData('materials');
 // importData('domains');
 // importData('enemies');
 // importCurve('enemies');
 
-// importData('outfits');
-// importData('windgliders');
-// importData('animals');
-// importData('namecards');
-// importData('geographies');
-// importData('crafts');
-// importData('emojis');
-// // importData('voiceovers')
-// importData('achievements');
-// importData('achievementgroups');
-// importData('adventureranks'); // max 60
+importData('outfits');
+importData('windgliders');
+importData('animals');
+importData('namecards');
+importData('geographies');
+importData('crafts');
+importData('emojis');
+// importData('voiceovers')
+importData('achievements');
+importData('achievementgroups');
+importData('adventureranks'); // max 60
 
 // importData('tcgcharactercards');
 // importData('tcgenemycards');
