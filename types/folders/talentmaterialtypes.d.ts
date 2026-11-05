@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@genshin-db/tcg" {
 	//deprecated
 	export interface TalentMaterial { // English only
 		name: string;

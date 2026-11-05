@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@genshin-db/tcg" {
 	export interface Voiceover {
 		id: number;
 		name: string;

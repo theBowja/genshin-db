@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@genshin-db/tcg" {
 	export interface Domain {
 		id: number;
 		name: string;

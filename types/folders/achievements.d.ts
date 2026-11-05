@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@genshin-db/tcg" {
 	export interface Achievement {
 		id: number[];
 		name: string;

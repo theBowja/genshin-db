@@ -36,7 +36,7 @@
 
 /// <reference path="./enums.d.ts" />
 
-declare module "genshin-db" {
+declare module "@genshin-db/tcg" {
 	export interface QueryFunction<R> {
 		<Q extends string, O extends QueryOptions>(query: Q, opts?: O):
 			(O extends { dumpResult: true }

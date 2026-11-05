@@ -2367,24 +2367,25 @@ const genshindb = require('genshin-db');
 
 ```js
 [
-  'Ajilenakh Nut',   'Almond',       'Bacon',           'Bamboo Shoot',
-  'Berry',           'Bird Egg',     'Butter',          'Cabbage',
-  'Carrot',          'Cheese',       'Chenyu Adeptea',  'Chilled Meat',
-  'Coffee Beans',    'Crab',         'Crab Roe',        'Cream',
-  'Dried Fish',      'Eel Meat',     'Fermented Juice', 'Fish',
-  'Flour',           'Fowl',         'Glabrous Beans',  'Glaciafruit',
-  'Grainfruit',      'Ham',          'Harra Fruit',     'Honey',
-  'Jam',             'Lakkaberry',   'Lavender Melon',  'Lotus Head',
-  'Marcotte',        'Matsutake',    'Midsommar Berry', 'Milk',
-  'Mint',            'Mushroom',     'Mysterious Meat', 'Onion',
-  'Pepper',          'Pinecone',     'Potato',          'Radish',
-  'Raw Meat',        'Red Beet',     'Red Berryshroom', 'Rice',
-  'Rimecurrant',     'Rye',          'Rye Flour',       'Salt',
-  'Sausage',         'Seagrass',     'Shrimp Meat',     'Silver Lotus',
-  'Smetana',         'Smoked Fish',  'Smoked Fowl',     'Snapdragon',
-  'Snowball Flower', 'Spice',        'Spinel Fruit',    'Sugar',
-  'Sumeru Rose',     'Sweet Flower', 'Tidalga',         'Tofu',
-  'Tomato',          'Wheat',        'Windrest Flower', 'Zaytun Peach'
+  'Ajilenakh Nut', 'Almond',          'Bacon',           'Bamboo Shoot',
+  'Berry',         'Bird Egg',        'Butter',          'Cabbage',
+  'Carrot',        'Cheese',          'Chenyu Adeptea',  'Chilled Meat',
+  'Coffee Beans',  'Crab',            'Crab Roe',        'Cream',
+  'Dried Fish',    'Eel Meat',        'Fermented Juice', 'Fish',
+  'Flour',         'Fowl',            'Glabrous Beans',  'Glaciafruit',
+  'Grainfruit',    'Ham',             'Harra Fruit',     'Honey',
+  'Jam',           'Lakkaberry',      'Lanternberry',    'Lavender Melon',
+  'Lotus Head',    'Marcotte',        'Matsutake',       'Midsommar Berry',
+  'Milk',          'Mint',            'Mushroom',        'Mysterious Meat',
+  'Onion',         'Pepper',          'Pinecone',        'Potato',
+  'Radish',        'Raw Meat',        'Red Beet',        'Red Berryshroom',
+  'Rice',          'Rimecurrant',     'Rye',             'Rye Flour',
+  'Salt',          'Sausage',         'Seagrass',        'Shrimp Meat',
+  'Silver Lotus',  'Smetana',         'Smoked Fish',     'Smoked Fowl',
+  'Snapdragon',    'Snowball Flower', 'Spice',           'Spinel Fruit',
+  'Sugar',         'Sumeru Rose',     'Sweet Flower',    'Tidalga',
+  'Tofu',          'Tomato',          'Wheat',           'Windrest Flower',
+  'Zaytun Peach'
 ]
 ```
 
@@ -3185,6 +3186,7 @@ const genshindb = require('genshin-db');
   'The Knave',
   'Thunder Manifestation',
   'Watcher: Fallen Vigil',
+  'Wavebinder',
   'Wayward Hermetic Spiritspeaker'
 ]
 ```

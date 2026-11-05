@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@genshin-db/tcg" {
 	export interface TcgLevelRewards {
 		id: number;
 		name: string; // it's literally just a number

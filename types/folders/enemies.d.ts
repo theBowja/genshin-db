@@ -1,4 +1,4 @@
-declare module "genshin-db" {
+declare module "@genshin-db/tcg" {
 	export interface Enemy {
 		id: number; // archive id
 		monsterId: number; // might be different from id
